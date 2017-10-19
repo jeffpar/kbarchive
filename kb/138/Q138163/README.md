@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138163: PRB: Left Justify Puts a Space in Format Clause"
-permalink: kb/138/Q138163/
+permalink: /kb/138/Q138163/
 ---
 
 ## Q138163: PRB: Left Justify Puts a Space in Format Clause

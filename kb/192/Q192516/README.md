@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192516: XFOR: T-shooting cc:Mail Connector Mail Conversion Problems"
-permalink: kb/192/Q192516/
+permalink: /kb/192/Q192516/
 ---
 
 ## Q192516: XFOR: T-shooting cc:Mail Connector Mail Conversion Problems

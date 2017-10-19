@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252193: POSIX-Based Program Leaks Private Bytes or Non Paged Pool Bytes"
-permalink: kb/252/Q252193/
+permalink: /kb/252/Q252193/
 ---
 
 ## Q252193: POSIX-Based Program Leaks Private Bytes or Non Paged Pool Bytes

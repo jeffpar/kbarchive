@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90415: Suppressing the &quot;Invalid Input&quot; Error Message in FoxPro"
-permalink: kb/090/Q90415/
+permalink: /kb/090/Q90415/
 ---
 
 ## Q90415: Suppressing the &quot;Invalid Input&quot; Error Message in FoxPro

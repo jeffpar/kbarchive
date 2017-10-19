@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260227: BUG: &quot;File is in use&quot; Error with Only One User"
-permalink: kb/260/Q260227/
+permalink: /kb/260/Q260227/
 ---
 
 ## Q260227: BUG: &quot;File is in use&quot; Error with Only One User

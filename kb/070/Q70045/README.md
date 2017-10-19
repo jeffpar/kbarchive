@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q70045: PROGMAN.INI [GROUPS] Section Requires Sequential Order"
-permalink: kb/070/Q70045/
+title: "Q70045: PROGMAN.INI &#91;GROUPS&#93; Section Requires Sequential Order"
+permalink: /kb/070/Q70045/
 ---
 
-## Q70045: PROGMAN.INI [GROUPS] Section Requires Sequential Order
+## Q70045: PROGMAN.INI &#91;GROUPS&#93; Section Requires Sequential Order
 
 	Article: Q70045
 	Product(s): Microsoft Windows 95.x Retail Product

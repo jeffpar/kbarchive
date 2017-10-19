@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139455: Obtaining the Designed For Microsoft Windows 95 Catalog"
-permalink: kb/139/Q139455/
+permalink: /kb/139/Q139455/
 ---
 
 ## Q139455: Obtaining the Designed For Microsoft Windows 95 Catalog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123808: PRB: Debugger Hangs If Remote Connection Is Lost"
-permalink: kb/123/Q123808/
+permalink: /kb/123/Q123808/
 ---
 
 ## Q123808: PRB: Debugger Hangs If Remote Connection Is Lost

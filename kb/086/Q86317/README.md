@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86317: PC Win: Message Finder Icon Does Not Update"
-permalink: kb/086/Q86317/
+permalink: /kb/086/Q86317/
 ---
 
 ## Q86317: PC Win: Message Finder Icon Does Not Update

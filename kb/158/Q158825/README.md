@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158825: System and User Account Difference with AT Command"
-permalink: kb/158/Q158825/
+permalink: /kb/158/Q158825/
 ---
 
 ## Q158825: System and User Account Difference with AT Command

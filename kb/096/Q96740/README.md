@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96740: LAN Manager 2.2 FTBOOT Trap Ds on Reboot"
-permalink: kb/096/Q96740/
+permalink: /kb/096/Q96740/
 ---
 
 ## Q96740: LAN Manager 2.2 FTBOOT Trap Ds on Reboot

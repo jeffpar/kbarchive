@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136847: PRB: Class Browser Shortcut Keys Interfere with VFP Shortcuts"
-permalink: kb/136/Q136847/
+permalink: /kb/136/Q136847/
 ---
 
 ## Q136847: PRB: Class Browser Shortcut Keys Interfere with VFP Shortcuts

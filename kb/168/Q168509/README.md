@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168509: Setting Up WINS Replication Between Untrusting Domains"
-permalink: kb/168/Q168509/
+permalink: /kb/168/Q168509/
 ---
 
 ## Q168509: Setting Up WINS Replication Between Untrusting Domains

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290398: PRB: Access Denied When You Try to Start DCOM Server"
-permalink: kb/290/Q290398/
+permalink: /kb/290/Q290398/
 ---
 
 ## Q290398: PRB: Access Denied When You Try to Start DCOM Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169953: DOC: Mastering: Sound Level in Introduction Too low"
-permalink: kb/169/Q169953/
+permalink: /kb/169/Q169953/
 ---
 
 ## Q169953: DOC: Mastering: Sound Level in Introduction Too low

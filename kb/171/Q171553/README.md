@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171553: FIX: VFP May Crash While Running MS Web Browser Control"
-permalink: kb/171/Q171553/
+permalink: /kb/171/Q171553/
 ---
 
 ## Q171553: FIX: VFP May Crash While Running MS Web Browser Control

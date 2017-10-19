@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114866: Bookshelf 1994: Manual Installation Instructions"
-permalink: kb/114/Q114866/
+permalink: /kb/114/Q114866/
 ---
 
 ## Q114866: Bookshelf 1994: Manual Installation Instructions

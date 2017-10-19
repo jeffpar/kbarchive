@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193538: WD97: How to Remove Unused Standard Styles from a Document"
-permalink: kb/193/Q193538/
+permalink: /kb/193/Q193538/
 ---
 
 ## Q193538: WD97: How to Remove Unused Standard Styles from a Document

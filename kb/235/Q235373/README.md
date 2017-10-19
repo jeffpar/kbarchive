@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235373: Contents of Service Pack 5 for Windows NT 4.0 (Intel 40-Bit)"
-permalink: kb/235/Q235373/
+permalink: /kb/235/Q235373/
 ---
 
 ## Q235373: Contents of Service Pack 5 for Windows NT 4.0 (Intel 40-Bit)

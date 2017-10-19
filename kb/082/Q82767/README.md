@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82767: Relay Gold 5.0 May Cause a GP Fault with Windows 3.1"
-permalink: kb/082/Q82767/
+permalink: /kb/082/Q82767/
 ---
 
 ## Q82767: Relay Gold 5.0 May Cause a GP Fault with Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74339: Hyperdisk Conflicts with SETUP and FORMAT"
-permalink: kb/074/Q74339/
+permalink: /kb/074/Q74339/
 ---
 
 ## Q74339: Hyperdisk Conflicts with SETUP and FORMAT

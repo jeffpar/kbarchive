@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150241: SNAADMIN.EXE Application Exception When Deleting Users"
-permalink: kb/150/Q150241/
+permalink: /kb/150/Q150241/
 ---
 
 ## Q150241: SNAADMIN.EXE Application Exception When Deleting Users

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151087: Mastering Visual C++: Page Fault While Running Lab Exercise"
-permalink: kb/151/Q151087/
+permalink: /kb/151/Q151087/
 ---
 
 ## Q151087: Mastering Visual C++: Page Fault While Running Lab Exercise

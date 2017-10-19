@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86376: PC WSPlus: Assistant Needs Access to Postoffice"
-permalink: kb/086/Q86376/
+permalink: /kb/086/Q86376/
 ---
 
 ## Q86376: PC WSPlus: Assistant Needs Access to Postoffice

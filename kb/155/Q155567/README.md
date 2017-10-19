@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155567: NetWare Login Script (NWSCRIPT) Parses &quot;cx..&quot; Incorrectly"
-permalink: kb/155/Q155567/
+permalink: /kb/155/Q155567/
 ---
 
 ## Q155567: NetWare Login Script (NWSCRIPT) Parses &quot;cx..&quot; Incorrectly

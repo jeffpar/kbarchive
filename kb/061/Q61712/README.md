@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61712: Terminal Err Msg: Cannot Communicate with Modem"
-permalink: kb/061/Q61712/
+permalink: /kb/061/Q61712/
 ---
 
 ## Q61712: Terminal Err Msg: Cannot Communicate with Modem

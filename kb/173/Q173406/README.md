@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173406: Connection Terminated by News Server When Posting Large Messages"
-permalink: kb/173/Q173406/
+permalink: /kb/173/Q173406/
 ---
 
 ## Q173406: Connection Terminated by News Server When Posting Large Messages

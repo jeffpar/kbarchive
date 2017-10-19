@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185030: WD97: ODMA: How Word 97 Works with DOCS Open (PC DOCS)"
-permalink: kb/185/Q185030/
+permalink: /kb/185/Q185030/
 ---
 
 ## Q185030: WD97: ODMA: How Word 97 Works with DOCS Open (PC DOCS)

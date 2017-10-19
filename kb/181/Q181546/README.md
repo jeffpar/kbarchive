@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181546: RAS Error 718 When Using Motorola ISDN BitSURFR Pro EZ"
-permalink: kb/181/Q181546/
+permalink: /kb/181/Q181546/
 ---
 
 ## Q181546: RAS Error 718 When Using Motorola ISDN BitSURFR Pro EZ

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168805: WD97: Creating Large Numbers of Styles Creates Huge Scratch File"
-permalink: kb/168/Q168805/
+permalink: /kb/168/Q168805/
 ---
 
 ## Q168805: WD97: Creating Large Numbers of Styles Creates Huge Scratch File

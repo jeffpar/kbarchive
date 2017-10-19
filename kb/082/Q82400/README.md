@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82400: DCA Irma Workstation for Windows and PCLP Network"
-permalink: kb/082/Q82400/
+permalink: /kb/082/Q82400/
 ---
 
 ## Q82400: DCA Irma Workstation for Windows and PCLP Network

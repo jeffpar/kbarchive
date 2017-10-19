@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95114: Unable to Move the Save As Dialog Box When Quitting Windows"
-permalink: kb/095/Q95114/
+permalink: /kb/095/Q95114/
 ---
 
 ## Q95114: Unable to Move the Save As Dialog Box When Quitting Windows

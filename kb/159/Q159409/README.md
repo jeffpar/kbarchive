@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159409: PRB: No Icons Created on Application Setup"
-permalink: kb/159/Q159409/
+permalink: /kb/159/Q159409/
 ---
 
 ## Q159409: PRB: No Icons Created on Application Setup

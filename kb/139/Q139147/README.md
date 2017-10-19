@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139147: Right Click On Title Does Not Activate Control Menu"
-permalink: kb/139/Q139147/
+permalink: /kb/139/Q139147/
 ---
 
 ## Q139147: Right Click On Title Does Not Activate Control Menu

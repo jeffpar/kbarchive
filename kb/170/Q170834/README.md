@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170834: Take Ownership Remotely Does Not Log Security Event"
-permalink: kb/170/Q170834/
+permalink: /kb/170/Q170834/
 ---
 
 ## Q170834: Take Ownership Remotely Does Not Log Security Event

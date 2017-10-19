@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131231: Macintosh Volume Connections from Trusted Domains"
-permalink: kb/131/Q131231/
+permalink: /kb/131/Q131231/
 ---
 
 ## Q131231: Macintosh Volume Connections from Trusted Domains

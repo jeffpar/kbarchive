@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152869: XADM: IS Crashes When Replication Status Page is Opened"
-permalink: kb/152/Q152869/
+permalink: /kb/152/Q152869/
 ---
 
 ## Q152869: XADM: IS Crashes When Replication Status Page is Opened

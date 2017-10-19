@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238865: SMS: SMSMon32 Process Hangs on Client After Applying SMS 2.0 SP1"
-permalink: kb/238/Q238865/
+permalink: /kb/238/Q238865/
 ---
 
 ## Q238865: SMS: SMSMon32 Process Hangs on Client After Applying SMS 2.0 SP1

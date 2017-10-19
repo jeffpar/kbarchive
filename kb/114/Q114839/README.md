@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114839: Net Start Fails When TCP/IP is the Only Protocol"
-permalink: kb/114/Q114839/
+permalink: /kb/114/Q114839/
 ---
 
 ## Q114839: Net Start Fails When TCP/IP is the Only Protocol

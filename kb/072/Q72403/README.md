@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72403: Methods for Printing Multiple Copies of a File"
-permalink: kb/072/Q72403/
+permalink: /kb/072/Q72403/
 ---
 
 ## Q72403: Methods for Printing Multiple Copies of a File

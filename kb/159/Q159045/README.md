@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159045: Error Message: Tape Drive Error Detected"
-permalink: kb/159/Q159045/
+permalink: /kb/159/Q159045/
 ---
 
 ## Q159045: Error Message: Tape Drive Error Detected

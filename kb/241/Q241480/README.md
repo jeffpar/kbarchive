@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241480: Resource Leaks Through Iphlpapi.dll in Windows NT 4.0"
-permalink: kb/241/Q241480/
+permalink: /kb/241/Q241480/
 ---
 
 ## Q241480: Resource Leaks Through Iphlpapi.dll in Windows NT 4.0

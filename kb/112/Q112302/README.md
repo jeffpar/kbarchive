@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112302: PC Win: Exporting Folders Err Msg: Not Enough Memory..."
-permalink: kb/112/Q112302/
+permalink: /kb/112/Q112302/
 ---
 
 ## Q112302: PC Win: Exporting Folders Err Msg: Not Enough Memory...

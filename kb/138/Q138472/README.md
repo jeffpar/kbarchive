@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138472: Failure Connecting to Network Monitor Agent Across RAS Gateway"
-permalink: kb/138/Q138472/
+permalink: /kb/138/Q138472/
 ---
 
 ## Q138472: Failure Connecting to Network Monitor Agent Across RAS Gateway

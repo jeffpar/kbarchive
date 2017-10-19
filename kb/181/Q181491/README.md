@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181491: PRB: MFC Generic App Resources Cannot Interact with Desktop"
-permalink: kb/181/Q181491/
+permalink: /kb/181/Q181491/
 ---
 
 ## Q181491: PRB: MFC Generic App Resources Cannot Interact with Desktop

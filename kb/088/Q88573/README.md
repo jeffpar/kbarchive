@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88573: Troubleshooting Autodial in Windows Cardfile"
-permalink: kb/088/Q88573/
+permalink: /kb/088/Q88573/
 ---
 
 ## Q88573: Troubleshooting Autodial in Windows Cardfile

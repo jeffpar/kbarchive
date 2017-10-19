@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115818: CD Sampler: GPF If Works or Excel Is Also Running"
-permalink: kb/115/Q115818/
+permalink: /kb/115/Q115818/
 ---
 
 ## Q115818: CD Sampler: GPF If Works or Excel Is Also Running

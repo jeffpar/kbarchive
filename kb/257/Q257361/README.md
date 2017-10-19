@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257361: Mixed-Case Names Are Registered in WINS"
-permalink: kb/257/Q257361/
+permalink: /kb/257/Q257361/
 ---
 
 ## Q257361: Mixed-Case Names Are Registered in WINS

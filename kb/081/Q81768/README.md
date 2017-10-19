@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81768: Windows Err Msg: !Error Building WIN.COM...(From MS-DOS Setup)"
-permalink: kb/081/Q81768/
+permalink: /kb/081/Q81768/
 ---
 
 ## Q81768: Windows Err Msg: !Error Building WIN.COM...(From MS-DOS Setup)

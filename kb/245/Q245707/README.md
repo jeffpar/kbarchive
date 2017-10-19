@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245707: AFTP Binary File Transfer Does Not Covert Data to ASCII"
-permalink: kb/245/Q245707/
+permalink: /kb/245/Q245707/
 ---
 
 ## Q245707: AFTP Binary File Transfer Does Not Covert Data to ASCII

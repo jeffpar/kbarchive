@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138465: Dataloader Fails to Add Binary Inventory to DB from New Child"
-permalink: kb/138/Q138465/
+permalink: /kb/138/Q138465/
 ---
 
 ## Q138465: Dataloader Fails to Add Binary Inventory to DB from New Child

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160865: XCLN: Schedule+ Error Granting Permissions to Users from PAB"
-permalink: kb/160/Q160865/
+permalink: /kb/160/Q160865/
 ---
 
 ## Q160865: XCLN: Schedule+ Error Granting Permissions to Users from PAB

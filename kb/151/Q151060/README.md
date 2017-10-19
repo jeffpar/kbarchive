@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151060: Games AVI Files Choppy on a Minimum Configuration"
-permalink: kb/151/Q151060/
+permalink: /kb/151/Q151060/
 ---
 
 ## Q151060: Games AVI Files Choppy on a Minimum Configuration

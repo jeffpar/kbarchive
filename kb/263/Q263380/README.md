@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263380: SMS: Remote Control File Transfer Doesn't List All Files"
-permalink: kb/263/Q263380/
+permalink: /kb/263/Q263380/
 ---
 
 ## Q263380: SMS: Remote Control File Transfer Doesn't List All Files

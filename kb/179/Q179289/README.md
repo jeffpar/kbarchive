@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179289: XFOR: IMS Fails to Start w/ Multiple RelayFlags Reg Entries"
-permalink: kb/179/Q179289/
+permalink: /kb/179/Q179289/
 ---
 
 ## Q179289: XFOR: IMS Fails to Start w/ Multiple RelayFlags Reg Entries

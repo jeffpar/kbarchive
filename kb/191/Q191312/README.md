@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191312: Conflicts Visible in Device Manager But Devices Work Correctly"
-permalink: kb/191/Q191312/
+permalink: /kb/191/Q191312/
 ---
 
 ## Q191312: Conflicts Visible in Device Manager But Devices Work Correctly

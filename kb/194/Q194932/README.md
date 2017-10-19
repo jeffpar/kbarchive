@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194932: Implicit Incoming Remote LU Cannot Be Set to None with SNACFG"
-permalink: kb/194/Q194932/
+permalink: /kb/194/Q194932/
 ---
 
 ## Q194932: Implicit Incoming Remote LU Cannot Be Set to None with SNACFG

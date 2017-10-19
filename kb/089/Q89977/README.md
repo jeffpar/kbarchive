@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89977: Print Manager Help Error: Cannot Use CTRL+UP ARROW"
-permalink: kb/089/Q89977/
+permalink: /kb/089/Q89977/
 ---
 
 ## Q89977: Print Manager Help Error: Cannot Use CTRL+UP ARROW

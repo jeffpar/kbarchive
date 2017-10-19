@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235631: Crtpkgw.exe Hangs While Trying to Create Packages in DB2 When Co"
-permalink: kb/235/Q235631/
+permalink: /kb/235/Q235631/
 ---
 
 ## Q235631: Crtpkgw.exe Hangs While Trying to Create Packages in DB2 When Co

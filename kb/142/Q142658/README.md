@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142658: Internet Information Server Runs Out of Memory"
-permalink: kb/142/Q142658/
+permalink: /kb/142/Q142658/
 ---
 
 ## Q142658: Internet Information Server Runs Out of Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191326: PRB: JAWS Software Cannot Read Some of FoxPro Menus"
-permalink: kb/191/Q191326/
+permalink: /kb/191/Q191326/
 ---
 
 ## Q191326: PRB: JAWS Software Cannot Read Some of FoxPro Menus

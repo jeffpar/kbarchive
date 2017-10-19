@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166246: SMS: Inventory Is Not Always Reported to Current Logon Server"
-permalink: kb/166/Q166246/
+permalink: /kb/166/Q166246/
 ---
 
 ## Q166246: SMS: Inventory Is Not Always Reported to Current Logon Server

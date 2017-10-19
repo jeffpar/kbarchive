@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181172: WD97: How to Clear the Undo Stack"
-permalink: kb/181/Q181172/
+permalink: /kb/181/Q181172/
 ---
 
 ## Q181172: WD97: How to Clear the Undo Stack

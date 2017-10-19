@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139830: Multimedia, Kids: Windows 95 Icons Moved in Full Screen Mode"
-permalink: kb/139/Q139830/
+permalink: /kb/139/Q139830/
 ---
 
 ## Q139830: Multimedia, Kids: Windows 95 Icons Moved in Full Screen Mode

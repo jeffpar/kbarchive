@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136706: Address 0.0.0.0 in DHCP DNS Servers Causes Client DNS to Fail"
-permalink: kb/136/Q136706/
+permalink: /kb/136/Q136706/
 ---
 
 ## Q136706: Address 0.0.0.0 in DHCP DNS Servers Causes Client DNS to Fail

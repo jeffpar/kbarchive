@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155959: WD97: Envelope Feed Method Displayed Incorrectly (HP DeskJet)"
-permalink: kb/155/Q155959/
+permalink: /kb/155/Q155959/
 ---
 
 ## Q155959: WD97: Envelope Feed Method Displayed Incorrectly (HP DeskJet)

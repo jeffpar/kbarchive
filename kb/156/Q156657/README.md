@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156657: Deadly Tide: Joystick, Hardware, and System Information"
-permalink: kb/156/Q156657/
+permalink: /kb/156/Q156657/
 ---
 
 ## Q156657: Deadly Tide: Joystick, Hardware, and System Information

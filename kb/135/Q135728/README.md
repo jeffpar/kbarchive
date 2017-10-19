@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135728: Artist: How to Transfer a Pigture Show to Another Computer"
-permalink: kb/135/Q135728/
+permalink: /kb/135/Q135728/
 ---
 
 ## Q135728: Artist: How to Transfer a Pigture Show to Another Computer

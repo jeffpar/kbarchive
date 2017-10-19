@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155641: Games: DirectX 2.0 Notes and Troubleshooting"
-permalink: kb/155/Q155641/
+permalink: /kb/155/Q155641/
 ---
 
 ## Q155641: Games: DirectX 2.0 Notes and Troubleshooting

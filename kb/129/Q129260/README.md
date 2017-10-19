@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129260: Windows 95 Setup: Description and Troubleshooting Steps"
-permalink: kb/129/Q129260/
+permalink: /kb/129/Q129260/
 ---
 
 ## Q129260: Windows 95 Setup: Description and Troubleshooting Steps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264811: SMS: Timestamps Reset When Printing Big Network Monitor Capture"
-permalink: kb/264/Q264811/
+permalink: /kb/264/Q264811/
 ---
 
 ## Q264811: SMS: Timestamps Reset When Printing Big Network Monitor Capture

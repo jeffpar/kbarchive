@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314720: INFO: Windows XP Includes a New Version of Msvbvm60.DLL"
-permalink: kb/314/Q314720/
+permalink: /kb/314/Q314720/
 ---
 
 ## Q314720: INFO: Windows XP Includes a New Version of Msvbvm60.DLL

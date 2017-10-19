@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141797: Fw1223.exe Describes Components of a Customized Builder"
-permalink: kb/141/Q141797/
+permalink: /kb/141/Q141797/
 ---
 
 ## Q141797: Fw1223.exe Describes Components of a Customized Builder

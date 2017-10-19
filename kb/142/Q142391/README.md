@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142391: Cannot Upgrade NFR or MSDN Windows NT 4.0 to Retail"
-permalink: kb/142/Q142391/
+permalink: /kb/142/Q142391/
 ---
 
 ## Q142391: Cannot Upgrade NFR or MSDN Windows NT 4.0 to Retail

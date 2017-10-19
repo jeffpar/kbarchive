@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242591: PRB: Running Noncertified Applications as a Non-Administrator"
-permalink: kb/242/Q242591/
+permalink: /kb/242/Q242591/
 ---
 
 ## Q242591: PRB: Running Noncertified Applications as a Non-Administrator

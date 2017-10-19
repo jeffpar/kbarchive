@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107620: MAC Dinosaurs: Unable to Cancel Introductory Audio"
-permalink: kb/107/Q107620/
+permalink: /kb/107/Q107620/
 ---
 
 ## Q107620: MAC Dinosaurs: Unable to Cancel Introductory Audio

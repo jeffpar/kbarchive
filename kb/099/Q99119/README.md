@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99119: PC Setup: Err Msg: API (SetRegKeyValue) Failed"
-permalink: kb/099/Q99119/
+permalink: /kb/099/Q99119/
 ---
 
 ## Q99119: PC Setup: Err Msg: API (SetRegKeyValue) Failed

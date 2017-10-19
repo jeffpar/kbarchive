@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160045: Kids Plus!: Talk It! Is Uncensored"
-permalink: kb/160/Q160045/
+permalink: /kb/160/Q160045/
 ---
 
 ## Q160045: Kids Plus!: Talk It! Is Uncensored

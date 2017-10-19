@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254064: XFOR: Connector for SNADS Delivery Receipt Fails in SP2 and SP3"
-permalink: kb/254/Q254064/
+permalink: /kb/254/Q254064/
 ---
 
 ## Q254064: XFOR: Connector for SNADS Delivery Receipt Fails in SP2 and SP3

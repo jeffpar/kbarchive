@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134539: Game &quot;Secret Weapons of the Luftwaffe&quot; Does Not Start"
-permalink: kb/134/Q134539/
+permalink: /kb/134/Q134539/
 ---
 
 ## Q134539: Game &quot;Secret Weapons of the Luftwaffe&quot; Does Not Start

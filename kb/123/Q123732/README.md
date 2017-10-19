@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123732: Setup Err Msg: This HAL.DLL Requires an MPS Version 1.1"
-permalink: kb/123/Q123732/
+permalink: /kb/123/Q123732/
 ---
 
 ## Q123732: Setup Err Msg: This HAL.DLL Requires an MPS Version 1.1

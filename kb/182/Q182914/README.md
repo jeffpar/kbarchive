@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182914: SNA Server Can Be &quot;Paused&quot; to Force New Users to Other Servers"
-permalink: kb/182/Q182914/
+permalink: /kb/182/Q182914/
 ---
 
 ## Q182914: SNA Server Can Be &quot;Paused&quot; to Force New Users to Other Servers

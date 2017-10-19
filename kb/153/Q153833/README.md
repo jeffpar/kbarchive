@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153833: PPT: How to Resize the AutoLayout Placeholders"
-permalink: kb/153/Q153833/
+permalink: /kb/153/Q153833/
 ---
 
 ## Q153833: PPT: How to Resize the AutoLayout Placeholders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149233: FIX: Palette Does Not Change with Picture on MDI Child"
-permalink: kb/149/Q149233/
+permalink: /kb/149/Q149233/
 ---
 
 ## Q149233: FIX: Palette Does Not Change with Picture on MDI Child

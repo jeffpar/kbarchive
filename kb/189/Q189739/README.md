@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189739: HOWTO: Package and Deployment Wizard Installation Macros"
-permalink: kb/189/Q189739/
+permalink: /kb/189/Q189739/
 ---
 
 ## Q189739: HOWTO: Package and Deployment Wizard Installation Macros

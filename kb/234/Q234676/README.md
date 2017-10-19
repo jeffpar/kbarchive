@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234676: WD97: Word Document Is Saved Locally When Saved in IE"
-permalink: kb/234/Q234676/
+permalink: /kb/234/Q234676/
 ---
 
 ## Q234676: WD97: Word Document Is Saved Locally When Saved in IE

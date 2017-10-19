@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187577: STOP 0xA Because of Spin Lock in Sfmatalk.sys on DEC Alpha"
-permalink: kb/187/Q187577/
+permalink: /kb/187/Q187577/
 ---
 
 ## Q187577: STOP 0xA Because of Spin Lock in Sfmatalk.sys on DEC Alpha

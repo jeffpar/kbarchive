@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325999: MechWarrior 4: The New Mechs Are Not Available"
-permalink: kb/325/Q325999/
+permalink: /kb/325/Q325999/
 ---
 
 ## Q325999: MechWarrior 4: The New Mechs Are Not Available

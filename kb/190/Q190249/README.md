@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190249: INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues"
-permalink: kb/190/Q190249/
+permalink: /kb/190/Q190249/
 ---
 
 ## Q190249: INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues

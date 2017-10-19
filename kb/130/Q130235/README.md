@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130235: Windows 95 Detects Disabled Network Card"
-permalink: kb/130/Q130235/
+permalink: /kb/130/Q130235/
 ---
 
 ## Q130235: Windows 95 Detects Disabled Network Card

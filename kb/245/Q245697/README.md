@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245697: Domain User Can Avoid a Remote Shutdown"
-permalink: kb/245/Q245697/
+permalink: /kb/245/Q245697/
 ---
 
 ## Q245697: Domain User Can Avoid a Remote Shutdown

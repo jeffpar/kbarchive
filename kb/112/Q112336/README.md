@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112336: FIX: &quot;fatal error U1073: don't know how to make"
-permalink: kb/112/Q112336/
+permalink: /kb/112/Q112336/
 ---
 
 ## Q112336: FIX: &quot;fatal error U1073: don't know how to make

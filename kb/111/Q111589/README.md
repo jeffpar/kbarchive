@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111589: BUG: Brush Misaligned in PaintRgn()"
-permalink: kb/111/Q111589/
+permalink: /kb/111/Q111589/
 ---
 
 ## Q111589: BUG: Brush Misaligned in PaintRgn()

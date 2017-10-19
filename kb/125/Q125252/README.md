@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125252: PC Adm: Rebuilding the Postoffice Address List"
-permalink: kb/125/Q125252/
+permalink: /kb/125/Q125252/
 ---
 
 ## Q125252: PC Adm: Rebuilding the Postoffice Address List

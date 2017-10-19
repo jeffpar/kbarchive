@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240425: Zone Err Msg: Your Computer Is Trying to Update Your Zone Files"
-permalink: kb/240/Q240425/
+permalink: /kb/240/Q240425/
 ---
 
 ## Q240425: Zone Err Msg: Your Computer Is Trying to Update Your Zone Files

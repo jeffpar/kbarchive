@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140612: BUG: Buglist for Visual Basic 4.0 for Windows as of 01-May-1996"
-permalink: kb/140/Q140612/
+permalink: /kb/140/Q140612/
 ---
 
 ## Q140612: BUG: Buglist for Visual Basic 4.0 for Windows as of 01-May-1996

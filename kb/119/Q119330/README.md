@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119330: FIX: TAB-Indented Lines Are Not Cut or Copied with New Line"
-permalink: kb/119/Q119330/
+permalink: /kb/119/Q119330/
 ---
 
 ## Q119330: FIX: TAB-Indented Lines Are Not Cut or Copied with New Line

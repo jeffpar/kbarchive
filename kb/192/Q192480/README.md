@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192480: WD97: Frequently Asked Questions About &quot;Allow Fast Saves&quot;"
-permalink: kb/192/Q192480/
+permalink: /kb/192/Q192480/
 ---
 
 ## Q192480: WD97: Frequently Asked Questions About &quot;Allow Fast Saves&quot;

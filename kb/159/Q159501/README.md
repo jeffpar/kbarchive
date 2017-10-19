@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159501: Compaq LTE 5000 with 2.167GB Drive Requires Updated HAL"
-permalink: kb/159/Q159501/
+permalink: /kb/159/Q159501/
 ---
 
 ## Q159501: Compaq LTE 5000 with 2.167GB Drive Requires Updated HAL

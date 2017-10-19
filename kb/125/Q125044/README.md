@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125044: PRB: SYS(2004) From .EXE Returns .ESL Directory"
-permalink: kb/125/Q125044/
+permalink: /kb/125/Q125044/
 ---
 
 ## Q125044: PRB: SYS(2004) From .EXE Returns .ESL Directory

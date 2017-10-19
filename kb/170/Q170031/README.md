@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170031: Sendmail Version 8 Configurable Timeouts"
-permalink: kb/170/Q170031/
+permalink: /kb/170/Q170031/
 ---
 
 ## Q170031: Sendmail Version 8 Configurable Timeouts

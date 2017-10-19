@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135891: Windows 95 CD-ROM Msn.txt File"
-permalink: kb/135/Q135891/
+permalink: /kb/135/Q135891/
 ---
 
 ## Q135891: Windows 95 CD-ROM Msn.txt File

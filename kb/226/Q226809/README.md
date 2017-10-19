@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226809: SMS: Incorrect Values Reported for Swap File Size and Swap Used"
-permalink: kb/226/Q226809/
+permalink: /kb/226/Q226809/
 ---
 
 ## Q226809: SMS: Incorrect Values Reported for Swap File Size and Swap Used

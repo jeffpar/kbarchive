@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134574: Cannot Format SRAM Card"
-permalink: kb/134/Q134574/
+permalink: /kb/134/Q134574/
 ---
 
 ## Q134574: Cannot Format SRAM Card

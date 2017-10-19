@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160157: Unstable After Activating Red Carded Player"
-permalink: kb/160/Q160157/
+permalink: /kb/160/Q160157/
 ---
 
 ## Q160157: Unstable After Activating Red Carded Player

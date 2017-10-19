@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151280: TCP/IP Does Not Function After Adding a Second Adapter"
-permalink: kb/151/Q151280/
+permalink: /kb/151/Q151280/
 ---
 
 ## Q151280: TCP/IP Does Not Function After Adding a Second Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121134: Doc Error: NT Workstation Inbound Connections Not Unlimited"
-permalink: kb/121/Q121134/
+permalink: /kb/121/Q121134/
 ---
 
 ## Q121134: Doc Error: NT Workstation Inbound Connections Not Unlimited

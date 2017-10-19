@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319207: SMS: Retrying a Package Update May Create Many Jobs"
-permalink: kb/319/Q319207/
+permalink: /kb/319/Q319207/
 ---
 
 ## Q319207: SMS: Retrying a Package Update May Create Many Jobs

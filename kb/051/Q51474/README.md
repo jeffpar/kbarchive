@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51474: INFO: Character Parameters May Be Prototyped as Integers"
-permalink: kb/051/Q51474/
+permalink: /kb/051/Q51474/
 ---
 
 ## Q51474: INFO: Character Parameters May Be Prototyped as Integers

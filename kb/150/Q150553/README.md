@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150553: Weitekp9 Video Driver Collides with Media Vision Sound Driver"
-permalink: kb/150/Q150553/
+permalink: /kb/150/Q150553/
 ---
 
 ## Q150553: Weitekp9 Video Driver Collides with Media Vision Sound Driver

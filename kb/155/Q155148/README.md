@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155148: Writer 2: Start New Page Places Cursor After Insertion Line"
-permalink: kb/155/Q155148/
+permalink: /kb/155/Q155148/
 ---
 
 ## Q155148: Writer 2: Start New Page Places Cursor After Insertion Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155989: WINS Administrator Refresh Button Doesn't Refresh Mapping Screen"
-permalink: kb/155/Q155989/
+permalink: /kb/155/Q155989/
 ---
 
 ## Q155989: WINS Administrator Refresh Button Doesn't Refresh Mapping Screen

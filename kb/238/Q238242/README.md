@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238242: BUG: OLE Automation Returns &quot;Element not found&quot; Error"
-permalink: kb/238/Q238242/
+permalink: /kb/238/Q238242/
 ---
 
 ## Q238242: BUG: OLE Automation Returns &quot;Element not found&quot; Error

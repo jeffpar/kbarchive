@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86315: PC Win: Drag/Drop Makes Folder Hierarchy Display Incorrect"
-permalink: kb/086/Q86315/
+permalink: /kb/086/Q86315/
 ---
 
 ## Q86315: PC Win: Drag/Drop Makes Folder Hierarchy Display Incorrect

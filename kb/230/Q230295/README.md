@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230295: Contents of Site Server Express Content Analyzer Release Notes"
-permalink: kb/230/Q230295/
+permalink: /kb/230/Q230295/
 ---
 
 ## Q230295: Contents of Site Server Express Content Analyzer Release Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142297: NetWare Printer Offline Using Microsoft Service for NDS"
-permalink: kb/142/Q142297/
+permalink: /kb/142/Q142297/
 ---
 
 ## Q142297: NetWare Printer Offline Using Microsoft Service for NDS

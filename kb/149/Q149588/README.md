@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149588: How to Change or Move the .pst File for Personal Folders"
-permalink: kb/149/Q149588/
+permalink: /kb/149/Q149588/
 ---
 
 ## Q149588: How to Change or Move the .pst File for Personal Folders

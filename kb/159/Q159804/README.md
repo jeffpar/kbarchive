@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159804: Toolbar or Color Palette Not Visible in Paint"
-permalink: kb/159/Q159804/
+permalink: /kb/159/Q159804/
 ---
 
 ## Q159804: Toolbar or Color Palette Not Visible in Paint

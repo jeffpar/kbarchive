@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263597: XGEN: Automatically Creating a Criteria File for Isscan"
-permalink: kb/263/Q263597/
+permalink: /kb/263/Q263597/
 ---
 
 ## Q263597: XGEN: Automatically Creating a Criteria File for Isscan

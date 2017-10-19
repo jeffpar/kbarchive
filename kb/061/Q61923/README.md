@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61923: Adding a New Logbook Entry Requires Flying for 6 Minutes"
-permalink: kb/061/Q61923/
+permalink: /kb/061/Q61923/
 ---
 
 ## Q61923: Adding a New Logbook Entry Requires Flying for 6 Minutes

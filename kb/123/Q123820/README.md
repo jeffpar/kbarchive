@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123820: Error Installing Intel TokenExpress: The INF OEMNAD0 Is..."
-permalink: kb/123/Q123820/
+permalink: /kb/123/Q123820/
 ---
 
 ## Q123820: Error Installing Intel TokenExpress: The INF OEMNAD0 Is...

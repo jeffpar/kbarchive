@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161519: WD97: Table Column Width Changes When Opened As HTML"
-permalink: kb/161/Q161519/
+permalink: /kb/161/Q161519/
 ---
 
 ## Q161519: WD97: Table Column Width Changes When Opened As HTML

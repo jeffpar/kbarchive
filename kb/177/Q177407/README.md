@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177407: Versions of Bookshelf and Word That Can Be Integrated"
-permalink: kb/177/Q177407/
+permalink: /kb/177/Q177407/
 ---
 
 ## Q177407: Versions of Bookshelf and Word That Can Be Integrated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137687: PPT7: Media Player Box Displays During Slide Show While Playing"
-permalink: kb/137/Q137687/
+permalink: /kb/137/Q137687/
 ---
 
 ## Q137687: PPT7: Media Player Box Displays During Slide Show While Playing

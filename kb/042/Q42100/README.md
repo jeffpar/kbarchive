@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q42100: Transferring Files between Windows Write and Macintosh Word"
-permalink: kb/042/Q42100/
+permalink: /kb/042/Q42100/
 ---
 
 ## Q42100: Transferring Files between Windows Write and Macintosh Word

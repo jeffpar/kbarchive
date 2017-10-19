@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135681: HP4 Driver Does not List MP Tray as an Available Source"
-permalink: kb/135/Q135681/
+permalink: /kb/135/Q135681/
 ---
 
 ## Q135681: HP4 Driver Does not List MP Tray as an Available Source

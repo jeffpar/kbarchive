@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167020: ATI Graphics Pro Turbo PCI Video Adapter Resolution Problem"
-permalink: kb/167/Q167020/
+permalink: /kb/167/Q167020/
 ---
 
 ## Q167020: ATI Graphics Pro Turbo PCI Video Adapter Resolution Problem

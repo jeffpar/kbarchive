@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155984: Using the AVM Fritz ISDN Card with MSN"
-permalink: kb/155/Q155984/
+permalink: /kb/155/Q155984/
 ---
 
 ## Q155984: Using the AVM Fritz ISDN Card with MSN

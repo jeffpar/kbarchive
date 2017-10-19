@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82593: Legacy 1.1 Hangs when Installed from File Manager"
-permalink: kb/082/Q82593/
+permalink: /kb/082/Q82593/
 ---
 
 ## Q82593: Legacy 1.1 Hangs when Installed from File Manager

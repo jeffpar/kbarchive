@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105933: FORTRAN PowerStation ADDENDA.TXT"
-permalink: kb/105/Q105933/
+permalink: /kb/105/Q105933/
 ---
 
 ## Q105933: FORTRAN PowerStation ADDENDA.TXT

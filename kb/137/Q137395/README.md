@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137395: Transferring Login Scripts Requires MAIL Directory Migration"
-permalink: kb/137/Q137395/
+permalink: /kb/137/Q137395/
 ---
 
 ## Q137395: Transferring Login Scripts Requires MAIL Directory Migration

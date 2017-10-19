@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304488: MCSE Training Kit: Microsoft Windows 2000 Advanced Server Cluste"
-permalink: kb/304/Q304488/
+permalink: /kb/304/Q304488/
 ---
 
 ## Q304488: MCSE Training Kit: Microsoft Windows 2000 Advanced Server Cluste

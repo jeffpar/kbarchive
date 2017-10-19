@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166586: XCON: Incoming Attachments Lost from Wang X.400 Connector"
-permalink: kb/166/Q166586/
+permalink: /kb/166/Q166586/
 ---
 
 ## Q166586: XCON: Incoming Attachments Lost from Wang X.400 Connector

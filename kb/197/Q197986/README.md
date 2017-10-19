@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197986: How to Configure Windows 95 Policies with Load Balancing"
-permalink: kb/197/Q197986/
+permalink: /kb/197/Q197986/
 ---
 
 ## Q197986: How to Configure Windows 95 Policies with Load Balancing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121531: Windows NT Separator Pages May Print an Incorrect Date"
-permalink: kb/121/Q121531/
+permalink: /kb/121/Q121531/
 ---
 
 ## Q121531: Windows NT Separator Pages May Print an Incorrect Date

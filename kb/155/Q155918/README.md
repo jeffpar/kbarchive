@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155918: HOWTO: How To Scroll a CFormView to See the Controls"
-permalink: kb/155/Q155918/
+permalink: /kb/155/Q155918/
 ---
 
 ## Q155918: HOWTO: How To Scroll a CFormView to See the Controls

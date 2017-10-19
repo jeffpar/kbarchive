@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126399: Event ID 49: Node ID from Remote Computer was Rejected"
-permalink: kb/126/Q126399/
+permalink: /kb/126/Q126399/
 ---
 
 ## Q126399: Event ID 49: Node ID from Remote Computer was Rejected

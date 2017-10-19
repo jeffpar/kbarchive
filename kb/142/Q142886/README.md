@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142886: FIX: &quot;Record is in use by another&quot; Error Inside of Grid"
-permalink: kb/142/Q142886/
+permalink: /kb/142/Q142886/
 ---
 
 ## Q142886: FIX: &quot;Record is in use by another&quot; Error Inside of Grid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68277: ASD: Manual Installation"
-permalink: kb/068/Q68277/
+permalink: /kb/068/Q68277/
 ---
 
 ## Q68277: ASD: Manual Installation

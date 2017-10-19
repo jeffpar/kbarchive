@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130097: PC Win: How to Disable the Server Button"
-permalink: kb/130/Q130097/
+permalink: /kb/130/Q130097/
 ---
 
 ## Q130097: PC Win: How to Disable the Server Button

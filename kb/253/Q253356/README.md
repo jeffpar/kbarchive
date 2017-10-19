@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253356: PRB: &quot;API Call Caused an Exception&quot; with 3rd-Party Print Drivers"
-permalink: kb/253/Q253356/
+permalink: /kb/253/Q253356/
 ---
 
 ## Q253356: PRB: &quot;API Call Caused an Exception&quot; with 3rd-Party Print Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84465: Bitfax May Cause GP Fault in Windows 3.1"
-permalink: kb/084/Q84465/
+permalink: /kb/084/Q84465/
 ---
 
 ## Q84465: Bitfax May Cause GP Fault in Windows 3.1

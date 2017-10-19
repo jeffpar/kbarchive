@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241061: Cannot Gain Access to Certificate Server Log and Queue"
-permalink: kb/241/Q241061/
+permalink: /kb/241/Q241061/
 ---
 
 ## Q241061: Cannot Gain Access to Certificate Server Log and Queue

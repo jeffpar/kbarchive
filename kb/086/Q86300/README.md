@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86300: Perform Pro Can Cause Rumba to Lose Settings"
-permalink: kb/086/Q86300/
+permalink: /kb/086/Q86300/
 ---
 
 ## Q86300: Perform Pro Can Cause Rumba to Lose Settings

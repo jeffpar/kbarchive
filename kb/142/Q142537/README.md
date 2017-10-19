@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142537: Remember Password Option Is Unavailable"
-permalink: kb/142/Q142537/
+permalink: /kb/142/Q142537/
 ---
 
 ## Q142537: Remember Password Option Is Unavailable

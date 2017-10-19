@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140661: Encarta 97 Deluxe: CD swapping problem with NetWare/Win 3.x"
-permalink: kb/140/Q140661/
+permalink: /kb/140/Q140661/
 ---
 
 ## Q140661: Encarta 97 Deluxe: CD swapping problem with NetWare/Win 3.x

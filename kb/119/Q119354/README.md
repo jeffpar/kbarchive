@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119354: How to Group Child Records in a Report Detail Band"
-permalink: kb/119/Q119354/
+permalink: /kb/119/Q119354/
 ---
 
 ## Q119354: How to Group Child Records in a Report Detail Band

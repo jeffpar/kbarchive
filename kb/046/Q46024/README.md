@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46024: DOCFIX: fopen() Will Set errno Values Incorrect in Documentation"
-permalink: kb/046/Q46024/
+permalink: /kb/046/Q46024/
 ---
 
 ## Q46024: DOCFIX: fopen() Will Set errno Values Incorrect in Documentation

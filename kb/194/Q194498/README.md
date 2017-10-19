@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194498: WD97: Error Message: File Is Not a Macintosh Word File"
-permalink: kb/194/Q194498/
+permalink: /kb/194/Q194498/
 ---
 
 ## Q194498: WD97: Error Message: File Is Not a Macintosh Word File

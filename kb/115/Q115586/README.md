@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115586: Writer 1: GPF When Printing in Color to some 9-Pin Printers"
-permalink: kb/115/Q115586/
+permalink: /kb/115/Q115586/
 ---
 
 ## Q115586: Writer 1: GPF When Printing in Color to some 9-Pin Printers

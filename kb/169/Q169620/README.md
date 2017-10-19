@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169620: Err Msg: Accessing CD-ROM Drive: D:&#92; Is Not Accessible"
-permalink: kb/169/Q169620/
+permalink: /kb/169/Q169620/
 ---
 
 ## Q169620: Err Msg: Accessing CD-ROM Drive: D:&#92; Is Not Accessible

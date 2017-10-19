@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140947: XADM: Number of Active Logons Counter Always Zero"
-permalink: kb/140/Q140947/
+permalink: /kb/140/Q140947/
 ---
 
 ## Q140947: XADM: Number of Active Logons Counter Always Zero

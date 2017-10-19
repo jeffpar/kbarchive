@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216952: ERROR 12035 on SFM Volume Creation After Installing SP4"
-permalink: kb/216/Q216952/
+permalink: /kb/216/Q216952/
 ---
 
 ## Q216952: ERROR 12035 on SFM Volume Creation After Installing SP4

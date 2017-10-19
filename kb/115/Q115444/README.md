@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115444: X400: Admin Program Generates Error with TP4/CLNP Connection"
-permalink: kb/115/Q115444/
+permalink: /kb/115/Q115444/
 ---
 
 ## Q115444: X400: Admin Program Generates Error with TP4/CLNP Connection

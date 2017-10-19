@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173315: PPT7: White Text Prints Black w/ HP Color LaserJet Driver"
-permalink: kb/173/Q173315/
+permalink: /kb/173/Q173315/
 ---
 
 ## Q173315: PPT7: White Text Prints Black w/ HP Color LaserJet Driver

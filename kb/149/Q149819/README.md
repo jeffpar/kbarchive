@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149819: RPC Causes Exchange Server to Hang All Connected Clients"
-permalink: kb/149/Q149819/
+permalink: /kb/149/Q149819/
 ---
 
 ## Q149819: RPC Causes Exchange Server to Hang All Connected Clients

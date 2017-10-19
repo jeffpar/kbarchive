@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186143: HOWTO: Use the CallByName Function to Run a Procedure"
-permalink: kb/186/Q186143/
+permalink: /kb/186/Q186143/
 ---
 
 ## Q186143: HOWTO: Use the CallByName Function to Run a Procedure

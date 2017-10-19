@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43556: Use /Zi to Compile Commands Invoked with &quot;?&quot; Command"
-permalink: kb/043/Q43556/
+permalink: /kb/043/Q43556/
 ---
 
 ## Q43556: Use /Zi to Compile Commands Invoked with &quot;?&quot; Command

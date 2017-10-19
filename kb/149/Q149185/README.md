@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149185: &quot;Registry Subkey Already Exists&quot; When Reinstalling NWLINK"
-permalink: kb/149/Q149185/
+permalink: /kb/149/Q149185/
 ---
 
 ## Q149185: &quot;Registry Subkey Already Exists&quot; When Reinstalling NWLINK

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147875: HOWTO: Use &quot;DSN-Less&quot; ODBC Connections with RDO and DAO"
-permalink: kb/147/Q147875/
+permalink: /kb/147/Q147875/
 ---
 
 ## Q147875: HOWTO: Use &quot;DSN-Less&quot; ODBC Connections with RDO and DAO

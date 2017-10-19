@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118674: Gtwy: Gateway Connectivity Information"
-permalink: kb/118/Q118674/
+permalink: /kb/118/Q118674/
 ---
 
 ## Q118674: Gtwy: Gateway Connectivity Information

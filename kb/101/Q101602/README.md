@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101602: Configuring Windows NT for Replication"
-permalink: kb/101/Q101602/
+permalink: /kb/101/Q101602/
 ---
 
 ## Q101602: Configuring Windows NT for Replication

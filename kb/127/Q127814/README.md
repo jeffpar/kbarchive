@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127814: Printing to WinNT Queue Attached to NetWare Queue Hangs NetWare"
-permalink: kb/127/Q127814/
+permalink: /kb/127/Q127814/
 ---
 
 ## Q127814: Printing to WinNT Queue Attached to NetWare Queue Hangs NetWare

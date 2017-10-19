@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75755: Starting Windows Terminal in Full-Screen Mode"
-permalink: kb/075/Q75755/
+permalink: /kb/075/Q75755/
 ---
 
 ## Q75755: Starting Windows Terminal in Full-Screen Mode

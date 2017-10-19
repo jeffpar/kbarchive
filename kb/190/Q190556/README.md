@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190556: XADM: Corrupted MIME Encoding Causes Information Store to Crash"
-permalink: kb/190/Q190556/
+permalink: /kb/190/Q190556/
 ---
 
 ## Q190556: XADM: Corrupted MIME Encoding Causes Information Store to Crash

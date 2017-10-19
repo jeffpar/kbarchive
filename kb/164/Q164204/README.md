@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164204: SMS: PC Memory Reported Incorrectly for Windows 3.x Clients"
-permalink: kb/164/Q164204/
+permalink: /kb/164/Q164204/
 ---
 
 ## Q164204: SMS: PC Memory Reported Incorrectly for Windows 3.x Clients

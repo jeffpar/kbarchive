@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82077: FIFLE: Sample Application Demonstrates Using DDEML"
-permalink: kb/082/Q82077/
+permalink: /kb/082/Q82077/
 ---
 
 ## Q82077: FIFLE: Sample Application Demonstrates Using DDEML

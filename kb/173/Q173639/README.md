@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173639: Support for Localized or International Versions of Windows NT"
-permalink: kb/173/Q173639/
+permalink: /kb/173/Q173639/
 ---
 
 ## Q173639: Support for Localized or International Versions of Windows NT

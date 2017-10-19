@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76727: FIX: MASM 5.1, 6.x, and the LOCK and REP Prefixes"
-permalink: kb/076/Q76727/
+permalink: /kb/076/Q76727/
 ---
 
 ## Q76727: FIX: MASM 5.1, 6.x, and the LOCK and REP Prefixes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96714: Description of Pipe Dream in the Windows Entertainment Pack"
-permalink: kb/096/Q96714/
+permalink: /kb/096/Q96714/
 ---
 
 ## Q96714: Description of Pipe Dream in the Windows Entertainment Pack

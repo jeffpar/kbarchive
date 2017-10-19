@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186380: BUG: Error When Using Table Aliases with Oracle ODBC Driver"
-permalink: kb/186/Q186380/
+permalink: /kb/186/Q186380/
 ---
 
 ## Q186380: BUG: Error When Using Table Aliases with Oracle ODBC Driver

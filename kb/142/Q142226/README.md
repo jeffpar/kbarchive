@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142226: PRB: CButton SetIcon and SetBitmap Work Only Under Windows 95"
-permalink: kb/142/Q142226/
+permalink: /kb/142/Q142226/
 ---
 
 ## Q142226: PRB: CButton SetIcon and SetBitmap Work Only Under Windows 95

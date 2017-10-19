@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138247: List of Documentation Errors in Windows 95 Readme.txt File"
-permalink: kb/138/Q138247/
+permalink: /kb/138/Q138247/
 ---
 
 ## Q138247: List of Documentation Errors in Windows 95 Readme.txt File

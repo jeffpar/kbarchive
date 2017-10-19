@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57244: INFO: Workaround for Converting a Float/Double to a String"
-permalink: kb/057/Q57244/
+permalink: /kb/057/Q57244/
 ---
 
 ## Q57244: INFO: Workaround for Converting a Float/Double to a String

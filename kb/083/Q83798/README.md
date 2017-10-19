@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83798: Paradox 3.5 Will Run Under Microsoft Windows 3.0 and 3.1"
-permalink: kb/083/Q83798/
+permalink: /kb/083/Q83798/
 ---
 
 ## Q83798: Paradox 3.5 Will Run Under Microsoft Windows 3.0 and 3.1

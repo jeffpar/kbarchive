@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158334: Cannot Install PowerDesk in Windows NT 4.0"
-permalink: kb/158/Q158334/
+permalink: /kb/158/Q158334/
 ---
 
 ## Q158334: Cannot Install PowerDesk in Windows NT 4.0

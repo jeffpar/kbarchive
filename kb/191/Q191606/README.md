@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191606: Dell 3c905b Oemsetup.inf File Has Errors"
-permalink: kb/191/Q191606/
+permalink: /kb/191/Q191606/
 ---
 
 ## Q191606: Dell 3c905b Oemsetup.inf File Has Errors

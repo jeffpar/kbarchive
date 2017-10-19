@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242997: How To Manually Uninstall Microsoft SNA Server Client 4.0"
-permalink: kb/242/Q242997/
+permalink: /kb/242/Q242997/
 ---
 
 ## Q242997: How To Manually Uninstall Microsoft SNA Server Client 4.0

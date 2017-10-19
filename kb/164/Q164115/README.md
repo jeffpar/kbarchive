@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164115: Play Button Unavailable When CD is Reinserted in CD-ROM Drive"
-permalink: kb/164/Q164115/
+permalink: /kb/164/Q164115/
 ---
 
 ## Q164115: Play Button Unavailable When CD is Reinserted in CD-ROM Drive

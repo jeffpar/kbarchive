@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196020: WD97: How to Rebuild User Preference and Options Settings"
-permalink: kb/196/Q196020/
+permalink: /kb/196/Q196020/
 ---
 
 ## Q196020: WD97: How to Rebuild User Preference and Options Settings

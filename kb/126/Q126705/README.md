@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126705: Cannot Do WFWG SETUP /N Over Previous Full Windows Install"
-permalink: kb/126/Q126705/
+permalink: /kb/126/Q126705/
 ---
 
 ## Q126705: Cannot Do WFWG SETUP /N Over Previous Full Windows Install

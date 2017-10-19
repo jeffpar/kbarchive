@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172881: Nwssvc.exe Access Violates When GetFileSecDesc Returns NULL"
-permalink: kb/172/Q172881/
+permalink: /kb/172/Q172881/
 ---
 
 ## Q172881: Nwssvc.exe Access Violates When GetFileSecDesc Returns NULL

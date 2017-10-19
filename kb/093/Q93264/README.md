@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93264: Problems Running Autocad 386 Version 12 in Privileged Mode"
-permalink: kb/093/Q93264/
+permalink: /kb/093/Q93264/
 ---
 
 ## Q93264: Problems Running Autocad 386 Version 12 in Privileged Mode

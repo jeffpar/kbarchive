@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326444: HOW TO: Configure the URLScan Tool"
-permalink: kb/326/Q326444/
+permalink: /kb/326/Q326444/
 ---
 
 ## Q326444: HOW TO: Configure the URLScan Tool

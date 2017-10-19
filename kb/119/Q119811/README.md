@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119811: BUG: Dbase or FoxPro: Fox Memo Select Stopped by Dbase"
-permalink: kb/119/Q119811/
+permalink: /kb/119/Q119811/
 ---
 
 ## Q119811: BUG: Dbase or FoxPro: Fox Memo Select Stopped by Dbase

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253964: XWEB: Day or Year Inconsistencies in OWA Calendar View"
-permalink: kb/253/Q253964/
+permalink: /kb/253/Q253964/
 ---
 
 ## Q253964: XWEB: Day or Year Inconsistencies in OWA Calendar View

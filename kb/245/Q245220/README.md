@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245220: Novell Management Agent Does Not Run with CSNW"
-permalink: kb/245/Q245220/
+permalink: /kb/245/Q245220/
 ---
 
 ## Q245220: Novell Management Agent Does Not Run with CSNW

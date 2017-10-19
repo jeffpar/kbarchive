@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69735: MS-DOS 5.0 &amp; Later and the AST 3G Plus Graphics Card"
-permalink: kb/069/Q69735/
+permalink: /kb/069/Q69735/
 ---
 
 ## Q69735: MS-DOS 5.0 &amp; Later and the AST 3G Plus Graphics Card

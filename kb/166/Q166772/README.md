@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166772: S3 Video Performance Improved in Windows NT 4.0"
-permalink: kb/166/Q166772/
+permalink: /kb/166/Q166772/
 ---
 
 ## Q166772: S3 Video Performance Improved in Windows NT 4.0

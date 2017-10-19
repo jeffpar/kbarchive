@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193533: XFOR: Date/Time Stamps Not Preserved on Migrated Notes Messages"
-permalink: kb/193/Q193533/
+permalink: /kb/193/Q193533/
 ---
 
 ## Q193533: XFOR: Date/Time Stamps Not Preserved on Migrated Notes Messages

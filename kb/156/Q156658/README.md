@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156658: Deadly Tide: Improving Performance"
-permalink: kb/156/Q156658/
+permalink: /kb/156/Q156658/
 ---
 
 ## Q156658: Deadly Tide: Improving Performance

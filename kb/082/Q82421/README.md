@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82421: Lenel's Multimedia Organizer with TrueType Only Enabled"
-permalink: kb/082/Q82421/
+permalink: /kb/082/Q82421/
 ---
 
 ## Q82421: Lenel's Multimedia Organizer with TrueType Only Enabled

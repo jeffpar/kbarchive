@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281432: MSN Companion: International Questions"
-permalink: kb/281/Q281432/
+permalink: /kb/281/Q281432/
 ---
 
 ## Q281432: MSN Companion: International Questions

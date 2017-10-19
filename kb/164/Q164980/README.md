@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164980: IIS Memory Leak When Using IDC and Microsoft Access"
-permalink: kb/164/Q164980/
+permalink: /kb/164/Q164980/
 ---
 
 ## Q164980: IIS Memory Leak When Using IDC and Microsoft Access

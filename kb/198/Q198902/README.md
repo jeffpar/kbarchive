@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198902: XFOR: How to Run the GroupWise Router in Console Mode"
-permalink: kb/198/Q198902/
+permalink: /kb/198/Q198902/
 ---
 
 ## Q198902: XFOR: How to Run the GroupWise Router in Console Mode

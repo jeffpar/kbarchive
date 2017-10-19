@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162664: Spool Directory Not Found During Upgrade of WinNT 3.51 to 4.0"
-permalink: kb/162/Q162664/
+permalink: /kb/162/Q162664/
 ---
 
 ## Q162664: Spool Directory Not Found During Upgrade of WinNT 3.51 to 4.0

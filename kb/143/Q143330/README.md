@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143330: FIX: Messagebox Shows in DDX_FieldCBString &amp; DDX_FieldLBString"
-permalink: kb/143/Q143330/
+permalink: /kb/143/Q143330/
 ---
 
 ## Q143330: FIX: Messagebox Shows in DDX_FieldCBString &amp; DDX_FieldLBString

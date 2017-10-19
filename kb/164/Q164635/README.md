@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164635: SNA 3.0 Mngagent.exe Traps on NT4.0-J"
-permalink: kb/164/Q164635/
+permalink: /kb/164/Q164635/
 ---
 
 ## Q164635: SNA 3.0 Mngagent.exe Traps on NT4.0-J

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65390: Mac Wkst: Voice Mail Form Prematurely Stops Recording"
-permalink: kb/065/Q65390/
+permalink: /kb/065/Q65390/
 ---
 
 ## Q65390: Mac Wkst: Voice Mail Form Prematurely Stops Recording

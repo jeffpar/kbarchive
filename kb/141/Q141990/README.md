@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141990: WD97: How to Create an Online Form Using Form Fields"
-permalink: kb/141/Q141990/
+permalink: /kb/141/Q141990/
 ---
 
 ## Q141990: WD97: How to Create an Online Form Using Form Fields

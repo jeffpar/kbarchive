@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83276: &quot;Insufficient Conventional Memory&quot; when Starting Windows"
-permalink: kb/083/Q83276/
+permalink: /kb/083/Q83276/
 ---
 
 ## Q83276: &quot;Insufficient Conventional Memory&quot; when Starting Windows

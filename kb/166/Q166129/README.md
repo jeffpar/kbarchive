@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166129: HOWTO: Print Directly to a Non-Default Printer in MFC"
-permalink: kb/166/Q166129/
+permalink: /kb/166/Q166129/
 ---
 
 ## Q166129: HOWTO: Print Directly to a Non-Default Printer in MFC

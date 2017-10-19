@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156009: PRB: Century Not Picked Up from Date andTime Control Panel"
-permalink: kb/156/Q156009/
+permalink: /kb/156/Q156009/
 ---
 
 ## Q156009: PRB: Century Not Picked Up from Date andTime Control Panel

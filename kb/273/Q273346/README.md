@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273346: How to add, change, and delete contact records in MSN Companion"
-permalink: kb/273/Q273346/
+permalink: /kb/273/Q273346/
 ---
 
 ## Q273346: How to add, change, and delete contact records in MSN Companion

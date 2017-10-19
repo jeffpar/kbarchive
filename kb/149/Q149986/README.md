@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149986: Creating a .SCD File for an Existing Profile"
-permalink: kb/149/Q149986/
+permalink: /kb/149/Q149986/
 ---
 
 ## Q149986: Creating a .SCD File for an Existing Profile

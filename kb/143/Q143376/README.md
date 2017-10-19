@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143376: XADM: Storage Capacity Limits of Microsoft Exchange Server"
-permalink: kb/143/Q143376/
+permalink: /kb/143/Q143376/
 ---
 
 ## Q143376: XADM: Storage Capacity Limits of Microsoft Exchange Server

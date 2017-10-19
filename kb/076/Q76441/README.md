@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76441: Flight Simulator: Keyboard Input Is Not Accepted During Demo"
-permalink: kb/076/Q76441/
+permalink: /kb/076/Q76441/
 ---
 
 ## Q76441: Flight Simulator: Keyboard Input Is Not Accepted During Demo

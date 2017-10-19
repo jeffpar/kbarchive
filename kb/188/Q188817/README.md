@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188817: HOWTO: VC++ MFC Client for the ComCallingJava Sample"
-permalink: kb/188/Q188817/
+permalink: /kb/188/Q188817/
 ---
 
 ## Q188817: HOWTO: VC++ MFC Client for the ComCallingJava Sample

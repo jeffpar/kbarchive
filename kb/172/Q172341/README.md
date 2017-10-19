@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172341: &quot;Select NT User&quot; Does Not Provide Help"
-permalink: kb/172/Q172341/
+permalink: /kb/172/Q172341/
 ---
 
 ## Q172341: &quot;Select NT User&quot; Does Not Provide Help

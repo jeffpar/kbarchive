@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214779: BUG: Uninstallation of Visual Basic 5 .0 Removes Shared VBA File"
-permalink: kb/214/Q214779/
+permalink: /kb/214/Q214779/
 ---
 
 ## Q214779: BUG: Uninstallation of Visual Basic 5 .0 Removes Shared VBA File

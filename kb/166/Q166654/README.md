@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166654: XFOR: Message Loop Across Two Mail Systems"
-permalink: kb/166/Q166654/
+permalink: /kb/166/Q166654/
 ---
 
 ## Q166654: XFOR: Message Loop Across Two Mail Systems

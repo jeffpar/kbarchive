@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153375: Failure to Modify User Accounts"
-permalink: kb/153/Q153375/
+permalink: /kb/153/Q153375/
 ---
 
 ## Q153375: Failure to Modify User Accounts

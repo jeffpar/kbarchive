@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49849: Deleting Temporary Files Created by MS-DOS Shell"
-permalink: kb/049/Q49849/
+permalink: /kb/049/Q49849/
 ---
 
 ## Q49849: Deleting Temporary Files Created by MS-DOS Shell

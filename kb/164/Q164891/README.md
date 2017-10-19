@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164891: SMS: Invwin32.exe Does Not Respond to Resync Requests"
-permalink: kb/164/Q164891/
+permalink: /kb/164/Q164891/
 ---
 
 ## Q164891: SMS: Invwin32.exe Does Not Respond to Resync Requests

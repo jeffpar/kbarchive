@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148599: Dependent LU6.2 Session Fails With Event ID 14: INITSELF"
-permalink: kb/148/Q148599/
+permalink: /kb/148/Q148599/
 ---
 
 ## Q148599: Dependent LU6.2 Session Fails With Event ID 14: INITSELF

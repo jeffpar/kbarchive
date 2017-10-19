@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130429: One-Minute Appointment Doesn't Appear in Planner"
-permalink: kb/130/Q130429/
+permalink: /kb/130/Q130429/
 ---
 
 ## Q130429: One-Minute Appointment Doesn't Appear in Planner

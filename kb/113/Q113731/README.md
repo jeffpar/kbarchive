@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113731: WD97: ODBC Error Opening a DBF File with Hyphen in the File Name"
-permalink: kb/113/Q113731/
+permalink: /kb/113/Q113731/
 ---
 
 ## Q113731: WD97: ODBC Error Opening a DBF File with Hyphen in the File Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243869: Using More Than Eight LUNs Per SCSI ID"
-permalink: kb/243/Q243869/
+permalink: /kb/243/Q243869/
 ---
 
 ## Q243869: Using More Than Eight LUNs Per SCSI ID

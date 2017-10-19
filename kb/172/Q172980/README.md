@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172980: FIX: Compiler Incorrectly Causes Default Constructor Reference"
-permalink: kb/172/Q172980/
+permalink: /kb/172/Q172980/
 ---
 
 ## Q172980: FIX: Compiler Incorrectly Causes Default Constructor Reference

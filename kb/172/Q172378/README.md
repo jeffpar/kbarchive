@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172378: Error Message: Error Loading. You Must Reinstall Windows."
-permalink: kb/172/Q172378/
+permalink: /kb/172/Q172378/
 ---
 
 ## Q172378: Error Message: Error Loading. You Must Reinstall Windows.

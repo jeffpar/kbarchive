@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137901: SNA Server Event 563 and Win 3.x Client Application Problems"
-permalink: kb/137/Q137901/
+permalink: /kb/137/Q137901/
 ---
 
 ## Q137901: SNA Server Event 563 and Win 3.x Client Application Problems

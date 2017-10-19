@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190512: HOWTO: Read Extender Properties from a UserControl"
-permalink: kb/190/Q190512/
+permalink: /kb/190/Q190512/
 ---
 
 ## Q190512: HOWTO: Read Extender Properties from a UserControl

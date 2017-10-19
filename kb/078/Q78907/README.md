@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78907: Windows May Not Print with Norton Desktop"
-permalink: kb/078/Q78907/
+permalink: /kb/078/Q78907/
 ---
 
 ## Q78907: Windows May Not Print with Norton Desktop

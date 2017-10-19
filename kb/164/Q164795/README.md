@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164795: Print Jobs Do Not Print Through Office Vision 400"
-permalink: kb/164/Q164795/
+permalink: /kb/164/Q164795/
 ---
 
 ## Q164795: Print Jobs Do Not Print Through Office Vision 400

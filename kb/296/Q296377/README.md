@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296377: SMS: Access Violation Errors During SQL Server Upgrade"
-permalink: kb/296/Q296377/
+permalink: /kb/296/Q296377/
 ---
 
 ## Q296377: SMS: Access Violation Errors During SQL Server Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235453: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3"
-permalink: kb/235/Q235453/
+permalink: /kb/235/Q235453/
 ---
 
 ## Q235453: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3

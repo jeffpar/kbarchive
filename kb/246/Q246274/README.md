@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246274: XCLN: The Originator Does Not Have Permission to Submit Message"
-permalink: kb/246/Q246274/
+permalink: /kb/246/Q246274/
 ---
 
 ## Q246274: XCLN: The Originator Does Not Have Permission to Submit Message

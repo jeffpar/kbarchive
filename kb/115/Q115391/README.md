@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115391: Upgrade from LAN Manager Release Notes - INTEROP.TXT"
-permalink: kb/115/Q115391/
+permalink: /kb/115/Q115391/
 ---
 
 ## Q115391: Upgrade from LAN Manager Release Notes - INTEROP.TXT

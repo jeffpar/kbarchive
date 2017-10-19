@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139427: Using Long Filenames with the Run Command"
-permalink: kb/139/Q139427/
+permalink: /kb/139/Q139427/
 ---
 
 ## Q139427: Using Long Filenames with the Run Command

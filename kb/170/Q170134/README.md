@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170134: RASDIAL Error 623 When Dial-up Entry Name Contains Spaces"
-permalink: kb/170/Q170134/
+permalink: /kb/170/Q170134/
 ---
 
 ## Q170134: RASDIAL Error 623 When Dial-up Entry Name Contains Spaces

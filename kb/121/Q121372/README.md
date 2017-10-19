@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121372: How to Configure Non-Intelligent Digiboard PC/8 Adapters"
-permalink: kb/121/Q121372/
+permalink: /kb/121/Q121372/
 ---
 
 ## Q121372: How to Configure Non-Intelligent Digiboard PC/8 Adapters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271208: BUG: Crash in Mfc42(d).dll During Process Exit on Windows 95, W"
-permalink: kb/271/Q271208/
+permalink: /kb/271/Q271208/
 ---
 
 ## Q271208: BUG: Crash in Mfc42(d).dll During Process Exit on Windows 95, W

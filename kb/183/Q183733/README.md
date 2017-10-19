@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183733: Active Log Format Drop-down List Is Not Populated"
-permalink: kb/183/Q183733/
+permalink: /kb/183/Q183733/
 ---
 
 ## Q183733: Active Log Format Drop-down List Is Not Populated

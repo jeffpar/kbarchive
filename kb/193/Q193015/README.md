@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193015: SMS: Pentium II Processor Detected as 486DX on OS/2 Clients"
-permalink: kb/193/Q193015/
+permalink: /kb/193/Q193015/
 ---
 
 ## Q193015: SMS: Pentium II Processor Detected as 486DX on OS/2 Clients

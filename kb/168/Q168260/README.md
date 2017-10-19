@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168260: Private Byte Memory Leak in Rpcss.exe"
-permalink: kb/168/Q168260/
+permalink: /kb/168/Q168260/
 ---
 
 ## Q168260: Private Byte Memory Leak in Rpcss.exe

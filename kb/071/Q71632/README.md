@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71632: Programs to Turn NUM LOCK On and Off"
-permalink: kb/071/Q71632/
+permalink: /kb/071/Q71632/
 ---
 
 ## Q71632: Programs to Turn NUM LOCK On and Off

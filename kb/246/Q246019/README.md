@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246019: Localstart.asp Not Display Browsing Local Computer With Netscape"
-permalink: kb/246/Q246019/
+permalink: /kb/246/Q246019/
 ---
 
 ## Q246019: Localstart.asp Not Display Browsing Local Computer With Netscape

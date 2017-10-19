@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270638: BUG: Database Compaction using SQLConfigDataSource fails"
-permalink: kb/270/Q270638/
+permalink: /kb/270/Q270638/
 ---
 
 ## Q270638: BUG: Database Compaction using SQLConfigDataSource fails

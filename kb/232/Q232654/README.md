@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232654: BUG:CommonDialog FilterIndex Always Returns Default Filter Index"
-permalink: kb/232/Q232654/
+permalink: /kb/232/Q232654/
 ---
 
 ## Q232654: BUG:CommonDialog FilterIndex Always Returns Default Filter Index

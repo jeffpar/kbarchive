@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134466: How to Display a SQL Cursor's Multiple Columns in a Combo Box"
-permalink: kb/134/Q134466/
+permalink: /kb/134/Q134466/
 ---
 
 ## Q134466: How to Display a SQL Cursor's Multiple Columns in a Combo Box

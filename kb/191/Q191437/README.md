@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191437: SMS: NULL Data Values Reported Differently by INVDOS &amp; INVWIN32"
-permalink: kb/191/Q191437/
+permalink: /kb/191/Q191437/
 ---
 
 ## Q191437: SMS: NULL Data Values Reported Differently by INVDOS &amp; INVWIN32

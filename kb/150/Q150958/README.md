@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150958: INFO: Troubleshooting Enhanced PC Support APPC (Ehnappc.dll) Err"
-permalink: kb/150/Q150958/
+permalink: /kb/150/Q150958/
 ---
 
 ## Q150958: INFO: Troubleshooting Enhanced PC Support APPC (Ehnappc.dll) Err

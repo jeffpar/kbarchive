@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160513: Alternatives to the Directory Replicator Service"
-permalink: kb/160/Q160513/
+permalink: /kb/160/Q160513/
 ---
 
 ## Q160513: Alternatives to the Directory Replicator Service

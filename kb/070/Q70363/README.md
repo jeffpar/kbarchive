@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70363: FIX: /PAGESIZE Option Not Supported in LIB 3.10"
-permalink: kb/070/Q70363/
+permalink: /kb/070/Q70363/
 ---
 
 ## Q70363: FIX: /PAGESIZE Option Not Supported in LIB 3.10

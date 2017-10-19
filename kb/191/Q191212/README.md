@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191212: HOWTO: Modify and Rebuild .CAB Files Built with PDW"
-permalink: kb/191/Q191212/
+permalink: /kb/191/Q191212/
 ---
 
 ## Q191212: HOWTO: Modify and Rebuild .CAB Files Built with PDW

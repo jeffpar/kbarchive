@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134372: PROFS: Reply All Feature Not Supported"
-permalink: kb/134/Q134372/
+permalink: /kb/134/Q134372/
 ---
 
 ## Q134372: PROFS: Reply All Feature Not Supported

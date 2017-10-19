@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152341: BUG: Help Is Not Activated on a Non-system Partition"
-permalink: kb/152/Q152341/
+permalink: /kb/152/Q152341/
 ---
 
 ## Q152341: BUG: Help Is Not Activated on a Non-system Partition

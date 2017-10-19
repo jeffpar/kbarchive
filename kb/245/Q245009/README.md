@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245009: Batch Create User Accounts Without Forcing Password Change."
-permalink: kb/245/Q245009/
+permalink: /kb/245/Q245009/
 ---
 
 ## Q245009: Batch Create User Accounts Without Forcing Password Change.

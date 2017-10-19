@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91648: CONN: Err Msg: Alias Already Exists"
-permalink: kb/091/Q91648/
+permalink: /kb/091/Q91648/
 ---
 
 ## Q91648: CONN: Err Msg: Alias Already Exists

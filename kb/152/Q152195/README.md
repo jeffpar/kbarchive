@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152195: Shortcut Keys Do Not Select Microsoft Word"
-permalink: kb/152/Q152195/
+permalink: /kb/152/Q152195/
 ---
 
 ## Q152195: Shortcut Keys Do Not Select Microsoft Word

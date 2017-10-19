@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174695: XCON: How to Find the Version of MTA on Exchange Server"
-permalink: kb/174/Q174695/
+permalink: /kb/174/Q174695/
 ---
 
 ## Q174695: XCON: How to Find the Version of MTA on Exchange Server

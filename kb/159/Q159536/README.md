@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159536: PCI Device Using Prefetchable Memory Generates Code 15"
-permalink: kb/159/Q159536/
+permalink: /kb/159/Q159536/
 ---
 
 ## Q159536: PCI Device Using Prefetchable Memory Generates Code 15

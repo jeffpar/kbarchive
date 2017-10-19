@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90932: PC Tools May Prevent WFWG From Starting in Enhanced Mode"
-permalink: kb/090/Q90932/
+permalink: /kb/090/Q90932/
 ---
 
 ## Q90932: PC Tools May Prevent WFWG From Starting in Enhanced Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153254: Win16 RUI_BID Traps on Windows NT Win32 Thunking DLL"
-permalink: kb/153/Q153254/
+permalink: /kb/153/Q153254/
 ---
 
 ## Q153254: Win16 RUI_BID Traps on Windows NT Win32 Thunking DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198486: HOWTO: SQL Server Full-Text Query Using ATL OLEDB Consumer"
-permalink: kb/198/Q198486/
+permalink: /kb/198/Q198486/
 ---
 
 ## Q198486: HOWTO: SQL Server Full-Text Query Using ATL OLEDB Consumer

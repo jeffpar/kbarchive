@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149203: XFOR: Preventing Winmail.dat From Being Sent Over IMC"
-permalink: kb/149/Q149203/
+permalink: /kb/149/Q149203/
 ---
 
 ## Q149203: XFOR: Preventing Winmail.dat From Being Sent Over IMC

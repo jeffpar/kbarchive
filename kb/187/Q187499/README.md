@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187499: Performance Monitor Counters For IIS Not Available"
-permalink: kb/187/Q187499/
+permalink: /kb/187/Q187499/
 ---
 
 ## Q187499: Performance Monitor Counters For IIS Not Available

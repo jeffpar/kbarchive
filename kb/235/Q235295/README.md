@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235295: Profile Quotas Do Not Respect Excluded Folders"
-permalink: kb/235/Q235295/
+permalink: /kb/235/Q235295/
 ---
 
 ## Q235295: Profile Quotas Do Not Respect Excluded Folders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112236: FaxDrv: WinWord Graphics Elongated by FAX Printer Driver"
-permalink: kb/112/Q112236/
+permalink: /kb/112/Q112236/
 ---
 
 ## Q112236: FaxDrv: WinWord Graphics Elongated by FAX Printer Driver

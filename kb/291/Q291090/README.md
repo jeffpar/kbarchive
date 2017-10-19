@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291090: Windows 2000 Resource Kit Missing HWXPAD.DLL"
-permalink: kb/291/Q291090/
+permalink: /kb/291/Q291090/
 ---
 
 ## Q291090: Windows 2000 Resource Kit Missing HWXPAD.DLL

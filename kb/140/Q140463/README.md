@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140463: SNMP Agent Hangs on Very Long Queries"
-permalink: kb/140/Q140463/
+permalink: /kb/140/Q140463/
 ---
 
 ## Q140463: SNMP Agent Hangs on Very Long Queries

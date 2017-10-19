@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246596: Cannot Use VBScript Classes with Application or Session Scope"
-permalink: kb/246/Q246596/
+permalink: /kb/246/Q246596/
 ---
 
 ## Q246596: Cannot Use VBScript Classes with Application or Session Scope

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194908: BUG: Control Repaint Problems When ClipControls Set to False"
-permalink: kb/194/Q194908/
+permalink: /kb/194/Q194908/
 ---
 
 ## Q194908: BUG: Control Repaint Problems When ClipControls Set to False

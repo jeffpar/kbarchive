@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143352: FIX: C2988 on Conversion Operator Between Two Template Classes"
-permalink: kb/143/Q143352/
+permalink: /kb/143/Q143352/
 ---
 
 ## Q143352: FIX: C2988 on Conversion Operator Between Two Template Classes

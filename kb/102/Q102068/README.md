@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102068: Remote Access Server Port Speed Indicates DTE Rate"
-permalink: kb/102/Q102068/
+permalink: /kb/102/Q102068/
 ---
 
 ## Q102068: Remote Access Server Port Speed Indicates DTE Rate

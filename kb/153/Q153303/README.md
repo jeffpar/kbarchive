@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153303: Deinstal.bat Does Not Always Set Setup Phase to Deinstal"
-permalink: kb/153/Q153303/
+permalink: /kb/153/Q153303/
 ---
 
 ## Q153303: Deinstal.bat Does Not Always Set Setup Phase to Deinstal

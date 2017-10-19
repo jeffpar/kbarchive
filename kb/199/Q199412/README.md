@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199412: XGEN: Administrator Program Dump Files (Admindmp.txt)"
-permalink: kb/199/Q199412/
+permalink: /kb/199/Q199412/
 ---
 
 ## Q199412: XGEN: Administrator Program Dump Files (Admindmp.txt)

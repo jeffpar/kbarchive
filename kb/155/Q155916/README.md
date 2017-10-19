@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155916: XCLN: Event ID's 1047 and 1038 from the Free/Busy Connector"
-permalink: kb/155/Q155916/
+permalink: /kb/155/Q155916/
 ---
 
 ## Q155916: XCLN: Event ID's 1047 and 1038 from the Free/Busy Connector

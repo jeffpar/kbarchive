@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138861: SNA Server 2.11 CD missing Rally-compatible PC Support API"
-permalink: kb/138/Q138861/
+permalink: /kb/138/Q138861/
 ---
 
 ## Q138861: SNA Server 2.11 CD missing Rally-compatible PC Support API

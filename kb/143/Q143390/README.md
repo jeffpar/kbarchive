@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143390: Adtran ISU Device Support in Windows NT"
-permalink: kb/143/Q143390/
+permalink: /kb/143/Q143390/
 ---
 
 ## Q143390: Adtran ISU Device Support in Windows NT

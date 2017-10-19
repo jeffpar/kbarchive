@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299740: Train Simulator: Keyboard Stops Responding"
-permalink: kb/299/Q299740/
+permalink: /kb/299/Q299740/
 ---
 
 ## Q299740: Train Simulator: Keyboard Stops Responding

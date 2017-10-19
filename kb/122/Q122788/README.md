@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122788: FIX: Access Violation on MSVC.EXE When Scanning Dependencies"
-permalink: kb/122/Q122788/
+permalink: /kb/122/Q122788/
 ---
 
 ## Q122788: FIX: Access Violation on MSVC.EXE When Scanning Dependencies

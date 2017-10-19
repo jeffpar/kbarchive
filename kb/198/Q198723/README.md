@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198723: XWEB: Must Refresh OWA Twice if Session Times Out"
-permalink: kb/198/Q198723/
+permalink: /kb/198/Q198723/
 ---
 
 ## Q198723: XWEB: Must Refresh OWA Twice if Session Times Out

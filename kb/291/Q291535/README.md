@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291535: HOWTO: Find Installed Modems with Visual FoxPro"
-permalink: kb/291/Q291535/
+permalink: /kb/291/Q291535/
 ---
 
 ## Q291535: HOWTO: Find Installed Modems with Visual FoxPro

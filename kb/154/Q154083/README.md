@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154083: E-mail Sent to Internet Address Arrives Multiple Times"
-permalink: kb/154/Q154083/
+permalink: /kb/154/Q154083/
 ---
 
 ## Q154083: E-mail Sent to Internet Address Arrives Multiple Times

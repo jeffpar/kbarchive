@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140611: PRB: InstallSHIELD Error: Setup requires a different version"
-permalink: kb/140/Q140611/
+permalink: /kb/140/Q140611/
 ---
 
 ## Q140611: PRB: InstallSHIELD Error: Setup requires a different version

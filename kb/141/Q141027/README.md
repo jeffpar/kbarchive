@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141027: HOWTO: How to Quickly Search a List Box"
-permalink: kb/141/Q141027/
+permalink: /kb/141/Q141027/
 ---
 
 ## Q141027: HOWTO: How to Quickly Search a List Box

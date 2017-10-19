@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68286: Unrecoverable Application Error with hDC Express"
-permalink: kb/068/Q68286/
+permalink: /kb/068/Q68286/
 ---
 
 ## Q68286: Unrecoverable Application Error with hDC Express

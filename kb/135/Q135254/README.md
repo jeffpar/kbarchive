@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135254: How to Display the Date and Time a Message Was Sent in the Inbox"
-permalink: kb/135/Q135254/
+permalink: /kb/135/Q135254/
 ---
 
 ## Q135254: How to Display the Date and Time a Message Was Sent in the Inbox

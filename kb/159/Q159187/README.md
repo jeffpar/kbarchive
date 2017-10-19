@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159187: XADM: French Extended Chars in Read Receipts Convert Incorrectly"
-permalink: kb/159/Q159187/
+permalink: /kb/159/Q159187/
 ---
 
 ## Q159187: XADM: French Extended Chars in Read Receipts Convert Incorrectly

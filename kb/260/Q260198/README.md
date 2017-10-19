@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260198: XCLN: NDR in Outlook 97 and Outlook 98 Using Reply to All Option"
-permalink: kb/260/Q260198/
+permalink: /kb/260/Q260198/
 ---
 
 ## Q260198: XCLN: NDR in Outlook 97 and Outlook 98 Using Reply to All Option

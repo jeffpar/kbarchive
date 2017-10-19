@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140072: PC WRmt: Recovering Client Functionality After Install Win95"
-permalink: kb/140/Q140072/
+permalink: /kb/140/Q140072/
 ---
 
 ## Q140072: PC WRmt: Recovering Client Functionality After Install Win95

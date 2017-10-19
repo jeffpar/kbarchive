@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184404: XGEN: How to Obtain Exchange Server 5.5 Evaluation Edition"
-permalink: kb/184/Q184404/
+permalink: /kb/184/Q184404/
 ---
 
 ## Q184404: XGEN: How to Obtain Exchange Server 5.5 Evaluation Edition

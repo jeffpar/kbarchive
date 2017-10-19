@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110388: Mac OOF: Using the Valid Thru: Field in the OOF Form"
-permalink: kb/110/Q110388/
+permalink: /kb/110/Q110388/
 ---
 
 ## Q110388: Mac OOF: Using the Valid Thru: Field in the OOF Form

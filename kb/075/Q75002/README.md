@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75002: MDISubCl.exe Changes Background Color of MDI Client"
-permalink: kb/075/Q75002/
+permalink: /kb/075/Q75002/
 ---
 
 ## Q75002: MDISubCl.exe Changes Background Color of MDI Client

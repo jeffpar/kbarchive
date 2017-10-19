@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130123: PRB: Can't Find Transporter (TRANSPORT.PRG) in Visual FoxPro"
-permalink: kb/130/Q130123/
+permalink: /kb/130/Q130123/
 ---
 
 ## Q130123: PRB: Can't Find Transporter (TRANSPORT.PRG) in Visual FoxPro

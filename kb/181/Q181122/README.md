@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181122: Event ID 627 Running SNA Services Under WinNT User Account"
-permalink: kb/181/Q181122/
+permalink: /kb/181/Q181122/
 ---
 
 ## Q181122: Event ID 627 Running SNA Services Under WinNT User Account

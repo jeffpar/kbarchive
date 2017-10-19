@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151345: Bookshelf '96-'97: No Online Registration in Windows 3.1x"
-permalink: kb/151/Q151345/
+permalink: /kb/151/Q151345/
 ---
 
 ## Q151345: Bookshelf '96-'97: No Online Registration in Windows 3.1x

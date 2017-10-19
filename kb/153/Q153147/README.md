@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153147: Client Inventory Fails on Game Ports"
-permalink: kb/153/Q153147/
+permalink: /kb/153/Q153147/
 ---
 
 ## Q153147: Client Inventory Fails on Game Ports

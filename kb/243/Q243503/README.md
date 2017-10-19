@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243503: FIX: Platform SDK Prevents MFC Projects from Compiling"
-permalink: kb/243/Q243503/
+permalink: /kb/243/Q243503/
 ---
 
 ## Q243503: FIX: Platform SDK Prevents MFC Projects from Compiling

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269201: SMS: Query Builder Values Box Cannot Display Large Item List"
-permalink: kb/269/Q269201/
+permalink: /kb/269/Q269201/
 ---
 
 ## Q269201: SMS: Query Builder Values Box Cannot Display Large Item List

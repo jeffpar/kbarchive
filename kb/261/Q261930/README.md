@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261930: SMS: Error 679 or 3304 After You Install/Change Service Account"
-permalink: kb/261/Q261930/
+permalink: /kb/261/Q261930/
 ---
 
 ## Q261930: SMS: Error 679 or 3304 After You Install/Change Service Account

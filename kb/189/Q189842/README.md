@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189842: XCLN: Client Folder Views May Prevent Any Items From Appearing"
-permalink: kb/189/Q189842/
+permalink: /kb/189/Q189842/
 ---
 
 ## Q189842: XCLN: Client Folder Views May Prevent Any Items From Appearing

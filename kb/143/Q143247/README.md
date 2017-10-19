@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143247: FIX: Scrolling Edit Window Causes Incorrect Highlighting"
-permalink: kb/143/Q143247/
+permalink: /kb/143/Q143247/
 ---
 
 ## Q143247: FIX: Scrolling Edit Window Causes Incorrect Highlighting

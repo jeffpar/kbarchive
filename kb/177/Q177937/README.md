@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177937: FIX: Debugger Cannot Watch Function Returning struct or union"
-permalink: kb/177/Q177937/
+permalink: /kb/177/Q177937/
 ---
 
 ## Q177937: FIX: Debugger Cannot Watch Function Returning struct or union

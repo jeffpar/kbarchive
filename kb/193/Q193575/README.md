@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193575: BUG: Duplicate Hot Key &quot;Join Source Control Project&quot; Dialog"
-permalink: kb/193/Q193575/
+permalink: /kb/193/Q193575/
 ---
 
 ## Q193575: BUG: Duplicate Hot Key &quot;Join Source Control Project&quot; Dialog

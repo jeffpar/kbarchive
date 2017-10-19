@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264063: VBScript Date and Time Functions May not be Formatted Properly"
-permalink: kb/264/Q264063/
+permalink: /kb/264/Q264063/
 ---
 
 ## Q264063: VBScript Date and Time Functions May not be Formatted Properly

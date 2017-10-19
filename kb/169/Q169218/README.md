@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169218: FIX: &quot;Invalid Argument Value&quot; Error with SQLSetConnectOption"
-permalink: kb/169/Q169218/
+permalink: /kb/169/Q169218/
 ---
 
 ## Q169218: FIX: &quot;Invalid Argument Value&quot; Error with SQLSetConnectOption

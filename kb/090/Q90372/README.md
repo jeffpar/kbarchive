@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90372: DOC: Clarification of the LOGFONT lfOutPrecision Field"
-permalink: kb/090/Q90372/
+permalink: /kb/090/Q90372/
 ---
 
 ## Q90372: DOC: Clarification of the LOGFONT lfOutPrecision Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163141: Change of Printer IP Address Not Recognized by Spooler"
-permalink: kb/163/Q163141/
+permalink: /kb/163/Q163141/
 ---
 
 ## Q163141: Change of Printer IP Address Not Recognized by Spooler

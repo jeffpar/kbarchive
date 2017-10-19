@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173484: Trip Planner Err Msg: Please Run Setup to Install This Product"
-permalink: kb/173/Q173484/
+permalink: /kb/173/Q173484/
 ---
 
 ## Q173484: Trip Planner Err Msg: Please Run Setup to Install This Product

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238971: Err Msg: OLE DB Provider for ODBC Drivers Error '80004005'"
-permalink: kb/238/Q238971/
+permalink: /kb/238/Q238971/
 ---
 
 ## Q238971: Err Msg: OLE DB Provider for ODBC Drivers Error '80004005'

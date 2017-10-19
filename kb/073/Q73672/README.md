@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73672: Upgrading to MS-DOS 5.0 over Stacker"
-permalink: kb/073/Q73672/
+permalink: /kb/073/Q73672/
 ---
 
 ## Q73672: Upgrading to MS-DOS 5.0 over Stacker

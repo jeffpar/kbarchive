@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203003: SMS: Erratic Mouse Behavior During Remote Control Session"
-permalink: kb/203/Q203003/
+permalink: /kb/203/Q203003/
 ---
 
 ## Q203003: SMS: Erratic Mouse Behavior During Remote Control Session

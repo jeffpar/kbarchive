@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189596: SAMPLE: VB6WLCTL.EXE Windowless Controls Demonstration"
-permalink: kb/189/Q189596/
+permalink: /kb/189/Q189596/
 ---
 
 ## Q189596: SAMPLE: VB6WLCTL.EXE Windowless Controls Demonstration

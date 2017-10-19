@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72927: DIVER.FSH from WRK Hangs System When Flipped"
-permalink: kb/072/Q72927/
+permalink: /kb/072/Q72927/
 ---
 
 ## Q72927: DIVER.FSH from WRK Hangs System When Flipped

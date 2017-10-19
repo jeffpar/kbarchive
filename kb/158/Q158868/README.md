@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158868: Computer May Not Boot After Canceling Setup During File Copy"
-permalink: kb/158/Q158868/
+permalink: /kb/158/Q158868/
 ---
 
 ## Q158868: Computer May Not Boot After Canceling Setup During File Copy

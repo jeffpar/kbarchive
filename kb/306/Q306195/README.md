@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306195: Event ID 2064 and 2075 After You Apply Windows 2000 Server SP2"
-permalink: kb/306/Q306195/
+permalink: /kb/306/Q306195/
 ---
 
 ## Q306195: Event ID 2064 and 2075 After You Apply Windows 2000 Server SP2

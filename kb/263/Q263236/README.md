@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263236: XWEB: Exchange Server 5.5 Outlook Web Access Logon Process"
-permalink: kb/263/Q263236/
+permalink: /kb/263/Q263236/
 ---
 
 ## Q263236: XWEB: Exchange Server 5.5 Outlook Web Access Logon Process

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140144: SMS: Clipart Gallery Must be Downloaded Every Windows Session"
-permalink: kb/140/Q140144/
+permalink: /kb/140/Q140144/
 ---
 
 ## Q140144: SMS: Clipart Gallery Must be Downloaded Every Windows Session

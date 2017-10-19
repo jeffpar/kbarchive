@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216101: INF: Missing Entry in Add/Remove Programs after Package Export"
-permalink: kb/216/Q216101/
+permalink: /kb/216/Q216101/
 ---
 
 ## Q216101: INF: Missing Entry in Add/Remove Programs after Package Export

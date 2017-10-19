@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128148: PRB: Procedure Entry Point FDIV Not Located in MSVCRT20.DLL"
-permalink: kb/128/Q128148/
+permalink: /kb/128/Q128148/
 ---
 
 ## Q128148: PRB: Procedure Entry Point FDIV Not Located in MSVCRT20.DLL

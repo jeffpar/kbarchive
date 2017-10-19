@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183612: Unable to Install Backup Agents"
-permalink: kb/183/Q183612/
+permalink: /kb/183/Q183612/
 ---
 
 ## Q183612: Unable to Install Backup Agents

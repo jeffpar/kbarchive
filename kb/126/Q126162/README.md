@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126162: PC Win: Err Msg: This Name Has Already Been Assigned..."
-permalink: kb/126/Q126162/
+permalink: /kb/126/Q126162/
 ---
 
 ## Q126162: PC Win: Err Msg: This Name Has Already Been Assigned...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119066: BOOTLOG.TXT Failure Codes"
-permalink: kb/119/Q119066/
+permalink: /kb/119/Q119066/
 ---
 
 ## Q119066: BOOTLOG.TXT Failure Codes

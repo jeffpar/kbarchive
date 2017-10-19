@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174510: Print Job Corruption Printing on Fast Hardware Across Slow Link"
-permalink: kb/174/Q174510/
+permalink: /kb/174/Q174510/
 ---
 
 ## Q174510: Print Job Corruption Printing on Fast Hardware Across Slow Link

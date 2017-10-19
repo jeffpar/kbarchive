@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130337: Err Msg Printing from Adobe PageMaker: General Printer Failure"
-permalink: kb/130/Q130337/
+permalink: /kb/130/Q130337/
 ---
 
 ## Q130337: Err Msg Printing from Adobe PageMaker: General Printer Failure

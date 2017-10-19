@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104249: PC WSPlus: Setting Up Schedule Distribution"
-permalink: kb/104/Q104249/
+permalink: /kb/104/Q104249/
 ---
 
 ## Q104249: PC WSPlus: Setting Up Schedule Distribution

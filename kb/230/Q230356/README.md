@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230356: Changing the IP Address of Network Adapters in Cluster Server"
-permalink: kb/230/Q230356/
+permalink: /kb/230/Q230356/
 ---
 
 ## Q230356: Changing the IP Address of Network Adapters in Cluster Server

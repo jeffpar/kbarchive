@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124659: How to Use Logitech Mouse in Windows 95 Setup"
-permalink: kb/124/Q124659/
+permalink: /kb/124/Q124659/
 ---
 
 ## Q124659: How to Use Logitech Mouse in Windows 95 Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197008: WD97: Word Assigns a Delivery Point Bar Code (DPBC) of 99"
-permalink: kb/197/Q197008/
+permalink: /kb/197/Q197008/
 ---
 
 ## Q197008: WD97: Word Assigns a Delivery Point Bar Code (DPBC) of 99

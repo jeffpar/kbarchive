@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116017: PRB: ClassWizard Doesn't Support Custom Foreign DDX"
-permalink: kb/116/Q116017/
+permalink: /kb/116/Q116017/
 ---
 
 ## Q116017: PRB: ClassWizard Doesn't Support Custom Foreign DDX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239228: XCON: Internet Mail Service Incorrectly Routes Mail If Address S"
-permalink: kb/239/Q239228/
+permalink: /kb/239/Q239228/
 ---
 
 ## Q239228: XCON: Internet Mail Service Incorrectly Routes Mail If Address S

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245101: SMS: LSM Is Case Sensitive When Comparing Domain Names"
-permalink: kb/245/Q245101/
+permalink: /kb/245/Q245101/
 ---
 
 ## Q245101: SMS: LSM Is Case Sensitive When Comparing Domain Names

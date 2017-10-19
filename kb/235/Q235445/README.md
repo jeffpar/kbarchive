@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235445: Seven Fonts Not Supporting the Euro Currency Symbol"
-permalink: kb/235/Q235445/
+permalink: /kb/235/Q235445/
 ---
 
 ## Q235445: Seven Fonts Not Supporting the Euro Currency Symbol

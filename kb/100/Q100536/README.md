@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100536: DBLSPACE.INI File Settings"
-permalink: kb/100/Q100536/
+permalink: /kb/100/Q100536/
 ---
 
 ## Q100536: DBLSPACE.INI File Settings

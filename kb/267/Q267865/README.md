@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267865: Can't Access FoxPro Databases on Novell Server with ODBC"
-permalink: kb/267/Q267865/
+permalink: /kb/267/Q267865/
 ---
 
 ## Q267865: Can't Access FoxPro Databases on Novell Server with ODBC

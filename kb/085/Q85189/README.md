@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85189: Setup /I Has No Effect in Maintenance Mode or Reinstall"
-permalink: kb/085/Q85189/
+permalink: /kb/085/Q85189/
 ---
 
 ## Q85189: Setup /I Has No Effect in Maintenance Mode or Reinstall

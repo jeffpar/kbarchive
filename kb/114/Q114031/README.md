@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114031: PC Ext: External 3.2.5 Doesn't Accept SendHomeOnly Parameter"
-permalink: kb/114/Q114031/
+permalink: /kb/114/Q114031/
 ---
 
 ## Q114031: PC Ext: External 3.2.5 Doesn't Accept SendHomeOnly Parameter

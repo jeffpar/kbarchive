@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313332: INFO: Qualify Table Names When You Replicate Tables to DB2"
-permalink: kb/313/Q313332/
+permalink: /kb/313/Q313332/
 ---
 
 ## Q313332: INFO: Qualify Table Names When You Replicate Tables to DB2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80275: Windows: HP DeskJet Series 2.0 Driver Error Detection"
-permalink: kb/080/Q80275/
+permalink: /kb/080/Q80275/
 ---
 
 ## Q80275: Windows: HP DeskJet Series 2.0 Driver Error Detection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188222: XFOR: Cannot Open SMTP Messages that Contain Attachments"
-permalink: kb/188/Q188222/
+permalink: /kb/188/Q188222/
 ---
 
 ## Q188222: XFOR: Cannot Open SMTP Messages that Contain Attachments

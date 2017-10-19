@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172216: How to Force Routing and Remote Access to Use PAP"
-permalink: kb/172/Q172216/
+permalink: /kb/172/Q172216/
 ---
 
 ## Q172216: How to Force Routing and Remote Access to Use PAP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268707: Problems Using DPT Adapter Model PM1554U2 with RAID 5"
-permalink: kb/268/Q268707/
+permalink: /kb/268/Q268707/
 ---
 
 ## Q268707: Problems Using DPT Adapter Model PM1554U2 with RAID 5

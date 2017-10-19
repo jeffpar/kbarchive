@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170570: HOWTO: Build a Windows Message Handler with AddressOf in Visual"
-permalink: kb/170/Q170570/
+permalink: /kb/170/Q170570/
 ---
 
 ## Q170570: HOWTO: Build a Windows Message Handler with AddressOf in Visual

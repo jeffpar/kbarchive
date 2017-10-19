@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237919: XCLN: Newprof Only Supports Variable Names under Windows NT"
-permalink: kb/237/Q237919/
+permalink: /kb/237/Q237919/
 ---
 
 ## Q237919: XCLN: Newprof Only Supports Variable Names under Windows NT

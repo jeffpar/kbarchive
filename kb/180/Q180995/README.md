@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180995: HOWTO: Search FoxPro Advisor by Author, Index, and Advertisers"
-permalink: kb/180/Q180995/
+permalink: /kb/180/Q180995/
 ---
 
 ## Q180995: HOWTO: Search FoxPro Advisor by Author, Index, and Advertisers

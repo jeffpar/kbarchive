@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190705: XADM: How to Set Diagnostic Logging Levels for the Event Service"
-permalink: kb/190/Q190705/
+permalink: /kb/190/Q190705/
 ---
 
 ## Q190705: XADM: How to Set Diagnostic Logging Levels for the Event Service

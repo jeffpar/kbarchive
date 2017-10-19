@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153021: DOC: ListView Sort Only on Text of ListItem"
-permalink: kb/153/Q153021/
+permalink: /kb/153/Q153021/
 ---
 
 ## Q153021: DOC: ListView Sort Only on Text of ListItem

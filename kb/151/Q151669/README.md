@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151669: XFOR: MSMI Stops Processing Mail"
-permalink: kb/151/Q151669/
+permalink: /kb/151/Q151669/
 ---
 
 ## Q151669: XFOR: MSMI Stops Processing Mail

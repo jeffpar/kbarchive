@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74534: Everex EFAX with MS-DOS 5.0"
-permalink: kb/074/Q74534/
+permalink: /kb/074/Q74534/
 ---
 
 ## Q74534: Everex EFAX with MS-DOS 5.0

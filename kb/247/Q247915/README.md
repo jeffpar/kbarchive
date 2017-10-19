@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247915: Cannot Import Config.nt FILES Value into 16-Bit Program"
-permalink: kb/247/Q247915/
+permalink: /kb/247/Q247915/
 ---
 
 ## Q247915: Cannot Import Config.nt FILES Value into 16-Bit Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93652: WFWG Err Msg with DblSpace: PRO0003E: PROTOCOL.INI File Open"
-permalink: kb/093/Q93652/
+permalink: /kb/093/Q93652/
 ---
 
 ## Q93652: WFWG Err Msg with DblSpace: PRO0003E: PROTOCOL.INI File Open

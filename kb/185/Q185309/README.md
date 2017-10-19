@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185309: WD97: Fatal Exception Connecting to a Novell Drive in Word"
-permalink: kb/185/Q185309/
+permalink: /kb/185/Q185309/
 ---
 
 ## Q185309: WD97: Fatal Exception Connecting to a Novell Drive in Word

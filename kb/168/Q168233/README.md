@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168233: Continuous No Page Break Setting Ignored by Generic Text Driver"
-permalink: kb/168/Q168233/
+permalink: /kb/168/Q168233/
 ---
 
 ## Q168233: Continuous No Page Break Setting Ignored by Generic Text Driver

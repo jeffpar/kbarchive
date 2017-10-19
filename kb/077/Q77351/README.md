@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77351: Samsung S-5200 Requires HIMEM /MACHINE:12"
-permalink: kb/077/Q77351/
+permalink: /kb/077/Q77351/
 ---
 
 ## Q77351: Samsung S-5200 Requires HIMEM /MACHINE:12

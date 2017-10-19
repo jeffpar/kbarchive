@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124296: Admin Scheduled Batch Job Net Use Commands Are Viewable to Users"
-permalink: kb/124/Q124296/
+permalink: /kb/124/Q124296/
 ---
 
 ## Q124296: Admin Scheduled Batch Job Net Use Commands Are Viewable to Users

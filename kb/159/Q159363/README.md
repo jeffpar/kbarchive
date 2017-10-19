@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159363: WD97: Text in Text Box Missing, Truncated in Online Layout View"
-permalink: kb/159/Q159363/
+permalink: /kb/159/Q159363/
 ---
 
 ## Q159363: WD97: Text in Text Box Missing, Truncated in Online Layout View

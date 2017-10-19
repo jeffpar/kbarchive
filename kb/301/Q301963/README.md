@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301963: Err Msg: A Fatal Exception 0E Has Occurred at 0157:BFF9A25B"
-permalink: kb/301/Q301963/
+permalink: /kb/301/Q301963/
 ---
 
 ## Q301963: Err Msg: A Fatal Exception 0E Has Occurred at 0157:BFF9A25B

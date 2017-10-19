@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163622: No Sound Dialing with Apex Data Mobile Plus Modem"
-permalink: kb/163/Q163622/
+permalink: /kb/163/Q163622/
 ---
 
 ## Q163622: No Sound Dialing with Apex Data Mobile Plus Modem

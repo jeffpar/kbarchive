@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89073: Windows: CD-ROM Drives and LANMAN10.386"
-permalink: kb/089/Q89073/
+permalink: /kb/089/Q89073/
 ---
 
 ## Q89073: Windows: CD-ROM Drives and LANMAN10.386

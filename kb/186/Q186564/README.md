@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186564: Visible Servers in Terminal Server Administration"
-permalink: kb/186/Q186564/
+permalink: /kb/186/Q186564/
 ---
 
 ## Q186564: Visible Servers in Terminal Server Administration

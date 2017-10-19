@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167600: Contents of the Dialup Networking Folder Not Restored"
-permalink: kb/167/Q167600/
+permalink: /kb/167/Q167600/
 ---
 
 ## Q167600: Contents of the Dialup Networking Folder Not Restored

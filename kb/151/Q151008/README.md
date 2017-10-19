@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151008: Sony 7000 and DEC TZ09 4mm DAT Not Supported Under 3.51"
-permalink: kb/151/Q151008/
+permalink: /kb/151/Q151008/
 ---
 
 ## Q151008: Sony 7000 and DEC TZ09 4mm DAT Not Supported Under 3.51

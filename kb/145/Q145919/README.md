@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145919: XFOR: MIME Headers for Attachment Filenames Supported by IMC"
-permalink: kb/145/Q145919/
+permalink: /kb/145/Q145919/
 ---
 
 ## Q145919: XFOR: MIME Headers for Attachment Filenames Supported by IMC

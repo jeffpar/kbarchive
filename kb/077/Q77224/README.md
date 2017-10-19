@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77224: LapLink and MS-DOS 5.0"
-permalink: kb/077/Q77224/
+permalink: /kb/077/Q77224/
 ---
 
 ## Q77224: LapLink and MS-DOS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134319: Oceans: Trouble.txt Contents"
-permalink: kb/134/Q134319/
+permalink: /kb/134/Q134319/
 ---
 
 ## Q134319: Oceans: Trouble.txt Contents

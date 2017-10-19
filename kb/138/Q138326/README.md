@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138326: HOWTO: Create a Browser Library for the Common Control Classes"
-permalink: kb/138/Q138326/
+permalink: /kb/138/Q138326/
 ---
 
 ## Q138326: HOWTO: Create a Browser Library for the Common Control Classes

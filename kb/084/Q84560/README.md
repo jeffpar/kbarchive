@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84560: Mystify Screen Saver Defaults to Polygon 1"
-permalink: kb/084/Q84560/
+permalink: /kb/084/Q84560/
 ---
 
 ## Q84560: Mystify Screen Saver Defaults to Polygon 1

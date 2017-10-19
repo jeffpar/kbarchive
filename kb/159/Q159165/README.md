@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159165: XCLN: Err Msg: Tripane.dll Is Registered More Than Once"
-permalink: kb/159/Q159165/
+permalink: /kb/159/Q159165/
 ---
 
 ## Q159165: XCLN: Err Msg: Tripane.dll Is Registered More Than Once

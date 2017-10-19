@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291426: Error Messages Appear When User Open Programs on Terminal Server"
-permalink: kb/291/Q291426/
+permalink: /kb/291/Q291426/
 ---
 
 ## Q291426: Error Messages Appear When User Open Programs on Terminal Server

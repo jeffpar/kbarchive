@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70758: Floating-Point Calculations in Windows Using WIN87EM.DLL"
-permalink: kb/070/Q70758/
+permalink: /kb/070/Q70758/
 ---
 
 ## Q70758: Floating-Point Calculations in Windows Using WIN87EM.DLL

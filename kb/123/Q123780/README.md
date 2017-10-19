@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123780: BUG: Link Fails w/ Unresolved External When Call SWAP.H"
-permalink: kb/123/Q123780/
+permalink: /kb/123/Q123780/
 ---
 
 ## Q123780: BUG: Link Fails w/ Unresolved External When Call SWAP.H

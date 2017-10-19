@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83914: HotKeyed.exe Creates a Shortcut-Key Edit Control"
-permalink: kb/083/Q83914/
+permalink: /kb/083/Q83914/
 ---
 
 ## Q83914: HotKeyed.exe Creates a Shortcut-Key Edit Control

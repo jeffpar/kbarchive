@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149704: Browsing Shared Folders w/ IBM CA/400v3r1 Shows Local Drive"
-permalink: kb/149/Q149704/
+permalink: /kb/149/Q149704/
 ---
 
 ## Q149704: Browsing Shared Folders w/ IBM CA/400v3r1 Shows Local Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185334: Internet Explorer Starts When You Double-Click MSN Icon"
-permalink: kb/185/Q185334/
+permalink: /kb/185/Q185334/
 ---
 
 ## Q185334: Internet Explorer Starts When You Double-Click MSN Icon

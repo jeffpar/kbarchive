@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103882: Overview: The Network Application Programmer Interface (API)"
-permalink: kb/103/Q103882/
+permalink: /kb/103/Q103882/
 ---
 
 ## Q103882: Overview: The Network Application Programmer Interface (API)

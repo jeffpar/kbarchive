@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83422: COM3 Incorrectly Reported as Local Port by Windows"
-permalink: kb/083/Q83422/
+permalink: /kb/083/Q83422/
 ---
 
 ## Q83422: COM3 Incorrectly Reported as Local Port by Windows

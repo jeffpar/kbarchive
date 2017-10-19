@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178338: XADM: Information Store Access Violation in hrVerifyAttach"
-permalink: kb/178/Q178338/
+permalink: /kb/178/Q178338/
 ---
 
 ## Q178338: XADM: Information Store Access Violation in hrVerifyAttach

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266638: XADM: Information Store Stops Responding Receiving Message"
-permalink: kb/266/Q266638/
+permalink: /kb/266/Q266638/
 ---
 
 ## Q266638: XADM: Information Store Stops Responding Receiving Message

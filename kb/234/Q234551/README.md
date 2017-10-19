@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234551: WWW and FTP Services Stop Intermittently and/or Inetinfo Stops"
-permalink: kb/234/Q234551/
+permalink: /kb/234/Q234551/
 ---
 
 ## Q234551: WWW and FTP Services Stop Intermittently and/or Inetinfo Stops

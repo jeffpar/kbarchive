@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86150: PROFS: Definition of XEDIT, How to Find Help Using It"
-permalink: kb/086/Q86150/
+permalink: /kb/086/Q86150/
 ---
 
 ## Q86150: PROFS: Definition of XEDIT, How to Find Help Using It

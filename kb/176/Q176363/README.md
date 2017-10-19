@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176363: Using Automatic Direction Finder (ADF) in Flight Simulator"
-permalink: kb/176/Q176363/
+permalink: /kb/176/Q176363/
 ---
 
 ## Q176363: Using Automatic Direction Finder (ADF) in Flight Simulator

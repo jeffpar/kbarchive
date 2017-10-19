@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114164: PC Win: Err Msg: The Application Could Not Be Executed"
-permalink: kb/114/Q114164/
+permalink: /kb/114/Q114164/
 ---
 
 ## Q114164: PC Win: Err Msg: The Application Could Not Be Executed

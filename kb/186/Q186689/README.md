@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186689: XCLN: Reminders Do Not Start for Items in Public Folders"
-permalink: kb/186/Q186689/
+permalink: /kb/186/Q186689/
 ---
 
 ## Q186689: XCLN: Reminders Do Not Start for Items in Public Folders

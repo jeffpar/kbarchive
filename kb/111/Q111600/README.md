@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111600: BUG: Polygons Drawn with Pens of Odd Width (&gt; 5) Misalign"
-permalink: kb/111/Q111600/
+permalink: /kb/111/Q111600/
 ---
 
 ## Q111600: BUG: Polygons Drawn with Pens of Odd Width (&gt; 5) Misalign

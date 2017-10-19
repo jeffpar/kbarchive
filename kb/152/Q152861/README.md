@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152861: SMS: Using Dosetup to Create Registry Entries for PGC"
-permalink: kb/152/Q152861/
+permalink: /kb/152/Q152861/
 ---
 
 ## Q152861: SMS: Using Dosetup to Create Registry Entries for PGC

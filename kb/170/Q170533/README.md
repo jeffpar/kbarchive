@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170533: XADM: Exchange 5.0 SP1 No Setup.exe in &#92;Support Directory"
-permalink: kb/170/Q170533/
+permalink: /kb/170/Q170533/
 ---
 
 ## Q170533: XADM: Exchange 5.0 SP1 No Setup.exe in &#92;Support Directory

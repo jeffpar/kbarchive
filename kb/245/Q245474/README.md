@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245474: Storage Methods for Server-Based User Profiles"
-permalink: kb/245/Q245474/
+permalink: /kb/245/Q245474/
 ---
 
 ## Q245474: Storage Methods for Server-Based User Profiles

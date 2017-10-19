@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127200: HOWTO: Use Other Registry Keys with Visual C++ 2.0 and Above"
-permalink: kb/127/Q127200/
+permalink: /kb/127/Q127200/
 ---
 
 ## Q127200: HOWTO: Use Other Registry Keys with Visual C++ 2.0 and Above

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35883: FIX: Public Labels Are Prefixed with Underscore Incorrectly"
-permalink: kb/035/Q35883/
+permalink: /kb/035/Q35883/
 ---
 
 ## Q35883: FIX: Public Labels Are Prefixed with Underscore Incorrectly

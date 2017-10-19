@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192924: Unable to Add a Network Service in Network Tool in Control Panel"
-permalink: kb/192/Q192924/
+permalink: /kb/192/Q192924/
 ---
 
 ## Q192924: Unable to Add a Network Service in Network Tool in Control Panel

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163438: PRB: Warning Message in MS Access After Installing ODE Tools"
-permalink: kb/163/Q163438/
+permalink: /kb/163/Q163438/
 ---
 
 ## Q163438: PRB: Warning Message in MS Access After Installing ODE Tools

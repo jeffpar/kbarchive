@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274772: INFO: Perl Support Boundaries"
-permalink: kb/274/Q274772/
+permalink: /kb/274/Q274772/
 ---
 
 ## Q274772: INFO: Perl Support Boundaries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221698: FIX: Project Manager Not Refreshed Correctly After Build"
-permalink: kb/221/Q221698/
+permalink: /kb/221/Q221698/
 ---
 
 ## Q221698: FIX: Project Manager Not Refreshed Correctly After Build

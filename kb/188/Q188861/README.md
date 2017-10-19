@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188861: HOWTO: Use the Remote Data Control to Pass Bookmarks"
-permalink: kb/188/Q188861/
+permalink: /kb/188/Q188861/
 ---
 
 ## Q188861: HOWTO: Use the Remote Data Control to Pass Bookmarks

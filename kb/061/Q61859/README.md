@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61859: Access Control Lists in OS/2 LAN Manager 2.x HPFS386"
-permalink: kb/061/Q61859/
+permalink: /kb/061/Q61859/
 ---
 
 ## Q61859: Access Control Lists in OS/2 LAN Manager 2.x HPFS386

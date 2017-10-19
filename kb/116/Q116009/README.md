@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116009: Get MPEG Command Set for MCI from Microsoft Download Center"
-permalink: kb/116/Q116009/
+permalink: /kb/116/Q116009/
 ---
 
 ## Q116009: Get MPEG Command Set for MCI from Microsoft Download Center

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102211: Stacker Conversion Hangs at &quot;Loading DoubleSpace Setup...&quot;"
-permalink: kb/102/Q102211/
+permalink: /kb/102/Q102211/
 ---
 
 ## Q102211: Stacker Conversion Hangs at &quot;Loading DoubleSpace Setup...&quot;

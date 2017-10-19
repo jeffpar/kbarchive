@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173989: SMS: Program Group Control May Cause an Access Violation"
-permalink: kb/173/Q173989/
+permalink: /kb/173/Q173989/
 ---
 
 ## Q173989: SMS: Program Group Control May Cause an Access Violation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146207: MSN Requires Long File Names"
-permalink: kb/146/Q146207/
+permalink: /kb/146/Q146207/
 ---
 
 ## Q146207: MSN Requires Long File Names

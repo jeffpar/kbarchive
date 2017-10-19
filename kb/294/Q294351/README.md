@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294351: Cannot Transfer GroupWise Mail Messages from Novell Server"
-permalink: kb/294/Q294351/
+permalink: /kb/294/Q294351/
 ---
 
 ## Q294351: Cannot Transfer GroupWise Mail Messages from Novell Server

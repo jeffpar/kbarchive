@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153256: Unable to Build Wrui3270.exe Sample App. with VC++ 4.0"
-permalink: kb/153/Q153256/
+permalink: /kb/153/Q153256/
 ---
 
 ## Q153256: Unable to Build Wrui3270.exe Sample App. with VC++ 4.0

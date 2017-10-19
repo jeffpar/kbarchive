@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125033: Writer/Artist: Unable to Record Sounds on Power Macintosh"
-permalink: kb/125/Q125033/
+permalink: /kb/125/Q125033/
 ---
 
 ## Q125033: Writer/Artist: Unable to Record Sounds on Power Macintosh

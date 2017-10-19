@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157515: Windows NT Resource Kit FAQ, versions 3.50 and 3.51"
-permalink: kb/157/Q157515/
+permalink: /kb/157/Q157515/
 ---
 
 ## Q157515: Windows NT Resource Kit FAQ, versions 3.50 and 3.51

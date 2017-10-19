@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174096: Error Message: Cannot Find Ftcolor.exe"
-permalink: kb/174/Q174096/
+permalink: /kb/174/Q174096/
 ---
 
 ## Q174096: Error Message: Cannot Find Ftcolor.exe

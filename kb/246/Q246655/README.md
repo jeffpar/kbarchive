@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246655: Network Address and Network Port for AS/400 Connections"
-permalink: kb/246/Q246655/
+permalink: /kb/246/Q246655/
 ---
 
 ## Q246655: Network Address and Network Port for AS/400 Connections

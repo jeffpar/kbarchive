@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70207: Cannot ALT+ESC from Works Under Windows 3.0 in Standard Mode"
-permalink: kb/070/Q70207/
+permalink: /kb/070/Q70207/
 ---
 
 ## Q70207: Cannot ALT+ESC from Works Under Windows 3.0 in Standard Mode

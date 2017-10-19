@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244136: INFO: When Is the Access AutoNumber Field Available?"
-permalink: kb/244/Q244136/
+permalink: /kb/244/Q244136/
 ---
 
 ## Q244136: INFO: When Is the Access AutoNumber Field Available?

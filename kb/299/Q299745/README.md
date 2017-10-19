@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299745: TrainSim: Err &quot;Incompatible sound card&quot; or Sounds Are Not Played"
-permalink: kb/299/Q299745/
+permalink: /kb/299/Q299745/
 ---
 
 ## Q299745: TrainSim: Err &quot;Incompatible sound card&quot; or Sounds Are Not Played

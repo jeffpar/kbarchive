@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197401: Convlog Tool Stops Processing NCSA Files"
-permalink: kb/197/Q197401/
+permalink: /kb/197/Q197401/
 ---
 
 ## Q197401: Convlog Tool Stops Processing NCSA Files

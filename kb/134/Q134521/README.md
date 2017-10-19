@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134521: Run Command on Start Menu Does Not Accept Redirection or Pipes"
-permalink: kb/134/Q134521/
+permalink: /kb/134/Q134521/
 ---
 
 ## Q134521: Run Command on Start Menu Does Not Accept Redirection or Pipes

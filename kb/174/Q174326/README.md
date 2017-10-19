@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174326: WD97: Error Expanding Subdocuments If Network Connection Lost"
-permalink: kb/174/Q174326/
+permalink: /kb/174/Q174326/
 ---
 
 ## Q174326: WD97: Error Expanding Subdocuments If Network Connection Lost

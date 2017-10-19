@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156005: FIX: Incorrect Warning About Procedure/ Trigger Name Length"
-permalink: kb/156/Q156005/
+permalink: /kb/156/Q156005/
 ---
 
 ## Q156005: FIX: Incorrect Warning About Procedure/ Trigger Name Length

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180868: SFGW May Trap When Creating New Devices in SQL Manager"
-permalink: kb/180/Q180868/
+permalink: /kb/180/Q180868/
 ---
 
 ## Q180868: SFGW May Trap When Creating New Devices in SQL Manager

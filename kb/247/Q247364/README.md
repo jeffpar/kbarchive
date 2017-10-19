@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247364: IIS Sample ADSI Script to Create FTP Virtual Servers"
-permalink: kb/247/Q247364/
+permalink: /kb/247/Q247364/
 ---
 
 ## Q247364: IIS Sample ADSI Script to Create FTP Virtual Servers

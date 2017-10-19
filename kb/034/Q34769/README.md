@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34769: PRB: LINK Error &quot;Do Not Change Diskette in Drive C&quot;"
-permalink: kb/034/Q34769/
+permalink: /kb/034/Q34769/
 ---
 
 ## Q34769: PRB: LINK Error &quot;Do Not Change Diskette in Drive C&quot;

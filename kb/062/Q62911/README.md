@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62911: Video Resolution Standards"
-permalink: kb/062/Q62911/
+permalink: /kb/062/Q62911/
 ---
 
 ## Q62911: Video Resolution Standards

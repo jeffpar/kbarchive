@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178220: XCLN: Certain Characters Not Allowed in Web Services URL"
-permalink: kb/178/Q178220/
+permalink: /kb/178/Q178220/
 ---
 
 ## Q178220: XCLN: Certain Characters Not Allowed in Web Services URL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70061: Invalid Set Temp Directory Name Example in User's Guide"
-permalink: kb/070/Q70061/
+permalink: /kb/070/Q70061/
 ---
 
 ## Q70061: Invalid Set Temp Directory Name Example in User's Guide

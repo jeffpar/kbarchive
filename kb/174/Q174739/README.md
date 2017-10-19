@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174739: XWEB: Empty Rectangles Appear in Outlook Web Access"
-permalink: kb/174/Q174739/
+permalink: /kb/174/Q174739/
 ---
 
 ## Q174739: XWEB: Empty Rectangles Appear in Outlook Web Access

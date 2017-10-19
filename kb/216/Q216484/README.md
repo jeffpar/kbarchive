@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216484: Alternate Way to Install Application During GUI-mode Setup"
-permalink: kb/216/Q216484/
+permalink: /kb/216/Q216484/
 ---
 
 ## Q216484: Alternate Way to Install Application During GUI-mode Setup

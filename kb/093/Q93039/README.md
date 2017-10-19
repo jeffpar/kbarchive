@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93039: Token Ring Cards and Local Addressing with WFWG"
-permalink: kb/093/Q93039/
+permalink: /kb/093/Q93039/
 ---
 
 ## Q93039: Token Ring Cards and Local Addressing with WFWG

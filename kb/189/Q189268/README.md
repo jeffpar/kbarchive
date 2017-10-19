@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189268: XADM: Encrypted Message Unreadable When TNEF Is Turned On"
-permalink: kb/189/Q189268/
+permalink: /kb/189/Q189268/
 ---
 
 ## Q189268: XADM: Encrypted Message Unreadable When TNEF Is Turned On

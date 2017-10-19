@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174896: XCLN: Err Msg: There Are Too Many Items In This Folder"
-permalink: kb/174/Q174896/
+permalink: /kb/174/Q174896/
 ---
 
 ## Q174896: XCLN: Err Msg: There Are Too Many Items In This Folder

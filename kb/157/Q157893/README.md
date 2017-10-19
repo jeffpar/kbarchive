@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157893: FIX: Closing an ActiveX Control Project Crashes DevStudio"
-permalink: kb/157/Q157893/
+permalink: /kb/157/Q157893/
 ---
 
 ## Q157893: FIX: Closing an ActiveX Control Project Crashes DevStudio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169556: Stopping A Domain User From Creating Local Groups On A Domain"
-permalink: kb/169/Q169556/
+permalink: /kb/169/Q169556/
 ---
 
 ## Q169556: Stopping A Domain User From Creating Local Groups On A Domain

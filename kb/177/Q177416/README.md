@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177416: XFOR: No Help File in Exchange Notes Connector"
-permalink: kb/177/Q177416/
+permalink: /kb/177/Q177416/
 ---
 
 ## Q177416: XFOR: No Help File in Exchange Notes Connector

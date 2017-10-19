@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253982: BUG: MSDN Library Problems with the Windows 2000 MUI"
-permalink: kb/253/Q253982/
+permalink: /kb/253/Q253982/
 ---
 
 ## Q253982: BUG: MSDN Library Problems with the Windows 2000 MUI

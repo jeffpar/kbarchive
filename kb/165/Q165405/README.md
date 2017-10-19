@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165405: Computer with NeoMagic Display Hangs When PC Card Is Inserted"
-permalink: kb/165/Q165405/
+permalink: /kb/165/Q165405/
 ---
 
 ## Q165405: Computer with NeoMagic Display Hangs When PC Card Is Inserted

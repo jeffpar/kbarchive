@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188550: BUG: vbKeySeparator Constant Does Not Work"
-permalink: kb/188/Q188550/
+permalink: /kb/188/Q188550/
 ---
 
 ## Q188550: BUG: vbKeySeparator Constant Does Not Work

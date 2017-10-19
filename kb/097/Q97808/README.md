@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97808: Microsoft Anti-Virus Err Msg: File &lt;Filename&gt; Was Changed"
-permalink: kb/097/Q97808/
+permalink: /kb/097/Q97808/
 ---
 
 ## Q97808: Microsoft Anti-Virus Err Msg: File &lt;Filename&gt; Was Changed

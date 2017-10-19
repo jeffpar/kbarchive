@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134595: NET START WORKSTATION Command Loads Incorrect Redirector"
-permalink: kb/134/Q134595/
+permalink: /kb/134/Q134595/
 ---
 
 ## Q134595: NET START WORKSTATION Command Loads Incorrect Redirector

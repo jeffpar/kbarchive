@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273927: Crimson Skies: Game Hangs When You Start Instant Action Mission"
-permalink: kb/273/Q273927/
+permalink: /kb/273/Q273927/
 ---
 
 ## Q273927: Crimson Skies: Game Hangs When You Start Instant Action Mission

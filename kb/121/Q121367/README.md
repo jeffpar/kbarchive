@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121367: INFO: Can't Watch Variables in Debugger - Nine Possible Causes"
-permalink: kb/121/Q121367/
+permalink: /kb/121/Q121367/
 ---
 
 ## Q121367: INFO: Can't Watch Variables in Debugger - Nine Possible Causes

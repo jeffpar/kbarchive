@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140321: HOWTO: Set the Default Choice in a List Box or Combo Box"
-permalink: kb/140/Q140321/
+permalink: /kb/140/Q140321/
 ---
 
 ## Q140321: HOWTO: Set the Default Choice in a List Box or Combo Box

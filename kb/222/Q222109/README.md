@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222109: Using Persistent Verification, Blank Password Not Sent To Host"
-permalink: kb/222/Q222109/
+permalink: /kb/222/Q222109/
 ---
 
 ## Q222109: Using Persistent Verification, Blank Password Not Sent To Host

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146508: XCLN: No Underline Appears Between Bullet and Text"
-permalink: kb/146/Q146508/
+permalink: /kb/146/Q146508/
 ---
 
 ## Q146508: XCLN: No Underline Appears Between Bullet and Text

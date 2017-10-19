@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173062: Permissions Not Copied in Scopy.exe"
-permalink: kb/173/Q173062/
+permalink: /kb/173/Q173062/
 ---
 
 ## Q173062: Permissions Not Copied in Scopy.exe

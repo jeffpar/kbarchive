@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124954: MHS: Err Msg: Error Getting Memory. Not Enough RAM..."
-permalink: kb/124/Q124954/
+permalink: /kb/124/Q124954/
 ---
 
 ## Q124954: MHS: Err Msg: Error Getting Memory. Not Enough RAM...

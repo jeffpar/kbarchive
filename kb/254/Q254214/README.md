@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254214: XFOR: Routing Restrictions Don't Work w Some Antivirus Solutions"
-permalink: kb/254/Q254214/
+permalink: /kb/254/Q254214/
 ---
 
 ## Q254214: XFOR: Routing Restrictions Don't Work w Some Antivirus Solutions

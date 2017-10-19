@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177565: Unattended Install Fails If Using IBM Token Ring 16/4 /A NIC"
-permalink: kb/177/Q177565/
+permalink: /kb/177/Q177565/
 ---
 
 ## Q177565: Unattended Install Fails If Using IBM Token Ring 16/4 /A NIC

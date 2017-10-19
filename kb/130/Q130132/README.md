@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130132: PRB: Instance of Container Class Uses Parent Form Scalemode"
-permalink: kb/130/Q130132/
+permalink: /kb/130/Q130132/
 ---
 
 ## Q130132: PRB: Instance of Container Class Uses Parent Form Scalemode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231524: MapPoint 2000: Unexpected E-mail Program Starts When Sending Map"
-permalink: kb/231/Q231524/
+permalink: /kb/231/Q231524/
 ---
 
 ## Q231524: MapPoint 2000: Unexpected E-mail Program Starts When Sending Map

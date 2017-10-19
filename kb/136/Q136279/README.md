@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136279: PRB: Program Error While Using Search in Wizard-Generated Form"
-permalink: kb/136/Q136279/
+permalink: /kb/136/Q136279/
 ---
 
 ## Q136279: PRB: Program Error While Using Search in Wizard-Generated Form

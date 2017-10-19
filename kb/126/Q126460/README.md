@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126460: Cannot Connect to NRN Server with Dial-Up Networking"
-permalink: kb/126/Q126460/
+permalink: /kb/126/Q126460/
 ---
 
 ## Q126460: Cannot Connect to NRN Server with Dial-Up Networking

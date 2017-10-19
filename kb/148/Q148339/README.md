@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148339: XADM: How to Import Multiple SMTP Addresses"
-permalink: kb/148/Q148339/
+permalink: /kb/148/Q148339/
 ---
 
 ## Q148339: XADM: How to Import Multiple SMTP Addresses

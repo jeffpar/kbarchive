@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252787: DOC: DOCERR: Parameters Passed to Form Set's Load not Setup1"
-permalink: kb/252/Q252787/
+permalink: /kb/252/Q252787/
 ---
 
 ## Q252787: DOC: DOCERR: Parameters Passed to Form Set's Load not Setup1

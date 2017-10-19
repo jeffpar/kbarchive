@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176650: INFO: Microsoft Developer Network Support Policies"
-permalink: kb/176/Q176650/
+permalink: /kb/176/Q176650/
 ---
 
 ## Q176650: INFO: Microsoft Developer Network Support Policies

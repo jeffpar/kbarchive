@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148963: XADM: Disabling Message Tracking For One or More Servers"
-permalink: kb/148/Q148963/
+permalink: /kb/148/Q148963/
 ---
 
 ## Q148963: XADM: Disabling Message Tracking For One or More Servers

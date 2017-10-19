@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177491: XADM: Corrupted IPX Packets Cause Information Store to Stop"
-permalink: kb/177/Q177491/
+permalink: /kb/177/Q177491/
 ---
 
 ## Q177491: XADM: Corrupted IPX Packets Cause Information Store to Stop

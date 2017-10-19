@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194602: PC MMTA: Incorrect Error from Windows NT MMTA Dispatch"
-permalink: kb/194/Q194602/
+permalink: /kb/194/Q194602/
 ---
 
 ## Q194602: PC MMTA: Incorrect Error from Windows NT MMTA Dispatch

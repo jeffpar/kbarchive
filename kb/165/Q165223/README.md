@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165223: File Transfer Does Not Convert DBCS Characters Properly"
-permalink: kb/165/Q165223/
+permalink: /kb/165/Q165223/
 ---
 
 ## Q165223: File Transfer Does Not Convert DBCS Characters Properly

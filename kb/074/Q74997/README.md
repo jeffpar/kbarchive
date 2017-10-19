@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74997: Pathworks 4.x Does Not Run with Windows 3.0 and MS-DOS"
-permalink: kb/074/Q74997/
+permalink: /kb/074/Q74997/
 ---
 
 ## Q74997: Pathworks 4.x Does Not Run with Windows 3.0 and MS-DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100399: How to Disable SoundBits"
-permalink: kb/100/Q100399/
+permalink: /kb/100/Q100399/
 ---
 
 ## Q100399: How to Disable SoundBits

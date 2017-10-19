@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308251: FIX: Forms, Menus, Reports Corrupted on Windows 2000 After Cycle"
-permalink: kb/308/Q308251/
+permalink: /kb/308/Q308251/
 ---
 
 ## Q308251: FIX: Forms, Menus, Reports Corrupted on Windows 2000 After Cycle

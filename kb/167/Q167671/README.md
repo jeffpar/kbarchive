@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167671: WD97: Can't Check Spelling in Text Box Located in Header/Footer"
-permalink: kb/167/Q167671/
+permalink: /kb/167/Q167671/
 ---
 
 ## Q167671: WD97: Can't Check Spelling in Text Box Located in Header/Footer

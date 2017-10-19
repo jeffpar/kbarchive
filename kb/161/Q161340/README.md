@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161340: RAS Error 692 with IBM MWave Modem and Logon Using DUN"
-permalink: kb/161/Q161340/
+permalink: /kb/161/Q161340/
 ---
 
 ## Q161340: RAS Error 692 with IBM MWave Modem and Logon Using DUN

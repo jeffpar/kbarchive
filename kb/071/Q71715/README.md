@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71715: MS-DOS: Unable to Change Volume Label"
-permalink: kb/071/Q71715/
+permalink: /kb/071/Q71715/
 ---
 
 ## Q71715: MS-DOS: Unable to Change Volume Label

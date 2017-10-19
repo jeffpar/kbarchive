@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136186: DOC: Incorrect Description of Array Created by ADBOBJECTS()"
-permalink: kb/136/Q136186/
+permalink: /kb/136/Q136186/
 ---
 
 ## Q136186: DOC: Incorrect Description of Array Created by ADBOBJECTS()

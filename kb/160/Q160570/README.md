@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160570: Gopher Query Will Access Violate in Inetinfo.exe"
-permalink: kb/160/Q160570/
+permalink: /kb/160/Q160570/
 ---
 
 ## Q160570: Gopher Query Will Access Violate in Inetinfo.exe

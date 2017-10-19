@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260736: StarLancer: How to Play the Game in Greyscale Mode"
-permalink: kb/260/Q260736/
+permalink: /kb/260/Q260736/
 ---
 
 ## Q260736: StarLancer: How to Play the Game in Greyscale Mode

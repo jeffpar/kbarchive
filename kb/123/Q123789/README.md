@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123789: Can't Restrict User from Changing Password"
-permalink: kb/123/Q123789/
+permalink: /kb/123/Q123789/
 ---
 
 ## Q123789: Can't Restrict User from Changing Password

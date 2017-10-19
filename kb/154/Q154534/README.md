@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154534: DBWEB: How to Create Custom Success/Failure Messages"
-permalink: kb/154/Q154534/
+permalink: /kb/154/Q154534/
 ---
 
 ## Q154534: DBWEB: How to Create Custom Success/Failure Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78265: Toshiba T1200XE Screen Choices and the 7.04 Mouse Driver"
-permalink: kb/078/Q78265/
+permalink: /kb/078/Q78265/
 ---
 
 ## Q78265: Toshiba T1200XE Screen Choices and the 7.04 Mouse Driver

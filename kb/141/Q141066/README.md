@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141066: WSPlus: How to Force Schedule+ 7.0 to Ask to Work in Group"
-permalink: kb/141/Q141066/
+permalink: /kb/141/Q141066/
 ---
 
 ## Q141066: WSPlus: How to Force Schedule+ 7.0 to Ask to Work in Group

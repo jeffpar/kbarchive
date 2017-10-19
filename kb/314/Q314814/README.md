@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314814: FIX: Error -1073741819 in MTDLL When You Use LIKE in SQL SELECT"
-permalink: kb/314/Q314814/
+permalink: /kb/314/Q314814/
 ---
 
 ## Q314814: FIX: Error -1073741819 in MTDLL When You Use LIKE in SQL SELECT

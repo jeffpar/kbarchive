@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180331: Cannot Redirect with Long Folder Name in MS-DOS Prompt Session"
-permalink: kb/180/Q180331/
+permalink: /kb/180/Q180331/
 ---
 
 ## Q180331: Cannot Redirect with Long Folder Name in MS-DOS Prompt Session

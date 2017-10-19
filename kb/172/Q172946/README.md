@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172946: XCLN: How to Install the Simple Mail Handler Utility"
-permalink: kb/172/Q172946/
+permalink: /kb/172/Q172946/
 ---
 
 ## Q172946: XCLN: How to Install the Simple Mail Handler Utility

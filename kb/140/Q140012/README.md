@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140012: ScanDisk in Setup Does Not Scan DriveSpace 3 Drive's MDFAT"
-permalink: kb/140/Q140012/
+permalink: /kb/140/Q140012/
 ---
 
 ## Q140012: ScanDisk in Setup Does Not Scan DriveSpace 3 Drive's MDFAT

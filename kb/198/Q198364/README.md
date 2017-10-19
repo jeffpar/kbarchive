@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198364: WD97: How to View Exact Tab, Indent, Margin Positions on Ruler"
-permalink: kb/198/Q198364/
+permalink: /kb/198/Q198364/
 ---
 
 ## Q198364: WD97: How to View Exact Tab, Indent, Margin Positions on Ruler

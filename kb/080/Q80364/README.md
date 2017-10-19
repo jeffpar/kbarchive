@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80364: Removing Terminate-and-Stay-Resident Programs from Memory"
-permalink: kb/080/Q80364/
+permalink: /kb/080/Q80364/
 ---
 
 ## Q80364: Removing Terminate-and-Stay-Resident Programs from Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271638: BUG: Report Preview Unreadable When Zoom Is Set at 75 Percent"
-permalink: kb/271/Q271638/
+permalink: /kb/271/Q271638/
 ---
 
 ## Q271638: BUG: Report Preview Unreadable When Zoom Is Set at 75 Percent

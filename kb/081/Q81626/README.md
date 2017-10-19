@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81626: Complete Removal of a Windows Printer Driver"
-permalink: kb/081/Q81626/
+permalink: /kb/081/Q81626/
 ---
 
 ## Q81626: Complete Removal of a Windows Printer Driver

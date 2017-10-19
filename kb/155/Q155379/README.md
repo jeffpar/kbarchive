@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155379: XADM: Unable to Match Custom Recipient Due to RFC1327 Conversion"
-permalink: kb/155/Q155379/
+permalink: /kb/155/Q155379/
 ---
 
 ## Q155379: XADM: Unable to Match Custom Recipient Due to RFC1327 Conversion

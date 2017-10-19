@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166564: XCLN: How to Not Convert Outbound Attachments to MacBinary"
-permalink: kb/166/Q166564/
+permalink: /kb/166/Q166564/
 ---
 
 ## Q166564: XCLN: How to Not Convert Outbound Attachments to MacBinary

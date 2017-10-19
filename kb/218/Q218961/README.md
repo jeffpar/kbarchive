@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218961: Connectivity Issues for Terminal Server Clients on UNIX Systems"
-permalink: kb/218/Q218961/
+permalink: /kb/218/Q218961/
 ---
 
 ## Q218961: Connectivity Issues for Terminal Server Clients on UNIX Systems

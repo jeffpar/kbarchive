@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122311: Using Rumba with TCP/IP-32"
-permalink: kb/122/Q122311/
+permalink: /kb/122/Q122311/
 ---
 
 ## Q122311: Using Rumba with TCP/IP-32

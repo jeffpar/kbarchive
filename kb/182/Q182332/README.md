@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182332: SNA Clients Experience Delay Connecting to Multihomed Server"
-permalink: kb/182/Q182332/
+permalink: /kb/182/Q182332/
 ---
 
 ## Q182332: SNA Clients Experience Delay Connecting to Multihomed Server

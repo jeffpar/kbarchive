@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98434: Using Wildcard Characters in SQL Statements"
-permalink: kb/098/Q98434/
+permalink: /kb/098/Q98434/
 ---
 
 ## Q98434: Using Wildcard Characters in SQL Statements

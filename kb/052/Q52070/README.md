@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q52070: Example of PPMT and PMT Financial Functions in Basic"
-permalink: kb/052/Q52070/
+permalink: /kb/052/Q52070/
 ---
 
 ## Q52070: Example of PPMT and PMT Financial Functions in Basic

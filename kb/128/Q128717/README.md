@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128717: MHS: Err Msg: Inpost: General File I/O Error"
-permalink: kb/128/Q128717/
+permalink: /kb/128/Q128717/
 ---
 
 ## Q128717: MHS: Err Msg: Inpost: General File I/O Error

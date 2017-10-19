@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150134: BUG: FOR4165 Warning Underflow of Smallest Positive REAL&#42;8"
-permalink: kb/150/Q150134/
+permalink: /kb/150/Q150134/
 ---
 
 ## Q150134: BUG: FOR4165 Warning Underflow of Smallest Positive REAL&#42;8

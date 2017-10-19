@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201265: Troubleshooting Directory Service Manager for NetWare"
-permalink: kb/201/Q201265/
+permalink: /kb/201/Q201265/
 ---
 
 ## Q201265: Troubleshooting Directory Service Manager for NetWare

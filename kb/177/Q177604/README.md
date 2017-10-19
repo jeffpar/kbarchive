@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177604: Multimedia: Troubleshooting Using Clean Boot of Windows 95"
-permalink: kb/177/Q177604/
+permalink: /kb/177/Q177604/
 ---
 
 ## Q177604: Multimedia: Troubleshooting Using Clean Boot of Windows 95

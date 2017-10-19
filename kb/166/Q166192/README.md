@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166192: Kids Plus!: Protect It! Err Msg: A Fatal Exception Has Occurred"
-permalink: kb/166/Q166192/
+permalink: /kb/166/Q166192/
 ---
 
 ## Q166192: Kids Plus!: Protect It! Err Msg: A Fatal Exception Has Occurred

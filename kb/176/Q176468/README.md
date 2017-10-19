@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176468: INFO: Behavior of Forms in an ActiveX Document"
-permalink: kb/176/Q176468/
+permalink: /kb/176/Q176468/
 ---
 
 ## Q176468: INFO: Behavior of Forms in an ActiveX Document

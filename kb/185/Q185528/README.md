@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185528: WD97: Can't Change Mirror Margins Option by Section"
-permalink: kb/185/Q185528/
+permalink: /kb/185/Q185528/
 ---
 
 ## Q185528: WD97: Can't Change Mirror Margins Option by Section

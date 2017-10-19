@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156155: PP7T: Write-Up Document Larger Than Presentation"
-permalink: kb/156/Q156155/
+permalink: /kb/156/Q156155/
 ---
 
 ## Q156155: PP7T: Write-Up Document Larger Than Presentation

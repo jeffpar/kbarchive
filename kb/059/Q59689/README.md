@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59689: Installing Windows 3.0 Into a Directory With an Extension"
-permalink: kb/059/Q59689/
+permalink: /kb/059/Q59689/
 ---
 
 ## Q59689: Installing Windows 3.0 Into a Directory With an Extension

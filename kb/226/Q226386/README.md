@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226386: XWEB: WLBS Failover Causes Accumulation of MMP Files in Webtemp"
-permalink: kb/226/Q226386/
+permalink: /kb/226/Q226386/
 ---
 
 ## Q226386: XWEB: WLBS Failover Causes Accumulation of MMP Files in Webtemp

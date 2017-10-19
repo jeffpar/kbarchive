@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199528: BUG: CEPC Mouse Driver Moves Cursor Erratically"
-permalink: kb/199/Q199528/
+permalink: /kb/199/Q199528/
 ---
 
 ## Q199528: BUG: CEPC Mouse Driver Moves Cursor Erratically

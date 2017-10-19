@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184886: CICS RE: CICS ABEND AZCE When LU 6.2 Message &gt; 32767 Bytes"
-permalink: kb/184/Q184886/
+permalink: /kb/184/Q184886/
 ---
 
 ## Q184886: CICS RE: CICS ABEND AZCE When LU 6.2 Message &gt; 32767 Bytes

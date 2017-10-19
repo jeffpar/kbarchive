@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320547: HIS2000: Data Queue Control Hangs When Connection Is Lost"
-permalink: kb/320/Q320547/
+permalink: /kb/320/Q320547/
 ---
 
 ## Q320547: HIS2000: Data Queue Control Hangs When Connection Is Lost

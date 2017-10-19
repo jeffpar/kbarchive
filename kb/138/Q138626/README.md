@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138626: Enabling PCMCIA Support on the AT&amp;T Globalyst 130"
-permalink: kb/138/Q138626/
+permalink: /kb/138/Q138626/
 ---
 
 ## Q138626: Enabling PCMCIA Support on the AT&amp;T Globalyst 130

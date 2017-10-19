@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192669: Pagefile Set Incorrectly on Computers with &gt;2049 MB RAM"
-permalink: kb/192/Q192669/
+permalink: /kb/192/Q192669/
 ---
 
 ## Q192669: Pagefile Set Incorrectly on Computers with &gt;2049 MB RAM

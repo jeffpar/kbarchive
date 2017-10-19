@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249578: Pcmdump Detects Expiration Date Incorrectly in Instruction File"
-permalink: kb/249/Q249578/
+permalink: /kb/249/Q249578/
 ---
 
 ## Q249578: Pcmdump Detects Expiration Date Incorrectly in Instruction File

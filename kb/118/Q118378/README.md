@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118378: BUG: Cannot Update More Than 64K of Long Data"
-permalink: kb/118/Q118378/
+permalink: /kb/118/Q118378/
 ---
 
 ## Q118378: BUG: Cannot Update More Than 64K of Long Data

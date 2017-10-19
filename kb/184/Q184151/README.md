@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184151: XADM: Error Message: Unable to Update Public Free/Busy Data"
-permalink: kb/184/Q184151/
+permalink: /kb/184/Q184151/
 ---
 
 ## Q184151: XADM: Error Message: Unable to Update Public Free/Busy Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136474: PC Win: Long File Name Attachment Support"
-permalink: kb/136/Q136474/
+permalink: /kb/136/Q136474/
 ---
 
 ## Q136474: PC Win: Long File Name Attachment Support

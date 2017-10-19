@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99672: INFO: Complete Enumeration of System Fonts"
-permalink: kb/099/Q99672/
+permalink: /kb/099/Q99672/
 ---
 
 ## Q99672: INFO: Complete Enumeration of System Fonts

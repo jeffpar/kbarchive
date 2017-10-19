@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99340: Windows 3.1 Card File Format"
-permalink: kb/099/Q99340/
+permalink: /kb/099/Q99340/
 ---
 
 ## Q99340: Windows 3.1 Card File Format

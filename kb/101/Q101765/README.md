@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101765: Windows Err Msg: Application Execution Error"
-permalink: kb/101/Q101765/
+permalink: /kb/101/Q101765/
 ---
 
 ## Q101765: Windows Err Msg: Application Execution Error

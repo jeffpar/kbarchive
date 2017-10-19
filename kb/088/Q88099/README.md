@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88099: INI File Sizes Become 0 Bytes After Starting WinLogin"
-permalink: kb/088/Q88099/
+permalink: /kb/088/Q88099/
 ---
 
 ## Q88099: INI File Sizes Become 0 Bytes After Starting WinLogin

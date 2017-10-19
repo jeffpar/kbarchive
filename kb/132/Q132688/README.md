@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132688: PC MAPI: MAPIReadMail Retrieve Message Body as Blank"
-permalink: kb/132/Q132688/
+permalink: /kb/132/Q132688/
 ---
 
 ## Q132688: PC MAPI: MAPIReadMail Retrieve Message Body as Blank

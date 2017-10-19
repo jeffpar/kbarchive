@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107369: Os2LibPath Variable Requires &quot;Set&quot; to Change"
-permalink: kb/107/Q107369/
+permalink: /kb/107/Q107369/
 ---
 
 ## Q107369: Os2LibPath Variable Requires &quot;Set&quot; to Change

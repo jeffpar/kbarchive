@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260202: XADM: BlackBerry Pager Software Changes Auto Naming Generation"
-permalink: kb/260/Q260202/
+permalink: /kb/260/Q260202/
 ---
 
 ## Q260202: XADM: BlackBerry Pager Software Changes Auto Naming Generation

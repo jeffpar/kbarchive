@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253269: PRB: Access Denied When You Try to Debug a WebClass Application"
-permalink: kb/253/Q253269/
+permalink: /kb/253/Q253269/
 ---
 
 ## Q253269: PRB: Access Denied When You Try to Debug a WebClass Application

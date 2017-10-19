@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241940: BUG: C2954 Error When Using Class Template as Template-Parameter"
-permalink: kb/241/Q241940/
+permalink: /kb/241/Q241940/
 ---
 
 ## Q241940: BUG: C2954 Error When Using Class Template as Template-Parameter

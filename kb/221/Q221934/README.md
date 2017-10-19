@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221934: Err Msg: 530 User &lt;Username&gt; Cannot Log In, Home Directory..."
-permalink: kb/221/Q221934/
+permalink: /kb/221/Q221934/
 ---
 
 ## Q221934: Err Msg: 530 User &lt;Username&gt; Cannot Log In, Home Directory...

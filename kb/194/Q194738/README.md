@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194738: Err Msg: An error occurred loading the Distributed Password..."
-permalink: kb/194/Q194738/
+permalink: /kb/194/Q194738/
 ---
 
 ## Q194738: Err Msg: An error occurred loading the Distributed Password...

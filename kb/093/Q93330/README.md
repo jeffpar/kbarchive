@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93330: PRB: Problems with Using a Graphic Image in an .FRX File"
-permalink: kb/093/Q93330/
+permalink: /kb/093/Q93330/
 ---
 
 ## Q93330: PRB: Problems with Using a Graphic Image in an .FRX File

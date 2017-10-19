@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154394: Computer with NetFlex 2 Card Stops Responding Every 30 Seconds"
-permalink: kb/154/Q154394/
+permalink: /kb/154/Q154394/
 ---
 
 ## Q154394: Computer with NetFlex 2 Card Stops Responding Every 30 Seconds

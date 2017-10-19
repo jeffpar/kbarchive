@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67381: Deleting Files Based on Creation Date"
-permalink: kb/067/Q67381/
+permalink: /kb/067/Q67381/
 ---
 
 ## Q67381: Deleting Files Based on Creation Date

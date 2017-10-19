@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146335: Command-Line Parameters for Schedule+"
-permalink: kb/146/Q146335/
+permalink: /kb/146/Q146335/
 ---
 
 ## Q146335: Command-Line Parameters for Schedule+

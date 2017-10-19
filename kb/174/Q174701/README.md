@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174701: XCLN: Troubleshooting RPC Problems for Exchange Clients"
-permalink: kb/174/Q174701/
+permalink: /kb/174/Q174701/
 ---
 
 ## Q174701: XCLN: Troubleshooting RPC Problems for Exchange Clients

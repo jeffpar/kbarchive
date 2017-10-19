@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140838: SNA Server Win3x Client Tracing Text File Copied to SNA Clients"
-permalink: kb/140/Q140838/
+permalink: /kb/140/Q140838/
 ---
 
 ## Q140838: SNA Server Win3x Client Tracing Text File Copied to SNA Clients

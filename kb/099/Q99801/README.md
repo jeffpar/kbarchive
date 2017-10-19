@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99801: INFO: Increasing the Transmission Retry Timeout for Printing"
-permalink: kb/099/Q99801/
+permalink: /kb/099/Q99801/
 ---
 
 ## Q99801: INFO: Increasing the Transmission Retry Timeout for Printing

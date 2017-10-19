@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305247: FIX: Error Setting Property Named &quot;Value&quot; to Null in Class"
-permalink: kb/305/Q305247/
+permalink: /kb/305/Q305247/
 ---
 
 ## Q305247: FIX: Error Setting Property Named &quot;Value&quot; to Null in Class

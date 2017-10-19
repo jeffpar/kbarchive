@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283076: Academic Learning Series Networking Essentials Plus Third Editio"
-permalink: kb/283/Q283076/
+permalink: /kb/283/Q283076/
 ---
 
 ## Q283076: Academic Learning Series Networking Essentials Plus Third Editio

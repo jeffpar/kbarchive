@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158228: Mac Encarta 97: Remove Option Removes Update/Notemark Files"
-permalink: kb/158/Q158228/
+permalink: /kb/158/Q158228/
 ---
 
 ## Q158228: Mac Encarta 97: Remove Option Removes Update/Notemark Files

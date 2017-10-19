@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159261: WD97: Use Textbox Form Control to WorkAround 255 Character Limit"
-permalink: kb/159/Q159261/
+permalink: /kb/159/Q159261/
 ---
 
 ## Q159261: WD97: Use Textbox Form Control to WorkAround 255 Character Limit

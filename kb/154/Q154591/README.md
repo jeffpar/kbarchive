@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154591: FIX: Wrong Version of MSVCRT40.DLL(Forwarder DLL) in Windows 95"
-permalink: kb/154/Q154591/
+permalink: /kb/154/Q154591/
 ---
 
 ## Q154591: FIX: Wrong Version of MSVCRT40.DLL(Forwarder DLL) in Windows 95

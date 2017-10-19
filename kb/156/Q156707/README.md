@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156707: XADM: NDR's Due to Non-Printable Characters in the DDA Value"
-permalink: kb/156/Q156707/
+permalink: /kb/156/Q156707/
 ---
 
 ## Q156707: XADM: NDR's Due to Non-Printable Characters in the DDA Value

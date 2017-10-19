@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163131: ODE97: Replication Manager Leaves Replica Set Info in Registry"
-permalink: kb/163/Q163131/
+permalink: /kb/163/Q163131/
 ---
 
 ## Q163131: ODE97: Replication Manager Leaves Replica Set Info in Registry

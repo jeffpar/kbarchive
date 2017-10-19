@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229113: SMS: APM32 Doesn't Display the Reboot Countdown Dialog Box"
-permalink: kb/229/Q229113/
+permalink: /kb/229/Q229113/
 ---
 
 ## Q229113: SMS: APM32 Doesn't Display the Reboot Countdown Dialog Box

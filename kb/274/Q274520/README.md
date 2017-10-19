@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274520: Installing MSN Explorer With DUN Breaks NIC"
-permalink: kb/274/Q274520/
+permalink: /kb/274/Q274520/
 ---
 
 ## Q274520: Installing MSN Explorer With DUN Breaks NIC

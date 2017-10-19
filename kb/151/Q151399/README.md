@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151399: Using DHCP with FTP Software's OnNet for Windows"
-permalink: kb/151/Q151399/
+permalink: /kb/151/Q151399/
 ---
 
 ## Q151399: Using DHCP with FTP Software's OnNet for Windows

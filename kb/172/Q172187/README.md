@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172187: WD97: Corel Square Fountain Fill Changed to Radial"
-permalink: kb/172/Q172187/
+permalink: /kb/172/Q172187/
 ---
 
 ## Q172187: WD97: Corel Square Fountain Fill Changed to Radial

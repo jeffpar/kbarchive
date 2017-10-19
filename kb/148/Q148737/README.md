@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148737: Cannot Install Network Monitor Components During Batch Setup"
-permalink: kb/148/Q148737/
+permalink: /kb/148/Q148737/
 ---
 
 ## Q148737: Cannot Install Network Monitor Components During Batch Setup

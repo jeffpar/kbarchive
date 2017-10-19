@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82393: VRAM386.SYS, HRAMDEV.SYS Incompatible with Windows"
-permalink: kb/082/Q82393/
+permalink: /kb/082/Q82393/
 ---
 
 ## Q82393: VRAM386.SYS, HRAMDEV.SYS Incompatible with Windows

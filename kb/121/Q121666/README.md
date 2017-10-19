@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q121666: CONN: Err Msg: Error [20] Insufficient Memory"
-permalink: kb/121/Q121666/
+title: "Q121666: CONN: Err Msg: Error &#91;20&#93; Insufficient Memory"
+permalink: /kb/121/Q121666/
 ---
 
-## Q121666: CONN: Err Msg: Error [20] Insufficient Memory
+## Q121666: CONN: Err Msg: Error &#91;20&#93; Insufficient Memory
 
 	Article: Q121666
 	Product(s): Microsoft Mail For Appletalk Networks

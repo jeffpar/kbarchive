@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91117: COMPAQ DualSpeed Token Ring Card Gives Error #5"
-permalink: kb/091/Q91117/
+permalink: /kb/091/Q91117/
 ---
 
 ## Q91117: COMPAQ DualSpeed Token Ring Card Gives Error #5

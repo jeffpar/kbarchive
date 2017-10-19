@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194493: WD97: Linefeeds or Line Breaks Become Paragraph Marks"
-permalink: kb/194/Q194493/
+permalink: /kb/194/Q194493/
 ---
 
 ## Q194493: WD97: Linefeeds or Line Breaks Become Paragraph Marks

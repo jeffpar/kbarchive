@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174470: SMS: Problem w/System Key Pass Through of the Flying Windows Key"
-permalink: kb/174/Q174470/
+permalink: /kb/174/Q174470/
 ---
 
 ## Q174470: SMS: Problem w/System Key Pass Through of the Flying Windows Key

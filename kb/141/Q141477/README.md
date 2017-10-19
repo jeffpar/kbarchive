@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141477: FIX: Exception Specification Syntax Handled Incorrectly"
-permalink: kb/141/Q141477/
+permalink: /kb/141/Q141477/
 ---
 
 ## Q141477: FIX: Exception Specification Syntax Handled Incorrectly

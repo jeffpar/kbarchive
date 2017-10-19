@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203700: Encarta 99: How to Install Additional Components"
-permalink: kb/203/Q203700/
+permalink: /kb/203/Q203700/
 ---
 
 ## Q203700: Encarta 99: How to Install Additional Components

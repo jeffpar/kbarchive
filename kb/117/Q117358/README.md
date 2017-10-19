@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117358: Err Msg: An Error Occurred Trying to Initialize Video Adapter"
-permalink: kb/117/Q117358/
+permalink: /kb/117/Q117358/
 ---
 
 ## Q117358: Err Msg: An Error Occurred Trying to Initialize Video Adapter

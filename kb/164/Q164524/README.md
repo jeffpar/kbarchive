@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164524: How to Enable the DHCP Logging Feature in Windows NT 4.0 SP 2"
-permalink: kb/164/Q164524/
+permalink: /kb/164/Q164524/
 ---
 
 ## Q164524: How to Enable the DHCP Logging Feature in Windows NT 4.0 SP 2

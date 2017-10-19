@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245714: PRB: Inserting &gt; than 250K of Data in a SQL 7 Image Field Fails"
-permalink: kb/245/Q245714/
+permalink: /kb/245/Q245714/
 ---
 
 ## Q245714: PRB: Inserting &gt; than 250K of Data in a SQL 7 Image Field Fails

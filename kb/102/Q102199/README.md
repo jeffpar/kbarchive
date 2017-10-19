@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102199: How to Protect the MS UAM on Individual Macintoshes"
-permalink: kb/102/Q102199/
+permalink: /kb/102/Q102199/
 ---
 
 ## Q102199: How to Protect the MS UAM on Individual Macintoshes

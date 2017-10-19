@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72592: SAMPLE: ToolHelp.exe Demonstrates Functionality of ToolHelp.dll"
-permalink: kb/072/Q72592/
+permalink: /kb/072/Q72592/
 ---
 
 ## Q72592: SAMPLE: ToolHelp.exe Demonstrates Functionality of ToolHelp.dll

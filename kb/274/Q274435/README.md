@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274435: Cannot Use Logon Hours with Windows 2000 Professional"
-permalink: kb/274/Q274435/
+permalink: /kb/274/Q274435/
 ---
 
 ## Q274435: Cannot Use Logon Hours with Windows 2000 Professional

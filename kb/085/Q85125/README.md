@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85125: Command-Line Switches for Windows 3.1 Setup"
-permalink: kb/085/Q85125/
+permalink: /kb/085/Q85125/
 ---
 
 ## Q85125: Command-Line Switches for Windows 3.1 Setup

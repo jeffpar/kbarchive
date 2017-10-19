@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135221: Cannot Display 256 Colors on Lexmark AR10"
-permalink: kb/135/Q135221/
+permalink: /kb/135/Q135221/
 ---
 
 ## Q135221: Cannot Display 256 Colors on Lexmark AR10

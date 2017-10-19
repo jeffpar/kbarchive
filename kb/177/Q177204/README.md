@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177204: DHCP Does Not Offer Addresses in Numerical Sequence"
-permalink: kb/177/Q177204/
+permalink: /kb/177/Q177204/
 ---
 
 ## Q177204: DHCP Does Not Offer Addresses in Numerical Sequence

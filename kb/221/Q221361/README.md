@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221361: XADM: German Exchange Server 5.5 Doc. Contains Incorrect Links"
-permalink: kb/221/Q221361/
+permalink: /kb/221/Q221361/
 ---
 
 ## Q221361: XADM: German Exchange Server 5.5 Doc. Contains Incorrect Links

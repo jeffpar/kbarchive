@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159972: WinNT 4.0 May Not Return Valid Response for SMB Search Command"
-permalink: kb/159/Q159972/
+permalink: /kb/159/Q159972/
 ---
 
 ## Q159972: WinNT 4.0 May Not Return Valid Response for SMB Search Command

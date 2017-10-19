@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103496: Diamond Viper Video Card Not Supported"
-permalink: kb/103/Q103496/
+permalink: /kb/103/Q103496/
 ---
 
 ## Q103496: Diamond Viper Video Card Not Supported

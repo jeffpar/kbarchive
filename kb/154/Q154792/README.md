@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154792: XGEN: Exchange and Schedule+ White Papers and Their Locations"
-permalink: kb/154/Q154792/
+permalink: /kb/154/Q154792/
 ---
 
 ## Q154792: XGEN: Exchange and Schedule+ White Papers and Their Locations

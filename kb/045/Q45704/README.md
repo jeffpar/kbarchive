@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45704: Using GlobalFlags() to Test for GMEM_DISCARDABLE"
-permalink: kb/045/Q45704/
+permalink: /kb/045/Q45704/
 ---
 
 ## Q45704: Using GlobalFlags() to Test for GMEM_DISCARDABLE

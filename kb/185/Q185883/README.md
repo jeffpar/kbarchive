@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185883: HOWTO: Extract an Icon from a Windows Program"
-permalink: kb/185/Q185883/
+permalink: /kb/185/Q185883/
 ---
 
 ## Q185883: HOWTO: Extract an Icon from a Windows Program

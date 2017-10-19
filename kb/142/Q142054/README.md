@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142054: Print Job/Document Resets To Zero When It Reaches 255"
-permalink: kb/142/Q142054/
+permalink: /kb/142/Q142054/
 ---
 
 ## Q142054: Print Job/Document Resets To Zero When It Reaches 255

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74211: Using Compaq CACHE.EXE with MS-DOS 5.0"
-permalink: kb/074/Q74211/
+permalink: /kb/074/Q74211/
 ---
 
 ## Q74211: Using Compaq CACHE.EXE with MS-DOS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156866: FIX: REPORT FORM Command Returns Wrong Font Size in Windows 95"
-permalink: kb/156/Q156866/
+permalink: /kb/156/Q156866/
 ---
 
 ## Q156866: FIX: REPORT FORM Command Returns Wrong Font Size in Windows 95

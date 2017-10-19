@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135972: Zero-Byte Files Left on Compressed Drive"
-permalink: kb/135/Q135972/
+permalink: /kb/135/Q135972/
 ---
 
 ## Q135972: Zero-Byte Files Left on Compressed Drive

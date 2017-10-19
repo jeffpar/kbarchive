@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154728: Close Combat: Playing Over a Network"
-permalink: kb/154/Q154728/
+permalink: /kb/154/Q154728/
 ---
 
 ## Q154728: Close Combat: Playing Over a Network

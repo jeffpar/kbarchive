@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75468: ATM Fonts and PostScript Fonts Don't Match in Windows"
-permalink: kb/075/Q75468/
+permalink: /kb/075/Q75468/
 ---
 
 ## Q75468: ATM Fonts and PostScript Fonts Don't Match in Windows

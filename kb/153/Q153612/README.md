@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153612: Close Combat Err Msg: Required .dll File Wsock32.dll Not Found"
-permalink: kb/153/Q153612/
+permalink: /kb/153/Q153612/
 ---
 
 ## Q153612: Close Combat Err Msg: Required .dll File Wsock32.dll Not Found

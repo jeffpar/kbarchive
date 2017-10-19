@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100773: PRB: No Symbolic Information for Local Variables"
-permalink: kb/100/Q100773/
+permalink: /kb/100/Q100773/
 ---
 
 ## Q100773: PRB: No Symbolic Information for Local Variables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192235: NetShow Installation on a Terminal Server"
-permalink: kb/192/Q192235/
+permalink: /kb/192/Q192235/
 ---
 
 ## Q192235: NetShow Installation on a Terminal Server

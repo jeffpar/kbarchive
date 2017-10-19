@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118688: Problems Using COM3 or COM4 on a Gateway Computer"
-permalink: kb/118/Q118688/
+permalink: /kb/118/Q118688/
 ---
 
 ## Q118688: Problems Using COM3 or COM4 on a Gateway Computer

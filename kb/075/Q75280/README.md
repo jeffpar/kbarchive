@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75280: FIX: ALIGN or EVEN Cannot follow DUP in Same Module"
-permalink: kb/075/Q75280/
+permalink: /kb/075/Q75280/
 ---
 
 ## Q75280: FIX: ALIGN or EVEN Cannot follow DUP in Same Module

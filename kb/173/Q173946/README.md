@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173946: XFOR: Disabling Support for Pull Newsfeeds"
-permalink: kb/173/Q173946/
+permalink: /kb/173/Q173946/
 ---
 
 ## Q173946: XFOR: Disabling Support for Pull Newsfeeds

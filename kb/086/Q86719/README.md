@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86719: PRB: Special Characters Missing from Compiled Help File"
-permalink: kb/086/Q86719/
+permalink: /kb/086/Q86719/
 ---
 
 ## Q86719: PRB: Special Characters Missing from Compiled Help File

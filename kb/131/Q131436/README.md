@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131436: Mac Encarta 1995: Back List Text is Hidden"
-permalink: kb/131/Q131436/
+permalink: /kb/131/Q131436/
 ---
 
 ## Q131436: Mac Encarta 1995: Back List Text is Hidden

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172283: Blank Page Is Printed Between Each Print Job"
-permalink: kb/172/Q172283/
+permalink: /kb/172/Q172283/
 ---
 
 ## Q172283: Blank Page Is Printed Between Each Print Job

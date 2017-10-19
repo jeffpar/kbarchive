@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84706: Troubleshooting SMARTDrive Version 4.0"
-permalink: kb/084/Q84706/
+permalink: /kb/084/Q84706/
 ---
 
 ## Q84706: Troubleshooting SMARTDrive Version 4.0

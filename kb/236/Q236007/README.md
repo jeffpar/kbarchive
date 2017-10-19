@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236007: DC Demotion Causes Out-of-Process Applications to Fail"
-permalink: kb/236/Q236007/
+permalink: /kb/236/Q236007/
 ---
 
 ## Q236007: DC Demotion Causes Out-of-Process Applications to Fail

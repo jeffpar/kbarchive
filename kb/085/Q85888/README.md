@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85888: How to Display Your Personal Calendar at Windows Startup"
-permalink: kb/085/Q85888/
+permalink: /kb/085/Q85888/
 ---
 
 ## Q85888: How to Display Your Personal Calendar at Windows Startup

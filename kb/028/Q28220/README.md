@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28220: BUG: Link &quot;Fatal Error L1085: Cannot Open Temporary File&quot;"
-permalink: kb/028/Q28220/
+permalink: /kb/028/Q28220/
 ---
 
 ## Q28220: BUG: Link &quot;Fatal Error L1085: Cannot Open Temporary File&quot;

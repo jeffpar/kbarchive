@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139331: Errors when Using LPR.EXE Command to Print a Zero Byte File"
-permalink: kb/139/Q139331/
+permalink: /kb/139/Q139331/
 ---
 
 ## Q139331: Errors when Using LPR.EXE Command to Print a Zero Byte File

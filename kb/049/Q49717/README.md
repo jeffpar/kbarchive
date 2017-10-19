@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49717: Using MS-DOS Shell to Format Low-Density Disks"
-permalink: kb/049/Q49717/
+permalink: /kb/049/Q49717/
 ---
 
 ## Q49717: Using MS-DOS Shell to Format Low-Density Disks

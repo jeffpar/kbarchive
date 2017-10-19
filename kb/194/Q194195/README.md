@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194195: FIX: Setup Wizard Cannot Differentiate Files With Same Name"
-permalink: kb/194/Q194195/
+permalink: /kb/194/Q194195/
 ---
 
 ## Q194195: FIX: Setup Wizard Cannot Differentiate Files With Same Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100372: Detecting Windows NT Serial Ports"
-permalink: kb/100/Q100372/
+permalink: /kb/100/Q100372/
 ---
 
 ## Q100372: Detecting Windows NT Serial Ports

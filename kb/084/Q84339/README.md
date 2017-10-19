@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84339: LANtastic Notes on Version 4.x and Windows 3.1"
-permalink: kb/084/Q84339/
+permalink: /kb/084/Q84339/
 ---
 
 ## Q84339: LANtastic Notes on Version 4.x and Windows 3.1

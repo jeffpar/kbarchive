@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148754: File Names Seem to Be Limited to Less Than 255 Characters"
-permalink: kb/148/Q148754/
+permalink: /kb/148/Q148754/
 ---
 
 ## Q148754: File Names Seem to Be Limited to Less Than 255 Characters

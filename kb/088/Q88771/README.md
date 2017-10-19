@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88771: Using the IBM 4019 with Windows"
-permalink: kb/088/Q88771/
+permalink: /kb/088/Q88771/
 ---
 
 ## Q88771: Using the IBM 4019 with Windows

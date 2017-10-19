@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170892: WD97: Document Must Be Open to Change Properties by Macro"
-permalink: kb/170/Q170892/
+permalink: /kb/170/Q170892/
 ---
 
 ## Q170892: WD97: Document Must Be Open to Change Properties by Macro

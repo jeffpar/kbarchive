@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162389: WD97: &quot;This file could not be found&quot; Error with Open Method"
-permalink: kb/162/Q162389/
+permalink: /kb/162/Q162389/
 ---
 
 ## Q162389: WD97: &quot;This file could not be found&quot; Error with Open Method

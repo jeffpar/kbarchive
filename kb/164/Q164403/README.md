@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164403: Event 10 After Installing IntelliPoint 2.0 in Windows NT 4.0"
-permalink: kb/164/Q164403/
+permalink: /kb/164/Q164403/
 ---
 
 ## Q164403: Event 10 After Installing IntelliPoint 2.0 in Windows NT 4.0

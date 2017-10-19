@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88192: INFO: WM_PAINTICON Message Removed from Windows SDK Docs"
-permalink: kb/088/Q88192/
+permalink: /kb/088/Q88192/
 ---
 
 ## Q88192: INFO: WM_PAINTICON Message Removed from Windows SDK Docs

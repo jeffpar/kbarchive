@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107126: Using SYS.COM After Stacker Version 3.1 Is Installed"
-permalink: kb/107/Q107126/
+permalink: /kb/107/Q107126/
 ---
 
 ## Q107126: Using SYS.COM After Stacker Version 3.1 Is Installed

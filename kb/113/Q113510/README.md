@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113510: BUG: SQLFreeStmt After SQLExecute/SQLExecDirect May Cause GPF"
-permalink: kb/113/Q113510/
+permalink: /kb/113/Q113510/
 ---
 
 ## Q113510: BUG: SQLFreeStmt After SQLExecute/SQLExecDirect May Cause GPF

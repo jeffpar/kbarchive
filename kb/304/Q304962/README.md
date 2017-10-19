@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304962: TrainSim: How To Optimize Performance"
-permalink: kb/304/Q304962/
+permalink: /kb/304/Q304962/
 ---
 
 ## Q304962: TrainSim: How To Optimize Performance

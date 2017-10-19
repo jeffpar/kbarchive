@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195031: HOWTO: Adding Splitter Bars Support to Active Document Server"
-permalink: kb/195/Q195031/
+permalink: /kb/195/Q195031/
 ---
 
 ## Q195031: HOWTO: Adding Splitter Bars Support to Active Document Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135762: Installing the Cisco Systems AccessPro PC Card With Windows NT"
-permalink: kb/135/Q135762/
+permalink: /kb/135/Q135762/
 ---
 
 ## Q135762: Installing the Cisco Systems AccessPro PC Card With Windows NT

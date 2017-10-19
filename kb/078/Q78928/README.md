@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78928: Beethoven: Manual Installation Instructions"
-permalink: kb/078/Q78928/
+permalink: /kb/078/Q78928/
 ---
 
 ## Q78928: Beethoven: Manual Installation Instructions

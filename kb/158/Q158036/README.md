@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158036: MSN Kids: Where Is MSN Kids?"
-permalink: kb/158/Q158036/
+permalink: /kb/158/Q158036/
 ---
 
 ## Q158036: MSN Kids: Where Is MSN Kids?

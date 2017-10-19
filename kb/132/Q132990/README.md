@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132990: Estimated Compression Ratio Does Not Match Drive Properties"
-permalink: kb/132/Q132990/
+permalink: /kb/132/Q132990/
 ---
 
 ## Q132990: Estimated Compression Ratio Does Not Match Drive Properties

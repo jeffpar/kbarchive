@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183417: WD97: Cannot Select Named Range from Excel During Mail Merge"
-permalink: kb/183/Q183417/
+permalink: /kb/183/Q183417/
 ---
 
 ## Q183417: WD97: Cannot Select Named Range from Excel During Mail Merge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128367: PC Win SPlus: Err Msg: File Error: Cannot Find XXXX.DRV"
-permalink: kb/128/Q128367/
+permalink: /kb/128/Q128367/
 ---
 
 ## Q128367: PC Win SPlus: Err Msg: File Error: Cannot Find XXXX.DRV

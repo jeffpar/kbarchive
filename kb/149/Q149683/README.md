@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149683: PCM Appears Blank on Startup When &quot;Offer After&quot; Not Expired"
-permalink: kb/149/Q149683/
+permalink: /kb/149/Q149683/
 ---
 
 ## Q149683: PCM Appears Blank on Startup When &quot;Offer After&quot; Not Expired

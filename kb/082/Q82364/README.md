@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82364: Long Pause During File Open with CD-ROM Drive"
-permalink: kb/082/Q82364/
+permalink: /kb/082/Q82364/
 ---
 
 ## Q82364: Long Pause During File Open with CD-ROM Drive

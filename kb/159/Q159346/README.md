@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159346: Msbatch.inf Parameters: Inserting IPX/SPX Options"
-permalink: kb/159/Q159346/
+permalink: /kb/159/Q159346/
 ---
 
 ## Q159346: Msbatch.inf Parameters: Inserting IPX/SPX Options

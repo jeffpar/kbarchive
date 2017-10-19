@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102800: Cannot Access IBM LAN Server NET.ACC from LAN Man System"
-permalink: kb/102/Q102800/
+permalink: /kb/102/Q102800/
 ---
 
 ## Q102800: Cannot Access IBM LAN Server NET.ACC from LAN Man System

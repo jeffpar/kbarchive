@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231622: Long Names of Local or Global Groups Truncated"
-permalink: kb/231/Q231622/
+permalink: /kb/231/Q231622/
 ---
 
 ## Q231622: Long Names of Local or Global Groups Truncated

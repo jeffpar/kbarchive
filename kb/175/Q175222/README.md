@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175222: HOWTO: Tell If UserControl is in Design-Time or Run-Time"
-permalink: kb/175/Q175222/
+permalink: /kb/175/Q175222/
 ---
 
 ## Q175222: HOWTO: Tell If UserControl is in Design-Time or Run-Time

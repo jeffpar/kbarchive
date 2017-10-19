@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114249: PRB: NOEDIT Clause of BROWSE Command Ignored in Program Mode"
-permalink: kb/114/Q114249/
+permalink: /kb/114/Q114249/
 ---
 
 ## Q114249: PRB: NOEDIT Clause of BROWSE Command Ignored in Program Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87869: Bookshelf: Cannot Access Estonia/Latvia/Lithuania with Locate"
-permalink: kb/087/Q87869/
+permalink: /kb/087/Q87869/
 ---
 
 ## Q87869: Bookshelf: Cannot Access Estonia/Latvia/Lithuania with Locate

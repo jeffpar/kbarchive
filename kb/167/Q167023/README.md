@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167023: Windows NT Workstation Sends SMB Request Continuously"
-permalink: kb/167/Q167023/
+permalink: /kb/167/Q167023/
 ---
 
 ## Q167023: Windows NT Workstation Sends SMB Request Continuously

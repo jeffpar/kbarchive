@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77983: Using MS-DOS 5.x/6.x with Win 3.0 Enhanced Without WINA20.386"
-permalink: kb/077/Q77983/
+permalink: /kb/077/Q77983/
 ---
 
 ## Q77983: Using MS-DOS 5.x/6.x with Win 3.0 Enhanced Without WINA20.386

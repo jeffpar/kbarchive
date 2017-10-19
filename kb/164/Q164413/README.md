@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164413: Problems Changing Appearance Scheme"
-permalink: kb/164/Q164413/
+permalink: /kb/164/Q164413/
 ---
 
 ## Q164413: Problems Changing Appearance Scheme

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133193: Black Screen Running Magic School Bus - Solar System Demo."
-permalink: kb/133/Q133193/
+permalink: /kb/133/Q133193/
 ---
 
 ## Q133193: Black Screen Running Magic School Bus - Solar System Demo.

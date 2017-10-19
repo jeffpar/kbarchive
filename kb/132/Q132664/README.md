@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132664: Changing Association in File Types Dialog Box May Not Work"
-permalink: kb/132/Q132664/
+permalink: /kb/132/Q132664/
 ---
 
 ## Q132664: Changing Association in File Types Dialog Box May Not Work

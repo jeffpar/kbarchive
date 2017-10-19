@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142169: FIX: TABLEREVERT() Does Not Release Header Lock"
-permalink: kb/142/Q142169/
+permalink: /kb/142/Q142169/
 ---
 
 ## Q142169: FIX: TABLEREVERT() Does Not Release Header Lock

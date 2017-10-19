@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226838: SMS: Online Client Does Not Release Original License"
-permalink: kb/226/Q226838/
+permalink: /kb/226/Q226838/
 ---
 
 ## Q226838: SMS: Online Client Does Not Release Original License

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157868: WD97: Custom Style Based on List Style Drops Numbering"
-permalink: kb/157/Q157868/
+permalink: /kb/157/Q157868/
 ---
 
 ## Q157868: WD97: Custom Style Based on List Style Drops Numbering

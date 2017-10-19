@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101742: How to Open dBASE Table with Nonstandard File Extension"
-permalink: kb/101/Q101742/
+permalink: /kb/101/Q101742/
 ---
 
 ## Q101742: How to Open dBASE Table with Nonstandard File Extension

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101374: ADT/ODE: How to Create a Custom Startup &quot;Splash&quot; Screen"
-permalink: kb/101/Q101374/
+permalink: /kb/101/Q101374/
 ---
 
 ## Q101374: ADT/ODE: How to Create a Custom Startup &quot;Splash&quot; Screen

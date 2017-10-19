@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105250: Cannot use UNC Pathname for Working Directory in Windows NT"
-permalink: kb/105/Q105250/
+permalink: /kb/105/Q105250/
 ---
 
 ## Q105250: Cannot use UNC Pathname for Working Directory in Windows NT

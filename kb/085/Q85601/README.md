@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85601: FAX: How to Control the Polling for Sending Mail Via Fax"
-permalink: kb/085/Q85601/
+permalink: /kb/085/Q85601/
 ---
 
 ## Q85601: FAX: How to Control the Polling for Sending Mail Via Fax

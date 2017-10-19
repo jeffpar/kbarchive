@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163565: XCLN: Fax Recipients' Information does not Appear on Cover Sheet"
-permalink: kb/163/Q163565/
+permalink: /kb/163/Q163565/
 ---
 
 ## Q163565: XCLN: Fax Recipients' Information does not Appear on Cover Sheet

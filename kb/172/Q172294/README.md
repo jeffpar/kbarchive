@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172294: Win3270 Applet Fails to Connect If Path Longer Than 64 Bytes"
-permalink: kb/172/Q172294/
+permalink: /kb/172/Q172294/
 ---
 
 ## Q172294: Win3270 Applet Fails to Connect If Path Longer Than 64 Bytes

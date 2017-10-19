@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129903: PRB: Setting Form to Nothing Does Not Unload Form"
-permalink: kb/129/Q129903/
+permalink: /kb/129/Q129903/
 ---
 
 ## Q129903: PRB: Setting Form to Nothing Does Not Unload Form

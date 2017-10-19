@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225507: SMS: Windows Management Service Keeps High Processor Utilization"
-permalink: kb/225/Q225507/
+permalink: /kb/225/Q225507/
 ---
 
 ## Q225507: SMS: Windows Management Service Keeps High Processor Utilization

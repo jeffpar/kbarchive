@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246276: XADM: Directory Service Not Responding on Two Exchange Servers"
-permalink: kb/246/Q246276/
+permalink: /kb/246/Q246276/
 ---
 
 ## Q246276: XADM: Directory Service Not Responding on Two Exchange Servers

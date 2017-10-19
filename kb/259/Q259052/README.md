@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259052: Availability of Encarta Online &amp; Description of Support Options"
-permalink: kb/259/Q259052/
+permalink: /kb/259/Q259052/
 ---
 
 ## Q259052: Availability of Encarta Online &amp; Description of Support Options

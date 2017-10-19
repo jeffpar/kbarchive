@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168737: XADM: Dr. Watson Error Occurs When Extracting NT Account List"
-permalink: kb/168/Q168737/
+permalink: /kb/168/Q168737/
 ---
 
 ## Q168737: XADM: Dr. Watson Error Occurs When Extracting NT Account List

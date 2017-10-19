@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105166: PC Ext: MinKDiskFull &amp; MinKDiskNotFull Not Written to Log File"
-permalink: kb/105/Q105166/
+permalink: /kb/105/Q105166/
 ---
 
 ## Q105166: PC Ext: MinKDiskFull &amp; MinKDiskNotFull Not Written to Log File

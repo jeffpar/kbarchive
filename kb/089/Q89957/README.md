@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89957: Sound Finder Ignores Working Directory Setting"
-permalink: kb/089/Q89957/
+permalink: /kb/089/Q89957/
 ---
 
 ## Q89957: Sound Finder Ignores Working Directory Setting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73723: HDBKUP&#92;HDRSTORE Definition and Usage"
-permalink: kb/073/Q73723/
+permalink: /kb/073/Q73723/
 ---
 
 ## Q73723: HDBKUP&#92;HDRSTORE Definition and Usage

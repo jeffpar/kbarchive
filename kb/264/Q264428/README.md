@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264428: XFOR: Finding Instructions for Exchange PROFS Connector Setup"
-permalink: kb/264/Q264428/
+permalink: /kb/264/Q264428/
 ---
 
 ## Q264428: XFOR: Finding Instructions for Exchange PROFS Connector Setup

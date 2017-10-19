@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141135: XCON: MSExchangeMSMI NDR Error EventID 2568"
-permalink: kb/141/Q141135/
+permalink: /kb/141/Q141135/
 ---
 
 ## Q141135: XCON: MSExchangeMSMI NDR Error EventID 2568

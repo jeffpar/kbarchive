@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140338: XADM: DS Crashes With Dr. Watson In Details.c"
-permalink: kb/140/Q140338/
+permalink: /kb/140/Q140338/
 ---
 
 ## Q140338: XADM: DS Crashes With Dr. Watson In Details.c

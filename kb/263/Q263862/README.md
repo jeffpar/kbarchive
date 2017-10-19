@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263862: How to Start Personal Web Manager in Windows 2000 Professional"
-permalink: kb/263/Q263862/
+permalink: /kb/263/Q263862/
 ---
 
 ## Q263862: How to Start Personal Web Manager in Windows 2000 Professional

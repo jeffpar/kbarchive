@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161802: Stop 0x0000000A During Create File SMB"
-permalink: kb/161/Q161802/
+permalink: /kb/161/Q161802/
 ---
 
 ## Q161802: Stop 0x0000000A During Create File SMB

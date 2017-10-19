@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189498: INFO: Using DDE in VB to Communicate with Other Windows Programs"
-permalink: kb/189/Q189498/
+permalink: /kb/189/Q189498/
 ---
 
 ## Q189498: INFO: Using DDE in VB to Communicate with Other Windows Programs

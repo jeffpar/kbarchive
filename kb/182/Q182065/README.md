@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182065: SNA Client Traps When MMC Snap-in Is Chosen During Installation"
-permalink: kb/182/Q182065/
+permalink: /kb/182/Q182065/
 ---
 
 ## Q182065: SNA Client Traps When MMC Snap-in Is Chosen During Installation

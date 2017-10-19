@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157714: INFO: How SourceSafe Stores Log Files"
-permalink: kb/157/Q157714/
+permalink: /kb/157/Q157714/
 ---
 
 ## Q157714: INFO: How SourceSafe Stores Log Files

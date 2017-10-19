@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97188: DRAGBMP Demonstrates Dragging Bitmaps on the Screen"
-permalink: kb/097/Q97188/
+permalink: /kb/097/Q97188/
 ---
 
 ## Q97188: DRAGBMP Demonstrates Dragging Bitmaps on the Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245712: XCLN: How to Apply a Hotfix to Outlook 2000"
-permalink: kb/245/Q245712/
+permalink: /kb/245/Q245712/
 ---
 
 ## Q245712: XCLN: How to Apply a Hotfix to Outlook 2000

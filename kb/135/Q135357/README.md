@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135357: PRB: Sync Between Visual SourceSafe and VB Is Delayed"
-permalink: kb/135/Q135357/
+permalink: /kb/135/Q135357/
 ---
 
 ## Q135357: PRB: Sync Between Visual SourceSafe and VB Is Delayed

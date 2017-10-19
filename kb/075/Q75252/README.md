@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75252: Tips on Installing WDEB386"
-permalink: kb/075/Q75252/
+permalink: /kb/075/Q75252/
 ---
 
 ## Q75252: Tips on Installing WDEB386

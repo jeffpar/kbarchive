@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183653: Client Authentication Fails Connecting to Netscape Server"
-permalink: kb/183/Q183653/
+permalink: /kb/183/Q183653/
 ---
 
 ## Q183653: Client Authentication Fails Connecting to Netscape Server

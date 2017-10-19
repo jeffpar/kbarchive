@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159468: FIX: Setup Error 915 Object 1 with VFP 5.0 Setup Wizard"
-permalink: kb/159/Q159468/
+permalink: /kb/159/Q159468/
 ---
 
 ## Q159468: FIX: Setup Error 915 Object 1 with VFP 5.0 Setup Wizard

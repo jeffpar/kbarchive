@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317179: Cannot Set MSN Explorer as Default E-mail Client"
-permalink: kb/317/Q317179/
+permalink: /kb/317/Q317179/
 ---
 
 ## Q317179: Cannot Set MSN Explorer as Default E-mail Client

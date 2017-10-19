@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245653: Errors Opening Messages with Attachments on Terminal Server"
-permalink: kb/245/Q245653/
+permalink: /kb/245/Q245653/
 ---
 
 ## Q245653: Errors Opening Messages with Attachments on Terminal Server

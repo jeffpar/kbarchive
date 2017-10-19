@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156970: XADM: Improving Performance with Public Folder Views"
-permalink: kb/156/Q156970/
+permalink: /kb/156/Q156970/
 ---
 
 ## Q156970: XADM: Improving Performance with Public Folder Views

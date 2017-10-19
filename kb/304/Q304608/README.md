@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304608: Interrupted Forced Upgrade Causes Subsequent Upgrade Attempt To"
-permalink: kb/304/Q304608/
+permalink: /kb/304/Q304608/
 ---
 
 ## Q304608: Interrupted Forced Upgrade Causes Subsequent Upgrade Attempt To

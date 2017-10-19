@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242286: BETA-HOWTO: Update an Existing Windows 2000 Migration DLL"
-permalink: kb/242/Q242286/
+permalink: /kb/242/Q242286/
 ---
 
 ## Q242286: BETA-HOWTO: Update an Existing Windows 2000 Migration DLL

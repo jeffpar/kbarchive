@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189781: Black Screen When Starting Microsoft Dinosaurs for Macintosh"
-permalink: kb/189/Q189781/
+permalink: /kb/189/Q189781/
 ---
 
 ## Q189781: Black Screen When Starting Microsoft Dinosaurs for Macintosh

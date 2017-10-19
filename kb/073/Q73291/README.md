@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73291: Gibson Research Spinrite II and MS-DOS 5.x/6.x"
-permalink: kb/073/Q73291/
+permalink: /kb/073/Q73291/
 ---
 
 ## Q73291: Gibson Research Spinrite II and MS-DOS 5.x/6.x

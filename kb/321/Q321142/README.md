@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321142: HOW TO: Hide the Metabase to Increase IIS Security"
-permalink: kb/321/Q321142/
+permalink: /kb/321/Q321142/
 ---
 
 ## Q321142: HOW TO: Hide the Metabase to Increase IIS Security

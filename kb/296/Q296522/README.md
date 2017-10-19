@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296522: XADM: Can't Move Exch 5.5 Mailboxes w/ AD Users &amp; Computers"
-permalink: kb/296/Q296522/
+permalink: /kb/296/Q296522/
 ---
 
 ## Q296522: XADM: Can't Move Exch 5.5 Mailboxes w/ AD Users &amp; Computers

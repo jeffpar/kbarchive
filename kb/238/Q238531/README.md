@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238531: SMSINST: Cannot Extract More Than 1,024 Files"
-permalink: kb/238/Q238531/
+permalink: /kb/238/Q238531/
 ---
 
 ## Q238531: SMSINST: Cannot Extract More Than 1,024 Files

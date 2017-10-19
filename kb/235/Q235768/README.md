@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235768: SMS: Using /Upgrade Switch with Command Line Setup Causes Error"
-permalink: kb/235/Q235768/
+permalink: /kb/235/Q235768/
 ---
 
 ## Q235768: SMS: Using /Upgrade Switch with Command Line Setup Causes Error

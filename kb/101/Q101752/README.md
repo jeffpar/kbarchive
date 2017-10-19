@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101752: PC Ext: Dispatch Cannot Spawn Batch File Without COMMAND.COM"
-permalink: kb/101/Q101752/
+permalink: /kb/101/Q101752/
 ---
 
 ## Q101752: PC Ext: Dispatch Cannot Spawn Batch File Without COMMAND.COM

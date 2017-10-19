@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235703: NetWare Migration Tool May Not Migrate Long File Name Permission"
-permalink: kb/235/Q235703/
+permalink: /kb/235/Q235703/
 ---
 
 ## Q235703: NetWare Migration Tool May Not Migrate Long File Name Permission

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152160: Disk Administrator Cannot Always Save Disk Configuration"
-permalink: kb/152/Q152160/
+permalink: /kb/152/Q152160/
 ---
 
 ## Q152160: Disk Administrator Cannot Always Save Disk Configuration

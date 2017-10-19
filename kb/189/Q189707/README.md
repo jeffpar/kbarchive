@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189707: PRB: &quot;Help not available&quot; Viewing TypeLib in Class Browser"
-permalink: kb/189/Q189707/
+permalink: /kb/189/Q189707/
 ---
 
 ## Q189707: PRB: &quot;Help not available&quot; Viewing TypeLib in Class Browser

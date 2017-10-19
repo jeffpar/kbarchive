@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119350: DIR/CHKDSK Behavior w/ More Than 32,768 Files in Subdirectory"
-permalink: kb/119/Q119350/
+permalink: /kb/119/Q119350/
 ---
 
 ## Q119350: DIR/CHKDSK Behavior w/ More Than 32,768 Files in Subdirectory

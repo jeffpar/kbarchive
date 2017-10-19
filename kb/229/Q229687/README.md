@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229687: Err Msg: &quot;Workstation Is Locked&quot; with Invalid Screen Saver"
-permalink: kb/229/Q229687/
+permalink: /kb/229/Q229687/
 ---
 
 ## Q229687: Err Msg: &quot;Workstation Is Locked&quot; with Invalid Screen Saver

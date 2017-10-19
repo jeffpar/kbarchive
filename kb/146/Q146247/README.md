@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146247: WD97: Background Proof Doesn't Function in Unprotected Section"
-permalink: kb/146/Q146247/
+permalink: /kb/146/Q146247/
 ---
 
 ## Q146247: WD97: Background Proof Doesn't Function in Unprotected Section

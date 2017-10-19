@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139922: Encarta 1995: Word Processor Starts Only Once"
-permalink: kb/139/Q139922/
+permalink: /kb/139/Q139922/
 ---
 
 ## Q139922: Encarta 1995: Word Processor Starts Only Once

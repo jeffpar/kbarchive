@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130095: Repeated Beeps During Windows 95 Start with ReelMagic Card"
-permalink: kb/130/Q130095/
+permalink: /kb/130/Q130095/
 ---
 
 ## Q130095: Repeated Beeps During Windows 95 Start with ReelMagic Card

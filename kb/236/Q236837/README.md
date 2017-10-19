@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236837: PRB: SQL/DTS Wizard &quot;Unrecognized Phrase/Keyword&quot; w/FoxPro DB"
-permalink: kb/236/Q236837/
+permalink: /kb/236/Q236837/
 ---
 
 ## Q236837: PRB: SQL/DTS Wizard &quot;Unrecognized Phrase/Keyword&quot; w/FoxPro DB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87622: PC WSPlus: Running Schedule+ for Windows 1.0 from the Network"
-permalink: kb/087/Q87622/
+permalink: /kb/087/Q87622/
 ---
 
 ## Q87622: PC WSPlus: Running Schedule+ for Windows 1.0 from the Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306876: APPC/CPI-C App. Doesn't Use APPC LU With Auto-activated Sessions"
-permalink: kb/306/Q306876/
+permalink: /kb/306/Q306876/
 ---
 
 ## Q306876: APPC/CPI-C App. Doesn't Use APPC LU With Auto-activated Sessions

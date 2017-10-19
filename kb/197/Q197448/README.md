@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197448: FIX: CRecordset &quot;String Cannot Be Converted to Number&quot; Error"
-permalink: kb/197/Q197448/
+permalink: /kb/197/Q197448/
 ---
 
 ## Q197448: FIX: CRecordset &quot;String Cannot Be Converted to Number&quot; Error

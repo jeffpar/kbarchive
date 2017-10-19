@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169540: Error Message: Too Many Outstanding Commands"
-permalink: kb/169/Q169540/
+permalink: /kb/169/Q169540/
 ---
 
 ## Q169540: Error Message: Too Many Outstanding Commands

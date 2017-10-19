@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160449: SNA Client May Incorrectly Connect to Distributed Link Server"
-permalink: kb/160/Q160449/
+permalink: /kb/160/Q160449/
 ---
 
 ## Q160449: SNA Client May Incorrectly Connect to Distributed Link Server

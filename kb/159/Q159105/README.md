@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159105: Cannot Open Truncated File Names from Compact Discs"
-permalink: kb/159/Q159105/
+permalink: /kb/159/Q159105/
 ---
 
 ## Q159105: Cannot Open Truncated File Names from Compact Discs

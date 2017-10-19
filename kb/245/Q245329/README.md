@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245329: Convlog.exe Converts Year 2000 Dates to Year 2028"
-permalink: kb/245/Q245329/
+permalink: /kb/245/Q245329/
 ---
 
 ## Q245329: Convlog.exe Converts Year 2000 Dates to Year 2028

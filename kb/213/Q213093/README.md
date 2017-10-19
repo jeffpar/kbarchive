@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213093: LastLogonUserName Reports User Name Different than NetWare Name"
-permalink: kb/213/Q213093/
+permalink: /kb/213/Q213093/
 ---
 
 ## Q213093: LastLogonUserName Reports User Name Different than NetWare Name

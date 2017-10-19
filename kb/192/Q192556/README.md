@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192556: Side Effect of StickyKeys on Client Hotkeys"
-permalink: kb/192/Q192556/
+permalink: /kb/192/Q192556/
 ---
 
 ## Q192556: Side Effect of StickyKeys on Client Hotkeys

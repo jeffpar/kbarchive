@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129837: Nested OLE Objects Are Destroyed When Parents Are Destroyed"
-permalink: kb/129/Q129837/
+permalink: /kb/129/Q129837/
 ---
 
 ## Q129837: Nested OLE Objects Are Destroyed When Parents Are Destroyed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141307: Cannot See All Files on LAN Manager for UNIX Server"
-permalink: kb/141/Q141307/
+permalink: /kb/141/Q141307/
 ---
 
 ## Q141307: Cannot See All Files on LAN Manager for UNIX Server

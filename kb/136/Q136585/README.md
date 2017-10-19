@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136585: PRB: Import Wizard Doesn't Automatically Browse Imported Table"
-permalink: kb/136/Q136585/
+permalink: /kb/136/Q136585/
 ---
 
 ## Q136585: PRB: Import Wizard Doesn't Automatically Browse Imported Table

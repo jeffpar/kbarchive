@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139279: Using Windows NT To Access Pathworks For VMS (DOS) 4.x Server"
-permalink: kb/139/Q139279/
+permalink: /kb/139/Q139279/
 ---
 
 ## Q139279: Using Windows NT To Access Pathworks For VMS (DOS) 4.x Server

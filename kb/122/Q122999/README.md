@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122999: PC WSPlus: Err Msg: Schedule+ Is Not Available for Booking..."
-permalink: kb/122/Q122999/
+permalink: /kb/122/Q122999/
 ---
 
 ## Q122999: PC WSPlus: Err Msg: Schedule+ Is Not Available for Booking...

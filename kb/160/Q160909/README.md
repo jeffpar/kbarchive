@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160909: FIX: Binder95 Does Not Show an MFC DocObject Server Icon"
-permalink: kb/160/Q160909/
+permalink: /kb/160/Q160909/
 ---
 
 ## Q160909: FIX: Binder95 Does Not Show an MFC DocObject Server Icon

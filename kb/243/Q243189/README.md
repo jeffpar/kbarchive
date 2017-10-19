@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243189: SMS: %SMS_LOCAL_DIR%&#92;MS&#92;CORE&#92;BIN Added to Path Multiple Times"
-permalink: kb/243/Q243189/
+permalink: /kb/243/Q243189/
 ---
 
 ## Q243189: SMS: %SMS_LOCAL_DIR%&#92;MS&#92;CORE&#92;BIN Added to Path Multiple Times

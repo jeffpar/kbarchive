@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99507: PIF Hot Key Causes Errors or Help to Appear in Mail/Schedule+"
-permalink: kb/099/Q99507/
+permalink: /kb/099/Q99507/
 ---
 
 ## Q99507: PIF Hot Key Causes Errors or Help to Appear in Mail/Schedule+

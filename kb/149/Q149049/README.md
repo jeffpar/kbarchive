@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149049: PRB: Compiled In-Process Server Used Before IDE Server"
-permalink: kb/149/Q149049/
+permalink: /kb/149/Q149049/
 ---
 
 ## Q149049: PRB: Compiled In-Process Server Used Before IDE Server

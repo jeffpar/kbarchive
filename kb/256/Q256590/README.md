@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256590: XFOR: Configuring Port Assignment for Internet Mail Service"
-permalink: kb/256/Q256590/
+permalink: /kb/256/Q256590/
 ---
 
 ## Q256590: XFOR: Configuring Port Assignment for Internet Mail Service

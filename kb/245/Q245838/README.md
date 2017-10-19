@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245838: XADM: How to Stop a Server Monitor from Restarting a Server"
-permalink: kb/245/Q245838/
+permalink: /kb/245/Q245838/
 ---
 
 ## Q245838: XADM: How to Stop a Server Monitor from Restarting a Server

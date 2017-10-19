@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181277: AtlSink Uses ATL to Create a Dispinterface Sink"
-permalink: kb/181/Q181277/
+permalink: /kb/181/Q181277/
 ---
 
 ## Q181277: AtlSink Uses ATL to Create a Dispinterface Sink

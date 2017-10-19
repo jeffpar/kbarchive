@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65176: Mouse Problems on Packard Bell Legend and Victory Computers"
-permalink: kb/065/Q65176/
+permalink: /kb/065/Q65176/
 ---
 
 ## Q65176: Mouse Problems on Packard Bell Legend and Victory Computers

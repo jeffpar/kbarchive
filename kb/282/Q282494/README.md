@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282494: SMS: Courier Sender Does Not Work When Sent to Grandchild Site"
-permalink: kb/282/Q282494/
+permalink: /kb/282/Q282494/
 ---
 
 ## Q282494: SMS: Courier Sender Does Not Work When Sent to Grandchild Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300626: FIX: Unable to Specify Folder Path for Moderated Newsgroups"
-permalink: kb/300/Q300626/
+permalink: /kb/300/Q300626/
 ---
 
 ## Q300626: FIX: Unable to Specify Folder Path for Moderated Newsgroups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227142: XFOR: cc:Mail Connector May not Deliver Messages w/Attachments"
-permalink: kb/227/Q227142/
+permalink: /kb/227/Q227142/
 ---
 
 ## Q227142: XFOR: cc:Mail Connector May not Deliver Messages w/Attachments

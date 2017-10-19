@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193573: HOWTO: Determine the Version of a DLL"
-permalink: kb/193/Q193573/
+permalink: /kb/193/Q193573/
 ---
 
 ## Q193573: HOWTO: Determine the Version of a DLL

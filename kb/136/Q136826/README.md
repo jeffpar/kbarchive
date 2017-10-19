@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136826: FIX: Resuming from a Suspended Form Causes a GP Fault"
-permalink: kb/136/Q136826/
+permalink: /kb/136/Q136826/
 ---
 
 ## Q136826: FIX: Resuming from a Suspended Form Causes a GP Fault

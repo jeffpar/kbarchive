@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190275: XFOR: MSExchangeCCMC General Event ID: 65"
-permalink: kb/190/Q190275/
+permalink: /kb/190/Q190275/
 ---
 
 ## Q190275: XFOR: MSExchangeCCMC General Event ID: 65

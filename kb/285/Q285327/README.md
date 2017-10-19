@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285327: Games: W95.Hybris Virus Alert"
-permalink: kb/285/Q285327/
+permalink: /kb/285/Q285327/
 ---
 
 ## Q285327: Games: W95.Hybris Virus Alert

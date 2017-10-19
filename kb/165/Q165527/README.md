@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165527: WD97: Outline Numbering Incorrect After Saving to HTML"
-permalink: kb/165/Q165527/
+permalink: /kb/165/Q165527/
 ---
 
 ## Q165527: WD97: Outline Numbering Incorrect After Saving to HTML

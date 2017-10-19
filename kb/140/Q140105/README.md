@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140105: PRB: Assertion While Switching Property Pages in OLE Control"
-permalink: kb/140/Q140105/
+permalink: /kb/140/Q140105/
 ---
 
 ## Q140105: PRB: Assertion While Switching Property Pages in OLE Control

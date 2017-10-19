@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100191: FIX: VB Pro Setup Fails to Correctly Associate .HLP Files"
-permalink: kb/100/Q100191/
+permalink: /kb/100/Q100191/
 ---
 
 ## Q100191: FIX: VB Pro Setup Fails to Correctly Associate .HLP Files

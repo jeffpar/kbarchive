@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254414: MapPoint 2001: Printed Map Is Truncated on Right Side"
-permalink: kb/254/Q254414/
+permalink: /kb/254/Q254414/
 ---
 
 ## Q254414: MapPoint 2001: Printed Map Is Truncated on Right Side

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165545: Odbc.inf File in ODBC Folder Prevents Use of Drvstp32.exe"
-permalink: kb/165/Q165545/
+permalink: /kb/165/Q165545/
 ---
 
 ## Q165545: Odbc.inf File in ODBC Folder Prevents Use of Drvstp32.exe

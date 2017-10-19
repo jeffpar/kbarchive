@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117348: List of Major Sound Card Manufacturers (M)"
-permalink: kb/117/Q117348/
+permalink: /kb/117/Q117348/
 ---
 
 ## Q117348: List of Major Sound Card Manufacturers (M)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103747: Err Msg: &#92;&#92;&lt;Server&gt;&#92;&lt;Share&gt; Is an Invalid Port Name"
-permalink: kb/103/Q103747/
+permalink: /kb/103/Q103747/
 ---
 
 ## Q103747: Err Msg: &#92;&#92;&lt;Server&gt;&#92;&lt;Share&gt; Is an Invalid Port Name

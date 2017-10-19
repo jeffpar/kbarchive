@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238524: Using Cache Array Routing Protocol with WLBS"
-permalink: kb/238/Q238524/
+permalink: /kb/238/Q238524/
 ---
 
 ## Q238524: Using Cache Array Routing Protocol with WLBS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77287: GlbEdit.exe Raises Text Size Limit for Edit Controls"
-permalink: kb/077/Q77287/
+permalink: /kb/077/Q77287/
 ---
 
 ## Q77287: GlbEdit.exe Raises Text Size Limit for Edit Controls

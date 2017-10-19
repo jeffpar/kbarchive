@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137423: How to Reregister Services in WINS"
-permalink: kb/137/Q137423/
+permalink: /kb/137/Q137423/
 ---
 
 ## Q137423: How to Reregister Services in WINS

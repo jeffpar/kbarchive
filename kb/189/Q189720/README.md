@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189720: BUG: _SCREEN.Height/Width May Increase When BorderStyle Is Set"
-permalink: kb/189/Q189720/
+permalink: /kb/189/Q189720/
 ---
 
 ## Q189720: BUG: _SCREEN.Height/Width May Increase When BorderStyle Is Set

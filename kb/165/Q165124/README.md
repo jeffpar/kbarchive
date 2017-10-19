@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165124: Australian Time Zones End Daylight Savings Time on Wrong Date"
-permalink: kb/165/Q165124/
+permalink: /kb/165/Q165124/
 ---
 
 ## Q165124: Australian Time Zones End Daylight Savings Time on Wrong Date

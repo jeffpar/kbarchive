@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316090: BUG: Fatal Error C1001 When You Compile with Global Optimizer"
-permalink: kb/316/Q316090/
+permalink: /kb/316/Q316090/
 ---
 
 ## Q316090: BUG: Fatal Error C1001 When You Compile with Global Optimizer

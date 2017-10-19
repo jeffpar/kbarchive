@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136708: PC Cards (PCMCIA) Related Terms and Definitions"
-permalink: kb/136/Q136708/
+permalink: /kb/136/Q136708/
 ---
 
 ## Q136708: PC Cards (PCMCIA) Related Terms and Definitions

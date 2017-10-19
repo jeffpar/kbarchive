@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123728: FIX: EXTERNDEF on PROC Labels Does Not Make Them Public"
-permalink: kb/123/Q123728/
+permalink: /kb/123/Q123728/
 ---
 
 ## Q123728: FIX: EXTERNDEF on PROC Labels Does Not Make Them Public

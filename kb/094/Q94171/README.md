@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94171: WFWG: Using Lotus Notes with Novell Connectivity"
-permalink: kb/094/Q94171/
+permalink: /kb/094/Q94171/
 ---
 
 ## Q94171: WFWG: Using Lotus Notes with Novell Connectivity

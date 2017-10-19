@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67020: Fontware Installation Kit Cannot Copy Typeface Information"
-permalink: kb/067/Q67020/
+permalink: /kb/067/Q67020/
 ---
 
 ## Q67020: Fontware Installation Kit Cannot Copy Typeface Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238070: Computer May Hang if Multiple TSE Users Print Simultaneously"
-permalink: kb/238/Q238070/
+permalink: /kb/238/Q238070/
 ---
 
 ## Q238070: Computer May Hang if Multiple TSE Users Print Simultaneously

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131145: How to Add Properties/Methods to a Button in Button Group"
-permalink: kb/131/Q131145/
+permalink: /kb/131/Q131145/
 ---
 
 ## Q131145: How to Add Properties/Methods to a Button in Button Group

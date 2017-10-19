@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138797: Adjusted Free Space Reflects Slight Amount of Extra Space"
-permalink: kb/138/Q138797/
+permalink: /kb/138/Q138797/
 ---
 
 ## Q138797: Adjusted Free Space Reflects Slight Amount of Extra Space

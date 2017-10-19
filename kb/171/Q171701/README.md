@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171701: Err Msg: MSN Has Detected You Are Missing Some ActiveX Controls"
-permalink: kb/171/Q171701/
+permalink: /kb/171/Q171701/
 ---
 
 ## Q171701: Err Msg: MSN Has Detected You Are Missing Some ActiveX Controls

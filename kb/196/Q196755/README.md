@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196755: HOWTO: Determine the Location of a Crash"
-permalink: kb/196/Q196755/
+permalink: /kb/196/Q196755/
 ---
 
 ## Q196755: HOWTO: Determine the Location of a Crash

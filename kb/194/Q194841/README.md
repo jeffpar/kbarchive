@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194841: FIX: Editing the IDL File May Cause ClassView Shortcuts to Fail"
-permalink: kb/194/Q194841/
+permalink: /kb/194/Q194841/
 ---
 
 ## Q194841: FIX: Editing the IDL File May Cause ClassView Shortcuts to Fail

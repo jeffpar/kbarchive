@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317656: XADM: Memory Issues After You Update Scan Engine"
-permalink: kb/317/Q317656/
+permalink: /kb/317/Q317656/
 ---
 
 ## Q317656: XADM: Memory Issues After You Update Scan Engine

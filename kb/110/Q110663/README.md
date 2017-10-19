@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110663: INFO: Getting/Setting the Default Printer from Windows"
-permalink: kb/110/Q110663/
+permalink: /kb/110/Q110663/
 ---
 
 ## Q110663: INFO: Getting/Setting the Default Printer from Windows

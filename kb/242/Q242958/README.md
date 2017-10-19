@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242958: BETA-HOWTO: Forcing Display of Migration DLL's Incompatible Mess"
-permalink: kb/242/Q242958/
+permalink: /kb/242/Q242958/
 ---
 
 ## Q242958: BETA-HOWTO: Forcing Display of Migration DLL's Incompatible Mess

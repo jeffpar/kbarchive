@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121798: PC Win: Err Msg: You Do Not Have the Proper Access..."
-permalink: kb/121/Q121798/
+permalink: /kb/121/Q121798/
 ---
 
 ## Q121798: PC Win: Err Msg: You Do Not Have the Proper Access...

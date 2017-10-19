@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199958: XCON: Configuring the Exchange PROFS Connector Option Tab"
-permalink: kb/199/Q199958/
+permalink: /kb/199/Q199958/
 ---
 
 ## Q199958: XCON: Configuring the Exchange PROFS Connector Option Tab

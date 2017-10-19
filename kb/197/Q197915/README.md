@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197915: PRB: Report Width is Larger than the Paper Width"
-permalink: kb/197/Q197915/
+permalink: /kb/197/Q197915/
 ---
 
 ## Q197915: PRB: Report Width is Larger than the Paper Width

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161151: HOWTO: Get Windows Status Information via API Calls"
-permalink: kb/161/Q161151/
+permalink: /kb/161/Q161151/
 ---
 
 ## Q161151: HOWTO: Get Windows Status Information via API Calls

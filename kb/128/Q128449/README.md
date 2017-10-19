@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128449: Windows 95 /L1 Switch in USERTSR /L1 and WUSER /L1 Do Not Work"
-permalink: kb/128/Q128449/
+permalink: /kb/128/Q128449/
 ---
 
 ## Q128449: Windows 95 /L1 Switch in USERTSR /L1 and WUSER /L1 Do Not Work

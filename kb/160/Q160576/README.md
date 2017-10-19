@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160576: 3270 Sessions Unexpectedly Return to SSCP Screen"
-permalink: kb/160/Q160576/
+permalink: /kb/160/Q160576/
 ---
 
 ## Q160576: 3270 Sessions Unexpectedly Return to SSCP Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61660: FIX: Certain Key Sequences Cause R6003 or SYS1943 in PWB 1.0"
-permalink: kb/061/Q61660/
+permalink: /kb/061/Q61660/
 ---
 
 ## Q61660: FIX: Certain Key Sequences Cause R6003 or SYS1943 in PWB 1.0

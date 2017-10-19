@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153933: SMS: INVWIN32 Does Not Collect IRQ Information"
-permalink: kb/153/Q153933/
+permalink: /kb/153/Q153933/
 ---
 
 ## Q153933: SMS: INVWIN32 Does Not Collect IRQ Information

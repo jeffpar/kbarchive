@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77440: DEC PathWorks VT320 Fonts Must Be Installed"
-permalink: kb/077/Q77440/
+permalink: /kb/077/Q77440/
 ---
 
 ## Q77440: DEC PathWorks VT320 Fonts Must Be Installed

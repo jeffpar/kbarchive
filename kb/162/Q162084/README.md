@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162084: PRB: Non-Standard RETURN TO MASTER Behavior After LOCATE Error"
-permalink: kb/162/Q162084/
+permalink: /kb/162/Q162084/
 ---
 
 ## Q162084: PRB: Non-Standard RETURN TO MASTER Behavior After LOCATE Error

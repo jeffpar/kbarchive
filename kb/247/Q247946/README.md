@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247946: AoE II: Quits Unexpectedly After Playing Opening Movie"
-permalink: kb/247/Q247946/
+permalink: /kb/247/Q247946/
 ---
 
 ## Q247946: AoE II: Quits Unexpectedly After Playing Opening Movie

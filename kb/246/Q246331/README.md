@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246331: SMS: CRC Checking and Installation of Client-Side Hotfixes"
-permalink: kb/246/Q246331/
+permalink: /kb/246/Q246331/
 ---
 
 ## Q246331: SMS: CRC Checking and Installation of Client-Side Hotfixes

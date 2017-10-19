@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141498: Filling List Box Using MFC's DDX Facility"
-permalink: kb/141/Q141498/
+permalink: /kb/141/Q141498/
 ---
 
 ## Q141498: Filling List Box Using MFC's DDX Facility

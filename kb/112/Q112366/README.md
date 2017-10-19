@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112366: No Network Drives Visible in File Manager or at MS-DOS Prompt"
-permalink: kb/112/Q112366/
+permalink: /kb/112/Q112366/
 ---
 
 ## Q112366: No Network Drives Visible in File Manager or at MS-DOS Prompt

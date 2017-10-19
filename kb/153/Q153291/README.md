@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153291: BUG: Wizards Fail on Secure Microsoft Access Database"
-permalink: kb/153/Q153291/
+permalink: /kb/153/Q153291/
 ---
 
 ## Q153291: BUG: Wizards Fail on Secure Microsoft Access Database

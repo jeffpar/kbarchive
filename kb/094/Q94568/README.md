@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94568: MWAV.EXE Cannot Clean FORMS Virus But MSAV.EXE Can"
-permalink: kb/094/Q94568/
+permalink: /kb/094/Q94568/
 ---
 
 ## Q94568: MWAV.EXE Cannot Clean FORMS Virus But MSAV.EXE Can

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175469: XADM: Information Store Server Specific Error 2"
-permalink: kb/175/Q175469/
+permalink: /kb/175/Q175469/
 ---
 
 ## Q175469: XADM: Information Store Server Specific Error 2

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q190078: BUG: Error &quot;[[BadImplementsRefInCompatLib]]&quot; When You Recompile"
-permalink: kb/190/Q190078/
+title: "Q190078: BUG: Error &quot;&#91;&#91;BadImplementsRefInCompatLib&#93;&#93;&quot; When You Recompile"
+permalink: /kb/190/Q190078/
 ---
 
-## Q190078: BUG: Error &quot;[[BadImplementsRefInCompatLib]]&quot; When You Recompile
+## Q190078: BUG: Error &quot;&#91;&#91;BadImplementsRefInCompatLib&#93;&#93;&quot; When You Recompile
 
 	Article: Q190078
 	Product(s): Microsoft Visual Basic for Windows

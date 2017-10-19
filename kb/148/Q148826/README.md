@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148826: Error Message: Error State Machines Not Started"
-permalink: kb/148/Q148826/
+permalink: /kb/148/Q148826/
 ---
 
 ## Q148826: Error Message: Error State Machines Not Started

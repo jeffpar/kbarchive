@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74589: Hidden System Files and MS-DOS 5 and Later Upgrade"
-permalink: kb/074/Q74589/
+permalink: /kb/074/Q74589/
 ---
 
 ## Q74589: Hidden System Files and MS-DOS 5 and Later Upgrade

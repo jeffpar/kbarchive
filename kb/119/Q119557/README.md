@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119557: PC Win: Err Msg: Bad Windows Class, Ignored"
-permalink: kb/119/Q119557/
+permalink: /kb/119/Q119557/
 ---
 
 ## Q119557: PC Win: Err Msg: Bad Windows Class, Ignored

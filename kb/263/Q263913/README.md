@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263913: SMS: Delete Aged Discovery Task Reports Zero Items Deleted"
-permalink: kb/263/Q263913/
+permalink: /kb/263/Q263913/
 ---
 
 ## Q263913: SMS: Delete Aged Discovery Task Reports Zero Items Deleted

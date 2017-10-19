@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129046: NCR 3455 with 53C700 SCSI Adapter Not Compatible with NT 3.X"
-permalink: kb/129/Q129046/
+permalink: /kb/129/Q129046/
 ---
 
 ## Q129046: NCR 3455 with 53C700 SCSI Adapter Not Compatible with NT 3.X

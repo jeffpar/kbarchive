@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85685: MS-DOS Err Msg: Not Ready Reading Drive A"
-permalink: kb/085/Q85685/
+permalink: /kb/085/Q85685/
 ---
 
 ## Q85685: MS-DOS Err Msg: Not Ready Reading Drive A

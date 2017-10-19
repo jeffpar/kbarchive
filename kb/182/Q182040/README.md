@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182040: XFOR: Internet Mail Service Converts Two-Digit Years Incorrectly"
-permalink: kb/182/Q182040/
+permalink: /kb/182/Q182040/
 ---
 
 ## Q182040: XFOR: Internet Mail Service Converts Two-Digit Years Incorrectly

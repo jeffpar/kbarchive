@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132822: Some US Robotics Modems May Not Dial Long Numbers"
-permalink: kb/132/Q132822/
+permalink: /kb/132/Q132822/
 ---
 
 ## Q132822: Some US Robotics Modems May Not Dial Long Numbers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234972: PRB: Error 40042119: There Is No PostInfo File On The Server"
-permalink: kb/234/Q234972/
+permalink: /kb/234/Q234972/
 ---
 
 ## Q234972: PRB: Error 40042119: There Is No PostInfo File On The Server

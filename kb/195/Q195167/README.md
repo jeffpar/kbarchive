@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195167: SLI Application Fails with LUA_DATA_SEG_LENGTH_ERROR"
-permalink: kb/195/Q195167/
+permalink: /kb/195/Q195167/
 ---
 
 ## Q195167: SLI Application Fails with LUA_DATA_SEG_LENGTH_ERROR

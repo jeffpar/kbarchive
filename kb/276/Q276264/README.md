@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276264: Zero Byte Files When You Print to a File w/ ByPass GDI Selected"
-permalink: kb/276/Q276264/
+permalink: /kb/276/Q276264/
 ---
 
 ## Q276264: Zero Byte Files When You Print to a File w/ ByPass GDI Selected

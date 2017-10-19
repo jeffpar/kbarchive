@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178911: XADM: Event ID 1160 and Exchange Server Performance"
-permalink: kb/178/Q178911/
+permalink: /kb/178/Q178911/
 ---
 
 ## Q178911: XADM: Event ID 1160 and Exchange Server Performance

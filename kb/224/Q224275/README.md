@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224275: S&amp;T 2000: Cannot Enter Latitude and Longitude in All Formats"
-permalink: kb/224/Q224275/
+permalink: /kb/224/Q224275/
 ---
 
 ## Q224275: S&amp;T 2000: Cannot Enter Latitude and Longitude in All Formats

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114276: PC Adm: Notice 102 Failure to Generate...RDI System"
-permalink: kb/114/Q114276/
+permalink: /kb/114/Q114276/
 ---
 
 ## Q114276: PC Adm: Notice 102 Failure to Generate...RDI System

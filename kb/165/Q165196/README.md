@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165196: XCLN: Exchange Client Slow to Start When WSP Client Enabled"
-permalink: kb/165/Q165196/
+permalink: /kb/165/Q165196/
 ---
 
 ## Q165196: XCLN: Exchange Client Slow to Start When WSP Client Enabled

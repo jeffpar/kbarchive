@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84734: Why Code Segment Contents May Begin at Offset 16"
-permalink: kb/084/Q84734/
+permalink: /kb/084/Q84734/
 ---
 
 ## Q84734: Why Code Segment Contents May Begin at Offset 16

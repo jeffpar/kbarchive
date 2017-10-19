@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155971: 32-bit SSEXP.EXE Doesn't Work but 16-bit SSEXP.EXE Does"
-permalink: kb/155/Q155971/
+permalink: /kb/155/Q155971/
 ---
 
 ## Q155971: 32-bit SSEXP.EXE Doesn't Work but 16-bit SSEXP.EXE Does

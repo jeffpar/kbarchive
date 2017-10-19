@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155946: WD97: Footer Truncated or Missing from Legal Pleading"
-permalink: kb/155/Q155946/
+permalink: /kb/155/Q155946/
 ---
 
 ## Q155946: WD97: Footer Truncated or Missing from Legal Pleading

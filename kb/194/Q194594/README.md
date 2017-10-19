@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194594: Snaservr.exe Traps While Starting More Than 50 Connections"
-permalink: kb/194/Q194594/
+permalink: /kb/194/Q194594/
 ---
 
 ## Q194594: Snaservr.exe Traps While Starting More Than 50 Connections

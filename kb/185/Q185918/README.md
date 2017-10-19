@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185918: SMS: &quot;SNMP.exe Entry Point Not Found&quot; Error Message"
-permalink: kb/185/Q185918/
+permalink: /kb/185/Q185918/
 ---
 
 ## Q185918: SMS: &quot;SNMP.exe Entry Point Not Found&quot; Error Message

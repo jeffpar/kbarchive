@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146133: Sending Attachments When Responding to Meeting Request"
-permalink: kb/146/Q146133/
+permalink: /kb/146/Q146133/
 ---
 
 ## Q146133: Sending Attachments When Responding to Meeting Request

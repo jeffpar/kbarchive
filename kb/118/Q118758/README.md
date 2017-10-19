@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118758: Article List for Problems With a CLongBinary Field"
-permalink: kb/118/Q118758/
+permalink: /kb/118/Q118758/
 ---
 
 ## Q118758: Article List for Problems With a CLongBinary Field

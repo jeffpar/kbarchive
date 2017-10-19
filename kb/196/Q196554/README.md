@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196554: WD97: Table of Contents Shows Wrong Formatting"
-permalink: kb/196/Q196554/
+permalink: /kb/196/Q196554/
 ---
 
 ## Q196554: WD97: Table of Contents Shows Wrong Formatting

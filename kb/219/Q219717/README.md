@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219717: NTOP Has Not Been Tested with the Current Configuration"
-permalink: kb/219/Q219717/
+permalink: /kb/219/Q219717/
 ---
 
 ## Q219717: NTOP Has Not Been Tested with the Current Configuration

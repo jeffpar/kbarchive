@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169859: XADM: Event ID 1081 and Service Specific Error 0x00000057"
-permalink: kb/169/Q169859/
+permalink: /kb/169/Q169859/
 ---
 
 ## Q169859: XADM: Event ID 1081 and Service Specific Error 0x00000057

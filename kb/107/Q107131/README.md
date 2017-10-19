@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107131: WFWG: Creating a New SYSTEM.INI Without Third-Party Drivers"
-permalink: kb/107/Q107131/
+permalink: /kb/107/Q107131/
 ---
 
 ## Q107131: WFWG: Creating a New SYSTEM.INI Without Third-Party Drivers

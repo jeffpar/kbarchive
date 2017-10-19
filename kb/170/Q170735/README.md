@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170735: WD97: Word Hangs After Inserting Outlook Address Book Address"
-permalink: kb/170/Q170735/
+permalink: /kb/170/Q170735/
 ---
 
 ## Q170735: WD97: Word Hangs After Inserting Outlook Address Book Address

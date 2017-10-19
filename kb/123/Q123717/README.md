@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123717: Windows NT Backup Writes Incorrect Times To Log"
-permalink: kb/123/Q123717/
+permalink: /kb/123/Q123717/
 ---
 
 ## Q123717: Windows NT Backup Writes Incorrect Times To Log

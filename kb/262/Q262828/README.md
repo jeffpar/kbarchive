@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262828: Long Server Name Not Found with Terminal Server Client"
-permalink: kb/262/Q262828/
+permalink: /kb/262/Q262828/
 ---
 
 ## Q262828: Long Server Name Not Found with Terminal Server Client

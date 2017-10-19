@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193223: HOWTO: Use the MessageBeep API to Play System .WAV Files"
-permalink: kb/193/Q193223/
+permalink: /kb/193/Q193223/
 ---
 
 ## Q193223: HOWTO: Use the MessageBeep API to Play System .WAV Files

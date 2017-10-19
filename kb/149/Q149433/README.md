@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149433: How to Stop a Form from Loading"
-permalink: kb/149/Q149433/
+permalink: /kb/149/Q149433/
 ---
 
 ## Q149433: How to Stop a Form from Loading

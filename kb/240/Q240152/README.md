@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240152: XADM: What Determines a Limited Store in Exchange Server 5.5"
-permalink: kb/240/Q240152/
+permalink: /kb/240/Q240152/
 ---
 
 ## Q240152: XADM: What Determines a Limited Store in Exchange Server 5.5

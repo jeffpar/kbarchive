@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266052: XCON: White Paper: How to Configure the Dynamic RAS Connector"
-permalink: kb/266/Q266052/
+permalink: /kb/266/Q266052/
 ---
 
 ## Q266052: XCON: White Paper: How to Configure the Dynamic RAS Connector

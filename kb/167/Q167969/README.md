@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167969: Under Windows NT, Win16 Applications Opening MS-DOS Devices Fail"
-permalink: kb/167/Q167969/
+permalink: /kb/167/Q167969/
 ---
 
 ## Q167969: Under Windows NT, Win16 Applications Opening MS-DOS Devices Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143174: WSLAVELM.EXE (or WSLAVEIPX.EXE) Times Out After 20 Seconds"
-permalink: kb/143/Q143174/
+permalink: /kb/143/Q143174/
 ---
 
 ## Q143174: WSLAVELM.EXE (or WSLAVEIPX.EXE) Times Out After 20 Seconds

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189653: XWEB:  OWA Directory Listing Denied Error"
-permalink: kb/189/Q189653/
+permalink: /kb/189/Q189653/
 ---
 
 ## Q189653: XWEB:  OWA Directory Listing Denied Error

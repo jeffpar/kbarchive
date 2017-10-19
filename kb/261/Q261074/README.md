@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261074: Motocross Madness 2: Stops Responding When You Start a Race"
-permalink: kb/261/Q261074/
+permalink: /kb/261/Q261074/
 ---
 
 ## Q261074: Motocross Madness 2: Stops Responding When You Start a Race

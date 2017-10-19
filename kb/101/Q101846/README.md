@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101846: WFWG: Where Workgroup Mail Finds the Default Account Name"
-permalink: kb/101/Q101846/
+permalink: /kb/101/Q101846/
 ---
 
 ## Q101846: WFWG: Where Workgroup Mail Finds the Default Account Name

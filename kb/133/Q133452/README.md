@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133452: How to Use Macro Substitution in Object Referencing"
-permalink: kb/133/Q133452/
+permalink: /kb/133/Q133452/
 ---
 
 ## Q133452: How to Use Macro Substitution in Object Referencing

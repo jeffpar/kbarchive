@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101139: PC Win: Err Msg: MAIL SYSTEM ERROR"
-permalink: kb/101/Q101139/
+permalink: /kb/101/Q101139/
 ---
 
 ## Q101139: PC Win: Err Msg: MAIL SYSTEM ERROR

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58259: Windows 2.x Should Not be Run from Windows 3.0"
-permalink: kb/058/Q58259/
+permalink: /kb/058/Q58259/
 ---
 
 ## Q58259: Windows 2.x Should Not be Run from Windows 3.0

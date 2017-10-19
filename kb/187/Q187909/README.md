@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187909: HOWTO: How to Prevent UI in an Out of Process Server"
-permalink: kb/187/Q187909/
+permalink: /kb/187/Q187909/
 ---
 
 ## Q187909: HOWTO: How to Prevent UI in an Out of Process Server

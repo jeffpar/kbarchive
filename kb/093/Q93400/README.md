@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93400: Microsoft Language Utility Version History"
-permalink: kb/093/Q93400/
+permalink: /kb/093/Q93400/
 ---
 
 ## Q93400: Microsoft Language Utility Version History

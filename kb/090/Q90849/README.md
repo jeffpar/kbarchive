@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90849: Write: Saving in MS-DOS Word Format Loses Fonts and Graphics"
-permalink: kb/090/Q90849/
+permalink: /kb/090/Q90849/
 ---
 
 ## Q90849: Write: Saving in MS-DOS Word Format Loses Fonts and Graphics

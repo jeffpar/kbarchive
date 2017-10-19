@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110927: WFW RAS to Windows NT: &quot;Access Denied&quot; After Password Change"
-permalink: kb/110/Q110927/
+permalink: /kb/110/Q110927/
 ---
 
 ## Q110927: WFW RAS to Windows NT: &quot;Access Denied&quot; After Password Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131261: Message Finder Does Not Search Shared or Deleted Folders"
-permalink: kb/131/Q131261/
+permalink: /kb/131/Q131261/
 ---
 
 ## Q131261: Message Finder Does Not Search Shared or Deleted Folders

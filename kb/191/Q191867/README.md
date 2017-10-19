@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191867: HOWTO: Obtain Microsoft SQL Server Version Information"
-permalink: kb/191/Q191867/
+permalink: /kb/191/Q191867/
 ---
 
 ## Q191867: HOWTO: Obtain Microsoft SQL Server Version Information

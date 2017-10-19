@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166541: XADM: Random Access Violation in Store.exe (Edb.dll)"
-permalink: kb/166/Q166541/
+permalink: /kb/166/Q166541/
 ---
 
 ## Q166541: XADM: Random Access Violation in Store.exe (Edb.dll)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77701: Finding Version Information for Multimedia Files"
-permalink: kb/077/Q77701/
+permalink: /kb/077/Q77701/
 ---
 
 ## Q77701: Finding Version Information for Multimedia Files

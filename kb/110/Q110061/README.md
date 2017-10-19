@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110061: Effects of Pausing a Service"
-permalink: kb/110/Q110061/
+permalink: /kb/110/Q110061/
 ---
 
 ## Q110061: Effects of Pausing a Service

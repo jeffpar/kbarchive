@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140389: Job Status MIFs Cause Overhead on Central Site"
-permalink: kb/140/Q140389/
+permalink: /kb/140/Q140389/
 ---
 
 ## Q140389: Job Status MIFs Cause Overhead on Central Site

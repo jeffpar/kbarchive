@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178107: Encarta 98 Err Msg: The Topic Does Not Exist..."
-permalink: kb/178/Q178107/
+permalink: /kb/178/Q178107/
 ---
 
 ## Q178107: Encarta 98 Err Msg: The Topic Does Not Exist...

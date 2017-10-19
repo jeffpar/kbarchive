@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156258: Command Prompt Does Not Recognize End-of-File Character"
-permalink: kb/156/Q156258/
+permalink: /kb/156/Q156258/
 ---
 
 ## Q156258: Command Prompt Does Not Recognize End-of-File Character

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280071: XCON: Message Read or Unread Status Lost Migrating from cc:Mail"
-permalink: kb/280/Q280071/
+permalink: /kb/280/Q280071/
 ---
 
 ## Q280071: XCON: Message Read or Unread Status Lost Migrating from cc:Mail

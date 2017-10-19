@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128639: MSDLC Hangs Computers Running Processor Speeds Over 66 MHz"
-permalink: kb/128/Q128639/
+permalink: /kb/128/Q128639/
 ---
 
 ## Q128639: MSDLC Hangs Computers Running Processor Speeds Over 66 MHz

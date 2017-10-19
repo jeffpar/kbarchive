@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288883: Error Message: No Server Path Specified"
-permalink: kb/288/Q288883/
+permalink: /kb/288/Q288883/
 ---
 
 ## Q288883: Error Message: No Server Path Specified

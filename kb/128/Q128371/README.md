@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128371: Error 5733 with InfoExpress Real-Mode Drivers"
-permalink: kb/128/Q128371/
+permalink: /kb/128/Q128371/
 ---
 
 ## Q128371: Error 5733 with InfoExpress Real-Mode Drivers

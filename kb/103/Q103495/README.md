@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103495: Modifying USERDEF Hive So That New Users Get Defined Settings"
-permalink: kb/103/Q103495/
+permalink: /kb/103/Q103495/
 ---
 
 ## Q103495: Modifying USERDEF Hive So That New Users Get Defined Settings

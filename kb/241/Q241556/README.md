@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241556: XADM: OpenMsgStore Function Is Not Thread Safe"
-permalink: kb/241/Q241556/
+permalink: /kb/241/Q241556/
 ---
 
 ## Q241556: XADM: OpenMsgStore Function Is Not Thread Safe

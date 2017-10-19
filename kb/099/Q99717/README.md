@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99717: PROFS: Err Msg: DOS ERROR 5090, 119: Host Timeout Error"
-permalink: kb/099/Q99717/
+permalink: /kb/099/Q99717/
 ---
 
 ## Q99717: PROFS: Err Msg: DOS ERROR 5090, 119: Host Timeout Error

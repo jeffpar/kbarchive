@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49445: PRB: LINK versions 5.03 to 5.2 Require EXETYPE WINDOWS Stmt."
-permalink: kb/049/Q49445/
+permalink: /kb/049/Q49445/
 ---
 
 ## Q49445: PRB: LINK versions 5.03 to 5.2 Require EXETYPE WINDOWS Stmt.

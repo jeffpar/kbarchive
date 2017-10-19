@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190061: BUG: SCC Error Occurs When Opening a VSS5 Project Under VSS"
-permalink: kb/190/Q190061/
+permalink: /kb/190/Q190061/
 ---
 
 ## Q190061: BUG: SCC Error Occurs When Opening a VSS5 Project Under VSS

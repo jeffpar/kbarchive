@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121956: PC Adm: Mail 3.2a Update Leaves Zero-Byte .GLB  Files"
-permalink: kb/121/Q121956/
+permalink: /kb/121/Q121956/
 ---
 
 ## Q121956: PC Adm: Mail 3.2a Update Leaves Zero-Byte .GLB  Files

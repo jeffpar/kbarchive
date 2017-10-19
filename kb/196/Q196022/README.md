@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196022: Cheyenne Backup Agent for Open Files Causes STOP 0x44"
-permalink: kb/196/Q196022/
+permalink: /kb/196/Q196022/
 ---
 
 ## Q196022: Cheyenne Backup Agent for Open Files Causes STOP 0x44

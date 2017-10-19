@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111844: Err Msg: BAD ERROR: A Successfully Transmitted Fax Could..."
-permalink: kb/111/Q111844/
+permalink: /kb/111/Q111844/
 ---
 
 ## Q111844: Err Msg: BAD ERROR: A Successfully Transmitted Fax Could...

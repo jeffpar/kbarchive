@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84266: Err Msg: This DLL Can Only Be Used with ToolBook Evaluation..."
-permalink: kb/084/Q84266/
+permalink: /kb/084/Q84266/
 ---
 
 ## Q84266: Err Msg: This DLL Can Only Be Used with ToolBook Evaluation...

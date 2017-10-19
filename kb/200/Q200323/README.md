@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200323: INFO: Use Migration DLLs to obtain corrected user names"
-permalink: kb/200/Q200323/
+permalink: /kb/200/Q200323/
 ---
 
 ## Q200323: INFO: Use Migration DLLs to obtain corrected user names

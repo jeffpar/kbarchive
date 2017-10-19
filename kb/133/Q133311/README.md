@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133311: FIX: Errors Occur When SQL Server Binary Field Over 64K"
-permalink: kb/133/Q133311/
+permalink: /kb/133/Q133311/
 ---
 
 ## Q133311: FIX: Errors Occur When SQL Server Binary Field Over 64K

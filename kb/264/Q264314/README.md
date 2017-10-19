@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264314: XADM: Mailbox Move Fails with Error 80004005-0501-000004dd"
-permalink: kb/264/Q264314/
+permalink: /kb/264/Q264314/
 ---
 
 ## Q264314: XADM: Mailbox Move Fails with Error 80004005-0501-000004dd

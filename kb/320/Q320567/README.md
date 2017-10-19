@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320567: Files Corrupted During Installation from Samsung DVD-ROM"
-permalink: kb/320/Q320567/
+permalink: /kb/320/Q320567/
 ---
 
 ## Q320567: Files Corrupted During Installation from Samsung DVD-ROM

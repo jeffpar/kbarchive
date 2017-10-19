@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97565: Novell Login Drive Not Available After Installing DoubleSpace"
-permalink: kb/097/Q97565/
+permalink: /kb/097/Q97565/
 ---
 
 ## Q97565: Novell Login Drive Not Available After Installing DoubleSpace

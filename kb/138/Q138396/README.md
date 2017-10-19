@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138396: HOWTO: Use the Default Windows Printer in Visual FoxPro"
-permalink: kb/138/Q138396/
+permalink: /kb/138/Q138396/
 ---
 
 ## Q138396: HOWTO: Use the Default Windows Printer in Visual FoxPro

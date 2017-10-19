@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269531: How to Enable Fault Logging in Windows 95"
-permalink: kb/269/Q269531/
+permalink: /kb/269/Q269531/
 ---
 
 ## Q269531: How to Enable Fault Logging in Windows 95

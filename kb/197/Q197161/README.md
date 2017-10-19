@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197161: SYSDIFF /INF Uses Decimal Format for REG_DWORD Values"
-permalink: kb/197/Q197161/
+permalink: /kb/197/Q197161/
 ---
 
 ## Q197161: SYSDIFF /INF Uses Decimal Format for REG_DWORD Values

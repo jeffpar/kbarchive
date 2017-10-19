@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219353: RRAS PPP Connections May Time-out on Slow or Delayed Links"
-permalink: kb/219/Q219353/
+permalink: /kb/219/Q219353/
 ---
 
 ## Q219353: RRAS PPP Connections May Time-out on Slow or Delayed Links

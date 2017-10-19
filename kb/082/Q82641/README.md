@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82641: Windows 3.1 Serial Communications Improvements"
-permalink: kb/082/Q82641/
+permalink: /kb/082/Q82641/
 ---
 
 ## Q82641: Windows 3.1 Serial Communications Improvements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165135: XCLN: Client Setup Requires a Restart During First Install"
-permalink: kb/165/Q165135/
+permalink: /kb/165/Q165135/
 ---
 
 ## Q165135: XCLN: Client Setup Requires a Restart During First Install

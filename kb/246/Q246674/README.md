@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246674: XADM: How to Install and Configure Link Monitor"
-permalink: kb/246/Q246674/
+permalink: /kb/246/Q246674/
 ---
 
 ## Q246674: XADM: How to Install and Configure Link Monitor

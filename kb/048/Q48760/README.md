@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48760: Flight Simulator 4.00: Version 2.00 Parameters Lost"
-permalink: kb/048/Q48760/
+permalink: /kb/048/Q48760/
 ---
 
 ## Q48760: Flight Simulator 4.00: Version 2.00 Parameters Lost

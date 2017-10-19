@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199835: ERD Recovery Process Halted - Insert Compaq SSD in Drive A"
-permalink: kb/199/Q199835/
+permalink: /kb/199/Q199835/
 ---
 
 ## Q199835: ERD Recovery Process Halted - Insert Compaq SSD in Drive A

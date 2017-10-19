@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165093: XCON: MTA: Content Conversion Error 260 (Event ID 210)"
-permalink: kb/165/Q165093/
+permalink: /kb/165/Q165093/
 ---
 
 ## Q165093: XCON: MTA: Content Conversion Error 260 (Event ID 210)

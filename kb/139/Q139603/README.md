@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139603: PRB: C2061 Errors When Compiling for Macintosh Target"
-permalink: kb/139/Q139603/
+permalink: /kb/139/Q139603/
 ---
 
 ## Q139603: PRB: C2061 Errors When Compiling for Macintosh Target

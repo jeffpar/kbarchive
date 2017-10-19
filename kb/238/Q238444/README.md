@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238444: XWEB: OWA Current Password Is About to Expire in 0 Days Message"
-permalink: kb/238/Q238444/
+permalink: /kb/238/Q238444/
 ---
 
 ## Q238444: XWEB: OWA Current Password Is About to Expire in 0 Days Message

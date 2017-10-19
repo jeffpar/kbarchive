@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130291: Mac 3270 Err Msg After Installing Windows NT 3.5 Service Pack 2"
-permalink: kb/130/Q130291/
+permalink: /kb/130/Q130291/
 ---
 
 ## Q130291: Mac 3270 Err Msg After Installing Windows NT 3.5 Service Pack 2

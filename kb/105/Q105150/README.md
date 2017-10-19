@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105150: HOWTO: Prevent Static Splitter Bars from Tracking"
-permalink: kb/105/Q105150/
+permalink: /kb/105/Q105150/
 ---
 
 ## Q105150: HOWTO: Prevent Static Splitter Bars from Tracking

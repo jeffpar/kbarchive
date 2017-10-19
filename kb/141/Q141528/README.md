@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141528: FIX: Data Designer Validation Text Causes Invalid Page Fault"
-permalink: kb/141/Q141528/
+permalink: /kb/141/Q141528/
 ---
 
 ## Q141528: FIX: Data Designer Validation Text Causes Invalid Page Fault

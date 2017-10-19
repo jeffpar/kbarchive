@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123004: Remotely Administering SNA Server Tracing"
-permalink: kb/123/Q123004/
+permalink: /kb/123/Q123004/
 ---
 
 ## Q123004: Remotely Administering SNA Server Tracing

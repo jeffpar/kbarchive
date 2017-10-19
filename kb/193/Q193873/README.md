@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193873: INFO: Determining What Oracle Components Are Installed"
-permalink: kb/193/Q193873/
+permalink: /kb/193/Q193873/
 ---
 
 ## Q193873: INFO: Determining What Oracle Components Are Installed

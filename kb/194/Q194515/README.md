@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194515: BUG: Invalid ALTER TABLE Command Works and Corrupts DBC"
-permalink: kb/194/Q194515/
+permalink: /kb/194/Q194515/
 ---
 
 ## Q194515: BUG: Invalid ALTER TABLE Command Works and Corrupts DBC

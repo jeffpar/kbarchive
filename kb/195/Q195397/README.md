@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195397: XCLN: Attachments with Long Filenames Crash Client"
-permalink: kb/195/Q195397/
+permalink: /kb/195/Q195397/
 ---
 
 ## Q195397: XCLN: Attachments with Long Filenames Crash Client

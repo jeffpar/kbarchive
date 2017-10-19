@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161691: WD97: Extraneous Characters Returned with ViewFieldCodes On"
-permalink: kb/161/Q161691/
+permalink: /kb/161/Q161691/
 ---
 
 ## Q161691: WD97: Extraneous Characters Returned with ViewFieldCodes On

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90169: WinLogin Err Msg: STFSETUP.INF Has Missing..."
-permalink: kb/090/Q90169/
+permalink: /kb/090/Q90169/
 ---
 
 ## Q90169: WinLogin Err Msg: STFSETUP.INF Has Missing...

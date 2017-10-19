@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254299: Wrong Version of Symbol Files for SecEdit on SP5 and SP6 CD-ROM"
-permalink: kb/254/Q254299/
+permalink: /kb/254/Q254299/
 ---
 
 ## Q254299: Wrong Version of Symbol Files for SecEdit on SP5 and SP6 CD-ROM

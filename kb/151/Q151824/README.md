@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151824: FoxPro Query May Return Inaccurate Results with FPNW"
-permalink: kb/151/Q151824/
+permalink: /kb/151/Q151824/
 ---
 
 ## Q151824: FoxPro Query May Return Inaccurate Results with FPNW

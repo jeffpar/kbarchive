@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135774: Performance Monitor Counters Produce Unlikely Results"
-permalink: kb/135/Q135774/
+permalink: /kb/135/Q135774/
 ---
 
 ## Q135774: Performance Monitor Counters Produce Unlikely Results

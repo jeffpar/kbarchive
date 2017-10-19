@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245455: Err Msg: You Have Been Booted from Asheron's Call..."
-permalink: kb/245/Q245455/
+permalink: /kb/245/Q245455/
 ---
 
 ## Q245455: Err Msg: You Have Been Booted from Asheron's Call...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216115: HOWTO: Set Up Multiple Databases in Visual SourceSafe 6.0"
-permalink: kb/216/Q216115/
+permalink: /kb/216/Q216115/
 ---
 
 ## Q216115: HOWTO: Set Up Multiple Databases in Visual SourceSafe 6.0

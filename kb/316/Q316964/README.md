@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316964: INFO: How to Obtain the Latest Visual FoxPro for Windows 7.0 SP"
-permalink: kb/316/Q316964/
+permalink: /kb/316/Q316964/
 ---
 
 ## Q316964: INFO: How to Obtain the Latest Visual FoxPro for Windows 7.0 SP

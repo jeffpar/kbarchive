@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138972: FIX: LNK4076: Invalid Incremental Status File"
-permalink: kb/138/Q138972/
+permalink: /kb/138/Q138972/
 ---
 
 ## Q138972: FIX: LNK4076: Invalid Incremental Status File

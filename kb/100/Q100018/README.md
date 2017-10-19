@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100018: PRB: RQBE Drops Field Name in Output After Saving"
-permalink: kb/100/Q100018/
+permalink: /kb/100/Q100018/
 ---
 
 ## Q100018: PRB: RQBE Drops Field Name in Output After Saving

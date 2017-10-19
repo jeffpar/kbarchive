@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312070: ENC: Computer May Stop Responding During Installation"
-permalink: kb/312/Q312070/
+permalink: /kb/312/Q312070/
 ---
 
 ## Q312070: ENC: Computer May Stop Responding During Installation

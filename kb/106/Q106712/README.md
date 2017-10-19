@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106712: Windows for Workgroups 3.11: Using the Generic IPXODI Driver"
-permalink: kb/106/Q106712/
+permalink: /kb/106/Q106712/
 ---
 
 ## Q106712: Windows for Workgroups 3.11: Using the Generic IPXODI Driver

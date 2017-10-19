@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166154: XFOR: DXA Doesn't Export New Recipients Container During Dirsync"
-permalink: kb/166/Q166154/
+permalink: /kb/166/Q166154/
 ---
 
 ## Q166154: XFOR: DXA Doesn't Export New Recipients Container During Dirsync

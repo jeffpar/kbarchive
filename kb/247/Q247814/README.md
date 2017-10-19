@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247814: XADM: KMS Can't Grant V3 Certificates to Users with Long DNs"
-permalink: kb/247/Q247814/
+permalink: /kb/247/Q247814/
 ---
 
 ## Q247814: XADM: KMS Can't Grant V3 Certificates to Users with Long DNs

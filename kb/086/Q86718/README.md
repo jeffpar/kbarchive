@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86718: DOCERR: Setup Toolkit _MSTEST &quot;Bad Destination Value&quot; Error"
-permalink: kb/086/Q86718/
+permalink: /kb/086/Q86718/
 ---
 
 ## Q86718: DOCERR: Setup Toolkit _MSTEST &quot;Bad Destination Value&quot; Error

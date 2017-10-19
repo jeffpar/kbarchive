@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60954: Takeoff Roll Instructor Doesn't Look for Incoming Traffic"
-permalink: kb/060/Q60954/
+permalink: /kb/060/Q60954/
 ---
 
 ## Q60954: Takeoff Roll Instructor Doesn't Look for Incoming Traffic

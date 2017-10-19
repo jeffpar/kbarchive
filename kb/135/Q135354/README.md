@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135354: SNA Server DLC Outage Codes Should be Logged in Hex."
-permalink: kb/135/Q135354/
+permalink: /kb/135/Q135354/
 ---
 
 ## Q135354: SNA Server DLC Outage Codes Should be Logged in Hex.

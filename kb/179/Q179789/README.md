@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179789: SMSINST: Repackage Of Netscape Communicator 4.03 Pro Fails"
-permalink: kb/179/Q179789/
+permalink: /kb/179/Q179789/
 ---
 
 ## Q179789: SMSINST: Repackage Of Netscape Communicator 4.03 Pro Fails

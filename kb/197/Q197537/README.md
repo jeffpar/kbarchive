@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197537: Windows NT Starts in VGA Mode After You Update to SP4"
-permalink: kb/197/Q197537/
+permalink: /kb/197/Q197537/
 ---
 
 ## Q197537: Windows NT Starts in VGA Mode After You Update to SP4

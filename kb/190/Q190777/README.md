@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190777: FIX: PDW: Out-of-Date Dependency Information COMCT332.OCX"
-permalink: kb/190/Q190777/
+permalink: /kb/190/Q190777/
 ---
 
 ## Q190777: FIX: PDW: Out-of-Date Dependency Information COMCT332.OCX

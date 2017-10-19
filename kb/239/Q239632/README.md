@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239632: EWA: Error Messages When You Switch to Statistics Center"
-permalink: kb/239/Q239632/
+permalink: /kb/239/Q239632/
 ---
 
 ## Q239632: EWA: Error Messages When You Switch to Statistics Center

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156083: SNA Server APPC Error Communicating to Software AG Entire APPC"
-permalink: kb/156/Q156083/
+permalink: /kb/156/Q156083/
 ---
 
 ## Q156083: SNA Server APPC Error Communicating to Software AG Entire APPC

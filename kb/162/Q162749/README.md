@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162749: Using AOL's Internet Connection with Windows 3.1 Applications"
-permalink: kb/162/Q162749/
+permalink: /kb/162/Q162749/
 ---
 
 ## Q162749: Using AOL's Internet Connection with Windows 3.1 Applications

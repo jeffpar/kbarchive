@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149826: Cannot Add The Microsoft Network Online Service to Profile"
-permalink: kb/149/Q149826/
+permalink: /kb/149/Q149826/
 ---
 
 ## Q149826: Cannot Add The Microsoft Network Online Service to Profile

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84337: PageMaker Version 4.0 F6, F7, F8 Keys Do Not Function"
-permalink: kb/084/Q84337/
+permalink: /kb/084/Q84337/
 ---
 
 ## Q84337: PageMaker Version 4.0 F6, F7, F8 Keys Do Not Function

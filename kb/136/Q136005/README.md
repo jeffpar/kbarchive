@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136005: HOW TO: Declare Classes That Refer to Each Other"
-permalink: kb/136/Q136005/
+permalink: /kb/136/Q136005/
 ---
 
 ## Q136005: HOW TO: Declare Classes That Refer to Each Other

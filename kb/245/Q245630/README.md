@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245630: Event 560 Failures Appears When File and Object Auditing Enabled"
-permalink: kb/245/Q245630/
+permalink: /kb/245/Q245630/
 ---
 
 ## Q245630: Event 560 Failures Appears When File and Object Auditing Enabled

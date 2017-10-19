@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126434: Configuring a Windows NT User as an SNA Server Administrator"
-permalink: kb/126/Q126434/
+permalink: /kb/126/Q126434/
 ---
 
 ## Q126434: Configuring a Windows NT User as an SNA Server Administrator

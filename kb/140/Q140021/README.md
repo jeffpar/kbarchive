@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140021: FILE: DBGRIDUB.EXE Uses DBGRID in an Unbound Mode"
-permalink: kb/140/Q140021/
+permalink: /kb/140/Q140021/
 ---
 
 ## Q140021: FILE: DBGRIDUB.EXE Uses DBGRID in an Unbound Mode

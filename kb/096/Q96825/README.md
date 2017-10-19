@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96825: DIR and CHKDSK Report Different Amounts of Free Space"
-permalink: kb/096/Q96825/
+permalink: /kb/096/Q96825/
 ---
 
 ## Q96825: DIR and CHKDSK Report Different Amounts of Free Space

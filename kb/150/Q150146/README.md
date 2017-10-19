@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150146: PRB: No Error Generated Initializing Named Common Block Object"
-permalink: kb/150/Q150146/
+permalink: /kb/150/Q150146/
 ---
 
 ## Q150146: PRB: No Error Generated Initializing Named Common Block Object

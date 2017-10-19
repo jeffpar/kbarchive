@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245188: Err Msg: STOP C0000221 - Bad Image Checksum in Oleaut32.dll."
-permalink: kb/245/Q245188/
+permalink: /kb/245/Q245188/
 ---
 
 ## Q245188: Err Msg: STOP C0000221 - Bad Image Checksum in Oleaut32.dll.

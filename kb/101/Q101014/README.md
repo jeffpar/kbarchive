@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101014: PRB: Error Decompressing &lt;Filename&gt;/File Copy Operation Failed"
-permalink: kb/101/Q101014/
+permalink: /kb/101/Q101014/
 ---
 
 ## Q101014: PRB: Error Decompressing &lt;Filename&gt;/File Copy Operation Failed

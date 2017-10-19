@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262104: Options Are Not Sent to DHCP Clients Using DHCP Inform Packets"
-permalink: kb/262/Q262104/
+permalink: /kb/262/Q262104/
 ---
 
 ## Q262104: Options Are Not Sent to DHCP Clients Using DHCP Inform Packets

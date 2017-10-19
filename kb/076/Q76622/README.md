@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76622: FORMAT Parameters Versus DRIVPARM/DRIVER.SYS"
-permalink: kb/076/Q76622/
+permalink: /kb/076/Q76622/
 ---
 
 ## Q76622: FORMAT Parameters Versus DRIVPARM/DRIVER.SYS

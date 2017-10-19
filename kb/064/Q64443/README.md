@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64443: Cannot Run Programs from CD-ROM Drive in 386 Enhanced Mode"
-permalink: kb/064/Q64443/
+permalink: /kb/064/Q64443/
 ---
 
 ## Q64443: Cannot Run Programs from CD-ROM Drive in 386 Enhanced Mode

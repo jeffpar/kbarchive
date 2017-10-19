@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76186: Up to 48 Buffers Load in HMA with MS-DOS 5.0"
-permalink: kb/076/Q76186/
+permalink: /kb/076/Q76186/
 ---
 
 ## Q76186: Up to 48 Buffers Load in HMA with MS-DOS 5.0

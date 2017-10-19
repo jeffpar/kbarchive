@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192937: Motocross Madness: White Lines Displayed in Background"
-permalink: kb/192/Q192937/
+permalink: /kb/192/Q192937/
 ---
 
 ## Q192937: Motocross Madness: White Lines Displayed in Background

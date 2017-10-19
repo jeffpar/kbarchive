@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316442: Accessing MSN E-mail at Hotmail.com"
-permalink: kb/316/Q316442/
+permalink: /kb/316/Q316442/
 ---
 
 ## Q316442: Accessing MSN E-mail at Hotmail.com

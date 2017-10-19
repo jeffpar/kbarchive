@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149848: How to Use the SQLMORERESULTS() Function"
-permalink: kb/149/Q149848/
+permalink: /kb/149/Q149848/
 ---
 
 ## Q149848: How to Use the SQLMORERESULTS() Function

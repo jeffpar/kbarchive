@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240760: Error Message: Web Publishing Wizard Advanced INF Install INF..."
-permalink: kb/240/Q240760/
+permalink: /kb/240/Q240760/
 ---
 
 ## Q240760: Error Message: Web Publishing Wizard Advanced INF Install INF...

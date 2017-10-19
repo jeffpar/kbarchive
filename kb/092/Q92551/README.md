@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92551: COMPAQ Portable Hangs when Sleep Button or ALT+TAB Pressed"
-permalink: kb/092/Q92551/
+permalink: /kb/092/Q92551/
 ---
 
 ## Q92551: COMPAQ Portable Hangs when Sleep Button or ALT+TAB Pressed

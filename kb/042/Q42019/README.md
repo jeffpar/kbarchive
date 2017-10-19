@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q42019: PRB: Missing Closing &quot;)&quot; in Macro Causes Unexpected EOF"
-permalink: kb/042/Q42019/
+permalink: /kb/042/Q42019/
 ---
 
 ## Q42019: PRB: Missing Closing &quot;)&quot; in Macro Causes Unexpected EOF

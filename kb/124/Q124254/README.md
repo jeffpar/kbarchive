@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124254: README.JPN for Japan Scenery Add-On"
-permalink: kb/124/Q124254/
+permalink: /kb/124/Q124254/
 ---
 
 ## Q124254: README.JPN for Japan Scenery Add-On

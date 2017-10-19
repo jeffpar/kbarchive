@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254339: HOWTO: Use FlashWindowEx to Notify a User from VB"
-permalink: kb/254/Q254339/
+permalink: /kb/254/Q254339/
 ---
 
 ## Q254339: HOWTO: Use FlashWindowEx to Notify a User from VB

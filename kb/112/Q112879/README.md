@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112879: FFAPI: Address List Contains Local Postoffice Addresses"
-permalink: kb/112/Q112879/
+permalink: /kb/112/Q112879/
 ---
 
 ## Q112879: FFAPI: Address List Contains Local Postoffice Addresses

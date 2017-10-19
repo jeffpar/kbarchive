@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200979: FIX: File Corruption Occurs When Shadowed"
-permalink: kb/200/Q200979/
+permalink: /kb/200/Q200979/
 ---
 
 ## Q200979: FIX: File Corruption Occurs When Shadowed

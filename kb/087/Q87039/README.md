@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87039: SMTP: Encapsulation and the SMTP Gateway"
-permalink: kb/087/Q87039/
+permalink: /kb/087/Q87039/
 ---
 
 ## Q87039: SMTP: Encapsulation and the SMTP Gateway

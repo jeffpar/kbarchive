@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237925: Windows 3.x SNA Client Truncates Workstation DNS Name"
-permalink: kb/237/Q237925/
+permalink: /kb/237/Q237925/
 ---
 
 ## Q237925: Windows 3.x SNA Client Truncates Workstation DNS Name

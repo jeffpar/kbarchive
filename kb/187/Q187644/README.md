@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187644: PRB: ATL Controls Fail to Recognize Default Button on VB Form"
-permalink: kb/187/Q187644/
+permalink: /kb/187/Q187644/
 ---
 
 ## Q187644: PRB: ATL Controls Fail to Recognize Default Button on VB Form

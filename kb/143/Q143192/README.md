@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143192: Access Is Denied Error in Internet Service Virtual Directory"
-permalink: kb/143/Q143192/
+permalink: /kb/143/Q143192/
 ---
 
 ## Q143192: Access Is Denied Error in Internet Service Virtual Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313202: SSO Fails If Attach Does Not Contain LUWID or Other Subfield"
-permalink: kb/313/Q313202/
+permalink: /kb/313/Q313202/
 ---
 
 ## Q313202: SSO Fails If Attach Does Not Contain LUWID or Other Subfield

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238061: Encarta Dictionary 2000: No Integration with Word or PowerPoint"
-permalink: kb/238/Q238061/
+permalink: /kb/238/Q238061/
 ---
 
 ## Q238061: Encarta Dictionary 2000: No Integration with Word or PowerPoint

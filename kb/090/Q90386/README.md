@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90386: After WFWG Setup, Microsoft C7 Compiler Doesn't Work"
-permalink: kb/090/Q90386/
+permalink: /kb/090/Q90386/
 ---
 
 ## Q90386: After WFWG Setup, Microsoft C7 Compiler Doesn't Work

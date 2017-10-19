@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138757: HOWTO: Change the Icon in an Application"
-permalink: kb/138/Q138757/
+permalink: /kb/138/Q138757/
 ---
 
 ## Q138757: HOWTO: Change the Icon in an Application

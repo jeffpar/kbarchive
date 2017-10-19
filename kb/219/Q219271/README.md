@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219271: How to Add the Immediate-If Function to an ASP Page"
-permalink: kb/219/Q219271/
+permalink: /kb/219/Q219271/
 ---
 
 ## Q219271: How to Add the Immediate-If Function to an ASP Page

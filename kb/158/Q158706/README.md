@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158706: Netmon Performance Counters Support a Maximum of Eight Adapters"
-permalink: kb/158/Q158706/
+permalink: /kb/158/Q158706/
 ---
 
 ## Q158706: Netmon Performance Counters Support a Maximum of Eight Adapters

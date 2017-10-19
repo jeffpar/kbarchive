@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234576: BUG: VBCE Winsock Control Might Not Receive Binary Data"
-permalink: kb/234/Q234576/
+permalink: /kb/234/Q234576/
 ---
 
 ## Q234576: BUG: VBCE Winsock Control Might Not Receive Binary Data

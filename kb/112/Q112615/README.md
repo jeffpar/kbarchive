@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112615: AWFAX: Minimum Number of Rings for Auto Answer"
-permalink: kb/112/Q112615/
+permalink: /kb/112/Q112615/
 ---
 
 ## Q112615: AWFAX: Minimum Number of Rings for Auto Answer

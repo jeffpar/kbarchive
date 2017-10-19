@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150977: XADM: Supporting Localized Exchange Clients"
-permalink: kb/150/Q150977/
+permalink: /kb/150/Q150977/
 ---
 
 ## Q150977: XADM: Supporting Localized Exchange Clients

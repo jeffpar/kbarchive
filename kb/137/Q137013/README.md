@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137013: Some Older AMS/Austin Motherboards Incompatible w/ Windows 95"
-permalink: kb/137/Q137013/
+permalink: /kb/137/Q137013/
 ---
 
 ## Q137013: Some Older AMS/Austin Motherboards Incompatible w/ Windows 95

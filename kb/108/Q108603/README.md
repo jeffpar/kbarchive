@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108603: ScanDisk Reports Undo Floppy Is Damaged"
-permalink: kb/108/Q108603/
+permalink: /kb/108/Q108603/
 ---
 
 ## Q108603: ScanDisk Reports Undo Floppy Is Damaged

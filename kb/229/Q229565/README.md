@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229565: XADM: Public Folder Affinity and Multiple Domains"
-permalink: kb/229/Q229565/
+permalink: /kb/229/Q229565/
 ---
 
 ## Q229565: XADM: Public Folder Affinity and Multiple Domains

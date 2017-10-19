@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158205: STL Sample for the string::operation"
-permalink: kb/158/Q158205/
+permalink: /kb/158/Q158205/
 ---
 
 ## Q158205: STL Sample for the string::operation

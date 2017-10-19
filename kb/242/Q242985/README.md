@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242985: DirectX: List of New Features Included in Microsoft DirectX 7.0"
-permalink: kb/242/Q242985/
+permalink: /kb/242/Q242985/
 ---
 
 ## Q242985: DirectX: List of New Features Included in Microsoft DirectX 7.0

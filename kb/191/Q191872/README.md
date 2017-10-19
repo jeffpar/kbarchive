@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191872: PRB: Enum HelpStrings Not Displayed in Properties Window"
-permalink: kb/191/Q191872/
+permalink: /kb/191/Q191872/
 ---
 
 ## Q191872: PRB: Enum HelpStrings Not Displayed in Properties Window

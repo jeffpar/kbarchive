@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225068: AOE: How to Place Natural Resources Using Scenario Builder"
-permalink: kb/225/Q225068/
+permalink: /kb/225/Q225068/
 ---
 
 ## Q225068: AOE: How to Place Natural Resources Using Scenario Builder

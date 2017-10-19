@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271254: Microsoft Reader: How to Listen to an Audiobook"
-permalink: kb/271/Q271254/
+permalink: /kb/271/Q271254/
 ---
 
 ## Q271254: Microsoft Reader: How to Listen to an Audiobook

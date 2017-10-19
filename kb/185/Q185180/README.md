@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185180: XFOR: Carriage Returns Not Preserved by Notes Connector"
-permalink: kb/185/Q185180/
+permalink: /kb/185/Q185180/
 ---
 
 ## Q185180: XFOR: Carriage Returns Not Preserved by Notes Connector

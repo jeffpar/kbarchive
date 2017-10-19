@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51823: Flt Sim: Can't Connect with Other User in Multiplayer Mode"
-permalink: kb/051/Q51823/
+permalink: /kb/051/Q51823/
 ---
 
 ## Q51823: Flt Sim: Can't Connect with Other User in Multiplayer Mode

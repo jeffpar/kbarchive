@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145608: PRB: Remote View of 2.x Table Changes Numeric Field Data Type"
-permalink: kb/145/Q145608/
+permalink: /kb/145/Q145608/
 ---
 
 ## Q145608: PRB: Remote View of 2.x Table Changes Numeric Field Data Type

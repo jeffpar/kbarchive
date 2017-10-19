@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162115: FIX: &quot;Setup Error 280 Object &lt;n&gt;&quot; with Long File Names"
-permalink: kb/162/Q162115/
+permalink: /kb/162/Q162115/
 ---
 
 ## Q162115: FIX: &quot;Setup Error 280 Object &lt;n&gt;&quot; with Long File Names

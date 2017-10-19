@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236157: XFOR: Adding Exchange Address Book to Lotus Notes Client"
-permalink: kb/236/Q236157/
+permalink: /kb/236/Q236157/
 ---
 
 ## Q236157: XFOR: Adding Exchange Address Book to Lotus Notes Client

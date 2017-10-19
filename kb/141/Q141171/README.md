@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141171: PRB: RDO Forward-Only Cursor Doesn't Allow MoveLast"
-permalink: kb/141/Q141171/
+permalink: /kb/141/Q141171/
 ---
 
 ## Q141171: PRB: RDO Forward-Only Cursor Doesn't Allow MoveLast

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151666: PRB: C2065/C2064 Errors when Using Win32 APIs in MFC Program"
-permalink: kb/151/Q151666/
+permalink: /kb/151/Q151666/
 ---
 
 ## Q151666: PRB: C2065/C2064 Errors when Using Win32 APIs in MFC Program

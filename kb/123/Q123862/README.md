@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123862: Opening a File Causes the Application to Close"
-permalink: kb/123/Q123862/
+permalink: /kb/123/Q123862/
 ---
 
 ## Q123862: Opening a File Causes the Application to Close

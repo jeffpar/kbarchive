@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87338: PRB: Font Files Not Found by Chinese Windows 3.0 Setup"
-permalink: kb/087/Q87338/
+permalink: /kb/087/Q87338/
 ---
 
 ## Q87338: PRB: Font Files Not Found by Chinese Windows 3.0 Setup

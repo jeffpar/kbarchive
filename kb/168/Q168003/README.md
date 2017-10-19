@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168003: FIX: Function Prototypes in comutil.h Missing Calling Convention"
-permalink: kb/168/Q168003/
+permalink: /kb/168/Q168003/
 ---
 
 ## Q168003: FIX: Function Prototypes in comutil.h Missing Calling Convention

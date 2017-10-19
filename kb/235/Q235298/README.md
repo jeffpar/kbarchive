@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235298: Microsoft Word 2000 Step by Step"
-permalink: kb/235/Q235298/
+permalink: /kb/235/Q235298/
 ---
 
 ## Q235298: Microsoft Word 2000 Step by Step

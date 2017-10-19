@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123332: BUG: True Type Font Display Problem with WINHELP ver 3.10.151"
-permalink: kb/123/Q123332/
+permalink: /kb/123/Q123332/
 ---
 
 ## Q123332: BUG: True Type Font Display Problem with WINHELP ver 3.10.151

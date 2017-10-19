@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87209: PROFS: How Are VM User Addresses Created Within MS Mail?"
-permalink: kb/087/Q87209/
+permalink: /kb/087/Q87209/
 ---
 
 ## Q87209: PROFS: How Are VM User Addresses Created Within MS Mail?

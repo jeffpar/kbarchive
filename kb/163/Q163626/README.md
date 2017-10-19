@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163626: XCLN: Error Occurs While Attempting to Access Personal Folders"
-permalink: kb/163/Q163626/
+permalink: /kb/163/Q163626/
 ---
 
 ## Q163626: XCLN: Error Occurs While Attempting to Access Personal Folders

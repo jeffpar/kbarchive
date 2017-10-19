@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194381: Err Msg: Unknown HTTP Server Type Msiis"
-permalink: kb/194/Q194381/
+permalink: /kb/194/Q194381/
 ---
 
 ## Q194381: Err Msg: Unknown HTTP Server Type Msiis

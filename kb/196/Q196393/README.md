@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196393: XADM: Move Server Wizard Error &quot;Server Contains Public Folders&quot;"
-permalink: kb/196/Q196393/
+permalink: /kb/196/Q196393/
 ---
 
 ## Q196393: XADM: Move Server Wizard Error &quot;Server Contains Public Folders&quot;

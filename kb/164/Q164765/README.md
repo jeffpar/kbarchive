@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164765: How to Enable WINS Proxy Agent in Windows NT 4.0"
-permalink: kb/164/Q164765/
+permalink: /kb/164/Q164765/
 ---
 
 ## Q164765: How to Enable WINS Proxy Agent in Windows NT 4.0

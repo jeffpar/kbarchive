@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308271: Adding Windows XP Professional As Target Platform to SMS 2.0 SP3"
-permalink: kb/308/Q308271/
+permalink: /kb/308/Q308271/
 ---
 
 ## Q308271: Adding Windows XP Professional As Target Platform to SMS 2.0 SP3

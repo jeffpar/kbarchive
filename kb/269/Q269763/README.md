@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269763: MSB in Concert: Minimum System Requirements for Windows"
-permalink: kb/269/Q269763/
+permalink: /kb/269/Q269763/
 ---
 
 ## Q269763: MSB in Concert: Minimum System Requirements for Windows

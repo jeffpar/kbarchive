@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176881: WD97: Err Msg: &quot;Fields Are Nested Too Deeply&quot; in Mail Merge"
-permalink: kb/176/Q176881/
+permalink: /kb/176/Q176881/
 ---
 
 ## Q176881: WD97: Err Msg: &quot;Fields Are Nested Too Deeply&quot; in Mail Merge

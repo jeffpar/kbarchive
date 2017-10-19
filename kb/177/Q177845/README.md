@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177845: Protect It!: Error Message When You Start Windows"
-permalink: kb/177/Q177845/
+permalink: /kb/177/Q177845/
 ---
 
 ## Q177845: Protect It!: Error Message When You Start Windows

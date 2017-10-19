@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195346: My Personal Tutor: System Info Button Is Not Visible"
-permalink: kb/195/Q195346/
+permalink: /kb/195/Q195346/
 ---
 
 ## Q195346: My Personal Tutor: System Info Button Is Not Visible

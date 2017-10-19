@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299343: SNMPMON.EXE Is Not Included With The Windows 2000 Resource Kits"
-permalink: kb/299/Q299343/
+permalink: /kb/299/Q299343/
 ---
 
 ## Q299343: SNMPMON.EXE Is Not Included With The Windows 2000 Resource Kits

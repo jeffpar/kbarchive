@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120921: Visual C++ Vers 2.0 README.WRI, Part 5 C++ Exception Handling"
-permalink: kb/120/Q120921/
+permalink: /kb/120/Q120921/
 ---
 
 ## Q120921: Visual C++ Vers 2.0 README.WRI, Part 5 C++ Exception Handling

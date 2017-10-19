@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246686: Inside SQL Server 7.0 Comments and Corrections"
-permalink: kb/246/Q246686/
+permalink: /kb/246/Q246686/
 ---
 
 ## Q246686: Inside SQL Server 7.0 Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153534: SMS: Retrieving SMSVIEW Data Using Microsoft Access"
-permalink: kb/153/Q153534/
+permalink: /kb/153/Q153534/
 ---
 
 ## Q153534: SMS: Retrieving SMSVIEW Data Using Microsoft Access

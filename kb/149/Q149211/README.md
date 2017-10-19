@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149211: Interlnk May Report Drive Letters Incorrectly"
-permalink: kb/149/Q149211/
+permalink: /kb/149/Q149211/
 ---
 
 ## Q149211: Interlnk May Report Drive Letters Incorrectly

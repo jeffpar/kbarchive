@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70744: Running MS-DOS Shell in 43-Line Mode w/Renaissance EGA Board"
-permalink: kb/070/Q70744/
+permalink: /kb/070/Q70744/
 ---
 
 ## Q70744: Running MS-DOS Shell in 43-Line Mode w/Renaissance EGA Board

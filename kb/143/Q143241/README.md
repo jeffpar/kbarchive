@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143241: XCLN: Improving the Security of PST Files"
-permalink: kb/143/Q143241/
+permalink: /kb/143/Q143241/
 ---
 
 ## Q143241: XCLN: Improving the Security of PST Files

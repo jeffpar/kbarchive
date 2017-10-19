@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141255: Help Menu Items Unavailable in Full Screen Mode"
-permalink: kb/141/Q141255/
+permalink: /kb/141/Q141255/
 ---
 
 ## Q141255: Help Menu Items Unavailable in Full Screen Mode

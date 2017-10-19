@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288540: XADM: No Traditional Spanish Templates in Exchange Server 5.5"
-permalink: kb/288/Q288540/
+permalink: /kb/288/Q288540/
 ---
 
 ## Q288540: XADM: No Traditional Spanish Templates in Exchange Server 5.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149456: FIX: Blank Child Record Added in One-to-Many Wizard Form"
-permalink: kb/149/Q149456/
+permalink: /kb/149/Q149456/
 ---
 
 ## Q149456: FIX: Blank Child Record Added in One-to-Many Wizard Form

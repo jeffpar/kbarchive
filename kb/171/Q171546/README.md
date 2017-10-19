@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171546: FIX: VB4 Apps with Unbound DBGrid Fail with VB5 DBGrid"
-permalink: kb/171/Q171546/
+permalink: /kb/171/Q171546/
 ---
 
 ## Q171546: FIX: VB4 Apps with Unbound DBGrid Fail with VB5 DBGrid

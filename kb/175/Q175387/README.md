@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175387: XFOR: LinkAge Directory Exchange Agent or Directory Exchange Man"
-permalink: kb/175/Q175387/
+permalink: /kb/175/Q175387/
 ---
 
 ## Q175387: XFOR: LinkAge Directory Exchange Agent or Directory Exchange Man

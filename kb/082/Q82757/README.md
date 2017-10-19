@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82757: Upgrade to 3.1 May Cause Printer Information to Reset"
-permalink: kb/082/Q82757/
+permalink: /kb/082/Q82757/
 ---
 
 ## Q82757: Upgrade to 3.1 May Cause Printer Information to Reset

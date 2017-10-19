@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251292: PRB: Closing a Modal Form Raises an Application Error"
-permalink: kb/251/Q251292/
+permalink: /kb/251/Q251292/
 ---
 
 ## Q251292: PRB: Closing a Modal Form Raises an Application Error

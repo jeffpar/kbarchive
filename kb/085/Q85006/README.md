@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85006: The Purpose of TBMI2.COM File"
-permalink: kb/085/Q85006/
+permalink: /kb/085/Q85006/
 ---
 
 ## Q85006: The Purpose of TBMI2.COM File

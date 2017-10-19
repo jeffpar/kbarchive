@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81496: Modules, Instances, and Tasks"
-permalink: kb/081/Q81496/
+permalink: /kb/081/Q81496/
 ---
 
 ## Q81496: Modules, Instances, and Tasks

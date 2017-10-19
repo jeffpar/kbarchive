@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162105: Cannot Run System Tools or MS Plus! Setup with Web.Max Demo"
-permalink: kb/162/Q162105/
+permalink: /kb/162/Q162105/
 ---
 
 ## Q162105: Cannot Run System Tools or MS Plus! Setup with Web.Max Demo

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86151: PROFS: Consequences of XEDITing a Config File"
-permalink: kb/086/Q86151/
+permalink: /kb/086/Q86151/
 ---
 
 ## Q86151: PROFS: Consequences of XEDITing a Config File

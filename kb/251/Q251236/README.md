@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251236: HOWTO: Programmatically Set the Number of Copies for a Report"
-permalink: kb/251/Q251236/
+permalink: /kb/251/Q251236/
 ---
 
 ## Q251236: HOWTO: Programmatically Set the Number of Copies for a Report

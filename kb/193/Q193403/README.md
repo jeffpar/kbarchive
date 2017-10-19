@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193403: FIX: Few Tables Listed when Using the Remote View Wizard"
-permalink: kb/193/Q193403/
+permalink: /kb/193/Q193403/
 ---
 
 ## Q193403: FIX: Few Tables Listed when Using the Remote View Wizard

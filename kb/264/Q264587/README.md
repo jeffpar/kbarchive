@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264587: XADM: Error with Import of the Home-MDB and Home-MTA Attributes"
-permalink: kb/264/Q264587/
+permalink: /kb/264/Q264587/
 ---
 
 ## Q264587: XADM: Error with Import of the Home-MDB and Home-MTA Attributes

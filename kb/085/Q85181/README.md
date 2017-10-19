@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85181: Central Point Backup Version 7.2 May Remap Keys in Windows 3.1"
-permalink: kb/085/Q85181/
+permalink: /kb/085/Q85181/
 ---
 
 ## Q85181: Central Point Backup Version 7.2 May Remap Keys in Windows 3.1

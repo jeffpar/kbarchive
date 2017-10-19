@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266385: Err Msg: The Stub Received Bad Data"
-permalink: kb/266/Q266385/
+permalink: /kb/266/Q266385/
 ---
 
 ## Q266385: Err Msg: The Stub Received Bad Data

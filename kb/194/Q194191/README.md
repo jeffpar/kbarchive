@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194191: XFOR: Notes SMTP Addresses Are Truncated upon Reply"
-permalink: kb/194/Q194191/
+permalink: /kb/194/Q194191/
 ---
 
 ## Q194191: XFOR: Notes SMTP Addresses Are Truncated upon Reply

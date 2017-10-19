@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191956: XADM: System Attendant (Mad.exe) Stops in ScSetDeleted"
-permalink: kb/191/Q191956/
+permalink: /kb/191/Q191956/
 ---
 
 ## Q191956: XADM: System Attendant (Mad.exe) Stops in ScSetDeleted

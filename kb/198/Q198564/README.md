@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198564: Internet Security for POP3, IMAP4, LDAP, SMTP, &amp; NNTP"
-permalink: kb/198/Q198564/
+permalink: /kb/198/Q198564/
 ---
 
 ## Q198564: Internet Security for POP3, IMAP4, LDAP, SMTP, &amp; NNTP

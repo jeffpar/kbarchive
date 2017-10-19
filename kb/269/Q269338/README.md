@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269338: Encarta 2001: How to Use the Copy to Hard Drive Feature"
-permalink: kb/269/Q269338/
+permalink: /kb/269/Q269338/
 ---
 
 ## Q269338: Encarta 2001: How to Use the Copy to Hard Drive Feature

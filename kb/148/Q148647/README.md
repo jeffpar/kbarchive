@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148647: Adding Unlisted Network Card Vendor ID to Network Monitor"
-permalink: kb/148/Q148647/
+permalink: /kb/148/Q148647/
 ---
 
 ## Q148647: Adding Unlisted Network Card Vendor ID to Network Monitor

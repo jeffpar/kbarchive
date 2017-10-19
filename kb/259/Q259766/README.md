@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259766: XADM: Installation of ADC Stops Responding at Schema Update"
-permalink: kb/259/Q259766/
+permalink: /kb/259/Q259766/
 ---
 
 ## Q259766: XADM: Installation of ADC Stops Responding at Schema Update

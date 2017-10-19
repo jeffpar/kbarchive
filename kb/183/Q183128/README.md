@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183128: Configuring an Attachmate Advanced ISCA Adapter for Legacy Mode"
-permalink: kb/183/Q183128/
+permalink: /kb/183/Q183128/
 ---
 
 ## Q183128: Configuring an Attachmate Advanced ISCA Adapter for Legacy Mode

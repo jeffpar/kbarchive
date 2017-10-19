@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75009: Using Call_Priority_VM_Event"
-permalink: kb/075/Q75009/
+permalink: /kb/075/Q75009/
 ---
 
 ## Q75009: Using Call_Priority_VM_Event

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151990: Mail Client Incorrectly Resolves Names with Extended Characters"
-permalink: kb/151/Q151990/
+permalink: /kb/151/Q151990/
 ---
 
 ## Q151990: Mail Client Incorrectly Resolves Names with Extended Characters

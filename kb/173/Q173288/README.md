@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173288: PPT: Sample Code to Update Links in a Graph Datasheet"
-permalink: kb/173/Q173288/
+permalink: /kb/173/Q173288/
 ---
 
 ## Q173288: PPT: Sample Code to Update Links in a Graph Datasheet

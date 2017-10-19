@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108587: HOWTO: Get Current CDocument or CView from Anywhere"
-permalink: kb/108/Q108587/
+permalink: /kb/108/Q108587/
 ---
 
 ## Q108587: HOWTO: Get Current CDocument or CView from Anywhere

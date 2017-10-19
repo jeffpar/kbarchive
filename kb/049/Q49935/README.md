@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49935: PRB: L2028 Error Caused by HEAPSIZE, STACKSIZE and DGROUP Size"
-permalink: kb/049/Q49935/
+permalink: /kb/049/Q49935/
 ---
 
 ## Q49935: PRB: L2028 Error Caused by HEAPSIZE, STACKSIZE and DGROUP Size

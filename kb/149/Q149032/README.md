@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149032: PRB: VB 3.0 OLE Clients Do not Repaint Before OLE Call Returns"
-permalink: kb/149/Q149032/
+permalink: /kb/149/Q149032/
 ---
 
 ## Q149032: PRB: VB 3.0 OLE Clients Do not Repaint Before OLE Call Returns

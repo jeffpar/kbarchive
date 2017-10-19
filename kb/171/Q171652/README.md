@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171652: HOWTO: Retrieve Individual Bytes from a Multi-Byte Type in VB"
-permalink: kb/171/Q171652/
+permalink: /kb/171/Q171652/
 ---
 
 ## Q171652: HOWTO: Retrieve Individual Bytes from a Multi-Byte Type in VB

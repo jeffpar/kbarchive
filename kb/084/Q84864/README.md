@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84864: Using MS-DOS 4.x Shell Under MS-DOS 5.0 and later"
-permalink: kb/084/Q84864/
+permalink: /kb/084/Q84864/
 ---
 
 ## Q84864: Using MS-DOS 4.x Shell Under MS-DOS 5.0 and later

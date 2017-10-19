@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290995: SMS: Problems Updating Off-Line License Metering Logs"
-permalink: kb/290/Q290995/
+permalink: /kb/290/Q290995/
 ---
 
 ## Q290995: SMS: Problems Updating Off-Line License Metering Logs

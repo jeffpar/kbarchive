@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58495: MS-DOS System Date Cannot Have a Year Past 2099"
-permalink: kb/058/Q58495/
+permalink: /kb/058/Q58495/
 ---
 
 ## Q58495: MS-DOS System Date Cannot Have a Year Past 2099

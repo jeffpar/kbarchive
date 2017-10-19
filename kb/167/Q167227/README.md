@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167227: HOWTO: Create and Update a Replicated Access Database"
-permalink: kb/167/Q167227/
+permalink: /kb/167/Q167227/
 ---
 
 ## Q167227: HOWTO: Create and Update a Replicated Access Database

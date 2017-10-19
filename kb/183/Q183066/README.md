@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183066: Quickshelf 98: Article Opens Behind Search Panel"
-permalink: kb/183/Q183066/
+permalink: /kb/183/Q183066/
 ---
 
 ## Q183066: Quickshelf 98: Article Opens Behind Search Panel

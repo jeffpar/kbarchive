@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274941: Combat Flight Simulator 2: Documentation Errors in Pilot Manual"
-permalink: kb/274/Q274941/
+permalink: /kb/274/Q274941/
 ---
 
 ## Q274941: Combat Flight Simulator 2: Documentation Errors in Pilot Manual

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306208: BUG: SAK: German SAK Has Incorrect Version Number"
-permalink: kb/306/Q306208/
+permalink: /kb/306/Q306208/
 ---
 
 ## Q306208: BUG: SAK: German SAK Has Incorrect Version Number

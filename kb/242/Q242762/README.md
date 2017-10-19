@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242762: XFOR: Error Creating Connectivity Controller Service"
-permalink: kb/242/Q242762/
+permalink: /kb/242/Q242762/
 ---
 
 ## Q242762: XFOR: Error Creating Connectivity Controller Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161425: WinNT 4.0 SP2 Multihomed Computer Connection Enhancement"
-permalink: kb/161/Q161425/
+permalink: /kb/161/Q161425/
 ---
 
 ## Q161425: WinNT 4.0 SP2 Multihomed Computer Connection Enhancement

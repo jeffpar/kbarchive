@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44725: INFO: printf() and 512-Byte I/O Buffer"
-permalink: kb/044/Q44725/
+permalink: /kb/044/Q44725/
 ---
 
 ## Q44725: INFO: printf() and 512-Byte I/O Buffer

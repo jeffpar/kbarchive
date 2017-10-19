@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196962: WD97: How to Number Chapters, Page No., Appendix, and Title"
-permalink: kb/196/Q196962/
+permalink: /kb/196/Q196962/
 ---
 
 ## Q196962: WD97: How to Number Chapters, Page No., Appendix, and Title

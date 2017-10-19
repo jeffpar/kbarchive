@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97048: HOWTO: Restore Corrupt or Deleted Visual C++ Group File"
-permalink: kb/097/Q97048/
+permalink: /kb/097/Q97048/
 ---
 
 ## Q97048: HOWTO: Restore Corrupt or Deleted Visual C++ Group File

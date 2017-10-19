@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295628: Understanding Active Directory Services Comments and Corrections"
-permalink: kb/295/Q295628/
+permalink: /kb/295/Q295628/
 ---
 
 ## Q295628: Understanding Active Directory Services Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119493: NetBIOS over TCP/IP Name Resolution and WINS"
-permalink: kb/119/Q119493/
+permalink: /kb/119/Q119493/
 ---
 
 ## Q119493: NetBIOS over TCP/IP Name Resolution and WINS

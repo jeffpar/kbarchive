@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184070: XCLN: URL Opened in Outlook Today Starts Internet Explorer"
-permalink: kb/184/Q184070/
+permalink: /kb/184/Q184070/
 ---
 
 ## Q184070: XCLN: URL Opened in Outlook Today Starts Internet Explorer

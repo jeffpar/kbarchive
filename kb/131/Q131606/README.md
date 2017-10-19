@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131606: AT Command with /Interactive Switch Hangs Access 2.0"
-permalink: kb/131/Q131606/
+permalink: /kb/131/Q131606/
 ---
 
 ## Q131606: AT Command with /Interactive Switch Hangs Access 2.0

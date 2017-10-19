@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219368: CPUID Function Incorrect on Mobile Pentium II or Mobile Celeron"
-permalink: kb/219/Q219368/
+permalink: /kb/219/Q219368/
 ---
 
 ## Q219368: CPUID Function Incorrect on Mobile Pentium II or Mobile Celeron

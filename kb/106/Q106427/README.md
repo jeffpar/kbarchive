@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106427: MS-DOS 6.2x ScanDisk Fails to Correct MDBPB Problem"
-permalink: kb/106/Q106427/
+permalink: /kb/106/Q106427/
 ---
 
 ## Q106427: MS-DOS 6.2x ScanDisk Fails to Correct MDBPB Problem

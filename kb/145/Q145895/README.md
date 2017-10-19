@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145895: Cinemania 96: Facts from Online Update Are Inactive"
-permalink: kb/145/Q145895/
+permalink: /kb/145/Q145895/
 ---
 
 ## Q145895: Cinemania 96: Facts from Online Update Are Inactive

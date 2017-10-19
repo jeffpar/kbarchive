@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250321: BUG: CString::Delete() Does Not Return the Correct Value"
-permalink: kb/250/Q250321/
+permalink: /kb/250/Q250321/
 ---
 
 ## Q250321: BUG: CString::Delete() Does Not Return the Correct Value

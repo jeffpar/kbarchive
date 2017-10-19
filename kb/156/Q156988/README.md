@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156988: Error Message: Unable to Load VGA Palette"
-permalink: kb/156/Q156988/
+permalink: /kb/156/Q156988/
 ---
 
 ## Q156988: Error Message: Unable to Load VGA Palette

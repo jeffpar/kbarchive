@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130577: PRB: Leading Equals Sign (=) Not Displayed If RowSource Value"
-permalink: kb/130/Q130577/
+permalink: /kb/130/Q130577/
 ---
 
 ## Q130577: PRB: Leading Equals Sign (=) Not Displayed If RowSource Value

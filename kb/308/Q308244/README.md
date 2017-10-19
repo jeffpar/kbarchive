@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308244: NTLM Password Changes Fail After Q299444 &amp; Q310625 Applied"
-permalink: kb/308/Q308244/
+permalink: /kb/308/Q308244/
 ---
 
 ## Q308244: NTLM Password Changes Fail After Q299444 &amp; Q310625 Applied

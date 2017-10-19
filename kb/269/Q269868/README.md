@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269868: How to Bypass the Authentication Prompt When You Use OWA"
-permalink: kb/269/Q269868/
+permalink: /kb/269/Q269868/
 ---
 
 ## Q269868: How to Bypass the Authentication Prompt When You Use OWA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130972: Installing Windows Sound System Proofreader Menu in Lotus 5.0"
-permalink: kb/130/Q130972/
+permalink: /kb/130/Q130972/
 ---
 
 ## Q130972: Installing Windows Sound System Proofreader Menu in Lotus 5.0

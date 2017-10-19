@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232247: Using Network Monitor to Capture Traffic Using a Remote Agent"
-permalink: kb/232/Q232247/
+permalink: /kb/232/Q232247/
 ---
 
 ## Q232247: Using Network Monitor to Capture Traffic Using a Remote Agent

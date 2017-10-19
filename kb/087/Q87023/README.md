@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87023: SMTP: TCP/IP Stacks Supported by the Mail Gateway to SMTP"
-permalink: kb/087/Q87023/
+permalink: /kb/087/Q87023/
 ---
 
 ## Q87023: SMTP: TCP/IP Stacks Supported by the Mail Gateway to SMTP

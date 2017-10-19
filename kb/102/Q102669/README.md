@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102669: PC DB: Updating a 2.1 PO to 3.0 Changes GRPMEM.GLB Variable"
-permalink: kb/102/Q102669/
+permalink: /kb/102/Q102669/
 ---
 
 ## Q102669: PC DB: Updating a 2.1 PO to 3.0 Changes GRPMEM.GLB Variable

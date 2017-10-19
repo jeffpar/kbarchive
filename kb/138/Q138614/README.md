@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138614: Description of Foxpro.int Table"
-permalink: kb/138/Q138614/
+permalink: /kb/138/Q138614/
 ---
 
 ## Q138614: Description of Foxpro.int Table

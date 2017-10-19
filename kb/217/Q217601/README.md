@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217601: XADM: Incorrect Time Appears After Directory Is Modified"
-permalink: kb/217/Q217601/
+permalink: /kb/217/Q217601/
 ---
 
 ## Q217601: XADM: Incorrect Time Appears After Directory Is Modified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162419: STOP 0x0000001e Installing IBM PeerMaster MCA Adapter"
-permalink: kb/162/Q162419/
+permalink: /kb/162/Q162419/
 ---
 
 ## Q162419: STOP 0x0000001e Installing IBM PeerMaster MCA Adapter

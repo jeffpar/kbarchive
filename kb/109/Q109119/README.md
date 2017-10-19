@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109119: Large File Copy Failures Using File Manager"
-permalink: kb/109/Q109119/
+permalink: /kb/109/Q109119/
 ---
 
 ## Q109119: Large File Copy Failures Using File Manager

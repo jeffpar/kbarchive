@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271725: Font Related Issues in Multimedia Products"
-permalink: kb/271/Q271725/
+permalink: /kb/271/Q271725/
 ---
 
 ## Q271725: Font Related Issues in Multimedia Products

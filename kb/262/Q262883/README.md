@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262883: SAMPLE: NEWVBTERM.EXE MSComm Control Techniques"
-permalink: kb/262/Q262883/
+permalink: /kb/262/Q262883/
 ---
 
 ## Q262883: SAMPLE: NEWVBTERM.EXE MSComm Control Techniques

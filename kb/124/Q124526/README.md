@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124526: HOWTO: Use the Windows Command Line"
-permalink: kb/124/Q124526/
+permalink: /kb/124/Q124526/
 ---
 
 ## Q124526: HOWTO: Use the Windows Command Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180165: WD: AutoCorrect Feature Limitations"
-permalink: kb/180/Q180165/
+permalink: /kb/180/Q180165/
 ---
 
 ## Q180165: WD: AutoCorrect Feature Limitations

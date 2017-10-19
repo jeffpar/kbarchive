@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196163: XADM: Move Server Wizard Batch Mode Displays KMS Error Twice"
-permalink: kb/196/Q196163/
+permalink: /kb/196/Q196163/
 ---
 
 ## Q196163: XADM: Move Server Wizard Batch Mode Displays KMS Error Twice

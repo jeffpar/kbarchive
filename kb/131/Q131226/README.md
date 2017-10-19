@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131226: INFO: NERR_PasswordTooShort Error Returned for Other Errors"
-permalink: kb/131/Q131226/
+permalink: /kb/131/Q131226/
 ---
 
 ## Q131226: INFO: NERR_PasswordTooShort Error Returned for Other Errors

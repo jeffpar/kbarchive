@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124850: Writer: How to Decode a Document with a Password"
-permalink: kb/124/Q124850/
+permalink: /kb/124/Q124850/
 ---
 
 ## Q124850: Writer: How to Decode a Document with a Password

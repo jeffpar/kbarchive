@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166563: XADM: System Attendant Stops While Tracking a Message"
-permalink: kb/166/Q166563/
+permalink: /kb/166/Q166563/
 ---
 
 ## Q166563: XADM: System Attendant Stops While Tracking a Message

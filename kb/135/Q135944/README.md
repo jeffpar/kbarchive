@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135944: Problems Using WISE Setup Toolkit When System Agent Is Running"
-permalink: kb/135/Q135944/
+permalink: /kb/135/Q135944/
 ---
 
 ## Q135944: Problems Using WISE Setup Toolkit When System Agent Is Running

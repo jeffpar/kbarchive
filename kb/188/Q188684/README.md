@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188684: XADM: Units of Information Store Delivery Time PerfMon Counters"
-permalink: kb/188/Q188684/
+permalink: /kb/188/Q188684/
 ---
 
 ## Q188684: XADM: Units of Information Store Delivery Time PerfMon Counters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142735: DOCERR: Error #1966 Has Incorrect Help Explanation"
-permalink: kb/142/Q142735/
+permalink: /kb/142/Q142735/
 ---
 
 ## Q142735: DOCERR: Error #1966 Has Incorrect Help Explanation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163023: FIX: VFP 3 Form or Class Modified in VFP 5 Loses Method Code"
-permalink: kb/163/Q163023/
+permalink: /kb/163/Q163023/
 ---
 
 ## Q163023: FIX: VFP 3 Form or Class Modified in VFP 5 Loses Method Code

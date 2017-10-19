@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318339: PRB: Event Log Errors in Index Server if Address Space Exhausted"
-permalink: kb/318/Q318339/
+permalink: /kb/318/Q318339/
 ---
 
 ## Q318339: PRB: Event Log Errors in Index Server if Address Space Exhausted

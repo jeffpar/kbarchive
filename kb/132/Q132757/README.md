@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132757: GP Fault Printing a File in CorelDRAW"
-permalink: kb/132/Q132757/
+permalink: /kb/132/Q132757/
 ---
 
 ## Q132757: GP Fault Printing a File in CorelDRAW

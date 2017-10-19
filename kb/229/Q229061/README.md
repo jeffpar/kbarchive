@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229061: Cannot Manage Permissions from Within a Dfs 4.1 Tree"
-permalink: kb/229/Q229061/
+permalink: /kb/229/Q229061/
 ---
 
 ## Q229061: Cannot Manage Permissions from Within a Dfs 4.1 Tree

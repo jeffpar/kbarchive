@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157016: XCLN: Saving an Encrypted Message to the IS Can Delete Content"
-permalink: kb/157/Q157016/
+permalink: /kb/157/Q157016/
 ---
 
 ## Q157016: XCLN: Saving an Encrypted Message to the IS Can Delete Content

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189296: Inside DirectX Comments and Corrections"
-permalink: kb/189/Q189296/
+permalink: /kb/189/Q189296/
 ---
 
 ## Q189296: Inside DirectX Comments and Corrections

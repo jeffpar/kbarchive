@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196193: PU Passthru Connection Fails To Activate During XID Negotiation"
-permalink: kb/196/Q196193/
+permalink: /kb/196/Q196193/
 ---
 
 ## Q196193: PU Passthru Connection Fails To Activate During XID Negotiation

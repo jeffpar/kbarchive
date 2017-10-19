@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194754: PRB: SETUP.EXE File Linked to Missing Export OLEAUT32.DLL:185"
-permalink: kb/194/Q194754/
+permalink: /kb/194/Q194754/
 ---
 
 ## Q194754: PRB: SETUP.EXE File Linked to Missing Export OLEAUT32.DLL:185

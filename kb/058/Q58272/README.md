@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58272: Ericsson Displays Not Supported"
-permalink: kb/058/Q58272/
+permalink: /kb/058/Q58272/
 ---
 
 ## Q58272: Ericsson Displays Not Supported

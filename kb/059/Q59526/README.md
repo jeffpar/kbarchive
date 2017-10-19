@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59526: Multiple Dependency Blocks Are Not Cumulative"
-permalink: kb/059/Q59526/
+permalink: /kb/059/Q59526/
 ---
 
 ## Q59526: Multiple Dependency Blocks Are Not Cumulative

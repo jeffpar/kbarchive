@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221624: FIX:Extra EOF Char Inserted with SELECT Within Transaction"
-permalink: kb/221/Q221624/
+permalink: /kb/221/Q221624/
 ---
 
 ## Q221624: FIX:Extra EOF Char Inserted with SELECT Within Transaction

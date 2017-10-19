@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303668: HOW TO: Configure Remote Domains in Windows 2000"
-permalink: kb/303/Q303668/
+permalink: /kb/303/Q303668/
 ---
 
 ## Q303668: HOW TO: Configure Remote Domains in Windows 2000

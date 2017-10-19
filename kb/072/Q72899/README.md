@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72899: SAMPLE: VPostD.exe Calls PostMessage from a Virtual Device (VxD)"
-permalink: kb/072/Q72899/
+permalink: /kb/072/Q72899/
 ---
 
 ## Q72899: SAMPLE: VPostD.exe Calls PostMessage from a Virtual Device (VxD)

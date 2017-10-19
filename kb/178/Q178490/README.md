@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178490: PRB: &quot;Can't Assign To Read-Only Property&quot; Error Message"
-permalink: kb/178/Q178490/
+permalink: /kb/178/Q178490/
 ---
 
 ## Q178490: PRB: &quot;Can't Assign To Read-Only Property&quot; Error Message

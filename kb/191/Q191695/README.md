@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191695: PRB: VFP ODBC Driver Errors When Using Left Outer Join"
-permalink: kb/191/Q191695/
+permalink: /kb/191/Q191695/
 ---
 
 ## Q191695: PRB: VFP ODBC Driver Errors When Using Left Outer Join

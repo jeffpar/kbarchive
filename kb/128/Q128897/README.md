@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128897: FIX: GP Fault When For Loop Used with Unsigned Char Index"
-permalink: kb/128/Q128897/
+permalink: /kb/128/Q128897/
 ---
 
 ## Q128897: FIX: GP Fault When For Loop Used with Unsigned Char Index

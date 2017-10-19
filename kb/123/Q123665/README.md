@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123665: PRB: DOSXNT: Fatal Error DX1410: Cannot Load Program"
-permalink: kb/123/Q123665/
+permalink: /kb/123/Q123665/
 ---
 
 ## Q123665: PRB: DOSXNT: Fatal Error DX1410: Cannot Load Program

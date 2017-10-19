@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135023: DOC: Error Code 1744 Documentation Is Incorrect"
-permalink: kb/135/Q135023/
+permalink: /kb/135/Q135023/
 ---
 
 ## Q135023: DOC: Error Code 1744 Documentation Is Incorrect

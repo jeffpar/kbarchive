@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229097: SMS: Possible Helpdesk TCP and UDP Port Conflicts"
-permalink: kb/229/Q229097/
+permalink: /kb/229/Q229097/
 ---
 
 ## Q229097: SMS: Possible Helpdesk TCP and UDP Port Conflicts

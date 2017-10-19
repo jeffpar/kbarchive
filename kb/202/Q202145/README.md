@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202145: PRB: Source Control Tool Shows Font Property Deleted on Check-in"
-permalink: kb/202/Q202145/
+permalink: /kb/202/Q202145/
 ---
 
 ## Q202145: PRB: Source Control Tool Shows Font Property Deleted on Check-in

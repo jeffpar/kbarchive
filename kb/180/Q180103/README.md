@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180103: Flight Simulator 98/2000: Instrument Panel Is Difficult to Read"
-permalink: kb/180/Q180103/
+permalink: /kb/180/Q180103/
 ---
 
 ## Q180103: Flight Simulator 98/2000: Instrument Panel Is Difficult to Read

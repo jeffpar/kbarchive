@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281327: Casino: Black Screen When You Press ALT+TAB to Return to Casino"
-permalink: kb/281/Q281327/
+permalink: /kb/281/Q281327/
 ---
 
 ## Q281327: Casino: Black Screen When You Press ALT+TAB to Return to Casino

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93447: PRB: C2060 or C1004 Error Occurs Using TRY/CATCH Macros"
-permalink: kb/093/Q93447/
+permalink: /kb/093/Q93447/
 ---
 
 ## Q93447: PRB: C2060 or C1004 Error Occurs Using TRY/CATCH Macros

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176553: INFO: Database Architecture Changes in 4.0, 4.0a, and 5.0"
-permalink: kb/176/Q176553/
+permalink: /kb/176/Q176553/
 ---
 
 ## Q176553: INFO: Database Architecture Changes in 4.0, 4.0a, and 5.0

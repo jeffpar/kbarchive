@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265887: SMS 1.2 Remote Control Agent May Not Start with NIC Teaming"
-permalink: kb/265/Q265887/
+permalink: /kb/265/Q265887/
 ---
 
 ## Q265887: SMS 1.2 Remote Control Agent May Not Start with NIC Teaming

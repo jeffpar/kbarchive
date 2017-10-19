@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129858: Error C00000BC When Changing Password in Trusted Domain"
-permalink: kb/129/Q129858/
+permalink: /kb/129/Q129858/
 ---
 
 ## Q129858: Error C00000BC When Changing Password in Trusted Domain

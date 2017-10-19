@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210460: PRB: Data Truncated Error With CRecordset"
-permalink: kb/210/Q210460/
+permalink: /kb/210/Q210460/
 ---
 
 ## Q210460: PRB: Data Truncated Error With CRecordset

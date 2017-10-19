@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161631: WD97: How to Reset Word 97 Most Recently Used (MRU) Lists"
-permalink: kb/161/Q161631/
+permalink: /kb/161/Q161631/
 ---
 
 ## Q161631: WD97: How to Reset Word 97 Most Recently Used (MRU) Lists

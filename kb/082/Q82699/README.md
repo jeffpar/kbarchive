@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82699: Running Windows 3.0 from Windows 3.1"
-permalink: kb/082/Q82699/
+permalink: /kb/082/Q82699/
 ---
 
 ## Q82699: Running Windows 3.0 from Windows 3.1

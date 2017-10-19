@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325927: Unknown Comp Filter Priority When You Turn On HTTP Compression"
-permalink: kb/325/Q325927/
+permalink: /kb/325/Q325927/
 ---
 
 ## Q325927: Unknown Comp Filter Priority When You Turn On HTTP Compression

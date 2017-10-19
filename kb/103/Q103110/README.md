@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103110: Golf: ATI Ultra Video Drivers May Cause System to Lock Up"
-permalink: kb/103/Q103110/
+permalink: /kb/103/Q103110/
 ---
 
 ## Q103110: Golf: ATI Ultra Video Drivers May Cause System to Lock Up

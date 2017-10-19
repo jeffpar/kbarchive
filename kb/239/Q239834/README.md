@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239834: How to Remove the NWLink IPX/SPX Protocol, CSNW, and GSNW"
-permalink: kb/239/Q239834/
+permalink: /kb/239/Q239834/
 ---
 
 ## Q239834: How to Remove the NWLink IPX/SPX Protocol, CSNW, and GSNW

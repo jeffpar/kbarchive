@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153660: SMS Administrator Loses Remote Control of IPX Clients"
-permalink: kb/153/Q153660/
+permalink: /kb/153/Q153660/
 ---
 
 ## Q153660: SMS Administrator Loses Remote Control of IPX Clients

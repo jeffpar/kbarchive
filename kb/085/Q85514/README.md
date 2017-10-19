@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85514: INFO: _DEBUG Must Be Defined When Linking to Debug Libraries"
-permalink: kb/085/Q85514/
+permalink: /kb/085/Q85514/
 ---
 
 ## Q85514: INFO: _DEBUG Must Be Defined When Linking to Debug Libraries

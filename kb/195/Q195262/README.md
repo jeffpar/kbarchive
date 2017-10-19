@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195262: HOWTO: Delete ODBC Data Source Using SqlConfigDataSource"
-permalink: kb/195/Q195262/
+permalink: /kb/195/Q195262/
 ---
 
 ## Q195262: HOWTO: Delete ODBC Data Source Using SqlConfigDataSource

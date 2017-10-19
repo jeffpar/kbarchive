@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228929: WD97: IPF Merging Data File After Numbering Records"
-permalink: kb/228/Q228929/
+permalink: /kb/228/Q228929/
 ---
 
 ## Q228929: WD97: IPF Merging Data File After Numbering Records

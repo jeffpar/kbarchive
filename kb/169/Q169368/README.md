@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169368: PRB: 3D Frame Control Causes Modal Form to Become Invisible"
-permalink: kb/169/Q169368/
+permalink: /kb/169/Q169368/
 ---
 
 ## Q169368: PRB: 3D Frame Control Causes Modal Form to Become Invisible

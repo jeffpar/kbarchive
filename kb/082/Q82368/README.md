@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82368: Linked Excel Charts Lose Patterns When Printed in Write"
-permalink: kb/082/Q82368/
+permalink: /kb/082/Q82368/
 ---
 
 ## Q82368: Linked Excel Charts Lose Patterns When Printed in Write

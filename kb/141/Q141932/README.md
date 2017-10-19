@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141932: HOWTO: Create a Basic Add-In Using Visual Basic 4.0"
-permalink: kb/141/Q141932/
+permalink: /kb/141/Q141932/
 ---
 
 ## Q141932: HOWTO: Create a Basic Add-In Using Visual Basic 4.0

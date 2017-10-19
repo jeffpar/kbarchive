@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171521: FIX: Non-Creatable Class Causes Loss of Binary Compatibility"
-permalink: kb/171/Q171521/
+permalink: /kb/171/Q171521/
 ---
 
 ## Q171521: FIX: Non-Creatable Class Causes Loss of Binary Compatibility

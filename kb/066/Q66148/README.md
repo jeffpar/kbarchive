@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66148: Setup Reports Error Copying Files in Entertainment Pack"
-permalink: kb/066/Q66148/
+permalink: /kb/066/Q66148/
 ---
 
 ## Q66148: Setup Reports Error Copying Files in Entertainment Pack

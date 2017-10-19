@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114804: Error Running NTBACKUP on NCR System 3000 Model 3410"
-permalink: kb/114/Q114804/
+permalink: /kb/114/Q114804/
 ---
 
 ## Q114804: Error Running NTBACKUP on NCR System 3000 Model 3410

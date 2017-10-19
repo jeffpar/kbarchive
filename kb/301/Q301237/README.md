@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301237: HOWTO: Create a Visual Basic Project Template For Creating IIS C"
-permalink: kb/301/Q301237/
+permalink: /kb/301/Q301237/
 ---
 
 ## Q301237: HOWTO: Create a Visual Basic Project Template For Creating IIS C

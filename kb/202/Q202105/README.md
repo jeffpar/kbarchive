@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202105: XFOR: Accept/Decline Message ID Mismatch on a Meeting Invitatio"
-permalink: kb/202/Q202105/
+permalink: /kb/202/Q202105/
 ---
 
 ## Q202105: XFOR: Accept/Decline Message ID Mismatch on a Meeting Invitatio

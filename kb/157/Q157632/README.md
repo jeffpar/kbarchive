@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157632: XADM: Client Hangs or Prompts for Domain Credentials"
-permalink: kb/157/Q157632/
+permalink: /kb/157/Q157632/
 ---
 
 ## Q157632: XADM: Client Hangs or Prompts for Domain Credentials

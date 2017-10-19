@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124630: After Dark Err Msg: &quot;An Error Has Occurred in Your Program...&quot;"
-permalink: kb/124/Q124630/
+permalink: /kb/124/Q124630/
 ---
 
 ## Q124630: After Dark Err Msg: &quot;An Error Has Occurred in Your Program...&quot;

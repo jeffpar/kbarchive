@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154784: Windows NT Operating System SNMP OID Incorrect"
-permalink: kb/154/Q154784/
+permalink: /kb/154/Q154784/
 ---
 
 ## Q154784: Windows NT Operating System SNMP OID Incorrect

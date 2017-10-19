@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45628: Mac Wkst: Graphic Images Not Saved as a File"
-permalink: kb/045/Q45628/
+permalink: /kb/045/Q45628/
 ---
 
 ## Q45628: Mac Wkst: Graphic Images Not Saved as a File

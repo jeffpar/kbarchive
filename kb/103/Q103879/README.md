@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103879: Overview: Read Server Message Block Request and Response"
-permalink: kb/103/Q103879/
+permalink: /kb/103/Q103879/
 ---
 
 ## Q103879: Overview: Read Server Message Block Request and Response

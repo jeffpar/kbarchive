@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220946: Symptoms That You May Experience If the Lsass.exe Process Stops"
-permalink: kb/220/Q220946/
+permalink: /kb/220/Q220946/
 ---
 
 ## Q220946: Symptoms That You May Experience If the Lsass.exe Process Stops

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164300: DNS Registry Parameter - AddressAnswerLimit"
-permalink: kb/164/Q164300/
+permalink: /kb/164/Q164300/
 ---
 
 ## Q164300: DNS Registry Parameter - AddressAnswerLimit

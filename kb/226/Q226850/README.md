@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226850: SMS: Software Metering Server Installation Generates Error 997"
-permalink: kb/226/Q226850/
+permalink: /kb/226/Q226850/
 ---
 
 ## Q226850: SMS: Software Metering Server Installation Generates Error 997

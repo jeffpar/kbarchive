@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79249: Restore Command Isn't Available in Maximized Group Window"
-permalink: kb/079/Q79249/
+permalink: /kb/079/Q79249/
 ---
 
 ## Q79249: Restore Command Isn't Available in Maximized Group Window

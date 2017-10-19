@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84042: Windows Err Msg: Cannot Run This Program..."
-permalink: kb/084/Q84042/
+permalink: /kb/084/Q84042/
 ---
 
 ## Q84042: Windows Err Msg: Cannot Run This Program...

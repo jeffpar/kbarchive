@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185710: STOP 0x3F Error When SFGW Fails to Create DBCS Folder"
-permalink: kb/185/Q185710/
+permalink: /kb/185/Q185710/
 ---
 
 ## Q185710: STOP 0x3F Error When SFGW Fails to Create DBCS Folder

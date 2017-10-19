@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71614: Minesweeper Will Not Save High Scores"
-permalink: kb/071/Q71614/
+permalink: /kb/071/Q71614/
 ---
 
 ## Q71614: Minesweeper Will Not Save High Scores

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309685: XCON: The Internet Mail Service Stops in ConnectToNextMXHost"
-permalink: kb/309/Q309685/
+permalink: /kb/309/Q309685/
 ---
 
 ## Q309685: XCON: The Internet Mail Service Stops in ConnectToNextMXHost

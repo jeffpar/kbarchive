@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105831: Why Should I Install MS-DOS 6.22?"
-permalink: kb/105/Q105831/
+permalink: /kb/105/Q105831/
 ---
 
 ## Q105831: Why Should I Install MS-DOS 6.22?

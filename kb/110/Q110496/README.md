@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110496: PC Gen: PODIAG.EXE Creates New REQTRANS.GLB Using REQCONF.GLB"
-permalink: kb/110/Q110496/
+permalink: /kb/110/Q110496/
 ---
 
 ## Q110496: PC Gen: PODIAG.EXE Creates New REQTRANS.GLB Using REQCONF.GLB

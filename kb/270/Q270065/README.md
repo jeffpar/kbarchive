@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270065: XADM: How to Troubleshoot New Mail Notification Issues"
-permalink: kb/270/Q270065/
+permalink: /kb/270/Q270065/
 ---
 
 ## Q270065: XADM: How to Troubleshoot New Mail Notification Issues

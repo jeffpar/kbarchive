@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310626: TAPI Server Leaks Memory When Multiple Programs Own Calls"
-permalink: kb/310/Q310626/
+permalink: /kb/310/Q310626/
 ---
 
 ## Q310626: TAPI Server Leaks Memory When Multiple Programs Own Calls

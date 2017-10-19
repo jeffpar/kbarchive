@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200898: SMS: How to Use Systems Management Server Through a Firewall"
-permalink: kb/200/Q200898/
+permalink: /kb/200/Q200898/
 ---
 
 ## Q200898: SMS: How to Use Systems Management Server Through a Firewall

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86093: PC Win: Attach Dialog Box May Update Improperly"
-permalink: kb/086/Q86093/
+permalink: /kb/086/Q86093/
 ---
 
 ## Q86093: PC Win: Attach Dialog Box May Update Improperly

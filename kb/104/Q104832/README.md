@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104832: Cinemania: Some Keyboard Equivalents Don't Work"
-permalink: kb/104/Q104832/
+permalink: /kb/104/Q104832/
 ---
 
 ## Q104832: Cinemania: Some Keyboard Equivalents Don't Work

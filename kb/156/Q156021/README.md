@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156021: HOWTO: Use the FillColor vs. BackColor Properties of a Shape"
-permalink: kb/156/Q156021/
+permalink: /kb/156/Q156021/
 ---
 
 ## Q156021: HOWTO: Use the FillColor vs. BackColor Properties of a Shape

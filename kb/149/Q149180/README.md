@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149180: Dualboot of WinNT 3.51 and 4.0 Fails After SP Installation"
-permalink: kb/149/Q149180/
+permalink: /kb/149/Q149180/
 ---
 
 ## Q149180: Dualboot of WinNT 3.51 and 4.0 Fails After SP Installation

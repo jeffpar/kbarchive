@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189864: BUG: Data Written to Table Despite Textbox Returning False"
-permalink: kb/189/Q189864/
+permalink: /kb/189/Q189864/
 ---
 
 ## Q189864: BUG: Data Written to Table Despite Textbox Returning False

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149616: FIX: Developer Studio May Hang When Debug Session Starts/Ends"
-permalink: kb/149/Q149616/
+permalink: /kb/149/Q149616/
 ---
 
 ## Q149616: FIX: Developer Studio May Hang When Debug Session Starts/Ends

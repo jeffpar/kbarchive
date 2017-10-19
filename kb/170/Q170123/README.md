@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170123: FP: Clicking &quot;Preview In Browser&quot; Saves Work in Progress"
-permalink: kb/170/Q170123/
+permalink: /kb/170/Q170123/
 ---
 
 ## Q170123: FP: Clicking &quot;Preview In Browser&quot; Saves Work in Progress

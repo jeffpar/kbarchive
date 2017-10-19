@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150865: IBM Twinax Link Service Install Failure in SNA Server 2.11 SP1"
-permalink: kb/150/Q150865/
+permalink: /kb/150/Q150865/
 ---
 
 ## Q150865: IBM Twinax Link Service Install Failure in SNA Server 2.11 SP1

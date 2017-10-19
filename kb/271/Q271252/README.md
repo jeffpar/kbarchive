@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271252: Microsoft Reader: List of Keyboard Shortcuts"
-permalink: kb/271/Q271252/
+permalink: /kb/271/Q271252/
 ---
 
 ## Q271252: Microsoft Reader: List of Keyboard Shortcuts

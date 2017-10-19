@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129098: How to Change a Table's Name"
-permalink: kb/129/Q129098/
+permalink: /kb/129/Q129098/
 ---
 
 ## Q129098: How to Change a Table's Name

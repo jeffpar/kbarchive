@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176068: XADM: Err: &quot;Private store could not be updated&quot; Running Isinteg"
-permalink: kb/176/Q176068/
+permalink: /kb/176/Q176068/
 ---
 
 ## Q176068: XADM: Err: &quot;Private store could not be updated&quot; Running Isinteg

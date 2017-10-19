@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160910: PRB: No Text/Caption Properties for Subclassed Combo or List"
-permalink: kb/160/Q160910/
+permalink: /kb/160/Q160910/
 ---
 
 ## Q160910: PRB: No Text/Caption Properties for Subclassed Combo or List

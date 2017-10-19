@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195968: XADM: Unable to Install Internet News Service"
-permalink: kb/195/Q195968/
+permalink: /kb/195/Q195968/
 ---
 
 ## Q195968: XADM: Unable to Install Internet News Service

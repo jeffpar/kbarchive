@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157775: WD97: Can't Save Version for Read-Only Document"
-permalink: kb/157/Q157775/
+permalink: /kb/157/Q157775/
 ---
 
 ## Q157775: WD97: Can't Save Version for Read-Only Document

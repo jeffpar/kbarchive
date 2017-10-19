@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75230: PCSupport 2.1, MEM /C, and Enhanced Mode Windows 3.0"
-permalink: kb/075/Q75230/
+permalink: /kb/075/Q75230/
 ---
 
 ## Q75230: PCSupport 2.1, MEM /C, and Enhanced Mode Windows 3.0

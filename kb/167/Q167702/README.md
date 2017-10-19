@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167702: XCLN: Msremind.exe Not Available in Schedule+ 7.0"
-permalink: kb/167/Q167702/
+permalink: /kb/167/Q167702/
 ---
 
 ## Q167702: XCLN: Msremind.exe Not Available in Schedule+ 7.0

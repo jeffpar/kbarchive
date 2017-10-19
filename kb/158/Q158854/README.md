@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158854: WD97: Compile Error If VB Code Doesn't Find Comments"
-permalink: kb/158/Q158854/
+permalink: /kb/158/Q158854/
 ---
 
 ## Q158854: WD97: Compile Error If VB Code Doesn't Find Comments

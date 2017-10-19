@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130404: BUG: CREATE CURSOR Does Not Accept UNIQUE as a Field Name"
-permalink: kb/130/Q130404/
+permalink: /kb/130/Q130404/
 ---
 
 ## Q130404: BUG: CREATE CURSOR Does Not Accept UNIQUE as a Field Name

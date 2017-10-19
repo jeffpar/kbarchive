@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252819: XFOR: Read Receipt from cc:Mail Loses Content"
-permalink: kb/252/Q252819/
+permalink: /kb/252/Q252819/
 ---
 
 ## Q252819: XFOR: Read Receipt from cc:Mail Loses Content

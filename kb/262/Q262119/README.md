@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262119: XCON: Information on Imsext.dll Event IDs"
-permalink: kb/262/Q262119/
+permalink: /kb/262/Q262119/
 ---
 
 ## Q262119: XCON: Information on Imsext.dll Event IDs

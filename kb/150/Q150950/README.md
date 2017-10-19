@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150950: DOCFIX: SelectObject Declaration is Incorrect in API Viewer"
-permalink: kb/150/Q150950/
+permalink: /kb/150/Q150950/
 ---
 
 ## Q150950: DOCFIX: SelectObject Declaration is Incorrect in API Viewer

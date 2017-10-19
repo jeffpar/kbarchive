@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130110: DriveSpace May Not Mount Removable Media Automatically"
-permalink: kb/130/Q130110/
+permalink: /kb/130/Q130110/
 ---
 
 ## Q130110: DriveSpace May Not Mount Removable Media Automatically

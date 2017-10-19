@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299737: Train Simulator: Sound Disabled After Restoring from Standby"
-permalink: kb/299/Q299737/
+permalink: /kb/299/Q299737/
 ---
 
 ## Q299737: Train Simulator: Sound Disabled After Restoring from Standby

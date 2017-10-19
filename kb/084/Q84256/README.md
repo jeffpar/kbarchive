@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84256: How Program Shortcut Keys Work in Windows 3.1"
-permalink: kb/084/Q84256/
+permalink: /kb/084/Q84256/
 ---
 
 ## Q84256: How Program Shortcut Keys Work in Windows 3.1

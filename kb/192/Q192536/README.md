@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192536: BUG: Msvcrt.dll Does Not Initialize Global Objects"
-permalink: kb/192/Q192536/
+permalink: /kb/192/Q192536/
 ---
 
 ## Q192536: BUG: Msvcrt.dll Does Not Initialize Global Objects

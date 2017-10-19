@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89266: Drawing a Box and Filling it with the CHR(177) Character"
-permalink: kb/089/Q89266/
+permalink: /kb/089/Q89266/
 ---
 
 ## Q89266: Drawing a Box and Filling it with the CHR(177) Character

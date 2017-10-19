@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182579: HOWTO: Getting Started With Active Documents"
-permalink: kb/182/Q182579/
+permalink: /kb/182/Q182579/
 ---
 
 ## Q182579: HOWTO: Getting Started With Active Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219326: SSL Connections Through LDAP May Not Function Properly"
-permalink: kb/219/Q219326/
+permalink: /kb/219/Q219326/
 ---
 
 ## Q219326: SSL Connections Through LDAP May Not Function Properly

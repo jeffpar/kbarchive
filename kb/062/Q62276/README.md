@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62276: Nonexpanded Windows Mouse Driver Freezes Machine"
-permalink: kb/062/Q62276/
+permalink: /kb/062/Q62276/
 ---
 
 ## Q62276: Nonexpanded Windows Mouse Driver Freezes Machine

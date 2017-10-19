@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138709: Microsoft Service for NetWare Directory Services Available"
-permalink: kb/138/Q138709/
+permalink: /kb/138/Q138709/
 ---
 
 ## Q138709: Microsoft Service for NetWare Directory Services Available

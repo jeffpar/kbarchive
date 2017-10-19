@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238667: Long Computer Names Truncated in Server Manager"
-permalink: kb/238/Q238667/
+permalink: /kb/238/Q238667/
 ---
 
 ## Q238667: Long Computer Names Truncated in Server Manager

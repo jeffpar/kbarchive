@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112901: PC Adm: Moving a Postoffice to Another Server"
-permalink: kb/112/Q112901/
+permalink: /kb/112/Q112901/
 ---
 
 ## Q112901: PC Adm: Moving a Postoffice to Another Server

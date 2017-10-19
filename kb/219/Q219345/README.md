@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219345: CSNW May Connect to Multiple Servers When Logging On to NDS Tree"
-permalink: kb/219/Q219345/
+permalink: /kb/219/Q219345/
 ---
 
 ## Q219345: CSNW May Connect to Multiple Servers When Logging On to NDS Tree

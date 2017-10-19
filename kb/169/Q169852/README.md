@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169852: Only 128 Print Sessions Active in SNA Server Print Service"
-permalink: kb/169/Q169852/
+permalink: /kb/169/Q169852/
 ---
 
 ## Q169852: Only 128 Print Sessions Active in SNA Server Print Service

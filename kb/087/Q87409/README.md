@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87409: PC DB: Structure of the MAI Directory"
-permalink: kb/087/Q87409/
+permalink: /kb/087/Q87409/
 ---
 
 ## Q87409: PC DB: Structure of the MAI Directory

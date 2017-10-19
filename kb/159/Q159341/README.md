@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159341: WD97: International Fonts Do Not Appear in Font List"
-permalink: kb/159/Q159341/
+permalink: /kb/159/Q159341/
 ---
 
 ## Q159341: WD97: International Fonts Do Not Appear in Font List

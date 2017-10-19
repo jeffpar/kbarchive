@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106227: Error After Uninstalling DoubleSpace: Warning: Unable to..."
-permalink: kb/106/Q106227/
+permalink: /kb/106/Q106227/
 ---
 
 ## Q106227: Error After Uninstalling DoubleSpace: Warning: Unable to...

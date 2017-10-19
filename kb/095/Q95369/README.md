@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95369: Using the Spelling Checker in FoxPro for Windows"
-permalink: kb/095/Q95369/
+permalink: /kb/095/Q95369/
 ---
 
 ## Q95369: Using the Spelling Checker in FoxPro for Windows

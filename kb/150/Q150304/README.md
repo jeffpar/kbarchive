@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150304: SNA Server Admin Application Exception When Use Banyan Vines"
-permalink: kb/150/Q150304/
+permalink: /kb/150/Q150304/
 ---
 
 ## Q150304: SNA Server Admin Application Exception When Use Banyan Vines

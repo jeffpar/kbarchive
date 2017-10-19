@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110405: PRB: MASM 6.x and the Windows 3.1 DDK"
-permalink: kb/110/Q110405/
+permalink: /kb/110/Q110405/
 ---
 
 ## Q110405: PRB: MASM 6.x and the Windows 3.1 DDK

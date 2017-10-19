@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146928: XCLN: Schedule+ Printing Is Not WYSIWIG"
-permalink: kb/146/Q146928/
+permalink: /kb/146/Q146928/
 ---
 
 ## Q146928: XCLN: Schedule+ Printing Is Not WYSIWIG

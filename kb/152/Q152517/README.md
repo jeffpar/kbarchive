@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152517: Err Msg During Setup: DISK READ ERROR OCCURED"
-permalink: kb/152/Q152517/
+permalink: /kb/152/Q152517/
 ---
 
 ## Q152517: Err Msg During Setup: DISK READ ERROR OCCURED

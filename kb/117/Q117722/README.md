@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117722: FoxPro for Macintosh Language Tips and Tricks"
-permalink: kb/117/Q117722/
+permalink: /kb/117/Q117722/
 ---
 
 ## Q117722: FoxPro for Macintosh Language Tips and Tricks

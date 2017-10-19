@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187093: Cannot Add a Practical Peripherals Modem on Serve"
-permalink: kb/187/Q187093/
+permalink: /kb/187/Q187093/
 ---
 
 ## Q187093: Cannot Add a Practical Peripherals Modem on Serve

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200130: XCLN: How to Return X.400 Addresses with Outlook LDAP Service"
-permalink: kb/200/Q200130/
+permalink: /kb/200/Q200130/
 ---
 
 ## Q200130: XCLN: How to Return X.400 Addresses with Outlook LDAP Service

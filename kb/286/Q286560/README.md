@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286560: Interface Unknown Error With DB2 Column Length Greater Than 300"
-permalink: kb/286/Q286560/
+permalink: /kb/286/Q286560/
 ---
 
 ## Q286560: Interface Unknown Error With DB2 Column Length Greater Than 300

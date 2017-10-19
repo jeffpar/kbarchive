@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149516: BUG: Watching a DLL Common Block Using Context Operator Fails"
-permalink: kb/149/Q149516/
+permalink: /kb/149/Q149516/
 ---
 
 ## Q149516: BUG: Watching a DLL Common Block Using Context Operator Fails

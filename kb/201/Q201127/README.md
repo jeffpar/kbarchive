@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201127: XIMS: Rerouting SMTP Mail to Another Organization"
-permalink: kb/201/Q201127/
+permalink: /kb/201/Q201127/
 ---
 
 ## Q201127: XIMS: Rerouting SMTP Mail to Another Organization

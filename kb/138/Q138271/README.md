@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138271: Windows 95 NetBIOS Scope ID Configuration"
-permalink: kb/138/Q138271/
+permalink: /kb/138/Q138271/
 ---
 
 ## Q138271: Windows 95 NetBIOS Scope ID Configuration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138663: PRB: GetCheckedRadioButton() Returns ID Outside Button Group"
-permalink: kb/138/Q138663/
+permalink: /kb/138/Q138663/
 ---
 
 ## Q138663: PRB: GetCheckedRadioButton() Returns ID Outside Button Group

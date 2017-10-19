@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177917: Initializing a DLL Using DLLMain Optional Entry Point"
-permalink: kb/177/Q177917/
+permalink: /kb/177/Q177917/
 ---
 
 ## Q177917: Initializing a DLL Using DLLMain Optional Entry Point

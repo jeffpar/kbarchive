@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121558: Art Gallery Fonts Distorted, Colored, or Covered by Rectangles"
-permalink: kb/121/Q121558/
+permalink: /kb/121/Q121558/
 ---
 
 ## Q121558: Art Gallery Fonts Distorted, Colored, or Covered by Rectangles

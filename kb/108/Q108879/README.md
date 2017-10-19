@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108879: PC Gen: PODIAG.EXE Reports GAL Missing on Version 2.1 PO"
-permalink: kb/108/Q108879/
+permalink: /kb/108/Q108879/
 ---
 
 ## Q108879: PC Gen: PODIAG.EXE Reports GAL Missing on Version 2.1 PO

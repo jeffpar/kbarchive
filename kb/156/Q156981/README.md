@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156981: FP: How to Assign IP Restrictions in FrontPage"
-permalink: kb/156/Q156981/
+permalink: /kb/156/Q156981/
 ---
 
 ## Q156981: FP: How to Assign IP Restrictions in FrontPage

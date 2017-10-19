@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148354: PC NTMMTA: Contents of the Readme File, MMTA.TXT"
-permalink: kb/148/Q148354/
+permalink: /kb/148/Q148354/
 ---
 
 ## Q148354: PC NTMMTA: Contents of the Readme File, MMTA.TXT

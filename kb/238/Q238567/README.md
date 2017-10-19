@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238567: XCLN: How to Restore the Outlook Icon to the Desktop"
-permalink: kb/238/Q238567/
+permalink: /kb/238/Q238567/
 ---
 
 ## Q238567: XCLN: How to Restore the Outlook Icon to the Desktop

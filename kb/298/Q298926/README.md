@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298926: PRB: Error 800a01ad When You Run a WebClass from Terminal Server"
-permalink: kb/298/Q298926/
+permalink: /kb/298/Q298926/
 ---
 
 ## Q298926: PRB: Error 800a01ad When You Run a WebClass from Terminal Server

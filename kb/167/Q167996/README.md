@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167996: FIX: /Og Causes Invalid Double Result Returned from Function"
-permalink: kb/167/Q167996/
+permalink: /kb/167/Q167996/
 ---
 
 ## Q167996: FIX: /Og Causes Invalid Double Result Returned from Function

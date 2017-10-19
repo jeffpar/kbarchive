@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138859: SNA Server Reference Documents Registry Settings Incorrectly"
-permalink: kb/138/Q138859/
+permalink: /kb/138/Q138859/
 ---
 
 ## Q138859: SNA Server Reference Documents Registry Settings Incorrectly

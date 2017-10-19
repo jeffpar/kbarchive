@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176831: Multimedia: Computer Stops Responding When Accessing Web Links"
-permalink: kb/176/Q176831/
+permalink: /kb/176/Q176831/
 ---
 
 ## Q176831: Multimedia: Computer Stops Responding When Accessing Web Links

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156552: HOWTO: Use Offline Views in Visual FoxPro"
-permalink: kb/156/Q156552/
+permalink: /kb/156/Q156552/
 ---
 
 ## Q156552: HOWTO: Use Offline Views in Visual FoxPro

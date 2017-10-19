@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192194: Nothing Happens When You Open Display Properties"
-permalink: kb/192/Q192194/
+permalink: /kb/192/Q192194/
 ---
 
 ## Q192194: Nothing Happens When You Open Display Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84733: FIX: Extra Characters Appear Using One-Line Response File"
-permalink: kb/084/Q84733/
+permalink: /kb/084/Q84733/
 ---
 
 ## Q84733: FIX: Extra Characters Appear Using One-Line Response File

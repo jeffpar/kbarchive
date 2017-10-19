@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222085: How to Scale Microsoft Print Services Using WLBS"
-permalink: kb/222/Q222085/
+permalink: /kb/222/Q222085/
 ---
 
 ## Q222085: How to Scale Microsoft Print Services Using WLBS

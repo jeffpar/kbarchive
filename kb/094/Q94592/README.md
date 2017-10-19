@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94592: Novell NetWare Lite Version 1.1 and Windows Compatibility"
-permalink: kb/094/Q94592/
+permalink: /kb/094/Q94592/
 ---
 
 ## Q94592: Novell NetWare Lite Version 1.1 and Windows Compatibility

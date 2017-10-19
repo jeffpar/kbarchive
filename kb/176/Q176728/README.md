@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176728: How to Reinstall The Microsoft Network and Microsoft Exchange"
-permalink: kb/176/Q176728/
+permalink: /kb/176/Q176728/
 ---
 
 ## Q176728: How to Reinstall The Microsoft Network and Microsoft Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246288: BUG: Error in Declaration of SHFileOperation() from API Text Vie"
-permalink: kb/246/Q246288/
+permalink: /kb/246/Q246288/
 ---
 
 ## Q246288: BUG: Error in Declaration of SHFileOperation() from API Text Vie

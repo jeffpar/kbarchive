@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153549: BUG: DataControl Doesn't Send Notifications at Design Time"
-permalink: kb/153/Q153549/
+permalink: /kb/153/Q153549/
 ---
 
 ## Q153549: BUG: DataControl Doesn't Send Notifications at Design Time

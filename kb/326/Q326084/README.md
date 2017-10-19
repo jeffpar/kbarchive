@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326084: BUG: Print Server Translates EBCDIC Chars Under 0x40 to Spaces"
-permalink: kb/326/Q326084/
+permalink: /kb/326/Q326084/
 ---
 
 ## Q326084: BUG: Print Server Translates EBCDIC Chars Under 0x40 to Spaces

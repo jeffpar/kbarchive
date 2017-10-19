@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150702: INFO: No IAP Support for Mastering Visual Basic 4.0"
-permalink: kb/150/Q150702/
+permalink: /kb/150/Q150702/
 ---
 
 ## Q150702: INFO: No IAP Support for Mastering Visual Basic 4.0

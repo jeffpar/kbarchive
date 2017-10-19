@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108019: Flight Simulator 5.0: System Requirements on Box Incorrect"
-permalink: kb/108/Q108019/
+permalink: /kb/108/Q108019/
 ---
 
 ## Q108019: Flight Simulator 5.0: System Requirements on Box Incorrect

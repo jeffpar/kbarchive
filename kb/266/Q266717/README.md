@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266717: HOWTO: Create a DCOM Client/Server Application by Using VB"
-permalink: kb/266/Q266717/
+permalink: /kb/266/Q266717/
 ---
 
 ## Q266717: HOWTO: Create a DCOM Client/Server Application by Using VB

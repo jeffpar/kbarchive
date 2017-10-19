@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281968: &quot;No Sounds&quot; Sound Scheme May Cause STOP 0x50 Error Message"
-permalink: kb/281/Q281968/
+permalink: /kb/281/Q281968/
 ---
 
 ## Q281968: &quot;No Sounds&quot; Sound Scheme May Cause STOP 0x50 Error Message

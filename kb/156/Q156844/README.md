@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156844: XCON: Subject Line of Message Is Truncated to 40 Characters"
-permalink: kb/156/Q156844/
+permalink: /kb/156/Q156844/
 ---
 
 ## Q156844: XCON: Subject Line of Message Is Truncated to 40 Characters

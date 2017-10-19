@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181917: XFOR: -ERR Ambiguous Alias Returned from POP3 Client"
-permalink: kb/181/Q181917/
+permalink: /kb/181/Q181917/
 ---
 
 ## Q181917: XFOR: -ERR Ambiguous Alias Returned from POP3 Client

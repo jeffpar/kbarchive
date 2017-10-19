@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132073: FLTSIM 5.1: FFSYSTEM ERROR When Creating Startup Disk"
-permalink: kb/132/Q132073/
+permalink: /kb/132/Q132073/
 ---
 
 ## Q132073: FLTSIM 5.1: FFSYSTEM ERROR When Creating Startup Disk

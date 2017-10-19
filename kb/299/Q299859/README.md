@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299859: Cannot Find Product Key for Installing the Passport SDK"
-permalink: kb/299/Q299859/
+permalink: /kb/299/Q299859/
 ---
 
 ## Q299859: Cannot Find Product Key for Installing the Passport SDK

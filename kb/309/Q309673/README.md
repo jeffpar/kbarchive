@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309673: Flight Simulator 2002: Minimum System Requirements"
-permalink: kb/309/Q309673/
+permalink: /kb/309/Q309673/
 ---
 
 ## Q309673: Flight Simulator 2002: Minimum System Requirements

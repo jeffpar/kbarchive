@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157067: SMS: Network Adapter Card Information Not Detected"
-permalink: kb/157/Q157067/
+permalink: /kb/157/Q157067/
 ---
 
 ## Q157067: SMS: Network Adapter Card Information Not Detected

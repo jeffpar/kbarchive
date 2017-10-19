@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143411: Error Message: Cannot Display the Help Information"
-permalink: kb/143/Q143411/
+permalink: /kb/143/Q143411/
 ---
 
 ## Q143411: Error Message: Cannot Display the Help Information

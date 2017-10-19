@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119524: Copying Files with Long Filenames to FAT Partitions"
-permalink: kb/119/Q119524/
+permalink: /kb/119/Q119524/
 ---
 
 ## Q119524: Copying Files with Long Filenames to FAT Partitions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83720: AT&amp;T Safari Requires Windows 3.0 and Upgrade to Windows 3.1"
-permalink: kb/083/Q83720/
+permalink: /kb/083/Q83720/
 ---
 
 ## Q83720: AT&amp;T Safari Requires Windows 3.0 and Upgrade to Windows 3.1

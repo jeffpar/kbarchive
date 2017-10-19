@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187929: XCON: Recovery Checkpoint Size Different, MTA Connection Fails"
-permalink: kb/187/Q187929/
+permalink: /kb/187/Q187929/
 ---
 
 ## Q187929: XCON: Recovery Checkpoint Size Different, MTA Connection Fails

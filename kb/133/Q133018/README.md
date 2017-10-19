@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133018: INFO: Visual SourceSafe Setup Registration Settings"
-permalink: kb/133/Q133018/
+permalink: /kb/133/Q133018/
 ---
 
 ## Q133018: INFO: Visual SourceSafe Setup Registration Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110943: WINSOCK API Init. Error: Not Enough DOS memory"
-permalink: kb/110/Q110943/
+permalink: /kb/110/Q110943/
 ---
 
 ## Q110943: WINSOCK API Init. Error: Not Enough DOS memory

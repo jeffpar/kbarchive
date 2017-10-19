@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182754: Win98 Resource Kit Beta CD-ROM Missing &#92;Betaonly Folder Files"
-permalink: kb/182/Q182754/
+permalink: /kb/182/Q182754/
 ---
 
 ## Q182754: Win98 Resource Kit Beta CD-ROM Missing &#92;Betaonly Folder Files

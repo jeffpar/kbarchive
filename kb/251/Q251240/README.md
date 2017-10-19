@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251240: Midtown/Motocross Madness: Game Hangs or Pointer Flickers"
-permalink: kb/251/Q251240/
+permalink: /kb/251/Q251240/
 ---
 
 ## Q251240: Midtown/Motocross Madness: Game Hangs or Pointer Flickers

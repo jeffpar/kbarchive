@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198605: BUG: Find Next Crashes After Closing a Maximized Code Window"
-permalink: kb/198/Q198605/
+permalink: /kb/198/Q198605/
 ---
 
 ## Q198605: BUG: Find Next Crashes After Closing a Maximized Code Window

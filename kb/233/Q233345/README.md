@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233345: XFOR: Notes Connector Event ID 1: DXANOTES Failed to Initialize"
-permalink: kb/233/Q233345/
+permalink: /kb/233/Q233345/
 ---
 
 ## Q233345: XFOR: Notes Connector Event ID 1: DXANOTES Failed to Initialize

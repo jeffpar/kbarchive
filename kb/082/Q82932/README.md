@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82932: PRB: Device and TrueType Fonts Rotate Inconsistently"
-permalink: kb/082/Q82932/
+permalink: /kb/082/Q82932/
 ---
 
 ## Q82932: PRB: Device and TrueType Fonts Rotate Inconsistently

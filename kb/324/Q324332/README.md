@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324332: XADM: Error Message: Extension 'SMTP' Could Not Be Loaded"
-permalink: kb/324/Q324332/
+permalink: /kb/324/Q324332/
 ---
 
 ## Q324332: XADM: Error Message: Extension 'SMTP' Could Not Be Loaded

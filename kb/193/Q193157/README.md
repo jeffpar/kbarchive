@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193157: TCP/IP Does Not Allow MAC Addresses to Change Dynamically"
-permalink: kb/193/Q193157/
+permalink: /kb/193/Q193157/
 ---
 
 ## Q193157: TCP/IP Does Not Allow MAC Addresses to Change Dynamically

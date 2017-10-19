@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114821: CD Sampler: Can't Run in 16, 32K, 64K, or 1.6 Million Colors"
-permalink: kb/114/Q114821/
+permalink: /kb/114/Q114821/
 ---
 
 ## Q114821: CD Sampler: Can't Run in 16, 32K, 64K, or 1.6 Million Colors

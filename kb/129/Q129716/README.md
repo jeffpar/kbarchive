@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129716: Setup Warning on Computers Using XtraDrive Is Misleading"
-permalink: kb/129/Q129716/
+permalink: /kb/129/Q129716/
 ---
 
 ## Q129716: Setup Warning on Computers Using XtraDrive Is Misleading

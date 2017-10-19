@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26822: FIX: Relational Operators Evaluate to Wrong Value"
-permalink: kb/026/Q26822/
+permalink: /kb/026/Q26822/
 ---
 
 ## Q26822: FIX: Relational Operators Evaluate to Wrong Value

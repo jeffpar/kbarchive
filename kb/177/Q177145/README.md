@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177145: PRB: Error Changing DynamicCurrentControl of Grid Column"
-permalink: kb/177/Q177145/
+permalink: /kb/177/Q177145/
 ---
 
 ## Q177145: PRB: Error Changing DynamicCurrentControl of Grid Column

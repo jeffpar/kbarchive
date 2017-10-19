@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179481: Err Msg: Parallel Cable on LPT&lt;n&gt; Disconnected"
-permalink: kb/179/Q179481/
+permalink: /kb/179/Q179481/
 ---
 
 ## Q179481: Err Msg: Parallel Cable on LPT&lt;n&gt; Disconnected

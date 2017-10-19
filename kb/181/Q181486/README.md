@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181486: PRB: How To Distribute the Remote Automation Connection Manager"
-permalink: kb/181/Q181486/
+permalink: /kb/181/Q181486/
 ---
 
 ## Q181486: PRB: How To Distribute the Remote Automation Connection Manager

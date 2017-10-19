@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118332: S3 Video on Certain Dell Computers is Limited to 256 Colors"
-permalink: kb/118/Q118332/
+permalink: /kb/118/Q118332/
 ---
 
 ## Q118332: S3 Video on Certain Dell Computers is Limited to 256 Colors

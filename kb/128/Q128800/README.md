@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128800: How to Provide Additional NDIS2 Drivers for Network Client 3.0"
-permalink: kb/128/Q128800/
+permalink: /kb/128/Q128800/
 ---
 
 ## Q128800: How to Provide Additional NDIS2 Drivers for Network Client 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239069: PRB: Cannot Open or Find File Error Installing VB Applicati"
-permalink: kb/239/Q239069/
+permalink: /kb/239/Q239069/
 ---
 
 ## Q239069: PRB: Cannot Open or Find File Error Installing VB Applicati

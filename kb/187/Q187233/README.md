@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187233: BUG: DateTimePicker's CustomFormat May Be Ignored"
-permalink: kb/187/Q187233/
+permalink: /kb/187/Q187233/
 ---
 
 ## Q187233: BUG: DateTimePicker's CustomFormat May Be Ignored

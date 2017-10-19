@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168475: How to Create a Base Profile for All Users"
-permalink: kb/168/Q168475/
+permalink: /kb/168/Q168475/
 ---
 
 ## Q168475: How to Create a Base Profile for All Users

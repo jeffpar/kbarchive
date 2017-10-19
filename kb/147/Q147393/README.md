@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147393: HOWTO: Profile an OLE Server or an OLE Control"
-permalink: kb/147/Q147393/
+permalink: /kb/147/Q147393/
 ---
 
 ## Q147393: HOWTO: Profile an OLE Server or an OLE Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256073: SMS: Dataloader Cannot Load MIF After Removing Group Class"
-permalink: kb/256/Q256073/
+permalink: /kb/256/Q256073/
 ---
 
 ## Q256073: SMS: Dataloader Cannot Load MIF After Removing Group Class

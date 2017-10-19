@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74704: INFO: Supporting PostScript Features in Windows"
-permalink: kb/074/Q74704/
+permalink: /kb/074/Q74704/
 ---
 
 ## Q74704: INFO: Supporting PostScript Features in Windows

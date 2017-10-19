@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109269: PRB: Causes of Error CK1024"
-permalink: kb/109/Q109269/
+permalink: /kb/109/Q109269/
 ---
 
 ## Q109269: PRB: Causes of Error CK1024

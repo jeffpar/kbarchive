@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59656: File Manager: Make System Disk Fails"
-permalink: kb/059/Q59656/
+permalink: /kb/059/Q59656/
 ---
 
 ## Q59656: File Manager: Make System Disk Fails

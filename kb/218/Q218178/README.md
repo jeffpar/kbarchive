@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218178: Access Violation in SNASERVR!SNPUGETC"
-permalink: kb/218/Q218178/
+permalink: /kb/218/Q218178/
 ---
 
 ## Q218178: Access Violation in SNASERVR!SNPUGETC

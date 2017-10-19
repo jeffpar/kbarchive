@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129512: How to Programatically List .VCX File's Class Definitions"
-permalink: kb/129/Q129512/
+permalink: /kb/129/Q129512/
 ---
 
 ## Q129512: How to Programatically List .VCX File's Class Definitions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259077: XCLN: Information About .ost File Synchronization Sizes"
-permalink: kb/259/Q259077/
+permalink: /kb/259/Q259077/
 ---
 
 ## Q259077: XCLN: Information About .ost File Synchronization Sizes

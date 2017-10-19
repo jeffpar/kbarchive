@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307579: CFS2: Err Msg: CFS2 Has Caused an IPF in Module CFS2.exe"
-permalink: kb/307/Q307579/
+permalink: /kb/307/Q307579/
 ---
 
 ## Q307579: CFS2: Err Msg: CFS2 Has Caused an IPF in Module CFS2.exe

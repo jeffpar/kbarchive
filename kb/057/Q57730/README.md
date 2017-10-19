@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57730: Err Msg: &quot;No Room for System on Destination Disk&quot; with SYS"
-permalink: kb/057/Q57730/
+permalink: /kb/057/Q57730/
 ---
 
 ## Q57730: Err Msg: &quot;No Room for System on Destination Disk&quot; with SYS

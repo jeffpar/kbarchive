@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179665: XADM: Message Receipts Generated Even with Option Cleared"
-permalink: kb/179/Q179665/
+permalink: /kb/179/Q179665/
 ---
 
 ## Q179665: XADM: Message Receipts Generated Even with Option Cleared

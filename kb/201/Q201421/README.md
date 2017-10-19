@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201421: XCLN: Migrated Calendar Information Message"
-permalink: kb/201/Q201421/
+permalink: /kb/201/Q201421/
 ---
 
 ## Q201421: XCLN: Migrated Calendar Information Message

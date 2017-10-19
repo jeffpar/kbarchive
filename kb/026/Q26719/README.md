@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26719: Using &quot;=&quot; in Environment Variables"
-permalink: kb/026/Q26719/
+permalink: /kb/026/Q26719/
 ---
 
 ## Q26719: Using &quot;=&quot; in Environment Variables

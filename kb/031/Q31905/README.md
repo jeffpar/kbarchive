@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31905: Loading Scenery Disks When Running on Floppy Disks"
-permalink: kb/031/Q31905/
+permalink: /kb/031/Q31905/
 ---
 
 ## Q31905: Loading Scenery Disks When Running on Floppy Disks

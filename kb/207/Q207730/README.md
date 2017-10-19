@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207730: Urban Assault: Display Blinks When You Switch from Help"
-permalink: kb/207/Q207730/
+permalink: /kb/207/Q207730/
 ---
 
 ## Q207730: Urban Assault: Display Blinks When You Switch from Help

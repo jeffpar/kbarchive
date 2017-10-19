@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200364: NetWare Client 4.5 Does Not Pass Terminal Server Home Path"
-permalink: kb/200/Q200364/
+permalink: /kb/200/Q200364/
 ---
 
 ## Q200364: NetWare Client 4.5 Does Not Pass Terminal Server Home Path

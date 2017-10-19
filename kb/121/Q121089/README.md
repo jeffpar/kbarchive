@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121089: ErrMsg w/ArtiSoft Noderunner: 2191-You Cannot Stop the Service"
-permalink: kb/121/Q121089/
+permalink: /kb/121/Q121089/
 ---
 
 ## Q121089: ErrMsg w/ArtiSoft Noderunner: 2191-You Cannot Stop the Service

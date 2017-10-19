@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258536: FIX: UPARROW Key Doesn't Work in Code Editor in Hebrew Windows"
-permalink: kb/258/Q258536/
+permalink: /kb/258/Q258536/
 ---
 
 ## Q258536: FIX: UPARROW Key Doesn't Work in Code Editor in Hebrew Windows

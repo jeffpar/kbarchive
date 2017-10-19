@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191642: BUG: Adding Many Forms to a Formset Causes Errors"
-permalink: kb/191/Q191642/
+permalink: /kb/191/Q191642/
 ---
 
 ## Q191642: BUG: Adding Many Forms to a Formset Causes Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116073: Baseball: Red Hot Text May Look Almost Black on Some Displays"
-permalink: kb/116/Q116073/
+permalink: /kb/116/Q116073/
 ---
 
 ## Q116073: Baseball: Red Hot Text May Look Almost Black on Some Displays

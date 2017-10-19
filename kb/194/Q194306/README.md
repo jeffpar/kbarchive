@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194306: HOWTO: Make Word Print Duplex Using Automation"
-permalink: kb/194/Q194306/
+permalink: /kb/194/Q194306/
 ---
 
 ## Q194306: HOWTO: Make Word Print Duplex Using Automation

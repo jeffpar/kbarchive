@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184568: XADM: Authrest Err. Msg. in 5.0: Dynamic Link Library Not Found"
-permalink: kb/184/Q184568/
+permalink: /kb/184/Q184568/
 ---
 
 ## Q184568: XADM: Authrest Err. Msg. in 5.0: Dynamic Link Library Not Found

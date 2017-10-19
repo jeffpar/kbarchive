@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83650: Some Applications Won't Respond to Paintbrush Update Command"
-permalink: kb/083/Q83650/
+permalink: /kb/083/Q83650/
 ---
 
 ## Q83650: Some Applications Won't Respond to Paintbrush Update Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57949: INFO: Use of the Stringizing Operator (#) in Macros"
-permalink: kb/057/Q57949/
+permalink: /kb/057/Q57949/
 ---
 
 ## Q57949: INFO: Use of the Stringizing Operator (#) in Macros

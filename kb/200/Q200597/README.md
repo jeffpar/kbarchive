@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200597: BUG: Debugger Cannot Step Out of Recursive Function"
-permalink: kb/200/Q200597/
+permalink: /kb/200/Q200597/
 ---
 
 ## Q200597: BUG: Debugger Cannot Step Out of Recursive Function

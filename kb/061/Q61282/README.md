@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61282: Mac Wkst: Trying to Install Causes Macintosh to Crash"
-permalink: kb/061/Q61282/
+permalink: /kb/061/Q61282/
 ---
 
 ## Q61282: Mac Wkst: Trying to Install Causes Macintosh to Crash

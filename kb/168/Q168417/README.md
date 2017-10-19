@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168417: WD97: Application.Help wdHelp Generates Run-Time Error"
-permalink: kb/168/Q168417/
+permalink: /kb/168/Q168417/
 ---
 
 ## Q168417: WD97: Application.Help wdHelp Generates Run-Time Error

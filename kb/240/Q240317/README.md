@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240317: HOWTO: Implement Multiuser Custom Counters in Jet 4.0 &amp; ADO 2.1"
-permalink: kb/240/Q240317/
+permalink: /kb/240/Q240317/
 ---
 
 ## Q240317: HOWTO: Implement Multiuser Custom Counters in Jet 4.0 &amp; ADO 2.1

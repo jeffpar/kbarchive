@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69892: DOCERR: DEF File Exports Statement Documentation Error"
-permalink: kb/069/Q69892/
+permalink: /kb/069/Q69892/
 ---
 
 ## Q69892: DOCERR: DEF File Exports Statement Documentation Error

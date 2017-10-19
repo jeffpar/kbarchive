@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241864: GP Fault Using Internet Explorer with TLS 1.0 and HTTPS"
-permalink: kb/241/Q241864/
+permalink: /kb/241/Q241864/
 ---
 
 ## Q241864: GP Fault Using Internet Explorer with TLS 1.0 and HTTPS

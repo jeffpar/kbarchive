@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174468: SLI_SEND Fails To Complete, Causing Win32 SLI App To Hang"
-permalink: kb/174/Q174468/
+permalink: /kb/174/Q174468/
 ---
 
 ## Q174468: SLI_SEND Fails To Complete, Causing Win32 SLI App To Hang

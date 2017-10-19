@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275029: AoE: Villagers Stand in Building Foundation and Do Nothing"
-permalink: kb/275/Q275029/
+permalink: /kb/275/Q275029/
 ---
 
 ## Q275029: AoE: Villagers Stand in Building Foundation and Do Nothing

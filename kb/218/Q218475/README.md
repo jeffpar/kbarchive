@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218475: FIX: ATL In-Proc Servers Load Twice if Using Short Filename"
-permalink: kb/218/Q218475/
+permalink: /kb/218/Q218475/
 ---
 
 ## Q218475: FIX: ATL In-Proc Servers Load Twice if Using Short Filename

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238244: Partition Utilities Do Not Recognize Hard Drive Partitions"
-permalink: kb/238/Q238244/
+permalink: /kb/238/Q238244/
 ---
 
 ## Q238244: Partition Utilities Do Not Recognize Hard Drive Partitions

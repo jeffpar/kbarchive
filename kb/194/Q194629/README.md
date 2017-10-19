@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194629: How to Restore the New Phonebook Entry Wizard in Windows NT 4.0"
-permalink: kb/194/Q194629/
+permalink: /kb/194/Q194629/
 ---
 
 ## Q194629: How to Restore the New Phonebook Entry Wizard in Windows NT 4.0

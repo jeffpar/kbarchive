@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179113: How to Download and Install DirectX"
-permalink: kb/179/Q179113/
+permalink: /kb/179/Q179113/
 ---
 
 ## Q179113: How to Download and Install DirectX

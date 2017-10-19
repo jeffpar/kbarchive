@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172154: Service Starts Automatically Even Though Startup Type Is Manual"
-permalink: kb/172/Q172154/
+permalink: /kb/172/Q172154/
 ---
 
 ## Q172154: Service Starts Automatically Even Though Startup Type Is Manual

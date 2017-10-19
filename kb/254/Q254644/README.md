@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254644: SMS: Network Monitor Experts Increase CPU Use and Finish Slowly"
-permalink: kb/254/Q254644/
+permalink: /kb/254/Q254644/
 ---
 
 ## Q254644: SMS: Network Monitor Experts Increase CPU Use and Finish Slowly

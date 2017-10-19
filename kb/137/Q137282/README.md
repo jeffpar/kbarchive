@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137282: Cinemania: Listmaker Does Not Remember Specific Printer"
-permalink: kb/137/Q137282/
+permalink: /kb/137/Q137282/
 ---
 
 ## Q137282: Cinemania: Listmaker Does Not Remember Specific Printer

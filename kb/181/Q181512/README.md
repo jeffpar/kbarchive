@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181512: XFOR: Lsccmmex.exe Access Violates When Processing Delivery Repo"
-permalink: kb/181/Q181512/
+permalink: /kb/181/Q181512/
 ---
 
 ## Q181512: XFOR: Lsccmmex.exe Access Violates When Processing Delivery Repo

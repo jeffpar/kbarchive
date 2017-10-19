@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247927: XCLN: Error Message: Unable to Update Public Free/Busy Data"
-permalink: kb/247/Q247927/
+permalink: /kb/247/Q247927/
 ---
 
 ## Q247927: XCLN: Error Message: Unable to Update Public Free/Busy Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74621: Setup Detects Incorrect Keyboard on AST Premium Notebook"
-permalink: kb/074/Q74621/
+permalink: /kb/074/Q74621/
 ---
 
 ## Q74621: Setup Detects Incorrect Keyboard on AST Premium Notebook

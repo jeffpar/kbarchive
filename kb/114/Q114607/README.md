@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114607: Using the Setup Toolkit's GetLocalHardDrivesList Function"
-permalink: kb/114/Q114607/
+permalink: /kb/114/Q114607/
 ---
 
 ## Q114607: Using the Setup Toolkit's GetLocalHardDrivesList Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90126: Mail Demonstration Does Not Run Under Norton Desktop"
-permalink: kb/090/Q90126/
+permalink: /kb/090/Q90126/
 ---
 
 ## Q90126: Mail Demonstration Does Not Run Under Norton Desktop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198592: WD97: Blank Page Printed with Different Even and Odd Headers"
-permalink: kb/198/Q198592/
+permalink: /kb/198/Q198592/
 ---
 
 ## Q198592: WD97: Blank Page Printed with Different Even and Odd Headers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242018: HOWTO: Copy a Section of a Bitmap to the Clipboard"
-permalink: kb/242/Q242018/
+permalink: /kb/242/Q242018/
 ---
 
 ## Q242018: HOWTO: Copy a Section of a Bitmap to the Clipboard

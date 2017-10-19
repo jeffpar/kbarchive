@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264742: Inactive LUs May Cause SnaPrint Service Utilization to Increase"
-permalink: kb/264/Q264742/
+permalink: /kb/264/Q264742/
 ---
 
 ## Q264742: Inactive LUs May Cause SnaPrint Service Utilization to Increase

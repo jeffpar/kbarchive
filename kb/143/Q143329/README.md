@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143329: Serial Mouse Does Not Work on a DEC Alpha Computer"
-permalink: kb/143/Q143329/
+permalink: /kb/143/Q143329/
 ---
 
 ## Q143329: Serial Mouse Does Not Work on a DEC Alpha Computer

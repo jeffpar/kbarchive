@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140937: XCON: Remote MTA Reports Syntax Error"
-permalink: kb/140/Q140937/
+permalink: /kb/140/Q140937/
 ---
 
 ## Q140937: XCON: Remote MTA Reports Syntax Error

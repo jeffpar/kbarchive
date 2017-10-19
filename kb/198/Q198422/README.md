@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198422: PRB: Unable to Display MFC Automation Objects in Watch Window"
-permalink: kb/198/Q198422/
+permalink: /kb/198/Q198422/
 ---
 
 ## Q198422: PRB: Unable to Display MFC Automation Objects in Watch Window

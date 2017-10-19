@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91683: Cardfile Size Limitations"
-permalink: kb/091/Q91683/
+permalink: /kb/091/Q91683/
 ---
 
 ## Q91683: Cardfile Size Limitations

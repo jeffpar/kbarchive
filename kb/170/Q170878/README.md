@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170878: WD97: Template Menu Customization Lost Opening in Word 97"
-permalink: kb/170/Q170878/
+permalink: /kb/170/Q170878/
 ---
 
 ## Q170878: WD97: Template Menu Customization Lost Opening in Word 97

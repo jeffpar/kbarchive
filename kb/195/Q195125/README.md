@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195125: Stopping MngAgent Service May Cause Trap in Mngcli.exe"
-permalink: kb/195/Q195125/
+permalink: /kb/195/Q195125/
 ---
 
 ## Q195125: Stopping MngAgent Service May Cause Trap in Mngcli.exe

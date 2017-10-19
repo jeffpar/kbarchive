@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110551: Flight Simulator: General Air Temperature Information"
-permalink: kb/110/Q110551/
+permalink: /kb/110/Q110551/
 ---
 
 ## Q110551: Flight Simulator: General Air Temperature Information

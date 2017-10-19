@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147887: HOWTO: Scroll VB Text Box Programmatically and Specify Lines"
-permalink: kb/147/Q147887/
+permalink: /kb/147/Q147887/
 ---
 
 ## Q147887: HOWTO: Scroll VB Text Box Programmatically and Specify Lines

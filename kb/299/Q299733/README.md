@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299733: Train Simulator: Question Mark Help Buttons Don't Work"
-permalink: kb/299/Q299733/
+permalink: /kb/299/Q299733/
 ---
 
 ## Q299733: Train Simulator: Question Mark Help Buttons Don't Work

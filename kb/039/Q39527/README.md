@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39527: DOCERR: DUP Is a Reserved Word in MASM"
-permalink: kb/039/Q39527/
+permalink: /kb/039/Q39527/
 ---
 
 ## Q39527: DOCERR: DUP Is a Reserved Word in MASM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138108: DOC: Size Help Shows Option &quot;To Fit&quot;"
-permalink: kb/138/Q138108/
+permalink: /kb/138/Q138108/
 ---
 
 ## Q138108: DOC: Size Help Shows Option &quot;To Fit&quot;

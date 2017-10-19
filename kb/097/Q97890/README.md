@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97890: PC WRmt: Cannot Download More Than 50 Messages at One Time"
-permalink: kb/097/Q97890/
+permalink: /kb/097/Q97890/
 ---
 
 ## Q97890: PC WRmt: Cannot Download More Than 50 Messages at One Time

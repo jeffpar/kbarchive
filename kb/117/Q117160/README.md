@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117160: File Manager Shows Wrong File Size for Files Larger than 4G"
-permalink: kb/117/Q117160/
+permalink: /kb/117/Q117160/
 ---
 
 ## Q117160: File Manager Shows Wrong File Size for Files Larger than 4G

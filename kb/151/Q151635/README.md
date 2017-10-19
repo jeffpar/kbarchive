@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151635: Using SET ANSI &amp; SET EXACT with String Comparison Operator &quot;=&quot;"
-permalink: kb/151/Q151635/
+permalink: /kb/151/Q151635/
 ---
 
 ## Q151635: Using SET ANSI &amp; SET EXACT with String Comparison Operator &quot;=&quot;

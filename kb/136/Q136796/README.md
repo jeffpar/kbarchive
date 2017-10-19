@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136796: PRB: Graphics Do Not Display When Using List Box with Pictures"
-permalink: kb/136/Q136796/
+permalink: /kb/136/Q136796/
 ---
 
 ## Q136796: PRB: Graphics Do Not Display When Using List Box with Pictures

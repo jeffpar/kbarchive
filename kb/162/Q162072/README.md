@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162072: FIX: SELECT - SQL from Table with 252 Fields Causes Page Fault"
-permalink: kb/162/Q162072/
+permalink: /kb/162/Q162072/
 ---
 
 ## Q162072: FIX: SELECT - SQL from Table with 252 Fields Causes Page Fault

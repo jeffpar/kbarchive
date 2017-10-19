@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278012: MapPoint Error Message: An Error Occurred While Printing"
-permalink: kb/278/Q278012/
+permalink: /kb/278/Q278012/
 ---
 
 ## Q278012: MapPoint Error Message: An Error Occurred While Printing

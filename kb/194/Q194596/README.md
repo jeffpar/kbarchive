@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194596: XGEN: Requirements - MS Importer for Lotus cc:Mail Archives"
-permalink: kb/194/Q194596/
+permalink: /kb/194/Q194596/
 ---
 
 ## Q194596: XGEN: Requirements - MS Importer for Lotus cc:Mail Archives

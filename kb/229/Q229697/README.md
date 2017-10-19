@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229697: How to Enable IPX/SPX in Connection Manager"
-permalink: kb/229/Q229697/
+permalink: /kb/229/Q229697/
 ---
 
 ## Q229697: How to Enable IPX/SPX in Connection Manager

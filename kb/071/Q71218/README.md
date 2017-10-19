@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71218: Idlewild Shows Blackness as Only Option"
-permalink: kb/071/Q71218/
+permalink: /kb/071/Q71218/
 ---
 
 ## Q71218: Idlewild Shows Blackness as Only Option

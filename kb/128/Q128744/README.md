@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128744: PC Win: No Message If Password Change Fails"
-permalink: kb/128/Q128744/
+permalink: /kb/128/Q128744/
 ---
 
 ## Q128744: PC Win: No Message If Password Change Fails

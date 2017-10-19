@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155003: Description of Windows 95 OEM Service Release 2"
-permalink: kb/155/Q155003/
+permalink: /kb/155/Q155003/
 ---
 
 ## Q155003: Description of Windows 95 OEM Service Release 2

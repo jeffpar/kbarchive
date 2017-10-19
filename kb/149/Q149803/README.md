@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149803: Troubleshooting Error 242 When Use DLC 802.2 Link Services"
-permalink: kb/149/Q149803/
+permalink: /kb/149/Q149803/
 ---
 
 ## Q149803: Troubleshooting Error 242 When Use DLC 802.2 Link Services

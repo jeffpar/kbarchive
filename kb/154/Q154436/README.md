@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154436: Errors Accessing Hard Disk with Spin-Down Enabled"
-permalink: kb/154/Q154436/
+permalink: /kb/154/Q154436/
 ---
 
 ## Q154436: Errors Accessing Hard Disk with Spin-Down Enabled

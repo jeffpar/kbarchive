@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225108: SNA 4.0 SP2 May Cause Trap in Function RamWrite or CheckInboundQ"
-permalink: kb/225/Q225108/
+permalink: /kb/225/Q225108/
 ---
 
 ## Q225108: SNA 4.0 SP2 May Cause Trap in Function RamWrite or CheckInboundQ

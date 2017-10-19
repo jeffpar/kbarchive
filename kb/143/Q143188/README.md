@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143188: Gopher Server Monitor Counters"
-permalink: kb/143/Q143188/
+permalink: /kb/143/Q143188/
 ---
 
 ## Q143188: Gopher Server Monitor Counters

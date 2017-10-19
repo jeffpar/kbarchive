@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124347: FoxPro Advisor Magazine Articles April 1994"
-permalink: kb/124/Q124347/
+permalink: /kb/124/Q124347/
 ---
 
 ## Q124347: FoxPro Advisor Magazine Articles April 1994

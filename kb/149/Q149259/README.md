@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149259: FIX: Class Not Registered Error When Starting Class Browser"
-permalink: kb/149/Q149259/
+permalink: /kb/149/Q149259/
 ---
 
 ## Q149259: FIX: Class Not Registered Error When Starting Class Browser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66267: Windows 3.0 Supplemental Driver Library; Network Install"
-permalink: kb/066/Q66267/
+permalink: /kb/066/Q66267/
 ---
 
 ## Q66267: Windows 3.0 Supplemental Driver Library; Network Install

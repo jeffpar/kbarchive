@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184113: XCON: Content Conversion Fails After Repeated Replies"
-permalink: kb/184/Q184113/
+permalink: /kb/184/Q184113/
 ---
 
 ## Q184113: XCON: Content Conversion Fails After Repeated Replies

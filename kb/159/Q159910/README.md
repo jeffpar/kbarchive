@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159910: Memory Corruption on a Windows NT Alpha Platform"
-permalink: kb/159/Q159910/
+permalink: /kb/159/Q159910/
 ---
 
 ## Q159910: Memory Corruption on a Windows NT Alpha Platform

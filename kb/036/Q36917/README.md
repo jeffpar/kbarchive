@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36917: INFO: DlgDirSelect() Has Undocumented Behavior"
-permalink: kb/036/Q36917/
+permalink: /kb/036/Q36917/
 ---
 
 ## Q36917: INFO: DlgDirSelect() Has Undocumented Behavior

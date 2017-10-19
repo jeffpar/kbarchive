@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164354: Removing FPNW from a PDC Causes Loss of Netware Compatible Login"
-permalink: kb/164/Q164354/
+permalink: /kb/164/Q164354/
 ---
 
 ## Q164354: Removing FPNW from a PDC Causes Loss of Netware Compatible Login

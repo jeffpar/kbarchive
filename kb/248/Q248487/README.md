@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248487: XADM: Microsoft Exchange Server 5.5 SP1 Installation Stops"
-permalink: kb/248/Q248487/
+permalink: /kb/248/Q248487/
 ---
 
 ## Q248487: XADM: Microsoft Exchange Server 5.5 SP1 Installation Stops

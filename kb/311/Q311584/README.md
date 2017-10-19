@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311584: LUA App May Hang If VTAM Recycled While RUI_WRITE Outstanding"
-permalink: kb/311/Q311584/
+permalink: /kb/311/Q311584/
 ---
 
 ## Q311584: LUA App May Hang If VTAM Recycled While RUI_WRITE Outstanding

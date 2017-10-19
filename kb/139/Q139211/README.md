@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139211: Win32 RECEIVE_AND_POST Uses an Event Handle, Not a Semaphore"
-permalink: kb/139/Q139211/
+permalink: /kb/139/Q139211/
 ---
 
 ## Q139211: Win32 RECEIVE_AND_POST Uses an Event Handle, Not a Semaphore

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136591: MS Client for NetWare Does Not Synchronize Time with Server"
-permalink: kb/136/Q136591/
+permalink: /kb/136/Q136591/
 ---
 
 ## Q136591: MS Client for NetWare Does Not Synchronize Time with Server

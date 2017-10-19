@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108729: OFF97: Color Shift Occurs When Printing in Windows 98"
-permalink: kb/108/Q108729/
+permalink: /kb/108/Q108729/
 ---
 
 ## Q108729: OFF97: Color Shift Occurs When Printing in Windows 98

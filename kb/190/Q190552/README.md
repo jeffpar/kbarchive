@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190552: WinNT 4.0 DHCP Client Modified to meet RFC 2131"
-permalink: kb/190/Q190552/
+permalink: /kb/190/Q190552/
 ---
 
 ## Q190552: WinNT 4.0 DHCP Client Modified to meet RFC 2131

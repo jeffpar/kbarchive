@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183569: AS/400 RDB Name Cannot Exceed Eight Characters"
-permalink: kb/183/Q183569/
+permalink: /kb/183/Q183569/
 ---
 
 ## Q183569: AS/400 RDB Name Cannot Exceed Eight Characters

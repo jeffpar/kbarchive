@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87567: Windows &amp; MS-DOS 5 Upgrade Disk Set (3.5 Inch)"
-permalink: kb/087/Q87567/
+permalink: /kb/087/Q87567/
 ---
 
 ## Q87567: Windows &amp; MS-DOS 5 Upgrade Disk Set (3.5 Inch)

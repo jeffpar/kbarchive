@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155524: SMS 1.1 Client Program Group Always Pops Up in Windows NT 4.0"
-permalink: kb/155/Q155524/
+permalink: /kb/155/Q155524/
 ---
 
 ## Q155524: SMS 1.1 Client Program Group Always Pops Up in Windows NT 4.0

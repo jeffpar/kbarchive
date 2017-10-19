@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221929: XFOR: OV/VM (PROFS) Connector Stuck in Endless Loop"
-permalink: kb/221/Q221929/
+permalink: /kb/221/Q221929/
 ---
 
 ## Q221929: XFOR: OV/VM (PROFS) Connector Stuck in Endless Loop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247937: XCLN: Error Message Using Outlook with Terminal Server"
-permalink: kb/247/Q247937/
+permalink: /kb/247/Q247937/
 ---
 
 ## Q247937: XCLN: Error Message Using Outlook with Terminal Server

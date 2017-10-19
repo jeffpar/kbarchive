@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245538: &quot;STOP 0x0000000A&quot; Error Message While Using Rcmdsvc.exe"
-permalink: kb/245/Q245538/
+permalink: /kb/245/Q245538/
 ---
 
 ## Q245538: &quot;STOP 0x0000000A&quot; Error Message While Using Rcmdsvc.exe

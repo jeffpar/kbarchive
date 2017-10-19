@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192439: SMS: Command Line Smsview.exe Leaves Open Window in Background"
-permalink: kb/192/Q192439/
+permalink: /kb/192/Q192439/
 ---
 
 ## Q192439: SMS: Command Line Smsview.exe Leaves Open Window in Background

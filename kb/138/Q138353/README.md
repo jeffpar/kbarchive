@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138353: Complete Basketball 95-96: No Daily Update Feature Available"
-permalink: kb/138/Q138353/
+permalink: /kb/138/Q138353/
 ---
 
 ## Q138353: Complete Basketball 95-96: No Daily Update Feature Available

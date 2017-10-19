@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192825: INFO: Searching FoxPro Newsgroups"
-permalink: kb/192/Q192825/
+permalink: /kb/192/Q192825/
 ---
 
 ## Q192825: INFO: Searching FoxPro Newsgroups

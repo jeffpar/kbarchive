@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251318: XCON: MTA Uses Node IP Address Instead of Cluster IP Address"
-permalink: kb/251/Q251318/
+permalink: /kb/251/Q251318/
 ---
 
 ## Q251318: XCON: MTA Uses Node IP Address Instead of Cluster IP Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241396: FileTool.exe Replaces the Open and Add-to-Project Features in VC"
-permalink: kb/241/Q241396/
+permalink: /kb/241/Q241396/
 ---
 
 ## Q241396: FileTool.exe Replaces the Open and Add-to-Project Features in VC

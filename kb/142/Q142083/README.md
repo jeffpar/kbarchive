@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142083: PRB: Mastering Visual FoxPro: Full-Text Search Internal Error"
-permalink: kb/142/Q142083/
+permalink: /kb/142/Q142083/
 ---
 
 ## Q142083: PRB: Mastering Visual FoxPro: Full-Text Search Internal Error

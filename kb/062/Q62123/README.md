@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62123: Mac Hyp: Adding a Message Body to a Message"
-permalink: kb/062/Q62123/
+permalink: /kb/062/Q62123/
 ---
 
 ## Q62123: Mac Hyp: Adding a Message Body to a Message

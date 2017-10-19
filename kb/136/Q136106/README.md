@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136106: Re-enabling CMD PCI IDE Controller Hangs Computer"
-permalink: kb/136/Q136106/
+permalink: /kb/136/Q136106/
 ---
 
 ## Q136106: Re-enabling CMD PCI IDE Controller Hangs Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297218: PRB: PDW Err &quot;Object Invoked Has Disconnected from Its Clients&quot;"
-permalink: kb/297/Q297218/
+permalink: /kb/297/Q297218/
 ---
 
 ## Q297218: PRB: PDW Err &quot;Object Invoked Has Disconnected from Its Clients&quot;

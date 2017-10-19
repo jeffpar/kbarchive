@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166186: OS/2 with TCP/IP May Refuse Socket Connections from Windows NT"
-permalink: kb/166/Q166186/
+permalink: /kb/166/Q166186/
 ---
 
 ## Q166186: OS/2 with TCP/IP May Refuse Socket Connections from Windows NT

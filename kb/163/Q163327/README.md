@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163327: How to Use the Rregchg.exe Tool"
-permalink: kb/163/Q163327/
+permalink: /kb/163/Q163327/
 ---
 
 ## Q163327: How to Use the Rregchg.exe Tool

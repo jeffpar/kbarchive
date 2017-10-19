@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84794: Windows Err Msg: Cannot Run DOS Application in Second..."
-permalink: kb/084/Q84794/
+permalink: /kb/084/Q84794/
 ---
 
 ## Q84794: Windows Err Msg: Cannot Run DOS Application in Second...

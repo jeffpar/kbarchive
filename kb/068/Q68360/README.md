@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68360: Control Panel Doesn't Respond to WM_WININICHANGE Messages"
-permalink: kb/068/Q68360/
+permalink: /kb/068/Q68360/
 ---
 
 ## Q68360: Control Panel Doesn't Respond to WM_WININICHANGE Messages

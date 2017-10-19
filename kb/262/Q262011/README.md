@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262011: Allegiance: Stand-Alone Server Is Not Updated Automatically"
-permalink: kb/262/Q262011/
+permalink: /kb/262/Q262011/
 ---
 
 ## Q262011: Allegiance: Stand-Alone Server Is Not Updated Automatically

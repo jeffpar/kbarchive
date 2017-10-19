@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183987: PRB: SendData Method Generates Error 40006"
-permalink: kb/183/Q183987/
+permalink: /kb/183/Q183987/
 ---
 
 ## Q183987: PRB: SendData Method Generates Error 40006

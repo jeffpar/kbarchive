@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147907: Error Starting IIS Services Without TCP/IP Installed"
-permalink: kb/147/Q147907/
+permalink: /kb/147/Q147907/
 ---
 
 ## Q147907: Error Starting IIS Services Without TCP/IP Installed

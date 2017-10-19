@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87416: PC DB: More MBG Files Than Local Postoffice Users"
-permalink: kb/087/Q87416/
+permalink: /kb/087/Q87416/
 ---
 
 ## Q87416: PC DB: More MBG Files Than Local Postoffice Users

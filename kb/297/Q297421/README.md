@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297421: &quot;Liccheck.exe DLL Initialization Failed&quot; ARCserve Error Message"
-permalink: kb/297/Q297421/
+permalink: /kb/297/Q297421/
 ---
 
 ## Q297421: &quot;Liccheck.exe DLL Initialization Failed&quot; ARCserve Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187301: SMS: New Msaudit.rul Causes Audit32 to Stop Responding at 80%"
-permalink: kb/187/Q187301/
+permalink: /kb/187/Q187301/
 ---
 
 ## Q187301: SMS: New Msaudit.rul Causes Audit32 to Stop Responding at 80%

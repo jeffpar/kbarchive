@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189493: RTF Translation to Notes Servers May Fail"
-permalink: kb/189/Q189493/
+permalink: /kb/189/Q189493/
 ---
 
 ## Q189493: RTF Translation to Notes Servers May Fail

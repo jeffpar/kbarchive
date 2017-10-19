@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q124857: PC Ext: EXTERNAL.INI Requires [External] Section"
-permalink: kb/124/Q124857/
+title: "Q124857: PC Ext: EXTERNAL.INI Requires &#91;External&#93; Section"
+permalink: /kb/124/Q124857/
 ---
 
-## Q124857: PC Ext: EXTERNAL.INI Requires [External] Section
+## Q124857: PC Ext: EXTERNAL.INI Requires &#91;External&#93; Section
 
 	Article: Q124857
 	Product(s): Microsoft Mail For PC Networks

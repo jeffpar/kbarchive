@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125245: PC Adm: Postoffice Diagnostics Utility Version 3.2.1"
-permalink: kb/125/Q125245/
+permalink: /kb/125/Q125245/
 ---
 
 ## Q125245: PC Adm: Postoffice Diagnostics Utility Version 3.2.1

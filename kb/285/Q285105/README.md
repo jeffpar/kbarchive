@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285105: Invalid Access Code When Creating Large Archive File Reports"
-permalink: kb/285/Q285105/
+permalink: /kb/285/Q285105/
 ---
 
 ## Q285105: Invalid Access Code When Creating Large Archive File Reports

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155245: Dial-Up Networking Error 87 If Foreign Access Number Chosen"
-permalink: kb/155/Q155245/
+permalink: /kb/155/Q155245/
 ---
 
 ## Q155245: Dial-Up Networking Error 87 If Foreign Access Number Chosen

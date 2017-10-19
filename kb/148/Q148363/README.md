@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148363: PC Gen: Dir-Sync Files by Version"
-permalink: kb/148/Q148363/
+permalink: /kb/148/Q148363/
 ---
 
 ## Q148363: PC Gen: Dir-Sync Files by Version

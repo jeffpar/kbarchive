@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156055: Windows NT Setup Stops Responding w/HP CDR4020I on SCSI Chain"
-permalink: kb/156/Q156055/
+permalink: /kb/156/Q156055/
 ---
 
 ## Q156055: Windows NT Setup Stops Responding w/HP CDR4020I on SCSI Chain

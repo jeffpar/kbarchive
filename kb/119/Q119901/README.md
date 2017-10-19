@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119901: How to Use the UNION Clause in a FoxPro SELECT Statement"
-permalink: kb/119/Q119901/
+permalink: /kb/119/Q119901/
 ---
 
 ## Q119901: How to Use the UNION Clause in a FoxPro SELECT Statement

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196724: WD97: Change Case Does Not Apply Formatting to Merge Results"
-permalink: kb/196/Q196724/
+permalink: /kb/196/Q196724/
 ---
 
 ## Q196724: WD97: Change Case Does Not Apply Formatting to Merge Results

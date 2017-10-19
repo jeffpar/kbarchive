@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130852: Text Assist Requires Updated File to Function in Windows 95"
-permalink: kb/130/Q130852/
+permalink: /kb/130/Q130852/
 ---
 
 ## Q130852: Text Assist Requires Updated File to Function in Windows 95

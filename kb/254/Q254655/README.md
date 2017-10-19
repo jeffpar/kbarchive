@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254655: Ipconfig /All Command Does Not Display Domain Suffix"
-permalink: kb/254/Q254655/
+permalink: /kb/254/Q254655/
 ---
 
 ## Q254655: Ipconfig /All Command Does Not Display Domain Suffix

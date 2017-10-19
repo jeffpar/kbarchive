@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288237: Server for NIS Does Not Start After You Demote a DC"
-permalink: kb/288/Q288237/
+permalink: /kb/288/Q288237/
 ---
 
 ## Q288237: Server for NIS Does Not Start After You Demote a DC

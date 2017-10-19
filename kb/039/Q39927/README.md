@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39927: MS-DOS: Directory and Subdirectory Limitations"
-permalink: kb/039/Q39927/
+permalink: /kb/039/Q39927/
 ---
 
 ## Q39927: MS-DOS: Directory and Subdirectory Limitations

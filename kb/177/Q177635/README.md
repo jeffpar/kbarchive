@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177635: XADM: How to Set Up a Disaster Recovery Server for Dir.edb"
-permalink: kb/177/Q177635/
+permalink: /kb/177/Q177635/
 ---
 
 ## Q177635: XADM: How to Set Up a Disaster Recovery Server for Dir.edb

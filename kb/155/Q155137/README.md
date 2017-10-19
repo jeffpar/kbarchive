@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155137: XFOR: Messages Not Deleted from IMC Inbound Queue"
-permalink: kb/155/Q155137/
+permalink: /kb/155/Q155137/
 ---
 
 ## Q155137: XFOR: Messages Not Deleted from IMC Inbound Queue

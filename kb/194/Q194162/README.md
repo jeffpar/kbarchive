@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194162: Encarta Virtual Globe 99: Error Message if You Remove CD-ROM"
-permalink: kb/194/Q194162/
+permalink: /kb/194/Q194162/
 ---
 
 ## Q194162: Encarta Virtual Globe 99: Error Message if You Remove CD-ROM

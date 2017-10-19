@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264341: XFOR: Unintelligible Characters in MS Mail Connector Queue"
-permalink: kb/264/Q264341/
+permalink: /kb/264/Q264341/
 ---
 
 ## Q264341: XFOR: Unintelligible Characters in MS Mail Connector Queue

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259428: Manipulating Removable-Media Partitions Depletes Drive Letters"
-permalink: kb/259/Q259428/
+permalink: /kb/259/Q259428/
 ---
 
 ## Q259428: Manipulating Removable-Media Partitions Depletes Drive Letters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173647: INFO: Programmer's Guide to Using ADO in Visual Basic"
-permalink: kb/173/Q173647/
+permalink: /kb/173/Q173647/
 ---
 
 ## Q173647: INFO: Programmer's Guide to Using ADO in Visual Basic

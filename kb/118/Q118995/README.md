@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118995: Baseball Err Msg: File &quot;MV.M11&quot; Bad or Missing"
-permalink: kb/118/Q118995/
+permalink: /kb/118/Q118995/
 ---
 
 ## Q118995: Baseball Err Msg: File &quot;MV.M11&quot; Bad or Missing

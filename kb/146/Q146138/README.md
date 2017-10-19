@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146138: XCLN: Adding a Sub-folder to Outbox Causes It to Be Highlighted"
-permalink: kb/146/Q146138/
+permalink: /kb/146/Q146138/
 ---
 
 ## Q146138: XCLN: Adding a Sub-folder to Outbox Causes It to Be Highlighted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222156: MSClient 3.0 Enforces Source Routing in Token Ring Broadcasts"
-permalink: kb/222/Q222156/
+permalink: /kb/222/Q222156/
 ---
 
 ## Q222156: MSClient 3.0 Enforces Source Routing in Token Ring Broadcasts

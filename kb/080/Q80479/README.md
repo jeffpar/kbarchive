@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80479: Corrupt Permanent Swap File Error and DR DOS 6.0 SSTOR.EXE"
-permalink: kb/080/Q80479/
+permalink: /kb/080/Q80479/
 ---
 
 ## Q80479: Corrupt Permanent Swap File Error and DR DOS 6.0 SSTOR.EXE

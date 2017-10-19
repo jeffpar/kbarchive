@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146424: PRB: &quot;Entry point GetFreeSystemResources not found&quot; Error"
-permalink: kb/146/Q146424/
+permalink: /kb/146/Q146424/
 ---
 
 ## Q146424: PRB: &quot;Entry point GetFreeSystemResources not found&quot; Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104491: Windows NT Does Not Support TAR or COMPRESS for FTP Transfers"
-permalink: kb/104/Q104491/
+permalink: /kb/104/Q104491/
 ---
 
 ## Q104491: Windows NT Does Not Support TAR or COMPRESS for FTP Transfers

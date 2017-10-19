@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187453: User's SID Remains in Registry After Logoff"
-permalink: kb/187/Q187453/
+permalink: /kb/187/Q187453/
 ---
 
 ## Q187453: User's SID Remains in Registry After Logoff

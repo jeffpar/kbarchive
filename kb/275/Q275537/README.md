@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275537: Certificate Object GetMapping Call Fails"
-permalink: kb/275/Q275537/
+permalink: /kb/275/Q275537/
 ---
 
 ## Q275537: Certificate Object GetMapping Call Fails

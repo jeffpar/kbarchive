@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120078: Cannot Connect to WGPO with Full-Access Password"
-permalink: kb/120/Q120078/
+permalink: /kb/120/Q120078/
 ---
 
 ## Q120078: Cannot Connect to WGPO with Full-Access Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189800: XCLN: IExpress Does Not Make Self-extracting Files"
-permalink: kb/189/Q189800/
+permalink: /kb/189/Q189800/
 ---
 
 ## Q189800: XCLN: IExpress Does Not Make Self-extracting Files

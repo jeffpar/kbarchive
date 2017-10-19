@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94342: Alternative to List Prompt Files Option in .SCX"
-permalink: kb/094/Q94342/
+permalink: /kb/094/Q94342/
 ---
 
 ## Q94342: Alternative to List Prompt Files Option in .SCX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216408: PRB: Slow Performance In VFP ODBC Driver with SET DELETED ON"
-permalink: kb/216/Q216408/
+permalink: /kb/216/Q216408/
 ---
 
 ## Q216408: PRB: Slow Performance In VFP ODBC Driver with SET DELETED ON

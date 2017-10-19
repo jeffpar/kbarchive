@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120578: Duplicate IP Addresses Not Detected Correctly"
-permalink: kb/120/Q120578/
+permalink: /kb/120/Q120578/
 ---
 
 ## Q120578: Duplicate IP Addresses Not Detected Correctly

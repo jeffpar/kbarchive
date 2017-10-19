@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155847: HOWTO: Activate a System Menu Item in Visual FoxPro 5.0"
-permalink: kb/155/Q155847/
+permalink: /kb/155/Q155847/
 ---
 
 ## Q155847: HOWTO: Activate a System Menu Item in Visual FoxPro 5.0

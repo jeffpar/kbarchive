@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165392: WD97: Invalid Page Fault in Pima32.dll w/ Compaq Address Book"
-permalink: kb/165/Q165392/
+permalink: /kb/165/Q165392/
 ---
 
 ## Q165392: WD97: Invalid Page Fault in Pima32.dll w/ Compaq Address Book

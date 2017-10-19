@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129331: How to Preserve Index Expressions to Rebuild CDX and Tags"
-permalink: kb/129/Q129331/
+permalink: /kb/129/Q129331/
 ---
 
 ## Q129331: How to Preserve Index Expressions to Rebuild CDX and Tags

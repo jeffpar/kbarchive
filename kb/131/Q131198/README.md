@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131198: List of Visual FoxPro Commands Supporting Long File Names"
-permalink: kb/131/Q131198/
+permalink: /kb/131/Q131198/
 ---
 
 ## Q131198: List of Visual FoxPro Commands Supporting Long File Names

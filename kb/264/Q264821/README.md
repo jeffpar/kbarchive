@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264821: Grown-Up's Guide to Computing Comments and Corrections"
-permalink: kb/264/Q264821/
+permalink: /kb/264/Q264821/
 ---
 
 ## Q264821: Grown-Up's Guide to Computing Comments and Corrections

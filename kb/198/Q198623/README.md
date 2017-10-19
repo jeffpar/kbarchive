@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198623: HOWTO: JIT Debug a COM Local Server"
-permalink: kb/198/Q198623/
+permalink: /kb/198/Q198623/
 ---
 
 ## Q198623: HOWTO: JIT Debug a COM Local Server

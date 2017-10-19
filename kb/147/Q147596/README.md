@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147596: HOWTO: Create a Form that Resizes Based on Resolution"
-permalink: kb/147/Q147596/
+permalink: /kb/147/Q147596/
 ---
 
 ## Q147596: HOWTO: Create a Form that Resizes Based on Resolution

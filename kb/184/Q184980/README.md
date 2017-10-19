@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184980: WD97: File Send To Sends Attachments Only as Word Documents"
-permalink: kb/184/Q184980/
+permalink: /kb/184/Q184980/
 ---
 
 ## Q184980: WD97: File Send To Sends Attachments Only as Word Documents

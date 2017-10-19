@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110608: PPT: Resetting Customized Toolbars in PowerPoint"
-permalink: kb/110/Q110608/
+permalink: /kb/110/Q110608/
 ---
 
 ## Q110608: PPT: Resetting Customized Toolbars in PowerPoint

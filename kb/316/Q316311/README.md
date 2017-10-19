@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316311: HOW TO: Configure a Mirror Set on Windows NT Server 4.0"
-permalink: kb/316/Q316311/
+permalink: /kb/316/Q316311/
 ---
 
 ## Q316311: HOW TO: Configure a Mirror Set on Windows NT Server 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320103: BUG: Conditionally Compiled Public Events Cause Access Violation"
-permalink: kb/320/Q320103/
+permalink: /kb/320/Q320103/
 ---
 
 ## Q320103: BUG: Conditionally Compiled Public Events Cause Access Violation

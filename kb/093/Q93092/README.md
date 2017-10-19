@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93092: Novell NetWare, Windows for Workgroups and ArcNet Cards"
-permalink: kb/093/Q93092/
+permalink: /kb/093/Q93092/
 ---
 
 ## Q93092: Novell NetWare, Windows for Workgroups and ArcNet Cards

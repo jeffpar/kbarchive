@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243044: MMC Does Not Display Virtual Directories"
-permalink: kb/243/Q243044/
+permalink: /kb/243/Q243044/
 ---
 
 ## Q243044: MMC Does Not Display Virtual Directories

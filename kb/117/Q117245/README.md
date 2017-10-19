@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117245: Manual MS-DOS Installation When SETUP.EXE Fails"
-permalink: kb/117/Q117245/
+permalink: /kb/117/Q117245/
 ---
 
 ## Q117245: Manual MS-DOS Installation When SETUP.EXE Fails

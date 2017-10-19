@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232567: Error 67 with NET USE Command if FQDN Exceeds 32 Characters"
-permalink: kb/232/Q232567/
+permalink: /kb/232/Q232567/
 ---
 
 ## Q232567: Error 67 with NET USE Command if FQDN Exceeds 32 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170979: FIX: Pragma Pack(pop) Missing from afxdocob.h Header File"
-permalink: kb/170/Q170979/
+permalink: /kb/170/Q170979/
 ---
 
 ## Q170979: FIX: Pragma Pack(pop) Missing from afxdocob.h Header File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152456: Automating SMC Adapter Setup"
-permalink: kb/152/Q152456/
+permalink: /kb/152/Q152456/
 ---
 
 ## Q152456: Automating SMC Adapter Setup

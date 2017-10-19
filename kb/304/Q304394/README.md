@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304394: BUG: MS Oracle Driver Doesn't Sort SQLPrimaryKeys Result Set"
-permalink: kb/304/Q304394/
+permalink: /kb/304/Q304394/
 ---
 
 ## Q304394: BUG: MS Oracle Driver Doesn't Sort SQLPrimaryKeys Result Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182900: XADM: Windows NT Account Is Able To Access All Mailboxes"
-permalink: kb/182/Q182900/
+permalink: /kb/182/Q182900/
 ---
 
 ## Q182900: XADM: Windows NT Account Is Able To Access All Mailboxes

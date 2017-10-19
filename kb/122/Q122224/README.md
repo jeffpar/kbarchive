@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122224: Format Limits Stripe Sets to 4 GB"
-permalink: kb/122/Q122224/
+permalink: /kb/122/Q122224/
 ---
 
 ## Q122224: Format Limits Stripe Sets to 4 GB

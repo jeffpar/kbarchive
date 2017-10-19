@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122838: Memory Leak in LMREPL Service"
-permalink: kb/122/Q122838/
+permalink: /kb/122/Q122838/
 ---
 
 ## Q122838: Memory Leak in LMREPL Service

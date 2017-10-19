@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189489: FIX: Binary Compatibility Broken When Adding Events"
-permalink: kb/189/Q189489/
+permalink: /kb/189/Q189489/
 ---
 
 ## Q189489: FIX: Binary Compatibility Broken When Adding Events

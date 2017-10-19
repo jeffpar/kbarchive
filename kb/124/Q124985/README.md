@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124985: Bookshelf: Double-clicking Book Title Screen Causes GPF"
-permalink: kb/124/Q124985/
+permalink: /kb/124/Q124985/
 ---
 
 ## Q124985: Bookshelf: Double-clicking Book Title Screen Causes GPF

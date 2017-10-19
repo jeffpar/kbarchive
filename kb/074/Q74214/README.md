@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74214: Mouse Doesn't Work with Norton Utilities 5.0"
-permalink: kb/074/Q74214/
+permalink: /kb/074/Q74214/
 ---
 
 ## Q74214: Mouse Doesn't Work with Norton Utilities 5.0

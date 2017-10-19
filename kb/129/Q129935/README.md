@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129935: PRB: Non-Reserved Word w/ Colon Behaves Differently in VB 4.0"
-permalink: kb/129/Q129935/
+permalink: /kb/129/Q129935/
 ---
 
 ## Q129935: PRB: Non-Reserved Word w/ Colon Behaves Differently in VB 4.0

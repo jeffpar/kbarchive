@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177287: WD97: How to Specify Multiple Conditions with a Nested IF Field"
-permalink: kb/177/Q177287/
+permalink: /kb/177/Q177287/
 ---
 
 ## Q177287: WD97: How to Specify Multiple Conditions with a Nested IF Field

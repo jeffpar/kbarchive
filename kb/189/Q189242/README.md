@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189242: XWEB: OWA Displays Personal Calendar Instead of Shared Calendar"
-permalink: kb/189/Q189242/
+permalink: /kb/189/Q189242/
 ---
 
 ## Q189242: XWEB: OWA Displays Personal Calendar Instead of Shared Calendar

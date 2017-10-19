@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245434: PRB: Serialization with CSocketFile and CArchive Might Stop"
-permalink: kb/245/Q245434/
+permalink: /kb/245/Q245434/
 ---
 
 ## Q245434: PRB: Serialization with CSocketFile and CArchive Might Stop

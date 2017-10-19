@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q96537: PROFS: 3.0 Gateway Disk 2 [5.25]"
-permalink: kb/096/Q96537/
+title: "Q96537: PROFS: 3.0 Gateway Disk 2 &#91;5.25&#93;"
+permalink: /kb/096/Q96537/
 ---
 
-## Q96537: PROFS: 3.0 Gateway Disk 2 [5.25]
+## Q96537: PROFS: 3.0 Gateway Disk 2 &#91;5.25&#93;
 
 	Article: Q96537
 	Product(s): Microsoft Mail For PC Networks

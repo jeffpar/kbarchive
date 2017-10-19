@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134650: HOWTO: Get Info for Troubleshooting Compiler &amp; Linker Problems"
-permalink: kb/134/Q134650/
+permalink: /kb/134/Q134650/
 ---
 
 ## Q134650: HOWTO: Get Info for Troubleshooting Compiler &amp; Linker Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155626: SMS: Invwin32 Fails After Restarting on Windows NT Servers"
-permalink: kb/155/Q155626/
+permalink: /kb/155/Q155626/
 ---
 
 ## Q155626: SMS: Invwin32 Fails After Restarting on Windows NT Servers

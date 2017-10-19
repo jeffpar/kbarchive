@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177823: XADM: Incorrect RPC Operations Cause Information Store to Fail"
-permalink: kb/177/Q177823/
+permalink: /kb/177/Q177823/
 ---
 
 ## Q177823: XADM: Incorrect RPC Operations Cause Information Store to Fail

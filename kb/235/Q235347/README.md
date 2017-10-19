@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235347: WD97: Styles and AutoText Not Copied to New Template"
-permalink: kb/235/Q235347/
+permalink: /kb/235/Q235347/
 ---
 
 ## Q235347: WD97: Styles and AutoText Not Copied to New Template

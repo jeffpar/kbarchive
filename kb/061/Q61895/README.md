@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61895: PPT: How to Use the Mouse as a Slide Show Pen or Arrow"
-permalink: kb/061/Q61895/
+permalink: /kb/061/Q61895/
 ---
 
 ## Q61895: PPT: How to Use the Mouse as a Slide Show Pen or Arrow

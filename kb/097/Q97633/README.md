@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97633: PRB: Alias Problems with Table Name Starting with Number"
-permalink: kb/097/Q97633/
+permalink: /kb/097/Q97633/
 ---
 
 ## Q97633: PRB: Alias Problems with Table Name Starting with Number

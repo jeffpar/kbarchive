@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307018: Buffer Overflow in Iissync.exe"
-permalink: kb/307/Q307018/
+permalink: /kb/307/Q307018/
 ---
 
 ## Q307018: Buffer Overflow in Iissync.exe

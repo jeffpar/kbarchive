@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216175: FIX: CTRL+C Does Not Copy From Locked Textbox"
-permalink: kb/216/Q216175/
+permalink: /kb/216/Q216175/
 ---
 
 ## Q216175: FIX: CTRL+C Does Not Copy From Locked Textbox

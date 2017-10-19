@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126658: PC MAPI: Sample C Code for MAPIAddress Function Call"
-permalink: kb/126/Q126658/
+permalink: /kb/126/Q126658/
 ---
 
 ## Q126658: PC MAPI: Sample C Code for MAPIAddress Function Call

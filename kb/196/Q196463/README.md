@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196463: How to Obtain Tech Support Information from Cisco Routers"
-permalink: kb/196/Q196463/
+permalink: /kb/196/Q196463/
 ---
 
 ## Q196463: How to Obtain Tech Support Information from Cisco Routers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214488: Registry Flag fUseDefaultGina Does Not Work"
-permalink: kb/214/Q214488/
+permalink: /kb/214/Q214488/
 ---
 
 ## Q214488: Registry Flag fUseDefaultGina Does Not Work

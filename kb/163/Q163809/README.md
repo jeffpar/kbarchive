@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163809: WD97: Extend Selection Is Turned Off After Macro Completion"
-permalink: kb/163/Q163809/
+permalink: /kb/163/Q163809/
 ---
 
 ## Q163809: WD97: Extend Selection Is Turned Off After Macro Completion

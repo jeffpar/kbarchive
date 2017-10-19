@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116155: Sharp Fax Machines Incompatible with Class 2 Fax Modems"
-permalink: kb/116/Q116155/
+permalink: /kb/116/Q116155/
 ---
 
 ## Q116155: Sharp Fax Machines Incompatible with Class 2 Fax Modems

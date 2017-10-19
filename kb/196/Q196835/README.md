@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196835: HOWTO: Override the MFC Default Control Containment"
-permalink: kb/196/Q196835/
+permalink: /kb/196/Q196835/
 ---
 
 ## Q196835: HOWTO: Override the MFC Default Control Containment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149802: Assigning 3270 LUs to Workstations Using SNA Server Client"
-permalink: kb/149/Q149802/
+permalink: /kb/149/Q149802/
 ---
 
 ## Q149802: Assigning 3270 LUs to Workstations Using SNA Server Client

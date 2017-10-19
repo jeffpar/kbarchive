@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82502: 8514 System Font Becomes Corrupted by MS-DOS Window"
-permalink: kb/082/Q82502/
+permalink: /kb/082/Q82502/
 ---
 
 ## Q82502: 8514 System Font Becomes Corrupted by MS-DOS Window

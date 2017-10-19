@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174658: XL: &quot;Merge Handler&quot; Error Message Dragging Files into Briefcase"
-permalink: kb/174/Q174658/
+permalink: /kb/174/Q174658/
 ---
 
 ## Q174658: XL: &quot;Merge Handler&quot; Error Message Dragging Files into Briefcase

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118927: PC Adm: Setting Passwords Using the Administrator Program"
-permalink: kb/118/Q118927/
+permalink: /kb/118/Q118927/
 ---
 
 ## Q118927: PC Adm: Setting Passwords Using the Administrator Program

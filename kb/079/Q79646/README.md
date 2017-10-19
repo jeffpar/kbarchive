@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79646: Windows Compatible Networks and Their Required Versions"
-permalink: kb/079/Q79646/
+permalink: /kb/079/Q79646/
 ---
 
 ## Q79646: Windows Compatible Networks and Their Required Versions

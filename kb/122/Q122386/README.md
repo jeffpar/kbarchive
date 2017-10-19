@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122386: Non-Existing Administrative Share Causes Incomplete Site"
-permalink: kb/122/Q122386/
+permalink: /kb/122/Q122386/
 ---
 
 ## Q122386: Non-Existing Administrative Share Causes Incomplete Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119453: PRB: GDI Heap Fills Up While Playing a Metafile"
-permalink: kb/119/Q119453/
+permalink: /kb/119/Q119453/
 ---
 
 ## Q119453: PRB: GDI Heap Fills Up While Playing a Metafile

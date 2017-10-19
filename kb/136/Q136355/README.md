@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136355: Fury3: Mission 1 of Fury Shows 0 Ground Targets Destroyed"
-permalink: kb/136/Q136355/
+permalink: /kb/136/Q136355/
 ---
 
 ## Q136355: Fury3: Mission 1 of Fury Shows 0 Ground Targets Destroyed

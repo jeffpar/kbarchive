@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138161: NBIPX: Broadcast Datagrams Should Contain Destination Field"
-permalink: kb/138/Q138161/
+permalink: /kb/138/Q138161/
 ---
 
 ## Q138161: NBIPX: Broadcast Datagrams Should Contain Destination Field

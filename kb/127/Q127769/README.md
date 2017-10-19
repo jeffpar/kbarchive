@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127769: PC Win: MoveUser Does Not Change Access Privileges"
-permalink: kb/127/Q127769/
+permalink: /kb/127/Q127769/
 ---
 
 ## Q127769: PC Win: MoveUser Does Not Change Access Privileges

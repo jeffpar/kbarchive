@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109998: FIX: Divide by Zero Run-Time Error Not Produced"
-permalink: kb/109/Q109998/
+permalink: /kb/109/Q109998/
 ---
 
 ## Q109998: FIX: Divide by Zero Run-Time Error Not Produced

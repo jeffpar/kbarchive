@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183718: CACLS Not Resolving Principle Names Correctly"
-permalink: kb/183/Q183718/
+permalink: /kb/183/Q183718/
 ---
 
 ## Q183718: CACLS Not Resolving Principle Names Correctly

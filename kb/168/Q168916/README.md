@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168916: Volume Control Icon No Longer Visible on the Taskbar"
-permalink: kb/168/Q168916/
+permalink: /kb/168/Q168916/
 ---
 
 ## Q168916: Volume Control Icon No Longer Visible on the Taskbar

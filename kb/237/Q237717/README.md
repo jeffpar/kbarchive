@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237717: NFL Fever 2000: Slow Frame Rate and Poor Graphics Performance"
-permalink: kb/237/Q237717/
+permalink: /kb/237/Q237717/
 ---
 
 ## Q237717: NFL Fever 2000: Slow Frame Rate and Poor Graphics Performance

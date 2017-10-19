@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132838: Compiling in Microsoft Visual C++ Switches Screen to Text Mode"
-permalink: kb/132/Q132838/
+permalink: /kb/132/Q132838/
 ---
 
 ## Q132838: Compiling in Microsoft Visual C++ Switches Screen to Text Mode

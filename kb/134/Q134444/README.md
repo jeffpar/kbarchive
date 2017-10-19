@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134444: Dogs for Windows: Manual Installation Instructions"
-permalink: kb/134/Q134444/
+permalink: /kb/134/Q134444/
 ---
 
 ## Q134444: Dogs for Windows: Manual Installation Instructions

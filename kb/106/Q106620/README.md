@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106620: Art Gallery/ Wine Guide: Animations Don't Play with ATI"
-permalink: kb/106/Q106620/
+permalink: /kb/106/Q106620/
 ---
 
 ## Q106620: Art Gallery/ Wine Guide: Animations Don't Play with ATI

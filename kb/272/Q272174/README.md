@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272174: Advertisements Report Multiple Successes for One Successful Run"
-permalink: kb/272/Q272174/
+permalink: /kb/272/Q272174/
 ---
 
 ## Q272174: Advertisements Report Multiple Successes for One Successful Run

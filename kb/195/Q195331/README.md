@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195331: WD97: General Information About Section Breaks"
-permalink: kb/195/Q195331/
+permalink: /kb/195/Q195331/
 ---
 
 ## Q195331: WD97: General Information About Section Breaks

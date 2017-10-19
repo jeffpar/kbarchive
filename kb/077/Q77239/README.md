@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77239: Tandy 1400 Laptop Clock Problem Under MS-DOS 5.0 and Later"
-permalink: kb/077/Q77239/
+permalink: /kb/077/Q77239/
 ---
 
 ## Q77239: Tandy 1400 Laptop Clock Problem Under MS-DOS 5.0 and Later

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105177: PC Forms: No Error Returned by MEFWriteItem() Function"
-permalink: kb/105/Q105177/
+permalink: /kb/105/Q105177/
 ---
 
 ## Q105177: PC Forms: No Error Returned by MEFWriteItem() Function

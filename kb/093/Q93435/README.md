@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93435: FIX: GPF/UAE When Converting String &gt; 32K to Double Precision"
-permalink: kb/093/Q93435/
+permalink: /kb/093/Q93435/
 ---
 
 ## Q93435: FIX: GPF/UAE When Converting String &gt; 32K to Double Precision

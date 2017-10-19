@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242562: Microsoft BackOffice 4.5 Resource Kit Comments and Corrections"
-permalink: kb/242/Q242562/
+permalink: /kb/242/Q242562/
 ---
 
 ## Q242562: Microsoft BackOffice 4.5 Resource Kit Comments and Corrections

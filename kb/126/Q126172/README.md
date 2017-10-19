@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126172: Master Tracks 4 Professionals Will Not Run in Windows 95"
-permalink: kb/126/Q126172/
+permalink: /kb/126/Q126172/
 ---
 
 ## Q126172: Master Tracks 4 Professionals Will Not Run in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157888: WD97: Word Default Font Changed When Address Font Changed"
-permalink: kb/157/Q157888/
+permalink: /kb/157/Q157888/
 ---
 
 ## Q157888: WD97: Word Default Font Changed When Address Font Changed

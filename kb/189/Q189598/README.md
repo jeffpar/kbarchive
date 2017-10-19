@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189598: BUG: Full Outer Join Does Not Respect Deleted Records"
-permalink: kb/189/Q189598/
+permalink: /kb/189/Q189598/
 ---
 
 ## Q189598: BUG: Full Outer Join Does Not Respect Deleted Records

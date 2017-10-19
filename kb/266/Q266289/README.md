@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266289: HOWTO:Use Split Function to Put Delimited String into String Arr"
-permalink: kb/266/Q266289/
+permalink: /kb/266/Q266289/
 ---
 
 ## Q266289: HOWTO:Use Split Function to Put Delimited String into String Arr

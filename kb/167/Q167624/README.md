@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167624: WD97: Need .doc Extension to Open WordPerfect Subdocuments"
-permalink: kb/167/Q167624/
+permalink: /kb/167/Q167624/
 ---
 
 ## Q167624: WD97: Need .doc Extension to Open WordPerfect Subdocuments

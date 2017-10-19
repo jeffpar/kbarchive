@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264224: Finding the Checksum Value of a Driver Using the Kernel Debugger"
-permalink: kb/264/Q264224/
+permalink: /kb/264/Q264224/
 ---
 
 ## Q264224: Finding the Checksum Value of a Driver Using the Kernel Debugger

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258530: FIX: Multiple References to File Object Causes OLE Error"
-permalink: kb/258/Q258530/
+permalink: /kb/258/Q258530/
 ---
 
 ## Q258530: FIX: Multiple References to File Object Causes OLE Error

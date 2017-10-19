@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150194: BUG: OLE Container Launches Word When Resized"
-permalink: kb/150/Q150194/
+permalink: /kb/150/Q150194/
 ---
 
 ## Q150194: BUG: OLE Container Launches Word When Resized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126561: Printing To An LPR Printer May Be Slow"
-permalink: kb/126/Q126561/
+permalink: /kb/126/Q126561/
 ---
 
 ## Q126561: Printing To An LPR Printer May Be Slow

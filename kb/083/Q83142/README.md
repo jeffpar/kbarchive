@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83142: CorelDRAW! Can't Paste Paintbrush Images in Windows 3.1"
-permalink: kb/083/Q83142/
+permalink: /kb/083/Q83142/
 ---
 
 ## Q83142: CorelDRAW! Can't Paste Paintbrush Images in Windows 3.1

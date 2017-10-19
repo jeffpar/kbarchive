@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178532: XFOR: Configuring Exchange Internet Protocols with Proxy Server"
-permalink: kb/178/Q178532/
+permalink: /kb/178/Q178532/
 ---
 
 ## Q178532: XFOR: Configuring Exchange Internet Protocols with Proxy Server

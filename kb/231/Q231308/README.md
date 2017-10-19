@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231308: Glue NS Records Are Lost When You Add Additional NS Records"
-permalink: kb/231/Q231308/
+permalink: /kb/231/Q231308/
 ---
 
 ## Q231308: Glue NS Records Are Lost When You Add Additional NS Records

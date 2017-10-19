@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192626: FIX: Adding Method to Custom Interface Causes MIDL2269"
-permalink: kb/192/Q192626/
+permalink: /kb/192/Q192626/
 ---
 
 ## Q192626: FIX: Adding Method to Custom Interface Causes MIDL2269

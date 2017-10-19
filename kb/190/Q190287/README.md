@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190287: SMS: PCM Files on SMS 1.2 SP3 Are Newer Than the Files on BORK"
-permalink: kb/190/Q190287/
+permalink: /kb/190/Q190287/
 ---
 
 ## Q190287: SMS: PCM Files on SMS 1.2 SP3 Are Newer Than the Files on BORK

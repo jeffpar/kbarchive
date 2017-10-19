@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195738: FIX: C1001 When Template Class Is Included in Precompiled Header"
-permalink: kb/195/Q195738/
+permalink: /kb/195/Q195738/
 ---
 
 ## Q195738: FIX: C1001 When Template Class Is Included in Precompiled Header

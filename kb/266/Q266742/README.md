@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266742: XCON: MTA Logs 9405 Exception Error When Starting on Cluster"
-permalink: kb/266/Q266742/
+permalink: /kb/266/Q266742/
 ---
 
 ## Q266742: XCON: MTA Logs 9405 Exception Error When Starting on Cluster

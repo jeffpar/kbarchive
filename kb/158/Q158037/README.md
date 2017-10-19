@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158037: STL Sample for the stack::operator== Function"
-permalink: kb/158/Q158037/
+permalink: /kb/158/Q158037/
 ---
 
 ## Q158037: STL Sample for the stack::operator== Function

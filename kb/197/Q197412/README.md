@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197412: Err Msg: An Unknown Error Has Occurred While Initializing..."
-permalink: kb/197/Q197412/
+permalink: /kb/197/Q197412/
 ---
 
 ## Q197412: Err Msg: An Unknown Error Has Occurred While Initializing...

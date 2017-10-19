@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60370: Experimental Jet Accelerates Without Throttle"
-permalink: kb/060/Q60370/
+permalink: /kb/060/Q60370/
 ---
 
 ## Q60370: Experimental Jet Accelerates Without Throttle

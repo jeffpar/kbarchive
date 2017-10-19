@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68713: Mac Wkst: Unread Message Becomes Unbold"
-permalink: kb/068/Q68713/
+permalink: /kb/068/Q68713/
 ---
 
 ## Q68713: Mac Wkst: Unread Message Becomes Unbold

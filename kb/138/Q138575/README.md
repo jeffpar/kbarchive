@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138575: Communication Fails Through Ethernet Segment Between FDDI Rings"
-permalink: kb/138/Q138575/
+permalink: /kb/138/Q138575/
 ---
 
 ## Q138575: Communication Fails Through Ethernet Segment Between FDDI Rings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155658: Advanced Power Management (APM) Can Hang Games"
-permalink: kb/155/Q155658/
+permalink: /kb/155/Q155658/
 ---
 
 ## Q155658: Advanced Power Management (APM) Can Hang Games

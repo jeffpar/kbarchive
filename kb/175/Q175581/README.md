@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175581: XWEB: Err Msg: You Can Only Submit a File That Has a Data Fork"
-permalink: kb/175/Q175581/
+permalink: /kb/175/Q175581/
 ---
 
 ## Q175581: XWEB: Err Msg: You Can Only Submit a File That Has a Data Fork

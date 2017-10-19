@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163482: XCLN: Exchange and Schedule+ Options Not Available On Start"
-permalink: kb/163/Q163482/
+permalink: /kb/163/Q163482/
 ---
 
 ## Q163482: XCLN: Exchange and Schedule+ Options Not Available On Start

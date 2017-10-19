@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124996: Incorrect Swap File Size Reported for Client Computers"
-permalink: kb/124/Q124996/
+permalink: /kb/124/Q124996/
 ---
 
 ## Q124996: Incorrect Swap File Size Reported for Client Computers

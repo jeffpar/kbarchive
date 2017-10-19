@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58031: Flt Sim: ATIS and CT Transmissions Scroll After Pausing"
-permalink: kb/058/Q58031/
+permalink: /kb/058/Q58031/
 ---
 
 ## Q58031: Flt Sim: ATIS and CT Transmissions Scroll After Pausing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122445: Unexpected Network Error When Changing WfWG Password"
-permalink: kb/122/Q122445/
+permalink: /kb/122/Q122445/
 ---
 
 ## Q122445: Unexpected Network Error When Changing WfWG Password

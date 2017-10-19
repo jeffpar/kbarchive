@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142946: Troubleshooting Video Codecs in Windows 95"
-permalink: kb/142/Q142946/
+permalink: /kb/142/Q142946/
 ---
 
 ## Q142946: Troubleshooting Video Codecs in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128121: WINS PersonaNonGrata Registry Parameter"
-permalink: kb/128/Q128121/
+permalink: /kb/128/Q128121/
 ---
 
 ## Q128121: WINS PersonaNonGrata Registry Parameter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83089: FIX: Tracing into MOVE Startup May Cause R6915 Error"
-permalink: kb/083/Q83089/
+permalink: /kb/083/Q83089/
 ---
 
 ## Q83089: FIX: Tracing into MOVE Startup May Cause R6915 Error

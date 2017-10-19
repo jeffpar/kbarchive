@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105419: Sharing Printers on Serial Ports in Windows for Workgroups"
-permalink: kb/105/Q105419/
+permalink: /kb/105/Q105419/
 ---
 
 ## Q105419: Sharing Printers on Serial Ports in Windows for Workgroups

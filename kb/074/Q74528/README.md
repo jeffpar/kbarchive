@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74528: INFO: &quot;Power-Friendly&quot; Applications"
-permalink: kb/074/Q74528/
+permalink: /kb/074/Q74528/
 ---
 
 ## Q74528: INFO: &quot;Power-Friendly&quot; Applications

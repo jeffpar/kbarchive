@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135491: SDLC Multidrop Primary Needs to be Remote End = Host System."
-permalink: kb/135/Q135491/
+permalink: /kb/135/Q135491/
 ---
 
 ## Q135491: SDLC Multidrop Primary Needs to be Remote End = Host System.

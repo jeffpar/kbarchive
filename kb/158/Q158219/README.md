@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158219: HOWTO: Use SourceSafe Over a RAS or ISDN Connection"
-permalink: kb/158/Q158219/
+permalink: /kb/158/Q158219/
 ---
 
 ## Q158219: HOWTO: Use SourceSafe Over a RAS or ISDN Connection

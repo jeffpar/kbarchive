@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123163: FIX: &#95;&#95;TIMESTAMP&#95;&#95; Reports Pacific Standard Time"
-permalink: kb/123/Q123163/
+permalink: /kb/123/Q123163/
 ---
 
 ## Q123163: FIX: &#95;&#95;TIMESTAMP&#95;&#95; Reports Pacific Standard Time

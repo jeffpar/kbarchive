@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94842: FAX: &quot;Notice 153: Error Reading CDR File&quot; Error in AUDIT"
-permalink: kb/094/Q94842/
+permalink: /kb/094/Q94842/
 ---
 
 ## Q94842: FAX: &quot;Notice 153: Error Reading CDR File&quot; Error in AUDIT

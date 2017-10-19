@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153642: Program Group Control (PGC) Unable to Open Application Database"
-permalink: kb/153/Q153642/
+permalink: /kb/153/Q153642/
 ---
 
 ## Q153642: Program Group Control (PGC) Unable to Open Application Database

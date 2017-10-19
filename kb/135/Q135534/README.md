@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135534: Adding Media Vision ProAudio Spectrum Decreases Performance"
-permalink: kb/135/Q135534/
+permalink: /kb/135/Q135534/
 ---
 
 ## Q135534: Adding Media Vision ProAudio Spectrum Decreases Performance

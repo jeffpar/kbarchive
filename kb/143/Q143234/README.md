@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143234: XCLN: Cannot View Bcc Information in Sent Items Folder"
-permalink: kb/143/Q143234/
+permalink: /kb/143/Q143234/
 ---
 
 ## Q143234: XCLN: Cannot View Bcc Information in Sent Items Folder

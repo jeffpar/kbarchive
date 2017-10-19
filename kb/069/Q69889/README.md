@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69889: Sources of Information Regarding Windows DDE"
-permalink: kb/069/Q69889/
+permalink: /kb/069/Q69889/
 ---
 
 ## Q69889: Sources of Information Regarding Windows DDE

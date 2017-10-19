@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174232: Stop 0x0000000A in Atapi.sys (Post SP2) with DMA Enabled"
-permalink: kb/174/Q174232/
+permalink: /kb/174/Q174232/
 ---
 
 ## Q174232: Stop 0x0000000A in Atapi.sys (Post SP2) with DMA Enabled

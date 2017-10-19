@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130443: Form Wizard Basics and Differences from 2.6 Screen Wizard"
-permalink: kb/130/Q130443/
+permalink: /kb/130/Q130443/
 ---
 
 ## Q130443: Form Wizard Basics and Differences from 2.6 Screen Wizard

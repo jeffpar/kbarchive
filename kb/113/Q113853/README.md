@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113853: Flight Simulator: Day/Night Variation Range Has No Effect"
-permalink: kb/113/Q113853/
+permalink: /kb/113/Q113853/
 ---
 
 ## Q113853: Flight Simulator: Day/Night Variation Range Has No Effect

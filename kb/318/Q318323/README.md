@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318323: PRB: Empty Cache Statistics Using Index Server Admin Page"
-permalink: kb/318/Q318323/
+permalink: /kb/318/Q318323/
 ---
 
 ## Q318323: PRB: Empty Cache Statistics Using Index Server Admin Page

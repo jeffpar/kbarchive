@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82588: Icon DoIt 3.0 Requires Update to Run with Windows 3.1"
-permalink: kb/082/Q82588/
+permalink: /kb/082/Q82588/
 ---
 
 ## Q82588: Icon DoIt 3.0 Requires Update to Run with Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66857: Windows Entertainment Pack Taipei Screen Cannot Be Sized"
-permalink: kb/066/Q66857/
+permalink: /kb/066/Q66857/
 ---
 
 ## Q66857: Windows Entertainment Pack Taipei Screen Cannot Be Sized

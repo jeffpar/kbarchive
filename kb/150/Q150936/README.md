@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150936: FIX: VC4 Debugger Fails to Stop on Breakpoints w/ Long Names"
-permalink: kb/150/Q150936/
+permalink: /kb/150/Q150936/
 ---
 
 ## Q150936: FIX: VC4 Debugger Fails to Stop on Breakpoints w/ Long Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185674: PRB: Default Property Causes DISP_XXXX_ID Methods/Props to Fail"
-permalink: kb/185/Q185674/
+permalink: /kb/185/Q185674/
 ---
 
 ## Q185674: PRB: Default Property Causes DISP_XXXX_ID Methods/Props to Fail

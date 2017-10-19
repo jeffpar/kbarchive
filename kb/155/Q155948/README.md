@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155948: WD97: Font Animation Lost After Saving to HTML Format"
-permalink: kb/155/Q155948/
+permalink: /kb/155/Q155948/
 ---
 
 ## Q155948: WD97: Font Animation Lost After Saving to HTML Format

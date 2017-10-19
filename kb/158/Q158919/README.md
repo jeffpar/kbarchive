@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158919: XADM: Mbclean Only Cleans First 50 Mailboxes"
-permalink: kb/158/Q158919/
+permalink: /kb/158/Q158919/
 ---
 
 ## Q158919: XADM: Mbclean Only Cleans First 50 Mailboxes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123063: Account Lockout Alert Does Not Function"
-permalink: kb/123/Q123063/
+permalink: /kb/123/Q123063/
 ---
 
 ## Q123063: Account Lockout Alert Does Not Function

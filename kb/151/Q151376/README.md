@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151376: How to Disable Autochk if It Stops Responding During Reboot"
-permalink: kb/151/Q151376/
+permalink: /kb/151/Q151376/
 ---
 
 ## Q151376: How to Disable Autochk if It Stops Responding During Reboot

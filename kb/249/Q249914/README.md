@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249914: STOP 0x0000007b Inaccessible Boot Disk After Applying SSD 2.12c"
-permalink: kb/249/Q249914/
+permalink: /kb/249/Q249914/
 ---
 
 ## Q249914: STOP 0x0000007b Inaccessible Boot Disk After Applying SSD 2.12c

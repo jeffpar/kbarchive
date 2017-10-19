@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74680: &#42;.GRP File Is Deleted When Program Group Removed from Program"
-permalink: kb/074/Q74680/
+permalink: /kb/074/Q74680/
 ---
 
 ## Q74680: &#42;.GRP File Is Deleted When Program Group Removed from Program

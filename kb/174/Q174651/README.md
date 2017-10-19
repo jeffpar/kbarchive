@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174651: PRB: Unexpected Message: &quot;Add this project to SourceSafe&quot; in VB"
-permalink: kb/174/Q174651/
+permalink: /kb/174/Q174651/
 ---
 
 ## Q174651: PRB: Unexpected Message: &quot;Add this project to SourceSafe&quot; in VB

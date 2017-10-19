@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85862: Err Msg: Error Loading PROGMAN.EXE"
-permalink: kb/085/Q85862/
+permalink: /kb/085/Q85862/
 ---
 
 ## Q85862: Err Msg: Error Loading PROGMAN.EXE

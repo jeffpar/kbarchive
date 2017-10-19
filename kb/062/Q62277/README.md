@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62277: Expanding Files from the Original Windows Disks"
-permalink: kb/062/Q62277/
+permalink: /kb/062/Q62277/
 ---
 
 ## Q62277: Expanding Files from the Original Windows Disks

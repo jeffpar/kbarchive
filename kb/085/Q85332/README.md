@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85332: PS/2 Mouse Not Working in Enhanced Mode on Mitac Computer"
-permalink: kb/085/Q85332/
+permalink: /kb/085/Q85332/
 ---
 
 ## Q85332: PS/2 Mouse Not Working in Enhanced Mode on Mitac Computer

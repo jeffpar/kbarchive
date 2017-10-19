@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190547: PRB: ReadMethod Only Returns Method Text From Visual Class"
-permalink: kb/190/Q190547/
+permalink: /kb/190/Q190547/
 ---
 
 ## Q190547: PRB: ReadMethod Only Returns Method Text From Visual Class

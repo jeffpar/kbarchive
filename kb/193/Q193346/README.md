@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193346: XFOR: Message Delivery Is Slowed or Stopped to SNADS"
-permalink: kb/193/Q193346/
+permalink: /kb/193/Q193346/
 ---
 
 ## Q193346: XFOR: Message Delivery Is Slowed or Stopped to SNADS

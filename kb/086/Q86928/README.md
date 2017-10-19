@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86928: 3COM: The Role of the 3Com Gateway"
-permalink: kb/086/Q86928/
+permalink: /kb/086/Q86928/
 ---
 
 ## Q86928: 3COM: The Role of the 3Com Gateway

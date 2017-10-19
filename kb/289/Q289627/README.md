@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289627: How to Enable File Name Character Translation"
-permalink: kb/289/Q289627/
+permalink: /kb/289/Q289627/
 ---
 
 ## Q289627: How to Enable File Name Character Translation

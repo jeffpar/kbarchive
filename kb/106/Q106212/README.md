@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106212: Breaking Out of GREP May Return You to Command Prompt"
-permalink: kb/106/Q106212/
+permalink: /kb/106/Q106212/
 ---
 
 ## Q106212: Breaking Out of GREP May Return You to Command Prompt

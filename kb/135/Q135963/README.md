@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135963: Cannot Create DriveSpace 3-Compatible Startup Disk"
-permalink: kb/135/Q135963/
+permalink: /kb/135/Q135963/
 ---
 
 ## Q135963: Cannot Create DriveSpace 3-Compatible Startup Disk

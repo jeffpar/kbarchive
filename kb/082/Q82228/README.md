@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82228: Use of TimerCriticalSection= in 386 Enhanced Mode Windows"
-permalink: kb/082/Q82228/
+permalink: /kb/082/Q82228/
 ---
 
 ## Q82228: Use of TimerCriticalSection= in 386 Enhanced Mode Windows

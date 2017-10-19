@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72706: DOCERR: Encoding for LTR Instruction Is Incorrect"
-permalink: kb/072/Q72706/
+permalink: /kb/072/Q72706/
 ---
 
 ## Q72706: DOCERR: Encoding for LTR Instruction Is Incorrect

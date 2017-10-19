@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293498: The Computer Hangs with a Deadlock in Ndis.sys"
-permalink: kb/293/Q293498/
+permalink: /kb/293/Q293498/
 ---
 
 ## Q293498: The Computer Hangs with a Deadlock in Ndis.sys

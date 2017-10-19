@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259708: SMS: New SQL Views Are  Available in SMS 2.0"
-permalink: kb/259/Q259708/
+permalink: /kb/259/Q259708/
 ---
 
 ## Q259708: SMS: New SQL Views Are  Available in SMS 2.0

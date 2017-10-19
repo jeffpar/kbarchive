@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175472: HOWTO: Get Network Adapter Address from Visual Basic"
-permalink: kb/175/Q175472/
+permalink: /kb/175/Q175472/
 ---
 
 ## Q175472: HOWTO: Get Network Adapter Address from Visual Basic

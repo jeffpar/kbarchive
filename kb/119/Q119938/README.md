@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119938: BUG: Menu Appears Behind Fox Icon on Menu Bar"
-permalink: kb/119/Q119938/
+permalink: /kb/119/Q119938/
 ---
 
 ## Q119938: BUG: Menu Appears Behind Fox Icon on Menu Bar

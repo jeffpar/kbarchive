@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142189: Using the UNDELETE Command in Windows 95"
-permalink: kb/142/Q142189/
+permalink: /kb/142/Q142189/
 ---
 
 ## Q142189: Using the UNDELETE Command in Windows 95

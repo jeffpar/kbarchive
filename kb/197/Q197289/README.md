@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197289: XFOR: Internet Mail Service May Not Save Turfed Messages"
-permalink: kb/197/Q197289/
+permalink: /kb/197/Q197289/
 ---
 
 ## Q197289: XFOR: Internet Mail Service May Not Save Turfed Messages

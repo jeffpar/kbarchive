@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174794: How to Change Network Priority in a Cluster"
-permalink: kb/174/Q174794/
+permalink: /kb/174/Q174794/
 ---
 
 ## Q174794: How to Change Network Priority in a Cluster

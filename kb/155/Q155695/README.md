@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155695: XCON: Replication Over X.400 Backbone Might Fail"
-permalink: kb/155/Q155695/
+permalink: /kb/155/Q155695/
 ---
 
 ## Q155695: XCON: Replication Over X.400 Backbone Might Fail

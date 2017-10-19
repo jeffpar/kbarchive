@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296078: Application Exception in Snaservr.exe After Event 102 X'0BC6'"
-permalink: kb/296/Q296078/
+permalink: /kb/296/Q296078/
 ---
 
 ## Q296078: Application Exception in Snaservr.exe After Event 102 X'0BC6'

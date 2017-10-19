@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164822: SMS: Administrator Program Cannot Find Add-in Tool"
-permalink: kb/164/Q164822/
+permalink: /kb/164/Q164822/
 ---
 
 ## Q164822: SMS: Administrator Program Cannot Find Add-in Tool

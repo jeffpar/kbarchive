@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178882: XWEB: French Version of Internet Explorer 3.x Replaces VBScript."
-permalink: kb/178/Q178882/
+permalink: /kb/178/Q178882/
 ---
 
 ## Q178882: XWEB: French Version of Internet Explorer 3.x Replaces VBScript.

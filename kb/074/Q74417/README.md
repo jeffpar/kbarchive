@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74417: Logimenu or Click Do Not Work with MS-DOS 5.0 or 6.0 Shell"
-permalink: kb/074/Q74417/
+permalink: /kb/074/Q74417/
 ---
 
 ## Q74417: Logimenu or Click Do Not Work with MS-DOS 5.0 or 6.0 Shell

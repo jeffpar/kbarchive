@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192012: INFO: Troubleshooting Tips for the MSComm Control"
-permalink: kb/192/Q192012/
+permalink: /kb/192/Q192012/
 ---
 
 ## Q192012: INFO: Troubleshooting Tips for the MSComm Control

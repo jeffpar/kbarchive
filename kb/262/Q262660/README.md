@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262660: Baseball 2001: Pitcher Health Is Not Reset When You Restart Game"
-permalink: kb/262/Q262660/
+permalink: /kb/262/Q262660/
 ---
 
 ## Q262660: Baseball 2001: Pitcher Health Is Not Reset When You Restart Game

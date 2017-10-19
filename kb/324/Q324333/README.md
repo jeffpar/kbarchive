@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324333: Error if User Not Included in Bypass Traversal Checking Policy"
-permalink: kb/324/Q324333/
+permalink: /kb/324/Q324333/
 ---
 
 ## Q324333: Error if User Not Included in Bypass Traversal Checking Policy

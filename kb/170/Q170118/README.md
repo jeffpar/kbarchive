@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170118: PRB: &quot;Couldn't Find Installable ISAM&quot; with Excel 97 Data"
-permalink: kb/170/Q170118/
+permalink: /kb/170/Q170118/
 ---
 
 ## Q170118: PRB: &quot;Couldn't Find Installable ISAM&quot; with Excel 97 Data

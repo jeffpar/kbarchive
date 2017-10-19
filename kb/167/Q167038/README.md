@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167038: RAS Clients Run Winsock and RPC Applications Slowly"
-permalink: kb/167/Q167038/
+permalink: /kb/167/Q167038/
 ---
 
 ## Q167038: RAS Clients Run Winsock and RPC Applications Slowly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241213: XFOR: Message Looping w/SNADS/PROFS/GroupWise/Notes Connectors"
-permalink: kb/241/Q241213/
+permalink: /kb/241/Q241213/
 ---
 
 ## Q241213: XFOR: Message Looping w/SNADS/PROFS/GroupWise/Notes Connectors

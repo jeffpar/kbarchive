@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85964: Windows 3.1 Paintbrush Loses Part of Display"
-permalink: kb/085/Q85964/
+permalink: /kb/085/Q85964/
 ---
 
 ## Q85964: Windows 3.1 Paintbrush Loses Part of Display

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82571: IdleWild Loses all Screen Savers Except Blackness"
-permalink: kb/082/Q82571/
+permalink: /kb/082/Q82571/
 ---
 
 ## Q82571: IdleWild Loses all Screen Savers Except Blackness

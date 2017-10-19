@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177463: The Basics of Reading SPX Traces"
-permalink: kb/177/Q177463/
+permalink: /kb/177/Q177463/
 ---
 
 ## Q177463: The Basics of Reading SPX Traces

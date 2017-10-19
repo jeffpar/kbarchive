@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251814: XADM: Exchange Server 5.5 Setup Fails on a Member Server"
-permalink: kb/251/Q251814/
+permalink: /kb/251/Q251814/
 ---
 
 ## Q251814: XADM: Exchange Server 5.5 Setup Fails on a Member Server

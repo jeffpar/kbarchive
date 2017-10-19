@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139490: FIX: Can't Select First Table When Creating DAO Table Recordse"
-permalink: kb/139/Q139490/
+permalink: /kb/139/Q139490/
 ---
 
 ## Q139490: FIX: Can't Select First Table When Creating DAO Table Recordse

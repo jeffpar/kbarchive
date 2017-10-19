@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300103: Testing Sign-in and Sign-out Process When Site Is in Test Mode"
-permalink: kb/300/Q300103/
+permalink: /kb/300/Q300103/
 ---
 
 ## Q300103: Testing Sign-in and Sign-out Process When Site Is in Test Mode

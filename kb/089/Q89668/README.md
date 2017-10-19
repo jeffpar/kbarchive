@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89668: FoxBASE+ 2.1 Memory Requirements"
-permalink: kb/089/Q89668/
+permalink: /kb/089/Q89668/
 ---
 
 ## Q89668: FoxBASE+ 2.1 Memory Requirements

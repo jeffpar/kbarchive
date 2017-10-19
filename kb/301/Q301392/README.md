@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301392: HOW TO: Create a Virtual Folder (Subweb) in IIS 4.0 or IIS 5.0"
-permalink: kb/301/Q301392/
+permalink: /kb/301/Q301392/
 ---
 
 ## Q301392: HOW TO: Create a Virtual Folder (Subweb) in IIS 4.0 or IIS 5.0

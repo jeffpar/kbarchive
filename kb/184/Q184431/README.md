@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184431: Err Msg: Windows Cannot Find Icwconn1.exe"
-permalink: kb/184/Q184431/
+permalink: /kb/184/Q184431/
 ---
 
 ## Q184431: Err Msg: Windows Cannot Find Icwconn1.exe

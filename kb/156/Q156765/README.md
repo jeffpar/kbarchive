@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156765: XADM: Multiple Private IS Logons for Each User"
-permalink: kb/156/Q156765/
+permalink: /kb/156/Q156765/
 ---
 
 ## Q156765: XADM: Multiple Private IS Logons for Each User

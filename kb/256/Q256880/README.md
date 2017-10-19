@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256880: SMS: Package Routing Fails Distrib. from Central to Grandp Site"
-permalink: kb/256/Q256880/
+permalink: /kb/256/Q256880/
 ---
 
 ## Q256880: SMS: Package Routing Fails Distrib. from Central to Grandp Site

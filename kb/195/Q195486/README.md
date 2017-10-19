@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195486: WD97: Changing One Caption Label Changes All Matching Captions"
-permalink: kb/195/Q195486/
+permalink: /kb/195/Q195486/
 ---
 
 ## Q195486: WD97: Changing One Caption Label Changes All Matching Captions

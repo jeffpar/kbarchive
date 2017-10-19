@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32497: How to Delete the Contents of a Directory in One Step"
-permalink: kb/032/Q32497/
+permalink: /kb/032/Q32497/
 ---
 
 ## Q32497: How to Delete the Contents of a Directory in One Step

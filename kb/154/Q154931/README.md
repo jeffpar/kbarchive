@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154931: SMS: PCM Executes Mandatory Jobs over Slow Links"
-permalink: kb/154/Q154931/
+permalink: /kb/154/Q154931/
 ---
 
 ## Q154931: SMS: PCM Executes Mandatory Jobs over Slow Links

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184306: SNA Server 3.0 Service Pack 3 Readme.txt File"
-permalink: kb/184/Q184306/
+permalink: /kb/184/Q184306/
 ---
 
 ## Q184306: SNA Server 3.0 Service Pack 3 Readme.txt File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148918: How to Capitalize Some Characters in a Text Box Automatically"
-permalink: kb/148/Q148918/
+permalink: /kb/148/Q148918/
 ---
 
 ## Q148918: How to Capitalize Some Characters in a Text Box Automatically

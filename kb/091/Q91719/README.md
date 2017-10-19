@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91719: Suppressing the Windows Logo"
-permalink: kb/091/Q91719/
+permalink: /kb/091/Q91719/
 ---
 
 ## Q91719: Suppressing the Windows Logo

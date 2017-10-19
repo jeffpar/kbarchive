@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99578: Trap Errors with NEC Powermate Global Cache and Madge"
-permalink: kb/099/Q99578/
+permalink: /kb/099/Q99578/
 ---
 
 ## Q99578: Trap Errors with NEC Powermate Global Cache and Madge

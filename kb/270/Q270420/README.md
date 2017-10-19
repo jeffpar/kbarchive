@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270420: MB_SERVICE_NOTIFICATION Message Box May Not Exit the Process"
-permalink: kb/270/Q270420/
+permalink: /kb/270/Q270420/
 ---
 
 ## Q270420: MB_SERVICE_NOTIFICATION Message Box May Not Exit the Process

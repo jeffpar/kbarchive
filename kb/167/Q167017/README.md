@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167017: Lexmark Optra L and L Plus Printers Incorrectly Show Middle Tray"
-permalink: kb/167/Q167017/
+permalink: /kb/167/Q167017/
 ---
 
 ## Q167017: Lexmark Optra L and L Plus Printers Incorrectly Show Middle Tray

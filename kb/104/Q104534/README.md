@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104534: MS-DOS Setup Err Msg (CD-ROM System): Hard Disk Not Readable"
-permalink: kb/104/Q104534/
+permalink: /kb/104/Q104534/
 ---
 
 ## Q104534: MS-DOS Setup Err Msg (CD-ROM System): Hard Disk Not Readable

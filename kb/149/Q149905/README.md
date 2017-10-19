@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149905: XFOR: Copying DXA Messages to a Mailbox"
-permalink: kb/149/Q149905/
+permalink: /kb/149/Q149905/
 ---
 
 ## Q149905: XFOR: Copying DXA Messages to a Mailbox

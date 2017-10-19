@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121916: CONN: Space After User=Admin in MSGATE.INI Causes Error"
-permalink: kb/121/Q121916/
+permalink: /kb/121/Q121916/
 ---
 
 ## Q121916: CONN: Space After User=Admin in MSGATE.INI Causes Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177899: Dependent LU6.2 Bind Rejected with Sense Code 0835"
-permalink: kb/177/Q177899/
+permalink: /kb/177/Q177899/
 ---
 
 ## Q177899: Dependent LU6.2 Bind Rejected with Sense Code 0835

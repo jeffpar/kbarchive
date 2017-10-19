@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176084: Cannot connect to Dfs Share Using Fully Qualified Domain Names"
-permalink: kb/176/Q176084/
+permalink: /kb/176/Q176084/
 ---
 
 ## Q176084: Cannot connect to Dfs Share Using Fully Qualified Domain Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39518: DOCERR: Example in MASM 5.1 Programmer's Guide"
-permalink: kb/039/Q39518/
+permalink: /kb/039/Q39518/
 ---
 
 ## Q39518: DOCERR: Example in MASM 5.1 Programmer's Guide

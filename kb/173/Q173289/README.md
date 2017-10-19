@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173289: WD97: Graphic Does Not Appear or Print in a Master Document"
-permalink: kb/173/Q173289/
+permalink: /kb/173/Q173289/
 ---
 
 ## Q173289: WD97: Graphic Does Not Appear or Print in a Master Document

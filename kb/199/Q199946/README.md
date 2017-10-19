@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199946: SMS:Subnets Property Page Displays Subnet Address in Name Column"
-permalink: kb/199/Q199946/
+permalink: /kb/199/Q199946/
 ---
 
 ## Q199946: SMS:Subnets Property Page Displays Subnet Address in Name Column

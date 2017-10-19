@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128370: PC MAPI: MAPISendDocuments Removes Spaces in Filenames"
-permalink: kb/128/Q128370/
+permalink: /kb/128/Q128370/
 ---
 
 ## Q128370: PC MAPI: MAPISendDocuments Removes Spaces in Filenames

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219957: FIX: SQLNumResultCols Results in Attentions Generation on Server"
-permalink: kb/219/Q219957/
+permalink: /kb/219/Q219957/
 ---
 
 ## Q219957: FIX: SQLNumResultCols Results in Attentions Generation on Server

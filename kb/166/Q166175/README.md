@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166175: Windows NT May Crash When Dismounting NTFS Volume"
-permalink: kb/166/Q166175/
+permalink: /kb/166/Q166175/
 ---
 
 ## Q166175: Windows NT May Crash When Dismounting NTFS Volume

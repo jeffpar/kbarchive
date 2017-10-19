@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271547: XADM: Move Mailbox Utility Does Not Work with Antivirus API"
-permalink: kb/271/Q271547/
+permalink: /kb/271/Q271547/
 ---
 
 ## Q271547: XADM: Move Mailbox Utility Does Not Work with Antivirus API

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191453: BUG: Conversion from OS/390 PACKED to DECIMAL and NUMERIC Fails"
-permalink: kb/191/Q191453/
+permalink: /kb/191/Q191453/
 ---
 
 ## Q191453: BUG: Conversion from OS/390 PACKED to DECIMAL and NUMERIC Fails

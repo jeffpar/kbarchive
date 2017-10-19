@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173972: Return of Arcade: Joystick is not Responding"
-permalink: kb/173/Q173972/
+permalink: /kb/173/Q173972/
 ---
 
 ## Q173972: Return of Arcade: Joystick is not Responding

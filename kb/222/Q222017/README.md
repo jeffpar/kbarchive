@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222017: XCLN: The ODK IExpress Deployment Readme Text"
-permalink: kb/222/Q222017/
+permalink: /kb/222/Q222017/
 ---
 
 ## Q222017: XCLN: The ODK IExpress Deployment Readme Text

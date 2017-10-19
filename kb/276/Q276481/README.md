@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276481: SNA Server Does Not Send LU Name in NMVT for DDDLU"
-permalink: kb/276/Q276481/
+permalink: /kb/276/Q276481/
 ---
 
 ## Q276481: SNA Server Does Not Send LU Name in NMVT for DDDLU

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234557: Executable with Specially Malformed Image Header Crashes Windows"
-permalink: kb/234/Q234557/
+permalink: /kb/234/Q234557/
 ---
 
 ## Q234557: Executable with Specially Malformed Image Header Crashes Windows

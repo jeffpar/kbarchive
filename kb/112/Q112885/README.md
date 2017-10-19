@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112885: PC Adm: Err Msg: Notice 71 Failure to Compress Folder"
-permalink: kb/112/Q112885/
+permalink: /kb/112/Q112885/
 ---
 
 ## Q112885: PC Adm: Err Msg: Notice 71 Failure to Compress Folder

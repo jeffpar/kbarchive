@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173903: XFOR: Changing the TCP Port Used for SMTP Mail"
-permalink: kb/173/Q173903/
+permalink: /kb/173/Q173903/
 ---
 
 ## Q173903: XFOR: Changing the TCP Port Used for SMTP Mail

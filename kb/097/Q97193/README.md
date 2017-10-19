@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97193: WINCAP Captures Screens Using DIB API"
-permalink: kb/097/Q97193/
+permalink: /kb/097/Q97193/
 ---
 
 ## Q97193: WINCAP Captures Screens Using DIB API

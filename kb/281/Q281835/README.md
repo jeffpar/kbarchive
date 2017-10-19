@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281835: XFOR: Setting &quot;Message Text Word Wrap&quot; to &quot;Never&quot; Does Not Work"
-permalink: kb/281/Q281835/
+permalink: /kb/281/Q281835/
 ---
 
 ## Q281835: XFOR: Setting &quot;Message Text Word Wrap&quot; to &quot;Never&quot; Does Not Work

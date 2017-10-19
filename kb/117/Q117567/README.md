@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117567: How 16-Bit and 32-Bit Programs Multitask in Windows 95"
-permalink: kb/117/Q117567/
+permalink: /kb/117/Q117567/
 ---
 
 ## Q117567: How 16-Bit and 32-Bit Programs Multitask in Windows 95

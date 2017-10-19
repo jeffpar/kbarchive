@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111923: HOWTO: Compare a CString to the Empty String"
-permalink: kb/111/Q111923/
+permalink: /kb/111/Q111923/
 ---
 
 ## Q111923: HOWTO: Compare a CString to the Empty String

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q93654: Using the [common] Section with Multiple Configurations"
-permalink: kb/093/Q93654/
+title: "Q93654: Using the &#91;common&#93; Section with Multiple Configurations"
+permalink: /kb/093/Q93654/
 ---
 
-## Q93654: Using the [common] Section with Multiple Configurations
+## Q93654: Using the &#91;common&#93; Section with Multiple Configurations
 
 	Article: Q93654
 	Product(s): Microsoft Disk Operating System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140311: BUG: Setting Value Property of Toolbar to Zero Clears Button"
-permalink: kb/140/Q140311/
+permalink: /kb/140/Q140311/
 ---
 
 ## Q140311: BUG: Setting Value Property of Toolbar to Zero Clears Button

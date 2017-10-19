@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153304: USERTSR and USERIPX Options in Documentation Incorrect"
-permalink: kb/153/Q153304/
+permalink: /kb/153/Q153304/
 ---
 
 ## Q153304: USERTSR and USERIPX Options in Documentation Incorrect

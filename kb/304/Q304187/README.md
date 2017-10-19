@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304187: Cannot Select Mapped Drives on the Home Directory Tab"
-permalink: kb/304/Q304187/
+permalink: /kb/304/Q304187/
 ---
 
 ## Q304187: Cannot Select Mapped Drives on the Home Directory Tab

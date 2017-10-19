@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118340: QuickWin Apps Allowed 50 User-Added Menu Items"
-permalink: kb/118/Q118340/
+permalink: /kb/118/Q118340/
 ---
 
 ## Q118340: QuickWin Apps Allowed 50 User-Added Menu Items

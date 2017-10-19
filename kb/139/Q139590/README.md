@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139590: SMS Despooler May GP Fault with No Distribute Phase"
-permalink: kb/139/Q139590/
+permalink: /kb/139/Q139590/
 ---
 
 ## Q139590: SMS Despooler May GP Fault with No Distribute Phase

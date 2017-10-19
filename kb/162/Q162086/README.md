@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162086: PRB: @GET...LIST Command Can Cause Errors in VFP Macintosh"
-permalink: kb/162/Q162086/
+permalink: /kb/162/Q162086/
 ---
 
 ## Q162086: PRB: @GET...LIST Command Can Cause Errors in VFP Macintosh

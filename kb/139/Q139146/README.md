@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139146: Bookshelf: Cannot Integrate 32-bit Versions with Word 6.0"
-permalink: kb/139/Q139146/
+permalink: /kb/139/Q139146/
 ---
 
 ## Q139146: Bookshelf: Cannot Integrate 32-bit Versions with Word 6.0

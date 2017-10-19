@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154046: HOWTO: Use the ODBC API Function SQLExecDirect with RDO"
-permalink: kb/154/Q154046/
+permalink: /kb/154/Q154046/
 ---
 
 ## Q154046: HOWTO: Use the ODBC API Function SQLExecDirect with RDO

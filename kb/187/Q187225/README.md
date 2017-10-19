@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187225: XCON: Clustered MTA Generates Socket Errors w/X.400 Connections"
-permalink: kb/187/Q187225/
+permalink: /kb/187/Q187225/
 ---
 
 ## Q187225: XCON: Clustered MTA Generates Socket Errors w/X.400 Connections

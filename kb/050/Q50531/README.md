@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50531: Mac DOS:Err Msg: &quot;You Need to Load AppleTalk&quot; w/ AppleShare PC"
-permalink: kb/050/Q50531/
+permalink: /kb/050/Q50531/
 ---
 
 ## Q50531: Mac DOS:Err Msg: &quot;You Need to Load AppleTalk&quot; w/ AppleShare PC

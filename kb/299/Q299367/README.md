@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299367: NIS May Update the Group Files with an Invalid UNIX User"
-permalink: kb/299/Q299367/
+permalink: /kb/299/Q299367/
 ---
 
 ## Q299367: NIS May Update the Group Files with an Invalid UNIX User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276330: TN3270 Connection Requests Fail Over Slow Links"
-permalink: kb/276/Q276330/
+permalink: /kb/276/Q276330/
 ---
 
 ## Q276330: TN3270 Connection Requests Fail Over Slow Links

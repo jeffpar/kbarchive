@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278635: MSN Companion Keyboards"
-permalink: kb/278/Q278635/
+permalink: /kb/278/Q278635/
 ---
 
 ## Q278635: MSN Companion Keyboards

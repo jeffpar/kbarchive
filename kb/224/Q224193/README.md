@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224193: Errors Starting Microsoft Exchange Administrator Tool"
-permalink: kb/224/Q224193/
+permalink: /kb/224/Q224193/
 ---
 
 ## Q224193: Errors Starting Microsoft Exchange Administrator Tool

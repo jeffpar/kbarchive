@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105614: Microsoft MS-DOS 6.2 (Part 4 of 4)"
-permalink: kb/105/Q105614/
+permalink: /kb/105/Q105614/
 ---
 
 ## Q105614: Microsoft MS-DOS 6.2 (Part 4 of 4)

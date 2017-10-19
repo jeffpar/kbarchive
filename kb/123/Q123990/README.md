@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123990: PRB: DX1410 Error Using NMAKE with MASM 6.11"
-permalink: kb/123/Q123990/
+permalink: /kb/123/Q123990/
 ---
 
 ## Q123990: PRB: DX1410 Error Using NMAKE with MASM 6.11

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222677: SMS: SMS 2.0 from Feb. Select Kit Prompts for Product ID Number"
-permalink: kb/222/Q222677/
+permalink: /kb/222/Q222677/
 ---
 
 ## Q222677: SMS: SMS 2.0 from Feb. Select Kit Prompts for Product ID Number

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138937: How to Tell Which Directory Holds a Visual FoxPro App's .Exe"
-permalink: kb/138/Q138937/
+permalink: /kb/138/Q138937/
 ---
 
 ## Q138937: How to Tell Which Directory Holds a Visual FoxPro App's .Exe

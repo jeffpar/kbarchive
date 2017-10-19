@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48301: FltSim: Dynamic Scenery Doesn't Stop When Recording a Demo"
-permalink: kb/048/Q48301/
+permalink: /kb/048/Q48301/
 ---
 
 ## Q48301: FltSim: Dynamic Scenery Doesn't Stop When Recording a Demo

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170809: XADM: Exchange Services Stop Due to Low Disk Space"
-permalink: kb/170/Q170809/
+permalink: /kb/170/Q170809/
 ---
 
 ## Q170809: XADM: Exchange Services Stop Due to Low Disk Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149507: PRB: Cannot Change QuickWin Application Status Bar Color"
-permalink: kb/149/Q149507/
+permalink: /kb/149/Q149507/
 ---
 
 ## Q149507: PRB: Cannot Change QuickWin Application Status Bar Color

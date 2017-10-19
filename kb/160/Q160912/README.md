@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160912: PRB: Remote View to SQL Server with Logical Values"
-permalink: kb/160/Q160912/
+permalink: /kb/160/Q160912/
 ---
 
 ## Q160912: PRB: Remote View to SQL Server with Logical Values

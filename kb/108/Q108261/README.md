@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108261: Windows NT Hangs on Shutdown with Certain PCMCIA Devices"
-permalink: kb/108/Q108261/
+permalink: /kb/108/Q108261/
 ---
 
 ## Q108261: Windows NT Hangs on Shutdown with Certain PCMCIA Devices

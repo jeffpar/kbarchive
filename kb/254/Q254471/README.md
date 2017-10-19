@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254471: How to Increase the Number of Child Processes in Interix"
-permalink: kb/254/Q254471/
+permalink: /kb/254/Q254471/
 ---
 
 ## Q254471: How to Increase the Number of Child Processes in Interix

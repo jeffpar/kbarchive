@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167118: Single Line Edit Controls Support the ES_RIGHT Style"
-permalink: kb/167/Q167118/
+permalink: /kb/167/Q167118/
 ---
 
 ## Q167118: Single Line Edit Controls Support the ES_RIGHT Style

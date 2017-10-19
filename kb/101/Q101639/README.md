@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101639: Setting Permissions for a Drop Folder and its Contents"
-permalink: kb/101/Q101639/
+permalink: /kb/101/Q101639/
 ---
 
 ## Q101639: Setting Permissions for a Drop Folder and its Contents

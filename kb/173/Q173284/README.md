@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173284: INFO: SNA Server Version Information and Windows NT Dependencies"
-permalink: kb/173/Q173284/
+permalink: /kb/173/Q173284/
 ---
 
 ## Q173284: INFO: SNA Server Version Information and Windows NT Dependencies

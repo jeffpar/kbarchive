@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112991: Printer Pools under Windows NT"
-permalink: kb/112/Q112991/
+permalink: /kb/112/Q112991/
 ---
 
 ## Q112991: Printer Pools under Windows NT

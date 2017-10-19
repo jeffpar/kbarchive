@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176894: HOWTO: Append Data from a Single Sheet of an Excel Workbook"
-permalink: kb/176/Q176894/
+permalink: /kb/176/Q176894/
 ---
 
 ## Q176894: HOWTO: Append Data from a Single Sheet of an Excel Workbook

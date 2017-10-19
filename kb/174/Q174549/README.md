@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174549: Reinstalling Windows 95 with Internet Explorer 4.0"
-permalink: kb/174/Q174549/
+permalink: /kb/174/Q174549/
 ---
 
 ## Q174549: Reinstalling Windows 95 with Internet Explorer 4.0

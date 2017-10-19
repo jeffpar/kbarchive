@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166537: XFOR: NNTP Authentication Denied with Space in NT Password"
-permalink: kb/166/Q166537/
+permalink: /kb/166/Q166537/
 ---
 
 ## Q166537: XFOR: NNTP Authentication Denied with Space in NT Password

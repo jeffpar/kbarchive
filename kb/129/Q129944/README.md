@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129944: INFO: Do Not Define Functions in DLLs that Raise an Exception"
-permalink: kb/129/Q129944/
+permalink: /kb/129/Q129944/
 ---
 
 ## Q129944: INFO: Do Not Define Functions in DLLs that Raise an Exception

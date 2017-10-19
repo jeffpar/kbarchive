@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229742: WD97: Error Message After You Undo a Deletion of a Section Break"
-permalink: kb/229/Q229742/
+permalink: /kb/229/Q229742/
 ---
 
 ## Q229742: WD97: Error Message After You Undo a Deletion of a Section Break

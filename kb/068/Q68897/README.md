@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68897: ASD: Specifying Altitude for Scenery"
-permalink: kb/068/Q68897/
+permalink: /kb/068/Q68897/
 ---
 
 ## Q68897: ASD: Specifying Altitude for Scenery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168747: Update to Windows 95 TCP/IP to Address Out-of-Band Issue"
-permalink: kb/168/Q168747/
+permalink: /kb/168/Q168747/
 ---
 
 ## Q168747: Update to Windows 95 TCP/IP to Address Out-of-Band Issue

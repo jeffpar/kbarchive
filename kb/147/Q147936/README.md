@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147936: Incorrect Output Printing Through Captured LPT Port to FPNW"
-permalink: kb/147/Q147936/
+permalink: /kb/147/Q147936/
 ---
 
 ## Q147936: Incorrect Output Printing Through Captured LPT Port to FPNW

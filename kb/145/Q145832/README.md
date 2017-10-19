@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145832: Remote Debugging AT&amp;T System 3000 Multiprocessor Computers"
-permalink: kb/145/Q145832/
+permalink: /kb/145/Q145832/
 ---
 
 ## Q145832: Remote Debugging AT&amp;T System 3000 Multiprocessor Computers

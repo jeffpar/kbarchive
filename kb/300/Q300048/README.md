@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300048: XCON: MTA Event ID 57 on Bridgehead Servers"
-permalink: kb/300/Q300048/
+permalink: /kb/300/Q300048/
 ---
 
 ## Q300048: XCON: MTA Event ID 57 on Bridgehead Servers

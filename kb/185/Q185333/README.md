@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185333: SMS: Crystal Reports May Not Install on Large (GB) Drives"
-permalink: kb/185/Q185333/
+permalink: /kb/185/Q185333/
 ---
 
 ## Q185333: SMS: Crystal Reports May Not Install on Large (GB) Drives

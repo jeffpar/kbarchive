@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264453: FS2000: How to Control One Engine on a Multiple Engine Aircraft"
-permalink: kb/264/Q264453/
+permalink: /kb/264/Q264453/
 ---
 
 ## Q264453: FS2000: How to Control One Engine on a Multiple Engine Aircraft

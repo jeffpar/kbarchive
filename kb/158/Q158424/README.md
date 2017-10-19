@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158424: WD97: Some Characters Not Supported in ScreenTips"
-permalink: kb/158/Q158424/
+permalink: /kb/158/Q158424/
 ---
 
 ## Q158424: WD97: Some Characters Not Supported in ScreenTips

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149579: XADM: MTA Error: Database Object Not in Use"
-permalink: kb/149/Q149579/
+permalink: /kb/149/Q149579/
 ---
 
 ## Q149579: XADM: MTA Error: Database Object Not in Use

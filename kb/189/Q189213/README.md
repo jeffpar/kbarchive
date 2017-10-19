@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189213: Windows NT Tech Support Training Deluxe Edition Corrections"
-permalink: kb/189/Q189213/
+permalink: /kb/189/Q189213/
 ---
 
 ## Q189213: Windows NT Tech Support Training Deluxe Edition Corrections

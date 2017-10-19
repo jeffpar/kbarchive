@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76879: Installing MS-DOS 5 Upgrade on Zenith MinisPort HD"
-permalink: kb/076/Q76879/
+permalink: /kb/076/Q76879/
 ---
 
 ## Q76879: Installing MS-DOS 5 Upgrade on Zenith MinisPort HD

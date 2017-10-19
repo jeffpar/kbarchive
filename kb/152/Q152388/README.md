@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152388: FP: Task Added in To Do List Dialog Box Not Linked to Page"
-permalink: kb/152/Q152388/
+permalink: /kb/152/Q152388/
 ---
 
 ## Q152388: FP: Task Added in To Do List Dialog Box Not Linked to Page

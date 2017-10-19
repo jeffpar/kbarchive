@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157441: BIND Negative Response When Open TSO on a Channel Connection"
-permalink: kb/157/Q157441/
+permalink: /kb/157/Q157441/
 ---
 
 ## Q157441: BIND Negative Response When Open TSO on a Channel Connection

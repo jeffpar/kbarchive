@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162845: Windows NT 3.51 WINS Admin Err Msg: The Parameter Is Incorrect"
-permalink: kb/162/Q162845/
+permalink: /kb/162/Q162845/
 ---
 
 ## Q162845: Windows NT 3.51 WINS Admin Err Msg: The Parameter Is Incorrect

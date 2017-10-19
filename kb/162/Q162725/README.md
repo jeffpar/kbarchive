@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162725: XCLN: &quot;Internal Error Installing Forms&quot; During Client Setup"
-permalink: kb/162/Q162725/
+permalink: /kb/162/Q162725/
 ---
 
 ## Q162725: XCLN: &quot;Internal Error Installing Forms&quot; During Client Setup

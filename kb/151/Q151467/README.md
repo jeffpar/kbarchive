@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151467: Mastering Visual Basic: Setup Does Not Complete"
-permalink: kb/151/Q151467/
+permalink: /kb/151/Q151467/
 ---
 
 ## Q151467: Mastering Visual Basic: Setup Does Not Complete

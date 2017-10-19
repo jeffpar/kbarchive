@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235414: PRB: ParentControls Property May Not Work with Some Containers"
-permalink: kb/235/Q235414/
+permalink: /kb/235/Q235414/
 ---
 
 ## Q235414: PRB: ParentControls Property May Not Work with Some Containers

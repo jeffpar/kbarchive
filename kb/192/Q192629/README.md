@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192629: FIX: ClassView Cannot Add Member Functions To Template Classes"
-permalink: kb/192/Q192629/
+permalink: /kb/192/Q192629/
 ---
 
 ## Q192629: FIX: ClassView Cannot Add Member Functions To Template Classes

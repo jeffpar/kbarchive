@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260004: StarLancer: Throttle Control on SideWinder Joystick Is Disabled"
-permalink: kb/260/Q260004/
+permalink: /kb/260/Q260004/
 ---
 
 ## Q260004: StarLancer: Throttle Control on SideWinder Joystick Is Disabled

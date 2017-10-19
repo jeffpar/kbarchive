@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266767: HOWTO: Set Which Printer Is the System Default Printer"
-permalink: kb/266/Q266767/
+permalink: /kb/266/Q266767/
 ---
 
 ## Q266767: HOWTO: Set Which Printer Is the System Default Printer

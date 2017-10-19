@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109847: ScanDisk Err Msg: Directory Tree on This Drive Too Deep..."
-permalink: kb/109/Q109847/
+permalink: /kb/109/Q109847/
 ---
 
 ## Q109847: ScanDisk Err Msg: Directory Tree on This Drive Too Deep...

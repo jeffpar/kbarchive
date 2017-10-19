@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113601: MS-DOS 6.21 Err Msg: Setup Cannot Continue. Your Computer..."
-permalink: kb/113/Q113601/
+permalink: /kb/113/Q113601/
 ---
 
 ## Q113601: MS-DOS 6.21 Err Msg: Setup Cannot Continue. Your Computer...

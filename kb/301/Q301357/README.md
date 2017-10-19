@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301357: PRB: DLLs Not Unloaded After Calling CoFreeUnusedLibraries"
-permalink: kb/301/Q301357/
+permalink: /kb/301/Q301357/
 ---
 
 ## Q301357: PRB: DLLs Not Unloaded After Calling CoFreeUnusedLibraries

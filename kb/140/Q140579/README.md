@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140579: FIX: Incorrect Results from SELECT with Nested SELECTs and OR"
-permalink: kb/140/Q140579/
+permalink: /kb/140/Q140579/
 ---
 
 ## Q140579: FIX: Incorrect Results from SELECT with Nested SELECTs and OR

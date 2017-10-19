@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192107: FIX: Numeric Overflow if no Decimal is in InputMask of Text Box"
-permalink: kb/192/Q192107/
+permalink: /kb/192/Q192107/
 ---
 
 ## Q192107: FIX: Numeric Overflow if no Decimal is in InputMask of Text Box

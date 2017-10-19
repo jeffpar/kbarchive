@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102914: Scenes 1.0: Quick Start Doesn't Function with Screen Wrap"
-permalink: kb/102/Q102914/
+permalink: /kb/102/Q102914/
 ---
 
 ## Q102914: Scenes 1.0: Quick Start Doesn't Function with Screen Wrap

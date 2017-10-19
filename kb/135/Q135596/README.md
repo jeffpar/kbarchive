@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135596: DOC: Controls Subdirectory Misspelled"
-permalink: kb/135/Q135596/
+permalink: /kb/135/Q135596/
 ---
 
 ## Q135596: DOC: Controls Subdirectory Misspelled

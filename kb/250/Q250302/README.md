@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250302: XFOR: SMTP Mail Causes Information Store to Stop Responding"
-permalink: kb/250/Q250302/
+permalink: /kb/250/Q250302/
 ---
 
 ## Q250302: XFOR: SMTP Mail Causes Information Store to Stop Responding

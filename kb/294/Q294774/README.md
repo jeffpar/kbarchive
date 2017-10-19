@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294774: ISAPI Extension In-Process w/ Application Marked High Isolation"
-permalink: kb/294/Q294774/
+permalink: /kb/294/Q294774/
 ---
 
 ## Q294774: ISAPI Extension In-Process w/ Application Marked High Isolation

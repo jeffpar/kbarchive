@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133451: HOWTO: Causing a Form or Formset to Time Out"
-permalink: kb/133/Q133451/
+permalink: /kb/133/Q133451/
 ---
 
 ## Q133451: HOWTO: Causing a Form or Formset to Time Out

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195259: FTP Site Mapped to a Remote Share May Have Access Problems"
-permalink: kb/195/Q195259/
+permalink: /kb/195/Q195259/
 ---
 
 ## Q195259: FTP Site Mapped to a Remote Share May Have Access Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113537: Workgroup Add-On Displays Network Connections as Disconnected"
-permalink: kb/113/Q113537/
+permalink: /kb/113/Q113537/
 ---
 
 ## Q113537: Workgroup Add-On Displays Network Connections as Disconnected

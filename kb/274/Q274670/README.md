@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274670: CFS2: Cannot Configure the Amount of Fuel and Ammunition"
-permalink: kb/274/Q274670/
+permalink: /kb/274/Q274670/
 ---
 
 ## Q274670: CFS2: Cannot Configure the Amount of Fuel and Ammunition

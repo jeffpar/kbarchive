@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163873: Czech Keyboard Layout Has Wrong Mapping"
-permalink: kb/163/Q163873/
+permalink: /kb/163/Q163873/
 ---
 
 ## Q163873: Czech Keyboard Layout Has Wrong Mapping

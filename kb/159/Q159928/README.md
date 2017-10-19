@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159928: Regedt32 Displays Multiple SIDS in HKEY_USERS Key"
-permalink: kb/159/Q159928/
+permalink: /kb/159/Q159928/
 ---
 
 ## Q159928: Regedt32 Displays Multiple SIDS in HKEY_USERS Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319878: XWEB: How to Make Outlook Web Access the Default Web Site"
-permalink: kb/319/Q319878/
+permalink: /kb/319/Q319878/
 ---
 
 ## Q319878: XWEB: How to Make Outlook Web Access the Default Web Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130917: Trantor T160 or T260 May Cause Windows NT to Hang"
-permalink: kb/130/Q130917/
+permalink: /kb/130/Q130917/
 ---
 
 ## Q130917: Trantor T160 or T260 May Cause Windows NT to Hang

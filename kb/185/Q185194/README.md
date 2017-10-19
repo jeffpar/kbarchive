@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185194: XCON: Distribution List (DL) Expansion"
-permalink: kb/185/Q185194/
+permalink: /kb/185/Q185194/
 ---
 
 ## Q185194: XCON: Distribution List (DL) Expansion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194494: WD97: Password Protection Lost When Saving as Previous Versions"
-permalink: kb/194/Q194494/
+permalink: /kb/194/Q194494/
 ---
 
 ## Q194494: WD97: Password Protection Lost When Saving as Previous Versions

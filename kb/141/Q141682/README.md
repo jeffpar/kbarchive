@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141682: How to Change Memory Allocations for Macintosh Programs"
-permalink: kb/141/Q141682/
+permalink: /kb/141/Q141682/
 ---
 
 ## Q141682: How to Change Memory Allocations for Macintosh Programs

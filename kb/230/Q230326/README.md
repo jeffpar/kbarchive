@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230326: PRB: Validate Event Does Not Fire When Changing Focus with Mouse"
-permalink: kb/230/Q230326/
+permalink: /kb/230/Q230326/
 ---
 
 ## Q230326: PRB: Validate Event Does Not Fire When Changing Focus with Mouse

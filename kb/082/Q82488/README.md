@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82488: IBM Proprinter Prints Lines Incorrectly for Publisher"
-permalink: kb/082/Q82488/
+permalink: /kb/082/Q82488/
 ---
 
 ## Q82488: IBM Proprinter Prints Lines Incorrectly for Publisher

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96427: INFO: Detecting Whether a Menu Is Open"
-permalink: kb/096/Q96427/
+permalink: /kb/096/Q96427/
 ---
 
 ## Q96427: INFO: Detecting Whether a Menu Is Open

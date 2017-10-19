@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166139: HOWTO: Display Graphic on Each Tab of SSTab at Runtime"
-permalink: kb/166/Q166139/
+permalink: /kb/166/Q166139/
 ---
 
 ## Q166139: HOWTO: Display Graphic on Each Tab of SSTab at Runtime

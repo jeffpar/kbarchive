@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96495: Games Configuration Program Saves Previous Settings"
-permalink: kb/096/Q96495/
+permalink: /kb/096/Q96495/
 ---
 
 ## Q96495: Games Configuration Program Saves Previous Settings

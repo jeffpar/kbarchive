@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154839: Err Msg: Windows Has Detected a Compressed Drive Access Error"
-permalink: kb/154/Q154839/
+permalink: /kb/154/Q154839/
 ---
 
 ## Q154839: Err Msg: Windows Has Detected a Compressed Drive Access Error

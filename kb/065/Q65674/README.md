@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65674: Unrecoverable Application Error on COMPAQ LTE Model 20"
-permalink: kb/065/Q65674/
+permalink: /kb/065/Q65674/
 ---
 
 ## Q65674: Unrecoverable Application Error on COMPAQ LTE Model 20

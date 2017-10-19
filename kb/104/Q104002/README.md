@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104002: 256-Color Bitmap May Cause Slow Redraw"
-permalink: kb/104/Q104002/
+permalink: /kb/104/Q104002/
 ---
 
 ## Q104002: 256-Color Bitmap May Cause Slow Redraw

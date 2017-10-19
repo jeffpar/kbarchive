@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125979: Err Msg: The Selected COM Port Is Either Not Supported..."
-permalink: kb/125/Q125979/
+permalink: /kb/125/Q125979/
 ---
 
 ## Q125979: Err Msg: The Selected COM Port Is Either Not Supported...

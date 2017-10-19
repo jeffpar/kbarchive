@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180935: Distributed Link Service Reactivation Fails with Event 77,x0AFF"
-permalink: kb/180/Q180935/
+permalink: /kb/180/Q180935/
 ---
 
 ## Q180935: Distributed Link Service Reactivation Fails with Event 77,x0AFF

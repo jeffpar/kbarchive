@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114491: How to Contact the Microsoft Wish Program"
-permalink: kb/114/Q114491/
+permalink: /kb/114/Q114491/
 ---
 
 ## Q114491: How to Contact the Microsoft Wish Program

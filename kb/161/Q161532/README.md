@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161532: PPT7: Importing Freelance 96 Presentations into PowerPoint"
-permalink: kb/161/Q161532/
+permalink: /kb/161/Q161532/
 ---
 
 ## Q161532: PPT7: Importing Freelance 96 Presentations into PowerPoint

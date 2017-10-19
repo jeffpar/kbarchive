@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185471: Monster Truck Madness 2: List of Enhancement (Cheat) Codes"
-permalink: kb/185/Q185471/
+permalink: /kb/185/Q185471/
 ---
 
 ## Q185471: Monster Truck Madness 2: List of Enhancement (Cheat) Codes

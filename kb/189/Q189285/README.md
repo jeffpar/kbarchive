@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189285: XADM: Testing IPX Name Resolution with IPXROUTE.EXE"
-permalink: kb/189/Q189285/
+permalink: /kb/189/Q189285/
 ---
 
 ## Q189285: XADM: Testing IPX Name Resolution with IPXROUTE.EXE

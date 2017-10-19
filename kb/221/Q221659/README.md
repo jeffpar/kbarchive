@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221659: FIX: SQL Upsizing Wizard Fails to Create PK Indexes"
-permalink: kb/221/Q221659/
+permalink: /kb/221/Q221659/
 ---
 
 ## Q221659: FIX: SQL Upsizing Wizard Fails to Create PK Indexes

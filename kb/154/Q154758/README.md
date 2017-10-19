@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154758: HOWTO: Call a Stored Procedure Using the Data Control"
-permalink: kb/154/Q154758/
+permalink: /kb/154/Q154758/
 ---
 
 ## Q154758: HOWTO: Call a Stored Procedure Using the Data Control

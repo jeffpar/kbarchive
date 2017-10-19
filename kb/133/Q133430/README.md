@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133430: CONN: Macintosh Desktop Database and Mail Performance"
-permalink: kb/133/Q133430/
+permalink: /kb/133/Q133430/
 ---
 
 ## Q133430: CONN: Macintosh Desktop Database and Mail Performance

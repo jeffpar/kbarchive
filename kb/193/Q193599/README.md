@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193599: Windows NT Load Balancing Service Cluster Fails to Converge"
-permalink: kb/193/Q193599/
+permalink: /kb/193/Q193599/
 ---
 
 ## Q193599: Windows NT Load Balancing Service Cluster Fails to Converge

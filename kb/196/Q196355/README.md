@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196355: Sscntrl.sys May Cause a Fatal Crash"
-permalink: kb/196/Q196355/
+permalink: /kb/196/Q196355/
 ---
 
 ## Q196355: Sscntrl.sys May Cause a Fatal Crash

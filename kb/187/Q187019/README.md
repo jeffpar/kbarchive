@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187019: FoxPro 2.6a May Not Install Additional Components"
-permalink: kb/187/Q187019/
+permalink: /kb/187/Q187019/
 ---
 
 ## Q187019: FoxPro 2.6a May Not Install Additional Components

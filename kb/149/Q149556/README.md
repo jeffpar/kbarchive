@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149556: Mifwin.exe Produces GPF with Large Number in Number Field"
-permalink: kb/149/Q149556/
+permalink: /kb/149/Q149556/
 ---
 
 ## Q149556: Mifwin.exe Produces GPF with Large Number in Number Field

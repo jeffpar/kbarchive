@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85237: Err Msgs: &quot;Cannot Find UNIDRV.DLL&quot; or &quot;Cannot Print&quot;"
-permalink: kb/085/Q85237/
+permalink: /kb/085/Q85237/
 ---
 
 ## Q85237: Err Msgs: &quot;Cannot Find UNIDRV.DLL&quot; or &quot;Cannot Print&quot;

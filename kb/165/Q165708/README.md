@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165708: Trap in SNAPrint when Stopping Logical Printer"
-permalink: kb/165/Q165708/
+permalink: /kb/165/Q165708/
 ---
 
 ## Q165708: Trap in SNAPrint when Stopping Logical Printer

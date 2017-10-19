@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190238: BUG: AddProperty Fails With Initial Value of Type Currency"
-permalink: kb/190/Q190238/
+permalink: /kb/190/Q190238/
 ---
 
 ## Q190238: BUG: AddProperty Fails With Initial Value of Type Currency

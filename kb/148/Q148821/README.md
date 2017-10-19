@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148821: Possible Data Loss with LBA and INT13 Extensions"
-permalink: kb/148/Q148821/
+permalink: /kb/148/Q148821/
 ---
 
 ## Q148821: Possible Data Loss with LBA and INT13 Extensions

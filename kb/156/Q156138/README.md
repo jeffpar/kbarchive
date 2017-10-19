@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156138: INFO: Limitations of DAO, DAO SDK in NT Service or with Threads"
-permalink: kb/156/Q156138/
+permalink: /kb/156/Q156138/
 ---
 
 ## Q156138: INFO: Limitations of DAO, DAO SDK in NT Service or with Threads

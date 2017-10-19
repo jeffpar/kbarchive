@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194549: X400: Message Sent to Invalid Recipient Generates Second NDR"
-permalink: kb/194/Q194549/
+permalink: /kb/194/Q194549/
 ---
 
 ## Q194549: X400: Message Sent to Invalid Recipient Generates Second NDR

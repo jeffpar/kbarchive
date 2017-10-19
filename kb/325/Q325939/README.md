@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325939: XADM: Internet Mail Service Stops w Event ID 12800, 4182, 4102"
-permalink: kb/325/Q325939/
+permalink: /kb/325/Q325939/
 ---
 
 ## Q325939: XADM: Internet Mail Service Stops w Event ID 12800, 4182, 4102

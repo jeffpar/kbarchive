@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171045: FP97: Inserted Form Field Defaults to New Line"
-permalink: kb/171/Q171045/
+permalink: /kb/171/Q171045/
 ---
 
 ## Q171045: FP97: Inserted Form Field Defaults to New Line

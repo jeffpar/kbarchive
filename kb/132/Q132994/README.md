@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132994: Games (A-H) Requiring or Performing Better in MS-DOS Mode"
-permalink: kb/132/Q132994/
+permalink: /kb/132/Q132994/
 ---
 
 ## Q132994: Games (A-H) Requiring or Performing Better in MS-DOS Mode

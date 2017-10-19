@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183605: XADM: Access Violation in Store.exe"
-permalink: kb/183/Q183605/
+permalink: /kb/183/Q183605/
 ---
 
 ## Q183605: XADM: Access Violation in Store.exe

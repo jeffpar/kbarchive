@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193472: FIX: Exception Error Exiting Top-Level Form App in Windows 95"
-permalink: kb/193/Q193472/
+permalink: /kb/193/Q193472/
 ---
 
 ## Q193472: FIX: Exception Error Exiting Top-Level Form App in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168771: XFOR: Read Receipt From MSMail Does Not Contain Subject Line"
-permalink: kb/168/Q168771/
+permalink: /kb/168/Q168771/
 ---
 
 ## Q168771: XFOR: Read Receipt From MSMail Does Not Contain Subject Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141532: FIX: OnInitMenuPopup Deletes Temporary Objects"
-permalink: kb/141/Q141532/
+permalink: /kb/141/Q141532/
 ---
 
 ## Q141532: FIX: OnInitMenuPopup Deletes Temporary Objects

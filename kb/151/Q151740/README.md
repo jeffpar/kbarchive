@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151740: Network Client 3.0 Logon Fails On Token Ring"
-permalink: kb/151/Q151740/
+permalink: /kb/151/Q151740/
 ---
 
 ## Q151740: Network Client 3.0 Logon Fails On Token Ring

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232649: Stop 0x00000050 When Using Windows NT 4.0 Terminal Server"
-permalink: kb/232/Q232649/
+permalink: /kb/232/Q232649/
 ---
 
 ## Q232649: Stop 0x00000050 When Using Windows NT 4.0 Terminal Server

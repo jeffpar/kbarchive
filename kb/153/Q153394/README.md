@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153394: XADM: Error When Selecting Security Tab for Mailbox."
-permalink: kb/153/Q153394/
+permalink: /kb/153/Q153394/
 ---
 
 ## Q153394: XADM: Error When Selecting Security Tab for Mailbox.

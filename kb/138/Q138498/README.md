@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138498: How to Use Additem and AddListItem and How They Are Different"
-permalink: kb/138/Q138498/
+permalink: /kb/138/Q138498/
 ---
 
 ## Q138498: How to Use Additem and AddListItem and How They Are Different

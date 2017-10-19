@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190055: Baseball 3D: How to Use General Manager"
-permalink: kb/190/Q190055/
+permalink: /kb/190/Q190055/
 ---
 
 ## Q190055: Baseball 3D: How to Use General Manager

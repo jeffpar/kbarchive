@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175442: The Internet Connection Wizard May Not Work When Installing MSN"
-permalink: kb/175/Q175442/
+permalink: /kb/175/Q175442/
 ---
 
 ## Q175442: The Internet Connection Wizard May Not Work When Installing MSN

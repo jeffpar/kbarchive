@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86609: PC WSPlus: Appointment or Message Window Off Screen"
-permalink: kb/086/Q86609/
+permalink: /kb/086/Q86609/
 ---
 
 ## Q86609: PC WSPlus: Appointment or Message Window Off Screen

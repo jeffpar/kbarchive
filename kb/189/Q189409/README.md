@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189409: INFO: Controlling the Caching of Web Pages with IIS 4.0"
-permalink: kb/189/Q189409/
+permalink: /kb/189/Q189409/
 ---
 
 ## Q189409: INFO: Controlling the Caching of Web Pages with IIS 4.0

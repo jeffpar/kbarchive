@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183632: INFO: How to Add &quot;Generate Report&quot; Menu Item in Visual Mode"
-permalink: kb/183/Q183632/
+permalink: /kb/183/Q183632/
 ---
 
 ## Q183632: INFO: How to Add &quot;Generate Report&quot; Menu Item in Visual Mode

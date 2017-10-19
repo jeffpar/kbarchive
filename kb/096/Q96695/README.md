@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96695: Install Programs May Not Update Drivers with Multi-Config"
-permalink: kb/096/Q96695/
+permalink: /kb/096/Q96695/
 ---
 
 ## Q96695: Install Programs May Not Update Drivers with Multi-Config

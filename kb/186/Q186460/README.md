@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186460: Setup Displays Completed Message But DirectX Is Not Installed"
-permalink: kb/186/Q186460/
+permalink: /kb/186/Q186460/
 ---
 
 ## Q186460: Setup Displays Completed Message But DirectX Is Not Installed

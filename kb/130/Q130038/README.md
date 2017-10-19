@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130038: PC Win: Unable to Sign Out After File Send in Office App."
-permalink: kb/130/Q130038/
+permalink: /kb/130/Q130038/
 ---
 
 ## Q130038: PC Win: Unable to Sign Out After File Send in Office App.

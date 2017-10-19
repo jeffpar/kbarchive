@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170912: WD97: Fonts in Converted RTF File Not Mapped Correctly"
-permalink: kb/170/Q170912/
+permalink: /kb/170/Q170912/
 ---
 
 ## Q170912: WD97: Fonts in Converted RTF File Not Mapped Correctly

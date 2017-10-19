@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248795: PRB: Setup Wizard Does not Distribute Current ODBC Drivers"
-permalink: kb/248/Q248795/
+permalink: /kb/248/Q248795/
 ---
 
 ## Q248795: PRB: Setup Wizard Does not Distribute Current ODBC Drivers

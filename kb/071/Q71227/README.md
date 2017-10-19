@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71227: INFO: Inverting Color Inverts Palette Index, Not RGB Value"
-permalink: kb/071/Q71227/
+permalink: /kb/071/Q71227/
 ---
 
 ## Q71227: INFO: Inverting Color Inverts Palette Index, Not RGB Value

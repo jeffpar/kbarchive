@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180286: Reg.exe DELETE and UPDATE Functions Do Not Work as Expected"
-permalink: kb/180/Q180286/
+permalink: /kb/180/Q180286/
 ---
 
 ## Q180286: Reg.exe DELETE and UPDATE Functions Do Not Work as Expected

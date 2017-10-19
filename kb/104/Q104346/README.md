@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104346: Limitations of Accessing General Fields from RQBE"
-permalink: kb/104/Q104346/
+permalink: /kb/104/Q104346/
 ---
 
 ## Q104346: Limitations of Accessing General Fields from RQBE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160075: FIX: Problems Debugging in Case-sensitive Database"
-permalink: kb/160/Q160075/
+permalink: /kb/160/Q160075/
 ---
 
 ## Q160075: FIX: Problems Debugging in Case-sensitive Database

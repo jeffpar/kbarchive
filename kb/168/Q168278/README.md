@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168278: INFO: Cannot Access UserConnection Properties from Add-In"
-permalink: kb/168/Q168278/
+permalink: /kb/168/Q168278/
 ---
 
 ## Q168278: INFO: Cannot Access UserConnection Properties from Add-In

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130209: List and Description of Windows NT 3.5 Information Files (&#42;.INF)"
-permalink: kb/130/Q130209/
+permalink: /kb/130/Q130209/
 ---
 
 ## Q130209: List and Description of Windows NT 3.5 Information Files (&#42;.INF)

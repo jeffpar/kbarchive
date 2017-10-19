@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136462: SMC WD800x Network Adapter Settings Not Detected"
-permalink: kb/136/Q136462/
+permalink: /kb/136/Q136462/
 ---
 
 ## Q136462: SMC WD800x Network Adapter Settings Not Detected

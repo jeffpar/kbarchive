@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134661: PDFs Included with Systems Management Server 1.1"
-permalink: kb/134/Q134661/
+permalink: /kb/134/Q134661/
 ---
 
 ## Q134661: PDFs Included with Systems Management Server 1.1

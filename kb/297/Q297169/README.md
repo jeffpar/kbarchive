@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297169: Asheron's Call: The Game Stops Responding or Quits Unexpectedly"
-permalink: kb/297/Q297169/
+permalink: /kb/297/Q297169/
 ---
 
 ## Q297169: Asheron's Call: The Game Stops Responding or Quits Unexpectedly

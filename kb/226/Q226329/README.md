@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226329: XFOR: Connector for Lotus Notes Access Violation in Lsmexout"
-permalink: kb/226/Q226329/
+permalink: /kb/226/Q226329/
 ---
 
 ## Q226329: XFOR: Connector for Lotus Notes Access Violation in Lsmexout

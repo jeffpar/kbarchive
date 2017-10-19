@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113454: FFAPI: Multiple File Transfer with AppPut, RmtPut -W Option"
-permalink: kb/113/Q113454/
+permalink: /kb/113/Q113454/
 ---
 
 ## Q113454: FFAPI: Multiple File Transfer with AppPut, RmtPut -W Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197114: XFOR: Mailmig.exe Access Violation During cc:Mail Migration"
-permalink: kb/197/Q197114/
+permalink: /kb/197/Q197114/
 ---
 
 ## Q197114: XFOR: Mailmig.exe Access Violation During cc:Mail Migration

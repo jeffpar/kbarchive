@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125056: INFO: Precision and Accuracy in Floating-Point Calculations"
-permalink: kb/125/Q125056/
+permalink: /kb/125/Q125056/
 ---
 
 ## Q125056: INFO: Precision and Accuracy in Floating-Point Calculations

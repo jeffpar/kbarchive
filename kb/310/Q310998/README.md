@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310998: PRB: EMPTY() May Incorrectly Return False When Testing for Zero"
-permalink: kb/310/Q310998/
+permalink: /kb/310/Q310998/
 ---
 
 ## Q310998: PRB: EMPTY() May Incorrectly Return False When Testing for Zero

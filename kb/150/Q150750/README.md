@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150750: Mac Bookshelf 96-97: Bookshelf Guide Quits on a PowerBook"
-permalink: kb/150/Q150750/
+permalink: /kb/150/Q150750/
 ---
 
 ## Q150750: Mac Bookshelf 96-97: Bookshelf Guide Quits on a PowerBook

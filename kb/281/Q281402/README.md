@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281402: IIS Problems After Applying a Security Patch"
-permalink: kb/281/Q281402/
+permalink: /kb/281/Q281402/
 ---
 
 ## Q281402: IIS Problems After Applying a Security Patch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194431: Applications May Be Able to &quot;Listen&quot; on TCP or UDP Ports"
-permalink: kb/194/Q194431/
+permalink: /kb/194/Q194431/
 ---
 
 ## Q194431: Applications May Be Able to &quot;Listen&quot; on TCP or UDP Ports

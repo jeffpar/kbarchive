@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274543: MSN Companion E-mail: Hotmail appears to be temporarily unavail"
-permalink: kb/274/Q274543/
+permalink: /kb/274/Q274543/
 ---
 
 ## Q274543: MSN Companion E-mail: Hotmail appears to be temporarily unavail

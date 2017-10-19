@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73604: Keytronics 122-Key Keyboard Compatible with Windows"
-permalink: kb/073/Q73604/
+permalink: /kb/073/Q73604/
 ---
 
 ## Q73604: Keytronics 122-Key Keyboard Compatible with Windows

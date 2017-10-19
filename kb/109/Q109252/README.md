@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109252: Cinemania 1994: MMPERF.TMP Diagnostics File"
-permalink: kb/109/Q109252/
+permalink: /kb/109/Q109252/
 ---
 
 ## Q109252: Cinemania 1994: MMPERF.TMP Diagnostics File

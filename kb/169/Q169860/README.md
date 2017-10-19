@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169860: XCON: MTA Error 210 Due to Invalid ADMD Length"
-permalink: kb/169/Q169860/
+permalink: /kb/169/Q169860/
 ---
 
 ## Q169860: XCON: MTA Error 210 Due to Invalid ADMD Length

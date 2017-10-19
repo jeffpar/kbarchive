@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116046: Baseball: Some Players Don't Have Change Year Buttons"
-permalink: kb/116/Q116046/
+permalink: /kb/116/Q116046/
 ---
 
 ## Q116046: Baseball: Some Players Don't Have Change Year Buttons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239090: XADM: Forward Intact Logged as Send As"
-permalink: kb/239/Q239090/
+permalink: /kb/239/Q239090/
 ---
 
 ## Q239090: XADM: Forward Intact Logged as Send As

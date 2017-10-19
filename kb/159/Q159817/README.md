@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159817: WD97: Can't Connect, Insert Database with ODBC and MSQuery"
-permalink: kb/159/Q159817/
+permalink: /kb/159/Q159817/
 ---
 
 ## Q159817: WD97: Can't Connect, Insert Database with ODBC and MSQuery

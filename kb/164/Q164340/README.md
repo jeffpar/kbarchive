@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164340: XADM: Importing CSV to Directory Causes GPF in MAD"
-permalink: kb/164/Q164340/
+permalink: /kb/164/Q164340/
 ---
 
 ## Q164340: XADM: Importing CSV to Directory Causes GPF in MAD

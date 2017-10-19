@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306291: MCSE Readiness Review Exam 70-217: Microsoft Windows 2000 Direct"
-permalink: kb/306/Q306291/
+permalink: /kb/306/Q306291/
 ---
 
 ## Q306291: MCSE Readiness Review Exam 70-217: Microsoft Windows 2000 Direct

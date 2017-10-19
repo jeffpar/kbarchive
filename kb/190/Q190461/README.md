@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190461: BUG: ADIR() with V Attribute May Return Empty String"
-permalink: kb/190/Q190461/
+permalink: /kb/190/Q190461/
 ---
 
 ## Q190461: BUG: ADIR() with V Attribute May Return Empty String

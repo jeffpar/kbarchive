@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68379: FIX: NMAKE Filename-Parts Syntax Does Not Expand Macros"
-permalink: kb/068/Q68379/
+permalink: /kb/068/Q68379/
 ---
 
 ## Q68379: FIX: NMAKE Filename-Parts Syntax Does Not Expand Macros

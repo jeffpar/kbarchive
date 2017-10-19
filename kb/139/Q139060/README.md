@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139060: Cannot Resolve TCP/IP Names with 32-Bit Programs"
-permalink: kb/139/Q139060/
+permalink: /kb/139/Q139060/
 ---
 
 ## Q139060: Cannot Resolve TCP/IP Names with 32-Bit Programs

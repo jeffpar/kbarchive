@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246049: Streets &amp; Trips 2000 Err Msg: This Program Can No Longer Run"
-permalink: kb/246/Q246049/
+permalink: /kb/246/Q246049/
 ---
 
 ## Q246049: Streets &amp; Trips 2000 Err Msg: This Program Can No Longer Run

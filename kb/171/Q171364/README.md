@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171364: DOC: NTW 4.0 Resource Kit Single-Use License Incorrect"
-permalink: kb/171/Q171364/
+permalink: /kb/171/Q171364/
 ---
 
 ## Q171364: DOC: NTW 4.0 Resource Kit Single-Use License Incorrect

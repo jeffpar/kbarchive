@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164258: DPT SCSI Controller can Loose Requests When Reset"
-permalink: kb/164/Q164258/
+permalink: /kb/164/Q164258/
 ---
 
 ## Q164258: DPT SCSI Controller can Loose Requests When Reset

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160884: SNA Server and &quot;Bidirectional APPC&quot; Support"
-permalink: kb/160/Q160884/
+permalink: /kb/160/Q160884/
 ---
 
 ## Q160884: SNA Server and &quot;Bidirectional APPC&quot; Support

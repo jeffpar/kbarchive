@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233432: Business Planner: Web Links Page Is Printed Twice"
-permalink: kb/233/Q233432/
+permalink: /kb/233/Q233432/
 ---
 
 ## Q233432: Business Planner: Web Links Page Is Printed Twice

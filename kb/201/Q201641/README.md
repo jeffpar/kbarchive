@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201641: FIX: Euro Symbol in ODL/IDL File Causes Visual C++ IDE to Freeze"
-permalink: kb/201/Q201641/
+permalink: /kb/201/Q201641/
 ---
 
 ## Q201641: FIX: Euro Symbol in ODL/IDL File Causes Visual C++ IDE to Freeze

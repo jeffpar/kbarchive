@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137126: DOC: README.HLP Contains Incorrect Language Reference Info"
-permalink: kb/137/Q137126/
+permalink: /kb/137/Q137126/
 ---
 
 ## Q137126: DOC: README.HLP Contains Incorrect Language Reference Info

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236586: XCON: Mail Flow Stops with MTA Event ID 4287, Error Code 8640"
-permalink: kb/236/Q236586/
+permalink: /kb/236/Q236586/
 ---
 
 ## Q236586: XCON: Mail Flow Stops with MTA Event ID 4287, Error Code 8640

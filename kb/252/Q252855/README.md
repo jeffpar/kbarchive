@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252855: SMS: 16-Bit SMS Installer May Not Recognize the 0x5c Character"
-permalink: kb/252/Q252855/
+permalink: /kb/252/Q252855/
 ---
 
 ## Q252855: SMS: 16-Bit SMS Installer May Not Recognize the 0x5c Character

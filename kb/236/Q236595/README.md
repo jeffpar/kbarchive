@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236595: NTFS Deadlock During Writethrough Caching"
-permalink: kb/236/Q236595/
+permalink: /kb/236/Q236595/
 ---
 
 ## Q236595: NTFS Deadlock During Writethrough Caching

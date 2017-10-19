@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173124: XCLN: Exchange Macintosh Client Hangs When Using Shif+F10"
-permalink: kb/173/Q173124/
+permalink: /kb/173/Q173124/
 ---
 
 ## Q173124: XCLN: Exchange Macintosh Client Hangs When Using Shif+F10

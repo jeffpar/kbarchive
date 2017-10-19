@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66353: Description of TicTactics in the Windows Entertainment Pack"
-permalink: kb/066/Q66353/
+permalink: /kb/066/Q66353/
 ---
 
 ## Q66353: Description of TicTactics in the Windows Entertainment Pack

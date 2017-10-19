@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168814: Installing WinNT 4.0 Service Packs During Unattended Install"
-permalink: kb/168/Q168814/
+permalink: /kb/168/Q168814/
 ---
 
 ## Q168814: Installing WinNT 4.0 Service Packs During Unattended Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195692: WD97: Collapsed Outline Appears Expanded in Print Preview"
-permalink: kb/195/Q195692/
+permalink: /kb/195/Q195692/
 ---
 
 ## Q195692: WD97: Collapsed Outline Appears Expanded in Print Preview

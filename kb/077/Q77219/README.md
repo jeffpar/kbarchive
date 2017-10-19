@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77219: XMS Memory Is Not Reported Until Accessed"
-permalink: kb/077/Q77219/
+permalink: /kb/077/Q77219/
 ---
 
 ## Q77219: XMS Memory Is Not Reported Until Accessed

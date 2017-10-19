@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129593: Windows NT Workstation and Server Optimized For Different Roles"
-permalink: kb/129/Q129593/
+permalink: /kb/129/Q129593/
 ---
 
 ## Q129593: Windows NT Workstation and Server Optimized For Different Roles

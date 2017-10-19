@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269832: SMS: Case Sensitivity Slows Down Queries"
-permalink: kb/269/Q269832/
+permalink: /kb/269/Q269832/
 ---
 
 ## Q269832: SMS: Case Sensitivity Slows Down Queries

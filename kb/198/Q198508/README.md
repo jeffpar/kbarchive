@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198508: HOWTO: Insert and Format a Picture in Word 97 w/ OLE Automation"
-permalink: kb/198/Q198508/
+permalink: /kb/198/Q198508/
 ---
 
 ## Q198508: HOWTO: Insert and Format a Picture in Word 97 w/ OLE Automation

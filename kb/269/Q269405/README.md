@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269405: SMS: Secondary Site Wizard Corrupts Files on Primary Site Server"
-permalink: kb/269/Q269405/
+permalink: /kb/269/Q269405/
 ---
 
 ## Q269405: SMS: Secondary Site Wizard Corrupts Files on Primary Site Server

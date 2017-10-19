@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137592: Mouse and Keyboard Stop Functioning with Asus Motherboard"
-permalink: kb/137/Q137592/
+permalink: /kb/137/Q137592/
 ---
 
 ## Q137592: Mouse and Keyboard Stop Functioning with Asus Motherboard

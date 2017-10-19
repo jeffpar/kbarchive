@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171215: HOWTO: Use Data Form Wizard to Connect to Remote Data via DAO"
-permalink: kb/171/Q171215/
+permalink: /kb/171/Q171215/
 ---
 
 ## Q171215: HOWTO: Use Data Form Wizard to Connect to Remote Data via DAO

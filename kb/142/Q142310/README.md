@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142310: How to Redirect Print Jobs If Print Device Is Not Available"
-permalink: kb/142/Q142310/
+permalink: /kb/142/Q142310/
 ---
 
 ## Q142310: How to Redirect Print Jobs If Print Device Is Not Available

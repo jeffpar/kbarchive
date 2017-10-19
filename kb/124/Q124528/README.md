@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124528: PRB: How to Handle the Error &quot;INI in 2.2 format&quot;"
-permalink: kb/124/Q124528/
+permalink: /kb/124/Q124528/
 ---
 
 ## Q124528: PRB: How to Handle the Error &quot;INI in 2.2 format&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126853: Windows NT 3.5 Setup Fails with Microspeed Trackball Mouse"
-permalink: kb/126/Q126853/
+permalink: /kb/126/Q126853/
 ---
 
 ## Q126853: Windows NT 3.5 Setup Fails with Microspeed Trackball Mouse

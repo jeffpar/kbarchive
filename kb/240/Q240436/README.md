@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240436: FIX: Repeated SQL SELECT Statements Cause &quot;File is in use&quot; Error"
-permalink: kb/240/Q240436/
+permalink: /kb/240/Q240436/
 ---
 
 ## Q240436: FIX: Repeated SQL SELECT Statements Cause &quot;File is in use&quot; Error

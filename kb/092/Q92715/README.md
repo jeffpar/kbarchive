@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92715: Minimum System Requirements for Workgroup Connections"
-permalink: kb/092/Q92715/
+permalink: /kb/092/Q92715/
 ---
 
 ## Q92715: Minimum System Requirements for Workgroup Connections

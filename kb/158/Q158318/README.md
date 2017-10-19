@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158318: XFOR: IMC Doesn't Deliver Mail When Service Is Started"
-permalink: kb/158/Q158318/
+permalink: /kb/158/Q158318/
 ---
 
 ## Q158318: XFOR: IMC Doesn't Deliver Mail When Service Is Started

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263576: Motocross Madness 2: Program Quits During CD-ROM Verification"
-permalink: kb/263/Q263576/
+permalink: /kb/263/Q263576/
 ---
 
 ## Q263576: Motocross Madness 2: Program Quits During CD-ROM Verification

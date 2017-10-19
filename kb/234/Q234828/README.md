@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234828: MOD2000: Confusing Error Adding Project to Visual SourceSafe"
-permalink: kb/234/Q234828/
+permalink: /kb/234/Q234828/
 ---
 
 ## Q234828: MOD2000: Confusing Error Adding Project to Visual SourceSafe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133017: PRB: Branching Files in SourceSafe Causes Lost Disk Space"
-permalink: kb/133/Q133017/
+permalink: /kb/133/Q133017/
 ---
 
 ## Q133017: PRB: Branching Files in SourceSafe Causes Lost Disk Space

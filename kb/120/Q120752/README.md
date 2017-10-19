@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120752: How to Diagnose Event ID 4320 or 4319"
-permalink: kb/120/Q120752/
+permalink: /kb/120/Q120752/
 ---
 
 ## Q120752: How to Diagnose Event ID 4320 or 4319

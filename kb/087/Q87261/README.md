@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87261: Mac Srv: Connection Times Lost When Site Name Changes"
-permalink: kb/087/Q87261/
+permalink: /kb/087/Q87261/
 ---
 
 ## Q87261: Mac Srv: Connection Times Lost When Site Name Changes

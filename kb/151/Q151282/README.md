@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151282: Only Black Text Visible When Previewing Custom Cover Page"
-permalink: kb/151/Q151282/
+permalink: /kb/151/Q151282/
 ---
 
 ## Q151282: Only Black Text Visible When Previewing Custom Cover Page

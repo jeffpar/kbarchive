@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140551: NetDDE Requires Username/Password When Connecting to WinNT"
-permalink: kb/140/Q140551/
+permalink: /kb/140/Q140551/
 ---
 
 ## Q140551: NetDDE Requires Username/Password When Connecting to WinNT

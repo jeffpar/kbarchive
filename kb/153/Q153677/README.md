@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153677: PRB: Implementing Stock Error Event in Custom OLE Control"
-permalink: kb/153/Q153677/
+permalink: /kb/153/Q153677/
 ---
 
 ## Q153677: PRB: Implementing Stock Error Event in Custom OLE Control

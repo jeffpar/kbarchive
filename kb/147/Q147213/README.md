@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147213: Sent Internet Mail Remains in the Outbox"
-permalink: kb/147/Q147213/
+permalink: /kb/147/Q147213/
 ---
 
 ## Q147213: Sent Internet Mail Remains in the Outbox

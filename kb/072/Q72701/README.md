@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72701: Writing Macro Functions and Using the EXITM Directive"
-permalink: kb/072/Q72701/
+permalink: /kb/072/Q72701/
 ---
 
 ## Q72701: Writing Macro Functions and Using the EXITM Directive

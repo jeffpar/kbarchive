@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304374: Streets 2002: System Requirements"
-permalink: kb/304/Q304374/
+permalink: /kb/304/Q304374/
 ---
 
 ## Q304374: Streets 2002: System Requirements

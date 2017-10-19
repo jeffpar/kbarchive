@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99067: REXX Practices, Peculiarities and Problems"
-permalink: kb/099/Q99067/
+permalink: /kb/099/Q99067/
 ---
 
 ## Q99067: REXX Practices, Peculiarities and Problems

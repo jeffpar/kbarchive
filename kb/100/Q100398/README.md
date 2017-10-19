@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100398: Bookshelf: Audio Does Not Always Exactly Match Quotation"
-permalink: kb/100/Q100398/
+permalink: /kb/100/Q100398/
 ---
 
 ## Q100398: Bookshelf: Audio Does Not Always Exactly Match Quotation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98592: INFO: /Zg Not Designed for Use with .CPP or .CXX Files"
-permalink: kb/098/Q98592/
+permalink: /kb/098/Q98592/
 ---
 
 ## Q98592: INFO: /Zg Not Designed for Use with .CPP or .CXX Files

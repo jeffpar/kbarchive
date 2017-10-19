@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98513: EMM386 Err Msg: Insufficient Memory for UMBs or Virtual HMA"
-permalink: kb/098/Q98513/
+permalink: /kb/098/Q98513/
 ---
 
 ## Q98513: EMM386 Err Msg: Insufficient Memory for UMBs or Virtual HMA

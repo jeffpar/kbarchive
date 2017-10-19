@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158208: FIX: Form with Toolbar Does Not Shut Down Under Windows NT 4.0"
-permalink: kb/158/Q158208/
+permalink: /kb/158/Q158208/
 ---
 
 ## Q158208: FIX: Form with Toolbar Does Not Shut Down Under Windows NT 4.0

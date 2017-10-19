@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64264: No Mouse in Windows 3.0 with DEC Mouse"
-permalink: kb/064/Q64264/
+permalink: /kb/064/Q64264/
 ---
 
 ## Q64264: No Mouse in Windows 3.0 with DEC Mouse

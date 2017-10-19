@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158011: XCLN: Unable to Download the Offline Address Book"
-permalink: kb/158/Q158011/
+permalink: /kb/158/Q158011/
 ---
 
 ## Q158011: XCLN: Unable to Download the Offline Address Book

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99198: HOWTO: Display the Current Time in a CStatusBar Pane"
-permalink: kb/099/Q99198/
+permalink: /kb/099/Q99198/
 ---
 
 ## Q99198: HOWTO: Display the Current Time in a CStatusBar Pane

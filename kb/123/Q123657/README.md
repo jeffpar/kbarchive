@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123657: BUG: 16-bit ODBC Driver Setup Fails Due to Missing ODBC32.DLL"
-permalink: kb/123/Q123657/
+permalink: /kb/123/Q123657/
 ---
 
 ## Q123657: BUG: 16-bit ODBC Driver Setup Fails Due to Missing ODBC32.DLL

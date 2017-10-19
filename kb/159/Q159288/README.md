@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159288: XADM: Exchange Setup Stops During Replication with a Server"
-permalink: kb/159/Q159288/
+permalink: /kb/159/Q159288/
 ---
 
 ## Q159288: XADM: Exchange Setup Stops During Replication with a Server

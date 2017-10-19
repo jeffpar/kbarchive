@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66778: FIX: Error Messages May Say &quot;short&quot; or &quot;int&quot; Instead of &quot;enum&quot;"
-permalink: kb/066/Q66778/
+permalink: /kb/066/Q66778/
 ---
 
 ## Q66778: FIX: Error Messages May Say &quot;short&quot; or &quot;int&quot; Instead of &quot;enum&quot;

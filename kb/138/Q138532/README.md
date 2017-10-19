@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138532: PRB: VB Tab Control Picture Property Doesn't Support Metafiles"
-permalink: kb/138/Q138532/
+permalink: /kb/138/Q138532/
 ---
 
 ## Q138532: PRB: VB Tab Control Picture Property Doesn't Support Metafiles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268263: SGC Does Not Work When You Use Keys Longer than 1024 Bits"
-permalink: kb/268/Q268263/
+permalink: /kb/268/Q268263/
 ---
 
 ## Q268263: SGC Does Not Work When You Use Keys Longer than 1024 Bits

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190708: XFOR: Internet Mail Service Is Not Copying Administrator on NDRs"
-permalink: kb/190/Q190708/
+permalink: /kb/190/Q190708/
 ---
 
 ## Q190708: XFOR: Internet Mail Service Is Not Copying Administrator on NDRs

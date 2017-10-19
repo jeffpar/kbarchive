@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67189: ASD: Not Possible to Add ATIS Frequency"
-permalink: kb/067/Q67189/
+permalink: /kb/067/Q67189/
 ---
 
 ## Q67189: ASD: Not Possible to Add ATIS Frequency

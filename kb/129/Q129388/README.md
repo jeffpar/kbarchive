@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129388: INFO: How Null String Pointers Behave in Visual Basic 4.0"
-permalink: kb/129/Q129388/
+permalink: /kb/129/Q129388/
 ---
 
 ## Q129388: INFO: How Null String Pointers Behave in Visual Basic 4.0

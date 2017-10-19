@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146101: XCLN: Dirty Open Freedoc Does Not Give Cancel Option"
-permalink: kb/146/Q146101/
+permalink: /kb/146/Q146101/
 ---
 
 ## Q146101: XCLN: Dirty Open Freedoc Does Not Give Cancel Option

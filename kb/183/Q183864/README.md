@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183864: Windows NT 4.0 Resource Kit Perfm.bat Error"
-permalink: kb/183/Q183864/
+permalink: /kb/183/Q183864/
 ---
 
 ## Q183864: Windows NT 4.0 Resource Kit Perfm.bat Error

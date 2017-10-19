@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157741: PPT7: OLE Object Icon Doesn't Display at All Zoom Percentages"
-permalink: kb/157/Q157741/
+permalink: /kb/157/Q157741/
 ---
 
 ## Q157741: PPT7: OLE Object Icon Doesn't Display at All Zoom Percentages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132600: Animations Flicker in Lion King 1.0"
-permalink: kb/132/Q132600/
+permalink: /kb/132/Q132600/
 ---
 
 ## Q132600: Animations Flicker in Lion King 1.0

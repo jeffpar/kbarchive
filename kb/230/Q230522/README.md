@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230522: XCLN: X.400 Address Not Displayed in Message Body"
-permalink: kb/230/Q230522/
+permalink: /kb/230/Q230522/
 ---
 
 ## Q230522: XCLN: X.400 Address Not Displayed in Message Body

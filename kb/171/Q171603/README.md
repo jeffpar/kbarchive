@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171603: HOWTO: Get the Unread Message Count from an Outlook Folder"
-permalink: kb/171/Q171603/
+permalink: /kb/171/Q171603/
 ---
 
 ## Q171603: HOWTO: Get the Unread Message Count from an Outlook Folder

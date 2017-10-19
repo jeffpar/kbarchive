@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272225: SNA Server and NetBIOS ScopeIDs on Windows 2000 Server"
-permalink: kb/272/Q272225/
+permalink: /kb/272/Q272225/
 ---
 
 ## Q272225: SNA Server and NetBIOS ScopeIDs on Windows 2000 Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149262: XCLN: Rights to Folder Require Reviewer Rights on Mailbox"
-permalink: kb/149/Q149262/
+permalink: /kb/149/Q149262/
 ---
 
 ## Q149262: XCLN: Rights to Folder Require Reviewer Rights on Mailbox

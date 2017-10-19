@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255556: PRB: C2146 Error with Sqloledb.h in Platform SDK"
-permalink: kb/255/Q255556/
+permalink: /kb/255/Q255556/
 ---
 
 ## Q255556: PRB: C2146 Error with Sqloledb.h in Platform SDK

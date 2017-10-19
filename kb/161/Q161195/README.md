@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161195: OtherServers Parameter Fails on SNA Server 2.11 SP1 Clients"
-permalink: kb/161/Q161195/
+permalink: /kb/161/Q161195/
 ---
 
 ## Q161195: OtherServers Parameter Fails on SNA Server 2.11 SP1 Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272490: BUG: Error &quot;Cannot Save an Uninitialized Class&quot; on VB Component"
-permalink: kb/272/Q272490/
+permalink: /kb/272/Q272490/
 ---
 
 ## Q272490: BUG: Error &quot;Cannot Save an Uninitialized Class&quot; on VB Component

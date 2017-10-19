@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127900: BUG: C2487 Error Occurs If Multiple Static Vars Use dllexport"
-permalink: kb/127/Q127900/
+permalink: /kb/127/Q127900/
 ---
 
 ## Q127900: BUG: C2487 Error Occurs If Multiple Static Vars Use dllexport

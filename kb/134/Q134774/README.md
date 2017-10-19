@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134774: 256-Color Bitmap Loses Colors When Drawing Tools Are Used"
-permalink: kb/134/Q134774/
+permalink: /kb/134/Q134774/
 ---
 
 ## Q134774: 256-Color Bitmap Loses Colors When Drawing Tools Are Used

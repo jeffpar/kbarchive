@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173460: WD97: Word Hangs If Assistant Options Change When Editing Object"
-permalink: kb/173/Q173460/
+permalink: /kb/173/Q173460/
 ---
 
 ## Q173460: WD97: Word Hangs If Assistant Options Change When Editing Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168361: MSB Rainforest: Overview of Magic School Bus Explores Rainforest"
-permalink: kb/168/Q168361/
+permalink: /kb/168/Q168361/
 ---
 
 ## Q168361: MSB Rainforest: Overview of Magic School Bus Explores Rainforest

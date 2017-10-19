@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178256: LUA Program Hangs After Receiving Exception Request (EXR)"
-permalink: kb/178/Q178256/
+permalink: /kb/178/Q178256/
 ---
 
 ## Q178256: LUA Program Hangs After Receiving Exception Request (EXR)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108875: SFM Seed Routing and Seeding Devices"
-permalink: kb/108/Q108875/
+permalink: /kb/108/Q108875/
 ---
 
 ## Q108875: SFM Seed Routing and Seeding Devices

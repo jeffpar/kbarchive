@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325978: Train Simulator: Error Message About Graphics Hardware"
-permalink: kb/325/Q325978/
+permalink: /kb/325/Q325978/
 ---
 
 ## Q325978: Train Simulator: Error Message About Graphics Hardware

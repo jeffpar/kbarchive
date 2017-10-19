@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310701: Midtown Madness: Game Quits Unexpectedly After Startup Movie"
-permalink: kb/310/Q310701/
+permalink: /kb/310/Q310701/
 ---
 
 ## Q310701: Midtown Madness: Game Quits Unexpectedly After Startup Movie

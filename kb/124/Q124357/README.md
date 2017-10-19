@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124357: Err Msg Using NET USE: System Error 1130 Has Occurred"
-permalink: kb/124/Q124357/
+permalink: /kb/124/Q124357/
 ---
 
 ## Q124357: Err Msg Using NET USE: System Error 1130 Has Occurred

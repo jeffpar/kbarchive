@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59650: Control Panel Color Scheme Blank"
-permalink: kb/059/Q59650/
+permalink: /kb/059/Q59650/
 ---
 
 ## Q59650: Control Panel Color Scheme Blank

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96296: FoxBASE+ User's Guide Incorrectly States Limit of Element"
-permalink: kb/096/Q96296/
+permalink: /kb/096/Q96296/
 ---
 
 ## Q96296: FoxBASE+ User's Guide Incorrectly States Limit of Element

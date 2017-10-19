@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141956: BUG: 'Z' Function on @ GET Doesn't Suppress Display of Zero"
-permalink: kb/141/Q141956/
+permalink: /kb/141/Q141956/
 ---
 
 ## Q141956: BUG: 'Z' Function on @ GET Doesn't Suppress Display of Zero

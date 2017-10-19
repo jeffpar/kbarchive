@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242516: Age of Empires II: Screen Turns Black After Opening Movie"
-permalink: kb/242/Q242516/
+permalink: /kb/242/Q242516/
 ---
 
 ## Q242516: Age of Empires II: Screen Turns Black After Opening Movie

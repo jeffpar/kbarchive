@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196929: Cannot Install Encarta on Windows NT 4.0-Based Computer"
-permalink: kb/196/Q196929/
+permalink: /kb/196/Q196929/
 ---
 
 ## Q196929: Cannot Install Encarta on Windows NT 4.0-Based Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145600: Creating Mirror Fails with Insufficient Disk Space"
-permalink: kb/145/Q145600/
+permalink: /kb/145/Q145600/
 ---
 
 ## Q145600: Creating Mirror Fails with Insufficient Disk Space

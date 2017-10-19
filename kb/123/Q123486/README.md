@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123486: Err Msg: Setup Error 110 During Installation of Microsoft DLC"
-permalink: kb/123/Q123486/
+permalink: /kb/123/Q123486/
 ---
 
 ## Q123486: Err Msg: Setup Error 110 During Installation of Microsoft DLC

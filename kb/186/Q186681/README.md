@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186681: BUG: Selecting Item in DBCombo Locks Up Form"
-permalink: kb/186/Q186681/
+permalink: /kb/186/Q186681/
 ---
 
 ## Q186681: BUG: Selecting Item in DBCombo Locks Up Form

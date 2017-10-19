@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250654: Winmsd May Cause Dr. Watson Error Message"
-permalink: kb/250/Q250654/
+permalink: /kb/250/Q250654/
 ---
 
 ## Q250654: Winmsd May Cause Dr. Watson Error Message

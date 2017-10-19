@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149387: XFOR: MSMI Terminating with Memory Access Violation, Event ID 23"
-permalink: kb/149/Q149387/
+permalink: /kb/149/Q149387/
 ---
 
 ## Q149387: XFOR: MSMI Terminating with Memory Access Violation, Event ID 23

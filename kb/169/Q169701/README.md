@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169701: XCON: MTA Terminates Unexpectedly with Event ID 2143"
-permalink: kb/169/Q169701/
+permalink: /kb/169/Q169701/
 ---
 
 ## Q169701: XCON: MTA Terminates Unexpectedly with Event ID 2143

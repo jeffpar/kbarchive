@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137623: PRB: Align Property Setting Causes Toolbar to Fill the Form"
-permalink: kb/137/Q137623/
+permalink: /kb/137/Q137623/
 ---
 
 ## Q137623: PRB: Align Property Setting Causes Toolbar to Fill the Form

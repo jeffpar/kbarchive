@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180119: Err: CreateIISPackage or DeleteIISpackage 0x800706be RPC Failed"
-permalink: kb/180/Q180119/
+permalink: /kb/180/Q180119/
 ---
 
 ## Q180119: Err: CreateIISPackage or DeleteIISpackage 0x800706be RPC Failed

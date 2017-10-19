@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74984: EMM386.EXE Hangs Machine with Adaptec Controller"
-permalink: kb/074/Q74984/
+permalink: /kb/074/Q74984/
 ---
 
 ## Q74984: EMM386.EXE Hangs Machine with Adaptec Controller

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168391: FP: How to Create a &quot;Back&quot; Button on a Web Page Using VBScript"
-permalink: kb/168/Q168391/
+permalink: /kb/168/Q168391/
 ---
 
 ## Q168391: FP: How to Create a &quot;Back&quot; Button on a Web Page Using VBScript

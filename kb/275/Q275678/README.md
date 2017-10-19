@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275678: How to Troubleshoot STOP 0x0000001E KMODE_EXCEPTION_NOT_HANDLED"
-permalink: kb/275/Q275678/
+permalink: /kb/275/Q275678/
 ---
 
 ## Q275678: How to Troubleshoot STOP 0x0000001E KMODE_EXCEPTION_NOT_HANDLED

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199778: DOC: Help File Has Incomplete List of Collate Sequences"
-permalink: kb/199/Q199778/
+permalink: /kb/199/Q199778/
 ---
 
 ## Q199778: DOC: Help File Has Incomplete List of Collate Sequences

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119391: Must Restart to Get Some Scenery Options to Reappear"
-permalink: kb/119/Q119391/
+permalink: /kb/119/Q119391/
 ---
 
 ## Q119391: Must Restart to Get Some Scenery Options to Reappear

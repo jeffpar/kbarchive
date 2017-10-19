@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175661: MSN 2.5 OEM Release Readme.txt File Contents"
-permalink: kb/175/Q175661/
+permalink: /kb/175/Q175661/
 ---
 
 ## Q175661: MSN 2.5 OEM Release Readme.txt File Contents

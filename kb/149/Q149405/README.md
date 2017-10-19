@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149405: Real-Mode Compression Driver Not Listed in Memory"
-permalink: kb/149/Q149405/
+permalink: /kb/149/Q149405/
 ---
 
 ## Q149405: Real-Mode Compression Driver Not Listed in Memory

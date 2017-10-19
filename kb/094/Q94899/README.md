@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94899: WFWG: Recovering Windows 3.1 After Installation with DR-DOS"
-permalink: kb/094/Q94899/
+permalink: /kb/094/Q94899/
 ---
 
 ## Q94899: WFWG: Recovering Windows 3.1 After Installation with DR-DOS

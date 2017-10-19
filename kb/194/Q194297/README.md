@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194297: SMS: Windows NT Inventory File Collector Causes Access Violation"
-permalink: kb/194/Q194297/
+permalink: /kb/194/Q194297/
 ---
 
 ## Q194297: SMS: Windows NT Inventory File Collector Causes Access Violation

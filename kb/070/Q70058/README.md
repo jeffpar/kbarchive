@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70058: Only Spaces May Separate Additional Libraries in PWB"
-permalink: kb/070/Q70058/
+permalink: /kb/070/Q70058/
 ---
 
 ## Q70058: Only Spaces May Separate Additional Libraries in PWB

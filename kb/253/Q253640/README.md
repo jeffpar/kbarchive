@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253640: BUG: Crash When Closing Table with Dirty @...GET and READ Active"
-permalink: kb/253/Q253640/
+permalink: /kb/253/Q253640/
 ---
 
 ## Q253640: BUG: Crash When Closing Table with Dirty @...GET and READ Active

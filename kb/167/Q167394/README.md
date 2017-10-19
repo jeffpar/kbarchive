@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167394: Installed Modem Detected as Serial Mouse on Restart"
-permalink: kb/167/Q167394/
+permalink: /kb/167/Q167394/
 ---
 
 ## Q167394: Installed Modem Detected as Serial Mouse on Restart

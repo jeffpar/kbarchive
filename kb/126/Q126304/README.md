@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126304: X400: Non-delivery Reports to Incorrect User by Softswitch EMX"
-permalink: kb/126/Q126304/
+permalink: /kb/126/Q126304/
 ---
 
 ## Q126304: X400: Non-delivery Reports to Incorrect User by Softswitch EMX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149519: IIS IDC to SQL with Pipe/Connection Busy, Timeout Expired"
-permalink: kb/149/Q149519/
+permalink: /kb/149/Q149519/
 ---
 
 ## Q149519: IIS IDC to SQL with Pipe/Connection Busy, Timeout Expired

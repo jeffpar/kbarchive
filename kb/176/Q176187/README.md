@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176187: XCLN: BCC Recipients Not Shown in Sent Items Folder"
-permalink: kb/176/Q176187/
+permalink: /kb/176/Q176187/
 ---
 
 ## Q176187: XCLN: BCC Recipients Not Shown in Sent Items Folder

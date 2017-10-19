@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82695: MSD.EXE Requires /I Switch with Arcnet Boards"
-permalink: kb/082/Q82695/
+permalink: /kb/082/Q82695/
 ---
 
 ## Q82695: MSD.EXE Requires /I Switch with Arcnet Boards

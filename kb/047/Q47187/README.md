@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47187: Mac Wkst: File Type and Creator of Saved Messages"
-permalink: kb/047/Q47187/
+permalink: /kb/047/Q47187/
 ---
 
 ## Q47187: Mac Wkst: File Type and Creator of Saved Messages

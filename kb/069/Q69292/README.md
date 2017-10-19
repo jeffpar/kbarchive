@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69292: PRB: Video Driver GP-Faults When Handling Large Bitmaps"
-permalink: kb/069/Q69292/
+permalink: /kb/069/Q69292/
 ---
 
 ## Q69292: PRB: Video Driver GP-Faults When Handling Large Bitmaps

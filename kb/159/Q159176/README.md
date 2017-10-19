@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159176: XADM: Store Stops Responding with High CPU Usage"
-permalink: kb/159/Q159176/
+permalink: /kb/159/Q159176/
 ---
 
 ## Q159176: XADM: Store Stops Responding with High CPU Usage

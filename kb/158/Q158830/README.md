@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158830: FIX: OptionGroup with M, P, H, K Hot Keys Fire Valid"
-permalink: kb/158/Q158830/
+permalink: /kb/158/Q158830/
 ---
 
 ## Q158830: FIX: OptionGroup with M, P, H, K Hot Keys Fire Valid

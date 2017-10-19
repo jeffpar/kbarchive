@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239649: XADM: InterOrg Sync Doesn't Update Same Alias Import Containers"
-permalink: kb/239/Q239649/
+permalink: /kb/239/Q239649/
 ---
 
 ## Q239649: XADM: InterOrg Sync Doesn't Update Same Alias Import Containers

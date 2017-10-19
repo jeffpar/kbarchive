@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135813: DriveSpace 3 Cannot Compress Drive with 22 Local Drives"
-permalink: kb/135/Q135813/
+permalink: /kb/135/Q135813/
 ---
 
 ## Q135813: DriveSpace 3 Cannot Compress Drive with 22 Local Drives

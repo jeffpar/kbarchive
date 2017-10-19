@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197296: BUG: Error 424 Adding Data Object Wizard-Created Ctrl to Form"
-permalink: kb/197/Q197296/
+permalink: /kb/197/Q197296/
 ---
 
 ## Q197296: BUG: Error 424 Adding Data Object Wizard-Created Ctrl to Form

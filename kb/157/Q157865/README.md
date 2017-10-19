@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157865: Hellbender Requires 16 MB of Virtual Memory"
-permalink: kb/157/Q157865/
+permalink: /kb/157/Q157865/
 ---
 
 ## Q157865: Hellbender Requires 16 MB of Virtual Memory

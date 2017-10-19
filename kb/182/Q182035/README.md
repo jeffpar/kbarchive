@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182035: XCLN: How to Set Up Windows 95 Roving Users with Profgen.exe"
-permalink: kb/182/Q182035/
+permalink: /kb/182/Q182035/
 ---
 
 ## Q182035: XCLN: How to Set Up Windows 95 Roving Users with Profgen.exe

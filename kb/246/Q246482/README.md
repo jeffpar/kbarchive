@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246482: Trace Viewer Incorrectly Formats Print Output"
-permalink: kb/246/Q246482/
+permalink: /kb/246/Q246482/
 ---
 
 ## Q246482: Trace Viewer Incorrectly Formats Print Output

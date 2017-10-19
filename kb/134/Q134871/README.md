@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134871: PPT7: Embedded Object Resizes if Slide Formatted as Title Master"
-permalink: kb/134/Q134871/
+permalink: /kb/134/Q134871/
 ---
 
 ## Q134871: PPT7: Embedded Object Resizes if Slide Formatted as Title Master

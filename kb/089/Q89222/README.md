@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89222: Terminal Incorrectly Saves Filenames"
-permalink: kb/089/Q89222/
+permalink: /kb/089/Q89222/
 ---
 
 ## Q89222: Terminal Incorrectly Saves Filenames

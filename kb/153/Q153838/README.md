@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153838: FILE: Name Expansion Utility/&quot;Hitchhiker's Guide to VB and SQL&quot;"
-permalink: kb/153/Q153838/
+permalink: /kb/153/Q153838/
 ---
 
 ## Q153838: FILE: Name Expansion Utility/&quot;Hitchhiker's Guide to VB and SQL&quot;

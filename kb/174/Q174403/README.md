@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174403: FIX: Unresolved Externals When Building MFC42 and MFCD42xD"
-permalink: kb/174/Q174403/
+permalink: /kb/174/Q174403/
 ---
 
 ## Q174403: FIX: Unresolved Externals When Building MFC42 and MFCD42xD

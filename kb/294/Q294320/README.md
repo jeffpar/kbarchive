@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294320: &quot;How to&quot; Information for Microsoft Visual C++ Beginners"
-permalink: kb/294/Q294320/
+permalink: /kb/294/Q294320/
 ---
 
 ## Q294320: &quot;How to&quot; Information for Microsoft Visual C++ Beginners

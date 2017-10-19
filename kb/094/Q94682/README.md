@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94682: Windows 3.1 COMM.DRV File May Be Incompatible with PS/2 50Z"
-permalink: kb/094/Q94682/
+permalink: /kb/094/Q94682/
 ---
 
 ## Q94682: Windows 3.1 COMM.DRV File May Be Incompatible with PS/2 50Z

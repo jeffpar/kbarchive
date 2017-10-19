@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156366: How to Run Windows NT Explorer As a Separate Process"
-permalink: kb/156/Q156366/
+permalink: /kb/156/Q156366/
 ---
 
 ## Q156366: How to Run Windows NT Explorer As a Separate Process

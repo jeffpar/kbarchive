@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163459: WD97: Footnote/Endnote Deleted by Grammar Checker"
-permalink: kb/163/Q163459/
+permalink: /kb/163/Q163459/
 ---
 
 ## Q163459: WD97: Footnote/Endnote Deleted by Grammar Checker

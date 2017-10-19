@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279336: MS01-003: Patch Available for Winsock Mutex Vulnerability"
-permalink: kb/279/Q279336/
+permalink: /kb/279/Q279336/
 ---
 
 ## Q279336: MS01-003: Patch Available for Winsock Mutex Vulnerability

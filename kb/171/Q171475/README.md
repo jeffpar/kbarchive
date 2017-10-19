@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171475: FIX: RichTextBox Cleared When BorderStyle Changes at Run-Time"
-permalink: kb/171/Q171475/
+permalink: /kb/171/Q171475/
 ---
 
 ## Q171475: FIX: RichTextBox Cleared When BorderStyle Changes at Run-Time

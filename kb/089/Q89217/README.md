@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89217: Working Copy Demonstration of Ami Pro 2.0 May Cause GP Faults"
-permalink: kb/089/Q89217/
+permalink: /kb/089/Q89217/
 ---
 
 ## Q89217: Working Copy Demonstration of Ami Pro 2.0 May Cause GP Faults

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129642: Buffering Must Be Handled Manually in DBC Rules/Triggers"
-permalink: kb/129/Q129642/
+permalink: /kb/129/Q129642/
 ---
 
 ## Q129642: Buffering Must Be Handled Manually in DBC Rules/Triggers

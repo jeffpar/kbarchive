@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302557: Help Page Content Supported Media (Bug ID 3783)"
-permalink: kb/302/Q302557/
+permalink: /kb/302/Q302557/
 ---
 
 ## Q302557: Help Page Content Supported Media (Bug ID 3783)

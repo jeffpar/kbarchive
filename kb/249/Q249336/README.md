@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249336: BUG: Error Message When Using Date in Index File"
-permalink: kb/249/Q249336/
+permalink: /kb/249/Q249336/
 ---
 
 ## Q249336: BUG: Error Message When Using Date in Index File

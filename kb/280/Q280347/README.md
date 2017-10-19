@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280347: XCON: MTA Journaling Does Not Work on Certain Days"
-permalink: kb/280/Q280347/
+permalink: /kb/280/Q280347/
 ---
 
 ## Q280347: XCON: MTA Journaling Does Not Work on Certain Days

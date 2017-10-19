@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223772: XFOR: Connector for cc:Mail Loops Trying to Import Same Message"
-permalink: kb/223/Q223772/
+permalink: /kb/223/Q223772/
 ---
 
 ## Q223772: XFOR: Connector for cc:Mail Loops Trying to Import Same Message

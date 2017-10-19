@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141597: Cannot Install Sound Blaster AWE32 Sound Card from Setup Disk"
-permalink: kb/141/Q141597/
+permalink: /kb/141/Q141597/
 ---
 
 ## Q141597: Cannot Install Sound Blaster AWE32 Sound Card from Setup Disk

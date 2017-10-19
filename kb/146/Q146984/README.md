@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146984: XCLN: Minimized Msg Finder Windows Not Restored to Position"
-permalink: kb/146/Q146984/
+permalink: /kb/146/Q146984/
 ---
 
 ## Q146984: XCLN: Minimized Msg Finder Windows Not Restored to Position

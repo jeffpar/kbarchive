@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231871: Running Microsoft Internet Explorer 5 Comments and Corrections"
-permalink: kb/231/Q231871/
+permalink: /kb/231/Q231871/
 ---
 
 ## Q231871: Running Microsoft Internet Explorer 5 Comments and Corrections

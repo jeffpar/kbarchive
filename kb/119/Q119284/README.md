@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119284: HOWTO: Distribute a Large Database with an Application"
-permalink: kb/119/Q119284/
+permalink: /kb/119/Q119284/
 ---
 
 ## Q119284: HOWTO: Distribute a Large Database with an Application

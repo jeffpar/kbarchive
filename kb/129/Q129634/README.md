@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129634: Jet DB Engines Process 'Data Has Changed' Error Differently"
-permalink: kb/129/Q129634/
+permalink: /kb/129/Q129634/
 ---
 
 ## Q129634: Jet DB Engines Process 'Data Has Changed' Error Differently

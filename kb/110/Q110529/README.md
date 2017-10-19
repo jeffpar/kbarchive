@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110529: PRB: FoxPro for Mac Doesn't Unload Library Before Reloading It"
-permalink: kb/110/Q110529/
+permalink: /kb/110/Q110529/
 ---
 
 ## Q110529: PRB: FoxPro for Mac Doesn't Unload Library Before Reloading It

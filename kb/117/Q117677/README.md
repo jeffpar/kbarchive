@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117677: PC Ext: EXTERNAL.EXE Creates No Remote Client SENT.LOG Entry"
-permalink: kb/117/Q117677/
+permalink: /kb/117/Q117677/
 ---
 
 ## Q117677: PC Ext: EXTERNAL.EXE Creates No Remote Client SENT.LOG Entry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141743: Mac Art Gallery 1.0: Files Installed During Installation"
-permalink: kb/141/Q141743/
+permalink: /kb/141/Q141743/
 ---
 
 ## Q141743: Mac Art Gallery 1.0: Files Installed During Installation

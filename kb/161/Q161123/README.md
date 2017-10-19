@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161123: PPT: Sample Code to Determine the Current View"
-permalink: kb/161/Q161123/
+permalink: /kb/161/Q161123/
 ---
 
 ## Q161123: PPT: Sample Code to Determine the Current View

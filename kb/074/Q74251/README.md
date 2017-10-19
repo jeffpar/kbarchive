@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74251: MS-DOS 5.0 and Windows Expand Utilities Not Interchangeable"
-permalink: kb/074/Q74251/
+permalink: /kb/074/Q74251/
 ---
 
 ## Q74251: MS-DOS 5.0 and Windows Expand Utilities Not Interchangeable

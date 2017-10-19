@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142191: PRB: Special Character Causes ODBC Update Syntax Error"
-permalink: kb/142/Q142191/
+permalink: /kb/142/Q142191/
 ---
 
 ## Q142191: PRB: Special Character Causes ODBC Update Syntax Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85091: Missing Drive Letters in File Manager with Syquest Driver"
-permalink: kb/085/Q85091/
+permalink: /kb/085/Q85091/
 ---
 
 ## Q85091: Missing Drive Letters in File Manager with Syquest Driver

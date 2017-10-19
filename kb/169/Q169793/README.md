@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169793: RUI Libraries Don't Return All Negative Responses to RUI App"
-permalink: kb/169/Q169793/
+permalink: /kb/169/Q169793/
 ---
 
 ## Q169793: RUI Libraries Don't Return All Negative Responses to RUI App

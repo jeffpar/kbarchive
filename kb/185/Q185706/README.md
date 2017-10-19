@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185706: FTP-AFTP Gateway Does Not Work with IIS 4.0"
-permalink: kb/185/Q185706/
+permalink: /kb/185/Q185706/
 ---
 
 ## Q185706: FTP-AFTP Gateway Does Not Work with IIS 4.0

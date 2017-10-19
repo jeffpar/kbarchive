@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116395: MS-DOS 6.22 NETWORKS.TXT File"
-permalink: kb/116/Q116395/
+permalink: /kb/116/Q116395/
 ---
 
 ## Q116395: MS-DOS 6.22 NETWORKS.TXT File

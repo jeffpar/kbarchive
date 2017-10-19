@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245273: XWEB: Error Message: There Are No More Endpoints Available..."
-permalink: kb/245/Q245273/
+permalink: /kb/245/Q245273/
 ---
 
 ## Q245273: XWEB: Error Message: There Are No More Endpoints Available...

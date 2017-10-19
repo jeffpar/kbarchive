@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122867: Registry Keys Are Limited to 60 KB Each"
-permalink: kb/122/Q122867/
+permalink: /kb/122/Q122867/
 ---
 
 ## Q122867: Registry Keys Are Limited to 60 KB Each

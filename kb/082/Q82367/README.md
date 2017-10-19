@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82367: Erratic Mouse Behavior on Computers with Phoenix BIOS"
-permalink: kb/082/Q82367/
+permalink: /kb/082/Q82367/
 ---
 
 ## Q82367: Erratic Mouse Behavior on Computers with Phoenix BIOS

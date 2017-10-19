@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217131: XCON: Link Remains Up After Urgent Message Overrides Schedule"
-permalink: kb/217/Q217131/
+permalink: /kb/217/Q217131/
 ---
 
 ## Q217131: XCON: Link Remains Up After Urgent Message Overrides Schedule

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166594: XCON: Messages not Being Delivered Over the First Association"
-permalink: kb/166/Q166594/
+permalink: /kb/166/Q166594/
 ---
 
 ## Q166594: XCON: Messages not Being Delivered Over the First Association

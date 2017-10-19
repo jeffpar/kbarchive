@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169356: XCLN: Exchange Client Roving User Support"
-permalink: kb/169/Q169356/
+permalink: /kb/169/Q169356/
 ---
 
 ## Q169356: XCLN: Exchange Client Roving User Support

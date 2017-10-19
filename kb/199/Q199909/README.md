@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199909: DNS May Not Respond to Queries After Applying SP4"
-permalink: kb/199/Q199909/
+permalink: /kb/199/Q199909/
 ---
 
 ## Q199909: DNS May Not Respond to Queries After Applying SP4

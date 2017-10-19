@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110493: Schubert: README.TXT Content"
-permalink: kb/110/Q110493/
+permalink: /kb/110/Q110493/
 ---
 
 ## Q110493: Schubert: README.TXT Content

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309417: You Can Start Only from 30 to 60 Simultaneous RSH Commands"
-permalink: kb/309/Q309417/
+permalink: /kb/309/Q309417/
 ---
 
 ## Q309417: You Can Start Only from 30 to 60 Simultaneous RSH Commands

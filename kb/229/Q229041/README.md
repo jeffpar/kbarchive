@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229041: Files Are Not Deleted From Recycler Folder"
-permalink: kb/229/Q229041/
+permalink: /kb/229/Q229041/
 ---
 
 ## Q229041: Files Are Not Deleted From Recycler Folder

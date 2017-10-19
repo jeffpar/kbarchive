@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118855: PC DB: How to Reset the MODEM.GLB File"
-permalink: kb/118/Q118855/
+permalink: /kb/118/Q118855/
 ---
 
 ## Q118855: PC DB: How to Reset the MODEM.GLB File

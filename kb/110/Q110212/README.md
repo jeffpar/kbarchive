@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110212: Repair Utility Fails if Computer Name is More Than 8 Characters"
-permalink: kb/110/Q110212/
+permalink: /kb/110/Q110212/
 ---
 
 ## Q110212: Repair Utility Fails if Computer Name is More Than 8 Characters

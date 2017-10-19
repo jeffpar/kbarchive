@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150624: D-Link Network Adapter Driver Support"
-permalink: kb/150/Q150624/
+permalink: /kb/150/Q150624/
 ---
 
 ## Q150624: D-Link Network Adapter Driver Support

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157677: Systems Management Server 1.2 Service Pack 3 Fixlist"
-permalink: kb/157/Q157677/
+permalink: /kb/157/Q157677/
 ---
 
 ## Q157677: Systems Management Server 1.2 Service Pack 3 Fixlist

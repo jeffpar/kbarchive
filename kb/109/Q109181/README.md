@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109181: CD Sampler: Add to Shopping List Displays Colorless Dialog Box"
-permalink: kb/109/Q109181/
+permalink: /kb/109/Q109181/
 ---
 
 ## Q109181: CD Sampler: Add to Shopping List Displays Colorless Dialog Box

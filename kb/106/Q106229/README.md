@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106229: MemMaker .STS Err Msg (Adaptec 1742A SCSI / ASPIEDOS.SYS)"
-permalink: kb/106/Q106229/
+permalink: /kb/106/Q106229/
 ---
 
 ## Q106229: MemMaker .STS Err Msg (Adaptec 1742A SCSI / ASPIEDOS.SYS)

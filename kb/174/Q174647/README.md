@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174647: The Microsoft Network 2.51 Readme.txt File"
-permalink: kb/174/Q174647/
+permalink: /kb/174/Q174647/
 ---
 
 ## Q174647: The Microsoft Network 2.51 Readme.txt File

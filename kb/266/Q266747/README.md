@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266747: PRB: Toolbox or Menu Items Are Missing in the Visual Basic IDE"
-permalink: kb/266/Q266747/
+permalink: /kb/266/Q266747/
 ---
 
 ## Q266747: PRB: Toolbox or Menu Items Are Missing in the Visual Basic IDE

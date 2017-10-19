@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180681: BUG: HRESULT 8000ffff When Creating Instance of COMTI Component"
-permalink: kb/180/Q180681/
+permalink: /kb/180/Q180681/
 ---
 
 ## Q180681: BUG: HRESULT 8000ffff When Creating Instance of COMTI Component

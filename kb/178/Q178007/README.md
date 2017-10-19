@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178007: Encarta 98: Clicking Home Screen Title Does Not Open Feature"
-permalink: kb/178/Q178007/
+permalink: /kb/178/Q178007/
 ---
 
 ## Q178007: Encarta 98: Clicking Home Screen Title Does Not Open Feature

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158827: BUG: PageFrame on Toolbar Causes System Error 11"
-permalink: kb/158/Q158827/
+permalink: /kb/158/Q158827/
 ---
 
 ## Q158827: BUG: PageFrame on Toolbar Causes System Error 11

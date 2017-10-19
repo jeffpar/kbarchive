@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169532: WD97: Paragraph Borders Displayed Erratically with Objects"
-permalink: kb/169/Q169532/
+permalink: /kb/169/Q169532/
 ---
 
 ## Q169532: WD97: Paragraph Borders Displayed Erratically with Objects

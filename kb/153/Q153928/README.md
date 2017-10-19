@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153928: HOWTO: Put a ComboBox into a Toolbar"
-permalink: kb/153/Q153928/
+permalink: /kb/153/Q153928/
 ---
 
 ## Q153928: HOWTO: Put a ComboBox into a Toolbar

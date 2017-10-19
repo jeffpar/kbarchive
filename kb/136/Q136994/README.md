@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136994: PRB: Read-Only Recordset with Microsoft SQL Server"
-permalink: kb/136/Q136994/
+permalink: /kb/136/Q136994/
 ---
 
 ## Q136994: PRB: Read-Only Recordset with Microsoft SQL Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90453: WFWG Err Msg: Not Enough Memory Available for This Task..."
-permalink: kb/090/Q90453/
+permalink: /kb/090/Q90453/
 ---
 
 ## Q90453: WFWG Err Msg: Not Enough Memory Available for This Task...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170877: WD97: Equation Editor Error: Elements That Are Not Available"
-permalink: kb/170/Q170877/
+permalink: /kb/170/Q170877/
 ---
 
 ## Q170877: WD97: Equation Editor Error: Elements That Are Not Available

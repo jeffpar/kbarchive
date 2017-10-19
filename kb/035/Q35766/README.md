@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35766: Supported Values for FORMAT /N and /T Switches"
-permalink: kb/035/Q35766/
+permalink: /kb/035/Q35766/
 ---
 
 ## Q35766: Supported Values for FORMAT /N and /T Switches

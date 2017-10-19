@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304867: Server Configuration Error Appears When Viewing a Web Page"
-permalink: kb/304/Q304867/
+permalink: /kb/304/Q304867/
 ---
 
 ## Q304867: Server Configuration Error Appears When Viewing a Web Page

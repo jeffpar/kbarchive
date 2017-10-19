@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151178: User Restrictions Under File Manager and Print Manager"
-permalink: kb/151/Q151178/
+permalink: /kb/151/Q151178/
 ---
 
 ## Q151178: User Restrictions Under File Manager and Print Manager

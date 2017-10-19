@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136559: BUG: Space is Used Instead of PasswordChar Character"
-permalink: kb/136/Q136559/
+permalink: /kb/136/Q136559/
 ---
 
 ## Q136559: BUG: Space is Used Instead of PasswordChar Character

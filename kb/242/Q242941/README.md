@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242941: Plug and Play Serial Devices Removed During Printer Installation"
-permalink: kb/242/Q242941/
+permalink: /kb/242/Q242941/
 ---
 
 ## Q242941: Plug and Play Serial Devices Removed During Printer Installation

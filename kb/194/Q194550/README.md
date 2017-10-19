@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194550: FIX: Freeing Memory Multiple Times May Cause an Access Violation"
-permalink: kb/194/Q194550/
+permalink: /kb/194/Q194550/
 ---
 
 ## Q194550: FIX: Freeing Memory Multiple Times May Cause an Access Violation

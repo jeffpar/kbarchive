@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95029: CSS Laboratories 386-20 May Require BIOS Upgrade"
-permalink: kb/095/Q95029/
+permalink: /kb/095/Q95029/
 ---
 
 ## Q95029: CSS Laboratories 386-20 May Require BIOS Upgrade

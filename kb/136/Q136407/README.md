@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136407: Accton MPX EN1652 Network Adapter Not Detected"
-permalink: kb/136/Q136407/
+permalink: /kb/136/Q136407/
 ---
 
 ## Q136407: Accton MPX EN1652 Network Adapter Not Detected

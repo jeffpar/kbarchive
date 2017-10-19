@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189126: Microsoft's Policy Regarding Missing or Invalid Passwords"
-permalink: kb/189/Q189126/
+permalink: /kb/189/Q189126/
 ---
 
 ## Q189126: Microsoft's Policy Regarding Missing or Invalid Passwords

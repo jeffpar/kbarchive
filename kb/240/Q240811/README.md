@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240811: VBScript Access Violates When Using Nested VBS Classes in ASP"
-permalink: kb/240/Q240811/
+permalink: /kb/240/Q240811/
 ---
 
 ## Q240811: VBScript Access Violates When Using Nested VBS Classes in ASP

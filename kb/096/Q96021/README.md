@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96021: VidCap: Captures Only Blackness with Video Blaster"
-permalink: kb/096/Q96021/
+permalink: /kb/096/Q96021/
 ---
 
 ## Q96021: VidCap: Captures Only Blackness with Video Blaster

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130339: IBMODISH.COM Causes Windows 95 to Exit at Startup"
-permalink: kb/130/Q130339/
+permalink: /kb/130/Q130339/
 ---
 
 ## Q130339: IBMODISH.COM Causes Windows 95 to Exit at Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131999: PC Adm: Restoring a Deleted Mail Account"
-permalink: kb/131/Q131999/
+permalink: /kb/131/Q131999/
 ---
 
 ## Q131999: PC Adm: Restoring a Deleted Mail Account

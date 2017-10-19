@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162542: New Ping Tool Prevents Hanging Other TCP/IP Stacks"
-permalink: kb/162/Q162542/
+permalink: /kb/162/Q162542/
 ---
 
 ## Q162542: New Ping Tool Prevents Hanging Other TCP/IP Stacks

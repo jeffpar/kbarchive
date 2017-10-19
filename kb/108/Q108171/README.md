@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108171: Restoring Default FoxPro 1.02 Resource File Color Sets"
-permalink: kb/108/Q108171/
+permalink: /kb/108/Q108171/
 ---
 
 ## Q108171: Restoring Default FoxPro 1.02 Resource File Color Sets

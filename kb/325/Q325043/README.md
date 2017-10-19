@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325043: Fighter Ace II: &quot;Fighter Ace 2.5 Is No Longer Available on MSN&quot;"
-permalink: kb/325/Q325043/
+permalink: /kb/325/Q325043/
 ---
 
 ## Q325043: Fighter Ace II: &quot;Fighter Ace 2.5 Is No Longer Available on MSN&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182057: WD97: Merging Documents vs. Comparing Documents"
-permalink: kb/182/Q182057/
+permalink: /kb/182/Q182057/
 ---
 
 ## Q182057: WD97: Merging Documents vs. Comparing Documents

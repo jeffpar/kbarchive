@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74924: A Structure Template Can Be Referenced in a MASM Program"
-permalink: kb/074/Q74924/
+permalink: /kb/074/Q74924/
 ---
 
 ## Q74924: A Structure Template Can Be Referenced in a MASM Program

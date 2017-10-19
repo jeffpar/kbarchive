@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242384: XFOR: DBCS Message From Lotus Notes Is Not Displayed Properly"
-permalink: kb/242/Q242384/
+permalink: /kb/242/Q242384/
 ---
 
 ## Q242384: XFOR: DBCS Message From Lotus Notes Is Not Displayed Properly

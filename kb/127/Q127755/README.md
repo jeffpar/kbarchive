@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127755: Some Composer Titles Do Not Play CD Audio When Minimized"
-permalink: kb/127/Q127755/
+permalink: /kb/127/Q127755/
 ---
 
 ## Q127755: Some Composer Titles Do Not Play CD Audio When Minimized

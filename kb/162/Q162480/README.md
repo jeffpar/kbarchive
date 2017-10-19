@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162480: WD97: How Word Converts Execute-Only Macros"
-permalink: kb/162/Q162480/
+permalink: /kb/162/Q162480/
 ---
 
 ## Q162480: WD97: How Word Converts Execute-Only Macros

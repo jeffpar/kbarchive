@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134470: Setup May Damage FAT on Primary 1 GB Internal SCSI Drive"
-permalink: kb/134/Q134470/
+permalink: /kb/134/Q134470/
 ---
 
 ## Q134470: Setup May Damage FAT on Primary 1 GB Internal SCSI Drive

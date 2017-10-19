@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138028: PPT: Inserted Media Player Object Is Linked, Not Embedded"
-permalink: kb/138/Q138028/
+permalink: /kb/138/Q138028/
 ---
 
 ## Q138028: PPT: Inserted Media Player Object Is Linked, Not Embedded

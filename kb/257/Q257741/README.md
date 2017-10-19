@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257741: FIX: UserControl Validate Event Hangs the VB IDE"
-permalink: kb/257/Q257741/
+permalink: /kb/257/Q257741/
 ---
 
 ## Q257741: FIX: UserControl Validate Event Hangs the VB IDE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189841: XCLN: Corrupt Calendar Causes &quot;Unable to Open This Item&quot; Message"
-permalink: kb/189/Q189841/
+permalink: /kb/189/Q189841/
 ---
 
 ## Q189841: XCLN: Corrupt Calendar Causes &quot;Unable to Open This Item&quot; Message

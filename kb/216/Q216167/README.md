@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216167: How to Increase a Command-Prompt Window Size"
-permalink: kb/216/Q216167/
+permalink: /kb/216/Q216167/
 ---
 
 ## Q216167: How to Increase a Command-Prompt Window Size

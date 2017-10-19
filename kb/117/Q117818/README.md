@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117818: Mac Cinemania 94: Crash When Using PopChar"
-permalink: kb/117/Q117818/
+permalink: /kb/117/Q117818/
 ---
 
 ## Q117818: Mac Cinemania 94: Crash When Using PopChar

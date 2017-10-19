@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156570: XFOR: How to Prevent MSMail from Delivering to SMTP Addresses"
-permalink: kb/156/Q156570/
+permalink: /kb/156/Q156570/
 ---
 
 ## Q156570: XFOR: How to Prevent MSMail from Delivering to SMTP Addresses

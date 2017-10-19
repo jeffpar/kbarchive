@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263365: SMS: Remote Control Not Removed if Terminal Services Is Enabled"
-permalink: kb/263/Q263365/
+permalink: /kb/263/Q263365/
 ---
 
 ## Q263365: SMS: Remote Control Not Removed if Terminal Services Is Enabled

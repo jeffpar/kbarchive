@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119014: PC DirSync: How to Recover from Missing REQTRANS.GLB File"
-permalink: kb/119/Q119014/
+permalink: /kb/119/Q119014/
 ---
 
 ## Q119014: PC DirSync: How to Recover from Missing REQTRANS.GLB File

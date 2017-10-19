@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121142: Files Installed Using Save Loading Time Option"
-permalink: kb/121/Q121142/
+permalink: /kb/121/Q121142/
 ---
 
 ## Q121142: Files Installed Using Save Loading Time Option

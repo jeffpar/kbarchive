@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82310: BizWiz Context-Sensitive Help Doesn't Work with Windows"
-permalink: kb/082/Q82310/
+permalink: /kb/082/Q82310/
 ---
 
 ## Q82310: BizWiz Context-Sensitive Help Doesn't Work with Windows

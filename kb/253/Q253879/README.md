@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253879: BUG: Forms Cannot Find Class Library When Calling .Exe File"
-permalink: kb/253/Q253879/
+permalink: /kb/253/Q253879/
 ---
 
 ## Q253879: BUG: Forms Cannot Find Class Library When Calling .Exe File

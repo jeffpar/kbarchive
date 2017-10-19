@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182508: XADM: How to Delete a User Using a .csv File Import"
-permalink: kb/182/Q182508/
+permalink: /kb/182/Q182508/
 ---
 
 ## Q182508: XADM: How to Delete a User Using a .csv File Import

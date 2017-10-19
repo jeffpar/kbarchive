@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189923: PRB: No Validate Event When Activating CommandButton"
-permalink: kb/189/Q189923/
+permalink: /kb/189/Q189923/
 ---
 
 ## Q189923: PRB: No Validate Event When Activating CommandButton

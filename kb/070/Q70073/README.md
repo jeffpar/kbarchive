@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70073: WinRes.exe Extracts an Icon from a Windows .EXE File"
-permalink: kb/070/Q70073/
+permalink: /kb/070/Q70073/
 ---
 
 ## Q70073: WinRes.exe Extracts an Icon from a Windows .EXE File

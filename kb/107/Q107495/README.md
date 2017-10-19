@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107495: PRB: Phar Lap Error 58 Running Visual C++ on Read-Only Drive"
-permalink: kb/107/Q107495/
+permalink: /kb/107/Q107495/
 ---
 
 ## Q107495: PRB: Phar Lap Error 58 Running Visual C++ on Read-Only Drive

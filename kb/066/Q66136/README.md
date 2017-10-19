@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66136: Emulation Modes for All Okidata Printers"
-permalink: kb/066/Q66136/
+permalink: /kb/066/Q66136/
 ---
 
 ## Q66136: Emulation Modes for All Okidata Printers

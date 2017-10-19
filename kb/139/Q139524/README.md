@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139524: How to Create a Builder to Add Tables to the Data Environment"
-permalink: kb/139/Q139524/
+permalink: /kb/139/Q139524/
 ---
 
 ## Q139524: How to Create a Builder to Add Tables to the Data Environment

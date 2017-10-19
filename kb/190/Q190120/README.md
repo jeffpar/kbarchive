@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190120: XFOR: Unable to Complete Setup of IMC from Disk"
-permalink: kb/190/Q190120/
+permalink: /kb/190/Q190120/
 ---
 
 ## Q190120: XFOR: Unable to Complete Setup of IMC from Disk

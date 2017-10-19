@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115358: X400: TSAP and SSAP Fields Cannot Accept Hex Values V2.1, V3.0"
-permalink: kb/115/Q115358/
+permalink: /kb/115/Q115358/
 ---
 
 ## Q115358: X400: TSAP and SSAP Fields Cannot Accept Hex Values V2.1, V3.0

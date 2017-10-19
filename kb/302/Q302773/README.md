@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302773: HTML Tags Are Visible When Reading E-mail In MSN Explorer"
-permalink: kb/302/Q302773/
+permalink: /kb/302/Q302773/
 ---
 
 ## Q302773: HTML Tags Are Visible When Reading E-mail In MSN Explorer

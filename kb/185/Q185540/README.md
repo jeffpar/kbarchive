@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185540: APPC/5250 Hot Backup Fails If Connection Is Inactive or Pending"
-permalink: kb/185/Q185540/
+permalink: /kb/185/Q185540/
 ---
 
 ## Q185540: APPC/5250 Hot Backup Fails If Connection Is Inactive or Pending

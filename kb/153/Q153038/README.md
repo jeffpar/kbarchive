@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153038: How to Automate Dial-Up Networking Connections"
-permalink: kb/153/Q153038/
+permalink: /kb/153/Q153038/
 ---
 
 ## Q153038: How to Automate Dial-Up Networking Connections

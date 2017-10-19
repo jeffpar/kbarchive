@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161216: SMS: Client Setup Fails to Update Sms.ini on Windows NT System"
-permalink: kb/161/Q161216/
+permalink: /kb/161/Q161216/
 ---
 
 ## Q161216: SMS: Client Setup Fails to Update Sms.ini on Windows NT System

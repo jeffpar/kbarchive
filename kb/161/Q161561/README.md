@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161561: SMS: Upgrade May Fail with SQL Integrated or Mixed Security"
-permalink: kb/161/Q161561/
+permalink: /kb/161/Q161561/
 ---
 
 ## Q161561: SMS: Upgrade May Fail with SQL Integrated or Mixed Security

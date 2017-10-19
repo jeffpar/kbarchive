@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149741: Using Uppercase Letters in Find Tab in Help Does Not Work"
-permalink: kb/149/Q149741/
+permalink: /kb/149/Q149741/
 ---
 
 ## Q149741: Using Uppercase Letters in Find Tab in Help Does Not Work

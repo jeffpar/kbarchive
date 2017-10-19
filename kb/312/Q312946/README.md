@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312946: Using Services for UNIX to Synchronize Passwords with NIS Domain"
-permalink: kb/312/Q312946/
+permalink: /kb/312/Q312946/
 ---
 
 ## Q312946: Using Services for UNIX to Synchronize Passwords with NIS Domain

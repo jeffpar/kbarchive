@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159873: Err Msg: SPOOL32 Caused a Stack Fault in Module SPOOLSS.DLL..."
-permalink: kb/159/Q159873/
+permalink: /kb/159/Q159873/
 ---
 
 ## Q159873: Err Msg: SPOOL32 Caused a Stack Fault in Module SPOOLSS.DLL...

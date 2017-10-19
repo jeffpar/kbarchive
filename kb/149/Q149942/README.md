@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149942: Automating a SLIP Connection with Remote Access Services"
-permalink: kb/149/Q149942/
+permalink: /kb/149/Q149942/
 ---
 
 ## Q149942: Automating a SLIP Connection with Remote Access Services

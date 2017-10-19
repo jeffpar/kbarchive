@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125624: INVDOS Crashes AutoCAD Mouse/Tablet Driver"
-permalink: kb/125/Q125624/
+permalink: /kb/125/Q125624/
 ---
 
 ## Q125624: INVDOS Crashes AutoCAD Mouse/Tablet Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169686: XADM: IMC Shuts Down, Error Connecting to IS"
-permalink: kb/169/Q169686/
+permalink: /kb/169/Q169686/
 ---
 
 ## Q169686: XADM: IMC Shuts Down, Error Connecting to IS

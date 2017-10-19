@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273810: Midtown Madness 2: Players Return to Multiplayer Sessions Screen"
-permalink: kb/273/Q273810/
+permalink: /kb/273/Q273810/
 ---
 
 ## Q273810: Midtown Madness 2: Players Return to Multiplayer Sessions Screen

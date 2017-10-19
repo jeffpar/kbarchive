@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117393: Can't Execute Utilities with POSIX Shell (SH.EXE)"
-permalink: kb/117/Q117393/
+permalink: /kb/117/Q117393/
 ---
 
 ## Q117393: Can't Execute Utilities with POSIX Shell (SH.EXE)

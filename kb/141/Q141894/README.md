@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141894: Cinemania 1996 for the Macintosh System Requirements"
-permalink: kb/141/Q141894/
+permalink: /kb/141/Q141894/
 ---
 
 ## Q141894: Cinemania 1996 for the Macintosh System Requirements

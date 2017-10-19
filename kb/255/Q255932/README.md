@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255932: TAMA: Incomplete Words Appear in the Operator's Log"
-permalink: kb/255/Q255932/
+permalink: /kb/255/Q255932/
 ---
 
 ## Q255932: TAMA: Incomplete Words Appear in the Operator's Log

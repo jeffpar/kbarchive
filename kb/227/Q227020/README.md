@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227020: Software Metering Installation Fails to Complete Installation"
-permalink: kb/227/Q227020/
+permalink: /kb/227/Q227020/
 ---
 
 ## Q227020: Software Metering Installation Fails to Complete Installation

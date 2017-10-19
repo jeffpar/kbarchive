@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104054: PRB: Calling Screen from Another Without Jumping a READ Level"
-permalink: kb/104/Q104054/
+permalink: /kb/104/Q104054/
 ---
 
 ## Q104054: PRB: Calling Screen from Another Without Jumping a READ Level

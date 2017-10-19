@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138499: How to Limit the Number of Characters Typed in a Combo Box"
-permalink: kb/138/Q138499/
+permalink: /kb/138/Q138499/
 ---
 
 ## Q138499: How to Limit the Number of Characters Typed in a Combo Box

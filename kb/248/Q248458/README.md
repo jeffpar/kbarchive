@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248458: PRB: Connecting to MAS 90 ODBC Driver Fails in Visual FoxPro"
-permalink: kb/248/Q248458/
+permalink: /kb/248/Q248458/
 ---
 
 ## Q248458: PRB: Connecting to MAS 90 ODBC Driver Fails in Visual FoxPro

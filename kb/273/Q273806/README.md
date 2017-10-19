@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273806: Midtown Madness 2: Distorted Sound Effects When Playing the Game"
-permalink: kb/273/Q273806/
+permalink: /kb/273/Q273806/
 ---
 
 ## Q273806: Midtown Madness 2: Distorted Sound Effects When Playing the Game

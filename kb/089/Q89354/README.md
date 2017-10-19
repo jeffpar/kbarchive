@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89354: SHIFT Key Must Be Held After Login to Disable Startup Group"
-permalink: kb/089/Q89354/
+permalink: /kb/089/Q89354/
 ---
 
 ## Q89354: SHIFT Key Must Be Held After Login to Disable Startup Group

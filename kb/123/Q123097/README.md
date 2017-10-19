@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123097: Shared Network Printer Driver Is Installed"
-permalink: kb/123/Q123097/
+permalink: /kb/123/Q123097/
 ---
 
 ## Q123097: Shared Network Printer Driver Is Installed

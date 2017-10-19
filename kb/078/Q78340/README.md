@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78340: WD97: Words in Exclude Dictionary Not Flagged as Incorrect"
-permalink: kb/078/Q78340/
+permalink: /kb/078/Q78340/
 ---
 
 ## Q78340: WD97: Words in Exclude Dictionary Not Flagged as Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189208: Microsoft Outlook 98 Step by Step Comments and Corrections"
-permalink: kb/189/Q189208/
+permalink: /kb/189/Q189208/
 ---
 
 ## Q189208: Microsoft Outlook 98 Step by Step Comments and Corrections

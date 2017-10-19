@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76817: Fountain 286 Computer Slows After MS-DOS 5 Upgrade"
-permalink: kb/076/Q76817/
+permalink: /kb/076/Q76817/
 ---
 
 ## Q76817: Fountain 286 Computer Slows After MS-DOS 5 Upgrade

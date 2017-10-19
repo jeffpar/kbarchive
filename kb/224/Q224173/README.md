@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224173: XCON: Cannot Enable Trace Mode for Cirel Winsock X.25 Connection"
-permalink: kb/224/Q224173/
+permalink: /kb/224/Q224173/
 ---
 
 ## Q224173: XCON: Cannot Enable Trace Mode for Cirel Winsock X.25 Connection

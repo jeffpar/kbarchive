@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81707: INFO: WM_CTLCOLOR Processing for Combo Boxes of all Styles"
-permalink: kb/081/Q81707/
+permalink: /kb/081/Q81707/
 ---
 
 ## Q81707: INFO: WM_CTLCOLOR Processing for Combo Boxes of all Styles

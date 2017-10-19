@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157705: XFOR: IMC Can't Handle MIME w/ Content Type of Multipart/Digest"
-permalink: kb/157/Q157705/
+permalink: /kb/157/Q157705/
 ---
 
 ## Q157705: XFOR: IMC Can't Handle MIME w/ Content Type of Multipart/Digest

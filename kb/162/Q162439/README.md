@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162439: WD97: Unable to Get Count of Table Rows or Columns"
-permalink: kb/162/Q162439/
+permalink: /kb/162/Q162439/
 ---
 
 ## Q162439: WD97: Unable to Get Count of Table Rows or Columns

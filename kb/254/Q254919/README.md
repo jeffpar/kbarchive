@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254919: Installing the Windows Desktop Update with Internet Explorer 5.x"
-permalink: kb/254/Q254919/
+permalink: /kb/254/Q254919/
 ---
 
 ## Q254919: Installing the Windows Desktop Update with Internet Explorer 5.x

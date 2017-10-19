@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79857: Communal Data Is Not Included in the LIB Listing"
-permalink: kb/079/Q79857/
+permalink: /kb/079/Q79857/
 ---
 
 ## Q79857: Communal Data Is Not Included in the LIB Listing

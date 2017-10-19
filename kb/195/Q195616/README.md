@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195616: Writer 2: Creative Writer Couldn't Open a Piece of Art Work"
-permalink: kb/195/Q195616/
+permalink: /kb/195/Q195616/
 ---
 
 ## Q195616: Writer 2: Creative Writer Couldn't Open a Piece of Art Work

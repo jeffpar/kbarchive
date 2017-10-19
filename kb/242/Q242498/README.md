@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242498: SMS: Component Status Summarizer Has Performance Problems"
-permalink: kb/242/Q242498/
+permalink: /kb/242/Q242498/
 ---
 
 ## Q242498: SMS: Component Status Summarizer Has Performance Problems

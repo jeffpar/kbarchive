@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303893: MechCommander 2.0: System Requirements"
-permalink: kb/303/Q303893/
+permalink: /kb/303/Q303893/
 ---
 
 ## Q303893: MechCommander 2.0: System Requirements

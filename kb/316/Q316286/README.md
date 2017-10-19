@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316286: APPC Print Jobs Use 6 LPI Even if Session Configured for 8 LPI"
-permalink: kb/316/Q316286/
+permalink: /kb/316/Q316286/
 ---
 
 ## Q316286: APPC Print Jobs Use 6 LPI Even if Session Configured for 8 LPI

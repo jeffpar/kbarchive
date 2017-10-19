@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185257: How to Disable the Delete Confirmation Dialog Box"
-permalink: kb/185/Q185257/
+permalink: /kb/185/Q185257/
 ---
 
 ## Q185257: How to Disable the Delete Confirmation Dialog Box

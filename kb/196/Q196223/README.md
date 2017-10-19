@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196223: SMS: How to Configure SMS Security for Individual User Accounts"
-permalink: kb/196/Q196223/
+permalink: /kb/196/Q196223/
 ---
 
 ## Q196223: SMS: How to Configure SMS Security for Individual User Accounts

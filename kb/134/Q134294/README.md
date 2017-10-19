@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134294: Compression and Decompression of Attached Files in a BBS"
-permalink: kb/134/Q134294/
+permalink: /kb/134/Q134294/
 ---
 
 ## Q134294: Compression and Decompression of Attached Files in a BBS

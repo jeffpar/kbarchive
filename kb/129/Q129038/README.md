@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129038: Summary of Windows NT NTFS and FTDisk Data Recovery"
-permalink: kb/129/Q129038/
+permalink: /kb/129/Q129038/
 ---
 
 ## Q129038: Summary of Windows NT NTFS and FTDisk Data Recovery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148127: DocErr: ConnectTimeout and Default Time-out Are Incorrect"
-permalink: kb/148/Q148127/
+permalink: /kb/148/Q148127/
 ---
 
 ## Q148127: DocErr: ConnectTimeout and Default Time-out Are Incorrect

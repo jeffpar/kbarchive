@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185233: WD97: Error Setting Transparent Color in Header/Footer Picture"
-permalink: kb/185/Q185233/
+permalink: /kb/185/Q185233/
 ---
 
 ## Q185233: WD97: Error Setting Transparent Color in Header/Footer Picture

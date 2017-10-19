@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113588: FIX: Assertion, VIEWSCRL.CPP, Line 455 with SetScaleToFitSize"
-permalink: kb/113/Q113588/
+permalink: /kb/113/Q113588/
 ---
 
 ## Q113588: FIX: Assertion, VIEWSCRL.CPP, Line 455 with SetScaleToFitSize

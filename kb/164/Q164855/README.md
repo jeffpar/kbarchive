@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164855: XCON: Japanese Exchange May Show a Subject Line of ????????"
-permalink: kb/164/Q164855/
+permalink: /kb/164/Q164855/
 ---
 
 ## Q164855: XCON: Japanese Exchange May Show a Subject Line of ????????

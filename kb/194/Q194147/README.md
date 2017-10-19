@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194147: Quick View Icon Disappears from Taskbar While Connected to MSN"
-permalink: kb/194/Q194147/
+permalink: /kb/194/Q194147/
 ---
 
 ## Q194147: Quick View Icon Disappears from Taskbar While Connected to MSN

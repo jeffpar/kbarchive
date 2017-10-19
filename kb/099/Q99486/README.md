@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99486: SYSTEM.INI Setting Needed for MS-DOS Box in Windows"
-permalink: kb/099/Q99486/
+permalink: /kb/099/Q99486/
 ---
 
 ## Q99486: SYSTEM.INI Setting Needed for MS-DOS Box in Windows

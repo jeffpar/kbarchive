@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93790: RipBAR 6.0 Not Compatible with Windows NT 3.5"
-permalink: kb/093/Q93790/
+permalink: /kb/093/Q93790/
 ---
 
 ## Q93790: RipBAR 6.0 Not Compatible with Windows NT 3.5

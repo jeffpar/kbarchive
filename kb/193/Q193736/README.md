@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193736: WD97: HTML Converter Disappears After Installing IE 4.01 on SR2"
-permalink: kb/193/Q193736/
+permalink: /kb/193/Q193736/
 ---
 
 ## Q193736: WD97: HTML Converter Disappears After Installing IE 4.01 on SR2

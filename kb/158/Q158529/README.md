@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158529: XCON: DS_E_Communications_Problem with Link Monitor"
-permalink: kb/158/Q158529/
+permalink: /kb/158/Q158529/
 ---
 
 ## Q158529: XCON: DS_E_Communications_Problem with Link Monitor

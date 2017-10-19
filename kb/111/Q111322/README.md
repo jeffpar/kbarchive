@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111322: INFO: Code Page Information Stored in Byte 29 of Table Header"
-permalink: kb/111/Q111322/
+permalink: /kb/111/Q111322/
 ---
 
 ## Q111322: INFO: Code Page Information Stored in Byte 29 of Table Header

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100305: DOCERR: Incomplete Description of SetErrorMode() Function"
-permalink: kb/100/Q100305/
+permalink: /kb/100/Q100305/
 ---
 
 ## Q100305: DOCERR: Incomplete Description of SetErrorMode() Function

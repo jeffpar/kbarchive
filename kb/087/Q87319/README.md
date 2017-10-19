@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87319: MIDI Mapper Cannot Be Configured for Individual Workstation"
-permalink: kb/087/Q87319/
+permalink: /kb/087/Q87319/
 ---
 
 ## Q87319: MIDI Mapper Cannot Be Configured for Individual Workstation

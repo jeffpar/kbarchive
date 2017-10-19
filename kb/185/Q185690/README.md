@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185690: SNA Server Manager Not Reflecting Correct Status"
-permalink: kb/185/Q185690/
+permalink: /kb/185/Q185690/
 ---
 
 ## Q185690: SNA Server Manager Not Reflecting Correct Status

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135389: FIX: What's New: Bug Fixes Made in Visual C++ Version 2.2"
-permalink: kb/135/Q135389/
+permalink: /kb/135/Q135389/
 ---
 
 ## Q135389: FIX: What's New: Bug Fixes Made in Visual C++ Version 2.2

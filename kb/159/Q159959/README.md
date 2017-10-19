@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159959: Connection Fails Over IPX with Duplicate SPX Connection ID"
-permalink: kb/159/Q159959/
+permalink: /kb/159/Q159959/
 ---
 
 ## Q159959: Connection Fails Over IPX with Duplicate SPX Connection ID

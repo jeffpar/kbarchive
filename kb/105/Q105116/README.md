@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105116: RunWait.exe - DLL Provides Synchronous Spawn Function"
-permalink: kb/105/Q105116/
+permalink: /kb/105/Q105116/
 ---
 
 ## Q105116: RunWait.exe - DLL Provides Synchronous Spawn Function

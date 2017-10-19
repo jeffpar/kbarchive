@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238979: WD97: Two Prompts Inserting AutoText Entry with ASK or FILLIN"
-permalink: kb/238/Q238979/
+permalink: /kb/238/Q238979/
 ---
 
 ## Q238979: WD97: Two Prompts Inserting AutoText Entry with ASK or FILLIN

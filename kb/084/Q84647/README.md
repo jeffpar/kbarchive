@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84647: WD97: &quot;Margins Set Outside Printable Area of Page&quot;"
-permalink: kb/084/Q84647/
+permalink: /kb/084/Q84647/
 ---
 
 ## Q84647: WD97: &quot;Margins Set Outside Printable Area of Page&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274422: MSN Explorer Address Picker puts addresses in the Subject box."
-permalink: kb/274/Q274422/
+permalink: /kb/274/Q274422/
 ---
 
 ## Q274422: MSN Explorer Address Picker puts addresses in the Subject box.

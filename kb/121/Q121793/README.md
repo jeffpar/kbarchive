@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121793: Err Msg: The DOS Sockets TSR is Not Loaded"
-permalink: kb/121/Q121793/
+permalink: /kb/121/Q121793/
 ---
 
 ## Q121793: Err Msg: The DOS Sockets TSR is Not Loaded

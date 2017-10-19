@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165473: WD97: Numbered List Restarts at One After Saving to HTML"
-permalink: kb/165/Q165473/
+permalink: /kb/165/Q165473/
 ---
 
 ## Q165473: WD97: Numbered List Restarts at One After Saving to HTML

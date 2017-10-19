@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99670: BUG: RC /fe Switch Does Not Work"
-permalink: kb/099/Q99670/
+permalink: /kb/099/Q99670/
 ---
 
 ## Q99670: BUG: RC /fe Switch Does Not Work

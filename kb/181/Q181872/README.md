@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181872: HOWTO: Display Ellipses Button for a UserControl Property"
-permalink: kb/181/Q181872/
+permalink: /kb/181/Q181872/
 ---
 
 ## Q181872: HOWTO: Display Ellipses Button for a UserControl Property

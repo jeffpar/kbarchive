@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51259: Mac Wkst: Invisible Files Sent as File Enclosures"
-permalink: kb/051/Q51259/
+permalink: /kb/051/Q51259/
 ---
 
 ## Q51259: Mac Wkst: Invisible Files Sent as File Enclosures

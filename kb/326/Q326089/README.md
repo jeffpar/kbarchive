@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326089: HOW TO: Enable Kerberos on a Non-DC for IIS Web Applications"
-permalink: kb/326/Q326089/
+permalink: /kb/326/Q326089/
 ---
 
 ## Q326089: HOW TO: Enable Kerberos on a Non-DC for IIS Web Applications

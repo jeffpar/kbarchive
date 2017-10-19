@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136539: MSB: Program Runs Slowly on Macintosh (Virtual Memory)"
-permalink: kb/136/Q136539/
+permalink: /kb/136/Q136539/
 ---
 
 ## Q136539: MSB: Program Runs Slowly on Macintosh (Virtual Memory)

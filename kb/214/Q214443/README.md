@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214443: Small Business Server Client Installation Process"
-permalink: kb/214/Q214443/
+permalink: /kb/214/Q214443/
 ---
 
 ## Q214443: Small Business Server Client Installation Process

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233178: Third-Party Monitoring Programs Monitor Applications and Ports"
-permalink: kb/233/Q233178/
+permalink: /kb/233/Q233178/
 ---
 
 ## Q233178: Third-Party Monitoring Programs Monitor Applications and Ports

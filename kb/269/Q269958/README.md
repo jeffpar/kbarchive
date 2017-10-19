@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269958: MSB in Concert: Minimum System Requirements for Macintosh"
-permalink: kb/269/Q269958/
+permalink: /kb/269/Q269958/
 ---
 
 ## Q269958: MSB in Concert: Minimum System Requirements for Macintosh

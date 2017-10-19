@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323206: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP4 HRP"
-permalink: kb/323/Q323206/
+permalink: /kb/323/Q323206/
 ---
 
 ## Q323206: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP4 HRP

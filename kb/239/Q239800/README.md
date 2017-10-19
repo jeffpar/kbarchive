@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239800: Attachmate ISCA Adapter Support"
-permalink: kb/239/Q239800/
+permalink: /kb/239/Q239800/
 ---
 
 ## Q239800: Attachmate ISCA Adapter Support

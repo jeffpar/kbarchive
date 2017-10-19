@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261655: Cannot Make an SSL Connection After Exporting and Importing an S"
-permalink: kb/261/Q261655/
+permalink: /kb/261/Q261655/
 ---
 
 ## Q261655: Cannot Make an SSL Connection After Exporting and Importing an S

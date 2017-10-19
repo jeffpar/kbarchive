@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191876: No Prompt to Disconnect When Using Internet Explorer with MSN"
-permalink: kb/191/Q191876/
+permalink: /kb/191/Q191876/
 ---
 
 ## Q191876: No Prompt to Disconnect When Using Internet Explorer with MSN

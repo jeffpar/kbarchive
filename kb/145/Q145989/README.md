@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145989: Windows 95 CD-ROM Contains Two Setup.exe Files"
-permalink: kb/145/Q145989/
+permalink: /kb/145/Q145989/
 ---
 
 ## Q145989: Windows 95 CD-ROM Contains Two Setup.exe Files

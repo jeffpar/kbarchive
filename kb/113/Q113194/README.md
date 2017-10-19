@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113194: PC Win: Err Msg: An Error...Loading the Spelling Library"
-permalink: kb/113/Q113194/
+permalink: /kb/113/Q113194/
 ---
 
 ## Q113194: PC Win: Err Msg: An Error...Loading the Spelling Library

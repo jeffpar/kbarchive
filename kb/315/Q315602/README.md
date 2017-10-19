@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315602: Flight Simulator 2002: Pan a View May Not Work As Expected"
-permalink: kb/315/Q315602/
+permalink: /kb/315/Q315602/
 ---
 
 ## Q315602: Flight Simulator 2002: Pan a View May Not Work As Expected

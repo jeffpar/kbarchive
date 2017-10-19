@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84309: Summary of WRI Files Included with Windows 3.1 Resource Kit"
-permalink: kb/084/Q84309/
+permalink: /kb/084/Q84309/
 ---
 
 ## Q84309: Summary of WRI Files Included with Windows 3.1 Resource Kit

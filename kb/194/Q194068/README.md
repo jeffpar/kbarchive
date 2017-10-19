@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194068: Err Msg: Your Server Has Unexpectedly Terminated the..."
-permalink: kb/194/Q194068/
+permalink: /kb/194/Q194068/
 ---
 
 ## Q194068: Err Msg: Your Server Has Unexpectedly Terminated the...

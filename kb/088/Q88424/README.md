@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88424: DOS Applications Running in a Window Can't Use a Mouse"
-permalink: kb/088/Q88424/
+permalink: /kb/088/Q88424/
 ---
 
 ## Q88424: DOS Applications Running in a Window Can't Use a Mouse

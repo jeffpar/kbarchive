@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325998: Age of Empires II: Mouse Pointer Not Visible on Game Menu"
-permalink: kb/325/Q325998/
+permalink: /kb/325/Q325998/
 ---
 
 ## Q325998: Age of Empires II: Mouse Pointer Not Visible on Game Menu

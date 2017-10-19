@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126335: Novell WLIBSOCK.DLL Dated 8/30/94 Causes Mailslot Error 10066"
-permalink: kb/126/Q126335/
+permalink: /kb/126/Q126335/
 ---
 
 ## Q126335: Novell WLIBSOCK.DLL Dated 8/30/94 Causes Mailslot Error 10066

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149876: Print Preview Command in WordPad Truncates Words"
-permalink: kb/149/Q149876/
+permalink: /kb/149/Q149876/
 ---
 
 ## Q149876: Print Preview Command in WordPad Truncates Words

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242918: DCOM Heap Memory Leak When Using IDataObject/IAdviseSink"
-permalink: kb/242/Q242918/
+permalink: /kb/242/Q242918/
 ---
 
 ## Q242918: DCOM Heap Memory Leak When Using IDataObject/IAdviseSink

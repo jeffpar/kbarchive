@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155523: Netlogon Stops Reponding or Records Event ID 5703"
-permalink: kb/155/Q155523/
+permalink: /kb/155/Q155523/
 ---
 
 ## Q155523: Netlogon Stops Reponding or Records Event ID 5703

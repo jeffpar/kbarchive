@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69392: Configuring GENIUS Mice for Microsoft Windows 3.0"
-permalink: kb/069/Q69392/
+permalink: /kb/069/Q69392/
 ---
 
 ## Q69392: Configuring GENIUS Mice for Microsoft Windows 3.0

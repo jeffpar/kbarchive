@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257633: Resolution of Unqualified Host Name May Not Succeed"
-permalink: kb/257/Q257633/
+permalink: /kb/257/Q257633/
 ---
 
 ## Q257633: Resolution of Unqualified Host Name May Not Succeed

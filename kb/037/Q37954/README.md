@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37954: Cannot Set Border Color with ANSI.SYS"
-permalink: kb/037/Q37954/
+permalink: /kb/037/Q37954/
 ---
 
 ## Q37954: Cannot Set Border Color with ANSI.SYS

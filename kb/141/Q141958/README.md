@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141958: FIX: _CRTDBG_MAP_ALLOC Environment Var References Incorrect"
-permalink: kb/141/Q141958/
+permalink: /kb/141/Q141958/
 ---
 
 ## Q141958: FIX: _CRTDBG_MAP_ALLOC Environment Var References Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192828: Tutor: Err Msg: Sky's Space Station Voyage Cannot Continue"
-permalink: kb/192/Q192828/
+permalink: /kb/192/Q192828/
 ---
 
 ## Q192828: Tutor: Err Msg: Sky's Space Station Voyage Cannot Continue

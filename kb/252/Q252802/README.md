@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252802: Allegiance: Player Moves Erratically with Quick Bursts of Speed"
-permalink: kb/252/Q252802/
+permalink: /kb/252/Q252802/
 ---
 
 ## Q252802: Allegiance: Player Moves Erratically with Quick Bursts of Speed

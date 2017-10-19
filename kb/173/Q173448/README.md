@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173448: Expedia Streets 98: Testing CD-ROM Drive for File Access"
-permalink: kb/173/Q173448/
+permalink: /kb/173/Q173448/
 ---
 
 ## Q173448: Expedia Streets 98: Testing CD-ROM Drive for File Access

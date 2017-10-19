@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159905: Some Mouse Pointers Disappear After Installing Microsoft Plus!"
-permalink: kb/159/Q159905/
+permalink: /kb/159/Q159905/
 ---
 
 ## Q159905: Some Mouse Pointers Disappear After Installing Microsoft Plus!

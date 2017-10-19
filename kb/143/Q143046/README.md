@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143046: FIX: Error When Closing a Program Through the Control Box"
-permalink: kb/143/Q143046/
+permalink: /kb/143/Q143046/
 ---
 
 ## Q143046: FIX: Error When Closing a Program Through the Control Box

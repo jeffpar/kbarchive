@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150606: Event ID 4024 with Services for the Macintosh"
-permalink: kb/150/Q150606/
+permalink: /kb/150/Q150606/
 ---
 
 ## Q150606: Event ID 4024 with Services for the Macintosh

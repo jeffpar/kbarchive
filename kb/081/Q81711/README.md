@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81711: Windows: IMSI Three-Button Serial Mouse as Mouse Systems"
-permalink: kb/081/Q81711/
+permalink: /kb/081/Q81711/
 ---
 
 ## Q81711: Windows: IMSI Three-Button Serial Mouse as Mouse Systems

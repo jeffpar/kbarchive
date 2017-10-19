@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164697: XCON: EDK Gateway Gets Directory Name Instead of E-mail Address"
-permalink: kb/164/Q164697/
+permalink: /kb/164/Q164697/
 ---
 
 ## Q164697: XCON: EDK Gateway Gets Directory Name Instead of E-mail Address

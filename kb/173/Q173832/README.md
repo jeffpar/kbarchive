@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173832: Microsoft Team Manager 97 Step by Step Comments and Corrections"
-permalink: kb/173/Q173832/
+permalink: /kb/173/Q173832/
 ---
 
 ## Q173832: Microsoft Team Manager 97 Step by Step Comments and Corrections

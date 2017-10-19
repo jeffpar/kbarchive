@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85478: INFO: Error C2593 When Archiving an Enumerated Type"
-permalink: kb/085/Q85478/
+permalink: /kb/085/Q85478/
 ---
 
 ## Q85478: INFO: Error C2593 When Archiving an Enumerated Type

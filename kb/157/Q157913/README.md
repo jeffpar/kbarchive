@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157913: Services Set to Interact With Desktop May Fail to Start"
-permalink: kb/157/Q157913/
+permalink: /kb/157/Q157913/
 ---
 
 ## Q157913: Services Set to Interact With Desktop May Fail to Start

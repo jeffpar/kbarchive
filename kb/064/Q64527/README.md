@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64527: Creating Printer Drivers for Windows 3.0"
-permalink: kb/064/Q64527/
+permalink: /kb/064/Q64527/
 ---
 
 ## Q64527: Creating Printer Drivers for Windows 3.0

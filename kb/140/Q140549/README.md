@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140549: ADT95: List of Redistributable Files for Microsoft ADT 95"
-permalink: kb/140/Q140549/
+permalink: /kb/140/Q140549/
 ---
 
 ## Q140549: ADT95: List of Redistributable Files for Microsoft ADT 95

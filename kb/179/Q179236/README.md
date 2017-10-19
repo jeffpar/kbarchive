@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179236: INFO: Using SQLConfigDatasource with MS Oracle ODBC Driver"
-permalink: kb/179/Q179236/
+permalink: /kb/179/Q179236/
 ---
 
 ## Q179236: INFO: Using SQLConfigDatasource with MS Oracle ODBC Driver

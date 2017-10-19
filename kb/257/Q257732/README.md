@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257732: FIX: GDI Resource Leak When MaskPicture Is Set to an Icon"
-permalink: kb/257/Q257732/
+permalink: /kb/257/Q257732/
 ---
 
 ## Q257732: FIX: GDI Resource Leak When MaskPicture Is Set to an Icon

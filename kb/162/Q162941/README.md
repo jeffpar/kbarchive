@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162941: Flight Simulator 95: Missing Boeing 737-400 Adventure"
-permalink: kb/162/Q162941/
+permalink: /kb/162/Q162941/
 ---
 
 ## Q162941: Flight Simulator 95: Missing Boeing 737-400 Adventure

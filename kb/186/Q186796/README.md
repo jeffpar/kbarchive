@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186796: Troubleshooting &quot;Invalid Password&quot; Error Using SSL Certificates"
-permalink: kb/186/Q186796/
+permalink: /kb/186/Q186796/
 ---
 
 ## Q186796: Troubleshooting &quot;Invalid Password&quot; Error Using SSL Certificates

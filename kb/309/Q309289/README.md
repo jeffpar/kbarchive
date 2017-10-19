@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309289: COMTI Perfmon Counters Not Available When Using Terminal Server"
-permalink: kb/309/Q309289/
+permalink: /kb/309/Q309289/
 ---
 
 ## Q309289: COMTI Perfmon Counters Not Available When Using Terminal Server

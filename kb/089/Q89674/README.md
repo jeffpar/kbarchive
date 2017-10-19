@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89674: Running Multi-user FoxBASE+ Code on a Stand-alone Machine"
-permalink: kb/089/Q89674/
+permalink: /kb/089/Q89674/
 ---
 
 ## Q89674: Running Multi-user FoxBASE+ Code on a Stand-alone Machine

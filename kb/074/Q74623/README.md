@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74623: New DayBook with Run-Time Toolbook 1.5 Upgrade Available"
-permalink: kb/074/Q74623/
+permalink: /kb/074/Q74623/
 ---
 
 ## Q74623: New DayBook with Run-Time Toolbook 1.5 Upgrade Available

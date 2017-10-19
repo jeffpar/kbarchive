@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215442: PRB: InteractiveChange Event of List Box Does Not Execute After"
-permalink: kb/215/Q215442/
+permalink: /kb/215/Q215442/
 ---
 
 ## Q215442: PRB: InteractiveChange Event of List Box Does Not Execute After

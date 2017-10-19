@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139188: FIX: Cannot Click a List Box on a Pageframe by Using the Mouse"
-permalink: kb/139/Q139188/
+permalink: /kb/139/Q139188/
 ---
 
 ## Q139188: FIX: Cannot Click a List Box on a Pageframe by Using the Mouse

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179727: Top Articles for Windows NT 4.0"
-permalink: kb/179/Q179727/
+permalink: /kb/179/Q179727/
 ---
 
 ## Q179727: Top Articles for Windows NT 4.0

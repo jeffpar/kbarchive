@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66845: ASD: Install Error Opening FOREIGN.FS4"
-permalink: kb/066/Q66845/
+permalink: /kb/066/Q66845/
 ---
 
 ## Q66845: ASD: Install Error Opening FOREIGN.FS4

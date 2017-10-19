@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174060: XADM: Storage Limits Cannot be Propagated to Subfolders"
-permalink: kb/174/Q174060/
+permalink: /kb/174/Q174060/
 ---
 
 ## Q174060: XADM: Storage Limits Cannot be Propagated to Subfolders

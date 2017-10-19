@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154859: The Number of Managed NetWare Servers Should Not Exceed 32"
-permalink: kb/154/Q154859/
+permalink: /kb/154/Q154859/
 ---
 
 ## Q154859: The Number of Managed NetWare Servers Should Not Exceed 32

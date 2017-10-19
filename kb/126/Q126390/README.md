@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126390: Macintosh Print to Non-PostScript Printer Has Extraneous Lines"
-permalink: kb/126/Q126390/
+permalink: /kb/126/Q126390/
 ---
 
 ## Q126390: Macintosh Print to Non-PostScript Printer Has Extraneous Lines

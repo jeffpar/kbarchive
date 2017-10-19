@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183403: Expedia Streets 98: Minimum System Requirements"
-permalink: kb/183/Q183403/
+permalink: /kb/183/Q183403/
 ---
 
 ## Q183403: Expedia Streets 98: Minimum System Requirements

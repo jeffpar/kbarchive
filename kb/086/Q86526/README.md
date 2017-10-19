@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86526: GP Fault or System Exits to MS-DOS with HP Scanning Gallery"
-permalink: kb/086/Q86526/
+permalink: /kb/086/Q86526/
 ---
 
 ## Q86526: GP Fault or System Exits to MS-DOS with HP Scanning Gallery

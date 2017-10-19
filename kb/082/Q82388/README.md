@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82388: Mavis Beacon Teaches Typing Under Windows"
-permalink: kb/082/Q82388/
+permalink: /kb/082/Q82388/
 ---
 
 ## Q82388: Mavis Beacon Teaches Typing Under Windows

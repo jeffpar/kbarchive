@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214661: FIX: Daylight Savings Time Bug in C Run-Time Library"
-permalink: kb/214/Q214661/
+permalink: /kb/214/Q214661/
 ---
 
 ## Q214661: FIX: Daylight Savings Time Bug in C Run-Time Library

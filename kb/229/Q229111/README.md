@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229111: Clients with Different Language Version Replace Printer Settings"
-permalink: kb/229/Q229111/
+permalink: /kb/229/Q229111/
 ---
 
 ## Q229111: Clients with Different Language Version Replace Printer Settings

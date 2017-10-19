@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89013: IBM 3363 Optical Disk Drive Not Recognized by Windows"
-permalink: kb/089/Q89013/
+permalink: /kb/089/Q89013/
 ---
 
 ## Q89013: IBM 3363 Optical Disk Drive Not Recognized by Windows

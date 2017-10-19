@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184952: Errors When Installing Lexmark Optra Drivers in Windows NT 4.0"
-permalink: kb/184/Q184952/
+permalink: /kb/184/Q184952/
 ---
 
 ## Q184952: Errors When Installing Lexmark Optra Drivers in Windows NT 4.0

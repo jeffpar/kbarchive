@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184319: FTP Service's DefaultLogonDomain Not Available in MMC"
-permalink: kb/184/Q184319/
+permalink: /kb/184/Q184319/
 ---
 
 ## Q184319: FTP Service's DefaultLogonDomain Not Available in MMC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244736: Asheron's Call: Character Created at a Previous Time Is Missing"
-permalink: kb/244/Q244736/
+permalink: /kb/244/Q244736/
 ---
 
 ## Q244736: Asheron's Call: Character Created at a Previous Time Is Missing

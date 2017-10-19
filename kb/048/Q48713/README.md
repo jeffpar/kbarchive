@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48713: DefBtn.exe Creates Default Border Around a Push Button"
-permalink: kb/048/Q48713/
+permalink: /kb/048/Q48713/
 ---
 
 ## Q48713: DefBtn.exe Creates Default Border Around a Push Button

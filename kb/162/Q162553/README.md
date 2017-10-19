@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162553: FIX: ALEN() Function Causes Illegal Operation in Debug Window"
-permalink: kb/162/Q162553/
+permalink: /kb/162/Q162553/
 ---
 
 ## Q162553: FIX: ALEN() Function Causes Illegal Operation in Debug Window

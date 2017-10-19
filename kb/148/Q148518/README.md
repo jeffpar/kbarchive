@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148518: XCLN: Err Msg: The MS Exchange Server Could Not Be Opened"
-permalink: kb/148/Q148518/
+permalink: /kb/148/Q148518/
 ---
 
 ## Q148518: XCLN: Err Msg: The MS Exchange Server Could Not Be Opened

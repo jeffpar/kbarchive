@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140969: FTP Server Applet: Anonymous FTP Users Not Listed by Password"
-permalink: kb/140/Q140969/
+permalink: /kb/140/Q140969/
 ---
 
 ## Q140969: FTP Server Applet: Anonymous FTP Users Not Listed by Password

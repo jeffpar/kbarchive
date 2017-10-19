@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155366: Error Message Trying to Run OSR2 Compression Agent"
-permalink: kb/155/Q155366/
+permalink: /kb/155/Q155366/
 ---
 
 ## Q155366: Error Message Trying to Run OSR2 Compression Agent

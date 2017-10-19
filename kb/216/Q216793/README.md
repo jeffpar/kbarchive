@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216793: DHCP Server Stops Leasing Addresses if Sharing Violation Occurs"
-permalink: kb/216/Q216793/
+permalink: /kb/216/Q216793/
 ---
 
 ## Q216793: DHCP Server Stops Leasing Addresses if Sharing Violation Occurs

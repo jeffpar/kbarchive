@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210375: SMS: Only a Single Site Code Is Displayed Under Collections"
-permalink: kb/210/Q210375/
+permalink: /kb/210/Q210375/
 ---
 
 ## Q210375: SMS: Only a Single Site Code Is Displayed Under Collections

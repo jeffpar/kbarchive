@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143095: FP: How to Use an HTML Editor Other Than FrontPage Editor"
-permalink: kb/143/Q143095/
+permalink: /kb/143/Q143095/
 ---
 
 ## Q143095: FP: How to Use an HTML Editor Other Than FrontPage Editor

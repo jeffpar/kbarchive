@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171796: FIX: Problems When Running Asynchronous Queries with RDO 2.0"
-permalink: kb/171/Q171796/
+permalink: /kb/171/Q171796/
 ---
 
 ## Q171796: FIX: Problems When Running Asynchronous Queries with RDO 2.0

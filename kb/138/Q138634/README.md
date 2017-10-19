@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138634: Error Message: Modem is Busy or Not Responding"
-permalink: kb/138/Q138634/
+permalink: /kb/138/Q138634/
 ---
 
 ## Q138634: Error Message: Modem is Busy or Not Responding

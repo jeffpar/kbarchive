@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119596: Windows 95 and After Dark 3.0 Issues"
-permalink: kb/119/Q119596/
+permalink: /kb/119/Q119596/
 ---
 
 ## Q119596: Windows 95 and After Dark 3.0 Issues

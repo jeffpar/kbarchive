@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247540: Unable to View Printer Properties from SNA Server Manager"
-permalink: kb/247/Q247540/
+permalink: /kb/247/Q247540/
 ---
 
 ## Q247540: Unable to View Printer Properties from SNA Server Manager

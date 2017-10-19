@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269164: Column Headings Change When You Modify Canned Queries"
-permalink: kb/269/Q269164/
+permalink: /kb/269/Q269164/
 ---
 
 ## Q269164: Column Headings Change When You Modify Canned Queries

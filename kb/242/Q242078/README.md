@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242078: Stop 0xA When SNMP Extensions Enabled with SP4"
-permalink: kb/242/Q242078/
+permalink: /kb/242/Q242078/
 ---
 
 ## Q242078: Stop 0xA When SNMP Extensions Enabled with SP4

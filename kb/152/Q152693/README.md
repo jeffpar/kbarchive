@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152693: BUG: Component Manager Closes Down When Invalid Date Entered"
-permalink: kb/152/Q152693/
+permalink: /kb/152/Q152693/
 ---
 
 ## Q152693: BUG: Component Manager Closes Down When Invalid Date Entered

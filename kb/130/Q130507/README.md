@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130507: HOWTO: Logical Values Must Be Sent to SQL Server as 1 or 0"
-permalink: kb/130/Q130507/
+permalink: /kb/130/Q130507/
 ---
 
 ## Q130507: HOWTO: Logical Values Must Be Sent to SQL Server as 1 or 0

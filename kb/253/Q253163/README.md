@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253163: Games: Screen Turns Black, Program Stops Responding, or Err Msg"
-permalink: kb/253/Q253163/
+permalink: /kb/253/Q253163/
 ---
 
 ## Q253163: Games: Screen Turns Black, Program Stops Responding, or Err Msg

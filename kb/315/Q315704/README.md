@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315704: PDT-Enabled Print Sessions Result in Corrupted or Missing Data"
-permalink: kb/315/Q315704/
+permalink: /kb/315/Q315704/
 ---
 
 ## Q315704: PDT-Enabled Print Sessions Result in Corrupted or Missing Data

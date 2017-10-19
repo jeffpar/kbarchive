@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151727: BUG: Mastering Exchange: Add/Remove Does not Remove all Files"
-permalink: kb/151/Q151727/
+permalink: /kb/151/Q151727/
 ---
 
 ## Q151727: BUG: Mastering Exchange: Add/Remove Does not Remove all Files

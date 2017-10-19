@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38201: PRB: L1102 Error from Corrupted Library, List Filename Error"
-permalink: kb/038/Q38201/
+permalink: /kb/038/Q38201/
 ---
 
 ## Q38201: PRB: L1102 Error from Corrupted Library, List Filename Error

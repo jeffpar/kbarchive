@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318453: PRB: Create a Shared Install Point for MSDN"
-permalink: kb/318/Q318453/
+permalink: /kb/318/Q318453/
 ---
 
 ## Q318453: PRB: Create a Shared Install Point for MSDN

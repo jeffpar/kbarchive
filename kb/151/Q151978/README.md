@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151978: XADM: EcPropSize-MAPI_E_NOT_ENOUGH_MEMORY Reported by ISINTEG"
-permalink: kb/151/Q151978/
+permalink: /kb/151/Q151978/
 ---
 
 ## Q151978: XADM: EcPropSize-MAPI_E_NOT_ENOUGH_MEMORY Reported by ISINTEG

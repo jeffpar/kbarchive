@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193530: Access Violation in WINSCL When Using CR or SDB Parameter"
-permalink: kb/193/Q193530/
+permalink: /kb/193/Q193530/
 ---
 
 ## Q193530: Access Violation in WINSCL When Using CR or SDB Parameter

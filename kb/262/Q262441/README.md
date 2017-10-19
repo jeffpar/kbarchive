@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262441: PRB: Run-Tme Error Message '400' : Form already displayed....&quot;"
-permalink: kb/262/Q262441/
+permalink: /kb/262/Q262441/
 ---
 
 ## Q262441: PRB: Run-Tme Error Message '400' : Form already displayed....&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64686: PRB: Nested Nameless Structs Can Cause C2020 Error in C"
-permalink: kb/064/Q64686/
+permalink: /kb/064/Q64686/
 ---
 
 ## Q64686: PRB: Nested Nameless Structs Can Cause C2020 Error in C

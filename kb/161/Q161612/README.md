@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161612: WD97: Letter Wizard Replaces Merge Field with AutoTextList"
-permalink: kb/161/Q161612/
+permalink: /kb/161/Q161612/
 ---
 
 ## Q161612: WD97: Letter Wizard Replaces Merge Field with AutoTextList

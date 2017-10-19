@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306916: PRB: VBScript &quot;Type Mismatch&quot; Error When Field Type Is adNumeric"
-permalink: kb/306/Q306916/
+permalink: /kb/306/Q306916/
 ---
 
 ## Q306916: PRB: VBScript &quot;Type Mismatch&quot; Error When Field Type Is adNumeric

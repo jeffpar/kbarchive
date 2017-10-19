@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182835: Decimal Type Doesn't Allow Scale for COBOL DISPLAY Types"
-permalink: kb/182/Q182835/
+permalink: /kb/182/Q182835/
 ---
 
 ## Q182835: Decimal Type Doesn't Allow Scale for COBOL DISPLAY Types

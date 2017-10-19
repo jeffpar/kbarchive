@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135617: BUG: Group Header Information Prints Incorrectly"
-permalink: kb/135/Q135617/
+permalink: /kb/135/Q135617/
 ---
 
 ## Q135617: BUG: Group Header Information Prints Incorrectly

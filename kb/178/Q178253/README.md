@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178253: SNA Server Access Violation in function s1pcsgm."
-permalink: kb/178/Q178253/
+permalink: /kb/178/Q178253/
 ---
 
 ## Q178253: SNA Server Access Violation in function s1pcsgm.

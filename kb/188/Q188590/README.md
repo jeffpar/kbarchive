@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188590: XADM: Unable to view Public Folders After Restore"
-permalink: kb/188/Q188590/
+permalink: /kb/188/Q188590/
 ---
 
 ## Q188590: XADM: Unable to view Public Folders After Restore

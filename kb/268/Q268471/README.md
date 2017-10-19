@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268471: AOE II Expansion: Conquerors: Command Line Parameters"
-permalink: kb/268/Q268471/
+permalink: /kb/268/Q268471/
 ---
 
 ## Q268471: AOE II Expansion: Conquerors: Command Line Parameters

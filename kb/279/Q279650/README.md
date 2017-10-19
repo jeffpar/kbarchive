@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279650: Microsoft Casino: Dealer Incorrectly States Two of a Kind"
-permalink: kb/279/Q279650/
+permalink: /kb/279/Q279650/
 ---
 
 ## Q279650: Microsoft Casino: Dealer Incorrectly States Two of a Kind

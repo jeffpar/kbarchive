@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66370: ListHorz/ListHscr EXEs Control Horizontal Scroll Bar List Box"
-permalink: kb/066/Q66370/
+permalink: /kb/066/Q66370/
 ---
 
 ## Q66370: ListHorz/ListHscr EXEs Control Horizontal Scroll Bar List Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230034: WD97: Bullet Replaces Leading Number in Paragraph"
-permalink: kb/230/Q230034/
+permalink: /kb/230/Q230034/
 ---
 
 ## Q230034: WD97: Bullet Replaces Leading Number in Paragraph

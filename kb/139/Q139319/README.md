@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139319: Mac Encarta: Animations Play with Faded or Unusual Colors"
-permalink: kb/139/Q139319/
+permalink: /kb/139/Q139319/
 ---
 
 ## Q139319: Mac Encarta: Animations Play with Faded or Unusual Colors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214969: SMS: Server Component Logging Is Turned Off by Default."
-permalink: kb/214/Q214969/
+permalink: /kb/214/Q214969/
 ---
 
 ## Q214969: SMS: Server Component Logging Is Turned Off by Default.

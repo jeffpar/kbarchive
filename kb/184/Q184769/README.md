@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184769: Outwars: Disconnected from Multiplayer Game if Game Is Minimized"
-permalink: kb/184/Q184769/
+permalink: /kb/184/Q184769/
 ---
 
 ## Q184769: Outwars: Disconnected from Multiplayer Game if Game Is Minimized

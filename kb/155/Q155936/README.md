@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155936: PRB: Closing Table Loses Changes with Table Buffering"
-permalink: kb/155/Q155936/
+permalink: /kb/155/Q155936/
 ---
 
 ## Q155936: PRB: Closing Table Loses Changes with Table Buffering

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159285: XFOR: Japanese Text in NDR from MS-Mail Is Replaced with &quot;?&quot;"
-permalink: kb/159/Q159285/
+permalink: /kb/159/Q159285/
 ---
 
 ## Q159285: XFOR: Japanese Text in NDR from MS-Mail Is Replaced with &quot;?&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302554: General Information About Favorites"
-permalink: kb/302/Q302554/
+permalink: /kb/302/Q302554/
 ---
 
 ## Q302554: General Information About Favorites

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172087: SAMPLE: Agrid.exe Navigates to Non-Visible Grid Cells in Visual"
-permalink: kb/172/Q172087/
+permalink: /kb/172/Q172087/
 ---
 
 ## Q172087: SAMPLE: Agrid.exe Navigates to Non-Visible Grid Cells in Visual

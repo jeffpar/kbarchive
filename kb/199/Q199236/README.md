@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199236: INFO: Extended Hercules Checking and Accelerated Mode"
-permalink: kb/199/Q199236/
+permalink: /kb/199/Q199236/
 ---
 
 ## Q199236: INFO: Extended Hercules Checking and Accelerated Mode

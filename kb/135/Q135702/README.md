@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135702: FIX: File List for Recently Used Projects Lost"
-permalink: kb/135/Q135702/
+permalink: /kb/135/Q135702/
 ---
 
 ## Q135702: FIX: File List for Recently Used Projects Lost

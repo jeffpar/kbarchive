@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105524: MCI: Problems with International Carriers XPC Access to MCI"
-permalink: kb/105/Q105524/
+permalink: /kb/105/Q105524/
 ---
 
 ## Q105524: MCI: Problems with International Carriers XPC Access to MCI

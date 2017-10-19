@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264030: ASP Returns &quot;Include File Not Found&quot; for Included Files on UNC"
-permalink: kb/264/Q264030/
+permalink: /kb/264/Q264030/
 ---
 
 ## Q264030: ASP Returns &quot;Include File Not Found&quot; for Included Files on UNC

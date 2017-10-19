@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142317: HOWTO: How to Create a Minimized/Maximized MDI Child Window"
-permalink: kb/142/Q142317/
+permalink: /kb/142/Q142317/
 ---
 
 ## Q142317: HOWTO: How to Create a Minimized/Maximized MDI Child Window

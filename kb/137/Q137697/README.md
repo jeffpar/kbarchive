@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137697: Backup Problems with Colorado Trakker Drive on ECP or EPP Port"
-permalink: kb/137/Q137697/
+permalink: /kb/137/Q137697/
 ---
 
 ## Q137697: Backup Problems with Colorado Trakker Drive on ECP or EPP Port

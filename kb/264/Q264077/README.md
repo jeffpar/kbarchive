@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264077: MapPoint 2001 Err Msg: This Application Is Unable to Continue..."
-permalink: kb/264/Q264077/
+permalink: /kb/264/Q264077/
 ---
 
 ## Q264077: MapPoint 2001 Err Msg: This Application Is Unable to Continue...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124256: README.DOC for Paris Scenery Add-On"
-permalink: kb/124/Q124256/
+permalink: /kb/124/Q124256/
 ---
 
 ## Q124256: README.DOC for Paris Scenery Add-On

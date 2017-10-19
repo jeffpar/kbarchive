@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136472: NE3200 NIC Driver Can Lose Locally Administered Address"
-permalink: kb/136/Q136472/
+permalink: /kb/136/Q136472/
 ---
 
 ## Q136472: NE3200 NIC Driver Can Lose Locally Administered Address

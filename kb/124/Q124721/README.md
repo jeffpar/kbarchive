@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124721: DOC: HELP Does Not Locate New Supported dBASE Commands"
-permalink: kb/124/Q124721/
+permalink: /kb/124/Q124721/
 ---
 
 ## Q124721: DOC: HELP Does Not Locate New Supported dBASE Commands

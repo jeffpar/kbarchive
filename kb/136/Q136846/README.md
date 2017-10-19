@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136846: Vfp30wiz.exe Updated VFP 3.0 for Windows Wizards"
-permalink: kb/136/Q136846/
+permalink: /kb/136/Q136846/
 ---
 
 ## Q136846: Vfp30wiz.exe Updated VFP 3.0 for Windows Wizards

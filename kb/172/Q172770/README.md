@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172770: Err Msg: Cannot Connect to MAPI Server. Invalid MAPI Server..."
-permalink: kb/172/Q172770/
+permalink: /kb/172/Q172770/
 ---
 
 ## Q172770: Err Msg: Cannot Connect to MAPI Server. Invalid MAPI Server...

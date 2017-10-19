@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278515: How to use the &quot;page options&quot; feature on MSN Companion"
-permalink: kb/278/Q278515/
+permalink: /kb/278/Q278515/
 ---
 
 ## Q278515: How to use the &quot;page options&quot; feature on MSN Companion

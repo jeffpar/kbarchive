@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74815: Screen Display Errors on AT&amp;T 6300"
-permalink: kb/074/Q74815/
+permalink: /kb/074/Q74815/
 ---
 
 ## Q74815: Screen Display Errors on AT&amp;T 6300

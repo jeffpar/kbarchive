@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249898: XADM: MTA Queue Full When Directory Replication Set to Always"
-permalink: kb/249/Q249898/
+permalink: /kb/249/Q249898/
 ---
 
 ## Q249898: XADM: MTA Queue Full When Directory Replication Set to Always

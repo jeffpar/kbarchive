@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166402: XCON: MTA Terminates Unexpectedly With 2110 and 9405 Event IDs"
-permalink: kb/166/Q166402/
+permalink: /kb/166/Q166402/
 ---
 
 ## Q166402: XCON: MTA Terminates Unexpectedly With 2110 and 9405 Event IDs

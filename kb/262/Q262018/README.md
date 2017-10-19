@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262018: SMS: SMS Installer Error Message Using Oracle ODBC Script Items"
-permalink: kb/262/Q262018/
+permalink: /kb/262/Q262018/
 ---
 
 ## Q262018: SMS: SMS Installer Error Message Using Oracle ODBC Script Items

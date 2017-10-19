@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146270: XFOR: Read Receipt to UNIX Client"
-permalink: kb/146/Q146270/
+permalink: /kb/146/Q146270/
 ---
 
 ## Q146270: XFOR: Read Receipt to UNIX Client

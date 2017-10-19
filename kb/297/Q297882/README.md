@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297882: PRB: Behavior of Format Function Changes from VB 5.0 to VB 6.0"
-permalink: kb/297/Q297882/
+permalink: /kb/297/Q297882/
 ---
 
 ## Q297882: PRB: Behavior of Format Function Changes from VB 5.0 to VB 6.0

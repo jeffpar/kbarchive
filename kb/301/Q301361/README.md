@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301361: XGEN: Incorrect Attachment Processing in Exchange Server 5.5 OWA"
-permalink: kb/301/Q301361/
+permalink: /kb/301/Q301361/
 ---
 
 ## Q301361: XGEN: Incorrect Attachment Processing in Exchange Server 5.5 OWA

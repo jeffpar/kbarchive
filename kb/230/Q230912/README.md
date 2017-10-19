@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230912: PRB: Not a Valid Month Error when Inserting to Oracle Date Field"
-permalink: kb/230/Q230912/
+permalink: /kb/230/Q230912/
 ---
 
 ## Q230912: PRB: Not a Valid Month Error when Inserting to Oracle Date Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304068: SMS: The Ndiscldr Tool Cannot Import into Child Sites"
-permalink: kb/304/Q304068/
+permalink: /kb/304/Q304068/
 ---
 
 ## Q304068: SMS: The Ndiscldr Tool Cannot Import into Child Sites

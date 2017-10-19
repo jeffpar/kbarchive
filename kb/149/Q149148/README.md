@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149148: BUG: READ with Backspace Fails in Standard Graphics Programs"
-permalink: kb/149/Q149148/
+permalink: /kb/149/Q149148/
 ---
 
 ## Q149148: BUG: READ with Backspace Fails in Standard Graphics Programs

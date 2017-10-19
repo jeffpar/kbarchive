@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137360: No Scheduled Tasks in System Agent After Running Lfnbk.exe"
-permalink: kb/137/Q137360/
+permalink: /kb/137/Q137360/
 ---
 
 ## Q137360: No Scheduled Tasks in System Agent After Running Lfnbk.exe

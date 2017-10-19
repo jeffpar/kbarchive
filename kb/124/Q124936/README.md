@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124936: Application in VDM May Receive Overrun Error"
-permalink: kb/124/Q124936/
+permalink: /kb/124/Q124936/
 ---
 
 ## Q124936: Application in VDM May Receive Overrun Error

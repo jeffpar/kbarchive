@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141444: DOC: Incorrect Documentation for CToolBar::SetSizes()"
-permalink: kb/141/Q141444/
+permalink: /kb/141/Q141444/
 ---
 
 ## Q141444: DOC: Incorrect Documentation for CToolBar::SetSizes()

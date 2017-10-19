@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259351: Allegiance: How to Map Functions to POV Switch on Your Joystick"
-permalink: kb/259/Q259351/
+permalink: /kb/259/Q259351/
 ---
 
 ## Q259351: Allegiance: How to Map Functions to POV Switch on Your Joystick

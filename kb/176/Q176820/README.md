@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176820: Differences Between 128-bit and 40-bit versions of SP3 &amp; SP4"
-permalink: kb/176/Q176820/
+permalink: /kb/176/Q176820/
 ---
 
 ## Q176820: Differences Between 128-bit and 40-bit versions of SP3 &amp; SP4

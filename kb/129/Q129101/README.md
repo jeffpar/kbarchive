@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129101: 500 Nations: Videos Have Psychedelic Background Pattern"
-permalink: kb/129/Q129101/
+permalink: /kb/129/Q129101/
 ---
 
 ## Q129101: 500 Nations: Videos Have Psychedelic Background Pattern

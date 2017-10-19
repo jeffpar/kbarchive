@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136916: FIX: Saving Report May Not Allow User to Reselect Object"
-permalink: kb/136/Q136916/
+permalink: /kb/136/Q136916/
 ---
 
 ## Q136916: FIX: Saving Report May Not Allow User to Reselect Object

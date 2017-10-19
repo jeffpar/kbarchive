@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100416: PC WFW: Problems with Pre-Extension Meeting Responses"
-permalink: kb/100/Q100416/
+permalink: /kb/100/Q100416/
 ---
 
 ## Q100416: PC WFW: Problems with Pre-Extension Meeting Responses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142577: Reply to All Will Not Include Resources Attendees"
-permalink: kb/142/Q142577/
+permalink: /kb/142/Q142577/
 ---
 
 ## Q142577: Reply to All Will Not Include Resources Attendees

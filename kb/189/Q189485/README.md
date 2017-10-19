@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189485: HOWTO: Debug MFC Module and Thread State Problems"
-permalink: kb/189/Q189485/
+permalink: /kb/189/Q189485/
 ---
 
 ## Q189485: HOWTO: Debug MFC Module and Thread State Problems

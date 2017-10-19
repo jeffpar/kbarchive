@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146989: XCLN: Views: Group By and Sort Have Same Property Values"
-permalink: kb/146/Q146989/
+permalink: /kb/146/Q146989/
 ---
 
 ## Q146989: XCLN: Views: Group By and Sort Have Same Property Values

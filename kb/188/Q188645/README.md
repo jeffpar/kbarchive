@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188645: XADM: Deleted Directory Objects Remain Deleted"
-permalink: kb/188/Q188645/
+permalink: /kb/188/Q188645/
 ---
 
 ## Q188645: XADM: Deleted Directory Objects Remain Deleted

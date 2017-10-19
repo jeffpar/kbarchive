@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126925: PC Win: How to Create a New MMF (Stored Locally)"
-permalink: kb/126/Q126925/
+permalink: /kb/126/Q126925/
 ---
 
 ## Q126925: PC Win: How to Create a New MMF (Stored Locally)

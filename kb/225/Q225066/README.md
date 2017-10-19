@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225066: WD97: Application Error When Document Embedded in Lotus Notes"
-permalink: kb/225/Q225066/
+permalink: /kb/225/Q225066/
 ---
 
 ## Q225066: WD97: Application Error When Document Embedded in Lotus Notes

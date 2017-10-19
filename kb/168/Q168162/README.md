@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168162: FIX: RDO Move 0 Fails to Refresh Record"
-permalink: kb/168/Q168162/
+permalink: /kb/168/Q168162/
 ---
 
 ## Q168162: FIX: RDO Move 0 Fails to Refresh Record

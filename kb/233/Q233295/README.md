@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233295: XADM: Error -1206 Starting Database"
-permalink: kb/233/Q233295/
+permalink: /kb/233/Q233295/
 ---
 
 ## Q233295: XADM: Error -1206 Starting Database

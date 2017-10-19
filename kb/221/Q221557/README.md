@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221557: BUG: TreeView: NodeCheck Event Does Not Occur"
-permalink: kb/221/Q221557/
+permalink: /kb/221/Q221557/
 ---
 
 ## Q221557: BUG: TreeView: NodeCheck Event Does Not Occur

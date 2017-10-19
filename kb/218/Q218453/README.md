@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218453: FIX: Custom Expr. Builder Value Not Accepted in Report Designer"
-permalink: kb/218/Q218453/
+permalink: /kb/218/Q218453/
 ---
 
 ## Q218453: FIX: Custom Expr. Builder Value Not Accepted in Report Designer

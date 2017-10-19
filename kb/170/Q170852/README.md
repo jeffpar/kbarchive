@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170852: Access Denied to Subdirectory w/ Windows NT Challenge/Response"
-permalink: kb/170/Q170852/
+permalink: /kb/170/Q170852/
 ---
 
 ## Q170852: Access Denied to Subdirectory w/ Windows NT Challenge/Response

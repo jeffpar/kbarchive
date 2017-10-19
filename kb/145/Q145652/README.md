@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145652: Windows 95 RPC Ignores Shutdown Packets"
-permalink: kb/145/Q145652/
+permalink: /kb/145/Q145652/
 ---
 
 ## Q145652: Windows 95 RPC Ignores Shutdown Packets

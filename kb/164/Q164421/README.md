@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164421: XCLN: Behavior of Schedule+ 7.0 Synchronize on Exit"
-permalink: kb/164/Q164421/
+permalink: /kb/164/Q164421/
 ---
 
 ## Q164421: XCLN: Behavior of Schedule+ 7.0 Synchronize on Exit

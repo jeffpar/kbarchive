@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78434: Comparison of BUFFERS=, STACKS=, and SMARTDRV.SYS"
-permalink: kb/078/Q78434/
+permalink: /kb/078/Q78434/
 ---
 
 ## Q78434: Comparison of BUFFERS=, STACKS=, and SMARTDRV.SYS

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q83389: Windows 3.1 SYSTEM.INI [NonWindowsApp] Section"
-permalink: kb/083/Q83389/
+title: "Q83389: Windows 3.1 SYSTEM.INI &#91;NonWindowsApp&#93; Section"
+permalink: /kb/083/Q83389/
 ---
 
-## Q83389: Windows 3.1 SYSTEM.INI [NonWindowsApp] Section
+## Q83389: Windows 3.1 SYSTEM.INI &#91;NonWindowsApp&#93; Section
 
 	Article: Q83389
 	Product(s): Microsoft Windows 95.x Retail Product

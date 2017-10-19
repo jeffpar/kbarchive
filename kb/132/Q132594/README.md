@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132594: Signature Font Printed Incorrectly to PostScript Printer"
-permalink: kb/132/Q132594/
+permalink: /kb/132/Q132594/
 ---
 
 ## Q132594: Signature Font Printed Incorrectly to PostScript Printer

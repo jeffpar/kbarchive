@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253938: BUG: Application Error When Accessing Cursors/Tables in Loop"
-permalink: kb/253/Q253938/
+permalink: /kb/253/Q253938/
 ---
 
 ## Q253938: BUG: Application Error When Accessing Cursors/Tables in Loop

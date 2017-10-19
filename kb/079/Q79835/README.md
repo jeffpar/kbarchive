@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79835: FIX: MASM 6.0 May Generate Wrong Listing for CMPXCHG"
-permalink: kb/079/Q79835/
+permalink: /kb/079/Q79835/
 ---
 
 ## Q79835: FIX: MASM 6.0 May Generate Wrong Listing for CMPXCHG

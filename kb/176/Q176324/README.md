@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176324: RAS Service Disabled during H/PC Explorer Connectivity"
-permalink: kb/176/Q176324/
+permalink: /kb/176/Q176324/
 ---
 
 ## Q176324: RAS Service Disabled during H/PC Explorer Connectivity

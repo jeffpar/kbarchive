@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170317: XFOR: IMC Stops Responding When VRFY Is Enabled"
-permalink: kb/170/Q170317/
+permalink: /kb/170/Q170317/
 ---
 
 ## Q170317: XFOR: IMC Stops Responding When VRFY Is Enabled

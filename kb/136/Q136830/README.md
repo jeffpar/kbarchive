@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136830: DriveSpace May Fail to Restart in Mini-Windows Mode"
-permalink: kb/136/Q136830/
+permalink: /kb/136/Q136830/
 ---
 
 ## Q136830: DriveSpace May Fail to Restart in Mini-Windows Mode

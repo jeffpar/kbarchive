@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159909: STOP 0x0000000A May Occur on Multiprocessor Systems"
-permalink: kb/159/Q159909/
+permalink: /kb/159/Q159909/
 ---
 
 ## Q159909: STOP 0x0000000A May Occur on Multiprocessor Systems

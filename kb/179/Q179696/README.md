@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179696: PRB: Focus and Tab Issues with ATL Subclassed Edit Control"
-permalink: kb/179/Q179696/
+permalink: /kb/179/Q179696/
 ---
 
 ## Q179696: PRB: Focus and Tab Issues with ATL Subclassed Edit Control

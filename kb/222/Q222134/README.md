@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222134: XADM: Unable to Establish Proxy Functionality"
-permalink: kb/222/Q222134/
+permalink: /kb/222/Q222134/
 ---
 
 ## Q222134: XADM: Unable to Establish Proxy Functionality

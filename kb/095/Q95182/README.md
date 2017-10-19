@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95182: DXMC0MOD.SYS Err Msg: Invalid Shared RAM Address"
-permalink: kb/095/Q95182/
+permalink: /kb/095/Q95182/
 ---
 
 ## Q95182: DXMC0MOD.SYS Err Msg: Invalid Shared RAM Address

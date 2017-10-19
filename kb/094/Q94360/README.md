@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94360: Sound Recorder Does Not Record in Stereo"
-permalink: kb/094/Q94360/
+permalink: /kb/094/Q94360/
 ---
 
 ## Q94360: Sound Recorder Does Not Record in Stereo

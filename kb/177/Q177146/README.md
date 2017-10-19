@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177146: HOWTO: Read and Change the System Date with API Functions"
-permalink: kb/177/Q177146/
+permalink: /kb/177/Q177146/
 ---
 
 ## Q177146: HOWTO: Read and Change the System Date with API Functions

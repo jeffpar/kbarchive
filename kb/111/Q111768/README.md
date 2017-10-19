@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111768: PRB: Control Bar Not Visible After Calling Create"
-permalink: kb/111/Q111768/
+permalink: /kb/111/Q111768/
 ---
 
 ## Q111768: PRB: Control Bar Not Visible After Calling Create

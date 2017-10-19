@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31986: Maximum Number of Libraries LINK Supports"
-permalink: kb/031/Q31986/
+permalink: /kb/031/Q31986/
 ---
 
 ## Q31986: Maximum Number of Libraries LINK Supports

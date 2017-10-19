@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139531: Multimedia Fonts Not Reinstalled in Maintenance Mode"
-permalink: kb/139/Q139531/
+permalink: /kb/139/Q139531/
 ---
 
 ## Q139531: Multimedia Fonts Not Reinstalled in Maintenance Mode

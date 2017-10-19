@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77365: Considerations for Programming DATA NONE DLLs"
-permalink: kb/077/Q77365/
+permalink: /kb/077/Q77365/
 ---
 
 ## Q77365: Considerations for Programming DATA NONE DLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59975: Mac Hyp: Getting the Status of the Return Receipt Flag"
-permalink: kb/059/Q59975/
+permalink: /kb/059/Q59975/
 ---
 
 ## Q59975: Mac Hyp: Getting the Status of the Return Receipt Flag

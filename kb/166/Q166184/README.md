@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166184: Event ID 3870: Not a Valid Computer Name"
-permalink: kb/166/Q166184/
+permalink: /kb/166/Q166184/
 ---
 
 ## Q166184: Event ID 3870: Not a Valid Computer Name

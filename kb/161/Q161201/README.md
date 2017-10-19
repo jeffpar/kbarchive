@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161201: NTBackup.exe from WinNT 3.51 SP5 Causes Verify Errors"
-permalink: kb/161/Q161201/
+permalink: /kb/161/Q161201/
 ---
 
 ## Q161201: NTBackup.exe from WinNT 3.51 SP5 Causes Verify Errors

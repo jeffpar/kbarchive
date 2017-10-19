@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104374: PROFS: Err: Host Time-Out, Host Access Left in XEDIT on VM/ESA"
-permalink: kb/104/Q104374/
+permalink: /kb/104/Q104374/
 ---
 
 ## Q104374: PROFS: Err: Host Time-Out, Host Access Left in XEDIT on VM/ESA

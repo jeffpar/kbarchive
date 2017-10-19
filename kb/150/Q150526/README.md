@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150526: PGC Allows a User to Log On to a Different Domain"
-permalink: kb/150/Q150526/
+permalink: /kb/150/Q150526/
 ---
 
 ## Q150526: PGC Allows a User to Log On to a Different Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82431: GP Fault in Charisma After Insufficient Memory"
-permalink: kb/082/Q82431/
+permalink: /kb/082/Q82431/
 ---
 
 ## Q82431: GP Fault in Charisma After Insufficient Memory

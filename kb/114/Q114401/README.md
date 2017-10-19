@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114401: FFAPI: First Contact Form for FFAPI Gateway"
-permalink: kb/114/Q114401/
+permalink: /kb/114/Q114401/
 ---
 
 ## Q114401: FFAPI: First Contact Form for FFAPI Gateway

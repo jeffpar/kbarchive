@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142850: Administering IIS over the Internet"
-permalink: kb/142/Q142850/
+permalink: /kb/142/Q142850/
 ---
 
 ## Q142850: Administering IIS over the Internet

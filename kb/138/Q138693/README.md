@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138693: FIX: Error Opening .Bsc File from MRU List"
-permalink: kb/138/Q138693/
+permalink: /kb/138/Q138693/
 ---
 
 ## Q138693: FIX: Error Opening .Bsc File from MRU List

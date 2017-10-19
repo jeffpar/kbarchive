@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196418: XADM: Move Server Pauses if not Enough Space in Application Log"
-permalink: kb/196/Q196418/
+permalink: /kb/196/Q196418/
 ---
 
 ## Q196418: XADM: Move Server Pauses if not Enough Space in Application Log

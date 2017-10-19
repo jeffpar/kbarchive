@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122055: Systems Management Server Tracing and Log Capabilities"
-permalink: kb/122/Q122055/
+permalink: /kb/122/Q122055/
 ---
 
 ## Q122055: Systems Management Server Tracing and Log Capabilities

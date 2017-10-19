@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289110: SMS: SQL Replication of the SMS Database Is Not Supported"
-permalink: kb/289/Q289110/
+permalink: /kb/289/Q289110/
 ---
 
 ## Q289110: SMS: SQL Replication of the SMS Database Is Not Supported

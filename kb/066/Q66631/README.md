@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66631: Adding a Category in QuickHelp"
-permalink: kb/066/Q66631/
+permalink: /kb/066/Q66631/
 ---
 
 ## Q66631: Adding a Category in QuickHelp

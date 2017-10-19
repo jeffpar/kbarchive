@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96778: Verifying Printer Ports on a 3Server"
-permalink: kb/096/Q96778/
+permalink: /kb/096/Q96778/
 ---
 
 ## Q96778: Verifying Printer Ports on a 3Server

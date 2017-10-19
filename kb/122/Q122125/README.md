@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122125: Information: Card Soft PCMCIA Drivers and Definitions"
-permalink: kb/122/Q122125/
+permalink: /kb/122/Q122125/
 ---
 
 ## Q122125: Information: Card Soft PCMCIA Drivers and Definitions

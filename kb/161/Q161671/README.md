@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161671: WD97: &quot;Word Could Not Split...&quot; Attempting to Split Cells"
-permalink: kb/161/Q161671/
+permalink: /kb/161/Q161671/
 ---
 
 ## Q161671: WD97: &quot;Word Could Not Split...&quot; Attempting to Split Cells

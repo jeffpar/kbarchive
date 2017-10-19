@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186529: Local Policy Does Not Permit You to Log On Interactively"
-permalink: kb/186/Q186529/
+permalink: /kb/186/Q186529/
 ---
 
 ## Q186529: Local Policy Does Not Permit You to Log On Interactively

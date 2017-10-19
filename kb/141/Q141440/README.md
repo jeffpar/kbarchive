@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141440: PRB: Paste Link Fails in Microsoft Excel"
-permalink: kb/141/Q141440/
+permalink: /kb/141/Q141440/
 ---
 
 ## Q141440: PRB: Paste Link Fails in Microsoft Excel

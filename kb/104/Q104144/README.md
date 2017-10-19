@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104144: Drive-Mapping Problems When Using Interlnk and Stacker"
-permalink: kb/104/Q104144/
+permalink: /kb/104/Q104144/
 ---
 
 ## Q104144: Drive-Mapping Problems When Using Interlnk and Stacker

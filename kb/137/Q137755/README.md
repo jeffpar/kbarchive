@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137755: No More Than 16 MB of Memory Reported on Some IBM PS/2 Models"
-permalink: kb/137/Q137755/
+permalink: /kb/137/Q137755/
 ---
 
 ## Q137755: No More Than 16 MB of Memory Reported on Some IBM PS/2 Models

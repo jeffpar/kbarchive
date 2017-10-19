@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74163: Hewlett-Packard Type Director Soft Fonts 2.0 and Windows"
-permalink: kb/074/Q74163/
+permalink: /kb/074/Q74163/
 ---
 
 ## Q74163: Hewlett-Packard Type Director Soft Fonts 2.0 and Windows

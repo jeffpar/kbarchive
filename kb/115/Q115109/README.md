@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115109: INFO: @ Cannot Be Used As a Delimiter with the APPEND Command"
-permalink: kb/115/Q115109/
+permalink: /kb/115/Q115109/
 ---
 
 ## Q115109: INFO: @ Cannot Be Used As a Delimiter with the APPEND Command

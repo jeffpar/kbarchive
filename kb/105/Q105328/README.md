@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105328: Cannot Log On to Domain, Lowercase Extended Characters"
-permalink: kb/105/Q105328/
+permalink: /kb/105/Q105328/
 ---
 
 ## Q105328: Cannot Log On to Domain, Lowercase Extended Characters

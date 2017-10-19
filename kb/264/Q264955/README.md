@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264955: XADM: Installing Exchange Administrator Program on Windows 2000"
-permalink: kb/264/Q264955/
+permalink: /kb/264/Q264955/
 ---
 
 ## Q264955: XADM: Installing Exchange Administrator Program on Windows 2000

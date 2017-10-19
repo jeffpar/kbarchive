@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300680: INFO: Loading Multilingual Resource on Windows 2000"
-permalink: kb/300/Q300680/
+permalink: /kb/300/Q300680/
 ---
 
 ## Q300680: INFO: Loading Multilingual Resource on Windows 2000

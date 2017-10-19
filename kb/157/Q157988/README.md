@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157988: FIX: Illegal Operation Caused by Clicking on Blank Index"
-permalink: kb/157/Q157988/
+permalink: /kb/157/Q157988/
 ---
 
 ## Q157988: FIX: Illegal Operation Caused by Clicking on Blank Index

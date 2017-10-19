@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132858: PowerStack with Cirrus Video Adapter Hangs During Startup"
-permalink: kb/132/Q132858/
+permalink: /kb/132/Q132858/
 ---
 
 ## Q132858: PowerStack with Cirrus Video Adapter Hangs During Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125744: Cancel Button Does Not Cancel in Telnet"
-permalink: kb/125/Q125744/
+permalink: /kb/125/Q125744/
 ---
 
 ## Q125744: Cancel Button Does Not Cancel in Telnet

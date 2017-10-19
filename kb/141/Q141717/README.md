@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141717: DAOTable Uses DAO Classes to Create Database Objects"
-permalink: kb/141/Q141717/
+permalink: /kb/141/Q141717/
 ---
 
 ## Q141717: DAOTable Uses DAO Classes to Create Database Objects

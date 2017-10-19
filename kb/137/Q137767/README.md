@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137767: Streets 4.0: Blue Labels Obscured By Coastline"
-permalink: kb/137/Q137767/
+permalink: /kb/137/Q137767/
 ---
 
 ## Q137767: Streets 4.0: Blue Labels Obscured By Coastline

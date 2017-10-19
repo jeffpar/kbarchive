@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241087: SNA Server Stops Responding with Compaq Insight Manager 4.22"
-permalink: kb/241/Q241087/
+permalink: /kb/241/Q241087/
 ---
 
 ## Q241087: SNA Server Stops Responding with Compaq Insight Manager 4.22

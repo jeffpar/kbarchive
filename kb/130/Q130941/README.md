@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130941: How to Change the SQL Login ID for the SMS Database"
-permalink: kb/130/Q130941/
+permalink: /kb/130/Q130941/
 ---
 
 ## Q130941: How to Change the SQL Login ID for the SMS Database

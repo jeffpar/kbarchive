@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152910: XADM: MTA Queue Message Time Stamp Off By One Hour"
-permalink: kb/152/Q152910/
+permalink: /kb/152/Q152910/
 ---
 
 ## Q152910: XADM: MTA Queue Message Time Stamp Off By One Hour

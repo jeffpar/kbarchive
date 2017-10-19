@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175220: XADM: MAPI Calls Fail with MAPI_E_NOT_ENOUGH_MEMORY"
-permalink: kb/175/Q175220/
+permalink: /kb/175/Q175220/
 ---
 
 ## Q175220: XADM: MAPI Calls Fail with MAPI_E_NOT_ENOUGH_MEMORY

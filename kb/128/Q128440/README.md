@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128440: MHS: Long User Names Conflict with -SF Switch"
-permalink: kb/128/Q128440/
+permalink: /kb/128/Q128440/
 ---
 
 ## Q128440: MHS: Long User Names Conflict with -SF Switch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131191: Cannot Run The Microsoft Network from Server"
-permalink: kb/131/Q131191/
+permalink: /kb/131/Q131191/
 ---
 
 ## Q131191: Cannot Run The Microsoft Network from Server

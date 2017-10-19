@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165119: XCON: Site Connector Configuration Basics"
-permalink: kb/165/Q165119/
+permalink: /kb/165/Q165119/
 ---
 
 ## Q165119: XCON: Site Connector Configuration Basics

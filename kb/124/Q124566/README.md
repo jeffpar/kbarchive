@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124566: Recovering from &quot;SYSTEM Hive Corruption&quot; on Dual-Boot Computers"
-permalink: kb/124/Q124566/
+permalink: /kb/124/Q124566/
 ---
 
 ## Q124566: Recovering from &quot;SYSTEM Hive Corruption&quot; on Dual-Boot Computers

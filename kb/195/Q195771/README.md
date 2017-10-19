@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195771: Print Server Uses 100% CPU If No Line Formatting Option Enabled"
-permalink: kb/195/Q195771/
+permalink: /kb/195/Q195771/
 ---
 
 ## Q195771: Print Server Uses 100% CPU If No Line Formatting Option Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146298: XFOR: IMC Flush Mode Holds Messages Without Notice"
-permalink: kb/146/Q146298/
+permalink: /kb/146/Q146298/
 ---
 
 ## Q146298: XFOR: IMC Flush Mode Holds Messages Without Notice

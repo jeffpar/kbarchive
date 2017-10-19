@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149649: Problems Using Epson LQ-570 Printer and Sheet Feeder"
-permalink: kb/149/Q149649/
+permalink: /kb/149/Q149649/
 ---
 
 ## Q149649: Problems Using Epson LQ-570 Printer and Sheet Feeder

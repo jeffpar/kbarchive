@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150856: Microsoft Backup May Not Restore Files or Folders"
-permalink: kb/150/Q150856/
+permalink: /kb/150/Q150856/
 ---
 
 ## Q150856: Microsoft Backup May Not Restore Files or Folders

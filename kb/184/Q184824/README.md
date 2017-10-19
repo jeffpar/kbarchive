@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184824: NTReskit Supp 3: Printmig.exe v1.02 Hangs When Starting Spooler"
-permalink: kb/184/Q184824/
+permalink: /kb/184/Q184824/
 ---
 
 ## Q184824: NTReskit Supp 3: Printmig.exe v1.02 Hangs When Starting Spooler

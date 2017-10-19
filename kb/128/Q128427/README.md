@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128427: QuickPrep Sales Resource for SMS Server 1.0"
-permalink: kb/128/Q128427/
+permalink: /kb/128/Q128427/
 ---
 
 ## Q128427: QuickPrep Sales Resource for SMS Server 1.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94031: Club 486/25 Machine Restarts or Hangs Intermittently"
-permalink: kb/094/Q94031/
+permalink: /kb/094/Q94031/
 ---
 
 ## Q94031: Club 486/25 Machine Restarts or Hangs Intermittently

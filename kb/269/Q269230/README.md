@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269230: WD97: Hard to Control Mouse When You Select Text"
-permalink: kb/269/Q269230/
+permalink: /kb/269/Q269230/
 ---
 
 ## Q269230: WD97: Hard to Control Mouse When You Select Text

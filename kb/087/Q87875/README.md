@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87875: Bookshelf: Word Integration Tools Not Installed"
-permalink: kb/087/Q87875/
+permalink: /kb/087/Q87875/
 ---
 
 ## Q87875: Bookshelf: Word Integration Tools Not Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281335: How to Isolate DLL into a Separate Process Using Component Srvcs"
-permalink: kb/281/Q281335/
+permalink: /kb/281/Q281335/
 ---
 
 ## Q281335: How to Isolate DLL into a Separate Process Using Component Srvcs

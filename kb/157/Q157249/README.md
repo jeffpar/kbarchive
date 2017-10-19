@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157249: Windows 95 Client Computer Cannot See the Print Queue List"
-permalink: kb/157/Q157249/
+permalink: /kb/157/Q157249/
 ---
 
 ## Q157249: Windows 95 Client Computer Cannot See the Print Queue List

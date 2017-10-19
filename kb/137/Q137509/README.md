@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137509: XCLN: Notification Alerts When Exchange Is the Active App"
-permalink: kb/137/Q137509/
+permalink: /kb/137/Q137509/
 ---
 
 ## Q137509: XCLN: Notification Alerts When Exchange Is the Active App

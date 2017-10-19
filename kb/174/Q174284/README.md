@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174284: NET TIME Command May Set Incorrect Time"
-permalink: kb/174/Q174284/
+permalink: /kb/174/Q174284/
 ---
 
 ## Q174284: NET TIME Command May Set Incorrect Time

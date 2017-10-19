@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167594: FP: How to Redirect a Browser from a List Box Choice"
-permalink: kb/167/Q167594/
+permalink: /kb/167/Q167594/
 ---
 
 ## Q167594: FP: How to Redirect a Browser from a List Box Choice

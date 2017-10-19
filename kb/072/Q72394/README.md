@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72394: Mouse Is Not Supported on COM3 or COM4"
-permalink: kb/072/Q72394/
+permalink: /kb/072/Q72394/
 ---
 
 ## Q72394: Mouse Is Not Supported on COM3 or COM4

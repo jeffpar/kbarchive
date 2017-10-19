@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173079: Favorite Places Links Missing After Upgrade to MSN 2.0 or Later"
-permalink: kb/173/Q173079/
+permalink: /kb/173/Q173079/
 ---
 
 ## Q173079: Favorite Places Links Missing After Upgrade to MSN 2.0 or Later

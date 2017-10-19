@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148345: Remote Shutdown Fails When Logon Screensaver Starts"
-permalink: kb/148/Q148345/
+permalink: /kb/148/Q148345/
 ---
 
 ## Q148345: Remote Shutdown Fails When Logon Screensaver Starts

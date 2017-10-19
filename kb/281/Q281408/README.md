@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281408: How to Implement a Single Logon Across Multiple Web Servers"
-permalink: kb/281/Q281408/
+permalink: /kb/281/Q281408/
 ---
 
 ## Q281408: How to Implement a Single Logon Across Multiple Web Servers

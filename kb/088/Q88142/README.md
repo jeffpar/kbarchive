@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88142: Preventing Word Wrap in Microsoft Windows Help Files"
-permalink: kb/088/Q88142/
+permalink: /kb/088/Q88142/
 ---
 
 ## Q88142: Preventing Word Wrap in Microsoft Windows Help Files

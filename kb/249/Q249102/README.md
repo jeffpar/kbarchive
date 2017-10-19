@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249102: XCLN: Connection Errors for Remote Mail Users Working Offline"
-permalink: kb/249/Q249102/
+permalink: /kb/249/Q249102/
 ---
 
 ## Q249102: XCLN: Connection Errors for Remote Mail Users Working Offline

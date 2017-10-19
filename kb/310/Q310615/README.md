@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310615: SMS: Datalodr Cannot Process Inventory from Japanese Windows XP"
-permalink: kb/310/Q310615/
+permalink: /kb/310/Q310615/
 ---
 
 ## Q310615: SMS: Datalodr Cannot Process Inventory from Japanese Windows XP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163710: ResKit Tool Global.exe Returns Incomplete User List"
-permalink: kb/163/Q163710/
+permalink: /kb/163/Q163710/
 ---
 
 ## Q163710: ResKit Tool Global.exe Returns Incomplete User List

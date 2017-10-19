@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129739: How to Determine If VB 4.0 App Was Launched as OLE Server"
-permalink: kb/129/Q129739/
+permalink: /kb/129/Q129739/
 ---
 
 ## Q129739: How to Determine If VB 4.0 App Was Launched as OLE Server

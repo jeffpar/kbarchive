@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258305: Print Server Scalability Limit Due to Synchronization Contention"
-permalink: kb/258/Q258305/
+permalink: /kb/258/Q258305/
 ---
 
 ## Q258305: Print Server Scalability Limit Due to Synchronization Contention

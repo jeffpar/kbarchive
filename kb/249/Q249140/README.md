@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249140: AD Replication Unsuccessful Using Srvmgr in Windows 2000 Domain"
-permalink: kb/249/Q249140/
+permalink: /kb/249/Q249140/
 ---
 
 ## Q249140: AD Replication Unsuccessful Using Srvmgr in Windows 2000 Domain

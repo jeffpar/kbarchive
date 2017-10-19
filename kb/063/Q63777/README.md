@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63777: EDIT.COM Cannot Find QBASIC.EXE"
-permalink: kb/063/Q63777/
+permalink: /kb/063/Q63777/
 ---
 
 ## Q63777: EDIT.COM Cannot Find QBASIC.EXE

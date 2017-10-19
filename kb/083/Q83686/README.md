@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83686: Beethoven Err Msg: This File May Not Play Correctly..."
-permalink: kb/083/Q83686/
+permalink: /kb/083/Q83686/
 ---
 
 ## Q83686: Beethoven Err Msg: This File May Not Play Correctly...

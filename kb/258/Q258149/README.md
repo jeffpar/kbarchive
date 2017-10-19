@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258149: SMS: Verify Hotfix Installation in System Management Server 2.0"
-permalink: kb/258/Q258149/
+permalink: /kb/258/Q258149/
 ---
 
 ## Q258149: SMS: Verify Hotfix Installation in System Management Server 2.0

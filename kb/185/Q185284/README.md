@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185284: FIX: #import Does not Correctly Handle GUID Parameters"
-permalink: kb/185/Q185284/
+permalink: /kb/185/Q185284/
 ---
 
 ## Q185284: FIX: #import Does not Correctly Handle GUID Parameters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192295: IIS Causes Memory Leak When Using Secure Sockets Layer (SSL)"
-permalink: kb/192/Q192295/
+permalink: /kb/192/Q192295/
 ---
 
 ## Q192295: IIS Causes Memory Leak When Using Secure Sockets Layer (SSL)

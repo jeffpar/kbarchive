@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143264: PRB: RDC/ODBC Password Display Inconsistencies"
-permalink: kb/143/Q143264/
+permalink: /kb/143/Q143264/
 ---
 
 ## Q143264: PRB: RDC/ODBC Password Display Inconsistencies

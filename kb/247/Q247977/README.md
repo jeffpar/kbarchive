@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247977: INFO: Updated FOXISAPI Available on the Web"
-permalink: kb/247/Q247977/
+permalink: /kb/247/Q247977/
 ---
 
 ## Q247977: INFO: Updated FOXISAPI Available on the Web

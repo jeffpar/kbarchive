@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69767: Information on MS-DOS FORMAT, UNFORMAT, and MIRROR Utilities"
-permalink: kb/069/Q69767/
+permalink: /kb/069/Q69767/
 ---
 
 ## Q69767: Information on MS-DOS FORMAT, UNFORMAT, and MIRROR Utilities

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123489: Incorrect Keystrokes Reported in Character Map"
-permalink: kb/123/Q123489/
+permalink: /kb/123/Q123489/
 ---
 
 ## Q123489: Incorrect Keystrokes Reported in Character Map

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139145: FIX: Text Shifts to the Left and Down Slightly in a Grid"
-permalink: kb/139/Q139145/
+permalink: /kb/139/Q139145/
 ---
 
 ## Q139145: FIX: Text Shifts to the Left and Down Slightly in a Grid

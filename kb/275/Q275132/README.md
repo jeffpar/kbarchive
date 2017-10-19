@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275132: SMS: Large Hierarchy Causes High Processor Usage on Central Site"
-permalink: kb/275/Q275132/
+permalink: /kb/275/Q275132/
 ---
 
 ## Q275132: SMS: Large Hierarchy Causes High Processor Usage on Central Site

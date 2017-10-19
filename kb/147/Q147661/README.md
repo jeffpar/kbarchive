@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147661: MSMail32 Message With Hyphens Results In Access Violation"
-permalink: kb/147/Q147661/
+permalink: /kb/147/Q147661/
 ---
 
 ## Q147661: MSMail32 Message With Hyphens Results In Access Violation

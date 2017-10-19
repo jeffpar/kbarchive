@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156085: HOWTO: Have a Multiple-Line Caption on a Command Button"
-permalink: kb/156/Q156085/
+permalink: /kb/156/Q156085/
 ---
 
 ## Q156085: HOWTO: Have a Multiple-Line Caption on a Command Button

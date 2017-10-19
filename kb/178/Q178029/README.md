@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178029: WD97: Forcing Word to Save a Document with the .wpd Extension"
-permalink: kb/178/Q178029/
+permalink: /kb/178/Q178029/
 ---
 
 ## Q178029: WD97: Forcing Word to Save a Document with the .wpd Extension

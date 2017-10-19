@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236406: BUG: Accept Socket No Inherit Notification from Listening Socket"
-permalink: kb/236/Q236406/
+permalink: /kb/236/Q236406/
 ---
 
 ## Q236406: BUG: Accept Socket No Inherit Notification from Listening Socket

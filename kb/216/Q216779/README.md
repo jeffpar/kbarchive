@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216779: DHCP Server Service May AV When Adminstrating Locally or Remotel"
-permalink: kb/216/Q216779/
+permalink: /kb/216/Q216779/
 ---
 
 ## Q216779: DHCP Server Service May AV When Adminstrating Locally or Remotel

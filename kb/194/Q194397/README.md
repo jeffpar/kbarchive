@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194397: Err Msg: Application Object Error 'ASP 0197 : 80004005'."
-permalink: kb/194/Q194397/
+permalink: /kb/194/Q194397/
 ---
 
 ## Q194397: Err Msg: Application Object Error 'ASP 0197 : 80004005'.

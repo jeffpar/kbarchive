@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149394: CTRL+BREAK Does Not Work for 16-Bit Applications"
-permalink: kb/149/Q149394/
+permalink: /kb/149/Q149394/
 ---
 
 ## Q149394: CTRL+BREAK Does Not Work for 16-Bit Applications

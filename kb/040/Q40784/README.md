@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40784: CodeView Does Not Work with Grouped Code Segments"
-permalink: kb/040/Q40784/
+permalink: /kb/040/Q40784/
 ---
 
 ## Q40784: CodeView Does Not Work with Grouped Code Segments

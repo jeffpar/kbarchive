@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137825: How to Be Prompted for Optional Parameters for MS-DOS Program"
-permalink: kb/137/Q137825/
+permalink: /kb/137/Q137825/
 ---
 
 ## Q137825: How to Be Prompted for Optional Parameters for MS-DOS Program

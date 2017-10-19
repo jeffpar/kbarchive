@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136154: FIX: Text Box Does Not Respond to DblClick Event"
-permalink: kb/136/Q136154/
+permalink: /kb/136/Q136154/
 ---
 
 ## Q136154: FIX: Text Box Does Not Respond to DblClick Event

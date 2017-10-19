@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85918: TI Travelmate 3000 May Have Distorted Display During Setup"
-permalink: kb/085/Q85918/
+permalink: /kb/085/Q85918/
 ---
 
 ## Q85918: TI Travelmate 3000 May Have Distorted Display During Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147841: Using Microsoft Outlook with MSN Version 2.0"
-permalink: kb/147/Q147841/
+permalink: /kb/147/Q147841/
 ---
 
 ## Q147841: Using Microsoft Outlook with MSN Version 2.0

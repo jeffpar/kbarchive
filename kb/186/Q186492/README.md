@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186492: Preventing Unnecessary Registry Growth in Terminal Server"
-permalink: kb/186/Q186492/
+permalink: /kb/186/Q186492/
 ---
 
 ## Q186492: Preventing Unnecessary Registry Growth in Terminal Server

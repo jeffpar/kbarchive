@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259860: Zone: Single Player Game Window Is Distorted, Black, or Hangs"
-permalink: kb/259/Q259860/
+permalink: /kb/259/Q259860/
 ---
 
 ## Q259860: Zone: Single Player Game Window Is Distorted, Black, or Hangs

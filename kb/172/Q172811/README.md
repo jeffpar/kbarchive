@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172811: Network Printers Always Offline"
-permalink: kb/172/Q172811/
+permalink: /kb/172/Q172811/
 ---
 
 ## Q172811: Network Printers Always Offline

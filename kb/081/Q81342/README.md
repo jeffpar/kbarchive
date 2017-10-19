@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81342: Mac Fax: Creating Fax Gateway Account Cover Pages"
-permalink: kb/081/Q81342/
+permalink: /kb/081/Q81342/
 ---
 
 ## Q81342: Mac Fax: Creating Fax Gateway Account Cover Pages

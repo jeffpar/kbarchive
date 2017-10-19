@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161413: FP97: How to Install the FrontPage Personal Web Server"
-permalink: kb/161/Q161413/
+permalink: /kb/161/Q161413/
 ---
 
 ## Q161413: FP97: How to Install the FrontPage Personal Web Server

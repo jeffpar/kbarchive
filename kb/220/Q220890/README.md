@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220890: XADM: Simple IMAP4 Fails if IMAP4 with SSL Fails"
-permalink: kb/220/Q220890/
+permalink: /kb/220/Q220890/
 ---
 
 ## Q220890: XADM: Simple IMAP4 Fails if IMAP4 with SSL Fails

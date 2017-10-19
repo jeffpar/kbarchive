@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75898: Point and Shoot Menu System 3.0 and Windows"
-permalink: kb/075/Q75898/
+permalink: /kb/075/Q75898/
 ---
 
 ## Q75898: Point and Shoot Menu System 3.0 and Windows

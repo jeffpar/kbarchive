@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85318: Can't Change Paper Orientation with Bitstream FaceLift 2.0"
-permalink: kb/085/Q85318/
+permalink: /kb/085/Q85318/
 ---
 
 ## Q85318: Can't Change Paper Orientation with Bitstream FaceLift 2.0

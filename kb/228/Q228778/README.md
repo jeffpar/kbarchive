@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228778: How to Administer IIS 4.0 on a Different Domain through the MMC"
-permalink: kb/228/Q228778/
+permalink: /kb/228/Q228778/
 ---
 
 ## Q228778: How to Administer IIS 4.0 on a Different Domain through the MMC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182245: WD97: Word Hangs When Creating New Template from Custom Template"
-permalink: kb/182/Q182245/
+permalink: /kb/182/Q182245/
 ---
 
 ## Q182245: WD97: Word Hangs When Creating New Template from Custom Template

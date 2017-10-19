@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169687: XCON: Some Extended Characters Not Correctly Translated"
-permalink: kb/169/Q169687/
+permalink: /kb/169/Q169687/
 ---
 
 ## Q169687: XCON: Some Extended Characters Not Correctly Translated

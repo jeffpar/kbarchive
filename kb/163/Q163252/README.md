@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163252: FIX: Cannot Remove BS_PUSHLIKE in Resource Editor"
-permalink: kb/163/Q163252/
+permalink: /kb/163/Q163252/
 ---
 
 ## Q163252: FIX: Cannot Remove BS_PUSHLIKE in Resource Editor

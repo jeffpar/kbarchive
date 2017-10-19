@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153539: 16-bit PGC: Appstart GPFs When WFW is Low on Environment Space"
-permalink: kb/153/Q153539/
+permalink: /kb/153/Q153539/
 ---
 
 ## Q153539: 16-bit PGC: Appstart GPFs When WFW is Low on Environment Space

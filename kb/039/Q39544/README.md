@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39544: INFO: Limit to the Number of Characters Stored in a List Box"
-permalink: kb/039/Q39544/
+permalink: /kb/039/Q39544/
 ---
 
 ## Q39544: INFO: Limit to the Number of Characters Stored in a List Box

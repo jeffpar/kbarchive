@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82688: DCA WindowLink for Irma and Windows 3.1"
-permalink: kb/082/Q82688/
+permalink: /kb/082/Q82688/
 ---
 
 ## Q82688: DCA WindowLink for Irma and Windows 3.1

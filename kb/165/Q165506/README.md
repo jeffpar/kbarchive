@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165506: Print Job Continuously Restarts Spooling But Never Prints"
-permalink: kb/165/Q165506/
+permalink: /kb/165/Q165506/
 ---
 
 ## Q165506: Print Job Continuously Restarts Spooling But Never Prints

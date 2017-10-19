@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102640: The &quot;Segment Load Failure&quot; Error Message"
-permalink: kb/102/Q102640/
+permalink: /kb/102/Q102640/
 ---
 
 ## Q102640: The &quot;Segment Load Failure&quot; Error Message

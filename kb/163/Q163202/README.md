@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163202: Limit of the Number of Simultaneously Open Root Storage Files"
-permalink: kb/163/Q163202/
+permalink: /kb/163/Q163202/
 ---
 
 ## Q163202: Limit of the Number of Simultaneously Open Root Storage Files

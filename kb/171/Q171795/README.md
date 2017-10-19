@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171795: FIX: RDC Error Calling UpdateRow After Resultset.AddNew"
-permalink: kb/171/Q171795/
+permalink: /kb/171/Q171795/
 ---
 
 ## Q171795: FIX: RDC Error Calling UpdateRow After Resultset.AddNew

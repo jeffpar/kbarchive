@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150811: XADM: Explanation of Exchange PCMTA's /Z Parameter"
-permalink: kb/150/Q150811/
+permalink: /kb/150/Q150811/
 ---
 
 ## Q150811: XADM: Explanation of Exchange PCMTA's /Z Parameter

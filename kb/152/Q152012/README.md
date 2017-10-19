@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152012: TP_IDs and CONV_Ids Cannot Be Shared Across Windows Processes"
-permalink: kb/152/Q152012/
+permalink: /kb/152/Q152012/
 ---
 
 ## Q152012: TP_IDs and CONV_Ids Cannot Be Shared Across Windows Processes

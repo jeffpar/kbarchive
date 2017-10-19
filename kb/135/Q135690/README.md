@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135690: SMS: PDF For Office 4.3 Does Not Support Office 4.3c"
-permalink: kb/135/Q135690/
+permalink: /kb/135/Q135690/
 ---
 
 ## Q135690: SMS: PDF For Office 4.3 Does Not Support Office 4.3c

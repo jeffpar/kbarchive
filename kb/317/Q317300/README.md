@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317300: SMS: &quot;Couldn't Get Defined Architecture&quot; Responses"
-permalink: kb/317/Q317300/
+permalink: /kb/317/Q317300/
 ---
 
 ## Q317300: SMS: &quot;Couldn't Get Defined Architecture&quot; Responses

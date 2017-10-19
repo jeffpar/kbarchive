@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197450: XCLN: Macintosh Outlook Client Version 8.1 New Features"
-permalink: kb/197/Q197450/
+permalink: /kb/197/Q197450/
 ---
 
 ## Q197450: XCLN: Macintosh Outlook Client Version 8.1 New Features

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131093: PRB: SourceSafe 3.1 Cannot Use UNC Names"
-permalink: kb/131/Q131093/
+permalink: /kb/131/Q131093/
 ---
 
 ## Q131093: PRB: SourceSafe 3.1 Cannot Use UNC Names

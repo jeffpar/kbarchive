@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283217: Registry Hive Fragmentation Fix May Cause Excessive SAM Size"
-permalink: kb/283/Q283217/
+permalink: /kb/283/Q283217/
 ---
 
 ## Q283217: Registry Hive Fragmentation Fix May Cause Excessive SAM Size

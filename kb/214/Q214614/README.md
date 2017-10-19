@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214614: APPC Application Works on SNA 2.11, Fails on SNA 4.0"
-permalink: kb/214/Q214614/
+permalink: /kb/214/Q214614/
 ---
 
 ## Q214614: APPC Application Works on SNA 2.11, Fails on SNA 4.0

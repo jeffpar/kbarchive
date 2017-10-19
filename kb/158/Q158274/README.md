@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158274: Automap/Expedia Err Msg: Couldn't Find &lt;Program Name&gt; CD-ROM"
-permalink: kb/158/Q158274/
+permalink: /kb/158/Q158274/
 ---
 
 ## Q158274: Automap/Expedia Err Msg: Couldn't Find &lt;Program Name&gt; CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164740: Start Menu Appears to the Right of the Start Button"
-permalink: kb/164/Q164740/
+permalink: /kb/164/Q164740/
 ---
 
 ## Q164740: Start Menu Appears to the Right of the Start Button

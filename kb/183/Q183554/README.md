@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183554: Incorrect Error Message When Data Source Is Missing"
-permalink: kb/183/Q183554/
+permalink: /kb/183/Q183554/
 ---
 
 ## Q183554: Incorrect Error Message When Data Source Is Missing

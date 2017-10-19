@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129138: XCLN: Making Fields Required and Locked or Hidden"
-permalink: kb/129/Q129138/
+permalink: /kb/129/Q129138/
 ---
 
 ## Q129138: XCLN: Making Fields Required and Locked or Hidden

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109851: Delay When Navigating Menus Using Keyboard"
-permalink: kb/109/Q109851/
+permalink: /kb/109/Q109851/
 ---
 
 ## Q109851: Delay When Navigating Menus Using Keyboard

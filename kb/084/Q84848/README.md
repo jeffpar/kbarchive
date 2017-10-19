@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84848: Typecase's Font Compression Feature May Cause GP Faults"
-permalink: kb/084/Q84848/
+permalink: /kb/084/Q84848/
 ---
 
 ## Q84848: Typecase's Font Compression Feature May Cause GP Faults

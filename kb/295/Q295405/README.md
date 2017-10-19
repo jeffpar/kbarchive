@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295405: HOWTO: Capture TCP and HTTP Data Frames Using Network Monitor"
-permalink: kb/295/Q295405/
+permalink: /kb/295/Q295405/
 ---
 
 ## Q295405: HOWTO: Capture TCP and HTTP Data Frames Using Network Monitor

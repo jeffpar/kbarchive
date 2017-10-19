@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231923: HOWTO: Distribute the Microsoft Data Engine (MSDE) With the PDW"
-permalink: kb/231/Q231923/
+permalink: /kb/231/Q231923/
 ---
 
 ## Q231923: HOWTO: Distribute the Microsoft Data Engine (MSDE) With the PDW

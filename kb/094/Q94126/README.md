@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94126: Using Etherlink II TP Network Card with Synoptics Hubs"
-permalink: kb/094/Q94126/
+permalink: /kb/094/Q94126/
 ---
 
 ## Q94126: Using Etherlink II TP Network Card with Synoptics Hubs

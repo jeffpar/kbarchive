@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165185: XCLN: Address Book Stops with Modeless Address Book Applications"
-permalink: kb/165/Q165185/
+permalink: /kb/165/Q165185/
 ---
 
 ## Q165185: XCLN: Address Book Stops with Modeless Address Book Applications

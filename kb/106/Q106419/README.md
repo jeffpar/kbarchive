@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106419: Removing Non-DOS Partitions with Debug"
-permalink: kb/106/Q106419/
+permalink: /kb/106/Q106419/
 ---
 
 ## Q106419: Removing Non-DOS Partitions with Debug

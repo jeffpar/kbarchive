@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183400: XADM: Specific Events That ISINTEG Attempts to Fix"
-permalink: kb/183/Q183400/
+permalink: /kb/183/Q183400/
 ---
 
 ## Q183400: XADM: Specific Events That ISINTEG Attempts to Fix

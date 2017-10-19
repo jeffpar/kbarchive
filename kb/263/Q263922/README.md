@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263922: Message Sent to a Window Is Not Displayed Properly"
-permalink: kb/263/Q263922/
+permalink: /kb/263/Q263922/
 ---
 
 ## Q263922: Message Sent to a Window Is Not Displayed Properly

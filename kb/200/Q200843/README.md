@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200843: Unable to Install Windows 95/98 Year 2000 Updates"
-permalink: kb/200/Q200843/
+permalink: /kb/200/Q200843/
 ---
 
 ## Q200843: Unable to Install Windows 95/98 Year 2000 Updates

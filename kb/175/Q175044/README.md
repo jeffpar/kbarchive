@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175044: HOWTO: Implement a MessageFilter in VFP Using Active Messaging"
-permalink: kb/175/Q175044/
+permalink: /kb/175/Q175044/
 ---
 
 ## Q175044: HOWTO: Implement a MessageFilter in VFP Using Active Messaging

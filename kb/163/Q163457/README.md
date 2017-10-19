@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163457: WD97: Customized Toolbar Button Reappears After Removing Button"
-permalink: kb/163/Q163457/
+permalink: /kb/163/Q163457/
 ---
 
 ## Q163457: WD97: Customized Toolbar Button Reappears After Removing Button

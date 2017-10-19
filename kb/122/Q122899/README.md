@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122899: No Network Functionality in The Microsoft Hearts Network"
-permalink: kb/122/Q122899/
+permalink: /kb/122/Q122899/
 ---
 
 ## Q122899: No Network Functionality in The Microsoft Hearts Network

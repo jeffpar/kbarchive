@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253000: Last Foreign User Update Time Appears Not to Be Updated"
-permalink: kb/253/Q253000/
+permalink: /kb/253/Q253000/
 ---
 
 ## Q253000: Last Foreign User Update Time Appears Not to Be Updated

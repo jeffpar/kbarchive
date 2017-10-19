@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107830: Description of FOXPRO.INI Settings"
-permalink: kb/107/Q107830/
+permalink: /kb/107/Q107830/
 ---
 
 ## Q107830: Description of FOXPRO.INI Settings

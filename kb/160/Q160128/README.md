@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160128: Close Combat for the Macintosh: Contents of Network Read Me"
-permalink: kb/160/Q160128/
+permalink: /kb/160/Q160128/
 ---
 
 ## Q160128: Close Combat for the Macintosh: Contents of Network Read Me

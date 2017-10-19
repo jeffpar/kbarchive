@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132886: Compaq Screen Does Not Wake Up After EnergyStar Shutdown"
-permalink: kb/132/Q132886/
+permalink: /kb/132/Q132886/
 ---
 
 ## Q132886: Compaq Screen Does Not Wake Up After EnergyStar Shutdown

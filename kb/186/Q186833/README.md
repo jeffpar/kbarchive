@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186833: XADM: Internet Messages with Attachments Have Wrong Extension"
-permalink: kb/186/Q186833/
+permalink: /kb/186/Q186833/
 ---
 
 ## Q186833: XADM: Internet Messages with Attachments Have Wrong Extension

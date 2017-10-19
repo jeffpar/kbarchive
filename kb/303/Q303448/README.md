@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303448: XADM: Exchange Server 5.5 LDAP Service Denial of Service Occurs"
-permalink: kb/303/Q303448/
+permalink: /kb/303/Q303448/
 ---
 
 ## Q303448: XADM: Exchange Server 5.5 LDAP Service Denial of Service Occurs

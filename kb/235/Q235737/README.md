@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235737: SMS: Trusted Domain Accounts Not Listed in Security Wizard"
-permalink: kb/235/Q235737/
+permalink: /kb/235/Q235737/
 ---
 
 ## Q235737: SMS: Trusted Domain Accounts Not Listed in Security Wizard

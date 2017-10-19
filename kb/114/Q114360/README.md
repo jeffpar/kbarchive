@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114360: Modifying Configuration Files When Upgrading from Novell DOS 7"
-permalink: kb/114/Q114360/
+permalink: /kb/114/Q114360/
 ---
 
 ## Q114360: Modifying Configuration Files When Upgrading from Novell DOS 7

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60947: Mac Form: Text Fields Are Resized When Compiling Custom Form"
-permalink: kb/060/Q60947/
+permalink: /kb/060/Q60947/
 ---
 
 ## Q60947: Mac Form: Text Fields Are Resized When Compiling Custom Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199914: XADM:  ESE Will not Retry Operations during ESEUTIL /G"
-permalink: kb/199/Q199914/
+permalink: /kb/199/Q199914/
 ---
 
 ## Q199914: XADM:  ESE Will not Retry Operations during ESEUTIL /G

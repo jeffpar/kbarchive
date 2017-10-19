@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50247: Mac Srv: Sleep Mode on Macintosh Portable Turns Server Off"
-permalink: kb/050/Q50247/
+permalink: /kb/050/Q50247/
 ---
 
 ## Q50247: Mac Srv: Sleep Mode on Macintosh Portable Turns Server Off

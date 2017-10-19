@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137375: Unable to View Windows NT Across Livingston Router"
-permalink: kb/137/Q137375/
+permalink: /kb/137/Q137375/
 ---
 
 ## Q137375: Unable to View Windows NT Across Livingston Router

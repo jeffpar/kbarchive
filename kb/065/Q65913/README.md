@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65913: PRB: PWB Err Msg: Out of Local Memory. Unable to Recover"
-permalink: kb/065/Q65913/
+permalink: /kb/065/Q65913/
 ---
 
 ## Q65913: PRB: PWB Err Msg: Out of Local Memory. Unable to Recover

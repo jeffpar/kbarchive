@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274648: Combat Flight Simulator 2: Aircraft Fly with Landing Gear Down"
-permalink: kb/274/Q274648/
+permalink: /kb/274/Q274648/
 ---
 
 ## Q274648: Combat Flight Simulator 2: Aircraft Fly with Landing Gear Down

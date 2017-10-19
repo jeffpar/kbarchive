@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112098: PC MMTA: Err Msg: 999:55 Drive in Use. Attempting to Use..."
-permalink: kb/112/Q112098/
+permalink: /kb/112/Q112098/
 ---
 
 ## Q112098: PC MMTA: Err Msg: 999:55 Drive in Use. Attempting to Use...

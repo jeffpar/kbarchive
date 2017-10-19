@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188702: Epson Stylus 800 Not Compatible with Epson Stylus COLOR 800"
-permalink: kb/188/Q188702/
+permalink: /kb/188/Q188702/
 ---
 
 ## Q188702: Epson Stylus 800 Not Compatible with Epson Stylus COLOR 800

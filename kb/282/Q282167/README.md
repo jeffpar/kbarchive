@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282167: Microsoft Plus! Game Pack: Minimum Requirements"
-permalink: kb/282/Q282167/
+permalink: /kb/282/Q282167/
 ---
 
 ## Q282167: Microsoft Plus! Game Pack: Minimum Requirements

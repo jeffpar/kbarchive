@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63588: Troubleshooting Unsupported VGA Cards with Windows 3.0"
-permalink: kb/063/Q63588/
+permalink: /kb/063/Q63588/
 ---
 
 ## Q63588: Troubleshooting Unsupported VGA Cards with Windows 3.0

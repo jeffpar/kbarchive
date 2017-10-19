@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146457: XCLN: Shortcut Key Does Not Switch Focus"
-permalink: kb/146/Q146457/
+permalink: /kb/146/Q146457/
 ---
 
 ## Q146457: XCLN: Shortcut Key Does Not Switch Focus

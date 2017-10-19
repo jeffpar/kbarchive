@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115139: Windows NT 3.1 Resource Guide Utilities Files Description"
-permalink: kb/115/Q115139/
+permalink: /kb/115/Q115139/
 ---
 
 ## Q115139: Windows NT 3.1 Resource Guide Utilities Files Description

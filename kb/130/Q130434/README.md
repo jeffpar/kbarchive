@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130434: Incorrect End Date for Recurring Task in To Do List"
-permalink: kb/130/Q130434/
+permalink: /kb/130/Q130434/
 ---
 
 ## Q130434: Incorrect End Date for Recurring Task in To Do List

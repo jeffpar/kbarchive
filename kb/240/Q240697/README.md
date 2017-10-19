@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240697: XCLN: &quot;Outlook Cannot Perform Your Search&quot; Message Using Find"
-permalink: kb/240/Q240697/
+permalink: /kb/240/Q240697/
 ---
 
 ## Q240697: XCLN: &quot;Outlook Cannot Perform Your Search&quot; Message Using Find

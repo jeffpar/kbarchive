@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198622: XCON: Adjustment of MTA Reliable Transfer Service Values"
-permalink: kb/198/Q198622/
+permalink: /kb/198/Q198622/
 ---
 
 ## Q198622: XCON: Adjustment of MTA Reliable Transfer Service Values

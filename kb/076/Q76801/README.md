@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76801: SideKick Versions Earlier than 2.0 Conflict with MS-DOS 5/6"
-permalink: kb/076/Q76801/
+permalink: /kb/076/Q76801/
 ---
 
 ## Q76801: SideKick Versions Earlier than 2.0 Conflict with MS-DOS 5/6

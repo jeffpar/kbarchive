@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80304: &quot;Missing Operating System&quot; and &quot;No ROM BASIC&quot; Error Messages"
-permalink: kb/080/Q80304/
+permalink: /kb/080/Q80304/
 ---
 
 ## Q80304: &quot;Missing Operating System&quot; and &quot;No ROM BASIC&quot; Error Messages

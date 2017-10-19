@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168447: PRB: DAO SetParamValue Limited to 255 Characters"
-permalink: kb/168/Q168447/
+permalink: /kb/168/Q168447/
 ---
 
 ## Q168447: PRB: DAO SetParamValue Limited to 255 Characters

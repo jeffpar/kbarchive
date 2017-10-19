@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129498: Mac Wkst: Summary Window Missing Column Headings"
-permalink: kb/129/Q129498/
+permalink: /kb/129/Q129498/
 ---
 
 ## Q129498: Mac Wkst: Summary Window Missing Column Headings

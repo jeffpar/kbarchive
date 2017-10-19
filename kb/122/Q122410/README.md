@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122410: DOC: pow(0,0) Function Not Documented"
-permalink: kb/122/Q122410/
+permalink: /kb/122/Q122410/
 ---
 
 ## Q122410: DOC: pow(0,0) Function Not Documented

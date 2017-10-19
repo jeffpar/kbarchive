@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96067: Print Shop Deluxe Banners Contain Gaps or Blank Pages"
-permalink: kb/096/Q96067/
+permalink: /kb/096/Q96067/
 ---
 
 ## Q96067: Print Shop Deluxe Banners Contain Gaps or Blank Pages

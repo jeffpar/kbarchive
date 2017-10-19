@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150784: Encarta 96: Contents of the November 1995 Yearbook Update"
-permalink: kb/150/Q150784/
+permalink: /kb/150/Q150784/
 ---
 
 ## Q150784: Encarta 96: Contents of the November 1995 Yearbook Update

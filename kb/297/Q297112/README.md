@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297112: BUG: VB Compiler Pads Embedded Resources with NULLs"
-permalink: kb/297/Q297112/
+permalink: /kb/297/Q297112/
 ---
 
 ## Q297112: BUG: VB Compiler Pads Embedded Resources with NULLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245007: STOP 0xA or 0x1E Error Message on Windows NT-Based Computer"
-permalink: kb/245/Q245007/
+permalink: /kb/245/Q245007/
 ---
 
 ## Q245007: STOP 0xA or 0x1E Error Message on Windows NT-Based Computer

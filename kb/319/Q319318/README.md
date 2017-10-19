@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319318: HOW TO: Change Source Control Providers w/ MSSCCI Providers"
-permalink: kb/319/Q319318/
+permalink: /kb/319/Q319318/
 ---
 
 ## Q319318: HOW TO: Change Source Control Providers w/ MSSCCI Providers

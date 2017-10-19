@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118928: Mac Srv: Mail Server Disk Caching and Optimizing Performance"
-permalink: kb/118/Q118928/
+permalink: /kb/118/Q118928/
 ---
 
 ## Q118928: Mac Srv: Mail Server Disk Caching and Optimizing Performance

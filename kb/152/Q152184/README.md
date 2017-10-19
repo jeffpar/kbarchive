@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152184: Connecting To MSN Questions &amp; Answers"
-permalink: kb/152/Q152184/
+permalink: /kb/152/Q152184/
 ---
 
 ## Q152184: Connecting To MSN Questions &amp; Answers

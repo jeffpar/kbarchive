@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164941: INFO: Command Line Equivalent of &quot;Build Tree&quot; Option"
-permalink: kb/164/Q164941/
+permalink: /kb/164/Q164941/
 ---
 
 ## Q164941: INFO: Command Line Equivalent of &quot;Build Tree&quot; Option

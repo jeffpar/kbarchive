@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133719: PC DirSync: MaxLanMailSize Does Not Apply to Dir-Sync Messages"
-permalink: kb/133/Q133719/
+permalink: /kb/133/Q133719/
 ---
 
 ## Q133719: PC DirSync: MaxLanMailSize Does Not Apply to Dir-Sync Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138446: FIX: Inlined Templated Member Functions Cannot Be Specialized"
-permalink: kb/138/Q138446/
+permalink: /kb/138/Q138446/
 ---
 
 ## Q138446: FIX: Inlined Templated Member Functions Cannot Be Specialized

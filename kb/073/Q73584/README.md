@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73584: Using Multiple Software Disk Caches Can Destroy Data"
-permalink: kb/073/Q73584/
+permalink: /kb/073/Q73584/
 ---
 
 ## Q73584: Using Multiple Software Disk Caches Can Destroy Data

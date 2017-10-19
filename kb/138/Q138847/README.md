@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138847: BUG: C2572 When Define Function Pointer w/ Default Argument"
-permalink: kb/138/Q138847/
+permalink: /kb/138/Q138847/
 ---
 
 ## Q138847: BUG: C2572 When Define Function Pointer w/ Default Argument

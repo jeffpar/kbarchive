@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129081: Setup Does Not Prompt to Create Emergency Startup Disk"
-permalink: kb/129/Q129081/
+permalink: /kb/129/Q129081/
 ---
 
 ## Q129081: Setup Does Not Prompt to Create Emergency Startup Disk

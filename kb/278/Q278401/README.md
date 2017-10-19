@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278401: XCCC: Event 205 Occurs After Security Bulletin Is Installed"
-permalink: kb/278/Q278401/
+permalink: /kb/278/Q278401/
 ---
 
 ## Q278401: XCCC: Event 205 Occurs After Security Bulletin Is Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164833: XADM: EDBUTIL and ISINTEG Fail to Complete on Corrupted Store"
-permalink: kb/164/Q164833/
+permalink: /kb/164/Q164833/
 ---
 
 ## Q164833: XADM: EDBUTIL and ISINTEG Fail to Complete on Corrupted Store

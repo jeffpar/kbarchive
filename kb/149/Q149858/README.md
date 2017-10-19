@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149858: Help Annotation Marks Not Saved On RISC Computers"
-permalink: kb/149/Q149858/
+permalink: /kb/149/Q149858/
 ---
 
 ## Q149858: Help Annotation Marks Not Saved On RISC Computers

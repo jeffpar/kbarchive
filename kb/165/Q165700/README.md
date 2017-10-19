@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165700: SNA 3.0 Win 3.x Client Fails to Initialize Due to Security.dll"
-permalink: kb/165/Q165700/
+permalink: /kb/165/Q165700/
 ---
 
 ## Q165700: SNA 3.0 Win 3.x Client Fails to Initialize Due to Security.dll

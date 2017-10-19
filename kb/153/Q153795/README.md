@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153795: Encarta 97 Encyclopedia: Minimum System Requirements"
-permalink: kb/153/Q153795/
+permalink: /kb/153/Q153795/
 ---
 
 ## Q153795: Encarta 97 Encyclopedia: Minimum System Requirements

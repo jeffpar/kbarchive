@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152428: Initialization Failure in Rasman.dll When Shutting Down"
-permalink: kb/152/Q152428/
+permalink: /kb/152/Q152428/
 ---
 
 ## Q152428: Initialization Failure in Rasman.dll When Shutting Down

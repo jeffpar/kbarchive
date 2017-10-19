@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260348: PRB: Tracking Tab Is Missing with Customer Post Form"
-permalink: kb/260/Q260348/
+permalink: /kb/260/Q260348/
 ---
 
 ## Q260348: PRB: Tracking Tab Is Missing with Customer Post Form

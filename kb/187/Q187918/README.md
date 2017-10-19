@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187918: PRB: SendMessage Fails for Some Messages"
-permalink: kb/187/Q187918/
+permalink: /kb/187/Q187918/
 ---
 
 ## Q187918: PRB: SendMessage Fails for Some Messages

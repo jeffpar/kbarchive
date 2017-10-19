@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184192: How to Change Your Visibility Settings in Friends Online"
-permalink: kb/184/Q184192/
+permalink: /kb/184/Q184192/
 ---
 
 ## Q184192: How to Change Your Visibility Settings in Friends Online

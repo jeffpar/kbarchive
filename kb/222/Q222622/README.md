@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222622: XADM: Handle Not Released After LDAP Bind and Disconnect"
-permalink: kb/222/Q222622/
+permalink: /kb/222/Q222622/
 ---
 
 ## Q222622: XADM: Handle Not Released After LDAP Bind and Disconnect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109698: Spool File Location is Not Configurable"
-permalink: kb/109/Q109698/
+permalink: /kb/109/Q109698/
 ---
 
 ## Q109698: Spool File Location is Not Configurable

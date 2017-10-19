@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260013: XADM: Unable to View Free and Busy Time Across Exchange Sites"
-permalink: kb/260/Q260013/
+permalink: /kb/260/Q260013/
 ---
 
 ## Q260013: XADM: Unable to View Free and Busy Time Across Exchange Sites

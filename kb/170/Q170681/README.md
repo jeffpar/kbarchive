@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170681: XCLN: Deleting Personal Folder Service Causes Loss of Messages"
-permalink: kb/170/Q170681/
+permalink: /kb/170/Q170681/
 ---
 
 ## Q170681: XCLN: Deleting Personal Folder Service Causes Loss of Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311350: HOW TO: Create a Custom Server Type for Use with the IIS Lockdow"
-permalink: kb/311/Q311350/
+permalink: /kb/311/Q311350/
 ---
 
 ## Q311350: HOW TO: Create a Custom Server Type for Use with the IIS Lockdow

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99396: Troubleshooting Tips Updating LM 2.2 for MS-DOS 6.0"
-permalink: kb/099/Q99396/
+permalink: /kb/099/Q99396/
 ---
 
 ## Q99396: Troubleshooting Tips Updating LM 2.2 for MS-DOS 6.0

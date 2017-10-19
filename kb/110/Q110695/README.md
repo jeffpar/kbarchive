@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110695: Err Msg: Setup is Unable to Locate the Hard Drive..."
-permalink: kb/110/Q110695/
+permalink: /kb/110/Q110695/
 ---
 
 ## Q110695: Err Msg: Setup is Unable to Locate the Hard Drive...

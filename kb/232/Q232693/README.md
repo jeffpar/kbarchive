@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232693: XADM: Clients May Hang After You Remove a Public Folder Server"
-permalink: kb/232/Q232693/
+permalink: /kb/232/Q232693/
 ---
 
 ## Q232693: XADM: Clients May Hang After You Remove a Public Folder Server

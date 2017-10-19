@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236304: Microsoft Press E-Books Do Not Install Or Run On WindowsCE Devic"
-permalink: kb/236/Q236304/
+permalink: /kb/236/Q236304/
 ---
 
 ## Q236304: Microsoft Press E-Books Do Not Install Or Run On WindowsCE Devic

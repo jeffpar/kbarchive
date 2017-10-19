@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173546: XADM: Find Recipient Does not Notify Administrator when Complete"
-permalink: kb/173/Q173546/
+permalink: /kb/173/Q173546/
 ---
 
 ## Q173546: XADM: Find Recipient Does not Notify Administrator when Complete

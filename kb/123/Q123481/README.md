@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123481: Limit of Two Concurrent Print Queues from Windows NT to LANMan"
-permalink: kb/123/Q123481/
+permalink: /kb/123/Q123481/
 ---
 
 ## Q123481: Limit of Two Concurrent Print Queues from Windows NT to LANMan

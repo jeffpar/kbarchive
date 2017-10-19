@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77668: PC OS2: Libraries Installed During PM Client Setup"
-permalink: kb/077/Q77668/
+permalink: /kb/077/Q77668/
 ---
 
 ## Q77668: PC OS2: Libraries Installed During PM Client Setup

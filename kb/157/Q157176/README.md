@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157176: XCLN: Using Auto Accept Meeting Requests / Auto Remove"
-permalink: kb/157/Q157176/
+permalink: /kb/157/Q157176/
 ---
 
 ## Q157176: XCLN: Using Auto Accept Meeting Requests / Auto Remove

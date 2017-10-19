@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130518: User-Level Security Prevents Point and Print Functionality"
-permalink: kb/130/Q130518/
+permalink: /kb/130/Q130518/
 ---
 
 ## Q130518: User-Level Security Prevents Point and Print Functionality

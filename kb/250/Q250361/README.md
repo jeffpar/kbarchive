@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250361: XFOR: Blank Outlook Contacts from Migrated cc:Mail DB8 PAB"
-permalink: kb/250/Q250361/
+permalink: /kb/250/Q250361/
 ---
 
 ## Q250361: XFOR: Blank Outlook Contacts from Migrated cc:Mail DB8 PAB

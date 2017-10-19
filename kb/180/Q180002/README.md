@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180002: XADM: Error Message: Hotfix Already Installed"
-permalink: kb/180/Q180002/
+permalink: /kb/180/Q180002/
 ---
 
 ## Q180002: XADM: Error Message: Hotfix Already Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164507: Any User Can Log on to FTP Server with Disabled Anonymous Logon"
-permalink: kb/164/Q164507/
+permalink: /kb/164/Q164507/
 ---
 
 ## Q164507: Any User Can Log on to FTP Server with Disabled Anonymous Logon

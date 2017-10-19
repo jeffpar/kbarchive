@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134963: Quick Viewer Displays Garbled Fonts During Remote Control View"
-permalink: kb/134/Q134963/
+permalink: /kb/134/Q134963/
 ---
 
 ## Q134963: Quick Viewer Displays Garbled Fonts During Remote Control View

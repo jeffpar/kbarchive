@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85199: PC Win: Setup Does Not Add SHARE.EXE to AUTOEXEC.BAT"
-permalink: kb/085/Q85199/
+permalink: /kb/085/Q85199/
 ---
 
 ## Q85199: PC Win: Setup Does Not Add SHARE.EXE to AUTOEXEC.BAT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111041: Games Tested with WSS (Hardware &amp; Software) Version 2.0"
-permalink: kb/111/Q111041/
+permalink: /kb/111/Q111041/
 ---
 
 ## Q111041: Games Tested with WSS (Hardware &amp; Software) Version 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246135: FS2000: Black Screen/Distorted Scenery Using #9 FX Video Adapter"
-permalink: kb/246/Q246135/
+permalink: /kb/246/Q246135/
 ---
 
 ## Q246135: FS2000: Black Screen/Distorted Scenery Using #9 FX Video Adapter

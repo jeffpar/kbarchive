@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195373: BUG: Breakpoint Not Hit in ActiveX DLL on CE Device"
-permalink: kb/195/Q195373/
+permalink: /kb/195/Q195373/
 ---
 
 ## Q195373: BUG: Breakpoint Not Hit in ActiveX DLL on CE Device

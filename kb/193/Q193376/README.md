@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193376: Simulated RTC Presents the Century Byte with 19 Instead of 20"
-permalink: kb/193/Q193376/
+permalink: /kb/193/Q193376/
 ---
 
 ## Q193376: Simulated RTC Presents the Century Byte with 19 Instead of 20

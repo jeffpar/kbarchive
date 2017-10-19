@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193292: BUG: Commandbutton.SetFocus() in Form Init Sets Default = .T."
-permalink: kb/193/Q193292/
+permalink: /kb/193/Q193292/
 ---
 
 ## Q193292: BUG: Commandbutton.SetFocus() in Form Init Sets Default = .T.

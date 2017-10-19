@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129174: 500 Nations: Problems Closing &quot;See Also&quot; Feature"
-permalink: kb/129/Q129174/
+permalink: /kb/129/Q129174/
 ---
 
 ## Q129174: 500 Nations: Problems Closing &quot;See Also&quot; Feature

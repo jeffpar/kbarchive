@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158649: InetServer_Event.log File Not Displayed Properly in Notepad"
-permalink: kb/158/Q158649/
+permalink: /kb/158/Q158649/
 ---
 
 ## Q158649: InetServer_Event.log File Not Displayed Properly in Notepad

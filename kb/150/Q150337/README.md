@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150337: Simultaneous Dr. Watsons Stop Windows NT"
-permalink: kb/150/Q150337/
+permalink: /kb/150/Q150337/
 ---
 
 ## Q150337: Simultaneous Dr. Watsons Stop Windows NT

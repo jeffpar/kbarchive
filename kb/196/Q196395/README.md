@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196395: XADM: DS_E_UNABLE_TO_PROCEED While Opening Admin Program"
-permalink: kb/196/Q196395/
+permalink: /kb/196/Q196395/
 ---
 
 ## Q196395: XADM: DS_E_UNABLE_TO_PROCEED While Opening Admin Program

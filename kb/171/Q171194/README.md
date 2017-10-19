@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171194: Components Added to Network Properties by DUN 1.2 for Windows 95"
-permalink: kb/171/Q171194/
+permalink: /kb/171/Q171194/
 ---
 
 ## Q171194: Components Added to Network Properties by DUN 1.2 for Windows 95

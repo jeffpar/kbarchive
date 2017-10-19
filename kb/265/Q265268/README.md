@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265268: PRB: MSDN Library Unable to Find Migrated Favorites"
-permalink: kb/265/Q265268/
+permalink: /kb/265/Q265268/
 ---
 
 ## Q265268: PRB: MSDN Library Unable to Find Migrated Favorites

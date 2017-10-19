@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137188: Streets 4.0: Copy Area Map to Disk Loses Current Zoom and View"
-permalink: kb/137/Q137188/
+permalink: /kb/137/Q137188/
 ---
 
 ## Q137188: Streets 4.0: Copy Area Map to Disk Loses Current Zoom and View

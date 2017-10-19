@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151375: RAWIZ (Microsoft Remote Automation Diagnostic Wizard)"
-permalink: kb/151/Q151375/
+permalink: /kb/151/Q151375/
 ---
 
 ## Q151375: RAWIZ (Microsoft Remote Automation Diagnostic Wizard)

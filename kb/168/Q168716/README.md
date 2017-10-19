@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168716: XADM: How to Import Manager Data into Exchange"
-permalink: kb/168/Q168716/
+permalink: /kb/168/Q168716/
 ---
 
 ## Q168716: XADM: How to Import Manager Data into Exchange

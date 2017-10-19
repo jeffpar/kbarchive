@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189992: BUG: Line Displays in Title Bar of MDI Child Form"
-permalink: kb/189/Q189992/
+permalink: /kb/189/Q189992/
 ---
 
 ## Q189992: BUG: Line Displays in Title Bar of MDI Child Form

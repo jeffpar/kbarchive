@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95358: Font Pack 2 Incorrectly States WIN.INI Backup Filename"
-permalink: kb/095/Q95358/
+permalink: /kb/095/Q95358/
 ---
 
 ## Q95358: Font Pack 2 Incorrectly States WIN.INI Backup Filename

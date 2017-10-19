@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320450: Rasman.dll Does Not Convert DNS Names to IP Addresses"
-permalink: kb/320/Q320450/
+permalink: /kb/320/Q320450/
 ---
 
 ## Q320450: Rasman.dll Does Not Convert DNS Names to IP Addresses

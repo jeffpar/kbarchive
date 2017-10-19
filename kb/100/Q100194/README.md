@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100194: PRB: Some ATI Video Drivers Hang When Using MSOUTLIN.VBX"
-permalink: kb/100/Q100194/
+permalink: /kb/100/Q100194/
 ---
 
 ## Q100194: PRB: Some ATI Video Drivers Hang When Using MSOUTLIN.VBX

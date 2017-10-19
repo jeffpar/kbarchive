@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88434: INFO: Casting Difference Between C and C++ May Cause C2105"
-permalink: kb/088/Q88434/
+permalink: /kb/088/Q88434/
 ---
 
 ## Q88434: INFO: Casting Difference Between C and C++ May Cause C2105

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58333: Windows 3.0 WIN.INI [extensions] Section"
-permalink: kb/058/Q58333/
+title: "Q58333: Windows 3.0 WIN.INI &#91;extensions&#93; Section"
+permalink: /kb/058/Q58333/
 ---
 
-## Q58333: Windows 3.0 WIN.INI [extensions] Section
+## Q58333: Windows 3.0 WIN.INI &#91;extensions&#93; Section
 
 	Article: Q58333
 	Product(s): Microsoft Windows 95.x Retail Product

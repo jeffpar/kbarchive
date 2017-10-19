@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155035: STOP 0x00000036 On Shutdown Running RAS Server with a Digiboard"
-permalink: kb/155/Q155035/
+permalink: /kb/155/Q155035/
 ---
 
 ## Q155035: STOP 0x00000036 On Shutdown Running RAS Server with a Digiboard

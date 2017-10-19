@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326322: MS02-037: Rspns to SMTP Client EHLO Cmmd Causes Buffer Overrun"
-permalink: kb/326/Q326322/
+permalink: /kb/326/Q326322/
 ---
 
 ## Q326322: MS02-037: Rspns to SMTP Client EHLO Cmmd Causes Buffer Overrun

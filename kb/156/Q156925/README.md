@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156925: PRB: NULL and .NULL. Are Not Interchangeable in Properties"
-permalink: kb/156/Q156925/
+permalink: /kb/156/Q156925/
 ---
 
 ## Q156925: PRB: NULL and .NULL. Are Not Interchangeable in Properties

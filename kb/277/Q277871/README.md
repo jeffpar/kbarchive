@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277871: Linked Server SELECT's to DB2/400 tables w/ DBCS Char Field Fail"
-permalink: kb/277/Q277871/
+permalink: /kb/277/Q277871/
 ---
 
 ## Q277871: Linked Server SELECT's to DB2/400 tables w/ DBCS Char Field Fail

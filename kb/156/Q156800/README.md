@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156800: SFM Primary Group Show"
-permalink: kb/156/Q156800/
+permalink: /kb/156/Q156800/
 ---
 
 ## Q156800: SFM Primary Group Show

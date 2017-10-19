@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77815: Novell NetWare Shell History 3.02, 3.21, and 3.22"
-permalink: kb/077/Q77815/
+permalink: /kb/077/Q77815/
 ---
 
 ## Q77815: Novell NetWare Shell History 3.02, 3.21, and 3.22

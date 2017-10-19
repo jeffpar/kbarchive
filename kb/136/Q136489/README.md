@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136489: PC Ext: External Access Up to 50 NetWare Network Connections"
-permalink: kb/136/Q136489/
+permalink: /kb/136/Q136489/
 ---
 
 ## Q136489: PC Ext: External Access Up to 50 NetWare Network Connections

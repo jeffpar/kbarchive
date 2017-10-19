@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176501: Explanation of Windows 95 Netlogon Packets"
-permalink: kb/176/Q176501/
+permalink: /kb/176/Q176501/
 ---
 
 ## Q176501: Explanation of Windows 95 Netlogon Packets

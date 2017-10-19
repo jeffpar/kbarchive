@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117419: List of Major Sound Card Manufacturers (A)"
-permalink: kb/117/Q117419/
+permalink: /kb/117/Q117419/
 ---
 
 ## Q117419: List of Major Sound Card Manufacturers (A)

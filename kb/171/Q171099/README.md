@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171099: PRB: Per-Recipient &quot;Send Options&quot; Not Saved to Address Book"
-permalink: kb/171/Q171099/
+permalink: /kb/171/Q171099/
 ---
 
 ## Q171099: PRB: Per-Recipient &quot;Send Options&quot; Not Saved to Address Book

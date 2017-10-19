@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93918: Help Topic Margins Always 1 Inch When Printed"
-permalink: kb/093/Q93918/
+permalink: /kb/093/Q93918/
 ---
 
 ## Q93918: Help Topic Margins Always 1 Inch When Printed

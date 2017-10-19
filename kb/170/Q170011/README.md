@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170011: XFOR: cc:Mail Files Accessed by cc:Mail Connector"
-permalink: kb/170/Q170011/
+permalink: /kb/170/Q170011/
 ---
 
 ## Q170011: XFOR: cc:Mail Files Accessed by cc:Mail Connector

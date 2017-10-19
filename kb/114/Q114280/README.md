@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114280: PC WRmt: Selector Doesn't Allow Copy/Move Without ServerPath"
-permalink: kb/114/Q114280/
+permalink: /kb/114/Q114280/
 ---
 
 ## Q114280: PC WRmt: Selector Doesn't Allow Copy/Move Without ServerPath

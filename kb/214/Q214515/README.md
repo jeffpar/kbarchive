@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q214515: How to Determine which Virtual Server References [Port /LM/W3SVC"
-permalink: kb/214/Q214515/
+title: "Q214515: How to Determine which Virtual Server References &#91;Port /LM/W3SVC"
+permalink: /kb/214/Q214515/
 ---
 
-## Q214515: How to Determine which Virtual Server References [Port /LM/W3SVC
+## Q214515: How to Determine which Virtual Server References &#91;Port /LM/W3SVC
 
 	Article: Q214515
 	Product(s): Internet Information Server

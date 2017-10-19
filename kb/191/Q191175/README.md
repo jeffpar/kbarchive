@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191175: HOWTO: Store Multiple Dates from the MonthView Control"
-permalink: kb/191/Q191175/
+permalink: /kb/191/Q191175/
 ---
 
 ## Q191175: HOWTO: Store Multiple Dates from the MonthView Control

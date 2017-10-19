@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169862: BUG: VFP Functions Cause Infinite Loop in Debugger Watch Window"
-permalink: kb/169/Q169862/
+permalink: /kb/169/Q169862/
 ---
 
 ## Q169862: BUG: VFP Functions Cause Infinite Loop in Debugger Watch Window

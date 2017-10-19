@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74252: Using PC Fullback and Windows 3.0"
-permalink: kb/074/Q74252/
+permalink: /kb/074/Q74252/
 ---
 
 ## Q74252: Using PC Fullback and Windows 3.0

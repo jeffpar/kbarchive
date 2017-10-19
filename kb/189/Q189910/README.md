@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189910: INFO: Samples File Does Not Install with Typical MSDN Install"
-permalink: kb/189/Q189910/
+permalink: /kb/189/Q189910/
 ---
 
 ## Q189910: INFO: Samples File Does Not Install with Typical MSDN Install

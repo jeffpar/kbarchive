@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157724: BUG: Import Wizard Incorrectly Treats Consecutive Delimiters"
-permalink: kb/157/Q157724/
+permalink: /kb/157/Q157724/
 ---
 
 ## Q157724: BUG: Import Wizard Incorrectly Treats Consecutive Delimiters

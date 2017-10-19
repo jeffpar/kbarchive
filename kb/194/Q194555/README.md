@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194555: X400: Gateway Hangs Sending Two Messages to Very Large DLs"
-permalink: kb/194/Q194555/
+permalink: /kb/194/Q194555/
 ---
 
 ## Q194555: X400: Gateway Hangs Sending Two Messages to Very Large DLs

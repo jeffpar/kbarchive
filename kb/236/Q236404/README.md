@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236404: INFO: Microsoft Visual Basic 6.0 Int'l Package/Deployment Kit"
-permalink: kb/236/Q236404/
+permalink: /kb/236/Q236404/
 ---
 
 ## Q236404: INFO: Microsoft Visual Basic 6.0 Int'l Package/Deployment Kit

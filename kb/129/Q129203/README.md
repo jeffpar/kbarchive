@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129203: AMD SCSI is Detected when SCSI is Disabled in CMOS"
-permalink: kb/129/Q129203/
+permalink: /kb/129/Q129203/
 ---
 
 ## Q129203: AMD SCSI is Detected when SCSI is Disabled in CMOS

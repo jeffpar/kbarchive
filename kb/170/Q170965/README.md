@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170965: SFM Time and Date Stamp Change Copying Between Volumes Locally"
-permalink: kb/170/Q170965/
+permalink: /kb/170/Q170965/
 ---
 
 ## Q170965: SFM Time and Date Stamp Change Copying Between Volumes Locally

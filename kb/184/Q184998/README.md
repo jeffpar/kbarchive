@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184998: RDR May Read or Write from Wrong File If File Is Memory Mapped"
-permalink: kb/184/Q184998/
+permalink: /kb/184/Q184998/
 ---
 
 ## Q184998: RDR May Read or Write from Wrong File If File Is Memory Mapped

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133462: Julia Child: How Items Are Added to Shopping List"
-permalink: kb/133/Q133462/
+permalink: /kb/133/Q133462/
 ---
 
 ## Q133462: Julia Child: How Items Are Added to Shopping List

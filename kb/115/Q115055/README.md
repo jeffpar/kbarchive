@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115055: Function to Calculate Elapsed or Accumulated Time"
-permalink: kb/115/Q115055/
+permalink: /kb/115/Q115055/
 ---
 
 ## Q115055: Function to Calculate Elapsed or Accumulated Time

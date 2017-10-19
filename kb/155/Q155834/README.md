@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155834: INFO: ODBC Drivers Installed with Visual FoxPro 5.0"
-permalink: kb/155/Q155834/
+permalink: /kb/155/Q155834/
 ---
 
 ## Q155834: INFO: ODBC Drivers Installed with Visual FoxPro 5.0

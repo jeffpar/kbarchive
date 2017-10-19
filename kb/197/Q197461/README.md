@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197461: Client Certificate Mapping Uses Multiple Organization Units"
-permalink: kb/197/Q197461/
+permalink: /kb/197/Q197461/
 ---
 
 ## Q197461: Client Certificate Mapping Uses Multiple Organization Units

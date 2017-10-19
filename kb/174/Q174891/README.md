@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174891: FIX: CComQIPtr operator= Causes an Access Violation"
-permalink: kb/174/Q174891/
+permalink: /kb/174/Q174891/
 ---
 
 ## Q174891: FIX: CComQIPtr operator= Causes an Access Violation

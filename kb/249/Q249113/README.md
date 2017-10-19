@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249113: XFOR: Connector for Lotus Notes Extracts Filter Rule Incorrectly"
-permalink: kb/249/Q249113/
+permalink: /kb/249/Q249113/
 ---
 
 ## Q249113: XFOR: Connector for Lotus Notes Extracts Filter Rule Incorrectly

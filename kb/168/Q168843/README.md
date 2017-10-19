@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168843: Puzzle Collection: Installing To A Floppy Drive Hangs Setup"
-permalink: kb/168/Q168843/
+permalink: /kb/168/Q168843/
 ---
 
 ## Q168843: Puzzle Collection: Installing To A Floppy Drive Hangs Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94214: No Detection of Parallel Device Contention in Windows 3.1"
-permalink: kb/094/Q94214/
+permalink: /kb/094/Q94214/
 ---
 
 ## Q94214: No Detection of Parallel Device Contention in Windows 3.1

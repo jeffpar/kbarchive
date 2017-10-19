@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241740: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3"
-permalink: kb/241/Q241740/
+permalink: /kb/241/Q241740/
 ---
 
 ## Q241740: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 3

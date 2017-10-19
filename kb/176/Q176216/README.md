@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176216: WD97: Cannot Undo Automatic Field Updates"
-permalink: kb/176/Q176216/
+permalink: /kb/176/Q176216/
 ---
 
 ## Q176216: WD97: Cannot Undo Automatic Field Updates

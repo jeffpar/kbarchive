@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247543: SMS: Clients Incorrectly Assigned to Multiple Sites"
-permalink: kb/247/Q247543/
+permalink: /kb/247/Q247543/
 ---
 
 ## Q247543: SMS: Clients Incorrectly Assigned to Multiple Sites

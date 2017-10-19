@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112220: PRB: System Resources Not Released While in FoxPro"
-permalink: kb/112/Q112220/
+permalink: /kb/112/Q112220/
 ---
 
 ## Q112220: PRB: System Resources Not Released While in FoxPro

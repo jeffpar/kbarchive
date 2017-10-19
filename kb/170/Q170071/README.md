@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170071: Invokable TP Timeout May Occur With Non-queued Operation"
-permalink: kb/170/Q170071/
+permalink: /kb/170/Q170071/
 ---
 
 ## Q170071: Invokable TP Timeout May Occur With Non-queued Operation

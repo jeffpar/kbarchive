@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184424: IIS ResKit: Start Menu Shortcuts Return Error Message"
-permalink: kb/184/Q184424/
+permalink: /kb/184/Q184424/
 ---
 
 ## Q184424: IIS ResKit: Start Menu Shortcuts Return Error Message

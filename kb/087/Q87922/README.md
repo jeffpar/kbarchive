@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87922: CodeView Gives &quot;Bad DLL Format in 'Filename'&quot;"
-permalink: kb/087/Q87922/
+permalink: /kb/087/Q87922/
 ---
 
 ## Q87922: CodeView Gives &quot;Bad DLL Format in 'Filename'&quot;

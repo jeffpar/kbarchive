@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315402: XML Step by Step Second Edition Comments and Corrections"
-permalink: kb/315/Q315402/
+permalink: /kb/315/Q315402/
 ---
 
 ## Q315402: XML Step by Step Second Edition Comments and Corrections

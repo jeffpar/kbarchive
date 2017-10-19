@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192783: BUG: PDW Does Not Include CLSID in Default HTML Page for IE 3.X"
-permalink: kb/192/Q192783/
+permalink: /kb/192/Q192783/
 ---
 
 ## Q192783: BUG: PDW Does Not Include CLSID in Default HTML Page for IE 3.X

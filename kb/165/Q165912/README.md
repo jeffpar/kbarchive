@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165912: 3270 Applet Resets Session and Returns to Host Signon Screen"
-permalink: kb/165/Q165912/
+permalink: /kb/165/Q165912/
 ---
 
 ## Q165912: 3270 Applet Resets Session and Returns to Host Signon Screen

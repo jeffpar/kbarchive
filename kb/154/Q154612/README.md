@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154612: Installing Windows NT 4.0 Printer Drivers on a 3.51 Server"
-permalink: kb/154/Q154612/
+permalink: /kb/154/Q154612/
 ---
 
 ## Q154612: Installing Windows NT 4.0 Printer Drivers on a 3.51 Server

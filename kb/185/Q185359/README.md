@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185359: Return of Arcade: Shape of Maze in Pac-Man Never Changes"
-permalink: kb/185/Q185359/
+permalink: /kb/185/Q185359/
 ---
 
 ## Q185359: Return of Arcade: Shape of Maze in Pac-Man Never Changes

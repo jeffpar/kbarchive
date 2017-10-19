@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145969: XADM: Incorrect Network Drive Confirmation Dialogs"
-permalink: kb/145/Q145969/
+permalink: /kb/145/Q145969/
 ---
 
 ## Q145969: XADM: Incorrect Network Drive Confirmation Dialogs

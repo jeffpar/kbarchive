@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164073: ASP Queries When SSL Enabled Gives Incomplete Results or Errors"
-permalink: kb/164/Q164073/
+permalink: /kb/164/Q164073/
 ---
 
 ## Q164073: ASP Queries When SSL Enabled Gives Incomplete Results or Errors

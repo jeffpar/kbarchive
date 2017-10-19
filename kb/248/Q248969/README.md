@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248969: Sinvproc Leaves Zero-Byte Files in the BADSINV Folder"
-permalink: kb/248/Q248969/
+permalink: /kb/248/Q248969/
 ---
 
 ## Q248969: Sinvproc Leaves Zero-Byte Files in the BADSINV Folder

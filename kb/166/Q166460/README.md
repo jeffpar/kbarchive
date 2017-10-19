@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166460: Unwanted Banner Page Printed from MS-DOS-Based Program"
-permalink: kb/166/Q166460/
+permalink: /kb/166/Q166460/
 ---
 
 ## Q166460: Unwanted Banner Page Printed from MS-DOS-Based Program

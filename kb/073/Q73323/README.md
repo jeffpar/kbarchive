@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73323: Packard Bell SPEED.COM and MS-DOS 5.0 and Later"
-permalink: kb/073/Q73323/
+permalink: /kb/073/Q73323/
 ---
 
 ## Q73323: Packard Bell SPEED.COM and MS-DOS 5.0 and Later

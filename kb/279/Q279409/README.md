@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279409: BUG: WebClass ProcessTag Event Fails to Execute"
-permalink: kb/279/Q279409/
+permalink: /kb/279/Q279409/
 ---
 
 ## Q279409: BUG: WebClass ProcessTag Event Fails to Execute

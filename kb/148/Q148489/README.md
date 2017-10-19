@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148489: MPI: HOW &amp; WHY WINDOWS 95 Corrections and Comments"
-permalink: kb/148/Q148489/
+permalink: /kb/148/Q148489/
 ---
 
 ## Q148489: MPI: HOW &amp; WHY WINDOWS 95 Corrections and Comments

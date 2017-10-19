@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252718: SMS: CCM Avoids Installation Attempts on SP2 Clients"
-permalink: kb/252/Q252718/
+permalink: /kb/252/Q252718/
 ---
 
 ## Q252718: SMS: CCM Avoids Installation Attempts on SP2 Clients

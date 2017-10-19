@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148927: Bookshelf 96-97: Update Files on Second Drive Will Not Integra"
-permalink: kb/148/Q148927/
+permalink: /kb/148/Q148927/
 ---
 
 ## Q148927: Bookshelf 96-97: Update Files on Second Drive Will Not Integra

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112183: PRB: Copied QuickTime Movie Appears to Play in Fast Forward"
-permalink: kb/112/Q112183/
+permalink: /kb/112/Q112183/
 ---
 
 ## Q112183: PRB: Copied QuickTime Movie Appears to Play in Fast Forward

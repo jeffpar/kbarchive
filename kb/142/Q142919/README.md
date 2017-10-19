@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142919: Error Message: ID Number DRVSPACE125"
-permalink: kb/142/Q142919/
+permalink: /kb/142/Q142919/
 ---
 
 ## Q142919: Error Message: ID Number DRVSPACE125

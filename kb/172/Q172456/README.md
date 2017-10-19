@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172456: How to Automatically Replace Files In Use by Windows 95"
-permalink: kb/172/Q172456/
+permalink: /kb/172/Q172456/
 ---
 
 ## Q172456: How to Automatically Replace Files In Use by Windows 95

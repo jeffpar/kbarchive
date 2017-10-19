@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246086: XADM: Exchange Service Pack Stops with 0xc0020003 or 0xc0020002"
-permalink: kb/246/Q246086/
+permalink: /kb/246/Q246086/
 ---
 
 ## Q246086: XADM: Exchange Service Pack Stops with 0xc0020003 or 0xc0020002

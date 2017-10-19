@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263356: SMS: Outbox Sending Times and Priorities Lost During Upgrade"
-permalink: kb/263/Q263356/
+permalink: /kb/263/Q263356/
 ---
 
 ## Q263356: SMS: Outbox Sending Times and Priorities Lost During Upgrade

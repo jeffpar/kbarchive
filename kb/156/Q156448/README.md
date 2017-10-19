@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156448: INFO: Some Files and Projects are Upper Case after Upgrade"
-permalink: kb/156/Q156448/
+permalink: /kb/156/Q156448/
 ---
 
 ## Q156448: INFO: Some Files and Projects are Upper Case after Upgrade

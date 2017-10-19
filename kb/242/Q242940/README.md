@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242940: SAMPLE: MDLLWiz.exe: A Migration DLL AppWizard for Visual C++"
-permalink: kb/242/Q242940/
+permalink: /kb/242/Q242940/
 ---
 
 ## Q242940: SAMPLE: MDLLWiz.exe: A Migration DLL AppWizard for Visual C++

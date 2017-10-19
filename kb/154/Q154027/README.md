@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154027: Print Manager Hangs If Printer Description Has Multiple Commas"
-permalink: kb/154/Q154027/
+permalink: /kb/154/Q154027/
 ---
 
 ## Q154027: Print Manager Hangs If Printer Description Has Multiple Commas

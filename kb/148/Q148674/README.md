@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148674: Err Msg: An Error Occurred While Trying to Remove MS Fury3"
-permalink: kb/148/Q148674/
+permalink: /kb/148/Q148674/
 ---
 
 ## Q148674: Err Msg: An Error Occurred While Trying to Remove MS Fury3

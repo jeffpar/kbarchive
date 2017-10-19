@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175913: DHCP Clients Obtain IP Address from Old DHCP Scope Range"
-permalink: kb/175/Q175913/
+permalink: /kb/175/Q175913/
 ---
 
 ## Q175913: DHCP Clients Obtain IP Address from Old DHCP Scope Range

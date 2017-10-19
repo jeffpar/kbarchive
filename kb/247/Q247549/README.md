@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247549: FS2000: No &quot;Land Me&quot; Command in Flight Simulator 2000"
-permalink: kb/247/Q247549/
+permalink: /kb/247/Q247549/
 ---
 
 ## Q247549: FS2000: No &quot;Land Me&quot; Command in Flight Simulator 2000

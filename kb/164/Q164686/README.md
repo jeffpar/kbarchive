@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164686: WD97: Instant Access OCR, Word Proofreader Commands Unavailable"
-permalink: kb/164/Q164686/
+permalink: /kb/164/Q164686/
 ---
 
 ## Q164686: WD97: Instant Access OCR, Word Proofreader Commands Unavailable

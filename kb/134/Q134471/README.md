@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134471: System Error Trying to Suspend Global Dynamics 466 Computers"
-permalink: kb/134/Q134471/
+permalink: /kb/134/Q134471/
 ---
 
 ## Q134471: System Error Trying to Suspend Global Dynamics 466 Computers

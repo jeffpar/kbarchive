@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200467: INFO: Modem Selection Algorithm for &quot;Use Another Port If Busy&quot;"
-permalink: kb/200/Q200467/
+permalink: /kb/200/Q200467/
 ---
 
 ## Q200467: INFO: Modem Selection Algorithm for &quot;Use Another Port If Busy&quot;

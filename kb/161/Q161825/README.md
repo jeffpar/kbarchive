@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161825: How Visual Basic 4.0 Calls C and Fortran DLLs"
-permalink: kb/161/Q161825/
+permalink: /kb/161/Q161825/
 ---
 
 ## Q161825: How Visual Basic 4.0 Calls C and Fortran DLLs

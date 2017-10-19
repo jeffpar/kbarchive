@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237380: Shortcut Key Starts No Program or the Wrong Program"
-permalink: kb/237/Q237380/
+permalink: /kb/237/Q237380/
 ---
 
 ## Q237380: Shortcut Key Starts No Program or the Wrong Program

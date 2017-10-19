@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253789: PRB: Screen Saver Activated While Playing Back MPEG Movie File"
-permalink: kb/253/Q253789/
+permalink: /kb/253/Q253789/
 ---
 
 ## Q253789: PRB: Screen Saver Activated While Playing Back MPEG Movie File

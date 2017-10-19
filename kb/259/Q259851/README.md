@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259851: XADM: Ramifications of Running ESEUTIL /P or EDBUTIL /D /R"
-permalink: kb/259/Q259851/
+permalink: /kb/259/Q259851/
 ---
 
 ## Q259851: XADM: Ramifications of Running ESEUTIL /P or EDBUTIL /D /R

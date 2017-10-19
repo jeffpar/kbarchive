@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129911: Querying Macintosh Clients in Systems Management Server"
-permalink: kb/129/Q129911/
+permalink: /kb/129/Q129911/
 ---
 
 ## Q129911: Querying Macintosh Clients in Systems Management Server

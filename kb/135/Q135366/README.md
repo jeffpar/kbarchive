@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135366: Garbled Output from HP DeskJet Printer Connected to ECP Port"
-permalink: kb/135/Q135366/
+permalink: /kb/135/Q135366/
 ---
 
 ## Q135366: Garbled Output from HP DeskJet Printer Connected to ECP Port

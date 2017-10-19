@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236901: NetBIOS Remote Name Cache Time-Out Is 60 Seconds Off"
-permalink: kb/236/Q236901/
+permalink: /kb/236/Q236901/
 ---
 
 ## Q236901: NetBIOS Remote Name Cache Time-Out Is 60 Seconds Off

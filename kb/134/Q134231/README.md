@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134231: SNA Server Setup Resets CA400 Settings in WNAP"
-permalink: kb/134/Q134231/
+permalink: /kb/134/Q134231/
 ---
 
 ## Q134231: SNA Server Setup Resets CA400 Settings in WNAP

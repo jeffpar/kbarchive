@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168634: INFO: When -d Switch of Analyze Deletes Files"
-permalink: kb/168/Q168634/
+permalink: /kb/168/Q168634/
 ---
 
 ## Q168634: INFO: When -d Switch of Analyze Deletes Files

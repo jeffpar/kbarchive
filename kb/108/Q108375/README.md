@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108375: SMTP: How to Start SMTPGET"
-permalink: kb/108/Q108375/
+permalink: /kb/108/Q108375/
 ---
 
 ## Q108375: SMTP: How to Start SMTPGET

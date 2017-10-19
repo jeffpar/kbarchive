@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180407: SMS: An Error Was Reported While Executing the Database Upgrade"
-permalink: kb/180/Q180407/
+permalink: /kb/180/Q180407/
 ---
 
 ## Q180407: SMS: An Error Was Reported While Executing the Database Upgrade

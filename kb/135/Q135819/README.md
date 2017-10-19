@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135819: Error Printing to NetWare Printer w/Extended Character in Name"
-permalink: kb/135/Q135819/
+permalink: /kb/135/Q135819/
 ---
 
 ## Q135819: Error Printing to NetWare Printer w/Extended Character in Name

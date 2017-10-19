@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81894: FIX: MASM Allows Alignments &gt; Segment Alignment"
-permalink: kb/081/Q81894/
+permalink: /kb/081/Q81894/
 ---
 
 ## Q81894: FIX: MASM Allows Alignments &gt; Segment Alignment

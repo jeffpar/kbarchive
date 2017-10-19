@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164548: WD97: NumPages Field Not Updated When You Open File"
-permalink: kb/164/Q164548/
+permalink: /kb/164/Q164548/
 ---
 
 ## Q164548: WD97: NumPages Field Not Updated When You Open File

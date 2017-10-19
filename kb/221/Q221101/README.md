@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221101: BUG: Visual Basic App Crashes Passing UDT w/ String &amp; Enum"
-permalink: kb/221/Q221101/
+permalink: /kb/221/Q221101/
 ---
 
 ## Q221101: BUG: Visual Basic App Crashes Passing UDT w/ String &amp; Enum

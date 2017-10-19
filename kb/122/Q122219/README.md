@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122219: INFO: CWnd::OnCommand() Parameters Documented Incorrectly"
-permalink: kb/122/Q122219/
+permalink: /kb/122/Q122219/
 ---
 
 ## Q122219: INFO: CWnd::OnCommand() Parameters Documented Incorrectly

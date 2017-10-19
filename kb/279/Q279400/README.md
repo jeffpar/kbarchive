@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279400: MechWarrior 4: Vengeance: Contents of the Readme.rtf File, Pt 2"
-permalink: kb/279/Q279400/
+permalink: /kb/279/Q279400/
 ---
 
 ## Q279400: MechWarrior 4: Vengeance: Contents of the Readme.rtf File, Pt 2

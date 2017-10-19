@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84245: Greek Symbols Appear Instead of Selected Fonts in Windows 3.1"
-permalink: kb/084/Q84245/
+permalink: /kb/084/Q84245/
 ---
 
 ## Q84245: Greek Symbols Appear Instead of Selected Fonts in Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248102: Cannot Uninstall Service Pack"
-permalink: kb/248/Q248102/
+permalink: /kb/248/Q248102/
 ---
 
 ## Q248102: Cannot Uninstall Service Pack

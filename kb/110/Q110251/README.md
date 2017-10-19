@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110251: COMMAND Key in FoxPro for Mac Is Treated Same as CTRL Key"
-permalink: kb/110/Q110251/
+permalink: /kb/110/Q110251/
 ---
 
 ## Q110251: COMMAND Key in FoxPro for Mac Is Treated Same as CTRL Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100832: INFO: Calling Conventions the 32-Bit Compiler Supports"
-permalink: kb/100/Q100832/
+permalink: /kb/100/Q100832/
 ---
 
 ## Q100832: INFO: Calling Conventions the 32-Bit Compiler Supports

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170256: TweakUI Menu Speed Setting May Not Work Properly"
-permalink: kb/170/Q170256/
+permalink: /kb/170/Q170256/
 ---
 
 ## Q170256: TweakUI Menu Speed Setting May Not Work Properly

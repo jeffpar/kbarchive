@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93004: BUG: QuickHelp Paste Topic Command Pastes Two Extra Lines"
-permalink: kb/093/Q93004/
+permalink: /kb/093/Q93004/
 ---
 
 ## Q93004: BUG: QuickHelp Paste Topic Command Pastes Two Extra Lines

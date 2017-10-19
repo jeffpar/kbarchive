@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122852: PC Gen: Getting Statistics on Intra-postoffice Mail"
-permalink: kb/122/Q122852/
+permalink: /kb/122/Q122852/
 ---
 
 ## Q122852: PC Gen: Getting Statistics on Intra-postoffice Mail

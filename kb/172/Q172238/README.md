@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172238: Snatrace Doesn't Set Global Trace Properties on Remote Computer"
-permalink: kb/172/Q172238/
+permalink: /kb/172/Q172238/
 ---
 
 ## Q172238: Snatrace Doesn't Set Global Trace Properties on Remote Computer

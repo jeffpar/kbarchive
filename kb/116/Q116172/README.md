@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116172: BUG: Based Ptr. Init Fails at Global Scope in CPP File"
-permalink: kb/116/Q116172/
+permalink: /kb/116/Q116172/
 ---
 
 ## Q116172: BUG: Based Ptr. Init Fails at Global Scope in CPP File

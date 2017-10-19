@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86400: PC OS2: Right Mouse Button Acts as Stuck Left Button"
-permalink: kb/086/Q86400/
+permalink: /kb/086/Q86400/
 ---
 
 ## Q86400: PC OS2: Right Mouse Button Acts as Stuck Left Button

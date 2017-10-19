@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76870: Fahrenheit 1280 Orchid Video Card and Windows"
-permalink: kb/076/Q76870/
+permalink: /kb/076/Q76870/
 ---
 
 ## Q76870: Fahrenheit 1280 Orchid Video Card and Windows

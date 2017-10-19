@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68210: Using Coda's Finale' Music Software with Windows 3.0"
-permalink: kb/068/Q68210/
+permalink: /kb/068/Q68210/
 ---
 
 ## Q68210: Using Coda's Finale' Music Software with Windows 3.0

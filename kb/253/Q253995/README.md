@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253995: BUG: Connecting to Emulation Hangs Developer Studio"
-permalink: kb/253/Q253995/
+permalink: /kb/253/Q253995/
 ---
 
 ## Q253995: BUG: Connecting to Emulation Hangs Developer Studio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169742: Semaphore Timeout Error When UseWriteBehind Disabled for Redir"
-permalink: kb/169/Q169742/
+permalink: /kb/169/Q169742/
 ---
 
 ## Q169742: Semaphore Timeout Error When UseWriteBehind Disabled for Redir

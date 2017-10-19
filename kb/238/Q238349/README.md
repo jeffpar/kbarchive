@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238349: Specially-Malformed Header Creates Denial of Service"
-permalink: kb/238/Q238349/
+permalink: /kb/238/Q238349/
 ---
 
 ## Q238349: Specially-Malformed Header Creates Denial of Service

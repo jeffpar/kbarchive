@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91717: PPT: Text Shadow Color Not Affected by Color Scheme"
-permalink: kb/091/Q91717/
+permalink: /kb/091/Q91717/
 ---
 
 ## Q91717: PPT: Text Shadow Color Not Affected by Color Scheme

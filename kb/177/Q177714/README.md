@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177714: WD97: Recorded Macro Switching to Outline View Causes Error"
-permalink: kb/177/Q177714/
+permalink: /kb/177/Q177714/
 ---
 
 ## Q177714: WD97: Recorded Macro Switching to Outline View Causes Error

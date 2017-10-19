@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137824: &quot;Invalid Vxd&quot; Error Message Starting Windows 95"
-permalink: kb/137/Q137824/
+permalink: /kb/137/Q137824/
 ---
 
 ## Q137824: &quot;Invalid Vxd&quot; Error Message Starting Windows 95

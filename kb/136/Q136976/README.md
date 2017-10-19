@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136976: PRB: No Hot Keys to Switch Between Pages in Project Manager"
-permalink: kb/136/Q136976/
+permalink: /kb/136/Q136976/
 ---
 
 ## Q136976: PRB: No Hot Keys to Switch Between Pages in Project Manager

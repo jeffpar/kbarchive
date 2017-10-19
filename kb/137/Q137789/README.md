@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137789: SMS MIF Generator Does Not Accept Negative Default Number"
-permalink: kb/137/Q137789/
+permalink: /kb/137/Q137789/
 ---
 
 ## Q137789: SMS MIF Generator Does Not Accept Negative Default Number

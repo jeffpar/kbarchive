@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214500: App. Compatibility Flag Registry Setting Not Read Correctly"
-permalink: kb/214/Q214500/
+permalink: /kb/214/Q214500/
 ---
 
 ## Q214500: App. Compatibility Flag Registry Setting Not Read Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187087: Hardware Encryption Devices Incompatible with Terminal Server"
-permalink: kb/187/Q187087/
+permalink: /kb/187/Q187087/
 ---
 
 ## Q187087: Hardware Encryption Devices Incompatible with Terminal Server

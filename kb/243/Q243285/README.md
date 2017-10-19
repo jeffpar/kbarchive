@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243285: HOWTO: Draw TrueType Glyph Outlines"
-permalink: kb/243/Q243285/
+permalink: /kb/243/Q243285/
 ---
 
 ## Q243285: HOWTO: Draw TrueType Glyph Outlines

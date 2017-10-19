@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172189: Routing and Remote Access with a Null Serial Cable"
-permalink: kb/172/Q172189/
+permalink: /kb/172/Q172189/
 ---
 
 ## Q172189: Routing and Remote Access with a Null Serial Cable

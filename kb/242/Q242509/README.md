@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242509: InitiateSystemShutdown() Call May Not Shut Down the Computer"
-permalink: kb/242/Q242509/
+permalink: /kb/242/Q242509/
 ---
 
 ## Q242509: InitiateSystemShutdown() Call May Not Shut Down the Computer

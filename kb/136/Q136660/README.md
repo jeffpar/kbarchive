@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136660: Windows Software Compatibility List"
-permalink: kb/136/Q136660/
+permalink: /kb/136/Q136660/
 ---
 
 ## Q136660: Windows Software Compatibility List

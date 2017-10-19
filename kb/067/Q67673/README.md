@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67673: How to Determine When Another Application Has Finished"
-permalink: kb/067/Q67673/
+permalink: /kb/067/Q67673/
 ---
 
 ## Q67673: How to Determine When Another Application Has Finished

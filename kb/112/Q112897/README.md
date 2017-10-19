@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112897: PC Adm: Import Does Not Support the -L and -N Options Together"
-permalink: kb/112/Q112897/
+permalink: /kb/112/Q112897/
 ---
 
 ## Q112897: PC Adm: Import Does Not Support the -L and -N Options Together

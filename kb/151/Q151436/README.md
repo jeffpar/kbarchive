@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151436: MSB Earth: How to Start the Bus Stop Utility"
-permalink: kb/151/Q151436/
+permalink: /kb/151/Q151436/
 ---
 
 ## Q151436: MSB Earth: How to Start the Bus Stop Utility

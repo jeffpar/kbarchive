@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275911: Err Msg: DDHELP Has Caused Error In GDI.EXE"
-permalink: kb/275/Q275911/
+permalink: /kb/275/Q275911/
 ---
 
 ## Q275911: Err Msg: DDHELP Has Caused Error In GDI.EXE

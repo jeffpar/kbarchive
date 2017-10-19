@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266761: Windows SFU 2.0 BDC Installation Will Fail w/ Error 26031"
-permalink: kb/266/Q266761/
+permalink: /kb/266/Q266761/
 ---
 
 ## Q266761: Windows SFU 2.0 BDC Installation Will Fail w/ Error 26031

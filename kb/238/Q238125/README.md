@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238125: Stop 1E in Nbf.sys"
-permalink: kb/238/Q238125/
+permalink: /kb/238/Q238125/
 ---
 
 ## Q238125: Stop 1E in Nbf.sys

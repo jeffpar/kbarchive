@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299819: Train Simulator: Switch Does Not Function as Expected"
-permalink: kb/299/Q299819/
+permalink: /kb/299/Q299819/
 ---
 
 ## Q299819: Train Simulator: Switch Does Not Function as Expected

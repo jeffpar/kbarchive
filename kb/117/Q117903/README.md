@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117903: FIX: Incorrect Floating-Point Calculations with /Ox and /Op"
-permalink: kb/117/Q117903/
+permalink: /kb/117/Q117903/
 ---
 
 ## Q117903: FIX: Incorrect Floating-Point Calculations with /Ox and /Op

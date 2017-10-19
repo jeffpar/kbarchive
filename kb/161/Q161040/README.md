@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161040: Host Initiated BIND Is Rejected with A BIND -RSP (Sense=0815)"
-permalink: kb/161/Q161040/
+permalink: /kb/161/Q161040/
 ---
 
 ## Q161040: Host Initiated BIND Is Rejected with A BIND -RSP (Sense=0815)

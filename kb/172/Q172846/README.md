@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172846: INFO: Readme File List for All Editions of Visual Basic 5.0"
-permalink: kb/172/Q172846/
+permalink: /kb/172/Q172846/
 ---
 
 ## Q172846: INFO: Readme File List for All Editions of Visual Basic 5.0

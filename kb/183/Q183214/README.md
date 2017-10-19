@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183214: PRB: E_INVALIDARG Error from CoCreateInstance()"
-permalink: kb/183/Q183214/
+permalink: /kb/183/Q183214/
 ---
 
 ## Q183214: PRB: E_INVALIDARG Error from CoCreateInstance()

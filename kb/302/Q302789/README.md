@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302789: When You Sort Address Book Entries By A Criteria Other than &quot;Nic"
-permalink: kb/302/Q302789/
+permalink: /kb/302/Q302789/
 ---
 
 ## Q302789: When You Sort Address Book Entries By A Criteria Other than &quot;Nic

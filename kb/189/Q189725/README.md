@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189725: BUG: GETFONT Causes Error on Empty Fontname"
-permalink: kb/189/Q189725/
+permalink: /kb/189/Q189725/
 ---
 
 ## Q189725: BUG: GETFONT Causes Error on Empty Fontname

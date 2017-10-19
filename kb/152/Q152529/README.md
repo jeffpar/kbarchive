@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152529: XADM: Crash in Srvrmax.exe (RtlQueryInformationAcl) During Setup"
-permalink: kb/152/Q152529/
+permalink: /kb/152/Q152529/
 ---
 
 ## Q152529: XADM: Crash in Srvrmax.exe (RtlQueryInformationAcl) During Setup

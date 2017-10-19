@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247296: XFOR: How to Filter Messages with Empty From Line"
-permalink: kb/247/Q247296/
+permalink: /kb/247/Q247296/
 ---
 
 ## Q247296: XFOR: How to Filter Messages with Empty From Line

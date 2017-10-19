@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198778: SMSINST: Adding Shortcuts to Start Menu When Using System Polici"
-permalink: kb/198/Q198778/
+permalink: /kb/198/Q198778/
 ---
 
 ## Q198778: SMSINST: Adding Shortcuts to Start Menu When Using System Polici

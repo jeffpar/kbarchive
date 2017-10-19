@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136043: How to Allow Empty Fields in Visual FoxPro Crosstab Queries"
-permalink: kb/136/Q136043/
+permalink: /kb/136/Q136043/
 ---
 
 ## Q136043: How to Allow Empty Fields in Visual FoxPro Crosstab Queries

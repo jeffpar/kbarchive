@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242305: XADM: Exstrace.dll prompt during setup on Windows 2000 Server"
-permalink: kb/242/Q242305/
+permalink: /kb/242/Q242305/
 ---
 
 ## Q242305: XADM: Exstrace.dll prompt during setup on Windows 2000 Server

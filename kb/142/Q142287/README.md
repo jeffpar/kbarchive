@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142287: PRB: Cannot Trap for Error #1739"
-permalink: kb/142/Q142287/
+permalink: /kb/142/Q142287/
 ---
 
 ## Q142287: PRB: Cannot Trap for Error #1739

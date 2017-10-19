@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138758: How to Print Event Procedures for a Form"
-permalink: kb/138/Q138758/
+permalink: /kb/138/Q138758/
 ---
 
 ## Q138758: How to Print Event Procedures for a Form

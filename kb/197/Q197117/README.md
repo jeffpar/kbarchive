@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197117: INFO: Troubleshooting Application Wizard Error Messages"
-permalink: kb/197/Q197117/
+permalink: /kb/197/Q197117/
 ---
 
 ## Q197117: INFO: Troubleshooting Application Wizard Error Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189142: XADM: ESEUTIL /P Uses All Available Disk Space"
-permalink: kb/189/Q189142/
+permalink: /kb/189/Q189142/
 ---
 
 ## Q189142: XADM: ESEUTIL /P Uses All Available Disk Space

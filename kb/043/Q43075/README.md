@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43075: Using Batch Files with the FOR Batch Command"
-permalink: kb/043/Q43075/
+permalink: /kb/043/Q43075/
 ---
 
 ## Q43075: Using Batch Files with the FOR Batch Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166595: XFOR: Japanese Web Client Messages Corrupted When Posted"
-permalink: kb/166/Q166595/
+permalink: /kb/166/Q166595/
 ---
 
 ## Q166595: XFOR: Japanese Web Client Messages Corrupted When Posted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279217: MSN Companion unit shows &quot;MSN&quot; splash screen and never boots"
-permalink: kb/279/Q279217/
+permalink: /kb/279/Q279217/
 ---
 
 ## Q279217: MSN Companion unit shows &quot;MSN&quot; splash screen and never boots

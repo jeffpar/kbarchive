@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69894: DOCERR: Guide to Programming LIBENTRY.ASM"
-permalink: kb/069/Q69894/
+permalink: /kb/069/Q69894/
 ---
 
 ## Q69894: DOCERR: Guide to Programming LIBENTRY.ASM

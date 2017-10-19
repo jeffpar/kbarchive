@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176811: XADM: License Service Logs the Wrong Exchange Version Number"
-permalink: kb/176/Q176811/
+permalink: /kb/176/Q176811/
 ---
 
 ## Q176811: XADM: License Service Logs the Wrong Exchange Version Number

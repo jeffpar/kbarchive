@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235139: SMS: Y2K Software Compliance Query Displays Incorrect File Names"
-permalink: kb/235/Q235139/
+permalink: /kb/235/Q235139/
 ---
 
 ## Q235139: SMS: Y2K Software Compliance Query Displays Incorrect File Names

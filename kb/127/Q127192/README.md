@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127192: HOWTO: Draw Controls in an OLE Metafile"
-permalink: kb/127/Q127192/
+permalink: /kb/127/Q127192/
 ---
 
 ## Q127192: HOWTO: Draw Controls in an OLE Metafile

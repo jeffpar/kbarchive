@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159159: MS Phone May Use Speaker Even Though Handset Is Off the Hook"
-permalink: kb/159/Q159159/
+permalink: /kb/159/Q159159/
 ---
 
 ## Q159159: MS Phone May Use Speaker Even Though Handset Is Off the Hook

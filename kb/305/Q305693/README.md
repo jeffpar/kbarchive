@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305693: SMS: Access Violation with the Preinst During /DELSITE Command"
-permalink: kb/305/Q305693/
+permalink: /kb/305/Q305693/
 ---
 
 ## Q305693: SMS: Access Violation with the Preinst During /DELSITE Command

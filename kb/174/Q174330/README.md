@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174330: SMSINST: Use of the RESTART Variable in SMS Installer"
-permalink: kb/174/Q174330/
+permalink: /kb/174/Q174330/
 ---
 
 ## Q174330: SMSINST: Use of the RESTART Variable in SMS Installer

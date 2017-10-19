@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77178: Mylex 80486 EISA Motherboard and MS-DOS 5.0/6.0/6.2"
-permalink: kb/077/Q77178/
+permalink: /kb/077/Q77178/
 ---
 
 ## Q77178: Mylex 80486 EISA Motherboard and MS-DOS 5.0/6.0/6.2

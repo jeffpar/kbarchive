@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160168: PRB: Can't Read Temporary Table Created Using # Sign in RDO"
-permalink: kb/160/Q160168/
+permalink: /kb/160/Q160168/
 ---
 
 ## Q160168: PRB: Can't Read Temporary Table Created Using # Sign in RDO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140374: SMS: System Management Server Jobs Continue to Retry &amp; Not Fail"
-permalink: kb/140/Q140374/
+permalink: /kb/140/Q140374/
 ---
 
 ## Q140374: SMS: System Management Server Jobs Continue to Retry &amp; Not Fail

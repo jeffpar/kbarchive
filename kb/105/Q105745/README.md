@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105745: WD97: Unable to See List of Merge Fields"
-permalink: kb/105/Q105745/
+permalink: /kb/105/Q105745/
 ---
 
 ## Q105745: WD97: Unable to See List of Merge Fields

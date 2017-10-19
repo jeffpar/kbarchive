@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66185: Flight Simulator: Airport in the Sky in Tower and Track View"
-permalink: kb/066/Q66185/
+permalink: /kb/066/Q66185/
 ---
 
 ## Q66185: Flight Simulator: Airport in the Sky in Tower and Track View

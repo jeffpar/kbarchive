@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156788: FIX: Report Print Preview Illegible Under Windows NT"
-permalink: kb/156/Q156788/
+permalink: /kb/156/Q156788/
 ---
 
 ## Q156788: FIX: Report Print Preview Illegible Under Windows NT

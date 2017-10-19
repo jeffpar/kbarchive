@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99924: Inaccurate DoubleSpace Help Message: There Is No Disk in..."
-permalink: kb/099/Q99924/
+permalink: /kb/099/Q99924/
 ---
 
 ## Q99924: Inaccurate DoubleSpace Help Message: There Is No Disk in...

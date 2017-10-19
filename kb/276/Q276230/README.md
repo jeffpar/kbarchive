@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276230: SNA Server Incorrectly Formats the First Line of Page"
-permalink: kb/276/Q276230/
+permalink: /kb/276/Q276230/
 ---
 
 ## Q276230: SNA Server Incorrectly Formats the First Line of Page

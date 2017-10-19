@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156511: PRB: WhatsThisButton Disappears when Form Designer Gets Focus"
-permalink: kb/156/Q156511/
+permalink: /kb/156/Q156511/
 ---
 
 ## Q156511: PRB: WhatsThisButton Disappears when Form Designer Gets Focus

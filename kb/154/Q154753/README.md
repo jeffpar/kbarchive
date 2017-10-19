@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154753: INFO: What Are the C/C++ Libraries My Program Would Link With?"
-permalink: kb/154/Q154753/
+permalink: /kb/154/Q154753/
 ---
 
 ## Q154753: INFO: What Are the C/C++ Libraries My Program Would Link With?

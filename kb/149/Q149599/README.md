@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149599: PPT7: Internet Assistant Commands Missing, Don't Work"
-permalink: kb/149/Q149599/
+permalink: /kb/149/Q149599/
 ---
 
 ## Q149599: PPT7: Internet Assistant Commands Missing, Don't Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174840: Disabling Buttons in the Windows NT Security Dialog Box"
-permalink: kb/174/Q174840/
+permalink: /kb/174/Q174840/
 ---
 
 ## Q174840: Disabling Buttons in the Windows NT Security Dialog Box

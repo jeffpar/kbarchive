@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171277: Microsoft Cluster Server Cluster Resource Failover Time"
-permalink: kb/171/Q171277/
+permalink: /kb/171/Q171277/
 ---
 
 ## Q171277: Microsoft Cluster Server Cluster Resource Failover Time

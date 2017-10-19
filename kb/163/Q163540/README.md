@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163540: Host Sends Logon Screen Before RUI_WRITE Completes on Open"
-permalink: kb/163/Q163540/
+permalink: /kb/163/Q163540/
 ---
 
 ## Q163540: Host Sends Logon Screen Before RUI_WRITE Completes on Open

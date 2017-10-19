@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114498: INFO: Transposing First Character w/ Last Character in a Field"
-permalink: kb/114/Q114498/
+permalink: /kb/114/Q114498/
 ---
 
 ## Q114498: INFO: Transposing First Character w/ Last Character in a Field

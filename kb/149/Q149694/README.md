@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149694: PCMCIA Problem on Austin Business Audio DX4 100 Color Notebook"
-permalink: kb/149/Q149694/
+permalink: /kb/149/Q149694/
 ---
 
 ## Q149694: PCMCIA Problem on Austin Business Audio DX4 100 Color Notebook

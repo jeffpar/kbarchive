@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32848: Switch Settings For Gateway G/NET Adapters"
-permalink: kb/032/Q32848/
+permalink: /kb/032/Q32848/
 ---
 
 ## Q32848: Switch Settings For Gateway G/NET Adapters

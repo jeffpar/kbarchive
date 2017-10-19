@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232240: SMS: Specifying Long File Name for Status MIF Causes Error"
-permalink: kb/232/Q232240/
+permalink: /kb/232/Q232240/
 ---
 
 ## Q232240: SMS: Specifying Long File Name for Status MIF Causes Error

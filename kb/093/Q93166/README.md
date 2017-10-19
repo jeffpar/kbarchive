@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93166: Secure PC May Prevent HIMEM.SYS from Loading"
-permalink: kb/093/Q93166/
+permalink: /kb/093/Q93166/
 ---
 
 ## Q93166: Secure PC May Prevent HIMEM.SYS from Loading

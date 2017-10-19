@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94153: HPPCL5E: Wrong Colors with Adobe Type Manager"
-permalink: kb/094/Q94153/
+permalink: /kb/094/Q94153/
 ---
 
 ## Q94153: HPPCL5E: Wrong Colors with Adobe Type Manager

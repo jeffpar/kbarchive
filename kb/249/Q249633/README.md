@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249633: Setting a Filter Allows no Real Time Scrolling in Listbox"
-permalink: kb/249/Q249633/
+permalink: /kb/249/Q249633/
 ---
 
 ## Q249633: Setting a Filter Allows no Real Time Scrolling in Listbox

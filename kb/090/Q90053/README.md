@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90053: Can't Install TrueType Fonts in Control Panel"
-permalink: kb/090/Q90053/
+permalink: /kb/090/Q90053/
 ---
 
 ## Q90053: Can't Install TrueType Fonts in Control Panel

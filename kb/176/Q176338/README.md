@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176338: PRB: Executing .Fetch of the VB5 MSMAPI32.OCX Can Hang VB"
-permalink: kb/176/Q176338/
+permalink: /kb/176/Q176338/
 ---
 
 ## Q176338: PRB: Executing .Fetch of the VB5 MSMAPI32.OCX Can Hang VB

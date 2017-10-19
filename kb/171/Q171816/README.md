@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171816: FIX: IPF Opening or Saving Form with Tab Control"
-permalink: kb/171/Q171816/
+permalink: /kb/171/Q171816/
 ---
 
 ## Q171816: FIX: IPF Opening or Saving Form with Tab Control

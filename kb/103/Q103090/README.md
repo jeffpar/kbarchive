@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103090: ERR: &quot;File Does Not Exist&quot; or &quot;Syntax Error&quot; on READ Command"
-permalink: kb/103/Q103090/
+permalink: /kb/103/Q103090/
 ---
 
 ## Q103090: ERR: &quot;File Does Not Exist&quot; or &quot;Syntax Error&quot; on READ Command

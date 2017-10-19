@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180728: SNA Manager Traps When Assigning Multiple LUs to a Workstation"
-permalink: kb/180/Q180728/
+permalink: /kb/180/Q180728/
 ---
 
 ## Q180728: SNA Manager Traps When Assigning Multiple LUs to a Workstation

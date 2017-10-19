@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130862: Unable to Start Quick Recorder as an OLE Server"
-permalink: kb/130/Q130862/
+permalink: /kb/130/Q130862/
 ---
 
 ## Q130862: Unable to Start Quick Recorder as an OLE Server

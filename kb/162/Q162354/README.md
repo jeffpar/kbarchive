@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162354: XADM: DS_E_COMMUNICATIONS_PROBLEM Running ISINTEG -PATCH"
-permalink: kb/162/Q162354/
+permalink: /kb/162/Q162354/
 ---
 
 ## Q162354: XADM: DS_E_COMMUNICATIONS_PROBLEM Running ISINTEG -PATCH

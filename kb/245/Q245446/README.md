@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245446: XCLN: Error Message: No Transport Provider Was Available"
-permalink: kb/245/Q245446/
+permalink: /kb/245/Q245446/
 ---
 
 ## Q245446: XCLN: Error Message: No Transport Provider Was Available

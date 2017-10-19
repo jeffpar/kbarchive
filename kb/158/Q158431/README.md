@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158431: HOWTO: Deploy a Project Adds Two .GIF Files"
-permalink: kb/158/Q158431/
+permalink: /kb/158/Q158431/
 ---
 
 ## Q158431: HOWTO: Deploy a Project Adds Two .GIF Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280513: PRB: VB6 App Has Run-Time Error 3633 When Run on New Computer"
-permalink: kb/280/Q280513/
+permalink: /kb/280/Q280513/
 ---
 
 ## Q280513: PRB: VB6 App Has Run-Time Error 3633 When Run on New Computer

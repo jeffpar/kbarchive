@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276600: XADM: Cannot Create an Exchange Cluster Resource"
-permalink: kb/276/Q276600/
+permalink: /kb/276/Q276600/
 ---
 
 ## Q276600: XADM: Cannot Create an Exchange Cluster Resource

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125472: PRB: Unable to Open Files That Have Certain Extensions"
-permalink: kb/125/Q125472/
+permalink: /kb/125/Q125472/
 ---
 
 ## Q125472: PRB: Unable to Open Files That Have Certain Extensions

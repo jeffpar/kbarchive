@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148727: XFOR: Internet Mail Connector Fails to Start"
-permalink: kb/148/Q148727/
+permalink: /kb/148/Q148727/
 ---
 
 ## Q148727: XFOR: Internet Mail Connector Fails to Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235685: Rule Mapping Incorrectly Deleted"
-permalink: kb/235/Q235685/
+permalink: /kb/235/Q235685/
 ---
 
 ## Q235685: Rule Mapping Incorrectly Deleted

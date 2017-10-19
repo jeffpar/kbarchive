@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97026: MemMaker Error: MEMMAKER cannot continue: Your computer's..."
-permalink: kb/097/Q97026/
+permalink: /kb/097/Q97026/
 ---
 
 ## Q97026: MemMaker Error: MEMMAKER cannot continue: Your computer's...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189162: WD97: Inserted Excel Worksheet Object Is Limited in Size"
-permalink: kb/189/Q189162/
+permalink: /kb/189/Q189162/
 ---
 
 ## Q189162: WD97: Inserted Excel Worksheet Object Is Limited in Size

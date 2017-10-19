@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168775: Unused Dependent LU6.2 Session Not Deactivated"
-permalink: kb/168/Q168775/
+permalink: /kb/168/Q168775/
 ---
 
 ## Q168775: Unused Dependent LU6.2 Session Not Deactivated

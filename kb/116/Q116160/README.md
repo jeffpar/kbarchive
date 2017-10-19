@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116160: Baseball: Can't Change or Delete Name in Player List"
-permalink: kb/116/Q116160/
+permalink: /kb/116/Q116160/
 ---
 
 ## Q116160: Baseball: Can't Change or Delete Name in Player List

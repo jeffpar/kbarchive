@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143167: WD97: Footnote Reference Mark Converted to Arabic Number"
-permalink: kb/143/Q143167/
+permalink: /kb/143/Q143167/
 ---
 
 ## Q143167: WD97: Footnote Reference Mark Converted to Arabic Number

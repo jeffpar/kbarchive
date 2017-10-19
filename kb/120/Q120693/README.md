@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120693: Dual Processor MIPS Computer with Proteon NIC Hangs At Startup"
-permalink: kb/120/Q120693/
+permalink: /kb/120/Q120693/
 ---
 
 ## Q120693: Dual Processor MIPS Computer with Proteon NIC Hangs At Startup

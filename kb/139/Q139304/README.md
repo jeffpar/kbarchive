@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139304: PPT7: Unexpected Font Substitution Caused by Some Printer Driver"
-permalink: kb/139/Q139304/
+permalink: /kb/139/Q139304/
 ---
 
 ## Q139304: PPT7: Unexpected Font Substitution Caused by Some Printer Driver

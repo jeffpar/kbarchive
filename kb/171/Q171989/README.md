@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171989: Windows NT Services for Macintosh May Not Start in Desired Zone"
-permalink: kb/171/Q171989/
+permalink: /kb/171/Q171989/
 ---
 
 ## Q171989: Windows NT Services for Macintosh May Not Start in Desired Zone

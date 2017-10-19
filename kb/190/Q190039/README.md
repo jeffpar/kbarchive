@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190039: BUG: VB Crashes When Deselecting Multi-Selected Objects"
-permalink: kb/190/Q190039/
+permalink: /kb/190/Q190039/
 ---
 
 ## Q190039: BUG: VB Crashes When Deselecting Multi-Selected Objects

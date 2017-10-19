@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174159: DOC: Correction for VB Setup Wizard Code Signing Info"
-permalink: kb/174/Q174159/
+permalink: /kb/174/Q174159/
 ---
 
 ## Q174159: DOC: Correction for VB Setup Wizard Code Signing Info

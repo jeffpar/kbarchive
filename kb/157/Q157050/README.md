@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157050: PRB: Loops of @..SAY &lt;General field&gt; Causes GPF"
-permalink: kb/157/Q157050/
+permalink: /kb/157/Q157050/
 ---
 
 ## Q157050: PRB: Loops of @..SAY &lt;General field&gt; Causes GPF

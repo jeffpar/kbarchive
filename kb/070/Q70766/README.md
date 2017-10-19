@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70766: Using Intercon Gold Card with Windows 3.0"
-permalink: kb/070/Q70766/
+permalink: /kb/070/Q70766/
 ---
 
 ## Q70766: Using Intercon Gold Card with Windows 3.0

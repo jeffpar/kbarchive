@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184150: WD97: Text Marked as Deleted Marked as Inserted After Insert Fil"
-permalink: kb/184/Q184150/
+permalink: /kb/184/Q184150/
 ---
 
 ## Q184150: WD97: Text Marked as Deleted Marked as Inserted After Insert Fil

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198386: Changes in IRP Stack Size in Lanman Server"
-permalink: kb/198/Q198386/
+permalink: /kb/198/Q198386/
 ---
 
 ## Q198386: Changes in IRP Stack Size in Lanman Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113916: Copy from One Novell Server to Another Fails"
-permalink: kb/113/Q113916/
+permalink: /kb/113/Q113916/
 ---
 
 ## Q113916: Copy from One Novell Server to Another Fails

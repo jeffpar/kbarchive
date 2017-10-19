@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93702: PPT: How to Write and Use a List File in PowerPoint Viewer"
-permalink: kb/093/Q93702/
+permalink: /kb/093/Q93702/
 ---
 
 ## Q93702: PPT: How to Write and Use a List File in PowerPoint Viewer

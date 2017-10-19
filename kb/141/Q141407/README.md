@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141407: Wine Guide: Search Word Not Highlighted When Using NT"
-permalink: kb/141/Q141407/
+permalink: /kb/141/Q141407/
 ---
 
 ## Q141407: Wine Guide: Search Word Not Highlighted When Using NT

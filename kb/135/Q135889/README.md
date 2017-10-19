@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135889: Windows 95 CD-ROM Network.txt File"
-permalink: kb/135/Q135889/
+permalink: /kb/135/Q135889/
 ---
 
 ## Q135889: Windows 95 CD-ROM Network.txt File

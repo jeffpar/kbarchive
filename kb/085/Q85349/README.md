@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85349: FAX: Changes Made to the Mail Database During Installation"
-permalink: kb/085/Q85349/
+permalink: /kb/085/Q85349/
 ---
 
 ## Q85349: FAX: Changes Made to the Mail Database During Installation

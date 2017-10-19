@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87548: FIX: Upper Half of 32-bit Registers, GS, and FS Corrupt"
-permalink: kb/087/Q87548/
+permalink: /kb/087/Q87548/
 ---
 
 ## Q87548: FIX: Upper Half of 32-bit Registers, GS, and FS Corrupt

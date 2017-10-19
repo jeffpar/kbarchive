@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116333: MS-DOS 6.22 Step-Up Directory Listing 3.5-Inch 1.44 MB Set"
-permalink: kb/116/Q116333/
+permalink: /kb/116/Q116333/
 ---
 
 ## Q116333: MS-DOS 6.22 Step-Up Directory Listing 3.5-Inch 1.44 MB Set

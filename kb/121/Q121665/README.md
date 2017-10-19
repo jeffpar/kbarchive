@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121665: INFO: GetDescendantWindow - bOnlyPerm Parameter Incorrect"
-permalink: kb/121/Q121665/
+permalink: /kb/121/Q121665/
 ---
 
 ## Q121665: INFO: GetDescendantWindow - bOnlyPerm Parameter Incorrect

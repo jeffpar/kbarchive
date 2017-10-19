@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104893: FIX: Using /4Yb and /Ox Together Is Not Recommended"
-permalink: kb/104/Q104893/
+permalink: /kb/104/Q104893/
 ---
 
 ## Q104893: FIX: Using /4Yb and /Ox Together Is Not Recommended

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152479: Err Msg: You Are Not this Person's Assistant"
-permalink: kb/152/Q152479/
+permalink: /kb/152/Q152479/
 ---
 
 ## Q152479: Err Msg: You Are Not this Person's Assistant

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244536: WD97: Word Stops Responding When Sending MS Mail on Windows NT"
-permalink: kb/244/Q244536/
+permalink: /kb/244/Q244536/
 ---
 
 ## Q244536: WD97: Word Stops Responding When Sending MS Mail on Windows NT

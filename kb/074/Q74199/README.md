@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74199: MS-DOS Shell Does Not Update the Directory Tree with CTRL+F5"
-permalink: kb/074/Q74199/
+permalink: /kb/074/Q74199/
 ---
 
 ## Q74199: MS-DOS Shell Does Not Update the Directory Tree with CTRL+F5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221535: C0000008 (INVALID_HANDLE) Occurs When Restarting ASP Application"
-permalink: kb/221/Q221535/
+permalink: /kb/221/Q221535/
 ---
 
 ## Q221535: C0000008 (INVALID_HANDLE) Occurs When Restarting ASP Application

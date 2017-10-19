@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159789: Windows NT 4.0 OLE Automation Data Marshalling Error"
-permalink: kb/159/Q159789/
+permalink: /kb/159/Q159789/
 ---
 
 ## Q159789: Windows NT 4.0 OLE Automation Data Marshalling Error

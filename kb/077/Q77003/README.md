@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77003: Novell NET5.COM Installation and Command Line Help Information"
-permalink: kb/077/Q77003/
+permalink: /kb/077/Q77003/
 ---
 
 ## Q77003: Novell NET5.COM Installation and Command Line Help Information

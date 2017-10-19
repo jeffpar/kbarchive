@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70262: FIX: Invalid Executable File, 65,535 Byte Stack Size Requested"
-permalink: kb/070/Q70262/
+permalink: /kb/070/Q70262/
 ---
 
 ## Q70262: FIX: Invalid Executable File, 65,535 Byte Stack Size Requested

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234898: XCLN: How to Manage Outlook 97 with System Policies"
-permalink: kb/234/Q234898/
+permalink: /kb/234/Q234898/
 ---
 
 ## Q234898: XCLN: How to Manage Outlook 97 with System Policies

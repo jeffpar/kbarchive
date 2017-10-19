@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137893: SMS: No Validity Checking for Date/Time Field in Query"
-permalink: kb/137/Q137893/
+permalink: /kb/137/Q137893/
 ---
 
 ## Q137893: SMS: No Validity Checking for Date/Time Field in Query

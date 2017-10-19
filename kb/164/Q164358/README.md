@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164358: PRB: Handling Violation of Field Rules in Forms"
-permalink: kb/164/Q164358/
+permalink: /kb/164/Q164358/
 ---
 
 ## Q164358: PRB: Handling Violation of Field Rules in Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93618: Using FoxBASE+/Mac .DBF Files with Microsoft Excel 4.0"
-permalink: kb/093/Q93618/
+permalink: /kb/093/Q93618/
 ---
 
 ## Q93618: Using FoxBASE+/Mac .DBF Files with Microsoft Excel 4.0

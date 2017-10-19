@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164221: INFO: How to Enable Connection Pooling in an ODBC Application"
-permalink: kb/164/Q164221/
+permalink: /kb/164/Q164221/
 ---
 
 ## Q164221: INFO: How to Enable Connection Pooling in an ODBC Application

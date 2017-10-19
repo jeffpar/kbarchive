@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245754: BUG: Windows 2000 RichEdit Control Generates WM_CONTEXTMENU Mess"
-permalink: kb/245/Q245754/
+permalink: /kb/245/Q245754/
 ---
 
 ## Q245754: BUG: Windows 2000 RichEdit Control Generates WM_CONTEXTMENU Mess

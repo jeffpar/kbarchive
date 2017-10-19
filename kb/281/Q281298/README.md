@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281298: PRB: Session Variables Do Not Persist When Global.asa Is Empty"
-permalink: kb/281/Q281298/
+permalink: /kb/281/Q281298/
 ---
 
 ## Q281298: PRB: Session Variables Do Not Persist When Global.asa Is Empty

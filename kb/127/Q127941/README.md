@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127941: How to Create and Manipulate Multiple-Column List Boxes"
-permalink: kb/127/Q127941/
+permalink: /kb/127/Q127941/
 ---
 
 ## Q127941: How to Create and Manipulate Multiple-Column List Boxes

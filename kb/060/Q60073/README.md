@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60073: Instruction: Step Turns Airspeed to High"
-permalink: kb/060/Q60073/
+permalink: /kb/060/Q60073/
 ---
 
 ## Q60073: Instruction: Step Turns Airspeed to High

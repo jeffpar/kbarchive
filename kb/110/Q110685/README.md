@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110685: Problems with HP Jet Direct Card and 16 Mbps Token Ring Net"
-permalink: kb/110/Q110685/
+permalink: /kb/110/Q110685/
 ---
 
 ## Q110685: Problems with HP Jet Direct Card and 16 Mbps Token Ring Net

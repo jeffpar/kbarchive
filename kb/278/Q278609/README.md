@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278609: SMS: Can't Modify Distribution Points for Packages from Parent"
-permalink: kb/278/Q278609/
+permalink: /kb/278/Q278609/
 ---
 
 ## Q278609: SMS: Can't Modify Distribution Points for Packages from Parent

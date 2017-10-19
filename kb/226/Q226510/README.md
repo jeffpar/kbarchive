@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226510: SMS_DISCOVERY_DATA_MANAGER Status &quot;Failed to Enumerate Sites&quot;"
-permalink: kb/226/Q226510/
+permalink: /kb/226/Q226510/
 ---
 
 ## Q226510: SMS_DISCOVERY_DATA_MANAGER Status &quot;Failed to Enumerate Sites&quot;

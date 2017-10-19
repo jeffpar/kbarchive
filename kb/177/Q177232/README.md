@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177232: FP/VID VSS Control of OOP Application Causes Random Errors"
-permalink: kb/177/Q177232/
+permalink: /kb/177/Q177232/
 ---
 
 ## Q177232: FP/VID VSS Control of OOP Application Causes Random Errors

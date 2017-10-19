@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249197: Internet Explorer Does Not Allow Use of Single SGC Certificate"
-permalink: kb/249/Q249197/
+permalink: /kb/249/Q249197/
 ---
 
 ## Q249197: Internet Explorer Does Not Allow Use of Single SGC Certificate

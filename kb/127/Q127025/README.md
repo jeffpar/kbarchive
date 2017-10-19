@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127025: Switch Required for USERTSR for WFW 3.1 Clients"
-permalink: kb/127/Q127025/
+permalink: /kb/127/Q127025/
 ---
 
 ## Q127025: Switch Required for USERTSR for WFW 3.1 Clients

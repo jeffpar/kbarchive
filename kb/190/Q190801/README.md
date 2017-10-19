@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190801: PRB: Failed to Verify Platform or OS Version"
-permalink: kb/190/Q190801/
+permalink: /kb/190/Q190801/
 ---
 
 ## Q190801: PRB: Failed to Verify Platform or OS Version

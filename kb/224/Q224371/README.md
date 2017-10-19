@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224371: IIS Error: The RPC Server is Unavailable"
-permalink: kb/224/Q224371/
+permalink: /kb/224/Q224371/
 ---
 
 ## Q224371: IIS Error: The RPC Server is Unavailable

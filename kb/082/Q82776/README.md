@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82776: Setup Hangs After Successful Boot into Windows"
-permalink: kb/082/Q82776/
+permalink: /kb/082/Q82776/
 ---
 
 ## Q82776: Setup Hangs After Successful Boot into Windows

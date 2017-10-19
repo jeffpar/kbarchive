@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129602: Functional Description of SMSWORK"
-permalink: kb/129/Q129602/
+permalink: /kb/129/Q129602/
 ---
 
 ## Q129602: Functional Description of SMSWORK

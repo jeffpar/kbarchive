@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238006: Problem Viewing Main Client Printer Check Box in User Manager"
-permalink: kb/238/Q238006/
+permalink: /kb/238/Q238006/
 ---
 
 ## Q238006: Problem Viewing Main Client Printer Check Box in User Manager

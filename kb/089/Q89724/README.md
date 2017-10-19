@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89724: Use New Disk Manager Drivers After MS-DOS Uninstall"
-permalink: kb/089/Q89724/
+permalink: /kb/089/Q89724/
 ---
 
 ## Q89724: Use New Disk Manager Drivers After MS-DOS Uninstall

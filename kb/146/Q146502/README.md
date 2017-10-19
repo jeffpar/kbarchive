@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146502: Which Schedule+ Meeting Time is Correct?"
-permalink: kb/146/Q146502/
+permalink: /kb/146/Q146502/
 ---
 
 ## Q146502: Which Schedule+ Meeting Time is Correct?

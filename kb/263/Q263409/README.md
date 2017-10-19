@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263409: Admin Console: WinNT Diagnostics/Perform Mon. Attach Incorrectly"
-permalink: kb/263/Q263409/
+permalink: /kb/263/Q263409/
 ---
 
 ## Q263409: Admin Console: WinNT Diagnostics/Perform Mon. Attach Incorrectly

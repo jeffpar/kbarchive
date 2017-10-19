@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162489: Server Fails w/ SNA Server Event 624 and SnaBase Event 686"
-permalink: kb/162/Q162489/
+permalink: /kb/162/Q162489/
 ---
 
 ## Q162489: Server Fails w/ SNA Server Event 624 and SnaBase Event 686

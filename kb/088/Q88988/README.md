@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88988: SET SAFETY OFF Command Suppresses Messages"
-permalink: kb/088/Q88988/
+permalink: /kb/088/Q88988/
 ---
 
 ## Q88988: SET SAFETY OFF Command Suppresses Messages

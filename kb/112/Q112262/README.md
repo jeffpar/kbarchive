@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112262: PC MAPI: MAPI_SENT Set Improperly on Shared Folder Messages"
-permalink: kb/112/Q112262/
+permalink: /kb/112/Q112262/
 ---
 
 ## Q112262: PC MAPI: MAPI_SENT Set Improperly on Shared Folder Messages

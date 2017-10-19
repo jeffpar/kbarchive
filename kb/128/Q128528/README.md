@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128528: How to Create a Resizeable Grid"
-permalink: kb/128/Q128528/
+permalink: /kb/128/Q128528/
 ---
 
 ## Q128528: How to Create a Resizeable Grid

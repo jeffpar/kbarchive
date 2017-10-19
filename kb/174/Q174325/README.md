@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174325: WD97: Some CorelDRAW EMF Graphics Do Not Display Gradients"
-permalink: kb/174/Q174325/
+permalink: /kb/174/Q174325/
 ---
 
 ## Q174325: WD97: Some CorelDRAW EMF Graphics Do Not Display Gradients

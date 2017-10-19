@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78359: How to Install RAS/LAN Manager on Dual 720K Floppy Disks"
-permalink: kb/078/Q78359/
+permalink: /kb/078/Q78359/
 ---
 
 ## Q78359: How to Install RAS/LAN Manager on Dual 720K Floppy Disks

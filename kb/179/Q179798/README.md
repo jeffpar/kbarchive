@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179798: How to Increase Free Space on Your Hard Disk"
-permalink: kb/179/Q179798/
+permalink: /kb/179/Q179798/
 ---
 
 ## Q179798: How to Increase Free Space on Your Hard Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297779: FIX:Closing Connection While View Designer Open Crashes VFP"
-permalink: kb/297/Q297779/
+permalink: /kb/297/Q297779/
 ---
 
 ## Q297779: FIX:Closing Connection While View Designer Open Crashes VFP

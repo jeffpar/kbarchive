@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185571: Printing from Lotus Freelance 97 Produces Thin Horizontal Line"
-permalink: kb/185/Q185571/
+permalink: /kb/185/Q185571/
 ---
 
 ## Q185571: Printing from Lotus Freelance 97 Produces Thin Horizontal Line

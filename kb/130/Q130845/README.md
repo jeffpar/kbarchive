@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130845: FAX: Intel SatisFAXtion 200 No Longer Sold by Intel"
-permalink: kb/130/Q130845/
+permalink: /kb/130/Q130845/
 ---
 
 ## Q130845: FAX: Intel SatisFAXtion 200 No Longer Sold by Intel

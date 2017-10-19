@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163737: &quot;( sequence causes DNS ERROR: 204 Unexpected Token &quot;IN&quot;"
-permalink: kb/163/Q163737/
+permalink: /kb/163/Q163737/
 ---
 
 ## Q163737: &quot;( sequence causes DNS ERROR: 204 Unexpected Token &quot;IN&quot;

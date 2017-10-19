@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68556: DlgMain.exe Uses a Dialog Box as the Main Window"
-permalink: kb/068/Q68556/
+permalink: /kb/068/Q68556/
 ---
 
 ## Q68556: DlgMain.exe Uses a Dialog Box as the Main Window

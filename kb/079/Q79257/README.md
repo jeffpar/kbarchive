@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79257: Ahead Systems Video Drivers for Windows"
-permalink: kb/079/Q79257/
+permalink: /kb/079/Q79257/
 ---
 
 ## Q79257: Ahead Systems Video Drivers for Windows

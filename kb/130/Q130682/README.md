@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130682: SMS: Automating Installations of Windows for Workgroups 3.11"
-permalink: kb/130/Q130682/
+permalink: /kb/130/Q130682/
 ---
 
 ## Q130682: SMS: Automating Installations of Windows for Workgroups 3.11

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157582: Soccer: Multiplayer Troubleshooting"
-permalink: kb/157/Q157582/
+permalink: /kb/157/Q157582/
 ---
 
 ## Q157582: Soccer: Multiplayer Troubleshooting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143015: PPT7: Text Printed Incorrectly on HP DeskJet 500"
-permalink: kb/143/Q143015/
+permalink: /kb/143/Q143015/
 ---
 
 ## Q143015: PPT7: Text Printed Incorrectly on HP DeskJet 500

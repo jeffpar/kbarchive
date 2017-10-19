@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139474: Cannot Access Floppy Drive When Backup Program Is Running"
-permalink: kb/139/Q139474/
+permalink: /kb/139/Q139474/
 ---
 
 ## Q139474: Cannot Access Floppy Drive When Backup Program Is Running

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184737: XADM: Cannot Start Information Store and MTA After Setup /R Usin"
-permalink: kb/184/Q184737/
+permalink: /kb/184/Q184737/
 ---
 
 ## Q184737: XADM: Cannot Start Information Store and MTA After Setup /R Usin

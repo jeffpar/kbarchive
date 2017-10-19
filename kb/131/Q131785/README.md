@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131785: Cannot Find Home Directory Share on Windows NT Server"
-permalink: kb/131/Q131785/
+permalink: /kb/131/Q131785/
 ---
 
 ## Q131785: Cannot Find Home Directory Share on Windows NT Server

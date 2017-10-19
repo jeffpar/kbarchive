@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180930: Access Violation in SNA Manager When Editing DLS Properties"
-permalink: kb/180/Q180930/
+permalink: /kb/180/Q180930/
 ---
 
 ## Q180930: Access Violation in SNA Manager When Editing DLS Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234327: Advertisements Do Not Run if Drive Letter Is Already Mapped"
-permalink: kb/234/Q234327/
+permalink: /kb/234/Q234327/
 ---
 
 ## Q234327: Advertisements Do Not Run if Drive Letter Is Already Mapped

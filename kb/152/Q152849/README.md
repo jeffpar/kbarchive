@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152849: XADM: How to Recover from a Lost Key Management Server"
-permalink: kb/152/Q152849/
+permalink: /kb/152/Q152849/
 ---
 
 ## Q152849: XADM: How to Recover from a Lost Key Management Server

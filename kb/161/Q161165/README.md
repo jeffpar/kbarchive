@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161165: Domain User Cannot Add a Local Printer"
-permalink: kb/161/Q161165/
+permalink: /kb/161/Q161165/
 ---
 
 ## Q161165: Domain User Cannot Add a Local Printer

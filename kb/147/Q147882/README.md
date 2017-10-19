@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147882: HOWTO: DAO: Assign a Recordset to a Data Control in VB"
-permalink: kb/147/Q147882/
+permalink: /kb/147/Q147882/
 ---
 
 ## Q147882: HOWTO: DAO: Assign a Recordset to a Data Control in VB

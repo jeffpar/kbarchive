@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196141: PRB: Problems Using Intrinsic File System Controls"
-permalink: kb/196/Q196141/
+permalink: /kb/196/Q196141/
 ---
 
 ## Q196141: PRB: Problems Using Intrinsic File System Controls

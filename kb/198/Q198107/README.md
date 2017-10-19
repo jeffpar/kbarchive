@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198107: XGEN: Fixes in Ol98qfe.exe that Shipped w/Exchange 5.5 SP1"
-permalink: kb/198/Q198107/
+permalink: /kb/198/Q198107/
 ---
 
 ## Q198107: XGEN: Fixes in Ol98qfe.exe that Shipped w/Exchange 5.5 SP1

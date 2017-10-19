@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216930: Unable to Update Driver With Files in the Root Folder"
-permalink: kb/216/Q216930/
+permalink: /kb/216/Q216930/
 ---
 
 ## Q216930: Unable to Update Driver With Files in the Root Folder

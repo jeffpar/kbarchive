@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134517: No Sound Playing Turtle Tools CD-ROM from SoundBank"
-permalink: kb/134/Q134517/
+permalink: /kb/134/Q134517/
 ---
 
 ## Q134517: No Sound Playing Turtle Tools CD-ROM from SoundBank

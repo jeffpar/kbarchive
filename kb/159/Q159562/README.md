@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159562: WD97: Determining the Current Page and Section Number"
-permalink: kb/159/Q159562/
+permalink: /kb/159/Q159562/
 ---
 
 ## Q159562: WD97: Determining the Current Page and Section Number

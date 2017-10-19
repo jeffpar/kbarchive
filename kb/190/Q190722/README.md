@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190722: XADM: MoveUser Fails After Running ISINTEG"
-permalink: kb/190/Q190722/
+permalink: /kb/190/Q190722/
 ---
 
 ## Q190722: XADM: MoveUser Fails After Running ISINTEG

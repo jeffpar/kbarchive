@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142914: Error Reading Magneto Optical Drives in Windows NT"
-permalink: kb/142/Q142914/
+permalink: /kb/142/Q142914/
 ---
 
 ## Q142914: Error Reading Magneto Optical Drives in Windows NT

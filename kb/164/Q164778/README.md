@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164778: BUG: Loading Visual Test Project May Crash Developer Studio"
-permalink: kb/164/Q164778/
+permalink: /kb/164/Q164778/
 ---
 
 ## Q164778: BUG: Loading Visual Test Project May Crash Developer Studio

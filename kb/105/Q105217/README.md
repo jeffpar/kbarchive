@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105217: Scenes 1.0: Cannot Write to Scenes File"
-permalink: kb/105/Q105217/
+permalink: /kb/105/Q105217/
 ---
 
 ## Q105217: Scenes 1.0: Cannot Write to Scenes File

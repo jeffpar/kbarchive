@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147660: Schubert: Minimum System Requirements"
-permalink: kb/147/Q147660/
+permalink: /kb/147/Q147660/
 ---
 
 ## Q147660: Schubert: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93584: EMM386.EXE: Default DMA Buffer Size"
-permalink: kb/093/Q93584/
+permalink: /kb/093/Q93584/
 ---
 
 ## Q93584: EMM386.EXE: Default DMA Buffer Size

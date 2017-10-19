@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163332: SLI Application Stops Responding When Issuing SLI_SEND"
-permalink: kb/163/Q163332/
+permalink: /kb/163/Q163332/
 ---
 
 ## Q163332: SLI Application Stops Responding When Issuing SLI_SEND

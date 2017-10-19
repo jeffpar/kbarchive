@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142372: Windows NT Support For Long File Names Under CDFS File System"
-permalink: kb/142/Q142372/
+permalink: /kb/142/Q142372/
 ---
 
 ## Q142372: Windows NT Support For Long File Names Under CDFS File System

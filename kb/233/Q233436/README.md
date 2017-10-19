@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233436: Business Planner: Background Color of Copied Table Changes"
-permalink: kb/233/Q233436/
+permalink: /kb/233/Q233436/
 ---
 
 ## Q233436: Business Planner: Background Color of Copied Table Changes

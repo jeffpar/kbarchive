@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241832: Err Msg: 401.4 Unauthorized: Authorization Denied by Filter"
-permalink: kb/241/Q241832/
+permalink: /kb/241/Q241832/
 ---
 
 ## Q241832: Err Msg: 401.4 Unauthorized: Authorization Denied by Filter

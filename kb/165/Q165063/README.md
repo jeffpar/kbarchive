@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165063: &quot;Filesec.vxd&quot; Error Message When Personal Web Server Installed"
-permalink: kb/165/Q165063/
+permalink: /kb/165/Q165063/
 ---
 
 ## Q165063: &quot;Filesec.vxd&quot; Error Message When Personal Web Server Installed

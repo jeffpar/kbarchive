@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111095: BUG: Nonscrolling Region in Help File Topic Does Scroll"
-permalink: kb/111/Q111095/
+permalink: /kb/111/Q111095/
 ---
 
 ## Q111095: BUG: Nonscrolling Region in Help File Topic Does Scroll

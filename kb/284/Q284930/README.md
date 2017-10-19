@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284930: INFO:  Issues Administering IIS 5.0 from IIS 4.0 MMC"
-permalink: kb/284/Q284930/
+permalink: /kb/284/Q284930/
 ---
 
 ## Q284930: INFO:  Issues Administering IIS 5.0 from IIS 4.0 MMC

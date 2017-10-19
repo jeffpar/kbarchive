@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150230: FIX: &quot;Function call on Left-hand side of assignment...&quot; Error"
-permalink: kb/150/Q150230/
+permalink: /kb/150/Q150230/
 ---
 
 ## Q150230: FIX: &quot;Function call on Left-hand side of assignment...&quot; Error

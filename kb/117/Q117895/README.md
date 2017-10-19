@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117895: PC Adm: 007 Error Caused by Missing .MEM File"
-permalink: kb/117/Q117895/
+permalink: /kb/117/Q117895/
 ---
 
 ## Q117895: PC Adm: 007 Error Caused by Missing .MEM File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171837: FIX: Run-time Error 6 &quot;Overflow When Compiled to Native Code&quot;"
-permalink: kb/171/Q171837/
+permalink: /kb/171/Q171837/
 ---
 
 ## Q171837: FIX: Run-time Error 6 &quot;Overflow When Compiled to Native Code&quot;

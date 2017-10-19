@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164608: XWEB: Logging in from Web Requires ALIAS Name"
-permalink: kb/164/Q164608/
+permalink: /kb/164/Q164608/
 ---
 
 ## Q164608: XWEB: Logging in from Web Requires ALIAS Name

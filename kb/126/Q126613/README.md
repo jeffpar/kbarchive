@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126613: BUG: Connection Fails with SQLSetConnectOption-SQLConnect"
-permalink: kb/126/Q126613/
+permalink: /kb/126/Q126613/
 ---
 
 ## Q126613: BUG: Connection Fails with SQLSetConnectOption-SQLConnect

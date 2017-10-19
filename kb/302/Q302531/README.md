@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302531: How To Add A User"
-permalink: kb/302/Q302531/
+permalink: /kb/302/Q302531/
 ---
 
 ## Q302531: How To Add A User

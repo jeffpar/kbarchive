@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125873: FORTRAN PowerStation 1.0a ANSWERS.TXT"
-permalink: kb/125/Q125873/
+permalink: /kb/125/Q125873/
 ---
 
 ## Q125873: FORTRAN PowerStation 1.0a ANSWERS.TXT

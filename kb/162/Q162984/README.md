@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162984: WD97: Error Inserting Video Clip In HTML Document"
-permalink: kb/162/Q162984/
+permalink: /kb/162/Q162984/
 ---
 
 ## Q162984: WD97: Error Inserting Video Clip In HTML Document

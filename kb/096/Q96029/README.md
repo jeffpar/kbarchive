@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96029: SPEEDCACHE PLUS Version 4.3 Not MS-DOS 6.x-Compatible"
-permalink: kb/096/Q96029/
+permalink: /kb/096/Q96029/
 ---
 
 ## Q96029: SPEEDCACHE PLUS Version 4.3 Not MS-DOS 6.x-Compatible

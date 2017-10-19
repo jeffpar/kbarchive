@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122714: ADT: Data Outline Control Events Not Triggered"
-permalink: kb/122/Q122714/
+permalink: /kb/122/Q122714/
 ---
 
 ## Q122714: ADT: Data Outline Control Events Not Triggered

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186103: HOWTO: Use Oracle Nextval Function from Visual FoxPro"
-permalink: kb/186/Q186103/
+permalink: /kb/186/Q186103/
 ---
 
 ## Q186103: HOWTO: Use Oracle Nextval Function from Visual FoxPro

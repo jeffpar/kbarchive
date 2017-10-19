@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238189: XCON: Duplicate Messages Delivered After MTA Restart"
-permalink: kb/238/Q238189/
+permalink: /kb/238/Q238189/
 ---
 
 ## Q238189: XCON: Duplicate Messages Delivered After MTA Restart

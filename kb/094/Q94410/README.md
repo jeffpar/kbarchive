@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94410: FFAPI: Basic Address Formats for Gateways"
-permalink: kb/094/Q94410/
+permalink: /kb/094/Q94410/
 ---
 
 ## Q94410: FFAPI: Basic Address Formats for Gateways

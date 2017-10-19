@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82349: CodeView Hangs if VM Opened During Debugging"
-permalink: kb/082/Q82349/
+permalink: /kb/082/Q82349/
 ---
 
 ## Q82349: CodeView Hangs if VM Opened During Debugging

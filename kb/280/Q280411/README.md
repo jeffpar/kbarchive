@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280411: XADM: Sender Does Not Receive an NDR"
-permalink: kb/280/Q280411/
+permalink: /kb/280/Q280411/
 ---
 
 ## Q280411: XADM: Sender Does Not Receive an NDR

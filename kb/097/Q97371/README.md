@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97371: SAMPLE: VLB.exe Implements a Virtual List Box"
-permalink: kb/097/Q97371/
+permalink: /kb/097/Q97371/
 ---
 
 ## Q97371: SAMPLE: VLB.exe Implements a Virtual List Box

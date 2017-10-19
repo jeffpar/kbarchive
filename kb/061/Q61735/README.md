@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61735: Windows 3.0 Disk Directories (5.25 Inch, 1.2 MB)"
-permalink: kb/061/Q61735/
+permalink: /kb/061/Q61735/
 ---
 
 ## Q61735: Windows 3.0 Disk Directories (5.25 Inch, 1.2 MB)

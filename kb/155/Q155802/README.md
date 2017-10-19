@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155802: WD97: Word Doesn't Find &quot;Float Over Text&quot; Objects"
-permalink: kb/155/Q155802/
+permalink: /kb/155/Q155802/
 ---
 
 ## Q155802: WD97: Word Doesn't Find &quot;Float Over Text&quot; Objects

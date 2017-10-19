@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171538: FIX: Can't Set Property on Interface That Has Attached Root"
-permalink: kb/171/Q171538/
+permalink: /kb/171/Q171538/
 ---
 
 ## Q171538: FIX: Can't Set Property on Interface That Has Attached Root

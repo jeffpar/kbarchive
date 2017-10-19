@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237541: XADM: Exchange Perfmon Counters Not Visible on Cluster"
-permalink: kb/237/Q237541/
+permalink: /kb/237/Q237541/
 ---
 
 ## Q237541: XADM: Exchange Perfmon Counters Not Visible on Cluster

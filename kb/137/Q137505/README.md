@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137505: IBM 16/4 Auto Token Ring Adapter Driver Causes Event ID 7000"
-permalink: kb/137/Q137505/
+permalink: /kb/137/Q137505/
 ---
 
 ## Q137505: IBM 16/4 Auto Token Ring Adapter Driver Causes Event ID 7000

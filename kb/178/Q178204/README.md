@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178204: XCON: MTA Using 100% CPU on Receiving Message"
-permalink: kb/178/Q178204/
+permalink: /kb/178/Q178204/
 ---
 
 ## Q178204: XCON: MTA Using 100% CPU on Receiving Message

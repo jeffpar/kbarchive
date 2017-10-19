@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164036: How To Force 128-Bit SSL Connections With IIS 3.0"
-permalink: kb/164/Q164036/
+permalink: /kb/164/Q164036/
 ---
 
 ## Q164036: How To Force 128-Bit SSL Connections With IIS 3.0

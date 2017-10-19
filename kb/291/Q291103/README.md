@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291103: BUG: InsertObjDlg Fails with &quot;Unable to Access Source&quot; Err Msg"
-permalink: kb/291/Q291103/
+permalink: /kb/291/Q291103/
 ---
 
 ## Q291103: BUG: InsertObjDlg Fails with &quot;Unable to Access Source&quot; Err Msg

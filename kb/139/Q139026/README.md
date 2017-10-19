@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139026: DOC: Remote Debugging with TCP/IP Isn't Supported on Win32s"
-permalink: kb/139/Q139026/
+permalink: /kb/139/Q139026/
 ---
 
 ## Q139026: DOC: Remote Debugging with TCP/IP Isn't Supported on Win32s

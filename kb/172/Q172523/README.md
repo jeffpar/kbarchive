@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172523: Content Advisor Screen Opens Unexpectedly"
-permalink: kb/172/Q172523/
+permalink: /kb/172/Q172523/
 ---
 
 ## Q172523: Content Advisor Screen Opens Unexpectedly

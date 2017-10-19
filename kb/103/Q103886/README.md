@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103886: OSI Model: Standard Data Flow Architecture"
-permalink: kb/103/Q103886/
+permalink: /kb/103/Q103886/
 ---
 
 ## Q103886: OSI Model: Standard Data Flow Architecture

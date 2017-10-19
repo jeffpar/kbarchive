@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57640: Net Print Job Appears Twice in Print Manager"
-permalink: kb/057/Q57640/
+permalink: /kb/057/Q57640/
 ---
 
 ## Q57640: Net Print Job Appears Twice in Print Manager

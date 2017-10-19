@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175615: FIX: Upsize Wizard Keeps Structure of Removed Table for Mapping"
-permalink: kb/175/Q175615/
+permalink: /kb/175/Q175615/
 ---
 
 ## Q175615: FIX: Upsize Wizard Keeps Structure of Removed Table for Mapping

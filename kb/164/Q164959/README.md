@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164959: XADM: Encryption Does Not Work in Public Folders"
-permalink: kb/164/Q164959/
+permalink: /kb/164/Q164959/
 ---
 
 ## Q164959: XADM: Encryption Does Not Work in Public Folders

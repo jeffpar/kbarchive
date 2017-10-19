@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129296: Column Widths Saved for Each Folder"
-permalink: kb/129/Q129296/
+permalink: /kb/129/Q129296/
 ---
 
 ## Q129296: Column Widths Saved for Each Folder

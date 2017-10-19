@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74507: BUG: Combo Boxes in DS_SYSMODAL Dialog Boxes"
-permalink: kb/074/Q74507/
+permalink: /kb/074/Q74507/
 ---
 
 ## Q74507: BUG: Combo Boxes in DS_SYSMODAL Dialog Boxes

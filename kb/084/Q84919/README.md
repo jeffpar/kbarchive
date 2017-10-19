@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84919: Terminal Communications Screen Jumbled"
-permalink: kb/084/Q84919/
+permalink: /kb/084/Q84919/
 ---
 
 ## Q84919: Terminal Communications Screen Jumbled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87198: PROFS: Information Required by PROFS Gateway Install Program"
-permalink: kb/087/Q87198/
+permalink: /kb/087/Q87198/
 ---
 
 ## Q87198: PROFS: Information Required by PROFS Gateway Install Program

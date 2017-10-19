@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120151: Browsing a Wide Area Network with WINS"
-permalink: kb/120/Q120151/
+permalink: /kb/120/Q120151/
 ---
 
 ## Q120151: Browsing a Wide Area Network with WINS

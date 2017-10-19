@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119685: FFAPI: ERRMSG: Mail Received for Unknown Addresses"
-permalink: kb/119/Q119685/
+permalink: /kb/119/Q119685/
 ---
 
 ## Q119685: FFAPI: ERRMSG: Mail Received for Unknown Addresses

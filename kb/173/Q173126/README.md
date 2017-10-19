@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173126: PPT: Using LeftMargin or FirstMargin Yields Unexpected Results"
-permalink: kb/173/Q173126/
+permalink: /kb/173/Q173126/
 ---
 
 ## Q173126: PPT: Using LeftMargin or FirstMargin Yields Unexpected Results

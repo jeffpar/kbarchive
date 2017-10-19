@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87189: PROFS: Using -P0xx and -V20 Options on Command Line"
-permalink: kb/087/Q87189/
+permalink: /kb/087/Q87189/
 ---
 
 ## Q87189: PROFS: Using -P0xx and -V20 Options on Command Line

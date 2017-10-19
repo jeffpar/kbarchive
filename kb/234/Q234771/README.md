@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234771: FIX: Error 800a2328 When You Browse a VB 6.0 WebClass"
-permalink: kb/234/Q234771/
+permalink: /kb/234/Q234771/
 ---
 
 ## Q234771: FIX: Error 800a2328 When You Browse a VB 6.0 WebClass

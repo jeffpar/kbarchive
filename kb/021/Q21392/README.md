@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q21392: Math Coprocessors Not Supported by Flight Simulator"
-permalink: kb/021/Q21392/
+permalink: /kb/021/Q21392/
 ---
 
 ## Q21392: Math Coprocessors Not Supported by Flight Simulator

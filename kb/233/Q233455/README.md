@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233455: Business Planner: Cannot Open Publisher Wizard"
-permalink: kb/233/Q233455/
+permalink: /kb/233/Q233455/
 ---
 
 ## Q233455: Business Planner: Cannot Open Publisher Wizard

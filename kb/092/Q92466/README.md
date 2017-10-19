@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92466: File Manager RAM Drive Icon Changes Due to Stacker"
-permalink: kb/092/Q92466/
+permalink: /kb/092/Q92466/
 ---
 
 ## Q92466: File Manager RAM Drive Icon Changes Due to Stacker

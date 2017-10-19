@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243501: Task Manager Does Not Display the Peak Memory Usage Column"
-permalink: kb/243/Q243501/
+permalink: /kb/243/Q243501/
 ---
 
 ## Q243501: Task Manager Does Not Display the Peak Memory Usage Column

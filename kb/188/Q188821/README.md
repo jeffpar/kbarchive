@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188821: FP: Determining if Index Server/FrontPage is Performing Search"
-permalink: kb/188/Q188821/
+permalink: /kb/188/Q188821/
 ---
 
 ## Q188821: FP: Determining if Index Server/FrontPage is Performing Search

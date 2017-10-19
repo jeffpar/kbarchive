@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84302: Unable to Get into 386 Enhanced Mode with SCSIDISK.SYS"
-permalink: kb/084/Q84302/
+permalink: /kb/084/Q84302/
 ---
 
 ## Q84302: Unable to Get into 386 Enhanced Mode with SCSIDISK.SYS

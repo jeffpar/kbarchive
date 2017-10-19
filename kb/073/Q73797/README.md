@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73797: Windows Hangs if Coprocessor Is Incorrectly Reported"
-permalink: kb/073/Q73797/
+permalink: /kb/073/Q73797/
 ---
 
 ## Q73797: Windows Hangs if Coprocessor Is Incorrectly Reported

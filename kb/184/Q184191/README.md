@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184191: Inserted CardBus PCMCIA Adapter Not Rebalanced Properly"
-permalink: kb/184/Q184191/
+permalink: /kb/184/Q184191/
 ---
 
 ## Q184191: Inserted CardBus PCMCIA Adapter Not Rebalanced Properly

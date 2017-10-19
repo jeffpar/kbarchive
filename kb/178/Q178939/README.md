@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178939: XADM: Language Not Maintained with Cyrillic (KOI8-R) Messages"
-permalink: kb/178/Q178939/
+permalink: /kb/178/Q178939/
 ---
 
 ## Q178939: XADM: Language Not Maintained with Cyrillic (KOI8-R) Messages

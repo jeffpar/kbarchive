@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190286: SMS: &quot;Couldn't Connect to SQL Server&quot; Error Reusing Login IDs"
-permalink: kb/190/Q190286/
+permalink: /kb/190/Q190286/
 ---
 
 ## Q190286: SMS: &quot;Couldn't Connect to SQL Server&quot; Error Reusing Login IDs

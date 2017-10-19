@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158358: Error Level 2 Returned on DELETE Command When No Files Found"
-permalink: kb/158/Q158358/
+permalink: /kb/158/Q158358/
 ---
 
 ## Q158358: Error Level 2 Returned on DELETE Command When No Files Found

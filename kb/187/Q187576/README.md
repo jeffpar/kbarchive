@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187576: Stop 0x0000000A May Occur in TCP/IP"
-permalink: kb/187/Q187576/
+permalink: /kb/187/Q187576/
 ---
 
 ## Q187576: Stop 0x0000000A May Occur in TCP/IP

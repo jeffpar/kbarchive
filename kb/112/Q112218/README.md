@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112218: Scheduled NTBackup Must Be Configured Using System Account"
-permalink: kb/112/Q112218/
+permalink: /kb/112/Q112218/
 ---
 
 ## Q112218: Scheduled NTBackup Must Be Configured Using System Account

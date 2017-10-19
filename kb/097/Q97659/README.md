@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97659: How to Add Pathworks for MS-DOS DECnet Client to Network"
-permalink: kb/097/Q97659/
+permalink: /kb/097/Q97659/
 ---
 
 ## Q97659: How to Add Pathworks for MS-DOS DECnet Client to Network

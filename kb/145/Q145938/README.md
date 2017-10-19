@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145938: Cannot Print Custom Page Sizes with Okidata ML-320 Printer"
-permalink: kb/145/Q145938/
+permalink: /kb/145/Q145938/
 ---
 
 ## Q145938: Cannot Print Custom Page Sizes with Okidata ML-320 Printer

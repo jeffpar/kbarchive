@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83456: Introduction to STRICT and Message Crackers"
-permalink: kb/083/Q83456/
+permalink: /kb/083/Q83456/
 ---
 
 ## Q83456: Introduction to STRICT and Message Crackers

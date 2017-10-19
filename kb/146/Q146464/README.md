@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146464: XCLN: Err Msg: Unable to Obtain a Valid...Revocation List"
-permalink: kb/146/Q146464/
+permalink: /kb/146/Q146464/
 ---
 
 ## Q146464: XCLN: Err Msg: Unable to Obtain a Valid...Revocation List

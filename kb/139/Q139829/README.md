@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139829: 500 Nations: Icon Missing in Program Manager After Reinstall"
-permalink: kb/139/Q139829/
+permalink: /kb/139/Q139829/
 ---
 
 ## Q139829: 500 Nations: Icon Missing in Program Manager After Reinstall

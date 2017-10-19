@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133257: FIX: Invalid String Displayed by CToolTipCtrl"
-permalink: kb/133/Q133257/
+permalink: /kb/133/Q133257/
 ---
 
 ## Q133257: FIX: Invalid String Displayed by CToolTipCtrl

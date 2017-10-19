@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58288: National Micro Systems Flash 386/20 and Windows"
-permalink: kb/058/Q58288/
+permalink: /kb/058/Q58288/
 ---
 
 ## Q58288: National Micro Systems Flash 386/20 and Windows

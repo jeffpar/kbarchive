@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180543: Event 9503: NwlnkNB Parameter Export was Illegal"
-permalink: kb/180/Q180543/
+permalink: /kb/180/Q180543/
 ---
 
 ## Q180543: Event 9503: NwlnkNB Parameter Export was Illegal

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111317: Default MVCOUNT Value Increased in FoxPro for Macintosh"
-permalink: kb/111/Q111317/
+permalink: /kb/111/Q111317/
 ---
 
 ## Q111317: Default MVCOUNT Value Increased in FoxPro for Macintosh

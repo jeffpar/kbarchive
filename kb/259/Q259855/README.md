@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259855: HOWTO: Enable Debug Prints in IEEE 1394 Drivers"
-permalink: kb/259/Q259855/
+permalink: /kb/259/Q259855/
 ---
 
 ## Q259855: HOWTO: Enable Debug Prints in IEEE 1394 Drivers

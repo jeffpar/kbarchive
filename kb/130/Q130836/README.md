@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130836: Windows NT: List of Currently Validated Clients Not Available"
-permalink: kb/130/Q130836/
+permalink: /kb/130/Q130836/
 ---
 
 ## Q130836: Windows NT: List of Currently Validated Clients Not Available

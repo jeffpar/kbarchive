@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157853: FIX: Upsizing Wizard Generated SQL Code Causes Errors"
-permalink: kb/157/Q157853/
+permalink: /kb/157/Q157853/
 ---
 
 ## Q157853: FIX: Upsizing Wizard Generated SQL Code Causes Errors

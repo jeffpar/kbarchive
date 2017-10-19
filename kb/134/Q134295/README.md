@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134295: Computer May Hang with Cyrix Processor and ACC2066 Chip Set"
-permalink: kb/134/Q134295/
+permalink: /kb/134/Q134295/
 ---
 
 ## Q134295: Computer May Hang with Cyrix Processor and ACC2066 Chip Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239048: Access Denied When Sending a Request to an Enterprise CA"
-permalink: kb/239/Q239048/
+permalink: /kb/239/Q239048/
 ---
 
 ## Q239048: Access Denied When Sending a Request to an Enterprise CA

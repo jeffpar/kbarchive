@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163843: INFO: Managing Linked Tables When You Create a New DB from VSS"
-permalink: kb/163/Q163843/
+permalink: /kb/163/Q163843/
 ---
 
 ## Q163843: INFO: Managing Linked Tables When You Create a New DB from VSS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321159: Event IDs 5125 and 5149 After You Start SNA Manager in HIS 2000"
-permalink: kb/321/Q321159/
+permalink: /kb/321/Q321159/
 ---
 
 ## Q321159: Event IDs 5125 and 5149 After You Start SNA Manager in HIS 2000

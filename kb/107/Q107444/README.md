@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107444: PC Win: Running Windows Client from the Network"
-permalink: kb/107/Q107444/
+permalink: /kb/107/Q107444/
 ---
 
 ## Q107444: PC Win: Running Windows Client from the Network

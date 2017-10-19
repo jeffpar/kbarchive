@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231748: XADM: Pattern in Address in SMTP Messages Causes Store to Crash"
-permalink: kb/231/Q231748/
+permalink: /kb/231/Q231748/
 ---
 
 ## Q231748: XADM: Pattern in Address in SMTP Messages Causes Store to Crash

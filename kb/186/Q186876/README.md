@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186876: PRB: Width_Access Method Fires When Height Changes"
-permalink: kb/186/Q186876/
+permalink: /kb/186/Q186876/
 ---
 
 ## Q186876: PRB: Width_Access Method Fires When Height Changes

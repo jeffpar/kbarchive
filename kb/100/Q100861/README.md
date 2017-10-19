@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100861: Windows 3.1 Features Not Included with OmniBook"
-permalink: kb/100/Q100861/
+permalink: /kb/100/Q100861/
 ---
 
 ## Q100861: Windows 3.1 Features Not Included with OmniBook

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68600: Mac Bkup: MSMailBackup CDEV Not Creating Backup Mail Data File"
-permalink: kb/068/Q68600/
+permalink: /kb/068/Q68600/
 ---
 
 ## Q68600: Mac Bkup: MSMailBackup CDEV Not Creating Backup Mail Data File

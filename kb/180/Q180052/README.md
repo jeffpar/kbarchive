@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180052: SNA Server Access Violation in Function s1pucosp"
-permalink: kb/180/Q180052/
+permalink: /kb/180/Q180052/
 ---
 
 ## Q180052: SNA Server Access Violation in Function s1pucosp

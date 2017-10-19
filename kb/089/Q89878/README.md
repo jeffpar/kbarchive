@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89878: Windows Sound System: How SoundScapes Works"
-permalink: kb/089/Q89878/
+permalink: /kb/089/Q89878/
 ---
 
 ## Q89878: Windows Sound System: How SoundScapes Works

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177955: XADM: Information Store Crashes Receiving NDR in UTF Format"
-permalink: kb/177/Q177955/
+permalink: /kb/177/Q177955/
 ---
 
 ## Q177955: XADM: Information Store Crashes Receiving NDR in UTF Format

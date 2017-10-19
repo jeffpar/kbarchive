@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281940: BUG: DBCombo SelectedItem Property Is Not Updated When You Type"
-permalink: kb/281/Q281940/
+permalink: /kb/281/Q281940/
 ---
 
 ## Q281940: BUG: DBCombo SelectedItem Property Is Not Updated When You Type

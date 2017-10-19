@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158003: STL Sample for the partial_sort_copy Function"
-permalink: kb/158/Q158003/
+permalink: /kb/158/Q158003/
 ---
 
 ## Q158003: STL Sample for the partial_sort_copy Function

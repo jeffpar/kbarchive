@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155087: PRB: Script Error: Expected &quot;End&quot; but Found Unknown Token"
-permalink: kb/155/Q155087/
+permalink: /kb/155/Q155087/
 ---
 
 ## Q155087: PRB: Script Error: Expected &quot;End&quot; but Found Unknown Token

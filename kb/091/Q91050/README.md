@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91050: Network Setup Prompts for Disk; Doesn't Work if Mouse Present"
-permalink: kb/091/Q91050/
+permalink: /kb/091/Q91050/
 ---
 
 ## Q91050: Network Setup Prompts for Disk; Doesn't Work if Mouse Present

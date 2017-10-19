@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122116: /BASEVIDEO Switch Doesn't Work After Upgrade to 3.5"
-permalink: kb/122/Q122116/
+permalink: /kb/122/Q122116/
 ---
 
 ## Q122116: /BASEVIDEO Switch Doesn't Work After Upgrade to 3.5

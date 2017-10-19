@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191928: How to Obtain Additional Licenses for 3270 and 5250 Applets"
-permalink: kb/191/Q191928/
+permalink: /kb/191/Q191928/
 ---
 
 ## Q191928: How to Obtain Additional Licenses for 3270 and 5250 Applets

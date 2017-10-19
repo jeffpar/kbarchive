@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182368: XCLN: Err Msg: Exchange32 Is Not A Valid Win32 Application"
-permalink: kb/182/Q182368/
+permalink: /kb/182/Q182368/
 ---
 
 ## Q182368: XCLN: Err Msg: Exchange32 Is Not A Valid Win32 Application

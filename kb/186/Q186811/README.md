@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186811: How To Preload DLL Files With Internet Information Server 4.0"
-permalink: kb/186/Q186811/
+permalink: /kb/186/Q186811/
 ---
 
 ## Q186811: How To Preload DLL Files With Internet Information Server 4.0

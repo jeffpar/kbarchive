@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154355: How to Tune Trusts for Dialup Routers in a WAN"
-permalink: kb/154/Q154355/
+permalink: /kb/154/Q154355/
 ---
 
 ## Q154355: How to Tune Trusts for Dialup Routers in a WAN

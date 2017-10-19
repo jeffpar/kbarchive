@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62130: Mac Hyp: Getting the Name of the Current Server"
-permalink: kb/062/Q62130/
+permalink: /kb/062/Q62130/
 ---
 
 ## Q62130: Mac Hyp: Getting the Name of the Current Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268811: AoE II Expansion: Unable to Join Multiplayer Game"
-permalink: kb/268/Q268811/
+permalink: /kb/268/Q268811/
 ---
 
 ## Q268811: AoE II Expansion: Unable to Join Multiplayer Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243649: MS99-047: Unchecked Print Spooler Buffer May Expose System Vulne"
-permalink: kb/243/Q243649/
+permalink: /kb/243/Q243649/
 ---
 
 ## Q243649: MS99-047: Unchecked Print Spooler Buffer May Expose System Vulne

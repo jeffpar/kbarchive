@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278912: XWEB: Exchange 5.5 OWA Unable to Open an Exchange 2000 Mailbox"
-permalink: kb/278/Q278912/
+permalink: /kb/278/Q278912/
 ---
 
 ## Q278912: XWEB: Exchange 5.5 OWA Unable to Open an Exchange 2000 Mailbox

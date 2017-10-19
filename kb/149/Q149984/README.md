@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149984: Accessing Network Drives Created in Services Under Windows NT"
-permalink: kb/149/Q149984/
+permalink: /kb/149/Q149984/
 ---
 
 ## Q149984: Accessing Network Drives Created in Services Under Windows NT

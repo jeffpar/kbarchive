@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177235: WD97: Undoing Grouped Linked Text Boxes Causes IPF and Crash"
-permalink: kb/177/Q177235/
+permalink: /kb/177/Q177235/
 ---
 
 ## Q177235: WD97: Undoing Grouped Linked Text Boxes Causes IPF and Crash

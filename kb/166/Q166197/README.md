@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166197: NBTSTAT Error When Using More Than 25 Dialout Devices with RAS"
-permalink: kb/166/Q166197/
+permalink: /kb/166/Q166197/
 ---
 
 ## Q166197: NBTSTAT Error When Using More Than 25 Dialout Devices with RAS

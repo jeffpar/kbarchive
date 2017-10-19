@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192527: Hot Swappable Drive Does Not Come Online on Alpha"
-permalink: kb/192/Q192527/
+permalink: /kb/192/Q192527/
 ---
 
 ## Q192527: Hot Swappable Drive Does Not Come Online on Alpha

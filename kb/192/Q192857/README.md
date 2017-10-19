@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192857: HOWTO: Use Index Files with Offline Views"
-permalink: kb/192/Q192857/
+permalink: /kb/192/Q192857/
 ---
 
 ## Q192857: HOWTO: Use Index Files with Offline Views

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123203: X.121 Specification for X.25 Address Structure"
-permalink: kb/123/Q123203/
+permalink: /kb/123/Q123203/
 ---
 
 ## Q123203: X.121 Specification for X.25 Address Structure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121033: MAC Dinosaurs: README Contents"
-permalink: kb/121/Q121033/
+permalink: /kb/121/Q121033/
 ---
 
 ## Q121033: MAC Dinosaurs: README Contents

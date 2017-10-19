@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175271: SNA 3.0 SP2 Hang or Access Violation in SNA Server or SnaBase"
-permalink: kb/175/Q175271/
+permalink: /kb/175/Q175271/
 ---
 
 ## Q175271: SNA 3.0 SP2 Hang or Access Violation in SNA Server or SnaBase

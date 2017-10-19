@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179616: PRB: Rollback Causes DAO Recordset Editmode To Be Set Back to 0"
-permalink: kb/179/Q179616/
+permalink: /kb/179/Q179616/
 ---
 
 ## Q179616: PRB: Rollback Causes DAO Recordset Editmode To Be Set Back to 0

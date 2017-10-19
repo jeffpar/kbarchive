@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189833: BUG: Visual Basic Does Not Create an EXE File After Compiling"
-permalink: kb/189/Q189833/
+permalink: /kb/189/Q189833/
 ---
 
 ## Q189833: BUG: Visual Basic Does Not Create an EXE File After Compiling

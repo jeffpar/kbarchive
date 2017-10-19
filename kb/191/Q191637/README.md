@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191637: PRB: SEEK Returns Different Results Depending on No. of Fields"
-permalink: kb/191/Q191637/
+permalink: /kb/191/Q191637/
 ---
 
 ## Q191637: PRB: SEEK Returns Different Results Depending on No. of Fields

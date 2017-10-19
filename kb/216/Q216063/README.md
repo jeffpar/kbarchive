@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216063: DHCP MIB Returns Incorrect OID for SNMP GetNext Command"
-permalink: kb/216/Q216063/
+permalink: /kb/216/Q216063/
 ---
 
 ## Q216063: DHCP MIB Returns Incorrect OID for SNMP GetNext Command

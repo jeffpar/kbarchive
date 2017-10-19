@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245435: XCLN: Attendees Deleted from Recurring Calendar Items"
-permalink: kb/245/Q245435/
+permalink: /kb/245/Q245435/
 ---
 
 ## Q245435: XCLN: Attendees Deleted from Recurring Calendar Items

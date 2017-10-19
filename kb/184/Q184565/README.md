@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184565: XADM: Korean Outlook 8.5 MIME Messages Encoded Improperly"
-permalink: kb/184/Q184565/
+permalink: /kb/184/Q184565/
 ---
 
 ## Q184565: XADM: Korean Outlook 8.5 MIME Messages Encoded Improperly

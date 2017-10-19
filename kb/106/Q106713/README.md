@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106713: Incorrect I/O Address Detected on SMC Elite+ Network Adapter"
-permalink: kb/106/Q106713/
+permalink: /kb/106/Q106713/
 ---
 
 ## Q106713: Incorrect I/O Address Detected on SMC Elite+ Network Adapter

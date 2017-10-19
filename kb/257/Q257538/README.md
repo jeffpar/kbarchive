@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257538: XFOR: How to Obtain Additional Information from Internet Mail"
-permalink: kb/257/Q257538/
+permalink: /kb/257/Q257538/
 ---
 
 ## Q257538: XFOR: How to Obtain Additional Information from Internet Mail

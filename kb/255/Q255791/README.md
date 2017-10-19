@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255791: XADM: Inappropriate Authentication with Mailbox Manager"
-permalink: kb/255/Q255791/
+permalink: /kb/255/Q255791/
 ---
 
 ## Q255791: XADM: Inappropriate Authentication with Mailbox Manager

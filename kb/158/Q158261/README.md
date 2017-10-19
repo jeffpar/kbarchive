@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158261: Msbatch.inf Parameters: Cannot Set Maximum Recycle Bin Size"
-permalink: kb/158/Q158261/
+permalink: /kb/158/Q158261/
 ---
 
 ## Q158261: Msbatch.inf Parameters: Cannot Set Maximum Recycle Bin Size

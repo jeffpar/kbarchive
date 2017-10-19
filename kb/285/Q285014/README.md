@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285014: Games Error Message: PFN_List_Corrupt or IRQL_NOT_LESS_OR_EQUAL"
-permalink: kb/285/Q285014/
+permalink: /kb/285/Q285014/
 ---
 
 ## Q285014: Games Error Message: PFN_List_Corrupt or IRQL_NOT_LESS_OR_EQUAL

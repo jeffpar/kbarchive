@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231944: NumLock Key State Is Not Saved When You Log Off"
-permalink: kb/231/Q231944/
+permalink: /kb/231/Q231944/
 ---
 
 ## Q231944: NumLock Key State Is Not Saved When You Log Off

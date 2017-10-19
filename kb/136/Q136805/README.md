@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136805: XCLN: Cannot Move Folder to Folder in Message Window"
-permalink: kb/136/Q136805/
+permalink: /kb/136/Q136805/
 ---
 
 ## Q136805: XCLN: Cannot Move Folder to Folder in Message Window

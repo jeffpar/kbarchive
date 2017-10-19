@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176886: Age of Empires: Keyboard Stops Responding When You Save a Game"
-permalink: kb/176/Q176886/
+permalink: /kb/176/Q176886/
 ---
 
 ## Q176886: Age of Empires: Keyboard Stops Responding When You Save a Game

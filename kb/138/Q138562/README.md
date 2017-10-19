@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138562: INFO: Win32s Information in the Microsoft Knowledge Base"
-permalink: kb/138/Q138562/
+permalink: /kb/138/Q138562/
 ---
 
 ## Q138562: INFO: Win32s Information in the Microsoft Knowledge Base

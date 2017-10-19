@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143242: Externally Locked System Files Can Cause SP Update Failure"
-permalink: kb/143/Q143242/
+permalink: /kb/143/Q143242/
 ---
 
 ## Q143242: Externally Locked System Files Can Cause SP Update Failure

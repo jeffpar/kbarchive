@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195056: Pinball Arcade: Pointing Device Leaves Black Trails on Screen"
-permalink: kb/195/Q195056/
+permalink: /kb/195/Q195056/
 ---
 
 ## Q195056: Pinball Arcade: Pointing Device Leaves Black Trails on Screen

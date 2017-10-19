@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122129: Microsoft RAS &amp; At Work PC Fax Won't Run w/ XEMCOMM.DRV Loaded"
-permalink: kb/122/Q122129/
+permalink: /kb/122/Q122129/
 ---
 
 ## Q122129: Microsoft RAS &amp; At Work PC Fax Won't Run w/ XEMCOMM.DRV Loaded

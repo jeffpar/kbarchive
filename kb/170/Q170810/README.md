@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170810: XADM: Service Specific Error 4021 Starting Information Store"
-permalink: kb/170/Q170810/
+permalink: /kb/170/Q170810/
 ---
 
 ## Q170810: XADM: Service Specific Error 4021 Starting Information Store

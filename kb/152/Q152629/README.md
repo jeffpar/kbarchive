@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152629: Setup Requires Unusually Large Amount of Disk Space"
-permalink: kb/152/Q152629/
+permalink: /kb/152/Q152629/
 ---
 
 ## Q152629: Setup Requires Unusually Large Amount of Disk Space

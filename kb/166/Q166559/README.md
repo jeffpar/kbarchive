@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166559: XCLN: Setup /q1 Ignores HomeServer &amp; MailboxName in Default.prf"
-permalink: kb/166/Q166559/
+permalink: /kb/166/Q166559/
 ---
 
 ## Q166559: XCLN: Setup /q1 Ignores HomeServer &amp; MailboxName in Default.prf

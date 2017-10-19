@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138067: HOWTO: Hide the Automation Manager"
-permalink: kb/138/Q138067/
+permalink: /kb/138/Q138067/
 ---
 
 ## Q138067: HOWTO: Hide the Automation Manager

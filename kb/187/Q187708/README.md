@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187708: Cannot Connect to SQL Virtual Server via Sockets in Cluster"
-permalink: kb/187/Q187708/
+permalink: /kb/187/Q187708/
 ---
 
 ## Q187708: Cannot Connect to SQL Virtual Server via Sockets in Cluster

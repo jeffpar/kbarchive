@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134506: System Hangs Formatting an Unformatted Floppy Disk"
-permalink: kb/134/Q134506/
+permalink: /kb/134/Q134506/
 ---
 
 ## Q134506: System Hangs Formatting an Unformatted Floppy Disk

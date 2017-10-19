@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149971: Network in Workstation Properties Displays Multiple Rows"
-permalink: kb/149/Q149971/
+permalink: /kb/149/Q149971/
 ---
 
 ## Q149971: Network in Workstation Properties Displays Multiple Rows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197977: XFOR: Uninstall SMTP Gateway and Install IMC to Route SMTP Mail"
-permalink: kb/197/Q197977/
+permalink: /kb/197/Q197977/
 ---
 
 ## Q197977: XFOR: Uninstall SMTP Gateway and Install IMC to Route SMTP Mail

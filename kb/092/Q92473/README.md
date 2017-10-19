@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92473: PPT: Text Shadows Don't Print Properly to PCL Printers"
-permalink: kb/092/Q92473/
+permalink: /kb/092/Q92473/
 ---
 
 ## Q92473: PPT: Text Shadows Don't Print Properly to PCL Printers

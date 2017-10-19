@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153578: PGC Does Not Remove Some Icons from SMS Program Groups"
-permalink: kb/153/Q153578/
+permalink: /kb/153/Q153578/
 ---
 
 ## Q153578: PGC Does Not Remove Some Icons from SMS Program Groups

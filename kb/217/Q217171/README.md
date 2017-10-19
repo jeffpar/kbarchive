@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217171: FIX: /Zl Generates Invalid VXD Or Driver Image"
-permalink: kb/217/Q217171/
+permalink: /kb/217/Q217171/
 ---
 
 ## Q217171: FIX: /Zl Generates Invalid VXD Or Driver Image

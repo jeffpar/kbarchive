@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244312: HOWTO: Add Keyboard Functionality to MDI form Scrollbars"
-permalink: kb/244/Q244312/
+permalink: /kb/244/Q244312/
 ---
 
 ## Q244312: HOWTO: Add Keyboard Functionality to MDI form Scrollbars

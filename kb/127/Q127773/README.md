@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127773: NetWare Execute-Only Attribute Not Supported"
-permalink: kb/127/Q127773/
+permalink: /kb/127/Q127773/
 ---
 
 ## Q127773: NetWare Execute-Only Attribute Not Supported

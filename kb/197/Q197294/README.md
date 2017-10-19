@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197294: DNS May Return Wrong IP Address When Forwarding Query to WINS"
-permalink: kb/197/Q197294/
+permalink: /kb/197/Q197294/
 ---
 
 ## Q197294: DNS May Return Wrong IP Address When Forwarding Query to WINS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157289: Memory Leak Using RegConnectRegistry API"
-permalink: kb/157/Q157289/
+permalink: /kb/157/Q157289/
 ---
 
 ## Q157289: Memory Leak Using RegConnectRegistry API

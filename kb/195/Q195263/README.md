@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195263: BUG: SavePicture Function Hangs VFP When Zero Disk Space"
-permalink: kb/195/Q195263/
+permalink: /kb/195/Q195263/
 ---
 
 ## Q195263: BUG: SavePicture Function Hangs VFP When Zero Disk Space

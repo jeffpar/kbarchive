@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254794: FIX: Row in Grid Remains Highlighted After Selecting Another Row"
-permalink: kb/254/Q254794/
+permalink: /kb/254/Q254794/
 ---
 
 ## Q254794: FIX: Row in Grid Remains Highlighted After Selecting Another Row

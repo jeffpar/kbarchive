@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148426: Troubleshooting Event ID 3013"
-permalink: kb/148/Q148426/
+permalink: /kb/148/Q148426/
 ---
 
 ## Q148426: Troubleshooting Event ID 3013

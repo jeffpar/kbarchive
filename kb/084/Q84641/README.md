@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84641: Installation Error with Sound Blaster Pro Driver from WRK"
-permalink: kb/084/Q84641/
+permalink: /kb/084/Q84641/
 ---
 
 ## Q84641: Installation Error with Sound Blaster Pro Driver from WRK

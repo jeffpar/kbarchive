@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99201: PC Forms: Installing Forms Designer on Shared Windows or Mail"
-permalink: kb/099/Q99201/
+permalink: /kb/099/Q99201/
 ---
 
 ## Q99201: PC Forms: Installing Forms Designer on Shared Windows or Mail

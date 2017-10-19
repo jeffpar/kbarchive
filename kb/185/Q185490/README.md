@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185490: Explorer Expands System Drive by Default"
-permalink: kb/185/Q185490/
+permalink: /kb/185/Q185490/
 ---
 
 ## Q185490: Explorer Expands System Drive by Default

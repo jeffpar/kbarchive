@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182063: SNA API Traces May Fail to Capture CMALLC or Allocate Failures"
-permalink: kb/182/Q182063/
+permalink: /kb/182/Q182063/
 ---
 
 ## Q182063: SNA API Traces May Fail to Capture CMALLC or Allocate Failures

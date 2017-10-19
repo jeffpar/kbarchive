@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129625: SNA Server: Event 18 Includes Sense Data = 00320008"
-permalink: kb/129/Q129625/
+permalink: /kb/129/Q129625/
 ---
 
 ## Q129625: SNA Server: Event 18 Includes Sense Data = 00320008

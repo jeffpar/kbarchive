@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171483: FIX: Crash When Rebuilding EXE Containing UserControl"
-permalink: kb/171/Q171483/
+permalink: /kb/171/Q171483/
 ---
 
 ## Q171483: FIX: Crash When Rebuilding EXE Containing UserControl

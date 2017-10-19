@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187541: NWCONV Migration May Change Domain Account Policy"
-permalink: kb/187/Q187541/
+permalink: /kb/187/Q187541/
 ---
 
 ## Q187541: NWCONV Migration May Change Domain Account Policy

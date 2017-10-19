@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126280: Windows 95 ScanDisk (SCANDSKW) Exit Codes"
-permalink: kb/126/Q126280/
+permalink: /kb/126/Q126280/
 ---
 
 ## Q126280: Windows 95 ScanDisk (SCANDSKW) Exit Codes

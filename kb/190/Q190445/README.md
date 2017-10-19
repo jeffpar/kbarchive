@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190445: Performance Monitor SNA Adapter Counters Are Missing"
-permalink: kb/190/Q190445/
+permalink: /kb/190/Q190445/
 ---
 
 ## Q190445: Performance Monitor SNA Adapter Counters Are Missing

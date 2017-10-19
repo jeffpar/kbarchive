@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161727: PRB: SCC API Error &quot;Project Created&quot; Occurs When Opening a PJX"
-permalink: kb/161/Q161727/
+permalink: /kb/161/Q161727/
 ---
 
 ## Q161727: PRB: SCC API Error &quot;Project Created&quot; Occurs When Opening a PJX

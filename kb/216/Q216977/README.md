@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216977: FIX: C2233 on User-Defined Type Array Member of Template Class"
-permalink: kb/216/Q216977/
+permalink: /kb/216/Q216977/
 ---
 
 ## Q216977: FIX: C2233 on User-Defined Type Array Member of Template Class

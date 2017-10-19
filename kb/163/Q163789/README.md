@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163789: XFOR: UUEncoded Non-TNEF Embedded Messages Translated"
-permalink: kb/163/Q163789/
+permalink: /kb/163/Q163789/
 ---
 
 ## Q163789: XFOR: UUEncoded Non-TNEF Embedded Messages Translated

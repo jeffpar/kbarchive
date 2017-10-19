@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142258: XADM: Exception Error on MTA Service Shutdown"
-permalink: kb/142/Q142258/
+permalink: /kb/142/Q142258/
 ---
 
 ## Q142258: XADM: Exception Error on MTA Service Shutdown

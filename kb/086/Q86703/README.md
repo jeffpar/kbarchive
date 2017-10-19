@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86703: NEC PCP Emulation-Switching Software and Windows 3.1"
-permalink: kb/086/Q86703/
+permalink: /kb/086/Q86703/
 ---
 
 ## Q86703: NEC PCP Emulation-Switching Software and Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86264: Cannot Destroy Default Windows Help Menus and Buttons"
-permalink: kb/086/Q86264/
+permalink: /kb/086/Q86264/
 ---
 
 ## Q86264: Cannot Destroy Default Windows Help Menus and Buttons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155957: Cannot Install Sidekick 95 in Windows NT 4.0"
-permalink: kb/155/Q155957/
+permalink: /kb/155/Q155957/
 ---
 
 ## Q155957: Cannot Install Sidekick 95 in Windows NT 4.0

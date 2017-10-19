@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151204: XCLN: Offline Address Book Does Not Contain All GAL Addresses"
-permalink: kb/151/Q151204/
+permalink: /kb/151/Q151204/
 ---
 
 ## Q151204: XCLN: Offline Address Book Does Not Contain All GAL Addresses

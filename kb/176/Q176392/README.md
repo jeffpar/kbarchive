@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176392: FIX: Can't Assign an Object to an ActiveX Tag Property"
-permalink: kb/176/Q176392/
+permalink: /kb/176/Q176392/
 ---
 
 ## Q176392: FIX: Can't Assign an Object to an ActiveX Tag Property

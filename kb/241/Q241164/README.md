@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241164: NBA Inside Drive 2000: Lights Flash Behind Spectatators"
-permalink: kb/241/Q241164/
+permalink: /kb/241/Q241164/
 ---
 
 ## Q241164: NBA Inside Drive 2000: Lights Flash Behind Spectatators

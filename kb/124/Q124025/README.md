@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124025: BUG: Context Sensitve Help Fails in Table Structure Dialog"
-permalink: kb/124/Q124025/
+permalink: /kb/124/Q124025/
 ---
 
 ## Q124025: BUG: Context Sensitve Help Fails in Table Structure Dialog

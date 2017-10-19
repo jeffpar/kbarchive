@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154732: World Atlas 96: Text in Cosmo's Dialog Box Is Corrupt or Missing"
-permalink: kb/154/Q154732/
+permalink: /kb/154/Q154732/
 ---
 
 ## Q154732: World Atlas 96: Text in Cosmo's Dialog Box Is Corrupt or Missing

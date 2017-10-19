@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94748: PC Rmt: Mail Remote for MS-DOS MAIL.EXE 3.0.2 Update"
-permalink: kb/094/Q94748/
+permalink: /kb/094/Q94748/
 ---
 
 ## Q94748: PC Rmt: Mail Remote for MS-DOS MAIL.EXE 3.0.2 Update

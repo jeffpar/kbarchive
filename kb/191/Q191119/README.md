@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191119: FIX: VB Classes Can Cause IIS to Have Access Violations"
-permalink: kb/191/Q191119/
+permalink: /kb/191/Q191119/
 ---
 
 ## Q191119: FIX: VB Classes Can Cause IIS to Have Access Violations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182287: Setting up a Canon LBP360PS Printer for LPR Printing"
-permalink: kb/182/Q182287/
+permalink: /kb/182/Q182287/
 ---
 
 ## Q182287: Setting up a Canon LBP360PS Printer for LPR Printing

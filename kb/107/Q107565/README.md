@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107565: Dinosaurs: Err Msg: &quot;Not Enough Memory&quot; When Printing"
-permalink: kb/107/Q107565/
+permalink: /kb/107/Q107565/
 ---
 
 ## Q107565: Dinosaurs: Err Msg: &quot;Not Enough Memory&quot; When Printing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205328: Err Msg: Cannot Detect OS Type"
-permalink: kb/205/Q205328/
+permalink: /kb/205/Q205328/
 ---
 
 ## Q205328: Err Msg: Cannot Detect OS Type

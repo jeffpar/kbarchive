@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155591: BUG: Cannot Set Access Memo Field to NULL with Snapshots"
-permalink: kb/155/Q155591/
+permalink: /kb/155/Q155591/
 ---
 
 ## Q155591: BUG: Cannot Set Access Memo Field to NULL with Snapshots

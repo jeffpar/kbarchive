@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131993: PRB: DDX Displays Float/Double in Exponential Format"
-permalink: kb/131/Q131993/
+permalink: /kb/131/Q131993/
 ---
 
 ## Q131993: PRB: DDX Displays Float/Double in Exponential Format

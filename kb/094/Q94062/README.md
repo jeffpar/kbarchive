@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94062: Creating an OS/2 LAN Manager Boot Disk"
-permalink: kb/094/Q94062/
+permalink: /kb/094/Q94062/
 ---
 
 ## Q94062: Creating an OS/2 LAN Manager Boot Disk

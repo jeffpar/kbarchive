@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111586: BUG: GetRasterizerCaps Returns Zero When TrueType Is Disabled"
-permalink: kb/111/Q111586/
+permalink: /kb/111/Q111586/
 ---
 
 ## Q111586: BUG: GetRasterizerCaps Returns Zero When TrueType Is Disabled

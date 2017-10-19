@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74746: FIX: ORG Following ORG Statement with &#36; May Fail in 6.0"
-permalink: kb/074/Q74746/
+permalink: /kb/074/Q74746/
 ---
 
 ## Q74746: FIX: ORG Following ORG Statement with &#36; May Fail in 6.0

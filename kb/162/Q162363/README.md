@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162363: Understanding and Troubleshooting the Stop 0x0000009C Screen"
-permalink: kb/162/Q162363/
+permalink: /kb/162/Q162363/
 ---
 
 ## Q162363: Understanding and Troubleshooting the Stop 0x0000009C Screen

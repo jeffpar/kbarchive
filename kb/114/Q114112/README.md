@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114112: Receiving Blank Pages or &quot;Bad Error&quot; Err Msg in At Work PC Fax"
-permalink: kb/114/Q114112/
+permalink: /kb/114/Q114112/
 ---
 
 ## Q114112: Receiving Blank Pages or &quot;Bad Error&quot; Err Msg in At Work PC Fax

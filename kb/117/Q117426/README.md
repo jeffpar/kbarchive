@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117426: PC MMTA: Err Msg: Ring3 TRAP NET0140: A Timeout Occurred..."
-permalink: kb/117/Q117426/
+permalink: /kb/117/Q117426/
 ---
 
 ## Q117426: PC MMTA: Err Msg: Ring3 TRAP NET0140: A Timeout Occurred...

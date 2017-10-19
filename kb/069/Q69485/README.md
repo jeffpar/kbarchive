@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69485: COMPAQ DESKPRO Unable to Read Extended DOS Partitions"
-permalink: kb/069/Q69485/
+permalink: /kb/069/Q69485/
 ---
 
 ## Q69485: COMPAQ DESKPRO Unable to Read Extended DOS Partitions

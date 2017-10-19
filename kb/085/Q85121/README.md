@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85121: Norton Desktop 2.0 Changes to the SYSTEM.INI File"
-permalink: kb/085/Q85121/
+permalink: /kb/085/Q85121/
 ---
 
 ## Q85121: Norton Desktop 2.0 Changes to the SYSTEM.INI File

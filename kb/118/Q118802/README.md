@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118802: FILE: Fw1022.exe Demonstrates Using FoxPro for Windows Wizards"
-permalink: kb/118/Q118802/
+permalink: /kb/118/Q118802/
 ---
 
 ## Q118802: FILE: Fw1022.exe Demonstrates Using FoxPro for Windows Wizards

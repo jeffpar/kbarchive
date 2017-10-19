@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140925: SMS Setup Doesn't Run on Windows NT v. 3.5 w/ Service Pack 3"
-permalink: kb/140/Q140925/
+permalink: /kb/140/Q140925/
 ---
 
 ## Q140925: SMS Setup Doesn't Run on Windows NT v. 3.5 w/ Service Pack 3

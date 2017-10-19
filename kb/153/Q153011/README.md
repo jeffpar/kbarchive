@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153011: XFOR: How To Register an Internet Domain Name"
-permalink: kb/153/Q153011/
+permalink: /kb/153/Q153011/
 ---
 
 ## Q153011: XFOR: How To Register an Internet Domain Name

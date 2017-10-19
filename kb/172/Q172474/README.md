@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172474: Err Msg: Mpr.dll Cannot Start, Check the File to Determine..."
-permalink: kb/172/Q172474/
+permalink: /kb/172/Q172474/
 ---
 
 ## Q172474: Err Msg: Mpr.dll Cannot Start, Check the File to Determine...

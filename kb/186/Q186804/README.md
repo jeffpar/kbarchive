@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186804: Drive Mappings Not Processed During NDS Login Script Execution"
-permalink: kb/186/Q186804/
+permalink: /kb/186/Q186804/
 ---
 
 ## Q186804: Drive Mappings Not Processed During NDS Login Script Execution

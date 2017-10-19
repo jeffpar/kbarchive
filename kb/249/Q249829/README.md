@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249829: Add Custom Properties to an ATL OLE DB Provider"
-permalink: kb/249/Q249829/
+permalink: /kb/249/Q249829/
 ---
 
 ## Q249829: Add Custom Properties to an ATL OLE DB Provider

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96531: PC WRmt: Using Mail Remote with Schedule+"
-permalink: kb/096/Q96531/
+permalink: /kb/096/Q96531/
 ---
 
 ## Q96531: PC WRmt: Using Mail Remote with Schedule+

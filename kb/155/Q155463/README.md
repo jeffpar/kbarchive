@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155463: BUG: Report Preview with Form's Name Clears Object Reference"
-permalink: kb/155/Q155463/
+permalink: /kb/155/Q155463/
 ---
 
 ## Q155463: BUG: Report Preview with Form's Name Clears Object Reference

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147298: XCLN: Maximum Number of Rules Per Folder"
-permalink: kb/147/Q147298/
+permalink: /kb/147/Q147298/
 ---
 
 ## Q147298: XCLN: Maximum Number of Rules Per Folder

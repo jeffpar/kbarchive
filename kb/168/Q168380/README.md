@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168380: BUG: Incorrect Evaluation of Static Member Functions in Debugge"
-permalink: kb/168/Q168380/
+permalink: /kb/168/Q168380/
 ---
 
 ## Q168380: BUG: Incorrect Evaluation of Static Member Functions in Debugge

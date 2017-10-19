@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73762: Mac Form: Resizing Form in Form Designer Causes Error Message"
-permalink: kb/073/Q73762/
+permalink: /kb/073/Q73762/
 ---
 
 ## Q73762: Mac Form: Resizing Form in Form Designer Causes Error Message

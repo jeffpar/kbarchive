@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103117: WACOM PENWIN.DLL Generates &quot;Out of Memory&quot; Message with Write"
-permalink: kb/103/Q103117/
+permalink: /kb/103/Q103117/
 ---
 
 ## Q103117: WACOM PENWIN.DLL Generates &quot;Out of Memory&quot; Message with Write

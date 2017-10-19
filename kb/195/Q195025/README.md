@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195025: BUG: VFP: &quot;SCC API error &quot;Reload File&quot; occurred on file&quot;"
-permalink: kb/195/Q195025/
+permalink: /kb/195/Q195025/
 ---
 
 ## Q195025: BUG: VFP: &quot;SCC API error &quot;Reload File&quot; occurred on file&quot;

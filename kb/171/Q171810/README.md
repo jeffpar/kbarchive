@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171810: FIX: Invoking the Visual Component Manager Asserts in Exutil"
-permalink: kb/171/Q171810/
+permalink: /kb/171/Q171810/
 ---
 
 ## Q171810: FIX: Invoking the Visual Component Manager Asserts in Exutil

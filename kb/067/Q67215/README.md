@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67215: Terminal's Font Point Sizes Change When Running MS-DOS"
-permalink: kb/067/Q67215/
+permalink: /kb/067/Q67215/
 ---
 
 ## Q67215: Terminal's Font Point Sizes Change When Running MS-DOS

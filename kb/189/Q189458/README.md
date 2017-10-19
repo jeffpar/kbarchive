@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189458: INFO: Third Party Utility Repairs FoxPro Record and Memo Data"
-permalink: kb/189/Q189458/
+permalink: /kb/189/Q189458/
 ---
 
 ## Q189458: INFO: Third Party Utility Repairs FoxPro Record and Memo Data

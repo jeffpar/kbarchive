@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139440: Poor Full-Motion Video with Some S3 Video Drivers"
-permalink: kb/139/Q139440/
+permalink: /kb/139/Q139440/
 ---
 
 ## Q139440: Poor Full-Motion Video with Some S3 Video Drivers

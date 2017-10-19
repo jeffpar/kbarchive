@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241718: HOWTO: Convert a DBTIMESTAMP into a DATE"
-permalink: kb/241/Q241718/
+permalink: /kb/241/Q241718/
 ---
 
 ## Q241718: HOWTO: Convert a DBTIMESTAMP into a DATE

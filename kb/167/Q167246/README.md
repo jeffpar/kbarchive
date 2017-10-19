@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167246: XCLN: DCOM95 Causes Invalid Page Fault in Awfxcg32.dll"
-permalink: kb/167/Q167246/
+permalink: /kb/167/Q167246/
 ---
 
 ## Q167246: XCLN: DCOM95 Causes Invalid Page Fault in Awfxcg32.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87342: PRB: Small Caps Text Unchanged in Windows Help"
-permalink: kb/087/Q87342/
+permalink: /kb/087/Q87342/
 ---
 
 ## Q87342: PRB: Small Caps Text Unchanged in Windows Help

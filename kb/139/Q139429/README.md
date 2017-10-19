@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139429: Problems Using TekRam VLB Controller with Windows 95"
-permalink: kb/139/Q139429/
+permalink: /kb/139/Q139429/
 ---
 
 ## Q139429: Problems Using TekRam VLB Controller with Windows 95

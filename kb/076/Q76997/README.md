@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76997: Turbo Debugger 2.0 and Later with MS-DOS 5.0"
-permalink: kb/076/Q76997/
+permalink: /kb/076/Q76997/
 ---
 
 ## Q76997: Turbo Debugger 2.0 and Later with MS-DOS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87219: PROFS: Gateway Processes While Running"
-permalink: kb/087/Q87219/
+permalink: /kb/087/Q87219/
 ---
 
 ## Q87219: PROFS: Gateway Processes While Running

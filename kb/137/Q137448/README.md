@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137448: How to Print a Report to a File"
-permalink: kb/137/Q137448/
+permalink: /kb/137/Q137448/
 ---
 
 ## Q137448: How to Print a Report to a File

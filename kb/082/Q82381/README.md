@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82381: Program Shell Has Problems After Loading SMARTDrive"
-permalink: kb/082/Q82381/
+permalink: /kb/082/Q82381/
 ---
 
 ## Q82381: Program Shell Has Problems After Loading SMARTDrive

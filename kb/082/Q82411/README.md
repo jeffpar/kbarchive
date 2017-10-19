@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82411: Lotus Express Version 1.0"
-permalink: kb/082/Q82411/
+permalink: /kb/082/Q82411/
 ---
 
 ## Q82411: Lotus Express Version 1.0

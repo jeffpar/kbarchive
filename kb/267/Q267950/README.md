@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267950: XADM: Storage Limit Warning Messages Not in the Client Language"
-permalink: kb/267/Q267950/
+permalink: /kb/267/Q267950/
 ---
 
 ## Q267950: XADM: Storage Limit Warning Messages Not in the Client Language

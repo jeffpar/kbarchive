@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160774: SMS: MIFMAC Cannot Display Extended Characters in a List Field"
-permalink: kb/160/Q160774/
+permalink: /kb/160/Q160774/
 ---
 
 ## Q160774: SMS: MIFMAC Cannot Display Extended Characters in a List Field

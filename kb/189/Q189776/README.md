@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189776: BUG: Beautify &quot;Data type mismatch&quot; w/ SET UDFPARM TO REFERENCE"
-permalink: kb/189/Q189776/
+permalink: /kb/189/Q189776/
 ---
 
 ## Q189776: BUG: Beautify &quot;Data type mismatch&quot; w/ SET UDFPARM TO REFERENCE

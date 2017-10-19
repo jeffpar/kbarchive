@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157040: INFO: BackStyle=0 Is Transparent When EditBox Is Not in Focus"
-permalink: kb/157/Q157040/
+permalink: /kb/157/Q157040/
 ---
 
 ## Q157040: INFO: BackStyle=0 Is Transparent When EditBox Is Not in Focus

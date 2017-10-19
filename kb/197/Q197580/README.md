@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197580: INFO: Distribution Issues with Riched32.dll"
-permalink: kb/197/Q197580/
+permalink: /kb/197/Q197580/
 ---
 
 ## Q197580: INFO: Distribution Issues with Riched32.dll

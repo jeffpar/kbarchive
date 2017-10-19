@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47768: Unrecognized Switches /Z1, /NOI with Old Version of Linker"
-permalink: kb/047/Q47768/
+permalink: /kb/047/Q47768/
 ---
 
 ## Q47768: Unrecognized Switches /Z1, /NOI with Old Version of Linker

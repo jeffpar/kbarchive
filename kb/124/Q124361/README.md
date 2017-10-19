@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124361: SMS: How to Remove Systems Management Server Clients"
-permalink: kb/124/Q124361/
+permalink: /kb/124/Q124361/
 ---
 
 ## Q124361: SMS: How to Remove Systems Management Server Clients

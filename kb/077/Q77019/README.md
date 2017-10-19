@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77019: Bookshelf 1991: OK Button Dimmed at Install Path in Setup"
-permalink: kb/077/Q77019/
+permalink: /kb/077/Q77019/
 ---
 
 ## Q77019: Bookshelf 1991: OK Button Dimmed at Install Path in Setup

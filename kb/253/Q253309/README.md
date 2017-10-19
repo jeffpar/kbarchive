@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253309: XADM: Directory Service Stops with Internal Error -1811"
-permalink: kb/253/Q253309/
+permalink: /kb/253/Q253309/
 ---
 
 ## Q253309: XADM: Directory Service Stops with Internal Error -1811

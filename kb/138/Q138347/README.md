@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138347: SMS: Procedure for Backing Up and Restoring a Secondary Site"
-permalink: kb/138/Q138347/
+permalink: /kb/138/Q138347/
 ---
 
 ## Q138347: SMS: Procedure for Backing Up and Restoring a Secondary Site

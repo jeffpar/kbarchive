@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188855: Security Privilege Must be Enabled to View Security Event Log"
-permalink: kb/188/Q188855/
+permalink: /kb/188/Q188855/
 ---
 
 ## Q188855: Security Privilege Must be Enabled to View Security Event Log

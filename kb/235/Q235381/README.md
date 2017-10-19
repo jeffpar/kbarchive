@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235381: SNA Server Access Violation While Determining Proxy Privilege"
-permalink: kb/235/Q235381/
+permalink: /kb/235/Q235381/
 ---
 
 ## Q235381: SNA Server Access Violation While Determining Proxy Privilege

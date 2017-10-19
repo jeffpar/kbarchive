@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152161: XCLN: Survey Application Error 380 Invalid Property Value"
-permalink: kb/152/Q152161/
+permalink: /kb/152/Q152161/
 ---
 
 ## Q152161: XCLN: Survey Application Error 380 Invalid Property Value

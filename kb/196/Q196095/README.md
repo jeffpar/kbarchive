@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196095: PRB: SBS Client Installation Does Not Continue After Restart"
-permalink: kb/196/Q196095/
+permalink: /kb/196/Q196095/
 ---
 
 ## Q196095: PRB: SBS Client Installation Does Not Continue After Restart

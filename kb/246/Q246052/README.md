@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246052: XCLN: No Offline Folder Settings Button in Service Properties"
-permalink: kb/246/Q246052/
+permalink: /kb/246/Q246052/
 ---
 
 ## Q246052: XCLN: No Offline Folder Settings Button in Service Properties

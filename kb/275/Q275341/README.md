@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275341: XFOR: Lotus Notes Migration Fails with Event ID 181 and 10052"
-permalink: kb/275/Q275341/
+permalink: /kb/275/Q275341/
 ---
 
 ## Q275341: XFOR: Lotus Notes Migration Fails with Event ID 181 and 10052

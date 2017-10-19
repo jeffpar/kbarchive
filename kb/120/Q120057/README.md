@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120057: Adding RINGIN and RINGOUT for Chat"
-permalink: kb/120/Q120057/
+permalink: /kb/120/Q120057/
 ---
 
 ## Q120057: Adding RINGIN and RINGOUT for Chat

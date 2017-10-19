@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296793: MCSE Training Kit Microsoft SQL Server 2000 System Administratio"
-permalink: kb/296/Q296793/
+permalink: /kb/296/Q296793/
 ---
 
 ## Q296793: MCSE Training Kit Microsoft SQL Server 2000 System Administratio

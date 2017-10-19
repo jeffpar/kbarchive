@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224254: S&amp;T 2000: &quot;Construction Out of Date&quot; Message Remains on Screen"
-permalink: kb/224/Q224254/
+permalink: /kb/224/Q224254/
 ---
 
 ## Q224254: S&amp;T 2000: &quot;Construction Out of Date&quot; Message Remains on Screen

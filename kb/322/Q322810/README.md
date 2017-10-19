@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322810: Windows Services For UNIX Impaired After Windows 2000 Upgrade"
-permalink: kb/322/Q322810/
+permalink: /kb/322/Q322810/
 ---
 
 ## Q322810: Windows Services For UNIX Impaired After Windows 2000 Upgrade

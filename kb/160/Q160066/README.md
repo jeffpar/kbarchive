@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160066: The Second Processor's Speed is Reported Incorrectly to WinNT"
-permalink: kb/160/Q160066/
+permalink: /kb/160/Q160066/
 ---
 
 ## Q160066: The Second Processor's Speed is Reported Incorrectly to WinNT

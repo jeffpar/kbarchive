@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157398: Soccer: What's in the Goodies Folder"
-permalink: kb/157/Q157398/
+permalink: /kb/157/Q157398/
 ---
 
 ## Q157398: Soccer: What's in the Goodies Folder

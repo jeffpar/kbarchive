@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257375: FP: How to Create and Center a Background Image (Watermark)"
-permalink: kb/257/Q257375/
+permalink: /kb/257/Q257375/
 ---
 
 ## Q257375: FP: How to Create and Center a Background Image (Watermark)

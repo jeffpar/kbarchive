@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139509: RUI Application Does Not See STSN.REQ"
-permalink: kb/139/Q139509/
+permalink: /kb/139/Q139509/
 ---
 
 ## Q139509: RUI Application Does Not See STSN.REQ

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105181: SMARTDRV Err Msg After Installing DBLSPACE: You Must Specify"
-permalink: kb/105/Q105181/
+permalink: /kb/105/Q105181/
 ---
 
 ## Q105181: SMARTDRV Err Msg After Installing DBLSPACE: You Must Specify

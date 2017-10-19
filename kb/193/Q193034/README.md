@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193034: FIX: Setup Program Created by PDW Disables Windows 95/98/Me Syst"
-permalink: kb/193/Q193034/
+permalink: /kb/193/Q193034/
 ---
 
 ## Q193034: FIX: Setup Program Created by PDW Disables Windows 95/98/Me Syst

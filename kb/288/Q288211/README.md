@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288211: XFOR: Addresses for Migrated GroupWise Mail May Appear Truncated"
-permalink: kb/288/Q288211/
+permalink: /kb/288/Q288211/
 ---
 
 ## Q288211: XFOR: Addresses for Migrated GroupWise Mail May Appear Truncated

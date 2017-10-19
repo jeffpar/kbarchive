@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167528: FIX: Class Browser Causes System Error on Exit"
-permalink: kb/167/Q167528/
+permalink: /kb/167/Q167528/
 ---
 
 ## Q167528: FIX: Class Browser Causes System Error on Exit

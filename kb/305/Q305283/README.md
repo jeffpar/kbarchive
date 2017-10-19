@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305283: ENC: Error Message: The Page Cannot Be Displayed"
-permalink: kb/305/Q305283/
+permalink: /kb/305/Q305283/
 ---
 
 ## Q305283: ENC: Error Message: The Page Cannot Be Displayed

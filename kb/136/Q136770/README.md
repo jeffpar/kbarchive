@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136770: How to Optimize Network Traffic in a Multiuser Application"
-permalink: kb/136/Q136770/
+permalink: /kb/136/Q136770/
 ---
 
 ## Q136770: How to Optimize Network Traffic in a Multiuser Application

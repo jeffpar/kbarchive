@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182478: XADM: Information Store Crashes Attempting to Deliver Message"
-permalink: kb/182/Q182478/
+permalink: /kb/182/Q182478/
 ---
 
 ## Q182478: XADM: Information Store Crashes Attempting to Deliver Message

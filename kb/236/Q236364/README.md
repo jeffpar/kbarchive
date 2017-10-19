@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236364: SNA Server 4.0 Service Pack 3 Fix List"
-permalink: kb/236/Q236364/
+permalink: /kb/236/Q236364/
 ---
 
 ## Q236364: SNA Server 4.0 Service Pack 3 Fix List

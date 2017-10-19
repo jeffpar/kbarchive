@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185985: Using Index Server to Query and Display META TAG Information"
-permalink: kb/185/Q185985/
+permalink: /kb/185/Q185985/
 ---
 
 ## Q185985: Using Index Server to Query and Display META TAG Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60749: PWB Makefiles Read-Only When Set as Active Program List"
-permalink: kb/060/Q60749/
+permalink: /kb/060/Q60749/
 ---
 
 ## Q60749: PWB Makefiles Read-Only When Set as Active Program List

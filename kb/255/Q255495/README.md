@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255495: Terminal Server Settings Not Recognized From Trusted Domain"
-permalink: kb/255/Q255495/
+permalink: /kb/255/Q255495/
 ---
 
 ## Q255495: Terminal Server Settings Not Recognized From Trusted Domain

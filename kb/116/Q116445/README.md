@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116445: FIX: Truncated String from &quot;#pragma comment(exestr, &lt;string&gt;)&quot;"
-permalink: kb/116/Q116445/
+permalink: /kb/116/Q116445/
 ---
 
 ## Q116445: FIX: Truncated String from &quot;#pragma comment(exestr, &lt;string&gt;)&quot;

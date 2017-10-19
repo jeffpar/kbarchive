@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117463: Macintosh Sees Incorrect File Size when Volume is Over 2 GB"
-permalink: kb/117/Q117463/
+permalink: /kb/117/Q117463/
 ---
 
 ## Q117463: Macintosh Sees Incorrect File Size when Volume is Over 2 GB

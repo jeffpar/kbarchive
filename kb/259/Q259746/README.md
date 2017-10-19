@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259746: FIX: C1001 Compiler Error When Virtual Function Used Parameter"
-permalink: kb/259/Q259746/
+permalink: /kb/259/Q259746/
 ---
 
 ## Q259746: FIX: C1001 Compiler Error When Virtual Function Used Parameter

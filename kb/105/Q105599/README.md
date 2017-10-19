@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105599: How to Search for Character Strings Using RQBE"
-permalink: kb/105/Q105599/
+permalink: /kb/105/Q105599/
 ---
 
 ## Q105599: How to Search for Character Strings Using RQBE

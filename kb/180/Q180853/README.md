@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180853: PRB: Stored Procedure Fails if Rights Are Revoked and Regranted"
-permalink: kb/180/Q180853/
+permalink: /kb/180/Q180853/
 ---
 
 ## Q180853: PRB: Stored Procedure Fails if Rights Are Revoked and Regranted

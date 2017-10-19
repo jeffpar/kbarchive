@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100378: Multimedia Err Msg: Filename Extension of the Specified..."
-permalink: kb/100/Q100378/
+permalink: /kb/100/Q100378/
 ---
 
 ## Q100378: Multimedia Err Msg: Filename Extension of the Specified...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86546: MHS: Definition of MHS"
-permalink: kb/086/Q86546/
+permalink: /kb/086/Q86546/
 ---
 
 ## Q86546: MHS: Definition of MHS

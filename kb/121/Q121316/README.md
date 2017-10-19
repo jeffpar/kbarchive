@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121316: PC Forms: Err Msg: &quot;Invalid Message&quot; When Reading an E-Form"
-permalink: kb/121/Q121316/
+permalink: /kb/121/Q121316/
 ---
 
 ## Q121316: PC Forms: Err Msg: &quot;Invalid Message&quot; When Reading an E-Form

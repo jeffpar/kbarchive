@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186473: You Can Delete All Records on a WINS Server Using SNMP"
-permalink: kb/186/Q186473/
+permalink: /kb/186/Q186473/
 ---
 
 ## Q186473: You Can Delete All Records on a WINS Server Using SNMP

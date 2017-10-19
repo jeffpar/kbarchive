@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152998: How to Use gdsset to Change Host Pointer"
-permalink: kb/152/Q152998/
+permalink: /kb/152/Q152998/
 ---
 
 ## Q152998: How to Use gdsset to Change Host Pointer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104913: PC Win OS2: Check for New Mail Time Is Twice the User Setting"
-permalink: kb/104/Q104913/
+permalink: /kb/104/Q104913/
 ---
 
 ## Q104913: PC Win OS2: Check for New Mail Time Is Twice the User Setting

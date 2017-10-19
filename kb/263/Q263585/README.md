@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263585: How to Type International Characters on an English Keyboard"
-permalink: kb/263/Q263585/
+permalink: /kb/263/Q263585/
 ---
 
 ## Q263585: How to Type International Characters on an English Keyboard

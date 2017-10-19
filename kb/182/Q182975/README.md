@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182975: XCON: X.25 Stack Installed But Unusable"
-permalink: kb/182/Q182975/
+permalink: /kb/182/Q182975/
 ---
 
 ## Q182975: XCON: X.25 Stack Installed But Unusable

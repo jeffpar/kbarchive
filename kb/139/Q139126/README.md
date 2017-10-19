@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139126: How To Connect to NetWare Resources through a RAS Connection"
-permalink: kb/139/Q139126/
+permalink: /kb/139/Q139126/
 ---
 
 ## Q139126: How To Connect to NetWare Resources through a RAS Connection

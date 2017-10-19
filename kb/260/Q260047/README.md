@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260047: FS2000: Interior View Is Distorted in Hairy Carrier Adventure"
-permalink: kb/260/Q260047/
+permalink: /kb/260/Q260047/
 ---
 
 ## Q260047: FS2000: Interior View Is Distorted in Hairy Carrier Adventure

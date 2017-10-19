@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195696: XFOR: Limiting Size of Incoming Messages on Notes Connector"
-permalink: kb/195/Q195696/
+permalink: /kb/195/Q195696/
 ---
 
 ## Q195696: XFOR: Limiting Size of Incoming Messages on Notes Connector

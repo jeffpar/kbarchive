@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162124: CG3: Clip Gallery General Troubleshooting Tips Part 1 of 2"
-permalink: kb/162/Q162124/
+permalink: /kb/162/Q162124/
 ---
 
 ## Q162124: CG3: Clip Gallery General Troubleshooting Tips Part 1 of 2

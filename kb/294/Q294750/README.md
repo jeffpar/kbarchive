@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294750: SMS: Mandatory Assignments Section Is Unavailable"
-permalink: kb/294/Q294750/
+permalink: /kb/294/Q294750/
 ---
 
 ## Q294750: SMS: Mandatory Assignments Section Is Unavailable

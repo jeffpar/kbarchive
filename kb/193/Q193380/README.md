@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193380: XCON: Mail Does Not Flow over X.400 Connector; Event 9301"
-permalink: kb/193/Q193380/
+permalink: /kb/193/Q193380/
 ---
 
 ## Q193380: XCON: Mail Does Not Flow over X.400 Connector; Event 9301

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90979: PPT: Slide Show Does Not Return to Previous Slide"
-permalink: kb/090/Q90979/
+permalink: /kb/090/Q90979/
 ---
 
 ## Q90979: PPT: Slide Show Does Not Return to Previous Slide

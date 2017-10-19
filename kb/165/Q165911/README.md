@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165911: SNA Manager Support for &quot;Assigned To&quot; Column for 3270 LUs"
-permalink: kb/165/Q165911/
+permalink: /kb/165/Q165911/
 ---
 
 ## Q165911: SNA Manager Support for &quot;Assigned To&quot; Column for 3270 LUs

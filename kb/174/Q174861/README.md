@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174861: XWEB: HTTP Protocol Still Functions After Disabling in Exchange"
-permalink: kb/174/Q174861/
+permalink: /kb/174/Q174861/
 ---
 
 ## Q174861: XWEB: HTTP Protocol Still Functions After Disabling in Exchange

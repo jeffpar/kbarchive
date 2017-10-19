@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125927: MS EXCEL 5 VB APPS SBS WIN Corrections and Comments"
-permalink: kb/125/Q125927/
+permalink: /kb/125/Q125927/
 ---
 
 ## Q125927: MS EXCEL 5 VB APPS SBS WIN Corrections and Comments

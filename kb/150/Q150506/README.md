@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150506: Files and Data Sources Installed by Visual FoxPro ODBC Driver"
-permalink: kb/150/Q150506/
+permalink: /kb/150/Q150506/
 ---
 
 ## Q150506: Files and Data Sources Installed by Visual FoxPro ODBC Driver

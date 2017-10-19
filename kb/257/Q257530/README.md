@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257530: FIX: Images Replicated When Customizing a Toolbar"
-permalink: kb/257/Q257530/
+permalink: /kb/257/Q257530/
 ---
 
 ## Q257530: FIX: Images Replicated When Customizing a Toolbar

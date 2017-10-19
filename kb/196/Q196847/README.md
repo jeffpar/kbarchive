@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196847: &quot;Stop 0xc000021e&quot; Installing SP4 with LapLink Installed"
-permalink: kb/196/Q196847/
+permalink: /kb/196/Q196847/
 ---
 
 ## Q196847: &quot;Stop 0xc000021e&quot; Installing SP4 with LapLink Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171904: Err Msg: MSNVIEWR Caused an Access Violation Fault in Module..."
-permalink: kb/171/Q171904/
+permalink: /kb/171/Q171904/
 ---
 
 ## Q171904: Err Msg: MSNVIEWR Caused an Access Violation Fault in Module...

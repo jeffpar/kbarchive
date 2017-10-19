@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256875: XADM: &quot;Show Names from the&quot; List Defaults to Global Address List"
-permalink: kb/256/Q256875/
+permalink: /kb/256/Q256875/
 ---
 
 ## Q256875: XADM: &quot;Show Names from the&quot; List Defaults to Global Address List

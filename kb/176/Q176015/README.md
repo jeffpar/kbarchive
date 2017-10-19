@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176015: PRB: Running Sysdiff with Multiple Partitions"
-permalink: kb/176/Q176015/
+permalink: /kb/176/Q176015/
 ---
 
 ## Q176015: PRB: Running Sysdiff with Multiple Partitions

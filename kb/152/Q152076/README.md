@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152076: Browser Returns Truncated List of Resources"
-permalink: kb/152/Q152076/
+permalink: /kb/152/Q152076/
 ---
 
 ## Q152076: Browser Returns Truncated List of Resources

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194792: HOWTO: Retrieve Values in SQL Server Stored Procedures with ADO"
-permalink: kb/194/Q194792/
+permalink: /kb/194/Q194792/
 ---
 
 ## Q194792: HOWTO: Retrieve Values in SQL Server Stored Procedures with ADO

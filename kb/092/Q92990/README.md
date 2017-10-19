@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92990: Remote Access Service (RAS) 1.1 Support in WFWG"
-permalink: kb/092/Q92990/
+permalink: /kb/092/Q92990/
 ---
 
 ## Q92990: Remote Access Service (RAS) 1.1 Support in WFWG

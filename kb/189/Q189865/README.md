@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189865: DOC: Form's Circle Method Accepts Negative Aspect Ratio"
-permalink: kb/189/Q189865/
+permalink: /kb/189/Q189865/
 ---
 
 ## Q189865: DOC: Form's Circle Method Accepts Negative Aspect Ratio

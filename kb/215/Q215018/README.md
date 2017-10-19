@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215018: SMS: Cannot Add Local Groups in Manage User Wizard"
-permalink: kb/215/Q215018/
+permalink: /kb/215/Q215018/
 ---
 
 ## Q215018: SMS: Cannot Add Local Groups in Manage User Wizard

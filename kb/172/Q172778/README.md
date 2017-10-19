@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172778: Cannot Connect to a Dell Dial-Up Networking Server"
-permalink: kb/172/Q172778/
+permalink: /kb/172/Q172778/
 ---
 
 ## Q172778: Cannot Connect to a Dell Dial-Up Networking Server

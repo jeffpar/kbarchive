@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296692: Troubleshooting TCP Ports in SYN_RECEIVED State for Long Periods"
-permalink: kb/296/Q296692/
+permalink: /kb/296/Q296692/
 ---
 
 ## Q296692: Troubleshooting TCP Ports in SYN_RECEIVED State for Long Periods

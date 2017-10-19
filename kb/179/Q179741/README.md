@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179741: STOP 0x0A Due to Duplicate Free in Afd.sys"
-permalink: kb/179/Q179741/
+permalink: /kb/179/Q179741/
 ---
 
 ## Q179741: STOP 0x0A Due to Duplicate Free in Afd.sys

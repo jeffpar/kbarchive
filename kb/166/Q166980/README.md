@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166980: WD97: Format Changed If Hyperlink Spans Several Paragraphs"
-permalink: kb/166/Q166980/
+permalink: /kb/166/Q166980/
 ---
 
 ## Q166980: WD97: Format Changed If Hyperlink Spans Several Paragraphs

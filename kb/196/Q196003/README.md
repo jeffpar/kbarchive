@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196003: How to Show Text in Different Fonts in Notepad"
-permalink: kb/196/Q196003/
+permalink: /kb/196/Q196003/
 ---
 
 ## Q196003: How to Show Text in Different Fonts in Notepad

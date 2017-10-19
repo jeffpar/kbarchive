@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156234: PRB: CLOSE DATABASE ALL Does Not Close All Databases"
-permalink: kb/156/Q156234/
+permalink: /kb/156/Q156234/
 ---
 
 ## Q156234: PRB: CLOSE DATABASE ALL Does Not Close All Databases

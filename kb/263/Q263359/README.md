@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263359: SMS: When Deleting an Ad You Receive &quot;No Status&quot; Error Message"
-permalink: kb/263/Q263359/
+permalink: /kb/263/Q263359/
 ---
 
 ## Q263359: SMS: When Deleting an Ad You Receive &quot;No Status&quot; Error Message

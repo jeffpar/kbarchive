@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142945: Problems Installing SRAM or Flash Memory Cards in Windows 95"
-permalink: kb/142/Q142945/
+permalink: /kb/142/Q142945/
 ---
 
 ## Q142945: Problems Installing SRAM or Flash Memory Cards in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238752: PRB: SQLConfigDatasource Allows PageTimeout Value of 0"
-permalink: kb/238/Q238752/
+permalink: /kb/238/Q238752/
 ---
 
 ## Q238752: PRB: SQLConfigDatasource Allows PageTimeout Value of 0

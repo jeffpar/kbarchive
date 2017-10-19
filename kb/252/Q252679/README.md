@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252679: INFO: Tips on WMI Driver Testing"
-permalink: kb/252/Q252679/
+permalink: /kb/252/Q252679/
 ---
 
 ## Q252679: INFO: Tips on WMI Driver Testing

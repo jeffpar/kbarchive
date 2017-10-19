@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187780: XADM: Exception Error 0XC0000009A with POP3 or SMTP Usage"
-permalink: kb/187/Q187780/
+permalink: /kb/187/Q187780/
 ---
 
 ## Q187780: XADM: Exception Error 0XC0000009A with POP3 or SMTP Usage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156134: FIX: CLongBinary Causes &quot;Invalid String or Buffer Length&quot;"
-permalink: kb/156/Q156134/
+permalink: /kb/156/Q156134/
 ---
 
 ## Q156134: FIX: CLongBinary Causes &quot;Invalid String or Buffer Length&quot;

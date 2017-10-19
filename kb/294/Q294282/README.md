@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294282: XADM: How to Use Updatefb.exe to Republish Absent Free/Busy Data"
-permalink: kb/294/Q294282/
+permalink: /kb/294/Q294282/
 ---
 
 ## Q294282: XADM: How to Use Updatefb.exe to Republish Absent Free/Busy Data

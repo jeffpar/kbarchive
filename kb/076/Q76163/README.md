@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76163: Line Numbers in .MAP File Do Not Relate to Listing File"
-permalink: kb/076/Q76163/
+permalink: /kb/076/Q76163/
 ---
 
 ## Q76163: Line Numbers in .MAP File Do Not Relate to Listing File

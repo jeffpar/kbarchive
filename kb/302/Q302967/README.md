@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302967: SMS: Black Screen May Appear Instead of the Windows Logon Screen"
-permalink: kb/302/Q302967/
+permalink: /kb/302/Q302967/
 ---
 
 ## Q302967: SMS: Black Screen May Appear Instead of the Windows Logon Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95297: Orchid Fahrenheit Drivers Cause GP Faults"
-permalink: kb/095/Q95297/
+permalink: /kb/095/Q95297/
 ---
 
 ## Q95297: Orchid Fahrenheit Drivers Cause GP Faults

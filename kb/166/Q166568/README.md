@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166568: XCLN: Message Created Using MAPI Cannot Be Opened"
-permalink: kb/166/Q166568/
+permalink: /kb/166/Q166568/
 ---
 
 ## Q166568: XCLN: Message Created Using MAPI Cannot Be Opened

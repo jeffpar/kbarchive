@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129226: PRB: Controls Not Correctly Updated in a Grid"
-permalink: kb/129/Q129226/
+permalink: /kb/129/Q129226/
 ---
 
 ## Q129226: PRB: Controls Not Correctly Updated in a Grid

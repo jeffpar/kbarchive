@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88769: HOWTO: Test for End of File with CFile and CStdioFile"
-permalink: kb/088/Q88769/
+permalink: /kb/088/Q88769/
 ---
 
 ## Q88769: HOWTO: Test for End of File with CFile and CStdioFile

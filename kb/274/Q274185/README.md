@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274185: LocalLU for Invoking TPs is Documented Incorrectly in CPI-C SDK"
-permalink: kb/274/Q274185/
+permalink: /kb/274/Q274185/
 ---
 
 ## Q274185: LocalLU for Invoking TPs is Documented Incorrectly in CPI-C SDK

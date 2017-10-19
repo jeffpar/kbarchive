@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158618: INF: SQLState 22002 Error When Fetching Results"
-permalink: kb/158/Q158618/
+permalink: /kb/158/Q158618/
 ---
 
 ## Q158618: INF: SQLState 22002 Error When Fetching Results

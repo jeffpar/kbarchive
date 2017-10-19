@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131379: XCLN: Cannot Drag Directories into Messages"
-permalink: kb/131/Q131379/
+permalink: /kb/131/Q131379/
 ---
 
 ## Q131379: XCLN: Cannot Drag Directories into Messages

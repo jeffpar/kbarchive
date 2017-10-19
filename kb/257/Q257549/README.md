@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257549: XADM: Cannot Install InterOrg Directory Synchronization Tool"
-permalink: kb/257/Q257549/
+permalink: /kb/257/Q257549/
 ---
 
 ## Q257549: XADM: Cannot Install InterOrg Directory Synchronization Tool

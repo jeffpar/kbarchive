@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180301: Unable to Close the Edit Alias Dialog Box in Personal Web Server"
-permalink: kb/180/Q180301/
+permalink: /kb/180/Q180301/
 ---
 
 ## Q180301: Unable to Close the Edit Alias Dialog Box in Personal Web Server

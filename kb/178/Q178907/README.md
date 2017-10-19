@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178907: XADM: Open File Backup Backs Up Inconsistent Exchange Databases"
-permalink: kb/178/Q178907/
+permalink: /kb/178/Q178907/
 ---
 
 ## Q178907: XADM: Open File Backup Backs Up Inconsistent Exchange Databases

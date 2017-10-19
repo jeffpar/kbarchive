@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146190: Cut and Paste Available on Wisdom Tab"
-permalink: kb/146/Q146190/
+permalink: /kb/146/Q146190/
 ---
 
 ## Q146190: Cut and Paste Available on Wisdom Tab

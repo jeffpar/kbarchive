@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63744: Macro Recorder Macros Take Priority Over Application Macros"
-permalink: kb/063/Q63744/
+permalink: /kb/063/Q63744/
 ---
 
 ## Q63744: Macro Recorder Macros Take Priority Over Application Macros

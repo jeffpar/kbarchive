@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97884: DBLSPACE /CHKDSK Stops (Hangs) with Cross-Linked Files"
-permalink: kb/097/Q97884/
+permalink: /kb/097/Q97884/
 ---
 
 ## Q97884: DBLSPACE /CHKDSK Stops (Hangs) with Cross-Linked Files

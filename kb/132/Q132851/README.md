@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132851: Printing in PCL Mode from Adobe Illustrator Causes GP Fault"
-permalink: kb/132/Q132851/
+permalink: /kb/132/Q132851/
 ---
 
 ## Q132851: Printing in PCL Mode from Adobe Illustrator Causes GP Fault

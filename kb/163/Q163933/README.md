@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163933: FIX: Executable Error &quot;&lt;path&gt; is not an object file&quot;"
-permalink: kb/163/Q163933/
+permalink: /kb/163/Q163933/
 ---
 
 ## Q163933: FIX: Executable Error &quot;&lt;path&gt; is not an object file&quot;

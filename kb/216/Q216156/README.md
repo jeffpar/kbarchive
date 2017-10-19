@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216156: BUG: &quot;Invalid Line In Setup Information File&quot; Installing VB6 App"
-permalink: kb/216/Q216156/
+permalink: /kb/216/Q216156/
 ---
 
 ## Q216156: BUG: &quot;Invalid Line In Setup Information File&quot; Installing VB6 App

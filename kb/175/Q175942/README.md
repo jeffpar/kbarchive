@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175942: Support Windows NT Services Using SNA Windows 95 Client"
-permalink: kb/175/Q175942/
+permalink: /kb/175/Q175942/
 ---
 
 ## Q175942: Support Windows NT Services Using SNA Windows 95 Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142303: DNS Address from RAS Server Not Passed to RAS Client"
-permalink: kb/142/Q142303/
+permalink: /kb/142/Q142303/
 ---
 
 ## Q142303: DNS Address from RAS Server Not Passed to RAS Client

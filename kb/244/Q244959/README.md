@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244959: Error Message Refreshing Report in SMS Administrator Console"
-permalink: kb/244/Q244959/
+permalink: /kb/244/Q244959/
 ---
 
 ## Q244959: Error Message Refreshing Report in SMS Administrator Console

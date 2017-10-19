@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214407: XADM: Internet Mail Service Stops with an Access Violation"
-permalink: kb/214/Q214407/
+permalink: /kb/214/Q214407/
 ---
 
 ## Q214407: XADM: Internet Mail Service Stops with an Access Violation

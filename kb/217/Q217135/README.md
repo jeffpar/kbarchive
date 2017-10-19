@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217135: XWEB: Post Items in Public Folders Are Not Refreshed by Outlook"
-permalink: kb/217/Q217135/
+permalink: /kb/217/Q217135/
 ---
 
 ## Q217135: XWEB: Post Items in Public Folders Are Not Refreshed by Outlook

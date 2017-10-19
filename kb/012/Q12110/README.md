@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q12110: Calling ROM BIOS Routines to Check the Printer Status"
-permalink: kb/012/Q12110/
+permalink: /kb/012/Q12110/
 ---
 
 ## Q12110: Calling ROM BIOS Routines to Check the Printer Status

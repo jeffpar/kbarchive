@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320319: PRB: &quot;Um.dat May Be Corrupt&quot; Err Msg When You Start SourceSafe"
-permalink: kb/320/Q320319/
+permalink: /kb/320/Q320319/
 ---
 
 ## Q320319: PRB: &quot;Um.dat May Be Corrupt&quot; Err Msg When You Start SourceSafe

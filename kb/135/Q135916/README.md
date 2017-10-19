@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135916: PRB: Save As Command Is Unavailable from Visual Class Designer"
-permalink: kb/135/Q135916/
+permalink: /kb/135/Q135916/
 ---
 
 ## Q135916: PRB: Save As Command Is Unavailable from Visual Class Designer

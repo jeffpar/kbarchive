@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236578: Offline Servers Should Be Removed from Clients' Service Table"
-permalink: kb/236/Q236578/
+permalink: /kb/236/Q236578/
 ---
 
 ## Q236578: Offline Servers Should Be Removed from Clients' Service Table

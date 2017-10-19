@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118960: Cannot Change Fonts for Windowed MS-DOS-Based Applications"
-permalink: kb/118/Q118960/
+permalink: /kb/118/Q118960/
 ---
 
 ## Q118960: Cannot Change Fonts for Windowed MS-DOS-Based Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107695: PRB: Updating Multiple Device= Lines in SYSTEM.INI"
-permalink: kb/107/Q107695/
+permalink: /kb/107/Q107695/
 ---
 
 ## Q107695: PRB: Updating Multiple Device= Lines in SYSTEM.INI

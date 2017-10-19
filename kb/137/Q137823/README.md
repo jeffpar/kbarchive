@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137823: Windows 95 Client Can Browse NetWare 2.x Without Permission"
-permalink: kb/137/Q137823/
+permalink: /kb/137/Q137823/
 ---
 
 ## Q137823: Windows 95 Client Can Browse NetWare 2.x Without Permission

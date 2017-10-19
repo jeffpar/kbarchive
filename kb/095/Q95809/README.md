@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95809: IFR Cruising Altitudes Documented Incorrectly"
-permalink: kb/095/Q95809/
+permalink: /kb/095/Q95809/
 ---
 
 ## Q95809: IFR Cruising Altitudes Documented Incorrectly

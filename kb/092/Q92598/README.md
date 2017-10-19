@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92598: WFWG: Server Responds Slowly After RAS Connection is Made"
-permalink: kb/092/Q92598/
+permalink: /kb/092/Q92598/
 ---
 
 ## Q92598: WFWG: Server Responds Slowly After RAS Connection is Made

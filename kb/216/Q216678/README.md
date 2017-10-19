@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216678: Dfs Drive Connections Not Displayed in Windows NT Explorer"
-permalink: kb/216/Q216678/
+permalink: /kb/216/Q216678/
 ---
 
 ## Q216678: Dfs Drive Connections Not Displayed in Windows NT Explorer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155545: XGEN: First Customer Contact Form for Exchange"
-permalink: kb/155/Q155545/
+permalink: /kb/155/Q155545/
 ---
 
 ## Q155545: XGEN: First Customer Contact Form for Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123495: BUG: MSVC20 Setup Fails to Install Books Online Only"
-permalink: kb/123/Q123495/
+permalink: /kb/123/Q123495/
 ---
 
 ## Q123495: BUG: MSVC20 Setup Fails to Install Books Online Only

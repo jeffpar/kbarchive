@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145997: PRB: Resource Language Must Match the Current System Language"
-permalink: kb/145/Q145997/
+permalink: /kb/145/Q145997/
 ---
 
 ## Q145997: PRB: Resource Language Must Match the Current System Language

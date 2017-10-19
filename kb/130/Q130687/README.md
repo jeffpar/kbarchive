@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130687: Primary Group of Macintosh Folder Differs from User's"
-permalink: kb/130/Q130687/
+permalink: /kb/130/Q130687/
 ---
 
 ## Q130687: Primary Group of Macintosh Folder Differs from User's

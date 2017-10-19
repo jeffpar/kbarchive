@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225352: Non-Computing Devices May Not Be Discovered by Network Discovery"
-permalink: kb/225/Q225352/
+permalink: /kb/225/Q225352/
 ---
 
 ## Q225352: Non-Computing Devices May Not Be Discovered by Network Discovery

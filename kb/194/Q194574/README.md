@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194574: PRB: SET HELP TO Causes &quot;File Does Not Exist&quot; Error"
-permalink: kb/194/Q194574/
+permalink: /kb/194/Q194574/
 ---
 
 ## Q194574: PRB: SET HELP TO Causes &quot;File Does Not Exist&quot; Error

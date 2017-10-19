@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160188: Misleading Error 692 with RAS if HyperTerminal Owns COM Port"
-permalink: kb/160/Q160188/
+permalink: /kb/160/Q160188/
 ---
 
 ## Q160188: Misleading Error 692 with RAS if HyperTerminal Owns COM Port

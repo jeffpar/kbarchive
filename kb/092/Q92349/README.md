@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92349: PRB: Resolving &quot;Structural CDX File Not Found&quot; Error"
-permalink: kb/092/Q92349/
+permalink: /kb/092/Q92349/
 ---
 
 ## Q92349: PRB: Resolving &quot;Structural CDX File Not Found&quot; Error

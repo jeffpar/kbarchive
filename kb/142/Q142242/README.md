@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142242: DOC: Create SQL View Incorrectly Documented"
-permalink: kb/142/Q142242/
+permalink: /kb/142/Q142242/
 ---
 
 ## Q142242: DOC: Create SQL View Incorrectly Documented

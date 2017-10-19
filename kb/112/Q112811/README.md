@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112811: Print Notification Message has Incorrect Time and Date"
-permalink: kb/112/Q112811/
+permalink: /kb/112/Q112811/
 ---
 
 ## Q112811: Print Notification Message has Incorrect Time and Date

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200953: SMS: Deploying SMS 2.0 in an Existing SMS 1.2 Site"
-permalink: kb/200/Q200953/
+permalink: /kb/200/Q200953/
 ---
 
 ## Q200953: SMS: Deploying SMS 2.0 in an Existing SMS 1.2 Site

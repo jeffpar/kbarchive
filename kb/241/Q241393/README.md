@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241393: Page Heap Enhancements for Advanced Debugging in Windows NT4.0"
-permalink: kb/241/Q241393/
+permalink: /kb/241/Q241393/
 ---
 
 ## Q241393: Page Heap Enhancements for Advanced Debugging in Windows NT4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134596: Error Messages When Using Novell NE3200 EISA NDIS2 Driver"
-permalink: kb/134/Q134596/
+permalink: /kb/134/Q134596/
 ---
 
 ## Q134596: Error Messages When Using Novell NE3200 EISA NDIS2 Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168686: PRB: Performance Loss When Upgrading Jet ODBC Driver"
-permalink: kb/168/Q168686/
+permalink: /kb/168/Q168686/
 ---
 
 ## Q168686: PRB: Performance Loss When Upgrading Jet ODBC Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146573: Using Image Maps with Internet Information Server"
-permalink: kb/146/Q146573/
+permalink: /kb/146/Q146573/
 ---
 
 ## Q146573: Using Image Maps with Internet Information Server

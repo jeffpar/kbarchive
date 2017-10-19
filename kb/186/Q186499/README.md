@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186499: Terminal Server Registry Settings for Applications"
-permalink: kb/186/Q186499/
+permalink: /kb/186/Q186499/
 ---
 
 ## Q186499: Terminal Server Registry Settings for Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32169: FASTOPEN Harmful If Used with Disk Optimizers/Cachers"
-permalink: kb/032/Q32169/
+permalink: /kb/032/Q32169/
 ---
 
 ## Q32169: FASTOPEN Harmful If Used with Disk Optimizers/Cachers

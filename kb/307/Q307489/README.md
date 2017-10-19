@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307489: Cannot Access .shtml Files with JRUN ISAPI Filter Installed"
-permalink: kb/307/Q307489/
+permalink: /kb/307/Q307489/
 ---
 
 ## Q307489: Cannot Access .shtml Files with JRUN ISAPI Filter Installed

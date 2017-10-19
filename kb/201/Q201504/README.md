@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201504: XFOR: Isolating Providers In CALCON for Troubleshooting Purposes"
-permalink: kb/201/Q201504/
+permalink: /kb/201/Q201504/
 ---
 
 ## Q201504: XFOR: Isolating Providers In CALCON for Troubleshooting Purposes

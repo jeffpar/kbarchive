@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218987: XCLN: Attachment is Empty if Pasted Twice to Desktop"
-permalink: kb/218/Q218987/
+permalink: /kb/218/Q218987/
 ---
 
 ## Q218987: XCLN: Attachment is Empty if Pasted Twice to Desktop

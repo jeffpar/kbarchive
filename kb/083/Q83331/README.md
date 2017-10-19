@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83331: DR DOS Policy and Workaround: Fault in MS-DOS Extender Error"
-permalink: kb/083/Q83331/
+permalink: /kb/083/Q83331/
 ---
 
 ## Q83331: DR DOS Policy and Workaround: Fault in MS-DOS Extender Error

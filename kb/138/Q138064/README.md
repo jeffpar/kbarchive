@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138064: Search Order for OLE Servers"
-permalink: kb/138/Q138064/
+permalink: /kb/138/Q138064/
 ---
 
 ## Q138064: Search Order for OLE Servers

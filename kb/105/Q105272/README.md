@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105272: Problem Logging on to LM, 3COM and Novell Simultaneously"
-permalink: kb/105/Q105272/
+permalink: /kb/105/Q105272/
 ---
 
 ## Q105272: Problem Logging on to LM, 3COM and Novell Simultaneously

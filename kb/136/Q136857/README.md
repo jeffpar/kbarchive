@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136857: How the EXCLUSIVE Setting Interacts With OPEN DATABASE Command"
-permalink: kb/136/Q136857/
+permalink: /kb/136/Q136857/
 ---
 
 ## Q136857: How the EXCLUSIVE Setting Interacts With OPEN DATABASE Command

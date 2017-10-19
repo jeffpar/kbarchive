@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142273: Backing up in-use WINS Database Files Can Cause Corruption"
-permalink: kb/142/Q142273/
+permalink: /kb/142/Q142273/
 ---
 
 ## Q142273: Backing up in-use WINS Database Files Can Cause Corruption

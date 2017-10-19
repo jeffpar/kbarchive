@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72788: Multimedia Personal Computing: The Microsoft View"
-permalink: kb/072/Q72788/
+permalink: /kb/072/Q72788/
 ---
 
 ## Q72788: Multimedia Personal Computing: The Microsoft View

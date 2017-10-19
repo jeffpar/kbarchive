@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110527: PRB: ADIR() in FoxPro for Macintosh Doesn't Return &quot;.&quot; or &quot;..&quot;"
-permalink: kb/110/Q110527/
+permalink: /kb/110/Q110527/
 ---
 
 ## Q110527: PRB: ADIR() in FoxPro for Macintosh Doesn't Return &quot;.&quot; or &quot;..&quot;

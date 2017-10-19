@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147617: Third-Party Browsers Get Access Denied Msg Connecting to IIS"
-permalink: kb/147/Q147617/
+permalink: /kb/147/Q147617/
 ---
 
 ## Q147617: Third-Party Browsers Get Access Denied Msg Connecting to IIS

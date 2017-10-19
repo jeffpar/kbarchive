@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250371: INFO: Launching Setup from Start Menu Brings Up Compliancy Check"
-permalink: kb/250/Q250371/
+permalink: /kb/250/Q250371/
 ---
 
 ## Q250371: INFO: Launching Setup from Start Menu Brings Up Compliancy Check

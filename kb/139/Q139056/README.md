@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139056: Promoting Windows NT BDC Does Not Close Client Connections"
-permalink: kb/139/Q139056/
+permalink: /kb/139/Q139056/
 ---
 
 ## Q139056: Promoting Windows NT BDC Does Not Close Client Connections

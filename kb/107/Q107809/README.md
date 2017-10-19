@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107809: RAS May Not Function on a Shared Network Installation"
-permalink: kb/107/Q107809/
+permalink: /kb/107/Q107809/
 ---
 
 ## Q107809: RAS May Not Function on a Shared Network Installation

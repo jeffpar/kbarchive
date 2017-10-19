@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124730: Tape Backup Units Supported in Windows 95"
-permalink: kb/124/Q124730/
+permalink: /kb/124/Q124730/
 ---
 
 ## Q124730: Tape Backup Units Supported in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253887: XADM: ADC Does Not Match to SID History After a User Is Cloned"
-permalink: kb/253/Q253887/
+permalink: /kb/253/Q253887/
 ---
 
 ## Q253887: XADM: ADC Does Not Match to SID History After a User Is Cloned

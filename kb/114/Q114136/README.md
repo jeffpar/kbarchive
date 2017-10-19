@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114136: BUG: FoxPro Math-Precision Problems with SET DECIMALS"
-permalink: kb/114/Q114136/
+permalink: /kb/114/Q114136/
 ---
 
 ## Q114136: BUG: FoxPro Math-Precision Problems with SET DECIMALS

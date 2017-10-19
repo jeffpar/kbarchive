@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136689: How an ON ERROR Routine Affects the Error Event"
-permalink: kb/136/Q136689/
+permalink: /kb/136/Q136689/
 ---
 
 ## Q136689: How an ON ERROR Routine Affects the Error Event

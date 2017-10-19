@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126657: Mac Wkst: Err Msg: Unable to Retrieve Details for That Item"
-permalink: kb/126/Q126657/
+permalink: /kb/126/Q126657/
 ---
 
 ## Q126657: Mac Wkst: Err Msg: Unable to Retrieve Details for That Item

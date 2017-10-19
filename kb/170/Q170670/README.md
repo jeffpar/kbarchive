@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170670: Renaming LU Pools is not a Dynamic Change"
-permalink: kb/170/Q170670/
+permalink: /kb/170/Q170670/
 ---
 
 ## Q170670: Renaming LU Pools is not a Dynamic Change

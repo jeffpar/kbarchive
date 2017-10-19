@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243424: FILE: Create and Compare Snapshots of Any Directory with FileImg"
-permalink: kb/243/Q243424/
+permalink: /kb/243/Q243424/
 ---
 
 ## Q243424: FILE: Create and Compare Snapshots of Any Directory with FileImg

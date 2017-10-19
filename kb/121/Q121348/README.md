@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121348: Err Msg: Cardware Requires 386 Enhanced Mode"
-permalink: kb/121/Q121348/
+permalink: /kb/121/Q121348/
 ---
 
 ## Q121348: Err Msg: Cardware Requires 386 Enhanced Mode

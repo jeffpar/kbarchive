@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75227: Microspeed Trackball Incompatible with MS-DOS Shell"
-permalink: kb/075/Q75227/
+permalink: /kb/075/Q75227/
 ---
 
 ## Q75227: Microspeed Trackball Incompatible with MS-DOS Shell

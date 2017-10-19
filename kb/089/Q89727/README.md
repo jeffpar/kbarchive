@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89727: Using ATTRIB, CHKDSK, or DIR Command to Locate Files"
-permalink: kb/089/Q89727/
+permalink: /kb/089/Q89727/
 ---
 
 ## Q89727: Using ATTRIB, CHKDSK, or DIR Command to Locate Files

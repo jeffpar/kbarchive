@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121737: TCP/IP Printing Supports Only Berkeley Style Daemons (RFC1179)"
-permalink: kb/121/Q121737/
+permalink: /kb/121/Q121737/
 ---
 
 ## Q121737: TCP/IP Printing Supports Only Berkeley Style Daemons (RFC1179)

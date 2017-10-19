@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143074: How to Highlight a Menu Option or Menu Item Programmatically"
-permalink: kb/143/Q143074/
+permalink: /kb/143/Q143074/
 ---
 
 ## Q143074: How to Highlight a Menu Option or Menu Item Programmatically

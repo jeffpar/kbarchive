@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148760: Return of Arcade: Setup Does Not Offer Custom Installation"
-permalink: kb/148/Q148760/
+permalink: /kb/148/Q148760/
 ---
 
 ## Q148760: Return of Arcade: Setup Does Not Offer Custom Installation

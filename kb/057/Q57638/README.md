@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57638: Capturing 320 x 200 MS-DOS Apps in Low Memory"
-permalink: kb/057/Q57638/
+permalink: /kb/057/Q57638/
 ---
 
 ## Q57638: Capturing 320 x 200 MS-DOS Apps in Low Memory

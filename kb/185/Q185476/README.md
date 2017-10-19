@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185476: HOWTO: Search Directories to Find or List Files"
-permalink: kb/185/Q185476/
+permalink: /kb/185/Q185476/
 ---
 
 ## Q185476: HOWTO: Search Directories to Find or List Files

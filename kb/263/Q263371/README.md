@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263371: Software Inventory Enumerates, Inventories NTFS Reparsed Volumes"
-permalink: kb/263/Q263371/
+permalink: /kb/263/Q263371/
 ---
 
 ## Q263371: Software Inventory Enumerates, Inventories NTFS Reparsed Volumes

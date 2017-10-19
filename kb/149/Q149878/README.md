@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149878: Protocol Does Not Bind to Token Ring Network Card"
-permalink: kb/149/Q149878/
+permalink: /kb/149/Q149878/
 ---
 
 ## Q149878: Protocol Does Not Bind to Token Ring Network Card

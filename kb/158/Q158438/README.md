@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158438: Enabling Non-Admin Users to Remotely Monitor with PERFMON"
-permalink: kb/158/Q158438/
+permalink: /kb/158/Q158438/
 ---
 
 ## Q158438: Enabling Non-Admin Users to Remotely Monitor with PERFMON

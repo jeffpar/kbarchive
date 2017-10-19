@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82093: HP DeskJet 500C Memory and Hard Disk Requirements"
-permalink: kb/082/Q82093/
+permalink: /kb/082/Q82093/
 ---
 
 ## Q82093: HP DeskJet 500C Memory and Hard Disk Requirements

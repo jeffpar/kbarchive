@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93562: PC Win: New Mail Notification -- Sound Chime &amp; Flash Envelope"
-permalink: kb/093/Q93562/
+permalink: /kb/093/Q93562/
 ---
 
 ## Q93562: PC Win: New Mail Notification -- Sound Chime &amp; Flash Envelope

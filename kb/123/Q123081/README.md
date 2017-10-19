@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123081: Movie Lists Not Copied from Cinemania 1994"
-permalink: kb/123/Q123081/
+permalink: /kb/123/Q123081/
 ---
 
 ## Q123081: Movie Lists Not Copied from Cinemania 1994

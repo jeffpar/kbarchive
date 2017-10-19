@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195852: XFOR: Notification Option Set Incorrectly During Migration"
-permalink: kb/195/Q195852/
+permalink: /kb/195/Q195852/
 ---
 
 ## Q195852: XFOR: Notification Option Set Incorrectly During Migration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173051: WD97: Errors Removing &quot;Run From Network Server&quot; Installation"
-permalink: kb/173/Q173051/
+permalink: /kb/173/Q173051/
 ---
 
 ## Q173051: WD97: Errors Removing &quot;Run From Network Server&quot; Installation

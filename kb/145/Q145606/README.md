@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145606: List of Macintosh Processors"
-permalink: kb/145/Q145606/
+permalink: /kb/145/Q145606/
 ---
 
 ## Q145606: List of Macintosh Processors

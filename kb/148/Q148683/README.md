@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148683: FIX: Command Button's Default Property Cannot Be Changed"
-permalink: kb/148/Q148683/
+permalink: /kb/148/Q148683/
 ---
 
 ## Q148683: FIX: Command Button's Default Property Cannot Be Changed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161153: HOWTO: Use the Assert Method for Debugging"
-permalink: kb/161/Q161153/
+permalink: /kb/161/Q161153/
 ---
 
 ## Q161153: HOWTO: Use the Assert Method for Debugging

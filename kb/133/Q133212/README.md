@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133212: Description of Microsoft Client for NetWare Networks Features"
-permalink: kb/133/Q133212/
+permalink: /kb/133/Q133212/
 ---
 
 ## Q133212: Description of Microsoft Client for NetWare Networks Features

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107839: INFO: BROWSE IN SCREEN Uses Active Window"
-permalink: kb/107/Q107839/
+permalink: /kb/107/Q107839/
 ---
 
 ## Q107839: INFO: BROWSE IN SCREEN Uses Active Window

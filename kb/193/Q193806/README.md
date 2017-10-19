@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193806: CSNW Error 85, Local Device Already in Use"
-permalink: kb/193/Q193806/
+permalink: /kb/193/Q193806/
 ---
 
 ## Q193806: CSNW Error 85, Local Device Already in Use

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132992: Windows 95 Multimedia Questions and Answers"
-permalink: kb/132/Q132992/
+permalink: /kb/132/Q132992/
 ---
 
 ## Q132992: Windows 95 Multimedia Questions and Answers

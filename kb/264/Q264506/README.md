@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264506: Documentation Error in Install.doc File in Services for UNIX 2.0"
-permalink: kb/264/Q264506/
+permalink: /kb/264/Q264506/
 ---
 
 ## Q264506: Documentation Error in Install.doc File in Services for UNIX 2.0

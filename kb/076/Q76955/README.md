@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76955: BUG: V86MMGR Virtual Device Boundary Condition Fails"
-permalink: kb/076/Q76955/
+permalink: /kb/076/Q76955/
 ---
 
 ## Q76955: BUG: V86MMGR Virtual Device Boundary Condition Fails

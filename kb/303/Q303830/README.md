@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303830: BUG: VFP7: Upsize Wizard Fails on Bulk Insert"
-permalink: kb/303/Q303830/
+permalink: /kb/303/Q303830/
 ---
 
 ## Q303830: BUG: VFP7: Upsize Wizard Fails on Bulk Insert

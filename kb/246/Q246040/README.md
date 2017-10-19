@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246040: SMS: How to Configure the Client Verify Cycle"
-permalink: kb/246/Q246040/
+permalink: /kb/246/Q246040/
 ---
 
 ## Q246040: SMS: How to Configure the Client Verify Cycle

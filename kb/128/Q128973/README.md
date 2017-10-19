@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128973: How To Create a Vertical Caption in Label Control"
-permalink: kb/128/Q128973/
+permalink: /kb/128/Q128973/
 ---
 
 ## Q128973: How To Create a Vertical Caption in Label Control

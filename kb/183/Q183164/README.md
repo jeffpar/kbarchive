@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183164: FIX: For..Each Loop in ActiveX Component Causes Errors"
-permalink: kb/183/Q183164/
+permalink: /kb/183/Q183164/
 ---
 
 ## Q183164: FIX: For..Each Loop in ActiveX Component Causes Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81855: Windows Problems on AST Premium/286"
-permalink: kb/081/Q81855/
+permalink: /kb/081/Q81855/
 ---
 
 ## Q81855: Windows Problems on AST Premium/286

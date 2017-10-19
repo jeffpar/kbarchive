@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119660: Compressed Audio Doesn't Play on Aztech Labs (AZI) Sound Cards"
-permalink: kb/119/Q119660/
+permalink: /kb/119/Q119660/
 ---
 
 ## Q119660: Compressed Audio Doesn't Play on Aztech Labs (AZI) Sound Cards

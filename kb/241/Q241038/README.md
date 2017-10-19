@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241038: Mastering Visual Basic 6.0 Fundamentals Comments &amp; Corrections"
-permalink: kb/241/Q241038/
+permalink: /kb/241/Q241038/
 ---
 
 ## Q241038: Mastering Visual Basic 6.0 Fundamentals Comments &amp; Corrections

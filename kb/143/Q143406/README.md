@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143406: FIX: ListView and Item Spacing"
-permalink: kb/143/Q143406/
+permalink: /kb/143/Q143406/
 ---
 
 ## Q143406: FIX: ListView and Item Spacing

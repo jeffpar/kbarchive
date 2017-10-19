@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177081: BUG: Control Displays Dithered Background in 256-Color Mode"
-permalink: kb/177/Q177081/
+permalink: /kb/177/Q177081/
 ---
 
 ## Q177081: BUG: Control Displays Dithered Background in 256-Color Mode

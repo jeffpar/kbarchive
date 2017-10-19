@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141213: How to Add Desktop and Start Menu Folder to the Start Menu"
-permalink: kb/141/Q141213/
+permalink: /kb/141/Q141213/
 ---
 
 ## Q141213: How to Add Desktop and Start Menu Folder to the Start Menu

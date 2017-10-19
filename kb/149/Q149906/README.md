@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149906: NetWare Server Can't Be Added to New Domain"
-permalink: kb/149/Q149906/
+permalink: /kb/149/Q149906/
 ---
 
 ## Q149906: NetWare Server Can't Be Added to New Domain

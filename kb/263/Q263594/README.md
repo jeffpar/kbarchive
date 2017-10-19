@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263594: SMS2.0 Fills Windows NT Registry to Capacity"
-permalink: kb/263/Q263594/
+permalink: /kb/263/Q263594/
 ---
 
 ## Q263594: SMS2.0 Fills Windows NT Registry to Capacity

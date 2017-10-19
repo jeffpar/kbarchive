@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44347: MS-DOS: Using the /e Parameter with APPEND.EXE"
-permalink: kb/044/Q44347/
+permalink: /kb/044/Q44347/
 ---
 
 ## Q44347: MS-DOS: Using the /e Parameter with APPEND.EXE

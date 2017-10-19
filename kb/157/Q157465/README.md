@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157465: WD97: Can't See Field Codes for Some Objects"
-permalink: kb/157/Q157465/
+permalink: /kb/157/Q157465/
 ---
 
 ## Q157465: WD97: Can't See Field Codes for Some Objects

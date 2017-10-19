@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152177: List of Documentation Errors in Service Pack 5 Readme.txt File"
-permalink: kb/152/Q152177/
+permalink: /kb/152/Q152177/
 ---
 
 ## Q152177: List of Documentation Errors in Service Pack 5 Readme.txt File

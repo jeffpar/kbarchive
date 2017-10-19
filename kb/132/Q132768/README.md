@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132768: Garbled Display on Packard Bell Statesman 486/50 Computer"
-permalink: kb/132/Q132768/
+permalink: /kb/132/Q132768/
 ---
 
 ## Q132768: Garbled Display on Packard Bell Statesman 486/50 Computer

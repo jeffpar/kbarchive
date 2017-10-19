@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283810: W97/Ethan.A Macro Virus Alters .doc Properties"
-permalink: kb/283/Q283810/
+permalink: /kb/283/Q283810/
 ---
 
 ## Q283810: W97/Ethan.A Macro Virus Alters .doc Properties

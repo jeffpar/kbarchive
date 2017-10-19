@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142546: How to Use a RAM Drive to Troubleshoot Memory"
-permalink: kb/142/Q142546/
+permalink: /kb/142/Q142546/
 ---
 
 ## Q142546: How to Use a RAM Drive to Troubleshoot Memory

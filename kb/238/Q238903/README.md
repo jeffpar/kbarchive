@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238903: COBOL Wizard Specifies Variable as the Return Value"
-permalink: kb/238/Q238903/
+permalink: /kb/238/Q238903/
 ---
 
 ## Q238903: COBOL Wizard Specifies Variable as the Return Value

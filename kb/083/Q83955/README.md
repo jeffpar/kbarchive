@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83955: TrueType Problem with Blazer Star II Laser Printer"
-permalink: kb/083/Q83955/
+permalink: /kb/083/Q83955/
 ---
 
 ## Q83955: TrueType Problem with Blazer Star II Laser Printer

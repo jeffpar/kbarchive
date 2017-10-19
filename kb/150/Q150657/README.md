@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150657: Mac Bookshelf 96-97: Bookshelf Guide Could Not Be Found"
-permalink: kb/150/Q150657/
+permalink: /kb/150/Q150657/
 ---
 
 ## Q150657: Mac Bookshelf 96-97: Bookshelf Guide Could Not Be Found

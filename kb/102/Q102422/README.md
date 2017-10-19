@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102422: PC OS2: Doc Err: Associating Applications and File Extensions"
-permalink: kb/102/Q102422/
+permalink: /kb/102/Q102422/
 ---
 
 ## Q102422: PC OS2: Doc Err: Associating Applications and File Extensions

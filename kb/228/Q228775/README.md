@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228775: Baseball 2000: Cannot Locate Season Database in General Manager"
-permalink: kb/228/Q228775/
+permalink: /kb/228/Q228775/
 ---
 
 ## Q228775: Baseball 2000: Cannot Locate Season Database in General Manager

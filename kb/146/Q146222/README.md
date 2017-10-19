@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146222: How to Use Grid MouseDown Code to Prevent Row/Partition Resize"
-permalink: kb/146/Q146222/
+permalink: /kb/146/Q146222/
 ---
 
 ## Q146222: How to Use Grid MouseDown Code to Prevent Row/Partition Resize

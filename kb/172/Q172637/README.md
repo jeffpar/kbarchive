@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172637: User Able to Open Display Session If Associated Printer in Use"
-permalink: kb/172/Q172637/
+permalink: /kb/172/Q172637/
 ---
 
 ## Q172637: User Able to Open Display Session If Associated Printer in Use

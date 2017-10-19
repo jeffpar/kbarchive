@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154537: XCON: Congestion in Message Transfer Service, Sending to DL"
-permalink: kb/154/Q154537/
+permalink: /kb/154/Q154537/
 ---
 
 ## Q154537: XCON: Congestion in Message Transfer Service, Sending to DL

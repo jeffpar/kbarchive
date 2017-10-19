@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156320: XCLN: Contributor Unable to Submit Form to Public Folder"
-permalink: kb/156/Q156320/
+permalink: /kb/156/Q156320/
 ---
 
 ## Q156320: XCLN: Contributor Unable to Submit Form to Public Folder

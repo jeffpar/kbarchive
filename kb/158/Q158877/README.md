@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158877: Msbatch.inf Parameters: Turn Off Online Registration"
-permalink: kb/158/Q158877/
+permalink: /kb/158/Q158877/
 ---
 
 ## Q158877: Msbatch.inf Parameters: Turn Off Online Registration

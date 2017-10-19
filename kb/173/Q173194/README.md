@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173194: XCLN: Cannot Open Third-Party Applications Attached in Exchange"
-permalink: kb/173/Q173194/
+permalink: /kb/173/Q173194/
 ---
 
 ## Q173194: XCLN: Cannot Open Third-Party Applications Attached in Exchange

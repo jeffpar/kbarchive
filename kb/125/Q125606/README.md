@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125606: INFO: Password .DLL File That Can Be Called Anywhere in FoxPro"
-permalink: kb/125/Q125606/
+permalink: /kb/125/Q125606/
 ---
 
 ## Q125606: INFO: Password .DLL File That Can Be Called Anywhere in FoxPro

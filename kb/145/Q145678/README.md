@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145678: PRB: WIDTH # Statement Raises Error in Visual Basic 4.0"
-permalink: kb/145/Q145678/
+permalink: /kb/145/Q145678/
 ---
 
 ## Q145678: PRB: WIDTH # Statement Raises Error in Visual Basic 4.0

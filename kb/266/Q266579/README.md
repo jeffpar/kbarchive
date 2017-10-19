@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266579: Encarta 2001: HTML Formatting Lost When Using Encarta Researcher"
-permalink: kb/266/Q266579/
+permalink: /kb/266/Q266579/
 ---
 
 ## Q266579: Encarta 2001: HTML Formatting Lost When Using Encarta Researcher

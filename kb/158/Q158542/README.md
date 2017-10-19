@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158542: CG3: Clip Gallery Takes a Long Time to Start"
-permalink: kb/158/Q158542/
+permalink: /kb/158/Q158542/
 ---
 
 ## Q158542: CG3: Clip Gallery Takes a Long Time to Start

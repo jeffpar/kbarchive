@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157588: FIX: SQLDescribeCol Returns Error on Prepared Outer Join"
-permalink: kb/157/Q157588/
+permalink: /kb/157/Q157588/
 ---
 
 ## Q157588: FIX: SQLDescribeCol Returns Error on Prepared Outer Join

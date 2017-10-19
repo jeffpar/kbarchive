@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110348: Show Domain Members Only Option has Dimmed Icons"
-permalink: kb/110/Q110348/
+permalink: /kb/110/Q110348/
 ---
 
 ## Q110348: Show Domain Members Only Option has Dimmed Icons

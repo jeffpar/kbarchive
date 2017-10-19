@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150485: HPMON Causes an Access Violation in SPOOLSS"
-permalink: kb/150/Q150485/
+permalink: /kb/150/Q150485/
 ---
 
 ## Q150485: HPMON Causes an Access Violation in SPOOLSS

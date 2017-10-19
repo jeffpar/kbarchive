@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173382: XWEB: Outlook Web Access Screen Hard to Read in 16-Color Mode"
-permalink: kb/173/Q173382/
+permalink: /kb/173/Q173382/
 ---
 
 ## Q173382: XWEB: Outlook Web Access Screen Hard to Read in 16-Color Mode

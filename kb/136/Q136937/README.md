@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136937: Internet Tab Missing in Message Properties"
-permalink: kb/136/Q136937/
+permalink: /kb/136/Q136937/
 ---
 
 ## Q136937: Internet Tab Missing in Message Properties

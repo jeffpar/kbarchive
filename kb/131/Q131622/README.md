@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131622: How to Display Current Control Properties at Run Time"
-permalink: kb/131/Q131622/
+permalink: /kb/131/Q131622/
 ---
 
 ## Q131622: How to Display Current Control Properties at Run Time

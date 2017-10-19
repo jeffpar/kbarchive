@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140222: PRB: Cannot Use _PBPAGE or _PEPAGE to Control Pages for Report"
-permalink: kb/140/Q140222/
+permalink: /kb/140/Q140222/
 ---
 
 ## Q140222: PRB: Cannot Use _PBPAGE or _PEPAGE to Control Pages for Report

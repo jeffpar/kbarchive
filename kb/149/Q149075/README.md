@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149075: ADT/ODE: How to Reference Buttons on a Custom Toolbar Control"
-permalink: kb/149/Q149075/
+permalink: /kb/149/Q149075/
 ---
 
 ## Q149075: ADT/ODE: How to Reference Buttons on a Custom Toolbar Control

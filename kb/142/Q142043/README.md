@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142043: How To Configure MPR In An IPX Network"
-permalink: kb/142/Q142043/
+permalink: /kb/142/Q142043/
 ---
 
 ## Q142043: How To Configure MPR In An IPX Network

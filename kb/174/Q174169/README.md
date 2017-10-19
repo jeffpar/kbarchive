@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174169: XADM: WinNT Accounts for CRs Cannot Be Deleted with Bulk Import"
-permalink: kb/174/Q174169/
+permalink: /kb/174/Q174169/
 ---
 
 ## Q174169: XADM: WinNT Accounts for CRs Cannot Be Deleted with Bulk Import

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137240: Mystify Screen Saver Reverts Back to Default Object Shape"
-permalink: kb/137/Q137240/
+permalink: /kb/137/Q137240/
 ---
 
 ## Q137240: Mystify Screen Saver Reverts Back to Default Object Shape

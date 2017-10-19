@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153657: SMS: Event ID 316 Reports Incorrect Site Code"
-permalink: kb/153/Q153657/
+permalink: /kb/153/Q153657/
 ---
 
 ## Q153657: SMS: Event ID 316 Reports Incorrect Site Code

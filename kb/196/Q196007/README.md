@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196007: WD97: TOC or Index Starts with No Number for Heading 1 Style"
-permalink: kb/196/Q196007/
+permalink: /kb/196/Q196007/
 ---
 
 ## Q196007: WD97: TOC or Index Starts with No Number for Heading 1 Style

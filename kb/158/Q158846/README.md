@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158846: Black Screen Using ViewSonic 15G Monitor with S3 765"
-permalink: kb/158/Q158846/
+permalink: /kb/158/Q158846/
 ---
 
 ## Q158846: Black Screen Using ViewSonic 15G Monitor with S3 765

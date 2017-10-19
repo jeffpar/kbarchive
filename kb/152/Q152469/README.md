@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152469: Hardware Inventory Hangs at 30% When Detecting the Game Port"
-permalink: kb/152/Q152469/
+permalink: /kb/152/Q152469/
 ---
 
 ## Q152469: Hardware Inventory Hangs at 30% When Detecting the Game Port

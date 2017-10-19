@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63357: Debugging NetWare Printing Problems in Windows"
-permalink: kb/063/Q63357/
+permalink: /kb/063/Q63357/
 ---
 
 ## Q63357: Debugging NetWare Printing Problems in Windows

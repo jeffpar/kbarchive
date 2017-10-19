@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233018: FP: Enabling Database Features Without Server Extensions"
-permalink: kb/233/Q233018/
+permalink: /kb/233/Q233018/
 ---
 
 ## Q233018: FP: Enabling Database Features Without Server Extensions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111637: Mac Adm: Using Changes Only and Full User List Input Types"
-permalink: kb/111/Q111637/
+permalink: /kb/111/Q111637/
 ---
 
 ## Q111637: Mac Adm: Using Changes Only and Full User List Input Types

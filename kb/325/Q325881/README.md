@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325881: Asheron's Call: How to Purchase a House in Dark Majesty"
-permalink: kb/325/Q325881/
+permalink: /kb/325/Q325881/
 ---
 
 ## Q325881: Asheron's Call: How to Purchase a House in Dark Majesty

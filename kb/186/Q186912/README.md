@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186912: FIX: Error Using Trimcrlf Method of _stringlib Class"
-permalink: kb/186/Q186912/
+permalink: /kb/186/Q186912/
 ---
 
 ## Q186912: FIX: Error Using Trimcrlf Method of _stringlib Class

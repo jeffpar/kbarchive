@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172818: WD97: Insert WordArt/AutoShape Opens Blank Picture Object"
-permalink: kb/172/Q172818/
+permalink: /kb/172/Q172818/
 ---
 
 ## Q172818: WD97: Insert WordArt/AutoShape Opens Blank Picture Object

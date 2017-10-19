@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167635: XADM: Error Msg: &lt;File&gt; In Use By Another Application"
-permalink: kb/167/Q167635/
+permalink: /kb/167/Q167635/
 ---
 
 ## Q167635: XADM: Error Msg: &lt;File&gt; In Use By Another Application

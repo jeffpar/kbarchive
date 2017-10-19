@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155693: Calling Card Does Not Work During MSN Signup"
-permalink: kb/155/Q155693/
+permalink: /kb/155/Q155693/
 ---
 
 ## Q155693: Calling Card Does Not Work During MSN Signup

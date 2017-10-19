@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249025: Setup Logging in IIS 5.0"
-permalink: kb/249/Q249025/
+permalink: /kb/249/Q249025/
 ---
 
 ## Q249025: Setup Logging in IIS 5.0

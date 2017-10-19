@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213097: SMSINST: Create Shortcut Command Truncates Source Path Directory"
-permalink: kb/213/Q213097/
+permalink: /kb/213/Q213097/
 ---
 
 ## Q213097: SMSINST: Create Shortcut Command Truncates Source Path Directory

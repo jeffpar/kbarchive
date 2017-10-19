@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85644: Troubleshooting CD-ROM Problems in Windows 3.1 Enhanced Mode"
-permalink: kb/085/Q85644/
+permalink: /kb/085/Q85644/
 ---
 
 ## Q85644: Troubleshooting CD-ROM Problems in Windows 3.1 Enhanced Mode

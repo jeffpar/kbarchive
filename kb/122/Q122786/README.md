@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122786: Steps to Remove Windows Entertainment Pack, Volume 4"
-permalink: kb/122/Q122786/
+permalink: /kb/122/Q122786/
 ---
 
 ## Q122786: Steps to Remove Windows Entertainment Pack, Volume 4

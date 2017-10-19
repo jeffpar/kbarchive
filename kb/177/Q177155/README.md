@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177155: PRB: &quot;Save Changes?&quot; Dialog Box Appears When No Changes Made"
-permalink: kb/177/Q177155/
+permalink: /kb/177/Q177155/
 ---
 
 ## Q177155: PRB: &quot;Save Changes?&quot; Dialog Box Appears When No Changes Made

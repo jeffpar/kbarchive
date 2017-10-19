@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117734: CD Sampler: Demos Cause GPF with Diamond Stealth Video Card"
-permalink: kb/117/Q117734/
+permalink: /kb/117/Q117734/
 ---
 
 ## Q117734: CD Sampler: Demos Cause GPF with Diamond Stealth Video Card

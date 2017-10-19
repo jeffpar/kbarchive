@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151472: TCP&#92;IP-32B Using DHCP and M-Node Does Not Register All Names"
-permalink: kb/151/Q151472/
+permalink: /kb/151/Q151472/
 ---
 
 ## Q151472: TCP&#92;IP-32B Using DHCP and M-Node Does Not Register All Names

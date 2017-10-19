@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260193: XADM: Mailbox Resources Displays the Wrong Display Name"
-permalink: kb/260/Q260193/
+permalink: /kb/260/Q260193/
 ---
 
 ## Q260193: XADM: Mailbox Resources Displays the Wrong Display Name

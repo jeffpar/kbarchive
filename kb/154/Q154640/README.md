@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154640: Computer Hangs During Setup with Intel EtherExpress PRO/100A"
-permalink: kb/154/Q154640/
+permalink: /kb/154/Q154640/
 ---
 
 ## Q154640: Computer Hangs During Setup with Intel EtherExpress PRO/100A

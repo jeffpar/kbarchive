@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86091: PC Win: OLE Apps Have Unexpected Window Stacking Order"
-permalink: kb/086/Q86091/
+permalink: /kb/086/Q86091/
 ---
 
 ## Q86091: PC Win: OLE Apps Have Unexpected Window Stacking Order

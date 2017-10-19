@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84297: FORMAT Command Formats Current Drive in MS-DOS 1.x, 2.x"
-permalink: kb/084/Q84297/
+permalink: /kb/084/Q84297/
 ---
 
 ## Q84297: FORMAT Command Formats Current Drive in MS-DOS 1.x, 2.x

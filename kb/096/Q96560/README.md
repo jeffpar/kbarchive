@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96560: POWER.EXE and Advanced Power Management (APM) Support"
-permalink: kb/096/Q96560/
+permalink: /kb/096/Q96560/
 ---
 
 ## Q96560: POWER.EXE and Advanced Power Management (APM) Support

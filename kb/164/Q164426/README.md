@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164426: CompuServe Mail Service Does Not Accept Your Name"
-permalink: kb/164/Q164426/
+permalink: /kb/164/Q164426/
 ---
 
 ## Q164426: CompuServe Mail Service Does Not Accept Your Name

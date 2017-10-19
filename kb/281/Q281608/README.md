@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281608: Encarta Researcher: Pasted Images Appear Blank or as a Gray Box"
-permalink: kb/281/Q281608/
+permalink: /kb/281/Q281608/
 ---
 
 ## Q281608: Encarta Researcher: Pasted Images Appear Blank or as a Gray Box

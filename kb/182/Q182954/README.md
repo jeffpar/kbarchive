@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182954: PRB: rdConcurRowver Availability Incorrect in Books Online"
-permalink: kb/182/Q182954/
+permalink: /kb/182/Q182954/
 ---
 
 ## Q182954: PRB: rdConcurRowver Availability Incorrect in Books Online

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74340: ALC Values Supported by the Microsoft Recognizer"
-permalink: kb/074/Q74340/
+permalink: /kb/074/Q74340/
 ---
 
 ## Q74340: ALC Values Supported by the Microsoft Recognizer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237524: Encarta Dictionary: Setup Installs an Earlier Version of MsInfo"
-permalink: kb/237/Q237524/
+permalink: /kb/237/Q237524/
 ---
 
 ## Q237524: Encarta Dictionary: Setup Installs an Earlier Version of MsInfo

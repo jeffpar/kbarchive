@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104079: PC Adm: Err Msg: Notice 27: Disk Directory Full/Error Writing"
-permalink: kb/104/Q104079/
+permalink: /kb/104/Q104079/
 ---
 
 ## Q104079: PC Adm: Err Msg: Notice 27: Disk Directory Full/Error Writing

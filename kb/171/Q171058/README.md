@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171058: INFO: Microsoft Sponsored IIS NNTP Newsgroups"
-permalink: kb/171/Q171058/
+permalink: /kb/171/Q171058/
 ---
 
 ## Q171058: INFO: Microsoft Sponsored IIS NNTP Newsgroups

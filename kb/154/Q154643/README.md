@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154643: INFO: Desktop Drivers Not Meant For Access or DAO"
-permalink: kb/154/Q154643/
+permalink: /kb/154/Q154643/
 ---
 
 ## Q154643: INFO: Desktop Drivers Not Meant For Access or DAO

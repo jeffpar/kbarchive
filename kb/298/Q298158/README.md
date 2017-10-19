@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298158: HOW TO: Configure FrontPage Server Extensions in IIS"
-permalink: kb/298/Q298158/
+permalink: /kb/298/Q298158/
 ---
 
 ## Q298158: HOW TO: Configure FrontPage Server Extensions in IIS

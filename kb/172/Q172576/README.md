@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172576: Changing PW on FPNW Prompts for Fully Qualified NDS User Name"
-permalink: kb/172/Q172576/
+permalink: /kb/172/Q172576/
 ---
 
 ## Q172576: Changing PW on FPNW Prompts for Fully Qualified NDS User Name

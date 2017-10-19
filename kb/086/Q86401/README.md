@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86401: PC OS2: Print Setup Dialog Selects Wrong Default Printer"
-permalink: kb/086/Q86401/
+permalink: /kb/086/Q86401/
 ---
 
 ## Q86401: PC OS2: Print Setup Dialog Selects Wrong Default Printer

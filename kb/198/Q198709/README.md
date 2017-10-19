@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198709: XADM: Client Cannot Enroll in Exchange Server 5.0 KMS"
-permalink: kb/198/Q198709/
+permalink: /kb/198/Q198709/
 ---
 
 ## Q198709: XADM: Client Cannot Enroll in Exchange Server 5.0 KMS

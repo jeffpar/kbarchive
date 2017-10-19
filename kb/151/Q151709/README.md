@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151709: NT Server Manager Can Lock LAN Manager Server"
-permalink: kb/151/Q151709/
+permalink: /kb/151/Q151709/
 ---
 
 ## Q151709: NT Server Manager Can Lock LAN Manager Server

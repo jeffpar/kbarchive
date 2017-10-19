@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140538: HOWTO: How to Do Away with the Print Dialog Box in MFC Printing"
-permalink: kb/140/Q140538/
+permalink: /kb/140/Q140538/
 ---
 
 ## Q140538: HOWTO: How to Do Away with the Print Dialog Box in MFC Printing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44029: Mac DOS: Network Devices Not Listed with PC AppleShare"
-permalink: kb/044/Q44029/
+permalink: /kb/044/Q44029/
 ---
 
 ## Q44029: Mac DOS: Network Devices Not Listed with PC AppleShare

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111606: BUG: ROP2 Code Applied Incorrectly in Pie() Function"
-permalink: kb/111/Q111606/
+permalink: /kb/111/Q111606/
 ---
 
 ## Q111606: BUG: ROP2 Code Applied Incorrectly in Pie() Function

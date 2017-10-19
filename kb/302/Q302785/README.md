@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302785: List Of Users Doesn't Display When Setting &quot;Parental Controls&quot; i"
-permalink: kb/302/Q302785/
+permalink: /kb/302/Q302785/
 ---
 
 ## Q302785: List Of Users Doesn't Display When Setting &quot;Parental Controls&quot; i

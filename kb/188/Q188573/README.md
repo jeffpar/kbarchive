@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188573: INFO: Install Visual Basic 6.0 Complete from Visual Studio"
-permalink: kb/188/Q188573/
+permalink: /kb/188/Q188573/
 ---
 
 ## Q188573: INFO: Install Visual Basic 6.0 Complete from Visual Studio

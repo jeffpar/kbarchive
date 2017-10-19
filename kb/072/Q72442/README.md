@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72442: Not Enough Memory to Run PageMaker 4.0"
-permalink: kb/072/Q72442/
+permalink: /kb/072/Q72442/
 ---
 
 ## Q72442: Not Enough Memory to Run PageMaker 4.0

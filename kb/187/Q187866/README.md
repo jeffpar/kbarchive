@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187866: XADM: Store Produces Dr. Watson When Converting File Name"
-permalink: kb/187/Q187866/
+permalink: /kb/187/Q187866/
 ---
 
 ## Q187866: XADM: Store Produces Dr. Watson When Converting File Name

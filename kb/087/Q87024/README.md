@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87024: SMTP: Specific Hardware Needed by the Gateway"
-permalink: kb/087/Q87024/
+permalink: /kb/087/Q87024/
 ---
 
 ## Q87024: SMTP: Specific Hardware Needed by the Gateway

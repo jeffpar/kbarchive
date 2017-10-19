@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186621: Terminal Server Commands: C2CFG or C2CONFIG"
-permalink: kb/186/Q186621/
+permalink: /kb/186/Q186621/
 ---
 
 ## Q186621: Terminal Server Commands: C2CFG or C2CONFIG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101458: SMTP: Mail SMTPPUT.EXE Version 3.04.1 Update"
-permalink: kb/101/Q101458/
+permalink: /kb/101/Q101458/
 ---
 
 ## Q101458: SMTP: Mail SMTPPUT.EXE Version 3.04.1 Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129224: HOWTO: Remove the System Menu from an Iconized Application"
-permalink: kb/129/Q129224/
+permalink: /kb/129/Q129224/
 ---
 
 ## Q129224: HOWTO: Remove the System Menu from an Iconized Application

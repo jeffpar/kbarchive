@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245174: Account Operators Cannot Administer Certain User Accounts"
-permalink: kb/245/Q245174/
+permalink: /kb/245/Q245174/
 ---
 
 ## Q245174: Account Operators Cannot Administer Certain User Accounts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194184: INFO: General Protection Fault Error Handling in VFP 6.0 and 7.0"
-permalink: kb/194/Q194184/
+permalink: /kb/194/Q194184/
 ---
 
 ## Q194184: INFO: General Protection Fault Error Handling in VFP 6.0 and 7.0

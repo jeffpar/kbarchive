@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82095: Windows Err Msg: Unable to Use XXXX.BMP As a Desktop Bitmap"
-permalink: kb/082/Q82095/
+permalink: /kb/082/Q82095/
 ---
 
 ## Q82095: Windows Err Msg: Unable to Use XXXX.BMP As a Desktop Bitmap

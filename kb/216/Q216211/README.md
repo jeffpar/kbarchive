@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216211: PRB: Extended ASCII Characters Displayed as &quot;?&quot;"
-permalink: kb/216/Q216211/
+permalink: /kb/216/Q216211/
 ---
 
 ## Q216211: PRB: Extended ASCII Characters Displayed as &quot;?&quot;

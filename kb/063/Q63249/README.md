@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63249: Mac AL: AppleLink GW Recipients Are Listed in Simple User List"
-permalink: kb/063/Q63249/
+permalink: /kb/063/Q63249/
 ---
 
 ## Q63249: Mac AL: AppleLink GW Recipients Are Listed in Simple User List

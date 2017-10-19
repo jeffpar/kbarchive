@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248474: Windows NT Server Tools Overwrites Terminal Server Information"
-permalink: kb/248/Q248474/
+permalink: /kb/248/Q248474/
 ---
 
 ## Q248474: Windows NT Server Tools Overwrites Terminal Server Information

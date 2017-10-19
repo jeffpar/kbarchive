@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174037: XFOR: OLE Objects Larger Than 1 MB Not Migrated into Exchange"
-permalink: kb/174/Q174037/
+permalink: /kb/174/Q174037/
 ---
 
 ## Q174037: XFOR: OLE Objects Larger Than 1 MB Not Migrated into Exchange

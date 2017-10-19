@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146988: XCLN: Escape Doesn't Close Mailbox Properties from General Tab"
-permalink: kb/146/Q146988/
+permalink: /kb/146/Q146988/
 ---
 
 ## Q146988: XCLN: Escape Doesn't Close Mailbox Properties from General Tab

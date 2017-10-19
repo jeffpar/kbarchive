@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86883: Generic Text Driver Causes Underlines to Disappear in Write"
-permalink: kb/086/Q86883/
+permalink: /kb/086/Q86883/
 ---
 
 ## Q86883: Generic Text Driver Causes Underlines to Disappear in Write

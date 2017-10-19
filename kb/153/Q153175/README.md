@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153175: Mouse Malfunctions in MS-DOS Applications"
-permalink: kb/153/Q153175/
+permalink: /kb/153/Q153175/
 ---
 
 ## Q153175: Mouse Malfunctions in MS-DOS Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60945: Mac Form: RETURN Key Does Not Work in Scrolling Text Field"
-permalink: kb/060/Q60945/
+permalink: /kb/060/Q60945/
 ---
 
 ## Q60945: Mac Form: RETURN Key Does Not Work in Scrolling Text Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156461: Writer 2: Gaps Between Pages on Printed Banners"
-permalink: kb/156/Q156461/
+permalink: /kb/156/Q156461/
 ---
 
 ## Q156461: Writer 2: Gaps Between Pages on Printed Banners

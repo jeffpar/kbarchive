@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187404: Printer Drivers Setup Makes Server Appear To Be Hung"
-permalink: kb/187/Q187404/
+permalink: /kb/187/Q187404/
 ---
 
 ## Q187404: Printer Drivers Setup Makes Server Appear To Be Hung

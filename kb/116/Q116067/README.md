@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116067: Can't Set Default Paper Length to Maximum w/Panasonic KX-P1624"
-permalink: kb/116/Q116067/
+permalink: /kb/116/Q116067/
 ---
 
 ## Q116067: Can't Set Default Paper Length to Maximum w/Panasonic KX-P1624

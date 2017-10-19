@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121891: Windows 95 Adds a Preceding &quot;1&quot; If Area Codes Are Different"
-permalink: kb/121/Q121891/
+permalink: /kb/121/Q121891/
 ---
 
 ## Q121891: Windows 95 Adds a Preceding &quot;1&quot; If Area Codes Are Different

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137961: Bookshelf: F10 Function Key Disabled with QuickShelf"
-permalink: kb/137/Q137961/
+permalink: /kb/137/Q137961/
 ---
 
 ## Q137961: Bookshelf: F10 Function Key Disabled with QuickShelf

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152315: PRB: When to Call AfxDaoTerm() in an Automation Server"
-permalink: kb/152/Q152315/
+permalink: /kb/152/Q152315/
 ---
 
 ## Q152315: PRB: When to Call AfxDaoTerm() in an Automation Server

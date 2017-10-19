@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164491: Stop: 0x0000000A in Rdr.sys When Mailslot Message &gt; 512 Bytes"
-permalink: kb/164/Q164491/
+permalink: /kb/164/Q164491/
 ---
 
 ## Q164491: Stop: 0x0000000A in Rdr.sys When Mailslot Message &gt; 512 Bytes

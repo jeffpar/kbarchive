@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135694: HP NS ARPA Services Support for Microsoft Network Clients"
-permalink: kb/135/Q135694/
+permalink: /kb/135/Q135694/
 ---
 
 ## Q135694: HP NS ARPA Services Support for Microsoft Network Clients

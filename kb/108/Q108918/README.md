@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108918: WD97: Err Msg: &quot;Cannot Save or Create File&quot; to Network Drive"
-permalink: kb/108/Q108918/
+permalink: /kb/108/Q108918/
 ---
 
 ## Q108918: WD97: Err Msg: &quot;Cannot Save or Create File&quot; to Network Drive

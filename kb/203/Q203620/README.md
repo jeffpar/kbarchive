@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203620: XADM: NT Account for DL Owner Is Not Added to Permissions"
-permalink: kb/203/Q203620/
+permalink: /kb/203/Q203620/
 ---
 
 ## Q203620: XADM: NT Account for DL Owner Is Not Added to Permissions

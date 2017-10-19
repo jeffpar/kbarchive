@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178161: Unable to Send Private Message to Exchange Recipient"
-permalink: kb/178/Q178161/
+permalink: /kb/178/Q178161/
 ---
 
 ## Q178161: Unable to Send Private Message to Exchange Recipient

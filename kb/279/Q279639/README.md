@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279639: APPSEC.EXE Application Security Tool: Cannot Add NTVDM.EXE As Do"
-permalink: kb/279/Q279639/
+permalink: /kb/279/Q279639/
 ---
 
 ## Q279639: APPSEC.EXE Application Security Tool: Cannot Add NTVDM.EXE As Do

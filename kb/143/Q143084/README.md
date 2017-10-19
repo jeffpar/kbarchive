@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143084: FIX: Problems with Using the MFC DAO Classes in a .DLL or .OCX"
-permalink: kb/143/Q143084/
+permalink: /kb/143/Q143084/
 ---
 
 ## Q143084: FIX: Problems with Using the MFC DAO Classes in a .DLL or .OCX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321130: MS02-018: Patch for Buffer Overrun in HTTP Header Handling"
-permalink: kb/321/Q321130/
+permalink: /kb/321/Q321130/
 ---
 
 ## Q321130: MS02-018: Patch for Buffer Overrun in HTTP Header Handling

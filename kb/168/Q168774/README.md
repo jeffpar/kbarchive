@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168774: IBM PC/3270 for NT v4.1 TN3270 May Fail with XPROG750"
-permalink: kb/168/Q168774/
+permalink: /kb/168/Q168774/
 ---
 
 ## Q168774: IBM PC/3270 for NT v4.1 TN3270 May Fail with XPROG750

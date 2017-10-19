@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160350: Index Server Returns HTTP 500 Error"
-permalink: kb/160/Q160350/
+permalink: /kb/160/Q160350/
 ---
 
 ## Q160350: Index Server Returns HTTP 500 Error

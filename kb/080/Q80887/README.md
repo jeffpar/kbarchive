@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80887: Chgaccl.exe Switches Between Accelerator Tables in App"
-permalink: kb/080/Q80887/
+permalink: /kb/080/Q80887/
 ---
 
 ## Q80887: Chgaccl.exe Switches Between Accelerator Tables in App

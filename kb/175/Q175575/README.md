@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175575: How to Disable Music on the MSN On Stage Web Page"
-permalink: kb/175/Q175575/
+permalink: /kb/175/Q175575/
 ---
 
 ## Q175575: How to Disable Music on the MSN On Stage Web Page

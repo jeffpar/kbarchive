@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240910: XFOR: Err Msg: Error {Invalid syntax} with Notes Connector"
-permalink: kb/240/Q240910/
+permalink: /kb/240/Q240910/
 ---
 
 ## Q240910: XFOR: Err Msg: Error {Invalid syntax} with Notes Connector

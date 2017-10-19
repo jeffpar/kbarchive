@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221809: Combat Flight Simulator: Computer Hangs When Airplane Crashes"
-permalink: kb/221/Q221809/
+permalink: /kb/221/Q221809/
 ---
 
 ## Q221809: Combat Flight Simulator: Computer Hangs When Airplane Crashes

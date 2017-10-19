@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196832: HOWTO: Provide an Alternative View to Data Using Splitter Window"
-permalink: kb/196/Q196832/
+permalink: /kb/196/Q196832/
 ---
 
 ## Q196832: HOWTO: Provide an Alternative View to Data Using Splitter Window

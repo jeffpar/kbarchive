@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86368: Windows Err Msg: Could Not Continue... Paging Error"
-permalink: kb/086/Q86368/
+permalink: /kb/086/Q86368/
 ---
 
 ## Q86368: Windows Err Msg: Could Not Continue... Paging Error

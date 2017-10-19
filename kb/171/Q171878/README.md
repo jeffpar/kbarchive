@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171878: FIX: Cursor Library Memory Leak in Multithreaded Environment"
-permalink: kb/171/Q171878/
+permalink: /kb/171/Q171878/
 ---
 
 ## Q171878: FIX: Cursor Library Memory Leak in Multithreaded Environment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103905: PC WRmt: Cannot Create New .MMF If Old Location Unavailable"
-permalink: kb/103/Q103905/
+permalink: /kb/103/Q103905/
 ---
 
 ## Q103905: PC WRmt: Cannot Create New .MMF If Old Location Unavailable

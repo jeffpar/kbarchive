@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259403: Vcredist Installs Latest Run-Time Components for Visual C++"
-permalink: kb/259/Q259403/
+permalink: /kb/259/Q259403/
 ---
 
 ## Q259403: Vcredist Installs Latest Run-Time Components for Visual C++

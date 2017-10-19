@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189345: XCON: MTA Logs Event 9301 Though X.400 Connector Is Identified"
-permalink: kb/189/Q189345/
+permalink: /kb/189/Q189345/
 ---
 
 ## Q189345: XCON: MTA Logs Event 9301 Though X.400 Connector Is Identified

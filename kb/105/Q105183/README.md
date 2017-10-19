@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105183: Backup Overwrites DoubleSpace-Compressed Floppy Disks"
-permalink: kb/105/Q105183/
+permalink: /kb/105/Q105183/
 ---
 
 ## Q105183: Backup Overwrites DoubleSpace-Compressed Floppy Disks

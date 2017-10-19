@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183296: FIX: SETALL() Corrupts Properties of Custom Objects"
-permalink: kb/183/Q183296/
+permalink: /kb/183/Q183296/
 ---
 
 ## Q183296: FIX: SETALL() Corrupts Properties of Custom Objects

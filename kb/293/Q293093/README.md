@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293093: Browser Causes Computer to Stop Responding"
-permalink: kb/293/Q293093/
+permalink: /kb/293/Q293093/
 ---
 
 ## Q293093: Browser Causes Computer to Stop Responding

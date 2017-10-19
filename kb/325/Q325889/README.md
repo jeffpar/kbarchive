@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325889: HOW TO: Remove and Reinstall IIS 5.0 and 5.1"
-permalink: kb/325/Q325889/
+permalink: /kb/325/Q325889/
 ---
 
 ## Q325889: HOW TO: Remove and Reinstall IIS 5.0 and 5.1

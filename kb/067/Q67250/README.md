@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67250: CustCont.exe - Generic Custom Control Sample Code"
-permalink: kb/067/Q67250/
+permalink: /kb/067/Q67250/
 ---
 
 ## Q67250: CustCont.exe - Generic Custom Control Sample Code

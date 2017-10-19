@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178002: How to Report Unsolicited E-mail Messages to MSN Member Services"
-permalink: kb/178/Q178002/
+permalink: /kb/178/Q178002/
 ---
 
 ## Q178002: How to Report Unsolicited E-mail Messages to MSN Member Services

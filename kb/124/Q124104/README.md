@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124104: Primary Mouse Button+DEL Creates Drag Mode in Program Manager"
-permalink: kb/124/Q124104/
+permalink: /kb/124/Q124104/
 ---
 
 ## Q124104: Primary Mouse Button+DEL Creates Drag Mode in Program Manager

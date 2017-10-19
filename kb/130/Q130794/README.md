@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130794: Emergency Repair Process May Fail &quot;Beyond Repair&quot;"
-permalink: kb/130/Q130794/
+permalink: /kb/130/Q130794/
 ---
 
 ## Q130794: Emergency Repair Process May Fail &quot;Beyond Repair&quot;

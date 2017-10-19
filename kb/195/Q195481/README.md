@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195481: WD97: Excel Object Range Name Changes Format After Paste Link"
-permalink: kb/195/Q195481/
+permalink: /kb/195/Q195481/
 ---
 
 ## Q195481: WD97: Excel Object Range Name Changes Format After Paste Link

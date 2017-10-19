@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270695: XADM: MTA Logs Content Conversion Error 4096 for Inbound Message"
-permalink: kb/270/Q270695/
+permalink: /kb/270/Q270695/
 ---
 
 ## Q270695: XADM: MTA Logs Content Conversion Error 4096 for Inbound Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77473: Rules for Using Far Pointers to Memory Objects"
-permalink: kb/077/Q77473/
+permalink: /kb/077/Q77473/
 ---
 
 ## Q77473: Rules for Using Far Pointers to Memory Objects

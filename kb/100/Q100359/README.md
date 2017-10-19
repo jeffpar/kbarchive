@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100359: DOC: Incomplete Description of ExitWindows()"
-permalink: kb/100/Q100359/
+permalink: /kb/100/Q100359/
 ---
 
 ## Q100359: DOC: Incomplete Description of ExitWindows()

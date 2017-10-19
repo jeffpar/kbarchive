@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262654: BUG: ShowAnnotationToolPalette ToolTips Display Incorrect Data"
-permalink: kb/262/Q262654/
+permalink: /kb/262/Q262654/
 ---
 
 ## Q262654: BUG: ShowAnnotationToolPalette ToolTips Display Incorrect Data

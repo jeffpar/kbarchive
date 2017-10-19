@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82566: Norton Desktop's Batch Builder Help Error"
-permalink: kb/082/Q82566/
+permalink: /kb/082/Q82566/
 ---
 
 ## Q82566: Norton Desktop's Batch Builder Help Error

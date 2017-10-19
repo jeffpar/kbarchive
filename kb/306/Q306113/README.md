@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306113: PRB: Temp Folder with System Attribute Causes Errors in VFP"
-permalink: kb/306/Q306113/
+permalink: /kb/306/Q306113/
 ---
 
 ## Q306113: PRB: Temp Folder with System Attribute Causes Errors in VFP

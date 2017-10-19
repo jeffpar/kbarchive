@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164601: How to Enable PPTP Port for Network Monitor"
-permalink: kb/164/Q164601/
+permalink: /kb/164/Q164601/
 ---
 
 ## Q164601: How to Enable PPTP Port for Network Monitor

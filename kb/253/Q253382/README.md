@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253382: Error Message: Unable to Display Security Information"
-permalink: kb/253/Q253382/
+permalink: /kb/253/Q253382/
 ---
 
 ## Q253382: Error Message: Unable to Display Security Information

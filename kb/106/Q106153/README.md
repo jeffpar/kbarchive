@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106153: Summary List of Windows NT 3.1 Bugs"
-permalink: kb/106/Q106153/
+permalink: /kb/106/Q106153/
 ---
 
 ## Q106153: Summary List of Windows NT 3.1 Bugs

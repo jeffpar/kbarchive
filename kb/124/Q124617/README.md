@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124617: Jetpack.exe Error Codes and Messages for Windows NT 3.5"
-permalink: kb/124/Q124617/
+permalink: /kb/124/Q124617/
 ---
 
 ## Q124617: Jetpack.exe Error Codes and Messages for Windows NT 3.5

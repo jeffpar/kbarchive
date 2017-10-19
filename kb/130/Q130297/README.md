@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130297: PRB: Cannot Reinstall a Specific Visual FoxPro Component"
-permalink: kb/130/Q130297/
+permalink: /kb/130/Q130297/
 ---
 
 ## Q130297: PRB: Cannot Reinstall a Specific Visual FoxPro Component

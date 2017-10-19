@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244408: XADM: Year Displayed Incorrectly After Restoring Backup"
-permalink: kb/244/Q244408/
+permalink: /kb/244/Q244408/
 ---
 
 ## Q244408: XADM: Year Displayed Incorrectly After Restoring Backup

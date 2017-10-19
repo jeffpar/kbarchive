@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72595: Using Weitek Math Coprocessor with MS-DOS"
-permalink: kb/072/Q72595/
+permalink: /kb/072/Q72595/
 ---
 
 ## Q72595: Using Weitek Math Coprocessor with MS-DOS

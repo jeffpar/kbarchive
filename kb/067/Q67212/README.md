@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67212: Calendar Program Cannot Print Month View"
-permalink: kb/067/Q67212/
+permalink: /kb/067/Q67212/
 ---
 
 ## Q67212: Calendar Program Cannot Print Month View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80607: MS-DOS 5 Upgrade (5.0a) Disk Directories (3.5-Inch, 720K)"
-permalink: kb/080/Q80607/
+permalink: /kb/080/Q80607/
 ---
 
 ## Q80607: MS-DOS 5 Upgrade (5.0a) Disk Directories (3.5-Inch, 720K)

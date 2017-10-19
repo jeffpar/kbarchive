@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139612: TCP/IP-32 3.11b NET LOGON to Domain Fails Across Router"
-permalink: kb/139/Q139612/
+permalink: /kb/139/Q139612/
 ---
 
 ## Q139612: TCP/IP-32 3.11b NET LOGON to Domain Fails Across Router

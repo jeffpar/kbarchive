@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119104: PPT: Incorrect Title Case Change When Word Contains Apostrophe"
-permalink: kb/119/Q119104/
+permalink: /kb/119/Q119104/
 ---
 
 ## Q119104: PPT: Incorrect Title Case Change When Word Contains Apostrophe

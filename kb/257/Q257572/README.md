@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257572: FIX: Err Msg &quot;Missing Dependency Information&quot; with PDW"
-permalink: kb/257/Q257572/
+permalink: /kb/257/Q257572/
 ---
 
 ## Q257572: FIX: Err Msg &quot;Missing Dependency Information&quot; with PDW

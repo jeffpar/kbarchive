@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187175: Network Error Message When Maximum Connection Limit Exceeded"
-permalink: kb/187/Q187175/
+permalink: /kb/187/Q187175/
 ---
 
 ## Q187175: Network Error Message When Maximum Connection Limit Exceeded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176627: XADM: Information Store Stops Unexpectedly"
-permalink: kb/176/Q176627/
+permalink: /kb/176/Q176627/
 ---
 
 ## Q176627: XADM: Information Store Stops Unexpectedly

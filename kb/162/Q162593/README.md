@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162593: DSPU LU Not Reactivated After Host Outage"
-permalink: kb/162/Q162593/
+permalink: /kb/162/Q162593/
 ---
 
 ## Q162593: DSPU LU Not Reactivated After Host Outage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181255: SAMPLE: How to Implement Enumerated Properties in ATL"
-permalink: kb/181/Q181255/
+permalink: /kb/181/Q181255/
 ---
 
 ## Q181255: SAMPLE: How to Implement Enumerated Properties in ATL

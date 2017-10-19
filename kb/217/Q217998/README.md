@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217998: BackOffice 4.5 Setup May Fail When Upgrading SQL 6.5 to 7.0"
-permalink: kb/217/Q217998/
+permalink: /kb/217/Q217998/
 ---
 
 ## Q217998: BackOffice 4.5 Setup May Fail When Upgrading SQL 6.5 to 7.0

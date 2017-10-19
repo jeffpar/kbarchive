@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171559: Inside COM Comments and Corrections"
-permalink: kb/171/Q171559/
+permalink: /kb/171/Q171559/
 ---
 
 ## Q171559: Inside COM Comments and Corrections

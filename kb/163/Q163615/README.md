@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163615: Unattended Setup Does Not Honor Win31Upgrade=no In Answer File"
-permalink: kb/163/Q163615/
+permalink: /kb/163/Q163615/
 ---
 
 ## Q163615: Unattended Setup Does Not Honor Win31Upgrade=no In Answer File

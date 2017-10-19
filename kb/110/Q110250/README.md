@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110250: PRB: Compressed Bitmap Display Is Corrupt"
-permalink: kb/110/Q110250/
+permalink: /kb/110/Q110250/
 ---
 
 ## Q110250: PRB: Compressed Bitmap Display Is Corrupt

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74048: Running Excel 2.1 with Run-time Windows and MS-DOS 5.0"
-permalink: kb/074/Q74048/
+permalink: /kb/074/Q74048/
 ---
 
 ## Q74048: Running Excel 2.1 with Run-time Windows and MS-DOS 5.0

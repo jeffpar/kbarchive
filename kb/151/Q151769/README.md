@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151769: FIX: Random Character in Wait Window After Set Default Options"
-permalink: kb/151/Q151769/
+permalink: /kb/151/Q151769/
 ---
 
 ## Q151769: FIX: Random Character in Wait Window After Set Default Options

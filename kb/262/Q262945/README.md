@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262945: XFOR: Non-Delivery Report: 554 Mailbox Is Not Local"
-permalink: kb/262/Q262945/
+permalink: /kb/262/Q262945/
 ---
 
 ## Q262945: XFOR: Non-Delivery Report: 554 Mailbox Is Not Local

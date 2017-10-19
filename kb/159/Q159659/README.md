@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159659: Unable to Establish Adjacency with Neighboring OSPF Routers"
-permalink: kb/159/Q159659/
+permalink: /kb/159/Q159659/
 ---
 
 ## Q159659: Unable to Establish Adjacency with Neighboring OSPF Routers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316629: XADM: 0xFFFFFC0B After Installing Sybari Antigen 6.2"
-permalink: kb/316/Q316629/
+permalink: /kb/316/Q316629/
 ---
 
 ## Q316629: XADM: 0xFFFFFC0B After Installing Sybari Antigen 6.2

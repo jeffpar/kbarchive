@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172086: FIX: Data Corruption with Row Buffering in Visual FoxPro 3.0"
-permalink: kb/172/Q172086/
+permalink: /kb/172/Q172086/
 ---
 
 ## Q172086: FIX: Data Corruption with Row Buffering in Visual FoxPro 3.0

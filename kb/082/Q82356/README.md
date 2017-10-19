@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82356: SMARTDrive 4.0 May Conflict with Virus Detection Software"
-permalink: kb/082/Q82356/
+permalink: /kb/082/Q82356/
 ---
 
 ## Q82356: SMARTDrive 4.0 May Conflict with Virus Detection Software

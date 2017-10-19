@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313561: HOW TO: Set HTTP Headers for Content Expiration in IIS"
-permalink: kb/313/Q313561/
+permalink: /kb/313/Q313561/
 ---
 
 ## Q313561: HOW TO: Set HTTP Headers for Content Expiration in IIS

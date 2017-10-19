@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142092: BUG: Report to File &quot;Access to File Denied&quot; Error Message"
-permalink: kb/142/Q142092/
+permalink: /kb/142/Q142092/
 ---
 
 ## Q142092: BUG: Report to File &quot;Access to File Denied&quot; Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110065: System Stops Responding When Printing from UNIX"
-permalink: kb/110/Q110065/
+permalink: /kb/110/Q110065/
 ---
 
 ## Q110065: System Stops Responding When Printing from UNIX

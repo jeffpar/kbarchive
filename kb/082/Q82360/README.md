@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82360: &quot;SatisFAXtion Board Is Busy&quot; Message With FAX.EXE"
-permalink: kb/082/Q82360/
+permalink: /kb/082/Q82360/
 ---
 
 ## Q82360: &quot;SatisFAXtion Board Is Busy&quot; Message With FAX.EXE

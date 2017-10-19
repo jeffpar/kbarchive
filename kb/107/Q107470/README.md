@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107470: Meaning of WFWShell Line in the SYSTEM.INI File"
-permalink: kb/107/Q107470/
+permalink: /kb/107/Q107470/
 ---
 
 ## Q107470: Meaning of WFWShell Line in the SYSTEM.INI File

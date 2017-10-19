@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75523: Norton Desktop and Novell NetWare Require 9/20/90 or Later"
-permalink: kb/075/Q75523/
+permalink: /kb/075/Q75523/
 ---
 
 ## Q75523: Norton Desktop and Novell NetWare Require 9/20/90 or Later

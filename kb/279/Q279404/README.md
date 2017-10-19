@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279404: XCON: Site Scope Address Space Considerations"
-permalink: kb/279/Q279404/
+permalink: /kb/279/Q279404/
 ---
 
 ## Q279404: XCON: Site Scope Address Space Considerations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168795: HOWTO: Hook Into a Window's Messages Using AddressOf"
-permalink: kb/168/Q168795/
+permalink: /kb/168/Q168795/
 ---
 
 ## Q168795: HOWTO: Hook Into a Window's Messages Using AddressOf

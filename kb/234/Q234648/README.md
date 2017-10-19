@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234648: BUG: WinCE Toolkit for Visual C++ 6.0 Forces a Rebuild All"
-permalink: kb/234/Q234648/
+permalink: /kb/234/Q234648/
 ---
 
 ## Q234648: BUG: WinCE Toolkit for Visual C++ 6.0 Forces a Rebuild All

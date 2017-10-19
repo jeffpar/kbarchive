@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186025: PRB: AGETCLASS() Function may Truncate Fifth Parameter"
-permalink: kb/186/Q186025/
+permalink: /kb/186/Q186025/
 ---
 
 ## Q186025: PRB: AGETCLASS() Function may Truncate Fifth Parameter

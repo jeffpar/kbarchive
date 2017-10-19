@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247139: AppGetStatus Is Different than MMC Status Using Adsutil.vbs"
-permalink: kb/247/Q247139/
+permalink: /kb/247/Q247139/
 ---
 
 ## Q247139: AppGetStatus Is Different than MMC Status Using Adsutil.vbs

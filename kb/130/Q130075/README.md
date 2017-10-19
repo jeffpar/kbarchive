@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130075: TEMP Environment Variable Overwritten in Command Prompt"
-permalink: kb/130/Q130075/
+permalink: /kb/130/Q130075/
 ---
 
 ## Q130075: TEMP Environment Variable Overwritten in Command Prompt

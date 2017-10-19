@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140803: Dataloader Causes GP Fault on SQL Server Error"
-permalink: kb/140/Q140803/
+permalink: /kb/140/Q140803/
 ---
 
 ## Q140803: Dataloader Causes GP Fault on SQL Server Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125238: Office Professional and Bookshelf Disables Sound Drivers"
-permalink: kb/125/Q125238/
+permalink: /kb/125/Q125238/
 ---
 
 ## Q125238: Office Professional and Bookshelf Disables Sound Drivers

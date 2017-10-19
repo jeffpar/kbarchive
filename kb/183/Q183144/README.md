@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183144: Mac Encarta 98: Contents of the Encarta 98 Read Me File"
-permalink: kb/183/Q183144/
+permalink: /kb/183/Q183144/
 ---
 
 ## Q183144: Mac Encarta 98: Contents of the Encarta 98 Read Me File

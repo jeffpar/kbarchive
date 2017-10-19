@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79871: Applications That Run with or Without Pen Extensions"
-permalink: kb/079/Q79871/
+permalink: /kb/079/Q79871/
 ---
 
 ## Q79871: Applications That Run with or Without Pen Extensions

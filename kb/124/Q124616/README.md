@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124616: Single Window Resizes When Returning to MSN Central"
-permalink: kb/124/Q124616/
+permalink: /kb/124/Q124616/
 ---
 
 ## Q124616: Single Window Resizes When Returning to MSN Central

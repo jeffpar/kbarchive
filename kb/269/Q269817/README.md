@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269817: MSB Error Message: Cannot Find Vids:IV50 Decompressor"
-permalink: kb/269/Q269817/
+permalink: /kb/269/Q269817/
 ---
 
 ## Q269817: MSB Error Message: Cannot Find Vids:IV50 Decompressor

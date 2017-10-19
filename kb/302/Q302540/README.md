@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302540: Initial Broadband Setup"
-permalink: kb/302/Q302540/
+permalink: /kb/302/Q302540/
 ---
 
 ## Q302540: Initial Broadband Setup

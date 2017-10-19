@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117633: How Browsing a Wide Area Network Works"
-permalink: kb/117/Q117633/
+permalink: /kb/117/Q117633/
 ---
 
 ## Q117633: How Browsing a Wide Area Network Works

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155684: XFOR: IMC Support for VRFY Command"
-permalink: kb/155/Q155684/
+permalink: /kb/155/Q155684/
 ---
 
 ## Q155684: XFOR: IMC Support for VRFY Command

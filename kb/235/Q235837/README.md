@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235837: SMS: LAN_SENDER Doesn't Fail Job When No Instruction File Exists"
-permalink: kb/235/Q235837/
+permalink: /kb/235/Q235837/
 ---
 
 ## Q235837: SMS: LAN_SENDER Doesn't Fail Job When No Instruction File Exists

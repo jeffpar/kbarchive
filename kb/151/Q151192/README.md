@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151192: Configuring the Default Wallpaper with CPS"
-permalink: kb/151/Q151192/
+permalink: /kb/151/Q151192/
 ---
 
 ## Q151192: Configuring the Default Wallpaper with CPS

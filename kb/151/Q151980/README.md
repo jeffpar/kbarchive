@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151980: SMS: Error Trying to Remote Control a French Windows NT Client"
-permalink: kb/151/Q151980/
+permalink: /kb/151/Q151980/
 ---
 
 ## Q151980: SMS: Error Trying to Remote Control a French Windows NT Client

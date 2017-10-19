@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112202: PC Win: Renaming Personal Groups"
-permalink: kb/112/Q112202/
+permalink: /kb/112/Q112202/
 ---
 
 ## Q112202: PC Win: Renaming Personal Groups

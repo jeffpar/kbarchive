@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255189: Windows NT Explorer Displays Only Font Files on CD-ROM Copy"
-permalink: kb/255/Q255189/
+permalink: /kb/255/Q255189/
 ---
 
 ## Q255189: Windows NT Explorer Displays Only Font Files on CD-ROM Copy

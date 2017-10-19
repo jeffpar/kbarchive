@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165927: WD97: BreakLink Method Deletes Object Reference"
-permalink: kb/165/Q165927/
+permalink: /kb/165/Q165927/
 ---
 
 ## Q165927: WD97: BreakLink Method Deletes Object Reference

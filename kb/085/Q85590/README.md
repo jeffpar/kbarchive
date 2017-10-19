@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q85590: SETUP.INF [run] Section Ignores File Named SETUP.XXX"
-permalink: kb/085/Q85590/
+title: "Q85590: SETUP.INF &#91;run&#93; Section Ignores File Named SETUP.XXX"
+permalink: /kb/085/Q85590/
 ---
 
-## Q85590: SETUP.INF [run] Section Ignores File Named SETUP.XXX
+## Q85590: SETUP.INF &#91;run&#93; Section Ignores File Named SETUP.XXX
 
 	Article: Q85590
 	Product(s): Microsoft Windows 95.x Retail Product

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105767: MS Mail Err Msg: Mail Cannot Be Started Because it Cannot..."
-permalink: kb/105/Q105767/
+permalink: /kb/105/Q105767/
 ---
 
 ## Q105767: MS Mail Err Msg: Mail Cannot Be Started Because it Cannot...

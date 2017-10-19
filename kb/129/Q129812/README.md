@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129812: PCMCIA Cards Not Detected on Zenith NoteFLEX"
-permalink: kb/129/Q129812/
+permalink: /kb/129/Q129812/
 ---
 
 ## Q129812: PCMCIA Cards Not Detected on Zenith NoteFLEX

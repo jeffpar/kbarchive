@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132400: PC Win: Err Msg: The Database May Have Been Corrupted..."
-permalink: kb/132/Q132400/
+permalink: /kb/132/Q132400/
 ---
 
 ## Q132400: PC Win: Err Msg: The Database May Have Been Corrupted...

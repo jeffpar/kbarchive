@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176655: HOWTO: Convert a Word Table to a FoxPro Table"
-permalink: kb/176/Q176655/
+permalink: /kb/176/Q176655/
 ---
 
 ## Q176655: HOWTO: Convert a Word Table to a FoxPro Table

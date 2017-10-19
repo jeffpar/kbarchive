@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263685: BUG: AV in VB IDE Compiling ADODB.Connection.Execute Method"
-permalink: kb/263/Q263685/
+permalink: /kb/263/Q263685/
 ---
 
 ## Q263685: BUG: AV in VB IDE Compiling ADODB.Connection.Execute Method

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173210: How to Troubleshoot Event 2000 in System Event Log"
-permalink: kb/173/Q173210/
+permalink: /kb/173/Q173210/
 ---
 
 ## Q173210: How to Troubleshoot Event 2000 in System Event Log

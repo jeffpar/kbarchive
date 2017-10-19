@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169653: XADM: Explanation of Replication Inbound and Outbound Sites"
-permalink: kb/169/Q169653/
+permalink: /kb/169/Q169653/
 ---
 
 ## Q169653: XADM: Explanation of Replication Inbound and Outbound Sites

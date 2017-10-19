@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239552: Debugging a TSE Memory.dmp File if Winstation Space Unavailable"
-permalink: kb/239/Q239552/
+permalink: /kb/239/Q239552/
 ---
 
 ## Q239552: Debugging a TSE Memory.dmp File if Winstation Space Unavailable

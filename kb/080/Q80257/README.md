@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80257: PC Gen: Contents of Modem Script File HAYES24.MDM"
-permalink: kb/080/Q80257/
+permalink: /kb/080/Q80257/
 ---
 
 ## Q80257: PC Gen: Contents of Modem Script File HAYES24.MDM

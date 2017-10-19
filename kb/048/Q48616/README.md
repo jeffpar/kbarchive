@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48616: Mac Wkst: Cannot Print to Local Printer When Using a NetModem"
-permalink: kb/048/Q48616/
+permalink: /kb/048/Q48616/
 ---
 
 ## Q48616: Mac Wkst: Cannot Print to Local Printer When Using a NetModem

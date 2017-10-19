@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142157: DOC: Merge Branches Option Doesn't Work at Project Level"
-permalink: kb/142/Q142157/
+permalink: /kb/142/Q142157/
 ---
 
 ## Q142157: DOC: Merge Branches Option Doesn't Work at Project Level

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74210: Emulating Expanded Memory Using EMM386.EXE"
-permalink: kb/074/Q74210/
+permalink: /kb/074/Q74210/
 ---
 
 ## Q74210: Emulating Expanded Memory Using EMM386.EXE

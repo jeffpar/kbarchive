@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149722: Windows NT Registry Has a Limit of 300 Interfaces"
-permalink: kb/149/Q149722/
+permalink: /kb/149/Q149722/
 ---
 
 ## Q149722: Windows NT Registry Has a Limit of 300 Interfaces

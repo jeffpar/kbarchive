@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135462: TCPIP-32 on Client with IPXODI Can Only Ping Itself"
-permalink: kb/135/Q135462/
+permalink: /kb/135/Q135462/
 ---
 
 ## Q135462: TCPIP-32 on Client with IPXODI Can Only Ping Itself

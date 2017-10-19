@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140224: How to Make a ShortCut to Modify a Project or Screen"
-permalink: kb/140/Q140224/
+permalink: /kb/140/Q140224/
 ---
 
 ## Q140224: How to Make a ShortCut to Modify a Project or Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198837: Connection Manager No Longer Works after Upgrade to Windows 98"
-permalink: kb/198/Q198837/
+permalink: /kb/198/Q198837/
 ---
 
 ## Q198837: Connection Manager No Longer Works after Upgrade to Windows 98

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149752: BUG: FOR2862 Error Caused by External Function Without Type"
-permalink: kb/149/Q149752/
+permalink: /kb/149/Q149752/
 ---
 
 ## Q149752: BUG: FOR2862 Error Caused by External Function Without Type

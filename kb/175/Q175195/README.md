@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175195: CFS and FS95/98/2000: How to Use Trim to Keep the Aircraft Level"
-permalink: kb/175/Q175195/
+permalink: /kb/175/Q175195/
 ---
 
 ## Q175195: CFS and FS95/98/2000: How to Use Trim to Keep the Aircraft Level

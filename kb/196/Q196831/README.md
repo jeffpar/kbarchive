@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196831: INFO: Version History of Microsoft Foundation Classes DLLs"
-permalink: kb/196/Q196831/
+permalink: /kb/196/Q196831/
 ---
 
 ## Q196831: INFO: Version History of Microsoft Foundation Classes DLLs

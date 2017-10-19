@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305289: ENC2002: 100% CPU Usage Indicated When You Load 3D Virtual Tour"
-permalink: kb/305/Q305289/
+permalink: /kb/305/Q305289/
 ---
 
 ## Q305289: ENC2002: 100% CPU Usage Indicated When You Load 3D Virtual Tour

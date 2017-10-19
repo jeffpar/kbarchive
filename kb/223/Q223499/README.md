@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223499: PRB: Error C0042116: Files Specified in Section Are Busy"
-permalink: kb/223/Q223499/
+permalink: /kb/223/Q223499/
 ---
 
 ## Q223499: PRB: Error C0042116: Files Specified in Section Are Busy

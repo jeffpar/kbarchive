@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215390: BUG: Grid: It Takes Two Clicks to Move Focus Away from the Grid"
-permalink: kb/215/Q215390/
+permalink: /kb/215/Q215390/
 ---
 
 ## Q215390: BUG: Grid: It Takes Two Clicks to Move Focus Away from the Grid

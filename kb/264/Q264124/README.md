@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264124: XADM: How to Use Userdump to Monitor Information Store"
-permalink: kb/264/Q264124/
+permalink: /kb/264/Q264124/
 ---
 
 ## Q264124: XADM: How to Use Userdump to Monitor Information Store

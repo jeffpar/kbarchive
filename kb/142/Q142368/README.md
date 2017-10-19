@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142368: ERD Fails on SNA Directory Entries in SETUP.LOG"
-permalink: kb/142/Q142368/
+permalink: /kb/142/Q142368/
 ---
 
 ## Q142368: ERD Fails on SNA Directory Entries in SETUP.LOG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247847: XCLN: Creating a Rule to Process Mail Sent on Behalf of Another"
-permalink: kb/247/Q247847/
+permalink: /kb/247/Q247847/
 ---
 
 ## Q247847: XCLN: Creating a Rule to Process Mail Sent on Behalf of Another

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288157: Wallpaper Set by System Policy Overriden by Active Desktop"
-permalink: kb/288/Q288157/
+permalink: /kb/288/Q288157/
 ---
 
 ## Q288157: Wallpaper Set by System Policy Overriden by Active Desktop

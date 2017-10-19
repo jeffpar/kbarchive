@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265511: XCLN: Paged Pool Memory Leak Caused by Attachment Processing"
-permalink: kb/265/Q265511/
+permalink: /kb/265/Q265511/
 ---
 
 ## Q265511: XCLN: Paged Pool Memory Leak Caused by Attachment Processing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96186: PRB: LINK Error L2022: Export Undefined"
-permalink: kb/096/Q96186/
+permalink: /kb/096/Q96186/
 ---
 
 ## Q96186: PRB: LINK Error L2022: Export Undefined

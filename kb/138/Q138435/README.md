@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138435: BUG: Changing Grid View Property Incorrectly Displays Grid"
-permalink: kb/138/Q138435/
+permalink: /kb/138/Q138435/
 ---
 
 ## Q138435: BUG: Changing Grid View Property Incorrectly Displays Grid

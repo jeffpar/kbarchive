@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79843: FIX: SYS1811 or A2087 and A2006 Incorrectly Generated"
-permalink: kb/079/Q79843/
+permalink: /kb/079/Q79843/
 ---
 
 ## Q79843: FIX: SYS1811 or A2087 and A2006 Incorrectly Generated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202265: XADM: Unable to Create Top Level Folders in Exchange Server"
-permalink: kb/202/Q202265/
+permalink: /kb/202/Q202265/
 ---
 
 ## Q202265: XADM: Unable to Create Top Level Folders in Exchange Server

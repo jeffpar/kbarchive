@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254091: XADM: Folder Names Become Question Marks in MBClean Message"
-permalink: kb/254/Q254091/
+permalink: /kb/254/Q254091/
 ---
 
 ## Q254091: XADM: Folder Names Become Question Marks in MBClean Message

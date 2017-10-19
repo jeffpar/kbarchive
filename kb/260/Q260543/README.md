@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260543: Streets &amp; Trips: Georgia Highway Exits Are Incorrectly Numbered"
-permalink: kb/260/Q260543/
+permalink: /kb/260/Q260543/
 ---
 
 ## Q260543: Streets &amp; Trips: Georgia Highway Exits Are Incorrectly Numbered

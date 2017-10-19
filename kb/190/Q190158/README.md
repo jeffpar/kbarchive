@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190158: Reset vs. Logoff in Terminal Server Administration Program"
-permalink: kb/190/Q190158/
+permalink: /kb/190/Q190158/
 ---
 
 ## Q190158: Reset vs. Logoff in Terminal Server Administration Program

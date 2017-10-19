@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254570: PRB: Transaction Commit Behavior Changes in Oracle ODBC Driver"
-permalink: kb/254/Q254570/
+permalink: /kb/254/Q254570/
 ---
 
 ## Q254570: PRB: Transaction Commit Behavior Changes in Oracle ODBC Driver

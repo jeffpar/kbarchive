@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112091: AWFAX: Manually Configuring for a Class 2 Modem"
-permalink: kb/112/Q112091/
+permalink: /kb/112/Q112091/
 ---
 
 ## Q112091: AWFAX: Manually Configuring for a Class 2 Modem

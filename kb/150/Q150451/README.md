@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150451: Network Drive Buttons Missing from Windows Explorer Toolbar"
-permalink: kb/150/Q150451/
+permalink: /kb/150/Q150451/
 ---
 
 ## Q150451: Network Drive Buttons Missing from Windows Explorer Toolbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104734: Setup Does Not Recognize Compaq XMS Device Driver"
-permalink: kb/104/Q104734/
+permalink: /kb/104/Q104734/
 ---
 
 ## Q104734: Setup Does Not Recognize Compaq XMS Device Driver

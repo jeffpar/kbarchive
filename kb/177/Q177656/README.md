@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177656: Windows NT IP Router Loses Learned Routes"
-permalink: kb/177/Q177656/
+permalink: /kb/177/Q177656/
 ---
 
 ## Q177656: Windows NT IP Router Loses Learned Routes

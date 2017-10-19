@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138469: SNA Server Support for ACTPU (ERP) and ACTLU (ERP)"
-permalink: kb/138/Q138469/
+permalink: /kb/138/Q138469/
 ---
 
 ## Q138469: SNA Server Support for ACTPU (ERP) and ACTLU (ERP)

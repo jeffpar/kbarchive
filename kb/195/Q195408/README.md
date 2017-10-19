@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195408: PRB: Specifying View KeyField Sets Other Fields Updateable"
-permalink: kb/195/Q195408/
+permalink: /kb/195/Q195408/
 ---
 
 ## Q195408: PRB: Specifying View KeyField Sets Other Fields Updateable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162022: SMS: Client Inventory Fails After Applying SMS 1.2 SP1"
-permalink: kb/162/Q162022/
+permalink: /kb/162/Q162022/
 ---
 
 ## Q162022: SMS: Client Inventory Fails After Applying SMS 1.2 SP1

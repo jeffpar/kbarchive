@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171473: FIX: MCI32.OCX Does Not Save Recorded .WAV Files"
-permalink: kb/171/Q171473/
+permalink: /kb/171/Q171473/
 ---
 
 ## Q171473: FIX: MCI32.OCX Does Not Save Recorded .WAV Files

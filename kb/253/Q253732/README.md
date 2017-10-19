@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253732: HOWTO: Use FoxPro and MSXML to Return Information About XML Doc"
-permalink: kb/253/Q253732/
+permalink: /kb/253/Q253732/
 ---
 
 ## Q253732: HOWTO: Use FoxPro and MSXML to Return Information About XML Doc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90435: FILE: Windows Setup Toolkit Tutorial Available for Download"
-permalink: kb/090/Q90435/
+permalink: /kb/090/Q90435/
 ---
 
 ## Q90435: FILE: Windows Setup Toolkit Tutorial Available for Download

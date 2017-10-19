@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135817: BUG: Mouse Down Triggered on a Minimized Window"
-permalink: kb/135/Q135817/
+permalink: /kb/135/Q135817/
 ---
 
 ## Q135817: BUG: Mouse Down Triggered on a Minimized Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103671: Flashing Blue or Green Triangle in Bottom Right Corner"
-permalink: kb/103/Q103671/
+permalink: /kb/103/Q103671/
 ---
 
 ## Q103671: Flashing Blue or Green Triangle in Bottom Right Corner

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134870: PPT7: Illegal Operation Error Saving File as PowerPoint 4.0"
-permalink: kb/134/Q134870/
+permalink: /kb/134/Q134870/
 ---
 
 ## Q134870: PPT7: Illegal Operation Error Saving File as PowerPoint 4.0

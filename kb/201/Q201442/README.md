@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201442: XCLN: &quot;Send Mail To&quot; Link Is Missing in Outlook Web Access"
-permalink: kb/201/Q201442/
+permalink: /kb/201/Q201442/
 ---
 
 ## Q201442: XCLN: &quot;Send Mail To&quot; Link Is Missing in Outlook Web Access

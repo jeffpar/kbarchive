@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146615: MAC Bookshelf 1995: Bookshelf 1995 Edition Readme Contents"
-permalink: kb/146/Q146615/
+permalink: /kb/146/Q146615/
 ---
 
 ## Q146615: MAC Bookshelf 1995: Bookshelf 1995 Edition Readme Contents

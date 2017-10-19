@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115929: Enabling PPP Logging in Windows NT"
-permalink: kb/115/Q115929/
+permalink: /kb/115/Q115929/
 ---
 
 ## Q115929: Enabling PPP Logging in Windows NT

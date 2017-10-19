@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257226: SMS: Year 2000 Queries Return &quot;WBEM_E_INVALID_QUERY&quot;"
-permalink: kb/257/Q257226/
+permalink: /kb/257/Q257226/
 ---
 
 ## Q257226: SMS: Year 2000 Queries Return &quot;WBEM_E_INVALID_QUERY&quot;

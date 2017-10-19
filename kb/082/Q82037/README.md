@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82037: Cannot Use Permanent Swap File with Squish"
-permalink: kb/082/Q82037/
+permalink: /kb/082/Q82037/
 ---
 
 ## Q82037: Cannot Use Permanent Swap File with Squish

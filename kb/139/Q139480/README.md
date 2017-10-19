@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139480: ADT95: ADT for Windows 95 Product Information Available"
-permalink: kb/139/Q139480/
+permalink: /kb/139/Q139480/
 ---
 
 ## Q139480: ADT95: ADT for Windows 95 Product Information Available

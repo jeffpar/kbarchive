@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138956: Adaptec 2742 Controller Fails with Second SCSI Host Adapter"
-permalink: kb/138/Q138956/
+permalink: /kb/138/Q138956/
 ---
 
 ## Q138956: Adaptec 2742 Controller Fails with Second SCSI Host Adapter

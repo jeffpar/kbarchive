@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121420: IBM 3174 Support C - Rel. 5.0 Causes Negative Bind Response"
-permalink: kb/121/Q121420/
+permalink: /kb/121/Q121420/
 ---
 
 ## Q121420: IBM 3174 Support C - Rel. 5.0 Causes Negative Bind Response

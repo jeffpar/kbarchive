@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96558: MS-DOS Setup Installs 80386- and 80486- Specific Files"
-permalink: kb/096/Q96558/
+permalink: /kb/096/Q96558/
 ---
 
 ## Q96558: MS-DOS Setup Installs 80386- and 80486- Specific Files

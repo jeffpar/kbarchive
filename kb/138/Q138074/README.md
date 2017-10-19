@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138074: Word 95 Step By Step Book: Corrections and Comments"
-permalink: kb/138/Q138074/
+permalink: /kb/138/Q138074/
 ---
 
 ## Q138074: Word 95 Step By Step Book: Corrections and Comments

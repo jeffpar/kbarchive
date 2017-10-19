@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46010: PRB: CodeView Skips Over a Line of Source Code"
-permalink: kb/046/Q46010/
+permalink: /kb/046/Q46010/
 ---
 
 ## Q46010: PRB: CodeView Skips Over a Line of Source Code

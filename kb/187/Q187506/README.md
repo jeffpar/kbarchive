@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187506: List of NTFS Permissions Required for IIS Site to Work"
-permalink: kb/187/Q187506/
+permalink: /kb/187/Q187506/
 ---
 
 ## Q187506: List of NTFS Permissions Required for IIS Site to Work

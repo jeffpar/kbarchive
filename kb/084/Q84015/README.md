@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84015: Adaptec 1740 Controller Requires Double Buffering"
-permalink: kb/084/Q84015/
+permalink: /kb/084/Q84015/
 ---
 
 ## Q84015: Adaptec 1740 Controller Requires Double Buffering

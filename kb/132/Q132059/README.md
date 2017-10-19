@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132059: PC Gen: Summary List of Mail for PC Networks 3.5 Bug Fixes"
-permalink: kb/132/Q132059/
+permalink: /kb/132/Q132059/
 ---
 
 ## Q132059: PC Gen: Summary List of Mail for PC Networks 3.5 Bug Fixes

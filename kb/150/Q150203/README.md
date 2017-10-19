@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150203: BUG: SizeGrip of Status Bar Paints Incorrectly in Windows NT"
-permalink: kb/150/Q150203/
+permalink: /kb/150/Q150203/
 ---
 
 ## Q150203: BUG: SizeGrip of Status Bar Paints Incorrectly in Windows NT

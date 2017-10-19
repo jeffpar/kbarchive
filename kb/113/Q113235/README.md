@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113235: Cannot Access Volume Serial Number with 32-Bit File Access"
-permalink: kb/113/Q113235/
+permalink: /kb/113/Q113235/
 ---
 
 ## Q113235: Cannot Access Volume Serial Number with 32-Bit File Access

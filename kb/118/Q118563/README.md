@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118563: X400: Originator/Recipient (O/R) Name Qualifiers"
-permalink: kb/118/Q118563/
+permalink: /kb/118/Q118563/
 ---
 
 ## Q118563: X400: Originator/Recipient (O/R) Name Qualifiers

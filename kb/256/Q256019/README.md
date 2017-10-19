@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256019: Asheron's Call Err Msg: Cannot Initialize Data File Portal.dat.."
-permalink: kb/256/Q256019/
+permalink: /kb/256/Q256019/
 ---
 
 ## Q256019: Asheron's Call Err Msg: Cannot Initialize Data File Portal.dat..

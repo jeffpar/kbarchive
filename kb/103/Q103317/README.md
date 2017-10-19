@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103317: NetBEUI Trapping in DrainLink Function"
-permalink: kb/103/Q103317/
+permalink: /kb/103/Q103317/
 ---
 
 ## Q103317: NetBEUI Trapping in DrainLink Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79247: MSCDEX.EXE Version 2.2 or Later Required with MS-DOS 5.0"
-permalink: kb/079/Q79247/
+permalink: /kb/079/Q79247/
 ---
 
 ## Q79247: MSCDEX.EXE Version 2.2 or Later Required with MS-DOS 5.0

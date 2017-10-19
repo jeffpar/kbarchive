@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256216: Relational Wildcard Queries Return Unexpected Results"
-permalink: kb/256/Q256216/
+permalink: /kb/256/Q256216/
 ---
 
 ## Q256216: Relational Wildcard Queries Return Unexpected Results

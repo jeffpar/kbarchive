@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149082: 3D Movie Maker: Recorded Sound Is Distorted or Poor Quality"
-permalink: kb/149/Q149082/
+permalink: /kb/149/Q149082/
 ---
 
 ## Q149082: 3D Movie Maker: Recorded Sound Is Distorted or Poor Quality

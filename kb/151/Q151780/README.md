@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151780: XFOR: IMC's Retry Interval Text Box Allows Invalid Values"
-permalink: kb/151/Q151780/
+permalink: /kb/151/Q151780/
 ---
 
 ## Q151780: XFOR: IMC's Retry Interval Text Box Allows Invalid Values

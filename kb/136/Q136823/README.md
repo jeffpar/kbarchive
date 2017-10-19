@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136823: Clicking &quot;?&quot; Button During Sign In May Cause Lost Connection"
-permalink: kb/136/Q136823/
+permalink: /kb/136/Q136823/
 ---
 
 ## Q136823: Clicking &quot;?&quot; Button During Sign In May Cause Lost Connection

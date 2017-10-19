@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135625: BUG: Grid Valid Event Fires Before Grid Control Valid Fires"
-permalink: kb/135/Q135625/
+permalink: /kb/135/Q135625/
 ---
 
 ## Q135625: BUG: Grid Valid Event Fires Before Grid Control Valid Fires

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175249: Extra Modem Settings R-T for Connecting to MSN"
-permalink: kb/175/Q175249/
+permalink: /kb/175/Q175249/
 ---
 
 ## Q175249: Extra Modem Settings R-T for Connecting to MSN

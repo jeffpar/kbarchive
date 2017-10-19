@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160347: WD97: Document Opened as Text Only If Already Open"
-permalink: kb/160/Q160347/
+permalink: /kb/160/Q160347/
 ---
 
 ## Q160347: WD97: Document Opened as Text Only If Already Open

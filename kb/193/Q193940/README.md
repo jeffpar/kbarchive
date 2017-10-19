@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193940: FIX: Wingdings/Webdings/FoxPrint Not Printing from Windows 98"
-permalink: kb/193/Q193940/
+permalink: /kb/193/Q193940/
 ---
 
 ## Q193940: FIX: Wingdings/Webdings/FoxPrint Not Printing from Windows 98

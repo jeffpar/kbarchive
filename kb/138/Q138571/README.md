@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138571: NetBIOS Name Resolution Through DNS Fails Using TCP/IP-32"
-permalink: kb/138/Q138571/
+permalink: /kb/138/Q138571/
 ---
 
 ## Q138571: NetBIOS Name Resolution Through DNS Fails Using TCP/IP-32

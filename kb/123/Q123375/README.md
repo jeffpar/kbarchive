@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123375: Mac Form: Text in Field Truncated After Install"
-permalink: kb/123/Q123375/
+permalink: /kb/123/Q123375/
 ---
 
 ## Q123375: Mac Form: Text in Field Truncated After Install

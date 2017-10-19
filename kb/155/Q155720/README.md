@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155720: Aldus Persuasion Table Uses Marlett as Default Font"
-permalink: kb/155/Q155720/
+permalink: /kb/155/Q155720/
 ---
 
 ## Q155720: Aldus Persuasion Table Uses Marlett as Default Font

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131509: PC DirSync: Err Msg: No Tasks from Requestor:..."
-permalink: kb/131/Q131509/
+permalink: /kb/131/Q131509/
 ---
 
 ## Q131509: PC DirSync: Err Msg: No Tasks from Requestor:...

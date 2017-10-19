@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161097: Cinemania 97: How To Turn Opening Video Off From the Registry"
-permalink: kb/161/Q161097/
+permalink: /kb/161/Q161097/
 ---
 
 ## Q161097: Cinemania 97: How To Turn Opening Video Off From the Registry

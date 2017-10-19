@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195769: Events 38 and 92 Logged When Closing 5250 Applet Session"
-permalink: kb/195/Q195769/
+permalink: /kb/195/Q195769/
 ---
 
 ## Q195769: Events 38 and 92 Logged When Closing 5250 Applet Session

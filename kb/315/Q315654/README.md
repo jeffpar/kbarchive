@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315654: FIX: Code Changes Lost Switching Between Bookmarks in Methods"
-permalink: kb/315/Q315654/
+permalink: /kb/315/Q315654/
 ---
 
 ## Q315654: FIX: Code Changes Lost Switching Between Bookmarks in Methods

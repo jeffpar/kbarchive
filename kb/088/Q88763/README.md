@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88763: Display Options for 286 Machines with Windows 3.0, 3.0a"
-permalink: kb/088/Q88763/
+permalink: /kb/088/Q88763/
 ---
 
 ## Q88763: Display Options for 286 Machines with Windows 3.0, 3.0a

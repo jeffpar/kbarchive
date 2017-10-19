@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82326: EMM386.EXE Causes Problems for Ventura 4.0 in Standard Mode"
-permalink: kb/082/Q82326/
+permalink: /kb/082/Q82326/
 ---
 
 ## Q82326: EMM386.EXE Causes Problems for Ventura 4.0 in Standard Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108494: WFWG Err Msg: The Specified Drive Letter or Device Is Invalid"
-permalink: kb/108/Q108494/
+permalink: /kb/108/Q108494/
 ---
 
 ## Q108494: WFWG Err Msg: The Specified Drive Letter or Device Is Invalid

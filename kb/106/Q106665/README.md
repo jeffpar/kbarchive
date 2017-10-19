@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106665: Example SYSTEM.INI Configuration Lines for Sound System"
-permalink: kb/106/Q106665/
+permalink: /kb/106/Q106665/
 ---
 
 ## Q106665: Example SYSTEM.INI Configuration Lines for Sound System

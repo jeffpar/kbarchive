@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138604: Minimized Program Goes to End of Switching Order"
-permalink: kb/138/Q138604/
+permalink: /kb/138/Q138604/
 ---
 
 ## Q138604: Minimized Program Goes to End of Switching Order

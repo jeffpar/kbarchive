@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224567: WD97: Word Macro Virus Alert &quot;Melissa Macro Virus&quot;"
-permalink: kb/224/Q224567/
+permalink: /kb/224/Q224567/
 ---
 
 ## Q224567: WD97: Word Macro Virus Alert &quot;Melissa Macro Virus&quot;

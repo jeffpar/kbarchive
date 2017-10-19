@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278523: XADM: Exchange 2000 Setup Fails and Security Vulnerability"
-permalink: kb/278/Q278523/
+permalink: /kb/278/Q278523/
 ---
 
 ## Q278523: XADM: Exchange 2000 Setup Fails and Security Vulnerability

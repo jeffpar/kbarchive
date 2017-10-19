@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62065: DPMI Specification Available from Intel"
-permalink: kb/062/Q62065/
+permalink: /kb/062/Q62065/
 ---
 
 ## Q62065: DPMI Specification Available from Intel

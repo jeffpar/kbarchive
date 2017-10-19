@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164331: XCLN: How to Add Recipients to an EFD Project"
-permalink: kb/164/Q164331/
+permalink: /kb/164/Q164331/
 ---
 
 ## Q164331: XCLN: How to Add Recipients to an EFD Project

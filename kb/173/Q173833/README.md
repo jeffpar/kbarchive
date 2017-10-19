@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173833: Microsoft Word 97 Step by Step Comments and Corrections"
-permalink: kb/173/Q173833/
+permalink: /kb/173/Q173833/
 ---
 
 ## Q173833: Microsoft Word 97 Step by Step Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240365: W32time Does Not Clean and Modify Registry After Changing Role"
-permalink: kb/240/Q240365/
+permalink: /kb/240/Q240365/
 ---
 
 ## Q240365: W32time Does Not Clean and Modify Registry After Changing Role

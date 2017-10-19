@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132631: Setup Does Not Find CD-ROM Drive On HP Vectra Computer"
-permalink: kb/132/Q132631/
+permalink: /kb/132/Q132631/
 ---
 
 ## Q132631: Setup Does Not Find CD-ROM Drive On HP Vectra Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176161: XFOR: Exchange 5.5 Can Disallow Auto Forwarding to the Internet"
-permalink: kb/176/Q176161/
+permalink: /kb/176/Q176161/
 ---
 
 ## Q176161: XFOR: Exchange 5.5 Can Disallow Auto Forwarding to the Internet

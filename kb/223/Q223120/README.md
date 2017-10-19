@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223120: FIX: ReDim Preserve on Array of UDTs Causes Crash"
-permalink: kb/223/Q223120/
+permalink: /kb/223/Q223120/
 ---
 
 ## Q223120: FIX: ReDim Preserve on Array of UDTs Causes Crash

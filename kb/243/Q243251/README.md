@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243251: Missing Password-Protected Screen Saver Leaves Computer Unlocked"
-permalink: kb/243/Q243251/
+permalink: /kb/243/Q243251/
 ---
 
 ## Q243251: Missing Password-Protected Screen Saver Leaves Computer Unlocked

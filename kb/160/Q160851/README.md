@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160851: MSN Setup Does Not Connect If Third-Party Connection Selected"
-permalink: kb/160/Q160851/
+permalink: /kb/160/Q160851/
 ---
 
 ## Q160851: MSN Setup Does Not Connect If Third-Party Connection Selected

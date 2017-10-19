@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161417: FP97: When to Use FP Personal Web Server Versus Microsoft PWS"
-permalink: kb/161/Q161417/
+permalink: /kb/161/Q161417/
 ---
 
 ## Q161417: FP97: When to Use FP Personal Web Server Versus Microsoft PWS

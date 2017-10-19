@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81480: Kensington Expert Mouse Setup and Windows"
-permalink: kb/081/Q81480/
+permalink: /kb/081/Q81480/
 ---
 
 ## Q81480: Kensington Expert Mouse Setup and Windows

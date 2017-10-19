@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187520: Tandberg SL5 Tape Device Not Auto-Detected in Window NT 4.0"
-permalink: kb/187/Q187520/
+permalink: /kb/187/Q187520/
 ---
 
 ## Q187520: Tandberg SL5 Tape Device Not Auto-Detected in Window NT 4.0

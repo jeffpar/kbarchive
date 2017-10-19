@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223306: XCLN: 5.5 SP1 ODK Installs Outlook 98 w/128-bit Encryption"
-permalink: kb/223/Q223306/
+permalink: /kb/223/Q223306/
 ---
 
 ## Q223306: XCLN: 5.5 SP1 ODK Installs Outlook 98 w/128-bit Encryption

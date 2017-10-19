@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240239: HOWTO: Capture the Path to a File that has been Loaded into an A"
-permalink: kb/240/Q240239/
+permalink: /kb/240/Q240239/
 ---
 
 ## Q240239: HOWTO: Capture the Path to a File that has been Loaded into an A

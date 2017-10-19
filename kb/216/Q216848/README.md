@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216848: BUG: MDAC: SQL Server Driver May Return Error &quot;Login Failed&quot;"
-permalink: kb/216/Q216848/
+permalink: /kb/216/Q216848/
 ---
 
 ## Q216848: BUG: MDAC: SQL Server Driver May Return Error &quot;Login Failed&quot;

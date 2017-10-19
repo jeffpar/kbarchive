@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156541: SMS: Message to Restart Not Seen By User After Upgrade"
-permalink: kb/156/Q156541/
+permalink: /kb/156/Q156541/
 ---
 
 ## Q156541: SMS: Message to Restart Not Seen By User After Upgrade

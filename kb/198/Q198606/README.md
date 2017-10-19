@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198606: PRB: &quot;Update Conflict&quot; Message When Modifying SQL Server Data"
-permalink: kb/198/Q198606/
+permalink: /kb/198/Q198606/
 ---
 
 ## Q198606: PRB: &quot;Update Conflict&quot; Message When Modifying SQL Server Data

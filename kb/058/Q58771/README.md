@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58771: Mac GW: Installing a Gateway in Microsoft Mail"
-permalink: kb/058/Q58771/
+permalink: /kb/058/Q58771/
 ---
 
 ## Q58771: Mac GW: Installing a Gateway in Microsoft Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151446: FIX: Internal State of ControlBars Corrupted"
-permalink: kb/151/Q151446/
+permalink: /kb/151/Q151446/
 ---
 
 ## Q151446: FIX: Internal State of ControlBars Corrupted

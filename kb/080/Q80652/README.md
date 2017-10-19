@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80652: PC Win: Scroll Bars Are Not Available on Desktop"
-permalink: kb/080/Q80652/
+permalink: /kb/080/Q80652/
 ---
 
 ## Q80652: PC Win: Scroll Bars Are Not Available on Desktop

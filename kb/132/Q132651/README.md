@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132651: Cannot Shut Down with Microsoft Visual C++ 2.1 Running"
-permalink: kb/132/Q132651/
+permalink: /kb/132/Q132651/
 ---
 
 ## Q132651: Cannot Shut Down with Microsoft Visual C++ 2.1 Running

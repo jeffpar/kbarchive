@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159702: Exception Error in Nwconv.exe During Migration"
-permalink: kb/159/Q159702/
+permalink: /kb/159/Q159702/
 ---
 
 ## Q159702: Exception Error in Nwconv.exe During Migration

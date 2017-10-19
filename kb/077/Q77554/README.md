@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77554: Text Copied from DOS Application Appends Carriage Return"
-permalink: kb/077/Q77554/
+permalink: /kb/077/Q77554/
 ---
 
 ## Q77554: Text Copied from DOS Application Appends Carriage Return

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197847: Application Cannot Be Started After Installing Service Pack 4"
-permalink: kb/197/Q197847/
+permalink: /kb/197/Q197847/
 ---
 
 ## Q197847: Application Cannot Be Started After Installing Service Pack 4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153164: MS-DOS Compatibility Mode on National Semiconductor Controller"
-permalink: kb/153/Q153164/
+permalink: /kb/153/Q153164/
 ---
 
 ## Q153164: MS-DOS Compatibility Mode on National Semiconductor Controller

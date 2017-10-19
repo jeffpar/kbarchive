@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137311: VLM Client Generates SetDrivePath Error 85"
-permalink: kb/137/Q137311/
+permalink: /kb/137/Q137311/
 ---
 
 ## Q137311: VLM Client Generates SetDrivePath Error 85

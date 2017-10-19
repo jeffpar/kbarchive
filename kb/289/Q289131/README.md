@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289131: Redirect URL Corruption When Requested URL Contains Trailing &quot;/&quot;"
-permalink: kb/289/Q289131/
+permalink: /kb/289/Q289131/
 ---
 
 ## Q289131: Redirect URL Corruption When Requested URL Contains Trailing &quot;/&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71208: Running Setup Within a Window Causes UAE On Novell Network"
-permalink: kb/071/Q71208/
+permalink: /kb/071/Q71208/
 ---
 
 ## Q71208: Running Setup Within a Window Causes UAE On Novell Network

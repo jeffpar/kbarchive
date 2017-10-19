@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272599: MapPoint 2000 Err Msg: Unable to Register or Unregister the File"
-permalink: kb/272/Q272599/
+permalink: /kb/272/Q272599/
 ---
 
 ## Q272599: MapPoint 2000 Err Msg: Unable to Register or Unregister the File

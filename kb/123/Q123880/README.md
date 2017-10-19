@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123880: Stop 7B with NCR53c710 SCSI Adapter and DEC 3107 or DEC 3210"
-permalink: kb/123/Q123880/
+permalink: /kb/123/Q123880/
 ---
 
 ## Q123880: Stop 7B with NCR53c710 SCSI Adapter and DEC 3107 or DEC 3210

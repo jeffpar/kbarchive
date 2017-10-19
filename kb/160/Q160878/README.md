@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160878: GPF in Krnl386 When Using CPIC Thunking DLL on a WinNT Computer"
-permalink: kb/160/Q160878/
+permalink: /kb/160/Q160878/
 ---
 
 ## Q160878: GPF in Krnl386 When Using CPIC Thunking DLL on a WinNT Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234388: XFOR: Novell Gateway Doesn't Deliver Msg. w/Zero-Byte Attachment"
-permalink: kb/234/Q234388/
+permalink: /kb/234/Q234388/
 ---
 
 ## Q234388: XFOR: Novell Gateway Doesn't Deliver Msg. w/Zero-Byte Attachment

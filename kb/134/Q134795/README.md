@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134795: Streets 4.0: &quot;No Place Near&quot; Message When Clicking Map Edge"
-permalink: kb/134/Q134795/
+permalink: /kb/134/Q134795/
 ---
 
 ## Q134795: Streets 4.0: &quot;No Place Near&quot; Message When Clicking Map Edge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161289: SMS: Network Adapter IRQ Is Not Inventoried on Windows 95"
-permalink: kb/161/Q161289/
+permalink: /kb/161/Q161289/
 ---
 
 ## Q161289: SMS: Network Adapter IRQ Is Not Inventoried on Windows 95

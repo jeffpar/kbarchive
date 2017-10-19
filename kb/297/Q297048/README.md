@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297048: SMS: Programs That You Start When You Log On Lose Focus"
-permalink: kb/297/Q297048/
+permalink: /kb/297/Q297048/
 ---
 
 ## Q297048: SMS: Programs That You Start When You Log On Lose Focus

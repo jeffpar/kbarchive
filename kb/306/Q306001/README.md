@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306001: BUG 14373: Inline Sign-In Page Does Not Render w/ Netscape"
-permalink: kb/306/Q306001/
+permalink: /kb/306/Q306001/
 ---
 
 ## Q306001: BUG 14373: Inline Sign-In Page Does Not Render w/ Netscape

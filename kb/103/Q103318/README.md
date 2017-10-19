@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103318: MoveLst.exe Moves Item in List Box Using Drag and Drop"
-permalink: kb/103/Q103318/
+permalink: /kb/103/Q103318/
 ---
 
 ## Q103318: MoveLst.exe Moves Item in List Box Using Drag and Drop

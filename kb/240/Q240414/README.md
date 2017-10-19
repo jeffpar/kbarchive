@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240414: Desktop Link to Local Folder Does Not Work After Installing SP5"
-permalink: kb/240/Q240414/
+permalink: /kb/240/Q240414/
 ---
 
 ## Q240414: Desktop Link to Local Folder Does Not Work After Installing SP5

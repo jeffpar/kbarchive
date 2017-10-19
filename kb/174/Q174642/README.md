@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174642: DCA ISCA SDLC Connections Fail On Pentium Pro Systems"
-permalink: kb/174/Q174642/
+permalink: /kb/174/Q174642/
 ---
 
 ## Q174642: DCA ISCA SDLC Connections Fail On Pentium Pro Systems

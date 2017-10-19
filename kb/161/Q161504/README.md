@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161504: PRB: &quot;Error Reading Drive&quot; with Windows NT 3.5 as Server"
-permalink: kb/161/Q161504/
+permalink: /kb/161/Q161504/
 ---
 
 ## Q161504: PRB: &quot;Error Reading Drive&quot; with Windows NT 3.5 as Server

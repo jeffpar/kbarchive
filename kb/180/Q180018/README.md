@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180018: SGCINST.EXE Appears to Execute but SGC Does Not Work"
-permalink: kb/180/Q180018/
+permalink: /kb/180/Q180018/
 ---
 
 ## Q180018: SGCINST.EXE Appears to Execute but SGC Does Not Work

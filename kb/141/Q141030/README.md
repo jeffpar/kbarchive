@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141030: PRB: Changing _ASCIIROWS Modifies a Report"
-permalink: kb/141/Q141030/
+permalink: /kb/141/Q141030/
 ---
 
 ## Q141030: PRB: Changing _ASCIIROWS Modifies a Report

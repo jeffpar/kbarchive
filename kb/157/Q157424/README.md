@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157424: PRB: Remote View Displays Empty Date Fields with 12/30/1899"
-permalink: kb/157/Q157424/
+permalink: /kb/157/Q157424/
 ---
 
 ## Q157424: PRB: Remote View Displays Empty Date Fields with 12/30/1899

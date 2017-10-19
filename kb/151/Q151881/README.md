@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151881: Shared Resources Disappear After NT Is Rebooted"
-permalink: kb/151/Q151881/
+permalink: /kb/151/Q151881/
 ---
 
 ## Q151881: Shared Resources Disappear After NT Is Rebooted

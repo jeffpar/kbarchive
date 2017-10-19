@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234595: XCLN: PowerPoint Slide Show Files (.pps) Get .ppt Extension"
-permalink: kb/234/Q234595/
+permalink: /kb/234/Q234595/
 ---
 
 ## Q234595: XCLN: PowerPoint Slide Show Files (.pps) Get .ppt Extension

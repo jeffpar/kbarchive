@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150186: BUG: Setting Focus to a Masked Edit Control Causes Error"
-permalink: kb/150/Q150186/
+permalink: /kb/150/Q150186/
 ---
 
 ## Q150186: BUG: Setting Focus to a Masked Edit Control Causes Error

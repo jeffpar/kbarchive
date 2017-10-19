@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141254: Encarta 1995: Manual Installation for Windows 95 and NT"
-permalink: kb/141/Q141254/
+permalink: /kb/141/Q141254/
 ---
 
 ## Q141254: Encarta 1995: Manual Installation for Windows 95 and NT

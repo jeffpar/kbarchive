@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168495: PPT: Sample Code to Reset the Builds on a Slide"
-permalink: kb/168/Q168495/
+permalink: /kb/168/Q168495/
 ---
 
 ## Q168495: PPT: Sample Code to Reset the Builds on a Slide

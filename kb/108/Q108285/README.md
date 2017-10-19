@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108285: FIX: Precision Problem with COMPLEX&#42;16 and /Op"
-permalink: kb/108/Q108285/
+permalink: /kb/108/Q108285/
 ---
 
 ## Q108285: FIX: Precision Problem with COMPLEX&#42;16 and /Op

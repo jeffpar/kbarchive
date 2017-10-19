@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152048: File Manager Incorrectly Reports Free Space on 3.5-inch Disk"
-permalink: kb/152/Q152048/
+permalink: /kb/152/Q152048/
 ---
 
 ## Q152048: File Manager Incorrectly Reports Free Space on 3.5-inch Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131739: Windows NT 3.5: NetBT Event ID 4320"
-permalink: kb/131/Q131739/
+permalink: /kb/131/Q131739/
 ---
 
 ## Q131739: Windows NT 3.5: NetBT Event ID 4320

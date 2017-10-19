@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148616: FIX: DisplayAsDefault Ambient Property Not Updated for Control"
-permalink: kb/148/Q148616/
+permalink: /kb/148/Q148616/
 ---
 
 ## Q148616: FIX: DisplayAsDefault Ambient Property Not Updated for Control

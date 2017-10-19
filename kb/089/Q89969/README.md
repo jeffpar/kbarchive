@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89969: Slow Startup in Music Box Due to ASPI4DOS.SYS"
-permalink: kb/089/Q89969/
+permalink: /kb/089/Q89969/
 ---
 
 ## Q89969: Slow Startup in Music Box Due to ASPI4DOS.SYS

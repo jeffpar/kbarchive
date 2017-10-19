@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146189: Character Set for the Timex DataLink Watch"
-permalink: kb/146/Q146189/
+permalink: /kb/146/Q146189/
 ---
 
 ## Q146189: Character Set for the Timex DataLink Watch

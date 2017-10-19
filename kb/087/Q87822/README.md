@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87822: ROTATE.DRV Will Not Rotate Full-Screen MS-DOS Applications"
-permalink: kb/087/Q87822/
+permalink: /kb/087/Q87822/
 ---
 
 ## Q87822: ROTATE.DRV Will Not Rotate Full-Screen MS-DOS Applications

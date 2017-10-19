@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124100: PC Win WRmt: Upgrading Windows for Workgroups Mail"
-permalink: kb/124/Q124100/
+permalink: /kb/124/Q124100/
 ---
 
 ## Q124100: PC Win WRmt: Upgrading Windows for Workgroups Mail

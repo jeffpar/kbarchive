@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187137: Add User Wizard Does Not Allow Setting of Home Directory"
-permalink: kb/187/Q187137/
+permalink: /kb/187/Q187137/
 ---
 
 ## Q187137: Add User Wizard Does Not Allow Setting of Home Directory

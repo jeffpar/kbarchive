@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180147: TPSTART Not Needed With SNA Windows 95 Client"
-permalink: kb/180/Q180147/
+permalink: /kb/180/Q180147/
 ---
 
 ## Q180147: TPSTART Not Needed With SNA Windows 95 Client

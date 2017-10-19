@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86395: PC OS2: Err Msg: Your Message File Was Moved..."
-permalink: kb/086/Q86395/
+permalink: /kb/086/Q86395/
 ---
 
 ## Q86395: PC OS2: Err Msg: Your Message File Was Moved...

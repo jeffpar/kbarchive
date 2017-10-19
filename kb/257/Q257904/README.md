@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257904: Unable to Remotely Administer a MSCS Server After Applying SP4"
-permalink: kb/257/Q257904/
+permalink: /kb/257/Q257904/
 ---
 
 ## Q257904: Unable to Remotely Administer a MSCS Server After Applying SP4

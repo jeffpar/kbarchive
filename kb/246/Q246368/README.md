@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246368: How to Start Interix Daemons as Services"
-permalink: kb/246/Q246368/
+permalink: /kb/246/Q246368/
 ---
 
 ## Q246368: How to Start Interix Daemons as Services

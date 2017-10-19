@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132746: PC Ext NTMMTA: External Will Not Answer w/ USR Sportster Modem"
-permalink: kb/132/Q132746/
+permalink: /kb/132/Q132746/
 ---
 
 ## Q132746: PC Ext NTMMTA: External Will Not Answer w/ USR Sportster Modem

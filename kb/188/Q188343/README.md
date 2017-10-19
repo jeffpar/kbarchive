@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188343: ISAPI Filter Not Receiving SF_NOTIFY_SEND_RAW_DATA with Proxy"
-permalink: kb/188/Q188343/
+permalink: /kb/188/Q188343/
 ---
 
 ## Q188343: ISAPI Filter Not Receiving SF_NOTIFY_SEND_RAW_DATA with Proxy

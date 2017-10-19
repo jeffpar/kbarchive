@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43243: Mac Srv: How to Modify a User Group"
-permalink: kb/043/Q43243/
+permalink: /kb/043/Q43243/
 ---
 
 ## Q43243: Mac Srv: How to Modify a User Group

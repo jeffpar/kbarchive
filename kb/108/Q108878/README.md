@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108878: PC Gen: PODIAG.EXE Reports Missing GALINDEX.GLB on 2.1 PO"
-permalink: kb/108/Q108878/
+permalink: /kb/108/Q108878/
 ---
 
 ## Q108878: PC Gen: PODIAG.EXE Reports Missing GALINDEX.GLB on 2.1 PO

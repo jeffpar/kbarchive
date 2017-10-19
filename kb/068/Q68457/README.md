@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68457: Ground Hog Graphics VGA Card Screen Capture Problem"
-permalink: kb/068/Q68457/
+permalink: /kb/068/Q68457/
 ---
 
 ## Q68457: Ground Hog Graphics VGA Card Screen Capture Problem

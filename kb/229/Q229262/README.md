@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229262: Baseball 2000: Minimum System Requirements"
-permalink: kb/229/Q229262/
+permalink: /kb/229/Q229262/
 ---
 
 ## Q229262: Baseball 2000: Minimum System Requirements

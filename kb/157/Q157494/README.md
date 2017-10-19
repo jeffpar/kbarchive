@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157494: PPC 4.0 Cirrus Driver Fails to Redraw &amp; Fill Objects Correctly"
-permalink: kb/157/Q157494/
+permalink: /kb/157/Q157494/
 ---
 
 ## Q157494: PPC 4.0 Cirrus Driver Fails to Redraw &amp; Fill Objects Correctly

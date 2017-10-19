@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95655: Errors Connecting to Server During Over-the-Network Setup"
-permalink: kb/095/Q95655/
+permalink: /kb/095/Q95655/
 ---
 
 ## Q95655: Errors Connecting to Server During Over-the-Network Setup

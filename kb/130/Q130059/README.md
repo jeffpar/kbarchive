@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130059: Obsolete Macro functions in Japanese Windows Version 3.1"
-permalink: kb/130/Q130059/
+permalink: /kb/130/Q130059/
 ---
 
 ## Q130059: Obsolete Macro functions in Japanese Windows Version 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92781: Must Use Quotation Marks if Shared Resource Names Have Spaces"
-permalink: kb/092/Q92781/
+permalink: /kb/092/Q92781/
 ---
 
 ## Q92781: Must Use Quotation Marks if Shared Resource Names Have Spaces

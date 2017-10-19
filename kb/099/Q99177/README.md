@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99177: Bookshelf: QuicKeys Dialog Box Does Not Include OK and Cancel"
-permalink: kb/099/Q99177/
+permalink: /kb/099/Q99177/
 ---
 
 ## Q99177: Bookshelf: QuicKeys Dialog Box Does Not Include OK and Cancel

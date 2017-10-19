@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81284: Windows Does Not Load With Intel 386 SnapIn"
-permalink: kb/081/Q81284/
+permalink: /kb/081/Q81284/
 ---
 
 ## Q81284: Windows Does Not Load With Intel 386 SnapIn

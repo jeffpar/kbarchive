@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134950: X400: Err Msg: Translate to Local Form Failed on Message:"
-permalink: kb/134/Q134950/
+permalink: /kb/134/Q134950/
 ---
 
 ## Q134950: X400: Err Msg: Translate to Local Form Failed on Message:

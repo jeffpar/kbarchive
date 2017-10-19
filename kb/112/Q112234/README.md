@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112234: FaxDrv: Improper Scaling with Excel 4.0"
-permalink: kb/112/Q112234/
+permalink: /kb/112/Q112234/
 ---
 
 ## Q112234: FaxDrv: Improper Scaling with Excel 4.0

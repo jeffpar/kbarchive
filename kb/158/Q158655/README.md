@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158655: Mac Encarta 97: May Run Slowly on PowerMacs with Low Memory"
-permalink: kb/158/Q158655/
+permalink: /kb/158/Q158655/
 ---
 
 ## Q158655: Mac Encarta 97: May Run Slowly on PowerMacs with Low Memory

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q130064: PC DirSync: Err Msg: [XX] Error Obtaining Message #: YY"
-permalink: kb/130/Q130064/
+title: "Q130064: PC DirSync: Err Msg: &#91;XX&#93; Error Obtaining Message #: YY"
+permalink: /kb/130/Q130064/
 ---
 
-## Q130064: PC DirSync: Err Msg: [XX] Error Obtaining Message #: YY
+## Q130064: PC DirSync: Err Msg: &#91;XX&#93; Error Obtaining Message #: YY
 
 	Article: Q130064
 	Product(s): Microsoft Mail For PC Networks

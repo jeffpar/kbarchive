@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150310: Bookshelf 96: Lost Network Connection Causes Error"
-permalink: kb/150/Q150310/
+permalink: /kb/150/Q150310/
 ---
 
 ## Q150310: Bookshelf 96: Lost Network Connection Causes Error

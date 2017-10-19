@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157815: Service Control Manager Event 7003 and 7024 (2105)"
-permalink: kb/157/Q157815/
+permalink: /kb/157/Q157815/
 ---
 
 ## Q157815: Service Control Manager Event 7003 and 7024 (2105)

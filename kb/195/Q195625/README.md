@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195625: FIX: Set Component Gallery Dynamic Folder to HTMLHelp Fails"
-permalink: kb/195/Q195625/
+permalink: /kb/195/Q195625/
 ---
 
 ## Q195625: FIX: Set Component Gallery Dynamic Folder to HTMLHelp Fails

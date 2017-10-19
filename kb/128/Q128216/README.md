@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128216: SCHDPLUS.INI File Appears in Root Directory"
-permalink: kb/128/Q128216/
+permalink: /kb/128/Q128216/
 ---
 
 ## Q128216: SCHDPLUS.INI File Appears in Root Directory

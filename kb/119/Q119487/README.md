@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119487: BUG: Time Value Converted to Datetime Using Access ODBC Driver"
-permalink: kb/119/Q119487/
+permalink: /kb/119/Q119487/
 ---
 
 ## Q119487: BUG: Time Value Converted to Datetime Using Access ODBC Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263842: XADM: Viewing Messages in the MSExchangeIS Private Send Queue"
-permalink: kb/263/Q263842/
+permalink: /kb/263/Q263842/
 ---
 
 ## Q263842: XADM: Viewing Messages in the MSExchangeIS Private Send Queue

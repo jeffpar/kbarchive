@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178287: WD97: Track Changes Does Not Mark Some Formatting Changes"
-permalink: kb/178/Q178287/
+permalink: /kb/178/Q178287/
 ---
 
 ## Q178287: WD97: Track Changes Does Not Mark Some Formatting Changes

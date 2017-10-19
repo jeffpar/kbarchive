@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175839: PPT: Troubleshooting Damaged Presentations on Windows 95"
-permalink: kb/175/Q175839/
+permalink: /kb/175/Q175839/
 ---
 
 ## Q175839: PPT: Troubleshooting Damaged Presentations on Windows 95

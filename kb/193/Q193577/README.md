@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193577: HOWTO: Pin Multiple Files in Visual SourceSafe"
-permalink: kb/193/Q193577/
+permalink: /kb/193/Q193577/
 ---
 
 ## Q193577: HOWTO: Pin Multiple Files in Visual SourceSafe

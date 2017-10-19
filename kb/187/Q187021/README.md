@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187021: Client Reconnects to Non-Responding Application"
-permalink: kb/187/Q187021/
+permalink: /kb/187/Q187021/
 ---
 
 ## Q187021: Client Reconnects to Non-Responding Application

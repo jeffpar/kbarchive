@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142632: Stop 0x0000000A in NBF.SYS When System Is Running Under Stress"
-permalink: kb/142/Q142632/
+permalink: /kb/142/Q142632/
 ---
 
 ## Q142632: Stop 0x0000000A in NBF.SYS When System Is Running Under Stress

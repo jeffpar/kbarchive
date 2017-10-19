@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155564: EXPAND Command Does Not Recognize Path with Spaces"
-permalink: kb/155/Q155564/
+permalink: /kb/155/Q155564/
 ---
 
 ## Q155564: EXPAND Command Does Not Recognize Path with Spaces

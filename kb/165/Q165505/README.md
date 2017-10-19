@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165505: XFOR: How to View or Delete Messages in MTS-IN and MTS-OUT Queue"
-permalink: kb/165/Q165505/
+permalink: /kb/165/Q165505/
 ---
 
 ## Q165505: XFOR: How to View or Delete Messages in MTS-IN and MTS-OUT Queue

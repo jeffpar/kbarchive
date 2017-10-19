@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158319: FIX: Printing from Report Designer Gets Error Message in VFP 5"
-permalink: kb/158/Q158319/
+permalink: /kb/158/Q158319/
 ---
 
 ## Q158319: FIX: Printing from Report Designer Gets Error Message in VFP 5

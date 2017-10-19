@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126382: Bypassing Service Provider Banner In SWITCH.INF"
-permalink: kb/126/Q126382/
+permalink: /kb/126/Q126382/
 ---
 
 ## Q126382: Bypassing Service Provider Banner In SWITCH.INF

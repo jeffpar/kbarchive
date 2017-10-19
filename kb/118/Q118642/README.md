@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118642: Windows 95 Err Msg: Win32 Exec App Unable to Find..."
-permalink: kb/118/Q118642/
+permalink: /kb/118/Q118642/
 ---
 
 ## Q118642: Windows 95 Err Msg: Win32 Exec App Unable to Find...

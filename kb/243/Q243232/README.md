@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243232: Ki386VdmSegmentNotPresent Causes &quot;Stop 0x00000050&quot; Error Message"
-permalink: kb/243/Q243232/
+permalink: /kb/243/Q243232/
 ---
 
 ## Q243232: Ki386VdmSegmentNotPresent Causes &quot;Stop 0x00000050&quot; Error Message

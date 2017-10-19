@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141385: Cogent EM110 PCI and MS-DOS client 3.0"
-permalink: kb/141/Q141385/
+permalink: /kb/141/Q141385/
 ---
 
 ## Q141385: Cogent EM110 PCI and MS-DOS client 3.0

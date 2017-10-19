@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134533: Micron Pentium 90 with Phoenix BIOS Hangs on Shutdown"
-permalink: kb/134/Q134533/
+permalink: /kb/134/Q134533/
 ---
 
 ## Q134533: Micron Pentium 90 with Phoenix BIOS Hangs on Shutdown

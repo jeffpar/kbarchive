@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84988: Mouse Problems with the Zenith MastersPort 386"
-permalink: kb/084/Q84988/
+permalink: /kb/084/Q84988/
 ---
 
 ## Q84988: Mouse Problems with the Zenith MastersPort 386

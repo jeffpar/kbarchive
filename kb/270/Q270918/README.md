@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270918: XADM: Event Service Delay in Processing Scripts"
-permalink: kb/270/Q270918/
+permalink: /kb/270/Q270918/
 ---
 
 ## Q270918: XADM: Event Service Delay in Processing Scripts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186595: How to Increase Security on Recycle Bin Properties"
-permalink: kb/186/Q186595/
+permalink: /kb/186/Q186595/
 ---
 
 ## Q186595: How to Increase Security on Recycle Bin Properties

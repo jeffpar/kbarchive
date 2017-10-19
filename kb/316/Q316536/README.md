@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316536: XCCC: &quot;Have Server Reply with Specific Message&quot;  Rule Fails"
-permalink: kb/316/Q316536/
+permalink: /kb/316/Q316536/
 ---
 
 ## Q316536: XCCC: &quot;Have Server Reply with Specific Message&quot;  Rule Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301477: Broadband-Supported USB-Ethernet Adaptors"
-permalink: kb/301/Q301477/
+permalink: /kb/301/Q301477/
 ---
 
 ## Q301477: Broadband-Supported USB-Ethernet Adaptors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81706: OwnCombo.exe Demonstrates an Owner-Draw Combo Box"
-permalink: kb/081/Q81706/
+permalink: /kb/081/Q81706/
 ---
 
 ## Q81706: OwnCombo.exe Demonstrates an Owner-Draw Combo Box

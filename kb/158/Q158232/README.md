@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158232: STL Sample for the unary_functi"
-permalink: kb/158/Q158232/
+permalink: /kb/158/Q158232/
 ---
 
 ## Q158232: STL Sample for the unary_functi

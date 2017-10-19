@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93467: Macro Recorder Cannot Save to Novell Subdirectory"
-permalink: kb/093/Q93467/
+permalink: /kb/093/Q93467/
 ---
 
 ## Q93467: Macro Recorder Cannot Save to Novell Subdirectory

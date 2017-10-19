@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179250: BUG: Line and Shape Controls Not Visible on UserControl"
-permalink: kb/179/Q179250/
+permalink: /kb/179/Q179250/
 ---
 
 ## Q179250: BUG: Line and Shape Controls Not Visible on UserControl

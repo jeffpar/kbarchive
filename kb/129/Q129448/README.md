@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129448: PRB: Using Reserved Keywords as Types"
-permalink: kb/129/Q129448/
+permalink: /kb/129/Q129448/
 ---
 
 ## Q129448: PRB: Using Reserved Keywords as Types

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163254: WD97: Valupk8.hlp Topic for Macintosh Converter Incorrect"
-permalink: kb/163/Q163254/
+permalink: /kb/163/Q163254/
 ---
 
 ## Q163254: WD97: Valupk8.hlp Topic for Macintosh Converter Incorrect

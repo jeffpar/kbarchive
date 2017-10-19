@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282458: 502 Access Denied Errors Occur When There Are a Large Number of"
-permalink: kb/282/Q282458/
+permalink: /kb/282/Q282458/
 ---
 
 ## Q282458: 502 Access Denied Errors Occur When There Are a Large Number of

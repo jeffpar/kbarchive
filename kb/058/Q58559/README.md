@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58559: PRB: Executable Code Between Declarations Causes C2143 or C214"
-permalink: kb/058/Q58559/
+permalink: /kb/058/Q58559/
 ---
 
 ## Q58559: PRB: Executable Code Between Declarations Causes C2143 or C214

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234764: XADM: Eseutil Ends with -1808 (Jet_ErrDiskFull) on /P or /G"
-permalink: kb/234/Q234764/
+permalink: /kb/234/Q234764/
 ---
 
 ## Q234764: XADM: Eseutil Ends with -1808 (Jet_ErrDiskFull) on /P or /G

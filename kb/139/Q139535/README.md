@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139535: Some TrueType Fonts Do Not Produce Glyphs on Windows NT 3.51"
-permalink: kb/139/Q139535/
+permalink: /kb/139/Q139535/
 ---
 
 ## Q139535: Some TrueType Fonts Do Not Produce Glyphs on Windows NT 3.51

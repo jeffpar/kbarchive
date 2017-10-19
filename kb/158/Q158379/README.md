@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158379: XFOR: MSExchangeMSMI Reports Event IDs 2380 and 2446/2447"
-permalink: kb/158/Q158379/
+permalink: /kb/158/Q158379/
 ---
 
 ## Q158379: XFOR: MSExchangeMSMI Reports Event IDs 2380 and 2446/2447

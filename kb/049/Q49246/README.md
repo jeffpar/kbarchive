@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49246: Using OFFSET with a Group of Data Segments"
-permalink: kb/049/Q49246/
+permalink: /kb/049/Q49246/
 ---
 
 ## Q49246: Using OFFSET with a Group of Data Segments

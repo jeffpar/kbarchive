@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169583: SMS: Readme.hlp File Is Not in Systems Management Server 1.2 SP2"
-permalink: kb/169/Q169583/
+permalink: /kb/169/Q169583/
 ---
 
 ## Q169583: SMS: Readme.hlp File Is Not in Systems Management Server 1.2 SP2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162937: WD97: Compile Error Passing Function Call"
-permalink: kb/162/Q162937/
+permalink: /kb/162/Q162937/
 ---
 
 ## Q162937: WD97: Compile Error Passing Function Call

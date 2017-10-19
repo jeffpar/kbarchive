@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129037: Windows NT 3.5x and 4.0 Emergency Repair Process Screens"
-permalink: kb/129/Q129037/
+permalink: /kb/129/Q129037/
 ---
 
 ## Q129037: Windows NT 3.5x and 4.0 Emergency Repair Process Screens

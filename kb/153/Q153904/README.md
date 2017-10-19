@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153904: How To Perform Background Processing in FoxPro"
-permalink: kb/153/Q153904/
+permalink: /kb/153/Q153904/
 ---
 
 ## Q153904: How To Perform Background Processing in FoxPro

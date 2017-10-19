@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107755: PC MAPI: MAPIFindNext Not Recognizing MAPISaveMail Message IDs"
-permalink: kb/107/Q107755/
+permalink: /kb/107/Q107755/
 ---
 
 ## Q107755: PC MAPI: MAPIFindNext Not Recognizing MAPISaveMail Message IDs

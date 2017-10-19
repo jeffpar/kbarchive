@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116162: QuickShelf: Toolbar Has Large Buttons in Large Font Mode"
-permalink: kb/116/Q116162/
+permalink: /kb/116/Q116162/
 ---
 
 ## Q116162: QuickShelf: Toolbar Has Large Buttons in Large Font Mode

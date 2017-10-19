@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294330: XADM: &quot;Exchange Computer Is Unavailable&quot; Msg in Server Monitor"
-permalink: kb/294/Q294330/
+permalink: /kb/294/Q294330/
 ---
 
 ## Q294330: XADM: &quot;Exchange Computer Is Unavailable&quot; Msg in Server Monitor

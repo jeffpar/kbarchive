@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235890: Enterprise Edition Installer Program Requests Service Pack 3"
-permalink: kb/235/Q235890/
+permalink: /kb/235/Q235890/
 ---
 
 ## Q235890: Enterprise Edition Installer Program Requests Service Pack 3

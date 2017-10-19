@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157007: XADM: Secondary Proxy Address Replaces Target Address of CR"
-permalink: kb/157/Q157007/
+permalink: /kb/157/Q157007/
 ---
 
 ## Q157007: XADM: Secondary Proxy Address Replaces Target Address of CR

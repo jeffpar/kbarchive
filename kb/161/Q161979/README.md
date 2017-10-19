@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161979: Encarta: How to Disable the Ability to Start Programs"
-permalink: kb/161/Q161979/
+permalink: /kb/161/Q161979/
 ---
 
 ## Q161979: Encarta: How to Disable the Ability to Start Programs

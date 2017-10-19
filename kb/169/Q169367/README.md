@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169367: FIX: Cannot Update More Than 23 Columns of a View"
-permalink: kb/169/Q169367/
+permalink: /kb/169/Q169367/
 ---
 
 ## Q169367: FIX: Cannot Update More Than 23 Columns of a View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139383: Unimodem V Adds Additional Support for Data/Fax/Voice Modems"
-permalink: kb/139/Q139383/
+permalink: /kb/139/Q139383/
 ---
 
 ## Q139383: Unimodem V Adds Additional Support for Data/Fax/Voice Modems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158373: Monster Truck Madness: Viewing Options Vary Depending on View"
-permalink: kb/158/Q158373/
+permalink: /kb/158/Q158373/
 ---
 
 ## Q158373: Monster Truck Madness: Viewing Options Vary Depending on View

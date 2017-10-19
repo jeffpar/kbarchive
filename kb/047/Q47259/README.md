@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47259: Mac Wkst: Date Inconsistent Between Summary and Read Screen"
-permalink: kb/047/Q47259/
+permalink: /kb/047/Q47259/
 ---
 
 ## Q47259: Mac Wkst: Date Inconsistent Between Summary and Read Screen

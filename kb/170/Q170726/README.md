@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170726: WD97: Macros to Test for an Existing AutoText Entry Name"
-permalink: kb/170/Q170726/
+permalink: /kb/170/Q170726/
 ---
 
 ## Q170726: WD97: Macros to Test for an Existing AutoText Entry Name

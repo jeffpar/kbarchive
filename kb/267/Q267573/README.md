@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267573: XADM: Error 0xc00206b7 When You Start the System Attendant"
-permalink: kb/267/Q267573/
+permalink: /kb/267/Q267573/
 ---
 
 ## Q267573: XADM: Error 0xc00206b7 When You Start the System Attendant

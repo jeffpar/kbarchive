@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85681: Future Domain SCSI Host Adapters Do Not Require Double Buffer"
-permalink: kb/085/Q85681/
+permalink: /kb/085/Q85681/
 ---
 
 ## Q85681: Future Domain SCSI Host Adapters Do Not Require Double Buffer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149325: BUG: Can't Load VB 3 Binary Form with Some Extended Characters"
-permalink: kb/149/Q149325/
+permalink: /kb/149/Q149325/
 ---
 
 ## Q149325: BUG: Can't Load VB 3 Binary Form with Some Extended Characters

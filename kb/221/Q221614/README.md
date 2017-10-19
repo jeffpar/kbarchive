@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221614: FIX: Remote View Wizard Gives Error with Spaces in Table Name"
-permalink: kb/221/Q221614/
+permalink: /kb/221/Q221614/
 ---
 
 ## Q221614: FIX: Remote View Wizard Gives Error with Spaces in Table Name

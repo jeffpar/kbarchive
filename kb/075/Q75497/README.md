@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75497: Writing Embedded Applications for Microsoft Windows"
-permalink: kb/075/Q75497/
+permalink: /kb/075/Q75497/
 ---
 
 ## Q75497: Writing Embedded Applications for Microsoft Windows

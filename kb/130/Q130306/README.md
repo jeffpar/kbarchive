@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130306: Save/SET/Restore of SET Environment Settings"
-permalink: kb/130/Q130306/
+permalink: /kb/130/Q130306/
 ---
 
 ## Q130306: Save/SET/Restore of SET Environment Settings

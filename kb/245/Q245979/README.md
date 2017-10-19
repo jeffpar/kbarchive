@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245979: XADM: Other Replicated Sites Shown in Mailbox Manager Policies"
-permalink: kb/245/Q245979/
+permalink: /kb/245/Q245979/
 ---
 
 ## Q245979: XADM: Other Replicated Sites Shown in Mailbox Manager Policies

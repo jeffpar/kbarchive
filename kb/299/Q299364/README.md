@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299364: Access Violation in Services.exe with Unconfigured PC Card"
-permalink: kb/299/Q299364/
+permalink: /kb/299/Q299364/
 ---
 
 ## Q299364: Access Violation in Services.exe with Unconfigured PC Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141739: BUG: Sendmail.scx Hangs FoxPro If Mail Client Not Installed"
-permalink: kb/141/Q141739/
+permalink: /kb/141/Q141739/
 ---
 
 ## Q141739: BUG: Sendmail.scx Hangs FoxPro If Mail Client Not Installed

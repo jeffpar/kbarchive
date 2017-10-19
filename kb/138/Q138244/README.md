@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138244: Printing Fails with &quot;RPC Procedure Call Failed&quot;"
-permalink: kb/138/Q138244/
+permalink: /kb/138/Q138244/
 ---
 
 ## Q138244: Printing Fails with &quot;RPC Procedure Call Failed&quot;

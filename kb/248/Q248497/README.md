@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248497: Event ID 113: &quot;Instance 1 Has Invalid Binding Descriptor&quot;"
-permalink: kb/248/Q248497/
+permalink: /kb/248/Q248497/
 ---
 
 ## Q248497: Event ID 113: &quot;Instance 1 Has Invalid Binding Descriptor&quot;

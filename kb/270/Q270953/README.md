@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270953: EWA2001 Err Msg: Unable to Run Encarta with Low System Resources"
-permalink: kb/270/Q270953/
+permalink: /kb/270/Q270953/
 ---
 
 ## Q270953: EWA2001 Err Msg: Unable to Run Encarta with Low System Resources

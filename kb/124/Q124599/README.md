@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124599: Trumpet PPP Client Can Hang RAS"
-permalink: kb/124/Q124599/
+permalink: /kb/124/Q124599/
 ---
 
 ## Q124599: Trumpet PPP Client Can Hang RAS

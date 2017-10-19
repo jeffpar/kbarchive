@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119374: Err Msg: Setup Error 108 or 110 During TCP/IP-32 Installation"
-permalink: kb/119/Q119374/
+permalink: /kb/119/Q119374/
 ---
 
 ## Q119374: Err Msg: Setup Error 108 or 110 During TCP/IP-32 Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80784: DOC: Suggested Changes to the DEVCAPS2 Sample App"
-permalink: kb/080/Q80784/
+permalink: /kb/080/Q80784/
 ---
 
 ## Q80784: DOC: Suggested Changes to the DEVCAPS2 Sample App

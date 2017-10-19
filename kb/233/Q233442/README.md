@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233442: Business Planner: Home Page Text Is Displayed with Jagged Edges"
-permalink: kb/233/Q233442/
+permalink: /kb/233/Q233442/
 ---
 
 ## Q233442: Business Planner: Home Page Text Is Displayed with Jagged Edges

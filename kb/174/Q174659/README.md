@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174659: Start Button, Taskbar, and Desktop Icons Missing After Logon"
-permalink: kb/174/Q174659/
+permalink: /kb/174/Q174659/
 ---
 
 ## Q174659: Start Button, Taskbar, and Desktop Icons Missing After Logon

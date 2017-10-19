@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154541: Clients Open Many &#92;Pipe&#92;Spoolss Connections to WinNT Print Srv"
-permalink: kb/154/Q154541/
+permalink: /kb/154/Q154541/
 ---
 
 ## Q154541: Clients Open Many &#92;Pipe&#92;Spoolss Connections to WinNT Print Srv

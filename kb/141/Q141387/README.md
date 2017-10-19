@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141387: Ball Hesitates with Flipper Movement Playing 3D Pinball"
-permalink: kb/141/Q141387/
+permalink: /kb/141/Q141387/
 ---
 
 ## Q141387: Ball Hesitates with Flipper Movement Playing 3D Pinball

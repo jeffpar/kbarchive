@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93215: Making Enter Key in Directory List Box Act Like Double-Click"
-permalink: kb/093/Q93215/
+permalink: /kb/093/Q93215/
 ---
 
 ## Q93215: Making Enter Key in Directory List Box Act Like Double-Click

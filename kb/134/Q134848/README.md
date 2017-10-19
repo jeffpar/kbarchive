@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134848: Reserving Multiple Drive Letters Causes Multiple Drives in UI"
-permalink: kb/134/Q134848/
+permalink: /kb/134/Q134848/
 ---
 
 ## Q134848: Reserving Multiple Drive Letters Causes Multiple Drives in UI

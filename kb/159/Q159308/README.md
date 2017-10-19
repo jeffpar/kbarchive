@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159308: XFOR: DirSync Names Disappearing"
-permalink: kb/159/Q159308/
+permalink: /kb/159/Q159308/
 ---
 
 ## Q159308: XFOR: DirSync Names Disappearing

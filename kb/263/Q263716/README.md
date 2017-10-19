@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263716: Internet Services Manager (HTML) Not Available in Windows 2000"
-permalink: kb/263/Q263716/
+permalink: /kb/263/Q263716/
 ---
 
 ## Q263716: Internet Services Manager (HTML) Not Available in Windows 2000

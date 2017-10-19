@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135536: FIX: C2985 Error When Template Class Has Static Data Member"
-permalink: kb/135/Q135536/
+permalink: /kb/135/Q135536/
 ---
 
 ## Q135536: FIX: C2985 Error When Template Class Has Static Data Member

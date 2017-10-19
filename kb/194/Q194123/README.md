@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194123: XADM: KMS Enrollment Messages Stay in System Attendant Mailbox"
-permalink: kb/194/Q194123/
+permalink: /kb/194/Q194123/
 ---
 
 ## Q194123: XADM: KMS Enrollment Messages Stay in System Attendant Mailbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303039: Links 2001: Error Message: Access Violation; D3Dim700! (+0xE386)"
-permalink: kb/303/Q303039/
+permalink: /kb/303/Q303039/
 ---
 
 ## Q303039: Links 2001: Error Message: Access Violation; D3Dim700! (+0xE386)

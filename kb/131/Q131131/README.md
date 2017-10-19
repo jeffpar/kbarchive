@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131131: Winlogon Memory Leak Caused by SNMP Components"
-permalink: kb/131/Q131131/
+permalink: /kb/131/Q131131/
 ---
 
 ## Q131131: Winlogon Memory Leak Caused by SNMP Components

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200259: XCON: Event ID 9156 from the Exchange Server 5.5 MTA"
-permalink: kb/200/Q200259/
+permalink: /kb/200/Q200259/
 ---
 
 ## Q200259: XCON: Event ID 9156 from the Exchange Server 5.5 MTA

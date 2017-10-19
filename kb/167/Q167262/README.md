@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167262: PRB: Unable to Open User Login File"
-permalink: kb/167/Q167262/
+permalink: /kb/167/Q167262/
 ---
 
 ## Q167262: PRB: Unable to Open User Login File

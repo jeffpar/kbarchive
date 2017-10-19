@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302918: &quot;Program.exe not found&quot; Error When Launching Internet Explorer A"
-permalink: kb/302/Q302918/
+permalink: /kb/302/Q302918/
 ---
 
 ## Q302918: &quot;Program.exe not found&quot; Error When Launching Internet Explorer A

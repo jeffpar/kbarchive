@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84880: Troubleshooting Tips for &quot;Wrong Disc in the CD-ROM&quot; Error"
-permalink: kb/084/Q84880/
+permalink: /kb/084/Q84880/
 ---
 
 ## Q84880: Troubleshooting Tips for &quot;Wrong Disc in the CD-ROM&quot; Error

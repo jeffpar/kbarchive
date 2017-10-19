@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146684: XCON: Administrator Cannot Adjust the Filenames of Attachments"
-permalink: kb/146/Q146684/
+permalink: /kb/146/Q146684/
 ---
 
 ## Q146684: XCON: Administrator Cannot Adjust the Filenames of Attachments

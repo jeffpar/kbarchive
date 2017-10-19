@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297989: PRB: Configured Identity Is Incorrect for IWAM Account"
-permalink: kb/297/Q297989/
+permalink: /kb/297/Q297989/
 ---
 
 ## Q297989: PRB: Configured Identity Is Incorrect for IWAM Account

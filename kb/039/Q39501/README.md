@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39501: Simple Example Using _bios_serialcom()"
-permalink: kb/039/Q39501/
+permalink: /kb/039/Q39501/
 ---
 
 ## Q39501: Simple Example Using _bios_serialcom()

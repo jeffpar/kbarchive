@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70047: Null Modem Connector Settings in Terminal"
-permalink: kb/070/Q70047/
+permalink: /kb/070/Q70047/
 ---
 
 ## Q70047: Null Modem Connector Settings in Terminal

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260196: XCON: Cannot Delete X.400 Connector"
-permalink: kb/260/Q260196/
+permalink: /kb/260/Q260196/
 ---
 
 ## Q260196: XCON: Cannot Delete X.400 Connector

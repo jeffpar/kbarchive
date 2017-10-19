@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185203: SPOOLSS Hangs When Printing a File With a Corrupted EMF Record"
-permalink: kb/185/Q185203/
+permalink: /kb/185/Q185203/
 ---
 
 ## Q185203: SPOOLSS Hangs When Printing a File With a Corrupted EMF Record

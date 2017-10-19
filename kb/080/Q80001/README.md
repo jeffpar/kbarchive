@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80001: WRQ Inc. Reflection Network Series and MS-DOS"
-permalink: kb/080/Q80001/
+permalink: /kb/080/Q80001/
 ---
 
 ## Q80001: WRQ Inc. Reflection Network Series and MS-DOS

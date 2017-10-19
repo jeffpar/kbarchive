@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85656: HP ThinkJet Is Missing Euro FanFold Paper Size"
-permalink: kb/085/Q85656/
+permalink: /kb/085/Q85656/
 ---
 
 ## Q85656: HP ThinkJet Is Missing Euro FanFold Paper Size

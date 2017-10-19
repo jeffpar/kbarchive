@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122322: Extra Characters Added to DNS Name Query"
-permalink: kb/122/Q122322/
+permalink: /kb/122/Q122322/
 ---
 
 ## Q122322: Extra Characters Added to DNS Name Query

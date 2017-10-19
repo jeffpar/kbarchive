@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238911: XADM: Delegate Stops Receiving Meeting Requests"
-permalink: kb/238/Q238911/
+permalink: /kb/238/Q238911/
 ---
 
 ## Q238911: XADM: Delegate Stops Receiving Meeting Requests

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104195: SET Command May Truncate the List of Environment Variables"
-permalink: kb/104/Q104195/
+permalink: /kb/104/Q104195/
 ---
 
 ## Q104195: SET Command May Truncate the List of Environment Variables

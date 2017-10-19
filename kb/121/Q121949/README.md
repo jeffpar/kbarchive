@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121949: INFO: MFC OLE Classes Do Not Support &quot;Embed in self&quot;"
-permalink: kb/121/Q121949/
+permalink: /kb/121/Q121949/
 ---
 
 ## Q121949: INFO: MFC OLE Classes Do Not Support &quot;Embed in self&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157485: Taskbar Leaves Trail on Programs with Auto Hide Enabled"
-permalink: kb/157/Q157485/
+permalink: /kb/157/Q157485/
 ---
 
 ## Q157485: Taskbar Leaves Trail on Programs with Auto Hide Enabled

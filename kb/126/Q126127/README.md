@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126127: Network Bindings Not Displayed Correctly for a Protocol"
-permalink: kb/126/Q126127/
+permalink: /kb/126/Q126127/
 ---
 
 ## Q126127: Network Bindings Not Displayed Correctly for a Protocol

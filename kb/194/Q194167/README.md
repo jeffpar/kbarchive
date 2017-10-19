@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194167: Encarta: Description of Compound Interest InterActivity"
-permalink: kb/194/Q194167/
+permalink: /kb/194/Q194167/
 ---
 
 ## Q194167: Encarta: Description of Compound Interest InterActivity

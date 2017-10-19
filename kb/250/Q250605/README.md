@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250605: MSB Bugs: Program Stops Responding After You Type Your Name"
-permalink: kb/250/Q250605/
+permalink: /kb/250/Q250605/
 ---
 
 ## Q250605: MSB Bugs: Program Stops Responding After You Type Your Name

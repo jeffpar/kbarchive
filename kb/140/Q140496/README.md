@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140496: INF: SQLColAttributes Clarification in ODBC 2.10b SDK RELNOTE2"
-permalink: kb/140/Q140496/
+permalink: /kb/140/Q140496/
 ---
 
 ## Q140496: INF: SQLColAttributes Clarification in ODBC 2.10b SDK RELNOTE2

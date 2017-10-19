@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160831: FP: Frames Wizard Doesn't Confirm Completion"
-permalink: kb/160/Q160831/
+permalink: /kb/160/Q160831/
 ---
 
 ## Q160831: FP: Frames Wizard Doesn't Confirm Completion

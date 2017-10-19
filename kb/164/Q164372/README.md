@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164372: FIX: More Than One Keyboard Letter Will Activate Some Hot Keys"
-permalink: kb/164/Q164372/
+permalink: /kb/164/Q164372/
 ---
 
 ## Q164372: FIX: More Than One Keyboard Letter Will Activate Some Hot Keys

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146589: Group By With Multiple Entries Doesn't Repaint Bottom of Grid"
-permalink: kb/146/Q146589/
+permalink: /kb/146/Q146589/
 ---
 
 ## Q146589: Group By With Multiple Entries Doesn't Repaint Bottom of Grid

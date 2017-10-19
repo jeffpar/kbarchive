@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166136: PRB: User Without Administrator Rights Can Edit Existing Records"
-permalink: kb/166/Q166136/
+permalink: /kb/166/Q166136/
 ---
 
 ## Q166136: PRB: User Without Administrator Rights Can Edit Existing Records

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121321: DOC:CDocTemplate::CreateNewFrame() Won't Make New CDocument"
-permalink: kb/121/Q121321/
+permalink: /kb/121/Q121321/
 ---
 
 ## Q121321: DOC:CDocTemplate::CreateNewFrame() Won't Make New CDocument

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139845: Long File Names Not Displayed During Compression"
-permalink: kb/139/Q139845/
+permalink: /kb/139/Q139845/
 ---
 
 ## Q139845: Long File Names Not Displayed During Compression

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88182: Windows: PC Complete Scanner May Not Release COM Port"
-permalink: kb/088/Q88182/
+permalink: /kb/088/Q88182/
 ---
 
 ## Q88182: Windows: PC Complete Scanner May Not Release COM Port

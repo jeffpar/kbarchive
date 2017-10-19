@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141317: How to Change the Color of Edit Boxes on a Wizard Form"
-permalink: kb/141/Q141317/
+permalink: /kb/141/Q141317/
 ---
 
 ## Q141317: How to Change the Color of Edit Boxes on a Wizard Form

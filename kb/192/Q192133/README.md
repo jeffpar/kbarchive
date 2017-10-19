@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192133: Cannot Sign Up for MSN Using a Credit Card Expiring After 2000"
-permalink: kb/192/Q192133/
+permalink: /kb/192/Q192133/
 ---
 
 ## Q192133: Cannot Sign Up for MSN Using a Credit Card Expiring After 2000

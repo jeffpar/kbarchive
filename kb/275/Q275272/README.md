@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275272: XFOR: Event 56106 Occurs When Using SNADS or PROFS Connectors"
-permalink: kb/275/Q275272/
+permalink: /kb/275/Q275272/
 ---
 
 ## Q275272: XFOR: Event 56106 Occurs When Using SNADS or PROFS Connectors

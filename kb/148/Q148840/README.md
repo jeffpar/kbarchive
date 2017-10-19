@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148840: Err Msg: Encarta Cannot Find the Files Needed to Start"
-permalink: kb/148/Q148840/
+permalink: /kb/148/Q148840/
 ---
 
 ## Q148840: Err Msg: Encarta Cannot Find the Files Needed to Start

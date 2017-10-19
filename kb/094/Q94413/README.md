@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94413: Setup Checks for 6 Free Entries in the Root Directory"
-permalink: kb/094/Q94413/
+permalink: /kb/094/Q94413/
 ---
 
 ## Q94413: Setup Checks for 6 Free Entries in the Root Directory

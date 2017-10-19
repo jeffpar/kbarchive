@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229739: Dllhost.exe Shutdown Causes SQL Server to Hang"
-permalink: kb/229/Q229739/
+permalink: /kb/229/Q229739/
 ---
 
 ## Q229739: Dllhost.exe Shutdown Causes SQL Server to Hang

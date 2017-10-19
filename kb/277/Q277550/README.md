@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277550: Cluster Service Attempts to Restart Resources"
-permalink: kb/277/Q277550/
+permalink: /kb/277/Q277550/
 ---
 
 ## Q277550: Cluster Service Attempts to Restart Resources

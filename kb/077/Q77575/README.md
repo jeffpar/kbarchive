@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77575: Flight Simulator 4.0 Does Not Operate on Outbound Laptop"
-permalink: kb/077/Q77575/
+permalink: /kb/077/Q77575/
 ---
 
 ## Q77575: Flight Simulator 4.0 Does Not Operate on Outbound Laptop

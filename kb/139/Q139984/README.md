@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139984: Windows NT Hangs Running Display Test from Control Panel"
-permalink: kb/139/Q139984/
+permalink: /kb/139/Q139984/
 ---
 
 ## Q139984: Windows NT Hangs Running Display Test from Control Panel

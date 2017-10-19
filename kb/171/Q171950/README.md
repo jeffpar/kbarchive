@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171950: Buffer Pool Error 685 Printing Two Large Jobs Simultaneously"
-permalink: kb/171/Q171950/
+permalink: /kb/171/Q171950/
 ---
 
 ## Q171950: Buffer Pool Error 685 Printing Two Large Jobs Simultaneously

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172966: SNA Manager Fails to Open Backup Configuration File"
-permalink: kb/172/Q172966/
+permalink: /kb/172/Q172966/
 ---
 
 ## Q172966: SNA Manager Fails to Open Backup Configuration File

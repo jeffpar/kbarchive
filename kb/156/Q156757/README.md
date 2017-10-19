@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156757: How to Dynamically Populate a Select Control with IDC"
-permalink: kb/156/Q156757/
+permalink: /kb/156/Q156757/
 ---
 
 ## Q156757: How to Dynamically Populate a Select Control with IDC

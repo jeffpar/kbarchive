@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47618: Mac Wkst: No Address Button in Send Form with Simple User List"
-permalink: kb/047/Q47618/
+permalink: /kb/047/Q47618/
 ---
 
 ## Q47618: Mac Wkst: No Address Button in Send Form with Simple User List

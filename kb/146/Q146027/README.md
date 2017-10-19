@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146027: XCLN: Font Changes May Truncate Data"
-permalink: kb/146/Q146027/
+permalink: /kb/146/Q146027/
 ---
 
 ## Q146027: XCLN: Font Changes May Truncate Data

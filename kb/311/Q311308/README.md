@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311308: PRB: All Users Do Not Have Access to Installed Application"
-permalink: kb/311/Q311308/
+permalink: /kb/311/Q311308/
 ---
 
 ## Q311308: PRB: All Users Do Not Have Access to Installed Application

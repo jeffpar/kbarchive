@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256181: Logo FAQ: Exposing Keyboard Focus in Remote-Control Utilities?"
-permalink: kb/256/Q256181/
+permalink: /kb/256/Q256181/
 ---
 
 ## Q256181: Logo FAQ: Exposing Keyboard Focus in Remote-Control Utilities?

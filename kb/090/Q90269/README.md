@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90269: NetWare Printing in Windows for Workgroups"
-permalink: kb/090/Q90269/
+permalink: /kb/090/Q90269/
 ---
 
 ## Q90269: NetWare Printing in Windows for Workgroups

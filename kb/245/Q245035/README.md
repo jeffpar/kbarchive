@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245035: Logon Script Does Not Run Remotely Using RAS Dial-up Connection"
-permalink: kb/245/Q245035/
+permalink: /kb/245/Q245035/
 ---
 
 ## Q245035: Logon Script Does Not Run Remotely Using RAS Dial-up Connection

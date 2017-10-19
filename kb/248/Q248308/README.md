@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248308: Fighter Ace II: Bombs Do Not Explode When You Drop Them"
-permalink: kb/248/Q248308/
+permalink: /kb/248/Q248308/
 ---
 
 ## Q248308: Fighter Ace II: Bombs Do Not Explode When You Drop Them

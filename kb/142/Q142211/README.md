@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142211: BUG: Blob Persistent Data Incorrect for Ported OLE Control"
-permalink: kb/142/Q142211/
+permalink: /kb/142/Q142211/
 ---
 
 ## Q142211: BUG: Blob Persistent Data Incorrect for Ported OLE Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197019: WD97: How to Convert Between IBM's DCF Text Processor and Word"
-permalink: kb/197/Q197019/
+permalink: /kb/197/Q197019/
 ---
 
 ## Q197019: WD97: How to Convert Between IBM's DCF Text Processor and Word

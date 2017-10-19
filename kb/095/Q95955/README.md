@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95955: Configuring MSCDEX for Multiple CD-ROM Drives"
-permalink: kb/095/Q95955/
+permalink: /kb/095/Q95955/
 ---
 
 ## Q95955: Configuring MSCDEX for Multiple CD-ROM Drives

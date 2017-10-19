@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176049: FIX: Run-time Error &quot;This Array is Fixed or Temporarily Locked&quot;"
-permalink: kb/176/Q176049/
+permalink: /kb/176/Q176049/
 ---
 
 ## Q176049: FIX: Run-time Error &quot;This Array is Fixed or Temporarily Locked&quot;

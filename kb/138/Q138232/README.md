@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138232: XCLN: Mail Message Time Stamps Off by 1 or More Hours"
-permalink: kb/138/Q138232/
+permalink: /kb/138/Q138232/
 ---
 
 ## Q138232: XCLN: Mail Message Time Stamps Off by 1 or More Hours

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264610: PRB: CDO Text Property Does Not Accept CR or LF"
-permalink: kb/264/Q264610/
+permalink: /kb/264/Q264610/
 ---
 
 ## Q264610: PRB: CDO Text Property Does Not Accept CR or LF

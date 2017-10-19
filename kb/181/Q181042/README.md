@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181042: SMS: DBG Entries in Sched.log File Recorded by Scheduler"
-permalink: kb/181/Q181042/
+permalink: /kb/181/Q181042/
 ---
 
 ## Q181042: SMS: DBG Entries in Sched.log File Recorded by Scheduler

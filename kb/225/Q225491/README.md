@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225491: RRAS Server Does Not Send FramedIPAddress in RADIUS Packet"
-permalink: kb/225/Q225491/
+permalink: /kb/225/Q225491/
 ---
 
 ## Q225491: RRAS Server Does Not Send FramedIPAddress in RADIUS Packet

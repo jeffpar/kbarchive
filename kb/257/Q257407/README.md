@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257407: XCLN: Web Publishing Error Message When Creating Outlook Team Fo"
-permalink: kb/257/Q257407/
+permalink: /kb/257/Q257407/
 ---
 
 ## Q257407: XCLN: Web Publishing Error Message When Creating Outlook Team Fo

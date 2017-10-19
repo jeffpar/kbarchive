@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298033: SMS: Can't Use Remote Control w. Unsupported Database Collation"
-permalink: kb/298/Q298033/
+permalink: /kb/298/Q298033/
 ---
 
 ## Q298033: SMS: Can't Use Remote Control w. Unsupported Database Collation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199114: SMS: How to Configure Traveling Mode on Client Computers"
-permalink: kb/199/Q199114/
+permalink: /kb/199/Q199114/
 ---
 
 ## Q199114: SMS: How to Configure Traveling Mode on Client Computers

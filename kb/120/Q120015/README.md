@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120015: Windows NT RAS: X.25 Script for Sita Group Network Services"
-permalink: kb/120/Q120015/
+permalink: /kb/120/Q120015/
 ---
 
 ## Q120015: Windows NT RAS: X.25 Script for Sita Group Network Services

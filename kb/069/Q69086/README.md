@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69086: EMM386 DMA Buffer and SCSI Devices"
-permalink: kb/069/Q69086/
+permalink: /kb/069/Q69086/
 ---
 
 ## Q69086: EMM386 DMA Buffer and SCSI Devices

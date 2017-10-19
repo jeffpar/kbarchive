@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104428: Satisfaxtion 400 Internal Modem Does Not Operate in Windows NT"
-permalink: kb/104/Q104428/
+permalink: /kb/104/Q104428/
 ---
 
 ## Q104428: Satisfaxtion 400 Internal Modem Does Not Operate in Windows NT

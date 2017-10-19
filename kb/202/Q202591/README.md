@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202591: FIX: Developer Studio Source and Dialog Editors Respond Slowly"
-permalink: kb/202/Q202591/
+permalink: /kb/202/Q202591/
 ---
 
 ## Q202591: FIX: Developer Studio Source and Dialog Editors Respond Slowly

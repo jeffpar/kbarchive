@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179757: PRB: &quot;Set Next Statement&quot; Does Not Work During SQL Debugging"
-permalink: kb/179/Q179757/
+permalink: /kb/179/Q179757/
 ---
 
 ## Q179757: PRB: &quot;Set Next Statement&quot; Does Not Work During SQL Debugging

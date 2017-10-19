@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179561: SMS: Invproc Stops Responding on Long Raw File Records"
-permalink: kb/179/Q179561/
+permalink: /kb/179/Q179561/
 ---
 
 ## Q179561: SMS: Invproc Stops Responding on Long Raw File Records

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261290: 3270 Applet Causes Access Violation Error Message in Win3270.exe"
-permalink: kb/261/Q261290/
+permalink: /kb/261/Q261290/
 ---
 
 ## Q261290: 3270 Applet Causes Access Violation Error Message in Win3270.exe

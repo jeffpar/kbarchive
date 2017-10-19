@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216913: BIOS Date Value Does Not Immediately Update on January 1, 2000"
-permalink: kb/216/Q216913/
+permalink: /kb/216/Q216913/
 ---
 
 ## Q216913: BIOS Date Value Does Not Immediately Update on January 1, 2000

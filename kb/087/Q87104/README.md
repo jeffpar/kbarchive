@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87104: BUG: Repeated EQUIVALENCE's Cause GP Fault During Compile"
-permalink: kb/087/Q87104/
+permalink: /kb/087/Q87104/
 ---
 
 ## Q87104: BUG: Repeated EQUIVALENCE's Cause GP Fault During Compile

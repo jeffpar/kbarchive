@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130548: Tentative Appointment Doesn't Show in Date Navigator"
-permalink: kb/130/Q130548/
+permalink: /kb/130/Q130548/
 ---
 
 ## Q130548: Tentative Appointment Doesn't Show in Date Navigator

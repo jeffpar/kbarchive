@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131156: XCLN: Text Displayed in Column Header When Width Set to 0"
-permalink: kb/131/Q131156/
+permalink: /kb/131/Q131156/
 ---
 
 ## Q131156: XCLN: Text Displayed in Column Header When Width Set to 0

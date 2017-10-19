@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174351: XFOR: How to Configure Exchange with Secondary SMTP Addresses"
-permalink: kb/174/Q174351/
+permalink: /kb/174/Q174351/
 ---
 
 ## Q174351: XFOR: How to Configure Exchange with Secondary SMTP Addresses

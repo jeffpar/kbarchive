@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134762: STOP Msg: 0x0000007B Upgrading Compaq w/ Integrated SCSI-2"
-permalink: kb/134/Q134762/
+permalink: /kb/134/Q134762/
 ---
 
 ## Q134762: STOP Msg: 0x0000007B Upgrading Compaq w/ Integrated SCSI-2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133720: PC Ext: External Processes Mail During F1, F2, and F3 Screens"
-permalink: kb/133/Q133720/
+permalink: /kb/133/Q133720/
 ---
 
 ## Q133720: PC Ext: External Processes Mail During F1, F2, and F3 Screens

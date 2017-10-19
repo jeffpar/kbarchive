@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236300: XFOR: Notes Migration Wizard Only Looks at Names.nsf"
-permalink: kb/236/Q236300/
+permalink: /kb/236/Q236300/
 ---
 
 ## Q236300: XFOR: Notes Migration Wizard Only Looks at Names.nsf

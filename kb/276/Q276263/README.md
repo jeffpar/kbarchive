@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276263: XFOR: Notes Connector Shuts Down with Encrypted Attachments"
-permalink: kb/276/Q276263/
+permalink: /kb/276/Q276263/
 ---
 
 ## Q276263: XFOR: Notes Connector Shuts Down with Encrypted Attachments

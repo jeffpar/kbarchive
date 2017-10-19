@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195810: Default Alias Name is Incorrect if Folder Name is DBCS"
-permalink: kb/195/Q195810/
+permalink: /kb/195/Q195810/
 ---
 
 ## Q195810: Default Alias Name is Incorrect if Folder Name is DBCS

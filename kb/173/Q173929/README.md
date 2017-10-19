@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173929: WD97: Frame Converted from Text Box Is Gray When Header Is Open"
-permalink: kb/173/Q173929/
+permalink: /kb/173/Q173929/
 ---
 
 ## Q173929: WD97: Frame Converted from Text Box Is Gray When Header Is Open

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172375: HOWTO: Undo Updates for a Single Row with CancelBatch"
-permalink: kb/172/Q172375/
+permalink: /kb/172/Q172375/
 ---
 
 ## Q172375: HOWTO: Undo Updates for a Single Row with CancelBatch

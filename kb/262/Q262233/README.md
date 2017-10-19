@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262233: IIS: How to Configure Basic/Clear Text Authentication for IIS5"
-permalink: kb/262/Q262233/
+permalink: /kb/262/Q262233/
 ---
 
 ## Q262233: IIS: How to Configure Basic/Clear Text Authentication for IIS5

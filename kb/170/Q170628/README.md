@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170628: MTG: MTA Error: Mailbag Truncated by Up_retries"
-permalink: kb/170/Q170628/
+permalink: /kb/170/Q170628/
 ---
 
 ## Q170628: MTG: MTA Error: Mailbag Truncated by Up_retries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109795: Reinstalling the &quot;Microsoft At Work PC Fax on FAX:&quot; Driver"
-permalink: kb/109/Q109795/
+permalink: /kb/109/Q109795/
 ---
 
 ## Q109795: Reinstalling the &quot;Microsoft At Work PC Fax on FAX:&quot; Driver

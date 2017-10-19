@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241874: XCON: MIXER is Triggered Only for Transiting Mail"
-permalink: kb/241/Q241874/
+permalink: /kb/241/Q241874/
 ---
 
 ## Q241874: XCON: MIXER is Triggered Only for Transiting Mail

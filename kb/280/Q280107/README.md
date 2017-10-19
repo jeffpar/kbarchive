@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280107: MMC Shows &quot;Unknown&quot; Status When You Load Multiple ISAPI Filters"
-permalink: kb/280/Q280107/
+permalink: /kb/280/Q280107/
 ---
 
 ## Q280107: MMC Shows &quot;Unknown&quot; Status When You Load Multiple ISAPI Filters

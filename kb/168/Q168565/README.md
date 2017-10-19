@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168565: SMS: Child Site Attachment May Result in Incorrect Inventory"
-permalink: kb/168/Q168565/
+permalink: /kb/168/Q168565/
 ---
 
 ## Q168565: SMS: Child Site Attachment May Result in Incorrect Inventory

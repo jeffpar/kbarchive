@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114449: Windows 3.11 Directory Listing for Disk 2 (3.5 Inch 1.44 MB)"
-permalink: kb/114/Q114449/
+permalink: /kb/114/Q114449/
 ---
 
 ## Q114449: Windows 3.11 Directory Listing for Disk 2 (3.5 Inch 1.44 MB)

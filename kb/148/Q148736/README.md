@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148736: SNA EIS Guide:Open(SSCP)Error 0x1009, 0x100B Not Documented"
-permalink: kb/148/Q148736/
+permalink: /kb/148/Q148736/
 ---
 
 ## Q148736: SNA EIS Guide:Open(SSCP)Error 0x1009, 0x100B Not Documented

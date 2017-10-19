@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83897: Err Msg: Fatal Disk Error (with HP Advanced Link)"
-permalink: kb/083/Q83897/
+permalink: /kb/083/Q83897/
 ---
 
 ## Q83897: Err Msg: Fatal Disk Error (with HP Advanced Link)

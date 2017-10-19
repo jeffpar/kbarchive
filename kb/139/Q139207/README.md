@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139207: S3 Driver Doesn't Correctly Support 72Hz on Some IBM PS/2 Models"
-permalink: kb/139/Q139207/
+permalink: /kb/139/Q139207/
 ---
 
 ## Q139207: S3 Driver Doesn't Correctly Support 72Hz on Some IBM PS/2 Models

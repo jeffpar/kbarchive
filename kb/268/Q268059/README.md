@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268059: INFO: Using Macro Substitution with Index Commands"
-permalink: kb/268/Q268059/
+permalink: /kb/268/Q268059/
 ---
 
 ## Q268059: INFO: Using Macro Substitution with Index Commands

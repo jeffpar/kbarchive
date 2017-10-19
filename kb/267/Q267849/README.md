@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267849: PRB: Using Color Cursors in a Visual Basic Application"
-permalink: kb/267/Q267849/
+permalink: /kb/267/Q267849/
 ---
 
 ## Q267849: PRB: Using Color Cursors in a Visual Basic Application

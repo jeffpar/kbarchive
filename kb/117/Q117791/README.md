@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117791: Err Msg w/NetWare Scheduler: The Password is Invalid for..."
-permalink: kb/117/Q117791/
+permalink: /kb/117/Q117791/
 ---
 
 ## Q117791: Err Msg w/NetWare Scheduler: The Password is Invalid for...

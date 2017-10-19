@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127077: PC Win: Code Page Translation Incorrect for Custom Templates"
-permalink: kb/127/Q127077/
+permalink: /kb/127/Q127077/
 ---
 
 ## Q127077: PC Win: Code Page Translation Incorrect for Custom Templates

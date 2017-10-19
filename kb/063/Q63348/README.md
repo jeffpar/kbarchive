@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63348: DataProducts SPG 8050 Printer and Windows"
-permalink: kb/063/Q63348/
+permalink: /kb/063/Q63348/
 ---
 
 ## Q63348: DataProducts SPG 8050 Printer and Windows

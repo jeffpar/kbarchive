@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125379: 1995 Windows Encarta: Media Gallery Truncates Drop-Down Menu"
-permalink: kb/125/Q125379/
+permalink: /kb/125/Q125379/
 ---
 
 ## Q125379: 1995 Windows Encarta: Media Gallery Truncates Drop-Down Menu

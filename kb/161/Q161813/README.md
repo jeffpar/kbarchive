@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161813: XFOR: SMTP Headers Visible in MSMail Clients After SP3 Install"
-permalink: kb/161/Q161813/
+permalink: /kb/161/Q161813/
 ---
 
 ## Q161813: XFOR: SMTP Headers Visible in MSMail Clients After SP3 Install

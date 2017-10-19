@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112549: Two PDCs in One Domain"
-permalink: kb/112/Q112549/
+permalink: /kb/112/Q112549/
 ---
 
 ## Q112549: Two PDCs in One Domain

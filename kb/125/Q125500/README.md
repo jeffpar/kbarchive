@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125500: Program Item Changes for Programs in Directory with Spaces"
-permalink: kb/125/Q125500/
+permalink: /kb/125/Q125500/
 ---
 
 ## Q125500: Program Item Changes for Programs in Directory with Spaces

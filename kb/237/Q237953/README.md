@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237953: XADM: Erroneous -1018 Error Returned During Online Backup"
-permalink: kb/237/Q237953/
+permalink: /kb/237/Q237953/
 ---
 
 ## Q237953: XADM: Erroneous -1018 Error Returned During Online Backup

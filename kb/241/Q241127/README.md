@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241127: ASP Uses SYSTEM Account to Release User Object"
-permalink: kb/241/Q241127/
+permalink: /kb/241/Q241127/
 ---
 
 ## Q241127: ASP Uses SYSTEM Account to Release User Object

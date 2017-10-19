@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254992: XCON: MIXER Encapsulates X.400 Addr. in the Wrong SMTP Addr."
-permalink: kb/254/Q254992/
+permalink: /kb/254/Q254992/
 ---
 
 ## Q254992: XCON: MIXER Encapsulates X.400 Addr. in the Wrong SMTP Addr.

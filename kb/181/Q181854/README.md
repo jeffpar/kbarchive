@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181854: FILE: VB5cli.exe Fixes VB 5.0 Control Installation Problem"
-permalink: kb/181/Q181854/
+permalink: /kb/181/Q181854/
 ---
 
 ## Q181854: FILE: VB5cli.exe Fixes VB 5.0 Control Installation Problem

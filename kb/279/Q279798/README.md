@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279798: XADM: Information Store Service Hangs After You Apply SP4"
-permalink: kb/279/Q279798/
+permalink: /kb/279/Q279798/
 ---
 
 ## Q279798: XADM: Information Store Service Hangs After You Apply SP4

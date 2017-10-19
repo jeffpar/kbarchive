@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153797: FIX: Memory Leak with ODBC Driver Manager During Connect"
-permalink: kb/153/Q153797/
+permalink: /kb/153/Q153797/
 ---
 
 ## Q153797: FIX: Memory Leak with ODBC Driver Manager During Connect

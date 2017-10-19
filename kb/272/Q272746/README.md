@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272746: MSN Companion Keyboard doesn't work"
-permalink: kb/272/Q272746/
+permalink: /kb/272/Q272746/
 ---
 
 ## Q272746: MSN Companion Keyboard doesn't work

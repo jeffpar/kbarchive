@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238854: SMS: User Wizard Adds Local Groups in Other Local Groups"
-permalink: kb/238/Q238854/
+permalink: /kb/238/Q238854/
 ---
 
 ## Q238854: SMS: User Wizard Adds Local Groups in Other Local Groups

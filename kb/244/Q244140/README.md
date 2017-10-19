@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244140: BUG: Visual Basic Application Using HtmlHelp API Crashes"
-permalink: kb/244/Q244140/
+permalink: /kb/244/Q244140/
 ---
 
 ## Q244140: BUG: Visual Basic Application Using HtmlHelp API Crashes

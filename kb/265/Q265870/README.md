@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265870: XADM: Error Message: The Command Lodctr Dsactrs.ini Failed..."
-permalink: kb/265/Q265870/
+permalink: /kb/265/Q265870/
 ---
 
 ## Q265870: XADM: Error Message: The Command Lodctr Dsactrs.ini Failed...

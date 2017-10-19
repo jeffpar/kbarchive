@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109445: CONN: Schedule+ for Windows Cannot Save File Attachments"
-permalink: kb/109/Q109445/
+permalink: /kb/109/Q109445/
 ---
 
 ## Q109445: CONN: Schedule+ for Windows Cannot Save File Attachments

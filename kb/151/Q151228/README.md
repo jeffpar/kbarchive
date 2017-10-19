@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151228: XFOR: Microsoft Mail Connector and Duplicate Serial Numbers"
-permalink: kb/151/Q151228/
+permalink: /kb/151/Q151228/
 ---
 
 ## Q151228: XFOR: Microsoft Mail Connector and Duplicate Serial Numbers

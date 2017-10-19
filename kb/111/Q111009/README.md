@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111009: Accessing Keywords in a Viewer Title"
-permalink: kb/111/Q111009/
+permalink: /kb/111/Q111009/
 ---
 
 ## Q111009: Accessing Keywords in a Viewer Title

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281526: Browsing and Downloading Questions: MSN Companion"
-permalink: kb/281/Q281526/
+permalink: /kb/281/Q281526/
 ---
 
 ## Q281526: Browsing and Downloading Questions: MSN Companion

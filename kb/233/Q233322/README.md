@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233322: Computer Hangs at Shutdown If Anti-Virus Software Is Installed"
-permalink: kb/233/Q233322/
+permalink: /kb/233/Q233322/
 ---
 
 ## Q233322: Computer Hangs at Shutdown If Anti-Virus Software Is Installed

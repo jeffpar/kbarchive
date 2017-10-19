@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235521: BUG: Can't Configure Data Link for OLE DB Provider"
-permalink: kb/235/Q235521/
+permalink: /kb/235/Q235521/
 ---
 
 ## Q235521: BUG: Can't Configure Data Link for OLE DB Provider

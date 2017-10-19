@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115763: VFW v1.1 DK &quot;ICM_DRAW_START_PLAY&quot; Message"
-permalink: kb/115/Q115763/
+permalink: /kb/115/Q115763/
 ---
 
 ## Q115763: VFW v1.1 DK &quot;ICM_DRAW_START_PLAY&quot; Message

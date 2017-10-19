@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251000: WFP Warning Appears While Installing BackOffice Server 4.5"
-permalink: kb/251/Q251000/
+permalink: /kb/251/Q251000/
 ---
 
 ## Q251000: WFP Warning Appears While Installing BackOffice Server 4.5

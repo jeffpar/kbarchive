@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175958: XFOR: NDR When You Send Msg over MS MAIL Connector"
-permalink: kb/175/Q175958/
+permalink: /kb/175/Q175958/
 ---
 
 ## Q175958: XFOR: NDR When You Send Msg over MS MAIL Connector

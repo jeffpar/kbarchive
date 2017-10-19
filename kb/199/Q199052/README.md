@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199052: The My Briefcase Icon Is Displayed as a Folder Icon"
-permalink: kb/199/Q199052/
+permalink: /kb/199/Q199052/
 ---
 
 ## Q199052: The My Briefcase Icon Is Displayed as a Folder Icon

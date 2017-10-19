@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103444: RAS Server 64 Port Limitation Information"
-permalink: kb/103/Q103444/
+permalink: /kb/103/Q103444/
 ---
 
 ## Q103444: RAS Server 64 Port Limitation Information

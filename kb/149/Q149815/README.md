@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149815: WordPad Error Message: Cannot Find the File"
-permalink: kb/149/Q149815/
+permalink: /kb/149/Q149815/
 ---
 
 ## Q149815: WordPad Error Message: Cannot Find the File

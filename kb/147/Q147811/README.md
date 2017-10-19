@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147811: HOWTO: Detect If Computer Has Sound Card That Plays Wave Audio"
-permalink: kb/147/Q147811/
+permalink: /kb/147/Q147811/
 ---
 
 ## Q147811: HOWTO: Detect If Computer Has Sound Card That Plays Wave Audio

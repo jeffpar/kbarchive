@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299028: Midtown Madness 2: Distorted Graphics with GeForce and 810 Cards"
-permalink: kb/299/Q299028/
+permalink: /kb/299/Q299028/
 ---
 
 ## Q299028: Midtown Madness 2: Distorted Graphics with GeForce and 810 Cards

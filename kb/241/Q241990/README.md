@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241990: Zone: Getting Started Page Loads When You Click Game Rooms Link"
-permalink: kb/241/Q241990/
+permalink: /kb/241/Q241990/
 ---
 
 ## Q241990: Zone: Getting Started Page Loads When You Click Game Rooms Link

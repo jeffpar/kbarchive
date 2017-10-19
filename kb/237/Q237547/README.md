@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237547: Backed-Up Files Not Listed When Viewing Catalog for Restore"
-permalink: kb/237/Q237547/
+permalink: /kb/237/Q237547/
 ---
 
 ## Q237547: Backed-Up Files Not Listed When Viewing Catalog for Restore

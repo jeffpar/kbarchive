@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177018: XFOR: Meeting Requests Sent Over Internet Mail Service Need RTF"
-permalink: kb/177/Q177018/
+permalink: /kb/177/Q177018/
 ---
 
 ## Q177018: XFOR: Meeting Requests Sent Over Internet Mail Service Need RTF

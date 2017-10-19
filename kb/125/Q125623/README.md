@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125623: ERROR: Could Not Load Language DLL _MIFGEN.DLL"
-permalink: kb/125/Q125623/
+permalink: /kb/125/Q125623/
 ---
 
 ## Q125623: ERROR: Could Not Load Language DLL _MIFGEN.DLL

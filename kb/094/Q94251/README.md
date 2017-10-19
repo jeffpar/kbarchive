@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94251: MISCO Software Catalog Refers to &quot;Windows 3.2&quot;"
-permalink: kb/094/Q94251/
+permalink: /kb/094/Q94251/
 ---
 
 ## Q94251: MISCO Software Catalog Refers to &quot;Windows 3.2&quot;

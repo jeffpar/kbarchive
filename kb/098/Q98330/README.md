@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98330: PC DB: 3.0a Mail Server Disk 3 [3.5, 720K; 5.25, 1.2 MB]"
-permalink: kb/098/Q98330/
+title: "Q98330: PC DB: 3.0a Mail Server Disk 3 &#91;3.5, 720K; 5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98330/
 ---
 
-## Q98330: PC DB: 3.0a Mail Server Disk 3 [3.5, 720K; 5.25, 1.2 MB]
+## Q98330: PC DB: 3.0a Mail Server Disk 3 &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
 	Article: Q98330
 	Product(s): Microsoft Mail For PC Networks

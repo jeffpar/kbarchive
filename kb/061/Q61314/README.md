@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61314: INFO: The Limit of Macro Expansion"
-permalink: kb/061/Q61314/
+permalink: /kb/061/Q61314/
 ---
 
 ## Q61314: INFO: The Limit of Macro Expansion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249806: STOP 0x0000001E Error Message on Windows NT 4.0 Terminal Server"
-permalink: kb/249/Q249806/
+permalink: /kb/249/Q249806/
 ---
 
 ## Q249806: STOP 0x0000001E Error Message on Windows NT 4.0 Terminal Server

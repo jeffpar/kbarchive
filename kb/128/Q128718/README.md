@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128718: PRB: Invalid Path or File Name Error on Novell Netware"
-permalink: kb/128/Q128718/
+permalink: /kb/128/Q128718/
 ---
 
 ## Q128718: PRB: Invalid Path or File Name Error on Novell Netware

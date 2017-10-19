@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266275: HIS 2000 Client LU6.2 Load Balancing Across SNA Server Services"
-permalink: kb/266/Q266275/
+permalink: /kb/266/Q266275/
 ---
 
 ## Q266275: HIS 2000 Client LU6.2 Load Balancing Across SNA Server Services

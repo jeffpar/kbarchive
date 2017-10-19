@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218474: SMS: UNC Package Source Cannot Contain Space Characters"
-permalink: kb/218/Q218474/
+permalink: /kb/218/Q218474/
 ---
 
 ## Q218474: SMS: UNC Package Source Cannot Contain Space Characters

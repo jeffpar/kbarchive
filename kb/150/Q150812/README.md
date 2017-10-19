@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150812: Stop Msg: Octopus Driver May Cause Stop 0x00000050"
-permalink: kb/150/Q150812/
+permalink: /kb/150/Q150812/
 ---
 
 ## Q150812: Stop Msg: Octopus Driver May Cause Stop 0x00000050

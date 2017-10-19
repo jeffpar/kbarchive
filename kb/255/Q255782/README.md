@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255782: HOWTO: Use ADO/ADOX to Modify Base Query of Access QueryDef"
-permalink: kb/255/Q255782/
+permalink: /kb/255/Q255782/
 ---
 
 ## Q255782: HOWTO: Use ADO/ADOX to Modify Base Query of Access QueryDef

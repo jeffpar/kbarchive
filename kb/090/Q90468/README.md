@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90468: Garbled Characters and Beeping in WFWG When Starting NetBEUI"
-permalink: kb/090/Q90468/
+permalink: /kb/090/Q90468/
 ---
 
 ## Q90468: Garbled Characters and Beeping in WFWG When Starting NetBEUI

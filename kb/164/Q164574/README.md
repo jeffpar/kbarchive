@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164574: LUA Pools Cannot Be Assigned to SNA 3.0 TN3270 Service"
-permalink: kb/164/Q164574/
+permalink: /kb/164/Q164574/
 ---
 
 ## Q164574: LUA Pools Cannot Be Assigned to SNA 3.0 TN3270 Service

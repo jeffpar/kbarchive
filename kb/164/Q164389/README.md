@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164389: FIX: ODBC Files Get Copied to Distribution Disks in VFP 3.0"
-permalink: kb/164/Q164389/
+permalink: /kb/164/Q164389/
 ---
 
 ## Q164389: FIX: ODBC Files Get Copied to Distribution Disks in VFP 3.0

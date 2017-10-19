@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187737: PRB: Meta Tag Properties Not Retrieved from a Query"
-permalink: kb/187/Q187737/
+permalink: /kb/187/Q187737/
 ---
 
 ## Q187737: PRB: Meta Tag Properties Not Retrieved from a Query

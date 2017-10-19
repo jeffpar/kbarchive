@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178311: XADM: Error Running ISINTEG on a Cluster Server"
-permalink: kb/178/Q178311/
+permalink: /kb/178/Q178311/
 ---
 
 ## Q178311: XADM: Error Running ISINTEG on a Cluster Server

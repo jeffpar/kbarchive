@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108609: BUG: SET MESSAGE WINDOW Command Not Working Correctly"
-permalink: kb/108/Q108609/
+permalink: /kb/108/Q108609/
 ---
 
 ## Q108609: BUG: SET MESSAGE WINDOW Command Not Working Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195460: Tutor Err Msg: Program Needs More Memory or Cannot Continue"
-permalink: kb/195/Q195460/
+permalink: /kb/195/Q195460/
 ---
 
 ## Q195460: Tutor Err Msg: Program Needs More Memory or Cannot Continue

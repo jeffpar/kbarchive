@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167005: XCLN: Forms Do Not Save Initial Text After Saving"
-permalink: kb/167/Q167005/
+permalink: /kb/167/Q167005/
 ---
 
 ## Q167005: XCLN: Forms Do Not Save Initial Text After Saving

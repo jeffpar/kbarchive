@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153607: Do-It-Yourself Guide: Cannot Enter Metric Measurements"
-permalink: kb/153/Q153607/
+permalink: /kb/153/Q153607/
 ---
 
 ## Q153607: Do-It-Yourself Guide: Cannot Enter Metric Measurements

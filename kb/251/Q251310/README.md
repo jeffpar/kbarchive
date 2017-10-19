@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251310: HOWTO: Exit Windows from Visual FoxPro"
-permalink: kb/251/Q251310/
+permalink: /kb/251/Q251310/
 ---
 
 ## Q251310: HOWTO: Exit Windows from Visual FoxPro

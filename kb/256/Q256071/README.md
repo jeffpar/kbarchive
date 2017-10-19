@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256071: SMS: Inventory Agent Does Not Detect Pentium III Processors"
-permalink: kb/256/Q256071/
+permalink: /kb/256/Q256071/
 ---
 
 ## Q256071: SMS: Inventory Agent Does Not Detect Pentium III Processors

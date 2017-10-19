@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136589: How to Use Wzsetup.ini &amp; Defaults Created by the Setup Wizard"
-permalink: kb/136/Q136589/
+permalink: /kb/136/Q136589/
 ---
 
 ## Q136589: How to Use Wzsetup.ini &amp; Defaults Created by the Setup Wizard

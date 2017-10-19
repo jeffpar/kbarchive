@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154075: Trimming LAN Manager Server Service to Tune Applications"
-permalink: kb/154/Q154075/
+permalink: /kb/154/Q154075/
 ---
 
 ## Q154075: Trimming LAN Manager Server Service to Tune Applications

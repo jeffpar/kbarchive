@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122131: Video for Windows Conflicts with Diamond VideoStar Board"
-permalink: kb/122/Q122131/
+permalink: /kb/122/Q122131/
 ---
 
 ## Q122131: Video for Windows Conflicts with Diamond VideoStar Board

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97697: Generic/Text Only: Can't Use Null Character in Escape Sequence"
-permalink: kb/097/Q97697/
+permalink: /kb/097/Q97697/
 ---
 
 ## Q97697: Generic/Text Only: Can't Use Null Character in Escape Sequence

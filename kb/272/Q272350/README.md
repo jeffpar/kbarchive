@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272350: Can't Set Admin Permission on NT4 Clusters w/ Cluster Administr"
-permalink: kb/272/Q272350/
+permalink: /kb/272/Q272350/
 ---
 
 ## Q272350: Can't Set Admin Permission on NT4 Clusters w/ Cluster Administr

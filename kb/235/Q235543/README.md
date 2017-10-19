@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235543: File Copy to Macintosh Volume Takes Time"
-permalink: kb/235/Q235543/
+permalink: /kb/235/Q235543/
 ---
 
 ## Q235543: File Copy to Macintosh Volume Takes Time

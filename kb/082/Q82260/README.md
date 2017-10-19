@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82260: Windows 3.1 Setup /B Switch Does Not Affect Windows Settings"
-permalink: kb/082/Q82260/
+permalink: /kb/082/Q82260/
 ---
 
 ## Q82260: Windows 3.1 Setup /B Switch Does Not Affect Windows Settings

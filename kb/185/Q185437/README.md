@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185437: Puzzle Collection: Other Thief Does Not Appear in Jewel Chase"
-permalink: kb/185/Q185437/
+permalink: /kb/185/Q185437/
 ---
 
 ## Q185437: Puzzle Collection: Other Thief Does Not Appear in Jewel Chase

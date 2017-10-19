@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142534: HOWTO: Create Programs in Visual Basic That Use Remote OLE"
-permalink: kb/142/Q142534/
+permalink: /kb/142/Q142534/
 ---
 
 ## Q142534: HOWTO: Create Programs in Visual Basic That Use Remote OLE

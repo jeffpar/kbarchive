@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165875: Excel May Print Only 1 Page to LaserJet Series II"
-permalink: kb/165/Q165875/
+permalink: /kb/165/Q165875/
 ---
 
 ## Q165875: Excel May Print Only 1 Page to LaserJet Series II

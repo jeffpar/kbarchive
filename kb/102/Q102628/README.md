@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102628: Microsoft OS/2 Version 1.3 Hardware Compatibility List"
-permalink: kb/102/Q102628/
+permalink: /kb/102/Q102628/
 ---
 
 ## Q102628: Microsoft OS/2 Version 1.3 Hardware Compatibility List

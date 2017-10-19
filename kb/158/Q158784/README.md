@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158784: Personal Web Server Won't Support Secured Sockets Layer Security"
-permalink: kb/158/Q158784/
+permalink: /kb/158/Q158784/
 ---
 
 ## Q158784: Personal Web Server Won't Support Secured Sockets Layer Security

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167656: SMS: Despooler Does Not Preserve Existing Rights on Shares"
-permalink: kb/167/Q167656/
+permalink: /kb/167/Q167656/
 ---
 
 ## Q167656: SMS: Despooler Does Not Preserve Existing Rights on Shares

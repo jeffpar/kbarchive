@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129624: Error Message: This Setup Is Not Intended for This Version..."
-permalink: kb/129/Q129624/
+permalink: /kb/129/Q129624/
 ---
 
 ## Q129624: Error Message: This Setup Is Not Intended for This Version...

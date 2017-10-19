@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196844: WD97: &quot;Merge to Electronic Fax&quot; Unavailable with Winfax Pro"
-permalink: kb/196/Q196844/
+permalink: /kb/196/Q196844/
 ---
 
 ## Q196844: WD97: &quot;Merge to Electronic Fax&quot; Unavailable with Winfax Pro

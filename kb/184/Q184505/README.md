@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184505: CPI-C Accept_Conversation (cmaccp) Does Not Block As Expected"
-permalink: kb/184/Q184505/
+permalink: /kb/184/Q184505/
 ---
 
 ## Q184505: CPI-C Accept_Conversation (cmaccp) Does Not Block As Expected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91066: Message Looks Read or Opened After Move, Copy, or Print"
-permalink: kb/091/Q91066/
+permalink: /kb/091/Q91066/
 ---
 
 ## Q91066: Message Looks Read or Opened After Move, Copy, or Print

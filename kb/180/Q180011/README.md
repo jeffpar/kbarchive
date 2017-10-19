@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180011: XADM: EDB File Size Not Updated"
-permalink: kb/180/Q180011/
+permalink: /kb/180/Q180011/
 ---
 
 ## Q180011: XADM: EDB File Size Not Updated

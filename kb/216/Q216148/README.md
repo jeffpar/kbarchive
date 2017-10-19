@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216148: Help on Index Server Not Available from MMC"
-permalink: kb/216/Q216148/
+permalink: /kb/216/Q216148/
 ---
 
 ## Q216148: Help on Index Server Not Available from MMC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184841: XWEB: OWA Component for IIS May Cause Heap Corruption"
-permalink: kb/184/Q184841/
+permalink: /kb/184/Q184841/
 ---
 
 ## Q184841: XWEB: OWA Component for IIS May Cause Heap Corruption

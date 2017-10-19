@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181384: WD97: Text, Line Numbering Don't Line Up in Pleading File"
-permalink: kb/181/Q181384/
+permalink: /kb/181/Q181384/
 ---
 
 ## Q181384: WD97: Text, Line Numbering Don't Line Up in Pleading File

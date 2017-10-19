@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96185: Norton Speed Disk May Cause Lost Clusters with DBLSPACE"
-permalink: kb/096/Q96185/
+permalink: /kb/096/Q96185/
 ---
 
 ## Q96185: Norton Speed Disk May Cause Lost Clusters with DBLSPACE

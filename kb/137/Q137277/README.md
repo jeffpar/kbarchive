@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137277: PPT7: Playlists Don't Work in PowerPoint 7.0"
-permalink: kb/137/Q137277/
+permalink: /kb/137/Q137277/
 ---
 
 ## Q137277: PPT7: Playlists Don't Work in PowerPoint 7.0

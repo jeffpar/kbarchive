@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132736: Windows 95 Networking Questions and Answers"
-permalink: kb/132/Q132736/
+permalink: /kb/132/Q132736/
 ---
 
 ## Q132736: Windows 95 Networking Questions and Answers

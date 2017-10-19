@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319185: FIX: SAK System Will Blue Screen If Driver Verifier Is Turned on"
-permalink: kb/319/Q319185/
+permalink: /kb/319/Q319185/
 ---
 
 ## Q319185: FIX: SAK System Will Blue Screen If Driver Verifier Is Turned on

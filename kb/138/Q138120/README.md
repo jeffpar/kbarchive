@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138120: Windows 95 Readme.txt File from Drivers&#92;Other&#92;Qtwfix Folder"
-permalink: kb/138/Q138120/
+permalink: /kb/138/Q138120/
 ---
 
 ## Q138120: Windows 95 Readme.txt File from Drivers&#92;Other&#92;Qtwfix Folder

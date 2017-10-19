@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132464: X400: Err Msg: Error 12 (Restarting MTA):..."
-permalink: kb/132/Q132464/
+permalink: /kb/132/Q132464/
 ---
 
 ## Q132464: X400: Err Msg: Error 12 (Restarting MTA):...

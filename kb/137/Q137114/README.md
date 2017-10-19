@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137114: Can't Access Compact Disc If Wrong Speed Set in Windows 95"
-permalink: kb/137/Q137114/
+permalink: /kb/137/Q137114/
 ---
 
 ## Q137114: Can't Access Compact Disc If Wrong Speed Set in Windows 95

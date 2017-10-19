@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178122: XFOR: Lsccmmex.exe Causes AV Processing Inbound cc:Mail"
-permalink: kb/178/Q178122/
+permalink: /kb/178/Q178122/
 ---
 
 ## Q178122: XFOR: Lsccmmex.exe Causes AV Processing Inbound cc:Mail

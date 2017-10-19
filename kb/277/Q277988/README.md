@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277988: COMTI: Memory Leak When Using TCP/IP MS Link Component"
-permalink: kb/277/Q277988/
+permalink: /kb/277/Q277988/
 ---
 
 ## Q277988: COMTI: Memory Leak When Using TCP/IP MS Link Component

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117262: Project 4.0 Files for ODK Encore Example Available"
-permalink: kb/117/Q117262/
+permalink: /kb/117/Q117262/
 ---
 
 ## Q117262: Project 4.0 Files for ODK Encore Example Available

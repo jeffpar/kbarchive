@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93602: How to Disable F5 and F8 During Startup in MS-DOS"
-permalink: kb/093/Q93602/
+permalink: /kb/093/Q93602/
 ---
 
 ## Q93602: How to Disable F5 and F8 During Startup in MS-DOS

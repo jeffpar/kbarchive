@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165150: How to Use Pragma: No-cache with IIS and IE"
-permalink: kb/165/Q165150/
+permalink: /kb/165/Q165150/
 ---
 
 ## Q165150: How to Use Pragma: No-cache with IIS and IE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160603: No Output from DBMON Using OutputDebugString While Debugging"
-permalink: kb/160/Q160603/
+permalink: /kb/160/Q160603/
 ---
 
 ## Q160603: No Output from DBMON Using OutputDebugString While Debugging

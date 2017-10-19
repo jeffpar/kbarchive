@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q218173: COMTI [MC_]ALLOCATE Hangs After Host Rejects SNA Server BIND Req"
-permalink: kb/218/Q218173/
+title: "Q218173: COMTI &#91;MC_&#93;ALLOCATE Hangs After Host Rejects SNA Server BIND Req"
+permalink: /kb/218/Q218173/
 ---
 
-## Q218173: COMTI [MC_]ALLOCATE Hangs After Host Rejects SNA Server BIND Req
+## Q218173: COMTI &#91;MC_&#93;ALLOCATE Hangs After Host Rejects SNA Server BIND Req
 
 	Article: Q218173
 	Product(s): Microsoft SNA Server

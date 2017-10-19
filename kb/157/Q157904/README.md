@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157904: MSB Earth: How to Run MSB Earth Without CD"
-permalink: kb/157/Q157904/
+permalink: /kb/157/Q157904/
 ---
 
 ## Q157904: MSB Earth: How to Run MSB Earth Without CD

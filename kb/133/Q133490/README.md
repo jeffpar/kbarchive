@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133490: Resolving Duplicate IP Address Conflicts on a DHCP Network"
-permalink: kb/133/Q133490/
+permalink: /kb/133/Q133490/
 ---
 
 ## Q133490: Resolving Duplicate IP Address Conflicts on a DHCP Network

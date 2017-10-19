@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184489: SMS: Despooler May Delete Package Dir Contents If Files in Use"
-permalink: kb/184/Q184489/
+permalink: /kb/184/Q184489/
 ---
 
 ## Q184489: SMS: Despooler May Delete Package Dir Contents If Files in Use

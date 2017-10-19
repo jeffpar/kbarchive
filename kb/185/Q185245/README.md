@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185245: EnableSGC Does Not Always Provide for 1024-bit Keys"
-permalink: kb/185/Q185245/
+permalink: /kb/185/Q185245/
 ---
 
 ## Q185245: EnableSGC Does Not Always Provide for 1024-bit Keys

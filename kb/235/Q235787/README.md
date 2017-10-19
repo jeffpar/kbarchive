@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235787: SMS: SMS_EXECUTIVE Schedules Wrong Time for Network Discovery"
-permalink: kb/235/Q235787/
+permalink: /kb/235/Q235787/
 ---
 
 ## Q235787: SMS: SMS_EXECUTIVE Schedules Wrong Time for Network Discovery

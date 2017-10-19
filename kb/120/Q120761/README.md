@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120761: Background Windows Show through Access 2.0's Window"
-permalink: kb/120/Q120761/
+permalink: /kb/120/Q120761/
 ---
 
 ## Q120761: Background Windows Show through Access 2.0's Window

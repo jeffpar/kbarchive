@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166606: XFOR: Msgs With Mixed Japanese Encoding Not Decoded Correctly"
-permalink: kb/166/Q166606/
+permalink: /kb/166/Q166606/
 ---
 
 ## Q166606: XFOR: Msgs With Mixed Japanese Encoding Not Decoded Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186207: Animation Played Inside MSN Sign-In Screen Is Cut Off"
-permalink: kb/186/Q186207/
+permalink: /kb/186/Q186207/
 ---
 
 ## Q186207: Animation Played Inside MSN Sign-In Screen Is Cut Off

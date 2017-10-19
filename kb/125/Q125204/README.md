@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125204: Err Msg: MCIAVI Requires a Newer Version of MSVIDEO.DLL"
-permalink: kb/125/Q125204/
+permalink: /kb/125/Q125204/
 ---
 
 ## Q125204: Err Msg: MCIAVI Requires a Newer Version of MSVIDEO.DLL

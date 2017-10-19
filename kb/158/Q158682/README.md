@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158682: Shortcuts Created Under Windows NT 4.0 Resolve to UNC Paths"
-permalink: kb/158/Q158682/
+permalink: /kb/158/Q158682/
 ---
 
 ## Q158682: Shortcuts Created Under Windows NT 4.0 Resolve to UNC Paths

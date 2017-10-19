@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185625: Windows NT Client Logon Fails with EnableSecuritySignature Set"
-permalink: kb/185/Q185625/
+permalink: /kb/185/Q185625/
 ---
 
 ## Q185625: Windows NT Client Logon Fails with EnableSecuritySignature Set

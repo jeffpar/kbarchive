@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64850: AT&amp;T 60386-25 Phoenix BIOS FB12 Needs Update to FB15"
-permalink: kb/064/Q64850/
+permalink: /kb/064/Q64850/
 ---
 
 ## Q64850: AT&amp;T 60386-25 Phoenix BIOS FB12 Needs Update to FB15

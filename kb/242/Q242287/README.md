@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242287: XFOR: NDR Returned for SMTP Recipient Through Notes Connector"
-permalink: kb/242/Q242287/
+permalink: /kb/242/Q242287/
 ---
 
 ## Q242287: XFOR: NDR Returned for SMTP Recipient Through Notes Connector

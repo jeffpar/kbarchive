@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257812: BUG: MFC Dialog Explicitly Owned by the Desktop Disables Desktop"
-permalink: kb/257/Q257812/
+permalink: /kb/257/Q257812/
 ---
 
 ## Q257812: BUG: MFC Dialog Explicitly Owned by the Desktop Disables Desktop

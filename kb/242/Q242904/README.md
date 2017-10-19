@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242904: Age of Empires II: How to Troubleshoot Multiplayer Game Problems"
-permalink: kb/242/Q242904/
+permalink: /kb/242/Q242904/
 ---
 
 ## Q242904: Age of Empires II: How to Troubleshoot Multiplayer Game Problems

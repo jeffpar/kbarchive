@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221691: FIX: ADO Reference Keeps Visual FoxPro in Memory after Quitting"
-permalink: kb/221/Q221691/
+permalink: /kb/221/Q221691/
 ---
 
 ## Q221691: FIX: ADO Reference Keeps Visual FoxPro in Memory after Quitting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138043: PRB: Error Instantiating Object"
-permalink: kb/138/Q138043/
+permalink: /kb/138/Q138043/
 ---
 
 ## Q138043: PRB: Error Instantiating Object

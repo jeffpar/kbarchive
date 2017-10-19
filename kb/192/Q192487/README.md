@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192487: SMS: Logon Discovery May Not Find Windows NT Domain Controllers"
-permalink: kb/192/Q192487/
+permalink: /kb/192/Q192487/
 ---
 
 ## Q192487: SMS: Logon Discovery May Not Find Windows NT Domain Controllers

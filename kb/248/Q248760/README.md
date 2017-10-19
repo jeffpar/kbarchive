@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248760: FIX: Project Log &lt;physical filename&gt; Share (From Another Proj)"
-permalink: kb/248/Q248760/
+permalink: /kb/248/Q248760/
 ---
 
 ## Q248760: FIX: Project Log &lt;physical filename&gt; Share (From Another Proj)

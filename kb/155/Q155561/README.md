@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155561: WebSurfer Replaces Url.dll File"
-permalink: kb/155/Q155561/
+permalink: /kb/155/Q155561/
 ---
 
 ## Q155561: WebSurfer Replaces Url.dll File

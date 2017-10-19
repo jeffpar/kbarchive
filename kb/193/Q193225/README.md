@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193225: How to Configure IIS to Connect to Oracle from ASP and ADO"
-permalink: kb/193/Q193225/
+permalink: /kb/193/Q193225/
 ---
 
 ## Q193225: How to Configure IIS to Connect to Oracle from ASP and ADO

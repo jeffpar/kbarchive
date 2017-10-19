@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237690: SMS: Err Msg: The Redirector Has Timed Out to &#92;&#92;&lt;SMS Server&gt;"
-permalink: kb/237/Q237690/
+permalink: /kb/237/Q237690/
 ---
 
 ## Q237690: SMS: Err Msg: The Redirector Has Timed Out to &#92;&#92;&lt;SMS Server&gt;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134541: PageMaker Does Not Print Large TrueType Fonts to TrueLaser"
-permalink: kb/134/Q134541/
+permalink: /kb/134/Q134541/
 ---
 
 ## Q134541: PageMaker Does Not Print Large TrueType Fonts to TrueLaser

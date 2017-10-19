@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159292: XADM: &quot;&#36;&quot; in DDA Value Migrated Incorrectly in X.400 PAB Entry"
-permalink: kb/159/Q159292/
+permalink: /kb/159/Q159292/
 ---
 
 ## Q159292: XADM: &quot;&#36;&quot; in DDA Value Migrated Incorrectly in X.400 PAB Entry

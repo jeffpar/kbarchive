@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239915: SMS: &quot;Insert Disk in Drive A:&quot; Message During Hardware Inventory"
-permalink: kb/239/Q239915/
+permalink: /kb/239/Q239915/
 ---
 
 ## Q239915: SMS: &quot;Insert Disk in Drive A:&quot; Message During Hardware Inventory

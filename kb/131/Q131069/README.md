@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131069: PC WRmt: Receiving mail fails, other processes are successful"
-permalink: kb/131/Q131069/
+permalink: /kb/131/Q131069/
 ---
 
 ## Q131069: PC WRmt: Receiving mail fails, other processes are successful

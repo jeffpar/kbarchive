@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99809: Mac Multimedia: Sounds Choppy with Virtual Memory On"
-permalink: kb/099/Q99809/
+permalink: /kb/099/Q99809/
 ---
 
 ## Q99809: Mac Multimedia: Sounds Choppy with Virtual Memory On

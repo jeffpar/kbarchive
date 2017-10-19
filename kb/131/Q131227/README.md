@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131227: Why HyperTerminal Connectoid File Sizes May Vary"
-permalink: kb/131/Q131227/
+permalink: /kb/131/Q131227/
 ---
 
 ## Q131227: Why HyperTerminal Connectoid File Sizes May Vary

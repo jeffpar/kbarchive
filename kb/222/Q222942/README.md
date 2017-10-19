@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222942: IBM S/36 Displays &quot;Unexpected Data Received From Printer&quot;"
-permalink: kb/222/Q222942/
+permalink: /kb/222/Q222942/
 ---
 
 ## Q222942: IBM S/36 Displays &quot;Unexpected Data Received From Printer&quot;

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q268157: Error Message: &quot;19128-Location Under MA Is Wrong [OU=xx,o=yy]&quot;"
-permalink: kb/268/Q268157/
+title: "Q268157: Error Message: &quot;19128-Location Under MA Is Wrong &#91;OU=xx,o=yy&#93;&quot;"
+permalink: /kb/268/Q268157/
 ---
 
-## Q268157: Error Message: &quot;19128-Location Under MA Is Wrong [OU=xx,o=yy]&quot;
+## Q268157: Error Message: &quot;19128-Location Under MA Is Wrong &#91;OU=xx,o=yy&#93;&quot;
 
 	Article: Q268157
 	Product(s): Microsoft Windows NT

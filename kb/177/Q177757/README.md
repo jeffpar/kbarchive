@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177757: Dr. Watson Does Not Report Service Pack Number"
-permalink: kb/177/Q177757/
+permalink: /kb/177/Q177757/
 ---
 
 ## Q177757: Dr. Watson Does Not Report Service Pack Number

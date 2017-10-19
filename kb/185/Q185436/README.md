@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185436: Using Excel and SNACFG to Implement Batch Configuration Changes"
-permalink: kb/185/Q185436/
+permalink: /kb/185/Q185436/
 ---
 
 ## Q185436: Using Excel and SNACFG to Implement Batch Configuration Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178142: FS95: File Available to Correct Third-Party Scenery Problems"
-permalink: kb/178/Q178142/
+permalink: /kb/178/Q178142/
 ---
 
 ## Q178142: FS95: File Available to Correct Third-Party Scenery Problems

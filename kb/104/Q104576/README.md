@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104576: Embedding Non-printable Characters in LMHOSTS Computer Names"
-permalink: kb/104/Q104576/
+permalink: /kb/104/Q104576/
 ---
 
 ## Q104576: Embedding Non-printable Characters in LMHOSTS Computer Names

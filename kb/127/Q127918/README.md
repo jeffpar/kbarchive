@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127918: PC Adm: Doc Err: Modifying Template Information"
-permalink: kb/127/Q127918/
+permalink: /kb/127/Q127918/
 ---
 
 ## Q127918: PC Adm: Doc Err: Modifying Template Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275122: Error Message: Microsoft Golf Cannot Be Run in Large Font Mode"
-permalink: kb/275/Q275122/
+permalink: /kb/275/Q275122/
 ---
 
 ## Q275122: Error Message: Microsoft Golf Cannot Be Run in Large Font Mode

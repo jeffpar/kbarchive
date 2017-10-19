@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323464: Err Msg: The Invitation from 'User Name' to Use Application..."
-permalink: kb/323/Q323464/
+permalink: /kb/323/Q323464/
 ---
 
 ## Q323464: Err Msg: The Invitation from 'User Name' to Use Application...

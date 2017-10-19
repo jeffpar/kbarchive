@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296185: Patch Available for New Variant of &quot;Malformed Hit-Highlighting&quot;"
-permalink: kb/296/Q296185/
+permalink: /kb/296/Q296185/
 ---
 
 ## Q296185: Patch Available for New Variant of &quot;Malformed Hit-Highlighting&quot;

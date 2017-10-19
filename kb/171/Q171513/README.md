@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171513: FIX: Cannot Drag a Nested UserControl with Automatic DragMode"
-permalink: kb/171/Q171513/
+permalink: /kb/171/Q171513/
 ---
 
 ## Q171513: FIX: Cannot Drag a Nested UserControl with Automatic DragMode

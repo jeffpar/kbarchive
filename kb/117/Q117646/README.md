@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117646: PC DB: Ownerless Files on Novell Networks"
-permalink: kb/117/Q117646/
+permalink: /kb/117/Q117646/
 ---
 
 ## Q117646: PC DB: Ownerless Files on Novell Networks

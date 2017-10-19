@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156477: SMS: Remote Control Agent Service Stops on a Windows NT Client"
-permalink: kb/156/Q156477/
+permalink: /kb/156/Q156477/
 ---
 
 ## Q156477: SMS: Remote Control Agent Service Stops on a Windows NT Client

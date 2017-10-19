@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196269: When to Reinstall a Service Pack"
-permalink: kb/196/Q196269/
+permalink: /kb/196/Q196269/
 ---
 
 ## Q196269: When to Reinstall a Service Pack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173092: FIX: /Og Causes C1001 Traversing Non-Trivial List of Pointers"
-permalink: kb/173/Q173092/
+permalink: /kb/173/Q173092/
 ---
 
 ## Q173092: FIX: /Og Causes C1001 Traversing Non-Trivial List of Pointers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147356: Intermittent Replication Between WINS Servers"
-permalink: kb/147/Q147356/
+permalink: /kb/147/Q147356/
 ---
 
 ## Q147356: Intermittent Replication Between WINS Servers

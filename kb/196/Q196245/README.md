@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196245: Snabase Displays Garbage String for Backupsponsor Server Name"
-permalink: kb/196/Q196245/
+permalink: /kb/196/Q196245/
 ---
 
 ## Q196245: Snabase Displays Garbage String for Backupsponsor Server Name

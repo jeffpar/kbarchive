@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96453: Mac Wkst: Installation Program Cannot Find Needed Files"
-permalink: kb/096/Q96453/
+permalink: /kb/096/Q96453/
 ---
 
 ## Q96453: Mac Wkst: Installation Program Cannot Find Needed Files

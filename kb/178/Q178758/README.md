@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178758: XCON: CCMC Stops Randomly with Out of Disk Space Error"
-permalink: kb/178/Q178758/
+permalink: /kb/178/Q178758/
 ---
 
 ## Q178758: XCON: CCMC Stops Randomly with Out of Disk Space Error

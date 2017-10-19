@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264972: Event ID 5072 and Error 5216 Appear When You Restart Cluster Ser"
-permalink: kb/264/Q264972/
+permalink: /kb/264/Q264972/
 ---
 
 ## Q264972: Event ID 5072 and Error 5216 Appear When You Restart Cluster Ser

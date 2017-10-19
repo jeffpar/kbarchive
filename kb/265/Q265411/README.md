@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265411: SMS: DDM Hangs on Secondary Site Performing Full Refresh"
-permalink: kb/265/Q265411/
+permalink: /kb/265/Q265411/
 ---
 
 ## Q265411: SMS: DDM Hangs on Secondary Site Performing Full Refresh

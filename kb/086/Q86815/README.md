@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86815: Mixed C and MASM with MASM Main Language, No C Run-Time"
-permalink: kb/086/Q86815/
+permalink: /kb/086/Q86815/
 ---
 
 ## Q86815: Mixed C and MASM with MASM Main Language, No C Run-Time

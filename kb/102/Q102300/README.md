@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102300: X400: Retaining Addresses When Reinstalling Gateway"
-permalink: kb/102/Q102300/
+permalink: /kb/102/Q102300/
 ---
 
 ## Q102300: X400: Retaining Addresses When Reinstalling Gateway

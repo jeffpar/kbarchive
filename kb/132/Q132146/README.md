@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132146: Dogs: Movies Choppy with Some Video Drivers"
-permalink: kb/132/Q132146/
+permalink: /kb/132/Q132146/
 ---
 
 ## Q132146: Dogs: Movies Choppy with Some Video Drivers

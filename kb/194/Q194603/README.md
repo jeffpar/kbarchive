@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194603: PC MMTA: No Recipient Found while Building the Mailing List"
-permalink: kb/194/Q194603/
+permalink: /kb/194/Q194603/
 ---
 
 ## Q194603: PC MMTA: No Recipient Found while Building the Mailing List

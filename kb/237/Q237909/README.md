@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237909: XADM: Error Listed in Output File for KM Server Bulk Enrollment"
-permalink: kb/237/Q237909/
+permalink: /kb/237/Q237909/
 ---
 
 ## Q237909: XADM: Error Listed in Output File for KM Server Bulk Enrollment

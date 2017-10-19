@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196607: CPIC Application Produces Event 3017 - CPIC Conversation Unknown"
-permalink: kb/196/Q196607/
+permalink: /kb/196/Q196607/
 ---
 
 ## Q196607: CPIC Application Produces Event 3017 - CPIC Conversation Unknown

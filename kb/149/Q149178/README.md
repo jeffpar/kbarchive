@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149178: SMS: Upgrading SQL Server Used for an SMS Database"
-permalink: kb/149/Q149178/
+permalink: /kb/149/Q149178/
 ---
 
 ## Q149178: SMS: Upgrading SQL Server Used for an SMS Database

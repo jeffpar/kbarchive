@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242599: XADM: Can't Uninstall Exchange Server Without Access to DC"
-permalink: kb/242/Q242599/
+permalink: /kb/242/Q242599/
 ---
 
 ## Q242599: XADM: Can't Uninstall Exchange Server Without Access to DC

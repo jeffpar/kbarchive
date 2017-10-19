@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145765: Cannot Undock with PCMCIA Card in Databook PCMCIA Controller"
-permalink: kb/145/Q145765/
+permalink: /kb/145/Q145765/
 ---
 
 ## Q145765: Cannot Undock with PCMCIA Card in Databook PCMCIA Controller

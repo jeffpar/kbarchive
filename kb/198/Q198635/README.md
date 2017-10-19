@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198635: SMS: Expected CPU Utilization During a Remote Control Session"
-permalink: kb/198/Q198635/
+permalink: /kb/198/Q198635/
 ---
 
 ## Q198635: SMS: Expected CPU Utilization During a Remote Control Session

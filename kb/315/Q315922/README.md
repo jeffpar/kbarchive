@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315922: MSScript.ocx Leaks Event Handles in Certain Applications"
-permalink: kb/315/Q315922/
+permalink: /kb/315/Q315922/
 ---
 
 ## Q315922: MSScript.ocx Leaks Event Handles in Certain Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274967: CFS2: First Player to Exit Team Game Receives Credit for Kills"
-permalink: kb/274/Q274967/
+permalink: /kb/274/Q274967/
 ---
 
 ## Q274967: CFS2: First Player to Exit Team Game Receives Credit for Kills

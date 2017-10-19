@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171061: RIP Does Not Advertise Zero Subnets"
-permalink: kb/171/Q171061/
+permalink: /kb/171/Q171061/
 ---
 
 ## Q171061: RIP Does Not Advertise Zero Subnets

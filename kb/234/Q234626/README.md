@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234626: SAMPLE: Setup1.exe Fully Automating MSDE Setup with the PDW"
-permalink: kb/234/Q234626/
+permalink: /kb/234/Q234626/
 ---
 
 ## Q234626: SAMPLE: Setup1.exe Fully Automating MSDE Setup with the PDW

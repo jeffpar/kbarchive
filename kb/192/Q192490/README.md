@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192490: SMS: Ping Test on Windows NT Clients May Require Credentials"
-permalink: kb/192/Q192490/
+permalink: /kb/192/Q192490/
 ---
 
 ## Q192490: SMS: Ping Test on Windows NT Clients May Require Credentials

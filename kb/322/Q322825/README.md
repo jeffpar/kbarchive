@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322825: XGEN: List of POP3 Commands Supported by Exchange Server 5.5"
-permalink: kb/322/Q322825/
+permalink: /kb/322/Q322825/
 ---
 
 ## Q322825: XGEN: List of POP3 Commands Supported by Exchange Server 5.5

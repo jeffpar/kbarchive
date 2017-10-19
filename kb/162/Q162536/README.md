@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162536: SMS: SMS Event 336 with a Large Number of Sites"
-permalink: kb/162/Q162536/
+permalink: /kb/162/Q162536/
 ---
 
 ## Q162536: SMS: SMS Event 336 with a Large Number of Sites

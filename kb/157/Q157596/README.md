@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157596: How to Import a BOOTP Database into DHCP"
-permalink: kb/157/Q157596/
+permalink: /kb/157/Q157596/
 ---
 
 ## Q157596: How to Import a BOOTP Database into DHCP

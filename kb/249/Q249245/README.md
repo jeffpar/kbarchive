@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249245: IIS Global - Objects Counter Never Decreases"
-permalink: kb/249/Q249245/
+permalink: /kb/249/Q249245/
 ---
 
 ## Q249245: IIS Global - Objects Counter Never Decreases

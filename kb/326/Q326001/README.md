@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326001: Bicycle Casino: Dealer Misreads Hand, and Losing Hand Wins"
-permalink: kb/326/Q326001/
+permalink: /kb/326/Q326001/
 ---
 
 ## Q326001: Bicycle Casino: Dealer Misreads Hand, and Losing Hand Wins

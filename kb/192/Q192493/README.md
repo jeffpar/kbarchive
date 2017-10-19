@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192493: XADM: Setup Doesn't Add Permission to MSExchangeES Registry Key"
-permalink: kb/192/Q192493/
+permalink: /kb/192/Q192493/
 ---
 
 ## Q192493: XADM: Setup Doesn't Add Permission to MSExchangeES Registry Key

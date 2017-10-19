@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82620: ObjectVision 2.0 Prints TrueType Fonts Smaller"
-permalink: kb/082/Q82620/
+permalink: /kb/082/Q82620/
 ---
 
 ## Q82620: ObjectVision 2.0 Prints TrueType Fonts Smaller

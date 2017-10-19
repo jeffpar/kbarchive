@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173784: WD97: Changing the Bullet Type in HTML Creates a Second Bullet"
-permalink: kb/173/Q173784/
+permalink: /kb/173/Q173784/
 ---
 
 ## Q173784: WD97: Changing the Bullet Type in HTML Creates a Second Bullet

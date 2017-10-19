@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238093: SMS: Upgrade Error: Setup Cannot Upgrade the SMS Database"
-permalink: kb/238/Q238093/
+permalink: /kb/238/Q238093/
 ---
 
 ## Q238093: SMS: Upgrade Error: Setup Cannot Upgrade the SMS Database

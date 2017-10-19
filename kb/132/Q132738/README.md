@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132738: Err Msg with IBM Optical Disk: Drive Cannot Find The Sector..."
-permalink: kb/132/Q132738/
+permalink: /kb/132/Q132738/
 ---
 
 ## Q132738: Err Msg with IBM Optical Disk: Drive Cannot Find The Sector...

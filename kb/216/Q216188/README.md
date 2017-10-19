@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216188: Unattended Installation with /E Option to Install SP4 Fails"
-permalink: kb/216/Q216188/
+permalink: /kb/216/Q216188/
 ---
 
 ## Q216188: Unattended Installation with /E Option to Install SP4 Fails

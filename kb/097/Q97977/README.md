@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97977: RAS and Telebit PEP"
-permalink: kb/097/Q97977/
+permalink: /kb/097/Q97977/
 ---
 
 ## Q97977: RAS and Telebit PEP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198749: SMS: Determining If a client Will Use Video Acceleration"
-permalink: kb/198/Q198749/
+permalink: /kb/198/Q198749/
 ---
 
 ## Q198749: SMS: Determining If a client Will Use Video Acceleration

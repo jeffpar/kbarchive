@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129900: PC Win: Can Not Store Folders Separate from MMF"
-permalink: kb/129/Q129900/
+permalink: /kb/129/Q129900/
 ---
 
 ## Q129900: PC Win: Can Not Store Folders Separate from MMF

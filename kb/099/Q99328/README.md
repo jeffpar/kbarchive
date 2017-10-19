@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99328: Write Err Msg: Cannot Print Picture. Picture Will Be Ignored."
-permalink: kb/099/Q99328/
+permalink: /kb/099/Q99328/
 ---
 
 ## Q99328: Write Err Msg: Cannot Print Picture. Picture Will Be Ignored.

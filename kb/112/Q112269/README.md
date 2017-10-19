@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112269: PC WRmt: Short Cut Method to Select All Headers"
-permalink: kb/112/Q112269/
+permalink: /kb/112/Q112269/
 ---
 
 ## Q112269: PC WRmt: Short Cut Method to Select All Headers

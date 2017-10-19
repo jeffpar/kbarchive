@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168369: Kids Plus: No Sound After Installing Microsoft Plus! For Kids"
-permalink: kb/168/Q168369/
+permalink: /kb/168/Q168369/
 ---
 
 ## Q168369: Kids Plus: No Sound After Installing Microsoft Plus! For Kids

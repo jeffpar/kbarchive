@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141945: Hewlett-Packard Activity Center Decreases MSN Performance"
-permalink: kb/141/Q141945/
+permalink: /kb/141/Q141945/
 ---
 
 ## Q141945: Hewlett-Packard Activity Center Decreases MSN Performance

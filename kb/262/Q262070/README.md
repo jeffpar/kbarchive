@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262070: Motocross Madness 2: Minimum System Requirements"
-permalink: kb/262/Q262070/
+permalink: /kb/262/Q262070/
 ---
 
 ## Q262070: Motocross Madness 2: Minimum System Requirements

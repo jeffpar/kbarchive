@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83233: F1CDHelp.exe Uses Keyboard Hook to Access Help"
-permalink: kb/083/Q83233/
+permalink: /kb/083/Q83233/
 ---
 
 ## Q83233: F1CDHelp.exe Uses Keyboard Hook to Access Help

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160422: How IIS Launches a CGI Application"
-permalink: kb/160/Q160422/
+permalink: /kb/160/Q160422/
 ---
 
 ## Q160422: How IIS Launches a CGI Application

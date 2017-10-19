@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81483: Jetpage Cartridge Printer Memory Requirements for Windows"
-permalink: kb/081/Q81483/
+permalink: /kb/081/Q81483/
 ---
 
 ## Q81483: Jetpage Cartridge Printer Memory Requirements for Windows

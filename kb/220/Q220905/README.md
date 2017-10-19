@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220905: XFOR: Error Retrieving Mail by IMAP4 on Exchange w/Windows CE"
-permalink: kb/220/Q220905/
+permalink: /kb/220/Q220905/
 ---
 
 ## Q220905: XFOR: Error Retrieving Mail by IMAP4 on Exchange w/Windows CE

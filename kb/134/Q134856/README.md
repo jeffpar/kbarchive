@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134856: Failed Install During Domain Name Change Forces Re-Installation"
-permalink: kb/134/Q134856/
+permalink: /kb/134/Q134856/
 ---
 
 ## Q134856: Failed Install During Domain Name Change Forces Re-Installation

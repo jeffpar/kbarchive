@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163059: WD97: Some Fonts Are Not Available in Word"
-permalink: kb/163/Q163059/
+permalink: /kb/163/Q163059/
 ---
 
 ## Q163059: WD97: Some Fonts Are Not Available in Word

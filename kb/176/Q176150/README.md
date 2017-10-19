@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176150: XADM: P42 Message Delivery Fails Setting ENTRYID"
-permalink: kb/176/Q176150/
+permalink: /kb/176/Q176150/
 ---
 
 ## Q176150: XADM: P42 Message Delivery Fails Setting ENTRYID

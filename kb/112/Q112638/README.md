@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112638: WEPs, Windows, and Microsoft Visual C/C++ Compilers"
-permalink: kb/112/Q112638/
+permalink: /kb/112/Q112638/
 ---
 
 ## Q112638: WEPs, Windows, and Microsoft Visual C/C++ Compilers

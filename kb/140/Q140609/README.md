@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140609: TPSTART Enhanced to Support 16-bit Windows Applications"
-permalink: kb/140/Q140609/
+permalink: /kb/140/Q140609/
 ---
 
 ## Q140609: TPSTART Enhanced to Support 16-bit Windows Applications

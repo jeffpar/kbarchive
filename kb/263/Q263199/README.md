@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263199: XIMS: Receiving Internet Mail as user@department.company.com"
-permalink: kb/263/Q263199/
+permalink: /kb/263/Q263199/
 ---
 
 ## Q263199: XIMS: Receiving Internet Mail as user@department.company.com

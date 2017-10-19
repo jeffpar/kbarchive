@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224389: HTTP Error 403, 403.4, 403.5 Forbidden: SSL Required"
-permalink: kb/224/Q224389/
+permalink: /kb/224/Q224389/
 ---
 
 ## Q224389: HTTP Error 403, 403.4, 403.5 Forbidden: SSL Required

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77210: Loading MS-DOS High on Zenith SuperSport 286 with 1 MB RAM"
-permalink: kb/077/Q77210/
+permalink: /kb/077/Q77210/
 ---
 
 ## Q77210: Loading MS-DOS High on Zenith SuperSport 286 with 1 MB RAM

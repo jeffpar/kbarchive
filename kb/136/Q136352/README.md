@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136352: Fury3: Screen Turns Blank with Actix Picaso"
-permalink: kb/136/Q136352/
+permalink: /kb/136/Q136352/
 ---
 
 ## Q136352: Fury3: Screen Turns Blank with Actix Picaso

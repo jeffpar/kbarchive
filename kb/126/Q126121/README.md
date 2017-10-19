@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126121: RUNNING MS ACCESS 2 FOR WIN: Corrections and Comments"
-permalink: kb/126/Q126121/
+permalink: /kb/126/Q126121/
 ---
 
 ## Q126121: RUNNING MS ACCESS 2 FOR WIN: Corrections and Comments

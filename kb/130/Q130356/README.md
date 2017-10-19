@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130356: Baseball 95: American League Schedule Changes Caused By Strike"
-permalink: kb/130/Q130356/
+permalink: /kb/130/Q130356/
 ---
 
 ## Q130356: Baseball 95: American League Schedule Changes Caused By Strike

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159672: How To Find the Trap Frame If It Is Corrupt"
-permalink: kb/159/Q159672/
+permalink: /kb/159/Q159672/
 ---
 
 ## Q159672: How To Find the Trap Frame If It Is Corrupt

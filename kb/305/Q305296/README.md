@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305296: ENC2003: Club Encarta Updates Available Until October 31, 2003"
-permalink: kb/305/Q305296/
+permalink: /kb/305/Q305296/
 ---
 
 ## Q305296: ENC2003: Club Encarta Updates Available Until October 31, 2003

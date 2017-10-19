@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154546: MS-DOS Buffersize Could Cause Problem Opening Command Prompt"
-permalink: kb/154/Q154546/
+permalink: /kb/154/Q154546/
 ---
 
 ## Q154546: MS-DOS Buffersize Could Cause Problem Opening Command Prompt

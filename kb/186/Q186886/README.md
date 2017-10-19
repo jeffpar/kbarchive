@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186886: XWEB: OWA Meeting Response Does Not Tally Correctly"
-permalink: kb/186/Q186886/
+permalink: /kb/186/Q186886/
 ---
 
 ## Q186886: XWEB: OWA Meeting Response Does Not Tally Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155326: Windows 95 Defrag.exe Command-Line Parameters"
-permalink: kb/155/Q155326/
+permalink: /kb/155/Q155326/
 ---
 
 ## Q155326: Windows 95 Defrag.exe Command-Line Parameters

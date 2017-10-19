@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26000: INFO: Print Manager Print Job File Limit and WM_SPOOLERSTATUS"
-permalink: kb/026/Q26000/
+permalink: /kb/026/Q26000/
 ---
 
 ## Q26000: INFO: Print Manager Print Job File Limit and WM_SPOOLERSTATUS

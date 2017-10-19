@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252784: Allegiance: Ship Turns Continually in Circles"
-permalink: kb/252/Q252784/
+permalink: /kb/252/Q252784/
 ---
 
 ## Q252784: Allegiance: Ship Turns Continually in Circles

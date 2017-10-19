@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164332: WD97: Can't Use Spelling Checker If Text Uses Certain Fonts"
-permalink: kb/164/Q164332/
+permalink: /kb/164/Q164332/
 ---
 
 ## Q164332: WD97: Can't Use Spelling Checker If Text Uses Certain Fonts

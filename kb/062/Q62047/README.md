@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62047: Mac Hyp: Removing Addressee from Auto-Addressed Message"
-permalink: kb/062/Q62047/
+permalink: /kb/062/Q62047/
 ---
 
 ## Q62047: Mac Hyp: Removing Addressee from Auto-Addressed Message

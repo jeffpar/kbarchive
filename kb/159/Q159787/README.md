@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159787: System May Hang with Diamond Stealth 3D Video Adapter"
-permalink: kb/159/Q159787/
+permalink: /kb/159/Q159787/
 ---
 
 ## Q159787: System May Hang with Diamond Stealth 3D Video Adapter

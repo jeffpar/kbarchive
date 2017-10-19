@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235177: Windows NT or 2000 Clients Do Not Start Client Components"
-permalink: kb/235/Q235177/
+permalink: /kb/235/Q235177/
 ---
 
 ## Q235177: Windows NT or 2000 Clients Do Not Start Client Components

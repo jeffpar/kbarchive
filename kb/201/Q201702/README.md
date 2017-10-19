@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201702: SMS: Win16 Bindery Client Receives Error During Logon Script"
-permalink: kb/201/Q201702/
+permalink: /kb/201/Q201702/
 ---
 
 ## Q201702: SMS: Win16 Bindery Client Receives Error During Logon Script

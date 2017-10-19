@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90341: WFWG Err Msg: Server VM Terminated Abnormally"
-permalink: kb/090/Q90341/
+permalink: /kb/090/Q90341/
 ---
 
 ## Q90341: WFWG Err Msg: Server VM Terminated Abnormally

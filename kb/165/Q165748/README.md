@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165748: How to Disable a Service or Device that Prevents NT from Booting"
-permalink: kb/165/Q165748/
+permalink: /kb/165/Q165748/
 ---
 
 ## Q165748: How to Disable a Service or Device that Prevents NT from Booting

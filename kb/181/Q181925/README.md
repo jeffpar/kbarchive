@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181925: XCLN: How to Move or Copy Messages From a PST File to an MMF"
-permalink: kb/181/Q181925/
+permalink: /kb/181/Q181925/
 ---
 
 ## Q181925: XCLN: How to Move or Copy Messages From a PST File to an MMF

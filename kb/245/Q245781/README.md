@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245781: BUG: DEFINE WINDOW in Load Event Does Not Appear"
-permalink: kb/245/Q245781/
+permalink: /kb/245/Q245781/
 ---
 
 ## Q245781: BUG: DEFINE WINDOW in Load Event Does Not Appear

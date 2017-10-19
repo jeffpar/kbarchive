@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321747: Dungeon Siege: How to Set Screen Resolution and Color Depth"
-permalink: kb/321/Q321747/
+permalink: /kb/321/Q321747/
 ---
 
 ## Q321747: Dungeon Siege: How to Set Screen Resolution and Color Depth

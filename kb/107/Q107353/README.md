@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107353: Real-Time Pass Through Not Possible with the WSS Card"
-permalink: kb/107/Q107353/
+permalink: /kb/107/Q107353/
 ---
 
 ## Q107353: Real-Time Pass Through Not Possible with the WSS Card

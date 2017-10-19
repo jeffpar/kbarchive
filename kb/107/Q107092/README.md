@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107092: PROFS: Manually Regenerating the PRX Files for Host Access"
-permalink: kb/107/Q107092/
+permalink: /kb/107/Q107092/
 ---
 
 ## Q107092: PROFS: Manually Regenerating the PRX Files for Host Access

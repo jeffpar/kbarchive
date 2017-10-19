@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261414: XCON: Internet Mail Service Queues Become Backlogged"
-permalink: kb/261/Q261414/
+permalink: /kb/261/Q261414/
 ---
 
 ## Q261414: XCON: Internet Mail Service Queues Become Backlogged

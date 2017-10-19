@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74040: Ownership of Global Memory Allocated by a DLL"
-permalink: kb/074/Q74040/
+permalink: /kb/074/Q74040/
 ---
 
 ## Q74040: Ownership of Global Memory Allocated by a DLL

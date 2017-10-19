@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252829: Warning Message When Gaining Access to Windows Update Web Site"
-permalink: kb/252/Q252829/
+permalink: /kb/252/Q252829/
 ---
 
 ## Q252829: Warning Message When Gaining Access to Windows Update Web Site

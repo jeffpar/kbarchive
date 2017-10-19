@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202057: SAMPLE: DISPINVOKER.EXE How to Implement CallByName in VB4/VB5"
-permalink: kb/202/Q202057/
+permalink: /kb/202/Q202057/
 ---
 
 ## Q202057: SAMPLE: DISPINVOKER.EXE How to Implement CallByName in VB4/VB5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153284: INFO: Limitations of IntelliSense in Visual C++ 6.0"
-permalink: kb/153/Q153284/
+permalink: /kb/153/Q153284/
 ---
 
 ## Q153284: INFO: Limitations of IntelliSense in Visual C++ 6.0

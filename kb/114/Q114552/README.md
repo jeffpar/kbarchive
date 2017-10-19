@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114552: ADT2: Using Scroll Bar Control to Move Through Records"
-permalink: kb/114/Q114552/
+permalink: /kb/114/Q114552/
 ---
 
 ## Q114552: ADT2: Using Scroll Bar Control to Move Through Records

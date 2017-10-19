@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71737: Aldus PageMaker version 4.0 and Bitstream Facelift"
-permalink: kb/071/Q71737/
+permalink: /kb/071/Q71737/
 ---
 
 ## Q71737: Aldus PageMaker version 4.0 and Bitstream Facelift

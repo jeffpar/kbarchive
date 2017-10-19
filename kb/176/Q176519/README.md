@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176519: Cannot Quit Internet Explorer When You Reset Your MSN Password"
-permalink: kb/176/Q176519/
+permalink: /kb/176/Q176519/
 ---
 
 ## Q176519: Cannot Quit Internet Explorer When You Reset Your MSN Password

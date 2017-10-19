@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90568: Using Calcomp Drawing Board/Pad Series II with Windows 3.1"
-permalink: kb/090/Q90568/
+permalink: /kb/090/Q90568/
 ---
 
 ## Q90568: Using Calcomp Drawing Board/Pad Series II with Windows 3.1

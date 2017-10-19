@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197020: WD97: How to Replace Smart Quotes with Straight Quotes"
-permalink: kb/197/Q197020/
+permalink: /kb/197/Q197020/
 ---
 
 ## Q197020: WD97: How to Replace Smart Quotes with Straight Quotes

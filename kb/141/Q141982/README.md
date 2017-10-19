@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141982: XCLN: REPLY ALL: Inserts Sender's Address"
-permalink: kb/141/Q141982/
+permalink: /kb/141/Q141982/
 ---
 
 ## Q141982: XCLN: REPLY ALL: Inserts Sender's Address

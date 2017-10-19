@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106228: There Is Not Enough Free Space on..."
-permalink: kb/106/Q106228/
+permalink: /kb/106/Q106228/
 ---
 
 ## Q106228: There Is Not Enough Free Space on...

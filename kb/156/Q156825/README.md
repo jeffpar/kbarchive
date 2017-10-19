@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156825: Error Message: Invalid Product Identification Number"
-permalink: kb/156/Q156825/
+permalink: /kb/156/Q156825/
 ---
 
 ## Q156825: Error Message: Invalid Product Identification Number

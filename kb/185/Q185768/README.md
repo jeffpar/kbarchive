@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185768: Baseball 3D Err Msg: You Do Not Have a 3D Display Adapter"
-permalink: kb/185/Q185768/
+permalink: /kb/185/Q185768/
 ---
 
 ## Q185768: Baseball 3D Err Msg: You Do Not Have a 3D Display Adapter

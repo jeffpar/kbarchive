@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111018: Adding the Proof Menu Item to the Excel 5.0 Menu Bar"
-permalink: kb/111/Q111018/
+permalink: /kb/111/Q111018/
 ---
 
 ## Q111018: Adding the Proof Menu Item to the Excel 5.0 Menu Bar

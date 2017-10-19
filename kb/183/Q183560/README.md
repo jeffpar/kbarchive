@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183560: OpenSchema Method Fails for DBSCHEMA_PROVIDER_TYPES"
-permalink: kb/183/Q183560/
+permalink: /kb/183/Q183560/
 ---
 
 ## Q183560: OpenSchema Method Fails for DBSCHEMA_PROVIDER_TYPES

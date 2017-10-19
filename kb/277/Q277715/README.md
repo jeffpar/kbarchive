@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277715: BUG: ExitWindowsEx Function Fails to Shut Down the System"
-permalink: kb/277/Q277715/
+permalink: /kb/277/Q277715/
 ---
 
 ## Q277715: BUG: ExitWindowsEx Function Fails to Shut Down the System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123670: Err Msg: ...Install the NWLINK IPX/SPX Compatible Transport..."
-permalink: kb/123/Q123670/
+permalink: /kb/123/Q123670/
 ---
 
 ## Q123670: Err Msg: ...Install the NWLINK IPX/SPX Compatible Transport...

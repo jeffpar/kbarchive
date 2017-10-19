@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249582: SMS: &quot;Primary Key Violation&quot; Error Message When Processing DDRs"
-permalink: kb/249/Q249582/
+permalink: /kb/249/Q249582/
 ---
 
 ## Q249582: SMS: &quot;Primary Key Violation&quot; Error Message When Processing DDRs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163611: PPT: Sample Code to Retrieve the Fonts Used in a Presentation"
-permalink: kb/163/Q163611/
+permalink: /kb/163/Q163611/
 ---
 
 ## Q163611: PPT: Sample Code to Retrieve the Fonts Used in a Presentation

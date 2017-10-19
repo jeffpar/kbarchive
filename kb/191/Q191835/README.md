@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191835: PRB: Enumerated Data Types in DBGRID32.OCX"
-permalink: kb/191/Q191835/
+permalink: /kb/191/Q191835/
 ---
 
 ## Q191835: PRB: Enumerated Data Types in DBGRID32.OCX

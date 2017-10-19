@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235627: XIMS: AUTH LOGIN Must Use Base-64-Encoded User Name and Password"
-permalink: kb/235/Q235627/
+permalink: /kb/235/Q235627/
 ---
 
 ## Q235627: XIMS: AUTH LOGIN Must Use Base-64-Encoded User Name and Password

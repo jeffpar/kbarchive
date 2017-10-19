@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175964: XCON: MTA Stops Processing Messages and Generates Event ID 210"
-permalink: kb/175/Q175964/
+permalink: /kb/175/Q175964/
 ---
 
 ## Q175964: XCON: MTA Stops Processing Messages and Generates Event ID 210

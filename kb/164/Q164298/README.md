@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164298: Writer 2: How to Preview and Publish Your Web Pages"
-permalink: kb/164/Q164298/
+permalink: /kb/164/Q164298/
 ---
 
 ## Q164298: Writer 2: How to Preview and Publish Your Web Pages

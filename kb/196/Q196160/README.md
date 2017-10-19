@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196160: XWEB: Contacts Information Not Available When Using OWA"
-permalink: kb/196/Q196160/
+permalink: /kb/196/Q196160/
 ---
 
 ## Q196160: XWEB: Contacts Information Not Available When Using OWA

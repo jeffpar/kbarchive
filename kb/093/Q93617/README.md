@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93617: Using FoxBASE+/FoxPro for MS-DOS Databases on a Macintosh"
-permalink: kb/093/Q93617/
+permalink: /kb/093/Q93617/
 ---
 
 ## Q93617: Using FoxBASE+/FoxPro for MS-DOS Databases on a Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105937: FIX: /4Ys or &#36;STRICT on Character Functions Causes F2368"
-permalink: kb/105/Q105937/
+permalink: /kb/105/Q105937/
 ---
 
 ## Q105937: FIX: /4Ys or &#36;STRICT on Character Functions Causes F2368

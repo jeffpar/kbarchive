@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178398: SssccSP2.exe: &quot;The Database is Unavailable...&quot; When Opening Proj"
-permalink: kb/178/Q178398/
+permalink: /kb/178/Q178398/
 ---
 
 ## Q178398: SssccSP2.exe: &quot;The Database is Unavailable...&quot; When Opening Proj

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99962: PC Win: Security=1 Plus Shortcut Key May Hang System"
-permalink: kb/099/Q99962/
+permalink: /kb/099/Q99962/
 ---
 
 ## Q99962: PC Win: Security=1 Plus Shortcut Key May Hang System

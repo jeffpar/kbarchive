@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163560: SLI_OPEN May Complete in Error with No Host Logon Screen"
-permalink: kb/163/Q163560/
+permalink: /kb/163/Q163560/
 ---
 
 ## Q163560: SLI_OPEN May Complete in Error with No Host Logon Screen

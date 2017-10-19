@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124506: Explorapedia: Banded Output Using Hewlett Packard DeskJet"
-permalink: kb/124/Q124506/
+permalink: /kb/124/Q124506/
 ---
 
 ## Q124506: Explorapedia: Banded Output Using Hewlett Packard DeskJet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250263: PDC and BDC Show as Workstations in Server Manager"
-permalink: kb/250/Q250263/
+permalink: /kb/250/Q250263/
 ---
 
 ## Q250263: PDC and BDC Show as Workstations in Server Manager

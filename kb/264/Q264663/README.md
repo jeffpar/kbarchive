@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264663: SC.EXE Command Returns Error: ChangeServiceConfig Failed, rc ="
-permalink: kb/264/Q264663/
+permalink: /kb/264/Q264663/
 ---
 
 ## Q264663: SC.EXE Command Returns Error: ChangeServiceConfig Failed, rc =

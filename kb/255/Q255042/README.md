@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255042: HOWTO: Make Machine Accounts by Using ADSI with Visual C++"
-permalink: kb/255/Q255042/
+permalink: /kb/255/Q255042/
 ---
 
 ## Q255042: HOWTO: Make Machine Accounts by Using ADSI with Visual C++

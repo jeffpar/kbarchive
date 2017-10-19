@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233852: Import COBOL Wizard Inappropriately Flags COBOL Syntax Error"
-permalink: kb/233/Q233852/
+permalink: /kb/233/Q233852/
 ---
 
 ## Q233852: Import COBOL Wizard Inappropriately Flags COBOL Syntax Error

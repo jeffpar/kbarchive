@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316793: IIS5: Greenland Not Displayed As Option in Certificate Wizard"
-permalink: kb/316/Q316793/
+permalink: /kb/316/Q316793/
 ---
 
 ## Q316793: IIS5: Greenland Not Displayed As Option in Certificate Wizard

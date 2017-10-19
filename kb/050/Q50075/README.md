@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50075: Limitations on the Use of the '&#42;' Wildcard Character"
-permalink: kb/050/Q50075/
+permalink: /kb/050/Q50075/
 ---
 
 ## Q50075: Limitations on the Use of the '&#42;' Wildcard Character

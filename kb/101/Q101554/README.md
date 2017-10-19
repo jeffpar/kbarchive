@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101554: PC Mac: Err Msg: The Control Panel...Cannot Be Used with..."
-permalink: kb/101/Q101554/
+permalink: /kb/101/Q101554/
 ---
 
 ## Q101554: PC Mac: Err Msg: The Control Panel...Cannot Be Used with...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162657: Choosing Default Domain Name for RAS Client Authentication"
-permalink: kb/162/Q162657/
+permalink: /kb/162/Q162657/
 ---
 
 ## Q162657: Choosing Default Domain Name for RAS Client Authentication

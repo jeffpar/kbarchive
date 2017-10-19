@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231525: MapPoint 2000 Err Msg: There Was a Problem Opening this File..."
-permalink: kb/231/Q231525/
+permalink: /kb/231/Q231525/
 ---
 
 ## Q231525: MapPoint 2000 Err Msg: There Was a Problem Opening this File...

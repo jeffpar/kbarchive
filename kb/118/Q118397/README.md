@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118397: BUG: SETWINDOWCONFIG Returns an Invalid Configuration"
-permalink: kb/118/Q118397/
+permalink: /kb/118/Q118397/
 ---
 
 ## Q118397: BUG: SETWINDOWCONFIG Returns an Invalid Configuration

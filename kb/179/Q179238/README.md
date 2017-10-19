@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179238: MS-DOS Client 3.0 Hangs with Third-Party DHCP Server"
-permalink: kb/179/Q179238/
+permalink: /kb/179/Q179238/
 ---
 
 ## Q179238: MS-DOS Client 3.0 Hangs with Third-Party DHCP Server

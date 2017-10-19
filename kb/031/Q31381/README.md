@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31381: Everex RAM 3000 Card"
-permalink: kb/031/Q31381/
+permalink: /kb/031/Q31381/
 ---
 
 ## Q31381: Everex RAM 3000 Card

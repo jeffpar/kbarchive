@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125758: Logon Failure on SMP Computer with GSNW or CSNW Installed"
-permalink: kb/125/Q125758/
+permalink: /kb/125/Q125758/
 ---
 
 ## Q125758: Logon Failure on SMP Computer with GSNW or CSNW Installed

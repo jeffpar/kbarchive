@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201082: FIX: No Warning When Control Path Doesn't Return a Value"
-permalink: kb/201/Q201082/
+permalink: /kb/201/Q201082/
 ---
 
 ## Q201082: FIX: No Warning When Control Path Doesn't Return a Value

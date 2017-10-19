@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161081: Windows NT Imaging Scanning Options Unavailable"
-permalink: kb/161/Q161081/
+permalink: /kb/161/Q161081/
 ---
 
 ## Q161081: Windows NT Imaging Scanning Options Unavailable

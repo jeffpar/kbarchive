@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142947: Problems Reinstalling Microsoft Exchange Information Service"
-permalink: kb/142/Q142947/
+permalink: /kb/142/Q142947/
 ---
 
 ## Q142947: Problems Reinstalling Microsoft Exchange Information Service

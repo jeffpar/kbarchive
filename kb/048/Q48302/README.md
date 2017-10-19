@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48302: Demo or Replay Viewed in Current View in Flight Simulator 4.00"
-permalink: kb/048/Q48302/
+permalink: /kb/048/Q48302/
 ---
 
 ## Q48302: Demo or Replay Viewed in Current View in Flight Simulator 4.00

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98387: PC WFW: 3.0b Server Disk 4 [3.5, 720K]"
-permalink: kb/098/Q98387/
+title: "Q98387: PC WFW: 3.0b Server Disk 4 &#91;3.5, 720K&#93;"
+permalink: /kb/098/Q98387/
 ---
 
-## Q98387: PC WFW: 3.0b Server Disk 4 [3.5, 720K]
+## Q98387: PC WFW: 3.0b Server Disk 4 &#91;3.5, 720K&#93;
 
 	Article: Q98387
 	Product(s): Microsoft Mail For PC Networks

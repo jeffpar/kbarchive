@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188043: SMS Admin Shows Incomplete List of Paths for Software Inventory"
-permalink: kb/188/Q188043/
+permalink: /kb/188/Q188043/
 ---
 
 ## Q188043: SMS Admin Shows Incomplete List of Paths for Software Inventory

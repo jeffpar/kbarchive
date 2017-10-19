@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189204: Manual of Style: E-Book Setup Label Incorrect"
-permalink: kb/189/Q189204/
+permalink: /kb/189/Q189204/
 ---
 
 ## Q189204: Manual of Style: E-Book Setup Label Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167833: TCP/IP Connection Disconnected After Inactive Period"
-permalink: kb/167/Q167833/
+permalink: /kb/167/Q167833/
 ---
 
 ## Q167833: TCP/IP Connection Disconnected After Inactive Period

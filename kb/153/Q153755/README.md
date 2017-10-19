@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153755: XCLN: Mac Err Msg: Microsoft Exchange Could not be Started"
-permalink: kb/153/Q153755/
+permalink: /kb/153/Q153755/
 ---
 
 ## Q153755: XCLN: Mac Err Msg: Microsoft Exchange Could not be Started

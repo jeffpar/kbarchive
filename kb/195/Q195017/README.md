@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195017: FIX: Memory Leak in Microsoft Access ODBC Driver in MDAC 2.0"
-permalink: kb/195/Q195017/
+permalink: /kb/195/Q195017/
 ---
 
 ## Q195017: FIX: Memory Leak in Microsoft Access ODBC Driver in MDAC 2.0

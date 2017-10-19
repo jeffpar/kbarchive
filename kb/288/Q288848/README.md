@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288848: XADM: MTA Returns Mail with Transfer-Failure Reason Code"
-permalink: kb/288/Q288848/
+permalink: /kb/288/Q288848/
 ---
 
 ## Q288848: XADM: MTA Returns Mail with Transfer-Failure Reason Code

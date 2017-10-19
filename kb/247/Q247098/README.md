@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247098: HOW TO: Install and Reload the SSL Filter Sspifilt.dll"
-permalink: kb/247/Q247098/
+permalink: /kb/247/Q247098/
 ---
 
 ## Q247098: HOW TO: Install and Reload the SSL Filter Sspifilt.dll

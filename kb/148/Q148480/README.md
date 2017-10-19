@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148480: Sounds Don't Play in Fury 3 with Pro Audio Spectrum"
-permalink: kb/148/Q148480/
+permalink: /kb/148/Q148480/
 ---
 
 ## Q148480: Sounds Don't Play in Fury 3 with Pro Audio Spectrum

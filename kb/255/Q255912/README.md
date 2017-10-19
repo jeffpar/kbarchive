@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255912: Shutting Down COM+ Application at Timeout"
-permalink: kb/255/Q255912/
+permalink: /kb/255/Q255912/
 ---
 
 ## Q255912: Shutting Down COM+ Application at Timeout

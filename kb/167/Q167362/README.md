@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167362: STOP 0x00000050 in Srv.sys When Shutting Down Computer"
-permalink: kb/167/Q167362/
+permalink: /kb/167/Q167362/
 ---
 
 ## Q167362: STOP 0x00000050 in Srv.sys When Shutting Down Computer

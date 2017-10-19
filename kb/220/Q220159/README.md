@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220159: Disabling the MSDOS and WOWEXEC Subsystems on Terminal Server"
-permalink: kb/220/Q220159/
+permalink: /kb/220/Q220159/
 ---
 
 ## Q220159: Disabling the MSDOS and WOWEXEC Subsystems on Terminal Server

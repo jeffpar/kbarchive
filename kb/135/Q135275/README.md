@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135275: Windows NT Backup : Incorrect Date in &quot;Tape Name&quot; Text"
-permalink: kb/135/Q135275/
+permalink: /kb/135/Q135275/
 ---
 
 ## Q135275: Windows NT Backup : Incorrect Date in &quot;Tape Name&quot; Text

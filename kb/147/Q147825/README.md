@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147825: RAS Server Does Not Autodisconnect If NetBIOS Gateway Disabled"
-permalink: kb/147/Q147825/
+permalink: /kb/147/Q147825/
 ---
 
 ## Q147825: RAS Server Does Not Autodisconnect If NetBIOS Gateway Disabled

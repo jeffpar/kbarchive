@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169695: XCON: Invalid Originator Address When Sending to X.400"
-permalink: kb/169/Q169695/
+permalink: /kb/169/Q169695/
 ---
 
 ## Q169695: XCON: Invalid Originator Address When Sending to X.400

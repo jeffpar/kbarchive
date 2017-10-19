@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132169: Data Encryption Causes RAS NetBIOS Error 640 Error Message"
-permalink: kb/132/Q132169/
+permalink: /kb/132/Q132169/
 ---
 
 ## Q132169: Data Encryption Causes RAS NetBIOS Error 640 Error Message

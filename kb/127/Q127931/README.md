@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127931: Macintosh System 7.5 File Find Returns Error -5000"
-permalink: kb/127/Q127931/
+permalink: /kb/127/Q127931/
 ---
 
 ## Q127931: Macintosh System 7.5 File Find Returns Error -5000

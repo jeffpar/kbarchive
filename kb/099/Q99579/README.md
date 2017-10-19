@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99579: Mac Wkst: Mixed Workstation Versions and Admin Functions"
-permalink: kb/099/Q99579/
+permalink: /kb/099/Q99579/
 ---
 
 ## Q99579: Mac Wkst: Mixed Workstation Versions and Admin Functions

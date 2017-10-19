@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172452: Windows NT Stops Responding or Delays During Shutdown Process"
-permalink: kb/172/Q172452/
+permalink: /kb/172/Q172452/
 ---
 
 ## Q172452: Windows NT Stops Responding or Delays During Shutdown Process

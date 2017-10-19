@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168493: PPT: Narration Does Not Play From Unpacked PPT97 Presentation"
-permalink: kb/168/Q168493/
+permalink: /kb/168/Q168493/
 ---
 
 ## Q168493: PPT: Narration Does Not Play From Unpacked PPT97 Presentation

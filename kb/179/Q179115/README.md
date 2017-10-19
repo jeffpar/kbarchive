@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179115: XADM: Custom Attributes Not Updated in Column View"
-permalink: kb/179/Q179115/
+permalink: /kb/179/Q179115/
 ---
 
 ## Q179115: XADM: Custom Attributes Not Updated in Column View

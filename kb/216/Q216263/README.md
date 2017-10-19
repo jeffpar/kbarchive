@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216263: Windows NT 4.0 Evaluation Edition Prompts for Clock Setting"
-permalink: kb/216/Q216263/
+permalink: /kb/216/Q216263/
 ---
 
 ## Q216263: Windows NT 4.0 Evaluation Edition Prompts for Clock Setting

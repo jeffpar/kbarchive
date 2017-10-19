@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171627: Incorrect Data Printed When PDF File Used with AS/400 Printing"
-permalink: kb/171/Q171627/
+permalink: /kb/171/Q171627/
 ---
 
 ## Q171627: Incorrect Data Printed When PDF File Used with AS/400 Printing

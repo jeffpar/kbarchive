@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176458: XCLN: Misleading Message After Installing Service Pack 1"
-permalink: kb/176/Q176458/
+permalink: /kb/176/Q176458/
 ---
 
 ## Q176458: XCLN: Misleading Message After Installing Service Pack 1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193846: HOWTO: Modify the Process Priority of a Shelled Application"
-permalink: kb/193/Q193846/
+permalink: /kb/193/Q193846/
 ---
 
 ## Q193846: HOWTO: Modify the Process Priority of a Shelled Application

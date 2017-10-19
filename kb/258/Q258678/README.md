@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258678: XFOR: NDR Sending Mail To User Migrated From Lotus Notes"
-permalink: kb/258/Q258678/
+permalink: /kb/258/Q258678/
 ---
 
 ## Q258678: XFOR: NDR Sending Mail To User Migrated From Lotus Notes

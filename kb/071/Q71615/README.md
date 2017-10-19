@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71615: Timer in Minesweeper Will Not Start"
-permalink: kb/071/Q71615/
+permalink: /kb/071/Q71615/
 ---
 
 ## Q71615: Timer in Minesweeper Will Not Start

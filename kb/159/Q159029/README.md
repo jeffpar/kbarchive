@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159029: WD97: Macro to Count Number of Rows in a Table"
-permalink: kb/159/Q159029/
+permalink: /kb/159/Q159029/
 ---
 
 ## Q159029: WD97: Macro to Count Number of Rows in a Table

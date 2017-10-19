@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237780: GDI Subsystem Stops Responding (Hangs) and Returns Error Message"
-permalink: kb/237/Q237780/
+permalink: /kb/237/Q237780/
 ---
 
 ## Q237780: GDI Subsystem Stops Responding (Hangs) and Returns Error Message

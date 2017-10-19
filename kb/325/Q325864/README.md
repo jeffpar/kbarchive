@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325864: HOW TO: Install and Use the IIS Lockdown Wizard"
-permalink: kb/325/Q325864/
+permalink: /kb/325/Q325864/
 ---
 
 ## Q325864: HOW TO: Install and Use the IIS Lockdown Wizard

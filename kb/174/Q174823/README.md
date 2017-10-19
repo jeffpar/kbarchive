@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174823: Cannot Resize Fonts on Web Sites Using MSN or Internet Explorer"
-permalink: kb/174/Q174823/
+permalink: /kb/174/Q174823/
 ---
 
 ## Q174823: Cannot Resize Fonts on Web Sites Using MSN or Internet Explorer

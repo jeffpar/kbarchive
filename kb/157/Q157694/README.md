@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157694: XFOR: Exchange Corrupts FIPS Header with MCI Mail"
-permalink: kb/157/Q157694/
+permalink: /kb/157/Q157694/
 ---
 
 ## Q157694: XFOR: Exchange Corrupts FIPS Header with MCI Mail

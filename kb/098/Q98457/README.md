@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98457: Using VSAFE and Vsafe Manager (MWAVTSR.EXE) with Windows"
-permalink: kb/098/Q98457/
+permalink: /kb/098/Q98457/
 ---
 
 ## Q98457: Using VSAFE and Vsafe Manager (MWAVTSR.EXE) with Windows

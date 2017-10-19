@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191834: Network Problems That Occur When Logging Off May Corrupt Profile"
-permalink: kb/191/Q191834/
+permalink: /kb/191/Q191834/
 ---
 
 ## Q191834: Network Problems That Occur When Logging Off May Corrupt Profile

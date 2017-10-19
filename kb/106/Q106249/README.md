@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106249: WFWG 3.11 ErrMsg: Error 13: The Data Is Invalid"
-permalink: kb/106/Q106249/
+permalink: /kb/106/Q106249/
 ---
 
 ## Q106249: WFWG 3.11 ErrMsg: Error 13: The Data Is Invalid

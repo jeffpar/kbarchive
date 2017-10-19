@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160349: DNS Does Not Support &#36;INCLUDE Statement"
-permalink: kb/160/Q160349/
+permalink: /kb/160/Q160349/
 ---
 
 ## Q160349: DNS Does Not Support &#36;INCLUDE Statement

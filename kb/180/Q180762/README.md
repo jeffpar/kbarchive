@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180762: BUG: SetFocus Changes CommandButton Value to True"
-permalink: kb/180/Q180762/
+permalink: /kb/180/Q180762/
 ---
 
 ## Q180762: BUG: SetFocus Changes CommandButton Value to True

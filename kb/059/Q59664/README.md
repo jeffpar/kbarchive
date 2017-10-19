@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59664: Two Errors Reading Empty Drive A in Paintbrush"
-permalink: kb/059/Q59664/
+permalink: /kb/059/Q59664/
 ---
 
 ## Q59664: Two Errors Reading Empty Drive A in Paintbrush

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249970: Print Server May Send CR and LF in Wrong Order"
-permalink: kb/249/Q249970/
+permalink: /kb/249/Q249970/
 ---
 
 ## Q249970: Print Server May Send CR and LF in Wrong Order

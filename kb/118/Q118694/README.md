@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118694: Alternating DOS Client RPC Calls Fail"
-permalink: kb/118/Q118694/
+permalink: /kb/118/Q118694/
 ---
 
 ## Q118694: Alternating DOS Client RPC Calls Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175949: INFO: List of Values for Action Parameter of Validate Event"
-permalink: kb/175/Q175949/
+permalink: /kb/175/Q175949/
 ---
 
 ## Q175949: INFO: List of Values for Action Parameter of Validate Event

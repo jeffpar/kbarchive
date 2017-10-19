@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154322: First Line Is Not Printed Using Generic/Text Only Printer Driver"
-permalink: kb/154/Q154322/
+permalink: /kb/154/Q154322/
 ---
 
 ## Q154322: First Line Is Not Printed Using Generic/Text Only Printer Driver

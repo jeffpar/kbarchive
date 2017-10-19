@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103960: PC Ext: Err Msg: Error 021: Message Was Not Delivered..."
-permalink: kb/103/Q103960/
+permalink: /kb/103/Q103960/
 ---
 
 ## Q103960: PC Ext: Err Msg: Error 021: Message Was Not Delivered...

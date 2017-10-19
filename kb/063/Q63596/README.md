@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63596: Fact Sheet for IBM's DASDDRVR.SYS and Microsoft Windows 3.0"
-permalink: kb/063/Q63596/
+permalink: /kb/063/Q63596/
 ---
 
 ## Q63596: Fact Sheet for IBM's DASDDRVR.SYS and Microsoft Windows 3.0

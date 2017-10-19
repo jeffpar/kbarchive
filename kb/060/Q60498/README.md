@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60498: HIMEM.SYS May Not Support All XMS API Functions"
-permalink: kb/060/Q60498/
+permalink: /kb/060/Q60498/
 ---
 
 ## Q60498: HIMEM.SYS May Not Support All XMS API Functions

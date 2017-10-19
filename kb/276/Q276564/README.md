@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276564: SMS: SMS Client Service Stops Responding (Hangs) During Startup"
-permalink: kb/276/Q276564/
+permalink: /kb/276/Q276564/
 ---
 
 ## Q276564: SMS: SMS Client Service Stops Responding (Hangs) During Startup

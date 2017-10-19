@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297261: IIS 5: SMTP/NNTP Virtual Server Missing in ISM"
-permalink: kb/297/Q297261/
+permalink: /kb/297/Q297261/
 ---
 
 ## Q297261: IIS 5: SMTP/NNTP Virtual Server Missing in ISM

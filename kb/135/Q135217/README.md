@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135217: Problems with Hardware Cursor on Compaq LTE Elite"
-permalink: kb/135/Q135217/
+permalink: /kb/135/Q135217/
 ---
 
 ## Q135217: Problems with Hardware Cursor on Compaq LTE Elite

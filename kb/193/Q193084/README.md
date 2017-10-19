@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193084: Motocross Madness: 3-D Effects Are Not Applied to Riders"
-permalink: kb/193/Q193084/
+permalink: /kb/193/Q193084/
 ---
 
 ## Q193084: Motocross Madness: 3-D Effects Are Not Applied to Riders

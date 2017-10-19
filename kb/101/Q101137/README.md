@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101137: PC DirSync: Possible Failure of Directory Synchronization"
-permalink: kb/101/Q101137/
+permalink: /kb/101/Q101137/
 ---
 
 ## Q101137: PC DirSync: Possible Failure of Directory Synchronization

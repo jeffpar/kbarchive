@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260213: SMS: Bindery Logon Server Manager Causes Logon Problems"
-permalink: kb/260/Q260213/
+permalink: /kb/260/Q260213/
 ---
 
 ## Q260213: SMS: Bindery Logon Server Manager Causes Logon Problems

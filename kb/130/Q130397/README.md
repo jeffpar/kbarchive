@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130397: PC MMTA: Digiboard Error Messages"
-permalink: kb/130/Q130397/
+permalink: /kb/130/Q130397/
 ---
 
 ## Q130397: PC MMTA: Digiboard Error Messages

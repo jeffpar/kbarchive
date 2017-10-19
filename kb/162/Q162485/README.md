@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162485: XWEB: ASC Doesn't Show Number of Unread Messages"
-permalink: kb/162/Q162485/
+permalink: /kb/162/Q162485/
 ---
 
 ## Q162485: XWEB: ASC Doesn't Show Number of Unread Messages

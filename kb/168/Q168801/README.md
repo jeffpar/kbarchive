@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168801: How to Enable Cluster Logging in Microsoft Cluster Server"
-permalink: kb/168/Q168801/
+permalink: /kb/168/Q168801/
 ---
 
 ## Q168801: How to Enable Cluster Logging in Microsoft Cluster Server

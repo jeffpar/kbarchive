@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247062: Code Page 852 Not Working Since Windows NT 4.0 Service Pack 4"
-permalink: kb/247/Q247062/
+permalink: /kb/247/Q247062/
 ---
 
 ## Q247062: Code Page 852 Not Working Since Windows NT 4.0 Service Pack 4

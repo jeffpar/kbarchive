@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193486: Differences Between Windows 95 and Windows NT SNA Clients"
-permalink: kb/193/Q193486/
+permalink: /kb/193/Q193486/
 ---
 
 ## Q193486: Differences Between Windows 95 and Windows NT SNA Clients

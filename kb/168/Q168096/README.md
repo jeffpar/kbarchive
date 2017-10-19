@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168096: Windows 95 SNA Server Client And Encryption Requirements"
-permalink: kb/168/Q168096/
+permalink: /kb/168/Q168096/
 ---
 
 ## Q168096: Windows 95 SNA Server Client And Encryption Requirements

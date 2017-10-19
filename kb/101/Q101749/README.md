@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101749: PC Adm: Compression of External Postoffice &amp; Gateway Mailbags"
-permalink: kb/101/Q101749/
+permalink: /kb/101/Q101749/
 ---
 
 ## Q101749: PC Adm: Compression of External Postoffice &amp; Gateway Mailbags

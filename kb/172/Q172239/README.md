@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172239: BUG: OpenResultset Doesn't Fire QueryComplete in Class Module"
-permalink: kb/172/Q172239/
+permalink: /kb/172/Q172239/
 ---
 
 ## Q172239: BUG: OpenResultset Doesn't Fire QueryComplete in Class Module

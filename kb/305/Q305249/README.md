@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305249: &quot;Error 5. Access Is Denied&quot; Error Message Connecting to MSN"
-permalink: kb/305/Q305249/
+permalink: /kb/305/Q305249/
 ---
 
 ## Q305249: &quot;Error 5. Access Is Denied&quot; Error Message Connecting to MSN

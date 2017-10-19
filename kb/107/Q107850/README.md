@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107850: VB CDK Cannot Access the Properties of the VB System Objects"
-permalink: kb/107/Q107850/
+permalink: /kb/107/Q107850/
 ---
 
 ## Q107850: VB CDK Cannot Access the Properties of the VB System Objects

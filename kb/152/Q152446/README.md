@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152446: XCON: Dead Letter Recipient Button is Missing"
-permalink: kb/152/Q152446/
+permalink: /kb/152/Q152446/
 ---
 
 ## Q152446: XCON: Dead Letter Recipient Button is Missing

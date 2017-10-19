@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107094: PROFS: Transferring Reader Files with CMS Transfer"
-permalink: kb/107/Q107094/
+permalink: /kb/107/Q107094/
 ---
 
 ## Q107094: PROFS: Transferring Reader Files with CMS Transfer

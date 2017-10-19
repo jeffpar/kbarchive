@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246462: Print Jobs Randomly Stop Responding with HP JetDirect Printing"
-permalink: kb/246/Q246462/
+permalink: /kb/246/Q246462/
 ---
 
 ## Q246462: Print Jobs Randomly Stop Responding with HP JetDirect Printing

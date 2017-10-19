@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172410: Mac Bookshelf 98: Power Mac Version of Product Not Installed"
-permalink: kb/172/Q172410/
+permalink: /kb/172/Q172410/
 ---
 
 ## Q172410: Mac Bookshelf 98: Power Mac Version of Product Not Installed

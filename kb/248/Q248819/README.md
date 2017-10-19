@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248819: IIS 4.0 Logs Incorrect Values for Bytes Sent Field in W3C"
-permalink: kb/248/Q248819/
+permalink: /kb/248/Q248819/
 ---
 
 ## Q248819: IIS 4.0 Logs Incorrect Values for Bytes Sent Field in W3C

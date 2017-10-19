@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151414: Windows 95/98 Partition Types Not Recognized by Windows NT"
-permalink: kb/151/Q151414/
+permalink: /kb/151/Q151414/
 ---
 
 ## Q151414: Windows 95/98 Partition Types Not Recognized by Windows NT

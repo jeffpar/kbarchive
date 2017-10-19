@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234745: XFOR: Corrupted Message Stops Inbound Traffic, Monopolizes CPU"
-permalink: kb/234/Q234745/
+permalink: /kb/234/Q234745/
 ---
 
 ## Q234745: XFOR: Corrupted Message Stops Inbound Traffic, Monopolizes CPU

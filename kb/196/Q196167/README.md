@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196167: XADM: Unable to Initialize Extension Data Attributes"
-permalink: kb/196/Q196167/
+permalink: /kb/196/Q196167/
 ---
 
 ## Q196167: XADM: Unable to Initialize Extension Data Attributes

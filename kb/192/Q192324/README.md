@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192324: XADM: Dumpster Size Performance Monitor Value Wraps Prematurely"
-permalink: kb/192/Q192324/
+permalink: /kb/192/Q192324/
 ---
 
 ## Q192324: XADM: Dumpster Size Performance Monitor Value Wraps Prematurely

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171823: FIX: Application Error Using Implements on Hyperlink Object"
-permalink: kb/171/Q171823/
+permalink: /kb/171/Q171823/
 ---
 
 ## Q171823: FIX: Application Error Using Implements on Hyperlink Object

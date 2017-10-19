@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196846: XFOR: Migration Wizard Fails when Migrating from GroupWise 4.1a"
-permalink: kb/196/Q196846/
+permalink: /kb/196/Q196846/
 ---
 
 ## Q196846: XFOR: Migration Wizard Fails when Migrating from GroupWise 4.1a

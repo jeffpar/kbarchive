@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202520: FILE: CDX(), TAG(), and SYS(14) Function to Create Index Utility"
-permalink: kb/202/Q202520/
+permalink: /kb/202/Q202520/
 ---
 
 ## Q202520: FILE: CDX(), TAG(), and SYS(14) Function to Create Index Utility

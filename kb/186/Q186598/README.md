@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186598: Terminal Server Commands: RESET SESSION"
-permalink: kb/186/Q186598/
+permalink: /kb/186/Q186598/
 ---
 
 ## Q186598: Terminal Server Commands: RESET SESSION

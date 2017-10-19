@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174304: WD97: ODMA Save As Command Does Not Close the Previous Document"
-permalink: kb/174/Q174304/
+permalink: /kb/174/Q174304/
 ---
 
 ## Q174304: WD97: ODMA Save As Command Does Not Close the Previous Document

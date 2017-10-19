@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182085: XCON: MTA Fails with 9405 Error Queue-Desc-Object (ID1)"
-permalink: kb/182/Q182085/
+permalink: /kb/182/Q182085/
 ---
 
 ## Q182085: XCON: MTA Fails with 9405 Error Queue-Desc-Object (ID1)

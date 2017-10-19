@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87404: PC DB: What the TID.GLB File Is Used For"
-permalink: kb/087/Q87404/
+permalink: /kb/087/Q87404/
 ---
 
 ## Q87404: PC DB: What the TID.GLB File Is Used For

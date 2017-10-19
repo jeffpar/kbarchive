@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278678: Slow Performance Accessing Local Drives with Share Name"
-permalink: kb/278/Q278678/
+permalink: /kb/278/Q278678/
 ---
 
 ## Q278678: Slow Performance Accessing Local Drives with Share Name

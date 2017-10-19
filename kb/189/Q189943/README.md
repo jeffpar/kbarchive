@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189943: Performance Counters Become Corrupted After BackOffice 4.0 Setup"
-permalink: kb/189/Q189943/
+permalink: /kb/189/Q189943/
 ---
 
 ## Q189943: Performance Counters Become Corrupted After BackOffice 4.0 Setup

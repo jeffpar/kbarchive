@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82483: Err Msg: Virtual Machine Error 19 (Lotus 1-2-3)"
-permalink: kb/082/Q82483/
+permalink: /kb/082/Q82483/
 ---
 
 ## Q82483: Err Msg: Virtual Machine Error 19 (Lotus 1-2-3)

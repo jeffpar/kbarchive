@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242223: XADM: How to Install and Use the Global Address List Modify Tool"
-permalink: kb/242/Q242223/
+permalink: /kb/242/Q242223/
 ---
 
 ## Q242223: XADM: How to Install and Use the Global Address List Modify Tool

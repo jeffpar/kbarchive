@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78573: The Second Parameter of the BUFFERS Command"
-permalink: kb/078/Q78573/
+permalink: /kb/078/Q78573/
 ---
 
 ## Q78573: The Second Parameter of the BUFFERS Command

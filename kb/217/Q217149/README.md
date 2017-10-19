@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217149: XFOR: Chat Service May Terminate Unexpectedly"
-permalink: kb/217/Q217149/
+permalink: /kb/217/Q217149/
 ---
 
 ## Q217149: XFOR: Chat Service May Terminate Unexpectedly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112266: PC DOS: Updating Monitor Hotkey Status"
-permalink: kb/112/Q112266/
+permalink: /kb/112/Q112266/
 ---
 
 ## Q112266: PC DOS: Updating Monitor Hotkey Status

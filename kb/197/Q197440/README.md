@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197440: WD97: &quot;Find Whole Words Only&quot; Option Unavailable"
-permalink: kb/197/Q197440/
+permalink: /kb/197/Q197440/
 ---
 
 ## Q197440: WD97: &quot;Find Whole Words Only&quot; Option Unavailable

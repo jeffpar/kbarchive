@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186407: SMS: Access Violation When RAW Files Are Larger Than 48 KB"
-permalink: kb/186/Q186407/
+permalink: /kb/186/Q186407/
 ---
 
 ## Q186407: SMS: Access Violation When RAW Files Are Larger Than 48 KB

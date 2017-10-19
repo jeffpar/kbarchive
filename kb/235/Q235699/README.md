@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235699: XFOR: Meetings Incorrectly Migrated from GroupWise 4.x"
-permalink: kb/235/Q235699/
+permalink: /kb/235/Q235699/
 ---
 
 ## Q235699: XFOR: Meetings Incorrectly Migrated from GroupWise 4.x

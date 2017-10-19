@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176919: IIS Fails to Display Custom Error Messages for .asp Files"
-permalink: kb/176/Q176919/
+permalink: /kb/176/Q176919/
 ---
 
 ## Q176919: IIS Fails to Display Custom Error Messages for .asp Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245637: Some LARGE LUN Numbers Are Not Available to the Computer"
-permalink: kb/245/Q245637/
+permalink: /kb/245/Q245637/
 ---
 
 ## Q245637: Some LARGE LUN Numbers Are Not Available to the Computer

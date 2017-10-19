@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139030: HOWTO: Edit Resources in Executables with Visual C++"
-permalink: kb/139/Q139030/
+permalink: /kb/139/Q139030/
 ---
 
 ## Q139030: HOWTO: Edit Resources in Executables with Visual C++

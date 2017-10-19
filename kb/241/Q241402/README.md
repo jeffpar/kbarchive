@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241402: HOWTO: Run ADOCE on a Palm-Size PC Device from VBCE6"
-permalink: kb/241/Q241402/
+permalink: /kb/241/Q241402/
 ---
 
 ## Q241402: HOWTO: Run ADOCE on a Palm-Size PC Device from VBCE6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136421: How NULL Values Sort in Indexes"
-permalink: kb/136/Q136421/
+permalink: /kb/136/Q136421/
 ---
 
 ## Q136421: How NULL Values Sort in Indexes

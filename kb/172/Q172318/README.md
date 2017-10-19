@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172318: WD97: Run Time Error If Court Name Blank in Pleading Wizard"
-permalink: kb/172/Q172318/
+permalink: /kb/172/Q172318/
 ---
 
 ## Q172318: WD97: Run Time Error If Court Name Blank in Pleading Wizard

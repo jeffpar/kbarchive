@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119333: PRB: CWinApp-Based DLL Gets Assertion Failure on Win32s"
-permalink: kb/119/Q119333/
+permalink: /kb/119/Q119333/
 ---
 
 ## Q119333: PRB: CWinApp-Based DLL Gets Assertion Failure on Win32s

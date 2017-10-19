@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155133: PRB: ClassWizard Doesn't Bring in Proper Header File"
-permalink: kb/155/Q155133/
+permalink: /kb/155/Q155133/
 ---
 
 ## Q155133: PRB: ClassWizard Doesn't Bring in Proper Header File

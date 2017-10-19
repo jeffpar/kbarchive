@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122367: Resizing Telnet Window with Full Drag Enabled Is Jerky"
-permalink: kb/122/Q122367/
+permalink: /kb/122/Q122367/
 ---
 
 ## Q122367: Resizing Telnet Window with Full Drag Enabled Is Jerky

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137271: Group Policies Are Not Recognized with NETX or VLM"
-permalink: kb/137/Q137271/
+permalink: /kb/137/Q137271/
 ---
 
 ## Q137271: Group Policies Are Not Recognized with NETX or VLM

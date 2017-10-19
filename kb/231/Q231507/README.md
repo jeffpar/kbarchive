@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231507: MapPoint 2000: Found Addresses Are Not Marked with Yellow Circle"
-permalink: kb/231/Q231507/
+permalink: /kb/231/Q231507/
 ---
 
 ## Q231507: MapPoint 2000: Found Addresses Are Not Marked with Yellow Circle

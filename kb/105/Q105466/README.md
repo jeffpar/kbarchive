@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105466: Windows NT CD Contents &#92;DRVLIB (528)"
-permalink: kb/105/Q105466/
+permalink: /kb/105/Q105466/
 ---
 
 ## Q105466: Windows NT CD Contents &#92;DRVLIB (528)

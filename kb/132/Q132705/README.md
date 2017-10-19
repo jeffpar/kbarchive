@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132705: PRB: Errors When You Edit Bitmaps with More Than 16 or 256 Color"
-permalink: kb/132/Q132705/
+permalink: /kb/132/Q132705/
 ---
 
 ## Q132705: PRB: Errors When You Edit Bitmaps with More Than 16 or 256 Color

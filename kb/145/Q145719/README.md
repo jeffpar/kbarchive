@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145719: BUG: DAOENROL - Can't See Added Records in Windows 95"
-permalink: kb/145/Q145719/
+permalink: /kb/145/Q145719/
 ---
 
 ## Q145719: BUG: DAOENROL - Can't See Added Records in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95963: PC Win: Err Msg: Stop: A New Message Could Not Be Created"
-permalink: kb/095/Q95963/
+permalink: /kb/095/Q95963/
 ---
 
 ## Q95963: PC Win: Err Msg: Stop: A New Message Could Not Be Created

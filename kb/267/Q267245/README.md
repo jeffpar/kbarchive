@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267245: XIMS: Internet Mail Service Returns NDR or Silently Drops E-Mail"
-permalink: kb/267/Q267245/
+permalink: /kb/267/Q267245/
 ---
 
 ## Q267245: XIMS: Internet Mail Service Returns NDR or Silently Drops E-Mail

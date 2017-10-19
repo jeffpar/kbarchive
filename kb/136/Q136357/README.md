@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136357: Fury3: Help Text Hard to Read in Certain Color Schemes"
-permalink: kb/136/Q136357/
+permalink: /kb/136/Q136357/
 ---
 
 ## Q136357: Fury3: Help Text Hard to Read in Certain Color Schemes

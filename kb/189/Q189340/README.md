@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189340: XADM: Msg. Auto-Forwarded Though Automatic Replies Is Disabled"
-permalink: kb/189/Q189340/
+permalink: /kb/189/Q189340/
 ---
 
 ## Q189340: XADM: Msg. Auto-Forwarded Though Automatic Replies Is Disabled

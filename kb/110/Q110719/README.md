@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110719: PRB: CTime DDX Routine for CRecordView Date Fields"
-permalink: kb/110/Q110719/
+permalink: /kb/110/Q110719/
 ---
 
 ## Q110719: PRB: CTime DDX Routine for CRecordView Date Fields

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158002: STL Sample for the Predicate Version of partial_sort Function"
-permalink: kb/158/Q158002/
+permalink: /kb/158/Q158002/
 ---
 
 ## Q158002: STL Sample for the Predicate Version of partial_sort Function

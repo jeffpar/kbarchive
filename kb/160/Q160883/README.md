@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160883: Falcon 5250 Emulator May GP Fault While Opening Second Session"
-permalink: kb/160/Q160883/
+permalink: /kb/160/Q160883/
 ---
 
 ## Q160883: Falcon 5250 Emulator May GP Fault While Opening Second Session

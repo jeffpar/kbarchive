@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234295: XADM: Changing Database Paths Using the Administrator Program"
-permalink: kb/234/Q234295/
+permalink: /kb/234/Q234295/
 ---
 
 ## Q234295: XADM: Changing Database Paths Using the Administrator Program

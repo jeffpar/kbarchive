@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152750: LPRHELP Does not Pass &quot;L&quot; Command When Banners Are Off"
-permalink: kb/152/Q152750/
+permalink: /kb/152/Q152750/
 ---
 
 ## Q152750: LPRHELP Does not Pass &quot;L&quot; Command When Banners Are Off

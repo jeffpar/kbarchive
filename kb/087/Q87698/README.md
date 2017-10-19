@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87698: PRB: &quot;Feature Not Available&quot; Error in Distribution Version"
-permalink: kb/087/Q87698/
+permalink: /kb/087/Q87698/
 ---
 
 ## Q87698: PRB: &quot;Feature Not Available&quot; Error in Distribution Version

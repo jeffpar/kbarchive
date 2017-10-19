@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258532: FIX:All Characters in Report Don't Print Under Localized Windows"
-permalink: kb/258/Q258532/
+permalink: /kb/258/Q258532/
 ---
 
 ## Q258532: FIX:All Characters in Report Don't Print Under Localized Windows

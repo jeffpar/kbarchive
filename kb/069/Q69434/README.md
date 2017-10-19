@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69434: Pagemaker Err Msg: Memory Manager Failure"
-permalink: kb/069/Q69434/
+permalink: /kb/069/Q69434/
 ---
 
 ## Q69434: Pagemaker Err Msg: Memory Manager Failure

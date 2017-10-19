@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150302: Overlapped I/O to Tape Results In Data Corruption"
-permalink: kb/150/Q150302/
+permalink: /kb/150/Q150302/
 ---
 
 ## Q150302: Overlapped I/O to Tape Results In Data Corruption

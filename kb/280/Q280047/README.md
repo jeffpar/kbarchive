@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280047: Encarta: Cannot Print Image Colors Correctly"
-permalink: kb/280/Q280047/
+permalink: /kb/280/Q280047/
 ---
 
 ## Q280047: Encarta: Cannot Print Image Colors Correctly

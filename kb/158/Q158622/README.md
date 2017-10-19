@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158622: BUG: Cursor Library Fails to Close Buffer"
-permalink: kb/158/Q158622/
+permalink: /kb/158/Q158622/
 ---
 
 ## Q158622: BUG: Cursor Library Fails to Close Buffer

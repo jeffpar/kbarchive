@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74587: Older Mouse Systems Drivers Incompatible with MS-DOS 5.0 Shell"
-permalink: kb/074/Q74587/
+permalink: /kb/074/Q74587/
 ---
 
 ## Q74587: Older Mouse Systems Drivers Incompatible with MS-DOS 5.0 Shell

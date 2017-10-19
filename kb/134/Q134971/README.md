@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134971: Cannot Create Setup Disks From MSDN CD-ROM"
-permalink: kb/134/Q134971/
+permalink: /kb/134/Q134971/
 ---
 
 ## Q134971: Cannot Create Setup Disks From MSDN CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166065: WV: Cannot Paste to the Desktop Folder from Word Viewer"
-permalink: kb/166/Q166065/
+permalink: /kb/166/Q166065/
 ---
 
 ## Q166065: WV: Cannot Paste to the Desktop Folder from Word Viewer

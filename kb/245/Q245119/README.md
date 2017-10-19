@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245119: XCLN: How to Automatically Download the Offline Address Book"
-permalink: kb/245/Q245119/
+permalink: /kb/245/Q245119/
 ---
 
 ## Q245119: XCLN: How to Automatically Download the Offline Address Book

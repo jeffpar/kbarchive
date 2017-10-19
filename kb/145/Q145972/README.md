@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145972: XCLN: Cannot Move Messages by Moving Group Header"
-permalink: kb/145/Q145972/
+permalink: /kb/145/Q145972/
 ---
 
 ## Q145972: XCLN: Cannot Move Messages by Moving Group Header

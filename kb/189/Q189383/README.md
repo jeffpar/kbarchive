@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189383: PRB: ASSERT(hbrBtnFace != NULL) In AuxData.cpp"
-permalink: kb/189/Q189383/
+permalink: /kb/189/Q189383/
 ---
 
 ## Q189383: PRB: ASSERT(hbrBtnFace != NULL) In AuxData.cpp

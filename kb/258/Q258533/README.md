@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258533: FIX: Can't Resize Column Widths under Localized Windows"
-permalink: kb/258/Q258533/
+permalink: /kb/258/Q258533/
 ---
 
 ## Q258533: FIX: Can't Resize Column Widths under Localized Windows

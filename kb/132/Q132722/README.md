@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132722: Server Instability After Reboot Caused by NDIS Driver Problem"
-permalink: kb/132/Q132722/
+permalink: /kb/132/Q132722/
 ---
 
 ## Q132722: Server Instability After Reboot Caused by NDIS Driver Problem

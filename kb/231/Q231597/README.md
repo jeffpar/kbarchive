@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231597: Midtown Madness: Screen Elements Are Not Displayed Properly"
-permalink: kb/231/Q231597/
+permalink: /kb/231/Q231597/
 ---
 
 ## Q231597: Midtown Madness: Screen Elements Are Not Displayed Properly

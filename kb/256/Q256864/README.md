@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256864: SMS: Windows 2000 Professional May Appear as Windows NT Server"
-permalink: kb/256/Q256864/
+permalink: /kb/256/Q256864/
 ---
 
 ## Q256864: SMS: Windows 2000 Professional May Appear as Windows NT Server

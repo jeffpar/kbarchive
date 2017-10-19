@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299322: FIX: Error with Repeated AddObject/RemoveObject Calls"
-permalink: kb/299/Q299322/
+permalink: /kb/299/Q299322/
 ---
 
 ## Q299322: FIX: Error with Repeated AddObject/RemoveObject Calls

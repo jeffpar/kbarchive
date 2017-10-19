@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170825: RAS Auto-Answer Behavior in Windows NT"
-permalink: kb/170/Q170825/
+permalink: /kb/170/Q170825/
 ---
 
 ## Q170825: RAS Auto-Answer Behavior in Windows NT

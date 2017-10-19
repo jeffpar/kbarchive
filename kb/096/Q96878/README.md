@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96878: File Manager Does Not Create Complete MS-DOS 6.x System Disk"
-permalink: kb/096/Q96878/
+permalink: /kb/096/Q96878/
 ---
 
 ## Q96878: File Manager Does Not Create Complete MS-DOS 6.x System Disk

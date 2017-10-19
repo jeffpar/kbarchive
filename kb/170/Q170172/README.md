@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170172: PRB: Changing Form ScaleMode Does Not Alter Grid Partition Value"
-permalink: kb/170/Q170172/
+permalink: /kb/170/Q170172/
 ---
 
 ## Q170172: PRB: Changing Form ScaleMode Does Not Alter Grid Partition Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216185: HOWTO: Create Multi-Column Menus in Visual Basic Using the WIN32"
-permalink: kb/216/Q216185/
+permalink: /kb/216/Q216185/
 ---
 
 ## Q216185: HOWTO: Create Multi-Column Menus in Visual Basic Using the WIN32

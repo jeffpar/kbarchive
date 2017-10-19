@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246751: Cannot Dual Boot Windows 9.x and Windows NT 4.0 on Pavilion 6350"
-permalink: kb/246/Q246751/
+permalink: /kb/246/Q246751/
 ---
 
 ## Q246751: Cannot Dual Boot Windows 9.x and Windows NT 4.0 on Pavilion 6350

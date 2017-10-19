@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103585: How API Function Array Arguments Are Passed"
-permalink: kb/103/Q103585/
+permalink: /kb/103/Q103585/
 ---
 
 ## Q103585: How API Function Array Arguments Are Passed

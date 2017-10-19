@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q136487: PC DirSync: Err Msg: Fatal [161] Server Configuration Busy"
-permalink: kb/136/Q136487/
+title: "Q136487: PC DirSync: Err Msg: Fatal &#91;161&#93; Server Configuration Busy"
+permalink: /kb/136/Q136487/
 ---
 
-## Q136487: PC DirSync: Err Msg: Fatal [161] Server Configuration Busy
+## Q136487: PC DirSync: Err Msg: Fatal &#91;161&#93; Server Configuration Busy
 
 	Article: Q136487
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234833: MOD2000: UNDONE in Title After Showing Differences in VSS Add-in"
-permalink: kb/234/Q234833/
+permalink: /kb/234/Q234833/
 ---
 
 ## Q234833: MOD2000: UNDONE in Title After Showing Differences in VSS Add-in

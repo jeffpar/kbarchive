@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175641: LMCompatibilityLevel and Its Effects"
-permalink: kb/175/Q175641/
+permalink: /kb/175/Q175641/
 ---
 
 ## Q175641: LMCompatibilityLevel and Its Effects

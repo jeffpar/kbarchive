@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112923: PC Adm: Err Msg: Notice 99 Unable to Access Address Record"
-permalink: kb/112/Q112923/
+permalink: /kb/112/Q112923/
 ---
 
 ## Q112923: PC Adm: Err Msg: Notice 99 Unable to Access Address Record

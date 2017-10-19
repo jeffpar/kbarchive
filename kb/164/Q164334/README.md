@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164334: WD97: Formatting Toolbar Shows Incorrect Text Direction in Table"
-permalink: kb/164/Q164334/
+permalink: /kb/164/Q164334/
 ---
 
 ## Q164334: WD97: Formatting Toolbar Shows Incorrect Text Direction in Table

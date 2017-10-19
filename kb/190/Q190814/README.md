@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190814: HOWTO: Display a ReadMe File at the End of a Custom Setup"
-permalink: kb/190/Q190814/
+permalink: /kb/190/Q190814/
 ---
 
 ## Q190814: HOWTO: Display a ReadMe File at the End of a Custom Setup

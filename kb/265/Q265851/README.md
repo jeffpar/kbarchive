@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265851: XADM: Error C103089F Appears During Object Creation"
-permalink: kb/265/Q265851/
+permalink: /kb/265/Q265851/
 ---
 
 ## Q265851: XADM: Error C103089F Appears During Object Creation

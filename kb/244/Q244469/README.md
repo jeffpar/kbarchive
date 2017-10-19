@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244469: Logon Exp. Warning Appears to All Users Currently Logged On"
-permalink: kb/244/Q244469/
+permalink: /kb/244/Q244469/
 ---
 
 ## Q244469: Logon Exp. Warning Appears to All Users Currently Logged On

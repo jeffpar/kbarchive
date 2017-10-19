@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147629: PRB: Problems If ODBC or DAO in DLL's InitInstance or DLLMain"
-permalink: kb/147/Q147629/
+permalink: /kb/147/Q147629/
 ---
 
 ## Q147629: PRB: Problems If ODBC or DAO in DLL's InitInstance or DLLMain

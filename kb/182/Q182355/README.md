@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182355: PRB: Jet Text IISAM Truncates Trailing Spaces"
-permalink: kb/182/Q182355/
+permalink: /kb/182/Q182355/
 ---
 
 ## Q182355: PRB: Jet Text IISAM Truncates Trailing Spaces

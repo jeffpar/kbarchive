@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248353: BUG: System Boot Sits at the Blue Blank Screen for ~90 Seconds"
-permalink: kb/248/Q248353/
+permalink: /kb/248/Q248353/
 ---
 
 ## Q248353: BUG: System Boot Sits at the Blue Blank Screen for ~90 Seconds

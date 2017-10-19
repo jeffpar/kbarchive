@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275675: NFL 2000: Leaders Tab Is Missing from the Sports Pages Screen"
-permalink: kb/275/Q275675/
+permalink: /kb/275/Q275675/
 ---
 
 ## Q275675: NFL 2000: Leaders Tab Is Missing from the Sports Pages Screen

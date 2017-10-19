@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153206: PGC Err Msg: Could Not Open the Application Database"
-permalink: kb/153/Q153206/
+permalink: /kb/153/Q153206/
 ---
 
 ## Q153206: PGC Err Msg: Could Not Open the Application Database

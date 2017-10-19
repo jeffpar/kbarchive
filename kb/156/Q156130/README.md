@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156130: OLE DB Redistributable Components"
-permalink: kb/156/Q156130/
+permalink: /kb/156/Q156130/
 ---
 
 ## Q156130: OLE DB Redistributable Components

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128322: PC WFW: EXTEND.EXE Not in Mail &amp; Schedule+ Extensions 3.2"
-permalink: kb/128/Q128322/
+permalink: /kb/128/Q128322/
 ---
 
 ## Q128322: PC WFW: EXTEND.EXE Not in Mail &amp; Schedule+ Extensions 3.2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95081: INF: How the dBASE Driver Performs Locking"
-permalink: kb/095/Q95081/
+permalink: /kb/095/Q95081/
 ---
 
 ## Q95081: INF: How the dBASE Driver Performs Locking

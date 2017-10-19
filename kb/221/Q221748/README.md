@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221748: FIX:FFC's - Genhtml.prg Fails With SET COVERAGE To"
-permalink: kb/221/Q221748/
+permalink: /kb/221/Q221748/
 ---
 
 ## Q221748: FIX:FFC's - Genhtml.prg Fails With SET COVERAGE To

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272497: &quot;Stop 0x0000001E&quot; in Win32k.sys"
-permalink: kb/272/Q272497/
+permalink: /kb/272/Q272497/
 ---
 
 ## Q272497: &quot;Stop 0x0000001E&quot; in Win32k.sys

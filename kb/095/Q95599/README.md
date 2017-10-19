@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95599: DblSpace Err Msg: DoubleSpace Cannot Convert Your..."
-permalink: kb/095/Q95599/
+permalink: /kb/095/Q95599/
 ---
 
 ## Q95599: DblSpace Err Msg: DoubleSpace Cannot Convert Your...

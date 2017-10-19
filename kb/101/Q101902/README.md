@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101902: PC WRmt: Multiple Address List Downloads Cause Corruption"
-permalink: kb/101/Q101902/
+permalink: /kb/101/Q101902/
 ---
 
 ## Q101902: PC WRmt: Multiple Address List Downloads Cause Corruption

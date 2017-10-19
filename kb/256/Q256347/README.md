@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256347: PRB: HrGetBackupLogs() Must Not Be Called Before HrBackupClose()"
-permalink: kb/256/Q256347/
+permalink: /kb/256/Q256347/
 ---
 
 ## Q256347: PRB: HrGetBackupLogs() Must Not Be Called Before HrBackupClose()

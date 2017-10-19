@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262635: Err: HTTP 403.9 - Access Forbidden: Too Many Users Are Connected"
-permalink: kb/262/Q262635/
+permalink: /kb/262/Q262635/
 ---
 
 ## Q262635: Err: HTTP 403.9 - Access Forbidden: Too Many Users Are Connected

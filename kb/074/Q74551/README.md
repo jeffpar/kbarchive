@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74551: Can't Start MS-DOS 5.0 or later on a BSR Computer"
-permalink: kb/074/Q74551/
+permalink: /kb/074/Q74551/
 ---
 
 ## Q74551: Can't Start MS-DOS 5.0 or later on a BSR Computer

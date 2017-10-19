@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255894: XCON: MTA Does Not Support MSP4 Content Type"
-permalink: kb/255/Q255894/
+permalink: /kb/255/Q255894/
 ---
 
 ## Q255894: XCON: MTA Does Not Support MSP4 Content Type

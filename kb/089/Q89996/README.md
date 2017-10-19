@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89996: Windows Sound System Supports ISA/EISA, Not Micro Channel"
-permalink: kb/089/Q89996/
+permalink: /kb/089/Q89996/
 ---
 
 ## Q89996: Windows Sound System Supports ISA/EISA, Not Micro Channel

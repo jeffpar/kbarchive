@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149314: XCLN: Send Mail Option in NT File Manager Won't Work"
-permalink: kb/149/Q149314/
+permalink: /kb/149/Q149314/
 ---
 
 ## Q149314: XCLN: Send Mail Option in NT File Manager Won't Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113119: PC Ext: External 3.2 Decrements Retry Count"
-permalink: kb/113/Q113119/
+permalink: /kb/113/Q113119/
 ---
 
 ## Q113119: PC Ext: External 3.2 Decrements Retry Count

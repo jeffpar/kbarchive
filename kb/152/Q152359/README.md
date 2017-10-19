@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152359: Err Msg: Item Could Not Be Deleted. The Action Could Not Be..."
-permalink: kb/152/Q152359/
+permalink: /kb/152/Q152359/
 ---
 
 ## Q152359: Err Msg: Item Could Not Be Deleted. The Action Could Not Be...

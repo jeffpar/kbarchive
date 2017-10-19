@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164905: Can't Find PDC When Creating new Host Security Domain"
-permalink: kb/164/Q164905/
+permalink: /kb/164/Q164905/
 ---
 
 ## Q164905: Can't Find PDC When Creating new Host Security Domain

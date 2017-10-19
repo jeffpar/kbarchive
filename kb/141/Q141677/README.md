@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141677: FIX: Insufficient Memory Errors Using OLE Controls"
-permalink: kb/141/Q141677/
+permalink: /kb/141/Q141677/
 ---
 
 ## Q141677: FIX: Insufficient Memory Errors Using OLE Controls

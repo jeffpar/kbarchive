@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149319: FIX: String/Currency Conversion Broken with Sci. Notation"
-permalink: kb/149/Q149319/
+permalink: /kb/149/Q149319/
 ---
 
 ## Q149319: FIX: String/Currency Conversion Broken with Sci. Notation

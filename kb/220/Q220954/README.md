@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220954: Event ID:20073 Attempting RADIUS Authentication on RRAS Server"
-permalink: kb/220/Q220954/
+permalink: /kb/220/Q220954/
 ---
 
 ## Q220954: Event ID:20073 Attempting RADIUS Authentication on RRAS Server

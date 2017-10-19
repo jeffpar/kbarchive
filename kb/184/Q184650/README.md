@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184650: INFO: What Language Features does VB have that VBCE/eVB Do Not"
-permalink: kb/184/Q184650/
+permalink: /kb/184/Q184650/
 ---
 
 ## Q184650: INFO: What Language Features does VB have that VBCE/eVB Do Not

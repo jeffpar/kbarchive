@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121245: Adobe Type Manager Type 1 Fonts Not Displayed in Font Manager"
-permalink: kb/121/Q121245/
+permalink: /kb/121/Q121245/
 ---
 
 ## Q121245: Adobe Type Manager Type 1 Fonts Not Displayed in Font Manager

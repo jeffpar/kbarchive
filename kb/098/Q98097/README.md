@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98097: Mac Bkup: Retrospect Remote May Corrupt Server Data File"
-permalink: kb/098/Q98097/
+permalink: /kb/098/Q98097/
 ---
 
 ## Q98097: Mac Bkup: Retrospect Remote May Corrupt Server Data File

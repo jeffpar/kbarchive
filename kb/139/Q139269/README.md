@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139269: Using High Contrast Display Scheme Hides Part of Window"
-permalink: kb/139/Q139269/
+permalink: /kb/139/Q139269/
 ---
 
 ## Q139269: Using High Contrast Display Scheme Hides Part of Window

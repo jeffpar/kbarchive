@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62048: Reasons for MS-DOS &quot;File Allocation Table Bad&quot; Error Message"
-permalink: kb/062/Q62048/
+permalink: /kb/062/Q62048/
 ---
 
 ## Q62048: Reasons for MS-DOS &quot;File Allocation Table Bad&quot; Error Message

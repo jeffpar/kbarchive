@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111686: Incorrect Detection of Artisoft's NodeRunner Network Card"
-permalink: kb/111/Q111686/
+permalink: /kb/111/Q111686/
 ---
 
 ## Q111686: Incorrect Detection of Artisoft's NodeRunner Network Card

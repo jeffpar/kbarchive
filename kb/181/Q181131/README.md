@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181131: PRB: ComboBox Text Property Does Not Update Properly"
-permalink: kb/181/Q181131/
+permalink: /kb/181/Q181131/
 ---
 
 ## Q181131: PRB: ComboBox Text Property Does Not Update Properly

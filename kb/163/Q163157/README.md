@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163157: WD97: Pleading Wizard Uses Negative Margins"
-permalink: kb/163/Q163157/
+permalink: /kb/163/Q163157/
 ---
 
 ## Q163157: WD97: Pleading Wizard Uses Negative Margins

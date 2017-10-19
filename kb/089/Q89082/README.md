@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89082: Using Sitka TOPS with Windows"
-permalink: kb/089/Q89082/
+permalink: /kb/089/Q89082/
 ---
 
 ## Q89082: Using Sitka TOPS with Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247911: NET USER /DOMAIN Returns Incorrect Last User Logon"
-permalink: kb/247/Q247911/
+permalink: /kb/247/Q247911/
 ---
 
 ## Q247911: NET USER /DOMAIN Returns Incorrect Last User Logon

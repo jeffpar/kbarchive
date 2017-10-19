@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103421: PC Gen: Contents of Mail 3.2 Enhancements and Corrections"
-permalink: kb/103/Q103421/
+permalink: /kb/103/Q103421/
 ---
 
 ## Q103421: PC Gen: Contents of Mail 3.2 Enhancements and Corrections

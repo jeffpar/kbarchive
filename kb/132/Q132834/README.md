@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132834: Problems with Media Blitz 3.0 Setup"
-permalink: kb/132/Q132834/
+permalink: /kb/132/Q132834/
 ---
 
 ## Q132834: Problems with Media Blitz 3.0 Setup

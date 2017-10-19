@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194829: NET USE for Dfs Shares Fail for Terminal Server Clients &gt; 9"
-permalink: kb/194/Q194829/
+permalink: /kb/194/Q194829/
 ---
 
 ## Q194829: NET USE for Dfs Shares Fail for Terminal Server Clients &gt; 9

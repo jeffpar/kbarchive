@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156058: PRB: Limited Number of Pages Allowed in a PageFrame Control"
-permalink: kb/156/Q156058/
+permalink: /kb/156/Q156058/
 ---
 
 ## Q156058: PRB: Limited Number of Pages Allowed in a PageFrame Control

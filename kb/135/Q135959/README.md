@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135959: Theme Not Deleted Using Desktop Themes Tool"
-permalink: kb/135/Q135959/
+permalink: /kb/135/Q135959/
 ---
 
 ## Q135959: Theme Not Deleted Using Desktop Themes Tool

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168489: How to Remove Routing and Remote Access and Install Standard RA"
-permalink: kb/168/Q168489/
+permalink: /kb/168/Q168489/
 ---
 
 ## Q168489: How to Remove Routing and Remote Access and Install Standard RA

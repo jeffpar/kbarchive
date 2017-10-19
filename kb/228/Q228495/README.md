@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228495: After Upgrade to SNA Server 4.0 SP2, COMTI Application Fails"
-permalink: kb/228/Q228495/
+permalink: /kb/228/Q228495/
 ---
 
 ## Q228495: After Upgrade to SNA Server 4.0 SP2, COMTI Application Fails

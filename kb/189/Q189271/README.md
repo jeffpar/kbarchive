@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189271: List of Services Needed to Run a Secure IIS Computer"
-permalink: kb/189/Q189271/
+permalink: /kb/189/Q189271/
 ---
 
 ## Q189271: List of Services Needed to Run a Secure IIS Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167673: DOC: Online Help References Removed Features of Form Designer"
-permalink: kb/167/Q167673/
+permalink: /kb/167/Q167673/
 ---
 
 ## Q167673: DOC: Online Help References Removed Features of Form Designer

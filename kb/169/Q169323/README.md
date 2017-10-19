@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169323: XADM: Cannot Insert an Attachment from a Client"
-permalink: kb/169/Q169323/
+permalink: /kb/169/Q169323/
 ---
 
 ## Q169323: XADM: Cannot Insert an Attachment from a Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176849: SNA Server Logs Events 684 and 685 When Using SDLC Connection"
-permalink: kb/176/Q176849/
+permalink: /kb/176/Q176849/
 ---
 
 ## Q176849: SNA Server Logs Events 684 and 685 When Using SDLC Connection

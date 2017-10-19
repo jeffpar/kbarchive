@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138645: PPT7: Can't Open PowerPoint Files with Windows 95 Quick View"
-permalink: kb/138/Q138645/
+permalink: /kb/138/Q138645/
 ---
 
 ## Q138645: PPT7: Can't Open PowerPoint Files with Windows 95 Quick View

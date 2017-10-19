@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269615: SMS: Mixed Languages in SMS 2.0 Sites That Share a Domain"
-permalink: kb/269/Q269615/
+permalink: /kb/269/Q269615/
 ---
 
 ## Q269615: SMS: Mixed Languages in SMS 2.0 Sites That Share a Domain

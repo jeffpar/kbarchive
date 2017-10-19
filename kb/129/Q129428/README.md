@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129428: INFO: CListBox::SelItemRange Selects Only Two or More Items"
-permalink: kb/129/Q129428/
+permalink: /kb/129/Q129428/
 ---
 
 ## Q129428: INFO: CListBox::SelItemRange Selects Only Two or More Items

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184681: XFOR: Kanji Outlook MS Mail Users Get NDRs Sending to Exchange"
-permalink: kb/184/Q184681/
+permalink: /kb/184/Q184681/
 ---
 
 ## Q184681: XFOR: Kanji Outlook MS Mail Users Get NDRs Sending to Exchange

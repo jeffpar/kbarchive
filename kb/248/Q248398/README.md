@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248398: XADM: Restricting Permission to Address Book Views"
-permalink: kb/248/Q248398/
+permalink: /kb/248/Q248398/
 ---
 
 ## Q248398: XADM: Restricting Permission to Address Book Views

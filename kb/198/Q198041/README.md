@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198041: WD97: Creating All Odd- or All Even-Numbered Pages in Document"
-permalink: kb/198/Q198041/
+permalink: /kb/198/Q198041/
 ---
 
 ## Q198041: WD97: Creating All Odd- or All Even-Numbered Pages in Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103549: DoubleSpace Err Msg: The Drive Letter &lt;X&gt; Is Not Available..."
-permalink: kb/103/Q103549/
+permalink: /kb/103/Q103549/
 ---
 
 ## Q103549: DoubleSpace Err Msg: The Drive Letter &lt;X&gt; Is Not Available...

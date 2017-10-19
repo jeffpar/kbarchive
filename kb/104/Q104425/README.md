@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104425: ATT: Running SMTPGET and SMTPPUT Manually"
-permalink: kb/104/Q104425/
+permalink: /kb/104/Q104425/
 ---
 
 ## Q104425: ATT: Running SMTPGET and SMTPPUT Manually

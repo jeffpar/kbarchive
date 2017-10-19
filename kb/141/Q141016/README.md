@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141016: FIX: Visual SourceSafe Books Online Help Is for Visual Basic"
-permalink: kb/141/Q141016/
+permalink: /kb/141/Q141016/
 ---
 
 ## Q141016: FIX: Visual SourceSafe Books Online Help Is for Visual Basic

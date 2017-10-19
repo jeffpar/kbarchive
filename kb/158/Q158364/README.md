@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158364: Flight Simulator Flight Shop &amp; Flight Simulator for Windows 95"
-permalink: kb/158/Q158364/
+permalink: /kb/158/Q158364/
 ---
 
 ## Q158364: Flight Simulator Flight Shop &amp; Flight Simulator for Windows 95

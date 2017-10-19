@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148635: 3270 Applet May Hang If Session Uses Definite Response Only"
-permalink: kb/148/Q148635/
+permalink: /kb/148/Q148635/
 ---
 
 ## Q148635: 3270 Applet May Hang If Session Uses Definite Response Only

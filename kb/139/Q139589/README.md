@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139589: Distribution of Files with Long Filenames Require NTFS"
-permalink: kb/139/Q139589/
+permalink: /kb/139/Q139589/
 ---
 
 ## Q139589: Distribution of Files with Long Filenames Require NTFS

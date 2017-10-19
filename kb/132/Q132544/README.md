@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132544: 500 Nations: README.TXT Incorrect Location of Video Drivers"
-permalink: kb/132/Q132544/
+permalink: /kb/132/Q132544/
 ---
 
 ## Q132544: 500 Nations: README.TXT Incorrect Location of Video Drivers

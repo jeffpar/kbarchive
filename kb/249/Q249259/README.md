@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249259: BUG: ATL OLE DB Provider not Working with OLE DB Services"
-permalink: kb/249/Q249259/
+permalink: /kb/249/Q249259/
 ---
 
 ## Q249259: BUG: ATL OLE DB Provider not Working with OLE DB Services

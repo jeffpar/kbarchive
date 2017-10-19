@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168012: FIX: Incorrect Code Generated When Using Floating-Point and /Og"
-permalink: kb/168/Q168012/
+permalink: /kb/168/Q168012/
 ---
 
 ## Q168012: FIX: Incorrect Code Generated When Using Floating-Point and /Og

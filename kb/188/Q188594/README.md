@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188594: XADM: Event ID 1023 Reports Logon Failure Audit"
-permalink: kb/188/Q188594/
+permalink: /kb/188/Q188594/
 ---
 
 ## Q188594: XADM: Event ID 1023 Reports Logon Failure Audit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172018: Index Server Will Not Filter Microsoft Word Headers or Footers"
-permalink: kb/172/Q172018/
+permalink: /kb/172/Q172018/
 ---
 
 ## Q172018: Index Server Will Not Filter Microsoft Word Headers or Footers

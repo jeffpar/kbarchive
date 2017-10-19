@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155090: BUG: Setup Wizard Doesn't Have Netsetup Distribution Option"
-permalink: kb/155/Q155090/
+permalink: /kb/155/Q155090/
 ---
 
 ## Q155090: BUG: Setup Wizard Doesn't Have Netsetup Distribution Option

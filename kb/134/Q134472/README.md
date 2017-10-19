@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134472: Device Resources Not Updated with Forced Configuration"
-permalink: kb/134/Q134472/
+permalink: /kb/134/Q134472/
 ---
 
 ## Q134472: Device Resources Not Updated with Forced Configuration

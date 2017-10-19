@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112370: Err Msg: The Windows for Workgroups Network Has Not Started"
-permalink: kb/112/Q112370/
+permalink: /kb/112/Q112370/
 ---
 
 ## Q112370: Err Msg: The Windows for Workgroups Network Has Not Started

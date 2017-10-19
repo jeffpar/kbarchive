@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118969: X400: Err Msg: Error Malformed Address:Typ"
-permalink: kb/118/Q118969/
+permalink: /kb/118/Q118969/
 ---
 
 ## Q118969: X400: Err Msg: Error Malformed Address:Typ

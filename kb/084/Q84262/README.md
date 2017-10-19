@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84262: Undocumented Keyboard Commands in Beethoven"
-permalink: kb/084/Q84262/
+permalink: /kb/084/Q84262/
 ---
 
 ## Q84262: Undocumented Keyboard Commands in Beethoven

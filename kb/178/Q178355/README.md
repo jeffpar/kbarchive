@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178355: WD97: How to Simulate a Vertical Text Flip for a &quot;Tent&quot; Page"
-permalink: kb/178/Q178355/
+permalink: /kb/178/Q178355/
 ---
 
 ## Q178355: WD97: How to Simulate a Vertical Text Flip for a &quot;Tent&quot; Page

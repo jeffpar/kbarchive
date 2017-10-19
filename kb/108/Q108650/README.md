@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108650: Flight Simulator 5.0 Err Msg: EMM386.EXE Exception Error #12"
-permalink: kb/108/Q108650/
+permalink: /kb/108/Q108650/
 ---
 
 ## Q108650: Flight Simulator 5.0 Err Msg: EMM386.EXE Exception Error #12

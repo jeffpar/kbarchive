@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172382: WD97: No Results When Faxing by Using Outlook Distribution List"
-permalink: kb/172/Q172382/
+permalink: /kb/172/Q172382/
 ---
 
 ## Q172382: WD97: No Results When Faxing by Using Outlook Distribution List

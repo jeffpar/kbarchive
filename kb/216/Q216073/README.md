@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216073: SAMPLE: 4thScrpt.exe Demos Active Debug in ATL ActiveX Script"
-permalink: kb/216/Q216073/
+permalink: /kb/216/Q216073/
 ---
 
 ## Q216073: SAMPLE: 4thScrpt.exe Demos Active Debug in ATL ActiveX Script

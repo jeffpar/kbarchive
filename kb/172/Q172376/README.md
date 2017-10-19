@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172376: PRB: Ddcerr.log Reports &quot;DDCONV initializing&quot; During Upgrade"
-permalink: kb/172/Q172376/
+permalink: /kb/172/Q172376/
 ---
 
 ## Q172376: PRB: Ddcerr.log Reports &quot;DDCONV initializing&quot; During Upgrade

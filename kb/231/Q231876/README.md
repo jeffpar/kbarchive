@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231876: How to Set IIS 4.0 FTP Files to All Lowercase"
-permalink: kb/231/Q231876/
+permalink: /kb/231/Q231876/
 ---
 
 ## Q231876: How to Set IIS 4.0 FTP Files to All Lowercase

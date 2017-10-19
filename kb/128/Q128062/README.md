@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128062: How to Place Objects on Pages in a Pageframe"
-permalink: kb/128/Q128062/
+permalink: /kb/128/Q128062/
 ---
 
 ## Q128062: How to Place Objects on Pages in a Pageframe

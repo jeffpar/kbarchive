@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168844: FIX: Undo Check Out Not Behaving as Expected"
-permalink: kb/168/Q168844/
+permalink: /kb/168/Q168844/
 ---
 
 ## Q168844: FIX: Undo Check Out Not Behaving as Expected

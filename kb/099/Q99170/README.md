@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99170: PROFS: Err Msg: ERROR: Directory ID Name Does Not Exist..."
-permalink: kb/099/Q99170/
+permalink: /kb/099/Q99170/
 ---
 
 ## Q99170: PROFS: Err Msg: ERROR: Directory ID Name Does Not Exist...

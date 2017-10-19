@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246683: STOP 0xA on Compaq Computers When Upgrading to Service Pack 6"
-permalink: kb/246/Q246683/
+permalink: /kb/246/Q246683/
 ---
 
 ## Q246683: STOP 0xA on Compaq Computers When Upgrading to Service Pack 6

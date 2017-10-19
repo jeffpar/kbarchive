@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165856: XCLN: Messages Dragged from Client to Desktop Overlap"
-permalink: kb/165/Q165856/
+permalink: /kb/165/Q165856/
 ---
 
 ## Q165856: XCLN: Messages Dragged from Client to Desktop Overlap

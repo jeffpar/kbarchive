@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252756: PRB: Changing DataGrid Layout Causes DataGrid to Display Empty"
-permalink: kb/252/Q252756/
+permalink: /kb/252/Q252756/
 ---
 
 ## Q252756: PRB: Changing DataGrid Layout Causes DataGrid to Display Empty

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126660: PC Win: Images Pasted into a Mail Message Are Blank"
-permalink: kb/126/Q126660/
+permalink: /kb/126/Q126660/
 ---
 
 ## Q126660: PC Win: Images Pasted into a Mail Message Are Blank

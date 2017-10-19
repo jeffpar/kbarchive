@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96522: Regions Scanned by the EMM386.EXE HIGHSCAN Switch"
-permalink: kb/096/Q96522/
+permalink: /kb/096/Q96522/
 ---
 
 ## Q96522: Regions Scanned by the EMM386.EXE HIGHSCAN Switch

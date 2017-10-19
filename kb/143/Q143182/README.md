@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143182: Gopher Server MIB Definitions"
-permalink: kb/143/Q143182/
+permalink: /kb/143/Q143182/
 ---
 
 ## Q143182: Gopher Server MIB Definitions

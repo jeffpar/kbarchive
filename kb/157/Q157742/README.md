@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157742: WOW Applications Calling KillTimer() API May Leak Memory"
-permalink: kb/157/Q157742/
+permalink: /kb/157/Q157742/
 ---
 
 ## Q157742: WOW Applications Calling KillTimer() API May Leak Memory

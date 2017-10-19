@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147862: MSB Ocean: Listing of Files Installed in Windows"
-permalink: kb/147/Q147862/
+permalink: /kb/147/Q147862/
 ---
 
 ## Q147862: MSB Ocean: Listing of Files Installed in Windows

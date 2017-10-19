@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237258: WD97: Page Size Changes When You Edit Document Object"
-permalink: kb/237/Q237258/
+permalink: /kb/237/Q237258/
 ---
 
 ## Q237258: WD97: Page Size Changes When You Edit Document Object

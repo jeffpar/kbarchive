@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103291: PC WRmt: Disk Space Calculations for Address Files"
-permalink: kb/103/Q103291/
+permalink: /kb/103/Q103291/
 ---
 
 ## Q103291: PC WRmt: Disk Space Calculations for Address Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139996: BUG: Wizards Create Invalid Column Names for QueryDef Join"
-permalink: kb/139/Q139996/
+permalink: /kb/139/Q139996/
 ---
 
 ## Q139996: BUG: Wizards Create Invalid Column Names for QueryDef Join

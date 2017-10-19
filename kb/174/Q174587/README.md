@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174587: ODE97: Graphs in Converted Databases Appear Blank in ODE App"
-permalink: kb/174/Q174587/
+permalink: /kb/174/Q174587/
 ---
 
 ## Q174587: ODE97: Graphs in Converted Databases Appear Blank in ODE App

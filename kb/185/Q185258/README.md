@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185258: PRB: Increment Decimal Value Works Incorrectly in Spinner"
-permalink: kb/185/Q185258/
+permalink: /kb/185/Q185258/
 ---
 
 ## Q185258: PRB: Increment Decimal Value Works Incorrectly in Spinner

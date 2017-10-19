@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157462: RAS Server Routing Client IP Packets Degrades Performance"
-permalink: kb/157/Q157462/
+permalink: /kb/157/Q157462/
 ---
 
 ## Q157462: RAS Server Routing Client IP Packets Degrades Performance

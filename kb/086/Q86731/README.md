@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86731: Tandy LP-990 Prints Solid Black When Using TrueType"
-permalink: kb/086/Q86731/
+permalink: /kb/086/Q86731/
 ---
 
 ## Q86731: Tandy LP-990 Prints Solid Black When Using TrueType

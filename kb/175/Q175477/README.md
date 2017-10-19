@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175477: Batch Files Run from Within Other Folders May Fail"
-permalink: kb/175/Q175477/
+permalink: /kb/175/Q175477/
 ---
 
 ## Q175477: Batch Files Run from Within Other Folders May Fail

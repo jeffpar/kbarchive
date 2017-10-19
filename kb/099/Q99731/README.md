@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99731: Windows &amp; MS-DOS 5 Upgrade Pack May Not Upgrade MS-DOS"
-permalink: kb/099/Q99731/
+permalink: /kb/099/Q99731/
 ---
 
 ## Q99731: Windows &amp; MS-DOS 5 Upgrade Pack May Not Upgrade MS-DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84428: HP DeskJet Printer Driver Support in Windows 3.1"
-permalink: kb/084/Q84428/
+permalink: /kb/084/Q84428/
 ---
 
 ## Q84428: HP DeskJet Printer Driver Support in Windows 3.1

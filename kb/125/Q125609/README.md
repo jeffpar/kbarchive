@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125609: Asimov: Installing Dell S3 Version 1.32 Driver"
-permalink: kb/125/Q125609/
+permalink: /kb/125/Q125609/
 ---
 
 ## Q125609: Asimov: Installing Dell S3 Version 1.32 Driver

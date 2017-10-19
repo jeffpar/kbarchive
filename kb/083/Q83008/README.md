@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83008: XMS Calls Under Windows 3.1"
-permalink: kb/083/Q83008/
+permalink: /kb/083/Q83008/
 ---
 
 ## Q83008: XMS Calls Under Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72433: Terminal and the Ventel EC18K-34/Pathfinder Telebit Modem"
-permalink: kb/072/Q72433/
+permalink: /kb/072/Q72433/
 ---
 
 ## Q72433: Terminal and the Ventel EC18K-34/Pathfinder Telebit Modem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170612: WD97: Macro to Create Table of Contents Entry Automatically"
-permalink: kb/170/Q170612/
+permalink: /kb/170/Q170612/
 ---
 
 ## Q170612: WD97: Macro to Create Table of Contents Entry Automatically

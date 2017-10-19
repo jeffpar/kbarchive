@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137399: Hung Server Service, Event 7022 w/ Many DLC Printers Connected"
-permalink: kb/137/Q137399/
+permalink: /kb/137/Q137399/
 ---
 
 ## Q137399: Hung Server Service, Event 7022 w/ Many DLC Printers Connected

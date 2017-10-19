@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131599: Record Pointer Moves in BROWSE as Records Are Deleted"
-permalink: kb/131/Q131599/
+permalink: /kb/131/Q131599/
 ---
 
 ## Q131599: Record Pointer Moves in BROWSE as Records Are Deleted

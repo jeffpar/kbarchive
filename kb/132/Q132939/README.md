@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132939: Flight Simulator 5.1: CD-ROM Contents (Part 5 of 5)"
-permalink: kb/132/Q132939/
+permalink: /kb/132/Q132939/
 ---
 
 ## Q132939: Flight Simulator 5.1: CD-ROM Contents (Part 5 of 5)

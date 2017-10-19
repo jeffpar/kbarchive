@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248419: Fighter Ace II: Slow Frame Rate and Low Graphic Detail in Game"
-permalink: kb/248/Q248419/
+permalink: /kb/248/Q248419/
 ---
 
 ## Q248419: Fighter Ace II: Slow Frame Rate and Low Graphic Detail in Game

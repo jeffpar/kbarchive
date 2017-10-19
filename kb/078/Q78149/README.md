@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78149: AST Premium 286 May Require Premium BIOS 2.0"
-permalink: kb/078/Q78149/
+permalink: /kb/078/Q78149/
 ---
 
 ## Q78149: AST Premium 286 May Require Premium BIOS 2.0

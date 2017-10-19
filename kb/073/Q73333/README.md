@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73333: PRB: WDEB386 Does Not Find Driver Symbol Files"
-permalink: kb/073/Q73333/
+permalink: /kb/073/Q73333/
 ---
 
 ## Q73333: PRB: WDEB386 Does Not Find Driver Symbol Files

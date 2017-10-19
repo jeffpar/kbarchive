@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194654: PRB: DBGrid Control Not Fully Functional in VC++"
-permalink: kb/194/Q194654/
+permalink: /kb/194/Q194654/
 ---
 
 ## Q194654: PRB: DBGrid Control Not Fully Functional in VC++

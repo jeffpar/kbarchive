@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182502: XADM: Changes Made to Performance Monitor in Exchange 5.5"
-permalink: kb/182/Q182502/
+permalink: /kb/182/Q182502/
 ---
 
 ## Q182502: XADM: Changes Made to Performance Monitor in Exchange 5.5

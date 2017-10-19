@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57948: INFO: Escape Character Erases First Characters in gets() String"
-permalink: kb/057/Q57948/
+permalink: /kb/057/Q57948/
 ---
 
 ## Q57948: INFO: Escape Character Erases First Characters in gets() String

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197188: STATUS_REPARSE w/ Trashed FileObject-&gt;Name Returned to Mup.sys"
-permalink: kb/197/Q197188/
+permalink: /kb/197/Q197188/
 ---
 
 ## Q197188: STATUS_REPARSE w/ Trashed FileObject-&gt;Name Returned to Mup.sys

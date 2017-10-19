@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146103: Unable To Print To Apple LaserWriter Pro 810 on Network"
-permalink: kb/146/Q146103/
+permalink: /kb/146/Q146103/
 ---
 
 ## Q146103: Unable To Print To Apple LaserWriter Pro 810 on Network

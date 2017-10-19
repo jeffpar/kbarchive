@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130270: BUG: SourceSafe Reports a Date/Time of 1/1/70"
-permalink: kb/130/Q130270/
+permalink: /kb/130/Q130270/
 ---
 
 ## Q130270: BUG: SourceSafe Reports a Date/Time of 1/1/70

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262893: SCM-Set ACLs Are Not Propagated More Than Two Levels Down"
-permalink: kb/262/Q262893/
+permalink: /kb/262/Q262893/
 ---
 
 ## Q262893: SCM-Set ACLs Are Not Propagated More Than Two Levels Down

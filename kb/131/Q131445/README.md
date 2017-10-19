@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131445: FIX: &quot;Timeout Locking File: UM&quot; Error Occurs at Startup"
-permalink: kb/131/Q131445/
+permalink: /kb/131/Q131445/
 ---
 
 ## Q131445: FIX: &quot;Timeout Locking File: UM&quot; Error Occurs at Startup

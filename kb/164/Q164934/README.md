@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164934: Error When 16-Bit Application Accesses a File in a Shared Folder"
-permalink: kb/164/Q164934/
+permalink: /kb/164/Q164934/
 ---
 
 ## Q164934: Error When 16-Bit Application Accesses a File in a Shared Folder

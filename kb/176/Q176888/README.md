@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176888: PRB: Using &quot;!=&quot; in a Join Statement Does Not Return Records"
-permalink: kb/176/Q176888/
+permalink: /kb/176/Q176888/
 ---
 
 ## Q176888: PRB: Using &quot;!=&quot; in a Join Statement Does Not Return Records

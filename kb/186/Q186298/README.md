@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186298: HOWTO: Get the HRESULT From a COM Object"
-permalink: kb/186/Q186298/
+permalink: /kb/186/Q186298/
 ---
 
 ## Q186298: HOWTO: Get the HRESULT From a COM Object

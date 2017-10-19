@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193382: Virtual Globe 99: Lunar Map Links to Earth-Related Content"
-permalink: kb/193/Q193382/
+permalink: /kb/193/Q193382/
 ---
 
 ## Q193382: Virtual Globe 99: Lunar Map Links to Earth-Related Content

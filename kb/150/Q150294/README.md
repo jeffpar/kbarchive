@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150294: Cannot Access Exchange Server After Changing WinNT Domain Name"
-permalink: kb/150/Q150294/
+permalink: /kb/150/Q150294/
 ---
 
 ## Q150294: Cannot Access Exchange Server After Changing WinNT Domain Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137858: Network Failure Using the SMC EtherCard Plus Series NIC"
-permalink: kb/137/Q137858/
+permalink: /kb/137/Q137858/
 ---
 
 ## Q137858: Network Failure Using the SMC EtherCard Plus Series NIC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167324: FIX: Custom Build Rule Not Saved for File Excluded from Build"
-permalink: kb/167/Q167324/
+permalink: /kb/167/Q167324/
 ---
 
 ## Q167324: FIX: Custom Build Rule Not Saved for File Excluded from Build

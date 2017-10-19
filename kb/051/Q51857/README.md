@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51857: Random Weather Winds Corrupted by Resetting Mode"
-permalink: kb/051/Q51857/
+permalink: /kb/051/Q51857/
 ---
 
 ## Q51857: Random Weather Winds Corrupted by Resetting Mode

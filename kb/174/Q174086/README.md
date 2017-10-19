@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174086: Computer Hangs When MSN Attempts To Verify Password"
-permalink: kb/174/Q174086/
+permalink: /kb/174/Q174086/
 ---
 
 ## Q174086: Computer Hangs When MSN Attempts To Verify Password

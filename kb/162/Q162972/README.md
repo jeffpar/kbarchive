@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162972: Troubleshooting Tape Backup Issues in Windows NT"
-permalink: kb/162/Q162972/
+permalink: /kb/162/Q162972/
 ---
 
 ## Q162972: Troubleshooting Tape Backup Issues in Windows NT

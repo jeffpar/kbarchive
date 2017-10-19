@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107597: Windows for Workgroups Protocol Limits"
-permalink: kb/107/Q107597/
+permalink: /kb/107/Q107597/
 ---
 
 ## Q107597: Windows for Workgroups Protocol Limits

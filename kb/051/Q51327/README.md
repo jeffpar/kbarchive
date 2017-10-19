@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51327: INFO: strtok(): C Function -- Documentation Supplement"
-permalink: kb/051/Q51327/
+permalink: /kb/051/Q51327/
 ---
 
 ## Q51327: INFO: strtok(): C Function -- Documentation Supplement

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118528: PC Gen: Mail Client Polling Defaults and How to Reset Them"
-permalink: kb/118/Q118528/
+permalink: /kb/118/Q118528/
 ---
 
 ## Q118528: PC Gen: Mail Client Polling Defaults and How to Reset Them

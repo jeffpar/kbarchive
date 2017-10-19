@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199036: Error When Deleting External Post Office - Notice 1"
-permalink: kb/199/Q199036/
+permalink: /kb/199/Q199036/
 ---
 
 ## Q199036: Error When Deleting External Post Office - Notice 1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248147: PRB: Cannot Cycle Through Pageframe Controls with Tab Key"
-permalink: kb/248/Q248147/
+permalink: /kb/248/Q248147/
 ---
 
 ## Q248147: PRB: Cannot Cycle Through Pageframe Controls with Tab Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87373: Using Bitstream Facelift (Intellifont &amp; Bubble-Jet) w/Windows"
-permalink: kb/087/Q87373/
+permalink: /kb/087/Q87373/
 ---
 
 ## Q87373: Using Bitstream Facelift (Intellifont &amp; Bubble-Jet) w/Windows

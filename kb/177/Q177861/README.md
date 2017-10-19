@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177861: Age of Empires: Contents of the Stratsmp.doc File"
-permalink: kb/177/Q177861/
+permalink: /kb/177/Q177861/
 ---
 
 ## Q177861: Age of Empires: Contents of the Stratsmp.doc File

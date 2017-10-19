@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170568: Seagate Tape Drive Light Stays Lit After Exiting NTBACKUP"
-permalink: kb/170/Q170568/
+permalink: /kb/170/Q170568/
 ---
 
 ## Q170568: Seagate Tape Drive Light Stays Lit After Exiting NTBACKUP

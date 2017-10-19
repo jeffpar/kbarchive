@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175673: How to Modify Private Information in Microsoft Wallet"
-permalink: kb/175/Q175673/
+permalink: /kb/175/Q175673/
 ---
 
 ## Q175673: How to Modify Private Information in Microsoft Wallet

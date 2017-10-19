@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124257: Disk Contents of Japan Scenery (3.5 Inch, 1.44 MB)"
-permalink: kb/124/Q124257/
+permalink: /kb/124/Q124257/
 ---
 
 ## Q124257: Disk Contents of Japan Scenery (3.5 Inch, 1.44 MB)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146451: Scenes 1.0: Impressionists Disk 1 Contents"
-permalink: kb/146/Q146451/
+permalink: /kb/146/Q146451/
 ---
 
 ## Q146451: Scenes 1.0: Impressionists Disk 1 Contents

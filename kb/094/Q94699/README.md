@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94699: WinLogin Err Msg: Out of Memory"
-permalink: kb/094/Q94699/
+permalink: /kb/094/Q94699/
 ---
 
 ## Q94699: WinLogin Err Msg: Out of Memory

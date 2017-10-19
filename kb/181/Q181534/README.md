@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181534: WD97: Add Button Unavailable for Insert/Bookmark"
-permalink: kb/181/Q181534/
+permalink: /kb/181/Q181534/
 ---
 
 ## Q181534: WD97: Add Button Unavailable for Insert/Bookmark

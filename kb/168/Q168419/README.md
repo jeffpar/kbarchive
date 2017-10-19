@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168419: BUG: Browse Info Flag Not Saved for Subproject After Conversion"
-permalink: kb/168/Q168419/
+permalink: /kb/168/Q168419/
 ---
 
 ## Q168419: BUG: Browse Info Flag Not Saved for Subproject After Conversion

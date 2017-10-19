@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70671: Return Must Match Memory Model for CALL to Label in Proc"
-permalink: kb/070/Q70671/
+permalink: /kb/070/Q70671/
 ---
 
 ## Q70671: Return Must Match Memory Model for CALL to Label in Proc

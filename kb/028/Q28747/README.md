@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28747: Proper Installation for NEC PowerMate LCD Monitor"
-permalink: kb/028/Q28747/
+permalink: /kb/028/Q28747/
 ---
 
 ## Q28747: Proper Installation for NEC PowerMate LCD Monitor

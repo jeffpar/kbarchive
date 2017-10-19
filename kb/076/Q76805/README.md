@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76805: Clicking Noises While Playing Sounds on Sound Blaster Feature"
-permalink: kb/076/Q76805/
+permalink: /kb/076/Q76805/
 ---
 
 ## Q76805: Clicking Noises While Playing Sounds on Sound Blaster Feature

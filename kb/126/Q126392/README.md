@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126392: SNA Server Vines PC-based Service Doesn't Get Created"
-permalink: kb/126/Q126392/
+permalink: /kb/126/Q126392/
 ---
 
 ## Q126392: SNA Server Vines PC-based Service Doesn't Get Created

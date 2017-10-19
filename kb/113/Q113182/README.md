@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113182: SMC 8000 Elite Series Network Adapters Need Driver Updates"
-permalink: kb/113/Q113182/
+permalink: /kb/113/Q113182/
 ---
 
 ## Q113182: SMC 8000 Elite Series Network Adapters Need Driver Updates

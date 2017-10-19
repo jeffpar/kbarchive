@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293659: BUG: SQL Server ODBC Driver Incorrectly Maps Unicode Datatypes"
-permalink: kb/293/Q293659/
+permalink: /kb/293/Q293659/
 ---
 
 ## Q293659: BUG: SQL Server ODBC Driver Incorrectly Maps Unicode Datatypes

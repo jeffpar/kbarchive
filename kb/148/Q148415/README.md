@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148415: Upgrading From Visual FoxPro 3.0 to Visual FoxPro 3.0b"
-permalink: kb/148/Q148415/
+permalink: /kb/148/Q148415/
 ---
 
 ## Q148415: Upgrading From Visual FoxPro 3.0 to Visual FoxPro 3.0b

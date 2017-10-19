@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215358: GetWindowsDirectory May Return Incorrect Data"
-permalink: kb/215/Q215358/
+permalink: /kb/215/Q215358/
 ---
 
 ## Q215358: GetWindowsDirectory May Return Incorrect Data

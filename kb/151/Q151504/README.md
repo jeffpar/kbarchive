@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151504: Using Server Push with IIS"
-permalink: kb/151/Q151504/
+permalink: /kb/151/Q151504/
 ---
 
 ## Q151504: Using Server Push with IIS

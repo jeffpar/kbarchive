@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84156: Novell Printer Dialog Not Fully Repainted on EGA"
-permalink: kb/084/Q84156/
+permalink: /kb/084/Q84156/
 ---
 
 ## Q84156: Novell Printer Dialog Not Fully Repainted on EGA

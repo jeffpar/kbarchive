@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133441: Cannot Copy File to Plus Hard Card Drive"
-permalink: kb/133/Q133441/
+permalink: /kb/133/Q133441/
 ---
 
 ## Q133441: Cannot Copy File to Plus Hard Card Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281380: HOWTO: Print Multiple .tif Files from Visual FoxPro"
-permalink: kb/281/Q281380/
+permalink: /kb/281/Q281380/
 ---
 
 ## Q281380: HOWTO: Print Multiple .tif Files from Visual FoxPro

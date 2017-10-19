@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216644: Golf 99: How to Install Specific Golf Courses to Your Hard Disk"
-permalink: kb/216/Q216644/
+permalink: /kb/216/Q216644/
 ---
 
 ## Q216644: Golf 99: How to Install Specific Golf Courses to Your Hard Disk

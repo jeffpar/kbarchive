@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146383: All Instances of Recurring Appointments Download to Timex"
-permalink: kb/146/Q146383/
+permalink: /kb/146/Q146383/
 ---
 
 ## Q146383: All Instances of Recurring Appointments Download to Timex

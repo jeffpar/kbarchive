@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138235: Blank Fields Cause Inconsistent UI Behavior"
-permalink: kb/138/Q138235/
+permalink: /kb/138/Q138235/
 ---
 
 ## Q138235: Blank Fields Cause Inconsistent UI Behavior

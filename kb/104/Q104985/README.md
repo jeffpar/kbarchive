@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104985: PC Win: ServerPath= Statement in MSMAIL.INI Ignored"
-permalink: kb/104/Q104985/
+permalink: /kb/104/Q104985/
 ---
 
 ## Q104985: PC Win: ServerPath= Statement in MSMAIL.INI Ignored

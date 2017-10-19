@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246329: Working with the xterm Client in Interix"
-permalink: kb/246/Q246329/
+permalink: /kb/246/Q246329/
 ---
 
 ## Q246329: Working with the xterm Client in Interix

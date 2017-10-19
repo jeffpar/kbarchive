@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164623: WD97: InlineShape.Reset Does Not Reset Size of Document Object"
-permalink: kb/164/Q164623/
+permalink: /kb/164/Q164623/
 ---
 
 ## Q164623: WD97: InlineShape.Reset Does Not Reset Size of Document Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152124: USR-Megahertz 288 Ethernet/Modem Combo Card Fails"
-permalink: kb/152/Q152124/
+permalink: /kb/152/Q152124/
 ---
 
 ## Q152124: USR-Megahertz 288 Ethernet/Modem Combo Card Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186146: Double-Clicking .reg File Will Not Add Extended ANSI Values"
-permalink: kb/186/Q186146/
+permalink: /kb/186/Q186146/
 ---
 
 ## Q186146: Double-Clicking .reg File Will Not Add Extended ANSI Values

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94024: Exclude DASDDRVR.SYS When Running MemMaker"
-permalink: kb/094/Q94024/
+permalink: /kb/094/Q94024/
 ---
 
 ## Q94024: Exclude DASDDRVR.SYS When Running MemMaker

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255181: Exchange Server 5.5 Service Pack 2 Installation Stops"
-permalink: kb/255/Q255181/
+permalink: /kb/255/Q255181/
 ---
 
 ## Q255181: Exchange Server 5.5 Service Pack 2 Installation Stops

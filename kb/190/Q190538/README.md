@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190538: PRB: Cannot Directly Put Active Document on Active Desktop"
-permalink: kb/190/Q190538/
+permalink: /kb/190/Q190538/
 ---
 
 ## Q190538: PRB: Cannot Directly Put Active Document on Active Desktop

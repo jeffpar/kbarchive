@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87225: SYSTEM.INI Settings Required for Windows Pen Extensions"
-permalink: kb/087/Q87225/
+permalink: /kb/087/Q87225/
 ---
 
 ## Q87225: SYSTEM.INI Settings Required for Windows Pen Extensions

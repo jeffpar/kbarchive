@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135710: FIX: MaxLength Property Reverts to &quot;0&quot; in the Properties Sheet"
-permalink: kb/135/Q135710/
+permalink: /kb/135/Q135710/
 ---
 
 ## Q135710: FIX: MaxLength Property Reverts to &quot;0&quot; in the Properties Sheet

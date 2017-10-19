@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156654: How to Disable the Installation of Exchange During Setup"
-permalink: kb/156/Q156654/
+permalink: /kb/156/Q156654/
 ---
 
 ## Q156654: How to Disable the Installation of Exchange During Setup

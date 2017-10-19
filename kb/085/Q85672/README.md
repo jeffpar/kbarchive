@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85672: PC Win: Packaged Object Icon Changes After Reading"
-permalink: kb/085/Q85672/
+permalink: /kb/085/Q85672/
 ---
 
 ## Q85672: PC Win: Packaged Object Icon Changes After Reading

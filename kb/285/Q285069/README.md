@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285069: How Do I Fix Blank Certificate List Displayed on IIS5 Web Site?"
-permalink: kb/285/Q285069/
+permalink: /kb/285/Q285069/
 ---
 
 ## Q285069: How Do I Fix Blank Certificate List Displayed on IIS5 Web Site?

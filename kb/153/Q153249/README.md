@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153249: WIN16 to Windows NT Upgrade Fails with Long Server Name"
-permalink: kb/153/Q153249/
+permalink: /kb/153/Q153249/
 ---
 
 ## Q153249: WIN16 to Windows NT Upgrade Fails with Long Server Name

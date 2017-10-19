@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193509: FIX: Exception When Calling strftime() Function"
-permalink: kb/193/Q193509/
+permalink: /kb/193/Q193509/
 ---
 
 ## Q193509: FIX: Exception When Calling strftime() Function

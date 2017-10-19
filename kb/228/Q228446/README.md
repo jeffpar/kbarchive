@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228446: WD97: Styles with Custom Outline Numbering Change Unexpectedly"
-permalink: kb/228/Q228446/
+permalink: /kb/228/Q228446/
 ---
 
 ## Q228446: WD97: Styles with Custom Outline Numbering Change Unexpectedly

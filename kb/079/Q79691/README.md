@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79691: Determining User Access Rights on a Banyan VINES Network"
-permalink: kb/079/Q79691/
+permalink: /kb/079/Q79691/
 ---
 
 ## Q79691: Determining User Access Rights on a Banyan VINES Network

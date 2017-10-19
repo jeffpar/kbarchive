@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135189: Err Msg: Your Network Adapter HP27252 Is Not Configured..."
-permalink: kb/135/Q135189/
+permalink: /kb/135/Q135189/
 ---
 
 ## Q135189: Err Msg: Your Network Adapter HP27252 Is Not Configured...

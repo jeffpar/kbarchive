@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136777: PCMCIA Token Ring Network Card May Not Work"
-permalink: kb/136/Q136777/
+permalink: /kb/136/Q136777/
 ---
 
 ## Q136777: PCMCIA Token Ring Network Card May Not Work

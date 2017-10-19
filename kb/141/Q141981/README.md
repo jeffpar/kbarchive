@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141981: SMTP: How to Identify if ADPROC.EXE Has Replaced SMTPGET.EXE"
-permalink: kb/141/Q141981/
+permalink: /kb/141/Q141981/
 ---
 
 ## Q141981: SMTP: How to Identify if ADPROC.EXE Has Replaced SMTPGET.EXE

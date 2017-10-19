@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265888: A+ Certification Training Kit Comments and Corrections"
-permalink: kb/265/Q265888/
+permalink: /kb/265/Q265888/
 ---
 
 ## Q265888: A+ Certification Training Kit Comments and Corrections

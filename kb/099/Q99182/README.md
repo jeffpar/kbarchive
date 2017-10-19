@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99182: HOWTO: Change an MFC-Based MDI Child Window's Frame Text"
-permalink: kb/099/Q99182/
+permalink: /kb/099/Q99182/
 ---
 
 ## Q99182: HOWTO: Change an MFC-Based MDI Child Window's Frame Text

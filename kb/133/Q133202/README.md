@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133202: Windows NT File System Security and WWW Browsing"
-permalink: kb/133/Q133202/
+permalink: /kb/133/Q133202/
 ---
 
 ## Q133202: Windows NT File System Security and WWW Browsing

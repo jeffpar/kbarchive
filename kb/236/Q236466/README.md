@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236466: Computer Hangs After Installing Checked Service Pack 5"
-permalink: kb/236/Q236466/
+permalink: /kb/236/Q236466/
 ---
 
 ## Q236466: Computer Hangs After Installing Checked Service Pack 5

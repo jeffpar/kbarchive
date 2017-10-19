@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187287: SMS: PCM Does Not Remind Users of Pending Commands"
-permalink: kb/187/Q187287/
+permalink: /kb/187/Q187287/
 ---
 
 ## Q187287: SMS: PCM Does Not Remind Users of Pending Commands

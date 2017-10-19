@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152614: XADM: Removing Objects Whose Tombstone Expired Before DirRep"
-permalink: kb/152/Q152614/
+permalink: /kb/152/Q152614/
 ---
 
 ## Q152614: XADM: Removing Objects Whose Tombstone Expired Before DirRep

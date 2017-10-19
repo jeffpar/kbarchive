@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132844: Talking Clock Causes GP Fault Shutting Down Windows 95"
-permalink: kb/132/Q132844/
+permalink: /kb/132/Q132844/
 ---
 
 ## Q132844: Talking Clock Causes GP Fault Shutting Down Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146490: Unable to Install New Fonts from the Windows 95 Fonts Folder"
-permalink: kb/146/Q146490/
+permalink: /kb/146/Q146490/
 ---
 
 ## Q146490: Unable to Install New Fonts from the Windows 95 Fonts Folder

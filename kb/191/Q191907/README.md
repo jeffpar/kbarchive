@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191907: Y2K: Import.exe Displays Incorrect Date after 1999"
-permalink: kb/191/Q191907/
+permalink: /kb/191/Q191907/
 ---
 
 ## Q191907: Y2K: Import.exe Displays Incorrect Date after 1999

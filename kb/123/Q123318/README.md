@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123318: SMS: Checklist for Enabling SMS in Logon Scripts"
-permalink: kb/123/Q123318/
+permalink: /kb/123/Q123318/
 ---
 
 ## Q123318: SMS: Checklist for Enabling SMS in Logon Scripts

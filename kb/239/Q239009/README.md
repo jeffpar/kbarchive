@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239009: XFOR: Exchange Supports Time Zones Not Declared in RFC 822"
-permalink: kb/239/Q239009/
+permalink: /kb/239/Q239009/
 ---
 
 ## Q239009: XFOR: Exchange Supports Time Zones Not Declared in RFC 822

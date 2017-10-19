@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198839: FIX: Problems with Asynchronous Break on Multiprocessor Machines"
-permalink: kb/198/Q198839/
+permalink: /kb/198/Q198839/
 ---
 
 ## Q198839: FIX: Problems with Asynchronous Break on Multiprocessor Machines

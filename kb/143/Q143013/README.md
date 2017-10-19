@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143013: PPT7: After Build Step Fails in Slide Show"
-permalink: kb/143/Q143013/
+permalink: /kb/143/Q143013/
 ---
 
 ## Q143013: PPT7: After Build Step Fails in Slide Show

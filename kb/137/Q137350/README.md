@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137350: PRB: Visual FoxPro Quits to MS-DOS If AWFAX Is Running"
-permalink: kb/137/Q137350/
+permalink: /kb/137/Q137350/
 ---
 
 ## Q137350: PRB: Visual FoxPro Quits to MS-DOS If AWFAX Is Running

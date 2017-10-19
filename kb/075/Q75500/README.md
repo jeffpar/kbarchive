@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75500: INFO: Altering Edit Control Strings in Place May Cause UAE"
-permalink: kb/075/Q75500/
+permalink: /kb/075/Q75500/
 ---
 
 ## Q75500: INFO: Altering Edit Control Strings in Place May Cause UAE

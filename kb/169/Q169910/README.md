@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169910: SNA Print Service Doesn't Support SVF with 5250 Printing"
-permalink: kb/169/Q169910/
+permalink: /kb/169/Q169910/
 ---
 
 ## Q169910: SNA Print Service Doesn't Support SVF with 5250 Printing

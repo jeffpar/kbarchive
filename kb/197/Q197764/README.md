@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197764: WD97: Table Headings Do Not Appear in Normal View"
-permalink: kb/197/Q197764/
+permalink: /kb/197/Q197764/
 ---
 
 ## Q197764: WD97: Table Headings Do Not Appear in Normal View

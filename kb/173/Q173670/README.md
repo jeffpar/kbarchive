@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173670: WD97: How to Recover a Saved Field Value"
-permalink: kb/173/Q173670/
+permalink: /kb/173/Q173670/
 ---
 
 ## Q173670: WD97: How to Recover a Saved Field Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126701: RAS: Use Cached Credentials to Log On to a Different Domain"
-permalink: kb/126/Q126701/
+permalink: /kb/126/Q126701/
 ---
 
 ## Q126701: RAS: Use Cached Credentials to Log On to a Different Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146969: XCLN: Options Not Supported by WordMail"
-permalink: kb/146/Q146969/
+permalink: /kb/146/Q146969/
 ---
 
 ## Q146969: XCLN: Options Not Supported by WordMail

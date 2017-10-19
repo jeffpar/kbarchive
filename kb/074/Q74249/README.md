@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74249: Gateway Ethernet Card I/O Address Settings with Windows"
-permalink: kb/074/Q74249/
+permalink: /kb/074/Q74249/
 ---
 
 ## Q74249: Gateway Ethernet Card I/O Address Settings with Windows

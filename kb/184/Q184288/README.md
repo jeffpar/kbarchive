@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184288: GP Fault May Occur with IIS on Multiprocessor System"
-permalink: kb/184/Q184288/
+permalink: /kb/184/Q184288/
 ---
 
 ## Q184288: GP Fault May Occur with IIS on Multiprocessor System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157004: XCLN: Text Files Sent from Macintosh via IMC are Corrupted"
-permalink: kb/157/Q157004/
+permalink: /kb/157/Q157004/
 ---
 
 ## Q157004: XCLN: Text Files Sent from Macintosh via IMC are Corrupted

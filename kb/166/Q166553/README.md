@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166553: XCON: Encapsulated Message Not Delivered Over X.400 Connector"
-permalink: kb/166/Q166553/
+permalink: /kb/166/Q166553/
 ---
 
 ## Q166553: XCON: Encapsulated Message Not Delivered Over X.400 Connector

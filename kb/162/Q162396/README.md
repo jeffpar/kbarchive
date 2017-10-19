@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162396: Problem with DHCP Decline Feature in Service Pack 2"
-permalink: kb/162/Q162396/
+permalink: /kb/162/Q162396/
 ---
 
 ## Q162396: Problem with DHCP Decline Feature in Service Pack 2

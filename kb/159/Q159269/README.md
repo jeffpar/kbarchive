@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159269: FIX: Label Caption Longer Than 255 Characters Causes GPF"
-permalink: kb/159/Q159269/
+permalink: /kb/159/Q159269/
 ---
 
 ## Q159269: FIX: Label Caption Longer Than 255 Characters Causes GPF

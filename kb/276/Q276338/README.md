@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276338: Classic Board Games: Computer Hangs When You Uninstall Program"
-permalink: kb/276/Q276338/
+permalink: /kb/276/Q276338/
 ---
 
 ## Q276338: Classic Board Games: Computer Hangs When You Uninstall Program

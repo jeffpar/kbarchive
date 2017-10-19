@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160174: DOCERR: Steps to Make PPTP Connection Incomplete in WNTRK 4.0"
-permalink: kb/160/Q160174/
+permalink: /kb/160/Q160174/
 ---
 
 ## Q160174: DOCERR: Steps to Make PPTP Connection Incomplete in WNTRK 4.0

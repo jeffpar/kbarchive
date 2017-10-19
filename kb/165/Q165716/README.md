@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165716: WD97: Para Mark Not Included In Selection.MoveRight(wdSentence)"
-permalink: kb/165/Q165716/
+permalink: /kb/165/Q165716/
 ---
 
 ## Q165716: WD97: Para Mark Not Included In Selection.MoveRight(wdSentence)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196016: XWEB: Outlook Web Access Fails Intermittently"
-permalink: kb/196/Q196016/
+permalink: /kb/196/Q196016/
 ---
 
 ## Q196016: XWEB: Outlook Web Access Fails Intermittently

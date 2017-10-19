@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186544: Terminal Server Error Messages: 3100 to 3199"
-permalink: kb/186/Q186544/
+permalink: /kb/186/Q186544/
 ---
 
 ## Q186544: Terminal Server Error Messages: 3100 to 3199

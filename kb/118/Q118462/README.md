@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118462: Dangerous Creatures: TROUBLE.TXT Contents"
-permalink: kb/118/Q118462/
+permalink: /kb/118/Q118462/
 ---
 
 ## Q118462: Dangerous Creatures: TROUBLE.TXT Contents

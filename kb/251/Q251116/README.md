@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251116: BUG: Source Files Not Compiled When Header Files Are Modified"
-permalink: kb/251/Q251116/
+permalink: /kb/251/Q251116/
 ---
 
 ## Q251116: BUG: Source Files Not Compiled When Header Files Are Modified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145965: XCLN: Remote Mail 3.x Client Uses All Processor Time"
-permalink: kb/145/Q145965/
+permalink: /kb/145/Q145965/
 ---
 
 ## Q145965: XCLN: Remote Mail 3.x Client Uses All Processor Time

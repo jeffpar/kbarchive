@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80860: Uses of the LANMAN.INI RASLANNETS Entry"
-permalink: kb/080/Q80860/
+permalink: /kb/080/Q80860/
 ---
 
 ## Q80860: Uses of the LANMAN.INI RASLANNETS Entry

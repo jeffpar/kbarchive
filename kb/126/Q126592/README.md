@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126592: PC DOS: 3.x DOS Client Displays Garbage in Address List"
-permalink: kb/126/Q126592/
+permalink: /kb/126/Q126592/
 ---
 
 ## Q126592: PC DOS: 3.x DOS Client Displays Garbage in Address List

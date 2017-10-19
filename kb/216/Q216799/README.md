@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216799: STOP 0x0000007B Error on Alpha-Based Compaq Computer"
-permalink: kb/216/Q216799/
+permalink: /kb/216/Q216799/
 ---
 
 ## Q216799: STOP 0x0000007B Error on Alpha-Based Compaq Computer

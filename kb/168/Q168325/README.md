@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168325: WV: IPF Opening RTF File with Background Texture in Viewer"
-permalink: kb/168/Q168325/
+permalink: /kb/168/Q168325/
 ---
 
 ## Q168325: WV: IPF Opening RTF File with Background Texture in Viewer

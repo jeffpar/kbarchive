@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155018: Cannot Join Domain During Setup with Dial-Up Networking"
-permalink: kb/155/Q155018/
+permalink: /kb/155/Q155018/
 ---
 
 ## Q155018: Cannot Join Domain During Setup with Dial-Up Networking

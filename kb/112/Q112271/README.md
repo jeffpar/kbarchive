@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112271: PC Win: Folder Not Deleted on Export When All Messages Moved"
-permalink: kb/112/Q112271/
+permalink: /kb/112/Q112271/
 ---
 
 ## Q112271: PC Win: Folder Not Deleted on Export When All Messages Moved

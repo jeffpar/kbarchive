@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198415: XFOR: Disable 8-BIT MIME Support on NT Option Pack SMTP Service"
-permalink: kb/198/Q198415/
+permalink: /kb/198/Q198415/
 ---
 
 ## Q198415: XFOR: Disable 8-BIT MIME Support on NT Option Pack SMTP Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113166: PC Adm: Err Msg: Moving User 'UserName' Failed"
-permalink: kb/113/Q113166/
+permalink: /kb/113/Q113166/
 ---
 
 ## Q113166: PC Adm: Err Msg: Moving User 'UserName' Failed

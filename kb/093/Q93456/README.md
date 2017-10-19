@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93456: SYSINI.WRI from Windows for Workgroups Version 3.1 (Part B)"
-permalink: kb/093/Q93456/
+permalink: /kb/093/Q93456/
 ---
 
 ## Q93456: SYSINI.WRI from Windows for Workgroups Version 3.1 (Part B)

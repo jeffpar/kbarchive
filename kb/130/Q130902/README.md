@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130902: OEM CD-ROMs Do Not Contain WFW Client or UPDATE Directories"
-permalink: kb/130/Q130902/
+permalink: /kb/130/Q130902/
 ---
 
 ## Q130902: OEM CD-ROMs Do Not Contain WFW Client or UPDATE Directories

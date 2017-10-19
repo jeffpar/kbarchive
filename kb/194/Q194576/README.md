@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194576: HOWTO: Obtain Time Zone Information in Visual FoxPro"
-permalink: kb/194/Q194576/
+permalink: /kb/194/Q194576/
 ---
 
 ## Q194576: HOWTO: Obtain Time Zone Information in Visual FoxPro

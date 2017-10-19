@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133132: Suspend Mode Causes Network Transfer Problems on ZNote-Flex"
-permalink: kb/133/Q133132/
+permalink: /kb/133/Q133132/
 ---
 
 ## Q133132: Suspend Mode Causes Network Transfer Problems on ZNote-Flex

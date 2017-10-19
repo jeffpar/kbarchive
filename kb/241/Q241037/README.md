@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241037: XADM: Local.in.txt Is Needed When Using Mixer"
-permalink: kb/241/Q241037/
+permalink: /kb/241/Q241037/
 ---
 
 ## Q241037: XADM: Local.in.txt Is Needed When Using Mixer

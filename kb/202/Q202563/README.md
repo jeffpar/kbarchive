@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202563: HOWTO: Call Win32 WinHelp API from Visual Basic"
-permalink: kb/202/Q202563/
+permalink: /kb/202/Q202563/
 ---
 
 ## Q202563: HOWTO: Call Win32 WinHelp API from Visual Basic

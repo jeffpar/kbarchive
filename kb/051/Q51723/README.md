@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51723: Error U1073 When &quot;.&quot; Used for Path in Inference Rule"
-permalink: kb/051/Q51723/
+permalink: /kb/051/Q51723/
 ---
 
 ## Q51723: Error U1073 When &quot;.&quot; Used for Path in Inference Rule

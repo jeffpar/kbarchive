@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140080: Err Msg: A Set of Folders Could Not Be Opened"
-permalink: kb/140/Q140080/
+permalink: /kb/140/Q140080/
 ---
 
 ## Q140080: Err Msg: A Set of Folders Could Not Be Opened

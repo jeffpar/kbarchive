@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98426: Full Sync on LAN Manager 2.1a/2.2 Servers"
-permalink: kb/098/Q98426/
+permalink: /kb/098/Q98426/
 ---
 
 ## Q98426: Full Sync on LAN Manager 2.1a/2.2 Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190031: PRB: Control Does Not Remain in Lightweight Frame Control"
-permalink: kb/190/Q190031/
+permalink: /kb/190/Q190031/
 ---
 
 ## Q190031: PRB: Control Does Not Remain in Lightweight Frame Control

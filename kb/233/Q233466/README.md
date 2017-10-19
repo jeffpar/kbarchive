@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233466: Business Planner: Home Page Graphics Are Displayed Incorrectly"
-permalink: kb/233/Q233466/
+permalink: /kb/233/Q233466/
 ---
 
 ## Q233466: Business Planner: Home Page Graphics Are Displayed Incorrectly

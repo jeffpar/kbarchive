@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118450: COMSPEC Environment Is Not Set When Using 4DOS"
-permalink: kb/118/Q118450/
+permalink: /kb/118/Q118450/
 ---
 
 ## Q118450: COMSPEC Environment Is Not Set When Using 4DOS

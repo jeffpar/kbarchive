@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86879: Power Management and 32-Bit Disk Access with Magnavox Metalis"
-permalink: kb/086/Q86879/
+permalink: /kb/086/Q86879/
 ---
 
 ## Q86879: Power Management and 32-Bit Disk Access with Magnavox Metalis

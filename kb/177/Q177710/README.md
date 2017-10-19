@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177710: XADM: Store Stops Referencing Parent Attachment Pointer"
-permalink: kb/177/Q177710/
+permalink: /kb/177/Q177710/
 ---
 
 ## Q177710: XADM: Store Stops Referencing Parent Attachment Pointer

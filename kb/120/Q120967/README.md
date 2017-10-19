@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120967: BUG: Try Blocks Within a Switch Statement Behave Incorrectly"
-permalink: kb/120/Q120967/
+permalink: /kb/120/Q120967/
 ---
 
 ## Q120967: BUG: Try Blocks Within a Switch Statement Behave Incorrectly

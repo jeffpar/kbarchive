@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158759: FIX: Setup Wizard Gives Setup Error 799 Objec"
-permalink: kb/158/Q158759/
+permalink: /kb/158/Q158759/
 ---
 
 ## Q158759: FIX: Setup Wizard Gives Setup Error 799 Objec

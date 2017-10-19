@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154680: FP: Elements Jump to Bottom of Page Inserting Image, Text"
-permalink: kb/154/Q154680/
+permalink: /kb/154/Q154680/
 ---
 
 ## Q154680: FP: Elements Jump to Bottom of Page Inserting Image, Text

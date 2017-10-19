@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202048: SMS: File Transfer Sessions Start in Different Directories"
-permalink: kb/202/Q202048/
+permalink: /kb/202/Q202048/
 ---
 
 ## Q202048: SMS: File Transfer Sessions Start in Different Directories

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128369: PC WSPlus: Duplicate Appointments in Calendar (.CAL) File"
-permalink: kb/128/Q128369/
+permalink: /kb/128/Q128369/
 ---
 
 ## Q128369: PC WSPlus: Duplicate Appointments in Calendar (.CAL) File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87030: SMTP: Installing and Configuring a Downstream Postoffice"
-permalink: kb/087/Q87030/
+permalink: /kb/087/Q87030/
 ---
 
 ## Q87030: SMTP: Installing and Configuring a Downstream Postoffice

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163072: Allow SNARAS to Use a Fully Qualified LU Name in Phone Number"
-permalink: kb/163/Q163072/
+permalink: /kb/163/Q163072/
 ---
 
 ## Q163072: Allow SNARAS to Use a Fully Qualified LU Name in Phone Number

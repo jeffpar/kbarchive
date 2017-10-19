@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173838: Windows NT 4.0 Evaluation Edition Incompatible With FAT32"
-permalink: kb/173/Q173838/
+permalink: /kb/173/Q173838/
 ---
 
 ## Q173838: Windows NT 4.0 Evaluation Edition Incompatible With FAT32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187623: How to Change Terminal Server's Listening Port"
-permalink: kb/187/Q187623/
+permalink: /kb/187/Q187623/
 ---
 
 ## Q187623: How to Change Terminal Server's Listening Port

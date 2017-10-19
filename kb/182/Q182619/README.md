@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182619: XCON: MTA Terminates with 9404 Error"
-permalink: kb/182/Q182619/
+permalink: /kb/182/Q182619/
 ---
 
 ## Q182619: XCON: MTA Terminates with 9404 Error

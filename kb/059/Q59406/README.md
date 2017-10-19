@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59406: Em and En Dashes Are Reversed on PostScript Printer"
-permalink: kb/059/Q59406/
+permalink: /kb/059/Q59406/
 ---
 
 ## Q59406: Em and En Dashes Are Reversed on PostScript Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178178: Error Message: Error SU995034 -- Invalid INF file (0x13aa)"
-permalink: kb/178/Q178178/
+permalink: /kb/178/Q178178/
 ---
 
 ## Q178178: Error Message: Error SU995034 -- Invalid INF file (0x13aa)

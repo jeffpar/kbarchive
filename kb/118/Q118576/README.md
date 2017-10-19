@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118576: Machine Hangs While Downloading Files with Procomm Plus 2.0"
-permalink: kb/118/Q118576/
+permalink: /kb/118/Q118576/
 ---
 
 ## Q118576: Machine Hangs While Downloading Files with Procomm Plus 2.0

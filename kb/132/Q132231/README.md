@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132231: INFO: Connection Properties You Can Access with SQLGETPROP()"
-permalink: kb/132/Q132231/
+permalink: /kb/132/Q132231/
 ---
 
 ## Q132231: INFO: Connection Properties You Can Access with SQLGETPROP()

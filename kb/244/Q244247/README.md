@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244247: Age of Empires II: List of Campaigns and Scenarios"
-permalink: kb/244/Q244247/
+permalink: /kb/244/Q244247/
 ---
 
 ## Q244247: Age of Empires II: List of Campaigns and Scenarios

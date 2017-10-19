@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172192: PRB: Error: &quot;Failed to Get Expression Service&quot;"
-permalink: kb/172/Q172192/
+permalink: /kb/172/Q172192/
 ---
 
 ## Q172192: PRB: Error: &quot;Failed to Get Expression Service&quot;

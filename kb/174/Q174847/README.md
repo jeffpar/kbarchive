@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174847: Arcade for the Macintosh Hangs or Quits"
-permalink: kb/174/Q174847/
+permalink: /kb/174/Q174847/
 ---
 
 ## Q174847: Arcade for the Macintosh Hangs or Quits

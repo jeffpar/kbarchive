@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61026: WD97: Unable to Remove Gap Between Heading and Following Text"
-permalink: kb/061/Q61026/
+permalink: /kb/061/Q61026/
 ---
 
 ## Q61026: WD97: Unable to Remove Gap Between Heading and Following Text

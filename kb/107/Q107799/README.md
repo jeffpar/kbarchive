@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107799: Post Office Directory Name Cannot Contain Extended Characters"
-permalink: kb/107/Q107799/
+permalink: /kb/107/Q107799/
 ---
 
 ## Q107799: Post Office Directory Name Cannot Contain Extended Characters

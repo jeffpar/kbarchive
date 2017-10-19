@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131380: PC WSPlus: Dynamic Connections through GSNW to Novell Servers"
-permalink: kb/131/Q131380/
+permalink: /kb/131/Q131380/
 ---
 
 ## Q131380: PC WSPlus: Dynamic Connections through GSNW to Novell Servers

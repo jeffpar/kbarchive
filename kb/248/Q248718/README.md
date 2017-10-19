@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248718: XWEB: VBScript Error 800A01A8 and Outlook Web Access"
-permalink: kb/248/Q248718/
+permalink: /kb/248/Q248718/
 ---
 
 ## Q248718: XWEB: VBScript Error 800A01A8 and Outlook Web Access

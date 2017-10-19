@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190267: PRB: Negative Numbers Do Not Display in a Combo Box"
-permalink: kb/190/Q190267/
+permalink: /kb/190/Q190267/
 ---
 
 ## Q190267: PRB: Negative Numbers Do Not Display in a Combo Box

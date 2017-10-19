@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93521: Parity Errors in Windows 3.x"
-permalink: kb/093/Q93521/
+permalink: /kb/093/Q93521/
 ---
 
 ## Q93521: Parity Errors in Windows 3.x

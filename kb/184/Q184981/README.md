@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184981: WD97: &quot;Can't Find Project or Library&quot; When You Run a Macro"
-permalink: kb/184/Q184981/
+permalink: /kb/184/Q184981/
 ---
 
 ## Q184981: WD97: &quot;Can't Find Project or Library&quot; When You Run a Macro

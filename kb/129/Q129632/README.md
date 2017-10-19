@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129632: Visual FoxPro Capacities"
-permalink: kb/129/Q129632/
+permalink: /kb/129/Q129632/
 ---
 
 ## Q129632: Visual FoxPro Capacities

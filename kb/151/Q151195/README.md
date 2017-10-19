@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151195: LocalLUs Parameter Displays Printer LUs as Display LUs"
-permalink: kb/151/Q151195/
+permalink: /kb/151/Q151195/
 ---
 
 ## Q151195: LocalLUs Parameter Displays Printer LUs as Display LUs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238140: Reference Products: Find Feature Does Not Function Properly"
-permalink: kb/238/Q238140/
+permalink: /kb/238/Q238140/
 ---
 
 ## Q238140: Reference Products: Find Feature Does Not Function Properly

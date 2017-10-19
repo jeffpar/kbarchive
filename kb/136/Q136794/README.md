@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136794: Computer Hangs After Changing to Novell NetWare Client"
-permalink: kb/136/Q136794/
+permalink: /kb/136/Q136794/
 ---
 
 ## Q136794: Computer Hangs After Changing to Novell NetWare Client

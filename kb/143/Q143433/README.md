@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143433: BUG: Setup Does Not Validate First Three Digits of CD Key"
-permalink: kb/143/Q143433/
+permalink: /kb/143/Q143433/
 ---
 
 ## Q143433: BUG: Setup Does Not Validate First Three Digits of CD Key

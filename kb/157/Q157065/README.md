@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157065: STL Sample for deque::size and deque::resize Functions"
-permalink: kb/157/Q157065/
+permalink: /kb/157/Q157065/
 ---
 
 ## Q157065: STL Sample for deque::size and deque::resize Functions

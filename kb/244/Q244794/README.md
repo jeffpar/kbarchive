@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244794: OLE/DB for DB2 Does Not Prompt for User Name and Password"
-permalink: kb/244/Q244794/
+permalink: /kb/244/Q244794/
 ---
 
 ## Q244794: OLE/DB for DB2 Does Not Prompt for User Name and Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280750: How to Restore Netscape Communicator as the Default Browser"
-permalink: kb/280/Q280750/
+permalink: /kb/280/Q280750/
 ---
 
 ## Q280750: How to Restore Netscape Communicator as the Default Browser

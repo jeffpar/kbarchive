@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105130: SMTP: Err Msg: WARNING Incoming SMTP Mail From Unknown Host"
-permalink: kb/105/Q105130/
+permalink: /kb/105/Q105130/
 ---
 
 ## Q105130: SMTP: Err Msg: WARNING Incoming SMTP Mail From Unknown Host

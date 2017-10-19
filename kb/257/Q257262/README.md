@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257262: SMS: Subfolders Under CAP Share Folder Are Not Created"
-permalink: kb/257/Q257262/
+permalink: /kb/257/Q257262/
 ---
 
 ## Q257262: SMS: Subfolders Under CAP Share Folder Are Not Created

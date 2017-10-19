@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198673: XADM: Single Instance Storage Ratio is Low"
-permalink: kb/198/Q198673/
+permalink: /kb/198/Q198673/
 ---
 
 ## Q198673: XADM: Single Instance Storage Ratio is Low

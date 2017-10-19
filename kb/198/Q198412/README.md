@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198412: Combat FS: Button Does Not Respond When You Press ENTER"
-permalink: kb/198/Q198412/
+permalink: /kb/198/Q198412/
 ---
 
 ## Q198412: Combat FS: Button Does Not Respond When You Press ENTER

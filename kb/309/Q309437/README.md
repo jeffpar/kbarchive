@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309437: SMS: Clients Do Not Work on Windows NT 4.0 Terminal Server"
-permalink: kb/309/Q309437/
+permalink: /kb/309/Q309437/
 ---
 
 ## Q309437: SMS: Clients Do Not Work on Windows NT 4.0 Terminal Server

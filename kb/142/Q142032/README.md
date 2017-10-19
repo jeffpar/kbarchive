@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142032: PRB: Event Log Does Not Resize Without Clearing"
-permalink: kb/142/Q142032/
+permalink: /kb/142/Q142032/
 ---
 
 ## Q142032: PRB: Event Log Does Not Resize Without Clearing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260272: MapPoint 2001: Computer Hangs When You Link or Import More than"
-permalink: kb/260/Q260272/
+permalink: /kb/260/Q260272/
 ---
 
 ## Q260272: MapPoint 2001: Computer Hangs When You Link or Import More than

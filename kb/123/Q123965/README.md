@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123965: Can't Get Zone Information with Compaq Netflex II TR NIC"
-permalink: kb/123/Q123965/
+permalink: /kb/123/Q123965/
 ---
 
 ## Q123965: Can't Get Zone Information with Compaq Netflex II TR NIC

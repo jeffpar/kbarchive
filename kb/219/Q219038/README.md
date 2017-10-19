@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219038: Disabling and Removing WLBS"
-permalink: kb/219/Q219038/
+permalink: /kb/219/Q219038/
 ---
 
 ## Q219038: Disabling and Removing WLBS

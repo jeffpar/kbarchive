@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110223: PC Gen: PODIAG.EXE NETPO.GLB Error 140"
-permalink: kb/110/Q110223/
+permalink: /kb/110/Q110223/
 ---
 
 ## Q110223: PC Gen: PODIAG.EXE NETPO.GLB Error 140

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128789: BUG: LNK2001 on Member Function When Use Nested Class Template"
-permalink: kb/128/Q128789/
+permalink: /kb/128/Q128789/
 ---
 
 ## Q128789: BUG: LNK2001 on Member Function When Use Nested Class Template

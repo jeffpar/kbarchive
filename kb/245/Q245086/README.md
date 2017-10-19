@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245086: Netlogon Event 3051, with Invalid Registry Entry in Event Viewer"
-permalink: kb/245/Q245086/
+permalink: /kb/245/Q245086/
 ---
 
 ## Q245086: Netlogon Event 3051, with Invalid Registry Entry in Event Viewer

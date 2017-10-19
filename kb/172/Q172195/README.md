@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172195: Service Control Manager Reports Error But No Event ID Is Listed"
-permalink: kb/172/Q172195/
+permalink: /kb/172/Q172195/
 ---
 
 ## Q172195: Service Control Manager Reports Error But No Event ID Is Listed

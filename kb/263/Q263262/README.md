@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263262: Baseball 2001: Screen Is Not Properly Redrawn"
-permalink: kb/263/Q263262/
+permalink: /kb/263/Q263262/
 ---
 
 ## Q263262: Baseball 2001: Screen Is Not Properly Redrawn

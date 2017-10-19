@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85937: Windows: Can't Use Two Roland MPU401 Sound Cards at Same Time"
-permalink: kb/085/Q85937/
+permalink: /kb/085/Q85937/
 ---
 
 ## Q85937: Windows: Can't Use Two Roland MPU401 Sound Cards at Same Time

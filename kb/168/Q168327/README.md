@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168327: WD97: Paragraph Mark Appears Cropped When Using Tahoma Font"
-permalink: kb/168/Q168327/
+permalink: /kb/168/Q168327/
 ---
 
 ## Q168327: WD97: Paragraph Mark Appears Cropped When Using Tahoma Font

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72095: Legally Purchasing Microsoft MS-DOS 5"
-permalink: kb/072/Q72095/
+permalink: /kb/072/Q72095/
 ---
 
 ## Q72095: Legally Purchasing Microsoft MS-DOS 5

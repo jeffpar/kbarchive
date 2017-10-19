@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258538: PRB: Printing to a USB Printer Could Cause Fatal Exception Error"
-permalink: kb/258/Q258538/
+permalink: /kb/258/Q258538/
 ---
 
 ## Q258538: PRB: Printing to a USB Printer Could Cause Fatal Exception Error

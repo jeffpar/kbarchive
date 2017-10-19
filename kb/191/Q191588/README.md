@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191588: BUG: Create Report w/ SYS(1037) Saves Old Printer Information"
-permalink: kb/191/Q191588/
+permalink: /kb/191/Q191588/
 ---
 
 ## Q191588: BUG: Create Report w/ SYS(1037) Saves Old Printer Information

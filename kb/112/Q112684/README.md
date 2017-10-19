@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112684: IBM Raid Controller Support in Windows NT"
-permalink: kb/112/Q112684/
+permalink: /kb/112/Q112684/
 ---
 
 ## Q112684: IBM Raid Controller Support in Windows NT

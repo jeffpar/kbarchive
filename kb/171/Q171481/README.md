@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171481: FIX: Cannot Set the Enabled Property of an UpDown Control"
-permalink: kb/171/Q171481/
+permalink: /kb/171/Q171481/
 ---
 
 ## Q171481: FIX: Cannot Set the Enabled Property of an UpDown Control

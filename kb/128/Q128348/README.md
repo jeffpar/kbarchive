@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128348: Doc Err: Promoting and Demoting Domain Controllers and Servers"
-permalink: kb/128/Q128348/
+permalink: /kb/128/Q128348/
 ---
 
 ## Q128348: Doc Err: Promoting and Demoting Domain Controllers and Servers

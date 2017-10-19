@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97609: CONVERT.BAT Fails with a Syntax Error if You Are Running NDOS"
-permalink: kb/097/Q97609/
+permalink: /kb/097/Q97609/
 ---
 
 ## Q97609: CONVERT.BAT Fails with a Syntax Error if You Are Running NDOS

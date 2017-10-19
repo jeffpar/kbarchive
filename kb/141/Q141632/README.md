@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141632: PRB: GETPEM Function Doesn't Work on Object Contained in Class"
-permalink: kb/141/Q141632/
+permalink: /kb/141/Q141632/
 ---
 
 ## Q141632: PRB: GETPEM Function Doesn't Work on Object Contained in Class

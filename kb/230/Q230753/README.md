@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230753: XCLN: Outlook 8.03 Stays in Memory after Exiting"
-permalink: kb/230/Q230753/
+permalink: /kb/230/Q230753/
 ---
 
 ## Q230753: XCLN: Outlook 8.03 Stays in Memory after Exiting

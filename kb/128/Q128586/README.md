@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128586: SNADS: Lotus-Softswitch SNADGET.EXE Version 3.04.6"
-permalink: kb/128/Q128586/
+permalink: /kb/128/Q128586/
 ---
 
 ## Q128586: SNADS: Lotus-Softswitch SNADGET.EXE Version 3.04.6

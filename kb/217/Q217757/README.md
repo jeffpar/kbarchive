@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217757: INF: Default Schema to be Used with ODBC Driver for DB2 and OLE"
-permalink: kb/217/Q217757/
+permalink: /kb/217/Q217757/
 ---
 
 ## Q217757: INF: Default Schema to be Used with ODBC Driver for DB2 and OLE

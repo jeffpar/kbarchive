@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178788: WD97: Cannot &quot;Search the Web&quot; After Canceling Connection to ISP"
-permalink: kb/178/Q178788/
+permalink: /kb/178/Q178788/
 ---
 
 ## Q178788: WD97: Cannot &quot;Search the Web&quot; After Canceling Connection to ISP

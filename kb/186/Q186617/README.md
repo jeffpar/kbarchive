@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186617: Error 204: Terminal Server Client TCP Port error"
-permalink: kb/186/Q186617/
+permalink: /kb/186/Q186617/
 ---
 
 ## Q186617: Error 204: Terminal Server Client TCP Port error

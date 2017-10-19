@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185202: XADM: Proxy Address Not Generated After The Migration For CR"
-permalink: kb/185/Q185202/
+permalink: /kb/185/Q185202/
 ---
 
 ## Q185202: XADM: Proxy Address Not Generated After The Migration For CR

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130695: ACLCONV Fails when Trying to Read ACL File"
-permalink: kb/130/Q130695/
+permalink: /kb/130/Q130695/
 ---
 
 ## Q130695: ACLCONV Fails when Trying to Read ACL File

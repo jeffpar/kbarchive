@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180931: MicroGate SDLC Adapter Is Not Being Allowed Time to Reset DSR"
-permalink: kb/180/Q180931/
+permalink: /kb/180/Q180931/
 ---
 
 ## Q180931: MicroGate SDLC Adapter Is Not Being Allowed Time to Reset DSR

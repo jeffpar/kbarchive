@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184296: List of Bugs Fixed in SNA Server 3.0 Service Pack 3"
-permalink: kb/184/Q184296/
+permalink: /kb/184/Q184296/
 ---
 
 ## Q184296: List of Bugs Fixed in SNA Server 3.0 Service Pack 3

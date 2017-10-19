@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139541: How WINS Static Entries Replicate to Partners"
-permalink: kb/139/Q139541/
+permalink: /kb/139/Q139541/
 ---
 
 ## Q139541: How WINS Static Entries Replicate to Partners

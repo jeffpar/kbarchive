@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290388: HOW TO: Determine if a VeriSign SGC Is Being Used on a Web Site"
-permalink: kb/290/Q290388/
+permalink: /kb/290/Q290388/
 ---
 
 ## Q290388: HOW TO: Determine if a VeriSign SGC Is Being Used on a Web Site

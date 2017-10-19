@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99723: Mac Srv: Large Messages Stuck in Outgoing Queue"
-permalink: kb/099/Q99723/
+permalink: /kb/099/Q99723/
 ---
 
 ## Q99723: Mac Srv: Large Messages Stuck in Outgoing Queue

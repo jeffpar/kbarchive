@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214802: WinNT Lets You Paste Text into Unlock Workstation Dialog Box"
-permalink: kb/214/Q214802/
+permalink: /kb/214/Q214802/
 ---
 
 ## Q214802: WinNT Lets You Paste Text into Unlock Workstation Dialog Box

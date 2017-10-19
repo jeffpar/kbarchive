@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260821: Generic Text Printer Driver Outputs 0xFE as 0xFD"
-permalink: kb/260/Q260821/
+permalink: /kb/260/Q260821/
 ---
 
 ## Q260821: Generic Text Printer Driver Outputs 0xFE as 0xFD

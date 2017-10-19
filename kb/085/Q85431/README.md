@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85431: MultFont.exe Modifies the Font Common Dialog Box"
-permalink: kb/085/Q85431/
+permalink: /kb/085/Q85431/
 ---
 
 ## Q85431: MultFont.exe Modifies the Font Common Dialog Box

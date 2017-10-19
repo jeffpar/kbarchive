@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130932: Desktop Remains Active At Logoff"
-permalink: kb/130/Q130932/
+permalink: /kb/130/Q130932/
 ---
 
 ## Q130932: Desktop Remains Active At Logoff

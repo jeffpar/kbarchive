@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137880: Julia Child: Can't Click Back for Previous Index Choices"
-permalink: kb/137/Q137880/
+permalink: /kb/137/Q137880/
 ---
 
 ## Q137880: Julia Child: Can't Click Back for Previous Index Choices

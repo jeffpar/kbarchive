@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75190: Windows: A File Cannot Be Automatically Loaded into Clipboard"
-permalink: kb/075/Q75190/
+permalink: /kb/075/Q75190/
 ---
 
 ## Q75190: Windows: A File Cannot Be Automatically Loaded into Clipboard

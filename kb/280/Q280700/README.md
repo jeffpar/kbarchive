@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280700: RPC Server Process Access Violation Due to Use of NULL Pointer"
-permalink: kb/280/Q280700/
+permalink: /kb/280/Q280700/
 ---
 
 ## Q280700: RPC Server Process Access Violation Due to Use of NULL Pointer

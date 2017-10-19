@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156030: PRB: SET RELATION TO Has No Effect in Grid from Child"
-permalink: kb/156/Q156030/
+permalink: /kb/156/Q156030/
 ---
 
 ## Q156030: PRB: SET RELATION TO Has No Effect in Grid from Child

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169370: SNA Server Print Stuck in InSession Status"
-permalink: kb/169/Q169370/
+permalink: /kb/169/Q169370/
 ---
 
 ## Q169370: SNA Server Print Stuck in InSession Status

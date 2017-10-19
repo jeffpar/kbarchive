@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150520: WINS Server Sporadically Loses Name Resolution"
-permalink: kb/150/Q150520/
+permalink: /kb/150/Q150520/
 ---
 
 ## Q150520: WINS Server Sporadically Loses Name Resolution

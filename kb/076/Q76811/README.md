@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76811: Sound Blaster: Built-In Game I/O Port Feature"
-permalink: kb/076/Q76811/
+permalink: /kb/076/Q76811/
 ---
 
 ## Q76811: Sound Blaster: Built-In Game I/O Port Feature

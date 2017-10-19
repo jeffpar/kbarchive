@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236325: How to Obtain and Install Systems Management Server 2.0 SP2"
-permalink: kb/236/Q236325/
+permalink: /kb/236/Q236325/
 ---
 
 ## Q236325: How to Obtain and Install Systems Management Server 2.0 SP2

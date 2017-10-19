@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97956: CONN: CNU Needs MultiFinder"
-permalink: kb/097/Q97956/
+permalink: /kb/097/Q97956/
 ---
 
 ## Q97956: CONN: CNU Needs MultiFinder

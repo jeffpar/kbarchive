@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167995: FIX: Calling a Function Returning double May Not Pop FPU Stack"
-permalink: kb/167/Q167995/
+permalink: /kb/167/Q167995/
 ---
 
 ## Q167995: FIX: Calling a Function Returning double May Not Pop FPU Stack

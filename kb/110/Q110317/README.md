@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110317: Screen Corruption When Aircraft Crashes"
-permalink: kb/110/Q110317/
+permalink: /kb/110/Q110317/
 ---
 
 ## Q110317: Screen Corruption When Aircraft Crashes

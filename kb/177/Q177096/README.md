@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177096: BUG: Focus Disappears After Minimizing VB Form with UserControl"
-permalink: kb/177/Q177096/
+permalink: /kb/177/Q177096/
 ---
 
 ## Q177096: BUG: Focus Disappears After Minimizing VB Form with UserControl

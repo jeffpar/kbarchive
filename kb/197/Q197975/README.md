@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197975: XADM: Error When Removing SBS Version of Exchange"
-permalink: kb/197/Q197975/
+permalink: /kb/197/Q197975/
 ---
 
 ## Q197975: XADM: Error When Removing SBS Version of Exchange

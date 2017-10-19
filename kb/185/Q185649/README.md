@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185649: SMS: Run Cmd on Workstation Send Phase Only Never Shows Complete"
-permalink: kb/185/Q185649/
+permalink: /kb/185/Q185649/
 ---
 
 ## Q185649: SMS: Run Cmd on Workstation Send Phase Only Never Shows Complete

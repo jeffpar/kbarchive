@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195572: WD97: Not All Fonts Appear in Insert Symbol Dialog Box"
-permalink: kb/195/Q195572/
+permalink: /kb/195/Q195572/
 ---
 
 ## Q195572: WD97: Not All Fonts Appear in Insert Symbol Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288198: Combat Flight Simulator: Error in Quick Combat Help Topic"
-permalink: kb/288/Q288198/
+permalink: /kb/288/Q288198/
 ---
 
 ## Q288198: Combat Flight Simulator: Error in Quick Combat Help Topic

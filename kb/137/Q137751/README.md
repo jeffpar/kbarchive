@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137751: System Agent Reports Damaged Sage.dat File"
-permalink: kb/137/Q137751/
+permalink: /kb/137/Q137751/
 ---
 
 ## Q137751: System Agent Reports Damaged Sage.dat File

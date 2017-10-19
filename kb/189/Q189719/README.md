@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189719: BUG: JustPath() May Return an Empty String for Some Paths"
-permalink: kb/189/Q189719/
+permalink: /kb/189/Q189719/
 ---
 
 ## Q189719: BUG: JustPath() May Return an Empty String for Some Paths

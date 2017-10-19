@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139196: FIX: Clicking Scroll Bar in Grid Writes Data to Wrong Record"
-permalink: kb/139/Q139196/
+permalink: /kb/139/Q139196/
 ---
 
 ## Q139196: FIX: Clicking Scroll Bar in Grid Writes Data to Wrong Record

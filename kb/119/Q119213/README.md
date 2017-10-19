@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119213: Running Setup for the DoubleSpace Conversion from a Hard Disk"
-permalink: kb/119/Q119213/
+permalink: /kb/119/Q119213/
 ---
 
 ## Q119213: Running Setup for the DoubleSpace Conversion from a Hard Disk

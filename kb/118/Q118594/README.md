@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118594: SMTP: Definition of SMTP Gateway Terms"
-permalink: kb/118/Q118594/
+permalink: /kb/118/Q118594/
 ---
 
 ## Q118594: SMTP: Definition of SMTP Gateway Terms

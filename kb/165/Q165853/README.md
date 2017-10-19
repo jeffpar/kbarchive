@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165853: SNA Server Eval and SNA Workstation Show Wrong Splash Screen"
-permalink: kb/165/Q165853/
+permalink: /kb/165/Q165853/
 ---
 
 ## Q165853: SNA Server Eval and SNA Workstation Show Wrong Splash Screen

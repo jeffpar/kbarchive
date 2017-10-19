@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124293: HP JetDirect Firmware Versions and Windows NT Protocol Support"
-permalink: kb/124/Q124293/
+permalink: /kb/124/Q124293/
 ---
 
 ## Q124293: HP JetDirect Firmware Versions and Windows NT Protocol Support

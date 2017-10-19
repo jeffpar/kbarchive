@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196169: XADM: Option to Zero Out Deleted Messages on Exchange Server"
-permalink: kb/196/Q196169/
+permalink: /kb/196/Q196169/
 ---
 
 ## Q196169: XADM: Option to Zero Out Deleted Messages on Exchange Server

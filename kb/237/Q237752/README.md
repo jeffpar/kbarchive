@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237752: SMS: Client Discovery Does Not Enumerate over 25 Netcards"
-permalink: kb/237/Q237752/
+permalink: /kb/237/Q237752/
 ---
 
 ## Q237752: SMS: Client Discovery Does Not Enumerate over 25 Netcards

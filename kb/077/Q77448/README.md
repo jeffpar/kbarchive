@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77448: Generic CADD Does Not Run from MS-DOS 5.0 Shell"
-permalink: kb/077/Q77448/
+permalink: /kb/077/Q77448/
 ---
 
 ## Q77448: Generic CADD Does Not Run from MS-DOS 5.0 Shell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157122: WD97: Multiple Instances of Toolbar Buttons"
-permalink: kb/157/Q157122/
+permalink: /kb/157/Q157122/
 ---
 
 ## Q157122: WD97: Multiple Instances of Toolbar Buttons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64260: Retaining an MS-DOS Prompt When Running a Batch File"
-permalink: kb/064/Q64260/
+permalink: /kb/064/Q64260/
 ---
 
 ## Q64260: Retaining an MS-DOS Prompt When Running a Batch File

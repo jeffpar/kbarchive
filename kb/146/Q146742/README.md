@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146742: XCLN: Modified Column Widths are not Preserved"
-permalink: kb/146/Q146742/
+permalink: /kb/146/Q146742/
 ---
 
 ## Q146742: XCLN: Modified Column Widths are not Preserved

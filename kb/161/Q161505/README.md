@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161505: WD97: CD-ROM Contents (Part 5 of 7)"
-permalink: kb/161/Q161505/
+permalink: /kb/161/Q161505/
 ---
 
 ## Q161505: WD97: CD-ROM Contents (Part 5 of 7)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136553: Troubleshooting PCMCIA Cards in Windows 95"
-permalink: kb/136/Q136553/
+permalink: /kb/136/Q136553/
 ---
 
 ## Q136553: Troubleshooting PCMCIA Cards in Windows 95

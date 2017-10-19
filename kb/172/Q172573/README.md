@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172573: Voice Modem Drivers Available in Unimodem V"
-permalink: kb/172/Q172573/
+permalink: /kb/172/Q172573/
 ---
 
 ## Q172573: Voice Modem Drivers Available in Unimodem V

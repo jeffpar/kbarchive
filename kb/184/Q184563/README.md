@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184563: FixAcls /Q Switch Causes Access Violation"
-permalink: kb/184/Q184563/
+permalink: /kb/184/Q184563/
 ---
 
 ## Q184563: FixAcls /Q Switch Causes Access Violation

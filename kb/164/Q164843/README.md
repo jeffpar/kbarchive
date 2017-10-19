@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164843: XADM: Enhancement to Separate Reply Address from E-mail Address"
-permalink: kb/164/Q164843/
+permalink: /kb/164/Q164843/
 ---
 
 ## Q164843: XADM: Enhancement to Separate Reply Address from E-mail Address

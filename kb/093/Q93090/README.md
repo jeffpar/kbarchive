@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93090: Media Player: Full Screen AVI Playback"
-permalink: kb/093/Q93090/
+permalink: /kb/093/Q93090/
 ---
 
 ## Q93090: Media Player: Full Screen AVI Playback

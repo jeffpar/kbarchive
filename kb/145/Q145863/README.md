@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145863: FIX: Clear All Guides in Dialog Editor Causes Access Violation"
-permalink: kb/145/Q145863/
+permalink: /kb/145/Q145863/
 ---
 
 ## Q145863: FIX: Clear All Guides in Dialog Editor Causes Access Violation

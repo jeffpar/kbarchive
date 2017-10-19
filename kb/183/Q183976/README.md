@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183976: XFOR: 3 KB or Larger Attachments Cause PROFS Connector to Stop"
-permalink: kb/183/Q183976/
+permalink: /kb/183/Q183976/
 ---
 
 ## Q183976: XFOR: 3 KB or Larger Attachments Cause PROFS Connector to Stop

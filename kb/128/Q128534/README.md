@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128534: Microsoft Systems Management Server Help File, November 1995"
-permalink: kb/128/Q128534/
+permalink: /kb/128/Q128534/
 ---
 
 ## Q128534: Microsoft Systems Management Server Help File, November 1995

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87671: FoxBASE+ Error Messages: N - Z"
-permalink: kb/087/Q87671/
+permalink: /kb/087/Q87671/
 ---
 
 ## Q87671: FoxBASE+ Error Messages: N - Z

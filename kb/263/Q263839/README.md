@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263839: HOWTO: Use Long File Names with ITC Execute Method"
-permalink: kb/263/Q263839/
+permalink: /kb/263/Q263839/
 ---
 
 ## Q263839: HOWTO: Use Long File Names with ITC Execute Method

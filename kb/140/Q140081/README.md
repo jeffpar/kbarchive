@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140081: Purpose of the Wmconfig.exe and Wavemix.inf Files"
-permalink: kb/140/Q140081/
+permalink: /kb/140/Q140081/
 ---
 
 ## Q140081: Purpose of the Wmconfig.exe and Wavemix.inf Files

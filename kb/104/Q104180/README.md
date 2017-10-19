@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104180: Err Msg: Error writing to LPT1:"
-permalink: kb/104/Q104180/
+permalink: /kb/104/Q104180/
 ---
 
 ## Q104180: Err Msg: Error writing to LPT1:

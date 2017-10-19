@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250037: XADM: Client Cannot Open Public Folder"
-permalink: kb/250/Q250037/
+permalink: /kb/250/Q250037/
 ---
 
 ## Q250037: XADM: Client Cannot Open Public Folder

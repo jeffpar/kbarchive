@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131434: Mac Encarta 95: Can Not Find Articles in Word Search"
-permalink: kb/131/Q131434/
+permalink: /kb/131/Q131434/
 ---
 
 ## Q131434: Mac Encarta 95: Can Not Find Articles in Word Search

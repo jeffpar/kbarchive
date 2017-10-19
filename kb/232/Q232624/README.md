@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232624: PRB: Accelerator Keys Fail with ATL Control on VB UserControl"
-permalink: kb/232/Q232624/
+permalink: /kb/232/Q232624/
 ---
 
 ## Q232624: PRB: Accelerator Keys Fail with ATL Control on VB UserControl

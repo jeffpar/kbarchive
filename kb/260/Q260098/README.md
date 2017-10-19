@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260098: FIX: Cannot Set the ComboBox Text in the Click Event in VB 6.0"
-permalink: kb/260/Q260098/
+permalink: /kb/260/Q260098/
 ---
 
 ## Q260098: FIX: Cannot Set the ComboBox Text in the Click Event in VB 6.0

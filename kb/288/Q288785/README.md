@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288785: INFO: Cursor Type Supported by DB2OLEDB Provider"
-permalink: kb/288/Q288785/
+permalink: /kb/288/Q288785/
 ---
 
 ## Q288785: INFO: Cursor Type Supported by DB2OLEDB Provider

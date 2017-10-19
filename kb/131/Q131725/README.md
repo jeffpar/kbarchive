@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131725: PC Win: Err Msg: Some Entries Could Not Be Added to the Group"
-permalink: kb/131/Q131725/
+permalink: /kb/131/Q131725/
 ---
 
 ## Q131725: PC Win: Err Msg: Some Entries Could Not Be Added to the Group

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61993: Using Flight Simulator with an EGA Monochrome Monitor"
-permalink: kb/061/Q61993/
+permalink: /kb/061/Q61993/
 ---
 
 ## Q61993: Using Flight Simulator with an EGA Monochrome Monitor

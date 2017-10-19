@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244610: Err Msg: The Protected Storage Service Terminated with..."
-permalink: kb/244/Q244610/
+permalink: /kb/244/Q244610/
 ---
 
 ## Q244610: Err Msg: The Protected Storage Service Terminated with...

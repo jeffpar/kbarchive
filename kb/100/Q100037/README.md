@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100037: Mac Srv: Server Read Me File Fails to Print on LaserJet"
-permalink: kb/100/Q100037/
+permalink: /kb/100/Q100037/
 ---
 
 ## Q100037: Mac Srv: Server Read Me File Fails to Print on LaserJet

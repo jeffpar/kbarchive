@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176973: Stop 0x0000000A in Netbt.sys on BDC When WINS Server Shuts Down"
-permalink: kb/176/Q176973/
+permalink: /kb/176/Q176973/
 ---
 
 ## Q176973: Stop 0x0000000A in Netbt.sys on BDC When WINS Server Shuts Down

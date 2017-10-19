@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132559: PC WSPlus: Err Msg: Your Passwords Don't Match..."
-permalink: kb/132/Q132559/
+permalink: /kb/132/Q132559/
 ---
 
 ## Q132559: PC WSPlus: Err Msg: Your Passwords Don't Match...

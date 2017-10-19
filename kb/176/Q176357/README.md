@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176357: Err Msg: Critical Information About the Desktop Could Not Be..."
-permalink: kb/176/Q176357/
+permalink: /kb/176/Q176357/
 ---
 
 ## Q176357: Err Msg: Critical Information About the Desktop Could Not Be...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151896: Automap Streets: Only One Go To Pointer to City Name Allowed"
-permalink: kb/151/Q151896/
+permalink: /kb/151/Q151896/
 ---
 
 ## Q151896: Automap Streets: Only One Go To Pointer to City Name Allowed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113543: Err Msg After Installing MS-DOS 6.21: Wrong DBLSPACE.BIN..."
-permalink: kb/113/Q113543/
+permalink: /kb/113/Q113543/
 ---
 
 ## Q113543: Err Msg After Installing MS-DOS 6.21: Wrong DBLSPACE.BIN...

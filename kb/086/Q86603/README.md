@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86603: PC WSPlus: Cannot Switch to Task List"
-permalink: kb/086/Q86603/
+permalink: /kb/086/Q86603/
 ---
 
 ## Q86603: PC WSPlus: Cannot Switch to Task List

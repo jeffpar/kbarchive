@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153619: Windows NT 4.0 Configures PC-Card Hard Disk as Drive C"
-permalink: kb/153/Q153619/
+permalink: /kb/153/Q153619/
 ---
 
 ## Q153619: Windows NT 4.0 Configures PC-Card Hard Disk as Drive C

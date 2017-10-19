@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136034: Updated MODEM.INF Available For Megahertz Modems"
-permalink: kb/136/Q136034/
+permalink: /kb/136/Q136034/
 ---
 
 ## Q136034: Updated MODEM.INF Available For Megahertz Modems

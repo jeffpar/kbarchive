@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221715: FIX: Class Browser HTML Export Code Gives Invalid HTML 3.2 Code"
-permalink: kb/221/Q221715/
+permalink: /kb/221/Q221715/
 ---
 
 ## Q221715: FIX: Class Browser HTML Export Code Gives Invalid HTML 3.2 Code

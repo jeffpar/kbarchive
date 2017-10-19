@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146111: Perfmon Lists &#92; On Instance List For Network Segment Counters"
-permalink: kb/146/Q146111/
+permalink: /kb/146/Q146111/
 ---
 
 ## Q146111: Perfmon Lists &#92; On Instance List For Network Segment Counters

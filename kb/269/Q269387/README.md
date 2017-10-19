@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269387: HOWTO: Obtain a GUID in Visual FoxPro"
-permalink: kb/269/Q269387/
+permalink: /kb/269/Q269387/
 ---
 
 ## Q269387: HOWTO: Obtain a GUID in Visual FoxPro

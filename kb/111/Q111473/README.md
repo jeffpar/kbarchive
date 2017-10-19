@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111473: BUG: ORG in STRUCT Affects Current Segment Size with -Sf"
-permalink: kb/111/Q111473/
+permalink: /kb/111/Q111473/
 ---
 
 ## Q111473: BUG: ORG in STRUCT Affects Current Segment Size with -Sf

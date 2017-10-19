@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196671: WD97: How to Format a Combination of 5- and 9-Digit ZIP Codes"
-permalink: kb/196/Q196671/
+permalink: /kb/196/Q196671/
 ---
 
 ## Q196671: WD97: How to Format a Combination of 5- and 9-Digit ZIP Codes

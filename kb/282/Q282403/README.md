@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282403: SMS: Resources in Collections Appear Duplicated"
-permalink: kb/282/Q282403/
+permalink: /kb/282/Q282403/
 ---
 
 ## Q282403: SMS: Resources in Collections Appear Duplicated

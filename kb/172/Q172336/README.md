@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172336: PRB: Assertion Launching Program with Tip of Day &amp; Splash Screen"
-permalink: kb/172/Q172336/
+permalink: /kb/172/Q172336/
 ---
 
 ## Q172336: PRB: Assertion Launching Program with Tip of Day &amp; Splash Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195915: XADM: Missing Address Template Causes Event 1188"
-permalink: kb/195/Q195915/
+permalink: /kb/195/Q195915/
 ---
 
 ## Q195915: XADM: Missing Address Template Causes Event 1188

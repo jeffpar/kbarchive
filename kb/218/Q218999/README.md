@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218999: WD97: Cannot Select an Object Hidden Behind Another Object"
-permalink: kb/218/Q218999/
+permalink: /kb/218/Q218999/
 ---
 
 ## Q218999: WD97: Cannot Select an Object Hidden Behind Another Object

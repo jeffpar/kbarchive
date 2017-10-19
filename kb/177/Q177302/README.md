@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177302: HOWTO: Troubleshooting Memory Errors Under OS 8"
-permalink: kb/177/Q177302/
+permalink: /kb/177/Q177302/
 ---
 
 ## Q177302: HOWTO: Troubleshooting Memory Errors Under OS 8

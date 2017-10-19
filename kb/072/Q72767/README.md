@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72767: WD97: Setting Sequence Numbering Using a Bookmark"
-permalink: kb/072/Q72767/
+permalink: /kb/072/Q72767/
 ---
 
 ## Q72767: WD97: Setting Sequence Numbering Using a Bookmark

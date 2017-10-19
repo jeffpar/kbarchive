@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133714: PRB: &quot;Not Enough Space on Drive x&quot; Error During Installation"
-permalink: kb/133/Q133714/
+permalink: /kb/133/Q133714/
 ---
 
 ## Q133714: PRB: &quot;Not Enough Space on Drive x&quot; Error During Installation

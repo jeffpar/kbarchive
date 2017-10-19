@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137004: Error Running Windows NT After Restoring From Backup"
-permalink: kb/137/Q137004/
+permalink: /kb/137/Q137004/
 ---
 
 ## Q137004: Error Running Windows NT After Restoring From Backup

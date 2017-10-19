@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139492: Locating Microsoft SNA Server Companion Products Catalog"
-permalink: kb/139/Q139492/
+permalink: /kb/139/Q139492/
 ---
 
 ## Q139492: Locating Microsoft SNA Server Companion Products Catalog

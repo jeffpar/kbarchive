@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186726: Error 80004005 Occurs When Retrieving Data from SQL Server"
-permalink: kb/186/Q186726/
+permalink: /kb/186/Q186726/
 ---
 
 ## Q186726: Error 80004005 Occurs When Retrieving Data from SQL Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225525: Users Cannot Change System Time"
-permalink: kb/225/Q225525/
+permalink: /kb/225/Q225525/
 ---
 
 ## Q225525: Users Cannot Change System Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115434: Setup Does Not Write Files to Automounted Uninstall Disk"
-permalink: kb/115/Q115434/
+permalink: /kb/115/Q115434/
 ---
 
 ## Q115434: Setup Does Not Write Files to Automounted Uninstall Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158956: XGEN: Cannot Update When Only Exchange Administrator Installed"
-permalink: kb/158/Q158956/
+permalink: /kb/158/Q158956/
 ---
 
 ## Q158956: XGEN: Cannot Update When Only Exchange Administrator Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97604: Using MemMaker with a Drive That Requires a Device Driver"
-permalink: kb/097/Q97604/
+permalink: /kb/097/Q97604/
 ---
 
 ## Q97604: Using MemMaker with a Drive That Requires a Device Driver

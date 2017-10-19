@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195026: FIX: Links Are Not Updated After Renaming a Project"
-permalink: kb/195/Q195026/
+permalink: /kb/195/Q195026/
 ---
 
 ## Q195026: FIX: Links Are Not Updated After Renaming a Project

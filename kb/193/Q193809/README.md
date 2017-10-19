@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193809: Personal Web Server and Out Of Process Components"
-permalink: kb/193/Q193809/
+permalink: /kb/193/Q193809/
 ---
 
 ## Q193809: Personal Web Server and Out Of Process Components

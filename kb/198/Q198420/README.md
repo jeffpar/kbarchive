@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198420: Combat FS: Converted FS98 Aircraft Use Incorrect Flap Sounds"
-permalink: kb/198/Q198420/
+permalink: /kb/198/Q198420/
 ---
 
 ## Q198420: Combat FS: Converted FS98 Aircraft Use Incorrect Flap Sounds

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175291: Long Local or Global Group Names Do Not Display Properly"
-permalink: kb/175/Q175291/
+permalink: /kb/175/Q175291/
 ---
 
 ## Q175291: Long Local or Global Group Names Do Not Display Properly

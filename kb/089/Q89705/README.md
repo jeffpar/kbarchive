@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89705: INFO: How VMs Can Communicate with VxDs"
-permalink: kb/089/Q89705/
+permalink: /kb/089/Q89705/
 ---
 
 ## Q89705: INFO: How VMs Can Communicate with VxDs

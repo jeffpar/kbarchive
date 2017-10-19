@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51434: HOWTO: Calculate Available File Handles at Run Time"
-permalink: kb/051/Q51434/
+permalink: /kb/051/Q51434/
 ---
 
 ## Q51434: HOWTO: Calculate Available File Handles at Run Time

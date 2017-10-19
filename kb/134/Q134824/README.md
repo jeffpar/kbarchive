@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134824: Remote Control Fails With 15 Character NetBIOS Name"
-permalink: kb/134/Q134824/
+permalink: /kb/134/Q134824/
 ---
 
 ## Q134824: Remote Control Fails With 15 Character NetBIOS Name

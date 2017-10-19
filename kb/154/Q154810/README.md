@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154810: FIX: Errors When Accessing rdoPreparedStatements Not Consistent"
-permalink: kb/154/Q154810/
+permalink: /kb/154/Q154810/
 ---
 
 ## Q154810: FIX: Errors When Accessing rdoPreparedStatements Not Consistent

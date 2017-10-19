@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150838: NWLNKSPX May Reset Connection With Out-Of-Sequence Packet"
-permalink: kb/150/Q150838/
+permalink: /kb/150/Q150838/
 ---
 
 ## Q150838: NWLNKSPX May Reset Connection With Out-Of-Sequence Packet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260870: Restrict Anonymous Prevents Discovery of Windows NT 4.0 Domain"
-permalink: kb/260/Q260870/
+permalink: /kb/260/Q260870/
 ---
 
 ## Q260870: Restrict Anonymous Prevents Discovery of Windows NT 4.0 Domain

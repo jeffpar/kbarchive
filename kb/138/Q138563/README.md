@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138563: FIX: Form Not Cleared from Memory When Grid Has the Focus"
-permalink: kb/138/Q138563/
+permalink: /kb/138/Q138563/
 ---
 
 ## Q138563: FIX: Form Not Cleared from Memory When Grid Has the Focus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196882: WD97: Cannot Turn Field Codes On or Off in Protected Document"
-permalink: kb/196/Q196882/
+permalink: /kb/196/Q196882/
 ---
 
 ## Q196882: WD97: Cannot Turn Field Codes On or Off in Protected Document

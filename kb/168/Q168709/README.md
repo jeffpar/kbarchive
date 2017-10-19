@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168709: ConfirmHardware In an Unattend.txt File Appears Not to Work"
-permalink: kb/168/Q168709/
+permalink: /kb/168/Q168709/
 ---
 
 ## Q168709: ConfirmHardware In an Unattend.txt File Appears Not to Work

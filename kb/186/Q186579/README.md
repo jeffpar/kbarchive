@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186579: XCLN: Message Attachment May Be Hidden in English WinNT Client"
-permalink: kb/186/Q186579/
+permalink: /kb/186/Q186579/
 ---
 
 ## Q186579: XCLN: Message Attachment May Be Hidden in English WinNT Client

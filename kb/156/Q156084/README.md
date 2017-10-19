@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156084: Windows NT 3.51 Does Not Have Updated Daylight Saving Time"
-permalink: kb/156/Q156084/
+permalink: /kb/156/Q156084/
 ---
 
 ## Q156084: Windows NT 3.51 Does Not Have Updated Daylight Saving Time

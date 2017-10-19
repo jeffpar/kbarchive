@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155115: Windows 95 OSR2 Hangs at Startup with 3Com 3c562"
-permalink: kb/155/Q155115/
+permalink: /kb/155/Q155115/
 ---
 
 ## Q155115: Windows 95 OSR2 Hangs at Startup with 3Com 3c562

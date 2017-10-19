@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324322: XSL ISAPI Contains Non-Secure Code that Results in Access to IIS"
-permalink: kb/324/Q324322/
+permalink: /kb/324/Q324322/
 ---
 
 ## Q324322: XSL ISAPI Contains Non-Secure Code that Results in Access to IIS

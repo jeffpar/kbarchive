@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162583: ODE97: Upgrading Distributed Run-Time Applications in Access 97"
-permalink: kb/162/Q162583/
+permalink: /kb/162/Q162583/
 ---
 
 ## Q162583: ODE97: Upgrading Distributed Run-Time Applications in Access 97

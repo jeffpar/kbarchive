@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q108839: PC Gen: PODIAG.INI Entries in [Address &amp; Group Check]"
-permalink: kb/108/Q108839/
+title: "Q108839: PC Gen: PODIAG.INI Entries in &#91;Address &amp; Group Check&#93;"
+permalink: /kb/108/Q108839/
 ---
 
-## Q108839: PC Gen: PODIAG.INI Entries in [Address &amp; Group Check]
+## Q108839: PC Gen: PODIAG.INI Entries in &#91;Address &amp; Group Check&#93;
 
 	Article: Q108839
 	Product(s): Microsoft Mail For PC Networks

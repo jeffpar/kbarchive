@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90955: Using the CREATE VIEW &lt;Name&gt; FROM ENVIRONMENT ALL Command"
-permalink: kb/090/Q90955/
+permalink: /kb/090/Q90955/
 ---
 
 ## Q90955: Using the CREATE VIEW &lt;Name&gt; FROM ENVIRONMENT ALL Command

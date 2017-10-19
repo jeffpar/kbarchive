@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83254: Productivity Pack 3.1 Setup/Program Disk (5.25 HD)"
-permalink: kb/083/Q83254/
+permalink: /kb/083/Q83254/
 ---
 
 ## Q83254: Productivity Pack 3.1 Setup/Program Disk (5.25 HD)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149375: XCLN: What is the Personal Forms Library?"
-permalink: kb/149/Q149375/
+permalink: /kb/149/Q149375/
 ---
 
 ## Q149375: XCLN: What is the Personal Forms Library?

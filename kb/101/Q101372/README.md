@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101372: ADT: Use &quot;MSACCESS&quot; in DDEInitiate w/ Run-Time App (1.0, 2.0)"
-permalink: kb/101/Q101372/
+permalink: /kb/101/Q101372/
 ---
 
 ## Q101372: ADT: Use &quot;MSACCESS&quot; in DDEInitiate w/ Run-Time App (1.0, 2.0)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132681: PC Adm: How to Reformat Full Name Field in PO Address List"
-permalink: kb/132/Q132681/
+permalink: /kb/132/Q132681/
 ---
 
 ## Q132681: PC Adm: How to Reformat Full Name Field in PO Address List

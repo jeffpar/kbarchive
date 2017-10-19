@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261066: Motocross Madness 2: Results for Previous Race Are Not Recorded"
-permalink: kb/261/Q261066/
+permalink: /kb/261/Q261066/
 ---
 
 ## Q261066: Motocross Madness 2: Results for Previous Race Are Not Recorded

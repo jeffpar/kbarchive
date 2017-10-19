@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285970: Additional SNA Server Services Cannot Use Specific TCP/IP Ports"
-permalink: kb/285/Q285970/
+permalink: /kb/285/Q285970/
 ---
 
 ## Q285970: Additional SNA Server Services Cannot Use Specific TCP/IP Ports

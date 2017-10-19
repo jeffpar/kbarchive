@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268697: XADM: MTA Uses Maximum CPU Processes After Upgrade to Exchange S"
-permalink: kb/268/Q268697/
+permalink: /kb/268/Q268697/
 ---
 
 ## Q268697: XADM: MTA Uses Maximum CPU Processes After Upgrade to Exchange S

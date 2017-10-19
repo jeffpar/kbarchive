@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72517: UNDELETE Won't Work If the Subdirectory Has Been Removed"
-permalink: kb/072/Q72517/
+permalink: /kb/072/Q72517/
 ---
 
 ## Q72517: UNDELETE Won't Work If the Subdirectory Has Been Removed

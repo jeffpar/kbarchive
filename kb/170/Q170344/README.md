@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170344: XCLN: Err Msg: Unable To Display The Folder"
-permalink: kb/170/Q170344/
+permalink: /kb/170/Q170344/
 ---
 
 ## Q170344: XCLN: Err Msg: Unable To Display The Folder

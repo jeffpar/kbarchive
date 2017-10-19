@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137373: Using UINFO.XNF in MIF Entry Results in Corrupted File Error"
-permalink: kb/137/Q137373/
+permalink: /kb/137/Q137373/
 ---
 
 ## Q137373: Using UINFO.XNF in MIF Entry Results in Corrupted File Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198588: Spaces in Contact Web Page URL are Changed to %20"
-permalink: kb/198/Q198588/
+permalink: /kb/198/Q198588/
 ---
 
 ## Q198588: Spaces in Contact Web Page URL are Changed to %20

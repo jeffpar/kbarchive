@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160190: RasSetEntryProperties Does Not Save a Full Path Script Name"
-permalink: kb/160/Q160190/
+permalink: /kb/160/Q160190/
 ---
 
 ## Q160190: RasSetEntryProperties Does Not Save a Full Path Script Name

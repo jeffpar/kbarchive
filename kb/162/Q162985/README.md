@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162985: WD97: Using Relative Paths in HTML Files"
-permalink: kb/162/Q162985/
+permalink: /kb/162/Q162985/
 ---
 
 ## Q162985: WD97: Using Relative Paths in HTML Files

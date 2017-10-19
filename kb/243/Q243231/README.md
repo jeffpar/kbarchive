@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243231: Asheron's Call: Compass Flickers and Blips Momentarily Disappear"
-permalink: kb/243/Q243231/
+permalink: /kb/243/Q243231/
 ---
 
 ## Q243231: Asheron's Call: Compass Flickers and Blips Momentarily Disappear

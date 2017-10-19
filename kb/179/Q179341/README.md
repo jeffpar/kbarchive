@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179341: WD97: On Exit Macro Jump to Unprotected Section Fails"
-permalink: kb/179/Q179341/
+permalink: /kb/179/Q179341/
 ---
 
 ## Q179341: WD97: On Exit Macro Jump to Unprotected Section Fails

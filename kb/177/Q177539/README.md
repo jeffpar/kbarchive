@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177539: Windows 95 Stops Responding Because of Land Attack"
-permalink: kb/177/Q177539/
+permalink: /kb/177/Q177539/
 ---
 
 ## Q177539: Windows 95 Stops Responding Because of Land Attack

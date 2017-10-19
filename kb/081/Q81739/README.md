@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81739: Using UNINSTAL.EXE With MS-DOS Upgrade"
-permalink: kb/081/Q81739/
+permalink: /kb/081/Q81739/
 ---
 
 ## Q81739: Using UNINSTAL.EXE With MS-DOS Upgrade

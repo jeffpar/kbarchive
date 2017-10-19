@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274682: Crimson Skies: How to Improve Game Performance"
-permalink: kb/274/Q274682/
+permalink: /kb/274/Q274682/
 ---
 
 ## Q274682: Crimson Skies: How to Improve Game Performance

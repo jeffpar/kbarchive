@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134481: MS Paint Text Tool Does Not Work with Large Size Zoom Option"
-permalink: kb/134/Q134481/
+permalink: /kb/134/Q134481/
 ---
 
 ## Q134481: MS Paint Text Tool Does Not Work with Large Size Zoom Option

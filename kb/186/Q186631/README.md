@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186631: Modifying Terminal Server Clients Default Windows Directory Name"
-permalink: kb/186/Q186631/
+permalink: /kb/186/Q186631/
 ---
 
 ## Q186631: Modifying Terminal Server Clients Default Windows Directory Name

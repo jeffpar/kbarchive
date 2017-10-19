@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169298: Canceling Routing and RAS Install Does Not Restore Oemnsvra.inf"
-permalink: kb/169/Q169298/
+permalink: /kb/169/Q169298/
 ---
 
 ## Q169298: Canceling Routing and RAS Install Does Not Restore Oemnsvra.inf

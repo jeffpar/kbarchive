@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103092: Using Musical Titles with More than One CD-ROM Drive"
-permalink: kb/103/Q103092/
+permalink: /kb/103/Q103092/
 ---
 
 ## Q103092: Using Musical Titles with More than One CD-ROM Drive

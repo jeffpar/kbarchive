@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134499: Unreadable Font in Info Window in Map Info"
-permalink: kb/134/Q134499/
+permalink: /kb/134/Q134499/
 ---
 
 ## Q134499: Unreadable Font in Info Window in Map Info

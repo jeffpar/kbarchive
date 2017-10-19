@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271348: Microsoft Reader: Cannot Use Lookup Feature"
-permalink: kb/271/Q271348/
+permalink: /kb/271/Q271348/
 ---
 
 ## Q271348: Microsoft Reader: Cannot Use Lookup Feature

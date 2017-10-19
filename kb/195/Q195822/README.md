@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195822: Server Responds to PAP Client on Different AppleTalk Node"
-permalink: kb/195/Q195822/
+permalink: /kb/195/Q195822/
 ---
 
 ## Q195822: Server Responds to PAP Client on Different AppleTalk Node

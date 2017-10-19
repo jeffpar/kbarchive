@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175225: Disabling Context Menus Does Not Disable Key Combinations"
-permalink: kb/175/Q175225/
+permalink: /kb/175/Q175225/
 ---
 
 ## Q175225: Disabling Context Menus Does Not Disable Key Combinations

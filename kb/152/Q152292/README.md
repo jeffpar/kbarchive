@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152292: XFOR: IA5 Body Part Used Although Different Setting is Selected"
-permalink: kb/152/Q152292/
+permalink: /kb/152/Q152292/
 ---
 
 ## Q152292: XFOR: IA5 Body Part Used Although Different Setting is Selected

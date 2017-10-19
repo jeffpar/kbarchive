@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90854: PRB: Accented Characters in Filename Controls Lose Accents"
-permalink: kb/090/Q90854/
+permalink: /kb/090/Q90854/
 ---
 
 ## Q90854: PRB: Accented Characters in Filename Controls Lose Accents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166147: XFOR: Error Adding Connection to Microsoft Mail Connector"
-permalink: kb/166/Q166147/
+permalink: /kb/166/Q166147/
 ---
 
 ## Q166147: XFOR: Error Adding Connection to Microsoft Mail Connector

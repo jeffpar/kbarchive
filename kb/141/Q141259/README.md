@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141259: Correct Answer Feedback Absent in Multimedia Matching Game"
-permalink: kb/141/Q141259/
+permalink: /kb/141/Q141259/
 ---
 
 ## Q141259: Correct Answer Feedback Absent in Multimedia Matching Game

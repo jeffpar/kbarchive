@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129102: Recovering Windows NT After a Boot Failure on an NTFS Drive"
-permalink: kb/129/Q129102/
+permalink: /kb/129/Q129102/
 ---
 
 ## Q129102: Recovering Windows NT After a Boot Failure on an NTFS Drive

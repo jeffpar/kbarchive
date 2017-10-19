@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129977: Recommended Naming Conventions for Visual FoxPro"
-permalink: kb/129/Q129977/
+permalink: /kb/129/Q129977/
 ---
 
 ## Q129977: Recommended Naming Conventions for Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92877: WFWG May Hang If TCP/IP Hasn't Registered at Logon Time"
-permalink: kb/092/Q92877/
+permalink: /kb/092/Q92877/
 ---
 
 ## Q92877: WFWG May Hang If TCP/IP Hasn't Registered at Logon Time

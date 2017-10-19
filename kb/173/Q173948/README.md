@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173948: XWEB: Text in Create New Folder Box Not Left-Justified"
-permalink: kb/173/Q173948/
+permalink: /kb/173/Q173948/
 ---
 
 ## Q173948: XWEB: Text in Create New Folder Box Not Left-Justified

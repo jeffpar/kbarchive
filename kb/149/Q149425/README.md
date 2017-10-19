@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149425: IDC: Error Performing Query, Not Defined as a Valid User"
-permalink: kb/149/Q149425/
+permalink: /kb/149/Q149425/
 ---
 
 ## Q149425: IDC: Error Performing Query, Not Defined as a Valid User

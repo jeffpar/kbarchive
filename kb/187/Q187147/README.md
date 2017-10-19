@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187147: OLE/DCOM: Client Cannot Create a Server Instance"
-permalink: kb/187/Q187147/
+permalink: /kb/187/Q187147/
 ---
 
 ## Q187147: OLE/DCOM: Client Cannot Create a Server Instance

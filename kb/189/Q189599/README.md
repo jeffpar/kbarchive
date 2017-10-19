@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189599: HOWTO: Make Outlook Empty Mail from the Outbox w/OLE Automation"
-permalink: kb/189/Q189599/
+permalink: /kb/189/Q189599/
 ---
 
 ## Q189599: HOWTO: Make Outlook Empty Mail from the Outbox w/OLE Automation

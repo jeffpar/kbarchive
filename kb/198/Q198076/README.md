@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198076: WD97: Go To Bookmark Selects Entire Inserted Document"
-permalink: kb/198/Q198076/
+permalink: /kb/198/Q198076/
 ---
 
 ## Q198076: WD97: Go To Bookmark Selects Entire Inserted Document

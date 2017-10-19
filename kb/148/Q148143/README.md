@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148143: Macintosh Wine Guide: ReadMe Contents"
-permalink: kb/148/Q148143/
+permalink: /kb/148/Q148143/
 ---
 
 ## Q148143: Macintosh Wine Guide: ReadMe Contents

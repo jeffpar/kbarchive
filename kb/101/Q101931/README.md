@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101931: Mac Srv: Asterisk for Zone Name in Global Server Report"
-permalink: kb/101/Q101931/
+permalink: /kb/101/Q101931/
 ---
 
 ## Q101931: Mac Srv: Asterisk for Zone Name in Global Server Report

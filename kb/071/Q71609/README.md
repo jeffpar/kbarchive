@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71609: Errors Caused by Cross-Linked Files or Lost Clusters"
-permalink: kb/071/Q71609/
+permalink: /kb/071/Q71609/
 ---
 
 ## Q71609: Errors Caused by Cross-Linked Files or Lost Clusters

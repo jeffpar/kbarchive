@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72637: Sharing IRQs with the Windows 3.0 Communications Driver"
-permalink: kb/072/Q72637/
+permalink: /kb/072/Q72637/
 ---
 
 ## Q72637: Sharing IRQs with the Windows 3.0 Communications Driver

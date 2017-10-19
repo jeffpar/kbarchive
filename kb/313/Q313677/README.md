@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313677: BUG: Servers Are Removed from List When There Is a Blank String"
-permalink: kb/313/Q313677/
+permalink: /kb/313/Q313677/
 ---
 
 ## Q313677: BUG: Servers Are Removed from List When There Is a Blank String

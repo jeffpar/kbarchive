@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264284: What to Do When You Receive &quot;The Page Cannot be Found&quot; Error"
-permalink: kb/264/Q264284/
+permalink: /kb/264/Q264284/
 ---
 
 ## Q264284: What to Do When You Receive &quot;The Page Cannot be Found&quot; Error

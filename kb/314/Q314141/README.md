@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314141: SMS: Hardware Inventory Limited to Root&#92;Cimv2 and Root&#92;Cimv2&#92;Sms"
-permalink: kb/314/Q314141/
+permalink: /kb/314/Q314141/
 ---
 
 ## Q314141: SMS: Hardware Inventory Limited to Root&#92;Cimv2 and Root&#92;Cimv2&#92;Sms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240639: World Atlas 2000 Err Msg: Unable to Locate Favorites Folder..."
-permalink: kb/240/Q240639/
+permalink: /kb/240/Q240639/
 ---
 
 ## Q240639: World Atlas 2000 Err Msg: Unable to Locate Favorites Folder...

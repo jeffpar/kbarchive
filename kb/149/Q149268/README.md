@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149268: BUG: Odd Behavior with Modal Dialog/Form in ListView ItemClick"
-permalink: kb/149/Q149268/
+permalink: /kb/149/Q149268/
 ---
 
 ## Q149268: BUG: Odd Behavior with Modal Dialog/Form in ListView ItemClick

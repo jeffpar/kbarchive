@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164138: Files in Macintosh Volume Disappear from Macintosh Clients"
-permalink: kb/164/Q164138/
+permalink: /kb/164/Q164138/
 ---
 
 ## Q164138: Files in Macintosh Volume Disappear from Macintosh Clients

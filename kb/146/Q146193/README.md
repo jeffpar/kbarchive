@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146193: Internet Information Server 1.0 FAQ"
-permalink: kb/146/Q146193/
+permalink: /kb/146/Q146193/
 ---
 
 ## Q146193: Internet Information Server 1.0 FAQ

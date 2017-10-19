@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307191: BUG: VB 5.0 Setup.exe Consumes CPU, Installation Inefficient"
-permalink: kb/307/Q307191/
+permalink: /kb/307/Q307191/
 ---
 
 ## Q307191: BUG: VB 5.0 Setup.exe Consumes CPU, Installation Inefficient

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158678: Cannot Use SerialKey Device After Logging on as Different User"
-permalink: kb/158/Q158678/
+permalink: /kb/158/Q158678/
 ---
 
 ## Q158678: Cannot Use SerialKey Device After Logging on as Different User

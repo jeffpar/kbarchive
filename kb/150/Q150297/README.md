@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150297: Directory Replication Stop Messages"
-permalink: kb/150/Q150297/
+permalink: /kb/150/Q150297/
 ---
 
 ## Q150297: Directory Replication Stop Messages

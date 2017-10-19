@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147358: Translators Available in Schedule+"
-permalink: kb/147/Q147358/
+permalink: /kb/147/Q147358/
 ---
 
 ## Q147358: Translators Available in Schedule+

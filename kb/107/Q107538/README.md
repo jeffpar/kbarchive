@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107538: Comprehensive List of WFWG 3.11 &quot;User's Guide&quot; Doc Errors"
-permalink: kb/107/Q107538/
+permalink: /kb/107/Q107538/
 ---
 
 ## Q107538: Comprehensive List of WFWG 3.11 &quot;User's Guide&quot; Doc Errors

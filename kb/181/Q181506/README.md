@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181506: HOWTO: Make VC++ Recognize File Extensions as C/C++ Files"
-permalink: kb/181/Q181506/
+permalink: /kb/181/Q181506/
 ---
 
 ## Q181506: HOWTO: Make VC++ Recognize File Extensions as C/C++ Files

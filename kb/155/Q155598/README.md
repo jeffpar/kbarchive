@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155598: Cannot Install DPT SCSI Adapter During Setup on MIPS Platform"
-permalink: kb/155/Q155598/
+permalink: /kb/155/Q155598/
 ---
 
 ## Q155598: Cannot Install DPT SCSI Adapter During Setup on MIPS Platform

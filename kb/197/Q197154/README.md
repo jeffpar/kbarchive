@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197154: WD97: All Revisions, Changes Not Merged After Merging Documents"
-permalink: kb/197/Q197154/
+permalink: /kb/197/Q197154/
 ---
 
 ## Q197154: WD97: All Revisions, Changes Not Merged After Merging Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240232: WD97: Selection.Information Returns Incorrect Information"
-permalink: kb/240/Q240232/
+permalink: /kb/240/Q240232/
 ---
 
 ## Q240232: WD97: Selection.Information Returns Incorrect Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258856: Index Server Does Not Display PPT Title Information"
-permalink: kb/258/Q258856/
+permalink: /kb/258/Q258856/
 ---
 
 ## Q258856: Index Server Does Not Display PPT Title Information

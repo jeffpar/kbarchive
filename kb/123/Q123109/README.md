@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123109: Macintosh Clients Not Able to Use Downloaded Fonts"
-permalink: kb/123/Q123109/
+permalink: /kb/123/Q123109/
 ---
 
 ## Q123109: Macintosh Clients Not Able to Use Downloaded Fonts

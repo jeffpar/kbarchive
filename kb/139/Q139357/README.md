@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139357: Some SCSI Disk Drives Generate Unneeded Error Messages"
-permalink: kb/139/Q139357/
+permalink: /kb/139/Q139357/
 ---
 
 ## Q139357: Some SCSI Disk Drives Generate Unneeded Error Messages

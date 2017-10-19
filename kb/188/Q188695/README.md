@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188695: HOWTO: Select Remote Components for Client Projects w/PDW"
-permalink: kb/188/Q188695/
+permalink: /kb/188/Q188695/
 ---
 
 ## Q188695: HOWTO: Select Remote Components for Client Projects w/PDW

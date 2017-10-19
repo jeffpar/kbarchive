@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231455: Internet Explorer 5 At a Glance Corrections and Comments"
-permalink: kb/231/Q231455/
+permalink: /kb/231/Q231455/
 ---
 
 ## Q231455: Internet Explorer 5 At a Glance Corrections and Comments

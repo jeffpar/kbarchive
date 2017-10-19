@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104782: MS-DOS 6.2 MEM Displays Invalid Numbers with Qemm 7.01"
-permalink: kb/104/Q104782/
+permalink: /kb/104/Q104782/
 ---
 
 ## Q104782: MS-DOS 6.2 MEM Displays Invalid Numbers with Qemm 7.01

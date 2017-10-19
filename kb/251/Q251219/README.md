@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251219: IIS Reserves the &quot;.map&quot; File Extension for Image Maps"
-permalink: kb/251/Q251219/
+permalink: /kb/251/Q251219/
 ---
 
 ## Q251219: IIS Reserves the &quot;.map&quot; File Extension for Image Maps

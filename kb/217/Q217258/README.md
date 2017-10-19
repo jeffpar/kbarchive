@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217258: WD97: Graphic Colors Display Incorrectly in Word and IE 5"
-permalink: kb/217/Q217258/
+permalink: /kb/217/Q217258/
 ---
 
 ## Q217258: WD97: Graphic Colors Display Incorrectly in Word and IE 5

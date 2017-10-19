@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199993: SMS: Using SMS Service Manager to Query/Start/Stop SMS Services"
-permalink: kb/199/Q199993/
+permalink: /kb/199/Q199993/
 ---
 
 ## Q199993: SMS: Using SMS Service Manager to Query/Start/Stop SMS Services

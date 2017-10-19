@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315064: FIX: Fatal Exception Error with ResetToDefault on Empty Method"
-permalink: kb/315/Q315064/
+permalink: /kb/315/Q315064/
 ---
 
 ## Q315064: FIX: Fatal Exception Error with ResetToDefault on Empty Method

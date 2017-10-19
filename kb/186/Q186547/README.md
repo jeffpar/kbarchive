@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186547: Terminal Server Error Messages: 3700 to 3899"
-permalink: kb/186/Q186547/
+permalink: /kb/186/Q186547/
 ---
 
 ## Q186547: Terminal Server Error Messages: 3700 to 3899

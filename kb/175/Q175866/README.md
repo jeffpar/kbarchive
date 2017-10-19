@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175866: MSN E-mail Notification Message Is Not Updated"
-permalink: kb/175/Q175866/
+permalink: /kb/175/Q175866/
 ---
 
 ## Q175866: MSN E-mail Notification Message Is Not Updated

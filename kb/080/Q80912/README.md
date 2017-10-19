@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80912: FIX: Graph Custom Control Incompatible w/ HP II Series Printer"
-permalink: kb/080/Q80912/
+permalink: /kb/080/Q80912/
 ---
 
 ## Q80912: FIX: Graph Custom Control Incompatible w/ HP II Series Printer

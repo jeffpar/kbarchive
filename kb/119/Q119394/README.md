@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119394: PRB: Using References with va_&#42; Macros from stdarg.h"
-permalink: kb/119/Q119394/
+permalink: /kb/119/Q119394/
 ---
 
 ## Q119394: PRB: Using References with va_&#42; Macros from stdarg.h

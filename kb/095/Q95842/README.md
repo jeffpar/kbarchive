@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95842: Windows Network Setup User Directory Files"
-permalink: kb/095/Q95842/
+permalink: /kb/095/Q95842/
 ---
 
 ## Q95842: Windows Network Setup User Directory Files

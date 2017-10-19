@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162801: WD97: Toolbars Dock on Top of Other Toolbars, Hide Buttons"
-permalink: kb/162/Q162801/
+permalink: /kb/162/Q162801/
 ---
 
 ## Q162801: WD97: Toolbars Dock on Top of Other Toolbars, Hide Buttons

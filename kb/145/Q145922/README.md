@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145922: XADM: Configuring Permissions for Windows NT Accounts"
-permalink: kb/145/Q145922/
+permalink: /kb/145/Q145922/
 ---
 
 ## Q145922: XADM: Configuring Permissions for Windows NT Accounts

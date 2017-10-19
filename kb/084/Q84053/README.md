@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84053: How a TSR Can Serialize Access to Its Data"
-permalink: kb/084/Q84053/
+permalink: /kb/084/Q84053/
 ---
 
 ## Q84053: How a TSR Can Serialize Access to Its Data

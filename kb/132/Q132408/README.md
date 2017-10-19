@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132408: SNADS: How to Remove the SNADS Gateway from a Postoffice"
-permalink: kb/132/Q132408/
+permalink: /kb/132/Q132408/
 ---
 
 ## Q132408: SNADS: How to Remove the SNADS Gateway from a Postoffice

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101511: FILES=11 or Greater Needed to run NetWare 4.0 NETADMIN"
-permalink: kb/101/Q101511/
+permalink: /kb/101/Q101511/
 ---
 
 ## Q101511: FILES=11 or Greater Needed to run NetWare 4.0 NETADMIN

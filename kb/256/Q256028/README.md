@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256028: FS2000: Video Frame Rate Is Slow and Performance Is Poor"
-permalink: kb/256/Q256028/
+permalink: /kb/256/Q256028/
 ---
 
 ## Q256028: FS2000: Video Frame Rate Is Slow and Performance Is Poor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156936: Writer 2: How to Edit the Custom Dictionary"
-permalink: kb/156/Q156936/
+permalink: /kb/156/Q156936/
 ---
 
 ## Q156936: Writer 2: How to Edit the Custom Dictionary

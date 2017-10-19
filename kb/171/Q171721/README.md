@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171721: FP: Reset Button on Search Results Page Does Not Clear Form"
-permalink: kb/171/Q171721/
+permalink: /kb/171/Q171721/
 ---
 
 ## Q171721: FP: Reset Button on Search Results Page Does Not Clear Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82714: Available Conventional Memory for MS-DOS"
-permalink: kb/082/Q82714/
+permalink: /kb/082/Q82714/
 ---
 
 ## Q82714: Available Conventional Memory for MS-DOS

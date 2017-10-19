@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260003: Asheron's Call: Unable to Restore Characters or Lost Items"
-permalink: kb/260/Q260003/
+permalink: /kb/260/Q260003/
 ---
 
 ## Q260003: Asheron's Call: Unable to Restore Characters or Lost Items

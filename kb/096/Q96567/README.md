@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96567: Setting Up WFWG on a Novell Workstation Without a Hard Disk"
-permalink: kb/096/Q96567/
+permalink: /kb/096/Q96567/
 ---
 
 ## Q96567: Setting Up WFWG on a Novell Workstation Without a Hard Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269812: Magic School Bus: Computer Hangs When You Install Program"
-permalink: kb/269/Q269812/
+permalink: /kb/269/Q269812/
 ---
 
 ## Q269812: Magic School Bus: Computer Hangs When You Install Program

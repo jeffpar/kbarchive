@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119501: PRB: Error CXX0017 or CXX0034 for typedef"
-permalink: kb/119/Q119501/
+permalink: /kb/119/Q119501/
 ---
 
 ## Q119501: PRB: Error CXX0017 or CXX0034 for typedef

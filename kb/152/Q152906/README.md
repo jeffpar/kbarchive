@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152906: XADM: Regedit Errors When Installing or Updating Server"
-permalink: kb/152/Q152906/
+permalink: /kb/152/Q152906/
 ---
 
 ## Q152906: XADM: Regedit Errors When Installing or Updating Server

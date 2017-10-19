@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254464: PRB: Can't Add T-SQL Debugger to the Visual Basic Add-in Manager"
-permalink: kb/254/Q254464/
+permalink: /kb/254/Q254464/
 ---
 
 ## Q254464: PRB: Can't Add T-SQL Debugger to the Visual Basic Add-in Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128554: PRB: Profiler Fatal Errors PRF1012 and PRF1306"
-permalink: kb/128/Q128554/
+permalink: /kb/128/Q128554/
 ---
 
 ## Q128554: PRB: Profiler Fatal Errors PRF1012 and PRF1306

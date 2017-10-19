@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85586: Network Button Not Available in Windows 3.1"
-permalink: kb/085/Q85586/
+permalink: /kb/085/Q85586/
 ---
 
 ## Q85586: Network Button Not Available in Windows 3.1

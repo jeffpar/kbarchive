@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164631: Scavenging WINS Database Removes Static Entries"
-permalink: kb/164/Q164631/
+permalink: /kb/164/Q164631/
 ---
 
 ## Q164631: Scavenging WINS Database Removes Static Entries

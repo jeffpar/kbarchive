@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86955: 3COM: What the Gateway Does"
-permalink: kb/086/Q86955/
+permalink: /kb/086/Q86955/
 ---
 
 ## Q86955: 3COM: What the Gateway Does

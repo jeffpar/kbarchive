@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43052: Windows Does Not Support OS/2 Family API Calls"
-permalink: kb/043/Q43052/
+permalink: /kb/043/Q43052/
 ---
 
 ## Q43052: Windows Does Not Support OS/2 Family API Calls

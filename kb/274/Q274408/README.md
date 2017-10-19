@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274408: MSN Explorer Pages Are Blank Or Difficult To Read"
-permalink: kb/274/Q274408/
+permalink: /kb/274/Q274408/
 ---
 
 ## Q274408: MSN Explorer Pages Are Blank Or Difficult To Read

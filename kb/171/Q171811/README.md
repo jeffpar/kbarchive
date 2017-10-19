@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171811: FIX: Cannot See Relationship Collection on Interface with Tab"
-permalink: kb/171/Q171811/
+permalink: /kb/171/Q171811/
 ---
 
 ## Q171811: FIX: Cannot See Relationship Collection on Interface with Tab

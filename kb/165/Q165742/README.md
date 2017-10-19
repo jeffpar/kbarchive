@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165742: Addusers Errors &amp; Bad File Output When Using Incorrect Version"
-permalink: kb/165/Q165742/
+permalink: /kb/165/Q165742/
 ---
 
 ## Q165742: Addusers Errors &amp; Bad File Output When Using Incorrect Version

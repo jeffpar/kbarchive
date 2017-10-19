@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286507: XGEN: CDO Returns Substring Search Instead of Prefix"
-permalink: kb/286/Q286507/
+permalink: /kb/286/Q286507/
 ---
 
 ## Q286507: XGEN: CDO Returns Substring Search Instead of Prefix

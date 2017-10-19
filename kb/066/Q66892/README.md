@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66892: ASD: BACKSLASH Does Not Bring Up Design Preferences Menu"
-permalink: kb/066/Q66892/
+permalink: /kb/066/Q66892/
 ---
 
 ## Q66892: ASD: BACKSLASH Does Not Bring Up Design Preferences Menu

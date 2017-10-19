@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243513: Unable to Install Personal Web Server"
-permalink: kb/243/Q243513/
+permalink: /kb/243/Q243513/
 ---
 
 ## Q243513: Unable to Install Personal Web Server

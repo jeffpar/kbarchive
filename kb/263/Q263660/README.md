@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263660: BUG: Click Event May Fire Even Though Command Button Is Hidden"
-permalink: kb/263/Q263660/
+permalink: /kb/263/Q263660/
 ---
 
 ## Q263660: BUG: Click Event May Fire Even Though Command Button Is Hidden

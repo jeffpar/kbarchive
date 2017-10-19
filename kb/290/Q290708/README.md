@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290708: PRB: BorderStyle Property May Prevent Taskbar from Appearing"
-permalink: kb/290/Q290708/
+permalink: /kb/290/Q290708/
 ---
 
 ## Q290708: PRB: BorderStyle Property May Prevent Taskbar from Appearing

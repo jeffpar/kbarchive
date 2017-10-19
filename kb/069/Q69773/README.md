@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69773: PC DB: Backing Up a Mail Database"
-permalink: kb/069/Q69773/
+permalink: /kb/069/Q69773/
 ---
 
 ## Q69773: PC DB: Backing Up a Mail Database

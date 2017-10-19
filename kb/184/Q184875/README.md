@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184875: API Function BroadcastSystemMessage() Always Returns 1 (Success)"
-permalink: kb/184/Q184875/
+permalink: /kb/184/Q184875/
 ---
 
 ## Q184875: API Function BroadcastSystemMessage() Always Returns 1 (Success)

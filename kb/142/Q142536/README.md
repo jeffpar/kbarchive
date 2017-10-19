@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142536: No Dial Tone When You Attempt to Connect to MSN"
-permalink: kb/142/Q142536/
+permalink: /kb/142/Q142536/
 ---
 
 ## Q142536: No Dial Tone When You Attempt to Connect to MSN

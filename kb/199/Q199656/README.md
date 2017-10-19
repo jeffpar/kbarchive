@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199656: XIMS: How to Stop Spam Mail Messages from Using IMS Relay Agent"
-permalink: kb/199/Q199656/
+permalink: /kb/199/Q199656/
 ---
 
 ## Q199656: XIMS: How to Stop Spam Mail Messages from Using IMS Relay Agent

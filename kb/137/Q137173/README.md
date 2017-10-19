@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137173: UPGRADING TO MS WIN 95 SBS: Corrections and Comments"
-permalink: kb/137/Q137173/
+permalink: /kb/137/Q137173/
 ---
 
 ## Q137173: UPGRADING TO MS WIN 95 SBS: Corrections and Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136843: Improper Form Feed with Diconix 150 Plus Printer"
-permalink: kb/136/Q136843/
+permalink: /kb/136/Q136843/
 ---
 
 ## Q136843: Improper Form Feed with Diconix 150 Plus Printer

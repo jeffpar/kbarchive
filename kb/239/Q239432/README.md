@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239432: INFO: Visual FoxPro 5.0 Year 2000 Update"
-permalink: kb/239/Q239432/
+permalink: /kb/239/Q239432/
 ---
 
 ## Q239432: INFO: Visual FoxPro 5.0 Year 2000 Update

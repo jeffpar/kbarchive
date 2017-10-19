@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133290: Dogs: Control Menu Does Not Appear When Minimized"
-permalink: kb/133/Q133290/
+permalink: /kb/133/Q133290/
 ---
 
 ## Q133290: Dogs: Control Menu Does Not Appear When Minimized

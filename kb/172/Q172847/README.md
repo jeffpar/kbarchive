@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172847: HOWTO: Cut and Paste from General Field into a Word Document"
-permalink: kb/172/Q172847/
+permalink: /kb/172/Q172847/
 ---
 
 ## Q172847: HOWTO: Cut and Paste from General Field into a Word Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102729: CD-ROM and Services for Macintosh"
-permalink: kb/102/Q102729/
+permalink: /kb/102/Q102729/
 ---
 
 ## Q102729: CD-ROM and Services for Macintosh

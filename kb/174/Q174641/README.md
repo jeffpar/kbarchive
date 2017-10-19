@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174641: Resource Parameters Tab Is Missing"
-permalink: kb/174/Q174641/
+permalink: /kb/174/Q174641/
 ---
 
 ## Q174641: Resource Parameters Tab Is Missing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235724: SMSINST: Working with Complex Expressions and Operators"
-permalink: kb/235/Q235724/
+permalink: /kb/235/Q235724/
 ---
 
 ## Q235724: SMSINST: Working with Complex Expressions and Operators

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67190: ASD: Moving a Group of Static Scenery Items"
-permalink: kb/067/Q67190/
+permalink: /kb/067/Q67190/
 ---
 
 ## Q67190: ASD: Moving a Group of Static Scenery Items

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176162: BUG: Resource Loss with VB4 16-Bit OLE Container in Windows 3.11"
-permalink: kb/176/Q176162/
+permalink: /kb/176/Q176162/
 ---
 
 ## Q176162: BUG: Resource Loss with VB4 16-Bit OLE Container in Windows 3.11

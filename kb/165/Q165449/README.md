@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165449: MSB: ErrMsg: This Program Has Performed an Illegal Operation ..."
-permalink: kb/165/Q165449/
+permalink: /kb/165/Q165449/
 ---
 
 ## Q165449: MSB: ErrMsg: This Program Has Performed an Illegal Operation ...

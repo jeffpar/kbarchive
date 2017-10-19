@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130533: Using Previous Windows Communications Switches in Windows 95"
-permalink: kb/130/Q130533/
+permalink: /kb/130/Q130533/
 ---
 
 ## Q130533: Using Previous Windows Communications Switches in Windows 95

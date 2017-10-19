@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84331: BUG: Incorrect Jump to ERR Label in Windows DLLs"
-permalink: kb/084/Q84331/
+permalink: /kb/084/Q84331/
 ---
 
 ## Q84331: BUG: Incorrect Jump to ERR Label in Windows DLLs

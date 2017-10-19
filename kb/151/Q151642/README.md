@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151642: Encarta 96: Contents of the January 96 Yearbook Update"
-permalink: kb/151/Q151642/
+permalink: /kb/151/Q151642/
 ---
 
 ## Q151642: Encarta 96: Contents of the January 96 Yearbook Update

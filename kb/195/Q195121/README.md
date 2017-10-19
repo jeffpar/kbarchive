@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195121: SNA Server Fails With Access Violation in S1pnsuns()"
-permalink: kb/195/Q195121/
+permalink: /kb/195/Q195121/
 ---
 
 ## Q195121: SNA Server Fails With Access Violation in S1pnsuns()

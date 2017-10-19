@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103892: Versions of Bookshelf Recognized by the 1993 Upgrade"
-permalink: kb/103/Q103892/
+permalink: /kb/103/Q103892/
 ---
 
 ## Q103892: Versions of Bookshelf Recognized by the 1993 Upgrade

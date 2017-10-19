@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130755: PC Adm: Err Msg: Notice 9 Error File Not Accessible"
-permalink: kb/130/Q130755/
+permalink: /kb/130/Q130755/
 ---
 
 ## Q130755: PC Adm: Err Msg: Notice 9 Error File Not Accessible

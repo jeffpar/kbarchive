@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257906: Unable to Stop the Cluster Server Service"
-permalink: kb/257/Q257906/
+permalink: /kb/257/Q257906/
 ---
 
 ## Q257906: Unable to Stop the Cluster Server Service

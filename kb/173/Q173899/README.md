@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173899: XWEB: OWA Points to Non-Local Exchange Server Computer"
-permalink: kb/173/Q173899/
+permalink: /kb/173/Q173899/
 ---
 
 ## Q173899: XWEB: OWA Points to Non-Local Exchange Server Computer

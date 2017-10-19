@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93172: CURRENT.STS Stored According to USER Environment Variable"
-permalink: kb/093/Q93172/
+permalink: /kb/093/Q93172/
 ---
 
 ## Q93172: CURRENT.STS Stored According to USER Environment Variable

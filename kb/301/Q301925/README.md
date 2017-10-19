@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301925: Messages Received with White Text and Blue Background"
-permalink: kb/301/Q301925/
+permalink: /kb/301/Q301925/
 ---
 
 ## Q301925: Messages Received with White Text and Blue Background

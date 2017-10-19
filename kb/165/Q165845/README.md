@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165845: TN3270 Clients Cannot Connect to the TN3270 Server"
-permalink: kb/165/Q165845/
+permalink: /kb/165/Q165845/
 ---
 
 ## Q165845: TN3270 Clients Cannot Connect to the TN3270 Server

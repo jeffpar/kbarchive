@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221792: PRB: &quot;Library Not Registered&quot; Error Calling Method in ATL Server"
-permalink: kb/221/Q221792/
+permalink: /kb/221/Q221792/
 ---
 
 ## Q221792: PRB: &quot;Library Not Registered&quot; Error Calling Method in ATL Server

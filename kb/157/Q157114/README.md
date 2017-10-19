@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157114: &quot;Access Denied&quot; Attempting to Run File on LM/X Server"
-permalink: kb/157/Q157114/
+permalink: /kb/157/Q157114/
 ---
 
 ## Q157114: &quot;Access Denied&quot; Attempting to Run File on LM/X Server

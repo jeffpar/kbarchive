@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107166: Using the TITLE Option in Viewer"
-permalink: kb/107/Q107166/
+permalink: /kb/107/Q107166/
 ---
 
 ## Q107166: Using the TITLE Option in Viewer

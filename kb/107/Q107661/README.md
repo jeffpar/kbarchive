@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107661: Writer: HP LaserJet 4si MX Prints Banners Incorrectly"
-permalink: kb/107/Q107661/
+permalink: /kb/107/Q107661/
 ---
 
 ## Q107661: Writer: HP LaserJet 4si MX Prints Banners Incorrectly

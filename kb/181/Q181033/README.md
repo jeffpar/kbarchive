@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181033: BUG: Access Keys for UserControl Do Not Work in MFC Dialog"
-permalink: kb/181/Q181033/
+permalink: /kb/181/Q181033/
 ---
 
 ## Q181033: BUG: Access Keys for UserControl Do Not Work in MFC Dialog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147093: XCON: One Invalid X.400 Recp. Causes NDR For All X.400 Recps."
-permalink: kb/147/Q147093/
+permalink: /kb/147/Q147093/
 ---
 
 ## Q147093: XCON: One Invalid X.400 Recp. Causes NDR For All X.400 Recps.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140861: FIX: Default Value Not Evaluated Properly Using Stored Procs"
-permalink: kb/140/Q140861/
+permalink: /kb/140/Q140861/
 ---
 
 ## Q140861: FIX: Default Value Not Evaluated Properly Using Stored Procs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221615: FIX: Form Wizard Error # 11 in AddDetail with Long Table Name"
-permalink: kb/221/Q221615/
+permalink: /kb/221/Q221615/
 ---
 
 ## Q221615: FIX: Form Wizard Error # 11 in AddDetail with Long Table Name

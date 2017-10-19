@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170341: FIX: LoadPicture Displays 16 x 16 Icons as 32 x 32"
-permalink: kb/170/Q170341/
+permalink: /kb/170/Q170341/
 ---
 
 ## Q170341: FIX: LoadPicture Displays 16 x 16 Icons as 32 x 32

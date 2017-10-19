@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163096: WD97: Error Installing Alki Language Proofing Tools"
-permalink: kb/163/Q163096/
+permalink: /kb/163/Q163096/
 ---
 
 ## Q163096: WD97: Error Installing Alki Language Proofing Tools

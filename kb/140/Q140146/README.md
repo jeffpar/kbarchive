@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140146: Changing &quot;(SMS)&quot; Text in Shared Group Name"
-permalink: kb/140/Q140146/
+permalink: /kb/140/Q140146/
 ---
 
 ## Q140146: Changing &quot;(SMS)&quot; Text in Shared Group Name

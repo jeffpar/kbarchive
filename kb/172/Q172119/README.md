@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172119: Encarta 97: Incorrect Installation Instructions in Jewel Box"
-permalink: kb/172/Q172119/
+permalink: /kb/172/Q172119/
 ---
 
 ## Q172119: Encarta 97: Incorrect Installation Instructions in Jewel Box

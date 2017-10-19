@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178121: WD97: No Password Prompt for &quot;Modify&quot; in Mail Client"
-permalink: kb/178/Q178121/
+permalink: /kb/178/Q178121/
 ---
 
 ## Q178121: WD97: No Password Prompt for &quot;Modify&quot; in Mail Client

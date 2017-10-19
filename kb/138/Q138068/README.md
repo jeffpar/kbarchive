@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138068: Explanation of the States in Which Forms Can Exist"
-permalink: kb/138/Q138068/
+permalink: /kb/138/Q138068/
 ---
 
 ## Q138068: Explanation of the States in Which Forms Can Exist

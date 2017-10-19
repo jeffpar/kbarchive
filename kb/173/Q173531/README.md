@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173531: How to Configure Printers on FPNW to Service Pserver.nlm"
-permalink: kb/173/Q173531/
+permalink: /kb/173/Q173531/
 ---
 
 ## Q173531: How to Configure Printers on FPNW to Service Pserver.nlm

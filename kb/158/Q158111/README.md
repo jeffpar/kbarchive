@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158111: XCLN: ShivaRemote with Exchange (WFW 3.11/WFW TCP/IP or NetBEUI)"
-permalink: kb/158/Q158111/
+permalink: /kb/158/Q158111/
 ---
 
 ## Q158111: XCLN: ShivaRemote with Exchange (WFW 3.11/WFW TCP/IP or NetBEUI)

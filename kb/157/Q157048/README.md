@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157048: HOWTO: Add a Check Box to a List in Visual FoxPro"
-permalink: kb/157/Q157048/
+permalink: /kb/157/Q157048/
 ---
 
 ## Q157048: HOWTO: Add a Check Box to a List in Visual FoxPro

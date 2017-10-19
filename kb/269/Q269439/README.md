@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269439: XADM: Synchronization of .ost Files Won't Work w. Antivirus API"
-permalink: kb/269/Q269439/
+permalink: /kb/269/Q269439/
 ---
 
 ## Q269439: XADM: Synchronization of .ost Files Won't Work w. Antivirus API

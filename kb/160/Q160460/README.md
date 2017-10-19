@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160460: GPF in Administrator Tool During Remote Control of Netscape"
-permalink: kb/160/Q160460/
+permalink: /kb/160/Q160460/
 ---
 
 ## Q160460: GPF in Administrator Tool During Remote Control of Netscape

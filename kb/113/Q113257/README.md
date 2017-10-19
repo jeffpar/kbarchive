@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113257: HOWTO: Create New Documents Without CWinApp::OnFileNew"
-permalink: kb/113/Q113257/
+permalink: /kb/113/Q113257/
 ---
 
 ## Q113257: HOWTO: Create New Documents Without CWinApp::OnFileNew

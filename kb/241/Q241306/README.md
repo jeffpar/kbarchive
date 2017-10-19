@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241306: Cannot Install RAS After Applying Terminal Server Edition SP4"
-permalink: kb/241/Q241306/
+permalink: /kb/241/Q241306/
 ---
 
 ## Q241306: Cannot Install RAS After Applying Terminal Server Edition SP4

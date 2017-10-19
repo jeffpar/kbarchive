@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221173: PRB: Installing VB6 Doesn't Update Clireg32.exe"
-permalink: kb/221/Q221173/
+permalink: /kb/221/Q221173/
 ---
 
 ## Q221173: PRB: Installing VB6 Doesn't Update Clireg32.exe

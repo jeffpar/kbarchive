@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126450: Lemmings 3: Error 55.53: Unable to Calibrate Timer"
-permalink: kb/126/Q126450/
+permalink: /kb/126/Q126450/
 ---
 
 ## Q126450: Lemmings 3: Error 55.53: Unable to Calibrate Timer

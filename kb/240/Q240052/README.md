@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240052: HOWTO: Specifying a VSS Database Using the Command Line"
-permalink: kb/240/Q240052/
+permalink: /kb/240/Q240052/
 ---
 
 ## Q240052: HOWTO: Specifying a VSS Database Using the Command Line

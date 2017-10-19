@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141895: Music Central 1996 for the Macintosh System Requirements"
-permalink: kb/141/Q141895/
+permalink: /kb/141/Q141895/
 ---
 
 ## Q141895: Music Central 1996 for the Macintosh System Requirements

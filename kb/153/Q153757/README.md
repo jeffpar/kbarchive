@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153757: XCON: Dynamic RAS Connector Ignores Defined Prefix and Suffix"
-permalink: kb/153/Q153757/
+permalink: /kb/153/Q153757/
 ---
 
 ## Q153757: XCON: Dynamic RAS Connector Ignores Defined Prefix and Suffix

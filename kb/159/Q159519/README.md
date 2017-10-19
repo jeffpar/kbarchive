@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159519: World Atlas 97: Unable to Annotate Pushpin with Long Note"
-permalink: kb/159/Q159519/
+permalink: /kb/159/Q159519/
 ---
 
 ## Q159519: World Atlas 97: Unable to Annotate Pushpin with Long Note

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195132: WD97: {EQ &#92;X()} Field Converts to {EMBED EQUATION.2} Field"
-permalink: kb/195/Q195132/
+permalink: /kb/195/Q195132/
 ---
 
 ## Q195132: WD97: {EQ &#92;X()} Field Converts to {EMBED EQUATION.2} Field

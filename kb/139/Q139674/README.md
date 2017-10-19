@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139674: Enhanced Error Description for Message 631"
-permalink: kb/139/Q139674/
+permalink: /kb/139/Q139674/
 ---
 
 ## Q139674: Enhanced Error Description for Message 631

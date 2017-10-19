@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224557: XADM: MIMEsweeper for Exchange Server Hides New E-Mail"
-permalink: kb/224/Q224557/
+permalink: /kb/224/Q224557/
 ---
 
 ## Q224557: XADM: MIMEsweeper for Exchange Server Hides New E-Mail

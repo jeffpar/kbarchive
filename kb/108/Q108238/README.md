@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108238: Problem with the Copy Command and Multiple Parallel Ports"
-permalink: kb/108/Q108238/
+permalink: /kb/108/Q108238/
 ---
 
 ## Q108238: Problem with the Copy Command and Multiple Parallel Ports

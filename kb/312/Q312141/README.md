@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312141: WINS Owner Replicated When Owner's IP Is in PersonaNonGrata List"
-permalink: kb/312/Q312141/
+permalink: /kb/312/Q312141/
 ---
 
 ## Q312141: WINS Owner Replicated When Owner's IP Is in PersonaNonGrata List

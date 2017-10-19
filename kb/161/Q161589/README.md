@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161589: DOC: AfxGetStaticModuleState() Causes Errors in an Extension DLL"
-permalink: kb/161/Q161589/
+permalink: /kb/161/Q161589/
 ---
 
 ## Q161589: DOC: AfxGetStaticModuleState() Causes Errors in an Extension DLL

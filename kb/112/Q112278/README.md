@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112278: PC WSPlus: Print Margin Changes Not Saved"
-permalink: kb/112/Q112278/
+permalink: /kb/112/Q112278/
 ---
 
 ## Q112278: PC WSPlus: Print Margin Changes Not Saved

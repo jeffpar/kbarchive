@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240076: Windows NT 4.0 Client Does Not Receive New Policy"
-permalink: kb/240/Q240076/
+permalink: /kb/240/Q240076/
 ---
 
 ## Q240076: Windows NT 4.0 Client Does Not Receive New Policy

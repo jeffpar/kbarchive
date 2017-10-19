@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156940: Devices Not Detected with Intel 82371SB PIIX3 Controller"
-permalink: kb/156/Q156940/
+permalink: /kb/156/Q156940/
 ---
 
 ## Q156940: Devices Not Detected with Intel 82371SB PIIX3 Controller

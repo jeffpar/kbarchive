@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150038: Multimedia: Start Menu Shortcuts Missing"
-permalink: kb/150/Q150038/
+permalink: /kb/150/Q150038/
 ---
 
 ## Q150038: Multimedia: Start Menu Shortcuts Missing

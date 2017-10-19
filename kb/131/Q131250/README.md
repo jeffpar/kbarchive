@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131250: Clicking Top or Bottom of BBS Toolbar Causes Attachment View"
-permalink: kb/131/Q131250/
+permalink: /kb/131/Q131250/
 ---
 
 ## Q131250: Clicking Top or Bottom of BBS Toolbar Causes Attachment View

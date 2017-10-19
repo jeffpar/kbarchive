@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112345: FIX: F1001 or F1002 Compiling Program with Record Using -Zi"
-permalink: kb/112/Q112345/
+permalink: /kb/112/Q112345/
 ---
 
 ## Q112345: FIX: F1001 or F1002 Compiling Program with Record Using -Zi

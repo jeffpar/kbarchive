@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87044: SMTP: Definition of Gateway"
-permalink: kb/087/Q87044/
+permalink: /kb/087/Q87044/
 ---
 
 ## Q87044: SMTP: Definition of Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190889: Configuring Hayes Modem for SNA Server Switched Line"
-permalink: kb/190/Q190889/
+permalink: /kb/190/Q190889/
 ---
 
 ## Q190889: Configuring Hayes Modem for SNA Server Switched Line

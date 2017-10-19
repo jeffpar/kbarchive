@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192243: Administrator Program Incorrectly Displays Date After Year 2000"
-permalink: kb/192/Q192243/
+permalink: /kb/192/Q192243/
 ---
 
 ## Q192243: Administrator Program Incorrectly Displays Date After Year 2000

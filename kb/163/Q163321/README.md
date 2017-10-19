@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163321: XCON: Interoperability Logs (AP0.LOG)"
-permalink: kb/163/Q163321/
+permalink: /kb/163/Q163321/
 ---
 
 ## Q163321: XCON: Interoperability Logs (AP0.LOG)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95981: BUG: ProgMan DDE Reload() Command Does Not Work Properly"
-permalink: kb/095/Q95981/
+permalink: /kb/095/Q95981/
 ---
 
 ## Q95981: BUG: ProgMan DDE Reload() Command Does Not Work Properly

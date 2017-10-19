@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176965: Programs (16-bit .exe) May Start NTVDM at 100% CPU Utilization"
-permalink: kb/176/Q176965/
+permalink: /kb/176/Q176965/
 ---
 
 ## Q176965: Programs (16-bit .exe) May Start NTVDM at 100% CPU Utilization

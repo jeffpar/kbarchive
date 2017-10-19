@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209679: WD97: Font Colors Change Opening a Word 2000 Document"
-permalink: kb/209/Q209679/
+permalink: /kb/209/Q209679/
 ---
 
 ## Q209679: WD97: Font Colors Change Opening a Word 2000 Document

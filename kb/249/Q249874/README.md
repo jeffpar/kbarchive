@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249874: &quot;NBTSTAT -A&quot; Command Does Not Resolve Computer Name with DNS"
-permalink: kb/249/Q249874/
+permalink: /kb/249/Q249874/
 ---
 
 ## Q249874: &quot;NBTSTAT -A&quot; Command Does Not Resolve Computer Name with DNS

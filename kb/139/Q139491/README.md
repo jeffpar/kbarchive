@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139491: How to Use Functions in VERSION.DLL -- A 32-bit Sample App"
-permalink: kb/139/Q139491/
+permalink: /kb/139/Q139491/
 ---
 
 ## Q139491: How to Use Functions in VERSION.DLL -- A 32-bit Sample App

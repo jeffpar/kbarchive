@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129468: HOWTO: Update a Remote Table from a Local Table"
-permalink: kb/129/Q129468/
+permalink: /kb/129/Q129468/
 ---
 
 ## Q129468: HOWTO: Update a Remote Table from a Local Table

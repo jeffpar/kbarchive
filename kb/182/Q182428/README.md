@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182428: SMS: Netmon: GPF Occurs When Large String Entered in Name Field"
-permalink: kb/182/Q182428/
+permalink: /kb/182/Q182428/
 ---
 
 ## Q182428: SMS: Netmon: GPF Occurs When Large String Entered in Name Field

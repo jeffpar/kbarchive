@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108487: MS2000&#36; Trap D on OS/2 2.1 Workstation"
-permalink: kb/108/Q108487/
+permalink: /kb/108/Q108487/
 ---
 
 ## Q108487: MS2000&#36; Trap D on OS/2 2.1 Workstation

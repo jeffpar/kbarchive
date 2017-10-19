@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107099: X400: 3.2 Gateway Memory Requirements"
-permalink: kb/107/Q107099/
+permalink: /kb/107/Q107099/
 ---
 
 ## Q107099: X400: 3.2 Gateway Memory Requirements

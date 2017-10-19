@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72435: Wildcard File Copy in File Manager"
-permalink: kb/072/Q72435/
+permalink: /kb/072/Q72435/
 ---
 
 ## Q72435: Wildcard File Copy in File Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157634: BUG: Drag and Drop Fails in an As Top-Level Form"
-permalink: kb/157/Q157634/
+permalink: /kb/157/Q157634/
 ---
 
 ## Q157634: BUG: Drag and Drop Fails in an As Top-Level Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130321: PC MAPI: Attachment Name Must Retain 3 Letter File Extension"
-permalink: kb/130/Q130321/
+permalink: /kb/130/Q130321/
 ---
 
 ## Q130321: PC MAPI: Attachment Name Must Retain 3 Letter File Extension

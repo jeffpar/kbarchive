@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122711: MFC Version 3.1 White Paper"
-permalink: kb/122/Q122711/
+permalink: /kb/122/Q122711/
 ---
 
 ## Q122711: MFC Version 3.1 White Paper

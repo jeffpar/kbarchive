@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145708: XCLN: Canceling Service Configuration Does Not Stop Addition"
-permalink: kb/145/Q145708/
+permalink: /kb/145/Q145708/
 ---
 
 ## Q145708: XCLN: Canceling Service Configuration Does Not Stop Addition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222651: XFOR: Dirsync from Novell GroupWise Gateway to MS Mail 3.x POs"
-permalink: kb/222/Q222651/
+permalink: /kb/222/Q222651/
 ---
 
 ## Q222651: XFOR: Dirsync from Novell GroupWise Gateway to MS Mail 3.x POs

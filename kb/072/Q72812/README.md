@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72812: Multimedia Installable Driver SYSTEM.INI Entries"
-permalink: kb/072/Q72812/
+permalink: /kb/072/Q72812/
 ---
 
 ## Q72812: Multimedia Installable Driver SYSTEM.INI Entries

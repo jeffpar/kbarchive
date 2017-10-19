@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148336: Memory Leak in Windows 95 Kernel Using Windows Sockets"
-permalink: kb/148/Q148336/
+permalink: /kb/148/Q148336/
 ---
 
 ## Q148336: Memory Leak in Windows 95 Kernel Using Windows Sockets

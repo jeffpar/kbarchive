@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243351: BUG: /Za Compiler Option Causes C2248 Compiler Error"
-permalink: kb/243/Q243351/
+permalink: /kb/243/Q243351/
 ---
 
 ## Q243351: BUG: /Za Compiler Option Causes C2248 Compiler Error

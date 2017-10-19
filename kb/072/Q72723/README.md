@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72723: QRAM 1.01 LOADHI FILES +M Command Fails Under DOS 5.0"
-permalink: kb/072/Q72723/
+permalink: /kb/072/Q72723/
 ---
 
 ## Q72723: QRAM 1.01 LOADHI FILES +M Command Fails Under DOS 5.0

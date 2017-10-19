@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86988: X400: How MTAs Initiate and Communicate"
-permalink: kb/086/Q86988/
+permalink: /kb/086/Q86988/
 ---
 
 ## Q86988: X400: How MTAs Initiate and Communicate

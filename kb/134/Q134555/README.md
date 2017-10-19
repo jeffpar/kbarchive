@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134555: Canon NoteJet II 486C Cannot Suspend"
-permalink: kb/134/Q134555/
+permalink: /kb/134/Q134555/
 ---
 
 ## Q134555: Canon NoteJet II 486C Cannot Suspend

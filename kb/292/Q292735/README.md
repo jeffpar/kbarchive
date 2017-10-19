@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292735: Microsoft Office 97 Small Business Edition Starts Here Online Re"
-permalink: kb/292/Q292735/
+permalink: /kb/292/Q292735/
 ---
 
 ## Q292735: Microsoft Office 97 Small Business Edition Starts Here Online Re

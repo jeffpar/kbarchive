@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258694: Dynamics of Software Development Comments and Corrections"
-permalink: kb/258/Q258694/
+permalink: /kb/258/Q258694/
 ---
 
 ## Q258694: Dynamics of Software Development Comments and Corrections

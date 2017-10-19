@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249883: XFOR: Migration Wizard Reports Error Message 12024"
-permalink: kb/249/Q249883/
+permalink: /kb/249/Q249883/
 ---
 
 ## Q249883: XFOR: Migration Wizard Reports Error Message 12024

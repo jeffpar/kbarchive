@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138918: How to Make a Modal List Box on a Form"
-permalink: kb/138/Q138918/
+permalink: /kb/138/Q138918/
 ---
 
 ## Q138918: How to Make a Modal List Box on a Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247698: Fighter Ace II: Blue Bands Are Displayed Across the Horizon"
-permalink: kb/247/Q247698/
+permalink: /kb/247/Q247698/
 ---
 
 ## Q247698: Fighter Ace II: Blue Bands Are Displayed Across the Horizon

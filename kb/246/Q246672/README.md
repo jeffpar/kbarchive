@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246672: Error Message: No Folders Found in &lt;AS400 System Name&gt;"
-permalink: kb/246/Q246672/
+permalink: /kb/246/Q246672/
 ---
 
 ## Q246672: Error Message: No Folders Found in &lt;AS400 System Name&gt;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185787: STOP 0x0000002E on Alpha with ISA Sound Card"
-permalink: kb/185/Q185787/
+permalink: /kb/185/Q185787/
 ---
 
 ## Q185787: STOP 0x0000002E on Alpha with ISA Sound Card

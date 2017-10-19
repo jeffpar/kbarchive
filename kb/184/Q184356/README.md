@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184356: Age of Empires: How to Use the Scenario Builder"
-permalink: kb/184/Q184356/
+permalink: /kb/184/Q184356/
 ---
 
 ## Q184356: Age of Empires: How to Use the Scenario Builder

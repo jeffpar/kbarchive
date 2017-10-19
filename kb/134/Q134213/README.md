@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134213: BUG: Init Method for Cursor Object has Incorrect Data Session"
-permalink: kb/134/Q134213/
+permalink: /kb/134/Q134213/
 ---
 
 ## Q134213: BUG: Init Method for Cursor Object has Incorrect Data Session

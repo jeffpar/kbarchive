@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107090: PROFS: Verifying the CSIEXITs for Host Access Component"
-permalink: kb/107/Q107090/
+permalink: /kb/107/Q107090/
 ---
 
 ## Q107090: PROFS: Verifying the CSIEXITs for Host Access Component

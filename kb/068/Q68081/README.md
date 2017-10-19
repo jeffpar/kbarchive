@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68081: Creating a Single Import Library for Multiple DLLs"
-permalink: kb/068/Q68081/
+permalink: /kb/068/Q68081/
 ---
 
 ## Q68081: Creating a Single Import Library for Multiple DLLs

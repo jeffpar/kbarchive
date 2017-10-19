@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117796: PRB: Incorrect Debug Information in 32-bit Object Module"
-permalink: kb/117/Q117796/
+permalink: /kb/117/Q117796/
 ---
 
 ## Q117796: PRB: Incorrect Debug Information in 32-bit Object Module

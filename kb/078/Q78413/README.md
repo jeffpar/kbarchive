@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78413: Procom SCSI Drives Require Updated Driver with MS-DOS"
-permalink: kb/078/Q78413/
+permalink: /kb/078/Q78413/
 ---
 
 ## Q78413: Procom SCSI Drives Require Updated Driver with MS-DOS

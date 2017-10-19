@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187066: Resolution Problem with SYSTRAY on Alpha Platform"
-permalink: kb/187/Q187066/
+permalink: /kb/187/Q187066/
 ---
 
 ## Q187066: Resolution Problem with SYSTRAY on Alpha Platform

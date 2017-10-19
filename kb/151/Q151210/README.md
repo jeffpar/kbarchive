@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151210: Q&amp;A: Types Of Socket Applications Supported By Microsoft"
-permalink: kb/151/Q151210/
+permalink: /kb/151/Q151210/
 ---
 
 ## Q151210: Q&amp;A: Types Of Socket Applications Supported By Microsoft

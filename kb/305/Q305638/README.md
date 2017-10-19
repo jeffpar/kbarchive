@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305638: A Windows NT 4.0 Cluster Disk May Generate Error 3"
-permalink: kb/305/Q305638/
+permalink: /kb/305/Q305638/
 ---
 
 ## Q305638: A Windows NT 4.0 Cluster Disk May Generate Error 3

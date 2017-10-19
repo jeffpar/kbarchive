@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163021: RUI_WRITE Is Rejected with Sense Code 0X'200D'"
-permalink: kb/163/Q163021/
+permalink: /kb/163/Q163021/
 ---
 
 ## Q163021: RUI_WRITE Is Rejected with Sense Code 0X'200D'

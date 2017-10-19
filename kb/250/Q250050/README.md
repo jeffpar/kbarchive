@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250050: Mouse Error Message with PS/2 Mouse on Windows NT Workstation"
-permalink: kb/250/Q250050/
+permalink: /kb/250/Q250050/
 ---
 
 ## Q250050: Mouse Error Message with PS/2 Mouse on Windows NT Workstation

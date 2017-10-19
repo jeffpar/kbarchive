@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262328: StarLancer: Cannot View Your Sixth Medal in the Medal Locker"
-permalink: kb/262/Q262328/
+permalink: /kb/262/Q262328/
 ---
 
 ## Q262328: StarLancer: Cannot View Your Sixth Medal in the Medal Locker

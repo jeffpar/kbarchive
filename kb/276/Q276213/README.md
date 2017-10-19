@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276213: Spurious Pop-up Messages When You Insert a New Link Service"
-permalink: kb/276/Q276213/
+permalink: /kb/276/Q276213/
 ---
 
 ## Q276213: Spurious Pop-up Messages When You Insert a New Link Service

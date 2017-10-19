@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217751: HOWTO: Get Current User Locale ID in VB EXE Without Restarting"
-permalink: kb/217/Q217751/
+permalink: /kb/217/Q217751/
 ---
 
 ## Q217751: HOWTO: Get Current User Locale ID in VB EXE Without Restarting

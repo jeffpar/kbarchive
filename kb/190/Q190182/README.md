@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190182: Baseball 3D: How to Optimize Graphics and Game Performance"
-permalink: kb/190/Q190182/
+permalink: /kb/190/Q190182/
 ---
 
 ## Q190182: Baseball 3D: How to Optimize Graphics and Game Performance

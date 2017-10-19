@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189272: Upload Folders with Write and Execute Access Are Vulnerable"
-permalink: kb/189/Q189272/
+permalink: /kb/189/Q189272/
 ---
 
 ## Q189272: Upload Folders with Write and Execute Access Are Vulnerable

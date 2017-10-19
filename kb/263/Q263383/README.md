@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263383: Terminal Servers Run Programs with Mandatory &quot;Runs at Logoff&quot;"
-permalink: kb/263/Q263383/
+permalink: /kb/263/Q263383/
 ---
 
 ## Q263383: Terminal Servers Run Programs with Mandatory &quot;Runs at Logoff&quot;

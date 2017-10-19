@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109056: Microsoft At Work PC Fax: Top Questions and Answers"
-permalink: kb/109/Q109056/
+permalink: /kb/109/Q109056/
 ---
 
 ## Q109056: Microsoft At Work PC Fax: Top Questions and Answers

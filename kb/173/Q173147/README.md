@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173147: WD97: Removing Headings When Running Resume Wizard Causes Errors"
-permalink: kb/173/Q173147/
+permalink: /kb/173/Q173147/
 ---
 
 ## Q173147: WD97: Removing Headings When Running Resume Wizard Causes Errors

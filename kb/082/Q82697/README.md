@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82697: Novell Cannot Rename Directories with File Manager"
-permalink: kb/082/Q82697/
+permalink: /kb/082/Q82697/
 ---
 
 ## Q82697: Novell Cannot Rename Directories with File Manager

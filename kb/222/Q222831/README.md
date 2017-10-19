@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222831: HOWTO: Retrieving Numeric Data with SQL_NUMERIC_STRUCT"
-permalink: kb/222/Q222831/
+permalink: /kb/222/Q222831/
 ---
 
 ## Q222831: HOWTO: Retrieving Numeric Data with SQL_NUMERIC_STRUCT

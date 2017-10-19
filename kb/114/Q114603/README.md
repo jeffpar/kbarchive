@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114603: Troubleshooting Guide for the 16-bit Setup Toolkit"
-permalink: kb/114/Q114603/
+permalink: /kb/114/Q114603/
 ---
 
 ## Q114603: Troubleshooting Guide for the 16-bit Setup Toolkit

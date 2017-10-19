@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245222: INFO: Event ID in Win32_NTLogEvent, NT Event Viewer Don't Match"
-permalink: kb/245/Q245222/
+permalink: /kb/245/Q245222/
 ---
 
 ## Q245222: INFO: Event ID in Win32_NTLogEvent, NT Event Viewer Don't Match

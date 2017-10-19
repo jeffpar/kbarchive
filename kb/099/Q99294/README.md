@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99294: TCP/IP for Windows for Workgroups Must Load Under MS-DOS"
-permalink: kb/099/Q99294/
+permalink: /kb/099/Q99294/
 ---
 
 ## Q99294: TCP/IP for Windows for Workgroups Must Load Under MS-DOS

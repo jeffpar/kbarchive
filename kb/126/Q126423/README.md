@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126423: STOP: 0x0000007B &quot;Inaccessible_Boot_Device&quot; - during setup disk2"
-permalink: kb/126/Q126423/
+permalink: /kb/126/Q126423/
 ---
 
 ## Q126423: STOP: 0x0000007B &quot;Inaccessible_Boot_Device&quot; - during setup disk2

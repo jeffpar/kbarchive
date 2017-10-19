@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87201: PROFS: Changes Made to Database During Installation"
-permalink: kb/087/Q87201/
+permalink: /kb/087/Q87201/
 ---
 
 ## Q87201: PROFS: Changes Made to Database During Installation

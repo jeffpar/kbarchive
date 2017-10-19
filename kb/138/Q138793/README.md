@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138793: Multi-Protocol Router Installation and Configuration"
-permalink: kb/138/Q138793/
+permalink: /kb/138/Q138793/
 ---
 
 ## Q138793: Multi-Protocol Router Installation and Configuration

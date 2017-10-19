@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84898: Novell Printing May Cause Incomplete or Corrupt Output"
-permalink: kb/084/Q84898/
+permalink: /kb/084/Q84898/
 ---
 
 ## Q84898: Novell Printing May Cause Incomplete or Corrupt Output

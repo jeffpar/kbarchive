@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134360: Err Msg: The Command You Specified Could Not Be Carried Out"
-permalink: kb/134/Q134360/
+permalink: /kb/134/Q134360/
 ---
 
 ## Q134360: Err Msg: The Command You Specified Could Not Be Carried Out

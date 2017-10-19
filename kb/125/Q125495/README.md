@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125495: BUG: Enum in Function Template Causes C2065 Compiler Error"
-permalink: kb/125/Q125495/
+permalink: /kb/125/Q125495/
 ---
 
 ## Q125495: BUG: Enum in Function Template Causes C2065 Compiler Error

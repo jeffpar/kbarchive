@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178110: FPNW Does Not Allow OS/2 Clients to Open Files"
-permalink: kb/178/Q178110/
+permalink: /kb/178/Q178110/
 ---
 
 ## Q178110: FPNW Does Not Allow OS/2 Clients to Open Files

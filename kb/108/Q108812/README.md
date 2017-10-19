@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108812: BackColor Erases Existing Graphics on Form or Picture Control"
-permalink: kb/108/Q108812/
+permalink: /kb/108/Q108812/
 ---
 
 ## Q108812: BackColor Erases Existing Graphics on Form or Picture Control

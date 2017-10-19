@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87651: FFAPI: Sending Mail Through the MCI Gateway Using FFAPI"
-permalink: kb/087/Q87651/
+permalink: /kb/087/Q87651/
 ---
 
 ## Q87651: FFAPI: Sending Mail Through the MCI Gateway Using FFAPI

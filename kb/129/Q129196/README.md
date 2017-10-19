@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129196: System Hangs with 3Com EtherLink III (3C509B) ISA NIC"
-permalink: kb/129/Q129196/
+permalink: /kb/129/Q129196/
 ---
 
 ## Q129196: System Hangs with 3Com EtherLink III (3C509B) ISA NIC

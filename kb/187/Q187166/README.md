@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187166: Users Cannot Connect Without Logon Local Permissions"
-permalink: kb/187/Q187166/
+permalink: /kb/187/Q187166/
 ---
 
 ## Q187166: Users Cannot Connect Without Logon Local Permissions

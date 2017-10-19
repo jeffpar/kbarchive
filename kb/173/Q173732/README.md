@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173732: PPT7: Text Prints Slanted, Truncated to Tektronix Phaser Printer"
-permalink: kb/173/Q173732/
+permalink: /kb/173/Q173732/
 ---
 
 ## Q173732: PPT7: Text Prints Slanted, Truncated to Tektronix Phaser Printer

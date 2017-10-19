@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81330: HP LaserJet Font-Per-Page Limitation"
-permalink: kb/081/Q81330/
+permalink: /kb/081/Q81330/
 ---
 
 ## Q81330: HP LaserJet Font-Per-Page Limitation

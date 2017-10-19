@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153091: HOWTO: Find and View the Amount of Free Disk Space on a Drive"
-permalink: kb/153/Q153091/
+permalink: /kb/153/Q153091/
 ---
 
 ## Q153091: HOWTO: Find and View the Amount of Free Disk Space on a Drive

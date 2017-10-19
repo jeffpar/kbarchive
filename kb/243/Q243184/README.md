@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243184: XFOR: Lotus cc:Mail Usernames Added to Bcc Line If in DL"
-permalink: kb/243/Q243184/
+permalink: /kb/243/Q243184/
 ---
 
 ## Q243184: XFOR: Lotus cc:Mail Usernames Added to Bcc Line If in DL

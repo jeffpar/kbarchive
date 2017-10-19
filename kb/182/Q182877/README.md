@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182877: WD97: Reverse Print Order Does Not Work with Epson Stylus 500"
-permalink: kb/182/Q182877/
+permalink: /kb/182/Q182877/
 ---
 
 ## Q182877: WD97: Reverse Print Order Does Not Work with Epson Stylus 500

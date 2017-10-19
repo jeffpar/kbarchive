@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174574: SMS: Inventory Reports Incorrect Macintosh Processor"
-permalink: kb/174/Q174574/
+permalink: /kb/174/Q174574/
 ---
 
 ## Q174574: SMS: Inventory Reports Incorrect Macintosh Processor

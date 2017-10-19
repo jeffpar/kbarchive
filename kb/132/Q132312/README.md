@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132312: PRB: Can't Find Grid Property to Specify Record for Top Row"
-permalink: kb/132/Q132312/
+permalink: /kb/132/Q132312/
 ---
 
 ## Q132312: PRB: Can't Find Grid Property to Specify Record for Top Row

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110523: No Text in Colored Boxes using HP1200C Under Windows NT"
-permalink: kb/110/Q110523/
+permalink: /kb/110/Q110523/
 ---
 
 ## Q110523: No Text in Colored Boxes using HP1200C Under Windows NT

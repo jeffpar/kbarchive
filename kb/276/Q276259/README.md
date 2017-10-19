@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276259: SMS: Send Requests Are Created with Blank Routing Instructions"
-permalink: kb/276/Q276259/
+permalink: /kb/276/Q276259/
 ---
 
 ## Q276259: SMS: Send Requests Are Created with Blank Routing Instructions

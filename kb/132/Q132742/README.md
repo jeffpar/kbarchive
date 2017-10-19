@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132742: PC Gen: Microsoft Windows NT 3.51 and Compressed Mail Files"
-permalink: kb/132/Q132742/
+permalink: /kb/132/Q132742/
 ---
 
 ## Q132742: PC Gen: Microsoft Windows NT 3.51 and Compressed Mail Files

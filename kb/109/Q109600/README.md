@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109600: PRB: Migration Application Incorrectly Flags @...SAY as Error"
-permalink: kb/109/Q109600/
+permalink: /kb/109/Q109600/
 ---
 
 ## Q109600: PRB: Migration Application Incorrectly Flags @...SAY as Error

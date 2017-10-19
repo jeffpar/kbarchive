@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244690: List of Bugs Fixed in Windows NT 4.0 Service Pack 6/6a (Part 2)"
-permalink: kb/244/Q244690/
+permalink: /kb/244/Q244690/
 ---
 
 ## Q244690: List of Bugs Fixed in Windows NT 4.0 Service Pack 6/6a (Part 2)

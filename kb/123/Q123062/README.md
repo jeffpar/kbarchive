@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123062: Windows NT 3.5 Fails to Unlock a Record Area After Locking It"
-permalink: kb/123/Q123062/
+permalink: /kb/123/Q123062/
 ---
 
 ## Q123062: Windows NT 3.5 Fails to Unlock a Record Area After Locking It

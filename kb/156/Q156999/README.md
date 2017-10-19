@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156999: XFOR: SMTP Headers Lost for DOS MS Mail Client"
-permalink: kb/156/Q156999/
+permalink: /kb/156/Q156999/
 ---
 
 ## Q156999: XFOR: SMTP Headers Lost for DOS MS Mail Client

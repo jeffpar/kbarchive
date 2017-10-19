@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135777: Unable to Connect Using Cabletron EISA F70XX FDDI NIC"
-permalink: kb/135/Q135777/
+permalink: /kb/135/Q135777/
 ---
 
 ## Q135777: Unable to Connect Using Cabletron EISA F70XX FDDI NIC

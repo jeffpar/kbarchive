@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139083: &quot;Navigator Not Found&quot; Trying to Play Sound Clip"
-permalink: kb/139/Q139083/
+permalink: /kb/139/Q139083/
 ---
 
 ## Q139083: &quot;Navigator Not Found&quot; Trying to Play Sound Clip

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172809: SNA Server Connection to AS/400 Remains in Pending State"
-permalink: kb/172/Q172809/
+permalink: /kb/172/Q172809/
 ---
 
 ## Q172809: SNA Server Connection to AS/400 Remains in Pending State

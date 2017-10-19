@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104198: SFM: Macintosh Locked Folders Are Not Completely Secure"
-permalink: kb/104/Q104198/
+permalink: /kb/104/Q104198/
 ---
 
 ## Q104198: SFM: Macintosh Locked Folders Are Not Completely Secure

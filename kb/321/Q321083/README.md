@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321083: Dungeon Siege: Err Msg: Decoding Error - Compressed Data"
-permalink: kb/321/Q321083/
+permalink: /kb/321/Q321083/
 ---
 
 ## Q321083: Dungeon Siege: Err Msg: Decoding Error - Compressed Data

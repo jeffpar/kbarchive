@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193417: WD97: How Text with Layout Converter Determines Line Length"
-permalink: kb/193/Q193417/
+permalink: /kb/193/Q193417/
 ---
 
 ## Q193417: WD97: How Text with Layout Converter Determines Line Length

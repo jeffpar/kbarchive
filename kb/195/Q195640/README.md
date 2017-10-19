@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195640: Split Horizon with Poison Reverse Causes Incorrect RIP Updates"
-permalink: kb/195/Q195640/
+permalink: /kb/195/Q195640/
 ---
 
 ## Q195640: Split Horizon with Poison Reverse Causes Incorrect RIP Updates

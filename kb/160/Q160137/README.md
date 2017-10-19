@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160137: Invalid DNS Server Address Slows Name Resolution on RAS Client"
-permalink: kb/160/Q160137/
+permalink: /kb/160/Q160137/
 ---
 
 ## Q160137: Invalid DNS Server Address Slows Name Resolution on RAS Client

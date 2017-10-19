@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264991: TS Loses &quot;User Must Change Password at Next Logon&quot; Property"
-permalink: kb/264/Q264991/
+permalink: /kb/264/Q264991/
 ---
 
 ## Q264991: TS Loses &quot;User Must Change Password at Next Logon&quot; Property

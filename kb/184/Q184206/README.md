@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184206: PRB: DragDrop with ListView Control Fails in MouseMove Event"
-permalink: kb/184/Q184206/
+permalink: /kb/184/Q184206/
 ---
 
 ## Q184206: PRB: DragDrop with ListView Control Fails in MouseMove Event

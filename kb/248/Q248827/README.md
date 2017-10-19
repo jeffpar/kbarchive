@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248827: XADM: Message Is Never Delivered to Foreign System User"
-permalink: kb/248/Q248827/
+permalink: /kb/248/Q248827/
 ---
 
 ## Q248827: XADM: Message Is Never Delivered to Foreign System User

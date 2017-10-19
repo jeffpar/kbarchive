@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166510: BUG: Option Button in Export Dialog Box Causes Error Messages"
-permalink: kb/166/Q166510/
+permalink: /kb/166/Q166510/
 ---
 
 ## Q166510: BUG: Option Button in Export Dialog Box Causes Error Messages

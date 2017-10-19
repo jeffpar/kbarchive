@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126135: Problems Saving a Text File From Lotus 123 for Windows Running"
-permalink: kb/126/Q126135/
+permalink: /kb/126/Q126135/
 ---
 
 ## Q126135: Problems Saving a Text File From Lotus 123 for Windows Running

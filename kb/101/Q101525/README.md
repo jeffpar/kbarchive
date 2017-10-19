@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101525: INF: How to Use the SQL_DRIVER_HSTMT Option in SQLGetInfo()"
-permalink: kb/101/Q101525/
+permalink: /kb/101/Q101525/
 ---
 
 ## Q101525: INF: How to Use the SQL_DRIVER_HSTMT Option in SQLGetInfo()

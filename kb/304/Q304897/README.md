@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304897: XIMS: Microsoft SMTP Servers May Seem to Accept and Relay E-Mail"
-permalink: kb/304/Q304897/
+permalink: /kb/304/Q304897/
 ---
 
 ## Q304897: XIMS: Microsoft SMTP Servers May Seem to Accept and Relay E-Mail

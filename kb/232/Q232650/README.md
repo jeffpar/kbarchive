@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232650: HOWTO: Store, Display, and Print JPG Images in Visual FoxPro"
-permalink: kb/232/Q232650/
+permalink: /kb/232/Q232650/
 ---
 
 ## Q232650: HOWTO: Store, Display, and Print JPG Images in Visual FoxPro

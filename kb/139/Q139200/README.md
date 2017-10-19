@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139200: PerfMon: Text for Redirector Server Session Counter is Wrong"
-permalink: kb/139/Q139200/
+permalink: /kb/139/Q139200/
 ---
 
 ## Q139200: PerfMon: Text for Redirector Server Session Counter is Wrong

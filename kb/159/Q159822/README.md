@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159822: DHCP Clients' Ability to Send DHCPDECLINE Message"
-permalink: kb/159/Q159822/
+permalink: /kb/159/Q159822/
 ---
 
 ## Q159822: DHCP Clients' Ability to Send DHCPDECLINE Message

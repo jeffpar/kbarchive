@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173634: Windows NT Cannot Audit RAS Client Activity"
-permalink: kb/173/Q173634/
+permalink: /kb/173/Q173634/
 ---
 
 ## Q173634: Windows NT Cannot Audit RAS Client Activity

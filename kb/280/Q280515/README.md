@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280515: SMS: The Client.lkp File Is Not Updated"
-permalink: kb/280/Q280515/
+permalink: /kb/280/Q280515/
 ---
 
 ## Q280515: SMS: The Client.lkp File Is Not Updated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240705: Server Size Limits for MSN E-mail Accounts"
-permalink: kb/240/Q240705/
+permalink: /kb/240/Q240705/
 ---
 
 ## Q240705: Server Size Limits for MSN E-mail Accounts

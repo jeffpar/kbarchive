@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258919: Description of the Pandora's Box Cheat Code"
-permalink: kb/258/Q258919/
+permalink: /kb/258/Q258919/
 ---
 
 ## Q258919: Description of the Pandora's Box Cheat Code

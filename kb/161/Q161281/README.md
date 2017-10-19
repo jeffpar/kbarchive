@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161281: Error ID 1069 After Reinstalling FPNW"
-permalink: kb/161/Q161281/
+permalink: /kb/161/Q161281/
 ---
 
 ## Q161281: Error ID 1069 After Reinstalling FPNW

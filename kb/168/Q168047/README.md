@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q168047: HOWTO: STL Sample for [list::remove, remove_if] Function(s)"
-permalink: kb/168/Q168047/
+title: "Q168047: HOWTO: STL Sample for &#91;list::remove, remove_if&#93; Function(s)"
+permalink: /kb/168/Q168047/
 ---
 
-## Q168047: HOWTO: STL Sample for [list::remove, remove_if] Function(s)
+## Q168047: HOWTO: STL Sample for &#91;list::remove, remove_if&#93; Function(s)
 
 	Article: Q168047
 	Product(s): Microsoft C Compiler

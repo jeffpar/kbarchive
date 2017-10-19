@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196176: XADM: Extension &quot;Faxsys&quot; Could not be Loaded"
-permalink: kb/196/Q196176/
+permalink: /kb/196/Q196176/
 ---
 
 ## Q196176: XADM: Extension &quot;Faxsys&quot; Could not be Loaded

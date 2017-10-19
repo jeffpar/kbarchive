@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214573: XADM: Store Handle Leak with Invalid POP3 NTLM Authentication"
-permalink: kb/214/Q214573/
+permalink: /kb/214/Q214573/
 ---
 
 ## Q214573: XADM: Store Handle Leak with Invalid POP3 NTLM Authentication

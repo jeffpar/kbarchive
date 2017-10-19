@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260856: PRB: File Access Denied Opening Table Accessed by Using  ADO"
-permalink: kb/260/Q260856/
+permalink: /kb/260/Q260856/
 ---
 
 ## Q260856: PRB: File Access Denied Opening Table Accessed by Using  ADO

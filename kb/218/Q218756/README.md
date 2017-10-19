@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218756: Logon Privileges Required for Anonymous Access"
-permalink: kb/218/Q218756/
+permalink: /kb/218/Q218756/
 ---
 
 ## Q218756: Logon Privileges Required for Anonymous Access

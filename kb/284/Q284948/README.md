@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284948: BUG: Text Containing Single LF or CR Becomes CR/LF on Win2000"
-permalink: kb/284/Q284948/
+permalink: /kb/284/Q284948/
 ---
 
 ## Q284948: BUG: Text Containing Single LF or CR Becomes CR/LF on Win2000

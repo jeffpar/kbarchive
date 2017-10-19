@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132412: PC Gen: Microsoft Mail 3.5 Upgrade Information"
-permalink: kb/132/Q132412/
+permalink: /kb/132/Q132412/
 ---
 
 ## Q132412: PC Gen: Microsoft Mail 3.5 Upgrade Information

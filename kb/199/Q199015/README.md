@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199015: Encarta Virtual Globe 99 Err Msg: Error Reading CD-ROM"
-permalink: kb/199/Q199015/
+permalink: /kb/199/Q199015/
 ---
 
 ## Q199015: Encarta Virtual Globe 99 Err Msg: Error Reading CD-ROM

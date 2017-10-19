@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235492: RIP and OSPF Do Not Start Dial On Demand Connections"
-permalink: kb/235/Q235492/
+permalink: /kb/235/Q235492/
 ---
 
 ## Q235492: RIP and OSPF Do Not Start Dial On Demand Connections

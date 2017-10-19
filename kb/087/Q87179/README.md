@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87179: PROFS: Command-Line Options to Solve Gateway Problems"
-permalink: kb/087/Q87179/
+permalink: /kb/087/Q87179/
 ---
 
 ## Q87179: PROFS: Command-Line Options to Solve Gateway Problems

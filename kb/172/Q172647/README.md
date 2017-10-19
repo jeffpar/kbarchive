@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172647: Server Copy of User Profile May Be Overwritten By Local Copy"
-permalink: kb/172/Q172647/
+permalink: /kb/172/Q172647/
 ---
 
 ## Q172647: Server Copy of User Profile May Be Overwritten By Local Copy

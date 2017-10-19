@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184463: XFOR: Cannot Connect to Server with POP3 Client"
-permalink: kb/184/Q184463/
+permalink: /kb/184/Q184463/
 ---
 
 ## Q184463: XFOR: Cannot Connect to Server with POP3 Client

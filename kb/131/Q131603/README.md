@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131603: Disabling the Timer for Windows NT Boot Loader"
-permalink: kb/131/Q131603/
+permalink: /kb/131/Q131603/
 ---
 
 ## Q131603: Disabling the Timer for Windows NT Boot Loader

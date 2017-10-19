@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163876: CSNW Clients Cannot Delete Print Jobs on NetWare Print Queue"
-permalink: kb/163/Q163876/
+permalink: /kb/163/Q163876/
 ---
 
 ## Q163876: CSNW Clients Cannot Delete Print Jobs on NetWare Print Queue

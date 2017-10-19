@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179273: FIX: C2059 Initializing Static Data Member of a Template Class"
-permalink: kb/179/Q179273/
+permalink: /kb/179/Q179273/
 ---
 
 ## Q179273: FIX: C2059 Initializing Static Data Member of a Template Class

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149092: HOWTO: Add Records and Edit Data in a DBGrid Cell"
-permalink: kb/149/Q149092/
+permalink: /kb/149/Q149092/
 ---
 
 ## Q149092: HOWTO: Add Records and Edit Data in a DBGrid Cell

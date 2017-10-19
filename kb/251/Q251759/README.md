@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251759: XADM: Exchange Server Mailbox Attributes Override Windows 2000"
-permalink: kb/251/Q251759/
+permalink: /kb/251/Q251759/
 ---
 
 ## Q251759: XADM: Exchange Server Mailbox Attributes Override Windows 2000

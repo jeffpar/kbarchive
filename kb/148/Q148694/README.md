@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148694: IIS and SQL: Intermittent NamedPipe Connections Problem"
-permalink: kb/148/Q148694/
+permalink: /kb/148/Q148694/
 ---
 
 ## Q148694: IIS and SQL: Intermittent NamedPipe Connections Problem

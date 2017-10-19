@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117354: Distributing Help Files for FoxPro for the Macintosh"
-permalink: kb/117/Q117354/
+permalink: /kb/117/Q117354/
 ---
 
 ## Q117354: Distributing Help Files for FoxPro for the Macintosh

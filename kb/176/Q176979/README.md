@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176979: Event 2000 Errors with STATUS_DELETE_PENDING Status"
-permalink: kb/176/Q176979/
+permalink: /kb/176/Q176979/
 ---
 
 ## Q176979: Event 2000 Errors with STATUS_DELETE_PENDING Status

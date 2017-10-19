@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183737: Index Server 2.0 Fails to Install from Add/Remove"
-permalink: kb/183/Q183737/
+permalink: /kb/183/Q183737/
 ---
 
 ## Q183737: Index Server 2.0 Fails to Install from Add/Remove

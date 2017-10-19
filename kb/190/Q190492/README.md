@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190492: BUG: New Implements Does Not Generate Incompatibility Error"
-permalink: kb/190/Q190492/
+permalink: /kb/190/Q190492/
 ---
 
 ## Q190492: BUG: New Implements Does Not Generate Incompatibility Error

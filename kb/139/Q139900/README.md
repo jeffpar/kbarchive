@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139900: Using Intel NetportExpress XL Print Server with Windows NT"
-permalink: kb/139/Q139900/
+permalink: /kb/139/Q139900/
 ---
 
 ## Q139900: Using Intel NetportExpress XL Print Server with Windows NT

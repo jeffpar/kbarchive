@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317640: PRB: IIS4: &quot;The Document Is Damaged and Cannot Be Repaired&quot;"
-permalink: kb/317/Q317640/
+permalink: /kb/317/Q317640/
 ---
 
 ## Q317640: PRB: IIS4: &quot;The Document Is Damaged and Cannot Be Repaired&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71224: SetKBD.exe Dynamically Loads Keyboard DLL"
-permalink: kb/071/Q71224/
+permalink: /kb/071/Q71224/
 ---
 
 ## Q71224: SetKBD.exe Dynamically Loads Keyboard DLL

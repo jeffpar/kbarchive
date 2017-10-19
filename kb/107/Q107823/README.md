@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107823: Incorrect Sort Order in File Manager with Some Languages"
-permalink: kb/107/Q107823/
+permalink: /kb/107/Q107823/
 ---
 
 ## Q107823: Incorrect Sort Order in File Manager with Some Languages

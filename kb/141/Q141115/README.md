@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141115: SNA Server Admin &quot;Select Domain&quot; Dialog Box Suspended"
-permalink: kb/141/Q141115/
+permalink: /kb/141/Q141115/
 ---
 
 ## Q141115: SNA Server Admin &quot;Select Domain&quot; Dialog Box Suspended

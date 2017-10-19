@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152423: Pcmsvc32.exe Does Not Check &#92;MSTEST Directory for Files"
-permalink: kb/152/Q152423/
+permalink: /kb/152/Q152423/
 ---
 
 ## Q152423: Pcmsvc32.exe Does Not Check &#92;MSTEST Directory for Files

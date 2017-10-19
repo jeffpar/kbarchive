@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319662: MCSE Training Kit: Microsoft Exchange 2000 Server Design and Dep"
-permalink: kb/319/Q319662/
+permalink: /kb/319/Q319662/
 ---
 
 ## Q319662: MCSE Training Kit: Microsoft Exchange 2000 Server Design and Dep

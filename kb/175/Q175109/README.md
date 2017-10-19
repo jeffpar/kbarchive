@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175109: 3270 Users Fail to Get Sessions to SNA 3.0 After 2.11 Upgrade"
-permalink: kb/175/Q175109/
+permalink: /kb/175/Q175109/
 ---
 
 ## Q175109: 3270 Users Fail to Get Sessions to SNA 3.0 After 2.11 Upgrade

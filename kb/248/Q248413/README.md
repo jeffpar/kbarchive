@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248413: INFO: NDIS Debug Tracing and Kernel Debugger Extensions"
-permalink: kb/248/Q248413/
+permalink: /kb/248/Q248413/
 ---
 
 ## Q248413: INFO: NDIS Debug Tracing and Kernel Debugger Extensions

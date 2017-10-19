@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140428: MS Plus! Setup Err Msg: This Is an Invalid Command Line Option"
-permalink: kb/140/Q140428/
+permalink: /kb/140/Q140428/
 ---
 
 ## Q140428: MS Plus! Setup Err Msg: This Is an Invalid Command Line Option

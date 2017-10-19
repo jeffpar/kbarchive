@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133241: Browsing Domain Master Browsers w/ Multiple NICs and Protocols"
-permalink: kb/133/Q133241/
+permalink: /kb/133/Q133241/
 ---
 
 ## Q133241: Browsing Domain Master Browsers w/ Multiple NICs and Protocols

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83935: Windows 3.0 PIF Files Are 100% Compatible with Windows 3.1"
-permalink: kb/083/Q83935/
+permalink: /kb/083/Q83935/
 ---
 
 ## Q83935: Windows 3.0 PIF Files Are 100% Compatible with Windows 3.1

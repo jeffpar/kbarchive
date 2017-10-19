@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176210: Incorrect Time Is Displayed When You Run the Net Time Command"
-permalink: kb/176/Q176210/
+permalink: /kb/176/Q176210/
 ---
 
 ## Q176210: Incorrect Time Is Displayed When You Run the Net Time Command

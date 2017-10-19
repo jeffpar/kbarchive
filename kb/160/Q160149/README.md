@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160149: FreeHand 4.0 Does not Print Properly with EMF Spooling"
-permalink: kb/160/Q160149/
+permalink: /kb/160/Q160149/
 ---
 
 ## Q160149: FreeHand 4.0 Does not Print Properly with EMF Spooling

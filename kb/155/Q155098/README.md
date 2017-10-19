@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155098: Double-Clicking Desktop Does Not Start Task Manager"
-permalink: kb/155/Q155098/
+permalink: /kb/155/Q155098/
 ---
 
 ## Q155098: Double-Clicking Desktop Does Not Start Task Manager

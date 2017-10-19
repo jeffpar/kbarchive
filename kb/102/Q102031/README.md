@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102031: OS/2 Postscript Driver Traps After About 1600 Print Jobs"
-permalink: kb/102/Q102031/
+permalink: /kb/102/Q102031/
 ---
 
 ## Q102031: OS/2 Postscript Driver Traps After About 1600 Print Jobs

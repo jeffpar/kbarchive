@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96520: Windows Hangs at Logo Screen with FTP Network and DoubleSpace"
-permalink: kb/096/Q96520/
+permalink: /kb/096/Q96520/
 ---
 
 ## Q96520: Windows Hangs at Logo Screen with FTP Network and DoubleSpace

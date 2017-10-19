@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108314: Using More Than Four Communications Ports in Windows"
-permalink: kb/108/Q108314/
+permalink: /kb/108/Q108314/
 ---
 
 ## Q108314: Using More Than Four Communications Ports in Windows

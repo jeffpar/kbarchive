@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140747: Error Installing Spanish Keyboard Layouts"
-permalink: kb/140/Q140747/
+permalink: /kb/140/Q140747/
 ---
 
 ## Q140747: Error Installing Spanish Keyboard Layouts

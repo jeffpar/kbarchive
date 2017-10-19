@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84167: Windows Err Msg: Control Panel-Not Enough Memory for this Task"
-permalink: kb/084/Q84167/
+permalink: /kb/084/Q84167/
 ---
 
 ## Q84167: Windows Err Msg: Control Panel-Not Enough Memory for this Task

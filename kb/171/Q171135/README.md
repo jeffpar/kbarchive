@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171135: Access Forbidden Accessing Secure Website"
-permalink: kb/171/Q171135/
+permalink: /kb/171/Q171135/
 ---
 
 ## Q171135: Access Forbidden Accessing Secure Website

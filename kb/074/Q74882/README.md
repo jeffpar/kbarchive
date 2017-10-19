@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74882: MASM MUL Operation Accepts Only One Operand"
-permalink: kb/074/Q74882/
+permalink: /kb/074/Q74882/
 ---
 
 ## Q74882: MASM MUL Operation Accepts Only One Operand

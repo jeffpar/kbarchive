@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139148: Julia Child: How To Add Cookware To Shopping List"
-permalink: kb/139/Q139148/
+permalink: /kb/139/Q139148/
 ---
 
 ## Q139148: Julia Child: How To Add Cookware To Shopping List

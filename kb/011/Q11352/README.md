@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11352: SAMPLE: IconLib.exe-Using DLLs to Share Menus and Resources"
-permalink: kb/011/Q11352/
+permalink: /kb/011/Q11352/
 ---
 
 ## Q11352: SAMPLE: IconLib.exe-Using DLLs to Share Menus and Resources

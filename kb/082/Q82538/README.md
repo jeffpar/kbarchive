@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82538: WinSleuth Causes a GP Fault When Started"
-permalink: kb/082/Q82538/
+permalink: /kb/082/Q82538/
 ---
 
 ## Q82538: WinSleuth Causes a GP Fault When Started

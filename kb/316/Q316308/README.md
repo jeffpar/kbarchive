@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316308: HOW TO: Configure a Stripe Set in Windows NT Server 4.0"
-permalink: kb/316/Q316308/
+permalink: /kb/316/Q316308/
 ---
 
 ## Q316308: HOW TO: Configure a Stripe Set in Windows NT Server 4.0

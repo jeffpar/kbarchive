@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156870: PRB: Mouse &amp; Click Events Behavior in List Box and Grid Differ"
-permalink: kb/156/Q156870/
+permalink: /kb/156/Q156870/
 ---
 
 ## Q156870: PRB: Mouse &amp; Click Events Behavior in List Box and Grid Differ

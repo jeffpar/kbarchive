@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94913: FIX: ML Fails When PAGE Directive Has Invalid Value"
-permalink: kb/094/Q94913/
+permalink: /kb/094/Q94913/
 ---
 
 ## Q94913: FIX: ML Fails When PAGE Directive Has Invalid Value

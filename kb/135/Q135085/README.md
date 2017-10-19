@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135085: OLE Control Container Support in Visual C++ and MFC"
-permalink: kb/135/Q135085/
+permalink: /kb/135/Q135085/
 ---
 
 ## Q135085: OLE Control Container Support in Visual C++ and MFC

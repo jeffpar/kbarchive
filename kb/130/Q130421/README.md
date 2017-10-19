@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130421: Windows NT 3.5 SNMP Agent Responds to Incorrect Communities"
-permalink: kb/130/Q130421/
+permalink: /kb/130/Q130421/
 ---
 
 ## Q130421: Windows NT 3.5 SNMP Agent Responds to Incorrect Communities

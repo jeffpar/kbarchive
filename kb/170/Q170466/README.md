@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170466: WD97: Inline Picture Becomes Red X in Word 6.0/95 Format"
-permalink: kb/170/Q170466/
+permalink: /kb/170/Q170466/
 ---
 
 ## Q170466: WD97: Inline Picture Becomes Red X in Word 6.0/95 Format

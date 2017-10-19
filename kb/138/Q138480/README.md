@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138480: BUG: Using the Keyboard in SourceSafe Administrator May Fail"
-permalink: kb/138/Q138480/
+permalink: /kb/138/Q138480/
 ---
 
 ## Q138480: BUG: Using the Keyboard in SourceSafe Administrator May Fail

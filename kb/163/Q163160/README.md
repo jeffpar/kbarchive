@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163160: WD97: Sample Macro to Remove a Submenu from a Menu"
-permalink: kb/163/Q163160/
+permalink: /kb/163/Q163160/
 ---
 
 ## Q163160: WD97: Sample Macro to Remove a Submenu from a Menu

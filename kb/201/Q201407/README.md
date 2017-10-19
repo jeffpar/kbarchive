@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201407: STOP 0x7B After Applying Service Pack 4 on AST Manhattan"
-permalink: kb/201/Q201407/
+permalink: /kb/201/Q201407/
 ---
 
 ## Q201407: STOP 0x7B After Applying Service Pack 4 on AST Manhattan

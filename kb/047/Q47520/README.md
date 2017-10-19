@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47520: Mac Wkst: Summary Window Keyboard Shortcuts"
-permalink: kb/047/Q47520/
+permalink: /kb/047/Q47520/
 ---
 
 ## Q47520: Mac Wkst: Summary Window Keyboard Shortcuts

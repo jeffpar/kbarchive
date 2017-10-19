@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39286: Mac DOS: Messages Containing Extended Characters Are Garbled"
-permalink: kb/039/Q39286/
+permalink: /kb/039/Q39286/
 ---
 
 ## Q39286: Mac DOS: Messages Containing Extended Characters Are Garbled

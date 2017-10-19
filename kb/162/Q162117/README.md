@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162117: Identical Documents May Print Differently from Win 95 Clients"
-permalink: kb/162/Q162117/
+permalink: /kb/162/Q162117/
 ---
 
 ## Q162117: Identical Documents May Print Differently from Win 95 Clients

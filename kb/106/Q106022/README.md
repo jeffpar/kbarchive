@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106022: Network Dialog Err Msgs Truncated with Small Fonts"
-permalink: kb/106/Q106022/
+permalink: /kb/106/Q106022/
 ---
 
 ## Q106022: Network Dialog Err Msgs Truncated with Small Fonts

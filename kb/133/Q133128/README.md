@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133128: Printing From Windows NT 3.51 to an HP4 at 600 DPI is Slow"
-permalink: kb/133/Q133128/
+permalink: /kb/133/Q133128/
 ---
 
 ## Q133128: Printing From Windows NT 3.51 to an HP4 at 600 DPI is Slow

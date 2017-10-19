@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160019: XCOPY Fails with InocuLAN Virus Software Installed"
-permalink: kb/160/Q160019/
+permalink: /kb/160/Q160019/
 ---
 
 ## Q160019: XCOPY Fails with InocuLAN Virus Software Installed

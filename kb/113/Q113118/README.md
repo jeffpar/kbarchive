@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113118: BUG: C2061, C2062, C2226, C2039 Occur When Using enum types"
-permalink: kb/113/Q113118/
+permalink: /kb/113/Q113118/
 ---
 
 ## Q113118: BUG: C2061, C2062, C2226, C2039 Occur When Using enum types

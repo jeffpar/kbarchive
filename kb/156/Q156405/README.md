@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156405: Cannot Administrate the Microsoft Index Server"
-permalink: kb/156/Q156405/
+permalink: /kb/156/Q156405/
 ---
 
 ## Q156405: Cannot Administrate the Microsoft Index Server

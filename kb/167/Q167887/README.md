@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167887: SMS: SNMP Trap Translator Fails After Applying WinNT 4.0 SP 2"
-permalink: kb/167/Q167887/
+permalink: /kb/167/Q167887/
 ---
 
 ## Q167887: SMS: SNMP Trap Translator Fails After Applying WinNT 4.0 SP 2

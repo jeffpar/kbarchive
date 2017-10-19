@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130840: How to Append Records from One Remote View to Another"
-permalink: kb/130/Q130840/
+permalink: /kb/130/Q130840/
 ---
 
 ## Q130840: How to Append Records from One Remote View to Another

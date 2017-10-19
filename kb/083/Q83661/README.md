@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83661: SAMPLE: Executing Excel Functions with Return Values Using DDE"
-permalink: kb/083/Q83661/
+permalink: /kb/083/Q83661/
 ---
 
 ## Q83661: SAMPLE: Executing Excel Functions with Return Values Using DDE

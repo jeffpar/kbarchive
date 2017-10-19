@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114688: RAS Can't Connect at 14400 or 19200 on TI 4000e"
-permalink: kb/114/Q114688/
+permalink: /kb/114/Q114688/
 ---
 
 ## Q114688: RAS Can't Connect at 14400 or 19200 on TI 4000e

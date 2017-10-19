@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161769: Admin Select Domain Displays Local Configuration Instead"
-permalink: kb/161/Q161769/
+permalink: /kb/161/Q161769/
 ---
 
 ## Q161769: Admin Select Domain Displays Local Configuration Instead

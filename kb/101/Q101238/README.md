@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101238: WFWG Err Msg with New NETAPI.DLL: Call to Undefined Dynalink"
-permalink: kb/101/Q101238/
+permalink: /kb/101/Q101238/
 ---
 
 ## Q101238: WFWG Err Msg with New NETAPI.DLL: Call to Undefined Dynalink

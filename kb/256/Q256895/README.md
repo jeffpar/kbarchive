@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256895: Remote Control Agent Does Not Listen on Assigned IP Addresses"
-permalink: kb/256/Q256895/
+permalink: /kb/256/Q256895/
 ---
 
 ## Q256895: Remote Control Agent Does Not Listen on Assigned IP Addresses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112662: Golf Causes General Protection Fault with Imaginaria"
-permalink: kb/112/Q112662/
+permalink: /kb/112/Q112662/
 ---
 
 ## Q112662: Golf Causes General Protection Fault with Imaginaria

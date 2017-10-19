@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164253: WinNT Err. Msg: Event ID 2018 When Srv.sys Is out of Memory"
-permalink: kb/164/Q164253/
+permalink: /kb/164/Q164253/
 ---
 
 ## Q164253: WinNT Err. Msg: Event ID 2018 When Srv.sys Is out of Memory

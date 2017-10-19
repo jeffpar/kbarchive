@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154983: Dual Screens at High Resolutions Don't Display Correctly"
-permalink: kb/154/Q154983/
+permalink: /kb/154/Q154983/
 ---
 
 ## Q154983: Dual Screens at High Resolutions Don't Display Correctly

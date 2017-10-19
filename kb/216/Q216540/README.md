@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216540: User-mode Programs Cannot Allocate Blocks of Virtual Memory"
-permalink: kb/216/Q216540/
+permalink: /kb/216/Q216540/
 ---
 
 ## Q216540: User-mode Programs Cannot Allocate Blocks of Virtual Memory

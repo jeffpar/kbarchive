@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160068: WD97: Optimizing Microsoft Word 97"
-permalink: kb/160/Q160068/
+permalink: /kb/160/Q160068/
 ---
 
 ## Q160068: WD97: Optimizing Microsoft Word 97

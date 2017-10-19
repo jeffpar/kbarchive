@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131657: Mac Encarta 95: Computer Hangs While Playing Video"
-permalink: kb/131/Q131657/
+permalink: /kb/131/Q131657/
 ---
 
 ## Q131657: Mac Encarta 95: Computer Hangs While Playing Video

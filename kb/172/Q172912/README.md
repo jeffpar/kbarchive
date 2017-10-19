@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172912: Windows NT May Appear to Hang When a Mirrored IDE Drive Fails"
-permalink: kb/172/Q172912/
+permalink: /kb/172/Q172912/
 ---
 
 ## Q172912: Windows NT May Appear to Hang When a Mirrored IDE Drive Fails

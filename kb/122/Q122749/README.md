@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122749: Arcade for Macintosh: Minimum System Requirements"
-permalink: kb/122/Q122749/
+permalink: /kb/122/Q122749/
 ---
 
 ## Q122749: Arcade for Macintosh: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228743: XFOR: NDR Msg from Downstream cc:Mail PO Doesn't Name Recipient"
-permalink: kb/228/Q228743/
+permalink: /kb/228/Q228743/
 ---
 
 ## Q228743: XFOR: NDR Msg from Downstream cc:Mail PO Doesn't Name Recipient

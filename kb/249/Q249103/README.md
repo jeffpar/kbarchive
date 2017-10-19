@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249103: Asheron's Call: Returned Item Does Not Appear in Your Inventory"
-permalink: kb/249/Q249103/
+permalink: /kb/249/Q249103/
 ---
 
 ## Q249103: Asheron's Call: Returned Item Does Not Appear in Your Inventory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153470: Incorrect Error Code Returned for Locked Files"
-permalink: kb/153/Q153470/
+permalink: /kb/153/Q153470/
 ---
 
 ## Q153470: Incorrect Error Code Returned for Locked Files

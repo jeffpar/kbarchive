@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135114: PRB: Error &quot;Library File Foxtools.fll is Invalid&quot;"
-permalink: kb/135/Q135114/
+permalink: /kb/135/Q135114/
 ---
 
 ## Q135114: PRB: Error &quot;Library File Foxtools.fll is Invalid&quot;

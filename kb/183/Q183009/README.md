@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183009: HOWTO: Enumerate Windows Using the WIN32 API"
-permalink: kb/183/Q183009/
+permalink: /kb/183/Q183009/
 ---
 
 ## Q183009: HOWTO: Enumerate Windows Using the WIN32 API

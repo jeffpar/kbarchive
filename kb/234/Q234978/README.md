@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234978: PRB: Error C0042116 &quot;The Parameter Is Incorrect&quot;"
-permalink: kb/234/Q234978/
+permalink: /kb/234/Q234978/
 ---
 
 ## Q234978: PRB: Error C0042116 &quot;The Parameter Is Incorrect&quot;

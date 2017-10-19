@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129294: How Messages Are Displayed in Bulletin Boards"
-permalink: kb/129/Q129294/
+permalink: /kb/129/Q129294/
 ---
 
 ## Q129294: How Messages Are Displayed in Bulletin Boards

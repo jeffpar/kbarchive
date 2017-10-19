@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221722: FIX: C0000005 Fatal Error Using DIRECTORY(&quot;&#92;&#92;&#92;dirname&quot;)"
-permalink: kb/221/Q221722/
+permalink: /kb/221/Q221722/
 ---
 
 ## Q221722: FIX: C0000005 Fatal Error Using DIRECTORY(&quot;&#92;&#92;&#92;dirname&quot;)

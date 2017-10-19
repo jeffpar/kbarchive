@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297210: Using Challenge Response on a Web Site that Has Framesets"
-permalink: kb/297/Q297210/
+permalink: /kb/297/Q297210/
 ---
 
 ## Q297210: Using Challenge Response on a Web Site that Has Framesets

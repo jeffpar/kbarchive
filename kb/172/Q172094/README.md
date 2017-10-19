@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172094: PRB: Help Compiler Does Not Compile Word 97 RTF Files"
-permalink: kb/172/Q172094/
+permalink: /kb/172/Q172094/
 ---
 
 ## Q172094: PRB: Help Compiler Does Not Compile Word 97 RTF Files

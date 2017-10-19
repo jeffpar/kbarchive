@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121878: RAS Doesn't Support NetBIOS Chain Sends Greater than 64KB - 1"
-permalink: kb/121/Q121878/
+permalink: /kb/121/Q121878/
 ---
 
 ## Q121878: RAS Doesn't Support NetBIOS Chain Sends Greater than 64KB - 1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271518: Error Message Loading Profile When Using Roaming Profile"
-permalink: kb/271/Q271518/
+permalink: /kb/271/Q271518/
 ---
 
 ## Q271518: Error Message Loading Profile When Using Roaming Profile

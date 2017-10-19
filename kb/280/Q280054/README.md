@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280054: SMS: Remote Session Disconnects If Second User Tries to Connect"
-permalink: kb/280/Q280054/
+permalink: /kb/280/Q280054/
 ---
 
 ## Q280054: SMS: Remote Session Disconnects If Second User Tries to Connect

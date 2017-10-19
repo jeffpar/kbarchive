@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123427: Use FIXPROJ.EXE to Fix Project Errors in SourceSafe"
-permalink: kb/123/Q123427/
+permalink: /kb/123/Q123427/
 ---
 
 ## Q123427: Use FIXPROJ.EXE to Fix Project Errors in SourceSafe

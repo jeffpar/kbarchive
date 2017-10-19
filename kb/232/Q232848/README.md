@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232848: How to Create a WinMSD Report"
-permalink: kb/232/Q232848/
+permalink: /kb/232/Q232848/
 ---
 
 ## Q232848: How to Create a WinMSD Report

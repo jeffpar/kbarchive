@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154916: Cannot Switch to Running Control Panel Tool"
-permalink: kb/154/Q154916/
+permalink: /kb/154/Q154916/
 ---
 
 ## Q154916: Cannot Switch to Running Control Panel Tool

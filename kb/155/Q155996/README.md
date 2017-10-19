@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155996: Deadly Tide: Minimum System Requirements"
-permalink: kb/155/Q155996/
+permalink: /kb/155/Q155996/
 ---
 
 ## Q155996: Deadly Tide: Minimum System Requirements

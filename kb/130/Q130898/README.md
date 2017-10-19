@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130898: Using Batch Files in Sharing Packages"
-permalink: kb/130/Q130898/
+permalink: /kb/130/Q130898/
 ---
 
 ## Q130898: Using Batch Files in Sharing Packages

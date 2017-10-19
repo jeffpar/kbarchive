@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123722: RUN Command Not Available in FoxPro for Macintosh"
-permalink: kb/123/Q123722/
+permalink: /kb/123/Q123722/
 ---
 
 ## Q123722: RUN Command Not Available in FoxPro for Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253942: FIX: Task Scheduler Task Runs in the Background After Sysprep"
-permalink: kb/253/Q253942/
+permalink: /kb/253/Q253942/
 ---
 
 ## Q253942: FIX: Task Scheduler Task Runs in the Background After Sysprep

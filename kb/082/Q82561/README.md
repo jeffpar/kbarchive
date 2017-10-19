@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82561: Shading Too Dark on Some Dot-Matrix &amp; Laser Printers"
-permalink: kb/082/Q82561/
+permalink: /kb/082/Q82561/
 ---
 
 ## Q82561: Shading Too Dark on Some Dot-Matrix &amp; Laser Printers

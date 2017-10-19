@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120356: Winstone 94 Err Msg: An Error Has Occurred in Your Program..."
-permalink: kb/120/Q120356/
+permalink: /kb/120/Q120356/
 ---
 
 ## Q120356: Winstone 94 Err Msg: An Error Has Occurred in Your Program...

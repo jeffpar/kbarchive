@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179122: FS95/98/2000: How to Start and Shut Down Jet Engines"
-permalink: kb/179/Q179122/
+permalink: /kb/179/Q179122/
 ---
 
 ## Q179122: FS95/98/2000: How to Start and Shut Down Jet Engines

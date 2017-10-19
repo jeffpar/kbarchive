@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149610: Instsrv.exe and Windows NT 3.51 SP4 Cause Dr. Watson Error"
-permalink: kb/149/Q149610/
+permalink: /kb/149/Q149610/
 ---
 
 ## Q149610: Instsrv.exe and Windows NT 3.51 SP4 Cause Dr. Watson Error

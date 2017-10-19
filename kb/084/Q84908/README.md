@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84908: Calculator Does Not Display Zeroes When Entering Decimals"
-permalink: kb/084/Q84908/
+permalink: /kb/084/Q84908/
 ---
 
 ## Q84908: Calculator Does Not Display Zeroes When Entering Decimals

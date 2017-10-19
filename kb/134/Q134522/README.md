@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134522: Cannot Run Fleet Defender F14 Tomcat"
-permalink: kb/134/Q134522/
+permalink: /kb/134/Q134522/
 ---
 
 ## Q134522: Cannot Run Fleet Defender F14 Tomcat

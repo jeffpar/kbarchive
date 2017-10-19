@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140266: 5250 Applet Causes GP Fault when Entering AS/400 Host Editor"
-permalink: kb/140/Q140266/
+permalink: /kb/140/Q140266/
 ---
 
 ## Q140266: 5250 Applet Causes GP Fault when Entering AS/400 Host Editor

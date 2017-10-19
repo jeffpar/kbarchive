@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162525: BUILDING MS EXCHANGE APPLICATIONS Corrections and Comments"
-permalink: kb/162/Q162525/
+permalink: /kb/162/Q162525/
 ---
 
 ## Q162525: BUILDING MS EXCHANGE APPLICATIONS Corrections and Comments

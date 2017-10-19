@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313209: SMS: Copylog.tcf File Contains Invalid Sites After Site Removal"
-permalink: kb/313/Q313209/
+permalink: /kb/313/Q313209/
 ---
 
 ## Q313209: SMS: Copylog.tcf File Contains Invalid Sites After Site Removal

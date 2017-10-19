@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278532: XADM: How To Remove Corrupted Views That Are Shared"
-permalink: kb/278/Q278532/
+permalink: /kb/278/Q278532/
 ---
 
 ## Q278532: XADM: How To Remove Corrupted Views That Are Shared

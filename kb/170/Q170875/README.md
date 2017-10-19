@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170875: WD97: IPF Printing Document with Large Merged Cells"
-permalink: kb/170/Q170875/
+permalink: /kb/170/Q170875/
 ---
 
 ## Q170875: WD97: IPF Printing Document with Large Merged Cells

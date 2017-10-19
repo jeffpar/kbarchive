@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230701: Security Certificates Appear Enlarged and Unusable with AVS"
-permalink: kb/230/Q230701/
+permalink: /kb/230/Q230701/
 ---
 
 ## Q230701: Security Certificates Appear Enlarged and Unusable with AVS

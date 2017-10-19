@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239419: MapPoint: How to Create Shaded Area Maps"
-permalink: kb/239/Q239419/
+permalink: /kb/239/Q239419/
 ---
 
 ## Q239419: MapPoint: How to Create Shaded Area Maps

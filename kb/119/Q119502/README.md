@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119502: PRB: PView Sample Does Not Behave Correctly"
-permalink: kb/119/Q119502/
+permalink: /kb/119/Q119502/
 ---
 
 ## Q119502: PRB: PView Sample Does Not Behave Correctly

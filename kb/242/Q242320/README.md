@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242320: XFOR: Event ID 4122 from Exchange Server Internet Mail Service"
-permalink: kb/242/Q242320/
+permalink: /kb/242/Q242320/
 ---
 
 ## Q242320: XFOR: Event ID 4122 from Exchange Server Internet Mail Service

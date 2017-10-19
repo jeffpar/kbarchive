@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154563: FPNW: Search Drive Vector Not Set"
-permalink: kb/154/Q154563/
+permalink: /kb/154/Q154563/
 ---
 
 ## Q154563: FPNW: Search Drive Vector Not Set

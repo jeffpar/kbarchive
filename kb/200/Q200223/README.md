@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200223: XCLN: Requirements for Microsoft Importer for Lotus Notes Mail"
-permalink: kb/200/Q200223/
+permalink: /kb/200/Q200223/
 ---
 
 ## Q200223: XCLN: Requirements for Microsoft Importer for Lotus Notes Mail

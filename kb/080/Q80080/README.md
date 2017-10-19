@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80080: HOWTO: Convert Between Device-Dependent Bitmaps and DIBs"
-permalink: kb/080/Q80080/
+permalink: /kb/080/Q80080/
 ---
 
 ## Q80080: HOWTO: Convert Between Device-Dependent Bitmaps and DIBs

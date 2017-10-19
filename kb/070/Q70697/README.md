@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70697: New 4/16 MB Token Ring NICs: Problems with LAN Man 1.10 &amp; 2.00"
-permalink: kb/070/Q70697/
+permalink: /kb/070/Q70697/
 ---
 
 ## Q70697: New 4/16 MB Token Ring NICs: Problems with LAN Man 1.10 &amp; 2.00

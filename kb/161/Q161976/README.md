@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161976: WD97: Reveal Formatting Help Tool Not Installed"
-permalink: kb/161/Q161976/
+permalink: /kb/161/Q161976/
 ---
 
 ## Q161976: WD97: Reveal Formatting Help Tool Not Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179181: FP: Page Margins Not Visible in Browser"
-permalink: kb/179/Q179181/
+permalink: /kb/179/Q179181/
 ---
 
 ## Q179181: FP: Page Margins Not Visible in Browser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190410: PRB: Error Assigning Non-Opened Recordset to ADODC"
-permalink: kb/190/Q190410/
+permalink: /kb/190/Q190410/
 ---
 
 ## Q190410: PRB: Error Assigning Non-Opened Recordset to ADODC

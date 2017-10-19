@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271614: XCON: GroupWise Free and Busy Inf. Doesn't Reflect All Appts"
-permalink: kb/271/Q271614/
+permalink: /kb/271/Q271614/
 ---
 
 ## Q271614: XCON: GroupWise Free and Busy Inf. Doesn't Reflect All Appts

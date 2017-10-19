@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151007: IBM ThinkPad Drives Have Problem w/ Read/Write and Media Change"
-permalink: kb/151/Q151007/
+permalink: /kb/151/Q151007/
 ---
 
 ## Q151007: IBM ThinkPad Drives Have Problem w/ Read/Write and Media Change

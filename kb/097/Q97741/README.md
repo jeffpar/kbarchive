@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97741: Optimizing DoubleSpace on Your Computer"
-permalink: kb/097/Q97741/
+permalink: /kb/097/Q97741/
 ---
 
 ## Q97741: Optimizing DoubleSpace on Your Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82917: PC Win: Button Face Color Can Leave Hole in Status Bar"
-permalink: kb/082/Q82917/
+permalink: /kb/082/Q82917/
 ---
 
 ## Q82917: PC Win: Button Face Color Can Leave Hole in Status Bar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111337: BUG: Pie() and Arc() Functions Fail with a Wide Pen"
-permalink: kb/111/Q111337/
+permalink: /kb/111/Q111337/
 ---
 
 ## Q111337: BUG: Pie() and Arc() Functions Fail with a Wide Pen

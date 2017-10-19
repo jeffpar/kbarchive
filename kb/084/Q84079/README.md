@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84079: TrueType and Pacific Data Products PostScript Cartridge"
-permalink: kb/084/Q84079/
+permalink: /kb/084/Q84079/
 ---
 
 ## Q84079: TrueType and Pacific Data Products PostScript Cartridge

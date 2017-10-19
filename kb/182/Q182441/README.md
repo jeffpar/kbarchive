@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182441: Full Synchronization from WinNT PDC to LanMan Server May Fail"
-permalink: kb/182/Q182441/
+permalink: /kb/182/Q182441/
 ---
 
 ## Q182441: Full Synchronization from WinNT PDC to LanMan Server May Fail

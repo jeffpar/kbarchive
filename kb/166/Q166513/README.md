@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166513: FIX: Typedef Type Causes C2275: Illegal Use of Type"
-permalink: kb/166/Q166513/
+permalink: /kb/166/Q166513/
 ---
 
 ## Q166513: FIX: Typedef Type Causes C2275: Illegal Use of Type

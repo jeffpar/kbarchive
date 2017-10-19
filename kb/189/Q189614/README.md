@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189614: Internet Mail Service Event Descriptions Could Not Be Found"
-permalink: kb/189/Q189614/
+permalink: /kb/189/Q189614/
 ---
 
 ## Q189614: Internet Mail Service Event Descriptions Could Not Be Found

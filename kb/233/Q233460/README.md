@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233460: Business Planner: Data in Shared Business Plan Changed or Lost"
-permalink: kb/233/Q233460/
+permalink: /kb/233/Q233460/
 ---
 
 ## Q233460: Business Planner: Data in Shared Business Plan Changed or Lost

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67718: Fatal Error When Running DayBook"
-permalink: kb/067/Q67718/
+permalink: /kb/067/Q67718/
 ---
 
 ## Q67718: Fatal Error When Running DayBook

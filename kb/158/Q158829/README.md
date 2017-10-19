@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158829: Domain Validation May Not Work Across Dial-on-Demand Routers"
-permalink: kb/158/Q158829/
+permalink: /kb/158/Q158829/
 ---
 
 ## Q158829: Domain Validation May Not Work Across Dial-on-Demand Routers

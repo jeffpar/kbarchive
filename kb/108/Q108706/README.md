@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108706: Common Q&amp;A for Visual C++ 32-bit edition, ver 1.0"
-permalink: kb/108/Q108706/
+permalink: /kb/108/Q108706/
 ---
 
 ## Q108706: Common Q&amp;A for Visual C++ 32-bit edition, ver 1.0

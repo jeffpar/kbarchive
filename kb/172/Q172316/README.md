@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172316: WD97: WordMail Shortcut Keys Re-Assigned with Templates"
-permalink: kb/172/Q172316/
+permalink: /kb/172/Q172316/
 ---
 
 ## Q172316: WD97: WordMail Shortcut Keys Re-Assigned with Templates

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214649: How To Program EBCDIC - ASCII Conversion Using The NLS API"
-permalink: kb/214/Q214649/
+permalink: /kb/214/Q214649/
 ---
 
 ## Q214649: How To Program EBCDIC - ASCII Conversion Using The NLS API

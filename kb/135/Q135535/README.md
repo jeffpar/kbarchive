@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135535: Incorrect Icons Displayed with Slow Network Connection"
-permalink: kb/135/Q135535/
+permalink: /kb/135/Q135535/
 ---
 
 ## Q135535: Incorrect Icons Displayed with Slow Network Connection

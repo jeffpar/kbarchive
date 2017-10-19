@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238740: XCLN: Error Starting Exchange Client &quot;The information store cann"
-permalink: kb/238/Q238740/
+permalink: /kb/238/Q238740/
 ---
 
 ## Q238740: XCLN: Error Starting Exchange Client &quot;The information store cann

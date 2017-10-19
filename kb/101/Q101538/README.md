@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101538: Musical Instruments: Landscape on Radius Color Pivot Display"
-permalink: kb/101/Q101538/
+permalink: /kb/101/Q101538/
 ---
 
 ## Q101538: Musical Instruments: Landscape on Radius Color Pivot Display

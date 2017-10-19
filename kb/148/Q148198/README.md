@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148198: XADM: Where Newprof.exe Gets the Username"
-permalink: kb/148/Q148198/
+permalink: /kb/148/Q148198/
 ---
 
 ## Q148198: XADM: Where Newprof.exe Gets the Username

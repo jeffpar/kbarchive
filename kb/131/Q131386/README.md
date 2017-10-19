@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131386: PRB: Default Values Not Written on Local Views"
-permalink: kb/131/Q131386/
+permalink: /kb/131/Q131386/
 ---
 
 ## Q131386: PRB: Default Values Not Written on Local Views

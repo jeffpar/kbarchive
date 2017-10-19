@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32691: FIX: Error Message A4100: Impure Memory Reference"
-permalink: kb/032/Q32691/
+permalink: /kb/032/Q32691/
 ---
 
 ## Q32691: FIX: Error Message A4100: Impure Memory Reference

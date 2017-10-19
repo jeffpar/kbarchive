@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193586: PRB: Error &quot;Rights.Dat is already open&quot; When Running Ddupd.exe"
-permalink: kb/193/Q193586/
+permalink: /kb/193/Q193586/
 ---
 
 ## Q193586: PRB: Error &quot;Rights.Dat is already open&quot; When Running Ddupd.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127943: Mac Client Can't Logon Because Password Has Expired"
-permalink: kb/127/Q127943/
+permalink: /kb/127/Q127943/
 ---
 
 ## Q127943: Mac Client Can't Logon Because Password Has Expired

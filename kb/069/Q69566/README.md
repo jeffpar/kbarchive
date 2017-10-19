@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69566: File Manager Problem Renaming a File with No New Filename"
-permalink: kb/069/Q69566/
+permalink: /kb/069/Q69566/
 ---
 
 ## Q69566: File Manager Problem Renaming a File with No New Filename

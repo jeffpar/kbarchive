@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139390: How to Create a Stopwatch Timer in Visual FoxPro"
-permalink: kb/139/Q139390/
+permalink: /kb/139/Q139390/
 ---
 
 ## Q139390: How to Create a Stopwatch Timer in Visual FoxPro

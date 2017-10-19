@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q108831: PC DirSync: Err Msg: Fatal [203] GAL Rebuild Problem"
-permalink: kb/108/Q108831/
+title: "Q108831: PC DirSync: Err Msg: Fatal &#91;203&#93; GAL Rebuild Problem"
+permalink: /kb/108/Q108831/
 ---
 
-## Q108831: PC DirSync: Err Msg: Fatal [203] GAL Rebuild Problem
+## Q108831: PC DirSync: Err Msg: Fatal &#91;203&#93; GAL Rebuild Problem
 
 	Article: Q108831
 	Product(s): Microsoft Mail For PC Networks

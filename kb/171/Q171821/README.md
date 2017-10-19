@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171821: FIX: Memory Leak When Repeatedly Changing Toolbar Button Width"
-permalink: kb/171/Q171821/
+permalink: /kb/171/Q171821/
 ---
 
 ## Q171821: FIX: Memory Leak When Repeatedly Changing Toolbar Button Width

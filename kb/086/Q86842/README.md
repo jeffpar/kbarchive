@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86842: PC WSPlus: Error Printing with Printers Using GENLIB.DLL"
-permalink: kb/086/Q86842/
+permalink: /kb/086/Q86842/
 ---
 
 ## Q86842: PC WSPlus: Error Printing with Printers Using GENLIB.DLL

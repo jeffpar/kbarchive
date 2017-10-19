@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170954: WD97: E-Mail File Attachments Display as Empty Outlined Box"
-permalink: kb/170/Q170954/
+permalink: /kb/170/Q170954/
 ---
 
 ## Q170954: WD97: E-Mail File Attachments Display as Empty Outlined Box

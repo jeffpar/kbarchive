@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319001: FIX: SEEK(), INDEXSEEK(), and LOOKUP() Find Nonexistent Records"
-permalink: kb/319/Q319001/
+permalink: /kb/319/Q319001/
 ---
 
 ## Q319001: FIX: SEEK(), INDEXSEEK(), and LOOKUP() Find Nonexistent Records

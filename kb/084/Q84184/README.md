@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84184: Printing on Unsupported UNIX-Based Networks (Windows)"
-permalink: kb/084/Q84184/
+permalink: /kb/084/Q84184/
 ---
 
 ## Q84184: Printing on Unsupported UNIX-Based Networks (Windows)

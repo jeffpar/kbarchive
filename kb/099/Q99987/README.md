@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99987: New DBLSPACE.EXE on Stacker Conversion Disk Has No Bug Fixes"
-permalink: kb/099/Q99987/
+permalink: /kb/099/Q99987/
 ---
 
 ## Q99987: New DBLSPACE.EXE on Stacker Conversion Disk Has No Bug Fixes

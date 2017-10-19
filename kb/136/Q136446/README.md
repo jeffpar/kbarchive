@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136446: Devices on Secondary Future Domain TMC-3260 PCI SCSI Not Found"
-permalink: kb/136/Q136446/
+permalink: /kb/136/Q136446/
 ---
 
 ## Q136446: Devices on Secondary Future Domain TMC-3260 PCI SCSI Not Found

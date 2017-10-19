@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152547: GP Fault in Windows NT VDM When Using SCROLL_LOCK/UNLOCK"
-permalink: kb/152/Q152547/
+permalink: /kb/152/Q152547/
 ---
 
 ## Q152547: GP Fault in Windows NT VDM When Using SCROLL_LOCK/UNLOCK

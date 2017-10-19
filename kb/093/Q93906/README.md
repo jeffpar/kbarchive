@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93906: PhonenetTalk Version 3.0 Required with Windows 3.1"
-permalink: kb/093/Q93906/
+permalink: /kb/093/Q93906/
 ---
 
 ## Q93906: PhonenetTalk Version 3.0 Required with Windows 3.1

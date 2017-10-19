@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101904: Mac Wkst: Mail Notification Has Stopped Working"
-permalink: kb/101/Q101904/
+permalink: /kb/101/Q101904/
 ---
 
 ## Q101904: Mac Wkst: Mail Notification Has Stopped Working

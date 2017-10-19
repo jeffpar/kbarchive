@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85923: Lotus Freelance Graphics and HP Printers Under Windows 3.1"
-permalink: kb/085/Q85923/
+permalink: /kb/085/Q85923/
 ---
 
 ## Q85923: Lotus Freelance Graphics and HP Printers Under Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90226: Troubleshooting Lost Network Connections"
-permalink: kb/090/Q90226/
+permalink: /kb/090/Q90226/
 ---
 
 ## Q90226: Troubleshooting Lost Network Connections

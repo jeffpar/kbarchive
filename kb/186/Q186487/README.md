@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186487: Terminal Server Commands: NW2NT"
-permalink: kb/186/Q186487/
+permalink: /kb/186/Q186487/
 ---
 
 ## Q186487: Terminal Server Commands: NW2NT

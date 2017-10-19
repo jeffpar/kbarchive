@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163614: HP LaserJet Series II Prints Extra Small Stripes or Points"
-permalink: kb/163/Q163614/
+permalink: /kb/163/Q163614/
 ---
 
 ## Q163614: HP LaserJet Series II Prints Extra Small Stripes or Points

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171924: MSN Sign-In Screen Appears When Starting Windows"
-permalink: kb/171/Q171924/
+permalink: /kb/171/Q171924/
 ---
 
 ## Q171924: MSN Sign-In Screen Appears When Starting Windows

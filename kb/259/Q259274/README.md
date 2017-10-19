@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259274: PRB: INSERT - SQL Does Not Support Use of SELECT Statement"
-permalink: kb/259/Q259274/
+permalink: /kb/259/Q259274/
 ---
 
 ## Q259274: PRB: INSERT - SQL Does Not Support Use of SELECT Statement

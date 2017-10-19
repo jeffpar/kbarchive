@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293090: MS Reader: Install Shield Error During Installation"
-permalink: kb/293/Q293090/
+permalink: /kb/293/Q293090/
 ---
 
 ## Q293090: MS Reader: Install Shield Error During Installation

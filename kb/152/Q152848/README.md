@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152848: XADM: IS Service Fails With Specific Error 429496676"
-permalink: kb/152/Q152848/
+permalink: /kb/152/Q152848/
 ---
 
 ## Q152848: XADM: IS Service Fails With Specific Error 429496676

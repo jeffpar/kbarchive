@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153761: Early Versions of InocuLAN May Cause Problems with Windows NT"
-permalink: kb/153/Q153761/
+permalink: /kb/153/Q153761/
 ---
 
 ## Q153761: Early Versions of InocuLAN May Cause Problems with Windows NT

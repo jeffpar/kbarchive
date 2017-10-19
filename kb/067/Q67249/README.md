@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67249: Using Window Extra Bytes in Custom Controls"
-permalink: kb/067/Q67249/
+permalink: /kb/067/Q67249/
 ---
 
 ## Q67249: Using Window Extra Bytes in Custom Controls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50862: DOCERR: @MakeFil Macro Spelling on MASM 5.1 CodeView Tutorial"
-permalink: kb/050/Q50862/
+permalink: /kb/050/Q50862/
 ---
 
 ## Q50862: DOCERR: @MakeFil Macro Spelling on MASM 5.1 CodeView Tutorial

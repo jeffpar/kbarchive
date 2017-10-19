@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203745: DHCP Reconcile Does Not Recover Reservations Outside Scopes"
-permalink: kb/203/Q203745/
+permalink: /kb/203/Q203745/
 ---
 
 ## Q203745: DHCP Reconcile Does Not Recover Reservations Outside Scopes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245421: XCLN: Summary of Nickname Features in Different Outlook Versions"
-permalink: kb/245/Q245421/
+permalink: /kb/245/Q245421/
 ---
 
 ## Q245421: XCLN: Summary of Nickname Features in Different Outlook Versions

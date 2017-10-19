@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80575: Determining the Amount of Disk Space with Stacker"
-permalink: kb/080/Q80575/
+permalink: /kb/080/Q80575/
 ---
 
 ## Q80575: Determining the Amount of Disk Space with Stacker

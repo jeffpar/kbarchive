@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260824: Changing CAPs or Client Connection Accounts May Orphan Clients"
-permalink: kb/260/Q260824/
+permalink: /kb/260/Q260824/
 ---
 
 ## Q260824: Changing CAPs or Client Connection Accounts May Orphan Clients

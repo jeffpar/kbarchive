@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183070: WD97: Embedded OLE Objects Are Changed to Pictures After Save As"
-permalink: kb/183/Q183070/
+permalink: /kb/183/Q183070/
 ---
 
 ## Q183070: WD97: Embedded OLE Objects Are Changed to Pictures After Save As

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95111: Aldus Network Setup Program May Not Operate with WFWG"
-permalink: kb/095/Q95111/
+permalink: /kb/095/Q95111/
 ---
 
 ## Q95111: Aldus Network Setup Program May Not Operate with WFWG

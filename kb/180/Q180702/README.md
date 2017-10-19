@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180702: Deleting LUA Pool from TN3270 May Delete Pool"
-permalink: kb/180/Q180702/
+permalink: /kb/180/Q180702/
 ---
 
 ## Q180702: Deleting LUA Pool from TN3270 May Delete Pool

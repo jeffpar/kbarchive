@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188042: SMS: Logon Servers Are Flooded with .sni Files"
-permalink: kb/188/Q188042/
+permalink: /kb/188/Q188042/
 ---
 
 ## Q188042: SMS: Logon Servers Are Flooded with .sni Files

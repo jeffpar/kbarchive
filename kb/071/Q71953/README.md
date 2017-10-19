@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71953: Windows Setup Brings Up DR-DOS Setup"
-permalink: kb/071/Q71953/
+permalink: /kb/071/Q71953/
 ---
 
 ## Q71953: Windows Setup Brings Up DR-DOS Setup

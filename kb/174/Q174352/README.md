@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174352: XWEB: How to Improve Error Messages for T'shooting Web Access"
-permalink: kb/174/Q174352/
+permalink: /kb/174/Q174352/
 ---
 
 ## Q174352: XWEB: How to Improve Error Messages for T'shooting Web Access

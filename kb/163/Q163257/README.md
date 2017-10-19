@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163257: XADM: Dr. Watson, AV When You Create X.400 Address"
-permalink: kb/163/Q163257/
+permalink: /kb/163/Q163257/
 ---
 
 ## Q163257: XADM: Dr. Watson, AV When You Create X.400 Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154936: SMS Displays # When Attempting to Create SMS Client"
-permalink: kb/154/Q154936/
+permalink: /kb/154/Q154936/
 ---
 
 ## Q154936: SMS Displays # When Attempting to Create SMS Client

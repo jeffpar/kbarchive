@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124866: Ultimate Frank Lloyd Wright: Manual Installation Instructions"
-permalink: kb/124/Q124866/
+permalink: /kb/124/Q124866/
 ---
 
 ## Q124866: Ultimate Frank Lloyd Wright: Manual Installation Instructions

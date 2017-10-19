@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312105: HOWTO: Save Outlook E-mail to a Folder Other Than Sent Items"
-permalink: kb/312/Q312105/
+permalink: /kb/312/Q312105/
 ---
 
 ## Q312105: HOWTO: Save Outlook E-mail to a Folder Other Than Sent Items

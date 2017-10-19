@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112368: WFWG: Chat Text Is Pasted in the Wrong Window"
-permalink: kb/112/Q112368/
+permalink: /kb/112/Q112368/
 ---
 
 ## Q112368: WFWG: Chat Text Is Pasted in the Wrong Window

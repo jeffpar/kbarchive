@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126623: DHCP Manager Does Not Display Host Names"
-permalink: kb/126/Q126623/
+permalink: /kb/126/Q126623/
 ---
 
 ## Q126623: DHCP Manager Does Not Display Host Names

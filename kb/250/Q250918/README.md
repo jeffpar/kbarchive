@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250918: FS2000: Flight Restarts When You Change Waypoints During Flight"
-permalink: kb/250/Q250918/
+permalink: /kb/250/Q250918/
 ---
 
 ## Q250918: FS2000: Flight Restarts When You Change Waypoints During Flight

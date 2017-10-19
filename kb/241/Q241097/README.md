@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241097: FIX: TreeView Tooltips Do Not Appear on Windows NT"
-permalink: kb/241/Q241097/
+permalink: /kb/241/Q241097/
 ---
 
 ## Q241097: FIX: TreeView Tooltips Do Not Appear on Windows NT

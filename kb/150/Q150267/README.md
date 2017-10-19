@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150267: Must Have Optional Duplexing Unit to Print Duplex to HP Printers"
-permalink: kb/150/Q150267/
+permalink: /kb/150/Q150267/
 ---
 
 ## Q150267: Must Have Optional Duplexing Unit to Print Duplex to HP Printers

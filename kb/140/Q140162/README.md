@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140162: Bookshelf 95: Unable to Activate Quickshelf AutoHide"
-permalink: kb/140/Q140162/
+permalink: /kb/140/Q140162/
 ---
 
 ## Q140162: Bookshelf 95: Unable to Activate Quickshelf AutoHide

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217388: XCON: IMAP4 Referral Support"
-permalink: kb/217/Q217388/
+permalink: /kb/217/Q217388/
 ---
 
 ## Q217388: XCON: IMAP4 Referral Support

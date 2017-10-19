@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132960: PRB: Invalid Precision Value Err w/ Character Field Parameters"
-permalink: kb/132/Q132960/
+permalink: /kb/132/Q132960/
 ---
 
 ## Q132960: PRB: Invalid Precision Value Err w/ Character Field Parameters

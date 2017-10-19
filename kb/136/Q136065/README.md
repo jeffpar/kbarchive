@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136065: Windows 95 Help File Available"
-permalink: kb/136/Q136065/
+permalink: /kb/136/Q136065/
 ---
 
 ## Q136065: Windows 95 Help File Available

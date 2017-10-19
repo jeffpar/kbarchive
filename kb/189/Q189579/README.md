@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189579: F11 and F12 Keys Do Not Function in MS-DOS Applications"
-permalink: kb/189/Q189579/
+permalink: /kb/189/Q189579/
 ---
 
 ## Q189579: F11 and F12 Keys Do Not Function in MS-DOS Applications

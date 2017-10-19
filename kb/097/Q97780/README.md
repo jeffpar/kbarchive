@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97780: Incorrect Error Message in Beethoven on Magnavox 461"
-permalink: kb/097/Q97780/
+permalink: /kb/097/Q97780/
 ---
 
 ## Q97780: Incorrect Error Message in Beethoven on Magnavox 461

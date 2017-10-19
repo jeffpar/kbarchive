@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141724: Context-Sensitive Help in a CDialog Object"
-permalink: kb/141/Q141724/
+permalink: /kb/141/Q141724/
 ---
 
 ## Q141724: Context-Sensitive Help in a CDialog Object

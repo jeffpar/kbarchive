@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169896: Network DDE Application Will Not Connect Via Network DDE"
-permalink: kb/169/Q169896/
+permalink: /kb/169/Q169896/
 ---
 
 ## Q169896: Network DDE Application Will Not Connect Via Network DDE

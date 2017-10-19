@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82033: Tiny Printout from Windows 3.0 Paintbrush"
-permalink: kb/082/Q82033/
+permalink: /kb/082/Q82033/
 ---
 
 ## Q82033: Tiny Printout from Windows 3.0 Paintbrush

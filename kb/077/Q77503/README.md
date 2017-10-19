@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77503: Installing Microsoft Windows 3.0 Class-In-A-Box Data Files"
-permalink: kb/077/Q77503/
+permalink: /kb/077/Q77503/
 ---
 
 ## Q77503: Installing Microsoft Windows 3.0 Class-In-A-Box Data Files

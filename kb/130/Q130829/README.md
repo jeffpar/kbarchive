@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130829: &quot;Bad Command or Filename&quot; Starting Program with DOSSHELL"
-permalink: kb/130/Q130829/
+permalink: /kb/130/Q130829/
 ---
 
 ## Q130829: &quot;Bad Command or Filename&quot; Starting Program with DOSSHELL

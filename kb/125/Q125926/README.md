@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125926: MS WORKS 3 FOR WIN SBS Corrections and Comments"
-permalink: kb/125/Q125926/
+permalink: /kb/125/Q125926/
 ---
 
 ## Q125926: MS WORKS 3 FOR WIN SBS Corrections and Comments

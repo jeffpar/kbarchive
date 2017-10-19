@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79342: Windows Paintbrush File Format"
-permalink: kb/079/Q79342/
+permalink: /kb/079/Q79342/
 ---
 
 ## Q79342: Windows Paintbrush File Format

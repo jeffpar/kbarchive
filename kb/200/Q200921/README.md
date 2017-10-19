@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200921: PRB: OpenQuery with ATL Provider Fails When Set Up with SQL Ente"
-permalink: kb/200/Q200921/
+permalink: /kb/200/Q200921/
 ---
 
 ## Q200921: PRB: OpenQuery with ATL Provider Fails When Set Up with SQL Ente

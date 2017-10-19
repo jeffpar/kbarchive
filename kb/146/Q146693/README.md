@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146693: XCLN: Importing 3.x Folders Textizes Meeting Requests"
-permalink: kb/146/Q146693/
+permalink: /kb/146/Q146693/
 ---
 
 ## Q146693: XCLN: Importing 3.x Folders Textizes Meeting Requests

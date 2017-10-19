@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95377: Drive Popup of Prompt Files Popup Not in Same Font"
-permalink: kb/095/Q95377/
+permalink: /kb/095/Q95377/
 ---
 
 ## Q95377: Drive Popup of Prompt Files Popup Not in Same Font

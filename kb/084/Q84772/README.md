@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84772: WRK Err Msg: One of the Library Files Needed to Run This..."
-permalink: kb/084/Q84772/
+permalink: /kb/084/Q84772/
 ---
 
 ## Q84772: WRK Err Msg: One of the Library Files Needed to Run This...

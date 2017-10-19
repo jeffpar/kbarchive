@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239066: XADM: Exchange Mailbox Manager Error Message: Setup Has Failed"
-permalink: kb/239/Q239066/
+permalink: /kb/239/Q239066/
 ---
 
 ## Q239066: XADM: Exchange Mailbox Manager Error Message: Setup Has Failed

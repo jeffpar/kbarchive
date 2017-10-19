@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141019: SNMP Debug Messages Are Written to Eventlog"
-permalink: kb/141/Q141019/
+permalink: /kb/141/Q141019/
 ---
 
 ## Q141019: SNMP Debug Messages Are Written to Eventlog

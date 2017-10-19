@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239569: XWEB: Requirements for Outlook Web Access"
-permalink: kb/239/Q239569/
+permalink: /kb/239/Q239569/
 ---
 
 ## Q239569: XWEB: Requirements for Outlook Web Access

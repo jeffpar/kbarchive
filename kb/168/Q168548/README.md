@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168548: XADM: Exchange Server 5.0 Standard vs. Enterprise Edition"
-permalink: kb/168/Q168548/
+permalink: /kb/168/Q168548/
 ---
 
 ## Q168548: XADM: Exchange Server 5.0 Standard vs. Enterprise Edition

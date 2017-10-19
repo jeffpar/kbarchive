@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116420: BUG: Running a Program in NMAKE Fails During Preprocessing"
-permalink: kb/116/Q116420/
+permalink: /kb/116/Q116420/
 ---
 
 ## Q116420: BUG: Running a Program in NMAKE Fails During Preprocessing

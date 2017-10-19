@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123986: DHCP Server Excludes Address Clusters Within a Valid Scope"
-permalink: kb/123/Q123986/
+permalink: /kb/123/Q123986/
 ---
 
 ## Q123986: DHCP Server Excludes Address Clusters Within a Valid Scope

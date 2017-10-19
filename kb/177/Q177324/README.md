@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177324: Setting Column Widths in My Computer Details View"
-permalink: kb/177/Q177324/
+permalink: /kb/177/Q177324/
 ---
 
 ## Q177324: Setting Column Widths in My Computer Details View

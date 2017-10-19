@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72159: MS-DOS 5 README.TXT: Machine-Specific HIMEM.SYS Switches"
-permalink: kb/072/Q72159/
+permalink: /kb/072/Q72159/
 ---
 
 ## Q72159: MS-DOS 5 README.TXT: Machine-Specific HIMEM.SYS Switches

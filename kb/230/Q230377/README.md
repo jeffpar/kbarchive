@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230377: BUG: Find/Replace ASSERT in MDI App w/ CRichEditView-based Views"
-permalink: kb/230/Q230377/
+permalink: /kb/230/Q230377/
 ---
 
 ## Q230377: BUG: Find/Replace ASSERT in MDI App w/ CRichEditView-based Views

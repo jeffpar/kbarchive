@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185024: XCON: MTA NDRs with Loop Detection After Upgrading Bridgehead"
-permalink: kb/185/Q185024/
+permalink: /kb/185/Q185024/
 ---
 
 ## Q185024: XCON: MTA NDRs with Loop Detection After Upgrading Bridgehead

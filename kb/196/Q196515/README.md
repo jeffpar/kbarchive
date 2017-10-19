@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196515: WD97: Unusual or Unexpected Line Spacing Between Paragraphs"
-permalink: kb/196/Q196515/
+permalink: /kb/196/Q196515/
 ---
 
 ## Q196515: WD97: Unusual or Unexpected Line Spacing Between Paragraphs

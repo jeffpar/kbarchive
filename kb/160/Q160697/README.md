@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160697: WD97: Macro Name Truncated in Customize Dialog Box"
-permalink: kb/160/Q160697/
+permalink: /kb/160/Q160697/
 ---
 
 ## Q160697: WD97: Macro Name Truncated in Customize Dialog Box

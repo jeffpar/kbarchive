@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242212: XADM: Mailbox Exclusion Info Stored Using MBX Proxy Address"
-permalink: kb/242/Q242212/
+permalink: /kb/242/Q242212/
 ---
 
 ## Q242212: XADM: Mailbox Exclusion Info Stored Using MBX Proxy Address

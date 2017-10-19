@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139785: RUI Problem Handling RUI_SEND After Sense Data Received"
-permalink: kb/139/Q139785/
+permalink: /kb/139/Q139785/
 ---
 
 ## Q139785: RUI Problem Handling RUI_SEND After Sense Data Received

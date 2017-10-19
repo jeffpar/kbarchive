@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172594: Cannot Connect to Server with 15 Characters and Period in Name"
-permalink: kb/172/Q172594/
+permalink: /kb/172/Q172594/
 ---
 
 ## Q172594: Cannot Connect to Server with 15 Characters and Period in Name

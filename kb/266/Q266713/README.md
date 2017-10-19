@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266713: BUG: IDispatch::GetIDsOfNames() May Return E_FAIL When Successfu"
-permalink: kb/266/Q266713/
+permalink: /kb/266/Q266713/
 ---
 
 ## Q266713: BUG: IDispatch::GetIDsOfNames() May Return E_FAIL When Successfu

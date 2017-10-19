@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193091: FIX: VSS OLE Automation Error Message &quot;Bad Access Parameter&quot;"
-permalink: kb/193/Q193091/
+permalink: /kb/193/Q193091/
 ---
 
 ## Q193091: FIX: VSS OLE Automation Error Message &quot;Bad Access Parameter&quot;

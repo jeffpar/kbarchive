@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115355: X400: Update Utility Crashes with &quot;Out of memory&quot; Message"
-permalink: kb/115/Q115355/
+permalink: /kb/115/Q115355/
 ---
 
 ## Q115355: X400: Update Utility Crashes with &quot;Out of memory&quot; Message

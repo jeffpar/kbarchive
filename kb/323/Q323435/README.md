@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323435: Dungeon Siege: Game Performance Is Slower Than Expected"
-permalink: kb/323/Q323435/
+permalink: /kb/323/Q323435/
 ---
 
 ## Q323435: Dungeon Siege: Game Performance Is Slower Than Expected

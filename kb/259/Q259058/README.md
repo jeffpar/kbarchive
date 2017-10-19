@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259058: Encarta Online Deluxe: Free Subscription for Encarta Users"
-permalink: kb/259/Q259058/
+permalink: /kb/259/Q259058/
 ---
 
 ## Q259058: Encarta Online Deluxe: Free Subscription for Encarta Users

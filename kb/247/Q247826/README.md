@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247826: BUG: Using a QoS Socket with AcceptEx"
-permalink: kb/247/Q247826/
+permalink: /kb/247/Q247826/
 ---
 
 ## Q247826: BUG: Using a QoS Socket with AcceptEx

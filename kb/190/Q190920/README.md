@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190920: PRB: Cannot Use MSFlexGrid Wizard Control in Custom App"
-permalink: kb/190/Q190920/
+permalink: /kb/190/Q190920/
 ---
 
 ## Q190920: PRB: Cannot Use MSFlexGrid Wizard Control in Custom App

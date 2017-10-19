@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156321: INFO: STL Sample for Predicate Version of adjacent_find Function"
-permalink: kb/156/Q156321/
+permalink: /kb/156/Q156321/
 ---
 
 ## Q156321: INFO: STL Sample for Predicate Version of adjacent_find Function

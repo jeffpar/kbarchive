@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166151: Numpad Decimal Key Inputs a Decimal Instead of Comma"
-permalink: kb/166/Q166151/
+permalink: /kb/166/Q166151/
 ---
 
 ## Q166151: Numpad Decimal Key Inputs a Decimal Instead of Comma

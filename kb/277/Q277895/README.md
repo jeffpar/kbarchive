@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277895: Errors Occur Submitting Renewal to Certificate Server 1.0"
-permalink: kb/277/Q277895/
+permalink: /kb/277/Q277895/
 ---
 
 ## Q277895: Errors Occur Submitting Renewal to Certificate Server 1.0

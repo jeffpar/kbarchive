@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190239: WD97: How to Edit an MS Graph Object Programmatically"
-permalink: kb/190/Q190239/
+permalink: /kb/190/Q190239/
 ---
 
 ## Q190239: WD97: How to Edit an MS Graph Object Programmatically

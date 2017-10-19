@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115566: Open Multiple AVIs, Use of MCI_PUT Command"
-permalink: kb/115/Q115566/
+permalink: /kb/115/Q115566/
 ---
 
 ## Q115566: Open Multiple AVIs, Use of MCI_PUT Command

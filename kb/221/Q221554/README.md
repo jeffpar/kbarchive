@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221554: Polish Windows NT Displays Microsoft Sans Serif Font Incorrectly"
-permalink: kb/221/Q221554/
+permalink: /kb/221/Q221554/
 ---
 
 ## Q221554: Polish Windows NT Displays Microsoft Sans Serif Font Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234860: Dr. Watson Does Not Run with Certain Extensible Counters"
-permalink: kb/234/Q234860/
+permalink: /kb/234/Q234860/
 ---
 
 ## Q234860: Dr. Watson Does Not Run with Certain Extensible Counters

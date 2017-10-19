@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112342: FIX: Format Editor Problems with Repeatable A Edit Descriptor"
-permalink: kb/112/Q112342/
+permalink: /kb/112/Q112342/
 ---
 
 ## Q112342: FIX: Format Editor Problems with Repeatable A Edit Descriptor

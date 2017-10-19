@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285037: Games Err Msg: Your Program Is Making an Invalid Dynamic..."
-permalink: kb/285/Q285037/
+permalink: /kb/285/Q285037/
 ---
 
 ## Q285037: Games Err Msg: Your Program Is Making an Invalid Dynamic...

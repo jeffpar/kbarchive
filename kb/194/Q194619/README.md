@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194619: Host Security Group Inadvertently Removed From Start Menu"
-permalink: kb/194/Q194619/
+permalink: /kb/194/Q194619/
 ---
 
 ## Q194619: Host Security Group Inadvertently Removed From Start Menu

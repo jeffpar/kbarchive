@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258676: PRB: Inconsistent Behavior Using rdoParameter's Value Property"
-permalink: kb/258/Q258676/
+permalink: /kb/258/Q258676/
 ---
 
 ## Q258676: PRB: Inconsistent Behavior Using rdoParameter's Value Property

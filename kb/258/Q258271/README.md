@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258271: SNA Application May be Slow When Locating HIS2000"
-permalink: kb/258/Q258271/
+permalink: /kb/258/Q258271/
 ---
 
 ## Q258271: SNA Application May be Slow When Locating HIS2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183374: Visual InterDev Evaluation Edition Will Expire On 5/31/98"
-permalink: kb/183/Q183374/
+permalink: /kb/183/Q183374/
 ---
 
 ## Q183374: Visual InterDev Evaluation Edition Will Expire On 5/31/98

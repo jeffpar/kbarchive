@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266055: Error Message Appears When Service Does Not Start"
-permalink: kb/266/Q266055/
+permalink: /kb/266/Q266055/
 ---
 
 ## Q266055: Error Message Appears When Service Does Not Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132357: How to Implement CTRL+G Functionality to &quot;Find Again&quot;"
-permalink: kb/132/Q132357/
+permalink: /kb/132/Q132357/
 ---
 
 ## Q132357: How to Implement CTRL+G Functionality to &quot;Find Again&quot;

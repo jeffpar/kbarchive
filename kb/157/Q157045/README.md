@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157045: INFO: Read-Only Control Takes on DisabledBackColor"
-permalink: kb/157/Q157045/
+permalink: /kb/157/Q157045/
 ---
 
 ## Q157045: INFO: Read-Only Control Takes on DisabledBackColor

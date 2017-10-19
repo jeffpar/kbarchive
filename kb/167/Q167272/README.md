@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167272: HP NetServer Running Redundant Power Supply Agent Restarts"
-permalink: kb/167/Q167272/
+permalink: /kb/167/Q167272/
 ---
 
 ## Q167272: HP NetServer Running Redundant Power Supply Agent Restarts

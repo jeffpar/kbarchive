@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186711: Back Level SNA Manager May Save Com.cfg Incorrectly"
-permalink: kb/186/Q186711/
+permalink: /kb/186/Q186711/
 ---
 
 ## Q186711: Back Level SNA Manager May Save Com.cfg Incorrectly

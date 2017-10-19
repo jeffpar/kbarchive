@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149856: BUG: Embedding a String Using the /V Compiler Option Fails"
-permalink: kb/149/Q149856/
+permalink: /kb/149/Q149856/
 ---
 
 ## Q149856: BUG: Embedding a String Using the /V Compiler Option Fails

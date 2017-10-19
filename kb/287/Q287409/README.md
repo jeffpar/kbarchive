@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287409: Last Hardware Scan Date Is Incremented by One Month"
-permalink: kb/287/Q287409/
+permalink: /kb/287/Q287409/
 ---
 
 ## Q287409: Last Hardware Scan Date Is Incremented by One Month

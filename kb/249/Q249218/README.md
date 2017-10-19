@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249218: XFOR: Using English Version Notes Client and Connector w. DBCS"
-permalink: kb/249/Q249218/
+permalink: /kb/249/Q249218/
 ---
 
 ## Q249218: XFOR: Using English Version Notes Client and Connector w. DBCS

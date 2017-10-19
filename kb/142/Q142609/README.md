@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142609: Corruption Problem When Running DPMI Application"
-permalink: kb/142/Q142609/
+permalink: /kb/142/Q142609/
 ---
 
 ## Q142609: Corruption Problem When Running DPMI Application

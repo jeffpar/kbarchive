@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169310: Close Combat Trial Version Is Available"
-permalink: kb/169/Q169310/
+permalink: /kb/169/Q169310/
 ---
 
 ## Q169310: Close Combat Trial Version Is Available

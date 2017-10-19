@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191777: XCLN: Unable to Access MAPI Calendar"
-permalink: kb/191/Q191777/
+permalink: /kb/191/Q191777/
 ---
 
 ## Q191777: XCLN: Unable to Access MAPI Calendar

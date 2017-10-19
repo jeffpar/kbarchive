@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120228: RAS Point-to-Point: Password Conventions and Common Problems"
-permalink: kb/120/Q120228/
+permalink: /kb/120/Q120228/
 ---
 
 ## Q120228: RAS Point-to-Point: Password Conventions and Common Problems

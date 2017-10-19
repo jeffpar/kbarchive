@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195238: PRB: MFC Control Does Not Detect Keystrokes When SSTabs Exist"
-permalink: kb/195/Q195238/
+permalink: /kb/195/Q195238/
 ---
 
 ## Q195238: PRB: MFC Control Does Not Detect Keystrokes When SSTabs Exist

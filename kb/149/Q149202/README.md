@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149202: XCLN: Client for Macintosh Version 4.0 Release Notes"
-permalink: kb/149/Q149202/
+permalink: /kb/149/Q149202/
 ---
 
 ## Q149202: XCLN: Client for Macintosh Version 4.0 Release Notes

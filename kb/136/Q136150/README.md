@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136150: Srv Event 2000 with Status Code C000023A"
-permalink: kb/136/Q136150/
+permalink: /kb/136/Q136150/
 ---
 
 ## Q136150: Srv Event 2000 with Status Code C000023A

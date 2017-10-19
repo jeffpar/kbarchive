@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132589: Open Network Files Do Not Appear in Net Watcher"
-permalink: kb/132/Q132589/
+permalink: /kb/132/Q132589/
 ---
 
 ## Q132589: Open Network Files Do Not Appear in Net Watcher

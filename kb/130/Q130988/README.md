@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130988: PRB: Objects Stack Up When You Center Group of Objects in Form"
-permalink: kb/130/Q130988/
+permalink: /kb/130/Q130988/
 ---
 
 ## Q130988: PRB: Objects Stack Up When You Center Group of Objects in Form

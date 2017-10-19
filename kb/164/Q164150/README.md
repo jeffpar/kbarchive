@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164150: DOC: C4237 Online Help Contains Wrong Information on &quot;bool&quot;"
-permalink: kb/164/Q164150/
+permalink: /kb/164/Q164150/
 ---
 
 ## Q164150: DOC: C4237 Online Help Contains Wrong Information on &quot;bool&quot;

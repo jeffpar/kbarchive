@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178354: INFO: How Setup Wizard and PDW Use Dependency Files"
-permalink: kb/178/Q178354/
+permalink: /kb/178/Q178354/
 ---
 
 ## Q178354: INFO: How Setup Wizard and PDW Use Dependency Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190790: BUG: Circular Dependency Error After Breaking Compatibility"
-permalink: kb/190/Q190790/
+permalink: /kb/190/Q190790/
 ---
 
 ## Q190790: BUG: Circular Dependency Error After Breaking Compatibility

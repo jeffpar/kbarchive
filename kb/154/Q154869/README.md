@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154869: PRB: Error &quot;Too many client tasks&quot; When Using Jet"
-permalink: kb/154/Q154869/
+permalink: /kb/154/Q154869/
 ---
 
 ## Q154869: PRB: Error &quot;Too many client tasks&quot; When Using Jet

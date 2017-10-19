@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67025: Bitstream Fontware 3.0 Installation Kit Supported Devices"
-permalink: kb/067/Q67025/
+permalink: /kb/067/Q67025/
 ---
 
 ## Q67025: Bitstream Fontware 3.0 Installation Kit Supported Devices

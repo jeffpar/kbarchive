@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160965: Flight Simulator: Fuel Tanks Do Not Switch Automatically"
-permalink: kb/160/Q160965/
+permalink: /kb/160/Q160965/
 ---
 
 ## Q160965: Flight Simulator: Fuel Tanks Do Not Switch Automatically

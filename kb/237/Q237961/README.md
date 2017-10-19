@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237961: XFOR: IMAP4 and POP3 Users Cannot Retrieve Messages"
-permalink: kb/237/Q237961/
+permalink: /kb/237/Q237961/
 ---
 
 ## Q237961: XFOR: IMAP4 and POP3 Users Cannot Retrieve Messages

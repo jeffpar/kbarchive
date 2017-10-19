@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268559: Domain Users Can Remotely Access Event Logs"
-permalink: kb/268/Q268559/
+permalink: /kb/268/Q268559/
 ---
 
 ## Q268559: Domain Users Can Remotely Access Event Logs

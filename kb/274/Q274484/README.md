@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274484: HOWTO: Grant Users the Access to Add Visual Basic Components"
-permalink: kb/274/Q274484/
+permalink: /kb/274/Q274484/
 ---
 
 ## Q274484: HOWTO: Grant Users the Access to Add Visual Basic Components

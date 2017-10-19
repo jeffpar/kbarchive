@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q25149: Mouse Support in Non-Windows-Based Applications"
-permalink: kb/025/Q25149/
+permalink: /kb/025/Q25149/
 ---
 
 ## Q25149: Mouse Support in Non-Windows-Based Applications

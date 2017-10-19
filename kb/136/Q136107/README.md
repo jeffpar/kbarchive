@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136107: TC4045 Token Ring Adapter Detected But Does Not Work"
-permalink: kb/136/Q136107/
+permalink: /kb/136/Q136107/
 ---
 
 ## Q136107: TC4045 Token Ring Adapter Detected But Does Not Work

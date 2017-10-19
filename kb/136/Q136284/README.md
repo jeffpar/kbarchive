@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136284: How to Find the Size of an .FPT File with Different Blocksizes"
-permalink: kb/136/Q136284/
+permalink: /kb/136/Q136284/
 ---
 
 ## Q136284: How to Find the Size of an .FPT File with Different Blocksizes

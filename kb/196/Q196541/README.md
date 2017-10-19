@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196541: WD97: Copying Toolbar Does Not Copy Associated Macros"
-permalink: kb/196/Q196541/
+permalink: /kb/196/Q196541/
 ---
 
 ## Q196541: WD97: Copying Toolbar Does Not Copy Associated Macros

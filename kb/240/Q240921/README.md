@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240921: Smsapm32 Consumes 100 Percent CPU Time on Windows NT SMS Clients"
-permalink: kb/240/Q240921/
+permalink: /kb/240/Q240921/
 ---
 
 ## Q240921: Smsapm32 Consumes 100 Percent CPU Time on Windows NT SMS Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201753: SMS: Software Inventory Corruption in SQL Database"
-permalink: kb/201/Q201753/
+permalink: /kb/201/Q201753/
 ---
 
 ## Q201753: SMS: Software Inventory Corruption in SQL Database

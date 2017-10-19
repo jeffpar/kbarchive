@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111814: HOWTO: Get the Current Document in an MDI Application"
-permalink: kb/111/Q111814/
+permalink: /kb/111/Q111814/
 ---
 
 ## Q111814: HOWTO: Get the Current Document in an MDI Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170887: WD97: Field Code Becomes Damaged Under Certain Circumstances"
-permalink: kb/170/Q170887/
+permalink: /kb/170/Q170887/
 ---
 
 ## Q170887: WD97: Field Code Becomes Damaged Under Certain Circumstances

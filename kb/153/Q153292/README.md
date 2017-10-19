@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153292: FIX: Compiler Errors with COleDateTime::Format"
-permalink: kb/153/Q153292/
+permalink: /kb/153/Q153292/
 ---
 
 ## Q153292: FIX: Compiler Errors with COleDateTime::Format

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135486: PC DirSync: Err Msg: Fatal 39 Error Generating TID"
-permalink: kb/135/Q135486/
+permalink: /kb/135/Q135486/
 ---
 
 ## Q135486: PC DirSync: Err Msg: Fatal 39 Error Generating TID

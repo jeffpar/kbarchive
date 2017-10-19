@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108623: Forcing FoxPro Window to Always Remain on Top"
-permalink: kb/108/Q108623/
+permalink: /kb/108/Q108623/
 ---
 
 ## Q108623: Forcing FoxPro Window to Always Remain on Top

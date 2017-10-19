@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132807: Enhanced Encryption for Windows 95 Password Cache"
-permalink: kb/132/Q132807/
+permalink: /kb/132/Q132807/
 ---
 
 ## Q132807: Enhanced Encryption for Windows 95 Password Cache

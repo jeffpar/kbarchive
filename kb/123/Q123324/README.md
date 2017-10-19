@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123324: File Transfer Protocols Supported by HyperTerminal"
-permalink: kb/123/Q123324/
+permalink: /kb/123/Q123324/
 ---
 
 ## Q123324: File Transfer Protocols Supported by HyperTerminal

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147431: Cannot Hide Host Drive for Compressed Volume on Removable Disk"
-permalink: kb/147/Q147431/
+permalink: /kb/147/Q147431/
 ---
 
 ## Q147431: Cannot Hide Host Drive for Compressed Volume on Removable Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156149: MSDLC32 May Not Receive All Packets in Heavy Traffic"
-permalink: kb/156/Q156149/
+permalink: /kb/156/Q156149/
 ---
 
 ## Q156149: MSDLC32 May Not Receive All Packets in Heavy Traffic

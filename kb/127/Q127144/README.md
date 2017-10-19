@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127144: Windows NT WinSock Listen (Backlog) Parameter Limit"
-permalink: kb/127/Q127144/
+permalink: /kb/127/Q127144/
 ---
 
 ## Q127144: Windows NT WinSock Listen (Backlog) Parameter Limit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153287: SMS Client Files Not Removed After Upgrade"
-permalink: kb/153/Q153287/
+permalink: /kb/153/Q153287/
 ---
 
 ## Q153287: SMS Client Files Not Removed After Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254821: XADM: Re-establishing ADC Connection Agreement Deletes Objects"
-permalink: kb/254/Q254821/
+permalink: /kb/254/Q254821/
 ---
 
 ## Q254821: XADM: Re-establishing ADC Connection Agreement Deletes Objects

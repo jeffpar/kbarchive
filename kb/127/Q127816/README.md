@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127816: NWCONV Ignores Prefix for Duplicate Names"
-permalink: kb/127/Q127816/
+permalink: /kb/127/Q127816/
 ---
 
 ## Q127816: NWCONV Ignores Prefix for Duplicate Names

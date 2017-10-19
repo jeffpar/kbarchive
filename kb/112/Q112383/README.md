@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112383: PreferredRedir=Full Default with NetWare 4 Secondary Network"
-permalink: kb/112/Q112383/
+permalink: /kb/112/Q112383/
 ---
 
 ## Q112383: PreferredRedir=Full Default with NetWare 4 Secondary Network

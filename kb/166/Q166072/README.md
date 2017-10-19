@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166072: Unable to Install the Barr X.25 Link Service"
-permalink: kb/166/Q166072/
+permalink: /kb/166/Q166072/
 ---
 
 ## Q166072: Unable to Install the Barr X.25 Link Service

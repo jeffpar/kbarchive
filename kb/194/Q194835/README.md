@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194835: PRB: Custom AppWizard Creates Defective 2nd-Generation Project"
-permalink: kb/194/Q194835/
+permalink: /kb/194/Q194835/
 ---
 
 ## Q194835: PRB: Custom AppWizard Creates Defective 2nd-Generation Project

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177567: Inbox Starts Microsoft Exchange Instead of Windows Messaging"
-permalink: kb/177/Q177567/
+permalink: /kb/177/Q177567/
 ---
 
 ## Q177567: Inbox Starts Microsoft Exchange Instead of Windows Messaging

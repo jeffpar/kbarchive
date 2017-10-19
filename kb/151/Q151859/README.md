@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151859: Remote Control of NEC Versa M/100 is Unstable Using IPX Sockets"
-permalink: kb/151/Q151859/
+permalink: /kb/151/Q151859/
 ---
 
 ## Q151859: Remote Control of NEC Versa M/100 is Unstable Using IPX Sockets

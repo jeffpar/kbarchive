@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254552: XADM: Slow Information Store Startup From Public Folder Cleanup"
-permalink: kb/254/Q254552/
+permalink: /kb/254/Q254552/
 ---
 
 ## Q254552: XADM: Slow Information Store Startup From Public Folder Cleanup

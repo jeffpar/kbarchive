@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107259: Stacker Conversion: The MS-DOS Stacker Conversion Program..."
-permalink: kb/107/Q107259/
+permalink: /kb/107/Q107259/
 ---
 
 ## Q107259: Stacker Conversion: The MS-DOS Stacker Conversion Program...

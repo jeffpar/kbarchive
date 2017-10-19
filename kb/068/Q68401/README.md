@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68401: PC Setup: Server Update Copies Over DEFAULT.SCR"
-permalink: kb/068/Q68401/
+permalink: /kb/068/Q68401/
 ---
 
 ## Q68401: PC Setup: Server Update Copies Over DEFAULT.SCR

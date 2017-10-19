@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257786: FIX: IPF in Msvbvm60.dll Showing Data Report After Modal Form"
-permalink: kb/257/Q257786/
+permalink: /kb/257/Q257786/
 ---
 
 ## Q257786: FIX: IPF in Msvbvm60.dll Showing Data Report After Modal Form

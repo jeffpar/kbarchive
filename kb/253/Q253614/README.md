@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253614: Midtown: Erratic Behavior With SideWinder Precision Racing Wheel"
-permalink: kb/253/Q253614/
+permalink: /kb/253/Q253614/
 ---
 
 ## Q253614: Midtown: Erratic Behavior With SideWinder Precision Racing Wheel

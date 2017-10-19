@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66740: BUG: CTRL+NUM/ May Be Read as CTRL+/ in MS-DOS with NUM LOCK On"
-permalink: kb/066/Q66740/
+permalink: /kb/066/Q66740/
 ---
 
 ## Q66740: BUG: CTRL+NUM/ May Be Read as CTRL+/ in MS-DOS with NUM LOCK On

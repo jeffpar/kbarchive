@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139843: Recovering from Stop 21A Caused by Disk Mirror Sets"
-permalink: kb/139/Q139843/
+permalink: /kb/139/Q139843/
 ---
 
 ## Q139843: Recovering from Stop 21A Caused by Disk Mirror Sets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32448: INFO: Specifying .DEF Files on the CL Command Line"
-permalink: kb/032/Q32448/
+permalink: /kb/032/Q32448/
 ---
 
 ## Q32448: INFO: Specifying .DEF Files on the CL Command Line

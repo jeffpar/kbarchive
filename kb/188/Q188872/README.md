@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188872: WD97: &quot;Header Record Delimiters&quot; Appears Repeatedly in Merge"
-permalink: kb/188/Q188872/
+permalink: /kb/188/Q188872/
 ---
 
 ## Q188872: WD97: &quot;Header Record Delimiters&quot; Appears Repeatedly in Merge

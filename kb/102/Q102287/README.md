@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102287: ERR: &quot;File Not Found&quot; or &quot;File Does Not Exist&quot;"
-permalink: kb/102/Q102287/
+permalink: /kb/102/Q102287/
 ---
 
 ## Q102287: ERR: &quot;File Not Found&quot; or &quot;File Does Not Exist&quot;

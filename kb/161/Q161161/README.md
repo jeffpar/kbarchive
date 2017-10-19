@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161161: HOWTO: Search a ListBox Control Quickly"
-permalink: kb/161/Q161161/
+permalink: /kb/161/Q161161/
 ---
 
 ## Q161161: HOWTO: Search a ListBox Control Quickly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79597: PRB:Parameter Mismatch Error When Pass Properties by Reference"
-permalink: kb/079/Q79597/
+permalink: /kb/079/Q79597/
 ---
 
 ## Q79597: PRB:Parameter Mismatch Error When Pass Properties by Reference

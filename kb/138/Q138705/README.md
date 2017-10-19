@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138705: Files Installed by Visual FoxPro Professional in Windows 3.x"
-permalink: kb/138/Q138705/
+permalink: /kb/138/Q138705/
 ---
 
 ## Q138705: Files Installed by Visual FoxPro Professional in Windows 3.x

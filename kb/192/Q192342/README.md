@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192342: HOWTO: Locate Files Cited by the Coverage Profiler Help Topic"
-permalink: kb/192/Q192342/
+permalink: /kb/192/Q192342/
 ---
 
 ## Q192342: HOWTO: Locate Files Cited by the Coverage Profiler Help Topic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299671: Convert.exe Tool Causes Desktop Shortcuts to Prompt for Password"
-permalink: kb/299/Q299671/
+permalink: /kb/299/Q299671/
 ---
 
 ## Q299671: Convert.exe Tool Causes Desktop Shortcuts to Prompt for Password

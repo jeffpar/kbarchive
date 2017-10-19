@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242255: XCLN: Outlook Web Access First Chance Exception in Emsui32.dll"
-permalink: kb/242/Q242255/
+permalink: /kb/242/Q242255/
 ---
 
 ## Q242255: XCLN: Outlook Web Access First Chance Exception in Emsui32.dll

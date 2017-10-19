@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122536: Arcade for Macintosh: How to Disable PowerBook Processor Cycling"
-permalink: kb/122/Q122536/
+permalink: /kb/122/Q122536/
 ---
 
 ## Q122536: Arcade for Macintosh: How to Disable PowerBook Processor Cycling

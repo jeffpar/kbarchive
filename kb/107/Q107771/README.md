@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107771: PC Forms: Err Msg: Illegal Function Call"
-permalink: kb/107/Q107771/
+permalink: /kb/107/Q107771/
 ---
 
 ## Q107771: PC Forms: Err Msg: Illegal Function Call

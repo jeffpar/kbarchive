@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146446: PRB: ClassWizard Doesn't Support Property Change Notifications"
-permalink: kb/146/Q146446/
+permalink: /kb/146/Q146446/
 ---
 
 ## Q146446: PRB: ClassWizard Doesn't Support Property Change Notifications

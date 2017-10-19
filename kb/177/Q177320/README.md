@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177320: How to Display Quick View Icon Only When Connected to MSN"
-permalink: kb/177/Q177320/
+permalink: /kb/177/Q177320/
 ---
 
 ## Q177320: How to Display Quick View Icon Only When Connected to MSN

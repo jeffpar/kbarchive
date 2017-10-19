@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250485: PRB: Setupmgx.dll Could Not Be Loaded or Corrupt Err Msg"
-permalink: kb/250/Q250485/
+permalink: /kb/250/Q250485/
 ---
 
 ## Q250485: PRB: Setupmgx.dll Could Not Be Loaded or Corrupt Err Msg

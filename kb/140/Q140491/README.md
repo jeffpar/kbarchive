@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140491: Multimedia Sound Card Support Files Are Missing or Corrupt"
-permalink: kb/140/Q140491/
+permalink: /kb/140/Q140491/
 ---
 
 ## Q140491: Multimedia Sound Card Support Files Are Missing or Corrupt

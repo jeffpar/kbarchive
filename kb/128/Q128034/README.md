@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128034: OEM Printer Driver May Be Overwritten by Windows 95 Setup"
-permalink: kb/128/Q128034/
+permalink: /kb/128/Q128034/
 ---
 
 ## Q128034: OEM Printer Driver May Be Overwritten by Windows 95 Setup

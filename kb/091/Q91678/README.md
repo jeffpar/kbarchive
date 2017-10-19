@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91678: Read Fault Errors Accessing BackPack Drive in Windows"
-permalink: kb/091/Q91678/
+permalink: /kb/091/Q91678/
 ---
 
 ## Q91678: Read Fault Errors Accessing BackPack Drive in Windows

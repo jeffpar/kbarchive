@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161196: Problem Installing FC10/FC20 Driver from Drvlib Directory"
-permalink: kb/161/Q161196/
+permalink: /kb/161/Q161196/
 ---
 
 ## Q161196: Problem Installing FC10/FC20 Driver from Drvlib Directory

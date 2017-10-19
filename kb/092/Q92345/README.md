@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92345: Using File Locking and Record Locking in FoxPro"
-permalink: kb/092/Q92345/
+permalink: /kb/092/Q92345/
 ---
 
 ## Q92345: Using File Locking and Record Locking in FoxPro

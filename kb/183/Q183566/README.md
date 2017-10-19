@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183566: Error Message: &quot;Record Not Found&quot; for Certain Dates"
-permalink: kb/183/Q183566/
+permalink: /kb/183/Q183566/
 ---
 
 ## Q183566: Error Message: &quot;Record Not Found&quot; for Certain Dates

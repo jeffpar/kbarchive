@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194927: INFO: VB6 Enables Single Project Testing of Controls/Documents"
-permalink: kb/194/Q194927/
+permalink: /kb/194/Q194927/
 ---
 
 ## Q194927: INFO: VB6 Enables Single Project Testing of Controls/Documents

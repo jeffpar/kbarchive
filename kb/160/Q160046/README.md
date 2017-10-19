@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160046: Play It!: Space Bar and Mouse May Cause Stuck MIDI Notes"
-permalink: kb/160/Q160046/
+permalink: /kb/160/Q160046/
 ---
 
 ## Q160046: Play It!: Space Bar and Mouse May Cause Stuck MIDI Notes

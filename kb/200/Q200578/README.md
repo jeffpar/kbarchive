@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200578: BUG: Cannot Step Over Function That Contains Data Breakpoint"
-permalink: kb/200/Q200578/
+permalink: /kb/200/Q200578/
 ---
 
 ## Q200578: BUG: Cannot Step Over Function That Contains Data Breakpoint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195736: Golf 98 Err Msg: Error Loading Texture File Shad.bmp"
-permalink: kb/195/Q195736/
+permalink: /kb/195/Q195736/
 ---
 
 ## Q195736: Golf 98 Err Msg: Error Loading Texture File Shad.bmp

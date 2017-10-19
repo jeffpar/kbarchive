@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130979: User Environment Variables Set Before Default Home Directory"
-permalink: kb/130/Q130979/
+permalink: /kb/130/Q130979/
 ---
 
 ## Q130979: User Environment Variables Set Before Default Home Directory

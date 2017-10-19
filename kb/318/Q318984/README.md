@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318984: How To Change The Default Download Location For Files In Interne"
-permalink: kb/318/Q318984/
+permalink: /kb/318/Q318984/
 ---
 
 ## Q318984: How To Change The Default Download Location For Files In Interne

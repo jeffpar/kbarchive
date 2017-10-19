@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125698: HOWTO: Obtain Microsoft WinG SDK and General Overview of WinG"
-permalink: kb/125/Q125698/
+permalink: /kb/125/Q125698/
 ---
 
 ## Q125698: HOWTO: Obtain Microsoft WinG SDK and General Overview of WinG

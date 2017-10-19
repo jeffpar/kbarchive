@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151096: Cinemania 96: Updates Do Not Print Complete Descriptions"
-permalink: kb/151/Q151096/
+permalink: /kb/151/Q151096/
 ---
 
 ## Q151096: Cinemania 96: Updates Do Not Print Complete Descriptions

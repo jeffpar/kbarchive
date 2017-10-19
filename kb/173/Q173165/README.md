@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173165: FIX: Modified Resource Files Don't Affect Resources"
-permalink: kb/173/Q173165/
+permalink: /kb/173/Q173165/
 ---
 
 ## Q173165: FIX: Modified Resource Files Don't Affect Resources

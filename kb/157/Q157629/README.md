@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157629: HOWTO: Change the Default Source of Printer Programmatically"
-permalink: kb/157/Q157629/
+permalink: /kb/157/Q157629/
 ---
 
 ## Q157629: HOWTO: Change the Default Source of Printer Programmatically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61772: Hewlett-Packard Persuasive Presentations Font Cartridge"
-permalink: kb/061/Q61772/
+permalink: /kb/061/Q61772/
 ---
 
 ## Q61772: Hewlett-Packard Persuasive Presentations Font Cartridge

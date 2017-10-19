@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98748: How to Use the GETDIR() Function in FoxPro 2.5 and Later"
-permalink: kb/098/Q98748/
+permalink: /kb/098/Q98748/
 ---
 
 ## Q98748: How to Use the GETDIR() Function in FoxPro 2.5 and Later

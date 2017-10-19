@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180593: FIX: Cannot Rename Directory of a Closed Workspace"
-permalink: kb/180/Q180593/
+permalink: /kb/180/Q180593/
 ---
 
 ## Q180593: FIX: Cannot Rename Directory of a Closed Workspace

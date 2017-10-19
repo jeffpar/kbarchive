@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245471: IIS: Error Renaming Virtual Directory Using HTML Administrator"
-permalink: kb/245/Q245471/
+permalink: /kb/245/Q245471/
 ---
 
 ## Q245471: IIS: Error Renaming Virtual Directory Using HTML Administrator

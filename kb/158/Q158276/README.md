@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158276: INF: PC MMTA: NT MMTA Will Not Start As a Service"
-permalink: kb/158/Q158276/
+permalink: /kb/158/Q158276/
 ---
 
 ## Q158276: INF: PC MMTA: NT MMTA Will Not Start As a Service

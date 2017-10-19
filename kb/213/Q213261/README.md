@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213261: SMS: Software Metering Usage Is Not Reported for Some Clients"
-permalink: kb/213/Q213261/
+permalink: /kb/213/Q213261/
 ---
 
 ## Q213261: SMS: Software Metering Usage Is Not Reported for Some Clients

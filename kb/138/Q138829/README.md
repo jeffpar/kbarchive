@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138829: SMS Incorrectly Identifies Windows Clients as MS-DOS Clients"
-permalink: kb/138/Q138829/
+permalink: /kb/138/Q138829/
 ---
 
 ## Q138829: SMS Incorrectly Identifies Windows Clients as MS-DOS Clients

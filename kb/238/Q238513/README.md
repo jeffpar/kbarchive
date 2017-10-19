@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238513: PRB: Opening a ComboBox Prevents Timer Event Code from Executing"
-permalink: kb/238/Q238513/
+permalink: /kb/238/Q238513/
 ---
 
 ## Q238513: PRB: Opening a ComboBox Prevents Timer Event Code from Executing

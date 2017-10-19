@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286196: IISReset May Not Save IIS Configuration Changes"
-permalink: kb/286/Q286196/
+permalink: /kb/286/Q286196/
 ---
 
 ## Q286196: IISReset May Not Save IIS Configuration Changes

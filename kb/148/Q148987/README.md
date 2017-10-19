@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148987: Err Msg: &quot;NETBIOS AddName Failure&quot;"
-permalink: kb/148/Q148987/
+permalink: /kb/148/Q148987/
 ---
 
 ## Q148987: Err Msg: &quot;NETBIOS AddName Failure&quot;

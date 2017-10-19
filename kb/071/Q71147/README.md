@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71147: PRB: SDK Sample Programs Define Delete Accelerator Incorrectly"
-permalink: kb/071/Q71147/
+permalink: /kb/071/Q71147/
 ---
 
 ## Q71147: PRB: SDK Sample Programs Define Delete Accelerator Incorrectly

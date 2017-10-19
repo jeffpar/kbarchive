@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221772: &quot;SNABase not started&quot; if SNA Client for Windows NT is installed"
-permalink: kb/221/Q221772/
+permalink: /kb/221/Q221772/
 ---
 
 ## Q221772: &quot;SNABase not started&quot; if SNA Client for Windows NT is installed

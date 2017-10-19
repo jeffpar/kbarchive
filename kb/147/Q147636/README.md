@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147636: SMS Remote Control Does Not Pass Through Some Keys"
-permalink: kb/147/Q147636/
+permalink: /kb/147/Q147636/
 ---
 
 ## Q147636: SMS Remote Control Does Not Pass Through Some Keys

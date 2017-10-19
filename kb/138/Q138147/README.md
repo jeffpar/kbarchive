@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138147: HOWTO: Use the SourceSafe Explorer to Modify the Ss.ini File"
-permalink: kb/138/Q138147/
+permalink: /kb/138/Q138147/
 ---
 
 ## Q138147: HOWTO: Use the SourceSafe Explorer to Modify the Ss.ini File

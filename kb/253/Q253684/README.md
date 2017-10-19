@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253684: Using the RichTextBox ActiveX Control in VFP"
-permalink: kb/253/Q253684/
+permalink: /kb/253/Q253684/
 ---
 
 ## Q253684: Using the RichTextBox ActiveX Control in VFP

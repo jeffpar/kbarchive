@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127831: Automap Streets: Determining Which Counties the Maps Refer To"
-permalink: kb/127/Q127831/
+permalink: /kb/127/Q127831/
 ---
 
 ## Q127831: Automap Streets: Determining Which Counties the Maps Refer To

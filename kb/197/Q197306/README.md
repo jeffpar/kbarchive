@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197306: How to Troubleshoot SSL in Internet Information Server 4.0"
-permalink: kb/197/Q197306/
+permalink: /kb/197/Q197306/
 ---
 
 ## Q197306: How to Troubleshoot SSL in Internet Information Server 4.0

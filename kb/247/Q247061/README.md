@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247061: XWEB: Computer Running IIS Prompts to Insert Disk in Drive A"
-permalink: kb/247/Q247061/
+permalink: /kb/247/Q247061/
 ---
 
 ## Q247061: XWEB: Computer Running IIS Prompts to Insert Disk in Drive A

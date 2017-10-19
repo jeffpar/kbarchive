@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148179: Digi ISDN Adapter Stops Working During 128K Connection"
-permalink: kb/148/Q148179/
+permalink: /kb/148/Q148179/
 ---
 
 ## Q148179: Digi ISDN Adapter Stops Working During 128K Connection

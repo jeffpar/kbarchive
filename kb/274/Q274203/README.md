@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274203: PRB: Cannot Shift Focus from ATL Composite Control on Web Page"
-permalink: kb/274/Q274203/
+permalink: /kb/274/Q274203/
 ---
 
 ## Q274203: PRB: Cannot Shift Focus from ATL Composite Control on Web Page

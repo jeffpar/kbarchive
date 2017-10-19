@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140448: XADM: Errors Processing Incoming Replication Messages"
-permalink: kb/140/Q140448/
+permalink: /kb/140/Q140448/
 ---
 
 ## Q140448: XADM: Errors Processing Incoming Replication Messages

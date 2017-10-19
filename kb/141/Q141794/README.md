@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141794: BUG: UNLOCK Command Commits Changes to Row-Buffered Records"
-permalink: kb/141/Q141794/
+permalink: /kb/141/Q141794/
 ---
 
 ## Q141794: BUG: UNLOCK Command Commits Changes to Row-Buffered Records

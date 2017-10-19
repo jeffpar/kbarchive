@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146261: XCLN: Labels Can Be Truncated When Resolution Changes"
-permalink: kb/146/Q146261/
+permalink: /kb/146/Q146261/
 ---
 
 ## Q146261: XCLN: Labels Can Be Truncated When Resolution Changes

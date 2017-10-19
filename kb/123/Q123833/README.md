@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123833: Connecting SNA Server over X.25/QLLC"
-permalink: kb/123/Q123833/
+permalink: /kb/123/Q123833/
 ---
 
 ## Q123833: Connecting SNA Server over X.25/QLLC

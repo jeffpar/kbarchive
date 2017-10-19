@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125226: PRB: ODBC Reserved Word in a RFX Function Causes Syntax Error"
-permalink: kb/125/Q125226/
+permalink: /kb/125/Q125226/
 ---
 
 ## Q125226: PRB: ODBC Reserved Word in a RFX Function Causes Syntax Error

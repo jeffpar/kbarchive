@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190025: XADM: Unable to Create New Mailbox, Error 2037"
-permalink: kb/190/Q190025/
+permalink: /kb/190/Q190025/
 ---
 
 ## Q190025: XADM: Unable to Create New Mailbox, Error 2037

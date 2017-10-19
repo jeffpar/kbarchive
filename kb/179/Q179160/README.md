@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179160: Games: General Protection Fault in Module Dibeng.dll"
-permalink: kb/179/Q179160/
+permalink: /kb/179/Q179160/
 ---
 
 ## Q179160: Games: General Protection Fault in Module Dibeng.dll

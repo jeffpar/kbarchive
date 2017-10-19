@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82255: Visual Basic Combo Control Receives Extra &quot;Click&quot; Event"
-permalink: kb/082/Q82255/
+permalink: /kb/082/Q82255/
 ---
 
 ## Q82255: Visual Basic Combo Control Receives Extra &quot;Click&quot; Event

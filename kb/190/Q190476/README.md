@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190476: BUG: License Not Included with ActiveX Control Distribution"
-permalink: kb/190/Q190476/
+permalink: /kb/190/Q190476/
 ---
 
 ## Q190476: BUG: License Not Included with ActiveX Control Distribution

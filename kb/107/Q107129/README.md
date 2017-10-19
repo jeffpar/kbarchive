@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107129: How to Disable 32-Bit File Access or 32-Bit Disk Access"
-permalink: kb/107/Q107129/
+permalink: /kb/107/Q107129/
 ---
 
 ## Q107129: How to Disable 32-Bit File Access or 32-Bit Disk Access

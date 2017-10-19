@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73710: Multiple Instances of MS-DOS Shell Version 5.0 or Later"
-permalink: kb/073/Q73710/
+permalink: /kb/073/Q73710/
 ---
 
 ## Q73710: Multiple Instances of MS-DOS Shell Version 5.0 or Later

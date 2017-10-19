@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151664: Description of &quot;Get ISDN for Microsoft Windows&quot;"
-permalink: kb/151/Q151664/
+permalink: /kb/151/Q151664/
 ---
 
 ## Q151664: Description of &quot;Get ISDN for Microsoft Windows&quot;

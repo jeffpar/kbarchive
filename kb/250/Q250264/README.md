@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250264: Event ID 2022 with Norton Speed Disk and Norton Auto Protect"
-permalink: kb/250/Q250264/
+permalink: /kb/250/Q250264/
 ---
 
 ## Q250264: Event ID 2022 with Norton Speed Disk and Norton Auto Protect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126608: Uni to Multiprocessor Utility Fails to Update System"
-permalink: kb/126/Q126608/
+permalink: /kb/126/Q126608/
 ---
 
 ## Q126608: Uni to Multiprocessor Utility Fails to Update System

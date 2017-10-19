@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260909: Internet Explorer Script Error with Services for UNIX Admin Tool"
-permalink: kb/260/Q260909/
+permalink: /kb/260/Q260909/
 ---
 
 ## Q260909: Internet Explorer Script Error with Services for UNIX Admin Tool

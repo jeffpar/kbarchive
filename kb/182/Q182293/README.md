@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182293: Err Msg: Rundll32 Has Performed an Illegal Operation..."
-permalink: kb/182/Q182293/
+permalink: /kb/182/Q182293/
 ---
 
 ## Q182293: Err Msg: Rundll32 Has Performed an Illegal Operation...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95697: OTN Installation Fails Using Madge Token Ring Adapter"
-permalink: kb/095/Q95697/
+permalink: /kb/095/Q95697/
 ---
 
 ## Q95697: OTN Installation Fails Using Madge Token Ring Adapter

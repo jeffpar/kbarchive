@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151710: XFOR: Using WHOIS To Research Internet Domains"
-permalink: kb/151/Q151710/
+permalink: /kb/151/Q151710/
 ---
 
 ## Q151710: XFOR: Using WHOIS To Research Internet Domains

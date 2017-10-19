@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181600: Configuring a Secondary DNS Server with Windows NT"
-permalink: kb/181/Q181600/
+permalink: /kb/181/Q181600/
 ---
 
 ## Q181600: Configuring a Secondary DNS Server with Windows NT

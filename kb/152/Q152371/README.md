@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152371: BUG: Small Left Grid Partition Leaves Scroll Bar Remnants"
-permalink: kb/152/Q152371/
+permalink: /kb/152/Q152371/
 ---
 
 ## Q152371: BUG: Small Left Grid Partition Leaves Scroll Bar Remnants

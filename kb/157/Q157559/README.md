@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157559: WD97: Master Document Toolbar Buttons Grayed in Master Document"
-permalink: kb/157/Q157559/
+permalink: /kb/157/Q157559/
 ---
 
 ## Q157559: WD97: Master Document Toolbar Buttons Grayed in Master Document

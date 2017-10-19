@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249153: XCON: MTA Stops While Processing Malformatted Incoming X.400 Msg"
-permalink: kb/249/Q249153/
+permalink: /kb/249/Q249153/
 ---
 
 ## Q249153: XCON: MTA Stops While Processing Malformatted Incoming X.400 Msg

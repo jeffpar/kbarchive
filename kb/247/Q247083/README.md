@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247083: XCLN: Location of Microsoft Importers for Lotus cc:Mail &amp; Notes"
-permalink: kb/247/Q247083/
+permalink: /kb/247/Q247083/
 ---
 
 ## Q247083: XCLN: Location of Microsoft Importers for Lotus cc:Mail &amp; Notes

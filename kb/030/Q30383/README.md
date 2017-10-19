@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30383: FIX: SUBSTR Will Not Work if Target Is the Same as Source"
-permalink: kb/030/Q30383/
+permalink: /kb/030/Q30383/
 ---
 
 ## Q30383: FIX: SUBSTR Will Not Work if Target Is the Same as Source

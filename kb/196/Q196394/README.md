@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196394: XADM: Store Randomly Stops with Dr.Watson and c0000005 Error"
-permalink: kb/196/Q196394/
+permalink: /kb/196/Q196394/
 ---
 
 ## Q196394: XADM: Store Randomly Stops with Dr.Watson and c0000005 Error

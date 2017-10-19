@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124205: FIX: Browse Does Not Repaint Correctly"
-permalink: kb/124/Q124205/
+permalink: /kb/124/Q124205/
 ---
 
 ## Q124205: FIX: Browse Does Not Repaint Correctly

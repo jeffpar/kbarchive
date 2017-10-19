@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111672: How to Use a Portion of a Memo Field in a List Box"
-permalink: kb/111/Q111672/
+permalink: /kb/111/Q111672/
 ---
 
 ## Q111672: How to Use a Portion of a Memo Field in a List Box

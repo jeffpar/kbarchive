@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234542: SMTP and NNTP Are Updated with New Files by SP5"
-permalink: kb/234/Q234542/
+permalink: /kb/234/Q234542/
 ---
 
 ## Q234542: SMTP and NNTP Are Updated with New Files by SP5

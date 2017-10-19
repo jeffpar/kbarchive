@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196180: XADM: Move Server Wizard Fails when System Folders are Present"
-permalink: kb/196/Q196180/
+permalink: /kb/196/Q196180/
 ---
 
 ## Q196180: XADM: Move Server Wizard Fails when System Folders are Present

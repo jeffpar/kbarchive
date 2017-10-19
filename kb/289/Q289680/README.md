@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289680: Migrating From Windows NT 4.0 To Windows 2000 Training Kit Comme"
-permalink: kb/289/Q289680/
+permalink: /kb/289/Q289680/
 ---
 
 ## Q289680: Migrating From Windows NT 4.0 To Windows 2000 Training Kit Comme

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175596: XADM: Importing CAL File Causes High Store.exe CPU Utilization"
-permalink: kb/175/Q175596/
+permalink: /kb/175/Q175596/
 ---
 
 ## Q175596: XADM: Importing CAL File Causes High Store.exe CPU Utilization

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195937: SMS: Pcmsvc32.exe Fails to Execute Cmd Line Containing UNC Path"
-permalink: kb/195/Q195937/
+permalink: /kb/195/Q195937/
 ---
 
 ## Q195937: SMS: Pcmsvc32.exe Fails to Execute Cmd Line Containing UNC Path

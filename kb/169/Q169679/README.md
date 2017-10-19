@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169679: XADM: Messages Sent with MIME/JIS Encoding May Not Be Readable"
-permalink: kb/169/Q169679/
+permalink: /kb/169/Q169679/
 ---
 
 ## Q169679: XADM: Messages Sent with MIME/JIS Encoding May Not Be Readable

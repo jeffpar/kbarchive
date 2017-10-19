@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190300: SMS: Windows NT Clients in SMS 1.2 Must Have Server Service"
-permalink: kb/190/Q190300/
+permalink: /kb/190/Q190300/
 ---
 
 ## Q190300: SMS: Windows NT Clients in SMS 1.2 Must Have Server Service

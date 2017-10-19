@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90982: No Network Services After Install Over LAN Manager 2.0"
-permalink: kb/090/Q90982/
+permalink: /kb/090/Q90982/
 ---
 
 ## Q90982: No Network Services After Install Over LAN Manager 2.0

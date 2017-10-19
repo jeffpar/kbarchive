@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64439: Trapping a Keystroke and Displaying Its Extended Scan Code"
-permalink: kb/064/Q64439/
+permalink: /kb/064/Q64439/
 ---
 
 ## Q64439: Trapping a Keystroke and Displaying Its Extended Scan Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108296: 9-to-25 Pin RAS Null Modem Cabling"
-permalink: kb/108/Q108296/
+permalink: /kb/108/Q108296/
 ---
 
 ## Q108296: 9-to-25 Pin RAS Null Modem Cabling

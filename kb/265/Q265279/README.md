@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265279: PRB: Disabling of File Caching in IIS 4.0 Fails"
-permalink: kb/265/Q265279/
+permalink: /kb/265/Q265279/
 ---
 
 ## Q265279: PRB: Disabling of File Caching in IIS 4.0 Fails

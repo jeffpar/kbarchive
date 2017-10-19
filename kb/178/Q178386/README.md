@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178386: XWEB: RecvTextA Interface for Channel Service Is Broken"
-permalink: kb/178/Q178386/
+permalink: /kb/178/Q178386/
 ---
 
 ## Q178386: XWEB: RecvTextA Interface for Channel Service Is Broken

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117417: Availability of MS-DOS 6.22 Step-Up"
-permalink: kb/117/Q117417/
+permalink: /kb/117/Q117417/
 ---
 
 ## Q117417: Availability of MS-DOS 6.22 Step-Up

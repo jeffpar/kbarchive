@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172925: INFO: Security Issues with Objects in ASP and ISAPI Extensions"
-permalink: kb/172/Q172925/
+permalink: /kb/172/Q172925/
 ---
 
 ## Q172925: INFO: Security Issues with Objects in ASP and ISAPI Extensions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194620: I_DOTLESS_SMALL in PDF Always Maps to Space"
-permalink: kb/194/Q194620/
+permalink: /kb/194/Q194620/
 ---
 
 ## Q194620: I_DOTLESS_SMALL in PDF Always Maps to Space

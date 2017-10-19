@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164954: PRB: &quot;Syntax Error in Number in Query Expression&quot;"
-permalink: kb/164/Q164954/
+permalink: /kb/164/Q164954/
 ---
 
 ## Q164954: PRB: &quot;Syntax Error in Number in Query Expression&quot;

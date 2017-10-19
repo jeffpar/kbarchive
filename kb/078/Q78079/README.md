@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78079: FIX: Printing with HPPCL5A.DRV to HP LaserJet III Cuts Line"
-permalink: kb/078/Q78079/
+permalink: /kb/078/Q78079/
 ---
 
 ## Q78079: FIX: Printing with HPPCL5A.DRV to HP LaserJet III Cuts Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184305: How to Install and Remove Hotfixes with HOTFIX.EXE"
-permalink: kb/184/Q184305/
+permalink: /kb/184/Q184305/
 ---
 
 ## Q184305: How to Install and Remove Hotfixes with HOTFIX.EXE

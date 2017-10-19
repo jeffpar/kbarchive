@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299788: FIX: Setting SelStart = 0 in EditBox Causes Fatal Exception"
-permalink: kb/299/Q299788/
+permalink: /kb/299/Q299788/
 ---
 
 ## Q299788: FIX: Setting SelStart = 0 in EditBox Causes Fatal Exception

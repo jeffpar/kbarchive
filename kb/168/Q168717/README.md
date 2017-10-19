@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168717: SNA Server Performance Degrades If Domain Controller Down"
-permalink: kb/168/Q168717/
+permalink: /kb/168/Q168717/
 ---
 
 ## Q168717: SNA Server Performance Degrades If Domain Controller Down

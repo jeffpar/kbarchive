@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171250: Host Account Cache Database Is Lost When Promoted To Master"
-permalink: kb/171/Q171250/
+permalink: /kb/171/Q171250/
 ---
 
 ## Q171250: Host Account Cache Database Is Lost When Promoted To Master

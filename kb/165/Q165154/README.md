@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165154: 3270 Print Session Stays in Spooling Status"
-permalink: kb/165/Q165154/
+permalink: /kb/165/Q165154/
 ---
 
 ## Q165154: 3270 Print Session Stays in Spooling Status

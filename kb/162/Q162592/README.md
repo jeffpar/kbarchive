@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162592: SLI Libraries Set Wrong RU Size After Unbind(Hold)"
-permalink: kb/162/Q162592/
+permalink: /kb/162/Q162592/
 ---
 
 ## Q162592: SLI Libraries Set Wrong RU Size After Unbind(Hold)

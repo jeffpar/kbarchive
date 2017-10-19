@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240295: CGI Scripts on Multi Processor System Cause ERROR_PIPE_BUSY"
-permalink: kb/240/Q240295/
+permalink: /kb/240/Q240295/
 ---
 
 ## Q240295: CGI Scripts on Multi Processor System Cause ERROR_PIPE_BUSY

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162969: WD97: No Connectors Command on AutoShapes Menu"
-permalink: kb/162/Q162969/
+permalink: /kb/162/Q162969/
 ---
 
 ## Q162969: WD97: No Connectors Command on AutoShapes Menu

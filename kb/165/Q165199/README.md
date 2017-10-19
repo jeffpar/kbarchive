@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165199: SNA Server Services Stay in Stopping State"
-permalink: kb/165/Q165199/
+permalink: /kb/165/Q165199/
 ---
 
 ## Q165199: SNA Server Services Stay in Stopping State

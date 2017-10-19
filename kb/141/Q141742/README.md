@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141742: Mac Encarta 95: Files Installed During Installation"
-permalink: kb/141/Q141742/
+permalink: /kb/141/Q141742/
 ---
 
 ## Q141742: Mac Encarta 95: Files Installed During Installation

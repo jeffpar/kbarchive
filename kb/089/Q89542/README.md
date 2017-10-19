@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89542: Software Library has DDE Management Library Information"
-permalink: kb/089/Q89542/
+permalink: /kb/089/Q89542/
 ---
 
 ## Q89542: Software Library has DDE Management Library Information

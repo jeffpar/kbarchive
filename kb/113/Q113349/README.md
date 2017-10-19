@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113349: Client Files for Windows 3.x and Terminal Emulators"
-permalink: kb/113/Q113349/
+permalink: /kb/113/Q113349/
 ---
 
 ## Q113349: Client Files for Windows 3.x and Terminal Emulators

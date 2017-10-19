@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115419: PRB: REPORT FORM Filter Syntax Incorrect on Date Field"
-permalink: kb/115/Q115419/
+permalink: /kb/115/Q115419/
 ---
 
 ## Q115419: PRB: REPORT FORM Filter Syntax Incorrect on Date Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140385: Error Using Uplodprf on NTFS Volumes"
-permalink: kb/140/Q140385/
+permalink: /kb/140/Q140385/
 ---
 
 ## Q140385: Error Using Uplodprf on NTFS Volumes

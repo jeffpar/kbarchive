@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244769: After the Gold Rush: Creating a True Profession... Corrections"
-permalink: kb/244/Q244769/
+permalink: /kb/244/Q244769/
 ---
 
 ## Q244769: After the Gold Rush: Creating a True Profession... Corrections

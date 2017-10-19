@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101463: Missing Scroll Bar in MS-DOS Help and MS-DOS Editor"
-permalink: kb/101/Q101463/
+permalink: /kb/101/Q101463/
 ---
 
 ## Q101463: Missing Scroll Bar in MS-DOS Help and MS-DOS Editor

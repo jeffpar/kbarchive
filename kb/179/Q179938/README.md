@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179938: PRB: Sybase Formula One OCX Dependency Warning w/Setup Wizard"
-permalink: kb/179/Q179938/
+permalink: /kb/179/Q179938/
 ---
 
 ## Q179938: PRB: Sybase Formula One OCX Dependency Warning w/Setup Wizard

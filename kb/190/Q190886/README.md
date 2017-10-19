@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190886: HOWTO: Manage State Between DHTML Page Designer Pages"
-permalink: kb/190/Q190886/
+permalink: /kb/190/Q190886/
 ---
 
 ## Q190886: HOWTO: Manage State Between DHTML Page Designer Pages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222829: HOWTO: Use Accelerator Keys Within a Modal Dialog Box"
-permalink: kb/222/Q222829/
+permalink: /kb/222/Q222829/
 ---
 
 ## Q222829: HOWTO: Use Accelerator Keys Within a Modal Dialog Box

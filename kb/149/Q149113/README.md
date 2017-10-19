@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149113: AT Gen: First Contact Form for Schedule+ for AppleTalk Network"
-permalink: kb/149/Q149113/
+permalink: /kb/149/Q149113/
 ---
 
 ## Q149113: AT Gen: First Contact Form for Schedule+ for AppleTalk Network

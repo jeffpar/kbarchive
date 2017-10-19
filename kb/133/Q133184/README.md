@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133184: ATAPI CD-ROM Drive Not Accessible with PCMCIA Devices"
-permalink: kb/133/Q133184/
+permalink: /kb/133/Q133184/
 ---
 
 ## Q133184: ATAPI CD-ROM Drive Not Accessible with PCMCIA Devices

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185830: Small Business Server Fax Ignores Retry Delay"
-permalink: kb/185/Q185830/
+permalink: /kb/185/Q185830/
 ---
 
 ## Q185830: Small Business Server Fax Ignores Retry Delay

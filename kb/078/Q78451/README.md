@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78451: INFO: Detecting EGA.SYS"
-permalink: kb/078/Q78451/
+permalink: /kb/078/Q78451/
 ---
 
 ## Q78451: INFO: Detecting EGA.SYS

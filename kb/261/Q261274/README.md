@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261274: SMS: Software Wizard May Not Show All Distribution Points"
-permalink: kb/261/Q261274/
+permalink: /kb/261/Q261274/
 ---
 
 ## Q261274: SMS: Software Wizard May Not Show All Distribution Points

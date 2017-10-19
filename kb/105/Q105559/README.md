@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105559: MS-DOS 6.2 SCANDISK.INI File"
-permalink: kb/105/Q105559/
+permalink: /kb/105/Q105559/
 ---
 
 ## Q105559: MS-DOS 6.2 SCANDISK.INI File

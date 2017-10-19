@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64039: Refresh NIF Menus When ADMIN Account Is Downgraded"
-permalink: kb/064/Q64039/
+permalink: /kb/064/Q64039/
 ---
 
 ## Q64039: Refresh NIF Menus When ADMIN Account Is Downgraded

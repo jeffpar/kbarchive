@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166820: Unattended Install of PowerToys in WinNT Server Reskit 4.0"
-permalink: kb/166/Q166820/
+permalink: /kb/166/Q166820/
 ---
 
 ## Q166820: Unattended Install of PowerToys in WinNT Server Reskit 4.0

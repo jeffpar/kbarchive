@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152576: XCLN: Components Installed During Exchange 4.0 Client Setup"
-permalink: kb/152/Q152576/
+permalink: /kb/152/Q152576/
 ---
 
 ## Q152576: XCLN: Components Installed During Exchange 4.0 Client Setup

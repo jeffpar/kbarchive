@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161236: Startnet.bat Not Removed with NetWare Workstation Shell 4.0"
-permalink: kb/161/Q161236/
+permalink: /kb/161/Q161236/
 ---
 
 ## Q161236: Startnet.bat Not Removed with NetWare Workstation Shell 4.0

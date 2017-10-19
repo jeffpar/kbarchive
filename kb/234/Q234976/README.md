@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234976: PRB: Error C0042116: Access Denied Using PDW"
-permalink: kb/234/Q234976/
+permalink: /kb/234/Q234976/
 ---
 
 ## Q234976: PRB: Error C0042116: Access Denied Using PDW

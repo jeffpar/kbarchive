@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43276: Applications and the Math Coprocessor Under Windows"
-permalink: kb/043/Q43276/
+permalink: /kb/043/Q43276/
 ---
 
 ## Q43276: Applications and the Math Coprocessor Under Windows

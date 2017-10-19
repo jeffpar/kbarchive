@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173513: BUG: Open/Close CRecordset Repeatedly Results in AV"
-permalink: kb/173/Q173513/
+permalink: /kb/173/Q173513/
 ---
 
 ## Q173513: BUG: Open/Close CRecordset Repeatedly Results in AV

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280784: MCSE Readiness Review Exam 70-216 Windows 2000 Network Infrastru"
-permalink: kb/280/Q280784/
+permalink: /kb/280/Q280784/
 ---
 
 ## Q280784: MCSE Readiness Review Exam 70-216 Windows 2000 Network Infrastru

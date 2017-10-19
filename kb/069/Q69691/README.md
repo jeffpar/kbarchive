@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69691: Using Lotus 1-2-3 Release 3.1 with Windows"
-permalink: kb/069/Q69691/
+permalink: /kb/069/Q69691/
 ---
 
 ## Q69691: Using Lotus 1-2-3 Release 3.1 with Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183772: XCLN: Unable To Connect To Server With Underscore in Name Using"
-permalink: kb/183/Q183772/
+permalink: /kb/183/Q183772/
 ---
 
 ## Q183772: XCLN: Unable To Connect To Server With Underscore in Name Using

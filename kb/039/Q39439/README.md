@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39439: DOCERR: SMSW, SGDT, SIDT, SLDT, VERR, VERW Don't Assemble"
-permalink: kb/039/Q39439/
+permalink: /kb/039/Q39439/
 ---
 
 ## Q39439: DOCERR: SMSW, SGDT, SIDT, SLDT, VERR, VERW Don't Assemble

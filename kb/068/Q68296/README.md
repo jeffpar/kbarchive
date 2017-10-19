@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68296: INFO: Windows 3.x Metafiles Support DeleteObject()"
-permalink: kb/068/Q68296/
+permalink: /kb/068/Q68296/
 ---
 
 ## Q68296: INFO: Windows 3.x Metafiles Support DeleteObject()

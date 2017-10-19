@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103478: Mac Wkst: Mail 3.1 Installer Corrupts AppleTalk on System 7.1"
-permalink: kb/103/Q103478/
+permalink: /kb/103/Q103478/
 ---
 
 ## Q103478: Mac Wkst: Mail 3.1 Installer Corrupts AppleTalk on System 7.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130140: FIX: SourceSafe Might Not Get Long Filenames on Windows NT"
-permalink: kb/130/Q130140/
+permalink: /kb/130/Q130140/
 ---
 
 ## Q130140: FIX: SourceSafe Might Not Get Long Filenames on Windows NT

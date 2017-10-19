@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59657: System Unstable After Print to FILE: Fails"
-permalink: kb/059/Q59657/
+permalink: /kb/059/Q59657/
 ---
 
 ## Q59657: System Unstable After Print to FILE: Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194799: HOWTO: Retrieve RAW/LONG RAW Data from Oracle for ASP Page"
-permalink: kb/194/Q194799/
+permalink: /kb/194/Q194799/
 ---
 
 ## Q194799: HOWTO: Retrieve RAW/LONG RAW Data from Oracle for ASP Page

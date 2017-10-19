@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199021: 3Com SmartAgent Can Produce High CPU Usage When Using WLBS"
-permalink: kb/199/Q199021/
+permalink: /kb/199/Q199021/
 ---
 
 ## Q199021: 3Com SmartAgent Can Produce High CPU Usage When Using WLBS

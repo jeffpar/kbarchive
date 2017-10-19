@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191586: BUG: Database Property in Connection Dialog Has no Effect"
-permalink: kb/191/Q191586/
+permalink: /kb/191/Q191586/
 ---
 
 ## Q191586: BUG: Database Property in Connection Dialog Has no Effect

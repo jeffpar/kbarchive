@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202940: SMS: Resource Explorer Shows Blank Hardware Inventory Classes"
-permalink: kb/202/Q202940/
+permalink: /kb/202/Q202940/
 ---
 
 ## Q202940: SMS: Resource Explorer Shows Blank Hardware Inventory Classes

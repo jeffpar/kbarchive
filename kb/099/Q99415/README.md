@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99415: Hard Disk Controller BIOS Error Codes"
-permalink: kb/099/Q99415/
+permalink: /kb/099/Q99415/
 ---
 
 ## Q99415: Hard Disk Controller BIOS Error Codes

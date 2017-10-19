@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102949: PRB: DOSXNT: Fatal Error DX1070"
-permalink: kb/102/Q102949/
+permalink: /kb/102/Q102949/
 ---
 
 ## Q102949: PRB: DOSXNT: Fatal Error DX1070

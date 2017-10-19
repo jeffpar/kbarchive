@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238672: FIX: Mouse Hook Not Called When Used in User Controls"
-permalink: kb/238/Q238672/
+permalink: /kb/238/Q238672/
 ---
 
 ## Q238672: FIX: Mouse Hook Not Called When Used in User Controls

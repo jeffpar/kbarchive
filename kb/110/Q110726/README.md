@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110726: PC Win: Summary List of Mail for Windows 3.2 Bug Fixes"
-permalink: kb/110/Q110726/
+permalink: /kb/110/Q110726/
 ---
 
 ## Q110726: PC Win: Summary List of Mail for Windows 3.2 Bug Fixes

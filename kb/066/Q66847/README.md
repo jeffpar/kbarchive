@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66847: ASD: Cannot Alter Existing Flight Simulator Scenery"
-permalink: kb/066/Q66847/
+permalink: /kb/066/Q66847/
 ---
 
 ## Q66847: ASD: Cannot Alter Existing Flight Simulator Scenery

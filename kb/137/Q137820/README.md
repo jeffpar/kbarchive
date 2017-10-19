@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137820: Microsoft Plus! Readme.txt File Contents (2 of 2)"
-permalink: kb/137/Q137820/
+permalink: /kb/137/Q137820/
 ---
 
 ## Q137820: Microsoft Plus! Readme.txt File Contents (2 of 2)

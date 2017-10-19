@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84467: Err Msg: Badly Formed Setup Script Command Installing WRK"
-permalink: kb/084/Q84467/
+permalink: /kb/084/Q84467/
 ---
 
 ## Q84467: Err Msg: Badly Formed Setup Script Command Installing WRK

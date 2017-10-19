@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127818: Clients Fail to Connect to Windows NT Server"
-permalink: kb/127/Q127818/
+permalink: /kb/127/Q127818/
 ---
 
 ## Q127818: Clients Fail to Connect to Windows NT Server

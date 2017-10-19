@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160664: XFOR: Cannot Configure Microsoft Mail Connector (AppleTalk)"
-permalink: kb/160/Q160664/
+permalink: /kb/160/Q160664/
 ---
 
 ## Q160664: XFOR: Cannot Configure Microsoft Mail Connector (AppleTalk)

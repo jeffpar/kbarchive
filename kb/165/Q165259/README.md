@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165259: INFO: Active Template Library (ATL) 2.0 Readme File"
-permalink: kb/165/Q165259/
+permalink: /kb/165/Q165259/
 ---
 
 ## Q165259: INFO: Active Template Library (ATL) 2.0 Readme File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114817: No Shutdown Button in Windows NT Server Welcome Screen"
-permalink: kb/114/Q114817/
+permalink: /kb/114/Q114817/
 ---
 
 ## Q114817: No Shutdown Button in Windows NT Server Welcome Screen

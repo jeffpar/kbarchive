@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86303: Media Player Err Msg: There Are No MIDI Devices Installed"
-permalink: kb/086/Q86303/
+permalink: /kb/086/Q86303/
 ---
 
 ## Q86303: Media Player Err Msg: There Are No MIDI Devices Installed

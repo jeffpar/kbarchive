@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199244: HOWTO: Retrieve the Regional Settings Currency Symbol"
-permalink: kb/199/Q199244/
+permalink: /kb/199/Q199244/
 ---
 
 ## Q199244: HOWTO: Retrieve the Regional Settings Currency Symbol

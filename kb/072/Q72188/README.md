@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72188: MS-DOS Command Extension Table by Version"
-permalink: kb/072/Q72188/
+permalink: /kb/072/Q72188/
 ---
 
 ## Q72188: MS-DOS Command Extension Table by Version

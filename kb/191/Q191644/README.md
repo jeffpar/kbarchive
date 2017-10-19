@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191644: BUG: WhatsThisHelp Displays Wrong Mouse Icon On Form Title Bar"
-permalink: kb/191/Q191644/
+permalink: /kb/191/Q191644/
 ---
 
 ## Q191644: BUG: WhatsThisHelp Displays Wrong Mouse Icon On Form Title Bar

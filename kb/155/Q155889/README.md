@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155889: BUG: File Loses One Byte When Checked Out"
-permalink: kb/155/Q155889/
+permalink: /kb/155/Q155889/
 ---
 
 ## Q155889: BUG: File Loses One Byte When Checked Out

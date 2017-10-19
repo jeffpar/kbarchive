@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134962: Performance Problems Using CSNW and GSNW &amp; Netflex Adapter"
-permalink: kb/134/Q134962/
+permalink: /kb/134/Q134962/
 ---
 
 ## Q134962: Performance Problems Using CSNW and GSNW &amp; Netflex Adapter

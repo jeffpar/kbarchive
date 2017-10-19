@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100613: FIX: Data Access Setup Can Give Incorrect Error Message"
-permalink: kb/100/Q100613/
+permalink: /kb/100/Q100613/
 ---
 
 ## Q100613: FIX: Data Access Setup Can Give Incorrect Error Message

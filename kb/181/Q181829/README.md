@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181829: XADM: Err Msg: Unable to Initialize, Windows Reports Error 1815"
-permalink: kb/181/Q181829/
+permalink: /kb/181/Q181829/
 ---
 
 ## Q181829: XADM: Err Msg: Unable to Initialize, Windows Reports Error 1815

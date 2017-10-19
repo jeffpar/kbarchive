@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132944: FltSim 5.1: Floppy Disk README1.TXT Contents"
-permalink: kb/132/Q132944/
+permalink: /kb/132/Q132944/
 ---
 
 ## Q132944: FltSim 5.1: Floppy Disk README1.TXT Contents

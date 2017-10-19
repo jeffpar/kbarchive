@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219336: Number9 Revolution3D Driver Replaced with VGA Driver"
-permalink: kb/219/Q219336/
+permalink: /kb/219/Q219336/
 ---
 
 ## Q219336: Number9 Revolution3D Driver Replaced with VGA Driver

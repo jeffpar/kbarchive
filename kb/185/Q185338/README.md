@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185338: SMS: PCM as a Service and Security Context"
-permalink: kb/185/Q185338/
+permalink: /kb/185/Q185338/
 ---
 
 ## Q185338: SMS: PCM as a Service and Security Context

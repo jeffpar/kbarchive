@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190217: HOWTO: Get Free System Resources in 32-Bit Visual Basic"
-permalink: kb/190/Q190217/
+permalink: /kb/190/Q190217/
 ---
 
 ## Q190217: HOWTO: Get Free System Resources in 32-Bit Visual Basic

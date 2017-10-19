@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68125: Kraft Micro-Mouse Doesn't Work with Windows 3.0"
-permalink: kb/068/Q68125/
+permalink: /kb/068/Q68125/
 ---
 
 ## Q68125: Kraft Micro-Mouse Doesn't Work with Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190261: BUG: Returning 1 in Check Box Valid Event Skips Next Object"
-permalink: kb/190/Q190261/
+permalink: /kb/190/Q190261/
 ---
 
 ## Q190261: BUG: Returning 1 in Check Box Valid Event Skips Next Object

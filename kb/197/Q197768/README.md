@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197768: WD97: Deleted File Still Listed on MRU List"
-permalink: kb/197/Q197768/
+permalink: /kb/197/Q197768/
 ---
 
 ## Q197768: WD97: Deleted File Still Listed on MRU List

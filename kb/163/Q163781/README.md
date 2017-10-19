@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163781: PPT: Sample Code Displays Message Box With AutoShape Type Name"
-permalink: kb/163/Q163781/
+permalink: /kb/163/Q163781/
 ---
 
 ## Q163781: PPT: Sample Code Displays Message Box With AutoShape Type Name

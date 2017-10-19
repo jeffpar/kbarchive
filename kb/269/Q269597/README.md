@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269597: PRB: Limits of ADO Client Cursor &amp; Data-bound Controls w/DB2OLDB"
-permalink: kb/269/Q269597/
+permalink: /kb/269/Q269597/
 ---
 
 ## Q269597: PRB: Limits of ADO Client Cursor &amp; Data-bound Controls w/DB2OLDB

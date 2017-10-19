@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99885: Security Issues Occur Due to How WinNT Handles FPNWCLNT.DLL"
-permalink: kb/099/Q99885/
+permalink: /kb/099/Q99885/
 ---
 
 ## Q99885: Security Issues Occur Due to How WinNT Handles FPNWCLNT.DLL

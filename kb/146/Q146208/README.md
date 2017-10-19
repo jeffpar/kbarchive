@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146208: XCLN: Help File for Fax Template Invalid or Non-Existent"
-permalink: kb/146/Q146208/
+permalink: /kb/146/Q146208/
 ---
 
 ## Q146208: XCLN: Help File for Fax Template Invalid or Non-Existent

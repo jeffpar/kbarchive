@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194621: Print Screen in 3270 Applet Does Not Support Greek Code Page"
-permalink: kb/194/Q194621/
+permalink: /kb/194/Q194621/
 ---
 
 ## Q194621: Print Screen in 3270 Applet Does Not Support Greek Code Page

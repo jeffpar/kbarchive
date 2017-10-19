@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85195: PC Win: System Requirements for Mail for Windows"
-permalink: kb/085/Q85195/
+permalink: /kb/085/Q85195/
 ---
 
 ## Q85195: PC Win: System Requirements for Mail for Windows

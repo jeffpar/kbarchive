@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135323: PPT7: Computer Appears to Hang if You Post Message to Exchange"
-permalink: kb/135/Q135323/
+permalink: /kb/135/Q135323/
 ---
 
 ## Q135323: PPT7: Computer Appears to Hang if You Post Message to Exchange

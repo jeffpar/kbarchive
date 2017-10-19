@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136422: FIX:Visual FoxPro Hangs If Focus Set to TextBox in Grid Column"
-permalink: kb/136/Q136422/
+permalink: /kb/136/Q136422/
 ---
 
 ## Q136422: FIX:Visual FoxPro Hangs If Focus Set to TextBox in Grid Column

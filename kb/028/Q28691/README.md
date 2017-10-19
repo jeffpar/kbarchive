@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28691: Command-Line Switches for Supported Graphics Cards in FltSim"
-permalink: kb/028/Q28691/
+permalink: /kb/028/Q28691/
 ---
 
 ## Q28691: Command-Line Switches for Supported Graphics Cards in FltSim

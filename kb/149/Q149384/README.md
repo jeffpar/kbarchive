@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149384: Error Message: Cannot Open the Online Statement"
-permalink: kb/149/Q149384/
+permalink: /kb/149/Q149384/
 ---
 
 ## Q149384: Error Message: Cannot Open the Online Statement

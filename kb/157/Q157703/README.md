@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157703: XFOR: NDRs Sending Mail Using Email.dot"
-permalink: kb/157/Q157703/
+permalink: /kb/157/Q157703/
 ---
 
 ## Q157703: XFOR: NDRs Sending Mail Using Email.dot

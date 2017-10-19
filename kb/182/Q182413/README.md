@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182413: SMS: CTRL+ALT+DEL &quot;Gold Key&quot; May Not Function with IBM PC"
-permalink: kb/182/Q182413/
+permalink: /kb/182/Q182413/
 ---
 
 ## Q182413: SMS: CTRL+ALT+DEL &quot;Gold Key&quot; May Not Function with IBM PC

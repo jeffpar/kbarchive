@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183535: XWEB: Microsoft Exchange Discussion Wizard for FrontPage"
-permalink: kb/183/Q183535/
+permalink: /kb/183/Q183535/
 ---
 
 ## Q183535: XWEB: Microsoft Exchange Discussion Wizard for FrontPage

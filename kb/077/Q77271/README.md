@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77271: Using Expanded Memory on PS/2 286s Windows"
-permalink: kb/077/Q77271/
+permalink: /kb/077/Q77271/
 ---
 
 ## Q77271: Using Expanded Memory on PS/2 286s Windows

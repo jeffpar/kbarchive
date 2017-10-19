@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158980: Protocols Major and Minor Version Registry Keys Not Updated"
-permalink: kb/158/Q158980/
+permalink: /kb/158/Q158980/
 ---
 
 ## Q158980: Protocols Major and Minor Version Registry Keys Not Updated

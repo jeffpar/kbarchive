@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112716: Err Msg with CorelDRAW: Not Enough Disk Space to Save..."
-permalink: kb/112/Q112716/
+permalink: /kb/112/Q112716/
 ---
 
 ## Q112716: Err Msg with CorelDRAW: Not Enough Disk Space to Save...

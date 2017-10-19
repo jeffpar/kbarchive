@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175411: XADM: POP3 Client May Cause Exchange Information Store to Crash"
-permalink: kb/175/Q175411/
+permalink: /kb/175/Q175411/
 ---
 
 ## Q175411: XADM: POP3 Client May Cause Exchange Information Store to Crash

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171975: Mac Bookshelf 98: Err Msg: Cannot Open Articles or Books File"
-permalink: kb/171/Q171975/
+permalink: /kb/171/Q171975/
 ---
 
 ## Q171975: Mac Bookshelf 98: Err Msg: Cannot Open Articles or Books File

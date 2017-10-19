@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164294: FP: How to Change ServerName for FrontPage Personal Web Server"
-permalink: kb/164/Q164294/
+permalink: /kb/164/Q164294/
 ---
 
 ## Q164294: FP: How to Change ServerName for FrontPage Personal Web Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80522: FltSim: Surface Winds Do Not Affect Take Off"
-permalink: kb/080/Q80522/
+permalink: /kb/080/Q80522/
 ---
 
 ## Q80522: FltSim: Surface Winds Do Not Affect Take Off

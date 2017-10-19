@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193123: XADM: Unable to Reply to Messages After Hotfix Is Applied"
-permalink: kb/193/Q193123/
+permalink: /kb/193/Q193123/
 ---
 
 ## Q193123: XADM: Unable to Reply to Messages After Hotfix Is Applied

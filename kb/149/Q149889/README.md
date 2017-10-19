@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149889: PRB: Assertion or Problems Using DAO in a DLL"
-permalink: kb/149/Q149889/
+permalink: /kb/149/Q149889/
 ---
 
 ## Q149889: PRB: Assertion or Problems Using DAO in a DLL

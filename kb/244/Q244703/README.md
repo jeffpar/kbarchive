@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244703: XGEN: Advancing &amp; Rolling Back System Time Clock for Y2K Test"
-permalink: kb/244/Q244703/
+permalink: /kb/244/Q244703/
 ---
 
 ## Q244703: XGEN: Advancing &amp; Rolling Back System Time Clock for Y2K Test

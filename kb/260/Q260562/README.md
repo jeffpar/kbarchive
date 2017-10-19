@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260562: XIMS: Routing Restrictions: &quot;and&quot; or &quot;or&quot; Options"
-permalink: kb/260/Q260562/
+permalink: /kb/260/Q260562/
 ---
 
 ## Q260562: XIMS: Routing Restrictions: &quot;and&quot; or &quot;or&quot; Options

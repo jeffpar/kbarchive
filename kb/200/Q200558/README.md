@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200558: SMS: File Transfer Window Panes Not Sized Appropriately"
-permalink: kb/200/Q200558/
+permalink: /kb/200/Q200558/
 ---
 
 ## Q200558: SMS: File Transfer Window Panes Not Sized Appropriately

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29735: FIX: LES Instruction Assembles Incorrectly"
-permalink: kb/029/Q29735/
+permalink: /kb/029/Q29735/
 ---
 
 ## Q29735: FIX: LES Instruction Assembles Incorrectly

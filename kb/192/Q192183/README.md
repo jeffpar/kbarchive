@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192183: PRB: Accelerator Keys Fail to Work in MDI Child Forms"
-permalink: kb/192/Q192183/
+permalink: /kb/192/Q192183/
 ---
 
 ## Q192183: PRB: Accelerator Keys Fail to Work in MDI Child Forms

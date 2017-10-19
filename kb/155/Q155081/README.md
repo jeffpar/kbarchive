@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155081: HOWTO: Send Files to the Recycle Bin"
-permalink: kb/155/Q155081/
+permalink: /kb/155/Q155081/
 ---
 
 ## Q155081: HOWTO: Send Files to the Recycle Bin

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215016: SMS: Win16 Clients Ignore Detail Level in Software Inventory"
-permalink: kb/215/Q215016/
+permalink: /kb/215/Q215016/
 ---
 
 ## Q215016: SMS: Win16 Clients Ignore Detail Level in Software Inventory

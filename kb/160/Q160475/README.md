@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160475: CG3: How to Download and Run Clip Gallery CIL Files from the Web"
-permalink: kb/160/Q160475/
+permalink: /kb/160/Q160475/
 ---
 
 ## Q160475: CG3: How to Download and Run Clip Gallery CIL Files from the Web

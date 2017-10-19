@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166110: FIX: Can Set SQL Breakpoints on Invalid Lines Inside a Trigger"
-permalink: kb/166/Q166110/
+permalink: /kb/166/Q166110/
 ---
 
 ## Q166110: FIX: Can Set SQL Breakpoints on Invalid Lines Inside a Trigger

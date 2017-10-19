@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105274: Solving the &quot;Insufficient Memory to Run&quot; Situation"
-permalink: kb/105/Q105274/
+permalink: /kb/105/Q105274/
 ---
 
 ## Q105274: Solving the &quot;Insufficient Memory to Run&quot; Situation

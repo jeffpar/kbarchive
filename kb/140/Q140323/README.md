@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140323: Microsoft Unimodem V Readme.txt File"
-permalink: kb/140/Q140323/
+permalink: /kb/140/Q140323/
 ---
 
 ## Q140323: Microsoft Unimodem V Readme.txt File

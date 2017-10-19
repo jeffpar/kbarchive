@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140380: User Account Database Fails to Shrink After Deleting Accounts"
-permalink: kb/140/Q140380/
+permalink: /kb/140/Q140380/
 ---
 
 ## Q140380: User Account Database Fails to Shrink After Deleting Accounts

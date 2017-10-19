@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271926: BUG: Memory Leak in ATL OLE DB Consumer Template Functions"
-permalink: kb/271/Q271926/
+permalink: /kb/271/Q271926/
 ---
 
 ## Q271926: BUG: Memory Leak in ATL OLE DB Consumer Template Functions

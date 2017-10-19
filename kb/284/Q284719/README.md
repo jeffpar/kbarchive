@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284719: XADM: Eseutil/p Causes AV in ESE!OBJIDLIST&#95;&#95;ErrAddObjid"
-permalink: kb/284/Q284719/
+permalink: /kb/284/Q284719/
 ---
 
 ## Q284719: XADM: Eseutil/p Causes AV in ESE!OBJIDLIST&#95;&#95;ErrAddObjid

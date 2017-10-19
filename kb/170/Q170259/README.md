@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170259: MSB Rainforest: Toolbox Clues and Answers"
-permalink: kb/170/Q170259/
+permalink: /kb/170/Q170259/
 ---
 
 ## Q170259: MSB Rainforest: Toolbox Clues and Answers

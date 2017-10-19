@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153746: Mac Multimedia: Beta Version of Sound Manager Causes Problems"
-permalink: kb/153/Q153746/
+permalink: /kb/153/Q153746/
 ---
 
 ## Q153746: Mac Multimedia: Beta Version of Sound Manager Causes Problems

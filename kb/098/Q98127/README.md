@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98127: WD97: Error Message: &quot;The Document Template Is Not Valid&quot;"
-permalink: kb/098/Q98127/
+permalink: /kb/098/Q98127/
 ---
 
 ## Q98127: WD97: Error Message: &quot;The Document Template Is Not Valid&quot;

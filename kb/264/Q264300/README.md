@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264300: Combat FS: Enemy Aircraft in Multiplayer Games Appear Small"
-permalink: kb/264/Q264300/
+permalink: /kb/264/Q264300/
 ---
 
 ## Q264300: Combat FS: Enemy Aircraft in Multiplayer Games Appear Small

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96532: PC WRmt: Installing Over Another Copy of Windows Mail Client"
-permalink: kb/096/Q96532/
+permalink: /kb/096/Q96532/
 ---
 
 ## Q96532: PC WRmt: Installing Over Another Copy of Windows Mail Client

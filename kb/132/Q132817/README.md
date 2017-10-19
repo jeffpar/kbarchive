@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132817: E-mail Connection Beta Fails with Windows 95 MAPI.DLL."
-permalink: kb/132/Q132817/
+permalink: /kb/132/Q132817/
 ---
 
 ## Q132817: E-mail Connection Beta Fails with Windows 95 MAPI.DLL.

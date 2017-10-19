@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119704: MS-DOS SYS Copies DRVSPACE.BIN Even If You Are Using DBLSPACE"
-permalink: kb/119/Q119704/
+permalink: /kb/119/Q119704/
 ---
 
 ## Q119704: MS-DOS SYS Copies DRVSPACE.BIN Even If You Are Using DBLSPACE

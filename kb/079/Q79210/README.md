@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79210: DOCERR: Extended Keyboard Detection Is Documented Incorrectly"
-permalink: kb/079/Q79210/
+permalink: /kb/079/Q79210/
 ---
 
 ## Q79210: DOCERR: Extended Keyboard Detection Is Documented Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235959: SNA Server Fails to Reestablish Session Under Certain Conditions"
-permalink: kb/235/Q235959/
+permalink: /kb/235/Q235959/
 ---
 
 ## Q235959: SNA Server Fails to Reestablish Session Under Certain Conditions

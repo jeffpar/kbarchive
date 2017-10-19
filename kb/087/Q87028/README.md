@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87028: SMTP: How to Recognize Successful SMTP Gateway Installation"
-permalink: kb/087/Q87028/
+permalink: /kb/087/Q87028/
 ---
 
 ## Q87028: SMTP: How to Recognize Successful SMTP Gateway Installation

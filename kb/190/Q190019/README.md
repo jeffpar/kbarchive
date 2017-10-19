@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190019: XFOR: Reinstalling Microsoft Exchange Connectivity Software"
-permalink: kb/190/Q190019/
+permalink: /kb/190/Q190019/
 ---
 
 ## Q190019: XFOR: Reinstalling Microsoft Exchange Connectivity Software

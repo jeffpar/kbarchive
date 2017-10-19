@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156362: Floppy Controller Requirements for QIC-117"
-permalink: kb/156/Q156362/
+permalink: /kb/156/Q156362/
 ---
 
 ## Q156362: Floppy Controller Requirements for QIC-117

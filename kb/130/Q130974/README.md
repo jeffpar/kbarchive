@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130974: WFW Err Msg: Unable to Contact IP Driver, Error Code 0"
-permalink: kb/130/Q130974/
+permalink: /kb/130/Q130974/
 ---
 
 ## Q130974: WFW Err Msg: Unable to Contact IP Driver, Error Code 0

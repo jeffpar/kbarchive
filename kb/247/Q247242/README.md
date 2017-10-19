@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247242: Error Messages Installing DNS on Microsoft Windows NT Server"
-permalink: kb/247/Q247242/
+permalink: /kb/247/Q247242/
 ---
 
 ## Q247242: Error Messages Installing DNS on Microsoft Windows NT Server

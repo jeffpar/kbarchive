@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146075: XCLN: Work Online or Offline Dialog Box Appears Twice"
-permalink: kb/146/Q146075/
+permalink: /kb/146/Q146075/
 ---
 
 ## Q146075: XCLN: Work Online or Offline Dialog Box Appears Twice

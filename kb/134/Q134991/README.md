@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134991: Unable to Run Windows NT Administrative Tools in SMS Admin UI"
-permalink: kb/134/Q134991/
+permalink: /kb/134/Q134991/
 ---
 
 ## Q134991: Unable to Run Windows NT Administrative Tools in SMS Admin UI

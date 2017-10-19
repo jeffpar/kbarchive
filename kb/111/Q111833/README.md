@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111833: ALT+7 Produces ASCII Character 149 Instead of a Beep"
-permalink: kb/111/Q111833/
+permalink: /kb/111/Q111833/
 ---
 
 ## Q111833: ALT+7 Produces ASCII Character 149 Instead of a Beep

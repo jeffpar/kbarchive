@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68834: PRB: When Compiling with /P, Errors Are Directed to STDERR"
-permalink: kb/068/Q68834/
+permalink: /kb/068/Q68834/
 ---
 
 ## Q68834: PRB: When Compiling with /P, Errors Are Directed to STDERR

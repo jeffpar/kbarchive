@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216379: FIX: Visual Basic 6.0 Booleans are Coerced to Localized Strings"
-permalink: kb/216/Q216379/
+permalink: /kb/216/Q216379/
 ---
 
 ## Q216379: FIX: Visual Basic 6.0 Booleans are Coerced to Localized Strings

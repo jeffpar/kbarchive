@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134796: App Hangs Printing Directly to Port without Printer Connected"
-permalink: kb/134/Q134796/
+permalink: /kb/134/Q134796/
 ---
 
 ## Q134796: App Hangs Printing Directly to Port without Printer Connected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182739: Lock Workstation Button Still Functions After Being Disabled"
-permalink: kb/182/Q182739/
+permalink: /kb/182/Q182739/
 ---
 
 ## Q182739: Lock Workstation Button Still Functions After Being Disabled

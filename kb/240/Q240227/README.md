@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240227: HOWTO: Capture the Path to the Windows and System Folders"
-permalink: kb/240/Q240227/
+permalink: /kb/240/Q240227/
 ---
 
 ## Q240227: HOWTO: Capture the Path to the Windows and System Folders

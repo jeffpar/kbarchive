@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247656: XADM: How to Locate the Source of a Rogue Server Monitor"
-permalink: kb/247/Q247656/
+permalink: /kb/247/Q247656/
 ---
 
 ## Q247656: XADM: How to Locate the Source of a Rogue Server Monitor

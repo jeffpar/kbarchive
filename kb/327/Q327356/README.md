@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327356: FIX: Event 25 Error Messages Are Logged for Each Print Job"
-permalink: kb/327/Q327356/
+permalink: /kb/327/Q327356/
 ---
 
 ## Q327356: FIX: Event 25 Error Messages Are Logged for Each Print Job

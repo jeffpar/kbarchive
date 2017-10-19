@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169422: Mastering: Setup Does Not Detect Newer Version of ActiveMovie"
-permalink: kb/169/Q169422/
+permalink: /kb/169/Q169422/
 ---
 
 ## Q169422: Mastering: Setup Does Not Detect Newer Version of ActiveMovie

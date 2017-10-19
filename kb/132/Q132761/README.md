@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132761: Text of Error Message for Deleting a File That Is in Use"
-permalink: kb/132/Q132761/
+permalink: /kb/132/Q132761/
 ---
 
 ## Q132761: Text of Error Message for Deleting a File That Is in Use

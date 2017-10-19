@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178235: INFO: Summary List: Bugs Fixed by Visual C++ Version 4.2"
-permalink: kb/178/Q178235/
+permalink: /kb/178/Q178235/
 ---
 
 ## Q178235: INFO: Summary List: Bugs Fixed by Visual C++ Version 4.2

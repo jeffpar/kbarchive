@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151373: XCON: DBCS Chars in Subject of Embedded Message not Converted"
-permalink: kb/151/Q151373/
+permalink: /kb/151/Q151373/
 ---
 
 ## Q151373: XCON: DBCS Chars in Subject of Embedded Message not Converted

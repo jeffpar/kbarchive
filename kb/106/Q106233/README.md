@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106233: Standard Mode Video Grabber May be Deleted from WFWG 3.11"
-permalink: kb/106/Q106233/
+permalink: /kb/106/Q106233/
 ---
 
 ## Q106233: Standard Mode Video Grabber May be Deleted from WFWG 3.11

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242347: PRB: Error Message &quot;Invalid Procedure Call or Argument&quot;"
-permalink: kb/242/Q242347/
+permalink: /kb/242/Q242347/
 ---
 
 ## Q242347: PRB: Error Message &quot;Invalid Procedure Call or Argument&quot;

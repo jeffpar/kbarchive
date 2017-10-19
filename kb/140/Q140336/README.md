@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140336: Remote Mail and Inbox Display Different &quot;From&quot; Name"
-permalink: kb/140/Q140336/
+permalink: /kb/140/Q140336/
 ---
 
 ## Q140336: Remote Mail and Inbox Display Different &quot;From&quot; Name

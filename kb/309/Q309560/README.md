@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309560: Unable To Send Or Receive E-mail In Windows XP"
-permalink: kb/309/Q309560/
+permalink: /kb/309/Q309560/
 ---
 
 ## Q309560: Unable To Send Or Receive E-mail In Windows XP

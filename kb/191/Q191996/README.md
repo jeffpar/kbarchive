@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191996: BUG: Field Properties Button in View Designer Malfunctions"
-permalink: kb/191/Q191996/
+permalink: /kb/191/Q191996/
 ---
 
 ## Q191996: BUG: Field Properties Button in View Designer Malfunctions

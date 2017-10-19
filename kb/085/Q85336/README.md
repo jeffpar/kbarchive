@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85336: FAX: Fax Access Component"
-permalink: kb/085/Q85336/
+permalink: /kb/085/Q85336/
 ---
 
 ## Q85336: FAX: Fax Access Component

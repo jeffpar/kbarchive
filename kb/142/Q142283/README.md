@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142283: PRB: Uniqueness of Index Violated When Creating Primary Index"
-permalink: kb/142/Q142283/
+permalink: /kb/142/Q142283/
 ---
 
 ## Q142283: PRB: Uniqueness of Index Violated When Creating Primary Index

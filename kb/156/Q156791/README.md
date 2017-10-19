@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156791: Writer 2: Creative Writer 1.x Cards Will Not Import"
-permalink: kb/156/Q156791/
+permalink: /kb/156/Q156791/
 ---
 
 ## Q156791: Writer 2: Creative Writer 1.x Cards Will Not Import

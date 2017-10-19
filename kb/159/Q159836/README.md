@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159836: XCLN: Dr Watson When Running Exchange on DEC Alpha"
-permalink: kb/159/Q159836/
+permalink: /kb/159/Q159836/
 ---
 
 ## Q159836: XCLN: Dr Watson When Running Exchange on DEC Alpha

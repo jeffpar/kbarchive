@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237588: XFOR: cc:Mail Connector Dirsync Issues"
-permalink: kb/237/Q237588/
+permalink: /kb/237/Q237588/
 ---
 
 ## Q237588: XFOR: cc:Mail Connector Dirsync Issues

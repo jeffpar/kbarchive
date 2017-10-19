@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237569: PRB: Scrolling a List Box with DELETED Off Moves Record Pointer"
-permalink: kb/237/Q237569/
+permalink: /kb/237/Q237569/
 ---
 
 ## Q237569: PRB: Scrolling a List Box with DELETED Off Moves Record Pointer

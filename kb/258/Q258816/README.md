@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258816: Microsoft Windows 2000 Server Resource Kit Comments and Correcti"
-permalink: kb/258/Q258816/
+permalink: /kb/258/Q258816/
 ---
 
 ## Q258816: Microsoft Windows 2000 Server Resource Kit Comments and Correcti

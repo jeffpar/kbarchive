@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196412: XADM: Cannot Change Password Generation Method In Move Server"
-permalink: kb/196/Q196412/
+permalink: /kb/196/Q196412/
 ---
 
 ## Q196412: XADM: Cannot Change Password Generation Method In Move Server

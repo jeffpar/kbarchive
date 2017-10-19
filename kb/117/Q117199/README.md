@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117199: PC Adm: .XTN File for Downstream PO Not Updated Correctly"
-permalink: kb/117/Q117199/
+permalink: /kb/117/Q117199/
 ---
 
 ## Q117199: PC Adm: .XTN File for Downstream PO Not Updated Correctly

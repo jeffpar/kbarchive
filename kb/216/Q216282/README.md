@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216282: Encarta Reference Suite 99: Network Installation Instructions"
-permalink: kb/216/Q216282/
+permalink: /kb/216/Q216282/
 ---
 
 ## Q216282: Encarta Reference Suite 99: Network Installation Instructions

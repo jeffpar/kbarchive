@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162142: XCLN: Forms: Logon Failed Due to the Following Run Time Error"
-permalink: kb/162/Q162142/
+permalink: /kb/162/Q162142/
 ---
 
 ## Q162142: XCLN: Forms: Logon Failed Due to the Following Run Time Error

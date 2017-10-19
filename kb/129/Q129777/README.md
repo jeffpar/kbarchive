@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129777: System Instabilities Playing .WAV Files"
-permalink: kb/129/Q129777/
+permalink: /kb/129/Q129777/
 ---
 
 ## Q129777: System Instabilities Playing .WAV Files

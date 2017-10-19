@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188629: XADM: Using PFADMIN to Remove Public Folder Permissions"
-permalink: kb/188/Q188629/
+permalink: /kb/188/Q188629/
 ---
 
 ## Q188629: XADM: Using PFADMIN to Remove Public Folder Permissions

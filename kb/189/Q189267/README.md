@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189267: Multimedia: Program Hangs or Error Message When Starting"
-permalink: kb/189/Q189267/
+permalink: /kb/189/Q189267/
 ---
 
 ## Q189267: Multimedia: Program Hangs or Error Message When Starting

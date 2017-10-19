@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113417: INFO: C4097: Typedef-Name X Used as Synonym for Class-Name Z"
-permalink: kb/113/Q113417/
+permalink: /kb/113/Q113417/
 ---
 
 ## Q113417: INFO: C4097: Typedef-Name X Used as Synonym for Class-Name Z

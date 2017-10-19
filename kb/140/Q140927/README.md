@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140927: L2GETNET Causes Access Violation Error on Windows 95 Clients"
-permalink: kb/140/Q140927/
+permalink: /kb/140/Q140927/
 ---
 
 ## Q140927: L2GETNET Causes Access Violation Error on Windows 95 Clients

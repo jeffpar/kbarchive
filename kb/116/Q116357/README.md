@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116357: Windows 95 Err Msg: Access Pack Error. Could Not Initialize..."
-permalink: kb/116/Q116357/
+permalink: /kb/116/Q116357/
 ---
 
 ## Q116357: Windows 95 Err Msg: Access Pack Error. Could Not Initialize...

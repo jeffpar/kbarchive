@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198600: INFO: Differences Between DCOM95 and DCOM98"
-permalink: kb/198/Q198600/
+permalink: /kb/198/Q198600/
 ---
 
 ## Q198600: INFO: Differences Between DCOM95 and DCOM98

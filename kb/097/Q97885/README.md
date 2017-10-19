@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97885: DoubleSpace, Drive Letters, and Installable Devices"
-permalink: kb/097/Q97885/
+permalink: /kb/097/Q97885/
 ---
 
 ## Q97885: DoubleSpace, Drive Letters, and Installable Devices

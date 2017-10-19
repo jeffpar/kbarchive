@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83988: Windows: Numeric Keypad ENTER Key Not Functioning as Expected"
-permalink: kb/083/Q83988/
+permalink: /kb/083/Q83988/
 ---
 
 ## Q83988: Windows: Numeric Keypad ENTER Key Not Functioning as Expected

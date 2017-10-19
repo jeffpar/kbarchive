@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262017: Memory Leak in TN3270 Service When Printing Through TN Emulator"
-permalink: kb/262/Q262017/
+permalink: /kb/262/Q262017/
 ---
 
 ## Q262017: Memory Leak in TN3270 Service When Printing Through TN Emulator

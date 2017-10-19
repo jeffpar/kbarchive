@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253525: XCLN: Outlook for Macintosh Loses Connectivity"
-permalink: kb/253/Q253525/
+permalink: /kb/253/Q253525/
 ---
 
 ## Q253525: XCLN: Outlook for Macintosh Loses Connectivity

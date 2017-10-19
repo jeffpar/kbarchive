@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268894: SMS Service Manager Returns Error Message"
-permalink: kb/268/Q268894/
+permalink: /kb/268/Q268894/
 ---
 
 ## Q268894: SMS Service Manager Returns Error Message

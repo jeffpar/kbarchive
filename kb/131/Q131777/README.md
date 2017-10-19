@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131777: SMSRUN16 Fails To Detect SECONDNET.DRV in Windows for Workgroups"
-permalink: kb/131/Q131777/
+permalink: /kb/131/Q131777/
 ---
 
 ## Q131777: SMSRUN16 Fails To Detect SECONDNET.DRV in Windows for Workgroups

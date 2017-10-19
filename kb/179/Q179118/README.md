@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179118: SMS: Scheduler &amp; Despooler Fail When Permissions Are Wrong"
-permalink: kb/179/Q179118/
+permalink: /kb/179/Q179118/
 ---
 
 ## Q179118: SMS: Scheduler &amp; Despooler Fail When Permissions Are Wrong

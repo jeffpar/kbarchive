@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267455: PRB: Problems Encountered Using Oracle Aggregate Functions"
-permalink: kb/267/Q267455/
+permalink: /kb/267/Q267455/
 ---
 
 ## Q267455: PRB: Problems Encountered Using Oracle Aggregate Functions

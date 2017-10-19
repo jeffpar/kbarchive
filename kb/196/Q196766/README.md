@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196766: WD97: Formatting/Drawing Layer Change Unmarked in Compare Docs"
-permalink: kb/196/Q196766/
+permalink: /kb/196/Q196766/
 ---
 
 ## Q196766: WD97: Formatting/Drawing Layer Change Unmarked in Compare Docs

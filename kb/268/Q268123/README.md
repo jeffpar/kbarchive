@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268123: Windows 2000 Server Training Kit Comments and Corrections"
-permalink: kb/268/Q268123/
+permalink: /kb/268/Q268123/
 ---
 
 ## Q268123: Windows 2000 Server Training Kit Comments and Corrections

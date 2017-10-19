@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115070: Writer 1: Prints Black/White on DeskWriter or Other Printers"
-permalink: kb/115/Q115070/
+permalink: /kb/115/Q115070/
 ---
 
 ## Q115070: Writer 1: Prints Black/White on DeskWriter or Other Printers

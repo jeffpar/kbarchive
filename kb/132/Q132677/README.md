@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132677: How to Place Insertion Point at Far Left of Field on Entry"
-permalink: kb/132/Q132677/
+permalink: /kb/132/Q132677/
 ---
 
 ## Q132677: How to Place Insertion Point at Far Left of Field on Entry

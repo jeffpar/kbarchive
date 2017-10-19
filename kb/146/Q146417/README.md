@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146417: Disk Access Light Blinks When CD Player Plays Audio CD"
-permalink: kb/146/Q146417/
+permalink: /kb/146/Q146417/
 ---
 
 ## Q146417: Disk Access Light Blinks When CD Player Plays Audio CD

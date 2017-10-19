@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101496: Err Msg: VNETWARE.386 Was Not Loaded After Installing Timbuktu"
-permalink: kb/101/Q101496/
+permalink: /kb/101/Q101496/
 ---
 
 ## Q101496: Err Msg: VNETWARE.386 Was Not Loaded After Installing Timbuktu

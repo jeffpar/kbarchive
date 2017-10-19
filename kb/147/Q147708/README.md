@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147708: IIS Scripts Request To Save the File Instead of Executing"
-permalink: kb/147/Q147708/
+permalink: /kb/147/Q147708/
 ---
 
 ## Q147708: IIS Scripts Request To Save the File Instead of Executing

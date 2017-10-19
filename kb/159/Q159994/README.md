@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159994: SFM Does Not Unlock Record After PC Releases Lock"
-permalink: kb/159/Q159994/
+permalink: /kb/159/Q159994/
 ---
 
 ## Q159994: SFM Does Not Unlock Record After PC Releases Lock

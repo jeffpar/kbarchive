@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159775: PRB: General Protection Fault Occurs On VSS Launch"
-permalink: kb/159/Q159775/
+permalink: /kb/159/Q159775/
 ---
 
 ## Q159775: PRB: General Protection Fault Occurs On VSS Launch

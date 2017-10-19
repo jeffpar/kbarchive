@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197293: XADM: Changing Calendar View Takes an Unusually Long Time"
-permalink: kb/197/Q197293/
+permalink: /kb/197/Q197293/
 ---
 
 ## Q197293: XADM: Changing Calendar View Takes an Unusually Long Time

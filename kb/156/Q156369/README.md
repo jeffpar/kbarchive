@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156369: XCON: MTA Doesn't Accept IA5 in General Text Body Part"
-permalink: kb/156/Q156369/
+permalink: /kb/156/Q156369/
 ---
 
 ## Q156369: XCON: MTA Doesn't Accept IA5 in General Text Body Part

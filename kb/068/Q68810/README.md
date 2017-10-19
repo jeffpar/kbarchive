@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68810: Procom SCSI Problem Running MS-DOS Applications"
-permalink: kb/068/Q68810/
+permalink: /kb/068/Q68810/
 ---
 
 ## Q68810: Procom SCSI Problem Running MS-DOS Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143289: Mac Dinosaurs: How to Turn Sound and Narration Off and On"
-permalink: kb/143/Q143289/
+permalink: /kb/143/Q143289/
 ---
 
 ## Q143289: Mac Dinosaurs: How to Turn Sound and Narration Off and On

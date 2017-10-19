@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138818: BUG: VB 4.0 32-bit Quits When Deleting a Menu at Design Time"
-permalink: kb/138/Q138818/
+permalink: /kb/138/Q138818/
 ---
 
 ## Q138818: BUG: VB 4.0 32-bit Quits When Deleting a Menu at Design Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92504: Required BIOS Revisions for STB Video Adapters"
-permalink: kb/092/Q92504/
+permalink: /kb/092/Q92504/
 ---
 
 ## Q92504: Required BIOS Revisions for STB Video Adapters

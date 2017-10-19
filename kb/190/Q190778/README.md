@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190778: BUG: PDW Incorrectly Includes Autprx32.dll for DCOM Server"
-permalink: kb/190/Q190778/
+permalink: /kb/190/Q190778/
 ---
 
 ## Q190778: BUG: PDW Incorrectly Includes Autprx32.dll for DCOM Server

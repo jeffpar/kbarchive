@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247909: XCLN: From Box Pre-populated Replying to Mail on Shared Mailbox"
-permalink: kb/247/Q247909/
+permalink: /kb/247/Q247909/
 ---
 
 ## Q247909: XCLN: From Box Pre-populated Replying to Mail on Shared Mailbox

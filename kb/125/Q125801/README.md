@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125801: Disabling Execute Permission Causes Irrelevant Error Messages"
-permalink: kb/125/Q125801/
+permalink: /kb/125/Q125801/
 ---
 
 ## Q125801: Disabling Execute Permission Causes Irrelevant Error Messages

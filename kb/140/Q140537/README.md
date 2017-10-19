@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140537: HOWTO: Change the Data Directory Location for Integration Apps"
-permalink: kb/140/Q140537/
+permalink: /kb/140/Q140537/
 ---
 
 ## Q140537: HOWTO: Change the Data Directory Location for Integration Apps

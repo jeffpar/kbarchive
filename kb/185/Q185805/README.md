@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185805: SMS: Disabling the Mandatory Countdown Timer in PCM"
-permalink: kb/185/Q185805/
+permalink: /kb/185/Q185805/
 ---
 
 ## Q185805: SMS: Disabling the Mandatory Countdown Timer in PCM

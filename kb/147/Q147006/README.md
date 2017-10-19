@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147006: CONN: MS Mail Connection Gateway Needs Purge on Novell"
-permalink: kb/147/Q147006/
+permalink: /kb/147/Q147006/
 ---
 
 ## Q147006: CONN: MS Mail Connection Gateway Needs Purge on Novell

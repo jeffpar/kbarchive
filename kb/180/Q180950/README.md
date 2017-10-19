@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180950: 3270 Single Sign-on Keywords MS&#36;SAMEU &amp; MS&#36;SAMEP Not Documented"
-permalink: kb/180/Q180950/
+permalink: /kb/180/Q180950/
 ---
 
 ## Q180950: 3270 Single Sign-on Keywords MS&#36;SAMEU &amp; MS&#36;SAMEP Not Documented

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90333: Screen Momentarily Garbled at Windows for Workgroups Startup"
-permalink: kb/090/Q90333/
+permalink: /kb/090/Q90333/
 ---
 
 ## Q90333: Screen Momentarily Garbled at Windows for Workgroups Startup

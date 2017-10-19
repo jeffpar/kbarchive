@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186771: Err Msg: Windows Could Not Combine VxDs into a Monolithic..."
-permalink: kb/186/Q186771/
+permalink: /kb/186/Q186771/
 ---
 
 ## Q186771: Err Msg: Windows Could Not Combine VxDs into a Monolithic...

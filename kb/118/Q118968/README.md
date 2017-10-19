@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118968: SMTP: RFC822 Header Fields Used by the Gateway"
-permalink: kb/118/Q118968/
+permalink: /kb/118/Q118968/
 ---
 
 ## Q118968: SMTP: RFC822 Header Fields Used by the Gateway

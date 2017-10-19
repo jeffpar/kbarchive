@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188238: SNA MngAgent Trap in Function CManage::GetNotify"
-permalink: kb/188/Q188238/
+permalink: /kb/188/Q188238/
 ---
 
 ## Q188238: SNA MngAgent Trap in Function CManage::GetNotify

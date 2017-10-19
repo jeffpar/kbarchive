@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174629: Legacy PagedMemLimit Found in the Windows NT 4.0 Registry"
-permalink: kb/174/Q174629/
+permalink: /kb/174/Q174629/
 ---
 
 ## Q174629: Legacy PagedMemLimit Found in the Windows NT 4.0 Registry

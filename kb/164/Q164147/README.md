@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164147: Internet Information Server Will Not Re-install"
-permalink: kb/164/Q164147/
+permalink: /kb/164/Q164147/
 ---
 
 ## Q164147: Internet Information Server Will Not Re-install

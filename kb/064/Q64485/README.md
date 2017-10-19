@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64485: IBM EE 1.2 Lan Server Expanded Character Set"
-permalink: kb/064/Q64485/
+permalink: /kb/064/Q64485/
 ---
 
 ## Q64485: IBM EE 1.2 Lan Server Expanded Character Set

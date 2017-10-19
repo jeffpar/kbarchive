@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127914: MSB Human: ErrMsg: This Program Requires 256 Colors Video Mode"
-permalink: kb/127/Q127914/
+permalink: /kb/127/Q127914/
 ---
 
 ## Q127914: MSB Human: ErrMsg: This Program Requires 256 Colors Video Mode

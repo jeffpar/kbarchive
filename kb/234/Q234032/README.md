@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234032: XCLN: Suggestions for Configuring OWA for 640 X 480 Resolutions"
-permalink: kb/234/Q234032/
+permalink: /kb/234/Q234032/
 ---
 
 ## Q234032: XCLN: Suggestions for Configuring OWA for 640 X 480 Resolutions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318987: How To Clear History In Internet Explorer 5.x For The Macintosh"
-permalink: kb/318/Q318987/
+permalink: /kb/318/Q318987/
 ---
 
 ## Q318987: How To Clear History In Internet Explorer 5.x For The Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104948: Comprehensive List of MS-DOS 6.2 Documentation Errors"
-permalink: kb/104/Q104948/
+permalink: /kb/104/Q104948/
 ---
 
 ## Q104948: Comprehensive List of MS-DOS 6.2 Documentation Errors

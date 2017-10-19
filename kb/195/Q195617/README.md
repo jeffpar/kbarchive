@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195617: WD97: How to Transpose Rows and Columns in Word Table"
-permalink: kb/195/Q195617/
+permalink: /kb/195/Q195617/
 ---
 
 ## Q195617: WD97: How to Transpose Rows and Columns in Word Table

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150552: HOWTO: How To Avoid the ODBC Login Dialog when Using MFC"
-permalink: kb/150/Q150552/
+permalink: /kb/150/Q150552/
 ---
 
 ## Q150552: HOWTO: How To Avoid the ODBC Login Dialog when Using MFC

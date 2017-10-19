@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314762: MSN Broadband Customer Unable to Complete CPE Setup after Using"
-permalink: kb/314/Q314762/
+permalink: /kb/314/Q314762/
 ---
 
 ## Q314762: MSN Broadband Customer Unable to Complete CPE Setup after Using

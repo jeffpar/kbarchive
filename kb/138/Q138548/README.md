@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138548: FAX: Configuring GammaLink GammaFax with i3CAS Drivers"
-permalink: kb/138/Q138548/
+permalink: /kb/138/Q138548/
 ---
 
 ## Q138548: FAX: Configuring GammaLink GammaFax with i3CAS Drivers

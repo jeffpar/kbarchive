@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126034: RUNNING MS WORKS 3 FOR WIN: Corrections and Comments"
-permalink: kb/126/Q126034/
+permalink: /kb/126/Q126034/
 ---
 
 ## Q126034: RUNNING MS WORKS 3 FOR WIN: Corrections and Comments

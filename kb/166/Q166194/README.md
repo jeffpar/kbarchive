@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166194: WD97: How To Hide The Full Screen Toolbar Using VB Code"
-permalink: kb/166/Q166194/
+permalink: /kb/166/Q166194/
 ---
 
 ## Q166194: WD97: How To Hide The Full Screen Toolbar Using VB Code

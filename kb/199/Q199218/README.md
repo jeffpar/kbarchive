@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199218: Error Invoking the Security Editor"
-permalink: kb/199/Q199218/
+permalink: /kb/199/Q199218/
 ---
 
 ## Q199218: Error Invoking the Security Editor

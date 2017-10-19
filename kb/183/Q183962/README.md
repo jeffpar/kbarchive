@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183962: WD97: Box Border Produces Unexpected Results"
-permalink: kb/183/Q183962/
+permalink: /kb/183/Q183962/
 ---
 
 ## Q183962: WD97: Box Border Produces Unexpected Results

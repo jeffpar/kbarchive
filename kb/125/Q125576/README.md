@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125576: PRB: Scrolling Message &quot;Record not available ... Please Wait&quot;"
-permalink: kb/125/Q125576/
+permalink: /kb/125/Q125576/
 ---
 
 ## Q125576: PRB: Scrolling Message &quot;Record not available ... Please Wait&quot;

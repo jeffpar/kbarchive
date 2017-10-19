@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40192: Error A2105 with PUSHA and POPA Instructions"
-permalink: kb/040/Q40192/
+permalink: /kb/040/Q40192/
 ---
 
 ## Q40192: Error A2105 with PUSHA and POPA Instructions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276047: Application Exception in DMODInitReceiveAllocate"
-permalink: kb/276/Q276047/
+permalink: /kb/276/Q276047/
 ---
 
 ## Q276047: Application Exception in DMODInitReceiveAllocate

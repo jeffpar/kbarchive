@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261264: Application Program Manager May Generate Exception Error Msgs"
-permalink: kb/261/Q261264/
+permalink: /kb/261/Q261264/
 ---
 
 ## Q261264: Application Program Manager May Generate Exception Error Msgs

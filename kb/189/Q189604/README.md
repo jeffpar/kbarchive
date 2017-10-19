@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189604: PRB: Error in Moved Event of Form Appears to Hang VFP"
-permalink: kb/189/Q189604/
+permalink: /kb/189/Q189604/
 ---
 
 ## Q189604: PRB: Error in Moved Event of Form Appears to Hang VFP

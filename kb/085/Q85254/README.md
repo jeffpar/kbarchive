@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85254: Only a Temporary Swap File Can Be Set Up on Banyan VINES"
-permalink: kb/085/Q85254/
+permalink: /kb/085/Q85254/
 ---
 
 ## Q85254: Only a Temporary Swap File Can Be Set Up on Banyan VINES

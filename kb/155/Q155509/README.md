@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155509: XADM: Restore Exchange When Site or Organization Name Is Unknown"
-permalink: kb/155/Q155509/
+permalink: /kb/155/Q155509/
 ---
 
 ## Q155509: XADM: Restore Exchange When Site or Organization Name Is Unknown

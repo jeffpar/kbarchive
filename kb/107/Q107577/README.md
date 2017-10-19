@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107577: Using Novell NetWare's RPRINTER with WFWG 3.11"
-permalink: kb/107/Q107577/
+permalink: /kb/107/Q107577/
 ---
 
 ## Q107577: Using Novell NetWare's RPRINTER with WFWG 3.11

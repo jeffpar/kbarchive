@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138127: How to Uninstall Windows 95"
-permalink: kb/138/Q138127/
+permalink: /kb/138/Q138127/
 ---
 
 ## Q138127: How to Uninstall Windows 95

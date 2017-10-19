@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165066: FIX: Subquery Causes SUM to Return Incorrect Results"
-permalink: kb/165/Q165066/
+permalink: /kb/165/Q165066/
 ---
 
 ## Q165066: FIX: Subquery Causes SUM to Return Incorrect Results

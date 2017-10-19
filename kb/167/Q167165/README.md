@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167165: FIX: Too Many Controls on a Form May Crash Visual Basic IDE"
-permalink: kb/167/Q167165/
+permalink: /kb/167/Q167165/
 ---
 
 ## Q167165: FIX: Too Many Controls on a Form May Crash Visual Basic IDE

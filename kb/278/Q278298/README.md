@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278298: Clients Are Not Detected When Network Discovery Is Used"
-permalink: kb/278/Q278298/
+permalink: /kb/278/Q278298/
 ---
 
 ## Q278298: Clients Are Not Detected When Network Discovery Is Used

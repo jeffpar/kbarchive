@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169678: XADM: IMS and IS Use Quoted-Printable Encoding For MIME/JIS"
-permalink: kb/169/Q169678/
+permalink: /kb/169/Q169678/
 ---
 
 ## Q169678: XADM: IMS and IS Use Quoted-Printable Encoding For MIME/JIS

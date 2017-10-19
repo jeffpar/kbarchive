@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141716: PRB: Oracle Driver Does Not Support Dynasets"
-permalink: kb/141/Q141716/
+permalink: /kb/141/Q141716/
 ---
 
 ## Q141716: PRB: Oracle Driver Does Not Support Dynasets

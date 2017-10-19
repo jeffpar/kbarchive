@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259433: BUG: Wrong Event Is Signaled When Using RAS Custom Script API"
-permalink: kb/259/Q259433/
+permalink: /kb/259/Q259433/
 ---
 
 ## Q259433: BUG: Wrong Event Is Signaled When Using RAS Custom Script API

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135161: Cannot Run Program Using UNC Path in Run Dialog Box"
-permalink: kb/135/Q135161/
+permalink: /kb/135/Q135161/
 ---
 
 ## Q135161: Cannot Run Program Using UNC Path in Run Dialog Box

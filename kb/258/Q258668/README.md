@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258668: FULL STOP Key on German Keyboard Layout Displays Comma Instead"
-permalink: kb/258/Q258668/
+permalink: /kb/258/Q258668/
 ---
 
 ## Q258668: FULL STOP Key on German Keyboard Layout Displays Comma Instead

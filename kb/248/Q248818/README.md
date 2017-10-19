@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248818: Fighter Ace II: Computer Hangs After You Click &quot;Fly Now&quot;"
-permalink: kb/248/Q248818/
+permalink: /kb/248/Q248818/
 ---
 
 ## Q248818: Fighter Ace II: Computer Hangs After You Click &quot;Fly Now&quot;

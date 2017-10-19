@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252896: Error Message: (DB5_getRootRecord) Error Locating Local DSA Name"
-permalink: kb/252/Q252896/
+permalink: /kb/252/Q252896/
 ---
 
 ## Q252896: Error Message: (DB5_getRootRecord) Error Locating Local DSA Name

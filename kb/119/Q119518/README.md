@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119518: INFO: Problems Loading a Debuggee That Uses a DLL"
-permalink: kb/119/Q119518/
+permalink: /kb/119/Q119518/
 ---
 
 ## Q119518: INFO: Problems Loading a Debuggee That Uses a DLL

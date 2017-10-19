@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304001: CSRSS May Stop Responding When the Text Mode Console Is Freed"
-permalink: kb/304/Q304001/
+permalink: /kb/304/Q304001/
 ---
 
 ## Q304001: CSRSS May Stop Responding When the Text Mode Console Is Freed

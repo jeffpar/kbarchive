@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178764: Automatically Adding Recipients to the Personal Address Book"
-permalink: kb/178/Q178764/
+permalink: /kb/178/Q178764/
 ---
 
 ## Q178764: Automatically Adding Recipients to the Personal Address Book

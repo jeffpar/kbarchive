@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154547: XADM: Service Packs Fail to Install All Files with -d Option"
-permalink: kb/154/Q154547/
+permalink: /kb/154/Q154547/
 ---
 
 ## Q154547: XADM: Service Packs Fail to Install All Files with -d Option

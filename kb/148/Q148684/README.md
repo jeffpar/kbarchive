@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148684: What to Do When You Can't Open the FoxPro Macintosh Help File"
-permalink: kb/148/Q148684/
+permalink: /kb/148/Q148684/
 ---
 
 ## Q148684: What to Do When You Can't Open the FoxPro Macintosh Help File

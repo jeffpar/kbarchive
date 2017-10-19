@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195027: STOP 0xC000021A in Winlogon Caused by PCAnywhere"
-permalink: kb/195/Q195027/
+permalink: /kb/195/Q195027/
 ---
 
 ## Q195027: STOP 0xC000021A in Winlogon Caused by PCAnywhere

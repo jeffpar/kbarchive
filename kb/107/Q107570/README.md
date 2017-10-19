@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107570: SNA Server and 3287 Host Print Emulation"
-permalink: kb/107/Q107570/
+permalink: /kb/107/Q107570/
 ---
 
 ## Q107570: SNA Server and 3287 Host Print Emulation

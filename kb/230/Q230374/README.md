@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230374: 'Subscript out of range' Error When Saving a Component Library"
-permalink: kb/230/Q230374/
+permalink: /kb/230/Q230374/
 ---
 
 ## Q230374: 'Subscript out of range' Error When Saving a Component Library

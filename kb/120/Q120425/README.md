@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120425: Err Msg: &quot;Unable to Find Windows&quot; Installing C/C++ 7.0a SDK"
-permalink: kb/120/Q120425/
+permalink: /kb/120/Q120425/
 ---
 
 ## Q120425: Err Msg: &quot;Unable to Find Windows&quot; Installing C/C++ 7.0a SDK

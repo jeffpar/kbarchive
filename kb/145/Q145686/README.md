@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145686: PRB: CDaoRecordView Bookmark Members Invalid After Requery()"
-permalink: kb/145/Q145686/
+permalink: /kb/145/Q145686/
 ---
 
 ## Q145686: PRB: CDaoRecordView Bookmark Members Invalid After Requery()

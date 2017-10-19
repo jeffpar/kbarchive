@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63770: Bitstream Font Versions Compatible with Windows 3.0"
-permalink: kb/063/Q63770/
+permalink: /kb/063/Q63770/
 ---
 
 ## Q63770: Bitstream Font Versions Compatible with Windows 3.0

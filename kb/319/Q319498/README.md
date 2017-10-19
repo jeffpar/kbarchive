@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319498: Err Msg: Unable to Start or Register Saminfo1 Control Pack"
-permalink: kb/319/Q319498/
+permalink: /kb/319/Q319498/
 ---
 
 ## Q319498: Err Msg: Unable to Start or Register Saminfo1 Control Pack

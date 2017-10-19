@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158910: Msbatch.inf Parameters: Multimedia Components Not Installed"
-permalink: kb/158/Q158910/
+permalink: /kb/158/Q158910/
 ---
 
 ## Q158910: Msbatch.inf Parameters: Multimedia Components Not Installed

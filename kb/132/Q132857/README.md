@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132857: XCLN: Running 16-Bit Exchange Client on NT Is Not Supported"
-permalink: kb/132/Q132857/
+permalink: /kb/132/Q132857/
 ---
 
 ## Q132857: XCLN: Running 16-Bit Exchange Client on NT Is Not Supported

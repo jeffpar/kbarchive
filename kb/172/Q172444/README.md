@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172444: FPNW Generates Many Event ID 2024s"
-permalink: kb/172/Q172444/
+permalink: /kb/172/Q172444/
 ---
 
 ## Q172444: FPNW Generates Many Event ID 2024s

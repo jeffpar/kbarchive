@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274654: CFS2: Aircraft Textures Appear Black in Spot Plane View"
-permalink: kb/274/Q274654/
+permalink: /kb/274/Q274654/
 ---
 
 ## Q274654: CFS2: Aircraft Textures Appear Black in Spot Plane View

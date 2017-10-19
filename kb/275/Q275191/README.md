@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275191: SMS: Corrupted Raw File Is Created After Hardware Inventory"
-permalink: kb/275/Q275191/
+permalink: /kb/275/Q275191/
 ---
 
 ## Q275191: SMS: Corrupted Raw File Is Created After Hardware Inventory

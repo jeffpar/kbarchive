@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64813: Excel Displays Printers on None When They Are on a Port"
-permalink: kb/064/Q64813/
+permalink: /kb/064/Q64813/
 ---
 
 ## Q64813: Excel Displays Printers on None When They Are on a Port

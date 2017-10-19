@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132477: 3Com 3C619 TokenLink III Driver Does Not Install on ISA System"
-permalink: kb/132/Q132477/
+permalink: /kb/132/Q132477/
 ---
 
 ## Q132477: 3Com 3C619 TokenLink III Driver Does Not Install on ISA System

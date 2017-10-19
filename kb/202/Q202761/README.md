@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202761: Bookshelf 99: List of Fonts Installed by Bookshelf 99"
-permalink: kb/202/Q202761/
+permalink: /kb/202/Q202761/
 ---
 
 ## Q202761: Bookshelf 99: List of Fonts Installed by Bookshelf 99

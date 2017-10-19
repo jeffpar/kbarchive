@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245221: Setting IdleWinStationPoolCount to zero prevents client session"
-permalink: kb/245/Q245221/
+permalink: /kb/245/Q245221/
 ---
 
 ## Q245221: Setting IdleWinStationPoolCount to zero prevents client session

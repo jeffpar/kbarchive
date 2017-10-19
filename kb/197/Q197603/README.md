@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197603: Learn Visual Basic Scripting Now Corrections and Comments"
-permalink: kb/197/Q197603/
+permalink: /kb/197/Q197603/
 ---
 
 ## Q197603: Learn Visual Basic Scripting Now Corrections and Comments

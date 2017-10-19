@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74465: XMS Memory with MS-DOS Shell Task Swapper"
-permalink: kb/074/Q74465/
+permalink: /kb/074/Q74465/
 ---
 
 ## Q74465: XMS Memory with MS-DOS Shell Task Swapper

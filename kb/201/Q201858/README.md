@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201858: SMS: IP Address Cannot Be Used as SQL Server Name During Setup"
-permalink: kb/201/Q201858/
+permalink: /kb/201/Q201858/
 ---
 
 ## Q201858: SMS: IP Address Cannot Be Used as SQL Server Name During Setup

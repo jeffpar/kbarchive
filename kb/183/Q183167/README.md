@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183167: PRB: TranslateAccelerator() Not Called for ActiveX Controls"
-permalink: kb/183/Q183167/
+permalink: /kb/183/Q183167/
 ---
 
 ## Q183167: PRB: TranslateAccelerator() Not Called for ActiveX Controls

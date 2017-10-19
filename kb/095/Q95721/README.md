@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95721: Fox Mouse Support Numbers"
-permalink: kb/095/Q95721/
+permalink: /kb/095/Q95721/
 ---
 
 ## Q95721: Fox Mouse Support Numbers

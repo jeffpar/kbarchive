@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214452: STOP 0x1E in Win32k.sys When Running Solomon v2.06 (Accounting)"
-permalink: kb/214/Q214452/
+permalink: /kb/214/Q214452/
 ---
 
 ## Q214452: STOP 0x1E in Win32k.sys When Running Solomon v2.06 (Accounting)

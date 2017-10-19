@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221634: FIX: C0000005 Error With CLOSE ALL in Project Hook BeforeBuild"
-permalink: kb/221/Q221634/
+permalink: /kb/221/Q221634/
 ---
 
 ## Q221634: FIX: C0000005 Error With CLOSE ALL in Project Hook BeforeBuild

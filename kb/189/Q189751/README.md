@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189751: INFO: Limitations of the FileSystemObject"
-permalink: kb/189/Q189751/
+permalink: /kb/189/Q189751/
 ---
 
 ## Q189751: INFO: Limitations of the FileSystemObject

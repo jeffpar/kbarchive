@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266530: Encarta: How to Use the Repair Feature in Encarta"
-permalink: kb/266/Q266530/
+permalink: /kb/266/Q266530/
 ---
 
 ## Q266530: Encarta: How to Use the Repair Feature in Encarta

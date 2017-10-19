@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308105: MSN Broadband DSL: Windows 98 Gold Work Around"
-permalink: kb/308/Q308105/
+permalink: /kb/308/Q308105/
 ---
 
 ## Q308105: MSN Broadband DSL: Windows 98 Gold Work Around

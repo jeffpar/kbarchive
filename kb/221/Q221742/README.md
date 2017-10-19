@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221742: FIX:C0000005 Fatal Error With Big Array Property"
-permalink: kb/221/Q221742/
+permalink: /kb/221/Q221742/
 ---
 
 ## Q221742: FIX:C0000005 Fatal Error With Big Array Property

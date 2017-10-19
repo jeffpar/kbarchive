@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173316: Capture Command Does Not Support /Copies Parameter"
-permalink: kb/173/Q173316/
+permalink: /kb/173/Q173316/
 ---
 
 ## Q173316: Capture Command Does Not Support /Copies Parameter

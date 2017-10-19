@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200591: PRB: 8570 Report Sections Do Not Match DataSource"
-permalink: kb/200/Q200591/
+permalink: /kb/200/Q200591/
 ---
 
 ## Q200591: PRB: 8570 Report Sections Do Not Match DataSource

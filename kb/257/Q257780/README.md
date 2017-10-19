@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257780: FIX:Unrecognized Database Format, Data Control or Data Form Wiz"
-permalink: kb/257/Q257780/
+permalink: /kb/257/Q257780/
 ---
 
 ## Q257780: FIX:Unrecognized Database Format, Data Control or Data Form Wiz

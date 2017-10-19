@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84400: LPTx.OS2 Port Selection Not Available in Printers Connect"
-permalink: kb/084/Q84400/
+permalink: /kb/084/Q84400/
 ---
 
 ## Q84400: LPTx.OS2 Port Selection Not Available in Printers Connect

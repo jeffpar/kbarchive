@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93588: PPT: EPS Graphic Displays as Mostly Empty Frame"
-permalink: kb/093/Q93588/
+permalink: /kb/093/Q93588/
 ---
 
 ## Q93588: PPT: EPS Graphic Displays as Mostly Empty Frame

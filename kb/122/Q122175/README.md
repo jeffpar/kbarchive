@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122175: SMS Network Applications Database Synchronization"
-permalink: kb/122/Q122175/
+permalink: /kb/122/Q122175/
 ---
 
 ## Q122175: SMS Network Applications Database Synchronization

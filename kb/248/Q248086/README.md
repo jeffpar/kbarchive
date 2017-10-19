@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248086: White Paper About Setting Up a New Cluster for Use with NTOP"
-permalink: kb/248/Q248086/
+permalink: /kb/248/Q248086/
 ---
 
 ## Q248086: White Paper About Setting Up a New Cluster for Use with NTOP

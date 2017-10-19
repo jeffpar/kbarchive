@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166842: CSNW &amp; GSNW Won't Display NetWare Servers via a SAP Seed Server"
-permalink: kb/166/Q166842/
+permalink: /kb/166/Q166842/
 ---
 
 ## Q166842: CSNW &amp; GSNW Won't Display NetWare Servers via a SAP Seed Server

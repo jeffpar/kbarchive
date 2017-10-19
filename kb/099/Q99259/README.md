@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99259: Workgroup Connections Version 1.0 Disk Directory Listing"
-permalink: kb/099/Q99259/
+permalink: /kb/099/Q99259/
 ---
 
 ## Q99259: Workgroup Connections Version 1.0 Disk Directory Listing

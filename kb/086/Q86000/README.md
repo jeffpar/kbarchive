@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86000: PC Win: Err Msg: Are You Sure You Want to Remove..."
-permalink: kb/086/Q86000/
+permalink: /kb/086/Q86000/
 ---
 
 ## Q86000: PC Win: Err Msg: Are You Sure You Want to Remove...

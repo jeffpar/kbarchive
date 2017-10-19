@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164989: XADM: Error -1003 When You Run EDBUTIL"
-permalink: kb/164/Q164989/
+permalink: /kb/164/Q164989/
 ---
 
 ## Q164989: XADM: Error -1003 When You Run EDBUTIL

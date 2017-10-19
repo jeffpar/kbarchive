@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222538: XFOR:API Gateway Logs Unknown Keyword Errors on Free Busy Search"
-permalink: kb/222/Q222538/
+permalink: /kb/222/Q222538/
 ---
 
 ## Q222538: XFOR:API Gateway Logs Unknown Keyword Errors on Free Busy Search

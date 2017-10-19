@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156726: XFOR: DXA does not Import X.121 Addresses Correctly"
-permalink: kb/156/Q156726/
+permalink: /kb/156/Q156726/
 ---
 
 ## Q156726: XFOR: DXA does not Import X.121 Addresses Correctly

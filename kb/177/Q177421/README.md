@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177421: FIX: Remote Debug in Windows NT Requires Psapi.dll"
-permalink: kb/177/Q177421/
+permalink: /kb/177/Q177421/
 ---
 
 ## Q177421: FIX: Remote Debug in Windows NT Requires Psapi.dll

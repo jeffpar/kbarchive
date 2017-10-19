@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264748: FP98: &quot;Server Failed to Load Application&quot; Error"
-permalink: kb/264/Q264748/
+permalink: /kb/264/Q264748/
 ---
 
 ## Q264748: FP98: &quot;Server Failed to Load Application&quot; Error

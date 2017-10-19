@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171255: and /Pwd: Parameters Fail In SNA Server 3.0"
-permalink: kb/171/Q171255/
+permalink: /kb/171/Q171255/
 ---
 
 ## Q171255: and /Pwd: Parameters Fail In SNA Server 3.0

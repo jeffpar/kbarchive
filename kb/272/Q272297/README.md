@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272297: Zone Error Message: You Do Not Have a &lt;Game&gt; Subscription..."
-permalink: kb/272/Q272297/
+permalink: /kb/272/Q272297/
 ---
 
 ## Q272297: Zone Error Message: You Do Not Have a &lt;Game&gt; Subscription...

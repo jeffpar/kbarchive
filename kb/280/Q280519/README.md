@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280519: Error &quot;The Specified Service Is Disabled&quot; When You Start WWW Ser"
-permalink: kb/280/Q280519/
+permalink: /kb/280/Q280519/
 ---
 
 ## Q280519: Error &quot;The Specified Service Is Disabled&quot; When You Start WWW Ser

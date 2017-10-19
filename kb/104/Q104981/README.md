@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104981: X400: Using the Mailer -MD Option to Improve Performance"
-permalink: kb/104/Q104981/
+permalink: /kb/104/Q104981/
 ---
 
 ## Q104981: X400: Using the Mailer -MD Option to Improve Performance

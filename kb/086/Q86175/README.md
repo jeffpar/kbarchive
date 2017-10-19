@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86175: Environment Lost in Enhanced Mode on Novell Network"
-permalink: kb/086/Q86175/
+permalink: /kb/086/Q86175/
 ---
 
 ## Q86175: Environment Lost in Enhanced Mode on Novell Network

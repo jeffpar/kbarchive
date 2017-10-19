@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161159: Internet Explorer Manual Setup Changes PWS Internet Address"
-permalink: kb/161/Q161159/
+permalink: /kb/161/Q161159/
 ---
 
 ## Q161159: Internet Explorer Manual Setup Changes PWS Internet Address

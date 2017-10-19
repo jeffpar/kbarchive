@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94159: HPPCL5E: Line Ends &amp; Joins Incorrect with Micrografx Designer"
-permalink: kb/094/Q94159/
+permalink: /kb/094/Q94159/
 ---
 
 ## Q94159: HPPCL5E: Line Ends &amp; Joins Incorrect with Micrografx Designer

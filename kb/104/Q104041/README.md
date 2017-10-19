@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104041: FIX: Functions Exported Incorrectly in MASM 6.1 WINDLL Sample"
-permalink: kb/104/Q104041/
+permalink: /kb/104/Q104041/
 ---
 
 ## Q104041: FIX: Functions Exported Incorrectly in MASM 6.1 WINDLL Sample

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111706: REPLACE Error Message: &quot;Path Not Found...&quot;"
-permalink: kb/111/Q111706/
+permalink: /kb/111/Q111706/
 ---
 
 ## Q111706: REPLACE Error Message: &quot;Path Not Found...&quot;

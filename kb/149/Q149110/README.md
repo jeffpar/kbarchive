@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149110: Cannot Start Windows 95 After Using the SYS Command"
-permalink: kb/149/Q149110/
+permalink: /kb/149/Q149110/
 ---
 
 ## Q149110: Cannot Start Windows 95 After Using the SYS Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166196: SMS Setup Requires SQL Server Named Pipes Network Support"
-permalink: kb/166/Q166196/
+permalink: /kb/166/Q166196/
 ---
 
 ## Q166196: SMS Setup Requires SQL Server Named Pipes Network Support

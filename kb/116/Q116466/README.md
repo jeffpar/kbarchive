@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116466: Gtwy: One Off Free Form Addressing Formats for PC Mail"
-permalink: kb/116/Q116466/
+permalink: /kb/116/Q116466/
 ---
 
 ## Q116466: Gtwy: One Off Free Form Addressing Formats for PC Mail

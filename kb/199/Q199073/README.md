@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199073: SBS 4.5 Setup Lists Incorrect Space Required for Other Drives"
-permalink: kb/199/Q199073/
+permalink: /kb/199/Q199073/
 ---
 
 ## Q199073: SBS 4.5 Setup Lists Incorrect Space Required for Other Drives

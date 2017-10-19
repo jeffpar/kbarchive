@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82414: CA Compete Dialog Text Is Not Correctly Truncated"
-permalink: kb/082/Q82414/
+permalink: /kb/082/Q82414/
 ---
 
 ## Q82414: CA Compete Dialog Text Is Not Correctly Truncated

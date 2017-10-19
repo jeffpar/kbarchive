@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81345: Mac Fax: Fax Gateway and Fax Modem ROM Incompatibilities"
-permalink: kb/081/Q81345/
+permalink: /kb/081/Q81345/
 ---
 
 ## Q81345: Mac Fax: Fax Gateway and Fax Modem ROM Incompatibilities

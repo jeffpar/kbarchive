@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260230: XADM: Error 4294966090 When Starting Information Store"
-permalink: kb/260/Q260230/
+permalink: /kb/260/Q260230/
 ---
 
 ## Q260230: XADM: Error 4294966090 When Starting Information Store

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129798: How to Display a Task Modal Dialog from a 32-Bit DLL"
-permalink: kb/129/Q129798/
+permalink: /kb/129/Q129798/
 ---
 
 ## Q129798: How to Display a Task Modal Dialog from a 32-Bit DLL

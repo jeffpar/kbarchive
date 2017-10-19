@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248656: Windows 98 Clients Cannot Print to HP LaserJet 1100 Printer"
-permalink: kb/248/Q248656/
+permalink: /kb/248/Q248656/
 ---
 
 ## Q248656: Windows 98 Clients Cannot Print to HP LaserJet 1100 Printer

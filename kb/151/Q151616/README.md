@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151616: Testnet.exe Only Available with BackOffice SMS"
-permalink: kb/151/Q151616/
+permalink: /kb/151/Q151616/
 ---
 
 ## Q151616: Testnet.exe Only Available with BackOffice SMS

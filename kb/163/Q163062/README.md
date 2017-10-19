@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163062: ODE97: Errors Executing File After Custom Setup"
-permalink: kb/163/Q163062/
+permalink: /kb/163/Q163062/
 ---
 
 ## Q163062: ODE97: Errors Executing File After Custom Setup

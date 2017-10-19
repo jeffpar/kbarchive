@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96593: Why DoubleSpace Leaves 2 Megabytes Free on the Host Drive"
-permalink: kb/096/Q96593/
+permalink: /kb/096/Q96593/
 ---
 
 ## Q96593: Why DoubleSpace Leaves 2 Megabytes Free on the Host Drive

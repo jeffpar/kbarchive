@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126960: How to Disable TabWorks as the Windows Shell"
-permalink: kb/126/Q126960/
+permalink: /kb/126/Q126960/
 ---
 
 ## Q126960: How to Disable TabWorks as the Windows Shell

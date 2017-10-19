@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254590: Unattended Setup of NTOP Does Not Install SMTP Service"
-permalink: kb/254/Q254590/
+permalink: /kb/254/Q254590/
 ---
 
 ## Q254590: Unattended Setup of NTOP Does Not Install SMTP Service

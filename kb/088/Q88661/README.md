@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88661: Using the IBM PS/1 with Windows"
-permalink: kb/088/Q88661/
+permalink: /kb/088/Q88661/
 ---
 
 ## Q88661: Using the IBM PS/1 with Windows

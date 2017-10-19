@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276068: SNA Server Traps When Sending &quot;Session Deactivated Event&quot;"
-permalink: kb/276/Q276068/
+permalink: /kb/276/Q276068/
 ---
 
 ## Q276068: SNA Server Traps When Sending &quot;Session Deactivated Event&quot;

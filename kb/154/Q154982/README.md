@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154982: ATDISK Reports Huge Disk Size on IDE Greater Than 2 GB"
-permalink: kb/154/Q154982/
+permalink: /kb/154/Q154982/
 ---
 
 ## Q154982: ATDISK Reports Huge Disk Size on IDE Greater Than 2 GB

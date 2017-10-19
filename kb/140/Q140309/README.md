@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140309: BUG: Recordset Update Error Differs Between 16-Bit and 32-Bit"
-permalink: kb/140/Q140309/
+permalink: /kb/140/Q140309/
 ---
 
 ## Q140309: BUG: Recordset Update Error Differs Between 16-Bit and 32-Bit

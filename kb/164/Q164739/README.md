@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164739: BUG: &quot;Invalid Coordinates&quot; Error Message Received when Sending @"
-permalink: kb/164/Q164739/
+permalink: /kb/164/Q164739/
 ---
 
 ## Q164739: BUG: &quot;Invalid Coordinates&quot; Error Message Received when Sending @

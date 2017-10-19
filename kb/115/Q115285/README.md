@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115285: New Auditing Feature for FTP Server"
-permalink: kb/115/Q115285/
+permalink: /kb/115/Q115285/
 ---
 
 ## Q115285: New Auditing Feature for FTP Server

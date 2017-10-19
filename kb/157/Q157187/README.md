@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157187: FIX: SQL Query Returns Different Result Set with Korean Window"
-permalink: kb/157/Q157187/
+permalink: /kb/157/Q157187/
 ---
 
 ## Q157187: FIX: SQL Query Returns Different Result Set with Korean Window

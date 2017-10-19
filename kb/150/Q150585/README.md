@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150585: Pregnancy and Child Care: Limits of the Back Feature"
-permalink: kb/150/Q150585/
+permalink: /kb/150/Q150585/
 ---
 
 ## Q150585: Pregnancy and Child Care: Limits of the Back Feature

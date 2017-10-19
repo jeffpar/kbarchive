@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243179: SMS: Sinvproc Log Error Message: Delete Zero Length File Failed"
-permalink: kb/243/Q243179/
+permalink: /kb/243/Q243179/
 ---
 
 ## Q243179: SMS: Sinvproc Log Error Message: Delete Zero Length File Failed

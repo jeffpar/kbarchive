@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130591: INFO: CPropertyPage::CancelToClose() Documented Incorrectly"
-permalink: kb/130/Q130591/
+permalink: /kb/130/Q130591/
 ---
 
 ## Q130591: INFO: CPropertyPage::CancelToClose() Documented Incorrectly

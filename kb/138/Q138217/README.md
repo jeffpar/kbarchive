@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138217: Encarta 96 Uninstall:  Mscreate.dir Files, Folders not Deleted"
-permalink: kb/138/Q138217/
+permalink: /kb/138/Q138217/
 ---
 
 ## Q138217: Encarta 96 Uninstall:  Mscreate.dir Files, Folders not Deleted

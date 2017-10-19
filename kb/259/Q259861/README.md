@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259861: SMS: Queries Do Not Show Results without Class Rights"
-permalink: kb/259/Q259861/
+permalink: /kb/259/Q259861/
 ---
 
 ## Q259861: SMS: Queries Do Not Show Results without Class Rights

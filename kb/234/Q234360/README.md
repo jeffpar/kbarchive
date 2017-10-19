@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234360: Software Inventory Is Transferred from a Secondary Site"
-permalink: kb/234/Q234360/
+permalink: /kb/234/Q234360/
 ---
 
 ## Q234360: Software Inventory Is Transferred from a Secondary Site

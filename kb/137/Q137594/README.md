@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137594: System Hangs Using EtherExpress PRO/100 in EISA/PCI Computer"
-permalink: kb/137/Q137594/
+permalink: /kb/137/Q137594/
 ---
 
 ## Q137594: System Hangs Using EtherExpress PRO/100 in EISA/PCI Computer

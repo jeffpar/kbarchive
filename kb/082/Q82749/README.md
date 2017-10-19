@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82749: Using LPT1.OS2, LPT1.DOS, or FILE: Ports When Printing"
-permalink: kb/082/Q82749/
+permalink: /kb/082/Q82749/
 ---
 
 ## Q82749: Using LPT1.OS2, LPT1.DOS, or FILE: Ports When Printing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315639: BUG: Problems When You Automatically Check Out Files"
-permalink: kb/315/Q315639/
+permalink: /kb/315/Q315639/
 ---
 
 ## Q315639: BUG: Problems When You Automatically Check Out Files

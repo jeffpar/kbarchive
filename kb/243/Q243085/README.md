@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243085: Performance Problems with Shortcuts After Using SYSPREP"
-permalink: kb/243/Q243085/
+permalink: /kb/243/Q243085/
 ---
 
 ## Q243085: Performance Problems with Shortcuts After Using SYSPREP

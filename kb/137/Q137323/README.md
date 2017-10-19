@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137323: Bookshelf: If No Notes Exist, ALT+N Closes Dialog Box"
-permalink: kb/137/Q137323/
+permalink: /kb/137/Q137323/
 ---
 
 ## Q137323: Bookshelf: If No Notes Exist, ALT+N Closes Dialog Box

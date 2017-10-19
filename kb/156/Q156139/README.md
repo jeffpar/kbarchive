@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156139: HOWTO: Use the SQL Server DateTime Parameter"
-permalink: kb/156/Q156139/
+permalink: /kb/156/Q156139/
 ---
 
 ## Q156139: HOWTO: Use the SQL Server DateTime Parameter

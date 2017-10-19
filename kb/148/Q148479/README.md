@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148479: Cannot Restore DoubleSpace-Compressed Backup with MS-DOS 6.22"
-permalink: kb/148/Q148479/
+permalink: /kb/148/Q148479/
 ---
 
 ## Q148479: Cannot Restore DoubleSpace-Compressed Backup with MS-DOS 6.22

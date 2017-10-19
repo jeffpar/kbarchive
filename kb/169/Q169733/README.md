@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169733: WD97: Equation 3.0 Incorrectly Converts Spaces From Version 2.x"
-permalink: kb/169/Q169733/
+permalink: /kb/169/Q169733/
 ---
 
 ## Q169733: WD97: Equation 3.0 Incorrectly Converts Spaces From Version 2.x

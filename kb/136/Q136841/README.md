@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136841: Streets 4.0: Can Not Find Numbered Streets"
-permalink: kb/136/Q136841/
+permalink: /kb/136/Q136841/
 ---
 
 ## Q136841: Streets 4.0: Can Not Find Numbered Streets

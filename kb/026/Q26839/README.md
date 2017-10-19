@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26839: PRB: &quot;AT&quot; Combine Types"
-permalink: kb/026/Q26839/
+permalink: /kb/026/Q26839/
 ---
 
 ## Q26839: PRB: &quot;AT&quot; Combine Types

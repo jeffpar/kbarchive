@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138237: Online Help Doesn't Index Remote Control w/ Quick Windows Viewer"
-permalink: kb/138/Q138237/
+permalink: /kb/138/Q138237/
 ---
 
 ## Q138237: Online Help Doesn't Index Remote Control w/ Quick Windows Viewer

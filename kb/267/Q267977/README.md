@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267977: SMS: Package That Contains a Long File Name May Not Decompress"
-permalink: kb/267/Q267977/
+permalink: /kb/267/Q267977/
 ---
 
 ## Q267977: SMS: Package That Contains a Long File Name May Not Decompress

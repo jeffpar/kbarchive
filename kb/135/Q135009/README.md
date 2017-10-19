@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135009: DCS EM320W Terminal Emulator Slows Down Programs and Printing"
-permalink: kb/135/Q135009/
+permalink: /kb/135/Q135009/
 ---
 
 ## Q135009: DCS EM320W Terminal Emulator Slows Down Programs and Printing

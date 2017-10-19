@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180070: FIX: RESTORE SCREEN Does Not Refresh Form in VFP 5.0"
-permalink: kb/180/Q180070/
+permalink: /kb/180/Q180070/
 ---
 
 ## Q180070: FIX: RESTORE SCREEN Does Not Refresh Form in VFP 5.0

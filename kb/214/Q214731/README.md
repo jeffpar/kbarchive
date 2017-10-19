@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214731: PRB: AppWizard Bug when Altering ActiveDoc Child Window Styles"
-permalink: kb/214/Q214731/
+permalink: /kb/214/Q214731/
 ---
 
 ## Q214731: PRB: AppWizard Bug when Altering ActiveDoc Child Window Styles

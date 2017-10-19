@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124018: Multimedia: Setup Hangs at: &quot;Searching for Installed Components"
-permalink: kb/124/Q124018/
+permalink: /kb/124/Q124018/
 ---
 
 ## Q124018: Multimedia: Setup Hangs at: &quot;Searching for Installed Components

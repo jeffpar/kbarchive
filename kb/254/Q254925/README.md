@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254925: PRB: Printer Object Fails to Track Default Printer"
-permalink: kb/254/Q254925/
+permalink: /kb/254/Q254925/
 ---
 
 ## Q254925: PRB: Printer Object Fails to Track Default Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168159: FIX: DBCombo Updates Incorrectly Using RDC Bound ListSource"
-permalink: kb/168/Q168159/
+permalink: /kb/168/Q168159/
 ---
 
 ## Q168159: FIX: DBCombo Updates Incorrectly Using RDC Bound ListSource

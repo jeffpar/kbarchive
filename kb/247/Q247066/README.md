@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247066: Windows NT DHCP Server May Not Add BAD_ADDRESS Entries"
-permalink: kb/247/Q247066/
+permalink: /kb/247/Q247066/
 ---
 
 ## Q247066: Windows NT DHCP Server May Not Add BAD_ADDRESS Entries

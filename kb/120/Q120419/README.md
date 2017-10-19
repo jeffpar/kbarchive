@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120419: IBM Token Ring II EISA Card Not Supported"
-permalink: kb/120/Q120419/
+permalink: /kb/120/Q120419/
 ---
 
 ## Q120419: IBM Token Ring II EISA Card Not Supported

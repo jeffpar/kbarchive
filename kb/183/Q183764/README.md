@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183764: XCLN: Mailto: URL Appears in E-mail Message"
-permalink: kb/183/Q183764/
+permalink: /kb/183/Q183764/
 ---
 
 ## Q183764: XCLN: Mailto: URL Appears in E-mail Message

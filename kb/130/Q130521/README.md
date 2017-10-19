@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130521: Novell Password Cached and Login Script Processed Only Once"
-permalink: kb/130/Q130521/
+permalink: /kb/130/Q130521/
 ---
 
 ## Q130521: Novell Password Cached and Login Script Processed Only Once

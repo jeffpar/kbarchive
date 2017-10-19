@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180045: Virtual Globe: Colored Text Is Not Printed on HP LaserJet 5L"
-permalink: kb/180/Q180045/
+permalink: /kb/180/Q180045/
 ---
 
 ## Q180045: Virtual Globe: Colored Text Is Not Printed on HP LaserJet 5L

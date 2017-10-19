@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149313: Goto Date Box Changes When a Number Is Entered"
-permalink: kb/149/Q149313/
+permalink: /kb/149/Q149313/
 ---
 
 ## Q149313: Goto Date Box Changes When a Number Is Entered

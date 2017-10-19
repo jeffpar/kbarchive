@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134633: MS Exchange Postoffice in Windows 95 Questions and Answers"
-permalink: kb/134/Q134633/
+permalink: /kb/134/Q134633/
 ---
 
 ## Q134633: MS Exchange Postoffice in Windows 95 Questions and Answers

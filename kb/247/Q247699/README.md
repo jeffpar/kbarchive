@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247699: Fighter Ace II: Splash Screen Is Grainy &amp; Colors Are Washed Out"
-permalink: kb/247/Q247699/
+permalink: /kb/247/Q247699/
 ---
 
 ## Q247699: Fighter Ace II: Splash Screen Is Grainy &amp; Colors Are Washed Out

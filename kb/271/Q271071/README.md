@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271071: Minimum NTFS Permissions Required for IIS 5.0 to Work"
-permalink: kb/271/Q271071/
+permalink: /kb/271/Q271071/
 ---
 
 ## Q271071: Minimum NTFS Permissions Required for IIS 5.0 to Work

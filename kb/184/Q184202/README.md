@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184202: XGEN: Microsoft Exchange Server 5.5 Documentation"
-permalink: kb/184/Q184202/
+permalink: /kb/184/Q184202/
 ---
 
 ## Q184202: XGEN: Microsoft Exchange Server 5.5 Documentation

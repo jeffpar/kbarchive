@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149515: DOC: GetProcAddress Does Not Support Ordinal Symbols"
-permalink: kb/149/Q149515/
+permalink: /kb/149/Q149515/
 ---
 
 ## Q149515: DOC: GetProcAddress Does Not Support Ordinal Symbols

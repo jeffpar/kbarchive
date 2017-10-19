@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107582: Mail Components Are Always Installed"
-permalink: kb/107/Q107582/
+permalink: /kb/107/Q107582/
 ---
 
 ## Q107582: Mail Components Are Always Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171808: FIX: MDI Child Form Does Not Become Active"
-permalink: kb/171/Q171808/
+permalink: /kb/171/Q171808/
 ---
 
 ## Q171808: FIX: MDI Child Form Does Not Become Active

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254306: Typing a Letter in a List Box May Not Jump to the Correct Entry"
-permalink: kb/254/Q254306/
+permalink: /kb/254/Q254306/
 ---
 
 ## Q254306: Typing a Letter in a List Box May Not Jump to the Correct Entry

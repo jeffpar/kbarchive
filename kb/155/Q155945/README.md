@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155945: WD97: Additional Word Templates Available in ValuPack Folder"
-permalink: kb/155/Q155945/
+permalink: /kb/155/Q155945/
 ---
 
 ## Q155945: WD97: Additional Word Templates Available in ValuPack Folder

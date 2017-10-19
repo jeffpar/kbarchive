@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183493: Batch File Calling CD Command May Not Run on HPFS"
-permalink: kb/183/Q183493/
+permalink: /kb/183/Q183493/
 ---
 
 ## Q183493: Batch File Calling CD Command May Not Run on HPFS

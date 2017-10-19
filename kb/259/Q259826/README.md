@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259826: Troubleshooting Profile Quota Manager"
-permalink: kb/259/Q259826/
+permalink: /kb/259/Q259826/
 ---
 
 ## Q259826: Troubleshooting Profile Quota Manager

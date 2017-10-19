@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146450: Scenes 1.0: Outer Space Disk 2 Contents"
-permalink: kb/146/Q146450/
+permalink: /kb/146/Q146450/
 ---
 
 ## Q146450: Scenes 1.0: Outer Space Disk 2 Contents

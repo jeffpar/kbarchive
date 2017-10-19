@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140962: XFOR: Access Violation When RTF Message Over 64K"
-permalink: kb/140/Q140962/
+permalink: /kb/140/Q140962/
 ---
 
 ## Q140962: XFOR: Access Violation When RTF Message Over 64K

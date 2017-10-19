@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155790: XFOR: MT Rejects Reply from CHT Outlook Client on MS Mail PO"
-permalink: kb/155/Q155790/
+permalink: /kb/155/Q155790/
 ---
 
 ## Q155790: XFOR: MT Rejects Reply from CHT Outlook Client on MS Mail PO

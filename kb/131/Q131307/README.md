@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131307: Unable to Find File Name with Extended-ASCII Characters in NTFS"
-permalink: kb/131/Q131307/
+permalink: /kb/131/Q131307/
 ---
 
 ## Q131307: Unable to Find File Name with Extended-ASCII Characters in NTFS

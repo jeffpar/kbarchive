@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130382: X400: Err Msg: Outgoing Mail Remains in Queue"
-permalink: kb/130/Q130382/
+permalink: /kb/130/Q130382/
 ---
 
 ## Q130382: X400: Err Msg: Outgoing Mail Remains in Queue

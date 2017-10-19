@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218802: XADM: Can't Enroll Using X.509 V3 Certificates"
-permalink: kb/218/Q218802/
+permalink: /kb/218/Q218802/
 ---
 
 ## Q218802: XADM: Can't Enroll Using X.509 V3 Certificates

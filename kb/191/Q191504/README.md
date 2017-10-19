@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191504: XFOR: IMAP4 FETCH Command Returns Wrong Size"
-permalink: kb/191/Q191504/
+permalink: /kb/191/Q191504/
 ---
 
 ## Q191504: XFOR: IMAP4 FETCH Command Returns Wrong Size

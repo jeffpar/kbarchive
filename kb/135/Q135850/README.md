@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135850: SMS: No Query Results Returned When SQL Tempdb Is Too Small"
-permalink: kb/135/Q135850/
+permalink: /kb/135/Q135850/
 ---
 
 ## Q135850: SMS: No Query Results Returned When SQL Tempdb Is Too Small

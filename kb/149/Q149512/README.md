@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149512: BUG: ASSERT Failure with String Assigned to User-Defined Type"
-permalink: kb/149/Q149512/
+permalink: /kb/149/Q149512/
 ---
 
 ## Q149512: BUG: ASSERT Failure with String Assigned to User-Defined Type

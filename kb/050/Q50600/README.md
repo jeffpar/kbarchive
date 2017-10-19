@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50600: Graphics Routines Available in OS/2 with GRTEXTP Library"
-permalink: kb/050/Q50600/
+permalink: /kb/050/Q50600/
 ---
 
 ## Q50600: Graphics Routines Available in OS/2 with GRTEXTP Library

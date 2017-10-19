@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99569: PC Forms: Err Msg: This Message Is Missing Some Information..."
-permalink: kb/099/Q99569/
+permalink: /kb/099/Q99569/
 ---
 
 ## Q99569: PC Forms: Err Msg: This Message Is Missing Some Information...

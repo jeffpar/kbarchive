@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236388: Err Msg: The Share Name Contains Invalid Characters"
-permalink: kb/236/Q236388/
+permalink: /kb/236/Q236388/
 ---
 
 ## Q236388: Err Msg: The Share Name Contains Invalid Characters

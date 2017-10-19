@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156266: BUG: Adding Menu Shifts Controls and Reduces SDI Form Height"
-permalink: kb/156/Q156266/
+permalink: /kb/156/Q156266/
 ---
 
 ## Q156266: BUG: Adding Menu Shifts Controls and Reduces SDI Form Height

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133277: Windows 95/98: How to Copy a File"
-permalink: kb/133/Q133277/
+permalink: /kb/133/Q133277/
 ---
 
 ## Q133277: Windows 95/98: How to Copy a File

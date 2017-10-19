@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133224: USS Ticonderoga Displays &quot;Incorrect DOS Version&quot; at Startup"
-permalink: kb/133/Q133224/
+permalink: /kb/133/Q133224/
 ---
 
 ## Q133224: USS Ticonderoga Displays &quot;Incorrect DOS Version&quot; at Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181859: Stop 0x0000000A When Using UltraBac to Back Up a SQL Server"
-permalink: kb/181/Q181859/
+permalink: /kb/181/Q181859/
 ---
 
 ## Q181859: Stop 0x0000000A When Using UltraBac to Back Up a SQL Server

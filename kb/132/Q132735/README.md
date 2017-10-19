@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132735: The Microsoft Network Questions and Answers"
-permalink: kb/132/Q132735/
+permalink: /kb/132/Q132735/
 ---
 
 ## Q132735: The Microsoft Network Questions and Answers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141715: Event ID 5012 Occurs with 3C589 PCMCIA Network Card"
-permalink: kb/141/Q141715/
+permalink: /kb/141/Q141715/
 ---
 
 ## Q141715: Event ID 5012 Occurs with 3C589 PCMCIA Network Card

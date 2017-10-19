@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84873: COMxFIFO Does Not Properly Understand True and False"
-permalink: kb/084/Q84873/
+permalink: /kb/084/Q84873/
 ---
 
 ## Q84873: COMxFIFO Does Not Properly Understand True and False

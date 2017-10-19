@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111429: SET Batch File Command Resets Error Levels"
-permalink: kb/111/Q111429/
+permalink: /kb/111/Q111429/
 ---
 
 ## Q111429: SET Batch File Command Resets Error Levels

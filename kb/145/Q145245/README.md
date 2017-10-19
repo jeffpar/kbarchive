@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145245: WD97: How to Convert Adobe Acrobat Reader (&#42;.pdf) Files"
-permalink: kb/145/Q145245/
+permalink: /kb/145/Q145245/
 ---
 
 ## Q145245: WD97: How to Convert Adobe Acrobat Reader (&#42;.pdf) Files

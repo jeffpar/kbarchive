@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58282: Some Mice Not Supported in Windows 3.0, 3.1"
-permalink: kb/058/Q58282/
+permalink: /kb/058/Q58282/
 ---
 
 ## Q58282: Some Mice Not Supported in Windows 3.0, 3.1

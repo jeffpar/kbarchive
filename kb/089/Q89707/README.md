@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89707: Shaded Areas Don't Print the Same in Windows 3.0 and 3.1"
-permalink: kb/089/Q89707/
+permalink: /kb/089/Q89707/
 ---
 
 ## Q89707: Shaded Areas Don't Print the Same in Windows 3.0 and 3.1

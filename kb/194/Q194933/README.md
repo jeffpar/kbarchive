@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194933: Problems Displaying Underscored Greek Characters in 3270 Applet"
-permalink: kb/194/Q194933/
+permalink: /kb/194/Q194933/
 ---
 
 ## Q194933: Problems Displaying Underscored Greek Characters in 3270 Applet

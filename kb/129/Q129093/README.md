@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129093: Using Favorite Places to Insert Shortcuts in Messages"
-permalink: kb/129/Q129093/
+permalink: /kb/129/Q129093/
 ---
 
 ## Q129093: Using Favorite Places to Insert Shortcuts in Messages

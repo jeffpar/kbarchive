@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141675: HOWTO: How to Save and Restore State of Dockable Toolbars"
-permalink: kb/141/Q141675/
+permalink: /kb/141/Q141675/
 ---
 
 ## Q141675: HOWTO: How to Save and Restore State of Dockable Toolbars

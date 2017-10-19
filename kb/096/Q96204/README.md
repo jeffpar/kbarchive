@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96204: You have a SCSI Hard Disk Drive and MemMaker Hangs"
-permalink: kb/096/Q96204/
+permalink: /kb/096/Q96204/
 ---
 
 ## Q96204: You have a SCSI Hard Disk Drive and MemMaker Hangs

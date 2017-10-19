@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187277: The FTP PORT Command Fails in IIS 3.0"
-permalink: kb/187/Q187277/
+permalink: /kb/187/Q187277/
 ---
 
 ## Q187277: The FTP PORT Command Fails in IIS 3.0

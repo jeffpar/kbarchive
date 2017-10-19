@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296083: SNA Server DLC Connection Fails Through Cisco DLSw and VLAN"
-permalink: kb/296/Q296083/
+permalink: /kb/296/Q296083/
 ---
 
 ## Q296083: SNA Server DLC Connection Fails Through Cisco DLSw and VLAN

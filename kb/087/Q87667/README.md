@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87667: Network Comm. Across Router Using PC-TCP and LAN Manager"
-permalink: kb/087/Q87667/
+permalink: /kb/087/Q87667/
 ---
 
 ## Q87667: Network Comm. Across Router Using PC-TCP and LAN Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197745: WD97: Fields in Header/Footer Not Merged in E-Mail Attachment"
-permalink: kb/197/Q197745/
+permalink: /kb/197/Q197745/
 ---
 
 ## Q197745: WD97: Fields in Header/Footer Not Merged in E-Mail Attachment

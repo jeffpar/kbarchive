@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195265: Microsoft Windows 98 Resource Kit Comments &amp; Corrections"
-permalink: kb/195/Q195265/
+permalink: /kb/195/Q195265/
 ---
 
 ## Q195265: Microsoft Windows 98 Resource Kit Comments &amp; Corrections

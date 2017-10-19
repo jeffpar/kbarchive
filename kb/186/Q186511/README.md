@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186511: Terminal Server Commands: DBGTRACE"
-permalink: kb/186/Q186511/
+permalink: /kb/186/Q186511/
 ---
 
 ## Q186511: Terminal Server Commands: DBGTRACE

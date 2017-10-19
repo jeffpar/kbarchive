@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233229: XCLN: Mess. Times One Hour Off If Changing Standard to Daylight"
-permalink: kb/233/Q233229/
+permalink: /kb/233/Q233229/
 ---
 
 ## Q233229: XCLN: Mess. Times One Hour Off If Changing Standard to Daylight

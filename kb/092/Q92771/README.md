@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92771: 3Com EtherLink II Card Not Detected During Setup of WFWG"
-permalink: kb/092/Q92771/
+permalink: /kb/092/Q92771/
 ---
 
 ## Q92771: 3Com EtherLink II Card Not Detected During Setup of WFWG

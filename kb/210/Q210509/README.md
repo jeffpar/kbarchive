@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210509: Golf 99 Err Msg: Golf 99 Could Not Set Your Video Mode..."
-permalink: kb/210/Q210509/
+permalink: /kb/210/Q210509/
 ---
 
 ## Q210509: Golf 99 Err Msg: Golf 99 Could Not Set Your Video Mode...

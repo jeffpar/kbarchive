@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186489: Upgrades from Terminal Server to Windows NT Not Supported"
-permalink: kb/186/Q186489/
+permalink: /kb/186/Q186489/
 ---
 
 ## Q186489: Upgrades from Terminal Server to Windows NT Not Supported

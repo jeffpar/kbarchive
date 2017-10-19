@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111064: Flight Simulator: Setup Program Doesn't Run from MS-DOS Prompt"
-permalink: kb/111/Q111064/
+permalink: /kb/111/Q111064/
 ---
 
 ## Q111064: Flight Simulator: Setup Program Doesn't Run from MS-DOS Prompt

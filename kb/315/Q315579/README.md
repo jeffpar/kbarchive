@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315579: &quot;HTTP Error 403&quot;Err Msg When Password Changed w/OWA or Iisadmpwd"
-permalink: kb/315/Q315579/
+permalink: /kb/315/Q315579/
 ---
 
 ## Q315579: &quot;HTTP Error 403&quot;Err Msg When Password Changed w/OWA or Iisadmpwd

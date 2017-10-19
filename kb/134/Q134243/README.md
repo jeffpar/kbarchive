@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134243: PRB: Disabled ComboBox Item Disappears"
-permalink: kb/134/Q134243/
+permalink: /kb/134/Q134243/
 ---
 
 ## Q134243: PRB: Disabled ComboBox Item Disappears

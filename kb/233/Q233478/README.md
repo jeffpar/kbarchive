@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233478: FIX: VB6 Version of RDO Cannot Access Oracle Packages"
-permalink: kb/233/Q233478/
+permalink: /kb/233/Q233478/
 ---
 
 ## Q233478: FIX: VB6 Version of RDO Cannot Access Oracle Packages

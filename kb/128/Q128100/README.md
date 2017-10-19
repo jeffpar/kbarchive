@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128100: Microsoft Visual FoxPro Version 3.0 High Level Features"
-permalink: kb/128/Q128100/
+permalink: /kb/128/Q128100/
 ---
 
 ## Q128100: Microsoft Visual FoxPro Version 3.0 High Level Features

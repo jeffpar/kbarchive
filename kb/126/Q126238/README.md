@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126238: Haunted House Icon Changes to Windows Default Icon"
-permalink: kb/126/Q126238/
+permalink: /kb/126/Q126238/
 ---
 
 ## Q126238: Haunted House Icon Changes to Windows Default Icon

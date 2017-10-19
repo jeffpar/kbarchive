@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173105: Error Moving Message from PST to Exchange Server Mailbox"
-permalink: kb/173/Q173105/
+permalink: /kb/173/Q173105/
 ---
 
 ## Q173105: Error Moving Message from PST to Exchange Server Mailbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219288: Golf 99: How to Transfer Players from Golf 1998 Lite"
-permalink: kb/219/Q219288/
+permalink: /kb/219/Q219288/
 ---
 
 ## Q219288: Golf 99: How to Transfer Players from Golf 1998 Lite

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169965: Toshiba 500CS 500CDT, or 730 Computer Hangs on First Reboot"
-permalink: kb/169/Q169965/
+permalink: /kb/169/Q169965/
 ---
 
 ## Q169965: Toshiba 500CS 500CDT, or 730 Computer Hangs on First Reboot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271706: XCON: Embedded MSP4 Message in a P772 Message Downgraded to MSP3"
-permalink: kb/271/Q271706/
+permalink: /kb/271/Q271706/
 ---
 
 ## Q271706: XCON: Embedded MSP4 Message in a P772 Message Downgraded to MSP3

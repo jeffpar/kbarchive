@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146617: FIX: SetWindowText(NULL) Doesn't Clear .OCX Edit Control"
-permalink: kb/146/Q146617/
+permalink: /kb/146/Q146617/
 ---
 
 ## Q146617: FIX: SetWindowText(NULL) Doesn't Clear .OCX Edit Control

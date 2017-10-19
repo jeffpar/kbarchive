@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244019: HOWTO: How to Retrieve Deleted Files in Visual SourceSafe"
-permalink: kb/244/Q244019/
+permalink: /kb/244/Q244019/
 ---
 
 ## Q244019: HOWTO: How to Retrieve Deleted Files in Visual SourceSafe

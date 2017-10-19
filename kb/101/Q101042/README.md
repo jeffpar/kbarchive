@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101042: Comprehensive List of MS-DOS 5 Documentation Errors"
-permalink: kb/101/Q101042/
+permalink: /kb/101/Q101042/
 ---
 
 ## Q101042: Comprehensive List of MS-DOS 5 Documentation Errors

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98334: PC Win: 3.0b Windows Client Disk 1 [3.5, 720K; 5.25, 1.2 MB]"
-permalink: kb/098/Q98334/
+title: "Q98334: PC Win: 3.0b Windows Client Disk 1 &#91;3.5, 720K; 5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98334/
 ---
 
-## Q98334: PC Win: 3.0b Windows Client Disk 1 [3.5, 720K; 5.25, 1.2 MB]
+## Q98334: PC Win: 3.0b Windows Client Disk 1 &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
 	Article: Q98334
 	Product(s): Microsoft Mail For PC Networks

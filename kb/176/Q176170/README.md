@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176170: XADM: Single Instance Ratio Counter Indicates Value Less Than 1"
-permalink: kb/176/Q176170/
+permalink: /kb/176/Q176170/
 ---
 
 ## Q176170: XADM: Single Instance Ratio Counter Indicates Value Less Than 1

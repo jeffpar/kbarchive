@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264405: PRB: Out of Memory Error Adding GIF Files to RichTextBox Control"
-permalink: kb/264/Q264405/
+permalink: /kb/264/Q264405/
 ---
 
 ## Q264405: PRB: Out of Memory Error Adding GIF Files to RichTextBox Control

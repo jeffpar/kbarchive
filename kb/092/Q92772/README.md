@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92772: No Files Found with SMC 90C65 Based Arcnet Cards in WFWG"
-permalink: kb/092/Q92772/
+permalink: /kb/092/Q92772/
 ---
 
 ## Q92772: No Files Found with SMC 90C65 Based Arcnet Cards in WFWG

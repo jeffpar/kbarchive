@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189654: XWEB: &quot;Failed To Get Inbox&quot; Error May Occur If Name Is Ambiguous"
-permalink: kb/189/Q189654/
+permalink: /kb/189/Q189654/
 ---
 
 ## Q189654: XWEB: &quot;Failed To Get Inbox&quot; Error May Occur If Name Is Ambiguous

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133105: FORTRAN PowerStation 32 README.TXT: Miscellaneous"
-permalink: kb/133/Q133105/
+permalink: /kb/133/Q133105/
 ---
 
 ## Q133105: FORTRAN PowerStation 32 README.TXT: Miscellaneous

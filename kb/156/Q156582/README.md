@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156582: PRB: Opening Database Named IN.DBC as a Table Causes Error"
-permalink: kb/156/Q156582/
+permalink: /kb/156/Q156582/
 ---
 
 ## Q156582: PRB: Opening Database Named IN.DBC as a Table Causes Error

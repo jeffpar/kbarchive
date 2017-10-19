@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172127: File Access Error Using Mcafee Netshield and Word 6.0 or Later"
-permalink: kb/172/Q172127/
+permalink: /kb/172/Q172127/
 ---
 
 ## Q172127: File Access Error Using Mcafee Netshield and Word 6.0 or Later

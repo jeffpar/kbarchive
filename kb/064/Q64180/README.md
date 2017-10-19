@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64180: PRB: L1089 Error Caused by Incorrect Linker Version"
-permalink: kb/064/Q64180/
+permalink: /kb/064/Q64180/
 ---
 
 ## Q64180: PRB: L1089 Error Caused by Incorrect Linker Version

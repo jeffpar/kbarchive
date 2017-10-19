@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142918: Installing to Another Folder Is Not Fully Automated"
-permalink: kb/142/Q142918/
+permalink: /kb/142/Q142918/
 ---
 
 ## Q142918: Installing to Another Folder Is Not Fully Automated

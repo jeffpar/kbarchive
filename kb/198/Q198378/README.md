@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198378: HOWTO: Use the VB DataEnvironment In Your MTS Components"
-permalink: kb/198/Q198378/
+permalink: /kb/198/Q198378/
 ---
 
 ## Q198378: HOWTO: Use the VB DataEnvironment In Your MTS Components

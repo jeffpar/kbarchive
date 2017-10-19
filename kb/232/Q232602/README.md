@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232602: XCON: MTA Fails to Recover Associations After Network Problems"
-permalink: kb/232/Q232602/
+permalink: /kb/232/Q232602/
 ---
 
 ## Q232602: XCON: MTA Fails to Recover Associations After Network Problems

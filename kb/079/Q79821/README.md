@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79821: FIX: MASM 6.0 May Incorrectly Generate A4000 for CMP"
-permalink: kb/079/Q79821/
+permalink: /kb/079/Q79821/
 ---
 
 ## Q79821: FIX: MASM 6.0 May Incorrectly Generate A4000 for CMP

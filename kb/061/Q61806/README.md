@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61806: BIOS Equipment-List Word"
-permalink: kb/061/Q61806/
+permalink: /kb/061/Q61806/
 ---
 
 ## Q61806: BIOS Equipment-List Word

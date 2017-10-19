@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136354: Fury3: Graphics Performance Test Fails With Microcrystal 20SD"
-permalink: kb/136/Q136354/
+permalink: /kb/136/Q136354/
 ---
 
 ## Q136354: Fury3: Graphics Performance Test Fails With Microcrystal 20SD

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176695: PRB: ExitWindowsEx API Does Not Reboot Windows NT"
-permalink: kb/176/Q176695/
+permalink: /kb/176/Q176695/
 ---
 
 ## Q176695: PRB: ExitWindowsEx API Does Not Reboot Windows NT

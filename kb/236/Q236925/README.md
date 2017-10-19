@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236925: Windows NT Network Administration Training Comments and Correcti"
-permalink: kb/236/Q236925/
+permalink: /kb/236/Q236925/
 ---
 
 ## Q236925: Windows NT Network Administration Training Comments and Correcti

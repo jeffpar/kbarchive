@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143168: Routing IP Packets to Network Adapter Rather than RAS"
-permalink: kb/143/Q143168/
+permalink: /kb/143/Q143168/
 ---
 
 ## Q143168: Routing IP Packets to Network Adapter Rather than RAS

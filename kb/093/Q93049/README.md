@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93049: Using Write to Determine Unprintable Regions"
-permalink: kb/093/Q93049/
+permalink: /kb/093/Q93049/
 ---
 
 ## Q93049: Using Write to Determine Unprintable Regions

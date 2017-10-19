@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135224: Error Message: Rundll32.exe Has Performed an Illegal Operation"
-permalink: kb/135/Q135224/
+permalink: /kb/135/Q135224/
 ---
 
 ## Q135224: Error Message: Rundll32.exe Has Performed an Illegal Operation

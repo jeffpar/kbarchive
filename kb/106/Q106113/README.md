@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106113: Doc Err: Mandatory Profiles Assigned to Local Groups"
-permalink: kb/106/Q106113/
+permalink: /kb/106/Q106113/
 ---
 
 ## Q106113: Doc Err: Mandatory Profiles Assigned to Local Groups

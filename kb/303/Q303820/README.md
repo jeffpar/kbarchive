@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303820: Cannot Print HTML-Formatted E-mail Message from Outlook"
-permalink: kb/303/Q303820/
+permalink: /kb/303/Q303820/
 ---
 
 ## Q303820: Cannot Print HTML-Formatted E-mail Message from Outlook

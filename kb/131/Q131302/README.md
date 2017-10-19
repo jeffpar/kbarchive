@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131302: PRB: Visual FoxPro Makes Bigger .EXE Files Than FoxPro 2.6 Did"
-permalink: kb/131/Q131302/
+permalink: /kb/131/Q131302/
 ---
 
 ## Q131302: PRB: Visual FoxPro Makes Bigger .EXE Files Than FoxPro 2.6 Did

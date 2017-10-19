@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177353: Qic117.sys Driver May Make Drive A Inaccessible"
-permalink: kb/177/Q177353/
+permalink: /kb/177/Q177353/
 ---
 
 ## Q177353: Qic117.sys Driver May Make Drive A Inaccessible

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177596: MarkVision TCP/IP Auto-Discovery for Windows 95 and Windows NT"
-permalink: kb/177/Q177596/
+permalink: /kb/177/Q177596/
 ---
 
 ## Q177596: MarkVision TCP/IP Auto-Discovery for Windows 95 and Windows NT

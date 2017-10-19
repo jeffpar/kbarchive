@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139626: HOWTO: Drag and Drop Between Two Containers"
-permalink: kb/139/Q139626/
+permalink: /kb/139/Q139626/
 ---
 
 ## Q139626: HOWTO: Drag and Drop Between Two Containers

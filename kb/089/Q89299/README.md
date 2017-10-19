@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89299: Disconnect Network Printer Only in Print Manager"
-permalink: kb/089/Q89299/
+permalink: /kb/089/Q89299/
 ---
 
 ## Q89299: Disconnect Network Printer Only in Print Manager

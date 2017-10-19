@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231515: MapPoint 2000: Cannot Drag and Drop Data from Text File"
-permalink: kb/231/Q231515/
+permalink: /kb/231/Q231515/
 ---
 
 ## Q231515: MapPoint 2000: Cannot Drag and Drop Data from Text File

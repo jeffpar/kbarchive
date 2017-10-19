@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72020: INFO: Stroke Fonts Marked as OEM Character Set Are ANSI"
-permalink: kb/072/Q72020/
+permalink: /kb/072/Q72020/
 ---
 
 ## Q72020: INFO: Stroke Fonts Marked as OEM Character Set Are ANSI

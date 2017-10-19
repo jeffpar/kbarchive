@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259949: INFO: SetCaretPos Is Not Appropriate with CEdit or CRichEditCtrl"
-permalink: kb/259/Q259949/
+permalink: /kb/259/Q259949/
 ---
 
 ## Q259949: INFO: SetCaretPos Is Not Appropriate with CEdit or CRichEditCtrl

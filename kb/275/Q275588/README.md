@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275588: Err Msg: Event ID: 3101 - Unable to Read Control Information..."
-permalink: kb/275/Q275588/
+permalink: /kb/275/Q275588/
 ---
 
 ## Q275588: Err Msg: Event ID: 3101 - Unable to Read Control Information...

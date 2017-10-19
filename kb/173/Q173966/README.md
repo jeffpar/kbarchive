@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173966: How to Filter Certain Folders from Query Results"
-permalink: kb/173/Q173966/
+permalink: /kb/173/Q173966/
 ---
 
 ## Q173966: How to Filter Certain Folders from Query Results

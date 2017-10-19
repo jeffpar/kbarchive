@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315926: Flight Simulator 2002: Troubleshooting Joystick Problems Part 1"
-permalink: kb/315/Q315926/
+permalink: /kb/315/Q315926/
 ---
 
 ## Q315926: Flight Simulator 2002: Troubleshooting Joystick Problems Part 1

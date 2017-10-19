@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175948: INFO: Running Visual Basic Applications as Windows NT Services"
-permalink: kb/175/Q175948/
+permalink: /kb/175/Q175948/
 ---
 
 ## Q175948: INFO: Running Visual Basic Applications as Windows NT Services

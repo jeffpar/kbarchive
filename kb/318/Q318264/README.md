@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318264: FIX: DO FORM Command in an .exe Holds Form Until Process Ends"
-permalink: kb/318/Q318264/
+permalink: /kb/318/Q318264/
 ---
 
 ## Q318264: FIX: DO FORM Command in an .exe Holds Form Until Process Ends

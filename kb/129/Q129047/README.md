@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129047: Synchronizing DNS Information in Registry with Boot Files"
-permalink: kb/129/Q129047/
+permalink: /kb/129/Q129047/
 ---
 
 ## Q129047: Synchronizing DNS Information in Registry with Boot Files

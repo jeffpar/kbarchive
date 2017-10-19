@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132849: GPF or Poor Performance with Interleaf Running in Windows 95"
-permalink: kb/132/Q132849/
+permalink: /kb/132/Q132849/
 ---
 
 ## Q132849: GPF or Poor Performance with Interleaf Running in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185813: WD97: Drop Cap Jumps to Previous Column"
-permalink: kb/185/Q185813/
+permalink: /kb/185/Q185813/
 ---
 
 ## Q185813: WD97: Drop Cap Jumps to Previous Column

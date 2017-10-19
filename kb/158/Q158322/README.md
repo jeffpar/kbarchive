@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158322: Prompted for NDS Tree When Changing Password"
-permalink: kb/158/Q158322/
+permalink: /kb/158/Q158322/
 ---
 
 ## Q158322: Prompted for NDS Tree When Changing Password

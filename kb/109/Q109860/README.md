@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109860: Flight Simulator: Engine Sound Audible After Engine Turned Off"
-permalink: kb/109/Q109860/
+permalink: /kb/109/Q109860/
 ---
 
 ## Q109860: Flight Simulator: Engine Sound Audible After Engine Turned Off

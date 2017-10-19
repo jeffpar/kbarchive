@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159418: WD97: Characters Appear as Square Boxes in Printed Document"
-permalink: kb/159/Q159418/
+permalink: /kb/159/Q159418/
 ---
 
 ## Q159418: WD97: Characters Appear as Square Boxes in Printed Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103833: Using Alternate Character Sets Provided by Code Pages"
-permalink: kb/103/Q103833/
+permalink: /kb/103/Q103833/
 ---
 
 ## Q103833: Using Alternate Character Sets Provided by Code Pages

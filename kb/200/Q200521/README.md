@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200521: SMSINST: Self-registered OCX or DLL Converted to Short File Name"
-permalink: kb/200/Q200521/
+permalink: /kb/200/Q200521/
 ---
 
 ## Q200521: SMSINST: Self-registered OCX or DLL Converted to Short File Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104957: FIX: Cannot Make Server-Server RPCs in Non-trusted Mode"
-permalink: kb/104/Q104957/
+permalink: /kb/104/Q104957/
 ---
 
 ## Q104957: FIX: Cannot Make Server-Server RPCs in Non-trusted Mode

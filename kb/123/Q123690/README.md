@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123690: Using INTDOSQQ for Keyboard Input in FORTRAN 5.1"
-permalink: kb/123/Q123690/
+permalink: /kb/123/Q123690/
 ---
 
 ## Q123690: Using INTDOSQQ for Keyboard Input in FORTRAN 5.1

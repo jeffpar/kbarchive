@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208005: FIX: Page Table Initialization Missing in x86 OAL"
-permalink: kb/208/Q208005/
+permalink: /kb/208/Q208005/
 ---
 
 ## Q208005: FIX: Page Table Initialization Missing in x86 OAL

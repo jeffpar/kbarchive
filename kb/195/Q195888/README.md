@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195888: EVG99: Cannot Display All Zoom Levels Using Zoom Buttons"
-permalink: kb/195/Q195888/
+permalink: /kb/195/Q195888/
 ---
 
 ## Q195888: EVG99: Cannot Display All Zoom Levels Using Zoom Buttons

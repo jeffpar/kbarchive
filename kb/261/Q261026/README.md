@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261026: MCM2: Video Problems When You Select the TV Out Video Adapter"
-permalink: kb/261/Q261026/
+permalink: /kb/261/Q261026/
 ---
 
 ## Q261026: MCM2: Video Problems When You Select the TV Out Video Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108486: Server Manager Reports Incorrect Number of Open Files"
-permalink: kb/108/Q108486/
+permalink: /kb/108/Q108486/
 ---
 
 ## Q108486: Server Manager Reports Incorrect Number of Open Files

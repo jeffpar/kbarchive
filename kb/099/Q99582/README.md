@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99582: Mac Srv: Server Crashes on Upgrading to Mail 3.1"
-permalink: kb/099/Q99582/
+permalink: /kb/099/Q99582/
 ---
 
 ## Q99582: Mac Srv: Server Crashes on Upgrading to Mail 3.1

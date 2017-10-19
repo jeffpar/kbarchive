@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114227: Err Msg: Invalid Setting in DBLSPACE.INI: FIRSTDRIVE=..."
-permalink: kb/114/Q114227/
+permalink: /kb/114/Q114227/
 ---
 
 ## Q114227: Err Msg: Invalid Setting in DBLSPACE.INI: FIRSTDRIVE=...

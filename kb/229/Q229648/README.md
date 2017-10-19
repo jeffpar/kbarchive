@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229648: XADM: Sent Field Displayed Incorrectly in Forwarded Message"
-permalink: kb/229/Q229648/
+permalink: /kb/229/Q229648/
 ---
 
 ## Q229648: XADM: Sent Field Displayed Incorrectly in Forwarded Message

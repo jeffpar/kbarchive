@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157622: STL Sample for queue::(push,pop,empty,back,front) Functions"
-permalink: kb/157/Q157622/
+permalink: /kb/157/Q157622/
 ---
 
 ## Q157622: STL Sample for queue::(push,pop,empty,back,front) Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237529: Encarta Dictionary: Image Jagged or Blocky When Pasted to Paint"
-permalink: kb/237/Q237529/
+permalink: /kb/237/Q237529/
 ---
 
 ## Q237529: Encarta Dictionary: Image Jagged or Blocky When Pasted to Paint

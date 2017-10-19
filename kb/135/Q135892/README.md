@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135892: Windows 95 CD-ROM Exchange.txt File"
-permalink: kb/135/Q135892/
+permalink: /kb/135/Q135892/
 ---
 
 ## Q135892: Windows 95 CD-ROM Exchange.txt File

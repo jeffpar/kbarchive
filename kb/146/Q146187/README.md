@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146187: Timex: Dates Are Not In Order When Downloaded"
-permalink: kb/146/Q146187/
+permalink: /kb/146/Q146187/
 ---
 
 ## Q146187: Timex: Dates Are Not In Order When Downloaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246604: SMS: Software Inventory Is Not Processed Without Parent Site CAP"
-permalink: kb/246/Q246604/
+permalink: /kb/246/Q246604/
 ---
 
 ## Q246604: SMS: Software Inventory Is Not Processed Without Parent Site CAP

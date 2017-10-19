@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198542: XCLN: Unable to Add Components to Outlook 98 Installation"
-permalink: kb/198/Q198542/
+permalink: /kb/198/Q198542/
 ---
 
 ## Q198542: XCLN: Unable to Add Components to Outlook 98 Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305167: Modem Initialization Strings and Modem Drivers"
-permalink: kb/305/Q305167/
+permalink: /kb/305/Q305167/
 ---
 
 ## Q305167: Modem Initialization Strings and Modem Drivers

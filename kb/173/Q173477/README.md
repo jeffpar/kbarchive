@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173477: How to Dial Local Access Numbers Using a Different Area Code"
-permalink: kb/173/Q173477/
+permalink: /kb/173/Q173477/
 ---
 
 ## Q173477: How to Dial Local Access Numbers Using a Different Area Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161392: PPT: Sample Code to Name a Slide"
-permalink: kb/161/Q161392/
+permalink: /kb/161/Q161392/
 ---
 
 ## Q161392: PPT: Sample Code to Name a Slide

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164252: FIX: Receiving Error When Selecting 254th Item in List Box"
-permalink: kb/164/Q164252/
+permalink: /kb/164/Q164252/
 ---
 
 ## Q164252: FIX: Receiving Error When Selecting 254th Item in List Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162189: Macintosh Clients May Hang Temporarily with Multiple Mac Volumes"
-permalink: kb/162/Q162189/
+permalink: /kb/162/Q162189/
 ---
 
 ## Q162189: Macintosh Clients May Hang Temporarily with Multiple Mac Volumes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167015: Lexmark Optra Ep Shows Duplex Option and Memory Available"
-permalink: kb/167/Q167015/
+permalink: /kb/167/Q167015/
 ---
 
 ## Q167015: Lexmark Optra Ep Shows Duplex Option and Memory Available

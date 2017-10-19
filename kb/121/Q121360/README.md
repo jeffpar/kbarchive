@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121360: Setting Remote Logging in SNA Server Causes RPC Busy Error"
-permalink: kb/121/Q121360/
+permalink: /kb/121/Q121360/
 ---
 
 ## Q121360: Setting Remote Logging in SNA Server Causes RPC Busy Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223108: FIX: Setting MSChart's AxisScale Type to Logarithmic Hangs VB"
-permalink: kb/223/Q223108/
+permalink: /kb/223/Q223108/
 ---
 
 ## Q223108: FIX: Setting MSChart's AxisScale Type to Logarithmic Hangs VB

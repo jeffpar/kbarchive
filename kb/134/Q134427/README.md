@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134427: Dr. Watson Access Violation Occurs Sending Mail Attachments"
-permalink: kb/134/Q134427/
+permalink: /kb/134/Q134427/
 ---
 
 ## Q134427: Dr. Watson Access Violation Occurs Sending Mail Attachments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249826: Corrupted or Inconsistent Version of Odbc32.dll Stops ASP Pages"
-permalink: kb/249/Q249826/
+permalink: /kb/249/Q249826/
 ---
 
 ## Q249826: Corrupted or Inconsistent Version of Odbc32.dll Stops ASP Pages

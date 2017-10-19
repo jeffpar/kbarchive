@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108902: Err Msg: Invalid Codepage....in PORTUAS"
-permalink: kb/108/Q108902/
+permalink: /kb/108/Q108902/
 ---
 
 ## Q108902: Err Msg: Invalid Codepage....in PORTUAS

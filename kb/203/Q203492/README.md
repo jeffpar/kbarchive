@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203492: HOWTO: Remove Games from Windows Setup, Add Remove Program"
-permalink: kb/203/Q203492/
+permalink: /kb/203/Q203492/
 ---
 
 ## Q203492: HOWTO: Remove Games from Windows Setup, Add Remove Program

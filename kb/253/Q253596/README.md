@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253596: XCLN: Files (Outlook/Exchange) Setting on Advanced Find"
-permalink: kb/253/Q253596/
+permalink: /kb/253/Q253596/
 ---
 
 ## Q253596: XCLN: Files (Outlook/Exchange) Setting on Advanced Find

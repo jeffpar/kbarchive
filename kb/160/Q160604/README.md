@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160604: Access Violation in security!SspQueryContextAttributesW"
-permalink: kb/160/Q160604/
+permalink: /kb/160/Q160604/
 ---
 
 ## Q160604: Access Violation in security!SspQueryContextAttributesW

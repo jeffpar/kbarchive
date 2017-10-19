@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163752: SNA Server Manager Starts Minimized"
-permalink: kb/163/Q163752/
+permalink: /kb/163/Q163752/
 ---
 
 ## Q163752: SNA Server Manager Starts Minimized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129446: PRB: Can't Have Multiple Declare Statements for Same Function"
-permalink: kb/129/Q129446/
+permalink: /kb/129/Q129446/
 ---
 
 ## Q129446: PRB: Can't Have Multiple Declare Statements for Same Function

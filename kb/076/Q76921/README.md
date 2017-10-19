@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76921: Executing TSRs Through MS-DOS Shell with Task Swapper Active"
-permalink: kb/076/Q76921/
+permalink: /kb/076/Q76921/
 ---
 
 ## Q76921: Executing TSRs Through MS-DOS Shell with Task Swapper Active

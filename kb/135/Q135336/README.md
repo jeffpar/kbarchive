@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135336: FIX: LNK2001 on AfxSocketInit When Using &#95;&#95;stdcall Default"
-permalink: kb/135/Q135336/
+permalink: /kb/135/Q135336/
 ---
 
 ## Q135336: FIX: LNK2001 on AfxSocketInit When Using &#95;&#95;stdcall Default

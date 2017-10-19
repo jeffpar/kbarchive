@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249142: Gtwy: AT&amp;T Gateway to MS Mail (PC) Version 5.0 Supported by AT&amp;T"
-permalink: kb/249/Q249142/
+permalink: /kb/249/Q249142/
 ---
 
 ## Q249142: Gtwy: AT&amp;T Gateway to MS Mail (PC) Version 5.0 Supported by AT&amp;T

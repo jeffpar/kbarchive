@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165327: XCLN: Replacing a Damaged Offline Folder (OST)"
-permalink: kb/165/Q165327/
+permalink: /kb/165/Q165327/
 ---
 
 ## Q165327: XCLN: Replacing a Damaged Offline Folder (OST)

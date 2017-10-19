@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200810: XWEB: Korean Language Outlook Web Access Empty Mail Dialog Box S"
-permalink: kb/200/Q200810/
+permalink: /kb/200/Q200810/
 ---
 
 ## Q200810: XWEB: Korean Language Outlook Web Access Empty Mail Dialog Box S

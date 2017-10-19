@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174648: SMS: RSERVICE May Display Erroneous Error Messages"
-permalink: kb/174/Q174648/
+permalink: /kb/174/Q174648/
 ---
 
 ## Q174648: SMS: RSERVICE May Display Erroneous Error Messages

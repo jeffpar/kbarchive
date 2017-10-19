@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136255: Error Message: A Fatal Error Has Occurred in VxD VMCPD"
-permalink: kb/136/Q136255/
+permalink: /kb/136/Q136255/
 ---
 
 ## Q136255: Error Message: A Fatal Error Has Occurred in VxD VMCPD

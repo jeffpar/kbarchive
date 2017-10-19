@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87997: Unable to TAB Between Fields in WinLogin Merge Rule Editor"
-permalink: kb/087/Q87997/
+permalink: /kb/087/Q87997/
 ---
 
 ## Q87997: Unable to TAB Between Fields in WinLogin Merge Rule Editor

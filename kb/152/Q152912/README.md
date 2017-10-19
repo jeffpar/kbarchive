@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152912: XCLN: Delete Rule on Public Folder Treated as Error"
-permalink: kb/152/Q152912/
+permalink: /kb/152/Q152912/
 ---
 
 ## Q152912: XCLN: Delete Rule on Public Folder Treated as Error

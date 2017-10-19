@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97739: MemMaker Hangs When Used with SuperStor Pro"
-permalink: kb/097/Q97739/
+permalink: /kb/097/Q97739/
 ---
 
 ## Q97739: MemMaker Hangs When Used with SuperStor Pro

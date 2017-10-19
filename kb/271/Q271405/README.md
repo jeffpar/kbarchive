@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271405: PRB: Batch Files Do Not Run as Post Executables in Setup"
-permalink: kb/271/Q271405/
+permalink: /kb/271/Q271405/
 ---
 
 ## Q271405: PRB: Batch Files Do Not Run as Post Executables in Setup

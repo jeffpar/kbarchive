@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157844: WD97: Format of List Style Unexpectedly Removed"
-permalink: kb/157/Q157844/
+permalink: /kb/157/Q157844/
 ---
 
 ## Q157844: WD97: Format of List Style Unexpectedly Removed

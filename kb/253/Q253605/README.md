@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253605: XADM: Clients Hang at Logon If Duplicate OFL Folders Exist"
-permalink: kb/253/Q253605/
+permalink: /kb/253/Q253605/
 ---
 
 ## Q253605: XADM: Clients Hang at Logon If Duplicate OFL Folders Exist

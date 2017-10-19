@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61771: Hewlett-Packard TextEquations Font Cartridge Description"
-permalink: kb/061/Q61771/
+permalink: /kb/061/Q61771/
 ---
 
 ## Q61771: Hewlett-Packard TextEquations Font Cartridge Description

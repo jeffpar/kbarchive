@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103288: Mac Srv: Recovering Deleted User Mail"
-permalink: kb/103/Q103288/
+permalink: /kb/103/Q103288/
 ---
 
 ## Q103288: Mac Srv: Recovering Deleted User Mail

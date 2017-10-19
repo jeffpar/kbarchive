@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269775: SMS: WINNT 4 .0 Clients Can't Run SMS From NetWare Logon Servers"
-permalink: kb/269/Q269775/
+permalink: /kb/269/Q269775/
 ---
 
 ## Q269775: SMS: WINNT 4 .0 Clients Can't Run SMS From NetWare Logon Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149511: BUG: FOR3278 and FOR3852 !MS&#36;NOFREEFORM After Subroutine END"
-permalink: kb/149/Q149511/
+permalink: /kb/149/Q149511/
 ---
 
 ## Q149511: BUG: FOR3278 and FOR3852 !MS&#36;NOFREEFORM After Subroutine END

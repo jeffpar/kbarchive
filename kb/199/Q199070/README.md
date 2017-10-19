@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199070: DOC: RDO UpdateCriteria Documentation Incorrect"
-permalink: kb/199/Q199070/
+permalink: /kb/199/Q199070/
 ---
 
 ## Q199070: DOC: RDO UpdateCriteria Documentation Incorrect

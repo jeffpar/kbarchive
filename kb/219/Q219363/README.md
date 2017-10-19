@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219363: Characters Missing from Print Jobs Spanning Multiple Pages"
-permalink: kb/219/Q219363/
+permalink: /kb/219/Q219363/
 ---
 
 ## Q219363: Characters Missing from Print Jobs Spanning Multiple Pages

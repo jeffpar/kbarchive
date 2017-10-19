@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250600: WD97: Err Msg: &quot;Compile Error in Hidden Module ModMain&quot;"
-permalink: kb/250/Q250600/
+permalink: /kb/250/Q250600/
 ---
 
 ## Q250600: WD97: Err Msg: &quot;Compile Error in Hidden Module ModMain&quot;

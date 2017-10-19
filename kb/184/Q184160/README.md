@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184160: XADM: Messages Left After Deleting Mailbox w/ Directory Import"
-permalink: kb/184/Q184160/
+permalink: /kb/184/Q184160/
 ---
 
 ## Q184160: XADM: Messages Left After Deleting Mailbox w/ Directory Import

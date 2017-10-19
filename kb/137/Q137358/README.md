@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137358: Client Upgrade from U.S. to German SMS needs Repeated Upgrade"
-permalink: kb/137/Q137358/
+permalink: /kb/137/Q137358/
 ---
 
 ## Q137358: Client Upgrade from U.S. to German SMS needs Repeated Upgrade

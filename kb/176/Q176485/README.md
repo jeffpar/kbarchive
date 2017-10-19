@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176485: Encarta: Cannot Run Setup on Shared Installation of Windows"
-permalink: kb/176/Q176485/
+permalink: /kb/176/Q176485/
 ---
 
 ## Q176485: Encarta: Cannot Run Setup on Shared Installation of Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203017: PRB: &quot;Only one database connection is supported at one time&quot;"
-permalink: kb/203/Q203017/
+permalink: /kb/203/Q203017/
 ---
 
 ## Q203017: PRB: &quot;Only one database connection is supported at one time&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212847: SMS: Aborted SMS Installer Installation Requests a Restart"
-permalink: kb/212/Q212847/
+permalink: /kb/212/Q212847/
 ---
 
 ## Q212847: SMS: Aborted SMS Installer Installation Requests a Restart

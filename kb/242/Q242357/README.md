@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242357: Active Accessibility Sample Does Not Function with Active Access"
-permalink: kb/242/Q242357/
+permalink: /kb/242/Q242357/
 ---
 
 ## Q242357: Active Accessibility Sample Does Not Function with Active Access

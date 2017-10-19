@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152312: Windows NT 3.5x Resource Kit Documentation Errors"
-permalink: kb/152/Q152312/
+permalink: /kb/152/Q152312/
 ---
 
 ## Q152312: Windows NT 3.5x Resource Kit Documentation Errors

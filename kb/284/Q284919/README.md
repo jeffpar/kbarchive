@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284919: Dr.Watson Error Occurs with Dfsadmin.exe Importing .csv File"
-permalink: kb/284/Q284919/
+permalink: /kb/284/Q284919/
 ---
 
 ## Q284919: Dr.Watson Error Occurs with Dfsadmin.exe Importing .csv File

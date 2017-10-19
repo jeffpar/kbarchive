@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161101: Flight Simulator 95 Error: The File Dciman32.dll Cannot Start"
-permalink: kb/161/Q161101/
+permalink: /kb/161/Q161101/
 ---
 
 ## Q161101: Flight Simulator 95 Error: The File Dciman32.dll Cannot Start

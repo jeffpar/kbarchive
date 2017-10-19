@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105288: SMTP: Gateway Cannot Run Under Windows NT TCP/IP"
-permalink: kb/105/Q105288/
+permalink: /kb/105/Q105288/
 ---
 
 ## Q105288: SMTP: Gateway Cannot Run Under Windows NT TCP/IP

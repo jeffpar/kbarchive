@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275641: Encarta 2001: Pinpointer Missing or Find Feature Does Not Work"
-permalink: kb/275/Q275641/
+permalink: /kb/275/Q275641/
 ---
 
 ## Q275641: Encarta 2001: Pinpointer Missing or Find Feature Does Not Work

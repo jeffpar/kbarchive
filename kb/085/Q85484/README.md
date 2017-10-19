@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85484: BUG: INT3 Encountered When Debugging a P-Code DLL"
-permalink: kb/085/Q85484/
+permalink: /kb/085/Q85484/
 ---
 
 ## Q85484: BUG: INT3 Encountered When Debugging a P-Code DLL

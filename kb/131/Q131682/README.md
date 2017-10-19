@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131682: PC Win: Err Msg:...Not Have Proper Access to the Postoffice..."
-permalink: kb/131/Q131682/
+permalink: /kb/131/Q131682/
 ---
 
 ## Q131682: PC Win: Err Msg:...Not Have Proper Access to the Postoffice...

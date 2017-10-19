@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121228: Postscript Print Driver Does Not Give Valid Ranges for Scaling"
-permalink: kb/121/Q121228/
+permalink: /kb/121/Q121228/
 ---
 
 ## Q121228: Postscript Print Driver Does Not Give Valid Ranges for Scaling

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128647: Troubleshooting TCP/IP LAN and RAS Routing Issues"
-permalink: kb/128/Q128647/
+permalink: /kb/128/Q128647/
 ---
 
 ## Q128647: Troubleshooting TCP/IP LAN and RAS Routing Issues

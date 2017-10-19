@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185343: SMS: Splitting One Domain Across Multiple SMS Sites"
-permalink: kb/185/Q185343/
+permalink: /kb/185/Q185343/
 ---
 
 ## Q185343: SMS: Splitting One Domain Across Multiple SMS Sites

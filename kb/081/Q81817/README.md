@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81817: SuperStor Changes RAMDrive Letter"
-permalink: kb/081/Q81817/
+permalink: /kb/081/Q81817/
 ---
 
 ## Q81817: SuperStor Changes RAMDrive Letter

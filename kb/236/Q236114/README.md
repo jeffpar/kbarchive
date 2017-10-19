@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236114: FIX: Destructor of Static Object Not Called on Exit"
-permalink: kb/236/Q236114/
+permalink: /kb/236/Q236114/
 ---
 
 ## Q236114: FIX: Destructor of Static Object Not Called on Exit

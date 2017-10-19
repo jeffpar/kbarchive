@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228998: XADM: Trailing Space in Domain Name Allows Incorrect Mail Route"
-permalink: kb/228/Q228998/
+permalink: /kb/228/Q228998/
 ---
 
 ## Q228998: XADM: Trailing Space in Domain Name Allows Incorrect Mail Route

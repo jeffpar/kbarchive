@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322614: Age of Empires: &quot;Game Could Not Be Saved&quot; Err Msg Saving Game"
-permalink: kb/322/Q322614/
+permalink: /kb/322/Q322614/
 ---
 
 ## Q322614: Age of Empires: &quot;Game Could Not Be Saved&quot; Err Msg Saving Game

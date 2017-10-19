@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152398: Login.exe Now Sets Primary Server After Successful Login"
-permalink: kb/152/Q152398/
+permalink: /kb/152/Q152398/
 ---
 
 ## Q152398: Login.exe Now Sets Primary Server After Successful Login

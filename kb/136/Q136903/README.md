@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136903: PRB: Open Dialog Box in SET VIEW If Table Name Contains Space"
-permalink: kb/136/Q136903/
+permalink: /kb/136/Q136903/
 ---
 
 ## Q136903: PRB: Open Dialog Box in SET VIEW If Table Name Contains Space

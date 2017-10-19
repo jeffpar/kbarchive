@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82770: Windows 3.1 Setup Error Codes (S000 through S022)"
-permalink: kb/082/Q82770/
+permalink: /kb/082/Q82770/
 ---
 
 ## Q82770: Windows 3.1 Setup Error Codes (S000 through S022)

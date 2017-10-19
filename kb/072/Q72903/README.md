@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72903: HP Electrostatic Plotters Emulate HP-7586B"
-permalink: kb/072/Q72903/
+permalink: /kb/072/Q72903/
 ---
 
 ## Q72903: HP Electrostatic Plotters Emulate HP-7586B

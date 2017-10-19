@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129801: HOWTO: Create and Use a Minimal OLE Automation Server"
-permalink: kb/129/Q129801/
+permalink: /kb/129/Q129801/
 ---
 
 ## Q129801: HOWTO: Create and Use a Minimal OLE Automation Server

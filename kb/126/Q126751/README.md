@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126751: FIX: Scribble File Extension Conflicts with Screen Savers"
-permalink: kb/126/Q126751/
+permalink: /kb/126/Q126751/
 ---
 
 ## Q126751: FIX: Scribble File Extension Conflicts with Screen Savers

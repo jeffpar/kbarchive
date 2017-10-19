@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88414: How to Maximize Setup Toolkit Window"
-permalink: kb/088/Q88414/
+permalink: /kb/088/Q88414/
 ---
 
 ## Q88414: How to Maximize Setup Toolkit Window

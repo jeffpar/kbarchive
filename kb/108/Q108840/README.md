@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108840: PC Adm: Err Msg: Notice 37 Disk Directory Full or Error"
-permalink: kb/108/Q108840/
+permalink: /kb/108/Q108840/
 ---
 
 ## Q108840: PC Adm: Err Msg: Notice 37 Disk Directory Full or Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44094: INFO: GETPHYSPAGESIZE Landscape vs. Portrait Mode"
-permalink: kb/044/Q44094/
+permalink: /kb/044/Q44094/
 ---
 
 ## Q44094: INFO: GETPHYSPAGESIZE Landscape vs. Portrait Mode

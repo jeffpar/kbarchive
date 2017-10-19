@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170326: SNMPUTIL Fails with &quot;invalid oid &lt;oid name&gt; specified&quot; Error Msg"
-permalink: kb/170/Q170326/
+permalink: /kb/170/Q170326/
 ---
 
 ## Q170326: SNMPUTIL Fails with &quot;invalid oid &lt;oid name&gt; specified&quot; Error Msg

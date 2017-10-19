@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127001: PC WRmt Ext: Err Msg: Postoffice Has Not Accepted Mail Item"
-permalink: kb/127/Q127001/
+permalink: /kb/127/Q127001/
 ---
 
 ## Q127001: PC WRmt Ext: Err Msg: Postoffice Has Not Accepted Mail Item

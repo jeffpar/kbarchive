@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161156: HOWTO: Create A Default Event for a UserControl"
-permalink: kb/161/Q161156/
+permalink: /kb/161/Q161156/
 ---
 
 ## Q161156: HOWTO: Create A Default Event for a UserControl

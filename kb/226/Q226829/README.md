@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226829: SMS: SWMAccount Is Not Removed from Local Account Database"
-permalink: kb/226/Q226829/
+permalink: /kb/226/Q226829/
 ---
 
 ## Q226829: SMS: SWMAccount Is Not Removed from Local Account Database

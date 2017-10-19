@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q86095: PC Win: MSMAIL.INI Entries in [Custom Commands]"
-permalink: kb/086/Q86095/
+title: "Q86095: PC Win: MSMAIL.INI Entries in &#91;Custom Commands&#93;"
+permalink: /kb/086/Q86095/
 ---
 
-## Q86095: PC Win: MSMAIL.INI Entries in [Custom Commands]
+## Q86095: PC Win: MSMAIL.INI Entries in &#91;Custom Commands&#93;
 
 	Article: Q86095
 	Product(s): Microsoft Mail For PC Networks

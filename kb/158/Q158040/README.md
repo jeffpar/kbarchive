@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158040: STL Sample for the stack::top and stack::empty Functions"
-permalink: kb/158/Q158040/
+permalink: /kb/158/Q158040/
 ---
 
 ## Q158040: STL Sample for the stack::top and stack::empty Functions

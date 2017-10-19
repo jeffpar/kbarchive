@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320795: Can't Add New User In MSN Explorer--Account Manager Password Not"
-permalink: kb/320/Q320795/
+permalink: /kb/320/Q320795/
 ---
 
 ## Q320795: Can't Add New User In MSN Explorer--Account Manager Password Not

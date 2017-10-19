@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154159: Remote Control Causes GP Fault on German Windows 95 Client"
-permalink: kb/154/Q154159/
+permalink: /kb/154/Q154159/
 ---
 
 ## Q154159: Remote Control Causes GP Fault on German Windows 95 Client

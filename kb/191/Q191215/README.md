@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191215: BUG: Print Method Does Not Work Within a With-Block"
-permalink: kb/191/Q191215/
+permalink: /kb/191/Q191215/
 ---
 
 ## Q191215: BUG: Print Method Does Not Work Within a With-Block

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164174: NET0133 Error When Loading TINYRFC"
-permalink: kb/164/Q164174/
+permalink: /kb/164/Q164174/
 ---
 
 ## Q164174: NET0133 Error When Loading TINYRFC

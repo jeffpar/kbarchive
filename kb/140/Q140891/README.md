@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140891: Remote Shutdown May Fail"
-permalink: kb/140/Q140891/
+permalink: /kb/140/Q140891/
 ---
 
 ## Q140891: Remote Shutdown May Fail

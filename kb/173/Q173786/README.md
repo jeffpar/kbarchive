@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173786: SMS: Error 87 When Using RSERVICE"
-permalink: kb/173/Q173786/
+permalink: /kb/173/Q173786/
 ---
 
 ## Q173786: SMS: Error 87 When Using RSERVICE

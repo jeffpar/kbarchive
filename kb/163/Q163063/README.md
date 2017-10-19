@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163063: ODE97: Files in Compressed Setup Must Have 3-Character Extension"
-permalink: kb/163/Q163063/
+permalink: /kb/163/Q163063/
 ---
 
 ## Q163063: ODE97: Files in Compressed Setup Must Have 3-Character Extension

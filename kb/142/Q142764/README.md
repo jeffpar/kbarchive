@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142764: FIX: Edit Fields Blank When Large Fonts Selected"
-permalink: kb/142/Q142764/
+permalink: /kb/142/Q142764/
 ---
 
 ## Q142764: FIX: Edit Fields Blank When Large Fonts Selected

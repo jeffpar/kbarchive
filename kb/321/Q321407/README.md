@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321407: Dungeon Siege: &quot;Needs to Close&quot; Err Msg When Switching Windows"
-permalink: kb/321/Q321407/
+permalink: /kb/321/Q321407/
 ---
 
 ## Q321407: Dungeon Siege: &quot;Needs to Close&quot; Err Msg When Switching Windows

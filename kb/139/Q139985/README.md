@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139985: WINS Client Fails to Reach a Multihomed Server"
-permalink: kb/139/Q139985/
+permalink: /kb/139/Q139985/
 ---
 
 ## Q139985: WINS Client Fails to Reach a Multihomed Server

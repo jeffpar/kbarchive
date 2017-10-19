@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166017: WD97: Color Borders Print Solid Black Instead of Gray"
-permalink: kb/166/Q166017/
+permalink: /kb/166/Q166017/
 ---
 
 ## Q166017: WD97: Color Borders Print Solid Black Instead of Gray

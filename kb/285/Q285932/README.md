@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285932: BUG: MaxLength Property Is Ignored When Alignment Is Changed"
-permalink: kb/285/Q285932/
+permalink: /kb/285/Q285932/
 ---
 
 ## Q285932: BUG: MaxLength Property Is Ignored When Alignment Is Changed

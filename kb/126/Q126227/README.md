@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126227: Applications Hang When Printing to File with Comma"
-permalink: kb/126/Q126227/
+permalink: /kb/126/Q126227/
 ---
 
 ## Q126227: Applications Hang When Printing to File with Comma

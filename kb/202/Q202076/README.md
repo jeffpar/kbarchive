@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202076: SMS: Query Value Operators for SMS 2.0"
-permalink: kb/202/Q202076/
+permalink: /kb/202/Q202076/
 ---
 
 ## Q202076: SMS: Query Value Operators for SMS 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278246: Combat Flight Simulator 2: How to Optimize Performance"
-permalink: kb/278/Q278246/
+permalink: /kb/278/Q278246/
 ---
 
 ## Q278246: Combat Flight Simulator 2: How to Optimize Performance

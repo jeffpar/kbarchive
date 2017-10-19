@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176127: XCON: Read Receipts Looping in the Message Transfer Agent"
-permalink: kb/176/Q176127/
+permalink: /kb/176/Q176127/
 ---
 
 ## Q176127: XCON: Read Receipts Looping in the Message Transfer Agent

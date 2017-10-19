@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120465: Scenes 2.0: Pauses When Interrupting Screen Saver"
-permalink: kb/120/Q120465/
+permalink: /kb/120/Q120465/
 ---
 
 ## Q120465: Scenes 2.0: Pauses When Interrupting Screen Saver

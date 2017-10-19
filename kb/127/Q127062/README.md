@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127062: Mouse Hangs After Windows 95 Hardware Detection"
-permalink: kb/127/Q127062/
+permalink: /kb/127/Q127062/
 ---
 
 ## Q127062: Mouse Hangs After Windows 95 Hardware Detection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221685: FIX: NODEFAULT in Activate of Page Can Cause Fatal Error"
-permalink: kb/221/Q221685/
+permalink: /kb/221/Q221685/
 ---
 
 ## Q221685: FIX: NODEFAULT in Activate of Page Can Cause Fatal Error

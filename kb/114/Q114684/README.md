@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114684: SFM Err Msg: A Device Attached to the System is Not..."
-permalink: kb/114/Q114684/
+permalink: /kb/114/Q114684/
 ---
 
 ## Q114684: SFM Err Msg: A Device Attached to the System is Not...

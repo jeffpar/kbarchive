@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80565: Sound Blaster's Mixer May Need an Upgrade"
-permalink: kb/080/Q80565/
+permalink: /kb/080/Q80565/
 ---
 
 ## Q80565: Sound Blaster's Mixer May Need an Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271255: Microsoft Reader: Cannot Buy E-Book Content On the Internet"
-permalink: kb/271/Q271255/
+permalink: /kb/271/Q271255/
 ---
 
 ## Q271255: Microsoft Reader: Cannot Buy E-Book Content On the Internet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168852: WD97: Nested Calculations Updated Incorrectly (International)"
-permalink: kb/168/Q168852/
+permalink: /kb/168/Q168852/
 ---
 
 ## Q168852: WD97: Nested Calculations Updated Incorrectly (International)

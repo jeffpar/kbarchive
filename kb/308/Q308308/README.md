@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308308: Designing Solutions with COM+ Technologies Comments and Correcti"
-permalink: kb/308/Q308308/
+permalink: /kb/308/Q308308/
 ---
 
 ## Q308308: Designing Solutions with COM+ Technologies Comments and Correcti

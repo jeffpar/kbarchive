@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63624: BUG: L1027 Error When Object File Name Includes a Parenthesis"
-permalink: kb/063/Q63624/
+permalink: /kb/063/Q63624/
 ---
 
 ## Q63624: BUG: L1027 Error When Object File Name Includes a Parenthesis

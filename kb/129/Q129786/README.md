@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129786: SNA Server and 802.2 Connection Timers (t1, t2, ti)"
-permalink: kb/129/Q129786/
+permalink: /kb/129/Q129786/
 ---
 
 ## Q129786: SNA Server and 802.2 Connection Timers (t1, t2, ti)

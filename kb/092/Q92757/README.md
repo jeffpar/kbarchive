@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92757: VFW: Troubleshooting - Frames Dropping During Playback"
-permalink: kb/092/Q92757/
+permalink: /kb/092/Q92757/
 ---
 
 ## Q92757: VFW: Troubleshooting - Frames Dropping During Playback

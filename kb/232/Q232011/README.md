@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232011: Error Message Starting Windows 95 OSR2 with Unknown Device"
-permalink: kb/232/Q232011/
+permalink: /kb/232/Q232011/
 ---
 
 ## Q232011: Error Message Starting Windows 95 OSR2 with Unknown Device

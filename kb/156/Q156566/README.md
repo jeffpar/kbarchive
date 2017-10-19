@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156566: XCLN: Comparing MMF and PST File Sizes"
-permalink: kb/156/Q156566/
+permalink: /kb/156/Q156566/
 ---
 
 ## Q156566: XCLN: Comparing MMF and PST File Sizes

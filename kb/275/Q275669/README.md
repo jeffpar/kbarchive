@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275669: ODBC Driver for DB2 Truncates Binary Data Flow That Includes NUL"
-permalink: kb/275/Q275669/
+permalink: /kb/275/Q275669/
 ---
 
 ## Q275669: ODBC Driver for DB2 Truncates Binary Data Flow That Includes NUL

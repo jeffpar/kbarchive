@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124656: BUG: SQLColumns Returning NULLABLE May Not Be Accurate"
-permalink: kb/124/Q124656/
+permalink: /kb/124/Q124656/
 ---
 
 ## Q124656: BUG: SQLColumns Returning NULLABLE May Not Be Accurate

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197714: XWEB: OWA/SSL: This Page Contains Secure and Non-secure Items"
-permalink: kb/197/Q197714/
+permalink: /kb/197/Q197714/
 ---
 
 ## Q197714: XWEB: OWA/SSL: This Page Contains Secure and Non-secure Items

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111995: STOP Message: 0xc000000D"
-permalink: kb/111/Q111995/
+permalink: /kb/111/Q111995/
 ---
 
 ## Q111995: STOP Message: 0xc000000D

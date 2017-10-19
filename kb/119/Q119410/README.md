@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119410: PC Win: MSSFS.DLL and TRNSCHED.DLL Copied Locally"
-permalink: kb/119/Q119410/
+permalink: /kb/119/Q119410/
 ---
 
 ## Q119410: PC Win: MSSFS.DLL and TRNSCHED.DLL Copied Locally

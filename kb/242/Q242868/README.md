@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242868: AoE II: Graphic Issues or Pointer Disappears"
-permalink: kb/242/Q242868/
+permalink: /kb/242/Q242868/
 ---
 
 ## Q242868: AoE II: Graphic Issues or Pointer Disappears

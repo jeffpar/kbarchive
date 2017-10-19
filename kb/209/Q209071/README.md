@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209071: BUG: Doc Errors in &quot;Installing and Registering a Control&quot; Topic"
-permalink: kb/209/Q209071/
+permalink: /kb/209/Q209071/
 ---
 
 ## Q209071: BUG: Doc Errors in &quot;Installing and Registering a Control&quot; Topic

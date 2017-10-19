@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64078: RightJus.exe Right Justifies Numbers in List Box"
-permalink: kb/064/Q64078/
+permalink: /kb/064/Q64078/
 ---
 
 ## Q64078: RightJus.exe Right Justifies Numbers in List Box

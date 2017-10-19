@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200002: SMS: Ismif16.exe From Command Line Allows No Spaces In Field"
-permalink: kb/200/Q200002/
+permalink: /kb/200/Q200002/
 ---
 
 ## Q200002: SMS: Ismif16.exe From Command Line Allows No Spaces In Field

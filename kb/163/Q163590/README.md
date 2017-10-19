@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163590: XCLN: Err Msg: The Item Could not be Opened. Type Mismatch"
-permalink: kb/163/Q163590/
+permalink: /kb/163/Q163590/
 ---
 
 ## Q163590: XCLN: Err Msg: The Item Could not be Opened. Type Mismatch

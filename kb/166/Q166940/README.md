@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166940: PRB: Error Attempting to Run Visual FoxPro Online Documentation"
-permalink: kb/166/Q166940/
+permalink: /kb/166/Q166940/
 ---
 
 ## Q166940: PRB: Error Attempting to Run Visual FoxPro Online Documentation

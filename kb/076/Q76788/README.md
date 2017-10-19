@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76788: QAPLUS 4.21 Produces Errors with EMM386.EXE"
-permalink: kb/076/Q76788/
+permalink: /kb/076/Q76788/
 ---
 
 ## Q76788: QAPLUS 4.21 Produces Errors with EMM386.EXE

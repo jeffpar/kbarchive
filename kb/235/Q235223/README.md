@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235223: XADM: Cannot Configure Dial-Up Connections in German Version"
-permalink: kb/235/Q235223/
+permalink: /kb/235/Q235223/
 ---
 
 ## Q235223: XADM: Cannot Configure Dial-Up Connections in German Version

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117312: BUG: GPF When Paging Up To Top, Then Down In Maximized Window"
-permalink: kb/117/Q117312/
+permalink: /kb/117/Q117312/
 ---
 
 ## Q117312: BUG: GPF When Paging Up To Top, Then Down In Maximized Window

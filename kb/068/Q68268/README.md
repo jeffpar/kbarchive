@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68268: Simulating Wildcards"
-permalink: kb/068/Q68268/
+permalink: /kb/068/Q68268/
 ---
 
 ## Q68268: Simulating Wildcards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237832: Asheron's Call: Objects in Game Appear White"
-permalink: kb/237/Q237832/
+permalink: /kb/237/Q237832/
 ---
 
 ## Q237832: Asheron's Call: Objects in Game Appear White

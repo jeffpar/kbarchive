@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101523: INF: Meaning of an Active ODBC Statement Handle"
-permalink: kb/101/Q101523/
+permalink: /kb/101/Q101523/
 ---
 
 ## Q101523: INF: Meaning of an Active ODBC Statement Handle

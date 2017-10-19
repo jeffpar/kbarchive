@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149597: Peer SDLC Connections Allow Invalid Idle Timeout/Retry Values"
-permalink: kb/149/Q149597/
+permalink: /kb/149/Q149597/
 ---
 
 ## Q149597: Peer SDLC Connections Allow Invalid Idle Timeout/Retry Values

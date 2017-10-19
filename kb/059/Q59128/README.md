@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59128: Mac AL GW: Sending Mail Through the AppleLink Gateway"
-permalink: kb/059/Q59128/
+permalink: /kb/059/Q59128/
 ---
 
 ## Q59128: Mac AL GW: Sending Mail Through the AppleLink Gateway

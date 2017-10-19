@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165000: XCLN: How to Enable Hyperlinks in an Exchange Form"
-permalink: kb/165/Q165000/
+permalink: /kb/165/Q165000/
 ---
 
 ## Q165000: XCLN: How to Enable Hyperlinks in an Exchange Form

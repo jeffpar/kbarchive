@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151898: BUG: Include Directories Cannot End with a Backslash"
-permalink: kb/151/Q151898/
+permalink: /kb/151/Q151898/
 ---
 
 ## Q151898: BUG: Include Directories Cannot End with a Backslash

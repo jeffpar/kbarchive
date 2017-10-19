@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152721: Low on Registry Quota Error Gives Wrong Steps for Resolution"
-permalink: kb/152/Q152721/
+permalink: /kb/152/Q152721/
 ---
 
 ## Q152721: Low on Registry Quota Error Gives Wrong Steps for Resolution

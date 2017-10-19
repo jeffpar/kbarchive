@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168359: MSB Rainforest: Minimum System Requirements for Windows"
-permalink: kb/168/Q168359/
+permalink: /kb/168/Q168359/
 ---
 
 ## Q168359: MSB Rainforest: Minimum System Requirements for Windows

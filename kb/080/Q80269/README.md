@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80269: PC Gen: Contents of Modem Script File VSERIES.MDM"
-permalink: kb/080/Q80269/
+permalink: /kb/080/Q80269/
 ---
 
 ## Q80269: PC Gen: Contents of Modem Script File VSERIES.MDM

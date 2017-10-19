@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245445: Err Msg: The Subscription Coupon Number You Entered..."
-permalink: kb/245/Q245445/
+permalink: /kb/245/Q245445/
 ---
 
 ## Q245445: Err Msg: The Subscription Coupon Number You Entered...

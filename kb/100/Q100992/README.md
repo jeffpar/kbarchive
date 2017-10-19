@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100992: Incorrect Message Displayed When Retrieving Catalog Files"
-permalink: kb/100/Q100992/
+permalink: /kb/100/Q100992/
 ---
 
 ## Q100992: Incorrect Message Displayed When Retrieving Catalog Files

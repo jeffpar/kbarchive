@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295753: XFOR: Dirsync Between Exchange Server 5.5 &amp; cc:Mail"
-permalink: kb/295/Q295753/
+permalink: /kb/295/Q295753/
 ---
 
 ## Q295753: XFOR: Dirsync Between Exchange Server 5.5 &amp; cc:Mail

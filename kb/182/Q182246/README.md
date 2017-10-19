@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182246: WD97: Custom Toolbar Lost Saving Document as New Template"
-permalink: kb/182/Q182246/
+permalink: /kb/182/Q182246/
 ---
 
 ## Q182246: WD97: Custom Toolbar Lost Saving Document as New Template

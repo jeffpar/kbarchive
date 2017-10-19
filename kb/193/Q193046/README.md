@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193046: Err Msg: Couldn't Find the Microsoft Expedia Streets 98 CD-ROM"
-permalink: kb/193/Q193046/
+permalink: /kb/193/Q193046/
 ---
 
 ## Q193046: Err Msg: Couldn't Find the Microsoft Expedia Streets 98 CD-ROM

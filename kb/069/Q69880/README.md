@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69880: LAN Manager Troubleshooting Guide"
-permalink: kb/069/Q69880/
+permalink: /kb/069/Q69880/
 ---
 
 ## Q69880: LAN Manager Troubleshooting Guide

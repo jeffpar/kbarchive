@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241117: XFOR: Exchange Server 5.5 DXA Returns DS_E_BAD_ARGUMENT"
-permalink: kb/241/Q241117/
+permalink: /kb/241/Q241117/
 ---
 
 ## Q241117: XFOR: Exchange Server 5.5 DXA Returns DS_E_BAD_ARGUMENT

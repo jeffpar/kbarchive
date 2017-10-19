@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168463: SMS: PCM Service Keeps Client Components From Getting Updated"
-permalink: kb/168/Q168463/
+permalink: /kb/168/Q168463/
 ---
 
 ## Q168463: SMS: PCM Service Keeps Client Components From Getting Updated

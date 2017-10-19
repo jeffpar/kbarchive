@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273662: Incorrect Short File Names Generated in Japanese Windows NT 4.0"
-permalink: kb/273/Q273662/
+permalink: /kb/273/Q273662/
 ---
 
 ## Q273662: Incorrect Short File Names Generated in Japanese Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107357: PC Forms: Incorrect Data Printed from Subform"
-permalink: kb/107/Q107357/
+permalink: /kb/107/Q107357/
 ---
 
 ## Q107357: PC Forms: Incorrect Data Printed from Subform

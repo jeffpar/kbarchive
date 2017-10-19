@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191626: FIX: CComVariant &gt; and &lt; Operators Cause LNK2001 Errors"
-permalink: kb/191/Q191626/
+permalink: /kb/191/Q191626/
 ---
 
 ## Q191626: FIX: CComVariant &gt; and &lt; Operators Cause LNK2001 Errors

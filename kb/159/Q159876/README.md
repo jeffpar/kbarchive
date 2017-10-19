@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159876: XADM: Permissions Lost During Move Mailbox Operation"
-permalink: kb/159/Q159876/
+permalink: /kb/159/Q159876/
 ---
 
 ## Q159876: XADM: Permissions Lost During Move Mailbox Operation

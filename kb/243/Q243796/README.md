@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243796: Pswd. Required with App. Override Sec. &amp; Persistent Verification"
-permalink: kb/243/Q243796/
+permalink: /kb/243/Q243796/
 ---
 
 ## Q243796: Pswd. Required with App. Override Sec. &amp; Persistent Verification

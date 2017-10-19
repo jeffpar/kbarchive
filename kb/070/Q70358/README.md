@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70358: BUG: Num of Help Topic Lines May Cause Trash or GP Fault in QH"
-permalink: kb/070/Q70358/
+permalink: /kb/070/Q70358/
 ---
 
 ## Q70358: BUG: Num of Help Topic Lines May Cause Trash or GP Fault in QH

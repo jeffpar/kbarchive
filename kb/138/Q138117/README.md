@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138117: Err Msg: The Backup Set is Not Completely Cataloged"
-permalink: kb/138/Q138117/
+permalink: /kb/138/Q138117/
 ---
 
 ## Q138117: Err Msg: The Backup Set is Not Completely Cataloged

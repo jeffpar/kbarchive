@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170406: WD97: Allow Fast Saves Option Not Selected by Default"
-permalink: kb/170/Q170406/
+permalink: /kb/170/Q170406/
 ---
 
 ## Q170406: WD97: Allow Fast Saves Option Not Selected by Default

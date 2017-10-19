@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135229: Paradox Coaches Button is Not Displayed"
-permalink: kb/135/Q135229/
+permalink: /kb/135/Q135229/
 ---
 
 ## Q135229: Paradox Coaches Button is Not Displayed

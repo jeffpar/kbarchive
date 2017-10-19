@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153259: International Client Displays English Error Messages"
-permalink: kb/153/Q153259/
+permalink: /kb/153/Q153259/
 ---
 
 ## Q153259: International Client Displays English Error Messages

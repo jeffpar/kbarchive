@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80822: NoSwitch.exe Prevents Windows from Switching Tasks"
-permalink: kb/080/Q80822/
+permalink: /kb/080/Q80822/
 ---
 
 ## Q80822: NoSwitch.exe Prevents Windows from Switching Tasks

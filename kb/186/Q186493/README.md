@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186493: SAMPLE: LLStream.exe Plays Streaming Audio Files"
-permalink: kb/186/Q186493/
+permalink: /kb/186/Q186493/
 ---
 
 ## Q186493: SAMPLE: LLStream.exe Plays Streaming Audio Files

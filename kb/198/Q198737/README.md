@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198737: SMS: Changes Irreversible When Logging Components to One File"
-permalink: kb/198/Q198737/
+permalink: /kb/198/Q198737/
 ---
 
 ## Q198737: SMS: Changes Irreversible When Logging Components to One File

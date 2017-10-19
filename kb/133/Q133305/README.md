@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133305: Installing a LAN Manager MS-DOS Client Over the Network"
-permalink: kb/133/Q133305/
+permalink: /kb/133/Q133305/
 ---
 
 ## Q133305: Installing a LAN Manager MS-DOS Client Over the Network

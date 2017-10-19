@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235465: MMC Access Violation Connecting to Remote IIS Server with SMTP"
-permalink: kb/235/Q235465/
+permalink: /kb/235/Q235465/
 ---
 
 ## Q235465: MMC Access Violation Connecting to Remote IIS Server with SMTP

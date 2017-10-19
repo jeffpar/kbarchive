@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244405: SMS: Distribution Manager May Not Remove Compressed Package"
-permalink: kb/244/Q244405/
+permalink: /kb/244/Q244405/
 ---
 
 ## Q244405: SMS: Distribution Manager May Not Remove Compressed Package

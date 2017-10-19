@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162560: PPT7: How to Change the Font Size in PowerPoint Dialog Boxes"
-permalink: kb/162/Q162560/
+permalink: /kb/162/Q162560/
 ---
 
 ## Q162560: PPT7: How to Change the Font Size in PowerPoint Dialog Boxes

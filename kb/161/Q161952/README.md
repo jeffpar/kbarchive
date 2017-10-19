@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161952: XFOR: Messages Sent with MSMI Are Malformed"
-permalink: kb/161/Q161952/
+permalink: /kb/161/Q161952/
 ---
 
 ## Q161952: XFOR: Messages Sent with MSMI Are Malformed

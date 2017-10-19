@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96701: DoubleSpace Err Msg: Unknown Error Cause by Watchdog PC"
-permalink: kb/096/Q96701/
+permalink: /kb/096/Q96701/
 ---
 
 ## Q96701: DoubleSpace Err Msg: Unknown Error Cause by Watchdog PC

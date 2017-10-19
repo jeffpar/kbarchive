@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122052: Logical Block Addressing (LBA) Defined"
-permalink: kb/122/Q122052/
+permalink: /kb/122/Q122052/
 ---
 
 ## Q122052: Logical Block Addressing (LBA) Defined

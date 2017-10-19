@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171730: WD97: How to Retain the Template View in the New Dialog Box"
-permalink: kb/171/Q171730/
+permalink: /kb/171/Q171730/
 ---
 
 ## Q171730: WD97: How to Retain the Template View in the New Dialog Box

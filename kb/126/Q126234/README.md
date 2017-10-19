@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126234: Cannot Save or Print Buildings in Modeling Wright"
-permalink: kb/126/Q126234/
+permalink: /kb/126/Q126234/
 ---
 
 ## Q126234: Cannot Save or Print Buildings in Modeling Wright

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195289: Page Footers Do Not Work on ASP Pages"
-permalink: kb/195/Q195289/
+permalink: /kb/195/Q195289/
 ---
 
 ## Q195289: Page Footers Do Not Work on ASP Pages

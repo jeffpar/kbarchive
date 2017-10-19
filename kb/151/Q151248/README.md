@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151248: XCLN: URLs With Spaces are Truncated by Exchange Client"
-permalink: kb/151/Q151248/
+permalink: /kb/151/Q151248/
 ---
 
 ## Q151248: XCLN: URLs With Spaces are Truncated by Exchange Client

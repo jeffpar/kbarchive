@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110567: At Work PC Fax ErrMsg: Attachment Type Was Not Supported"
-permalink: kb/110/Q110567/
+permalink: /kb/110/Q110567/
 ---
 
 ## Q110567: At Work PC Fax ErrMsg: Attachment Type Was Not Supported

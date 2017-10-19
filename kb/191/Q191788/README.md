@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191788: PRB: rdoConnection_Connect Event Does Not Always Fire"
-permalink: kb/191/Q191788/
+permalink: /kb/191/Q191788/
 ---
 
 ## Q191788: PRB: rdoConnection_Connect Event Does Not Always Fire

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86149: PROFS: Description of an Incident Report, How It Can Be Used"
-permalink: kb/086/Q86149/
+permalink: /kb/086/Q86149/
 ---
 
 ## Q86149: PROFS: Description of an Incident Report, How It Can Be Used

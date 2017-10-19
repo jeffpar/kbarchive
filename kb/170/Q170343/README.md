@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170343: Administrator Cannot Set Logon Banner on ZAK Workstation"
-permalink: kb/170/Q170343/
+permalink: /kb/170/Q170343/
 ---
 
 ## Q170343: Administrator Cannot Set Logon Banner on ZAK Workstation

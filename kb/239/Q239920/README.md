@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239920: XFOR: Connect-ME SNADS Gateway Stops Working with Dr. Watson"
-permalink: kb/239/Q239920/
+permalink: /kb/239/Q239920/
 ---
 
 ## Q239920: XFOR: Connect-ME SNADS Gateway Stops Working with Dr. Watson

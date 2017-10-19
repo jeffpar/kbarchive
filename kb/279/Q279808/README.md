@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279808: Encarta World Atlas 2001: Multimedia Features Perform Slowly"
-permalink: kb/279/Q279808/
+permalink: /kb/279/Q279808/
 ---
 
 ## Q279808: Encarta World Atlas 2001: Multimedia Features Perform Slowly

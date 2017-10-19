@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155982: WD97: Hyperlink Style Format Is Not Retained After Merge"
-permalink: kb/155/Q155982/
+permalink: /kb/155/Q155982/
 ---
 
 ## Q155982: WD97: Hyperlink Style Format Is Not Retained After Merge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221824: FS98/2000: Sounds Are Played Through Only One Speaker"
-permalink: kb/221/Q221824/
+permalink: /kb/221/Q221824/
 ---
 
 ## Q221824: FS98/2000: Sounds Are Played Through Only One Speaker

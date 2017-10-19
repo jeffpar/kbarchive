@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122647: Stop 0xA When Upgrading to Windows NT 3.5 with HP 2724xx NICs"
-permalink: kb/122/Q122647/
+permalink: /kb/122/Q122647/
 ---
 
 ## Q122647: Stop 0xA When Upgrading to Windows NT 3.5 with HP 2724xx NICs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94915: DOCERR: LIB Command Line Documented Incorrectly"
-permalink: kb/094/Q94915/
+permalink: /kb/094/Q94915/
 ---
 
 ## Q94915: DOCERR: LIB Command Line Documented Incorrectly

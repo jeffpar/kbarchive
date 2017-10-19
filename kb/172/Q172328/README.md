@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172328: WD97: Mail Merge with Merged Cells in Data Table Hangs Word"
-permalink: kb/172/Q172328/
+permalink: /kb/172/Q172328/
 ---
 
 ## Q172328: WD97: Mail Merge with Merged Cells in Data Table Hangs Word

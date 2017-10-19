@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193243: HOWTO: Set the Default Window's Printer Using OLE Automation"
-permalink: kb/193/Q193243/
+permalink: /kb/193/Q193243/
 ---
 
 ## Q193243: HOWTO: Set the Default Window's Printer Using OLE Automation

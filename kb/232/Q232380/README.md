@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232380: XCLN: Tentative Appointments Missing Schedule+ Free Busy Message"
-permalink: kb/232/Q232380/
+permalink: /kb/232/Q232380/
 ---
 
 ## Q232380: XCLN: Tentative Appointments Missing Schedule+ Free Busy Message

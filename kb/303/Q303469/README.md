@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303469: Combat Flight Simulator 2: Black Screen Appears at Start of Game"
-permalink: kb/303/Q303469/
+permalink: /kb/303/Q303469/
 ---
 
 ## Q303469: Combat Flight Simulator 2: Black Screen Appears at Start of Game

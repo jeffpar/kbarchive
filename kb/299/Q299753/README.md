@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299753: Train Simulator: Fatal Exception When You Start Train Simulator"
-permalink: kb/299/Q299753/
+permalink: /kb/299/Q299753/
 ---
 
 ## Q299753: Train Simulator: Fatal Exception When You Start Train Simulator

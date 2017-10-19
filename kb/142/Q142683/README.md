@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142683: Cannot Run Setup for Office 95 on Windows NT Alpha Platform"
-permalink: kb/142/Q142683/
+permalink: /kb/142/Q142683/
 ---
 
 ## Q142683: Cannot Run Setup for Office 95 on Windows NT Alpha Platform

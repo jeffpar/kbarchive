@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237528: Encarta 2000: Unable to Play Song of Red-Winged Blackbird"
-permalink: kb/237/Q237528/
+permalink: /kb/237/Q237528/
 ---
 
 ## Q237528: Encarta 2000: Unable to Play Song of Red-Winged Blackbird

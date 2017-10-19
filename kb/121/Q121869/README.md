@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121869: Mouse Stops Responding After Idle Period"
-permalink: kb/121/Q121869/
+permalink: /kb/121/Q121869/
 ---
 
 ## Q121869: Mouse Stops Responding After Idle Period

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174956: WINS, DHCP, and DNS Not Supported As Failover Resource"
-permalink: kb/174/Q174956/
+permalink: /kb/174/Q174956/
 ---
 
 ## Q174956: WINS, DHCP, and DNS Not Supported As Failover Resource

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117916: ADT2: ADT Splash Screen Is Not Repainted"
-permalink: kb/117/Q117916/
+permalink: /kb/117/Q117916/
 ---
 
 ## Q117916: ADT2: ADT Splash Screen Is Not Repainted

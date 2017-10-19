@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179262: FP: JavaScript Moves from &lt;Head&gt; to &lt;Body&gt; Element"
-permalink: kb/179/Q179262/
+permalink: /kb/179/Q179262/
 ---
 
 ## Q179262: FP: JavaScript Moves from &lt;Head&gt; to &lt;Body&gt; Element

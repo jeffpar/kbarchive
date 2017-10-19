@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177554: BUG: MousePointer Cannot Be Set to 99-Custom for Form Objects"
-permalink: kb/177/Q177554/
+permalink: /kb/177/Q177554/
 ---
 
 ## Q177554: BUG: MousePointer Cannot Be Set to 99-Custom for Form Objects

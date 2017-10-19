@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194076: XWEB: OWA Client Cannot Access Folders with Affinity"
-permalink: kb/194/Q194076/
+permalink: /kb/194/Q194076/
 ---
 
 ## Q194076: XWEB: OWA Client Cannot Access Folders with Affinity

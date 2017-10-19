@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172037: Terminal Font Selection Not Saved In Telnet"
-permalink: kb/172/Q172037/
+permalink: /kb/172/Q172037/
 ---
 
 ## Q172037: Terminal Font Selection Not Saved In Telnet

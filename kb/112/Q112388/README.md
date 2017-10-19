@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112388: GETBASEIRQ EscapeCommFunction()"
-permalink: kb/112/Q112388/
+permalink: /kb/112/Q112388/
 ---
 
 ## Q112388: GETBASEIRQ EscapeCommFunction()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181890: PRB: Known OLE DB Provider Problems with Visual C++ 6.0 Wizards"
-permalink: kb/181/Q181890/
+permalink: /kb/181/Q181890/
 ---
 
 ## Q181890: PRB: Known OLE DB Provider Problems with Visual C++ 6.0 Wizards

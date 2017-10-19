@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162500: Invalid Page Fault Opening File in Microsoft Paint"
-permalink: kb/162/Q162500/
+permalink: /kb/162/Q162500/
 ---
 
 ## Q162500: Invalid Page Fault Opening File in Microsoft Paint

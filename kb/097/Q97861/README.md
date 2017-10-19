@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97861: WD97: Page Numbering in &quot;Page of Total Pages in Section&quot; Format"
-permalink: kb/097/Q97861/
+permalink: /kb/097/Q97861/
 ---
 
 ## Q97861: WD97: Page Numbering in &quot;Page of Total Pages in Section&quot; Format

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217746: .CSV Files Missing from Deploying Microsoft Exchange Server 5.5"
-permalink: kb/217/Q217746/
+permalink: /kb/217/Q217746/
 ---
 
 ## Q217746: .CSV Files Missing from Deploying Microsoft Exchange Server 5.5

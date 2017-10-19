@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122704: WSS: Excel 5.0 &quot;Proof On Entry&quot; Does Not Display Check Mark"
-permalink: kb/122/Q122704/
+permalink: /kb/122/Q122704/
 ---
 
 ## Q122704: WSS: Excel 5.0 &quot;Proof On Entry&quot; Does Not Display Check Mark

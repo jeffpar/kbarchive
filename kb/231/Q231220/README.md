@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231220: SMS: Unable to Create a Secondary Site of a Child Primary Site"
-permalink: kb/231/Q231220/
+permalink: /kb/231/Q231220/
 ---
 
 ## Q231220: SMS: Unable to Create a Secondary Site of a Child Primary Site

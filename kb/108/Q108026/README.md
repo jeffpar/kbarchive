@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108026: PC Win: Global Address List Name Search Returns All Names"
-permalink: kb/108/Q108026/
+permalink: /kb/108/Q108026/
 ---
 
 ## Q108026: PC Win: Global Address List Name Search Returns All Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94199: TaxCut for Windows Requires Windows 3.1"
-permalink: kb/094/Q94199/
+permalink: /kb/094/Q94199/
 ---
 
 ## Q94199: TaxCut for Windows Requires Windows 3.1

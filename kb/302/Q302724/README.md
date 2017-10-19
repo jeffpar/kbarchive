@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302724: Windows XP Guest Profile Cannot Sign In To MSN Explorer 6.1 Afte"
-permalink: kb/302/Q302724/
+permalink: /kb/302/Q302724/
 ---
 
 ## Q302724: Windows XP Guest Profile Cannot Sign In To MSN Explorer 6.1 Afte

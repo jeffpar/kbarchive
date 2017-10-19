@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139632: Error 1057 Appears Using INSTSRV In Windows NT Resource Kit"
-permalink: kb/139/Q139632/
+permalink: /kb/139/Q139632/
 ---
 
 ## Q139632: Error 1057 Appears Using INSTSRV In Windows NT Resource Kit

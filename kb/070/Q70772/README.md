@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70772: How the HP Intellifont Setup Modifies Windows 3.0"
-permalink: kb/070/Q70772/
+permalink: /kb/070/Q70772/
 ---
 
 ## Q70772: How the HP Intellifont Setup Modifies Windows 3.0

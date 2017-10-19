@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276199: SNA Manager (Snaexp.exe) Trapping in CSnaOleObj::CreateObject"
-permalink: kb/276/Q276199/
+permalink: /kb/276/Q276199/
 ---
 
 ## Q276199: SNA Manager (Snaexp.exe) Trapping in CSnaOleObj::CreateObject

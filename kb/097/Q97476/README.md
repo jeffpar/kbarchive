@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97476: ATI Ultra Pro Video Card May Not Work with 8514 Driver"
-permalink: kb/097/Q97476/
+permalink: /kb/097/Q97476/
 ---
 
 ## Q97476: ATI Ultra Pro Video Card May Not Work with 8514 Driver

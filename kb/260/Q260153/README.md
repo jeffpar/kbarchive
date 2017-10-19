@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260153: XCLN: Deleted Items Folder Is Emptied When Installing a Form"
-permalink: kb/260/Q260153/
+permalink: /kb/260/Q260153/
 ---
 
 ## Q260153: XCLN: Deleted Items Folder Is Emptied When Installing a Form

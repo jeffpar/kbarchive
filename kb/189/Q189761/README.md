@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189761: WD97: Blank Line Placed Between Header and First Line of Text"
-permalink: kb/189/Q189761/
+permalink: /kb/189/Q189761/
 ---
 
 ## Q189761: WD97: Blank Line Placed Between Header and First Line of Text

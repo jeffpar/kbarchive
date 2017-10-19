@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132836: Windows 95 Does Not Auto-Detect Some EISA Cards"
-permalink: kb/132/Q132836/
+permalink: /kb/132/Q132836/
 ---
 
 ## Q132836: Windows 95 Does Not Auto-Detect Some EISA Cards

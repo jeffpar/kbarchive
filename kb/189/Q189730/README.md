@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189730: XFOR: IMC Fails to Start After Upgrading to Windows NT 4.0"
-permalink: kb/189/Q189730/
+permalink: /kb/189/Q189730/
 ---
 
 ## Q189730: XFOR: IMC Fails to Start After Upgrading to Windows NT 4.0

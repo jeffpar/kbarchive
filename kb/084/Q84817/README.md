@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84817: Using the MIDI Mapper"
-permalink: kb/084/Q84817/
+permalink: /kb/084/Q84817/
 ---
 
 ## Q84817: Using the MIDI Mapper

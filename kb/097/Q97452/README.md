@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97452: Clean Boot Hangs Computer with a Corrupted COMMAND.COM File"
-permalink: kb/097/Q97452/
+permalink: /kb/097/Q97452/
 ---
 
 ## Q97452: Clean Boot Hangs Computer with a Corrupted COMMAND.COM File

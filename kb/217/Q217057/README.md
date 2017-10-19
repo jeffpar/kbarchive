@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217057: Unable to Bring New Network Name Resource On Line"
-permalink: kb/217/Q217057/
+permalink: /kb/217/Q217057/
 ---
 
 ## Q217057: Unable to Bring New Network Name Resource On Line

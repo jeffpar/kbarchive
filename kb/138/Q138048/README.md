@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138048: Server Name Not Displayed in Login Dialog Box"
-permalink: kb/138/Q138048/
+permalink: /kb/138/Q138048/
 ---
 
 ## Q138048: Server Name Not Displayed in Login Dialog Box

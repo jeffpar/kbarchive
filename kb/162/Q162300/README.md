@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162300: HOWTO: Converting VFP3 Source Control Projects to VFP5"
-permalink: kb/162/Q162300/
+permalink: /kb/162/Q162300/
 ---
 
 ## Q162300: HOWTO: Converting VFP3 Source Control Projects to VFP5

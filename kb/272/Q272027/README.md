@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272027: Encarta: Sounds Not Played During Serengeti Plain Virtual Tour"
-permalink: kb/272/Q272027/
+permalink: /kb/272/Q272027/
 ---
 
 ## Q272027: Encarta: Sounds Not Played During Serengeti Plain Virtual Tour

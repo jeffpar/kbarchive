@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178627: XFOR: Chat Server 2.0 Can Fail with Extremely Heavy Usage"
-permalink: kb/178/Q178627/
+permalink: /kb/178/Q178627/
 ---
 
 ## Q178627: XFOR: Chat Server 2.0 Can Fail with Extremely Heavy Usage

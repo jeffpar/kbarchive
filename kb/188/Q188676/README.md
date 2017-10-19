@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188676: XADM: Log Stalls/sec Are Regularly Greater Than 0 (Zero)"
-permalink: kb/188/Q188676/
+permalink: /kb/188/Q188676/
 ---
 
 ## Q188676: XADM: Log Stalls/sec Are Regularly Greater Than 0 (Zero)

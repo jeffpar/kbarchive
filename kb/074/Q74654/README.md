@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74654: Undocumented Keystroke CTRL+SPACEBAR in MS-DOS Shell"
-permalink: kb/074/Q74654/
+permalink: /kb/074/Q74654/
 ---
 
 ## Q74654: Undocumented Keystroke CTRL+SPACEBAR in MS-DOS Shell

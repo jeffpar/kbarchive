@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179802: XCLN: Error Msg: Application Error, Call to Undefined Dynalink"
-permalink: kb/179/Q179802/
+permalink: /kb/179/Q179802/
 ---
 
 ## Q179802: XCLN: Error Msg: Application Error, Call to Undefined Dynalink

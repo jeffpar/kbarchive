@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158477: WD97: Object Deleted When You Run Letter Wizard"
-permalink: kb/158/Q158477/
+permalink: /kb/158/Q158477/
 ---
 
 ## Q158477: WD97: Object Deleted When You Run Letter Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78235: Bookshelf for Windows 1991: Manual Installation Instructions"
-permalink: kb/078/Q78235/
+permalink: /kb/078/Q78235/
 ---
 
 ## Q78235: Bookshelf for Windows 1991: Manual Installation Instructions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140400: GSNW/CSNW Creates 8.3-Format Directory Names in Uppercase Only"
-permalink: kb/140/Q140400/
+permalink: /kb/140/Q140400/
 ---
 
 ## Q140400: GSNW/CSNW Creates 8.3-Format Directory Names in Uppercase Only

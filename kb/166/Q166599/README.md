@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166599: XWEB: MMP files Created by MAPI and CDO"
-permalink: kb/166/Q166599/
+permalink: /kb/166/Q166599/
 ---
 
 ## Q166599: XWEB: MMP files Created by MAPI and CDO

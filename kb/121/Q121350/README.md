@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121350: CTRL Key Does Not Work in Windows or Windows for Workgroups"
-permalink: kb/121/Q121350/
+permalink: /kb/121/Q121350/
 ---
 
 ## Q121350: CTRL Key Does Not Work in Windows or Windows for Workgroups

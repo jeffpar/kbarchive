@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95391: BUG: Superclassed Scroll Bar's Parent Not Sent WM_CTLCOLOR Msg"
-permalink: kb/095/Q95391/
+permalink: /kb/095/Q95391/
 ---
 
 ## Q95391: BUG: Superclassed Scroll Bar's Parent Not Sent WM_CTLCOLOR Msg

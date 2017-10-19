@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152733: Command Prompt Copy Command Strips Read Only Attribute"
-permalink: kb/152/Q152733/
+permalink: /kb/152/Q152733/
 ---
 
 ## Q152733: Command Prompt Copy Command Strips Read Only Attribute

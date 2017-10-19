@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103528: Removing SWITCHES=/F/N from the DBLSPACE.INI File"
-permalink: kb/103/Q103528/
+permalink: /kb/103/Q103528/
 ---
 
 ## Q103528: Removing SWITCHES=/F/N from the DBLSPACE.INI File

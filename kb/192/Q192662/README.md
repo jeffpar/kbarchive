@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192662: SMS: Remote Control GPFs with Certain Mouse Drivers"
-permalink: kb/192/Q192662/
+permalink: /kb/192/Q192662/
 ---
 
 ## Q192662: SMS: Remote Control GPFs with Certain Mouse Drivers

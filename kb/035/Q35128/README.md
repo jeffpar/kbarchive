@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35128: PRB: Line Parsing Order: Looks Up Second Token First"
-permalink: kb/035/Q35128/
+permalink: /kb/035/Q35128/
 ---
 
 ## Q35128: PRB: Line Parsing Order: Looks Up Second Token First

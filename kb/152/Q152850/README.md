@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152850: XADM: Local Group Permissions not Valid for Member Server"
-permalink: kb/152/Q152850/
+permalink: /kb/152/Q152850/
 ---
 
 ## Q152850: XADM: Local Group Permissions not Valid for Member Server

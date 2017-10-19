@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248094: BUG: Fatal error RC1022 or Error RC2104"
-permalink: kb/248/Q248094/
+permalink: /kb/248/Q248094/
 ---
 
 ## Q248094: BUG: Fatal error RC1022 or Error RC2104

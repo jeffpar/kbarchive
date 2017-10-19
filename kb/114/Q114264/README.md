@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114264: PC Tools Utilities Fail When 32-Bit Access Is Enabled"
-permalink: kb/114/Q114264/
+permalink: /kb/114/Q114264/
 ---
 
 ## Q114264: PC Tools Utilities Fail When 32-Bit Access Is Enabled

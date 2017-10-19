@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228942: SP4 May Cause Loss of TCP/IP Connectivity in WLBS Host"
-permalink: kb/228/Q228942/
+permalink: /kb/228/Q228942/
 ---
 
 ## Q228942: SP4 May Cause Loss of TCP/IP Connectivity in WLBS Host

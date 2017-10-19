@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159264: XGEN: Online Help Error in X.400 Schedule Property Page"
-permalink: kb/159/Q159264/
+permalink: /kb/159/Q159264/
 ---
 
 ## Q159264: XGEN: Online Help Error in X.400 Schedule Property Page

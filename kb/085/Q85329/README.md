@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85329: BUG: GlobalPageLock() Moves Memory Fixed by GlobalFix()"
-permalink: kb/085/Q85329/
+permalink: /kb/085/Q85329/
 ---
 
 ## Q85329: BUG: GlobalPageLock() Moves Memory Fixed by GlobalFix()

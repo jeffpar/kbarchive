@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170072: Host Security Update Renames SNAREG.DLL"
-permalink: kb/170/Q170072/
+permalink: /kb/170/Q170072/
 ---
 
 ## Q170072: Host Security Update Renames SNAREG.DLL

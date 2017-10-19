@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159170: XADM: Calling HRBackupGetDatabaseNames Returns Invalid Parameter"
-permalink: kb/159/Q159170/
+permalink: /kb/159/Q159170/
 ---
 
 ## Q159170: XADM: Calling HRBackupGetDatabaseNames Returns Invalid Parameter

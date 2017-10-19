@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155349: &quot;Invalid Media&quot; Error Message Formatting FAT32 Partition"
-permalink: kb/155/Q155349/
+permalink: /kb/155/Q155349/
 ---
 
 ## Q155349: &quot;Invalid Media&quot; Error Message Formatting FAT32 Partition

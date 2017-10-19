@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100539: FIX: No C4051 Warnings Compiling .CPP or .CXX Files"
-permalink: kb/100/Q100539/
+permalink: /kb/100/Q100539/
 ---
 
 ## Q100539: FIX: No C4051 Warnings Compiling .CPP or .CXX Files

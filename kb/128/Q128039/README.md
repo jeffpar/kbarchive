@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128039: DOS Inventory Agent Hangs on HP Vectra"
-permalink: kb/128/Q128039/
+permalink: /kb/128/Q128039/
 ---
 
 ## Q128039: DOS Inventory Agent Hangs on HP Vectra

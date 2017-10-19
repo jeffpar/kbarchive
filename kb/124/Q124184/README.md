@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124184: Service Running as System Account Fails Accessing Network"
-permalink: kb/124/Q124184/
+permalink: /kb/124/Q124184/
 ---
 
 ## Q124184: Service Running as System Account Fails Accessing Network

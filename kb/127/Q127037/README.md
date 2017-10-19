@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127037: Purpose of CHARACTER BINARY and MEMO BINARY Fields"
-permalink: kb/127/Q127037/
+permalink: /kb/127/Q127037/
 ---
 
 ## Q127037: Purpose of CHARACTER BINARY and MEMO BINARY Fields

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124530: INFO: Visual SourceSafe Project Oriented Version Control"
-permalink: kb/124/Q124530/
+permalink: /kb/124/Q124530/
 ---
 
 ## Q124530: INFO: Visual SourceSafe Project Oriented Version Control

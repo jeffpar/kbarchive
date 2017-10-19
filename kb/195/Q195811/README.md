@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195811: DNS Server May Write Back Incorrect Root Hints"
-permalink: kb/195/Q195811/
+permalink: /kb/195/Q195811/
 ---
 
 ## Q195811: DNS Server May Write Back Incorrect Root Hints

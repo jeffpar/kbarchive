@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286189: HOWTO: Invoke OLE DB Data Link Properties Dialog Box in VB Code"
-permalink: kb/286/Q286189/
+permalink: /kb/286/Q286189/
 ---
 
 ## Q286189: HOWTO: Invoke OLE DB Data Link Properties Dialog Box in VB Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49064: INFO: Declaring a Pointer to a Function: C4071, C4001, or C4220"
-permalink: kb/049/Q49064/
+permalink: /kb/049/Q49064/
 ---
 
 ## Q49064: INFO: Declaring a Pointer to a Function: C4071, C4001, or C4220

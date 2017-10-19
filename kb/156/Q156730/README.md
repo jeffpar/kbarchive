@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156730: XFOR: CSI Type Addresses Show Up in Exchange GAL"
-permalink: kb/156/Q156730/
+permalink: /kb/156/Q156730/
 ---
 
 ## Q156730: XFOR: CSI Type Addresses Show Up in Exchange GAL

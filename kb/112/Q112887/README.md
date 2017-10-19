@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112887: PC Gen: Err Msg: Notice 6 Error in Mail Header Retrieval"
-permalink: kb/112/Q112887/
+permalink: /kb/112/Q112887/
 ---
 
 ## Q112887: PC Gen: Err Msg: Notice 6 Error in Mail Header Retrieval

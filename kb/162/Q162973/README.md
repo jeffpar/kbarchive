@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162973: ODE97: Changing the Application Name Does Not Change Folder Name"
-permalink: kb/162/Q162973/
+permalink: /kb/162/Q162973/
 ---
 
 ## Q162973: ODE97: Changing the Application Name Does Not Change Folder Name

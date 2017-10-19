@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166817: FIX: Alpha MFC Regular DLL Fails After Porting from Intel"
-permalink: kb/166/Q166817/
+permalink: /kb/166/Q166817/
 ---
 
 ## Q166817: FIX: Alpha MFC Regular DLL Fails After Porting from Intel

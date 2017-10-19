@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132590: Math Co-Processor &quot;Present&quot;/&quot;Not Present&quot; Printed in English"
-permalink: kb/132/Q132590/
+permalink: /kb/132/Q132590/
 ---
 
 ## Q132590: Math Co-Processor &quot;Present&quot;/&quot;Not Present&quot; Printed in English

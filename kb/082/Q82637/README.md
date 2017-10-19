@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82637: Using Windows 3.0 Communications Drivers with Windows 3.1"
-permalink: kb/082/Q82637/
+permalink: /kb/082/Q82637/
 ---
 
 ## Q82637: Using Windows 3.0 Communications Drivers with Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146449: Description of Microsoft Windows 95 Service Pack 1 Components"
-permalink: kb/146/Q146449/
+permalink: /kb/146/Q146449/
 ---
 
 ## Q146449: Description of Microsoft Windows 95 Service Pack 1 Components

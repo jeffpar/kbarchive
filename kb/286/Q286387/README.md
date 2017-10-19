@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286387: SMS: Software Inventory Doesn't Update SMS Database"
-permalink: kb/286/Q286387/
+permalink: /kb/286/Q286387/
 ---
 
 ## Q286387: SMS: Software Inventory Doesn't Update SMS Database

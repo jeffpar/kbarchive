@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102942: Key Differences Between NetBEUI and NBF"
-permalink: kb/102/Q102942/
+permalink: /kb/102/Q102942/
 ---
 
 ## Q102942: Key Differences Between NetBEUI and NBF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133110: Error Message: Volume &quot;Sys&quot; Does Not Exist"
-permalink: kb/133/Q133110/
+permalink: /kb/133/Q133110/
 ---
 
 ## Q133110: Error Message: Volume &quot;Sys&quot; Does Not Exist

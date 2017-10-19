@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120925: Visual C++ Vers 2.0 README.WRI, Part 9 Utilities"
-permalink: kb/120/Q120925/
+permalink: /kb/120/Q120925/
 ---
 
 ## Q120925: Visual C++ Vers 2.0 README.WRI, Part 9 Utilities

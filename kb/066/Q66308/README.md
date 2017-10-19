@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66308: PWB's Use of Expanded Memory"
-permalink: kb/066/Q66308/
+permalink: /kb/066/Q66308/
 ---
 
 ## Q66308: PWB's Use of Expanded Memory

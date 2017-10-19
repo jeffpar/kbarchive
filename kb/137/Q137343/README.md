@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137343: INFO: VB Automation of Visual C++ Server Using OBJ1.OBJ2.prop Sy"
-permalink: kb/137/Q137343/
+permalink: /kb/137/Q137343/
 ---
 
 ## Q137343: INFO: VB Automation of Visual C++ Server Using OBJ1.OBJ2.prop Sy

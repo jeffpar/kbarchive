@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138021: How Inventory Dataloader Finds Matching Computers In SMS"
-permalink: kb/138/Q138021/
+permalink: /kb/138/Q138021/
 ---
 
 ## Q138021: How Inventory Dataloader Finds Matching Computers In SMS

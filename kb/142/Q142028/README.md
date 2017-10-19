@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142028: RUN.EXE: A Logon Script Exit Utility"
-permalink: kb/142/Q142028/
+permalink: /kb/142/Q142028/
 ---
 
 ## Q142028: RUN.EXE: A Logon Script Exit Utility

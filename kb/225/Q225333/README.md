@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225333: FIX: Clussvc.exe Hits 100% CPU Utilization Doing Group Failover"
-permalink: kb/225/Q225333/
+permalink: /kb/225/Q225333/
 ---
 
 ## Q225333: FIX: Clussvc.exe Hits 100% CPU Utilization Doing Group Failover

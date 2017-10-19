@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166534: XCLN: Synchronization of Offline Folders over RAS or Net Hangs"
-permalink: kb/166/Q166534/
+permalink: /kb/166/Q166534/
 ---
 
 ## Q166534: XCLN: Synchronization of Offline Folders over RAS or Net Hangs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116380: BUG: Semicolon in a Table Name Displays as Underscore"
-permalink: kb/116/Q116380/
+permalink: /kb/116/Q116380/
 ---
 
 ## Q116380: BUG: Semicolon in a Table Name Displays as Underscore

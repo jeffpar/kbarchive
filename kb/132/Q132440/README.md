@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132440: Class Browser: How to Use the ShowMenu and AddIn Methods"
-permalink: kb/132/Q132440/
+permalink: /kb/132/Q132440/
 ---
 
 ## Q132440: Class Browser: How to Use the ShowMenu and AddIn Methods

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152685: XCLN: Signing and Sealing Messages When Offline"
-permalink: kb/152/Q152685/
+permalink: /kb/152/Q152685/
 ---
 
 ## Q152685: XCLN: Signing and Sealing Messages When Offline

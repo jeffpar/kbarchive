@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255818: Err Msg: 19033-ERROR: &#36;multi_valued() Subscript Goes Beyond..."
-permalink: kb/255/Q255818/
+permalink: /kb/255/Q255818/
 ---
 
 ## Q255818: Err Msg: 19033-ERROR: &#36;multi_valued() Subscript Goes Beyond...

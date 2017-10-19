@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133464: Mac Wine Guide: Movie Does Not Restart"
-permalink: kb/133/Q133464/
+permalink: /kb/133/Q133464/
 ---
 
 ## Q133464: Mac Wine Guide: Movie Does Not Restart

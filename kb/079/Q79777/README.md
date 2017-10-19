@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79777: AutoCAD Version 2.62 May Not Function with HIMEM.SYS"
-permalink: kb/079/Q79777/
+permalink: /kb/079/Q79777/
 ---
 
 ## Q79777: AutoCAD Version 2.62 May Not Function with HIMEM.SYS

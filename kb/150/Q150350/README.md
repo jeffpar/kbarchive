@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150350: NetLogon Maximum Value of Pulse Should Exceed 3600"
-permalink: kb/150/Q150350/
+permalink: /kb/150/Q150350/
 ---
 
 ## Q150350: NetLogon Maximum Value of Pulse Should Exceed 3600

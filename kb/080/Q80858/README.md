@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80858: Disabling Metz File F/X for Windows"
-permalink: kb/080/Q80858/
+permalink: /kb/080/Q80858/
 ---
 
 ## Q80858: Disabling Metz File F/X for Windows

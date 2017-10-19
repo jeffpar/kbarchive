@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257591: Description of the Secure Sockets Layer (SSL) Handshake"
-permalink: kb/257/Q257591/
+permalink: /kb/257/Q257591/
 ---
 
 ## Q257591: Description of the Secure Sockets Layer (SSL) Handshake

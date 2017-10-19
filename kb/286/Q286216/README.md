@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286216: XADM: Error Message When Modifying a Remote Distribution List"
-permalink: kb/286/Q286216/
+permalink: /kb/286/Q286216/
 ---
 
 ## Q286216: XADM: Error Message When Modifying a Remote Distribution List

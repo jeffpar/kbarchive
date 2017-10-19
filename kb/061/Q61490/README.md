@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61490: Mac Wkst: Problems with Microsoft Mail and Claris Products"
-permalink: kb/061/Q61490/
+permalink: /kb/061/Q61490/
 ---
 
 ## Q61490: Mac Wkst: Problems with Microsoft Mail and Claris Products

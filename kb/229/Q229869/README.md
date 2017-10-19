@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229869: WD97: Word Hangs Checking Spelling in Multi-line Form Field"
-permalink: kb/229/Q229869/
+permalink: /kb/229/Q229869/
 ---
 
 ## Q229869: WD97: Word Hangs Checking Spelling in Multi-line Form Field

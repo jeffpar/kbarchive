@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185996: XFOR: Internet Mail Service Takes Very Long Time to Start"
-permalink: kb/185/Q185996/
+permalink: /kb/185/Q185996/
 ---
 
 ## Q185996: XFOR: Internet Mail Service Takes Very Long Time to Start

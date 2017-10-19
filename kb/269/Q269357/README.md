@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269357: INFO: INSERT/DELETE/UPDATE behavior in SQL Server ODBC apps"
-permalink: kb/269/Q269357/
+permalink: /kb/269/Q269357/
 ---
 
 ## Q269357: INFO: INSERT/DELETE/UPDATE behavior in SQL Server ODBC apps

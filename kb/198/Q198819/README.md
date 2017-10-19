@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198819: Chat: CREATE Command Does Not Accept Capital Letters for Modes"
-permalink: kb/198/Q198819/
+permalink: /kb/198/Q198819/
 ---
 
 ## Q198819: Chat: CREATE Command Does Not Accept Capital Letters for Modes

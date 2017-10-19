@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274780: Err Msg: Microsoft Reader Is Unable to Locate the Library..."
-permalink: kb/274/Q274780/
+permalink: /kb/274/Q274780/
 ---
 
 ## Q274780: Err Msg: Microsoft Reader Is Unable to Locate the Library...

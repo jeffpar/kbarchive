@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179892: XWEB: OWA Client Does Not Correctly Associate .Rtf Freedoc"
-permalink: kb/179/Q179892/
+permalink: /kb/179/Q179892/
 ---
 
 ## Q179892: XWEB: OWA Client Does Not Correctly Associate .Rtf Freedoc

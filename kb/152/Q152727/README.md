@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152727: XADM: Importing Blank Value Won't Modify Mailbox Value"
-permalink: kb/152/Q152727/
+permalink: /kb/152/Q152727/
 ---
 
 ## Q152727: XADM: Importing Blank Value Won't Modify Mailbox Value

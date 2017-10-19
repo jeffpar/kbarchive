@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199247: XCON: Lsdxamex.exe Application Error Running LDE 3.2 Dirsync"
-permalink: kb/199/Q199247/
+permalink: /kb/199/Q199247/
 ---
 
 ## Q199247: XCON: Lsdxamex.exe Application Error Running LDE 3.2 Dirsync

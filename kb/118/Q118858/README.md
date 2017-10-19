@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118858: X400: Domain Defined Attribute Value to Reach SMTP"
-permalink: kb/118/Q118858/
+permalink: /kb/118/Q118858/
 ---
 
 ## Q118858: X400: Domain Defined Attribute Value to Reach SMTP

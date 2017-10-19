@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126463: Remote Command Service Does Not Install Correctly"
-permalink: kb/126/Q126463/
+permalink: /kb/126/Q126463/
 ---
 
 ## Q126463: Remote Command Service Does Not Install Correctly

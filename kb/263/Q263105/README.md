@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263105: Environment Variables Not Set by &quot;Double-Click&quot;"
-permalink: kb/263/Q263105/
+permalink: /kb/263/Q263105/
 ---
 
 ## Q263105: Environment Variables Not Set by &quot;Double-Click&quot;

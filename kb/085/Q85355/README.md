@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85355: FAX: Parameters Required in the PROFILE.GLB File"
-permalink: kb/085/Q85355/
+permalink: /kb/085/Q85355/
 ---
 
 ## Q85355: FAX: Parameters Required in the PROFILE.GLB File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157450: Matrox Millennium Adapter Occasionally Displays Blue Pixels"
-permalink: kb/157/Q157450/
+permalink: /kb/157/Q157450/
 ---
 
 ## Q157450: Matrox Millennium Adapter Occasionally Displays Blue Pixels

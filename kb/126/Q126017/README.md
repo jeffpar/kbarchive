@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126017: Cannot Play Uncompressed Wave Sounds with Windows NT 3.5"
-permalink: kb/126/Q126017/
+permalink: /kb/126/Q126017/
 ---
 
 ## Q126017: Cannot Play Uncompressed Wave Sounds with Windows NT 3.5

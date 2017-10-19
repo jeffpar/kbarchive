@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166834: Lost Record Locks from MS-DOS-based Program to NetWare Server"
-permalink: kb/166/Q166834/
+permalink: /kb/166/Q166834/
 ---
 
 ## Q166834: Lost Record Locks from MS-DOS-based Program to NetWare Server

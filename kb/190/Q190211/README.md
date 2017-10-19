@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190211: PRB: Problems with Visual Basic 5.0 and 6.0 on the Same System"
-permalink: kb/190/Q190211/
+permalink: /kb/190/Q190211/
 ---
 
 ## Q190211: PRB: Problems with Visual Basic 5.0 and 6.0 on the Same System

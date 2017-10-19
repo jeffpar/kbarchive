@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71555: Paintbrush: Insufficient Memory and Disk Error Messages"
-permalink: kb/071/Q71555/
+permalink: /kb/071/Q71555/
 ---
 
 ## Q71555: Paintbrush: Insufficient Memory and Disk Error Messages

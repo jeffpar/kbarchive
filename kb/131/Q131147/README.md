@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131147: FIX: CXX0033 Error in OMF Type from Forward Class Declaration"
-permalink: kb/131/Q131147/
+permalink: /kb/131/Q131147/
 ---
 
 ## Q131147: FIX: CXX0033 Error in OMF Type from Forward Class Declaration

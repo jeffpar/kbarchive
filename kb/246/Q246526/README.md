@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246526: Cannot Browse Secure Web Site Using Secure Sockets Layer"
-permalink: kb/246/Q246526/
+permalink: /kb/246/Q246526/
 ---
 
 ## Q246526: Cannot Browse Secure Web Site Using Secure Sockets Layer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121383: Shared Packages Not Distributed to NetWare Volumes"
-permalink: kb/121/Q121383/
+permalink: /kb/121/Q121383/
 ---
 
 ## Q121383: Shared Packages Not Distributed to NetWare Volumes

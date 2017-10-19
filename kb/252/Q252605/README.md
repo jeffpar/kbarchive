@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252605: PRB: AutoCAD Lt 2000 Uninstall Does Not Work from Start Menu"
-permalink: kb/252/Q252605/
+permalink: /kb/252/Q252605/
 ---
 
 ## Q252605: PRB: AutoCAD Lt 2000 Uninstall Does Not Work from Start Menu

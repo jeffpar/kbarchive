@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199319: XADM: Extracting Public Folder Permissions Using PFADMIN"
-permalink: kb/199/Q199319/
+permalink: /kb/199/Q199319/
 ---
 
 ## Q199319: XADM: Extracting Public Folder Permissions Using PFADMIN

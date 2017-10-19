@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172106: &quot;Error 604&quot; When Attempting to Connect to MSN"
-permalink: kb/172/Q172106/
+permalink: /kb/172/Q172106/
 ---
 
 ## Q172106: &quot;Error 604&quot; When Attempting to Connect to MSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81545: PWB Macros to Rebuild All, Build Target, Run, and Debug"
-permalink: kb/081/Q81545/
+permalink: /kb/081/Q81545/
 ---
 
 ## Q81545: PWB Macros to Rebuild All, Build Target, Run, and Debug

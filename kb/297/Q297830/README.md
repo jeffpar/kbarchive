@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297830: FIX: Error Assigning Memo Field To _CLIPTEXT Variable"
-permalink: kb/297/Q297830/
+permalink: /kb/297/Q297830/
 ---
 
 ## Q297830: FIX: Error Assigning Memo Field To _CLIPTEXT Variable

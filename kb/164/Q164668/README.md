@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164668: FIX: Small Portion of Win32 Documentation Missing From VCEE 4.2"
-permalink: kb/164/Q164668/
+permalink: /kb/164/Q164668/
 ---
 
 ## Q164668: FIX: Small Portion of Win32 Documentation Missing From VCEE 4.2

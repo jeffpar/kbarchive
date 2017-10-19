@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170287: Multi-session SLI Program Stops Receiving Data"
-permalink: kb/170/Q170287/
+permalink: /kb/170/Q170287/
 ---
 
 ## Q170287: Multi-session SLI Program Stops Receiving Data

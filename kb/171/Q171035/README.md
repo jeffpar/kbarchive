@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171035: Modem Connection Remains After You Disconnect from MSN"
-permalink: kb/171/Q171035/
+permalink: /kb/171/Q171035/
 ---
 
 ## Q171035: Modem Connection Remains After You Disconnect from MSN

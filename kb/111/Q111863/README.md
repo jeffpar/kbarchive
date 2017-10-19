@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111863: BUG: Driver vs. GDI-Simulated Styled Lines Don't Match"
-permalink: kb/111/Q111863/
+permalink: /kb/111/Q111863/
 ---
 
 ## Q111863: BUG: Driver vs. GDI-Simulated Styled Lines Don't Match

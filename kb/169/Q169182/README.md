@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169182: SNA Server Print Server Always Inserts CR/LF"
-permalink: kb/169/Q169182/
+permalink: /kb/169/Q169182/
 ---
 
 ## Q169182: SNA Server Print Server Always Inserts CR/LF

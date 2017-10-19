@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164925: Non-paged Pool Leak in Ftdisk.sys"
-permalink: kb/164/Q164925/
+permalink: /kb/164/Q164925/
 ---
 
 ## Q164925: Non-paged Pool Leak in Ftdisk.sys

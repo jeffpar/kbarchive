@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162935: ADT/ODE: Final Help Workshop Training Card Does Not Close"
-permalink: kb/162/Q162935/
+permalink: /kb/162/Q162935/
 ---
 
 ## Q162935: ADT/ODE: Final Help Workshop Training Card Does Not Close

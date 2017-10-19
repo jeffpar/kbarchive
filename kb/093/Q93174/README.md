@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93174: FIX: CVW Does Not Trace Into QuickWin FORTRAN Subprograms"
-permalink: kb/093/Q93174/
+permalink: /kb/093/Q93174/
 ---
 
 ## Q93174: FIX: CVW Does Not Trace Into QuickWin FORTRAN Subprograms

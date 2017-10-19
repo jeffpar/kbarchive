@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172957: XCLN: Creating a New Offline Folder File (OST File)"
-permalink: kb/172/Q172957/
+permalink: /kb/172/Q172957/
 ---
 
 ## Q172957: XCLN: Creating a New Offline Folder File (OST File)

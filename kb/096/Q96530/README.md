@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96530: PC WRmt: Default Messages Store Files"
-permalink: kb/096/Q96530/
+permalink: /kb/096/Q96530/
 ---
 
 ## Q96530: PC WRmt: Default Messages Store Files

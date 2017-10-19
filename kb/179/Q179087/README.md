@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179087: WD97: Selected Word Not Checked for Spelling First"
-permalink: kb/179/Q179087/
+permalink: /kb/179/Q179087/
 ---
 
 ## Q179087: WD97: Selected Word Not Checked for Spelling First

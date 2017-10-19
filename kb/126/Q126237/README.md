@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126237: Roland Rap-10 Sound Card: Progman Caused a GPF in Msacm.drv"
-permalink: kb/126/Q126237/
+permalink: /kb/126/Q126237/
 ---
 
 ## Q126237: Roland Rap-10 Sound Card: Progman Caused a GPF in Msacm.drv

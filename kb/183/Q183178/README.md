@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183178: XADM: IMS Will Not Start with Event Log Error 4071"
-permalink: kb/183/Q183178/
+permalink: /kb/183/Q183178/
 ---
 
 ## Q183178: XADM: IMS Will Not Start with Event Log Error 4071

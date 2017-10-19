@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61182: Mac Wkst: Possible Cause of &quot;Looking for Server&quot; Message"
-permalink: kb/061/Q61182/
+permalink: /kb/061/Q61182/
 ---
 
 ## Q61182: Mac Wkst: Possible Cause of &quot;Looking for Server&quot; Message

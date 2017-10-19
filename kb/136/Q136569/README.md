@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136569: Error Message Received in WINS Manager When Viewing Other Server"
-permalink: kb/136/Q136569/
+permalink: /kb/136/Q136569/
 ---
 
 ## Q136569: Error Message Received in WINS Manager When Viewing Other Server

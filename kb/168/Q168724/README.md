@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168724: SMS: List of Tools Available on the SMS 1.2 Compact Disc"
-permalink: kb/168/Q168724/
+permalink: /kb/168/Q168724/
 ---
 
 ## Q168724: SMS: List of Tools Available on the SMS 1.2 Compact Disc

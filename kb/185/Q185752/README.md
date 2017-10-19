@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185752: MSCS Service Fails to Start After Installation"
-permalink: kb/185/Q185752/
+permalink: /kb/185/Q185752/
 ---
 
 ## Q185752: MSCS Service Fails to Start After Installation

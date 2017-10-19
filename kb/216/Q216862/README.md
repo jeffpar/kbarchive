@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216862: PRB:Access Violation on Chat Server During Callback Registration"
-permalink: kb/216/Q216862/
+permalink: /kb/216/Q216862/
 ---
 
 ## Q216862: PRB:Access Violation on Chat Server During Callback Registration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171512: FIX: UserControls on Property Pages Do Not Trigger Focus Events"
-permalink: kb/171/Q171512/
+permalink: /kb/171/Q171512/
 ---
 
 ## Q171512: FIX: UserControls on Property Pages Do Not Trigger Focus Events

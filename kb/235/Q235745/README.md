@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235745: SMS: Setup Doesn't Create SMS Admins on Backup Domain Controller"
-permalink: kb/235/Q235745/
+permalink: /kb/235/Q235745/
 ---
 
 ## Q235745: SMS: Setup Doesn't Create SMS Admins on Backup Domain Controller

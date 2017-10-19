@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150192: FIX: X / Y Coordinates Reversed Using PSet on Printer Object"
-permalink: kb/150/Q150192/
+permalink: /kb/150/Q150192/
 ---
 
 ## Q150192: FIX: X / Y Coordinates Reversed Using PSet on Printer Object

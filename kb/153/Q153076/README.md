@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153076: XCLN: Err Msg: MAPI Was Unable to Load Emsmdb.dll"
-permalink: kb/153/Q153076/
+permalink: /kb/153/Q153076/
 ---
 
 ## Q153076: XCLN: Err Msg: MAPI Was Unable to Load Emsmdb.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263438: Integrated SQL Setup Does Not Work if Server Name Has Hyphens"
-permalink: kb/263/Q263438/
+permalink: /kb/263/Q263438/
 ---
 
 ## Q263438: Integrated SQL Setup Does Not Work if Server Name Has Hyphens

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85448: Word for Windows Icon Displays When Pasting Text to Paintbrush"
-permalink: kb/085/Q85448/
+permalink: /kb/085/Q85448/
 ---
 
 ## Q85448: Word for Windows Icon Displays When Pasting Text to Paintbrush

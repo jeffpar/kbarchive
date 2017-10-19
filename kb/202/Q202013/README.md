@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202013: IIS 5.0 Command-Line Syntax for Iisreset.exe"
-permalink: kb/202/Q202013/
+permalink: /kb/202/Q202013/
 ---
 
 ## Q202013: IIS 5.0 Command-Line Syntax for Iisreset.exe

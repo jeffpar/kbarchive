@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194372: Virtual Globe 99: Internet Explorer 4.01 Set as Default Browser"
-permalink: kb/194/Q194372/
+permalink: /kb/194/Q194372/
 ---
 
 ## Q194372: Virtual Globe 99: Internet Explorer 4.01 Set as Default Browser

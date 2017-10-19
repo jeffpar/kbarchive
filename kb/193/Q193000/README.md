@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193000: PRB: Compiling a VB Project Generates &quot;Fatal Error C1083&quot;"
-permalink: kb/193/Q193000/
+permalink: /kb/193/Q193000/
 ---
 
 ## Q193000: PRB: Compiling a VB Project Generates &quot;Fatal Error C1083&quot;

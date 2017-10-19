@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154703: XFOR: IMC Ignores RAS Prefix and Suffix"
-permalink: kb/154/Q154703/
+permalink: /kb/154/Q154703/
 ---
 
 ## Q154703: XFOR: IMC Ignores RAS Prefix and Suffix

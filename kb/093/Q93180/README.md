@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93180: HPPCL5A.DRV: Different Settings and Ports, Same Output"
-permalink: kb/093/Q93180/
+permalink: /kb/093/Q93180/
 ---
 
 ## Q93180: HPPCL5A.DRV: Different Settings and Ports, Same Output

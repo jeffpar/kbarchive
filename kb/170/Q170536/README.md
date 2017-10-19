@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170536: HOWTO: Use API to Customize DAO Registry to Close ODBC Connectn"
-permalink: kb/170/Q170536/
+permalink: /kb/170/Q170536/
 ---
 
 ## Q170536: HOWTO: Use API to Customize DAO Registry to Close ODBC Connectn

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109221: Writer/Artist: Setup Does Not Run in Windows 3.1 Standard Mode"
-permalink: kb/109/Q109221/
+permalink: /kb/109/Q109221/
 ---
 
 ## Q109221: Writer/Artist: Setup Does Not Run in Windows 3.1 Standard Mode

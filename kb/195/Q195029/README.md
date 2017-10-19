@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195029: CardWizard Socket Services Stop Responding During Startup"
-permalink: kb/195/Q195029/
+permalink: /kb/195/Q195029/
 ---
 
 ## Q195029: CardWizard Socket Services Stop Responding During Startup

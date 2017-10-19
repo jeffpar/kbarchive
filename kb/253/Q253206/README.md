@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253206: Active TN3270 Clients Might Hang Unexpectedly"
-permalink: kb/253/Q253206/
+permalink: /kb/253/Q253206/
 ---
 
 ## Q253206: Active TN3270 Clients Might Hang Unexpectedly

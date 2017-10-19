@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101519: INF: How to Use SQLDataSources()"
-permalink: kb/101/Q101519/
+permalink: /kb/101/Q101519/
 ---
 
 ## Q101519: INF: How to Use SQLDataSources()

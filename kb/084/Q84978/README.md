@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84978: LBChange.exe Simulates Changing List Box Style"
-permalink: kb/084/Q84978/
+permalink: /kb/084/Q84978/
 ---
 
 ## Q84978: LBChange.exe Simulates Changing List Box Style

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118542: Dangerous Creatures: Choosing Back Button Skips a Screen"
-permalink: kb/118/Q118542/
+permalink: /kb/118/Q118542/
 ---
 
 ## Q118542: Dangerous Creatures: Choosing Back Button Skips a Screen

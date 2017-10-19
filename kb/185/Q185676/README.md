@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185676: FEEDIGNOREINITIAL Option Not Working in Snaprint"
-permalink: kb/185/Q185676/
+permalink: /kb/185/Q185676/
 ---
 
 ## Q185676: FEEDIGNOREINITIAL Option Not Working in Snaprint

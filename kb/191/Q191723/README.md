@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191723: BUG: DataGrid Column Appears To Be Missing"
-permalink: kb/191/Q191723/
+permalink: /kb/191/Q191723/
 ---
 
 ## Q191723: BUG: DataGrid Column Appears To Be Missing

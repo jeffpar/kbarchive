@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100049: HP OmniBook: Default Printer Drivers"
-permalink: kb/100/Q100049/
+permalink: /kb/100/Q100049/
 ---
 
 ## Q100049: HP OmniBook: Default Printer Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163002: HOWTO: Open an Access Database with User Security"
-permalink: kb/163/Q163002/
+permalink: /kb/163/Q163002/
 ---
 
 ## Q163002: HOWTO: Open an Access Database with User Security

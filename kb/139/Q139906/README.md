@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139906: GetVersionExA Error in SMS 1.1 Network Monitor for WFW"
-permalink: kb/139/Q139906/
+permalink: /kb/139/Q139906/
 ---
 
 ## Q139906: GetVersionExA Error in SMS 1.1 Network Monitor for WFW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199731: Duplicate Datakeys in Table After Datdupck Runs"
-permalink: kb/199/Q199731/
+permalink: /kb/199/Q199731/
 ---
 
 ## Q199731: Duplicate Datakeys in Table After Datdupck Runs

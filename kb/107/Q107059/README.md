@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107059: RAS Returns Poorly Formatted or Unreadable Error Messages"
-permalink: kb/107/Q107059/
+permalink: /kb/107/Q107059/
 ---
 
 ## Q107059: RAS Returns Poorly Formatted or Unreadable Error Messages

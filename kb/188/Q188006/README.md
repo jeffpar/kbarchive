@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188006: BUG: EditCopy Incorrectly Copies Series Edge/Line Color of Chart"
-permalink: kb/188/Q188006/
+permalink: /kb/188/Q188006/
 ---
 
 ## Q188006: BUG: EditCopy Incorrectly Copies Series Edge/Line Color of Chart

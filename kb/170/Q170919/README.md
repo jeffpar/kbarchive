@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170919: PRB: Error &quot;Record is not Locked&quot; with ComboBox in Grid"
-permalink: kb/170/Q170919/
+permalink: /kb/170/Q170919/
 ---
 
 ## Q170919: PRB: Error &quot;Record is not Locked&quot; with ComboBox in Grid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174204: Research Organizer: Error Message When Moving Cards/Sections"
-permalink: kb/174/Q174204/
+permalink: /kb/174/Q174204/
 ---
 
 ## Q174204: Research Organizer: Error Message When Moving Cards/Sections

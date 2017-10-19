@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98551: Setting Up WFWG on a Workstation Without a Hard Disk"
-permalink: kb/098/Q98551/
+permalink: /kb/098/Q98551/
 ---
 
 ## Q98551: Setting Up WFWG on a Workstation Without a Hard Disk

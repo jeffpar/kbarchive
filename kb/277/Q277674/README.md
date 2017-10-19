@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277674: SMS: Smsiddup Identifies Current and Historical Duplicates"
-permalink: kb/277/Q277674/
+permalink: /kb/277/Q277674/
 ---
 
 ## Q277674: SMS: Smsiddup Identifies Current and Historical Duplicates

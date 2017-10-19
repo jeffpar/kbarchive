@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160783: Err: Users Cannot Log On to a Workstation"
-permalink: kb/160/Q160783/
+permalink: /kb/160/Q160783/
 ---
 
 ## Q160783: Err: Users Cannot Log On to a Workstation

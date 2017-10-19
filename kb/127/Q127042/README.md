@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127042: Automap: Streets Install Cannot Find Existing Automap"
-permalink: kb/127/Q127042/
+permalink: /kb/127/Q127042/
 ---
 
 ## Q127042: Automap: Streets Install Cannot Find Existing Automap

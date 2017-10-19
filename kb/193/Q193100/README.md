@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193100: FIX: CString Serialization Causes Access Violation"
-permalink: kb/193/Q193100/
+permalink: /kb/193/Q193100/
 ---
 
 ## Q193100: FIX: CString Serialization Causes Access Violation

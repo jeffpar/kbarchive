@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127728: X400: TP4 Stack Not Compatible with WFWG MS-DOS Client"
-permalink: kb/127/Q127728/
+permalink: /kb/127/Q127728/
 ---
 
 ## Q127728: X400: TP4 Stack Not Compatible with WFWG MS-DOS Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201092: FIX: Derived Structure Can Access Private Members of Base Class"
-permalink: kb/201/Q201092/
+permalink: /kb/201/Q201092/
 ---
 
 ## Q201092: FIX: Derived Structure Can Access Private Members of Base Class

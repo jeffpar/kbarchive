@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215349: Associated Routes for Deleted IP Address May Not Get Deleted"
-permalink: kb/215/Q215349/
+permalink: /kb/215/Q215349/
 ---
 
 ## Q215349: Associated Routes for Deleted IP Address May Not Get Deleted

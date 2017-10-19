@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173378: WD97: Indentation in List Disappears After You Restart Numbering"
-permalink: kb/173/Q173378/
+permalink: /kb/173/Q173378/
 ---
 
 ## Q173378: WD97: Indentation in List Disappears After You Restart Numbering

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84759: Windows 3.1: File Manager Does Not Update Floppy Disk Window"
-permalink: kb/084/Q84759/
+permalink: /kb/084/Q84759/
 ---
 
 ## Q84759: Windows 3.1: File Manager Does Not Update Floppy Disk Window

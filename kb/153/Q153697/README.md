@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153697: Installing Office 95 with resource kit utility CPS"
-permalink: kb/153/Q153697/
+permalink: /kb/153/Q153697/
 ---
 
 ## Q153697: Installing Office 95 with resource kit utility CPS

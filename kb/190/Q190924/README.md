@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190924: BUG: Command Line Argument /MAKE Truncates User Documents"
-permalink: kb/190/Q190924/
+permalink: /kb/190/Q190924/
 ---
 
 ## Q190924: BUG: Command Line Argument /MAKE Truncates User Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314588: XADM: Err Msg Running Backup Against a Clustered Exchange Server"
-permalink: kb/314/Q314588/
+permalink: /kb/314/Q314588/
 ---
 
 ## Q314588: XADM: Err Msg Running Backup Against a Clustered Exchange Server

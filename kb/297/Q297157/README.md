@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297157: How Bad Password Count Works w/ Account Lockout Policy"
-permalink: kb/297/Q297157/
+permalink: /kb/297/Q297157/
 ---
 
 ## Q297157: How Bad Password Count Works w/ Account Lockout Policy

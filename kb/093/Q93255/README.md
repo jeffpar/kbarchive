@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93255: VidCap: Err Msg: Cannot Initialize Capture Driver - Indeo"
-permalink: kb/093/Q93255/
+permalink: /kb/093/Q93255/
 ---
 
 ## Q93255: VidCap: Err Msg: Cannot Initialize Capture Driver - Indeo

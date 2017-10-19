@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186612: Use Installation Mode to Install New Drivers on Terminal Server"
-permalink: kb/186/Q186612/
+permalink: /kb/186/Q186612/
 ---
 
 ## Q186612: Use Installation Mode to Install New Drivers on Terminal Server

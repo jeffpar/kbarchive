@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129831: Network Client 3.0 Setup with TCP/IP Looks for OEM Driver Disk"
-permalink: kb/129/Q129831/
+permalink: /kb/129/Q129831/
 ---
 
 ## Q129831: Network Client 3.0 Setup with TCP/IP Looks for OEM Driver Disk

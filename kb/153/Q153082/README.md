@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153082: Garbled Text on Dell Computers with S3 Chip Set"
-permalink: kb/153/Q153082/
+permalink: /kb/153/Q153082/
 ---
 
 ## Q153082: Garbled Text on Dell Computers with S3 Chip Set

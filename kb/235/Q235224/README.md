@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235224: BUG: Compiling ANSI Build of Dao36x.dll Generates Error"
-permalink: kb/235/Q235224/
+permalink: /kb/235/Q235224/
 ---
 
 ## Q235224: BUG: Compiling ANSI Build of Dao36x.dll Generates Error

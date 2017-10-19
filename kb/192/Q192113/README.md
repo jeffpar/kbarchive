@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192113: Order In Which Programs in the Startup Folder Are Processed"
-permalink: kb/192/Q192113/
+permalink: /kb/192/Q192113/
 ---
 
 ## Q192113: Order In Which Programs in the Startup Folder Are Processed

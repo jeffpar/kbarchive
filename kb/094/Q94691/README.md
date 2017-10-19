@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94691: Bitmap Manipulation Techniques"
-permalink: kb/094/Q94691/
+permalink: /kb/094/Q94691/
 ---
 
 ## Q94691: Bitmap Manipulation Techniques

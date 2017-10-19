@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186447: FP: Image Size Incorrect After Cropping/Enlarging"
-permalink: kb/186/Q186447/
+permalink: /kb/186/Q186447/
 ---
 
 ## Q186447: FP: Image Size Incorrect After Cropping/Enlarging

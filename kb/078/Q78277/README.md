@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78277: Print Manager Does Not Recognize Printer in Windows 3.0"
-permalink: kb/078/Q78277/
+permalink: /kb/078/Q78277/
 ---
 
 ## Q78277: Print Manager Does Not Recognize Printer in Windows 3.0

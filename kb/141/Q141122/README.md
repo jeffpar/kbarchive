@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141122: Event 2019 Running NTSweep Client/Server Anti-Virus Program"
-permalink: kb/141/Q141122/
+permalink: /kb/141/Q141122/
 ---
 
 ## Q141122: Event 2019 Running NTSweep Client/Server Anti-Virus Program

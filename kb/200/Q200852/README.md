@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200852: SMS: Troubleshooting Software Inventory Problems"
-permalink: kb/200/Q200852/
+permalink: /kb/200/Q200852/
 ---
 
 ## Q200852: SMS: Troubleshooting Software Inventory Problems

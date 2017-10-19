@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235965: XADM: Message Forwarded By CHT Client Not Displayed Properly"
-permalink: kb/235/Q235965/
+permalink: /kb/235/Q235965/
 ---
 
 ## Q235965: XADM: Message Forwarded By CHT Client Not Displayed Properly

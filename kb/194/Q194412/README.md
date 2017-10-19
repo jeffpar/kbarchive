@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194412: PROJUPDG.EXE VB 6.0 ActiveX Control Upgrade Utility"
-permalink: kb/194/Q194412/
+permalink: /kb/194/Q194412/
 ---
 
 ## Q194412: PROJUPDG.EXE VB 6.0 ActiveX Control Upgrade Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201851: Server Configuration Error: Parameter Md_Anonymous_User_Name..."
-permalink: kb/201/Q201851/
+permalink: /kb/201/Q201851/
 ---
 
 ## Q201851: Server Configuration Error: Parameter Md_Anonymous_User_Name...

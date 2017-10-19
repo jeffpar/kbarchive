@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133102: FORTRAN PowerStation 32 README.TXT: Installation"
-permalink: kb/133/Q133102/
+permalink: /kb/133/Q133102/
 ---
 
 ## Q133102: FORTRAN PowerStation 32 README.TXT: Installation

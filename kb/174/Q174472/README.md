@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174472: SMS: Inventory Does Not Report Macintosh OS Version 8"
-permalink: kb/174/Q174472/
+permalink: /kb/174/Q174472/
 ---
 
 ## Q174472: SMS: Inventory Does Not Report Macintosh OS Version 8

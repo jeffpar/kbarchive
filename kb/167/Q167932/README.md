@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167932: FP: General Information About Using &quot;Localhost&quot; as Server Name"
-permalink: kb/167/Q167932/
+permalink: /kb/167/Q167932/
 ---
 
 ## Q167932: FP: General Information About Using &quot;Localhost&quot; as Server Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150054: Error: &quot;An Extended Error Has Occurred&quot; on Windows 95 Client"
-permalink: kb/150/Q150054/
+permalink: /kb/150/Q150054/
 ---
 
 ## Q150054: Error: &quot;An Extended Error Has Occurred&quot; on Windows 95 Client

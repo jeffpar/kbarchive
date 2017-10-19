@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258964: FS2000 Pro: Control Problems After You Change to Mooney Bravo"
-permalink: kb/258/Q258964/
+permalink: /kb/258/Q258964/
 ---
 
 ## Q258964: FS2000 Pro: Control Problems After You Change to Mooney Bravo

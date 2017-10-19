@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158545: XADM: How to Determine the Organization, Site, and Computer Name"
-permalink: kb/158/Q158545/
+permalink: /kb/158/Q158545/
 ---
 
 ## Q158545: XADM: How to Determine the Organization, Site, and Computer Name

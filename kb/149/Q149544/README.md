@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149544: MPR DLL Files Not Installed From Windows NT 3.51 SP 3"
-permalink: kb/149/Q149544/
+permalink: /kb/149/Q149544/
 ---
 
 ## Q149544: MPR DLL Files Not Installed From Windows NT 3.51 SP 3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108919: SWAPPER.DAT Grows when NODE Service Runs"
-permalink: kb/108/Q108919/
+permalink: /kb/108/Q108919/
 ---
 
 ## Q108919: SWAPPER.DAT Grows when NODE Service Runs

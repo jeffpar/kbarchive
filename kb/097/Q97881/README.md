@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97881: LAN Manager LANAs on MS-DOS Workstations"
-permalink: kb/097/Q97881/
+permalink: /kb/097/Q97881/
 ---
 
 ## Q97881: LAN Manager LANAs on MS-DOS Workstations

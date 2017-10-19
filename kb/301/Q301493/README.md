@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301493: Dialing: User has Moved"
-permalink: kb/301/Q301493/
+permalink: /kb/301/Q301493/
 ---
 
 ## Q301493: Dialing: User has Moved

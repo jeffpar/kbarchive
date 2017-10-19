@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295565: Microsoft Project 2000 Step By Step Comments And Corrections"
-permalink: kb/295/Q295565/
+permalink: /kb/295/Q295565/
 ---
 
 ## Q295565: Microsoft Project 2000 Step By Step Comments And Corrections

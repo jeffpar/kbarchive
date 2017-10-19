@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153396: SMS Administrator Unable to Display Properties of Two NICs"
-permalink: kb/153/Q153396/
+permalink: /kb/153/Q153396/
 ---
 
 ## Q153396: SMS Administrator Unable to Display Properties of Two NICs

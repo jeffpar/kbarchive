@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130124: HOWTO: Create Custom Cursor and Icon Files"
-permalink: kb/130/Q130124/
+permalink: /kb/130/Q130124/
 ---
 
 ## Q130124: HOWTO: Create Custom Cursor and Icon Files

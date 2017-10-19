@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151402: Specifying Different Domain In User Manager Icon"
-permalink: kb/151/Q151402/
+permalink: /kb/151/Q151402/
 ---
 
 ## Q151402: Specifying Different Domain In User Manager Icon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157895: No Context Menu for Clock.exe on Taskbar"
-permalink: kb/157/Q157895/
+permalink: /kb/157/Q157895/
 ---
 
 ## Q157895: No Context Menu for Clock.exe on Taskbar

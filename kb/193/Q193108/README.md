@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193108: WD97: Text Doesn't Wrap Around Object"
-permalink: kb/193/Q193108/
+permalink: /kb/193/Q193108/
 ---
 
 ## Q193108: WD97: Text Doesn't Wrap Around Object

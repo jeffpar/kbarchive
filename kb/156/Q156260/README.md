@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156260: Task Manager Performance Tab Not Displayed Correctly"
-permalink: kb/156/Q156260/
+permalink: /kb/156/Q156260/
 ---
 
 ## Q156260: Task Manager Performance Tab Not Displayed Correctly

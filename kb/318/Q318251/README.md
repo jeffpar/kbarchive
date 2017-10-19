@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318251: Streets and Trips 2002: Error When You Use the Find Feature"
-permalink: kb/318/Q318251/
+permalink: /kb/318/Q318251/
 ---
 
 ## Q318251: Streets and Trips 2002: Error When You Use the Find Feature

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272416: Plus! Game Pack: Cannot Establish Multiplayer Connection"
-permalink: kb/272/Q272416/
+permalink: /kb/272/Q272416/
 ---
 
 ## Q272416: Plus! Game Pack: Cannot Establish Multiplayer Connection

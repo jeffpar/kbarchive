@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155215: External Library Procedure Error When Installing SP4"
-permalink: kb/155/Q155215/
+permalink: /kb/155/Q155215/
 ---
 
 ## Q155215: External Library Procedure Error When Installing SP4

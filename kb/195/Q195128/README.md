@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195128: WD97: Converting WordStar 7.0 Files to Word for Windows Format"
-permalink: kb/195/Q195128/
+permalink: /kb/195/Q195128/
 ---
 
 ## Q195128: WD97: Converting WordStar 7.0 Files to Word for Windows Format

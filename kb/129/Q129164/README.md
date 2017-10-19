@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129164: Updated NET.EXE Corrects Basic Redirector Truncating Problem"
-permalink: kb/129/Q129164/
+permalink: /kb/129/Q129164/
 ---
 
 ## Q129164: Updated NET.EXE Corrects Basic Redirector Truncating Problem

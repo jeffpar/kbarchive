@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127733: SMTP: Err Msg: 134 Error Accessing SMTP Configuration File"
-permalink: kb/127/Q127733/
+permalink: /kb/127/Q127733/
 ---
 
 ## Q127733: SMTP: Err Msg: 134 Error Accessing SMTP Configuration File

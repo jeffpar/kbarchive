@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241110: &quot;Computer Name Not Found&quot; Using Performance Monitor"
-permalink: kb/241/Q241110/
+permalink: /kb/241/Q241110/
 ---
 
 ## Q241110: &quot;Computer Name Not Found&quot; Using Performance Monitor

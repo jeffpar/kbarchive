@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291798: Performance Loss When Termsrv.exe Uses Registry Keys"
-permalink: kb/291/Q291798/
+permalink: /kb/291/Q291798/
 ---
 
 ## Q291798: Performance Loss When Termsrv.exe Uses Registry Keys

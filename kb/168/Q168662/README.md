@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168662: DLC May Fail When Connecting Through an IBM 2210 Router"
-permalink: kb/168/Q168662/
+permalink: /kb/168/Q168662/
 ---
 
 ## Q168662: DLC May Fail When Connecting Through an IBM 2210 Router

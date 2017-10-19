@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181505: PRB: ATL COM AppWizard Doesn't Offer MFC Support for .EXE"
-permalink: kb/181/Q181505/
+permalink: /kb/181/Q181505/
 ---
 
 ## Q181505: PRB: ATL COM AppWizard Doesn't Offer MFC Support for .EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111283: FIX: F1001 Error Compiling 2 Gigabyte Array with -Zi"
-permalink: kb/111/Q111283/
+permalink: /kb/111/Q111283/
 ---
 
 ## Q111283: FIX: F1001 Error Compiling 2 Gigabyte Array with -Zi

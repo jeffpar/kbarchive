@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91644: PRB: Empty Segments in Program Overlay, Empty MOVE.TRC File"
-permalink: kb/091/Q91644/
+permalink: /kb/091/Q91644/
 ---
 
 ## Q91644: PRB: Empty Segments in Program Overlay, Empty MOVE.TRC File

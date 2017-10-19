@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34248: Flight Simulator: Automatic Scenery Not Loading"
-permalink: kb/034/Q34248/
+permalink: /kb/034/Q34248/
 ---
 
 ## Q34248: Flight Simulator: Automatic Scenery Not Loading

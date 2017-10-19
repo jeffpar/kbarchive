@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164958: FIX: Error Occurs When Running PTK Setup"
-permalink: kb/164/Q164958/
+permalink: /kb/164/Q164958/
 ---
 
 ## Q164958: FIX: Error Occurs When Running PTK Setup

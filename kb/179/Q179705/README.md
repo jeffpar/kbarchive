@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179705: Unable to Install Microsoft TCP/IP"
-permalink: kb/179/Q179705/
+permalink: /kb/179/Q179705/
 ---
 
 ## Q179705: Unable to Install Microsoft TCP/IP

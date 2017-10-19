@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76078: FIX: Error A2114 When Using OPTION PROLOGUE"
-permalink: kb/076/Q76078/
+permalink: /kb/076/Q76078/
 ---
 
 ## Q76078: FIX: Error A2114 When Using OPTION PROLOGUE

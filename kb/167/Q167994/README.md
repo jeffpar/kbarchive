@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167994: FIX: Cvpack INTERNAL ERROR When Linking Large Projects"
-permalink: kb/167/Q167994/
+permalink: /kb/167/Q167994/
 ---
 
 ## Q167994: FIX: Cvpack INTERNAL ERROR When Linking Large Projects

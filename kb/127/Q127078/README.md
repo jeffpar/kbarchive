@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127078: PC Win: All Custom Data Is Displayed at Same Start Position"
-permalink: kb/127/Q127078/
+permalink: /kb/127/Q127078/
 ---
 
 ## Q127078: PC Win: All Custom Data Is Displayed at Same Start Position

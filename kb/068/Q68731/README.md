@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68731: ALR 386 Computers with Memory Cache Require EMMExclude"
-permalink: kb/068/Q68731/
+permalink: /kb/068/Q68731/
 ---
 
 ## Q68731: ALR 386 Computers with Memory Cache Require EMMExclude

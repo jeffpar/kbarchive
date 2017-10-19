@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254818: XCON: MTA Stops Processing E-Mail over X.400 Conn. w. Event 9156"
-permalink: kb/254/Q254818/
+permalink: /kb/254/Q254818/
 ---
 
 ## Q254818: XCON: MTA Stops Processing E-Mail over X.400 Conn. w. Event 9156

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321809: FIX: DB2OLEDB Insert Fails If DBCS Second Byte Is EBCDIC 0x7D"
-permalink: kb/321/Q321809/
+permalink: /kb/321/Q321809/
 ---
 
 ## Q321809: FIX: DB2OLEDB Insert Fails If DBCS Second Byte Is EBCDIC 0x7D

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258534: FIX: Grid Display and Re-draw Are Slow Under Hebrew Windows"
-permalink: kb/258/Q258534/
+permalink: /kb/258/Q258534/
 ---
 
 ## Q258534: FIX: Grid Display and Re-draw Are Slow Under Hebrew Windows

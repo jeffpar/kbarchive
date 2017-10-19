@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195030: Automatic Reboot Does Not Work with Default Paging File Size"
-permalink: kb/195/Q195030/
+permalink: /kb/195/Q195030/
 ---
 
 ## Q195030: Automatic Reboot Does Not Work with Default Paging File Size

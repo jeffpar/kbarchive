@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82754: How Windows 3.1 Performs Font Mapping (True Type)"
-permalink: kb/082/Q82754/
+permalink: /kb/082/Q82754/
 ---
 
 ## Q82754: How Windows 3.1 Performs Font Mapping (True Type)

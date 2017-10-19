@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165971: XADM: Error Message Applying Service Pack on Alpha Computer"
-permalink: kb/165/Q165971/
+permalink: /kb/165/Q165971/
 ---
 
 ## Q165971: XADM: Error Message Applying Service Pack on Alpha Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293112: MSN Accounts Created After 12/15/2000 No Longer Able To Use Thir"
-permalink: kb/293/Q293112/
+permalink: /kb/293/Q293112/
 ---
 
 ## Q293112: MSN Accounts Created After 12/15/2000 No Longer Able To Use Thir

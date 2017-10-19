@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75959: Mac Hyp: Updating from 2.0 to 3.0"
-permalink: kb/075/Q75959/
+permalink: /kb/075/Q75959/
 ---
 
 ## Q75959: Mac Hyp: Updating from 2.0 to 3.0

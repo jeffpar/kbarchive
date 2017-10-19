@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314699: Encarta 2002: Prompted to Insert CD When Accessing Content"
-permalink: kb/314/Q314699/
+permalink: /kb/314/Q314699/
 ---
 
 ## Q314699: Encarta 2002: Prompted to Insert CD When Accessing Content

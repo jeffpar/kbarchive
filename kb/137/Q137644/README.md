@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137644: &quot;Invalid Page Fault&quot; Starting PVCS Version Manager 5.2"
-permalink: kb/137/Q137644/
+permalink: /kb/137/Q137644/
 ---
 
 ## Q137644: &quot;Invalid Page Fault&quot; Starting PVCS Version Manager 5.2

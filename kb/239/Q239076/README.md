@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239076: XADM: Notification Body Doesn't Display Complete Path"
-permalink: kb/239/Q239076/
+permalink: /kb/239/Q239076/
 ---
 
 ## Q239076: XADM: Notification Body Doesn't Display Complete Path

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153299: SMS Directory Structure Is Duplicated"
-permalink: kb/153/Q153299/
+permalink: /kb/153/Q153299/
 ---
 
 ## Q153299: SMS Directory Structure Is Duplicated

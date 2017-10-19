@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142026: Err: &quot;Hidden Console of WOW VDM&quot; Running 16-bit or MS-DOS App"
-permalink: kb/142/Q142026/
+permalink: /kb/142/Q142026/
 ---
 
 ## Q142026: Err: &quot;Hidden Console of WOW VDM&quot; Running 16-bit or MS-DOS App

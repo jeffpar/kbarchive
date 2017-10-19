@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271630: Encarta 2001: Quick Define Does Not Work as Expected"
-permalink: kb/271/Q271630/
+permalink: /kb/271/Q271630/
 ---
 
 ## Q271630: Encarta 2001: Quick Define Does Not Work as Expected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195116: SNA Server Logs Event 3 (1106) Node Configuration Error"
-permalink: kb/195/Q195116/
+permalink: /kb/195/Q195116/
 ---
 
 ## Q195116: SNA Server Logs Event 3 (1106) Node Configuration Error

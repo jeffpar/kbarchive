@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263709: XCON: Message Smaller Than Size Restriction Returned w/ NDR"
-permalink: kb/263/Q263709/
+permalink: /kb/263/Q263709/
 ---
 
 ## Q263709: XCON: Message Smaller Than Size Restriction Returned w/ NDR

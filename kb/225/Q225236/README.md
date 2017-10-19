@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225236: Error Message When You Start Administrator Tool"
-permalink: kb/225/Q225236/
+permalink: /kb/225/Q225236/
 ---
 
 ## Q225236: Error Message When You Start Administrator Tool

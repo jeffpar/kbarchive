@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241155: Zone Err Msg: Your Computer Does Not Have the Necessary..."
-permalink: kb/241/Q241155/
+permalink: /kb/241/Q241155/
 ---
 
 ## Q241155: Zone Err Msg: Your Computer Does Not Have the Necessary...

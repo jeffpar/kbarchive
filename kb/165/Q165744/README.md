@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165744: FIX: RichEditCtrl IDs Not Shown in Member Variables Tab"
-permalink: kb/165/Q165744/
+permalink: /kb/165/Q165744/
 ---
 
 ## Q165744: FIX: RichEditCtrl IDs Not Shown in Member Variables Tab

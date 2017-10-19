@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102697: PRB: Build Errors Using Precompiled Header in Debugging Lib"
-permalink: kb/102/Q102697/
+permalink: /kb/102/Q102697/
 ---
 
 ## Q102697: PRB: Build Errors Using Precompiled Header in Debugging Lib

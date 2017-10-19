@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159624: PRB: Incorrect Arguments. Consult the Windows NT..."
-permalink: kb/159/Q159624/
+permalink: /kb/159/Q159624/
 ---
 
 ## Q159624: PRB: Incorrect Arguments. Consult the Windows NT...

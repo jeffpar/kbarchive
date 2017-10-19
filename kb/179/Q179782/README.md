@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179782: XCLN: Outlook 8.03 Compact Disc Does Not Contain Cabinet Files"
-permalink: kb/179/Q179782/
+permalink: /kb/179/Q179782/
 ---
 
 ## Q179782: XCLN: Outlook 8.03 Compact Disc Does Not Contain Cabinet Files

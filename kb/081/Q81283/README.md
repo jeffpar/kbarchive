@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81283: Replacement Utilities for MS-DOS FORMAT"
-permalink: kb/081/Q81283/
+permalink: /kb/081/Q81283/
 ---
 
 ## Q81283: Replacement Utilities for MS-DOS FORMAT

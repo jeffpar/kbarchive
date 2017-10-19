@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194959: XFOR: Permissions Not Properly Set by DXA on New Mailboxes"
-permalink: kb/194/Q194959/
+permalink: /kb/194/Q194959/
 ---
 
 ## Q194959: XFOR: Permissions Not Properly Set by DXA on New Mailboxes

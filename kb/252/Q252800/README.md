@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252800: XCLN: Meeting Request Goes to Former Delegate"
-permalink: kb/252/Q252800/
+permalink: /kb/252/Q252800/
 ---
 
 ## Q252800: XCLN: Meeting Request Goes to Former Delegate

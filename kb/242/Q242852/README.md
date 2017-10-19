@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242852: FS2000: Flight Simulator 95 Adventures Not Converted Correctly"
-permalink: kb/242/Q242852/
+permalink: /kb/242/Q242852/
 ---
 
 ## Q242852: FS2000: Flight Simulator 95 Adventures Not Converted Correctly

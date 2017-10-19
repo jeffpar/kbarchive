@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150519: Running Shared Word 6.0 Help File Causes an Error"
-permalink: kb/150/Q150519/
+permalink: /kb/150/Q150519/
 ---
 
 ## Q150519: Running Shared Word 6.0 Help File Causes an Error

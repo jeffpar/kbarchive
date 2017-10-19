@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184901: ASP Searches Return Documents from Non-indexed Directories"
-permalink: kb/184/Q184901/
+permalink: /kb/184/Q184901/
 ---
 
 ## Q184901: ASP Searches Return Documents from Non-indexed Directories

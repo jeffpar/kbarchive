@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197805: Combat Flight Simulator: How to Import Flight Simulator Aircraft"
-permalink: kb/197/Q197805/
+permalink: /kb/197/Q197805/
 ---
 
 ## Q197805: Combat Flight Simulator: How to Import Flight Simulator Aircraft

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157405: BUG: Reverting to OLDVAL() Causes Error with Table Buffering"
-permalink: kb/157/Q157405/
+permalink: /kb/157/Q157405/
 ---
 
 ## Q157405: BUG: Reverting to OLDVAL() Causes Error with Table Buffering

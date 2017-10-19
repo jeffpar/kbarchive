@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152764: Garbled Characters Appear in Windows NT Print Queue"
-permalink: kb/152/Q152764/
+permalink: /kb/152/Q152764/
 ---
 
 ## Q152764: Garbled Characters Appear in Windows NT Print Queue

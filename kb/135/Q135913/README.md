@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135913: FIX: Bad POINT Structure in MSG Returned by GetCurrentMessage"
-permalink: kb/135/Q135913/
+permalink: /kb/135/Q135913/
 ---
 
 ## Q135913: FIX: Bad POINT Structure in MSG Returned by GetCurrentMessage

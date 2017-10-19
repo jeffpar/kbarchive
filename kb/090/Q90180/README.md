@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90180: NCB Performance and Piggybackacks"
-permalink: kb/090/Q90180/
+permalink: /kb/090/Q90180/
 ---
 
 ## Q90180: NCB Performance and Piggybackacks

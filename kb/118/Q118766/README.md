@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118766: Users Who Belong to More Than 95 Groups Cannot Log On"
-permalink: kb/118/Q118766/
+permalink: /kb/118/Q118766/
 ---
 
 ## Q118766: Users Who Belong to More Than 95 Groups Cannot Log On

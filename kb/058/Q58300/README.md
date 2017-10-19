@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58300: Using Vaccine and Shelter with Windows 3.0 and 3.1"
-permalink: kb/058/Q58300/
+permalink: /kb/058/Q58300/
 ---
 
 ## Q58300: Using Vaccine and Shelter with Windows 3.0 and 3.1

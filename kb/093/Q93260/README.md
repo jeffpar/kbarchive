@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93260: WFWG: Cannot Connect to Local Postoffice"
-permalink: kb/093/Q93260/
+permalink: /kb/093/Q93260/
 ---
 
 ## Q93260: WFWG: Cannot Connect to Local Postoffice

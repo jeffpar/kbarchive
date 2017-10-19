@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124968: MSB Human: Computer Stops Responding on Exit"
-permalink: kb/124/Q124968/
+permalink: /kb/124/Q124968/
 ---
 
 ## Q124968: MSB Human: Computer Stops Responding on Exit

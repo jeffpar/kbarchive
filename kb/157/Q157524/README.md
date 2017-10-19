@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157524: PRB: Intellidrop Causes Multiple Logins with Remote View"
-permalink: kb/157/Q157524/
+permalink: /kb/157/Q157524/
 ---
 
 ## Q157524: PRB: Intellidrop Causes Multiple Logins with Remote View

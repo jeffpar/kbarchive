@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182051: XADM: Cannot Move E-form Message From Public Folder to Mailbox"
-permalink: kb/182/Q182051/
+permalink: /kb/182/Q182051/
 ---
 
 ## Q182051: XADM: Cannot Move E-form Message From Public Folder to Mailbox

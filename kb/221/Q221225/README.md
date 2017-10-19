@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221225: FIX: Calling Method in User Ctrl w/ParamArray Causes Fatal Excep"
-permalink: kb/221/Q221225/
+permalink: /kb/221/Q221225/
 ---
 
 ## Q221225: FIX: Calling Method in User Ctrl w/ParamArray Causes Fatal Excep

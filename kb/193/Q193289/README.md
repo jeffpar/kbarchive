@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193289: Encarta 99 Err Msg: Enc99 Caused a Stack Fault in Module..."
-permalink: kb/193/Q193289/
+permalink: /kb/193/Q193289/
 ---
 
 ## Q193289: Encarta 99 Err Msg: Enc99 Caused a Stack Fault in Module...

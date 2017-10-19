@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114395: PC Adm: Troubleshooting Notice 40 Error Messages"
-permalink: kb/114/Q114395/
+permalink: /kb/114/Q114395/
 ---
 
 ## Q114395: PC Adm: Troubleshooting Notice 40 Error Messages

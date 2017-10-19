@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134879: Objects Are Refreshed in the Order They Were Added to the Form"
-permalink: kb/134/Q134879/
+permalink: /kb/134/Q134879/
 ---
 
 ## Q134879: Objects Are Refreshed in the Order They Were Added to the Form

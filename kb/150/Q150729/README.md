@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150729: Err Msg: &quot;Access Denied&quot; When Using Account Operator"
-permalink: kb/150/Q150729/
+permalink: /kb/150/Q150729/
 ---
 
 ## Q150729: Err Msg: &quot;Access Denied&quot; When Using Account Operator

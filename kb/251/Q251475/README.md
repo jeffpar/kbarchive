@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251475: XFOR: MAPI Error 80040110 Occurs When Attempting to Run Calcon"
-permalink: kb/251/Q251475/
+permalink: /kb/251/Q251475/
 ---
 
 ## Q251475: XFOR: MAPI Error 80040110 Occurs When Attempting to Run Calcon

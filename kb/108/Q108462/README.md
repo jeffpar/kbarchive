@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108462: FIX: Concatenation in Parentheses Produces Blank Output"
-permalink: kb/108/Q108462/
+permalink: /kb/108/Q108462/
 ---
 
 ## Q108462: FIX: Concatenation in Parentheses Produces Blank Output

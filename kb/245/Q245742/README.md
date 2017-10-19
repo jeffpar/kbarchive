@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245742: XCON: MTA Stops Responding--Access Violation e0020004"
-permalink: kb/245/Q245742/
+permalink: /kb/245/Q245742/
 ---
 
 ## Q245742: XCON: MTA Stops Responding--Access Violation e0020004

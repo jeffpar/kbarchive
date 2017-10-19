@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93248: WFWG Err Msg: Error 2184: The Service Has Not Been Started"
-permalink: kb/093/Q93248/
+permalink: /kb/093/Q93248/
 ---
 
 ## Q93248: WFWG Err Msg: Error 2184: The Service Has Not Been Started

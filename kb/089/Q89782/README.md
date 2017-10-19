@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89782: Wang's WINLOC Interface May Hang Windows for Workgroups"
-permalink: kb/089/Q89782/
+permalink: /kb/089/Q89782/
 ---
 
 ## Q89782: Wang's WINLOC Interface May Hang Windows for Workgroups

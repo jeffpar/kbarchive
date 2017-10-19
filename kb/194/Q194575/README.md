@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194575: PRB: First Item of List Box or Combo Box Not Selectable"
-permalink: kb/194/Q194575/
+permalink: /kb/194/Q194575/
 ---
 
 ## Q194575: PRB: First Item of List Box or Combo Box Not Selectable

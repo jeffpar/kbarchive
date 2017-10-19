@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130730: Windows NT 3.5 with SP2: Service Fails To Start"
-permalink: kb/130/Q130730/
+permalink: /kb/130/Q130730/
 ---
 
 ## Q130730: Windows NT 3.5 with SP2: Service Fails To Start

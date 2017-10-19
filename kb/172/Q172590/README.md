@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172590: WD97: Unable to Insert Objects into Table Cell"
-permalink: kb/172/Q172590/
+permalink: /kb/172/Q172590/
 ---
 
 ## Q172590: WD97: Unable to Insert Objects into Table Cell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150828: XFOR: Dirsync Role/Number of Servers can Change DXA Addresses"
-permalink: kb/150/Q150828/
+permalink: /kb/150/Q150828/
 ---
 
 ## Q150828: XFOR: Dirsync Role/Number of Servers can Change DXA Addresses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126462: Windows NT Setup Err Msg on NEC Express/II: STOP 0x0000000E"
-permalink: kb/126/Q126462/
+permalink: /kb/126/Q126462/
 ---
 
 ## Q126462: Windows NT Setup Err Msg on NEC Express/II: STOP 0x0000000E

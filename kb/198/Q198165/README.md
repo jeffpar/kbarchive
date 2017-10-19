@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198165: Virtual Globe 99 Err Msg: Unable to Load the Resource.dll"
-permalink: kb/198/Q198165/
+permalink: /kb/198/Q198165/
 ---
 
 ## Q198165: Virtual Globe 99 Err Msg: Unable to Load the Resource.dll

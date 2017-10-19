@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76979: Mouse Driver 7.0 and MS-DOS Applications in Windows 3.0"
-permalink: kb/076/Q76979/
+permalink: /kb/076/Q76979/
 ---
 
 ## Q76979: Mouse Driver 7.0 and MS-DOS Applications in Windows 3.0

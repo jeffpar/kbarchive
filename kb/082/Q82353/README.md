@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82353: BallPoint Mouse and Suspend/Resume"
-permalink: kb/082/Q82353/
+permalink: /kb/082/Q82353/
 ---
 
 ## Q82353: BallPoint Mouse and Suspend/Resume

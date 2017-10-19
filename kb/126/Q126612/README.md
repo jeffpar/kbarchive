@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126612: OS/2 Inventory Does Not Write LastLoggedUser Entry into SMS.INI"
-permalink: kb/126/Q126612/
+permalink: /kb/126/Q126612/
 ---
 
 ## Q126612: OS/2 Inventory Does Not Write LastLoggedUser Entry into SMS.INI

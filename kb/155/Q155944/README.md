@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155944: WD97: Display Icon Changes After Clicking Undo Convert Object"
-permalink: kb/155/Q155944/
+permalink: /kb/155/Q155944/
 ---
 
 ## Q155944: WD97: Display Icon Changes After Clicking Undo Convert Object

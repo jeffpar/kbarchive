@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142440: Monthly Update Files Integrate Multiple Times"
-permalink: kb/142/Q142440/
+permalink: /kb/142/Q142440/
 ---
 
 ## Q142440: Monthly Update Files Integrate Multiple Times

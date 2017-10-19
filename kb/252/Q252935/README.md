@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252935: Err Msg: STOP 0x0000001E KMODE_EXCEPTION_NOT_HANDLED"
-permalink: kb/252/Q252935/
+permalink: /kb/252/Q252935/
 ---
 
 ## Q252935: Err Msg: STOP 0x0000001E KMODE_EXCEPTION_NOT_HANDLED

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179130: Universal Serial Bus-Equipped Computer May Hang on Resume"
-permalink: kb/179/Q179130/
+permalink: /kb/179/Q179130/
 ---
 
 ## Q179130: Universal Serial Bus-Equipped Computer May Hang on Resume

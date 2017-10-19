@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148408: PRB: When Event Fires Again Upon Leaving a Grid Column"
-permalink: kb/148/Q148408/
+permalink: /kb/148/Q148408/
 ---
 
 ## Q148408: PRB: When Event Fires Again Upon Leaving a Grid Column

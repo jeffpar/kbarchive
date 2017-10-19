@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185616: XADM: Directory Replication Fails, Event 1124 Error Displayed"
-permalink: kb/185/Q185616/
+permalink: /kb/185/Q185616/
 ---
 
 ## Q185616: XADM: Directory Replication Fails, Event 1124 Error Displayed

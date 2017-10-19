@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177670: RRAS Does Not Enforce Strong Encryption for DUN Clients"
-permalink: kb/177/Q177670/
+permalink: /kb/177/Q177670/
 ---
 
 ## Q177670: RRAS Does Not Enforce Strong Encryption for DUN Clients

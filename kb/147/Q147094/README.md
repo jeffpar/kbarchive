@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147094: XCLN: View/Group By Changes Column Order, Column Size"
-permalink: kb/147/Q147094/
+permalink: /kb/147/Q147094/
 ---
 
 ## Q147094: XCLN: View/Group By Changes Column Order, Column Size

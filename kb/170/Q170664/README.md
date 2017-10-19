@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170664: Index Server Cannot Index a Virtual Directory with Require SSL"
-permalink: kb/170/Q170664/
+permalink: /kb/170/Q170664/
 ---
 
 ## Q170664: Index Server Cannot Index a Virtual Directory with Require SSL

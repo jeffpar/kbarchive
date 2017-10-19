@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141358: HOWTO: Use the Win32 DrawEdge API Function to Draw 3D Effects"
-permalink: kb/141/Q141358/
+permalink: /kb/141/Q141358/
 ---
 
 ## Q141358: HOWTO: Use the Win32 DrawEdge API Function to Draw 3D Effects

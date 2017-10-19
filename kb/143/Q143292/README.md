@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143292: INFO: Redistributing DAO Components with DAO Apps"
-permalink: kb/143/Q143292/
+permalink: /kb/143/Q143292/
 ---
 
 ## Q143292: INFO: Redistributing DAO Components with DAO Apps

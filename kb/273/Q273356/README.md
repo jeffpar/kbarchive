@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273356: XFOR: &quot;&#92;&#92;&quot; in Meeting Request Migrated From Notes to Exch Double"
-permalink: kb/273/Q273356/
+permalink: /kb/273/Q273356/
 ---
 
 ## Q273356: XFOR: &quot;&#92;&#92;&quot; in Meeting Request Migrated From Notes to Exch Double

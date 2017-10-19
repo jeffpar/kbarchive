@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90422: WFWG Err Msg: Application Has Violated System Integrity"
-permalink: kb/090/Q90422/
+permalink: /kb/090/Q90422/
 ---
 
 ## Q90422: WFWG Err Msg: Application Has Violated System Integrity

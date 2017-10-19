@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141599: Lens Screen Saver Hangs on Dell Omniplex 4100"
-permalink: kb/141/Q141599/
+permalink: /kb/141/Q141599/
 ---
 
 ## Q141599: Lens Screen Saver Hangs on Dell Omniplex 4100

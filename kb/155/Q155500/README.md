@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155500: FP: Centering Bullet List Causes Extra Spaces Between Lines"
-permalink: kb/155/Q155500/
+permalink: /kb/155/Q155500/
 ---
 
 ## Q155500: FP: Centering Bullet List Causes Extra Spaces Between Lines

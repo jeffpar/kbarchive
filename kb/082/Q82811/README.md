@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82811: Adding Screen Savers to Control Panel's Desktop Dialog Box"
-permalink: kb/082/Q82811/
+permalink: /kb/082/Q82811/
 ---
 
 ## Q82811: Adding Screen Savers to Control Panel's Desktop Dialog Box

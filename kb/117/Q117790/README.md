@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117790: Chooser Fails on Macintosh SE Running System 7.1"
-permalink: kb/117/Q117790/
+permalink: /kb/117/Q117790/
 ---
 
 ## Q117790: Chooser Fails on Macintosh SE Running System 7.1

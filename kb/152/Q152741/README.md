@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152741: Err Msg: The Domain Password You Supplied Is Not Correct"
-permalink: kb/152/Q152741/
+permalink: /kb/152/Q152741/
 ---
 
 ## Q152741: Err Msg: The Domain Password You Supplied Is Not Correct

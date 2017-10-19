@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180352: XWEB: No &quot;Send Again&quot; Option on NDR Using ASC or OWA"
-permalink: kb/180/Q180352/
+permalink: /kb/180/Q180352/
 ---
 
 ## Q180352: XWEB: No &quot;Send Again&quot; Option on NDR Using ASC or OWA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142832: INFO: Effect of Priority Setting in the References Dialog"
-permalink: kb/142/Q142832/
+permalink: /kb/142/Q142832/
 ---
 
 ## Q142832: INFO: Effect of Priority Setting in the References Dialog

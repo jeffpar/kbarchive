@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104816: PC MAPI: DocErr: MAPISaveMail FLAGS Parameter Description"
-permalink: kb/104/Q104816/
+permalink: /kb/104/Q104816/
 ---
 
 ## Q104816: PC MAPI: DocErr: MAPISaveMail FLAGS Parameter Description

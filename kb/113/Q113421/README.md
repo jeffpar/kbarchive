@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113421: PRB: Assertion Failed, WINCORE.CPP--Line 129, 133, 182, or 307"
-permalink: kb/113/Q113421/
+permalink: /kb/113/Q113421/
 ---
 
 ## Q113421: PRB: Assertion Failed, WINCORE.CPP--Line 129, 133, 182, or 307

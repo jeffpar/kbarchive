@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128914: Quick Windows Viewer Loses Text During Windows Remote Control"
-permalink: kb/128/Q128914/
+permalink: /kb/128/Q128914/
 ---
 
 ## Q128914: Quick Windows Viewer Loses Text During Windows Remote Control

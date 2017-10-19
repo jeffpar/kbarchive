@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223099: FIX: DataMemberChanged Fails for UserControls"
-permalink: kb/223/Q223099/
+permalink: /kb/223/Q223099/
 ---
 
 ## Q223099: FIX: DataMemberChanged Fails for UserControls

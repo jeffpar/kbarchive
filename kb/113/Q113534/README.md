@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113534: FIX: C2248 Error When Calling CView::OnInitialUpdate()"
-permalink: kb/113/Q113534/
+permalink: /kb/113/Q113534/
 ---
 
 ## Q113534: FIX: C2248 Error When Calling CView::OnInitialUpdate()

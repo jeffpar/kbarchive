@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120715: Problems Associated with the Servers Group"
-permalink: kb/120/Q120715/
+permalink: /kb/120/Q120715/
 ---
 
 ## Q120715: Problems Associated with the Servers Group

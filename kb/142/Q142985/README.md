@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142985: SBS Install Hangs Computer with Dial-Up Networking and MSDLC32"
-permalink: kb/142/Q142985/
+permalink: /kb/142/Q142985/
 ---
 
 ## Q142985: SBS Install Hangs Computer with Dial-Up Networking and MSDLC32

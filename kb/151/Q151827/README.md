@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151827: BUG: Mastering VC++: Print Topic Doesn't Print Topic Title"
-permalink: kb/151/Q151827/
+permalink: /kb/151/Q151827/
 ---
 
 ## Q151827: BUG: Mastering VC++: Print Topic Doesn't Print Topic Title

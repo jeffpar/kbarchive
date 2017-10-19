@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159902: Soccer: ErrMsg: A Required .DLL File, AMF16.DLL, Was Not Found"
-permalink: kb/159/Q159902/
+permalink: /kb/159/Q159902/
 ---
 
 ## Q159902: Soccer: ErrMsg: A Required .DLL File, AMF16.DLL, Was Not Found

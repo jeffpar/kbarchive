@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11988: Windows File I/O vs. C Run-time File I/O"
-permalink: kb/011/Q11988/
+permalink: /kb/011/Q11988/
 ---
 
 ## Q11988: Windows File I/O vs. C Run-time File I/O

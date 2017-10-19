@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194651: XCON: Empty Subject Msg Can Cause NDR When Sent Through X.400"
-permalink: kb/194/Q194651/
+permalink: /kb/194/Q194651/
 ---
 
 ## Q194651: XCON: Empty Subject Msg Can Cause NDR When Sent Through X.400

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250877: Problem Changing Domains Without Rebooting Within 10 Minutes"
-permalink: kb/250/Q250877/
+permalink: /kb/250/Q250877/
 ---
 
 ## Q250877: Problem Changing Domains Without Rebooting Within 10 Minutes

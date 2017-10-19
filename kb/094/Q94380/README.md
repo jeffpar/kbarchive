@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94380: Troubleshooting 'Segment Load Failure' Errors"
-permalink: kb/094/Q94380/
+permalink: /kb/094/Q94380/
 ---
 
 ## Q94380: Troubleshooting 'Segment Load Failure' Errors

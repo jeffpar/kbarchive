@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112420: PPT: PowerPoint Cannot Open Some Files with .DRW Extension"
-permalink: kb/112/Q112420/
+permalink: /kb/112/Q112420/
 ---
 
 ## Q112420: PPT: PowerPoint Cannot Open Some Files with .DRW Extension

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176238: WD97: Sample Code to Increment Through a Document Line by Line"
-permalink: kb/176/Q176238/
+permalink: /kb/176/Q176238/
 ---
 
 ## Q176238: WD97: Sample Code to Increment Through a Document Line by Line

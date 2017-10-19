@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260838: MS00-031: IIS Stops Servicing HTR Requests"
-permalink: kb/260/Q260838/
+permalink: /kb/260/Q260838/
 ---
 
 ## Q260838: MS00-031: IIS Stops Servicing HTR Requests

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136659: Iomega Zip Drive Appears Twice in My Computer"
-permalink: kb/136/Q136659/
+permalink: /kb/136/Q136659/
 ---
 
 ## Q136659: Iomega Zip Drive Appears Twice in My Computer

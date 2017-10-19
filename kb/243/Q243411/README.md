@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243411: SmartStor Jukeman Files Occupy Twice the Space on NTFS Partition"
-permalink: kb/243/Q243411/
+permalink: /kb/243/Q243411/
 ---
 
 ## Q243411: SmartStor Jukeman Files Occupy Twice the Space on NTFS Partition

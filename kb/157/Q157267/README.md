@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157267: Msbatch.inf Parameters: Inserting TCP/IP Information"
-permalink: kb/157/Q157267/
+permalink: /kb/157/Q157267/
 ---
 
 ## Q157267: Msbatch.inf Parameters: Inserting TCP/IP Information

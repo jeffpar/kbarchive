@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255697: XADM: How to Forward Mail from Exchange Mailbox to POP3 Address"
-permalink: kb/255/Q255697/
+permalink: /kb/255/Q255697/
 ---
 
 ## Q255697: XADM: How to Forward Mail from Exchange Mailbox to POP3 Address

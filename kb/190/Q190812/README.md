@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190812: Briefcase Item Needs to Be Synchronized Twice"
-permalink: kb/190/Q190812/
+permalink: /kb/190/Q190812/
 ---
 
 ## Q190812: Briefcase Item Needs to Be Synchronized Twice

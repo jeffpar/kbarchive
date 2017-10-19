@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90292: Causes of Help Compiler Error 5059"
-permalink: kb/090/Q90292/
+permalink: /kb/090/Q90292/
 ---
 
 ## Q90292: Causes of Help Compiler Error 5059

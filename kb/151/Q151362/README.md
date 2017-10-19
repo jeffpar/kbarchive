@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151362: Rcmd.exe Err Msg: Failed to Connect Error 1326"
-permalink: kb/151/Q151362/
+permalink: /kb/151/Q151362/
 ---
 
 ## Q151362: Rcmd.exe Err Msg: Failed to Connect Error 1326

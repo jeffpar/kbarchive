@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191341: How to Run a Program By Using UNC with Package Command Manager"
-permalink: kb/191/Q191341/
+permalink: /kb/191/Q191341/
 ---
 
 ## Q191341: How to Run a Program By Using UNC with Package Command Manager

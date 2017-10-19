@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129079: You Need Arabic Word to Read or Print Arabic SDK Documents"
-permalink: kb/129/Q129079/
+permalink: /kb/129/Q129079/
 ---
 
 ## Q129079: You Need Arabic Word to Read or Print Arabic SDK Documents

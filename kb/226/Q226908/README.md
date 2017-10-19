@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226908: SMS: Distribute Software Wizard GPF in particular Internal Envir"
-permalink: kb/226/Q226908/
+permalink: /kb/226/Q226908/
 ---
 
 ## Q226908: SMS: Distribute Software Wizard GPF in particular Internal Envir

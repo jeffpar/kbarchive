@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87008: PRB: Building Setup Toolkit Overwrites DIALOGS.RES File"
-permalink: kb/087/Q87008/
+permalink: /kb/087/Q87008/
 ---
 
 ## Q87008: PRB: Building Setup Toolkit Overwrites DIALOGS.RES File

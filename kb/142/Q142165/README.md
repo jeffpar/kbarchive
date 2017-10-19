@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142165: Unable To Save Powerpoint Files Using GSNW"
-permalink: kb/142/Q142165/
+permalink: /kb/142/Q142165/
 ---
 
 ## Q142165: Unable To Save Powerpoint Files Using GSNW

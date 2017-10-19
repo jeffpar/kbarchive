@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87223: FFAPI: Understanding Microsoft Mail File Formats"
-permalink: kb/087/Q87223/
+permalink: /kb/087/Q87223/
 ---
 
 ## Q87223: FFAPI: Understanding Microsoft Mail File Formats

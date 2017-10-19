@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243770: XFOR: Inconsistent Disk Space Requirements for App. Converter"
-permalink: kb/243/Q243770/
+permalink: /kb/243/Q243770/
 ---
 
 ## Q243770: XFOR: Inconsistent Disk Space Requirements for App. Converter

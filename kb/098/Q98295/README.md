@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98295: DoubleSpace Err Msg: ...Crosslink Between Files C: and C:"
-permalink: kb/098/Q98295/
+permalink: /kb/098/Q98295/
 ---
 
 ## Q98295: DoubleSpace Err Msg: ...Crosslink Between Files C: and C:

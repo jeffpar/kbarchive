@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87190: PROFS: Notice 16, Error Reading Mail"
-permalink: kb/087/Q87190/
+permalink: /kb/087/Q87190/
 ---
 
 ## Q87190: PROFS: Notice 16, Error Reading Mail

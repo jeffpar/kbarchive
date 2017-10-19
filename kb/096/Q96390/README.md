@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96390: Using DoubleSpace with Compressed Floppy and Removable Disks"
-permalink: kb/096/Q96390/
+permalink: /kb/096/Q96390/
 ---
 
 ## Q96390: Using DoubleSpace with Compressed Floppy and Removable Disks

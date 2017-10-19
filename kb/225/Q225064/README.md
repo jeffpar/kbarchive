@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225064: SMS: INVMAC Software Inventory Performance Decreases Over Time"
-permalink: kb/225/Q225064/
+permalink: /kb/225/Q225064/
 ---
 
 ## Q225064: SMS: INVMAC Software Inventory Performance Decreases Over Time

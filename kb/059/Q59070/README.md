@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59070: INFO: Buffer Size for fcvt() and ecvt() Is 349 Bytes"
-permalink: kb/059/Q59070/
+permalink: /kb/059/Q59070/
 ---
 
 ## Q59070: INFO: Buffer Size for fcvt() and ecvt() Is 349 Bytes

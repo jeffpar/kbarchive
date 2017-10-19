@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161738: BUG: Large Memo Field Forces Undesired New Report Page"
-permalink: kb/161/Q161738/
+permalink: /kb/161/Q161738/
 ---
 
 ## Q161738: BUG: Large Memo Field Forces Undesired New Report Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195643: How to Configure Windows NT for LPR Printing"
-permalink: kb/195/Q195643/
+permalink: /kb/195/Q195643/
 ---
 
 ## Q195643: How to Configure Windows NT for LPR Printing

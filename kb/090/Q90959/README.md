@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90959: INFO: Using INDEX ON &lt;Tag&gt; UNIQUE to Create Unique Index"
-permalink: kb/090/Q90959/
+permalink: /kb/090/Q90959/
 ---
 
 ## Q90959: INFO: Using INDEX ON &lt;Tag&gt; UNIQUE to Create Unique Index

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236601: XADM: Notes Proxy Address Generation Fails on Extended Chars"
-permalink: kb/236/Q236601/
+permalink: /kb/236/Q236601/
 ---
 
 ## Q236601: XADM: Notes Proxy Address Generation Fails on Extended Chars

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215106: SMS: Windows 3.1 Error After Uninstalling Remote Tool"
-permalink: kb/215/Q215106/
+permalink: /kb/215/Q215106/
 ---
 
 ## Q215106: SMS: Windows 3.1 Error After Uninstalling Remote Tool

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189789: XFOR: Linkage 3.2 PROFS Connector Repeatedly Restarts Itself"
-permalink: kb/189/Q189789/
+permalink: /kb/189/Q189789/
 ---
 
 ## Q189789: XFOR: Linkage 3.2 PROFS Connector Repeatedly Restarts Itself

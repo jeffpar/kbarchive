@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100444: How To Programmatically Embed and Link Part of a File"
-permalink: kb/100/Q100444/
+permalink: /kb/100/Q100444/
 ---
 
 ## Q100444: How To Programmatically Embed and Link Part of a File

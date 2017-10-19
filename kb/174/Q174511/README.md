@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174511: Access Violation in Win32K When Calling GetDCEx"
-permalink: kb/174/Q174511/
+permalink: /kb/174/Q174511/
 ---
 
 ## Q174511: Access Violation in Win32K When Calling GetDCEx

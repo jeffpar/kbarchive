@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168355: Kids: Error Message When Copying Clipart from Picture Picker"
-permalink: kb/168/Q168355/
+permalink: /kb/168/Q168355/
 ---
 
 ## Q168355: Kids: Error Message When Copying Clipart from Picture Picker

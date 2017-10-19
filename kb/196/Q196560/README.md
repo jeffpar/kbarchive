@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196560: WD97: Rulers Disappear with Selection Larger Than One Page"
-permalink: kb/196/Q196560/
+permalink: /kb/196/Q196560/
 ---
 
 ## Q196560: WD97: Rulers Disappear with Selection Larger Than One Page

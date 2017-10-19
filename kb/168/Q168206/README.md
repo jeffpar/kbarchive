@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168206: PRB: &quot;Argument Not Optional&quot; Error Using DAO 3.5"
-permalink: kb/168/Q168206/
+permalink: /kb/168/Q168206/
 ---
 
 ## Q168206: PRB: &quot;Argument Not Optional&quot; Error Using DAO 3.5

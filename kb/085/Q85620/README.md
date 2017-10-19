@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85620: Invalid Error When Increasing Size of Permanent Swap File"
-permalink: kb/085/Q85620/
+permalink: /kb/085/Q85620/
 ---
 
 ## Q85620: Invalid Error When Increasing Size of Permanent Swap File

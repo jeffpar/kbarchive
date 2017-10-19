@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141396: How to Place FoxPro's Desktop Accessory Items on the Menu"
-permalink: kb/141/Q141396/
+permalink: /kb/141/Q141396/
 ---
 
 ## Q141396: How to Place FoxPro's Desktop Accessory Items on the Menu

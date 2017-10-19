@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152069: XCLN: Can't Save Multiple Attachments From Exchange"
-permalink: kb/152/Q152069/
+permalink: /kb/152/Q152069/
 ---
 
 ## Q152069: XCLN: Can't Save Multiple Attachments From Exchange

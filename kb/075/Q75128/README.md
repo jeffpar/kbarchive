@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75128: SMARTDrive, AST RAMpage, and REMM.SYS"
-permalink: kb/075/Q75128/
+permalink: /kb/075/Q75128/
 ---
 
 ## Q75128: SMARTDrive, AST RAMpage, and REMM.SYS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81334: KBHook2.exe Demonstrates Using a WH_KEYBOARD Hook"
-permalink: kb/081/Q81334/
+permalink: /kb/081/Q81334/
 ---
 
 ## Q81334: KBHook2.exe Demonstrates Using a WH_KEYBOARD Hook

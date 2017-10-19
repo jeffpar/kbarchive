@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153617: Chgpass.exe May Cause Message &quot;Error Getting PDC Name&quot;"
-permalink: kb/153/Q153617/
+permalink: /kb/153/Q153617/
 ---
 
 ## Q153617: Chgpass.exe May Cause Message &quot;Error Getting PDC Name&quot;

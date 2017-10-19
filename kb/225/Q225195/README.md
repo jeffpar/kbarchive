@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225195: Stop TSLS Prior to Installing Programs w/ODBC Connections"
-permalink: kb/225/Q225195/
+permalink: /kb/225/Q225195/
 ---
 
 ## Q225195: Stop TSLS Prior to Installing Programs w/ODBC Connections

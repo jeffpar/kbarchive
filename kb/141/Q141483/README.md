@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141483: Sound and Video Drivers Used by Multimedia Programs"
-permalink: kb/141/Q141483/
+permalink: /kb/141/Q141483/
 ---
 
 ## Q141483: Sound and Video Drivers Used by Multimedia Programs

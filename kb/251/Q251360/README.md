@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251360: XFOR: No cc:Mail 8.5 Import and Export w. Connector for cc:Mail"
-permalink: kb/251/Q251360/
+permalink: /kb/251/Q251360/
 ---
 
 ## Q251360: XFOR: No cc:Mail 8.5 Import and Export w. Connector for cc:Mail

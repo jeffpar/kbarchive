@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194938: HOWTO: Monitor TCP/IP Ports in Use"
-permalink: kb/194/Q194938/
+permalink: /kb/194/Q194938/
 ---
 
 ## Q194938: HOWTO: Monitor TCP/IP Ports in Use

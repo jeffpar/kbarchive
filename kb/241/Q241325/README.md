@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241325: XCLN: Out of Space Message When Creating or Importing Rules"
-permalink: kb/241/Q241325/
+permalink: /kb/241/Q241325/
 ---
 
 ## Q241325: XCLN: Out of Space Message When Creating or Importing Rules

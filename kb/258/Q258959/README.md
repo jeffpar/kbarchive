@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258959: XADM: How to Save Properties to a File Using Mdbvu32.exe"
-permalink: kb/258/Q258959/
+permalink: /kb/258/Q258959/
 ---
 
 ## Q258959: XADM: How to Save Properties to a File Using Mdbvu32.exe

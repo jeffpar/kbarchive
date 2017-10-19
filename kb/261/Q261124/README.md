@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261124: FS2000: Vocal Instructions Are Not Available in Tutorial Flights"
-permalink: kb/261/Q261124/
+permalink: /kb/261/Q261124/
 ---
 
 ## Q261124: FS2000: Vocal Instructions Are Not Available in Tutorial Flights

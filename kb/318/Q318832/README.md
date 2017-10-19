@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318832: PRB: Run-Time Error 8015 If You Try to Open the Serial Port"
-permalink: kb/318/Q318832/
+permalink: /kb/318/Q318832/
 ---
 
 ## Q318832: PRB: Run-Time Error 8015 If You Try to Open the Serial Port

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134538: Microsoft Does Not Provide Real Mode Novell NetWare Files"
-permalink: kb/134/Q134538/
+permalink: /kb/134/Q134538/
 ---
 
 ## Q134538: Microsoft Does Not Provide Real Mode Novell NetWare Files

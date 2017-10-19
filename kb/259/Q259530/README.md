@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259530: Error Message Connecting to Your MMS Server by an HTTP Port"
-permalink: kb/259/Q259530/
+permalink: /kb/259/Q259530/
 ---
 
 ## Q259530: Error Message Connecting to Your MMS Server by an HTTP Port

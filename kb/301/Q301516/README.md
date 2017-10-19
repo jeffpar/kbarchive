@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301516: MSN Explorer 6.1 Freezes When Playing Certain Media If Windows M"
-permalink: kb/301/Q301516/
+permalink: /kb/301/Q301516/
 ---
 
 ## Q301516: MSN Explorer 6.1 Freezes When Playing Certain Media If Windows M

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184415: WD97: HTML Converter Cannot Save in Different Code Pages"
-permalink: kb/184/Q184415/
+permalink: /kb/184/Q184415/
 ---
 
 ## Q184415: WD97: HTML Converter Cannot Save in Different Code Pages

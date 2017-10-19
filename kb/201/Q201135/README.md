@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201135: XFOR: GroupWise Notes Migrate as All Day Event to Outlook 98"
-permalink: kb/201/Q201135/
+permalink: /kb/201/Q201135/
 ---
 
 ## Q201135: XFOR: GroupWise Notes Migrate as All Day Event to Outlook 98

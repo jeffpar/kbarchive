@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136798: Versions of CTL3D32 Included with Visual C++ Version 2.x"
-permalink: kb/136/Q136798/
+permalink: /kb/136/Q136798/
 ---
 
 ## Q136798: Versions of CTL3D32 Included with Visual C++ Version 2.x

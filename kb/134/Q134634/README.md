@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134634: Microsoft Excel for Windows NT Prints Only One Copy"
-permalink: kb/134/Q134634/
+permalink: /kb/134/Q134634/
 ---
 
 ## Q134634: Microsoft Excel for Windows NT Prints Only One Copy

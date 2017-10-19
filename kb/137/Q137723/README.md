@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137723: NET2182 and NET3546 Errors Appear After LAN Manager 2.2c Setup"
-permalink: kb/137/Q137723/
+permalink: /kb/137/Q137723/
 ---
 
 ## Q137723: NET2182 and NET3546 Errors Appear After LAN Manager 2.2c Setup

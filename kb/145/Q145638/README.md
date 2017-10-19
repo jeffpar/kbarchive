@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145638: FIX: Cannot Select Sheridan Tab Control from Modal Form"
-permalink: kb/145/Q145638/
+permalink: /kb/145/Q145638/
 ---
 
 ## Q145638: FIX: Cannot Select Sheridan Tab Control from Modal Form

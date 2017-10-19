@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142202: HOWTO: Create a Progress Bar on the Status Bar"
-permalink: kb/142/Q142202/
+permalink: /kb/142/Q142202/
 ---
 
 ## Q142202: HOWTO: Create a Progress Bar on the Status Bar

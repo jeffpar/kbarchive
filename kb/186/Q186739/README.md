@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186739: XFOR: Events 4018 &amp; 4116 Starting the Internet Mail Service"
-permalink: kb/186/Q186739/
+permalink: /kb/186/Q186739/
 ---
 
 ## Q186739: XFOR: Events 4018 &amp; 4116 Starting the Internet Mail Service

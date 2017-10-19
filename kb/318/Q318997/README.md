@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318997: FIX: Report Form ASCII Clause Allows No White Space"
-permalink: kb/318/Q318997/
+permalink: /kb/318/Q318997/
 ---
 
 ## Q318997: FIX: Report Form ASCII Clause Allows No White Space

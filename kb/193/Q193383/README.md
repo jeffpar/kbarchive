@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193383: Research Organizer: PC-Cillin II Finds Virus in Soccer.ero File"
-permalink: kb/193/Q193383/
+permalink: /kb/193/Q193383/
 ---
 
 ## Q193383: Research Organizer: PC-Cillin II Finds Virus in Soccer.ero File

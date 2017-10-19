@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106515: Writer/Artist: Cannot Import Some Graphic Files"
-permalink: kb/106/Q106515/
+permalink: /kb/106/Q106515/
 ---
 
 ## Q106515: Writer/Artist: Cannot Import Some Graphic Files

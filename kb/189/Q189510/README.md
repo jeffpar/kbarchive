@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189510: XADM: Exchange 5.0 Does Not Install on Compaq Dual Processor"
-permalink: kb/189/Q189510/
+permalink: /kb/189/Q189510/
 ---
 
 ## Q189510: XADM: Exchange 5.0 Does Not Install on Compaq Dual Processor

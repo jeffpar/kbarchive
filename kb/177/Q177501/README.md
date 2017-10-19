@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177501: Code Page Specified in Remote Environment Was Not Used"
-permalink: kb/177/Q177501/
+permalink: /kb/177/Q177501/
 ---
 
 ## Q177501: Code Page Specified in Remote Environment Was Not Used

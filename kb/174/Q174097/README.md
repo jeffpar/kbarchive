@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174097: Specifying What Software Types Web Sites Can Download and Run"
-permalink: kb/174/Q174097/
+permalink: /kb/174/Q174097/
 ---
 
 ## Q174097: Specifying What Software Types Web Sites Can Download and Run

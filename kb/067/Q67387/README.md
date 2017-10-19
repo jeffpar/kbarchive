@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67387: ASD: Piper Archer Gear Won't Retract"
-permalink: kb/067/Q67387/
+permalink: /kb/067/Q67387/
 ---
 
 ## Q67387: ASD: Piper Archer Gear Won't Retract

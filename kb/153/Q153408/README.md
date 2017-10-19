@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153408: Sms.ini Not Updating Server/Share Names"
-permalink: kb/153/Q153408/
+permalink: /kb/153/Q153408/
 ---
 
 ## Q153408: Sms.ini Not Updating Server/Share Names

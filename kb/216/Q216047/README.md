@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216047: Activating Numerous DLC Connections Results in Inactive LUs"
-permalink: kb/216/Q216047/
+permalink: /kb/216/Q216047/
 ---
 
 ## Q216047: Activating Numerous DLC Connections Results in Inactive LUs

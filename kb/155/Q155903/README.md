@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155903: WD97: Error Inserting ActiveX Control"
-permalink: kb/155/Q155903/
+permalink: /kb/155/Q155903/
 ---
 
 ## Q155903: WD97: Error Inserting ActiveX Control

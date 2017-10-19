@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166789: WD97: Title of HTML Document Begins with a Question Mark"
-permalink: kb/166/Q166789/
+permalink: /kb/166/Q166789/
 ---
 
 ## Q166789: WD97: Title of HTML Document Begins with a Question Mark

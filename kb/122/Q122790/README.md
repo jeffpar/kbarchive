@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122790: BUG: Character Constant with &#92;0 Not Stored Properly"
-permalink: kb/122/Q122790/
+permalink: /kb/122/Q122790/
 ---
 
 ## Q122790: BUG: Character Constant with &#92;0 Not Stored Properly

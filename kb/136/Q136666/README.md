@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136666: How to Make a Day Date Spinner"
-permalink: kb/136/Q136666/
+permalink: /kb/136/Q136666/
 ---
 
 ## Q136666: How to Make a Day Date Spinner

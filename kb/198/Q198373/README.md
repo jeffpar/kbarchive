@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198373: WD97: Outline Number &quot;Number Format&quot; Wrong or Changes to Square"
-permalink: kb/198/Q198373/
+permalink: /kb/198/Q198373/
 ---
 
 ## Q198373: WD97: Outline Number &quot;Number Format&quot; Wrong or Changes to Square

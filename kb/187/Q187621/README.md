@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187621: Msvbvm50.dll Missing From Building Applications with Outlook 98"
-permalink: kb/187/Q187621/
+permalink: /kb/187/Q187621/
 ---
 
 ## Q187621: Msvbvm50.dll Missing From Building Applications with Outlook 98

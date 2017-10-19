@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139391: Mac Gen: Extracting Access Document Does Not Extract User List"
-permalink: kb/139/Q139391/
+permalink: /kb/139/Q139391/
 ---
 
 ## Q139391: Mac Gen: Extracting Access Document Does Not Extract User List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150144: Multihomed Client Fails to Refresh Registration with WINS"
-permalink: kb/150/Q150144/
+permalink: /kb/150/Q150144/
 ---
 
 ## Q150144: Multihomed Client Fails to Refresh Registration with WINS

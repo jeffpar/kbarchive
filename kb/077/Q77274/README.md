@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77274: No Page Break Unavailable in Printer Setup with IBM Proprinter"
-permalink: kb/077/Q77274/
+permalink: /kb/077/Q77274/
 ---
 
 ## Q77274: No Page Break Unavailable in Printer Setup with IBM Proprinter

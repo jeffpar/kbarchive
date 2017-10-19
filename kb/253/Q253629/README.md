@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253629: FS2000: No Control Tower Clearance for Takeoffs or Landings"
-permalink: kb/253/Q253629/
+permalink: /kb/253/Q253629/
 ---
 
 ## Q253629: FS2000: No Control Tower Clearance for Takeoffs or Landings

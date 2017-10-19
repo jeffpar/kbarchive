@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142280: PPT7: Fonts in Font List Contain Question Marks"
-permalink: kb/142/Q142280/
+permalink: /kb/142/Q142280/
 ---
 
 ## Q142280: PPT7: Fonts in Font List Contain Question Marks

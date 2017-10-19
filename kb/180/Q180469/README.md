@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180469: Print Server Access Violation When Starting First Session"
-permalink: kb/180/Q180469/
+permalink: /kb/180/Q180469/
 ---
 
 ## Q180469: Print Server Access Violation When Starting First Session

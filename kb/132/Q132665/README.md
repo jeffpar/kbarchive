@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132665: Cannot Run External Programs from NetWare Login Script"
-permalink: kb/132/Q132665/
+permalink: /kb/132/Q132665/
 ---
 
 ## Q132665: Cannot Run External Programs from NetWare Login Script

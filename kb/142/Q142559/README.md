@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142559: Creating Tag Files for IIS Gopher Service"
-permalink: kb/142/Q142559/
+permalink: /kb/142/Q142559/
 ---
 
 ## Q142559: Creating Tag Files for IIS Gopher Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250671: XFOR: Notes Group Type Attr. Doesn't Sync to Exchange Directory"
-permalink: kb/250/Q250671/
+permalink: /kb/250/Q250671/
 ---
 
 ## Q250671: XFOR: Notes Group Type Attr. Doesn't Sync to Exchange Directory

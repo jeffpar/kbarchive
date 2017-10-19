@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200793: XFOR: Load Balancing Mail and Dirsync with Exchange Notes Conn."
-permalink: kb/200/Q200793/
+permalink: /kb/200/Q200793/
 ---
 
 ## Q200793: XFOR: Load Balancing Mail and Dirsync with Exchange Notes Conn.

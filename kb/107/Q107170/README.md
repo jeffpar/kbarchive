@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107170: Viewer's .BMK and .ANN Files"
-permalink: kb/107/Q107170/
+permalink: /kb/107/Q107170/
 ---
 
 ## Q107170: Viewer's .BMK and .ANN Files

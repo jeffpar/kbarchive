@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76457: Colorado Tape Backup Boards FC10, TC15, and MS-DOS"
-permalink: kb/076/Q76457/
+permalink: /kb/076/Q76457/
 ---
 
 ## Q76457: Colorado Tape Backup Boards FC10, TC15, and MS-DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174890: XFOR: Content Conversion Fails with Outbound Internet Message"
-permalink: kb/174/Q174890/
+permalink: /kb/174/Q174890/
 ---
 
 ## Q174890: XFOR: Content Conversion Fails with Outbound Internet Message

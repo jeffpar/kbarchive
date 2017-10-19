@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77458: MS-DOS Shell Leaves Temporary Files on Hard Drive"
-permalink: kb/077/Q77458/
+permalink: /kb/077/Q77458/
 ---
 
 ## Q77458: MS-DOS Shell Leaves Temporary Files on Hard Drive

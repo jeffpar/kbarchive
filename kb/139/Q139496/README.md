@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139496: Slow Performance in Bulletin Boards with 1000+ Messages"
-permalink: kb/139/Q139496/
+permalink: /kb/139/Q139496/
 ---
 
 ## Q139496: Slow Performance in Bulletin Boards with 1000+ Messages

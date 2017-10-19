@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151010: IIS IDC: Err Msg: Error Performing Query"
-permalink: kb/151/Q151010/
+permalink: /kb/151/Q151010/
 ---
 
 ## Q151010: IIS IDC: Err Msg: Error Performing Query

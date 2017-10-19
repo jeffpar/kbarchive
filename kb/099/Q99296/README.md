@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99296: Error: Training Could Not Be Carried Out for &quot;Bravo&quot;"
-permalink: kb/099/Q99296/
+permalink: /kb/099/Q99296/
 ---
 
 ## Q99296: Error: Training Could Not Be Carried Out for &quot;Bravo&quot;

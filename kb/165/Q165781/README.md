@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165781: WD97: Converted Document Contains PRIVATE Fields"
-permalink: kb/165/Q165781/
+permalink: /kb/165/Q165781/
 ---
 
 ## Q165781: WD97: Converted Document Contains PRIVATE Fields

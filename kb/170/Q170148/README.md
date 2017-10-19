@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170148: FIX: Cannot Trap Error Number 1884 on Form"
-permalink: kb/170/Q170148/
+permalink: /kb/170/Q170148/
 ---
 
 ## Q170148: FIX: Cannot Trap Error Number 1884 on Form

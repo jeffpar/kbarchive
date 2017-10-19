@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216471: NetBT Improvements for Connections Between Multihomed Computers"
-permalink: kb/216/Q216471/
+permalink: /kb/216/Q216471/
 ---
 
 ## Q216471: NetBT Improvements for Connections Between Multihomed Computers

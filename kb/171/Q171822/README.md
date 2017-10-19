@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171822: FIX: Adding Routine to UserControl in Break Mode Causes Crash"
-permalink: kb/171/Q171822/
+permalink: /kb/171/Q171822/
 ---
 
 ## Q171822: FIX: Adding Routine to UserControl in Break Mode Causes Crash

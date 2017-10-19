@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171980: HOWTO: Play MIDI Files Using API Functions"
-permalink: kb/171/Q171980/
+permalink: /kb/171/Q171980/
 ---
 
 ## Q171980: HOWTO: Play MIDI Files Using API Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183704: Hide Drives Policy in Common.adm Has No VALUEOFF Statement"
-permalink: kb/183/Q183704/
+permalink: /kb/183/Q183704/
 ---
 
 ## Q183704: Hide Drives Policy in Common.adm Has No VALUEOFF Statement

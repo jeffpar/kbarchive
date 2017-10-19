@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130823: Cannot Cancel Changes to Network Adapter Properties"
-permalink: kb/130/Q130823/
+permalink: /kb/130/Q130823/
 ---
 
 ## Q130823: Cannot Cancel Changes to Network Adapter Properties

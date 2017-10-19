@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166504: PRB: MFC and CRT Must Match in debug/release and static/dynamic"
-permalink: kb/166/Q166504/
+permalink: /kb/166/Q166504/
 ---
 
 ## Q166504: PRB: MFC and CRT Must Match in debug/release and static/dynamic

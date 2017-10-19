@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138095: How to Store the Value of Check Boxes in a Grid to an Array"
-permalink: kb/138/Q138095/
+permalink: /kb/138/Q138095/
 ---
 
 ## Q138095: How to Store the Value of Check Boxes in a Grid to an Array

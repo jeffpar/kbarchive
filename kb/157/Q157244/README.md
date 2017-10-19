@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157244: Program Cannot Share or &quot;Steal&quot; LPT Port in Windows 95"
-permalink: kb/157/Q157244/
+permalink: /kb/157/Q157244/
 ---
 
 ## Q157244: Program Cannot Share or &quot;Steal&quot; LPT Port in Windows 95

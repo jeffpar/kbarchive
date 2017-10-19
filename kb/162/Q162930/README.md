@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162930: Cannot Create New Connection with Internet Mail Service"
-permalink: kb/162/Q162930/
+permalink: /kb/162/Q162930/
 ---
 
 ## Q162930: Cannot Create New Connection with Internet Mail Service

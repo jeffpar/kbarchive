@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227395: Incorrect Dialog Box for Changing Password on NDS Server"
-permalink: kb/227/Q227395/
+permalink: /kb/227/Q227395/
 ---
 
 ## Q227395: Incorrect Dialog Box for Changing Password on NDS Server

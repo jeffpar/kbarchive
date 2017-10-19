@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172533: SMS: Invmac Fails to Perform Resync"
-permalink: kb/172/Q172533/
+permalink: /kb/172/Q172533/
 ---
 
 ## Q172533: SMS: Invmac Fails to Perform Resync

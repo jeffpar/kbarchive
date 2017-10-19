@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175512: HOWTO: Get a Short Filename from a Long Filename"
-permalink: kb/175/Q175512/
+permalink: /kb/175/Q175512/
 ---
 
 ## Q175512: HOWTO: Get a Short Filename from a Long Filename

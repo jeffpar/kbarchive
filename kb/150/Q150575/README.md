@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150575: HOWTO: Set Up a TCP/IP Peer-to-Peer Network Connection"
-permalink: kb/150/Q150575/
+permalink: /kb/150/Q150575/
 ---
 
 ## Q150575: HOWTO: Set Up a TCP/IP Peer-to-Peer Network Connection

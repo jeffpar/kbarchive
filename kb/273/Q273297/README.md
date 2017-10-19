@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273297: XWEB: No Warning  When Creating an Incorrect Appointment"
-permalink: kb/273/Q273297/
+permalink: /kb/273/Q273297/
 ---
 
 ## Q273297: XWEB: No Warning  When Creating an Incorrect Appointment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130349: PRB: Cannot Change ActivePage of a PageFrame with a Hot Key"
-permalink: kb/130/Q130349/
+permalink: /kb/130/Q130349/
 ---
 
 ## Q130349: PRB: Cannot Change ActivePage of a PageFrame with a Hot Key

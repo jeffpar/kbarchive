@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299293: XADM: Entering an OWA Password Invalidates Your Proxy Password"
-permalink: kb/299/Q299293/
+permalink: /kb/299/Q299293/
 ---
 
 ## Q299293: XADM: Entering an OWA Password Invalidates Your Proxy Password

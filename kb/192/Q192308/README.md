@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192308: PRB: View Designer Misreads Date Criteria in ODBC Date Format"
-permalink: kb/192/Q192308/
+permalink: /kb/192/Q192308/
 ---
 
 ## Q192308: PRB: View Designer Misreads Date Criteria in ODBC Date Format

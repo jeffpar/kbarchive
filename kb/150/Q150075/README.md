@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150075: FIX: False Memory Leaks in MFC DLL Statically Linked to MFC"
-permalink: kb/150/Q150075/
+permalink: /kb/150/Q150075/
 ---
 
 ## Q150075: FIX: False Memory Leaks in MFC DLL Statically Linked to MFC

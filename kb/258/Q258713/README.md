@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258713: Allegiance: Description of the Troubleshooting Shortcuts"
-permalink: kb/258/Q258713/
+permalink: /kb/258/Q258713/
 ---
 
 ## Q258713: Allegiance: Description of the Troubleshooting Shortcuts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139476: FIX: File Time Incorrect After Saving During Build"
-permalink: kb/139/Q139476/
+permalink: /kb/139/Q139476/
 ---
 
 ## Q139476: FIX: File Time Incorrect After Saving During Build

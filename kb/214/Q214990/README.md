@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214990: SMS: User Cannot Start Check32.exe and Check Out Licenses"
-permalink: kb/214/Q214990/
+permalink: /kb/214/Q214990/
 ---
 
 ## Q214990: SMS: User Cannot Start Check32.exe and Check Out Licenses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108007: Using Wollongong TCP/IP with Windows for Workgroups 3.11"
-permalink: kb/108/Q108007/
+permalink: /kb/108/Q108007/
 ---
 
 ## Q108007: Using Wollongong TCP/IP with Windows for Workgroups 3.11

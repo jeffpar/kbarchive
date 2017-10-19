@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188832: Intel VTune 3.0 Fails with Windows NT 4.0 Option Pack"
-permalink: kb/188/Q188832/
+permalink: /kb/188/Q188832/
 ---
 
 ## Q188832: Intel VTune 3.0 Fails with Windows NT 4.0 Option Pack

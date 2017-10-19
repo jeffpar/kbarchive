@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177198: How to Reinstall Windows 95 Audio and Video Compression"
-permalink: kb/177/Q177198/
+permalink: /kb/177/Q177198/
 ---
 
 ## Q177198: How to Reinstall Windows 95 Audio and Video Compression

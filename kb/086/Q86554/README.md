@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86554: MHS: Requirements for the MHS Host"
-permalink: kb/086/Q86554/
+permalink: /kb/086/Q86554/
 ---
 
 ## Q86554: MHS: Requirements for the MHS Host

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191522: FIX: TABLEUPDATE() Fails in Remote View With Empty Memo Field"
-permalink: kb/191/Q191522/
+permalink: /kb/191/Q191522/
 ---
 
 ## Q191522: FIX: TABLEUPDATE() Fails in Remote View With Empty Memo Field

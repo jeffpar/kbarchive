@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118358: PC DB: Err Msg: Notice 107, File Is Inaccessible"
-permalink: kb/118/Q118358/
+permalink: /kb/118/Q118358/
 ---
 
 ## Q118358: PC DB: Err Msg: Notice 107, File Is Inaccessible

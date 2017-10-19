@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104616: INFO: Sharing Common C Types with MASM"
-permalink: kb/104/Q104616/
+permalink: /kb/104/Q104616/
 ---
 
 ## Q104616: INFO: Sharing Common C Types with MASM

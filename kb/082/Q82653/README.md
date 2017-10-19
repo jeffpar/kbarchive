@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82653: Da Vinci eMAIL may GP Fault When Attaching a Shared Worksheet"
-permalink: kb/082/Q82653/
+permalink: /kb/082/Q82653/
 ---
 
 ## Q82653: Da Vinci eMAIL may GP Fault When Attaching a Shared Worksheet

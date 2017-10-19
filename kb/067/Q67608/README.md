@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67608: Saving Program Manager Configuration Without Exiting Windows"
-permalink: kb/067/Q67608/
+permalink: /kb/067/Q67608/
 ---
 
 ## Q67608: Saving Program Manager Configuration Without Exiting Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315290: Events Do Not Fire When You Use WithEvents for a WebClass"
-permalink: kb/315/Q315290/
+permalink: /kb/315/Q315290/
 ---
 
 ## Q315290: Events Do Not Fire When You Use WithEvents for a WebClass

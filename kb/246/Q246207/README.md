@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246207: XADM: Database Won't Start with -1206 Error After Failed Upgrade"
-permalink: kb/246/Q246207/
+permalink: /kb/246/Q246207/
 ---
 
 ## Q246207: XADM: Database Won't Start with -1206 Error After Failed Upgrade

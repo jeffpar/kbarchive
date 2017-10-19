@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278638: MSN Companion Web page display and toolbar"
-permalink: kb/278/Q278638/
+permalink: /kb/278/Q278638/
 ---
 
 ## Q278638: MSN Companion Web page display and toolbar

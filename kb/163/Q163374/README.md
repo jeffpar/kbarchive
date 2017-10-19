@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163374: Arp May Not Use Specified Source IP Address"
-permalink: kb/163/Q163374/
+permalink: /kb/163/Q163374/
 ---
 
 ## Q163374: Arp May Not Use Specified Source IP Address

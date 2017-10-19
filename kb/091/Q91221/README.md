@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91221: NET.EXE Does Not Always Load Full Redirector by Default"
-permalink: kb/091/Q91221/
+permalink: /kb/091/Q91221/
 ---
 
 ## Q91221: NET.EXE Does Not Always Load Full Redirector by Default

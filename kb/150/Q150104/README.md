@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150104: Removing Entry from Directory Replication Configuration Fails"
-permalink: kb/150/Q150104/
+permalink: /kb/150/Q150104/
 ---
 
 ## Q150104: Removing Entry from Directory Replication Configuration Fails

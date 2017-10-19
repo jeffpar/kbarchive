@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181761: SMS: Cannot Specify an Inventory Scan Interval for SKIPINV"
-permalink: kb/181/Q181761/
+permalink: /kb/181/Q181761/
 ---
 
 ## Q181761: SMS: Cannot Specify an Inventory Scan Interval for SKIPINV

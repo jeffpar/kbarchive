@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94115: PCS Host Terminal Software and Windows for Workgroups"
-permalink: kb/094/Q94115/
+permalink: /kb/094/Q94115/
 ---
 
 ## Q94115: PCS Host Terminal Software and Windows for Workgroups

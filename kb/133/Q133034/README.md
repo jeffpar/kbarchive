@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133034: FIX: CSpinButtonCtrl Causes Assertion in viewscrl.cpp line 698"
-permalink: kb/133/Q133034/
+permalink: /kb/133/Q133034/
 ---
 
 ## Q133034: FIX: CSpinButtonCtrl Causes Assertion in viewscrl.cpp line 698

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281882: WD97: Err Msg: WINWORD Caused a GPF in HPFWIN02.DLL"
-permalink: kb/281/Q281882/
+permalink: /kb/281/Q281882/
 ---
 
 ## Q281882: WD97: Err Msg: WINWORD Caused a GPF in HPFWIN02.DLL

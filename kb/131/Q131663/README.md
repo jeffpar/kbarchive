@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131663: Setup Error Message: Error SU0358"
-permalink: kb/131/Q131663/
+permalink: /kb/131/Q131663/
 ---
 
 ## Q131663: Setup Error Message: Error SU0358

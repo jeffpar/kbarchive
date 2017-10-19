@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74749: Library Switches Determine Which C Libraries PWB Assumes"
-permalink: kb/074/Q74749/
+permalink: /kb/074/Q74749/
 ---
 
 ## Q74749: Library Switches Determine Which C Libraries PWB Assumes

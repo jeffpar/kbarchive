@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177157: PRB: Disabled Items in List Box Become Enabled"
-permalink: kb/177/Q177157/
+permalink: /kb/177/Q177157/
 ---
 
 ## Q177157: PRB: Disabled Items in List Box Become Enabled

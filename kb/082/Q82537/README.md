@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82537: Finale GP Faults with Right Mouse Button Click"
-permalink: kb/082/Q82537/
+permalink: /kb/082/Q82537/
 ---
 
 ## Q82537: Finale GP Faults with Right Mouse Button Click

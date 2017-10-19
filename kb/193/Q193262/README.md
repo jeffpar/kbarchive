@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193262: PRB: Quotes Added When Using Write# to Write Numbers to File"
-permalink: kb/193/Q193262/
+permalink: /kb/193/Q193262/
 ---
 
 ## Q193262: PRB: Quotes Added When Using Write# to Write Numbers to File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150291: BUG: Empty File Name in PrivateProfile APIs Returns True"
-permalink: kb/150/Q150291/
+permalink: /kb/150/Q150291/
 ---
 
 ## Q150291: BUG: Empty File Name in PrivateProfile APIs Returns True

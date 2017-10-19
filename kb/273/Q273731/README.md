@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273731: Flight Simulator 2000 Err Msg: Dlgalert.bmp Cannot Be Loaded"
-permalink: kb/273/Q273731/
+permalink: /kb/273/Q273731/
 ---
 
 ## Q273731: Flight Simulator 2000 Err Msg: Dlgalert.bmp Cannot Be Loaded

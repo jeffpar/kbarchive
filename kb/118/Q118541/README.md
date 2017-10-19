@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118541: Dangerous Creatures: Line Prints on Left with HP DeskJet 500"
-permalink: kb/118/Q118541/
+permalink: /kb/118/Q118541/
 ---
 
 ## Q118541: Dangerous Creatures: Line Prints on Left with HP DeskJet 500

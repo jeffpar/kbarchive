@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123856: PC DirSync: How to Distribute Gateway Addresses with Dir-Sync"
-permalink: kb/123/Q123856/
+permalink: /kb/123/Q123856/
 ---
 
 ## Q123856: PC DirSync: How to Distribute Gateway Addresses with Dir-Sync

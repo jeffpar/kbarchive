@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142959: FIX: YMD Date Format Causes Improper History Selection"
-permalink: kb/142/Q142959/
+permalink: /kb/142/Q142959/
 ---
 
 ## Q142959: FIX: YMD Date Format Causes Improper History Selection

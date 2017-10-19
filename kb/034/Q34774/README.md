@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34774: FIX: FWAIT Prefixes Generated for Processor Control Instructions"
-permalink: kb/034/Q34774/
+permalink: /kb/034/Q34774/
 ---
 
 ## Q34774: FIX: FWAIT Prefixes Generated for Processor Control Instructions

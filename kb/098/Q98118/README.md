@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98118: Can't Back Up .BAK,.LOG,.LST,.PRO,.RST,.SAV,.SLT, &amp; .TMP Files"
-permalink: kb/098/Q98118/
+permalink: /kb/098/Q98118/
 ---
 
 ## Q98118: Can't Back Up .BAK,.LOG,.LST,.PRO,.RST,.SAV,.SLT, &amp; .TMP Files

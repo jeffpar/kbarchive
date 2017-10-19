@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150681: FP: How to Use a Document Other Than Index.htm as Default Page"
-permalink: kb/150/Q150681/
+permalink: /kb/150/Q150681/
 ---
 
 ## Q150681: FP: How to Use a Document Other Than Index.htm as Default Page

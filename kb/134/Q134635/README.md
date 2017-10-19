@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134635: System Monitor Does Not Display Modem Statistics"
-permalink: kb/134/Q134635/
+permalink: /kb/134/Q134635/
 ---
 
 ## Q134635: System Monitor Does Not Display Modem Statistics

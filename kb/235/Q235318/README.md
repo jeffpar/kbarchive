@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235318: XFOR: Exchange Server NNTP Service Fails With 500 Command Not Re"
-permalink: kb/235/Q235318/
+permalink: /kb/235/Q235318/
 ---
 
 ## Q235318: XFOR: Exchange Server NNTP Service Fails With 500 Command Not Re

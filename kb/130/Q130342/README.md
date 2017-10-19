@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130342: PRB: Selecting Cancel Cancels User Code But Not Form Execution"
-permalink: kb/130/Q130342/
+permalink: /kb/130/Q130342/
 ---
 
 ## Q130342: PRB: Selecting Cancel Cancels User Code But Not Form Execution

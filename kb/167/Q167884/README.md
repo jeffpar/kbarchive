@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167884: WD97: &quot;You Cannot Edit Picture That Is Not Saved&quot; Error Msg"
-permalink: kb/167/Q167884/
+permalink: /kb/167/Q167884/
 ---
 
 ## Q167884: WD97: &quot;You Cannot Edit Picture That Is Not Saved&quot; Error Msg

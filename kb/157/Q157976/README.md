@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157976: 3D Movie Maker:Recorded Sound Available in Original Movie Only"
-permalink: kb/157/Q157976/
+permalink: /kb/157/Q157976/
 ---
 
 ## Q157976: 3D Movie Maker:Recorded Sound Available in Original Movie Only

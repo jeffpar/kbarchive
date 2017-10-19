@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100828: PC Ext: Normal Purge on P1 Subdirectory for NetWare"
-permalink: kb/100/Q100828/
+permalink: /kb/100/Q100828/
 ---
 
 ## Q100828: PC Ext: Normal Purge on P1 Subdirectory for NetWare

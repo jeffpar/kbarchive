@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170984: ACC97: Results Dialog Box Remains After First Check Out"
-permalink: kb/170/Q170984/
+permalink: /kb/170/Q170984/
 ---
 
 ## Q170984: ACC97: Results Dialog Box Remains After First Check Out

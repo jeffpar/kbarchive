@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150608: Multilanguage Font Entries Are Not Removed from WordPad"
-permalink: kb/150/Q150608/
+permalink: /kb/150/Q150608/
 ---
 
 ## Q150608: Multilanguage Font Entries Are Not Removed from WordPad

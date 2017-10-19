@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166523: XFOR: 5.0 Mapi Causes IMS to be 10% Slower"
-permalink: kb/166/Q166523/
+permalink: /kb/166/Q166523/
 ---
 
 ## Q166523: XFOR: 5.0 Mapi Causes IMS to be 10% Slower

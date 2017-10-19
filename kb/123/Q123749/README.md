@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123749: How the TCP Push Bit Was Changed for Windows NT 3.5"
-permalink: kb/123/Q123749/
+permalink: /kb/123/Q123749/
 ---
 
 ## Q123749: How the TCP Push Bit Was Changed for Windows NT 3.5

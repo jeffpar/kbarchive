@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184320: Using PATH_INFO and PATH_TRANSLATED from CGI Applications"
-permalink: kb/184/Q184320/
+permalink: /kb/184/Q184320/
 ---
 
 ## Q184320: Using PATH_INFO and PATH_TRANSLATED from CGI Applications

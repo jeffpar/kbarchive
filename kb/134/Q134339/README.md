@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134339: Gtwy: Frequently Asked Questions for Microsoft Mail Gateways"
-permalink: kb/134/Q134339/
+permalink: /kb/134/Q134339/
 ---
 
 ## Q134339: Gtwy: Frequently Asked Questions for Microsoft Mail Gateways

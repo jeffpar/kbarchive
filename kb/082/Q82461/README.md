@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82461: IBM Quiet Writer III Envelope Paper Source Not Functional"
-permalink: kb/082/Q82461/
+permalink: /kb/082/Q82461/
 ---
 
 ## Q82461: IBM Quiet Writer III Envelope Paper Source Not Functional

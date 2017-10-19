@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156240: PRB: &quot;Missing Operand&quot; Using TIME() with WAIT WINDOW Command"
-permalink: kb/156/Q156240/
+permalink: /kb/156/Q156240/
 ---
 
 ## Q156240: PRB: &quot;Missing Operand&quot; Using TIME() with WAIT WINDOW Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148687: FIX: Clipboard Assistant - Paste Fails or Causes Hard Break"
-permalink: kb/148/Q148687/
+permalink: /kb/148/Q148687/
 ---
 
 ## Q148687: FIX: Clipboard Assistant - Paste Fails or Causes Hard Break

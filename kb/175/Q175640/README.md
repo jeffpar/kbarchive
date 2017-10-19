@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175640: How To Configure Nwlink LAN-to-LAN Routing Using RRAS"
-permalink: kb/175/Q175640/
+permalink: /kb/175/Q175640/
 ---
 
 ## Q175640: How To Configure Nwlink LAN-to-LAN Routing Using RRAS

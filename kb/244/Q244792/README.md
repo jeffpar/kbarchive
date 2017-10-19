@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244792: OLE/DB for DB2 Error: Could Not Resolve the Specified Host Name"
-permalink: kb/244/Q244792/
+permalink: /kb/244/Q244792/
 ---
 
 ## Q244792: OLE/DB for DB2 Error: Could Not Resolve the Specified Host Name

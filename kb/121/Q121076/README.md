@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121076: Video for Windows DK Setup Script Function VflatdPresent"
-permalink: kb/121/Q121076/
+permalink: /kb/121/Q121076/
 ---
 
 ## Q121076: Video for Windows DK Setup Script Function VflatdPresent

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59923: Mac Hyp: Addressing Messages to Specified Recipient"
-permalink: kb/059/Q59923/
+permalink: /kb/059/Q59923/
 ---
 
 ## Q59923: Mac Hyp: Addressing Messages to Specified Recipient

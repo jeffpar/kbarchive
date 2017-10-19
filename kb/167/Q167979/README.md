@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167979: XFOR: How To Add MS Mail Fax Gateway Service To Exchange"
-permalink: kb/167/Q167979/
+permalink: /kb/167/Q167979/
 ---
 
 ## Q167979: XFOR: How To Add MS Mail Fax Gateway Service To Exchange

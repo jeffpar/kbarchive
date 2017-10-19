@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134781: PPT7: Duplicate Clip Art in ClipArt Gallery"
-permalink: kb/134/Q134781/
+permalink: /kb/134/Q134781/
 ---
 
 ## Q134781: PPT7: Duplicate Clip Art in ClipArt Gallery

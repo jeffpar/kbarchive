@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154947: XADM: How to Move a Public Folder to Another Site"
-permalink: kb/154/Q154947/
+permalink: /kb/154/Q154947/
 ---
 
 ## Q154947: XADM: How to Move a Public Folder to Another Site

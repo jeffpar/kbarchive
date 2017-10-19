@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76846: CHKDSK &#42;.&#42; Hangs on 1.44 MB Disk with Zero Byte File"
-permalink: kb/076/Q76846/
+permalink: /kb/076/Q76846/
 ---
 
 ## Q76846: CHKDSK &#42;.&#42; Hangs on 1.44 MB Disk with Zero Byte File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103388: Corrupted DBLSPACE.EXE May Cause a &quot;CVF Is Damaged&quot; Error"
-permalink: kb/103/Q103388/
+permalink: /kb/103/Q103388/
 ---
 
 ## Q103388: Corrupted DBLSPACE.EXE May Cause a &quot;CVF Is Damaged&quot; Error

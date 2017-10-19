@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107571: Running SNA Server Win16, OS/2, or MS-DOS Applications"
-permalink: kb/107/Q107571/
+permalink: /kb/107/Q107571/
 ---
 
 ## Q107571: Running SNA Server Win16, OS/2, or MS-DOS Applications

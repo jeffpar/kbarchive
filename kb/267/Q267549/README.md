@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267549: FIX: Debugger Doesn't Give Full Precision For double Data Type"
-permalink: kb/267/Q267549/
+permalink: /kb/267/Q267549/
 ---
 
 ## Q267549: FIX: Debugger Doesn't Give Full Precision For double Data Type

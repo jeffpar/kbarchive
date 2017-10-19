@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157373: How to Insert Sample Text into a Document"
-permalink: kb/157/Q157373/
+permalink: /kb/157/Q157373/
 ---
 
 ## Q157373: How to Insert Sample Text into a Document

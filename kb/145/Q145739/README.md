@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145739: Internet Mail Not Delivered: No Transport Provider Available"
-permalink: kb/145/Q145739/
+permalink: /kb/145/Q145739/
 ---
 
 ## Q145739: Internet Mail Not Delivered: No Transport Provider Available

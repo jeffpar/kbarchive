@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121272: Can No Longer Access .CAL Filename That Includes a Space"
-permalink: kb/121/Q121272/
+permalink: /kb/121/Q121272/
 ---
 
 ## Q121272: Can No Longer Access .CAL Filename That Includes a Space

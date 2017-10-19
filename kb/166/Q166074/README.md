@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166074: SEMFPERF.H is Missing from SNA Server SDK"
-permalink: kb/166/Q166074/
+permalink: /kb/166/Q166074/
 ---
 
 ## Q166074: SEMFPERF.H is Missing from SNA Server SDK

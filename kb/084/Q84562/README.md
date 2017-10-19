@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84562: Notepad Prints with Line Breaks Intact"
-permalink: kb/084/Q84562/
+permalink: /kb/084/Q84562/
 ---
 
 ## Q84562: Notepad Prints with Line Breaks Intact

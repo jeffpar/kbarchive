@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267237: SMS: Upgrading SMS SPs Resets Provider Connections to Default"
-permalink: kb/267/Q267237/
+permalink: /kb/267/Q267237/
 ---
 
 ## Q267237: SMS: Upgrading SMS SPs Resets Provider Connections to Default

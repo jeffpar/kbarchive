@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103936: Err Msg: MSPUB Caused an Exception in the Win16 Subsystem"
-permalink: kb/103/Q103936/
+permalink: /kb/103/Q103936/
 ---
 
 ## Q103936: Err Msg: MSPUB Caused an Exception in the Win16 Subsystem

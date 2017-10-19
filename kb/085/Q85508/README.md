@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85508: PRB: No Warning for INVOKE Between 16-Bit and 32-Bit Segments"
-permalink: kb/085/Q85508/
+permalink: /kb/085/Q85508/
 ---
 
 ## Q85508: PRB: No Warning for INVOKE Between 16-Bit and 32-Bit Segments

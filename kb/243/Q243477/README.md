@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243477: STOP 0x0000001E Error Message with Intermediate Network Driver"
-permalink: kb/243/Q243477/
+permalink: /kb/243/Q243477/
 ---
 
 ## Q243477: STOP 0x0000001E Error Message with Intermediate Network Driver

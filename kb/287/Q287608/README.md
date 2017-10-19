@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287608: FS2000 Err Msg: Your Computer Has Run Out of Available Memory"
-permalink: kb/287/Q287608/
+permalink: /kb/287/Q287608/
 ---
 
 ## Q287608: FS2000 Err Msg: Your Computer Has Run Out of Available Memory

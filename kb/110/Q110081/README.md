@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110081: Asimov: Bullet Back Button Returns to Wrong Screen"
-permalink: kb/110/Q110081/
+permalink: /kb/110/Q110081/
 ---
 
 ## Q110081: Asimov: Bullet Back Button Returns to Wrong Screen

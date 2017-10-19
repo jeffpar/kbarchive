@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232668: SNA Clients Experience Slow Response Time with Terminal Server"
-permalink: kb/232/Q232668/
+permalink: /kb/232/Q232668/
 ---
 
 ## Q232668: SNA Clients Experience Slow Response Time with Terminal Server

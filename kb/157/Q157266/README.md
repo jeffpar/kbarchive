@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157266: Msbatch.inf Parameters: Enabling and Disabling Dual-Boot"
-permalink: kb/157/Q157266/
+permalink: /kb/157/Q157266/
 ---
 
 ## Q157266: Msbatch.inf Parameters: Enabling and Disabling Dual-Boot

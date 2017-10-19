@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177446: How to Test Microsoft Remote Procedure Call Performance"
-permalink: kb/177/Q177446/
+permalink: /kb/177/Q177446/
 ---
 
 ## Q177446: How to Test Microsoft Remote Procedure Call Performance

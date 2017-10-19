@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316055: Password Synchronization from UNIX Does Not Work with Yppasswd"
-permalink: kb/316/Q316055/
+permalink: /kb/316/Q316055/
 ---
 
 ## Q316055: Password Synchronization from UNIX Does Not Work with Yppasswd

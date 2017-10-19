@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278600: XADM: Error c103aa11 Occurs When Saving Connection Agreement"
-permalink: kb/278/Q278600/
+permalink: /kb/278/Q278600/
 ---
 
 ## Q278600: XADM: Error c103aa11 Occurs When Saving Connection Agreement

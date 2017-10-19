@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133746: Flight Simulator for MS-DOS: New Features in Version 5.1"
-permalink: kb/133/Q133746/
+permalink: /kb/133/Q133746/
 ---
 
 ## Q133746: Flight Simulator for MS-DOS: New Features in Version 5.1

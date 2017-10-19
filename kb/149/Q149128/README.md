@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149128: BUG: FOR2406 Error with Values Greater than 127 in ACHAR()"
-permalink: kb/149/Q149128/
+permalink: /kb/149/Q149128/
 ---
 
 ## Q149128: BUG: FOR2406 Error with Values Greater than 127 in ACHAR()

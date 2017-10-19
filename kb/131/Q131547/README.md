@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131547: NE2000 Network Adapter Driver Reports Incorrect MAC Address"
-permalink: kb/131/Q131547/
+permalink: /kb/131/Q131547/
 ---
 
 ## Q131547: NE2000 Network Adapter Driver Reports Incorrect MAC Address

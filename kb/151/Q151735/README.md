@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151735: Visual Test 4.0 Is Not Supported with Windows 95 PCM"
-permalink: kb/151/Q151735/
+permalink: /kb/151/Q151735/
 ---
 
 ## Q151735: Visual Test 4.0 Is Not Supported with Windows 95 PCM

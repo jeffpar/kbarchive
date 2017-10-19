@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193817: SNA Server Event ID 11 Missing Description Information"
-permalink: kb/193/Q193817/
+permalink: /kb/193/Q193817/
 ---
 
 ## Q193817: SNA Server Event ID 11 Missing Description Information

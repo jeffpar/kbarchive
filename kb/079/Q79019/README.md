@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79019: Double-Clicking on Desktop Starts Multimedia Screen Saver"
-permalink: kb/079/Q79019/
+permalink: /kb/079/Q79019/
 ---
 
 ## Q79019: Double-Clicking on Desktop Starts Multimedia Screen Saver

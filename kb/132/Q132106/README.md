@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132106: Mac Encarta 95: Jewel Box Text Has Wrong Close Button Location"
-permalink: kb/132/Q132106/
+permalink: /kb/132/Q132106/
 ---
 
 ## Q132106: Mac Encarta 95: Jewel Box Text Has Wrong Close Button Location

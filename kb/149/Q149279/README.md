@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149279: FIX: Garbage in Input Buffer When InBufferSize &gt; 2048"
-permalink: kb/149/Q149279/
+permalink: /kb/149/Q149279/
 ---
 
 ## Q149279: FIX: Garbage in Input Buffer When InBufferSize &gt; 2048

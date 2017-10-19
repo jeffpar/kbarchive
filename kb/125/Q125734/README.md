@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125734: Word Processor in Encarta Asks for Bookshelf CD"
-permalink: kb/125/Q125734/
+permalink: /kb/125/Q125734/
 ---
 
 ## Q125734: Word Processor in Encarta Asks for Bookshelf CD

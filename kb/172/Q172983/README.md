@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172983: Explanation of the Three-Way Handshake via TCP/IP"
-permalink: kb/172/Q172983/
+permalink: /kb/172/Q172983/
 ---
 
 ## Q172983: Explanation of the Three-Way Handshake via TCP/IP

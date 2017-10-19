@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202922: Dr. Watson When Running Rdisk.exe"
-permalink: kb/202/Q202922/
+permalink: /kb/202/Q202922/
 ---
 
 ## Q202922: Dr. Watson When Running Rdisk.exe

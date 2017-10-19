@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163806: SMS: Can't Remote Control Windows NT Client with NWLink IPX/SPX"
-permalink: kb/163/Q163806/
+permalink: /kb/163/Q163806/
 ---
 
 ## Q163806: SMS: Can't Remote Control Windows NT Client with NWLink IPX/SPX

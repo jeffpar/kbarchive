@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79748: Windows 3.0 Accessories Create Files If No Extension Is Given"
-permalink: kb/079/Q79748/
+permalink: /kb/079/Q79748/
 ---
 
 ## Q79748: Windows 3.0 Accessories Create Files If No Extension Is Given

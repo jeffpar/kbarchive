@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190176: BUG: Visual Basic Setup Does Not Re-Register System Files"
-permalink: kb/190/Q190176/
+permalink: /kb/190/Q190176/
 ---
 
 ## Q190176: BUG: Visual Basic Setup Does Not Re-Register System Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321807: Err Msg: 800a01ad' ActiveX Component Can't Create Object"
-permalink: kb/321/Q321807/
+permalink: /kb/321/Q321807/
 ---
 
 ## Q321807: Err Msg: 800a01ad' ActiveX Component Can't Create Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248989: SMS: Support for Third-Party Video Drivers with Remote Control"
-permalink: kb/248/Q248989/
+permalink: /kb/248/Q248989/
 ---
 
 ## Q248989: SMS: Support for Third-Party Video Drivers with Remote Control

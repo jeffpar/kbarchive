@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279394: Combat Flight Simulator 2: Cannot Exit Padlock View"
-permalink: kb/279/Q279394/
+permalink: /kb/279/Q279394/
 ---
 
 ## Q279394: Combat Flight Simulator 2: Cannot Exit Padlock View

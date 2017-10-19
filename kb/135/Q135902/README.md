@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135902: PC Ext: Err Msg: Sending File xxxxxxxx.P1 Failed"
-permalink: kb/135/Q135902/
+permalink: /kb/135/Q135902/
 ---
 
 ## Q135902: PC Ext: Err Msg: Sending File xxxxxxxx.P1 Failed

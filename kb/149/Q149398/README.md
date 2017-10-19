@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149398: IIS Logging to SQL Server Fails w/ Blank Username and Password"
-permalink: kb/149/Q149398/
+permalink: /kb/149/Q149398/
 ---
 
 ## Q149398: IIS Logging to SQL Server Fails w/ Blank Username and Password

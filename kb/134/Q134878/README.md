@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134878: BUG: Error: &quot;An errror occurred reading the index file&quot;"
-permalink: kb/134/Q134878/
+permalink: /kb/134/Q134878/
 ---
 
 ## Q134878: BUG: Error: &quot;An errror occurred reading the index file&quot;

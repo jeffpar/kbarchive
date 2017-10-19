@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66070: Printing to LPTx.yyy or COMx.yyy From Windows 3.0"
-permalink: kb/066/Q66070/
+permalink: /kb/066/Q66070/
 ---
 
 ## Q66070: Printing to LPTx.yyy or COMx.yyy From Windows 3.0

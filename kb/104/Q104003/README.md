@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104003: Hang If Eject CD While Program Is Running"
-permalink: kb/104/Q104003/
+permalink: /kb/104/Q104003/
 ---
 
 ## Q104003: Hang If Eject CD While Program Is Running

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146862: Automation Interfaces Can't Select Speech Engine Modes"
-permalink: kb/146/Q146862/
+permalink: /kb/146/Q146862/
 ---
 
 ## Q146862: Automation Interfaces Can't Select Speech Engine Modes

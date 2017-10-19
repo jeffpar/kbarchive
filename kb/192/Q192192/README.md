@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192192: XADM: Setup Fails with &quot;Self Registration.Cdonts.dll Failed&quot; Err"
-permalink: kb/192/Q192192/
+permalink: /kb/192/Q192192/
 ---
 
 ## Q192192: XADM: Setup Fails with &quot;Self Registration.Cdonts.dll Failed&quot; Err

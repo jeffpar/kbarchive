@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171577: FIX: Using Set for ListItem's SubItem Results in GPF"
-permalink: kb/171/Q171577/
+permalink: /kb/171/Q171577/
 ---
 
 ## Q171577: FIX: Using Set for ListItem's SubItem Results in GPF

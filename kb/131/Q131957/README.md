@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131957: PROFS: VMGATE.EXE Version 3.40.0042 Update"
-permalink: kb/131/Q131957/
+permalink: /kb/131/Q131957/
 ---
 
 ## Q131957: PROFS: VMGATE.EXE Version 3.40.0042 Update

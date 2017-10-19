@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226903: SMS: Win2K Software Metering Server Always Creates New Profile"
-permalink: kb/226/Q226903/
+permalink: /kb/226/Q226903/
 ---
 
 ## Q226903: SMS: Win2K Software Metering Server Always Creates New Profile

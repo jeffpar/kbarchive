@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134710: Thrustmaster Joystick Fails Control Panel Test"
-permalink: kb/134/Q134710/
+permalink: /kb/134/Q134710/
 ---
 
 ## Q134710: Thrustmaster Joystick Fails Control Panel Test

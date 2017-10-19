@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134718: Documentation for Package Redistribution is Incorrect"
-permalink: kb/134/Q134718/
+permalink: /kb/134/Q134718/
 ---
 
 ## Q134718: Documentation for Package Redistribution is Incorrect

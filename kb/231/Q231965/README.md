@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231965: PPTP Performance Problems After Applying SP4"
-permalink: kb/231/Q231965/
+permalink: /kb/231/Q231965/
 ---
 
 ## Q231965: PPTP Performance Problems After Applying SP4

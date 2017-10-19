@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148201: BUG: Unused Local Variables Are Unavailable in the Debugger"
-permalink: kb/148/Q148201/
+permalink: /kb/148/Q148201/
 ---
 
 ## Q148201: BUG: Unused Local Variables Are Unavailable in the Debugger

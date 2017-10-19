@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174795: Cluster Configuration for BusLogic Controllers"
-permalink: kb/174/Q174795/
+permalink: /kb/174/Q174795/
 ---
 
 ## Q174795: Cluster Configuration for BusLogic Controllers

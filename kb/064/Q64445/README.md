@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64445: How to Order the DPMI or VCPI Specification"
-permalink: kb/064/Q64445/
+permalink: /kb/064/Q64445/
 ---
 
 ## Q64445: How to Order the DPMI or VCPI Specification

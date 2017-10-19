@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158176: GEX: List of Video Card Issues"
-permalink: kb/158/Q158176/
+permalink: /kb/158/Q158176/
 ---
 
 ## Q158176: GEX: List of Video Card Issues

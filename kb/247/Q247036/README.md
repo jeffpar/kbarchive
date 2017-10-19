@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247036: HOWTO: Add Sound to Form Using the Microsoft Multimedia Control"
-permalink: kb/247/Q247036/
+permalink: /kb/247/Q247036/
 ---
 
 ## Q247036: HOWTO: Add Sound to Form Using the Microsoft Multimedia Control

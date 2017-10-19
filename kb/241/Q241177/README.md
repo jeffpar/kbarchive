@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241177: XCLN: An Error Occurred Publishing Your Internet Free/Busy Data"
-permalink: kb/241/Q241177/
+permalink: /kb/241/Q241177/
 ---
 
 ## Q241177: XCLN: An Error Occurred Publishing Your Internet Free/Busy Data

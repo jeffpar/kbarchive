@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88110: Third-Party 32-Bit Disk Access Drivers Available"
-permalink: kb/088/Q88110/
+permalink: /kb/088/Q88110/
 ---
 
 ## Q88110: Third-Party 32-Bit Disk Access Drivers Available

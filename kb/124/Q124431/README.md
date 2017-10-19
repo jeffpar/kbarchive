@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124431: SNMP Traps Sent to Wrong Port"
-permalink: kb/124/Q124431/
+permalink: /kb/124/Q124431/
 ---
 
 ## Q124431: SNMP Traps Sent to Wrong Port

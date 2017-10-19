@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230128: SMS: SQL Monitor Reports Cannot Connect to Site Server Registry"
-permalink: kb/230/Q230128/
+permalink: /kb/230/Q230128/
 ---
 
 ## Q230128: SMS: SQL Monitor Reports Cannot Connect to Site Server Registry

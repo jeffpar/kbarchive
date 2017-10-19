@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141001: Mac Multimedia: Cannot Print Selected Text"
-permalink: kb/141/Q141001/
+permalink: /kb/141/Q141001/
 ---
 
 ## Q141001: Mac Multimedia: Cannot Print Selected Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110190: MoreFonts Not Supported with Windows for Workgroups"
-permalink: kb/110/Q110190/
+permalink: /kb/110/Q110190/
 ---
 
 ## Q110190: MoreFonts Not Supported with Windows for Workgroups

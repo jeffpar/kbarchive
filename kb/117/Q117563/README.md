@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117563: HOWTO: How to Trap WM_KEYDOWN Messages in a CDialog"
-permalink: kb/117/Q117563/
+permalink: /kb/117/Q117563/
 ---
 
 ## Q117563: HOWTO: How to Trap WM_KEYDOWN Messages in a CDialog

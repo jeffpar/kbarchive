@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139100: Calculating WinNT 3.51 Memory, Disk, and License Requirements"
-permalink: kb/139/Q139100/
+permalink: /kb/139/Q139100/
 ---
 
 ## Q139100: Calculating WinNT 3.51 Memory, Disk, and License Requirements

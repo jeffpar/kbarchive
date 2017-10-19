@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114816: Faster 8.3 Converted Long Filenames in NTFS"
-permalink: kb/114/Q114816/
+permalink: /kb/114/Q114816/
 ---
 
 ## Q114816: Faster 8.3 Converted Long Filenames in NTFS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237459: XCLN: Move Server Wizard Does Not Properly Reset Free/Busy Info"
-permalink: kb/237/Q237459/
+permalink: /kb/237/Q237459/
 ---
 
 ## Q237459: XCLN: Move Server Wizard Does Not Properly Reset Free/Busy Info

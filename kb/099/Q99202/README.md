@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99202: PC WRmt: Messages Waiting in Outbox Not Sent"
-permalink: kb/099/Q99202/
+permalink: /kb/099/Q99202/
 ---
 
 ## Q99202: PC WRmt: Messages Waiting in Outbox Not Sent

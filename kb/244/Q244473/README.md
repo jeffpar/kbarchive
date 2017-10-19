@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244473: XFOR: Foreign Connector Updates in Service Pack 3"
-permalink: kb/244/Q244473/
+permalink: /kb/244/Q244473/
 ---
 
 ## Q244473: XFOR: Foreign Connector Updates in Service Pack 3

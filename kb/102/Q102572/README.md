@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102572: Changes Between Win 3.1 and WFW 3.1 Versions of DDEML"
-permalink: kb/102/Q102572/
+permalink: /kb/102/Q102572/
 ---
 
 ## Q102572: Changes Between Win 3.1 and WFW 3.1 Versions of DDEML

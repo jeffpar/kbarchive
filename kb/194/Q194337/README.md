@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194337: XADM: Information Store Crashes Processing HTML Message"
-permalink: kb/194/Q194337/
+permalink: /kb/194/Q194337/
 ---
 
 ## Q194337: XADM: Information Store Crashes Processing HTML Message

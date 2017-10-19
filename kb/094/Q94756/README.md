@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94756: LMLogon=YES/NO is Not Recognized by Control Panel"
-permalink: kb/094/Q94756/
+permalink: /kb/094/Q94756/
 ---
 
 ## Q94756: LMLogon=YES/NO is Not Recognized by Control Panel

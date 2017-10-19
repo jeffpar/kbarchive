@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121651: Extra Page(s) Printing After Print Job on a Novell Network"
-permalink: kb/121/Q121651/
+permalink: /kb/121/Q121651/
 ---
 
 ## Q121651: Extra Page(s) Printing After Print Job on a Novell Network

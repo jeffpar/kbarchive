@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234606: Terminal Server User Profiles Do Not Unload"
-permalink: kb/234/Q234606/
+permalink: /kb/234/Q234606/
 ---
 
 ## Q234606: Terminal Server User Profiles Do Not Unload

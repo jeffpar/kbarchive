@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285366: XADM: High Store CPU Use Causes MTA Queue to Priv.edb to Grow"
-permalink: kb/285/Q285366/
+permalink: /kb/285/Q285366/
 ---
 
 ## Q285366: XADM: High Store CPU Use Causes MTA Queue to Priv.edb to Grow

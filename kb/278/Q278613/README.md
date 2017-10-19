@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278613: FP: Querying a Database Using Multiple Criteria, Drop-Down Menu"
-permalink: kb/278/Q278613/
+permalink: /kb/278/Q278613/
 ---
 
 ## Q278613: FP: Querying a Database Using Multiple Criteria, Drop-Down Menu

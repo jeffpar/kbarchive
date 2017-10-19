@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119623: RAS Error 212: Bad Modem or COM Port Failure"
-permalink: kb/119/Q119623/
+permalink: /kb/119/Q119623/
 ---
 
 ## Q119623: RAS Error 212: Bad Modem or COM Port Failure

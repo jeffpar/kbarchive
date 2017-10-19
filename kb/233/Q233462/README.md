@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233462: Business Planner: Error Message Opening Wizard Interview Page"
-permalink: kb/233/Q233462/
+permalink: /kb/233/Q233462/
 ---
 
 ## Q233462: Business Planner: Error Message Opening Wizard Interview Page

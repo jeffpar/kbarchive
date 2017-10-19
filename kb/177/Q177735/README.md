@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177735: XADM: Unable To Access Exchange Administrator Program"
-permalink: kb/177/Q177735/
+permalink: /kb/177/Q177735/
 ---
 
 ## Q177735: XADM: Unable To Access Exchange Administrator Program

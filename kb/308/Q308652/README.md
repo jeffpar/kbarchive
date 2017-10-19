@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308652: IDBSchemaRowset::GetSchema Fails to Return List of Rowsets"
-permalink: kb/308/Q308652/
+permalink: /kb/308/Q308652/
 ---
 
 ## Q308652: IDBSchemaRowset::GetSchema Fails to Return List of Rowsets

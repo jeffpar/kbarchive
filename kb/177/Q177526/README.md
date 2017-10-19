@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177526: CSNW Does Not Handle Files Correctly When PBurst Is Enabled"
-permalink: kb/177/Q177526/
+permalink: /kb/177/Q177526/
 ---
 
 ## Q177526: CSNW Does Not Handle Files Correctly When PBurst Is Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266195: SMS 2.0  Packages Are Not Distributed to Child Sites"
-permalink: kb/266/Q266195/
+permalink: /kb/266/Q266195/
 ---
 
 ## Q266195: SMS 2.0  Packages Are Not Distributed to Child Sites

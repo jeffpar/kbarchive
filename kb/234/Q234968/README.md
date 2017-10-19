@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234968: Windows NT Server 4.0 Resource Kit Supplement 4 Comments and Cor"
-permalink: kb/234/Q234968/
+permalink: /kb/234/Q234968/
 ---
 
 ## Q234968: Windows NT Server 4.0 Resource Kit Supplement 4 Comments and Cor

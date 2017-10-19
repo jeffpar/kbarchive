@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84860: Windows Err Msgs from Bad SYSTEM.INI Headings"
-permalink: kb/084/Q84860/
+permalink: /kb/084/Q84860/
 ---
 
 ## Q84860: Windows Err Msgs from Bad SYSTEM.INI Headings

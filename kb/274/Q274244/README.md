@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274244: SMS: Event to Trap Translator Event Text Truncated"
-permalink: kb/274/Q274244/
+permalink: /kb/274/Q274244/
 ---
 
 ## Q274244: SMS: Event to Trap Translator Event Text Truncated

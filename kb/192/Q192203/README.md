@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192203: XADM: NNTP Message ID Missing From Event Description"
-permalink: kb/192/Q192203/
+permalink: /kb/192/Q192203/
 ---
 
 ## Q192203: XADM: NNTP Message ID Missing From Event Description

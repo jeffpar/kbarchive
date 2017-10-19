@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130991: HOWTO: Send a Windows Print File to the Printer"
-permalink: kb/130/Q130991/
+permalink: /kb/130/Q130991/
 ---
 
 ## Q130991: HOWTO: Send a Windows Print File to the Printer

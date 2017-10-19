@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114945: Sytos Fails Adding Volumes with Enhanced-mode 1742 Controller"
-permalink: kb/114/Q114945/
+permalink: /kb/114/Q114945/
 ---
 
 ## Q114945: Sytos Fails Adding Volumes with Enhanced-mode 1742 Controller

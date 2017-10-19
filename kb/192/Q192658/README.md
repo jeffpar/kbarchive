@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192658: SMS: Remote Cntrl May Stop Responding When Opening Applications"
-permalink: kb/192/Q192658/
+permalink: /kb/192/Q192658/
 ---
 
 ## Q192658: SMS: Remote Cntrl May Stop Responding When Opening Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143122: Novell Netware Client for Windows NT Fails After Service Pack"
-permalink: kb/143/Q143122/
+permalink: /kb/143/Q143122/
 ---
 
 ## Q143122: Novell Netware Client for Windows NT Fails After Service Pack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177259: XADM: User Count Increments Incorrectly"
-permalink: kb/177/Q177259/
+permalink: /kb/177/Q177259/
 ---
 
 ## Q177259: XADM: User Count Increments Incorrectly

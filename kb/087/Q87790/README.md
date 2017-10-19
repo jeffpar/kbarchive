@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87790: DOCERR: Incorrectly States /PACKC Is Off by Default"
-permalink: kb/087/Q87790/
+permalink: /kb/087/Q87790/
 ---
 
 ## Q87790: DOCERR: Incorrectly States /PACKC Is Off by Default

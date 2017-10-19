@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150204: HOWTO: Retrieve the Actual Parent Window of an ActiveX Control"
-permalink: kb/150/Q150204/
+permalink: /kb/150/Q150204/
 ---
 
 ## Q150204: HOWTO: Retrieve the Actual Parent Window of an ActiveX Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135356: Win32 CPIC CMEPLN Call May Return Truncated Partner LU Name"
-permalink: kb/135/Q135356/
+permalink: /kb/135/Q135356/
 ---
 
 ## Q135356: Win32 CPIC CMEPLN Call May Return Truncated Partner LU Name

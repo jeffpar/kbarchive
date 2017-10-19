@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136451: Incorrect Default Short Date Style Used After Changing Style"
-permalink: kb/136/Q136451/
+permalink: /kb/136/Q136451/
 ---
 
 ## Q136451: Incorrect Default Short Date Style Used After Changing Style

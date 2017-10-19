@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103290: PC Forms: Error Copying Files in Setup"
-permalink: kb/103/Q103290/
+permalink: /kb/103/Q103290/
 ---
 
 ## Q103290: PC Forms: Error Copying Files in Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152862: XADM: Specify Host Dialog in Administrator Reverses Order"
-permalink: kb/152/Q152862/
+permalink: /kb/152/Q152862/
 ---
 
 ## Q152862: XADM: Specify Host Dialog in Administrator Reverses Order

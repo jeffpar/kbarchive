@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189710: FIX: ActiveX Control Shows Through Page After Modal Form Runs"
-permalink: kb/189/Q189710/
+permalink: /kb/189/Q189710/
 ---
 
 ## Q189710: FIX: ActiveX Control Shows Through Page After Modal Form Runs

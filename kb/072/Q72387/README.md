@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72387: HOWTO: How to Determine If a Device Is Palette Capable"
-permalink: kb/072/Q72387/
+permalink: /kb/072/Q72387/
 ---
 
 ## Q72387: HOWTO: How to Determine If a Device Is Palette Capable

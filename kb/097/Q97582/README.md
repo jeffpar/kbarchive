@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97582: Encarta: Printing Problems on Hewlett Packard Printers"
-permalink: kb/097/Q97582/
+permalink: /kb/097/Q97582/
 ---
 
 ## Q97582: Encarta: Printing Problems on Hewlett Packard Printers

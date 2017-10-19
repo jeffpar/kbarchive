@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186371: SP3 &amp; Later Have Limited PPP MD5-CHAP Authenticator Support"
-permalink: kb/186/Q186371/
+permalink: /kb/186/Q186371/
 ---
 
 ## Q186371: SP3 &amp; Later Have Limited PPP MD5-CHAP Authenticator Support

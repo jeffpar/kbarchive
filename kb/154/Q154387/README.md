@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154387: Tapisrv.exe Thread Uses Excessive CPU Time"
-permalink: kb/154/Q154387/
+permalink: /kb/154/Q154387/
 ---
 
 ## Q154387: Tapisrv.exe Thread Uses Excessive CPU Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136024: Tape Hardware Data Compression Disabled After Running NTBackup"
-permalink: kb/136/Q136024/
+permalink: /kb/136/Q136024/
 ---
 
 ## Q136024: Tape Hardware Data Compression Disabled After Running NTBackup

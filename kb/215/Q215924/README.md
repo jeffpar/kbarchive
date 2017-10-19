@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215924: XADM: Store Process Is Causing 100 Percent CPU Utilization"
-permalink: kb/215/Q215924/
+permalink: /kb/215/Q215924/
 ---
 
 ## Q215924: XADM: Store Process Is Causing 100 Percent CPU Utilization

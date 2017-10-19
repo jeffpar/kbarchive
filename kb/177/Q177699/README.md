@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177699: HOWTO: Use NT Simple TCP/IP Services for Winsock Testing"
-permalink: kb/177/Q177699/
+permalink: /kb/177/Q177699/
 ---
 
 ## Q177699: HOWTO: Use NT Simple TCP/IP Services for Winsock Testing

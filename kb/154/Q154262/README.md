@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154262: FP: Errors Attempting to Start FrontPage Personal Web Server"
-permalink: kb/154/Q154262/
+permalink: /kb/154/Q154262/
 ---
 
 ## Q154262: FP: Errors Attempting to Start FrontPage Personal Web Server

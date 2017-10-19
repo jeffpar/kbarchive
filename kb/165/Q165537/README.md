@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165537: XCLN: Client Setup Overwrites Localized Version of Ole32.dll"
-permalink: kb/165/Q165537/
+permalink: /kb/165/Q165537/
 ---
 
 ## Q165537: XCLN: Client Setup Overwrites Localized Version of Ole32.dll

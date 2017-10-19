@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141881: PRB: VB 4.0 Doesn't Install on Older 32-Bit Operating System"
-permalink: kb/141/Q141881/
+permalink: /kb/141/Q141881/
 ---
 
 ## Q141881: PRB: VB 4.0 Doesn't Install on Older 32-Bit Operating System

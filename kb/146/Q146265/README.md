@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146265: Meeting Request Allows Multiple Resources"
-permalink: kb/146/Q146265/
+permalink: /kb/146/Q146265/
 ---
 
 ## Q146265: Meeting Request Allows Multiple Resources

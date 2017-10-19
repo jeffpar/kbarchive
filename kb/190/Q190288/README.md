@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190288: SecHole Lets Non-administrative Users Gain Debug Level Access"
-permalink: kb/190/Q190288/
+permalink: /kb/190/Q190288/
 ---
 
 ## Q190288: SecHole Lets Non-administrative Users Gain Debug Level Access

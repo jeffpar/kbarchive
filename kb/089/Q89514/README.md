@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89514: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL PC/16e)"
-permalink: kb/089/Q89514/
+permalink: /kb/089/Q89514/
 ---
 
 ## Q89514: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL PC/16e)

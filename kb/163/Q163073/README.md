@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163073: Backup Config. Server May Not Always Read Local Config. File"
-permalink: kb/163/Q163073/
+permalink: /kb/163/Q163073/
 ---
 
 ## Q163073: Backup Config. Server May Not Always Read Local Config. File

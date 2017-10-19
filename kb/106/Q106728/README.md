@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106728: BUG: DX1010 Running PowerStation Application from NMAKE"
-permalink: kb/106/Q106728/
+permalink: /kb/106/Q106728/
 ---
 
 ## Q106728: BUG: DX1010 Running PowerStation Application from NMAKE

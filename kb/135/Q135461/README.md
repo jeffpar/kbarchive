@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135461: If Your MS-DOS or Windows NT Operating System Does Not Boot"
-permalink: kb/135/Q135461/
+permalink: /kb/135/Q135461/
 ---
 
 ## Q135461: If Your MS-DOS or Windows NT Operating System Does Not Boot

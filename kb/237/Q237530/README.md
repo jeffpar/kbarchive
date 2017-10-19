@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237530: Encarta 2000: Error Message When You Double-Click a Shortcut"
-permalink: kb/237/Q237530/
+permalink: /kb/237/Q237530/
 ---
 
 ## Q237530: Encarta 2000: Error Message When You Double-Click a Shortcut

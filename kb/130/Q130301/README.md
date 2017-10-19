@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130301: PRB: INSERT Command Fails with Buffering and Integrity Rules"
-permalink: kb/130/Q130301/
+permalink: /kb/130/Q130301/
 ---
 
 ## Q130301: PRB: INSERT Command Fails with Buffering and Integrity Rules

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148659: How to Set Up Windows NT Debug Symbols"
-permalink: kb/148/Q148659/
+permalink: /kb/148/Q148659/
 ---
 
 ## Q148659: How to Set Up Windows NT Debug Symbols

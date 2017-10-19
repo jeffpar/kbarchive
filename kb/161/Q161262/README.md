@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161262: Creative Writer 2: How to Import/Export Picture"
-permalink: kb/161/Q161262/
+permalink: /kb/161/Q161262/
 ---
 
 ## Q161262: Creative Writer 2: How to Import/Export Picture

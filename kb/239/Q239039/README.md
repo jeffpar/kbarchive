@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239039: CPU Usage Is Set to an Incorrect Value Using HTMLA"
-permalink: kb/239/Q239039/
+permalink: /kb/239/Q239039/
 ---
 
 ## Q239039: CPU Usage Is Set to an Incorrect Value Using HTMLA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106082: WFWG Setup May Not Detect Existing 32-Bit Disk Access Drivers"
-permalink: kb/106/Q106082/
+permalink: /kb/106/Q106082/
 ---
 
 ## Q106082: WFWG Setup May Not Detect Existing 32-Bit Disk Access Drivers

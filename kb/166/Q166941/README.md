@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166941: PRB: DblClick Event Fires After Keystroke Followed by Space"
-permalink: kb/166/Q166941/
+permalink: /kb/166/Q166941/
 ---
 
 ## Q166941: PRB: DblClick Event Fires After Keystroke Followed by Space

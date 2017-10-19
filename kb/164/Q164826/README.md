@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164826: Direct Draw Programs May Hang NT 4.0 with S3 968 Video Chipset"
-permalink: kb/164/Q164826/
+permalink: /kb/164/Q164826/
 ---
 
 ## Q164826: Direct Draw Programs May Hang NT 4.0 with S3 968 Video Chipset

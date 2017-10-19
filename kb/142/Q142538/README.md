@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142538: PRB: M6110 Run-Time Error Occurs When Using SYSTEMQQ or RUNQQ"
-permalink: kb/142/Q142538/
+permalink: /kb/142/Q142538/
 ---
 
 ## Q142538: PRB: M6110 Run-Time Error Occurs When Using SYSTEMQQ or RUNQQ

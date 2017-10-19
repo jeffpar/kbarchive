@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121831: Writer 1.0: ErrMsg: Can't Look at ~Creative Writer Preferences"
-permalink: kb/121/Q121831/
+permalink: /kb/121/Q121831/
 ---
 
 ## Q121831: Writer 1.0: ErrMsg: Can't Look at ~Creative Writer Preferences

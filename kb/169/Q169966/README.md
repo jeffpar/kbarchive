@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169966: Err Msg: Setup Did Not Find Any Hard Drives on Your Computer"
-permalink: kb/169/Q169966/
+permalink: /kb/169/Q169966/
 ---
 
 ## Q169966: Err Msg: Setup Did Not Find Any Hard Drives on Your Computer

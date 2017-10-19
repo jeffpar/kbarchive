@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192716: HOWTO: Update More Than 40 Fields in an Access (Jet) Database"
-permalink: kb/192/Q192716/
+permalink: /kb/192/Q192716/
 ---
 
 ## Q192716: HOWTO: Update More Than 40 Fields in an Access (Jet) Database

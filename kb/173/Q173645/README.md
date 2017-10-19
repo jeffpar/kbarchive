@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173645: FIX: Access Violation in MSDAER.DLL with _com_error Exceptions"
-permalink: kb/173/Q173645/
+permalink: /kb/173/Q173645/
 ---
 
 ## Q173645: FIX: Access Violation in MSDAER.DLL with _com_error Exceptions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129999: Increasing Windows NT Backup Performance"
-permalink: kb/129/Q129999/
+permalink: /kb/129/Q129999/
 ---
 
 ## Q129999: Increasing Windows NT Backup Performance

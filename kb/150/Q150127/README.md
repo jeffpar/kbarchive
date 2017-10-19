@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150127: BUG: PEEKCHARQQ Fails in QuickWin or Standard Graphics Program"
-permalink: kb/150/Q150127/
+permalink: /kb/150/Q150127/
 ---
 
 ## Q150127: BUG: PEEKCHARQQ Fails in QuickWin or Standard Graphics Program

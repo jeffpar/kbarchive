@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169159: XCON: X.400 Connector Configuration Checklist"
-permalink: kb/169/Q169159/
+permalink: /kb/169/Q169159/
 ---
 
 ## Q169159: XCON: X.400 Connector Configuration Checklist

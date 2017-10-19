@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201321: HOWTO: Alternative Implementation of ATL Singleton"
-permalink: kb/201/Q201321/
+permalink: /kb/201/Q201321/
 ---
 
 ## Q201321: HOWTO: Alternative Implementation of ATL Singleton

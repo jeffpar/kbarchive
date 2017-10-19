@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137407: How to Obtain the Active Drive Letters in a Visual FoxPro App"
-permalink: kb/137/Q137407/
+permalink: /kb/137/Q137407/
 ---
 
 ## Q137407: How to Obtain the Active Drive Letters in a Visual FoxPro App

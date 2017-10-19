@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153546: HOWTO: Pass Optional Parameters to a C DLL Function from VB"
-permalink: kb/153/Q153546/
+permalink: /kb/153/Q153546/
 ---
 
 ## Q153546: HOWTO: Pass Optional Parameters to a C DLL Function from VB

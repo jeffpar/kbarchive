@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112212: PC Win: Err Msg: Unable to Access Server Files"
-permalink: kb/112/Q112212/
+permalink: /kb/112/Q112212/
 ---
 
 ## Q112212: PC Win: Err Msg: Unable to Access Server Files

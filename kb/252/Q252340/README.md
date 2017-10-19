@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252340: How to Create and Start a Service on a Remote Computer"
-permalink: kb/252/Q252340/
+permalink: /kb/252/Q252340/
 ---
 
 ## Q252340: How to Create and Start a Service on a Remote Computer

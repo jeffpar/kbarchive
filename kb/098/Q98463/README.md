@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98463: Set PROTOCOL.INI Params for DLC Protocol 3270 Emulation"
-permalink: kb/098/Q98463/
+permalink: /kb/098/Q98463/
 ---
 
 ## Q98463: Set PROTOCOL.INI Params for DLC Protocol 3270 Emulation

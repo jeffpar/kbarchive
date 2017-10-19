@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216713: Server Access Violation in S1PXSND Using Persistent Verification"
-permalink: kb/216/Q216713/
+permalink: /kb/216/Q216713/
 ---
 
 ## Q216713: Server Access Violation in S1PXSND Using Persistent Verification

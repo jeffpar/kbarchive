@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164133: Logon Allowed When Access Denied to Mandatory User Profile"
-permalink: kb/164/Q164133/
+permalink: /kb/164/Q164133/
 ---
 
 ## Q164133: Logon Allowed When Access Denied to Mandatory User Profile

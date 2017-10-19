@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112839: How to Index on Numbers in a Character Field"
-permalink: kb/112/Q112839/
+permalink: /kb/112/Q112839/
 ---
 
 ## Q112839: How to Index on Numbers in a Character Field

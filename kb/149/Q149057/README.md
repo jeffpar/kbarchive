@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149057: INFO: Understanding Dynamic Resultset Cursors -RDO"
-permalink: kb/149/Q149057/
+permalink: /kb/149/Q149057/
 ---
 
 ## Q149057: INFO: Understanding Dynamic Resultset Cursors -RDO

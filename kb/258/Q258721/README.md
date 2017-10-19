@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258721: HTTP Compression Will Not Work with URLs that Include a &quot;/&quot;"
-permalink: kb/258/Q258721/
+permalink: /kb/258/Q258721/
 ---
 
 ## Q258721: HTTP Compression Will Not Work with URLs that Include a &quot;/&quot;

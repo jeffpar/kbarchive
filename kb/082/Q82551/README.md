@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82551: GP Faults in Excel on Corrupted Spreadsheets"
-permalink: kb/082/Q82551/
+permalink: /kb/082/Q82551/
 ---
 
 ## Q82551: GP Faults in Excel on Corrupted Spreadsheets

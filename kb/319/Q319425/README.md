@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319425: Stop 0xc000021a Error Message on a Blue Screen in Windows NT"
-permalink: kb/319/Q319425/
+permalink: /kb/319/Q319425/
 ---
 
 ## Q319425: Stop 0xc000021a Error Message on a Blue Screen in Windows NT

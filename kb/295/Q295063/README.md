@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295063: CodePage Set to UTF-8 Generates Output w/ Mismatched Characters"
-permalink: kb/295/Q295063/
+permalink: /kb/295/Q295063/
 ---
 
 ## Q295063: CodePage Set to UTF-8 Generates Output w/ Mismatched Characters

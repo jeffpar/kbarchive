@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156291: Winnt.exe Shows Hidden Attribute in July 1996 MSDN Level 3"
-permalink: kb/156/Q156291/
+permalink: /kb/156/Q156291/
 ---
 
 ## Q156291: Winnt.exe Shows Hidden Attribute in July 1996 MSDN Level 3

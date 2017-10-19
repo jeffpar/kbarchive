@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221730: FIX: Enabled_Assign Fires Incorrectly for Container in Container"
-permalink: kb/221/Q221730/
+permalink: /kb/221/Q221730/
 ---
 
 ## Q221730: FIX: Enabled_Assign Fires Incorrectly for Container in Container

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175550: How to Uninstall The Microsoft Network Version 2.0"
-permalink: kb/175/Q175550/
+permalink: /kb/175/Q175550/
 ---
 
 ## Q175550: How to Uninstall The Microsoft Network Version 2.0

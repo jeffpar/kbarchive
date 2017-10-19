@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249349: XADM: MTA Converts (a) to (040)a(041) in Message Tracking"
-permalink: kb/249/Q249349/
+permalink: /kb/249/Q249349/
 ---
 
 ## Q249349: XADM: MTA Converts (a) to (040)a(041) in Message Tracking

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101896: Err Msg: Server Manager -- Access is Denied"
-permalink: kb/101/Q101896/
+permalink: /kb/101/Q101896/
 ---
 
 ## Q101896: Err Msg: Server Manager -- Access is Denied

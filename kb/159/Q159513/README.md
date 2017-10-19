@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159513: Deadly Tide: H2 66 Bomb Incorrectly Stated as an HY 66"
-permalink: kb/159/Q159513/
+permalink: /kb/159/Q159513/
 ---
 
 ## Q159513: Deadly Tide: H2 66 Bomb Incorrectly Stated as an HY 66

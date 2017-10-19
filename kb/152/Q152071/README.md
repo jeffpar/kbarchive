@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152071: HOWTO: Calling Hidden Default Method of an OLE Automation Collec"
-permalink: kb/152/Q152071/
+permalink: /kb/152/Q152071/
 ---
 
 ## Q152071: HOWTO: Calling Hidden Default Method of an OLE Automation Collec

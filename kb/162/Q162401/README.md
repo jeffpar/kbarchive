@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162401: NWConv Cannot Migrate 2-Character NetWare Server"
-permalink: kb/162/Q162401/
+permalink: /kb/162/Q162401/
 ---
 
 ## Q162401: NWConv Cannot Migrate 2-Character NetWare Server

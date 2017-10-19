@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243415: Your Computer Running Windows NT 4.0 Hangs Using MO Drives"
-permalink: kb/243/Q243415/
+permalink: /kb/243/Q243415/
 ---
 
 ## Q243415: Your Computer Running Windows NT 4.0 Hangs Using MO Drives

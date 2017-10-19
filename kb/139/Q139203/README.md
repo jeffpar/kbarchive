@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139203: X400: Errors with Invalid X.400 Address Attributes"
-permalink: kb/139/Q139203/
+permalink: /kb/139/Q139203/
 ---
 
 ## Q139203: X400: Errors with Invalid X.400 Address Attributes

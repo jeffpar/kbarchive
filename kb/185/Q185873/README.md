@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185873: Reg.exe Displays Access Denied Error When Querying Registry"
-permalink: kb/185/Q185873/
+permalink: /kb/185/Q185873/
 ---
 
 ## Q185873: Reg.exe Displays Access Denied Error When Querying Registry

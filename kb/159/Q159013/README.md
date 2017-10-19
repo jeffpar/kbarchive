@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159013: Saving File to Windows NT 3.51 Server Loses Long File Name"
-permalink: kb/159/Q159013/
+permalink: /kb/159/Q159013/
 ---
 
 ## Q159013: Saving File to Windows NT 3.51 Server Loses Long File Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114868: Error 0126 When You Start the Net2Com Service"
-permalink: kb/114/Q114868/
+permalink: /kb/114/Q114868/
 ---
 
 ## Q114868: Error 0126 When You Start the Net2Com Service

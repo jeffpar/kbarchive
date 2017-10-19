@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311468: Exchange 2000 Does Not Support IMAP4 NAMESPACE Command"
-permalink: kb/311/Q311468/
+permalink: /kb/311/Q311468/
 ---
 
 ## Q311468: Exchange 2000 Does Not Support IMAP4 NAMESPACE Command

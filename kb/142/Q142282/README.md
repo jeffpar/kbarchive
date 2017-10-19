@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142282: PRB: Pageframe Does Not Display All the Pages"
-permalink: kb/142/Q142282/
+permalink: /kb/142/Q142282/
 ---
 
 ## Q142282: PRB: Pageframe Does Not Display All the Pages

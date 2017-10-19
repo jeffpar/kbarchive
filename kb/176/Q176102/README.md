@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176102: MSN Err Msg: The Connection to the Server Has Failed..."
-permalink: kb/176/Q176102/
+permalink: /kb/176/Q176102/
 ---
 
 ## Q176102: MSN Err Msg: The Connection to the Server Has Failed...

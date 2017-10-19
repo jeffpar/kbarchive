@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173282: SMS: 'Stack Fault' Error Occurs with PCM Service"
-permalink: kb/173/Q173282/
+permalink: /kb/173/Q173282/
 ---
 
 ## Q173282: SMS: 'Stack Fault' Error Occurs with PCM Service

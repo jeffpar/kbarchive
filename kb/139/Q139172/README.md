@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139172: PRB: Win32api.hlp &amp; Autodemo Missing from VFP3 Floppy Version"
-permalink: kb/139/Q139172/
+permalink: /kb/139/Q139172/
 ---
 
 ## Q139172: PRB: Win32api.hlp &amp; Autodemo Missing from VFP3 Floppy Version

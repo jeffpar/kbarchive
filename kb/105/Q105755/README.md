@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105755: Cannot Install Two MIDI Cards If They Have the Same Name"
-permalink: kb/105/Q105755/
+permalink: /kb/105/Q105755/
 ---
 
 ## Q105755: Cannot Install Two MIDI Cards If They Have the Same Name

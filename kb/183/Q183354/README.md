@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183354: XCLN: Unable to Attach Files with Long File Names"
-permalink: kb/183/Q183354/
+permalink: /kb/183/Q183354/
 ---
 
 ## Q183354: XCLN: Unable to Attach Files with Long File Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58243: Cannot Run Real Mode Under Enhanced with SHARE"
-permalink: kb/058/Q58243/
+permalink: /kb/058/Q58243/
 ---
 
 ## Q58243: Cannot Run Real Mode Under Enhanced with SHARE

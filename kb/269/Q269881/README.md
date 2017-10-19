@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269881: PRB: Problems with VFP Driver &quot;Fetch Data In Background&quot; Option"
-permalink: kb/269/Q269881/
+permalink: /kb/269/Q269881/
 ---
 
 ## Q269881: PRB: Problems with VFP Driver &quot;Fetch Data In Background&quot; Option

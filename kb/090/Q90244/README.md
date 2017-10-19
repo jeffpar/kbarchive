@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90244: The Network Card Is Unable to Access the Network"
-permalink: kb/090/Q90244/
+permalink: /kb/090/Q90244/
 ---
 
 ## Q90244: The Network Card Is Unable to Access the Network

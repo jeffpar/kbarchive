@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152156: Access Violation in Client Process During Authenticated RPC"
-permalink: kb/152/Q152156/
+permalink: /kb/152/Q152156/
 ---
 
 ## Q152156: Access Violation in Client Process During Authenticated RPC

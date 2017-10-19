@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152074: PRB: COleMessageFilter Doesn't Process WM_PAINT"
-permalink: kb/152/Q152074/
+permalink: /kb/152/Q152074/
 ---
 
 ## Q152074: PRB: COleMessageFilter Doesn't Process WM_PAINT

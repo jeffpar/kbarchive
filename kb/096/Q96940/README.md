@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96940: MS-DOS 6 Upgrade Setup Err Msg: Setup Cannot Find the..."
-permalink: kb/096/Q96940/
+permalink: /kb/096/Q96940/
 ---
 
 ## Q96940: MS-DOS 6 Upgrade Setup Err Msg: Setup Cannot Find the...

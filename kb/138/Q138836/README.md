@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138836: Flying Fonts Screen Saver Leaves Afterimages on Screen"
-permalink: kb/138/Q138836/
+permalink: /kb/138/Q138836/
 ---
 
 ## Q138836: Flying Fonts Screen Saver Leaves Afterimages on Screen

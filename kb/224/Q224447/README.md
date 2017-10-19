@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224447: XADM: How to Change LDAP Port Assignments in Exchange Server"
-permalink: kb/224/Q224447/
+permalink: /kb/224/Q224447/
 ---
 
 ## Q224447: XADM: How to Change LDAP Port Assignments in Exchange Server

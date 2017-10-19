@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159936: Using the Windows NT 4.0 or Windows 95 System Policy Editor"
-permalink: kb/159/Q159936/
+permalink: /kb/159/Q159936/
 ---
 
 ## Q159936: Using the Windows NT 4.0 or Windows 95 System Policy Editor

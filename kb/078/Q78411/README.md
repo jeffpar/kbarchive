@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78411: Restoring MS-DOS Editor to the MS-DOS Shell Main Program List"
-permalink: kb/078/Q78411/
+permalink: /kb/078/Q78411/
 ---
 
 ## Q78411: Restoring MS-DOS Editor to the MS-DOS Shell Main Program List

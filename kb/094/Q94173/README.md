@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94173: Incorrect Printer Name in Setup Dialog Box"
-permalink: kb/094/Q94173/
+permalink: /kb/094/Q94173/
 ---
 
 ## Q94173: Incorrect Printer Name in Setup Dialog Box

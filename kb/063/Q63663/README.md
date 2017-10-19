@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63663: Macro Recorder Does Not Record Keystrokes in MS-DOS Apps"
-permalink: kb/063/Q63663/
+permalink: /kb/063/Q63663/
 ---
 
 ## Q63663: Macro Recorder Does Not Record Keystrokes in MS-DOS Apps

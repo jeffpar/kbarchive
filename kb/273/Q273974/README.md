@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273974: PRB: Session_OnStart Fires When EnableSessionState=False"
-permalink: kb/273/Q273974/
+permalink: /kb/273/Q273974/
 ---
 
 ## Q273974: PRB: Session_OnStart Fires When EnableSessionState=False

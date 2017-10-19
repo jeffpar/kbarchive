@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68906: ASD: 747 Stabilator Trim Appears to Move in Wrong Direction"
-permalink: kb/068/Q68906/
+permalink: /kb/068/Q68906/
 ---
 
 ## Q68906: ASD: 747 Stabilator Trim Appears to Move in Wrong Direction

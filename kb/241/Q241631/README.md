@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241631: Cluster Node with Heavy Disk Stress Does Not Shut Down Properly"
-permalink: kb/241/Q241631/
+permalink: /kb/241/Q241631/
 ---
 
 ## Q241631: Cluster Node with Heavy Disk Stress Does Not Shut Down Properly

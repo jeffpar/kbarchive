@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181866: Fatal Exception Error Accessing Windows NT Share From Windows 95"
-permalink: kb/181/Q181866/
+permalink: /kb/181/Q181866/
 ---
 
 ## Q181866: Fatal Exception Error Accessing Windows NT Share From Windows 95

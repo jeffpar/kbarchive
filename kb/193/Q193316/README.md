@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q193316: XFOR: How to Create Addresses of Form &quot;user@[IP Address]&quot;"
-permalink: kb/193/Q193316/
+title: "Q193316: XFOR: How to Create Addresses of Form &quot;user@&#91;IP Address&#93;&quot;"
+permalink: /kb/193/Q193316/
 ---
 
-## Q193316: XFOR: How to Create Addresses of Form &quot;user@[IP Address]&quot;
+## Q193316: XFOR: How to Create Addresses of Form &quot;user@&#91;IP Address&#93;&quot;
 
 	Article: Q193316
 	Product(s): Microsoft Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219322: Unattended Setup for RRAS (Steelhead) Requires Service Pack 5"
-permalink: kb/219/Q219322/
+permalink: /kb/219/Q219322/
 ---
 
 ## Q219322: Unattended Setup for RRAS (Steelhead) Requires Service Pack 5

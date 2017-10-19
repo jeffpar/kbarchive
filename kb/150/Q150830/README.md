@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150830: More Than One Export Server May Cause Replication To Fail"
-permalink: kb/150/Q150830/
+permalink: /kb/150/Q150830/
 ---
 
 ## Q150830: More Than One Export Server May Cause Replication To Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166642: XFOR: Err Msg: An Unexpected Response (500) Was Received..."
-permalink: kb/166/Q166642/
+permalink: /kb/166/Q166642/
 ---
 
 ## Q166642: XFOR: Err Msg: An Unexpected Response (500) Was Received...

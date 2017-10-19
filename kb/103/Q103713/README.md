@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103713: PRB: Low Disk Space May Cause Miscellaneous Build Problems"
-permalink: kb/103/Q103713/
+permalink: /kb/103/Q103713/
 ---
 
 ## Q103713: PRB: Low Disk Space May Cause Miscellaneous Build Problems

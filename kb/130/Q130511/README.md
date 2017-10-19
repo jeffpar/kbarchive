@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130511: ScanDisk Fails Repairing Bad Allocated Cluster"
-permalink: kb/130/Q130511/
+permalink: /kb/130/Q130511/
 ---
 
 ## Q130511: ScanDisk Fails Repairing Bad Allocated Cluster

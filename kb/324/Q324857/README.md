@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324857: MSN 5.6 Installation Guide"
-permalink: kb/324/Q324857/
+permalink: /kb/324/Q324857/
 ---
 
 ## Q324857: MSN 5.6 Installation Guide

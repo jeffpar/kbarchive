@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189304: SMS: Windows NT Processor Speed Is Incorrectly Reported"
-permalink: kb/189/Q189304/
+permalink: /kb/189/Q189304/
 ---
 
 ## Q189304: SMS: Windows NT Processor Speed Is Incorrectly Reported

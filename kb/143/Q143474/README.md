@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143474: Restricting Information Available to Anonymous Logon Users"
-permalink: kb/143/Q143474/
+permalink: /kb/143/Q143474/
 ---
 
 ## Q143474: Restricting Information Available to Anonymous Logon Users

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273807: Midtown Madness 2: Correct Audio Device Is Not Displayed"
-permalink: kb/273/Q273807/
+permalink: /kb/273/Q273807/
 ---
 
 ## Q273807: Midtown Madness 2: Correct Audio Device Is Not Displayed

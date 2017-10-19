@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135453: Winsock Application Hangs Using TCP/IP-32"
-permalink: kb/135/Q135453/
+permalink: /kb/135/Q135453/
 ---
 
 ## Q135453: Winsock Application Hangs Using TCP/IP-32

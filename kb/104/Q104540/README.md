@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104540: CHKDSK Finds Lost Clusters When ScanDisk Does Not"
-permalink: kb/104/Q104540/
+permalink: /kb/104/Q104540/
 ---
 
 ## Q104540: CHKDSK Finds Lost Clusters When ScanDisk Does Not

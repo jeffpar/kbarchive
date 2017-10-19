@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130066: CONN: Mail Connection Gateway Errors (531), (550)"
-permalink: kb/130/Q130066/
+permalink: /kb/130/Q130066/
 ---
 
 ## Q130066: CONN: Mail Connection Gateway Errors (531), (550)

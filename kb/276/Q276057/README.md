@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276057: XADM: Access Violation in Information Store"
-permalink: kb/276/Q276057/
+permalink: /kb/276/Q276057/
 ---
 
 ## Q276057: XADM: Access Violation in Information Store

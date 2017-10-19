@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103622: Err Msg: GROUP ERROR: Cannot Open Program Group...."
-permalink: kb/103/Q103622/
+permalink: /kb/103/Q103622/
 ---
 
 ## Q103622: Err Msg: GROUP ERROR: Cannot Open Program Group....

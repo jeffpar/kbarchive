@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128769: How to Create a Screen Programatically"
-permalink: kb/128/Q128769/
+permalink: /kb/128/Q128769/
 ---
 
 ## Q128769: How to Create a Screen Programatically

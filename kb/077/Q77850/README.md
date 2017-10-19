@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77850: Lotus 1-2-3 Release 3 and MS-DOS 5.0"
-permalink: kb/077/Q77850/
+permalink: /kb/077/Q77850/
 ---
 
 ## Q77850: Lotus 1-2-3 Release 3 and MS-DOS 5.0

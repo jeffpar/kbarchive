@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177425: INFO: Replacing #import's Exception Raising Mechanism for ADO"
-permalink: kb/177/Q177425/
+permalink: /kb/177/Q177425/
 ---
 
 ## Q177425: INFO: Replacing #import's Exception Raising Mechanism for ADO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171535: FIX: ANALYZE Crashes When No Log Entries Found in Log File"
-permalink: kb/171/Q171535/
+permalink: /kb/171/Q171535/
 ---
 
 ## Q171535: FIX: ANALYZE Crashes When No Log Entries Found in Log File

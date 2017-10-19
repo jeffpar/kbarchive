@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79083: Copying a Block of Text in Windows Write"
-permalink: kb/079/Q79083/
+permalink: /kb/079/Q79083/
 ---
 
 ## Q79083: Copying a Block of Text in Windows Write

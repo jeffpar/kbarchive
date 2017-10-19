@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159352: RPC over NetBIOS Programs Can't Call from Server to RAS Client"
-permalink: kb/159/Q159352/
+permalink: /kb/159/Q159352/
 ---
 
 ## Q159352: RPC over NetBIOS Programs Can't Call from Server to RAS Client

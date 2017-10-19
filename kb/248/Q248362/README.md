@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248362: SMS: Windows 95/98 Client Hangs During Hardware Inventory"
-permalink: kb/248/Q248362/
+permalink: /kb/248/Q248362/
 ---
 
 ## Q248362: SMS: Windows 95/98 Client Hangs During Hardware Inventory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272342: Plus! Game Pack: No Game Sounds with Sound Blaster 16 CT 2950"
-permalink: kb/272/Q272342/
+permalink: /kb/272/Q272342/
 ---
 
 ## Q272342: Plus! Game Pack: No Game Sounds with Sound Blaster 16 CT 2950

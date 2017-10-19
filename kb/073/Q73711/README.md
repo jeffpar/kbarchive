@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73711: Backup/Restore of an Empty Directory"
-permalink: kb/073/Q73711/
+permalink: /kb/073/Q73711/
 ---
 
 ## Q73711: Backup/Restore of an Empty Directory

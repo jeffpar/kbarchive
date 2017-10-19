@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192639: HOWTO: Use PDW to Deploy Using the FTP Web Publishing Method"
-permalink: kb/192/Q192639/
+permalink: /kb/192/Q192639/
 ---
 
 ## Q192639: HOWTO: Use PDW to Deploy Using the FTP Web Publishing Method

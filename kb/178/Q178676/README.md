@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178676: How to Install an ISDN Device in Windows NT"
-permalink: kb/178/Q178676/
+permalink: /kb/178/Q178676/
 ---
 
 ## Q178676: How to Install an ISDN Device in Windows NT

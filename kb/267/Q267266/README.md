@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267266: FS98: Flight Simulator Stops Responding While You Fly"
-permalink: kb/267/Q267266/
+permalink: /kb/267/Q267266/
 ---
 
 ## Q267266: FS98: Flight Simulator Stops Responding While You Fly

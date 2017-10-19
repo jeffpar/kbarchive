@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163906: XADM: Year 2000 Support for DateTime Properties"
-permalink: kb/163/Q163906/
+permalink: /kb/163/Q163906/
 ---
 
 ## Q163906: XADM: Year 2000 Support for DateTime Properties

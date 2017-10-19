@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152234: XCLN: Exchange Client for Windows 95 Starts Very Slowly"
-permalink: kb/152/Q152234/
+permalink: /kb/152/Q152234/
 ---
 
 ## Q152234: XCLN: Exchange Client for Windows 95 Starts Very Slowly

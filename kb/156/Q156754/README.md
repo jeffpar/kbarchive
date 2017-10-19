@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156754: Limit of 26 Catalogs with Microsoft Index Server"
-permalink: kb/156/Q156754/
+permalink: /kb/156/Q156754/
 ---
 
 ## Q156754: Limit of 26 Catalogs with Microsoft Index Server

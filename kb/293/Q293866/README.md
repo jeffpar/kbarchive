@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293866: &quot;Access Denied&quot; Err Msg If Windows 9x Prints to Network Printer"
-permalink: kb/293/Q293866/
+permalink: /kb/293/Q293866/
 ---
 
 ## Q293866: &quot;Access Denied&quot; Err Msg If Windows 9x Prints to Network Printer

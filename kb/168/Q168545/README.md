@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168545: SMS: Remote Control Session Shows Machine Name"
-permalink: kb/168/Q168545/
+permalink: /kb/168/Q168545/
 ---
 
 ## Q168545: SMS: Remote Control Session Shows Machine Name

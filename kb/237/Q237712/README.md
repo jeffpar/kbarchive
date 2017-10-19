@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237712: NBA 2000: Can Start Trial Version but Not Retail Version"
-permalink: kb/237/Q237712/
+permalink: /kb/237/Q237712/
 ---
 
 ## Q237712: NBA 2000: Can Start Trial Version but Not Retail Version

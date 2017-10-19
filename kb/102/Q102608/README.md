@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102608: Differences in Security: Windows NT and LAN Manager"
-permalink: kb/102/Q102608/
+permalink: /kb/102/Q102608/
 ---
 
 ## Q102608: Differences in Security: Windows NT and LAN Manager

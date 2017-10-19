@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170196: CD-ROM Drive Inaccessible with FlexiCD PowerToy Installed"
-permalink: kb/170/Q170196/
+permalink: /kb/170/Q170196/
 ---
 
 ## Q170196: CD-ROM Drive Inaccessible with FlexiCD PowerToy Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251142: Flight Simulator 2000: Unable to Send ATC Text Message"
-permalink: kb/251/Q251142/
+permalink: /kb/251/Q251142/
 ---
 
 ## Q251142: Flight Simulator 2000: Unable to Send ATC Text Message

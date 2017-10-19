@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90678: MS-DOS Setup Disk is Bootable but Setup Doesn't Run"
-permalink: kb/090/Q90678/
+permalink: /kb/090/Q90678/
 ---
 
 ## Q90678: MS-DOS Setup Disk is Bootable but Setup Doesn't Run

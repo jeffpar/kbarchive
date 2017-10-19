@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162156: Encarta 97: Problems Starting Web Browser From Encarta"
-permalink: kb/162/Q162156/
+permalink: /kb/162/Q162156/
 ---
 
 ## Q162156: Encarta 97: Problems Starting Web Browser From Encarta

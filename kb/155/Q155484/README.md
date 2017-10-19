@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155484: PowerPoint Custom Object Fills and Word's Picture Editor"
-permalink: kb/155/Q155484/
+permalink: /kb/155/Q155484/
 ---
 
 ## Q155484: PowerPoint Custom Object Fills and Word's Picture Editor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255980: SMS: Incorrect Domain or Computer Name Added as a Logon Point"
-permalink: kb/255/Q255980/
+permalink: /kb/255/Q255980/
 ---
 
 ## Q255980: SMS: Incorrect Domain or Computer Name Added as a Logon Point

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220173: Err Msg: A Connection with the Server Could Not be Established"
-permalink: kb/220/Q220173/
+permalink: /kb/220/Q220173/
 ---
 
 ## Q220173: Err Msg: A Connection with the Server Could Not be Established

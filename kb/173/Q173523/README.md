@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173523: IIS 3.0 Can Fail in Low Memory Conditions"
-permalink: kb/173/Q173523/
+permalink: /kb/173/Q173523/
 ---
 
 ## Q173523: IIS 3.0 Can Fail in Low Memory Conditions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101185: INFO: Using cout in an Application and DLL"
-permalink: kb/101/Q101185/
+permalink: /kb/101/Q101185/
 ---
 
 ## Q101185: INFO: Using cout in an Application and DLL

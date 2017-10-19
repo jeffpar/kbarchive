@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177804: SMS: Remote Control Fails on Win95 with STB Nitro"
-permalink: kb/177/Q177804/
+permalink: /kb/177/Q177804/
 ---
 
 ## Q177804: SMS: Remote Control Fails on Win95 with STB Nitro

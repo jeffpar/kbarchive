@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261028: MCM2: Game Hangs When the Introductory Video Clip Is Played"
-permalink: kb/261/Q261028/
+permalink: /kb/261/Q261028/
 ---
 
 ## Q261028: MCM2: Game Hangs When the Introductory Video Clip Is Played

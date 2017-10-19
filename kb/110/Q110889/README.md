@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110889: Can't Choose Second Operating System on Olivetti M6 Computer"
-permalink: kb/110/Q110889/
+permalink: /kb/110/Q110889/
 ---
 
 ## Q110889: Can't Choose Second Operating System on Olivetti M6 Computer

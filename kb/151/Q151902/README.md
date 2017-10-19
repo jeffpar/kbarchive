@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151902: XCLN: Err Msg: The Attachment Could Not Be Saved"
-permalink: kb/151/Q151902/
+permalink: /kb/151/Q151902/
 ---
 
 ## Q151902: XCLN: Err Msg: The Attachment Could Not Be Saved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130449: PC DirSync: Err Msg: Fatal 113 Failure to Send Mail..."
-permalink: kb/130/Q130449/
+permalink: /kb/130/Q130449/
 ---
 
 ## Q130449: PC DirSync: Err Msg: Fatal 113 Failure to Send Mail...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172008: Default NTFS Permissions in Windows NT 3.5 and 3.51"
-permalink: kb/172/Q172008/
+permalink: /kb/172/Q172008/
 ---
 
 ## Q172008: Default NTFS Permissions in Windows NT 3.5 and 3.51

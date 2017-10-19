@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157701: XCON: MTA: Dr. Watson Report with Exception e0020002"
-permalink: kb/157/Q157701/
+permalink: /kb/157/Q157701/
 ---
 
 ## Q157701: XCON: MTA: Dr. Watson Report with Exception e0020002

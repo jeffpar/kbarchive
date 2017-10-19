@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89737: Error Messages When Canon LBP-4 Set to Emulate Diablo"
-permalink: kb/089/Q89737/
+permalink: /kb/089/Q89737/
 ---
 
 ## Q89737: Error Messages When Canon LBP-4 Set to Emulate Diablo

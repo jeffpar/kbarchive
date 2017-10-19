@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265464: Cannot Gain Access to Server, System Event Log Shows Event ID 25"
-permalink: kb/265/Q265464/
+permalink: /kb/265/Q265464/
 ---
 
 ## Q265464: Cannot Gain Access to Server, System Event Log Shows Event ID 25

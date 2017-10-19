@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271251: How to Download Microsoft Reader for Desktop or Laptop Computers"
-permalink: kb/271/Q271251/
+permalink: /kb/271/Q271251/
 ---
 
 ## Q271251: How to Download Microsoft Reader for Desktop or Laptop Computers

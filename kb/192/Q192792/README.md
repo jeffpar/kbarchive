@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192792: XFOR: Server Stops Responding Running a Print Service and INS"
-permalink: kb/192/Q192792/
+permalink: /kb/192/Q192792/
 ---
 
 ## Q192792: XFOR: Server Stops Responding Running a Print Service and INS

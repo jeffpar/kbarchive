@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243751: HOWTO: Add Command Handlers for MRU Menu Items in MFC App"
-permalink: kb/243/Q243751/
+permalink: /kb/243/Q243751/
 ---
 
 ## Q243751: HOWTO: Add Command Handlers for MRU Menu Items in MFC App

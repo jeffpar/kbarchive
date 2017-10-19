@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249629: Encarta 2000: Error Messages When You Attempt to Start Program"
-permalink: kb/249/Q249629/
+permalink: /kb/249/Q249629/
 ---
 
 ## Q249629: Encarta 2000: Error Messages When You Attempt to Start Program

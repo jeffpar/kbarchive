@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88785: Windows Err Msg: A Permanent Swap File Has..."
-permalink: kb/088/Q88785/
+permalink: /kb/088/Q88785/
 ---
 
 ## Q88785: Windows Err Msg: A Permanent Swap File Has...

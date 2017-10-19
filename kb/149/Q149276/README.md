@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149276: HOWTO: Use Icons with the Windows 95/98/Me System Tray"
-permalink: kb/149/Q149276/
+permalink: /kb/149/Q149276/
 ---
 
 ## Q149276: HOWTO: Use Icons with the Windows 95/98/Me System Tray

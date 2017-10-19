@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150429: Macintosh Bookshelf 96-97: Minimum System Requirements"
-permalink: kb/150/Q150429/
+permalink: /kb/150/Q150429/
 ---
 
 ## Q150429: Macintosh Bookshelf 96-97: Minimum System Requirements

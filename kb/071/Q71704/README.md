@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71704: MS-DOS: Reasons for A20 Line Switching"
-permalink: kb/071/Q71704/
+permalink: /kb/071/Q71704/
 ---
 
 ## Q71704: MS-DOS: Reasons for A20 Line Switching

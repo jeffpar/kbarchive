@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156331: Cannot Boot OEM Service Release 2 with Windows 95 System Files"
-permalink: kb/156/Q156331/
+permalink: /kb/156/Q156331/
 ---
 
 ## Q156331: Cannot Boot OEM Service Release 2 with Windows 95 System Files

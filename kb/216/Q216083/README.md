@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216083: Disabling the Shut Down Button on the Logon Information Window"
-permalink: kb/216/Q216083/
+permalink: /kb/216/Q216083/
 ---
 
 ## Q216083: Disabling the Shut Down Button on the Logon Information Window

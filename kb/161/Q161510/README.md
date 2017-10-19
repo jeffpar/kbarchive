@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161510: Floppy Not Detected on Ascentia 910N Laptop"
-permalink: kb/161/Q161510/
+permalink: /kb/161/Q161510/
 ---
 
 ## Q161510: Floppy Not Detected on Ascentia 910N Laptop

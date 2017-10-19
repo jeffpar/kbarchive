@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108776: Excel Prints at 300 DPI to HP LaserJet 4 Series Printers"
-permalink: kb/108/Q108776/
+permalink: /kb/108/Q108776/
 ---
 
 ## Q108776: Excel Prints at 300 DPI to HP LaserJet 4 Series Printers

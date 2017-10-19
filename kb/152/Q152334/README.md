@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152334: Bookshelf '96-'97: Manual Installation on Windows 95/98 and NT"
-permalink: kb/152/Q152334/
+permalink: /kb/152/Q152334/
 ---
 
 ## Q152334: Bookshelf '96-'97: Manual Installation on Windows 95/98 and NT

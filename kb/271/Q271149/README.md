@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271149: SMS: SMS 2.0 Character Limits on User and Group Accounts"
-permalink: kb/271/Q271149/
+permalink: /kb/271/Q271149/
 ---
 
 ## Q271149: SMS: SMS 2.0 Character Limits on User and Group Accounts

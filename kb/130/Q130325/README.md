@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130325: PRB: Cannot Add Methods to Objects at Design Time"
-permalink: kb/130/Q130325/
+permalink: /kb/130/Q130325/
 ---
 
 ## Q130325: PRB: Cannot Add Methods to Objects at Design Time

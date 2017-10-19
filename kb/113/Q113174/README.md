@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113174: BUG: Incorrect Return Value with CAPSLOCK() or NUMLOCK()"
-permalink: kb/113/Q113174/
+permalink: /kb/113/Q113174/
 ---
 
 ## Q113174: BUG: Incorrect Return Value with CAPSLOCK() or NUMLOCK()

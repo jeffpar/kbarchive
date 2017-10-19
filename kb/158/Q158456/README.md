@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158456: Hardware Requirements for Remote Boot of Windows NT 4.0"
-permalink: kb/158/Q158456/
+permalink: /kb/158/Q158456/
 ---
 
 ## Q158456: Hardware Requirements for Remote Boot of Windows NT 4.0

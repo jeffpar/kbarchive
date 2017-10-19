@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33449: How to Increase MS-DOS Environment Space"
-permalink: kb/033/Q33449/
+permalink: /kb/033/Q33449/
 ---
 
 ## Q33449: How to Increase MS-DOS Environment Space

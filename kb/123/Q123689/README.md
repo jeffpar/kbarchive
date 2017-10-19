@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123689: PRB: F2347 or F2201 Error When Function Is Not Typed"
-permalink: kb/123/Q123689/
+permalink: /kb/123/Q123689/
 ---
 
 ## Q123689: PRB: F2347 or F2201 Error When Function Is Not Typed

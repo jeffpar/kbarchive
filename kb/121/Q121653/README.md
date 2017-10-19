@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121653: SCANDSKW Err Msg: This Program Requires Microsoft Windows"
-permalink: kb/121/Q121653/
+permalink: /kb/121/Q121653/
 ---
 
 ## Q121653: SCANDSKW Err Msg: This Program Requires Microsoft Windows

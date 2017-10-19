@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318091: MS02-018: Patch for Buffer Overrun in HTR ISAPI Extension"
-permalink: kb/318/Q318091/
+permalink: /kb/318/Q318091/
 ---
 
 ## Q318091: MS02-018: Patch for Buffer Overrun in HTR ISAPI Extension

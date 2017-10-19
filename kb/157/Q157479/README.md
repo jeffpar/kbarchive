@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157479: INFO: STL Sample for the rotate Function"
-permalink: kb/157/Q157479/
+permalink: /kb/157/Q157479/
 ---
 
 ## Q157479: INFO: STL Sample for the rotate Function

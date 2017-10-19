@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177983: Stop 0xA in Netbt.sys with Greater Than 64 Adapters"
-permalink: kb/177/Q177983/
+permalink: /kb/177/Q177983/
 ---
 
 ## Q177983: Stop 0xA in Netbt.sys with Greater Than 64 Adapters

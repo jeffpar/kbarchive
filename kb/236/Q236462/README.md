@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236462: Asheron's Call: Characters Receive Damage Through Doors"
-permalink: kb/236/Q236462/
+permalink: /kb/236/Q236462/
 ---
 
 ## Q236462: Asheron's Call: Characters Receive Damage Through Doors

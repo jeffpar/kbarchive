@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35804: DOCERR: .code Directive with Segment Name"
-permalink: kb/035/Q35804/
+permalink: /kb/035/Q35804/
 ---
 
 ## Q35804: DOCERR: .code Directive with Segment Name

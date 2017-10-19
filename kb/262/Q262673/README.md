@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262673: XADM: Modified Deferred Delivery Messages Are Never Sent"
-permalink: kb/262/Q262673/
+permalink: /kb/262/Q262673/
 ---
 
 ## Q262673: XADM: Modified Deferred Delivery Messages Are Never Sent

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155853: PC WIN: Error Using Details in the Spanish Windows 3.5 Client"
-permalink: kb/155/Q155853/
+permalink: /kb/155/Q155853/
 ---
 
 ## Q155853: PC WIN: Error Using Details in the Spanish Windows 3.5 Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185807: SMS: &quot;Unable to Load Resource DLL&quot; Starting Database Mgr Tool"
-permalink: kb/185/Q185807/
+permalink: /kb/185/Q185807/
 ---
 
 ## Q185807: SMS: &quot;Unable to Load Resource DLL&quot; Starting Database Mgr Tool

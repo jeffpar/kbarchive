@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132446: Application Error When Adding Users and Groups with ADDUSERS"
-permalink: kb/132/Q132446/
+permalink: /kb/132/Q132446/
 ---
 
 ## Q132446: Application Error When Adding Users and Groups with ADDUSERS

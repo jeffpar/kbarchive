@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300432: HOWTO: Promote a Member Server Running IIS to a DC Running IIS"
-permalink: kb/300/Q300432/
+permalink: /kb/300/Q300432/
 ---
 
 ## Q300432: HOWTO: Promote a Member Server Running IIS to a DC Running IIS

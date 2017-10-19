@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130141: HOWTO: Install SourceSafe on a Windows Client Workstation"
-permalink: kb/130/Q130141/
+permalink: /kb/130/Q130141/
 ---
 
 ## Q130141: HOWTO: Install SourceSafe on a Windows Client Workstation

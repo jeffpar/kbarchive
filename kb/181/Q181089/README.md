@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181089: INFO: Dialog Box Appears Even When No Conflicts Exist"
-permalink: kb/181/Q181089/
+permalink: /kb/181/Q181089/
 ---
 
 ## Q181089: INFO: Dialog Box Appears Even When No Conflicts Exist

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125417: PRB: Sharing Violation Error Message When Accessing EXE File"
-permalink: kb/125/Q125417/
+permalink: /kb/125/Q125417/
 ---
 
 ## Q125417: PRB: Sharing Violation Error Message When Accessing EXE File

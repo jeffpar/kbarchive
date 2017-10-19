@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240835: Office 2000 Installation May Require Windows 2000 CD-ROM"
-permalink: kb/240/Q240835/
+permalink: /kb/240/Q240835/
 ---
 
 ## Q240835: Office 2000 Installation May Require Windows 2000 CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189007: DNS: RPC Server or EndPoints not available."
-permalink: kb/189/Q189007/
+permalink: /kb/189/Q189007/
 ---
 
 ## Q189007: DNS: RPC Server or EndPoints not available.

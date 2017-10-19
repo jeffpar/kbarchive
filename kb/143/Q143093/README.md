@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143093: FP: Basic FrontPage Troubleshooting Utilities"
-permalink: kb/143/Q143093/
+permalink: /kb/143/Q143093/
 ---
 
 ## Q143093: FP: Basic FrontPage Troubleshooting Utilities

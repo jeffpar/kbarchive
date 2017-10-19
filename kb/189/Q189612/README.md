@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189612: Access Violation Occurs in Windows NT Explorer (Explorer.exe)"
-permalink: kb/189/Q189612/
+permalink: /kb/189/Q189612/
 ---
 
 ## Q189612: Access Violation Occurs in Windows NT Explorer (Explorer.exe)

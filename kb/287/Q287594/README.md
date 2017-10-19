@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287594: W3SVC Log Reflects Wrong Size with SF_NOTIFY_SEND_RAW_DATA Flag"
-permalink: kb/287/Q287594/
+permalink: /kb/287/Q287594/
 ---
 
 ## Q287594: W3SVC Log Reflects Wrong Size with SF_NOTIFY_SEND_RAW_DATA Flag

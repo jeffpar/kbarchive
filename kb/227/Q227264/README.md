@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227264: Index Server Returns Inconsistent Results"
-permalink: kb/227/Q227264/
+permalink: /kb/227/Q227264/
 ---
 
 ## Q227264: Index Server Returns Inconsistent Results

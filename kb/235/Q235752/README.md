@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235752: SMS: Prompted Queries May Return Bad Data and Hang MMC"
-permalink: kb/235/Q235752/
+permalink: /kb/235/Q235752/
 ---
 
 ## Q235752: SMS: Prompted Queries May Return Bad Data and Hang MMC

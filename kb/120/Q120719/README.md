@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120719: WordPad Cannot Use Courier Printer Font on the IBM 4019PS17"
-permalink: kb/120/Q120719/
+permalink: /kb/120/Q120719/
 ---
 
 ## Q120719: WordPad Cannot Use Courier Printer Font on the IBM 4019PS17

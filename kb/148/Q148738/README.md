@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148738: MFCDRAG Implements Drag and Drop Between CListCtrl and CTree"
-permalink: kb/148/Q148738/
+permalink: /kb/148/Q148738/
 ---
 
 ## Q148738: MFCDRAG Implements Drag and Drop Between CListCtrl and CTree

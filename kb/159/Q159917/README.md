@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159917: PPT7: PowerPoint Launches In Background From Windows 3.x Program"
-permalink: kb/159/Q159917/
+permalink: /kb/159/Q159917/
 ---
 
 ## Q159917: PPT7: PowerPoint Launches In Background From Windows 3.x Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274218: Server Returns &quot;Diagnostic 52&quot; When Deleting Replicated Object"
-permalink: kb/274/Q274218/
+permalink: /kb/274/Q274218/
 ---
 
 ## Q274218: Server Returns &quot;Diagnostic 52&quot; When Deleting Replicated Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149041: PRB: Error 419 Occurs if RecordSet is Assigned to Data Control"
-permalink: kb/149/Q149041/
+permalink: /kb/149/Q149041/
 ---
 
 ## Q149041: PRB: Error 419 Occurs if RecordSet is Assigned to Data Control

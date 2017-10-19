@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255829: PRB: PDW Includes Comsvcs.dll File with COM+ Applications"
-permalink: kb/255/Q255829/
+permalink: /kb/255/Q255829/
 ---
 
 ## Q255829: PRB: PDW Includes Comsvcs.dll File with COM+ Applications

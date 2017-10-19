@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199256: Networking Essentials Education Edition Comments And Corrections"
-permalink: kb/199/Q199256/
+permalink: /kb/199/Q199256/
 ---
 
 ## Q199256: Networking Essentials Education Edition Comments And Corrections

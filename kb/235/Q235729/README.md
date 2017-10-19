@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235729: SMS: Silent Unattended Setup for SMS 2.0 Service Packs"
-permalink: kb/235/Q235729/
+permalink: /kb/235/Q235729/
 ---
 
 ## Q235729: SMS: Silent Unattended Setup for SMS 2.0 Service Packs

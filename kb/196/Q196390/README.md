@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196390: SNA Server Refuses New User Connection after Server Restarted"
-permalink: kb/196/Q196390/
+permalink: /kb/196/Q196390/
 ---
 
 ## Q196390: SNA Server Refuses New User Connection after Server Restarted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66840: ASD: Spot Plane View Is Too Close to 747"
-permalink: kb/066/Q66840/
+permalink: /kb/066/Q66840/
 ---
 
 ## Q66840: ASD: Spot Plane View Is Too Close to 747

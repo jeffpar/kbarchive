@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167213: FIX: Invalid Page Fault When Shutting Down Visual Basic 5.0"
-permalink: kb/167/Q167213/
+permalink: /kb/167/Q167213/
 ---
 
 ## Q167213: FIX: Invalid Page Fault When Shutting Down Visual Basic 5.0

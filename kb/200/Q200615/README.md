@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200615: SMS: Setup Does Not Install SQL Server 7.0 Unattended"
-permalink: kb/200/Q200615/
+permalink: /kb/200/Q200615/
 ---
 
 ## Q200615: SMS: Setup Does Not Install SQL Server 7.0 Unattended

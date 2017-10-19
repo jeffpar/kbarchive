@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121462: Obtaining Latest Novell Client Windows Drivers and DLLs"
-permalink: kb/121/Q121462/
+permalink: /kb/121/Q121462/
 ---
 
 ## Q121462: Obtaining Latest Novell Client Windows Drivers and DLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81744: No Way Around Corrupt Swap File on True Pen-Based Machine"
-permalink: kb/081/Q81744/
+permalink: /kb/081/Q81744/
 ---
 
 ## Q81744: No Way Around Corrupt Swap File on True Pen-Based Machine

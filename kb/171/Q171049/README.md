@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171049: XADM: Error Msg. Trying to Modify E-mail Address in Admin"
-permalink: kb/171/Q171049/
+permalink: /kb/171/Q171049/
 ---
 
 ## Q171049: XADM: Error Msg. Trying to Modify E-mail Address in Admin

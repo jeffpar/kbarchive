@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139479: PRB: Uninstaller Error When Attempting to Uninstall Visual C++"
-permalink: kb/139/Q139479/
+permalink: /kb/139/Q139479/
 ---
 
 ## Q139479: PRB: Uninstaller Error When Attempting to Uninstall Visual C++

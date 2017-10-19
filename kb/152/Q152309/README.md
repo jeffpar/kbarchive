@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152309: WinNT 3.51 w/ CPU Maxed Prints Very Slowly to Banding Printers"
-permalink: kb/152/Q152309/
+permalink: /kb/152/Q152309/
 ---
 
 ## Q152309: WinNT 3.51 w/ CPU Maxed Prints Very Slowly to Banding Printers

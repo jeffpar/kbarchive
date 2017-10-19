@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168929: XCLN: Err Msg: You Need More Memory or System Resources"
-permalink: kb/168/Q168929/
+permalink: /kb/168/Q168929/
 ---
 
 ## Q168929: XCLN: Err Msg: You Need More Memory or System Resources

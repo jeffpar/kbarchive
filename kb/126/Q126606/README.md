@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126606: INFO: Accessing CREATE_DB, REPAIR_DB, and COMPACT_DB"
-permalink: kb/126/Q126606/
+permalink: /kb/126/Q126606/
 ---
 
 ## Q126606: INFO: Accessing CREATE_DB, REPAIR_DB, and COMPACT_DB

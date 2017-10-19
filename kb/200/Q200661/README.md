@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200661: XFOR: Event ID 2403: Failure Converting OLE v2 Object to OLE v1"
-permalink: kb/200/Q200661/
+permalink: /kb/200/Q200661/
 ---
 
 ## Q200661: XFOR: Event ID 2403: Failure Converting OLE v2 Object to OLE v1

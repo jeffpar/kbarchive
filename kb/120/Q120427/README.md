@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120427: Quattro Pro Prints No Edges or Borders on Postscript Printers"
-permalink: kb/120/Q120427/
+permalink: /kb/120/Q120427/
 ---
 
 ## Q120427: Quattro Pro Prints No Edges or Borders on Postscript Printers

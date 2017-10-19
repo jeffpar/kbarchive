@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99812: BUG: GP Fault with Visual Basic DDE Sample &amp; Word for Windows"
-permalink: kb/099/Q99812/
+permalink: /kb/099/Q99812/
 ---
 
 ## Q99812: BUG: GP Fault with Visual Basic DDE Sample &amp; Word for Windows

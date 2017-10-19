@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322030: How To Add A Web-based Hotmail E-mail Account To Outlook Express"
-permalink: kb/322/Q322030/
+permalink: /kb/322/Q322030/
 ---
 
 ## Q322030: How To Add A Web-based Hotmail E-mail Account To Outlook Express

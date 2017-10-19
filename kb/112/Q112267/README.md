@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112267: PC Win: TO: List Not Sorting Alphabetically"
-permalink: kb/112/Q112267/
+permalink: /kb/112/Q112267/
 ---
 
 ## Q112267: PC Win: TO: List Not Sorting Alphabetically

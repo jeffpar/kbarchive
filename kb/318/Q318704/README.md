@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318704: FIX: Fatal Exception Error When You Use CreateObjectEx() with Ex"
-permalink: kb/318/Q318704/
+permalink: /kb/318/Q318704/
 ---
 
 ## Q318704: FIX: Fatal Exception Error When You Use CreateObjectEx() with Ex

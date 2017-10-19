@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240271: Event 1045 When Bringing IP Address Resource Online"
-permalink: kb/240/Q240271/
+permalink: /kb/240/Q240271/
 ---
 
 ## Q240271: Event 1045 When Bringing IP Address Resource Online

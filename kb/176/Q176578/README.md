@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176578: FIX: &quot;Base table fields&quot; Error When Running a View"
-permalink: kb/176/Q176578/
+permalink: /kb/176/Q176578/
 ---
 
 ## Q176578: FIX: &quot;Base table fields&quot; Error When Running a View

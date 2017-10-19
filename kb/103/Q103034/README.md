@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103034: NT Err Msg: PNTVIDEO.DRV Not Found or Not Enough Memory"
-permalink: kb/103/Q103034/
+permalink: /kb/103/Q103034/
 ---
 
 ## Q103034: NT Err Msg: PNTVIDEO.DRV Not Found or Not Enough Memory

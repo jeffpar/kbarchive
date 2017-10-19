@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108427: WFWG Err Msg: Selected Server Cannot Be Found on the Network"
-permalink: kb/108/Q108427/
+permalink: /kb/108/Q108427/
 ---
 
 ## Q108427: WFWG Err Msg: Selected Server Cannot Be Found on the Network

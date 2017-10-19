@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186698: XWEB: Post from OWA Gives Error &quot;There were problems sending...&quot;"
-permalink: kb/186/Q186698/
+permalink: /kb/186/Q186698/
 ---
 
 ## Q186698: XWEB: Post from OWA Gives Error &quot;There were problems sending...&quot;

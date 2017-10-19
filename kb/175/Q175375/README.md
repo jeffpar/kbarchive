@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175375: New Format for Logical Unit of Work Identifier"
-permalink: kb/175/Q175375/
+permalink: /kb/175/Q175375/
 ---
 
 ## Q175375: New Format for Logical Unit of Work Identifier

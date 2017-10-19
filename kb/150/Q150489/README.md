@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150489: How to Enable the Windows 95 Welcome Dialog Box"
-permalink: kb/150/Q150489/
+permalink: /kb/150/Q150489/
 ---
 
 ## Q150489: How to Enable the Windows 95 Welcome Dialog Box

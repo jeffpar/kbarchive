@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303909: MechCommander 2.0: Known Issues"
-permalink: kb/303/Q303909/
+permalink: /kb/303/Q303909/
 ---
 
 ## Q303909: MechCommander 2.0: Known Issues

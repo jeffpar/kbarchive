@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134951: X400: Public X.25 Mail Services Can Route on PRMD"
-permalink: kb/134/Q134951/
+permalink: /kb/134/Q134951/
 ---
 
 ## Q134951: X400: Public X.25 Mail Services Can Route on PRMD

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304961: SMS: Remote Client Installation on BDC Generates Error 1326"
-permalink: kb/304/Q304961/
+permalink: /kb/304/Q304961/
 ---
 
 ## Q304961: SMS: Remote Client Installation on BDC Generates Error 1326

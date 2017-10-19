@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139270: How to Change Name Resolution Order on Windows 95 and Windows NT"
-permalink: kb/139/Q139270/
+permalink: /kb/139/Q139270/
 ---
 
 ## Q139270: How to Change Name Resolution Order on Windows 95 and Windows NT

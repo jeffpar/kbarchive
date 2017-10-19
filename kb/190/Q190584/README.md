@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190584: BUG: Some Properties or Methods Not Displayed in DataReport"
-permalink: kb/190/Q190584/
+permalink: /kb/190/Q190584/
 ---
 
 ## Q190584: BUG: Some Properties or Methods Not Displayed in DataReport

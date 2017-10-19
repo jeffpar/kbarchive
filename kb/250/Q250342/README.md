@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250342: XFOR: SNADS Connector Causes Host To Abend During Dirsync"
-permalink: kb/250/Q250342/
+permalink: /kb/250/Q250342/
 ---
 
 ## Q250342: XFOR: SNADS Connector Causes Host To Abend During Dirsync

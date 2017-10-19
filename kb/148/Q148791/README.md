@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148791: HOWTO: How to Provide Your Own DllMain in an MFC Regular DLL"
-permalink: kb/148/Q148791/
+permalink: /kb/148/Q148791/
 ---
 
 ## Q148791: HOWTO: How to Provide Your Own DllMain in an MFC Regular DLL

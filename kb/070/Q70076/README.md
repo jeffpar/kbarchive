@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70076: DOCERR: APT Location of Floating-Point Options in PWB"
-permalink: kb/070/Q70076/
+permalink: /kb/070/Q70076/
 ---
 
 ## Q70076: DOCERR: APT Location of Floating-Point Options in PWB

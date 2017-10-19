@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174967: PRB: DoDefault() in Command Window Stops Visual FoxPro"
-permalink: kb/174/Q174967/
+permalink: /kb/174/Q174967/
 ---
 
 ## Q174967: PRB: DoDefault() in Command Window Stops Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164432: Accented Greek Characters Are Not Being Created"
-permalink: kb/164/Q164432/
+permalink: /kb/164/Q164432/
 ---
 
 ## Q164432: Accented Greek Characters Are Not Being Created

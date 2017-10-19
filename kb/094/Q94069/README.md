@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94069: Microsoft TCP/IP Protocol Comparison and FAQ"
-permalink: kb/094/Q94069/
+permalink: /kb/094/Q94069/
 ---
 
 ## Q94069: Microsoft TCP/IP Protocol Comparison and FAQ

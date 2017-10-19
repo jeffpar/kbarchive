@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163210: SNA Server Does Not STSN Sequence Numbers On Positive"
-permalink: kb/163/Q163210/
+permalink: /kb/163/Q163210/
 ---
 
 ## Q163210: SNA Server Does Not STSN Sequence Numbers On Positive

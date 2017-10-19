@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120032: ProofReader Does Not &quot;Say&quot; Unknown Words or Spaces in Cells"
-permalink: kb/120/Q120032/
+permalink: /kb/120/Q120032/
 ---
 
 ## Q120032: ProofReader Does Not &quot;Say&quot; Unknown Words or Spaces in Cells

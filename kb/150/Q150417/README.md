@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150417: PRB: Read-Only SSTab Does Not Display Child Controls Properly"
-permalink: kb/150/Q150417/
+permalink: /kb/150/Q150417/
 ---
 
 ## Q150417: PRB: Read-Only SSTab Does Not Display Child Controls Properly

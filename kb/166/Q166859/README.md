@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166859: PPT: Sample VB Code to Print Current Slide from Slide Show"
-permalink: kb/166/Q166859/
+permalink: /kb/166/Q166859/
 ---
 
 ## Q166859: PPT: Sample VB Code to Print Current Slide from Slide Show

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186051: Archive Bit Is Not Set with File or Directory Rename"
-permalink: kb/186/Q186051/
+permalink: /kb/186/Q186051/
 ---
 
 ## Q186051: Archive Bit Is Not Set with File or Directory Rename

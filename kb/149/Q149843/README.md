@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149843: FP: Personal Web Server Cannot Bind to Port 80"
-permalink: kb/149/Q149843/
+permalink: /kb/149/Q149843/
 ---
 
 ## Q149843: FP: Personal Web Server Cannot Bind to Port 80

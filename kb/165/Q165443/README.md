@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165443: NDS Login Script Fails When Checking &quot;If Member Of&quot;"
-permalink: kb/165/Q165443/
+permalink: /kb/165/Q165443/
 ---
 
 ## Q165443: NDS Login Script Fails When Checking &quot;If Member Of&quot;

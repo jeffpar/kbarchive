@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164756: SMS: Unable to Determine the Current Client Version"
-permalink: kb/164/Q164756/
+permalink: /kb/164/Q164756/
 ---
 
 ## Q164756: SMS: Unable to Determine the Current Client Version

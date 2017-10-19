@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93633: HOWTO: How to Create or Modify a Database in an Application"
-permalink: kb/093/Q93633/
+permalink: /kb/093/Q93633/
 ---
 
 ## Q93633: HOWTO: How to Create or Modify a Database in an Application

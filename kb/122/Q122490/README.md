@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122490: Macintosh The Ultimate Haunted House - Memory Issues"
-permalink: kb/122/Q122490/
+permalink: /kb/122/Q122490/
 ---
 
 ## Q122490: Macintosh The Ultimate Haunted House - Memory Issues

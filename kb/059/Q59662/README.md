@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59662: Can't Arrow Between Items in Program Manager Group"
-permalink: kb/059/Q59662/
+permalink: /kb/059/Q59662/
 ---
 
 ## Q59662: Can't Arrow Between Items in Program Manager Group

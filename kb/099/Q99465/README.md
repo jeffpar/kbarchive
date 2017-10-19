@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99465: Mac RSC: MM0741: Configuring the Remote Server Connection"
-permalink: kb/099/Q99465/
+permalink: /kb/099/Q99465/
 ---
 
 ## Q99465: Mac RSC: MM0741: Configuring the Remote Server Connection

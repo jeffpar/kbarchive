@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255523: Permissions on Temp Folder Are Set Incorrectly with FlatTemp"
-permalink: kb/255/Q255523/
+permalink: /kb/255/Q255523/
 ---
 
 ## Q255523: Permissions on Temp Folder Are Set Incorrectly with FlatTemp

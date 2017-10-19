@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245646: DNS Stops Responding to UDP Name Queries"
-permalink: kb/245/Q245646/
+permalink: /kb/245/Q245646/
 ---
 
 ## Q245646: DNS Stops Responding to UDP Name Queries

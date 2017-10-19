@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273631: MM2: Vehicle Sticks in the Ground Near the San Francisco Docks"
-permalink: kb/273/Q273631/
+permalink: /kb/273/Q273631/
 ---
 
 ## Q273631: MM2: Vehicle Sticks in the Ground Near the San Francisco Docks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160678: Possible Access Violation in Win32k.sys Under High Stress"
-permalink: kb/160/Q160678/
+permalink: /kb/160/Q160678/
 ---
 
 ## Q160678: Possible Access Violation in Win32k.sys Under High Stress

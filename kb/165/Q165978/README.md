@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165978: WD97: Cannot Change Word 95 Document Text Box After Opening It"
-permalink: kb/165/Q165978/
+permalink: /kb/165/Q165978/
 ---
 
 ## Q165978: WD97: Cannot Change Word 95 Document Text Box After Opening It

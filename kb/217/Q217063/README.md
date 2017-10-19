@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217063: Terminal Server Hangs and Does Not Allow Network Connections"
-permalink: kb/217/Q217063/
+permalink: /kb/217/Q217063/
 ---
 
 ## Q217063: Terminal Server Hangs and Does Not Allow Network Connections

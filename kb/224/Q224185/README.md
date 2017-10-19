@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224185: FIX: User Defined Type in Public Function of User Control Fails"
-permalink: kb/224/Q224185/
+permalink: /kb/224/Q224185/
 ---
 
 ## Q224185: FIX: User Defined Type in Public Function of User Control Fails

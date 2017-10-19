@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153885: Push-to-Talk Key Does Not Perform Original Function"
-permalink: kb/153/Q153885/
+permalink: /kb/153/Q153885/
 ---
 
 ## Q153885: Push-to-Talk Key Does Not Perform Original Function

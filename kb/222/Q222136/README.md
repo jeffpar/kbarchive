@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222136: FIX: C0000005 Fatal Error Typing Characters In Find Dialog Box"
-permalink: kb/222/Q222136/
+permalink: /kb/222/Q222136/
 ---
 
 ## Q222136: FIX: C0000005 Fatal Error Typing Characters In Find Dialog Box

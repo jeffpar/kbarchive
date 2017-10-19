@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136710: Time Zone Change During Setup May Not Allow Password Change"
-permalink: kb/136/Q136710/
+permalink: /kb/136/Q136710/
 ---
 
 ## Q136710: Time Zone Change During Setup May Not Allow Password Change

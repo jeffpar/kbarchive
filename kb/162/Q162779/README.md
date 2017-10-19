@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162779: Control Panel Fails to Stop an Already Stopped Service"
-permalink: kb/162/Q162779/
+permalink: /kb/162/Q162779/
 ---
 
 ## Q162779: Control Panel Fails to Stop an Already Stopped Service

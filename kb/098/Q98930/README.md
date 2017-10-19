@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98930: Description of Klotski"
-permalink: kb/098/Q98930/
+permalink: /kb/098/Q98930/
 ---
 
 ## Q98930: Description of Klotski

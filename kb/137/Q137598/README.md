@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137598: PPT7: PowerPoint Presentation Conferencing Unavailable"
-permalink: kb/137/Q137598/
+permalink: /kb/137/Q137598/
 ---
 
 ## Q137598: PPT7: PowerPoint Presentation Conferencing Unavailable

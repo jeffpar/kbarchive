@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90735: BUG: PR2404 Error w/ QSORT.MAK Sample for C under MS-DOS"
-permalink: kb/090/Q90735/
+permalink: /kb/090/Q90735/
 ---
 
 ## Q90735: BUG: PR2404 Error w/ QSORT.MAK Sample for C under MS-DOS

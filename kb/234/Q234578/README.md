@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234578: Windows NT 4.0 Backported Kernel With Dynamic Pool Tag Table"
-permalink: kb/234/Q234578/
+permalink: /kb/234/Q234578/
 ---
 
 ## Q234578: Windows NT 4.0 Backported Kernel With Dynamic Pool Tag Table

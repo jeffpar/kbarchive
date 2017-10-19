@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155781: PPT: How to Create a Half-Circle in PowerPoint"
-permalink: kb/155/Q155781/
+permalink: /kb/155/Q155781/
 ---
 
 ## Q155781: PPT: How to Create a Half-Circle in PowerPoint

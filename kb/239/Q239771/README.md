@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239771: HOWTO: Return Oracle Stored Procedure Resultset to ADO Recordset"
-permalink: kb/239/Q239771/
+permalink: /kb/239/Q239771/
 ---
 
 ## Q239771: HOWTO: Return Oracle Stored Procedure Resultset to ADO Recordset

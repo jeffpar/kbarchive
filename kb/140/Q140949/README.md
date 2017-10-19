@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140949: XCLN: Faxing ASCII Messages Fails Due to Corrupted Phone #"
-permalink: kb/140/Q140949/
+permalink: /kb/140/Q140949/
 ---
 
 ## Q140949: XCLN: Faxing ASCII Messages Fails Due to Corrupted Phone #

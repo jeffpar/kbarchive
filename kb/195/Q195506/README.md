@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195506: XADM: How to Recover When the System Drive Fails"
-permalink: kb/195/Q195506/
+permalink: /kb/195/Q195506/
 ---
 
 ## Q195506: XADM: How to Recover When the System Drive Fails

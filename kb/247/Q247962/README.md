@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247962: Cannot Open 16-Bit Exchange EFD Form Using Outlook 97 in TSE"
-permalink: kb/247/Q247962/
+permalink: /kb/247/Q247962/
 ---
 
 ## Q247962: Cannot Open 16-Bit Exchange EFD Form Using Outlook 97 in TSE

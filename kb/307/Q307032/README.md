@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307032: Encarta 2001: Speech Incompatibility Warning During Installation"
-permalink: kb/307/Q307032/
+permalink: /kb/307/Q307032/
 ---
 
 ## Q307032: Encarta 2001: Speech Incompatibility Warning During Installation

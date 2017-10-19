@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284279: INFO: Finding the Index for MSDN Subscriptions"
-permalink: kb/284/Q284279/
+permalink: /kb/284/Q284279/
 ---
 
 ## Q284279: INFO: Finding the Index for MSDN Subscriptions

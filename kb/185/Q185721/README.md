@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185721: Faxing from Win95 Prompts for Intervention or Has Blank Status"
-permalink: kb/185/Q185721/
+permalink: /kb/185/Q185721/
 ---
 
 ## Q185721: Faxing from Win95 Prompts for Intervention or Has Blank Status

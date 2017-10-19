@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198474: XWEB:Jscript Errors Refreshing Appointment in Outlook Web Access"
-permalink: kb/198/Q198474/
+permalink: /kb/198/Q198474/
 ---
 
 ## Q198474: XWEB:Jscript Errors Refreshing Appointment in Outlook Web Access

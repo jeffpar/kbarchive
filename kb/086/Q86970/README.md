@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86970: X400: Testing X.25 Line/Null Modem Connection Between 2 MTAs"
-permalink: kb/086/Q86970/
+permalink: /kb/086/Q86970/
 ---
 
 ## Q86970: X400: Testing X.25 Line/Null Modem Connection Between 2 MTAs

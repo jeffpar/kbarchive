@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q182267: [MC_]ALLOCATE May Return Sense 00000805 Instead of 08050000"
-permalink: kb/182/Q182267/
+title: "Q182267: &#91;MC_&#93;ALLOCATE May Return Sense 00000805 Instead of 08050000"
+permalink: /kb/182/Q182267/
 ---
 
-## Q182267: [MC_]ALLOCATE May Return Sense 00000805 Instead of 08050000
+## Q182267: &#91;MC_&#93;ALLOCATE May Return Sense 00000805 Instead of 08050000
 
 	Article: Q182267
 	Product(s): Microsoft SNA Server

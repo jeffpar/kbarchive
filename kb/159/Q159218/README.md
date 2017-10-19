@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159218: Proper Backup of Open Files Using Ntbackup"
-permalink: kb/159/Q159218/
+permalink: /kb/159/Q159218/
 ---
 
 ## Q159218: Proper Backup of Open Files Using Ntbackup

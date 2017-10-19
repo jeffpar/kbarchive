@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80255: PC Gen: Contents of Modem Script File DEFAULT.MDM"
-permalink: kb/080/Q80255/
+permalink: /kb/080/Q80255/
 ---
 
 ## Q80255: PC Gen: Contents of Modem Script File DEFAULT.MDM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114119: PC Gen: Application Notes and Replacement Files for PC Mail"
-permalink: kb/114/Q114119/
+permalink: /kb/114/Q114119/
 ---
 
 ## Q114119: PC Gen: Application Notes and Replacement Files for PC Mail

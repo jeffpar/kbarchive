@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152772: Mapiform.exe How to Send Mail Messages with MAPI"
-permalink: kb/152/Q152772/
+permalink: /kb/152/Q152772/
 ---
 
 ## Q152772: Mapiform.exe How to Send Mail Messages with MAPI

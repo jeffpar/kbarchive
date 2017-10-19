@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118461: Ancient Lands: TROUBLE.TXT Contents"
-permalink: kb/118/Q118461/
+permalink: /kb/118/Q118461/
 ---
 
 ## Q118461: Ancient Lands: TROUBLE.TXT Contents

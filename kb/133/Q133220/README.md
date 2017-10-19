@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133220: Setup Does Not Recognize Bootcon Multiple Configurations"
-permalink: kb/133/Q133220/
+permalink: /kb/133/Q133220/
 ---
 
 ## Q133220: Setup Does Not Recognize Bootcon Multiple Configurations

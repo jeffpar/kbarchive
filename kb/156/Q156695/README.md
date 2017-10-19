@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156695: User Profiles not Being Mapped to Local and Domain Profiles"
-permalink: kb/156/Q156695/
+permalink: /kb/156/Q156695/
 ---
 
 ## Q156695: User Profiles not Being Mapped to Local and Domain Profiles

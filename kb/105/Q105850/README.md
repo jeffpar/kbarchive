@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105850: FoxBASE+/Mac Most Frequently Asked Questions and Answers"
-permalink: kb/105/Q105850/
+permalink: /kb/105/Q105850/
 ---
 
 ## Q105850: FoxBASE+/Mac Most Frequently Asked Questions and Answers

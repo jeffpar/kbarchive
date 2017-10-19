@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246302: XCON: MTA Stops When Receiving Message from Foreign MTA"
-permalink: kb/246/Q246302/
+permalink: /kb/246/Q246302/
 ---
 
 ## Q246302: XCON: MTA Stops When Receiving Message from Foreign MTA

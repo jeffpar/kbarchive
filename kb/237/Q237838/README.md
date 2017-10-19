@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237838: XADM: Exchange Corrupts JPN cc:Mail Subject on Way to Internet"
-permalink: kb/237/Q237838/
+permalink: /kb/237/Q237838/
 ---
 
 ## Q237838: XADM: Exchange Corrupts JPN cc:Mail Subject on Way to Internet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104451: PPT: Copy Picture from Excel Automatically Paste Links"
-permalink: kb/104/Q104451/
+permalink: /kb/104/Q104451/
 ---
 
 ## Q104451: PPT: Copy Picture from Excel Automatically Paste Links

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106098: PC Adm: Err Msg: Failure to Read Record"
-permalink: kb/106/Q106098/
+permalink: /kb/106/Q106098/
 ---
 
 ## Q106098: PC Adm: Err Msg: Failure to Read Record

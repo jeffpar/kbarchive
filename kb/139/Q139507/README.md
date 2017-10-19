@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139507: SNA Server Twinax Connection to IBM 5494 Traps with 0x00000050"
-permalink: kb/139/Q139507/
+permalink: /kb/139/Q139507/
 ---
 
 ## Q139507: SNA Server Twinax Connection to IBM 5494 Traps with 0x00000050

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194365: SNA Server Access Violation in DestroyUser()"
-permalink: kb/194/Q194365/
+permalink: /kb/194/Q194365/
 ---
 
 ## Q194365: SNA Server Access Violation in DestroyUser()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142308: WINS Proxy Button is Unavailable"
-permalink: kb/142/Q142308/
+permalink: /kb/142/Q142308/
 ---
 
 ## Q142308: WINS Proxy Button is Unavailable

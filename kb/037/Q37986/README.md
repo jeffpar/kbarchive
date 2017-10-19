@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37986: &quot;Cannot create PIF File&quot; Message when No Directory Exists"
-permalink: kb/037/Q37986/
+permalink: /kb/037/Q37986/
 ---
 
 ## Q37986: &quot;Cannot create PIF File&quot; Message when No Directory Exists

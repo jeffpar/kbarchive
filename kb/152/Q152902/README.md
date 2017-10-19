@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152902: XADM: Continuous Attempts to Publish Free/Busy Information"
-permalink: kb/152/Q152902/
+permalink: /kb/152/Q152902/
 ---
 
 ## Q152902: XADM: Continuous Attempts to Publish Free/Busy Information

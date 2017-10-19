@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128727: How to Copy an Existing Class Without a Subclass"
-permalink: kb/128/Q128727/
+permalink: /kb/128/Q128727/
 ---
 
 ## Q128727: How to Copy an Existing Class Without a Subclass

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80854: Write Does Not Make Backups When Creating Files"
-permalink: kb/080/Q80854/
+permalink: /kb/080/Q80854/
 ---
 
 ## Q80854: Write Does Not Make Backups When Creating Files

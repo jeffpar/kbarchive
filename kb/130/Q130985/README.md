@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130985: Server Properties Returns Inconsistent Number of Connections"
-permalink: kb/130/Q130985/
+permalink: /kb/130/Q130985/
 ---
 
 ## Q130985: Server Properties Returns Inconsistent Number of Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174849: Fly-By-Videos in Golf 3.0 Are Purple"
-permalink: kb/174/Q174849/
+permalink: /kb/174/Q174849/
 ---
 
 ## Q174849: Fly-By-Videos in Golf 3.0 Are Purple

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112339: BUG: Opening More Than 61 Files in a FORTRAN Windows NT App"
-permalink: kb/112/Q112339/
+permalink: /kb/112/Q112339/
 ---
 
 ## Q112339: BUG: Opening More Than 61 Files in a FORTRAN Windows NT App

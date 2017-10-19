@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183600: AOE Err Msg: DirectX 5.0 Is Required to Run This Game"
-permalink: kb/183/Q183600/
+permalink: /kb/183/Q183600/
 ---
 
 ## Q183600: AOE Err Msg: DirectX 5.0 Is Required to Run This Game

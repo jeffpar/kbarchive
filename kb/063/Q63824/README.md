@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63824: 386 Enhanced-Mode Windows on 2 MB 386 Computers"
-permalink: kb/063/Q63824/
+permalink: /kb/063/Q63824/
 ---
 
 ## Q63824: 386 Enhanced-Mode Windows on 2 MB 386 Computers

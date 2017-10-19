@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269808: MSB: Incomplete Printout or You Cannot Print from the Program"
-permalink: kb/269/Q269808/
+permalink: /kb/269/Q269808/
 ---
 
 ## Q269808: MSB: Incomplete Printout or You Cannot Print from the Program

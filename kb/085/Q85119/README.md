@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85119: Using Zenith TurbosPorts with Windows"
-permalink: kb/085/Q85119/
+permalink: /kb/085/Q85119/
 ---
 
 ## Q85119: Using Zenith TurbosPorts with Windows

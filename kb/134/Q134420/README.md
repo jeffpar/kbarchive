@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134420: PRB: App Studio Displays Incorrect Colors for Bitmaps"
-permalink: kb/134/Q134420/
+permalink: /kb/134/Q134420/
 ---
 
 ## Q134420: PRB: App Studio Displays Incorrect Colors for Bitmaps

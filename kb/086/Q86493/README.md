@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86493: Printing with the Xerox 3700 and Windows 3.1"
-permalink: kb/086/Q86493/
+permalink: /kb/086/Q86493/
 ---
 
 ## Q86493: Printing with the Xerox 3700 and Windows 3.1

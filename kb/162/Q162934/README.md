@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162934: ODE97: Setup Wizard Fails to Register New File Name Value"
-permalink: kb/162/Q162934/
+permalink: /kb/162/Q162934/
 ---
 
 ## Q162934: ODE97: Setup Wizard Fails to Register New File Name Value

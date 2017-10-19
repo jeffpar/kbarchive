@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130540: System Management Server Setup Limits Path of Devices"
-permalink: kb/130/Q130540/
+permalink: /kb/130/Q130540/
 ---
 
 ## Q130540: System Management Server Setup Limits Path of Devices

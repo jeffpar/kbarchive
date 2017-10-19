@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277649: DirectX: Screen Flickers When You Start a Program"
-permalink: kb/277/Q277649/
+permalink: /kb/277/Q277649/
 ---
 
 ## Q277649: DirectX: Screen Flickers When You Start a Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121270: WGAO Error 2116: The Device or Directory Does Not Exist"
-permalink: kb/121/Q121270/
+permalink: /kb/121/Q121270/
 ---
 
 ## Q121270: WGAO Error 2116: The Device or Directory Does Not Exist

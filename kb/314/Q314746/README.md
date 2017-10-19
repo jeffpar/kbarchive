@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314746: BUG: Access Violation Occurs in ADO When You Run Executable File"
-permalink: kb/314/Q314746/
+permalink: /kb/314/Q314746/
 ---
 
 ## Q314746: BUG: Access Violation Occurs in ADO When You Run Executable File

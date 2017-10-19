@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194203: ASCII and Hex Representation of NetBIOS Names"
-permalink: kb/194/Q194203/
+permalink: /kb/194/Q194203/
 ---
 
 ## Q194203: ASCII and Hex Representation of NetBIOS Names

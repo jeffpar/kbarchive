@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186794: Remote Admin with MMC Causes Error: Unable to Enumerate Files"
-permalink: kb/186/Q186794/
+permalink: /kb/186/Q186794/
 ---
 
 ## Q186794: Remote Admin with MMC Causes Error: Unable to Enumerate Files

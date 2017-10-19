@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240423: RPC Client Does Not Respond After SAP Name Resolution"
-permalink: kb/240/Q240423/
+permalink: /kb/240/Q240423/
 ---
 
 ## Q240423: RPC Client Does Not Respond After SAP Name Resolution

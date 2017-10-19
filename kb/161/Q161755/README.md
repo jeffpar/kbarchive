@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161755: XCLN: Message Date Displays as 12/65202/96"
-permalink: kb/161/Q161755/
+permalink: /kb/161/Q161755/
 ---
 
 ## Q161755: XCLN: Message Date Displays as 12/65202/96

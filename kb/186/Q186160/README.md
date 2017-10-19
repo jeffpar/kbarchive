@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186160: WD97: Invalid Page Fault Using Replace Dialog"
-permalink: kb/186/Q186160/
+permalink: /kb/186/Q186160/
 ---
 
 ## Q186160: WD97: Invalid Page Fault Using Replace Dialog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165998: Cold Fusion Applications Bypass Security"
-permalink: kb/165/Q165998/
+permalink: /kb/165/Q165998/
 ---
 
 ## Q165998: Cold Fusion Applications Bypass Security

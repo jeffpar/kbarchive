@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129425: Form Debugging Tips"
-permalink: kb/129/Q129425/
+permalink: /kb/129/Q129425/
 ---
 
 ## Q129425: Form Debugging Tips

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152320: XCLN: How to Display the Secondary Mouse Menu"
-permalink: kb/152/Q152320/
+permalink: /kb/152/Q152320/
 ---
 
 ## Q152320: XCLN: How to Display the Secondary Mouse Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104058: PC WSPlus: Date Bold When Viewing Other's Appointment Book"
-permalink: kb/104/Q104058/
+permalink: /kb/104/Q104058/
 ---
 
 ## Q104058: PC WSPlus: Date Bold When Viewing Other's Appointment Book

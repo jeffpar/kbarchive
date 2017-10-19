@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124307: Installing Windows NT on Large IDE Hard Disk Drives"
-permalink: kb/124/Q124307/
+permalink: /kb/124/Q124307/
 ---
 
 ## Q124307: Installing Windows NT on Large IDE Hard Disk Drives

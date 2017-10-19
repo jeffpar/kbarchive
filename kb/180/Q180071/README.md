@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180071: FILE: Msvbvm50.exe Installs Visual Basic 5.0 Run-Time Files"
-permalink: kb/180/Q180071/
+permalink: /kb/180/Q180071/
 ---
 
 ## Q180071: FILE: Msvbvm50.exe Installs Visual Basic 5.0 Run-Time Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110762: PC Gen: README.TXT: Mail 3.2 Serializer Utility"
-permalink: kb/110/Q110762/
+permalink: /kb/110/Q110762/
 ---
 
 ## Q110762: PC Gen: README.TXT: Mail 3.2 Serializer Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86633: MS-DOS Typematic Rate Changes After Running Windows"
-permalink: kb/086/Q86633/
+permalink: /kb/086/Q86633/
 ---
 
 ## Q86633: MS-DOS Typematic Rate Changes After Running Windows

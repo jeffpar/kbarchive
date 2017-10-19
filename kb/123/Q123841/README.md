@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123841: HOWTO: Create a FORTRAN DLL and Call It from Visual Basic"
-permalink: kb/123/Q123841/
+permalink: /kb/123/Q123841/
 ---
 
 ## Q123841: HOWTO: Create a FORTRAN DLL and Call It from Visual Basic

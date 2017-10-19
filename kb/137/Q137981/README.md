@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137981: Cannot Print from Lotus Agenda in Windows 95"
-permalink: kb/137/Q137981/
+permalink: /kb/137/Q137981/
 ---
 
 ## Q137981: Cannot Print from Lotus Agenda in Windows 95

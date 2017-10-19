@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83364: FlshEdit.exe Demonstrates Flashing an Edit Control"
-permalink: kb/083/Q83364/
+permalink: /kb/083/Q83364/
 ---
 
 ## Q83364: FlshEdit.exe Demonstrates Flashing an Edit Control

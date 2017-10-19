@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231947: How to Modify Network Monitor Capture Buffer Settings"
-permalink: kb/231/Q231947/
+permalink: /kb/231/Q231947/
 ---
 
 ## Q231947: How to Modify Network Monitor Capture Buffer Settings

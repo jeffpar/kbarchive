@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98178: DoubleSpace Setup Hangs During First Reboot"
-permalink: kb/098/Q98178/
+permalink: /kb/098/Q98178/
 ---
 
 ## Q98178: DoubleSpace Setup Hangs During First Reboot

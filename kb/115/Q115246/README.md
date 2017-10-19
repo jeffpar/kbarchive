@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115246: Mac MSPlus: Schedule+ Does Not Propagate Old Data"
-permalink: kb/115/Q115246/
+permalink: /kb/115/Q115246/
 ---
 
 ## Q115246: Mac MSPlus: Schedule+ Does Not Propagate Old Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298686: SMS: Resource Explorer Displays IP Addresses Not Subnet Masks"
-permalink: kb/298/Q298686/
+permalink: /kb/298/Q298686/
 ---
 
 ## Q298686: SMS: Resource Explorer Displays IP Addresses Not Subnet Masks

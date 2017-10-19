@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162127: Error: Incorrect Version on File D:&#92;Data&#92;Data&#92;Base&#92;Weapons"
-permalink: kb/162/Q162127/
+permalink: /kb/162/Q162127/
 ---
 
 ## Q162127: Error: Incorrect Version on File D:&#92;Data&#92;Data&#92;Base&#92;Weapons

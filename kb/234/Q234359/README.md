@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234359: Structured Storage Code Can Go into an Infinite Loop"
-permalink: kb/234/Q234359/
+permalink: /kb/234/Q234359/
 ---
 
 ## Q234359: Structured Storage Code Can Go into an Infinite Loop

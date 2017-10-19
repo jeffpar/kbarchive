@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179982: Windows NT 4.0 Support for Multicast TCP/IP Packets"
-permalink: kb/179/Q179982/
+permalink: /kb/179/Q179982/
 ---
 
 ## Q179982: Windows NT 4.0 Support for Multicast TCP/IP Packets

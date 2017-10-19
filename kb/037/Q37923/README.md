@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37923: Mac DOS: Running TOPS Network Software and the Notifier"
-permalink: kb/037/Q37923/
+permalink: /kb/037/Q37923/
 ---
 
 ## Q37923: Mac DOS: Running TOPS Network Software and the Notifier

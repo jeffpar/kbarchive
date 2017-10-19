@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221393: XADM: Exchange 5.5 SP Setup Incomplete on Cluster Server"
-permalink: kb/221/Q221393/
+permalink: /kb/221/Q221393/
 ---
 
 ## Q221393: XADM: Exchange 5.5 SP Setup Incomplete on Cluster Server

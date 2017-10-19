@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184017: Administrators Can Display Contents of Service Account Passwords"
-permalink: kb/184/Q184017/
+permalink: /kb/184/Q184017/
 ---
 
 ## Q184017: Administrators Can Display Contents of Service Account Passwords

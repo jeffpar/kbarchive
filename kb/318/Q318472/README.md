@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318472: Cannot obtain an IP address from a DHCP server"
-permalink: kb/318/Q318472/
+permalink: /kb/318/Q318472/
 ---
 
 ## Q318472: Cannot obtain an IP address from a DHCP server

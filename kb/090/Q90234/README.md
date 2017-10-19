@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90234: 3Com Etherlink Adapters Not Responding"
-permalink: kb/090/Q90234/
+permalink: /kb/090/Q90234/
 ---
 
 ## Q90234: 3Com Etherlink Adapters Not Responding

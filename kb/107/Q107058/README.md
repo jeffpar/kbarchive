@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107058: OEM Modems May Be Supported by Windows for Workgroups"
-permalink: kb/107/Q107058/
+permalink: /kb/107/Q107058/
 ---
 
 ## Q107058: OEM Modems May Be Supported by Windows for Workgroups

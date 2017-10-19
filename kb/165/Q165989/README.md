@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165989: GetPeerName() Returns WSAENOTCONN After Select() Returns Success"
-permalink: kb/165/Q165989/
+permalink: /kb/165/Q165989/
 ---
 
 ## Q165989: GetPeerName() Returns WSAENOTCONN After Select() Returns Success

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65669: Microsoft Word's Use of ALT+SPACEBAR Under Windows"
-permalink: kb/065/Q65669/
+permalink: /kb/065/Q65669/
 ---
 
 ## Q65669: Microsoft Word's Use of ALT+SPACEBAR Under Windows

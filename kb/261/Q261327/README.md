@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261327: How to Add an Additional Parser to Network Monitor"
-permalink: kb/261/Q261327/
+permalink: /kb/261/Q261327/
 ---
 
 ## Q261327: How to Add an Additional Parser to Network Monitor

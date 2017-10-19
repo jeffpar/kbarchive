@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173679: MSN Sign In Screen Does Not Appear"
-permalink: kb/173/Q173679/
+permalink: /kb/173/Q173679/
 ---
 
 ## Q173679: MSN Sign In Screen Does Not Appear

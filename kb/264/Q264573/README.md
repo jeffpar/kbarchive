@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264573: IIS 5.0 May Cause an Access Violation in W3svc.dll Using DAV"
-permalink: kb/264/Q264573/
+permalink: /kb/264/Q264573/
 ---
 
 ## Q264573: IIS 5.0 May Cause an Access Violation in W3svc.dll Using DAV

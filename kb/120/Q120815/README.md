@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120815: Modified Windows Sound System Setup with Adaptec 1570 &amp; 1572"
-permalink: kb/120/Q120815/
+permalink: /kb/120/Q120815/
 ---
 
 ## Q120815: Modified Windows Sound System Setup with Adaptec 1570 &amp; 1572

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275030: XCON: Exchange Server MTA Does Not Process Accented Characters"
-permalink: kb/275/Q275030/
+permalink: /kb/275/Q275030/
 ---
 
 ## Q275030: XCON: Exchange Server MTA Does Not Process Accented Characters

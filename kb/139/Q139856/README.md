@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139856: XCLN: Cannot Open or Print Multiple Attachments in Message"
-permalink: kb/139/Q139856/
+permalink: /kb/139/Q139856/
 ---
 
 ## Q139856: XCLN: Cannot Open or Print Multiple Attachments in Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123215: Backup Incorrectly Sets Archive Bit on WFWG 3.11 Files"
-permalink: kb/123/Q123215/
+permalink: /kb/123/Q123215/
 ---
 
 ## Q123215: Backup Incorrectly Sets Archive Bit on WFWG 3.11 Files

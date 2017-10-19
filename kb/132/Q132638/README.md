@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132638: Help Window in Carbon Copy Setup May Not Be Visible"
-permalink: kb/132/Q132638/
+permalink: /kb/132/Q132638/
 ---
 
 ## Q132638: Help Window in Carbon Copy Setup May Not Be Visible

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165974: PRB: Cannot Install CSNW with &quot;Attended=Yes&quot; in Unattend.txt Fil"
-permalink: kb/165/Q165974/
+permalink: /kb/165/Q165974/
 ---
 
 ## Q165974: PRB: Cannot Install CSNW with &quot;Attended=Yes&quot; in Unattend.txt Fil

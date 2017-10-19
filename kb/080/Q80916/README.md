@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80916: MathType Installation Changes to WIN.INI and AUTOEXEC.BAT"
-permalink: kb/080/Q80916/
+permalink: /kb/080/Q80916/
 ---
 
 ## Q80916: MathType Installation Changes to WIN.INI and AUTOEXEC.BAT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128783: RAS Clients Unable to Connect to NetWare Servers"
-permalink: kb/128/Q128783/
+permalink: /kb/128/Q128783/
 ---
 
 ## Q128783: RAS Clients Unable to Connect to NetWare Servers

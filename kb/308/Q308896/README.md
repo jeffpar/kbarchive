@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308896: PRB: Error in Ss.ini Remotely Accessing Default-Location DB"
-permalink: kb/308/Q308896/
+permalink: /kb/308/Q308896/
 ---
 
 ## Q308896: PRB: Error in Ss.ini Remotely Accessing Default-Location DB

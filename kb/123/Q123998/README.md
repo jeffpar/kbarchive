@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123998: Windows 95 Err Msg: Not Enough Storage to Complete..."
-permalink: kb/123/Q123998/
+permalink: /kb/123/Q123998/
 ---
 
 ## Q123998: Windows 95 Err Msg: Not Enough Storage to Complete...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196025: DOC: Incorrect Syntax for TAG() and DESCENDING() Commands"
-permalink: kb/196/Q196025/
+permalink: /kb/196/Q196025/
 ---
 
 ## Q196025: DOC: Incorrect Syntax for TAG() and DESCENDING() Commands

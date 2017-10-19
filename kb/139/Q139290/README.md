@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139290: PRB: 32-Bit Cursor Library Creates Temp Files in Current Dir"
-permalink: kb/139/Q139290/
+permalink: /kb/139/Q139290/
 ---
 
 ## Q139290: PRB: 32-Bit Cursor Library Creates Temp Files in Current Dir

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294974: Password Synchronization to AS/400 Fails with Events 1506 &amp; 6005"
-permalink: kb/294/Q294974/
+permalink: /kb/294/Q294974/
 ---
 
 ## Q294974: Password Synchronization to AS/400 Fails with Events 1506 &amp; 6005

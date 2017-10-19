@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103721: FIX: Prefix Bytes Are Order-Dependent in CodeView 4.0x"
-permalink: kb/103/Q103721/
+permalink: /kb/103/Q103721/
 ---
 
 ## Q103721: FIX: Prefix Bytes Are Order-Dependent in CodeView 4.0x

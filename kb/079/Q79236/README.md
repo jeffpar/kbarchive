@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79236: Hydro Plus/Prolock Program Hangs with DOS=HIGH"
-permalink: kb/079/Q79236/
+permalink: /kb/079/Q79236/
 ---
 
 ## Q79236: Hydro Plus/Prolock Program Hangs with DOS=HIGH

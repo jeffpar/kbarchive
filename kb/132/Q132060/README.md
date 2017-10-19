@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132060: SMTP: SMTP Gateway in Small, Medium, and Large Organizations"
-permalink: kb/132/Q132060/
+permalink: /kb/132/Q132060/
 ---
 
 ## Q132060: SMTP: SMTP Gateway in Small, Medium, and Large Organizations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171406: WD97: How to Disable the Use of Universal Naming Convention (UNC"
-permalink: kb/171/Q171406/
+permalink: /kb/171/Q171406/
 ---
 
 ## Q171406: WD97: How to Disable the Use of Universal Naming Convention (UNC

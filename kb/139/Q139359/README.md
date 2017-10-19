@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139359: INFO: Readme.wri: Section 2, General Notes and Tips"
-permalink: kb/139/Q139359/
+permalink: /kb/139/Q139359/
 ---
 
 ## Q139359: INFO: Readme.wri: Section 2, General Notes and Tips

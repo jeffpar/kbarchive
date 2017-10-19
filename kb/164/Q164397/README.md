@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164397: Stop 0x0000000A in TCP/IP Due to AFD Sending Invalid MDL"
-permalink: kb/164/Q164397/
+permalink: /kb/164/Q164397/
 ---
 
 ## Q164397: Stop 0x0000000A in TCP/IP Due to AFD Sending Invalid MDL

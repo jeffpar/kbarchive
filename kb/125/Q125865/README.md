@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125865: Creative Writer: Canon BubbleJet Prints Borders Incorrectly"
-permalink: kb/125/Q125865/
+permalink: /kb/125/Q125865/
 ---
 
 ## Q125865: Creative Writer: Canon BubbleJet Prints Borders Incorrectly

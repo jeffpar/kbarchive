@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136410: BBS Hangs When Show All Messages Option Turned Off"
-permalink: kb/136/Q136410/
+permalink: /kb/136/Q136410/
 ---
 
 ## Q136410: BBS Hangs When Show All Messages Option Turned Off

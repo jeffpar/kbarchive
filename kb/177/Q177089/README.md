@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177089: BUG: Startup Position Changes in SDI if Form Has a Menu"
-permalink: kb/177/Q177089/
+permalink: /kb/177/Q177089/
 ---
 
 ## Q177089: BUG: Startup Position Changes in SDI if Form Has a Menu

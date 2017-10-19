@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92369: PC Gen: Novell NetWare and NCP Calls -- General Information"
-permalink: kb/092/Q92369/
+permalink: /kb/092/Q92369/
 ---
 
 ## Q92369: PC Gen: Novell NetWare and NCP Calls -- General Information

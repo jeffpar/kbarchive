@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148745: PRB: DAO Can't Be Used in an ISAPI DLL"
-permalink: kb/148/Q148745/
+permalink: /kb/148/Q148745/
 ---
 
 ## Q148745: PRB: DAO Can't Be Used in an ISAPI DLL

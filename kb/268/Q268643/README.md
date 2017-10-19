@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268643: XFOR: Internet Mail Service Does not Start with Event 4003, 4020"
-permalink: kb/268/Q268643/
+permalink: /kb/268/Q268643/
 ---
 
 ## Q268643: XFOR: Internet Mail Service Does not Start with Event 4003, 4020

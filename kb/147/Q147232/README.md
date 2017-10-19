@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147232: Route Change Command Does Not Indicate Error"
-permalink: kb/147/Q147232/
+permalink: /kb/147/Q147232/
 ---
 
 ## Q147232: Route Change Command Does Not Indicate Error

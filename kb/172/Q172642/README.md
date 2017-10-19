@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172642: Media Player Hangs When Window Is Resized"
-permalink: kb/172/Q172642/
+permalink: /kb/172/Q172642/
 ---
 
 ## Q172642: Media Player Hangs When Window Is Resized

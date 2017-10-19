@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99542: Printing Reports Created w/ Question Marks in FP for Win"
-permalink: kb/099/Q99542/
+permalink: /kb/099/Q99542/
 ---
 
 ## Q99542: Printing Reports Created w/ Question Marks in FP for Win

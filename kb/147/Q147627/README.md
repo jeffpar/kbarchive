@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147627: Cannot Use Microsoft Voice After Clicking Advanced Settings"
-permalink: kb/147/Q147627/
+permalink: /kb/147/Q147627/
 ---
 
 ## Q147627: Cannot Use Microsoft Voice After Clicking Advanced Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215485: Discussion Web in FrontPage May Cause IIS to Stop Responding"
-permalink: kb/215/Q215485/
+permalink: /kb/215/Q215485/
 ---
 
 ## Q215485: Discussion Web in FrontPage May Cause IIS to Stop Responding

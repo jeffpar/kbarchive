@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149302: If No Session Configured, TN3270 Client Error Can Be Misleading"
-permalink: kb/149/Q149302/
+permalink: /kb/149/Q149302/
 ---
 
 ## Q149302: If No Session Configured, TN3270 Client Error Can Be Misleading

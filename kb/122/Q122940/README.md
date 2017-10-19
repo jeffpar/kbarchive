@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122940: System Stops Responding During Shutdown and Restart Process"
-permalink: kb/122/Q122940/
+permalink: /kb/122/Q122940/
 ---
 
 ## Q122940: System Stops Responding During Shutdown and Restart Process

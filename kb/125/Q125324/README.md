@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125324: INF: Semantics of SELECT DISTINCT with ORDER BY"
-permalink: kb/125/Q125324/
+permalink: /kb/125/Q125324/
 ---
 
 ## Q125324: INF: Semantics of SELECT DISTINCT with ORDER BY

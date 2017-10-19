@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197058: XCON: NDRs Can Be Lost if a More Restrictive Size Limit is Set"
-permalink: kb/197/Q197058/
+permalink: /kb/197/Q197058/
 ---
 
 ## Q197058: XCON: NDRs Can Be Lost if a More Restrictive Size Limit is Set

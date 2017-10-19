@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112519: PRINTSTATUS() Always Returns .T. in FoxPro"
-permalink: kb/112/Q112519/
+permalink: /kb/112/Q112519/
 ---
 
 ## Q112519: PRINTSTATUS() Always Returns .T. in FoxPro

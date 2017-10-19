@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164557: WD97: Email Profile Argument Does Not Exist For Document Routing"
-permalink: kb/164/Q164557/
+permalink: /kb/164/Q164557/
 ---
 
 ## Q164557: WD97: Email Profile Argument Does Not Exist For Document Routing

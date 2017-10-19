@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161569: Event ID 5711 Fills Event Log on Primary Domain Controller"
-permalink: kb/161/Q161569/
+permalink: /kb/161/Q161569/
 ---
 
 ## Q161569: Event ID 5711 Fills Event Log on Primary Domain Controller

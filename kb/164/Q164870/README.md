@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164870: HOWTO: Apply, Remove a Filter from Form's DataEnvironment"
-permalink: kb/164/Q164870/
+permalink: /kb/164/Q164870/
 ---
 
 ## Q164870: HOWTO: Apply, Remove a Filter from Form's DataEnvironment

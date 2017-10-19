@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155427: Errors 2114 or (9 - 2114) Using Windows NT Diagnostics"
-permalink: kb/155/Q155427/
+permalink: /kb/155/Q155427/
 ---
 
 ## Q155427: Errors 2114 or (9 - 2114) Using Windows NT Diagnostics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194192: XADM: POP3 Client's Reply Message to Exchange User is NDRd"
-permalink: kb/194/Q194192/
+permalink: /kb/194/Q194192/
 ---
 
 ## Q194192: XADM: POP3 Client's Reply Message to Exchange User is NDRd

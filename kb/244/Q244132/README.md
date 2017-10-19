@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244132: DNS Server Logs Event 453 or 7053 (Sendto Function Failed)"
-permalink: kb/244/Q244132/
+permalink: /kb/244/Q244132/
 ---
 
 ## Q244132: DNS Server Logs Event 453 or 7053 (Sendto Function Failed)

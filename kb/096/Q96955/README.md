@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96955: RENAME Drops Character If Wildcard Is Used"
-permalink: kb/096/Q96955/
+permalink: /kb/096/Q96955/
 ---
 
 ## Q96955: RENAME Drops Character If Wildcard Is Used

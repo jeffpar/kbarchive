@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169461: Access Violation in Dns.exe Caused by Malicious Telnet Attack"
-permalink: kb/169/Q169461/
+permalink: /kb/169/Q169461/
 ---
 
 ## Q169461: Access Violation in Dns.exe Caused by Malicious Telnet Attack

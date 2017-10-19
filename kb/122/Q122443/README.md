@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122443: FIX: C2664 When Converting Type Defined Array to Const Array"
-permalink: kb/122/Q122443/
+permalink: /kb/122/Q122443/
 ---
 
 ## Q122443: FIX: C2664 When Converting Type Defined Array to Const Array

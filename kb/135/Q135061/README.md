@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135061: Regeneration of a Stripe Set With Parity Disk Fails"
-permalink: kb/135/Q135061/
+permalink: /kb/135/Q135061/
 ---
 
 ## Q135061: Regeneration of a Stripe Set With Parity Disk Fails

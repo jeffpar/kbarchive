@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249017: Print Job May Stop Responding and Event ID 2004 May Be Displayed"
-permalink: kb/249/Q249017/
+permalink: /kb/249/Q249017/
 ---
 
 ## Q249017: Print Job May Stop Responding and Event ID 2004 May Be Displayed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104394: Dynamic Data Exchange Interface for Replacement Shells"
-permalink: kb/104/Q104394/
+permalink: /kb/104/Q104394/
 ---
 
 ## Q104394: Dynamic Data Exchange Interface for Replacement Shells

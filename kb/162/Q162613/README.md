@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162613: HOWTO: Manipulate Icons in the System Tray with Visual Basic"
-permalink: kb/162/Q162613/
+permalink: /kb/162/Q162613/
 ---
 
 ## Q162613: HOWTO: Manipulate Icons in the System Tray with Visual Basic

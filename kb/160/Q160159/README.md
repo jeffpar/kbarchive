@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160159: Win/Mac Encarta: What's the Second Disc For?"
-permalink: kb/160/Q160159/
+permalink: /kb/160/Q160159/
 ---
 
 ## Q160159: Win/Mac Encarta: What's the Second Disc For?

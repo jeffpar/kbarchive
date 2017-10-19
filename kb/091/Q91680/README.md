@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91680: Keyboard Control in Calculator When Pasting Formulas"
-permalink: kb/091/Q91680/
+permalink: /kb/091/Q91680/
 ---
 
 ## Q91680: Keyboard Control in Calculator When Pasting Formulas

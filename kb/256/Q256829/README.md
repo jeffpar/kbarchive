@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256829: MapPoint 2001: Add-in Modules Are Not Displayed on the Screen"
-permalink: kb/256/Q256829/
+permalink: /kb/256/Q256829/
 ---
 
 ## Q256829: MapPoint 2001: Add-in Modules Are Not Displayed on the Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193405: Err Msg: Event ID 7024: The Task Scheduler Service Terminated..."
-permalink: kb/193/Q193405/
+permalink: /kb/193/Q193405/
 ---
 
 ## Q193405: Err Msg: Event ID 7024: The Task Scheduler Service Terminated...

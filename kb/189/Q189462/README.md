@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189462: Only Partial Pages Displayed or Error &quot;The Connection Was Reset&quot;"
-permalink: kb/189/Q189462/
+permalink: /kb/189/Q189462/
 ---
 
 ## Q189462: Only Partial Pages Displayed or Error &quot;The Connection Was Reset&quot;

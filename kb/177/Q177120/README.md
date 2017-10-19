@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177120: Boot Method Option Does Not Exist as Stated in DNS Manager Help"
-permalink: kb/177/Q177120/
+permalink: /kb/177/Q177120/
 ---
 
 ## Q177120: Boot Method Option Does Not Exist as Stated in DNS Manager Help

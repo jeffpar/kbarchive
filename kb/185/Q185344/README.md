@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185344: SMS: Service Pack Upgrades Not Automatic for RAS Clients"
-permalink: kb/185/Q185344/
+permalink: /kb/185/Q185344/
 ---
 
 ## Q185344: SMS: Service Pack Upgrades Not Automatic for RAS Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176126: XCON: No NDR When You Send Message to Invalid OR Address"
-permalink: kb/176/Q176126/
+permalink: /kb/176/Q176126/
 ---
 
 ## Q176126: XCON: No NDR When You Send Message to Invalid OR Address

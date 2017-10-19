@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274647: CFS2: Large Areas of Terrain Are Displayed Without Textures"
-permalink: kb/274/Q274647/
+permalink: /kb/274/Q274647/
 ---
 
 ## Q274647: CFS2: Large Areas of Terrain Are Displayed Without Textures

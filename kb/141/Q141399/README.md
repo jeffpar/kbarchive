@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141399: PC Adm: Err Msg: Could Not Access Server's Configuration"
-permalink: kb/141/Q141399/
+permalink: /kb/141/Q141399/
 ---
 
 ## Q141399: PC Adm: Err Msg: Could Not Access Server's Configuration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130079: Err Msg: Dial-Up Networking Could Not Negotiate Compatible..."
-permalink: kb/130/Q130079/
+permalink: /kb/130/Q130079/
 ---
 
 ## Q130079: Err Msg: Dial-Up Networking Could Not Negotiate Compatible...

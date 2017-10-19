@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128888: Network Adapter at I/O 320 Not Detected on Acer Computers"
-permalink: kb/128/Q128888/
+permalink: /kb/128/Q128888/
 ---
 
 ## Q128888: Network Adapter at I/O 320 Not Detected on Acer Computers

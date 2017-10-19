@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280832: Encarta Researcher: Cannot Convert Research Organizer Projects"
-permalink: kb/280/Q280832/
+permalink: /kb/280/Q280832/
 ---
 
 ## Q280832: Encarta Researcher: Cannot Convert Research Organizer Projects

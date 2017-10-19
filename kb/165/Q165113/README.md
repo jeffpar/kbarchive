@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165113: XCLN: Deliver Now from Client Counts Every Message"
-permalink: kb/165/Q165113/
+permalink: /kb/165/Q165113/
 ---
 
 ## Q165113: XCLN: Deliver Now from Client Counts Every Message

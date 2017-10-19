@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177322: XADM: -1022 or -1026 Error Verifying Consistency of Databases"
-permalink: kb/177/Q177322/
+permalink: /kb/177/Q177322/
 ---
 
 ## Q177322: XADM: -1022 or -1026 Error Verifying Consistency of Databases

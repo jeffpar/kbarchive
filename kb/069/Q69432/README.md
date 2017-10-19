@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69432: Adobe Plus Pack Fonts Print Incorrectly in Ventura for Windows"
-permalink: kb/069/Q69432/
+permalink: /kb/069/Q69432/
 ---
 
 ## Q69432: Adobe Plus Pack Fonts Print Incorrectly in Ventura for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206884: HOWTO: Simulate Expanded and Condensed Fonts"
-permalink: kb/206/Q206884/
+permalink: /kb/206/Q206884/
 ---
 
 ## Q206884: HOWTO: Simulate Expanded and Condensed Fonts

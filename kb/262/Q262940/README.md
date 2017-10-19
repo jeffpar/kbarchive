@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262940: Age of Empires: How to Capture a Screen Shot in Age of Empires"
-permalink: kb/262/Q262940/
+permalink: /kb/262/Q262940/
 ---
 
 ## Q262940: Age of Empires: How to Capture a Screen Shot in Age of Empires

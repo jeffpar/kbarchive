@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173224: WD97: How to Turn On/Off Prompts in Word Web Authoring"
-permalink: kb/173/Q173224/
+permalink: /kb/173/Q173224/
 ---
 
 ## Q173224: WD97: How to Turn On/Off Prompts in Word Web Authoring

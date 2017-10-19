@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95973: Using the Toshiba T5100 with Windows"
-permalink: kb/095/Q95973/
+permalink: /kb/095/Q95973/
 ---
 
 ## Q95973: Using the Toshiba T5100 with Windows

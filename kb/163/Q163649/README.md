@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163649: WD97: Mailing Label Wizard Prints Only in Column 1"
-permalink: kb/163/Q163649/
+permalink: /kb/163/Q163649/
 ---
 
 ## Q163649: WD97: Mailing Label Wizard Prints Only in Column 1

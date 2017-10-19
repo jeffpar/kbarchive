@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71124: Using Terminal and a Direct Host"
-permalink: kb/071/Q71124/
+permalink: /kb/071/Q71124/
 ---
 
 ## Q71124: Using Terminal and a Direct Host

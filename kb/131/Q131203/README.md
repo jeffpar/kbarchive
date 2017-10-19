@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131203: FIX: Missing '::' in Error C2579 for Ambiguous Overload"
-permalink: kb/131/Q131203/
+permalink: /kb/131/Q131203/
 ---
 
 ## Q131203: FIX: Missing '::' in Error C2579 for Ambiguous Overload

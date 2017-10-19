@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157395: WD97: Tabs or Spaces Missing Using Continuous Section Break"
-permalink: kb/157/Q157395/
+permalink: /kb/157/Q157395/
 ---
 
 ## Q157395: WD97: Tabs or Spaces Missing Using Continuous Section Break

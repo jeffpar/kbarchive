@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142217: Encarta World Atlas 1996: Setup Fails with NexGen CPU"
-permalink: kb/142/Q142217/
+permalink: /kb/142/Q142217/
 ---
 
 ## Q142217: Encarta World Atlas 1996: Setup Fails with NexGen CPU

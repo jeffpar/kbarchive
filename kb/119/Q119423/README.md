@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119423: FPD: Previous File Name Not Cleared When Printing to File"
-permalink: kb/119/Q119423/
+permalink: /kb/119/Q119423/
 ---
 
 ## Q119423: FPD: Previous File Name Not Cleared When Printing to File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221707: FIX: Trace Breaks Too Often With Breakpoint on SET(&quot;NULL&quot;)"
-permalink: kb/221/Q221707/
+permalink: /kb/221/Q221707/
 ---
 
 ## Q221707: FIX: Trace Breaks Too Often With Breakpoint on SET(&quot;NULL&quot;)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178697: Remote Access Server Stops Responding After Several Connections"
-permalink: kb/178/Q178697/
+permalink: /kb/178/Q178697/
 ---
 
 ## Q178697: Remote Access Server Stops Responding After Several Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160328: Internet Explorer 3.0 Causes Windows NT 4.0 to Blue Screen"
-permalink: kb/160/Q160328/
+permalink: /kb/160/Q160328/
 ---
 
 ## Q160328: Internet Explorer 3.0 Causes Windows NT 4.0 to Blue Screen

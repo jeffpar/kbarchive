@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128360: Mac Wkst: Installing the Workstation from a Network Share"
-permalink: kb/128/Q128360/
+permalink: /kb/128/Q128360/
 ---
 
 ## Q128360: Mac Wkst: Installing the Workstation from a Network Share

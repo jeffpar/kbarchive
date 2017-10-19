@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40959: FastBlt.exe Implements Smooth Movement of a Bitmap"
-permalink: kb/040/Q40959/
+permalink: /kb/040/Q40959/
 ---
 
 ## Q40959: FastBlt.exe Implements Smooth Movement of a Bitmap

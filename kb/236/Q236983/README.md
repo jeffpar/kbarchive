@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236983: XADM: Using Directory Import to Modify the Internet Protocol"
-permalink: kb/236/Q236983/
+permalink: /kb/236/Q236983/
 ---
 
 ## Q236983: XADM: Using Directory Import to Modify the Internet Protocol

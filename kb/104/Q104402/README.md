@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104402: PC WSPlus: Err Msg: Not Enough Disk Space Available..."
-permalink: kb/104/Q104402/
+permalink: /kb/104/Q104402/
 ---
 
 ## Q104402: PC WSPlus: Err Msg: Not Enough Disk Space Available...

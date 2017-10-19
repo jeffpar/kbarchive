@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178818: XCLN: Printing Multiple Messages with Attachments"
-permalink: kb/178/Q178818/
+permalink: /kb/178/Q178818/
 ---
 
 ## Q178818: XCLN: Printing Multiple Messages with Attachments

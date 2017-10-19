@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260981: Cannot Change Expired Domain Password When Accessing Web Server"
-permalink: kb/260/Q260981/
+permalink: /kb/260/Q260981/
 ---
 
 ## Q260981: Cannot Change Expired Domain Password When Accessing Web Server

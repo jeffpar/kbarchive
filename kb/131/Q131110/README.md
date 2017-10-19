@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131110: Writer/Artist: How to Change User Names"
-permalink: kb/131/Q131110/
+permalink: /kb/131/Q131110/
 ---
 
 ## Q131110: Writer/Artist: How to Change User Names

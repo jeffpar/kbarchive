@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137677: PC NTMMTA: Err Msg:No Drive Is Available for Dynamic Attaching"
-permalink: kb/137/Q137677/
+permalink: /kb/137/Q137677/
 ---
 
 ## Q137677: PC NTMMTA: Err Msg:No Drive Is Available for Dynamic Attaching

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198162: Combat Flight Simulator: Color Palette or Textures Are Distorted"
-permalink: kb/198/Q198162/
+permalink: /kb/198/Q198162/
 ---
 
 ## Q198162: Combat Flight Simulator: Color Palette or Textures Are Distorted

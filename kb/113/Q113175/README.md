@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113175: How to Print Multiple Columns in FoxPro for MS-DOS"
-permalink: kb/113/Q113175/
+permalink: /kb/113/Q113175/
 ---
 
 ## Q113175: How to Print Multiple Columns in FoxPro for MS-DOS

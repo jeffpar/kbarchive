@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210528: Golf 99: Incorrect Par Rating Stated in Flyby Commentary Script"
-permalink: kb/210/Q210528/
+permalink: /kb/210/Q210528/
 ---
 
 ## Q210528: Golf 99: Incorrect Par Rating Stated in Flyby Commentary Script

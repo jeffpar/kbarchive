@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142901: No Response Dialing Another Computer with Chat"
-permalink: kb/142/Q142901/
+permalink: /kb/142/Q142901/
 ---
 
 ## Q142901: No Response Dialing Another Computer with Chat

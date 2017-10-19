@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305301: ENC Err Msg: Your Computer Does Not Have Enough Disk..."
-permalink: kb/305/Q305301/
+permalink: /kb/305/Q305301/
 ---
 
 ## Q305301: ENC Err Msg: Your Computer Does Not Have Enough Disk...

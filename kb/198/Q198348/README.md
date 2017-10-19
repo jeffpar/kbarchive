@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198348: PRB: Component Gallery Errors in Localized German VFP"
-permalink: kb/198/Q198348/
+permalink: /kb/198/Q198348/
 ---
 
 ## Q198348: PRB: Component Gallery Errors in Localized German VFP

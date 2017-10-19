@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131316: ErrMsg:&quot;Cannot Find VBRUN300.DLL&quot; on Installing Moving Wizard"
-permalink: kb/131/Q131316/
+permalink: /kb/131/Q131316/
 ---
 
 ## Q131316: ErrMsg:&quot;Cannot Find VBRUN300.DLL&quot; on Installing Moving Wizard

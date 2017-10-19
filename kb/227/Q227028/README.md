@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227028: SMS: LSM Fails to Update the PDC in a Large Domain Mult Sites"
-permalink: kb/227/Q227028/
+permalink: /kb/227/Q227028/
 ---
 
 ## Q227028: SMS: LSM Fails to Update the PDC in a Large Domain Mult Sites

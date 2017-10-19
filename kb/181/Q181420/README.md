@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181420: How to Configure Exchange or Other SMTP with Proxy Server"
-permalink: kb/181/Q181420/
+permalink: /kb/181/Q181420/
 ---
 
 ## Q181420: How to Configure Exchange or Other SMTP with Proxy Server

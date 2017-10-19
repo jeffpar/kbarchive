@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147281: Delete Key and Delete Button Function Differently"
-permalink: kb/147/Q147281/
+permalink: /kb/147/Q147281/
 ---
 
 ## Q147281: Delete Key and Delete Button Function Differently

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160451: STOP: 0x00000024 in Ntfs.sys with Chkdsk /f"
-permalink: kb/160/Q160451/
+permalink: /kb/160/Q160451/
 ---
 
 ## Q160451: STOP: 0x00000024 in Ntfs.sys with Chkdsk /f

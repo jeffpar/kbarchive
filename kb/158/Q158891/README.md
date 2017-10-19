@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158891: PPT: Using Macros Stored in Templates"
-permalink: kb/158/Q158891/
+permalink: /kb/158/Q158891/
 ---
 
 ## Q158891: PPT: Using Macros Stored in Templates

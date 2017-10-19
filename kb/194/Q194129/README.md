@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194129: Microsoft DNS Fails to Acquire Zone Transfer from BIND Primary"
-permalink: kb/194/Q194129/
+permalink: /kb/194/Q194129/
 ---
 
 ## Q194129: Microsoft DNS Fails to Acquire Zone Transfer from BIND Primary

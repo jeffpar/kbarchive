@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152993: Raster Fonts Print Different on Windows NT 4.0 Than on 3.51"
-permalink: kb/152/Q152993/
+permalink: /kb/152/Q152993/
 ---
 
 ## Q152993: Raster Fonts Print Different on Windows NT 4.0 Than on 3.51

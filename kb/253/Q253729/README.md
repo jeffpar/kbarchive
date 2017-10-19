@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253729: Stopping Persistent Connection Causes It to Become Unavailable"
-permalink: kb/253/Q253729/
+permalink: /kb/253/Q253729/
 ---
 
 ## Q253729: Stopping Persistent Connection Causes It to Become Unavailable

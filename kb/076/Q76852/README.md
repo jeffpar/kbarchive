@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76852: Cities Excluded from Encyclopedia Map of United States"
-permalink: kb/076/Q76852/
+permalink: /kb/076/Q76852/
 ---
 
 ## Q76852: Cities Excluded from Encyclopedia Map of United States

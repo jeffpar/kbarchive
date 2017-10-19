@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86646: How to Restore Backed-up Files to a Different Directory"
-permalink: kb/086/Q86646/
+permalink: /kb/086/Q86646/
 ---
 
 ## Q86646: How to Restore Backed-up Files to a Different Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192802: Two CD-ROM Drive Letters Appear in My Computer"
-permalink: kb/192/Q192802/
+permalink: /kb/192/Q192802/
 ---
 
 ## Q192802: Two CD-ROM Drive Letters Appear in My Computer

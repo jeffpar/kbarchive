@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173058: How to Disable the Welcome Screen for All Users"
-permalink: kb/173/Q173058/
+permalink: /kb/173/Q173058/
 ---
 
 ## Q173058: How to Disable the Welcome Screen for All Users

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119449: PC DirSync: Description of RESYNC.GLB"
-permalink: kb/119/Q119449/
+permalink: /kb/119/Q119449/
 ---
 
 ## Q119449: PC DirSync: Description of RESYNC.GLB

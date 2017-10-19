@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193811: SNA Manager Does Not Show Local Domain Window"
-permalink: kb/193/Q193811/
+permalink: /kb/193/Q193811/
 ---
 
 ## Q193811: SNA Manager Does Not Show Local Domain Window

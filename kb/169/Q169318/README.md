@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169318: Golf 3.0: Theme Pack Available for Download"
-permalink: kb/169/Q169318/
+permalink: /kb/169/Q169318/
 ---
 
 ## Q169318: Golf 3.0: Theme Pack Available for Download

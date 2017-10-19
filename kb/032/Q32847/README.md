@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32847: Jumper Settings For PC Network/Baseband Adapters"
-permalink: kb/032/Q32847/
+permalink: /kb/032/Q32847/
 ---
 
 ## Q32847: Jumper Settings For PC Network/Baseband Adapters

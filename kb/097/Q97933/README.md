@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97933: PC WRmt: Extra Dialog and Error Messages"
-permalink: kb/097/Q97933/
+permalink: /kb/097/Q97933/
 ---
 
 ## Q97933: PC WRmt: Extra Dialog and Error Messages

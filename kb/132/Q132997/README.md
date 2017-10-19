@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132997: PowerPoint 95 Files Saved as PowerPoint 4 Lose Font Embedding"
-permalink: kb/132/Q132997/
+permalink: /kb/132/Q132997/
 ---
 
 ## Q132997: PowerPoint 95 Files Saved as PowerPoint 4 Lose Font Embedding

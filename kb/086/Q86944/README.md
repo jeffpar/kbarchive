@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86944: 3COM: Which PC Mail Files Are Accessed by the Gateway"
-permalink: kb/086/Q86944/
+permalink: /kb/086/Q86944/
 ---
 
 ## Q86944: 3COM: Which PC Mail Files Are Accessed by the Gateway

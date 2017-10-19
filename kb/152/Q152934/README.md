@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152934: XCON: X.400 Connector Stack Property Page Behavior"
-permalink: kb/152/Q152934/
+permalink: /kb/152/Q152934/
 ---
 
 ## Q152934: XCON: X.400 Connector Stack Property Page Behavior

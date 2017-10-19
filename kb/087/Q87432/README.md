@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87432: PC DB: Description of TPL File"
-permalink: kb/087/Q87432/
+permalink: /kb/087/Q87432/
 ---
 
 ## Q87432: PC DB: Description of TPL File

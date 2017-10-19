@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128078: How to Trap for &quot;Not a Database&quot; Error in a Corrupt .DBC"
-permalink: kb/128/Q128078/
+permalink: /kb/128/Q128078/
 ---
 
 ## Q128078: How to Trap for &quot;Not a Database&quot; Error in a Corrupt .DBC

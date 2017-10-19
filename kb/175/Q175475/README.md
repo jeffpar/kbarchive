@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175475: XFOR: Information Store May Incorrectly Stamp Time Zone Info"
-permalink: kb/175/Q175475/
+permalink: /kb/175/Q175475/
 ---
 
 ## Q175475: XFOR: Information Store May Incorrectly Stamp Time Zone Info

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130723: Multiple NwRdr Network Errors (8005) Recorded In Event Viewer"
-permalink: kb/130/Q130723/
+permalink: /kb/130/Q130723/
 ---
 
 ## Q130723: Multiple NwRdr Network Errors (8005) Recorded In Event Viewer

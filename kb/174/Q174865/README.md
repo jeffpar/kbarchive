@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174865: Compressed Read-Only Drive Not Mounted at Startup"
-permalink: kb/174/Q174865/
+permalink: /kb/174/Q174865/
 ---
 
 ## Q174865: Compressed Read-Only Drive Not Mounted at Startup

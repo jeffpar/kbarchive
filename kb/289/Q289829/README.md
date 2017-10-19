@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289829: Blank Spaces in Folder Name Aliases Become Underscore Characters"
-permalink: kb/289/Q289829/
+permalink: /kb/289/Q289829/
 ---
 
 ## Q289829: Blank Spaces in Folder Name Aliases Become Underscore Characters

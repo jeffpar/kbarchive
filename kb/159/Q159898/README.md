@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159898: Games: Using 3D Hardware Acceleration with Diamond Stealth 3D"
-permalink: kb/159/Q159898/
+permalink: /kb/159/Q159898/
 ---
 
 ## Q159898: Games: Using 3D Hardware Acceleration with Diamond Stealth 3D

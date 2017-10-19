@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159975: BUG: FileCopy Does Not Reset Err if Floppy is Write-Protected"
-permalink: kb/159/Q159975/
+permalink: /kb/159/Q159975/
 ---
 
 ## Q159975: BUG: FileCopy Does Not Reset Err if Floppy is Write-Protected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238188: BUG: Branching a file gives &quot;A more recent version is checked ou"
-permalink: kb/238/Q238188/
+permalink: /kb/238/Q238188/
 ---
 
 ## Q238188: BUG: Branching a file gives &quot;A more recent version is checked ou

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75894: PaintJet Printer Fonts Included with Windows"
-permalink: kb/075/Q75894/
+permalink: /kb/075/Q75894/
 ---
 
 ## Q75894: PaintJet Printer Fonts Included with Windows

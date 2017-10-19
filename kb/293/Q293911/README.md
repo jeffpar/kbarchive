@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293911: SAMPLE: ABParam.exe Passes a BLOB Parameter with ATL"
-permalink: kb/293/Q293911/
+permalink: /kb/293/Q293911/
 ---
 
 ## Q293911: SAMPLE: ABParam.exe Passes a BLOB Parameter with ATL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155768: IIS Services Will Not Start"
-permalink: kb/155/Q155768/
+permalink: /kb/155/Q155768/
 ---
 
 ## Q155768: IIS Services Will Not Start

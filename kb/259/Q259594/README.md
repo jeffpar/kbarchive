@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259594: XADM: Mailbox Manager Scans Excluded Parent Folder Subfolders"
-permalink: kb/259/Q259594/
+permalink: /kb/259/Q259594/
 ---
 
 ## Q259594: XADM: Mailbox Manager Scans Excluded Parent Folder Subfolders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153540: DBClean Only Merges One Computer at a Time"
-permalink: kb/153/Q153540/
+permalink: /kb/153/Q153540/
 ---
 
 ## Q153540: DBClean Only Merges One Computer at a Time

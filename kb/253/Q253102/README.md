@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253102: COMTI Returns ADO Recordset That Cannot Be Sorted"
-permalink: kb/253/Q253102/
+permalink: /kb/253/Q253102/
 ---
 
 ## Q253102: COMTI Returns ADO Recordset That Cannot Be Sorted

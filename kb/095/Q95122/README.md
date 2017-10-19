@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95122: Manual Installation of Golf for Windows"
-permalink: kb/095/Q95122/
+permalink: /kb/095/Q95122/
 ---
 
 ## Q95122: Manual Installation of Golf for Windows

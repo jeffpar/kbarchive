@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141384: APC PnP UPS Cable for Windows 95 Does Not Work with Windows NT"
-permalink: kb/141/Q141384/
+permalink: /kb/141/Q141384/
 ---
 
 ## Q141384: APC PnP UPS Cable for Windows 95 Does Not Work with Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172159: E-mail Received in Different Font Size or Color"
-permalink: kb/172/Q172159/
+permalink: /kb/172/Q172159/
 ---
 
 ## Q172159: E-mail Received in Different Font Size or Color

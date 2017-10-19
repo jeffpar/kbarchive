@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182153: BUG: Error When Loading Visual Datatools Add-In"
-permalink: kb/182/Q182153/
+permalink: /kb/182/Q182153/
 ---
 
 ## Q182153: BUG: Error When Loading Visual Datatools Add-In

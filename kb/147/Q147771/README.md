@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147771: Removable Media with IDE Interface Not Supported"
-permalink: kb/147/Q147771/
+permalink: /kb/147/Q147771/
 ---
 
 ## Q147771: Removable Media with IDE Interface Not Supported

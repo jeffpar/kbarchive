@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121393: Error Message Claims NTFS Files Corrupt, Chkdsk Does Nothing"
-permalink: kb/121/Q121393/
+permalink: /kb/121/Q121393/
 ---
 
 ## Q121393: Error Message Claims NTFS Files Corrupt, Chkdsk Does Nothing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244432: Designing Relational Database Systems Comments and Corrections"
-permalink: kb/244/Q244432/
+permalink: /kb/244/Q244432/
 ---
 
 ## Q244432: Designing Relational Database Systems Comments and Corrections

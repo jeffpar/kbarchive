@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131059: Security Log Close Handles Don't Match Open Handles"
-permalink: kb/131/Q131059/
+permalink: /kb/131/Q131059/
 ---
 
 ## Q131059: Security Log Close Handles Don't Match Open Handles

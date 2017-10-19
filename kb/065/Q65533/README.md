@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65533: OS/2 LAN Manager: Numbering of Fault-Tolerance Drives"
-permalink: kb/065/Q65533/
+permalink: /kb/065/Q65533/
 ---
 
 ## Q65533: OS/2 LAN Manager: Numbering of Fault-Tolerance Drives

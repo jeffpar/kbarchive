@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110406: MS-DOS 6.2 Step-Up Fails with McAfee V-Scan"
-permalink: kb/110/Q110406/
+permalink: /kb/110/Q110406/
 ---
 
 ## Q110406: MS-DOS 6.2 Step-Up Fails with McAfee V-Scan

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89430: Problems Exiting Windows with Bitstream FaceLift 2.0 Running"
-permalink: kb/089/Q89430/
+permalink: /kb/089/Q89430/
 ---
 
 ## Q89430: Problems Exiting Windows with Bitstream FaceLift 2.0 Running

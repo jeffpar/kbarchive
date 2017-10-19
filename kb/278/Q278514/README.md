@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278514: Downloading graphics on MSN Companion takes too long"
-permalink: kb/278/Q278514/
+permalink: /kb/278/Q278514/
 ---
 
 ## Q278514: Downloading graphics on MSN Companion takes too long

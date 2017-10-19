@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174553: HOWTO: Detect When a Control Is Placed into a UserControl"
-permalink: kb/174/Q174553/
+permalink: /kb/174/Q174553/
 ---
 
 ## Q174553: HOWTO: Detect When a Control Is Placed into a UserControl

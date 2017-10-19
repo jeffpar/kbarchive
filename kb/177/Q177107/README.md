@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177107: ODE97: Displaying Context-Sensitive Help for What'sThis Button"
-permalink: kb/177/Q177107/
+permalink: /kb/177/Q177107/
 ---
 
 ## Q177107: ODE97: Displaying Context-Sensitive Help for What'sThis Button

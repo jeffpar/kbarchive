@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123110: Err Msg: Unknown Firmware Error with Archive 5580 Tape Drive"
-permalink: kb/123/Q123110/
+permalink: /kb/123/Q123110/
 ---
 
 ## Q123110: Err Msg: Unknown Firmware Error with Archive 5580 Tape Drive

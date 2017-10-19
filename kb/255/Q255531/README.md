@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255531: FS2000: How to Add and Remove Interior Cockpit Views"
-permalink: kb/255/Q255531/
+permalink: /kb/255/Q255531/
 ---
 
 ## Q255531: FS2000: How to Add and Remove Interior Cockpit Views

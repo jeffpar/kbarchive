@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120410: PPT: Narrowest Line Style Prints Thicker than Expected"
-permalink: kb/120/Q120410/
+permalink: /kb/120/Q120410/
 ---
 
 ## Q120410: PPT: Narrowest Line Style Prints Thicker than Expected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199062: PC Win: How to Use WinMail Client to Post to Shared Folders"
-permalink: kb/199/Q199062/
+permalink: /kb/199/Q199062/
 ---
 
 ## Q199062: PC Win: How to Use WinMail Client to Post to Shared Folders

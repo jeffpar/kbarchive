@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223044: SMS: Remote Control Agent Not Found"
-permalink: kb/223/Q223044/
+permalink: /kb/223/Q223044/
 ---
 
 ## Q223044: SMS: Remote Control Agent Not Found

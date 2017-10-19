@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189595: PPTP Performance &amp; Security Upgrade for WinNT 4.0 Release Notes"
-permalink: kb/189/Q189595/
+permalink: /kb/189/Q189595/
 ---
 
 ## Q189595: PPTP Performance &amp; Security Upgrade for WinNT 4.0 Release Notes

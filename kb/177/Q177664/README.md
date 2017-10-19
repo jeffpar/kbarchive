@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177664: Stop 0x0000000A in Netbt.sys When Shutting Down"
-permalink: kb/177/Q177664/
+permalink: /kb/177/Q177664/
 ---
 
 ## Q177664: Stop 0x0000000A in Netbt.sys When Shutting Down

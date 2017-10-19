@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121474: BUG: Incorrect Declarations in vbdemo Program"
-permalink: kb/121/Q121474/
+permalink: /kb/121/Q121474/
 ---
 
 ## Q121474: BUG: Incorrect Declarations in vbdemo Program

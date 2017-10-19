@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59924: Mac Hyp: Displaying Mail's Message Center Window"
-permalink: kb/059/Q59924/
+permalink: /kb/059/Q59924/
 ---
 
 ## Q59924: Mac Hyp: Displaying Mail's Message Center Window

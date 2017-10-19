@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122565: FORTRAN PowerStation 32 Update for Windows NT 3.5"
-permalink: kb/122/Q122565/
+permalink: /kb/122/Q122565/
 ---
 
 ## Q122565: FORTRAN PowerStation 32 Update for Windows NT 3.5

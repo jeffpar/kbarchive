@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102158: FIX: ifstream Object Loses Character in Text Mode"
-permalink: kb/102/Q102158/
+permalink: /kb/102/Q102158/
 ---
 
 ## Q102158: FIX: ifstream Object Loses Character in Text Mode

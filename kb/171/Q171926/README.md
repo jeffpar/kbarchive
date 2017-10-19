@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171926: Mac Bookshelf 98: Contents of Read Me Document (Complete Text)"
-permalink: kb/171/Q171926/
+permalink: /kb/171/Q171926/
 ---
 
 ## Q171926: Mac Bookshelf 98: Contents of Read Me Document (Complete Text)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171690: WD97: Text and Images in CorelDRAW Graphic Appear Overlaid"
-permalink: kb/171/Q171690/
+permalink: /kb/171/Q171690/
 ---
 
 ## Q171690: WD97: Text and Images in CorelDRAW Graphic Appear Overlaid

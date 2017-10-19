@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198023: XWEB: OWA Does Not Include DPA as an Authentication Option"
-permalink: kb/198/Q198023/
+permalink: /kb/198/Q198023/
 ---
 
 ## Q198023: XWEB: OWA Does Not Include DPA as an Authentication Option

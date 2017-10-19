@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252417: ISM Property Pages Fail to Appear and the MMC Cannot Be Closed"
-permalink: kb/252/Q252417/
+permalink: /kb/252/Q252417/
 ---
 
 ## Q252417: ISM Property Pages Fail to Appear and the MMC Cannot Be Closed

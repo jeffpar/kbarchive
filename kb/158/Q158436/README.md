@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158436: WD97: Sample VB Code to Assign Clipboard Text to String Variable"
-permalink: kb/158/Q158436/
+permalink: /kb/158/Q158436/
 ---
 
 ## Q158436: WD97: Sample VB Code to Assign Clipboard Text to String Variable

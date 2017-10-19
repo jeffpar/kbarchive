@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129828: MODEL Structure is Read-Only in Visual Basic 4.0"
-permalink: kb/129/Q129828/
+permalink: /kb/129/Q129828/
 ---
 
 ## Q129828: MODEL Structure is Read-Only in Visual Basic 4.0

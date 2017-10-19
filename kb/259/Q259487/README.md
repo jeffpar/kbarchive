@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259487: XADM: Isinteg Loops If Folder's Parent Doesn't Exist in Store"
-permalink: kb/259/Q259487/
+permalink: /kb/259/Q259487/
 ---
 
 ## Q259487: XADM: Isinteg Loops If Folder's Parent Doesn't Exist in Store

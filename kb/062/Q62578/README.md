@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62578: FIX: PWB 1.0 &quot;Set Dependencies&quot; Fails with Spaces in #include"
-permalink: kb/062/Q62578/
+permalink: /kb/062/Q62578/
 ---
 
 ## Q62578: FIX: PWB 1.0 &quot;Set Dependencies&quot; Fails with Spaces in #include

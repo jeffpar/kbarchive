@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173840: Hardcore Visual Basic 2nd Ed. Comments and Corrections"
-permalink: kb/173/Q173840/
+permalink: /kb/173/Q173840/
 ---
 
 ## Q173840: Hardcore Visual Basic 2nd Ed. Comments and Corrections

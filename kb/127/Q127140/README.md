@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127140: Hardware Detection Hangs with Relialogic SCSI Card Installed"
-permalink: kb/127/Q127140/
+permalink: /kb/127/Q127140/
 ---
 
 ## Q127140: Hardware Detection Hangs with Relialogic SCSI Card Installed

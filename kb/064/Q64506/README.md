@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64506: Mouse Systems Bus Mouse and Windows"
-permalink: kb/064/Q64506/
+permalink: /kb/064/Q64506/
 ---
 
 ## Q64506: Mouse Systems Bus Mouse and Windows

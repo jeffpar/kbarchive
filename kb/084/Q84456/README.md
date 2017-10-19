@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84456: SAMPLE: TERMWAIT Spawns Task and Waits for its Termination"
-permalink: kb/084/Q84456/
+permalink: /kb/084/Q84456/
 ---
 
 ## Q84456: SAMPLE: TERMWAIT Spawns Task and Waits for its Termination

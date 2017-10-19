@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185083: PRB: Combo Box Displays Incorrectly w/ Large DisplayCount"
-permalink: kb/185/Q185083/
+permalink: /kb/185/Q185083/
 ---
 
 ## Q185083: PRB: Combo Box Displays Incorrectly w/ Large DisplayCount

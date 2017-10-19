@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164966: Print Session Status Remains &quot;Spooling&quot;"
-permalink: kb/164/Q164966/
+permalink: /kb/164/Q164966/
 ---
 
 ## Q164966: Print Session Status Remains &quot;Spooling&quot;

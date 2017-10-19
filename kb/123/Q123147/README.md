@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123147: FIX: MFC MDI Application Crashes Under Japanese Windows 3.1"
-permalink: kb/123/Q123147/
+permalink: /kb/123/Q123147/
 ---
 
 ## Q123147: FIX: MFC MDI Application Crashes Under Japanese Windows 3.1

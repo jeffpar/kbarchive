@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279402: MSN Companion boots to &quot;Your Internet Numbers Have Changed&quot; scre"
-permalink: kb/279/Q279402/
+permalink: /kb/279/Q279402/
 ---
 
 ## Q279402: MSN Companion boots to &quot;Your Internet Numbers Have Changed&quot; scre

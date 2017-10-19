@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59654: ALT+TAB Six-Second Delay in Real/Standard Modes"
-permalink: kb/059/Q59654/
+permalink: /kb/059/Q59654/
 ---
 
 ## Q59654: ALT+TAB Six-Second Delay in Real/Standard Modes

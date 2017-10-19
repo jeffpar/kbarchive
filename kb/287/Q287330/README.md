@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287330: Error Messages 1009 and 18 Appear When Logging On to a Domain"
-permalink: kb/287/Q287330/
+permalink: /kb/287/Q287330/
 ---
 
 ## Q287330: Error Messages 1009 and 18 Appear When Logging On to a Domain

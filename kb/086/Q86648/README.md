@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86648: No MS-DOS Extended Error Info for Windows File Functions"
-permalink: kb/086/Q86648/
+permalink: /kb/086/Q86648/
 ---
 
 ## Q86648: No MS-DOS Extended Error Info for Windows File Functions

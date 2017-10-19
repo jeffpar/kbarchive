@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167191: PRB: &quot;Variable 'X' not found&quot; in a Visual FoxPro Menu"
-permalink: kb/167/Q167191/
+permalink: /kb/167/Q167191/
 ---
 
 ## Q167191: PRB: &quot;Variable 'X' not found&quot; in a Visual FoxPro Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122495: How to Set Up an Extended Capabilities Port in Windows 95"
-permalink: kb/122/Q122495/
+permalink: /kb/122/Q122495/
 ---
 
 ## Q122495: How to Set Up an Extended Capabilities Port in Windows 95

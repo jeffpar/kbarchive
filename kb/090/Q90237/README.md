@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90237: After Dark AD-DOS Can Cause Suspended Print Jobs"
-permalink: kb/090/Q90237/
+permalink: /kb/090/Q90237/
 ---
 
 ## Q90237: After Dark AD-DOS Can Cause Suspended Print Jobs

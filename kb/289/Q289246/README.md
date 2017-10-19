@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289246: MS02-001: Forged SID Could Result in Elevated Privileges in Wind"
-permalink: kb/289/Q289246/
+permalink: /kb/289/Q289246/
 ---
 
 ## Q289246: MS02-001: Forged SID Could Result in Elevated Privileges in Wind

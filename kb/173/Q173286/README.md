@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173286: WD97: Clipart Images Display Incorrect Format Picture Options"
-permalink: kb/173/Q173286/
+permalink: /kb/173/Q173286/
 ---
 
 ## Q173286: WD97: Clipart Images Display Incorrect Format Picture Options

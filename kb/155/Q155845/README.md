@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155845: Mouse Distorts Display on MIPS NEC RISCstation 2200 with TGA"
-permalink: kb/155/Q155845/
+permalink: /kb/155/Q155845/
 ---
 
 ## Q155845: Mouse Distorts Display on MIPS NEC RISCstation 2200 with TGA

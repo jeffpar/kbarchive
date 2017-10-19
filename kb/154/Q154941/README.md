@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154941: XADM: How to Determine Which Public Folder Replica is Used"
-permalink: kb/154/Q154941/
+permalink: /kb/154/Q154941/
 ---
 
 ## Q154941: XADM: How to Determine Which Public Folder Replica is Used

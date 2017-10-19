@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89155: PPT: Pattern Shows Through Double Line Style Border"
-permalink: kb/089/Q89155/
+permalink: /kb/089/Q89155/
 ---
 
 ## Q89155: PPT: Pattern Shows Through Double Line Style Border

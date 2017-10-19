@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296575: E-mail Message Not Properly Decoded"
-permalink: kb/296/Q296575/
+permalink: /kb/296/Q296575/
 ---
 
 ## Q296575: E-mail Message Not Properly Decoded

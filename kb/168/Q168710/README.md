@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168710: XADM: How to Restore a 4.0 Information Store to a 5.0 Server"
-permalink: kb/168/Q168710/
+permalink: /kb/168/Q168710/
 ---
 
 ## Q168710: XADM: How to Restore a 4.0 Information Store to a 5.0 Server

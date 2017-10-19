@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97751: PC WRmt: Seeing Which Driver Is Installed"
-permalink: kb/097/Q97751/
+permalink: /kb/097/Q97751/
 ---
 
 ## Q97751: PC WRmt: Seeing Which Driver Is Installed

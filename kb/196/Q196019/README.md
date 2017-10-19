@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196019: Adding Windows NT 4.0 Computers to Domain Before Sysprep"
-permalink: kb/196/Q196019/
+permalink: /kb/196/Q196019/
 ---
 
 ## Q196019: Adding Windows NT 4.0 Computers to Domain Before Sysprep

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188649: XADM: Error 291 with Exchange Bulk Import"
-permalink: kb/188/Q188649/
+permalink: /kb/188/Q188649/
 ---
 
 ## Q188649: XADM: Error 291 with Exchange Bulk Import

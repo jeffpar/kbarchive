@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143261: FIX: Error When Referring to Member Object/Collection in OLE DLL"
-permalink: kb/143/Q143261/
+permalink: /kb/143/Q143261/
 ---
 
 ## Q143261: FIX: Error When Referring to Member Object/Collection in OLE DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306079: PRB: SET PROCEDURE TO Causes Unknown Error with FoxPro DLL"
-permalink: kb/306/Q306079/
+permalink: /kb/306/Q306079/
 ---
 
 ## Q306079: PRB: SET PROCEDURE TO Causes Unknown Error with FoxPro DLL

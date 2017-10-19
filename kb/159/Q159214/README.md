@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159214: How to Detect and Compare File Differences"
-permalink: kb/159/Q159214/
+permalink: /kb/159/Q159214/
 ---
 
 ## Q159214: How to Detect and Compare File Differences

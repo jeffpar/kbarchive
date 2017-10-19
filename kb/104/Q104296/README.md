@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104296: RRAS Uses Larger MTU Than Other OSPF Routers"
-permalink: kb/104/Q104296/
+permalink: /kb/104/Q104296/
 ---
 
 ## Q104296: RRAS Uses Larger MTU Than Other OSPF Routers

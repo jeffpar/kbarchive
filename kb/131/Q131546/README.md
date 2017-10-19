@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131546: ALT+ENTER in MS-DOS Prompt Causes AnyKey Keyboard to Hang"
-permalink: kb/131/Q131546/
+permalink: /kb/131/Q131546/
 ---
 
 ## Q131546: ALT+ENTER in MS-DOS Prompt Causes AnyKey Keyboard to Hang

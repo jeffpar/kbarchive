@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84943: Using HIMEM.EXE with Win 3.0 on COMPAQs with More Than 16 MB"
-permalink: kb/084/Q84943/
+permalink: /kb/084/Q84943/
 ---
 
 ## Q84943: Using HIMEM.EXE with Win 3.0 on COMPAQs with More Than 16 MB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159963: WD97: Word 97 Supports ODMA"
-permalink: kb/159/Q159963/
+permalink: /kb/159/Q159963/
 ---
 
 ## Q159963: WD97: Word 97 Supports ODMA

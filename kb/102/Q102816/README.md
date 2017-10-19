@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102816: Running MemMaker on IBM PS/1 Machines"
-permalink: kb/102/Q102816/
+permalink: /kb/102/Q102816/
 ---
 
 ## Q102816: Running MemMaker on IBM PS/1 Machines

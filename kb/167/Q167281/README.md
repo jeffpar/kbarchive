@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167281: XADM: Err Msg: Error Encountered Accessing Registry Keys/Values"
-permalink: kb/167/Q167281/
+permalink: /kb/167/Q167281/
 ---
 
 ## Q167281: XADM: Err Msg: Error Encountered Accessing Registry Keys/Values

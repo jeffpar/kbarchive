@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125323: Err Msg: Cannot Find NETAPI.DLL; Cannot Find PMSPL.DLL"
-permalink: kb/125/Q125323/
+permalink: /kb/125/Q125323/
 ---
 
 ## Q125323: Err Msg: Cannot Find NETAPI.DLL; Cannot Find PMSPL.DLL

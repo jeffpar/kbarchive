@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148274: Frank Lloyd Wright: Minimum System Requirements"
-permalink: kb/148/Q148274/
+permalink: /kb/148/Q148274/
 ---
 
 ## Q148274: Frank Lloyd Wright: Minimum System Requirements

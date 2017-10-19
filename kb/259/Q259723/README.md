@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259723: FIX: Debugger Fails on Fast Dual Processors"
-permalink: kb/259/Q259723/
+permalink: /kb/259/Q259723/
 ---
 
 ## Q259723: FIX: Debugger Fails on Fast Dual Processors

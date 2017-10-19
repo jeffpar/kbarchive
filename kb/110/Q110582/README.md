@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110582: SNA Server Service Stays Inactive When Started"
-permalink: kb/110/Q110582/
+permalink: /kb/110/Q110582/
 ---
 
 ## Q110582: SNA Server Service Stays Inactive When Started

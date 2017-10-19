@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138855: SNA Server Incorrectly Flips Sense Code Sent by RUI App."
-permalink: kb/138/Q138855/
+permalink: /kb/138/Q138855/
 ---
 
 ## Q138855: SNA Server Incorrectly Flips Sense Code Sent by RUI App.

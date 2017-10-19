@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140801: German Office Pro 4.3c PDF and STF Files are Missing"
-permalink: kb/140/Q140801/
+permalink: /kb/140/Q140801/
 ---
 
 ## Q140801: German Office Pro 4.3c PDF and STF Files are Missing

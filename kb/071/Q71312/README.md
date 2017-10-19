@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71312: PRB: Resource Compiler Error RW1022 Caused by Temporary File"
-permalink: kb/071/Q71312/
+permalink: /kb/071/Q71312/
 ---
 
 ## Q71312: PRB: Resource Compiler Error RW1022 Caused by Temporary File

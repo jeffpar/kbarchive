@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135772: TMP Files Left After Deinstall of SMS Admin UI Tool"
-permalink: kb/135/Q135772/
+permalink: /kb/135/Q135772/
 ---
 
 ## Q135772: TMP Files Left After Deinstall of SMS Admin UI Tool

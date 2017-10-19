@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276054: SMS: Unable to Remote Control Computers at Remote Site"
-permalink: kb/276/Q276054/
+permalink: /kb/276/Q276054/
 ---
 
 ## Q276054: SMS: Unable to Remote Control Computers at Remote Site

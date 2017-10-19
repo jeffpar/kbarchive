@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232096: How to Verify a Successful Installation of DirectPlay 6.1a"
-permalink: kb/232/Q232096/
+permalink: /kb/232/Q232096/
 ---
 
 ## Q232096: How to Verify a Successful Installation of DirectPlay 6.1a

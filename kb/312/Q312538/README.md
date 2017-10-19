@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312538: Reducing the Cached Logon Information Disables the Funtionality"
-permalink: kb/312/Q312538/
+permalink: /kb/312/Q312538/
 ---
 
 ## Q312538: Reducing the Cached Logon Information Disables the Funtionality

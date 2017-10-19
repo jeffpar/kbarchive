@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189325: XADM: IMAP4 Client/Server Commands"
-permalink: kb/189/Q189325/
+permalink: /kb/189/Q189325/
 ---
 
 ## Q189325: XADM: IMAP4 Client/Server Commands

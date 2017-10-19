@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187964: MGI PhotoSuite May Paste Screenshots As Garbage Or an AV Occurs"
-permalink: kb/187/Q187964/
+permalink: /kb/187/Q187964/
 ---
 
 ## Q187964: MGI PhotoSuite May Paste Screenshots As Garbage Or an AV Occurs

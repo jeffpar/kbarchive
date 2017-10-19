@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131311: WordPad Hangs When Jumping to the End of a Large File"
-permalink: kb/131/Q131311/
+permalink: /kb/131/Q131311/
 ---
 
 ## Q131311: WordPad Hangs When Jumping to the End of a Large File

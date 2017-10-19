@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80328: Phoenix BIOS Screen Saver Requires a Mouse under Windows"
-permalink: kb/080/Q80328/
+permalink: /kb/080/Q80328/
 ---
 
 ## Q80328: Phoenix BIOS Screen Saver Requires a Mouse under Windows

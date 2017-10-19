@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195295: Extensible Counters for Windows NT Option Pack Missing"
-permalink: kb/195/Q195295/
+permalink: /kb/195/Q195295/
 ---
 
 ## Q195295: Extensible Counters for Windows NT Option Pack Missing

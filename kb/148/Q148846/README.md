@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148846: RAS Port Instance Names in Performance Monitor Are Corrupted"
-permalink: kb/148/Q148846/
+permalink: /kb/148/Q148846/
 ---
 
 ## Q148846: RAS Port Instance Names in Performance Monitor Are Corrupted

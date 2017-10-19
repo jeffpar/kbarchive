@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132775: Alacrity Equip+ Does Not Function Properly in Windows 95"
-permalink: kb/132/Q132775/
+permalink: /kb/132/Q132775/
 ---
 
 ## Q132775: Alacrity Equip+ Does Not Function Properly in Windows 95

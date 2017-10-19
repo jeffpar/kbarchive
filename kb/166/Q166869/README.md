@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166869: XADM: EDBUTIL Uses Exchange Bin Directory for Tempdfrg.edb"
-permalink: kb/166/Q166869/
+permalink: /kb/166/Q166869/
 ---
 
 ## Q166869: XADM: EDBUTIL Uses Exchange Bin Directory for Tempdfrg.edb

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190121: INFO: Why Visual Basic 6.0 and Visual Studio 6.0 Require IE4"
-permalink: kb/190/Q190121/
+permalink: /kb/190/Q190121/
 ---
 
 ## Q190121: INFO: Why Visual Basic 6.0 and Visual Studio 6.0 Require IE4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119087: PC DOS: Attachments Save to Root with Monitor 3.0b"
-permalink: kb/119/Q119087/
+permalink: /kb/119/Q119087/
 ---
 
 ## Q119087: PC DOS: Attachments Save to Root with Monitor 3.0b

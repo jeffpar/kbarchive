@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165318: Trio 64 Display Adapter Error Due to IDIS_NT.DLL"
-permalink: kb/165/Q165318/
+permalink: /kb/165/Q165318/
 ---
 
 ## Q165318: Trio 64 Display Adapter Error Due to IDIS_NT.DLL

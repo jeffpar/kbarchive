@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148436: PRB: AppWizard Cannot Generate Resources in Sublanguages"
-permalink: kb/148/Q148436/
+permalink: /kb/148/Q148436/
 ---
 
 ## Q148436: PRB: AppWizard Cannot Generate Resources in Sublanguages

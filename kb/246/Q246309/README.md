@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246309: How to Replace a Missing IIS In-Process Application in MTS"
-permalink: kb/246/Q246309/
+permalink: /kb/246/Q246309/
 ---
 
 ## Q246309: How to Replace a Missing IIS In-Process Application in MTS

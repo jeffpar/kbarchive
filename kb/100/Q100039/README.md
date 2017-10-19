@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100039: Mac Wkst: Reading Resources from Server"
-permalink: kb/100/Q100039/
+permalink: /kb/100/Q100039/
 ---
 
 ## Q100039: Mac Wkst: Reading Resources from Server

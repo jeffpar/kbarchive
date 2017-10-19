@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235660: Stop 0x0000001e in Win32k.sys with Logon Screen Saver"
-permalink: kb/235/Q235660/
+permalink: /kb/235/Q235660/
 ---
 
 ## Q235660: Stop 0x0000001e in Win32k.sys with Logon Screen Saver

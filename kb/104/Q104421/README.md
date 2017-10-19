@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104421: PC Win: Check Names Utility Stops After Match Is Found"
-permalink: kb/104/Q104421/
+permalink: /kb/104/Q104421/
 ---
 
 ## Q104421: PC Win: Check Names Utility Stops After Match Is Found

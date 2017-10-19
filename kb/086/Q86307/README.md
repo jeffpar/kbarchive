@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86307: Windows Err Msg: The Version of the SETUP.INF File on Your..."
-permalink: kb/086/Q86307/
+permalink: /kb/086/Q86307/
 ---
 
 ## Q86307: Windows Err Msg: The Version of the SETUP.INF File on Your...

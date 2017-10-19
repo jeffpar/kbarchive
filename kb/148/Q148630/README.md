@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148630: Incorrect Token Ring Frame Type Causes &quot;Request Timed Out&quot;"
-permalink: kb/148/Q148630/
+permalink: /kb/148/Q148630/
 ---
 
 ## Q148630: Incorrect Token Ring Frame Type Causes &quot;Request Timed Out&quot;

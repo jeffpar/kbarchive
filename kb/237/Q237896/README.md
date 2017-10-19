@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237896: Enhanced GET_LU_STATUS Incorrectly Indicates SyncPoint Support"
-permalink: kb/237/Q237896/
+permalink: /kb/237/Q237896/
 ---
 
 ## Q237896: Enhanced GET_LU_STATUS Incorrectly Indicates SyncPoint Support

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169209: Some Mouse Options Not Available When Using IntelliPoint"
-permalink: kb/169/Q169209/
+permalink: /kb/169/Q169209/
 ---
 
 ## Q169209: Some Mouse Options Not Available When Using IntelliPoint

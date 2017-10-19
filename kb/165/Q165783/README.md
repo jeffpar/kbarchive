@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165783: SNACFG Doesn't Delete LUA LUs from Configuration File"
-permalink: kb/165/Q165783/
+permalink: /kb/165/Q165783/
 ---
 
 ## Q165783: SNACFG Doesn't Delete LUA LUs from Configuration File

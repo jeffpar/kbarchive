@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234936: XCLN: Support Boundaries of MAPI Provider Services"
-permalink: kb/234/Q234936/
+permalink: /kb/234/Q234936/
 ---
 
 ## Q234936: XCLN: Support Boundaries of MAPI Provider Services

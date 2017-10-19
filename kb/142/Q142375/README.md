@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142375: BUG: Jetpack.exe Reports Incorrect Usage Syntax"
-permalink: kb/142/Q142375/
+permalink: /kb/142/Q142375/
 ---
 
 ## Q142375: BUG: Jetpack.exe Reports Incorrect Usage Syntax

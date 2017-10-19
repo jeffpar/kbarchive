@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110765: PRB: FONTMETRIC Returns Different Values for Courier Font"
-permalink: kb/110/Q110765/
+permalink: /kb/110/Q110765/
 ---
 
 ## Q110765: PRB: FONTMETRIC Returns Different Values for Courier Font

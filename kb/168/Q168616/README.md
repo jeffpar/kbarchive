@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168616: XFOR: Messages in the IMC Outbound Queue Waiting Delivery"
-permalink: kb/168/Q168616/
+permalink: /kb/168/Q168616/
 ---
 
 ## Q168616: XFOR: Messages in the IMC Outbound Queue Waiting Delivery

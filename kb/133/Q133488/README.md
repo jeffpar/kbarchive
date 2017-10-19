@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133488: LPR Printing Fails After Setting Up Security"
-permalink: kb/133/Q133488/
+permalink: /kb/133/Q133488/
 ---
 
 ## Q133488: LPR Printing Fails After Setting Up Security

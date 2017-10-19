@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184281: BUG: Constants Used in Function Call Breaks Binary Compatibility"
-permalink: kb/184/Q184281/
+permalink: /kb/184/Q184281/
 ---
 
 ## Q184281: BUG: Constants Used in Function Call Breaks Binary Compatibility

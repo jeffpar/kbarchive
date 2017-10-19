@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104191: NCR Wavelan Cards Need the Same Network ID Number"
-permalink: kb/104/Q104191/
+permalink: /kb/104/Q104191/
 ---
 
 ## Q104191: NCR Wavelan Cards Need the Same Network ID Number

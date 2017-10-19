@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133474: Using the Magitronics EZ2000 Card With Windows NT"
-permalink: kb/133/Q133474/
+permalink: /kb/133/Q133474/
 ---
 
 ## Q133474: Using the Magitronics EZ2000 Card With Windows NT

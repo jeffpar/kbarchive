@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245002: BUG: CFileDialog Causes Help Window to Appear on WinCE 2.11"
-permalink: kb/245/Q245002/
+permalink: /kb/245/Q245002/
 ---
 
 ## Q245002: BUG: CFileDialog Causes Help Window to Appear on WinCE 2.11

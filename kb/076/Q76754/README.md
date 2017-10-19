@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76754: Windows Err Msg: Unknown File Copy Failure"
-permalink: kb/076/Q76754/
+permalink: /kb/076/Q76754/
 ---
 
 ## Q76754: Windows Err Msg: Unknown File Copy Failure

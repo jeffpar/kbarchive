@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252786: Allegiance: Unable to Cancel Technology Research"
-permalink: kb/252/Q252786/
+permalink: /kb/252/Q252786/
 ---
 
 ## Q252786: Allegiance: Unable to Cancel Technology Research

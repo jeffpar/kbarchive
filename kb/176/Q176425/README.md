@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176425: XFOR: MS Mail Connector NDRs Messsage Due to Malformed Address"
-permalink: kb/176/Q176425/
+permalink: /kb/176/Q176425/
 ---
 
 ## Q176425: XFOR: MS Mail Connector NDRs Messsage Due to Malformed Address

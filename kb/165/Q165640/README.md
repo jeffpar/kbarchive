@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165640: HOWTO: Customize the Comment and Uncomment Strings in VFP"
-permalink: kb/165/Q165640/
+permalink: /kb/165/Q165640/
 ---
 
 ## Q165640: HOWTO: Customize the Comment and Uncomment Strings in VFP

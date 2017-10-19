@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276404: Error Message &quot;Stop 0xA&quot; When Running Tcpip.sys"
-permalink: kb/276/Q276404/
+permalink: /kb/276/Q276404/
 ---
 
 ## Q276404: Error Message &quot;Stop 0xA&quot; When Running Tcpip.sys

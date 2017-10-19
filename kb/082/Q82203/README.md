@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82203: SMARTDrive 4.0 Design Overview"
-permalink: kb/082/Q82203/
+permalink: /kb/082/Q82203/
 ---
 
 ## Q82203: SMARTDrive 4.0 Design Overview

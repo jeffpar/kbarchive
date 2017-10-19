@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189117: BUG: Printing from Outlook w/ @...SAY Results in Light Printing"
-permalink: kb/189/Q189117/
+permalink: /kb/189/Q189117/
 ---
 
 ## Q189117: BUG: Printing from Outlook w/ @...SAY Results in Light Printing

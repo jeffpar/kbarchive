@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176622: XADM: User and Group Permissions Granted Automatically"
-permalink: kb/176/Q176622/
+permalink: /kb/176/Q176622/
 ---
 
 ## Q176622: XADM: User and Group Permissions Granted Automatically

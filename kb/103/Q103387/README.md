@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103387: Intersvr Does Not List Available COM Ports for Printing"
-permalink: kb/103/Q103387/
+permalink: /kb/103/Q103387/
 ---
 
 ## Q103387: Intersvr Does Not List Available COM Ports for Printing

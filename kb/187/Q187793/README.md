@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187793: Addition of New LAN Interface in RRAS Causes Event Message"
-permalink: kb/187/Q187793/
+permalink: /kb/187/Q187793/
 ---
 
 ## Q187793: Addition of New LAN Interface in RRAS Causes Event Message

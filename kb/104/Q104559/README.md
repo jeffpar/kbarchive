@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104559: Attachmate Extra Card not Supported in Windows NT"
-permalink: kb/104/Q104559/
+permalink: /kb/104/Q104559/
 ---
 
 ## Q104559: Attachmate Extra Card not Supported in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157950: INFO: STL Sample for Trigonometry (sin, cos, tan, etc.) Function"
-permalink: kb/157/Q157950/
+permalink: /kb/157/Q157950/
 ---
 
 ## Q157950: INFO: STL Sample for Trigonometry (sin, cos, tan, etc.) Function

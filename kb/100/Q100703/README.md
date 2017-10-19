@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100703: SMTP: Err Msg: ERROR MMFF Protocol Error"
-permalink: kb/100/Q100703/
+permalink: /kb/100/Q100703/
 ---
 
 ## Q100703: SMTP: Err Msg: ERROR MMFF Protocol Error

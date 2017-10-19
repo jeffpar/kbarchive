@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176240: XWEB: Cannot Log On to OWA If Alias Contains Double Quotes"
-permalink: kb/176/Q176240/
+permalink: /kb/176/Q176240/
 ---
 
 ## Q176240: XWEB: Cannot Log On to OWA If Alias Contains Double Quotes

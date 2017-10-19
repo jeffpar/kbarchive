@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73235: Versions of Drivers Shipped With Windows"
-permalink: kb/073/Q73235/
+permalink: /kb/073/Q73235/
 ---
 
 ## Q73235: Versions of Drivers Shipped With Windows

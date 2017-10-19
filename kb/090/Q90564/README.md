@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90564: MS-DOS Err Msg: DoubleSpace Cannot Defragment Because..."
-permalink: kb/090/Q90564/
+permalink: /kb/090/Q90564/
 ---
 
 ## Q90564: MS-DOS Err Msg: DoubleSpace Cannot Defragment Because...

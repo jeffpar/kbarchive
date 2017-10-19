@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101484: Mac Srv: Rebuild Recovers User-Created Gateway Names in PAB"
-permalink: kb/101/Q101484/
+permalink: /kb/101/Q101484/
 ---
 
 ## Q101484: Mac Srv: Rebuild Recovers User-Created Gateway Names in PAB

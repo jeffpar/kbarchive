@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192523: Print Screen Functionality Not Available on Terminalsrv Client"
-permalink: kb/192/Q192523/
+permalink: /kb/192/Q192523/
 ---
 
 ## Q192523: Print Screen Functionality Not Available on Terminalsrv Client

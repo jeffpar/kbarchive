@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315616: HOW TO: Detect a Client Language in an ASP Page in IIS"
-permalink: kb/315/Q315616/
+permalink: /kb/315/Q315616/
 ---
 
 ## Q315616: HOW TO: Detect a Client Language in an ASP Page in IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92945: Bookshelf: How to Restore Word for Windows Integration"
-permalink: kb/092/Q92945/
+permalink: /kb/092/Q92945/
 ---
 
 ## Q92945: Bookshelf: How to Restore Word for Windows Integration

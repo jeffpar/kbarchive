@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168815: XCON: MTA Doesn't Start, Event IDs 9228 and 4300"
-permalink: kb/168/Q168815/
+permalink: /kb/168/Q168815/
 ---
 
 ## Q168815: XCON: MTA Doesn't Start, Event IDs 9228 and 4300

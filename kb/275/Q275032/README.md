@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275032: IISLog Event Can't Create Directory Occurs at Startup"
-permalink: kb/275/Q275032/
+permalink: /kb/275/Q275032/
 ---
 
 ## Q275032: IISLog Event Can't Create Directory Occurs at Startup

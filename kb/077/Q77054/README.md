@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77054: Printing from an Invisible Network"
-permalink: kb/077/Q77054/
+permalink: /kb/077/Q77054/
 ---
 
 ## Q77054: Printing from an Invisible Network

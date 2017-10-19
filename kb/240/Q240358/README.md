@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240358: Ntmarta.dll File in German SP5 Has Conflicting Base Address"
-permalink: kb/240/Q240358/
+permalink: /kb/240/Q240358/
 ---
 
 ## Q240358: Ntmarta.dll File in German SP5 Has Conflicting Base Address

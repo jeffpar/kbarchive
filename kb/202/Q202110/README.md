@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202110: PRB: Deleting ATL Dialog Causes Assert in Atlwin.h, Line 2281"
-permalink: kb/202/Q202110/
+permalink: /kb/202/Q202110/
 ---
 
 ## Q202110: PRB: Deleting ATL Dialog Causes Assert in Atlwin.h, Line 2281

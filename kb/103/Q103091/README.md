@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103091: PRB: FoxBASE+ Fails to Send CHR(0) to Printer"
-permalink: kb/103/Q103091/
+permalink: /kb/103/Q103091/
 ---
 
 ## Q103091: PRB: FoxBASE+ Fails to Send CHR(0) to Printer

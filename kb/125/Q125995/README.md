@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125995: Lanman BDC Synchronization Problems in Windows NT Domains"
-permalink: kb/125/Q125995/
+permalink: /kb/125/Q125995/
 ---
 
 ## Q125995: Lanman BDC Synchronization Problems in Windows NT Domains

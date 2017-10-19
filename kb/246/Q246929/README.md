@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246929: URI Cache Flushes Performance Counter Initializes Above Zero"
-permalink: kb/246/Q246929/
+permalink: /kb/246/Q246929/
 ---
 
 ## Q246929: URI Cache Flushes Performance Counter Initializes Above Zero

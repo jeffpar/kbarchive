@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240072: Cannot Open Setup.log File Installing Terminal Server SP4"
-permalink: kb/240/Q240072/
+permalink: /kb/240/Q240072/
 ---
 
 ## Q240072: Cannot Open Setup.log File Installing Terminal Server SP4

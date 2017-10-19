@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133448: PPT7: Cannot Customize AutoClipart List"
-permalink: kb/133/Q133448/
+permalink: /kb/133/Q133448/
 ---
 
 ## Q133448: PPT7: Cannot Customize AutoClipart List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257370: XCLN: Using Hypertext Markup Language Forms and Public Folders"
-permalink: kb/257/Q257370/
+permalink: /kb/257/Q257370/
 ---
 
 ## Q257370: XCLN: Using Hypertext Markup Language Forms and Public Folders

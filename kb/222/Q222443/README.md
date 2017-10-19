@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222443: Using Cascading Style Sheets Features with ASP Forms"
-permalink: kb/222/Q222443/
+permalink: /kb/222/Q222443/
 ---
 
 ## Q222443: Using Cascading Style Sheets Features with ASP Forms

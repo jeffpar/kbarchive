@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95877: WFWG: MS-DOS Applications May Return FCB UNAVAILABLE Error"
-permalink: kb/095/Q95877/
+permalink: /kb/095/Q95877/
 ---
 
 ## Q95877: WFWG: MS-DOS Applications May Return FCB UNAVAILABLE Error

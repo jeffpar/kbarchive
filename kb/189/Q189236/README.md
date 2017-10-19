@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189236: WD97: Table of Contents Entries Appear in All Caps"
-permalink: kb/189/Q189236/
+permalink: /kb/189/Q189236/
 ---
 
 ## Q189236: WD97: Table of Contents Entries Appear in All Caps

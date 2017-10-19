@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60508: Handling Link Timeouts on Host Connections"
-permalink: kb/060/Q60508/
+permalink: /kb/060/Q60508/
 ---
 
 ## Q60508: Handling Link Timeouts on Host Connections

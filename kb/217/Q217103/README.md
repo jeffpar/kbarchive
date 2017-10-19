@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217103: How to Write a Robots.txt File"
-permalink: kb/217/Q217103/
+permalink: /kb/217/Q217103/
 ---
 
 ## Q217103: How to Write a Robots.txt File

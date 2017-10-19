@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164741: PRB: Form Cannot Find Stored Procedure via Data Environment"
-permalink: kb/164/Q164741/
+permalink: /kb/164/Q164741/
 ---
 
 ## Q164741: PRB: Form Cannot Find Stored Procedure via Data Environment

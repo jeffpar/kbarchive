@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174940: Clients May Receive Access Denied Error"
-permalink: kb/174/Q174940/
+permalink: /kb/174/Q174940/
 ---
 
 ## Q174940: Clients May Receive Access Denied Error

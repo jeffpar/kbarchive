@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173407: HOWTO: Register Your Custom ActiveX DLL from a Client"
-permalink: kb/173/Q173407/
+permalink: /kb/173/Q173407/
 ---
 
 ## Q173407: HOWTO: Register Your Custom ActiveX DLL from a Client

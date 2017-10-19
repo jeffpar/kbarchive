@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66633: Flight Simulator: Runways Are Green"
-permalink: kb/066/Q66633/
+permalink: /kb/066/Q66633/
 ---
 
 ## Q66633: Flight Simulator: Runways Are Green

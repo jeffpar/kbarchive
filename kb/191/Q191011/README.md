@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191011: How To Create a Log File of Created Named Objects"
-permalink: kb/191/Q191011/
+permalink: /kb/191/Q191011/
 ---
 
 ## Q191011: How To Create a Log File of Created Named Objects

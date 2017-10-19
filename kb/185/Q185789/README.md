@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185789: INFO: QLogic QLA1040 SCSI Miniport driver added to SP4"
-permalink: kb/185/Q185789/
+permalink: /kb/185/Q185789/
 ---
 
 ## Q185789: INFO: QLogic QLA1040 SCSI Miniport driver added to SP4

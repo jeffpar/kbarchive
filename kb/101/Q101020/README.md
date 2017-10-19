@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101020: How to Parse One Field Into Two or Three Separate Fields"
-permalink: kb/101/Q101020/
+permalink: /kb/101/Q101020/
 ---
 
 ## Q101020: How to Parse One Field Into Two or Three Separate Fields

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149643: Printing to NetWare Deallocates Directory Handle"
-permalink: kb/149/Q149643/
+permalink: /kb/149/Q149643/
 ---
 
 ## Q149643: Printing to NetWare Deallocates Directory Handle

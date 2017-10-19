@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168055: PRB: Files Saved to Novell Server May Give Read-Only Message"
-permalink: kb/168/Q168055/
+permalink: /kb/168/Q168055/
 ---
 
 ## Q168055: PRB: Files Saved to Novell Server May Give Read-Only Message

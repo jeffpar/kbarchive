@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130357: Baseball 95: National League Schedule Changes Caused By Strike"
-permalink: kb/130/Q130357/
+permalink: /kb/130/Q130357/
 ---
 
 ## Q130357: Baseball 95: National League Schedule Changes Caused By Strike

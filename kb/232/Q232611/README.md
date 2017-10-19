@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232611: Zone Error Message: Your Connection to the Zone Game Server..."
-permalink: kb/232/Q232611/
+permalink: /kb/232/Q232611/
 ---
 
 ## Q232611: Zone Error Message: Your Connection to the Zone Game Server...

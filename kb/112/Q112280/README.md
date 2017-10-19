@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112280: PC DirSync: Err Msg: Fatal Error 2 Opening File: MSTTRANS"
-permalink: kb/112/Q112280/
+permalink: /kb/112/Q112280/
 ---
 
 ## Q112280: PC DirSync: Err Msg: Fatal Error 2 Opening File: MSTTRANS

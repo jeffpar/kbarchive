@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176011: Recommended MMF size"
-permalink: kb/176/Q176011/
+permalink: /kb/176/Q176011/
 ---
 
 ## Q176011: Recommended MMF size

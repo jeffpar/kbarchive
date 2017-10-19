@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167282: WD97: Equation Object Not Inserted at Insertion Point"
-permalink: kb/167/Q167282/
+permalink: /kb/167/Q167282/
 ---
 
 ## Q167282: WD97: Equation Object Not Inserted at Insertion Point

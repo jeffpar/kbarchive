@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157512: NeoMagic 256-Color Test Screen Incorrect When Windowed"
-permalink: kb/157/Q157512/
+permalink: /kb/157/Q157512/
 ---
 
 ## Q157512: NeoMagic 256-Color Test Screen Incorrect When Windowed

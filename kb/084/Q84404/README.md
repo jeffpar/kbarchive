@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84404: Windows 3.1 Disk Directories (3.5 Inch, 720K)"
-permalink: kb/084/Q84404/
+permalink: /kb/084/Q84404/
 ---
 
 ## Q84404: Windows 3.1 Disk Directories (3.5 Inch, 720K)

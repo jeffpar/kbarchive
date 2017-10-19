@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220141: Choppy Sound In Starts Here Titles"
-permalink: kb/220/Q220141/
+permalink: /kb/220/Q220141/
 ---
 
 ## Q220141: Choppy Sound In Starts Here Titles

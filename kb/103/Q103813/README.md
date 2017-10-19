@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103813: PC Win: Mail Displays Mailbox Name in To: Field"
-permalink: kb/103/Q103813/
+permalink: /kb/103/Q103813/
 ---
 
 ## Q103813: PC Win: Mail Displays Mailbox Name in To: Field

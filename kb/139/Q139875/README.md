@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139875: D-Link Network Adapter Not Recognized During Setup"
-permalink: kb/139/Q139875/
+permalink: /kb/139/Q139875/
 ---
 
 ## Q139875: D-Link Network Adapter Not Recognized During Setup

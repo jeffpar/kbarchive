@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119579: Windows Support of the 16550 UART"
-permalink: kb/119/Q119579/
+permalink: /kb/119/Q119579/
 ---
 
 ## Q119579: Windows Support of the 16550 UART

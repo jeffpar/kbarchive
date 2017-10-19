@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265025: Access Violation in Ntbackup.exe"
-permalink: kb/265/Q265025/
+permalink: /kb/265/Q265025/
 ---
 
 ## Q265025: Access Violation in Ntbackup.exe

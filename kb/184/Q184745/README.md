@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184745: HOWTO: Use Script Control Modules and Procedures Collections"
-permalink: kb/184/Q184745/
+permalink: /kb/184/Q184745/
 ---
 
 ## Q184745: HOWTO: Use Script Control Modules and Procedures Collections

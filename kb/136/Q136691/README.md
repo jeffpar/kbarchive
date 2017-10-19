@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136691: GenMenu Differences Between FoxPro 2.x and Visual FoxPro"
-permalink: kb/136/Q136691/
+permalink: /kb/136/Q136691/
 ---
 
 ## Q136691: GenMenu Differences Between FoxPro 2.x and Visual FoxPro

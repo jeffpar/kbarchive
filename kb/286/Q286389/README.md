@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286389: Service Program Does Not Start Automatically"
-permalink: kb/286/Q286389/
+permalink: /kb/286/Q286389/
 ---
 
 ## Q286389: Service Program Does Not Start Automatically

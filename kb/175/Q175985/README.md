@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175985: FIX: Installing DAO SDK Outside of &#92;DEVSTUDIO May Cause Problems"
-permalink: kb/175/Q175985/
+permalink: /kb/175/Q175985/
 ---
 
 ## Q175985: FIX: Installing DAO SDK Outside of &#92;DEVSTUDIO May Cause Problems

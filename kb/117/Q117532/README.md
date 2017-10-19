@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117532: Password on Macintosh Volume Resets When Server is Rebooted"
-permalink: kb/117/Q117532/
+permalink: /kb/117/Q117532/
 ---
 
 ## Q117532: Password on Macintosh Volume Resets When Server is Rebooted

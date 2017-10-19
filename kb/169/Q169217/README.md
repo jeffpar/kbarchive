@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169217: XADM: Two Copies of Subfolder Found if Replication Not Specified"
-permalink: kb/169/Q169217/
+permalink: /kb/169/Q169217/
 ---
 
 ## Q169217: XADM: Two Copies of Subfolder Found if Replication Not Specified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101023: PRB: FoxPro Installation Error: File Copy Operation Failed"
-permalink: kb/101/Q101023/
+permalink: /kb/101/Q101023/
 ---
 
 ## Q101023: PRB: FoxPro Installation Error: File Copy Operation Failed

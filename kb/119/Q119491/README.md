@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119491: File Manager Displays Deleted Partitions"
-permalink: kb/119/Q119491/
+permalink: /kb/119/Q119491/
 ---
 
 ## Q119491: File Manager Displays Deleted Partitions

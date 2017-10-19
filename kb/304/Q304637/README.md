@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304637: IIS: Problems Using SSL with AuthentiX ISAPI Filter"
-permalink: kb/304/Q304637/
+permalink: /kb/304/Q304637/
 ---
 
 ## Q304637: IIS: Problems Using SSL with AuthentiX ISAPI Filter

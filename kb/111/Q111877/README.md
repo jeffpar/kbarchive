@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111877: BUG: SIZE and SIZEOF May Give Incorrect Values for Locals"
-permalink: kb/111/Q111877/
+permalink: /kb/111/Q111877/
 ---
 
 ## Q111877: BUG: SIZE and SIZEOF May Give Incorrect Values for Locals

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246838: Dr. Watson Error Message When You Start the Spooler Service"
-permalink: kb/246/Q246838/
+permalink: /kb/246/Q246838/
 ---
 
 ## Q246838: Dr. Watson Error Message When You Start the Spooler Service

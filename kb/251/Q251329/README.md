@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251329: HOWTO: Modify the Command of a Hierarchical DataReport"
-permalink: kb/251/Q251329/
+permalink: /kb/251/Q251329/
 ---
 
 ## Q251329: HOWTO: Modify the Command of a Hierarchical DataReport

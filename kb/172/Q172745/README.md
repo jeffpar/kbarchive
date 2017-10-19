@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172745: WD97: Editing Web Browser Path Creates Duplicate Entry"
-permalink: kb/172/Q172745/
+permalink: /kb/172/Q172745/
 ---
 
 ## Q172745: WD97: Editing Web Browser Path Creates Duplicate Entry

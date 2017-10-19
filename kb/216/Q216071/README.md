@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216071: SYSPREP: Incorrect Shutdown Leaves Message in Event Log"
-permalink: kb/216/Q216071/
+permalink: /kb/216/Q216071/
 ---
 
 ## Q216071: SYSPREP: Incorrect Shutdown Leaves Message in Event Log

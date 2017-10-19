@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149431: PRB: Cannot Find Entry Point (DLL Name) in the DLL"
-permalink: kb/149/Q149431/
+permalink: /kb/149/Q149431/
 ---
 
 ## Q149431: PRB: Cannot Find Entry Point (DLL Name) in the DLL

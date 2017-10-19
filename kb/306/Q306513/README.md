@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306513: Server Hangs Before Logon Screen After Uninstalling the SRP"
-permalink: kb/306/Q306513/
+permalink: /kb/306/Q306513/
 ---
 
 ## Q306513: Server Hangs Before Logon Screen After Uninstalling the SRP

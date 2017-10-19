@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107658: Writer: No Network Setup Option on Lantastic"
-permalink: kb/107/Q107658/
+permalink: /kb/107/Q107658/
 ---
 
 ## Q107658: Writer: No Network Setup Option on Lantastic

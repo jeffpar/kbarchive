@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236165: Calling 2-Digit Carrier Codes in Brazil"
-permalink: kb/236/Q236165/
+permalink: /kb/236/Q236165/
 ---
 
 ## Q236165: Calling 2-Digit Carrier Codes in Brazil

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123321: PC Win: Old MMF File Not Deleted from Server"
-permalink: kb/123/Q123321/
+permalink: /kb/123/Q123321/
 ---
 
 ## Q123321: PC Win: Old MMF File Not Deleted from Server

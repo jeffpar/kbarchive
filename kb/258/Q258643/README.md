@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258643: Baseball 2001: Game Graphics Appear Shredded"
-permalink: kb/258/Q258643/
+permalink: /kb/258/Q258643/
 ---
 
 ## Q258643: Baseball 2001: Game Graphics Appear Shredded

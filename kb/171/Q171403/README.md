@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171403: CardWizard May Cause Startup Hangs after Windows NT 4.0 SP"
-permalink: kb/171/Q171403/
+permalink: /kb/171/Q171403/
 ---
 
 ## Q171403: CardWizard May Cause Startup Hangs after Windows NT 4.0 SP

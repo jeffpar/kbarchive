@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246791: SMS: Status Filter Rule Property Page Is Unresponsive"
-permalink: kb/246/Q246791/
+permalink: /kb/246/Q246791/
 ---
 
 ## Q246791: SMS: Status Filter Rule Property Page Is Unresponsive

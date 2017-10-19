@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223172: Encarta: Help Topic Appears When You Enable Voice Control"
-permalink: kb/223/Q223172/
+permalink: /kb/223/Q223172/
 ---
 
 ## Q223172: Encarta: Help Topic Appears When You Enable Voice Control

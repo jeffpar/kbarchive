@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73601: Using Uninstall on an OS/2 System"
-permalink: kb/073/Q73601/
+permalink: /kb/073/Q73601/
 ---
 
 ## Q73601: Using Uninstall on an OS/2 System

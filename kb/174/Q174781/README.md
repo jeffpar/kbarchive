@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174781: Key Storage File Invalid Msg. When Try to Recover a Certificate"
-permalink: kb/174/Q174781/
+permalink: /kb/174/Q174781/
 ---
 
 ## Q174781: Key Storage File Invalid Msg. When Try to Recover a Certificate

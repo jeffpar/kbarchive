@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161054: FIX: COPY TO ... TYPE SDF Incorrectly Copies Null Fields"
-permalink: kb/161/Q161054/
+permalink: /kb/161/Q161054/
 ---
 
 ## Q161054: FIX: COPY TO ... TYPE SDF Incorrectly Copies Null Fields

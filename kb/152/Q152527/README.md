@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152527: Err Msg: Keycheck Failed 0x8009030e"
-permalink: kb/152/Q152527/
+permalink: /kb/152/Q152527/
 ---
 
 ## Q152527: Err Msg: Keycheck Failed 0x8009030e

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71760: Drive and Directory Manipulation in Windows"
-permalink: kb/071/Q71760/
+permalink: /kb/071/Q71760/
 ---
 
 ## Q71760: Drive and Directory Manipulation in Windows

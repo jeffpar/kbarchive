@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225036: Folder Permissions May Not Migrate During Migration From NetWare"
-permalink: kb/225/Q225036/
+permalink: /kb/225/Q225036/
 ---
 
 ## Q225036: Folder Permissions May Not Migrate During Migration From NetWare

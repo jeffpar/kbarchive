@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84946: Okidata Microline 320, 321 Correct Print Quality Selection"
-permalink: kb/084/Q84946/
+permalink: /kb/084/Q84946/
 ---
 
 ## Q84946: Okidata Microline 320, 321 Correct Print Quality Selection

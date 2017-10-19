@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86153: PROFS: Why 3270 File Transfer Should Be Tested First"
-permalink: kb/086/Q86153/
+permalink: /kb/086/Q86153/
 ---
 
 ## Q86153: PROFS: Why 3270 File Transfer Should Be Tested First

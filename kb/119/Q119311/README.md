@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119311: CA-dBFast Installation Fails to Create Group Folder"
-permalink: kb/119/Q119311/
+permalink: /kb/119/Q119311/
 ---
 
 ## Q119311: CA-dBFast Installation Fails to Create Group Folder

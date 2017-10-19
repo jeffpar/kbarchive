@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142676: Overcoming User32.dll Initialization Failure Errors"
-permalink: kb/142/Q142676/
+permalink: /kb/142/Q142676/
 ---
 
 ## Q142676: Overcoming User32.dll Initialization Failure Errors

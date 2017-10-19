@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95397: DynaComm Elite Requires a DLC Provider to Function with WFWG"
-permalink: kb/095/Q95397/
+permalink: /kb/095/Q95397/
 ---
 
 ## Q95397: DynaComm Elite Requires a DLC Provider to Function with WFWG

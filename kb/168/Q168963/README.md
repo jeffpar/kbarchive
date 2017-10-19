@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168963: Snaservr.exe Access Violation in Function s1plgrsp"
-permalink: kb/168/Q168963/
+permalink: /kb/168/Q168963/
 ---
 
 ## Q168963: Snaservr.exe Access Violation in Function s1plgrsp

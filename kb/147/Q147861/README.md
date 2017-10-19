@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147861: MSB Solar: Listing of Files Installed and Modified"
-permalink: kb/147/Q147861/
+permalink: /kb/147/Q147861/
 ---
 
 ## Q147861: MSB Solar: Listing of Files Installed and Modified

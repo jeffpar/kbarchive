@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138719: Win95 Error Message: Error: 0003 Setting the Registry File"
-permalink: kb/138/Q138719/
+permalink: /kb/138/Q138719/
 ---
 
 ## Q138719: Win95 Error Message: Error: 0003 Setting the Registry File

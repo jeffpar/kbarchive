@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80224: FORMAT May Incorrectly Return ERRORLEVEL of Zero"
-permalink: kb/080/Q80224/
+permalink: /kb/080/Q80224/
 ---
 
 ## Q80224: FORMAT May Incorrectly Return ERRORLEVEL of Zero

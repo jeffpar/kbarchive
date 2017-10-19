@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200047: Error Uninstalling Internet Explorer on Terminal Server"
-permalink: kb/200/Q200047/
+permalink: /kb/200/Q200047/
 ---
 
 ## Q200047: Error Uninstalling Internet Explorer on Terminal Server

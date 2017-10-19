@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129946: PRB: Object Instances Are Not Freed from Memory"
-permalink: kb/129/Q129946/
+permalink: /kb/129/Q129946/
 ---
 
 ## Q129946: PRB: Object Instances Are Not Freed from Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228467: Access Violation in Lsass.exe When Passing a Null Pointer"
-permalink: kb/228/Q228467/
+permalink: /kb/228/Q228467/
 ---
 
 ## Q228467: Access Violation in Lsass.exe When Passing a Null Pointer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237597: The Spoolss.exe Service Shows Increased Processor Usage"
-permalink: kb/237/Q237597/
+permalink: /kb/237/Q237597/
 ---
 
 ## Q237597: The Spoolss.exe Service Shows Increased Processor Usage

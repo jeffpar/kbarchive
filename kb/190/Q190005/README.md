@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190005: A Site Set Up for Anonymous Access Prompts Users for Password"
-permalink: kb/190/Q190005/
+permalink: /kb/190/Q190005/
 ---
 
 ## Q190005: A Site Set Up for Anonymous Access Prompts Users for Password

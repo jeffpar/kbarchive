@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172891: Modem Disconnects from MSN After Idle for 20 Minutes"
-permalink: kb/172/Q172891/
+permalink: /kb/172/Q172891/
 ---
 
 ## Q172891: Modem Disconnects from MSN After Idle for 20 Minutes

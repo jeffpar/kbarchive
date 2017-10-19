@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301499: HOW TO: Use Windows Backup to Make a Data Backup of IIS 4.0"
-permalink: kb/301/Q301499/
+permalink: /kb/301/Q301499/
 ---
 
 ## Q301499: HOW TO: Use Windows Backup to Make a Data Backup of IIS 4.0

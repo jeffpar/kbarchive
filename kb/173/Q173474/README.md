@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173474: XWEB: Read Next Message Command Fails after Move/Copy"
-permalink: kb/173/Q173474/
+permalink: /kb/173/Q173474/
 ---
 
 ## Q173474: XWEB: Read Next Message Command Fails after Move/Copy

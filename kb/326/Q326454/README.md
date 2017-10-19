@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326454: BUG: MDM Agent System Does Not Power Off"
-permalink: kb/326/Q326454/
+permalink: /kb/326/Q326454/
 ---
 
 ## Q326454: BUG: MDM Agent System Does Not Power Off

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297447: Error Message: MSN Explorer (MSN Version 6.0)--We Were Not Able"
-permalink: kb/297/Q297447/
+permalink: /kb/297/Q297447/
 ---
 
 ## Q297447: Error Message: MSN Explorer (MSN Version 6.0)--We Were Not Able

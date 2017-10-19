@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302323: The RPC Services May Hang Intermittently"
-permalink: kb/302/Q302323/
+permalink: /kb/302/Q302323/
 ---
 
 ## Q302323: The RPC Services May Hang Intermittently

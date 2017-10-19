@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271620: HOWTO: Retrieve XML Data Using SQL XML Query in VB Client"
-permalink: kb/271/Q271620/
+permalink: /kb/271/Q271620/
 ---
 
 ## Q271620: HOWTO: Retrieve XML Data Using SQL XML Query in VB Client

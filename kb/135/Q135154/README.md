@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135154: Login Script GOTO Command Finds Wrong Target Label"
-permalink: kb/135/Q135154/
+permalink: /kb/135/Q135154/
 ---
 
 ## Q135154: Login Script GOTO Command Finds Wrong Target Label

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242873: XCLN: How to Secure Outlook When You Are Away from Your Computer"
-permalink: kb/242/Q242873/
+permalink: /kb/242/Q242873/
 ---
 
 ## Q242873: XCLN: How to Secure Outlook When You Are Away from Your Computer

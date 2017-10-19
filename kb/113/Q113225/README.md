@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113225: NE2000 Failure on Windows NT/NTAS"
-permalink: kb/113/Q113225/
+permalink: /kb/113/Q113225/
 ---
 
 ## Q113225: NE2000 Failure on Windows NT/NTAS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174488: PRB: App Generates Run-Time Error 3633 When Run on New Machine"
-permalink: kb/174/Q174488/
+permalink: /kb/174/Q174488/
 ---
 
 ## Q174488: PRB: App Generates Run-Time Error 3633 When Run on New Machine

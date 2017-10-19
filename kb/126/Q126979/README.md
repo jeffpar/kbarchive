@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126979: Group Does Not Migrate from NetWare Server to Windows NT"
-permalink: kb/126/Q126979/
+permalink: /kb/126/Q126979/
 ---
 
 ## Q126979: Group Does Not Migrate from NetWare Server to Windows NT

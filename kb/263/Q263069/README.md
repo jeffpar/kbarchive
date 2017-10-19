@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263069: XADM: Dr. Watson in Exchange Server Information Store"
-permalink: kb/263/Q263069/
+permalink: /kb/263/Q263069/
 ---
 
 ## Q263069: XADM: Dr. Watson in Exchange Server Information Store

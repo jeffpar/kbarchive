@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171815: FIX: Printer.TextWidth Returning Inconsistent Results in IDE"
-permalink: kb/171/Q171815/
+permalink: /kb/171/Q171815/
 ---
 
 ## Q171815: FIX: Printer.TextWidth Returning Inconsistent Results in IDE

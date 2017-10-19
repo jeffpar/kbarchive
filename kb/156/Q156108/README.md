@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156108: Encarta 97: Lookup Reference Fails with Office, Works, Word"
-permalink: kb/156/Q156108/
+permalink: /kb/156/Q156108/
 ---
 
 ## Q156108: Encarta 97: Lookup Reference Fails with Office, Works, Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69688: Cornerstone Drivers for Single- and Dual-Page Systems"
-permalink: kb/069/Q69688/
+permalink: /kb/069/Q69688/
 ---
 
 ## Q69688: Cornerstone Drivers for Single- and Dual-Page Systems

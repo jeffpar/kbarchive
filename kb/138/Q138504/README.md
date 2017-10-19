@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138504: PRB: &quot;Data type mismatch&quot; Error When Running a Form"
-permalink: kb/138/Q138504/
+permalink: /kb/138/Q138504/
 ---
 
 ## Q138504: PRB: &quot;Data type mismatch&quot; Error When Running a Form

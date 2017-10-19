@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133162: PPT7: Network Installation: .cag Files Not Read-Only"
-permalink: kb/133/Q133162/
+permalink: /kb/133/Q133162/
 ---
 
 ## Q133162: PPT7: Network Installation: .cag Files Not Read-Only

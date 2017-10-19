@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198358: WD97: Converted Document with Numbered List Restarts Numbering"
-permalink: kb/198/Q198358/
+permalink: /kb/198/Q198358/
 ---
 
 ## Q198358: WD97: Converted Document with Numbered List Restarts Numbering

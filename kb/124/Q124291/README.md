@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124291: FIX: Access Violation When Using Local Static Const Objects"
-permalink: kb/124/Q124291/
+permalink: /kb/124/Q124291/
 ---
 
 ## Q124291: FIX: Access Violation When Using Local Static Const Objects

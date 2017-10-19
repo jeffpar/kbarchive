@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241060: Err Msg: The Certificate Server Did Not Start: Unable To..."
-permalink: kb/241/Q241060/
+permalink: /kb/241/Q241060/
 ---
 
 ## Q241060: Err Msg: The Certificate Server Did Not Start: Unable To...

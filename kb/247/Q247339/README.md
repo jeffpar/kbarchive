@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247339: XADM: Controlling the Size of Intrasite Replication Packets"
-permalink: kb/247/Q247339/
+permalink: /kb/247/Q247339/
 ---
 
 ## Q247339: XADM: Controlling the Size of Intrasite Replication Packets

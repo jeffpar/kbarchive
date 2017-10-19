@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122470: Problems with Mouse Snap-To Feature in Multimedia Titles"
-permalink: kb/122/Q122470/
+permalink: /kb/122/Q122470/
 ---
 
 ## Q122470: Problems with Mouse Snap-To Feature in Multimedia Titles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142974: Views.exe - One-To-Many Form Using a Parameterized View"
-permalink: kb/142/Q142974/
+permalink: /kb/142/Q142974/
 ---
 
 ## Q142974: Views.exe - One-To-Many Form Using a Parameterized View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155630: Windows CD-ROM Not Automatically Run Correctly"
-permalink: kb/155/Q155630/
+permalink: /kb/155/Q155630/
 ---
 
 ## Q155630: Windows CD-ROM Not Automatically Run Correctly

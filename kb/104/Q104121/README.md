@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104121: Angia Modems May Fail with DoubleSpace"
-permalink: kb/104/Q104121/
+permalink: /kb/104/Q104121/
 ---
 
 ## Q104121: Angia Modems May Fail with DoubleSpace

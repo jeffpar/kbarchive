@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155016: XFOR: MIME Inbound Mail Failure on ISO-2022-JP Character Set"
-permalink: kb/155/Q155016/
+permalink: /kb/155/Q155016/
 ---
 
 ## Q155016: XFOR: MIME Inbound Mail Failure on ISO-2022-JP Character Set

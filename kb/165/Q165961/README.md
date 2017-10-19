@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165961: XCLN: How to Fully Remove the Windows 95 and Windows NT Clients"
-permalink: kb/165/Q165961/
+permalink: /kb/165/Q165961/
 ---
 
 ## Q165961: XCLN: How to Fully Remove the Windows 95 and Windows NT Clients

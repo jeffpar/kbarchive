@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81332: HookAll2.exe Demos WH_CALLWNDPROC &amp; WH_GETMESSAGE Hooks"
-permalink: kb/081/Q81332/
+permalink: /kb/081/Q81332/
 ---
 
 ## Q81332: HookAll2.exe Demos WH_CALLWNDPROC &amp; WH_GETMESSAGE Hooks

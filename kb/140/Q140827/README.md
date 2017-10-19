@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140827: TN3270 Server Incorrectly Formats Mod 5 Terminal LU-SSCP Screens"
-permalink: kb/140/Q140827/
+permalink: /kb/140/Q140827/
 ---
 
 ## Q140827: TN3270 Server Incorrectly Formats Mod 5 Terminal LU-SSCP Screens

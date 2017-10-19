@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84932: DLLSKEL Demonstrates DLL and Calling Application"
-permalink: kb/084/Q84932/
+permalink: /kb/084/Q84932/
 ---
 
 ## Q84932: DLLSKEL Demonstrates DLL and Calling Application

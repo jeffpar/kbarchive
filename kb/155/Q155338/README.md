@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155338: Resource Kit for Windows NT 4.0 Support Guidelines"
-permalink: kb/155/Q155338/
+permalink: /kb/155/Q155338/
 ---
 
 ## Q155338: Resource Kit for Windows NT 4.0 Support Guidelines

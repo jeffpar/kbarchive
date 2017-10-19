@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259182: XCLN: Error Msg: An Internal Support Function Returned an Error"
-permalink: kb/259/Q259182/
+permalink: /kb/259/Q259182/
 ---
 
 ## Q259182: XCLN: Error Msg: An Internal Support Function Returned an Error

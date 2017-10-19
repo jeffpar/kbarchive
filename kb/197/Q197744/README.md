@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197744: WD97: Text in Table Row/Column Cut Off Below Page Break"
-permalink: kb/197/Q197744/
+permalink: /kb/197/Q197744/
 ---
 
 ## Q197744: WD97: Text in Table Row/Column Cut Off Below Page Break

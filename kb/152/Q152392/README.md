@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152392: PRB: Component Gallery Unable to Import OLE Control"
-permalink: kb/152/Q152392/
+permalink: /kb/152/Q152392/
 ---
 
 ## Q152392: PRB: Component Gallery Unable to Import OLE Control

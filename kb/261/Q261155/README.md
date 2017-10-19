@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261155: XFOR: Migration Wizard Limits New Passwords to 14 Characters"
-permalink: kb/261/Q261155/
+permalink: /kb/261/Q261155/
 ---
 
 ## Q261155: XFOR: Migration Wizard Limits New Passwords to 14 Characters

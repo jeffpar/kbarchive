@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88888: SET SCOREBOARD and SET STATUS Commands in FoxBASE+"
-permalink: kb/088/Q88888/
+permalink: /kb/088/Q88888/
 ---
 
 ## Q88888: SET SCOREBOARD and SET STATUS Commands in FoxBASE+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234593: WinNT 4.0 Tcpip.sys Hotfixes Dated 4/28/99 to 5/28/99 Replaced"
-permalink: kb/234/Q234593/
+permalink: /kb/234/Q234593/
 ---
 
 ## Q234593: WinNT 4.0 Tcpip.sys Hotfixes Dated 4/28/99 to 5/28/99 Replaced

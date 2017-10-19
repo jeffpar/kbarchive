@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223397: Event Log Error 3221229574 from Service Control Manager"
-permalink: kb/223/Q223397/
+permalink: /kb/223/Q223397/
 ---
 
 ## Q223397: Event Log Error 3221229574 from Service Control Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164992: WD97: Cancel RegOptions Macro Doesn't Cancel Registry Changes"
-permalink: kb/164/Q164992/
+permalink: /kb/164/Q164992/
 ---
 
 ## Q164992: WD97: Cancel RegOptions Macro Doesn't Cancel Registry Changes

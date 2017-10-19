@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58416: KEYB &quot;/ID:nnn&quot; Enhanced Keyboard Parameter Information"
-permalink: kb/058/Q58416/
+permalink: /kb/058/Q58416/
 ---
 
 ## Q58416: KEYB &quot;/ID:nnn&quot; Enhanced Keyboard Parameter Information

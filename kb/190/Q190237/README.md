@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190237: PRB: ImagEdit Not Included With Visual FoxPro 6.0"
-permalink: kb/190/Q190237/
+permalink: /kb/190/Q190237/
 ---
 
 ## Q190237: PRB: ImagEdit Not Included With Visual FoxPro 6.0

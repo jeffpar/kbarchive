@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235184: SMS: Registry Change Turns Off Package Target Deletion"
-permalink: kb/235/Q235184/
+permalink: /kb/235/Q235184/
 ---
 
 ## Q235184: SMS: Registry Change Turns Off Package Target Deletion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92410: PRB: Average &amp; Maximum Char Widths Different for TT Fixed Font"
-permalink: kb/092/Q92410/
+permalink: /kb/092/Q92410/
 ---
 
 ## Q92410: PRB: Average &amp; Maximum Char Widths Different for TT Fixed Font

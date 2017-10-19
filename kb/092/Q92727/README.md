@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92727: Using Norton Utilities with Windows 3.1"
-permalink: kb/092/Q92727/
+permalink: /kb/092/Q92727/
 ---
 
 ## Q92727: Using Norton Utilities with Windows 3.1

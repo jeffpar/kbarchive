@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177119: Unable to Create Zones in DNS Manager"
-permalink: kb/177/Q177119/
+permalink: /kb/177/Q177119/
 ---
 
 ## Q177119: Unable to Create Zones in DNS Manager

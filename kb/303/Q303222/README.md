@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303222: No Horizontal Scroll Bar At The Bottom Of The MSN Explorer Windo"
-permalink: kb/303/Q303222/
+permalink: /kb/303/Q303222/
 ---
 
 ## Q303222: No Horizontal Scroll Bar At The Bottom Of The MSN Explorer Windo

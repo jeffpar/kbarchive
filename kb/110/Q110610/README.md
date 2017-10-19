@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110610: BUG: MS-DOS Report Printed on LocalTalk Causes Type 1 Error"
-permalink: kb/110/Q110610/
+permalink: /kb/110/Q110610/
 ---
 
 ## Q110610: BUG: MS-DOS Report Printed on LocalTalk Causes Type 1 Error

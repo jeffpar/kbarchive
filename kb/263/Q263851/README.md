@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263851: XADM: MSExchaneIS Private Object Send Queue Size Counter"
-permalink: kb/263/Q263851/
+permalink: /kb/263/Q263851/
 ---
 
 ## Q263851: XADM: MSExchaneIS Private Object Send Queue Size Counter

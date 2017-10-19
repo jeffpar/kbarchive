@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150196: BUG: AutoSize Feature of Sheridan Command Button Does Not Work"
-permalink: kb/150/Q150196/
+permalink: /kb/150/Q150196/
 ---
 
 ## Q150196: BUG: AutoSize Feature of Sheridan Command Button Does Not Work

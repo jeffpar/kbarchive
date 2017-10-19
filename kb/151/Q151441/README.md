@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151441: 3D Movie Maker: Cannot Hear Background Music"
-permalink: kb/151/Q151441/
+permalink: /kb/151/Q151441/
 ---
 
 ## Q151441: 3D Movie Maker: Cannot Hear Background Music

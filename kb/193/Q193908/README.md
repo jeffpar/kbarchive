@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193908: SNA Server Application Exception When Using SET_TP_PROPERTIES"
-permalink: kb/193/Q193908/
+permalink: /kb/193/Q193908/
 ---
 
 ## Q193908: SNA Server Application Exception When Using SET_TP_PROPERTIES

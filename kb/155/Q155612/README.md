@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155612: Windows NT Detects Only 16 MB RAM on ERGO Notebook"
-permalink: kb/155/Q155612/
+permalink: /kb/155/Q155612/
 ---
 
 ## Q155612: Windows NT Detects Only 16 MB RAM on ERGO Notebook

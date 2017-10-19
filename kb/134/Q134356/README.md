@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134356: Error Message: General Failure in Microsoft Transport"
-permalink: kb/134/Q134356/
+permalink: /kb/134/Q134356/
 ---
 
 ## Q134356: Error Message: General Failure in Microsoft Transport

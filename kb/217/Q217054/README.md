@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217054: Revenge of Arcade: Cannot Start Games from Executable Files"
-permalink: kb/217/Q217054/
+permalink: /kb/217/Q217054/
 ---
 
 ## Q217054: Revenge of Arcade: Cannot Start Games from Executable Files

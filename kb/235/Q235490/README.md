@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235490: XFOR: Contacts Are Not Supported By GroupWise"
-permalink: kb/235/Q235490/
+permalink: /kb/235/Q235490/
 ---
 
 ## Q235490: XFOR: Contacts Are Not Supported By GroupWise

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149677: How to Upgrade to MSN 1.2 Without Connecting to MSN"
-permalink: kb/149/Q149677/
+permalink: /kb/149/Q149677/
 ---
 
 ## Q149677: How to Upgrade to MSN 1.2 Without Connecting to MSN

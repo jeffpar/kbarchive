@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149138: BUG: F6804 or F6511 Error with Spaces in Namelist Input File"
-permalink: kb/149/Q149138/
+permalink: /kb/149/Q149138/
 ---
 
 ## Q149138: BUG: F6804 or F6511 Error with Spaces in Namelist Input File

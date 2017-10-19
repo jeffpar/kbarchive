@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214951: SMS: List Items Dimmed with Custom MIF &amp; Two Sets of Parentheses"
-permalink: kb/214/Q214951/
+permalink: /kb/214/Q214951/
 ---
 
 ## Q214951: SMS: List Items Dimmed with Custom MIF &amp; Two Sets of Parentheses

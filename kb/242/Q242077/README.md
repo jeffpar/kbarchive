@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242077: SP4 on Windows NT 4.0 Enterprise Edition Records Event ID 43"
-permalink: kb/242/Q242077/
+permalink: /kb/242/Q242077/
 ---
 
 ## Q242077: SP4 on Windows NT 4.0 Enterprise Edition Records Event ID 43

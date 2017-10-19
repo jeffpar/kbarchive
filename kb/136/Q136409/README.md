@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136409: Potential Invalid Page Faults Using Bulletin Boards on MSN"
-permalink: kb/136/Q136409/
+permalink: /kb/136/Q136409/
 ---
 
 ## Q136409: Potential Invalid Page Faults Using Bulletin Boards on MSN

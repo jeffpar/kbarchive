@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247425: XADM: MSExchangeIS Private Event ID 8526"
-permalink: kb/247/Q247425/
+permalink: /kb/247/Q247425/
 ---
 
 ## Q247425: XADM: MSExchangeIS Private Event ID 8526

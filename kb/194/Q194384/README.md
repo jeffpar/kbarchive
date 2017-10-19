@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194384: X400: Cannot Send Message with 246-Byte P1 File Through Gateway"
-permalink: kb/194/Q194384/
+permalink: /kb/194/Q194384/
 ---
 
 ## Q194384: X400: Cannot Send Message with 246-Byte P1 File Through Gateway

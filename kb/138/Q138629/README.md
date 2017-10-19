@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138629: How Windows NT 3.51 Handles Compression of Paging Files"
-permalink: kb/138/Q138629/
+permalink: /kb/138/Q138629/
 ---
 
 ## Q138629: How Windows NT 3.51 Handles Compression of Paging Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168748: Java Applets Cause IE 3.02 to Stop Responding w/ SP3"
-permalink: kb/168/Q168748/
+permalink: /kb/168/Q168748/
 ---
 
 ## Q168748: Java Applets Cause IE 3.02 to Stop Responding w/ SP3

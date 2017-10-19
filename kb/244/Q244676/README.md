@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244676: HOWTO: Map, Delete, Enumerate Network Drives w/Scripting Host"
-permalink: kb/244/Q244676/
+permalink: /kb/244/Q244676/
 ---
 
 ## Q244676: HOWTO: Map, Delete, Enumerate Network Drives w/Scripting Host

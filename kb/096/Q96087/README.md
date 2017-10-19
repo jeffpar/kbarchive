@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96087: Bernoulli Drive Doesn't Mount with DoubleSpace Loaded"
-permalink: kb/096/Q96087/
+permalink: /kb/096/Q96087/
 ---
 
 ## Q96087: Bernoulli Drive Doesn't Mount with DoubleSpace Loaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168130: SMS: Despooler Service Processes SNI Files Slowly"
-permalink: kb/168/Q168130/
+permalink: /kb/168/Q168130/
 ---
 
 ## Q168130: SMS: Despooler Service Processes SNI Files Slowly

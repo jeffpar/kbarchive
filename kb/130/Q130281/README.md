@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130281: RAS Does Not Autodetect Hayes Ultra 14.4 Modem"
-permalink: kb/130/Q130281/
+permalink: /kb/130/Q130281/
 ---
 
 ## Q130281: RAS Does Not Autodetect Hayes Ultra 14.4 Modem

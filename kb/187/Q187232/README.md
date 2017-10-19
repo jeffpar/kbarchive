@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187232: HOWTO: Add Multiple Controls to a CoolBar Control Band"
-permalink: kb/187/Q187232/
+permalink: /kb/187/Q187232/
 ---
 
 ## Q187232: HOWTO: Add Multiple Controls to a CoolBar Control Band

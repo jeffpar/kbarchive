@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291086: XADM: How to Change Default SMTP Address for Domain"
-permalink: kb/291/Q291086/
+permalink: /kb/291/Q291086/
 ---
 
 ## Q291086: XADM: How to Change Default SMTP Address for Domain

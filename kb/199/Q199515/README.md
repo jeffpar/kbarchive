@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199515: SwSplit.exe Switches Splitter Pane Views in SDI App"
-permalink: kb/199/Q199515/
+permalink: /kb/199/Q199515/
 ---
 
 ## Q199515: SwSplit.exe Switches Splitter Pane Views in SDI App

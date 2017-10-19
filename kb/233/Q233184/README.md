@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233184: XCLN: Out-of-Range Calendar Items Don't Print with Daily Style"
-permalink: kb/233/Q233184/
+permalink: /kb/233/Q233184/
 ---
 
 ## Q233184: XCLN: Out-of-Range Calendar Items Don't Print with Daily Style

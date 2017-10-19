@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47961: INFO: Extracting Function ptr from a Variable arg List Function"
-permalink: kb/047/Q47961/
+permalink: /kb/047/Q47961/
 ---
 
 ## Q47961: INFO: Extracting Function ptr from a Variable arg List Function

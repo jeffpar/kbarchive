@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164884: Err Msg: Connection with Server Could Not Be Established"
-permalink: kb/164/Q164884/
+permalink: /kb/164/Q164884/
 ---
 
 ## Q164884: Err Msg: Connection with Server Could Not Be Established

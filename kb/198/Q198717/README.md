@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198717: SMS: Client Requirements for Remote Control"
-permalink: kb/198/Q198717/
+permalink: /kb/198/Q198717/
 ---
 
 ## Q198717: SMS: Client Requirements for Remote Control

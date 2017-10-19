@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130482: Compaq DeskPro XL 566 Not Automatically Rebooting Upon Failure"
-permalink: kb/130/Q130482/
+permalink: /kb/130/Q130482/
 ---
 
 ## Q130482: Compaq DeskPro XL 566 Not Automatically Rebooting Upon Failure

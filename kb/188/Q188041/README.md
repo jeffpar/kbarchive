@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188041: SMS: Considerations When Using Windows NT Trusted Domain Model"
-permalink: kb/188/Q188041/
+permalink: /kb/188/Q188041/
 ---
 
 ## Q188041: SMS: Considerations When Using Windows NT Trusted Domain Model

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315599: HOW TO: Create a Virtual Web Server by Using an ADSI Script in I"
-permalink: kb/315/Q315599/
+permalink: /kb/315/Q315599/
 ---
 
 ## Q315599: HOW TO: Create a Virtual Web Server by Using an ADSI Script in I

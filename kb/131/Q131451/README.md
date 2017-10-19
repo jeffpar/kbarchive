@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131451: How to Upgrade SourceSafe Manually"
-permalink: kb/131/Q131451/
+permalink: /kb/131/Q131451/
 ---
 
 ## Q131451: How to Upgrade SourceSafe Manually

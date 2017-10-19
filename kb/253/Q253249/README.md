@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253249: XADM: Exchange Server Versions Supported on Windows 2000 Server"
-permalink: kb/253/Q253249/
+permalink: /kb/253/Q253249/
 ---
 
 ## Q253249: XADM: Exchange Server Versions Supported on Windows 2000 Server

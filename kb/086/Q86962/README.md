@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86962: X400: How to Obtain CCITT X.400 &amp; X.25 Red Books"
-permalink: kb/086/Q86962/
+permalink: /kb/086/Q86962/
 ---
 
 ## Q86962: X400: How to Obtain CCITT X.400 &amp; X.25 Red Books

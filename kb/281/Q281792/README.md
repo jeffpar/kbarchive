@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281792: Casino: Dice, Cards, Wheels, and Slot Animations Do Not Appear"
-permalink: kb/281/Q281792/
+permalink: /kb/281/Q281792/
 ---
 
 ## Q281792: Casino: Dice, Cards, Wheels, and Slot Animations Do Not Appear

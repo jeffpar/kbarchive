@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167694: WD97: HTML Alternate Text Displayed with Object"
-permalink: kb/167/Q167694/
+permalink: /kb/167/Q167694/
 ---
 
 ## Q167694: WD97: HTML Alternate Text Displayed with Object

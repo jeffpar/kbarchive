@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128724: Unable to stop more than 13 services"
-permalink: kb/128/Q128724/
+permalink: /kb/128/Q128724/
 ---
 
 ## Q128724: Unable to stop more than 13 services

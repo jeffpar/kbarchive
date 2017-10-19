@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147012: Activating /W Switch to Prevent Restarting in WinNT"
-permalink: kb/147/Q147012/
+permalink: /kb/147/Q147012/
 ---
 
 ## Q147012: Activating /W Switch to Prevent Restarting in WinNT

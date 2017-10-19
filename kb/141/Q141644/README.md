@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141644: Mac Encarta 96 &amp; 97: Unable to Copy and Paste an Image"
-permalink: kb/141/Q141644/
+permalink: /kb/141/Q141644/
 ---
 
 ## Q141644: Mac Encarta 96 &amp; 97: Unable to Copy and Paste an Image

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74217: EXPAND.EXE Halts upon Expanded File in Windows"
-permalink: kb/074/Q74217/
+permalink: /kb/074/Q74217/
 ---
 
 ## Q74217: EXPAND.EXE Halts upon Expanded File in Windows

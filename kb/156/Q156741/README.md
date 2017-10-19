@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156741: INFO: STL Sample for the replace Function"
-permalink: kb/156/Q156741/
+permalink: /kb/156/Q156741/
 ---
 
 ## Q156741: INFO: STL Sample for the replace Function

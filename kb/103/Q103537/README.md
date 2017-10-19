@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103537: MS-DOS Upgrade Setup Doesn't Detect @ Symbol in AUTOEXEC.BAT"
-permalink: kb/103/Q103537/
+permalink: /kb/103/Q103537/
 ---
 
 ## Q103537: MS-DOS Upgrade Setup Doesn't Detect @ Symbol in AUTOEXEC.BAT

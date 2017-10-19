@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152349: XCOPY Date Switch Fails on 29th in Leap Year"
-permalink: kb/152/Q152349/
+permalink: /kb/152/Q152349/
 ---
 
 ## Q152349: XCOPY Date Switch Fails on 29th in Leap Year

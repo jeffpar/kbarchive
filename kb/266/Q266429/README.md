@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266429: BUG: &quot;Invalid DOS Path&quot; Error with VSS Command Line GET"
-permalink: kb/266/Q266429/
+permalink: /kb/266/Q266429/
 ---
 
 ## Q266429: BUG: &quot;Invalid DOS Path&quot; Error with VSS Command Line GET

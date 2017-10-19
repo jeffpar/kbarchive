@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84523: OmniPage Pro 2.0 Does Not Display Scanned Image at High Res"
-permalink: kb/084/Q84523/
+permalink: /kb/084/Q84523/
 ---
 
 ## Q84523: OmniPage Pro 2.0 Does Not Display Scanned Image at High Res

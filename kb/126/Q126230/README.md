@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126230: PC Adm: Sort Order Incorrect in Address List w/ Extended Chars"
-permalink: kb/126/Q126230/
+permalink: /kb/126/Q126230/
 ---
 
 ## Q126230: PC Adm: Sort Order Incorrect in Address List w/ Extended Chars

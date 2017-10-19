@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159601: WinNT Err: Mail Could Not Be Delivered"
-permalink: kb/159/Q159601/
+permalink: /kb/159/Q159601/
 ---
 
 ## Q159601: WinNT Err: Mail Could Not Be Delivered

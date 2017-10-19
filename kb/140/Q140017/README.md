@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140017: BUG: RasDial() Fails with Error 87 in 16-bit App in Windows 95"
-permalink: kb/140/Q140017/
+permalink: /kb/140/Q140017/
 ---
 
 ## Q140017: BUG: RasDial() Fails with Error 87 in 16-bit App in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112921: PC Win: Wrong Error Creating Shared Folder with Network Down"
-permalink: kb/112/Q112921/
+permalink: /kb/112/Q112921/
 ---
 
 ## Q112921: PC Win: Wrong Error Creating Shared Folder with Network Down

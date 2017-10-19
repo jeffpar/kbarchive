@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249307: Mac Arcade Error Message: The Finder Needs Your Attention"
-permalink: kb/249/Q249307/
+permalink: /kb/249/Q249307/
 ---
 
 ## Q249307: Mac Arcade Error Message: The Finder Needs Your Attention

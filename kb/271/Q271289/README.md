@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271289: Microsoft Reader Err Msg: You Have Reached Your Activation Limit"
-permalink: kb/271/Q271289/
+permalink: /kb/271/Q271289/
 ---
 
 ## Q271289: Microsoft Reader Err Msg: You Have Reached Your Activation Limit

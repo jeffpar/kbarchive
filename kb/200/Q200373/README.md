@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200373: XWEB: OWA Error: Unable to Set Default Formats and Patterns"
-permalink: kb/200/Q200373/
+permalink: /kb/200/Q200373/
 ---
 
 ## Q200373: XWEB: OWA Error: Unable to Set Default Formats and Patterns

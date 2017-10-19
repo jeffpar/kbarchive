@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299074: BETA FIX: Blank Reports with High Contrast Color Scheme"
-permalink: kb/299/Q299074/
+permalink: /kb/299/Q299074/
 ---
 
 ## Q299074: BETA FIX: Blank Reports with High Contrast Color Scheme

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253755: XFOR: Migration Wizard for Notes Skips All Documents View Items"
-permalink: kb/253/Q253755/
+permalink: /kb/253/Q253755/
 ---
 
 ## Q253755: XFOR: Migration Wizard for Notes Skips All Documents View Items

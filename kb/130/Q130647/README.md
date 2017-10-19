@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130647: Writer/Artist: How to Remove Your Recorded Sounds"
-permalink: kb/130/Q130647/
+permalink: /kb/130/Q130647/
 ---
 
 ## Q130647: Writer/Artist: How to Remove Your Recorded Sounds

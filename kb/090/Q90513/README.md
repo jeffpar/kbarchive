@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90513: WFWG Err Msg: MS-DOS Error SYS0002"
-permalink: kb/090/Q90513/
+permalink: /kb/090/Q90513/
 ---
 
 ## Q90513: WFWG Err Msg: MS-DOS Error SYS0002

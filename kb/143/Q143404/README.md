@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143404: FIX: ZOrder and Aligned Controls"
-permalink: kb/143/Q143404/
+permalink: /kb/143/Q143404/
 ---
 
 ## Q143404: FIX: ZOrder and Aligned Controls

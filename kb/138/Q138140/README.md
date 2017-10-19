@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138140: Untrapped Errors in VB OLE DLL Can Unload the Whole Process"
-permalink: kb/138/Q138140/
+permalink: /kb/138/Q138140/
 ---
 
 ## Q138140: Untrapped Errors in VB OLE DLL Can Unload the Whole Process

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309003: GETRT Run on Trace File w/Too Many APPC Conversations Fails"
-permalink: kb/309/Q309003/
+permalink: /kb/309/Q309003/
 ---
 
 ## Q309003: GETRT Run on Trace File w/Too Many APPC Conversations Fails

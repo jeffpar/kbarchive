@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84300: How to Use the STACKS= Setting in the CONFIG.SYS File"
-permalink: kb/084/Q84300/
+permalink: /kb/084/Q84300/
 ---
 
 ## Q84300: How to Use the STACKS= Setting in the CONFIG.SYS File

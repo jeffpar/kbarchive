@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26819: FIX: &quot;Value Out of Range&quot; Error"
-permalink: kb/026/Q26819/
+permalink: /kb/026/Q26819/
 ---
 
 ## Q26819: FIX: &quot;Value Out of Range&quot; Error

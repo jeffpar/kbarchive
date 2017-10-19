@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140510: Not All CD-ROM Changer Drives Visible in Windows 95"
-permalink: kb/140/Q140510/
+permalink: /kb/140/Q140510/
 ---
 
 ## Q140510: Not All CD-ROM Changer Drives Visible in Windows 95

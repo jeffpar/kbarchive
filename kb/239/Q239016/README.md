@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239016: SMS: WBEM May Not Install on Windows 95"
-permalink: kb/239/Q239016/
+permalink: /kb/239/Q239016/
 ---
 
 ## Q239016: SMS: WBEM May Not Install on Windows 95

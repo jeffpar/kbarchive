@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135933: Cannot Install MS Plus! on Shared or RPL System"
-permalink: kb/135/Q135933/
+permalink: /kb/135/Q135933/
 ---
 
 ## Q135933: Cannot Install MS Plus! on Shared or RPL System

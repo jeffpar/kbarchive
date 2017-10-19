@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104819: PC Win: Err Msg: Switching Between Private and Shared Folders"
-permalink: kb/104/Q104819/
+permalink: /kb/104/Q104819/
 ---
 
 ## Q104819: PC Win: Err Msg: Switching Between Private and Shared Folders

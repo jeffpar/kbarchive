@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113672: BUG: FoxPro Driver Always Shows Deleted Rows"
-permalink: kb/113/Q113672/
+permalink: /kb/113/Q113672/
 ---
 
 ## Q113672: BUG: FoxPro Driver Always Shows Deleted Rows

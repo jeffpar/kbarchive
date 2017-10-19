@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111556: PC Adm: IMPORT.EXE 3.2.18 Update"
-permalink: kb/111/Q111556/
+permalink: /kb/111/Q111556/
 ---
 
 ## Q111556: PC Adm: IMPORT.EXE 3.2.18 Update

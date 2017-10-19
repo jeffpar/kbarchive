@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131561: Matching User ID and Passwords in WinNT and LAN Manager Domains"
-permalink: kb/131/Q131561/
+permalink: /kb/131/Q131561/
 ---
 
 ## Q131561: Matching User ID and Passwords in WinNT and LAN Manager Domains

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241424: HOWTO: Export Memo Fields w/ Other Field Types to Text File"
-permalink: kb/241/Q241424/
+permalink: /kb/241/Q241424/
 ---
 
 ## Q241424: HOWTO: Export Memo Fields w/ Other Field Types to Text File

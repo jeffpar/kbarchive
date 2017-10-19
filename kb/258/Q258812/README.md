@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258812: Small Business Solutions for Microsoft Windows 2000 Professional"
-permalink: kb/258/Q258812/
+permalink: /kb/258/Q258812/
 ---
 
 ## Q258812: Small Business Solutions for Microsoft Windows 2000 Professional

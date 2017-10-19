@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128735: Microcom DeskPorte FAST EP 28.8 Not Compatible With ES Model"
-permalink: kb/128/Q128735/
+permalink: /kb/128/Q128735/
 ---
 
 ## Q128735: Microcom DeskPorte FAST EP 28.8 Not Compatible With ES Model

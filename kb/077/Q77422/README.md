@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77422: Windows 3.0 Printer Drivers"
-permalink: kb/077/Q77422/
+permalink: /kb/077/Q77422/
 ---
 
 ## Q77422: Windows 3.0 Printer Drivers

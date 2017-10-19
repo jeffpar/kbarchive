@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69347: BUG: PWB 1.1 Dialog Boxes Blink After Dialog Help Is Obtained"
-permalink: kb/069/Q69347/
+permalink: /kb/069/Q69347/
 ---
 
 ## Q69347: BUG: PWB 1.1 Dialog Boxes Blink After Dialog Help Is Obtained

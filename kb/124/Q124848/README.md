@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124848: Adding an NDIS 3.1 Protocol Does Not Add Frame Type to NET.CFG"
-permalink: kb/124/Q124848/
+permalink: /kb/124/Q124848/
 ---
 
 ## Q124848: Adding an NDIS 3.1 Protocol Does Not Add Frame Type to NET.CFG

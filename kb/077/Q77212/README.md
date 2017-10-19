@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77212: FaxIt! 2.0 with MS-DOS 5.0"
-permalink: kb/077/Q77212/
+permalink: /kb/077/Q77212/
 ---
 
 ## Q77212: FaxIt! 2.0 with MS-DOS 5.0

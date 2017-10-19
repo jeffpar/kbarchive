@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194980: PRB: Form Close Fails if Control Bound to RDC is Dirty"
-permalink: kb/194/Q194980/
+permalink: /kb/194/Q194980/
 ---
 
 ## Q194980: PRB: Form Close Fails if Control Bound to RDC is Dirty

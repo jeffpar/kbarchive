@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143172: Doc Err: Users Cannot Create New Clipbook Pages"
-permalink: kb/143/Q143172/
+permalink: /kb/143/Q143172/
 ---
 
 ## Q143172: Doc Err: Users Cannot Create New Clipbook Pages

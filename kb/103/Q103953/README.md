@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103953: Basic Protocol Requirements in Microsoft Network Architecture"
-permalink: kb/103/Q103953/
+permalink: /kb/103/Q103953/
 ---
 
 ## Q103953: Basic Protocol Requirements in Microsoft Network Architecture

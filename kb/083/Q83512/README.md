@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83512: Windows 3.1 Does Not Update Third-Party Communications Driver"
-permalink: kb/083/Q83512/
+permalink: /kb/083/Q83512/
 ---
 
 ## Q83512: Windows 3.1 Does Not Update Third-Party Communications Driver

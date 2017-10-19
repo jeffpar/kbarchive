@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96137: Description of Fuji Golf"
-permalink: kb/096/Q96137/
+permalink: /kb/096/Q96137/
 ---
 
 ## Q96137: Description of Fuji Golf

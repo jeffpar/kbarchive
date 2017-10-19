@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224229: Streets and Trips 2000: Unable to Print Route Driving Directions"
-permalink: kb/224/Q224229/
+permalink: /kb/224/Q224229/
 ---
 
 ## Q224229: Streets and Trips 2000: Unable to Print Route Driving Directions

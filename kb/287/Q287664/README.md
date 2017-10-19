@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287664: W32.FunLove.4099 Virus Compromises Server Security"
-permalink: kb/287/Q287664/
+permalink: /kb/287/Q287664/
 ---
 
 ## Q287664: W32.FunLove.4099 Virus Compromises Server Security

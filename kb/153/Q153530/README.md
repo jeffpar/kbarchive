@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153530: XADM: Administrator Misspelled in Warning Message"
-permalink: kb/153/Q153530/
+permalink: /kb/153/Q153530/
 ---
 
 ## Q153530: XADM: Administrator Misspelled in Warning Message

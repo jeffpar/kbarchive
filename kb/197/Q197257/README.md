@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197257: PRB: Problems Using Subclassed TreeView MFC Control in VB"
-permalink: kb/197/Q197257/
+permalink: /kb/197/Q197257/
 ---
 
 ## Q197257: PRB: Problems Using Subclassed TreeView MFC Control in VB

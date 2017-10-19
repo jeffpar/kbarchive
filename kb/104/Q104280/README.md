@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104280: FFAPI: Command Line Options for Remote FFAPI Programs"
-permalink: kb/104/Q104280/
+permalink: /kb/104/Q104280/
 ---
 
 ## Q104280: FFAPI: Command Line Options for Remote FFAPI Programs

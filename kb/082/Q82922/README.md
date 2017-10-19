@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82922: PC Win: Shared Folder Status Bar Has No Message Count"
-permalink: kb/082/Q82922/
+permalink: /kb/082/Q82922/
 ---
 
 ## Q82922: PC Win: Shared Folder Status Bar Has No Message Count

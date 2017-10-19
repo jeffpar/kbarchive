@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136272: Cannot Connect to Windows NT 3.1 Computer with IPX/SPX"
-permalink: kb/136/Q136272/
+permalink: /kb/136/Q136272/
 ---
 
 ## Q136272: Cannot Connect to Windows NT 3.1 Computer with IPX/SPX

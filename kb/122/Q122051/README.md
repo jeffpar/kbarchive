@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122051: How Windows 95 Performs a Safe-Mode Start"
-permalink: kb/122/Q122051/
+permalink: /kb/122/Q122051/
 ---
 
 ## Q122051: How Windows 95 Performs a Safe-Mode Start

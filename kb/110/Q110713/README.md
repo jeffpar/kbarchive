@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110713: PRB: Ampersand in Menu Item Is Not Converted"
-permalink: kb/110/Q110713/
+permalink: /kb/110/Q110713/
 ---
 
 ## Q110713: PRB: Ampersand in Menu Item Is Not Converted

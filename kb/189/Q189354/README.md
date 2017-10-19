@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189354: Stop 0x0000000a Caused by Defpa.sys"
-permalink: kb/189/Q189354/
+permalink: /kb/189/Q189354/
 ---
 
 ## Q189354: Stop 0x0000000a Caused by Defpa.sys

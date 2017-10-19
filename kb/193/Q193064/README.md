@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193064: Pressing Cancel Button in Date/Time Utility Changes Date"
-permalink: kb/193/Q193064/
+permalink: /kb/193/Q193064/
 ---
 
 ## Q193064: Pressing Cancel Button in Date/Time Utility Changes Date

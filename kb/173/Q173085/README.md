@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173085: HOWTO: Create a Process for Reading and Writing to a Pipe"
-permalink: kb/173/Q173085/
+permalink: /kb/173/Q173085/
 ---
 
 ## Q173085: HOWTO: Create a Process for Reading and Writing to a Pipe

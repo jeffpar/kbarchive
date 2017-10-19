@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86248: Incorrect CMOS Setting May Cause Insufficient Memory Error"
-permalink: kb/086/Q86248/
+permalink: /kb/086/Q86248/
 ---
 
 ## Q86248: Incorrect CMOS Setting May Cause Insufficient Memory Error

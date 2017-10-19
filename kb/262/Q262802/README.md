@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262802: XADM: Server Monitor Clock Synchronize Sets Incorrect Time"
-permalink: kb/262/Q262802/
+permalink: /kb/262/Q262802/
 ---
 
 ## Q262802: XADM: Server Monitor Clock Synchronize Sets Incorrect Time

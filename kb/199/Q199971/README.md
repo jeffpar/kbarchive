@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199971: XCON: Troubleshooting Dynamic RAS Connector (TCP/IP)"
-permalink: kb/199/Q199971/
+permalink: /kb/199/Q199971/
 ---
 
 ## Q199971: XCON: Troubleshooting Dynamic RAS Connector (TCP/IP)

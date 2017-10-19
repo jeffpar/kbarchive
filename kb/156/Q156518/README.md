@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156518: Minimized Internet Explorer Remains on Taskbar"
-permalink: kb/156/Q156518/
+permalink: /kb/156/Q156518/
 ---
 
 ## Q156518: Minimized Internet Explorer Remains on Taskbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233387: RAS Clients Cannot Access LAN When IP Forwarding is Disabled"
-permalink: kb/233/Q233387/
+permalink: /kb/233/Q233387/
 ---
 
 ## Q233387: RAS Clients Cannot Access LAN When IP Forwarding is Disabled

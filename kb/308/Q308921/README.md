@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308921: SNA Server Does Not Log All Outages on DLS Clients"
-permalink: kb/308/Q308921/
+permalink: /kb/308/Q308921/
 ---
 
 ## Q308921: SNA Server Does Not Log All Outages on DLS Clients

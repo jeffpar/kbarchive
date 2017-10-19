@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82216: Command Piped in Root Directory May Hang Machine"
-permalink: kb/082/Q82216/
+permalink: /kb/082/Q82216/
 ---
 
 ## Q82216: Command Piped in Root Directory May Hang Machine

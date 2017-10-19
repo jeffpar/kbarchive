@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141136: PC WRmt: GP Fault with Mail Remote and Hebrew WFW"
-permalink: kb/141/Q141136/
+permalink: /kb/141/Q141136/
 ---
 
 ## Q141136: PC WRmt: GP Fault with Mail Remote and Hebrew WFW

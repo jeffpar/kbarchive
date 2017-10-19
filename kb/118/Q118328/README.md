@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118328: Multimedia Viewer Title Limits"
-permalink: kb/118/Q118328/
+permalink: /kb/118/Q118328/
 ---
 
 ## Q118328: Multimedia Viewer Title Limits

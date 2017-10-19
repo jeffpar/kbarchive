@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155737: StickyKeys Feature Deactivated Without Notice"
-permalink: kb/155/Q155737/
+permalink: /kb/155/Q155737/
 ---
 
 ## Q155737: StickyKeys Feature Deactivated Without Notice

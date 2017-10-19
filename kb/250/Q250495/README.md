@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250495: PRB: SAVE SCREEN Not Creating Variable on CLEARed Screen"
-permalink: kb/250/Q250495/
+permalink: /kb/250/Q250495/
 ---
 
 ## Q250495: PRB: SAVE SCREEN Not Creating Variable on CLEARed Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169682: XFOR: MS Mail Connector Interchange Rejects Outlook Msgs"
-permalink: kb/169/Q169682/
+permalink: /kb/169/Q169682/
 ---
 
 ## Q169682: XFOR: MS Mail Connector Interchange Rejects Outlook Msgs

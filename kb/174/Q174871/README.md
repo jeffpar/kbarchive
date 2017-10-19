@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174871: Printer Shares Lost after Changing Server Name"
-permalink: kb/174/Q174871/
+permalink: /kb/174/Q174871/
 ---
 
 ## Q174871: Printer Shares Lost after Changing Server Name

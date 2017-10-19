@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87192: PROFS: Hardware and Software Requirements on the LAN"
-permalink: kb/087/Q87192/
+permalink: /kb/087/Q87192/
 ---
 
 ## Q87192: PROFS: Hardware and Software Requirements on the LAN

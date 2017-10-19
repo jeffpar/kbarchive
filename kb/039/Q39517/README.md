@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39517: Comparing String Arguments in Macros"
-permalink: kb/039/Q39517/
+permalink: /kb/039/Q39517/
 ---
 
 ## Q39517: Comparing String Arguments in Macros

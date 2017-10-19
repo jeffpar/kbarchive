@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132340: INFO: Common File Extensions Used by Visual C++"
-permalink: kb/132/Q132340/
+permalink: /kb/132/Q132340/
 ---
 
 ## Q132340: INFO: Common File Extensions Used by Visual C++

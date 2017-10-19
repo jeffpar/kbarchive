@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109430: FILE:Fw0969.exe Coordinates Menus &amp; Screens w/ Foundation READs"
-permalink: kb/109/Q109430/
+permalink: /kb/109/Q109430/
 ---
 
 ## Q109430: FILE:Fw0969.exe Coordinates Menus &amp; Screens w/ Foundation READs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130303: PRB: Default Values Not Checked for Integrity by Visual FoxPro"
-permalink: kb/130/Q130303/
+permalink: /kb/130/Q130303/
 ---
 
 ## Q130303: PRB: Default Values Not Checked for Integrity by Visual FoxPro

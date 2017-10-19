@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185347: SMS: PCM Error: Unable to Connect to &#92;&#92;Server&#92;Share(s)"
-permalink: kb/185/Q185347/
+permalink: /kb/185/Q185347/
 ---
 
 ## Q185347: SMS: PCM Error: Unable to Connect to &#92;&#92;Server&#92;Share(s)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169672: XCON: Missing X.400 Route in GWART"
-permalink: kb/169/Q169672/
+permalink: /kb/169/Q169672/
 ---
 
 ## Q169672: XCON: Missing X.400 Route in GWART

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127985: Platinum 16 Sound Card Causes GP Fault with a Pentium Processo"
-permalink: kb/127/Q127985/
+permalink: /kb/127/Q127985/
 ---
 
 ## Q127985: Platinum 16 Sound Card Causes GP Fault with a Pentium Processo

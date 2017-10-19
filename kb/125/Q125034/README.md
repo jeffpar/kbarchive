@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125034: Artist: How to Remove or Add Custom Stickers"
-permalink: kb/125/Q125034/
+permalink: /kb/125/Q125034/
 ---
 
 ## Q125034: Artist: How to Remove or Add Custom Stickers

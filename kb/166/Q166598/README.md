@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166598: XCON: Wrong Attachment Names in Messages from Mail.D"
-permalink: kb/166/Q166598/
+permalink: /kb/166/Q166598/
 ---
 
 ## Q166598: XCON: Wrong Attachment Names in Messages from Mail.D

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257558: Microsoft Help Desk for Microsoft Office 2000 Comments and Corre"
-permalink: kb/257/Q257558/
+permalink: /kb/257/Q257558/
 ---
 
 ## Q257558: Microsoft Help Desk for Microsoft Office 2000 Comments and Corre

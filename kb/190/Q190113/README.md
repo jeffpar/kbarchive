@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190113: BUG: Query Designer Generates Invalid SQL Statement"
-permalink: kb/190/Q190113/
+permalink: /kb/190/Q190113/
 ---
 
 ## Q190113: BUG: Query Designer Generates Invalid SQL Statement

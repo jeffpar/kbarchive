@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274275: Queries with German Wordbreaker Return More Results"
-permalink: kb/274/Q274275/
+permalink: /kb/274/Q274275/
 ---
 
 ## Q274275: Queries with German Wordbreaker Return More Results

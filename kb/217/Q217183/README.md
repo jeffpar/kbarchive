@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217183: FIX: GetPropertyInfo Not Returning Correct Values for Default Ca"
-permalink: kb/217/Q217183/
+permalink: /kb/217/Q217183/
 ---
 
 ## Q217183: FIX: GetPropertyInfo Not Returning Correct Values for Default Ca

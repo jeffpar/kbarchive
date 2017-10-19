@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167339: FIX: New Class Added in ATLWizard Removes Edit Interface Setting"
-permalink: kb/167/Q167339/
+permalink: /kb/167/Q167339/
 ---
 
 ## Q167339: FIX: New Class Added in ATLWizard Removes Edit Interface Setting

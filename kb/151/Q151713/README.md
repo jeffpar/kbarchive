@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151713: Description of Twisted-Pair Category Types"
-permalink: kb/151/Q151713/
+permalink: /kb/151/Q151713/
 ---
 
 ## Q151713: Description of Twisted-Pair Category Types

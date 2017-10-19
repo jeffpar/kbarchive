@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84259: Contents of IPX.WRI included with the WRK"
-permalink: kb/084/Q84259/
+permalink: /kb/084/Q84259/
 ---
 
 ## Q84259: Contents of IPX.WRI included with the WRK

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38660: Softerm Disables Serial Mouse under Windows"
-permalink: kb/038/Q38660/
+permalink: /kb/038/Q38660/
 ---
 
 ## Q38660: Softerm Disables Serial Mouse under Windows

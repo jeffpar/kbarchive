@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142265: How to use Regini.exe to modify HKEY_CURRENT_USER"
-permalink: kb/142/Q142265/
+permalink: /kb/142/Q142265/
 ---
 
 ## Q142265: How to use Regini.exe to modify HKEY_CURRENT_USER

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81361: MS-DOS Err Msg: Not Resetting System&#124;Hidden File"
-permalink: kb/081/Q81361/
+permalink: /kb/081/Q81361/
 ---
 
 ## Q81361: MS-DOS Err Msg: Not Resetting System&#124;Hidden File

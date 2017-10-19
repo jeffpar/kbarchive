@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102302: Trap 0002 Exceptions Indicate Physical RAM Damage"
-permalink: kb/102/Q102302/
+permalink: /kb/102/Q102302/
 ---
 
 ## Q102302: Trap 0002 Exceptions Indicate Physical RAM Damage

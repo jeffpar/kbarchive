@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285159: How to Create Virtual Directories to a Remote NetWare Share"
-permalink: kb/285/Q285159/
+permalink: /kb/285/Q285159/
 ---
 
 ## Q285159: How to Create Virtual Directories to a Remote NetWare Share

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245543: INFO: ODBC Connection Pooling Counters in Performance Monitor"
-permalink: kb/245/Q245543/
+permalink: /kb/245/Q245543/
 ---
 
 ## Q245543: INFO: ODBC Connection Pooling Counters in Performance Monitor

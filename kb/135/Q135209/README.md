@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135209: &quot;USS Ticonderoga&quot; Does Not Run with Compaq Qvision Triton"
-permalink: kb/135/Q135209/
+permalink: /kb/135/Q135209/
 ---
 
 ## Q135209: &quot;USS Ticonderoga&quot; Does Not Run with Compaq Qvision Triton

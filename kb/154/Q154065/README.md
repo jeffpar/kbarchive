@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154065: Cannot Boot to Duplexed Drive Using Compaq Fast Wide SCSI-2"
-permalink: kb/154/Q154065/
+permalink: /kb/154/Q154065/
 ---
 
 ## Q154065: Cannot Boot to Duplexed Drive Using Compaq Fast Wide SCSI-2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115316: Microsoft Backup for Windows Err Msg: Bad Handle..."
-permalink: kb/115/Q115316/
+permalink: /kb/115/Q115316/
 ---
 
 ## Q115316: Microsoft Backup for Windows Err Msg: Bad Handle...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158541: PRB: C2440 Error When Using CMap and User Defined Key Type"
-permalink: kb/158/Q158541/
+permalink: /kb/158/Q158541/
 ---
 
 ## Q158541: PRB: C2440 Error When Using CMap and User Defined Key Type

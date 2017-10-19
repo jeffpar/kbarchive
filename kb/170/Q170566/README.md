@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170566: Ntbackup.exe Log Has Additional Space at Beginning of Each Line"
-permalink: kb/170/Q170566/
+permalink: /kb/170/Q170566/
 ---
 
 ## Q170566: Ntbackup.exe Log Has Additional Space at Beginning of Each Line

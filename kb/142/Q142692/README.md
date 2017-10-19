@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142692: Minimizing WAN Traffic"
-permalink: kb/142/Q142692/
+permalink: /kb/142/Q142692/
 ---
 
 ## Q142692: Minimizing WAN Traffic

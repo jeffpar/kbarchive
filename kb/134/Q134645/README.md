@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134645: Mac Bookshelf 1995: Words from WordPerfect not Found"
-permalink: kb/134/Q134645/
+permalink: /kb/134/Q134645/
 ---
 
 ## Q134645: Mac Bookshelf 1995: Words from WordPerfect not Found

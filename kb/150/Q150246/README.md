@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150246: Bookshelf 96: QuickShelf Not Installed With Office 95"
-permalink: kb/150/Q150246/
+permalink: /kb/150/Q150246/
 ---
 
 ## Q150246: Bookshelf 96: QuickShelf Not Installed With Office 95

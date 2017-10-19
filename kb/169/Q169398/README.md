@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169398: HOWTO: Manipulate File Shares with ADSI (VB Sample)"
-permalink: kb/169/Q169398/
+permalink: /kb/169/Q169398/
 ---
 
 ## Q169398: HOWTO: Manipulate File Shares with ADSI (VB Sample)

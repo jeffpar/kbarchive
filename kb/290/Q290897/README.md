@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290897: XADM: Error Message: The Folder Could Not Be Opened"
-permalink: kb/290/Q290897/
+permalink: /kb/290/Q290897/
 ---
 
 ## Q290897: XADM: Error Message: The Folder Could Not Be Opened

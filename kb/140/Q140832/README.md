@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140832: SNA Server Windows 3.x Client Fails to Install on Windows 95"
-permalink: kb/140/Q140832/
+permalink: /kb/140/Q140832/
 ---
 
 ## Q140832: SNA Server Windows 3.x Client Fails to Install on Windows 95

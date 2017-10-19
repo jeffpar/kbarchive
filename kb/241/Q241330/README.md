@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241330: Nwconv.exe Does Not Provide a Method of Migrating Printer Queues"
-permalink: kb/241/Q241330/
+permalink: /kb/241/Q241330/
 ---
 
 ## Q241330: Nwconv.exe Does Not Provide a Method of Migrating Printer Queues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65267: Setting the Default Directory for Windows Applications"
-permalink: kb/065/Q65267/
+permalink: /kb/065/Q65267/
 ---
 
 ## Q65267: Setting the Default Directory for Windows Applications

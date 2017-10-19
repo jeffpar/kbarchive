@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200545: SMS: Client Configuration Setter - Setclcfg.exe"
-permalink: kb/200/Q200545/
+permalink: /kb/200/Q200545/
 ---
 
 ## Q200545: SMS: Client Configuration Setter - Setclcfg.exe

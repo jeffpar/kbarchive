@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303802: HOWTO: Troubleshoot SMB Connections from IIS/ASP"
-permalink: kb/303/Q303802/
+permalink: /kb/303/Q303802/
 ---
 
 ## Q303802: HOWTO: Troubleshoot SMB Connections from IIS/ASP

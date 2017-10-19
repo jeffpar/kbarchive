@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90232: Shared Folder Icons May Revert to Standard Folder Icons"
-permalink: kb/090/Q90232/
+permalink: /kb/090/Q90232/
 ---
 
 ## Q90232: Shared Folder Icons May Revert to Standard Folder Icons

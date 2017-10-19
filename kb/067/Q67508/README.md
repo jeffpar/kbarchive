@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67508: BIOS Version for Tandy 3000 Computers"
-permalink: kb/067/Q67508/
+permalink: /kb/067/Q67508/
 ---
 
 ## Q67508: BIOS Version for Tandy 3000 Computers

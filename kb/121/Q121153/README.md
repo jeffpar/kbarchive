@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121153: ScanDisk UNDO Date &amp; Time Format Doesn't Use the Country Code"
-permalink: kb/121/Q121153/
+permalink: /kb/121/Q121153/
 ---
 
 ## Q121153: ScanDisk UNDO Date &amp; Time Format Doesn't Use the Country Code

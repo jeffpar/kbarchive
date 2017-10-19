@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156792: &quot;Visual FoxPro 3 Step by Step&quot; Lesson 9 notes &amp; corrections"
-permalink: kb/156/Q156792/
+permalink: /kb/156/Q156792/
 ---
 
 ## Q156792: &quot;Visual FoxPro 3 Step by Step&quot; Lesson 9 notes &amp; corrections

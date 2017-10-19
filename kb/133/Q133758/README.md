@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133758: BUG: Mismatched User32.dbg File on Windows NT 3.51 CD-ROM Disc"
-permalink: kb/133/Q133758/
+permalink: /kb/133/Q133758/
 ---
 
 ## Q133758: BUG: Mismatched User32.dbg File on Windows NT 3.51 CD-ROM Disc

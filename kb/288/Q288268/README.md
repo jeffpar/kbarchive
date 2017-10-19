@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288268: XADM: How to Determine Which Users Are Using KMS"
-permalink: kb/288/Q288268/
+permalink: /kb/288/Q288268/
 ---
 
 ## Q288268: XADM: How to Determine Which Users Are Using KMS

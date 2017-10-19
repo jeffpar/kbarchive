@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191593: BUG: ALTER TABLE Causes Memo File is Missing or Invalid Err"
-permalink: kb/191/Q191593/
+permalink: /kb/191/Q191593/
 ---
 
 ## Q191593: BUG: ALTER TABLE Causes Memo File is Missing or Invalid Err

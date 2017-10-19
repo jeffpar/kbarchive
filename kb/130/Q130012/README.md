@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130012: PROFS: PWASETUP Version 3.4a.041 Update"
-permalink: kb/130/Q130012/
+permalink: /kb/130/Q130012/
 ---
 
 ## Q130012: PROFS: PWASETUP Version 3.4a.041 Update

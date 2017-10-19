@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240653: HOWTO: Copy the Screen or Active Window to the Clipboard from VB"
-permalink: kb/240/Q240653/
+permalink: /kb/240/Q240653/
 ---
 
 ## Q240653: HOWTO: Copy the Screen or Active Window to the Clipboard from VB

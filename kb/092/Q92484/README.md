@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92484: Memory Overflow Error Message Printing to HP III Compatible"
-permalink: kb/092/Q92484/
+permalink: /kb/092/Q92484/
 ---
 
 ## Q92484: Memory Overflow Error Message Printing to HP III Compatible

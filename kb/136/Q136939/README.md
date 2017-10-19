@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136939: MS Backup Error Message: A Serious Error Has Occurred..."
-permalink: kb/136/Q136939/
+permalink: /kb/136/Q136939/
 ---
 
 ## Q136939: MS Backup Error Message: A Serious Error Has Occurred...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70057: ASD: Cannot Create Runways at Catalina Airport"
-permalink: kb/070/Q70057/
+permalink: /kb/070/Q70057/
 ---
 
 ## Q70057: ASD: Cannot Create Runways at Catalina Airport

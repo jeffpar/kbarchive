@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150688: Differences Between a Workgroup Post Office and Microsoft Mail"
-permalink: kb/150/Q150688/
+permalink: /kb/150/Q150688/
 ---
 
 ## Q150688: Differences Between a Workgroup Post Office and Microsoft Mail

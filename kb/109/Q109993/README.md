@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109993: Winsock Application Causes 0x0000000A Blue Screen STOP Message"
-permalink: kb/109/Q109993/
+permalink: /kb/109/Q109993/
 ---
 
 ## Q109993: Winsock Application Causes 0x0000000A Blue Screen STOP Message

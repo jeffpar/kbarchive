@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160183: XADM: Processing File Server.ins, at or near Line 437"
-permalink: kb/160/Q160183/
+permalink: /kb/160/Q160183/
 ---
 
 ## Q160183: XADM: Processing File Server.ins, at or near Line 437

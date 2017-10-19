@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151703: FIX: Cannot Print a SourceSafe Report From Windows 95"
-permalink: kb/151/Q151703/
+permalink: /kb/151/Q151703/
 ---
 
 ## Q151703: FIX: Cannot Print a SourceSafe Report From Windows 95

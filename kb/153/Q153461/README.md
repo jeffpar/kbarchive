@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153461: PostScript Printer Skips Blank Pages When Printing"
-permalink: kb/153/Q153461/
+permalink: /kb/153/Q153461/
 ---
 
 ## Q153461: PostScript Printer Skips Blank Pages When Printing

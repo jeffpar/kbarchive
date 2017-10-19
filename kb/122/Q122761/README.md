@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122761: PC Win: Error Messages Associated with STORE.DLL &amp; MSMAIL.EXE"
-permalink: kb/122/Q122761/
+permalink: /kb/122/Q122761/
 ---
 
 ## Q122761: PC Win: Error Messages Associated with STORE.DLL &amp; MSMAIL.EXE

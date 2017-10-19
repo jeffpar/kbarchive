@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193058: DOC: How to use the RasSecurityDialogReceive API"
-permalink: kb/193/Q193058/
+permalink: /kb/193/Q193058/
 ---
 
 ## Q193058: DOC: How to use the RasSecurityDialogReceive API

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97644: HOWTO: Merge Text from a Memo Field"
-permalink: kb/097/Q97644/
+permalink: /kb/097/Q97644/
 ---
 
 ## Q97644: HOWTO: Merge Text from a Memo Field

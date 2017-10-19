@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254000: SNA Server Access Violation Occurs after Dynamically Adding 3270"
-permalink: kb/254/Q254000/
+permalink: /kb/254/Q254000/
 ---
 
 ## Q254000: SNA Server Access Violation Occurs after Dynamically Adding 3270

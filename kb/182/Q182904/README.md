@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182904: XADM: How to Set Up a Moderated Public Folder"
-permalink: kb/182/Q182904/
+permalink: /kb/182/Q182904/
 ---
 
 ## Q182904: XADM: How to Set Up a Moderated Public Folder

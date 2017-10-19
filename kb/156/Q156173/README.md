@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156173: HOWTO: Use the New Class Browser in Visual FoxPro"
-permalink: kb/156/Q156173/
+permalink: /kb/156/Q156173/
 ---
 
 ## Q156173: HOWTO: Use the New Class Browser in Visual FoxPro

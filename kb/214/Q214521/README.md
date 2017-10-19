@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214521: Multithreaded SLI Application May Deadlock within WINSLI32.DLL"
-permalink: kb/214/Q214521/
+permalink: /kb/214/Q214521/
 ---
 
 ## Q214521: Multithreaded SLI Application May Deadlock within WINSLI32.DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131637: PC Win: Viewing Windows Characters in Mail Messages"
-permalink: kb/131/Q131637/
+permalink: /kb/131/Q131637/
 ---
 
 ## Q131637: PC Win: Viewing Windows Characters in Mail Messages

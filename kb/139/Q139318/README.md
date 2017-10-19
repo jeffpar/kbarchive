@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139318: 1996 Encarta World Atlas: Manual Installation Instructions"
-permalink: kb/139/Q139318/
+permalink: /kb/139/Q139318/
 ---
 
 ## Q139318: 1996 Encarta World Atlas: Manual Installation Instructions

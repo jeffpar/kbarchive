@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87178: PROFS: Information Required to Troubleshoot LAN-Side Problems"
-permalink: kb/087/Q87178/
+permalink: /kb/087/Q87178/
 ---
 
 ## Q87178: PROFS: Information Required to Troubleshoot LAN-Side Problems

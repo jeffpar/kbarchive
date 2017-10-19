@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106210: Expanding Branches in the Registry Editor"
-permalink: kb/106/Q106210/
+permalink: /kb/106/Q106210/
 ---
 
 ## Q106210: Expanding Branches in the Registry Editor

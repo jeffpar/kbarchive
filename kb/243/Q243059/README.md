@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243059: How to Enable Logging for Process Accounting for IIS 5.0"
-permalink: kb/243/Q243059/
+permalink: /kb/243/Q243059/
 ---
 
 ## Q243059: How to Enable Logging for Process Accounting for IIS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126160: MS-DOS-Based Game Setup Does Not Detect WSS as Sound Blaster"
-permalink: kb/126/Q126160/
+permalink: /kb/126/Q126160/
 ---
 
 ## Q126160: MS-DOS-Based Game Setup Does Not Detect WSS as Sound Blaster

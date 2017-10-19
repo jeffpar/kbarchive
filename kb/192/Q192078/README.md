@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192078: BUG: Exclusive Check Box Unselected After Importing/Exporting"
-permalink: kb/192/Q192078/
+permalink: /kb/192/Q192078/
 ---
 
 ## Q192078: BUG: Exclusive Check Box Unselected After Importing/Exporting

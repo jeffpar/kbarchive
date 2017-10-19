@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87408: PC DB: Symptoms of Not Having a KEY File"
-permalink: kb/087/Q87408/
+permalink: /kb/087/Q87408/
 ---
 
 ## Q87408: PC DB: Symptoms of Not Having a KEY File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121230: Maximizer for Windows Cannot Find Databases"
-permalink: kb/121/Q121230/
+permalink: /kb/121/Q121230/
 ---
 
 ## Q121230: Maximizer for Windows Cannot Find Databases

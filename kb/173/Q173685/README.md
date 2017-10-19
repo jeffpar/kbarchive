@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173685: INFO: Synchronizing Jet Databases Over the Internet"
-permalink: kb/173/Q173685/
+permalink: /kb/173/Q173685/
 ---
 
 ## Q173685: INFO: Synchronizing Jet Databases Over the Internet

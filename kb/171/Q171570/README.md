@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171570: Disable.exe Example Enables/Disables Menu Pads and Bars"
-permalink: kb/171/Q171570/
+permalink: /kb/171/Q171570/
 ---
 
 ## Q171570: Disable.exe Example Enables/Disables Menu Pads and Bars

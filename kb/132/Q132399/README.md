@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132399: SQLGetData() Returns SQL_NO_TOTAL in RFX_LongBinary()"
-permalink: kb/132/Q132399/
+permalink: /kb/132/Q132399/
 ---
 
 ## Q132399: SQLGetData() Returns SQL_NO_TOTAL in RFX_LongBinary()

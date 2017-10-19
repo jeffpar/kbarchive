@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166058: WD97: Open for Editing from Word Viewer Creates Instance of Word"
-permalink: kb/166/Q166058/
+permalink: /kb/166/Q166058/
 ---
 
 ## Q166058: WD97: Open for Editing from Word Viewer Creates Instance of Word

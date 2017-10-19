@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159287: XCLN: MAPIFindNext Fails to Retrieve Message Identifiers"
-permalink: kb/159/Q159287/
+permalink: /kb/159/Q159287/
 ---
 
 ## Q159287: XCLN: MAPIFindNext Fails to Retrieve Message Identifiers

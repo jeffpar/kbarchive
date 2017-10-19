@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128512: SMTP: -MR Option Ignored When You Use It with -MD"
-permalink: kb/128/Q128512/
+permalink: /kb/128/Q128512/
 ---
 
 ## Q128512: SMTP: -MR Option Ignored When You Use It with -MD

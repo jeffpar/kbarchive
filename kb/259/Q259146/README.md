@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259146: XCON: MTA Slow When Sending to Multiple Servers in the Same Site"
-permalink: kb/259/Q259146/
+permalink: /kb/259/Q259146/
 ---
 
 ## Q259146: XCON: MTA Slow When Sending to Multiple Servers in the Same Site

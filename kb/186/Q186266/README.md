@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186266: INFO: What Is Handled Differently in Windows CE, VBCE, and eVB"
-permalink: kb/186/Q186266/
+permalink: /kb/186/Q186266/
 ---
 
 ## Q186266: INFO: What Is Handled Differently in Windows CE, VBCE, and eVB

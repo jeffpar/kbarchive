@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110851: Erratic Mouse with Gateway 2000 P5-60 Computer"
-permalink: kb/110/Q110851/
+permalink: /kb/110/Q110851/
 ---
 
 ## Q110851: Erratic Mouse with Gateway 2000 P5-60 Computer

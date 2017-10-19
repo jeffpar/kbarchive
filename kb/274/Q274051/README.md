@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274051: INFO: Anti-Virus Software May Impact VSS Performance"
-permalink: kb/274/Q274051/
+permalink: /kb/274/Q274051/
 ---
 
 ## Q274051: INFO: Anti-Virus Software May Impact VSS Performance

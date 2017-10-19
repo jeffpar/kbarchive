@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169096: FP: FrontPage Ships on Compact Disc Only"
-permalink: kb/169/Q169096/
+permalink: /kb/169/Q169096/
 ---
 
 ## Q169096: FP: FrontPage Ships on Compact Disc Only

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194366: Encarta: How to Contact Encarta Annual Update Program"
-permalink: kb/194/Q194366/
+permalink: /kb/194/Q194366/
 ---
 
 ## Q194366: Encarta: How to Contact Encarta Annual Update Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243960: Site Operators Receive Error When Creating New Virtual Directory"
-permalink: kb/243/Q243960/
+permalink: /kb/243/Q243960/
 ---
 
 ## Q243960: Site Operators Receive Error When Creating New Virtual Directory

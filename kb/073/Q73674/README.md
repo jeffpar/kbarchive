@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73674: Icon and Cursor Size Determined by Display Driver"
-permalink: kb/073/Q73674/
+permalink: /kb/073/Q73674/
 ---
 
 ## Q73674: Icon and Cursor Size Determined by Display Driver

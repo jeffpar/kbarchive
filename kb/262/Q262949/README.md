@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262949: SMS: During 1.2 Upgrade, RC Won't Complete if Sms.ini Deleted"
-permalink: kb/262/Q262949/
+permalink: /kb/262/Q262949/
 ---
 
 ## Q262949: SMS: During 1.2 Upgrade, RC Won't Complete if Sms.ini Deleted

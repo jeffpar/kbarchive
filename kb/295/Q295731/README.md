@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295731: XCON:  RPC Fails Between Site Connectors When Servers Use IPX"
-permalink: kb/295/Q295731/
+permalink: /kb/295/Q295731/
 ---
 
 ## Q295731: XCON:  RPC Fails Between Site Connectors When Servers Use IPX

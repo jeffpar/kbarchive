@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67085: DOCERR: NOF Is Default for LINK"
-permalink: kb/067/Q67085/
+permalink: /kb/067/Q67085/
 ---
 
 ## Q67085: DOCERR: NOF Is Default for LINK

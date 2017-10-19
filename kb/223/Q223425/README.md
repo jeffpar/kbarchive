@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223425: PRB: I-Beam Cursor Doesn't Appear When Adding New Record in Grid"
-permalink: kb/223/Q223425/
+permalink: /kb/223/Q223425/
 ---
 
 ## Q223425: PRB: I-Beam Cursor Doesn't Appear When Adding New Record in Grid

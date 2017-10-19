@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155593: SMS: No Network Found When Changing Client Redirector"
-permalink: kb/155/Q155593/
+permalink: /kb/155/Q155593/
 ---
 
 ## Q155593: SMS: No Network Found When Changing Client Redirector

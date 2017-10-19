@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135263: Reapply Layout Doesn't Work If Master Layout Is Deleted"
-permalink: kb/135/Q135263/
+permalink: /kb/135/Q135263/
 ---
 
 ## Q135263: Reapply Layout Doesn't Work If Master Layout Is Deleted

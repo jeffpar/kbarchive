@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240805: Err Msg: The Dependency Service Does Not Exist or Is Marked..."
-permalink: kb/240/Q240805/
+permalink: /kb/240/Q240805/
 ---
 
 ## Q240805: Err Msg: The Dependency Service Does Not Exist or Is Marked...

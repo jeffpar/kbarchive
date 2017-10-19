@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86556: MHS: Specific Hardware Needed by the Gateway"
-permalink: kb/086/Q86556/
+permalink: /kb/086/Q86556/
 ---
 
 ## Q86556: MHS: Specific Hardware Needed by the Gateway

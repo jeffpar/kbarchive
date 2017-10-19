@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182083: XFOR: Attachment Extensions Handled Differently in Exchange 5.5"
-permalink: kb/182/Q182083/
+permalink: /kb/182/Q182083/
 ---
 
 ## Q182083: XFOR: Attachment Extensions Handled Differently in Exchange 5.5

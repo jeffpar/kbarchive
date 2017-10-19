@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128009: ErrMsg: Lockout Duration Must Be Greater Than...Reset Count"
-permalink: kb/128/Q128009/
+permalink: /kb/128/Q128009/
 ---
 
 ## Q128009: ErrMsg: Lockout Duration Must Be Greater Than...Reset Count

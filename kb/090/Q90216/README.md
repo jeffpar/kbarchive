@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90216: NE 1000 and NE 2000 Don't Work on IRQ 5 with I/O at 300h"
-permalink: kb/090/Q90216/
+permalink: /kb/090/Q90216/
 ---
 
 ## Q90216: NE 1000 and NE 2000 Don't Work on IRQ 5 with I/O at 300h

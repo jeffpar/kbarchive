@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172138: HOW TO: Create a Virtual Directory in IIS"
-permalink: kb/172/Q172138/
+permalink: /kb/172/Q172138/
 ---
 
 ## Q172138: HOW TO: Create a Virtual Directory in IIS

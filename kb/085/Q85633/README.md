@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85633: SAMPLE: SplitWin.exe Splits a Window into Two Panes"
-permalink: kb/085/Q85633/
+permalink: /kb/085/Q85633/
 ---
 
 ## Q85633: SAMPLE: SplitWin.exe Splits a Window into Two Panes

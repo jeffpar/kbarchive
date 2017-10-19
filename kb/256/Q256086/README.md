@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256086: Allegiance: Limits to the Allow Friendly Fire Option"
-permalink: kb/256/Q256086/
+permalink: /kb/256/Q256086/
 ---
 
 ## Q256086: Allegiance: Limits to the Allow Friendly Fire Option

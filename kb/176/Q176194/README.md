@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176194: XFOR: Messages Fail to Process When No PRMD Defined"
-permalink: kb/176/Q176194/
+permalink: /kb/176/Q176194/
 ---
 
 ## Q176194: XFOR: Messages Fail to Process When No PRMD Defined

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166522: XFOR: From Field Changed When Message Sent to INS"
-permalink: kb/166/Q166522/
+permalink: /kb/166/Q166522/
 ---
 
 ## Q166522: XFOR: From Field Changed When Message Sent to INS

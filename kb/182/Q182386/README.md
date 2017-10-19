@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182386: PRB: Varchar Output Parameter Causes &quot;Data Truncated&quot; Error"
-permalink: kb/182/Q182386/
+permalink: /kb/182/Q182386/
 ---
 
 ## Q182386: PRB: Varchar Output Parameter Causes &quot;Data Truncated&quot; Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173274: How to Uninstall The Microsoft Network Version 2.5"
-permalink: kb/173/Q173274/
+permalink: /kb/173/Q173274/
 ---
 
 ## Q173274: How to Uninstall The Microsoft Network Version 2.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87193: PROFS: How Is the LAN Connected to the VM Systems?"
-permalink: kb/087/Q87193/
+permalink: /kb/087/Q87193/
 ---
 
 ## Q87193: PROFS: How Is the LAN Connected to the VM Systems?

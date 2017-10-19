@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125243: Adding Non-SCSI CD-ROM Drivers After Installing Windows NT"
-permalink: kb/125/Q125243/
+permalink: /kb/125/Q125243/
 ---
 
 ## Q125243: Adding Non-SCSI CD-ROM Drivers After Installing Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163016: Access Violation in GetHonestyLicense Using TN3270 Server"
-permalink: kb/163/Q163016/
+permalink: /kb/163/Q163016/
 ---
 
 ## Q163016: Access Violation in GetHonestyLicense Using TN3270 Server

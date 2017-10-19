@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280069: Games: How to Troubleshoot Invalid Page Faults (Part 2)"
-permalink: kb/280/Q280069/
+permalink: /kb/280/Q280069/
 ---
 
 ## Q280069: Games: How to Troubleshoot Invalid Page Faults (Part 2)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71731: Installing Windows Version 3.0 on IBM L40 Laptop"
-permalink: kb/071/Q71731/
+permalink: /kb/071/Q71731/
 ---
 
 ## Q71731: Installing Windows Version 3.0 on IBM L40 Laptop

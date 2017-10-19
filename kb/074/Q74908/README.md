@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74908: CWheel.exe Uses the Palette Under Windows"
-permalink: kb/074/Q74908/
+permalink: /kb/074/Q74908/
 ---
 
 ## Q74908: CWheel.exe Uses the Palette Under Windows

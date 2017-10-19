@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164458: WD97: &quot;This Document May Be Corrupt&quot; Editing Master Document"
-permalink: kb/164/Q164458/
+permalink: /kb/164/Q164458/
 ---
 
 ## Q164458: WD97: &quot;This Document May Be Corrupt&quot; Editing Master Document

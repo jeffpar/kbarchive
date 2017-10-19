@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136025: How to Use Class Browser to Move Objects from Class to Class"
-permalink: kb/136/Q136025/
+permalink: /kb/136/Q136025/
 ---
 
 ## Q136025: How to Use Class Browser to Move Objects from Class to Class

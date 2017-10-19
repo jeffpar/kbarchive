@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165146: XCON: Exchange MTA Logs Event ID 62 and 3144"
-permalink: kb/165/Q165146/
+permalink: /kb/165/Q165146/
 ---
 
 ## Q165146: XCON: Exchange MTA Logs Event ID 62 and 3144

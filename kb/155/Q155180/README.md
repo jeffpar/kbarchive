@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155180: Granting RAS Dial-in Permission to a Group of Users"
-permalink: kb/155/Q155180/
+permalink: /kb/155/Q155180/
 ---
 
 ## Q155180: Granting RAS Dial-in Permission to a Group of Users

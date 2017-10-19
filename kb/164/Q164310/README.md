@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164310: XCLN: Exchange Server Available Application Program Interfaces"
-permalink: kb/164/Q164310/
+permalink: /kb/164/Q164310/
 ---
 
 ## Q164310: XCLN: Exchange Server Available Application Program Interfaces

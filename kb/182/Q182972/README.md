@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182972: Stepping Levels That Do Not Match May Cause Problems in WinNT"
-permalink: kb/182/Q182972/
+permalink: /kb/182/Q182972/
 ---
 
 ## Q182972: Stepping Levels That Do Not Match May Cause Problems in WinNT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166297: Override Size Checkbox Added to Print Session Property Page"
-permalink: kb/166/Q166297/
+permalink: /kb/166/Q166297/
 ---
 
 ## Q166297: Override Size Checkbox Added to Print Session Property Page

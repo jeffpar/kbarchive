@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197281: XCON: MTA Can Stop After Generating an Event ID 9405"
-permalink: kb/197/Q197281/
+permalink: /kb/197/Q197281/
 ---
 
 ## Q197281: XCON: MTA Can Stop After Generating an Event ID 9405

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150771: LEARN VISUAL BASIC NOW Corrections and Comments"
-permalink: kb/150/Q150771/
+permalink: /kb/150/Q150771/
 ---
 
 ## Q150771: LEARN VISUAL BASIC NOW Corrections and Comments

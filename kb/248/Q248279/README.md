@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248279: Poor Performance Observed on WLBS Hosts"
-permalink: kb/248/Q248279/
+permalink: /kb/248/Q248279/
 ---
 
 ## Q248279: Poor Performance Observed on WLBS Hosts

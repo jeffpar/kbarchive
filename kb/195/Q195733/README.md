@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195733: Denial of Service in Applications Using RPC over Named Pipes"
-permalink: kb/195/Q195733/
+permalink: /kb/195/Q195733/
 ---
 
 ## Q195733: Denial of Service in Applications Using RPC over Named Pipes

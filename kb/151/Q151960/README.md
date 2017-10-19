@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151960: FP: Table Column Widths Don't Equal Total Width of Table"
-permalink: kb/151/Q151960/
+permalink: /kb/151/Q151960/
 ---
 
 ## Q151960: FP: Table Column Widths Don't Equal Total Width of Table

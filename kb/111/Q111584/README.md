@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111584: BUG: Occasional Gap Between Adjacent Pie() Wedges"
-permalink: kb/111/Q111584/
+permalink: /kb/111/Q111584/
 ---
 
 ## Q111584: BUG: Occasional Gap Between Adjacent Pie() Wedges

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131727: XADM: EDBUTIL /d &lt;Path to Dir.edb&gt; Causes NT 2140 Error"
-permalink: kb/131/Q131727/
+permalink: /kb/131/Q131727/
 ---
 
 ## Q131727: XADM: EDBUTIL /d &lt;Path to Dir.edb&gt; Causes NT 2140 Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127925: Remote Control Works Only Once with Micromatic VTD/8 Gateway"
-permalink: kb/127/Q127925/
+permalink: /kb/127/Q127925/
 ---
 
 ## Q127925: Remote Control Works Only Once with Micromatic VTD/8 Gateway

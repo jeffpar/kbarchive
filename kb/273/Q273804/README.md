@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273804: SMS Supports Windows Millennium Edition as a Client Platform"
-permalink: kb/273/Q273804/
+permalink: /kb/273/Q273804/
 ---
 
 ## Q273804: SMS Supports Windows Millennium Edition as a Client Platform

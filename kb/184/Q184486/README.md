@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184486: WD97: Personal Info Style Applied as Style of Next Paragraph"
-permalink: kb/184/Q184486/
+permalink: /kb/184/Q184486/
 ---
 
 ## Q184486: WD97: Personal Info Style Applied as Style of Next Paragraph

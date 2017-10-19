@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184853: Outwars: Choppy, Distorted, or Stuttering Sound"
-permalink: kb/184/Q184853/
+permalink: /kb/184/Q184853/
 ---
 
 ## Q184853: Outwars: Choppy, Distorted, or Stuttering Sound

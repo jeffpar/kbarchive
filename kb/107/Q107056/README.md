@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107056: File Server Hangs Network After Accessing Shared CD-ROM"
-permalink: kb/107/Q107056/
+permalink: /kb/107/Q107056/
 ---
 
 ## Q107056: File Server Hangs Network After Accessing Shared CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235448: XGEN: Updates to the Exchange Server 5.5 SP3 GroupWise Connector"
-permalink: kb/235/Q235448/
+permalink: /kb/235/Q235448/
 ---
 
 ## Q235448: XGEN: Updates to the Exchange Server 5.5 SP3 GroupWise Connector

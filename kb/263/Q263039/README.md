@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263039: Games: How to Troubleshoot Display Issues"
-permalink: kb/263/Q263039/
+permalink: /kb/263/Q263039/
 ---
 
 ## Q263039: Games: How to Troubleshoot Display Issues

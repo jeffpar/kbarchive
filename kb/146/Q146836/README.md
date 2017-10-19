@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146836: XCLN: Unread Message Count Not Updated Correctly"
-permalink: kb/146/Q146836/
+permalink: /kb/146/Q146836/
 ---
 
 ## Q146836: XCLN: Unread Message Count Not Updated Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146488: Last Action for Meeting Request Overides Previous Action"
-permalink: kb/146/Q146488/
+permalink: /kb/146/Q146488/
 ---
 
 ## Q146488: Last Action for Meeting Request Overides Previous Action

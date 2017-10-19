@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181834: Message ID Tab Missing in Properties of a Message"
-permalink: kb/181/Q181834/
+permalink: /kb/181/Q181834/
 ---
 
 ## Q181834: Message ID Tab Missing in Properties of a Message

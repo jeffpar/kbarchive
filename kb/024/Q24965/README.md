@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q24965: Jump to Absolute Address"
-permalink: kb/024/Q24965/
+permalink: /kb/024/Q24965/
 ---
 
 ## Q24965: Jump to Absolute Address

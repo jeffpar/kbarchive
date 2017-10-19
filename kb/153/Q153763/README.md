@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153763: Error Installing SSL with Setkey.exe"
-permalink: kb/153/Q153763/
+permalink: /kb/153/Q153763/
 ---
 
 ## Q153763: Error Installing SSL with Setkey.exe

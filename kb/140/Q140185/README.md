@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140185: XCLN: Distribution List in To: Field Not Bold in Message"
-permalink: kb/140/Q140185/
+permalink: /kb/140/Q140185/
 ---
 
 ## Q140185: XCLN: Distribution List in To: Field Not Bold in Message

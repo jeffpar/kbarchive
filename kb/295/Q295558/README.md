@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295558: HOWTO: Add Delegate To Exchange Folder w/ ACL Component and CDO"
-permalink: kb/295/Q295558/
+permalink: /kb/295/Q295558/
 ---
 
 ## Q295558: HOWTO: Add Delegate To Exchange Folder w/ ACL Component and CDO

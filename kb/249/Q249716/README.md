@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249716: HOWTO: Use NetRemoteTOD to Obtain Date/Time Info from a Server"
-permalink: kb/249/Q249716/
+permalink: /kb/249/Q249716/
 ---
 
 ## Q249716: HOWTO: Use NetRemoteTOD to Obtain Date/Time Info from a Server

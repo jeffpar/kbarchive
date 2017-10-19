@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248067: XWEB: Isinteg Cannot Fix Warnings if Public Folders Have No MAPI"
-permalink: kb/248/Q248067/
+permalink: /kb/248/Q248067/
 ---
 
 ## Q248067: XWEB: Isinteg Cannot Fix Warnings if Public Folders Have No MAPI

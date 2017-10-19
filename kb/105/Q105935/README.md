@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105935: FIX: CommitQQ Does Not Flush Buffers"
-permalink: kb/105/Q105935/
+permalink: /kb/105/Q105935/
 ---
 
 ## Q105935: FIX: CommitQQ Does Not Flush Buffers

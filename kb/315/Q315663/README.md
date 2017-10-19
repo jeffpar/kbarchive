@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315663: HOW TO: Update DLLs Used by Active Server Pages in IIS 4.0"
-permalink: kb/315/Q315663/
+permalink: /kb/315/Q315663/
 ---
 
 ## Q315663: HOW TO: Update DLLs Used by Active Server Pages in IIS 4.0

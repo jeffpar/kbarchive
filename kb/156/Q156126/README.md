@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156126: Troubleshooting Windows 95 Using Safe Mode"
-permalink: kb/156/Q156126/
+permalink: /kb/156/Q156126/
 ---
 
 ## Q156126: Troubleshooting Windows 95 Using Safe Mode

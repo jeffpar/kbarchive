@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308184: IIS 5.1: Reboot of WinXP Pro Shuts Down Computer Without Warning"
-permalink: kb/308/Q308184/
+permalink: /kb/308/Q308184/
 ---
 
 ## Q308184: IIS 5.1: Reboot of WinXP Pro Shuts Down Computer Without Warning

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179477: WD97: Cannot Select Document Properties to Print from File Open"
-permalink: kb/179/Q179477/
+permalink: /kb/179/Q179477/
 ---
 
 ## Q179477: WD97: Cannot Select Document Properties to Print from File Open

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84581: 3COM 3C501 Network Card May Require Updated Drivers"
-permalink: kb/084/Q84581/
+permalink: /kb/084/Q84581/
 ---
 
 ## Q84581: 3COM 3C501 Network Card May Require Updated Drivers

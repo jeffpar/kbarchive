@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171826: FIX: Tabbing Problems with Controls Contained with Controls"
-permalink: kb/171/Q171826/
+permalink: /kb/171/Q171826/
 ---
 
 ## Q171826: FIX: Tabbing Problems with Controls Contained with Controls

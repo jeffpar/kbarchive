@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193695: BUG: Right-Aligned Button Text Not Visible in Vertical Toolbar"
-permalink: kb/193/Q193695/
+permalink: /kb/193/Q193695/
 ---
 
 ## Q193695: BUG: Right-Aligned Button Text Not Visible in Vertical Toolbar

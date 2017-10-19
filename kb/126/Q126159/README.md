@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126159: Lmscript.pif and the SMSLS Logon Script"
-permalink: kb/126/Q126159/
+permalink: /kb/126/Q126159/
 ---
 
 ## Q126159: Lmscript.pif and the SMSLS Logon Script

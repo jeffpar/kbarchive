@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216552: SMS: SMSRUN Hangs at 90% CPU While IE Setup Is Running"
-permalink: kb/216/Q216552/
+permalink: /kb/216/Q216552/
 ---
 
 ## Q216552: SMS: SMSRUN Hangs at 90% CPU While IE Setup Is Running

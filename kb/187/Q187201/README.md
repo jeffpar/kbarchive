@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187201: Reset /? Displays Wrong Parameters"
-permalink: kb/187/Q187201/
+permalink: /kb/187/Q187201/
 ---
 
 ## Q187201: Reset /? Displays Wrong Parameters

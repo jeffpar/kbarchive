@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243963: RPC Client Returns Exception 1783 on Windows NT 4.0 SP5"
-permalink: kb/243/Q243963/
+permalink: /kb/243/Q243963/
 ---
 
 ## Q243963: RPC Client Returns Exception 1783 on Windows NT 4.0 SP5

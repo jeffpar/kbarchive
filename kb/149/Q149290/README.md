@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149290: XCLN: Renaming Attachment Doesn't Change File Association"
-permalink: kb/149/Q149290/
+permalink: /kb/149/Q149290/
 ---
 
 ## Q149290: XCLN: Renaming Attachment Doesn't Change File Association

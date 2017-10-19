@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76454: Leading Edge Model D Loses Date/Time with MS-DOS"
-permalink: kb/076/Q76454/
+permalink: /kb/076/Q76454/
 ---
 
 ## Q76454: Leading Edge Model D Loses Date/Time with MS-DOS

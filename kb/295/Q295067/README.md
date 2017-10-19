@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295067: XCCC:  Troubleshooting passwords in Outlook Web Access"
-permalink: kb/295/Q295067/
+permalink: /kb/295/Q295067/
 ---
 
 ## Q295067: XCCC:  Troubleshooting passwords in Outlook Web Access

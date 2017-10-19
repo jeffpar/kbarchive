@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168063: WD97: LineDraw and Extended Characters Mapped Incorrectly"
-permalink: kb/168/Q168063/
+permalink: /kb/168/Q168063/
 ---
 
 ## Q168063: WD97: LineDraw and Extended Characters Mapped Incorrectly

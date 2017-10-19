@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153201: PRB: Error Installing Distributed Application from CD-ROM"
-permalink: kb/153/Q153201/
+permalink: /kb/153/Q153201/
 ---
 
 ## Q153201: PRB: Error Installing Distributed Application from CD-ROM

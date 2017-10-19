@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80890: Drives Inaccessible After Upgrading from Compaq DOS"
-permalink: kb/080/Q80890/
+permalink: /kb/080/Q80890/
 ---
 
 ## Q80890: Drives Inaccessible After Upgrading from Compaq DOS

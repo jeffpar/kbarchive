@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195062: MCM: Game Attempts to Read CD-ROM and Removable Media Drives"
-permalink: kb/195/Q195062/
+permalink: /kb/195/Q195062/
 ---
 
 ## Q195062: MCM: Game Attempts to Read CD-ROM and Removable Media Drives

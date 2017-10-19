@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122568: STOP 7B When You Upgrade From Server on COMPAQ DESKPRO"
-permalink: kb/122/Q122568/
+permalink: /kb/122/Q122568/
 ---
 
 ## Q122568: STOP 7B When You Upgrade From Server on COMPAQ DESKPRO

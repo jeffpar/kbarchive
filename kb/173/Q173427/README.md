@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173427: Error Message New MSN Error 87"
-permalink: kb/173/Q173427/
+permalink: /kb/173/Q173427/
 ---
 
 ## Q173427: Error Message New MSN Error 87

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143243: XADM: Missing Site Addressing Objects/E-Mail Addresses"
-permalink: kb/143/Q143243/
+permalink: /kb/143/Q143243/
 ---
 
 ## Q143243: XADM: Missing Site Addressing Objects/E-Mail Addresses

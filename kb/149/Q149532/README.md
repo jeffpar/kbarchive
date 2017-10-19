@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149532: Windows NT Clients Run Out of Ports"
-permalink: kb/149/Q149532/
+permalink: /kb/149/Q149532/
 ---
 
 ## Q149532: Windows NT Clients Run Out of Ports

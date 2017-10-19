@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135287: BUG: Visual C++ Doesn't Generate Dependencies for .RSC Files"
-permalink: kb/135/Q135287/
+permalink: /kb/135/Q135287/
 ---
 
 ## Q135287: BUG: Visual C++ Doesn't Generate Dependencies for .RSC Files

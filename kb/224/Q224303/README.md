@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224303: SNA Server Allows Range of IP Ports w/ Distributed Link Service"
-permalink: kb/224/Q224303/
+permalink: /kb/224/Q224303/
 ---
 
 ## Q224303: SNA Server Allows Range of IP Ports w/ Distributed Link Service

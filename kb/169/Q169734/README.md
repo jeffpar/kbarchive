@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169734: How to Change the Location of the Windows 95 Print Spool Folder"
-permalink: kb/169/Q169734/
+permalink: /kb/169/Q169734/
 ---
 
 ## Q169734: How to Change the Location of the Windows 95 Print Spool Folder

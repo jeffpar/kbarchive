@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114301: Common Questions and Answers for Windows 3.11"
-permalink: kb/114/Q114301/
+permalink: /kb/114/Q114301/
 ---
 
 ## Q114301: Common Questions and Answers for Windows 3.11

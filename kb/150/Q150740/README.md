@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150740: XCLN: DocErr: Client Floppy Install Instructions are Wrong"
-permalink: kb/150/Q150740/
+permalink: /kb/150/Q150740/
 ---
 
 ## Q150740: XCLN: DocErr: Client Floppy Install Instructions are Wrong

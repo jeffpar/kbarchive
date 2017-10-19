@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138779: HOWTO: Make a Lookup Combo Box in a Grid"
-permalink: kb/138/Q138779/
+permalink: /kb/138/Q138779/
 ---
 
 ## Q138779: HOWTO: Make a Lookup Combo Box in a Grid

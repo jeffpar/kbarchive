@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138680: How to Scope Variable Declared in Event Code"
-permalink: kb/138/Q138680/
+permalink: /kb/138/Q138680/
 ---
 
 ## Q138680: How to Scope Variable Declared in Event Code

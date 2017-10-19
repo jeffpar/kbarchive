@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86875: BUG: Dsklayt2 /W Option Without Disk Number Fails"
-permalink: kb/086/Q86875/
+permalink: /kb/086/Q86875/
 ---
 
 ## Q86875: BUG: Dsklayt2 /W Option Without Disk Number Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139335: PRB: Import Wizard Shows the First 50 Records Only"
-permalink: kb/139/Q139335/
+permalink: /kb/139/Q139335/
 ---
 
 ## Q139335: PRB: Import Wizard Shows the First 50 Records Only

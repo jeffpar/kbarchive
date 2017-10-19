@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137485: Hewlett-Packard Network Port Option May Not Be Available"
-permalink: kb/137/Q137485/
+permalink: /kb/137/Q137485/
 ---
 
 ## Q137485: Hewlett-Packard Network Port Option May Not Be Available

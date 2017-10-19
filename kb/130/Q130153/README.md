@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130153: No Printout with Adobe PostScript Printer Driver 2.1.1"
-permalink: kb/130/Q130153/
+permalink: /kb/130/Q130153/
 ---
 
 ## Q130153: No Printout with Adobe PostScript Printer Driver 2.1.1

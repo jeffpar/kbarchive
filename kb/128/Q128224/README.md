@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128224: How to Build 16- or 32-bit DRVSETUP.EXE by Using Visual C++"
-permalink: kb/128/Q128224/
+permalink: /kb/128/Q128224/
 ---
 
 ## Q128224: How to Build 16- or 32-bit DRVSETUP.EXE by Using Visual C++

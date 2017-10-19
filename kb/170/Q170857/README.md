@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170857: Error Message: HTTP/1.0 403 Access Forbidden"
-permalink: kb/170/Q170857/
+permalink: /kb/170/Q170857/
 ---
 
 ## Q170857: Error Message: HTTP/1.0 403 Access Forbidden

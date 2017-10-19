@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111296: WFWG 3.11 Resource Kit Err Msg: THREED.VBX Is Out of Date"
-permalink: kb/111/Q111296/
+permalink: /kb/111/Q111296/
 ---
 
 ## Q111296: WFWG 3.11 Resource Kit Err Msg: THREED.VBX Is Out of Date

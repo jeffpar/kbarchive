@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70039: Passing an Application's Start Up Directory via SETUP.INF"
-permalink: kb/070/Q70039/
+permalink: /kb/070/Q70039/
 ---
 
 ## Q70039: Passing an Application's Start Up Directory via SETUP.INF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195002: Pinball Arcade: Not All Graphic Detail Settings Are Available"
-permalink: kb/195/Q195002/
+permalink: /kb/195/Q195002/
 ---
 
 ## Q195002: Pinball Arcade: Not All Graphic Detail Settings Are Available

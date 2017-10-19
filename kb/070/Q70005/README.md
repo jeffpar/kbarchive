@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70005: DOC: LB_GETCURSEL Function Documentation Incorrect"
-permalink: kb/070/Q70005/
+permalink: /kb/070/Q70005/
 ---
 
 ## Q70005: DOC: LB_GETCURSEL Function Documentation Incorrect

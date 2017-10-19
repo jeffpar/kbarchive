@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198398: Access Violation in Snalink.exe Activating Numerous Connections"
-permalink: kb/198/Q198398/
+permalink: /kb/198/Q198398/
 ---
 
 ## Q198398: Access Violation in Snalink.exe Activating Numerous Connections

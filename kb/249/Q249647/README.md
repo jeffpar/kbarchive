@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249647: IGMP Incorrectly Sends Membership Packets to Several Groups"
-permalink: kb/249/Q249647/
+permalink: /kb/249/Q249647/
 ---
 
 ## Q249647: IGMP Incorrectly Sends Membership Packets to Several Groups

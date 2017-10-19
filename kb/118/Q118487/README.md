@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118487: SMTP: Attachments Seem Corrupted or Garbled"
-permalink: kb/118/Q118487/
+permalink: /kb/118/Q118487/
 ---
 
 ## Q118487: SMTP: Attachments Seem Corrupted or Garbled

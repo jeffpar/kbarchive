@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159298: Analyzing Exchange RPC Traffic Over TCP/IP"
-permalink: kb/159/Q159298/
+permalink: /kb/159/Q159298/
 ---
 
 ## Q159298: Analyzing Exchange RPC Traffic Over TCP/IP

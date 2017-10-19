@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185189: Golf 98/99: Sound Problems if You Remove CD-ROM During Game Play"
-permalink: kb/185/Q185189/
+permalink: /kb/185/Q185189/
 ---
 
 ## Q185189: Golf 98/99: Sound Problems if You Remove CD-ROM During Game Play

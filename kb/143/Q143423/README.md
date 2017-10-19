@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143423: DOCERR: Columns Collection Does Not Have a Font Property"
-permalink: kb/143/Q143423/
+permalink: /kb/143/Q143423/
 ---
 
 ## Q143423: DOCERR: Columns Collection Does Not Have a Font Property

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305228: &quot;STOP 0xA&quot; Occurs After Applying Windows NT 4.0 SRP"
-permalink: kb/305/Q305228/
+permalink: /kb/305/Q305228/
 ---
 
 ## Q305228: &quot;STOP 0xA&quot; Occurs After Applying Windows NT 4.0 SRP

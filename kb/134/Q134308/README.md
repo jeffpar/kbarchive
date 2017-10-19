@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134308: FIX: Upper Format Truncates Right/Center-Alligned Report Field"
-permalink: kb/134/Q134308/
+permalink: /kb/134/Q134308/
 ---
 
 ## Q134308: FIX: Upper Format Truncates Right/Center-Alligned Report Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183266: XADM: HowTo Restore Offline Backup of Dir Svc and Info Store"
-permalink: kb/183/Q183266/
+permalink: /kb/183/Q183266/
 ---
 
 ## Q183266: XADM: HowTo Restore Offline Backup of Dir Svc and Info Store

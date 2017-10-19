@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260102: FIX: Can't Add Available Toolbar Buttons After They Are Removed"
-permalink: kb/260/Q260102/
+permalink: /kb/260/Q260102/
 ---
 
 ## Q260102: FIX: Can't Add Available Toolbar Buttons After They Are Removed

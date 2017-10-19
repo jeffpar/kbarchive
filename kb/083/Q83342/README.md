@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83342: Mouse Doesn't Work in 386 Enhanced Mode"
-permalink: kb/083/Q83342/
+permalink: /kb/083/Q83342/
 ---
 
 ## Q83342: Mouse Doesn't Work in 386 Enhanced Mode

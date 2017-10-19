@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246876: INFO: Visual SourceSafe 6.0 Installation as Stand Alone Product"
-permalink: kb/246/Q246876/
+permalink: /kb/246/Q246876/
 ---
 
 ## Q246876: INFO: Visual SourceSafe 6.0 Installation as Stand Alone Product

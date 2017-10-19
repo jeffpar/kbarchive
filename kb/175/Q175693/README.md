@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175693: MTG: Err Msg: Unknown Error Code 914:F8"
-permalink: kb/175/Q175693/
+permalink: /kb/175/Q175693/
 ---
 
 ## Q175693: MTG: Err Msg: Unknown Error Code 914:F8

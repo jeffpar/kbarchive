@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113848: Artist: Stickers Become Jagged-Looking When Enlarged"
-permalink: kb/113/Q113848/
+permalink: /kb/113/Q113848/
 ---
 
 ## Q113848: Artist: Stickers Become Jagged-Looking When Enlarged

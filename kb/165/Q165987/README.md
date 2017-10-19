@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165987: XWEB: Error Message: Failed to Get Inbox"
-permalink: kb/165/Q165987/
+permalink: /kb/165/Q165987/
 ---
 
 ## Q165987: XWEB: Error Message: Failed to Get Inbox

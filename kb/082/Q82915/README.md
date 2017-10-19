@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82915: PC Win: Err Msg: Stack Fault in MSSPELL.DLL"
-permalink: kb/082/Q82915/
+permalink: /kb/082/Q82915/
 ---
 
 ## Q82915: PC Win: Err Msg: Stack Fault in MSSPELL.DLL

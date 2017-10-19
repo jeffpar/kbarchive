@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174912: Bookshelf 98: Opening a 360 View Enables Interface Sounds"
-permalink: kb/174/Q174912/
+permalink: /kb/174/Q174912/
 ---
 
 ## Q174912: Bookshelf 98: Opening a 360 View Enables Interface Sounds

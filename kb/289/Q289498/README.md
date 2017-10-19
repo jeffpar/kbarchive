@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289498: PRB: Form Cannot Get Focus After Using SetParent to Move Control"
-permalink: kb/289/Q289498/
+permalink: /kb/289/Q289498/
 ---
 
 ## Q289498: PRB: Form Cannot Get Focus After Using SetParent to Move Control

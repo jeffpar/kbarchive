@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172257: Installing Perl 5 from the Windows NT 4.0 Resource Kit"
-permalink: kb/172/Q172257/
+permalink: /kb/172/Q172257/
 ---
 
 ## Q172257: Installing Perl 5 from the Windows NT 4.0 Resource Kit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88737: Text Does Not Appear with Picture Publisher 3.0"
-permalink: kb/088/Q88737/
+permalink: /kb/088/Q88737/
 ---
 
 ## Q88737: Text Does Not Appear with Picture Publisher 3.0

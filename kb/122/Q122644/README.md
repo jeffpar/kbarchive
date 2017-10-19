@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122644: Incorrect Number of Drives Appear for Pioneer DRM-600"
-permalink: kb/122/Q122644/
+permalink: /kb/122/Q122644/
 ---
 
 ## Q122644: Incorrect Number of Drives Appear for Pioneer DRM-600

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219030: XFOR: Parsing Problem with LinkAge and cc:Mail Connector"
-permalink: kb/219/Q219030/
+permalink: /kb/219/Q219030/
 ---
 
 ## Q219030: XFOR: Parsing Problem with LinkAge and cc:Mail Connector

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104615: Arcade: Description of Battlezone"
-permalink: kb/104/Q104615/
+permalink: /kb/104/Q104615/
 ---
 
 ## Q104615: Arcade: Description of Battlezone

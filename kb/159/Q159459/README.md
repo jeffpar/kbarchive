@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159459: NWCONV Does Not Transfer Queue Operator Group"
-permalink: kb/159/Q159459/
+permalink: /kb/159/Q159459/
 ---
 
 ## Q159459: NWCONV Does Not Transfer Queue Operator Group

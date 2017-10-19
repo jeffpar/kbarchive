@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137049: Save As Command May Overwrite Full System Backup Set File"
-permalink: kb/137/Q137049/
+permalink: /kb/137/Q137049/
 ---
 
 ## Q137049: Save As Command May Overwrite Full System Backup Set File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140812: File Date Stamps in AUDIT.RUL Do Not Match Actual Date Stamps"
-permalink: kb/140/Q140812/
+permalink: /kb/140/Q140812/
 ---
 
 ## Q140812: File Date Stamps in AUDIT.RUL Do Not Match Actual Date Stamps

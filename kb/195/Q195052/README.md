@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195052: Removing or Renaming Directory C:&#92;Program Breaks Applications"
-permalink: kb/195/Q195052/
+permalink: /kb/195/Q195052/
 ---
 
 ## Q195052: Removing or Renaming Directory C:&#92;Program Breaks Applications

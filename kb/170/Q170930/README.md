@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170930: How to Save Internet Shortcuts on The Microsoft Network"
-permalink: kb/170/Q170930/
+permalink: /kb/170/Q170930/
 ---
 
 ## Q170930: How to Save Internet Shortcuts on The Microsoft Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312805: Encarta Reference Library 2002: No Audible Pronunciation"
-permalink: kb/312/Q312805/
+permalink: /kb/312/Q312805/
 ---
 
 ## Q312805: Encarta Reference Library 2002: No Audible Pronunciation

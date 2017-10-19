@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234664: BUG: Containers Show &lt;Unknown Verb&gt; for MFC Static OCXs"
-permalink: kb/234/Q234664/
+permalink: /kb/234/Q234664/
 ---
 
 ## Q234664: BUG: Containers Show &lt;Unknown Verb&gt; for MFC Static OCXs

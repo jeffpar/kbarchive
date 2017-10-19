@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187246: XFOR: Internet Mail Service Produces Dr. Watson"
-permalink: kb/187/Q187246/
+permalink: /kb/187/Q187246/
 ---
 
 ## Q187246: XFOR: Internet Mail Service Produces Dr. Watson

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156607: HP OEM Matrox Ultima Plus Video Card Causes WinNT to Hang"
-permalink: kb/156/Q156607/
+permalink: /kb/156/Q156607/
 ---
 
 ## Q156607: HP OEM Matrox Ultima Plus Video Card Causes WinNT to Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143504: PPT7: Translator for Opening PowerPoint 97 Files"
-permalink: kb/143/Q143504/
+permalink: /kb/143/Q143504/
 ---
 
 ## Q143504: PPT7: Translator for Opening PowerPoint 97 Files

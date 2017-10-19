@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158578: STL Sample for the set::(rbegin, rend) Functions"
-permalink: kb/158/Q158578/
+permalink: /kb/158/Q158578/
 ---
 
 ## Q158578: STL Sample for the set::(rbegin, rend) Functions

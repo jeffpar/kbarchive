@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167151: Error Message: Setup Cannot Find Oemsetup.inf or Oemsetnt.inf"
-permalink: kb/167/Q167151/
+permalink: /kb/167/Q167151/
 ---
 
 ## Q167151: Error Message: Setup Cannot Find Oemsetup.inf or Oemsetnt.inf

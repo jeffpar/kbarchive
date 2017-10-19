@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170671: Microgate SDLC Link Service Must be Installed as External"
-permalink: kb/170/Q170671/
+permalink: /kb/170/Q170671/
 ---
 
 ## Q170671: Microgate SDLC Link Service Must be Installed as External

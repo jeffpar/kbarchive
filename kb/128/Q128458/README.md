@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128458: SMS Despooler Does Not Support Forced Installation and Upgrade"
-permalink: kb/128/Q128458/
+permalink: /kb/128/Q128458/
 ---
 
 ## Q128458: SMS Despooler Does Not Support Forced Installation and Upgrade

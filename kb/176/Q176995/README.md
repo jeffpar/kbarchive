@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176995: WD97: IPF Using Linked Image SourceName/SourcePath Property"
-permalink: kb/176/Q176995/
+permalink: /kb/176/Q176995/
 ---
 
 ## Q176995: WD97: IPF Using Linked Image SourceName/SourcePath Property

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135965: More Disk Space Used After DriveSpace 3 Compression"
-permalink: kb/135/Q135965/
+permalink: /kb/135/Q135965/
 ---
 
 ## Q135965: More Disk Space Used After DriveSpace 3 Compression

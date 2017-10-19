@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72364: Virus Reduces Total Conventional Memory"
-permalink: kb/072/Q72364/
+permalink: /kb/072/Q72364/
 ---
 
 ## Q72364: Virus Reduces Total Conventional Memory

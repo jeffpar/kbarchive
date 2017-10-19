@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157301: Shutdown of 16-bit Named Pipe Client Causes GPF in Netapi.dll"
-permalink: kb/157/Q157301/
+permalink: /kb/157/Q157301/
 ---
 
 ## Q157301: Shutdown of 16-bit Named Pipe Client Causes GPF in Netapi.dll

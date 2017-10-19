@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130130: How to Customize Class Icons"
-permalink: kb/130/Q130130/
+permalink: /kb/130/Q130130/
 ---
 
 ## Q130130: How to Customize Class Icons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164704: Password Change DLL Fails if First Host Account Cache Offline"
-permalink: kb/164/Q164704/
+permalink: /kb/164/Q164704/
 ---
 
 ## Q164704: Password Change DLL Fails if First Host Account Cache Offline

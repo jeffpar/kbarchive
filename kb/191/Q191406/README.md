@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191406: Missing Appointments in Outlook Calendar When Using Schedule+"
-permalink: kb/191/Q191406/
+permalink: /kb/191/Q191406/
 ---
 
 ## Q191406: Missing Appointments in Outlook Calendar When Using Schedule+

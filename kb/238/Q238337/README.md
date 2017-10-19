@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238337: Browse Button for Home Directory Is Disabled in MMC"
-permalink: kb/238/Q238337/
+permalink: /kb/238/Q238337/
 ---
 
 ## Q238337: Browse Button for Home Directory Is Disabled in MMC

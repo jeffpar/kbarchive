@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93550: Pro Audio Spectrum 16 May Hang Windows 3.1"
-permalink: kb/093/Q93550/
+permalink: /kb/093/Q93550/
 ---
 
 ## Q93550: Pro Audio Spectrum 16 May Hang Windows 3.1

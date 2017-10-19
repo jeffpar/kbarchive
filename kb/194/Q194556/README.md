@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194556: X400: Foreign MTA Cannot Restore Connection Using PConnect"
-permalink: kb/194/Q194556/
+permalink: /kb/194/Q194556/
 ---
 
 ## Q194556: X400: Foreign MTA Cannot Restore Connection Using PConnect

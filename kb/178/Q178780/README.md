@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178780: ODE: Distributing a Replica Set for Indirect Synchronization"
-permalink: kb/178/Q178780/
+permalink: /kb/178/Q178780/
 ---
 
 ## Q178780: ODE: Distributing a Replica Set for Indirect Synchronization

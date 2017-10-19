@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326589: SMS: How to Control SMS_EXECUTIVE Threads w/out SMS Service Mgr"
-permalink: kb/326/Q326589/
+permalink: /kb/326/Q326589/
 ---
 
 ## Q326589: SMS: How to Control SMS_EXECUTIVE Threads w/out SMS Service Mgr

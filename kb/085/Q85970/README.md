@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85970: PC Win: Missing Information in Paste Special Dialog Box"
-permalink: kb/085/Q85970/
+permalink: /kb/085/Q85970/
 ---
 
 ## Q85970: PC Win: Missing Information in Paste Special Dialog Box

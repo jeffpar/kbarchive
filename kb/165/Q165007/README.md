@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165007: STOP: 0x0000001E After Installing IBM Domino Server"
-permalink: kb/165/Q165007/
+permalink: /kb/165/Q165007/
 ---
 
 ## Q165007: STOP: 0x0000001E After Installing IBM Domino Server

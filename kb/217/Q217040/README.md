@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217040: XFOR: New Lotus cc:Mail Dirsync Mapping Rule"
-permalink: kb/217/Q217040/
+permalink: /kb/217/Q217040/
 ---
 
 ## Q217040: XFOR: New Lotus cc:Mail Dirsync Mapping Rule

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253314: &quot;SNABASE Not Started&quot; Error Occurs When Using Terminal Server"
-permalink: kb/253/Q253314/
+permalink: /kb/253/Q253314/
 ---
 
 ## Q253314: &quot;SNABASE Not Started&quot; Error Occurs When Using Terminal Server

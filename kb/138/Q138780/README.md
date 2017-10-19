@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138780: How to Use the Name Argument of an @...GET in Visual FoxPro"
-permalink: kb/138/Q138780/
+permalink: /kb/138/Q138780/
 ---
 
 ## Q138780: How to Use the Name Argument of an @...GET in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190758: BUG: Recalculate Links Does Not Update File Version Number"
-permalink: kb/190/Q190758/
+permalink: /kb/190/Q190758/
 ---
 
 ## Q190758: BUG: Recalculate Links Does Not Update File Version Number

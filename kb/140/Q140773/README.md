@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140773: Cannot Drag BBS Message to Create Shortcut"
-permalink: kb/140/Q140773/
+permalink: /kb/140/Q140773/
 ---
 
 ## Q140773: Cannot Drag BBS Message to Create Shortcut

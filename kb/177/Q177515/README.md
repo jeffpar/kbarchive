@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177515: Expedia Err Msg: Required .dll File Mvcl20n.dll Was Not Found"
-permalink: kb/177/Q177515/
+permalink: /kb/177/Q177515/
 ---
 
 ## Q177515: Expedia Err Msg: Required .dll File Mvcl20n.dll Was Not Found

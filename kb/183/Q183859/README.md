@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183859: Integrity Checking on Secure Channels with Domain Controllers"
-permalink: kb/183/Q183859/
+permalink: /kb/183/Q183859/
 ---
 
 ## Q183859: Integrity Checking on Secure Channels with Domain Controllers

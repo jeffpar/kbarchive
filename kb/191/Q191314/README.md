@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191314: Installing Outlook on the Small Business Server"
-permalink: kb/191/Q191314/
+permalink: /kb/191/Q191314/
 ---
 
 ## Q191314: Installing Outlook on the Small Business Server

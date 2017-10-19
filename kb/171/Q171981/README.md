@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171981: HOWTO: Play an .AVI Video File in Full Screen in Visual Basic"
-permalink: kb/171/Q171981/
+permalink: /kb/171/Q171981/
 ---
 
 ## Q171981: HOWTO: Play an .AVI Video File in Full Screen in Visual Basic

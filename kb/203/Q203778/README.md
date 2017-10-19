@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203778: Windows NT Server 4.0, Enterprise Edition, Readme.doc File"
-permalink: kb/203/Q203778/
+permalink: /kb/203/Q203778/
 ---
 
 ## Q203778: Windows NT Server 4.0, Enterprise Edition, Readme.doc File

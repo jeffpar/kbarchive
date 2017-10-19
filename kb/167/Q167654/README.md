@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167654: HOWTO: Visual C++ 5.0 (Professional &amp; Enterprise) Support FAQ"
-permalink: kb/167/Q167654/
+permalink: /kb/167/Q167654/
 ---
 
 ## Q167654: HOWTO: Visual C++ 5.0 (Professional &amp; Enterprise) Support FAQ

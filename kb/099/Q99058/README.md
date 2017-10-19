@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99058: PC Forms: Telephone Note Accelerator Keys"
-permalink: kb/099/Q99058/
+permalink: /kb/099/Q99058/
 ---
 
 ## Q99058: PC Forms: Telephone Note Accelerator Keys

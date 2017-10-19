@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179469: Windows 98 Beta Is Not Included On CD-ROM"
-permalink: kb/179/Q179469/
+permalink: /kb/179/Q179469/
 ---
 
 ## Q179469: Windows 98 Beta Is Not Included On CD-ROM

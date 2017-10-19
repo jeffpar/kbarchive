@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98311: Firmware V135 Required for Gateway 2000 Handbook Computers"
-permalink: kb/098/Q98311/
+permalink: /kb/098/Q98311/
 ---
 
 ## Q98311: Firmware V135 Required for Gateway 2000 Handbook Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176757: XADM: Administrator Program Column Settings Lost After Upgrade"
-permalink: kb/176/Q176757/
+permalink: /kb/176/Q176757/
 ---
 
 ## Q176757: XADM: Administrator Program Column Settings Lost After Upgrade

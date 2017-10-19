@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70144: DOCERR: PWB Error Messages Not Included in C 6.0 Help Files"
-permalink: kb/070/Q70144/
+permalink: /kb/070/Q70144/
 ---
 
 ## Q70144: DOCERR: PWB Error Messages Not Included in C 6.0 Help Files

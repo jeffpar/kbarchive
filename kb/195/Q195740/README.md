@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195740: PUT Command with HTTP Causes File Deletion 401.1 Error"
-permalink: kb/195/Q195740/
+permalink: /kb/195/Q195740/
 ---
 
 ## Q195740: PUT Command with HTTP Causes File Deletion 401.1 Error

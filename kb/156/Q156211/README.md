@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156211: Network Virus Checking Programs and Microsoft Windows NT"
-permalink: kb/156/Q156211/
+permalink: /kb/156/Q156211/
 ---
 
 ## Q156211: Network Virus Checking Programs and Microsoft Windows NT

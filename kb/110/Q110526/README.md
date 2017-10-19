@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110526: BUG: Edit Region with Three Lines Doesn't Have Scroll Bar"
-permalink: kb/110/Q110526/
+permalink: /kb/110/Q110526/
 ---
 
 ## Q110526: BUG: Edit Region with Three Lines Doesn't Have Scroll Bar

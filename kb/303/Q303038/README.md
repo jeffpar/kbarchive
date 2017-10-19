@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303038: Links 2001: Err Msg: Links 2001 Cannot Verify Your Disk"
-permalink: kb/303/Q303038/
+permalink: /kb/303/Q303038/
 ---
 
 ## Q303038: Links 2001: Err Msg: Links 2001 Cannot Verify Your Disk

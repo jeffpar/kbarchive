@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259138: SMS: How to Specify the Maximum Log File Size on a Client"
-permalink: kb/259/Q259138/
+permalink: /kb/259/Q259138/
 ---
 
 ## Q259138: SMS: How to Specify the Maximum Log File Size on a Client

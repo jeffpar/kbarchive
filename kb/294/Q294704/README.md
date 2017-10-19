@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294704: PRB: VC ClassView Doesn't Show Classes Defined in Header File"
-permalink: kb/294/Q294704/
+permalink: /kb/294/Q294704/
 ---
 
 ## Q294704: PRB: VC ClassView Doesn't Show Classes Defined in Header File

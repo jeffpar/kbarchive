@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241245: PRB: &quot;Error 7 - Out of Memory&quot; from VB App Using FM20.DLL"
-permalink: kb/241/Q241245/
+permalink: /kb/241/Q241245/
 ---
 
 ## Q241245: PRB: &quot;Error 7 - Out of Memory&quot; from VB App Using FM20.DLL

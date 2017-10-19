@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112896: PC Rmt: Remote Postoffice List Only Contains Local Addresses"
-permalink: kb/112/Q112896/
+permalink: /kb/112/Q112896/
 ---
 
 ## Q112896: PC Rmt: Remote Postoffice List Only Contains Local Addresses

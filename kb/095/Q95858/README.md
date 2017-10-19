@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95858: What Does BUSETUP.EXE Do?"
-permalink: kb/095/Q95858/
+permalink: /kb/095/Q95858/
 ---
 
 ## Q95858: What Does BUSETUP.EXE Do?

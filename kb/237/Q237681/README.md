@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237681: PRB: Version not found Error in InterDev after rolling back a fi"
-permalink: kb/237/Q237681/
+permalink: /kb/237/Q237681/
 ---
 
 ## Q237681: PRB: Version not found Error in InterDev after rolling back a fi

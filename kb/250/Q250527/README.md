@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250527: Pandora's Box Error Message: Unable to Create DirectDraw Surface"
-permalink: kb/250/Q250527/
+permalink: /kb/250/Q250527/
 ---
 
 ## Q250527: Pandora's Box Error Message: Unable to Create DirectDraw Surface

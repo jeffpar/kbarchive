@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321726: Flight Simulator 2002: How to Print an Aircraft Checklist"
-permalink: kb/321/Q321726/
+permalink: /kb/321/Q321726/
 ---
 
 ## Q321726: Flight Simulator 2002: How to Print an Aircraft Checklist

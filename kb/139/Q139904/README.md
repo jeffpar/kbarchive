@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139904: How to Configure Your DHCP Server Scope"
-permalink: kb/139/Q139904/
+permalink: /kb/139/Q139904/
 ---
 
 ## Q139904: How to Configure Your DHCP Server Scope

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301349: PRB: Cannot Install on Server Appliance Via Software Update"
-permalink: kb/301/Q301349/
+permalink: /kb/301/Q301349/
 ---
 
 ## Q301349: PRB: Cannot Install on Server Appliance Via Software Update

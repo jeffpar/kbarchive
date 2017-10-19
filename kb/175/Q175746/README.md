@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175746: XFOR: Specifying the Container for Propagated Users"
-permalink: kb/175/Q175746/
+permalink: /kb/175/Q175746/
 ---
 
 ## Q175746: XFOR: Specifying the Container for Propagated Users

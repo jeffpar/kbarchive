@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132925: Errors When ATM Is Installed in Windows&#92;Fonts Folder"
-permalink: kb/132/Q132925/
+permalink: /kb/132/Q132925/
 ---
 
 ## Q132925: Errors When ATM Is Installed in Windows&#92;Fonts Folder

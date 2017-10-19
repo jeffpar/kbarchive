@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143403: PRB: Problems Editing Long Declares in the Conditional Compile"
-permalink: kb/143/Q143403/
+permalink: /kb/143/Q143403/
 ---
 
 ## Q143403: PRB: Problems Editing Long Declares in the Conditional Compile

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172016: WD97: Some Text Attributes Lost Inserting Corel Graphic (.cdr)"
-permalink: kb/172/Q172016/
+permalink: /kb/172/Q172016/
 ---
 
 ## Q172016: WD97: Some Text Attributes Lost Inserting Corel Graphic (.cdr)

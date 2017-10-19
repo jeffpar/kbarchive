@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138879: SpartaCom SAPS Modem Sharing Software for Windows NT"
-permalink: kb/138/Q138879/
+permalink: /kb/138/Q138879/
 ---
 
 ## Q138879: SpartaCom SAPS Modem Sharing Software for Windows NT

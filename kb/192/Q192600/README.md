@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192600: Home Essentials 98 Continually Prompts for Encarta 98 CD-ROM"
-permalink: kb/192/Q192600/
+permalink: /kb/192/Q192600/
 ---
 
 ## Q192600: Home Essentials 98 Continually Prompts for Encarta 98 CD-ROM

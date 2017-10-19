@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102694: FIX: F1917 Error, Print Logical Expression of COMPLEX Values"
-permalink: kb/102/Q102694/
+permalink: /kb/102/Q102694/
 ---
 
 ## Q102694: FIX: F1917 Error, Print Logical Expression of COMPLEX Values

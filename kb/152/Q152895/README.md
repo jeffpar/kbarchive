@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152895: XADM: Unable to Migrate PABs for Appletalk Mail Users"
-permalink: kb/152/Q152895/
+permalink: /kb/152/Q152895/
 ---
 
 ## Q152895: XADM: Unable to Migrate PABs for Appletalk Mail Users

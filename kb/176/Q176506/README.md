@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176506: Radius Accounting Only Logs One Entry for Multilink Client"
-permalink: kb/176/Q176506/
+permalink: /kb/176/Q176506/
 ---
 
 ## Q176506: Radius Accounting Only Logs One Entry for Multilink Client

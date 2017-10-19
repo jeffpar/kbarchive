@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93267: IBM PS/2 N51SLC Laptop Should Be Configured as MS-DOS System"
-permalink: kb/093/Q93267/
+permalink: /kb/093/Q93267/
 ---
 
 ## Q93267: IBM PS/2 N51SLC Laptop Should Be Configured as MS-DOS System

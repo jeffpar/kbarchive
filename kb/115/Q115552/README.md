@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115552: MHS: Running the MHS Gateway from Within MS-DOS"
-permalink: kb/115/Q115552/
+permalink: /kb/115/Q115552/
 ---
 
 ## Q115552: MHS: Running the MHS Gateway from Within MS-DOS

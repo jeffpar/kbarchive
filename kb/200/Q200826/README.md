@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200826: SMS: How to Temporarily Stop the Advertisement of Software"
-permalink: kb/200/Q200826/
+permalink: /kb/200/Q200826/
 ---
 
 ## Q200826: SMS: How to Temporarily Stop the Advertisement of Software

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83968: How Windows Determines the Recommended Maximum Swap File Size"
-permalink: kb/083/Q83968/
+permalink: /kb/083/Q83968/
 ---
 
 ## Q83968: How Windows Determines the Recommended Maximum Swap File Size

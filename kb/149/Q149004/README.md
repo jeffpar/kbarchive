@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149004: Bookshelf 96-97: PowerPoint Copy Incorrectly Lists Names"
-permalink: kb/149/Q149004/
+permalink: /kb/149/Q149004/
 ---
 
 ## Q149004: Bookshelf 96-97: PowerPoint Copy Incorrectly Lists Names

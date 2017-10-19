@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167245: List of Documentation Errors in FPNW Administrator's Guide"
-permalink: kb/167/Q167245/
+permalink: /kb/167/Q167245/
 ---
 
 ## Q167245: List of Documentation Errors in FPNW Administrator's Guide

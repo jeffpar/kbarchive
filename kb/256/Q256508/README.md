@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256508: Installing Routing and Remote Access Services in Unattended Mode"
-permalink: kb/256/Q256508/
+permalink: /kb/256/Q256508/
 ---
 
 ## Q256508: Installing Routing and Remote Access Services in Unattended Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194496: WD97:How to Convert Between Ami Pro 2.x/3.x for Windows and Word"
-permalink: kb/194/Q194496/
+permalink: /kb/194/Q194496/
 ---
 
 ## Q194496: WD97:How to Convert Between Ami Pro 2.x/3.x for Windows and Word

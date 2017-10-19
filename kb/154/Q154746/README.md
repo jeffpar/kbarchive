@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154746: Logon Script Does Not Report the Correct Errorlevel Value"
-permalink: kb/154/Q154746/
+permalink: /kb/154/Q154746/
 ---
 
 ## Q154746: Logon Script Does Not Report the Correct Errorlevel Value

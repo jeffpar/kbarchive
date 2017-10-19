@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113341: PC WRmt: Mail Remote MSRMTSU.DLL Version 3.2.0.4013 Update"
-permalink: kb/113/Q113341/
+permalink: /kb/113/Q113341/
 ---
 
 ## Q113341: PC WRmt: Mail Remote MSRMTSU.DLL Version 3.2.0.4013 Update

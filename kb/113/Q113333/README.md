@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113333: How To Print Picture Box Contents Using StretchDIBits"
-permalink: kb/113/Q113333/
+permalink: /kb/113/Q113333/
 ---
 
 ## Q113333: How To Print Picture Box Contents Using StretchDIBits

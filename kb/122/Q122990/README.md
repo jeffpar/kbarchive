@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122990: AppStart Doesn't Change Cursor to Hourglass"
-permalink: kb/122/Q122990/
+permalink: /kb/122/Q122990/
 ---
 
 ## Q122990: AppStart Doesn't Change Cursor to Hourglass

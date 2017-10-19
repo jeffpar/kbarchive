@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124263: Macintosh RAS Options with Windows NT Server 3.5"
-permalink: kb/124/Q124263/
+permalink: /kb/124/Q124263/
 ---
 
 ## Q124263: Macintosh RAS Options with Windows NT Server 3.5

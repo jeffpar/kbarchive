@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216223: Windows NT 4.0 Service Pack 4 Information"
-permalink: kb/216/Q216223/
+permalink: /kb/216/Q216223/
 ---
 
 ## Q216223: Windows NT 4.0 Service Pack 4 Information

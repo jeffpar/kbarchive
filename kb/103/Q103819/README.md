@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103819: ScanDisk Fails to Remount DoubleSpace-Compressed Drive"
-permalink: kb/103/Q103819/
+permalink: /kb/103/Q103819/
 ---
 
 ## Q103819: ScanDisk Fails to Remount DoubleSpace-Compressed Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245699: Cannot Save RRAS Configuration After Upgrading to Service Pack 6"
-permalink: kb/245/Q245699/
+permalink: /kb/245/Q245699/
 ---
 
 ## Q245699: Cannot Save RRAS Configuration After Upgrading to Service Pack 6

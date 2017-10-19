@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248720: PRB: Performance Hit in SCSI Miniport with Multiple Requests"
-permalink: kb/248/Q248720/
+permalink: /kb/248/Q248720/
 ---
 
 ## Q248720: PRB: Performance Hit in SCSI Miniport with Multiple Requests

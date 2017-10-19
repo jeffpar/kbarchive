@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179192: HOWTO: Limit Cursor Movement Inside a Form"
-permalink: kb/179/Q179192/
+permalink: /kb/179/Q179192/
 ---
 
 ## Q179192: HOWTO: Limit Cursor Movement Inside a Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254323: Problems Printing to Printer on an AS/400 NetServer"
-permalink: kb/254/Q254323/
+permalink: /kb/254/Q254323/
 ---
 
 ## Q254323: Problems Printing to Printer on an AS/400 NetServer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104831: Cinemania: Can't Run Demo with Orchid Card and Video Driver"
-permalink: kb/104/Q104831/
+permalink: /kb/104/Q104831/
 ---
 
 ## Q104831: Cinemania: Can't Run Demo with Orchid Card and Video Driver

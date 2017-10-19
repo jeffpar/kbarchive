@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162727: SMS: Setup Switch &quot;/noautoupgrade&quot; Fails"
-permalink: kb/162/Q162727/
+permalink: /kb/162/Q162727/
 ---
 
 ## Q162727: SMS: Setup Switch &quot;/noautoupgrade&quot; Fails

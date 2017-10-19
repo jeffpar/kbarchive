@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193724: PRB: Memory Leak Passing Arrays from VBScript to VFP"
-permalink: kb/193/Q193724/
+permalink: /kb/193/Q193724/
 ---
 
 ## Q193724: PRB: Memory Leak Passing Arrays from VBScript to VFP

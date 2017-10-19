@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89466: LAN Man 2.1 Test Summary (NSSI Network Security Systems)"
-permalink: kb/089/Q89466/
+permalink: /kb/089/Q89466/
 ---
 
 ## Q89466: LAN Man 2.1 Test Summary (NSSI Network Security Systems)

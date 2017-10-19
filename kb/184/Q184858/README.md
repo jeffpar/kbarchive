@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184858: SMS: CLIMON Consumes PDC lsass Resources When Password Expired"
-permalink: kb/184/Q184858/
+permalink: /kb/184/Q184858/
 ---
 
 ## Q184858: SMS: CLIMON Consumes PDC lsass Resources When Password Expired

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255960: Allegiance: Colors of the Aiming Reticule Described Incorrectly"
-permalink: kb/255/Q255960/
+permalink: /kb/255/Q255960/
 ---
 
 ## Q255960: Allegiance: Colors of the Aiming Reticule Described Incorrectly

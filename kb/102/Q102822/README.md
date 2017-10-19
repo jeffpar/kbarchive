@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102822: &quot;Fatal Error on Drive 1&quot; Using Exabyte 4200 with IBM"
-permalink: kb/102/Q102822/
+permalink: /kb/102/Q102822/
 ---
 
 ## Q102822: &quot;Fatal Error on Drive 1&quot; Using Exabyte 4200 with IBM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247253: PRB: Using Lower Case Table Names Exporting Access 2000 Table"
-permalink: kb/247/Q247253/
+permalink: /kb/247/Q247253/
 ---
 
 ## Q247253: PRB: Using Lower Case Table Names Exporting Access 2000 Table

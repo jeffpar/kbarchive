@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126638: STOP 0xA When Installing Madge Smart 16/4 Ringnode Adapter"
-permalink: kb/126/Q126638/
+permalink: /kb/126/Q126638/
 ---
 
 ## Q126638: STOP 0xA When Installing Madge Smart 16/4 Ringnode Adapter

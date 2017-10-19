@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133107: FIX: C1001 Error If More Than 127 Function Parameters"
-permalink: kb/133/Q133107/
+permalink: /kb/133/Q133107/
 ---
 
 ## Q133107: FIX: C1001 Error If More Than 127 Function Parameters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139754: Microsoft Plus! Screen Saver &quot;Hot Corner&quot; Settings Are Global"
-permalink: kb/139/Q139754/
+permalink: /kb/139/Q139754/
 ---
 
 ## Q139754: Microsoft Plus! Screen Saver &quot;Hot Corner&quot; Settings Are Global

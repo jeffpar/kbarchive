@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257460: INFO: IPPROTO_IP Level Socket Options - Header and Library Files"
-permalink: kb/257/Q257460/
+permalink: /kb/257/Q257460/
 ---
 
 ## Q257460: INFO: IPPROTO_IP Level Socket Options - Header and Library Files

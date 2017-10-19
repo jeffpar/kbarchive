@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151259: New Netlogon Registry Entry for Dialup Routers"
-permalink: kb/151/Q151259/
+permalink: /kb/151/Q151259/
 ---
 
 ## Q151259: New Netlogon Registry Entry for Dialup Routers

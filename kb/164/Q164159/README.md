@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164159: Verify Reports Errors When Restoring a Tape Backup"
-permalink: kb/164/Q164159/
+permalink: /kb/164/Q164159/
 ---
 
 ## Q164159: Verify Reports Errors When Restoring a Tape Backup

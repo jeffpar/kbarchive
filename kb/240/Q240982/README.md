@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240982: PATCH: Patch_26.exe Fixes Divide by Zero Error on Fast Computers"
-permalink: kb/240/Q240982/
+permalink: /kb/240/Q240982/
 ---
 
 ## Q240982: PATCH: Patch_26.exe Fixes Divide by Zero Error on Fast Computers

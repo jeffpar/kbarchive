@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169668: XCON: X.25 Support for SAT Cards"
-permalink: kb/169/Q169668/
+permalink: /kb/169/Q169668/
 ---
 
 ## Q169668: XCON: X.25 Support for SAT Cards

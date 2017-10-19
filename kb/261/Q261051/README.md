@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261051: Motocross Madness 2: 3-D Hardware Rendering Is Not Available"
-permalink: kb/261/Q261051/
+permalink: /kb/261/Q261051/
 ---
 
 ## Q261051: Motocross Madness 2: 3-D Hardware Rendering Is Not Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105267: STOP Message: Sequent Server After Heavy Use"
-permalink: kb/105/Q105267/
+permalink: /kb/105/Q105267/
 ---
 
 ## Q105267: STOP Message: Sequent Server After Heavy Use

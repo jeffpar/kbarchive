@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140694: How to Restart the Macintosh from Within FoxPro"
-permalink: kb/140/Q140694/
+permalink: /kb/140/Q140694/
 ---
 
 ## Q140694: How to Restart the Macintosh from Within FoxPro

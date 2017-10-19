@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284215: Non-Paged Pool Leak in TimerQueue Active List Cleanup"
-permalink: kb/284/Q284215/
+permalink: /kb/284/Q284215/
 ---
 
 ## Q284215: Non-Paged Pool Leak in TimerQueue Active List Cleanup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193684: APPC/CPI-C Apps May Hang When Allocating LU 6.2 Sessions"
-permalink: kb/193/Q193684/
+permalink: /kb/193/Q193684/
 ---
 
 ## Q193684: APPC/CPI-C Apps May Hang When Allocating LU 6.2 Sessions

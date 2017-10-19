@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115493: SMTP: How SMTPGATE Processes Incoming SMTP Messages"
-permalink: kb/115/Q115493/
+permalink: /kb/115/Q115493/
 ---
 
 ## Q115493: SMTP: How SMTPGATE Processes Incoming SMTP Messages

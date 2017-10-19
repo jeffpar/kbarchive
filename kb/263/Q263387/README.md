@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263387: SMS: &quot;Run Once For Every User Who Logs On&quot; Makes Ad Run Twice"
-permalink: kb/263/Q263387/
+permalink: /kb/263/Q263387/
 ---
 
 ## Q263387: SMS: &quot;Run Once For Every User Who Logs On&quot; Makes Ad Run Twice

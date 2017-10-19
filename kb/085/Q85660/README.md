@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85660: Setting and Saving the Terminal Screen Buffer"
-permalink: kb/085/Q85660/
+permalink: /kb/085/Q85660/
 ---
 
 ## Q85660: Setting and Saving the Terminal Screen Buffer

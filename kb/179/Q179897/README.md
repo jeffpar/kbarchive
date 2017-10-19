@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179897: Memory Management Problems on Computers with Pentium Processors"
-permalink: kb/179/Q179897/
+permalink: /kb/179/Q179897/
 ---
 
 ## Q179897: Memory Management Problems on Computers with Pentium Processors

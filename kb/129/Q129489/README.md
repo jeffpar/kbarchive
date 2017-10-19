@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129489: DEC 101 Card Does Not Function After Server-Based Setup"
-permalink: kb/129/Q129489/
+permalink: /kb/129/Q129489/
 ---
 
 ## Q129489: DEC 101 Card Does Not Function After Server-Based Setup

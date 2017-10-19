@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117359: SFM: Copying Files Between Volumes Freezes Other Mac Clients"
-permalink: kb/117/Q117359/
+permalink: /kb/117/Q117359/
 ---
 
 ## Q117359: SFM: Copying Files Between Volumes Freezes Other Mac Clients

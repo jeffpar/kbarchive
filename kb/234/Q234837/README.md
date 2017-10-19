@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234837: MOD2000: Renamed Objects Lose Connection to VSS"
-permalink: kb/234/Q234837/
+permalink: /kb/234/Q234837/
 ---
 
 ## Q234837: MOD2000: Renamed Objects Lose Connection to VSS

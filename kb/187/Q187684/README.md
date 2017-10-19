@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187684: BUG: Assert When Calling AfxFreeLibrary from ExitInstance"
-permalink: kb/187/Q187684/
+permalink: /kb/187/Q187684/
 ---
 
 ## Q187684: BUG: Assert When Calling AfxFreeLibrary from ExitInstance

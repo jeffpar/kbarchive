@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154157: Audit.rul Does Not Find Software"
-permalink: kb/154/Q154157/
+permalink: /kb/154/Q154157/
 ---
 
 ## Q154157: Audit.rul Does Not Find Software

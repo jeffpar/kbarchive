@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237966: VSS Explorer Closes with Rename"
-permalink: kb/237/Q237966/
+permalink: /kb/237/Q237966/
 ---
 
 ## Q237966: VSS Explorer Closes with Rename

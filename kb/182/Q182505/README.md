@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182505: XADM: Memory Usage of Store.exe Is Higher in Exchange 5.5"
-permalink: kb/182/Q182505/
+permalink: /kb/182/Q182505/
 ---
 
 ## Q182505: XADM: Memory Usage of Store.exe Is Higher in Exchange 5.5

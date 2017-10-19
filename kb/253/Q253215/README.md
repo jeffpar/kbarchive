@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253215: STOP 0x00000050 Error Message in Windows Terminal Server"
-permalink: kb/253/Q253215/
+permalink: /kb/253/Q253215/
 ---
 
 ## Q253215: STOP 0x00000050 Error Message in Windows Terminal Server

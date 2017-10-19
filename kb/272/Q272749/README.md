@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272749: WD97: Macros Enabled Using Access Database File in Word"
-permalink: kb/272/Q272749/
+permalink: /kb/272/Q272749/
 ---
 
 ## Q272749: WD97: Macros Enabled Using Access Database File in Word

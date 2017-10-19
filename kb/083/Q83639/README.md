@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83639: Dr. Watson Version 0.80 Required for Windows 3.1"
-permalink: kb/083/Q83639/
+permalink: /kb/083/Q83639/
 ---
 
 ## Q83639: Dr. Watson Version 0.80 Required for Windows 3.1

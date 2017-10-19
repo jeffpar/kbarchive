@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138209: Encarta 1996: Contents of the Patch Fix Text File for MSN, WWW"
-permalink: kb/138/Q138209/
+permalink: /kb/138/Q138209/
 ---
 
 ## Q138209: Encarta 1996: Contents of the Patch Fix Text File for MSN, WWW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112894: PC Adm: Err Msg: Notice 22 Error Creating Mailbox"
-permalink: kb/112/Q112894/
+permalink: /kb/112/Q112894/
 ---
 
 ## Q112894: PC Adm: Err Msg: Notice 22 Error Creating Mailbox

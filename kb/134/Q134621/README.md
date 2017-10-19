@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134621: How to Find Out If an Object Is in a Container or Not"
-permalink: kb/134/Q134621/
+permalink: /kb/134/Q134621/
 ---
 
 ## Q134621: How to Find Out If an Object Is in a Container or Not

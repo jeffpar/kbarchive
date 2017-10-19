@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149175: Font, Cursor, and Redraw Problems with Adobe Type Manager"
-permalink: kb/149/Q149175/
+permalink: /kb/149/Q149175/
 ---
 
 ## Q149175: Font, Cursor, and Redraw Problems with Adobe Type Manager

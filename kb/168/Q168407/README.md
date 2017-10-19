@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168407: DOC: &#36;(InputDir) and &#36;(ProjDir) Produce Relative Paths"
-permalink: kb/168/Q168407/
+permalink: /kb/168/Q168407/
 ---
 
 ## Q168407: DOC: &#36;(InputDir) and &#36;(ProjDir) Produce Relative Paths

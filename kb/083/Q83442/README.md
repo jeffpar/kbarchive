@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83442: Quadram VGA Cards and Video Display in Windows 3.1"
-permalink: kb/083/Q83442/
+permalink: /kb/083/Q83442/
 ---
 
 ## Q83442: Quadram VGA Cards and Video Display in Windows 3.1

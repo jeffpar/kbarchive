@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155211: FIX: C2373 on getwchar/putwchar When Using UNICODE &amp; &#95;&#95;stdcall"
-permalink: kb/155/Q155211/
+permalink: /kb/155/Q155211/
 ---
 
 ## Q155211: FIX: C2373 on getwchar/putwchar When Using UNICODE &amp; &#95;&#95;stdcall

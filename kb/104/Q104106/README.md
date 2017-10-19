@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104106: PC Win: GP Fault During Setup When Installing Only Spelling"
-permalink: kb/104/Q104106/
+permalink: /kb/104/Q104106/
 ---
 
 ## Q104106: PC Win: GP Fault During Setup When Installing Only Spelling

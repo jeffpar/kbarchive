@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198365: WD97: Parentheses Missing, Decimal Appears in Number Form Field"
-permalink: kb/198/Q198365/
+permalink: /kb/198/Q198365/
 ---
 
 ## Q198365: WD97: Parentheses Missing, Decimal Appears in Number Form Field

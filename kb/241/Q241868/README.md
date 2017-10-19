@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241868: XADM: How to Apply Mailbox Message Size Limits to Mailboxes"
-permalink: kb/241/Q241868/
+permalink: /kb/241/Q241868/
 ---
 
 ## Q241868: XADM: How to Apply Mailbox Message Size Limits to Mailboxes

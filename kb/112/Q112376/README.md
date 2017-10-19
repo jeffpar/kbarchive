@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112376: RAS: Disable Modem Speaker Works on Outgoing Calls Only"
-permalink: kb/112/Q112376/
+permalink: /kb/112/Q112376/
 ---
 
 ## Q112376: RAS: Disable Modem Speaker Works on Outgoing Calls Only

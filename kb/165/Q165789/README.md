@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165789: DOC: Tab Text is too Small to Read"
-permalink: kb/165/Q165789/
+permalink: /kb/165/Q165789/
 ---
 
 ## Q165789: DOC: Tab Text is too Small to Read

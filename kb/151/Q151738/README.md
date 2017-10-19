@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151738: Known Issues Concerning E-Mail on MSN"
-permalink: kb/151/Q151738/
+permalink: /kb/151/Q151738/
 ---
 
 ## Q151738: Known Issues Concerning E-Mail on MSN

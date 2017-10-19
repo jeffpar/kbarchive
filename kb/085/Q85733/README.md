@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85733: How to Change the Program Manager Title Bar"
-permalink: kb/085/Q85733/
+permalink: /kb/085/Q85733/
 ---
 
 ## Q85733: How to Change the Program Manager Title Bar

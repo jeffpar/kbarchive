@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152898: XCON: MTA Access Violation in RPC DMOD"
-permalink: kb/152/Q152898/
+permalink: /kb/152/Q152898/
 ---
 
 ## Q152898: XCON: MTA Access Violation in RPC DMOD

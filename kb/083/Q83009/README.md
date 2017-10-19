@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83009: BUG: Common Dialog GP-Fault on ESC Key with Mouse Button Down"
-permalink: kb/083/Q83009/
+permalink: /kb/083/Q83009/
 ---
 
 ## Q83009: BUG: Common Dialog GP-Fault on ESC Key with Mouse Button Down

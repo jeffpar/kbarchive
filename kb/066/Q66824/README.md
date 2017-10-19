@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66824: Flight Simulator: Score Window Disappears in Crop Duster Mode"
-permalink: kb/066/Q66824/
+permalink: /kb/066/Q66824/
 ---
 
 ## Q66824: Flight Simulator: Score Window Disappears in Crop Duster Mode

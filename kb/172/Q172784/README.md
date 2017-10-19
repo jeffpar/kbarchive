@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172784: Error Message: Potential Safety Violation Avoided"
-permalink: kb/172/Q172784/
+permalink: /kb/172/Q172784/
 ---
 
 ## Q172784: Error Message: Potential Safety Violation Avoided

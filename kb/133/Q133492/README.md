@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133492: Dual Channel PCI SCSI Adapters"
-permalink: kb/133/Q133492/
+permalink: /kb/133/Q133492/
 ---
 
 ## Q133492: Dual Channel PCI SCSI Adapters

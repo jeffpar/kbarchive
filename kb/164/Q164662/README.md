@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164662: XCON: Message Conversion Fails in MIME Uudecoder"
-permalink: kb/164/Q164662/
+permalink: /kb/164/Q164662/
 ---
 
 ## Q164662: XCON: Message Conversion Fails in MIME Uudecoder

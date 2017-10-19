@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161923: WD97: Troubleshooting Variables and Data Types"
-permalink: kb/161/Q161923/
+permalink: /kb/161/Q161923/
 ---
 
 ## Q161923: WD97: Troubleshooting Variables and Data Types

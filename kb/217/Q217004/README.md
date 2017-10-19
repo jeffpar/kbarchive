@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217004: BackOffice Installer Tool Does Not Delete Password Cache File"
-permalink: kb/217/Q217004/
+permalink: /kb/217/Q217004/
 ---
 
 ## Q217004: BackOffice Installer Tool Does Not Delete Password Cache File

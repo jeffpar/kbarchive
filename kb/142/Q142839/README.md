@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142839: Unloading Form from Within DBGrid Event Causes GPF"
-permalink: kb/142/Q142839/
+permalink: /kb/142/Q142839/
 ---
 
 ## Q142839: Unloading Form from Within DBGrid Event Causes GPF

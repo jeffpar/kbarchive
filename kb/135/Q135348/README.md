@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135348: HOWTO: Update a Graph in a Form"
-permalink: kb/135/Q135348/
+permalink: /kb/135/Q135348/
 ---
 
 ## Q135348: HOWTO: Update a Graph in a Form

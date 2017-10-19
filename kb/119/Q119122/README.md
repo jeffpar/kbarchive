@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119122: WD97: Changing the Calendar Wizard Document Formatting"
-permalink: kb/119/Q119122/
+permalink: /kb/119/Q119122/
 ---
 
 ## Q119122: WD97: Changing the Calendar Wizard Document Formatting

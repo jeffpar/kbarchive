@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96603: Balancing Power Conservation and Performance with POWER.EXE"
-permalink: kb/096/Q96603/
+permalink: /kb/096/Q96603/
 ---
 
 ## Q96603: Balancing Power Conservation and Performance with POWER.EXE

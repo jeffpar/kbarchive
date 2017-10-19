@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140046: Master Boot Record Virus Prevents Windows NT From Installing"
-permalink: kb/140/Q140046/
+permalink: /kb/140/Q140046/
 ---
 
 ## Q140046: Master Boot Record Virus Prevents Windows NT From Installing

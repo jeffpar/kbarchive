@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84855: Text Selection Keys Don't Work"
-permalink: kb/084/Q84855/
+permalink: /kb/084/Q84855/
 ---
 
 ## Q84855: Text Selection Keys Don't Work

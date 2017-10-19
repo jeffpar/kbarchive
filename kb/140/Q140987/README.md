@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140987: Errors Removing TCP/IP Registry Keys Using Insight Manager"
-permalink: kb/140/Q140987/
+permalink: /kb/140/Q140987/
 ---
 
 ## Q140987: Errors Removing TCP/IP Registry Keys Using Insight Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69335: LogiTech's CATCHWORD 1.10 Intelligent Character Recognition"
-permalink: kb/069/Q69335/
+permalink: /kb/069/Q69335/
 ---
 
 ## Q69335: LogiTech's CATCHWORD 1.10 Intelligent Character Recognition

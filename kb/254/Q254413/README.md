@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254413: Streets and Trips: Pushpins Become Invisible When Map Is Shaded"
-permalink: kb/254/Q254413/
+permalink: /kb/254/Q254413/
 ---
 
 ## Q254413: Streets and Trips: Pushpins Become Invisible When Map Is Shaded

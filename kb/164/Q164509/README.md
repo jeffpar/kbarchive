@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164509: XCLN: Microsoft Mail Address Book Not Displayed"
-permalink: kb/164/Q164509/
+permalink: /kb/164/Q164509/
 ---
 
 ## Q164509: XCLN: Microsoft Mail Address Book Not Displayed

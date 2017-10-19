@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157200: WD97: Paragraph Border Extends Past Text Box Border"
-permalink: kb/157/Q157200/
+permalink: /kb/157/Q157200/
 ---
 
 ## Q157200: WD97: Paragraph Border Extends Past Text Box Border

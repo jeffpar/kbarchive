@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105179: Mac Wkst: Invoking System Information Window"
-permalink: kb/105/Q105179/
+permalink: /kb/105/Q105179/
 ---
 
 ## Q105179: Mac Wkst: Invoking System Information Window

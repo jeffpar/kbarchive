@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99770: Third-Party Support Needed to Print to SCSI Printers"
-permalink: kb/099/Q99770/
+permalink: /kb/099/Q99770/
 ---
 
 ## Q99770: Third-Party Support Needed to Print to SCSI Printers

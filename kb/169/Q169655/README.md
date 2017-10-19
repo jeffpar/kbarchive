@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169655: XCLN: Netscape Messenger Recognizes Only Its Own Priority Values"
-permalink: kb/169/Q169655/
+permalink: /kb/169/Q169655/
 ---
 
 ## Q169655: XCLN: Netscape Messenger Recognizes Only Its Own Priority Values

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237816: BUG: MSFLEXGRID Prints as Black Box After Installing VS SP3"
-permalink: kb/237/Q237816/
+permalink: /kb/237/Q237816/
 ---
 
 ## Q237816: BUG: MSFLEXGRID Prints as Black Box After Installing VS SP3

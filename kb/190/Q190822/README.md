@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190822: XADM: Error During Installation: Account Information Is Incorrec"
-permalink: kb/190/Q190822/
+permalink: /kb/190/Q190822/
 ---
 
 ## Q190822: XADM: Error During Installation: Account Information Is Incorrec

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156516: Error 26 or &quot;MAPI_E_NOT_SUPPORTED&quot; with MAPI-Based Program"
-permalink: kb/156/Q156516/
+permalink: /kb/156/Q156516/
 ---
 
 ## Q156516: Error 26 or &quot;MAPI_E_NOT_SUPPORTED&quot; with MAPI-Based Program

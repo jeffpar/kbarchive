@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304579: &quot;Stop 82&quot; Error Message on a Blue Screen on Terminal Server"
-permalink: kb/304/Q304579/
+permalink: /kb/304/Q304579/
 ---
 
 ## Q304579: &quot;Stop 82&quot; Error Message on a Blue Screen on Terminal Server

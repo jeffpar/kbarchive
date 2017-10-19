@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245417: PC WSPlus: Recovering Lost Installation of Schedule+ Information"
-permalink: kb/245/Q245417/
+permalink: /kb/245/Q245417/
 ---
 
 ## Q245417: PC WSPlus: Recovering Lost Installation of Schedule+ Information

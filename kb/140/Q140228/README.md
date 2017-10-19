@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140228: BUG: NET.EXE Sorts International Names Incorrectly"
-permalink: kb/140/Q140228/
+permalink: /kb/140/Q140228/
 ---
 
 ## Q140228: BUG: NET.EXE Sorts International Names Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103325: WOWEXEC Errors Caused by Incorrect COMMAND.COM File"
-permalink: kb/103/Q103325/
+permalink: /kb/103/Q103325/
 ---
 
 ## Q103325: WOWEXEC Errors Caused by Incorrect COMMAND.COM File

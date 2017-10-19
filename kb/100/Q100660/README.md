@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100660: INFO: Macros to Facilitate Porting Applications to Windows NT"
-permalink: kb/100/Q100660/
+permalink: /kb/100/Q100660/
 ---
 
 ## Q100660: INFO: Macros to Facilitate Porting Applications to Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112489: Multimedia: Display Looks Bad with Orchid Fahrenheit 1280"
-permalink: kb/112/Q112489/
+permalink: /kb/112/Q112489/
 ---
 
 ## Q112489: Multimedia: Display Looks Bad with Orchid Fahrenheit 1280

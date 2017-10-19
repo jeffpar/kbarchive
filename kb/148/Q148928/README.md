@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148928: Microsoft Plus! Inbox Icon Replaced with Standard Inbox Icon"
-permalink: kb/148/Q148928/
+permalink: /kb/148/Q148928/
 ---
 
 ## Q148928: Microsoft Plus! Inbox Icon Replaced with Standard Inbox Icon

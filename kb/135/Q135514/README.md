@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135514: FltSim 5.1: Setup Option to Save Disk Space and Time"
-permalink: kb/135/Q135514/
+permalink: /kb/135/Q135514/
 ---
 
 ## Q135514: FltSim 5.1: Setup Option to Save Disk Space and Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90219: Cannot Edit OLE Object Linked to Another Computer"
-permalink: kb/090/Q90219/
+permalink: /kb/090/Q90219/
 ---
 
 ## Q90219: Cannot Edit OLE Object Linked to Another Computer

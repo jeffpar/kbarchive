@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196676: WD97: Form Field Length Expands or Contracts, Affects Alignment"
-permalink: kb/196/Q196676/
+permalink: /kb/196/Q196676/
 ---
 
 ## Q196676: WD97: Form Field Length Expands or Contracts, Affects Alignment

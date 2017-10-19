@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186482: Terminal Server Modifications to NetDDE"
-permalink: kb/186/Q186482/
+permalink: /kb/186/Q186482/
 ---
 
 ## Q186482: Terminal Server Modifications to NetDDE

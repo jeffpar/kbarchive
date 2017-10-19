@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117866: DOC: Adding Icon and Cursor Devices Documented Incorrectly"
-permalink: kb/117/Q117866/
+permalink: /kb/117/Q117866/
 ---
 
 ## Q117866: DOC: Adding Icon and Cursor Devices Documented Incorrectly

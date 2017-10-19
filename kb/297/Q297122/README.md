@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297122: MSN Explorer Stops Responding When Opening E-mail Attachments"
-permalink: kb/297/Q297122/
+permalink: /kb/297/Q297122/
 ---
 
 ## Q297122: MSN Explorer Stops Responding When Opening E-mail Attachments

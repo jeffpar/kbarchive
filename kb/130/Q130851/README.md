@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130851: Slow Time-Out Trying to Connect to Nonexistent Computer"
-permalink: kb/130/Q130851/
+permalink: /kb/130/Q130851/
 ---
 
 ## Q130851: Slow Time-Out Trying to Connect to Nonexistent Computer

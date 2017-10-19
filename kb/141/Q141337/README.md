@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141337: XCLN: Error Message: The Item Could Not Be Displayed"
-permalink: kb/141/Q141337/
+permalink: /kb/141/Q141337/
 ---
 
 ## Q141337: XCLN: Error Message: The Item Could Not Be Displayed

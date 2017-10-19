@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151725: FP: How to Import Web Content from a Server w/o FP Extensions"
-permalink: kb/151/Q151725/
+permalink: /kb/151/Q151725/
 ---
 
 ## Q151725: FP: How to Import Web Content from a Server w/o FP Extensions

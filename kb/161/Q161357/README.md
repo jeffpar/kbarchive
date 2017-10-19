@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161357: FIX: MediaView 1.41 Control Causes Unusual Behavior with Form"
-permalink: kb/161/Q161357/
+permalink: /kb/161/Q161357/
 ---
 
 ## Q161357: FIX: MediaView 1.41 Control Causes Unusual Behavior with Form

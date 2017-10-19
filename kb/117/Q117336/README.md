@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117336: Extended Characters Display Incorrectly with Screen Fonts"
-permalink: kb/117/Q117336/
+permalink: /kb/117/Q117336/
 ---
 
 ## Q117336: Extended Characters Display Incorrectly with Screen Fonts

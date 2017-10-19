@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196660: WD97: Insertion Point Positioned Left of Inserted Fields"
-permalink: kb/196/Q196660/
+permalink: /kb/196/Q196660/
 ---
 
 ## Q196660: WD97: Insertion Point Positioned Left of Inserted Fields

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151166: FIX: Fixes in VC++ 4.1 to Bugs in VC++ 4.0 32-Bit Edition"
-permalink: kb/151/Q151166/
+permalink: /kb/151/Q151166/
 ---
 
 ## Q151166: FIX: Fixes in VC++ 4.1 to Bugs in VC++ 4.0 32-Bit Edition

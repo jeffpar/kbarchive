@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94594: Windows Sound System and Berkeley Systems' Screen Savers"
-permalink: kb/094/Q94594/
+permalink: /kb/094/Q94594/
 ---
 
 ## Q94594: Windows Sound System and Berkeley Systems' Screen Savers

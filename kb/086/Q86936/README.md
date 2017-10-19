@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86936: 3COM: Main Software Components in a 3Com Gateway"
-permalink: kb/086/Q86936/
+permalink: /kb/086/Q86936/
 ---
 
 ## Q86936: 3COM: Main Software Components in a 3Com Gateway

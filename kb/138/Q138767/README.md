@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138767: FIX: CreateRelation Method Fails with Non-UNICODE Build"
-permalink: kb/138/Q138767/
+permalink: /kb/138/Q138767/
 ---
 
 ## Q138767: FIX: CreateRelation Method Fails with Non-UNICODE Build

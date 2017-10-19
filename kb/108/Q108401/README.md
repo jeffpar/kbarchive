@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108401: Writer 1: ErrMsg: &quot;Almost Out of Space&quot; Message When Printing"
-permalink: kb/108/Q108401/
+permalink: /kb/108/Q108401/
 ---
 
 ## Q108401: Writer 1: ErrMsg: &quot;Almost Out of Space&quot; Message When Printing

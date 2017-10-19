@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122159: Err Msg: Setup Is Unable to Identify Your Hard Drive's..."
-permalink: kb/122/Q122159/
+permalink: /kb/122/Q122159/
 ---
 
 ## Q122159: Err Msg: Setup Is Unable to Identify Your Hard Drive's...

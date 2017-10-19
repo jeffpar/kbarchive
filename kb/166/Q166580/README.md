@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166580: XFOR: MIME and UUENCODED Messages Cause Store Conversion Error"
-permalink: kb/166/Q166580/
+permalink: /kb/166/Q166580/
 ---
 
 ## Q166580: XFOR: MIME and UUENCODED Messages Cause Store Conversion Error

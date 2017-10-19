@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155019: Volume Control Tool Has Select Option Instead of Mute"
-permalink: kb/155/Q155019/
+permalink: /kb/155/Q155019/
 ---
 
 ## Q155019: Volume Control Tool Has Select Option Instead of Mute

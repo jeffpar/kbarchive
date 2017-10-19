@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239699: Err Msg: Internet Explorer Cannot Open the Internet Site URL..."
-permalink: kb/239/Q239699/
+permalink: /kb/239/Q239699/
 ---
 
 ## Q239699: Err Msg: Internet Explorer Cannot Open the Internet Site URL...

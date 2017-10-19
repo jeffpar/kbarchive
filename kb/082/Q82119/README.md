@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82119: Problems Running Windows 3.1 Tutorial with EGA Monitor"
-permalink: kb/082/Q82119/
+permalink: /kb/082/Q82119/
 ---
 
 ## Q82119: Problems Running Windows 3.1 Tutorial with EGA Monitor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166127: INFO: Visual FoxPro/Mac and Mac ODBC Drivers from InterSolv"
-permalink: kb/166/Q166127/
+permalink: /kb/166/Q166127/
 ---
 
 ## Q166127: INFO: Visual FoxPro/Mac and Mac ODBC Drivers from InterSolv

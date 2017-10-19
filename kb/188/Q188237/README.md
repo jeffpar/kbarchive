@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188237: Pac-Man and Ms. Pac-Man: No Bonus Lives After 10,000 Points"
-permalink: kb/188/Q188237/
+permalink: /kb/188/Q188237/
 ---
 
 ## Q188237: Pac-Man and Ms. Pac-Man: No Bonus Lives After 10,000 Points

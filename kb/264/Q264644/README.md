@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264644: &quot;The Drive Cannot Be Locked for Exclusive Use&quot; Message When Dele"
-permalink: kb/264/Q264644/
+permalink: /kb/264/Q264644/
 ---
 
 ## Q264644: &quot;The Drive Cannot Be Locked for Exclusive Use&quot; Message When Dele

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136070: DOC: Incorrect Examples on Pages 69-75 of Developer's Guide"
-permalink: kb/136/Q136070/
+permalink: /kb/136/Q136070/
 ---
 
 ## Q136070: DOC: Incorrect Examples on Pages 69-75 of Developer's Guide

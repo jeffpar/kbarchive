@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157085: WD97: Limitations of Converting WordPerfect 5.x Documents"
-permalink: kb/157/Q157085/
+permalink: /kb/157/Q157085/
 ---
 
 ## Q157085: WD97: Limitations of Converting WordPerfect 5.x Documents

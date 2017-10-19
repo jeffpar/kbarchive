@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294300: Terminal Server Client May Have Keyboard Problems When Shadowed"
-permalink: kb/294/Q294300/
+permalink: /kb/294/Q294300/
 ---
 
 ## Q294300: Terminal Server Client May Have Keyboard Problems When Shadowed

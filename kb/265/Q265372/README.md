@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265372: PRB: Different Cases Across ASP Collection Key Names Not Advised"
-permalink: kb/265/Q265372/
+permalink: /kb/265/Q265372/
 ---
 
 ## Q265372: PRB: Different Cases Across ASP Collection Key Names Not Advised

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149717: PRB: MediaView: Jump to SubTopic Fails"
-permalink: kb/149/Q149717/
+permalink: /kb/149/Q149717/
 ---
 
 ## Q149717: PRB: MediaView: Jump to SubTopic Fails

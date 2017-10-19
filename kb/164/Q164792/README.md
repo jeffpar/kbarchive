@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164792: CPU Use at 100 Percent with SNA Server 3.0 Print Server"
-permalink: kb/164/Q164792/
+permalink: /kb/164/Q164792/
 ---
 
 ## Q164792: CPU Use at 100 Percent with SNA Server 3.0 Print Server

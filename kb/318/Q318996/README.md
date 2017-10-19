@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318996: How To Delete Internet Cookies In Internet Explorer 5.x For The"
-permalink: kb/318/Q318996/
+permalink: /kb/318/Q318996/
 ---
 
 ## Q318996: How To Delete Internet Cookies In Internet Explorer 5.x For The

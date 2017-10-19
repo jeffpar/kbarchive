@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175165: XADM: Changes to Internet Mail Service Wizard Cannot Be Saved"
-permalink: kb/175/Q175165/
+permalink: /kb/175/Q175165/
 ---
 
 ## Q175165: XADM: Changes to Internet Mail Service Wizard Cannot Be Saved

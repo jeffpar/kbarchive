@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274814: XADM: Services Don't Start Because of Service Account Password"
-permalink: kb/274/Q274814/
+permalink: /kb/274/Q274814/
 ---
 
 ## Q274814: XADM: Services Don't Start Because of Service Account Password

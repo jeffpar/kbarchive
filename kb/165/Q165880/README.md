@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165880: WD97: Dash in Autosignature Is Autoformatted to a Dot"
-permalink: kb/165/Q165880/
+permalink: /kb/165/Q165880/
 ---
 
 ## Q165880: WD97: Dash in Autosignature Is Autoformatted to a Dot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309114: OLE DB Provider for DB2 Using SSO Fails With SQL State Error"
-permalink: kb/309/Q309114/
+permalink: /kb/309/Q309114/
 ---
 
 ## Q309114: OLE DB Provider for DB2 Using SSO Fails With SQL State Error

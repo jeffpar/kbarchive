@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94147: HPPCL5E: Printer Intellifont Fonts Are Not Listed"
-permalink: kb/094/Q94147/
+permalink: /kb/094/Q94147/
 ---
 
 ## Q94147: HPPCL5E: Printer Intellifont Fonts Are Not Listed

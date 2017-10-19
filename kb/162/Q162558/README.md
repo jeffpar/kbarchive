@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162558: SMS: Job Status MIF Processing Slow on Large JobDetails Table"
-permalink: kb/162/Q162558/
+permalink: /kb/162/Q162558/
 ---
 
 ## Q162558: SMS: Job Status MIF Processing Slow on Large JobDetails Table

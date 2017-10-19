@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172878: Resource Kit Timeserv.exe Utility Causes 100% CPU Utilization"
-permalink: kb/172/Q172878/
+permalink: /kb/172/Q172878/
 ---
 
 ## Q172878: Resource Kit Timeserv.exe Utility Causes 100% CPU Utilization

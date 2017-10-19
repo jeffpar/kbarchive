@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241089: How to Save Internet Sites to Your Favorites Folder"
-permalink: kb/241/Q241089/
+permalink: /kb/241/Q241089/
 ---
 
 ## Q241089: How to Save Internet Sites to Your Favorites Folder

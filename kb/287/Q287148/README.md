@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287148: Age of Empires: Scenario Editor Only Places Default Units on Map"
-permalink: kb/287/Q287148/
+permalink: /kb/287/Q287148/
 ---
 
 ## Q287148: Age of Empires: Scenario Editor Only Places Default Units on Map

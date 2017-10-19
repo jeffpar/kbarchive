@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119573: Configuring Windows NT to Print to a Workgroup Add-On Machine"
-permalink: kb/119/Q119573/
+permalink: /kb/119/Q119573/
 ---
 
 ## Q119573: Configuring Windows NT to Print to a Workgroup Add-On Machine

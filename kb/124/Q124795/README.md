@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124795: Cannot Start Windows NT on Notebook with Docking Station"
-permalink: kb/124/Q124795/
+permalink: /kb/124/Q124795/
 ---
 
 ## Q124795: Cannot Start Windows NT on Notebook with Docking Station

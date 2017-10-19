@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218974: Cannot Boot off of a SCSI Device Other Than LUN 0"
-permalink: kb/218/Q218974/
+permalink: /kb/218/Q218974/
 ---
 
 ## Q218974: Cannot Boot off of a SCSI Device Other Than LUN 0

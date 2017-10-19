@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235496: Enabling a Memory.dmp File Capture Using the GUI or the Registry"
-permalink: kb/235/Q235496/
+permalink: /kb/235/Q235496/
 ---
 
 ## Q235496: Enabling a Memory.dmp File Capture Using the GUI or the Registry

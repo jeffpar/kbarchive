@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117420: List of Major Sound Card Manufacturers (B-C)"
-permalink: kb/117/Q117420/
+permalink: /kb/117/Q117420/
 ---
 
 ## Q117420: List of Major Sound Card Manufacturers (B-C)

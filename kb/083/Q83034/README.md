@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83034: Reading and Converting Between the Three GDI Resources"
-permalink: kb/083/Q83034/
+permalink: /kb/083/Q83034/
 ---
 
 ## Q83034: Reading and Converting Between the Three GDI Resources

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123956: Recovering from Attempted PC Anywhere for Windows Installation"
-permalink: kb/123/Q123956/
+permalink: /kb/123/Q123956/
 ---
 
 ## Q123956: Recovering from Attempted PC Anywhere for Windows Installation

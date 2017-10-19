@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111503: PRB: Error: CVW1.386 Is Not Loaded In SYSTEM.INI"
-permalink: kb/111/Q111503/
+permalink: /kb/111/Q111503/
 ---
 
 ## Q111503: PRB: Error: CVW1.386 Is Not Loaded In SYSTEM.INI

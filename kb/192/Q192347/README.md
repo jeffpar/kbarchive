@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192347: PRB: Focus/Activation Problems with MFC Control on VB Forms"
-permalink: kb/192/Q192347/
+permalink: /kb/192/Q192347/
 ---
 
 ## Q192347: PRB: Focus/Activation Problems with MFC Control on VB Forms

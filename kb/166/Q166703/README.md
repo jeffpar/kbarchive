@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166703: WD97: Known Video Driver Conflicts in Word 97"
-permalink: kb/166/Q166703/
+permalink: /kb/166/Q166703/
 ---
 
 ## Q166703: WD97: Known Video Driver Conflicts in Word 97

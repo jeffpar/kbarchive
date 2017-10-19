@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269196: How to Move a Cluster Server from One Domain to Another"
-permalink: kb/269/Q269196/
+permalink: /kb/269/Q269196/
 ---
 
 ## Q269196: How to Move a Cluster Server from One Domain to Another

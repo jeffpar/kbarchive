@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161301: HOWTO: Pass a Point Structure to the Windows API by Value"
-permalink: kb/161/Q161301/
+permalink: /kb/161/Q161301/
 ---
 
 ## Q161301: HOWTO: Pass a Point Structure to the Windows API by Value

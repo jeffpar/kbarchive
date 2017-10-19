@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294884: TN3270 and TN5250 Emulators Only Supported Through TN Service"
-permalink: kb/294/Q294884/
+permalink: /kb/294/Q294884/
 ---
 
 ## Q294884: TN3270 and TN5250 Emulators Only Supported Through TN Service

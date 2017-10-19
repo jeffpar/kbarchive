@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185060: WD97: ODMA: How Word 97 Works With GroupWise 5.2"
-permalink: kb/185/Q185060/
+permalink: /kb/185/Q185060/
 ---
 
 ## Q185060: WD97: ODMA: How Word 97 Works With GroupWise 5.2

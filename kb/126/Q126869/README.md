@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126869: DocErr: Media Player Command-Line Switches"
-permalink: kb/126/Q126869/
+permalink: /kb/126/Q126869/
 ---
 
 ## Q126869: DocErr: Media Player Command-Line Switches

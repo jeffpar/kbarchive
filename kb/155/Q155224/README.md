@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155224: PRB: Using CEdit SetModify/GetModify Returns Invalid Values"
-permalink: kb/155/Q155224/
+permalink: /kb/155/Q155224/
 ---
 
 ## Q155224: PRB: Using CEdit SetModify/GetModify Returns Invalid Values

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214520: MEPP Encrypted Password Syncs to Sun Sparc Fail with Error 8199"
-permalink: kb/214/Q214520/
+permalink: /kb/214/Q214520/
 ---
 
 ## Q214520: MEPP Encrypted Password Syncs to Sun Sparc Fail with Error 8199

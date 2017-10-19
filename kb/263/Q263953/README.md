@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263953: &quot;Modify Error 18032&quot; Error When Creating New Management Agent"
-permalink: kb/263/Q263953/
+permalink: /kb/263/Q263953/
 ---
 
 ## Q263953: &quot;Modify Error 18032&quot; Error When Creating New Management Agent

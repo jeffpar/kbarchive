@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201658: SMS: No Status Messages If Secondary Site Is Not Installed"
-permalink: kb/201/Q201658/
+permalink: /kb/201/Q201658/
 ---
 
 ## Q201658: SMS: No Status Messages If Secondary Site Is Not Installed

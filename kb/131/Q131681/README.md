@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131681: PC DirSync: After Reset, Export/Import Times Still Exist"
-permalink: kb/131/Q131681/
+permalink: /kb/131/Q131681/
 ---
 
 ## Q131681: PC DirSync: After Reset, Export/Import Times Still Exist

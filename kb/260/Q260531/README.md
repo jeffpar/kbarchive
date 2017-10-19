@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260531: PC Win: PC WRmt: Error Message: &quot;MSMAIL Caused a General..."
-permalink: kb/260/Q260531/
+permalink: /kb/260/Q260531/
 ---
 
 ## Q260531: PC Win: PC WRmt: Error Message: &quot;MSMAIL Caused a General...

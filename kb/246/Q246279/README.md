@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246279: XFOR: PAB Addresses Invalid After Migration from MS Mail"
-permalink: kb/246/Q246279/
+permalink: /kb/246/Q246279/
 ---
 
 ## Q246279: XFOR: PAB Addresses Invalid After Migration from MS Mail

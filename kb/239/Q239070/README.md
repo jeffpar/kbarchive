@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239070: Print Output Takes More Space After Installing Windows NT SP4"
-permalink: kb/239/Q239070/
+permalink: /kb/239/Q239070/
 ---
 
 ## Q239070: Print Output Takes More Space After Installing Windows NT SP4

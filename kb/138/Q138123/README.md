@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138123: Bookshelf 1995: No Keyboard Access to Audio, Video"
-permalink: kb/138/Q138123/
+permalink: /kb/138/Q138123/
 ---
 
 ## Q138123: Bookshelf 1995: No Keyboard Access to Audio, Video

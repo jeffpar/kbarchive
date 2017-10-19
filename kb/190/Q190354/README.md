@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190354: Unattended Setup of MSCS with -JOIN Parameter Requires Input"
-permalink: kb/190/Q190354/
+permalink: /kb/190/Q190354/
 ---
 
 ## Q190354: Unattended Setup of MSCS with -JOIN Parameter Requires Input

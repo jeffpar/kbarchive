@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201359: Synchronizing Windows NT to AS/400 Passwords Using HSI"
-permalink: kb/201/Q201359/
+permalink: /kb/201/Q201359/
 ---
 
 ## Q201359: Synchronizing Windows NT to AS/400 Passwords Using HSI

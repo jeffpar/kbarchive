@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133103: FORTRAN PowerStation 32 README.TXT: Debugger and Building"
-permalink: kb/133/Q133103/
+permalink: /kb/133/Q133103/
 ---
 
 ## Q133103: FORTRAN PowerStation 32 README.TXT: Debugger and Building

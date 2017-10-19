@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177125: User Cannot Log On to LAN Because of RAS Logon Failures"
-permalink: kb/177/Q177125/
+permalink: /kb/177/Q177125/
 ---
 
 ## Q177125: User Cannot Log On to LAN Because of RAS Logon Failures

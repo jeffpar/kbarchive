@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120212: Stars May Look Gray or Black Against Earth's Atmosphere"
-permalink: kb/120/Q120212/
+permalink: /kb/120/Q120212/
 ---
 
 ## Q120212: Stars May Look Gray or Black Against Earth's Atmosphere

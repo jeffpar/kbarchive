@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232968: How to Automate Terminal Server Client Configuration"
-permalink: kb/232/Q232968/
+permalink: /kb/232/Q232968/
 ---
 
 ## Q232968: How to Automate Terminal Server Client Configuration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173110: ActiveX Controls Are Downloaded Every Time You Connect to MSN"
-permalink: kb/173/Q173110/
+permalink: /kb/173/Q173110/
 ---
 
 ## Q173110: ActiveX Controls Are Downloaded Every Time You Connect to MSN

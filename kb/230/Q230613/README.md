@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230613: How to Uninstall DCOM 95 Version 1.2"
-permalink: kb/230/Q230613/
+permalink: /kb/230/Q230613/
 ---
 
 ## Q230613: How to Uninstall DCOM 95 Version 1.2

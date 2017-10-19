@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78675: Upgrade 5.0a Setup Automatically Updates DMDRVR.BIN/SSTOR.SYS"
-permalink: kb/078/Q78675/
+permalink: /kb/078/Q78675/
 ---
 
 ## Q78675: Upgrade 5.0a Setup Automatically Updates DMDRVR.BIN/SSTOR.SYS

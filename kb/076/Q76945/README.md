@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76945: FIX: Sample Program BELL.C Causes R6001 Error"
-permalink: kb/076/Q76945/
+permalink: /kb/076/Q76945/
 ---
 
 ## Q76945: FIX: Sample Program BELL.C Causes R6001 Error

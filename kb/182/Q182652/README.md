@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182652: Memory Leak When Transactional Method Fails Before Connect"
-permalink: kb/182/Q182652/
+permalink: /kb/182/Q182652/
 ---
 
 ## Q182652: Memory Leak When Transactional Method Fails Before Connect

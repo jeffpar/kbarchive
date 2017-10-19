@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104892: FIX: F2836 on Type Declaration After Entry Statement"
-permalink: kb/104/Q104892/
+permalink: /kb/104/Q104892/
 ---
 
 ## Q104892: FIX: F2836 on Type Declaration After Entry Statement

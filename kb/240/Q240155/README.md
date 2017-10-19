@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240155: MMC Security Rights Do Not Work with More Than 64 Global Groups"
-permalink: kb/240/Q240155/
+permalink: /kb/240/Q240155/
 ---
 
 ## Q240155: MMC Security Rights Do Not Work with More Than 64 Global Groups

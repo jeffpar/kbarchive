@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200500: XADM: Move Server Stops When It Detects Duplicate Names"
-permalink: kb/200/Q200500/
+permalink: /kb/200/Q200500/
 ---
 
 ## Q200500: XADM: Move Server Stops When It Detects Duplicate Names

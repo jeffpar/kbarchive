@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105227: Colors Display Strangely with Dell 16 Color Driver"
-permalink: kb/105/Q105227/
+permalink: /kb/105/Q105227/
 ---
 
 ## Q105227: Colors Display Strangely with Dell 16 Color Driver

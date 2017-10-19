@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201116: BUG: CB_SETTOPINDEX and CB_GETTOPINDEX Always Return 0 on Mac"
-permalink: kb/201/Q201116/
+permalink: /kb/201/Q201116/
 ---
 
 ## Q201116: BUG: CB_SETTOPINDEX and CB_GETTOPINDEX Always Return 0 on Mac

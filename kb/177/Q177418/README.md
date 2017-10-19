@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177418: XFOR: Migrating Data Containing DBCS Characters to Exchange"
-permalink: kb/177/Q177418/
+permalink: /kb/177/Q177418/
 ---
 
 ## Q177418: XFOR: Migrating Data Containing DBCS Characters to Exchange

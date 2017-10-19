@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172176: WD97:How to Sort Files in the File Open and Save As Dialog Boxes"
-permalink: kb/172/Q172176/
+permalink: /kb/172/Q172176/
 ---
 
 ## Q172176: WD97:How to Sort Files in the File Open and Save As Dialog Boxes

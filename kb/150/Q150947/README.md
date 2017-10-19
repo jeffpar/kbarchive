@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150947: VB 4.0 Setup Fails w/&quot;VB4SETUP.STF Contains NULL Characters&quot;"
-permalink: kb/150/Q150947/
+permalink: /kb/150/Q150947/
 ---
 
 ## Q150947: VB 4.0 Setup Fails w/&quot;VB4SETUP.STF Contains NULL Characters&quot;

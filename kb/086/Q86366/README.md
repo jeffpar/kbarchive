@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86366: Banyan Err Msg: Sorry, There Is No Descriptive Text for This.."
-permalink: kb/086/Q86366/
+permalink: /kb/086/Q86366/
 ---
 
 ## Q86366: Banyan Err Msg: Sorry, There Is No Descriptive Text for This..

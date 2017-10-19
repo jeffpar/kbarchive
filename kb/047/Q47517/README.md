@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47517: Mail Wkst: Send Inquiry Screen Keyboard Shortcuts"
-permalink: kb/047/Q47517/
+permalink: /kb/047/Q47517/
 ---
 
 ## Q47517: Mail Wkst: Send Inquiry Screen Keyboard Shortcuts

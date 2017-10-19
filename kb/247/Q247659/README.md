@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247659: Removing Trusted Certification Authorities from an IIS Server"
-permalink: kb/247/Q247659/
+permalink: /kb/247/Q247659/
 ---
 
 ## Q247659: Removing Trusted Certification Authorities from an IIS Server

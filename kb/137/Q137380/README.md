@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137380: How Windows 95 Setup Handles SUBST, JOIN, APPEND, and ASSIGN"
-permalink: kb/137/Q137380/
+permalink: /kb/137/Q137380/
 ---
 
 ## Q137380: How Windows 95 Setup Handles SUBST, JOIN, APPEND, and ASSIGN

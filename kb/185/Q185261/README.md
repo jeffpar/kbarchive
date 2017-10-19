@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185261: PRB: Grid Record Pointer Display Problem Using Down Arrow"
-permalink: kb/185/Q185261/
+permalink: /kb/185/Q185261/
 ---
 
 ## Q185261: PRB: Grid Record Pointer Display Problem Using Down Arrow

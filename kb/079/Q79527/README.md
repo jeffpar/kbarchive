@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79527: Windows Err Msg: Attempt to Load Duplicate...(PC Tools/Norton)"
-permalink: kb/079/Q79527/
+permalink: /kb/079/Q79527/
 ---
 
 ## Q79527: Windows Err Msg: Attempt to Load Duplicate...(PC Tools/Norton)

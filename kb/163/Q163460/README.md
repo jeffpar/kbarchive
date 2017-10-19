@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163460: WD97: ODMA TeamLinks or PCDOCS: Images Missing Saving to HTML"
-permalink: kb/163/Q163460/
+permalink: /kb/163/Q163460/
 ---
 
 ## Q163460: WD97: ODMA TeamLinks or PCDOCS: Images Missing Saving to HTML

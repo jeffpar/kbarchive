@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221690: FIX: C0000005 Error With Repeated SQL SELECTs Using BETWEEN(á)"
-permalink: kb/221/Q221690/
+permalink: /kb/221/Q221690/
 ---
 
 ## Q221690: FIX: C0000005 Error With Repeated SQL SELECTs Using BETWEEN(á)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172319: HOWTO: Determining Paths of Operating System Folders"
-permalink: kb/172/Q172319/
+permalink: /kb/172/Q172319/
 ---
 
 ## Q172319: HOWTO: Determining Paths of Operating System Folders

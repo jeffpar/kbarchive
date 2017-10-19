@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177653: CRT Conflict with Getservbyname"
-permalink: kb/177/Q177653/
+permalink: /kb/177/Q177653/
 ---
 
 ## Q177653: CRT Conflict with Getservbyname

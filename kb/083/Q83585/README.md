@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83585: Windows Err Msg: Unable to Initialize Ports (Control Panel)"
-permalink: kb/083/Q83585/
+permalink: /kb/083/Q83585/
 ---
 
 ## Q83585: Windows Err Msg: Unable to Initialize Ports (Control Panel)

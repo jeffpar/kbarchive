@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107567: Configuring SNA Server through a 3174 Gateway via 802.2"
-permalink: kb/107/Q107567/
+permalink: /kb/107/Q107567/
 ---
 
 ## Q107567: Configuring SNA Server through a 3174 Gateway via 802.2

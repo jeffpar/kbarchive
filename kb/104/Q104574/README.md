@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104574: Print Manager Starts Minimized Without Run Minimized Selected"
-permalink: kb/104/Q104574/
+permalink: /kb/104/Q104574/
 ---
 
 ## Q104574: Print Manager Starts Minimized Without Run Minimized Selected

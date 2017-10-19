@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238553: SAMPLE: VFPSCUT.EXE Creates Desktop Shortcut to a VFP App"
-permalink: kb/238/Q238553/
+permalink: /kb/238/Q238553/
 ---
 
 ## Q238553: SAMPLE: VFPSCUT.EXE Creates Desktop Shortcut to a VFP App

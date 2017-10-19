@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191950: HOWTO: Control Microsoft Agent with Visual FoxPro"
-permalink: kb/191/Q191950/
+permalink: /kb/191/Q191950/
 ---
 
 ## Q191950: HOWTO: Control Microsoft Agent with Visual FoxPro

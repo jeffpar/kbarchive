@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194833: HOWTO: Using the Supermover Foundation Class"
-permalink: kb/194/Q194833/
+permalink: /kb/194/Q194833/
 ---
 
 ## Q194833: HOWTO: Using the Supermover Foundation Class

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165005: Windows NT Slows Down Because of Land Attack"
-permalink: kb/165/Q165005/
+permalink: /kb/165/Q165005/
 ---
 
 ## Q165005: Windows NT Slows Down Because of Land Attack

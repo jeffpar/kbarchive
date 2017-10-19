@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163572: XADM: Performance Optimizer Values Change Depending on NT Login"
-permalink: kb/163/Q163572/
+permalink: /kb/163/Q163572/
 ---
 
 ## Q163572: XADM: Performance Optimizer Values Change Depending on NT Login

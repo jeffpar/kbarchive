@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219037: XCLN: Advanced Security Setting Not Consistent"
-permalink: kb/219/Q219037/
+permalink: /kb/219/Q219037/
 ---
 
 ## Q219037: XCLN: Advanced Security Setting Not Consistent

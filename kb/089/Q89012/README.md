@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89012: Windows: Compaq VGC Must Be Set Up as VGA"
-permalink: kb/089/Q89012/
+permalink: /kb/089/Q89012/
 ---
 
 ## Q89012: Windows: Compaq VGC Must Be Set Up as VGA

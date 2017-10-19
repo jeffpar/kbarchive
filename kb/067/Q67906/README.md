@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67906: ASD: NumLock Always On with Enhanced Instrument Panel"
-permalink: kb/067/Q67906/
+permalink: /kb/067/Q67906/
 ---
 
 ## Q67906: ASD: NumLock Always On with Enhanced Instrument Panel

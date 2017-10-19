@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238992: XFOR: Notes to Exchange Dirsync Generates Events 6206 &amp; 60102"
-permalink: kb/238/Q238992/
+permalink: /kb/238/Q238992/
 ---
 
 ## Q238992: XFOR: Notes to Exchange Dirsync Generates Events 6206 &amp; 60102

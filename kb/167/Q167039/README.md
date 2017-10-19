@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167039: XWEB: Access Forbidden Error from Browser"
-permalink: kb/167/Q167039/
+permalink: /kb/167/Q167039/
 ---
 
 ## Q167039: XWEB: Access Forbidden Error from Browser

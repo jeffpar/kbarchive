@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115622: ACC2: MS Access Dev. Toolkit Questions &amp; Answers"
-permalink: kb/115/Q115622/
+permalink: /kb/115/Q115622/
 ---
 
 ## Q115622: ACC2: MS Access Dev. Toolkit Questions &amp; Answers

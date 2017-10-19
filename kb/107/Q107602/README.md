@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107602: MS-DOS 6.2 Stacker Conversion Err Msg: Out of Memory"
-permalink: kb/107/Q107602/
+permalink: /kb/107/Q107602/
 ---
 
 ## Q107602: MS-DOS 6.2 Stacker Conversion Err Msg: Out of Memory

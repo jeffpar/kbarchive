@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139273: STOP 0x0000000A Using 3Com 3C770 with Compaq and HP"
-permalink: kb/139/Q139273/
+permalink: /kb/139/Q139273/
 ---
 
 ## Q139273: STOP 0x0000000A Using 3Com 3C770 with Compaq and HP

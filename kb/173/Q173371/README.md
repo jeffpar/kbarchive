@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173371: XWEB: Outlook Web Access Doesn't Show Subject-Line Space"
-permalink: kb/173/Q173371/
+permalink: /kb/173/Q173371/
 ---
 
 ## Q173371: XWEB: Outlook Web Access Doesn't Show Subject-Line Space

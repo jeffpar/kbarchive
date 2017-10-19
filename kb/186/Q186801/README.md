@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186801: PERL Scripts Do Not Run"
-permalink: kb/186/Q186801/
+permalink: /kb/186/Q186801/
 ---
 
 ## Q186801: PERL Scripts Do Not Run

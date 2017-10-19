@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262982: XCON: In Multiple Domain Setups NDRs All Originate from 1 Domain"
-permalink: kb/262/Q262982/
+permalink: /kb/262/Q262982/
 ---
 
 ## Q262982: XCON: In Multiple Domain Setups NDRs All Originate from 1 Domain

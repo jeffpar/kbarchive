@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302924: Icon Disappears From Quick Launch Portion Of The Taskbar After U"
-permalink: kb/302/Q302924/
+permalink: /kb/302/Q302924/
 ---
 
 ## Q302924: Icon Disappears From Quick Launch Portion Of The Taskbar After U

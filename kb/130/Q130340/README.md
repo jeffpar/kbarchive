@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130340: Windows 95 Hangs Printing with Vertisoft Emulaser"
-permalink: kb/130/Q130340/
+permalink: /kb/130/Q130340/
 ---
 
 ## Q130340: Windows 95 Hangs Printing with Vertisoft Emulaser

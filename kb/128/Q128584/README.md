@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128584: PC WSPlus: Restoring Schedule+ .CAL File Information"
-permalink: kb/128/Q128584/
+permalink: /kb/128/Q128584/
 ---
 
 ## Q128584: PC WSPlus: Restoring Schedule+ .CAL File Information

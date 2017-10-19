@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308439: IIS Admin Service Fails to Start When the Metabase Is Too Large"
-permalink: kb/308/Q308439/
+permalink: /kb/308/Q308439/
 ---
 
 ## Q308439: IIS Admin Service Fails to Start When the Metabase Is Too Large

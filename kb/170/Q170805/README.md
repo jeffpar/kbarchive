@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170805: Files and Folders Not Removed After Canceling ZAK Setup"
-permalink: kb/170/Q170805/
+permalink: /kb/170/Q170805/
 ---
 
 ## Q170805: Files and Folders Not Removed After Canceling ZAK Setup

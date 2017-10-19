@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97981: PC WRmt: Duplicate Help File Name"
-permalink: kb/097/Q97981/
+permalink: /kb/097/Q97981/
 ---
 
 ## Q97981: PC WRmt: Duplicate Help File Name

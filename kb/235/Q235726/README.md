@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235726: SMS: Specifying Senior Site for WinNT Logon Point Management"
-permalink: kb/235/Q235726/
+permalink: /kb/235/Q235726/
 ---
 
 ## Q235726: SMS: Specifying Senior Site for WinNT Logon Point Management

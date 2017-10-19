@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103715: FIX: Caret Moves from Memory Window When Modifications Made"
-permalink: kb/103/Q103715/
+permalink: /kb/103/Q103715/
 ---
 
 ## Q103715: FIX: Caret Moves from Memory Window When Modifications Made

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158049: Fonts Missing or Damaged After Installing Microsoft Office 95"
-permalink: kb/158/Q158049/
+permalink: /kb/158/Q158049/
 ---
 
 ## Q158049: Fonts Missing or Damaged After Installing Microsoft Office 95

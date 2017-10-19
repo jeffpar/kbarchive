@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174875: FIX: Bogus &quot;File is exclusively checked out&quot; Error"
-permalink: kb/174/Q174875/
+permalink: /kb/174/Q174875/
 ---
 
 ## Q174875: FIX: Bogus &quot;File is exclusively checked out&quot; Error

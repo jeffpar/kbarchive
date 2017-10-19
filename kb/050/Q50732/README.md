@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50732: INFO: Pointer to Undeclared Structure Does Not Generate Error"
-permalink: kb/050/Q50732/
+permalink: /kb/050/Q50732/
 ---
 
 ## Q50732: INFO: Pointer to Undeclared Structure Does Not Generate Error

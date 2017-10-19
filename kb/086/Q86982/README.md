@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86982: X400: Maintaining Addresses with Import Program"
-permalink: kb/086/Q86982/
+permalink: /kb/086/Q86982/
 ---
 
 ## Q86982: X400: Maintaining Addresses with Import Program

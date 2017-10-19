@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139182: Multimedia: Second Mouse Cursor In Flyout Menu"
-permalink: kb/139/Q139182/
+permalink: /kb/139/Q139182/
 ---
 
 ## Q139182: Multimedia: Second Mouse Cursor In Flyout Menu

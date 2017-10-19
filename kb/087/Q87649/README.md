@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87649: X400: How to Move the Gateway to Another Postoffice"
-permalink: kb/087/Q87649/
+permalink: /kb/087/Q87649/
 ---
 
 ## Q87649: X400: How to Move the Gateway to Another Postoffice

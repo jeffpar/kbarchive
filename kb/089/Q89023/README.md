@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89023: WRK Err: Vector Fonts Can Print on Dot-Matrix Printer"
-permalink: kb/089/Q89023/
+permalink: /kb/089/Q89023/
 ---
 
 ## Q89023: WRK Err: Vector Fonts Can Print on Dot-Matrix Printer

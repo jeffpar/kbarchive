@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272491: How to change passwords with MSN Companion"
-permalink: kb/272/Q272491/
+permalink: /kb/272/Q272491/
 ---
 
 ## Q272491: How to change passwords with MSN Companion

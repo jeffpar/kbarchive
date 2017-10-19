@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163618: WD97: Writing Macro Code for VBA and WordBasic Branching"
-permalink: kb/163/Q163618/
+permalink: /kb/163/Q163618/
 ---
 
 ## Q163618: WD97: Writing Macro Code for VBA and WordBasic Branching

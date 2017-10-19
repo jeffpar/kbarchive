@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215389: BUG: Application May Not Close When Frame Contains a CommandBar"
-permalink: kb/215/Q215389/
+permalink: /kb/215/Q215389/
 ---
 
 ## Q215389: BUG: Application May Not Close When Frame Contains a CommandBar

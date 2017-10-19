@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168827: FIX: ActiveX Control with &quot;Message&quot; Property Causes Page Fault"
-permalink: kb/168/Q168827/
+permalink: /kb/168/Q168827/
 ---
 
 ## Q168827: FIX: ActiveX Control with &quot;Message&quot; Property Causes Page Fault

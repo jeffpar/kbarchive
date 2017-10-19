@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182331: Default 802.2 DLC Pacing Values May Result In Slow Performance"
-permalink: kb/182/Q182331/
+permalink: /kb/182/Q182331/
 ---
 
 ## Q182331: Default 802.2 DLC Pacing Values May Result In Slow Performance

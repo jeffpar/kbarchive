@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122150: Password Validation to NT Using ODI Drivers"
-permalink: kb/122/Q122150/
+permalink: /kb/122/Q122150/
 ---
 
 ## Q122150: Password Validation to NT Using ODI Drivers

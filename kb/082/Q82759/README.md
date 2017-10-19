@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82759: Use Printer Drivers Provided with Windows 3.1"
-permalink: kb/082/Q82759/
+permalink: /kb/082/Q82759/
 ---
 
 ## Q82759: Use Printer Drivers Provided with Windows 3.1

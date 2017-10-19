@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254308: Games: Hal.dll Error Message When You Attempt to Start Program"
-permalink: kb/254/Q254308/
+permalink: /kb/254/Q254308/
 ---
 
 ## Q254308: Games: Hal.dll Error Message When You Attempt to Start Program

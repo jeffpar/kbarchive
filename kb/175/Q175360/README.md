@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175360: XFOR: DirSync Cycle Removes Secondary X.400 Addresses"
-permalink: kb/175/Q175360/
+permalink: /kb/175/Q175360/
 ---
 
 ## Q175360: XFOR: DirSync Cycle Removes Secondary X.400 Addresses

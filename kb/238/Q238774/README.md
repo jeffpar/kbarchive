@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238774: PRB: ODBC Driver Manager Error: &quot;Program Type out of Range&quot;"
-permalink: kb/238/Q238774/
+permalink: /kb/238/Q238774/
 ---
 
 ## Q238774: PRB: ODBC Driver Manager Error: &quot;Program Type out of Range&quot;

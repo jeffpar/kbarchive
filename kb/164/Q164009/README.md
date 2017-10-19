@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164009: WD97: Paragraph.Border.Linestyle Incorrect After Applying Shadow"
-permalink: kb/164/Q164009/
+permalink: /kb/164/Q164009/
 ---
 
 ## Q164009: WD97: Paragraph.Border.Linestyle Incorrect After Applying Shadow

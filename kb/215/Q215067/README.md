@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215067: Online Help Does Not Match Licensed Software Properties"
-permalink: kb/215/Q215067/
+permalink: /kb/215/Q215067/
 ---
 
 ## Q215067: Online Help Does Not Match Licensed Software Properties

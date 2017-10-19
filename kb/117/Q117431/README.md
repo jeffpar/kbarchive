@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117431: Windows 95 Does Not Boot After Running MicroHelp UnInstaller"
-permalink: kb/117/Q117431/
+permalink: /kb/117/Q117431/
 ---
 
 ## Q117431: Windows 95 Does Not Boot After Running MicroHelp UnInstaller

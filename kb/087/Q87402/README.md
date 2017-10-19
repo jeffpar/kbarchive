@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87402: PC DB: How ACCESS Files Are Linked Together"
-permalink: kb/087/Q87402/
+permalink: /kb/087/Q87402/
 ---
 
 ## Q87402: PC DB: How ACCESS Files Are Linked Together

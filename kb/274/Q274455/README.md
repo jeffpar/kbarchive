@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274455: MSN Explorer Setup Or Update Fails When Not Enough Disk Space"
-permalink: kb/274/Q274455/
+permalink: /kb/274/Q274455/
 ---
 
 ## Q274455: MSN Explorer Setup Or Update Fails When Not Enough Disk Space

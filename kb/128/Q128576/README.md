@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128576: PC WSPlus: Schedule+ Access Library Error Codes"
-permalink: kb/128/Q128576/
+permalink: /kb/128/Q128576/
 ---
 
 ## Q128576: PC WSPlus: Schedule+ Access Library Error Codes

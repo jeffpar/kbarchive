@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118753: Remote Administration of DLC Network Printer is Not Available"
-permalink: kb/118/Q118753/
+permalink: /kb/118/Q118753/
 ---
 
 ## Q118753: Remote Administration of DLC Network Printer is Not Available

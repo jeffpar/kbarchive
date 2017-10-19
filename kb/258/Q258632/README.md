@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258632: Baseball 2001: Game Screen Distorted or Not Centered on Monitor"
-permalink: kb/258/Q258632/
+permalink: /kb/258/Q258632/
 ---
 
 ## Q258632: Baseball 2001: Game Screen Distorted or Not Centered on Monitor

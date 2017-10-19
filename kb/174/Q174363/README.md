@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174363: FS98: CH Force FX Does Not Work with Flight Simulator"
-permalink: kb/174/Q174363/
+permalink: /kb/174/Q174363/
 ---
 
 ## Q174363: FS98: CH Force FX Does Not Work with Flight Simulator

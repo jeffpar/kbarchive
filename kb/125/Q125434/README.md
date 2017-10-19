@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125434: ADT2: How to Modify Reattach NWIND Module in SOLUTION.MDB"
-permalink: kb/125/Q125434/
+permalink: /kb/125/Q125434/
 ---
 
 ## Q125434: ADT2: How to Modify Reattach NWIND Module in SOLUTION.MDB

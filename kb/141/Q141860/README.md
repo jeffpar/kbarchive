@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141860: PPT: Can't Open Files Created in Foreign Language Version"
-permalink: kb/141/Q141860/
+permalink: /kb/141/Q141860/
 ---
 
 ## Q141860: PPT: Can't Open Files Created in Foreign Language Version

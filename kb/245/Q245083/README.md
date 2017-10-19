@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245083: Telephony Properties for New Swedish International Call Prefix"
-permalink: kb/245/Q245083/
+permalink: /kb/245/Q245083/
 ---
 
 ## Q245083: Telephony Properties for New Swedish International Call Prefix

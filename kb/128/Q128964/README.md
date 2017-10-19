@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128964: PC WSPlus: Mailbox Change Creates New Calendar Files"
-permalink: kb/128/Q128964/
+permalink: /kb/128/Q128964/
 ---
 
 ## Q128964: PC WSPlus: Mailbox Change Creates New Calendar Files

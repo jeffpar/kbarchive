@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246691: The CreateRemoteThread API May Leak a Handle"
-permalink: kb/246/Q246691/
+permalink: /kb/246/Q246691/
 ---
 
 ## Q246691: The CreateRemoteThread API May Leak a Handle

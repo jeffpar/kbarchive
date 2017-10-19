@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258752: Creating PDT to Support an IBM Proprinter"
-permalink: kb/258/Q258752/
+permalink: /kb/258/Q258752/
 ---
 
 ## Q258752: Creating PDT to Support an IBM Proprinter

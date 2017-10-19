@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85251: Cannot Print TrueType Fonts to QMS-PS 410 or 815"
-permalink: kb/085/Q85251/
+permalink: /kb/085/Q85251/
 ---
 
 ## Q85251: Cannot Print TrueType Fonts to QMS-PS 410 or 815

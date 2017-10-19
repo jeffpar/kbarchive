@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93236: Using IBM DLC with Windows for Workgroups 3.10"
-permalink: kb/093/Q93236/
+permalink: /kb/093/Q93236/
 ---
 
 ## Q93236: Using IBM DLC with Windows for Workgroups 3.10

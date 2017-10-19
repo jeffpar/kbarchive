@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176243: XADM: Batch Setup-Setup /r /q Options Combined Unsupported"
-permalink: kb/176/Q176243/
+permalink: /kb/176/Q176243/
 ---
 
 ## Q176243: XADM: Batch Setup-Setup /r /q Options Combined Unsupported

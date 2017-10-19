@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178531: XADM: Generating the Calls.out File"
-permalink: kb/178/Q178531/
+permalink: /kb/178/Q178531/
 ---
 
 ## Q178531: XADM: Generating the Calls.out File

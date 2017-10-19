@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179913: PRB: Unexpected Behavior with FoxPro 2.x Database Using DBCombo"
-permalink: kb/179/Q179913/
+permalink: /kb/179/Q179913/
 ---
 
 ## Q179913: PRB: Unexpected Behavior with FoxPro 2.x Database Using DBCombo

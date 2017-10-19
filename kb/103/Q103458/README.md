@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103458: PC OS2: No Check for Disk Space Before Install"
-permalink: kb/103/Q103458/
+permalink: /kb/103/Q103458/
 ---
 
 ## Q103458: PC OS2: No Check for Disk Space Before Install

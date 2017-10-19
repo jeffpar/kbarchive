@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173277: No Memory.dmp File Created with RAM Above 1.7 GB"
-permalink: kb/173/Q173277/
+permalink: /kb/173/Q173277/
 ---
 
 ## Q173277: No Memory.dmp File Created with RAM Above 1.7 GB

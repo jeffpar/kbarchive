@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137691: Bookshelf 1995: Cannot Alt+Tab from Quickshelf Keys"
-permalink: kb/137/Q137691/
+permalink: /kb/137/Q137691/
 ---
 
 ## Q137691: Bookshelf 1995: Cannot Alt+Tab from Quickshelf Keys

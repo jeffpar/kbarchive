@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141118: No FPNW &quot;Netware Compatible Password Expired&quot; Check Box"
-permalink: kb/141/Q141118/
+permalink: /kb/141/Q141118/
 ---
 
 ## Q141118: No FPNW &quot;Netware Compatible Password Expired&quot; Check Box

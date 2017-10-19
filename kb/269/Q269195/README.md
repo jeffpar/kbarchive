@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269195: Active Directoy MA Does Not Allow DN"
-permalink: kb/269/Q269195/
+permalink: /kb/269/Q269195/
 ---
 
 ## Q269195: Active Directoy MA Does Not Allow DN

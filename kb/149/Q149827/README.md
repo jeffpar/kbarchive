@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149827: Explorapedia Nature: How to Run Setup"
-permalink: kb/149/Q149827/
+permalink: /kb/149/Q149827/
 ---
 
 ## Q149827: Explorapedia Nature: How to Run Setup

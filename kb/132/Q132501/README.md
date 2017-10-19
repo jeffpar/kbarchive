@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132501: NetBIOS Error 0x11: Local Session Table Full"
-permalink: kb/132/Q132501/
+permalink: /kb/132/Q132501/
 ---
 
 ## Q132501: NetBIOS Error 0x11: Local Session Table Full

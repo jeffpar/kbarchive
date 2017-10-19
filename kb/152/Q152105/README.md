@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152105: Quick Viewer Font Problem(s) When You Remote Control to Clients"
-permalink: kb/152/Q152105/
+permalink: /kb/152/Q152105/
 ---
 
 ## Q152105: Quick Viewer Font Problem(s) When You Remote Control to Clients

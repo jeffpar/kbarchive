@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306530: PRB: Cannot Use Boolean Parameter with Oracle"
-permalink: kb/306/Q306530/
+permalink: /kb/306/Q306530/
 ---
 
 ## Q306530: PRB: Cannot Use Boolean Parameter with Oracle

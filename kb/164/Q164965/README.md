@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164965: Missing Data from Print Output with SNA Server 3.0 Print Server"
-permalink: kb/164/Q164965/
+permalink: /kb/164/Q164965/
 ---
 
 ## Q164965: Missing Data from Print Output with SNA Server 3.0 Print Server

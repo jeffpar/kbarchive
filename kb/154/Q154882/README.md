@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154882: Cannot Access Network with Intel EtherExpress Pro Adapter"
-permalink: kb/154/Q154882/
+permalink: /kb/154/Q154882/
 ---
 
 ## Q154882: Cannot Access Network with Intel EtherExpress Pro Adapter

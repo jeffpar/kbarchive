@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139110: DOC: Code on Pages 75-76 of Developer's Guide Causes Error"
-permalink: kb/139/Q139110/
+permalink: /kb/139/Q139110/
 ---
 
 ## Q139110: DOC: Code on Pages 75-76 of Developer's Guide Causes Error

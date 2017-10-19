@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160616: FP: Unable to Use Scroll Bar, Page Displayed Incorrectly"
-permalink: kb/160/Q160616/
+permalink: /kb/160/Q160616/
 ---
 
 ## Q160616: FP: Unable to Use Scroll Bar, Page Displayed Incorrectly

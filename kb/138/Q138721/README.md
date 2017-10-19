@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138721: &quot;Line Non-Operational&quot; in Remote Access Service Monitor"
-permalink: kb/138/Q138721/
+permalink: /kb/138/Q138721/
 ---
 
 ## Q138721: &quot;Line Non-Operational&quot; in Remote Access Service Monitor

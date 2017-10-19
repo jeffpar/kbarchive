@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85948: Interaction Systems Touch Screen and Windows 3.1"
-permalink: kb/085/Q85948/
+permalink: /kb/085/Q85948/
 ---
 
 ## Q85948: Interaction Systems Touch Screen and Windows 3.1

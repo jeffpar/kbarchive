@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199947: TCP/IP: Windows NT 4.0 Does Not Support TCP Scale Option"
-permalink: kb/199/Q199947/
+permalink: /kb/199/Q199947/
 ---
 
 ## Q199947: TCP/IP: Windows NT 4.0 Does Not Support TCP Scale Option

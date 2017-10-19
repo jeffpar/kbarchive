@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142973: PRB: Distribution Setup Fails After Visual FoxPro 3.0b Install"
-permalink: kb/142/Q142973/
+permalink: /kb/142/Q142973/
 ---
 
 ## Q142973: PRB: Distribution Setup Fails After Visual FoxPro 3.0b Install

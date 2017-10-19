@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187633: BUG: Type Mismatch Referencing UserControl on Unloaded Form"
-permalink: kb/187/Q187633/
+permalink: /kb/187/Q187633/
 ---
 
 ## Q187633: BUG: Type Mismatch Referencing UserControl on Unloaded Form

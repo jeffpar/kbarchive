@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191499: INFO: Where to Find the Builder Applications' Source Files"
-permalink: kb/191/Q191499/
+permalink: /kb/191/Q191499/
 ---
 
 ## Q191499: INFO: Where to Find the Builder Applications' Source Files

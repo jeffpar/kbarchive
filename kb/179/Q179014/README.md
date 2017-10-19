@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179014: XFOR: Characters Are Stripped on Fixed File Sent from PROFS"
-permalink: kb/179/Q179014/
+permalink: /kb/179/Q179014/
 ---
 
 ## Q179014: XFOR: Characters Are Stripped on Fixed File Sent from PROFS

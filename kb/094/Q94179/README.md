@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94179: PC WFW: Description of Extensions for Windows for Workgroups"
-permalink: kb/094/Q94179/
+permalink: /kb/094/Q94179/
 ---
 
 ## Q94179: PC WFW: Description of Extensions for Windows for Workgroups

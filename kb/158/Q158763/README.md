@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158763: FIX: Server Out of Memory when Inserting into Text/Image Fields"
-permalink: kb/158/Q158763/
+permalink: /kb/158/Q158763/
 ---
 
 ## Q158763: FIX: Server Out of Memory when Inserting into Text/Image Fields

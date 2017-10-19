@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83959: Misleading Error Message from Embedded Sound Object"
-permalink: kb/083/Q83959/
+permalink: /kb/083/Q83959/
 ---
 
 ## Q83959: Misleading Error Message from Embedded Sound Object

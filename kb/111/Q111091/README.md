@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111091: FIX: Compiler Displays Incorrect Line-Number Information"
-permalink: kb/111/Q111091/
+permalink: /kb/111/Q111091/
 ---
 
 ## Q111091: FIX: Compiler Displays Incorrect Line-Number Information

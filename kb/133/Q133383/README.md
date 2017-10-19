@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133383: Systems Management Server Setup Hangs with SMC Ethercard"
-permalink: kb/133/Q133383/
+permalink: /kb/133/Q133383/
 ---
 
 ## Q133383: Systems Management Server Setup Hangs with SMC Ethercard

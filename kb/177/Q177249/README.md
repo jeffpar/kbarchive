@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177249: ADIC Tape Drive Detected and Installed as Quantum 7000"
-permalink: kb/177/Q177249/
+permalink: /kb/177/Q177249/
 ---
 
 ## Q177249: ADIC Tape Drive Detected and Installed as Quantum 7000

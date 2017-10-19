@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116240: FIX: Compiler Errors Initializing const Reference to an Array"
-permalink: kb/116/Q116240/
+permalink: /kb/116/Q116240/
 ---
 
 ## Q116240: FIX: Compiler Errors Initializing const Reference to an Array

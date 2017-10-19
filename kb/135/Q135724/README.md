@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135724: Deleted Disk Space Not Released on Converted NTFS Volume"
-permalink: kb/135/Q135724/
+permalink: /kb/135/Q135724/
 ---
 
 ## Q135724: Deleted Disk Space Not Released on Converted NTFS Volume

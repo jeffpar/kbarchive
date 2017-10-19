@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162461: WinNT Err Msg: The Streams Environment is Currently in Use. . ."
-permalink: kb/162/Q162461/
+permalink: /kb/162/Q162461/
 ---
 
 ## Q162461: WinNT Err Msg: The Streams Environment is Currently in Use. . .

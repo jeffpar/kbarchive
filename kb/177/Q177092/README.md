@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177092: FP: Overview of FrontPage Discussion Web Architecture"
-permalink: kb/177/Q177092/
+permalink: /kb/177/Q177092/
 ---
 
 ## Q177092: FP: Overview of FrontPage Discussion Web Architecture

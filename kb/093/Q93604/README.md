@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93604: ISO 9660 Support for CD-ROM"
-permalink: kb/093/Q93604/
+permalink: /kb/093/Q93604/
 ---
 
 ## Q93604: ISO 9660 Support for CD-ROM

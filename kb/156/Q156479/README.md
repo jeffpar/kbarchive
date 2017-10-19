@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156479: INFO: Differences Between DLC on Windows 95 and Windows NT"
-permalink: kb/156/Q156479/
+permalink: /kb/156/Q156479/
 ---
 
 ## Q156479: INFO: Differences Between DLC on Windows 95 and Windows NT

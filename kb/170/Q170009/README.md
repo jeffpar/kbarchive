@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170009: XADM: NTFS Compressed Volume Causes Store to Fail"
-permalink: kb/170/Q170009/
+permalink: /kb/170/Q170009/
 ---
 
 ## Q170009: XADM: NTFS Compressed Volume Causes Store to Fail

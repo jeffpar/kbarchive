@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48882: Mac Wkst: The Mail Notifier and Cricket Graph"
-permalink: kb/048/Q48882/
+permalink: /kb/048/Q48882/
 ---
 
 ## Q48882: Mac Wkst: The Mail Notifier and Cricket Graph

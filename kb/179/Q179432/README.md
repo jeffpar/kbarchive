@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179432: Silent Install Fails with Outlook Deployment Wizard"
-permalink: kb/179/Q179432/
+permalink: /kb/179/Q179432/
 ---
 
 ## Q179432: Silent Install Fails with Outlook Deployment Wizard

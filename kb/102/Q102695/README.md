@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102695: FIX: F2559, DX1020 From Illegal Array Bound, -4Yb, and -4Ys"
-permalink: kb/102/Q102695/
+permalink: /kb/102/Q102695/
 ---
 
 ## Q102695: FIX: F2559, DX1020 From Illegal Array Bound, -4Yb, and -4Ys

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173615: Unable to Specify LU Number 1 When Adding Range of 3270 LUs"
-permalink: kb/173/Q173615/
+permalink: /kb/173/Q173615/
 ---
 
 ## Q173615: Unable to Specify LU Number 1 When Adding Range of 3270 LUs

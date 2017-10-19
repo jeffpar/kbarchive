@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87115: HOWTO: GetGlyphOutline() Native Buffer Format"
-permalink: kb/087/Q87115/
+permalink: /kb/087/Q87115/
 ---
 
 ## Q87115: HOWTO: GetGlyphOutline() Native Buffer Format

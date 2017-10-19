@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267283: Inetmgr Shows Screen Errors with Virtual Server on Novell Share"
-permalink: kb/267/Q267283/
+permalink: /kb/267/Q267283/
 ---
 
 ## Q267283: Inetmgr Shows Screen Errors with Virtual Server on Novell Share

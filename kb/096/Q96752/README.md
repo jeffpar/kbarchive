@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96752: Installing DoubleSpace When Norton Erase Protect Is Loaded"
-permalink: kb/096/Q96752/
+permalink: /kb/096/Q96752/
 ---
 
 ## Q96752: Installing DoubleSpace When Norton Erase Protect Is Loaded

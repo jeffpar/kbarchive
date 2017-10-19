@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142256: PSI Hard Disk Controllers Incompatible with Windows 95"
-permalink: kb/142/Q142256/
+permalink: /kb/142/Q142256/
 ---
 
 ## Q142256: PSI Hard Disk Controllers Incompatible with Windows 95

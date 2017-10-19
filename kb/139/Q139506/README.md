@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139506: Connections to Share-Level Server May Fail"
-permalink: kb/139/Q139506/
+permalink: /kb/139/Q139506/
 ---
 
 ## Q139506: Connections to Share-Level Server May Fail

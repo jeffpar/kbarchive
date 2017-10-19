@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184375: PRB: Security Implications of RDS 1.5, IIS 3.0 or 4.0, and ODBC"
-permalink: kb/184/Q184375/
+permalink: /kb/184/Q184375/
 ---
 
 ## Q184375: PRB: Security Implications of RDS 1.5, IIS 3.0 or 4.0, and ODBC

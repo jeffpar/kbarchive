@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224311: SNA Server 4.0 Service Pack 2 Upgrades MDAC To Version 2.1"
-permalink: kb/224/Q224311/
+permalink: /kb/224/Q224311/
 ---
 
 ## Q224311: SNA Server 4.0 Service Pack 2 Upgrades MDAC To Version 2.1

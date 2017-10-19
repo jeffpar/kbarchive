@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150504: INVDOS Will Not Detect Software On Compressed Drives"
-permalink: kb/150/Q150504/
+permalink: /kb/150/Q150504/
 ---
 
 ## Q150504: INVDOS Will Not Detect Software On Compressed Drives

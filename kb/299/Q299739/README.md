@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299739: Train Simulator: Compass Not Visible in Cab View"
-permalink: kb/299/Q299739/
+permalink: /kb/299/Q299739/
 ---
 
 ## Q299739: Train Simulator: Compass Not Visible in Cab View

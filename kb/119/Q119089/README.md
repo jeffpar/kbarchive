@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119089: PC Win: How the Inbox Received Time Stamp Is Set"
-permalink: kb/119/Q119089/
+permalink: /kb/119/Q119089/
 ---
 
 ## Q119089: PC Win: How the Inbox Received Time Stamp Is Set

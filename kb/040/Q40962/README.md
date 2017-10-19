@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40962: DllInst.exe-Multiple Application Instance Data in a DLL"
-permalink: kb/040/Q40962/
+permalink: /kb/040/Q40962/
 ---
 
 ## Q40962: DllInst.exe-Multiple Application Instance Data in a DLL

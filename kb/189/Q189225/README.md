@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189225: LMMIB2 Unable to &quot;Walk&quot; from .1.3.6.1.4.1.77.1.4.4"
-permalink: kb/189/Q189225/
+permalink: /kb/189/Q189225/
 ---
 
 ## Q189225: LMMIB2 Unable to &quot;Walk&quot; from .1.3.6.1.4.1.77.1.4.4

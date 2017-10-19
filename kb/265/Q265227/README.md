@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265227: XADM: Setup Won't Work w. &quot;The Required Privilege...&quot; Err. Mssg."
-permalink: kb/265/Q265227/
+permalink: /kb/265/Q265227/
 ---
 
 ## Q265227: XADM: Setup Won't Work w. &quot;The Required Privilege...&quot; Err. Mssg.

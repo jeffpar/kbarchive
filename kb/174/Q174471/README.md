@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174471: SMS: Cannot Run Virus Scanner on Some SMS Client Files"
-permalink: kb/174/Q174471/
+permalink: /kb/174/Q174471/
 ---
 
 ## Q174471: SMS: Cannot Run Virus Scanner on Some SMS Client Files

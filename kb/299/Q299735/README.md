@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299735: Train Simulator: Numeric Keypad Commands Do Not Work as Expected"
-permalink: kb/299/Q299735/
+permalink: /kb/299/Q299735/
 ---
 
 ## Q299735: Train Simulator: Numeric Keypad Commands Do Not Work as Expected

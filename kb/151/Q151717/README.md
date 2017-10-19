@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151717: Cannot Exit MS-DOS Mode"
-permalink: kb/151/Q151717/
+permalink: /kb/151/Q151717/
 ---
 
 ## Q151717: Cannot Exit MS-DOS Mode

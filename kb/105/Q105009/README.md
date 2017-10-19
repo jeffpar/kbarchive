@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105009: PRB: &quot;Record out of Range&quot; Error When Modifying Report"
-permalink: kb/105/Q105009/
+permalink: /kb/105/Q105009/
 ---
 
 ## Q105009: PRB: &quot;Record out of Range&quot; Error When Modifying Report

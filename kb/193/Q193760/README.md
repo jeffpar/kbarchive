@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193760: XCON: MTA Stops Processing Messages When One Network Link Fails"
-permalink: kb/193/Q193760/
+permalink: /kb/193/Q193760/
 ---
 
 ## Q193760: XCON: MTA Stops Processing Messages When One Network Link Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82456: EGA.SYS Doesn't Load for Windows 3.1"
-permalink: kb/082/Q82456/
+permalink: /kb/082/Q82456/
 ---
 
 ## Q82456: EGA.SYS Doesn't Load for Windows 3.1

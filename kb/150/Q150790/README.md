@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150790: How To Know if VFP for Mac Uses PPC or 68K ODBC Driver"
-permalink: kb/150/Q150790/
+permalink: /kb/150/Q150790/
 ---
 
 ## Q150790: How To Know if VFP for Mac Uses PPC or 68K ODBC Driver

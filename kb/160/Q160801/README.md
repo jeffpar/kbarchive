@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160801: PPT7: Invisible Shapes Print With Borders in Black and White"
-permalink: kb/160/Q160801/
+permalink: /kb/160/Q160801/
 ---
 
 ## Q160801: PPT7: Invisible Shapes Print With Borders in Black and White

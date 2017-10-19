@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189009: DHCP Reservations Show an Expiration Date"
-permalink: kb/189/Q189009/
+permalink: /kb/189/Q189009/
 ---
 
 ## Q189009: DHCP Reservations Show an Expiration Date

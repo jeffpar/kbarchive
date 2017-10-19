@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175172: XCLN: Unable to Recover Deleted Items from Some Public Folders"
-permalink: kb/175/Q175172/
+permalink: /kb/175/Q175172/
 ---
 
 ## Q175172: XCLN: Unable to Recover Deleted Items from Some Public Folders

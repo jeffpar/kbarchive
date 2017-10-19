@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226900: SMS: Package Instruction Files Are Distribution Server-Specific"
-permalink: kb/226/Q226900/
+permalink: /kb/226/Q226900/
 ---
 
 ## Q226900: SMS: Package Instruction Files Are Distribution Server-Specific

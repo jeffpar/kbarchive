@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119047: CONN: &quot;Mail Failure&quot; Responding to Unlabeled Return Receipt"
-permalink: kb/119/Q119047/
+permalink: /kb/119/Q119047/
 ---
 
 ## Q119047: CONN: &quot;Mail Failure&quot; Responding to Unlabeled Return Receipt

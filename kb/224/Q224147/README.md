@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224147: How to Reset Permissions Using FrontPage 98 Server Extensions"
-permalink: kb/224/Q224147/
+permalink: /kb/224/Q224147/
 ---
 
 ## Q224147: How to Reset Permissions Using FrontPage 98 Server Extensions

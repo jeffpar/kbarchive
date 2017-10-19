@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274572: Crimson Skies Quits to End Menu with ATI Rage 128 Installed"
-permalink: kb/274/Q274572/
+permalink: /kb/274/Q274572/
 ---
 
 ## Q274572: Crimson Skies Quits to End Menu with ATI Rage 128 Installed

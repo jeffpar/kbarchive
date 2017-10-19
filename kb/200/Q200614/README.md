@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200614: SMS: Setup Uninstall Fails to Clean Up Network Monitor Registry"
-permalink: kb/200/Q200614/
+permalink: /kb/200/Q200614/
 ---
 
 ## Q200614: SMS: Setup Uninstall Fails to Clean Up Network Monitor Registry

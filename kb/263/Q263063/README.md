@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263063: Site Component Manager May Attempt to Install Components"
-permalink: kb/263/Q263063/
+permalink: /kb/263/Q263063/
 ---
 
 ## Q263063: Site Component Manager May Attempt to Install Components

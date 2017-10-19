@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244519: XADM: How to Restore Multiple X.400 Addresses"
-permalink: kb/244/Q244519/
+permalink: /kb/244/Q244519/
 ---
 
 ## Q244519: XADM: How to Restore Multiple X.400 Addresses

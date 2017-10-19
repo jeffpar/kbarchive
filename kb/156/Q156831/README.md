@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156831: Full Court Press: How to Shoot from the Free Throw Line"
-permalink: kb/156/Q156831/
+permalink: /kb/156/Q156831/
 ---
 
 ## Q156831: Full Court Press: How to Shoot from the Free Throw Line

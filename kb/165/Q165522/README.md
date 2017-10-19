@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165522: XCON: MTA Stops, Generating Event IDs 2187, 9405, 9402, &amp; 9996"
-permalink: kb/165/Q165522/
+permalink: /kb/165/Q165522/
 ---
 
 ## Q165522: XCON: MTA Stops, Generating Event IDs 2187, 9405, 9402, &amp; 9996

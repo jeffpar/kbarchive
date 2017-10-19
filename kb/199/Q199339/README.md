@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199339: XFOR: Chat Server Join Command to Multiple Channels Doesn't Work"
-permalink: kb/199/Q199339/
+permalink: /kb/199/Q199339/
 ---
 
 ## Q199339: XFOR: Chat Server Join Command to Multiple Channels Doesn't Work

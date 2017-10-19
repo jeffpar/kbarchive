@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268751: HOWTO: Create a Common Icon for Accessing Terminal Server"
-permalink: kb/268/Q268751/
+permalink: /kb/268/Q268751/
 ---
 
 ## Q268751: HOWTO: Create a Common Icon for Accessing Terminal Server

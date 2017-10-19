@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151879: Cisco Internet Junction Software Is an IPX-to-IP Gateway"
-permalink: kb/151/Q151879/
+permalink: /kb/151/Q151879/
 ---
 
 ## Q151879: Cisco Internet Junction Software Is an IPX-to-IP Gateway

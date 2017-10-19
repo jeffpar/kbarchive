@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40435: SMARTDrive Does Not Support Conventional Memory"
-permalink: kb/040/Q40435/
+permalink: /kb/040/Q40435/
 ---
 
 ## Q40435: SMARTDrive Does Not Support Conventional Memory

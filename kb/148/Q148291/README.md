@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148291: Incomplete &quot;What Can I Say?&quot; List After Moving Mouse Pointer"
-permalink: kb/148/Q148291/
+permalink: /kb/148/Q148291/
 ---
 
 ## Q148291: Incomplete &quot;What Can I Say?&quot; List After Moving Mouse Pointer

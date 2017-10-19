@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98714: Mac ARA: Apple Modem and Shiva Dial-In May Produce Give Ups"
-permalink: kb/098/Q98714/
+permalink: /kb/098/Q98714/
 ---
 
 ## Q98714: Mac ARA: Apple Modem and Shiva Dial-In May Produce Give Ups

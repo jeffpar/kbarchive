@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195364: Err Msg: Mcdetect Caused an Invalid Page Fault in Msvcrt40.dll"
-permalink: kb/195/Q195364/
+permalink: /kb/195/Q195364/
 ---
 
 ## Q195364: Err Msg: Mcdetect Caused an Invalid Page Fault in Msvcrt40.dll

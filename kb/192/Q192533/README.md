@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192533: XCLN: MAPI Spooler Sends NDRs During Folder Synchronization"
-permalink: kb/192/Q192533/
+permalink: /kb/192/Q192533/
 ---
 
 ## Q192533: XCLN: MAPI Spooler Sends NDRs During Folder Synchronization

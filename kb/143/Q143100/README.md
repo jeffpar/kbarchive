@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143100: FP: Using a Folder (Directory) Other Than Content"
-permalink: kb/143/Q143100/
+permalink: /kb/143/Q143100/
 ---
 
 ## Q143100: FP: Using a Folder (Directory) Other Than Content

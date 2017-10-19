@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267864: MS00-095: MTS Package Administration Key Includes Information Ab"
-permalink: kb/267/Q267864/
+permalink: /kb/267/Q267864/
 ---
 
 ## Q267864: MS00-095: MTS Package Administration Key Includes Information Ab

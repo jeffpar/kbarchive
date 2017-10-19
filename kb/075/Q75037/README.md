@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75037: Using the RESTORE Command to View Backup Files"
-permalink: kb/075/Q75037/
+permalink: /kb/075/Q75037/
 ---
 
 ## Q75037: Using the RESTORE Command to View Backup Files

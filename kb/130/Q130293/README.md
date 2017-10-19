@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130293: Norton Desktop Groups Not Converted by Windows 95"
-permalink: kb/130/Q130293/
+permalink: /kb/130/Q130293/
 ---
 
 ## Q130293: Norton Desktop Groups Not Converted by Windows 95

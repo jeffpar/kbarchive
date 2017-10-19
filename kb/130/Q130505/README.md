@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130505: INFO: Programming in Reports w/ Band Expressions on Entry/Exit"
-permalink: kb/130/Q130505/
+permalink: /kb/130/Q130505/
 ---
 
 ## Q130505: INFO: Programming in Reports w/ Band Expressions on Entry/Exit

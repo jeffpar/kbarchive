@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265533: Explanation of Chkdsk Status Codes in Cluster Log"
-permalink: kb/265/Q265533/
+permalink: /kb/265/Q265533/
 ---
 
 ## Q265533: Explanation of Chkdsk Status Codes in Cluster Log

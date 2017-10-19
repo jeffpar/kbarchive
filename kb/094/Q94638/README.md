@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94638: Leftover IBM System Files Cause Hangs and Keyboard Problems"
-permalink: kb/094/Q94638/
+permalink: /kb/094/Q94638/
 ---
 
 ## Q94638: Leftover IBM System Files Cause Hangs and Keyboard Problems

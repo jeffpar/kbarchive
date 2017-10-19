@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265391: XADM: Exchange Server Honors Message Expiry Even If Incorrect"
-permalink: kb/265/Q265391/
+permalink: /kb/265/Q265391/
 ---
 
 ## Q265391: XADM: Exchange Server Honors Message Expiry Even If Incorrect

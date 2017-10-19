@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q156902: STL Sample for deque::operator[] and deque::at Functions"
-permalink: kb/156/Q156902/
+title: "Q156902: STL Sample for deque::operator&#91;&#93; and deque::at Functions"
+permalink: /kb/156/Q156902/
 ---
 
-## Q156902: STL Sample for deque::operator[] and deque::at Functions
+## Q156902: STL Sample for deque::operator&#91;&#93; and deque::at Functions
 
 	Article: Q156902
 	Product(s): Microsoft C Compiler

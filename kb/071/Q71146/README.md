@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71146: PRB: SDK Sample Applications Use Incorrect Background Brush"
-permalink: kb/071/Q71146/
+permalink: /kb/071/Q71146/
 ---
 
 ## Q71146: PRB: SDK Sample Applications Use Incorrect Background Brush

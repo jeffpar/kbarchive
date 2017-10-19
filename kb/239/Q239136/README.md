@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239136: SMS: Repairing RC Agent Overwrites Custom Viewers List"
-permalink: kb/239/Q239136/
+permalink: /kb/239/Q239136/
 ---
 
 ## Q239136: SMS: Repairing RC Agent Overwrites Custom Viewers List

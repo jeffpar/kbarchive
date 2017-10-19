@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188633: XADM: Error 502: No Permissions When Accessing NNTP Server"
-permalink: kb/188/Q188633/
+permalink: /kb/188/Q188633/
 ---
 
 ## Q188633: XADM: Error 502: No Permissions When Accessing NNTP Server

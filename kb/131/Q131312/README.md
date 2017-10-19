@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131312: FIX: Manipulator Causes C1001 IC Error in MSC1.CPP Line 1056"
-permalink: kb/131/Q131312/
+permalink: /kb/131/Q131312/
 ---
 
 ## Q131312: FIX: Manipulator Causes C1001 IC Error in MSC1.CPP Line 1056

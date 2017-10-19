@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142925: HOWTO: Cancel an Asynchronous Query--RDO"
-permalink: kb/142/Q142925/
+permalink: /kb/142/Q142925/
 ---
 
 ## Q142925: HOWTO: Cancel an Asynchronous Query--RDO

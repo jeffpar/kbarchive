@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108165: PRB: Cannot Read from Drive &lt;Drive Letter&gt;"
-permalink: kb/108/Q108165/
+permalink: /kb/108/Q108165/
 ---
 
 ## Q108165: PRB: Cannot Read from Drive &lt;Drive Letter&gt;

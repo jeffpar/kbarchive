@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240635: World Atlas: Pushpins Briefly Displayed in Wrong Location on Map"
-permalink: kb/240/Q240635/
+permalink: /kb/240/Q240635/
 ---
 
 ## Q240635: World Atlas: Pushpins Briefly Displayed in Wrong Location on Map

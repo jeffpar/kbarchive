@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107373: WFWG 3.11: Hardware Compatibility List - Computers"
-permalink: kb/107/Q107373/
+permalink: /kb/107/Q107373/
 ---
 
 ## Q107373: WFWG 3.11: Hardware Compatibility List - Computers

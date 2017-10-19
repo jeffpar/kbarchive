@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82144: REG.DAT May Need Update if Both Windows 3.0, 3.1 Installed"
-permalink: kb/082/Q82144/
+permalink: /kb/082/Q82144/
 ---
 
 ## Q82144: REG.DAT May Need Update if Both Windows 3.0, 3.1 Installed

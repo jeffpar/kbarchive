@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190480: PRB: SET(&quot;Century&quot;,1) Not Reporting Correct Century"
-permalink: kb/190/Q190480/
+permalink: /kb/190/Q190480/
 ---
 
 ## Q190480: PRB: SET(&quot;Century&quot;,1) Not Reporting Correct Century

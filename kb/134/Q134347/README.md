@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134347: INFO: Troubleshooting Visual C++ Setup Problems Under Windows 9"
-permalink: kb/134/Q134347/
+permalink: /kb/134/Q134347/
 ---
 
 ## Q134347: INFO: Troubleshooting Visual C++ Setup Problems Under Windows 9

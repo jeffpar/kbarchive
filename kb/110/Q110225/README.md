@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110225: PC Gen: PODIAG.EXE Shows Gateways Installed on WFW PO"
-permalink: kb/110/Q110225/
+permalink: /kb/110/Q110225/
 ---
 
 ## Q110225: PC Gen: PODIAG.EXE Shows Gateways Installed on WFW PO

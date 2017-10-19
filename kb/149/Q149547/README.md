@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149547: MSN Phonebook Updated Automatically"
-permalink: kb/149/Q149547/
+permalink: /kb/149/Q149547/
 ---
 
 ## Q149547: MSN Phonebook Updated Automatically

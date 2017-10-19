@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269501: UNIX Clients Are Unable to Print to a Shared Windows 95 or Windo"
-permalink: kb/269/Q269501/
+permalink: /kb/269/Q269501/
 ---
 
 ## Q269501: UNIX Clients Are Unable to Print to a Shared Windows 95 or Windo

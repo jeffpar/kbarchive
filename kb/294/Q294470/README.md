@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294470: HOWTO: Add Entries For Exchange Services to Mapisvc.inf"
-permalink: kb/294/Q294470/
+permalink: /kb/294/Q294470/
 ---
 
 ## Q294470: HOWTO: Add Entries For Exchange Services to Mapisvc.inf

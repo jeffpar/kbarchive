@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197773: WD97: Cannot Replace All Occurrences of Invalid MERGEFIELD Field"
-permalink: kb/197/Q197773/
+permalink: /kb/197/Q197773/
 ---
 
 ## Q197773: WD97: Cannot Replace All Occurrences of Invalid MERGEFIELD Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141500: PC WSPlus: How to Access Multiple CAL Files Working Offline"
-permalink: kb/141/Q141500/
+permalink: /kb/141/Q141500/
 ---
 
 ## Q141500: PC WSPlus: How to Access Multiple CAL Files Working Offline

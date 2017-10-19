@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99257: PC WRmt: Multiple MSMAIL.INI files"
-permalink: kb/099/Q99257/
+permalink: /kb/099/Q99257/
 ---
 
 ## Q99257: PC WRmt: Multiple MSMAIL.INI files

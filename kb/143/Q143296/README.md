@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143296: FIX: NODEFAULT in Page's Deactivate Event Activates Wrong Tab"
-permalink: kb/143/Q143296/
+permalink: /kb/143/Q143296/
 ---
 
 ## Q143296: FIX: NODEFAULT in Page's Deactivate Event Activates Wrong Tab

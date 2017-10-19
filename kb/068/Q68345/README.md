@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68345: File Manager Deletes a Read-Only File"
-permalink: kb/068/Q68345/
+permalink: /kb/068/Q68345/
 ---
 
 ## Q68345: File Manager Deletes a Read-Only File

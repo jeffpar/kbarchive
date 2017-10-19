@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192467: Windows NT Load Balancing Service Remote Control Commands Fail"
-permalink: kb/192/Q192467/
+permalink: /kb/192/Q192467/
 ---
 
 ## Q192467: Windows NT Load Balancing Service Remote Control Commands Fail

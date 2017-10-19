@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231246: SMS: Custom DLL Causes SMS Installer to Stop Responding"
-permalink: kb/231/Q231246/
+permalink: /kb/231/Q231246/
 ---
 
 ## Q231246: SMS: Custom DLL Causes SMS Installer to Stop Responding

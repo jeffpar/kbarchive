@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96349: Errors in HELP Command Documentation"
-permalink: kb/096/Q96349/
+permalink: /kb/096/Q96349/
 ---
 
 ## Q96349: Errors in HELP Command Documentation

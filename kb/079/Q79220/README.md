@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79220: Archive Fastape Version 5.0 with MS-DOS 5.0 and Later"
-permalink: kb/079/Q79220/
+permalink: /kb/079/Q79220/
 ---
 
 ## Q79220: Archive Fastape Version 5.0 with MS-DOS 5.0 and Later

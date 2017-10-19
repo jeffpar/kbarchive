@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195462: WINS Registration and IP Address Behavior for Microsoft Cluster"
-permalink: kb/195/Q195462/
+permalink: /kb/195/Q195462/
 ---
 
 ## Q195462: WINS Registration and IP Address Behavior for Microsoft Cluster

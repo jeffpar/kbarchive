@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158570: INFO: How to Determine When 3270 RTM Data Should be Sent"
-permalink: kb/158/Q158570/
+permalink: /kb/158/Q158570/
 ---
 
 ## Q158570: INFO: How to Determine When 3270 RTM Data Should be Sent

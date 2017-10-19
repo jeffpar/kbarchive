@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170252: XCON: How to Configure Dynamic RAS Using IPX"
-permalink: kb/170/Q170252/
+permalink: /kb/170/Q170252/
 ---
 
 ## Q170252: XCON: How to Configure Dynamic RAS Using IPX

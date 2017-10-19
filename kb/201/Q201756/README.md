@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201756: FP: How to Insert Java Applet into FrontPage Editor"
-permalink: kb/201/Q201756/
+permalink: /kb/201/Q201756/
 ---
 
 ## Q201756: FP: How to Insert Java Applet into FrontPage Editor

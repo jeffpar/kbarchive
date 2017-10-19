@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81684: Maximizer Memory Manager Incompatible with Windows 3.1"
-permalink: kb/081/Q81684/
+permalink: /kb/081/Q81684/
 ---
 
 ## Q81684: Maximizer Memory Manager Incompatible with Windows 3.1

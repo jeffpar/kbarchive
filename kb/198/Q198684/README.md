@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198684: Event 94 Continuously Logged on COMTI Client"
-permalink: kb/198/Q198684/
+permalink: /kb/198/Q198684/
 ---
 
 ## Q198684: Event 94 Continuously Logged on COMTI Client

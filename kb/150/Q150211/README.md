@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150211: HOWTO: Determine if a Program Is Running as a DLL or an EXE"
-permalink: kb/150/Q150211/
+permalink: /kb/150/Q150211/
 ---
 
 ## Q150211: HOWTO: Determine if a Program Is Running as a DLL or an EXE

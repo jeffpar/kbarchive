@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271122: SMS: Users Are Unexpectedly Notified of an Advertised Program"
-permalink: kb/271/Q271122/
+permalink: /kb/271/Q271122/
 ---
 
 ## Q271122: SMS: Users Are Unexpectedly Notified of an Advertised Program

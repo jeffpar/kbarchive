@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129121: Compaq ProsigniaVS May Fail to Obtain SFM Routing Information"
-permalink: kb/129/Q129121/
+permalink: /kb/129/Q129121/
 ---
 
 ## Q129121: Compaq ProsigniaVS May Fail to Obtain SFM Routing Information

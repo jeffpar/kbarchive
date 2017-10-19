@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299866: Pages Always Show the Sign-out Logo After User Signs Out"
-permalink: kb/299/Q299866/
+permalink: /kb/299/Q299866/
 ---
 
 ## Q299866: Pages Always Show the Sign-out Logo After User Signs Out

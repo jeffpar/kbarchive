@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142436: XFOR: SMTP Headers That the Exchange IMC Understands"
-permalink: kb/142/Q142436/
+permalink: /kb/142/Q142436/
 ---
 
 ## Q142436: XFOR: SMTP Headers That the Exchange IMC Understands

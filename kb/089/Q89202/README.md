@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89202: Speller Handles Some Abbreviations Incorrectly"
-permalink: kb/089/Q89202/
+permalink: /kb/089/Q89202/
 ---
 
 ## Q89202: Speller Handles Some Abbreviations Incorrectly

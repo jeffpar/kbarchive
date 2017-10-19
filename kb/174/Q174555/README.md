@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174555: STOP 0x0000001E When IIS Service Is Stopped"
-permalink: kb/174/Q174555/
+permalink: /kb/174/Q174555/
 ---
 
 ## Q174555: STOP 0x0000001E When IIS Service Is Stopped

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244984: Event ID 7026 after Installing Compaq SSD Version 2.1x."
-permalink: kb/244/Q244984/
+permalink: /kb/244/Q244984/
 ---
 
 ## Q244984: Event ID 7026 after Installing Compaq SSD Version 2.1x.

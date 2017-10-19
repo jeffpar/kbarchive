@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q21369: How to Receive Weather Information in Flight Simulator"
-permalink: kb/021/Q21369/
+permalink: /kb/021/Q21369/
 ---
 
 ## Q21369: How to Receive Weather Information in Flight Simulator

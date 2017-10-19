@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115925: Network Setup with Customized SETUP.INF Doesn't Work"
-permalink: kb/115/Q115925/
+permalink: /kb/115/Q115925/
 ---
 
 ## Q115925: Network Setup with Customized SETUP.INF Doesn't Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51326: DOC: tmpfile() Creates a Temporary File in the Root Dir"
-permalink: kb/051/Q51326/
+permalink: /kb/051/Q51326/
 ---
 
 ## Q51326: DOC: tmpfile() Creates a Temporary File in the Root Dir

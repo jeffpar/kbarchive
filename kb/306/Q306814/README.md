@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306814: Bookshelf: Cannot Connect to a Site When You Click Web Link"
-permalink: kb/306/Q306814/
+permalink: /kb/306/Q306814/
 ---
 
 ## Q306814: Bookshelf: Cannot Connect to a Site When You Click Web Link

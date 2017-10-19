@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174939: SMS: How to Use Listnt.exe with Systems Management Server"
-permalink: kb/174/Q174939/
+permalink: /kb/174/Q174939/
 ---
 
 ## Q174939: SMS: How to Use Listnt.exe with Systems Management Server

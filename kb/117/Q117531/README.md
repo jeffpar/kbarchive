@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117531: SFM w/ Olicom Token Ring 16/4 and Intel TokenExpress 16/4"
-permalink: kb/117/Q117531/
+permalink: /kb/117/Q117531/
 ---
 
 ## Q117531: SFM w/ Olicom Token Ring 16/4 and Intel TokenExpress 16/4

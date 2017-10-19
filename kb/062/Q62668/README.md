@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62668: FIX: Deleting Current Makefile in PWB 1.0 Causes R6000 Error"
-permalink: kb/062/Q62668/
+permalink: /kb/062/Q62668/
 ---
 
 ## Q62668: FIX: Deleting Current Makefile in PWB 1.0 Causes R6000 Error

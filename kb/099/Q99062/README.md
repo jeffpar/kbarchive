@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99062: Using REXX Data Conversion Commands"
-permalink: kb/099/Q99062/
+permalink: /kb/099/Q99062/
 ---
 
 ## Q99062: Using REXX Data Conversion Commands

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167730: BUG: Wrong Member Name in C2039 Error Message"
-permalink: kb/167/Q167730/
+permalink: /kb/167/Q167730/
 ---
 
 ## Q167730: BUG: Wrong Member Name in C2039 Error Message

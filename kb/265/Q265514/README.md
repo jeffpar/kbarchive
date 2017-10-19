@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265514: XCLN: English Version of Fix for Store Provider Memory Leak"
-permalink: kb/265/Q265514/
+permalink: /kb/265/Q265514/
 ---
 
 ## Q265514: XCLN: English Version of Fix for Store Provider Memory Leak

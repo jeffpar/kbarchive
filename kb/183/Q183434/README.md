@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183434: HOWTO: Use HTML Help API in a Visual Basic Application"
-permalink: kb/183/Q183434/
+permalink: /kb/183/Q183434/
 ---
 
 ## Q183434: HOWTO: Use HTML Help API in a Visual Basic Application

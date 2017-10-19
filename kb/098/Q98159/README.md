@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98159: SMTP: Err Msg: ERROR Translating Message to SMTP..."
-permalink: kb/098/Q98159/
+permalink: /kb/098/Q98159/
 ---
 
 ## Q98159: SMTP: Err Msg: ERROR Translating Message to SMTP...

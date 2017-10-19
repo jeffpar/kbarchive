@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186397: SMS: National Language Support Message Maker - Nlsmsg.exe"
-permalink: kb/186/Q186397/
+permalink: /kb/186/Q186397/
 ---
 
 ## Q186397: SMS: National Language Support Message Maker - Nlsmsg.exe

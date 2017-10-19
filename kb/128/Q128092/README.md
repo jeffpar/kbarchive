@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128092: Data Loader Reads Many Unneeded Rows Causing Network Traffic"
-permalink: kb/128/Q128092/
+permalink: /kb/128/Q128092/
 ---
 
 ## Q128092: Data Loader Reads Many Unneeded Rows Causing Network Traffic

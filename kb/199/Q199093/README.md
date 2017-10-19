@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199093: XIMS: Performing WHOIS on Invisible User Returns No Information"
-permalink: kb/199/Q199093/
+permalink: /kb/199/Q199093/
 ---
 
 ## Q199093: XIMS: Performing WHOIS on Invisible User Returns No Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82856: Configuring SMARTDRV.EXE 4.0 DOUBLE_BUFFERING Properly"
-permalink: kb/082/Q82856/
+permalink: /kb/082/Q82856/
 ---
 
 ## Q82856: Configuring SMARTDRV.EXE 4.0 DOUBLE_BUFFERING Properly

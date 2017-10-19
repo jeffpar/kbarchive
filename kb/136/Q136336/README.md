@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136336: Windows NT Fails Because of an Access Violation in WINLOGON"
-permalink: kb/136/Q136336/
+permalink: /kb/136/Q136336/
 ---
 
 ## Q136336: Windows NT Fails Because of an Access Violation in WINLOGON

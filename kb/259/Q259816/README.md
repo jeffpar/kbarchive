@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259816: Changes in How SMS Logon Server Manager Handles Inactive Sites"
-permalink: kb/259/Q259816/
+permalink: /kb/259/Q259816/
 ---
 
 ## Q259816: Changes in How SMS Logon Server Manager Handles Inactive Sites

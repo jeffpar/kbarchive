@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148679: SNA Server Rejects BIND From AS/400 When Remote End = Host"
-permalink: kb/148/Q148679/
+permalink: /kb/148/Q148679/
 ---
 
 ## Q148679: SNA Server Rejects BIND From AS/400 When Remote End = Host

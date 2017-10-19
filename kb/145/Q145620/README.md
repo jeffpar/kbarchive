@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145620: PRB: Appearance of ComboBox Control Is Always Three-Dimensional"
-permalink: kb/145/Q145620/
+permalink: /kb/145/Q145620/
 ---
 
 ## Q145620: PRB: Appearance of ComboBox Control Is Always Three-Dimensional

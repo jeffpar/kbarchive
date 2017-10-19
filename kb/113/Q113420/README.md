@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113420: BUG: A2008 When Angle Brackets Missing on FOR Argument List"
-permalink: kb/113/Q113420/
+permalink: /kb/113/Q113420/
 ---
 
 ## Q113420: BUG: A2008 When Angle Brackets Missing on FOR Argument List

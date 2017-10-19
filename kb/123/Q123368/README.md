@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123368: Can't Recognize Beyond 64MB RAM on ALR Evolution Pentium"
-permalink: kb/123/Q123368/
+permalink: /kb/123/Q123368/
 ---
 
 ## Q123368: Can't Recognize Beyond 64MB RAM on ALR Evolution Pentium

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257501: FIX: Error Message When Exporting Data Report to HTML File"
-permalink: kb/257/Q257501/
+permalink: /kb/257/Q257501/
 ---
 
 ## Q257501: FIX: Error Message When Exporting Data Report to HTML File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309638: Flight Simulator 2002: Known Video-Related Issues"
-permalink: kb/309/Q309638/
+permalink: /kb/309/Q309638/
 ---
 
 ## Q309638: Flight Simulator 2002: Known Video-Related Issues

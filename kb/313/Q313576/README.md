@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313576: XGEN: Exchange Server 5.5 Post-SP4 Outlook Web Access Fixes"
-permalink: kb/313/Q313576/
+permalink: /kb/313/Q313576/
 ---
 
 ## Q313576: XGEN: Exchange Server 5.5 Post-SP4 Outlook Web Access Fixes

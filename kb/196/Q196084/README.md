@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196084: HOWTO: Retrieve Foreign Key Information from SQL Server"
-permalink: kb/196/Q196084/
+permalink: /kb/196/Q196084/
 ---
 
 ## Q196084: HOWTO: Retrieve Foreign Key Information from SQL Server

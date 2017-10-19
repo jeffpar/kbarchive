@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281930: SMS: ODP Schedule Times Are Reset to One-Hour Default"
-permalink: kb/281/Q281930/
+permalink: /kb/281/Q281930/
 ---
 
 ## Q281930: SMS: ODP Schedule Times Are Reset to One-Hour Default

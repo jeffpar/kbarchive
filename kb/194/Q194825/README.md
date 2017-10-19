@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194825: Remove Personalized Settings for Users Running Terminal Server"
-permalink: kb/194/Q194825/
+permalink: /kb/194/Q194825/
 ---
 
 ## Q194825: Remove Personalized Settings for Users Running Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97690: Compaq RUNHI Command Causes Problems with MS-DOS 6 Setup"
-permalink: kb/097/Q97690/
+permalink: /kb/097/Q97690/
 ---
 
 ## Q97690: Compaq RUNHI Command Causes Problems with MS-DOS 6 Setup

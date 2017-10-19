@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198550: SP4 Changes DNS Name Resolution"
-permalink: kb/198/Q198550/
+permalink: /kb/198/Q198550/
 ---
 
 ## Q198550: SP4 Changes DNS Name Resolution

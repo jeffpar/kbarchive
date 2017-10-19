@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138523: PRB: MDI Child Form Drawn Incorrectly with Missing Title Bar"
-permalink: kb/138/Q138523/
+permalink: /kb/138/Q138523/
 ---
 
 ## Q138523: PRB: MDI Child Form Drawn Incorrectly with Missing Title Bar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165086: Right-Clicking on Host Security Domain Brings Up Incorrect Menu"
-permalink: kb/165/Q165086/
+permalink: /kb/165/Q165086/
 ---
 
 ## Q165086: Right-Clicking on Host Security Domain Brings Up Incorrect Menu

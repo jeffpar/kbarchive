@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59695: Can't Have Groups Within Groups in Program Manager"
-permalink: kb/059/Q59695/
+permalink: /kb/059/Q59695/
 ---
 
 ## Q59695: Can't Have Groups Within Groups in Program Manager

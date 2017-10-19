@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140639: Daylight Savings Time Not Advancing"
-permalink: kb/140/Q140639/
+permalink: /kb/140/Q140639/
 ---
 
 ## Q140639: Daylight Savings Time Not Advancing

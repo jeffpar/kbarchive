@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104349: PRB: SetupWizard .INF File Contains a Bad Description Line"
-permalink: kb/104/Q104349/
+permalink: /kb/104/Q104349/
 ---
 
 ## Q104349: PRB: SetupWizard .INF File Contains a Bad Description Line

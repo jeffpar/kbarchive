@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266260: XADM: Rules That Use an SMTP Address Do Not Run"
-permalink: kb/266/Q266260/
+permalink: /kb/266/Q266260/
 ---
 
 ## Q266260: XADM: Rules That Use an SMTP Address Do Not Run

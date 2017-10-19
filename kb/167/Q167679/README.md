@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167679: INFO: Placement of Screen Code with Functional Conversion"
-permalink: kb/167/Q167679/
+permalink: /kb/167/Q167679/
 ---
 
 ## Q167679: INFO: Placement of Screen Code with Functional Conversion

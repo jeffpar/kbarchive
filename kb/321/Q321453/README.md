@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321453: DHCP Transaction Log Files (J500xxx.log) Fill the Hard Disk"
-permalink: kb/321/Q321453/
+permalink: /kb/321/Q321453/
 ---
 
 ## Q321453: DHCP Transaction Log Files (J500xxx.log) Fill the Hard Disk

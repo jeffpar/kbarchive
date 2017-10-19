@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156738: PRB: Copy, Paste Shortcuts Work Only When Edit Menu Present"
-permalink: kb/156/Q156738/
+permalink: /kb/156/Q156738/
 ---
 
 ## Q156738: PRB: Copy, Paste Shortcuts Work Only When Edit Menu Present

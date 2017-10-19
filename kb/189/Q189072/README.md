@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189072: MTM2: Cannot Turn Right When Using the ThrustMaster T2 Wheel"
-permalink: kb/189/Q189072/
+permalink: /kb/189/Q189072/
 ---
 
 ## Q189072: MTM2: Cannot Turn Right When Using the ThrustMaster T2 Wheel

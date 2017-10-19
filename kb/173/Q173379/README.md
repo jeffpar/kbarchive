@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173379: WD97: Hyperlink Not Inserted After Saving as HTML"
-permalink: kb/173/Q173379/
+permalink: /kb/173/Q173379/
 ---
 
 ## Q173379: WD97: Hyperlink Not Inserted After Saving as HTML

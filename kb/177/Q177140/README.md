@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177140: How to Remove Static WINS Entries from All WINS Servers"
-permalink: kb/177/Q177140/
+permalink: /kb/177/Q177140/
 ---
 
 ## Q177140: How to Remove Static WINS Entries from All WINS Servers

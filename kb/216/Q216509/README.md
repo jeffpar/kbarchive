@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216509: XCLN: Can't Open Schedule: The Schedule File Could Not Be Opened"
-permalink: kb/216/Q216509/
+permalink: /kb/216/Q216509/
 ---
 
 ## Q216509: XCLN: Can't Open Schedule: The Schedule File Could Not Be Opened

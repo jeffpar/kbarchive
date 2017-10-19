@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214560: FIX: Installing Newer MSDN Causes Help to Malfunction"
-permalink: kb/214/Q214560/
+permalink: /kb/214/Q214560/
 ---
 
 ## Q214560: FIX: Installing Newer MSDN Causes Help to Malfunction

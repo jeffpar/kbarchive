@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150185: INFO: Tab Keyword Cannot Be Used as Object Type in Visual Basic"
-permalink: kb/150/Q150185/
+permalink: /kb/150/Q150185/
 ---
 
 ## Q150185: INFO: Tab Keyword Cannot Be Used as Object Type in Visual Basic

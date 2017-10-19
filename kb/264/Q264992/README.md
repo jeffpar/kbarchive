@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264992: PRB: Error C0042116 &quot;Problem Installing CAB x.CAB&quot;"
-permalink: kb/264/Q264992/
+permalink: /kb/264/Q264992/
 ---
 
 ## Q264992: PRB: Error C0042116 &quot;Problem Installing CAB x.CAB&quot;

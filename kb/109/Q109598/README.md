@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109598: PRB: Using INKEY() in FoxPro for Mac Seems to Hang System"
-permalink: kb/109/Q109598/
+permalink: /kb/109/Q109598/
 ---
 
 ## Q109598: PRB: Using INKEY() in FoxPro for Mac Seems to Hang System

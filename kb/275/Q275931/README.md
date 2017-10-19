@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275931: XCON: DNS Errors When Installing IMS on Top of Cluster Server"
-permalink: kb/275/Q275931/
+permalink: /kb/275/Q275931/
 ---
 
 ## Q275931: XCON: DNS Errors When Installing IMS on Top of Cluster Server

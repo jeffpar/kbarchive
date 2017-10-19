@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137002: STOP 0x0000000A May Occur on Multi-processor Computers"
-permalink: kb/137/Q137002/
+permalink: /kb/137/Q137002/
 ---
 
 ## Q137002: STOP 0x0000000A May Occur on Multi-processor Computers

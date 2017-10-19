@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155312: WD97: How to Convert Multiple White Space Characters to Tabs"
-permalink: kb/155/Q155312/
+permalink: /kb/155/Q155312/
 ---
 
 ## Q155312: WD97: How to Convert Multiple White Space Characters to Tabs

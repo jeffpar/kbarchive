@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83031: Windows 3.1: Using Upper Memory Blocks (UMBs)"
-permalink: kb/083/Q83031/
+permalink: /kb/083/Q83031/
 ---
 
 ## Q83031: Windows 3.1: Using Upper Memory Blocks (UMBs)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87176: Associating .EXE, .COM, or .BAT Files with MS-DOS Shell"
-permalink: kb/087/Q87176/
+permalink: /kb/087/Q87176/
 ---
 
 ## Q87176: Associating .EXE, .COM, or .BAT Files with MS-DOS Shell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131834: Baseball Daily 1995 Downloads Have Ended"
-permalink: kb/131/Q131834/
+permalink: /kb/131/Q131834/
 ---
 
 ## Q131834: Baseball Daily 1995 Downloads Have Ended

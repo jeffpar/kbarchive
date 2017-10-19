@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249215: How to Hide the Active Desktop Item on the Settings Menu"
-permalink: kb/249/Q249215/
+permalink: /kb/249/Q249215/
 ---
 
 ## Q249215: How to Hide the Active Desktop Item on the Settings Menu

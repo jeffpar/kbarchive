@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131948: DOGS: TROUBLE.TXT Contents"
-permalink: kb/131/Q131948/
+permalink: /kb/131/Q131948/
 ---
 
 ## Q131948: DOGS: TROUBLE.TXT Contents

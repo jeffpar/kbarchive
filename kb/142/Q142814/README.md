@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142814: INFO: Diagnosing &quot;Error in loading DLL&quot; with LoadLibrary"
-permalink: kb/142/Q142814/
+permalink: /kb/142/Q142814/
 ---
 
 ## Q142814: INFO: Diagnosing &quot;Error in loading DLL&quot; with LoadLibrary

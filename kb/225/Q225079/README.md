@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225079: WD97: Special Characters Lost Changing Font in WordPerfect File"
-permalink: kb/225/Q225079/
+permalink: /kb/225/Q225079/
 ---
 
 ## Q225079: WD97: Special Characters Lost Changing Font in WordPerfect File

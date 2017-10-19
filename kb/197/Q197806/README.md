@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197806: &quot;Ordinal Not Found&quot; Error While Installing on NT-Based Computer"
-permalink: kb/197/Q197806/
+permalink: /kb/197/Q197806/
 ---
 
 ## Q197806: &quot;Ordinal Not Found&quot; Error While Installing on NT-Based Computer

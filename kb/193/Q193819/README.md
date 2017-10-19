@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193819: Errors When Using Directory Replicator to Backup DHCP Database"
-permalink: kb/193/Q193819/
+permalink: /kb/193/Q193819/
 ---
 
 ## Q193819: Errors When Using Directory Replicator to Backup DHCP Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147490: How to Import a 1.0 Cal File Into 7.0"
-permalink: kb/147/Q147490/
+permalink: /kb/147/Q147490/
 ---
 
 ## Q147490: How to Import a 1.0 Cal File Into 7.0

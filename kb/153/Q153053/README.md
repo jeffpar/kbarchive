@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153053: Bookshelf '96-'97: Reference Titles Included in Bookshelf"
-permalink: kb/153/Q153053/
+permalink: /kb/153/Q153053/
 ---
 
 ## Q153053: Bookshelf '96-'97: Reference Titles Included in Bookshelf

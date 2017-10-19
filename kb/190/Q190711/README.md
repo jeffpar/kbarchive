@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190711: XFOR: DS_E_NO_SUCH_OBJECT Error During DirRep over IMC"
-permalink: kb/190/Q190711/
+permalink: /kb/190/Q190711/
 ---
 
 ## Q190711: XFOR: DS_E_NO_SUCH_OBJECT Error During DirRep over IMC

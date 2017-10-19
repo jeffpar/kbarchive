@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134558: Cannot Edit Microsoft Excel Worksheet in WordPad"
-permalink: kb/134/Q134558/
+permalink: /kb/134/Q134558/
 ---
 
 ## Q134558: Cannot Edit Microsoft Excel Worksheet in WordPad

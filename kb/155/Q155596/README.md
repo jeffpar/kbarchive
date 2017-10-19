@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155596: XCLN: Exchange Client Address Search Ignores Hyphens"
-permalink: kb/155/Q155596/
+permalink: /kb/155/Q155596/
 ---
 
 ## Q155596: XCLN: Exchange Client Address Search Ignores Hyphens

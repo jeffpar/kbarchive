@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95898: PC DOS: Slash Character Truncates X.400 Organization Name"
-permalink: kb/095/Q95898/
+permalink: /kb/095/Q95898/
 ---
 
 ## Q95898: PC DOS: Slash Character Truncates X.400 Organization Name

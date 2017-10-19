@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155126: Error Message: Unable to Connect to all of the Roots..."
-permalink: kb/155/Q155126/
+permalink: /kb/155/Q155126/
 ---
 
 ## Q155126: Error Message: Unable to Connect to all of the Roots...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132673: NET VIEW /DOMAIN: &lt;domainname&gt; Command Fails"
-permalink: kb/132/Q132673/
+permalink: /kb/132/Q132673/
 ---
 
 ## Q132673: NET VIEW /DOMAIN: &lt;domainname&gt; Command Fails

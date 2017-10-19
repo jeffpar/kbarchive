@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235727: SMSINST: Repackage Does Not Detect Deleted Reg Keys and Values"
-permalink: kb/235/Q235727/
+permalink: /kb/235/Q235727/
 ---
 
 ## Q235727: SMSINST: Repackage Does Not Detect Deleted Reg Keys and Values

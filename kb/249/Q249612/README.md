@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249612: XCLN: Auto Name Check Does Not Work After Running Exmerge"
-permalink: kb/249/Q249612/
+permalink: /kb/249/Q249612/
 ---
 
 ## Q249612: XCLN: Auto Name Check Does Not Work After Running Exmerge

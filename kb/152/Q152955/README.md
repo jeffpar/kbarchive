@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152955: XCON: MTA Prematurely Returns Messages w/NDR"
-permalink: kb/152/Q152955/
+permalink: /kb/152/Q152955/
 ---
 
 ## Q152955: XCON: MTA Prematurely Returns Messages w/NDR

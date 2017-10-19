@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166267: Office Shortcut Bar Fonts Appear as Non-Cyrillic on Russian NT"
-permalink: kb/166/Q166267/
+permalink: /kb/166/Q166267/
 ---
 
 ## Q166267: Office Shortcut Bar Fonts Appear as Non-Cyrillic on Russian NT

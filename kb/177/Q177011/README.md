@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177011: Generated COBOL Will Not Compile"
-permalink: kb/177/Q177011/
+permalink: /kb/177/Q177011/
 ---
 
 ## Q177011: Generated COBOL Will Not Compile

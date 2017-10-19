@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101175: How to Automate Logon Procedures for Workgroups Mail"
-permalink: kb/101/Q101175/
+permalink: /kb/101/Q101175/
 ---
 
 ## Q101175: How to Automate Logon Procedures for Workgroups Mail

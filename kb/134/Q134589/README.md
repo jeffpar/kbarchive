@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134589: Some Programs May Not Print in Windows 95"
-permalink: kb/134/Q134589/
+permalink: /kb/134/Q134589/
 ---
 
 ## Q134589: Some Programs May Not Print in Windows 95

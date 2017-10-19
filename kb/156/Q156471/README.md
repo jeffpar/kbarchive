@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156471: Writer 2: Print Jobs May Spool to 10+ MB Files"
-permalink: kb/156/Q156471/
+permalink: /kb/156/Q156471/
 ---
 
 ## Q156471: Writer 2: Print Jobs May Spool to 10+ MB Files

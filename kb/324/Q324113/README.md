@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324113: SDB Cannot Service Look-up Requests Before Required Steps Comple"
-permalink: kb/324/Q324113/
+permalink: /kb/324/Q324113/
 ---
 
 ## Q324113: SDB Cannot Service Look-up Requests Before Required Steps Comple

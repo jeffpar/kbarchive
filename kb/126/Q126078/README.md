@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126078: Destination Europe 1.0 DD Disk Contents (3.5 Inch, 720K)"
-permalink: kb/126/Q126078/
+permalink: /kb/126/Q126078/
 ---
 
 ## Q126078: Destination Europe 1.0 DD Disk Contents (3.5 Inch, 720K)

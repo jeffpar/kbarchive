@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252699: BUG: Access ODBC Driver Cannot Insert Dates Prior to the Year 17"
-permalink: kb/252/Q252699/
+permalink: /kb/252/Q252699/
 ---
 
 ## Q252699: BUG: Access ODBC Driver Cannot Insert Dates Prior to the Year 17

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297183: Age of Empires II Error Message: Unable to Join"
-permalink: kb/297/Q297183/
+permalink: /kb/297/Q297183/
 ---
 
 ## Q297183: Age of Empires II Error Message: Unable to Join

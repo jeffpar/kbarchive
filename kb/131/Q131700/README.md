@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131700: Gateway P5 100XL IDE Drive Settings Using LBA"
-permalink: kb/131/Q131700/
+permalink: /kb/131/Q131700/
 ---
 
 ## Q131700: Gateway P5 100XL IDE Drive Settings Using LBA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90478: PC Win: How to Mail Enable/Disable Excel 3.0"
-permalink: kb/090/Q90478/
+permalink: /kb/090/Q90478/
 ---
 
 ## Q90478: PC Win: How to Mail Enable/Disable Excel 3.0

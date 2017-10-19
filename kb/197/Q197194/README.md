@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197194: WD97: Function to Test for Valid Directory Path"
-permalink: kb/197/Q197194/
+permalink: /kb/197/Q197194/
 ---
 
 ## Q197194: WD97: Function to Test for Valid Directory Path

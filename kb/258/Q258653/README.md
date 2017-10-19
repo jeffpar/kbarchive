@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258653: Baseball 2001: Graphics Are Redrawn Multiple Times During a Game"
-permalink: kb/258/Q258653/
+permalink: /kb/258/Q258653/
 ---
 
 ## Q258653: Baseball 2001: Graphics Are Redrawn Multiple Times During a Game

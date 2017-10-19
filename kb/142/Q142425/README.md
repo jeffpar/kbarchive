@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142425: MSN Connection Hangs When You Change Service Type"
-permalink: kb/142/Q142425/
+permalink: /kb/142/Q142425/
 ---
 
 ## Q142425: MSN Connection Hangs When You Change Service Type

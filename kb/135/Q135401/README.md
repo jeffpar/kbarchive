@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135401: INF: How to Upgrade ODBC SDK version 2.10a to 2.10b"
-permalink: kb/135/Q135401/
+permalink: /kb/135/Q135401/
 ---
 
 ## Q135401: INF: How to Upgrade ODBC SDK version 2.10a to 2.10b

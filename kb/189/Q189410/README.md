@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189410: HOWTO: Enable or Disable Connection Pooling in IIS 4.0"
-permalink: kb/189/Q189410/
+permalink: /kb/189/Q189410/
 ---
 
 ## Q189410: HOWTO: Enable or Disable Connection Pooling in IIS 4.0

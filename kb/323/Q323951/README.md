@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323951: Dungeon Siege: How to Transfer a Character from Trial Version"
-permalink: kb/323/Q323951/
+permalink: /kb/323/Q323951/
 ---
 
 ## Q323951: Dungeon Siege: How to Transfer a Character from Trial Version

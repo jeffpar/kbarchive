@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299341: FIX: Rounding Error Saving Calculated Value into Integer"
-permalink: kb/299/Q299341/
+permalink: /kb/299/Q299341/
 ---
 
 ## Q299341: FIX: Rounding Error Saving Calculated Value into Integer

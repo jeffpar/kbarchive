@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110306: CD Sampler: Setup Creates Multiple Icons"
-permalink: kb/110/Q110306/
+permalink: /kb/110/Q110306/
 ---
 
 ## Q110306: CD Sampler: Setup Creates Multiple Icons

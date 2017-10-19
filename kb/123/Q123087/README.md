@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123087: OLE Version 2.03"
-permalink: kb/123/Q123087/
+permalink: /kb/123/Q123087/
 ---
 
 ## Q123087: OLE Version 2.03

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169148: XFOR: GroupWise Migration Fails with Shared Directory WPC20 Err"
-permalink: kb/169/Q169148/
+permalink: /kb/169/Q169148/
 ---
 
 ## Q169148: XFOR: GroupWise Migration Fails with Shared Directory WPC20 Err

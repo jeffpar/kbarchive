@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182521: XADM: AV Using Directory Import to Delete Windows NT Accounts"
-permalink: kb/182/Q182521/
+permalink: /kb/182/Q182521/
 ---
 
 ## Q182521: XADM: AV Using Directory Import to Delete Windows NT Accounts

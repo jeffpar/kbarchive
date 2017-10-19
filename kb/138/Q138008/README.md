@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138008: PCMCIA Utilities for Windows NT"
-permalink: kb/138/Q138008/
+permalink: /kb/138/Q138008/
 ---
 
 ## Q138008: PCMCIA Utilities for Windows NT

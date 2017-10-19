@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195680: Error Message: Correcting Errors in the Uppercase File"
-permalink: kb/195/Q195680/
+permalink: /kb/195/Q195680/
 ---
 
 ## Q195680: Error Message: Correcting Errors in the Uppercase File

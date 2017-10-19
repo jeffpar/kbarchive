@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164644: Clear Text Passwords Could Be Left in SNAP Buffers"
-permalink: kb/164/Q164644/
+permalink: /kb/164/Q164644/
 ---
 
 ## Q164644: Clear Text Passwords Could Be Left in SNAP Buffers

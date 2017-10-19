@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84753: Manually Installing the CGA Display Driver"
-permalink: kb/084/Q84753/
+permalink: /kb/084/Q84753/
 ---
 
 ## Q84753: Manually Installing the CGA Display Driver

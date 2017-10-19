@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90285: User Interface Differences Between WFWG and Windows 3.1"
-permalink: kb/090/Q90285/
+permalink: /kb/090/Q90285/
 ---
 
 ## Q90285: User Interface Differences Between WFWG and Windows 3.1

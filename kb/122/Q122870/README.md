@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122870: Infinite Disk Does Not Support 32-Bit File Access"
-permalink: kb/122/Q122870/
+permalink: /kb/122/Q122870/
 ---
 
 ## Q122870: Infinite Disk Does Not Support 32-Bit File Access

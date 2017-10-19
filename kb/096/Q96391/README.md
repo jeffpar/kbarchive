@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96391: DoubleSpace Estimated &amp; Actual Compression Ratios"
-permalink: kb/096/Q96391/
+permalink: /kb/096/Q96391/
 ---
 
 ## Q96391: DoubleSpace Estimated &amp; Actual Compression Ratios

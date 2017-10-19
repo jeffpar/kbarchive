@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75629: HOWTO: Ending the Windows Session from an Application"
-permalink: kb/075/Q75629/
+permalink: /kb/075/Q75629/
 ---
 
 ## Q75629: HOWTO: Ending the Windows Session from an Application

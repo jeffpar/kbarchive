@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84036: Troubleshooting HP LaserJet Printing Under Windows 3.1"
-permalink: kb/084/Q84036/
+permalink: /kb/084/Q84036/
 ---
 
 ## Q84036: Troubleshooting HP LaserJet Printing Under Windows 3.1

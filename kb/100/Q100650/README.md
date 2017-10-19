@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100650: Internal Processing Error at 0270:0Bf8 with LMSM"
-permalink: kb/100/Q100650/
+permalink: /kb/100/Q100650/
 ---
 
 ## Q100650: Internal Processing Error at 0270:0Bf8 with LMSM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190441: XADM: Access Violation Deleting NT Accounts Using DAPI"
-permalink: kb/190/Q190441/
+permalink: /kb/190/Q190441/
 ---
 
 ## Q190441: XADM: Access Violation Deleting NT Accounts Using DAPI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128902: XCLN: Overlapping Group Boxes Not Visible"
-permalink: kb/128/Q128902/
+permalink: /kb/128/Q128902/
 ---
 
 ## Q128902: XCLN: Overlapping Group Boxes Not Visible

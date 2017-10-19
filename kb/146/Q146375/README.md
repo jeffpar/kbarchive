@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146375: XCLN: Printing Weekly 5-day Prints from Monday through Friday"
-permalink: kb/146/Q146375/
+permalink: /kb/146/Q146375/
 ---
 
 ## Q146375: XCLN: Printing Weekly 5-day Prints from Monday through Friday

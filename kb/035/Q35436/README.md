@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35436: IBM PC, XT, AT, and PS/2 Error Codes"
-permalink: kb/035/Q35436/
+permalink: /kb/035/Q35436/
 ---
 
 ## Q35436: IBM PC, XT, AT, and PS/2 Error Codes

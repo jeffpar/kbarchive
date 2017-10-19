@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171067: SMSINST: Error Creating Registry Keys with Empty Values"
-permalink: kb/171/Q171067/
+permalink: /kb/171/Q171067/
 ---
 
 ## Q171067: SMSINST: Error Creating Registry Keys with Empty Values

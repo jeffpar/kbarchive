@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184775: FIX: Oracle ODBC Driver Creates Temporary Files on Root Drive"
-permalink: kb/184/Q184775/
+permalink: /kb/184/Q184775/
 ---
 
 ## Q184775: FIX: Oracle ODBC Driver Creates Temporary Files on Root Drive

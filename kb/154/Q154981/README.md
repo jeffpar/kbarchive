@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154981: PRB: AppleScript: &quot;Results&quot; are Not Implemented"
-permalink: kb/154/Q154981/
+permalink: /kb/154/Q154981/
 ---
 
 ## Q154981: PRB: AppleScript: &quot;Results&quot; are Not Implemented

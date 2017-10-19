@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146028: XCLN: Exchange Inbox Can Be Renamed"
-permalink: kb/146/Q146028/
+permalink: /kb/146/Q146028/
 ---
 
 ## Q146028: XCLN: Exchange Inbox Can Be Renamed

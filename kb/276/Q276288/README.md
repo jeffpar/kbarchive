@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276288: WritePrinter() Error Recovery with SNA Server Print Service"
-permalink: kb/276/Q276288/
+permalink: /kb/276/Q276288/
 ---
 
 ## Q276288: WritePrinter() Error Recovery with SNA Server Print Service

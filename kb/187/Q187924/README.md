@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187924: PRB: Unable To Build Internet Download Distribution Set"
-permalink: kb/187/Q187924/
+permalink: /kb/187/Q187924/
 ---
 
 ## Q187924: PRB: Unable To Build Internet Download Distribution Set

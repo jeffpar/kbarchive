@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75975: DOC: WM_RENDERFORMAT Documentation Incomplete"
-permalink: kb/075/Q75975/
+permalink: /kb/075/Q75975/
 ---
 
 ## Q75975: DOC: WM_RENDERFORMAT Documentation Incomplete

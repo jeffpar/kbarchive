@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207303: How to Distribute Modifications to Default Regional Settings"
-permalink: kb/207/Q207303/
+permalink: /kb/207/Q207303/
 ---
 
 ## Q207303: How to Distribute Modifications to Default Regional Settings

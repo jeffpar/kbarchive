@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146887: Repairing Windows NT After the Application of Service Pack 3"
-permalink: kb/146/Q146887/
+permalink: /kb/146/Q146887/
 ---
 
 ## Q146887: Repairing Windows NT After the Application of Service Pack 3

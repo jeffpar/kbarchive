@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173571: BUG: Invalid Code Generated Implementing Outlook.Mailitem"
-permalink: kb/173/Q173571/
+permalink: /kb/173/Q173571/
 ---
 
 ## Q173571: BUG: Invalid Code Generated Implementing Outlook.Mailitem

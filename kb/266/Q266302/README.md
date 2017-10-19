@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266302: PRB: ADOX Error -2147217859 When You Append a Table to a Catalog"
-permalink: kb/266/Q266302/
+permalink: /kb/266/Q266302/
 ---
 
 ## Q266302: PRB: ADOX Error -2147217859 When You Append a Table to a Catalog

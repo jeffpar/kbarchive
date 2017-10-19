@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184743: PRB: Script Code Runs During AddCode Method"
-permalink: kb/184/Q184743/
+permalink: /kb/184/Q184743/
 ---
 
 ## Q184743: PRB: Script Code Runs During AddCode Method

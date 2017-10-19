@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163550: WD97: Letter Wizard Subject Line Not Selected"
-permalink: kb/163/Q163550/
+permalink: /kb/163/Q163550/
 ---
 
 ## Q163550: WD97: Letter Wizard Subject Line Not Selected

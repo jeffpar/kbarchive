@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163521: Event ID 5000 Starting The Shared Folders Gateway Service"
-permalink: kb/163/Q163521/
+permalink: /kb/163/Q163521/
 ---
 
 ## Q163521: Event ID 5000 Starting The Shared Folders Gateway Service

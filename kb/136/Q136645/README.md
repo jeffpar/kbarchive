@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136645: Cannot Boot from Server with Ungermann-Bass Network Adapter"
-permalink: kb/136/Q136645/
+permalink: /kb/136/Q136645/
 ---
 
 ## Q136645: Cannot Boot from Server with Ungermann-Bass Network Adapter

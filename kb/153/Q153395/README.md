@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153395: Error Message: &quot;Exception 0E in VPOWERD&quot; During First Boot"
-permalink: kb/153/Q153395/
+permalink: /kb/153/Q153395/
 ---
 
 ## Q153395: Error Message: &quot;Exception 0E in VPOWERD&quot; During First Boot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61178: Instruction: Straight and Level -- Gear Should Be Up"
-permalink: kb/061/Q61178/
+permalink: /kb/061/Q61178/
 ---
 
 ## Q61178: Instruction: Straight and Level -- Gear Should Be Up

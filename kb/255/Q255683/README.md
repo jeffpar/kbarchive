@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255683: BUG: The GETOBJECT() Function Fails When Calling a Visual FoxPro"
-permalink: kb/255/Q255683/
+permalink: /kb/255/Q255683/
 ---
 
 ## Q255683: BUG: The GETOBJECT() Function Fails When Calling a Visual FoxPro

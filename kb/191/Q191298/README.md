@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191298: SMS: Inventory May Stop Responding on Windows 3.1 LanMan Client"
-permalink: kb/191/Q191298/
+permalink: /kb/191/Q191298/
 ---
 
 ## Q191298: SMS: Inventory May Stop Responding on Windows 3.1 LanMan Client

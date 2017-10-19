@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252404: Baseball 2000: Game Quits or You Receive Error Message"
-permalink: kb/252/Q252404/
+permalink: /kb/252/Q252404/
 ---
 
 ## Q252404: Baseball 2000: Game Quits or You Receive Error Message

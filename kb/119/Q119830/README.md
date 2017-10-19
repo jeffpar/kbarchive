@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119830: Err Msg: Unable to Start DDE Communications with Program Manager"
-permalink: kb/119/Q119830/
+permalink: /kb/119/Q119830/
 ---
 
 ## Q119830: Err Msg: Unable to Start DDE Communications with Program Manager

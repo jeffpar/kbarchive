@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195917: EVG99: Favorite List Entry Cannot Be Longer Than 42 Characters"
-permalink: kb/195/Q195917/
+permalink: /kb/195/Q195917/
 ---
 
 ## Q195917: EVG99: Favorite List Entry Cannot Be Longer Than 42 Characters

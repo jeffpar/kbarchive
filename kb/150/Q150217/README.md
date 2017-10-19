@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150217: Invalid Format for Microsoft Internet Explorer"
-permalink: kb/150/Q150217/
+permalink: /kb/150/Q150217/
 ---
 
 ## Q150217: Invalid Format for Microsoft Internet Explorer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192075: HOWTO: Making Coolbar Interface Using Toolbar ActiveX Control"
-permalink: kb/192/Q192075/
+permalink: /kb/192/Q192075/
 ---
 
 ## Q192075: HOWTO: Making Coolbar Interface Using Toolbar ActiveX Control

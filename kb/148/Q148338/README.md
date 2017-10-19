@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148338: Error Message: Microsoft Voice Was Left in an Unstable State"
-permalink: kb/148/Q148338/
+permalink: /kb/148/Q148338/
 ---
 
 ## Q148338: Error Message: Microsoft Voice Was Left in an Unstable State

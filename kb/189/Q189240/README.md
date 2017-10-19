@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189240: Baseball 3D: ATI Rage Video Driver Update Available"
-permalink: kb/189/Q189240/
+permalink: /kb/189/Q189240/
 ---
 
 ## Q189240: Baseball 3D: ATI Rage Video Driver Update Available

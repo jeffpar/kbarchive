@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265324: Cannot Mount an NFS Share on a Linux NFS Server"
-permalink: kb/265/Q265324/
+permalink: /kb/265/Q265324/
 ---
 
 ## Q265324: Cannot Mount an NFS Share on a Linux NFS Server

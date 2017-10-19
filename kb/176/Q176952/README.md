@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176952: XFOR: Store Fails to Deliver Auto-Generated Messages"
-permalink: kb/176/Q176952/
+permalink: /kb/176/Q176952/
 ---
 
 ## Q176952: XFOR: Store Fails to Deliver Auto-Generated Messages

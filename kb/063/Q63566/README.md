@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63566: Using WordPerfect's Repeat Performance with Windows"
-permalink: kb/063/Q63566/
+permalink: /kb/063/Q63566/
 ---
 
 ## Q63566: Using WordPerfect's Repeat Performance with Windows

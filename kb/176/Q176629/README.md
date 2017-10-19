@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176629: Disabling CSNW in Hardware Profile Causes Lengthy Logon Delay"
-permalink: kb/176/Q176629/
+permalink: /kb/176/Q176629/
 ---
 
 ## Q176629: Disabling CSNW in Hardware Profile Causes Lengthy Logon Delay

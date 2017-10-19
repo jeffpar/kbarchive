@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223129: FIX: Toolbar's Customize Method Replicates Images in Toolba"
-permalink: kb/223/Q223129/
+permalink: /kb/223/Q223129/
 ---
 
 ## Q223129: FIX: Toolbar's Customize Method Replicates Images in Toolba

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199289: XFOR: Migration Wizard or CCMC Crashes on Alpha NT for JPN"
-permalink: kb/199/Q199289/
+permalink: /kb/199/Q199289/
 ---
 
 ## Q199289: XFOR: Migration Wizard or CCMC Crashes on Alpha NT for JPN

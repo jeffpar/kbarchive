@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236098: Local TCP/IP Client Fails--No SNA Servers Found in (Sub)domain"
-permalink: kb/236/Q236098/
+permalink: /kb/236/Q236098/
 ---
 
 ## Q236098: Local TCP/IP Client Fails--No SNA Servers Found in (Sub)domain

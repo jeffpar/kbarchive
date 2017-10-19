@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195876: Encarta: Designed to Be Viewed at 800 x 600 Screen Resolution"
-permalink: kb/195/Q195876/
+permalink: /kb/195/Q195876/
 ---
 
 ## Q195876: Encarta: Designed to Be Viewed at 800 x 600 Screen Resolution

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127897: WINSADMN Database Active Column Symbol Descriptions"
-permalink: kb/127/Q127897/
+permalink: /kb/127/Q127897/
 ---
 
 ## Q127897: WINSADMN Database Active Column Symbol Descriptions

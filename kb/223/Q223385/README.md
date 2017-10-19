@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223385: XIMS: IMS Routing Incorrectly When Directory Replication Enabled"
-permalink: kb/223/Q223385/
+permalink: /kb/223/Q223385/
 ---
 
 ## Q223385: XIMS: IMS Routing Incorrectly When Directory Replication Enabled

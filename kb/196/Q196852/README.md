@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196852: XCON: MTA Stops with Database Server Internal Processing Error"
-permalink: kb/196/Q196852/
+permalink: /kb/196/Q196852/
 ---
 
 ## Q196852: XCON: MTA Stops with Database Server Internal Processing Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237509: Encarta: Pasted Articles Do Not Include Copyright Information"
-permalink: kb/237/Q237509/
+permalink: /kb/237/Q237509/
 ---
 
 ## Q237509: Encarta: Pasted Articles Do Not Include Copyright Information

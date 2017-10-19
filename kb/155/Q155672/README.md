@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155672: Monster Truck Madness: Multiplayer Information"
-permalink: kb/155/Q155672/
+permalink: /kb/155/Q155672/
 ---
 
 ## Q155672: Monster Truck Madness: Multiplayer Information

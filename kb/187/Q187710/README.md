@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187710: IIS 4.0 Installation Error: CoGetClassObject, 0x80080005 Server"
-permalink: kb/187/Q187710/
+permalink: /kb/187/Q187710/
 ---
 
 ## Q187710: IIS 4.0 Installation Error: CoGetClassObject, 0x80080005 Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183422: Long Delays Trying to View Registry Values Edit Dialog Box"
-permalink: kb/183/Q183422/
+permalink: /kb/183/Q183422/
 ---
 
 ## Q183422: Long Delays Trying to View Registry Values Edit Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161917: Printing Italics to a LexMark Printer Produces Incorrect Output"
-permalink: kb/161/Q161917/
+permalink: /kb/161/Q161917/
 ---
 
 ## Q161917: Printing Italics to a LexMark Printer Produces Incorrect Output

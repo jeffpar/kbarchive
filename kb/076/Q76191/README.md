@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76191: Installing Tips Plus Version 1.5 with MS-DOS 5.0"
-permalink: kb/076/Q76191/
+permalink: /kb/076/Q76191/
 ---
 
 ## Q76191: Installing Tips Plus Version 1.5 with MS-DOS 5.0

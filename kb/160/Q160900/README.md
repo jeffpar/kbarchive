@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160900: Windows NT Users May Lack Permission to Change Password"
-permalink: kb/160/Q160900/
+permalink: /kb/160/Q160900/
 ---
 
 ## Q160900: Windows NT Users May Lack Permission to Change Password

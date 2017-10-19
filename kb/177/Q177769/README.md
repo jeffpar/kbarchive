@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177769: XADM: Assert Error When You Extract Windows NT Account List"
-permalink: kb/177/Q177769/
+permalink: /kb/177/Q177769/
 ---
 
 ## Q177769: XADM: Assert Error When You Extract Windows NT Account List

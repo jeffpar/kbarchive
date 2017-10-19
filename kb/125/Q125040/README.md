@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125040: WFWG Err Msg: Setup Cannot Find or Update Your AUTOEXEC.BAT..."
-permalink: kb/125/Q125040/
+permalink: /kb/125/Q125040/
 ---
 
 ## Q125040: WFWG Err Msg: Setup Cannot Find or Update Your AUTOEXEC.BAT...

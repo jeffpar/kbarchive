@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154413: Changing Maximum Number of Users on an FPNW Server"
-permalink: kb/154/Q154413/
+permalink: /kb/154/Q154413/
 ---
 
 ## Q154413: Changing Maximum Number of Users on an FPNW Server

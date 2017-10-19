@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320200: MTA Does Not Start After You Apply Service Pack 4"
-permalink: kb/320/Q320200/
+permalink: /kb/320/Q320200/
 ---
 
 ## Q320200: MTA Does Not Start After You Apply Service Pack 4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159955: Encarta 97: Differences Between Standard and Deluxe Editions"
-permalink: kb/159/Q159955/
+permalink: /kb/159/Q159955/
 ---
 
 ## Q159955: Encarta 97: Differences Between Standard and Deluxe Editions

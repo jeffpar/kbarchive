@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192775: XCLN: Outlook Web Access Cannot Use Contacts in Public Folder"
-permalink: kb/192/Q192775/
+permalink: /kb/192/Q192775/
 ---
 
 ## Q192775: XCLN: Outlook Web Access Cannot Use Contacts in Public Folder

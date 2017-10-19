@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90970: Setup, Network Card Settings, and Preliminary Troubleshooting"
-permalink: kb/090/Q90970/
+permalink: /kb/090/Q90970/
 ---
 
 ## Q90970: Setup, Network Card Settings, and Preliminary Troubleshooting

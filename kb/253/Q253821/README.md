@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253821: System Error 85 with &quot;NET USE&quot; Command"
-permalink: kb/253/Q253821/
+permalink: /kb/253/Q253821/
 ---
 
 ## Q253821: System Error 85 with &quot;NET USE&quot; Command

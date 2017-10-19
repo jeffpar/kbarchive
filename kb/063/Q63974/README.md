@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63974: IOCtl Calls in Protected-Mode Microsoft Windows"
-permalink: kb/063/Q63974/
+permalink: /kb/063/Q63974/
 ---
 
 ## Q63974: IOCtl Calls in Protected-Mode Microsoft Windows

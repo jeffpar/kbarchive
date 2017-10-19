@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179157: Stop 0xA in Tcpip.sys When Source Routing Data Exceeds 18 Bytes"
-permalink: kb/179/Q179157/
+permalink: /kb/179/Q179157/
 ---
 
 ## Q179157: Stop 0xA in Tcpip.sys When Source Routing Data Exceeds 18 Bytes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234835: MOD2000: Errors After You Rename Project in VSS Explorer"
-permalink: kb/234/Q234835/
+permalink: /kb/234/Q234835/
 ---
 
 ## Q234835: MOD2000: Errors After You Rename Project in VSS Explorer

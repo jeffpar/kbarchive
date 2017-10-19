@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172229: Stop 0x00000050 During WinNT 3.51 to 4.0 Upgrade on Compaq"
-permalink: kb/172/Q172229/
+permalink: /kb/172/Q172229/
 ---
 
 ## Q172229: Stop 0x00000050 During WinNT 3.51 to 4.0 Upgrade on Compaq

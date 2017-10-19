@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128393: How to Create a Private Data Session in a Form"
-permalink: kb/128/Q128393/
+permalink: /kb/128/Q128393/
 ---
 
 ## Q128393: How to Create a Private Data Session in a Form

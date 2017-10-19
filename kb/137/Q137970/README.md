@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137970: BUG: Precision for a Projected Column Always Reported as 255"
-permalink: kb/137/Q137970/
+permalink: /kb/137/Q137970/
 ---
 
 ## Q137970: BUG: Precision for a Projected Column Always Reported as 255

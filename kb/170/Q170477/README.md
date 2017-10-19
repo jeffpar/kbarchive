@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170477: XADM: The Attribute OBJ-Class Is Unknown"
-permalink: kb/170/Q170477/
+permalink: /kb/170/Q170477/
 ---
 
 ## Q170477: XADM: The Attribute OBJ-Class Is Unknown

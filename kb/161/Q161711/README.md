@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161711: XCON: Messages NDR Rather Than Being Queued for Later Delivery"
-permalink: kb/161/Q161711/
+permalink: /kb/161/Q161711/
 ---
 
 ## Q161711: XCON: Messages NDR Rather Than Being Queued for Later Delivery

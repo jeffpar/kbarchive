@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153632: INFO: Type of OCX Property in Typelib Should Match Its RetVal"
-permalink: kb/153/Q153632/
+permalink: /kb/153/Q153632/
 ---
 
 ## Q153632: INFO: Type of OCX Property in Typelib Should Match Its RetVal

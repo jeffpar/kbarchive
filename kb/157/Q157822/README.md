@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157822: XCLN: ErrMsg &quot;An extension failed to initialize...&quot;"
-permalink: kb/157/Q157822/
+permalink: /kb/157/Q157822/
 ---
 
 ## Q157822: XCLN: ErrMsg &quot;An extension failed to initialize...&quot;

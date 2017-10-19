@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152318: FIX: DAO SDK's CdbRecordset::Requery() May Fail"
-permalink: kb/152/Q152318/
+permalink: /kb/152/Q152318/
 ---
 
 ## Q152318: FIX: DAO SDK's CdbRecordset::Requery() May Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178155: XCLN: Outlook 97 Setup Adds IE Setup Icon to Desktop"
-permalink: kb/178/Q178155/
+permalink: /kb/178/Q178155/
 ---
 
 ## Q178155: XCLN: Outlook 97 Setup Adds IE Setup Icon to Desktop

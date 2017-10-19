@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141868: INFO: Visual FoxPro Language Tips and Tricks"
-permalink: kb/141/Q141868/
+permalink: /kb/141/Q141868/
 ---
 
 ## Q141868: INFO: Visual FoxPro Language Tips and Tricks

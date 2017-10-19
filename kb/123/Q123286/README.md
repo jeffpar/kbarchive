@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123286: WINNT /D Does Not Delete System Files"
-permalink: kb/123/Q123286/
+permalink: /kb/123/Q123286/
 ---
 
 ## Q123286: WINNT /D Does Not Delete System Files

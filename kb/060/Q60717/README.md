@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60717: Using IBM Adapters and DMA Support on Full Duplex Lines"
-permalink: kb/060/Q60717/
+permalink: /kb/060/Q60717/
 ---
 
 ## Q60717: Using IBM Adapters and DMA Support on Full Duplex Lines

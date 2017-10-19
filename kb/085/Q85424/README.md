@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85424: README.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85424/
+permalink: /kb/085/Q85424/
 ---
 
 ## Q85424: README.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2

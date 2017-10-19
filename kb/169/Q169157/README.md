@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169157: Err Msg: Dial-Up Networking Cannot Find the Specified Modem..."
-permalink: kb/169/Q169157/
+permalink: /kb/169/Q169157/
 ---
 
 ## Q169157: Err Msg: Dial-Up Networking Cannot Find the Specified Modem...

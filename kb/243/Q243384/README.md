@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243384: SNA LU3 Printing Does Not Support 3270 Some Data Stream Orders"
-permalink: kb/243/Q243384/
+permalink: /kb/243/Q243384/
 ---
 
 ## Q243384: SNA LU3 Printing Does Not Support 3270 Some Data Stream Orders

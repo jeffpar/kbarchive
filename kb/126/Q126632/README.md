@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126632: Mouse Detected as PS/2-Style or Bus Does Not Work During Setup"
-permalink: kb/126/Q126632/
+permalink: /kb/126/Q126632/
 ---
 
 ## Q126632: Mouse Detected as PS/2-Style or Bus Does Not Work During Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156811: INFO: STL Sample for the abs Function"
-permalink: kb/156/Q156811/
+permalink: /kb/156/Q156811/
 ---
 
 ## Q156811: INFO: STL Sample for the abs Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271284: HOWTO: Access COM+ Object Constructor String in VB Component"
-permalink: kb/271/Q271284/
+permalink: /kb/271/Q271284/
 ---
 
 ## Q271284: HOWTO: Access COM+ Object Constructor String in VB Component

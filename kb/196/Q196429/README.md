@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196429: WD97: Can't Underline Equation Field Below Text Baseline"
-permalink: kb/196/Q196429/
+permalink: /kb/196/Q196429/
 ---
 
 ## Q196429: WD97: Can't Underline Equation Field Below Text Baseline

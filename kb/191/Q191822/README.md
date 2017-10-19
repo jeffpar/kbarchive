@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191822: FTP Service May Cause Deadlock in FTP and Other IIS Services"
-permalink: kb/191/Q191822/
+permalink: /kb/191/Q191822/
 ---
 
 ## Q191822: FTP Service May Cause Deadlock in FTP and Other IIS Services

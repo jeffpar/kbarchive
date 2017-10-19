@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108076: 3Com Etherlink 16 Network Adapter Unstable in Turbo Mode"
-permalink: kb/108/Q108076/
+permalink: /kb/108/Q108076/
 ---
 
 ## Q108076: 3Com Etherlink 16 Network Adapter Unstable in Turbo Mode

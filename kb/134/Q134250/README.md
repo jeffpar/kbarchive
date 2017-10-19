@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134250: No Compaq Netflex Drivers in Windows NT 3.51 for RISC Platforms"
-permalink: kb/134/Q134250/
+permalink: /kb/134/Q134250/
 ---
 
 ## Q134250: No Compaq Netflex Drivers in Windows NT 3.51 for RISC Platforms

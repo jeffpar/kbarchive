@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172685: PRB: DISPLAY STATUS Shows Only 210 Characters of SET PATH TO"
-permalink: kb/172/Q172685/
+permalink: /kb/172/Q172685/
 ---
 
 ## Q172685: PRB: DISPLAY STATUS Shows Only 210 Characters of SET PATH TO

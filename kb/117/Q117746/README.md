@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117746: How to Search for Special Characters"
-permalink: kb/117/Q117746/
+permalink: /kb/117/Q117746/
 ---
 
 ## Q117746: How to Search for Special Characters

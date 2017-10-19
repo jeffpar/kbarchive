@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256883: MCSE Training Kit, Upgrading to Microsoftr Windowsr 2000 Comment"
-permalink: kb/256/Q256883/
+permalink: /kb/256/Q256883/
 ---
 
 ## Q256883: MCSE Training Kit, Upgrading to Microsoftr Windowsr 2000 Comment

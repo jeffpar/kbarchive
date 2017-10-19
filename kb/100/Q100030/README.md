@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100030: PRB: midiInputHandler GP faults in MIDIMON Sample Application"
-permalink: kb/100/Q100030/
+permalink: /kb/100/Q100030/
 ---
 
 ## Q100030: PRB: midiInputHandler GP faults in MIDIMON Sample Application

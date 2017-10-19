@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200454: BUG: Visual Basic Does Not Receive Some OSP Notifications"
-permalink: kb/200/Q200454/
+permalink: /kb/200/Q200454/
 ---
 
 ## Q200454: BUG: Visual Basic Does Not Receive Some OSP Notifications

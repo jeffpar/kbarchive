@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280455: Add Printer Wizard Causes Dr. Watson Exception in Explorer.exe"
-permalink: kb/280/Q280455/
+permalink: /kb/280/Q280455/
 ---
 
 ## Q280455: Add Printer Wizard Causes Dr. Watson Exception in Explorer.exe

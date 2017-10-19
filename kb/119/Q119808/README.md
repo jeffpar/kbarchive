@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119808: Transverse &amp; Extra Paper Sizes Not Available in Common Dialogs"
-permalink: kb/119/Q119808/
+permalink: /kb/119/Q119808/
 ---
 
 ## Q119808: Transverse &amp; Extra Paper Sizes Not Available in Common Dialogs

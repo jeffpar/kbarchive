@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178051: FIX: Dialog Box Appears Many Times When Changing Alias Property"
-permalink: kb/178/Q178051/
+permalink: /kb/178/Q178051/
 ---
 
 ## Q178051: FIX: Dialog Box Appears Many Times When Changing Alias Property

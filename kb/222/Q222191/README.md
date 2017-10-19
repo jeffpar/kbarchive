@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222191: XADM: New Intersite Replication Counters Added"
-permalink: kb/222/Q222191/
+permalink: /kb/222/Q222191/
 ---
 
 ## Q222191: XADM: New Intersite Replication Counters Added

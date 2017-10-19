@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156698: Disabling Access to Network Resources Using System Policies"
-permalink: kb/156/Q156698/
+permalink: /kb/156/Q156698/
 ---
 
 ## Q156698: Disabling Access to Network Resources Using System Policies

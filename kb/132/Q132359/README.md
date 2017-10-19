@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132359: Example of Polymorphism in Visual FoxPro"
-permalink: kb/132/Q132359/
+permalink: /kb/132/Q132359/
 ---
 
 ## Q132359: Example of Polymorphism in Visual FoxPro

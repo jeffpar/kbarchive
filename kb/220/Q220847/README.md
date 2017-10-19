@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220847: FTP Cannot Retrieve Files with DBCS Characters"
-permalink: kb/220/Q220847/
+permalink: /kb/220/Q220847/
 ---
 
 ## Q220847: FTP Cannot Retrieve Files with DBCS Characters

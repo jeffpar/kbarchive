@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153281: XLCN: MAPIForm and MSRichEd VBX's Not For Use Outside of Forms"
-permalink: kb/153/Q153281/
+permalink: /kb/153/Q153281/
 ---
 
 ## Q153281: XLCN: MAPIForm and MSRichEd VBX's Not For Use Outside of Forms

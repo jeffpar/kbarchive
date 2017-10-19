@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125574: Excessive Server Manager File Lock Counts"
-permalink: kb/125/Q125574/
+permalink: /kb/125/Q125574/
 ---
 
 ## Q125574: Excessive Server Manager File Lock Counts

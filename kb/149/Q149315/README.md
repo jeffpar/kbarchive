@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149315: XFOR: Exchange MS Mail Connector Adds SNADS GatewayName"
-permalink: kb/149/Q149315/
+permalink: /kb/149/Q149315/
 ---
 
 ## Q149315: XFOR: Exchange MS Mail Connector Adds SNADS GatewayName

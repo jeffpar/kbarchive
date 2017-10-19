@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132772: IBM PCMCIA Token Ring Card Does Not Work on Omnibook 600"
-permalink: kb/132/Q132772/
+permalink: /kb/132/Q132772/
 ---
 
 ## Q132772: IBM PCMCIA Token Ring Card Does Not Work on Omnibook 600

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96271: Chaining Parent PSP Environment Variables"
-permalink: kb/096/Q96271/
+permalink: /kb/096/Q96271/
 ---
 
 ## Q96271: Chaining Parent PSP Environment Variables

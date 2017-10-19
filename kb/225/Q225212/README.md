@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225212: Err Msg: STOP 0x0000000a Caused by Tcpip.sys on SP4 Computer"
-permalink: kb/225/Q225212/
+permalink: /kb/225/Q225212/
 ---
 
 ## Q225212: Err Msg: STOP 0x0000000a Caused by Tcpip.sys on SP4 Computer

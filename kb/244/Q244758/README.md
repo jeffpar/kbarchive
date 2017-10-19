@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244758: Returns &quot;Type Mismatch&quot; Error After Request.BinaryRead() Method"
-permalink: kb/244/Q244758/
+permalink: /kb/244/Q244758/
 ---
 
 ## Q244758: Returns &quot;Type Mismatch&quot; Error After Request.BinaryRead() Method

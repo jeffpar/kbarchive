@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274268: Network Adapters Do Not Appear in Drop-Down List"
-permalink: kb/274/Q274268/
+permalink: /kb/274/Q274268/
 ---
 
 ## Q274268: Network Adapters Do Not Appear in Drop-Down List

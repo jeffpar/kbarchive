@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266258: Computer Stops Responding During First Restart After You Apply S"
-permalink: kb/266/Q266258/
+permalink: /kb/266/Q266258/
 ---
 
 ## Q266258: Computer Stops Responding During First Restart After You Apply S

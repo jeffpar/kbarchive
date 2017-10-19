@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155895: How To Find an Item in a Tree Control Via its Label"
-permalink: kb/155/Q155895/
+permalink: /kb/155/Q155895/
 ---
 
 ## Q155895: How To Find an Item in a Tree Control Via its Label

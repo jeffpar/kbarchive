@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246141: FS2000: Graphic Elements Intermittently Flash or Blink"
-permalink: kb/246/Q246141/
+permalink: /kb/246/Q246141/
 ---
 
 ## Q246141: FS2000: Graphic Elements Intermittently Flash or Blink

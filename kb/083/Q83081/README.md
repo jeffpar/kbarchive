@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83081: INFO: Endl Flushes the cout Buffer Immediately Upon Execution"
-permalink: kb/083/Q83081/
+permalink: /kb/083/Q83081/
 ---
 
 ## Q83081: INFO: Endl Flushes the cout Buffer Immediately Upon Execution

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242861: XCON: Message Transfer Agent Stops on 9405 Errors"
-permalink: kb/242/Q242861/
+permalink: /kb/242/Q242861/
 ---
 
 ## Q242861: XCON: Message Transfer Agent Stops on 9405 Errors

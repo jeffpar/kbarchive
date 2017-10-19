@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124816: Very Large or Very Small Transfers to SCSI Printers Fail"
-permalink: kb/124/Q124816/
+permalink: /kb/124/Q124816/
 ---
 
 ## Q124816: Very Large or Very Small Transfers to SCSI Printers Fail

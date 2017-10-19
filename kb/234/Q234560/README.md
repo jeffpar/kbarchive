@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234560: Running Microsoft Word 2000 Comments and Corrections"
-permalink: kb/234/Q234560/
+permalink: /kb/234/Q234560/
 ---
 
 ## Q234560: Running Microsoft Word 2000 Comments and Corrections

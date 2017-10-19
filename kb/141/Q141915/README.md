@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141915: PRB: Syntax Error with the Query Wizard"
-permalink: kb/141/Q141915/
+permalink: /kb/141/Q141915/
 ---
 
 ## Q141915: PRB: Syntax Error with the Query Wizard

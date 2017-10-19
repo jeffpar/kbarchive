@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170473: XCON: MTA Error 2194, Usually After Recovery"
-permalink: kb/170/Q170473/
+permalink: /kb/170/Q170473/
 ---
 
 ## Q170473: XCON: MTA Error 2194, Usually After Recovery

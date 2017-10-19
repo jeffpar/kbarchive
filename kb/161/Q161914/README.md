@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161914: ERROR MESSAGE: Load Needed DLLs for HAL"
-permalink: kb/161/Q161914/
+permalink: /kb/161/Q161914/
 ---
 
 ## Q161914: ERROR MESSAGE: Load Needed DLLs for HAL

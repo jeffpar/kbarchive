@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255158: Cannot Start WordPad Maximized by Double-Clicking .wri/.doc File"
-permalink: kb/255/Q255158/
+permalink: /kb/255/Q255158/
 ---
 
 ## Q255158: Cannot Start WordPad Maximized by Double-Clicking .wri/.doc File

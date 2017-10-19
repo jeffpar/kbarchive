@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81360: MS-DOS EDIT and QBASIC Command Line Switches"
-permalink: kb/081/Q81360/
+permalink: /kb/081/Q81360/
 ---
 
 ## Q81360: MS-DOS EDIT and QBASIC Command Line Switches

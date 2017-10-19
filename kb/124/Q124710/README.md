@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124710: MSB Human: No MIDI Drums with Gravis UltraSound"
-permalink: kb/124/Q124710/
+permalink: /kb/124/Q124710/
 ---
 
 ## Q124710: MSB Human: No MIDI Drums with Gravis UltraSound

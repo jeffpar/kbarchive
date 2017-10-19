@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137815: Shutdown Problems with Matrox Video Cards"
-permalink: kb/137/Q137815/
+permalink: /kb/137/Q137815/
 ---
 
 ## Q137815: Shutdown Problems with Matrox Video Cards

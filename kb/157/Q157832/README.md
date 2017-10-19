@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157832: SMS: NetworkType Not Updated Upgrading from WFWG to Windows NT"
-permalink: kb/157/Q157832/
+permalink: /kb/157/Q157832/
 ---
 
 ## Q157832: SMS: NetworkType Not Updated Upgrading from WFWG to Windows NT

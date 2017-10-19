@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83973: Large Titles and Icons on EVEREX/AGI 286"
-permalink: kb/083/Q83973/
+permalink: /kb/083/Q83973/
 ---
 
 ## Q83973: Large Titles and Icons on EVEREX/AGI 286

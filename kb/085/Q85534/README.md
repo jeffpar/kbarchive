@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85534: Changes Made in the Second Release of Windows 3.1 WRK"
-permalink: kb/085/Q85534/
+permalink: /kb/085/Q85534/
 ---
 
 ## Q85534: Changes Made in the Second Release of Windows 3.1 WRK

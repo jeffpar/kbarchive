@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57888: INFO: Return Value for getch() on Extended Characters"
-permalink: kb/057/Q57888/
+permalink: /kb/057/Q57888/
 ---
 
 ## Q57888: INFO: Return Value for getch() on Extended Characters

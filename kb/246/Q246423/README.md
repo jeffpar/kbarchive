@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246423: How to Identify Your Interix CD-ROM and Subsystem Version"
-permalink: kb/246/Q246423/
+permalink: /kb/246/Q246423/
 ---
 
 ## Q246423: How to Identify Your Interix CD-ROM and Subsystem Version

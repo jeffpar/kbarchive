@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94331: Disk Error Messages with ASPI2DOS.SYS Device Driver"
-permalink: kb/094/Q94331/
+permalink: /kb/094/Q94331/
 ---
 
 ## Q94331: Disk Error Messages with ASPI2DOS.SYS Device Driver

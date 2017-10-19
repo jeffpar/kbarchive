@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168080: PRB: Debugger Displays Incorrect Information for Variable"
-permalink: kb/168/Q168080/
+permalink: /kb/168/Q168080/
 ---
 
 ## Q168080: PRB: Debugger Displays Incorrect Information for Variable

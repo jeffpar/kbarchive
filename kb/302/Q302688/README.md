@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302688: Troubleshooting Context-Sensitive Cobranding"
-permalink: kb/302/Q302688/
+permalink: /kb/302/Q302688/
 ---
 
 ## Q302688: Troubleshooting Context-Sensitive Cobranding

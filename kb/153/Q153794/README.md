@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153794: FIX: Error #36 in dofoxdoc(0) While Running Documenting Wizard"
-permalink: kb/153/Q153794/
+permalink: /kb/153/Q153794/
 ---
 
 ## Q153794: FIX: Error #36 in dofoxdoc(0) While Running Documenting Wizard

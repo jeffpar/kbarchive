@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89264: Increasing Speed in FoxBASE+"
-permalink: kb/089/Q89264/
+permalink: /kb/089/Q89264/
 ---
 
 ## Q89264: Increasing Speed in FoxBASE+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116408: Starting SNA Server Causes Computer to Slow Down"
-permalink: kb/116/Q116408/
+permalink: /kb/116/Q116408/
 ---
 
 ## Q116408: Starting SNA Server Causes Computer to Slow Down

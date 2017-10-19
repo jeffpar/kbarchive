@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238251: How to Install Windows Messaging After Removing Outlook 2000"
-permalink: kb/238/Q238251/
+permalink: /kb/238/Q238251/
 ---
 
 ## Q238251: How to Install Windows Messaging After Removing Outlook 2000

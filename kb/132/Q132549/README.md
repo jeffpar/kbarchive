@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132549: How to Set the Color and Font of Grid Rows Conditionally"
-permalink: kb/132/Q132549/
+permalink: /kb/132/Q132549/
 ---
 
 ## Q132549: How to Set the Color and Font of Grid Rows Conditionally

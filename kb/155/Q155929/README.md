@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155929: BUG: APRINTERS Function Behaves Differently in Windows 95"
-permalink: kb/155/Q155929/
+permalink: /kb/155/Q155929/
 ---
 
 ## Q155929: BUG: APRINTERS Function Behaves Differently in Windows 95

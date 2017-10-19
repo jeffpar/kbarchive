@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175690: The Winmsd.exe Program Shows Multiple Users Are Logged On"
-permalink: kb/175/Q175690/
+permalink: /kb/175/Q175690/
 ---
 
 ## Q175690: The Winmsd.exe Program Shows Multiple Users Are Logged On

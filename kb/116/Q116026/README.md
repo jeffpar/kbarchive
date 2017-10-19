@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116026: FIX: ExitInstance() Not Called in _USRDLL DLL"
-permalink: kb/116/Q116026/
+permalink: /kb/116/Q116026/
 ---
 
 ## Q116026: FIX: ExitInstance() Not Called in _USRDLL DLL

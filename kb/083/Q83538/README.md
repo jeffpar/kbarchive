@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83538: Mac Fax: Running Fax Gateway with Other Gateways"
-permalink: kb/083/Q83538/
+permalink: /kb/083/Q83538/
 ---
 
 ## Q83538: Mac Fax: Running Fax Gateway with Other Gateways

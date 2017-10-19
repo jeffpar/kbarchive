@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299728: Train Simulator: Known Issues with Activities"
-permalink: kb/299/Q299728/
+permalink: /kb/299/Q299728/
 ---
 
 ## Q299728: Train Simulator: Known Issues with Activities

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139743: DriveSpace Error 395 or 312 When Resizing Removable Media"
-permalink: kb/139/Q139743/
+permalink: /kb/139/Q139743/
 ---
 
 ## Q139743: DriveSpace Error 395 or 312 When Resizing Removable Media

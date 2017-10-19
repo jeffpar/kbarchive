@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103815: PC WFW: Template Truncation in Extensions Upgrade"
-permalink: kb/103/Q103815/
+permalink: /kb/103/Q103815/
 ---
 
 ## Q103815: PC WFW: Template Truncation in Extensions Upgrade

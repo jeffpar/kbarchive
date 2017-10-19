@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133151: Unable to Stop Success Logon Audits on Backup Domain Controller"
-permalink: kb/133/Q133151/
+permalink: /kb/133/Q133151/
 ---
 
 ## Q133151: Unable to Stop Success Logon Audits on Backup Domain Controller

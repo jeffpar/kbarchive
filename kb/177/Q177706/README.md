@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177706: SMS: Missing DLLs Cause an Access Violation with Audit32"
-permalink: kb/177/Q177706/
+permalink: /kb/177/Q177706/
 ---
 
 ## Q177706: SMS: Missing DLLs Cause an Access Violation with Audit32

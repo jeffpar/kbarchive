@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121067: MS-DOS 6.21 or 6.22 Upgrade: Files Not Updated in English"
-permalink: kb/121/Q121067/
+permalink: /kb/121/Q121067/
 ---
 
 ## Q121067: MS-DOS 6.21 or 6.22 Upgrade: Files Not Updated in English

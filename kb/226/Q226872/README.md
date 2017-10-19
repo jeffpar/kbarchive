@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226872: SMS: Can't Remove Assigned Client Remote Installation Account"
-permalink: kb/226/Q226872/
+permalink: /kb/226/Q226872/
 ---
 
 ## Q226872: SMS: Can't Remove Assigned Client Remote Installation Account

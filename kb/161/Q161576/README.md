@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161576: PRB: Cannot Checkout a File When Multiple Checkouts are Enabled"
-permalink: kb/161/Q161576/
+permalink: /kb/161/Q161576/
 ---
 
 ## Q161576: PRB: Cannot Checkout a File When Multiple Checkouts are Enabled

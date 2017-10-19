@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180529: BUG: Menu Shortcut Keys Do Not Always Work"
-permalink: kb/180/Q180529/
+permalink: /kb/180/Q180529/
 ---
 
 ## Q180529: BUG: Menu Shortcut Keys Do Not Always Work

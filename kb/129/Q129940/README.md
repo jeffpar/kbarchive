@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129940: PRB: Out of Stack Space Error Caused by Property Procedure"
-permalink: kb/129/Q129940/
+permalink: /kb/129/Q129940/
 ---
 
 ## Q129940: PRB: Out of Stack Space Error Caused by Property Procedure

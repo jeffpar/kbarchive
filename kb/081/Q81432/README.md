@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81432: Windows: Stack Overflow and UAE with PEAK/DM BIOS"
-permalink: kb/081/Q81432/
+permalink: /kb/081/Q81432/
 ---
 
 ## Q81432: Windows: Stack Overflow and UAE with PEAK/DM BIOS

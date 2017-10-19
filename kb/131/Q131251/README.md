@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131251: PPT: How to Automatically Number Lists in PowerPoint"
-permalink: kb/131/Q131251/
+permalink: /kb/131/Q131251/
 ---
 
 ## Q131251: PPT: How to Automatically Number Lists in PowerPoint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95018: PROFS: &quot;Nickname File Filename Filetype Does Not Exist&quot; Error"
-permalink: kb/095/Q95018/
+permalink: /kb/095/Q95018/
 ---
 
 ## Q95018: PROFS: &quot;Nickname File Filename Filetype Does Not Exist&quot; Error

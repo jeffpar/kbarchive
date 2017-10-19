@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163898: Remote Control Improvement of DHCP Clients"
-permalink: kb/163/Q163898/
+permalink: /kb/163/Q163898/
 ---
 
 ## Q163898: Remote Control Improvement of DHCP Clients

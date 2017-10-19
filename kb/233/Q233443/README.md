@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233443: Business Planner: Data Is Deleted from Field in Wizard Interview"
-permalink: kb/233/Q233443/
+permalink: /kb/233/Q233443/
 ---
 
 ## Q233443: Business Planner: Data Is Deleted from Field in Wizard Interview

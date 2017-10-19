@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129082: Cannot Access Shared or Password-Protected Resource"
-permalink: kb/129/Q129082/
+permalink: /kb/129/Q129082/
 ---
 
 ## Q129082: Cannot Access Shared or Password-Protected Resource

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68680: Flight Simulator: SubLOGIC Disk Not Loading Automatically"
-permalink: kb/068/Q68680/
+permalink: /kb/068/Q68680/
 ---
 
 ## Q68680: Flight Simulator: SubLOGIC Disk Not Loading Automatically

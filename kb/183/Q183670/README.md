@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183670: XADM: Setup Fails with DS_E_INSUFFICIENT_ACCESS_RIGHTS"
-permalink: kb/183/Q183670/
+permalink: /kb/183/Q183670/
 ---
 
 ## Q183670: XADM: Setup Fails with DS_E_INSUFFICIENT_ACCESS_RIGHTS

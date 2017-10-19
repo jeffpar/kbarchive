@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120756: WINS Manager: Static Mapping Expiration Dates are 1/18/38"
-permalink: kb/120/Q120756/
+permalink: /kb/120/Q120756/
 ---
 
 ## Q120756: WINS Manager: Static Mapping Expiration Dates are 1/18/38

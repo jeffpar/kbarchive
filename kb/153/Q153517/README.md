@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153517: PGC Does Not Look For Current Connections"
-permalink: kb/153/Q153517/
+permalink: /kb/153/Q153517/
 ---
 
 ## Q153517: PGC Does Not Look For Current Connections

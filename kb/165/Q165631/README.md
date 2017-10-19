@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165631: ODE97: Creating Profiles for Custom Application in Setup Wizard"
-permalink: kb/165/Q165631/
+permalink: /kb/165/Q165631/
 ---
 
 ## Q165631: ODE97: Creating Profiles for Custom Application in Setup Wizard

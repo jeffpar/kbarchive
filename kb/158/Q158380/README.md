@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158380: Application Stops Responding after Logging Off"
-permalink: kb/158/Q158380/
+permalink: /kb/158/Q158380/
 ---
 
 ## Q158380: Application Stops Responding after Logging Off

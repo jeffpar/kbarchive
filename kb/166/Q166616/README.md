@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166616: XFOR: IMS Can Accept RFC821 Addresses Containing an Equal Sign"
-permalink: kb/166/Q166616/
+permalink: /kb/166/Q166616/
 ---
 
 ## Q166616: XFOR: IMS Can Accept RFC821 Addresses Containing an Equal Sign

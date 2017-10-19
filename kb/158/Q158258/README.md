@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158258: INFO: STL Sample for the reverse_copy Function"
-permalink: kb/158/Q158258/
+permalink: /kb/158/Q158258/
 ---
 
 ## Q158258: INFO: STL Sample for the reverse_copy Function

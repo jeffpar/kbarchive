@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90423: Print Manager Continuously Ejects Separator Pages"
-permalink: kb/090/Q90423/
+permalink: /kb/090/Q90423/
 ---
 
 ## Q90423: Print Manager Continuously Ejects Separator Pages

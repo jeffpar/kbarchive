@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185369: CART Precision Racing Update Available"
-permalink: kb/185/Q185369/
+permalink: /kb/185/Q185369/
 ---
 
 ## Q185369: CART Precision Racing Update Available

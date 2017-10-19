@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193961: XCON: One Recipient Dropped on Exchange DL on Incoming Message"
-permalink: kb/193/Q193961/
+permalink: /kb/193/Q193961/
 ---
 
 ## Q193961: XCON: One Recipient Dropped on Exchange DL on Incoming Message

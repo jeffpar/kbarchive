@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83361: Problems with Changing to EGA Display from Within Windows"
-permalink: kb/083/Q83361/
+permalink: /kb/083/Q83361/
 ---
 
 ## Q83361: Problems with Changing to EGA Display from Within Windows

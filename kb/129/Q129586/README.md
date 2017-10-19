@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129586: Baseball Guide 1995: Manual Installation Instructions"
-permalink: kb/129/Q129586/
+permalink: /kb/129/Q129586/
 ---
 
 ## Q129586: Baseball Guide 1995: Manual Installation Instructions

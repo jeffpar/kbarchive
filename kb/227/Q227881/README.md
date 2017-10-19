@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227881: Index Server Process Terminates with Japanese Wordbreaker"
-permalink: kb/227/Q227881/
+permalink: /kb/227/Q227881/
 ---
 
 ## Q227881: Index Server Process Terminates with Japanese Wordbreaker

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244824: XADM: Personal Distribution Lists Missing After Running MBClean"
-permalink: kb/244/Q244824/
+permalink: /kb/244/Q244824/
 ---
 
 ## Q244824: XADM: Personal Distribution Lists Missing After Running MBClean

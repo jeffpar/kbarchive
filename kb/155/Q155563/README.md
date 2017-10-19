@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155563: Toshiba T4900CT Laptop Computer Hangs at NTDETECT Screen"
-permalink: kb/155/Q155563/
+permalink: /kb/155/Q155563/
 ---
 
 ## Q155563: Toshiba T4900CT Laptop Computer Hangs at NTDETECT Screen

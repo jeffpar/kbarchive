@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165846: WinNT Err: The System Cannot Find the File Specified with RAS"
-permalink: kb/165/Q165846/
+permalink: /kb/165/Q165846/
 ---
 
 ## Q165846: WinNT Err: The System Cannot Find the File Specified with RAS

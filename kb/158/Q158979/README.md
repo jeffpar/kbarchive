@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158979: STOP 0x0000000A Running Netmon on Token Ring Networks"
-permalink: kb/158/Q158979/
+permalink: /kb/158/Q158979/
 ---
 
 ## Q158979: STOP 0x0000000A Running Netmon on Token Ring Networks

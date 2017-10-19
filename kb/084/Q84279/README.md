@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84279: Testing Communications from MS-DOS"
-permalink: kb/084/Q84279/
+permalink: /kb/084/Q84279/
 ---
 
 ## Q84279: Testing Communications from MS-DOS

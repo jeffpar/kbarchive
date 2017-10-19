@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163855: STOP 0x0000001e May Occur in Srv.sys w/ Down Level Client"
-permalink: kb/163/Q163855/
+permalink: /kb/163/Q163855/
 ---
 
 ## Q163855: STOP 0x0000001e May Occur in Srv.sys w/ Down Level Client

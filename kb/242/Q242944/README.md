@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242944: XCON: MTA Generates a Large Number of Event ID 2125s"
-permalink: kb/242/Q242944/
+permalink: /kb/242/Q242944/
 ---
 
 ## Q242944: XCON: MTA Generates a Large Number of Event ID 2125s

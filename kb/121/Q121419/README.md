@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121419: ALT+&lt;Hot Key&gt; Will Not Choose Push Button on Macintosh"
-permalink: kb/121/Q121419/
+permalink: /kb/121/Q121419/
 ---
 
 ## Q121419: ALT+&lt;Hot Key&gt; Will Not Choose Push Button on Macintosh

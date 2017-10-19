@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59009: Mac Wkst: Sleep Mode Using Mac Portable on a LocalTalk Network"
-permalink: kb/059/Q59009/
+permalink: /kb/059/Q59009/
 ---
 
 ## Q59009: Mac Wkst: Sleep Mode Using Mac Portable on a LocalTalk Network

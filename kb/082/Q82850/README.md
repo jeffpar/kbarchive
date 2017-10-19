@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82850: ToolBook Version 1.5 May Cause a GP Fault Under Windows 3.1"
-permalink: kb/082/Q82850/
+permalink: /kb/082/Q82850/
 ---
 
 ## Q82850: ToolBook Version 1.5 May Cause a GP Fault Under Windows 3.1

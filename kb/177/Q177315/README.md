@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177315: Err Msg: Your Server Has Not Responded..."
-permalink: kb/177/Q177315/
+permalink: /kb/177/Q177315/
 ---
 
 ## Q177315: Err Msg: Your Server Has Not Responded...

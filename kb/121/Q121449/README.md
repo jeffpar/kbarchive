@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121449: BUG: SQL Server: Certain Outer Joins Can Cause SQL_ERROR"
-permalink: kb/121/Q121449/
+permalink: /kb/121/Q121449/
 ---
 
 ## Q121449: BUG: SQL Server: Certain Outer Joins Can Cause SQL_ERROR

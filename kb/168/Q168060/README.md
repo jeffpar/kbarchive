@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168060: PRB: TreeView Control HitTest Method Returns Empty String"
-permalink: kb/168/Q168060/
+permalink: /kb/168/Q168060/
 ---
 
 ## Q168060: PRB: TreeView Control HitTest Method Returns Empty String

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157550: WD97: Headings Inside a Table Do Not Appear in the Document Map"
-permalink: kb/157/Q157550/
+permalink: /kb/157/Q157550/
 ---
 
 ## Q157550: WD97: Headings Inside a Table Do Not Appear in the Document Map

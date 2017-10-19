@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106481: Installing MS-DOS 5, 6, 6.2 Upgrade from a Network Server"
-permalink: kb/106/Q106481/
+permalink: /kb/106/Q106481/
 ---
 
 ## Q106481: Installing MS-DOS 5, 6, 6.2 Upgrade from a Network Server

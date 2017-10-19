@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119450: PC DirSync: Err Msg: Fatal 118 Transaction Limit Reached"
-permalink: kb/119/Q119450/
+permalink: /kb/119/Q119450/
 ---
 
 ## Q119450: PC DirSync: Err Msg: Fatal 118 Transaction Limit Reached

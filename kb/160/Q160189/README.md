@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160189: CSNW Cannot See More Than 32 Volumes Per Server"
-permalink: kb/160/Q160189/
+permalink: /kb/160/Q160189/
 ---
 
 ## Q160189: CSNW Cannot See More Than 32 Volumes Per Server

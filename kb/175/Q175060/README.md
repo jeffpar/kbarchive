@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175060: MSN Connection Manager Error Codes"
-permalink: kb/175/Q175060/
+permalink: /kb/175/Q175060/
 ---
 
 ## Q175060: MSN Connection Manager Error Codes

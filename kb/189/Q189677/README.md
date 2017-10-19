@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189677: HOWTO: Execute Multiple SQL Action Queries to Oracle Using RDO"
-permalink: kb/189/Q189677/
+permalink: /kb/189/Q189677/
 ---
 
 ## Q189677: HOWTO: Execute Multiple SQL Action Queries to Oracle Using RDO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173740: DOC: Diagrams Blacked Out in OLE-DB Docs Shipped with VC++"
-permalink: kb/173/Q173740/
+permalink: /kb/173/Q173740/
 ---
 
 ## Q173740: DOC: Diagrams Blacked Out in OLE-DB Docs Shipped with VC++

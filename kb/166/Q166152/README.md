@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166152: XFOR: Extended Chars in Attached Filenames Not Preserved on Mac"
-permalink: kb/166/Q166152/
+permalink: /kb/166/Q166152/
 ---
 
 ## Q166152: XFOR: Extended Chars in Attached Filenames Not Preserved on Mac

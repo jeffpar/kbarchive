@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153636: SMS Client Group Remains on the Windows 95 Task Bar"
-permalink: kb/153/Q153636/
+permalink: /kb/153/Q153636/
 ---
 
 ## Q153636: SMS Client Group Remains on the Windows 95 Task Bar

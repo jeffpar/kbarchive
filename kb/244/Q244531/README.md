@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244531: FIX:SQL DSN Revert from Standard Security to Integrated Security"
-permalink: kb/244/Q244531/
+permalink: /kb/244/Q244531/
 ---
 
 ## Q244531: FIX:SQL DSN Revert from Standard Security to Integrated Security

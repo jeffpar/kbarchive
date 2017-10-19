@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260527: Generating Notifications for an MSCS Resource Problem"
-permalink: kb/260/Q260527/
+permalink: /kb/260/Q260527/
 ---
 
 ## Q260527: Generating Notifications for an MSCS Resource Problem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113711: WSS Err Msg: The Device Is Being Used by Another Application"
-permalink: kb/113/Q113711/
+permalink: /kb/113/Q113711/
 ---
 
 ## Q113711: WSS Err Msg: The Device Is Being Used by Another Application

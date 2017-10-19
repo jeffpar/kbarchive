@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141641: Macintosh Dangerous Creatures: Problems Using Dual Monitors"
-permalink: kb/141/Q141641/
+permalink: /kb/141/Q141641/
 ---
 
 ## Q141641: Macintosh Dangerous Creatures: Problems Using Dual Monitors

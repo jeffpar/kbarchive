@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153261: INVDOS Fatal Error on Win95 Without TCP/IP Installed"
-permalink: kb/153/Q153261/
+permalink: /kb/153/Q153261/
 ---
 
 ## Q153261: INVDOS Fatal Error on Win95 Without TCP/IP Installed

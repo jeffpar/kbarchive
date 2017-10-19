@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95204: MS-DOS 6.x ANSI.SYS Turns Off Menu Colors"
-permalink: kb/095/Q95204/
+permalink: /kb/095/Q95204/
 ---
 
 ## Q95204: MS-DOS 6.x ANSI.SYS Turns Off Menu Colors

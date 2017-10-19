@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300422: HOWTO: Rebuild the Index of the MSDN Library"
-permalink: kb/300/Q300422/
+permalink: /kb/300/Q300422/
 ---
 
 ## Q300422: HOWTO: Rebuild the Index of the MSDN Library

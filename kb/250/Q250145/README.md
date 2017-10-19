@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250145: How To Stop SNA Server From Retrying BIND Attempts"
-permalink: kb/250/Q250145/
+permalink: /kb/250/Q250145/
 ---
 
 ## Q250145: How To Stop SNA Server From Retrying BIND Attempts

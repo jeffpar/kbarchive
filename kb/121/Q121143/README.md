@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121143: Flight Simulator Available Media"
-permalink: kb/121/Q121143/
+permalink: /kb/121/Q121143/
 ---
 
 ## Q121143: Flight Simulator Available Media

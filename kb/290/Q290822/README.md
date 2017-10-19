@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290822: Continuous RPC Error When an Out-of-Process MTX Ends"
-permalink: kb/290/Q290822/
+permalink: /kb/290/Q290822/
 ---
 
 ## Q290822: Continuous RPC Error When an Out-of-Process MTX Ends

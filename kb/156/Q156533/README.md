@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156533: INFO: STL Sample for the remove_copy Function"
-permalink: kb/156/Q156533/
+permalink: /kb/156/Q156533/
 ---
 
 ## Q156533: INFO: STL Sample for the remove_copy Function

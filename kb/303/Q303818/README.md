@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303818: Memory Leak in Rpcss.exe When Freeing ORPC Extends"
-permalink: kb/303/Q303818/
+permalink: /kb/303/Q303818/
 ---
 
 ## Q303818: Memory Leak in Rpcss.exe When Freeing ORPC Extends

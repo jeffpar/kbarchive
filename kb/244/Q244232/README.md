@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244232: HOWTO:Add Context Help (? Button) to Title Bar of CPropertySheet"
-permalink: kb/244/Q244232/
+permalink: /kb/244/Q244232/
 ---
 
 ## Q244232: HOWTO:Add Context Help (? Button) to Title Bar of CPropertySheet

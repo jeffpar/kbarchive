@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172713: Registry Entries for Winpopup.exe in Windows 95"
-permalink: kb/172/Q172713/
+permalink: /kb/172/Q172713/
 ---
 
 ## Q172713: Registry Entries for Winpopup.exe in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133153: Microsoft Backup for Windows 95 Questions and Answers"
-permalink: kb/133/Q133153/
+permalink: /kb/133/Q133153/
 ---
 
 ## Q133153: Microsoft Backup for Windows 95 Questions and Answers

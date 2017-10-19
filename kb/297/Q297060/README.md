@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297060: HOWTO: Load a User Profile into the Registry with Visual Basic"
-permalink: kb/297/Q297060/
+permalink: /kb/297/Q297060/
 ---
 
 ## Q297060: HOWTO: Load a User Profile into the Registry with Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175926: WD97: How to Select the Current Paragraph Using VBA Code"
-permalink: kb/175/Q175926/
+permalink: /kb/175/Q175926/
 ---
 
 ## Q175926: WD97: How to Select the Current Paragraph Using VBA Code

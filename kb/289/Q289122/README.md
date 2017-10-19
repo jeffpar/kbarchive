@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289122: XADM: How Mailbox Manager Calculates the Age of a Message"
-permalink: kb/289/Q289122/
+permalink: /kb/289/Q289122/
 ---
 
 ## Q289122: XADM: How Mailbox Manager Calculates the Age of a Message

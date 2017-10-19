@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175665: No Repair Option Offered Using Small Business Server Boot Disks"
-permalink: kb/175/Q175665/
+permalink: /kb/175/Q175665/
 ---
 
 ## Q175665: No Repair Option Offered Using Small Business Server Boot Disks

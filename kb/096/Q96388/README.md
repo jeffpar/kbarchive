@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96388: Uninstalling MS-DOS on an XtraDrive Compressed Drive"
-permalink: kb/096/Q96388/
+permalink: /kb/096/Q96388/
 ---
 
 ## Q96388: Uninstalling MS-DOS on an XtraDrive Compressed Drive

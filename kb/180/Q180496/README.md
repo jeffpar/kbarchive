@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180496: BUG: Lines Drawn on Form Disappear After Menu Covers Them"
-permalink: kb/180/Q180496/
+permalink: /kb/180/Q180496/
 ---
 
 ## Q180496: BUG: Lines Drawn on Form Disappear After Menu Covers Them

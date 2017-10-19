@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173939: How to Identify User Who Changed Administrator Password"
-permalink: kb/173/Q173939/
+permalink: /kb/173/Q173939/
 ---
 
 ## Q173939: How to Identify User Who Changed Administrator Password

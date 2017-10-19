@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171699: Error Message: Active Content Is Causing a Sharing Violation"
-permalink: kb/171/Q171699/
+permalink: /kb/171/Q171699/
 ---
 
 ## Q171699: Error Message: Active Content Is Causing a Sharing Violation

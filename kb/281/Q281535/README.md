@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281535: PRB: Error Debugging Procedure with sql_variant Input Parameter"
-permalink: kb/281/Q281535/
+permalink: /kb/281/Q281535/
 ---
 
 ## Q281535: PRB: Error Debugging Procedure with sql_variant Input Parameter

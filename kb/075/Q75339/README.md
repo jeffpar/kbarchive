@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75339: HOWTO: Steps to Send a Document to a Printer"
-permalink: kb/075/Q75339/
+permalink: /kb/075/Q75339/
 ---
 
 ## Q75339: HOWTO: Steps to Send a Document to a Printer

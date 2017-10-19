@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256817: MapPoint 2001: Linked Data Is Not Mapped Properly"
-permalink: kb/256/Q256817/
+permalink: /kb/256/Q256817/
 ---
 
 ## Q256817: MapPoint 2001: Linked Data Is Not Mapped Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190973: PRB: IntelliSense Does Not Display Enumerated Elements"
-permalink: kb/190/Q190973/
+permalink: /kb/190/Q190973/
 ---
 
 ## Q190973: PRB: IntelliSense Does Not Display Enumerated Elements

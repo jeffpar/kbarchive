@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173520: Documentation Error in Migration Tool for NetWare"
-permalink: kb/173/Q173520/
+permalink: /kb/173/Q173520/
 ---
 
 ## Q173520: Documentation Error in Migration Tool for NetWare

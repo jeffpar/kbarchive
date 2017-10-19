@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154639: Printer Icon Not Updated After Changing Port Type"
-permalink: kb/154/Q154639/
+permalink: /kb/154/Q154639/
 ---
 
 ## Q154639: Printer Icon Not Updated After Changing Port Type

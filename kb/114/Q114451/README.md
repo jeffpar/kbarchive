@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114451: Windows Terminal Supports XModem-1K Protocol"
-permalink: kb/114/Q114451/
+permalink: /kb/114/Q114451/
 ---
 
 ## Q114451: Windows Terminal Supports XModem-1K Protocol

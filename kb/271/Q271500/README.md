@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271500: Golf 2001: Screen Saver Does Not Initialize When You Play Game"
-permalink: kb/271/Q271500/
+permalink: /kb/271/Q271500/
 ---
 
 ## Q271500: Golf 2001: Screen Saver Does Not Initialize When You Play Game

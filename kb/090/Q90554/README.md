@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90554: DoubleSpace Drives Not Viewable under Windows NT"
-permalink: kb/090/Q90554/
+permalink: /kb/090/Q90554/
 ---
 
 ## Q90554: DoubleSpace Drives Not Viewable under Windows NT

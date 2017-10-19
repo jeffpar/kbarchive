@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279009: Combat Flight Simulator 2 Err Msg: Font Name Isn't Found..."
-permalink: kb/279/Q279009/
+permalink: /kb/279/Q279009/
 ---
 
 ## Q279009: Combat Flight Simulator 2 Err Msg: Font Name Isn't Found...

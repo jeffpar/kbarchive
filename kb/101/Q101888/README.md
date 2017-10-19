@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101888: SETUP /E Removes Undelete Icon from Windows Program Manager"
-permalink: kb/101/Q101888/
+permalink: /kb/101/Q101888/
 ---
 
 ## Q101888: SETUP /E Removes Undelete Icon from Windows Program Manager

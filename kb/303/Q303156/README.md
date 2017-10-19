@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303156: XCON: RPC Error Messages 9318 and 9322 Are Logged"
-permalink: kb/303/Q303156/
+permalink: /kb/303/Q303156/
 ---
 
 ## Q303156: XCON: RPC Error Messages 9318 and 9322 Are Logged

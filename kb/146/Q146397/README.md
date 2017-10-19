@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146397: XCON: Large Number of Messages with Receipts Can Stay in MTA"
-permalink: kb/146/Q146397/
+permalink: /kb/146/Q146397/
 ---
 
 ## Q146397: XCON: Large Number of Messages with Receipts Can Stay in MTA

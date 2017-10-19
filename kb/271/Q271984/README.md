@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271984: XADM: Event ID 1101 Error 0x8004010f with Background Processing"
-permalink: kb/271/Q271984/
+permalink: /kb/271/Q271984/
 ---
 
 ## Q271984: XADM: Event ID 1101 Error 0x8004010f with Background Processing

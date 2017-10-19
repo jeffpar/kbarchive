@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82790: SYSTEM.INI's NetDMASize= Switch and NetBIOS"
-permalink: kb/082/Q82790/
+permalink: /kb/082/Q82790/
 ---
 
 ## Q82790: SYSTEM.INI's NetDMASize= Switch and NetBIOS

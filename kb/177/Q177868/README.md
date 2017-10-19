@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177868: SnmpMgrTrapListen API Returns ERROR_SERVICE_NOT_ACTIVE Error"
-permalink: kb/177/Q177868/
+permalink: /kb/177/Q177868/
 ---
 
 ## Q177868: SnmpMgrTrapListen API Returns ERROR_SERVICE_NOT_ACTIVE Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138053: XFOR: How to Stop Winmail.dat from Being Sent to Internet Users"
-permalink: kb/138/Q138053/
+permalink: /kb/138/Q138053/
 ---
 
 ## Q138053: XFOR: How to Stop Winmail.dat from Being Sent to Internet Users

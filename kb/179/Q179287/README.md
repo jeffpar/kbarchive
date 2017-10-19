@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179287: FIX: Insufficient Memory in Visual FoxPro on Fast Computers"
-permalink: kb/179/Q179287/
+permalink: /kb/179/Q179287/
 ---
 
 ## Q179287: FIX: Insufficient Memory in Visual FoxPro on Fast Computers

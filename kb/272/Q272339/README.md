@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272339: Plus Game Pack: Black/Blue Screen When You Minimize/Restore Game"
-permalink: kb/272/Q272339/
+permalink: /kb/272/Q272339/
 ---
 
 ## Q272339: Plus Game Pack: Black/Blue Screen When You Minimize/Restore Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134314: Container Classes Versus Control Classes"
-permalink: kb/134/Q134314/
+permalink: /kb/134/Q134314/
 ---
 
 ## Q134314: Container Classes Versus Control Classes

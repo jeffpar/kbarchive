@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111017: PRB: Multiple CEditViews on Document Don't Behave as Expected"
-permalink: kb/111/Q111017/
+permalink: /kb/111/Q111017/
 ---
 
 ## Q111017: PRB: Multiple CEditViews on Document Don't Behave as Expected

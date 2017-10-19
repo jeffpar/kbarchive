@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87906: Dsklayt2 Does Not Support Duplicate Filenames"
-permalink: kb/087/Q87906/
+permalink: /kb/087/Q87906/
 ---
 
 ## Q87906: Dsklayt2 Does Not Support Duplicate Filenames

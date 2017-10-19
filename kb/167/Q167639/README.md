@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167639: XFOR: MSMI Reports Warning 2597 About Un-installed Codepage"
-permalink: kb/167/Q167639/
+permalink: /kb/167/Q167639/
 ---
 
 ## Q167639: XFOR: MSMI Reports Warning 2597 About Un-installed Codepage

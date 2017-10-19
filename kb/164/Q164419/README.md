@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164419: Error Message: &quot;DirectXSetup failed(). -8&quot;"
-permalink: kb/164/Q164419/
+permalink: /kb/164/Q164419/
 ---
 
 ## Q164419: Error Message: &quot;DirectXSetup failed(). -8&quot;

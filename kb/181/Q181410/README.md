@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181410: XADM: Store Stops Responding with High CPU Usage for a Thread"
-permalink: kb/181/Q181410/
+permalink: /kb/181/Q181410/
 ---
 
 ## Q181410: XADM: Store Stops Responding with High CPU Usage for a Thread

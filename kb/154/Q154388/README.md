@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154388: Encarta 1996: How to Reinstall Without Losing Yearbook Updates"
-permalink: kb/154/Q154388/
+permalink: /kb/154/Q154388/
 ---
 
 ## Q154388: Encarta 1996: How to Reinstall Without Losing Yearbook Updates

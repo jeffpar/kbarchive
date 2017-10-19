@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94674: HPPCL5E: Memory Setting Goes Up to 130 MB"
-permalink: kb/094/Q94674/
+permalink: /kb/094/Q94674/
 ---
 
 ## Q94674: HPPCL5E: Memory Setting Goes Up to 130 MB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139670: Setup Does Not Detect Creative Labs Wave Blaster"
-permalink: kb/139/Q139670/
+permalink: /kb/139/Q139670/
 ---
 
 ## Q139670: Setup Does Not Detect Creative Labs Wave Blaster

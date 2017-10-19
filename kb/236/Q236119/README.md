@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236119: FIX: Optimization Causes Code Error In Conditional Statement"
-permalink: kb/236/Q236119/
+permalink: /kb/236/Q236119/
 ---
 
 ## Q236119: FIX: Optimization Causes Code Error In Conditional Statement

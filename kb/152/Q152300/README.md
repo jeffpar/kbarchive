@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152300: XADM: ExportObject in Command-Line Export Options File Only"
-permalink: kb/152/Q152300/
+permalink: /kb/152/Q152300/
 ---
 
 ## Q152300: XADM: ExportObject in Command-Line Export Options File Only

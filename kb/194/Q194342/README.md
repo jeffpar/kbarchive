@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194342: WINS Error: Denied the Replication Request"
-permalink: kb/194/Q194342/
+permalink: /kb/194/Q194342/
 ---
 
 ## Q194342: WINS Error: Denied the Replication Request

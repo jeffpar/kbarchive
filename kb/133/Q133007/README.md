@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133007: Flight Simulator 5.1: CD-ROM Add-Ons Readme.doc File Contents"
-permalink: kb/133/Q133007/
+permalink: /kb/133/Q133007/
 ---
 
 ## Q133007: Flight Simulator 5.1: CD-ROM Add-Ons Readme.doc File Contents

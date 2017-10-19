@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128831: FIX: CFile Exception: badSeek, OS error information = -1"
-permalink: kb/128/Q128831/
+permalink: /kb/128/Q128831/
 ---
 
 ## Q128831: FIX: CFile Exception: badSeek, OS error information = -1

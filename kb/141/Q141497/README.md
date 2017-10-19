@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141497: How to Use Device Manager to Check the Status of a Resource"
-permalink: kb/141/Q141497/
+permalink: /kb/141/Q141497/
 ---
 
 ## Q141497: How to Use Device Manager to Check the Status of a Resource

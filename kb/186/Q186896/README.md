@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186896: HOWTO: Use the ImageCombo Control with Visual Basic 6.0"
-permalink: kb/186/Q186896/
+permalink: /kb/186/Q186896/
 ---
 
 ## Q186896: HOWTO: Use the ImageCombo Control with Visual Basic 6.0

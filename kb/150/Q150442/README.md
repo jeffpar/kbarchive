@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150442: XCLN: Cancel After Adding Service, Installs But Not Configured"
-permalink: kb/150/Q150442/
+permalink: /kb/150/Q150442/
 ---
 
 ## Q150442: XCLN: Cancel After Adding Service, Installs But Not Configured

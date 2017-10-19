@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119322: Mac Multimedia: Can't Eject or Drag CD-ROM Icon to Trash"
-permalink: kb/119/Q119322/
+permalink: /kb/119/Q119322/
 ---
 
 ## Q119322: Mac Multimedia: Can't Eject or Drag CD-ROM Icon to Trash

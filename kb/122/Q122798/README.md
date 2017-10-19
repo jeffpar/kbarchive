@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122798: 16-Bit Graphic Applications Fail with Large Number of Fonts"
-permalink: kb/122/Q122798/
+permalink: /kb/122/Q122798/
 ---
 
 ## Q122798: 16-Bit Graphic Applications Fail with Large Number of Fonts

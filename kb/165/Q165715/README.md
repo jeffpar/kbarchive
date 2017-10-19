@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165715: WD97: Applying Single Border to Selected Text Sets All Borders"
-permalink: kb/165/Q165715/
+permalink: /kb/165/Q165715/
 ---
 
 ## Q165715: WD97: Applying Single Border to Selected Text Sets All Borders

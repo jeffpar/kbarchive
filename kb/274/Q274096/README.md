@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274096: Multimedia Err Msg: Exception 01h in Module &lt;Unknown&gt;"
-permalink: kb/274/Q274096/
+permalink: /kb/274/Q274096/
 ---
 
 ## Q274096: Multimedia Err Msg: Exception 01h in Module &lt;Unknown&gt;

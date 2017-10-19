@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200897: SMS: SMS 2.0 and Y2K Product Compliance Utility"
-permalink: kb/200/Q200897/
+permalink: /kb/200/Q200897/
 ---
 
 ## Q200897: SMS: SMS 2.0 and Y2K Product Compliance Utility

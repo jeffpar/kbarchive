@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111840: SMTP: Configuring the Gateway to Use Company Domain Names"
-permalink: kb/111/Q111840/
+permalink: /kb/111/Q111840/
 ---
 
 ## Q111840: SMTP: Configuring the Gateway to Use Company Domain Names

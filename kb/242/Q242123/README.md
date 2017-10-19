@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242123: Macintosh Clients Cannot See Server When PDC is Moved to New Net"
-permalink: kb/242/Q242123/
+permalink: /kb/242/Q242123/
 ---
 
 ## Q242123: Macintosh Clients Cannot See Server When PDC is Moved to New Net

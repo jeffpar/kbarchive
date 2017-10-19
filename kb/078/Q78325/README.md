@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78325: Ring Protection Under Windows 3.1"
-permalink: kb/078/Q78325/
+permalink: /kb/078/Q78325/
 ---
 
 ## Q78325: Ring Protection Under Windows 3.1

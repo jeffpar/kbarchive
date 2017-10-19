@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155662: Monster Truck Madness: Audio Troubleshooting"
-permalink: kb/155/Q155662/
+permalink: /kb/155/Q155662/
 ---
 
 ## Q155662: Monster Truck Madness: Audio Troubleshooting

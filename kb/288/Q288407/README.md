@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288407: SMS: DDR Is Not Processed If a Serial Number Is Not in Sync"
-permalink: kb/288/Q288407/
+permalink: /kb/288/Q288407/
 ---
 
 ## Q288407: SMS: DDR Is Not Processed If a Serial Number Is Not in Sync

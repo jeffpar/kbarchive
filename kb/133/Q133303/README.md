@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133303: WINFILE.EXE Application Error When Associating a Searched File"
-permalink: kb/133/Q133303/
+permalink: /kb/133/Q133303/
 ---
 
 ## Q133303: WINFILE.EXE Application Error When Associating a Searched File

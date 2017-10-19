@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189585: FIX: Invisible at Run Time ActiveX Control, Visible at Run Time"
-permalink: kb/189/Q189585/
+permalink: /kb/189/Q189585/
 ---
 
 ## Q189585: FIX: Invisible at Run Time ActiveX Control, Visible at Run Time

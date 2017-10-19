@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228900: SMS: How SMS 2.0 Network Discovery Sees Clients With Static IPs"
-permalink: kb/228/Q228900/
+permalink: /kb/228/Q228900/
 ---
 
 ## Q228900: SMS: How SMS 2.0 Network Discovery Sees Clients With Static IPs

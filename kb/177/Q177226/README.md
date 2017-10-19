@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177226: Memory Usage Increases When Querying Access 97 DB w/ ASP"
-permalink: kb/177/Q177226/
+permalink: /kb/177/Q177226/
 ---
 
 ## Q177226: Memory Usage Increases When Querying Access 97 DB w/ ASP

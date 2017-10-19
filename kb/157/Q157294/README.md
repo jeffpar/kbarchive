@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157294: WD97: Some Commands Not Available When Control Object Selected"
-permalink: kb/157/Q157294/
+permalink: /kb/157/Q157294/
 ---
 
 ## Q157294: WD97: Some Commands Not Available When Control Object Selected

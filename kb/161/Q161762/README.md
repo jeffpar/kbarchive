@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161762: PRB: NumberFormat Property of DBGrid Does Not Change Format"
-permalink: kb/161/Q161762/
+permalink: /kb/161/Q161762/
 ---
 
 ## Q161762: PRB: NumberFormat Property of DBGrid Does Not Change Format

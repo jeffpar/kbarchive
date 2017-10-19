@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22320: INFO: NAN &amp; INF Internal Representation Specific to Coprocessor"
-permalink: kb/022/Q22320/
+permalink: /kb/022/Q22320/
 ---
 
 ## Q22320: INFO: NAN &amp; INF Internal Representation Specific to Coprocessor

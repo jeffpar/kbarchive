@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247561: How to Edit Index Server Noise-Word Lists"
-permalink: kb/247/Q247561/
+permalink: /kb/247/Q247561/
 ---
 
 ## Q247561: How to Edit Index Server Noise-Word Lists

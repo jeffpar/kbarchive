@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162090: PPT: Sample Code to Reset Action Settings"
-permalink: kb/162/Q162090/
+permalink: /kb/162/Q162090/
 ---
 
 ## Q162090: PPT: Sample Code to Reset Action Settings

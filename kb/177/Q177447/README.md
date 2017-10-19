@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177447: Cannot Change Printer Ports on a Printer"
-permalink: kb/177/Q177447/
+permalink: /kb/177/Q177447/
 ---
 
 ## Q177447: Cannot Change Printer Ports on a Printer

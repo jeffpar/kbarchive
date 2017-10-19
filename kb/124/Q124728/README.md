@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124728: INF: Using an NDIS 2.0 Driver with Windows for Workgroups 3.11"
-permalink: kb/124/Q124728/
+permalink: /kb/124/Q124728/
 ---
 
 ## Q124728: INF: Using an NDIS 2.0 Driver with Windows for Workgroups 3.11

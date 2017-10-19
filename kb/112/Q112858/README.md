@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112858: RAM Drive Icon in Anti-Virus Is Incorrect with DoubleSpace"
-permalink: kb/112/Q112858/
+permalink: /kb/112/Q112858/
 ---
 
 ## Q112858: RAM Drive Icon in Anti-Virus Is Incorrect with DoubleSpace

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214911: SMSINST: Change Window Hides Buttons When Using Repackage"
-permalink: kb/214/Q214911/
+permalink: /kb/214/Q214911/
 ---
 
 ## Q214911: SMSINST: Change Window Hides Buttons When Using Repackage

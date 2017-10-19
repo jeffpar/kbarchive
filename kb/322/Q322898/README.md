@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322898: Advanced Local Maps Use a Different Name Format in SFU 3.0"
-permalink: kb/322/Q322898/
+permalink: /kb/322/Q322898/
 ---
 
 ## Q322898: Advanced Local Maps Use a Different Name Format in SFU 3.0

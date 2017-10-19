@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232213: How to Use the Dhcpcmd.exe Tool Included with Support Tools"
-permalink: kb/232/Q232213/
+permalink: /kb/232/Q232213/
 ---
 
 ## Q232213: How to Use the Dhcpcmd.exe Tool Included with Support Tools

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149835: XADM: User With Admin Rights Cannot Edit Custom Attributes"
-permalink: kb/149/Q149835/
+permalink: /kb/149/Q149835/
 ---
 
 ## Q149835: XADM: User With Admin Rights Cannot Edit Custom Attributes

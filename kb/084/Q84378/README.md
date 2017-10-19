@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84378: Printer Setup Limitations with Windows 3.1 Automated Setup"
-permalink: kb/084/Q84378/
+permalink: /kb/084/Q84378/
 ---
 
 ## Q84378: Printer Setup Limitations with Windows 3.1 Automated Setup

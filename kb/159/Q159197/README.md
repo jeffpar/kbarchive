@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159197: XADM: Controlling Folder Index Aging"
-permalink: kb/159/Q159197/
+permalink: /kb/159/Q159197/
 ---
 
 ## Q159197: XADM: Controlling Folder Index Aging

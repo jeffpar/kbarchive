@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170324: CMD PCI-0646U Accessed in Compatibility Mode in OSR2"
-permalink: kb/170/Q170324/
+permalink: /kb/170/Q170324/
 ---
 
 ## Q170324: CMD PCI-0646U Accessed in Compatibility Mode in OSR2

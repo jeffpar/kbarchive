@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302428: Uninstalling MSN Explorer 6.0 After Upgrade From Windows 9x to W"
-permalink: kb/302/Q302428/
+permalink: /kb/302/Q302428/
 ---
 
 ## Q302428: Uninstalling MSN Explorer 6.0 After Upgrade From Windows 9x to W

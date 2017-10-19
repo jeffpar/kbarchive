@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134993: Stretch And Skew Dialog Box Does Not Accept Negative Values"
-permalink: kb/134/Q134993/
+permalink: /kb/134/Q134993/
 ---
 
 ## Q134993: Stretch And Skew Dialog Box Does Not Accept Negative Values

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146170: XCLN: Err Msg: Schedule+ Cannot Find or Run Application"
-permalink: kb/146/Q146170/
+permalink: /kb/146/Q146170/
 ---
 
 ## Q146170: XCLN: Err Msg: Schedule+ Cannot Find or Run Application

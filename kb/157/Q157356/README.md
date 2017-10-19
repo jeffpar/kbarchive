@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157356: WD97: Online Layout View Does Not Show Negative Indent"
-permalink: kb/157/Q157356/
+permalink: /kb/157/Q157356/
 ---
 
 ## Q157356: WD97: Online Layout View Does Not Show Negative Indent

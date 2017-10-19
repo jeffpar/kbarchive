@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126887: PC MAPI: Accessing Attachments Using the Function MAPIReadMail"
-permalink: kb/126/Q126887/
+permalink: /kb/126/Q126887/
 ---
 
 ## Q126887: PC MAPI: Accessing Attachments Using the Function MAPIReadMail

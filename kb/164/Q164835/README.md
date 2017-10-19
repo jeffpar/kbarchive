@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164835: XCON: RETIX Message Does Not Trigger Read Receipt"
-permalink: kb/164/Q164835/
+permalink: /kb/164/Q164835/
 ---
 
 ## Q164835: XCON: RETIX Message Does Not Trigger Read Receipt

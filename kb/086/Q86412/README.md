@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86412: BUG: MDI More Windows Dialog Activates Wrong Child"
-permalink: kb/086/Q86412/
+permalink: /kb/086/Q86412/
 ---
 
 ## Q86412: BUG: MDI More Windows Dialog Activates Wrong Child

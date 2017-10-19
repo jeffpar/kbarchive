@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60336: PRB: fscanf() Fails to Read Consecutive Lines"
-permalink: kb/060/Q60336/
+permalink: /kb/060/Q60336/
 ---
 
 ## Q60336: PRB: fscanf() Fails to Read Consecutive Lines

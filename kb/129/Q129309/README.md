@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129309: PRB: Can't Paste OLE Control into an OLE Control on a Form"
-permalink: kb/129/Q129309/
+permalink: /kb/129/Q129309/
 ---
 
 ## Q129309: PRB: Can't Paste OLE Control into an OLE Control on a Form

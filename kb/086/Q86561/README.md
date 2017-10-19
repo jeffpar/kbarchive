@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86561: Windows Screen Saver Password May Not Be Recognized"
-permalink: kb/086/Q86561/
+permalink: /kb/086/Q86561/
 ---
 
 ## Q86561: Windows Screen Saver Password May Not Be Recognized

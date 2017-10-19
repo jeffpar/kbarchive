@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259654: XCLN: Outlook 2000 Constantly Prompts Regarding Offline Rules"
-permalink: kb/259/Q259654/
+permalink: /kb/259/Q259654/
 ---
 
 ## Q259654: XCLN: Outlook 2000 Constantly Prompts Regarding Offline Rules

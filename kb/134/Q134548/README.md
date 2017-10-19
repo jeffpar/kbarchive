@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134548: Pressing CTRL+ESC During Logon Opens the Tasks Dialog Box"
-permalink: kb/134/Q134548/
+permalink: /kb/134/Q134548/
 ---
 
 ## Q134548: Pressing CTRL+ESC During Logon Opens the Tasks Dialog Box

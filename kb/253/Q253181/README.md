@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253181: Multivalued Attributes Pushed Incorrectly to Other LDAP Servers"
-permalink: kb/253/Q253181/
+permalink: /kb/253/Q253181/
 ---
 
 ## Q253181: Multivalued Attributes Pushed Incorrectly to Other LDAP Servers

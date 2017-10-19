@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140760: PRB: Invalid Key Length Error When Indexing a Cursor File"
-permalink: kb/140/Q140760/
+permalink: /kb/140/Q140760/
 ---
 
 ## Q140760: PRB: Invalid Key Length Error When Indexing a Cursor File

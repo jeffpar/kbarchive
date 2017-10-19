@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201583: BUG: Toolbar Does Not Resize to Fit the Caption of a Button"
-permalink: kb/201/Q201583/
+permalink: /kb/201/Q201583/
 ---
 
 ## Q201583: BUG: Toolbar Does Not Resize to Fit the Caption of a Button

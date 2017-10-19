@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135626: HOWTO: How to Select Field on Entry on a Form in Visual FoxPro"
-permalink: kb/135/Q135626/
+permalink: /kb/135/Q135626/
 ---
 
 ## Q135626: HOWTO: How to Select Field on Entry on a Form in Visual FoxPro

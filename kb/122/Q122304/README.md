@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122304: FIX: /YX and /Yc Incorrectly Allowed in Project Settings"
-permalink: kb/122/Q122304/
+permalink: /kb/122/Q122304/
 ---
 
 ## Q122304: FIX: /YX and /Yc Incorrectly Allowed in Project Settings

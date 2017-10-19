@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173616: Update.exe Does Not Copy All Windows 3.x Client Files"
-permalink: kb/173/Q173616/
+permalink: /kb/173/Q173616/
 ---
 
 ## Q173616: Update.exe Does Not Copy All Windows 3.x Client Files

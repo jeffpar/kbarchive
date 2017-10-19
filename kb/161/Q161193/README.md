@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161193: LU6.2 Session May End Abnormally over Twinax Link"
-permalink: kb/161/Q161193/
+permalink: /kb/161/Q161193/
 ---
 
 ## Q161193: LU6.2 Session May End Abnormally over Twinax Link

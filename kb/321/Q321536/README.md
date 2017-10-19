@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321536: FIX: Applications Using OLE DB Provider for VSAM Stop Responding"
-permalink: kb/321/Q321536/
+permalink: /kb/321/Q321536/
 ---
 
 ## Q321536: FIX: Applications Using OLE DB Provider for VSAM Stop Responding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114351: Error Message When Starting Resource Kit PVIEWER.EXE"
-permalink: kb/114/Q114351/
+permalink: /kb/114/Q114351/
 ---
 
 ## Q114351: Error Message When Starting Resource Kit PVIEWER.EXE

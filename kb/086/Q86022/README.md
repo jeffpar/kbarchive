@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86022: Windows Err Msg: You Cannot Run This Application in a Window"
-permalink: kb/086/Q86022/
+permalink: /kb/086/Q86022/
 ---
 
 ## Q86022: Windows Err Msg: You Cannot Run This Application in a Window

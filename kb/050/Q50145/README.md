@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50145: Mac Form: Graphic Field Does Not Appear in Custom Form"
-permalink: kb/050/Q50145/
+permalink: /kb/050/Q50145/
 ---
 
 ## Q50145: Mac Form: Graphic Field Does Not Appear in Custom Form

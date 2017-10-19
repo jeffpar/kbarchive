@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67879: INFO: scanf() Format Specifications and Syntax"
-permalink: kb/067/Q67879/
+permalink: /kb/067/Q67879/
 ---
 
 ## Q67879: INFO: scanf() Format Specifications and Syntax

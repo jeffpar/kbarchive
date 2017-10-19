@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165947: Event 2007 Error When Printing to an LPR Port"
-permalink: kb/165/Q165947/
+permalink: /kb/165/Q165947/
 ---
 
 ## Q165947: Event 2007 Error When Printing to an LPR Port

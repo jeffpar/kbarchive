@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177431: FIX: C2065: Undeclared Identifier Creating a STL Function Object"
-permalink: kb/177/Q177431/
+permalink: /kb/177/Q177431/
 ---
 
 ## Q177431: FIX: C2065: Undeclared Identifier Creating a STL Function Object

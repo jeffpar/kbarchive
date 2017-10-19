@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176879: INFO: Visual Modeler Ver. 1.1 Available at Microsoft Web Site"
-permalink: kb/176/Q176879/
+permalink: /kb/176/Q176879/
 ---
 
 ## Q176879: INFO: Visual Modeler Ver. 1.1 Available at Microsoft Web Site

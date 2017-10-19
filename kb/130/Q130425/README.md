@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130425: Weekly - 5 Day Print Layout Always Begins on Monday"
-permalink: kb/130/Q130425/
+permalink: /kb/130/Q130425/
 ---
 
 ## Q130425: Weekly - 5 Day Print Layout Always Begins on Monday

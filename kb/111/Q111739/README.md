@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111739: Strange Errors Occur with Resize on DoubleSpace CVF"
-permalink: kb/111/Q111739/
+permalink: /kb/111/Q111739/
 ---
 
 ## Q111739: Strange Errors Occur with Resize on DoubleSpace CVF

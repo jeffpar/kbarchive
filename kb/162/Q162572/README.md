@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162572: ODE97: Reinstalling Run-Time Application Causes Setup Error"
-permalink: kb/162/Q162572/
+permalink: /kb/162/Q162572/
 ---
 
 ## Q162572: ODE97: Reinstalling Run-Time Application Causes Setup Error

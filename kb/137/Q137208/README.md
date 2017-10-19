@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137208: Public Folders with Unread Messages Not Bold"
-permalink: kb/137/Q137208/
+permalink: /kb/137/Q137208/
 ---
 
 ## Q137208: Public Folders with Unread Messages Not Bold

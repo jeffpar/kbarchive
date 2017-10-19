@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140249: PC WRmt: Err Msg: Address Is No Longer Valid..."
-permalink: kb/140/Q140249/
+permalink: /kb/140/Q140249/
 ---
 
 ## Q140249: PC WRmt: Err Msg: Address Is No Longer Valid...

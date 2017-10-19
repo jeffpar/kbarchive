@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93636: ERR: &quot;Incorrect Results&quot; When Using SET EXACT in FoxBASE+/Mac"
-permalink: kb/093/Q93636/
+permalink: /kb/093/Q93636/
 ---
 
 ## Q93636: ERR: &quot;Incorrect Results&quot; When Using SET EXACT in FoxBASE+/Mac

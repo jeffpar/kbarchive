@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135771: SMS Setup User Interface Shows Duplicate Options"
-permalink: kb/135/Q135771/
+permalink: /kb/135/Q135771/
 ---
 
 ## Q135771: SMS Setup User Interface Shows Duplicate Options

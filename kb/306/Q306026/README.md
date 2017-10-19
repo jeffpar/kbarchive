@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306026: Lsass.exe Uses Excessive CPU Time After SFU User Password Change"
-permalink: kb/306/Q306026/
+permalink: /kb/306/Q306026/
 ---
 
 ## Q306026: Lsass.exe Uses Excessive CPU Time After SFU User Password Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245523: SMS: Backlog of .ct2 Files on Central Site in Large Hierarchy"
-permalink: kb/245/Q245523/
+permalink: /kb/245/Q245523/
 ---
 
 ## Q245523: SMS: Backlog of .ct2 Files on Central Site in Large Hierarchy

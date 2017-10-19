@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195273: FIX: Fatal Exception C0000005 When Removing Form from a Formset"
-permalink: kb/195/Q195273/
+permalink: /kb/195/Q195273/
 ---
 
 ## Q195273: FIX: Fatal Exception C0000005 When Removing Form from a Formset

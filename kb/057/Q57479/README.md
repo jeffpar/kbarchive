@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57479: INFO: fmod() Results Unexpected Due to Binary Representation"
-permalink: kb/057/Q57479/
+permalink: /kb/057/Q57479/
 ---
 
 ## Q57479: INFO: fmod() Results Unexpected Due to Binary Representation

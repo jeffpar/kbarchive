@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155002: Description of DirectX 2.0"
-permalink: kb/155/Q155002/
+permalink: /kb/155/Q155002/
 ---
 
 ## Q155002: Description of DirectX 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117321: PRB: CodeView Hangs When Debugging DOS-Extended Application"
-permalink: kb/117/Q117321/
+permalink: /kb/117/Q117321/
 ---
 
 ## Q117321: PRB: CodeView Hangs When Debugging DOS-Extended Application

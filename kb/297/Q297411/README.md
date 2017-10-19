@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297411: Resolving the Duplicate Tile issue with MSN Explorer (MSN Versio"
-permalink: kb/297/Q297411/
+permalink: /kb/297/Q297411/
 ---
 
 ## Q297411: Resolving the Duplicate Tile issue with MSN Explorer (MSN Versio

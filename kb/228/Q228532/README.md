@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228532: SMS: French Conv20.exe Fails to Convert 1.2 Databases Char Set"
-permalink: kb/228/Q228532/
+permalink: /kb/228/Q228532/
 ---
 
 ## Q228532: SMS: French Conv20.exe Fails to Convert 1.2 Databases Char Set

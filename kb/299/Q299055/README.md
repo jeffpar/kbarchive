@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299055: OFFXP: Help Does Not Work After MapPoint Is Uninstalled"
-permalink: kb/299/Q299055/
+permalink: /kb/299/Q299055/
 ---
 
 ## Q299055: OFFXP: Help Does Not Work After MapPoint Is Uninstalled

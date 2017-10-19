@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82916: PC Win: Not Sorting Correctly Based on Subject Field"
-permalink: kb/082/Q82916/
+permalink: /kb/082/Q82916/
 ---
 
 ## Q82916: PC Win: Not Sorting Correctly Based on Subject Field

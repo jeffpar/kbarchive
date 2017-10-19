@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136944: PRB: Cannot Ignore Activate Event When It Contains an Error"
-permalink: kb/136/Q136944/
+permalink: /kb/136/Q136944/
 ---
 
 ## Q136944: PRB: Cannot Ignore Activate Event When It Contains an Error

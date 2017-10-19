@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280139: TN3270 Print Session Connection Fails on Non-default Port"
-permalink: kb/280/Q280139/
+permalink: /kb/280/Q280139/
 ---
 
 ## Q280139: TN3270 Print Session Connection Fails on Non-default Port

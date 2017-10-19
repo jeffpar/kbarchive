@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104361: PC Forms: Attach Defaults to WINDOWS&#92;SYSTEM Directory"
-permalink: kb/104/Q104361/
+permalink: /kb/104/Q104361/
 ---
 
 ## Q104361: PC Forms: Attach Defaults to WINDOWS&#92;SYSTEM Directory

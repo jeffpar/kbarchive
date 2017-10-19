@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106104: Cannot Create Icons for Executables in Long Directories"
-permalink: kb/106/Q106104/
+permalink: /kb/106/Q106104/
 ---
 
 ## Q106104: Cannot Create Icons for Executables in Long Directories

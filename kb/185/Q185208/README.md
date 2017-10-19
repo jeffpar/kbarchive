@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185208: Compaq CPM v1.10 Causes 100% Processor Usage in SNMP"
-permalink: kb/185/Q185208/
+permalink: /kb/185/Q185208/
 ---
 
 ## Q185208: Compaq CPM v1.10 Causes 100% Processor Usage in SNMP

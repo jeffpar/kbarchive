@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99237: QuicKeys Intercepts Keystrokes Before Applications with Focus"
-permalink: kb/099/Q99237/
+permalink: /kb/099/Q99237/
 ---
 
 ## Q99237: QuicKeys Intercepts Keystrokes Before Applications with Focus

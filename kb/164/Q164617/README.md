@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164617: WD97: Inserted Table Automatically Formatted with Grid Border"
-permalink: kb/164/Q164617/
+permalink: /kb/164/Q164617/
 ---
 
 ## Q164617: WD97: Inserted Table Automatically Formatted with Grid Border

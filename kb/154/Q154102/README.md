@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154102: SFM: Macintosh Client Cannot Connect to Windows NT Server"
-permalink: kb/154/Q154102/
+permalink: /kb/154/Q154102/
 ---
 
 ## Q154102: SFM: Macintosh Client Cannot Connect to Windows NT Server

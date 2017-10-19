@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90192: DataProducts LZR 650 Printer Problem with Windows"
-permalink: kb/090/Q90192/
+permalink: /kb/090/Q90192/
 ---
 
 ## Q90192: DataProducts LZR 650 Printer Problem with Windows

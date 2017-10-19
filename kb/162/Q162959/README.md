@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162959: PPT: Sample Code to Get PowerPoint's Build Number"
-permalink: kb/162/Q162959/
+permalink: /kb/162/Q162959/
 ---
 
 ## Q162959: PPT: Sample Code to Get PowerPoint's Build Number

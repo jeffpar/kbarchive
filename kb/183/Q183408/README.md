@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183408: XADM: Err Msg: MAPI_E_NOT_FOUND When Running LoadSim"
-permalink: kb/183/Q183408/
+permalink: /kb/183/Q183408/
 ---
 
 ## Q183408: XADM: Err Msg: MAPI_E_NOT_FOUND When Running LoadSim

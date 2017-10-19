@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309703: Bicycle Games: Disappearing or Flickering Mouse Pointer"
-permalink: kb/309/Q309703/
+permalink: /kb/309/Q309703/
 ---
 
 ## Q309703: Bicycle Games: Disappearing or Flickering Mouse Pointer

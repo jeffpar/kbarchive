@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66885: ASD: All Dynamic Scenery Objects Can Fly"
-permalink: kb/066/Q66885/
+permalink: /kb/066/Q66885/
 ---
 
 ## Q66885: ASD: All Dynamic Scenery Objects Can Fly

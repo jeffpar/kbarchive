@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126448: Err Msg: Not Enough Extended Memory Available to Start..."
-permalink: kb/126/Q126448/
+permalink: /kb/126/Q126448/
 ---
 
 ## Q126448: Err Msg: Not Enough Extended Memory Available to Start...

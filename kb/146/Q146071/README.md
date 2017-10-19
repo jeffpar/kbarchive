@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146071: Asterisk for Private Appt. Shows in Monthly and Not Daily View"
-permalink: kb/146/Q146071/
+permalink: /kb/146/Q146071/
 ---
 
 ## Q146071: Asterisk for Private Appt. Shows in Monthly and Not Daily View

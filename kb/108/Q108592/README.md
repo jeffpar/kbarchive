@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108592: Flight Simulator: Lockup Using Mouse and SoundBlaster on IRQ2"
-permalink: kb/108/Q108592/
+permalink: /kb/108/Q108592/
 ---
 
 ## Q108592: Flight Simulator: Lockup Using Mouse and SoundBlaster on IRQ2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250299: Age of Empires II: Game Quits After You Start a New Game"
-permalink: kb/250/Q250299/
+permalink: /kb/250/Q250299/
 ---
 
 ## Q250299: Age of Empires II: Game Quits After You Start a New Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110921: How to Debug .PLB and .FLL Source Code"
-permalink: kb/110/Q110921/
+permalink: /kb/110/Q110921/
 ---
 
 ## Q110921: How to Debug .PLB and .FLL Source Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256164: SMS: IME Conversion Hotkey May Not Function Correctly"
-permalink: kb/256/Q256164/
+permalink: /kb/256/Q256164/
 ---
 
 ## Q256164: SMS: IME Conversion Hotkey May Not Function Correctly

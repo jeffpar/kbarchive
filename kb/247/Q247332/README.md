@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247332: IBM PCOM 5250 Fails after a 3270/FMI Session Is Closed"
-permalink: kb/247/Q247332/
+permalink: /kb/247/Q247332/
 ---
 
 ## Q247332: IBM PCOM 5250 Fails after a 3270/FMI Session Is Closed

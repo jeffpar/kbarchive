@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142469: BUG: DBCombo Dropdown List Detaches While Dragging Parent Form"
-permalink: kb/142/Q142469/
+permalink: /kb/142/Q142469/
 ---
 
 ## Q142469: BUG: DBCombo Dropdown List Detaches While Dragging Parent Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299912: FIX: Verify Connection With Access DB Changes Folder"
-permalink: kb/299/Q299912/
+permalink: /kb/299/Q299912/
 ---
 
 ## Q299912: FIX: Verify Connection With Access DB Changes Folder

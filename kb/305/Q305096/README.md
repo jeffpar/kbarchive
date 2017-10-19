@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305096: SMS: User Unable to Browse Criteria Values Without Class Rights"
-permalink: kb/305/Q305096/
+permalink: /kb/305/Q305096/
 ---
 
 ## Q305096: SMS: User Unable to Browse Criteria Values Without Class Rights

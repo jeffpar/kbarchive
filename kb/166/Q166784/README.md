@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166784: WD97: Error Message: &quot;Can't Exit Design Mode...&quot; After Adding Co"
-permalink: kb/166/Q166784/
+permalink: /kb/166/Q166784/
 ---
 
 ## Q166784: WD97: Error Message: &quot;Can't Exit Design Mode...&quot; After Adding Co

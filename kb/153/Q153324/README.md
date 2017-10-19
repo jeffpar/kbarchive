@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153324: BUG: MSDEV May Leave Orphaned Threads in the Memory After Exit"
-permalink: kb/153/Q153324/
+permalink: /kb/153/Q153324/
 ---
 
 ## Q153324: BUG: MSDEV May Leave Orphaned Threads in the Memory After Exit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64759: INFO: wsprintf() %s Parameters Not Cast to LPSTR"
-permalink: kb/064/Q64759/
+permalink: /kb/064/Q64759/
 ---
 
 ## Q64759: INFO: wsprintf() %s Parameters Not Cast to LPSTR

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148625: BUG: NAMELIST Output Incorrect with Renamed USE Variables"
-permalink: kb/148/Q148625/
+permalink: /kb/148/Q148625/
 ---
 
 ## Q148625: BUG: NAMELIST Output Incorrect with Renamed USE Variables

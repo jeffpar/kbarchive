@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155632: NWCONV.EXE Does Not Allow Conversion to Standalone Server"
-permalink: kb/155/Q155632/
+permalink: /kb/155/Q155632/
 ---
 
 ## Q155632: NWCONV.EXE Does Not Allow Conversion to Standalone Server

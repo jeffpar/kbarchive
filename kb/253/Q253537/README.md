@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253537: How to Install the Samples for Windows 2000 Indexing Service"
-permalink: kb/253/Q253537/
+permalink: /kb/253/Q253537/
 ---
 
 ## Q253537: How to Install the Samples for Windows 2000 Indexing Service

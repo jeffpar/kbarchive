@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112272: PC DOS: Monitor and Operator TSRs Only Use POL and PAL"
-permalink: kb/112/Q112272/
+permalink: /kb/112/Q112272/
 ---
 
 ## Q112272: PC DOS: Monitor and Operator TSRs Only Use POL and PAL

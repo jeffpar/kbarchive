@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132740: Incorrect Default Renewal Interval for WINS Server"
-permalink: kb/132/Q132740/
+permalink: /kb/132/Q132740/
 ---
 
 ## Q132740: Incorrect Default Renewal Interval for WINS Server

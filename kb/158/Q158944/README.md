@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158944: Text May Be Partially Displayed Using Cirrus Logic Driver"
-permalink: kb/158/Q158944/
+permalink: /kb/158/Q158944/
 ---
 
 ## Q158944: Text May Be Partially Displayed Using Cirrus Logic Driver

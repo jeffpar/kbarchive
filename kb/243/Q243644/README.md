@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243644: XADM: Cannot Synchronize Clock on Exchange Server"
-permalink: kb/243/Q243644/
+permalink: /kb/243/Q243644/
 ---
 
 ## Q243644: XADM: Cannot Synchronize Clock on Exchange Server

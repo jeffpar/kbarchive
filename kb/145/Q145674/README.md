@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145674: How Long Does it Take to Set Up Pregnancy and Child Care"
-permalink: kb/145/Q145674/
+permalink: /kb/145/Q145674/
 ---
 
 ## Q145674: How Long Does it Take to Set Up Pregnancy and Child Care

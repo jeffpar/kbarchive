@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278801: MSN Companion Troubleshooting Tool: Logging ID"
-permalink: kb/278/Q278801/
+permalink: /kb/278/Q278801/
 ---
 
 ## Q278801: MSN Companion Troubleshooting Tool: Logging ID

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64471: Troubleshooting Logitech Serial Mouse Problems in Windows 3.0"
-permalink: kb/064/Q64471/
+permalink: /kb/064/Q64471/
 ---
 
 ## Q64471: Troubleshooting Logitech Serial Mouse Problems in Windows 3.0

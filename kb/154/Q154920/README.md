@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154920: Sanyo 3-CD-ROM Changer Not Recognized by Windows NT 4.0"
-permalink: kb/154/Q154920/
+permalink: /kb/154/Q154920/
 ---
 
 ## Q154920: Sanyo 3-CD-ROM Changer Not Recognized by Windows NT 4.0

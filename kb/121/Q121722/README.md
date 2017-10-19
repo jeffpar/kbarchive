@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121722: PRB: &quot;Memo File Missing/Invalid&quot; Error with Project File"
-permalink: kb/121/Q121722/
+permalink: /kb/121/Q121722/
 ---
 
 ## Q121722: PRB: &quot;Memo File Missing/Invalid&quot; Error with Project File

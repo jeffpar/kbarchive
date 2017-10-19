@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114419: Cannot Find DC with Multiple Installations on Single Computer"
-permalink: kb/114/Q114419/
+permalink: /kb/114/Q114419/
 ---
 
 ## Q114419: Cannot Find DC with Multiple Installations on Single Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315584: HOW TO: Automatically Log a User Off from a Web Application"
-permalink: kb/315/Q315584/
+permalink: /kb/315/Q315584/
 ---
 
 ## Q315584: HOW TO: Automatically Log a User Off from a Web Application

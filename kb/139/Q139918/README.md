@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139918: Bookshelf 95: Ctl3dv2.dll Conflicts with Corel Gallery II"
-permalink: kb/139/Q139918/
+permalink: /kb/139/Q139918/
 ---
 
 ## Q139918: Bookshelf 95: Ctl3dv2.dll Conflicts with Corel Gallery II

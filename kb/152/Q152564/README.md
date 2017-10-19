@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152564: INFO: Visual Basic 4.0 Reading List"
-permalink: kb/152/Q152564/
+permalink: /kb/152/Q152564/
 ---
 
 ## Q152564: INFO: Visual Basic 4.0 Reading List

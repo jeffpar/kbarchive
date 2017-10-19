@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104477: FIX: FoxPro Calculator Returning Incorrect Percentages"
-permalink: kb/104/Q104477/
+permalink: /kb/104/Q104477/
 ---
 
 ## Q104477: FIX: FoxPro Calculator Returning Incorrect Percentages

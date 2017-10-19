@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168744: FIX: Printer May Lose Font Attributes"
-permalink: kb/168/Q168744/
+permalink: /kb/168/Q168744/
 ---
 
 ## Q168744: FIX: Printer May Lose Font Attributes

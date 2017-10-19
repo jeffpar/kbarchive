@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271874: Global Optimizations Generate Incorrect Code When Using unions"
-permalink: kb/271/Q271874/
+permalink: /kb/271/Q271874/
 ---
 
 ## Q271874: Global Optimizations Generate Incorrect Code When Using unions

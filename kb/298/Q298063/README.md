@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298063: WD97: No Macro Warning Opening RTF Document"
-permalink: kb/298/Q298063/
+permalink: /kb/298/Q298063/
 ---
 
 ## Q298063: WD97: No Macro Warning Opening RTF Document

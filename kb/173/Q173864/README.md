@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173864: WD97: Batch Conversion Wizard Document Open After Dialog Closed"
-permalink: kb/173/Q173864/
+permalink: /kb/173/Q173864/
 ---
 
 ## Q173864: WD97: Batch Conversion Wizard Document Open After Dialog Closed

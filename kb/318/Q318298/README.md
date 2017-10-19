@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318298: PRB: Cannot Add Project to Source Control in VS .NET IDE"
-permalink: kb/318/Q318298/
+permalink: /kb/318/Q318298/
 ---
 
 ## Q318298: PRB: Cannot Add Project to Source Control in VS .NET IDE

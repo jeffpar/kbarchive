@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165976: WD97: DefaultBorderColorIndex Does Not Apply Color First Time"
-permalink: kb/165/Q165976/
+permalink: /kb/165/Q165976/
 ---
 
 ## Q165976: WD97: DefaultBorderColorIndex Does Not Apply Color First Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96756: MS-DOS Fails to Detect Floppy Disk Change"
-permalink: kb/096/Q96756/
+permalink: /kb/096/Q96756/
 ---
 
 ## Q96756: MS-DOS Fails to Detect Floppy Disk Change

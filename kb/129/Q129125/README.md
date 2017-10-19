@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129125: Macintosh Clients Generate Event ID 180 and MIF Files"
-permalink: kb/129/Q129125/
+permalink: /kb/129/Q129125/
 ---
 
 ## Q129125: Macintosh Clients Generate Event ID 180 and MIF Files

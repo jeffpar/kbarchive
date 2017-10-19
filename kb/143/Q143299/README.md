@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143299: CFormView-Based Server Shows Metafile When Not Active"
-permalink: kb/143/Q143299/
+permalink: /kb/143/Q143299/
 ---
 
 ## Q143299: CFormView-Based Server Shows Metafile When Not Active

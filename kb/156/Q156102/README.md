@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156102: How To Set the Cross-Tab Wizard 3 Field Variables Requirement"
-permalink: kb/156/Q156102/
+permalink: /kb/156/Q156102/
 ---
 
 ## Q156102: How To Set the Cross-Tab Wizard 3 Field Variables Requirement

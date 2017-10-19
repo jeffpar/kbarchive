@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174830: NMI Error Message on Blue Screen May Be Garbled"
-permalink: kb/174/Q174830/
+permalink: /kb/174/Q174830/
 ---
 
 ## Q174830: NMI Error Message on Blue Screen May Be Garbled

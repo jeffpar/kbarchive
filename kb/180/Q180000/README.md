@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180000: WD97: OLE Objects Print Incorrectly with Float Over Text"
-permalink: kb/180/Q180000/
+permalink: /kb/180/Q180000/
 ---
 
 ## Q180000: WD97: OLE Objects Print Incorrectly with Float Over Text

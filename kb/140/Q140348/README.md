@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140348: How to Indent Outline Items Without Using the Indent Property"
-permalink: kb/140/Q140348/
+permalink: /kb/140/Q140348/
 ---
 
 ## Q140348: How to Indent Outline Items Without Using the Indent Property

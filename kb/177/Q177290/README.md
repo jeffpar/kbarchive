@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177290: Configuring Internal DNS Server When Using Proxy Server"
-permalink: kb/177/Q177290/
+permalink: /kb/177/Q177290/
 ---
 
 ## Q177290: Configuring Internal DNS Server When Using Proxy Server

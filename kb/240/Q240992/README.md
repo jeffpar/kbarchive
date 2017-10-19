@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240992: Err Msg: An Application Error Has Occurred and an Application..."
-permalink: kb/240/Q240992/
+permalink: /kb/240/Q240992/
 ---
 
 ## Q240992: Err Msg: An Application Error Has Occurred and an Application...

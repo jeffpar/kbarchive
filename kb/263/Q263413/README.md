@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263413: SMS: Remote Control Error with PCDDOS During Installation"
-permalink: kb/263/Q263413/
+permalink: /kb/263/Q263413/
 ---
 
 ## Q263413: SMS: Remote Control Error with PCDDOS During Installation

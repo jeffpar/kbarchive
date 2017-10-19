@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119558: PC Win: Hyphens in Columns 1 and 78 Replaced by Space"
-permalink: kb/119/Q119558/
+permalink: /kb/119/Q119558/
 ---
 
 ## Q119558: PC Win: Hyphens in Columns 1 and 78 Replaced by Space

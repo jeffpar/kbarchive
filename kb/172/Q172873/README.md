@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172873: SMSINST: Messages Not Translated Into Correct Language"
-permalink: kb/172/Q172873/
+permalink: /kb/172/Q172873/
 ---
 
 ## Q172873: SMSINST: Messages Not Translated Into Correct Language

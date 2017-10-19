@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191039: HOWTO: Build an Internet Information Server Application"
-permalink: kb/191/Q191039/
+permalink: /kb/191/Q191039/
 ---
 
 ## Q191039: HOWTO: Build an Internet Information Server Application

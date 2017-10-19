@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271621: HOWTO: Retrieve XML Data with a Template File from a VB Client"
-permalink: kb/271/Q271621/
+permalink: /kb/271/Q271621/
 ---
 
 ## Q271621: HOWTO: Retrieve XML Data with a Template File from a VB Client

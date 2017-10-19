@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125933: STOP 0x0000007B: Inaccessible Boot Device After Removing CD-ROM"
-permalink: kb/125/Q125933/
+permalink: /kb/125/Q125933/
 ---
 
 ## Q125933: STOP 0x0000007B: Inaccessible Boot Device After Removing CD-ROM

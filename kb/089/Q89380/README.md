@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89380: VSAFE Virus Scanning Software Causes Windows 3.1 Setup to Fail"
-permalink: kb/089/Q89380/
+permalink: /kb/089/Q89380/
 ---
 
 ## Q89380: VSAFE Virus Scanning Software Causes Windows 3.1 Setup to Fail

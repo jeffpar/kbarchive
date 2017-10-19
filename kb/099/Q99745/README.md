@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99745: Tuning NWLINK Registry Parameters"
-permalink: kb/099/Q99745/
+permalink: /kb/099/Q99745/
 ---
 
 ## Q99745: Tuning NWLINK Registry Parameters

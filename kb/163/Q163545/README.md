@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163545: FIX: Setup /F Causes Error When Created by Setup Wizard"
-permalink: kb/163/Q163545/
+permalink: /kb/163/Q163545/
 ---
 
 ## Q163545: FIX: Setup /F Causes Error When Created by Setup Wizard

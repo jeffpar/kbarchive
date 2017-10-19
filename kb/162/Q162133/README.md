@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162133: SNA Server 3.0 Supports Multiple Connections to Same AS/400"
-permalink: kb/162/Q162133/
+permalink: /kb/162/Q162133/
 ---
 
 ## Q162133: SNA Server 3.0 Supports Multiple Connections to Same AS/400

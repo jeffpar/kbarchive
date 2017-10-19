@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66357: Using MS-DOS Applications on HP Vectra in Standard Mode"
-permalink: kb/066/Q66357/
+permalink: /kb/066/Q66357/
 ---
 
 ## Q66357: Using MS-DOS Applications on HP Vectra in Standard Mode

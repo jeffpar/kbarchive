@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152167: Dir-Sync w/Many Computers Running Exchange Server, MS Mail POs"
-permalink: kb/152/Q152167/
+permalink: /kb/152/Q152167/
 ---
 
 ## Q152167: Dir-Sync w/Many Computers Running Exchange Server, MS Mail POs

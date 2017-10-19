@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156256: Encarta 97 World Atlas: Contents of README.WRI"
-permalink: kb/156/Q156256/
+permalink: /kb/156/Q156256/
 ---
 
 ## Q156256: Encarta 97 World Atlas: Contents of README.WRI

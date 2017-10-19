@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180926: Setting Registry Quota Before the Reboot of Unattended Install"
-permalink: kb/180/Q180926/
+permalink: /kb/180/Q180926/
 ---
 
 ## Q180926: Setting Registry Quota Before the Reboot of Unattended Install

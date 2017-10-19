@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242418: INFO: Using the Visual Studio Installer with Visual FoxPro"
-permalink: kb/242/Q242418/
+permalink: /kb/242/Q242418/
 ---
 
 ## Q242418: INFO: Using the Visual Studio Installer with Visual FoxPro

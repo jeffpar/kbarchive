@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155319: Cannot Install Modem After Removing and Reinstalling RAS"
-permalink: kb/155/Q155319/
+permalink: /kb/155/Q155319/
 ---
 
 ## Q155319: Cannot Install Modem After Removing and Reinstalling RAS

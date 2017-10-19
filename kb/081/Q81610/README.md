@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81610: Ecovrwrt.exe - Multiline Edit Control Overwrite Mode"
-permalink: kb/081/Q81610/
+permalink: /kb/081/Q81610/
 ---
 
 ## Q81610: Ecovrwrt.exe - Multiline Edit Control Overwrite Mode

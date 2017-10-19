@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70818: BUG: No WM_SETFONT to Custom Controls"
-permalink: kb/070/Q70818/
+permalink: /kb/070/Q70818/
 ---
 
 ## Q70818: BUG: No WM_SETFONT to Custom Controls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66246: SAMPLE: Twins.exe Uses RegisterWindowMessage for Interapp Comm."
-permalink: kb/066/Q66246/
+permalink: /kb/066/Q66246/
 ---
 
 ## Q66246: SAMPLE: Twins.exe Uses RegisterWindowMessage for Interapp Comm.

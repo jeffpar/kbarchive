@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166166: WinNT Err: NTBACKUP Fails Due to Lack of Permissions"
-permalink: kb/166/Q166166/
+permalink: /kb/166/Q166166/
 ---
 
 ## Q166166: WinNT Err: NTBACKUP Fails Due to Lack of Permissions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242204: BUG: Cannot Insert Multiple Images into the Image List Control"
-permalink: kb/242/Q242204/
+permalink: /kb/242/Q242204/
 ---
 
 ## Q242204: BUG: Cannot Insert Multiple Images into the Image List Control

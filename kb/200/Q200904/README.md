@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200904: XCLN: Messages with None as Received Date are Not Archived"
-permalink: kb/200/Q200904/
+permalink: /kb/200/Q200904/
 ---
 
 ## Q200904: XCLN: Messages with None as Received Date are Not Archived

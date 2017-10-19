@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186154: XCLN: Using Auto Signatures with Roving Users"
-permalink: kb/186/Q186154/
+permalink: /kb/186/Q186154/
 ---
 
 ## Q186154: XCLN: Using Auto Signatures with Roving Users

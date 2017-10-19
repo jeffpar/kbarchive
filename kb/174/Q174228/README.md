@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174228: STOP Cx0000009A After Trying to Regain Multiprocessor Support"
-permalink: kb/174/Q174228/
+permalink: /kb/174/Q174228/
 ---
 
 ## Q174228: STOP Cx0000009A After Trying to Regain Multiprocessor Support

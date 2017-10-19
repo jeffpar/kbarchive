@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172698: NTBACKUP - Verify Option Does Not Verify WinNT Registry Files"
-permalink: kb/172/Q172698/
+permalink: /kb/172/Q172698/
 ---
 
 ## Q172698: NTBACKUP - Verify Option Does Not Verify WinNT Registry Files

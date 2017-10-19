@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191454: PRB: Event Procedures May Be Executed for Unhandled Events"
-permalink: kb/191/Q191454/
+permalink: /kb/191/Q191454/
 ---
 
 ## Q191454: PRB: Event Procedures May Be Executed for Unhandled Events

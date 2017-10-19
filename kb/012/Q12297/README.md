@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q12297: PRB: Rounding Error Casting Double to Long"
-permalink: kb/012/Q12297/
+permalink: /kb/012/Q12297/
 ---
 
 ## Q12297: PRB: Rounding Error Casting Double to Long

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81821: Program Manager Does Not Maximize"
-permalink: kb/081/Q81821/
+permalink: /kb/081/Q81821/
 ---
 
 ## Q81821: Program Manager Does Not Maximize

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114638: Only 60 Clients Can Simultaneously Access a TCP/IP Share"
-permalink: kb/114/Q114638/
+permalink: /kb/114/Q114638/
 ---
 
 ## Q114638: Only 60 Clients Can Simultaneously Access a TCP/IP Share

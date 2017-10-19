@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168128: XADM: Err Msg: DS_E_COMMUNICATIONS_PROBLEM"
-permalink: kb/168/Q168128/
+permalink: /kb/168/Q168128/
 ---
 
 ## Q168128: XADM: Err Msg: DS_E_COMMUNICATIONS_PROBLEM

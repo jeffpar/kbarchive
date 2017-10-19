@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276415: Slow Performance When Lotus Notes Is Running on Terminal Server"
-permalink: kb/276/Q276415/
+permalink: /kb/276/Q276415/
 ---
 
 ## Q276415: Slow Performance When Lotus Notes Is Running on Terminal Server

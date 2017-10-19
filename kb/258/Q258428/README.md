@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258428: FIX: Printer Name Longer than 64 Characters Causes Error"
-permalink: kb/258/Q258428/
+permalink: /kb/258/Q258428/
 ---
 
 ## Q258428: FIX: Printer Name Longer than 64 Characters Causes Error

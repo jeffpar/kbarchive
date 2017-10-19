@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255695: XCON: Do Not Reroute Incoming SMTP Mail Allows Relay as NDR"
-permalink: kb/255/Q255695/
+permalink: /kb/255/Q255695/
 ---
 
 ## Q255695: XCON: Do Not Reroute Incoming SMTP Mail Allows Relay as NDR

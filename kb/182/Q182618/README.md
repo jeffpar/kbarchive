@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182618: XADM: Cannot Log On Using IMAP4 If WinNT Locale Set to Swedish"
-permalink: kb/182/Q182618/
+permalink: /kb/182/Q182618/
 ---
 
 ## Q182618: XADM: Cannot Log On Using IMAP4 If WinNT Locale Set to Swedish

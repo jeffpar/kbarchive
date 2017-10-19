@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73296: MS-DOS 5.0 Technical Reference Availability"
-permalink: kb/073/Q73296/
+permalink: /kb/073/Q73296/
 ---
 
 ## Q73296: MS-DOS 5.0 Technical Reference Availability

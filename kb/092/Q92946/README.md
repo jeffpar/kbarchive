@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92946: Bookshelf Button on Toolbar Appears as a Piggy Bank"
-permalink: kb/092/Q92946/
+permalink: /kb/092/Q92946/
 ---
 
 ## Q92946: Bookshelf Button on Toolbar Appears as a Piggy Bank

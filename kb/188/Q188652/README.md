@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188652: Error Replicating Registry Keys"
-permalink: kb/188/Q188652/
+permalink: /kb/188/Q188652/
 ---
 
 ## Q188652: Error Replicating Registry Keys

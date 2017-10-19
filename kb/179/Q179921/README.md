@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179921: Error -204 When Using the STARSQL32 Driver"
-permalink: kb/179/Q179921/
+permalink: /kb/179/Q179921/
 ---
 
 ## Q179921: Error -204 When Using the STARSQL32 Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323440: Dungeon Siege: Gom Character Does Not Respond to Attack"
-permalink: kb/323/Q323440/
+permalink: /kb/323/Q323440/
 ---
 
 ## Q323440: Dungeon Siege: Gom Character Does Not Respond to Attack

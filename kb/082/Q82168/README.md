@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82168: PRB: &quot;Orphan&quot; Metafiles Not Tracked by Debugging Windows"
-permalink: kb/082/Q82168/
+permalink: /kb/082/Q82168/
 ---
 
 ## Q82168: PRB: &quot;Orphan&quot; Metafiles Not Tracked by Debugging Windows

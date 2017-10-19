@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109476: BUG: FILE() Returns Erroneous Results"
-permalink: kb/109/Q109476/
+permalink: /kb/109/Q109476/
 ---
 
 ## Q109476: BUG: FILE() Returns Erroneous Results

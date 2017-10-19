@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78612: The ANSI /S Switch"
-permalink: kb/078/Q78612/
+permalink: /kb/078/Q78612/
 ---
 
 ## Q78612: The ANSI /S Switch

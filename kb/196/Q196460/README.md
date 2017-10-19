@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196460: Improving Mouse Movements in Terminal Server Applications"
-permalink: kb/196/Q196460/
+permalink: /kb/196/Q196460/
 ---
 
 ## Q196460: Improving Mouse Movements in Terminal Server Applications

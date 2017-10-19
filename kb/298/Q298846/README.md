@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298846: Installation of Office XP May Disable Help in Other Programs"
-permalink: kb/298/Q298846/
+permalink: /kb/298/Q298846/
 ---
 
 ## Q298846: Installation of Office XP May Disable Help in Other Programs

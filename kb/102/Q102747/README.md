@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102747: X400: Err Msg: Only Four Organization Units Allowed in Address"
-permalink: kb/102/Q102747/
+permalink: /kb/102/Q102747/
 ---
 
 ## Q102747: X400: Err Msg: Only Four Organization Units Allowed in Address

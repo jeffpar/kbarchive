@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167732: Stack Fault Creating Shortcut in Spanish OSR2"
-permalink: kb/167/Q167732/
+permalink: /kb/167/Q167732/
 ---
 
 ## Q167732: Stack Fault Creating Shortcut in Spanish OSR2

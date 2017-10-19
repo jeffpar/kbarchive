@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82209: Printer Driver for the HP LaserJet IIP Plus"
-permalink: kb/082/Q82209/
+permalink: /kb/082/Q82209/
 ---
 
 ## Q82209: Printer Driver for the HP LaserJet IIP Plus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150293: INFO: Visual Basic &amp; Visual SourceSafe Add-In Options"
-permalink: kb/150/Q150293/
+permalink: /kb/150/Q150293/
 ---
 
 ## Q150293: INFO: Visual Basic &amp; Visual SourceSafe Add-In Options

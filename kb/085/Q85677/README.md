@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85677: Sources of Information about the Windows Help Compiler"
-permalink: kb/085/Q85677/
+permalink: /kb/085/Q85677/
 ---
 
 ## Q85677: Sources of Information about the Windows Help Compiler

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186123: BUG: The Coolbar ActiveX Control Does Not Work in VFP"
-permalink: kb/186/Q186123/
+permalink: /kb/186/Q186123/
 ---
 
 ## Q186123: BUG: The Coolbar ActiveX Control Does Not Work in VFP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170407: WD97: ErrMsg Saving Graphic File to Read Only Share"
-permalink: kb/170/Q170407/
+permalink: /kb/170/Q170407/
 ---
 
 ## Q170407: WD97: ErrMsg Saving Graphic File to Read Only Share

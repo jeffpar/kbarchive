@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154978: Err Msg: The Product Information File Is Not Available"
-permalink: kb/154/Q154978/
+permalink: /kb/154/Q154978/
 ---
 
 ## Q154978: Err Msg: The Product Information File Is Not Available

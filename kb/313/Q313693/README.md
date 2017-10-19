@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313693: 3270 Client (Win3270.exe) Doesn't Enforce User/Group Assignments"
-permalink: kb/313/Q313693/
+permalink: /kb/313/Q313693/
 ---
 
 ## Q313693: 3270 Client (Win3270.exe) Doesn't Enforce User/Group Assignments

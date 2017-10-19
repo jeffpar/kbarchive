@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168884: Service Receives TIMEOUT Error While Attempting To Load"
-permalink: kb/168/Q168884/
+permalink: /kb/168/Q168884/
 ---
 
 ## Q168884: Service Receives TIMEOUT Error While Attempting To Load

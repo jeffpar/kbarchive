@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279455: MSN Companion e-mail appears to be having temporary server probl"
-permalink: kb/279/Q279455/
+permalink: /kb/279/Q279455/
 ---
 
 ## Q279455: MSN Companion e-mail appears to be having temporary server probl

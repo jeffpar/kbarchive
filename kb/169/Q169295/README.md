@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169295: Administration of Legacy RAS Servers from Routing and RAS Admin"
-permalink: kb/169/Q169295/
+permalink: /kb/169/Q169295/
 ---
 
 ## Q169295: Administration of Legacy RAS Servers from Routing and RAS Admin

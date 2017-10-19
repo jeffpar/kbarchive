@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131152: PC WRmt: Running Mail Remote Under Windows NT"
-permalink: kb/131/Q131152/
+permalink: /kb/131/Q131152/
 ---
 
 ## Q131152: PC WRmt: Running Mail Remote Under Windows NT

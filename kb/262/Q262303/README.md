@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262303: XFOR: Mail Sent to Windows 2000 Contact from Notes/OL May Loop"
-permalink: kb/262/Q262303/
+permalink: /kb/262/Q262303/
 ---
 
 ## Q262303: XFOR: Mail Sent to Windows 2000 Contact from Notes/OL May Loop

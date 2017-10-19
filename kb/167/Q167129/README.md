@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167129: STOP 0x7A or System Lockup in NTBACKUP with MINIQIC"
-permalink: kb/167/Q167129/
+permalink: /kb/167/Q167129/
 ---
 
 ## Q167129: STOP 0x7A or System Lockup in NTBACKUP with MINIQIC

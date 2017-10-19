@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126659: PC WRmt: Err Msg: Account Not Valid User of Message File"
-permalink: kb/126/Q126659/
+permalink: /kb/126/Q126659/
 ---
 
 ## Q126659: PC WRmt: Err Msg: Account Not Valid User of Message File

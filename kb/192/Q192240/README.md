@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192240: Remote MS-DOS Client May Sort Incorrectly After Year 2000"
-permalink: kb/192/Q192240/
+permalink: /kb/192/Q192240/
 ---
 
 ## Q192240: Remote MS-DOS Client May Sort Incorrectly After Year 2000

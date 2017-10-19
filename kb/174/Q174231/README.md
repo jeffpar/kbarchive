@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174231: DHCP Uses 100% CPU If First Network Card Is Disabled"
-permalink: kb/174/Q174231/
+permalink: /kb/174/Q174231/
 ---
 
 ## Q174231: DHCP Uses 100% CPU If First Network Card Is Disabled

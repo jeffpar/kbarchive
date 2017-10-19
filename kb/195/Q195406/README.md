@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195406: BUG: Using Class With Reserved Custom Property Name Gives Error"
-permalink: kb/195/Q195406/
+permalink: /kb/195/Q195406/
 ---
 
 ## Q195406: BUG: Using Class With Reserved Custom Property Name Gives Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215005: Sluggish Mouse Movement While Remote Controlling Windows NT 4.0"
-permalink: kb/215/Q215005/
+permalink: /kb/215/Q215005/
 ---
 
 ## Q215005: Sluggish Mouse Movement While Remote Controlling Windows NT 4.0

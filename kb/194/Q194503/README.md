@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194503: PRB: VFP6/VSS6 File Could Not Be Mapped to SourceSafe Project"
-permalink: kb/194/Q194503/
+permalink: /kb/194/Q194503/
 ---
 
 ## Q194503: PRB: VFP6/VSS6 File Could Not Be Mapped to SourceSafe Project

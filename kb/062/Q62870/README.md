@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62870: Cannot Start DayBook as Icon with SHIFT+Double-Click"
-permalink: kb/062/Q62870/
+permalink: /kb/062/Q62870/
 ---
 
 ## Q62870: Cannot Start DayBook as Icon with SHIFT+Double-Click

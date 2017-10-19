@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235213: BUG: Four-part Name Linked Server Queries Fail w/DB2 for OS/390"
-permalink: kb/235/Q235213/
+permalink: /kb/235/Q235213/
 ---
 
 ## Q235213: BUG: Four-part Name Linked Server Queries Fail w/DB2 for OS/390

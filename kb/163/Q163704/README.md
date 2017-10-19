@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163704: ACC97: Some Access Commands Don't Prompt to Check Out VSS Module"
-permalink: kb/163/Q163704/
+permalink: /kb/163/Q163704/
 ---
 
 ## Q163704: ACC97: Some Access Commands Don't Prompt to Check Out VSS Module

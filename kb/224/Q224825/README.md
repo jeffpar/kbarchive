@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224825: Event 4097 Logged Continuously By 5250 Print Session"
-permalink: kb/224/Q224825/
+permalink: /kb/224/Q224825/
 ---
 
 ## Q224825: Event 4097 Logged Continuously By 5250 Print Session

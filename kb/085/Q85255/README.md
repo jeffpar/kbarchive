@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85255: AT&amp;T 570 Printer Not Supported Under Windows 3.1"
-permalink: kb/085/Q85255/
+permalink: /kb/085/Q85255/
 ---
 
 ## Q85255: AT&amp;T 570 Printer Not Supported Under Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175914: Computer Hangs When You Start V-Chat on The Microsoft Network"
-permalink: kb/175/Q175914/
+permalink: /kb/175/Q175914/
 ---
 
 ## Q175914: Computer Hangs When You Start V-Chat on The Microsoft Network

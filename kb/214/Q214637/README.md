@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214637: XFOR: Multiple MSExchangeCalCon Profiles Found"
-permalink: kb/214/Q214637/
+permalink: /kb/214/Q214637/
 ---
 
 ## Q214637: XFOR: Multiple MSExchangeCalCon Profiles Found

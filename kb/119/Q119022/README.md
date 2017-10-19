@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119022: CONN: Message Redelivered Repeatedly to Mac Clients"
-permalink: kb/119/Q119022/
+permalink: /kb/119/Q119022/
 ---
 
 ## Q119022: CONN: Message Redelivered Repeatedly to Mac Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180016: DNS Manager Lists DNS Servers After Reinstalling DNS Service"
-permalink: kb/180/Q180016/
+permalink: /kb/180/Q180016/
 ---
 
 ## Q180016: DNS Manager Lists DNS Servers After Reinstalling DNS Service

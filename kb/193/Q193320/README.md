@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193320: XADM: Store AV When Client Accesses Public Folder Replica"
-permalink: kb/193/Q193320/
+permalink: /kb/193/Q193320/
 ---
 
 ## Q193320: XADM: Store AV When Client Accesses Public Folder Replica

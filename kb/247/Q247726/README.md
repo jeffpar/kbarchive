@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247726: AoE II: &quot;You Have Been Defeated&quot; Msg When You Are Not Defeated"
-permalink: kb/247/Q247726/
+permalink: /kb/247/Q247726/
 ---
 
 ## Q247726: AoE II: &quot;You Have Been Defeated&quot; Msg When You Are Not Defeated

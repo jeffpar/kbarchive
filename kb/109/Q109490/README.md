@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109490: PC Tools RAMBOOST.EXE Generates Unsupported DOS Version Error"
-permalink: kb/109/Q109490/
+permalink: /kb/109/Q109490/
 ---
 
 ## Q109490: PC Tools RAMBOOST.EXE Generates Unsupported DOS Version Error

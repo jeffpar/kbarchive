@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279138: FIX: SQL Passthrough Does Not Map SQL_WLONGVARCHAR to Memo"
-permalink: kb/279/Q279138/
+permalink: /kb/279/Q279138/
 ---
 
 ## Q279138: FIX: SQL Passthrough Does Not Map SQL_WLONGVARCHAR to Memo

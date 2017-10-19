@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153327: XCLN: SMS Install of Exchange Client Crashes with /Q1 Switch"
-permalink: kb/153/Q153327/
+permalink: /kb/153/Q153327/
 ---
 
 ## Q153327: XCLN: SMS Install of Exchange Client Crashes with /Q1 Switch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152376: HOWTO: How To Disable Push Buttons on a DialogBar in MFC"
-permalink: kb/152/Q152376/
+permalink: /kb/152/Q152376/
 ---
 
 ## Q152376: HOWTO: How To Disable Push Buttons on a DialogBar in MFC

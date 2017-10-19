@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171508: FIX: Add-ins May Cause Menu Corruption When Exiting Visual Basic"
-permalink: kb/171/Q171508/
+permalink: /kb/171/Q171508/
 ---
 
 ## Q171508: FIX: Add-ins May Cause Menu Corruption When Exiting Visual Basic

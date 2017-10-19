@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184274: Windows 95 Causes Spooler to Approach 100% CPU Usage"
-permalink: kb/184/Q184274/
+permalink: /kb/184/Q184274/
 ---
 
 ## Q184274: Windows 95 Causes Spooler to Approach 100% CPU Usage

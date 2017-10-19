@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106636: FIX: Debugger Does Not Properly Trace Include Files"
-permalink: kb/106/Q106636/
+permalink: /kb/106/Q106636/
 ---
 
 ## Q106636: FIX: Debugger Does Not Properly Trace Include Files

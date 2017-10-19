@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157564: STOP: c0000263 on Upgrade from WinNT 4.0 to WinNT 3.51"
-permalink: kb/157/Q157564/
+permalink: /kb/157/Q157564/
 ---
 
 ## Q157564: STOP: c0000263 on Upgrade from WinNT 4.0 to WinNT 3.51

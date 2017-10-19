@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99008: MS-DOS 6 MEM Command Reports 384K for Adapter RAM/ROM"
-permalink: kb/099/Q99008/
+permalink: /kb/099/Q99008/
 ---
 
 ## Q99008: MS-DOS 6 MEM Command Reports 384K for Adapter RAM/ROM

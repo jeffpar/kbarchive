@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154965: XCLN:  System 11 Bomb When Printing"
-permalink: kb/154/Q154965/
+permalink: /kb/154/Q154965/
 ---
 
 ## Q154965: XCLN:  System 11 Bomb When Printing

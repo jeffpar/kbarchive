@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62121: Mac Hyp: Logging Off the User's Mailbox"
-permalink: kb/062/Q62121/
+permalink: /kb/062/Q62121/
 ---
 
 ## Q62121: Mac Hyp: Logging Off the User's Mailbox

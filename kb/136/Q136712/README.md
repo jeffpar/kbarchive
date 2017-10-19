@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136712: Common Questions About Browsing with Windows"
-permalink: kb/136/Q136712/
+permalink: /kb/136/Q136712/
 ---
 
 ## Q136712: Common Questions About Browsing with Windows

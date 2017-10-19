@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157636: HOWTO: Set Up Source Code Control with Visual SourceSafe"
-permalink: kb/157/Q157636/
+permalink: /kb/157/Q157636/
 ---
 
 ## Q157636: HOWTO: Set Up Source Code Control with Visual SourceSafe

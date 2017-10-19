@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251152: XADM: Finding Ambiguous or Duplicate Recipients"
-permalink: kb/251/Q251152/
+permalink: /kb/251/Q251152/
 ---
 
 ## Q251152: XADM: Finding Ambiguous or Duplicate Recipients

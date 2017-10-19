@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199128: PRB: Error 40041 Calling RDO Parameters Through User Connection"
-permalink: kb/199/Q199128/
+permalink: /kb/199/Q199128/
 ---
 
 ## Q199128: PRB: Error 40041 Calling RDO Parameters Through User Connection

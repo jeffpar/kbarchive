@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138362: ARP Cache Management with Windows NT 3.5 and 3.51"
-permalink: kb/138/Q138362/
+permalink: /kb/138/Q138362/
 ---
 
 ## Q138362: ARP Cache Management with Windows NT 3.5 and 3.51

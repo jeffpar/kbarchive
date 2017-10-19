@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155005: DOC: COleDateTime No Longer Accepts 2-Digit Years"
-permalink: kb/155/Q155005/
+permalink: /kb/155/Q155005/
 ---
 
 ## Q155005: DOC: COleDateTime No Longer Accepts 2-Digit Years

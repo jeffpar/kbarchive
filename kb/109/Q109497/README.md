@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109497: Copies of CONFIG.SYS or AUTOEXEC.BAT Files on Compressed Drive"
-permalink: kb/109/Q109497/
+permalink: /kb/109/Q109497/
 ---
 
 ## Q109497: Copies of CONFIG.SYS or AUTOEXEC.BAT Files on Compressed Drive

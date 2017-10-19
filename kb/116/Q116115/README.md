@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116115: PC DOS: MS-DOS Client MAIL.EXE 3.0.2 Update"
-permalink: kb/116/Q116115/
+permalink: /kb/116/Q116115/
 ---
 
 ## Q116115: PC DOS: MS-DOS Client MAIL.EXE 3.0.2 Update

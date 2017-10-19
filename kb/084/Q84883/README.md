@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84883: PC OS2: Restarting OS/2 Client Causes Trap 00D Error"
-permalink: kb/084/Q84883/
+permalink: /kb/084/Q84883/
 ---
 
 ## Q84883: PC OS2: Restarting OS/2 Client Causes Trap 00D Error

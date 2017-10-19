@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261022: Motocross Madness 2: Mouse Pointer Is Not Redrawn Properly"
-permalink: kb/261/Q261022/
+permalink: /kb/261/Q261022/
 ---
 
 ## Q261022: Motocross Madness 2: Mouse Pointer Is Not Redrawn Properly

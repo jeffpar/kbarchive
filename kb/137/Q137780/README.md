@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137780: Change in WINS Search Order from Windows NT 3.5 to 3.51"
-permalink: kb/137/Q137780/
+permalink: /kb/137/Q137780/
 ---
 
 ## Q137780: Change in WINS Search Order from Windows NT 3.5 to 3.51

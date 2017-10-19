@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288723: Certain SNA PerfMon Counters Cannot Be Added on Windows 2000"
-permalink: kb/288/Q288723/
+permalink: /kb/288/Q288723/
 ---
 
 ## Q288723: Certain SNA PerfMon Counters Cannot Be Added on Windows 2000

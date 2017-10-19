@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134560: Newly Formatted Drive Does Not Support Long Filenames"
-permalink: kb/134/Q134560/
+permalink: /kb/134/Q134560/
 ---
 
 ## Q134560: Newly Formatted Drive Does Not Support Long Filenames

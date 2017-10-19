@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273920: Crimson Skies: Heads-Up Text Gauges Do Not Appear on the Screen"
-permalink: kb/273/Q273920/
+permalink: /kb/273/Q273920/
 ---
 
 ## Q273920: Crimson Skies: Heads-Up Text Gauges Do Not Appear on the Screen

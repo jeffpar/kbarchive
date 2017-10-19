@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132777: Twain32 (for NT) Scanner Driver Does Not Work in Windows 95"
-permalink: kb/132/Q132777/
+permalink: /kb/132/Q132777/
 ---
 
 ## Q132777: Twain32 (for NT) Scanner Driver Does Not Work in Windows 95

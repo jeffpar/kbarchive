@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170736: Windows 95 MSDLC32 Does Not Receive Multicast Packets"
-permalink: kb/170/Q170736/
+permalink: /kb/170/Q170736/
 ---
 
 ## Q170736: Windows 95 MSDLC32 Does Not Receive Multicast Packets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282965: Event ID 26 May Be Logged When a Resource Fails"
-permalink: kb/282/Q282965/
+permalink: /kb/282/Q282965/
 ---
 
 ## Q282965: Event ID 26 May Be Logged When a Resource Fails

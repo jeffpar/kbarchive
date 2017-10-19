@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138808: PRB: &quot;Error Writing Winspool.drv&quot; During Visual FoxPro Setup"
-permalink: kb/138/Q138808/
+permalink: /kb/138/Q138808/
 ---
 
 ## Q138808: PRB: &quot;Error Writing Winspool.drv&quot; During Visual FoxPro Setup

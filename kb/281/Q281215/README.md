@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281215: CFS: Cannot Join or Host Multiplayer Game on the Zone"
-permalink: kb/281/Q281215/
+permalink: /kb/281/Q281215/
 ---
 
 ## Q281215: CFS: Cannot Join or Host Multiplayer Game on the Zone

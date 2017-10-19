@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253146: Tuning the Performance and Scalability of ASP Web Applications"
-permalink: kb/253/Q253146/
+permalink: /kb/253/Q253146/
 ---
 
 ## Q253146: Tuning the Performance and Scalability of ASP Web Applications

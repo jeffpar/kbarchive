@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156520: Logon Validation Fails Using Domain Name Server (DNS)"
-permalink: kb/156/Q156520/
+permalink: /kb/156/Q156520/
 ---
 
 ## Q156520: Logon Validation Fails Using Domain Name Server (DNS)

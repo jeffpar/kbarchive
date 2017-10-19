@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181062: WD97: Cannot Change Default Field Names in Mail Merge Helper"
-permalink: kb/181/Q181062/
+permalink: /kb/181/Q181062/
 ---
 
 ## Q181062: WD97: Cannot Change Default Field Names in Mail Merge Helper

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26525: FltSim: Printing a Screen or Poster to the ImageWriter"
-permalink: kb/026/Q26525/
+permalink: /kb/026/Q26525/
 ---
 
 ## Q26525: FltSim: Printing a Screen or Poster to the ImageWriter

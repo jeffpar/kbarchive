@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92828: Maintaining a Hidden Application"
-permalink: kb/092/Q92828/
+permalink: /kb/092/Q92828/
 ---
 
 ## Q92828: Maintaining a Hidden Application

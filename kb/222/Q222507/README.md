@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222507: Incorrect Service Pack Level Displayed After Applying Hotfix"
-permalink: kb/222/Q222507/
+permalink: /kb/222/Q222507/
 ---
 
 ## Q222507: Incorrect Service Pack Level Displayed After Applying Hotfix

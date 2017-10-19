@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246842: SMS: Access Violation in Remote.exe When Encryption Disabled"
-permalink: kb/246/Q246842/
+permalink: /kb/246/Q246842/
 ---
 
 ## Q246842: SMS: Access Violation in Remote.exe When Encryption Disabled

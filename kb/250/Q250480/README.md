@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250480: Performance Counters Provided with Metadirectory Services"
-permalink: kb/250/Q250480/
+permalink: /kb/250/Q250480/
 ---
 
 ## Q250480: Performance Counters Provided with Metadirectory Services

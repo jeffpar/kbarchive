@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151223: Network Applications Database (NAD) Share Point Corruption"
-permalink: kb/151/Q151223/
+permalink: /kb/151/Q151223/
 ---
 
 ## Q151223: Network Applications Database (NAD) Share Point Corruption

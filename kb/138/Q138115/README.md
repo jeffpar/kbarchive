@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138115: Error 1811 Occurs Running JETPACK.EXE"
-permalink: kb/138/Q138115/
+permalink: /kb/138/Q138115/
 ---
 
 ## Q138115: Error 1811 Occurs Running JETPACK.EXE

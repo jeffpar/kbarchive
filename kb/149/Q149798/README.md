@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149798: 3D Movie Maker: Locations for All of the Talent Book Pages"
-permalink: kb/149/Q149798/
+permalink: /kb/149/Q149798/
 ---
 
 ## Q149798: 3D Movie Maker: Locations for All of the Talent Book Pages

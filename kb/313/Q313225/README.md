@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313225: HOWTO: Connect to a SQL Server 2000 Named Instance with JDBC"
-permalink: kb/313/Q313225/
+permalink: /kb/313/Q313225/
 ---
 
 ## Q313225: HOWTO: Connect to a SQL Server 2000 Named Instance with JDBC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166028: Installing 3rd-Party Video Drivers with Txtsetup.oem Unattended"
-permalink: kb/166/Q166028/
+permalink: /kb/166/Q166028/
 ---
 
 ## Q166028: Installing 3rd-Party Video Drivers with Txtsetup.oem Unattended

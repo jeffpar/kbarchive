@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279817: Motocross Madness 2: Known Video Issues"
-permalink: kb/279/Q279817/
+permalink: /kb/279/Q279817/
 ---
 
 ## Q279817: Motocross Madness 2: Known Video Issues

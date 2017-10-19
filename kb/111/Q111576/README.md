@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111576: BUG: LineTo() Endcaps Misaligned with Large Pen Width"
-permalink: kb/111/Q111576/
+permalink: /kb/111/Q111576/
 ---
 
 ## Q111576: BUG: LineTo() Endcaps Misaligned with Large Pen Width

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80020: Mac Wkst: System 7.0 Custom Icons Not Supported for Enclosures"
-permalink: kb/080/Q80020/
+permalink: /kb/080/Q80020/
 ---
 
 ## Q80020: Mac Wkst: System 7.0 Custom Icons Not Supported for Enclosures

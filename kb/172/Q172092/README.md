@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172092: WD97: Right-aligned Graphic Deletes HTML Code When Saved"
-permalink: kb/172/Q172092/
+permalink: /kb/172/Q172092/
 ---
 
 ## Q172092: WD97: Right-aligned Graphic Deletes HTML Code When Saved

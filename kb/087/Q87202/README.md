@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87202: PROFS: How Third-Party Hardware and Software Can Be Tested"
-permalink: kb/087/Q87202/
+permalink: /kb/087/Q87202/
 ---
 
 ## Q87202: PROFS: How Third-Party Hardware and Software Can Be Tested

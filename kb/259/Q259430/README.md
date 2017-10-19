@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259430: MS RADIUS Logging Format Changes After Applying the IAS SP6a Fix"
-permalink: kb/259/Q259430/
+permalink: /kb/259/Q259430/
 ---
 
 ## Q259430: MS RADIUS Logging Format Changes After Applying the IAS SP6a Fix

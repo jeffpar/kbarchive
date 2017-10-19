@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171982: WD97: Tabs in Heading Styles Look Wrong in Table of Contents"
-permalink: kb/171/Q171982/
+permalink: /kb/171/Q171982/
 ---
 
 ## Q171982: WD97: Tabs in Heading Styles Look Wrong in Table of Contents

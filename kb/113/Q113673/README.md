@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113673: FIX: GP Fault in SIMBA.DLL w/ Second SQLExecute() of DEL Stmt"
-permalink: kb/113/Q113673/
+permalink: /kb/113/Q113673/
 ---
 
 ## Q113673: FIX: GP Fault in SIMBA.DLL w/ Second SQLExecute() of DEL Stmt

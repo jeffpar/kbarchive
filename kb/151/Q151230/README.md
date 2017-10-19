@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151230: XCLN: OLE App Required to Send Attachments Using OLE"
-permalink: kb/151/Q151230/
+permalink: /kb/151/Q151230/
 ---
 
 ## Q151230: XCLN: OLE App Required to Send Attachments Using OLE

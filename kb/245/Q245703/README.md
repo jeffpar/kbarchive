@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245703: APM Executes Local Program Version If Package Share Unavailable"
-permalink: kb/245/Q245703/
+permalink: /kb/245/Q245703/
 ---
 
 ## Q245703: APM Executes Local Program Version If Package Share Unavailable

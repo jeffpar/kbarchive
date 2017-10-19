@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125254: PC WSPlus: Err Msg: The Schedule File Could Not Be Opened..."
-permalink: kb/125/Q125254/
+permalink: /kb/125/Q125254/
 ---
 
 ## Q125254: PC WSPlus: Err Msg: The Schedule File Could Not Be Opened...

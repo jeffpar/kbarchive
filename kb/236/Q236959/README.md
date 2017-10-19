@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236959: Access Violation in Mpr.dll During Startup"
-permalink: kb/236/Q236959/
+permalink: /kb/236/Q236959/
 ---
 
 ## Q236959: Access Violation in Mpr.dll During Startup

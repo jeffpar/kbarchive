@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326345: &quot;Invalid Procedure Call&quot; Err When You Assign User-Defined Type"
-permalink: kb/326/Q326345/
+permalink: /kb/326/Q326345/
 ---
 
 ## Q326345: &quot;Invalid Procedure Call&quot; Err When You Assign User-Defined Type

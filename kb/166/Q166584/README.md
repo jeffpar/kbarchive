@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166584: XFOR: IMS Does Not Immediately Reject Inbound Connections"
-permalink: kb/166/Q166584/
+permalink: /kb/166/Q166584/
 ---
 
 ## Q166584: XFOR: IMS Does Not Immediately Reject Inbound Connections

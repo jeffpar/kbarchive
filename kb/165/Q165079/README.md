@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165079: WD97: &quot;From Scanner&quot; Missing from Insert Picture Menu"
-permalink: kb/165/Q165079/
+permalink: /kb/165/Q165079/
 ---
 
 ## Q165079: WD97: &quot;From Scanner&quot; Missing from Insert Picture Menu

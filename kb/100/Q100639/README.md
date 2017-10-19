@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100639: INFO: Unicode Support in the Microsoft Foundation Class Library"
-permalink: kb/100/Q100639/
+permalink: /kb/100/Q100639/
 ---
 
 ## Q100639: INFO: Unicode Support in the Microsoft Foundation Class Library

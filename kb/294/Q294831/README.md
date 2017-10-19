@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294831: Server.HTMLEncode/Server.URLEncode Corrupt High UTF8 Characters"
-permalink: kb/294/Q294831/
+permalink: /kb/294/Q294831/
 ---
 
 ## Q294831: Server.HTMLEncode/Server.URLEncode Corrupt High UTF8 Characters

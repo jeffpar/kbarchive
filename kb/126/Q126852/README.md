@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126852: Pasting in Write Closes All 16-bit Applications"
-permalink: kb/126/Q126852/
+permalink: /kb/126/Q126852/
 ---
 
 ## Q126852: Pasting in Write Closes All 16-bit Applications

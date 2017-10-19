@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196166: XADM: Move Server Wizard and Microsoft Exchange Event Service"
-permalink: kb/196/Q196166/
+permalink: /kb/196/Q196166/
 ---
 
 ## Q196166: XADM: Move Server Wizard and Microsoft Exchange Event Service

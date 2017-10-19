@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179456: Extensible Counters in Performance Monitor"
-permalink: kb/179/Q179456/
+permalink: /kb/179/Q179456/
 ---
 
 ## Q179456: Extensible Counters in Performance Monitor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103425: TrueType Equivalents of Common ATM Fonts"
-permalink: kb/103/Q103425/
+permalink: /kb/103/Q103425/
 ---
 
 ## Q103425: TrueType Equivalents of Common ATM Fonts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128725: Domain Name Ignored by Windows for Workgroups with TCP/IP-32"
-permalink: kb/128/Q128725/
+permalink: /kb/128/Q128725/
 ---
 
 ## Q128725: Domain Name Ignored by Windows for Workgroups with TCP/IP-32

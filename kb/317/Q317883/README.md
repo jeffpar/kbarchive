@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317883: HOW TO: Manage Your Visual SourceSafe Configuration for VS .NET"
-permalink: kb/317/Q317883/
+permalink: /kb/317/Q317883/
 ---
 
 ## Q317883: HOW TO: Manage Your Visual SourceSafe Configuration for VS .NET

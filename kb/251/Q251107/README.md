@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251107: XCON: MTA Can Now Set Reply To Address for the X.400 Connector"
-permalink: kb/251/Q251107/
+permalink: /kb/251/Q251107/
 ---
 
 ## Q251107: XCON: MTA Can Now Set Reply To Address for the X.400 Connector

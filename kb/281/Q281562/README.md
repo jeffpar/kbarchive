@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281562: A New Systems Management Server Installation Does Not Work"
-permalink: kb/281/Q281562/
+permalink: /kb/281/Q281562/
 ---
 
 ## Q281562: A New Systems Management Server Installation Does Not Work

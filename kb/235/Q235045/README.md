@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235045: Quick Course in Microsoft Word 2000 Comments and Corrections"
-permalink: kb/235/Q235045/
+permalink: /kb/235/Q235045/
 ---
 
 ## Q235045: Quick Course in Microsoft Word 2000 Comments and Corrections

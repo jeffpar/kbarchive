@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176076: XCON: Low MDB USERS Registry Entry Causes Slow Connector"
-permalink: kb/176/Q176076/
+permalink: /kb/176/Q176076/
 ---
 
 ## Q176076: XCON: Low MDB USERS Registry Entry Causes Slow Connector

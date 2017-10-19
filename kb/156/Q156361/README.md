@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156361: Names Disappear from Name List in Directory Auditing Window"
-permalink: kb/156/Q156361/
+permalink: /kb/156/Q156361/
 ---
 
 ## Q156361: Names Disappear from Name List in Directory Auditing Window

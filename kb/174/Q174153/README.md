@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174153: XFOR: Incorrect Character Mappings when MSFS32.DLL Doesn't Match"
-permalink: kb/174/Q174153/
+permalink: /kb/174/Q174153/
 ---
 
 ## Q174153: XFOR: Incorrect Character Mappings when MSFS32.DLL Doesn't Match

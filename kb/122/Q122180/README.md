@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122180: Systems Management Server Event Log Codes 250 Through 349"
-permalink: kb/122/Q122180/
+permalink: /kb/122/Q122180/
 ---
 
 ## Q122180: Systems Management Server Event Log Codes 250 Through 349

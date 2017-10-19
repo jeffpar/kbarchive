@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251001: Default Settings May Not Propagate to Computers/Users"
-permalink: kb/251/Q251001/
+permalink: /kb/251/Q251001/
 ---
 
 ## Q251001: Default Settings May Not Propagate to Computers/Users

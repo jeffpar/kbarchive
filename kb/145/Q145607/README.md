@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145607: BUG: Cannot Customize the Form Controls Toolbar"
-permalink: kb/145/Q145607/
+permalink: /kb/145/Q145607/
 ---
 
 ## Q145607: BUG: Cannot Customize the Form Controls Toolbar

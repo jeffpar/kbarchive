@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77990: Switching Stacks at Interrupt Time"
-permalink: kb/077/Q77990/
+permalink: /kb/077/Q77990/
 ---
 
 ## Q77990: Switching Stacks at Interrupt Time

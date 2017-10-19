@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314932: HOW TO: Create an FTP Folder with Read Access but Not List Acces"
-permalink: kb/314/Q314932/
+permalink: /kb/314/Q314932/
 ---
 
 ## Q314932: HOW TO: Create an FTP Folder with Read Access but Not List Acces

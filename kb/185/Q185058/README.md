@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185058: How to Send Faxes Using SBS Fax Client Software"
-permalink: kb/185/Q185058/
+permalink: /kb/185/Q185058/
 ---
 
 ## Q185058: How to Send Faxes Using SBS Fax Client Software

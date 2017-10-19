@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312059: Encarta 2002: Err Msg: FF Has Caused an Invalid Page Fault..."
-permalink: kb/312/Q312059/
+permalink: /kb/312/Q312059/
 ---
 
 ## Q312059: Encarta 2002: Err Msg: FF Has Caused an Invalid Page Fault...

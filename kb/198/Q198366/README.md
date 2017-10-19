@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198366: WD97: How to Add the Insert Address Button to a Toolbar"
-permalink: kb/198/Q198366/
+permalink: /kb/198/Q198366/
 ---
 
 ## Q198366: WD97: How to Add the Insert Address Button to a Toolbar

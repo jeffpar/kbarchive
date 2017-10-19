@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231949: AMD CPUID Check for the AMD Athlon Now Allows Write-Combining"
-permalink: kb/231/Q231949/
+permalink: /kb/231/Q231949/
 ---
 
 ## Q231949: AMD CPUID Check for the AMD Athlon Now Allows Write-Combining

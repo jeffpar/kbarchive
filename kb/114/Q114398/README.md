@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114398: FAX: First Contact Form for FAX Gateway"
-permalink: kb/114/Q114398/
+permalink: /kb/114/Q114398/
 ---
 
 ## Q114398: FAX: First Contact Form for FAX Gateway

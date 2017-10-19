@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303831: FIX: ScrollBars on EditBox Control Do Not Show in Compiled .exe"
-permalink: kb/303/Q303831/
+permalink: /kb/303/Q303831/
 ---
 
 ## Q303831: FIX: ScrollBars on EditBox Control Do Not Show in Compiled .exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241048: Answer File for System Preparation Tool Is Not Removed"
-permalink: kb/241/Q241048/
+permalink: /kb/241/Q241048/
 ---
 
 ## Q241048: Answer File for System Preparation Tool Is Not Removed

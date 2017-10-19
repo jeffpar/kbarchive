@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99068: REXX Commands Syntax--an Abbreviated Listing"
-permalink: kb/099/Q99068/
+permalink: /kb/099/Q99068/
 ---
 
 ## Q99068: REXX Commands Syntax--an Abbreviated Listing

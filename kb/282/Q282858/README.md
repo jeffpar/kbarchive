@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282858: Cron Jobs Stop Running"
-permalink: kb/282/Q282858/
+permalink: /kb/282/Q282858/
 ---
 
 ## Q282858: Cron Jobs Stop Running

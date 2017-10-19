@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189888: PRB: Stack Size Now 256 K in Internet Information Server 4.0"
-permalink: kb/189/Q189888/
+permalink: /kb/189/Q189888/
 ---
 
 ## Q189888: PRB: Stack Size Now 256 K in Internet Information Server 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167824: XCLN: How Schedule+ Displays Busy Times for Resources"
-permalink: kb/167/Q167824/
+permalink: /kb/167/Q167824/
 ---
 
 ## Q167824: XCLN: How Schedule+ Displays Busy Times for Resources

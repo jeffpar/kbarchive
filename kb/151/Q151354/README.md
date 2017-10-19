@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151354: Sslogin Utility to Validate User Name and Password"
-permalink: kb/151/Q151354/
+permalink: /kb/151/Q151354/
 ---
 
 ## Q151354: Sslogin Utility to Validate User Name and Password

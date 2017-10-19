@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139445: Windows 95 Support for Infrared Data Association Connectivity"
-permalink: kb/139/Q139445/
+permalink: /kb/139/Q139445/
 ---
 
 ## Q139445: Windows 95 Support for Infrared Data Association Connectivity

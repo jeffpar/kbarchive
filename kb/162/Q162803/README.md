@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162803: Sound Not Functioning on NEC Versa 4050 Notebook with Modem"
-permalink: kb/162/Q162803/
+permalink: /kb/162/Q162803/
 ---
 
 ## Q162803: Sound Not Functioning on NEC Versa 4050 Notebook with Modem

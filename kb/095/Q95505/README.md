@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95505: Troubleshooting GP Faults (UAEs)"
-permalink: kb/095/Q95505/
+permalink: /kb/095/Q95505/
 ---
 
 ## Q95505: Troubleshooting GP Faults (UAEs)

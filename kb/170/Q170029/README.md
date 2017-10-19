@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170029: Remote Access Service Fails If Plug and Play Service Disabled"
-permalink: kb/170/Q170029/
+permalink: /kb/170/Q170029/
 ---
 
 ## Q170029: Remote Access Service Fails If Plug and Play Service Disabled

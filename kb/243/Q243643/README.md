@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243643: Logon Attempt Does Not Work After New Windows NT Installation"
-permalink: kb/243/Q243643/
+permalink: /kb/243/Q243643/
 ---
 
 ## Q243643: Logon Attempt Does Not Work After New Windows NT Installation

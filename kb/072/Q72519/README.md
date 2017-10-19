@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72519: NCR 286 Requires BIOS 4.42 or Later to Run in Standard Mode"
-permalink: kb/072/Q72519/
+permalink: /kb/072/Q72519/
 ---
 
 ## Q72519: NCR 286 Requires BIOS 4.42 or Later to Run in Standard Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153958: No Support for Print Performance Architecture under Windows NT"
-permalink: kb/153/Q153958/
+permalink: /kb/153/Q153958/
 ---
 
 ## Q153958: No Support for Print Performance Architecture under Windows NT

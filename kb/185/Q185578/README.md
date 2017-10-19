@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185578: XADM: Error Message &quot;Custom Attribute (N) Is Unknown&quot;"
-permalink: kb/185/Q185578/
+permalink: /kb/185/Q185578/
 ---
 
 ## Q185578: XADM: Error Message &quot;Custom Attribute (N) Is Unknown&quot;

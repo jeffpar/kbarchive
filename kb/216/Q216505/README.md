@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216505: DirectX 6.1: List of Files Displayed in DirectX Diagnostic Tool"
-permalink: kb/216/Q216505/
+permalink: /kb/216/Q216505/
 ---
 
 ## Q216505: DirectX 6.1: List of Files Displayed in DirectX Diagnostic Tool

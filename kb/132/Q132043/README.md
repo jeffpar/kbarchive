@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132043: Err Msg Using %USERNAME% Followed by a Character: The home dir"
-permalink: kb/132/Q132043/
+permalink: /kb/132/Q132043/
 ---
 
 ## Q132043: Err Msg Using %USERNAME% Followed by a Character: The home dir

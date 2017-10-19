@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189059: Stop: 0x0000000A Using Microtest CD-ROM Changer Software"
-permalink: kb/189/Q189059/
+permalink: /kb/189/Q189059/
 ---
 
 ## Q189059: Stop: 0x0000000A Using Microtest CD-ROM Changer Software

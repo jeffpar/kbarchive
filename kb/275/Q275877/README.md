@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275877: SMS: Installing BackOffice 4.5 Version of SMS on Windows 2000"
-permalink: kb/275/Q275877/
+permalink: /kb/275/Q275877/
 ---
 
 ## Q275877: SMS: Installing BackOffice 4.5 Version of SMS on Windows 2000

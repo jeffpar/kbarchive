@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98762: Use the Load= Line to Load VSafe Manager (MWAVTSR.EXE)"
-permalink: kb/098/Q98762/
+permalink: /kb/098/Q98762/
 ---
 
 ## Q98762: Use the Load= Line to Load VSafe Manager (MWAVTSR.EXE)

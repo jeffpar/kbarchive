@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321079: SNABase Service May Not Start Properly with Events 561 and 624"
-permalink: kb/321/Q321079/
+permalink: /kb/321/Q321079/
 ---
 
 ## Q321079: SNABase Service May Not Start Properly with Events 561 and 624

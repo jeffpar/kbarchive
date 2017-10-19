@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83401: Using Windows 3.1 with Qualitas 386MAX or BlueMAX"
-permalink: kb/083/Q83401/
+permalink: /kb/083/Q83401/
 ---
 
 ## Q83401: Using Windows 3.1 with Qualitas 386MAX or BlueMAX

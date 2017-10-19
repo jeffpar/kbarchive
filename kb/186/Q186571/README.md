@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186571: User Manager in Terminal Server"
-permalink: kb/186/Q186571/
+permalink: /kb/186/Q186571/
 ---
 
 ## Q186571: User Manager in Terminal Server

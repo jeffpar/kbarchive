@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95578: PRB: Double-Click Does Not Close Win 3.1 Maximized MDI Child"
-permalink: kb/095/Q95578/
+permalink: /kb/095/Q95578/
 ---
 
 ## Q95578: PRB: Double-Click Does Not Close Win 3.1 Maximized MDI Child

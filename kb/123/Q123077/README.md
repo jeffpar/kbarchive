@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123077: PING Causes Reboot If Executed Outside Windows for Workgroups"
-permalink: kb/123/Q123077/
+permalink: /kb/123/Q123077/
 ---
 
 ## Q123077: PING Causes Reboot If Executed Outside Windows for Workgroups

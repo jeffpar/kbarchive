@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258894: Allegiance: Server Settings Removed When You Uninstall Client"
-permalink: kb/258/Q258894/
+permalink: /kb/258/Q258894/
 ---
 
 ## Q258894: Allegiance: Server Settings Removed When You Uninstall Client

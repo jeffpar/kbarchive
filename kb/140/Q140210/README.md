@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140210: INF: Microsoft Jet 3.0 Questions and Answers"
-permalink: kb/140/Q140210/
+permalink: /kb/140/Q140210/
 ---
 
 ## Q140210: INF: Microsoft Jet 3.0 Questions and Answers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151389: PRB: Code Example in Online Help on HelpContextID Gives Error"
-permalink: kb/151/Q151389/
+permalink: /kb/151/Q151389/
 ---
 
 ## Q151389: PRB: Code Example in Online Help on HelpContextID Gives Error

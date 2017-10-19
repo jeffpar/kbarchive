@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138699: Configuring Windows NT Workstation for Multiple Frame Types"
-permalink: kb/138/Q138699/
+permalink: /kb/138/Q138699/
 ---
 
 ## Q138699: Configuring Windows NT Workstation for Multiple Frame Types

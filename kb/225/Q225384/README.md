@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225384: SBS: Fax Does Not Use Second Modem When the First One Is Busy"
-permalink: kb/225/Q225384/
+permalink: /kb/225/Q225384/
 ---
 
 ## Q225384: SBS: Fax Does Not Use Second Modem When the First One Is Busy

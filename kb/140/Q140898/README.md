@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140898: BUG: Application Error Occurs When Rebinding a Bound DBGrid"
-permalink: kb/140/Q140898/
+permalink: /kb/140/Q140898/
 ---
 
 ## Q140898: BUG: Application Error Occurs When Rebinding a Bound DBGrid

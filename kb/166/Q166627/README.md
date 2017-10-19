@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166627: XCLN: Outlook Express Crashes Store When SSL Is Used"
-permalink: kb/166/Q166627/
+permalink: /kb/166/Q166627/
 ---
 
 ## Q166627: XCLN: Outlook Express Crashes Store When SSL Is Used

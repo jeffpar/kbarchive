@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140302: FoxPro Advisor Magazine Articles May 1995"
-permalink: kb/140/Q140302/
+permalink: /kb/140/Q140302/
 ---
 
 ## Q140302: FoxPro Advisor Magazine Articles May 1995

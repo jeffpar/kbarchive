@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49525: Ways to Stop LAN Manager 2.x Server or Workstation"
-permalink: kb/049/Q49525/
+permalink: /kb/049/Q49525/
 ---
 
 ## Q49525: Ways to Stop LAN Manager 2.x Server or Workstation

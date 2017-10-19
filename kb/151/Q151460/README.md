@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151460: Mastering Microsoft Visual C++: Minimum System Requirements"
-permalink: kb/151/Q151460/
+permalink: /kb/151/Q151460/
 ---
 
 ## Q151460: Mastering Microsoft Visual C++: Minimum System Requirements

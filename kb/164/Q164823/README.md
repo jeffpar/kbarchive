@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164823: AFD Executive Worker Thread Causes Excessive Nonpaged Pool Use"
-permalink: kb/164/Q164823/
+permalink: /kb/164/Q164823/
 ---
 
 ## Q164823: AFD Executive Worker Thread Causes Excessive Nonpaged Pool Use

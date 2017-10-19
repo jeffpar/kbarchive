@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190719: WD97: No Send To Mail Recipient with Outlook Express/Windows 98"
-permalink: kb/190/Q190719/
+permalink: /kb/190/Q190719/
 ---
 
 ## Q190719: WD97: No Send To Mail Recipient with Outlook Express/Windows 98

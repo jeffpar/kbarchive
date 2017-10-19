@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65122: Executable-File Header Format"
-permalink: kb/065/Q65122/
+permalink: /kb/065/Q65122/
 ---
 
 ## Q65122: Executable-File Header Format

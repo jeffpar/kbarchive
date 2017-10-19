@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221120: Command Line Switches Supported by the Y2K Update"
-permalink: kb/221/Q221120/
+permalink: /kb/221/Q221120/
 ---
 
 ## Q221120: Command Line Switches Supported by the Y2K Update

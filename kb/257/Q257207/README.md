@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257207: XFOR: Message ID Tab Is Missing from Message Properties"
-permalink: kb/257/Q257207/
+permalink: /kb/257/Q257207/
 ---
 
 ## Q257207: XFOR: Message ID Tab Is Missing from Message Properties

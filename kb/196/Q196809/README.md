@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196809: PRB: CompactDatabase Method Requires Locale to Convert 2.0 MDB"
-permalink: kb/196/Q196809/
+permalink: /kb/196/Q196809/
 ---
 
 ## Q196809: PRB: CompactDatabase Method Requires Locale to Convert 2.0 MDB

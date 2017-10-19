@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131654: 500 NATIONS: Make Wallpaper Replaces Previous Wallpaper"
-permalink: kb/131/Q131654/
+permalink: /kb/131/Q131654/
 ---
 
 ## Q131654: 500 NATIONS: Make Wallpaper Replaces Previous Wallpaper

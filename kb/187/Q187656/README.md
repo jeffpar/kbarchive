@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187656: XADM: Exceeding Storage Limit For Public Folder"
-permalink: kb/187/Q187656/
+permalink: /kb/187/Q187656/
 ---
 
 ## Q187656: XADM: Exceeding Storage Limit For Public Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138561: FIX: Combo Box Does Not Appear to Drop Down When Clicked"
-permalink: kb/138/Q138561/
+permalink: /kb/138/Q138561/
 ---
 
 ## Q138561: FIX: Combo Box Does Not Appear to Drop Down When Clicked

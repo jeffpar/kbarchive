@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255212: Event Viewer Records Event ID 8020 Errors for DSMN"
-permalink: kb/255/Q255212/
+permalink: /kb/255/Q255212/
 ---
 
 ## Q255212: Event Viewer Records Event ID 8020 Errors for DSMN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151662: HOWTO: How To Disable Tabs in CPropertySheet"
-permalink: kb/151/Q151662/
+permalink: /kb/151/Q151662/
 ---
 
 ## Q151662: HOWTO: How To Disable Tabs in CPropertySheet

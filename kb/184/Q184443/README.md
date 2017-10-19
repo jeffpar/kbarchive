@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184443: Error Message: Explorer.exe - DLL Initialization Failed..."
-permalink: kb/184/Q184443/
+permalink: /kb/184/Q184443/
 ---
 
 ## Q184443: Error Message: Explorer.exe - DLL Initialization Failed...

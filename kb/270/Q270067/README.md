@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270067: Delta Values Not Updated When You Run Management Agent"
-permalink: kb/270/Q270067/
+permalink: /kb/270/Q270067/
 ---
 
 ## Q270067: Delta Values Not Updated When You Run Management Agent

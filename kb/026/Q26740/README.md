@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26740: WD97: How to Create a Stamp Substitute on Envelopes or Postcards"
-permalink: kb/026/Q26740/
+permalink: /kb/026/Q26740/
 ---
 
 ## Q26740: WD97: How to Create a Stamp Substitute on Envelopes or Postcards

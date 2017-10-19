@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156807: STL Sample for accumulate, copy, vector::push_back Functions"
-permalink: kb/156/Q156807/
+permalink: /kb/156/Q156807/
 ---
 
 ## Q156807: STL Sample for accumulate, copy, vector::push_back Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103313: Problems Running EMM386.EXE with Laptop Computers"
-permalink: kb/103/Q103313/
+permalink: /kb/103/Q103313/
 ---
 
 ## Q103313: Problems Running EMM386.EXE with Laptop Computers

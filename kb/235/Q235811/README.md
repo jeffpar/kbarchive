@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235811: Using the SMS Windows NT Client Software Installation Account"
-permalink: kb/235/Q235811/
+permalink: /kb/235/Q235811/
 ---
 
 ## Q235811: Using the SMS Windows NT Client Software Installation Account

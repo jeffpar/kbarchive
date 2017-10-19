@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163060: ODE97: Uninstalling ODE Tools Breaks 32-bit Visual Basic Pro 4.0"
-permalink: kb/163/Q163060/
+permalink: /kb/163/Q163060/
 ---
 
 ## Q163060: ODE97: Uninstalling ODE Tools Breaks 32-bit Visual Basic Pro 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58377: File Manager Directory Window Not Updating"
-permalink: kb/058/Q58377/
+permalink: /kb/058/Q58377/
 ---
 
 ## Q58377: File Manager Directory Window Not Updating

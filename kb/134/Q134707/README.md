@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134707: BUG: Unbinding Grid with SetAll Method Still Displays Data"
-permalink: kb/134/Q134707/
+permalink: /kb/134/Q134707/
 ---
 
 ## Q134707: BUG: Unbinding Grid with SetAll Method Still Displays Data

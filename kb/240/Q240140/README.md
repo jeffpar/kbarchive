@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240140: Incorrect Domain Logon List After Moving Users to New Domain"
-permalink: kb/240/Q240140/
+permalink: /kb/240/Q240140/
 ---
 
 ## Q240140: Incorrect Domain Logon List After Moving Users to New Domain

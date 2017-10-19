@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260743: Baseball 2001: You Can Substitute Designated Hitter at Any Time"
-permalink: kb/260/Q260743/
+permalink: /kb/260/Q260743/
 ---
 
 ## Q260743: Baseball 2001: You Can Substitute Designated Hitter at Any Time

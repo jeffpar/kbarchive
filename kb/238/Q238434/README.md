@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238434: Error Message When Using NTLM Passthrough Authentication"
-permalink: kb/238/Q238434/
+permalink: /kb/238/Q238434/
 ---
 
 ## Q238434: Error Message When Using NTLM Passthrough Authentication

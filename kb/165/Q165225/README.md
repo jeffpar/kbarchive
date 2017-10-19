@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165225: AP_TP_Name_Not_Recognized with DBCS and Single Signon"
-permalink: kb/165/Q165225/
+permalink: /kb/165/Q165225/
 ---
 
 ## Q165225: AP_TP_Name_Not_Recognized with DBCS and Single Signon

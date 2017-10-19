@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315535: BUG: Problems When You Rebuild Static and Dynamic CRT Libraries"
-permalink: kb/315/Q315535/
+permalink: /kb/315/Q315535/
 ---
 
 ## Q315535: BUG: Problems When You Rebuild Static and Dynamic CRT Libraries

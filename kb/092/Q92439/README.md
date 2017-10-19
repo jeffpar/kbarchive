@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92439: PC DB: Preventing .KEY Files from Locking Up on Networks"
-permalink: kb/092/Q92439/
+permalink: /kb/092/Q92439/
 ---
 
 ## Q92439: PC DB: Preventing .KEY Files from Locking Up on Networks

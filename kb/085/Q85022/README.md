@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85022: Windows Err Msg: Protected Mode Violation... with DTK 486"
-permalink: kb/085/Q85022/
+permalink: /kb/085/Q85022/
 ---
 
 ## Q85022: Windows Err Msg: Protected Mode Violation... with DTK 486

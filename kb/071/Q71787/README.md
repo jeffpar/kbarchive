@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71787: Stacker Disk-Compression Utility with Windows"
-permalink: kb/071/Q71787/
+permalink: /kb/071/Q71787/
 ---
 
 ## Q71787: Stacker Disk-Compression Utility with Windows

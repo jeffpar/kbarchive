@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252638: Problem Using Internet Service Manager from TS Client Session"
-permalink: kb/252/Q252638/
+permalink: /kb/252/Q252638/
 ---
 
 ## Q252638: Problem Using Internet Service Manager from TS Client Session

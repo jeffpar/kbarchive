@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92916: UB Cards Not Initialized If Memory Window Is Not Excluded"
-permalink: kb/092/Q92916/
+permalink: /kb/092/Q92916/
 ---
 
 ## Q92916: UB Cards Not Initialized If Memory Window Is Not Excluded

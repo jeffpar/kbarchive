@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186573: Terminal Server Administrators Must Install Printer Drivers"
-permalink: kb/186/Q186573/
+permalink: /kb/186/Q186573/
 ---
 
 ## Q186573: Terminal Server Administrators Must Install Printer Drivers

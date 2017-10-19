@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271235: SMS: Mandatory Advertisement Runs Immediately After the Event"
-permalink: kb/271/Q271235/
+permalink: /kb/271/Q271235/
 ---
 
 ## Q271235: SMS: Mandatory Advertisement Runs Immediately After the Event

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129416: Loading HP ScanJet IIcx Driver Causes CD-ROM to Fail"
-permalink: kb/129/Q129416/
+permalink: /kb/129/Q129416/
 ---
 
 ## Q129416: Loading HP ScanJet IIcx Driver Causes CD-ROM to Fail

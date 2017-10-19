@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87984: Novell Server Disconnect Hangs Enhanced Mode Windows"
-permalink: kb/087/Q87984/
+permalink: /kb/087/Q87984/
 ---
 
 ## Q87984: Novell Server Disconnect Hangs Enhanced Mode Windows

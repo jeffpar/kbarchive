@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134306: How to Simulate a Tabbed Dialog Box with Vertical Tabs"
-permalink: kb/134/Q134306/
+permalink: /kb/134/Q134306/
 ---
 
 ## Q134306: How to Simulate a Tabbed Dialog Box with Vertical Tabs

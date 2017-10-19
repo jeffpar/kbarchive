@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226812: SMS: Error Message: Cannot Install SMS Site Manager"
-permalink: kb/226/Q226812/
+permalink: /kb/226/Q226812/
 ---
 
 ## Q226812: SMS: Error Message: Cannot Install SMS Site Manager

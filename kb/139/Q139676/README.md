@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139676: Finding Out Who Has Locked the SNA Server Configuration File"
-permalink: kb/139/Q139676/
+permalink: /kb/139/Q139676/
 ---
 
 ## Q139676: Finding Out Who Has Locked the SNA Server Configuration File

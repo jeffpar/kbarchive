@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136693: How To Build Distribution Disks for Different Op Systems"
-permalink: kb/136/Q136693/
+permalink: /kb/136/Q136693/
 ---
 
 ## Q136693: How To Build Distribution Disks for Different Op Systems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104393: How to Get Control Dimensions from VBGetControlProperty"
-permalink: kb/104/Q104393/
+permalink: /kb/104/Q104393/
 ---
 
 ## Q104393: How to Get Control Dimensions from VBGetControlProperty

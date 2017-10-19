@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151514: CD-ROM Programs Vibrate in 6x or Faster CD-ROM Drive"
-permalink: kb/151/Q151514/
+permalink: /kb/151/Q151514/
 ---
 
 ## Q151514: CD-ROM Programs Vibrate in 6x or Faster CD-ROM Drive

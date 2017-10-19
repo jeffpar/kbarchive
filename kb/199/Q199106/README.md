@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199106: WD97: Hidden AutoNum Field Show Result After Save as Word 6.0/95"
-permalink: kb/199/Q199106/
+permalink: /kb/199/Q199106/
 ---
 
 ## Q199106: WD97: Hidden AutoNum Field Show Result After Save as Word 6.0/95

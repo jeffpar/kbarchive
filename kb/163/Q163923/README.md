@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163923: HOST Name Resolution Returns Last IP Addr on Multihomed Computer"
-permalink: kb/163/Q163923/
+permalink: /kb/163/Q163923/
 ---
 
 ## Q163923: HOST Name Resolution Returns Last IP Addr on Multihomed Computer

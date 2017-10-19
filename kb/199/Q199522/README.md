@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199522: HOWTO: Porting Static PowerPC Libraries"
-permalink: kb/199/Q199522/
+permalink: /kb/199/Q199522/
 ---
 
 ## Q199522: HOWTO: Porting Static PowerPC Libraries

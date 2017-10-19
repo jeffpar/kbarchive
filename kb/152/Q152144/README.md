@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152144: XADM: Changing a Site's Display Name in the Address Book"
-permalink: kb/152/Q152144/
+permalink: /kb/152/Q152144/
 ---
 
 ## Q152144: XADM: Changing a Site's Display Name in the Address Book

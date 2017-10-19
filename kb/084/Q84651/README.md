@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84651: TrueType Font Pack File List with Expanded Filenames &amp; Sizes"
-permalink: kb/084/Q84651/
+permalink: /kb/084/Q84651/
 ---
 
 ## Q84651: TrueType Font Pack File List with Expanded Filenames &amp; Sizes

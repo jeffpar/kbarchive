@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155188: BUG:Tabbing into Option Group Does Not Select Correct Option"
-permalink: kb/155/Q155188/
+permalink: /kb/155/Q155188/
 ---
 
 ## Q155188: BUG:Tabbing into Option Group Does Not Select Correct Option

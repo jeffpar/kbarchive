@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156290: XCLN Forms Designer Hangs Attempting To Install Project File"
-permalink: kb/156/Q156290/
+permalink: /kb/156/Q156290/
 ---
 
 ## Q156290: XCLN Forms Designer Hangs Attempting To Install Project File

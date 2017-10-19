@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102651: Required Settings for Adaptec 1510 SCSI Host Adapter"
-permalink: kb/102/Q102651/
+permalink: /kb/102/Q102651/
 ---
 
 ## Q102651: Required Settings for Adaptec 1510 SCSI Host Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94849: Main View in Golf Does Not Maximize in All Resolutions"
-permalink: kb/094/Q94849/
+permalink: /kb/094/Q94849/
 ---
 
 ## Q94849: Main View in Golf Does Not Maximize in All Resolutions

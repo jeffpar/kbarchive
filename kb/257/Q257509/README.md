@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257509: Hardware Inventory May Cause Third-Party Win32 Services to Stop"
-permalink: kb/257/Q257509/
+permalink: /kb/257/Q257509/
 ---
 
 ## Q257509: Hardware Inventory May Cause Third-Party Win32 Services to Stop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176375: XFOR: CCMC Shuts Down and Logs Events 82 and 83"
-permalink: kb/176/Q176375/
+permalink: /kb/176/Q176375/
 ---
 
 ## Q176375: XFOR: CCMC Shuts Down and Logs Events 82 and 83

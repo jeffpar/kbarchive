@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130447: FAX: Err Msg: &quot;Failure to Submit Fax!&quot; on Every Faxout Cycle"
-permalink: kb/130/Q130447/
+permalink: /kb/130/Q130447/
 ---
 
 ## Q130447: FAX: Err Msg: &quot;Failure to Submit Fax!&quot; on Every Faxout Cycle

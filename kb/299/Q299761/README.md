@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299761: Train Simulator: Known Issues with Editing Tools"
-permalink: kb/299/Q299761/
+permalink: /kb/299/Q299761/
 ---
 
 ## Q299761: Train Simulator: Known Issues with Editing Tools

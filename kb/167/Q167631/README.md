@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167631: SMS: Windows 95 Service Pack 1 Contains Incorrect PDF Format"
-permalink: kb/167/Q167631/
+permalink: /kb/167/Q167631/
 ---
 
 ## Q167631: SMS: Windows 95 Service Pack 1 Contains Incorrect PDF Format

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104945: DOCERR: BEEPQQ and SLEEPQQ Deal in Milliseconds and Hz"
-permalink: kb/104/Q104945/
+permalink: /kb/104/Q104945/
 ---
 
 ## Q104945: DOCERR: BEEPQQ and SLEEPQQ Deal in Milliseconds and Hz

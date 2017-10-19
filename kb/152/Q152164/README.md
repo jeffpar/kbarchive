@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152164: TN3270/E Server Service Incorrectly Handles Courtesy Acks"
-permalink: kb/152/Q152164/
+permalink: /kb/152/Q152164/
 ---
 
 ## Q152164: TN3270/E Server Service Incorrectly Handles Courtesy Acks

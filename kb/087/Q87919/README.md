@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87919: MicroSpeed Serial Card Is Incompatible with Windows 3.1"
-permalink: kb/087/Q87919/
+permalink: /kb/087/Q87919/
 ---
 
 ## Q87919: MicroSpeed Serial Card Is Incompatible with Windows 3.1

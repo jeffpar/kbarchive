@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267971: SMS: The Library for Smsperf.dll Could Not Be Opened"
-permalink: kb/267/Q267971/
+permalink: /kb/267/Q267971/
 ---
 
 ## Q267971: SMS: The Library for Smsperf.dll Could Not Be Opened

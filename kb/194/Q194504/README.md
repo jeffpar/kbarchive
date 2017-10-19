@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194504: XCON: NDR Returned for Deleted Mailbox when Message Sent to DL"
-permalink: kb/194/Q194504/
+permalink: /kb/194/Q194504/
 ---
 
 ## Q194504: XCON: NDR Returned for Deleted Mailbox when Message Sent to DL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138792: TCARC.SYS Causes Trap 0xA or Hangs Windows NT"
-permalink: kb/138/Q138792/
+permalink: /kb/138/Q138792/
 ---
 
 ## Q138792: TCARC.SYS Causes Trap 0xA or Hangs Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169180: FP97: Setup Requires 2-4 MB More Free Disk Space than Indicated"
-permalink: kb/169/Q169180/
+permalink: /kb/169/Q169180/
 ---
 
 ## Q169180: FP97: Setup Requires 2-4 MB More Free Disk Space than Indicated

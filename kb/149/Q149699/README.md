@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149699: FIX: RichTextBox Control Prevents Click Event from Firing"
-permalink: kb/149/Q149699/
+permalink: /kb/149/Q149699/
 ---
 
 ## Q149699: FIX: RichTextBox Control Prevents Click Event from Firing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130083: PRB: Record Pointer Moves to EOF After INSERT - SQL Fails"
-permalink: kb/130/Q130083/
+permalink: /kb/130/Q130083/
 ---
 
 ## Q130083: PRB: Record Pointer Moves to EOF After INSERT - SQL Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177580: LU1 Print Jobs Formatted Incorrectly when Using Bypass GDI, PDT"
-permalink: kb/177/Q177580/
+permalink: /kb/177/Q177580/
 ---
 
 ## Q177580: LU1 Print Jobs Formatted Incorrectly when Using Bypass GDI, PDT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107723: Writer/Artist: Copying Text and Graphics"
-permalink: kb/107/Q107723/
+permalink: /kb/107/Q107723/
 ---
 
 ## Q107723: Writer/Artist: Copying Text and Graphics

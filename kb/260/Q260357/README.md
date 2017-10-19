@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260357: HEAD Request Returns Both Header and Body"
-permalink: kb/260/Q260357/
+permalink: /kb/260/Q260357/
 ---
 
 ## Q260357: HEAD Request Returns Both Header and Body

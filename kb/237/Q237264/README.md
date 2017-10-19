@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237264: Encarta Encyclopedia 2000: Setup Stops Responding"
-permalink: kb/237/Q237264/
+permalink: /kb/237/Q237264/
 ---
 
 ## Q237264: Encarta Encyclopedia 2000: Setup Stops Responding

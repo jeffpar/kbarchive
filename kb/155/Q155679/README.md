@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155679: Cannot Use Defragment Now Button in Drive Properties"
-permalink: kb/155/Q155679/
+permalink: /kb/155/Q155679/
 ---
 
 ## Q155679: Cannot Use Defragment Now Button in Drive Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148959: WINSLI32.DLL Access Violation with Visual C++ Debugger"
-permalink: kb/148/Q148959/
+permalink: /kb/148/Q148959/
 ---
 
 ## Q148959: WINSLI32.DLL Access Violation with Visual C++ Debugger

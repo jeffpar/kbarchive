@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129852: PRB: GetActiveWindow Behaves Differently Under Windows NT"
-permalink: kb/129/Q129852/
+permalink: /kb/129/Q129852/
 ---
 
 ## Q129852: PRB: GetActiveWindow Behaves Differently Under Windows NT

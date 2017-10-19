@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176362: Bookshelf: Cannot Play Sound Clips or National Anthems"
-permalink: kb/176/Q176362/
+permalink: /kb/176/Q176362/
 ---
 
 ## Q176362: Bookshelf: Cannot Play Sound Clips or National Anthems

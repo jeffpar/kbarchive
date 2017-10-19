@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235786: SMS: Software Metering Server Same for Online/Offline Clients"
-permalink: kb/235/Q235786/
+permalink: /kb/235/Q235786/
 ---
 
 ## Q235786: SMS: Software Metering Server Same for Online/Offline Clients

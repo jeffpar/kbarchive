@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172537: BUG: Grid Clip Property Contains Remnants of Former Values"
-permalink: kb/172/Q172537/
+permalink: /kb/172/Q172537/
 ---
 
 ## Q172537: BUG: Grid Clip Property Contains Remnants of Former Values

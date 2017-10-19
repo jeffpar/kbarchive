@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98181: How to Quick Format an MSBACKUP.EXE Disk"
-permalink: kb/098/Q98181/
+permalink: /kb/098/Q98181/
 ---
 
 ## Q98181: How to Quick Format an MSBACKUP.EXE Disk

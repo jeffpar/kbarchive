@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164251: FIX: Blank Field Type Causes Error in Table Wizard"
-permalink: kb/164/Q164251/
+permalink: /kb/164/Q164251/
 ---
 
 ## Q164251: FIX: Blank Field Type Causes Error in Table Wizard

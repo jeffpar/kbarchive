@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64472: PostScript Soft Fonts Download on Each Page of Document"
-permalink: kb/064/Q64472/
+permalink: /kb/064/Q64472/
 ---
 
 ## Q64472: PostScript Soft Fonts Download on Each Page of Document

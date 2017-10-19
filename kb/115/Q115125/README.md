@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115125: ADT2: Calendar Control Font and Color Properties Unavailable"
-permalink: kb/115/Q115125/
+permalink: /kb/115/Q115125/
 ---
 
 ## Q115125: ADT2: Calendar Control Font and Color Properties Unavailable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168672: Cannot Read Japanese E-mail Messages on MSN"
-permalink: kb/168/Q168672/
+permalink: /kb/168/Q168672/
 ---
 
 ## Q168672: Cannot Read Japanese E-mail Messages on MSN

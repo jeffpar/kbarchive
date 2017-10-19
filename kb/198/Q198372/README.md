@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198372: WD97: Merge Buttons in Mail Merge Helper, Toolbar Unavailable"
-permalink: kb/198/Q198372/
+permalink: /kb/198/Q198372/
 ---
 
 ## Q198372: WD97: Merge Buttons in Mail Merge Helper, Toolbar Unavailable

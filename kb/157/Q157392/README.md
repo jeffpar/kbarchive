@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157392: INFO: STL Sample for the inner_product Function"
-permalink: kb/157/Q157392/
+permalink: /kb/157/Q157392/
 ---
 
 ## Q157392: INFO: STL Sample for the inner_product Function

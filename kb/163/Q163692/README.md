@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163692: PPT: Code Displays Each Word of Selection in Message Box"
-permalink: kb/163/Q163692/
+permalink: /kb/163/Q163692/
 ---
 
 ## Q163692: PPT: Code Displays Each Word of Selection in Message Box

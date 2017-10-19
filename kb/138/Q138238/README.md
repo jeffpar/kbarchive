@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138238: IPConfig Shows Default Subnet Mask and Gateway for RAS Client"
-permalink: kb/138/Q138238/
+permalink: /kb/138/Q138238/
 ---
 
 ## Q138238: IPConfig Shows Default Subnet Mask and Gateway for RAS Client

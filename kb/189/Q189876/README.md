@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189876: FP: FrontPage Personal Web Server Not Designed for Dedicated Use"
-permalink: kb/189/Q189876/
+permalink: /kb/189/Q189876/
 ---
 
 ## Q189876: FP: FrontPage Personal Web Server Not Designed for Dedicated Use

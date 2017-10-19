@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207421: SMS: Advertisements Cannot Be Deleted with Just Delete Right"
-permalink: kb/207/Q207421/
+permalink: /kb/207/Q207421/
 ---
 
 ## Q207421: SMS: Advertisements Cannot Be Deleted with Just Delete Right

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152604: XADM: Functionality Provided by Set as Default Option"
-permalink: kb/152/Q152604/
+permalink: /kb/152/Q152604/
 ---
 
 ## Q152604: XADM: Functionality Provided by Set as Default Option

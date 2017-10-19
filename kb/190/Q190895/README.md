@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190895: DirectX: Different File Versions Listed in Diagnostic Tools"
-permalink: kb/190/Q190895/
+permalink: /kb/190/Q190895/
 ---
 
 ## Q190895: DirectX: Different File Versions Listed in Diagnostic Tools

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140208: Cannot Use Both Dial-Up Networking and Direct Cable Connection"
-permalink: kb/140/Q140208/
+permalink: /kb/140/Q140208/
 ---
 
 ## Q140208: Cannot Use Both Dial-Up Networking and Direct Cable Connection

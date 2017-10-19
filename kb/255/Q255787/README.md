@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255787: Exchange Discovery Takes a Long Time"
-permalink: kb/255/Q255787/
+permalink: /kb/255/Q255787/
 ---
 
 ## Q255787: Exchange Discovery Takes a Long Time

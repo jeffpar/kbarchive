@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63914: Definition of SMARTDrive Double Buffering"
-permalink: kb/063/Q63914/
+permalink: /kb/063/Q63914/
 ---
 
 ## Q63914: Definition of SMARTDrive Double Buffering

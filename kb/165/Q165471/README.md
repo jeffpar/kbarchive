@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165471: WD97: ListNum Changes Numbering Level When Heading Style Applied"
-permalink: kb/165/Q165471/
+permalink: /kb/165/Q165471/
 ---
 
 ## Q165471: WD97: ListNum Changes Numbering Level When Heading Style Applied

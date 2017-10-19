@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90465: WinLogin Support Policies"
-permalink: kb/090/Q90465/
+permalink: /kb/090/Q90465/
 ---
 
 ## Q90465: WinLogin Support Policies

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252279: PRB: Sysprep Shows Error Message After Running Mini Setup"
-permalink: kb/252/Q252279/
+permalink: /kb/252/Q252279/
 ---
 
 ## Q252279: PRB: Sysprep Shows Error Message After Running Mini Setup

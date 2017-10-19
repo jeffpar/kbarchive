@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171870: FIX: SQL_CUR_USE_IF_NEEDED Does Not Work with 2.0 Drivers"
-permalink: kb/171/Q171870/
+permalink: /kb/171/Q171870/
 ---
 
 ## Q171870: FIX: SQL_CUR_USE_IF_NEEDED Does Not Work with 2.0 Drivers

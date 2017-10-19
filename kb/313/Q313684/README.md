@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313684: GET_TP_PROPERTIES Fails with INVALID_VERB Response Code"
-permalink: kb/313/Q313684/
+permalink: /kb/313/Q313684/
 ---
 
 ## Q313684: GET_TP_PROPERTIES Fails with INVALID_VERB Response Code

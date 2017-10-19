@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141896: Encarta96 ErrMsg: Enc9632.exe Is Not a Valid Win32 Application"
-permalink: kb/141/Q141896/
+permalink: /kb/141/Q141896/
 ---
 
 ## Q141896: Encarta96 ErrMsg: Enc9632.exe Is Not a Valid Win32 Application

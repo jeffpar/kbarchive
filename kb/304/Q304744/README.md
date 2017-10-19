@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304744: Print Jobs May Have Incorrect LPI Or Page Breaks"
-permalink: kb/304/Q304744/
+permalink: /kb/304/Q304744/
 ---
 
 ## Q304744: Print Jobs May Have Incorrect LPI Or Page Breaks

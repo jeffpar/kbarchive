@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196694: Cannot Start Windows NT on Computer with IBM ServRaid Adapter"
-permalink: kb/196/Q196694/
+permalink: /kb/196/Q196694/
 ---
 
 ## Q196694: Cannot Start Windows NT on Computer with IBM ServRaid Adapter

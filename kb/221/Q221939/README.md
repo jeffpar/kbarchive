@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221939: XFOR: Notes Connector CPU Use is More Than 80 Percent"
-permalink: kb/221/Q221939/
+permalink: /kb/221/Q221939/
 ---
 
 ## Q221939: XFOR: Notes Connector CPU Use is More Than 80 Percent

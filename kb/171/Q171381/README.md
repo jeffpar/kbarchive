@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171381: Windows 95 Domain Password Change Doesn't Change Local Password"
-permalink: kb/171/Q171381/
+permalink: /kb/171/Q171381/
 ---
 
 ## Q171381: Windows 95 Domain Password Change Doesn't Change Local Password

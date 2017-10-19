@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248113: Files That Are Not Removed When You Uninstall SP6 or SP6a"
-permalink: kb/248/Q248113/
+permalink: /kb/248/Q248113/
 ---
 
 ## Q248113: Files That Are Not Removed When You Uninstall SP6 or SP6a

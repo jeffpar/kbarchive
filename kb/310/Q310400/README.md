@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310400: Microsoft Outlook Version 2002 Step by Step Comments and Correct"
-permalink: kb/310/Q310400/
+permalink: /kb/310/Q310400/
 ---
 
 ## Q310400: Microsoft Outlook Version 2002 Step by Step Comments and Correct

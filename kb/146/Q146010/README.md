@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146010: HOWTO: Setting the Picture Property of an ActiveX Control"
-permalink: kb/146/Q146010/
+permalink: /kb/146/Q146010/
 ---
 
 ## Q146010: HOWTO: Setting the Picture Property of an ActiveX Control

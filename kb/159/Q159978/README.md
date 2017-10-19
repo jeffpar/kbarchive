@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159978: XCLN: Troubleshooting Profgen.exe Problems"
-permalink: kb/159/Q159978/
+permalink: /kb/159/Q159978/
 ---
 
 ## Q159978: XCLN: Troubleshooting Profgen.exe Problems

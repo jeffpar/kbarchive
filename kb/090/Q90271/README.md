@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90271: Password Caching in Windows for Workgroups"
-permalink: kb/090/Q90271/
+permalink: /kb/090/Q90271/
 ---
 
 ## Q90271: Password Caching in Windows for Workgroups

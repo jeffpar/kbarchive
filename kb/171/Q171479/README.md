@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171479: FIX: Mod 0 Causes an IPF or Access Violation"
-permalink: kb/171/Q171479/
+permalink: /kb/171/Q171479/
 ---
 
 ## Q171479: FIX: Mod 0 Causes an IPF or Access Violation

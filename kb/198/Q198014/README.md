@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198014: XFOR: Troubleshooting GroupWise 5.x Migration Problems"
-permalink: kb/198/Q198014/
+permalink: /kb/198/Q198014/
 ---
 
 ## Q198014: XFOR: Troubleshooting GroupWise 5.x Migration Problems

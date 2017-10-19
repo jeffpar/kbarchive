@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131465: PRB: Cannot Use LOCAL Variables as Arrays"
-permalink: kb/131/Q131465/
+permalink: /kb/131/Q131465/
 ---
 
 ## Q131465: PRB: Cannot Use LOCAL Variables as Arrays

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179465: Can't Access Windows 98 Starts Here Trial Version"
-permalink: kb/179/Q179465/
+permalink: /kb/179/Q179465/
 ---
 
 ## Q179465: Can't Access Windows 98 Starts Here Trial Version

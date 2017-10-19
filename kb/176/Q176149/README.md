@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176149: XADM: Store.exe Stops Unexpectedly When Handling Unicode Msg"
-permalink: kb/176/Q176149/
+permalink: /kb/176/Q176149/
 ---
 
 ## Q176149: XADM: Store.exe Stops Unexpectedly When Handling Unicode Msg

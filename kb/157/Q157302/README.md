@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157302: XCLN: Importing a PAB Can Result in Duplicate Entries"
-permalink: kb/157/Q157302/
+permalink: /kb/157/Q157302/
 ---
 
 ## Q157302: XCLN: Importing a PAB Can Result in Duplicate Entries

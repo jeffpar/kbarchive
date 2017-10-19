@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180639: WD97: &quot;Keep Lines Together&quot; Has No Effect in Tables"
-permalink: kb/180/Q180639/
+permalink: /kb/180/Q180639/
 ---
 
 ## Q180639: WD97: &quot;Keep Lines Together&quot; Has No Effect in Tables

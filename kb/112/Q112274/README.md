@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112274: Mac Srv: Server Connection Log Inconsistent"
-permalink: kb/112/Q112274/
+permalink: /kb/112/Q112274/
 ---
 
 ## Q112274: Mac Srv: Server Connection Log Inconsistent

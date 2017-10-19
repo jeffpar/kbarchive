@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137830: Slide Numbers in Title Not Printed in Outline View"
-permalink: kb/137/Q137830/
+permalink: /kb/137/Q137830/
 ---
 
 ## Q137830: Slide Numbers in Title Not Printed in Outline View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128715: 3Com 3C619B Fails Using Default Settings"
-permalink: kb/128/Q128715/
+permalink: /kb/128/Q128715/
 ---
 
 ## Q128715: 3Com 3C619B Fails Using Default Settings

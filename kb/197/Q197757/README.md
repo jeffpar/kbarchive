@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197757: WD97: Conditional MERGEFIELD Lost When Converted to MacWord"
-permalink: kb/197/Q197757/
+permalink: /kb/197/Q197757/
 ---
 
 ## Q197757: WD97: Conditional MERGEFIELD Lost When Converted to MacWord

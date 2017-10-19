@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160360: INFO: Troubleshooting Exceptions in Internet Server Products"
-permalink: kb/160/Q160360/
+permalink: /kb/160/Q160360/
 ---
 
 ## Q160360: INFO: Troubleshooting Exceptions in Internet Server Products

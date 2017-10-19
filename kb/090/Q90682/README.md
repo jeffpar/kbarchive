@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90682: COMMAND.COM Corrupted or Missing on a DoubleSpace Drive"
-permalink: kb/090/Q90682/
+permalink: /kb/090/Q90682/
 ---
 
 ## Q90682: COMMAND.COM Corrupted or Missing on a DoubleSpace Drive

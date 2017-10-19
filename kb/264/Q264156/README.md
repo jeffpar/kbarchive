@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264156: INFO: Including RC File in Another RC File w/ Different CodePage"
-permalink: kb/264/Q264156/
+permalink: /kb/264/Q264156/
 ---
 
 ## Q264156: INFO: Including RC File in Another RC File w/ Different CodePage

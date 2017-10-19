@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84085: Novell's Task Mode Switch Causes Problems in 386 Enhanced Mode"
-permalink: kb/084/Q84085/
+permalink: /kb/084/Q84085/
 ---
 
 ## Q84085: Novell's Task Mode Switch Causes Problems in 386 Enhanced Mode

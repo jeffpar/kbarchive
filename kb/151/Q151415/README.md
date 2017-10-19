@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151415: Fury3 Power Ups Symbol Not Anchored On The Instrument Panel"
-permalink: kb/151/Q151415/
+permalink: /kb/151/Q151415/
 ---
 
 ## Q151415: Fury3 Power Ups Symbol Not Anchored On The Instrument Panel

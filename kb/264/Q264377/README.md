@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264377: Windows Services for UNIX Solaris SSOD for Sparc Only"
-permalink: kb/264/Q264377/
+permalink: /kb/264/Q264377/
 ---
 
 ## Q264377: Windows Services for UNIX Solaris SSOD for Sparc Only

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135888: Windows 95 CD-ROM Mouse.txt File"
-permalink: kb/135/Q135888/
+permalink: /kb/135/Q135888/
 ---
 
 ## Q135888: Windows 95 CD-ROM Mouse.txt File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168381: BUG: Exported Make Files with Browse Info Are Rebuilt Twice"
-permalink: kb/168/Q168381/
+permalink: /kb/168/Q168381/
 ---
 
 ## Q168381: BUG: Exported Make Files with Browse Info Are Rebuilt Twice

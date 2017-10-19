@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140516: FIX: Storing Array Elements Causes GP Fault"
-permalink: kb/140/Q140516/
+permalink: /kb/140/Q140516/
 ---
 
 ## Q140516: FIX: Storing Array Elements Causes GP Fault

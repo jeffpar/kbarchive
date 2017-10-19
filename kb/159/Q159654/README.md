@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159654: XADM: Problems Converting Chinese Microsoft Mail Postoffice"
-permalink: kb/159/Q159654/
+permalink: /kb/159/Q159654/
 ---
 
 ## Q159654: XADM: Problems Converting Chinese Microsoft Mail Postoffice

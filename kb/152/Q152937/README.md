@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152937: XADM: Multipart MIME Message with TNEF Causes Store Failure"
-permalink: kb/152/Q152937/
+permalink: /kb/152/Q152937/
 ---
 
 ## Q152937: XADM: Multipart MIME Message with TNEF Causes Store Failure

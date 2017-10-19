@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177068: Flight Simulator 98 Setup Program Does Not Install Any Files"
-permalink: kb/177/Q177068/
+permalink: /kb/177/Q177068/
 ---
 
 ## Q177068: Flight Simulator 98 Setup Program Does Not Install Any Files

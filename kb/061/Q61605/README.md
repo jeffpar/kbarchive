@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61605: DOCERR: NODATA and pwords Parameters Switched in EXPORT Docs"
-permalink: kb/061/Q61605/
+permalink: /kb/061/Q61605/
 ---
 
 ## Q61605: DOCERR: NODATA and pwords Parameters Switched in EXPORT Docs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111096: BUG: Size of Owner-Draw Drop-Down Combo Box in Dialog Is Wrong"
-permalink: kb/111/Q111096/
+permalink: /kb/111/Q111096/
 ---
 
 ## Q111096: BUG: Size of Owner-Draw Drop-Down Combo Box in Dialog Is Wrong

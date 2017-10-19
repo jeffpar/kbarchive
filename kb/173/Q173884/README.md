@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173884: How to Capture Screen Shots in Windows Using Print Screen Key"
-permalink: kb/173/Q173884/
+permalink: /kb/173/Q173884/
 ---
 
 ## Q173884: How to Capture Screen Shots in Windows Using Print Screen Key

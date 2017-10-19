@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111927: WFWG 3.11 System Hangs with Shiva SREMOTE.DOS"
-permalink: kb/111/Q111927/
+permalink: /kb/111/Q111927/
 ---
 
 ## Q111927: WFWG 3.11 System Hangs with Shiva SREMOTE.DOS

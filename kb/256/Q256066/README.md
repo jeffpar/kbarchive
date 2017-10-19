@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256066: HOWTO: Use the StatusBar ActiveX Control in Visual FoxPro"
-permalink: kb/256/Q256066/
+permalink: /kb/256/Q256066/
 ---
 
 ## Q256066: HOWTO: Use the StatusBar ActiveX Control in Visual FoxPro

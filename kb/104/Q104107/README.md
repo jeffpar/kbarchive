@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104107: PC Win DOS: Return Receipt Automatically Assigns High Priority"
-permalink: kb/104/Q104107/
+permalink: /kb/104/Q104107/
 ---
 
 ## Q104107: PC Win DOS: Return Receipt Automatically Assigns High Priority

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108652: Flight Simulator 5.0: Undocumented Autopilot Quick Key, CTRL+Z"
-permalink: kb/108/Q108652/
+permalink: /kb/108/Q108652/
 ---
 
 ## Q108652: Flight Simulator 5.0: Undocumented Autopilot Quick Key, CTRL+Z

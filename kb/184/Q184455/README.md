@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184455: Outwars: How to Enable Direct3D Hardware Acceleration"
-permalink: kb/184/Q184455/
+permalink: /kb/184/Q184455/
 ---
 
 ## Q184455: Outwars: How to Enable Direct3D Hardware Acceleration

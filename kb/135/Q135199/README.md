@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135199: Cannot Paste Text into Paint Document"
-permalink: kb/135/Q135199/
+permalink: /kb/135/Q135199/
 ---
 
 ## Q135199: Cannot Paste Text into Paint Document

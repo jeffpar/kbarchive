@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185290: WD97: Macro to Find Special Characters Based on Unicode Value"
-permalink: kb/185/Q185290/
+permalink: /kb/185/Q185290/
 ---
 
 ## Q185290: WD97: Macro to Find Special Characters Based on Unicode Value

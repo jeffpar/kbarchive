@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123083: Client Hangs Accessing Remote Downlevel LAN Manager Server"
-permalink: kb/123/Q123083/
+permalink: /kb/123/Q123083/
 ---
 
 ## Q123083: Client Hangs Accessing Remote Downlevel LAN Manager Server

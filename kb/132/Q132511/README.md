@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132511: Windows NT 3.51 Hangs on Shutdown With Some S3 Based Video Cards"
-permalink: kb/132/Q132511/
+permalink: /kb/132/Q132511/
 ---
 
 ## Q132511: Windows NT 3.51 Hangs on Shutdown With Some S3 Based Video Cards

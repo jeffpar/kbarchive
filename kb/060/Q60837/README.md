@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60837: Using Search Results Windows in File Manager"
-permalink: kb/060/Q60837/
+permalink: /kb/060/Q60837/
 ---
 
 ## Q60837: Using Search Results Windows in File Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96627: No Warning If Setup Fails to Modify Your SYSTEM.INI File"
-permalink: kb/096/Q96627/
+permalink: /kb/096/Q96627/
 ---
 
 ## Q96627: No Warning If Setup Fails to Modify Your SYSTEM.INI File

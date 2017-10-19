@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172141: Logging File Methods with IIS"
-permalink: kb/172/Q172141/
+permalink: /kb/172/Q172141/
 ---
 
 ## Q172141: Logging File Methods with IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132891: INFO: The Meaning of v.# for User Name in SourceSafe"
-permalink: kb/132/Q132891/
+permalink: /kb/132/Q132891/
 ---
 
 ## Q132891: INFO: The Meaning of v.# for User Name in SourceSafe

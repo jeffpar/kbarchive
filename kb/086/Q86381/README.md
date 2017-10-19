@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86381: PC WSPlus: Err Msg: XXXXXXXX.CAL Is Not a Valid Local..."
-permalink: kb/086/Q86381/
+permalink: /kb/086/Q86381/
 ---
 
 ## Q86381: PC WSPlus: Err Msg: XXXXXXXX.CAL Is Not a Valid Local...

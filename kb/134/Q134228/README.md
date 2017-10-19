@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q134228: PC DirSync: Err Msg: Fatal [ 7] Error Renaming File"
-permalink: kb/134/Q134228/
+title: "Q134228: PC DirSync: Err Msg: Fatal &#91; 7&#93; Error Renaming File"
+permalink: /kb/134/Q134228/
 ---
 
-## Q134228: PC DirSync: Err Msg: Fatal [ 7] Error Renaming File
+## Q134228: PC DirSync: Err Msg: Fatal &#91; 7&#93; Error Renaming File
 
 	Article: Q134228
 	Product(s): Microsoft Mail For PC Networks

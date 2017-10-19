@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152575: XADM: Directory Replication Option Not Disp. in Standard Edition"
-permalink: kb/152/Q152575/
+permalink: /kb/152/Q152575/
 ---
 
 ## Q152575: XADM: Directory Replication Option Not Disp. in Standard Edition

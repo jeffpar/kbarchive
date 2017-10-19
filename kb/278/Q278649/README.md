@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278649: Verify Phone Number in MSN Web Companion"
-permalink: kb/278/Q278649/
+permalink: /kb/278/Q278649/
 ---
 
 ## Q278649: Verify Phone Number in MSN Web Companion

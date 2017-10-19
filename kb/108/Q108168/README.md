@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108168: PRB: &quot;No Label Layouts Found&quot; Message When Creating a Label"
-permalink: kb/108/Q108168/
+permalink: /kb/108/Q108168/
 ---
 
 ## Q108168: PRB: &quot;No Label Layouts Found&quot; Message When Creating a Label

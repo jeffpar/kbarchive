@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199824: HOWTO: Get the Address of Variables in Visual Basic"
-permalink: kb/199/Q199824/
+permalink: /kb/199/Q199824/
 ---
 
 ## Q199824: HOWTO: Get the Address of Variables in Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60507: HLLAPI SEND KEY Function 3: TAB and BACKTAB"
-permalink: kb/060/Q60507/
+permalink: /kb/060/Q60507/
 ---
 
 ## Q60507: HLLAPI SEND KEY Function 3: TAB and BACKTAB

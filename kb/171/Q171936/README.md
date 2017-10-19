@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171936: Configuring Microsoft Exchange for Use with MSN"
-permalink: kb/171/Q171936/
+permalink: /kb/171/Q171936/
 ---
 
 ## Q171936: Configuring Microsoft Exchange for Use with MSN

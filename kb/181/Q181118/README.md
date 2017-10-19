@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181118: SMS: Security Considerations for the PCM Service Account"
-permalink: kb/181/Q181118/
+permalink: /kb/181/Q181118/
 ---
 
 ## Q181118: SMS: Security Considerations for the PCM Service Account

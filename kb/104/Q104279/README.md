@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104279: PC DB: Creating or Resetting a .KEY and .MBG Pair"
-permalink: kb/104/Q104279/
+permalink: /kb/104/Q104279/
 ---
 
 ## Q104279: PC DB: Creating or Resetting a .KEY and .MBG Pair

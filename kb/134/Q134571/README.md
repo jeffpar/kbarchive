@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134571: &quot;No Such File or Directory&quot; Message with File Compare (FC.EXE)"
-permalink: kb/134/Q134571/
+permalink: /kb/134/Q134571/
 ---
 
 ## Q134571: &quot;No Such File or Directory&quot; Message with File Compare (FC.EXE)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170859: Require Secure SSL Channel Option is Not Available"
-permalink: kb/170/Q170859/
+permalink: /kb/170/Q170859/
 ---
 
 ## Q170859: Require Secure SSL Channel Option is Not Available

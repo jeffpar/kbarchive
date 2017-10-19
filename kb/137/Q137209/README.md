@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137209: Remotely Viewing SMS Event Logs Using Windows NT Event Viewer"
-permalink: kb/137/Q137209/
+permalink: /kb/137/Q137209/
 ---
 
 ## Q137209: Remotely Viewing SMS Event Logs Using Windows NT Event Viewer

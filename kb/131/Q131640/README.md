@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131640: 100% CPU Usage Running SNA Windows 3.x Client on Windows NT"
-permalink: kb/131/Q131640/
+permalink: /kb/131/Q131640/
 ---
 
 ## Q131640: 100% CPU Usage Running SNA Windows 3.x Client on Windows NT

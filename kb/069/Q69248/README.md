@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69248: Using the MSC Technologies Serial and Bus Mouse Under Windows"
-permalink: kb/069/Q69248/
+permalink: /kb/069/Q69248/
 ---
 
 ## Q69248: Using the MSC Technologies Serial and Bus Mouse Under Windows

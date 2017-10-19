@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184989: XFOR: Backup Exec Event ID 3004 When Backing Up LinkAge"
-permalink: kb/184/Q184989/
+permalink: /kb/184/Q184989/
 ---
 
 ## Q184989: XFOR: Backup Exec Event ID 3004 When Backing Up LinkAge

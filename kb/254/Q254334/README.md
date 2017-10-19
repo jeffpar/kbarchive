@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254334: XCON: MTA Stops in EMSMTA!o4puinqh After Dereferencing a Pointer"
-permalink: kb/254/Q254334/
+permalink: /kb/254/Q254334/
 ---
 
 ## Q254334: XCON: MTA Stops in EMSMTA!o4puinqh After Dereferencing a Pointer

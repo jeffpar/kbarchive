@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51389: Mac Form: Err Msg: Can't Understand Arguments to Command Put"
-permalink: kb/051/Q51389/
+permalink: /kb/051/Q51389/
 ---
 
 ## Q51389: Mac Form: Err Msg: Can't Understand Arguments to Command Put

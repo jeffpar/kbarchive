@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299482: Index Server Interprets Three-Digit Numbers as Years"
-permalink: kb/299/Q299482/
+permalink: /kb/299/Q299482/
 ---
 
 ## Q299482: Index Server Interprets Three-Digit Numbers as Years

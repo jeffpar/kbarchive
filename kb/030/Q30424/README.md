@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30424: Using the &amp; Operator to Combine Multiple Parameters"
-permalink: kb/030/Q30424/
+permalink: /kb/030/Q30424/
 ---
 
 ## Q30424: Using the &amp; Operator to Combine Multiple Parameters

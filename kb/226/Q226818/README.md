@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226818: SMS: Broken DBCS Characters in Remote MS-DOS Command Window"
-permalink: kb/226/Q226818/
+permalink: /kb/226/Q226818/
 ---
 
 ## Q226818: SMS: Broken DBCS Characters in Remote MS-DOS Command Window

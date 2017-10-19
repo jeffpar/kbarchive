@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188887: HOWTO: How to Display Print Preview in a Top-Level Form"
-permalink: kb/188/Q188887/
+permalink: /kb/188/Q188887/
 ---
 
 ## Q188887: HOWTO: How to Display Print Preview in a Top-Level Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147325: Julia Child: Minimum System Requirements"
-permalink: kb/147/Q147325/
+permalink: /kb/147/Q147325/
 ---
 
 ## Q147325: Julia Child: Minimum System Requirements

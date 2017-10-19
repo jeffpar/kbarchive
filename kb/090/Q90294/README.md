@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90294: Using Large Memory Model, Microsoft C/C++, &amp; Windows 3.1"
-permalink: kb/090/Q90294/
+permalink: /kb/090/Q90294/
 ---
 
 ## Q90294: Using Large Memory Model, Microsoft C/C++, &amp; Windows 3.1

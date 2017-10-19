@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237543: SMS: Service Pack Upgrade Considerations for Clients"
-permalink: kb/237/Q237543/
+permalink: /kb/237/Q237543/
 ---
 
 ## Q237543: SMS: Service Pack Upgrade Considerations for Clients

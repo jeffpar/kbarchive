@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154486: PRB: Access Denied or File Locked When Log In to SourceSafe"
-permalink: kb/154/Q154486/
+permalink: /kb/154/Q154486/
 ---
 
 ## Q154486: PRB: Access Denied or File Locked When Log In to SourceSafe

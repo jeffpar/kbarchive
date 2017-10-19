@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165732: Error Message While Installing FPNW: Group Already Exists"
-permalink: kb/165/Q165732/
+permalink: /kb/165/Q165732/
 ---
 
 ## Q165732: Error Message While Installing FPNW: Group Already Exists

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239447: Unable to Connect to Down-Level SMB Server"
-permalink: kb/239/Q239447/
+permalink: /kb/239/Q239447/
 ---
 
 ## Q239447: Unable to Connect to Down-Level SMB Server

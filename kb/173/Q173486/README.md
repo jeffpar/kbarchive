@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173486: SNAVER and SNA Manager Don't Display Service Pack Level"
-permalink: kb/173/Q173486/
+permalink: /kb/173/Q173486/
 ---
 
 ## Q173486: SNAVER and SNA Manager Don't Display Service Pack Level

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138995: Updating to WinNT 3.51 SP2 Causes Loss of Persistent IP Routes"
-permalink: kb/138/Q138995/
+permalink: /kb/138/Q138995/
 ---
 
 ## Q138995: Updating to WinNT 3.51 SP2 Causes Loss of Persistent IP Routes

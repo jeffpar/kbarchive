@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119355: PC Gen: Answer Procedure Played Approximately Once Per Second"
-permalink: kb/119/Q119355/
+permalink: /kb/119/Q119355/
 ---
 
 ## Q119355: PC Gen: Answer Procedure Played Approximately Once Per Second

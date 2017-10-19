@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191342: SMS: PGC Fails to Configure Shared Applications on WFW Clients"
-permalink: kb/191/Q191342/
+permalink: /kb/191/Q191342/
 ---
 
 ## Q191342: SMS: PGC Fails to Configure Shared Applications on WFW Clients

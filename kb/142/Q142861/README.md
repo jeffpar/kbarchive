@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142861: Racal ES3210 NIC Support in Windows NT 3.51"
-permalink: kb/142/Q142861/
+permalink: /kb/142/Q142861/
 ---
 
 ## Q142861: Racal ES3210 NIC Support in Windows NT 3.51

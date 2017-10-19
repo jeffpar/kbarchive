@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183883: WD97: Updating Cross References Causes Object Duplication"
-permalink: kb/183/Q183883/
+permalink: /kb/183/Q183883/
 ---
 
 ## Q183883: WD97: Updating Cross References Causes Object Duplication

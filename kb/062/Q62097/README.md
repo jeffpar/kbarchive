@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62097: INFO: Line Continuation Evaluated Before Inline Comment"
-permalink: kb/062/Q62097/
+permalink: /kb/062/Q62097/
 ---
 
 ## Q62097: INFO: Line Continuation Evaluated Before Inline Comment

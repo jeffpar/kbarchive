@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186423: HOWTO: Return and Assign Arrays with Visual Basic 6.0"
-permalink: kb/186/Q186423/
+permalink: /kb/186/Q186423/
 ---
 
 ## Q186423: HOWTO: Return and Assign Arrays with Visual Basic 6.0

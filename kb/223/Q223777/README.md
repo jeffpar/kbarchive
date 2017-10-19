@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223777: XCLN: Voting Buttons Disappear when Sending Message to CR"
-permalink: kb/223/Q223777/
+permalink: /kb/223/Q223777/
 ---
 
 ## Q223777: XCLN: Voting Buttons Disappear when Sending Message to CR

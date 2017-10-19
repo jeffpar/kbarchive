@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142260: XCON: IMC Replies To SMTP Messages In RTF"
-permalink: kb/142/Q142260/
+permalink: /kb/142/Q142260/
 ---
 
 ## Q142260: XCON: IMC Replies To SMTP Messages In RTF

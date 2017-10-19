@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165417: DOC: Toolbar_Size Not Implemented in VSS 5"
-permalink: kb/165/Q165417/
+permalink: /kb/165/Q165417/
 ---
 
 ## Q165417: DOC: Toolbar_Size Not Implemented in VSS 5

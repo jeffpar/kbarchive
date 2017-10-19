@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197787: Err Msg: You Do Not Have Permission to Access Your Central..."
-permalink: kb/197/Q197787/
+permalink: /kb/197/Q197787/
 ---
 
 ## Q197787: Err Msg: You Do Not Have Permission to Access Your Central...

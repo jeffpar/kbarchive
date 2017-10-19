@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90923: Multimedia Development Kit Cannot Be Installed in WFWG"
-permalink: kb/090/Q90923/
+permalink: /kb/090/Q90923/
 ---
 
 ## Q90923: Multimedia Development Kit Cannot Be Installed in WFWG

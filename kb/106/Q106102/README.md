@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106102: Environment Vars in Logon Scripts on a Non-Windows NT Client"
-permalink: kb/106/Q106102/
+permalink: /kb/106/Q106102/
 ---
 
 ## Q106102: Environment Vars in Logon Scripts on a Non-Windows NT Client

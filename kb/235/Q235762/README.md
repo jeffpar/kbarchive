@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235762: SMS: NT_Logon_Server_Manager Enumerates All Shares on DCs"
-permalink: kb/235/Q235762/
+permalink: /kb/235/Q235762/
 ---
 
 ## Q235762: SMS: NT_Logon_Server_Manager Enumerates All Shares on DCs

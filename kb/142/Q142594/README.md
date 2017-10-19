@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142594: INFO: Caveats for Using Empty Top-Level Projects in Dev. Studio"
-permalink: kb/142/Q142594/
+permalink: /kb/142/Q142594/
 ---
 
 ## Q142594: INFO: Caveats for Using Empty Top-Level Projects in Dev. Studio

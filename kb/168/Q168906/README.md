@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168906: XCON: Setting up Advanced Logging on Exchange 5.0 and 5.5 MTAs"
-permalink: kb/168/Q168906/
+permalink: /kb/168/Q168906/
 ---
 
 ## Q168906: XCON: Setting up Advanced Logging on Exchange 5.0 and 5.5 MTAs

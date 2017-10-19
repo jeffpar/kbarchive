@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166833: SMS: Failed Status MIF Does Not Update Job Status"
-permalink: kb/166/Q166833/
+permalink: /kb/166/Q166833/
 ---
 
 ## Q166833: SMS: Failed Status MIF Does Not Update Job Status

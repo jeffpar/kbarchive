@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219731: Golf 99: Swing Animation Does Not Match the Shot You Play"
-permalink: kb/219/Q219731/
+permalink: /kb/219/Q219731/
 ---
 
 ## Q219731: Golf 99: Swing Animation Does Not Match the Shot You Play

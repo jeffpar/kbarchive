@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243277: How to Install the Year 2000 Update Without Internet Explorer"
-permalink: kb/243/Q243277/
+permalink: /kb/243/Q243277/
 ---
 
 ## Q243277: How to Install the Year 2000 Update Without Internet Explorer

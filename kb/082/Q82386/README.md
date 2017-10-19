@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82386: Using Turbo Pascal with Windows"
-permalink: kb/082/Q82386/
+permalink: /kb/082/Q82386/
 ---
 
 ## Q82386: Using Turbo Pascal with Windows

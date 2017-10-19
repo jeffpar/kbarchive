@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169271: Err Msg: Database Already in Use w/ MS Access DB on Remote Share"
-permalink: kb/169/Q169271/
+permalink: /kb/169/Q169271/
 ---
 
 ## Q169271: Err Msg: Database Already in Use w/ MS Access DB on Remote Share

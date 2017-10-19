@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310663: PRB: SQLBrowseConnect Can't Browse SQL 7.0 Servers from Win9x"
-permalink: kb/310/Q310663/
+permalink: /kb/310/Q310663/
 ---
 
 ## Q310663: PRB: SQLBrowseConnect Can't Browse SQL 7.0 Servers from Win9x

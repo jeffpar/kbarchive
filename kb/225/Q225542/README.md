@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225542: SMS: Logon Points Are Not Being Configured"
-permalink: kb/225/Q225542/
+permalink: /kb/225/Q225542/
 ---
 
 ## Q225542: SMS: Logon Points Are Not Being Configured

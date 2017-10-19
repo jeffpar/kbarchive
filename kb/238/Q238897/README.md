@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238897: HOWTO: Preset the Win CE Computer Name"
-permalink: kb/238/Q238897/
+permalink: /kb/238/Q238897/
 ---
 
 ## Q238897: HOWTO: Preset the Win CE Computer Name

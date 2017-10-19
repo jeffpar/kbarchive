@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98610: PC WSPlus: Err Msg: SCHDIST.EXE -br00:01:00 Terminated..."
-permalink: kb/098/Q98610/
+permalink: /kb/098/Q98610/
 ---
 
 ## Q98610: PC WSPlus: Err Msg: SCHDIST.EXE -br00:01:00 Terminated...

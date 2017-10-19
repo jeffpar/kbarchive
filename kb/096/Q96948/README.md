@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96948: WFWG: 3C509 Modem Setting May Disable Network Functionality"
-permalink: kb/096/Q96948/
+permalink: /kb/096/Q96948/
 ---
 
 ## Q96948: WFWG: 3C509 Modem Setting May Disable Network Functionality

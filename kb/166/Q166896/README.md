@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166896: PRB: Header Files in External Dep Folder Aren't Added to SCC"
-permalink: kb/166/Q166896/
+permalink: /kb/166/Q166896/
 ---
 
 ## Q166896: PRB: Header Files in External Dep Folder Aren't Added to SCC

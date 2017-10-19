@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141811: BUG: Problems w/ ODBC 32-bit Thunking Installer DLL in Win32s"
-permalink: kb/141/Q141811/
+permalink: /kb/141/Q141811/
 ---
 
 ## Q141811: BUG: Problems w/ ODBC 32-bit Thunking Installer DLL in Win32s

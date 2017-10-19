@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145651: Windows Sockets Program Generates Errors In WSIPX"
-permalink: kb/145/Q145651/
+permalink: /kb/145/Q145651/
 ---
 
 ## Q145651: Windows Sockets Program Generates Errors In WSIPX

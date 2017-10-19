@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154268: XCLN: Troubleshooting RPC Problems with Windows 3.x Client"
-permalink: kb/154/Q154268/
+permalink: /kb/154/Q154268/
 ---
 
 ## Q154268: XCLN: Troubleshooting RPC Problems with Windows 3.x Client

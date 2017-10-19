@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196391: Factors Affecting COMTI Performance."
-permalink: kb/196/Q196391/
+permalink: /kb/196/Q196391/
 ---
 
 ## Q196391: Factors Affecting COMTI Performance.

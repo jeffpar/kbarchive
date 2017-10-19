@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189426: Runtime Error 1225 When Return Value Is a Recordset"
-permalink: kb/189/Q189426/
+permalink: /kb/189/Q189426/
 ---
 
 ## Q189426: Runtime Error 1225 When Return Value Is a Recordset

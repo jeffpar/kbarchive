@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176055: How to Replace a Damaged Msn.ini File"
-permalink: kb/176/Q176055/
+permalink: /kb/176/Q176055/
 ---
 
 ## Q176055: How to Replace a Damaged Msn.ini File

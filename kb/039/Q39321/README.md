@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39321: Okidata 182 Printer Under Windows"
-permalink: kb/039/Q39321/
+permalink: /kb/039/Q39321/
 ---
 
 ## Q39321: Okidata 182 Printer Under Windows

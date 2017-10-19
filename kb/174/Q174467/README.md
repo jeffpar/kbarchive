@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174467: Two Separate Threads In WinSLI Critical Section Can Cause Hang"
-permalink: kb/174/Q174467/
+permalink: /kb/174/Q174467/
 ---
 
 ## Q174467: Two Separate Threads In WinSLI Critical Section Can Cause Hang

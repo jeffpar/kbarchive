@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89806: Cinemania 1992: Manual Installation Instructions"
-permalink: kb/089/Q89806/
+permalink: /kb/089/Q89806/
 ---
 
 ## Q89806: Cinemania 1992: Manual Installation Instructions

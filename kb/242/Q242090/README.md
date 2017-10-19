@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242090: Event 3113 using Novell intraNetWare Client Version 4.11a."
-permalink: kb/242/Q242090/
+permalink: /kb/242/Q242090/
 ---
 
 ## Q242090: Event 3113 using Novell intraNetWare Client Version 4.11a.

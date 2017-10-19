@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176923: Flight Simulator 98: Rudder Pedals Do Not Work Correctly"
-permalink: kb/176/Q176923/
+permalink: /kb/176/Q176923/
 ---
 
 ## Q176923: Flight Simulator 98: Rudder Pedals Do Not Work Correctly

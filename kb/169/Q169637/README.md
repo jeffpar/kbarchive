@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169637: XCON: Demand-dial Connectors using Routing and RAS"
-permalink: kb/169/Q169637/
+permalink: /kb/169/Q169637/
 ---
 
 ## Q169637: XCON: Demand-dial Connectors using Routing and RAS

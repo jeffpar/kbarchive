@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146550: XCLN: EFD, Address Book Dialog Displayed in Background"
-permalink: kb/146/Q146550/
+permalink: /kb/146/Q146550/
 ---
 
 ## Q146550: XCLN: EFD, Address Book Dialog Displayed in Background

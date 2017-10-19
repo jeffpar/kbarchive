@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229030: FIX: A Workspace with Many Dependencies May Appear to Hang"
-permalink: kb/229/Q229030/
+permalink: /kb/229/Q229030/
 ---
 
 ## Q229030: FIX: A Workspace with Many Dependencies May Appear to Hang

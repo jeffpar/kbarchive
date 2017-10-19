@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118665: How to Install ISDN on WFWG 3.11 RAS"
-permalink: kb/118/Q118665/
+permalink: /kb/118/Q118665/
 ---
 
 ## Q118665: How to Install ISDN on WFWG 3.11 RAS

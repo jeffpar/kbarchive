@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171832: FIX: Statement Builder Can Cause the Object Browser to Crash"
-permalink: kb/171/Q171832/
+permalink: /kb/171/Q171832/
 ---
 
 ## Q171832: FIX: Statement Builder Can Cause the Object Browser to Crash

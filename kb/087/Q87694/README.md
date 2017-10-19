@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87694: PRB: Menu Appears, Then Application Exits to Operating System"
-permalink: kb/087/Q87694/
+permalink: /kb/087/Q87694/
 ---
 
 ## Q87694: PRB: Menu Appears, Then Application Exits to Operating System

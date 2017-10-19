@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85326: Windows Err Msg: Failed to Register Server"
-permalink: kb/085/Q85326/
+permalink: /kb/085/Q85326/
 ---
 
 ## Q85326: Windows Err Msg: Failed to Register Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143408: FIX: Assertion Failure After Using CDaoWorkspace::Create()"
-permalink: kb/143/Q143408/
+permalink: /kb/143/Q143408/
 ---
 
 ## Q143408: FIX: Assertion Failure After Using CDaoWorkspace::Create()

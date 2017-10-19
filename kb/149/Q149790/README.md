@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149790: Writer: Tips on Using GhostWriter - Case of the Blue Makva"
-permalink: kb/149/Q149790/
+permalink: /kb/149/Q149790/
 ---
 
 ## Q149790: Writer: Tips on Using GhostWriter - Case of the Blue Makva

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253613: DOC: Test Article for Keywords"
-permalink: kb/253/Q253613/
+permalink: /kb/253/Q253613/
 ---
 
 ## Q253613: DOC: Test Article for Keywords

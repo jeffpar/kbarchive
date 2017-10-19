@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161199: FIX: FOR EACH...ENDFOR Does Not Work with Object Variable"
-permalink: kb/161/Q161199/
+permalink: /kb/161/Q161199/
 ---
 
 ## Q161199: FIX: FOR EACH...ENDFOR Does Not Work with Object Variable

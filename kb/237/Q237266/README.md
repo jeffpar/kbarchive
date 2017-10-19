@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237266: Encarta 2000 Err Msg: An Essential Component Is Not Operating..."
-permalink: kb/237/Q237266/
+permalink: /kb/237/Q237266/
 ---
 
 ## Q237266: Encarta 2000 Err Msg: An Essential Component Is Not Operating...

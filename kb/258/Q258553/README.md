@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258553: Baseball 2001: Minimum System Requirements"
-permalink: kb/258/Q258553/
+permalink: /kb/258/Q258553/
 ---
 
 ## Q258553: Baseball 2001: Minimum System Requirements

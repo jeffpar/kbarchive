@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150764: PRB: CString::LoadString Fails in Console Application"
-permalink: kb/150/Q150764/
+permalink: /kb/150/Q150764/
 ---
 
 ## Q150764: PRB: CString::LoadString Fails in Console Application

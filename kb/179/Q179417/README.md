@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179417: WD97: Format Font Option in Find and Replace Does Not Work"
-permalink: kb/179/Q179417/
+permalink: /kb/179/Q179417/
 ---
 
 ## Q179417: WD97: Format Font Option in Find and Replace Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86171: Differences Between Retail and Debug versions of Windows 3.1"
-permalink: kb/086/Q86171/
+permalink: /kb/086/Q86171/
 ---
 
 ## Q86171: Differences Between Retail and Debug versions of Windows 3.1

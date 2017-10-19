@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150272: Fury3 AVI Files Won't Play on Windows 95"
-permalink: kb/150/Q150272/
+permalink: /kb/150/Q150272/
 ---
 
 ## Q150272: Fury3 AVI Files Won't Play on Windows 95

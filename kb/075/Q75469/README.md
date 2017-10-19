@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75469: HOWTO: Accurately Showing on the Screen What Will Print"
-permalink: kb/075/Q75469/
+permalink: /kb/075/Q75469/
 ---
 
 ## Q75469: HOWTO: Accurately Showing on the Screen What Will Print

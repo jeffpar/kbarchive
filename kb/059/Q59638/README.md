@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59638: Control Panel Accepts Invalid Timeslice Values"
-permalink: kb/059/Q59638/
+permalink: /kb/059/Q59638/
 ---
 
 ## Q59638: Control Panel Accepts Invalid Timeslice Values

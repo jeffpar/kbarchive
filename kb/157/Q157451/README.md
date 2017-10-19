@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157451: No Driver for Cirrus Logic PBXGB-AA Adapter for DEC Alpha"
-permalink: kb/157/Q157451/
+permalink: /kb/157/Q157451/
 ---
 
 ## Q157451: No Driver for Cirrus Logic PBXGB-AA Adapter for DEC Alpha

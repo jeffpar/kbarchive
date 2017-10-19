@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72112: '0 Bytes Available Contiguous Extended Memory'"
-permalink: kb/072/Q72112/
+permalink: /kb/072/Q72112/
 ---
 
 ## Q72112: '0 Bytes Available Contiguous Extended Memory'

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140981: PPT7: Components That Cannot be Added or Removed"
-permalink: kb/140/Q140981/
+permalink: /kb/140/Q140981/
 ---
 
 ## Q140981: PPT7: Components That Cannot be Added or Removed

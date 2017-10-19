@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173457: XFOR: Information Store Stops in URL Processing RTF to HTML"
-permalink: kb/173/Q173457/
+permalink: /kb/173/Q173457/
 ---
 
 ## Q173457: XFOR: Information Store Stops in URL Processing RTF to HTML

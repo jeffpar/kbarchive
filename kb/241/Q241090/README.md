@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241090: PRB: Toggling TitleBar Property Off and On Causes Form to Resize"
-permalink: kb/241/Q241090/
+permalink: /kb/241/Q241090/
 ---
 
 ## Q241090: PRB: Toggling TitleBar Property Off and On Causes Form to Resize

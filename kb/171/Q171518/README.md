@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171518: FIX: Controls May Not Print When Printing Form at Design Time"
-permalink: kb/171/Q171518/
+permalink: /kb/171/Q171518/
 ---
 
 ## Q171518: FIX: Controls May Not Print When Printing Form at Design Time

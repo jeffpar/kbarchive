@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145599: Network Software Installation Problems With Xircom Netaccess"
-permalink: kb/145/Q145599/
+permalink: /kb/145/Q145599/
 ---
 
 ## Q145599: Network Software Installation Problems With Xircom Netaccess

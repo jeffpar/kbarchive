@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188491: IIS 4.0 Applies Footers To All Documents"
-permalink: kb/188/Q188491/
+permalink: /kb/188/Q188491/
 ---
 
 ## Q188491: IIS 4.0 Applies Footers To All Documents

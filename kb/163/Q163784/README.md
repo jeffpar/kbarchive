@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163784: FIX: Form Wizard Ignores Design Area Limitation"
-permalink: kb/163/Q163784/
+permalink: /kb/163/Q163784/
 ---
 
 ## Q163784: FIX: Form Wizard Ignores Design Area Limitation

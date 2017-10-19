@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304487: MSReader: Installation Process Stops Responding at 100 Percent"
-permalink: kb/304/Q304487/
+permalink: /kb/304/Q304487/
 ---
 
 ## Q304487: MSReader: Installation Process Stops Responding at 100 Percent

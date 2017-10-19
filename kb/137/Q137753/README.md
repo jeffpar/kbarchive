@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137753: Motorola Power 14.4 PCMCIA Modem May Not Dial Twice"
-permalink: kb/137/Q137753/
+permalink: /kb/137/Q137753/
 ---
 
 ## Q137753: Motorola Power 14.4 PCMCIA Modem May Not Dial Twice

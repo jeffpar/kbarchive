@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156832: STOP Message when IBM Warp Client Connects to Windows NT 4.0"
-permalink: kb/156/Q156832/
+permalink: /kb/156/Q156832/
 ---
 
 ## Q156832: STOP Message when IBM Warp Client Connects to Windows NT 4.0

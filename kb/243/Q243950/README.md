@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243950: High CPU Utilization in Store.exe"
-permalink: kb/243/Q243950/
+permalink: /kb/243/Q243950/
 ---
 
 ## Q243950: High CPU Utilization in Store.exe

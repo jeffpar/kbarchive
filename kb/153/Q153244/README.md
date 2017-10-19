@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153244: INVWIN32 Causes GPF When Run from MS-DOS Window"
-permalink: kb/153/Q153244/
+permalink: /kb/153/Q153244/
 ---
 
 ## Q153244: INVWIN32 Causes GPF When Run from MS-DOS Window

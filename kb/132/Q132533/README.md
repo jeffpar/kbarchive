@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132533: PRB: Form.SaveAs Appears to Change Order of Added Grid Column"
-permalink: kb/132/Q132533/
+permalink: /kb/132/Q132533/
 ---
 
 ## Q132533: PRB: Form.SaveAs Appears to Change Order of Added Grid Column

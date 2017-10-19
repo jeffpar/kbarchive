@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178445: PRB: Stored Procedure with Text (BLOB) Input Returns Null Output"
-permalink: kb/178/Q178445/
+permalink: /kb/178/Q178445/
 ---
 
 ## Q178445: PRB: Stored Procedure with Text (BLOB) Input Returns Null Output

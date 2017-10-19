@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138938: PRB: PUTFILE() Ignores File Extension Parameter"
-permalink: kb/138/Q138938/
+permalink: /kb/138/Q138938/
 ---
 
 ## Q138938: PRB: PUTFILE() Ignores File Extension Parameter

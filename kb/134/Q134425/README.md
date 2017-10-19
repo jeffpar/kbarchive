@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134425: Event ID 7000: %1 Not A Valid Windows NT Application"
-permalink: kb/134/Q134425/
+permalink: /kb/134/Q134425/
 ---
 
 ## Q134425: Event ID 7000: %1 Not A Valid Windows NT Application

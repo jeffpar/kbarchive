@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153081: Backup Domain Controllers May Fail to Join the Domain"
-permalink: kb/153/Q153081/
+permalink: /kb/153/Q153081/
 ---
 
 ## Q153081: Backup Domain Controllers May Fail to Join the Domain

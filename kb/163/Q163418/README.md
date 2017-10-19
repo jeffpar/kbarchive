@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163418: FIX: Disabled Page in a Pageframe Shows Objects with Arrow Key"
-permalink: kb/163/Q163418/
+permalink: /kb/163/Q163418/
 ---
 
 ## Q163418: FIX: Disabled Page in a Pageframe Shows Objects with Arrow Key

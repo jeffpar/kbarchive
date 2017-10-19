@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130954: BUG: 'Out of String Space' Error Returned by the Access Driver"
-permalink: kb/130/Q130954/
+permalink: /kb/130/Q130954/
 ---
 
 ## Q130954: BUG: 'Out of String Space' Error Returned by the Access Driver

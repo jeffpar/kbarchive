@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154539: PRB: Including STL.H Causes Compiler Errors"
-permalink: kb/154/Q154539/
+permalink: /kb/154/Q154539/
 ---
 
 ## Q154539: PRB: Including STL.H Causes Compiler Errors

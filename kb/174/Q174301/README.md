@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174301: HOWTO: Display Text on a Dithered Background in a TextBox"
-permalink: kb/174/Q174301/
+permalink: /kb/174/Q174301/
 ---
 
 ## Q174301: HOWTO: Display Text on a Dithered Background in a TextBox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75779: File Manager Error Deleting Directory with Hidden Files"
-permalink: kb/075/Q75779/
+permalink: /kb/075/Q75779/
 ---
 
 ## Q75779: File Manager Error Deleting Directory with Hidden Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137897: SMS Does Not Update After MS-DOS Upgrade to Windows 95"
-permalink: kb/137/Q137897/
+permalink: /kb/137/Q137897/
 ---
 
 ## Q137897: SMS Does Not Update After MS-DOS Upgrade to Windows 95

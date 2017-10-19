@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121207: SMS: Inventory Does Not Distinguish Individual Raid 5 Drives"
-permalink: kb/121/Q121207/
+permalink: /kb/121/Q121207/
 ---
 
 ## Q121207: SMS: Inventory Does Not Distinguish Individual Raid 5 Drives

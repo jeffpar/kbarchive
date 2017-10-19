@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186526: Terminal Server Commands: KILL"
-permalink: kb/186/Q186526/
+permalink: /kb/186/Q186526/
 ---
 
 ## Q186526: Terminal Server Commands: KILL

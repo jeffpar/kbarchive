@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190710: XFOR: How to Use Internet Mail Service to Reroute Messages"
-permalink: kb/190/Q190710/
+permalink: /kb/190/Q190710/
 ---
 
 ## Q190710: XFOR: How to Use Internet Mail Service to Reroute Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149132: BUG: Signed 4-byte Integer Overlow Not Caught by the Compiler"
-permalink: kb/149/Q149132/
+permalink: /kb/149/Q149132/
 ---
 
 ## Q149132: BUG: Signed 4-byte Integer Overlow Not Caught by the Compiler

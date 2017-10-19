@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295450: SMS:  SMS Status Manager Reports 1215 Error Messages"
-permalink: kb/295/Q295450/
+permalink: /kb/295/Q295450/
 ---
 
 ## Q295450: SMS:  SMS Status Manager Reports 1215 Error Messages

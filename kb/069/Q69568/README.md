@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69568: Disabling Shadow RAM on Leading Technology 386-16SX"
-permalink: kb/069/Q69568/
+permalink: /kb/069/Q69568/
 ---
 
 ## Q69568: Disabling Shadow RAM on Leading Technology 386-16SX

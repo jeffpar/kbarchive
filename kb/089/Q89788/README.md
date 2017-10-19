@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89788: SMARTDRV /S Output Defined"
-permalink: kb/089/Q89788/
+permalink: /kb/089/Q89788/
 ---
 
 ## Q89788: SMARTDRV /S Output Defined

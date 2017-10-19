@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174172: XADM: ErrMsg: An Unknown, Unexpected Error Has Occurred"
-permalink: kb/174/Q174172/
+permalink: /kb/174/Q174172/
 ---
 
 ## Q174172: XADM: ErrMsg: An Unknown, Unexpected Error Has Occurred

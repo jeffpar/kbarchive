@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258402: Baseball 2001: Black Screen When Starting Game Second Time"
-permalink: kb/258/Q258402/
+permalink: /kb/258/Q258402/
 ---
 
 ## Q258402: Baseball 2001: Black Screen When Starting Game Second Time

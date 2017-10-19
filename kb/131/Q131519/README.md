@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131519: Century Information Lost with m/d/yy Date Format"
-permalink: kb/131/Q131519/
+permalink: /kb/131/Q131519/
 ---
 
 ## Q131519: Century Information Lost with m/d/yy Date Format

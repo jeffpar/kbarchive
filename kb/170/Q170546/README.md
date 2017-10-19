@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170546: FP: Blank Line Remains after Deleting Single Line Selection"
-permalink: kb/170/Q170546/
+permalink: /kb/170/Q170546/
 ---
 
 ## Q170546: FP: Blank Line Remains after Deleting Single Line Selection

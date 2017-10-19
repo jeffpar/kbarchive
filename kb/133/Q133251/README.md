@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133251: Err Msg: Sub or Function Not Defined in Visual Basic"
-permalink: kb/133/Q133251/
+permalink: /kb/133/Q133251/
 ---
 
 ## Q133251: Err Msg: Sub or Function Not Defined in Visual Basic

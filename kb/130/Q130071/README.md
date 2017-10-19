@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130071: Setup Detects Disk Errors but SCANDISK /ALL Does Not"
-permalink: kb/130/Q130071/
+permalink: /kb/130/Q130071/
 ---
 
 ## Q130071: Setup Detects Disk Errors but SCANDISK /ALL Does Not

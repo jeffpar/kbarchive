@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166422: Some MicroChannel NIC Cards May Not Start On a Dual Bus System"
-permalink: kb/166/Q166422/
+permalink: /kb/166/Q166422/
 ---
 
 ## Q166422: Some MicroChannel NIC Cards May Not Start On a Dual Bus System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168010: FIX: /Od May Generate Destructor for Unconstructed Temp Object"
-permalink: kb/168/Q168010/
+permalink: /kb/168/Q168010/
 ---
 
 ## Q168010: FIX: /Od May Generate Destructor for Unconstructed Temp Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93038: Startup and Exit Sounds May Not Work with WFWG"
-permalink: kb/093/Q93038/
+permalink: /kb/093/Q93038/
 ---
 
 ## Q93038: Startup and Exit Sounds May Not Work with WFWG

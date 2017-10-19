@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139935: Unable to Print to Shared HP DeskJet 1200C Printer"
-permalink: kb/139/Q139935/
+permalink: /kb/139/Q139935/
 ---
 
 ## Q139935: Unable to Print to Shared HP DeskJet 1200C Printer

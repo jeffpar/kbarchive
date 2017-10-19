@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303495: Train Simulator: Error Message When Winter or Snow in Activity"
-permalink: kb/303/Q303495/
+permalink: /kb/303/Q303495/
 ---
 
 ## Q303495: Train Simulator: Error Message When Winter or Snow in Activity

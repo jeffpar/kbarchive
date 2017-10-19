@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150924: PPT: Version 4.0 Clip Art Not Added to ClipArt Gallery 2.0/3.0"
-permalink: kb/150/Q150924/
+permalink: /kb/150/Q150924/
 ---
 
 ## Q150924: PPT: Version 4.0 Clip Art Not Added to ClipArt Gallery 2.0/3.0

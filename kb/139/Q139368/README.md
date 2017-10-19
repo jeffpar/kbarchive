@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139368: PC NTMMTA: SESSION.LOG Displays Pulse as Baud Rate"
-permalink: kb/139/Q139368/
+permalink: /kb/139/Q139368/
 ---
 
 ## Q139368: PC NTMMTA: SESSION.LOG Displays Pulse as Baud Rate

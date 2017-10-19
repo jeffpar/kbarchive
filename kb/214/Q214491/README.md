@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214491: SNA Server Access Violation in Function S1PWHSES()"
-permalink: kb/214/Q214491/
+permalink: /kb/214/Q214491/
 ---
 
 ## Q214491: SNA Server Access Violation in Function S1PWHSES()

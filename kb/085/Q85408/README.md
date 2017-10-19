@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85408: Envelope Orientation Incorrect in PostScript Driver"
-permalink: kb/085/Q85408/
+permalink: /kb/085/Q85408/
 ---
 
 ## Q85408: Envelope Orientation Incorrect in PostScript Driver

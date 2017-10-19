@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190624: PRB: SYS(2018) May Return More Than the Message Parameter"
-permalink: kb/190/Q190624/
+permalink: /kb/190/Q190624/
 ---
 
 ## Q190624: PRB: SYS(2018) May Return More Than the Message Parameter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103583: Screen Fonts Varying in Size When in Different Resolution"
-permalink: kb/103/Q103583/
+permalink: /kb/103/Q103583/
 ---
 
 ## Q103583: Screen Fonts Varying in Size When in Different Resolution

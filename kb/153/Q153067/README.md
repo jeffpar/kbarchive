@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153067: XCLN: EFD: Cannot Move Field Outside Container"
-permalink: kb/153/Q153067/
+permalink: /kb/153/Q153067/
 ---
 
 ## Q153067: XCLN: EFD: Cannot Move Field Outside Container

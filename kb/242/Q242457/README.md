@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242457: SMTP Service Removed When Upgrading to Windows 2000"
-permalink: kb/242/Q242457/
+permalink: /kb/242/Q242457/
 ---
 
 ## Q242457: SMTP Service Removed When Upgrading to Windows 2000

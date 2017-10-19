@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92942: GlobalReAlloc() and GMEM_ZEROINIT Clarified"
-permalink: kb/092/Q92942/
+permalink: /kb/092/Q92942/
 ---
 
 ## Q92942: GlobalReAlloc() and GMEM_ZEROINIT Clarified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156056: Unable to Start the Monitor Service - Error 2002"
-permalink: kb/156/Q156056/
+permalink: /kb/156/Q156056/
 ---
 
 ## Q156056: Unable to Start the Monitor Service - Error 2002

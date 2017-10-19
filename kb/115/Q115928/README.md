@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115928: Changing the Comment in a Workgroup Add-On Machine"
-permalink: kb/115/Q115928/
+permalink: /kb/115/Q115928/
 ---
 
 ## Q115928: Changing the Comment in a Workgroup Add-On Machine

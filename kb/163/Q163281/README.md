@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163281: XADM: Setting Advanced Security on a Second Computer"
-permalink: kb/163/Q163281/
+permalink: /kb/163/Q163281/
 ---
 
 ## Q163281: XADM: Setting Advanced Security on a Second Computer

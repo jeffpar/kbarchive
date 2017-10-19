@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167049: DHCP May Not Assign a Default Gateway to Windows NT Clients"
-permalink: kb/167/Q167049/
+permalink: /kb/167/Q167049/
 ---
 
 ## Q167049: DHCP May Not Assign a Default Gateway to Windows NT Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171607: WD97: Borders Print Poorly with Hewlett-Packard 820Cse"
-permalink: kb/171/Q171607/
+permalink: /kb/171/Q171607/
 ---
 
 ## Q171607: WD97: Borders Print Poorly with Hewlett-Packard 820Cse

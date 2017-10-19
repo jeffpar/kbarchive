@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272436: SMS: Support Utilities Updated in Service Pack 2"
-permalink: kb/272/Q272436/
+permalink: /kb/272/Q272436/
 ---
 
 ## Q272436: SMS: Support Utilities Updated in Service Pack 2

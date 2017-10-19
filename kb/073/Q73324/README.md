@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73324: Devices/TSRs Do Not Load High with RAM Switch"
-permalink: kb/073/Q73324/
+permalink: /kb/073/Q73324/
 ---
 
 ## Q73324: Devices/TSRs Do Not Load High with RAM Switch

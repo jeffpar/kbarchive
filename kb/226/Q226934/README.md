@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226934: How To Create a Setup.log With SNA 4.0 SP2 Update.exe."
-permalink: kb/226/Q226934/
+permalink: /kb/226/Q226934/
 ---
 
 ## Q226934: How To Create a Setup.log With SNA 4.0 SP2 Update.exe.

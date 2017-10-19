@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142427: DynaZip Decompression Does Not Work with Old PKZip Files"
-permalink: kb/142/Q142427/
+permalink: /kb/142/Q142427/
 ---
 
 ## Q142427: DynaZip Decompression Does Not Work with Old PKZip Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172851: BUG: REPORT FORM TO FILE ASCII Adds Extra CR/LF in Detail Band"
-permalink: kb/172/Q172851/
+permalink: /kb/172/Q172851/
 ---
 
 ## Q172851: BUG: REPORT FORM TO FILE ASCII Adds Extra CR/LF in Detail Band

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108903: Using Windows for Workgroups 3.11 with Beame and Whiteside"
-permalink: kb/108/Q108903/
+permalink: /kb/108/Q108903/
 ---
 
 ## Q108903: Using Windows for Workgroups 3.11 with Beame and Whiteside

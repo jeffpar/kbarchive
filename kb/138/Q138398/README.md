@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138398: PRB: RELEASE May Not Remove OLE Objects from Memory"
-permalink: kb/138/Q138398/
+permalink: /kb/138/Q138398/
 ---
 
 ## Q138398: PRB: RELEASE May Not Remove OLE Objects from Memory

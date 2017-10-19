@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138738: VESA Local Bus Device Conflicts in Windows NT"
-permalink: kb/138/Q138738/
+permalink: /kb/138/Q138738/
 ---
 
 ## Q138738: VESA Local Bus Device Conflicts in Windows NT

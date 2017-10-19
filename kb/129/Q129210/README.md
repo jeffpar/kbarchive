@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129210: FIX: Linker Errors on Array of Constant Pointers to Constants"
-permalink: kb/129/Q129210/
+permalink: /kb/129/Q129210/
 ---
 
 ## Q129210: FIX: Linker Errors on Array of Constant Pointers to Constants

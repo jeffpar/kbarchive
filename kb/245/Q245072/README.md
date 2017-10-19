@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245072: Err Msg: The Referenced Account Is Locked Out and May Not Be..."
-permalink: kb/245/Q245072/
+permalink: /kb/245/Q245072/
 ---
 
 ## Q245072: Err Msg: The Referenced Account Is Locked Out and May Not Be...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151028: Microsoft Exchange Returns Microsoft Mail as Undeliverable"
-permalink: kb/151/Q151028/
+permalink: /kb/151/Q151028/
 ---
 
 ## Q151028: Microsoft Exchange Returns Microsoft Mail as Undeliverable

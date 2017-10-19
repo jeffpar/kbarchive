@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91706: Panasonic KX-P1091 and Windows"
-permalink: kb/091/Q91706/
+permalink: /kb/091/Q91706/
 ---
 
 ## Q91706: Panasonic KX-P1091 and Windows

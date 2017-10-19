@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280434: XADM: Changes Made in Raw Mode Do Not Seem to Be Applied"
-permalink: kb/280/Q280434/
+permalink: /kb/280/Q280434/
 ---
 
 ## Q280434: XADM: Changes Made in Raw Mode Do Not Seem to Be Applied

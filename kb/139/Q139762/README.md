@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139762: Control Menu Fails to Drop Down"
-permalink: kb/139/Q139762/
+permalink: /kb/139/Q139762/
 ---
 
 ## Q139762: Control Menu Fails to Drop Down

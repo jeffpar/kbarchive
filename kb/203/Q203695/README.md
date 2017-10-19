@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203695: Encarta 99: Home Screen Introductory Audio Broken Up or Choppy"
-permalink: kb/203/Q203695/
+permalink: /kb/203/Q203695/
 ---
 
 ## Q203695: Encarta 99: Home Screen Introductory Audio Broken Up or Choppy

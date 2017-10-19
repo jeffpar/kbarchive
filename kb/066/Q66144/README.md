@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66144: Setup Directory Greater than Eight Characters in Games"
-permalink: kb/066/Q66144/
+permalink: /kb/066/Q66144/
 ---
 
 ## Q66144: Setup Directory Greater than Eight Characters in Games

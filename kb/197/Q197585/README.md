@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197585: HOWTO: Cover the Taskbar with a Window in Visual Basic"
-permalink: kb/197/Q197585/
+permalink: /kb/197/Q197585/
 ---
 
 ## Q197585: HOWTO: Cover the Taskbar with a Window in Visual Basic

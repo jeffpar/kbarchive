@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77457: Accepting Keyboard Input in Batch Files"
-permalink: kb/077/Q77457/
+permalink: /kb/077/Q77457/
 ---
 
 ## Q77457: Accepting Keyboard Input in Batch Files

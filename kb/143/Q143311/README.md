@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143311: INFO: Form Events and Sub Procedures Can Be Exposed"
-permalink: kb/143/Q143311/
+permalink: /kb/143/Q143311/
 ---
 
 ## Q143311: INFO: Form Events and Sub Procedures Can Be Exposed

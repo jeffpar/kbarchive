@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138923: Partitions Displaying as Unknown in Disk Administrator"
-permalink: kb/138/Q138923/
+permalink: /kb/138/Q138923/
 ---
 
 ## Q138923: Partitions Displaying as Unknown in Disk Administrator

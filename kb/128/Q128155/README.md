@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128155: Description of VFPSTART.PRG"
-permalink: kb/128/Q128155/
+permalink: /kb/128/Q128155/
 ---
 
 ## Q128155: Description of VFPSTART.PRG

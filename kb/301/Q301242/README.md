@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301242: HOW TO: Share Memory-Mapped Objects Between Processes in Win CE"
-permalink: kb/301/Q301242/
+permalink: /kb/301/Q301242/
 ---
 
 ## Q301242: HOW TO: Share Memory-Mapped Objects Between Processes in Win CE

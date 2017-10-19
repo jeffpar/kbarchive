@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166609: XFOR: Unprotected Global Variables in MSMI"
-permalink: kb/166/Q166609/
+permalink: /kb/166/Q166609/
 ---
 
 ## Q166609: XFOR: Unprotected Global Variables in MSMI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253197: SMS: Run-Time Error When Advertising MFC-Based Package (ICP Vers"
-permalink: kb/253/Q253197/
+permalink: /kb/253/Q253197/
 ---
 
 ## Q253197: SMS: Run-Time Error When Advertising MFC-Based Package (ICP Vers

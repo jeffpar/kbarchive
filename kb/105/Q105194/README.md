@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105194: How to Enable Automatic Logon to a RAS Server"
-permalink: kb/105/Q105194/
+permalink: /kb/105/Q105194/
 ---
 
 ## Q105194: How to Enable Automatic Logon to a RAS Server

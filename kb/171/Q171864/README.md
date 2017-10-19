@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171864: SNA Manager Does Not Stay Maximized"
-permalink: kb/171/Q171864/
+permalink: /kb/171/Q171864/
 ---
 
 ## Q171864: SNA Manager Does Not Stay Maximized

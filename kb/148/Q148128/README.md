@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148128: Using MACFILE to Administer Services for Macintosh"
-permalink: kb/148/Q148128/
+permalink: /kb/148/Q148128/
 ---
 
 ## Q148128: Using MACFILE to Administer Services for Macintosh

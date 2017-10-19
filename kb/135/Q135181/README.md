@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135181: MS Works for MS-DOS File Has Garbled Text in Quick View"
-permalink: kb/135/Q135181/
+permalink: /kb/135/Q135181/
 ---
 
 ## Q135181: MS Works for MS-DOS File Has Garbled Text in Quick View

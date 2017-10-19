@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59069: FIX: NMAKE File Hangs Machine When Right Parenthesis Missing"
-permalink: kb/059/Q59069/
+permalink: /kb/059/Q59069/
 ---
 
 ## Q59069: FIX: NMAKE File Hangs Machine When Right Parenthesis Missing

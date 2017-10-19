@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222163: XCLN: DR: &quot;Your message was deleted without being read&quot;"
-permalink: kb/222/Q222163/
+permalink: /kb/222/Q222163/
 ---
 
 ## Q222163: XCLN: DR: &quot;Your message was deleted without being read&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32811: FIX: Wrong Opcode For Far Call from USE16 Seg to USE32 Seg"
-permalink: kb/032/Q32811/
+permalink: /kb/032/Q32811/
 ---
 
 ## Q32811: FIX: Wrong Opcode For Far Call from USE16 Seg to USE32 Seg

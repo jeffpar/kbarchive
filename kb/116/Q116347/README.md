@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116347: Mac Bookshelf: One Message When Toggling QuickShelf On and Off"
-permalink: kb/116/Q116347/
+permalink: /kb/116/Q116347/
 ---
 
 ## Q116347: Mac Bookshelf: One Message When Toggling QuickShelf On and Off

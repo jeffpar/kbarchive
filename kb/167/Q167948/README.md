@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167948: FIX: Internet Component Download Fails After Using Setup Toolkit"
-permalink: kb/167/Q167948/
+permalink: /kb/167/Q167948/
 ---
 
 ## Q167948: FIX: Internet Component Download Fails After Using Setup Toolkit

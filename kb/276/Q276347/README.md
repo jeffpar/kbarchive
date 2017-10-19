@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276347: XFOR: Messages Moved to the Badmail Folder with SMTP Service"
-permalink: kb/276/Q276347/
+permalink: /kb/276/Q276347/
 ---
 
 ## Q276347: XFOR: Messages Moved to the Badmail Folder with SMTP Service

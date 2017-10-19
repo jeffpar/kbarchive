@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130855: SNA Server Admin Backup Option Requires a File Extension"
-permalink: kb/130/Q130855/
+permalink: /kb/130/Q130855/
 ---
 
 ## Q130855: SNA Server Admin Backup Option Requires a File Extension

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83842: Windows Err Msg: Unable to Play Sound. Sound Blaster in Use..."
-permalink: kb/083/Q83842/
+permalink: /kb/083/Q83842/
 ---
 
 ## Q83842: Windows Err Msg: Unable to Play Sound. Sound Blaster in Use...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80116: FIX: Illegal Instruction from Structure Member Offset"
-permalink: kb/080/Q80116/
+permalink: /kb/080/Q80116/
 ---
 
 ## Q80116: FIX: Illegal Instruction from Structure Member Offset

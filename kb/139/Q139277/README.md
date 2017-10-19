@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139277: Windows NT Does Not Recognize Wearnes CDD-120 CD-ROM Drive"
-permalink: kb/139/Q139277/
+permalink: /kb/139/Q139277/
 ---
 
 ## Q139277: Windows NT Does Not Recognize Wearnes CDD-120 CD-ROM Drive

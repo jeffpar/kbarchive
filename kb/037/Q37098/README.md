@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37098: Porterville Airport Is Not Visible"
-permalink: kb/037/Q37098/
+permalink: /kb/037/Q37098/
 ---
 
 ## Q37098: Porterville Airport Is Not Visible

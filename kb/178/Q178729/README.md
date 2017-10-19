@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178729: How To Configure Windows 95 to Dial into a RAS/RRAS Server"
-permalink: kb/178/Q178729/
+permalink: /kb/178/Q178729/
 ---
 
 ## Q178729: How To Configure Windows 95 to Dial into a RAS/RRAS Server

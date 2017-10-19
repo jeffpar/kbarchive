@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150064: HOWTO: Branch to a Specific Version of a Project"
-permalink: kb/150/Q150064/
+permalink: /kb/150/Q150064/
 ---
 
 ## Q150064: HOWTO: Branch to a Specific Version of a Project

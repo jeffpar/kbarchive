@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237194: LUA Applications Unable to Acquire DDDLU Sessions in LUA Pools"
-permalink: kb/237/Q237194/
+permalink: /kb/237/Q237194/
 ---
 
 ## Q237194: LUA Applications Unable to Acquire DDDLU Sessions in LUA Pools

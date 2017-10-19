@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168599: SMS: Brief Overview of PGC for Windows 95 Clients in SMS 1.2"
-permalink: kb/168/Q168599/
+permalink: /kb/168/Q168599/
 ---
 
 ## Q168599: SMS: Brief Overview of PGC for Windows 95 Clients in SMS 1.2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180763: MSN Err Msg: Account Failed: Permission Denied"
-permalink: kb/180/Q180763/
+permalink: /kb/180/Q180763/
 ---
 
 ## Q180763: MSN Err Msg: Account Failed: Permission Denied

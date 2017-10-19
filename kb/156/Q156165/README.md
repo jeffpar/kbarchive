@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156165: ICMP Time Stamp Not Supported"
-permalink: kb/156/Q156165/
+permalink: /kb/156/Q156165/
 ---
 
 ## Q156165: ICMP Time Stamp Not Supported

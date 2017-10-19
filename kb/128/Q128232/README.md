@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128232: PRB: Viewer Compiler Error 1661 w/ Identical Baggage Filenames"
-permalink: kb/128/Q128232/
+permalink: /kb/128/Q128232/
 ---
 
 ## Q128232: PRB: Viewer Compiler Error 1661 w/ Identical Baggage Filenames

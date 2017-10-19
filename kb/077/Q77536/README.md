@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77536: Cannot Use PC Tools Diskcopy Command with Windows 3.0"
-permalink: kb/077/Q77536/
+permalink: /kb/077/Q77536/
 ---
 
 ## Q77536: Cannot Use PC Tools Diskcopy Command with Windows 3.0

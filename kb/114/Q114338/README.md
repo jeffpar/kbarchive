@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114338: Workgroup Add-On for MS-DOS: Sharing and Loading SMARTDrive"
-permalink: kb/114/Q114338/
+permalink: /kb/114/Q114338/
 ---
 
 ## Q114338: Workgroup Add-On for MS-DOS: Sharing and Loading SMARTDrive

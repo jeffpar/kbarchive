@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74788: Using Near and Far Pointers with C Run-Time Functions"
-permalink: kb/074/Q74788/
+permalink: /kb/074/Q74788/
 ---
 
 ## Q74788: Using Near and Far Pointers with C Run-Time Functions

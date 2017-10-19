@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102627: Maximum of 5 Domains Can be Viewed with LAN Manager"
-permalink: kb/102/Q102627/
+permalink: /kb/102/Q102627/
 ---
 
 ## Q102627: Maximum of 5 Domains Can be Viewed with LAN Manager

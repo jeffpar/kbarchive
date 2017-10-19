@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100457: PC WRmt: Priority Message Designation"
-permalink: kb/100/Q100457/
+permalink: /kb/100/Q100457/
 ---
 
 ## Q100457: PC WRmt: Priority Message Designation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147824: Export and Import Servers in Directory Replication"
-permalink: kb/147/Q147824/
+permalink: /kb/147/Q147824/
 ---
 
 ## Q147824: Export and Import Servers in Directory Replication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150559: New Windows NT TCP/IP Registry Parameter: ArpTRSingleRoute"
-permalink: kb/150/Q150559/
+permalink: /kb/150/Q150559/
 ---
 
 ## Q150559: New Windows NT TCP/IP Registry Parameter: ArpTRSingleRoute

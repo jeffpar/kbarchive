@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168306: Err Msg: Disconnected from the Remote Server"
-permalink: kb/168/Q168306/
+permalink: /kb/168/Q168306/
 ---
 
 ## Q168306: Err Msg: Disconnected from the Remote Server

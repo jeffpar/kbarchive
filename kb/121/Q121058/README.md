@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121058: DIR Results in Strange Characters When Using SCSI Drive"
-permalink: kb/121/Q121058/
+permalink: /kb/121/Q121058/
 ---
 
 ## Q121058: DIR Results in Strange Characters When Using SCSI Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237579: Performance Monitor Logs Lose Data Across Subnets"
-permalink: kb/237/Q237579/
+permalink: /kb/237/Q237579/
 ---
 
 ## Q237579: Performance Monitor Logs Lose Data Across Subnets

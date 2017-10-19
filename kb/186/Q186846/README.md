@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186846: WD97: New Information in Help About for New English Thesaurus"
-permalink: kb/186/Q186846/
+permalink: /kb/186/Q186846/
 ---
 
 ## Q186846: WD97: New Information in Help About for New English Thesaurus

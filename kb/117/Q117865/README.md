@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117865: DOCERR: Control and Status Word Missing Abbreviation Info"
-permalink: kb/117/Q117865/
+permalink: /kb/117/Q117865/
 ---
 
 ## Q117865: DOCERR: Control and Status Word Missing Abbreviation Info

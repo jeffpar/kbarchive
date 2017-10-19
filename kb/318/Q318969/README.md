@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318969: FIX: Second Instance of STDLL Object Causes Exception Error"
-permalink: kb/318/Q318969/
+permalink: /kb/318/Q318969/
 ---
 
 ## Q318969: FIX: Second Instance of STDLL Object Causes Exception Error

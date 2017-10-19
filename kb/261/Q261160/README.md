@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261160: XADM: Error Message When Backing Up Exchange Server Remotely"
-permalink: kb/261/Q261160/
+permalink: /kb/261/Q261160/
 ---
 
 ## Q261160: XADM: Error Message When Backing Up Exchange Server Remotely

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199437: WD97: Text in Return Address Is Obscured by Graphic"
-permalink: kb/199/Q199437/
+permalink: /kb/199/Q199437/
 ---
 
 ## Q199437: WD97: Text in Return Address Is Obscured by Graphic

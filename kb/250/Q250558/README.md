@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250558: XIMS: Internet Mail Service MIME Word Wrap Default 76 Characters"
-permalink: kb/250/Q250558/
+permalink: /kb/250/Q250558/
 ---
 
 ## Q250558: XIMS: Internet Mail Service MIME Word Wrap Default 76 Characters

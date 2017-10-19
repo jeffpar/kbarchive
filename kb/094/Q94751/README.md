@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94751: FIX: ORG Behavior Different with Span-Dependent Value"
-permalink: kb/094/Q94751/
+permalink: /kb/094/Q94751/
 ---
 
 ## Q94751: FIX: ORG Behavior Different with Span-Dependent Value

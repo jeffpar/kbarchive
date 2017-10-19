@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276453: Dynamically Defined Dependent LU Support for Printer LUs"
-permalink: kb/276/Q276453/
+permalink: /kb/276/Q276453/
 ---
 
 ## Q276453: Dynamically Defined Dependent LU Support for Printer LUs

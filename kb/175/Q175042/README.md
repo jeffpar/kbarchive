@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175042: XCON: Extended T.61 Translated Wrong in P2/P22 Subject Field"
-permalink: kb/175/Q175042/
+permalink: /kb/175/Q175042/
 ---
 
 ## Q175042: XCON: Extended T.61 Translated Wrong in P2/P22 Subject Field

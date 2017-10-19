@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194808: Combat Flight Simulator: Missing, Distorted, or Blurred Textures"
-permalink: kb/194/Q194808/
+permalink: /kb/194/Q194808/
 ---
 
 ## Q194808: Combat Flight Simulator: Missing, Distorted, or Blurred Textures

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164628: XADM: Export Populates Addresses Column Randomly"
-permalink: kb/164/Q164628/
+permalink: /kb/164/Q164628/
 ---
 
 ## Q164628: XADM: Export Populates Addresses Column Randomly

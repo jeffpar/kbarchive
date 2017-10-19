@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127948: Saving More Than 10 Most Recently Used Network Connections"
-permalink: kb/127/Q127948/
+permalink: /kb/127/Q127948/
 ---
 
 ## Q127948: Saving More Than 10 Most Recently Used Network Connections

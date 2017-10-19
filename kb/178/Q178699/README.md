@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178699: XADM: Delegates Unable to View New Messages After Move Mailbox"
-permalink: kb/178/Q178699/
+permalink: /kb/178/Q178699/
 ---
 
 ## Q178699: XADM: Delegates Unable to View New Messages After Move Mailbox

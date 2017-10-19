@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115447: X400: Corrupt .XTN File for Network Postoffice Stops Install"
-permalink: kb/115/Q115447/
+permalink: /kb/115/Q115447/
 ---
 
 ## Q115447: X400: Corrupt .XTN File for Network Postoffice Stops Install

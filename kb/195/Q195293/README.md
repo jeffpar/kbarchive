@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195293: BUG: Code Profiler Add-In Gives Errors With Project Using ADO"
-permalink: kb/195/Q195293/
+permalink: /kb/195/Q195293/
 ---
 
 ## Q195293: BUG: Code Profiler Add-In Gives Errors With Project Using ADO

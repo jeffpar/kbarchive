@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66509: Mac DOS: Using AppleTalk and Novell Cards on Same Workstation"
-permalink: kb/066/Q66509/
+permalink: /kb/066/Q66509/
 ---
 
 ## Q66509: Mac DOS: Using AppleTalk and Novell Cards on Same Workstation

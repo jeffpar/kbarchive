@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90253: NetWare Tools Installs and WFWG Stops Working"
-permalink: kb/090/Q90253/
+permalink: /kb/090/Q90253/
 ---
 
 ## Q90253: NetWare Tools Installs and WFWG Stops Working

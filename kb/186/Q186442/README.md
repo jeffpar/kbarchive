@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186442: XWEB: Exchange Personal Views Unavailable in Outlook or OWA"
-permalink: kb/186/Q186442/
+permalink: /kb/186/Q186442/
 ---
 
 ## Q186442: XWEB: Exchange Personal Views Unavailable in Outlook or OWA

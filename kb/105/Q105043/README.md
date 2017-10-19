@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105043: Maximum Number of Bytes Read Using Low-Level Functions"
-permalink: kb/105/Q105043/
+permalink: /kb/105/Q105043/
 ---
 
 ## Q105043: Maximum Number of Bytes Read Using Low-Level Functions

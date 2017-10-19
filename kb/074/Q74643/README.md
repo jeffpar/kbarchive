@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74643: Copying Soft Font Information from the NullPort in Windows"
-permalink: kb/074/Q74643/
+permalink: /kb/074/Q74643/
 ---
 
 ## Q74643: Copying Soft Font Information from the NullPort in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185429: WD97: Link to Excel Worksheet Object Not Updated Automatically"
-permalink: kb/185/Q185429/
+permalink: /kb/185/Q185429/
 ---
 
 ## Q185429: WD97: Link to Excel Worksheet Object Not Updated Automatically

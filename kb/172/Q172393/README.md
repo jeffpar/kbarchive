@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172393: BUG: Can't Export Symbols Differing Only by Leading Underscores"
-permalink: kb/172/Q172393/
+permalink: /kb/172/Q172393/
 ---
 
 ## Q172393: BUG: Can't Export Symbols Differing Only by Leading Underscores

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162681: Unexpected Result in NCB Callname After Canceling a Listen"
-permalink: kb/162/Q162681/
+permalink: /kb/162/Q162681/
 ---
 
 ## Q162681: Unexpected Result in NCB Callname After Canceling a Listen

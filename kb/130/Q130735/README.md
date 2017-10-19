@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130735: Quick Windows Viewer Displays Blue Backgrounds For Text/Icons"
-permalink: kb/130/Q130735/
+permalink: /kb/130/Q130735/
 ---
 
 ## Q130735: Quick Windows Viewer Displays Blue Backgrounds For Text/Icons

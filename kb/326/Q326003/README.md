@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326003: Zoo Tycoon: Cannot Install the Dinosaur Digs Expansion Pack"
-permalink: kb/326/Q326003/
+permalink: /kb/326/Q326003/
 ---
 
 ## Q326003: Zoo Tycoon: Cannot Install the Dinosaur Digs Expansion Pack

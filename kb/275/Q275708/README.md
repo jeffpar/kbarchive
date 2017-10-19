@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275708: TN3270E Bracket Error Because of Race Condition"
-permalink: kb/275/Q275708/
+permalink: /kb/275/Q275708/
 ---
 
 ## Q275708: TN3270E Bracket Error Because of Race Condition

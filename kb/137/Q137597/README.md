@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137597: PPT7: Preview Not Available for PowerPoint 4.0 Template"
-permalink: kb/137/Q137597/
+permalink: /kb/137/Q137597/
 ---
 
 ## Q137597: PPT7: Preview Not Available for PowerPoint 4.0 Template

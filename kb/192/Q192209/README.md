@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192209: BUG: Cannot Do OLEDrag from a MultiColumn ListBox"
-permalink: kb/192/Q192209/
+permalink: /kb/192/Q192209/
 ---
 
 ## Q192209: BUG: Cannot Do OLEDrag from a MultiColumn ListBox

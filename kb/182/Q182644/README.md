@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182644: DNR Sorts IP Address for Multihomed Hosts Before Returning List"
-permalink: kb/182/Q182644/
+permalink: /kb/182/Q182644/
 ---
 
 ## Q182644: DNR Sorts IP Address for Multihomed Hosts Before Returning List

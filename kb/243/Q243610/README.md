@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243610: MSN 5.O Minimum Installation Requirements and Highlights"
-permalink: kb/243/Q243610/
+permalink: /kb/243/Q243610/
 ---
 
 ## Q243610: MSN 5.O Minimum Installation Requirements and Highlights

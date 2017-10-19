@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190236: XFOR: Removing Connectors After Applying Exchange 5.5 SP1"
-permalink: kb/190/Q190236/
+permalink: /kb/190/Q190236/
 ---
 
 ## Q190236: XFOR: Removing Connectors After Applying Exchange 5.5 SP1

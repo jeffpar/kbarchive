@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269809: MSB: Slow Performance or &quot;Out of Memory&quot; Error Message"
-permalink: kb/269/Q269809/
+permalink: /kb/269/Q269809/
 ---
 
 ## Q269809: MSB: Slow Performance or &quot;Out of Memory&quot; Error Message

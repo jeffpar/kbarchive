@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180193: FIX: DAO Oracle and the NUMBER Datatype"
-permalink: kb/180/Q180193/
+permalink: /kb/180/Q180193/
 ---
 
 ## Q180193: FIX: DAO Oracle and the NUMBER Datatype

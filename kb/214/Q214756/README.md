@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214756: &quot;Path Not Found&quot; When Connecting to a Novell NetWare Server"
-permalink: kb/214/Q214756/
+permalink: /kb/214/Q214756/
 ---
 
 ## Q214756: &quot;Path Not Found&quot; When Connecting to a Novell NetWare Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166131: BUG: Class with Data Source Causes Type 11 Error"
-permalink: kb/166/Q166131/
+permalink: /kb/166/Q166131/
 ---
 
 ## Q166131: BUG: Class with Data Source Causes Type 11 Error

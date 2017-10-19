@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196432: DNS SOA Default Values Are Not Configurable"
-permalink: kb/196/Q196432/
+permalink: /kb/196/Q196432/
 ---
 
 ## Q196432: DNS SOA Default Values Are Not Configurable

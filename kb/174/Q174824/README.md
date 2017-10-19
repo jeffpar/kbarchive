@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174824: XCLN: Err Msg: The Items Properties Could Not Be Displayed"
-permalink: kb/174/Q174824/
+permalink: /kb/174/Q174824/
 ---
 
 ## Q174824: XCLN: Err Msg: The Items Properties Could Not Be Displayed

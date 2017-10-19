@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171906: MSN Program Viewer Does Not Display Pictures on Web Pages"
-permalink: kb/171/Q171906/
+permalink: /kb/171/Q171906/
 ---
 
 ## Q171906: MSN Program Viewer Does Not Display Pictures on Web Pages

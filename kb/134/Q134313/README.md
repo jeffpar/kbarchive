@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134313: How to Change Object Properties Based on a Logical Field"
-permalink: kb/134/Q134313/
+permalink: /kb/134/Q134313/
 ---
 
 ## Q134313: How to Change Object Properties Based on a Logical Field

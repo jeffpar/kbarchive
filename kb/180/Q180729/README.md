@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180729: Handle Leak in SNAUDB.EXE"
-permalink: kb/180/Q180729/
+permalink: /kb/180/Q180729/
 ---
 
 ## Q180729: Handle Leak in SNAUDB.EXE

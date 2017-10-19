@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86002: PC Win: Tile Command with Windows 3.0 Tiles Vertically"
-permalink: kb/086/Q86002/
+permalink: /kb/086/Q86002/
 ---
 
 ## Q86002: PC Win: Tile Command with Windows 3.0 Tiles Vertically

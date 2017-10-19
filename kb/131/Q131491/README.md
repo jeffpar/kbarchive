@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131491: ALT+Arrow Does Not Move Day to Day in Yearly View"
-permalink: kb/131/Q131491/
+permalink: /kb/131/Q131491/
 ---
 
 ## Q131491: ALT+Arrow Does Not Move Day to Day in Yearly View

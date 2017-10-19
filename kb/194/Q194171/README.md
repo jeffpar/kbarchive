@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194171: App Request UDP Only, &quot;Netstat -an&quot; Displays TCP and UDP"
-permalink: kb/194/Q194171/
+permalink: /kb/194/Q194171/
 ---
 
 ## Q194171: App Request UDP Only, &quot;Netstat -an&quot; Displays TCP and UDP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89214: Drag-and-Drop Support in Version 1.0 of Freelance for Windows"
-permalink: kb/089/Q89214/
+permalink: /kb/089/Q89214/
 ---
 
 ## Q89214: Drag-and-Drop Support in Version 1.0 of Freelance for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173252: FIX: CArchive::GetObjectSchema Returns Incorrect Schema"
-permalink: kb/173/Q173252/
+permalink: /kb/173/Q173252/
 ---
 
 ## Q173252: FIX: CArchive::GetObjectSchema Returns Incorrect Schema

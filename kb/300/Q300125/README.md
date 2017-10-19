@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300125: Using Passport Manager Verbose Mode"
-permalink: kb/300/Q300125/
+permalink: /kb/300/Q300125/
 ---
 
 ## Q300125: Using Passport Manager Verbose Mode

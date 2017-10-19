@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140572: How To Save Or Reset My Place When I Exit Encarta"
-permalink: kb/140/Q140572/
+permalink: /kb/140/Q140572/
 ---
 
 ## Q140572: How To Save Or Reset My Place When I Exit Encarta

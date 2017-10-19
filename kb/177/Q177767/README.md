@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177767: XADM: ESE97 Keys Not Removed From Registry During Remove All"
-permalink: kb/177/Q177767/
+permalink: /kb/177/Q177767/
 ---
 
 ## Q177767: XADM: ESE97 Keys Not Removed From Registry During Remove All

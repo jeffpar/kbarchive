@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94209: Profiling an Application in Microsoft Windows"
-permalink: kb/094/Q94209/
+permalink: /kb/094/Q94209/
 ---
 
 ## Q94209: Profiling an Application in Microsoft Windows

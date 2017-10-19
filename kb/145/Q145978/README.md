@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145978: XCLN: Shiva Does Not Always Prompt to Hang Up Connection"
-permalink: kb/145/Q145978/
+permalink: /kb/145/Q145978/
 ---
 
 ## Q145978: XCLN: Shiva Does Not Always Prompt to Hang Up Connection

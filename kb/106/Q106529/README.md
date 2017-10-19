@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106529: BUG: GetStrQQ Leaves Characters in Standard Output"
-permalink: kb/106/Q106529/
+permalink: /kb/106/Q106529/
 ---
 
 ## Q106529: BUG: GetStrQQ Leaves Characters in Standard Output

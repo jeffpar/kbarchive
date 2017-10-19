@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224131: Network Switch w/ Full-Duplex Incompatible w/ Half-Duplex NICs"
-permalink: kb/224/Q224131/
+permalink: /kb/224/Q224131/
 ---
 
 ## Q224131: Network Switch w/ Full-Duplex Incompatible w/ Half-Duplex NICs

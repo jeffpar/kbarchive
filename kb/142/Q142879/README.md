@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142879: HOWTO: Set Up Directory Annotation for Internet Server FTP"
-permalink: kb/142/Q142879/
+permalink: /kb/142/Q142879/
 ---
 
 ## Q142879: HOWTO: Set Up Directory Annotation for Internet Server FTP

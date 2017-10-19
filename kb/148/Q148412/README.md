@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148412: Use of the &quot;Seconds&quot; Field for BOOTP Relay Agents"
-permalink: kb/148/Q148412/
+permalink: /kb/148/Q148412/
 ---
 
 ## Q148412: Use of the &quot;Seconds&quot; Field for BOOTP Relay Agents

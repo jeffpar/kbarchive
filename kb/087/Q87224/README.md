@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87224: FFAPI: Memory and Disk Usage"
-permalink: kb/087/Q87224/
+permalink: /kb/087/Q87224/
 ---
 
 ## Q87224: FFAPI: Memory and Disk Usage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132512: Selecting a Computer Type Before Windows NT Setup Begins"
-permalink: kb/132/Q132512/
+permalink: /kb/132/Q132512/
 ---
 
 ## Q132512: Selecting a Computer Type Before Windows NT Setup Begins

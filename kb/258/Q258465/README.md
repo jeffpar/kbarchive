@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258465: Error Message C00E0044 Appears When You Create Queues in MSMQ"
-permalink: kb/258/Q258465/
+permalink: /kb/258/Q258465/
 ---
 
 ## Q258465: Error Message C00E0044 Appears When You Create Queues in MSMQ

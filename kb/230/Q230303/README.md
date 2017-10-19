@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230303: Contents of Internet Authentication Services Release Notes"
-permalink: kb/230/Q230303/
+permalink: /kb/230/Q230303/
 ---
 
 ## Q230303: Contents of Internet Authentication Services Release Notes

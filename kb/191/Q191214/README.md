@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191214: BUG: Error Message When Not Breaking Binary Compatibility"
-permalink: kb/191/Q191214/
+permalink: /kb/191/Q191214/
 ---
 
 ## Q191214: BUG: Error Message When Not Breaking Binary Compatibility

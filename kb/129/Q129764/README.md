@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129764: ProShare 1.8 Hangs Accessing Data on Remote Computer"
-permalink: kb/129/Q129764/
+permalink: /kb/129/Q129764/
 ---
 
 ## Q129764: ProShare 1.8 Hangs Accessing Data on Remote Computer

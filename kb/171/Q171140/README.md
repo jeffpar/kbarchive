@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171140: Permission Denied During Certificate Creation"
-permalink: kb/171/Q171140/
+permalink: /kb/171/Q171140/
 ---
 
 ## Q171140: Permission Denied During Certificate Creation

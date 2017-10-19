@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199983: SMS: Incorrect Mouse Cursor May Appear During Remote Control"
-permalink: kb/199/Q199983/
+permalink: /kb/199/Q199983/
 ---
 
 ## Q199983: SMS: Incorrect Mouse Cursor May Appear During Remote Control

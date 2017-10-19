@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185499: XADM: Inbox Rule to Forward w/ Leave Intact Rewrites P2 Headers"
-permalink: kb/185/Q185499/
+permalink: /kb/185/Q185499/
 ---
 
 ## Q185499: XADM: Inbox Rule to Forward w/ Leave Intact Rewrites P2 Headers

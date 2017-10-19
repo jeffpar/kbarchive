@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130086: Encarta 1995: Fine Artist Loads Instead of Word Processor"
-permalink: kb/130/Q130086/
+permalink: /kb/130/Q130086/
 ---
 
 ## Q130086: Encarta 1995: Fine Artist Loads Instead of Word Processor

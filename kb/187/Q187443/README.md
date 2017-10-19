@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187443: Unable to Reconnect at Maximum Number of Sessions"
-permalink: kb/187/Q187443/
+permalink: /kb/187/Q187443/
 ---
 
 ## Q187443: Unable to Reconnect at Maximum Number of Sessions

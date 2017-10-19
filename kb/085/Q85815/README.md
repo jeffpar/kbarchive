@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85815: Recovering Lost Windows from Windows Resource Kit's TopDesk"
-permalink: kb/085/Q85815/
+permalink: /kb/085/Q85815/
 ---
 
 ## Q85815: Recovering Lost Windows from Windows Resource Kit's TopDesk

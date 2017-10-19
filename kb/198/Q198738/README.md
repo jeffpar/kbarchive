@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198738: Probable Non-Windows NT Disk Error on HP NetServers"
-permalink: kb/198/Q198738/
+permalink: /kb/198/Q198738/
 ---
 
 ## Q198738: Probable Non-Windows NT Disk Error on HP NetServers

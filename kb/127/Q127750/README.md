@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127750: Writer/Artist: Sticker Rolls Are Missing"
-permalink: kb/127/Q127750/
+permalink: /kb/127/Q127750/
 ---
 
 ## Q127750: Writer/Artist: Sticker Rolls Are Missing

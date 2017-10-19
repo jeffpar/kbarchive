@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252678: INFO: No API to Programmatically Manipulate Disk Partitions"
-permalink: kb/252/Q252678/
+permalink: /kb/252/Q252678/
 ---
 
 ## Q252678: INFO: No API to Programmatically Manipulate Disk Partitions

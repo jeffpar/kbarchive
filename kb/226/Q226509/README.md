@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226509: Access Violation Error After Changing Event Viewer Log Location"
-permalink: kb/226/Q226509/
+permalink: /kb/226/Q226509/
 ---
 
 ## Q226509: Access Violation Error After Changing Event Viewer Log Location

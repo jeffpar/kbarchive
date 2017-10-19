@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133250: Unable to Connect to SQL Server If Default Protocol Is Changed"
-permalink: kb/133/Q133250/
+permalink: /kb/133/Q133250/
 ---
 
 ## Q133250: Unable to Connect to SQL Server If Default Protocol Is Changed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114256: How to Duplicate Varying Number of Labels Per Record"
-permalink: kb/114/Q114256/
+permalink: /kb/114/Q114256/
 ---
 
 ## Q114256: How to Duplicate Varying Number of Labels Per Record

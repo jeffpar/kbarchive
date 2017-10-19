@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82716: Side Effects of an Aborted Windows 3.0 to 3.1 Upgrade"
-permalink: kb/082/Q82716/
+permalink: /kb/082/Q82716/
 ---
 
 ## Q82716: Side Effects of an Aborted Windows 3.0 to 3.1 Upgrade

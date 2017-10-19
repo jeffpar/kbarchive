@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103847: PC MAPI: DocErr: Send Attachment Sample Code Correction"
-permalink: kb/103/Q103847/
+permalink: /kb/103/Q103847/
 ---
 
 ## Q103847: PC MAPI: DocErr: Send Attachment Sample Code Correction

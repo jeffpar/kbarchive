@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103052: Dysfunctional Browsing on Wide Area Network (WAN)"
-permalink: kb/103/Q103052/
+permalink: /kb/103/Q103052/
 ---
 
 ## Q103052: Dysfunctional Browsing on Wide Area Network (WAN)

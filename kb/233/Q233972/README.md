@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233972: PRB: &quot;Syntax Error in PARAMETER clause&quot; When Opening an MFC DAO"
-permalink: kb/233/Q233972/
+permalink: /kb/233/Q233972/
 ---
 
 ## Q233972: PRB: &quot;Syntax Error in PARAMETER clause&quot; When Opening an MFC DAO

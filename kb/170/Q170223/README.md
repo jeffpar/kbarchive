@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170223: FIX: Creating a New File DSN Causes a Refresh Problem on Deskto"
-permalink: kb/170/Q170223/
+permalink: /kb/170/Q170223/
 ---
 
 ## Q170223: FIX: Creating a New File DSN Causes a Refresh Problem on Deskto

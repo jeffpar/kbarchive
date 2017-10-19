@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247255: XADM: Information Store Silently Drops Messages"
-permalink: kb/247/Q247255/
+permalink: /kb/247/Q247255/
 ---
 
 ## Q247255: XADM: Information Store Silently Drops Messages

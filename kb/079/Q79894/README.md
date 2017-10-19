@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79894: QWINFIX, QEMM 6.0 and Enhanced Mode Windows"
-permalink: kb/079/Q79894/
+permalink: /kb/079/Q79894/
 ---
 
 ## Q79894: QWINFIX, QEMM 6.0 and Enhanced Mode Windows

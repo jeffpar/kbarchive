@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129973: MS-DOS-Based Program's Setup Causes Blue-Screen Error Message"
-permalink: kb/129/Q129973/
+permalink: /kb/129/Q129973/
 ---
 
 ## Q129973: MS-DOS-Based Program's Setup Causes Blue-Screen Error Message

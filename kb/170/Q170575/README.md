@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170575: MDG: Help, About Shows &quot;Microsoft Mail for Windows 95&quot;"
-permalink: kb/170/Q170575/
+permalink: /kb/170/Q170575/
 ---
 
 ## Q170575: MDG: Help, About Shows &quot;Microsoft Mail for Windows 95&quot;

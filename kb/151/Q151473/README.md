@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151473: XFOR: MSMI Crashes Starting a New Thread, Reads a Null Pointer"
-permalink: kb/151/Q151473/
+permalink: /kb/151/Q151473/
 ---
 
 ## Q151473: XFOR: MSMI Crashes Starting a New Thread, Reads a Null Pointer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275366: Restarting APPC Print Sessions Results in a Pending Status"
-permalink: kb/275/Q275366/
+permalink: /kb/275/Q275366/
 ---
 
 ## Q275366: Restarting APPC Print Sessions Results in a Pending Status

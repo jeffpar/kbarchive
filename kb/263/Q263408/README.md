@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263408: Access Violation in Inetinfo.exe on Server with &gt; 1 GB of RAM"
-permalink: kb/263/Q263408/
+permalink: /kb/263/Q263408/
 ---
 
 ## Q263408: Access Violation in Inetinfo.exe on Server with &gt; 1 GB of RAM

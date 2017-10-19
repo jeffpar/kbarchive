@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229579: PRB: CE ActiveX Control Is Not in List of Insertable Controls"
-permalink: kb/229/Q229579/
+permalink: /kb/229/Q229579/
 ---
 
 ## Q229579: PRB: CE ActiveX Control Is Not in List of Insertable Controls

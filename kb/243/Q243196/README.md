@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243196: Internet Information Services 5.0 RC2 Release Notes"
-permalink: kb/243/Q243196/
+permalink: /kb/243/Q243196/
 ---
 
 ## Q243196: Internet Information Services 5.0 RC2 Release Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128570: SMTP: Err Msg: 552 Error in Local Delivery"
-permalink: kb/128/Q128570/
+permalink: /kb/128/Q128570/
 ---
 
 ## Q128570: SMTP: Err Msg: 552 Error in Local Delivery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152436: XADM: How to Create Exchange Templates"
-permalink: kb/152/Q152436/
+permalink: /kb/152/Q152436/
 ---
 
 ## Q152436: XADM: How to Create Exchange Templates

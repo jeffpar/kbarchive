@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90681: Mac Util: Modem's Auto-Answer LED Remains on After Shutdown"
-permalink: kb/090/Q90681/
+permalink: /kb/090/Q90681/
 ---
 
 ## Q90681: Mac Util: Modem's Auto-Answer LED Remains on After Shutdown

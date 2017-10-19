@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253497: RDPCLIP.EXE: Does Not Work If Session Was Disconnected"
-permalink: kb/253/Q253497/
+permalink: /kb/253/Q253497/
 ---
 
 ## Q253497: RDPCLIP.EXE: Does Not Work If Session Was Disconnected

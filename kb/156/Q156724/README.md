@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156724: XCON: Messages Cannot Be Sent to Remote MTA, Repeated Err 2171"
-permalink: kb/156/Q156724/
+permalink: /kb/156/Q156724/
 ---
 
 ## Q156724: XCON: Messages Cannot Be Sent to Remote MTA, Repeated Err 2171

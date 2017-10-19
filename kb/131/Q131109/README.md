@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131109: Explorapedia Nature: Earth Rotates in Wrong Direction"
-permalink: kb/131/Q131109/
+permalink: /kb/131/Q131109/
 ---
 
 ## Q131109: Explorapedia Nature: Earth Rotates in Wrong Direction

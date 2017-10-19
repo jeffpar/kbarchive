@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99866: Sound Box May Take a Long Time to Preload"
-permalink: kb/099/Q99866/
+permalink: /kb/099/Q99866/
 ---
 
 ## Q99866: Sound Box May Take a Long Time to Preload

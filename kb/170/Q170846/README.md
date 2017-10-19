@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170846: Computer or Workgroup Name Not Set Properly Using Msbatch.inf"
-permalink: kb/170/Q170846/
+permalink: /kb/170/Q170846/
 ---
 
 ## Q170846: Computer or Workgroup Name Not Set Properly Using Msbatch.inf

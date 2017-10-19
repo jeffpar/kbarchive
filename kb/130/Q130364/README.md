@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130364: FIX: Scroll Bars Disappear When No Data Bound to a Grid"
-permalink: kb/130/Q130364/
+permalink: /kb/130/Q130364/
 ---
 
 ## Q130364: FIX: Scroll Bars Disappear When No Data Bound to a Grid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185270: WD97: Paragraph Fails to Indent When Indent Applied with Ruler"
-permalink: kb/185/Q185270/
+permalink: /kb/185/Q185270/
 ---
 
 ## Q185270: WD97: Paragraph Fails to Indent When Indent Applied with Ruler

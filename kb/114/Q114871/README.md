@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114871: Bookshelf: QuickShelf GP Faults with PCTools Desktop"
-permalink: kb/114/Q114871/
+permalink: /kb/114/Q114871/
 ---
 
 ## Q114871: Bookshelf: QuickShelf GP Faults with PCTools Desktop

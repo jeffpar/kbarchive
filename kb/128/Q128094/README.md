@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128094: MSTEST Subdirectories Not Copied to Logon Server"
-permalink: kb/128/Q128094/
+permalink: /kb/128/Q128094/
 ---
 
 ## Q128094: MSTEST Subdirectories Not Copied to Logon Server

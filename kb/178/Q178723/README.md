@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178723: Problems with &quot;Run Only Allowed Windows Application&quot;"
-permalink: kb/178/Q178723/
+permalink: /kb/178/Q178723/
 ---
 
 ## Q178723: Problems with &quot;Run Only Allowed Windows Application&quot;

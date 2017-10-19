@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132582: Backup File Damaged Saving Multiple Volumes to a Network Drive"
-permalink: kb/132/Q132582/
+permalink: /kb/132/Q132582/
 ---
 
 ## Q132582: Backup File Damaged Saving Multiple Volumes to a Network Drive

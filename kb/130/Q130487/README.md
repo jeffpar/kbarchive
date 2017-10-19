@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130487: Event 560 When Opening a Read-Only File for Read Access"
-permalink: kb/130/Q130487/
+permalink: /kb/130/Q130487/
 ---
 
 ## Q130487: Event 560 When Opening a Read-Only File for Read Access

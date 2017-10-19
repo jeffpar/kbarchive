@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50824: PAGE DOWN Key Does Not Work in Write"
-permalink: kb/050/Q50824/
+permalink: /kb/050/Q50824/
 ---
 
 ## Q50824: PAGE DOWN Key Does Not Work in Write

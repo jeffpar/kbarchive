@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195382: BUG: MsDev Caused an Invalid Page Fault in Devedit.pkg"
-permalink: kb/195/Q195382/
+permalink: /kb/195/Q195382/
 ---
 
 ## Q195382: BUG: MsDev Caused an Invalid Page Fault in Devedit.pkg

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190006: &quot;ODBC Drivers Error 80004005&quot; When Browsing ASP Pages"
-permalink: kb/190/Q190006/
+permalink: /kb/190/Q190006/
 ---
 
 ## Q190006: &quot;ODBC Drivers Error 80004005&quot; When Browsing ASP Pages

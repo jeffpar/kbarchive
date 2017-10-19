@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306368: HOWTO: Use RAPI to Add Keys and Values to the Remote Registry"
-permalink: kb/306/Q306368/
+permalink: /kb/306/Q306368/
 ---
 
 ## Q306368: HOWTO: Use RAPI to Add Keys and Values to the Remote Registry

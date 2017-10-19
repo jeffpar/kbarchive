@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134695: BW-Connect NFS 3.5 for Windows NT Hangs Windows NT 3.51 VDMs"
-permalink: kb/134/Q134695/
+permalink: /kb/134/Q134695/
 ---
 
 ## Q134695: BW-Connect NFS 3.5 for Windows NT Hangs Windows NT 3.51 VDMs

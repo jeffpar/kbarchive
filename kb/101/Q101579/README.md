@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101579: Err Msg: Cannot Open DoubleSpace Help File, DBLSPACE.HLP"
-permalink: kb/101/Q101579/
+permalink: /kb/101/Q101579/
 ---
 
 ## Q101579: Err Msg: Cannot Open DoubleSpace Help File, DBLSPACE.HLP

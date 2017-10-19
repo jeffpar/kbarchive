@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131655: Mac Wine Guide, Ancient Lands: Play Button Sounds Don't Work"
-permalink: kb/131/Q131655/
+permalink: /kb/131/Q131655/
 ---
 
 ## Q131655: Mac Wine Guide, Ancient Lands: Play Button Sounds Don't Work

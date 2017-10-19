@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295162: System Errors When You Open Services from Administrative Tools"
-permalink: kb/295/Q295162/
+permalink: /kb/295/Q295162/
 ---
 
 ## Q295162: System Errors When You Open Services from Administrative Tools

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162609: HOWTO: Create a Printer Device Context (DC) in MFC"
-permalink: kb/162/Q162609/
+permalink: /kb/162/Q162609/
 ---
 
 ## Q162609: HOWTO: Create a Printer Device Context (DC) in MFC

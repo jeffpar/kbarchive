@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192453: MoveFile API from Windows 95 with Invalid UNC Causes STOP 0xa"
-permalink: kb/192/Q192453/
+permalink: /kb/192/Q192453/
 ---
 
 ## Q192453: MoveFile API from Windows 95 with Invalid UNC Causes STOP 0xa

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116164: Baseball: Contents of BBLEGAL.TXT File"
-permalink: kb/116/Q116164/
+permalink: /kb/116/Q116164/
 ---
 
 ## Q116164: Baseball: Contents of BBLEGAL.TXT File

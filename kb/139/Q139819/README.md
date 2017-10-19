@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139819: Missing and Multiple Drive Letters Assigned To Partitions"
-permalink: kb/139/Q139819/
+permalink: /kb/139/Q139819/
 ---
 
 ## Q139819: Missing and Multiple Drive Letters Assigned To Partitions

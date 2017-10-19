@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192052: XFOR: MSMI: Messages with Incomplete X.400 Addresses are NDR"
-permalink: kb/192/Q192052/
+permalink: /kb/192/Q192052/
 ---
 
 ## Q192052: XFOR: MSMI: Messages with Incomplete X.400 Addresses are NDR

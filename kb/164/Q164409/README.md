@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164409: Stop 0x0000000A in Tcpip.sys Caused by Invalid Fragment Bit"
-permalink: kb/164/Q164409/
+permalink: /kb/164/Q164409/
 ---
 
 ## Q164409: Stop 0x0000000A in Tcpip.sys Caused by Invalid Fragment Bit

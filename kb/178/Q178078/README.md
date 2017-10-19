@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178078: PRB: Events Occur in EXE While a Message Box Is Displayed"
-permalink: kb/178/Q178078/
+permalink: /kb/178/Q178078/
 ---
 
 ## Q178078: PRB: Events Occur in EXE While a Message Box Is Displayed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275301: BUG: Kodak Image Edit Controls Causes Error in VB IDE on Win Me"
-permalink: kb/275/Q275301/
+permalink: /kb/275/Q275301/
 ---
 
 ## Q275301: BUG: Kodak Image Edit Controls Causes Error in VB IDE on Win Me

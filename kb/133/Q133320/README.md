@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133320: List of Confirmed Bugs in Windows NT Version 3.5"
-permalink: kb/133/Q133320/
+permalink: /kb/133/Q133320/
 ---
 
 ## Q133320: List of Confirmed Bugs in Windows NT Version 3.5

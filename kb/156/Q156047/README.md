@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156047: &quot;A Temporary File...&quot; Error Occurs Opening Attachment"
-permalink: kb/156/Q156047/
+permalink: /kb/156/Q156047/
 ---
 
 ## Q156047: &quot;A Temporary File...&quot; Error Occurs Opening Attachment

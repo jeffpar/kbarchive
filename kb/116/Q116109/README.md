@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116109: Problems Using 1.0 Version of NDIS 2.0 Network Card Driver"
-permalink: kb/116/Q116109/
+permalink: /kb/116/Q116109/
 ---
 
 ## Q116109: Problems Using 1.0 Version of NDIS 2.0 Network Card Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257630: FIX: Exception Error Closing Application with CoolBar Control"
-permalink: kb/257/Q257630/
+permalink: /kb/257/Q257630/
 ---
 
 ## Q257630: FIX: Exception Error Closing Application with CoolBar Control

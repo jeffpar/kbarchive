@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195816: RandomSponsor Setting Does Not Work on SNA Server Client for NT"
-permalink: kb/195/Q195816/
+permalink: /kb/195/Q195816/
 ---
 
 ## Q195816: RandomSponsor Setting Does Not Work on SNA Server Client for NT

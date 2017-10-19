@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q193020: INFO: PDW [Do Not Redistribute] Section of VB6DEP.INI"
-permalink: kb/193/Q193020/
+title: "Q193020: INFO: PDW &#91;Do Not Redistribute&#93; Section of VB6DEP.INI"
+permalink: /kb/193/Q193020/
 ---
 
-## Q193020: INFO: PDW [Do Not Redistribute] Section of VB6DEP.INI
+## Q193020: INFO: PDW &#91;Do Not Redistribute&#93; Section of VB6DEP.INI
 
 	Article: Q193020
 	Product(s): Microsoft Visual Basic for Windows

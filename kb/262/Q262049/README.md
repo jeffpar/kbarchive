@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262049: Cannot Change Service Account Password for Secondary Site Server"
-permalink: kb/262/Q262049/
+permalink: /kb/262/Q262049/
 ---
 
 ## Q262049: Cannot Change Service Account Password for Secondary Site Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157199: WD97: Memo Wizard Quits If Memo Title Is Over 255 Characters"
-permalink: kb/157/Q157199/
+permalink: /kb/157/Q157199/
 ---
 
 ## Q157199: WD97: Memo Wizard Quits If Memo Title Is Over 255 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222627: How to Disable Auto Dial"
-permalink: kb/222/Q222627/
+permalink: /kb/222/Q222627/
 ---
 
 ## Q222627: How to Disable Auto Dial

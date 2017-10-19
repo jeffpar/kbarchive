@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174257: XCON: Eicon Default Setting Only Allows Four MTA Associations"
-permalink: kb/174/Q174257/
+permalink: /kb/174/Q174257/
 ---
 
 ## Q174257: XCON: Eicon Default Setting Only Allows Four MTA Associations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155065: PPT7: Error inserting QuickTime Movie (&#42;.mov)"
-permalink: kb/155/Q155065/
+permalink: /kb/155/Q155065/
 ---
 
 ## Q155065: PPT7: Error inserting QuickTime Movie (&#42;.mov)

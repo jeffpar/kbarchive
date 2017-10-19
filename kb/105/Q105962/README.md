@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105962: PC MAPI: C Equivalent to MAPI APPEXEC.TXT in MS Visual Basic"
-permalink: kb/105/Q105962/
+permalink: /kb/105/Q105962/
 ---
 
 ## Q105962: PC MAPI: C Equivalent to MAPI APPEXEC.TXT in MS Visual Basic

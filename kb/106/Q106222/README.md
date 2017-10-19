@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106222: CSD00.059 Allows Remoteboot to Work with MS-DOS 6.0, 6.2"
-permalink: kb/106/Q106222/
+permalink: /kb/106/Q106222/
 ---
 
 ## Q106222: CSD00.059 Allows Remoteboot to Work with MS-DOS 6.0, 6.2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96939: MS-DOS 6 Upgrade Directory Listing for Supplemental Disks"
-permalink: kb/096/Q96939/
+permalink: /kb/096/Q96939/
 ---
 
 ## Q96939: MS-DOS 6 Upgrade Directory Listing for Supplemental Disks

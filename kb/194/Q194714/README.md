@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194714: Noise Signals Interpreted As Keystroke During Boot Display"
-permalink: kb/194/Q194714/
+permalink: /kb/194/Q194714/
 ---
 
 ## Q194714: Noise Signals Interpreted As Keystroke During Boot Display

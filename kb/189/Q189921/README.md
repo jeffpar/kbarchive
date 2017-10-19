@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189921: PRB: Mailto: Hyperlink Object Starts Internet Explorer in Error"
-permalink: kb/189/Q189921/
+permalink: /kb/189/Q189921/
 ---
 
 ## Q189921: PRB: Mailto: Hyperlink Object Starts Internet Explorer in Error

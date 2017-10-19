@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156248: Hellbender: Connection Failed Error in Network Game"
-permalink: kb/156/Q156248/
+permalink: /kb/156/Q156248/
 ---
 
 ## Q156248: Hellbender: Connection Failed Error in Network Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67416: PIF Files Created by Windows 3.0 Setup from M to N"
-permalink: kb/067/Q67416/
+permalink: /kb/067/Q67416/
 ---
 
 ## Q67416: PIF Files Created by Windows 3.0 Setup from M to N

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257653: Zone Err Msg: Failed to Write Settings to Registry"
-permalink: kb/257/Q257653/
+permalink: /kb/257/Q257653/
 ---
 
 ## Q257653: Zone Err Msg: Failed to Write Settings to Registry

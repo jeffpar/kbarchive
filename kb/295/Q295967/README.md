@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295967: HIS2000 Clients Do Not Access Config File on Localized Win 2000"
-permalink: kb/295/Q295967/
+permalink: /kb/295/Q295967/
 ---
 
 ## Q295967: HIS2000 Clients Do Not Access Config File on Localized Win 2000

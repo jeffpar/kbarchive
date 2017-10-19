@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194525: XWEB: VBScript Runtime Error '800A01A8' with OWA"
-permalink: kb/194/Q194525/
+permalink: /kb/194/Q194525/
 ---
 
 ## Q194525: XWEB: VBScript Runtime Error '800A01A8' with OWA

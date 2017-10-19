@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222837: PRB: Cannot Call ActiveX Scripting Engine Methods from Non-base"
-permalink: kb/222/Q222837/
+permalink: /kb/222/Q222837/
 ---
 
 ## Q222837: PRB: Cannot Call ActiveX Scripting Engine Methods from Non-base

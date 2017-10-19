@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323312: HOW TO: Create an IIS Baseline by Using Log Analysis"
-permalink: kb/323/Q323312/
+permalink: /kb/323/Q323312/
 ---
 
 ## Q323312: HOW TO: Create an IIS Baseline by Using Log Analysis

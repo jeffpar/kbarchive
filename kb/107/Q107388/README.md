@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107388: Flight Simulator: Select SC1 File Button Not Visible"
-permalink: kb/107/Q107388/
+permalink: /kb/107/Q107388/
 ---
 
 ## Q107388: Flight Simulator: Select SC1 File Button Not Visible

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238329: Malformed IGMP Packets May Promote &quot;Denial of Service&quot; Attack"
-permalink: kb/238/Q238329/
+permalink: /kb/238/Q238329/
 ---
 
 ## Q238329: Malformed IGMP Packets May Promote &quot;Denial of Service&quot; Attack

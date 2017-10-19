@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146505: XCLN: Incorrect Read Receipt with Only BCC Recipient"
-permalink: kb/146/Q146505/
+permalink: /kb/146/Q146505/
 ---
 
 ## Q146505: XCLN: Incorrect Read Receipt with Only BCC Recipient

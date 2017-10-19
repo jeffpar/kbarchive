@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159931: Error 5 Opening File Using DataEase"
-permalink: kb/159/Q159931/
+permalink: /kb/159/Q159931/
 ---
 
 ## Q159931: Error 5 Opening File Using DataEase

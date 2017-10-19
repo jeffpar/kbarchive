@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155123: Supported Modem Detected as Standard Modem"
-permalink: kb/155/Q155123/
+permalink: /kb/155/Q155123/
 ---
 
 ## Q155123: Supported Modem Detected as Standard Modem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99803: MDIWinMN.exe Customizes MDI Window Menu"
-permalink: kb/099/Q99803/
+permalink: /kb/099/Q99803/
 ---
 
 ## Q99803: MDIWinMN.exe Customizes MDI Window Menu

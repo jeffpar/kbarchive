@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106731: PRB: Large BLOCK DATA Subprogram Compiles Slowly"
-permalink: kb/106/Q106731/
+permalink: /kb/106/Q106731/
 ---
 
 ## Q106731: PRB: Large BLOCK DATA Subprogram Compiles Slowly

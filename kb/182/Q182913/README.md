@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182913: SNA Server is Working Although SNA Manager Shows &quot;Offline&quot;"
-permalink: kb/182/Q182913/
+permalink: /kb/182/Q182913/
 ---
 
 ## Q182913: SNA Server is Working Although SNA Manager Shows &quot;Offline&quot;

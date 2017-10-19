@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140190: PC Win: CONVERT.EXE Not Converting Folders with Mac Attachment"
-permalink: kb/140/Q140190/
+permalink: /kb/140/Q140190/
 ---
 
 ## Q140190: PC Win: CONVERT.EXE Not Converting Folders with Mac Attachment

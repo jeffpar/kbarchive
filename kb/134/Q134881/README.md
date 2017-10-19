@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134881: FIX: WAIT WINDOW AT Clause Puts WAIT WINDOW on Windows Desktop"
-permalink: kb/134/Q134881/
+permalink: /kb/134/Q134881/
 ---
 
 ## Q134881: FIX: WAIT WINDOW AT Clause Puts WAIT WINDOW on Windows Desktop

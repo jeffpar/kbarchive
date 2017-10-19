@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179654: XADM: Current Log Files Are Lost After Incomplete Restore"
-permalink: kb/179/Q179654/
+permalink: /kb/179/Q179654/
 ---
 
 ## Q179654: XADM: Current Log Files Are Lost After Incomplete Restore

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137826: Disabling Password Caching and Changing Passwords"
-permalink: kb/137/Q137826/
+permalink: /kb/137/Q137826/
 ---
 
 ## Q137826: Disabling Password Caching and Changing Passwords

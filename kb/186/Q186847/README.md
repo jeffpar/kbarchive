@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186847: WD97: Unicode Characters Converted Incorrectly"
-permalink: kb/186/Q186847/
+permalink: /kb/186/Q186847/
 ---
 
 ## Q186847: WD97: Unicode Characters Converted Incorrectly

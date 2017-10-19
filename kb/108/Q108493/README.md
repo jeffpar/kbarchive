@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108493: ScanDisk and Files Marked with Directory Attributes"
-permalink: kb/108/Q108493/
+permalink: /kb/108/Q108493/
 ---
 
 ## Q108493: ScanDisk and Files Marked with Directory Attributes

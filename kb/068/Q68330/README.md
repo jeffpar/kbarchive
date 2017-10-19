@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68330: Decreasing Time to Log Onto Network with DOS/OS2 LM"
-permalink: kb/068/Q68330/
+permalink: /kb/068/Q68330/
 ---
 
 ## Q68330: Decreasing Time to Log Onto Network with DOS/OS2 LM

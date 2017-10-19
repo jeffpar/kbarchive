@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67081: DOCERR: PWB Online Help Lists /D CodeView Option As /O"
-permalink: kb/067/Q67081/
+permalink: /kb/067/Q67081/
 ---
 
 ## Q67081: DOCERR: PWB Online Help Lists /D CodeView Option As /O

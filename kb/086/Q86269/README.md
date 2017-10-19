@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86269: PRB: IBM Proprinter Draft Mode Unavailable Under Windows 3.1"
-permalink: kb/086/Q86269/
+permalink: /kb/086/Q86269/
 ---
 
 ## Q86269: PRB: IBM Proprinter Draft Mode Unavailable Under Windows 3.1

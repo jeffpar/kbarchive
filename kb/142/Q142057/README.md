@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142057: How to Install PPD Files From Postscript Printer Manufacturers"
-permalink: kb/142/Q142057/
+permalink: /kb/142/Q142057/
 ---
 
 ## Q142057: How to Install PPD Files From Postscript Printer Manufacturers

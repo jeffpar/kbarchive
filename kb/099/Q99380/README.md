@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99380: NT Account Validation for PCs in the Same Domain"
-permalink: kb/099/Q99380/
+permalink: /kb/099/Q99380/
 ---
 
 ## Q99380: NT Account Validation for PCs in the Same Domain

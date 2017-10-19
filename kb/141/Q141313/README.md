@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141313: How to Have One Executable Call Another w/FoxPro for Macintosh"
-permalink: kb/141/Q141313/
+permalink: /kb/141/Q141313/
 ---
 
 ## Q141313: How to Have One Executable Call Another w/FoxPro for Macintosh

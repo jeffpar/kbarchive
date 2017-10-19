@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83482: Windows 3.0 Files May Cause Windows 3.1 Boot Errors"
-permalink: kb/083/Q83482/
+permalink: /kb/083/Q83482/
 ---
 
 ## Q83482: Windows 3.0 Files May Cause Windows 3.1 Boot Errors

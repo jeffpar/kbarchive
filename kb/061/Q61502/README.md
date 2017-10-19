@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61502: .MODEL with a Language Makes Procedure Names PUBLIC"
-permalink: kb/061/Q61502/
+permalink: /kb/061/Q61502/
 ---
 
 ## Q61502: .MODEL with a Language Makes Procedure Names PUBLIC

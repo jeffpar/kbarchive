@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160849: INFO: How the SNA Server Client Chooses a &quot;Sponsor&quot; SNA Server"
-permalink: kb/160/Q160849/
+permalink: /kb/160/Q160849/
 ---
 
 ## Q160849: INFO: How the SNA Server Client Chooses a &quot;Sponsor&quot; SNA Server

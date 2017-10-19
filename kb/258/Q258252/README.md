@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258252: TN5250 Fails to Issue RECEIVE_AND_WAIT"
-permalink: kb/258/Q258252/
+permalink: /kb/258/Q258252/
 ---
 
 ## Q258252: TN5250 Fails to Issue RECEIVE_AND_WAIT

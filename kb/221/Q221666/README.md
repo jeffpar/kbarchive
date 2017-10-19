@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221666: FIX: SQL Upsizing Wizard Save Generated SQL Bloats Script.fpt"
-permalink: kb/221/Q221666/
+permalink: /kb/221/Q221666/
 ---
 
 ## Q221666: FIX: SQL Upsizing Wizard Save Generated SQL Bloats Script.fpt

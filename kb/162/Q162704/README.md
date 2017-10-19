@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162704: STOP 0X0000001E in Nwrdr.sys When Copying Files to NetWare"
-permalink: kb/162/Q162704/
+permalink: /kb/162/Q162704/
 ---
 
 ## Q162704: STOP 0X0000001E in Nwrdr.sys When Copying Files to NetWare

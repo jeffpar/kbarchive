@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217142: XCON: DRAS Fails with Event 9322"
-permalink: kb/217/Q217142/
+permalink: /kb/217/Q217142/
 ---
 
 ## Q217142: XCON: DRAS Fails with Event 9322

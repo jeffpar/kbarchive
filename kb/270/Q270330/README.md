@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270330: FILE: Corrupted IIS Index in July 2000 MSDN Library"
-permalink: kb/270/Q270330/
+permalink: /kb/270/Q270330/
 ---
 
 ## Q270330: FILE: Corrupted IIS Index in July 2000 MSDN Library

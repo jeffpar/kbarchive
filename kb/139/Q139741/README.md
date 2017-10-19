@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139741: Clicking MSN Icon Does Not Open Sign In Window"
-permalink: kb/139/Q139741/
+permalink: /kb/139/Q139741/
 ---
 
 ## Q139741: Clicking MSN Icon Does Not Open Sign In Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78789: Windows Err Msg: Could Not Print Page &lt;x&gt;"
-permalink: kb/078/Q78789/
+permalink: /kb/078/Q78789/
 ---
 
 ## Q78789: Windows Err Msg: Could Not Print Page &lt;x&gt;

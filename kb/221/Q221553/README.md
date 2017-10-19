@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221553: Setting File Attributes Causes 404 - File Not Found Error"
-permalink: kb/221/Q221553/
+permalink: /kb/221/Q221553/
 ---
 
 ## Q221553: Setting File Attributes Causes 404 - File Not Found Error

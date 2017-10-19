@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166211: HOWTO: Call SQL Server System Stored Procedures from RDO"
-permalink: kb/166/Q166211/
+permalink: /kb/166/Q166211/
 ---
 
 ## Q166211: HOWTO: Call SQL Server System Stored Procedures from RDO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160733: MSB Ocean: Macintosh System Error After Driver's License"
-permalink: kb/160/Q160733/
+permalink: /kb/160/Q160733/
 ---
 
 ## Q160733: MSB Ocean: Macintosh System Error After Driver's License

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232604: XCON: MTA Is Leaking During Content Conversion"
-permalink: kb/232/Q232604/
+permalink: /kb/232/Q232604/
 ---
 
 ## Q232604: XCON: MTA Is Leaking During Content Conversion

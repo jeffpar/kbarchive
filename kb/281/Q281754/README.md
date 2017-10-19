@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281754: SMS: Distribution Points Updated When Opening Package Properties"
-permalink: kb/281/Q281754/
+permalink: /kb/281/Q281754/
 ---
 
 ## Q281754: SMS: Distribution Points Updated When Opening Package Properties

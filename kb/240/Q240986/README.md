@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240986: Pandora's Box: Game Graphics Are Distorted When You Use ALT+TAB"
-permalink: kb/240/Q240986/
+permalink: /kb/240/Q240986/
 ---
 
 ## Q240986: Pandora's Box: Game Graphics Are Distorted When You Use ALT+TAB

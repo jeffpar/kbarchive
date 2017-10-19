@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192234: Winstone 97 Running on Console Freezes System"
-permalink: kb/192/Q192234/
+permalink: /kb/192/Q192234/
 ---
 
 ## Q192234: Winstone 97 Running on Console Freezes System

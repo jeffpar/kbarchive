@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173673: Windows NT Server Tools for Windows NT Workstation 4.0 Available"
-permalink: kb/173/Q173673/
+permalink: /kb/173/Q173673/
 ---
 
 ## Q173673: Windows NT Server Tools for Windows NT Workstation 4.0 Available

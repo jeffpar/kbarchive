@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158665: FIX: 16-Bit Driver Keyset Cursor Operations with Query Timeout"
-permalink: kb/158/Q158665/
+permalink: /kb/158/Q158665/
 ---
 
 ## Q158665: FIX: 16-Bit Driver Keyset Cursor Operations with Query Timeout

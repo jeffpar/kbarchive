@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133402: Timex Data Link: Invalid Anniversaries May Appear"
-permalink: kb/133/Q133402/
+permalink: /kb/133/Q133402/
 ---
 
 ## Q133402: Timex Data Link: Invalid Anniversaries May Appear

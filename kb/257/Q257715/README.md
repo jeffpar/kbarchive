@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257715: PC Win: Error Message: An Error Occurred Preventing Complete..."
-permalink: kb/257/Q257715/
+permalink: /kb/257/Q257715/
 ---
 
 ## Q257715: PC Win: Error Message: An Error Occurred Preventing Complete...

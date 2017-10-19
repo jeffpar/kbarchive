@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70422: MS-DOS Editor &amp; QBasic (MCGA w/Mono. Monitor)"
-permalink: kb/070/Q70422/
+permalink: /kb/070/Q70422/
 ---
 
 ## Q70422: MS-DOS Editor &amp; QBasic (MCGA w/Mono. Monitor)

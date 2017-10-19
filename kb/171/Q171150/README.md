@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171150: Outlook 97 SBS: Steps Unclear for Non-Exchange Installation"
-permalink: kb/171/Q171150/
+permalink: /kb/171/Q171150/
 ---
 
 ## Q171150: Outlook 97 SBS: Steps Unclear for Non-Exchange Installation

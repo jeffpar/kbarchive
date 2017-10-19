@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122032: Troubleshooting At Work PC Fax in WFWG 3.11"
-permalink: kb/122/Q122032/
+permalink: /kb/122/Q122032/
 ---
 
 ## Q122032: Troubleshooting At Work PC Fax in WFWG 3.11

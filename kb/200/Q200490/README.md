@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200490: XADM: Installing Exchange Server 5.5 SP1 on a Cluster"
-permalink: kb/200/Q200490/
+permalink: /kb/200/Q200490/
 ---
 
 ## Q200490: XADM: Installing Exchange Server 5.5 SP1 on a Cluster

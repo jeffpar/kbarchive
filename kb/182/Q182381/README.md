@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182381: Download File List for Windows Sockets 2.0 Update (Ws2setup.exe)"
-permalink: kb/182/Q182381/
+permalink: /kb/182/Q182381/
 ---
 
 ## Q182381: Download File List for Windows Sockets 2.0 Update (Ws2setup.exe)

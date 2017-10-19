@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157715: PRB: VSS OLE Add-in Model Not Supported by Visual Basic 4.0"
-permalink: kb/157/Q157715/
+permalink: /kb/157/Q157715/
 ---
 
 ## Q157715: PRB: VSS OLE Add-in Model Not Supported by Visual Basic 4.0

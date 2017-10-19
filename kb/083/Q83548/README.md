@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83548: Reasons for Windows 3.1 Setup to Fail While Upgrading"
-permalink: kb/083/Q83548/
+permalink: /kb/083/Q83548/
 ---
 
 ## Q83548: Reasons for Windows 3.1 Setup to Fail While Upgrading

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141425: FIX: Toolbar Events Fire Differently When Using Dock Method"
-permalink: kb/141/Q141425/
+permalink: /kb/141/Q141425/
 ---
 
 ## Q141425: FIX: Toolbar Events Fire Differently When Using Dock Method

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134240: Running the MS-DOS-Based Portion of a Windows-Based Program"
-permalink: kb/134/Q134240/
+permalink: /kb/134/Q134240/
 ---
 
 ## Q134240: Running the MS-DOS-Based Portion of a Windows-Based Program

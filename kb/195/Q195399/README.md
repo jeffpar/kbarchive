@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195399: SNA Print Service Access Violation in S3pcsctl()"
-permalink: kb/195/Q195399/
+permalink: /kb/195/Q195399/
 ---
 
 ## Q195399: SNA Print Service Access Violation in S3pcsctl()

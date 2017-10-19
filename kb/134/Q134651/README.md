@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134651: Some NE2000 Compatable Drivers Not Included in Windows NT 3.51"
-permalink: kb/134/Q134651/
+permalink: /kb/134/Q134651/
 ---
 
 ## Q134651: Some NE2000 Compatable Drivers Not Included in Windows NT 3.51

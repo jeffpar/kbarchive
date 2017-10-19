@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263067: XCLN: Outlook 98 Word Attach. Garbled w. Public Folder Contact"
-permalink: kb/263/Q263067/
+permalink: /kb/263/Q263067/
 ---
 
 ## Q263067: XCLN: Outlook 98 Word Attach. Garbled w. Public Folder Contact

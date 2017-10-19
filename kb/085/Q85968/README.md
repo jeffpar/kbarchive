@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85968: PC Win: Excel 4.0 Chart May Appear Smaller Than Normal"
-permalink: kb/085/Q85968/
+permalink: /kb/085/Q85968/
 ---
 
 ## Q85968: PC Win: Excel 4.0 Chart May Appear Smaller Than Normal

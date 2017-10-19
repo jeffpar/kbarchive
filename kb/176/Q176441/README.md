@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176441: Cannot Send or Receive E-mail After Automatic Mail Configuration"
-permalink: kb/176/Q176441/
+permalink: /kb/176/Q176441/
 ---
 
 ## Q176441: Cannot Send or Receive E-mail After Automatic Mail Configuration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104894: FIX: VERIFY Doesn't Check Last Character in String"
-permalink: kb/104/Q104894/
+permalink: /kb/104/Q104894/
 ---
 
 ## Q104894: FIX: VERIFY Doesn't Check Last Character in String

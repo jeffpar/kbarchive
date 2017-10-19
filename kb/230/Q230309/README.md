@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230309: Contents of SMTP Service Release Notes"
-permalink: kb/230/Q230309/
+permalink: /kb/230/Q230309/
 ---
 
 ## Q230309: Contents of SMTP Service Release Notes

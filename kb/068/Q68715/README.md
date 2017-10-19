@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68715: Mac AL: AppleLink 2.0 Does Not Support Multiple Enclosures"
-permalink: kb/068/Q68715/
+permalink: /kb/068/Q68715/
 ---
 
 ## Q68715: Mac AL: AppleLink 2.0 Does Not Support Multiple Enclosures

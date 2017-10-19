@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97779: PC WRmt: Using Extended Characters in Scripts"
-permalink: kb/097/Q97779/
+permalink: /kb/097/Q97779/
 ---
 
 ## Q97779: PC WRmt: Using Extended Characters in Scripts

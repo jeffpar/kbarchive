@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179548: XADM: How to Update a Client Install Share with 5.0 SP2"
-permalink: kb/179/Q179548/
+permalink: /kb/179/Q179548/
 ---
 
 ## Q179548: XADM: How to Update a Client Install Share with 5.0 SP2

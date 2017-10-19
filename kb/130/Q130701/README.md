@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130701: PC Win: Sending Mail Without Delay with ForceScanInterval=1"
-permalink: kb/130/Q130701/
+permalink: /kb/130/Q130701/
 ---
 
 ## Q130701: PC Win: Sending Mail Without Delay with ForceScanInterval=1

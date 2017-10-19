@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168722: GSNW May Create an Unnecessary DependOnService to LanManSer"
-permalink: kb/168/Q168722/
+permalink: /kb/168/Q168722/
 ---
 
 ## Q168722: GSNW May Create an Unnecessary DependOnService to LanManSer

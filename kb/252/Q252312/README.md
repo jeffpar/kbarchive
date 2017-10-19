@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252312: XCLN: Delegate Cannot Modify an Owner's Appointment Twice"
-permalink: kb/252/Q252312/
+permalink: /kb/252/Q252312/
 ---
 
 ## Q252312: XCLN: Delegate Cannot Modify an Owner's Appointment Twice

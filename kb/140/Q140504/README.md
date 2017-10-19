@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140504: Err Msg: Error Happened While Writing to Msbatch.inf"
-permalink: kb/140/Q140504/
+permalink: /kb/140/Q140504/
 ---
 
 ## Q140504: Err Msg: Error Happened While Writing to Msbatch.inf

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182048: SMS: Suppressing Unaddressable Sites Message Opening SMS Admin"
-permalink: kb/182/Q182048/
+permalink: /kb/182/Q182048/
 ---
 
 ## Q182048: SMS: Suppressing Unaddressable Sites Message Opening SMS Admin

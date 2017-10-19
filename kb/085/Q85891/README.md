@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85891: Dimmed or Missing Options Under Program Manager"
-permalink: kb/085/Q85891/
+permalink: /kb/085/Q85891/
 ---
 
 ## Q85891: Dimmed or Missing Options Under Program Manager

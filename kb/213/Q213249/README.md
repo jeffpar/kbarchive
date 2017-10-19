@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213249: SMS Remote Control Service Is Not Installed After Upgrading"
-permalink: kb/213/Q213249/
+permalink: /kb/213/Q213249/
 ---
 
 ## Q213249: SMS Remote Control Service Is Not Installed After Upgrading

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133304: Windows NT 3.51 Hangs After Installing 3C590/3C595 NIC Driver"
-permalink: kb/133/Q133304/
+permalink: /kb/133/Q133304/
 ---
 
 ## Q133304: Windows NT 3.51 Hangs After Installing 3C590/3C595 NIC Driver

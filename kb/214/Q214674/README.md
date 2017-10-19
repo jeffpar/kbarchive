@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214674: PRB: Cannot Simultaneously Write to Disk File and Have It Opened"
-permalink: kb/214/Q214674/
+permalink: /kb/214/Q214674/
 ---
 
 ## Q214674: PRB: Cannot Simultaneously Write to Disk File and Have It Opened

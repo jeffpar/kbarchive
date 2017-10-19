@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171658: Windows 95 3270 Applet Fails if Directory Name Contains a Space"
-permalink: kb/171/Q171658/
+permalink: /kb/171/Q171658/
 ---
 
 ## Q171658: Windows 95 3270 Applet Fails if Directory Name Contains a Space

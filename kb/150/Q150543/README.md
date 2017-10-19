@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150543: WinNT, Terminal Server, &amp; Exchange Services Use TCP/IP Ports"
-permalink: kb/150/Q150543/
+permalink: /kb/150/Q150543/
 ---
 
 ## Q150543: WinNT, Terminal Server, &amp; Exchange Services Use TCP/IP Ports

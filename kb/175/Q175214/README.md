@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175214: DIRWALK.EXE: Directory Walking Control Sample"
-permalink: kb/175/Q175214/
+permalink: /kb/175/Q175214/
 ---
 
 ## Q175214: DIRWALK.EXE: Directory Walking Control Sample

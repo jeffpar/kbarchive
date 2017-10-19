@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82362: Large TrueType Fonts Print with Fine Lines on LaserJet II"
-permalink: kb/082/Q82362/
+permalink: /kb/082/Q82362/
 ---
 
 ## Q82362: Large TrueType Fonts Print with Fine Lines on LaserJet II

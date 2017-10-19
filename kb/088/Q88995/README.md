@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88995: Micrografx Designer 3.1 Fails to Release GDI Resources"
-permalink: kb/088/Q88995/
+permalink: /kb/088/Q88995/
 ---
 
 ## Q88995: Micrografx Designer 3.1 Fails to Release GDI Resources

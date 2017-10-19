@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141661: FIX: Access Violation Firing an Error Event in OLE Control"
-permalink: kb/141/Q141661/
+permalink: /kb/141/Q141661/
 ---
 
 ## Q141661: FIX: Access Violation Firing an Error Event in OLE Control

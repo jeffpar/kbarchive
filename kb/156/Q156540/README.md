@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156540: SMS: How Systems Management Server Uses the Smsls.ini File"
-permalink: kb/156/Q156540/
+permalink: /kb/156/Q156540/
 ---
 
 ## Q156540: SMS: How Systems Management Server Uses the Smsls.ini File

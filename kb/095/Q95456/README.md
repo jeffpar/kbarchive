@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95456: Overview of Printer Font Metrics (PFM) Files"
-permalink: kb/095/Q95456/
+permalink: /kb/095/Q95456/
 ---
 
 ## Q95456: Overview of Printer Font Metrics (PFM) Files

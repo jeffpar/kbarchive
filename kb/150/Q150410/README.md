@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150410: Having 300+ Print Queues Causes Access Violation in Localmon"
-permalink: kb/150/Q150410/
+permalink: /kb/150/Q150410/
 ---
 
 ## Q150410: Having 300+ Print Queues Causes Access Violation in Localmon

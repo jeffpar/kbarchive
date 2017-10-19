@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274522: MSN Explorer Signup Screen Is Blank"
-permalink: kb/274/Q274522/
+permalink: /kb/274/Q274522/
 ---
 
 ## Q274522: MSN Explorer Signup Screen Is Blank

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260267: FrontPage Server Extensions Image Map Files Expose Vulnerability"
-permalink: kb/260/Q260267/
+permalink: /kb/260/Q260267/
 ---
 
 ## Q260267: FrontPage Server Extensions Image Map Files Expose Vulnerability

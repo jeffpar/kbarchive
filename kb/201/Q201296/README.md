@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201296: XFOR: Requirements: Microsoft Importer for Lotus Notes"
-permalink: kb/201/Q201296/
+permalink: /kb/201/Q201296/
 ---
 
 ## Q201296: XFOR: Requirements: Microsoft Importer for Lotus Notes

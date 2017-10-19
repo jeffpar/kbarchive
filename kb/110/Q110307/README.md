@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110307: Function of Page Protection on HP III Printer Driver"
-permalink: kb/110/Q110307/
+permalink: /kb/110/Q110307/
 ---
 
 ## Q110307: Function of Page Protection on HP III Printer Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258870: How to Use TAMA Agent to Add Resources to Directory Objects"
-permalink: kb/258/Q258870/
+permalink: /kb/258/Q258870/
 ---
 
 ## Q258870: How to Use TAMA Agent to Add Resources to Directory Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170147: HOWTO: Retrieve Identity Column After Insert Using RDO"
-permalink: kb/170/Q170147/
+permalink: /kb/170/Q170147/
 ---
 
 ## Q170147: HOWTO: Retrieve Identity Column After Insert Using RDO

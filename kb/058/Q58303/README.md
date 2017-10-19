@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58303: SYSTEM.INI Setting Required for AST VGA Plus"
-permalink: kb/058/Q58303/
+permalink: /kb/058/Q58303/
 ---
 
 ## Q58303: SYSTEM.INI Setting Required for AST VGA Plus

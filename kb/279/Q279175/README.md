@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279175: XFOR: Japanese Characters in Subject Line Are Question Marks"
-permalink: kb/279/Q279175/
+permalink: /kb/279/Q279175/
 ---
 
 ## Q279175: XFOR: Japanese Characters in Subject Line Are Question Marks

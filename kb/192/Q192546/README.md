@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192546: XADM: Store Crashes When Message Is Downloaded via POP3"
-permalink: kb/192/Q192546/
+permalink: /kb/192/Q192546/
 ---
 
 ## Q192546: XADM: Store Crashes When Message Is Downloaded via POP3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138776: How to Put ? Output from a Form on the Desktop"
-permalink: kb/138/Q138776/
+permalink: /kb/138/Q138776/
 ---
 
 ## Q138776: How to Put ? Output from a Form on the Desktop

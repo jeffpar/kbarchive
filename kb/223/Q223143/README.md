@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223143: SMS: AUDIT32 Does Not Delete Temp MIF Created in Ms&#92;Sms&#92;Temp"
-permalink: kb/223/Q223143/
+permalink: /kb/223/Q223143/
 ---
 
 ## Q223143: SMS: AUDIT32 Does Not Delete Temp MIF Created in Ms&#92;Sms&#92;Temp

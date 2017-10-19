@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120052: NBT Query Can Hang Computer or Drop Back to MS-DOS"
-permalink: kb/120/Q120052/
+permalink: /kb/120/Q120052/
 ---
 
 ## Q120052: NBT Query Can Hang Computer or Drop Back to MS-DOS

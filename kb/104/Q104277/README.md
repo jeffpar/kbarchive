@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104277: PC Win: Mail Stops Downloading Messages When .MBG Is Detected"
-permalink: kb/104/Q104277/
+permalink: /kb/104/Q104277/
 ---
 
 ## Q104277: PC Win: Mail Stops Downloading Messages When .MBG Is Detected

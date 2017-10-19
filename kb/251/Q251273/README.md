@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251273: Sample: Create XMLDOM Document with #import"
-permalink: kb/251/Q251273/
+permalink: /kb/251/Q251273/
 ---
 
 ## Q251273: Sample: Create XMLDOM Document with #import

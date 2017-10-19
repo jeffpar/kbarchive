@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140647: Microsoft File Transfer Readme.txt File"
-permalink: kb/140/Q140647/
+permalink: /kb/140/Q140647/
 ---
 
 ## Q140647: Microsoft File Transfer Readme.txt File

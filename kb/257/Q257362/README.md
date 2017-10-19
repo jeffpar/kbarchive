@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257362: SMS: Systems Management Server Site Reset Functionality"
-permalink: kb/257/Q257362/
+permalink: /kb/257/Q257362/
 ---
 
 ## Q257362: SMS: Systems Management Server Site Reset Functionality

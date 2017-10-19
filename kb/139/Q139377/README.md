@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139377: SNA Server Win3x Banyan Client Displays Incorrect Username"
-permalink: kb/139/Q139377/
+permalink: /kb/139/Q139377/
 ---
 
 ## Q139377: SNA Server Win3x Banyan Client Displays Incorrect Username

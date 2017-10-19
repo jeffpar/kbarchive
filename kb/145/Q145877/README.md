@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145877: XLCN: Err Msg: Setup.ini Forced to Quit Product"
-permalink: kb/145/Q145877/
+permalink: /kb/145/Q145877/
 ---
 
 ## Q145877: XLCN: Err Msg: Setup.ini Forced to Quit Product

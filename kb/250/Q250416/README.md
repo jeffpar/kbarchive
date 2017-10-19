@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250416: Doc Err: SNACFG USER Syntax for Including the Domain"
-permalink: kb/250/Q250416/
+permalink: /kb/250/Q250416/
 ---
 
 ## Q250416: Doc Err: SNACFG USER Syntax for Including the Domain

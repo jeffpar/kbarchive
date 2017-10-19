@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262334: Motocross Madness: How to Improve Game Performance"
-permalink: kb/262/Q262334/
+permalink: /kb/262/Q262334/
 ---
 
 ## Q262334: Motocross Madness: How to Improve Game Performance

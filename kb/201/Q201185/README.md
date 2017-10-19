@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201185: Internet Tab Does Not Appear When NetBIOS Name Is 15 Characters"
-permalink: kb/201/Q201185/
+permalink: /kb/201/Q201185/
 ---
 
 ## Q201185: Internet Tab Does Not Appear When NetBIOS Name Is 15 Characters

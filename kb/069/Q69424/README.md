@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69424: Meaning of Handshake Option in PostScript Driver"
-permalink: kb/069/Q69424/
+permalink: /kb/069/Q69424/
 ---
 
 ## Q69424: Meaning of Handshake Option in PostScript Driver

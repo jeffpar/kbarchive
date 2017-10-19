@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153013: Netware Compatible Password not Automatically Expired"
-permalink: kb/153/Q153013/
+permalink: /kb/153/Q153013/
 ---
 
 ## Q153013: Netware Compatible Password not Automatically Expired

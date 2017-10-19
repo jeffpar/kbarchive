@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134315: FIX: Cannot Open Database and No Message Is Displayed"
-permalink: kb/134/Q134315/
+permalink: /kb/134/Q134315/
 ---
 
 ## Q134315: FIX: Cannot Open Database and No Message Is Displayed

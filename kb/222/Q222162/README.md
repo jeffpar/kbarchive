@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222162: STOP 0x21a on Terminal Server Because of Invalid RPC Response"
-permalink: kb/222/Q222162/
+permalink: /kb/222/Q222162/
 ---
 
 ## Q222162: STOP 0x21a on Terminal Server Because of Invalid RPC Response

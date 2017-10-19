@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194547: X400: ISO 6937 Message with Attachment Is Not Delivered"
-permalink: kb/194/Q194547/
+permalink: /kb/194/Q194547/
 ---
 
 ## Q194547: X400: ISO 6937 Message with Attachment Is Not Delivered

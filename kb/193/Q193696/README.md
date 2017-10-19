@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193696: FIX: Set Mark To '.' Causes Invalid Distribution Disks"
-permalink: kb/193/Q193696/
+permalink: /kb/193/Q193696/
 ---
 
 ## Q193696: FIX: Set Mark To '.' Causes Invalid Distribution Disks

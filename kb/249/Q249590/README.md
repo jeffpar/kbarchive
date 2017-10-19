@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249590: SMS: Parent Is Unable to Update Site Property Comments"
-permalink: kb/249/Q249590/
+permalink: /kb/249/Q249590/
 ---
 
 ## Q249590: SMS: Parent Is Unable to Update Site Property Comments

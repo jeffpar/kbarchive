@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109238: PRB: In Filer, Can't Move to Higher Folder in Hierarchy"
-permalink: kb/109/Q109238/
+permalink: /kb/109/Q109238/
 ---
 
 ## Q109238: PRB: In Filer, Can't Move to Higher Folder in Hierarchy

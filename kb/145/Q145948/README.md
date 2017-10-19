@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145948: Intermittent Logons To NetWare and FPNW Servers"
-permalink: kb/145/Q145948/
+permalink: /kb/145/Q145948/
 ---
 
 ## Q145948: Intermittent Logons To NetWare and FPNW Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83916: CONVINFO Data Structure wStatus Field Description"
-permalink: kb/083/Q83916/
+permalink: /kb/083/Q83916/
 ---
 
 ## Q83916: CONVINFO Data Structure wStatus Field Description

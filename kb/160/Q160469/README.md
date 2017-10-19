@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160469: Pentium Processors Are Not Detected on Systems Running OS/2"
-permalink: kb/160/Q160469/
+permalink: /kb/160/Q160469/
 ---
 
 ## Q160469: Pentium Processors Are Not Detected on Systems Running OS/2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194526: FS/Combat FS: How to Disable the Opening Movie"
-permalink: kb/194/Q194526/
+permalink: /kb/194/Q194526/
 ---
 
 ## Q194526: FS/Combat FS: How to Disable the Opening Movie

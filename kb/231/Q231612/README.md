@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231612: HOWTO: Use a SourceSafe Database with Multiple Web Servers"
-permalink: kb/231/Q231612/
+permalink: /kb/231/Q231612/
 ---
 
 ## Q231612: HOWTO: Use a SourceSafe Database with Multiple Web Servers

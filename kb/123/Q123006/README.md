@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123006: PRB: ODBC to Lotus Notes Does Not Bring in Numeric Data"
-permalink: kb/123/Q123006/
+permalink: /kb/123/Q123006/
 ---
 
 ## Q123006: PRB: ODBC to Lotus Notes Does Not Bring in Numeric Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197142: XFOR: Internet Mail Service Stops when Routing Messages"
-permalink: kb/197/Q197142/
+permalink: /kb/197/Q197142/
 ---
 
 ## Q197142: XFOR: Internet Mail Service Stops when Routing Messages

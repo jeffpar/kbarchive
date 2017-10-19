@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247655: FS2000 Err Msg: Flight Simulator Has Detected That..."
-permalink: kb/247/Q247655/
+permalink: /kb/247/Q247655/
 ---
 
 ## Q247655: FS2000 Err Msg: Flight Simulator Has Detected That...

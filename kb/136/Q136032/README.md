@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136032: Systems Management Server Sender Packet Size Computation"
-permalink: kb/136/Q136032/
+permalink: /kb/136/Q136032/
 ---
 
 ## Q136032: Systems Management Server Sender Packet Size Computation

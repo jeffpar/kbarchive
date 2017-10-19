@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131744: Adobe Acrobat PDFWriter Shows as Network Printer"
-permalink: kb/131/Q131744/
+permalink: /kb/131/Q131744/
 ---
 
 ## Q131744: Adobe Acrobat PDFWriter Shows as Network Printer

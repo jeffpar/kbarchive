@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244952: Definitions of Latitude and Longitude"
-permalink: kb/244/Q244952/
+permalink: /kb/244/Q244952/
 ---
 
 ## Q244952: Definitions of Latitude and Longitude

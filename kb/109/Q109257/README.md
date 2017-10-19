@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109257: CONN: Traffic Is Suspended During Address Import/Export"
-permalink: kb/109/Q109257/
+permalink: /kb/109/Q109257/
 ---
 
 ## Q109257: CONN: Traffic Is Suspended During Address Import/Export

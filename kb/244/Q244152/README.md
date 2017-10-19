@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244152: FS 2000 Pro: Cannot See Runway When Flying the Mooney Bravo IFR"
-permalink: kb/244/Q244152/
+permalink: /kb/244/Q244152/
 ---
 
 ## Q244152: FS 2000 Pro: Cannot See Runway When Flying the Mooney Bravo IFR

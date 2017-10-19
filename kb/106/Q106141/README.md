@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106141: FORMAT and DISKCOPY Errors with Stacker 3.x"
-permalink: kb/106/Q106141/
+permalink: /kb/106/Q106141/
 ---
 
 ## Q106141: FORMAT and DISKCOPY Errors with Stacker 3.x

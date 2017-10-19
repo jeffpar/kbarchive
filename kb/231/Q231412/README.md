@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231412: INFO: Limitations of PVCS_SS.exe"
-permalink: kb/231/Q231412/
+permalink: /kb/231/Q231412/
 ---
 
 ## Q231412: INFO: Limitations of PVCS_SS.exe

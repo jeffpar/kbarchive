@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40572: Versions of MASM Prior to 6.0 Do Not Support Flat Model"
-permalink: kb/040/Q40572/
+permalink: /kb/040/Q40572/
 ---
 
 ## Q40572: Versions of MASM Prior to 6.0 Do Not Support Flat Model

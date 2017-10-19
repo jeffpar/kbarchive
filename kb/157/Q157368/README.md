@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157368: Expedia: Some Program Features May Behave Unexpectedly"
-permalink: kb/157/Q157368/
+permalink: /kb/157/Q157368/
 ---
 
 ## Q157368: Expedia: Some Program Features May Behave Unexpectedly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314589: ST2002: Pushpins Appear Different Than Expected"
-permalink: kb/314/Q314589/
+permalink: /kb/314/Q314589/
 ---
 
 ## Q314589: ST2002: Pushpins Appear Different Than Expected

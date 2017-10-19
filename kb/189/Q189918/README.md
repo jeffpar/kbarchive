@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189918: HOWTO: Administer SQL Server Users from Visual FoxPro"
-permalink: kb/189/Q189918/
+permalink: /kb/189/Q189918/
 ---
 
 ## Q189918: HOWTO: Administer SQL Server Users from Visual FoxPro

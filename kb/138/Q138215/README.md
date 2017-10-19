@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138215: Julia Child: Button Bar Sounds Play Intermittently"
-permalink: kb/138/Q138215/
+permalink: /kb/138/Q138215/
 ---
 
 ## Q138215: Julia Child: Button Bar Sounds Play Intermittently

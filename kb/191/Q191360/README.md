@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191360: SMS: Despooler Retry Count Increments by 2 and Not by 1"
-permalink: kb/191/Q191360/
+permalink: /kb/191/Q191360/
 ---
 
 ## Q191360: SMS: Despooler Retry Count Increments by 2 and Not by 1

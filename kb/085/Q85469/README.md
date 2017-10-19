@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85469: How to Detect Windows Mode and Version from a Batch File"
-permalink: kb/085/Q85469/
+permalink: /kb/085/Q85469/
 ---
 
 ## Q85469: How to Detect Windows Mode and Version from a Batch File

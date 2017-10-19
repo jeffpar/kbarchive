@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158576: STL Sample for the set::find Function"
-permalink: kb/158/Q158576/
+permalink: /kb/158/Q158576/
 ---
 
 ## Q158576: STL Sample for the set::find Function

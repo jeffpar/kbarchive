@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241042: Access to ProfileList Key Restricted"
-permalink: kb/241/Q241042/
+permalink: /kb/241/Q241042/
 ---
 
 ## Q241042: Access to ProfileList Key Restricted

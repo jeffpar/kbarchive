@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180536: BUG: Right-Justified Label Caption Is Aligned Improperly"
-permalink: kb/180/Q180536/
+permalink: /kb/180/Q180536/
 ---
 
 ## Q180536: BUG: Right-Justified Label Caption Is Aligned Improperly

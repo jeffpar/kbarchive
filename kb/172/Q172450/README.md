@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172450: NetDDE Connections Fail When &quot;Logon to&quot; Restrictions Apply"
-permalink: kb/172/Q172450/
+permalink: /kb/172/Q172450/
 ---
 
 ## Q172450: NetDDE Connections Fail When &quot;Logon to&quot; Restrictions Apply

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122165: Xircom PCMCIA Ethernet Card Fails to Initialize in WFWG"
-permalink: kb/122/Q122165/
+permalink: /kb/122/Q122165/
 ---
 
 ## Q122165: Xircom PCMCIA Ethernet Card Fails to Initialize in WFWG

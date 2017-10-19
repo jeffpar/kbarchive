@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157774: WD97: Can't Open HTML Document with Nested Tables"
-permalink: kb/157/Q157774/
+permalink: /kb/157/Q157774/
 ---
 
 ## Q157774: WD97: Can't Open HTML Document with Nested Tables

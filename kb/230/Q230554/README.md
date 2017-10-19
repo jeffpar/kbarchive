@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230554: Event ID 3113 When Using Novell IntraNetWare 4.1a Client"
-permalink: kb/230/Q230554/
+permalink: /kb/230/Q230554/
 ---
 
 ## Q230554: Event ID 3113 When Using Novell IntraNetWare 4.1a Client

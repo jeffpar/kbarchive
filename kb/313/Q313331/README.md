@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313331: INFO: Pooling the ODBC Driver for DB2 with MTS/COM+"
-permalink: kb/313/Q313331/
+permalink: /kb/313/Q313331/
 ---
 
 ## Q313331: INFO: Pooling the ODBC Driver for DB2 with MTS/COM+

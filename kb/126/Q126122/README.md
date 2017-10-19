@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126122: WIN EXCEL CDK: Corrections and Comments"
-permalink: kb/126/Q126122/
+permalink: /kb/126/Q126122/
 ---
 
 ## Q126122: WIN EXCEL CDK: Corrections and Comments

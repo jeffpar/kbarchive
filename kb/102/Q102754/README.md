@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102754: PC Forms: Working with Data in Combo Boxes"
-permalink: kb/102/Q102754/
+permalink: /kb/102/Q102754/
 ---
 
 ## Q102754: PC Forms: Working with Data in Combo Boxes

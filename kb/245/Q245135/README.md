@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245135: Error Occurs While Windows NT Server 4.0 Setup Copies Files."
-permalink: kb/245/Q245135/
+permalink: /kb/245/Q245135/
 ---
 
 ## Q245135: Error Occurs While Windows NT Server 4.0 Setup Copies Files.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82466: Cognose Powerplay's Files Box Is Not Refreshed Correctly"
-permalink: kb/082/Q82466/
+permalink: /kb/082/Q82466/
 ---
 
 ## Q82466: Cognose Powerplay's Files Box Is Not Refreshed Correctly

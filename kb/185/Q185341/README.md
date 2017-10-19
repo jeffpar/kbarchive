@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185341: SMS: How to Integrate Microsoft LAN Manager Servers"
-permalink: kb/185/Q185341/
+permalink: /kb/185/Q185341/
 ---
 
 ## Q185341: SMS: How to Integrate Microsoft LAN Manager Servers

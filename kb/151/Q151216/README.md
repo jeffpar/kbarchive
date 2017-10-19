@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151216: NTVDM May Leak Memory When Opening/Closing COMM Ports"
-permalink: kb/151/Q151216/
+permalink: /kb/151/Q151216/
 ---
 
 ## Q151216: NTVDM May Leak Memory When Opening/Closing COMM Ports

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83974: Visionware's X-Vision 4.0 Requires NetBIOS with Windows 3.1"
-permalink: kb/083/Q83974/
+permalink: /kb/083/Q83974/
 ---
 
 ## Q83974: Visionware's X-Vision 4.0 Requires NetBIOS with Windows 3.1

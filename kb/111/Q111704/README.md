@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111704: PC WRmt: Mail Remote MSRMT.DLL Version 3.2.4013 Update"
-permalink: kb/111/Q111704/
+permalink: /kb/111/Q111704/
 ---
 
 ## Q111704: PC WRmt: Mail Remote MSRMT.DLL Version 3.2.4013 Update

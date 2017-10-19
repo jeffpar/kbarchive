@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139339: CPS Does Not Profile License Logging Service"
-permalink: kb/139/Q139339/
+permalink: /kb/139/Q139339/
 ---
 
 ## Q139339: CPS Does Not Profile License Logging Service

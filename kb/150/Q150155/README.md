@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150155: SMS Administrator UI GPF on Importing Ferret.pdf"
-permalink: kb/150/Q150155/
+permalink: /kb/150/Q150155/
 ---
 
 ## Q150155: SMS Administrator UI GPF on Importing Ferret.pdf

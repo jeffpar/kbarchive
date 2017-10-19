@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110255: Performance Drops During Large File Copy"
-permalink: kb/110/Q110255/
+permalink: /kb/110/Q110255/
 ---
 
 ## Q110255: Performance Drops During Large File Copy

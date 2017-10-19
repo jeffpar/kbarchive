@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155570: Cheyenne ARCServe Does Not Work with Windows NT Drivers"
-permalink: kb/155/Q155570/
+permalink: /kb/155/Q155570/
 ---
 
 ## Q155570: Cheyenne ARCServe Does Not Work with Windows NT Drivers

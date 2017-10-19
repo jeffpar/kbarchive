@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294696: IIS4: Unable to Start Web Sites on Port 80"
-permalink: kb/294/Q294696/
+permalink: /kb/294/Q294696/
 ---
 
 ## Q294696: IIS4: Unable to Start Web Sites on Port 80

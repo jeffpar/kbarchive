@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297803: FIX: VFP Crashes With Two REPORT Previews Active"
-permalink: kb/297/Q297803/
+permalink: /kb/297/Q297803/
 ---
 
 ## Q297803: FIX: VFP Crashes With Two REPORT Previews Active

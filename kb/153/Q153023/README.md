@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153023: BUG: Adding PIF Files in SetupWiz Step 7 Copies Actual Files"
-permalink: kb/153/Q153023/
+permalink: /kb/153/Q153023/
 ---
 
 ## Q153023: BUG: Adding PIF Files in SetupWiz Step 7 Copies Actual Files

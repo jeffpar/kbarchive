@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86443: LANtastic for Windows Updated LANTNET.DRV Available"
-permalink: kb/086/Q86443/
+permalink: /kb/086/Q86443/
 ---
 
 ## Q86443: LANtastic for Windows Updated LANTNET.DRV Available

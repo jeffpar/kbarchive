@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190224: HOWTO: Set a Minimum and Maximum Size for a UserControl"
-permalink: kb/190/Q190224/
+permalink: /kb/190/Q190224/
 ---
 
 ## Q190224: HOWTO: Set a Minimum and Maximum Size for a UserControl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300382: HOW TO: Create a Database Connection from an ASP Page in IIS"
-permalink: kb/300/Q300382/
+permalink: /kb/300/Q300382/
 ---
 
 ## Q300382: HOW TO: Create a Database Connection from an ASP Page in IIS

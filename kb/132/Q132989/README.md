@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132989: HOWTO: Use Relative Paths in 32-bit Visual C++ .MAK Files"
-permalink: kb/132/Q132989/
+permalink: /kb/132/Q132989/
 ---
 
 ## Q132989: HOWTO: Use Relative Paths in 32-bit Visual C++ .MAK Files

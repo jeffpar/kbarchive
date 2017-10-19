@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155510: XCLN: Empty the 'Deleted Items' Folder Option doesn't Work"
-permalink: kb/155/Q155510/
+permalink: /kb/155/Q155510/
 ---
 
 ## Q155510: XCLN: Empty the 'Deleted Items' Folder Option doesn't Work

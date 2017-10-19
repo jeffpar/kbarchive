@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173443: Slow Response Executing Start Menu or Control Panel Applets"
-permalink: kb/173/Q173443/
+permalink: /kb/173/Q173443/
 ---
 
 ## Q173443: Slow Response Executing Start Menu or Control Panel Applets

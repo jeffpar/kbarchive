@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135277: WINS Records of Multi-homed Computers Do Not Replicate"
-permalink: kb/135/Q135277/
+permalink: /kb/135/Q135277/
 ---
 
 ## Q135277: WINS Records of Multi-homed Computers Do Not Replicate

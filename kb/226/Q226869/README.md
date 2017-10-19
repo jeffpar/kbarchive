@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226869: SMS: Cannot License Programs That Specify ANY for Language/Time"
-permalink: kb/226/Q226869/
+permalink: /kb/226/Q226869/
 ---
 
 ## Q226869: SMS: Cannot License Programs That Specify ANY for Language/Time

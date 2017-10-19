@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175691: BUG: VFP CDX with EMPTY Function Is Not Recognized in VB"
-permalink: kb/175/Q175691/
+permalink: /kb/175/Q175691/
 ---
 
 ## Q175691: BUG: VFP CDX with EMPTY Function Is Not Recognized in VB

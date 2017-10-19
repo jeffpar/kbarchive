@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75689: Using Bernoulli Driver Version 7.0 or Later with MS-DOS"
-permalink: kb/075/Q75689/
+permalink: /kb/075/Q75689/
 ---
 
 ## Q75689: Using Bernoulli Driver Version 7.0 or Later with MS-DOS

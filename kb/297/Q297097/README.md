@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297097: XCCC: Playback for Multimedia Control on Swedish Windows NT 4.0"
-permalink: kb/297/Q297097/
+permalink: /kb/297/Q297097/
 ---
 
 ## Q297097: XCCC: Playback for Multimedia Control on Swedish Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120878: PRB: Operator New Can't Be Called for CONST or VOLATILE Types"
-permalink: kb/120/Q120878/
+permalink: /kb/120/Q120878/
 ---
 
 ## Q120878: PRB: Operator New Can't Be Called for CONST or VOLATILE Types

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147690: Recovering From Boot Failure Affecting Mirrored Drives"
-permalink: kb/147/Q147690/
+permalink: /kb/147/Q147690/
 ---
 
 ## Q147690: Recovering From Boot Failure Affecting Mirrored Drives

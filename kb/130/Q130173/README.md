@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130173: Bookshelf: Audio Clips Do Not Rewind Automatically"
-permalink: kb/130/Q130173/
+permalink: /kb/130/Q130173/
 ---
 
 ## Q130173: Bookshelf: Audio Clips Do Not Rewind Automatically

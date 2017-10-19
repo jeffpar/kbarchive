@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298499: Uninstalling America Online (AOL)"
-permalink: kb/298/Q298499/
+permalink: /kb/298/Q298499/
 ---
 
 ## Q298499: Uninstalling America Online (AOL)

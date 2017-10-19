@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90889: Problems Printing Graphics Using LPTx.OS2 or COPY Command"
-permalink: kb/090/Q90889/
+permalink: /kb/090/Q90889/
 ---
 
 ## Q90889: Problems Printing Graphics Using LPTx.OS2 or COPY Command

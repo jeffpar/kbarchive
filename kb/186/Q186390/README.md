@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186390: XCLN: Macintosh Client Adds Characters to Paste in 4D Database"
-permalink: kb/186/Q186390/
+permalink: /kb/186/Q186390/
 ---
 
 ## Q186390: XCLN: Macintosh Client Adds Characters to Paste in 4D Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196253: XFOR: Service Properties are Blank or Equal Zero"
-permalink: kb/196/Q196253/
+permalink: /kb/196/Q196253/
 ---
 
 ## Q196253: XFOR: Service Properties are Blank or Equal Zero

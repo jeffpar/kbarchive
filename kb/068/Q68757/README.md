@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68757: Recorder Err Msg: Playback Window Does Not Exist"
-permalink: kb/068/Q68757/
+permalink: /kb/068/Q68757/
 ---
 
 ## Q68757: Recorder Err Msg: Playback Window Does Not Exist

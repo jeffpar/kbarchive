@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185404: WD97: Incorrect Value/Table Cell Inserted Referencing Bookmark"
-permalink: kb/185/Q185404/
+permalink: /kb/185/Q185404/
 ---
 
 ## Q185404: WD97: Incorrect Value/Table Cell Inserted Referencing Bookmark

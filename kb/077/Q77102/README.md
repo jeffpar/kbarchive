@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77102: PC Rmt: COM3 and COM4 Not Available on MCA Machines"
-permalink: kb/077/Q77102/
+permalink: /kb/077/Q77102/
 ---
 
 ## Q77102: PC Rmt: COM3 and COM4 Not Available on MCA Machines

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195516: HOWTO: Make a Form a Topmost Window Using APIs"
-permalink: kb/195/Q195516/
+permalink: /kb/195/Q195516/
 ---
 
 ## Q195516: HOWTO: Make a Form a Topmost Window Using APIs

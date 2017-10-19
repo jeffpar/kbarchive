@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296831: Programming Windows, Fifth Edition Comments and Corrections"
-permalink: kb/296/Q296831/
+permalink: /kb/296/Q296831/
 ---
 
 ## Q296831: Programming Windows, Fifth Edition Comments and Corrections

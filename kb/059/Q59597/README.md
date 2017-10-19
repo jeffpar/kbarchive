@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59597: Mac GW: Can't Give Group Access to a Gateway Account"
-permalink: kb/059/Q59597/
+permalink: /kb/059/Q59597/
 ---
 
 ## Q59597: Mac GW: Can't Give Group Access to a Gateway Account

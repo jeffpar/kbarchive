@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163597: SMS: PCM Service Leaves Drive Letters Connected"
-permalink: kb/163/Q163597/
+permalink: /kb/163/Q163597/
 ---
 
 ## Q163597: SMS: PCM Service Leaves Drive Letters Connected

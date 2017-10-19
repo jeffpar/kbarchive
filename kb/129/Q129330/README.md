@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129330: FIX: Installing CDK Appears to Corrupt Visual C++ Help Index"
-permalink: kb/129/Q129330/
+permalink: /kb/129/Q129330/
 ---
 
 ## Q129330: FIX: Installing CDK Appears to Corrupt Visual C++ Help Index

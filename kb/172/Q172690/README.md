@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172690: PRB: LoadPicture() Causes &quot;File Access is Denied&quot; Error"
-permalink: kb/172/Q172690/
+permalink: /kb/172/Q172690/
 ---
 
 ## Q172690: PRB: LoadPicture() Causes &quot;File Access is Denied&quot; Error

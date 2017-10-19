@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231451: Optimizing Network Traffic Notes from the Field Comments and Cor"
-permalink: kb/231/Q231451/
+permalink: /kb/231/Q231451/
 ---
 
 ## Q231451: Optimizing Network Traffic Notes from the Field Comments and Cor

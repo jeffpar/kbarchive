@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169964: PPT7: Animation Effect Doesn't Work with Auto Advance"
-permalink: kb/169/Q169964/
+permalink: /kb/169/Q169964/
 ---
 
 ## Q169964: PPT7: Animation Effect Doesn't Work with Auto Advance

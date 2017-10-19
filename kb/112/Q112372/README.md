@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112372: Recombining Split Domains"
-permalink: kb/112/Q112372/
+permalink: /kb/112/Q112372/
 ---
 
 ## Q112372: Recombining Split Domains

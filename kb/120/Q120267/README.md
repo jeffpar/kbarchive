@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120267: Space Simulator Err Msg: Adlib Board Not found!"
-permalink: kb/120/Q120267/
+permalink: /kb/120/Q120267/
 ---
 
 ## Q120267: Space Simulator Err Msg: Adlib Board Not found!

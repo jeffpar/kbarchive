@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242397: HOWTO: Add Subitems to a ListView Result View in Report Mode"
-permalink: kb/242/Q242397/
+permalink: /kb/242/Q242397/
 ---
 
 ## Q242397: HOWTO: Add Subitems to a ListView Result View in Report Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246749: SMS: Status Messages in Futureq Folder Are Not Processed"
-permalink: kb/246/Q246749/
+permalink: /kb/246/Q246749/
 ---
 
 ## Q246749: SMS: Status Messages in Futureq Folder Are Not Processed

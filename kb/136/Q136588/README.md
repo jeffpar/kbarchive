@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136588: PRB: List Boxes and Combo Boxes Lose Item Properties"
-permalink: kb/136/Q136588/
+permalink: /kb/136/Q136588/
 ---
 
 ## Q136588: PRB: List Boxes and Combo Boxes Lose Item Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195518: FS98 Err Msg: Fltsim98 Caused an Invalid Page Fault in Main.dll"
-permalink: kb/195/Q195518/
+permalink: /kb/195/Q195518/
 ---
 
 ## Q195518: FS98 Err Msg: Fltsim98 Caused an Invalid Page Fault in Main.dll

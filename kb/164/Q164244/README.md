@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164244: WD97: Pleading Wizard Doesn't Change Lines Per Page"
-permalink: kb/164/Q164244/
+permalink: /kb/164/Q164244/
 ---
 
 ## Q164244: WD97: Pleading Wizard Doesn't Change Lines Per Page

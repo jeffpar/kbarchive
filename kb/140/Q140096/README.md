@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140096: PRB: &quot;Unable to start DDE communication with Program Manager&quot;"
-permalink: kb/140/Q140096/
+permalink: /kb/140/Q140096/
 ---
 
 ## Q140096: PRB: &quot;Unable to start DDE communication with Program Manager&quot;

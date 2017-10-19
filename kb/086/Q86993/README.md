@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86993: Using WINFILE.INI's LongFileNames= Setting"
-permalink: kb/086/Q86993/
+permalink: /kb/086/Q86993/
 ---
 
 ## Q86993: Using WINFILE.INI's LongFileNames= Setting

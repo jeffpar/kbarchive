@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184139: Stopping RPC Locator Service Causes Error 2186"
-permalink: kb/184/Q184139/
+permalink: /kb/184/Q184139/
 ---
 
 ## Q184139: Stopping RPC Locator Service Causes Error 2186

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171134: WD97: CALL Statement Cannot Accept Variable Argument"
-permalink: kb/171/Q171134/
+permalink: /kb/171/Q171134/
 ---
 
 ## Q171134: WD97: CALL Statement Cannot Accept Variable Argument

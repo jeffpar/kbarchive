@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32836: .TYPE Operator Has New Bit Settings"
-permalink: kb/032/Q32836/
+permalink: /kb/032/Q32836/
 ---
 
 ## Q32836: .TYPE Operator Has New Bit Settings

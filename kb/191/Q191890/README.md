@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191890: How To Obtain the Checked Build of Latest WinNT 4.0 Service Pack"
-permalink: kb/191/Q191890/
+permalink: /kb/191/Q191890/
 ---
 
 ## Q191890: How To Obtain the Checked Build of Latest WinNT 4.0 Service Pack

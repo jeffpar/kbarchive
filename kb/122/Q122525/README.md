@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122525: LPQ Command Not Supported with the HP Jet Direct Card"
-permalink: kb/122/Q122525/
+permalink: /kb/122/Q122525/
 ---
 
 ## Q122525: LPQ Command Not Supported with the HP Jet Direct Card

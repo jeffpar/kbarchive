@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177509: Error Message: Failed to Enumerate Volumes in Dfs..."
-permalink: kb/177/Q177509/
+permalink: /kb/177/Q177509/
 ---
 
 ## Q177509: Error Message: Failed to Enumerate Volumes in Dfs...

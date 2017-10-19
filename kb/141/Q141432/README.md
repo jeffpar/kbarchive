@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141432: Wine Guide: Poor Video Performance on Windows NT"
-permalink: kb/141/Q141432/
+permalink: /kb/141/Q141432/
 ---
 
 ## Q141432: Wine Guide: Poor Video Performance on Windows NT

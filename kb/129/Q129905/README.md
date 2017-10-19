@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129905: BUG: &quot;Hide All Windows&quot; Does Not Hide the Command Window"
-permalink: kb/129/Q129905/
+permalink: /kb/129/Q129905/
 ---
 
 ## Q129905: BUG: &quot;Hide All Windows&quot; Does Not Hide the Command Window

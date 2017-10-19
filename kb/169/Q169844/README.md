@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169844: Removing an IP Routing Protocol from Routing and Remote Access"
-permalink: kb/169/Q169844/
+permalink: /kb/169/Q169844/
 ---
 
 ## Q169844: Removing an IP Routing Protocol from Routing and Remote Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113262: Plotting TrueType Characters"
-permalink: kb/113/Q113262/
+permalink: /kb/113/Q113262/
 ---
 
 ## Q113262: Plotting TrueType Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240302: PRB: MSDN Library Setup Fails on Terminal Server in Execute Mode"
-permalink: kb/240/Q240302/
+permalink: /kb/240/Q240302/
 ---
 
 ## Q240302: PRB: MSDN Library Setup Fails on Terminal Server in Execute Mode

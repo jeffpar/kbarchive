@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256963: Lockouts/Security Issues if Site Code Conflicts with Domain Name"
-permalink: kb/256/Q256963/
+permalink: /kb/256/Q256963/
 ---
 
 ## Q256963: Lockouts/Security Issues if Site Code Conflicts with Domain Name

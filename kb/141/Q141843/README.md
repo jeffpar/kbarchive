@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141843: Norton AntiVirus 95 May Cause Problems on Dual-Boot Computer"
-permalink: kb/141/Q141843/
+permalink: /kb/141/Q141843/
 ---
 
 ## Q141843: Norton AntiVirus 95 May Cause Problems on Dual-Boot Computer

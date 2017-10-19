@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156974: IBM 6611 Routers May Generate Invalid DHCP Frames"
-permalink: kb/156/Q156974/
+permalink: /kb/156/Q156974/
 ---
 
 ## Q156974: IBM 6611 Routers May Generate Invalid DHCP Frames

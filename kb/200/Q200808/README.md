@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200808: SMS: Tabs in MMC Help Are Not Accessible with the TAB Key"
-permalink: kb/200/Q200808/
+permalink: /kb/200/Q200808/
 ---
 
 ## Q200808: SMS: Tabs in MMC Help Are Not Accessible with the TAB Key

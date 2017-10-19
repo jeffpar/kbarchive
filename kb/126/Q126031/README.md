@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126031: PRB: Repeated Blank Screens During Build Process in VC++"
-permalink: kb/126/Q126031/
+permalink: /kb/126/Q126031/
 ---
 
 ## Q126031: PRB: Repeated Blank Screens During Build Process in VC++

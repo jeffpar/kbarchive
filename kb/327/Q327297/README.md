@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327297: BUG: 5250 Client in TN5250 Mode May Stop Responding"
-permalink: kb/327/Q327297/
+permalink: /kb/327/Q327297/
 ---
 
 ## Q327297: BUG: 5250 Client in TN5250 Mode May Stop Responding

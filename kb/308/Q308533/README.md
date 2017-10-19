@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308533: Encarta World Atlas 2001: Err Msg: MSVCIRT.DLL File Is Linked..."
-permalink: kb/308/Q308533/
+permalink: /kb/308/Q308533/
 ---
 
 ## Q308533: Encarta World Atlas 2001: Err Msg: MSVCIRT.DLL File Is Linked...

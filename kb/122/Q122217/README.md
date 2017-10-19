@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122217: PRB: offsetof() Macro Fails with Virtual Base Class"
-permalink: kb/122/Q122217/
+permalink: /kb/122/Q122217/
 ---
 
 ## Q122217: PRB: offsetof() Macro Fails with Virtual Base Class

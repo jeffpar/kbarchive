@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240231: Common Dialog Box Does Not Populate Drive Selection Box"
-permalink: kb/240/Q240231/
+permalink: /kb/240/Q240231/
 ---
 
 ## Q240231: Common Dialog Box Does Not Populate Drive Selection Box

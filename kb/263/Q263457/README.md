@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263457: XADM: Information Store Access Violation w. Long One-Off Addr."
-permalink: kb/263/Q263457/
+permalink: /kb/263/Q263457/
 ---
 
 ## Q263457: XADM: Information Store Access Violation w. Long One-Off Addr.

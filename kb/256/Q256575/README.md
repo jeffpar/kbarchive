@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256575: ClipBook Viewer Prompts for Network Access Password"
-permalink: kb/256/Q256575/
+permalink: /kb/256/Q256575/
 ---
 
 ## Q256575: ClipBook Viewer Prompts for Network Access Password

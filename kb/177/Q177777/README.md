@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177777: XADM: Missing DLL Running Crystal Reports"
-permalink: kb/177/Q177777/
+permalink: /kb/177/Q177777/
 ---
 
 ## Q177777: XADM: Missing DLL Running Crystal Reports

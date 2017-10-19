@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148237: IDC: Error Performing Query Connecting to SQL Server"
-permalink: kb/148/Q148237/
+permalink: /kb/148/Q148237/
 ---
 
 ## Q148237: IDC: Error Performing Query Connecting to SQL Server

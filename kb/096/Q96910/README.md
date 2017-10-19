@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96910: LAYOUTS.WRI from Windows Resource Kit Version 3.1 A-D"
-permalink: kb/096/Q96910/
+permalink: /kb/096/Q96910/
 ---
 
 ## Q96910: LAYOUTS.WRI from Windows Resource Kit Version 3.1 A-D

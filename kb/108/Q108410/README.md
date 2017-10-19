@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108410: FIX: Entire DLLEXPORTed Arrays Cannot Be Written Implicitly"
-permalink: kb/108/Q108410/
+permalink: /kb/108/Q108410/
 ---
 
 ## Q108410: FIX: Entire DLLEXPORTed Arrays Cannot Be Written Implicitly

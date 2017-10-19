@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182320: XADM: Unable to Upgrade from Exchange Server 4.0 to 5.5"
-permalink: kb/182/Q182320/
+permalink: /kb/182/Q182320/
 ---
 
 ## Q182320: XADM: Unable to Upgrade from Exchange Server 4.0 to 5.5

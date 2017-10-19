@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166077: 3270 Applet Fails to Find SNA Server After Changing Password"
-permalink: kb/166/Q166077/
+permalink: /kb/166/Q166077/
 ---
 
 ## Q166077: 3270 Applet Fails to Find SNA Server After Changing Password

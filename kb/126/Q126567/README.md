@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126567: MindMaze Causes EMM Exception Error #06 on the Compaq Presario"
-permalink: kb/126/Q126567/
+permalink: /kb/126/Q126567/
 ---
 
 ## Q126567: MindMaze Causes EMM Exception Error #06 on the Compaq Presario

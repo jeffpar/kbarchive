@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84183: Error Code 3 Logging into LAN Manager 2.0 in Windows"
-permalink: kb/084/Q84183/
+permalink: /kb/084/Q84183/
 ---
 
 ## Q84183: Error Code 3 Logging into LAN Manager 2.0 in Windows

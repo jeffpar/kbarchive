@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304742: Event ID: 6008 After Remote Shutdown with an Active Screensaver"
-permalink: kb/304/Q304742/
+permalink: /kb/304/Q304742/
 ---
 
 ## Q304742: Event ID: 6008 After Remote Shutdown with an Active Screensaver

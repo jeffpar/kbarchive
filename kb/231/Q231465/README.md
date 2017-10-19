@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231465: BUG: WM_MOUSEWHEEL Message Ignored Adding UserControl to Form"
-permalink: kb/231/Q231465/
+permalink: /kb/231/Q231465/
 ---
 
 ## Q231465: BUG: WM_MOUSEWHEEL Message Ignored Adding UserControl to Form

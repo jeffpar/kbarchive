@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121735: PC Ext: UNINIT Status Message on External"
-permalink: kb/121/Q121735/
+permalink: /kb/121/Q121735/
 ---
 
 ## Q121735: PC Ext: UNINIT Status Message on External

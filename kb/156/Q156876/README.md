@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156876: INFO: Using UDF Files with Windows NT 4.0 Unattended Setup"
-permalink: kb/156/Q156876/
+permalink: /kb/156/Q156876/
 ---
 
 ## Q156876: INFO: Using UDF Files with Windows NT 4.0 Unattended Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215125: SMS: Migration from 1.2 to 2.0 Causes PGC &amp; PCM Warning Dialogs"
-permalink: kb/215/Q215125/
+permalink: /kb/215/Q215125/
 ---
 
 ## Q215125: SMS: Migration from 1.2 to 2.0 Causes PGC &amp; PCM Warning Dialogs

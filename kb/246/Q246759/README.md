@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246759: Cannot Create Client Connection Account in Administrator Console"
-permalink: kb/246/Q246759/
+permalink: /kb/246/Q246759/
 ---
 
 ## Q246759: Cannot Create Client Connection Account in Administrator Console

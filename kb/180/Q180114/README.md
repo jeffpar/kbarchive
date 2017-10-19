@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180114: Netlogon Event ID 5770 and 5722 on Primary Domain Controller"
-permalink: kb/180/Q180114/
+permalink: /kb/180/Q180114/
 ---
 
 ## Q180114: Netlogon Event ID 5770 and 5722 on Primary Domain Controller

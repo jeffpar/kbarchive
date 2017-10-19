@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296159: Setting Permissions on Packages Using MOF Files May Not Work"
-permalink: kb/296/Q296159/
+permalink: /kb/296/Q296159/
 ---
 
 ## Q296159: Setting Permissions on Packages Using MOF Files May Not Work

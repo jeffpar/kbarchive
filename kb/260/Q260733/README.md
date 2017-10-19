@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260733: StarLancer: Desktop Icons Appear on the Startup Screen"
-permalink: kb/260/Q260733/
+permalink: /kb/260/Q260733/
 ---
 
 ## Q260733: StarLancer: Desktop Icons Appear on the Startup Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104189: MSD Reports an 80287 Math Coprocessor as an 80387"
-permalink: kb/104/Q104189/
+permalink: /kb/104/Q104189/
 ---
 
 ## Q104189: MSD Reports an 80287 Math Coprocessor as an 80387

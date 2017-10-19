@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67503: Notepad: 1st Line of Printing Overlaps 2nd with HP Printers"
-permalink: kb/067/Q67503/
+permalink: /kb/067/Q67503/
 ---
 
 ## Q67503: Notepad: 1st Line of Printing Overlaps 2nd with HP Printers

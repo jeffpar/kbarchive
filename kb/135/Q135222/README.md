@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135222: IRQ and DMA Resources Not Listed for ECP Port"
-permalink: kb/135/Q135222/
+permalink: /kb/135/Q135222/
 ---
 
 ## Q135222: IRQ and DMA Resources Not Listed for ECP Port

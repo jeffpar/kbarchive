@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154334: PROGRAMMING WINDOWS 95 Corrections and Comments"
-permalink: kb/154/Q154334/
+permalink: /kb/154/Q154334/
 ---
 
 ## Q154334: PROGRAMMING WINDOWS 95 Corrections and Comments

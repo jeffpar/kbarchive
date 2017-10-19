@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170488: List of SCSI Adapters Not Found When Adding New SCSI Adapter"
-permalink: kb/170/Q170488/
+permalink: /kb/170/Q170488/
 ---
 
 ## Q170488: List of SCSI Adapters Not Found When Adding New SCSI Adapter

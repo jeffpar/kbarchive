@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160377: File Size Data Does Not Remain Consistent After Defrag on NTFS"
-permalink: kb/160/Q160377/
+permalink: /kb/160/Q160377/
 ---
 
 ## Q160377: File Size Data Does Not Remain Consistent After Defrag on NTFS

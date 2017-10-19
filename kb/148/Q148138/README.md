@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148138: Enabling MouseKeys Feature Causes Invalid VxD Error in ENABLE2"
-permalink: kb/148/Q148138/
+permalink: /kb/148/Q148138/
 ---
 
 ## Q148138: Enabling MouseKeys Feature Causes Invalid VxD Error in ENABLE2

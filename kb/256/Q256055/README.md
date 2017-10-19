@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256055: WD97: Page Border Art Displayed Incorrectly on Page Border Tab"
-permalink: kb/256/Q256055/
+permalink: /kb/256/Q256055/
 ---
 
 ## Q256055: WD97: Page Border Art Displayed Incorrectly on Page Border Tab

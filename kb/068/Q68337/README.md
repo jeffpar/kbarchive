@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68337: INFO: ftell() May Return an Invalid Value with a Text File"
-permalink: kb/068/Q68337/
+permalink: /kb/068/Q68337/
 ---
 
 ## Q68337: INFO: ftell() May Return an Invalid Value with a Text File

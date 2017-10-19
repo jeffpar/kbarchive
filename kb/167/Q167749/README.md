@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167749: FIX: Access to Nested Base Class Member Functions Blocked"
-permalink: kb/167/Q167749/
+permalink: /kb/167/Q167749/
 ---
 
 ## Q167749: FIX: Access to Nested Base Class Member Functions Blocked

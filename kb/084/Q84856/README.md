@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84856: Write Err Msg: GP Fault in Module KRNL386.EXE at 0001:4629"
-permalink: kb/084/Q84856/
+permalink: /kb/084/Q84856/
 ---
 
 ## Q84856: Write Err Msg: GP Fault in Module KRNL386.EXE at 0001:4629

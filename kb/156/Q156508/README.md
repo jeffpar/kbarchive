@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156508: PRB: SQL Server Table Bit Field Requires Value of 0 or 1"
-permalink: kb/156/Q156508/
+permalink: /kb/156/Q156508/
 ---
 
 ## Q156508: PRB: SQL Server Table Bit Field Requires Value of 0 or 1

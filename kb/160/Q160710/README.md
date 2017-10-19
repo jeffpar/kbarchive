@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160710: Configuring Dependent LU 6.2 over DFT"
-permalink: kb/160/Q160710/
+permalink: /kb/160/Q160710/
 ---
 
 ## Q160710: Configuring Dependent LU 6.2 over DFT

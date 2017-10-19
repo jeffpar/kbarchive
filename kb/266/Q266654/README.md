@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266654: HOWTO: Implement Dynamic Search Functionality to Locate Records"
-permalink: kb/266/Q266654/
+permalink: /kb/266/Q266654/
 ---
 
 ## Q266654: HOWTO: Implement Dynamic Search Functionality to Locate Records

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131508: PC Win: Err Msg: The Message Could Not Be Fully Recovered"
-permalink: kb/131/Q131508/
+permalink: /kb/131/Q131508/
 ---
 
 ## Q131508: PC Win: Err Msg: The Message Could Not Be Fully Recovered

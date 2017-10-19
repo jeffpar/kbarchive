@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196196: FIX: Analyze Creates New GUID When Repairing the UM.dat"
-permalink: kb/196/Q196196/
+permalink: /kb/196/Q196196/
 ---
 
 ## Q196196: FIX: Analyze Creates New GUID When Repairing the UM.dat

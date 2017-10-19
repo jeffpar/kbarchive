@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135857: Err Msg: Invalid Parameter Specified After Configuring EMM386"
-permalink: kb/135/Q135857/
+permalink: /kb/135/Q135857/
 ---
 
 ## Q135857: Err Msg: Invalid Parameter Specified After Configuring EMM386

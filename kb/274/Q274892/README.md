@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274892: CFS2: HUD Displays Throttle Control For Number One Engine Only"
-permalink: kb/274/Q274892/
+permalink: /kb/274/Q274892/
 ---
 
 ## Q274892: CFS2: HUD Displays Throttle Control For Number One Engine Only

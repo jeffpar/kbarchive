@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253692: Kids Products Troubleshooter Available"
-permalink: kb/253/Q253692/
+permalink: /kb/253/Q253692/
 ---
 
 ## Q253692: Kids Products Troubleshooter Available

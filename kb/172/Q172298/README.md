@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172298: SNA Manager Redraws TN5250 IP Address List Incorrectly"
-permalink: kb/172/Q172298/
+permalink: /kb/172/Q172298/
 ---
 
 ## Q172298: SNA Manager Redraws TN5250 IP Address List Incorrectly

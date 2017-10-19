@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183123: Find Files Displays Garbled Date if Year is 2000 or Greater"
-permalink: kb/183/Q183123/
+permalink: /kb/183/Q183123/
 ---
 
 ## Q183123: Find Files Displays Garbled Date if Year is 2000 or Greater

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260306: Nwscript.exe May Generate Network Provider Invalid Error Message"
-permalink: kb/260/Q260306/
+permalink: /kb/260/Q260306/
 ---
 
 ## Q260306: Nwscript.exe May Generate Network Provider Invalid Error Message

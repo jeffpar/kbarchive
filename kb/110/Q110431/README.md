@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110431: SFM: File Time and Date Stamp Change on Copy"
-permalink: kb/110/Q110431/
+permalink: /kb/110/Q110431/
 ---
 
 ## Q110431: SFM: File Time and Date Stamp Change on Copy

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193514: BUG: Data Form Wizard Mishandles '-' in Table or Field Names"
-permalink: kb/193/Q193514/
+permalink: /kb/193/Q193514/
 ---
 
 ## Q193514: BUG: Data Form Wizard Mishandles '-' in Table or Field Names

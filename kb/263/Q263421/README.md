@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263421: SMS: Cust. Collect's from Par. Site Don't Appear in Child's Site"
-permalink: kb/263/Q263421/
+permalink: /kb/263/Q263421/
 ---
 
 ## Q263421: SMS: Cust. Collect's from Par. Site Don't Appear in Child's Site

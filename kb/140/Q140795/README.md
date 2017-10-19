@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140795: Bookshelf 95: Upgrading Doesn't Remove Older Versions"
-permalink: kb/140/Q140795/
+permalink: /kb/140/Q140795/
 ---
 
 ## Q140795: Bookshelf 95: Upgrading Doesn't Remove Older Versions

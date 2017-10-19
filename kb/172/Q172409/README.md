@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172409: &quot;Type Mismatch&quot; Error Messages Accessing Specific Internet Sites"
-permalink: kb/172/Q172409/
+permalink: /kb/172/Q172409/
 ---
 
 ## Q172409: &quot;Type Mismatch&quot; Error Messages Accessing Specific Internet Sites

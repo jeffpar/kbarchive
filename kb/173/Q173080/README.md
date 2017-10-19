@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173080: Connection Settings Command Is Unavailable on MSN Desktop Icon"
-permalink: kb/173/Q173080/
+permalink: /kb/173/Q173080/
 ---
 
 ## Q173080: Connection Settings Command Is Unavailable on MSN Desktop Icon

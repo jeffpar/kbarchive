@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175116: XADM: Error 0xc8000713 Occurred After a Restore Operation"
-permalink: kb/175/Q175116/
+permalink: /kb/175/Q175116/
 ---
 
 ## Q175116: XADM: Error 0xc8000713 Occurred After a Restore Operation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275020: SMB Signing May Become Unsynchronized"
-permalink: kb/275/Q275020/
+permalink: /kb/275/Q275020/
 ---
 
 ## Q275020: SMB Signing May Become Unsynchronized

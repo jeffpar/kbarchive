@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133248: Microsoft Plus! for Windows 95 Questions and Answers"
-permalink: kb/133/Q133248/
+permalink: /kb/133/Q133248/
 ---
 
 ## Q133248: Microsoft Plus! for Windows 95 Questions and Answers

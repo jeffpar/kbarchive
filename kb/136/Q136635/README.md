@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136635: TCP/IP-32 3.11b Client Fails to Obtain Reserved DHCP Address"
-permalink: kb/136/Q136635/
+permalink: /kb/136/Q136635/
 ---
 
 ## Q136635: TCP/IP-32 3.11b Client Fails to Obtain Reserved DHCP Address

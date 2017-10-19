@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224245: Err Msg: Couldn't Find the Microsoft Expedia Streets &amp; Trips..."
-permalink: kb/224/Q224245/
+permalink: /kb/224/Q224245/
 ---
 
 ## Q224245: Err Msg: Couldn't Find the Microsoft Expedia Streets &amp; Trips...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146817: Buslogic BT-930 Flashpoint LT SCSI Controller Needs OEM Driver"
-permalink: kb/146/Q146817/
+permalink: /kb/146/Q146817/
 ---
 
 ## Q146817: Buslogic BT-930 Flashpoint LT SCSI Controller Needs OEM Driver

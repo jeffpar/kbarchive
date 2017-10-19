@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135492: DSPU Through Demo Link Service Causes Scrolling 3270 Screen"
-permalink: kb/135/Q135492/
+permalink: /kb/135/Q135492/
 ---
 
 ## Q135492: DSPU Through Demo Link Service Causes Scrolling 3270 Screen

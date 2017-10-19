@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185082: WD97: How to Rotate or Flip Clip Art"
-permalink: kb/185/Q185082/
+permalink: /kb/185/Q185082/
 ---
 
 ## Q185082: WD97: How to Rotate or Flip Clip Art

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133074: Cannot Connect to Windows NT Share with Extended Character"
-permalink: kb/133/Q133074/
+permalink: /kb/133/Q133074/
 ---
 
 ## Q133074: Cannot Connect to Windows NT Share with Extended Character

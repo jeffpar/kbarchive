@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140990: Mixing NDIS 2.0 and NDIS 3.x in Docked and Undocked States"
-permalink: kb/140/Q140990/
+permalink: /kb/140/Q140990/
 ---
 
 ## Q140990: Mixing NDIS 2.0 and NDIS 3.x in Docked and Undocked States

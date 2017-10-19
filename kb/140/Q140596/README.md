@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140596: INFO: MFC 4.0 No Longer Pre-Registers Window Classes"
-permalink: kb/140/Q140596/
+permalink: /kb/140/Q140596/
 ---
 
 ## Q140596: INFO: MFC 4.0 No Longer Pre-Registers Window Classes

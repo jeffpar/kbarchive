@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89726: Task Swapping with UltraVision and MS-DOS"
-permalink: kb/089/Q89726/
+permalink: /kb/089/Q89726/
 ---
 
 ## Q89726: Task Swapping with UltraVision and MS-DOS

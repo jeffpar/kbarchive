@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72043: Byte Total Returned by DIR Less Than Bytes Used"
-permalink: kb/072/Q72043/
+permalink: /kb/072/Q72043/
 ---
 
 ## Q72043: Byte Total Returned by DIR Less Than Bytes Used

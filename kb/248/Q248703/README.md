@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248703: Multiple Separator Pages with Win95 Client and NT4 Print Server"
-permalink: kb/248/Q248703/
+permalink: /kb/248/Q248703/
 ---
 
 ## Q248703: Multiple Separator Pages with Win95 Client and NT4 Print Server

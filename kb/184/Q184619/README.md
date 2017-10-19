@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184619: How to Change Windows NT Account Passwords Using IIS 4.0"
-permalink: kb/184/Q184619/
+permalink: /kb/184/Q184619/
 ---
 
 ## Q184619: How to Change Windows NT Account Passwords Using IIS 4.0

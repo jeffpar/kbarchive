@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146920: XADM: Restoring Individual Mailboxes, Messages, or Folders"
-permalink: kb/146/Q146920/
+permalink: /kb/146/Q146920/
 ---
 
 ## Q146920: XADM: Restoring Individual Mailboxes, Messages, or Folders

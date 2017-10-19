@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63318: BUG: PWB Print Does Not Put CR/LF at EOL If Text Selected"
-permalink: kb/063/Q63318/
+permalink: /kb/063/Q63318/
 ---
 
 ## Q63318: BUG: PWB Print Does Not Put CR/LF at EOL If Text Selected

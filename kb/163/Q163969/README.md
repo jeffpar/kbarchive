@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163969: Event 552: DNS Was Unable to Serve a Client Request"
-permalink: kb/163/Q163969/
+permalink: /kb/163/Q163969/
 ---
 
 ## Q163969: Event 552: DNS Was Unable to Serve a Client Request

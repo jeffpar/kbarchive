@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140037: CPI-C cmecsu() Call Always Returns pLengthUserID=1"
-permalink: kb/140/Q140037/
+permalink: /kb/140/Q140037/
 ---
 
 ## Q140037: CPI-C cmecsu() Call Always Returns pLengthUserID=1

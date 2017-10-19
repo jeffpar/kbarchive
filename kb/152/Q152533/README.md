@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152533: CLIBIN.EXE Converting COleClientItem into CLongBinary"
-permalink: kb/152/Q152533/
+permalink: /kb/152/Q152533/
 ---
 
 ## Q152533: CLIBIN.EXE Converting COleClientItem into CLongBinary

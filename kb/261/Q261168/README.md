@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261168: WD97: Clicking Page Number in TOC Opens Web Toolbar"
-permalink: kb/261/Q261168/
+permalink: /kb/261/Q261168/
 ---
 
 ## Q261168: WD97: Clicking Page Number in TOC Opens Web Toolbar

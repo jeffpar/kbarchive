@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75926: Installing Microsoft Entertainment Pack for Windows"
-permalink: kb/075/Q75926/
+permalink: /kb/075/Q75926/
 ---
 
 ## Q75926: Installing Microsoft Entertainment Pack for Windows

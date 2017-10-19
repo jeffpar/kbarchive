@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186625: Terminal Server Commands: REGISTER"
-permalink: kb/186/Q186625/
+permalink: /kb/186/Q186625/
 ---
 
 ## Q186625: Terminal Server Commands: REGISTER

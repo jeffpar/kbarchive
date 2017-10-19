@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269559: Error Message Occurs When Installing Network Monitor 2.0"
-permalink: kb/269/Q269559/
+permalink: /kb/269/Q269559/
 ---
 
 ## Q269559: Error Message Occurs When Installing Network Monitor 2.0

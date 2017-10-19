@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265019: WD97: Modified Date Changes After Closing Doc from Outlook"
-permalink: kb/265/Q265019/
+permalink: /kb/265/Q265019/
 ---
 
 ## Q265019: WD97: Modified Date Changes After Closing Doc from Outlook

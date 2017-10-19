@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278408: PRB: DataGrid Cannot Be Bound to a Non-Bookmarkable Recordset"
-permalink: kb/278/Q278408/
+permalink: /kb/278/Q278408/
 ---
 
 ## Q278408: PRB: DataGrid Cannot Be Bound to a Non-Bookmarkable Recordset

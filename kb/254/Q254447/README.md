@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254447: MapPoint: Imported Access Data Is Displayed as Numeric Values"
-permalink: kb/254/Q254447/
+permalink: /kb/254/Q254447/
 ---
 
 ## Q254447: MapPoint: Imported Access Data Is Displayed as Numeric Values

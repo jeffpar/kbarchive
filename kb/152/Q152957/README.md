@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152957: XADM: Non-Delivery Reports Incorrectly Returned in German"
-permalink: kb/152/Q152957/
+permalink: /kb/152/Q152957/
 ---
 
 ## Q152957: XADM: Non-Delivery Reports Incorrectly Returned in German

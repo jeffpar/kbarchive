@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222985: XCON: MTA Stops Processing Messages with Large Attachments"
-permalink: kb/222/Q222985/
+permalink: /kb/222/Q222985/
 ---
 
 ## Q222985: XCON: MTA Stops Processing Messages with Large Attachments

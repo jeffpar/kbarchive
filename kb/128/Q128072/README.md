@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128072: How to use SQL Select to Locate NULL Values"
-permalink: kb/128/Q128072/
+permalink: /kb/128/Q128072/
 ---
 
 ## Q128072: How to use SQL Select to Locate NULL Values

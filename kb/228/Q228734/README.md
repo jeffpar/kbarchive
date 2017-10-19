@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228734: Windows NT Does Not Boot with Highly Fragmented MFT"
-permalink: kb/228/Q228734/
+permalink: /kb/228/Q228734/
 ---
 
 ## Q228734: Windows NT Does Not Boot with Highly Fragmented MFT

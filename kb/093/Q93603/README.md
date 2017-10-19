@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93603: After Dark Screen Saver Can Corrupt Screen"
-permalink: kb/093/Q93603/
+permalink: /kb/093/Q93603/
 ---
 
 ## Q93603: After Dark Screen Saver Can Corrupt Screen

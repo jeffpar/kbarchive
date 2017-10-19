@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154798: XFOR: SMTP Mail Attachments not Visible in PC Mail 3.x Clients"
-permalink: kb/154/Q154798/
+permalink: /kb/154/Q154798/
 ---
 
 ## Q154798: XFOR: SMTP Mail Attachments not Visible in PC Mail 3.x Clients

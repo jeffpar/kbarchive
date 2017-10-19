@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237185: &quot;Access Violation&quot; Error Message When You Quit Phone Dialer"
-permalink: kb/237/Q237185/
+permalink: /kb/237/Q237185/
 ---
 
 ## Q237185: &quot;Access Violation&quot; Error Message When You Quit Phone Dialer

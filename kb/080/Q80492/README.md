@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80492: &quot;Path/File Access Error&quot; with MS-DOS Editor"
-permalink: kb/080/Q80492/
+permalink: /kb/080/Q80492/
 ---
 
 ## Q80492: &quot;Path/File Access Error&quot; with MS-DOS Editor

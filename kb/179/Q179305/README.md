@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179305: Troubleshooting Async Mail Flow Connection Problems"
-permalink: kb/179/Q179305/
+permalink: /kb/179/Q179305/
 ---
 
 ## Q179305: Troubleshooting Async Mail Flow Connection Problems

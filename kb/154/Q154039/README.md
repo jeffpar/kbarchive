@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154039: HOWTO: Pass Optional Arguments to MFC ActiveX Controls"
-permalink: kb/154/Q154039/
+permalink: /kb/154/Q154039/
 ---
 
 ## Q154039: HOWTO: Pass Optional Arguments to MFC ActiveX Controls

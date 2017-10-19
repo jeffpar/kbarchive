@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259781: SMS: SMS Site Server Upgrade Resets Registry Permissions"
-permalink: kb/259/Q259781/
+permalink: /kb/259/Q259781/
 ---
 
 ## Q259781: SMS: SMS Site Server Upgrade Resets Registry Permissions

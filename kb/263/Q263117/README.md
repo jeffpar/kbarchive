@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263117: Delay When Connecting MMC to Remote IIS Server"
-permalink: kb/263/Q263117/
+permalink: /kb/263/Q263117/
 ---
 
 ## Q263117: Delay When Connecting MMC to Remote IIS Server

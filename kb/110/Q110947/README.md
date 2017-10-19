@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110947: Diamond Viper VLB Video Adapter Driver Fails To Load"
-permalink: kb/110/Q110947/
+permalink: /kb/110/Q110947/
 ---
 
 ## Q110947: Diamond Viper VLB Video Adapter Driver Fails To Load

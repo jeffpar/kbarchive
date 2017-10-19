@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197671: HOWTO: How to Enumerate Monitors in Win 98 and Windows 2000"
-permalink: kb/197/Q197671/
+permalink: /kb/197/Q197671/
 ---
 
 ## Q197671: HOWTO: How to Enumerate Monitors in Win 98 and Windows 2000

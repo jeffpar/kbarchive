@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200271: INFO: How to Diagnose and Resolve Some Automation Errors"
-permalink: kb/200/Q200271/
+permalink: /kb/200/Q200271/
 ---
 
 ## Q200271: INFO: How to Diagnose and Resolve Some Automation Errors

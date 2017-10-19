@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155210: FP: Error 5 Copying Web with Author Account on IIS"
-permalink: kb/155/Q155210/
+permalink: /kb/155/Q155210/
 ---
 
 ## Q155210: FP: Error 5 Copying Web with Author Account on IIS

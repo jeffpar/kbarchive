@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231274: Macintosh Client Computer May Hang When Searching for Files"
-permalink: kb/231/Q231274/
+permalink: /kb/231/Q231274/
 ---
 
 ## Q231274: Macintosh Client Computer May Hang When Searching for Files

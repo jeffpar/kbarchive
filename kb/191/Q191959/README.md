@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191959: FIX: Filer Cannot Find File in Read-Only or Hidden Folder"
-permalink: kb/191/Q191959/
+permalink: /kb/191/Q191959/
 ---
 
 ## Q191959: FIX: Filer Cannot Find File in Read-Only or Hidden Folder

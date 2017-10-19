@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126712: Network Connections Valid Briefly with 3C507 NIC"
-permalink: kb/126/Q126712/
+permalink: /kb/126/Q126712/
 ---
 
 ## Q126712: Network Connections Valid Briefly with 3C507 NIC

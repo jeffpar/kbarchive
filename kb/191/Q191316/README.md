@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191316: PRB: SET DATASESSION TO Fails From a Method of _Screen"
-permalink: kb/191/Q191316/
+permalink: /kb/191/Q191316/
 ---
 
 ## Q191316: PRB: SET DATASESSION TO Fails From a Method of _Screen

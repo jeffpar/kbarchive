@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174073: Auditing User Authentication"
-permalink: kb/174/Q174073/
+permalink: /kb/174/Q174073/
 ---
 
 ## Q174073: Auditing User Authentication

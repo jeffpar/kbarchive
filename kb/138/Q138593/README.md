@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138593: Unable to Print to Windows NT LPR Printers After Applying SP"
-permalink: kb/138/Q138593/
+permalink: /kb/138/Q138593/
 ---
 
 ## Q138593: Unable to Print to Windows NT LPR Printers After Applying SP

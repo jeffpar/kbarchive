@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106724: Debugger Message EE0029 Cannot Access User Memory"
-permalink: kb/106/Q106724/
+permalink: /kb/106/Q106724/
 ---
 
 ## Q106724: Debugger Message EE0029 Cannot Access User Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176132: XCON: Signed Message in DMS MTA Not Converted"
-permalink: kb/176/Q176132/
+permalink: /kb/176/Q176132/
 ---
 
 ## Q176132: XCON: Signed Message in DMS MTA Not Converted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223091: FIX: Bad Codebase Parameter Made by VB6 PDW for DHTML Projects"
-permalink: kb/223/Q223091/
+permalink: /kb/223/Q223091/
 ---
 
 ## Q223091: FIX: Bad Codebase Parameter Made by VB6 PDW for DHTML Projects

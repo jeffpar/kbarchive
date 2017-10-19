@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178368: FS95/98/2000: Version Differences in Auto-Coordination Feature"
-permalink: kb/178/Q178368/
+permalink: /kb/178/Q178368/
 ---
 
 ## Q178368: FS95/98/2000: Version Differences in Auto-Coordination Feature

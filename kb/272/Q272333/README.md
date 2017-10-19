@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272333: Plus! Game Pack: Second Copy of Puzzle Collection Is Installed"
-permalink: kb/272/Q272333/
+permalink: /kb/272/Q272333/
 ---
 
 ## Q272333: Plus! Game Pack: Second Copy of Puzzle Collection Is Installed

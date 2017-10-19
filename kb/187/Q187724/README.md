@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187724: BUG: WLList and WLText Controls Cause Display Problem"
-permalink: kb/187/Q187724/
+permalink: /kb/187/Q187724/
 ---
 
 ## Q187724: BUG: WLList and WLText Controls Cause Display Problem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152735: XCLN: Offline Folder Is in Use and Could Not Be Accessed"
-permalink: kb/152/Q152735/
+permalink: /kb/152/Q152735/
 ---
 
 ## Q152735: XCLN: Offline Folder Is in Use and Could Not Be Accessed

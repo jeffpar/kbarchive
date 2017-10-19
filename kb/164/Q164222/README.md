@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164222: CardBus Card in Docking Station May Not Be Configured"
-permalink: kb/164/Q164222/
+permalink: /kb/164/Q164222/
 ---
 
 ## Q164222: CardBus Card in Docking Station May Not Be Configured

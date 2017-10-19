@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280811: PRB: Mixing And/Or Criteria in Same Filter Returns 3001 ErrMsg"
-permalink: kb/280/Q280811/
+permalink: /kb/280/Q280811/
 ---
 
 ## Q280811: PRB: Mixing And/Or Criteria in Same Filter Returns 3001 ErrMsg

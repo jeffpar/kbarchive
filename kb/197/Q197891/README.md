@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197891: Enumerating the Names of IIS Web Sites Using WSH"
-permalink: kb/197/Q197891/
+permalink: /kb/197/Q197891/
 ---
 
 ## Q197891: Enumerating the Names of IIS Web Sites Using WSH

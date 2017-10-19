@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182856: &quot;Fatal Exception 0E&quot; Error Message When Ejecting Laptop"
-permalink: kb/182/Q182856/
+permalink: /kb/182/Q182856/
 ---
 
 ## Q182856: &quot;Fatal Exception 0E&quot; Error Message When Ejecting Laptop

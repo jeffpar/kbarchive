@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240762: Password Synch Fails after Promoting Backup SNAPMP Service"
-permalink: kb/240/Q240762/
+permalink: /kb/240/Q240762/
 ---
 
 ## Q240762: Password Synch Fails after Promoting Backup SNAPMP Service

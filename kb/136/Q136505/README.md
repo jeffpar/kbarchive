@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136505: Fury3: Mute doesn't function during AVI sequences"
-permalink: kb/136/Q136505/
+permalink: /kb/136/Q136505/
 ---
 
 ## Q136505: Fury3: Mute doesn't function during AVI sequences

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198581: XADM: Information Store Fails in EcCodePageConvertXRaw"
-permalink: kb/198/Q198581/
+permalink: /kb/198/Q198581/
 ---
 
 ## Q198581: XADM: Information Store Fails in EcCodePageConvertXRaw

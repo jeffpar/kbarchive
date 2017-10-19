@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197016: SMS: How to Distribute a Package"
-permalink: kb/197/Q197016/
+permalink: /kb/197/Q197016/
 ---
 
 ## Q197016: SMS: How to Distribute a Package

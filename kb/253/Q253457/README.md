@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253457: Visual FoxPro 6.0 Sample: Demonstrates the ListView Control"
-permalink: kb/253/Q253457/
+permalink: /kb/253/Q253457/
 ---
 
 ## Q253457: Visual FoxPro 6.0 Sample: Demonstrates the ListView Control

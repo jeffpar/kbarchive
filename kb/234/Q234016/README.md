@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234016: ASP May Improperly Parse Cookies Containing a Plus Sign"
-permalink: kb/234/Q234016/
+permalink: /kb/234/Q234016/
 ---
 
 ## Q234016: ASP May Improperly Parse Cookies Containing a Plus Sign

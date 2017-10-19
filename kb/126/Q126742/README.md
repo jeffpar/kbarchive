@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126742: VB3 How to Size a Picture Box Dynamically to Fit an AVI Image"
-permalink: kb/126/Q126742/
+permalink: /kb/126/Q126742/
 ---
 
 ## Q126742: VB3 How to Size a Picture Box Dynamically to Fit an AVI Image

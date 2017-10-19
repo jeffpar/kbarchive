@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140567: Error Message: WINOLDAP Caused GP Fault in Module USER.EXE"
-permalink: kb/140/Q140567/
+permalink: /kb/140/Q140567/
 ---
 
 ## Q140567: Error Message: WINOLDAP Caused GP Fault in Module USER.EXE

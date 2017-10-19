@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161803: XGEN: Installation Guide Shows Incorrect SMTP Address Format"
-permalink: kb/161/Q161803/
+permalink: /kb/161/Q161803/
 ---
 
 ## Q161803: XGEN: Installation Guide Shows Incorrect SMTP Address Format

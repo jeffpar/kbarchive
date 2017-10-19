@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178656: XWEB: VBScript Error When Attempting to Access a Mailbox"
-permalink: kb/178/Q178656/
+permalink: /kb/178/Q178656/
 ---
 
 ## Q178656: XWEB: VBScript Error When Attempting to Access a Mailbox

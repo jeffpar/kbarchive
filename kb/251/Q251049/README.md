@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251049: XFOR: Lotus Notes Dirsync Specification of Read Only Field"
-permalink: kb/251/Q251049/
+permalink: /kb/251/Q251049/
 ---
 
 ## Q251049: XFOR: Lotus Notes Dirsync Specification of Read Only Field

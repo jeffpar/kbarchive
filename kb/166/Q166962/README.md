@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166962: Kids Plus!: Users Use Same Screensaver But Different Passwords"
-permalink: kb/166/Q166962/
+permalink: /kb/166/Q166962/
 ---
 
 ## Q166962: Kids Plus!: Users Use Same Screensaver But Different Passwords

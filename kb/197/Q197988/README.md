@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197988: HOWTO: Deploy an ActiveX Control with the PDW"
-permalink: kb/197/Q197988/
+permalink: /kb/197/Q197988/
 ---
 
 ## Q197988: HOWTO: Deploy an ActiveX Control with the PDW

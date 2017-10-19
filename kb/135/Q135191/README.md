@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135191: Wrong Area Cut When Zoomed-In in Paint"
-permalink: kb/135/Q135191/
+permalink: /kb/135/Q135191/
 ---
 
 ## Q135191: Wrong Area Cut When Zoomed-In in Paint

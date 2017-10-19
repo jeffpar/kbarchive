@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66071: Don't Run Windows 3.0 with Amdek DOS Version 3.21"
-permalink: kb/066/Q66071/
+permalink: /kb/066/Q66071/
 ---
 
 ## Q66071: Don't Run Windows 3.0 with Amdek DOS Version 3.21

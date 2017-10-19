@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249679: XCLN: Word Document Becomes Mail Message in Outlook 2000"
-permalink: kb/249/Q249679/
+permalink: /kb/249/Q249679/
 ---
 
 ## Q249679: XCLN: Word Document Becomes Mail Message in Outlook 2000

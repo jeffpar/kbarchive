@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126405: PRB: Cannot Hear Bell in FoxPro for Windows"
-permalink: kb/126/Q126405/
+permalink: /kb/126/Q126405/
 ---
 
 ## Q126405: PRB: Cannot Hear Bell in FoxPro for Windows

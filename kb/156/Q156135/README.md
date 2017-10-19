@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156135: FIX: CRecordset::m_lCurrentRecord Gives Inaccurate Values"
-permalink: kb/156/Q156135/
+permalink: /kb/156/Q156135/
 ---
 
 ## Q156135: FIX: CRecordset::m_lCurrentRecord Gives Inaccurate Values

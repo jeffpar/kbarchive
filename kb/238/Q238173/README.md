@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238173: Quorum Checkpoint File May Be Corrupted at Shutdown"
-permalink: kb/238/Q238173/
+permalink: /kb/238/Q238173/
 ---
 
 ## Q238173: Quorum Checkpoint File May Be Corrupted at Shutdown

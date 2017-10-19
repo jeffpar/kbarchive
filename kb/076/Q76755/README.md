@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76755: Forest &amp; Trees for Windows"
-permalink: kb/076/Q76755/
+permalink: /kb/076/Q76755/
 ---
 
 ## Q76755: Forest &amp; Trees for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115204: Err Msg Creating Uninstall Disk: Bad Uninstall Disk..."
-permalink: kb/115/Q115204/
+permalink: /kb/115/Q115204/
 ---
 
 ## Q115204: Err Msg Creating Uninstall Disk: Bad Uninstall Disk...

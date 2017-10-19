@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150518: NetLogon Service Fails When Secure Channel Not Functioning"
-permalink: kb/150/Q150518/
+permalink: /kb/150/Q150518/
 ---
 
 ## Q150518: NetLogon Service Fails When Secure Channel Not Functioning

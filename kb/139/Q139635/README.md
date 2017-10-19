@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139635: RAS Authentication of Third Party PPP SPAP Clients Fail"
-permalink: kb/139/Q139635/
+permalink: /kb/139/Q139635/
 ---
 
 ## Q139635: RAS Authentication of Third Party PPP SPAP Clients Fail

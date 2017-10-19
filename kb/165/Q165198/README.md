@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165198: SNA Server Manager Traps When Assigning 5000 Pools to a User"
-permalink: kb/165/Q165198/
+permalink: /kb/165/Q165198/
 ---
 
 ## Q165198: SNA Server Manager Traps When Assigning 5000 Pools to a User

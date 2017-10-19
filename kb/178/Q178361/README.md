@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178361: Error Message: That Password Is Incorrect"
-permalink: kb/178/Q178361/
+permalink: /kb/178/Q178361/
 ---
 
 ## Q178361: Error Message: That Password Is Incorrect

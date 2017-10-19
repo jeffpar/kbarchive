@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108044: Intel EtherExpress 16 Adapter Fails Occasionally"
-permalink: kb/108/Q108044/
+permalink: /kb/108/Q108044/
 ---
 
 ## Q108044: Intel EtherExpress 16 Adapter Fails Occasionally

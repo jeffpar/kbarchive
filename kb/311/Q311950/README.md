@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311950: PRB: &quot;Insufficient Base Table Information for Updating&quot; Error"
-permalink: kb/311/Q311950/
+permalink: /kb/311/Q311950/
 ---
 
 ## Q311950: PRB: &quot;Insufficient Base Table Information for Updating&quot; Error

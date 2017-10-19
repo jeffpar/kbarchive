@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152930: XCON: IMC Might Stop if RFC 821 From Address is &gt; 64 Characters"
-permalink: kb/152/Q152930/
+permalink: /kb/152/Q152930/
 ---
 
 ## Q152930: XCON: IMC Might Stop if RFC 821 From Address is &gt; 64 Characters

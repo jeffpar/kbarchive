@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177062: PRB: Update Conflict When Key Field Is Not Unique in Remote View"
-permalink: kb/177/Q177062/
+permalink: /kb/177/Q177062/
 ---
 
 ## Q177062: PRB: Update Conflict When Key Field Is Not Unique in Remote View

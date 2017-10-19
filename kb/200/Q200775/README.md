@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200775: Routing Problems After Installing Checkpoint Firewall 1"
-permalink: kb/200/Q200775/
+permalink: /kb/200/Q200775/
 ---
 
 ## Q200775: Routing Problems After Installing Checkpoint Firewall 1

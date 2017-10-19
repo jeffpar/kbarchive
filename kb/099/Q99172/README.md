@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99172: 3COM: Gateway Does Not Work After Successful Install"
-permalink: kb/099/Q99172/
+permalink: /kb/099/Q99172/
 ---
 
 ## Q99172: 3COM: Gateway Does Not Work After Successful Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253478: XADM: Determining Default Permissions of Folders Using Mdbview"
-permalink: kb/253/Q253478/
+permalink: /kb/253/Q253478/
 ---
 
 ## Q253478: XADM: Determining Default Permissions of Folders Using Mdbview

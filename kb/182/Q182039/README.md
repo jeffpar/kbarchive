@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182039: HOWTO: Use MouseKeys Instead of the Mouse in Visual FoxPro"
-permalink: kb/182/Q182039/
+permalink: /kb/182/Q182039/
 ---
 
 ## Q182039: HOWTO: Use MouseKeys Instead of the Mouse in Visual FoxPro

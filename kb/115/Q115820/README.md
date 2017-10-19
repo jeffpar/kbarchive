@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115820: CD Sampler: Long Pause in Narration of Money Demonstration"
-permalink: kb/115/Q115820/
+permalink: /kb/115/Q115820/
 ---
 
 ## Q115820: CD Sampler: Long Pause in Narration of Money Demonstration

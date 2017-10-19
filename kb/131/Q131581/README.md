@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131581: Aborted File Transfer Deletes File on Remote Computer"
-permalink: kb/131/Q131581/
+permalink: /kb/131/Q131581/
 ---
 
 ## Q131581: Aborted File Transfer Deletes File on Remote Computer

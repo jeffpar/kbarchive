@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148648: Stopping the Browser Service Causes STOP: 0x0000000A Error"
-permalink: kb/148/Q148648/
+permalink: /kb/148/Q148648/
 ---
 
 ## Q148648: Stopping the Browser Service Causes STOP: 0x0000000A Error

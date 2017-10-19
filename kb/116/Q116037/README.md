@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116037: How to Perform REPLACE for Two Databases w/ Common Field"
-permalink: kb/116/Q116037/
+permalink: /kb/116/Q116037/
 ---
 
 ## Q116037: How to Perform REPLACE for Two Databases w/ Common Field

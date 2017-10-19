@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136418: Updated Vserver.386 File for Windows for Workgroups"
-permalink: kb/136/Q136418/
+permalink: /kb/136/Q136418/
 ---
 
 ## Q136418: Updated Vserver.386 File for Windows for Workgroups

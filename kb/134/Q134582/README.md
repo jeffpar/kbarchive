@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134582: Video Greeting Err Msg: Video for Windows Not Installed"
-permalink: kb/134/Q134582/
+permalink: /kb/134/Q134582/
 ---
 
 ## Q134582: Video Greeting Err Msg: Video for Windows Not Installed

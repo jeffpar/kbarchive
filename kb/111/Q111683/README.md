@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111683: New Installation of WFWG with IPX.COM Gives Erroneous Dialog"
-permalink: kb/111/Q111683/
+permalink: /kb/111/Q111683/
 ---
 
 ## Q111683: New Installation of WFWG with IPX.COM Gives Erroneous Dialog

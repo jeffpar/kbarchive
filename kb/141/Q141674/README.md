@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141674: PC WSPlus: Err Msg: Cannot Access Your Server"
-permalink: kb/141/Q141674/
+permalink: /kb/141/Q141674/
 ---
 
 ## Q141674: PC WSPlus: Err Msg: Cannot Access Your Server

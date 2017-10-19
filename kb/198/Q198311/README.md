@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198311: WD97: Style Does Not Change with Automatically Update Setting On"
-permalink: kb/198/Q198311/
+permalink: /kb/198/Q198311/
 ---
 
 ## Q198311: WD97: Style Does Not Change with Automatically Update Setting On

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180060: XCLN: Autoforwarded E-form Does Not Prefix Subject Line With FW:"
-permalink: kb/180/Q180060/
+permalink: /kb/180/Q180060/
 ---
 
 ## Q180060: XCLN: Autoforwarded E-form Does Not Prefix Subject Line With FW:

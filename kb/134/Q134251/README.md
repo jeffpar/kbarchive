@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134251: BUG: Run-Time Changes to the Grid Not Saved Correctly"
-permalink: kb/134/Q134251/
+permalink: /kb/134/Q134251/
 ---
 
 ## Q134251: BUG: Run-Time Changes to the Grid Not Saved Correctly

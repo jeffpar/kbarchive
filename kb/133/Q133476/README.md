@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133476: Windows NT Mail Err Msg: Initialization of the Dynamic Link..."
-permalink: kb/133/Q133476/
+permalink: /kb/133/Q133476/
 ---
 
 ## Q133476: Windows NT Mail Err Msg: Initialization of the Dynamic Link...

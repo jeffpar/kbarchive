@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189341: XADM: Clearing Out &quot;Connect to Server&quot; List in Administrator"
-permalink: kb/189/Q189341/
+permalink: /kb/189/Q189341/
 ---
 
 ## Q189341: XADM: Clearing Out &quot;Connect to Server&quot; List in Administrator

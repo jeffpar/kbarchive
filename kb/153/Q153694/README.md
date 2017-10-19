@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153694: FIX: SQLNumResultCols Fails with Incorrect Syntax Near 'SET'"
-permalink: kb/153/Q153694/
+permalink: /kb/153/Q153694/
 ---
 
 ## Q153694: FIX: SQLNumResultCols Fails with Incorrect Syntax Near 'SET'

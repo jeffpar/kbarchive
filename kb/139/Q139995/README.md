@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139995: FIX: Duplicate Column Names Improperly Qualified by Wizards"
-permalink: kb/139/Q139995/
+permalink: /kb/139/Q139995/
 ---
 
 ## Q139995: FIX: Duplicate Column Names Improperly Qualified by Wizards

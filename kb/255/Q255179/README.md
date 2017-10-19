@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255179: XADM: Exchange Server Setup Stops on Microsoft Terminal Server"
-permalink: kb/255/Q255179/
+permalink: /kb/255/Q255179/
 ---
 
 ## Q255179: XADM: Exchange Server Setup Stops on Microsoft Terminal Server

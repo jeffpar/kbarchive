@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134224: PC MMTA: Err Msg: Drive X: Is Invalid"
-permalink: kb/134/Q134224/
+permalink: /kb/134/Q134224/
 ---
 
 ## Q134224: PC MMTA: Err Msg: Drive X: Is Invalid

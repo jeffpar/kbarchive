@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214583: Close Combat III: Problems Using AccelStar II 3D Video Adapter"
-permalink: kb/214/Q214583/
+permalink: /kb/214/Q214583/
 ---
 
 ## Q214583: Close Combat III: Problems Using AccelStar II 3D Video Adapter

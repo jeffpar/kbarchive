@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321493: FP: Err Msg: PivotTable List Could Not Connect to Data Source"
-permalink: kb/321/Q321493/
+permalink: /kb/321/Q321493/
 ---
 
 ## Q321493: FP: Err Msg: PivotTable List Could Not Connect to Data Source

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123607: Graphics and True Type Fonts Print Garbage on Okidata ML320"
-permalink: kb/123/Q123607/
+permalink: /kb/123/Q123607/
 ---
 
 ## Q123607: Graphics and True Type Fonts Print Garbage on Okidata ML320

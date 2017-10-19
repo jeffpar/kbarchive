@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299527: PRB: &quot;Error in Loading DLL&quot; Error If You Add PDW as VB Component"
-permalink: kb/299/Q299527/
+permalink: /kb/299/Q299527/
 ---
 
 ## Q299527: PRB: &quot;Error in Loading DLL&quot; Error If You Add PDW as VB Component

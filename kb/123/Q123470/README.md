@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123470: INFO: How SourceSafe Selects a Viewer for a File"
-permalink: kb/123/Q123470/
+permalink: /kb/123/Q123470/
 ---
 
 ## Q123470: INFO: How SourceSafe Selects a Viewer for a File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151714: WinNT RPC Client May Fail Against DCE Server"
-permalink: kb/151/Q151714/
+permalink: /kb/151/Q151714/
 ---
 
 ## Q151714: WinNT RPC Client May Fail Against DCE Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134590: NETAPI32 APIs Are Not Supported in Windows 95"
-permalink: kb/134/Q134590/
+permalink: /kb/134/Q134590/
 ---
 
 ## Q134590: NETAPI32 APIs Are Not Supported in Windows 95

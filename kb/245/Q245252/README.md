@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245252: Secondary DNS Server Does Not Obtain Glue Record in Child Domain"
-permalink: kb/245/Q245252/
+permalink: /kb/245/Q245252/
 ---
 
 ## Q245252: Secondary DNS Server Does Not Obtain Glue Record in Child Domain

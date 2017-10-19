@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177358: HOWTO: Pass a Date Value to a Oracle Stored Procedure"
-permalink: kb/177/Q177358/
+permalink: /kb/177/Q177358/
 ---
 
 ## Q177358: HOWTO: Pass a Date Value to a Oracle Stored Procedure

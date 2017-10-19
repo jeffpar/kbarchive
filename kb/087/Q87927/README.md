@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87927: FIX: Breakpoints, Watches Not Restored with Dual Monitor"
-permalink: kb/087/Q87927/
+permalink: /kb/087/Q87927/
 ---
 
 ## Q87927: FIX: Breakpoints, Watches Not Restored with Dual Monitor

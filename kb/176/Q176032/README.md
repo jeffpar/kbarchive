@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176032: XCLN: Err: Object Storage Could not be Allocated"
-permalink: kb/176/Q176032/
+permalink: /kb/176/Q176032/
 ---
 
 ## Q176032: XCLN: Err: Object Storage Could not be Allocated

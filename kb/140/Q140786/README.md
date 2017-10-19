@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140786: Which Products Qualify for PowerPoint for Windows 95 Upgrade"
-permalink: kb/140/Q140786/
+permalink: /kb/140/Q140786/
 ---
 
 ## Q140786: Which Products Qualify for PowerPoint for Windows 95 Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176975: Creating Internal Root Servers Using Cache.dns"
-permalink: kb/176/Q176975/
+permalink: /kb/176/Q176975/
 ---
 
 ## Q176975: Creating Internal Root Servers Using Cache.dns

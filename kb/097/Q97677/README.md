@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97677: Debug Script to Test for Windows Sound System Presence"
-permalink: kb/097/Q97677/
+permalink: /kb/097/Q97677/
 ---
 
 ## Q97677: Debug Script to Test for Windows Sound System Presence

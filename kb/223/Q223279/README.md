@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223279: XADM: Extension DSAVUADM Could Not Be Loaded Accessing a Mailbox"
-permalink: kb/223/Q223279/
+permalink: /kb/223/Q223279/
 ---
 
 ## Q223279: XADM: Extension DSAVUADM Could Not Be Loaded Accessing a Mailbox

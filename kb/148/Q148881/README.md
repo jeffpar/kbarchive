@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148881: Cannot Start MSN with MSN Icon"
-permalink: kb/148/Q148881/
+permalink: /kb/148/Q148881/
 ---
 
 ## Q148881: Cannot Start MSN with MSN Icon

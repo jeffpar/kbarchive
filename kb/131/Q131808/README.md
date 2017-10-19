@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131808: No Messages Appear in Active Chat Session"
-permalink: kb/131/Q131808/
+permalink: /kb/131/Q131808/
 ---
 
 ## Q131808: No Messages Appear in Active Chat Session

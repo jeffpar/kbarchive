@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230049: HOWTO: Highlight Row of Multi-Column Report-View CListCtrlR"
-permalink: kb/230/Q230049/
+permalink: /kb/230/Q230049/
 ---
 
 ## Q230049: HOWTO: Highlight Row of Multi-Column Report-View CListCtrlR

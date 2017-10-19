@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255192: Terminal Server Client Cannot Perform Send To/Mail Recipient"
-permalink: kb/255/Q255192/
+permalink: /kb/255/Q255192/
 ---
 
 ## Q255192: Terminal Server Client Cannot Perform Send To/Mail Recipient

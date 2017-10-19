@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320020: Dungeon Siege: Network Ports Required for Multiplayer Game"
-permalink: kb/320/Q320020/
+permalink: /kb/320/Q320020/
 ---
 
 ## Q320020: Dungeon Siege: Network Ports Required for Multiplayer Game

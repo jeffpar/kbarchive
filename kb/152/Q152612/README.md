@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152612: Err Msg: Drvspace 484... Incompatible Compression Driver"
-permalink: kb/152/Q152612/
+permalink: /kb/152/Q152612/
 ---
 
 ## Q152612: Err Msg: Drvspace 484... Incompatible Compression Driver

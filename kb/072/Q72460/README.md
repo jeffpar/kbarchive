@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72460: INFO: Baseline Shifts in Cell When Character Italicized"
-permalink: kb/072/Q72460/
+permalink: /kb/072/Q72460/
 ---
 
 ## Q72460: INFO: Baseline Shifts in Cell When Character Italicized

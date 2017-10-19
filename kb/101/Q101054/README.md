@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101054: Some Windows Can't Be Resized"
-permalink: kb/101/Q101054/
+permalink: /kb/101/Q101054/
 ---
 
 ## Q101054: Some Windows Can't Be Resized

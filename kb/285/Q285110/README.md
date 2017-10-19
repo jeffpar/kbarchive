@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285110: XADM: Error Message: Event ID 1171, Exception e0010002 Has Oc..."
-permalink: kb/285/Q285110/
+permalink: /kb/285/Q285110/
 ---
 
 ## Q285110: XADM: Error Message: Event ID 1171, Exception e0010002 Has Oc...

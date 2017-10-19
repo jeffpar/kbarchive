@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83064: Using ANSI.SYS /X to Remap Extended Keys"
-permalink: kb/083/Q83064/
+permalink: /kb/083/Q83064/
 ---
 
 ## Q83064: Using ANSI.SYS /X to Remap Extended Keys

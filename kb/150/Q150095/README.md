@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150095: XADM: NDRs After Removing X.400 Address From DL"
-permalink: kb/150/Q150095/
+permalink: /kb/150/Q150095/
 ---
 
 ## Q150095: XADM: NDRs After Removing X.400 Address From DL

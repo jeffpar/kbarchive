@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169047: Full Court Press Trial Version Is Available"
-permalink: kb/169/Q169047/
+permalink: /kb/169/Q169047/
 ---
 
 ## Q169047: Full Court Press Trial Version Is Available

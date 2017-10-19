@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241018: Microsoft Windows NT Workstation 4.0 Resource Kit Corrections"
-permalink: kb/241/Q241018/
+permalink: /kb/241/Q241018/
 ---
 
 ## Q241018: Microsoft Windows NT Workstation 4.0 Resource Kit Corrections

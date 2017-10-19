@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160386: Incorrect MediaType Parameter on IBM PCMCIA Token Ring Card"
-permalink: kb/160/Q160386/
+permalink: /kb/160/Q160386/
 ---
 
 ## Q160386: Incorrect MediaType Parameter on IBM PCMCIA Token Ring Card

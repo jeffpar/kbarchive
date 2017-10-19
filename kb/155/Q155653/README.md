@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155653: Monster Truck Madness: Tournament Issues"
-permalink: kb/155/Q155653/
+permalink: /kb/155/Q155653/
 ---
 
 ## Q155653: Monster Truck Madness: Tournament Issues

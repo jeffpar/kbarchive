@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196540: WD97: Misspelled Words in Main Dictionary"
-permalink: kb/196/Q196540/
+permalink: /kb/196/Q196540/
 ---
 
 ## Q196540: WD97: Misspelled Words in Main Dictionary

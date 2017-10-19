@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252831: SMSINST: Iterative Use Of Get Temporary Filename Can Cause Error"
-permalink: kb/252/Q252831/
+permalink: /kb/252/Q252831/
 ---
 
 ## Q252831: SMSINST: Iterative Use Of Get Temporary Filename Can Cause Error

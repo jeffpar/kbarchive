@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294888: BUG: Instantiation of ActiveX EXE SingleUse Objects Is Blocked"
-permalink: kb/294/Q294888/
+permalink: /kb/294/Q294888/
 ---
 
 ## Q294888: BUG: Instantiation of ActiveX EXE SingleUse Objects Is Blocked

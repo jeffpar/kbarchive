@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245605: Clusdisk.sys May Corrupt Pool Memory"
-permalink: kb/245/Q245605/
+permalink: /kb/245/Q245605/
 ---
 
 ## Q245605: Clusdisk.sys May Corrupt Pool Memory

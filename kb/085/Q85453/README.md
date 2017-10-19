@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85453: Windows 3.0 Logo Screen Appears When Starting Windows 3.1"
-permalink: kb/085/Q85453/
+permalink: /kb/085/Q85453/
 ---
 
 ## Q85453: Windows 3.0 Logo Screen Appears When Starting Windows 3.1

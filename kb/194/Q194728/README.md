@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194728: INFO: Coverage Profiler Add-Ins Considerations"
-permalink: kb/194/Q194728/
+permalink: /kb/194/Q194728/
 ---
 
 ## Q194728: INFO: Coverage Profiler Add-Ins Considerations

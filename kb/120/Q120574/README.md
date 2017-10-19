@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120574: TRACERT Does Not Return Correct IP Name"
-permalink: kb/120/Q120574/
+permalink: /kb/120/Q120574/
 ---
 
 ## Q120574: TRACERT Does Not Return Correct IP Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155784: SourceSafe Alpha/MIPS Files Not on VB Enterprise CD-ROMs"
-permalink: kb/155/Q155784/
+permalink: /kb/155/Q155784/
 ---
 
 ## Q155784: SourceSafe Alpha/MIPS Files Not on VB Enterprise CD-ROMs

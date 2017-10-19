@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197202: WD97: Paragraph Numbering Causes Slow Scrolling"
-permalink: kb/197/Q197202/
+permalink: /kb/197/Q197202/
 ---
 
 ## Q197202: WD97: Paragraph Numbering Causes Slow Scrolling

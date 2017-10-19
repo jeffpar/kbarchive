@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242012: Performance Monitor Does Not Append the .log File Extension"
-permalink: kb/242/Q242012/
+permalink: /kb/242/Q242012/
 ---
 
 ## Q242012: Performance Monitor Does Not Append the .log File Extension

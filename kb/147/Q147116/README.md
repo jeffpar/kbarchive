@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147116: XCLN: How to Tab out of Multi-Line Rich Edit Field"
-permalink: kb/147/Q147116/
+permalink: /kb/147/Q147116/
 ---
 
 ## Q147116: XCLN: How to Tab out of Multi-Line Rich Edit Field

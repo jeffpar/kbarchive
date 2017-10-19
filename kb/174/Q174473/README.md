@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174473: SMS: Error 122 When Using RSERVICE /CHANGE"
-permalink: kb/174/Q174473/
+permalink: /kb/174/Q174473/
 ---
 
 ## Q174473: SMS: Error 122 When Using RSERVICE /CHANGE

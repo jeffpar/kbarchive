@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174931: Printer Share Lost after Renaming Printer"
-permalink: kb/174/Q174931/
+permalink: /kb/174/Q174931/
 ---
 
 ## Q174931: Printer Share Lost after Renaming Printer

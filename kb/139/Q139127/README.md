@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139127: DOC: Passing GETFILE() a Semicolon Won't Work in Windows 95"
-permalink: kb/139/Q139127/
+permalink: /kb/139/Q139127/
 ---
 
 ## Q139127: DOC: Passing GETFILE() a Semicolon Won't Work in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221565: XFOR:Messages Blocked from Host to Exchange on OV/VM(PROFS)"
-permalink: kb/221/Q221565/
+permalink: /kb/221/Q221565/
 ---
 
 ## Q221565: XFOR:Messages Blocked from Host to Exchange on OV/VM(PROFS)

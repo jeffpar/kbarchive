@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69743: PC DOS: Using the NEWMAIL Utility with Mail"
-permalink: kb/069/Q69743/
+permalink: /kb/069/Q69743/
 ---
 
 ## Q69743: PC DOS: Using the NEWMAIL Utility with Mail

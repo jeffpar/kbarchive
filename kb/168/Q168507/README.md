@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168507: PPT7: Changes to Notes Master Not Reflected in Notes View"
-permalink: kb/168/Q168507/
+permalink: /kb/168/Q168507/
 ---
 
 ## Q168507: PPT7: Changes to Notes Master Not Reflected in Notes View

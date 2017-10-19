@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273567: How to install and set up MSN Companion"
-permalink: kb/273/Q273567/
+permalink: /kb/273/Q273567/
 ---
 
 ## Q273567: How to install and set up MSN Companion

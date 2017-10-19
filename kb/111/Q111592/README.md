@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111592: BUG: DeleteObject() Generates Debug Errors in WEP"
-permalink: kb/111/Q111592/
+permalink: /kb/111/Q111592/
 ---
 
 ## Q111592: BUG: DeleteObject() Generates Debug Errors in WEP

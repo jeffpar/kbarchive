@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157043: XADM: Message Rerouted Between Servers and Disappears"
-permalink: kb/157/Q157043/
+permalink: /kb/157/Q157043/
 ---
 
 ## Q157043: XADM: Message Rerouted Between Servers and Disappears

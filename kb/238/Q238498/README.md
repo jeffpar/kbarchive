@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238498: XFOR: NDR to SMTP Report If Prohibit Receive Enabled"
-permalink: kb/238/Q238498/
+permalink: /kb/238/Q238498/
 ---
 
 ## Q238498: XFOR: NDR to SMTP Report If Prohibit Receive Enabled

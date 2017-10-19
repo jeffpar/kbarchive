@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325734: MechWarrior 4.0: Game Hangs Immediately After Starting"
-permalink: kb/325/Q325734/
+permalink: /kb/325/Q325734/
 ---
 
 ## Q325734: MechWarrior 4.0: Game Hangs Immediately After Starting

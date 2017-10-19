@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171762: Allowing Profile Shortcut Paths To Point To Local Drives"
-permalink: kb/171/Q171762/
+permalink: /kb/171/Q171762/
 ---
 
 ## Q171762: Allowing Profile Shortcut Paths To Point To Local Drives

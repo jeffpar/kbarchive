@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164202: Booting to Secondary Installation When Boot.ini Is Set to Zero"
-permalink: kb/164/Q164202/
+permalink: /kb/164/Q164202/
 ---
 
 ## Q164202: Booting to Secondary Installation When Boot.ini Is Set to Zero

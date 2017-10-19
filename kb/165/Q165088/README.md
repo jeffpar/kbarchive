@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165088: CPIC Application Stops Responding When Starting Conversation"
-permalink: kb/165/Q165088/
+permalink: /kb/165/Q165088/
 ---
 
 ## Q165088: CPIC Application Stops Responding When Starting Conversation

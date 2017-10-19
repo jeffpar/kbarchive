@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191641: BUG: Deleted Event Does Not Fire When Deleting Programmatically"
-permalink: kb/191/Q191641/
+permalink: /kb/191/Q191641/
 ---
 
 ## Q191641: BUG: Deleted Event Does Not Fire When Deleting Programmatically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169385: PRB: Screen Turns Black While Making .exe"
-permalink: kb/169/Q169385/
+permalink: /kb/169/Q169385/
 ---
 
 ## Q169385: PRB: Screen Turns Black While Making .exe

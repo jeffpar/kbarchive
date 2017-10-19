@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281434: How to Isolate a DLL Into a Separate Process Using MTS"
-permalink: kb/281/Q281434/
+permalink: /kb/281/Q281434/
 ---
 
 ## Q281434: How to Isolate a DLL Into a Separate Process Using MTS

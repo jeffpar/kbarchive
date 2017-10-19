@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107693: HOWTO: How to Detect Mouse and Mouse Port"
-permalink: kb/107/Q107693/
+permalink: /kb/107/Q107693/
 ---
 
 ## Q107693: HOWTO: How to Detect Mouse and Mouse Port

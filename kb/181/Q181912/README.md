@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181912: PRB: FlexGrid Control Does Not Highlight Whole Row"
-permalink: kb/181/Q181912/
+permalink: /kb/181/Q181912/
 ---
 
 ## Q181912: PRB: FlexGrid Control Does Not Highlight Whole Row

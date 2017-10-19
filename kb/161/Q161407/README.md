@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161407: WD97: VB Macro Examples to Insert Text into a Document"
-permalink: kb/161/Q161407/
+permalink: /kb/161/Q161407/
 ---
 
 ## Q161407: WD97: VB Macro Examples to Insert Text into a Document

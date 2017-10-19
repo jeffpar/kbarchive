@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185743: Performance Monitor Errors When Running on SNA Server 4.0"
-permalink: kb/185/Q185743/
+permalink: /kb/185/Q185743/
 ---
 
 ## Q185743: Performance Monitor Errors When Running on SNA Server 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264884: SMS: Windows 2000 Client Video Cannot Be Accelerated"
-permalink: kb/264/Q264884/
+permalink: /kb/264/Q264884/
 ---
 
 ## Q264884: SMS: Windows 2000 Client Video Cannot Be Accelerated

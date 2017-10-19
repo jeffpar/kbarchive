@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169771: Remote Session Manager Unavailable When Installing TelnetD"
-permalink: kb/169/Q169771/
+permalink: /kb/169/Q169771/
 ---
 
 ## Q169771: Remote Session Manager Unavailable When Installing TelnetD

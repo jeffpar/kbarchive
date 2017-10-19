@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155424: Windows NT Domain Does Not Accept New Domain Password"
-permalink: kb/155/Q155424/
+permalink: /kb/155/Q155424/
 ---
 
 ## Q155424: Windows NT Domain Does Not Accept New Domain Password

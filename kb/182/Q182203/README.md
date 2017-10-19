@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182203: XADM: Browse Does Not Locate Exchange Servers Across Windows NT"
-permalink: kb/182/Q182203/
+permalink: /kb/182/Q182203/
 ---
 
 ## Q182203: XADM: Browse Does Not Locate Exchange Servers Across Windows NT

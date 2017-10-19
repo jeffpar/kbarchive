@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263914: PRB: CREATEOFFLINE() Can Result in No Records"
-permalink: kb/263/Q263914/
+permalink: /kb/263/Q263914/
 ---
 
 ## Q263914: PRB: CREATEOFFLINE() Can Result in No Records

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155703: PRB: MCI Fails to Read a File Using a Custom mmio Procedure"
-permalink: kb/155/Q155703/
+permalink: /kb/155/Q155703/
 ---
 
 ## Q155703: PRB: MCI Fails to Read a File Using a Custom mmio Procedure

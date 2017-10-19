@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129511: PRB: &quot;Property Command Not Found&quot; Error When Modifying Caption"
-permalink: kb/129/Q129511/
+permalink: /kb/129/Q129511/
 ---
 
 ## Q129511: PRB: &quot;Property Command Not Found&quot; Error When Modifying Caption

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134474: Power Spanish Causes a GP Fault When You Quit Program"
-permalink: kb/134/Q134474/
+permalink: /kb/134/Q134474/
 ---
 
 ## Q134474: Power Spanish Causes a GP Fault When You Quit Program

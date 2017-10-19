@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281430: HOWTO: Retrieve XML Data from SQL Server 2000 with CRowsetStream"
-permalink: kb/281/Q281430/
+permalink: /kb/281/Q281430/
 ---
 
 ## Q281430: HOWTO: Retrieve XML Data from SQL Server 2000 with CRowsetStream

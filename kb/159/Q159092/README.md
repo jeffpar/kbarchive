@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159092: Mouse Buttons Not Swapped on German Windows NT 4.0"
-permalink: kb/159/Q159092/
+permalink: /kb/159/Q159092/
 ---
 
 ## Q159092: Mouse Buttons Not Swapped on German Windows NT 4.0

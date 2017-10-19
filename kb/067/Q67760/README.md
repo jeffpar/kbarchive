@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67760: FIX: Bad Object File Generated with MASM 5.1 and 5.1a"
-permalink: kb/067/Q67760/
+permalink: /kb/067/Q67760/
 ---
 
 ## Q67760: FIX: Bad Object File Generated with MASM 5.1 and 5.1a

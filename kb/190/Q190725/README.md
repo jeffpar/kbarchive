@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190725: SqlOleDb.h Not Installed by VC++ 6.0"
-permalink: kb/190/Q190725/
+permalink: /kb/190/Q190725/
 ---
 
 ## Q190725: SqlOleDb.h Not Installed by VC++ 6.0

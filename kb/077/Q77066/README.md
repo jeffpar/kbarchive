@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77066: PRB: Problems with Dr. Watson or with the Packager"
-permalink: kb/077/Q77066/
+permalink: /kb/077/Q77066/
 ---
 
 ## Q77066: PRB: Problems with Dr. Watson or with the Packager

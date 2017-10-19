@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157766: FIX: Breakpoint Not Refreshed for Duplicate Watch Window Entry"
-permalink: kb/157/Q157766/
+permalink: /kb/157/Q157766/
 ---
 
 ## Q157766: FIX: Breakpoint Not Refreshed for Duplicate Watch Window Entry

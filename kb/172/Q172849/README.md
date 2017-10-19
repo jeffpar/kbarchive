@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172849: PRB: TRANSFORM() Does not Format a Calculated Field Properly"
-permalink: kb/172/Q172849/
+permalink: /kb/172/Q172849/
 ---
 
 ## Q172849: PRB: TRANSFORM() Does not Format a Calculated Field Properly

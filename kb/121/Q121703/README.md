@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121703: Setup and Boot Hangs on HP NetServer Computer"
-permalink: kb/121/Q121703/
+permalink: /kb/121/Q121703/
 ---
 
 ## Q121703: Setup and Boot Hangs on HP NetServer Computer

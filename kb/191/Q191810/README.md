@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191810: Dial-Up Networking Server Utility Does Not Work"
-permalink: kb/191/Q191810/
+permalink: /kb/191/Q191810/
 ---
 
 ## Q191810: Dial-Up Networking Server Utility Does Not Work

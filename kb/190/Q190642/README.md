@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190642: PRB: ADODC Error on Reposition When EOFAction Is adDoAddNew"
-permalink: kb/190/Q190642/
+permalink: /kb/190/Q190642/
 ---
 
 ## Q190642: PRB: ADODC Error on Reposition When EOFAction Is adDoAddNew

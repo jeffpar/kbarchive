@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112888: PC DOS: Err Msg: Notice 13 Disk Full or Error Writing to Disk"
-permalink: kb/112/Q112888/
+permalink: /kb/112/Q112888/
 ---
 
 ## Q112888: PC DOS: Err Msg: Notice 13 Disk Full or Error Writing to Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228924: SNA OLE: The Number of Objects Has Reached the Object Limit"
-permalink: kb/228/Q228924/
+permalink: /kb/228/Q228924/
 ---
 
 ## Q228924: SNA OLE: The Number of Objects Has Reached the Object Limit

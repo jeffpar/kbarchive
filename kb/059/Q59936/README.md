@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59936: PRB: L4047 Warning Benign When C 6 Run-time Libraries Used"
-permalink: kb/059/Q59936/
+permalink: /kb/059/Q59936/
 ---
 
 ## Q59936: PRB: L4047 Warning Benign When C 6 Run-time Libraries Used

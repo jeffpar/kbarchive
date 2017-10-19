@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139471: Unable to Change Domain Name of Windows NT BDC"
-permalink: kb/139/Q139471/
+permalink: /kb/139/Q139471/
 ---
 
 ## Q139471: Unable to Change Domain Name of Windows NT BDC

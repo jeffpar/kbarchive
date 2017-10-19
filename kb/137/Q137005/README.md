@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137005: Unable to PING Router On Remote Network From RAS Client"
-permalink: kb/137/Q137005/
+permalink: /kb/137/Q137005/
 ---
 
 ## Q137005: Unable to PING Router On Remote Network From RAS Client

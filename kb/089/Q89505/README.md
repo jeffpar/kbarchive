@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89505: Group File Error After Launching WordPerfect"
-permalink: kb/089/Q89505/
+permalink: /kb/089/Q89505/
 ---
 
 ## Q89505: Group File Error After Launching WordPerfect

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q100392: McAfee SCAN Incorrectly Reports Israeli Boot [iboot] Virus"
-permalink: kb/100/Q100392/
+title: "Q100392: McAfee SCAN Incorrectly Reports Israeli Boot &#91;iboot&#93; Virus"
+permalink: /kb/100/Q100392/
 ---
 
-## Q100392: McAfee SCAN Incorrectly Reports Israeli Boot [iboot] Virus
+## Q100392: McAfee SCAN Incorrectly Reports Israeli Boot &#91;iboot&#93; Virus
 
 	Article: Q100392
 	Product(s): Microsoft Disk Operating System

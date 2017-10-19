@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235740: SMS: ODP Incorrectly Identifies User Name for Targeted Ads"
-permalink: kb/235/Q235740/
+permalink: /kb/235/Q235740/
 ---
 
 ## Q235740: SMS: ODP Incorrectly Identifies User Name for Targeted Ads

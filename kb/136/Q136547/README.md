@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136547: Restoring Windows NT Dual Boot After Installing Windows 95"
-permalink: kb/136/Q136547/
+permalink: /kb/136/Q136547/
 ---
 
 ## Q136547: Restoring Windows NT Dual Boot After Installing Windows 95

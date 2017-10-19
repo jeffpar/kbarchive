@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69788: ASD: 747 Panel Cannot Be Moved or Sized"
-permalink: kb/069/Q69788/
+permalink: /kb/069/Q69788/
 ---
 
 ## Q69788: ASD: 747 Panel Cannot Be Moved or Sized

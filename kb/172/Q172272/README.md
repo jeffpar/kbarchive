@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172272: SAMPLE: TREEVIEW.EXE Manipulating Nodes in a TreeView Control"
-permalink: kb/172/Q172272/
+permalink: /kb/172/Q172272/
 ---
 
 ## Q172272: SAMPLE: TREEVIEW.EXE Manipulating Nodes in a TreeView Control

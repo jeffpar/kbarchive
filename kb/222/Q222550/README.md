@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222550: XFOR: Mail Doesn't Flow from GroupWise to Exchange Server"
-permalink: kb/222/Q222550/
+permalink: /kb/222/Q222550/
 ---
 
 ## Q222550: XFOR: Mail Doesn't Flow from GroupWise to Exchange Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154491: XADM: DS/IS Fails to Re-create Mailboxes in Subcontainers"
-permalink: kb/154/Q154491/
+permalink: /kb/154/Q154491/
 ---
 
 ## Q154491: XADM: DS/IS Fails to Re-create Mailboxes in Subcontainers

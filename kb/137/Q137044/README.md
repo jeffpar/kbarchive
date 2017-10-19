@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137044: SMTP: Err Msg: 354 Start Mail Input; End wit"
-permalink: kb/137/Q137044/
+permalink: /kb/137/Q137044/
 ---
 
 ## Q137044: SMTP: Err Msg: 354 Start Mail Input; End wit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172178: WD97: How to Create Mutually Exclusive Check Boxes Using VBA"
-permalink: kb/172/Q172178/
+permalink: /kb/172/Q172178/
 ---
 
 ## Q172178: WD97: How to Create Mutually Exclusive Check Boxes Using VBA

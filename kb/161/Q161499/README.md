@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161499: XADM: Event 7042 During DS/IS Consistency Check"
-permalink: kb/161/Q161499/
+permalink: /kb/161/Q161499/
 ---
 
 ## Q161499: XADM: Event 7042 During DS/IS Consistency Check

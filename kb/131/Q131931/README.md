@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131931: Packard Bell Legend 820CD Hangs During Hardware Detection"
-permalink: kb/131/Q131931/
+permalink: /kb/131/Q131931/
 ---
 
 ## Q131931: Packard Bell Legend 820CD Hangs During Hardware Detection

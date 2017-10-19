@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165442: XCLN: Client Deletes Existing PST in Absence of Filescan Rights"
-permalink: kb/165/Q165442/
+permalink: /kb/165/Q165442/
 ---
 
 ## Q165442: XCLN: Client Deletes Existing PST in Absence of Filescan Rights

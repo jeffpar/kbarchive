@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65436: HIMEM.SYS Included with Microsoft C Compiler Version 6.0"
-permalink: kb/065/Q65436/
+permalink: /kb/065/Q65436/
 ---
 
 ## Q65436: HIMEM.SYS Included with Microsoft C Compiler Version 6.0

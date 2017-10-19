@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167260: XCLN: How to Use RPCPing to Test RPC Communication"
-permalink: kb/167/Q167260/
+permalink: /kb/167/Q167260/
 ---
 
 ## Q167260: XCLN: How to Use RPCPing to Test RPC Communication

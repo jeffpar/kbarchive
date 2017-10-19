@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237803: XCLN: Updated Version of the IExpress Deployment Kit Available"
-permalink: kb/237/Q237803/
+permalink: /kb/237/Q237803/
 ---
 
 ## Q237803: XCLN: Updated Version of the IExpress Deployment Kit Available

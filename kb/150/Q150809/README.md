@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150809: Commenting an Internet Database Connector (IDC) File"
-permalink: kb/150/Q150809/
+permalink: /kb/150/Q150809/
 ---
 
 ## Q150809: Commenting an Internet Database Connector (IDC) File

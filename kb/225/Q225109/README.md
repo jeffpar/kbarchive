@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225109: Rasmon Icon Is Not Displayed on the Taskbar"
-permalink: kb/225/Q225109/
+permalink: /kb/225/Q225109/
 ---
 
 ## Q225109: Rasmon Icon Is Not Displayed on the Taskbar

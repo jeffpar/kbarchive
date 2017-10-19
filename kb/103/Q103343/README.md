@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103343: MkeGroup.exe Creates Program Manager Groups/Items w/DDE"
-permalink: kb/103/Q103343/
+permalink: /kb/103/Q103343/
 ---
 
 ## Q103343: MkeGroup.exe Creates Program Manager Groups/Items w/DDE

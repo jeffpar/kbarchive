@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174886: FIX: Gendbc Produces Error Message when View is Open in Workarea"
-permalink: kb/174/Q174886/
+permalink: /kb/174/Q174886/
 ---
 
 ## Q174886: FIX: Gendbc Produces Error Message when View is Open in Workarea

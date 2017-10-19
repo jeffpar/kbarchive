@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279456: MSN Companion e-mail indicator light does not turn on"
-permalink: kb/279/Q279456/
+permalink: /kb/279/Q279456/
 ---
 
 ## Q279456: MSN Companion e-mail indicator light does not turn on

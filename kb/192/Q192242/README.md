@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192242: Admin Print Functions after Year 2000 Show Incorrect Date Format"
-permalink: kb/192/Q192242/
+permalink: /kb/192/Q192242/
 ---
 
 ## Q192242: Admin Print Functions after Year 2000 Show Incorrect Date Format

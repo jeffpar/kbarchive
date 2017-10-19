@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153178: Cannot Locate The Microsoft Network Data Center"
-permalink: kb/153/Q153178/
+permalink: /kb/153/Q153178/
 ---
 
 ## Q153178: Cannot Locate The Microsoft Network Data Center

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139456: FIX: LNK1201 Error Writing to .PDB File After Line Profile"
-permalink: kb/139/Q139456/
+permalink: /kb/139/Q139456/
 ---
 
 ## Q139456: FIX: LNK1201 Error Writing to .PDB File After Line Profile

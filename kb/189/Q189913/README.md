@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189913: BUG: Inconsistent Firing of ListBox Click Event Using Keyboard"
-permalink: kb/189/Q189913/
+permalink: /kb/189/Q189913/
 ---
 
 ## Q189913: BUG: Inconsistent Firing of ListBox Click Event Using Keyboard

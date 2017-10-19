@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127746: APM Features Do Not Seem to Work"
-permalink: kb/127/Q127746/
+permalink: /kb/127/Q127746/
 ---
 
 ## Q127746: APM Features Do Not Seem to Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92901: Mouse Problems with Swap File and LRU Settings"
-permalink: kb/092/Q92901/
+permalink: /kb/092/Q92901/
 ---
 
 ## Q92901: Mouse Problems with Swap File and LRU Settings

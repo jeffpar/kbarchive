@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181211: Common Issues Related to the ODBC Driver for DB2"
-permalink: kb/181/Q181211/
+permalink: /kb/181/Q181211/
 ---
 
 ## Q181211: Common Issues Related to the ODBC Driver for DB2

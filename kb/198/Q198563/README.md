@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198563: XFOR: Replies to Some Internet Mail Messages Fail"
-permalink: kb/198/Q198563/
+permalink: /kb/198/Q198563/
 ---
 
 ## Q198563: XFOR: Replies to Some Internet Mail Messages Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284604: INFO: Logging On to Exchange by Using CDO Can Create Default Fol"
-permalink: kb/284/Q284604/
+permalink: /kb/284/Q284604/
 ---
 
 ## Q284604: INFO: Logging On to Exchange by Using CDO Can Create Default Fol

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264374: Motocross Madness 2: Textures Are Distorted on Windows 2000"
-permalink: kb/264/Q264374/
+permalink: /kb/264/Q264374/
 ---
 
 ## Q264374: Motocross Madness 2: Textures Are Distorted on Windows 2000

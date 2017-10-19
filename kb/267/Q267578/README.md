@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267578: Access Violation in Lsass.exe in Windows NT 4.0 in Mixed Domain"
-permalink: kb/267/Q267578/
+permalink: /kb/267/Q267578/
 ---
 
 ## Q267578: Access Violation in Lsass.exe in Windows NT 4.0 in Mixed Domain

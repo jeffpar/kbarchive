@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128230: Broderbund Software Fails with SoundBits Installed"
-permalink: kb/128/Q128230/
+permalink: /kb/128/Q128230/
 ---
 
 ## Q128230: Broderbund Software Fails with SoundBits Installed

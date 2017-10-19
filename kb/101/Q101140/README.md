@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101140: PC Adm: Deleted External User Still Shows"
-permalink: kb/101/Q101140/
+permalink: /kb/101/Q101140/
 ---
 
 ## Q101140: PC Adm: Deleted External User Still Shows

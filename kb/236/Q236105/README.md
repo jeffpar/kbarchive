@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236105: Maximum BTU Limit for Dumb SDLC Interface"
-permalink: kb/236/Q236105/
+permalink: /kb/236/Q236105/
 ---
 
 ## Q236105: Maximum BTU Limit for Dumb SDLC Interface

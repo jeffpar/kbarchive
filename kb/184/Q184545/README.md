@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184545: XADM: Error Using From: Field When Replying to Public Folder"
-permalink: kb/184/Q184545/
+permalink: /kb/184/Q184545/
 ---
 
 ## Q184545: XADM: Error Using From: Field When Replying to Public Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60838: Windows Err Msg: The Specified Path Is Invalid"
-permalink: kb/060/Q60838/
+permalink: /kb/060/Q60838/
 ---
 
 ## Q60838: Windows Err Msg: The Specified Path Is Invalid

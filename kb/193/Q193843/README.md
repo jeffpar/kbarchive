@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193843: Demand Dial Fails to Connect When Using Two-Way Authentication"
-permalink: kb/193/Q193843/
+permalink: /kb/193/Q193843/
 ---
 
 ## Q193843: Demand Dial Fails to Connect When Using Two-Way Authentication

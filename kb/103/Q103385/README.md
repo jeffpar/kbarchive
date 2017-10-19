@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103385: PC Forms: Word for Windows Left Running After Installation"
-permalink: kb/103/Q103385/
+permalink: /kb/103/Q103385/
 ---
 
 ## Q103385: PC Forms: Word for Windows Left Running After Installation

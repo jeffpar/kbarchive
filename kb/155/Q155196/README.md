@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155196: HOWTO: Use #pragma to Generate User-Defined Warning Messages"
-permalink: kb/155/Q155196/
+permalink: /kb/155/Q155196/
 ---
 
 ## Q155196: HOWTO: Use #pragma to Generate User-Defined Warning Messages

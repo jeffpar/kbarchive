@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88296: LANtastic Server Causes Communications Slow Down"
-permalink: kb/088/Q88296/
+permalink: /kb/088/Q88296/
 ---
 
 ## Q88296: LANtastic Server Causes Communications Slow Down

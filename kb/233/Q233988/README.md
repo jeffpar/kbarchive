@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233988: WD97: Word Hangs with DocProperty &quot;Characters&quot; Field in Header"
-permalink: kb/233/Q233988/
+permalink: /kb/233/Q233988/
 ---
 
 ## Q233988: WD97: Word Hangs with DocProperty &quot;Characters&quot; Field in Header

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192447: WD97: Errors Opening Files in a Map Root of a Novell 4.11 Server"
-permalink: kb/192/Q192447/
+permalink: /kb/192/Q192447/
 ---
 
 ## Q192447: WD97: Errors Opening Files in a Map Root of a Novell 4.11 Server

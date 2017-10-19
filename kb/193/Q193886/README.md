@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193886: How to Index Physical Roots"
-permalink: kb/193/Q193886/
+permalink: /kb/193/Q193886/
 ---
 
 ## Q193886: How to Index Physical Roots

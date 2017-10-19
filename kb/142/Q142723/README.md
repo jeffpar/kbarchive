@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142723: Windows NT Server Management Tools Not Working in Windows 95"
-permalink: kb/142/Q142723/
+permalink: /kb/142/Q142723/
 ---
 
 ## Q142723: Windows NT Server Management Tools Not Working in Windows 95

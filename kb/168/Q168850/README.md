@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168850: BUG: MDIChild Form Not Brought to Front with Show Method"
-permalink: kb/168/Q168850/
+permalink: /kb/168/Q168850/
 ---
 
 ## Q168850: BUG: MDIChild Form Not Brought to Front with Show Method

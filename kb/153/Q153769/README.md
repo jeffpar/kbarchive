@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153769: XCLN: How to Automatically Import Holidays into Schedule+ 7.0"
-permalink: kb/153/Q153769/
+permalink: /kb/153/Q153769/
 ---
 
 ## Q153769: XCLN: How to Automatically Import Holidays into Schedule+ 7.0

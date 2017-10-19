@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228715: XFOR: Notes Connector Crashes When Converting Trace Messages"
-permalink: kb/228/Q228715/
+permalink: /kb/228/Q228715/
 ---
 
 ## Q228715: XFOR: Notes Connector Crashes When Converting Trace Messages

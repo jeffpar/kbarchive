@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170793: PPT7: Error Editing PowerPoint File Type in Windows Explorer"
-permalink: kb/170/Q170793/
+permalink: /kb/170/Q170793/
 ---
 
 ## Q170793: PPT7: Error Editing PowerPoint File Type in Windows Explorer

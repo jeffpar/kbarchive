@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146516: XCLN: Richedit Max Chars Allowed Does Not Recognize Zero"
-permalink: kb/146/Q146516/
+permalink: /kb/146/Q146516/
 ---
 
 ## Q146516: XCLN: Richedit Max Chars Allowed Does Not Recognize Zero

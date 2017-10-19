@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313953: ENC: Err Msg Referencing Enc200&lt;x&gt;.exe and Rssapi10.dll"
-permalink: kb/313/Q313953/
+permalink: /kb/313/Q313953/
 ---
 
 ## Q313953: ENC: Err Msg Referencing Enc200&lt;x&gt;.exe and Rssapi10.dll

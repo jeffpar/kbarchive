@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152982: XCLN: Changing the Directory for Adding and Saving Attachments"
-permalink: kb/152/Q152982/
+permalink: /kb/152/Q152982/
 ---
 
 ## Q152982: XCLN: Changing the Directory for Adding and Saving Attachments

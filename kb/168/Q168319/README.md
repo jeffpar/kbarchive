@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168319: XADM: No Instances Tab in Public Information Store"
-permalink: kb/168/Q168319/
+permalink: /kb/168/Q168319/
 ---
 
 ## Q168319: XADM: No Instances Tab in Public Information Store

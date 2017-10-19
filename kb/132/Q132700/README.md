@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132700: Multimedia: Programs Do Not Start Minimized in Windows"
-permalink: kb/132/Q132700/
+permalink: /kb/132/Q132700/
 ---
 
 ## Q132700: Multimedia: Programs Do Not Start Minimized in Windows

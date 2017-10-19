@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138651: How to Exclude or Include Vfp300.esl File from Compression"
-permalink: kb/138/Q138651/
+permalink: /kb/138/Q138651/
 ---
 
 ## Q138651: How to Exclude or Include Vfp300.esl File from Compression

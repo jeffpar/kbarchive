@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198552: Windows NT Load Balancing Service Cluster Is Not Load Balancing"
-permalink: kb/198/Q198552/
+permalink: /kb/198/Q198552/
 ---
 
 ## Q198552: Windows NT Load Balancing Service Cluster Is Not Load Balancing

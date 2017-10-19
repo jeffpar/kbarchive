@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241365: XCON: PAB Address Parenthesis in DDA Converted to 040 &amp; 041"
-permalink: kb/241/Q241365/
+permalink: /kb/241/Q241365/
 ---
 
 ## Q241365: XCON: PAB Address Parenthesis in DDA Converted to 040 &amp; 041

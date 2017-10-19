@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262942: SMS: LSM Is Unable to Uninstall When SMS Sites Share a Domain"
-permalink: kb/262/Q262942/
+permalink: /kb/262/Q262942/
 ---
 
 ## Q262942: SMS: LSM Is Unable to Uninstall When SMS Sites Share a Domain

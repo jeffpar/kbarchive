@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157160: HOWTO: Provide Edit Menu Functions in a Top-Level Form"
-permalink: kb/157/Q157160/
+permalink: /kb/157/Q157160/
 ---
 
 ## Q157160: HOWTO: Provide Edit Menu Functions in a Top-Level Form

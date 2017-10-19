@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146556: XFOR: Method Used by IMS to Obtain IP Address"
-permalink: kb/146/Q146556/
+permalink: /kb/146/Q146556/
 ---
 
 ## Q146556: XFOR: Method Used by IMS to Obtain IP Address

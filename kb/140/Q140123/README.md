@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140123: Using ISDN Terminal Adapters in Windows 95"
-permalink: kb/140/Q140123/
+permalink: /kb/140/Q140123/
 ---
 
 ## Q140123: Using ISDN Terminal Adapters in Windows 95

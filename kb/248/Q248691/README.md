@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248691: INFO: DDUPD Takes Data Folder Rather Than Srcsafe.ini on Command"
-permalink: kb/248/Q248691/
+permalink: /kb/248/Q248691/
 ---
 
 ## Q248691: INFO: DDUPD Takes Data Folder Rather Than Srcsafe.ini on Command

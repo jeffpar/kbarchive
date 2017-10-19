@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188639: XADM: Dr. Watson When Installing 5.0 into 5.5 Site w/INS"
-permalink: kb/188/Q188639/
+permalink: /kb/188/Q188639/
 ---
 
 ## Q188639: XADM: Dr. Watson When Installing 5.0 into 5.5 Site w/INS

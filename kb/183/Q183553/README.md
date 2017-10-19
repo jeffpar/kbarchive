@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183553: OLE DB Hangs Trying to Access Field Over 32,745 Bytes Long"
-permalink: kb/183/Q183553/
+permalink: /kb/183/Q183553/
 ---
 
 ## Q183553: OLE DB Hangs Trying to Access Field Over 32,745 Bytes Long

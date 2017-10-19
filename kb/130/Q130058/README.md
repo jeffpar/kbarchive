@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130058: Language-Independent Way to Update the Startup Group"
-permalink: kb/130/Q130058/
+permalink: /kb/130/Q130058/
 ---
 
 ## Q130058: Language-Independent Way to Update the Startup Group

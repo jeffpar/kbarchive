@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316974: Crimson Skies: Err Msg: Crimson Skies Requires a Sound Card..."
-permalink: kb/316/Q316974/
+permalink: /kb/316/Q316974/
 ---
 
 ## Q316974: Crimson Skies: Err Msg: Crimson Skies Requires a Sound Card...

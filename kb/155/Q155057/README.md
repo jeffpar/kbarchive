@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155057: ScanLogicalLocksByName Supported in FPNW with Service Pack 5"
-permalink: kb/155/Q155057/
+permalink: /kb/155/Q155057/
 ---
 
 ## Q155057: ScanLogicalLocksByName Supported in FPNW with Service Pack 5

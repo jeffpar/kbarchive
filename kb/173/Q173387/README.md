@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173387: PRB: Restoring an Archive of an Entire Database"
-permalink: kb/173/Q173387/
+permalink: /kb/173/Q173387/
 ---
 
 ## Q173387: PRB: Restoring an Archive of an Entire Database

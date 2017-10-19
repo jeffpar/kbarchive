@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172122: Toshiba I586 Pro 230 MHz System and the National 307 Chip"
-permalink: kb/172/Q172122/
+permalink: /kb/172/Q172122/
 ---
 
 ## Q172122: Toshiba I586 Pro 230 MHz System and the National 307 Chip

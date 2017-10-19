@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96308: Mac Srv: Force Quit of Server as Application Doesn't Work"
-permalink: kb/096/Q96308/
+permalink: /kb/096/Q96308/
 ---
 
 ## Q96308: Mac Srv: Force Quit of Server as Application Doesn't Work

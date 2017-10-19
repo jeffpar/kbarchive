@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236110: OLE DB for DB2 Provider Hangs on Non-Trusted Windows 95/98"
-permalink: kb/236/Q236110/
+permalink: /kb/236/Q236110/
 ---
 
 ## Q236110: OLE DB for DB2 Provider Hangs on Non-Trusted Windows 95/98

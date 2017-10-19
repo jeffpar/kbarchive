@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238325: AC: Unable to Connect to Game Server When Using NAT or ICS"
-permalink: kb/238/Q238325/
+permalink: /kb/238/Q238325/
 ---
 
 ## Q238325: AC: Unable to Connect to Game Server When Using NAT or ICS

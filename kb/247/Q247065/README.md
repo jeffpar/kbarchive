@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247065: Err Msg: System Process Lost Delayed-Write Data"
-permalink: kb/247/Q247065/
+permalink: /kb/247/Q247065/
 ---
 
 ## Q247065: Err Msg: System Process Lost Delayed-Write Data

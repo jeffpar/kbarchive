@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88194: Can't Create Swap Files on SYDOS Removable Hard Drives"
-permalink: kb/088/Q88194/
+permalink: /kb/088/Q88194/
 ---
 
 ## Q88194: Can't Create Swap Files on SYDOS Removable Hard Drives

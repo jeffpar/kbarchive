@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170749: INFO: What Window Position Values in Some INI Variables Mean"
-permalink: kb/170/Q170749/
+permalink: /kb/170/Q170749/
 ---
 
 ## Q170749: INFO: What Window Position Values in Some INI Variables Mean

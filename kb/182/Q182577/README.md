@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182577: Dynamic Definition of Dependent APPC LUs Doesn't Work Properly"
-permalink: kb/182/Q182577/
+permalink: /kb/182/Q182577/
 ---
 
 ## Q182577: Dynamic Definition of Dependent APPC LUs Doesn't Work Properly

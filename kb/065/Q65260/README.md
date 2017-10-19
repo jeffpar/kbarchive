@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65260: INFO: The Windows Developer's Notes"
-permalink: kb/065/Q65260/
+permalink: /kb/065/Q65260/
 ---
 
 ## Q65260: INFO: The Windows Developer's Notes

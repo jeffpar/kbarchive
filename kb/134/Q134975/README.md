@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134975: Multimedia Options Unavailable with CrystalWare Sound Card"
-permalink: kb/134/Q134975/
+permalink: /kb/134/Q134975/
 ---
 
 ## Q134975: Multimedia Options Unavailable with CrystalWare Sound Card

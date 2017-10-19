@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96417: Mac GW: Incompatibility Between GW and Cache Switch"
-permalink: kb/096/Q96417/
+permalink: /kb/096/Q96417/
 ---
 
 ## Q96417: Mac GW: Incompatibility Between GW and Cache Switch

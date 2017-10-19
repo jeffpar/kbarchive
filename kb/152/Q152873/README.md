@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152873: XFOR: Command Line Migration Crashes With no FldOwner Entry"
-permalink: kb/152/Q152873/
+permalink: /kb/152/Q152873/
 ---
 
 ## Q152873: XFOR: Command Line Migration Crashes With no FldOwner Entry

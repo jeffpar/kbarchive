@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215059: SMS: Status Messages Stop Processing and Don't Appear In Status"
-permalink: kb/215/Q215059/
+permalink: /kb/215/Q215059/
 ---
 
 ## Q215059: SMS: Status Messages Stop Processing and Don't Appear In Status

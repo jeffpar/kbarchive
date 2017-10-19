@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185951: Security Fix Prevents Account Operators from Managing Accounts"
-permalink: kb/185/Q185951/
+permalink: /kb/185/Q185951/
 ---
 
 ## Q185951: Security Fix Prevents Account Operators from Managing Accounts

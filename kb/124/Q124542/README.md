@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124542: Service Logged On w/ User Account Able to Interact with Desktop"
-permalink: kb/124/Q124542/
+permalink: /kb/124/Q124542/
 ---
 
 ## Q124542: Service Logged On w/ User Account Able to Interact with Desktop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247359: BUG: WindowList Menu Does Not Always Show MDIChild Forms"
-permalink: kb/247/Q247359/
+permalink: /kb/247/Q247359/
 ---
 
 ## Q247359: BUG: WindowList Menu Does Not Always Show MDIChild Forms

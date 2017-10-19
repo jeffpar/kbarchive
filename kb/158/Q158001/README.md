@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158001: STL Sample for the partial_sort Function"
-permalink: kb/158/Q158001/
+permalink: /kb/158/Q158001/
 ---
 
 ## Q158001: STL Sample for the partial_sort Function

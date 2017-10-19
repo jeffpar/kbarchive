@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138345: PRB: Error &quot;File &lt;filename&gt; Not Found&quot; When Adding Files"
-permalink: kb/138/Q138345/
+permalink: /kb/138/Q138345/
 ---
 
 ## Q138345: PRB: Error &quot;File &lt;filename&gt; Not Found&quot; When Adding Files

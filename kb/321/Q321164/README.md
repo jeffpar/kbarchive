@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321164: XADM: You Can't Administer KMS &amp; Event IDs 5258/5257 Are Logged"
-permalink: kb/321/Q321164/
+permalink: /kb/321/Q321164/
 ---
 
 ## Q321164: XADM: You Can't Administer KMS &amp; Event IDs 5258/5257 Are Logged

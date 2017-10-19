@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210167: INFO: Customizing Dynamic Collections"
-permalink: kb/210/Q210167/
+permalink: /kb/210/Q210167/
 ---
 
 ## Q210167: INFO: Customizing Dynamic Collections

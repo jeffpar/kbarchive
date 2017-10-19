@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120606: BUG: Path Name Greater Than 256 Characters May Cause Errors"
-permalink: kb/120/Q120606/
+permalink: /kb/120/Q120606/
 ---
 
 ## Q120606: BUG: Path Name Greater Than 256 Characters May Cause Errors

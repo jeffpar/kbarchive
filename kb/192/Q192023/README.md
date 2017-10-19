@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192023: XFOR: Generating Unique SMTP Address During Dirsync"
-permalink: kb/192/Q192023/
+permalink: /kb/192/Q192023/
 ---
 
 ## Q192023: XFOR: Generating Unique SMTP Address During Dirsync

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173841: How to Perform an Unattended Installation of the NT 4.0 ResKit"
-permalink: kb/173/Q173841/
+permalink: /kb/173/Q173841/
 ---
 
 ## Q173841: How to Perform an Unattended Installation of the NT 4.0 ResKit

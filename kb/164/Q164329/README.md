@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164329: SMS: System Fails to Restart After Applying Windows NT 4.0 SP2"
-permalink: kb/164/Q164329/
+permalink: /kb/164/Q164329/
 ---
 
 ## Q164329: SMS: System Fails to Restart After Applying Windows NT 4.0 SP2

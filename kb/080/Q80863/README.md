@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80863: Limiting Simultaneous Users of an Application"
-permalink: kb/080/Q80863/
+permalink: /kb/080/Q80863/
 ---
 
 ## Q80863: Limiting Simultaneous Users of an Application

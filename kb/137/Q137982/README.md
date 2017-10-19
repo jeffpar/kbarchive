@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137982: Settings for Canon BubbleJet Not Maintained During Upgrade"
-permalink: kb/137/Q137982/
+permalink: /kb/137/Q137982/
 ---
 
 ## Q137982: Settings for Canon BubbleJet Not Maintained During Upgrade

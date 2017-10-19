@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193033: Troubleshooting IPX Connectivity"
-permalink: kb/193/Q193033/
+permalink: /kb/193/Q193033/
 ---
 
 ## Q193033: Troubleshooting IPX Connectivity

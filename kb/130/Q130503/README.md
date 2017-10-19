@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130503: PRB: Grid Width and Height Decimal Values Not Saved"
-permalink: kb/130/Q130503/
+permalink: /kb/130/Q130503/
 ---
 
 ## Q130503: PRB: Grid Width and Height Decimal Values Not Saved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201509: BUG: Textbox Can Be Sized To Less Than Minimum Height"
-permalink: kb/201/Q201509/
+permalink: /kb/201/Q201509/
 ---
 
 ## Q201509: BUG: Textbox Can Be Sized To Less Than Minimum Height

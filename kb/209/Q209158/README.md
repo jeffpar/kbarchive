@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209158: Combat Flight Simulator: Stuka Dive Bomber Classified as Fighter"
-permalink: kb/209/Q209158/
+permalink: /kb/209/Q209158/
 ---
 
 ## Q209158: Combat Flight Simulator: Stuka Dive Bomber Classified as Fighter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156357: Windows NT Pauses During Startup with Adaptec 1542CP"
-permalink: kb/156/Q156357/
+permalink: /kb/156/Q156357/
 ---
 
 ## Q156357: Windows NT Pauses During Startup with Adaptec 1542CP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134905: SNA Server and 2012 System Log Errors"
-permalink: kb/134/Q134905/
+permalink: /kb/134/Q134905/
 ---
 
 ## Q134905: SNA Server and 2012 System Log Errors

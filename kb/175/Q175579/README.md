@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175579: XFOR: Systems Using Addresses with DDATYPE=MSXCX500, Will NDR"
-permalink: kb/175/Q175579/
+permalink: /kb/175/Q175579/
 ---
 
 ## Q175579: XFOR: Systems Using Addresses with DDATYPE=MSXCX500, Will NDR

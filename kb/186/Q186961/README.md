@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186961: WD97: Hyperlink to Bookmark Fails in Word Document Using Browser"
-permalink: kb/186/Q186961/
+permalink: /kb/186/Q186961/
 ---
 
 ## Q186961: WD97: Hyperlink to Bookmark Fails in Word Document Using Browser

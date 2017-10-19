@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217044: SMS: Server Uninstall Doesn't Remove All Components"
-permalink: kb/217/Q217044/
+permalink: /kb/217/Q217044/
 ---
 
 ## Q217044: SMS: Server Uninstall Doesn't Remove All Components

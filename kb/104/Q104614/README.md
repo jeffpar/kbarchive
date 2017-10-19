@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104614: Arcade: Description of Tempest"
-permalink: kb/104/Q104614/
+permalink: /kb/104/Q104614/
 ---
 
 ## Q104614: Arcade: Description of Tempest

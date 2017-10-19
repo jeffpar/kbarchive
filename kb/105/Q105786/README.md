@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105786: SFM: Deleted User Accounts Not Aged Out of Cache"
-permalink: kb/105/Q105786/
+permalink: /kb/105/Q105786/
 ---
 
 ## Q105786: SFM: Deleted User Accounts Not Aged Out of Cache

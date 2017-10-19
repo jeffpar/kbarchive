@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148611: BUG: Unable to Load the Format Editor from Developer Studio"
-permalink: kb/148/Q148611/
+permalink: /kb/148/Q148611/
 ---
 
 ## Q148611: BUG: Unable to Load the Format Editor from Developer Studio

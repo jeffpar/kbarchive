@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134530: Error Message: VGASWAP VDD Control Hook Recursion"
-permalink: kb/134/Q134530/
+permalink: /kb/134/Q134530/
 ---
 
 ## Q134530: Error Message: VGASWAP VDD Control Hook Recursion

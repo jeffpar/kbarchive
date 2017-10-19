@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92621: Err Msg: There Are One or More User or Voice Data Files..."
-permalink: kb/092/Q92621/
+permalink: /kb/092/Q92621/
 ---
 
 ## Q92621: Err Msg: There Are One or More User or Voice Data Files...

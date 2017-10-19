@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103379: PC Adm: How to Create Groups Spanning Multiple Postoffices"
-permalink: kb/103/Q103379/
+permalink: /kb/103/Q103379/
 ---
 
 ## Q103379: PC Adm: How to Create Groups Spanning Multiple Postoffices

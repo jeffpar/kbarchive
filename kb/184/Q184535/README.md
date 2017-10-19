@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184535: XADM: Removing a Site from an Organization"
-permalink: kb/184/Q184535/
+permalink: /kb/184/Q184535/
 ---
 
 ## Q184535: XADM: Removing a Site from an Organization

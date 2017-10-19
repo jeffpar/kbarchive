@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193420: XFOR: Exchange Notes Connector Hangs If Trace Message Enabled"
-permalink: kb/193/Q193420/
+permalink: /kb/193/Q193420/
 ---
 
 ## Q193420: XFOR: Exchange Notes Connector Hangs If Trace Message Enabled

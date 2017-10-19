@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234636: Server Service Does Not Start on Standalone Workstation"
-permalink: kb/234/Q234636/
+permalink: /kb/234/Q234636/
 ---
 
 ## Q234636: Server Service Does Not Start on Standalone Workstation

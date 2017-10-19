@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120138: Errors Creating Files or Folders in the Root Directory"
-permalink: kb/120/Q120138/
+permalink: /kb/120/Q120138/
 ---
 
 ## Q120138: Errors Creating Files or Folders in the Root Directory

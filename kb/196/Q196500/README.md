@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196500: New Registry Value to Disable DNR Local Network Priority Sorting"
-permalink: kb/196/Q196500/
+permalink: /kb/196/Q196500/
 ---
 
 ## Q196500: New Registry Value to Disable DNR Local Network Priority Sorting

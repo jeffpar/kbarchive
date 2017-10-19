@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185111: FP: Error Publishing FrontPage Web Using Web Publishing Wizard"
-permalink: kb/185/Q185111/
+permalink: /kb/185/Q185111/
 ---
 
 ## Q185111: FP: Error Publishing FrontPage Web Using Web Publishing Wizard

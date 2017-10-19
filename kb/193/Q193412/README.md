@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193412: PDF Files Do Not Index after Adobe Filter Is Installed"
-permalink: kb/193/Q193412/
+permalink: /kb/193/Q193412/
 ---
 
 ## Q193412: PDF Files Do Not Index after Adobe Filter Is Installed

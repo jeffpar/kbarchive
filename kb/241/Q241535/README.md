@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241535: Updated Support for MSAA Features in Windows NT 4.0 SP6"
-permalink: kb/241/Q241535/
+permalink: /kb/241/Q241535/
 ---
 
 ## Q241535: Updated Support for MSAA Features in Windows NT 4.0 SP6

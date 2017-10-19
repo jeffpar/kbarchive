@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90335: Cannot Find HOME Directory Share on IBM LAN Server"
-permalink: kb/090/Q90335/
+permalink: /kb/090/Q90335/
 ---
 
 ## Q90335: Cannot Find HOME Directory Share on IBM LAN Server

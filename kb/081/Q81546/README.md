@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81546: PRB: Segment Was Discardable Under 3.0 Notification"
-permalink: kb/081/Q81546/
+permalink: /kb/081/Q81546/
 ---
 
 ## Q81546: PRB: Segment Was Discardable Under 3.0 Notification

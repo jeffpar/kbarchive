@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131341: ADT/ODE: Setup Wizard Error Creating Disk Images with ADT or ODE"
-permalink: kb/131/Q131341/
+permalink: /kb/131/Q131341/
 ---
 
 ## Q131341: ADT/ODE: Setup Wizard Error Creating Disk Images with ADT or ODE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275469: APPC Load Balancing May Fail to Choose &quot;Best&quot; SNA Server"
-permalink: kb/275/Q275469/
+permalink: /kb/275/Q275469/
 ---
 
 ## Q275469: APPC Load Balancing May Fail to Choose &quot;Best&quot; SNA Server

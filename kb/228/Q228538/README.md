@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228538: STOP 0x1E in Rdr.sys When DormantFileLimit Set to 0"
-permalink: kb/228/Q228538/
+permalink: /kb/228/Q228538/
 ---
 
 ## Q228538: STOP 0x1E in Rdr.sys When DormantFileLimit Set to 0

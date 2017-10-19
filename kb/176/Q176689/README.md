@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176689: RRAS Requires Hotfix Update When Using Proxy 2.0"
-permalink: kb/176/Q176689/
+permalink: /kb/176/Q176689/
 ---
 
 ## Q176689: RRAS Requires Hotfix Update When Using Proxy 2.0

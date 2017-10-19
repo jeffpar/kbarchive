@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230497: XCON: MTA Sends NDR: Message Transfer Service Congestion"
-permalink: kb/230/Q230497/
+permalink: /kb/230/Q230497/
 ---
 
 ## Q230497: XCON: MTA Sends NDR: Message Transfer Service Congestion

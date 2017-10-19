@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253867: XFOR: URL Links Not Active When HTML Message Routed to Notes"
-permalink: kb/253/Q253867/
+permalink: /kb/253/Q253867/
 ---
 
 ## Q253867: XFOR: URL Links Not Active When HTML Message Routed to Notes

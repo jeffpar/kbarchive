@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248664: XFOR: Cannot Reply All to SMTP Reply Received from Notes R5 User"
-permalink: kb/248/Q248664/
+permalink: /kb/248/Q248664/
 ---
 
 ## Q248664: XFOR: Cannot Reply All to SMTP Reply Received from Notes R5 User

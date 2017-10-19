@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153584: SMS: Data Loader Uses UPDATE STATISTICS Command Multiple Times"
-permalink: kb/153/Q153584/
+permalink: /kb/153/Q153584/
 ---
 
 ## Q153584: SMS: Data Loader Uses UPDATE STATISTICS Command Multiple Times

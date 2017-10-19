@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168318: XADM: Guidgen.exe Available Only for Intel Platforms"
-permalink: kb/168/Q168318/
+permalink: /kb/168/Q168318/
 ---
 
 ## Q168318: XADM: Guidgen.exe Available Only for Intel Platforms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93088: NCR Wavelan Requires MediaType=Ethernet_II for Novell in WFWG"
-permalink: kb/093/Q93088/
+permalink: /kb/093/Q93088/
 ---
 
 ## Q93088: NCR Wavelan Requires MediaType=Ethernet_II for Novell in WFWG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153572: SMSRUNxx Doesn't Support Redirectors Returning a Null Username"
-permalink: kb/153/Q153572/
+permalink: /kb/153/Q153572/
 ---
 
 ## Q153572: SMSRUNxx Doesn't Support Redirectors Returning a Null Username

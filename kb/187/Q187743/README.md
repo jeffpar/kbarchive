@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187743: PRB: Right Mouse with Manual OLE D&amp;D Disables Left Mouse"
-permalink: kb/187/Q187743/
+permalink: /kb/187/Q187743/
 ---
 
 ## Q187743: PRB: Right Mouse with Manual OLE D&amp;D Disables Left Mouse

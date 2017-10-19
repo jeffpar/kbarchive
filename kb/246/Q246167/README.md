@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246167: PRB: Collating Sequence Error Opening XLS as ADO Recordset"
-permalink: kb/246/Q246167/
+permalink: /kb/246/Q246167/
 ---
 
 ## Q246167: PRB: Collating Sequence Error Opening XLS as ADO Recordset

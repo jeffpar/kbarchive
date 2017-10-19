@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190902: HOWTO: Locate Files Cited By Help Topic AddLabel"
-permalink: kb/190/Q190902/
+permalink: /kb/190/Q190902/
 ---
 
 ## Q190902: HOWTO: Locate Files Cited By Help Topic AddLabel

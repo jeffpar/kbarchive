@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313949: Encarta 2001: Msg: An Encarta Product(s) Is Running"
-permalink: kb/313/Q313949/
+permalink: /kb/313/Q313949/
 ---
 
 ## Q313949: Encarta 2001: Msg: An Encarta Product(s) Is Running

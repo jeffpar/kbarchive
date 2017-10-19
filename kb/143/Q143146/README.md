@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143146: Error Msg: &quot;This FTP Server Does Not Support Passive Mode&quot;"
-permalink: kb/143/Q143146/
+permalink: /kb/143/Q143146/
 ---
 
 ## Q143146: Error Msg: &quot;This FTP Server Does Not Support Passive Mode&quot;

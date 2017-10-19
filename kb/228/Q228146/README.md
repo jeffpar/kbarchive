@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228146: Moving from Corporate WAN to Home LAN Causes Validation Problems"
-permalink: kb/228/Q228146/
+permalink: /kb/228/Q228146/
 ---
 
 ## Q228146: Moving from Corporate WAN to Home LAN Causes Validation Problems

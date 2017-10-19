@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131119: Compilers Supported by Visual FoxPro LCK"
-permalink: kb/131/Q131119/
+permalink: /kb/131/Q131119/
 ---
 
 ## Q131119: Compilers Supported by Visual FoxPro LCK

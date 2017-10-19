@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247079: XCLN: Create PFs and Set Default Properties on Subfolders"
-permalink: kb/247/Q247079/
+permalink: /kb/247/Q247079/
 ---
 
 ## Q247079: XCLN: Create PFs and Set Default Properties on Subfolders

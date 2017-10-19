@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162253: FIX: Form Builder Form Causes Illegal Operation"
-permalink: kb/162/Q162253/
+permalink: /kb/162/Q162253/
 ---
 
 ## Q162253: FIX: Form Builder Form Causes Illegal Operation

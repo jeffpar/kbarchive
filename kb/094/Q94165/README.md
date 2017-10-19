@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94165: Printing Problems at DOS after Using the OKI24.DRV in Windows"
-permalink: kb/094/Q94165/
+permalink: /kb/094/Q94165/
 ---
 
 ## Q94165: Printing Problems at DOS after Using the OKI24.DRV in Windows

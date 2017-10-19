@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107865: Preventing Windows NT Clients from Installing SNA Admin"
-permalink: kb/107/Q107865/
+permalink: /kb/107/Q107865/
 ---
 
 ## Q107865: Preventing Windows NT Clients from Installing SNA Admin

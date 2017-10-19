@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181855: HOWTO: Create HotKey to Start EXE in Windows 95 or Windows NT"
-permalink: kb/181/Q181855/
+permalink: /kb/181/Q181855/
 ---
 
 ## Q181855: HOWTO: Create HotKey to Start EXE in Windows 95 or Windows NT

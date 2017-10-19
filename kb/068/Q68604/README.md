@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68604: Mac Wkst: Mail Recipients on Server List Appear in Italics"
-permalink: kb/068/Q68604/
+permalink: /kb/068/Q68604/
 ---
 
 ## Q68604: Mac Wkst: Mail Recipients on Server List Appear in Italics

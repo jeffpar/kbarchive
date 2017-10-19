@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84851: Windows 3.1 Not Compatible with TenTimes Partitioning Method"
-permalink: kb/084/Q84851/
+permalink: /kb/084/Q84851/
 ---
 
 ## Q84851: Windows 3.1 Not Compatible with TenTimes Partitioning Method

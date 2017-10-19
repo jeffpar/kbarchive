@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145726: BUG: Setting FontTransparent Has No Effect on Windows 95/98/Me"
-permalink: kb/145/Q145726/
+permalink: /kb/145/Q145726/
 ---
 
 ## Q145726: BUG: Setting FontTransparent Has No Effect on Windows 95/98/Me

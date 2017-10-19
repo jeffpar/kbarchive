@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276200: BUG: ADO Application May Hang When Using OLE DB Provider for DB2"
-permalink: kb/276/Q276200/
+permalink: /kb/276/Q276200/
 ---
 
 ## Q276200: BUG: ADO Application May Hang When Using OLE DB Provider for DB2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313559: HOW TO: Install and Use the Web Application Stress (WAS) Tool"
-permalink: kb/313/Q313559/
+permalink: /kb/313/Q313559/
 ---
 
 ## Q313559: HOW TO: Install and Use the Web Application Stress (WAS) Tool

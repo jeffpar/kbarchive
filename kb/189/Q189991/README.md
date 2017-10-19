@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189991: PRB: Error Setting DateTimePicker's Month Programmatically"
-permalink: kb/189/Q189991/
+permalink: /kb/189/Q189991/
 ---
 
 ## Q189991: PRB: Error Setting DateTimePicker's Month Programmatically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177262: FS98: List of Video Codecs Installed by the Indeo4 Setup Program"
-permalink: kb/177/Q177262/
+permalink: /kb/177/Q177262/
 ---
 
 ## Q177262: FS98: List of Video Codecs Installed by the Indeo4 Setup Program

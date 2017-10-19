@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216653: XADM: Certificate Server is Exclusive to Exchange Advanced Secur"
-permalink: kb/216/Q216653/
+permalink: /kb/216/Q216653/
 ---
 
 ## Q216653: XADM: Certificate Server is Exclusive to Exchange Advanced Secur

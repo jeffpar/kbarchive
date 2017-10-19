@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199792: DNS Event IDs 2000 Through 9999 for Windows NT 4.0 SP4"
-permalink: kb/199/Q199792/
+permalink: /kb/199/Q199792/
 ---
 
 ## Q199792: DNS Event IDs 2000 Through 9999 for Windows NT 4.0 SP4

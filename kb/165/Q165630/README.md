@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165630: ODE97: Files Added to the Disk Images by the ODE Setup Wizard"
-permalink: kb/165/Q165630/
+permalink: /kb/165/Q165630/
 ---
 
 ## Q165630: ODE97: Files Added to the Disk Images by the ODE Setup Wizard

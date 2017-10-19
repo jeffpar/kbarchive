@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239719: INFO: Support Limits of MS Oracle ODBC Driver/OLEDB Provider"
-permalink: kb/239/Q239719/
+permalink: /kb/239/Q239719/
 ---
 
 ## Q239719: INFO: Support Limits of MS Oracle ODBC Driver/OLEDB Provider

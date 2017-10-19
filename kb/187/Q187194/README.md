@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187194: Published Application Session Does Not Offer Logoff"
-permalink: kb/187/Q187194/
+permalink: /kb/187/Q187194/
 ---
 
 ## Q187194: Published Application Session Does Not Offer Logoff

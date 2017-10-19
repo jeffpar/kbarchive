@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134636: List of Error Messages That Have Changed in Visual FoxPro"
-permalink: kb/134/Q134636/
+permalink: /kb/134/Q134636/
 ---
 
 ## Q134636: List of Error Messages That Have Changed in Visual FoxPro

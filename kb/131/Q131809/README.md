@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131809: The Microsoft Network Puts Files in Cache Folder"
-permalink: kb/131/Q131809/
+permalink: /kb/131/Q131809/
 ---
 
 ## Q131809: The Microsoft Network Puts Files in Cache Folder

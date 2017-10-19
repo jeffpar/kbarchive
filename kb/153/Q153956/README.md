@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153956: System Performance Degrades w/ 16-Bit OLE Application"
-permalink: kb/153/Q153956/
+permalink: /kb/153/Q153956/
 ---
 
 ## Q153956: System Performance Degrades w/ 16-Bit OLE Application

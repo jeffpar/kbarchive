@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251232: BUG: MFC Dockable Toolbars Do Not Paint Correctly"
-permalink: kb/251/Q251232/
+permalink: /kb/251/Q251232/
 ---
 
 ## Q251232: BUG: MFC Dockable Toolbars Do Not Paint Correctly

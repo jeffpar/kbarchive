@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161584: XADM: Err Msg: Unable to Recover the Database, Error 0xc8000713"
-permalink: kb/161/Q161584/
+permalink: /kb/161/Q161584/
 ---
 
 ## Q161584: XADM: Err Msg: Unable to Recover the Database, Error 0xc8000713

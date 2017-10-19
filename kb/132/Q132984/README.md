@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132984: Incorrect Calculator Results Using Percent Key"
-permalink: kb/132/Q132984/
+permalink: /kb/132/Q132984/
 ---
 
 ## Q132984: Incorrect Calculator Results Using Percent Key

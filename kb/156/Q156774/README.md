@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156774: PRB: Cannot Find Setup.exe Error Installing to NT 4.0"
-permalink: kb/156/Q156774/
+permalink: /kb/156/Q156774/
 ---
 
 ## Q156774: PRB: Cannot Find Setup.exe Error Installing to NT 4.0

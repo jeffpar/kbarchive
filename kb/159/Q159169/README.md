@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159169: SMS: Quick Viewer Hotkey Causes Keyboard Problems on Client"
-permalink: kb/159/Q159169/
+permalink: /kb/159/Q159169/
 ---
 
 ## Q159169: SMS: Quick Viewer Hotkey Causes Keyboard Problems on Client

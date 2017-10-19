@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191802: How to Remove Document Templates from the New Menu"
-permalink: kb/191/Q191802/
+permalink: /kb/191/Q191802/
 ---
 
 ## Q191802: How to Remove Document Templates from the New Menu

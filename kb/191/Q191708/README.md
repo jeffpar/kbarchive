@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191708: BUG: Visual FoxPro ODBC Driver May Crash Client Application"
-permalink: kb/191/Q191708/
+permalink: /kb/191/Q191708/
 ---
 
 ## Q191708: BUG: Visual FoxPro ODBC Driver May Crash Client Application

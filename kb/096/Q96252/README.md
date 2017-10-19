@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96252: Mac Srv: Unable to Start Server as Application"
-permalink: kb/096/Q96252/
+permalink: /kb/096/Q96252/
 ---
 
 ## Q96252: Mac Srv: Unable to Start Server as Application

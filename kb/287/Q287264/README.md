@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287264: Monitor Service Stops Running; Event Logs Appear"
-permalink: kb/287/Q287264/
+permalink: /kb/287/Q287264/
 ---
 
 ## Q287264: Monitor Service Stops Running; Event Logs Appear

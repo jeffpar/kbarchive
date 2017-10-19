@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71865: Requirements for UMB Support in MS-DOS 5.0"
-permalink: kb/071/Q71865/
+permalink: /kb/071/Q71865/
 ---
 
 ## Q71865: Requirements for UMB Support in MS-DOS 5.0

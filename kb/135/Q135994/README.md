@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135994: PRB: Visual SourceSafe Explorer Checks Out .FRM Without .FRX"
-permalink: kb/135/Q135994/
+permalink: /kb/135/Q135994/
 ---
 
 ## Q135994: PRB: Visual SourceSafe Explorer Checks Out .FRM Without .FRX

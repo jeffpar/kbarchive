@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229631: XFOR: InterOrg Fails to Replicate Public Folder with Backslash"
-permalink: kb/229/Q229631/
+permalink: /kb/229/Q229631/
 ---
 
 ## Q229631: XFOR: InterOrg Fails to Replicate Public Folder with Backslash

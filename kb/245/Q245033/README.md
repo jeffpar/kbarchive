@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245033: Event ID 2005 Message Occurs When You Print to a Line Printer"
-permalink: kb/245/Q245033/
+permalink: /kb/245/Q245033/
 ---
 
 ## Q245033: Event ID 2005 Message Occurs When You Print to a Line Printer

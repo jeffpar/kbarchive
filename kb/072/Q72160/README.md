@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72160: MS-DOS 5 README.TXT: Installing on OS/2 Dual-Boot System"
-permalink: kb/072/Q72160/
+permalink: /kb/072/Q72160/
 ---
 
 ## Q72160: MS-DOS 5 README.TXT: Installing on OS/2 Dual-Boot System

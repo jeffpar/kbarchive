@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184550: XCLN: Outlook Deployment Kit (ODK) Availability"
-permalink: kb/184/Q184550/
+permalink: /kb/184/Q184550/
 ---
 
 ## Q184550: XCLN: Outlook Deployment Kit (ODK) Availability

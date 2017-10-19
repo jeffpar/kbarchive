@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171000: Banyan &quot;The procedure Entry Point NtReleaseProcessMutant&quot;"
-permalink: kb/171/Q171000/
+permalink: /kb/171/Q171000/
 ---
 
 ## Q171000: Banyan &quot;The procedure Entry Point NtReleaseProcessMutant&quot;

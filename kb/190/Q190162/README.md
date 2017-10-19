@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190162: Terminal Server and the 2048 Open File Limitation"
-permalink: kb/190/Q190162/
+permalink: /kb/190/Q190162/
 ---
 
 ## Q190162: Terminal Server and the 2048 Open File Limitation

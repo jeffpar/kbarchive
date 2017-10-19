@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185629: XCLN: Displaying This Message Correctly Requires a Custom E- For"
-permalink: kb/185/Q185629/
+permalink: /kb/185/Q185629/
 ---
 
 ## Q185629: XCLN: Displaying This Message Correctly Requires a Custom E- For

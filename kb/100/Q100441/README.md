@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100441: PRB: Windows Are in Different Positions When Executable Is Run"
-permalink: kb/100/Q100441/
+permalink: /kb/100/Q100441/
 ---
 
 ## Q100441: PRB: Windows Are in Different Positions When Executable Is Run

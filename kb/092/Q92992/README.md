@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92992: Thomas Conrad 5043 May Not Emulate NE2000 Properly"
-permalink: kb/092/Q92992/
+permalink: /kb/092/Q92992/
 ---
 
 ## Q92992: Thomas Conrad 5043 May Not Emulate NE2000 Properly

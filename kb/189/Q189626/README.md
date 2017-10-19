@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189626: HOWTO: Use the Winsock Control Through a Serial Connection"
-permalink: kb/189/Q189626/
+permalink: /kb/189/Q189626/
 ---
 
 ## Q189626: HOWTO: Use the Winsock Control Through a Serial Connection

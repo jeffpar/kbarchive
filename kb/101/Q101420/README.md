@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101420: BUG: Extra CN_RECEIVE/CN_TRANSMIT Events"
-permalink: kb/101/Q101420/
+permalink: /kb/101/Q101420/
 ---
 
 ## Q101420: BUG: Extra CN_RECEIVE/CN_TRANSMIT Events

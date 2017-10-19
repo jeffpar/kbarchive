@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259338: XCLN: Private Meeting Requests Are Not Forwarded to Delegate"
-permalink: kb/259/Q259338/
+permalink: /kb/259/Q259338/
 ---
 
 ## Q259338: XCLN: Private Meeting Requests Are Not Forwarded to Delegate

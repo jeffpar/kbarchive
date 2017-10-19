@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191899: XCLN: How to Deploy Exchange 5.5 SP1 KMS Client Fixes with ODK"
-permalink: kb/191/Q191899/
+permalink: /kb/191/Q191899/
 ---
 
 ## Q191899: XCLN: How to Deploy Exchange 5.5 SP1 KMS Client Fixes with ODK

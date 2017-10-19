@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258602: XADM: Clients Cannot Reply After Exchange Server Computer Moved"
-permalink: kb/258/Q258602/
+permalink: /kb/258/Q258602/
 ---
 
 ## Q258602: XADM: Clients Cannot Reply After Exchange Server Computer Moved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242045: HOWTO: Control Line Spacing when Printing from Visual Basic"
-permalink: kb/242/Q242045/
+permalink: /kb/242/Q242045/
 ---
 
 ## Q242045: HOWTO: Control Line Spacing when Printing from Visual Basic

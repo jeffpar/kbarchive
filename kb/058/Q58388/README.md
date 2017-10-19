@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58388: Line Spacing in Windows 3.0 Write"
-permalink: kb/058/Q58388/
+permalink: /kb/058/Q58388/
 ---
 
 ## Q58388: Line Spacing in Windows 3.0 Write

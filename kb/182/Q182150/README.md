@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182150: PRB: Visual Basic 5.0 Setup Error: DAO350.DLL File In Use"
-permalink: kb/182/Q182150/
+permalink: /kb/182/Q182150/
 ---
 
 ## Q182150: PRB: Visual Basic 5.0 Setup Error: DAO350.DLL File In Use

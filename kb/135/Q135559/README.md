@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135559: PPT: Using Colors in PowerPoint"
-permalink: kb/135/Q135559/
+permalink: /kb/135/Q135559/
 ---
 
 ## Q135559: PPT: Using Colors in PowerPoint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86552: MHS: What the Gateway to MHS Does"
-permalink: kb/086/Q86552/
+permalink: /kb/086/Q86552/
 ---
 
 ## Q86552: MHS: What the Gateway to MHS Does

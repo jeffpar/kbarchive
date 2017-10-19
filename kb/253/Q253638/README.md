@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253638: XADM: Mailbox Manager Does Not Install, (80004005)"
-permalink: kb/253/Q253638/
+permalink: /kb/253/Q253638/
 ---
 
 ## Q253638: XADM: Mailbox Manager Does Not Install, (80004005)

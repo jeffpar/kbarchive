@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130839: NTFS Performance Problem with Many Files"
-permalink: kb/130/Q130839/
+permalink: /kb/130/Q130839/
 ---
 
 ## Q130839: NTFS Performance Problem with Many Files

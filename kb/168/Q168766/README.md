@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168766: FIX: Internet Transfer Control Fails on Case-Sensitive Server"
-permalink: kb/168/Q168766/
+permalink: /kb/168/Q168766/
 ---
 
 ## Q168766: FIX: Internet Transfer Control Fails on Case-Sensitive Server

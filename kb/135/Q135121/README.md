@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135121: Configuration Backup Gives Confusing Warning on Restore"
-permalink: kb/135/Q135121/
+permalink: /kb/135/Q135121/
 ---
 
 ## Q135121: Configuration Backup Gives Confusing Warning on Restore

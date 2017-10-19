@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132678: .SHD Files Not Deleted After Printing"
-permalink: kb/132/Q132678/
+permalink: /kb/132/Q132678/
 ---
 
 ## Q132678: .SHD Files Not Deleted After Printing

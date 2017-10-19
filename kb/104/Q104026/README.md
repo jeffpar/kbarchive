@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104026: PC Ext: F1 Displays Help Screen in External Mail Program"
-permalink: kb/104/Q104026/
+permalink: /kb/104/Q104026/
 ---
 
 ## Q104026: PC Ext: F1 Displays Help Screen in External Mail Program

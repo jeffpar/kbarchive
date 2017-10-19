@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101559: Microsoft Backup Err Msg: Alert! Unknown Compression of File"
-permalink: kb/101/Q101559/
+permalink: /kb/101/Q101559/
 ---
 
 ## Q101559: Microsoft Backup Err Msg: Alert! Unknown Compression of File

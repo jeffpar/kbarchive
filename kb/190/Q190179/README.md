@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190179: HOWTO: Change ProgressBar Orientation at Run-Time"
-permalink: kb/190/Q190179/
+permalink: /kb/190/Q190179/
 ---
 
 ## Q190179: HOWTO: Change ProgressBar Orientation at Run-Time

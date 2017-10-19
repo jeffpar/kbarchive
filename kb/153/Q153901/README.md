@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153901: PRB: #pragma comment(lib...) Can Specify Only Libraries"
-permalink: kb/153/Q153901/
+permalink: /kb/153/Q153901/
 ---
 
 ## Q153901: PRB: #pragma comment(lib...) Can Specify Only Libraries

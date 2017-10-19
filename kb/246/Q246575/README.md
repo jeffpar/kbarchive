@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246575: ADSI Scripts Do Not Work Between Windows 2000 and Windows NT 4.0"
-permalink: kb/246/Q246575/
+permalink: /kb/246/Q246575/
 ---
 
 ## Q246575: ADSI Scripts Do Not Work Between Windows 2000 and Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167621: WD97: Invalid Page Fault with Proofing Tools on Network"
-permalink: kb/167/Q167621/
+permalink: /kb/167/Q167621/
 ---
 
 ## Q167621: WD97: Invalid Page Fault with Proofing Tools on Network

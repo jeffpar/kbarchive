@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176688: WD97: Recorded Macro to Insert AutoText from Add-in Fails"
-permalink: kb/176/Q176688/
+permalink: /kb/176/Q176688/
 ---
 
 ## Q176688: WD97: Recorded Macro to Insert AutoText from Add-in Fails

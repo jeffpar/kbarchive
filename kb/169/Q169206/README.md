@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169206: Using TRACERT With the Loose Source Routing Option"
-permalink: kb/169/Q169206/
+permalink: /kb/169/Q169206/
 ---
 
 ## Q169206: Using TRACERT With the Loose Source Routing Option

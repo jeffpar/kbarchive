@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321124: Combat Flight Simulator 2.0: No Sound Is Played When You Fly"
-permalink: kb/321/Q321124/
+permalink: /kb/321/Q321124/
 ---
 
 ## Q321124: Combat Flight Simulator 2.0: No Sound Is Played When You Fly

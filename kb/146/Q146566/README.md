@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146566: XCLN: Info Available from the Exchange Offline Address Book"
-permalink: kb/146/Q146566/
+permalink: /kb/146/Q146566/
 ---
 
 ## Q146566: XCLN: Info Available from the Exchange Offline Address Book

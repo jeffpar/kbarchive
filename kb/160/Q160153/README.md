@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160153: XGEN: Directory Import Generates Unusable Random Password"
-permalink: kb/160/Q160153/
+permalink: /kb/160/Q160153/
 ---
 
 ## Q160153: XGEN: Directory Import Generates Unusable Random Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222570: XFOR: Access Rights Required for Notes Connector"
-permalink: kb/222/Q222570/
+permalink: /kb/222/Q222570/
 ---
 
 ## Q222570: XFOR: Access Rights Required for Notes Connector

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117810: No Sound with MediaVision Pro Audio PAS-16 CD Player"
-permalink: kb/117/Q117810/
+permalink: /kb/117/Q117810/
 ---
 
 ## Q117810: No Sound with MediaVision Pro Audio PAS-16 CD Player

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166551: XCON: MTA Fails While Rebuilding Routing Table"
-permalink: kb/166/Q166551/
+permalink: /kb/166/Q166551/
 ---
 
 ## Q166551: XCON: MTA Fails While Rebuilding Routing Table

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150953: Nwuser.exe Send Function Truncates Messages to 38 Characters"
-permalink: kb/150/Q150953/
+permalink: /kb/150/Q150953/
 ---
 
 ## Q150953: Nwuser.exe Send Function Truncates Messages to 38 Characters

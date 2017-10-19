@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265390: MapPoint 2001: Error Message When You Open File in the Briefcase"
-permalink: kb/265/Q265390/
+permalink: /kb/265/Q265390/
 ---
 
 ## Q265390: MapPoint 2001: Error Message When You Open File in the Briefcase

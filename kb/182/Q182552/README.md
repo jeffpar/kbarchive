@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182552: XADM: Exporting Secondary Windows NT Accounts"
-permalink: kb/182/Q182552/
+permalink: /kb/182/Q182552/
 ---
 
 ## Q182552: XADM: Exporting Secondary Windows NT Accounts

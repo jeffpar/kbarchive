@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234310: DirLV Sample Populates List Control Similar to Explorer"
-permalink: kb/234/Q234310/
+permalink: /kb/234/Q234310/
 ---
 
 ## Q234310: DirLV Sample Populates List Control Similar to Explorer

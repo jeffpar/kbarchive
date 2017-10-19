@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212978: SMS: Description of Preinst.exe for SMS 2.0"
-permalink: kb/212/Q212978/
+permalink: /kb/212/Q212978/
 ---
 
 ## Q212978: SMS: Description of Preinst.exe for SMS 2.0

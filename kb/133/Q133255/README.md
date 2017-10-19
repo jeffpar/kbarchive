@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133255: WFWFILES.TXT: Windows for Workgroups Update Files"
-permalink: kb/133/Q133255/
+permalink: /kb/133/Q133255/
 ---
 
 ## Q133255: WFWFILES.TXT: Windows for Workgroups Update Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199009: EVG99: Video Playback Is Choppy or Quits Before Clip Is Finished"
-permalink: kb/199/Q199009/
+permalink: /kb/199/Q199009/
 ---
 
 ## Q199009: EVG99: Video Playback Is Choppy or Quits Before Clip Is Finished

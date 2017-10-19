@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169064: WD97: Can't Convert Picture Object in Built-in Template"
-permalink: kb/169/Q169064/
+permalink: /kb/169/Q169064/
 ---
 
 ## Q169064: WD97: Can't Convert Picture Object in Built-in Template

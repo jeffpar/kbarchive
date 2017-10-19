@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140303: FIX: DBSETPROP() for DataType Gives Incorrect Results"
-permalink: kb/140/Q140303/
+permalink: /kb/140/Q140303/
 ---
 
 ## Q140303: FIX: DBSETPROP() for DataType Gives Incorrect Results

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142773: Cannot Run NDS Tools Without Running Nwadmin.exe"
-permalink: kb/142/Q142773/
+permalink: /kb/142/Q142773/
 ---
 
 ## Q142773: Cannot Run NDS Tools Without Running Nwadmin.exe

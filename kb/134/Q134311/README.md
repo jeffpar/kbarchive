@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134311: PRB: Error Type -192 on 68K Macintosh"
-permalink: kb/134/Q134311/
+permalink: /kb/134/Q134311/
 ---
 
 ## Q134311: PRB: Error Type -192 on 68K Macintosh

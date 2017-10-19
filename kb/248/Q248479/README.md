@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248479: Host Account Database Location for Single Sign-On"
-permalink: kb/248/Q248479/
+permalink: /kb/248/Q248479/
 ---
 
 ## Q248479: Host Account Database Location for Single Sign-On

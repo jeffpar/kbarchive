@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161179: WinSock Zero-Length Packet Not Sent on Network"
-permalink: kb/161/Q161179/
+permalink: /kb/161/Q161179/
 ---
 
 ## Q161179: WinSock Zero-Length Packet Not Sent on Network

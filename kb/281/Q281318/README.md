@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281318: Unattended Installation Of Windows 2000 Resource Kits To A Custo"
-permalink: kb/281/Q281318/
+permalink: /kb/281/Q281318/
 ---
 
 ## Q281318: Unattended Installation Of Windows 2000 Resource Kits To A Custo

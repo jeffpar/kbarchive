@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151357: Commit Changes Button Always Highlighted in Disk Administrator"
-permalink: kb/151/Q151357/
+permalink: /kb/151/Q151357/
 ---
 
 ## Q151357: Commit Changes Button Always Highlighted in Disk Administrator

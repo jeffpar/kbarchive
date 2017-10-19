@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238059: Encarta Dictionary Err Msg: Cannot Find the File..."
-permalink: kb/238/Q238059/
+permalink: /kb/238/Q238059/
 ---
 
 ## Q238059: Encarta Dictionary Err Msg: Cannot Find the File...

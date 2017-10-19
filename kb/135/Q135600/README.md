@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135600: Doc Err: Halting System When Security Log Is Full"
-permalink: kb/135/Q135600/
+permalink: /kb/135/Q135600/
 ---
 
 ## Q135600: Doc Err: Halting System When Security Log Is Full

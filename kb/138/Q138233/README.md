@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138233: FIX: Memory Leak When Scroll Database Designer in Windows 95"
-permalink: kb/138/Q138233/
+permalink: /kb/138/Q138233/
 ---
 
 ## Q138233: FIX: Memory Leak When Scroll Database Designer in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186742: XFOR: MS Mail Migration Fails With EventID 7017"
-permalink: kb/186/Q186742/
+permalink: /kb/186/Q186742/
 ---
 
 ## Q186742: XFOR: MS Mail Migration Fails With EventID 7017

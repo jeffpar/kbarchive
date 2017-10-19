@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165211: PPT7: Text Behind Object Prints w/ Some HP Printer Drivers"
-permalink: kb/165/Q165211/
+permalink: /kb/165/Q165211/
 ---
 
 ## Q165211: PPT7: Text Behind Object Prints w/ Some HP Printer Drivers

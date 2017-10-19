@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221594: HOWTO: Populate a ListView With an ADOCE Recordset in VBCE6"
-permalink: kb/221/Q221594/
+permalink: /kb/221/Q221594/
 ---
 
 ## Q221594: HOWTO: Populate a ListView With an ADOCE Recordset in VBCE6

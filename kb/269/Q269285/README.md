@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269285: FTP Server Fails to Open Data Connection"
-permalink: kb/269/Q269285/
+permalink: /kb/269/Q269285/
 ---
 
 ## Q269285: FTP Server Fails to Open Data Connection

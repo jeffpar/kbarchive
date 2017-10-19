@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296928: FP: Error Message During Database Search with ASP"
-permalink: kb/296/Q296928/
+permalink: /kb/296/Q296928/
 ---
 
 ## Q296928: FP: Error Message During Database Search with ASP

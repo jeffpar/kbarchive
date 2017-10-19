@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77626: Uninstalling After Deleting the OLD_DOS.1 Directory"
-permalink: kb/077/Q77626/
+permalink: /kb/077/Q77626/
 ---
 
 ## Q77626: Uninstalling After Deleting the OLD_DOS.1 Directory

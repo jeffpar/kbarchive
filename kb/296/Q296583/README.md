@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296583: FP98: FrontPage Server Extensions Do Not Work As Expected"
-permalink: kb/296/Q296583/
+permalink: /kb/296/Q296583/
 ---
 
 ## Q296583: FP98: FrontPage Server Extensions Do Not Work As Expected

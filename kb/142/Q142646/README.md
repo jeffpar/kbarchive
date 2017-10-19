@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142646: Upgrading to SP4 Can Overwrite Newer Verions of Oleaut32.dll"
-permalink: kb/142/Q142646/
+permalink: /kb/142/Q142646/
 ---
 
 ## Q142646: Upgrading to SP4 Can Overwrite Newer Verions of Oleaut32.dll

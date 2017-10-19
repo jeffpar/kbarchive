@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82517: Using AutoCAD with Windows 3.1"
-permalink: kb/082/Q82517/
+permalink: /kb/082/Q82517/
 ---
 
 ## Q82517: Using AutoCAD with Windows 3.1

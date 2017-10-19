@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160420: Changing Colors on Cirrus Logic Cards to 65k Can Cause Stop"
-permalink: kb/160/Q160420/
+permalink: /kb/160/Q160420/
 ---
 
 ## Q160420: Changing Colors on Cirrus Logic Cards to 65k Can Cause Stop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255630: BUG: Using Friend Function w/ Implements Does Not Work in P-Code"
-permalink: kb/255/Q255630/
+permalink: /kb/255/Q255630/
 ---
 
 ## Q255630: BUG: Using Friend Function w/ Implements Does Not Work in P-Code

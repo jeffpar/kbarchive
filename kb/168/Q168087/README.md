@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168087: NTMMTA Locks Serial Port When Run as Service on Windows NT 4.0"
-permalink: kb/168/Q168087/
+permalink: /kb/168/Q168087/
 ---
 
 ## Q168087: NTMMTA Locks Serial Port When Run as Service on Windows NT 4.0

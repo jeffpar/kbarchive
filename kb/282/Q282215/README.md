@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282215: Stop 0x0000001E When You Use User Mode Print Drivers to Print"
-permalink: kb/282/Q282215/
+permalink: /kb/282/Q282215/
 ---
 
 ## Q282215: Stop 0x0000001E When You Use User Mode Print Drivers to Print

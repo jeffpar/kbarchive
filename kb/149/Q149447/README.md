@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149447: XADM: How to Perform a Directory Export of the GAL"
-permalink: kb/149/Q149447/
+permalink: /kb/149/Q149447/
 ---
 
 ## Q149447: XADM: How to Perform a Directory Export of the GAL

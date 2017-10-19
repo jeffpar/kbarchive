@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98648: Error on Incorrect Line After SHELL Statement in CONFIG.SYS"
-permalink: kb/098/Q98648/
+permalink: /kb/098/Q98648/
 ---
 
 ## Q98648: Error on Incorrect Line After SHELL Statement in CONFIG.SYS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137804: SNA Server DFT Link Service Outage 0x11 (DSR Failure)"
-permalink: kb/137/Q137804/
+permalink: /kb/137/Q137804/
 ---
 
 ## Q137804: SNA Server DFT Link Service Outage 0x11 (DSR Failure)

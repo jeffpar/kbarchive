@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69338: Mouse Pointer Disappears in Quattro Pro Graph Annotations"
-permalink: kb/069/Q69338/
+permalink: /kb/069/Q69338/
 ---
 
 ## Q69338: Mouse Pointer Disappears in Quattro Pro Graph Annotations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132390: Add/Remove Doesn't Clear Dogs from Windows 95/98 Start Menu"
-permalink: kb/132/Q132390/
+permalink: /kb/132/Q132390/
 ---
 
 ## Q132390: Add/Remove Doesn't Clear Dogs from Windows 95/98 Start Menu

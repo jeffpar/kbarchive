@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243173: PRB: Install VCCE Causes ATL Windows Message Handler List Empty"
-permalink: kb/243/Q243173/
+permalink: /kb/243/Q243173/
 ---
 
 ## Q243173: PRB: Install VCCE Causes ATL Windows Message Handler List Empty

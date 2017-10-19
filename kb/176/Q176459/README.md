@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176459: XADM: DirRep Bridgehead Errors Modifying Site Naming Contexts"
-permalink: kb/176/Q176459/
+permalink: /kb/176/Q176459/
 ---
 
 ## Q176459: XADM: DirRep Bridgehead Errors Modifying Site Naming Contexts

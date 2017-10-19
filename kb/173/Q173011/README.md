@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173011: HOWTO: Add and Remove Network Connections"
-permalink: kb/173/Q173011/
+permalink: /kb/173/Q173011/
 ---
 
 ## Q173011: HOWTO: Add and Remove Network Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283845: PRB: RDO Rowcount Returns Zero For Large SQL Server Recordsets"
-permalink: kb/283/Q283845/
+permalink: /kb/283/Q283845/
 ---
 
 ## Q283845: PRB: RDO Rowcount Returns Zero For Large SQL Server Recordsets

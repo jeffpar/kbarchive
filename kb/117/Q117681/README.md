@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117681: Profiling Windows NT Services"
-permalink: kb/117/Q117681/
+permalink: /kb/117/Q117681/
 ---
 
 ## Q117681: Profiling Windows NT Services

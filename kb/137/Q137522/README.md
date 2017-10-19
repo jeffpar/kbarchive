@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137522: FPNW Keeps Directory Handles Open, Preventing Deletion"
-permalink: kb/137/Q137522/
+permalink: /kb/137/Q137522/
 ---
 
 ## Q137522: FPNW Keeps Directory Handles Open, Preventing Deletion

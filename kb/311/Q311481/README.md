@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311481: BETA-PRB: CGI Code That Calls External Applications May Fail"
-permalink: kb/311/Q311481/
+permalink: /kb/311/Q311481/
 ---
 
 ## Q311481: BETA-PRB: CGI Code That Calls External Applications May Fail

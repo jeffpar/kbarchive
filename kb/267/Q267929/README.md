@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267929: SMS: CCM Client Bootstrap Service Does Not Start"
-permalink: kb/267/Q267929/
+permalink: /kb/267/Q267929/
 ---
 
 ## Q267929: SMS: CCM Client Bootstrap Service Does Not Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189722: BUG: Form Ignores the Height Change of a Form Template"
-permalink: kb/189/Q189722/
+permalink: /kb/189/Q189722/
 ---
 
 ## Q189722: BUG: Form Ignores the Height Change of a Form Template

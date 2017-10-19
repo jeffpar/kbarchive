@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77738: BUG: Extra Click Event If Double-Click When Mouse Button Down"
-permalink: kb/077/Q77738/
+permalink: /kb/077/Q77738/
 ---
 
 ## Q77738: BUG: Extra Click Event If Double-Click When Mouse Button Down

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93214: Name Property Cannot Be Set When Using Implicit Property"
-permalink: kb/093/Q93214/
+permalink: /kb/093/Q93214/
 ---
 
 ## Q93214: Name Property Cannot Be Set When Using Implicit Property

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178557: Dr. Watson May Display Message Box Even When Disabled"
-permalink: kb/178/Q178557/
+permalink: /kb/178/Q178557/
 ---
 
 ## Q178557: Dr. Watson May Display Message Box Even When Disabled

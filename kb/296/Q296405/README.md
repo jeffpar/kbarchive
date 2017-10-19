@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296405: &quot;RestrictAnonymous&quot; Registry Key Breaks Trust to Win2000 Domain"
-permalink: kb/296/Q296405/
+permalink: /kb/296/Q296405/
 ---
 
 ## Q296405: &quot;RestrictAnonymous&quot; Registry Key Breaks Trust to Win2000 Domain

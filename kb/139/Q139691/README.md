@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139691: International Characters in User Names Not Handled Properly"
-permalink: kb/139/Q139691/
+permalink: /kb/139/Q139691/
 ---
 
 ## Q139691: International Characters in User Names Not Handled Properly

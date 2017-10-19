@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159032: Err Msg: Data in Clipboard Is in an Unknown Format"
-permalink: kb/159/Q159032/
+permalink: /kb/159/Q159032/
 ---
 
 ## Q159032: Err Msg: Data in Clipboard Is in an Unknown Format

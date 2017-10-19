@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74767: How to Remove Berkeley Systems After Dark from Windows"
-permalink: kb/074/Q74767/
+permalink: /kb/074/Q74767/
 ---
 
 ## Q74767: How to Remove Berkeley Systems After Dark from Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257627: Network Programming for Windows Comments and Corrections"
-permalink: kb/257/Q257627/
+permalink: /kb/257/Q257627/
 ---
 
 ## Q257627: Network Programming for Windows Comments and Corrections

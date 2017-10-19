@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158884: SET: Problem Running Programs in German Resource Kit"
-permalink: kb/158/Q158884/
+permalink: /kb/158/Q158884/
 ---
 
 ## Q158884: SET: Problem Running Programs in German Resource Kit

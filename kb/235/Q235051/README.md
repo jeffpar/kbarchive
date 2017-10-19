@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235051: XADM: Disabling POP3 Clear Text Authentication Disables SSL CTA"
-permalink: kb/235/Q235051/
+permalink: /kb/235/Q235051/
 ---
 
 ## Q235051: XADM: Disabling POP3 Clear Text Authentication Disables SSL CTA

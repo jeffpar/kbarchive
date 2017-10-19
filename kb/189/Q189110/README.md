@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189110: PRB: &quot;File Already Open&quot; Error w/VSS DB on Unix Server"
-permalink: kb/189/Q189110/
+permalink: /kb/189/Q189110/
 ---
 
 ## Q189110: PRB: &quot;File Already Open&quot; Error w/VSS DB on Unix Server

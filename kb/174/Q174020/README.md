@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174020: STOP 0x0000001E During Forced Shutdown and Program Exit"
-permalink: kb/174/Q174020/
+permalink: /kb/174/Q174020/
 ---
 
 ## Q174020: STOP 0x0000001E During Forced Shutdown and Program Exit

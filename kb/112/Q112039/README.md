@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112039: X400: How the Gateway Handles Non X.400 To/Cc Addresses"
-permalink: kb/112/Q112039/
+permalink: /kb/112/Q112039/
 ---
 
 ## Q112039: X400: How the Gateway Handles Non X.400 To/Cc Addresses

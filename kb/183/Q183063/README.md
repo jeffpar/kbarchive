@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183063: Detailed Explanation of SecondLevelDataCache"
-permalink: kb/183/Q183063/
+permalink: /kb/183/Q183063/
 ---
 
 ## Q183063: Detailed Explanation of SecondLevelDataCache

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184542: XFOR: Internet Mail Service Very Slow with High Message Volume"
-permalink: kb/184/Q184542/
+permalink: /kb/184/Q184542/
 ---
 
 ## Q184542: XFOR: Internet Mail Service Very Slow with High Message Volume

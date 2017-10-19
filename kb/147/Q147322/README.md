@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147322: Cinemania/ Music Central ErrMsg: Unknown Error When Starting"
-permalink: kb/147/Q147322/
+permalink: /kb/147/Q147322/
 ---
 
 ## Q147322: Cinemania/ Music Central ErrMsg: Unknown Error When Starting

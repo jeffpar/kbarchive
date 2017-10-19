@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241309: XADM: Isinteg Ends with ecNotFound - MAPI_E_NOT_FOUND"
-permalink: kb/241/Q241309/
+permalink: /kb/241/Q241309/
 ---
 
 ## Q241309: XADM: Isinteg Ends with ecNotFound - MAPI_E_NOT_FOUND

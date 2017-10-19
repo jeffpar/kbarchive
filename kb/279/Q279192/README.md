@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279192: FIX: Names.Dat Corruption Is Not Repaired by Analyze Utility"
-permalink: kb/279/Q279192/
+permalink: /kb/279/Q279192/
 ---
 
 ## Q279192: FIX: Names.Dat Corruption Is Not Repaired by Analyze Utility

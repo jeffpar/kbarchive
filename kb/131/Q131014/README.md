@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131014: How to Instantiate a Templated Function"
-permalink: kb/131/Q131014/
+permalink: /kb/131/Q131014/
 ---
 
 ## Q131014: How to Instantiate a Templated Function

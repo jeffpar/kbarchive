@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255279: HOWTO: Create a COM DLL with Visual FoxPro that Prints Screen Im"
-permalink: kb/255/Q255279/
+permalink: /kb/255/Q255279/
 ---
 
 ## Q255279: HOWTO: Create a COM DLL with Visual FoxPro that Prints Screen Im

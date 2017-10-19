@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122497: Closing a Folder Before Setup Is Complete Hangs Computer"
-permalink: kb/122/Q122497/
+permalink: /kb/122/Q122497/
 ---
 
 ## Q122497: Closing a Folder Before Setup Is Complete Hangs Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161984: WD97: &quot;Save Word Files As&quot; Help Topic Incorrect"
-permalink: kb/161/Q161984/
+permalink: /kb/161/Q161984/
 ---
 
 ## Q161984: WD97: &quot;Save Word Files As&quot; Help Topic Incorrect

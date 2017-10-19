@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138414: PRB: FromIDispatch Returns NULL for OLE Control"
-permalink: kb/138/Q138414/
+permalink: /kb/138/Q138414/
 ---
 
 ## Q138414: PRB: FromIDispatch Returns NULL for OLE Control

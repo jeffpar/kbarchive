@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250262: NTOP Installation Error Message: Cannot Detect OS Type"
-permalink: kb/250/Q250262/
+permalink: /kb/250/Q250262/
 ---
 
 ## Q250262: NTOP Installation Error Message: Cannot Detect OS Type

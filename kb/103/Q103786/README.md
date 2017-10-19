@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103786: HOWTO: Change Window Background Color with Foundation Classes"
-permalink: kb/103/Q103786/
+permalink: /kb/103/Q103786/
 ---
 
 ## Q103786: HOWTO: Change Window Background Color with Foundation Classes

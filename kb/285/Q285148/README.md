@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285148: Event ID 637 Is Logged Stating that a User Removed Another User"
-permalink: kb/285/Q285148/
+permalink: /kb/285/Q285148/
 ---
 
 ## Q285148: Event ID 637 Is Logged Stating that a User Removed Another User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274415: Crimson Skies: Sounds Are Not Played in Mission Briefings"
-permalink: kb/274/Q274415/
+permalink: /kb/274/Q274415/
 ---
 
 ## Q274415: Crimson Skies: Sounds Are Not Played in Mission Briefings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123685: Characteristics of MASM Labels"
-permalink: kb/123/Q123685/
+permalink: /kb/123/Q123685/
 ---
 
 ## Q123685: Characteristics of MASM Labels

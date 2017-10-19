@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163243: XFOR: Causes for Event ID 4018 When Starting the IMC"
-permalink: kb/163/Q163243/
+permalink: /kb/163/Q163243/
 ---
 
 ## Q163243: XFOR: Causes for Event ID 4018 When Starting the IMC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141696: Cannot Open Fax: &quot;A Problem Occurred While Working with...&quot;"
-permalink: kb/141/Q141696/
+permalink: /kb/141/Q141696/
 ---
 
 ## Q141696: Cannot Open Fax: &quot;A Problem Occurred While Working with...&quot;

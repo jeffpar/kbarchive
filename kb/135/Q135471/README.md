@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135471: Cannot Reconnect to OS/2 Name Space Resources on NetWare Server"
-permalink: kb/135/Q135471/
+permalink: /kb/135/Q135471/
 ---
 
 ## Q135471: Cannot Reconnect to OS/2 Name Space Resources on NetWare Server

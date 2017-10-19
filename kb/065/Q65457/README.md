@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65457: Print Manager Print Queue File Limit"
-permalink: kb/065/Q65457/
+permalink: /kb/065/Q65457/
 ---
 
 ## Q65457: Print Manager Print Queue File Limit

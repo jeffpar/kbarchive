@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197434: WD97: Cannot Mark Citation That Does Not Include Short Citation"
-permalink: kb/197/Q197434/
+permalink: /kb/197/Q197434/
 ---
 
 ## Q197434: WD97: Cannot Mark Citation That Does Not Include Short Citation

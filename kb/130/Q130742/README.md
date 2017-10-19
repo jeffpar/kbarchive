@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130742: Event ID 5721 When Upgrading LAN Manager BDC to Windows NT BDC"
-permalink: kb/130/Q130742/
+permalink: /kb/130/Q130742/
 ---
 
 ## Q130742: Event ID 5721 When Upgrading LAN Manager BDC to Windows NT BDC

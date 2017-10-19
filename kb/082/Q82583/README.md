@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82583: Sound Blaster Drivers Are for Specific Sound Blaster Cards"
-permalink: kb/082/Q82583/
+permalink: /kb/082/Q82583/
 ---
 
 ## Q82583: Sound Blaster Drivers Are for Specific Sound Blaster Cards

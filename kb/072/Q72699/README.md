@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72699: PRB: U1033 from Space After NMAKE Line Continuation Character"
-permalink: kb/072/Q72699/
+permalink: /kb/072/Q72699/
 ---
 
 ## Q72699: PRB: U1033 from Space After NMAKE Line Continuation Character

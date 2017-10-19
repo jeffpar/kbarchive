@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96726: PRB: MAKEFILE for HOOKS Sample Implemented Incorrectly"
-permalink: kb/096/Q96726/
+permalink: /kb/096/Q96726/
 ---
 
 ## Q96726: PRB: MAKEFILE for HOOKS Sample Implemented Incorrectly

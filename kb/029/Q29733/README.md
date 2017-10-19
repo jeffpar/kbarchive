@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29733: HOWTO: Drawing a Different Icon for Each Application Instance"
-permalink: kb/029/Q29733/
+permalink: /kb/029/Q29733/
 ---
 
 ## Q29733: HOWTO: Drawing a Different Icon for Each Application Instance

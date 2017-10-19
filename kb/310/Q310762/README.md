@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310762: ENC: Encarta Quits Unexpectedly During Setup"
-permalink: kb/310/Q310762/
+permalink: /kb/310/Q310762/
 ---
 
 ## Q310762: ENC: Encarta Quits Unexpectedly During Setup

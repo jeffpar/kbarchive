@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93705: WFWG Err Msg: Local Copy of Schedule+ Cannot Be Accessed"
-permalink: kb/093/Q93705/
+permalink: /kb/093/Q93705/
 ---
 
 ## Q93705: WFWG Err Msg: Local Copy of Schedule+ Cannot Be Accessed

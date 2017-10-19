@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120531: Scenes 2.0: Copy a Collection to Disk Wizard Fails"
-permalink: kb/120/Q120531/
+permalink: /kb/120/Q120531/
 ---
 
 ## Q120531: Scenes 2.0: Copy a Collection to Disk Wizard Fails

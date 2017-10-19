@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130678: TEAC CD55A 4X IDE Beta Drivers for Windows NT 3.5x"
-permalink: kb/130/Q130678/
+permalink: /kb/130/Q130678/
 ---
 
 ## Q130678: TEAC CD55A 4X IDE Beta Drivers for Windows NT 3.5x

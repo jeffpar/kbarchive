@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86551: MHS: Definition of Gateway"
-permalink: kb/086/Q86551/
+permalink: /kb/086/Q86551/
 ---
 
 ## Q86551: MHS: Definition of Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138900: PPT7: Slide Miniature Disappears If Dragged to Taskbar"
-permalink: kb/138/Q138900/
+permalink: /kb/138/Q138900/
 ---
 
 ## Q138900: PPT7: Slide Miniature Disappears If Dragged to Taskbar

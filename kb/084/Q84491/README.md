@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84491: Troubleshooting Print-Sharing Devices"
-permalink: kb/084/Q84491/
+permalink: /kb/084/Q84491/
 ---
 
 ## Q84491: Troubleshooting Print-Sharing Devices

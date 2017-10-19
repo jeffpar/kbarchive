@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125196: PPT: Automatic Timings Don't Work in Playlist Slide Show"
-permalink: kb/125/Q125196/
+permalink: /kb/125/Q125196/
 ---
 
 ## Q125196: PPT: Automatic Timings Don't Work in Playlist Slide Show

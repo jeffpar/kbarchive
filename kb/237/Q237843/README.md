@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237843: HOWTO: Synchronize a SourceControlled VFP Project Between Users"
-permalink: kb/237/Q237843/
+permalink: /kb/237/Q237843/
 ---
 
 ## Q237843: HOWTO: Synchronize a SourceControlled VFP Project Between Users

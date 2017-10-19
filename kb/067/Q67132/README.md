@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67132: Windows 3.0: Western Digital Controllers - Quick Ref. Card"
-permalink: kb/067/Q67132/
+permalink: /kb/067/Q67132/
 ---
 
 ## Q67132: Windows 3.0: Western Digital Controllers - Quick Ref. Card

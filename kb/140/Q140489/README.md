@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140489: PRB: One-to-Many Report Prints First Child If Scope Is One"
-permalink: kb/140/Q140489/
+permalink: /kb/140/Q140489/
 ---
 
 ## Q140489: PRB: One-to-Many Report Prints First Child If Scope Is One

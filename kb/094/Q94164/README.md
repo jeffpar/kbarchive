@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94164: Incorrect Output with HP LaserJet 4 and Windows Accessories"
-permalink: kb/094/Q94164/
+permalink: /kb/094/Q94164/
 ---
 
 ## Q94164: Incorrect Output with HP LaserJet 4 and Windows Accessories

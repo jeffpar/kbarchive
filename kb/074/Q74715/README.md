@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74715: Windows Err Msg: Cannot Run PageMaker 4.0, Aldus Directory..."
-permalink: kb/074/Q74715/
+permalink: /kb/074/Q74715/
 ---
 
 ## Q74715: Windows Err Msg: Cannot Run PageMaker 4.0, Aldus Directory...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163183: ODE97: Supporting Files for ActiveX Controls in ODE"
-permalink: kb/163/Q163183/
+permalink: /kb/163/Q163183/
 ---
 
 ## Q163183: ODE97: Supporting Files for ActiveX Controls in ODE

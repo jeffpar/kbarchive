@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167192: HOWTO: Create a Progress Indicator Using Threed Panel Control"
-permalink: kb/167/Q167192/
+permalink: /kb/167/Q167192/
 ---
 
 ## Q167192: HOWTO: Create a Progress Indicator Using Threed Panel Control

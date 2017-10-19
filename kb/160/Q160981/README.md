@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160981: XADM: How to Export a Mailbox's Attributes to a Text File"
-permalink: kb/160/Q160981/
+permalink: /kb/160/Q160981/
 ---
 
 ## Q160981: XADM: How to Export a Mailbox's Attributes to a Text File

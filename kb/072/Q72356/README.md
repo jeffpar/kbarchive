@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72356: Windows Err Msg: Cannot Find the Specified File..."
-permalink: kb/072/Q72356/
+permalink: /kb/072/Q72356/
 ---
 
 ## Q72356: Windows Err Msg: Cannot Find the Specified File...

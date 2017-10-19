@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165525: &quot;Stop 0xA&quot; Error Message During Setup"
-permalink: kb/165/Q165525/
+permalink: /kb/165/Q165525/
 ---
 
 ## Q165525: &quot;Stop 0xA&quot; Error Message During Setup

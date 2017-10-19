@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174777: Searching for One Character Words in Index Server"
-permalink: kb/174/Q174777/
+permalink: /kb/174/Q174777/
 ---
 
 ## Q174777: Searching for One Character Words in Index Server

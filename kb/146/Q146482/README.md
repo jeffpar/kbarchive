@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146482: XCLN: Public Folder Link Starts New Instance of Exchange"
-permalink: kb/146/Q146482/
+permalink: /kb/146/Q146482/
 ---
 
 ## Q146482: XCLN: Public Folder Link Starts New Instance of Exchange

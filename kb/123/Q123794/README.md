@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123794: Custom.dic Not Updated in PowerPoint"
-permalink: kb/123/Q123794/
+permalink: /kb/123/Q123794/
 ---
 
 ## Q123794: Custom.dic Not Updated in PowerPoint

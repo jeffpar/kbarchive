@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193632: Bookshelf: Wave Sounds Pause or Break Up During Playback"
-permalink: kb/193/Q193632/
+permalink: /kb/193/Q193632/
 ---
 
 ## Q193632: Bookshelf: Wave Sounds Pause or Break Up During Playback

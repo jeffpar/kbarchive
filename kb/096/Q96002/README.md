@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96002: PC DirSync: Error and Status Msgs #30 - 59"
-permalink: kb/096/Q96002/
+permalink: /kb/096/Q96002/
 ---
 
 ## Q96002: PC DirSync: Error and Status Msgs #30 - 59

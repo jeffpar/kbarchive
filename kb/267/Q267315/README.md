@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267315: Streets &amp; Trips 2001: Minimum System Requirements"
-permalink: kb/267/Q267315/
+permalink: /kb/267/Q267315/
 ---
 
 ## Q267315: Streets &amp; Trips 2001: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297486: Incorrect Server Variables If You Use Client Certificate Mapping"
-permalink: kb/297/Q297486/
+permalink: /kb/297/Q297486/
 ---
 
 ## Q297486: Incorrect Server Variables If You Use Client Certificate Mapping

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129856: Use DAO GetRows Method to Fill Variant Arrays"
-permalink: kb/129/Q129856/
+permalink: /kb/129/Q129856/
 ---
 
 ## Q129856: Use DAO GetRows Method to Fill Variant Arrays

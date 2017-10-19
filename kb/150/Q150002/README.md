@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150002: How to Sort Schedule+ 7.0 Contacts List Using VB for Apps"
-permalink: kb/150/Q150002/
+permalink: /kb/150/Q150002/
 ---
 
 ## Q150002: How to Sort Schedule+ 7.0 Contacts List Using VB for Apps

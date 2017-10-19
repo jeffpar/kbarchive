@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65746: Remote Control Programs Do Not Operate with Flight Simulator"
-permalink: kb/065/Q65746/
+permalink: /kb/065/Q65746/
 ---
 
 ## Q65746: Remote Control Programs Do Not Operate with Flight Simulator

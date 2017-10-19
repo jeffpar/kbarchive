@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244865: EST2000: How to Import Contacts From Microsoft Outlook"
-permalink: kb/244/Q244865/
+permalink: /kb/244/Q244865/
 ---
 
 ## Q244865: EST2000: How to Import Contacts From Microsoft Outlook

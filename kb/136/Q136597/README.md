@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136597: Drives May Appear to Be Missing When Using DriveSpace"
-permalink: kb/136/Q136597/
+permalink: /kb/136/Q136597/
 ---
 
 ## Q136597: Drives May Appear to Be Missing When Using DriveSpace

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141977: Contents of Visual FoxPro Pro Edition on 3.5&quot; Disk (2 of 2)"
-permalink: kb/141/Q141977/
+permalink: /kb/141/Q141977/
 ---
 
 ## Q141977: Contents of Visual FoxPro Pro Edition on 3.5&quot; Disk (2 of 2)

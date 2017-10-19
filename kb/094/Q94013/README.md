@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94013: MS-DOS: MEM Doesn't Display &quot;Bytes Available XMS Memory&quot;"
-permalink: kb/094/Q94013/
+permalink: /kb/094/Q94013/
 ---
 
 ## Q94013: MS-DOS: MEM Doesn't Display &quot;Bytes Available XMS Memory&quot;

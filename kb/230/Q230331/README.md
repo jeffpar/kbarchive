@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230331: XFOR: SMTP Address Generator Includes Consecutive Periods"
-permalink: kb/230/Q230331/
+permalink: /kb/230/Q230331/
 ---
 
 ## Q230331: XFOR: SMTP Address Generator Includes Consecutive Periods

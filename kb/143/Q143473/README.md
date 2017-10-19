@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143473: FIX: Unattended Setup Stops Unexpectedly"
-permalink: kb/143/Q143473/
+permalink: /kb/143/Q143473/
 ---
 
 ## Q143473: FIX: Unattended Setup Stops Unexpectedly

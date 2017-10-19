@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167186: PRB: SET CENTURY ROLLOVER Ignores Setting of SET CENTURY OFF"
-permalink: kb/167/Q167186/
+permalink: /kb/167/Q167186/
 ---
 
 ## Q167186: PRB: SET CENTURY ROLLOVER Ignores Setting of SET CENTURY OFF

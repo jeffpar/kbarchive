@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153819: SMS PCM: &quot;General File Transfer Error&quot; Distributing Netscape"
-permalink: kb/153/Q153819/
+permalink: /kb/153/Q153819/
 ---
 
 ## Q153819: SMS PCM: &quot;General File Transfer Error&quot; Distributing Netscape

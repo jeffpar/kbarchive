@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93680: How, When, and Why to Use MONOUMB and MONOUMB2.386"
-permalink: kb/093/Q93680/
+permalink: /kb/093/Q93680/
 ---
 
 ## Q93680: How, When, and Why to Use MONOUMB and MONOUMB2.386

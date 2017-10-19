@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173261: FIX: Dialog in InitInstance Doesn't Process WM_DDE_INITIATE"
-permalink: kb/173/Q173261/
+permalink: /kb/173/Q173261/
 ---
 
 ## Q173261: FIX: Dialog in InitInstance Doesn't Process WM_DDE_INITIATE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160268: Missing TN3270E Header on Data to Client"
-permalink: kb/160/Q160268/
+permalink: /kb/160/Q160268/
 ---
 
 ## Q160268: Missing TN3270E Header on Data to Client

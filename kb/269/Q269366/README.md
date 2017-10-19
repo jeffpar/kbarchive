@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269366: Pocket Streets 2001: Minimum System Requirements"
-permalink: kb/269/Q269366/
+permalink: /kb/269/Q269366/
 ---
 
 ## Q269366: Pocket Streets 2001: Minimum System Requirements

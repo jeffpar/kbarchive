@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158844: PRB: Cannot Turn Off Filter when Using Cursor Filter Property"
-permalink: kb/158/Q158844/
+permalink: /kb/158/Q158844/
 ---
 
 ## Q158844: PRB: Cannot Turn Off Filter when Using Cursor Filter Property

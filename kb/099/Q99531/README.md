@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99531: Adjusting PRINTSTA Parameters Speeds Network Printing"
-permalink: kb/099/Q99531/
+permalink: /kb/099/Q99531/
 ---
 
 ## Q99531: Adjusting PRINTSTA Parameters Speeds Network Printing

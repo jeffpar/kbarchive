@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201194: How to Configure Telnet NTLM Authentication"
-permalink: kb/201/Q201194/
+permalink: /kb/201/Q201194/
 ---
 
 ## Q201194: How to Configure Telnet NTLM Authentication

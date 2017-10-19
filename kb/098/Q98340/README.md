@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98340: PROFS: How to Check VM Host for REROUTE Statements"
-permalink: kb/098/Q98340/
+permalink: /kb/098/Q98340/
 ---
 
 ## Q98340: PROFS: How to Check VM Host for REROUTE Statements

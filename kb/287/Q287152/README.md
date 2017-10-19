@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287152: MechWarrior 4: Known Video Issues in MechWarrior 4"
-permalink: kb/287/Q287152/
+permalink: /kb/287/Q287152/
 ---
 
 ## Q287152: MechWarrior 4: Known Video Issues in MechWarrior 4

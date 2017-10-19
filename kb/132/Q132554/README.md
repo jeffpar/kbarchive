@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132554: Micro Channel Digiboard PC/XEM Fails Under Windows NT"
-permalink: kb/132/Q132554/
+permalink: /kb/132/Q132554/
 ---
 
 ## Q132554: Micro Channel Digiboard PC/XEM Fails Under Windows NT

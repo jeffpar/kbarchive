@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248460: XCLN: E-mail Doesn't Display &quot;.doc&quot; when Word Is Editor"
-permalink: kb/248/Q248460/
+permalink: /kb/248/Q248460/
 ---
 
 ## Q248460: XCLN: E-mail Doesn't Display &quot;.doc&quot; when Word Is Editor

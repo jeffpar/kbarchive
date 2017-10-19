@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290605: Terminal Server Clients Unable to Install Mail Certificates"
-permalink: kb/290/Q290605/
+permalink: /kb/290/Q290605/
 ---
 
 ## Q290605: Terminal Server Clients Unable to Install Mail Certificates

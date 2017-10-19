@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173059: Security Events Are Not Logged During Audit"
-permalink: kb/173/Q173059/
+permalink: /kb/173/Q173059/
 ---
 
 ## Q173059: Security Events Are Not Logged During Audit

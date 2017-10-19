@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218954: Expedia Err Msg: No Matching Places Were Found"
-permalink: kb/218/Q218954/
+permalink: /kb/218/Q218954/
 ---
 
 ## Q218954: Expedia Err Msg: No Matching Places Were Found

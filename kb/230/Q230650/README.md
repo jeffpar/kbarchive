@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230650: XCON: Moving Messages from One X.400 Connector Queue to Another"
-permalink: kb/230/Q230650/
+permalink: /kb/230/Q230650/
 ---
 
 ## Q230650: XCON: Moving Messages from One X.400 Connector Queue to Another

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281826: MapPoint: How to Submit Map Feedback"
-permalink: kb/281/Q281826/
+permalink: /kb/281/Q281826/
 ---
 
 ## Q281826: MapPoint: How to Submit Map Feedback

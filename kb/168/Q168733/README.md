@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168733: WD97: Template Layout Changes When Opened in Word"
-permalink: kb/168/Q168733/
+permalink: /kb/168/Q168733/
 ---
 
 ## Q168733: WD97: Template Layout Changes When Opened in Word

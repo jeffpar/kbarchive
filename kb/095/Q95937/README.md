@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95937: DLL That is Callable from Microsoft Setup Script"
-permalink: kb/095/Q95937/
+permalink: /kb/095/Q95937/
 ---
 
 ## Q95937: DLL That is Callable from Microsoft Setup Script

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160776: SMS: Inventory Processor Fails on RAW to MIF Conversion"
-permalink: kb/160/Q160776/
+permalink: /kb/160/Q160776/
 ---
 
 ## Q160776: SMS: Inventory Processor Fails on RAW to MIF Conversion

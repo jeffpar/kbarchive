@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187628: Using Telnet to Test Port 3389 Functionality"
-permalink: kb/187/Q187628/
+permalink: /kb/187/Q187628/
 ---
 
 ## Q187628: Using Telnet to Test Port 3389 Functionality

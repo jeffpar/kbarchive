@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74658: PC-Kwik Print Spooler 3.0 with Windows Enhanced and Standard"
-permalink: kb/074/Q74658/
+permalink: /kb/074/Q74658/
 ---
 
 ## Q74658: PC-Kwik Print Spooler 3.0 with Windows Enhanced and Standard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169160: Routing Protocols Changes Not Updated in Routing and RAS Admin"
-permalink: kb/169/Q169160/
+permalink: /kb/169/Q169160/
 ---
 
 ## Q169160: Routing Protocols Changes Not Updated in Routing and RAS Admin

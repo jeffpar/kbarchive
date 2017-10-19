@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132296: DOC: Bad Reference to Style Property with Command Button"
-permalink: kb/132/Q132296/
+permalink: /kb/132/Q132296/
 ---
 
 ## Q132296: DOC: Bad Reference to Style Property with Command Button

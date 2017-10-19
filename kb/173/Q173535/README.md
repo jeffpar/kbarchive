@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173535: Java Applets do not Refresh Screen Using Matrox Video Card"
-permalink: kb/173/Q173535/
+permalink: /kb/173/Q173535/
 ---
 
 ## Q173535: Java Applets do not Refresh Screen Using Matrox Video Card

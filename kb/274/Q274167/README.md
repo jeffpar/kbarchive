@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274167: FIX: Unable to Create or Modify Tables/Views on SQL Server 2000"
-permalink: kb/274/Q274167/
+permalink: /kb/274/Q274167/
 ---
 
 ## Q274167: FIX: Unable to Create or Modify Tables/Views on SQL Server 2000

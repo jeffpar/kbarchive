@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114274: BUG: SKIP FOR Does Not Disable Menu Pad"
-permalink: kb/114/Q114274/
+permalink: /kb/114/Q114274/
 ---
 
 ## Q114274: BUG: SKIP FOR Does Not Disable Menu Pad

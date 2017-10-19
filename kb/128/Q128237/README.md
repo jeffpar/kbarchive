@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128237: PRB: Polyline Fails with NULL Clipping Region"
-permalink: kb/128/Q128237/
+permalink: /kb/128/Q128237/
 ---
 
 ## Q128237: PRB: Polyline Fails with NULL Clipping Region

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157201: WD97: Word 97 RTF Document Opens Blank in WordPerfect 6.x"
-permalink: kb/157/Q157201/
+permalink: /kb/157/Q157201/
 ---
 
 ## Q157201: WD97: Word 97 RTF Document Opens Blank in WordPerfect 6.x

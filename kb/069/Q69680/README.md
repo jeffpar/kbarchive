@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69680: Packard-Bell Computers and Genius Mice in Windows"
-permalink: kb/069/Q69680/
+permalink: /kb/069/Q69680/
 ---
 
 ## Q69680: Packard-Bell Computers and Genius Mice in Windows

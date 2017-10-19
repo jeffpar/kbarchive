@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82681: How Windows 3.1 Looks for COM Ports"
-permalink: kb/082/Q82681/
+permalink: /kb/082/Q82681/
 ---
 
 ## Q82681: How Windows 3.1 Looks for COM Ports

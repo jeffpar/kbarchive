@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59644: HPPCL Err Msg: Please Specify the Complete Path"
-permalink: kb/059/Q59644/
+permalink: /kb/059/Q59644/
 ---
 
 ## Q59644: HPPCL Err Msg: Please Specify the Complete Path

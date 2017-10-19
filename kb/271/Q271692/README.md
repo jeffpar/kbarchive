@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271692: INFO: Avoid Truncation When You Use Data Report ExportReport"
-permalink: kb/271/Q271692/
+permalink: /kb/271/Q271692/
 ---
 
 ## Q271692: INFO: Avoid Truncation When You Use Data Report ExportReport

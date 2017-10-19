@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148681: FIX: localtime() Does Not Always Switch to Standard Time"
-permalink: kb/148/Q148681/
+permalink: /kb/148/Q148681/
 ---
 
 ## Q148681: FIX: localtime() Does Not Always Switch to Standard Time

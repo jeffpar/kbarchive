@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148365: PC Forms: Characters Following a Tab Are Not Retrieved"
-permalink: kb/148/Q148365/
+permalink: /kb/148/Q148365/
 ---
 
 ## Q148365: PC Forms: Characters Following a Tab Are Not Retrieved

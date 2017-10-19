@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101151: Can't Modify Screen or Form without a Mouse"
-permalink: kb/101/Q101151/
+permalink: /kb/101/Q101151/
 ---
 
 ## Q101151: Can't Modify Screen or Form without a Mouse

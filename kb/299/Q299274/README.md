@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299274: INFO: CoFreeUnusedLibrariesEx Platform Requirements"
-permalink: kb/299/Q299274/
+permalink: /kb/299/Q299274/
 ---
 
 ## Q299274: INFO: CoFreeUnusedLibrariesEx Platform Requirements

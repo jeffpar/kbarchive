@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168383: FIX: C1001 p2symtab.c, line 2221 In Direct Init of Static"
-permalink: kb/168/Q168383/
+permalink: /kb/168/Q168383/
 ---
 
 ## Q168383: FIX: C1001 p2symtab.c, line 2221 In Direct Init of Static

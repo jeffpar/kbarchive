@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185232: WD97: Error Message Using WordMail: &quot;This method or property is"
-permalink: kb/185/Q185232/
+permalink: /kb/185/Q185232/
 ---
 
 ## Q185232: WD97: Error Message Using WordMail: &quot;This method or property is

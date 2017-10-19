@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124580: Explorapedia: Program Seems to Hang When Printing"
-permalink: kb/124/Q124580/
+permalink: /kb/124/Q124580/
 ---
 
 ## Q124580: Explorapedia: Program Seems to Hang When Printing

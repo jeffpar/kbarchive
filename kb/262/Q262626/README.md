@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262626: ASP Request Executing Counter and ProcessorThreadMax"
-permalink: kb/262/Q262626/
+permalink: /kb/262/Q262626/
 ---
 
 ## Q262626: ASP Request Executing Counter and ProcessorThreadMax

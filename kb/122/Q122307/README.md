@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122307: HOWTO: Tracking Down Memory Leaks with _afxBreakAlloc"
-permalink: kb/122/Q122307/
+permalink: /kb/122/Q122307/
 ---
 
 ## Q122307: HOWTO: Tracking Down Memory Leaks with _afxBreakAlloc

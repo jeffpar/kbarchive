@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150393: XCLN: How To Have New Mail Delivered to a Local PST"
-permalink: kb/150/Q150393/
+permalink: /kb/150/Q150393/
 ---
 
 ## Q150393: XCLN: How To Have New Mail Delivered to a Local PST

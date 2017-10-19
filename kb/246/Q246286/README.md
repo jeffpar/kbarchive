@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246286: XADM: Exchange Server Setup Stops When You Stop System Attendant"
-permalink: kb/246/Q246286/
+permalink: /kb/246/Q246286/
 ---
 
 ## Q246286: XADM: Exchange Server Setup Stops When You Stop System Attendant

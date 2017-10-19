@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213124: SMS: Clients Hang After Installation of Hardware Inventory Agent"
-permalink: kb/213/Q213124/
+permalink: /kb/213/Q213124/
 ---
 
 ## Q213124: SMS: Clients Hang After Installation of Hardware Inventory Agent

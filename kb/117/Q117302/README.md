@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117302: Err Msg: TCP Unloaded with Madge Smart Ring Driver"
-permalink: kb/117/Q117302/
+permalink: /kb/117/Q117302/
 ---
 
 ## Q117302: Err Msg: TCP Unloaded with Madge Smart Ring Driver

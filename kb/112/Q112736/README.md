@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112736: WFWG Err Msg on Exit: There Are 1 User(s) Connected to Your..."
-permalink: kb/112/Q112736/
+permalink: /kb/112/Q112736/
 ---
 
 ## Q112736: WFWG Err Msg on Exit: There Are 1 User(s) Connected to Your...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66511: SHARE Does Not Need to Be Loaded in MS-DOS 5.0 or Later"
-permalink: kb/066/Q66511/
+permalink: /kb/066/Q66511/
 ---
 
 ## Q66511: SHARE Does Not Need to Be Loaded in MS-DOS 5.0 or Later

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197159: Dr. Watson Error in IE 4.0 After Installation on Terminal Server"
-permalink: kb/197/Q197159/
+permalink: /kb/197/Q197159/
 ---
 
 ## Q197159: Dr. Watson Error in IE 4.0 After Installation on Terminal Server

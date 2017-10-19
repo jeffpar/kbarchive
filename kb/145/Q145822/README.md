@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145822: DOC: Creating Import Libraries for PowerPC Shared Libraries"
-permalink: kb/145/Q145822/
+permalink: /kb/145/Q145822/
 ---
 
 ## Q145822: DOC: Creating Import Libraries for PowerPC Shared Libraries

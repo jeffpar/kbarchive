@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226798: Desktop Icons Are Rearranged After You Install Windows NT SP4"
-permalink: kb/226/Q226798/
+permalink: /kb/226/Q226798/
 ---
 
 ## Q226798: Desktop Icons Are Rearranged After You Install Windows NT SP4

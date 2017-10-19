@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121210: MIDISX.EXE Demos MIDI System Exclusive Communication"
-permalink: kb/121/Q121210/
+permalink: /kb/121/Q121210/
 ---
 
 ## Q121210: MIDISX.EXE Demos MIDI System Exclusive Communication

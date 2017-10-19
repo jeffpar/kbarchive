@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179550: Installing a Certificate in IIS May Result in Bad Password Error"
-permalink: kb/179/Q179550/
+permalink: /kb/179/Q179550/
 ---
 
 ## Q179550: Installing a Certificate in IIS May Result in Bad Password Error

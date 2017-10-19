@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113164: PC Win: MMF Recovery Can Cause Missing Message Body"
-permalink: kb/113/Q113164/
+permalink: /kb/113/Q113164/
 ---
 
 ## Q113164: PC Win: MMF Recovery Can Cause Missing Message Body

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190796: PRB: VC Installation Hangs With Message &quot;Updating Registry&quot;"
-permalink: kb/190/Q190796/
+permalink: /kb/190/Q190796/
 ---
 
 ## Q190796: PRB: VC Installation Hangs With Message &quot;Updating Registry&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150406: Music Central 96 Update Contents: October 95"
-permalink: kb/150/Q150406/
+permalink: /kb/150/Q150406/
 ---
 
 ## Q150406: Music Central 96 Update Contents: October 95

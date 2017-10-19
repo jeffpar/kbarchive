@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226487: IAS Returns Incorrect Data During Invalid Logon Attempt"
-permalink: kb/226/Q226487/
+permalink: /kb/226/Q226487/
 ---
 
 ## Q226487: IAS Returns Incorrect Data During Invalid Logon Attempt

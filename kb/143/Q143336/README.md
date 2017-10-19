@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143336: Scenes 2.0: Installed File Descriptions"
-permalink: kb/143/Q143336/
+permalink: /kb/143/Q143336/
 ---
 
 ## Q143336: Scenes 2.0: Installed File Descriptions

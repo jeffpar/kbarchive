@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268087: User Cannot Log on From Web Client"
-permalink: kb/268/Q268087/
+permalink: /kb/268/Q268087/
 ---
 
 ## Q268087: User Cannot Log on From Web Client

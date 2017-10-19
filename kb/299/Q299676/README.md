@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299676: XADM: Event Service May Not Start with Event ID 5 Message"
-permalink: kb/299/Q299676/
+permalink: /kb/299/Q299676/
 ---
 
 ## Q299676: XADM: Event Service May Not Start with Event ID 5 Message

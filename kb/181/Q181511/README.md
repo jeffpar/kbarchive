@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181511: FIX: Custom AppWizard May Ignore Changes to Predefined Macros"
-permalink: kb/181/Q181511/
+permalink: /kb/181/Q181511/
 ---
 
 ## Q181511: FIX: Custom AppWizard May Ignore Changes to Predefined Macros

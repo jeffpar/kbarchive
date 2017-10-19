@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132826: CSNAV List Box Does Not Scroll Properly When Updated"
-permalink: kb/132/Q132826/
+permalink: /kb/132/Q132826/
 ---
 
 ## Q132826: CSNAV List Box Does Not Scroll Properly When Updated

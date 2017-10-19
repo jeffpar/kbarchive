@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164952: INFO: Fixes and Features of Visual C++ 4.0a RISC Edition"
-permalink: kb/164/Q164952/
+permalink: /kb/164/Q164952/
 ---
 
 ## Q164952: INFO: Fixes and Features of Visual C++ 4.0a RISC Edition

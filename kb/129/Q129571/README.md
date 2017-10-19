@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129571: PRB: Formset.LOAD Is Not the First Event to Fire"
-permalink: kb/129/Q129571/
+permalink: /kb/129/Q129571/
 ---
 
 ## Q129571: PRB: Formset.LOAD Is Not the First Event to Fire

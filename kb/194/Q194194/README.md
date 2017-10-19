@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194194: DNS Fails with Error 1201 If Secondary Zone File Not Specified"
-permalink: kb/194/Q194194/
+permalink: /kb/194/Q194194/
 ---
 
 ## Q194194: DNS Fails with Error 1201 If Secondary Zone File Not Specified

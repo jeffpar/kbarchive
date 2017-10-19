@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158248: HOWTO: Use the Calendar Control to Enter and Display Dates"
-permalink: kb/158/Q158248/
+permalink: /kb/158/Q158248/
 ---
 
 ## Q158248: HOWTO: Use the Calendar Control to Enter and Display Dates

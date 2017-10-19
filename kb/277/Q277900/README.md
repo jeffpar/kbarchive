@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277900: PRB: Changes to Key Field in Parent Table Not Cascaded to Child"
-permalink: kb/277/Q277900/
+permalink: /kb/277/Q277900/
 ---
 
 ## Q277900: PRB: Changes to Key Field in Parent Table Not Cascaded to Child

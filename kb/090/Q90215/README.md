@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90215: WFWG Err Msg: Error 6118: The List of Servers for This..."
-permalink: kb/090/Q90215/
+permalink: /kb/090/Q90215/
 ---
 
 ## Q90215: WFWG Err Msg: Error 6118: The List of Servers for This...

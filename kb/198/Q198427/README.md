@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198427: PRB: Unable to Edit Remote View When Base Table Name is PREF"
-permalink: kb/198/Q198427/
+permalink: /kb/198/Q198427/
 ---
 
 ## Q198427: PRB: Unable to Edit Remote View When Base Table Name is PREF

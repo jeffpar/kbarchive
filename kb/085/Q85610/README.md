@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85610: FAX: Microsoft Mail Gateway to Fax Floppy Disk Layout"
-permalink: kb/085/Q85610/
+permalink: /kb/085/Q85610/
 ---
 
 ## Q85610: FAX: Microsoft Mail Gateway to Fax Floppy Disk Layout

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155381: Error 53 When Connecting from NT to IBM LAN Server"
-permalink: kb/155/Q155381/
+permalink: /kb/155/Q155381/
 ---
 
 ## Q155381: Error 53 When Connecting from NT to IBM LAN Server

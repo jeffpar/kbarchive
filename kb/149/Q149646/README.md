@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149646: No DTMF Tones on Presario While Using Speaker Phone"
-permalink: kb/149/Q149646/
+permalink: /kb/149/Q149646/
 ---
 
 ## Q149646: No DTMF Tones on Presario While Using Speaker Phone

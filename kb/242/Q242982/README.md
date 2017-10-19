@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242982: PRB: VFP Hangs on Windows 98 When Using Novell NetWare Client"
-permalink: kb/242/Q242982/
+permalink: /kb/242/Q242982/
 ---
 
 ## Q242982: PRB: VFP Hangs on Windows 98 When Using Novell NetWare Client

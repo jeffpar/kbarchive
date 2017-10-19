@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132522: Quick Directory Replication Troubleshooting Tip"
-permalink: kb/132/Q132522/
+permalink: /kb/132/Q132522/
 ---
 
 ## Q132522: Quick Directory Replication Troubleshooting Tip

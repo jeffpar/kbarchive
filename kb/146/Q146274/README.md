@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146274: INFO: Limitation of SNA Server Client Using Network Client 3.0"
-permalink: kb/146/Q146274/
+permalink: /kb/146/Q146274/
 ---
 
 ## Q146274: INFO: Limitation of SNA Server Client Using Network Client 3.0

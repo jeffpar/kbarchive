@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166958: FIX: WWWQuote Sample Fails with Error Message"
-permalink: kb/166/Q166958/
+permalink: /kb/166/Q166958/
 ---
 
 ## Q166958: FIX: WWWQuote Sample Fails with Error Message

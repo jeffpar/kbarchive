@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111881: RAS Err Msg: Error 642: One of Your NetBIOS Names Is..."
-permalink: kb/111/Q111881/
+permalink: /kb/111/Q111881/
 ---
 
 ## Q111881: RAS Err Msg: Error 642: One of Your NetBIOS Names Is...

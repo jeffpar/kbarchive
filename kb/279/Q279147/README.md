@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279147: Password Reset For MSN Explorer &quot;msn.com&quot; E-mail Accounts"
-permalink: kb/279/Q279147/
+permalink: /kb/279/Q279147/
 ---
 
 ## Q279147: Password Reset For MSN Explorer &quot;msn.com&quot; E-mail Accounts

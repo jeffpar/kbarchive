@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194059: Encarta Virtual Globe 99: How to Print the Map Legend"
-permalink: kb/194/Q194059/
+permalink: /kb/194/Q194059/
 ---
 
 ## Q194059: Encarta Virtual Globe 99: How to Print the Map Legend

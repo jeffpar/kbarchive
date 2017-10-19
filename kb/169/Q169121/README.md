@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169121: XCLN: Win95 Will Not Shut down with Exchange Client Running"
-permalink: kb/169/Q169121/
+permalink: /kb/169/Q169121/
 ---
 
 ## Q169121: XCLN: Win95 Will Not Shut down with Exchange Client Running

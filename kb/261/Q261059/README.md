@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261059: MCM2: Force Feedback Effects Are Lost During Game Play"
-permalink: kb/261/Q261059/
+permalink: /kb/261/Q261059/
 ---
 
 ## Q261059: MCM2: Force Feedback Effects Are Lost During Game Play

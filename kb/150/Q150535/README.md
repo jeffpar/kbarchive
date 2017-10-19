@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150535: Cannot Create Backup Copies of Windows 95 Disks"
-permalink: kb/150/Q150535/
+permalink: /kb/150/Q150535/
 ---
 
 ## Q150535: Cannot Create Backup Copies of Windows 95 Disks

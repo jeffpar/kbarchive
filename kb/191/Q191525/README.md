@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191525: FIX: OpenTables of Cursor Object May Fail with Locate Dialog"
-permalink: kb/191/Q191525/
+permalink: /kb/191/Q191525/
 ---
 
 ## Q191525: FIX: OpenTables of Cursor Object May Fail with Locate Dialog

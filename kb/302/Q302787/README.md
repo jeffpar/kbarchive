@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302787: No Error Message When POP Account Is Set Up Incorrectly In MSN E"
-permalink: kb/302/Q302787/
+permalink: /kb/302/Q302787/
 ---
 
 ## Q302787: No Error Message When POP Account Is Set Up Incorrectly In MSN E

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186357: RPC UseWinsockForIP Is Only Applicable to UDP and IPX"
-permalink: kb/186/Q186357/
+permalink: /kb/186/Q186357/
 ---
 
 ## Q186357: RPC UseWinsockForIP Is Only Applicable to UDP and IPX

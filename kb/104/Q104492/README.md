@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104492: MS Draw Palettes May Disappear When Scrolled in Windows NT"
-permalink: kb/104/Q104492/
+permalink: /kb/104/Q104492/
 ---
 
 ## Q104492: MS Draw Palettes May Disappear When Scrolled in Windows NT

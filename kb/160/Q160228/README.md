@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160228: FP97: Bullet Points, Numbers Hidden When Font Size Increased"
-permalink: kb/160/Q160228/
+permalink: /kb/160/Q160228/
 ---
 
 ## Q160228: FP97: Bullet Points, Numbers Hidden When Font Size Increased

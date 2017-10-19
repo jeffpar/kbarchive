@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159577: No Warning Displayed When Restarting Shared Printer"
-permalink: kb/159/Q159577/
+permalink: /kb/159/Q159577/
 ---
 
 ## Q159577: No Warning Displayed When Restarting Shared Printer

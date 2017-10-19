@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299748: Train Simulator: Contradictory Messages During Installation"
-permalink: kb/299/Q299748/
+permalink: /kb/299/Q299748/
 ---
 
 ## Q299748: Train Simulator: Contradictory Messages During Installation

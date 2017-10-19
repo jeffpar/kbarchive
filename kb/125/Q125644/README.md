@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125644: FIX: Property Sheet with Edit Doesn't Close On ESC Key"
-permalink: kb/125/Q125644/
+permalink: /kb/125/Q125644/
 ---
 
 ## Q125644: FIX: Property Sheet with Edit Doesn't Close On ESC Key

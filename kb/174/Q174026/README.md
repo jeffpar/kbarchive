@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174026: ODE: How to Use the ProgressBar ActiveX Control"
-permalink: kb/174/Q174026/
+permalink: /kb/174/Q174026/
 ---
 
 ## Q174026: ODE: How to Use the ProgressBar ActiveX Control

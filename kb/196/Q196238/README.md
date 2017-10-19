@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196238: SNARAS Goes Into Infinite Loop When Invalid Msg Type Is Received"
-permalink: kb/196/Q196238/
+permalink: /kb/196/Q196238/
 ---
 
 ## Q196238: SNARAS Goes Into Infinite Loop When Invalid Msg Type Is Received

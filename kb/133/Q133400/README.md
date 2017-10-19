@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133400: XCON: Callout Schedule Not Affected by Message Priority"
-permalink: kb/133/Q133400/
+permalink: /kb/133/Q133400/
 ---
 
 ## Q133400: XCON: Callout Schedule Not Affected by Message Priority

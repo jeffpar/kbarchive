@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191334: SMS: Windows NT Remote Control Agent Stops Responding on Restart"
-permalink: kb/191/Q191334/
+permalink: /kb/191/Q191334/
 ---
 
 ## Q191334: SMS: Windows NT Remote Control Agent Stops Responding on Restart

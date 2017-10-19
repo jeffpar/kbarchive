@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110295: Remote Log On Authentication"
-permalink: kb/110/Q110295/
+permalink: /kb/110/Q110295/
 ---
 
 ## Q110295: Remote Log On Authentication

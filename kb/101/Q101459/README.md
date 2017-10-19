@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101459: SMTP: GW0645: Configuring the SMTP Gateway &amp; DNS"
-permalink: kb/101/Q101459/
+permalink: /kb/101/Q101459/
 ---
 
 ## Q101459: SMTP: GW0645: Configuring the SMTP Gateway &amp; DNS

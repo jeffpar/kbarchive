@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109655: Asimov: Errors in Video and Audio Playback"
-permalink: kb/109/Q109655/
+permalink: /kb/109/Q109655/
 ---
 
 ## Q109655: Asimov: Errors in Video and Audio Playback

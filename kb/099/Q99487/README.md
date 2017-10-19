@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99487: Argument Orders for CDECL and PASCAL Functions in MASM"
-permalink: kb/099/Q99487/
+permalink: /kb/099/Q99487/
 ---
 
 ## Q99487: Argument Orders for CDECL and PASCAL Functions in MASM

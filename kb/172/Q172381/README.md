@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172381: HOWTO: Respond to the Auto-commit Feature of a VB Data Control"
-permalink: kb/172/Q172381/
+permalink: /kb/172/Q172381/
 ---
 
 ## Q172381: HOWTO: Respond to the Auto-commit Feature of a VB Data Control

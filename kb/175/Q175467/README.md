@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175467: Bookshelf: Can't Install on Workstation from Network Drive"
-permalink: kb/175/Q175467/
+permalink: /kb/175/Q175467/
 ---
 
 ## Q175467: Bookshelf: Can't Install on Workstation from Network Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269234: XFOR: SNADS Connector Stops Processing Messages"
-permalink: kb/269/Q269234/
+permalink: /kb/269/Q269234/
 ---
 
 ## Q269234: XFOR: SNADS Connector Stops Processing Messages

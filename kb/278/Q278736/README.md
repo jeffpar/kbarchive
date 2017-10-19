@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278736: XADM:  Alternatives to the &quot;Move  Mailbox&quot; command of the"
-permalink: kb/278/Q278736/
+permalink: /kb/278/Q278736/
 ---
 
 ## Q278736: XADM:  Alternatives to the &quot;Move  Mailbox&quot; command of the

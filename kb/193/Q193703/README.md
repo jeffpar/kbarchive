@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193703: XADM: Error Msg: Event ID 1189; IMAP4 Object Not Found"
-permalink: kb/193/Q193703/
+permalink: /kb/193/Q193703/
 ---
 
 ## Q193703: XADM: Error Msg: Event ID 1189; IMAP4 Object Not Found

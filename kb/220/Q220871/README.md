@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220871: SNA Server LUs Assigned To Authenticated Users Group Do Not Work"
-permalink: kb/220/Q220871/
+permalink: /kb/220/Q220871/
 ---
 
 ## Q220871: SNA Server LUs Assigned To Authenticated Users Group Do Not Work

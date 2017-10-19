@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94384: Err Msg: MSBACKUP Program Files Must Be Located on Hard Disk"
-permalink: kb/094/Q94384/
+permalink: /kb/094/Q94384/
 ---
 
 ## Q94384: Err Msg: MSBACKUP Program Files Must Be Located on Hard Disk

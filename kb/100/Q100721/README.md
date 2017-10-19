@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100721: GP Fault Occurs in Anti-Virus for Windows with Tetris Faces"
-permalink: kb/100/Q100721/
+permalink: /kb/100/Q100721/
 ---
 
 ## Q100721: GP Fault Occurs in Anti-Virus for Windows with Tetris Faces

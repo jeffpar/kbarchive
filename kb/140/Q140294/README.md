@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140294: HOWTO: Append Records from Any Delimited File with Memo Data"
-permalink: kb/140/Q140294/
+permalink: /kb/140/Q140294/
 ---
 
 ## Q140294: HOWTO: Append Records from Any Delimited File with Memo Data

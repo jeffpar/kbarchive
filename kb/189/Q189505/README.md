@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189505: FIX: Init Event Code to Multilselect List Box Items Fails"
-permalink: kb/189/Q189505/
+permalink: /kb/189/Q189505/
 ---
 
 ## Q189505: FIX: Init Event Code to Multilselect List Box Items Fails

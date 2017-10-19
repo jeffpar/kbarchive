@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96755: Compaq LTE Hibernation Mode Incompatible with DoubleSpace"
-permalink: kb/096/Q96755/
+permalink: /kb/096/Q96755/
 ---
 
 ## Q96755: Compaq LTE Hibernation Mode Incompatible with DoubleSpace

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32816: PRB: Causes of R6000 &quot;Stack Overflow&quot; Error"
-permalink: kb/032/Q32816/
+permalink: /kb/032/Q32816/
 ---
 
 ## Q32816: PRB: Causes of R6000 &quot;Stack Overflow&quot; Error

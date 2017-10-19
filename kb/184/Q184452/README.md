@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184452: IE Training Kit: Chapter 10 Lab Files Not On CD-ROM"
-permalink: kb/184/Q184452/
+permalink: /kb/184/Q184452/
 ---
 
 ## Q184452: IE Training Kit: Chapter 10 Lab Files Not On CD-ROM

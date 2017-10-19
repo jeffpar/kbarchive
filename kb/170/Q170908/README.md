@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170908: INFO: Key Management Server Functions Not Exposed to Developers"
-permalink: kb/170/Q170908/
+permalink: /kb/170/Q170908/
 ---
 
 ## Q170908: INFO: Key Management Server Functions Not Exposed to Developers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158502: PPT: Macro Menus and Visual Basic Editor Require an Open File"
-permalink: kb/158/Q158502/
+permalink: /kb/158/Q158502/
 ---
 
 ## Q158502: PPT: Macro Menus and Visual Basic Editor Require an Open File

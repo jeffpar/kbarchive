@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143143: Error Printing From Macintosh to LPT Port of Windows NT Server"
-permalink: kb/143/Q143143/
+permalink: /kb/143/Q143143/
 ---
 
 ## Q143143: Error Printing From Macintosh to LPT Port of Windows NT Server

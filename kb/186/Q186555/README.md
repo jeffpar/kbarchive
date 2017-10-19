@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186555: Terminal Server Error Messages: 2200 to 2299"
-permalink: kb/186/Q186555/
+permalink: /kb/186/Q186555/
 ---
 
 ## Q186555: Terminal Server Error Messages: 2200 to 2299

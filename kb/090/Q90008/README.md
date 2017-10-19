@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90008: Low Memory Makes Voice Pilot Slow"
-permalink: kb/090/Q90008/
+permalink: /kb/090/Q90008/
 ---
 
 ## Q90008: Low Memory Makes Voice Pilot Slow

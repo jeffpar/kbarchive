@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77260: Mixed FORTRAN/C with OS/2 DLLs: Example, Restrictions"
-permalink: kb/077/Q77260/
+permalink: /kb/077/Q77260/
 ---
 
 ## Q77260: Mixed FORTRAN/C with OS/2 DLLs: Example, Restrictions

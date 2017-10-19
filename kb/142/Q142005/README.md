@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142005: Setting the Correct ICM Profile"
-permalink: kb/142/Q142005/
+permalink: /kb/142/Q142005/
 ---
 
 ## Q142005: Setting the Correct ICM Profile

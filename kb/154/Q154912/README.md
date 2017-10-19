@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154912: Novell's NPRINT Command Does Not Work in Windows NT 4.0"
-permalink: kb/154/Q154912/
+permalink: /kb/154/Q154912/
 ---
 
 ## Q154912: Novell's NPRINT Command Does Not Work in Windows NT 4.0

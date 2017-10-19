@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248698: MPRSHUT.EXE - DLL Initialization Message During Shutdown"
-permalink: kb/248/Q248698/
+permalink: /kb/248/Q248698/
 ---
 
 ## Q248698: MPRSHUT.EXE - DLL Initialization Message During Shutdown

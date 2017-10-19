@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276554: INFO: How To Modify a Resize Object to Work with an OptionGroup"
-permalink: kb/276/Q276554/
+permalink: /kb/276/Q276554/
 ---
 
 ## Q276554: INFO: How To Modify a Resize Object to Work with an OptionGroup

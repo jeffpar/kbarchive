@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183702: WD97: DocErr: &quot;Field Codes: =(Formula) Field&quot; Help Topic Wrong"
-permalink: kb/183/Q183702/
+permalink: /kb/183/Q183702/
 ---
 
 ## Q183702: WD97: DocErr: &quot;Field Codes: =(Formula) Field&quot; Help Topic Wrong

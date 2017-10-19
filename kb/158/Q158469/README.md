@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158469: INFO: Time Difference in Checking Out vs. Getting File in Source"
-permalink: kb/158/Q158469/
+permalink: /kb/158/Q158469/
 ---
 
 ## Q158469: INFO: Time Difference in Checking Out vs. Getting File in Source

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267911: XWEB: Error Message &quot;Internal Server Error&quot; When Using OWA"
-permalink: kb/267/Q267911/
+permalink: /kb/267/Q267911/
 ---
 
 ## Q267911: XWEB: Error Message &quot;Internal Server Error&quot; When Using OWA

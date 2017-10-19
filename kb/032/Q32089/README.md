@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32089: Performing NDB Navigation in Flight Simulator"
-permalink: kb/032/Q32089/
+permalink: /kb/032/Q32089/
 ---
 
 ## Q32089: Performing NDB Navigation in Flight Simulator

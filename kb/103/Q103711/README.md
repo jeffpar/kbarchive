@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103711: BUG: CXX0067: Error: Illegal Enum Value"
-permalink: kb/103/Q103711/
+permalink: /kb/103/Q103711/
 ---
 
 ## Q103711: BUG: CXX0067: Error: Illegal Enum Value

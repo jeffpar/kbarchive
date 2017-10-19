@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137555: OLE Controls and Control Containers Guidelines"
-permalink: kb/137/Q137555/
+permalink: /kb/137/Q137555/
 ---
 
 ## Q137555: OLE Controls and Control Containers Guidelines

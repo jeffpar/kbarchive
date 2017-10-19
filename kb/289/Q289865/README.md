@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289865: XADM: Crash in store!CmcvtrBptExternal&#95;&#95;hrCheckIntlShCut"
-permalink: kb/289/Q289865/
+permalink: /kb/289/Q289865/
 ---
 
 ## Q289865: XADM: Crash in store!CmcvtrBptExternal&#95;&#95;hrCheckIntlShCut

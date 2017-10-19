@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171037: Error Message: Real Audio Error 14: No Document Available at..."
-permalink: kb/171/Q171037/
+permalink: /kb/171/Q171037/
 ---
 
 ## Q171037: Error Message: Real Audio Error 14: No Document Available at...

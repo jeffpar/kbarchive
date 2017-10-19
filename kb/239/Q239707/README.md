@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239707: TN3270 Clients May Fail to Reconnect to a Host Session"
-permalink: kb/239/Q239707/
+permalink: /kb/239/Q239707/
 ---
 
 ## Q239707: TN3270 Clients May Fail to Reconnect to a Host Session

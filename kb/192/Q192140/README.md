@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192140: SMSINST: Runtime I/O Error When Calling a Program"
-permalink: kb/192/Q192140/
+permalink: /kb/192/Q192140/
 ---
 
 ## Q192140: SMSINST: Runtime I/O Error When Calling a Program

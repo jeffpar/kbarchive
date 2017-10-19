@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175590: Cardbus Cards May Not Work with Vesuvius Chip Set"
-permalink: kb/175/Q175590/
+permalink: /kb/175/Q175590/
 ---
 
 ## Q175590: Cardbus Cards May Not Work with Vesuvius Chip Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190010: Logging Performs Unwanted Flushes of Log Data Buffer"
-permalink: kb/190/Q190010/
+permalink: /kb/190/Q190010/
 ---
 
 ## Q190010: Logging Performs Unwanted Flushes of Log Data Buffer

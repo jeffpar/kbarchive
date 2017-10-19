@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155777: WD97: Can't Crop Object with SHIFT Key (Dragging Size Handle)"
-permalink: kb/155/Q155777/
+permalink: /kb/155/Q155777/
 ---
 
 ## Q155777: WD97: Can't Crop Object with SHIFT Key (Dragging Size Handle)

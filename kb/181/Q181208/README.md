@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181208: FP98: How to Return Records From a Query as a Hyperlink"
-permalink: kb/181/Q181208/
+permalink: /kb/181/Q181208/
 ---
 
 ## Q181208: FP98: How to Return Records From a Query as a Hyperlink

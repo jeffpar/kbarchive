@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251007: Some Cluster Disks Are Not Available After Installing SP6"
-permalink: kb/251/Q251007/
+permalink: /kb/251/Q251007/
 ---
 
 ## Q251007: Some Cluster Disks Are Not Available After Installing SP6

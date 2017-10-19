@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143132: EventLog Registry Value Does Not Enable Print Event Logging"
-permalink: kb/143/Q143132/
+permalink: /kb/143/Q143132/
 ---
 
 ## Q143132: EventLog Registry Value Does Not Enable Print Event Logging

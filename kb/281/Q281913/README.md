@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281913: BUG: Referencing Type Libraries May Render Platform Dependent"
-permalink: kb/281/Q281913/
+permalink: /kb/281/Q281913/
 ---
 
 ## Q281913: BUG: Referencing Type Libraries May Render Platform Dependent

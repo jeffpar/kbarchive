@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168037: SNA Manager Fails to Display Status for Dependent APPC LUs"
-permalink: kb/168/Q168037/
+permalink: /kb/168/Q168037/
 ---
 
 ## Q168037: SNA Manager Fails to Display Status for Dependent APPC LUs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191528: FIX: DBCombo Not Appearing on SSTab After Changing Settings"
-permalink: kb/191/Q191528/
+permalink: /kb/191/Q191528/
 ---
 
 ## Q191528: FIX: DBCombo Not Appearing on SSTab After Changing Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115258: NewGen ImagerPlus 12 Printer Emulations"
-permalink: kb/115/Q115258/
+permalink: /kb/115/Q115258/
 ---
 
 ## Q115258: NewGen ImagerPlus 12 Printer Emulations

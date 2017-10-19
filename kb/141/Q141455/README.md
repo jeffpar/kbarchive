@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141455: Problems Installing Visio Technical 4.0 from CD-ROM"
-permalink: kb/141/Q141455/
+permalink: /kb/141/Q141455/
 ---
 
 ## Q141455: Problems Installing Visio Technical 4.0 from CD-ROM

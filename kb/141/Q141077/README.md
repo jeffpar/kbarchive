@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141077: WD97: &quot;Invalid Page Fault&quot; During Mail Merge"
-permalink: kb/141/Q141077/
+permalink: /kb/141/Q141077/
 ---
 
 ## Q141077: WD97: &quot;Invalid Page Fault&quot; During Mail Merge

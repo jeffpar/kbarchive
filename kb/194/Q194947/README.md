@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194947: XADM: Recovering Advanced Security Key for a Mailbox"
-permalink: kb/194/Q194947/
+permalink: /kb/194/Q194947/
 ---
 
 ## Q194947: XADM: Recovering Advanced Security Key for a Mailbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260183: FS2000: Aircraft Unexpectedly Banks to the Left or the Right"
-permalink: kb/260/Q260183/
+permalink: /kb/260/Q260183/
 ---
 
 ## Q260183: FS2000: Aircraft Unexpectedly Banks to the Left or the Right

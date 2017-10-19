@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148332: BUG: GRID: SET RELATION TO Does Not Break Relation Properly"
-permalink: kb/148/Q148332/
+permalink: /kb/148/Q148332/
 ---
 
 ## Q148332: BUG: GRID: SET RELATION TO Does Not Break Relation Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176410: PRB: GPF When Opening or Creating a New Project"
-permalink: kb/176/Q176410/
+permalink: /kb/176/Q176410/
 ---
 
 ## Q176410: PRB: GPF When Opening or Creating a New Project

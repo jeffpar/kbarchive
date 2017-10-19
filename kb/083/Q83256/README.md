@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83256: Productivity Pack 3.1 Directory Listings (3.5 720K)"
-permalink: kb/083/Q83256/
+permalink: /kb/083/Q83256/
 ---
 
 ## Q83256: Productivity Pack 3.1 Directory Listings (3.5 720K)

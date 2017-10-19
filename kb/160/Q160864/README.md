@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160864: WD97: Close All Doesn't Close Multiple HTML Documents"
-permalink: kb/160/Q160864/
+permalink: /kb/160/Q160864/
 ---
 
 ## Q160864: WD97: Close All Doesn't Close Multiple HTML Documents

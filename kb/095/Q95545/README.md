@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95545: HOWTO: Use GlobalDosAlloc() and GlobalDosFree()"
-permalink: kb/095/Q95545/
+permalink: /kb/095/Q95545/
 ---
 
 ## Q95545: HOWTO: Use GlobalDosAlloc() and GlobalDosFree()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241564: XWEB: Logon.asp Displays Script Text Instead of Running Script"
-permalink: kb/241/Q241564/
+permalink: /kb/241/Q241564/
 ---
 
 ## Q241564: XWEB: Logon.asp Displays Script Text Instead of Running Script

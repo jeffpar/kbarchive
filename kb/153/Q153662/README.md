@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153662: SMS: Internet Explorer GP Faults When Being Remote Controlled"
-permalink: kb/153/Q153662/
+permalink: /kb/153/Q153662/
 ---
 
 ## Q153662: SMS: Internet Explorer GP Faults When Being Remote Controlled

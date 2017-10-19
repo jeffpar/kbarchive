@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230515: COMTI Method Invocation Fails With Runtime Error 1426"
-permalink: kb/230/Q230515/
+permalink: /kb/230/Q230515/
 ---
 
 ## Q230515: COMTI Method Invocation Fails With Runtime Error 1426

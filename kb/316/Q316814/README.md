@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316814: FIX: Mismatched Pushjmp Err Msg Using Beautify in IntelliSense"
-permalink: kb/316/Q316814/
+permalink: /kb/316/Q316814/
 ---
 
 ## Q316814: FIX: Mismatched Pushjmp Err Msg Using Beautify in IntelliSense

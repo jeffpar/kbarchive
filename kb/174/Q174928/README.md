@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174928: Dependencies Page Empty When Running Resource Wizard"
-permalink: kb/174/Q174928/
+permalink: /kb/174/Q174928/
 ---
 
 ## Q174928: Dependencies Page Empty When Running Resource Wizard

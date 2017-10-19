@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113024: PPT: May Have to Scale Cross-Platform Bitmaps for Display"
-permalink: kb/113/Q113024/
+permalink: /kb/113/Q113024/
 ---
 
 ## Q113024: PPT: May Have to Scale Cross-Platform Bitmaps for Display

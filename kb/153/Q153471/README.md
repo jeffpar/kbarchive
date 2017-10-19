@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153471: Problems with Removable IDE Drives in Windows 95"
-permalink: kb/153/Q153471/
+permalink: /kb/153/Q153471/
 ---
 
 ## Q153471: Problems with Removable IDE Drives in Windows 95

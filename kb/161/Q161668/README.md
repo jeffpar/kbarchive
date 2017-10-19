@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161668: Kids Plus!: Server Application Retains Previous Active Tool"
-permalink: kb/161/Q161668/
+permalink: /kb/161/Q161668/
 ---
 
 ## Q161668: Kids Plus!: Server Application Retains Previous Active Tool

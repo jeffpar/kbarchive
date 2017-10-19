@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157193: DOCERR: ActiveX Controls Help Topic Lists Incorrect File"
-permalink: kb/157/Q157193/
+permalink: /kb/157/Q157193/
 ---
 
 ## Q157193: DOCERR: ActiveX Controls Help Topic Lists Incorrect File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142196: PC Gen: BackOffice Mail Server Has Serial Number 0799-99992"
-permalink: kb/142/Q142196/
+permalink: /kb/142/Q142196/
 ---
 
 ## Q142196: PC Gen: BackOffice Mail Server Has Serial Number 0799-99992

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182529: Controlling Message Size Traced in SNA Server Message Traces"
-permalink: kb/182/Q182529/
+permalink: /kb/182/Q182529/
 ---
 
 ## Q182529: Controlling Message Size Traced in SNA Server Message Traces

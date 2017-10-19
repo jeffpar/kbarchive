@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140800: TN3270E Print Job Hangs in Print Manager"
-permalink: kb/140/Q140800/
+permalink: /kb/140/Q140800/
 ---
 
 ## Q140800: TN3270E Print Job Hangs in Print Manager

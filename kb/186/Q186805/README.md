@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186805: Intermittent Stop 0xA in Srv.sys on Shutdown"
-permalink: kb/186/Q186805/
+permalink: /kb/186/Q186805/
 ---
 
 ## Q186805: Intermittent Stop 0xA in Srv.sys on Shutdown

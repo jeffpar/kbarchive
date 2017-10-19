@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99724: Mac Wkst: Err Msg: Sorry, the Requested Window Could Not Be..."
-permalink: kb/099/Q99724/
+permalink: /kb/099/Q99724/
 ---
 
 ## Q99724: Mac Wkst: Err Msg: Sorry, the Requested Window Could Not Be...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47334: Changing the Automatic Word Wrap Location in Write"
-permalink: kb/047/Q47334/
+permalink: /kb/047/Q47334/
 ---
 
 ## Q47334: Changing the Automatic Word Wrap Location in Write

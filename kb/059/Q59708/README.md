@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59708: Windows 3.0: IBM Proprinter Margin Limitations"
-permalink: kb/059/Q59708/
+permalink: /kb/059/Q59708/
 ---
 
 ## Q59708: Windows 3.0: IBM Proprinter Margin Limitations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234070: PRB: Error  Using Remote View of SQL 7.0 Tables w/Unicode Tables"
-permalink: kb/234/Q234070/
+permalink: /kb/234/Q234070/
 ---
 
 ## Q234070: PRB: Error  Using Remote View of SQL 7.0 Tables w/Unicode Tables

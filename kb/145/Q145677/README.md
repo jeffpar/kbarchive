@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145677: FIX: ARROW and TAB keys Stop Working in MDI Child Form"
-permalink: kb/145/Q145677/
+permalink: /kb/145/Q145677/
 ---
 
 ## Q145677: FIX: ARROW and TAB keys Stop Working in MDI Child Form

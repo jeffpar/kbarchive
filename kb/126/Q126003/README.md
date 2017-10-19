@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126003: Writer/Artist: Keyboard Shortcuts"
-permalink: kb/126/Q126003/
+permalink: /kb/126/Q126003/
 ---
 
 ## Q126003: Writer/Artist: Keyboard Shortcuts

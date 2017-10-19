@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126648: PC Win DOS: How the WINMAIL.DAT File Effects Attachments"
-permalink: kb/126/Q126648/
+permalink: /kb/126/Q126648/
 ---
 
 ## Q126648: PC Win DOS: How the WINMAIL.DAT File Effects Attachments

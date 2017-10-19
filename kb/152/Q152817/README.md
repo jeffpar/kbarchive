@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152817: FP98: Server Error Listing Users or Groups in Trusted Domains"
-permalink: kb/152/Q152817/
+permalink: /kb/152/Q152817/
 ---
 
 ## Q152817: FP98: Server Error Listing Users or Groups in Trusted Domains

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141345: BUG: Duplicating Resource Causes Resource ID Collision"
-permalink: kb/141/Q141345/
+permalink: /kb/141/Q141345/
 ---
 
 ## Q141345: BUG: Duplicating Resource Causes Resource ID Collision

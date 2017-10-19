@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278937: APPC Print Job with AVM Commands May Print Extra Lines"
-permalink: kb/278/Q278937/
+permalink: /kb/278/Q278937/
 ---
 
 ## Q278937: APPC Print Job with AVM Commands May Print Extra Lines

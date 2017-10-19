@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193593: PRB: Cannot Paste PrintScreen Result to OLE Control"
-permalink: kb/193/Q193593/
+permalink: /kb/193/Q193593/
 ---
 
 ## Q193593: PRB: Cannot Paste PrintScreen Result to OLE Control

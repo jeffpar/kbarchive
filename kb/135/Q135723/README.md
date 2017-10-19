@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135723: Migrating Macintosh Volumes from NetWare to Windows NT"
-permalink: kb/135/Q135723/
+permalink: /kb/135/Q135723/
 ---
 
 ## Q135723: Migrating Macintosh Volumes from NetWare to Windows NT

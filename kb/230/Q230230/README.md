@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230230: Password Protected Screen Saver Does Not Function Properly"
-permalink: kb/230/Q230230/
+permalink: /kb/230/Q230230/
 ---
 
 ## Q230230: Password Protected Screen Saver Does Not Function Properly

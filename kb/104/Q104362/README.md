@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104362: PC Win: CHKMMF Creates a Backup File on Each Run"
-permalink: kb/104/Q104362/
+permalink: /kb/104/Q104362/
 ---
 
 ## Q104362: PC Win: CHKMMF Creates a Backup File on Each Run

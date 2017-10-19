@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162777: Printing to an LPD Service Running On SunOS 4.1.x System"
-permalink: kb/162/Q162777/
+permalink: /kb/162/Q162777/
 ---
 
 ## Q162777: Printing to an LPD Service Running On SunOS 4.1.x System

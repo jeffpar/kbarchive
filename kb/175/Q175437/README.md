@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175437: XFOR: Thai Characters not Translated by the MS Mail Connector"
-permalink: kb/175/Q175437/
+permalink: /kb/175/Q175437/
 ---
 
 ## Q175437: XFOR: Thai Characters not Translated by the MS Mail Connector

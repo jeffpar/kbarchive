@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124211: Using IBM PC/3270 Version 4.0 on SNA Server"
-permalink: kb/124/Q124211/
+permalink: /kb/124/Q124211/
 ---
 
 ## Q124211: Using IBM PC/3270 Version 4.0 on SNA Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140932: XCON: IMC: Resent-from Headers Use Oldest Information"
-permalink: kb/140/Q140932/
+permalink: /kb/140/Q140932/
 ---
 
 ## Q140932: XCON: IMC: Resent-from Headers Use Oldest Information

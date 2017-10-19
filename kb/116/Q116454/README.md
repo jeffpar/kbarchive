@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116454: HP 1200c and 300 XL Require &quot;Print TrueType As Graphics&quot;"
-permalink: kb/116/Q116454/
+permalink: /kb/116/Q116454/
 ---
 
 ## Q116454: HP 1200c and 300 XL Require &quot;Print TrueType As Graphics&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191221: XWEB: Mailbox Hidden from GAL Not Usable in Outlook Web Access"
-permalink: kb/191/Q191221/
+permalink: /kb/191/Q191221/
 ---
 
 ## Q191221: XWEB: Mailbox Hidden from GAL Not Usable in Outlook Web Access

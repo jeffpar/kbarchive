@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262203: Roaming User Profile May Be Corrupted by Copy Hive Problem"
-permalink: kb/262/Q262203/
+permalink: /kb/262/Q262203/
 ---
 
 ## Q262203: Roaming User Profile May Be Corrupted by Copy Hive Problem

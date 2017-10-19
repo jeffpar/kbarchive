@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112917: PC Win: Screen Display Does Not Auto Adjust to Monitor Change"
-permalink: kb/112/Q112917/
+permalink: /kb/112/Q112917/
 ---
 
 ## Q112917: PC Win: Screen Display Does Not Auto Adjust to Monitor Change

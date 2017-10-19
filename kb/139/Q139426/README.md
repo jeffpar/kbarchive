@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139426: Cabinet Files Not Recognized as Data Source"
-permalink: kb/139/Q139426/
+permalink: /kb/139/Q139426/
 ---
 
 ## Q139426: Cabinet Files Not Recognized as Data Source

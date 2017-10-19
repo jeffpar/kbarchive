@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179562: SMS: DNS Name Not Reported for Windows 95 Clients"
-permalink: kb/179/Q179562/
+permalink: /kb/179/Q179562/
 ---
 
 ## Q179562: SMS: DNS Name Not Reported for Windows 95 Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249180: Desktop Applications with Microsoft Visual C++ 6.0 MCSD Training"
-permalink: kb/249/Q249180/
+permalink: /kb/249/Q249180/
 ---
 
 ## Q249180: Desktop Applications with Microsoft Visual C++ 6.0 MCSD Training

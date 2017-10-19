@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140485: INFO: Exporting PASCAL-Like Symbols in 32-Bit DLLs"
-permalink: kb/140/Q140485/
+permalink: /kb/140/Q140485/
 ---
 
 ## Q140485: INFO: Exporting PASCAL-Like Symbols in 32-Bit DLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149720: Files May Be Deleted with Norton Protected Recycle Bin Enabled"
-permalink: kb/149/Q149720/
+permalink: /kb/149/Q149720/
 ---
 
 ## Q149720: Files May Be Deleted with Norton Protected Recycle Bin Enabled

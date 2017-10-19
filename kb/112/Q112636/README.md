@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112636: Backup and Restore of COM.CFG"
-permalink: kb/112/Q112636/
+permalink: /kb/112/Q112636/
 ---
 
 ## Q112636: Backup and Restore of COM.CFG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110368: Encarta 1994: README.WRI Contents"
-permalink: kb/110/Q110368/
+permalink: /kb/110/Q110368/
 ---
 
 ## Q110368: Encarta 1994: README.WRI Contents

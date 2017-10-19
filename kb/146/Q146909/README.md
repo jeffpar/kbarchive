@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146909: HOWTO: Use VB Control Property or Variable in SQL Statement"
-permalink: kb/146/Q146909/
+permalink: /kb/146/Q146909/
 ---
 
 ## Q146909: HOWTO: Use VB Control Property or Variable in SQL Statement

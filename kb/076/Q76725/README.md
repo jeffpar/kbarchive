@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76725: FIX: INVOKE May Cause Incorrect Line Information"
-permalink: kb/076/Q76725/
+permalink: /kb/076/Q76725/
 ---
 
 ## Q76725: FIX: INVOKE May Cause Incorrect Line Information

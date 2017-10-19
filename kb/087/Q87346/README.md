@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87346: FIX: PR1428 Illegal Breakpoint Error Profiling P-code"
-permalink: kb/087/Q87346/
+permalink: /kb/087/Q87346/
 ---
 
 ## Q87346: FIX: PR1428 Illegal Breakpoint Error Profiling P-code

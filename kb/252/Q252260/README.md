@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252260: XWEB: Check Name in OWA Only Resolves Global Address List Names"
-permalink: kb/252/Q252260/
+permalink: /kb/252/Q252260/
 ---
 
 ## Q252260: XWEB: Check Name in OWA Only Resolves Global Address List Names

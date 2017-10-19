@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135165: Network Tool Cannot Copy Files on RPL Computers"
-permalink: kb/135/Q135165/
+permalink: /kb/135/Q135165/
 ---
 
 ## Q135165: Network Tool Cannot Copy Files on RPL Computers

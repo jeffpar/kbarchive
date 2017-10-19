@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189736: BUG: Painting Model for BitBlt and StretchBlt Changed for VB6"
-permalink: kb/189/Q189736/
+permalink: /kb/189/Q189736/
 ---
 
 ## Q189736: BUG: Painting Model for BitBlt and StretchBlt Changed for VB6

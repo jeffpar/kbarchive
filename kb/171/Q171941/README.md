@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171941: TN3270 Event 1-5, 601, 602 Don't Appear When Filtering Events"
-permalink: kb/171/Q171941/
+permalink: /kb/171/Q171941/
 ---
 
 ## Q171941: TN3270 Event 1-5, 601, 602 Don't Appear When Filtering Events

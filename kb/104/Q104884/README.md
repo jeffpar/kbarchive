@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104884: How to Write to the Calendar/Diary Programmatically"
-permalink: kb/104/Q104884/
+permalink: /kb/104/Q104884/
 ---
 
 ## Q104884: How to Write to the Calendar/Diary Programmatically

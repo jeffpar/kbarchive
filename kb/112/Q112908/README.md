@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112908: PC DOS: Err Msg: Notice 50 Folder Damaged..."
-permalink: kb/112/Q112908/
+permalink: /kb/112/Q112908/
 ---
 
 ## Q112908: PC DOS: Err Msg: Notice 50 Folder Damaged...

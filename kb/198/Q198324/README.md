@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198324: WD97: Cannot Assign Shortcut Keys for Insert Bookmark"
-permalink: kb/198/Q198324/
+permalink: /kb/198/Q198324/
 ---
 
 ## Q198324: WD97: Cannot Assign Shortcut Keys for Insert Bookmark

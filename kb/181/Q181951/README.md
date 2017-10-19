@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181951: XFOR: Err Msg. Installing AT&amp;T Easylink Gateway on Connector PO"
-permalink: kb/181/Q181951/
+permalink: /kb/181/Q181951/
 ---
 
 ## Q181951: XFOR: Err Msg. Installing AT&amp;T Easylink Gateway on Connector PO

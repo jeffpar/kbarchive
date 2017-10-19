@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102899: Only 30 Characters of Local Group Name Shown in Properties"
-permalink: kb/102/Q102899/
+permalink: /kb/102/Q102899/
 ---
 
 ## Q102899: Only 30 Characters of Local Group Name Shown in Properties

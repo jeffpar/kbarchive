@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265767: HOWTO: Use the Remote Tools Installed with eMbedded Visual Basic"
-permalink: kb/265/Q265767/
+permalink: /kb/265/Q265767/
 ---
 
 ## Q265767: HOWTO: Use the Remote Tools Installed with eMbedded Visual Basic

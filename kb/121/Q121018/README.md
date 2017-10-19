@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121018: PRB: Special Characters in Path Cause NMake Error U1007"
-permalink: kb/121/Q121018/
+permalink: /kb/121/Q121018/
 ---
 
 ## Q121018: PRB: Special Characters in Path Cause NMake Error U1007

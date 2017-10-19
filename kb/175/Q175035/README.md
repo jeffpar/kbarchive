@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175035: Diskless Workstations Cannot Find BOOTP Server with DHCP"
-permalink: kb/175/Q175035/
+permalink: /kb/175/Q175035/
 ---
 
 ## Q175035: Diskless Workstations Cannot Find BOOTP Server with DHCP

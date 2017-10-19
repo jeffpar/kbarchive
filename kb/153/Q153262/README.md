@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153262: Close Combat Trial Version: Minimum Requirements for Windows"
-permalink: kb/153/Q153262/
+permalink: /kb/153/Q153262/
 ---
 
 ## Q153262: Close Combat Trial Version: Minimum Requirements for Windows

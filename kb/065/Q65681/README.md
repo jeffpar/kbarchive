@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65681: Windows 3.0 Help Text Is Unreadable on Gas Plasma Displays"
-permalink: kb/065/Q65681/
+permalink: /kb/065/Q65681/
 ---
 
 ## Q65681: Windows 3.0 Help Text Is Unreadable on Gas Plasma Displays

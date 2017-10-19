@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274211: PRB: Error Msg. 3734 Occurs When You Repeatedly Open &amp; Close MDB"
-permalink: kb/274/Q274211/
+permalink: /kb/274/Q274211/
 ---
 
 ## Q274211: PRB: Error Msg. 3734 Occurs When You Repeatedly Open &amp; Close MDB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189740: BUG: Class Builder Does Not Handle Base Classes Properly"
-permalink: kb/189/Q189740/
+permalink: /kb/189/Q189740/
 ---
 
 ## Q189740: BUG: Class Builder Does Not Handle Base Classes Properly

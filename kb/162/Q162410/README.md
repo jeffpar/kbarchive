@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162410: FIX: Report Page Headers Print on Summary Page"
-permalink: kb/162/Q162410/
+permalink: /kb/162/Q162410/
 ---
 
 ## Q162410: FIX: Report Page Headers Print on Summary Page

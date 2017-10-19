@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253742: Access Violation in Ipconfig.exe with RAS Connection Using SLIP"
-permalink: kb/253/Q253742/
+permalink: /kb/253/Q253742/
 ---
 
 ## Q253742: Access Violation in Ipconfig.exe with RAS Connection Using SLIP

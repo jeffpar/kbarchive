@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151288: Top Articles on Networking with Windows 95"
-permalink: kb/151/Q151288/
+permalink: /kb/151/Q151288/
 ---
 
 ## Q151288: Top Articles on Networking with Windows 95

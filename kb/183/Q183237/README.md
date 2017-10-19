@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183237: Windows NT 4.0 Fails to Start on a Uniprocessor Compaq"
-permalink: kb/183/Q183237/
+permalink: /kb/183/Q183237/
 ---
 
 ## Q183237: Windows NT 4.0 Fails to Start on a Uniprocessor Compaq

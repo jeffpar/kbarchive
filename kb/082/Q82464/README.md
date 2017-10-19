@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82464: Control Panel Limit of 17 Installed Printer Drivers"
-permalink: kb/082/Q82464/
+permalink: /kb/082/Q82464/
 ---
 
 ## Q82464: Control Panel Limit of 17 Installed Printer Drivers

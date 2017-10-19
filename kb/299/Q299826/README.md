@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299826: Streets and Trips: Program Unexpectedly Stops Responding"
-permalink: kb/299/Q299826/
+permalink: /kb/299/Q299826/
 ---
 
 ## Q299826: Streets and Trips: Program Unexpectedly Stops Responding

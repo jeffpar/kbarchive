@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111536: PC Gen: Microsoft Mail and Virus Security"
-permalink: kb/111/Q111536/
+permalink: /kb/111/Q111536/
 ---
 
 ## Q111536: PC Gen: Microsoft Mail and Virus Security

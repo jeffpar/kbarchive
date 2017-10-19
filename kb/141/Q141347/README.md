@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141347: Err Msg: No Transport Provider Was Available for Delivery..."
-permalink: kb/141/Q141347/
+permalink: /kb/141/Q141347/
 ---
 
 ## Q141347: Err Msg: No Transport Provider Was Available for Delivery...

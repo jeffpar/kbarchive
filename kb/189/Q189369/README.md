@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189369: Using CD-ROM Drive at MS-DOS Prompt to Reinstall Windows 95"
-permalink: kb/189/Q189369/
+permalink: /kb/189/Q189369/
 ---
 
 ## Q189369: Using CD-ROM Drive at MS-DOS Prompt to Reinstall Windows 95

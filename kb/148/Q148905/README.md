@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148905: Return of Arcade: Registration Entries Made by Setup"
-permalink: kb/148/Q148905/
+permalink: /kb/148/Q148905/
 ---
 
 ## Q148905: Return of Arcade: Registration Entries Made by Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132623: Mixer Does Not Work After Upgrading to Windows 95"
-permalink: kb/132/Q132623/
+permalink: /kb/132/Q132623/
 ---
 
 ## Q132623: Mixer Does Not Work After Upgrading to Windows 95

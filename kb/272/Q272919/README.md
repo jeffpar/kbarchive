@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272919: How to add, rename, or delete Favorites in MSN Companion"
-permalink: kb/272/Q272919/
+permalink: /kb/272/Q272919/
 ---
 
 ## Q272919: How to add, rename, or delete Favorites in MSN Companion

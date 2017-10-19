@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163939: ODE97: Help Workshop Help Topics Contents"
-permalink: kb/163/Q163939/
+permalink: /kb/163/Q163939/
 ---
 
 ## Q163939: ODE97: Help Workshop Help Topics Contents

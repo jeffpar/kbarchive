@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172683: SNA Manager Traps When Editing LUA Properties TN3270 Tab"
-permalink: kb/172/Q172683/
+permalink: /kb/172/Q172683/
 ---
 
 ## Q172683: SNA Manager Traps When Editing LUA Properties TN3270 Tab

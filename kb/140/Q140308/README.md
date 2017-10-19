@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140308: Cinemania 95: Error &quot;Cannot Find One of the Required Fonts...&quot;"
-permalink: kb/140/Q140308/
+permalink: /kb/140/Q140308/
 ---
 
 ## Q140308: Cinemania 95: Error &quot;Cannot Find One of the Required Fonts...&quot;

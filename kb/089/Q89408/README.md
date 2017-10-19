@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89408: LAN Man 2.1 Test Summary (American Power SMART-UPS 400)"
-permalink: kb/089/Q89408/
+permalink: /kb/089/Q89408/
 ---
 
 ## Q89408: LAN Man 2.1 Test Summary (American Power SMART-UPS 400)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130023: DOCERR: RasDial() with Username and Password as Empty Strings"
-permalink: kb/130/Q130023/
+permalink: /kb/130/Q130023/
 ---
 
 ## Q130023: DOCERR: RasDial() with Username and Password as Empty Strings

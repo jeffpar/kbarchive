@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301611: Flight Simulator 2000: There Are No Engine Sounds"
-permalink: kb/301/Q301611/
+permalink: /kb/301/Q301611/
 ---
 
 ## Q301611: Flight Simulator 2000: There Are No Engine Sounds

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165081: WINSCL Cannot Delete NetBIOS Registration That Contains Spaces"
-permalink: kb/165/Q165081/
+permalink: /kb/165/Q165081/
 ---
 
 ## Q165081: WINSCL Cannot Delete NetBIOS Registration That Contains Spaces

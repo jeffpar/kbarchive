@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149296: XCLN: Open Item Above or Below Applies Only to Active Msg"
-permalink: kb/149/Q149296/
+permalink: /kb/149/Q149296/
 ---
 
 ## Q149296: XCLN: Open Item Above or Below Applies Only to Active Msg

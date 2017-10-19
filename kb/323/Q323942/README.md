@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323942: Asheron's Call: Err Msg: You Do Not Have the Current Version..."
-permalink: kb/323/Q323942/
+permalink: /kb/323/Q323942/
 ---
 
 ## Q323942: Asheron's Call: Err Msg: You Do Not Have the Current Version...

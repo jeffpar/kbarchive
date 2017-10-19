@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257523: BUG: Resource Leak When Displaying WMF Files in PictureBox"
-permalink: kb/257/Q257523/
+permalink: /kb/257/Q257523/
 ---
 
 ## Q257523: BUG: Resource Leak When Displaying WMF Files in PictureBox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185238: PRB: LostFocus of Textbox Control Has Different Behavior"
-permalink: kb/185/Q185238/
+permalink: /kb/185/Q185238/
 ---
 
 ## Q185238: PRB: LostFocus of Textbox Control Has Different Behavior

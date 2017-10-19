@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96887: PC WRmt: Changing the User-Information Data Files"
-permalink: kb/096/Q96887/
+permalink: /kb/096/Q96887/
 ---
 
 ## Q96887: PC WRmt: Changing the User-Information Data Files

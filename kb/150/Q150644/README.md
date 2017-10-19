@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150644: INFO: Quotes Required in Command Line for Names with Spaces"
-permalink: kb/150/Q150644/
+permalink: /kb/150/Q150644/
 ---
 
 ## Q150644: INFO: Quotes Required in Command Line for Names with Spaces

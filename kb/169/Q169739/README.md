@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169739: WD97: Error Message on Clicking Help Button for Convert to Frame"
-permalink: kb/169/Q169739/
+permalink: /kb/169/Q169739/
 ---
 
 ## Q169739: WD97: Error Message on Clicking Help Button for Convert to Frame

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129943: INFO: OLE Controls Must Be Registered"
-permalink: kb/129/Q129943/
+permalink: /kb/129/Q129943/
 ---
 
 ## Q129943: INFO: OLE Controls Must Be Registered

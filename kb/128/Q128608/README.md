@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128608: Windows NT Takes Long Time to Start with Aztech CD-ROM Driver"
-permalink: kb/128/Q128608/
+permalink: /kb/128/Q128608/
 ---
 
 ## Q128608: Windows NT Takes Long Time to Start with Aztech CD-ROM Driver

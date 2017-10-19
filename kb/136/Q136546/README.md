@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136546: Help Desk Options Incorrectly Displays Error Message"
-permalink: kb/136/Q136546/
+permalink: /kb/136/Q136546/
 ---
 
 ## Q136546: Help Desk Options Incorrectly Displays Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221402: XWEB: OWA Message Body Does Not Display European Currency Symbol"
-permalink: kb/221/Q221402/
+permalink: /kb/221/Q221402/
 ---
 
 ## Q221402: XWEB: OWA Message Body Does Not Display European Currency Symbol

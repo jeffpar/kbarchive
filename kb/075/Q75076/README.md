@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75076: Installing MS-DOS on a Tandy 1000SL, SL2, TL, TL2, or RL"
-permalink: kb/075/Q75076/
+permalink: /kb/075/Q75076/
 ---
 
 ## Q75076: Installing MS-DOS on a Tandy 1000SL, SL2, TL, TL2, or RL

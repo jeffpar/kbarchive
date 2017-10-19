@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155370: FIX: Wizards May Display Invalid Table Names for CRecordset"
-permalink: kb/155/Q155370/
+permalink: /kb/155/Q155370/
 ---
 
 ## Q155370: FIX: Wizards May Display Invalid Table Names for CRecordset

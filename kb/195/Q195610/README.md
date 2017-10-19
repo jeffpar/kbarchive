@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195610: WD97: After Update Excel Object Not a Paste Special Option"
-permalink: kb/195/Q195610/
+permalink: /kb/195/Q195610/
 ---
 
 ## Q195610: WD97: After Update Excel Object Not a Paste Special Option

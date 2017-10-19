@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77467: INFO: Verifying the Printer Connection"
-permalink: kb/077/Q77467/
+permalink: /kb/077/Q77467/
 ---
 
 ## Q77467: INFO: Verifying the Printer Connection

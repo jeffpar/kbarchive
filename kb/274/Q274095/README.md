@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274095: Games Err Msg: Exception 01h in Module &lt;Unknown&gt;"
-permalink: kb/274/Q274095/
+permalink: /kb/274/Q274095/
 ---
 
 ## Q274095: Games Err Msg: Exception 01h in Module &lt;Unknown&gt;

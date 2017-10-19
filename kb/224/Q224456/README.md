@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224456: XFOR: Properties Changed After Member Moves to Different Channel"
-permalink: kb/224/Q224456/
+permalink: /kb/224/Q224456/
 ---
 
 ## Q224456: XFOR: Properties Changed After Member Moves to Different Channel

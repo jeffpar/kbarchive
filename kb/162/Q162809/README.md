@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162809: How to Make a Hands-Free Dial-Up Connection in Windows 95"
-permalink: kb/162/Q162809/
+permalink: /kb/162/Q162809/
 ---
 
 ## Q162809: How to Make a Hands-Free Dial-Up Connection in Windows 95

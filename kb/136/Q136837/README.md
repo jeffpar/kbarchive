@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136837: System Agent Err Msg: Cannot Find the File Cmpagent.exe"
-permalink: kb/136/Q136837/
+permalink: /kb/136/Q136837/
 ---
 
 ## Q136837: System Agent Err Msg: Cannot Find the File Cmpagent.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61681: Use of FASTOPEN and BASIC Application Causes &quot;Disk Full&quot; Error"
-permalink: kb/061/Q61681/
+permalink: /kb/061/Q61681/
 ---
 
 ## Q61681: Use of FASTOPEN and BASIC Application Causes &quot;Disk Full&quot; Error

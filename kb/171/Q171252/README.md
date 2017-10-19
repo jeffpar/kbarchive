@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171252: Snacfg.exe Does not Display Twinax and Channel Link Services"
-permalink: kb/171/Q171252/
+permalink: /kb/171/Q171252/
 ---
 
 ## Q171252: Snacfg.exe Does not Display Twinax and Channel Link Services

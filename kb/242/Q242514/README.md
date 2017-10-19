@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242514: AoE II: You Can Hear Sounds but Cannot See the Opening Movie"
-permalink: kb/242/Q242514/
+permalink: /kb/242/Q242514/
 ---
 
 ## Q242514: AoE II: You Can Hear Sounds but Cannot See the Opening Movie

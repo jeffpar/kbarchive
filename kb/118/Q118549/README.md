@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118549: PRB: PowerStation MS-DOS Apps Do Not Start Under Win32s"
-permalink: kb/118/Q118549/
+permalink: /kb/118/Q118549/
 ---
 
 ## Q118549: PRB: PowerStation MS-DOS Apps Do Not Start Under Win32s

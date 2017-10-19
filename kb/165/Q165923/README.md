@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165923: WD97: Creating Hyperlink Deletes Object Reference"
-permalink: kb/165/Q165923/
+permalink: /kb/165/Q165923/
 ---
 
 ## Q165923: WD97: Creating Hyperlink Deletes Object Reference

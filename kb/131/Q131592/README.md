@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131592: Mac Encarta: Cannot Check Spelling"
-permalink: kb/131/Q131592/
+permalink: /kb/131/Q131592/
 ---
 
 ## Q131592: Mac Encarta: Cannot Check Spelling

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170602: Cannot Browse the Internet Using Proxy Server on ZAK Client"
-permalink: kb/170/Q170602/
+permalink: /kb/170/Q170602/
 ---
 
 ## Q170602: Cannot Browse the Internet Using Proxy Server on ZAK Client

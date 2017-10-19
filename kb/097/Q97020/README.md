@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97020: OS_VERSION Points to Incorrect COMMAND.COM on Novell"
-permalink: kb/097/Q97020/
+permalink: /kb/097/Q97020/
 ---
 
 ## Q97020: OS_VERSION Points to Incorrect COMMAND.COM on Novell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193891: HTTP Through Firewall and &quot;Bypass Proxy for Local Intranet&quot;"
-permalink: kb/193/Q193891/
+permalink: /kb/193/Q193891/
 ---
 
 ## Q193891: HTTP Through Firewall and &quot;Bypass Proxy for Local Intranet&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178551: FS98 Err Msg: General Floating Point Error in Module Panels.dll"
-permalink: kb/178/Q178551/
+permalink: /kb/178/Q178551/
 ---
 
 ## Q178551: FS98 Err Msg: General Floating Point Error in Module Panels.dll

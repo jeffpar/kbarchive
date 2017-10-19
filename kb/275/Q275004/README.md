@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275004: HOWTO: Transfer a Bitmap to a PocketPC Using the Winsock Control"
-permalink: kb/275/Q275004/
+permalink: /kb/275/Q275004/
 ---
 
 ## Q275004: HOWTO: Transfer a Bitmap to a PocketPC Using the Winsock Control

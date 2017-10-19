@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266545: Encarta World Atlas 2001: Cannot Open Pushpin Menu"
-permalink: kb/266/Q266545/
+permalink: /kb/266/Q266545/
 ---
 
 ## Q266545: Encarta World Atlas 2001: Cannot Open Pushpin Menu

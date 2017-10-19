@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317649: PRB: Cannot Add Filenames Containing UTF-8 Characters to VSS SCC"
-permalink: kb/317/Q317649/
+permalink: /kb/317/Q317649/
 ---
 
 ## Q317649: PRB: Cannot Add Filenames Containing UTF-8 Characters to VSS SCC

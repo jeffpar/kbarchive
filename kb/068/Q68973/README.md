@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68973: Mac Hyp: HyperCard 2.0 Compatibility"
-permalink: kb/068/Q68973/
+permalink: /kb/068/Q68973/
 ---
 
 ## Q68973: Mac Hyp: HyperCard 2.0 Compatibility

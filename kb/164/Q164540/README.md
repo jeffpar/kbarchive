@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164540: Using the Expansion Pack with default FS95 Scenery"
-permalink: kb/164/Q164540/
+permalink: /kb/164/Q164540/
 ---
 
 ## Q164540: Using the Expansion Pack with default FS95 Scenery

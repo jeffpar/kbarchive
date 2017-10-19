@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192513: XADM: Slow Backup Performance with Single-Processor Servers"
-permalink: kb/192/Q192513/
+permalink: /kb/192/Q192513/
 ---
 
 ## Q192513: XADM: Slow Backup Performance with Single-Processor Servers

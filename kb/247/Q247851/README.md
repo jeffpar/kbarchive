@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247851: Problems with Logon Scripts if Exporting Server Is Not PDC"
-permalink: kb/247/Q247851/
+permalink: /kb/247/Q247851/
 ---
 
 ## Q247851: Problems with Logon Scripts if Exporting Server Is Not PDC

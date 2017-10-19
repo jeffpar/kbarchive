@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185153: XFOR: Using Exchange As a Gateway Between UNIX and MS Mail"
-permalink: kb/185/Q185153/
+permalink: /kb/185/Q185153/
 ---
 
 ## Q185153: XFOR: Using Exchange As a Gateway Between UNIX and MS Mail

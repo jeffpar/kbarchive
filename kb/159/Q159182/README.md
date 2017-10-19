@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159182: XCON: MTAs Unable to Establish X.400 Connection"
-permalink: kb/159/Q159182/
+permalink: /kb/159/Q159182/
 ---
 
 ## Q159182: XCON: MTAs Unable to Establish X.400 Connection

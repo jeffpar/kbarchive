@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147034: XCLN: First Line of Inbox Message Body May Be Missing"
-permalink: kb/147/Q147034/
+permalink: /kb/147/Q147034/
 ---
 
 ## Q147034: XCLN: First Line of Inbox Message Body May Be Missing

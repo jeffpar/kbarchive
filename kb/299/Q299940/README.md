@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299940: Train Simulator: How to Turn Off the Opening Movie"
-permalink: kb/299/Q299940/
+permalink: /kb/299/Q299940/
 ---
 
 ## Q299940: Train Simulator: How to Turn Off the Opening Movie

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139864: PRB: &quot;Cannot Update the Cursor&quot; Error When Running Browser.app"
-permalink: kb/139/Q139864/
+permalink: /kb/139/Q139864/
 ---
 
 ## Q139864: PRB: &quot;Cannot Update the Cursor&quot; Error When Running Browser.app

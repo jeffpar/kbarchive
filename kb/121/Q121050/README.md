@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121050: How to Automate Logon Procedures for Windows NT Mail"
-permalink: kb/121/Q121050/
+permalink: /kb/121/Q121050/
 ---
 
 ## Q121050: How to Automate Logon Procedures for Windows NT Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173911: XWEB: Received Column Off-Screen by Default in Win16 Client"
-permalink: kb/173/Q173911/
+permalink: /kb/173/Q173911/
 ---
 
 ## Q173911: XWEB: Received Column Off-Screen by Default in Win16 Client

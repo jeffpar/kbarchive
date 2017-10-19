@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258303: XFOR: Notes Migrated Mailboxes Not Backed Up w. BackupExec 7.3"
-permalink: kb/258/Q258303/
+permalink: /kb/258/Q258303/
 ---
 
 ## Q258303: XFOR: Notes Migrated Mailboxes Not Backed Up w. BackupExec 7.3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266058: How to Migrate a Printer Server to a Server Cluster"
-permalink: kb/266/Q266058/
+permalink: /kb/266/Q266058/
 ---
 
 ## Q266058: How to Migrate a Printer Server to a Server Cluster

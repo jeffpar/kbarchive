@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163659: WD97: Deleted Text from Tracked Changes Appears in HTML"
-permalink: kb/163/Q163659/
+permalink: /kb/163/Q163659/
 ---
 
 ## Q163659: WD97: Deleted Text from Tracked Changes Appears in HTML

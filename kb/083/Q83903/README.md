@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83903: Compaq Adapt Utility Shifts MS-DOS Colors with Windows 3.1"
-permalink: kb/083/Q83903/
+permalink: /kb/083/Q83903/
 ---
 
 ## Q83903: Compaq Adapt Utility Shifts MS-DOS Colors with Windows 3.1

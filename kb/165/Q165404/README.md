@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165404: NTVDM AV on Servers with Exchange cc:Mail Connector"
-permalink: kb/165/Q165404/
+permalink: /kb/165/Q165404/
 ---
 
 ## Q165404: NTVDM AV on Servers with Exchange cc:Mail Connector

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194163: E-mail Sent Using MSN Is Not Delivered"
-permalink: kb/194/Q194163/
+permalink: /kb/194/Q194163/
 ---
 
 ## Q194163: E-mail Sent Using MSN Is Not Delivered

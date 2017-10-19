@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271733: HOWTO: Write a REG_EXPAND_SZ to the Registry"
-permalink: kb/271/Q271733/
+permalink: /kb/271/Q271733/
 ---
 
 ## Q271733: HOWTO: Write a REG_EXPAND_SZ to the Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81420: PC Win: Problem Restarting Mail After UAE"
-permalink: kb/081/Q81420/
+permalink: /kb/081/Q81420/
 ---
 
 ## Q81420: PC Win: Problem Restarting Mail After UAE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131326: XCLN: Err Msg: An Object Could Not Be Moved/Copied"
-permalink: kb/131/Q131326/
+permalink: /kb/131/Q131326/
 ---
 
 ## Q131326: XCLN: Err Msg: An Object Could Not Be Moved/Copied

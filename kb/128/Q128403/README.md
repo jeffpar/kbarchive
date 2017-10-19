@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128403: System Time Advances One Day When You Run Mail's EXTERNAL"
-permalink: kb/128/Q128403/
+permalink: /kb/128/Q128403/
 ---
 
 ## Q128403: System Time Advances One Day When You Run Mail's EXTERNAL

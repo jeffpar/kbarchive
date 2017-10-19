@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208616: MCM: Motorcycles and Riders Are Not Displayed Correctly"
-permalink: kb/208/Q208616/
+permalink: /kb/208/Q208616/
 ---
 
 ## Q208616: MCM: Motorcycles and Riders Are Not Displayed Correctly

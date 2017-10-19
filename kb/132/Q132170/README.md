@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132170: NET VIEW to LAN Manager for UNIX Server Fails from Windows NT"
-permalink: kb/132/Q132170/
+permalink: /kb/132/Q132170/
 ---
 
 ## Q132170: NET VIEW to LAN Manager for UNIX Server Fails from Windows NT

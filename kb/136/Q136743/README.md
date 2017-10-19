@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136743: Internet Mail Message Grows in Size Using Microsoft Exchange"
-permalink: kb/136/Q136743/
+permalink: /kb/136/Q136743/
 ---
 
 ## Q136743: Internet Mail Message Grows in Size Using Microsoft Exchange

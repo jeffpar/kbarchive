@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175874: Flight Simulator 95: How To Check Product ID (PID)"
-permalink: kb/175/Q175874/
+permalink: /kb/175/Q175874/
 ---
 
 ## Q175874: Flight Simulator 95: How To Check Product ID (PID)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158587: 16-Bit Named Pipe File Open Leads to WOW Access Violation"
-permalink: kb/158/Q158587/
+permalink: /kb/158/Q158587/
 ---
 
 ## Q158587: 16-Bit Named Pipe File Open Leads to WOW Access Violation

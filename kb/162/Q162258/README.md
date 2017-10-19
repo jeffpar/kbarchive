@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162258: How to Remove Cross-Platform Printer Drivers on Windows NT"
-permalink: kb/162/Q162258/
+permalink: /kb/162/Q162258/
 ---
 
 ## Q162258: How to Remove Cross-Platform Printer Drivers on Windows NT

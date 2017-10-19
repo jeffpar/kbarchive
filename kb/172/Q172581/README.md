@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172581: Golf 3.0: Cannot Use Devil's Island Golf Course"
-permalink: kb/172/Q172581/
+permalink: /kb/172/Q172581/
 ---
 
 ## Q172581: Golf 3.0: Cannot Use Devil's Island Golf Course

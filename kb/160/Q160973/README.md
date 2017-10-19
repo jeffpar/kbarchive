@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160973: SMS: How to Restrict Access to NetWare Servers"
-permalink: kb/160/Q160973/
+permalink: /kb/160/Q160973/
 ---
 
 ## Q160973: SMS: How to Restrict Access to NetWare Servers

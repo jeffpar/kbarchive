@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224967: How to Create File Shares on a Cluster"
-permalink: kb/224/Q224967/
+permalink: /kb/224/Q224967/
 ---
 
 ## Q224967: How to Create File Shares on a Cluster

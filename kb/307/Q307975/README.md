@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307975: Problems with TrendMicro Interscan Virus Firewall Software"
-permalink: kb/307/Q307975/
+permalink: /kb/307/Q307975/
 ---
 
 ## Q307975: Problems with TrendMicro Interscan Virus Firewall Software

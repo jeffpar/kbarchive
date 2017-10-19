@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76185: Erratic Floppy Drive Behavior on Mitsubishi 286"
-permalink: kb/076/Q76185/
+permalink: /kb/076/Q76185/
 ---
 
 ## Q76185: Erratic Floppy Drive Behavior on Mitsubishi 286

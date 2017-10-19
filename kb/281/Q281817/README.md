@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281817: Expedia Streets and Trips 2000: How to Submit Map Feedback"
-permalink: kb/281/Q281817/
+permalink: /kb/281/Q281817/
 ---
 
 ## Q281817: Expedia Streets and Trips 2000: How to Submit Map Feedback

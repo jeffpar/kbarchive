@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149018: HP850C Prints Orange Fonts and Graphics as Yellow"
-permalink: kb/149/Q149018/
+permalink: /kb/149/Q149018/
 ---
 
 ## Q149018: HP850C Prints Orange Fonts and Graphics as Yellow

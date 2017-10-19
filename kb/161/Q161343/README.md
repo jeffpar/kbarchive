@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161343: HOWTO: Create a New Contact in Schedule Plus from Visual Basic"
-permalink: kb/161/Q161343/
+permalink: /kb/161/Q161343/
 ---
 
 ## Q161343: HOWTO: Create a New Contact in Schedule Plus from Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161968: NetBT Tears Down TCP Session with Many Concurrent File Transfers"
-permalink: kb/161/Q161968/
+permalink: /kb/161/Q161968/
 ---
 
 ## Q161968: NetBT Tears Down TCP Session with Many Concurrent File Transfers

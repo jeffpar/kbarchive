@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157077: Netstat Slow to List Large Numbers of Connections"
-permalink: kb/157/Q157077/
+permalink: /kb/157/Q157077/
 ---
 
 ## Q157077: Netstat Slow to List Large Numbers of Connections

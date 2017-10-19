@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159075: Compression Is Not Supported on Quantum 4000DLT"
-permalink: kb/159/Q159075/
+permalink: /kb/159/Q159075/
 ---
 
 ## Q159075: Compression Is Not Supported on Quantum 4000DLT

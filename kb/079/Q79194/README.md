@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79194: Using Huge Pointers with Blocks of Memory Larger Than 64K"
-permalink: kb/079/Q79194/
+permalink: /kb/079/Q79194/
 ---
 
 ## Q79194: Using Huge Pointers with Blocks of Memory Larger Than 64K

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173172: SNA Manager Not Setting LUA Pool Size to Actual Number of LUs"
-permalink: kb/173/Q173172/
+permalink: /kb/173/Q173172/
 ---
 
 ## Q173172: SNA Manager Not Setting LUA Pool Size to Actual Number of LUs

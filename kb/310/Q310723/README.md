@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310723: Configuring FTP Folder and Permissions for Domain Authentication"
-permalink: kb/310/Q310723/
+permalink: /kb/310/Q310723/
 ---
 
 ## Q310723: Configuring FTP Folder and Permissions for Domain Authentication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85378: Battery Watch Pro 3.0 Requires Upgrade for Windows 3.1"
-permalink: kb/085/Q85378/
+permalink: /kb/085/Q85378/
 ---
 
 ## Q85378: Battery Watch Pro 3.0 Requires Upgrade for Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72304: OPTI 486 Memory Chips Require Special AWARD BIOS"
-permalink: kb/072/Q72304/
+permalink: /kb/072/Q72304/
 ---
 
 ## Q72304: OPTI 486 Memory Chips Require Special AWARD BIOS

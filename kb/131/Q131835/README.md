@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131835: JULIA CHILD: MSETUP.TXT Contents"
-permalink: kb/131/Q131835/
+permalink: /kb/131/Q131835/
 ---
 
 ## Q131835: JULIA CHILD: MSETUP.TXT Contents

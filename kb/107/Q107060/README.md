@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107060: Windows NT NBTSTAT -R vs. LAN Manager ADDNAME"
-permalink: kb/107/Q107060/
+permalink: /kb/107/Q107060/
 ---
 
 ## Q107060: Windows NT NBTSTAT -R vs. LAN Manager ADDNAME

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190000: HOWTO: Get Started Programming with the Windows API (LONG)"
-permalink: kb/190/Q190000/
+permalink: /kb/190/Q190000/
 ---
 
 ## Q190000: HOWTO: Get Started Programming with the Windows API (LONG)

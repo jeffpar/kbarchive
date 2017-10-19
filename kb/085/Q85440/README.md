@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85440: MOUSEQA.WRI from Windows Resource Kit"
-permalink: kb/085/Q85440/
+permalink: /kb/085/Q85440/
 ---
 
 ## Q85440: MOUSEQA.WRI from Windows Resource Kit

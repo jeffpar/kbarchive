@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153716: Permissions Required to Perform RAS Administration"
-permalink: kb/153/Q153716/
+permalink: /kb/153/Q153716/
 ---
 
 ## Q153716: Permissions Required to Perform RAS Administration

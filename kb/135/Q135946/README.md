@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135946: BITFAT Blue Screen Error with Compressed Floppy Disk"
-permalink: kb/135/Q135946/
+permalink: /kb/135/Q135946/
 ---
 
 ## Q135946: BITFAT Blue Screen Error with Compressed Floppy Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183105: XADM: Dr. Watson While Upgrading from 4.0 SP4 to 5.5"
-permalink: kb/183/Q183105/
+permalink: /kb/183/Q183105/
 ---
 
 ## Q183105: XADM: Dr. Watson While Upgrading from 4.0 SP4 to 5.5

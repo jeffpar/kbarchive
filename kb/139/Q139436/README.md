@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139436: Scheduled Tasks Reported as Complete as Soon as Started"
-permalink: kb/139/Q139436/
+permalink: /kb/139/Q139436/
 ---
 
 ## Q139436: Scheduled Tasks Reported as Complete as Soon as Started

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123156: Server Spools Jobs Endlessly if AppleTalk Print Device Removed"
-permalink: kb/123/Q123156/
+permalink: /kb/123/Q123156/
 ---
 
 ## Q123156: Server Spools Jobs Endlessly if AppleTalk Print Device Removed

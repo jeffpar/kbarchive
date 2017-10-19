@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287284: LPR Printer Ports Disappear when Spooler Stops and Restarts"
-permalink: kb/287/Q287284/
+permalink: /kb/287/Q287284/
 ---
 
 ## Q287284: LPR Printer Ports Disappear when Spooler Stops and Restarts

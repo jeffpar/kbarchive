@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141441: How to Create Validation Rules on Views"
-permalink: kb/141/Q141441/
+permalink: /kb/141/Q141441/
 ---
 
 ## Q141441: How to Create Validation Rules on Views

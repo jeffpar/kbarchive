@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317218: Event IDs 7024, 7000 and FLCSS Service and Process Reported"
-permalink: kb/317/Q317218/
+permalink: /kb/317/Q317218/
 ---
 
 ## Q317218: Event IDs 7024, 7000 and FLCSS Service and Process Reported

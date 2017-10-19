@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304639: HOWTO: Find PaperSize for Custom Print Sizes Under Windows NT/2K"
-permalink: kb/304/Q304639/
+permalink: /kb/304/Q304639/
 ---
 
 ## Q304639: HOWTO: Find PaperSize for Custom Print Sizes Under Windows NT/2K

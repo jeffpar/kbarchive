@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103552: SMARTDrive Version 5.0 Now Caches CD-ROM Drives"
-permalink: kb/103/Q103552/
+permalink: /kb/103/Q103552/
 ---
 
 ## Q103552: SMARTDrive Version 5.0 Now Caches CD-ROM Drives

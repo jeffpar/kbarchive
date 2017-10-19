@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103358: Lotus Improv May Not be Able to Change the Paper Size to Print"
-permalink: kb/103/Q103358/
+permalink: /kb/103/Q103358/
 ---
 
 ## Q103358: Lotus Improv May Not be Able to Change the Paper Size to Print

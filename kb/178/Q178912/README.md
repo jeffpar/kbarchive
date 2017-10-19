@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178912: FS98: Cannot Resize Radio Stack in Boeing 737-400"
-permalink: kb/178/Q178912/
+permalink: /kb/178/Q178912/
 ---
 
 ## Q178912: FS98: Cannot Resize Radio Stack in Boeing 737-400

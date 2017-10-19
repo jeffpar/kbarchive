@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47014: Mac Srv: Mail Server and AppleShare Server Coexistence"
-permalink: kb/047/Q47014/
+permalink: /kb/047/Q47014/
 ---
 
 ## Q47014: Mac Srv: Mail Server and AppleShare Server Coexistence

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155389: HOWTO: Convert Values to Hexadecimal Format with Xbase"
-permalink: kb/155/Q155389/
+permalink: /kb/155/Q155389/
 ---
 
 ## Q155389: HOWTO: Convert Values to Hexadecimal Format with Xbase

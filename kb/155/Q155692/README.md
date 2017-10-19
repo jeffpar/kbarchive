@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155692: HOWTO: Calculate Payments in FoxPro"
-permalink: kb/155/Q155692/
+permalink: /kb/155/Q155692/
 ---
 
 ## Q155692: HOWTO: Calculate Payments in FoxPro

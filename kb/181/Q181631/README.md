@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181631: XCLN: Exchange Client Polls Flag.glb File on MS Mail Postoffice"
-permalink: kb/181/Q181631/
+permalink: /kb/181/Q181631/
 ---
 
 ## Q181631: XCLN: Exchange Client Polls Flag.glb File on MS Mail Postoffice

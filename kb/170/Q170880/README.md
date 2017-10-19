@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170880: Diskdump.sys Common Buffer Size Is Changed"
-permalink: kb/170/Q170880/
+permalink: /kb/170/Q170880/
 ---
 
 ## Q170880: Diskdump.sys Common Buffer Size Is Changed

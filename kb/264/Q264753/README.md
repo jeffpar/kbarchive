@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264753: FP98: Error Messages When You Try to Install Extensions"
-permalink: kb/264/Q264753/
+permalink: /kb/264/Q264753/
 ---
 
 ## Q264753: FP98: Error Messages When You Try to Install Extensions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162894: ODE97: Cannot Redistribute Office Assistant with Run-Time Applic"
-permalink: kb/162/Q162894/
+permalink: /kb/162/Q162894/
 ---
 
 ## Q162894: ODE97: Cannot Redistribute Office Assistant with Run-Time Applic

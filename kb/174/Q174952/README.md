@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174952: SMS: Client Setup Does Not Check for Smsrun16/32.exe"
-permalink: kb/174/Q174952/
+permalink: /kb/174/Q174952/
 ---
 
 ## Q174952: SMS: Client Setup Does Not Check for Smsrun16/32.exe

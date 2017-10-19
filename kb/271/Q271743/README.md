@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271743: XFOR: Exchange Server Users Not Receiving Free and Busy Results"
-permalink: kb/271/Q271743/
+permalink: /kb/271/Q271743/
 ---
 
 ## Q271743: XFOR: Exchange Server Users Not Receiving Free and Busy Results

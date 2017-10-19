@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237520: Encarta 2000: Article Opens Slowly or Program Stops Responding"
-permalink: kb/237/Q237520/
+permalink: /kb/237/Q237520/
 ---
 
 ## Q237520: Encarta 2000: Article Opens Slowly or Program Stops Responding

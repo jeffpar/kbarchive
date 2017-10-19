@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151708: XCLN: Page Fault in Mpr.exe when Starting Client"
-permalink: kb/151/Q151708/
+permalink: /kb/151/Q151708/
 ---
 
 ## Q151708: XCLN: Page Fault in Mpr.exe when Starting Client

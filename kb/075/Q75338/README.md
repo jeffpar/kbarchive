@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75338: Determining Windows Version, Mode from MS-DOS App"
-permalink: kb/075/Q75338/
+permalink: /kb/075/Q75338/
 ---
 
 ## Q75338: Determining Windows Version, Mode from MS-DOS App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107192: Multiple Connections to the Same Host Over 802.2"
-permalink: kb/107/Q107192/
+permalink: /kb/107/Q107192/
 ---
 
 ## Q107192: Multiple Connections to the Same Host Over 802.2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183046: FP97: Cannot Use Search Component With Active Server Pages"
-permalink: kb/183/Q183046/
+permalink: /kb/183/Q183046/
 ---
 
 ## Q183046: FP97: Cannot Use Search Component With Active Server Pages

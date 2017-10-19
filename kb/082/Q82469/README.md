@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82469: Using Multiple CD-ROM Drives on One Machine"
-permalink: kb/082/Q82469/
+permalink: /kb/082/Q82469/
 ---
 
 ## Q82469: Using Multiple CD-ROM Drives on One Machine

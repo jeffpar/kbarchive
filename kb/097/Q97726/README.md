@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97726: Distribution Disk File Lists for LAN Manager 2.1a"
-permalink: kb/097/Q97726/
+permalink: /kb/097/Q97726/
 ---
 
 ## Q97726: Distribution Disk File Lists for LAN Manager 2.1a

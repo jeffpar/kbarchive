@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78722: DOSKEY Error Message: &quot;Cannot Change BUFSIZE&quot;"
-permalink: kb/078/Q78722/
+permalink: /kb/078/Q78722/
 ---
 
 ## Q78722: DOSKEY Error Message: &quot;Cannot Change BUFSIZE&quot;

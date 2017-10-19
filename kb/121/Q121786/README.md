@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121786: LPR and LPD Registry Entries for TCP/IP Printing"
-permalink: kb/121/Q121786/
+permalink: /kb/121/Q121786/
 ---
 
 ## Q121786: LPR and LPD Registry Entries for TCP/IP Printing

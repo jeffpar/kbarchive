@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129486: IBM Thinkpad Supports Only 640x480 16-Color Video Resolution"
-permalink: kb/129/Q129486/
+permalink: /kb/129/Q129486/
 ---
 
 ## Q129486: IBM Thinkpad Supports Only 640x480 16-Color Video Resolution

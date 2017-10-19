@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165818: Truncation of Backup Log In Eastern Europe or Russian NT 4.0"
-permalink: kb/165/Q165818/
+permalink: /kb/165/Q165818/
 ---
 
 ## Q165818: Truncation of Backup Log In Eastern Europe or Russian NT 4.0

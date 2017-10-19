@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305282: &quot;Say my name!&quot; Feature Not Available In MSN Explorer 6.1"
-permalink: kb/305/Q305282/
+permalink: /kb/305/Q305282/
 ---
 
 ## Q305282: &quot;Say my name!&quot; Feature Not Available In MSN Explorer 6.1

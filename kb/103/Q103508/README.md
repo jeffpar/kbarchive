@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103508: Can't Access Member Server After Password Change"
-permalink: kb/103/Q103508/
+permalink: /kb/103/Q103508/
 ---
 
 ## Q103508: Can't Access Member Server After Password Change

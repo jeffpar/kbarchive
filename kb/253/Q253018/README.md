@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253018: XFOR: Exchange Connector for Lotus Notes Appends From Field"
-permalink: kb/253/Q253018/
+permalink: /kb/253/Q253018/
 ---
 
 ## Q253018: XFOR: Exchange Connector for Lotus Notes Appends From Field

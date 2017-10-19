@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138864: SNA Server 2.11 Admin shows Inactive Status In Error"
-permalink: kb/138/Q138864/
+permalink: /kb/138/Q138864/
 ---
 
 ## Q138864: SNA Server 2.11 Admin shows Inactive Status In Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241281: DOC: VB5DB.dll Is Not Listed in Redist.txt"
-permalink: kb/241/Q241281/
+permalink: /kb/241/Q241281/
 ---
 
 ## Q241281: DOC: VB5DB.dll Is Not Listed in Redist.txt

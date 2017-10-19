@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131624: Connecting to a Remote AS/400 Connected Through an APPN Network"
-permalink: kb/131/Q131624/
+permalink: /kb/131/Q131624/
 ---
 
 ## Q131624: Connecting to a Remote AS/400 Connected Through an APPN Network

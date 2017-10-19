@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299686: HOWTO: Detect If Scroll Bars Are Visible on a Control"
-permalink: kb/299/Q299686/
+permalink: /kb/299/Q299686/
 ---
 
 ## Q299686: HOWTO: Detect If Scroll Bars Are Visible on a Control

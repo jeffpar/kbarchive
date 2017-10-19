@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171803: FIX: Problems Retrieving VB 5.0 Projects from Visual SourceSafe"
-permalink: kb/171/Q171803/
+permalink: /kb/171/Q171803/
 ---
 
 ## Q171803: FIX: Problems Retrieving VB 5.0 Projects from Visual SourceSafe

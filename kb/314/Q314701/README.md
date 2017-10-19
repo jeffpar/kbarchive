@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314701: ENC: How to Install Previous Version of Encarta"
-permalink: kb/314/Q314701/
+permalink: /kb/314/Q314701/
 ---
 
 ## Q314701: ENC: How to Install Previous Version of Encarta

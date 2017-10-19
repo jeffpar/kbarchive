@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50114: Lotus Error Unable to Locate 123.set from PIF file"
-permalink: kb/050/Q50114/
+permalink: /kb/050/Q50114/
 ---
 
 ## Q50114: Lotus Error Unable to Locate 123.set from PIF file

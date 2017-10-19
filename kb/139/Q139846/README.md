@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139846: Floppy Disk Drive Letters Not Swapped in Windows 95"
-permalink: kb/139/Q139846/
+permalink: /kb/139/Q139846/
 ---
 
 ## Q139846: Floppy Disk Drive Letters Not Swapped in Windows 95

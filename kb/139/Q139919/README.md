@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139919: Julia Child: Err Msg: MSJULIA Causes a GP Fault"
-permalink: kb/139/Q139919/
+permalink: /kb/139/Q139919/
 ---
 
 ## Q139919: Julia Child: Err Msg: MSJULIA Causes a GP Fault

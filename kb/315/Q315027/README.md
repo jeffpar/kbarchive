@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315027: Windows NT 4.0 May Hang After Applying the SRP"
-permalink: kb/315/Q315027/
+permalink: /kb/315/Q315027/
 ---
 
 ## Q315027: Windows NT 4.0 May Hang After Applying the SRP

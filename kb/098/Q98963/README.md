@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98963: Mac Srv: Hardware Recommendations"
-permalink: kb/098/Q98963/
+permalink: /kb/098/Q98963/
 ---
 
 ## Q98963: Mac Srv: Hardware Recommendations

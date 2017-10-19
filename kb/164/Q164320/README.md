@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164320: SMS: Choosing &quot;Entire Network&quot; Causes an Exception 0E Error"
-permalink: kb/164/Q164320/
+permalink: /kb/164/Q164320/
 ---
 
 ## Q164320: SMS: Choosing &quot;Entire Network&quot; Causes an Exception 0E Error

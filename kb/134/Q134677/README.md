@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q134677: PC Gen: 3.5 Mail for PC Networks AT&amp;T Gateway Disks [3.5]"
-permalink: kb/134/Q134677/
+title: "Q134677: PC Gen: 3.5 Mail for PC Networks AT&amp;T Gateway Disks &#91;3.5&#93;"
+permalink: /kb/134/Q134677/
 ---
 
-## Q134677: PC Gen: 3.5 Mail for PC Networks AT&amp;T Gateway Disks [3.5]
+## Q134677: PC Gen: 3.5 Mail for PC Networks AT&amp;T Gateway Disks &#91;3.5&#93;
 
 	Article: Q134677
 	Product(s): Microsoft Mail For PC Networks

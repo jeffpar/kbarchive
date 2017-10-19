@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135918: RAS Does Not Function on IBM PS/Valuepoint 466DX2 Computers"
-permalink: kb/135/Q135918/
+permalink: /kb/135/Q135918/
 ---
 
 ## Q135918: RAS Does Not Function on IBM PS/Valuepoint 466DX2 Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192200: XCLN: Schedule+ 1.0 Supports dates to 2019"
-permalink: kb/192/Q192200/
+permalink: /kb/192/Q192200/
 ---
 
 ## Q192200: XCLN: Schedule+ 1.0 Supports dates to 2019

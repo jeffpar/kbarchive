@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315586: HOW TO: Access Registry on Remote Computer Using VB6 &amp; WIN API"
-permalink: kb/315/Q315586/
+permalink: /kb/315/Q315586/
 ---
 
 ## Q315586: HOW TO: Access Registry on Remote Computer Using VB6 &amp; WIN API

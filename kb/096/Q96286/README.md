@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96286: ON ERROR Does Not Trap All Errors"
-permalink: kb/096/Q96286/
+permalink: /kb/096/Q96286/
 ---
 
 ## Q96286: ON ERROR Does Not Trap All Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258236: XADM: Third-Party Backup Software May Not Restore Log Files"
-permalink: kb/258/Q258236/
+permalink: /kb/258/Q258236/
 ---
 
 ## Q258236: XADM: Third-Party Backup Software May Not Restore Log Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73407: Using PROTO and INVOKE to Call a C Function from MASM"
-permalink: kb/073/Q73407/
+permalink: /kb/073/Q73407/
 ---
 
 ## Q73407: Using PROTO and INVOKE to Call a C Function from MASM

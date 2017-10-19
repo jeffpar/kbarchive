@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318461: FIX: Grid Events Are Not Called if Grid Contains No Records"
-permalink: kb/318/Q318461/
+permalink: /kb/318/Q318461/
 ---
 
 ## Q318461: FIX: Grid Events Are Not Called if Grid Contains No Records

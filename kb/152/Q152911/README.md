@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152911: XADM: FAX Cover Sheet Does Not List Recipients"
-permalink: kb/152/Q152911/
+permalink: /kb/152/Q152911/
 ---
 
 ## Q152911: XADM: FAX Cover Sheet Does Not List Recipients

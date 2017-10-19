@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183143: ODE97: Run-Time Application Changes Windows File Associations"
-permalink: kb/183/Q183143/
+permalink: /kb/183/Q183143/
 ---
 
 ## Q183143: ODE97: Run-Time Application Changes Windows File Associations

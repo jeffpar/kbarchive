@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245414: PC WSPlus: Recovering Calendar Info to a Schedule+ 1.0 Client"
-permalink: kb/245/Q245414/
+permalink: /kb/245/Q245414/
 ---
 
 ## Q245414: PC WSPlus: Recovering Calendar Info to a Schedule+ 1.0 Client

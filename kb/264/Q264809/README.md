@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264809: Keeping Users from Accessing a Server over the Network While You"
-permalink: kb/264/Q264809/
+permalink: /kb/264/Q264809/
 ---
 
 ## Q264809: Keeping Users from Accessing a Server over the Network While You

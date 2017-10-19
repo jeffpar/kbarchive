@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140819: Systems Management Server is Unable to Get Global Groups"
-permalink: kb/140/Q140819/
+permalink: /kb/140/Q140819/
 ---
 
 ## Q140819: Systems Management Server is Unable to Get Global Groups

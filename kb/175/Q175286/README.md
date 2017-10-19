@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175286: XADM: Clicking Title Bar of Directory Import Pauses Import"
-permalink: kb/175/Q175286/
+permalink: /kb/175/Q175286/
 ---
 
 ## Q175286: XADM: Clicking Title Bar of Directory Import Pauses Import

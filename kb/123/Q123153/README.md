@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123153: Error 84: There Are Too Many Network Redirections..."
-permalink: kb/123/Q123153/
+permalink: /kb/123/Q123153/
 ---
 
 ## Q123153: Error 84: There Are Too Many Network Redirections...

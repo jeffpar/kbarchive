@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89478: Upgrade to Windows for Workgroups Changes Printer Setting"
-permalink: kb/089/Q89478/
+permalink: /kb/089/Q89478/
 ---
 
 ## Q89478: Upgrade to Windows for Workgroups Changes Printer Setting

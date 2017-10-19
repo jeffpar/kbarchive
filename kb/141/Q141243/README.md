@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141243: SMS WinNT Client Install Fails If Path Contains Trailing Space"
-permalink: kb/141/Q141243/
+permalink: /kb/141/Q141243/
 ---
 
 ## Q141243: SMS WinNT Client Install Fails If Path Contains Trailing Space

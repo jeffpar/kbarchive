@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264283: PC Adm: Error Message: Recipients Mail Address Is Incorrect..."
-permalink: kb/264/Q264283/
+permalink: /kb/264/Q264283/
 ---
 
 ## Q264283: PC Adm: Error Message: Recipients Mail Address Is Incorrect...

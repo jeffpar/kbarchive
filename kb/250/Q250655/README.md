@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250655: Asheron's Call: Character Hangs in Portal Space"
-permalink: kb/250/Q250655/
+permalink: /kb/250/Q250655/
 ---
 
 ## Q250655: Asheron's Call: Character Hangs in Portal Space

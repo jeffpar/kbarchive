@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73316: MS-DOS Shell Error Message: Unable to Load COMMAND.COM"
-permalink: kb/073/Q73316/
+permalink: /kb/073/Q73316/
 ---
 
 ## Q73316: MS-DOS Shell Error Message: Unable to Load COMMAND.COM

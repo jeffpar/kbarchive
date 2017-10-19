@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199657: SMS: 1.2 and 2.0 Site Server Cannot Share SQL Server on 1.2 Site"
-permalink: kb/199/Q199657/
+permalink: /kb/199/Q199657/
 ---
 
 ## Q199657: SMS: 1.2 and 2.0 Site Server Cannot Share SQL Server on 1.2 Site

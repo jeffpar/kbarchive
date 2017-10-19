@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231508: MapPoint 2000: Unable to Import Latitude and Longitude Data"
-permalink: kb/231/Q231508/
+permalink: /kb/231/Q231508/
 ---
 
 ## Q231508: MapPoint 2000: Unable to Import Latitude and Longitude Data

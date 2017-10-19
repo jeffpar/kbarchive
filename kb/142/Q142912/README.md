@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142912: IBM Token Ring 16/4 Network Adapter II Switch Settings"
-permalink: kb/142/Q142912/
+permalink: /kb/142/Q142912/
 ---
 
 ## Q142912: IBM Token Ring 16/4 Network Adapter II Switch Settings

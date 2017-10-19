@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239123: Flight Simulator 5.1: How to Create and Use a Boot Disk"
-permalink: kb/239/Q239123/
+permalink: /kb/239/Q239123/
 ---
 
 ## Q239123: Flight Simulator 5.1: How to Create and Use a Boot Disk

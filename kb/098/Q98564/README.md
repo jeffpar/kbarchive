@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98564: Troubleshooting Sound Support for MS-DOS Games in WSS 1.0a"
-permalink: kb/098/Q98564/
+permalink: /kb/098/Q98564/
 ---
 
 ## Q98564: Troubleshooting Sound Support for MS-DOS Games in WSS 1.0a

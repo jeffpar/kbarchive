@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163382: XCLN: Macintosh Schedule+ and Exchange Interoperability"
-permalink: kb/163/Q163382/
+permalink: /kb/163/Q163382/
 ---
 
 ## Q163382: XCLN: Macintosh Schedule+ and Exchange Interoperability

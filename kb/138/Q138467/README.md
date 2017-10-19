@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138467: Microsoft Systems Journal: December 1995"
-permalink: kb/138/Q138467/
+permalink: /kb/138/Q138467/
 ---
 
 ## Q138467: Microsoft Systems Journal: December 1995

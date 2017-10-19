@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98485: Using Windows and MS-DOS 5 Upgrade After Installing MS-DOS 6.x"
-permalink: kb/098/Q98485/
+permalink: /kb/098/Q98485/
 ---
 
 ## Q98485: Using Windows and MS-DOS 5 Upgrade After Installing MS-DOS 6.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177566: Unable to Receive E-mail on The Microsoft Network"
-permalink: kb/177/Q177566/
+permalink: /kb/177/Q177566/
 ---
 
 ## Q177566: Unable to Receive E-mail on The Microsoft Network

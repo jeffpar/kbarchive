@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176312: WD97: Macro Shortcut Key Assignments Do Not Appear"
-permalink: kb/176/Q176312/
+permalink: /kb/176/Q176312/
 ---
 
 ## Q176312: WD97: Macro Shortcut Key Assignments Do Not Appear

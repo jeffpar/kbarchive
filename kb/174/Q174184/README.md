@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174184: MDG: Mail Is Missing"
-permalink: kb/174/Q174184/
+permalink: /kb/174/Q174184/
 ---
 
 ## Q174184: MDG: Mail Is Missing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60022: Mac Form: Installing a Custom Form on a Mail Server"
-permalink: kb/060/Q60022/
+permalink: /kb/060/Q60022/
 ---
 
 ## Q60022: Mac Form: Installing a Custom Form on a Mail Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266498: Encarta 2001: Researcher Prompts You to Overwrite Text File"
-permalink: kb/266/Q266498/
+permalink: /kb/266/Q266498/
 ---
 
 ## Q266498: Encarta 2001: Researcher Prompts You to Overwrite Text File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154059: PRB: Commands Fail in Makefile if Directory Over 66 Characters"
-permalink: kb/154/Q154059/
+permalink: /kb/154/Q154059/
 ---
 
 ## Q154059: PRB: Commands Fail in Makefile if Directory Over 66 Characters

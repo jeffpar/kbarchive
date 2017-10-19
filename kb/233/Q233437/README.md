@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233437: MSBP: Unable to Scroll Through Index with IntelliMouse Wheel"
-permalink: kb/233/Q233437/
+permalink: /kb/233/Q233437/
 ---
 
 ## Q233437: MSBP: Unable to Scroll Through Index with IntelliMouse Wheel

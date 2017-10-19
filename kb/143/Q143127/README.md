@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143127: BOOTP Relay Agents Fail Using Multiple Logical IP Subnets"
-permalink: kb/143/Q143127/
+permalink: /kb/143/Q143127/
 ---
 
 ## Q143127: BOOTP Relay Agents Fail Using Multiple Logical IP Subnets

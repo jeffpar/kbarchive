@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80610: MS-DOS 5 Upgrade (5.0a) Disks (5.25-Inch, 360K)"
-permalink: kb/080/Q80610/
+permalink: /kb/080/Q80610/
 ---
 
 ## Q80610: MS-DOS 5 Upgrade (5.0a) Disks (5.25-Inch, 360K)

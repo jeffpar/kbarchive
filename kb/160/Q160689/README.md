@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160689: Systems Management Server Query Appears to Lose Data"
-permalink: kb/160/Q160689/
+permalink: /kb/160/Q160689/
 ---
 
 ## Q160689: Systems Management Server Query Appears to Lose Data

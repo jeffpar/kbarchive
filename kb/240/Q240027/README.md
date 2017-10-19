@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240027: W3SVC and IIS Log File Names Are Listed with NCSA Format"
-permalink: kb/240/Q240027/
+permalink: /kb/240/Q240027/
 ---
 
 ## Q240027: W3SVC and IIS Log File Names Are Listed with NCSA Format

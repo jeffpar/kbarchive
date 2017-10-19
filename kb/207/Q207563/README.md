@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207563: HOWTO: Remotely Check the Time Zone on Windows NT"
-permalink: kb/207/Q207563/
+permalink: /kb/207/Q207563/
 ---
 
 ## Q207563: HOWTO: Remotely Check the Time Zone on Windows NT

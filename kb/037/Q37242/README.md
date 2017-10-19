@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37242: A General Tutorial on the Various Forms of Memory"
-permalink: kb/037/Q37242/
+permalink: /kb/037/Q37242/
 ---
 
 ## Q37242: A General Tutorial on the Various Forms of Memory

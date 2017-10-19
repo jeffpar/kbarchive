@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175468: Effects of Machine Account Replication on a Domain"
-permalink: kb/175/Q175468/
+permalink: /kb/175/Q175468/
 ---
 
 ## Q175468: Effects of Machine Account Replication on a Domain

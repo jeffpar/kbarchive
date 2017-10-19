@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164322: Memory Leak in NetQueryDisplayInformation API"
-permalink: kb/164/Q164322/
+permalink: /kb/164/Q164322/
 ---
 
 ## Q164322: Memory Leak in NetQueryDisplayInformation API

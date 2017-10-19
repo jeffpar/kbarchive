@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189382: PRB: CWnd::m_nMsgDragList Not Exported by the MFC DLL"
-permalink: kb/189/Q189382/
+permalink: /kb/189/Q189382/
 ---
 
 ## Q189382: PRB: CWnd::m_nMsgDragList Not Exported by the MFC DLL

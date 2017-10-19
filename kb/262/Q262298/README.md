@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262298: SMS: CCM Tries to Install Client on SAMBA Servers"
-permalink: kb/262/Q262298/
+permalink: /kb/262/Q262298/
 ---
 
 ## Q262298: SMS: CCM Tries to Install Client on SAMBA Servers

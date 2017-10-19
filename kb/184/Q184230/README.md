@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184230: XADM: ESEUTIL/P Generates JET_errLVCorrupted (-1526) Error"
-permalink: kb/184/Q184230/
+permalink: /kb/184/Q184230/
 ---
 
 ## Q184230: XADM: ESEUTIL/P Generates JET_errLVCorrupted (-1526) Error

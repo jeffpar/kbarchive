@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246536: XCLN: New vCard from Contact Contains Info from GAL"
-permalink: kb/246/Q246536/
+permalink: /kb/246/Q246536/
 ---
 
 ## Q246536: XCLN: New vCard from Contact Contains Info from GAL

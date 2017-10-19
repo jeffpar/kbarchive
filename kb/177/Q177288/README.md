@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177288: Err Msg: The Procedure Entry Point SUnMapLS_IP_EBP_8 Could..."
-permalink: kb/177/Q177288/
+permalink: /kb/177/Q177288/
 ---
 
 ## Q177288: Err Msg: The Procedure Entry Point SUnMapLS_IP_EBP_8 Could...

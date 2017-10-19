@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184867: FS98 Err Msg: You Must Specify a Non-Floppy Disk to Install to"
-permalink: kb/184/Q184867/
+permalink: /kb/184/Q184867/
 ---
 
 ## Q184867: FS98 Err Msg: You Must Specify a Non-Floppy Disk to Install to

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125668: Creating the SMS Administrator Log File UI.LOG"
-permalink: kb/125/Q125668/
+permalink: /kb/125/Q125668/
 ---
 
 ## Q125668: Creating the SMS Administrator Log File UI.LOG

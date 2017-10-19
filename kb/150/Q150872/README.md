@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150872: Setup Does Not Run ScanDisk from Windows 3.1 Standard Mode"
-permalink: kb/150/Q150872/
+permalink: /kb/150/Q150872/
 ---
 
 ## Q150872: Setup Does Not Run ScanDisk from Windows 3.1 Standard Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187047: Acregl.exe Has No Help Switches"
-permalink: kb/187/Q187047/
+permalink: /kb/187/Q187047/
 ---
 
 ## Q187047: Acregl.exe Has No Help Switches

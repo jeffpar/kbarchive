@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286032: WD97: Swedish Word Stops Responding Opening Versioned Documents"
-permalink: kb/286/Q286032/
+permalink: /kb/286/Q286032/
 ---
 
 ## Q286032: WD97: Swedish Word Stops Responding Opening Versioned Documents

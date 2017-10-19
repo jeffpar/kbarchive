@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197758: WD97: Cross-Reference Text Format Lost in Form Field Bookmark"
-permalink: kb/197/Q197758/
+permalink: /kb/197/Q197758/
 ---
 
 ## Q197758: WD97: Cross-Reference Text Format Lost in Form Field Bookmark

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183550: BUG: Administrative Snap-in Allows Duplicate Names of HCD Files"
-permalink: kb/183/Q183550/
+permalink: /kb/183/Q183550/
 ---
 
 ## Q183550: BUG: Administrative Snap-in Allows Duplicate Names of HCD Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117508: Personal ACIS Err Msg: You Still Need to Install the Win32S..."
-permalink: kb/117/Q117508/
+permalink: /kb/117/Q117508/
 ---
 
 ## Q117508: Personal ACIS Err Msg: You Still Need to Install the Win32S...

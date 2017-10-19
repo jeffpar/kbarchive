@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125458: Writer/Artist: How to Print a Kids Document to a File"
-permalink: kb/125/Q125458/
+permalink: /kb/125/Q125458/
 ---
 
 ## Q125458: Writer/Artist: How to Print a Kids Document to a File

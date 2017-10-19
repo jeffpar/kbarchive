@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96299: PRB: ??? &quot;{&quot; Returns Syntax Error"
-permalink: kb/096/Q96299/
+permalink: /kb/096/Q96299/
 ---
 
 ## Q96299: PRB: ??? &quot;{&quot; Returns Syntax Error

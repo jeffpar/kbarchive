@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186845: WD97: Picture Wrapping Changes from No Wrap to Around Wrap"
-permalink: kb/186/Q186845/
+permalink: /kb/186/Q186845/
 ---
 
 ## Q186845: WD97: Picture Wrapping Changes from No Wrap to Around Wrap

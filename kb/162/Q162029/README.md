@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162029: Token Leak Caused by LPC Port Connection to DHCP Service"
-permalink: kb/162/Q162029/
+permalink: /kb/162/Q162029/
 ---
 
 ## Q162029: Token Leak Caused by LPC Port Connection to DHCP Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93251: SAMPLE: WinLua.exe LUA API for 16-bit and 32-bit Windows"
-permalink: kb/093/Q93251/
+permalink: /kb/093/Q93251/
 ---
 
 ## Q93251: SAMPLE: WinLua.exe LUA API for 16-bit and 32-bit Windows

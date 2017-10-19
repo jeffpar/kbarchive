@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174530: FIX: TABLEREVERT() with Table Buffering Results in Page Fault"
-permalink: kb/174/Q174530/
+permalink: /kb/174/Q174530/
 ---
 
 ## Q174530: FIX: TABLEREVERT() with Table Buffering Results in Page Fault

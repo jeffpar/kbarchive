@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164987: Hard-Coded Socket of 451 Causes LANtegrity Software to Fail"
-permalink: kb/164/Q164987/
+permalink: /kb/164/Q164987/
 ---
 
 ## Q164987: Hard-Coded Socket of 451 Causes LANtegrity Software to Fail

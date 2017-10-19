@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319692: Winsock Control May Fire DataArrival Event After the Close Event"
-permalink: kb/319/Q319692/
+permalink: /kb/319/Q319692/
 ---
 
 ## Q319692: Winsock Control May Fire DataArrival Event After the Close Event

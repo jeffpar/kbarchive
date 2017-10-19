@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185240: HOWTO: Updating Embedded Excel Sheet When Linked Sheet Changed"
-permalink: kb/185/Q185240/
+permalink: /kb/185/Q185240/
 ---
 
 ## Q185240: HOWTO: Updating Embedded Excel Sheet When Linked Sheet Changed

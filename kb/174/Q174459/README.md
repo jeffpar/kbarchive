@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174459: Windows NT DNS Server Remote Administration"
-permalink: kb/174/Q174459/
+permalink: /kb/174/Q174459/
 ---
 
 ## Q174459: Windows NT DNS Server Remote Administration

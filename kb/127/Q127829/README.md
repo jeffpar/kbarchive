@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127829: Automap Road Atlas Err Msg: Cannot Find an Existing Version..."
-permalink: kb/127/Q127829/
+permalink: /kb/127/Q127829/
 ---
 
 ## Q127829: Automap Road Atlas Err Msg: Cannot Find an Existing Version...

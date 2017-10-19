@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177948: Bookshelf 98: Horizontal Scroll Bar Is Not Provided"
-permalink: kb/177/Q177948/
+permalink: /kb/177/Q177948/
 ---
 
 ## Q177948: Bookshelf 98: Horizontal Scroll Bar Is Not Provided

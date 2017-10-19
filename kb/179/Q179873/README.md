@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179873: Files Open with UNC Path May Be Closed Prematurely"
-permalink: kb/179/Q179873/
+permalink: /kb/179/Q179873/
 ---
 
 ## Q179873: Files Open with UNC Path May Be Closed Prematurely

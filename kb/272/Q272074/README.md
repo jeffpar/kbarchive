@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272074: FIX: T-SQL Debugger Parses SQL Server 2000 Return Value Wrong"
-permalink: kb/272/Q272074/
+permalink: /kb/272/Q272074/
 ---
 
 ## Q272074: FIX: T-SQL Debugger Parses SQL Server 2000 Return Value Wrong

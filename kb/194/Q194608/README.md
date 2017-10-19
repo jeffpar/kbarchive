@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194608: FIX: Incorrect Code Generated with /Og Optimization"
-permalink: kb/194/Q194608/
+permalink: /kb/194/Q194608/
 ---
 
 ## Q194608: FIX: Incorrect Code Generated with /Og Optimization

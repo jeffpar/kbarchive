@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170725: WD97: Sample Macro That Uses a Loop to Find Text"
-permalink: kb/170/Q170725/
+permalink: /kb/170/Q170725/
 ---
 
 ## Q170725: WD97: Sample Macro That Uses a Loop to Find Text

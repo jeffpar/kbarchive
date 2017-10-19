@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167016: Lexmark Optra C Series Printer Incorrectly Presents Duplex Optio"
-permalink: kb/167/Q167016/
+permalink: /kb/167/Q167016/
 ---
 
 ## Q167016: Lexmark Optra C Series Printer Incorrectly Presents Duplex Optio

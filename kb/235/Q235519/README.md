@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235519: Performance Monitor Chart Settings Not Read Properly"
-permalink: kb/235/Q235519/
+permalink: /kb/235/Q235519/
 ---
 
 ## Q235519: Performance Monitor Chart Settings Not Read Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157328: SNA Server Rejects Dependent LU6.2 Bind, Sense Code = 083500xx"
-permalink: kb/157/Q157328/
+permalink: /kb/157/Q157328/
 ---
 
 ## Q157328: SNA Server Rejects Dependent LU6.2 Bind, Sense Code = 083500xx

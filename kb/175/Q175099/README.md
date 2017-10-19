@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175099: XCLN: Shiva Error: Unable to Negotiate LCP Connection"
-permalink: kb/175/Q175099/
+permalink: /kb/175/Q175099/
 ---
 
 ## Q175099: XCLN: Shiva Error: Unable to Negotiate LCP Connection

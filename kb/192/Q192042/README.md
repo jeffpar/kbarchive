@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192042: Diskeeper 2.0 Will Not Establish Connections to Other Servers"
-permalink: kb/192/Q192042/
+permalink: /kb/192/Q192042/
 ---
 
 ## Q192042: Diskeeper 2.0 Will Not Establish Connections to Other Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166951: WD97: &quot;Merge Cells Before Split&quot; Option Causes Unexpected Result"
-permalink: kb/166/Q166951/
+permalink: /kb/166/Q166951/
 ---
 
 ## Q166951: WD97: &quot;Merge Cells Before Split&quot; Option Causes Unexpected Result

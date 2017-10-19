@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195848: SAMPLE: ADSIPrnt.exe Demonstrates ADSI Print Job Control"
-permalink: kb/195/Q195848/
+permalink: /kb/195/Q195848/
 ---
 
 ## Q195848: SAMPLE: ADSIPrnt.exe Demonstrates ADSI Print Job Control

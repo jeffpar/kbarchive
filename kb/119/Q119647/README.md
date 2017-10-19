@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119647: PC MAPI: List of MAPI Error Codes"
-permalink: kb/119/Q119647/
+permalink: /kb/119/Q119647/
 ---
 
 ## Q119647: PC MAPI: List of MAPI Error Codes

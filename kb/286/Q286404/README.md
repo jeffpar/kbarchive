@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286404: HOWTO: Add HTML Help to a Visual Basic 6.0 Application Wizard Ap"
-permalink: kb/286/Q286404/
+permalink: /kb/286/Q286404/
 ---
 
 ## Q286404: HOWTO: Add HTML Help to a Visual Basic 6.0 Application Wizard Ap

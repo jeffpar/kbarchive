@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132422: HOWTO: Clear an istream Object During Extraction"
-permalink: kb/132/Q132422/
+permalink: /kb/132/Q132422/
 ---
 
 ## Q132422: HOWTO: Clear an istream Object During Extraction

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169657: ADT95: Installation of Run-Time Application Disables DFS Client"
-permalink: kb/169/Q169657/
+permalink: /kb/169/Q169657/
 ---
 
 ## Q169657: ADT95: Installation of Run-Time Application Disables DFS Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268480: Workstation Service Does Not Start, Event Viewer Records 'Duplic"
-permalink: kb/268/Q268480/
+permalink: /kb/268/Q268480/
 ---
 
 ## Q268480: Workstation Service Does Not Start, Event Viewer Records 'Duplic

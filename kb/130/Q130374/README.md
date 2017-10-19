@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130374: Incorrect System BIOS Information in Windows NT Diag. Report"
-permalink: kb/130/Q130374/
+permalink: /kb/130/Q130374/
 ---
 
 ## Q130374: Incorrect System BIOS Information in Windows NT Diag. Report

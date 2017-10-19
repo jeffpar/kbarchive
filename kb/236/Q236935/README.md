@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236935: PRB: C1001 Internal Compiler Error After Installing VC++ SP3"
-permalink: kb/236/Q236935/
+permalink: /kb/236/Q236935/
 ---
 
 ## Q236935: PRB: C1001 Internal Compiler Error After Installing VC++ SP3

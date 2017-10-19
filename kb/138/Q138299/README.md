@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138299: INFO: Legal Visual SourceSafe Naming Conventions"
-permalink: kb/138/Q138299/
+permalink: /kb/138/Q138299/
 ---
 
 ## Q138299: INFO: Legal Visual SourceSafe Naming Conventions

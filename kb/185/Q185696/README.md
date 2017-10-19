@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185696: INFO: &quot;Invalid DOS path &lt;drive&gt;:&lt;path&gt;&quot; when Adding Files"
-permalink: kb/185/Q185696/
+permalink: /kb/185/Q185696/
 ---
 
 ## Q185696: INFO: &quot;Invalid DOS path &lt;drive&gt;:&lt;path&gt;&quot; when Adding Files

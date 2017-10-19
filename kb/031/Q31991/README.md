@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31991: How LINK Orders and Combines Segments"
-permalink: kb/031/Q31991/
+permalink: /kb/031/Q31991/
 ---
 
 ## Q31991: How LINK Orders and Combines Segments

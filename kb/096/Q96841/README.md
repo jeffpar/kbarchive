@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96841: Mac LDF: Local Mail File Compression"
-permalink: kb/096/Q96841/
+permalink: /kb/096/Q96841/
 ---
 
 ## Q96841: Mac LDF: Local Mail File Compression

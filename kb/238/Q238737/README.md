@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238737: VPath Variable Not Populated in Index Server Results Page"
-permalink: kb/238/Q238737/
+permalink: /kb/238/Q238737/
 ---
 
 ## Q238737: VPath Variable Not Populated in Index Server Results Page

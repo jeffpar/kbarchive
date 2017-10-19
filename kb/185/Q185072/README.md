@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185072: How to Configure Outlook 97 for Use with Multiple MSN Accounts"
-permalink: kb/185/Q185072/
+permalink: /kb/185/Q185072/
 ---
 
 ## Q185072: How to Configure Outlook 97 for Use with Multiple MSN Accounts

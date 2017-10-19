@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170362: Mastering:Internet Jumps Open Two Instances of Internet Explorer"
-permalink: kb/170/Q170362/
+permalink: /kb/170/Q170362/
 ---
 
 ## Q170362: Mastering:Internet Jumps Open Two Instances of Internet Explorer

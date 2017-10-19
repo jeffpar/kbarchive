@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135647: Media Vision Premium 3D and Pro 3D Cards Not Supported"
-permalink: kb/135/Q135647/
+permalink: /kb/135/Q135647/
 ---
 
 ## Q135647: Media Vision Premium 3D and Pro 3D Cards Not Supported

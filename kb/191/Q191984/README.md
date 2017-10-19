@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191984: DHCP Relay Agent Fails to Start after Install"
-permalink: kb/191/Q191984/
+permalink: /kb/191/Q191984/
 ---
 
 ## Q191984: DHCP Relay Agent Fails to Start after Install

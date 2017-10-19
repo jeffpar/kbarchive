@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191152: You Receive Error Messages When You Click Dial Properties"
-permalink: kb/191/Q191152/
+permalink: /kb/191/Q191152/
 ---
 
 ## Q191152: You Receive Error Messages When You Click Dial Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312443: IMS Stops &amp; 3013 - The Outbound Message Queue Is Corrupt ErrMsg"
-permalink: kb/312/Q312443/
+permalink: /kb/312/Q312443/
 ---
 
 ## Q312443: IMS Stops &amp; 3013 - The Outbound Message Queue Is Corrupt ErrMsg

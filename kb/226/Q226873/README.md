@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226873: SMS: Group Permissions Fail if Group Name Contain Extended Char."
-permalink: kb/226/Q226873/
+permalink: /kb/226/Q226873/
 ---
 
 ## Q226873: SMS: Group Permissions Fail if Group Name Contain Extended Char.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280263: Cannot See or Move the Detail Bar in Health Monitor"
-permalink: kb/280/Q280263/
+permalink: /kb/280/Q280263/
 ---
 
 ## Q280263: Cannot See or Move the Detail Bar in Health Monitor

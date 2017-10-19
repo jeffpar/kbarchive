@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173808: XADM: Cannot Log On If Mailbox Name Appears Anonymously"
-permalink: kb/173/Q173808/
+permalink: /kb/173/Q173808/
 ---
 
 ## Q173808: XADM: Cannot Log On If Mailbox Name Appears Anonymously

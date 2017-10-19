@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75782: Packard Bell ISV 286 Cannot Run Windows in Standard Mode"
-permalink: kb/075/Q75782/
+permalink: /kb/075/Q75782/
 ---
 
 ## Q75782: Packard Bell ISV 286 Cannot Run Windows in Standard Mode

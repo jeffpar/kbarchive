@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138439: Some Fills Lost When Saving from PowerPoint 7.0 as 4.0"
-permalink: kb/138/Q138439/
+permalink: /kb/138/Q138439/
 ---
 
 ## Q138439: Some Fills Lost When Saving from PowerPoint 7.0 as 4.0

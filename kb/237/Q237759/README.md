@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237759: Avoiding Client Lockouts When Using Client Connection Accounts"
-permalink: kb/237/Q237759/
+permalink: /kb/237/Q237759/
 ---
 
 ## Q237759: Avoiding Client Lockouts When Using Client Connection Accounts

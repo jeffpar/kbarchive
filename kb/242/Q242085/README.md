@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242085: Access Violation Error Message in the Inetinfo Process"
-permalink: kb/242/Q242085/
+permalink: /kb/242/Q242085/
 ---
 
 ## Q242085: Access Violation Error Message in the Inetinfo Process

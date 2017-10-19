@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259404: BUG: MFC OLE Container May Merge Server Menus Incorrectly"
-permalink: kb/259/Q259404/
+permalink: /kb/259/Q259404/
 ---
 
 ## Q259404: BUG: MFC OLE Container May Merge Server Menus Incorrectly

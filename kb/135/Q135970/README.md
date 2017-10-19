@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135970: Protected-Mode-Only Drives Not Mounted"
-permalink: kb/135/Q135970/
+permalink: /kb/135/Q135970/
 ---
 
 ## Q135970: Protected-Mode-Only Drives Not Mounted

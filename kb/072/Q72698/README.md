@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72698: Using Full Segment Directives with MASM 6.0 HELLO.ASM"
-permalink: kb/072/Q72698/
+permalink: /kb/072/Q72698/
 ---
 
 ## Q72698: Using Full Segment Directives with MASM 6.0 HELLO.ASM

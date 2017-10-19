@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161488: XADM: Factors That Determine the Size of the Directory Database"
-permalink: kb/161/Q161488/
+permalink: /kb/161/Q161488/
 ---
 
 ## Q161488: XADM: Factors That Determine the Size of the Directory Database

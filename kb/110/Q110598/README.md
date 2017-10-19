@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110598: PRB: Spontaneous Assembly and MASM 6.11 Errors"
-permalink: kb/110/Q110598/
+permalink: /kb/110/Q110598/
 ---
 
 ## Q110598: PRB: Spontaneous Assembly and MASM 6.11 Errors

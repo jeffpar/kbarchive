@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179813: Underlining Shifted to the Left When Printing from Applications"
-permalink: kb/179/Q179813/
+permalink: /kb/179/Q179813/
 ---
 
 ## Q179813: Underlining Shifted to the Left When Printing from Applications

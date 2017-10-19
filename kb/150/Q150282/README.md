@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150282: NT 3.x Video and Print Drivers Not Compatible with NT 4.0"
-permalink: kb/150/Q150282/
+permalink: /kb/150/Q150282/
 ---
 
 ## Q150282: NT 3.x Video and Print Drivers Not Compatible with NT 4.0

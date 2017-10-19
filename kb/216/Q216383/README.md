@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216383: Memory Allocations May Fail When There Are Large Free Blocks"
-permalink: kb/216/Q216383/
+permalink: /kb/216/Q216383/
 ---
 
 ## Q216383: Memory Allocations May Fail When There Are Large Free Blocks

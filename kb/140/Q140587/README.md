@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140587: HOWTO: How to Change Default Button on CPropertySheet"
-permalink: kb/140/Q140587/
+permalink: /kb/140/Q140587/
 ---
 
 ## Q140587: HOWTO: How to Change Default Button on CPropertySheet

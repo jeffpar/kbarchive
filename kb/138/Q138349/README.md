@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138349: Windows 95 Installation Requirements"
-permalink: kb/138/Q138349/
+permalink: /kb/138/Q138349/
 ---
 
 ## Q138349: Windows 95 Installation Requirements

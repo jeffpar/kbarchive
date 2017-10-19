@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175040: XFOR: Read Receipts Not Translated Over AppleTalk Connector"
-permalink: kb/175/Q175040/
+permalink: /kb/175/Q175040/
 ---
 
 ## Q175040: XFOR: Read Receipts Not Translated Over AppleTalk Connector

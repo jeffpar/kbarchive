@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169790: How to Troubleshoot Basic TCP/IP Problems"
-permalink: kb/169/Q169790/
+permalink: /kb/169/Q169790/
 ---
 
 ## Q169790: How to Troubleshoot Basic TCP/IP Problems

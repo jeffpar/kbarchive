@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151505: Unable to Display The Find Tab (177)"
-permalink: kb/151/Q151505/
+permalink: /kb/151/Q151505/
 ---
 
 ## Q151505: Unable to Display The Find Tab (177)

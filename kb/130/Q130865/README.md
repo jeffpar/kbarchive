@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130865: How to Place Totals on Report's Last Page in Page Footer"
-permalink: kb/130/Q130865/
+permalink: /kb/130/Q130865/
 ---
 
 ## Q130865: How to Place Totals on Report's Last Page in Page Footer

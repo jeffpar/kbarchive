@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171271: FIX: Internet Transfer Control 5.0 Has Bug with &quot;HEAD&quot; Request"
-permalink: kb/171/Q171271/
+permalink: /kb/171/Q171271/
 ---
 
 ## Q171271: FIX: Internet Transfer Control 5.0 Has Bug with &quot;HEAD&quot; Request

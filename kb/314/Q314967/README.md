@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314967: HTTP E-mail Account Setup--MSN Explorer or Hotmail"
-permalink: kb/314/Q314967/
+permalink: /kb/314/Q314967/
 ---
 
 ## Q314967: HTTP E-mail Account Setup--MSN Explorer or Hotmail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162082: FIX: LostFocus of Form in Formset Does Not Fire with Mouse"
-permalink: kb/162/Q162082/
+permalink: /kb/162/Q162082/
 ---
 
 ## Q162082: FIX: LostFocus of Form in Formset Does Not Fire with Mouse

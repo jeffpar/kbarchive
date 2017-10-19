@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110615: PROFS: Bottleneck in MS-CSM Causes Multiple Requests"
-permalink: kb/110/Q110615/
+permalink: /kb/110/Q110615/
 ---
 
 ## Q110615: PROFS: Bottleneck in MS-CSM Causes Multiple Requests

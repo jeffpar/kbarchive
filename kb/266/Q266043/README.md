@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266043: XADM: Windows 2000 Server and Key Management Server Interop. WP"
-permalink: kb/266/Q266043/
+permalink: /kb/266/Q266043/
 ---
 
 ## Q266043: XADM: Windows 2000 Server and Key Management Server Interop. WP

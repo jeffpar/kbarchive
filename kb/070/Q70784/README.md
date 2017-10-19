@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70784: INFO: Data May Be Lost During fflush() If Write Is Unsuccessful"
-permalink: kb/070/Q70784/
+permalink: /kb/070/Q70784/
 ---
 
 ## Q70784: INFO: Data May Be Lost During fflush() If Write Is Unsuccessful

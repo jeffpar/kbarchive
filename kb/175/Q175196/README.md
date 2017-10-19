@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175196: FS/CFS: Runway is Not Visible or Game Screen is Black"
-permalink: kb/175/Q175196/
+permalink: /kb/175/Q175196/
 ---
 
 ## Q175196: FS/CFS: Runway is Not Visible or Game Screen is Black

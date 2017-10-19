@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85387: Limitations in Windows File Association Capabilities"
-permalink: kb/085/Q85387/
+permalink: /kb/085/Q85387/
 ---
 
 ## Q85387: Limitations in Windows File Association Capabilities

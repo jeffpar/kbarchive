@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139180: &quot;Data or No Disc Loaded&quot; with Sony CDU-541 SCSI CD-ROM Drive"
-permalink: kb/139/Q139180/
+permalink: /kb/139/Q139180/
 ---
 
 ## Q139180: &quot;Data or No Disc Loaded&quot; with Sony CDU-541 SCSI CD-ROM Drive

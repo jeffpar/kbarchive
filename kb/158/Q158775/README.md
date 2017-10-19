@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158775: 3270 Emulator Fails To Enforce SNA User/Group Assignments"
-permalink: kb/158/Q158775/
+permalink: /kb/158/Q158775/
 ---
 
 ## Q158775: 3270 Emulator Fails To Enforce SNA User/Group Assignments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147612: Microsoft Internet Jump Start CD for Education"
-permalink: kb/147/Q147612/
+permalink: /kb/147/Q147612/
 ---
 
 ## Q147612: Microsoft Internet Jump Start CD for Education

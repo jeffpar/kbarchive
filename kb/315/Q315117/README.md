@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315117: Asheron's Call: Err Msg: You Must Purchase Asheron's Call..."
-permalink: kb/315/Q315117/
+permalink: /kb/315/Q315117/
 ---
 
 ## Q315117: Asheron's Call: Err Msg: You Must Purchase Asheron's Call...

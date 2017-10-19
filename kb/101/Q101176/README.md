@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101176: Comprehensive List of Windows 3.0 &quot;User's Guide&quot; Doc Errs"
-permalink: kb/101/Q101176/
+permalink: /kb/101/Q101176/
 ---
 
 ## Q101176: Comprehensive List of Windows 3.0 &quot;User's Guide&quot; Doc Errs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101318: ADT: How to Use DDE to Communicate with a Run-Time Application"
-permalink: kb/101/Q101318/
+permalink: /kb/101/Q101318/
 ---
 
 ## Q101318: ADT: How to Use DDE to Communicate with a Run-Time Application

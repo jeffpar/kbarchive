@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163194: PPT: Sample VB Code to Retrieve Current Slide Number"
-permalink: kb/163/Q163194/
+permalink: /kb/163/Q163194/
 ---
 
 ## Q163194: PPT: Sample VB Code to Retrieve Current Slide Number

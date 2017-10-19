@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141357: BUG: WM_MOUSEMOVE Messages Returned Out of Sequence"
-permalink: kb/141/Q141357/
+permalink: /kb/141/Q141357/
 ---
 
 ## Q141357: BUG: WM_MOUSEMOVE Messages Returned Out of Sequence
