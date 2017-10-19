@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161229: Resource Leak in Eicon V3R3 X.25 Link Service"
-permalink: kb/161/Q161229/
+permalink: /kb/161/Q161229/
 ---
 
 ## Q161229: Resource Leak in Eicon V3R3 X.25 Link Service

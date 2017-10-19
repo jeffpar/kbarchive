@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125467: Frank Lloyd Wright: No Sound, But Sound OK in Other Programs"
-permalink: kb/125/Q125467/
+permalink: /kb/125/Q125467/
 ---
 
 ## Q125467: Frank Lloyd Wright: No Sound, But Sound OK in Other Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186606: Terminal Server's NetWare User Access For Terminal Server"
-permalink: kb/186/Q186606/
+permalink: /kb/186/Q186606/
 ---
 
 ## Q186606: Terminal Server's NetWare User Access For Terminal Server

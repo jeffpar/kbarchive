@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109222: Writer/Artist: Do Not Run in Windows 3.1 Standard Mode"
-permalink: kb/109/Q109222/
+permalink: /kb/109/Q109222/
 ---
 
 ## Q109222: Writer/Artist: Do Not Run in Windows 3.1 Standard Mode

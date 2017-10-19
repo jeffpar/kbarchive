@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193381: XFOR: Chat Portals No Longer Connect after Installing SP1"
-permalink: kb/193/Q193381/
+permalink: /kb/193/Q193381/
 ---
 
 ## Q193381: XFOR: Chat Portals No Longer Connect after Installing SP1

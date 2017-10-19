@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136356: Pressing F4 and Dragging Mouse Causes Screen Corruption"
-permalink: kb/136/Q136356/
+permalink: /kb/136/Q136356/
 ---
 
 ## Q136356: Pressing F4 and Dragging Mouse Causes Screen Corruption

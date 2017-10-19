@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129204: Windows NT 3.51 Books Online Icon Missing"
-permalink: kb/129/Q129204/
+permalink: /kb/129/Q129204/
 ---
 
 ## Q129204: Windows NT 3.51 Books Online Icon Missing

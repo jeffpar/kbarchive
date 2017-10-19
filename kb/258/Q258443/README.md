@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258443: Cluster Spooler Reports Node Name Instead of Virtual Name"
-permalink: kb/258/Q258443/
+permalink: /kb/258/Q258443/
 ---
 
 ## Q258443: Cluster Spooler Reports Node Name Instead of Virtual Name

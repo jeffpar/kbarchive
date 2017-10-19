@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169375: STOP 0X0000007B on HP NetServer LH Systems"
-permalink: kb/169/Q169375/
+permalink: /kb/169/Q169375/
 ---
 
 ## Q169375: STOP 0X0000007B on HP NetServer LH Systems

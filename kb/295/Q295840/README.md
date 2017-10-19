@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295840: HOWTO: Determine if a Service Exists Using Visual FoxPro"
-permalink: kb/295/Q295840/
+permalink: /kb/295/Q295840/
 ---
 
 ## Q295840: HOWTO: Determine if a Service Exists Using Visual FoxPro

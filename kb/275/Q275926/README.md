@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275926: FIX: Analyze -F Overwrites Analyze.Log File if Folder Not Empty"
-permalink: kb/275/Q275926/
+permalink: /kb/275/Q275926/
 ---
 
 ## Q275926: FIX: Analyze -F Overwrites Analyze.Log File if Folder Not Empty

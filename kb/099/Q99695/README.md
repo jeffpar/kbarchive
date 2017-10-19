@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99695: PC Win: Spell Checker Changes Words Without Prompt"
-permalink: kb/099/Q99695/
+permalink: /kb/099/Q99695/
 ---
 
 ## Q99695: PC Win: Spell Checker Changes Words Without Prompt

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181028: Print Server Resets LPI During Print Job"
-permalink: kb/181/Q181028/
+permalink: /kb/181/Q181028/
 ---
 
 ## Q181028: Print Server Resets LPI During Print Job

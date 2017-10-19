@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85580: SMARTDrive Drive Letter Parameters Should Not Contain a Colon"
-permalink: kb/085/Q85580/
+permalink: /kb/085/Q85580/
 ---
 
 ## Q85580: SMARTDrive Drive Letter Parameters Should Not Contain a Colon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162570: IPX: Banner Page Prints When No One Is Logged On to Server"
-permalink: kb/162/Q162570/
+permalink: /kb/162/Q162570/
 ---
 
 ## Q162570: IPX: Banner Page Prints When No One Is Logged On to Server

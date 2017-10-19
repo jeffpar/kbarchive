@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87998: Cannot Print Lists of Merge Rules, File Types, Groups, etc."
-permalink: kb/087/Q87998/
+permalink: /kb/087/Q87998/
 ---
 
 ## Q87998: Cannot Print Lists of Merge Rules, File Types, Groups, etc.

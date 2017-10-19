@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107121: Operator Information Area Indicators for 3270"
-permalink: kb/107/Q107121/
+permalink: /kb/107/Q107121/
 ---
 
 ## Q107121: Operator Information Area Indicators for 3270

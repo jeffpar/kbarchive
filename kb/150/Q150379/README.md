@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150379: XCLN: Error: Some Extensions Could Not be Loaded"
-permalink: kb/150/Q150379/
+permalink: /kb/150/Q150379/
 ---
 
 ## Q150379: XCLN: Error: Some Extensions Could Not be Loaded

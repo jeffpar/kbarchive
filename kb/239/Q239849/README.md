@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239849: Type Mismatch Error Occurs When UDT Is a COMTI Return Value"
-permalink: kb/239/Q239849/
+permalink: /kb/239/Q239849/
 ---
 
 ## Q239849: Type Mismatch Error Occurs When UDT Is a COMTI Return Value

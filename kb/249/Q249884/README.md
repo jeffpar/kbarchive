@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249884: XFOR: Connector for Lotus Notes Dirsync Truncates Last Name"
-permalink: kb/249/Q249884/
+permalink: /kb/249/Q249884/
 ---
 
 ## Q249884: XFOR: Connector for Lotus Notes Dirsync Truncates Last Name

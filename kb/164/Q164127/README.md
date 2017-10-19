@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164127: OLE Error Running Applications After Applying SP2"
-permalink: kb/164/Q164127/
+permalink: /kb/164/Q164127/
 ---
 
 ## Q164127: OLE Error Running Applications After Applying SP2

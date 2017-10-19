@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97080: PC WRmt: Mail Installation Prompts for User Data Disk"
-permalink: kb/097/Q97080/
+permalink: /kb/097/Q97080/
 ---
 
 ## Q97080: PC WRmt: Mail Installation Prompts for User Data Disk

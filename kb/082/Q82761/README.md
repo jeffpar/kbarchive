@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82761: Document Causes PostScript Printer to Reset"
-permalink: kb/082/Q82761/
+permalink: /kb/082/Q82761/
 ---
 
 ## Q82761: Document Causes PostScript Printer to Reset

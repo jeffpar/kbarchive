@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162951: SMS: How to Recover Remote Control Agent from Broken Mirror"
-permalink: kb/162/Q162951/
+permalink: /kb/162/Q162951/
 ---
 
 ## Q162951: SMS: How to Recover Remote Control Agent from Broken Mirror

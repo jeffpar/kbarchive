@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94182: PC WSPlus: Information Stored in Schedule File Exceeds Limit Set"
-permalink: kb/094/Q94182/
+permalink: /kb/094/Q94182/
 ---
 
 ## Q94182: PC WSPlus: Information Stored in Schedule File Exceeds Limit Set

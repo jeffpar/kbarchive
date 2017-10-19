@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176756: How to Install the Internet Explorer Active Desktop"
-permalink: kb/176/Q176756/
+permalink: /kb/176/Q176756/
 ---
 
 ## Q176756: How to Install the Internet Explorer Active Desktop

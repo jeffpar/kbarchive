@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242854: Certificate Server 1.0 Readme.htm File"
-permalink: kb/242/Q242854/
+permalink: /kb/242/Q242854/
 ---
 
 ## Q242854: Certificate Server 1.0 Readme.htm File

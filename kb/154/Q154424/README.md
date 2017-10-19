@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154424: FP: Image Not Loaded to Personal Web Server"
-permalink: kb/154/Q154424/
+permalink: /kb/154/Q154424/
 ---
 
 ## Q154424: FP: Image Not Loaded to Personal Web Server

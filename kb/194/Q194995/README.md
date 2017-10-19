@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194995: Pinball Arcade: Game Pauses or Game Performance Is Slow"
-permalink: kb/194/Q194995/
+permalink: /kb/194/Q194995/
 ---
 
 ## Q194995: Pinball Arcade: Game Pauses or Game Performance Is Slow

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138803: SNA Server Admin May Show Incorrect Status for LUs 54 - 106"
-permalink: kb/138/Q138803/
+permalink: /kb/138/Q138803/
 ---
 
 ## Q138803: SNA Server Admin May Show Incorrect Status for LUs 54 - 106

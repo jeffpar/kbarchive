@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192054: SMTP: Mail from SMTP Gateway Has Incorrect Sent Date and Time"
-permalink: kb/192/Q192054/
+permalink: /kb/192/Q192054/
 ---
 
 ## Q192054: SMTP: Mail from SMTP Gateway Has Incorrect Sent Date and Time

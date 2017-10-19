@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133789: WT1229: Getting Started Controlling PowerPoint Through OLE"
-permalink: kb/133/Q133789/
+permalink: /kb/133/Q133789/
 ---
 
 ## Q133789: WT1229: Getting Started Controlling PowerPoint Through OLE

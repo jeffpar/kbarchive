@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131077: Mac Form: Unable to Create New Stack Using Forms Designer"
-permalink: kb/131/Q131077/
+permalink: /kb/131/Q131077/
 ---
 
 ## Q131077: Mac Form: Unable to Create New Stack Using Forms Designer

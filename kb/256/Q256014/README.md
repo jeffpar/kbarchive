@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256014: PC WIN: SFS: Error Message: The Message Could Not Be Sent Due..."
-permalink: kb/256/Q256014/
+permalink: /kb/256/Q256014/
 ---
 
 ## Q256014: PC WIN: SFS: Error Message: The Message Could Not Be Sent Due...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111580: BUG: Some ROP Codes Cause Inconsistent Polygon() Line Segments"
-permalink: kb/111/Q111580/
+permalink: /kb/111/Q111580/
 ---
 
 ## Q111580: BUG: Some ROP Codes Cause Inconsistent Polygon() Line Segments

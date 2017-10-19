@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247936: XWEB: Error Message Accessing OWA:  HTTP 404 Not Found"
-permalink: kb/247/Q247936/
+permalink: /kb/247/Q247936/
 ---
 
 ## Q247936: XWEB: Error Message Accessing OWA:  HTTP 404 Not Found

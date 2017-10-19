@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269771: XIMS: Configuring the Internet Mail Service to Send an ETRN"
-permalink: kb/269/Q269771/
+permalink: /kb/269/Q269771/
 ---
 
 ## Q269771: XIMS: Configuring the Internet Mail Service to Send an ETRN

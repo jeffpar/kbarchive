@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150907: Err Msg: An Error Occurred During the Connection"
-permalink: kb/150/Q150907/
+permalink: /kb/150/Q150907/
 ---
 
 ## Q150907: Err Msg: An Error Occurred During the Connection

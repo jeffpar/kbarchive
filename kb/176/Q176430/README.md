@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176430: FIX: Controls on Nested Frames on SSTab May Paint Incorrectly"
-permalink: kb/176/Q176430/
+permalink: /kb/176/Q176430/
 ---
 
 ## Q176430: FIX: Controls on Nested Frames on SSTab May Paint Incorrectly

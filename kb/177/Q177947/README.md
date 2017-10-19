@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177947: PRB: &quot;Syntax Error in FROM Clause&quot; Using Text ODBC Driver"
-permalink: kb/177/Q177947/
+permalink: /kb/177/Q177947/
 ---
 
 ## Q177947: PRB: &quot;Syntax Error in FROM Clause&quot; Using Text ODBC Driver

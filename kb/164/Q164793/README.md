@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164793: Processor Reaches 100 Percent CPU Use When Printing"
-permalink: kb/164/Q164793/
+permalink: /kb/164/Q164793/
 ---
 
 ## Q164793: Processor Reaches 100 Percent CPU Use When Printing

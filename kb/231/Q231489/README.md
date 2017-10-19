@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231489: SMSINST: Using Wildcard with Install File Script Forces Restart"
-permalink: kb/231/Q231489/
+permalink: /kb/231/Q231489/
 ---
 
 ## Q231489: SMSINST: Using Wildcard with Install File Script Forces Restart

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326952: XADM: &quot;Permission Problem&quot; Err Msg with Directory Replication"
-permalink: kb/326/Q326952/
+permalink: /kb/326/Q326952/
 ---
 
 ## Q326952: XADM: &quot;Permission Problem&quot; Err Msg with Directory Replication

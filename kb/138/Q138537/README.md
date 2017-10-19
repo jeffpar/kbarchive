@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138537: HOWTO: Print the Contents of an ImageList Control to a Form"
-permalink: kb/138/Q138537/
+permalink: /kb/138/Q138537/
 ---
 
 ## Q138537: HOWTO: Print the Contents of an ImageList Control to a Form

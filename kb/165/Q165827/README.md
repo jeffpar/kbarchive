@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165827: UT97: &quot;Overflow&quot; or &quot;Division by Zero&quot; Error Upsizing Table"
-permalink: kb/165/Q165827/
+permalink: /kb/165/Q165827/
 ---
 
 ## Q165827: UT97: &quot;Overflow&quot; or &quot;Division by Zero&quot; Error Upsizing Table

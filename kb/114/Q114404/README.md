@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114404: PROFS: First Contact Form for PROFS Gateway"
-permalink: kb/114/Q114404/
+permalink: /kb/114/Q114404/
 ---
 
 ## Q114404: PROFS: First Contact Form for PROFS Gateway

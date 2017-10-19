@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224832: Error Message: Unable to Display Find Tab (177)"
-permalink: kb/224/Q224832/
+permalink: /kb/224/Q224832/
 ---
 
 ## Q224832: Error Message: Unable to Display Find Tab (177)

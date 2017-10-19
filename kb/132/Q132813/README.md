@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132813: Battery Meter Shows Unknown Battery Status On Toshiba Laptop"
-permalink: kb/132/Q132813/
+permalink: /kb/132/Q132813/
 ---
 
 ## Q132813: Battery Meter Shows Unknown Battery Status On Toshiba Laptop

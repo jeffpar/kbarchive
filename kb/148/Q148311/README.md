@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148311: XCLN: Setup /G Fails on 16-bit Client"
-permalink: kb/148/Q148311/
+permalink: /kb/148/Q148311/
 ---
 
 ## Q148311: XCLN: Setup /G Fails on 16-bit Client

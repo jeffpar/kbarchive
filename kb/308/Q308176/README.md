@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308176: BUG: SSI #EXEC CMD Directive Does Not Work in IIS 5.1"
-permalink: kb/308/Q308176/
+permalink: /kb/308/Q308176/
 ---
 
 ## Q308176: BUG: SSI #EXEC CMD Directive Does Not Work in IIS 5.1

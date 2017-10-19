@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72081: Genoa's Video TUNE.EXE Utility and Windows 3.0"
-permalink: kb/072/Q72081/
+permalink: /kb/072/Q72081/
 ---
 
 ## Q72081: Genoa's Video TUNE.EXE Utility and Windows 3.0

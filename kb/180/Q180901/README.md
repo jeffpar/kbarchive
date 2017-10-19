@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180901: HOWTO: Create Categorized Table in Word 97 w/ OLE Automation"
-permalink: kb/180/Q180901/
+permalink: /kb/180/Q180901/
 ---
 
 ## Q180901: HOWTO: Create Categorized Table in Word 97 w/ OLE Automation

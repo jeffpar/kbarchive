@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183736: How to Administer IIS 3.0 from IIS 4.0 MMC"
-permalink: kb/183/Q183736/
+permalink: /kb/183/Q183736/
 ---
 
 ## Q183736: How to Administer IIS 3.0 from IIS 4.0 MMC

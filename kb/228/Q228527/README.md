@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228527: BBall 2000: Cannot Control Actions with Two-Button Game Device"
-permalink: kb/228/Q228527/
+permalink: /kb/228/Q228527/
 ---
 
 ## Q228527: BBall 2000: Cannot Control Actions with Two-Button Game Device

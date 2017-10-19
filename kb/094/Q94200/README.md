@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94200: Windows Screen Savers Don't Activate with Icon Hearit"
-permalink: kb/094/Q94200/
+permalink: /kb/094/Q94200/
 ---
 
 ## Q94200: Windows Screen Savers Don't Activate with Icon Hearit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93246: Australian Star Dot-Matrix Models"
-permalink: kb/093/Q93246/
+permalink: /kb/093/Q93246/
 ---
 
 ## Q93246: Australian Star Dot-Matrix Models

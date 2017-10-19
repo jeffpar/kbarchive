@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239839: NFL Fever 2000: Video Adapter Does Not Appear in List of Drivers"
-permalink: kb/239/Q239839/
+permalink: /kb/239/Q239839/
 ---
 
 ## Q239839: NFL Fever 2000: Video Adapter Does Not Appear in List of Drivers

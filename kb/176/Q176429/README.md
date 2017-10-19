@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176429: BUG: Can't Check MDIChild Property of Forms in Forms Collection"
-permalink: kb/176/Q176429/
+permalink: /kb/176/Q176429/
 ---
 
 ## Q176429: BUG: Can't Check MDIChild Property of Forms in Forms Collection

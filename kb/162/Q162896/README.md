@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162896: PPT97: Word Table Borders Displayed Incorrectly in PowerPoint"
-permalink: kb/162/Q162896/
+permalink: /kb/162/Q162896/
 ---
 
 ## Q162896: PPT97: Word Table Borders Displayed Incorrectly in PowerPoint

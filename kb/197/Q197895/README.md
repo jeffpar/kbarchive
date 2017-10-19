@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197895: Application Starting Point in Web Admin Cannot be Modified"
-permalink: kb/197/Q197895/
+permalink: /kb/197/Q197895/
 ---
 
 ## Q197895: Application Starting Point in Web Admin Cannot be Modified

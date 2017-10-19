@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160130: Hellbender: Hat View When Pressing SideWinder Buttons"
-permalink: kb/160/Q160130/
+permalink: /kb/160/Q160130/
 ---
 
 ## Q160130: Hellbender: Hat View When Pressing SideWinder Buttons

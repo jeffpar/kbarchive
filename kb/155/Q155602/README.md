@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155602: WINIPCFG Command-Line Switches May Not Work"
-permalink: kb/155/Q155602/
+permalink: /kb/155/Q155602/
 ---
 
 ## Q155602: WINIPCFG Command-Line Switches May Not Work

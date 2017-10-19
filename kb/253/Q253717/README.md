@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253717: No Data Is Visible in Log File Created Using Performance Monitor"
-permalink: kb/253/Q253717/
+permalink: /kb/253/Q253717/
 ---
 
 ## Q253717: No Data Is Visible in Log File Created Using Performance Monitor

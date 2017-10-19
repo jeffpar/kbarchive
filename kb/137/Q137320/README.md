@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137320: MS Select: Bad/Missing Sector Error When Duplicating Disks"
-permalink: kb/137/Q137320/
+permalink: /kb/137/Q137320/
 ---
 
 ## Q137320: MS Select: Bad/Missing Sector Error When Duplicating Disks

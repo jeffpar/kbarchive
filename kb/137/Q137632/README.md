@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137632: FIX: OnMessagePending Not Called When a Timer is Active"
-permalink: kb/137/Q137632/
+permalink: /kb/137/Q137632/
 ---
 
 ## Q137632: FIX: OnMessagePending Not Called When a Timer is Active

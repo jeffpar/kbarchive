@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239036: Stand-Alone Root Certificate Server May Not Appear in WSC Wizard"
-permalink: kb/239/Q239036/
+permalink: /kb/239/Q239036/
 ---
 
 ## Q239036: Stand-Alone Root Certificate Server May Not Appear in WSC Wizard

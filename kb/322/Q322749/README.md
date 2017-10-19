@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322749: Alerts Sender Error When You Connect to Alerts Database"
-permalink: kb/322/Q322749/
+permalink: /kb/322/Q322749/
 ---
 
 ## Q322749: Alerts Sender Error When You Connect to Alerts Database

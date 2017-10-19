@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191208: DOCERR: Manage Documents Security Permission &amp; Printer Actions"
-permalink: kb/191/Q191208/
+permalink: /kb/191/Q191208/
 ---
 
 ## Q191208: DOCERR: Manage Documents Security Permission &amp; Printer Actions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172467: WIN95 Error Message: You are Not Allowed To Log On at This Time"
-permalink: kb/172/Q172467/
+permalink: /kb/172/Q172467/
 ---
 
 ## Q172467: WIN95 Error Message: You are Not Allowed To Log On at This Time

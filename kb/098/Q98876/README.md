@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98876: Mac Gty: Limit of Gateway Recipients"
-permalink: kb/098/Q98876/
+permalink: /kb/098/Q98876/
 ---
 
 ## Q98876: Mac Gty: Limit of Gateway Recipients

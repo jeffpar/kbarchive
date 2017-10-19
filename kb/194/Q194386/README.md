@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194386: X400: Can't Send Messages to MTA with Checkpoint Size Set to 10"
-permalink: kb/194/Q194386/
+permalink: /kb/194/Q194386/
 ---
 
 ## Q194386: X400: Can't Send Messages to MTA with Checkpoint Size Set to 10

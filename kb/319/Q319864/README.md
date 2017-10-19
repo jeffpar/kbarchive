@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319864: SMS: Upgrade to SP4 Does Not Cause Inventory Resynchronization"
-permalink: kb/319/Q319864/
+permalink: /kb/319/Q319864/
 ---
 
 ## Q319864: SMS: Upgrade to SP4 Does Not Cause Inventory Resynchronization

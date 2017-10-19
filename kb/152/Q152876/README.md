@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152876: XCON: MTA Hung After Deletion of X.400 Connectors"
-permalink: kb/152/Q152876/
+permalink: /kb/152/Q152876/
 ---
 
 ## Q152876: XCON: MTA Hung After Deletion of X.400 Connectors

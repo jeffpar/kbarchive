@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140508: ErrMsg: You Must Have at Least 8 Megabytes of Free Disk Space"
-permalink: kb/140/Q140508/
+permalink: /kb/140/Q140508/
 ---
 
 ## Q140508: ErrMsg: You Must Have at Least 8 Megabytes of Free Disk Space

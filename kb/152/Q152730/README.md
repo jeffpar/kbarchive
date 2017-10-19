@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152730: XGEN: How to Make Disks From the Select CD"
-permalink: kb/152/Q152730/
+permalink: /kb/152/Q152730/
 ---
 
 ## Q152730: XGEN: How to Make Disks From the Select CD

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153434: MSB Dinosaurs: Minimum System Requirements for Windows"
-permalink: kb/153/Q153434/
+permalink: /kb/153/Q153434/
 ---
 
 ## Q153434: MSB Dinosaurs: Minimum System Requirements for Windows

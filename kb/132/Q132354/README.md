@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132354: PRB: Grid ActiveRow Mark Is Not Visible After Refreshing Grid"
-permalink: kb/132/Q132354/
+permalink: /kb/132/Q132354/
 ---
 
 ## Q132354: PRB: Grid ActiveRow Mark Is Not Visible After Refreshing Grid

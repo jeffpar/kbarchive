@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168823: DOC: Exchange/Outlook Jet IISAM Driver Does Not Ship with VB5"
-permalink: kb/168/Q168823/
+permalink: /kb/168/Q168823/
 ---
 
 ## Q168823: DOC: Exchange/Outlook Jet IISAM Driver Does Not Ship with VB5

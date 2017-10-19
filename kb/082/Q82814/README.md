@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82814: Re-Registering .REG Files"
-permalink: kb/082/Q82814/
+permalink: /kb/082/Q82814/
 ---
 
 ## Q82814: Re-Registering .REG Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132007: Problem Copying Wingdings from Character Map to Wordpad"
-permalink: kb/132/Q132007/
+permalink: /kb/132/Q132007/
 ---
 
 ## Q132007: Problem Copying Wingdings from Character Map to Wordpad

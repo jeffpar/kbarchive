@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107055: CD Sampler: No Support for XGA"
-permalink: kb/107/Q107055/
+permalink: /kb/107/Q107055/
 ---
 
 ## Q107055: CD Sampler: No Support for XGA

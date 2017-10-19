@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261077: Motocross Madness 2: Ground Textures in the Game Are Distorted"
-permalink: kb/261/Q261077/
+permalink: /kb/261/Q261077/
 ---
 
 ## Q261077: Motocross Madness 2: Ground Textures in the Game Are Distorted

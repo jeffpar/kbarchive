@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125329: Deployment and Troubleshooting Outlook Web Access (OWA)"
-permalink: kb/125/Q125329/
+permalink: /kb/125/Q125329/
 ---
 
 ## Q125329: Deployment and Troubleshooting Outlook Web Access (OWA)

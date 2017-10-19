@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166475: NWLNKSPX Retransmission Problem Over a Slow Link"
-permalink: kb/166/Q166475/
+permalink: /kb/166/Q166475/
 ---
 
 ## Q166475: NWLNKSPX Retransmission Problem Over a Slow Link

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192101: DOC: Incorrect Documentation for PCMCIA Ethernet Debugging"
-permalink: kb/192/Q192101/
+permalink: /kb/192/Q192101/
 ---
 
 ## Q192101: DOC: Incorrect Documentation for PCMCIA Ethernet Debugging

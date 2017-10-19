@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159180: XCON: Japanese Subject Is Replaced w/ Question Mark"
-permalink: kb/159/Q159180/
+permalink: /kb/159/Q159180/
 ---
 
 ## Q159180: XCON: Japanese Subject Is Replaced w/ Question Mark

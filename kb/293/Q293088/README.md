@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293088: XADM: How to Use Regedt32 to Determine Organization and Site"
-permalink: kb/293/Q293088/
+permalink: /kb/293/Q293088/
 ---
 
 ## Q293088: XADM: How to Use Regedt32 to Determine Organization and Site

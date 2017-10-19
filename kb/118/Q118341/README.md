@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118341: FIX: MATHERRQQ: Access Violation on C8ARG1 and C16ARG1"
-permalink: kb/118/Q118341/
+permalink: /kb/118/Q118341/
 ---
 
 ## Q118341: FIX: MATHERRQQ: Access Violation on C8ARG1 and C16ARG1

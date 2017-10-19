@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124375: SFM: File Permissions Problem When Volume is Shared at Root"
-permalink: kb/124/Q124375/
+permalink: /kb/124/Q124375/
 ---
 
 ## Q124375: SFM: File Permissions Problem When Volume is Shared at Root

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126706: Err Msg: MSMAIL Caused a GP Fault in Module MSSFS.DLL"
-permalink: kb/126/Q126706/
+permalink: /kb/126/Q126706/
 ---
 
 ## Q126706: Err Msg: MSMAIL Caused a GP Fault in Module MSSFS.DLL

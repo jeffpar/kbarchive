@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162833: XFOR: Event 283 May Occur When Running the Migration Wizard"
-permalink: kb/162/Q162833/
+permalink: /kb/162/Q162833/
 ---
 
 ## Q162833: XFOR: Event 283 May Occur When Running the Migration Wizard

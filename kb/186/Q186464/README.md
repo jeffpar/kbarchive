@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186464: &quot;Registry Service Subkey Already Exists&quot; When Adding NetBEUI"
-permalink: kb/186/Q186464/
+permalink: /kb/186/Q186464/
 ---
 
 ## Q186464: &quot;Registry Service Subkey Already Exists&quot; When Adding NetBEUI

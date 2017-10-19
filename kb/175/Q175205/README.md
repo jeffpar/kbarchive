@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175205: Printout Truncated When Printing to Plotter"
-permalink: kb/175/Q175205/
+permalink: /kb/175/Q175205/
 ---
 
 ## Q175205: Printout Truncated When Printing to Plotter

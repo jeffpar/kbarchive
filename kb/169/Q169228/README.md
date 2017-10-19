@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169228: Windows NT 3.51 SEC-FIX Causes Remote PerfMon Sessions to Quit"
-permalink: kb/169/Q169228/
+permalink: /kb/169/Q169228/
 ---
 
 ## Q169228: Windows NT 3.51 SEC-FIX Causes Remote PerfMon Sessions to Quit

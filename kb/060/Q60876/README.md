@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60876: Installation on Amstrad Requires Motherboard Revision"
-permalink: kb/060/Q60876/
+permalink: /kb/060/Q60876/
 ---
 
 ## Q60876: Installation on Amstrad Requires Motherboard Revision

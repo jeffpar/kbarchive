@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139772: Compression Agent Does Not Set Exceptions for Hidden Files"
-permalink: kb/139/Q139772/
+permalink: /kb/139/Q139772/
 ---
 
 ## Q139772: Compression Agent Does Not Set Exceptions for Hidden Files

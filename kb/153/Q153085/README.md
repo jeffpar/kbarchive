@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153085: SMS: MIFs Not Collected on OS/2 Clients with Multiple Drives"
-permalink: kb/153/Q153085/
+permalink: /kb/153/Q153085/
 ---
 
 ## Q153085: SMS: MIFs Not Collected on OS/2 Clients with Multiple Drives

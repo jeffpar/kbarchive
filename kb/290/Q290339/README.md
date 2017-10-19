@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290339: MCSE Readiness Review Exam 70-215 Microsoft Windows 2000 Server"
-permalink: kb/290/Q290339/
+permalink: /kb/290/Q290339/
 ---
 
 ## Q290339: MCSE Readiness Review Exam 70-215 Microsoft Windows 2000 Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82494: Colored Text Not Printing Grayscale on HP PCL Printers"
-permalink: kb/082/Q82494/
+permalink: /kb/082/Q82494/
 ---
 
 ## Q82494: Colored Text Not Printing Grayscale on HP PCL Printers

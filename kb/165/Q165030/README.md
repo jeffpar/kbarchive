@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165030: XCON: Sample Configuration between Exchange and MailBus 400"
-permalink: kb/165/Q165030/
+permalink: /kb/165/Q165030/
 ---
 
 ## Q165030: XCON: Sample Configuration between Exchange and MailBus 400

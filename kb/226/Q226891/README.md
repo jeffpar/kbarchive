@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226891: Dataloader Causes AV Attempting to Insert &gt; 1,962 Bytes of Data"
-permalink: kb/226/Q226891/
+permalink: /kb/226/Q226891/
 ---
 
 ## Q226891: Dataloader Causes AV Attempting to Insert &gt; 1,962 Bytes of Data

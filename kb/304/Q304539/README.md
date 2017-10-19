@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304539: BUG: Deploying Web Project by Label Returns &quot;Version Not Found&quot;"
-permalink: kb/304/Q304539/
+permalink: /kb/304/Q304539/
 ---
 
 ## Q304539: BUG: Deploying Web Project by Label Returns &quot;Version Not Found&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247719: WLBS Writes Multiple Duplicate Event Log Messages"
-permalink: kb/247/Q247719/
+permalink: /kb/247/Q247719/
 ---
 
 ## Q247719: WLBS Writes Multiple Duplicate Event Log Messages

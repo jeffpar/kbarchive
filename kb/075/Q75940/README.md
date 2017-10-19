@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75940: BUG: VKD_API_Force_Key Can Cause Windows Crash"
-permalink: kb/075/Q75940/
+permalink: /kb/075/Q75940/
 ---
 
 ## Q75940: BUG: VKD_API_Force_Key Can Cause Windows Crash

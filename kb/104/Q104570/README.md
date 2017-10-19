@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104570: Reading and Writing Icons from ExtractIcon"
-permalink: kb/104/Q104570/
+permalink: /kb/104/Q104570/
 ---
 
 ## Q104570: Reading and Writing Icons from ExtractIcon

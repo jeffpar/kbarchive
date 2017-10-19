@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100933: &quot;Load POWER.EXE Before Loading ...&quot; with Prohance Trackball"
-permalink: kb/100/Q100933/
+permalink: /kb/100/Q100933/
 ---
 
 ## Q100933: &quot;Load POWER.EXE Before Loading ...&quot; with Prohance Trackball

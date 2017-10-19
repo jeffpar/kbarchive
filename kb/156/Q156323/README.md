@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156323: Error 3787: You Must Log on before Performing this Operation"
-permalink: kb/156/Q156323/
+permalink: /kb/156/Q156323/
 ---
 
 ## Q156323: Error 3787: You Must Log on before Performing this Operation

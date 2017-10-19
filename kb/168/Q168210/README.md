@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168210: HOWTO: Get Return Parameters from a Stored Procedure with DAO"
-permalink: kb/168/Q168210/
+permalink: /kb/168/Q168210/
 ---
 
 ## Q168210: HOWTO: Get Return Parameters from a Stored Procedure with DAO

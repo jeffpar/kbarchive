@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236158: Winnt32.exe and Setupdd.sys Not Included with SP4, SP5, and SP6"
-permalink: kb/236/Q236158/
+permalink: /kb/236/Q236158/
 ---
 
 ## Q236158: Winnt32.exe and Setupdd.sys Not Included with SP4, SP5, and SP6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156636: Writer 2: Link Text Colors Don't Transfer"
-permalink: kb/156/Q156636/
+permalink: /kb/156/Q156636/
 ---
 
 ## Q156636: Writer 2: Link Text Colors Don't Transfer

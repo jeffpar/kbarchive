@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249960: COBOL Definitions Do Not Import Properly w/ COMTI COBOL Wizard"
-permalink: kb/249/Q249960/
+permalink: /kb/249/Q249960/
 ---
 
 ## Q249960: COBOL Definitions Do Not Import Properly w/ COMTI COBOL Wizard

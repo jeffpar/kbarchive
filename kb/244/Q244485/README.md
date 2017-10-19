@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244485: PC WIN: Outlook 98 Uses MS Mail Postoffice Setting for HOP COUNT"
-permalink: kb/244/Q244485/
+permalink: /kb/244/Q244485/
 ---
 
 ## Q244485: PC WIN: Outlook 98 Uses MS Mail Postoffice Setting for HOP COUNT

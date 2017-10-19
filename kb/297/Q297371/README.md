@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297371: Unexpected High Memory Usage When You Use Index Server"
-permalink: kb/297/Q297371/
+permalink: /kb/297/Q297371/
 ---
 
 ## Q297371: Unexpected High Memory Usage When You Use Index Server

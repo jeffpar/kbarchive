@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96485: MS-DOS Application Does Not Display Directories and Files"
-permalink: kb/096/Q96485/
+permalink: /kb/096/Q96485/
 ---
 
 ## Q96485: MS-DOS Application Does Not Display Directories and Files

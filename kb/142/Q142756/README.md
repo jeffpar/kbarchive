@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142756: WD97: How to Design and Set Up Mail Merge Data Sources"
-permalink: kb/142/Q142756/
+permalink: /kb/142/Q142756/
 ---
 
 ## Q142756: WD97: How to Design and Set Up Mail Merge Data Sources

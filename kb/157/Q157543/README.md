@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157543: PRB: Bitmap Editor Distorts Icons and Bitmaps"
-permalink: kb/157/Q157543/
+permalink: /kb/157/Q157543/
 ---
 
 ## Q157543: PRB: Bitmap Editor Distorts Icons and Bitmaps

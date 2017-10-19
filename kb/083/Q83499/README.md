@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83499: Serial Communication Port Settings for HP ColorPro"
-permalink: kb/083/Q83499/
+permalink: /kb/083/Q83499/
 ---
 
 ## Q83499: Serial Communication Port Settings for HP ColorPro

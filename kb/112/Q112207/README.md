@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112207: PC DOS: Command-Line Parameters for MSCAPT.EXE"
-permalink: kb/112/Q112207/
+permalink: /kb/112/Q112207/
 ---
 
 ## Q112207: PC DOS: Command-Line Parameters for MSCAPT.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80892: Mac MSPlus: Filenames Longer Than 32 Characters Truncated"
-permalink: kb/080/Q80892/
+permalink: /kb/080/Q80892/
 ---
 
 ## Q80892: Mac MSPlus: Filenames Longer Than 32 Characters Truncated

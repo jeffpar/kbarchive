@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176078: XFOR: NNTP Newsreader Users Cannot Use Exchange Newsgroups"
-permalink: kb/176/Q176078/
+permalink: /kb/176/Q176078/
 ---
 
 ## Q176078: XFOR: NNTP Newsreader Users Cannot Use Exchange Newsgroups

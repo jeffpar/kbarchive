@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131899: FIX: Access Violation with Large NAMELIST"
-permalink: kb/131/Q131899/
+permalink: /kb/131/Q131899/
 ---
 
 ## Q131899: FIX: Access Violation with Large NAMELIST

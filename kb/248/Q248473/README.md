@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248473: Fighter Ace II: Ground Explosions Fill Entire Texture Square"
-permalink: kb/248/Q248473/
+permalink: /kb/248/Q248473/
 ---
 
 ## Q248473: Fighter Ace II: Ground Explosions Fill Entire Texture Square

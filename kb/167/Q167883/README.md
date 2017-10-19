@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167883: WD97: Computer Hangs While Editing WordMail Template"
-permalink: kb/167/Q167883/
+permalink: /kb/167/Q167883/
 ---
 
 ## Q167883: WD97: Computer Hangs While Editing WordMail Template

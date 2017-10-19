@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195609: WD97: How to Create Mailing Labels Using the Mail Merge Feature"
-permalink: kb/195/Q195609/
+permalink: /kb/195/Q195609/
 ---
 
 ## Q195609: WD97: How to Create Mailing Labels Using the Mail Merge Feature

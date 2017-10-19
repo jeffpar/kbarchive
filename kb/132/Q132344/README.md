@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132344: FIX: App Terminates Unexpectedly after Windows NT 3.51 Upgrade"
-permalink: kb/132/Q132344/
+permalink: /kb/132/Q132344/
 ---
 
 ## Q132344: FIX: App Terminates Unexpectedly after Windows NT 3.51 Upgrade

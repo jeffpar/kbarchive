@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58098: Cannot Use a Pointer to Call Function in a Static Overlay"
-permalink: kb/058/Q58098/
+permalink: /kb/058/Q58098/
 ---
 
 ## Q58098: Cannot Use a Pointer to Call Function in a Static Overlay

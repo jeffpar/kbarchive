@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199902: Encarta 99: Find Feature Finds Words Even When You Misspell Them"
-permalink: kb/199/Q199902/
+permalink: /kb/199/Q199902/
 ---
 
 ## Q199902: Encarta 99: Find Feature Finds Words Even When You Misspell Them

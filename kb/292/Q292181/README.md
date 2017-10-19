@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292181: Software Inventory Properties Only Allow 32 Inventoried Names"
-permalink: kb/292/Q292181/
+permalink: /kb/292/Q292181/
 ---
 
 ## Q292181: Software Inventory Properties Only Allow 32 Inventoried Names

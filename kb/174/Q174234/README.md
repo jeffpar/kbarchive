@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174234: Computer Hangs with Intensive 16-bit Code Running in a VDM"
-permalink: kb/174/Q174234/
+permalink: /kb/174/Q174234/
 ---
 
 ## Q174234: Computer Hangs with Intensive 16-bit Code Running in a VDM

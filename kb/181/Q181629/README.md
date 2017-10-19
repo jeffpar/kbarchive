@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181629: SMS: &quot;Unexpected Error Creating the Unique Id File&quot; Occurs"
-permalink: kb/181/Q181629/
+permalink: /kb/181/Q181629/
 ---
 
 ## Q181629: SMS: &quot;Unexpected Error Creating the Unique Id File&quot; Occurs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271492: PRB: EVAL() Function in WHERE Clause May Return Incorrect Data"
-permalink: kb/271/Q271492/
+permalink: /kb/271/Q271492/
 ---
 
 ## Q271492: PRB: EVAL() Function in WHERE Clause May Return Incorrect Data

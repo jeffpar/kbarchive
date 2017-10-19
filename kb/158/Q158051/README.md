@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158051: Solution.exe Extends the Visual FoxPro Solutions Sample"
-permalink: kb/158/Q158051/
+permalink: /kb/158/Q158051/
 ---
 
 ## Q158051: Solution.exe Extends the Visual FoxPro Solutions Sample

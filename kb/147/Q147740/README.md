@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147740: HOWTO: Handling Events for ActiveX Controls in a CWnd"
-permalink: kb/147/Q147740/
+permalink: /kb/147/Q147740/
 ---
 
 ## Q147740: HOWTO: Handling Events for ActiveX Controls in a CWnd

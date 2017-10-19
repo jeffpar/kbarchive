@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264740: Courier Sender Creates Large Files for Multiple Sites"
-permalink: kb/264/Q264740/
+permalink: /kb/264/Q264740/
 ---
 
 ## Q264740: Courier Sender Creates Large Files for Multiple Sites

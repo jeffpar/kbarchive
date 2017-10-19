@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185108: XFOR: Event ID 4132 When Using the IMC for Directory Replication"
-permalink: kb/185/Q185108/
+permalink: /kb/185/Q185108/
 ---
 
 ## Q185108: XFOR: Event ID 4132 When Using the IMC for Directory Replication

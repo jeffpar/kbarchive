@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93469: Complete Text PW0519: Virtual DMA Services (VDS)"
-permalink: kb/093/Q93469/
+permalink: /kb/093/Q93469/
 ---
 
 ## Q93469: Complete Text PW0519: Virtual DMA Services (VDS)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247517: Asheron's Call Err Msg: Failed to Execute"
-permalink: kb/247/Q247517/
+permalink: /kb/247/Q247517/
 ---
 
 ## Q247517: Asheron's Call Err Msg: Failed to Execute

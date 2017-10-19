@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291585: HOWTO: Create Debug Symbols for a Visual C++ Application"
-permalink: kb/291/Q291585/
+permalink: /kb/291/Q291585/
 ---
 
 ## Q291585: HOWTO: Create Debug Symbols for a Visual C++ Application

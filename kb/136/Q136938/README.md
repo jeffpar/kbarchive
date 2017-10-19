@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136938: Missing Third-Party Compression Driver in MS-DOS Mode"
-permalink: kb/136/Q136938/
+permalink: /kb/136/Q136938/
 ---
 
 ## Q136938: Missing Third-Party Compression Driver in MS-DOS Mode

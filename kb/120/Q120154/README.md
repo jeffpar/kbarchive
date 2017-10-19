@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120154: FIX: DX1020 Using TEXTEQU to Define False IF Block"
-permalink: kb/120/Q120154/
+permalink: /kb/120/Q120154/
 ---
 
 ## Q120154: FIX: DX1020 Using TEXTEQU to Define False IF Block

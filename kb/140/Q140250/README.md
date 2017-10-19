@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140250: Wine Guide 1.0a: Manual Installation Instructions"
-permalink: kb/140/Q140250/
+permalink: /kb/140/Q140250/
 ---
 
 ## Q140250: Wine Guide 1.0a: Manual Installation Instructions

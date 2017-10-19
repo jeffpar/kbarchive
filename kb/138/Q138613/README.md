@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138613: How to Use the SYS(3052) Function to Avoid Scrolling Error"
-permalink: kb/138/Q138613/
+permalink: /kb/138/Q138613/
 ---
 
 ## Q138613: How to Use the SYS(3052) Function to Avoid Scrolling Error

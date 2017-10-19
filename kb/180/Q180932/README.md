@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180932: Saving Com.cfg Without Administrator Rights"
-permalink: kb/180/Q180932/
+permalink: /kb/180/Q180932/
 ---
 
 ## Q180932: Saving Com.cfg Without Administrator Rights

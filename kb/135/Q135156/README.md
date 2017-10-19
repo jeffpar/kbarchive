@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135156: Error Message Running D-Day Encyclopedia Setup Program"
-permalink: kb/135/Q135156/
+permalink: /kb/135/Q135156/
 ---
 
 ## Q135156: Error Message Running D-Day Encyclopedia Setup Program

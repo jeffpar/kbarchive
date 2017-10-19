@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117905: BUG: F1001 on a Structure Declaration with Arrays"
-permalink: kb/117/Q117905/
+permalink: /kb/117/Q117905/
 ---
 
 ## Q117905: BUG: F1001 on a Structure Declaration with Arrays

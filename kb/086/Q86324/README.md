@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86324: PC Win: Creating Subfolders Illegally Under Shared Folders"
-permalink: kb/086/Q86324/
+permalink: /kb/086/Q86324/
 ---
 
 ## Q86324: PC Win: Creating Subfolders Illegally Under Shared Folders

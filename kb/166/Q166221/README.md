@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166221: Can't Use Fully Qualified LU Name in Print Session Properties"
-permalink: kb/166/Q166221/
+permalink: /kb/166/Q166221/
 ---
 
 ## Q166221: Can't Use Fully Qualified LU Name in Print Session Properties

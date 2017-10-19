@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138054: XFOR: Err Msg: Unable to Deliver User Mail... Full Mailbag"
-permalink: kb/138/Q138054/
+permalink: /kb/138/Q138054/
 ---
 
 ## Q138054: XFOR: Err Msg: Unable to Deliver User Mail... Full Mailbag

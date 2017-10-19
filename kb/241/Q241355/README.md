@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241355: HOWTO: Edit and Tab with the MSFlexGrid Control"
-permalink: kb/241/Q241355/
+permalink: /kb/241/Q241355/
 ---
 
 ## Q241355: HOWTO: Edit and Tab with the MSFlexGrid Control

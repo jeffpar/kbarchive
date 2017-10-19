@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197231: XFOR: Notes Connector Does Not Support &quot;Flags&quot; in Message"
-permalink: kb/197/Q197231/
+permalink: /kb/197/Q197231/
 ---
 
 ## Q197231: XFOR: Notes Connector Does Not Support &quot;Flags&quot; in Message

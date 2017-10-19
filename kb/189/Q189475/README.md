@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189475: Max BTU Size Limit Increased for SNA Server Connections"
-permalink: kb/189/Q189475/
+permalink: /kb/189/Q189475/
 ---
 
 ## Q189475: Max BTU Size Limit Increased for SNA Server Connections

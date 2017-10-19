@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103390: Network Access Validation Algorithm and Example"
-permalink: kb/103/Q103390/
+permalink: /kb/103/Q103390/
 ---
 
 ## Q103390: Network Access Validation Algorithm and Example

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172256: FIX: RISC: CByte Doesn't Fail on Negative Values in Native Exe"
-permalink: kb/172/Q172256/
+permalink: /kb/172/Q172256/
 ---
 
 ## Q172256: FIX: RISC: CByte Doesn't Fail on Negative Values in Native Exe

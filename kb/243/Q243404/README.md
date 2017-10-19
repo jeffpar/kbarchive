@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243404: Winobj.exe May Permit You to View Securable Jet500.dll Objects"
-permalink: kb/243/Q243404/
+permalink: /kb/243/Q243404/
 ---
 
 ## Q243404: Winobj.exe May Permit You to View Securable Jet500.dll Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172468: SNA Server Print Service Doesn't Support Print Position &gt; 132"
-permalink: kb/172/Q172468/
+permalink: /kb/172/Q172468/
 ---
 
 ## Q172468: SNA Server Print Service Doesn't Support Print Position &gt; 132

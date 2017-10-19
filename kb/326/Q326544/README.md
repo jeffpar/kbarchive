@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326544: BUG: Error Selecting Empty VFP Memo w/ .NET OleDbDataAdapter"
-permalink: kb/326/Q326544/
+permalink: /kb/326/Q326544/
 ---
 
 ## Q326544: BUG: Error Selecting Empty VFP Memo w/ .NET OleDbDataAdapter

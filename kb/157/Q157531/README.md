@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157531: WD97: Table of Figures (TOF) Missing Captions from Text Boxes"
-permalink: kb/157/Q157531/
+permalink: /kb/157/Q157531/
 ---
 
 ## Q157531: WD97: Table of Figures (TOF) Missing Captions from Text Boxes

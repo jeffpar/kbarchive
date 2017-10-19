@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139982: Windows NT 3.5 &amp; 3.51 Supported Network Card Drivers Location"
-permalink: kb/139/Q139982/
+permalink: /kb/139/Q139982/
 ---
 
 ## Q139982: Windows NT 3.5 &amp; 3.51 Supported Network Card Drivers Location

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322314: XADM: Information Store Does Not Start After Online Restore"
-permalink: kb/322/Q322314/
+permalink: /kb/322/Q322314/
 ---
 
 ## Q322314: XADM: Information Store Does Not Start After Online Restore

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222527: HOWTO: Launch ActiveSync from a Visual Basic CE 6.0 Application"
-permalink: kb/222/Q222527/
+permalink: /kb/222/Q222527/
 ---
 
 ## Q222527: HOWTO: Launch ActiveSync from a Visual Basic CE 6.0 Application

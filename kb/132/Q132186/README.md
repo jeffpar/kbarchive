@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132186: Cannot Install/Upgrade Windows 95 from GUI on IBM Aptiva 710"
-permalink: kb/132/Q132186/
+permalink: /kb/132/Q132186/
 ---
 
 ## Q132186: Cannot Install/Upgrade Windows 95 from GUI on IBM Aptiva 710

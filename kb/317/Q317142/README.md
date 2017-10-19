@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317142: How to Change a Service  Account Password with a Batch File"
-permalink: kb/317/Q317142/
+permalink: /kb/317/Q317142/
 ---
 
 ## Q317142: How to Change a Service  Account Password with a Batch File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111929: Error 58 with SMC Ethercard and ODI Drivers"
-permalink: kb/111/Q111929/
+permalink: /kb/111/Q111929/
 ---
 
 ## Q111929: Error 58 with SMC Ethercard and ODI Drivers

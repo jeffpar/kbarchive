@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221149: XADM: Store Crash in IMAIL HTML-RTF Conversion"
-permalink: kb/221/Q221149/
+permalink: /kb/221/Q221149/
 ---
 
 ## Q221149: XADM: Store Crash in IMAIL HTML-RTF Conversion

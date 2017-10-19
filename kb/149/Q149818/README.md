@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149818: WFW Cannot Log On To WinNT Domain across SMC Token Ring Switch"
-permalink: kb/149/Q149818/
+permalink: /kb/149/Q149818/
 ---
 
 ## Q149818: WFW Cannot Log On To WinNT Domain across SMC Token Ring Switch

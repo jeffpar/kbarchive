@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277012: DirectX: List of New Features Included in Microsoft DirectX 8.0"
-permalink: kb/277/Q277012/
+permalink: /kb/277/Q277012/
 ---
 
 ## Q277012: DirectX: List of New Features Included in Microsoft DirectX 8.0

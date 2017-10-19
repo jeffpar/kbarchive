@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105993: Unable to Print Directly to Ports from a Command Prompt"
-permalink: kb/105/Q105993/
+permalink: /kb/105/Q105993/
 ---
 
 ## Q105993: Unable to Print Directly to Ports from a Command Prompt

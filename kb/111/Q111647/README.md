@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111647: BUG: LB_SETTOPINDEX Does Not Conform to Documentation"
-permalink: kb/111/Q111647/
+permalink: /kb/111/Q111647/
 ---
 
 ## Q111647: BUG: LB_SETTOPINDEX Does Not Conform to Documentation

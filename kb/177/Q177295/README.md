@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177295: Error Message: Unable to Save the Registry..."
-permalink: kb/177/Q177295/
+permalink: /kb/177/Q177295/
 ---
 
 ## Q177295: Error Message: Unable to Save the Registry...

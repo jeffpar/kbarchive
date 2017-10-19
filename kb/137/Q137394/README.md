@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137394: Long Path Length in cc:Mail Causes GP Fault"
-permalink: kb/137/Q137394/
+permalink: /kb/137/Q137394/
 ---
 
 ## Q137394: Long Path Length in cc:Mail Causes GP Fault

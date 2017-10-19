@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125020: NetBIOS SEND WAIT Call Returns Before RECEIVE is Sent"
-permalink: kb/125/Q125020/
+permalink: /kb/125/Q125020/
 ---
 
 ## Q125020: NetBIOS SEND WAIT Call Returns Before RECEIVE is Sent

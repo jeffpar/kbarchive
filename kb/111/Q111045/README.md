@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111045: Boot Partition Size Limit with Compaq SmartSCSI Controller"
-permalink: kb/111/Q111045/
+permalink: /kb/111/Q111045/
 ---
 
 ## Q111045: Boot Partition Size Limit with Compaq SmartSCSI Controller

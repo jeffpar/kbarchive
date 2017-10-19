@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219282: BUG: ScrollToPosition() Fails to Scroll CFormView"
-permalink: kb/219/Q219282/
+permalink: /kb/219/Q219282/
 ---
 
 ## Q219282: BUG: ScrollToPosition() Fails to Scroll CFormView

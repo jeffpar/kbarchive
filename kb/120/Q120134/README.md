@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120134: Workgroup Add-On for MS-DOS Continuously Accesses Hard Disk"
-permalink: kb/120/Q120134/
+permalink: /kb/120/Q120134/
 ---
 
 ## Q120134: Workgroup Add-On for MS-DOS Continuously Accesses Hard Disk

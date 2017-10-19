@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181641: WD97: How to Create an Exclude Dictionary"
-permalink: kb/181/Q181641/
+permalink: /kb/181/Q181641/
 ---
 
 ## Q181641: WD97: How to Create an Exclude Dictionary

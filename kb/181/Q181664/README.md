@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181664: PRB: Rich Edit Control Message Handlers Are Not Called"
-permalink: kb/181/Q181664/
+permalink: /kb/181/Q181664/
 ---
 
 ## Q181664: PRB: Rich Edit Control Message Handlers Are Not Called

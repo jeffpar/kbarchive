@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177077: How to Produce a List of Users and SIDs"
-permalink: kb/177/Q177077/
+permalink: /kb/177/Q177077/
 ---
 
 ## Q177077: How to Produce a List of Users and SIDs

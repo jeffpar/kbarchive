@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135030: X400: How to Create a LoopBack Message"
-permalink: kb/135/Q135030/
+permalink: /kb/135/Q135030/
 ---
 
 ## Q135030: X400: How to Create a LoopBack Message

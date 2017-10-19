@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65672: Random Colored Lines in Output from HP PaintJet XL"
-permalink: kb/065/Q65672/
+permalink: /kb/065/Q65672/
 ---
 
 ## Q65672: Random Colored Lines in Output from HP PaintJet XL

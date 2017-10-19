@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196655: How to Set Up File Auditing on Cluster Disk"
-permalink: kb/196/Q196655/
+permalink: /kb/196/Q196655/
 ---
 
 ## Q196655: How to Set Up File Auditing on Cluster Disk

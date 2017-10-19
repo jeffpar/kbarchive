@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66422: Bottom Part of Desktop Missing on NEC Prospeed 386"
-permalink: kb/066/Q66422/
+permalink: /kb/066/Q66422/
 ---
 
 ## Q66422: Bottom Part of Desktop Missing on NEC Prospeed 386

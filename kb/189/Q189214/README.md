@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189214: Running Win 98: Win98 Starts Here Demo Installation Confusing"
-permalink: kb/189/Q189214/
+permalink: /kb/189/Q189214/
 ---
 
 ## Q189214: Running Win 98: Win98 Starts Here Demo Installation Confusing

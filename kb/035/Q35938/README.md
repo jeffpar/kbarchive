@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35938: Equal-Sign Characters as Arguments in Batch Files"
-permalink: kb/035/Q35938/
+permalink: /kb/035/Q35938/
 ---
 
 ## Q35938: Equal-Sign Characters as Arguments in Batch Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116295: Bookshelf: Pagebreak Inserted When QuickShelf Button Pressed"
-permalink: kb/116/Q116295/
+permalink: /kb/116/Q116295/
 ---
 
 ## Q116295: Bookshelf: Pagebreak Inserted When QuickShelf Button Pressed

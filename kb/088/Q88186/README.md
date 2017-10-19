@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88186: Windows Video Seven Drivers Don't Support HT-216, 217 Chip Sets"
-permalink: kb/088/Q88186/
+permalink: /kb/088/Q88186/
 ---
 
 ## Q88186: Windows Video Seven Drivers Don't Support HT-216, 217 Chip Sets

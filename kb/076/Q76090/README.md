@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76090: WPP Err Msg: An Error Occurred While Setup...(with NDW)"
-permalink: kb/076/Q76090/
+permalink: /kb/076/Q76090/
 ---
 
 ## Q76090: WPP Err Msg: An Error Occurred While Setup...(with NDW)

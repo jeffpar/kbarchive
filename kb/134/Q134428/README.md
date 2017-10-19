@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134428: Remote Control Agent Icon Always Remains on Top"
-permalink: kb/134/Q134428/
+permalink: /kb/134/Q134428/
 ---
 
 ## Q134428: Remote Control Agent Icon Always Remains on Top

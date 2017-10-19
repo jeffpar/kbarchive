@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176028: Adding NetBIOS over IPX Support to Network Client 3.0"
-permalink: kb/176/Q176028/
+permalink: /kb/176/Q176028/
 ---
 
 ## Q176028: Adding NetBIOS over IPX Support to Network Client 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176321: Unable to Resolve NetBIOS Names Through PPTP Connection"
-permalink: kb/176/Q176321/
+permalink: /kb/176/Q176321/
 ---
 
 ## Q176321: Unable to Resolve NetBIOS Names Through PPTP Connection

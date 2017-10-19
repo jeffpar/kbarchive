@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119045: PC Mac: Err Msg: This Message is Corrupt and Cannot Be..."
-permalink: kb/119/Q119045/
+permalink: /kb/119/Q119045/
 ---
 
 ## Q119045: PC Mac: Err Msg: This Message is Corrupt and Cannot Be...

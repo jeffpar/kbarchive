@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241168: NBA Inside Drive 2000: Court and Players Not Displayed Properly"
-permalink: kb/241/Q241168/
+permalink: /kb/241/Q241168/
 ---
 
 ## Q241168: NBA Inside Drive 2000: Court and Players Not Displayed Properly

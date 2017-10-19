@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246532: Cannot Install GSNW on Windows NT with Lotus Domino Notes Server"
-permalink: kb/246/Q246532/
+permalink: /kb/246/Q246532/
 ---
 
 ## Q246532: Cannot Install GSNW on Windows NT with Lotus Domino Notes Server

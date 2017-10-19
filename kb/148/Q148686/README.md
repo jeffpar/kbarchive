@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148686: FIX: IOMANIPdeclare Macro Causes C2758 Error with References"
-permalink: kb/148/Q148686/
+permalink: /kb/148/Q148686/
 ---
 
 ## Q148686: FIX: IOMANIPdeclare Macro Causes C2758 Error with References

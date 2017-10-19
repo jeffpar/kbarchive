@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135969: Cannot Upgrade a Drive to DriveSpace 3"
-permalink: kb/135/Q135969/
+permalink: /kb/135/Q135969/
 ---
 
 ## Q135969: Cannot Upgrade a Drive to DriveSpace 3

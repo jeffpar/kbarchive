@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188410: How to Use Both B Channels with CHAP on ImpactIQ ISDN Adapter"
-permalink: kb/188/Q188410/
+permalink: /kb/188/Q188410/
 ---
 
 ## Q188410: How to Use Both B Channels with CHAP on ImpactIQ ISDN Adapter

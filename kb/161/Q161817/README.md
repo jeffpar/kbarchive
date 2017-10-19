@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161817: WD97: &quot;Word Could Not Insert the Address...&quot; Error"
-permalink: kb/161/Q161817/
+permalink: /kb/161/Q161817/
 ---
 
 ## Q161817: WD97: &quot;Word Could Not Insert the Address...&quot; Error

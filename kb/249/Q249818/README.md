@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249818: &quot;Protected Storage&quot; Error with Windows 2000 Roaming Profiles"
-permalink: kb/249/Q249818/
+permalink: /kb/249/Q249818/
 ---
 
 ## Q249818: &quot;Protected Storage&quot; Error with Windows 2000 Roaming Profiles

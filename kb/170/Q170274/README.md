@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170274: XCON: How to Configure DRAS Between Different Organizations"
-permalink: kb/170/Q170274/
+permalink: /kb/170/Q170274/
 ---
 
 ## Q170274: XCON: How to Configure DRAS Between Different Organizations

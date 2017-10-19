@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99165: Explanation of the num_logons Variable"
-permalink: kb/099/Q99165/
+permalink: /kb/099/Q99165/
 ---
 
 ## Q99165: Explanation of the num_logons Variable

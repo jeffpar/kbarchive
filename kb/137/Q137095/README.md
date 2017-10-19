@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137095: HOWTO: Provide Constants from an ActiveX Component"
-permalink: kb/137/Q137095/
+permalink: /kb/137/Q137095/
 ---
 
 ## Q137095: HOWTO: Provide Constants from an ActiveX Component

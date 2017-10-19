@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124046: WordPerfect Always Prompts for Net Login ID in Windows 95"
-permalink: kb/124/Q124046/
+permalink: /kb/124/Q124046/
 ---
 
 ## Q124046: WordPerfect Always Prompts for Net Login ID in Windows 95

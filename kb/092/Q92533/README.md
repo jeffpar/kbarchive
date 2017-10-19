@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92533: Implementing Display Driver Device Bitmaps"
-permalink: kb/092/Q92533/
+permalink: /kb/092/Q92533/
 ---
 
 ## Q92533: Implementing Display Driver Device Bitmaps

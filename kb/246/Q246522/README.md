@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246522: Windows Clients Cannot Log On to Server Across Router Using IPX"
-permalink: kb/246/Q246522/
+permalink: /kb/246/Q246522/
 ---
 
 ## Q246522: Windows Clients Cannot Log On to Server Across Router Using IPX

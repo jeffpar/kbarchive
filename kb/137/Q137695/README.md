@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137695: Proteon 1390 Fails to Initialize During Installation"
-permalink: kb/137/Q137695/
+permalink: /kb/137/Q137695/
 ---
 
 ## Q137695: Proteon 1390 Fails to Initialize During Installation

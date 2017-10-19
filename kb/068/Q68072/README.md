@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68072: .MODEL Directive Language Parameter Doesn't Preserve Case"
-permalink: kb/068/Q68072/
+permalink: /kb/068/Q68072/
 ---
 
 ## Q68072: .MODEL Directive Language Parameter Doesn't Preserve Case

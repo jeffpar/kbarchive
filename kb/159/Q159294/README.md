@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159294: XFOR: Extra Carriage Return in Dir-Sync Message"
-permalink: kb/159/Q159294/
+permalink: /kb/159/Q159294/
 ---
 
 ## Q159294: XFOR: Extra Carriage Return in Dir-Sync Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146120: HOWTO: Use an OLE Control as an Automation Server"
-permalink: kb/146/Q146120/
+permalink: /kb/146/Q146120/
 ---
 
 ## Q146120: HOWTO: Use an OLE Control as an Automation Server

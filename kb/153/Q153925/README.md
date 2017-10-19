@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153925: FAQ: How Can I Find Out if My VSS Database Has Been Upgraded?"
-permalink: kb/153/Q153925/
+permalink: /kb/153/Q153925/
 ---
 
 ## Q153925: FAQ: How Can I Find Out if My VSS Database Has Been Upgraded?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253347: XCON: Comments File in Gw2mexa Folder Stops Calendar Items"
-permalink: kb/253/Q253347/
+permalink: /kb/253/Q253347/
 ---
 
 ## Q253347: XCON: Comments File in Gw2mexa Folder Stops Calendar Items

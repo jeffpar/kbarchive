@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150234: BUG: Sheridan Panel Doesn't Correctly Align if Visible is False"
-permalink: kb/150/Q150234/
+permalink: /kb/150/Q150234/
 ---
 
 ## Q150234: BUG: Sheridan Panel Doesn't Correctly Align if Visible is False

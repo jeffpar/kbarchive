@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96884: PC Win: Can't Repair MMF on Novell Without File Scan Privilege"
-permalink: kb/096/Q96884/
+permalink: /kb/096/Q96884/
 ---
 
 ## Q96884: PC Win: Can't Repair MMF on Novell Without File Scan Privilege

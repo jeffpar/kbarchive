@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86684: Patch Map Doesn't Work in Media Player"
-permalink: kb/086/Q86684/
+permalink: /kb/086/Q86684/
 ---
 
 ## Q86684: Patch Map Doesn't Work in Media Player

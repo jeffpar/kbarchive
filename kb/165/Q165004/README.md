@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165004: NTVDM Support for Compaq Financial Keyboard Scan Codes"
-permalink: kb/165/Q165004/
+permalink: /kb/165/Q165004/
 ---
 
 ## Q165004: NTVDM Support for Compaq Financial Keyboard Scan Codes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151857: BUG: Mastering Exchange: Chapter 5 Introduction Audio Cut Off"
-permalink: kb/151/Q151857/
+permalink: /kb/151/Q151857/
 ---
 
 ## Q151857: BUG: Mastering Exchange: Chapter 5 Introduction Audio Cut Off

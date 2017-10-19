@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271819: HOWTO: Spell Check in Visual FoxPro with Microsoft Wor"
-permalink: kb/271/Q271819/
+permalink: /kb/271/Q271819/
 ---
 
 ## Q271819: HOWTO: Spell Check in Visual FoxPro with Microsoft Wor

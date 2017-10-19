@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74038: DOSKEY Macro to Search for File Text"
-permalink: kb/074/Q74038/
+permalink: /kb/074/Q74038/
 ---
 
 ## Q74038: DOSKEY Macro to Search for File Text

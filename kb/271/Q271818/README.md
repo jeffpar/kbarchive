@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271818: Configuring Windows 2000 Indexing Service to Use the Neutral Wor"
-permalink: kb/271/Q271818/
+permalink: /kb/271/Q271818/
 ---
 
 ## Q271818: Configuring Windows 2000 Indexing Service to Use the Neutral Wor

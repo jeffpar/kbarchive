@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98658: PC WSPlus: 1.0a Schedule+ Disks 1, 2, 3, &amp; 4 [3.5; 5.25]"
-permalink: kb/098/Q98658/
+title: "Q98658: PC WSPlus: 1.0a Schedule+ Disks 1, 2, 3, &amp; 4 &#91;3.5; 5.25&#93;"
+permalink: /kb/098/Q98658/
 ---
 
-## Q98658: PC WSPlus: 1.0a Schedule+ Disks 1, 2, 3, &amp; 4 [3.5; 5.25]
+## Q98658: PC WSPlus: 1.0a Schedule+ Disks 1, 2, 3, &amp; 4 &#91;3.5; 5.25&#93;
 
 	Article: Q98658
 	Product(s): Microsoft Schedule+ for Windows

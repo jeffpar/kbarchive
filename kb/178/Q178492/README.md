@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178492: SNA 3.0 TN3270 or TN5250 Server Traps When Configuration Saved"
-permalink: kb/178/Q178492/
+permalink: /kb/178/Q178492/
 ---
 
 ## Q178492: SNA 3.0 TN3270 or TN5250 Server Traps When Configuration Saved

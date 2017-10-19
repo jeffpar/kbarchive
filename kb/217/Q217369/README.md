@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217369: FIX: Remote Debugging Fails Due to Many OutputDebugString Calls"
-permalink: kb/217/Q217369/
+permalink: /kb/217/Q217369/
 ---
 
 ## Q217369: FIX: Remote Debugging Fails Due to Many OutputDebugString Calls

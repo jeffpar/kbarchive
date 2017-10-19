@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135968: Changing the Destination Folder During MS Plus! Setup"
-permalink: kb/135/Q135968/
+permalink: /kb/135/Q135968/
 ---
 
 ## Q135968: Changing the Destination Folder During MS Plus! Setup

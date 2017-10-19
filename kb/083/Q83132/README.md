@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83132: Logitech Mouse Drivers for Windows"
-permalink: kb/083/Q83132/
+permalink: /kb/083/Q83132/
 ---
 
 ## Q83132: Logitech Mouse Drivers for Windows

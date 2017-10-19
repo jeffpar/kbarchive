@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149420: Setting Up a Creative Labs IDE CD-ROM in Windows NT"
-permalink: kb/149/Q149420/
+permalink: /kb/149/Q149420/
 ---
 
 ## Q149420: Setting Up a Creative Labs IDE CD-ROM in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112904: PC Adm: Err Msg: Notice 53 Error Creating User Address"
-permalink: kb/112/Q112904/
+permalink: /kb/112/Q112904/
 ---
 
 ## Q112904: PC Adm: Err Msg: Notice 53 Error Creating User Address

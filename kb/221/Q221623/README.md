@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221623: INFO: Coverage Profiler Marks Unexecuted Lines in &quot;IF...ENDIF&quot;"
-permalink: kb/221/Q221623/
+permalink: /kb/221/Q221623/
 ---
 
 ## Q221623: INFO: Coverage Profiler Marks Unexecuted Lines in &quot;IF...ENDIF&quot;

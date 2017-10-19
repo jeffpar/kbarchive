@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135929: PC Adm: Do Not Use CONTROL.EXE from the July TechNet CD"
-permalink: kb/135/Q135929/
+permalink: /kb/135/Q135929/
 ---
 
 ## Q135929: PC Adm: Do Not Use CONTROL.EXE from the July TechNet CD

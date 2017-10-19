@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150344: MSB Ocean: How to Access All Games from Any Location"
-permalink: kb/150/Q150344/
+permalink: /kb/150/Q150344/
 ---
 
 ## Q150344: MSB Ocean: How to Access All Games from Any Location

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97867: Using Include/Exclude Correctly with Microsoft Backup"
-permalink: kb/097/Q97867/
+permalink: /kb/097/Q97867/
 ---
 
 ## Q97867: Using Include/Exclude Correctly with Microsoft Backup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49322: Linker Err Msg Under OS/2: L1083: Cannot Open Run File"
-permalink: kb/049/Q49322/
+permalink: /kb/049/Q49322/
 ---
 
 ## Q49322: Linker Err Msg Under OS/2: L1083: Cannot Open Run File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177261: FS98: Cannot Change Volume for Stall and VOR Markers"
-permalink: kb/177/Q177261/
+permalink: /kb/177/Q177261/
 ---
 
 ## Q177261: FS98: Cannot Change Volume for Stall and VOR Markers

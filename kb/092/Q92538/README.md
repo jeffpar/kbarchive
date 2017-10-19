@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92538: Corrections to the Windows 3.1 SDK Sample FONTEST"
-permalink: kb/092/Q92538/
+permalink: /kb/092/Q92538/
 ---
 
 ## Q92538: Corrections to the Windows 3.1 SDK Sample FONTEST

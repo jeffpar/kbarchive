@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119919: COPY Command Does Not Execute from the AT Command"
-permalink: kb/119/Q119919/
+permalink: /kb/119/Q119919/
 ---
 
 ## Q119919: COPY Command Does Not Execute from the AT Command

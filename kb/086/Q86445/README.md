@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86445: PPT: Equivalent Values for Genigraphics Colors: CMYK"
-permalink: kb/086/Q86445/
+permalink: /kb/086/Q86445/
 ---
 
 ## Q86445: PPT: Equivalent Values for Genigraphics Colors: CMYK

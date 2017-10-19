@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84709: How to Disable Access to Specific Control Panel Tools"
-permalink: kb/084/Q84709/
+permalink: /kb/084/Q84709/
 ---
 
 ## Q84709: How to Disable Access to Specific Control Panel Tools

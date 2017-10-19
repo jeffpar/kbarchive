@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168374: FIX: C1001 file 'msc1.cpp', line 1188, Using Recursive Namespace"
-permalink: kb/168/Q168374/
+permalink: /kb/168/Q168374/
 ---
 
 ## Q168374: FIX: C1001 file 'msc1.cpp', line 1188, Using Recursive Namespace

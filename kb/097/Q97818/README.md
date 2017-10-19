@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97818: Memory Manager Hangs System with Net Card Memory Conflict"
-permalink: kb/097/Q97818/
+permalink: /kb/097/Q97818/
 ---
 
 ## Q97818: Memory Manager Hangs System with Net Card Memory Conflict

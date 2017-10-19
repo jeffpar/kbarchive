@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219383: STOP 0xA in NDIS MAC Driver When Using SPX"
-permalink: kb/219/Q219383/
+permalink: /kb/219/Q219383/
 ---
 
 ## Q219383: STOP 0xA in NDIS MAC Driver When Using SPX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136016: AFIELDS() Has Been Enhanced in Visual FoxPro"
-permalink: kb/136/Q136016/
+permalink: /kb/136/Q136016/
 ---
 
 ## Q136016: AFIELDS() Has Been Enhanced in Visual FoxPro

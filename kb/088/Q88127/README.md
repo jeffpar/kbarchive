@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88127: BUG: No Dr. Watson Log File in Drive's Root Directory"
-permalink: kb/088/Q88127/
+permalink: /kb/088/Q88127/
 ---
 
 ## Q88127: BUG: No Dr. Watson Log File in Drive's Root Directory

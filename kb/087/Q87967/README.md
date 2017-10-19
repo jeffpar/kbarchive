@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87967: FIX: CVW 4.0 Does Not Work with Dynamically Loaded DLL"
-permalink: kb/087/Q87967/
+permalink: /kb/087/Q87967/
 ---
 
 ## Q87967: FIX: CVW 4.0 Does Not Work with Dynamically Loaded DLL

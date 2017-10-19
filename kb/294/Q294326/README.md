@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294326: Event ID 1003: Terminal Service Client Has Provided an..."
-permalink: kb/294/Q294326/
+permalink: /kb/294/Q294326/
 ---
 
 ## Q294326: Event ID 1003: Terminal Service Client Has Provided an...

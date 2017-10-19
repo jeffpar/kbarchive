@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70459: Using ALT+PRINTSCREEN to Paste Images into Paintbrush"
-permalink: kb/070/Q70459/
+permalink: /kb/070/Q70459/
 ---
 
 ## Q70459: Using ALT+PRINTSCREEN to Paste Images into Paintbrush

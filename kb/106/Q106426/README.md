@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106426: ScanDisk May Perform Surface Scan Under Windows"
-permalink: kb/106/Q106426/
+permalink: /kb/106/Q106426/
 ---
 
 ## Q106426: ScanDisk May Perform Surface Scan Under Windows

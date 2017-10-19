@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119299: Err Msg: Event ID 11: The Driver Detected a Controller Error.."
-permalink: kb/119/Q119299/
+permalink: /kb/119/Q119299/
 ---
 
 ## Q119299: Err Msg: Event ID 11: The Driver Detected a Controller Error..

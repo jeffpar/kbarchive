@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159477: SMSLS or PGC Stop Responding When Programs in Startup Group"
-permalink: kb/159/Q159477/
+permalink: /kb/159/Q159477/
 ---
 
 ## Q159477: SMSLS or PGC Stop Responding When Programs in Startup Group

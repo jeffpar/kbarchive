@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180330: PRB: InvalidateRect() Yields Empty Update Region on Win95/98/Me"
-permalink: kb/180/Q180330/
+permalink: /kb/180/Q180330/
 ---
 
 ## Q180330: PRB: InvalidateRect() Yields Empty Update Region on Win95/98/Me

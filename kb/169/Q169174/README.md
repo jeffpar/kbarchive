@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169174: XFOR: IMS Halts If RFC821 Address Over 1KB in Size Is Received"
-permalink: kb/169/Q169174/
+permalink: /kb/169/Q169174/
 ---
 
 ## Q169174: XFOR: IMS Halts If RFC821 Address Over 1KB in Size Is Received

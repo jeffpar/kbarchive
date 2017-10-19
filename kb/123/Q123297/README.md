@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123297: Losing Connections with HP JetDirect Printers"
-permalink: kb/123/Q123297/
+permalink: /kb/123/Q123297/
 ---
 
 ## Q123297: Losing Connections with HP JetDirect Printers

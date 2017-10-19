@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145943: How To Set Up ODBC Connectivity To An AS/400"
-permalink: kb/145/Q145943/
+permalink: /kb/145/Q145943/
 ---
 
 ## Q145943: How To Set Up ODBC Connectivity To An AS/400

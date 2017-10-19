@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269037: BUG: DataCombo Loses BoundText When Recordset Re-Queried"
-permalink: kb/269/Q269037/
+permalink: /kb/269/Q269037/
 ---
 
 ## Q269037: BUG: DataCombo Loses BoundText When Recordset Re-Queried

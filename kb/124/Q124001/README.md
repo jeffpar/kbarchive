@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124001: After Upgrade from WFWG, Different Network Adapter Listed"
-permalink: kb/124/Q124001/
+permalink: /kb/124/Q124001/
 ---
 
 ## Q124001: After Upgrade from WFWG, Different Network Adapter Listed

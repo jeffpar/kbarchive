@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161246: PPT: Sample Code to Get Input From an Office Assistant Balloon"
-permalink: kb/161/Q161246/
+permalink: /kb/161/Q161246/
 ---
 
 ## Q161246: PPT: Sample Code to Get Input From an Office Assistant Balloon

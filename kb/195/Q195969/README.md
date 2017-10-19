@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195969: XFOR:Cannot Specify Domains to Relay to in Internet Mail Service"
-permalink: kb/195/Q195969/
+permalink: /kb/195/Q195969/
 ---
 
 ## Q195969: XFOR:Cannot Specify Domains to Relay to in Internet Mail Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155334: Windows 95 RPL Clients will Only Allow One Logon to Domain"
-permalink: kb/155/Q155334/
+permalink: /kb/155/Q155334/
 ---
 
 ## Q155334: Windows 95 RPL Clients will Only Allow One Logon to Domain

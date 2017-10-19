@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104677: BUG: H2INC Versions 1.0 and 1.1 Do Not Support _syscall"
-permalink: kb/104/Q104677/
+permalink: /kb/104/Q104677/
 ---
 
 ## Q104677: BUG: H2INC Versions 1.0 and 1.1 Do Not Support _syscall

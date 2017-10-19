@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155675: IPX Headers Not Returned to WinSock Program"
-permalink: kb/155/Q155675/
+permalink: /kb/155/Q155675/
 ---
 
 ## Q155675: IPX Headers Not Returned to WinSock Program

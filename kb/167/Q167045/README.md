@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167045: Windows NT Does Not Boot From a Shadow Mirror Drive"
-permalink: kb/167/Q167045/
+permalink: /kb/167/Q167045/
 ---
 
 ## Q167045: Windows NT Does Not Boot From a Shadow Mirror Drive

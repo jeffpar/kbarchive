@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135307: Guide to Visual FoxPro Documentation"
-permalink: kb/135/Q135307/
+permalink: /kb/135/Q135307/
 ---
 
 ## Q135307: Guide to Visual FoxPro Documentation

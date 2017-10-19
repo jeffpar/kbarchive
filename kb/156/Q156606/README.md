@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156606: Windows NT Setup Fails to Install OEM Network Driver"
-permalink: kb/156/Q156606/
+permalink: /kb/156/Q156606/
 ---
 
 ## Q156606: Windows NT Setup Fails to Install OEM Network Driver

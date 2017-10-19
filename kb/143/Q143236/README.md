@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143236: XCLN: NT Domain Password Could Not Be Changed"
-permalink: kb/143/Q143236/
+permalink: /kb/143/Q143236/
 ---
 
 ## Q143236: XCLN: NT Domain Password Could Not Be Changed

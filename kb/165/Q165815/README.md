@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165815: How to Troubleshoot Event ID 2009 Errors"
-permalink: kb/165/Q165815/
+permalink: /kb/165/Q165815/
 ---
 
 ## Q165815: How to Troubleshoot Event ID 2009 Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244837: Function Exports Missing from Ws2_32.dll"
-permalink: kb/244/Q244837/
+permalink: /kb/244/Q244837/
 ---
 
 ## Q244837: Function Exports Missing from Ws2_32.dll

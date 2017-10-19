@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85444: Windows and the Intel Inboard 386/AT"
-permalink: kb/085/Q85444/
+permalink: /kb/085/Q85444/
 ---
 
 ## Q85444: Windows and the Intel Inboard 386/AT

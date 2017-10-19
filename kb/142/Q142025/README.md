@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142025: PRB: NTBackup and Beam &amp; Whiteside NFS Generate DR. Watson"
-permalink: kb/142/Q142025/
+permalink: /kb/142/Q142025/
 ---
 
 ## Q142025: PRB: NTBackup and Beam &amp; Whiteside NFS Generate DR. Watson

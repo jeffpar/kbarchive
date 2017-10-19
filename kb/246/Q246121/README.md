@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246121: XCLN: Contacts in Public Folder Are Not Shown in Bold"
-permalink: kb/246/Q246121/
+permalink: /kb/246/Q246121/
 ---
 
 ## Q246121: XCLN: Contacts in Public Folder Are Not Shown in Bold

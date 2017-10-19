@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189176: BackOffice Customer Resources on the Internet"
-permalink: kb/189/Q189176/
+permalink: /kb/189/Q189176/
 ---
 
 ## Q189176: BackOffice Customer Resources on the Internet

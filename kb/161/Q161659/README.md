@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161659: Stop 0x0000007F May Occur on Texas Instruments TravelMate"
-permalink: kb/161/Q161659/
+permalink: /kb/161/Q161659/
 ---
 
 ## Q161659: Stop 0x0000007F May Occur on Texas Instruments TravelMate

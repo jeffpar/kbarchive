@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129888: How to Customize the Setup Wizard in Visual Basic Version 4.0"
-permalink: kb/129/Q129888/
+permalink: /kb/129/Q129888/
 ---
 
 ## Q129888: How to Customize the Setup Wizard in Visual Basic Version 4.0

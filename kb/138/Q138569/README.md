@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138569: INFO: Object-Oriented Programming Reference Books"
-permalink: kb/138/Q138569/
+permalink: /kb/138/Q138569/
 ---
 
 ## Q138569: INFO: Object-Oriented Programming Reference Books

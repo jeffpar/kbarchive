@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123394: MSB Human: Cannot Play MIDI Sounds"
-permalink: kb/123/Q123394/
+permalink: /kb/123/Q123394/
 ---
 
 ## Q123394: MSB Human: Cannot Play MIDI Sounds

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247408: Error Message or Spooler Hangs When You Pause or Resume Printing"
-permalink: kb/247/Q247408/
+permalink: /kb/247/Q247408/
 ---
 
 ## Q247408: Error Message or Spooler Hangs When You Pause or Resume Printing

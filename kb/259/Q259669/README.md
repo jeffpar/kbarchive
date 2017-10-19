@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259669: PRB: _Include Variable Behavior with Modify Form/Class"
-permalink: kb/259/Q259669/
+permalink: /kb/259/Q259669/
 ---
 
 ## Q259669: PRB: _Include Variable Behavior with Modify Form/Class

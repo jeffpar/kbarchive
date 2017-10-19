@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112558: PCL.SEP and SYSPRINT.SEP Incorrectly Documented"
-permalink: kb/112/Q112558/
+permalink: /kb/112/Q112558/
 ---
 
 ## Q112558: PCL.SEP and SYSPRINT.SEP Incorrectly Documented

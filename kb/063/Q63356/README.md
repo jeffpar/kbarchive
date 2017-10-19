@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63356: NetWare Options in the SYSTEM.INI in Windows 3.0"
-permalink: kb/063/Q63356/
+permalink: /kb/063/Q63356/
 ---
 
 ## Q63356: NetWare Options in the SYSTEM.INI in Windows 3.0

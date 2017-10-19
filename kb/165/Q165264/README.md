@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165264: SMS: Wrong Use of the /D: Switch May Cause Incomplete Inventory"
-permalink: kb/165/Q165264/
+permalink: /kb/165/Q165264/
 ---
 
 ## Q165264: SMS: Wrong Use of the /D: Switch May Cause Incomplete Inventory

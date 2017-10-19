@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157680: SMS: Remote Control Agent Fails on NetWare VLM TR Clients"
-permalink: kb/157/Q157680/
+permalink: /kb/157/Q157680/
 ---
 
 ## Q157680: SMS: Remote Control Agent Fails on NetWare VLM TR Clients

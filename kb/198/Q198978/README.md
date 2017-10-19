@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198978: SMS: Trap Receiver Not in SMS 2.0"
-permalink: kb/198/Q198978/
+permalink: /kb/198/Q198978/
 ---
 
 ## Q198978: SMS: Trap Receiver Not in SMS 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108362: Changes Made by Video for Windows 1.1 Run-Time Installation"
-permalink: kb/108/Q108362/
+permalink: /kb/108/Q108362/
 ---
 
 ## Q108362: Changes Made by Video for Windows 1.1 Run-Time Installation

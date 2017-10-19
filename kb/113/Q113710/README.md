@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113710: Err Msg: &quot;Access Denied&quot; on Backup or Update of RAS Temp File"
-permalink: kb/113/Q113710/
+permalink: /kb/113/Q113710/
 ---
 
 ## Q113710: Err Msg: &quot;Access Denied&quot; on Backup or Update of RAS Temp File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166846: Cannot Reconnect to TN3270 Server with Close Listen Sockets"
-permalink: kb/166/Q166846/
+permalink: /kb/166/Q166846/
 ---
 
 ## Q166846: Cannot Reconnect to TN3270 Server with Close Listen Sockets

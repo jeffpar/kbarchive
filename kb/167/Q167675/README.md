@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167675: BUG: Certain Non-US Characters Do Not Display Properly in VFP"
-permalink: kb/167/Q167675/
+permalink: /kb/167/Q167675/
 ---
 
 ## Q167675: BUG: Certain Non-US Characters Do Not Display Properly in VFP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161565: Modifying Setup.log to Expedite File Repair"
-permalink: kb/161/Q161565/
+permalink: /kb/161/Q161565/
 ---
 
 ## Q161565: Modifying Setup.log to Expedite File Repair

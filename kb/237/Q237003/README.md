@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237003: Sessionless Event Creates Session When Running Application"
-permalink: kb/237/Q237003/
+permalink: /kb/237/Q237003/
 ---
 
 ## Q237003: Sessionless Event Creates Session When Running Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107193: Running IBM PC Support/400 on SNA Server"
-permalink: kb/107/Q107193/
+permalink: /kb/107/Q107193/
 ---
 
 ## Q107193: Running IBM PC Support/400 on SNA Server

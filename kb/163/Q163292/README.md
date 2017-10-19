@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163292: XCON: WEBTECH: MTA Events 2219; 2206; and 2207 (MTACHECK)"
-permalink: kb/163/Q163292/
+permalink: /kb/163/Q163292/
 ---
 
 ## Q163292: XCON: WEBTECH: MTA Events 2219; 2206; and 2207 (MTACHECK)

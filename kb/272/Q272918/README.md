@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272918: XADM: Preventing Attrib. Repl. from Exchange to Active Directory"
-permalink: kb/272/Q272918/
+permalink: /kb/272/Q272918/
 ---
 
 ## Q272918: XADM: Preventing Attrib. Repl. from Exchange to Active Directory

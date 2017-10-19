@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153658: XFOR: DXA Crashing with Event ID 268"
-permalink: kb/153/Q153658/
+permalink: /kb/153/Q153658/
 ---
 
 ## Q153658: XFOR: DXA Crashing with Event ID 268

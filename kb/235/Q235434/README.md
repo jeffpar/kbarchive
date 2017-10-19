@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235434: FIX: &quot;Attach to Process&quot; List Is Empty"
-permalink: kb/235/Q235434/
+permalink: /kb/235/Q235434/
 ---
 
 ## Q235434: FIX: &quot;Attach to Process&quot; List Is Empty

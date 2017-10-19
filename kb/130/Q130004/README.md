@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130004: Cannot Change Icon at Run Time in Visual Basic 3.0"
-permalink: kb/130/Q130004/
+permalink: /kb/130/Q130004/
 ---
 
 ## Q130004: Cannot Change Icon at Run Time in Visual Basic 3.0

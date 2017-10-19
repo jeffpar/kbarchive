@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193929: XFOR: How to Upload LDE SQL Database to Microsoft"
-permalink: kb/193/Q193929/
+permalink: /kb/193/Q193929/
 ---
 
 ## Q193929: XFOR: How to Upload LDE SQL Database to Microsoft

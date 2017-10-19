@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148381: XADM: Directory Replication Takes Too Long"
-permalink: kb/148/Q148381/
+permalink: /kb/148/Q148381/
 ---
 
 ## Q148381: XADM: Directory Replication Takes Too Long

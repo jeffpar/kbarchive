@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168136: XCON: X.400 Exchange Interop with Foreign MTA Causing NDR"
-permalink: kb/168/Q168136/
+permalink: /kb/168/Q168136/
 ---
 
 ## Q168136: XCON: X.400 Exchange Interop with Foreign MTA Causing NDR

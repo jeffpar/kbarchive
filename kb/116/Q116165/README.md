@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116165: Baseball: List and Filenames of Video Clips in Baseball"
-permalink: kb/116/Q116165/
+permalink: /kb/116/Q116165/
 ---
 
 ## Q116165: Baseball: List and Filenames of Video Clips in Baseball

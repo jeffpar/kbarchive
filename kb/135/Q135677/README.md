@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135677: FIX: Accessing the Internet via MSN causes a crash in VFP"
-permalink: kb/135/Q135677/
+permalink: /kb/135/Q135677/
 ---
 
 ## Q135677: FIX: Accessing the Internet via MSN causes a crash in VFP

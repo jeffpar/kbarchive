@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160791: Excel Charts Lose Color When Pasted into Word"
-permalink: kb/160/Q160791/
+permalink: /kb/160/Q160791/
 ---
 
 ## Q160791: Excel Charts Lose Color When Pasted into Word

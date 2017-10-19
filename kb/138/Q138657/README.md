@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138657: PRB: AutoForm and AutoReport Tools on Toolbar Don't Work"
-permalink: kb/138/Q138657/
+permalink: /kb/138/Q138657/
 ---
 
 ## Q138657: PRB: AutoForm and AutoReport Tools on Toolbar Don't Work

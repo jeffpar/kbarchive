@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239779: NFL Fever 2000: Context-Sensitive Help Text Is Invisible"
-permalink: kb/239/Q239779/
+permalink: /kb/239/Q239779/
 ---
 
 ## Q239779: NFL Fever 2000: Context-Sensitive Help Text Is Invisible

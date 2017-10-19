@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64277: Mac AL: Undeliverable AppleLink Gateway Messages Not Generated"
-permalink: kb/064/Q64277/
+permalink: /kb/064/Q64277/
 ---
 
 ## Q64277: Mac AL: Undeliverable AppleLink Gateway Messages Not Generated

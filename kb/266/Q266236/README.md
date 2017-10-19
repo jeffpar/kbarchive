@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266236: HOWTO: Use Serial Comm with Windows CE Emulators"
-permalink: kb/266/Q266236/
+permalink: /kb/266/Q266236/
 ---
 
 ## Q266236: HOWTO: Use Serial Comm with Windows CE Emulators

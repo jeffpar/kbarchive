@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322802: SMS: Extended Hardware Inventory Classes Are Not Replicated"
-permalink: kb/322/Q322802/
+permalink: /kb/322/Q322802/
 ---
 
 ## Q322802: SMS: Extended Hardware Inventory Classes Are Not Replicated

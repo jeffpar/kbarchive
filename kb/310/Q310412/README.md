@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310412: Corrupt COM+ Catalog Prevents Iissync.exe from Running Properly"
-permalink: kb/310/Q310412/
+permalink: /kb/310/Q310412/
 ---
 
 ## Q310412: Corrupt COM+ Catalog Prevents Iissync.exe from Running Properly

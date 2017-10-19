@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116460: BUG: Debugging With Mono And VGA Can Cause Screen Corruption"
-permalink: kb/116/Q116460/
+permalink: /kb/116/Q116460/
 ---
 
 ## Q116460: BUG: Debugging With Mono And VGA Can Cause Screen Corruption

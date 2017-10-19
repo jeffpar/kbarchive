@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257967: SMSINST: Deleting Installer Packages May Remove Shared INI Files"
-permalink: kb/257/Q257967/
+permalink: /kb/257/Q257967/
 ---
 
 ## Q257967: SMSINST: Deleting Installer Packages May Remove Shared INI Files

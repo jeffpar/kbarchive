@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83926: Windows 3.1 Licensing Policy Allows for One Copy per License"
-permalink: kb/083/Q83926/
+permalink: /kb/083/Q83926/
 ---
 
 ## Q83926: Windows 3.1 Licensing Policy Allows for One Copy per License

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257660: FIX: Setting Printer Object Reference to Nothing Causes IPF"
-permalink: kb/257/Q257660/
+permalink: /kb/257/Q257660/
 ---
 
 ## Q257660: FIX: Setting Printer Object Reference to Nothing Causes IPF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185494: VADEVDBG.PKG Single Stepping Crashes With Register Window"
-permalink: kb/185/Q185494/
+permalink: /kb/185/Q185494/
 ---
 
 ## Q185494: VADEVDBG.PKG Single Stepping Crashes With Register Window

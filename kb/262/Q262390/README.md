@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262390: Network Discovery Returns DHCP Reservation Name w/ Windows DHCP"
-permalink: kb/262/Q262390/
+permalink: /kb/262/Q262390/
 ---
 
 ## Q262390: Network Discovery Returns DHCP Reservation Name w/ Windows DHCP

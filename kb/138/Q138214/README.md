@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138214: Music Central 96: Contents of Readme.wri"
-permalink: kb/138/Q138214/
+permalink: /kb/138/Q138214/
 ---
 
 ## Q138214: Music Central 96: Contents of Readme.wri

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121721: DIR of Local Share Fails from Command Prompt Started by AT"
-permalink: kb/121/Q121721/
+permalink: /kb/121/Q121721/
 ---
 
 ## Q121721: DIR of Local Share Fails from Command Prompt Started by AT

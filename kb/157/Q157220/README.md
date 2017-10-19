@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157220: INFO: STL Sample for the exp, log, and log10 Functions"
-permalink: kb/157/Q157220/
+permalink: /kb/157/Q157220/
 ---
 
 ## Q157220: INFO: STL Sample for the exp, log, and log10 Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146412: Cannot Paste Text from Japanese Newsgroup into Other Program"
-permalink: kb/146/Q146412/
+permalink: /kb/146/Q146412/
 ---
 
 ## Q146412: Cannot Paste Text from Japanese Newsgroup into Other Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289738: FIX: History of a Label Does Not Show the Files from Subproject"
-permalink: kb/289/Q289738/
+permalink: /kb/289/Q289738/
 ---
 
 ## Q289738: FIX: History of a Label Does Not Show the Files from Subproject

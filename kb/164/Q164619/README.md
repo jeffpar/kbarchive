@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164619: FP97: Cannot Preview Office 97 Clipart in FrontPage Editor"
-permalink: kb/164/Q164619/
+permalink: /kb/164/Q164619/
 ---
 
 ## Q164619: FP97: Cannot Preview Office 97 Clipart in FrontPage Editor

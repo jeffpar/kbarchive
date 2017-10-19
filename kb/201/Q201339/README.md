@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201339: Unable to Multilink Using Third-Party Authentication Schemes"
-permalink: kb/201/Q201339/
+permalink: /kb/201/Q201339/
 ---
 
 ## Q201339: Unable to Multilink Using Third-Party Authentication Schemes

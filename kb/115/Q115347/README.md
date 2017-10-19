@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115347: PRB: Debugger Cannot Watch Global Constants in C++ Programs"
-permalink: kb/115/Q115347/
+permalink: /kb/115/Q115347/
 ---
 
 ## Q115347: PRB: Debugger Cannot Watch Global Constants in C++ Programs

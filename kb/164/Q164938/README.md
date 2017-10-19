@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164938: Event Logging Frozen While Doing Heavy Logging"
-permalink: kb/164/Q164938/
+permalink: /kb/164/Q164938/
 ---
 
 ## Q164938: Event Logging Frozen While Doing Heavy Logging

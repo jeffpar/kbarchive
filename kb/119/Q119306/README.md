@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119306: PROFS: Host Access INSTALL Failure with CLRSCRN Module"
-permalink: kb/119/Q119306/
+permalink: /kb/119/Q119306/
 ---
 
 ## Q119306: PROFS: Host Access INSTALL Failure with CLRSCRN Module

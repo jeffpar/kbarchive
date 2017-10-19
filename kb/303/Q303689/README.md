@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303689: Netscape Navigator 6.01 Cannot Display Congratulations Page"
-permalink: kb/303/Q303689/
+permalink: /kb/303/Q303689/
 ---
 
 ## Q303689: Netscape Navigator 6.01 Cannot Display Congratulations Page

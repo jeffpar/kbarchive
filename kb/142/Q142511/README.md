@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142511: Explorapedia People: Err Msg: Not Enough Memory to Perform"
-permalink: kb/142/Q142511/
+permalink: /kb/142/Q142511/
 ---
 
 ## Q142511: Explorapedia People: Err Msg: Not Enough Memory to Perform

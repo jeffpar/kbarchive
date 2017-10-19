@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246507: Windows NT Does Not Start, Error Message About Ntoskrnl.exe"
-permalink: kb/246/Q246507/
+permalink: /kb/246/Q246507/
 ---
 
 ## Q246507: Windows NT Does Not Start, Error Message About Ntoskrnl.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177590: ADT/ODE: Setup Not Completed Successfully Installing Custom App"
-permalink: kb/177/Q177590/
+permalink: /kb/177/Q177590/
 ---
 
 ## Q177590: ADT/ODE: Setup Not Completed Successfully Installing Custom App

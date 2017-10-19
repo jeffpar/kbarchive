@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197076: INFO: Controlling Anti-aliased Text via the LOGFONT Structure"
-permalink: kb/197/Q197076/
+permalink: /kb/197/Q197076/
 ---
 
 ## Q197076: INFO: Controlling Anti-aliased Text via the LOGFONT Structure

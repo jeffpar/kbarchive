@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156885: XGEN: Errors When Using the Header.exe Tool"
-permalink: kb/156/Q156885/
+permalink: /kb/156/Q156885/
 ---
 
 ## Q156885: XGEN: Errors When Using the Header.exe Tool

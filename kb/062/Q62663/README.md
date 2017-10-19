@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62663: PRB: CodeView May Appear to Hang on gets() If Screen Swap Is Off"
-permalink: kb/062/Q62663/
+permalink: /kb/062/Q62663/
 ---
 
 ## Q62663: PRB: CodeView May Appear to Hang on gets() If Screen Swap Is Off

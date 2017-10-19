@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191608: XFOR: Failure Creating Windows NT Accounts Using Linkage 3.2"
-permalink: kb/191/Q191608/
+permalink: /kb/191/Q191608/
 ---
 
 ## Q191608: XFOR: Failure Creating Windows NT Accounts Using Linkage 3.2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150781: Golf Err Msg: Glfmod2 Caused a Divide Error in Glfani32.dll"
-permalink: kb/150/Q150781/
+permalink: /kb/150/Q150781/
 ---
 
 ## Q150781: Golf Err Msg: Glfmod2 Caused a Divide Error in Glfani32.dll

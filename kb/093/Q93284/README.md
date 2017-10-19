@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93284: WFWG Err Msg: Error 12: The Access Code Is Invalid"
-permalink: kb/093/Q93284/
+permalink: /kb/093/Q93284/
 ---
 
 ## Q93284: WFWG Err Msg: Error 12: The Access Code Is Invalid

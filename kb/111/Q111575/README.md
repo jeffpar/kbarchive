@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111575: Security Settings File Error with Shared Windows Installation"
-permalink: kb/111/Q111575/
+permalink: /kb/111/Q111575/
 ---
 
 ## Q111575: Security Settings File Error with Shared Windows Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221600: Working with Distributed Authoring and Versioning (DAV) and Web"
-permalink: kb/221/Q221600/
+permalink: /kb/221/Q221600/
 ---
 
 ## Q221600: Working with Distributed Authoring and Versioning (DAV) and Web

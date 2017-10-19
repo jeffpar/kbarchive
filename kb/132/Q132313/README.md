@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132313: Status of FoxPro &quot;Desk Accessories&quot;"
-permalink: kb/132/Q132313/
+permalink: /kb/132/Q132313/
 ---
 
 ## Q132313: Status of FoxPro &quot;Desk Accessories&quot;

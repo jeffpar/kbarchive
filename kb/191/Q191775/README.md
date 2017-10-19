@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191775: WINS Service Fails to Start With More Than 99 PNG Entries"
-permalink: kb/191/Q191775/
+permalink: /kb/191/Q191775/
 ---
 
 ## Q191775: WINS Service Fails to Start With More Than 99 PNG Entries

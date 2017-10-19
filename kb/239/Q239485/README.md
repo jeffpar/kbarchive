@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239485: XWEB: OWA and IIS Authentication on a Member Server"
-permalink: kb/239/Q239485/
+permalink: /kb/239/Q239485/
 ---
 
 ## Q239485: XWEB: OWA and IIS Authentication on a Member Server

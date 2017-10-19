@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169700: XADM: Exception Error Receiving Message from PROFS/OV Connector"
-permalink: kb/169/Q169700/
+permalink: /kb/169/Q169700/
 ---
 
 ## Q169700: XADM: Exception Error Receiving Message from PROFS/OV Connector

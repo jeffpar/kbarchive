@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271073: XWEB: OWA Logon Page Does Not Display Graphics"
-permalink: kb/271/Q271073/
+permalink: /kb/271/Q271073/
 ---
 
 ## Q271073: XWEB: OWA Logon Page Does Not Display Graphics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119458: Result of _fpreset() Is Not _CW_DEFAULT"
-permalink: kb/119/Q119458/
+permalink: /kb/119/Q119458/
 ---
 
 ## Q119458: Result of _fpreset() Is Not _CW_DEFAULT

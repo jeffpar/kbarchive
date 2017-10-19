@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169670: XCON: Incoming Messages from HP OpenMail Include Winmail.dat"
-permalink: kb/169/Q169670/
+permalink: /kb/169/Q169670/
 ---
 
 ## Q169670: XCON: Incoming Messages from HP OpenMail Include Winmail.dat

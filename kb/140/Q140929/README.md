@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140929: Appstart Causes General Protection (GP) Fault on Shared Apps"
-permalink: kb/140/Q140929/
+permalink: /kb/140/Q140929/
 ---
 
 ## Q140929: Appstart Causes General Protection (GP) Fault on Shared Apps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197128: BUG: CausesValidation Property Does Not Trigger Validate Event"
-permalink: kb/197/Q197128/
+permalink: /kb/197/Q197128/
 ---
 
 ## Q197128: BUG: CausesValidation Property Does Not Trigger Validate Event

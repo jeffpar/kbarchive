@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196978: WD97: How to Convert Between Lotus Word Pro 96 and Word"
-permalink: kb/196/Q196978/
+permalink: /kb/196/Q196978/
 ---
 
 ## Q196978: WD97: How to Convert Between Lotus Word Pro 96 and Word

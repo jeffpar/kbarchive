@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157084: WD97: Text Converters Installed in a Typical Setup"
-permalink: kb/157/Q157084/
+permalink: /kb/157/Q157084/
 ---
 
 ## Q157084: WD97: Text Converters Installed in a Typical Setup

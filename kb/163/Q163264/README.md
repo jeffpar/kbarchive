@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163264: APPC Password Substitution Fails Intermittently"
-permalink: kb/163/Q163264/
+permalink: /kb/163/Q163264/
 ---
 
 ## Q163264: APPC Password Substitution Fails Intermittently

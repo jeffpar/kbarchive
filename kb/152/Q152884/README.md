@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152884: XADM: Err Msg: IS Generates EcBufferTooSmall"
-permalink: kb/152/Q152884/
+permalink: /kb/152/Q152884/
 ---
 
 ## Q152884: XADM: Err Msg: IS Generates EcBufferTooSmall

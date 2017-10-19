@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308173: FrontPage Server Extensions Are Not Installed with IIS 5.1"
-permalink: kb/308/Q308173/
+permalink: /kb/308/Q308173/
 ---
 
 ## Q308173: FrontPage Server Extensions Are Not Installed with IIS 5.1

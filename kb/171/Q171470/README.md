@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171470: FIX: Resize Event Not Fired When UserControl Copied &amp; Pasted"
-permalink: kb/171/Q171470/
+permalink: /kb/171/Q171470/
 ---
 
 ## Q171470: FIX: Resize Event Not Fired When UserControl Copied &amp; Pasted

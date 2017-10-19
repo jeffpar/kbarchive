@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167158: HOWTO: Package MFC Controls for Use Over the Internet"
-permalink: kb/167/Q167158/
+permalink: /kb/167/Q167158/
 ---
 
 ## Q167158: HOWTO: Package MFC Controls for Use Over the Internet

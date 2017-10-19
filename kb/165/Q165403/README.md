@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165403: Windows 95 Update Prevents Sending Clear-Text Password Over Net"
-permalink: kb/165/Q165403/
+permalink: /kb/165/Q165403/
 ---
 
 ## Q165403: Windows 95 Update Prevents Sending Clear-Text Password Over Net

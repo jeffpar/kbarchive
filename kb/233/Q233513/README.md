@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233513: Access Denied Error Message in Windows Script Host"
-permalink: kb/233/Q233513/
+permalink: /kb/233/Q233513/
 ---
 
 ## Q233513: Access Denied Error Message in Windows Script Host

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197291: XFOR: Dirsync Does Not Correctly Convert Date to UTC Format"
-permalink: kb/197/Q197291/
+permalink: /kb/197/Q197291/
 ---
 
 ## Q197291: XFOR: Dirsync Does Not Correctly Convert Date to UTC Format

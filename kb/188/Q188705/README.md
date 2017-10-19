@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188705: WD97: Catalog Merge To Printer Results in Error Message"
-permalink: kb/188/Q188705/
+permalink: /kb/188/Q188705/
 ---
 
 ## Q188705: WD97: Catalog Merge To Printer Results in Error Message

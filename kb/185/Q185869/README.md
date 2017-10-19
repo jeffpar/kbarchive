@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185869: Logon Scripts Fail to Process When Using Network Client 3.0"
-permalink: kb/185/Q185869/
+permalink: /kb/185/Q185869/
 ---
 
 ## Q185869: Logon Scripts Fail to Process When Using Network Client 3.0

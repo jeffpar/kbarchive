@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242075: Establish Mirror Command Unavailable in Disk Administrator"
-permalink: kb/242/Q242075/
+permalink: /kb/242/Q242075/
 ---
 
 ## Q242075: Establish Mirror Command Unavailable in Disk Administrator

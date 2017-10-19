@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169192: BUG: Cannot Add Pictures into ComboBox in Init Event"
-permalink: kb/169/Q169192/
+permalink: /kb/169/Q169192/
 ---
 
 ## Q169192: BUG: Cannot Add Pictures into ComboBox in Init Event

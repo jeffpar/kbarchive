@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132856: PC DirSync: Notice 37 When Exporting Postoffice Address List"
-permalink: kb/132/Q132856/
+permalink: /kb/132/Q132856/
 ---
 
 ## Q132856: PC DirSync: Notice 37 When Exporting Postoffice Address List

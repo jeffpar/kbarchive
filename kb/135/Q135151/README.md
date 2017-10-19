@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135151: PCMCIA Devices Not Activated When Resuming Dell Latitude XP"
-permalink: kb/135/Q135151/
+permalink: /kb/135/Q135151/
 ---
 
 ## Q135151: PCMCIA Devices Not Activated When Resuming Dell Latitude XP

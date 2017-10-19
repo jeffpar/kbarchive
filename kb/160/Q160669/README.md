@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160669: Err. Msg: The Catalog Directory Can Not Be Found..."
-permalink: kb/160/Q160669/
+permalink: /kb/160/Q160669/
 ---
 
 ## Q160669: Err. Msg: The Catalog Directory Can Not Be Found...

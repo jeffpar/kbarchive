@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273939: XCON: Delivery Receipts Not Rerouted"
-permalink: kb/273/Q273939/
+permalink: /kb/273/Q273939/
 ---
 
 ## Q273939: XCON: Delivery Receipts Not Rerouted

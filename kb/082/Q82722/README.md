@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82722: Dual Network (LAN Manager/Novell) Support"
-permalink: kb/082/Q82722/
+permalink: /kb/082/Q82722/
 ---
 
 ## Q82722: Dual Network (LAN Manager/Novell) Support

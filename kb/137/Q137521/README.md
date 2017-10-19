@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137521: BUG: Class Browser: Error When Typing a Subclass in Type Combo"
-permalink: kb/137/Q137521/
+permalink: /kb/137/Q137521/
 ---
 
 ## Q137521: BUG: Class Browser: Error When Typing a Subclass in Type Combo

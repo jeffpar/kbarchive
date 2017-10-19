@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125601: Err Msg: &quot;Could Not Open the Application Database&quot; as PGC Starts"
-permalink: kb/125/Q125601/
+permalink: /kb/125/Q125601/
 ---
 
 ## Q125601: Err Msg: &quot;Could Not Open the Application Database&quot; as PGC Starts

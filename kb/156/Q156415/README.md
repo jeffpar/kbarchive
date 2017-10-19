@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156415: XADM: Information Store Fails to Start with Jet Error -327"
-permalink: kb/156/Q156415/
+permalink: /kb/156/Q156415/
 ---
 
 ## Q156415: XADM: Information Store Fails to Start with Jet Error -327

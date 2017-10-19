@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255911: INFO: Integrating SourceSafe on Novell w/V InterDev or FrontPage"
-permalink: kb/255/Q255911/
+permalink: /kb/255/Q255911/
 ---
 
 ## Q255911: INFO: Integrating SourceSafe on Novell w/V InterDev or FrontPage

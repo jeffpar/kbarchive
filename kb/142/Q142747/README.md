@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142747: How to Disable Password Caching with the MS Service for NDS"
-permalink: kb/142/Q142747/
+permalink: /kb/142/Q142747/
 ---
 
 ## Q142747: How to Disable Password Caching with the MS Service for NDS

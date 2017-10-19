@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85247: Windows 3.1 Resource Kit Setup and Utilities Disk (3.5 Inch)"
-permalink: kb/085/Q85247/
+permalink: /kb/085/Q85247/
 ---
 
 ## Q85247: Windows 3.1 Resource Kit Setup and Utilities Disk (3.5 Inch)

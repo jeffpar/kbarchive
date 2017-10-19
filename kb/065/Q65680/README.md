@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65680: A Listing of Keyboard Commands in Windows Version 3.0"
-permalink: kb/065/Q65680/
+permalink: /kb/065/Q65680/
 ---
 
 ## Q65680: A Listing of Keyboard Commands in Windows Version 3.0

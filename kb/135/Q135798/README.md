@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135798: How to Prevent a User from Changing the Row Height of a Grid"
-permalink: kb/135/Q135798/
+permalink: /kb/135/Q135798/
 ---
 
 ## Q135798: How to Prevent a User from Changing the Row Height of a Grid

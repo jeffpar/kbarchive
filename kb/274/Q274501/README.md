@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274501: BUG: CRT: wcsxfrm(NULL, string, 0) Fails Outside &quot;C&quot; Locale"
-permalink: kb/274/Q274501/
+permalink: /kb/274/Q274501/
 ---
 
 ## Q274501: BUG: CRT: wcsxfrm(NULL, string, 0) Fails Outside &quot;C&quot; Locale

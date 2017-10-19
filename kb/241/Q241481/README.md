@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241481: BUG: Internal Protection Fault When Using Format Function"
-permalink: kb/241/Q241481/
+permalink: /kb/241/Q241481/
 ---
 
 ## Q241481: BUG: Internal Protection Fault When Using Format Function

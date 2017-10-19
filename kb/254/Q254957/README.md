@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254957: BUG: Registry Update Code For MFC OLE Server Fails on W2K"
-permalink: kb/254/Q254957/
+permalink: /kb/254/Q254957/
 ---
 
 ## Q254957: BUG: Registry Update Code For MFC OLE Server Fails on W2K

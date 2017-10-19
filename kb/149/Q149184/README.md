@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149184: How to Convert a RGBCOMP() Value into Component Values"
-permalink: kb/149/Q149184/
+permalink: /kb/149/Q149184/
 ---
 
 ## Q149184: How to Convert a RGBCOMP() Value into Component Values

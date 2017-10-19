@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116434: PC Ext: EXTERNAL.INI Equivalents to -Qx Command-Line Options"
-permalink: kb/116/Q116434/
+permalink: /kb/116/Q116434/
 ---
 
 ## Q116434: PC Ext: EXTERNAL.INI Equivalents to -Qx Command-Line Options

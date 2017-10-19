@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194139: XFOR: SNADS to Exchange Service Perfmon Counters don't Update"
-permalink: kb/194/Q194139/
+permalink: /kb/194/Q194139/
 ---
 
 ## Q194139: XFOR: SNADS to Exchange Service Perfmon Counters don't Update

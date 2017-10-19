@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316439: FIX: XMLToCursor Error Messages with More Than 128 Columns"
-permalink: kb/316/Q316439/
+permalink: /kb/316/Q316439/
 ---
 
 ## Q316439: FIX: XMLToCursor Error Messages with More Than 128 Columns

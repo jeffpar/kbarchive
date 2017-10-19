@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173490: WD97: Cannot Move to Previous or Next Linked Text Box"
-permalink: kb/173/Q173490/
+permalink: /kb/173/Q173490/
 ---
 
 ## Q173490: WD97: Cannot Move to Previous or Next Linked Text Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154752: SMS: Client Does Not Deinstall for All Users"
-permalink: kb/154/Q154752/
+permalink: /kb/154/Q154752/
 ---
 
 ## Q154752: SMS: Client Does Not Deinstall for All Users

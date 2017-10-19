@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197130: XCON: FETCH Using IMAP Client Fails to Retrieve SMIME Message"
-permalink: kb/197/Q197130/
+permalink: /kb/197/Q197130/
 ---
 
 ## Q197130: XCON: FETCH Using IMAP Client Fails to Retrieve SMIME Message

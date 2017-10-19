@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158272: Printer Disappears After Upgrading to Windows NT 4.0"
-permalink: kb/158/Q158272/
+permalink: /kb/158/Q158272/
 ---
 
 ## Q158272: Printer Disappears After Upgrading to Windows NT 4.0

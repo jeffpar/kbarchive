@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146408: Chat Prompts for Password Dialing Windows NT-Based Computer"
-permalink: kb/146/Q146408/
+permalink: /kb/146/Q146408/
 ---
 
 ## Q146408: Chat Prompts for Password Dialing Windows NT-Based Computer

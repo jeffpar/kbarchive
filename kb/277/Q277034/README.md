@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277034: ELL: Sound Card Does Not Supply Required Voltage"
-permalink: kb/277/Q277034/
+permalink: /kb/277/Q277034/
 ---
 
 ## Q277034: ELL: Sound Card Does Not Supply Required Voltage

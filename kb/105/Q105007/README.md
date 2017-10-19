@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105007: PRB: Too Many Memory Variables"
-permalink: kb/105/Q105007/
+permalink: /kb/105/Q105007/
 ---
 
 ## Q105007: PRB: Too Many Memory Variables

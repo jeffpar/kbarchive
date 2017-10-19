@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93075: PC Win: Description of 3.0 Setup Process"
-permalink: kb/093/Q93075/
+permalink: /kb/093/Q93075/
 ---
 
 ## Q93075: PC Win: Description of 3.0 Setup Process

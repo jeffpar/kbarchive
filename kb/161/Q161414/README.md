@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161414: FP97: How to Publish a FrontPage Web to the Internet, Intranet"
-permalink: kb/161/Q161414/
+permalink: /kb/161/Q161414/
 ---
 
 ## Q161414: FP97: How to Publish a FrontPage Web to the Internet, Intranet

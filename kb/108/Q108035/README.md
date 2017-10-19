@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108035: WFWG Err Msg: Your Network Adapter MS&#36;AE1 Is Not Working..."
-permalink: kb/108/Q108035/
+permalink: /kb/108/Q108035/
 ---
 
 ## Q108035: WFWG Err Msg: Your Network Adapter MS&#36;AE1 Is Not Working...

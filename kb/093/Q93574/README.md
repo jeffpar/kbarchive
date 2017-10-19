@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93574: PC Win: Wrong Button Discussed in &quot;Find a Name&quot; Help Topic"
-permalink: kb/093/Q93574/
+permalink: /kb/093/Q93574/
 ---
 
 ## Q93574: PC Win: Wrong Button Discussed in &quot;Find a Name&quot; Help Topic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137765: Bookshelf 1995: Help Lists Incorrect Shortcut to Move Page"
-permalink: kb/137/Q137765/
+permalink: /kb/137/Q137765/
 ---
 
 ## Q137765: Bookshelf 1995: Help Lists Incorrect Shortcut to Move Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140010: Microsoft Plus! Setup Inadvertently Installs NetWare Client"
-permalink: kb/140/Q140010/
+permalink: /kb/140/Q140010/
 ---
 
 ## Q140010: Microsoft Plus! Setup Inadvertently Installs NetWare Client

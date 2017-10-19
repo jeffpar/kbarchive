@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149583: XCLN: Directory Could Not be Expanded to an O/R Address"
-permalink: kb/149/Q149583/
+permalink: /kb/149/Q149583/
 ---
 
 ## Q149583: XCLN: Directory Could Not be Expanded to an O/R Address

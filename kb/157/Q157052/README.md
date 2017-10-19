@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157052: HOWTO: Display Blank in Place of .NULL. in a Grid Column"
-permalink: kb/157/Q157052/
+permalink: /kb/157/Q157052/
 ---
 
 ## Q157052: HOWTO: Display Blank in Place of .NULL. in a Grid Column

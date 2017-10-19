@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316972: Flight Simulator 2002: Flight Does Not Use Default System Time"
-permalink: kb/316/Q316972/
+permalink: /kb/316/Q316972/
 ---
 
 ## Q316972: Flight Simulator 2002: Flight Does Not Use Default System Time

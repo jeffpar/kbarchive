@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109486: BUG: Oracle Driver Fails to Find Delimited Identifiers"
-permalink: kb/109/Q109486/
+permalink: /kb/109/Q109486/
 ---
 
 ## Q109486: BUG: Oracle Driver Fails to Find Delimited Identifiers

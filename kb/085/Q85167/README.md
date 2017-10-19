@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85167: PC Win: Modified Status Lost in Move to Shared Folder"
-permalink: kb/085/Q85167/
+permalink: /kb/085/Q85167/
 ---
 
 ## Q85167: PC Win: Modified Status Lost in Move to Shared Folder

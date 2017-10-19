@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191382: Error Message: This Program Can No Longer Run"
-permalink: kb/191/Q191382/
+permalink: /kb/191/Q191382/
 ---
 
 ## Q191382: Error Message: This Program Can No Longer Run

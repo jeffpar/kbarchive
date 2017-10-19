@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176058: HOWTO: Pass String Data Between Applications Using SendMessage"
-permalink: kb/176/Q176058/
+permalink: /kb/176/Q176058/
 ---
 
 ## Q176058: HOWTO: Pass String Data Between Applications Using SendMessage

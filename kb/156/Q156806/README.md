@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156806: XCLN: Err Msg: Your Administrator Must Install MAPI..."
-permalink: kb/156/Q156806/
+permalink: /kb/156/Q156806/
 ---
 
 ## Q156806: XCLN: Err Msg: Your Administrator Must Install MAPI...

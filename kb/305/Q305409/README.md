@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305409: MCSE Training Kit: Designing a Microsoft Windows 2000 Network In"
-permalink: kb/305/Q305409/
+permalink: /kb/305/Q305409/
 ---
 
 ## Q305409: MCSE Training Kit: Designing a Microsoft Windows 2000 Network In

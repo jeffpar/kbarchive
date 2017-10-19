@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222143: PRB: AppWizard, CHtmlView with Splitter Show Extra Scrollbars"
-permalink: kb/222/Q222143/
+permalink: /kb/222/Q222143/
 ---
 
 ## Q222143: PRB: AppWizard, CHtmlView with Splitter Show Extra Scrollbars

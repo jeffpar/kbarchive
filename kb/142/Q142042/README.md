@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142042: Description of TCP/IP Node-Type Settings in Windows 95/98"
-permalink: kb/142/Q142042/
+permalink: /kb/142/Q142042/
 ---
 
 ## Q142042: Description of TCP/IP Node-Type Settings in Windows 95/98

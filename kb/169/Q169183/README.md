@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169183: XCLN: Unable to Get Published Folder List"
-permalink: kb/169/Q169183/
+permalink: /kb/169/Q169183/
 ---
 
 ## Q169183: XCLN: Unable to Get Published Folder List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156387: XADM: JET Asserts in ISINTEG During a Check on Database"
-permalink: kb/156/Q156387/
+permalink: /kb/156/Q156387/
 ---
 
 ## Q156387: XADM: JET Asserts in ISINTEG During a Check on Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170975: FP: Deleted Pages from Web Show up in Search Results List"
-permalink: kb/170/Q170975/
+permalink: /kb/170/Q170975/
 ---
 
 ## Q170975: FP: Deleted Pages from Web Show up in Search Results List

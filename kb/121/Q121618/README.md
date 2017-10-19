@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121618: Saving Workstation Default User Profiles for a Domain"
-permalink: kb/121/Q121618/
+permalink: /kb/121/Q121618/
 ---
 
 ## Q121618: Saving Workstation Default User Profiles for a Domain

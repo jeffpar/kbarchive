@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173805: XADM: Unable to Administer 5.5 IMS from 5.0 Admin Program"
-permalink: kb/173/Q173805/
+permalink: /kb/173/Q173805/
 ---
 
 ## Q173805: XADM: Unable to Administer 5.5 IMS from 5.0 Admin Program

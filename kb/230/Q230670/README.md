@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230670: XCLN: URL to PFs Doesn't Work w/Clients of Different Languages"
-permalink: kb/230/Q230670/
+permalink: /kb/230/Q230670/
 ---
 
 ## Q230670: XCLN: URL to PFs Doesn't Work w/Clients of Different Languages

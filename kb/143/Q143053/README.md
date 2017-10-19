@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143053: Mouse Systems Driver May Cause Windows Protection Error"
-permalink: kb/143/Q143053/
+permalink: /kb/143/Q143053/
 ---
 
 ## Q143053: Mouse Systems Driver May Cause Windows Protection Error

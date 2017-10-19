@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96879: Cannot Print Color Image from Paintbrush to DeskJet 550C"
-permalink: kb/096/Q96879/
+permalink: /kb/096/Q96879/
 ---
 
 ## Q96879: Cannot Print Color Image from Paintbrush to DeskJet 550C

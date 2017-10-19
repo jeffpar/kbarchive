@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264304: XFOR: Migration from Lotus Notes to Exchange Fails"
-permalink: kb/264/Q264304/
+permalink: /kb/264/Q264304/
 ---
 
 ## Q264304: XFOR: Migration from Lotus Notes to Exchange Fails

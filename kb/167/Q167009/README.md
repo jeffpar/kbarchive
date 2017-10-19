@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167009: Description of DHCP Server Service Has a Misspelled Word"
-permalink: kb/167/Q167009/
+permalink: /kb/167/Q167009/
 ---
 
 ## Q167009: Description of DHCP Server Service Has a Misspelled Word

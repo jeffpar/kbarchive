@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232337: PRB: MFC Wizards Fail with &quot;Unrecognized Database Format&quot;"
-permalink: kb/232/Q232337/
+permalink: /kb/232/Q232337/
 ---
 
 ## Q232337: PRB: MFC Wizards Fail with &quot;Unrecognized Database Format&quot;

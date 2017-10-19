@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214686: XCON: MTA PerfMon Counters Continue to Count When 0 Messages"
-permalink: kb/214/Q214686/
+permalink: /kb/214/Q214686/
 ---
 
 ## Q214686: XCON: MTA PerfMon Counters Continue to Count When 0 Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112910: PC WRmt: Selector Hangs if Fax Printer Driver Missing"
-permalink: kb/112/Q112910/
+permalink: /kb/112/Q112910/
 ---
 
 ## Q112910: PC WRmt: Selector Hangs if Fax Printer Driver Missing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98190: Move Command Doesn't Work in Voice Pilot"
-permalink: kb/098/Q98190/
+permalink: /kb/098/Q98190/
 ---
 
 ## Q98190: Move Command Doesn't Work in Voice Pilot

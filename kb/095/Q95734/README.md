@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95734: PC Win: Attachments Cannot Be Added to Message"
-permalink: kb/095/Q95734/
+permalink: /kb/095/Q95734/
 ---
 
 ## Q95734: PC Win: Attachments Cannot Be Added to Message

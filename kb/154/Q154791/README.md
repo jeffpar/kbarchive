@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154791: MS-DOS-based Applications May Not Find All Files"
-permalink: kb/154/Q154791/
+permalink: /kb/154/Q154791/
 ---
 
 ## Q154791: MS-DOS-based Applications May Not Find All Files

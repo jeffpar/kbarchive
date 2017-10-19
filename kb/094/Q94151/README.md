@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94151: HPPCL5E: Incorrect Output with Adobe Type Manager"
-permalink: kb/094/Q94151/
+permalink: /kb/094/Q94151/
 ---
 
 ## Q94151: HPPCL5E: Incorrect Output with Adobe Type Manager

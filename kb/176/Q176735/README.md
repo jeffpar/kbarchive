@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176735: XADM: Intel and Alpha Extension DLLs are Installed on Alpha"
-permalink: kb/176/Q176735/
+permalink: /kb/176/Q176735/
 ---
 
 ## Q176735: XADM: Intel and Alpha Extension DLLs are Installed on Alpha

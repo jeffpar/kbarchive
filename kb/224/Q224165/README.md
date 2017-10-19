@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224165: MSB Animals: License and Certificate Printouts Are Not Centered"
-permalink: kb/224/Q224165/
+permalink: /kb/224/Q224165/
 ---
 
 ## Q224165: MSB Animals: License and Certificate Printouts Are Not Centered

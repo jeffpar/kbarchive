@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216916: NTBACKUP Writes Incorrect Year to Log File"
-permalink: kb/216/Q216916/
+permalink: /kb/216/Q216916/
 ---
 
 ## Q216916: NTBACKUP Writes Incorrect Year to Log File

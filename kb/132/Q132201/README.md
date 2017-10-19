@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132201: Windows 95/98: Checking and Modifying a COM Port"
-permalink: kb/132/Q132201/
+permalink: /kb/132/Q132201/
 ---
 
 ## Q132201: Windows 95/98: Checking and Modifying a COM Port

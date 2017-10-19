@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181051: Error Message: Your System Is Not Setup for Host Operation..."
-permalink: kb/181/Q181051/
+permalink: /kb/181/Q181051/
 ---
 
 ## Q181051: Error Message: Your System Is Not Setup for Host Operation...

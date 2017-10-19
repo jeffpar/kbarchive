@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124026: DHCP Requests Fail on Logically Multihomed Server (Single NIC)"
-permalink: kb/124/Q124026/
+permalink: /kb/124/Q124026/
 ---
 
 ## Q124026: DHCP Requests Fail on Logically Multihomed Server (Single NIC)

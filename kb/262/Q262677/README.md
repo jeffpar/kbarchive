@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262677: SMS: Clients Are Not Upgraded by Logon Points with SP2"
-permalink: kb/262/Q262677/
+permalink: /kb/262/Q262677/
 ---
 
 ## Q262677: SMS: Clients Are Not Upgraded by Logon Points with SP2

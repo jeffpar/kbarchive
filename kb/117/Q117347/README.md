@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117347: List of Major Sound Card Manufacturers (N-Z)"
-permalink: kb/117/Q117347/
+permalink: /kb/117/Q117347/
 ---
 
 ## Q117347: List of Major Sound Card Manufacturers (N-Z)

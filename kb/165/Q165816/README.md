@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165816: STOP 0x0000000A in HAL.DLL on Multiprocessor Computers"
-permalink: kb/165/Q165816/
+permalink: /kb/165/Q165816/
 ---
 
 ## Q165816: STOP 0x0000000A in HAL.DLL on Multiprocessor Computers

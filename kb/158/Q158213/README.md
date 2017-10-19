@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158213: Improve LU6.2 Load Balancing if NOINITCNOS Is Used"
-permalink: kb/158/Q158213/
+permalink: /kb/158/Q158213/
 ---
 
 ## Q158213: Improve LU6.2 Load Balancing if NOINITCNOS Is Used

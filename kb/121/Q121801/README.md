@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121801: Compaq Laptop APM BIOS 1.0 Returns Incorrect Battery Status"
-permalink: kb/121/Q121801/
+permalink: /kb/121/Q121801/
 ---
 
 ## Q121801: Compaq Laptop APM BIOS 1.0 Returns Incorrect Battery Status

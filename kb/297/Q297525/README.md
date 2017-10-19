@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297525: BUG: No ARM Option for eVB J to Create Pocket PC Setup Package"
-permalink: kb/297/Q297525/
+permalink: /kb/297/Q297525/
 ---
 
 ## Q297525: BUG: No ARM Option for eVB J to Create Pocket PC Setup Package

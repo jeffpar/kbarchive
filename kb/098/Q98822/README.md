@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98822: X400: 3.0 Gateway Disk [3.5, 720K]"
-permalink: kb/098/Q98822/
+title: "Q98822: X400: 3.0 Gateway Disk &#91;3.5, 720K&#93;"
+permalink: /kb/098/Q98822/
 ---
 
-## Q98822: X400: 3.0 Gateway Disk [3.5, 720K]
+## Q98822: X400: 3.0 Gateway Disk &#91;3.5, 720K&#93;
 
 	Article: Q98822
 	Product(s): Microsoft Mail For PC Networks

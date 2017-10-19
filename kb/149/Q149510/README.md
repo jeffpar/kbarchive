@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149510: BUG: Environment Compiler Options Incorrectly Take Precedence"
-permalink: kb/149/Q149510/
+permalink: /kb/149/Q149510/
 ---
 
 ## Q149510: BUG: Environment Compiler Options Incorrectly Take Precedence

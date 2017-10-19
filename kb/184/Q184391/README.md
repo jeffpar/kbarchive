@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184391: XADM: Event 1029 Occurs When Migrating cc:Mail Users"
-permalink: kb/184/Q184391/
+permalink: /kb/184/Q184391/
 ---
 
 ## Q184391: XADM: Event 1029 Occurs When Migrating cc:Mail Users

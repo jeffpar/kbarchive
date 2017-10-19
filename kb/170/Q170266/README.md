@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170266: WD97: Extended Characters Fax Incorrectly Using Fax Wizard"
-permalink: kb/170/Q170266/
+permalink: /kb/170/Q170266/
 ---
 
 ## Q170266: WD97: Extended Characters Fax Incorrectly Using Fax Wizard

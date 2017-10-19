@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157283: STL Sample for Non-predicate Version of max_element Function"
-permalink: kb/157/Q157283/
+permalink: /kb/157/Q157283/
 ---
 
 ## Q157283: STL Sample for Non-predicate Version of max_element Function

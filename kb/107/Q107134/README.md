@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107134: WFWG: Scrambled Display Using Generic Super VGA Driver"
-permalink: kb/107/Q107134/
+permalink: /kb/107/Q107134/
 ---
 
 ## Q107134: WFWG: Scrambled Display Using Generic Super VGA Driver

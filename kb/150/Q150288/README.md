@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150288: HOWTO: How to Enable Selection Button in Print Dialog Box"
-permalink: kb/150/Q150288/
+permalink: /kb/150/Q150288/
 ---
 
 ## Q150288: HOWTO: How to Enable Selection Button in Print Dialog Box

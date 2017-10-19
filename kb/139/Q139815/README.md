@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139815: Windows NT Service Packs and OEM drivers"
-permalink: kb/139/Q139815/
+permalink: /kb/139/Q139815/
 ---
 
 ## Q139815: Windows NT Service Packs and OEM drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47623: Using the Toshiba PageLaser II with Windows"
-permalink: kb/047/Q47623/
+permalink: /kb/047/Q47623/
 ---
 
 ## Q47623: Using the Toshiba PageLaser II with Windows

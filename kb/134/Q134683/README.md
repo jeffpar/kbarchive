@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134683: Scenes 2.0: Manual Installation Instructions"
-permalink: kb/134/Q134683/
+permalink: /kb/134/Q134683/
 ---
 
 ## Q134683: Scenes 2.0: Manual Installation Instructions

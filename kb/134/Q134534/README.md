@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134534: Mouse Pointer Is Jerky and Multimedia Sound Stutters"
-permalink: kb/134/Q134534/
+permalink: /kb/134/Q134534/
 ---
 
 ## Q134534: Mouse Pointer Is Jerky and Multimedia Sound Stutters

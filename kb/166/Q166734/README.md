@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166734: XFOR: Messages Missing Subject Line"
-permalink: kb/166/Q166734/
+permalink: /kb/166/Q166734/
 ---
 
 ## Q166734: XFOR: Messages Missing Subject Line

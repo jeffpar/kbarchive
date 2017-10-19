@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150071: STOP: HP ANYLAN Driver May Cause a STOP 0x0000000A"
-permalink: kb/150/Q150071/
+permalink: /kb/150/Q150071/
 ---
 
 ## Q150071: STOP: HP ANYLAN Driver May Cause a STOP 0x0000000A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186605: Terminal Server Client Error: Not a Valid Windows NT Application"
-permalink: kb/186/Q186605/
+permalink: /kb/186/Q186605/
 ---
 
 ## Q186605: Terminal Server Client Error: Not a Valid Windows NT Application

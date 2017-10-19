@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85643: Windows Msg: Your Pop-Up Program Is Ready to Run"
-permalink: kb/085/Q85643/
+permalink: /kb/085/Q85643/
 ---
 
 ## Q85643: Windows Msg: Your Pop-Up Program Is Ready to Run

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181123: CPIC Application Limited to Single Local APPC LU"
-permalink: kb/181/Q181123/
+permalink: /kb/181/Q181123/
 ---
 
 ## Q181123: CPIC Application Limited to Single Local APPC LU

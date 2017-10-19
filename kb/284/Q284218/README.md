@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284218: MechWarrior 4: Troubleshooting Video Issues"
-permalink: kb/284/Q284218/
+permalink: /kb/284/Q284218/
 ---
 
 ## Q284218: MechWarrior 4: Troubleshooting Video Issues

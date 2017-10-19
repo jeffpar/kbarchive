@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175891: XADM: OWA Needs Anonymous and Clear Text Authentication on IIS"
-permalink: kb/175/Q175891/
+permalink: /kb/175/Q175891/
 ---
 
 ## Q175891: XADM: OWA Needs Anonymous and Clear Text Authentication on IIS

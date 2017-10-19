@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312284: A Direct RAS Connection on a Serial Cable Always Uses 1 Stop Bit"
-permalink: kb/312/Q312284/
+permalink: /kb/312/Q312284/
 ---
 
 ## Q312284: A Direct RAS Connection on a Serial Cable Always Uses 1 Stop Bit

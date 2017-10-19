@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187224: Country/Region Hong Kong Is Misplaced"
-permalink: kb/187/Q187224/
+permalink: /kb/187/Q187224/
 ---
 
 ## Q187224: Country/Region Hong Kong Is Misplaced

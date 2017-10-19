@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182748: WD97: Sample Macro to Place a Border on a Single Cell in a Table"
-permalink: kb/182/Q182748/
+permalink: /kb/182/Q182748/
 ---
 
 ## Q182748: WD97: Sample Macro to Place a Border on a Single Cell in a Table

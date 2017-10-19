@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66588: Flight Simulator: White Flashing with Overcast Sky"
-permalink: kb/066/Q66588/
+permalink: /kb/066/Q66588/
 ---
 
 ## Q66588: Flight Simulator: White Flashing with Overcast Sky

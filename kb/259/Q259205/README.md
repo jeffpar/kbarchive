@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259205: APPC TP_STARTED Does Not Verify Local LU Alias By Default"
-permalink: kb/259/Q259205/
+permalink: /kb/259/Q259205/
 ---
 
 ## Q259205: APPC TP_STARTED Does Not Verify Local LU Alias By Default

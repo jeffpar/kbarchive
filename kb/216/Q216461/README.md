@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216461: BUG: Toolbar Covers Document in MFC ActiveX Document Container"
-permalink: kb/216/Q216461/
+permalink: /kb/216/Q216461/
 ---
 
 ## Q216461: BUG: Toolbar Covers Document in MFC ActiveX Document Container

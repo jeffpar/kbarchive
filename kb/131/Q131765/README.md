@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131765: Clear Image Command Unavailable in Paint"
-permalink: kb/131/Q131765/
+permalink: /kb/131/Q131765/
 ---
 
 ## Q131765: Clear Image Command Unavailable in Paint

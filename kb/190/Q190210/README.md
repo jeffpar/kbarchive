@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190210: PRB: Passing ActiveX Control to Component Gives &quot;Type Mismatch&quot;"
-permalink: kb/190/Q190210/
+permalink: /kb/190/Q190210/
 ---
 
 ## Q190210: PRB: Passing ActiveX Control to Component Gives &quot;Type Mismatch&quot;

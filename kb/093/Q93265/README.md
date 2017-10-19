@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93265: Problems Running Windows on Zenith Supersport 286"
-permalink: kb/093/Q93265/
+permalink: /kb/093/Q93265/
 ---
 
 ## Q93265: Problems Running Windows on Zenith Supersport 286

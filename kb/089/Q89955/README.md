@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89955: Windows Task Manager Does Not End Task for Sound Finder"
-permalink: kb/089/Q89955/
+permalink: /kb/089/Q89955/
 ---
 
 ## Q89955: Windows Task Manager Does Not End Task for Sound Finder

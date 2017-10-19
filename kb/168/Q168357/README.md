@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168357: XADM: Event ID: 24 Asynchronous Read Page Time Error"
-permalink: kb/168/Q168357/
+permalink: /kb/168/Q168357/
 ---
 
 ## Q168357: XADM: Event ID: 24 Asynchronous Read Page Time Error

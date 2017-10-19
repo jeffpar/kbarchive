@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159687: WD97: How to Convert WordPerfect 6.x Data Files and Address Book"
-permalink: kb/159/Q159687/
+permalink: /kb/159/Q159687/
 ---
 
 ## Q159687: WD97: How to Convert WordPerfect 6.x Data Files and Address Book

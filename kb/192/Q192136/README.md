@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192136: PRB: PDW Does Not Include MSAddndr.DLL for Add-in Projects"
-permalink: kb/192/Q192136/
+permalink: /kb/192/Q192136/
 ---
 
 ## Q192136: PRB: PDW Does Not Include MSAddndr.DLL for Add-in Projects

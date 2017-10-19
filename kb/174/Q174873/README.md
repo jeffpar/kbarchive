@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174873: FIX: Lost Net Connection Causes Source Code Control to Hang"
-permalink: kb/174/Q174873/
+permalink: /kb/174/Q174873/
 ---
 
 ## Q174873: FIX: Lost Net Connection Causes Source Code Control to Hang

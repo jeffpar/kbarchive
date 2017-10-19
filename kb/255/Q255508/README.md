@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255508: XCLN: Readme.txt File for Outlook for Macintosh Version 8.2.1"
-permalink: kb/255/Q255508/
+permalink: /kb/255/Q255508/
 ---
 
 ## Q255508: XCLN: Readme.txt File for Outlook for Macintosh Version 8.2.1

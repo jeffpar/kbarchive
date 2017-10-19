@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68562: .MODEL Directive Forces DOSSEG Segment Ordering in MASM"
-permalink: kb/068/Q68562/
+permalink: /kb/068/Q68562/
 ---
 
 ## Q68562: .MODEL Directive Forces DOSSEG Segment Ordering in MASM

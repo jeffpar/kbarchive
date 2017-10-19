@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111950: PROFS: Using the CMS TAG FILE Command"
-permalink: kb/111/Q111950/
+permalink: /kb/111/Q111950/
 ---
 
 ## Q111950: PROFS: Using the CMS TAG FILE Command

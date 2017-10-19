@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174756: XADM: X.400 Connector Enabled on Standard Version of Exchange"
-permalink: kb/174/Q174756/
+permalink: /kb/174/Q174756/
 ---
 
 ## Q174756: XADM: X.400 Connector Enabled on Standard Version of Exchange

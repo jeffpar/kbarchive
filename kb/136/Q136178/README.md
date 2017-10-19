@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136178: PPT7: Setup Installs Icon for Graflink on Windows NT 3.51"
-permalink: kb/136/Q136178/
+permalink: /kb/136/Q136178/
 ---
 
 ## Q136178: PPT7: Setup Installs Icon for Graflink on Windows NT 3.51

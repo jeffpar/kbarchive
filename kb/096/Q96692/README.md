@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96692: PC WRmt: Some View Menu Items Do Not Have Short-Cut Keys"
-permalink: kb/096/Q96692/
+permalink: /kb/096/Q96692/
 ---
 
 ## Q96692: PC WRmt: Some View Menu Items Do Not Have Short-Cut Keys

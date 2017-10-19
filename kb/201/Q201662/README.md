@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201662: XADM: Exchange Event Service w. Internet Explorer 4.01 Hangs"
-permalink: kb/201/Q201662/
+permalink: /kb/201/Q201662/
 ---
 
 ## Q201662: XADM: Exchange Event Service w. Internet Explorer 4.01 Hangs

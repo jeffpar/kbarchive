@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192082: BUG: Removing DataEnvironment in Form Load Causes Fatal Error"
-permalink: kb/192/Q192082/
+permalink: /kb/192/Q192082/
 ---
 
 ## Q192082: BUG: Removing DataEnvironment in Form Load Causes Fatal Error

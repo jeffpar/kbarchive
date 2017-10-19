@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216444: Logon Script in a Windows NT Domain Runs Sporadically"
-permalink: kb/216/Q216444/
+permalink: /kb/216/Q216444/
 ---
 
 ## Q216444: Logon Script in a Windows NT Domain Runs Sporadically

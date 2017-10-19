@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226202: XCON: No Delivery Receipts When IMS Is in Mailbox Disabled State"
-permalink: kb/226/Q226202/
+permalink: /kb/226/Q226202/
 ---
 
 ## Q226202: XCON: No Delivery Receipts When IMS Is in Mailbox Disabled State

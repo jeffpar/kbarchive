@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192625: PRB: VC++ Shared Workspace File Loses Project Locations"
-permalink: kb/192/Q192625/
+permalink: /kb/192/Q192625/
 ---
 
 ## Q192625: PRB: VC++ Shared Workspace File Loses Project Locations

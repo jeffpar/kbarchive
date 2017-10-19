@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235866: TPstart Fails to Run Applications if Path Name Contains Blanks"
-permalink: kb/235/Q235866/
+permalink: /kb/235/Q235866/
 ---
 
 ## Q235866: TPstart Fails to Run Applications if Path Name Contains Blanks

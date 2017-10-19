@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253620: XCLN: Non-Delivery Report from &quot;Ghost&quot; Recipients"
-permalink: kb/253/Q253620/
+permalink: /kb/253/Q253620/
 ---
 
 ## Q253620: XCLN: Non-Delivery Report from &quot;Ghost&quot; Recipients

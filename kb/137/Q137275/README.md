@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137275: Policy Editor Adds Incorrect Value Enabling LFNs on NetWare"
-permalink: kb/137/Q137275/
+permalink: /kb/137/Q137275/
 ---
 
 ## Q137275: Policy Editor Adds Incorrect Value Enabling LFNs on NetWare

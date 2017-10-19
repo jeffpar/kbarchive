@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181952: XFOR: PAB Addresses Invalid After Converting to DirSync Server"
-permalink: kb/181/Q181952/
+permalink: /kb/181/Q181952/
 ---
 
 ## Q181952: XFOR: PAB Addresses Invalid After Converting to DirSync Server

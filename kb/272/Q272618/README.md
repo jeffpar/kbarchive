@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272618: PRB: Client-Side ADO Union Query Using Oracle OLE DB Provider Re"
-permalink: kb/272/Q272618/
+permalink: /kb/272/Q272618/
 ---
 
 ## Q272618: PRB: Client-Side ADO Union Query Using Oracle OLE DB Provider Re

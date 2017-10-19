@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138752: FIX: C4114 Warning When Using Templates and Const Keyword"
-permalink: kb/138/Q138752/
+permalink: /kb/138/Q138752/
 ---
 
 ## Q138752: FIX: C4114 Warning When Using Templates and Const Keyword

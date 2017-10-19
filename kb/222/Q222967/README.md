@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222967: ZAK Client Setup Does Not Create TEMP Folders Correctly"
-permalink: kb/222/Q222967/
+permalink: /kb/222/Q222967/
 ---
 
 ## Q222967: ZAK Client Setup Does Not Create TEMP Folders Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121520: Fatal Error on Drive 1 with Adaptec 1540CF SCSI Controller"
-permalink: kb/121/Q121520/
+permalink: /kb/121/Q121520/
 ---
 
 ## Q121520: Fatal Error on Drive 1 with Adaptec 1540CF SCSI Controller

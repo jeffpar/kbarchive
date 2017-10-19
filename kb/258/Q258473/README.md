@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258473: XADM: How to Avoid Bouncing Mail Items During a Mailbox Move"
-permalink: kb/258/Q258473/
+permalink: /kb/258/Q258473/
 ---
 
 ## Q258473: XADM: How to Avoid Bouncing Mail Items During a Mailbox Move

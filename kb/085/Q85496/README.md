@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85496: PRB: Assertion Failed: WINAPP.CPP, APPCORE.CPP, or WINMAIN.CPP"
-permalink: kb/085/Q85496/
+permalink: /kb/085/Q85496/
 ---
 
 ## Q85496: PRB: Assertion Failed: WINAPP.CPP, APPCORE.CPP, or WINMAIN.CPP

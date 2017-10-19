@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174074: Security Event Descriptions"
-permalink: kb/174/Q174074/
+permalink: /kb/174/Q174074/
 ---
 
 ## Q174074: Security Event Descriptions

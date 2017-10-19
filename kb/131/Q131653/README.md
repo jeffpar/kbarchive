@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131653: Removing Duplicate ODBC Icons from Control Panel"
-permalink: kb/131/Q131653/
+permalink: /kb/131/Q131653/
 ---
 
 ## Q131653: Removing Duplicate ODBC Icons from Control Panel

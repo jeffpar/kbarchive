@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252641: MSDTC Conflicts During NTOP Installation on Cluster Server"
-permalink: kb/252/Q252641/
+permalink: /kb/252/Q252641/
 ---
 
 ## Q252641: MSDTC Conflicts During NTOP Installation on Cluster Server

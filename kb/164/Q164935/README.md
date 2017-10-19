@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164935: Shared Folders Drive Subdirectories Are Shared Improperly"
-permalink: kb/164/Q164935/
+permalink: /kb/164/Q164935/
 ---
 
 ## Q164935: Shared Folders Drive Subdirectories Are Shared Improperly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136010: How to Use a Custom Method as a User-Defined Function (UDF)"
-permalink: kb/136/Q136010/
+permalink: /kb/136/Q136010/
 ---
 
 ## Q136010: How to Use a Custom Method as a User-Defined Function (UDF)

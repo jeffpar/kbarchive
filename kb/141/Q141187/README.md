@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141187: User Must and Cannot Change Password"
-permalink: kb/141/Q141187/
+permalink: /kb/141/Q141187/
 ---
 
 ## Q141187: User Must and Cannot Change Password

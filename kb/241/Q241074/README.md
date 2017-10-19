@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241074: 16-Bit Programs Cannot View Long File Names on NetWare Servers"
-permalink: kb/241/Q241074/
+permalink: /kb/241/Q241074/
 ---
 
 ## Q241074: 16-Bit Programs Cannot View Long File Names on NetWare Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98612: Mac Wkst: Err Msg: Out of Memory in Chooser Setup"
-permalink: kb/098/Q98612/
+permalink: /kb/098/Q98612/
 ---
 
 ## Q98612: Mac Wkst: Err Msg: Out of Memory in Chooser Setup

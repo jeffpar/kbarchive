@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164616: WD97: Cannot Resolve Hyperlink That Contains Punctuation"
-permalink: kb/164/Q164616/
+permalink: /kb/164/Q164616/
 ---
 
 ## Q164616: WD97: Cannot Resolve Hyperlink That Contains Punctuation

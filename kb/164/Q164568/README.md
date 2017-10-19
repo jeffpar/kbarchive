@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164568: SMS: Network Inventory Missing on Some Win95 NetWare Clients"
-permalink: kb/164/Q164568/
+permalink: /kb/164/Q164568/
 ---
 
 ## Q164568: SMS: Network Inventory Missing on Some Win95 NetWare Clients

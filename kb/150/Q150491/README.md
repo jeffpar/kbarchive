@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150491: WD97: Screen Flickers Constantly After Pasting Excel Chart"
-permalink: kb/150/Q150491/
+permalink: /kb/150/Q150491/
 ---
 
 ## Q150491: WD97: Screen Flickers Constantly After Pasting Excel Chart

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137554: Password Change Fails Using DNS to Resolve Names"
-permalink: kb/137/Q137554/
+permalink: /kb/137/Q137554/
 ---
 
 ## Q137554: Password Change Fails Using DNS to Resolve Names

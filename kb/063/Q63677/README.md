@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63677: EMM386.SYS Page Frame Uses &quot;p3&quot; Parameter, Not &quot;p4&quot;"
-permalink: kb/063/Q63677/
+permalink: /kb/063/Q63677/
 ---
 
 ## Q63677: EMM386.SYS Page Frame Uses &quot;p3&quot; Parameter, Not &quot;p4&quot;

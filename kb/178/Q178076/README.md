@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178076: HOWTO: Use a PictureBox to Control Orientation Printing a Form"
-permalink: kb/178/Q178076/
+permalink: /kb/178/Q178076/
 ---
 
 ## Q178076: HOWTO: Use a PictureBox to Control Orientation Printing a Form

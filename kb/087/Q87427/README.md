@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87427: PROFS: How VM Addresses Are Added to Postoffice Address List"
-permalink: kb/087/Q87427/
+permalink: /kb/087/Q87427/
 ---
 
 ## Q87427: PROFS: How VM Addresses Are Added to Postoffice Address List

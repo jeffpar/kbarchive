@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86313: PC OS2: PM Client About Box Reads &quot;Mail for Windows&quot;"
-permalink: kb/086/Q86313/
+permalink: /kb/086/Q86313/
 ---
 
 ## Q86313: PC OS2: PM Client About Box Reads &quot;Mail for Windows&quot;

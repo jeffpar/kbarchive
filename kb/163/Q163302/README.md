@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163302: PPT: Sample VB Code to Retrieve the Title of a Graph"
-permalink: kb/163/Q163302/
+permalink: /kb/163/Q163302/
 ---
 
 ## Q163302: PPT: Sample VB Code to Retrieve the Title of a Graph

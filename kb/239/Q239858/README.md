@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239858: Sample PU Statement in Worksheet Produced by Mainframe APPC/LU6."
-permalink: kb/239/Q239858/
+permalink: /kb/239/Q239858/
 ---
 
 ## Q239858: Sample PU Statement in Worksheet Produced by Mainframe APPC/LU6.

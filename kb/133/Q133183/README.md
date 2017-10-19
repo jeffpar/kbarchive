@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133183: STOP 0x7A with Adaptec 2740A SCSI and 3Com Etherlink III"
-permalink: kb/133/Q133183/
+permalink: /kb/133/Q133183/
 ---
 
 ## Q133183: STOP 0x7A with Adaptec 2740A SCSI and 3Com Etherlink III

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147800: Lotus Notes Logs &quot;Unexpected TCP/IP error 10058 or 10053&quot;"
-permalink: kb/147/Q147800/
+permalink: /kb/147/Q147800/
 ---
 
 ## Q147800: Lotus Notes Logs &quot;Unexpected TCP/IP error 10058 or 10053&quot;

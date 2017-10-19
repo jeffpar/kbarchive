@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111676: BUG: SHOW POPUP Does Not Work with Menu Popups"
-permalink: kb/111/Q111676/
+permalink: /kb/111/Q111676/
 ---
 
 ## Q111676: BUG: SHOW POPUP Does Not Work with Menu Popups

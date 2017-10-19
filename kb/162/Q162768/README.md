@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162768: Cannot Access Data Disk in CD Drive When CD Player is Running"
-permalink: kb/162/Q162768/
+permalink: /kb/162/Q162768/
 ---
 
 ## Q162768: Cannot Access Data Disk in CD Drive When CD Player is Running

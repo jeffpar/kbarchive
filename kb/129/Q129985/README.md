@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129985: Type 1 Font Converter Does Not Convert Some Fonts"
-permalink: kb/129/Q129985/
+permalink: /kb/129/Q129985/
 ---
 
 ## Q129985: Type 1 Font Converter Does Not Convert Some Fonts

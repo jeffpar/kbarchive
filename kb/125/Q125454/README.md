@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125454: SMS Service Account Requirements for Different Configurations"
-permalink: kb/125/Q125454/
+permalink: /kb/125/Q125454/
 ---
 
 ## Q125454: SMS Service Account Requirements for Different Configurations

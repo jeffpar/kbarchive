@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133113: Systems Management Server Site Control File Methodology"
-permalink: kb/133/Q133113/
+permalink: /kb/133/Q133113/
 ---
 
 ## Q133113: Systems Management Server Site Control File Methodology

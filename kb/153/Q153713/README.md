@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153713: Changing the WINS Refresh Interval for WFW Clients"
-permalink: kb/153/Q153713/
+permalink: /kb/153/Q153713/
 ---
 
 ## Q153713: Changing the WINS Refresh Interval for WFW Clients

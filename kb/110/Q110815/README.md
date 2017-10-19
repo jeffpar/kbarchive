@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110815: Font Installer Doesn't Find Non-TrueType Compressed Fonts"
-permalink: kb/110/Q110815/
+permalink: /kb/110/Q110815/
 ---
 
 ## Q110815: Font Installer Doesn't Find Non-TrueType Compressed Fonts

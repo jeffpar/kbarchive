@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192727: XCLN: OWA Next/Prev Buttons Skip Messages Intermittently"
-permalink: kb/192/Q192727/
+permalink: /kb/192/Q192727/
 ---
 
 ## Q192727: XCLN: OWA Next/Prev Buttons Skip Messages Intermittently

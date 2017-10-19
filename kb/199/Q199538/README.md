@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199538: BUG: Scroll Bars May Be Re-Enabled or Crash App When Clicked"
-permalink: kb/199/Q199538/
+permalink: /kb/199/Q199538/
 ---
 
 ## Q199538: BUG: Scroll Bars May Be Re-Enabled or Crash App When Clicked

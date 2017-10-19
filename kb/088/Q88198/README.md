@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88198: DOC: Common Dialog Boxes DLL Documentation Errors"
-permalink: kb/088/Q88198/
+permalink: /kb/088/Q88198/
 ---
 
 ## Q88198: DOC: Common Dialog Boxes DLL Documentation Errors

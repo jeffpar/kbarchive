@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96604: MS-DOS Setup Error Message: Hard Disk Is Not Readable"
-permalink: kb/096/Q96604/
+permalink: /kb/096/Q96604/
 ---
 
 ## Q96604: MS-DOS Setup Error Message: Hard Disk Is Not Readable

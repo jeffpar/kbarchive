@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298726: SMS: Backup Status Message 5013 Has Missing Insertion String"
-permalink: kb/298/Q298726/
+permalink: /kb/298/Q298726/
 ---
 
 ## Q298726: SMS: Backup Status Message 5013 Has Missing Insertion String

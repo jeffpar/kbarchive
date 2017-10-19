@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122389: Updated Network Files for Windows For Workgroups 3.11"
-permalink: kb/122/Q122389/
+permalink: /kb/122/Q122389/
 ---
 
 ## Q122389: Updated Network Files for Windows For Workgroups 3.11

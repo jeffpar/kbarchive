@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159119: NTFS Generates Cross-Linked Files"
-permalink: kb/159/Q159119/
+permalink: /kb/159/Q159119/
 ---
 
 ## Q159119: NTFS Generates Cross-Linked Files

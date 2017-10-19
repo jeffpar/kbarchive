@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75005: Handling NULL lpDrawMode in a Display Driver"
-permalink: kb/075/Q75005/
+permalink: /kb/075/Q75005/
 ---
 
 ## Q75005: Handling NULL lpDrawMode in a Display Driver

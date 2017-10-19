@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151671: Incorrect Event ID 6 in the Event Viewer"
-permalink: kb/151/Q151671/
+permalink: /kb/151/Q151671/
 ---
 
 ## Q151671: Incorrect Event ID 6 in the Event Viewer

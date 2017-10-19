@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121839: Determining Actual Disk Size: Why 1.44 MB Should Be 1.40 MB"
-permalink: kb/121/Q121839/
+permalink: /kb/121/Q121839/
 ---
 
 ## Q121839: Determining Actual Disk Size: Why 1.44 MB Should Be 1.40 MB

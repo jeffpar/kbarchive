@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238027: Winning Chess Strategies Comments and Corrections"
-permalink: kb/238/Q238027/
+permalink: /kb/238/Q238027/
 ---
 
 ## Q238027: Winning Chess Strategies Comments and Corrections

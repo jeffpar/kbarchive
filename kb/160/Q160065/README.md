@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160065: FIX: Recurring BROWSE and SEEK Cause FoxPro to Slow Down"
-permalink: kb/160/Q160065/
+permalink: /kb/160/Q160065/
 ---
 
 ## Q160065: FIX: Recurring BROWSE and SEEK Cause FoxPro to Slow Down

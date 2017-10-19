@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240071: &quot;Unable to Display Security Information&quot; on Computer with SCM"
-permalink: kb/240/Q240071/
+permalink: /kb/240/Q240071/
 ---
 
 ## Q240071: &quot;Unable to Display Security Information&quot; on Computer with SCM

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98815: MHS: 3.0 Gateway Access Disk [5.25, 1.22 MB]"
-permalink: kb/098/Q98815/
+title: "Q98815: MHS: 3.0 Gateway Access Disk &#91;5.25, 1.22 MB&#93;"
+permalink: /kb/098/Q98815/
 ---
 
-## Q98815: MHS: 3.0 Gateway Access Disk [5.25, 1.22 MB]
+## Q98815: MHS: 3.0 Gateway Access Disk &#91;5.25, 1.22 MB&#93;
 
 	Article: Q98815
 	Product(s): Microsoft Mail For PC Networks

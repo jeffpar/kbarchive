@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160031: Games Err Msg: Cannot Find Setup.exe or One of Its Components"
-permalink: kb/160/Q160031/
+permalink: /kb/160/Q160031/
 ---
 
 ## Q160031: Games Err Msg: Cannot Find Setup.exe or One of Its Components

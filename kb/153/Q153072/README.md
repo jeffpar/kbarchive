@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153072: Leases Retained in DHCP Database For One Day After Expiration"
-permalink: kb/153/Q153072/
+permalink: /kb/153/Q153072/
 ---
 
 ## Q153072: Leases Retained in DHCP Database For One Day After Expiration

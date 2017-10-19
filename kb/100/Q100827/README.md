@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100827: PC Ext: Version Differences in External Program -W Option"
-permalink: kb/100/Q100827/
+permalink: /kb/100/Q100827/
 ---
 
 ## Q100827: PC Ext: Version Differences in External Program -W Option

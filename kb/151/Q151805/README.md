@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151805: Files Appear Twice in the Recycle Bin"
-permalink: kb/151/Q151805/
+permalink: /kb/151/Q151805/
 ---
 
 ## Q151805: Files Appear Twice in the Recycle Bin

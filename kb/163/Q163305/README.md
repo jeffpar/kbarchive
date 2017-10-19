@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163305: WD97: Not Enough Memory with Effect Preview in Photo Editor"
-permalink: kb/163/Q163305/
+permalink: /kb/163/Q163305/
 ---
 
 ## Q163305: WD97: Not Enough Memory with Effect Preview in Photo Editor

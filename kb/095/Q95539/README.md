@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95539: Orchid Fahrenheit VA Version 4.1 and Windows 3.1"
-permalink: kb/095/Q95539/
+permalink: /kb/095/Q95539/
 ---
 
 ## Q95539: Orchid Fahrenheit VA Version 4.1 and Windows 3.1

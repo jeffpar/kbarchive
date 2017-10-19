@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291007: INFO: All Submenu Items Cannot Be Invisible"
-permalink: kb/291/Q291007/
+permalink: /kb/291/Q291007/
 ---
 
 ## Q291007: INFO: All Submenu Items Cannot Be Invisible

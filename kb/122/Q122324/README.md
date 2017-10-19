@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122324: DEC Turbo Port Addresses Appear Reported Incorrectly"
-permalink: kb/122/Q122324/
+permalink: /kb/122/Q122324/
 ---
 
 ## Q122324: DEC Turbo Port Addresses Appear Reported Incorrectly

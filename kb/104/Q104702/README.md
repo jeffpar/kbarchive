@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104702: IGNORE in DBLSPACE.INF Does Not Ignore Subdirectories"
-permalink: kb/104/Q104702/
+permalink: /kb/104/Q104702/
 ---
 
 ## Q104702: IGNORE in DBLSPACE.INF Does Not Ignore Subdirectories

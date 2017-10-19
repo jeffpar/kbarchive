@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130757: Setup Does Not Detect Tseng 4000/W32 on NEC Image P90E"
-permalink: kb/130/Q130757/
+permalink: /kb/130/Q130757/
 ---
 
 ## Q130757: Setup Does Not Detect Tseng 4000/W32 on NEC Image P90E

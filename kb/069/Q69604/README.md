@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69604: Mac Form Srv: Err Msg: Couldn't Allocate the Forms List"
-permalink: kb/069/Q69604/
+permalink: /kb/069/Q69604/
 ---
 
 ## Q69604: Mac Form Srv: Err Msg: Couldn't Allocate the Forms List

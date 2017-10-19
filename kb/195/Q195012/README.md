@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195012: Queued 3270 Print Jobs May Intermittently Print Incorrectly"
-permalink: kb/195/Q195012/
+permalink: /kb/195/Q195012/
 ---
 
 ## Q195012: Queued 3270 Print Jobs May Intermittently Print Incorrectly

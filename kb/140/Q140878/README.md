@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140878: BUG: Adding PIF Files in Setup Wiz Step 7 Copies Actual Files"
-permalink: kb/140/Q140878/
+permalink: /kb/140/Q140878/
 ---
 
 ## Q140878: BUG: Adding PIF Files in Setup Wiz Step 7 Copies Actual Files

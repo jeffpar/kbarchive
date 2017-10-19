@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77436: DEC Printer Emulations for Windows 3.0"
-permalink: kb/077/Q77436/
+permalink: /kb/077/Q77436/
 ---
 
 ## Q77436: DEC Printer Emulations for Windows 3.0

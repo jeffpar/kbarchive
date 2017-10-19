@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113841: MS-DOS 6.21: Information About EGA2.CPI and KEYBRD2.SYS"
-permalink: kb/113/Q113841/
+permalink: /kb/113/Q113841/
 ---
 
 ## Q113841: MS-DOS 6.21: Information About EGA2.CPI and KEYBRD2.SYS

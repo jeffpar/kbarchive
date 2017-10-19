@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229098: AppleTalk Does Not Always Respond to ZIP Queries"
-permalink: kb/229/Q229098/
+permalink: /kb/229/Q229098/
 ---
 
 ## Q229098: AppleTalk Does Not Always Respond to ZIP Queries

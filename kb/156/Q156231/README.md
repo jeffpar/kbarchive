@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156231: &quot;Error 26&quot; After Installing Windows 95 from NetWare Server"
-permalink: kb/156/Q156231/
+permalink: /kb/156/Q156231/
 ---
 
 ## Q156231: &quot;Error 26&quot; After Installing Windows 95 from NetWare Server

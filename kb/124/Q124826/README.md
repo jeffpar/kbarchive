@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124826: Basketball: Problems Printing to Epson LQ2550"
-permalink: kb/124/Q124826/
+permalink: /kb/124/Q124826/
 ---
 
 ## Q124826: Basketball: Problems Printing to Epson LQ2550

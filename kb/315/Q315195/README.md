@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315195: Flight Simulator 2002: Cannot Access Air Traffic Controller"
-permalink: kb/315/Q315195/
+permalink: /kb/315/Q315195/
 ---
 
 ## Q315195: Flight Simulator 2002: Cannot Access Air Traffic Controller

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258293: XFOR: Services Required for NNTP Clients"
-permalink: kb/258/Q258293/
+permalink: /kb/258/Q258293/
 ---
 
 ## Q258293: XFOR: Services Required for NNTP Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182279: XFOR: Incorrect Cc: List When Resending or Forwarding From PROFS"
-permalink: kb/182/Q182279/
+permalink: /kb/182/Q182279/
 ---
 
 ## Q182279: XFOR: Incorrect Cc: List When Resending or Forwarding From PROFS

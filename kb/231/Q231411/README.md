@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231411: XCON: Embedded X.400 Message Opened Using Wrong Message Window"
-permalink: kb/231/Q231411/
+permalink: /kb/231/Q231411/
 ---
 
 ## Q231411: XCON: Embedded X.400 Message Opened Using Wrong Message Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197211: WD97: Envelope Print Merge Fails to Omit Return Address"
-permalink: kb/197/Q197211/
+permalink: /kb/197/Q197211/
 ---
 
 ## Q197211: WD97: Envelope Print Merge Fails to Omit Return Address

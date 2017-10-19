@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165220: Applet Does Not Display Greek and Central European Characters"
-permalink: kb/165/Q165220/
+permalink: /kb/165/Q165220/
 ---
 
 ## Q165220: Applet Does Not Display Greek and Central European Characters

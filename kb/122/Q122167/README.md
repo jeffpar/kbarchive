@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122167: Microsoft RAS Does Not Work on Intel PCMCIA Data/Fax Modem"
-permalink: kb/122/Q122167/
+permalink: /kb/122/Q122167/
 ---
 
 ## Q122167: Microsoft RAS Does Not Work on Intel PCMCIA Data/Fax Modem

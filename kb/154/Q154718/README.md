@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154718: Incorrect Memory Size Reported in Windows NT 4.0"
-permalink: kb/154/Q154718/
+permalink: /kb/154/Q154718/
 ---
 
 ## Q154718: Incorrect Memory Size Reported in Windows NT 4.0

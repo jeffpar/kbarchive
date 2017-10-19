@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139094: World Atlas 96: Compass Indicator Remains in the Foreground"
-permalink: kb/139/Q139094/
+permalink: /kb/139/Q139094/
 ---
 
 ## Q139094: World Atlas 96: Compass Indicator Remains in the Foreground

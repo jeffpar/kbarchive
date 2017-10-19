@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70078: Forcing CVW to Find Source Files in Another Directory"
-permalink: kb/070/Q70078/
+permalink: /kb/070/Q70078/
 ---
 
 ## Q70078: Forcing CVW to Find Source Files in Another Directory

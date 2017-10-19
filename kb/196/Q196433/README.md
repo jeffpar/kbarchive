@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196433: XADM: Cannot Change IMC Conversion Method on Custom Recipient"
-permalink: kb/196/Q196433/
+permalink: /kb/196/Q196433/
 ---
 
 ## Q196433: XADM: Cannot Change IMC Conversion Method on Custom Recipient

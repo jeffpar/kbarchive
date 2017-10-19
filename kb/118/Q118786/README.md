@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118786: FFAPI: The Role of Application FFAPI"
-permalink: kb/118/Q118786/
+permalink: /kb/118/Q118786/
 ---
 
 ## Q118786: FFAPI: The Role of Application FFAPI

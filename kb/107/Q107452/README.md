@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107452: ALT+F4+F6 in 16-bit MDI Applications Hangs Windows NT"
-permalink: kb/107/Q107452/
+permalink: /kb/107/Q107452/
 ---
 
 ## Q107452: ALT+F4+F6 in 16-bit MDI Applications Hangs Windows NT

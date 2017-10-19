@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64269: Windows Accessories Do Not Save Page Settings"
-permalink: kb/064/Q64269/
+permalink: /kb/064/Q64269/
 ---
 
 ## Q64269: Windows Accessories Do Not Save Page Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107694: PRB: Share Buffer Exceeded"
-permalink: kb/107/Q107694/
+permalink: /kb/107/Q107694/
 ---
 
 ## Q107694: PRB: Share Buffer Exceeded

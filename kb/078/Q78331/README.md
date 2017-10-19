@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78331: Enhanced Mode Floppy Problems on Micronics"
-permalink: kb/078/Q78331/
+permalink: /kb/078/Q78331/
 ---
 
 ## Q78331: Enhanced Mode Floppy Problems on Micronics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105282: Incorrect Source Routing Bit Causes NetBEUI Network Storm"
-permalink: kb/105/Q105282/
+permalink: /kb/105/Q105282/
 ---
 
 ## Q105282: Incorrect Source Routing Bit Causes NetBEUI Network Storm

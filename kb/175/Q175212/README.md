@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175212: SAMPLE: CHRTSAMP.EXE Visual Basic 5.0 MSChart Sample"
-permalink: kb/175/Q175212/
+permalink: /kb/175/Q175212/
 ---
 
 ## Q175212: SAMPLE: CHRTSAMP.EXE Visual Basic 5.0 MSChart Sample

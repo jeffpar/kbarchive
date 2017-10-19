@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234953: Windows 2000 Beta Training Kit Comments and Corrections"
-permalink: kb/234/Q234953/
+permalink: /kb/234/Q234953/
 ---
 
 ## Q234953: Windows 2000 Beta Training Kit Comments and Corrections

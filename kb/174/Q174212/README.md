@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174212: FIX: ActiveForm Returns Wrong Form"
-permalink: kb/174/Q174212/
+permalink: /kb/174/Q174212/
 ---
 
 ## Q174212: FIX: ActiveForm Returns Wrong Form

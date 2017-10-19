@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165903: PPT: Sample VB Code to Turn Bullets On or Off"
-permalink: kb/165/Q165903/
+permalink: /kb/165/Q165903/
 ---
 
 ## Q165903: PPT: Sample VB Code to Turn Bullets On or Off

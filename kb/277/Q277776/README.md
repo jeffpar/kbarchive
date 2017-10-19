@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277776: Services Access Violation Because of Heap Damage"
-permalink: kb/277/Q277776/
+permalink: /kb/277/Q277776/
 ---
 
 ## Q277776: Services Access Violation Because of Heap Damage

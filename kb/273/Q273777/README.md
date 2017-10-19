@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273777: Logging Fails with Event ID 2 &quot;The Data is the Error&quot;"
-permalink: kb/273/Q273777/
+permalink: /kb/273/Q273777/
 ---
 
 ## Q273777: Logging Fails with Event ID 2 &quot;The Data is the Error&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271753: Err Msg: Game Caused an Invalid Page Fault In Module Winmm.dll"
-permalink: kb/271/Q271753/
+permalink: /kb/271/Q271753/
 ---
 
 ## Q271753: Err Msg: Game Caused an Invalid Page Fault In Module Winmm.dll

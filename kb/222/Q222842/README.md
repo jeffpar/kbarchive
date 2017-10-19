@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222842: STOP 0x000000050 in Win32k.sys on Terminal Server"
-permalink: kb/222/Q222842/
+permalink: /kb/222/Q222842/
 ---
 
 ## Q222842: STOP 0x000000050 in Win32k.sys on Terminal Server

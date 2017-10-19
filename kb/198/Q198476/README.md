@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198476: XCLN: Exchange Client BackOffice Resource Kit (BORK) Tools"
-permalink: kb/198/Q198476/
+permalink: /kb/198/Q198476/
 ---
 
 ## Q198476: XCLN: Exchange Client BackOffice Resource Kit (BORK) Tools

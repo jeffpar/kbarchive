@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145609: Pregnancy &amp; Child Care: Setup Does Not Start"
-permalink: kb/145/Q145609/
+permalink: /kb/145/Q145609/
 ---
 
 ## Q145609: Pregnancy &amp; Child Care: Setup Does Not Start

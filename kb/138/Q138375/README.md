@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138375: PRB: Errors Caused by Setting _GENMENU to an Invalid Value"
-permalink: kb/138/Q138375/
+permalink: /kb/138/Q138375/
 ---
 
 ## Q138375: PRB: Errors Caused by Setting _GENMENU to an Invalid Value

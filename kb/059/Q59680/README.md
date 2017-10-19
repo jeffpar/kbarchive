@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59680: File Manager &quot;System Error&quot; When SUBST'd Drive Present"
-permalink: kb/059/Q59680/
+permalink: /kb/059/Q59680/
 ---
 
 ## Q59680: File Manager &quot;System Error&quot; When SUBST'd Drive Present

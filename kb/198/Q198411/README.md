@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198411: Combat FS: Color Palette of Mission Briefing Maps Is Distorted"
-permalink: kb/198/Q198411/
+permalink: /kb/198/Q198411/
 ---
 
 ## Q198411: Combat FS: Color Palette of Mission Briefing Maps Is Distorted

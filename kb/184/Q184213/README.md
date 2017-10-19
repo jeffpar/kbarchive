@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184213: SystemFileCacheInformation Can Be Changed Without Privilege"
-permalink: kb/184/Q184213/
+permalink: /kb/184/Q184213/
 ---
 
 ## Q184213: SystemFileCacheInformation Can Be Changed Without Privilege

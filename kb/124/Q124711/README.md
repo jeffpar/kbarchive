@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124711: Explorapedia: Troubleshooting Sound Problems"
-permalink: kb/124/Q124711/
+permalink: /kb/124/Q124711/
 ---
 
 ## Q124711: Explorapedia: Troubleshooting Sound Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149960: Macs Unable to Connect to PCM Server in Zones with Long Names"
-permalink: kb/149/Q149960/
+permalink: /kb/149/Q149960/
 ---
 
 ## Q149960: Macs Unable to Connect to PCM Server in Zones with Long Names

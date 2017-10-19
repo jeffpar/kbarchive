@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80891: Mac MSPlus: Values Entered in Distribution Settings Truncated"
-permalink: kb/080/Q80891/
+permalink: /kb/080/Q80891/
 ---
 
 ## Q80891: Mac MSPlus: Values Entered in Distribution Settings Truncated

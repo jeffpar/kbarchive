@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190931: Snmptrap.exe Ignores SNMP Trap PDU Greater Than 4,096 Bytes"
-permalink: kb/190/Q190931/
+permalink: /kb/190/Q190931/
 ---
 
 ## Q190931: Snmptrap.exe Ignores SNMP Trap PDU Greater Than 4,096 Bytes

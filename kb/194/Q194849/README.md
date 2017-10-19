@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194849: PC MMTA: External Fails when Run as an Idle Process of Dispatch"
-permalink: kb/194/Q194849/
+permalink: /kb/194/Q194849/
 ---
 
 ## Q194849: PC MMTA: External Fails when Run as an Idle Process of Dispatch

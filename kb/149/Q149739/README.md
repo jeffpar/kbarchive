@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149739: BUG: MSRDC32.OCX Not Loaded Through Browse Button"
-permalink: kb/149/Q149739/
+permalink: /kb/149/Q149739/
 ---
 
 ## Q149739: BUG: MSRDC32.OCX Not Loaded Through Browse Button

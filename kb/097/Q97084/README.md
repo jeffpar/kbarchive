@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97084: PROFS: Gateway Unable to Mail to HP Desk System"
-permalink: kb/097/Q97084/
+permalink: /kb/097/Q97084/
 ---
 
 ## Q97084: PROFS: Gateway Unable to Mail to HP Desk System

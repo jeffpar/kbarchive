@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183789: Host Fails To Allocate Session to A CONNECT:Direct Client On NT"
-permalink: kb/183/Q183789/
+permalink: /kb/183/Q183789/
 ---
 
 ## Q183789: Host Fails To Allocate Session to A CONNECT:Direct Client On NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107176: Flight Simulator: Statue of Liberty Is Two Dimensional"
-permalink: kb/107/Q107176/
+permalink: /kb/107/Q107176/
 ---
 
 ## Q107176: Flight Simulator: Statue of Liberty Is Two Dimensional

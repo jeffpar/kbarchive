@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232268: BUG: Validate Event Is not Fired When Placing a FlexGrid Control"
-permalink: kb/232/Q232268/
+permalink: /kb/232/Q232268/
 ---
 
 ## Q232268: BUG: Validate Event Is not Fired When Placing a FlexGrid Control

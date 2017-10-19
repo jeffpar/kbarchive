@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169548: Using Proxy Server with Routing and Remote Access"
-permalink: kb/169/Q169548/
+permalink: /kb/169/Q169548/
 ---
 
 ## Q169548: Using Proxy Server with Routing and Remote Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175470: ActionListOn Items May Be Reset to off after Editing a Policy"
-permalink: kb/175/Q175470/
+permalink: /kb/175/Q175470/
 ---
 
 ## Q175470: ActionListOn Items May Be Reset to off after Editing a Policy

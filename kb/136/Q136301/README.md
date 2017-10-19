@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136301: FindFile Utility from Office 4.3 Produces Inaccurate Results"
-permalink: kb/136/Q136301/
+permalink: /kb/136/Q136301/
 ---
 
 ## Q136301: FindFile Utility from Office 4.3 Produces Inaccurate Results

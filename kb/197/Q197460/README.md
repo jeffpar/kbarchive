@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197460: Access Violation Occurs when Client Certificates are Required"
-permalink: kb/197/Q197460/
+permalink: /kb/197/Q197460/
 ---
 
 ## Q197460: Access Violation Occurs when Client Certificates are Required

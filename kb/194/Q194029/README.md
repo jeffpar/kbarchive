@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194029: INFO: How to Specify the Number of PPTP Ports During Unattended"
-permalink: kb/194/Q194029/
+permalink: /kb/194/Q194029/
 ---
 
 ## Q194029: INFO: How to Specify the Number of PPTP Ports During Unattended

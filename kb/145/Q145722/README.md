@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145722: Where Can I Go to Discuss Pregnancy and Child Care Issues?"
-permalink: kb/145/Q145722/
+permalink: /kb/145/Q145722/
 ---
 
 ## Q145722: Where Can I Go to Discuss Pregnancy and Child Care Issues?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153752: Incorrect Output Using HP DesignJet 650c and 750c"
-permalink: kb/153/Q153752/
+permalink: /kb/153/Q153752/
 ---
 
 ## Q153752: Incorrect Output Using HP DesignJet 650c and 750c

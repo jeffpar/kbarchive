@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311788: Programming Microsoft SQL Server 2000 With XML Comments And Corr"
-permalink: kb/311/Q311788/
+permalink: /kb/311/Q311788/
 ---
 
 ## Q311788: Programming Microsoft SQL Server 2000 With XML Comments And Corr

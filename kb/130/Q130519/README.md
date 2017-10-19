@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130519: Cannot Access WFWG 3.11 Computer with Monolithic IPX"
-permalink: kb/130/Q130519/
+permalink: /kb/130/Q130519/
 ---
 
 ## Q130519: Cannot Access WFWG 3.11 Computer with Monolithic IPX

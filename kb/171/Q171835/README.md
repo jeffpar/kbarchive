@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171835: FIX: Crash When Viewing Data Tips on ParamArray"
-permalink: kb/171/Q171835/
+permalink: /kb/171/Q171835/
 ---
 
 ## Q171835: FIX: Crash When Viewing Data Tips on ParamArray

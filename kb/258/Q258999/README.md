@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258999: XIMS: Internet Mail w. Original Address of Mail From:&lt;&gt; Changed"
-permalink: kb/258/Q258999/
+permalink: /kb/258/Q258999/
 ---
 
 ## Q258999: XIMS: Internet Mail w. Original Address of Mail From:&lt;&gt; Changed

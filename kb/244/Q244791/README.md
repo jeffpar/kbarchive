@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244791: BUG: MSDN Library Subset Problem on Windows 2000"
-permalink: kb/244/Q244791/
+permalink: /kb/244/Q244791/
 ---
 
 ## Q244791: BUG: MSDN Library Subset Problem on Windows 2000

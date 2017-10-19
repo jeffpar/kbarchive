@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164609: HP JetAdmin 2.33 may cause ARP Storm on Network"
-permalink: kb/164/Q164609/
+permalink: /kb/164/Q164609/
 ---
 
 ## Q164609: HP JetAdmin 2.33 may cause ARP Storm on Network

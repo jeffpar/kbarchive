@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165433: FIX: Query Designer Not Inserting Record if Field Name Has Dash"
-permalink: kb/165/Q165433/
+permalink: /kb/165/Q165433/
 ---
 
 ## Q165433: FIX: Query Designer Not Inserting Record if Field Name Has Dash

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321123: MS02-018: Patch Available for Buffer Overrun in ASP Function"
-permalink: kb/321/Q321123/
+permalink: /kb/321/Q321123/
 ---
 
 ## Q321123: MS02-018: Patch Available for Buffer Overrun in ASP Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282819: PRB: Wrong Path When You Connect to Database on Novell Server"
-permalink: kb/282/Q282819/
+permalink: /kb/282/Q282819/
 ---
 
 ## Q282819: PRB: Wrong Path When You Connect to Database on Novell Server

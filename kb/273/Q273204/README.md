@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273204: SMS: Query-Based Collection Ignores Query If Query Name Typed In"
-permalink: kb/273/Q273204/
+permalink: /kb/273/Q273204/
 ---
 
 ## Q273204: SMS: Query-Based Collection Ignores Query If Query Name Typed In

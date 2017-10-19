@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127954: PC DB: Keeping NTFS Security Intact When Moving a PO"
-permalink: kb/127/Q127954/
+permalink: /kb/127/Q127954/
 ---
 
 ## Q127954: PC DB: Keeping NTFS Security Intact When Moving a PO

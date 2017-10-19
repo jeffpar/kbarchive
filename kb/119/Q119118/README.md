@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119118: Windows 95 Fails to Install on an 80386 Computer"
-permalink: kb/119/Q119118/
+permalink: /kb/119/Q119118/
 ---
 
 ## Q119118: Windows 95 Fails to Install on an 80386 Computer

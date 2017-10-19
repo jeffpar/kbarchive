@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234545: Opropsheet.exe Modeless OLE Property Sheet Using MFC"
-permalink: kb/234/Q234545/
+permalink: /kb/234/Q234545/
 ---
 
 ## Q234545: Opropsheet.exe Modeless OLE Property Sheet Using MFC

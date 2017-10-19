@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202855: XFOR: Exchange Migration Wizard for MS Mail Fails on Schedule+"
-permalink: kb/202/Q202855/
+permalink: /kb/202/Q202855/
 ---
 
 ## Q202855: XFOR: Exchange Migration Wizard for MS Mail Fails on Schedule+

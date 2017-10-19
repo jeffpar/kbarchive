@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181740: SNA Windows NT/Windows 95 Client Fails When Using Quiet Install"
-permalink: kb/181/Q181740/
+permalink: /kb/181/Q181740/
 ---
 
 ## Q181740: SNA Windows NT/Windows 95 Client Fails When Using Quiet Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268091: Event 7022: Messenger Service Hung on Startup"
-permalink: kb/268/Q268091/
+permalink: /kb/268/Q268091/
 ---
 
 ## Q268091: Event 7022: Messenger Service Hung on Startup

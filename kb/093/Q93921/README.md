@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93921: PRB: SDK INSTALL Having Problems Opening INSTALL.INF"
-permalink: kb/093/Q93921/
+permalink: /kb/093/Q93921/
 ---
 
 ## Q93921: PRB: SDK INSTALL Having Problems Opening INSTALL.INF

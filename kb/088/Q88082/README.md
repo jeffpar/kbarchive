@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88082: PPT: Error Opening Untranslated Presentation"
-permalink: kb/088/Q88082/
+permalink: /kb/088/Q88082/
 ---
 
 ## Q88082: PPT: Error Opening Untranslated Presentation

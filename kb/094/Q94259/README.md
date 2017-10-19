@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94259: PC DB: Err Msg: Could Not Find Mail System Database"
-permalink: kb/094/Q94259/
+permalink: /kb/094/Q94259/
 ---
 
 ## Q94259: PC DB: Err Msg: Could Not Find Mail System Database

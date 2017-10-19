@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89105: Novell Printing Configurations Supported by Windows"
-permalink: kb/089/Q89105/
+permalink: /kb/089/Q89105/
 ---
 
 ## Q89105: Novell Printing Configurations Supported by Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193922: XFOR: Preventing the Internet Mail Service From Relaying UCE"
-permalink: kb/193/Q193922/
+permalink: /kb/193/Q193922/
 ---
 
 ## Q193922: XFOR: Preventing the Internet Mail Service From Relaying UCE

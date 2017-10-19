@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150085: XCLN: AutoSignature and multiple users on same machine"
-permalink: kb/150/Q150085/
+permalink: /kb/150/Q150085/
 ---
 
 ## Q150085: XCLN: AutoSignature and multiple users on same machine

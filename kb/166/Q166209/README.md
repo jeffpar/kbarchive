@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166209: Invalid Page Fault in Module Gdi32.dll"
-permalink: kb/166/Q166209/
+permalink: /kb/166/Q166209/
 ---
 
 ## Q166209: Invalid Page Fault in Module Gdi32.dll

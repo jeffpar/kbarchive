@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97768: WFWG: Incorrect AutoStart=&lt;Full-or-Base&gt; Entry in SYSINI.WRI"
-permalink: kb/097/Q97768/
+permalink: /kb/097/Q97768/
 ---
 
 ## Q97768: WFWG: Incorrect AutoStart=&lt;Full-or-Base&gt; Entry in SYSINI.WRI

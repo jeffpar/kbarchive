@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246272: XADM: Error 4294966767 Appears, Store Stops When Disk Space Low"
-permalink: kb/246/Q246272/
+permalink: /kb/246/Q246272/
 ---
 
 ## Q246272: XADM: Error 4294966767 Appears, Store Stops When Disk Space Low

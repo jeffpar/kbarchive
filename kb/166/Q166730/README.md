@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166730: With Unencrypted Password SP3 Fails to Connect to SMB Server"
-permalink: kb/166/Q166730/
+permalink: /kb/166/Q166730/
 ---
 
 ## Q166730: With Unencrypted Password SP3 Fails to Connect to SMB Server

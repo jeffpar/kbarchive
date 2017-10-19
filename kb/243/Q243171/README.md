@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243171: Advertisements Are Received by Clients Outside the Collection"
-permalink: kb/243/Q243171/
+permalink: /kb/243/Q243171/
 ---
 
 ## Q243171: Advertisements Are Received by Clients Outside the Collection

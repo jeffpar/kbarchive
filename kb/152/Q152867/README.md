@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152867: XADM: Backfilling Public Folders takes a Long Time"
-permalink: kb/152/Q152867/
+permalink: /kb/152/Q152867/
 ---
 
 ## Q152867: XADM: Backfilling Public Folders takes a Long Time

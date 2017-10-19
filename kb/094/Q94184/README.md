@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94184: PC WSPlus: Locating a Specific User's Online Calendar File"
-permalink: kb/094/Q94184/
+permalink: /kb/094/Q94184/
 ---
 
 ## Q94184: PC WSPlus: Locating a Specific User's Online Calendar File

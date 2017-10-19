@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60713: Common RESTORE Problems, Including &quot;No Files Found to Restore&quot;"
-permalink: kb/060/Q60713/
+permalink: /kb/060/Q60713/
 ---
 
 ## Q60713: Common RESTORE Problems, Including &quot;No Files Found to Restore&quot;

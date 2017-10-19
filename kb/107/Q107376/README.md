@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107376: Intel SatisFAXtion 100 &amp; 400E Are Class 1 and CAS Compatible"
-permalink: kb/107/Q107376/
+permalink: /kb/107/Q107376/
 ---
 
 ## Q107376: Intel SatisFAXtion 100 &amp; 400E Are Class 1 and CAS Compatible

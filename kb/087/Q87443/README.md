@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87443: Maximum of 10 Printers Can Be Set Up Using SETUP.SHH"
-permalink: kb/087/Q87443/
+permalink: /kb/087/Q87443/
 ---
 
 ## Q87443: Maximum of 10 Printers Can Be Set Up Using SETUP.SHH

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149486: How to Run Multiple Instances of SMS Administrator"
-permalink: kb/149/Q149486/
+permalink: /kb/149/Q149486/
 ---
 
 ## Q149486: How to Run Multiple Instances of SMS Administrator

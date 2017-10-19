@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181178: WD97: How to Place a Bullet in the Middle of a Sentence"
-permalink: kb/181/Q181178/
+permalink: /kb/181/Q181178/
 ---
 
 ## Q181178: WD97: How to Place a Bullet in the Middle of a Sentence

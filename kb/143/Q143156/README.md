@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143156: Tape Backup Utility Reports Inaccurate Error Messages"
-permalink: kb/143/Q143156/
+permalink: /kb/143/Q143156/
 ---
 
 ## Q143156: Tape Backup Utility Reports Inaccurate Error Messages

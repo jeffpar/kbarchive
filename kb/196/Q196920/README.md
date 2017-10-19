@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196920: XFOR: MAPI Embedded Message may NDR Due to Invalid Recipient"
-permalink: kb/196/Q196920/
+permalink: /kb/196/Q196920/
 ---
 
 ## Q196920: XFOR: MAPI Embedded Message may NDR Due to Invalid Recipient

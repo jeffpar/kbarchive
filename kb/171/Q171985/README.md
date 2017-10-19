@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171985: Limiting Access to Internet Content With RSACI Rating System"
-permalink: kb/171/Q171985/
+permalink: /kb/171/Q171985/
 ---
 
 ## Q171985: Limiting Access to Internet Content With RSACI Rating System

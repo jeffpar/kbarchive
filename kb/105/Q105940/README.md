@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105940: Troubleshooting Serial Port Problems in Windows"
-permalink: kb/105/Q105940/
+permalink: /kb/105/Q105940/
 ---
 
 ## Q105940: Troubleshooting Serial Port Problems in Windows

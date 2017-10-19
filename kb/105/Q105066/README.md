@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105066: Delete Sentry Appears to Hang on Network Server"
-permalink: kb/105/Q105066/
+permalink: /kb/105/Q105066/
 ---
 
 ## Q105066: Delete Sentry Appears to Hang on Network Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266164: MCM2: Game Quits Before the Startup Screen Is Displayed"
-permalink: kb/266/Q266164/
+permalink: /kb/266/Q266164/
 ---
 
 ## Q266164: MCM2: Game Quits Before the Startup Screen Is Displayed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134886: Flight Simulator 5.1: Troubleshooting General Sound Problems"
-permalink: kb/134/Q134886/
+permalink: /kb/134/Q134886/
 ---
 
 ## Q134886: Flight Simulator 5.1: Troubleshooting General Sound Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124382: MS-DOS 6.0 Supplemental Files"
-permalink: kb/124/Q124382/
+permalink: /kb/124/Q124382/
 ---
 
 ## Q124382: MS-DOS 6.0 Supplemental Files

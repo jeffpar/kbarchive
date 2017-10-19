@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114764: Video Err Msg: &quot;Specified File Cannot Be Played...&quot;"
-permalink: kb/114/Q114764/
+permalink: /kb/114/Q114764/
 ---
 
 ## Q114764: Video Err Msg: &quot;Specified File Cannot Be Played...&quot;

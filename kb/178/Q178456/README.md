@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178456: SAMPLE: Volume.exe: Set Volume Control Levels Using Visual Basic"
-permalink: kb/178/Q178456/
+permalink: /kb/178/Q178456/
 ---
 
 ## Q178456: SAMPLE: Volume.exe: Set Volume Control Levels Using Visual Basic

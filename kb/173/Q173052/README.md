@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173052: WD97: Chart Missing When Pasting Grouped Items from Excel"
-permalink: kb/173/Q173052/
+permalink: /kb/173/Q173052/
 ---
 
 ## Q173052: WD97: Chart Missing When Pasting Grouped Items from Excel

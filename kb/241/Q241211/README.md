@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241211: List of Bugs Fixed in Windows NT 4.0 Service Pack 6/6a (Part 1)"
-permalink: kb/241/Q241211/
+permalink: /kb/241/Q241211/
 ---
 
 ## Q241211: List of Bugs Fixed in Windows NT 4.0 Service Pack 6/6a (Part 1)

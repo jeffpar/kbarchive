@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245102: XCLN: IMAP Ignores OL98, OL2000 Don't Download Messages Option"
-permalink: kb/245/Q245102/
+permalink: /kb/245/Q245102/
 ---
 
 ## Q245102: XCLN: IMAP Ignores OL98, OL2000 Don't Download Messages Option

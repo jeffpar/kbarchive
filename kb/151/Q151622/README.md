@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151622: IIS Sends Image Map File Instead of Processing the Script"
-permalink: kb/151/Q151622/
+permalink: /kb/151/Q151622/
 ---
 
 ## Q151622: IIS Sends Image Map File Instead of Processing the Script

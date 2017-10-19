@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136755: HOWTO: Replacing the Visual FoxPro Desktop with an App's Form"
-permalink: kb/136/Q136755/
+permalink: /kb/136/Q136755/
 ---
 
 ## Q136755: HOWTO: Replacing the Visual FoxPro Desktop with an App's Form

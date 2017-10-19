@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119457: FIX: Visual C++ Setup Program Prompts &quot;Insert dis"
-permalink: kb/119/Q119457/
+permalink: /kb/119/Q119457/
 ---
 
 ## Q119457: FIX: Visual C++ Setup Program Prompts &quot;Insert dis

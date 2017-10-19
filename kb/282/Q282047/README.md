@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282047: PRB: Printing Reports Causes Exception C0000005 Error"
-permalink: kb/282/Q282047/
+permalink: /kb/282/Q282047/
 ---
 
 ## Q282047: PRB: Printing Reports Causes Exception C0000005 Error

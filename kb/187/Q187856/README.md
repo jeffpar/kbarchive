@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187856: Limit SSL Message Size to 16 KB for Netscape"
-permalink: kb/187/Q187856/
+permalink: /kb/187/Q187856/
 ---
 
 ## Q187856: Limit SSL Message Size to 16 KB for Netscape

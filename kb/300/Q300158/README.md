@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300158: MCSE Readiness Review Exam 70-224 Microsoft Exchange 2000 Server"
-permalink: kb/300/Q300158/
+permalink: /kb/300/Q300158/
 ---
 
 ## Q300158: MCSE Readiness Review Exam 70-224 Microsoft Exchange 2000 Server

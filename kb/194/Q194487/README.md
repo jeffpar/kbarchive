@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194487: WD97: Difference Between RTF and RFT File Formats"
-permalink: kb/194/Q194487/
+permalink: /kb/194/Q194487/
 ---
 
 ## Q194487: WD97: Difference Between RTF and RFT File Formats

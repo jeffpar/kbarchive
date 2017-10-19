@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141119: PRB: SMC8432BT-E Fails GetBackUpList Request"
-permalink: kb/141/Q141119/
+permalink: /kb/141/Q141119/
 ---
 
 ## Q141119: PRB: SMC8432BT-E Fails GetBackUpList Request

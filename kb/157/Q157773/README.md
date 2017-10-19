@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157773: WD97: Macro to Disable Float Over Text Property"
-permalink: kb/157/Q157773/
+permalink: /kb/157/Q157773/
 ---
 
 ## Q157773: WD97: Macro to Disable Float Over Text Property

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89639: WRKs NEWIPX May Not Upgrade IPX.COM"
-permalink: kb/089/Q89639/
+permalink: /kb/089/Q89639/
 ---
 
 ## Q89639: WRKs NEWIPX May Not Upgrade IPX.COM

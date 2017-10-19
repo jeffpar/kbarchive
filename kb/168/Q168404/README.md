@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q168404: PRB: C2664 Instantiating STL List with Sequence [first, last)"
-permalink: kb/168/Q168404/
+title: "Q168404: PRB: C2664 Instantiating STL List with Sequence &#91;first, last)"
+permalink: /kb/168/Q168404/
 ---
 
-## Q168404: PRB: C2664 Instantiating STL List with Sequence [first, last)
+## Q168404: PRB: C2664 Instantiating STL List with Sequence &#91;first, last)
 
 	Article: Q168404
 	Product(s): Microsoft C Compiler

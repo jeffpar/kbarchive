@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98253: PC WFW: 3.0 MS-DOS-Based Workstation Disk 2 [3.5, 720K]"
-permalink: kb/098/Q98253/
+title: "Q98253: PC WFW: 3.0 MS-DOS-Based Workstation Disk 2 &#91;3.5, 720K&#93;"
+permalink: /kb/098/Q98253/
 ---
 
-## Q98253: PC WFW: 3.0 MS-DOS-Based Workstation Disk 2 [3.5, 720K]
+## Q98253: PC WFW: 3.0 MS-DOS-Based Workstation Disk 2 &#91;3.5, 720K&#93;
 
 	Article: Q98253
 	Product(s): Microsoft Mail For PC Networks

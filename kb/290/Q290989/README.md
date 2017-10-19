@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290989: XCLN: OWA &quot;HTTP 403 - Forbidden&quot; Err. Mssg. w/o Exchfilt.dll"
-permalink: kb/290/Q290989/
+permalink: /kb/290/Q290989/
 ---
 
 ## Q290989: XCLN: OWA &quot;HTTP 403 - Forbidden&quot; Err. Mssg. w/o Exchfilt.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165942: HOWTO: Write Data to a File Using WriteFile API"
-permalink: kb/165/Q165942/
+permalink: /kb/165/Q165942/
 ---
 
 ## Q165942: HOWTO: Write Data to a File Using WriteFile API

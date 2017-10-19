@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139141: Debugging SMS/SQL Related Problems"
-permalink: kb/139/Q139141/
+permalink: /kb/139/Q139141/
 ---
 
 ## Q139141: Debugging SMS/SQL Related Problems

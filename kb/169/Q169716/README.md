@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169716: XCON: Exchange MTA Generates Event ID 37"
-permalink: kb/169/Q169716/
+permalink: /kb/169/Q169716/
 ---
 
 ## Q169716: XCON: Exchange MTA Generates Event ID 37

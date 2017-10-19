@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185864: PRB: Access Violation in ODBC Cursor Library in MFC Application"
-permalink: kb/185/Q185864/
+permalink: /kb/185/Q185864/
 ---
 
 ## Q185864: PRB: Access Violation in ODBC Cursor Library in MFC Application

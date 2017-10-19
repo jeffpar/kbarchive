@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248138: XADM: Applying Exchange 5.5 SP to a Clustered Exchange Server"
-permalink: kb/248/Q248138/
+permalink: /kb/248/Q248138/
 ---
 
 ## Q248138: XADM: Applying Exchange 5.5 SP to a Clustered Exchange Server

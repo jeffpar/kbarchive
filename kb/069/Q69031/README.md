@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69031: Epson 9- and 24-Pin Drivers Print Landscape When in Portrait"
-permalink: kb/069/Q69031/
+permalink: /kb/069/Q69031/
 ---
 
 ## Q69031: Epson 9- and 24-Pin Drivers Print Landscape When in Portrait

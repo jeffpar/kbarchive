@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193280: SMS: CCM Removes LANDesk Files When Remote Control Isn't Enabled"
-permalink: kb/193/Q193280/
+permalink: /kb/193/Q193280/
 ---
 
 ## Q193280: SMS: CCM Removes LANDesk Files When Remote Control Isn't Enabled

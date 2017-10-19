@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129145: Commas Not Recognized in NetWare Logon Scripts"
-permalink: kb/129/Q129145/
+permalink: /kb/129/Q129145/
 ---
 
 ## Q129145: Commas Not Recognized in NetWare Logon Scripts

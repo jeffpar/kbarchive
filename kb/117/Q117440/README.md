@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117440: Novell NetWare 3.12 and 4.0 Support in Windows 3.11"
-permalink: kb/117/Q117440/
+permalink: /kb/117/Q117440/
 ---
 
 ## Q117440: Novell NetWare 3.12 and 4.0 Support in Windows 3.11

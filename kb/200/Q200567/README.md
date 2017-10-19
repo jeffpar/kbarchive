@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200567: Answer File Parameters for WinNT 4.0 System Preparation Tool"
-permalink: kb/200/Q200567/
+permalink: /kb/200/Q200567/
 ---
 
 ## Q200567: Answer File Parameters for WinNT 4.0 System Preparation Tool

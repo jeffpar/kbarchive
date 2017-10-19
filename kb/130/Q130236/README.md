@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130236: Explanation of Referential Integrity Rules for INSERT"
-permalink: kb/130/Q130236/
+permalink: /kb/130/Q130236/
 ---
 
 ## Q130236: Explanation of Referential Integrity Rules for INSERT

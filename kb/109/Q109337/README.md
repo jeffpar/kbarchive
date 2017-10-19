@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109337: ADT/ODE: How to Hide the Database Window Menu Bar"
-permalink: kb/109/Q109337/
+permalink: /kb/109/Q109337/
 ---
 
 ## Q109337: ADT/ODE: How to Hide the Database Window Menu Bar

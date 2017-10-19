@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48903: Mac Form: Custom Forms with Fixed Recipient Users or Groups"
-permalink: kb/048/Q48903/
+permalink: /kb/048/Q48903/
 ---
 
 ## Q48903: Mac Form: Custom Forms with Fixed Recipient Users or Groups

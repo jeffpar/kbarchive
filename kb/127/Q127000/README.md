@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127000: HP DeskJet Version 3.x/4.x/5.x Driver Settings"
-permalink: kb/127/Q127000/
+permalink: /kb/127/Q127000/
 ---
 
 ## Q127000: HP DeskJet Version 3.x/4.x/5.x Driver Settings

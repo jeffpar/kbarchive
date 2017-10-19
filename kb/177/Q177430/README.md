@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177430: Description of DirectX Setup Error Codes"
-permalink: kb/177/Q177430/
+permalink: /kb/177/Q177430/
 ---
 
 ## Q177430: Description of DirectX Setup Error Codes

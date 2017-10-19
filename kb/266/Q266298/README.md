@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266298: BUG: IWindows::Next and IDocuments::Next Leak Memory"
-permalink: kb/266/Q266298/
+permalink: /kb/266/Q266298/
 ---
 
 ## Q266298: BUG: IWindows::Next and IDocuments::Next Leak Memory

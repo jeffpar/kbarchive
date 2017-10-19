@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134502: Cannot Hear Some MIDI Files with Tandy Sensation Sound Card"
-permalink: kb/134/Q134502/
+permalink: /kb/134/Q134502/
 ---
 
 ## Q134502: Cannot Hear Some MIDI Files with Tandy Sensation Sound Card

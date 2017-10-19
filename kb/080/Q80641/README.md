@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80641: Mouse Behavior in MS-DOS Programs That Run in a Window"
-permalink: kb/080/Q80641/
+permalink: /kb/080/Q80641/
 ---
 
 ## Q80641: Mouse Behavior in MS-DOS Programs That Run in a Window

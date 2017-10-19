@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257443: Config.sys Not Processed When Booting from Floppy Disk Drive"
-permalink: kb/257/Q257443/
+permalink: /kb/257/Q257443/
 ---
 
 ## Q257443: Config.sys Not Processed When Booting from Floppy Disk Drive

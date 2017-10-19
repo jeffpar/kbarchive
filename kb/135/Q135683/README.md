@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135683: Visual FoxPro/Windows Standard Edition Disk Directory Contents"
-permalink: kb/135/Q135683/
+permalink: /kb/135/Q135683/
 ---
 
 ## Q135683: Visual FoxPro/Windows Standard Edition Disk Directory Contents

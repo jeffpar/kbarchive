@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181947: XCON: PRMD Value in Numeric-OR-Address Won't Downgrade to 84"
-permalink: kb/181/Q181947/
+permalink: /kb/181/Q181947/
 ---
 
 ## Q181947: XCON: PRMD Value in Numeric-OR-Address Won't Downgrade to 84

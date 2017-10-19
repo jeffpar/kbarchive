@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252901: SMS: Status Filter Rules Restored to Defaults After a Site Reset"
-permalink: kb/252/Q252901/
+permalink: /kb/252/Q252901/
 ---
 
 ## Q252901: SMS: Status Filter Rules Restored to Defaults After a Site Reset

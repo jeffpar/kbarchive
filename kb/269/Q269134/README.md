@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269134: Multiple Shared Folders Clients Fail Over Same Local LU"
-permalink: kb/269/Q269134/
+permalink: /kb/269/Q269134/
 ---
 
 ## Q269134: Multiple Shared Folders Clients Fail Over Same Local LU

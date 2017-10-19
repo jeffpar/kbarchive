@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159198: XFOR: Event ID 246 Attempt to Read Beyond End of Object"
-permalink: kb/159/Q159198/
+permalink: /kb/159/Q159198/
 ---
 
 ## Q159198: XFOR: Event ID 246 Attempt to Read Beyond End of Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172349: PRB: Error Type 11 when Creating New Query While Modifying Form"
-permalink: kb/172/Q172349/
+permalink: /kb/172/Q172349/
 ---
 
 ## Q172349: PRB: Error Type 11 when Creating New Query While Modifying Form

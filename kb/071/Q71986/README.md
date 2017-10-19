@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71986: MS-DOS 5.0 Internal and External Commands"
-permalink: kb/071/Q71986/
+permalink: /kb/071/Q71986/
 ---
 
 ## Q71986: MS-DOS 5.0 Internal and External Commands

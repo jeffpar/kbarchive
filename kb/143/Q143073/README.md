@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143073: Err Msg: Microsoft Backup Has Encountered a Serious Error..."
-permalink: kb/143/Q143073/
+permalink: /kb/143/Q143073/
 ---
 
 ## Q143073: Err Msg: Microsoft Backup Has Encountered a Serious Error...

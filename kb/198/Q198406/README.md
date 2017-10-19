@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198406: RIP Version 2 Does Not Advertise Subnet Routes"
-permalink: kb/198/Q198406/
+permalink: /kb/198/Q198406/
 ---
 
 ## Q198406: RIP Version 2 Does Not Advertise Subnet Routes

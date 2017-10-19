@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146282: Import Project with Same Name as Existing Project Merges Tasks"
-permalink: kb/146/Q146282/
+permalink: /kb/146/Q146282/
 ---
 
 ## Q146282: Import Project with Same Name as Existing Project Merges Tasks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97877: Bookshelf: Pronunciation Key Popup Window Resize"
-permalink: kb/097/Q97877/
+permalink: /kb/097/Q97877/
 ---
 
 ## Q97877: Bookshelf: Pronunciation Key Popup Window Resize

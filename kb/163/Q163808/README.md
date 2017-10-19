@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163808: WD97: Picture Is Pasted as Float Over Text, Not as Inline"
-permalink: kb/163/Q163808/
+permalink: /kb/163/Q163808/
 ---
 
 ## Q163808: WD97: Picture Is Pasted as Float Over Text, Not as Inline

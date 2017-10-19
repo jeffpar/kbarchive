@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272680: SNMP Service Does Not Start or Hangs on Shutdown"
-permalink: kb/272/Q272680/
+permalink: /kb/272/Q272680/
 ---
 
 ## Q272680: SNMP Service Does Not Start or Hangs on Shutdown

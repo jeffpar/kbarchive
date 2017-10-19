@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146260: XCLN: Exchange Forms Designer Labels Can Be 255 Chars"
-permalink: kb/146/Q146260/
+permalink: /kb/146/Q146260/
 ---
 
 ## Q146260: XCLN: Exchange Forms Designer Labels Can Be 255 Chars

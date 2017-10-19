@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94208: Support for Canon LBP-200 Series Printers"
-permalink: kb/094/Q94208/
+permalink: /kb/094/Q94208/
 ---
 
 ## Q94208: Support for Canon LBP-200 Series Printers

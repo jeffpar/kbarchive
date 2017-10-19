@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109848: MS-DOS Shell Err Msg: Invalid Path"
-permalink: kb/109/Q109848/
+permalink: /kb/109/Q109848/
 ---
 
 ## Q109848: MS-DOS Shell Err Msg: Invalid Path

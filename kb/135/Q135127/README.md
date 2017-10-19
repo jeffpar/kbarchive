@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135127: Trust Relationship Confirmation Messages Different"
-permalink: kb/135/Q135127/
+permalink: /kb/135/Q135127/
 ---
 
 ## Q135127: Trust Relationship Confirmation Messages Different

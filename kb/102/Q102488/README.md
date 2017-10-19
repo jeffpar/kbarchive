@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102488: Mac Wkst: Norton Directory Assistance II and Enclosures"
-permalink: kb/102/Q102488/
+permalink: /kb/102/Q102488/
 ---
 
 ## Q102488: Mac Wkst: Norton Directory Assistance II and Enclosures

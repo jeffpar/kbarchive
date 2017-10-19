@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264946: PRB: Bandwidth Leak of USB Device on Surprise Removal"
-permalink: kb/264/Q264946/
+permalink: /kb/264/Q264946/
 ---
 
 ## Q264946: PRB: Bandwidth Leak of USB Device on Surprise Removal

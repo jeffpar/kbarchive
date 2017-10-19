@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191512: PRB: DataFormat Property Not Reset to Blank Value"
-permalink: kb/191/Q191512/
+permalink: /kb/191/Q191512/
 ---
 
 ## Q191512: PRB: DataFormat Property Not Reset to Blank Value

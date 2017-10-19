@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286176: XFOR: Unable to Complete Free and Busy Queries After SP4 Upgrade"
-permalink: kb/286/Q286176/
+permalink: /kb/286/Q286176/
 ---
 
 ## Q286176: XFOR: Unable to Complete Free and Busy Queries After SP4 Upgrade

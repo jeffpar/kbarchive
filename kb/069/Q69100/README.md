@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69100: Windows Err Msg: PS Header Has Not Been Downloaded..."
-permalink: kb/069/Q69100/
+permalink: /kb/069/Q69100/
 ---
 
 ## Q69100: Windows Err Msg: PS Header Has Not Been Downloaded...

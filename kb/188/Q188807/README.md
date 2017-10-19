@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188807: XADM: Information Store Crashes While Client Downloads POP3 Mail"
-permalink: kb/188/Q188807/
+permalink: /kb/188/Q188807/
 ---
 
 ## Q188807: XADM: Information Store Crashes While Client Downloads POP3 Mail

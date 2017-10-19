@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193499: Multiple RRAS Client Disconnects Cause Increased CPU Usage"
-permalink: kb/193/Q193499/
+permalink: /kb/193/Q193499/
 ---
 
 ## Q193499: Multiple RRAS Client Disconnects Cause Increased CPU Usage

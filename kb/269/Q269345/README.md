@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269345: SMS: Systems Management Server Technical Resources"
-permalink: kb/269/Q269345/
+permalink: /kb/269/Q269345/
 ---
 
 ## Q269345: SMS: Systems Management Server Technical Resources

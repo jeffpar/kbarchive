@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111008: BUG: Gaps Between Wedges Drawn with Pie()"
-permalink: kb/111/Q111008/
+permalink: /kb/111/Q111008/
 ---
 
 ## Q111008: BUG: Gaps Between Wedges Drawn with Pie()

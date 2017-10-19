@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88680: DOC: ControlData Structure Not Completely Documented"
-permalink: kb/088/Q88680/
+permalink: /kb/088/Q88680/
 ---
 
 ## Q88680: DOC: ControlData Structure Not Completely Documented

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266517: Encarta Africana: Dictionary Feature Is Not Included"
-permalink: kb/266/Q266517/
+permalink: /kb/266/Q266517/
 ---
 
 ## Q266517: Encarta Africana: Dictionary Feature Is Not Included

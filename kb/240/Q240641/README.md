@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240641: World Atlas 2000: Media Viewer Opens When You Draw a Zoom Box"
-permalink: kb/240/Q240641/
+permalink: /kb/240/Q240641/
 ---
 
 ## Q240641: World Atlas 2000: Media Viewer Opens When You Draw a Zoom Box

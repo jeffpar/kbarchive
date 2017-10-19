@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271308: Err Installing HIS 2000 on Windows 2000 Using Terminal Server"
-permalink: kb/271/Q271308/
+permalink: /kb/271/Q271308/
 ---
 
 ## Q271308: Err Installing HIS 2000 on Windows 2000 Using Terminal Server

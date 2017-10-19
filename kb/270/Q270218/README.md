@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270218: &quot;Use All Detected Servers&quot; in Multisite Domain Causes Errors"
-permalink: kb/270/Q270218/
+permalink: /kb/270/Q270218/
 ---
 
 ## Q270218: &quot;Use All Detected Servers&quot; in Multisite Domain Causes Errors

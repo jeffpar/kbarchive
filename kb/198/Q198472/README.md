@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198472: XWEB: Signed Messages Show as Empty Message with Attachment"
-permalink: kb/198/Q198472/
+permalink: /kb/198/Q198472/
 ---
 
 ## Q198472: XWEB: Signed Messages Show as Empty Message with Attachment

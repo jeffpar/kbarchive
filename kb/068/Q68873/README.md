@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68873: FIX: Warning A4057 When Using Local Variables"
-permalink: kb/068/Q68873/
+permalink: /kb/068/Q68873/
 ---
 
 ## Q68873: FIX: Warning A4057 When Using Local Variables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153234: HOWTO: Call System-Stored Procedures on SQL Server from RDO"
-permalink: kb/153/Q153234/
+permalink: /kb/153/Q153234/
 ---
 
 ## Q153234: HOWTO: Call System-Stored Procedures on SQL Server from RDO

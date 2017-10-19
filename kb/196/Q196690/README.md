@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196690: XADM: Failed to Traverse Mailboxes Using MBCLEAN on Exchange"
-permalink: kb/196/Q196690/
+permalink: /kb/196/Q196690/
 ---
 
 ## Q196690: XADM: Failed to Traverse Mailboxes Using MBCLEAN on Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161360: DOC: VFP Help Incorrect for ListBox UpClick &amp; DownClick Events"
-permalink: kb/161/Q161360/
+permalink: /kb/161/Q161360/
 ---
 
 ## Q161360: DOC: VFP Help Incorrect for ListBox UpClick &amp; DownClick Events

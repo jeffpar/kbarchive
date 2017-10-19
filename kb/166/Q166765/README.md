@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166765: SMS: Deploying Packages Successfully with the PCM Service"
-permalink: kb/166/Q166765/
+permalink: /kb/166/Q166765/
 ---
 
 ## Q166765: SMS: Deploying Packages Successfully with the PCM Service

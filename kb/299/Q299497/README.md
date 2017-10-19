@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299497: FIX: _VFP.DataToClip() Truncates DateTime Data"
-permalink: kb/299/Q299497/
+permalink: /kb/299/Q299497/
 ---
 
 ## Q299497: FIX: _VFP.DataToClip() Truncates DateTime Data

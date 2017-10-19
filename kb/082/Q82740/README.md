@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82740: Using Word for MS-DOS Under Windows 3.1"
-permalink: kb/082/Q82740/
+permalink: /kb/082/Q82740/
 ---
 
 ## Q82740: Using Word for MS-DOS Under Windows 3.1

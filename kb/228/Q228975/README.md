@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228975: Midtown Madness: Prompted to Verify Connection to the Internet"
-permalink: kb/228/Q228975/
+permalink: /kb/228/Q228975/
 ---
 
 ## Q228975: Midtown Madness: Prompted to Verify Connection to the Internet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146345: XADM: Adding Too Many Proxy Addresses To a Mailbox"
-permalink: kb/146/Q146345/
+permalink: /kb/146/Q146345/
 ---
 
 ## Q146345: XADM: Adding Too Many Proxy Addresses To a Mailbox

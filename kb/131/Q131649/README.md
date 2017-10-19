@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131649: Using Help Causes Text or Image to Disappear in Paint"
-permalink: kb/131/Q131649/
+permalink: /kb/131/Q131649/
 ---
 
 ## Q131649: Using Help Causes Text or Image to Disappear in Paint

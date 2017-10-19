@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94382: Can't Print from MS-DOS-Based WordPerfect with FaceLift"
-permalink: kb/094/Q94382/
+permalink: /kb/094/Q94382/
 ---
 
 ## Q94382: Can't Print from MS-DOS-Based WordPerfect with FaceLift

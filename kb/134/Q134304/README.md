@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134304: Troubleshooting Browsing with Client for Microsoft Networks"
-permalink: kb/134/Q134304/
+permalink: /kb/134/Q134304/
 ---
 
 ## Q134304: Troubleshooting Browsing with Client for Microsoft Networks

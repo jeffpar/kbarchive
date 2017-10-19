@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130145: BUG: SourceSafe and Windows Debug Kernel Causes Termination"
-permalink: kb/130/Q130145/
+permalink: /kb/130/Q130145/
 ---
 
 ## Q130145: BUG: SourceSafe and Windows Debug Kernel Causes Termination

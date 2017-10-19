@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173618: Windows 95 Client Trap in SnaBase Using IPX on Windows NT"
-permalink: kb/173/Q173618/
+permalink: /kb/173/Q173618/
 ---
 
 ## Q173618: Windows 95 Client Trap in SnaBase Using IPX on Windows NT

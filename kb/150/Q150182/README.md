@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150182: FIX: A Picture Box Containing Labels May Not Repaint Correctly"
-permalink: kb/150/Q150182/
+permalink: /kb/150/Q150182/
 ---
 
 ## Q150182: FIX: A Picture Box Containing Labels May Not Repaint Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171988: HOWTO: Pass Parameters to a Word 97 Macro"
-permalink: kb/171/Q171988/
+permalink: /kb/171/Q171988/
 ---
 
 ## Q171988: HOWTO: Pass Parameters to a Word 97 Macro

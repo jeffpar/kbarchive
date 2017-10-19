@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221643: FIX:Shortcut Menus Limited by Form Size, Have Up/Down Arrows"
-permalink: kb/221/Q221643/
+permalink: /kb/221/Q221643/
 ---
 
 ## Q221643: FIX:Shortcut Menus Limited by Form Size, Have Up/Down Arrows

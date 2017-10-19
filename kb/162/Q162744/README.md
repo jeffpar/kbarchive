@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162744: Using AOL's Internet Connection with Windows Programs"
-permalink: kb/162/Q162744/
+permalink: /kb/162/Q162744/
 ---
 
 ## Q162744: Using AOL's Internet Connection with Windows Programs

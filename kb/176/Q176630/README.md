@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176630: SMSINST: How to Use a Custom Progress Dialog"
-permalink: kb/176/Q176630/
+permalink: /kb/176/Q176630/
 ---
 
 ## Q176630: SMSINST: How to Use a Custom Progress Dialog

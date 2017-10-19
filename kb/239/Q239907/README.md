@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239907: Too Many Printers Can Cause Unsuccessful Boot"
-permalink: kb/239/Q239907/
+permalink: /kb/239/Q239907/
 ---
 
 ## Q239907: Too Many Printers Can Cause Unsuccessful Boot

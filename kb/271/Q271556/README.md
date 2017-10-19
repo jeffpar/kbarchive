@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271556: SMS: Advertisements Not Sent If IBM DB2 Installed"
-permalink: kb/271/Q271556/
+permalink: /kb/271/Q271556/
 ---
 
 ## Q271556: SMS: Advertisements Not Sent If IBM DB2 Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92729: Windows Sound System Version 1.0 Disk Directory Listings"
-permalink: kb/092/Q92729/
+permalink: /kb/092/Q92729/
 ---
 
 ## Q92729: Windows Sound System Version 1.0 Disk Directory Listings

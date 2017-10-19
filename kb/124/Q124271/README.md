@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124271: PRB: Heap Walker's Object: USER LocalWalk Doesn't Track Data"
-permalink: kb/124/Q124271/
+permalink: /kb/124/Q124271/
 ---
 
 ## Q124271: PRB: Heap Walker's Object: USER LocalWalk Doesn't Track Data

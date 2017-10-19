@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185628: PRB: REPORT FORM TO PRINT Results in Incorrect Data"
-permalink: kb/185/Q185628/
+permalink: /kb/185/Q185628/
 ---
 
 ## Q185628: PRB: REPORT FORM TO PRINT Results in Incorrect Data

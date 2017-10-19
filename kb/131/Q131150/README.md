@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131150: SMTP: Causes of Hangs on Mail Gateway to SMTP"
-permalink: kb/131/Q131150/
+permalink: /kb/131/Q131150/
 ---
 
 ## Q131150: SMTP: Causes of Hangs on Mail Gateway to SMTP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158488: XCON: Event Log: Queue-Desc-Object (ID 1) Not Found . . ."
-permalink: kb/158/Q158488/
+permalink: /kb/158/Q158488/
 ---
 
 ## Q158488: XCON: Event Log: Queue-Desc-Object (ID 1) Not Found . . .

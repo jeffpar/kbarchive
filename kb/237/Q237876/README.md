@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237876: XADM: Cyrillic Characters in TNEF Not Converted Properly"
-permalink: kb/237/Q237876/
+permalink: /kb/237/Q237876/
 ---
 
 ## Q237876: XADM: Cyrillic Characters in TNEF Not Converted Properly

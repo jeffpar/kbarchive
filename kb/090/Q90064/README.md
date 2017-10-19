@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90064: PPT: Cannot Find/Replace Quotation Marks or Apostrophe"
-permalink: kb/090/Q90064/
+permalink: /kb/090/Q90064/
 ---
 
 ## Q90064: PPT: Cannot Find/Replace Quotation Marks or Apostrophe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277928: Snaservr.exe Access Violation in Functions S1PPIUSN &amp; S1PPSTAD"
-permalink: kb/277/Q277928/
+permalink: /kb/277/Q277928/
 ---
 
 ## Q277928: Snaservr.exe Access Violation in Functions S1PPIUSN &amp; S1PPSTAD

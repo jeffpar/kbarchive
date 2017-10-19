@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164351: Command Prompt's Treatment of Long File Extensions"
-permalink: kb/164/Q164351/
+permalink: /kb/164/Q164351/
 ---
 
 ## Q164351: Command Prompt's Treatment of Long File Extensions

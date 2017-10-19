@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163555: Admin Displays LU as Available When It Really Is Not"
-permalink: kb/163/Q163555/
+permalink: /kb/163/Q163555/
 ---
 
 ## Q163555: Admin Displays LU as Available When It Really Is Not

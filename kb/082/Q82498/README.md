@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82498: Windows Setup Fails If No WIN.INI or SYSTEM.INI"
-permalink: kb/082/Q82498/
+permalink: /kb/082/Q82498/
 ---
 
 ## Q82498: Windows Setup Fails If No WIN.INI or SYSTEM.INI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281507: Dependent LU6.2 Session Requests May Hang If Default Pool Used"
-permalink: kb/281/Q281507/
+permalink: /kb/281/Q281507/
 ---
 
 ## Q281507: Dependent LU6.2 Session Requests May Hang If Default Pool Used

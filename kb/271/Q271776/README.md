@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271776: HOWTO: Create MSDN Library Shared Install Point on the Network"
-permalink: kb/271/Q271776/
+permalink: /kb/271/Q271776/
 ---
 
 ## Q271776: HOWTO: Create MSDN Library Shared Install Point on the Network

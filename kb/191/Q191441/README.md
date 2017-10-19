@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191441: Systems Management Server 1.2 Service Pack 4 Fixlist"
-permalink: kb/191/Q191441/
+permalink: /kb/191/Q191441/
 ---
 
 ## Q191441: Systems Management Server 1.2 Service Pack 4 Fixlist

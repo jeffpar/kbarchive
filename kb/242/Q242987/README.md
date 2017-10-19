@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242987: Host Security Domain Disappears from SNA Server Manager"
-permalink: kb/242/Q242987/
+permalink: /kb/242/Q242987/
 ---
 
 ## Q242987: Host Security Domain Disappears from SNA Server Manager

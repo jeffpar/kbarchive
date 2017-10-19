@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207729: SMS: Excluding Computers from Windows NT Remote Client Install"
-permalink: kb/207/Q207729/
+permalink: /kb/207/Q207729/
 ---
 
 ## Q207729: SMS: Excluding Computers from Windows NT Remote Client Install

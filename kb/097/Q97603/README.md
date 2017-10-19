@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97603: Cannot Resize Microsoft Backup for Windows"
-permalink: kb/097/Q97603/
+permalink: /kb/097/Q97603/
 ---
 
 ## Q97603: Cannot Resize Microsoft Backup for Windows

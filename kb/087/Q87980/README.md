@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87980: SYSTEM.INI Entries Made by PC-Speaker Explained"
-permalink: kb/087/Q87980/
+permalink: /kb/087/Q87980/
 ---
 
 ## Q87980: SYSTEM.INI Entries Made by PC-Speaker Explained

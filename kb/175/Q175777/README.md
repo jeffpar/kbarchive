@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175777: XWEB: Outlook Web Access Attachments are Received Empty"
-permalink: kb/175/Q175777/
+permalink: /kb/175/Q175777/
 ---
 
 ## Q175777: XWEB: Outlook Web Access Attachments are Received Empty

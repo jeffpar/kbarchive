@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297686: XADM: Mbclean Cleans Msgs. by PR_LAST_MODIFICATION_TIME in SP4"
-permalink: kb/297/Q297686/
+permalink: /kb/297/Q297686/
 ---
 
 ## Q297686: XADM: Mbclean Cleans Msgs. by PR_LAST_MODIFICATION_TIME in SP4

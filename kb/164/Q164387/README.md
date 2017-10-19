@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164387: PRB: Send SQL Updates is Checked but Data Not Saved"
-permalink: kb/164/Q164387/
+permalink: /kb/164/Q164387/
 ---
 
 ## Q164387: PRB: Send SQL Updates is Checked but Data Not Saved

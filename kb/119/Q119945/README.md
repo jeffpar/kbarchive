@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119945: Characters Overlapped Printing to Epson EPL-6000"
-permalink: kb/119/Q119945/
+permalink: /kb/119/Q119945/
 ---
 
 ## Q119945: Characters Overlapped Printing to Epson EPL-6000

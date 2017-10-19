@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161183: HOWTO: Use the Pinnacle Graph Control to Graph Data"
-permalink: kb/161/Q161183/
+permalink: /kb/161/Q161183/
 ---
 
 ## Q161183: HOWTO: Use the Pinnacle Graph Control to Graph Data

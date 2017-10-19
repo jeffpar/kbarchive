@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194753: BUG: Divide Error When Compiling Project From Command Line"
-permalink: kb/194/Q194753/
+permalink: /kb/194/Q194753/
 ---
 
 ## Q194753: BUG: Divide Error When Compiling Project From Command Line

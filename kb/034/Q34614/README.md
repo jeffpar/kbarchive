@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34614: INFO: Creating Lines with a Nonstandard Pattern"
-permalink: kb/034/Q34614/
+permalink: /kb/034/Q34614/
 ---
 
 ## Q34614: INFO: Creating Lines with a Nonstandard Pattern

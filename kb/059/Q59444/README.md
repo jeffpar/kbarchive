@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59444: Mac Wkst: Unable to Read Mail While on a Macintosh Portable"
-permalink: kb/059/Q59444/
+permalink: /kb/059/Q59444/
 ---
 
 ## Q59444: Mac Wkst: Unable to Read Mail While on a Macintosh Portable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147555: Connecting to NetWare Servers Using Schedule Service"
-permalink: kb/147/Q147555/
+permalink: /kb/147/Q147555/
 ---
 
 ## Q147555: Connecting to NetWare Servers Using Schedule Service

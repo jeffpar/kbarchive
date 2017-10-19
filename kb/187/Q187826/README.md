@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187826: SNA 4.0 Server Backup Information Can Be Centrally Administered"
-permalink: kb/187/Q187826/
+permalink: /kb/187/Q187826/
 ---
 
 ## Q187826: SNA 4.0 Server Backup Information Can Be Centrally Administered

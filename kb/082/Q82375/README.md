@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82375: SMARTDrive Settings and Windows Running in Standard Mode"
-permalink: kb/082/Q82375/
+permalink: /kb/082/Q82375/
 ---
 
 ## Q82375: SMARTDrive Settings and Windows Running in Standard Mode

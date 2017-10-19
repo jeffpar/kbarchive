@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295368: Windows Service Packs May Use Shared Folder Drive For Temp Files"
-permalink: kb/295/Q295368/
+permalink: /kb/295/Q295368/
 ---
 
 ## Q295368: Windows Service Packs May Use Shared Folder Drive For Temp Files

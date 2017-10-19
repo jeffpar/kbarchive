@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129869: Why GUIDs Change On Every Recompile Of OLE Automation Server"
-permalink: kb/129/Q129869/
+permalink: /kb/129/Q129869/
 ---
 
 ## Q129869: Why GUIDs Change On Every Recompile Of OLE Automation Server

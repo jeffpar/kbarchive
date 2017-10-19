@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q99419: PC DB: Database Maintenance Utilities [Complete]"
-permalink: kb/099/Q99419/
+title: "Q99419: PC DB: Database Maintenance Utilities &#91;Complete&#93;"
+permalink: /kb/099/Q99419/
 ---
 
-## Q99419: PC DB: Database Maintenance Utilities [Complete]
+## Q99419: PC DB: Database Maintenance Utilities &#91;Complete&#93;
 
 	Article: Q99419
 	Product(s): Microsoft Mail For PC Networks

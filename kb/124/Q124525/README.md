@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124525: INFO: How SourceSafe Locks Files in the DATA Directory"
-permalink: kb/124/Q124525/
+permalink: /kb/124/Q124525/
 ---
 
 ## Q124525: INFO: How SourceSafe Locks Files in the DATA Directory

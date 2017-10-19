@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57975: Joystick Does Not Function with Tandy 1000 SL, TX"
-permalink: kb/057/Q57975/
+permalink: /kb/057/Q57975/
 ---
 
 ## Q57975: Joystick Does Not Function with Tandy 1000 SL, TX

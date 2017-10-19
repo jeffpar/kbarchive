@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244554: FIX: Oracle ODBC Driver Appends Trailing Zero to Numeric Columns"
-permalink: kb/244/Q244554/
+permalink: /kb/244/Q244554/
 ---
 
 ## Q244554: FIX: Oracle ODBC Driver Appends Trailing Zero to Numeric Columns

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151860: STOP 0x0A While Writing to the Middle of a Cached File"
-permalink: kb/151/Q151860/
+permalink: /kb/151/Q151860/
 ---
 
 ## Q151860: STOP 0x0A While Writing to the Middle of a Cached File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168098: WD97: Password Protection Lost When Saving as Earlier Versions"
-permalink: kb/168/Q168098/
+permalink: /kb/168/Q168098/
 ---
 
 ## Q168098: WD97: Password Protection Lost When Saving as Earlier Versions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103956: How ScanDisk Fixes Bad Sectors"
-permalink: kb/103/Q103956/
+permalink: /kb/103/Q103956/
 ---
 
 ## Q103956: How ScanDisk Fixes Bad Sectors

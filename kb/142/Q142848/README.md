@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142848: Installing IIS Over Previously Installed Beta Versions"
-permalink: kb/142/Q142848/
+permalink: /kb/142/Q142848/
 ---
 
 ## Q142848: Installing IIS Over Previously Installed Beta Versions

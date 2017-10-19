@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248636: Error When Executing a Query from ODBC Client in Windows NT 4.0"
-permalink: kb/248/Q248636/
+permalink: /kb/248/Q248636/
 ---
 
 ## Q248636: Error When Executing a Query from ODBC Client in Windows NT 4.0

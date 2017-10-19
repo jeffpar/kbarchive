@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140614: PRB: SYS(2004) Returns Incorrect Directory"
-permalink: kb/140/Q140614/
+permalink: /kb/140/Q140614/
 ---
 
 ## Q140614: PRB: SYS(2004) Returns Incorrect Directory

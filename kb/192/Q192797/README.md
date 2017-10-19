@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192797: Computer Stops Responding When Smart Card Is Ejected"
-permalink: kb/192/Q192797/
+permalink: /kb/192/Q192797/
 ---
 
 ## Q192797: Computer Stops Responding When Smart Card Is Ejected

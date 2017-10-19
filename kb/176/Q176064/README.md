@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176064: Cannot Change the Default MSN E-mail Program to Outlook 97"
-permalink: kb/176/Q176064/
+permalink: /kb/176/Q176064/
 ---
 
 ## Q176064: Cannot Change the Default MSN E-mail Program to Outlook 97

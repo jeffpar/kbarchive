@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128798: Marquee Screen Saver Displays Wrong Colors During Remote Control"
-permalink: kb/128/Q128798/
+permalink: /kb/128/Q128798/
 ---
 
 ## Q128798: Marquee Screen Saver Displays Wrong Colors During Remote Control

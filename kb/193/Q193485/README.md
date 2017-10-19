@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193485: XADM: Exchange Server 5.5 120-Day Evaluation Copy Expiring"
-permalink: kb/193/Q193485/
+permalink: /kb/193/Q193485/
 ---
 
 ## Q193485: XADM: Exchange Server 5.5 120-Day Evaluation Copy Expiring

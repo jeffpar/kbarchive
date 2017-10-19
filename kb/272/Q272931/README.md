@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272931: PRB: Get on a project label returns the wrong version of a file"
-permalink: kb/272/Q272931/
+permalink: /kb/272/Q272931/
 ---
 
 ## Q272931: PRB: Get on a project label returns the wrong version of a file

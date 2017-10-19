@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123771: SMS Site Configuration Manager Fails to Add Domain/Server"
-permalink: kb/123/Q123771/
+permalink: /kb/123/Q123771/
 ---
 
 ## Q123771: SMS Site Configuration Manager Fails to Add Domain/Server

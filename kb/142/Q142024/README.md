@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142024: How to Configure the Windows NT RPC Name Service Provider"
-permalink: kb/142/Q142024/
+permalink: /kb/142/Q142024/
 ---
 
 ## Q142024: How to Configure the Windows NT RPC Name Service Provider

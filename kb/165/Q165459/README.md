@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165459: Internal Tracing for 32-bit CPI-C Applications Not Available"
-permalink: kb/165/Q165459/
+permalink: /kb/165/Q165459/
 ---
 
 ## Q165459: Internal Tracing for 32-bit CPI-C Applications Not Available

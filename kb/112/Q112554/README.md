@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112554: No Pronunciations or Foreign Language Sounds"
-permalink: kb/112/Q112554/
+permalink: /kb/112/Q112554/
 ---
 
 ## Q112554: No Pronunciations or Foreign Language Sounds

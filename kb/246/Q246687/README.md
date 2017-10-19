@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246687: BUG: DDX_ and DDP_ Functions Don't Work for ComboBoxEx in COlePr"
-permalink: kb/246/Q246687/
+permalink: /kb/246/Q246687/
 ---
 
 ## Q246687: BUG: DDX_ and DDP_ Functions Don't Work for ComboBoxEx in COlePr

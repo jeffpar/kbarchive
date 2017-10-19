@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105000: RESTACC Fails with &quot;SYS0111 File Name Too Long&quot; Error"
-permalink: kb/105/Q105000/
+permalink: /kb/105/Q105000/
 ---
 
 ## Q105000: RESTACC Fails with &quot;SYS0111 File Name Too Long&quot; Error

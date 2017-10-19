@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148465: Complete Gardening: Unable to Edit Journal Entry Title"
-permalink: kb/148/Q148465/
+permalink: /kb/148/Q148465/
 ---
 
 ## Q148465: Complete Gardening: Unable to Edit Journal Entry Title

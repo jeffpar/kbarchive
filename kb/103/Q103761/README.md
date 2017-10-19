@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103761: Adaptec 1742 Controller Traps when LM Install is Restarted"
-permalink: kb/103/Q103761/
+permalink: /kb/103/Q103761/
 ---
 
 ## Q103761: Adaptec 1742 Controller Traps when LM Install is Restarted

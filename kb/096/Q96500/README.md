@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96500: PC Win: Err Msg: A TPL File Has Been Incorrectly Modified..."
-permalink: kb/096/Q96500/
+permalink: /kb/096/Q96500/
 ---
 
 ## Q96500: PC Win: Err Msg: A TPL File Has Been Incorrectly Modified...

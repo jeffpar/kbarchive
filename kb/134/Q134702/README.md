@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134702: PRB: &quot;VFP300.ESL: Error Code=0&quot; Error Occurs When Running .EXE"
-permalink: kb/134/Q134702/
+permalink: /kb/134/Q134702/
 ---
 
 ## Q134702: PRB: &quot;VFP300.ESL: Error Code=0&quot; Error Occurs When Running .EXE

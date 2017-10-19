@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158614: INFO: STL Sample for the Vector Class Using the operator== Funct"
-permalink: kb/158/Q158614/
+permalink: /kb/158/Q158614/
 ---
 
 ## Q158614: INFO: STL Sample for the Vector Class Using the operator== Funct

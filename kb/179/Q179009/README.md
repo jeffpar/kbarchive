@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179009: SMS: DATALOADER Is Unable to Process MIFs"
-permalink: kb/179/Q179009/
+permalink: /kb/179/Q179009/
 ---
 
 ## Q179009: SMS: DATALOADER Is Unable to Process MIFs

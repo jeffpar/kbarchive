@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166433: Character Map Displays Incorrect Information in Taiwan Locale"
-permalink: kb/166/Q166433/
+permalink: /kb/166/Q166433/
 ---
 
 ## Q166433: Character Map Displays Incorrect Information in Taiwan Locale

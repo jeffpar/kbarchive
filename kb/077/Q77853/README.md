@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77853: Older Versions of Disk Manager Do Not Have XBIOS.OVL"
-permalink: kb/077/Q77853/
+permalink: /kb/077/Q77853/
 ---
 
 ## Q77853: Older Versions of Disk Manager Do Not Have XBIOS.OVL

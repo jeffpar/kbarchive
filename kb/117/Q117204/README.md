@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117204: COMMAND+PERIOD Key Combination Works Similarly to ESC Key"
-permalink: kb/117/Q117204/
+permalink: /kb/117/Q117204/
 ---
 
 ## Q117204: COMMAND+PERIOD Key Combination Works Similarly to ESC Key

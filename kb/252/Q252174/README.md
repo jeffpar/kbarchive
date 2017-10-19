@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252174: IISAdmin Fails to Start When the Metabase Is Too Large"
-permalink: kb/252/Q252174/
+permalink: /kb/252/Q252174/
 ---
 
 ## Q252174: IISAdmin Fails to Start When the Metabase Is Too Large

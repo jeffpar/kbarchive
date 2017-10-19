@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241531: HOWTO: Create a UI-Less eVC DLL for Use in an eVB Application"
-permalink: kb/241/Q241531/
+permalink: /kb/241/Q241531/
 ---
 
 ## Q241531: HOWTO: Create a UI-Less eVC DLL for Use in an eVB Application

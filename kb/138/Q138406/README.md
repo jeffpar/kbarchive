@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138406: Cannot Access Multiple Panasonic CD-5xx Series CD-ROM Drives"
-permalink: kb/138/Q138406/
+permalink: /kb/138/Q138406/
 ---
 
 ## Q138406: Cannot Access Multiple Panasonic CD-5xx Series CD-ROM Drives

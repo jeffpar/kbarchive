@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114685: STOP - The Parameter is Incorrect"
-permalink: kb/114/Q114685/
+permalink: /kb/114/Q114685/
 ---
 
 ## Q114685: STOP - The Parameter is Incorrect

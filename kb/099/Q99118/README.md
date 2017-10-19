@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99118: PC Forms: E-Form Causes GP Fault"
-permalink: kb/099/Q99118/
+permalink: /kb/099/Q99118/
 ---
 
 ## Q99118: PC Forms: E-Form Causes GP Fault

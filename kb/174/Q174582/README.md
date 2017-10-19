@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174582: Most Microsoft Press Books Require Related Software"
-permalink: kb/174/Q174582/
+permalink: /kb/174/Q174582/
 ---
 
 ## Q174582: Most Microsoft Press Books Require Related Software

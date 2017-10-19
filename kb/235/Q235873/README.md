@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235873: SMS: Specifying Preferred Servers in Systems Management Server"
-permalink: kb/235/Q235873/
+permalink: /kb/235/Q235873/
 ---
 
 ## Q235873: SMS: Specifying Preferred Servers in Systems Management Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149081: How to Properly Reinstall MSN Version 1.2"
-permalink: kb/149/Q149081/
+permalink: /kb/149/Q149081/
 ---
 
 ## Q149081: How to Properly Reinstall MSN Version 1.2

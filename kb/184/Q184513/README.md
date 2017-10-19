@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184513: WD97: &quot;Create a Custom HTML Template&quot; Incorrect in Word Help"
-permalink: kb/184/Q184513/
+permalink: /kb/184/Q184513/
 ---
 
 ## Q184513: WD97: &quot;Create a Custom HTML Template&quot; Incorrect in Word Help

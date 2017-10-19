@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150378: FIX: C1001 if No Template Types in Template Func Arg List"
-permalink: kb/150/Q150378/
+permalink: /kb/150/Q150378/
 ---
 
 ## Q150378: FIX: C1001 if No Template Types in Template Func Arg List

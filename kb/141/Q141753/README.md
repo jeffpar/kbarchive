@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141753: Memory Violation Running Attachmate Extra! for Windows in WOW"
-permalink: kb/141/Q141753/
+permalink: /kb/141/Q141753/
 ---
 
 ## Q141753: Memory Violation Running Attachmate Extra! for Windows in WOW

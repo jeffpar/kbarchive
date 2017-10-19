@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119581: PC Win: Using Mail Over RAS"
-permalink: kb/119/Q119581/
+permalink: /kb/119/Q119581/
 ---
 
 ## Q119581: PC Win: Using Mail Over RAS

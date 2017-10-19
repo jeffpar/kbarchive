@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162344: SMS Administrator Misinterprets Multiple Site Selections"
-permalink: kb/162/Q162344/
+permalink: /kb/162/Q162344/
 ---
 
 ## Q162344: SMS Administrator Misinterprets Multiple Site Selections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181386: Error Message Deleting File Using Setupapi.dll and INF Script"
-permalink: kb/181/Q181386/
+permalink: /kb/181/Q181386/
 ---
 
 ## Q181386: Error Message Deleting File Using Setupapi.dll and INF Script

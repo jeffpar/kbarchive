@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158789: Unexpected DRDA Reply Codepoint X.'220'C"
-permalink: kb/158/Q158789/
+permalink: /kb/158/Q158789/
 ---
 
 ## Q158789: Unexpected DRDA Reply Codepoint X.'220'C

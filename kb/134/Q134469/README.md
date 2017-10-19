@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134469: Sound Device on Digital HiNote Ultra with PNP BIOS Not Working"
-permalink: kb/134/Q134469/
+permalink: /kb/134/Q134469/
 ---
 
 ## Q134469: Sound Device on Digital HiNote Ultra with PNP BIOS Not Working

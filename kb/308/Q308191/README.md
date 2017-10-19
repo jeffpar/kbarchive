@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308191: Can't Use AppGetStatus in a Script to Administer IIS 5.1"
-permalink: kb/308/Q308191/
+permalink: /kb/308/Q308191/
 ---
 
 ## Q308191: Can't Use AppGetStatus in a Script to Administer IIS 5.1

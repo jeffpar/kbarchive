@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129840: ADVANCED WINDOWS: Corrections and Comments"
-permalink: kb/129/Q129840/
+permalink: /kb/129/Q129840/
 ---
 
 ## Q129840: ADVANCED WINDOWS: Corrections and Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197713: XCLN: ErrMsg: Authenticode Signature not Found with ODK"
-permalink: kb/197/Q197713/
+permalink: /kb/197/Q197713/
 ---
 
 ## Q197713: XCLN: ErrMsg: Authenticode Signature not Found with ODK

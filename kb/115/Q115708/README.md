@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q115708: FIX: C++ Compiler Treats &amp;array[][] as 2-D Array of References"
-permalink: kb/115/Q115708/
+title: "Q115708: FIX: C++ Compiler Treats &amp;array&#91;&#93;&#91;&#93; as 2-D Array of References"
+permalink: /kb/115/Q115708/
 ---
 
-## Q115708: FIX: C++ Compiler Treats &amp;array[][] as 2-D Array of References
+## Q115708: FIX: C++ Compiler Treats &amp;array&#91;&#93;&#91;&#93; as 2-D Array of References
 
 	Article: Q115708
 	Product(s): Microsoft C Compiler

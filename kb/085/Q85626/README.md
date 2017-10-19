@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85626: Canon BJ-130e Driver Causes Continuous Form Feeds"
-permalink: kb/085/Q85626/
+permalink: /kb/085/Q85626/
 ---
 
 ## Q85626: Canon BJ-130e Driver Causes Continuous Form Feeds

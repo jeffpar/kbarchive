@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192116: HOWTO: Configure Posting Acceptor to Work with the PDW"
-permalink: kb/192/Q192116/
+permalink: /kb/192/Q192116/
 ---
 
 ## Q192116: HOWTO: Configure Posting Acceptor to Work with the PDW

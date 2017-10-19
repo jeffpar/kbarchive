@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322800: Turn Off 8.3 Translation to Improve Client For NFS Performance"
-permalink: kb/322/Q322800/
+permalink: /kb/322/Q322800/
 ---
 
 ## Q322800: Turn Off 8.3 Translation to Improve Client For NFS Performance

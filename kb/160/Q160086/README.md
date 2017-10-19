@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160086: GP Fault at Startup with Remove-IT 95 Installed"
-permalink: kb/160/Q160086/
+permalink: /kb/160/Q160086/
 ---
 
 ## Q160086: GP Fault at Startup with Remove-IT 95 Installed

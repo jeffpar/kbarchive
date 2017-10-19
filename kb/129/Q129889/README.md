@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129889: How to Use a UDF in Index with the Trim Functions"
-permalink: kb/129/Q129889/
+permalink: /kb/129/Q129889/
 ---
 
 ## Q129889: How to Use a UDF in Index with the Trim Functions

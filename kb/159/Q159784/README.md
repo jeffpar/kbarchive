@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159784: Sony SDT 5000 Problems on AHA-1510"
-permalink: kb/159/Q159784/
+permalink: /kb/159/Q159784/
 ---
 
 ## Q159784: Sony SDT 5000 Problems on AHA-1510

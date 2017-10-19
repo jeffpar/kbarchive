@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39370: Addressing above 1 Megabyte Under MS-DOS"
-permalink: kb/039/Q39370/
+permalink: /kb/039/Q39370/
 ---
 
 ## Q39370: Addressing above 1 Megabyte Under MS-DOS

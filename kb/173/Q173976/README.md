@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173976: ADT/ODE: &quot;Help Workshop Is Out of Memory&quot; Error with Compression"
-permalink: kb/173/Q173976/
+permalink: /kb/173/Q173976/
 ---
 
 ## Q173976: ADT/ODE: &quot;Help Workshop Is Out of Memory&quot; Error with Compression

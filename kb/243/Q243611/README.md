@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243611: Setup Screens Freeze During MSN 5.0 Installation"
-permalink: kb/243/Q243611/
+permalink: /kb/243/Q243611/
 ---
 
 ## Q243611: Setup Screens Freeze During MSN 5.0 Installation

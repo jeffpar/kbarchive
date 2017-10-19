@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178536: FS98: Horizon Appears Gray or Distorted"
-permalink: kb/178/Q178536/
+permalink: /kb/178/Q178536/
 ---
 
 ## Q178536: FS98: Horizon Appears Gray or Distorted

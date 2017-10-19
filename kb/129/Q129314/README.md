@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129314: SCATTER &amp; GATHER Commands Have a New NAME Argument"
-permalink: kb/129/Q129314/
+permalink: /kb/129/Q129314/
 ---
 
 ## Q129314: SCATTER &amp; GATHER Commands Have a New NAME Argument

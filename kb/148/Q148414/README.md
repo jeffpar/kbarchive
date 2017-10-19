@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148414: FP: How to Add Subwebs and Create Links to Subwebs"
-permalink: kb/148/Q148414/
+permalink: /kb/148/Q148414/
 ---
 
 ## Q148414: FP: How to Add Subwebs and Create Links to Subwebs

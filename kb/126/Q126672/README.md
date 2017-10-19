@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126672: COMMAND.COM Parses Long Filenames to 8.3 Standard"
-permalink: kb/126/Q126672/
+permalink: /kb/126/Q126672/
 ---
 
 ## Q126672: COMMAND.COM Parses Long Filenames to 8.3 Standard

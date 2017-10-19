@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176389: PPT7: Embed TrueType Fonts in PowerPoint Windows Metafiles"
-permalink: kb/176/Q176389/
+permalink: /kb/176/Q176389/
 ---
 
 ## Q176389: PPT7: Embed TrueType Fonts in PowerPoint Windows Metafiles

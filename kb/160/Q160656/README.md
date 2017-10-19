@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160656: Foreground Application Responsiveness Change in WinNT 4.0"
-permalink: kb/160/Q160656/
+permalink: /kb/160/Q160656/
 ---
 
 ## Q160656: Foreground Application Responsiveness Change in WinNT 4.0

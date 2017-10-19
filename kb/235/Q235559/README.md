@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235559: Quick Course in Microsoft Outlook 2000 Comments and Corrections"
-permalink: kb/235/Q235559/
+permalink: /kb/235/Q235559/
 ---
 
 ## Q235559: Quick Course in Microsoft Outlook 2000 Comments and Corrections

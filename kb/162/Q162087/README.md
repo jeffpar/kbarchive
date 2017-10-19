@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162087: XCLN: Schedule + Meeting Wizard Won't Auto Pick Locations"
-permalink: kb/162/Q162087/
+permalink: /kb/162/Q162087/
 ---
 
 ## Q162087: XCLN: Schedule + Meeting Wizard Won't Auto Pick Locations

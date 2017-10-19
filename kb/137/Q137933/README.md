@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137933: &quot;The Port Is Already Open&quot; Starting Microsoft Exchange"
-permalink: kb/137/Q137933/
+permalink: /kb/137/Q137933/
 ---
 
 ## Q137933: &quot;The Port Is Already Open&quot; Starting Microsoft Exchange

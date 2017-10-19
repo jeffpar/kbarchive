@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117202: FIX: &quot;Set Bookmarks on All&quot; May Cause Application Error"
-permalink: kb/117/Q117202/
+permalink: /kb/117/Q117202/
 ---
 
 ## Q117202: FIX: &quot;Set Bookmarks on All&quot; May Cause Application Error

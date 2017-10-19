@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136977: DOCERR: Incomplete Instructions for Populating a Grid Control"
-permalink: kb/136/Q136977/
+permalink: /kb/136/Q136977/
 ---
 
 ## Q136977: DOCERR: Incomplete Instructions for Populating a Grid Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149154: BUG: Memory Leak Caused by Formatted Internal WRITE"
-permalink: kb/149/Q149154/
+permalink: /kb/149/Q149154/
 ---
 
 ## Q149154: BUG: Memory Leak Caused by Formatted Internal WRITE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235252: XCLN: Outlook 2000 Delegate Calendar Permissions Unavailable Aft"
-permalink: kb/235/Q235252/
+permalink: /kb/235/Q235252/
 ---
 
 ## Q235252: XCLN: Outlook 2000 Delegate Calendar Permissions Unavailable Aft

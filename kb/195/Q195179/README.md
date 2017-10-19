@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195179: Cannot Disable HTTP KeepAlives for HTTP/1.1 Clients"
-permalink: kb/195/Q195179/
+permalink: /kb/195/Q195179/
 ---
 
 ## Q195179: Cannot Disable HTTP KeepAlives for HTTP/1.1 Clients

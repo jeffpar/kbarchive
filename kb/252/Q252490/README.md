@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252490: HOWTO: Use ADSI to Query the Global Catalog for a UPN"
-permalink: kb/252/Q252490/
+permalink: /kb/252/Q252490/
 ---
 
 ## Q252490: HOWTO: Use ADSI to Query the Global Catalog for a UPN

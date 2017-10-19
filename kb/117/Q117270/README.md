@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117270: Named Pipe Applications Without Network Adapter Fail"
-permalink: kb/117/Q117270/
+permalink: /kb/117/Q117270/
 ---
 
 ## Q117270: Named Pipe Applications Without Network Adapter Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197235: XFOR: Notes Connector Creates a CT Table on First Startup"
-permalink: kb/197/Q197235/
+permalink: /kb/197/Q197235/
 ---
 
 ## Q197235: XFOR: Notes Connector Creates a CT Table on First Startup

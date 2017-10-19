@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249171: INFO: Clarification of SET CENTURY Help Topic in VFP 6.0 Help"
-permalink: kb/249/Q249171/
+permalink: /kb/249/Q249171/
 ---
 
 ## Q249171: INFO: Clarification of SET CENTURY Help Topic in VFP 6.0 Help

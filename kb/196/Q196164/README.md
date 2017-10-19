@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196164: XADM: Move Server Wizard Disk Space Requirements are Incorrect"
-permalink: kb/196/Q196164/
+permalink: /kb/196/Q196164/
 ---
 
 ## Q196164: XADM: Move Server Wizard Disk Space Requirements are Incorrect

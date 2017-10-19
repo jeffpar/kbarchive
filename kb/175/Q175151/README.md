@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175151: FS98/2000 Err Msg: There was an Unrecoverable Exception Error..."
-permalink: kb/175/Q175151/
+permalink: /kb/175/Q175151/
 ---
 
 ## Q175151: FS98/2000 Err Msg: There was an Unrecoverable Exception Error...

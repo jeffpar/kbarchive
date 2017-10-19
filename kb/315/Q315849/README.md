@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315849: Programming Microsoft Windows With C# Comments And Corrections"
-permalink: kb/315/Q315849/
+permalink: /kb/315/Q315849/
 ---
 
 ## Q315849: Programming Microsoft Windows With C# Comments And Corrections

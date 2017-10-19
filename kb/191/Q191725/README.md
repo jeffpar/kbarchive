@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191725: Err Msg: Insufficient Conventional Memory to Run Windows"
-permalink: kb/191/Q191725/
+permalink: /kb/191/Q191725/
 ---
 
 ## Q191725: Err Msg: Insufficient Conventional Memory to Run Windows

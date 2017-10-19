@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252868: How Index Server Determines Query and Indexing Languages"
-permalink: kb/252/Q252868/
+permalink: /kb/252/Q252868/
 ---
 
 ## Q252868: How Index Server Determines Query and Indexing Languages

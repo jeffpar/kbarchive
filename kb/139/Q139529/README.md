@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139529: Aztech and Reveal Cards: Poor Sound with Windows 32-Bit Drivers"
-permalink: kb/139/Q139529/
+permalink: /kb/139/Q139529/
 ---
 
 ## Q139529: Aztech and Reveal Cards: Poor Sound with Windows 32-Bit Drivers

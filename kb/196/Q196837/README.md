@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196837: BUG: Compile Errors Result for Certain ATL Method Parameters"
-permalink: kb/196/Q196837/
+permalink: /kb/196/Q196837/
 ---
 
 ## Q196837: BUG: Compile Errors Result for Certain ATL Method Parameters

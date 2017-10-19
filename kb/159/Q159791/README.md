@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159791: WD97: Word Count Appears Inaccurate"
-permalink: kb/159/Q159791/
+permalink: /kb/159/Q159791/
 ---
 
 ## Q159791: WD97: Word Count Appears Inaccurate

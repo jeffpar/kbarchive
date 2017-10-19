@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99106: PC WRmt: Mail Controls Windows During Active Modem Session"
-permalink: kb/099/Q99106/
+permalink: /kb/099/Q99106/
 ---
 
 ## Q99106: PC WRmt: Mail Controls Windows During Active Modem Session

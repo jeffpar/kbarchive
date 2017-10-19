@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183372: Running Microsoft FrontPage 98 Comments and Corrections"
-permalink: kb/183/Q183372/
+permalink: /kb/183/Q183372/
 ---
 
 ## Q183372: Running Microsoft FrontPage 98 Comments and Corrections

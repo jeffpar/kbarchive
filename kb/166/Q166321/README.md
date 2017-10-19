@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166321: Configuring Maximum IPX Packet Size in Windows 95"
-permalink: kb/166/Q166321/
+permalink: /kb/166/Q166321/
 ---
 
 ## Q166321: Configuring Maximum IPX Packet Size in Windows 95

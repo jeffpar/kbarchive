@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122296: INFO: List of Books About C++ Programming"
-permalink: kb/122/Q122296/
+permalink: /kb/122/Q122296/
 ---
 
 ## Q122296: INFO: List of Books About C++ Programming

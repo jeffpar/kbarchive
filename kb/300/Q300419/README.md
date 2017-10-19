@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300419: Internet Explorer 4.0 Fails to Connect to Passport Mgr Page"
-permalink: kb/300/Q300419/
+permalink: /kb/300/Q300419/
 ---
 
 ## Q300419: Internet Explorer 4.0 Fails to Connect to Passport Mgr Page

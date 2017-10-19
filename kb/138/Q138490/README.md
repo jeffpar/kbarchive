@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138490: PPT7: Shadow Missing from Text Printed on Black and White Printe"
-permalink: kb/138/Q138490/
+permalink: /kb/138/Q138490/
 ---
 
 ## Q138490: PPT7: Shadow Missing from Text Printed on Black and White Printe

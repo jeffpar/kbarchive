@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130703: PC MAPI: MAPILogon Can Only Be Called Once from an Application"
-permalink: kb/130/Q130703/
+permalink: /kb/130/Q130703/
 ---
 
 ## Q130703: PC MAPI: MAPILogon Can Only Be Called Once from an Application

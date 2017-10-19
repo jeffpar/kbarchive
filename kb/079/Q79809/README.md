@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79809: Persistent Net Connections with LAN Manager 2.1"
-permalink: kb/079/Q79809/
+permalink: /kb/079/Q79809/
 ---
 
 ## Q79809: Persistent Net Connections with LAN Manager 2.1

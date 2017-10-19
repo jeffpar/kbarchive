@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302721: Reset To POP3 E-mail From A Web-based E-mail Account In MSN Expl"
-permalink: kb/302/Q302721/
+permalink: /kb/302/Q302721/
 ---
 
 ## Q302721: Reset To POP3 E-mail From A Web-based E-mail Account In MSN Expl

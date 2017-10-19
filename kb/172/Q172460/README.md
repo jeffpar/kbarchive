@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172460: Cannot Connect to MSN After Internet Explorer Is Removed"
-permalink: kb/172/Q172460/
+permalink: /kb/172/Q172460/
 ---
 
 ## Q172460: Cannot Connect to MSN After Internet Explorer Is Removed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145961: XCLN: Err Msg: The Folder Could Not Be Opened..."
-permalink: kb/145/Q145961/
+permalink: /kb/145/Q145961/
 ---
 
 ## Q145961: XCLN: Err Msg: The Folder Could Not Be Opened...

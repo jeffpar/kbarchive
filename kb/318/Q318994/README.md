@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318994: How To Delete Corrupt Preference Files"
-permalink: kb/318/Q318994/
+permalink: /kb/318/Q318994/
 ---
 
 ## Q318994: How To Delete Corrupt Preference Files

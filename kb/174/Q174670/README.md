@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174670: Close Combat: Program Hangs During Game Play"
-permalink: kb/174/Q174670/
+permalink: /kb/174/Q174670/
 ---
 
 ## Q174670: Close Combat: Program Hangs During Game Play

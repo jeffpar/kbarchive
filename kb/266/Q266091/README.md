@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266091: Configuring for Host Compression When You Use Non-Extended BINDs"
-permalink: kb/266/Q266091/
+permalink: /kb/266/Q266091/
 ---
 
 ## Q266091: Configuring for Host Compression When You Use Non-Extended BINDs

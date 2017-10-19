@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153807: PRB: GetRowsEx Re-fetches Last Read Record in Subsequent Calls"
-permalink: kb/153/Q153807/
+permalink: /kb/153/Q153807/
 ---
 
 ## Q153807: PRB: GetRowsEx Re-fetches Last Read Record in Subsequent Calls

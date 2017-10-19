@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141389: DOCERR: Incorrect SET PRINTER Command Syntax for Net Printers"
-permalink: kb/141/Q141389/
+permalink: /kb/141/Q141389/
 ---
 
 ## Q141389: DOCERR: Incorrect SET PRINTER Command Syntax for Net Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100608: Windows Reboots at Startup on the Texas Instruments SP1000"
-permalink: kb/100/Q100608/
+permalink: /kb/100/Q100608/
 ---
 
 ## Q100608: Windows Reboots at Startup on the Texas Instruments SP1000

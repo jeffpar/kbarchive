@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115221: PRB: SET SKIP OF MENU _MSYSMENU .T. Not Disabling System Menu"
-permalink: kb/115/Q115221/
+permalink: /kb/115/Q115221/
 ---
 
 ## Q115221: PRB: SET SKIP OF MENU _MSYSMENU .T. Not Disabling System Menu

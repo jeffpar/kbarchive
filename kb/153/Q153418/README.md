@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153418: PRB: Error Caused By 68K EXE Created by Visual FoxPro Mac"
-permalink: kb/153/Q153418/
+permalink: /kb/153/Q153418/
 ---
 
 ## Q153418: PRB: Error Caused By 68K EXE Created by Visual FoxPro Mac

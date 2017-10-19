@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65679: How Windows Identifies Multiple Instances of MS-DOS Programs"
-permalink: kb/065/Q65679/
+permalink: /kb/065/Q65679/
 ---
 
 ## Q65679: How Windows Identifies Multiple Instances of MS-DOS Programs

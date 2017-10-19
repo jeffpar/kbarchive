@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131306: Transferring Data Between General Fields Programmatically"
-permalink: kb/131/Q131306/
+permalink: /kb/131/Q131306/
 ---
 
 ## Q131306: Transferring Data Between General Fields Programmatically

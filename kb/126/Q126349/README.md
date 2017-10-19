@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126349: PRB: FastDisk BusMaster DMA Disk Devices Crashes When Paging"
-permalink: kb/126/Q126349/
+permalink: /kb/126/Q126349/
 ---
 
 ## Q126349: PRB: FastDisk BusMaster DMA Disk Devices Crashes When Paging

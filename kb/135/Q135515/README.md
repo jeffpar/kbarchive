@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135515: DOC: Picture's Caption Different from Example's Caption"
-permalink: kb/135/Q135515/
+permalink: /kb/135/Q135515/
 ---
 
 ## Q135515: DOC: Picture's Caption Different from Example's Caption

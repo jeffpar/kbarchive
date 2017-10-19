@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152202: Dial-Up Networking Error 87"
-permalink: kb/152/Q152202/
+permalink: /kb/152/Q152202/
 ---
 
 ## Q152202: Dial-Up Networking Error 87

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251264: PRB: App.Logevent Fails in Components that You Call from ASP"
-permalink: kb/251/Q251264/
+permalink: /kb/251/Q251264/
 ---
 
 ## Q251264: PRB: App.Logevent Fails in Components that You Call from ASP

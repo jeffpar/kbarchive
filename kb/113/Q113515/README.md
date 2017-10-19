@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113515: MS DLC over ODI May Cause GP Faults in WFWG 3.11"
-permalink: kb/113/Q113515/
+permalink: /kb/113/Q113515/
 ---
 
 ## Q113515: MS DLC over ODI May Cause GP Faults in WFWG 3.11

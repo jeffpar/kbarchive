@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129803: INFO: Variable Coercion Rules in Visual Basic"
-permalink: kb/129/Q129803/
+permalink: /kb/129/Q129803/
 ---
 
 ## Q129803: INFO: Variable Coercion Rules in Visual Basic

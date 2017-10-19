@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171492: FIX: ActiveX Control Incorrectly Reports ScaleWidth/ScaleHeight"
-permalink: kb/171/Q171492/
+permalink: /kb/171/Q171492/
 ---
 
 ## Q171492: FIX: ActiveX Control Incorrectly Reports ScaleWidth/ScaleHeight

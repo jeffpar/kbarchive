@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207564: DOC: VBCE Error &quot;The Declare statement is incorrectly formatted&quot;"
-permalink: kb/207/Q207564/
+permalink: /kb/207/Q207564/
 ---
 
 ## Q207564: DOC: VBCE Error &quot;The Declare statement is incorrectly formatted&quot;

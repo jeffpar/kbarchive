@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125191: NETAPI.DLL Failure Code 02 in BOOTLOG.TXT"
-permalink: kb/125/Q125191/
+permalink: /kb/125/Q125191/
 ---
 
 ## Q125191: NETAPI.DLL Failure Code 02 in BOOTLOG.TXT

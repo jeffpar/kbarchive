@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257398: SFU: Cannot Use ALT+CONTROL Keys from Within a Telnet Session"
-permalink: kb/257/Q257398/
+permalink: /kb/257/Q257398/
 ---
 
 ## Q257398: SFU: Cannot Use ALT+CONTROL Keys from Within a Telnet Session

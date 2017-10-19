@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147458: End of Media Crossing During Windows NT Tape Backup"
-permalink: kb/147/Q147458/
+permalink: /kb/147/Q147458/
 ---
 
 ## Q147458: End of Media Crossing During Windows NT Tape Backup

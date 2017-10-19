@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130431: Appointments That End on the Next Day Are Not Archived"
-permalink: kb/130/Q130431/
+permalink: /kb/130/Q130431/
 ---
 
 ## Q130431: Appointments That End on the Next Day Are Not Archived

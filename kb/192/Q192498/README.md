@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192498: SMS: Repackage of Netscape Communicator 4.03 Fails to Show Icons"
-permalink: kb/192/Q192498/
+permalink: /kb/192/Q192498/
 ---
 
 ## Q192498: SMS: Repackage of Netscape Communicator 4.03 Fails to Show Icons

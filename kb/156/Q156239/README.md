@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156239: Encarta 97: Startup Error with IntelliType/IntelliPoint"
-permalink: kb/156/Q156239/
+permalink: /kb/156/Q156239/
 ---
 
 ## Q156239: Encarta 97: Startup Error with IntelliType/IntelliPoint

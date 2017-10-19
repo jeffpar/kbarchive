@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68278: COMPAQ SLT Screen Blanks When Returning to MS-DOS Prompt"
-permalink: kb/068/Q68278/
+permalink: /kb/068/Q68278/
 ---
 
 ## Q68278: COMPAQ SLT Screen Blanks When Returning to MS-DOS Prompt

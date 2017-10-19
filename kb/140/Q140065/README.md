@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140065: Multiprocessor Systems Randomly Restart or Stop Responding"
-permalink: kb/140/Q140065/
+permalink: /kb/140/Q140065/
 ---
 
 ## Q140065: Multiprocessor Systems Randomly Restart or Stop Responding

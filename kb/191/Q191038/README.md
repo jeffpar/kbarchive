@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191038: INFO: WebClass Initialize, BeginRequest, Terminate Events"
-permalink: kb/191/Q191038/
+permalink: /kb/191/Q191038/
 ---
 
 ## Q191038: INFO: WebClass Initialize, BeginRequest, Terminate Events

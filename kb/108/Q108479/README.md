@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108479: Extended Error 53 When Accessing Network Drives from MS-DOS"
-permalink: kb/108/Q108479/
+permalink: /kb/108/Q108479/
 ---
 
 ## Q108479: Extended Error 53 When Accessing Network Drives from MS-DOS

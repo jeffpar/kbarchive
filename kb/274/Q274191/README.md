@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274191: Router Service Hangs When Removing the Last OSPF NBMA Neighbor"
-permalink: kb/274/Q274191/
+permalink: /kb/274/Q274191/
 ---
 
 ## Q274191: Router Service Hangs When Removing the Last OSPF NBMA Neighbor

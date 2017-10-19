@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191172: FIX: Performance Degradation with Repeated SQL SELECTs"
-permalink: kb/191/Q191172/
+permalink: /kb/191/Q191172/
 ---
 
 ## Q191172: FIX: Performance Degradation with Repeated SQL SELECTs

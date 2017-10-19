@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257550: FIX: An Invalid Page Fault Error Occurs When You Use DataReport"
-permalink: kb/257/Q257550/
+permalink: /kb/257/Q257550/
 ---
 
 ## Q257550: FIX: An Invalid Page Fault Error Occurs When You Use DataReport

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133144: How to Export Folders in Microsoft Exchange"
-permalink: kb/133/Q133144/
+permalink: /kb/133/Q133144/
 ---
 
 ## Q133144: How to Export Folders in Microsoft Exchange

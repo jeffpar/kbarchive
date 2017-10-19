@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230745: XADM: Event 1333 Anonymous LDAP and MAPI Search Requests Denied"
-permalink: kb/230/Q230745/
+permalink: /kb/230/Q230745/
 ---
 
 ## Q230745: XADM: Event 1333 Anonymous LDAP and MAPI Search Requests Denied

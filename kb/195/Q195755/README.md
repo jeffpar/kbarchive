@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195755: BUG: Parent Property Returns Invalid Object Type for UserControl"
-permalink: kb/195/Q195755/
+permalink: /kb/195/Q195755/
 ---
 
 ## Q195755: BUG: Parent Property Returns Invalid Object Type for UserControl

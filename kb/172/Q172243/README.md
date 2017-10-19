@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172243: Error Message: The Member ID or Password Is Not Valid"
-permalink: kb/172/Q172243/
+permalink: /kb/172/Q172243/
 ---
 
 ## Q172243: Error Message: The Member ID or Password Is Not Valid

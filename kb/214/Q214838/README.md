@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214838: XFOR: Migrated PMLs Contain Empty Entries w/Resulting Event 10"
-permalink: kb/214/Q214838/
+permalink: /kb/214/Q214838/
 ---
 
 ## Q214838: XFOR: Migrated PMLs Contain Empty Entries w/Resulting Event 10

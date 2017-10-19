@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189756: PerfMon Percentage of Registry Quota in Use Displayed Wrong"
-permalink: kb/189/Q189756/
+permalink: /kb/189/Q189756/
 ---
 
 ## Q189756: PerfMon Percentage of Registry Quota in Use Displayed Wrong

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71364: Program Manager Command Line Limited to 80 Characters"
-permalink: kb/071/Q71364/
+permalink: /kb/071/Q71364/
 ---
 
 ## Q71364: Program Manager Command Line Limited to 80 Characters

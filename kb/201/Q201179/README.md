@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201179: SMS: How To Run Smsman.exe and Specify an NDS Logon Point"
-permalink: kb/201/Q201179/
+permalink: /kb/201/Q201179/
 ---
 
 ## Q201179: SMS: How To Run Smsman.exe and Specify an NDS Logon Point

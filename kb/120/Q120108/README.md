@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120108: BUG: dBASE: SQL_ERROR w/ SQLExecute/SQLFreeStmt(SQL_CLOSE)"
-permalink: kb/120/Q120108/
+permalink: /kb/120/Q120108/
 ---
 
 ## Q120108: BUG: dBASE: SQL_ERROR w/ SQLExecute/SQLFreeStmt(SQL_CLOSE)

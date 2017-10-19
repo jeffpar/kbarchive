@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90252: The Sound Menu Item Dimmed (Unavailable) in Hearts"
-permalink: kb/090/Q90252/
+permalink: /kb/090/Q90252/
 ---
 
 ## Q90252: The Sound Menu Item Dimmed (Unavailable) in Hearts

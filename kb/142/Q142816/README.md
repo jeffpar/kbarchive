@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142816: HOWTO: Make ENTER Key Move Focus Like TAB Key for VB Controls"
-permalink: kb/142/Q142816/
+permalink: /kb/142/Q142816/
 ---
 
 ## Q142816: HOWTO: Make ENTER Key Move Focus Like TAB Key for VB Controls

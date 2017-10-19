@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154073: ADT95: MSDBOUTL.OCX Unable to Register Itself in System Registry"
-permalink: kb/154/Q154073/
+permalink: /kb/154/Q154073/
 ---
 
 ## Q154073: ADT95: MSDBOUTL.OCX Unable to Register Itself in System Registry

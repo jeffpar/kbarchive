@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183152: XCLN: OWA Error Message: Failed to Send This Item"
-permalink: kb/183/Q183152/
+permalink: /kb/183/Q183152/
 ---
 
 ## Q183152: XCLN: OWA Error Message: Failed to Send This Item

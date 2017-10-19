@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134654: Macintosh Client Error Attempting to Log On to Windows NT"
-permalink: kb/134/Q134654/
+permalink: /kb/134/Q134654/
 ---
 
 ## Q134654: Macintosh Client Error Attempting to Log On to Windows NT

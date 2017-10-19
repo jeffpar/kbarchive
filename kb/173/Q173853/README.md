@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173853: PRB: Error 32002 &quot;Unspecified Error&quot; When Adding an Attachment"
-permalink: kb/173/Q173853/
+permalink: /kb/173/Q173853/
 ---
 
 ## Q173853: PRB: Error 32002 &quot;Unspecified Error&quot; When Adding an Attachment

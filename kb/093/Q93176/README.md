@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93176: PC MAPI: Err Msg: MAPI ERROR: Unknown Recipient"
-permalink: kb/093/Q93176/
+permalink: /kb/093/Q93176/
 ---
 
 ## Q93176: PC MAPI: Err Msg: MAPI ERROR: Unknown Recipient

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167205: RAS Event ID: 20055 Caused by Missing NetBios Interface"
-permalink: kb/167/Q167205/
+permalink: /kb/167/Q167205/
 ---
 
 ## Q167205: RAS Event ID: 20055 Caused by Missing NetBios Interface

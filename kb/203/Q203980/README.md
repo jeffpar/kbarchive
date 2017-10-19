@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203980: PRB: Error 282 Connecting to VB5 or VB6 DDE Server"
-permalink: kb/203/Q203980/
+permalink: /kb/203/Q203980/
 ---
 
 ## Q203980: PRB: Error 282 Connecting to VB5 or VB6 DDE Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253595: HOWTO: Build Indexes with DateTime Fields and Other Data Types"
-permalink: kb/253/Q253595/
+permalink: /kb/253/Q253595/
 ---
 
 ## Q253595: HOWTO: Build Indexes with DateTime Fields and Other Data Types

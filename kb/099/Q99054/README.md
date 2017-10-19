@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99054: Mac Wkst: Message Was Sent Using a Custom Form"
-permalink: kb/099/Q99054/
+permalink: /kb/099/Q99054/
 ---
 
 ## Q99054: Mac Wkst: Message Was Sent Using a Custom Form

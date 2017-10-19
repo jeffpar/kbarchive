@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240749: BUG: WM_LBUTTONUP Message May Not Fire"
-permalink: kb/240/Q240749/
+permalink: /kb/240/Q240749/
 ---
 
 ## Q240749: BUG: WM_LBUTTONUP Message May Not Fire

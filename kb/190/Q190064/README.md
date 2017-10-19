@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190064: HOWTO: Build SELECT Statements Based on User Column Privileges"
-permalink: kb/190/Q190064/
+permalink: /kb/190/Q190064/
 ---
 
 ## Q190064: HOWTO: Build SELECT Statements Based on User Column Privileges

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105297: Mozart: Sound Problems on Minimum Configuration System"
-permalink: kb/105/Q105297/
+permalink: /kb/105/Q105297/
 ---
 
 ## Q105297: Mozart: Sound Problems on Minimum Configuration System

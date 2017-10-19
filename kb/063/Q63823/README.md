@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63823: Presentation Mode Not Working on PaintJet XL in Windows 3.0"
-permalink: kb/063/Q63823/
+permalink: /kb/063/Q63823/
 ---
 
 ## Q63823: Presentation Mode Not Working on PaintJet XL in Windows 3.0

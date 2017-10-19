@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120424: &quot;Ghost&quot; Mouse Pointers on Quattro Pro for MS-DOS Spreadsheets"
-permalink: kb/120/Q120424/
+permalink: /kb/120/Q120424/
 ---
 
 ## Q120424: &quot;Ghost&quot; Mouse Pointers on Quattro Pro for MS-DOS Spreadsheets

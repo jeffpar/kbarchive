@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236355: DLC Link Service Adapter List Empty if 11+ Adapters Configured"
-permalink: kb/236/Q236355/
+permalink: /kb/236/Q236355/
 ---
 
 ## Q236355: DLC Link Service Adapter List Empty if 11+ Adapters Configured

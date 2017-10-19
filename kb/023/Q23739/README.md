@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q23739: INFO: Specify Compiler Options Before Source Filename"
-permalink: kb/023/Q23739/
+permalink: /kb/023/Q23739/
 ---
 
 ## Q23739: INFO: Specify Compiler Options Before Source Filename

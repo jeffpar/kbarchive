@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160329: Msbatch.inf Parameters: Installing with PCI Network Adapters"
-permalink: kb/160/Q160329/
+permalink: /kb/160/Q160329/
 ---
 
 ## Q160329: Msbatch.inf Parameters: Installing with PCI Network Adapters

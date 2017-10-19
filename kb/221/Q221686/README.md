@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221686: FIX: Hang When Arrowing Through Disabled Item in ComboBox"
-permalink: kb/221/Q221686/
+permalink: /kb/221/Q221686/
 ---
 
 ## Q221686: FIX: Hang When Arrowing Through Disabled Item in ComboBox

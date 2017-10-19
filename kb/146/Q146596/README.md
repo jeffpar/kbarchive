@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146596: XCLN: Cannot Open Linked Attachment in a Message"
-permalink: kb/146/Q146596/
+permalink: /kb/146/Q146596/
 ---
 
 ## Q146596: XCLN: Cannot Open Linked Attachment in a Message

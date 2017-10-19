@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259721: Unable to Log On and Authenticate with Novell Server 5.x"
-permalink: kb/259/Q259721/
+permalink: /kb/259/Q259721/
 ---
 
 ## Q259721: Unable to Log On and Authenticate with Novell Server 5.x

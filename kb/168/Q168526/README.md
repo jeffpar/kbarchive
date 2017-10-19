@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168526: FIX: Top-Level Form Releases Undocked Toolbars in VFP 5.0"
-permalink: kb/168/Q168526/
+permalink: /kb/168/Q168526/
 ---
 
 ## Q168526: FIX: Top-Level Form Releases Undocked Toolbars in VFP 5.0

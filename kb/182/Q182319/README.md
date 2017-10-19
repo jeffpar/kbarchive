@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182319: XADM: Admin.exe Dr. Watsons While Importing an Active Newsgroup"
-permalink: kb/182/Q182319/
+permalink: /kb/182/Q182319/
 ---
 
 ## Q182319: XADM: Admin.exe Dr. Watsons While Importing an Active Newsgroup

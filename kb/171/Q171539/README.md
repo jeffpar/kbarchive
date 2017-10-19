@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171539: FIX: TypeDef Model Doesn't Have Propagate Delete on Relationship"
-permalink: kb/171/Q171539/
+permalink: /kb/171/Q171539/
 ---
 
 ## Q171539: FIX: TypeDef Model Doesn't Have Propagate Delete on Relationship

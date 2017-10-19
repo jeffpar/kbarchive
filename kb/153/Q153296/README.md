@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153296: Write Cache on IDE/ATAPI Disks Is Not Flushed on Shut Down"
-permalink: kb/153/Q153296/
+permalink: /kb/153/Q153296/
 ---
 
 ## Q153296: Write Cache on IDE/ATAPI Disks Is Not Flushed on Shut Down

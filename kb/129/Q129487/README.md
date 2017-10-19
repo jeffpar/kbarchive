@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129487: Err Msg: Microsoft Backup Is Now Restoring the Settings in..."
-permalink: kb/129/Q129487/
+permalink: /kb/129/Q129487/
 ---
 
 ## Q129487: Err Msg: Microsoft Backup Is Now Restoring the Settings in...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166075: SNA Server Manager Disappears"
-permalink: kb/166/Q166075/
+permalink: /kb/166/Q166075/
 ---
 
 ## Q166075: SNA Server Manager Disappears

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201985: SMS: Unattended Windows NT Upgrades Need Network Card Settings"
-permalink: kb/201/Q201985/
+permalink: /kb/201/Q201985/
 ---
 
 ## Q201985: SMS: Unattended Windows NT Upgrades Need Network Card Settings

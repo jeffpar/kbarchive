@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114679: ADT2: Three Methods to Test Visual Basic Compatibility Layer"
-permalink: kb/114/Q114679/
+permalink: /kb/114/Q114679/
 ---
 
 ## Q114679: ADT2: Three Methods to Test Visual Basic Compatibility Layer

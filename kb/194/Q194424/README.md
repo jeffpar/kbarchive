@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194424: DHCP Server May Fail to Record Lease"
-permalink: kb/194/Q194424/
+permalink: /kb/194/Q194424/
 ---
 
 ## Q194424: DHCP Server May Fail to Record Lease

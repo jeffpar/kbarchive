@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260826: SMS: Multiple Advertisements May Not Work If One Is Unscheduled"
-permalink: kb/260/Q260826/
+permalink: /kb/260/Q260826/
 ---
 
 ## Q260826: SMS: Multiple Advertisements May Not Work If One Is Unscheduled

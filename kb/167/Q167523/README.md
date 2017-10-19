@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167523: HOWTO: Redistributing DAO with Your Visual C++ 5.0 Application"
-permalink: kb/167/Q167523/
+permalink: /kb/167/Q167523/
 ---
 
 ## Q167523: HOWTO: Redistributing DAO with Your Visual C++ 5.0 Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185967: HOWTO: Display Hierarchical Data Using the MSHFlexGrid"
-permalink: kb/185/Q185967/
+permalink: /kb/185/Q185967/
 ---
 
 ## Q185967: HOWTO: Display Hierarchical Data Using the MSHFlexGrid

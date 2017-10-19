@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139149: PPT7: Troubleshooting Video Driver UMA Conflicts"
-permalink: kb/139/Q139149/
+permalink: /kb/139/Q139149/
 ---
 
 ## Q139149: PPT7: Troubleshooting Video Driver UMA Conflicts

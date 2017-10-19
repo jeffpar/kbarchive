@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143063: How to Remove White Lines in Mailing Labels and Reports"
-permalink: kb/143/Q143063/
+permalink: /kb/143/Q143063/
 ---
 
 ## Q143063: How to Remove White Lines in Mailing Labels and Reports

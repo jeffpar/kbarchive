@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230212: How to Determine Which Y2K Patch Is Installed"
-permalink: kb/230/Q230212/
+permalink: /kb/230/Q230212/
 ---
 
 ## Q230212: How to Determine Which Y2K Patch Is Installed

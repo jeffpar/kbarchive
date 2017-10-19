@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297461: PRB: Sporadic Access Violations Originate from Inetinfo.exe"
-permalink: kb/297/Q297461/
+permalink: /kb/297/Q297461/
 ---
 
 ## Q297461: PRB: Sporadic Access Violations Originate from Inetinfo.exe

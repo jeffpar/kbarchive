@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196043: XADM: Directory Service Stops When Upgrading to 5.5 or 5.5 SP1"
-permalink: kb/196/Q196043/
+permalink: /kb/196/Q196043/
 ---
 
 ## Q196043: XADM: Directory Service Stops When Upgrading to 5.5 or 5.5 SP1

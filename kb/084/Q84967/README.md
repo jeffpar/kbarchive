@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84967: Buffalo Print Sharing Box Requires Fast Print Disabled"
-permalink: kb/084/Q84967/
+permalink: /kb/084/Q84967/
 ---
 
 ## Q84967: Buffalo Print Sharing Box Requires Fast Print Disabled

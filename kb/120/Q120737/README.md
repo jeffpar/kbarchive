@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120737: Winhlp32 &amp; Custom DLL Calling Conventions"
-permalink: kb/120/Q120737/
+permalink: /kb/120/Q120737/
 ---
 
 ## Q120737: Winhlp32 &amp; Custom DLL Calling Conventions

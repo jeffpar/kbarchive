@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236582: XADM: Event 1005: Your Profile Is Not Configured"
-permalink: kb/236/Q236582/
+permalink: /kb/236/Q236582/
 ---
 
 ## Q236582: XADM: Event 1005: Your Profile Is Not Configured

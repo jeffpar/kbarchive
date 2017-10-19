@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141560: Writer/Artist: UNCONF: Screen Colors Change After Printing"
-permalink: kb/141/Q141560/
+permalink: /kb/141/Q141560/
 ---
 
 ## Q141560: Writer/Artist: UNCONF: Screen Colors Change After Printing

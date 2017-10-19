@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135219: Left-Handed Mouse Does Not Work in Full-Screen MS-DOS Programs"
-permalink: kb/135/Q135219/
+permalink: /kb/135/Q135219/
 ---
 
 ## Q135219: Left-Handed Mouse Does Not Work in Full-Screen MS-DOS Programs

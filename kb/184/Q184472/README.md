@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184472: Zone: ZoneFriends Icon Remains on Taskbar When You Close Browser"
-permalink: kb/184/Q184472/
+permalink: /kb/184/Q184472/
 ---
 
 ## Q184472: Zone: ZoneFriends Icon Remains on Taskbar When You Close Browser

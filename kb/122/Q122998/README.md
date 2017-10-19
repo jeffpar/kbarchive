@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122998: PC MAPI: Visual Basic Example for C Code in Tech Reference"
-permalink: kb/122/Q122998/
+permalink: /kb/122/Q122998/
 ---
 
 ## Q122998: PC MAPI: Visual Basic Example for C Code in Tech Reference

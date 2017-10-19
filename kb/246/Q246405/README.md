@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246405: How to Close the MSN Quick View Icon"
-permalink: kb/246/Q246405/
+permalink: /kb/246/Q246405/
 ---
 
 ## Q246405: How to Close the MSN Quick View Icon

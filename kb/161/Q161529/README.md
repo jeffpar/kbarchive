@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161529: Starts Here Err Msg: You Do Not Have Enough Disk Space..."
-permalink: kb/161/Q161529/
+permalink: /kb/161/Q161529/
 ---
 
 ## Q161529: Starts Here Err Msg: You Do Not Have Enough Disk Space...

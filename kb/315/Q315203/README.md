@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315203: Flight Simulator 2002: You Keep Failing Check Ride Test"
-permalink: kb/315/Q315203/
+permalink: /kb/315/Q315203/
 ---
 
 ## Q315203: Flight Simulator 2002: You Keep Failing Check Ride Test

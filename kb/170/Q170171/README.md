@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170171: PRB: DUMPBIN Displays Cumulative Data for Multiple Arguments"
-permalink: kb/170/Q170171/
+permalink: /kb/170/Q170171/
 ---
 
 ## Q170171: PRB: DUMPBIN Displays Cumulative Data for Multiple Arguments

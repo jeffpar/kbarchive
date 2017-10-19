@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262705: Cluster Administrator Rejects Trusted Domain SIDs as Local SIDs"
-permalink: kb/262/Q262705/
+permalink: /kb/262/Q262705/
 ---
 
 ## Q262705: Cluster Administrator Rejects Trusted Domain SIDs as Local SIDs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236881: Incorrect Old Password When Updating Multiple Passwords"
-permalink: kb/236/Q236881/
+permalink: /kb/236/Q236881/
 ---
 
 ## Q236881: Incorrect Old Password When Updating Multiple Passwords

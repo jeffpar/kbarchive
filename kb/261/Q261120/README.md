@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261120: XCLN: Outlook Users Cannot Create Top-Level Public Folders"
-permalink: kb/261/Q261120/
+permalink: /kb/261/Q261120/
 ---
 
 ## Q261120: XCLN: Outlook Users Cannot Create Top-Level Public Folders

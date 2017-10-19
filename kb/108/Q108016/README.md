@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108016: AccuLogic IDE Controller Incompatible with ScanDisk"
-permalink: kb/108/Q108016/
+permalink: /kb/108/Q108016/
 ---
 
 ## Q108016: AccuLogic IDE Controller Incompatible with ScanDisk

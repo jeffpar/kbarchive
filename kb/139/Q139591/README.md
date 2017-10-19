@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139591: Packages Not Detected By Inventory Agent"
-permalink: kb/139/Q139591/
+permalink: /kb/139/Q139591/
 ---
 
 ## Q139591: Packages Not Detected By Inventory Agent

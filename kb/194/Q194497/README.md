@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194497: WD97: PRIVATE Fields Appear in Converted WordPerfect Documents"
-permalink: kb/194/Q194497/
+permalink: /kb/194/Q194497/
 ---
 
 ## Q194497: WD97: PRIVATE Fields Appear in Converted WordPerfect Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124037: Windows NT Setup Err Msg on Compaq: Stop 0x0000008B"
-permalink: kb/124/Q124037/
+permalink: /kb/124/Q124037/
 ---
 
 ## Q124037: Windows NT Setup Err Msg on Compaq: Stop 0x0000008B

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163055: DHCP Client May Fail with WinNT 4.0 SP2 Multinetted DHCP Server"
-permalink: kb/163/Q163055/
+permalink: /kb/163/Q163055/
 ---
 
 ## Q163055: DHCP Client May Fail with WinNT 4.0 SP2 Multinetted DHCP Server

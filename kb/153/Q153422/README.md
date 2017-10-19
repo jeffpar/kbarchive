@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153422: V-Chat Designed to Run in 256-Color Mode"
-permalink: kb/153/Q153422/
+permalink: /kb/153/Q153422/
 ---
 
 ## Q153422: V-Chat Designed to Run in 256-Color Mode

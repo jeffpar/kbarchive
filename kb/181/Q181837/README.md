@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181837: PRB: Output Param Not Returned from Procedure Without Resultset"
-permalink: kb/181/Q181837/
+permalink: /kb/181/Q181837/
 ---
 
 ## Q181837: PRB: Output Param Not Returned from Procedure Without Resultset

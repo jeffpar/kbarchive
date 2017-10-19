@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283679: Information on the IIS File Transmission Protocol (FTP) Service"
-permalink: kb/283/Q283679/
+permalink: /kb/283/Q283679/
 ---
 
 ## Q283679: Information on the IIS File Transmission Protocol (FTP) Service

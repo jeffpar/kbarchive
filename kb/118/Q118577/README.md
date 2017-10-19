@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118577: Lotus Tutorials Change System Colors in Windows 95"
-permalink: kb/118/Q118577/
+permalink: /kb/118/Q118577/
 ---
 
 ## Q118577: Lotus Tutorials Change System Colors in Windows 95

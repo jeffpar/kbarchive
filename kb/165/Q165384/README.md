@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165384: HOWTO: How to Change the User Password Remotely and from Batch F"
-permalink: kb/165/Q165384/
+permalink: /kb/165/Q165384/
 ---
 
 ## Q165384: HOWTO: How to Change the User Password Remotely and from Batch F

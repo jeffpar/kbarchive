@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84150: TrueType Fonts Print Incorrectly with 25 in One! Cartridge"
-permalink: kb/084/Q84150/
+permalink: /kb/084/Q84150/
 ---
 
 ## Q84150: TrueType Fonts Print Incorrectly with 25 in One! Cartridge

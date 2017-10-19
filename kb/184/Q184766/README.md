@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184766: XADM: Command-Line Export Fails on Custom Recipients"
-permalink: kb/184/Q184766/
+permalink: /kb/184/Q184766/
 ---
 
 ## Q184766: XADM: Command-Line Export Fails on Custom Recipients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195266: Microsoft Windows 98 Starts Here Comments and Corrections"
-permalink: kb/195/Q195266/
+permalink: /kb/195/Q195266/
 ---
 
 ## Q195266: Microsoft Windows 98 Starts Here Comments and Corrections

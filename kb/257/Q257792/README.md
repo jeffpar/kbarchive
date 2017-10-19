@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257792: FIX: TreeView NodeClick Events May Fire Despite Cancel = True"
-permalink: kb/257/Q257792/
+permalink: /kb/257/Q257792/
 ---
 
 ## Q257792: FIX: TreeView NodeClick Events May Fire Despite Cancel = True

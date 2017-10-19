@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174053: Cannot Download Rich Text Format Files Using MSN"
-permalink: kb/174/Q174053/
+permalink: /kb/174/Q174053/
 ---
 
 ## Q174053: Cannot Download Rich Text Format Files Using MSN

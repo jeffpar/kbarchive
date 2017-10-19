@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172293: Tops of Characters Missing When Win3270 Applet Window Resized"
-permalink: kb/172/Q172293/
+permalink: /kb/172/Q172293/
 ---
 
 ## Q172293: Tops of Characters Missing When Win3270 Applet Window Resized

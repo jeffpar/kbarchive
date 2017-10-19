@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254893: XFOR: Internet Mail Service Does Not Generate the NDR"
-permalink: kb/254/Q254893/
+permalink: /kb/254/Q254893/
 ---
 
 ## Q254893: XFOR: Internet Mail Service Does Not Generate the NDR

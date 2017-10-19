@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123155: Err Msg: The Remote Computer is Not Available"
-permalink: kb/123/Q123155/
+permalink: /kb/123/Q123155/
 ---
 
 ## Q123155: Err Msg: The Remote Computer is Not Available

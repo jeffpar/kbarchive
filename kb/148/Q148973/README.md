@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148973: XADM: Installation Allows Selection of Group Account"
-permalink: kb/148/Q148973/
+permalink: /kb/148/Q148973/
 ---
 
 ## Q148973: XADM: Installation Allows Selection of Group Account

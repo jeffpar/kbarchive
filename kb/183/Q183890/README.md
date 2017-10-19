@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183890: WD97: Can Save Changes to Read-Only Document on Novell Server"
-permalink: kb/183/Q183890/
+permalink: /kb/183/Q183890/
 ---
 
 ## Q183890: WD97: Can Save Changes to Read-Only Document on Novell Server

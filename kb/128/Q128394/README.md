@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128394: Multimedia: System Hangs with Diamond Stealth 64"
-permalink: kb/128/Q128394/
+permalink: /kb/128/Q128394/
 ---
 
 ## Q128394: Multimedia: System Hangs with Diamond Stealth 64

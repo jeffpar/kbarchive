@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71989: IBMCACHE.SYS Will Not Load If HIMEM.SYS Is Loaded"
-permalink: kb/071/Q71989/
+permalink: /kb/071/Q71989/
 ---
 
 ## Q71989: IBMCACHE.SYS Will Not Load If HIMEM.SYS Is Loaded

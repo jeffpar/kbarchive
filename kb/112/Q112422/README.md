@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112422: PPT: Not All .AVI Files Play Under Windows NT"
-permalink: kb/112/Q112422/
+permalink: /kb/112/Q112422/
 ---
 
 ## Q112422: PPT: Not All .AVI Files Play Under Windows NT

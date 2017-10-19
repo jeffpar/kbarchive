@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217351: PRB: DCOM Port Range Configuration Problems"
-permalink: kb/217/Q217351/
+permalink: /kb/217/Q217351/
 ---
 
 ## Q217351: PRB: DCOM Port Range Configuration Problems

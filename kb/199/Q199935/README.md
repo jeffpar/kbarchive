@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199935: XWEB: Forms Text Vanishes When Resizing Window in UNIX Netscape"
-permalink: kb/199/Q199935/
+permalink: /kb/199/Q199935/
 ---
 
 ## Q199935: XWEB: Forms Text Vanishes When Resizing Window in UNIX Netscape

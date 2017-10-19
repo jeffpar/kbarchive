@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120508: Unable to Create a Palette Consisting of More Than 256 Colors"
-permalink: kb/120/Q120508/
+permalink: /kb/120/Q120508/
 ---
 
 ## Q120508: Unable to Create a Palette Consisting of More Than 256 Colors

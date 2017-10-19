@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153009: XCLN: Installing Microsoft Mail Service on Windows 3.x Client"
-permalink: kb/153/Q153009/
+permalink: /kb/153/Q153009/
 ---
 
 ## Q153009: XCLN: Installing Microsoft Mail Service on Windows 3.x Client

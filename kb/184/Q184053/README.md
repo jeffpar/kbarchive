@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184053: XCON: Fax from Lotus Fax Server to Exchange Is Not Readable"
-permalink: kb/184/Q184053/
+permalink: /kb/184/Q184053/
 ---
 
 ## Q184053: XCON: Fax from Lotus Fax Server to Exchange Is Not Readable

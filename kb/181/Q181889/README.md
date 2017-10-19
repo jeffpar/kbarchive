@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181889: BUG: VB Hangs While Automating Excel Using OLE Control"
-permalink: kb/181/Q181889/
+permalink: /kb/181/Q181889/
 ---
 
 ## Q181889: BUG: VB Hangs While Automating Excel Using OLE Control

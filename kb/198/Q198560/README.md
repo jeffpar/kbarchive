@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198560: XFOR: Update Meeting Requests from Schedule+ to Profs"
-permalink: kb/198/Q198560/
+permalink: /kb/198/Q198560/
 ---
 
 ## Q198560: XFOR: Update Meeting Requests from Schedule+ to Profs

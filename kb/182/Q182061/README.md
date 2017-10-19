@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182061: How to Populate a List or Combo Box with Recordset Data"
-permalink: kb/182/Q182061/
+permalink: /kb/182/Q182061/
 ---
 
 ## Q182061: How to Populate a List or Combo Box with Recordset Data

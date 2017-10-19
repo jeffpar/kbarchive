@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189594: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 3.0 Release Notes"
-permalink: kb/189/Q189594/
+permalink: /kb/189/Q189594/
 ---
 
 ## Q189594: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 3.0 Release Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88126: BUG: HC Error 2050 from #include in Help Project File (.HPJ)"
-permalink: kb/088/Q88126/
+permalink: /kb/088/Q88126/
 ---
 
 ## Q88126: BUG: HC Error 2050 from #include in Help Project File (.HPJ)

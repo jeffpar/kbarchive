@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126637: Media Player Command-Line Switches Not Documented"
-permalink: kb/126/Q126637/
+permalink: /kb/126/Q126637/
 ---
 
 ## Q126637: Media Player Command-Line Switches Not Documented

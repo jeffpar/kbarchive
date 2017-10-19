@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123983: Line by Line Scrolling Does Not Work in MS-DOS-Based Editor"
-permalink: kb/123/Q123983/
+permalink: /kb/123/Q123983/
 ---
 
 ## Q123983: Line by Line Scrolling Does Not Work in MS-DOS-Based Editor

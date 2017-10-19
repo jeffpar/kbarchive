@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301296: WaitToKillAppTimeout Registry Value Has No Effect"
-permalink: kb/301/Q301296/
+permalink: /kb/301/Q301296/
 ---
 
 ## Q301296: WaitToKillAppTimeout Registry Value Has No Effect

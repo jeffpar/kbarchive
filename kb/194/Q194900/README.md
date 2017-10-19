@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194900: EVG99: Right-click on Flag Connects You to Macromedia Web Site"
-permalink: kb/194/Q194900/
+permalink: /kb/194/Q194900/
 ---
 
 ## Q194900: EVG99: Right-click on Flag Connects You to Macromedia Web Site

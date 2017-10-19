@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131096: Workgroup Name and Domain Name Same for Browsing"
-permalink: kb/131/Q131096/
+permalink: /kb/131/Q131096/
 ---
 
 ## Q131096: Workgroup Name and Domain Name Same for Browsing

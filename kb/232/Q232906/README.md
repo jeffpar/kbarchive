@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232906: WRQ NFS Client Cannot Connect to NFS File System Using UNC"
-permalink: kb/232/Q232906/
+permalink: /kb/232/Q232906/
 ---
 
 ## Q232906: WRQ NFS Client Cannot Connect to NFS File System Using UNC

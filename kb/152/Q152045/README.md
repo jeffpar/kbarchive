@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152045: &quot;Use Mappings in file&quot; Check Box Grayed Out"
-permalink: kb/152/Q152045/
+permalink: /kb/152/Q152045/
 ---
 
 ## Q152045: &quot;Use Mappings in file&quot; Check Box Grayed Out

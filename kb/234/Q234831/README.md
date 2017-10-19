@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234831: MOD2000: Deleting VSSODE Module Damages VSS Control Connection"
-permalink: kb/234/Q234831/
+permalink: /kb/234/Q234831/
 ---
 
 ## Q234831: MOD2000: Deleting VSSODE Module Damages VSS Control Connection

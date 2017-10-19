@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123610: Colored Text Does Not Print in Correct Color"
-permalink: kb/123/Q123610/
+permalink: /kb/123/Q123610/
 ---
 
 ## Q123610: Colored Text Does Not Print in Correct Color

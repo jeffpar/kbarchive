@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134587: Err Msg: Can't Use -REALBREAK Under this Version of DPMI"
-permalink: kb/134/Q134587/
+permalink: /kb/134/Q134587/
 ---
 
 ## Q134587: Err Msg: Can't Use -REALBREAK Under this Version of DPMI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127779: FIX: Can't Set BreakPoint w/ Country Set to Non-English Locale"
-permalink: kb/127/Q127779/
+permalink: /kb/127/Q127779/
 ---
 
 ## Q127779: FIX: Can't Set BreakPoint w/ Country Set to Non-English Locale

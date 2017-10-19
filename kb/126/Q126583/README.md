@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126583: PRB: Printer Setup Is Disabled When Using _MFI_SETUP in Menu"
-permalink: kb/126/Q126583/
+permalink: /kb/126/Q126583/
 ---
 
 ## Q126583: PRB: Printer Setup Is Disabled When Using _MFI_SETUP in Menu

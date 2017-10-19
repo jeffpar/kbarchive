@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164508: XGEN: Exchange Server 4.0 Not Available After May 27 1997"
-permalink: kb/164/Q164508/
+permalink: /kb/164/Q164508/
 ---
 
 ## Q164508: XGEN: Exchange Server 4.0 Not Available After May 27 1997

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210525: Err Msg: Make Sure Golf 1999 Edition CD 1 Is in Your CD Drive..."
-permalink: kb/210/Q210525/
+permalink: /kb/210/Q210525/
 ---
 
 ## Q210525: Err Msg: Make Sure Golf 1999 Edition CD 1 Is in Your CD Drive...

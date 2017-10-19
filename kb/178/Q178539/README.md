@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178539: XCON: How to Adjust Message Time-Outs for the Exchange MTA"
-permalink: kb/178/Q178539/
+permalink: /kb/178/Q178539/
 ---
 
 ## Q178539: XCON: How to Adjust Message Time-Outs for the Exchange MTA

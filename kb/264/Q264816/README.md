@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264816: XADM: Files Not Moved with Performance Optimizer"
-permalink: kb/264/Q264816/
+permalink: /kb/264/Q264816/
 ---
 
 ## Q264816: XADM: Files Not Moved with Performance Optimizer

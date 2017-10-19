@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242963: SMS: Slow Enumeration of Existing Collections"
-permalink: kb/242/Q242963/
+permalink: /kb/242/Q242963/
 ---
 
 ## Q242963: SMS: Slow Enumeration of Existing Collections

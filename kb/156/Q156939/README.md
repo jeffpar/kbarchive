@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156939: PRB: WordBasic's CHR&#36; Function Produces Error in Visual FoxPro"
-permalink: kb/156/Q156939/
+permalink: /kb/156/Q156939/
 ---
 
 ## Q156939: PRB: WordBasic's CHR&#36; Function Produces Error in Visual FoxPro

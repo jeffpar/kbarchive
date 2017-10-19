@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71267: A B&amp;W Palette Does Not Guarantee a B&amp;W Bitmap"
-permalink: kb/071/Q71267/
+permalink: /kb/071/Q71267/
 ---
 
 ## Q71267: A B&amp;W Palette Does Not Guarantee a B&amp;W Bitmap

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260060: XCON: Routing Calculation Complete, Registry Appears Corrupted"
-permalink: kb/260/Q260060/
+permalink: /kb/260/Q260060/
 ---
 
 ## Q260060: XCON: Routing Calculation Complete, Registry Appears Corrupted

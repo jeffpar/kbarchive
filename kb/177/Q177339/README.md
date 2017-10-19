@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177339: PRB: OLE Error When Appending from Excel 97 Workbook"
-permalink: kb/177/Q177339/
+permalink: /kb/177/Q177339/
 ---
 
 ## Q177339: PRB: OLE Error When Appending from Excel 97 Workbook

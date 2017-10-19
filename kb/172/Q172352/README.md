@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172352: Windows 95 PostScript Driver May Not Download Properly"
-permalink: kb/172/Q172352/
+permalink: /kb/172/Q172352/
 ---
 
 ## Q172352: Windows 95 PostScript Driver May Not Download Properly

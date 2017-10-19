@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167648: XCLN: Free/Busy Connector Errors 1027 and 1029"
-permalink: kb/167/Q167648/
+permalink: /kb/167/Q167648/
 ---
 
 ## Q167648: XCLN: Free/Busy Connector Errors 1027 and 1029

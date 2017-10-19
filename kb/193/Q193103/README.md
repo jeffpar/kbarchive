@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193103: HOWTO: Implement a View-Based Default Printer in MFC"
-permalink: kb/193/Q193103/
+permalink: /kb/193/Q193103/
 ---
 
 ## Q193103: HOWTO: Implement a View-Based Default Printer in MFC

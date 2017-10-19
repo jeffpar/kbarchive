@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148633: XADM: Cannot Sort Public Folders By Last Modified Date"
-permalink: kb/148/Q148633/
+permalink: /kb/148/Q148633/
 ---
 
 ## Q148633: XADM: Cannot Sort Public Folders By Last Modified Date

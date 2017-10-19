@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123951: FIX: Problem with Remote Builds on Novell Netware Servers"
-permalink: kb/123/Q123951/
+permalink: /kb/123/Q123951/
 ---
 
 ## Q123951: FIX: Problem with Remote Builds on Novell Netware Servers

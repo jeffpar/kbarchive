@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75041: Deleting .ICO Files Does Not Delete Icons in Windows"
-permalink: kb/075/Q75041/
+permalink: /kb/075/Q75041/
 ---
 
 ## Q75041: Deleting .ICO Files Does Not Delete Icons in Windows

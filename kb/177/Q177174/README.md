@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177174: WINS Server Displays Owners with Questions Marks"
-permalink: kb/177/Q177174/
+permalink: /kb/177/Q177174/
 ---
 
 ## Q177174: WINS Server Displays Owners with Questions Marks

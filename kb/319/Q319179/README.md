@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319179: PRB: Starting IIS MMC to Retrieve Directory Properties Is Slow"
-permalink: kb/319/Q319179/
+permalink: /kb/319/Q319179/
 ---
 
 ## Q319179: PRB: Starting IIS MMC to Retrieve Directory Properties Is Slow

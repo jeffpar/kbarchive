@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191756: Stop 0x1E Switching Between System Menus in Application Window"
-permalink: kb/191/Q191756/
+permalink: /kb/191/Q191756/
 ---
 
 ## Q191756: Stop 0x1E Switching Between System Menus in Application Window

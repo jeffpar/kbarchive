@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165180: How to Create a Virtual Server"
-permalink: kb/165/Q165180/
+permalink: /kb/165/Q165180/
 ---
 
 ## Q165180: How to Create a Virtual Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142714: RAS Does Not Hang Up Immediately If Usernames Are Different"
-permalink: kb/142/Q142714/
+permalink: /kb/142/Q142714/
 ---
 
 ## Q142714: RAS Does Not Hang Up Immediately If Usernames Are Different

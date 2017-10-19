@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99379: Configuring WFWG Workstations Through Novell Router"
-permalink: kb/099/Q99379/
+permalink: /kb/099/Q99379/
 ---
 
 ## Q99379: Configuring WFWG Workstations Through Novell Router

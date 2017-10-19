@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138947: FIX: Comma Acts Like CR/LF in Custom Build Options"
-permalink: kb/138/Q138947/
+permalink: /kb/138/Q138947/
 ---
 
 ## Q138947: FIX: Comma Acts Like CR/LF in Custom Build Options

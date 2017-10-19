@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68682: Flt Sim: ENTER (Right Rudder) Not Working on Tandy 1000SL"
-permalink: kb/068/Q68682/
+permalink: /kb/068/Q68682/
 ---
 
 ## Q68682: Flt Sim: ENTER (Right Rudder) Not Working on Tandy 1000SL

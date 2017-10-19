@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175018: HOWTO: Acquire and Install the Microsoft Oracle ODBC Driver"
-permalink: kb/175/Q175018/
+permalink: /kb/175/Q175018/
 ---
 
 ## Q175018: HOWTO: Acquire and Install the Microsoft Oracle ODBC Driver

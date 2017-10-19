@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63951: DOCERR: PWB Option /DP Is Documented But Not Implemented"
-permalink: kb/063/Q63951/
+permalink: /kb/063/Q63951/
 ---
 
 ## Q63951: DOCERR: PWB Option /DP Is Documented But Not Implemented

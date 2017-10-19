@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299591: BUG: Item Is Not Highlighted in a FullRowSelect ListView Control"
-permalink: kb/299/Q299591/
+permalink: /kb/299/Q299591/
 ---
 
 ## Q299591: BUG: Item Is Not Highlighted in a FullRowSelect ListView Control

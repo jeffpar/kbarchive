@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244875: SMS: How to Enable Logging for the Sms_License_Server Service"
-permalink: kb/244/Q244875/
+permalink: /kb/244/Q244875/
 ---
 
 ## Q244875: SMS: How to Enable Logging for the Sms_License_Server Service

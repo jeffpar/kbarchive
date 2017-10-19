@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166469: FIX: Multiple Check In Fails with Keyword Expansion"
-permalink: kb/166/Q166469/
+permalink: /kb/166/Q166469/
 ---
 
 ## Q166469: FIX: Multiple Check In Fails with Keyword Expansion

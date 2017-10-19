@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158250: FIX: Inherited Code Fires Twice with DODEFAULT()"
-permalink: kb/158/Q158250/
+permalink: /kb/158/Q158250/
 ---
 
 ## Q158250: FIX: Inherited Code Fires Twice with DODEFAULT()

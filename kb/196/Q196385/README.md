@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196385: HOWTO: How to Terminate a Visual FoxPro .exe Using Apple Script"
-permalink: kb/196/Q196385/
+permalink: /kb/196/Q196385/
 ---
 
 ## Q196385: HOWTO: How to Terminate a Visual FoxPro .exe Using Apple Script

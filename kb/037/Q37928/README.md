@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37928: Mac DOS: Hardware Interrupts Used by Common Devices"
-permalink: kb/037/Q37928/
+permalink: /kb/037/Q37928/
 ---
 
 ## Q37928: Mac DOS: Hardware Interrupts Used by Common Devices

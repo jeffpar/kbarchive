@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q66775: PRB: L2029/L2001 Unsized Array Declaration at File Scope [utilit"
-permalink: kb/066/Q66775/
+title: "Q66775: PRB: L2029/L2001 Unsized Array Declaration at File Scope &#91;utilit"
+permalink: /kb/066/Q66775/
 ---
 
-## Q66775: PRB: L2029/L2001 Unsized Array Declaration at File Scope [utilit
+## Q66775: PRB: L2029/L2001 Unsized Array Declaration at File Scope &#91;utilit
 
 	Article: Q66775
 	Product(s): Microsoft C Compiler

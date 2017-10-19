@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q139374: BUG: Incorrect Error Message: [ODBC Driver pack 2.0]..."
-permalink: kb/139/Q139374/
+title: "Q139374: BUG: Incorrect Error Message: &#91;ODBC Driver pack 2.0&#93;..."
+permalink: /kb/139/Q139374/
 ---
 
-## Q139374: BUG: Incorrect Error Message: [ODBC Driver pack 2.0]...
+## Q139374: BUG: Incorrect Error Message: &#91;ODBC Driver pack 2.0&#93;...
 
 	Article: Q139374
 	Product(s): Open Database Connectivity (ODBC)

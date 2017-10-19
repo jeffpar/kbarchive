@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84636: Terminal Changes Filename to Have &quot;TRM&quot; Extension"
-permalink: kb/084/Q84636/
+permalink: /kb/084/Q84636/
 ---
 
 ## Q84636: Terminal Changes Filename to Have &quot;TRM&quot; Extension

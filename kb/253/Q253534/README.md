@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253534: Gathering System Information Without GUI Interaction"
-permalink: kb/253/Q253534/
+permalink: /kb/253/Q253534/
 ---
 
 ## Q253534: Gathering System Information Without GUI Interaction

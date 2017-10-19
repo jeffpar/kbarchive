@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245761: PRB: False Report of Trojan Horse Virus in Colchng.Exe"
-permalink: kb/245/Q245761/
+permalink: /kb/245/Q245761/
 ---
 
 ## Q245761: PRB: False Report of Trojan Horse Virus in Colchng.Exe

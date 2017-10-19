@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258791: &quot;LdapErr&quot;When Connecting to MMS Configured with Compass"
-permalink: kb/258/Q258791/
+permalink: /kb/258/Q258791/
 ---
 
 ## Q258791: &quot;LdapErr&quot;When Connecting to MMS Configured with Compass

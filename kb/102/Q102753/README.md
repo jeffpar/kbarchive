@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102753: PC Win: No Notification for IPC-Type Messages"
-permalink: kb/102/Q102753/
+permalink: /kb/102/Q102753/
 ---
 
 ## Q102753: PC Win: No Notification for IPC-Type Messages

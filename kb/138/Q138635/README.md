@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138635: Backup to Floppy Disk Does Not Use All Available Disk Space"
-permalink: kb/138/Q138635/
+permalink: /kb/138/Q138635/
 ---
 
 ## Q138635: Backup to Floppy Disk Does Not Use All Available Disk Space

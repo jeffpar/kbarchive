@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181717: FIX: Analyze Problems with Open Log Files"
-permalink: kb/181/Q181717/
+permalink: /kb/181/Q181717/
 ---
 
 ## Q181717: FIX: Analyze Problems with Open Log Files

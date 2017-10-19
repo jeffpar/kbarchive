@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101188: Order of Object Initialization Across Translation Units"
-permalink: kb/101/Q101188/
+permalink: /kb/101/Q101188/
 ---
 
 ## Q101188: Order of Object Initialization Across Translation Units

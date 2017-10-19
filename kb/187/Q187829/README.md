@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187829: XCLN: ShivaRemote Connectivity with Windows 3.1x &amp; WinNT RAS"
-permalink: kb/187/Q187829/
+permalink: /kb/187/Q187829/
 ---
 
 ## Q187829: XCLN: ShivaRemote Connectivity with Windows 3.1x &amp; WinNT RAS

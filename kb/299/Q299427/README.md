@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299427: Users Cannot Reach or Resolve the Passport Login Server"
-permalink: kb/299/Q299427/
+permalink: /kb/299/Q299427/
 ---
 
 ## Q299427: Users Cannot Reach or Resolve the Passport Login Server

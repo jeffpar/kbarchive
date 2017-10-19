@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170509: Memory Leak in SERVICES.EXE Causes Performance Degradation"
-permalink: kb/170/Q170509/
+permalink: /kb/170/Q170509/
 ---
 
 ## Q170509: Memory Leak in SERVICES.EXE Causes Performance Degradation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231399: SMS:SMSCliToknAcct&amp; and/or SMSCliSvcAcct Accounts Locked Out"
-permalink: kb/231/Q231399/
+permalink: /kb/231/Q231399/
 ---
 
 ## Q231399: SMS:SMSCliToknAcct&amp; and/or SMSCliSvcAcct Accounts Locked Out

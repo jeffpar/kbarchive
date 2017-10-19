@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214512: SFU: Showmount May Display Invalid List of NFS Exports"
-permalink: kb/214/Q214512/
+permalink: /kb/214/Q214512/
 ---
 
 ## Q214512: SFU: Showmount May Display Invalid List of NFS Exports

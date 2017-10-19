@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130861: IBM SNA Formats Bit Ordering is Opposite of Intel Convention"
-permalink: kb/130/Q130861/
+permalink: /kb/130/Q130861/
 ---
 
 ## Q130861: IBM SNA Formats Bit Ordering is Opposite of Intel Convention

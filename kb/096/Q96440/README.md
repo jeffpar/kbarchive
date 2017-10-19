@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96440: DoubleSpace Doesn't Mount After Installing RAMDrive"
-permalink: kb/096/Q96440/
+permalink: /kb/096/Q96440/
 ---
 
 ## Q96440: DoubleSpace Doesn't Mount After Installing RAMDrive

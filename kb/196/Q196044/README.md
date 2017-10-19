@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196044: WD97: Cannot Insert Address Book After Installing SR-2"
-permalink: kb/196/Q196044/
+permalink: /kb/196/Q196044/
 ---
 
 ## Q196044: WD97: Cannot Insert Address Book After Installing SR-2

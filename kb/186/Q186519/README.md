@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186519: Terminal Server Application Error: Duplicate NetBIOS Name"
-permalink: kb/186/Q186519/
+permalink: /kb/186/Q186519/
 ---
 
 ## Q186519: Terminal Server Application Error: Duplicate NetBIOS Name

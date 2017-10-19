@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304115: XGEN: Exchange Server 5.5 Post-SP4 Directory Fixes"
-permalink: kb/304/Q304115/
+permalink: /kb/304/Q304115/
 ---
 
 ## Q304115: XGEN: Exchange Server 5.5 Post-SP4 Directory Fixes

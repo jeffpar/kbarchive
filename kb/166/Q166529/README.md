@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166529: APPC Applications Fail to Connect to SNA Server 3.0 and 4.0"
-permalink: kb/166/Q166529/
+permalink: /kb/166/Q166529/
 ---
 
 ## Q166529: APPC Applications Fail to Connect to SNA Server 3.0 and 4.0

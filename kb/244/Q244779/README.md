@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244779: HOWTO: Refresh a Parameterized DataReport"
-permalink: kb/244/Q244779/
+permalink: /kb/244/Q244779/
 ---
 
 ## Q244779: HOWTO: Refresh a Parameterized DataReport

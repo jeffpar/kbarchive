@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88154: Hercules TIGA Driver May Cause GP Faults in Paintbrush"
-permalink: kb/088/Q88154/
+permalink: /kb/088/Q88154/
 ---
 
 ## Q88154: Hercules TIGA Driver May Cause GP Faults in Paintbrush

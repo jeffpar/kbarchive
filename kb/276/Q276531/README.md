@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276531: Mobile Client Computer Is Assigned to Every Site It Visits"
-permalink: kb/276/Q276531/
+permalink: /kb/276/Q276531/
 ---
 
 ## Q276531: Mobile Client Computer Is Assigned to Every Site It Visits

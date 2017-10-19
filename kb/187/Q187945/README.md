@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187945: HOWTO: Pass Text Fields to a Stored Procedure Using RDO 2.0"
-permalink: kb/187/Q187945/
+permalink: /kb/187/Q187945/
 ---
 
 ## Q187945: HOWTO: Pass Text Fields to a Stored Procedure Using RDO 2.0

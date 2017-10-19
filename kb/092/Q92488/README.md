@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92488: MicroKey/Audio Port and Sound Recorder"
-permalink: kb/092/Q92488/
+permalink: /kb/092/Q92488/
 ---
 
 ## Q92488: MicroKey/Audio Port and Sound Recorder

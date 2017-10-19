@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67943: System Doesn't Save Time and Date Changes"
-permalink: kb/067/Q67943/
+permalink: /kb/067/Q67943/
 ---
 
 ## Q67943: System Doesn't Save Time and Date Changes

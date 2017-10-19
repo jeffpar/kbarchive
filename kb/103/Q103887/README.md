@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103887: Password Encryption"
-permalink: kb/103/Q103887/
+permalink: /kb/103/Q103887/
 ---
 
 ## Q103887: Password Encryption

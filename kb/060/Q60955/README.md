@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60955: Instruction: Traffic Pattern: Verify Carburetor Heat Is On"
-permalink: kb/060/Q60955/
+permalink: /kb/060/Q60955/
 ---
 
 ## Q60955: Instruction: Traffic Pattern: Verify Carburetor Heat Is On

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145923: XADM: How to Send Mail with the &quot;Anonymous&quot; Sender Name"
-permalink: kb/145/Q145923/
+permalink: /kb/145/Q145923/
 ---
 
 ## Q145923: XADM: How to Send Mail with the &quot;Anonymous&quot; Sender Name

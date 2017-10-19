@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315134: FIX: Exception Error After Saving and Closing Report"
-permalink: kb/315/Q315134/
+permalink: /kb/315/Q315134/
 ---
 
 ## Q315134: FIX: Exception Error After Saving and Closing Report

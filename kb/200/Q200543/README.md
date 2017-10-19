@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200543: SMS: PGC Status Setter - PGCSET32.EXE"
-permalink: kb/200/Q200543/
+permalink: /kb/200/Q200543/
 ---
 
 ## Q200543: SMS: PGC Status Setter - PGCSET32.EXE

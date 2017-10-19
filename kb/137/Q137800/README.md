@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137800: Batch Installation Over Windows 95 May Disable Network Client"
-permalink: kb/137/Q137800/
+permalink: /kb/137/Q137800/
 ---
 
 ## Q137800: Batch Installation Over Windows 95 May Disable Network Client

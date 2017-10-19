@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298126: PRB: MFC Vertical Toolbar Buttons Missing After Customization"
-permalink: kb/298/Q298126/
+permalink: /kb/298/Q298126/
 ---
 
 ## Q298126: PRB: MFC Vertical Toolbar Buttons Missing After Customization

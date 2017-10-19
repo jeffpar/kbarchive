@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161578: BUG: Duplicate Entries Appear in Open Database Dialog Box"
-permalink: kb/161/Q161578/
+permalink: /kb/161/Q161578/
 ---
 
 ## Q161578: BUG: Duplicate Entries Appear in Open Database Dialog Box

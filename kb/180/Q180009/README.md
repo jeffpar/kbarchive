@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180009: XADM: Exchange 5.5 Upgrade Fails With ID No: c106fdda"
-permalink: kb/180/Q180009/
+permalink: /kb/180/Q180009/
 ---
 
 ## Q180009: XADM: Exchange 5.5 Upgrade Fails With ID No: c106fdda

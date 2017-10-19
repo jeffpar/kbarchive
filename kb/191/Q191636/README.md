@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191636: FIX: Access Violation or Page Fault with Multiple Toolbars"
-permalink: kb/191/Q191636/
+permalink: /kb/191/Q191636/
 ---
 
 ## Q191636: FIX: Access Violation or Page Fault with Multiple Toolbars

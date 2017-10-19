@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135526: FIX: Bad Result If Call Inline Function Twice in Expression"
-permalink: kb/135/Q135526/
+permalink: /kb/135/Q135526/
 ---
 
 ## Q135526: FIX: Bad Result If Call Inline Function Twice in Expression

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262312: Cannot Process More Than 11 Advertisements for the Same Program"
-permalink: kb/262/Q262312/
+permalink: /kb/262/Q262312/
 ---
 
 ## Q262312: Cannot Process More Than 11 Advertisements for the Same Program

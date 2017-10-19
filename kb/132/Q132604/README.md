@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132604: Cannot Explore Folders in NetHood Folder"
-permalink: kb/132/Q132604/
+permalink: /kb/132/Q132604/
 ---
 
 ## Q132604: Cannot Explore Folders in NetHood Folder

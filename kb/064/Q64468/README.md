@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64468: Unassociated Data Files Cannot Be Dragged from File Manager"
-permalink: kb/064/Q64468/
+permalink: /kb/064/Q64468/
 ---
 
 ## Q64468: Unassociated Data Files Cannot Be Dragged from File Manager

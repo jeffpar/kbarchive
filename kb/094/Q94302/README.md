@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94302: WFWG May Hang if InDOSPolling=Yes with an Intel EtherExpress"
-permalink: kb/094/Q94302/
+permalink: /kb/094/Q94302/
 ---
 
 ## Q94302: WFWG May Hang if InDOSPolling=Yes with an Intel EtherExpress

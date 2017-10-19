@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158591: Err Msg: Spoolss.exe - Entry Point Not Found"
-permalink: kb/158/Q158591/
+permalink: /kb/158/Q158591/
 ---
 
 ## Q158591: Err Msg: Spoolss.exe - Entry Point Not Found

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194630: SnaBase May Get Access Violation if Over 255 TPs in Subdomain"
-permalink: kb/194/Q194630/
+permalink: /kb/194/Q194630/
 ---
 
 ## Q194630: SnaBase May Get Access Violation if Over 255 TPs in Subdomain

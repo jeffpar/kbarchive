@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132744: PC Gen: Description of Mail Integrity Check MAILINT.EXE"
-permalink: kb/132/Q132744/
+permalink: /kb/132/Q132744/
 ---
 
 ## Q132744: PC Gen: Description of Mail Integrity Check MAILINT.EXE

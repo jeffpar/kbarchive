@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119876: Windows 95 Startup Error: Incorrect MS-DOS Version..."
-permalink: kb/119/Q119876/
+permalink: /kb/119/Q119876/
 ---
 
 ## Q119876: Windows 95 Startup Error: Incorrect MS-DOS Version...

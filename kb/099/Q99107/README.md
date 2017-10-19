@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99107: PC WRmt: Cannot Download Only Unread Messages"
-permalink: kb/099/Q99107/
+permalink: /kb/099/Q99107/
 ---
 
 ## Q99107: PC WRmt: Cannot Download Only Unread Messages

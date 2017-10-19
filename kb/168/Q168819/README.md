@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168819: FP97: FP Explorer Finds Misspellings that FP Editor Doesn't"
-permalink: kb/168/Q168819/
+permalink: /kb/168/Q168819/
 ---
 
 ## Q168819: FP97: FP Explorer Finds Misspellings that FP Editor Doesn't

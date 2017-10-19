@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169659: XFOR: Err Msg: AppleTalk Mail Connector Service Not Created."
-permalink: kb/169/Q169659/
+permalink: /kb/169/Q169659/
 ---
 
 ## Q169659: XFOR: Err Msg: AppleTalk Mail Connector Service Not Created.

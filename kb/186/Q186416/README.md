@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186416: System Hang Results from Large Number of Notify Syncs"
-permalink: kb/186/Q186416/
+permalink: /kb/186/Q186416/
 ---
 
 ## Q186416: System Hang Results from Large Number of Notify Syncs

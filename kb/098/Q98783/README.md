@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98783: PC DOS: Password Option with Micro Not Consistent"
-permalink: kb/098/Q98783/
+permalink: /kb/098/Q98783/
 ---
 
 ## Q98783: PC DOS: Password Option with Micro Not Consistent

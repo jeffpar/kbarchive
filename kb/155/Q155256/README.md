@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155256: IIS 2.0 on Windows NT 4.0 BDC Does Not Create IUSER"
-permalink: kb/155/Q155256/
+permalink: /kb/155/Q155256/
 ---
 
 ## Q155256: IIS 2.0 on Windows NT 4.0 BDC Does Not Create IUSER

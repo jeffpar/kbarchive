@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128488: Error C0000035: The LsaCreateSecret Call Failed"
-permalink: kb/128/Q128488/
+permalink: /kb/128/Q128488/
 ---
 
 ## Q128488: Error C0000035: The LsaCreateSecret Call Failed

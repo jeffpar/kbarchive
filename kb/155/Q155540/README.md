@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155540: Copying File Returns File Not Found Instead of Invalid Path"
-permalink: kb/155/Q155540/
+permalink: /kb/155/Q155540/
 ---
 
 ## Q155540: Copying File Returns File Not Found Instead of Invalid Path

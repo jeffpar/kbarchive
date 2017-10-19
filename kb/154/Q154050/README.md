@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154050: Cannot Uncompress DriveSpace Drive After Using Partition Magic"
-permalink: kb/154/Q154050/
+permalink: /kb/154/Q154050/
 ---
 
 ## Q154050: Cannot Uncompress DriveSpace Drive After Using Partition Magic

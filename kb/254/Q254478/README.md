@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254478: Use the ActiveX Progress Bar OCX Control"
-permalink: kb/254/Q254478/
+permalink: /kb/254/Q254478/
 ---
 
 ## Q254478: Use the ActiveX Progress Bar OCX Control

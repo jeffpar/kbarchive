@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177862: XCON: Messages Fail Downgrade, Bounce Between X.400 Connectors"
-permalink: kb/177/Q177862/
+permalink: /kb/177/Q177862/
 ---
 
 ## Q177862: XCON: Messages Fail Downgrade, Bounce Between X.400 Connectors

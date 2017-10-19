@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115821: CD Sampler: Buttons Don't Depress Twice if Mouse Button Held"
-permalink: kb/115/Q115821/
+permalink: /kb/115/Q115821/
 ---
 
 ## Q115821: CD Sampler: Buttons Don't Depress Twice if Mouse Button Held

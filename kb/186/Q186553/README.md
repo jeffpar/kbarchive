@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186553: Terminal Server Error Messages: 1700 to 1799"
-permalink: kb/186/Q186553/
+permalink: /kb/186/Q186553/
 ---
 
 ## Q186553: Terminal Server Error Messages: 1700 to 1799

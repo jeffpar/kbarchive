@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152294: HOWTO: Accessing Binary Data Using dbDao"
-permalink: kb/152/Q152294/
+permalink: /kb/152/Q152294/
 ---
 
 ## Q152294: HOWTO: Accessing Binary Data Using dbDao

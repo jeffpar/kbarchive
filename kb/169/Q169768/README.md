@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169768: XFOR: Exchange Connector for AppleTalk Mail Version 5.0"
-permalink: kb/169/Q169768/
+permalink: /kb/169/Q169768/
 ---
 
 ## Q169768: XFOR: Exchange Connector for AppleTalk Mail Version 5.0

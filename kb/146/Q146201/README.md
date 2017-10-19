@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146201: Cannot Fax Using Cellular Phone and Motorola Power 14.4 Modem"
-permalink: kb/146/Q146201/
+permalink: /kb/146/Q146201/
 ---
 
 ## Q146201: Cannot Fax Using Cellular Phone and Motorola Power 14.4 Modem

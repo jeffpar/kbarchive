@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121130: PC Win: MMFClean GP Fault in Large POL w/ Gateway Addresses"
-permalink: kb/121/Q121130/
+permalink: /kb/121/Q121130/
 ---
 
 ## Q121130: PC Win: MMFClean GP Fault in Large POL w/ Gateway Addresses

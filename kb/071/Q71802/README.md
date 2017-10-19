@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71802: Windows Setup Does Not Recognize paging=off Setting"
-permalink: kb/071/Q71802/
+permalink: /kb/071/Q71802/
 ---
 
 ## Q71802: Windows Setup Does Not Recognize paging=off Setting

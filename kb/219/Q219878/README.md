@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219878: &quot;Warning! Your Drive May Be Corrupt&quot; Starting Windows NT 4.0 SP4"
-permalink: kb/219/Q219878/
+permalink: /kb/219/Q219878/
 ---
 
 ## Q219878: &quot;Warning! Your Drive May Be Corrupt&quot; Starting Windows NT 4.0 SP4

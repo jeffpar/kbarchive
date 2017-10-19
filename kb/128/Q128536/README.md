@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128536: Cannot Insert Harvard Graphics Slide into WordPad"
-permalink: kb/128/Q128536/
+permalink: /kb/128/Q128536/
 ---
 
 ## Q128536: Cannot Insert Harvard Graphics Slide into WordPad

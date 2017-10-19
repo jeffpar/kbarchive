@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109579: PRB: SELECT - SQL Command Reads Contents of Memo Field"
-permalink: kb/109/Q109579/
+permalink: /kb/109/Q109579/
 ---
 
 ## Q109579: PRB: SELECT - SQL Command Reads Contents of Memo Field

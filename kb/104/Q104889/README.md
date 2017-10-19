@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104889: DoubleSpace Doesn't Support Logical Drive B on Single Floppy"
-permalink: kb/104/Q104889/
+permalink: /kb/104/Q104889/
 ---
 
 ## Q104889: DoubleSpace Doesn't Support Logical Drive B on Single Floppy

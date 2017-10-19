@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131503: How to Delay Start of Program Manager For Logon Scripts"
-permalink: kb/131/Q131503/
+permalink: /kb/131/Q131503/
 ---
 
 ## Q131503: How to Delay Start of Program Manager For Logon Scripts

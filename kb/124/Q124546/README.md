@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124546: Multimedia: Compressed Audio and the Ensoniq Soundscape Card"
-permalink: kb/124/Q124546/
+permalink: /kb/124/Q124546/
 ---
 
 ## Q124546: Multimedia: Compressed Audio and the Ensoniq Soundscape Card

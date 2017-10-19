@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299352: SMS: The SMSCliToknAcct&amp; Account May Be Locked Out"
-permalink: kb/299/Q299352/
+permalink: /kb/299/Q299352/
 ---
 
 ## Q299352: SMS: The SMSCliToknAcct&amp; Account May Be Locked Out

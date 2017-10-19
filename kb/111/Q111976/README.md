@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111976: Help Files on Current Windows for Workgroups 3.11 Issues"
-permalink: kb/111/Q111976/
+permalink: /kb/111/Q111976/
 ---
 
 ## Q111976: Help Files on Current Windows for Workgroups 3.11 Issues

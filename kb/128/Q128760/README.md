@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128760: High Resolutions with Diamond Stealth 64 2 MB Video Card"
-permalink: kb/128/Q128760/
+permalink: /kb/128/Q128760/
 ---
 
 ## Q128760: High Resolutions with Diamond Stealth 64 2 MB Video Card

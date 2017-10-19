@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97360: SAMPLE: Styles.exe Demonstrates Window Hierarchy and Styles"
-permalink: kb/097/Q97360/
+permalink: /kb/097/Q97360/
 ---
 
 ## Q97360: SAMPLE: Styles.exe Demonstrates Window Hierarchy and Styles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106547: Writer/Artist: Novell Network User Rights Needed"
-permalink: kb/106/Q106547/
+permalink: /kb/106/Q106547/
 ---
 
 ## Q106547: Writer/Artist: Novell Network User Rights Needed

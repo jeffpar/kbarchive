@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183699: Winsdmp.exe Inefficiently Dumps WINS Databases with Large ID"
-permalink: kb/183/Q183699/
+permalink: /kb/183/Q183699/
 ---
 
 ## Q183699: Winsdmp.exe Inefficiently Dumps WINS Databases with Large ID

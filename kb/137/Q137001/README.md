@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137001: Automatic Mounting in Real Mode Disabled in DriveSpace 3"
-permalink: kb/137/Q137001/
+permalink: /kb/137/Q137001/
 ---
 
 ## Q137001: Automatic Mounting in Real Mode Disabled in DriveSpace 3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297427: Event ID 5718 Generated During LSA Database Replication"
-permalink: kb/297/Q297427/
+permalink: /kb/297/Q297427/
 ---
 
 ## Q297427: Event ID 5718 Generated During LSA Database Replication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94333: SETVER Table Entries Are Not Maintained When Upgrading"
-permalink: kb/094/Q94333/
+permalink: /kb/094/Q94333/
 ---
 
 ## Q94333: SETVER Table Entries Are Not Maintained When Upgrading

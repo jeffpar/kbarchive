@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74800: INFO: Working Around the STRINGTABLE 255 Character Limit"
-permalink: kb/074/Q74800/
+permalink: /kb/074/Q74800/
 ---
 
 ## Q74800: INFO: Working Around the STRINGTABLE 255 Character Limit

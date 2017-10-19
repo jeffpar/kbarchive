@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63937: VDS.exe Demonstrates DMA in Windows 3.0"
-permalink: kb/063/Q63937/
+permalink: /kb/063/Q63937/
 ---
 
 ## Q63937: VDS.exe Demonstrates DMA in Windows 3.0

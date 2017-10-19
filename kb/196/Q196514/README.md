@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196514: WD97: Merge Results Blank Using Header File with ODBC"
-permalink: kb/196/Q196514/
+permalink: /kb/196/Q196514/
 ---
 
 ## Q196514: WD97: Merge Results Blank Using Header File with ODBC

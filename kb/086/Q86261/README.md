@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86261: Windows Help Print Macro Does Not Print Pop-up Contents"
-permalink: kb/086/Q86261/
+permalink: /kb/086/Q86261/
 ---
 
 ## Q86261: Windows Help Print Macro Does Not Print Pop-up Contents

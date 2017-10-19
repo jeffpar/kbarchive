@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134988: Access Violation in glsbCreateAndDuplicateSection API on PowerPC"
-permalink: kb/134/Q134988/
+permalink: /kb/134/Q134988/
 ---
 
 ## Q134988: Access Violation in glsbCreateAndDuplicateSection API on PowerPC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296631: FP: Access Is Denied When Submitting a Form"
-permalink: kb/296/Q296631/
+permalink: /kb/296/Q296631/
 ---
 
 ## Q296631: FP: Access Is Denied When Submitting a Form

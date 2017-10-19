@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112390: FIX: BK1506 : Cannot Open File : Permission Denied"
-permalink: kb/112/Q112390/
+permalink: /kb/112/Q112390/
 ---
 
 ## Q112390: FIX: BK1506 : Cannot Open File : Permission Denied

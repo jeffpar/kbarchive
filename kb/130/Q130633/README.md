@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130633: Event ID 12042: Internal Server Information...Was Corrupted"
-permalink: kb/130/Q130633/
+permalink: /kb/130/Q130633/
 ---
 
 ## Q130633: Event ID 12042: Internal Server Information...Was Corrupted

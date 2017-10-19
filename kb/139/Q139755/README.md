@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139755: Fax Not Sent or Listed in Files To Send Box"
-permalink: kb/139/Q139755/
+permalink: /kb/139/Q139755/
 ---
 
 ## Q139755: Fax Not Sent or Listed in Files To Send Box

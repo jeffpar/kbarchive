@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69027: Handling Critical Errors in Windows-Based Application"
-permalink: kb/069/Q69027/
+permalink: /kb/069/Q69027/
 ---
 
 ## Q69027: Handling Critical Errors in Windows-Based Application

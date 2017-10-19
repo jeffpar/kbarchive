@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245451: Streets and Trips 2000: Errors When You Open Saved Trips or Maps"
-permalink: kb/245/Q245451/
+permalink: /kb/245/Q245451/
 ---
 
 ## Q245451: Streets and Trips 2000: Errors When You Open Saved Trips or Maps

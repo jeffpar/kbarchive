@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136711: Error 2140 When Starting Service With Parameters"
-permalink: kb/136/Q136711/
+permalink: /kb/136/Q136711/
 ---
 
 ## Q136711: Error 2140 When Starting Service With Parameters

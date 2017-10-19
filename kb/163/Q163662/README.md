@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163662: Running Multiple Instances of an Application Causes STOP x50"
-permalink: kb/163/Q163662/
+permalink: /kb/163/Q163662/
 ---
 
 ## Q163662: Running Multiple Instances of an Application Causes STOP x50

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143208: PRB: Using STL in Windows Program Can Cause Min/Max Conflicts"
-permalink: kb/143/Q143208/
+permalink: /kb/143/Q143208/
 ---
 
 ## Q143208: PRB: Using STL in Windows Program Can Cause Min/Max Conflicts

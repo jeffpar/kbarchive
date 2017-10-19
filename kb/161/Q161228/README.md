@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161228: INIT-SELF Retry Functionality for SNA Server"
-permalink: kb/161/Q161228/
+permalink: /kb/161/Q161228/
 ---
 
 ## Q161228: INIT-SELF Retry Functionality for SNA Server

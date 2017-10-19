@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89559: Cannot Browse LAN Manager 1.x Servers in WFWG"
-permalink: kb/089/Q89559/
+permalink: /kb/089/Q89559/
 ---
 
 ## Q89559: Cannot Browse LAN Manager 1.x Servers in WFWG

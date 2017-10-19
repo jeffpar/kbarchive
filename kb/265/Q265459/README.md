@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265459: PRB: Error Message &quot;The MAPI Spooler has Shut Down&quot;"
-permalink: kb/265/Q265459/
+permalink: /kb/265/Q265459/
 ---
 
 ## Q265459: PRB: Error Message &quot;The MAPI Spooler has Shut Down&quot;

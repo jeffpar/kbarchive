@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193242: Windows Hangs at Logo Screen After Attaching External Device"
-permalink: kb/193/Q193242/
+permalink: /kb/193/Q193242/
 ---
 
 ## Q193242: Windows Hangs at Logo Screen After Attaching External Device

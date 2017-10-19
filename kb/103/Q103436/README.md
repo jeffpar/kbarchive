@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103436: Small Computer System Interface (SCSI) Bus Configuration"
-permalink: kb/103/Q103436/
+permalink: /kb/103/Q103436/
 ---
 
 ## Q103436: Small Computer System Interface (SCSI) Bus Configuration

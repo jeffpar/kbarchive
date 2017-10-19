@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87053: MCI: Steps That Must Be Completed to Install the Gateway"
-permalink: kb/087/Q87053/
+permalink: /kb/087/Q87053/
 ---
 
 ## Q87053: MCI: Steps That Must Be Completed to Install the Gateway

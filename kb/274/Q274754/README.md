@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274754: HOWTO: Create a User Control with Licensed Components in VB"
-permalink: kb/274/Q274754/
+permalink: /kb/274/Q274754/
 ---
 
 ## Q274754: HOWTO: Create a User Control with Licensed Components in VB

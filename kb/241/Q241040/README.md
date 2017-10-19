@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241040: Daylight Saving Time Change Not Applied Immediately"
-permalink: kb/241/Q241040/
+permalink: /kb/241/Q241040/
 ---
 
 ## Q241040: Daylight Saving Time Change Not Applied Immediately

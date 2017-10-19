@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102450: Windows NT Uses DLC for IBM Connectivity and Network Printing"
-permalink: kb/102/Q102450/
+permalink: /kb/102/Q102450/
 ---
 
 ## Q102450: Windows NT Uses DLC for IBM Connectivity and Network Printing

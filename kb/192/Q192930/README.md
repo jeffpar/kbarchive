@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192930: XCCC: OWA Error 404 Opening Messages After You Apply 5.5 SP"
-permalink: kb/192/Q192930/
+permalink: /kb/192/Q192930/
 ---
 
 ## Q192930: XCCC: OWA Error 404 Opening Messages After You Apply 5.5 SP

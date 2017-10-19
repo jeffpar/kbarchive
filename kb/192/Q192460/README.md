@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192460: Matrox Video Driver Causes STOP 0x00000050"
-permalink: kb/192/Q192460/
+permalink: /kb/192/Q192460/
 ---
 
 ## Q192460: Matrox Video Driver Causes STOP 0x00000050

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171532: FIX: Crash Stepping Thru Code After Using Locals/Watch Window"
-permalink: kb/171/Q171532/
+permalink: /kb/171/Q171532/
 ---
 
 ## Q171532: FIX: Crash Stepping Thru Code After Using Locals/Watch Window

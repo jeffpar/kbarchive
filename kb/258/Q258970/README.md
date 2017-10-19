@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258970: List of Bugs Fixed in Terminal Server Edition Service Pack 6"
-permalink: kb/258/Q258970/
+permalink: /kb/258/Q258970/
 ---
 
 ## Q258970: List of Bugs Fixed in Terminal Server Edition Service Pack 6

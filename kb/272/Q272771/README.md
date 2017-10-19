@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272771: Clustering Doesn't Start If Cluster Files on Extended Partition"
-permalink: kb/272/Q272771/
+permalink: /kb/272/Q272771/
 ---
 
 ## Q272771: Clustering Doesn't Start If Cluster Files on Extended Partition

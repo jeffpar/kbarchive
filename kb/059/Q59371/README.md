@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59371: &quot;Name Not Found&quot; Error Sending Messages to Busy DOS WS"
-permalink: kb/059/Q59371/
+permalink: /kb/059/Q59371/
 ---
 
 ## Q59371: &quot;Name Not Found&quot; Error Sending Messages to Busy DOS WS

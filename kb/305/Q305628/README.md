@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305628: PRB: Error &quot;Class Definition MAPI.SESSION is not found&quot;"
-permalink: kb/305/Q305628/
+permalink: /kb/305/Q305628/
 ---
 
 ## Q305628: PRB: Error &quot;Class Definition MAPI.SESSION is not found&quot;

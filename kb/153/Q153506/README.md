@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153506: PRB: Cannot Set Working Directory by Using .ini File"
-permalink: kb/153/Q153506/
+permalink: /kb/153/Q153506/
 ---
 
 ## Q153506: PRB: Cannot Set Working Directory by Using .ini File

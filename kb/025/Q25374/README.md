@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q25374: Cannot Print Graphics in Draft Quality"
-permalink: kb/025/Q25374/
+permalink: /kb/025/Q25374/
 ---
 
 ## Q25374: Cannot Print Graphics in Draft Quality

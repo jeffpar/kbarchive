@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88535: Ports Above LPT3 Must Be Added to the WIN.INI File"
-permalink: kb/088/Q88535/
+permalink: /kb/088/Q88535/
 ---
 
 ## Q88535: Ports Above LPT3 Must Be Added to the WIN.INI File

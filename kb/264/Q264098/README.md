@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264098: Baseball 2001: Game Quits If You Simulate Entire Playoff Series"
-permalink: kb/264/Q264098/
+permalink: /kb/264/Q264098/
 ---
 
 ## Q264098: Baseball 2001: Game Quits If You Simulate Entire Playoff Series

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255981: Processing the Key Certificate Request for the Server Fails"
-permalink: kb/255/Q255981/
+permalink: /kb/255/Q255981/
 ---
 
 ## Q255981: Processing the Key Certificate Request for the Server Fails

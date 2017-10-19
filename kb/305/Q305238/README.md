@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305238: FIX: FOR...EACH Fails with Character Array Element &gt; 255"
-permalink: kb/305/Q305238/
+permalink: /kb/305/Q305238/
 ---
 
 ## Q305238: FIX: FOR...EACH Fails with Character Array Element &gt; 255

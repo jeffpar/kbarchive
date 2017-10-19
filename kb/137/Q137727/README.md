@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137727: Timex Data Link Watch Rounds Appointment Times"
-permalink: kb/137/Q137727/
+permalink: /kb/137/Q137727/
 ---
 
 ## Q137727: Timex Data Link Watch Rounds Appointment Times

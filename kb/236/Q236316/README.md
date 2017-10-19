@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236316: Performance Improvement for Redirector/Server Connections"
-permalink: kb/236/Q236316/
+permalink: /kb/236/Q236316/
 ---
 
 ## Q236316: Performance Improvement for Redirector/Server Connections

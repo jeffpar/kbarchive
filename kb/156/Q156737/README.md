@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156737: BUG: Disabled Listbox Items Enabled Using Arrow Keys"
-permalink: kb/156/Q156737/
+permalink: /kb/156/Q156737/
 ---
 
 ## Q156737: BUG: Disabled Listbox Items Enabled Using Arrow Keys

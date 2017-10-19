@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103238: PC Win: Saving Composed Message When Net Connection Goes Down"
-permalink: kb/103/Q103238/
+permalink: /kb/103/Q103238/
 ---
 
 ## Q103238: PC Win: Saving Composed Message When Net Connection Goes Down

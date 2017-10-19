@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86055: Garbled, Incomplete, or Broken Printing on Novell Network"
-permalink: kb/086/Q86055/
+permalink: /kb/086/Q86055/
 ---
 
 ## Q86055: Garbled, Incomplete, or Broken Printing on Novell Network

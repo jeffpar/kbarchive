@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111745: PRB: &quot;Position off Screen&quot; in FoxPro for Macintosh Application"
-permalink: kb/111/Q111745/
+permalink: /kb/111/Q111745/
 ---
 
 ## Q111745: PRB: &quot;Position off Screen&quot; in FoxPro for Macintosh Application

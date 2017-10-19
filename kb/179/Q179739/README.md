@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179739: XCON: T.61 Body Part of Incoming Messages Not Handled Correctly"
-permalink: kb/179/Q179739/
+permalink: /kb/179/Q179739/
 ---
 
 ## Q179739: XCON: T.61 Body Part of Incoming Messages Not Handled Correctly

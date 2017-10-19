@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155986: NetBT Communication Slow on Multihomed Client"
-permalink: kb/155/Q155986/
+permalink: /kb/155/Q155986/
 ---
 
 ## Q155986: NetBT Communication Slow on Multihomed Client

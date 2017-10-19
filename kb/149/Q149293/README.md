@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149293: File Manager Can't View Permissions After NWCONV.EXE Is Run"
-permalink: kb/149/Q149293/
+permalink: /kb/149/Q149293/
 ---
 
 ## Q149293: File Manager Can't View Permissions After NWCONV.EXE Is Run

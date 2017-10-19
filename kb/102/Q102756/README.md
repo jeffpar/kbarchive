@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102756: PC Forms: Deleted Form Does Not Appear in Wastebasket"
-permalink: kb/102/Q102756/
+permalink: /kb/102/Q102756/
 ---
 
 ## Q102756: PC Forms: Deleted Form Does Not Appear in Wastebasket

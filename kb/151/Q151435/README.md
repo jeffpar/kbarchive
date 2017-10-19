@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151435: Portions of Received Fax Cover Page Missing"
-permalink: kb/151/Q151435/
+permalink: /kb/151/Q151435/
 ---
 
 ## Q151435: Portions of Received Fax Cover Page Missing

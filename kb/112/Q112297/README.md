@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112297: INFO: User-Defined CRT Function Generates Warning or Errors"
-permalink: kb/112/Q112297/
+permalink: /kb/112/Q112297/
 ---
 
 ## Q112297: INFO: User-Defined CRT Function Generates Warning or Errors

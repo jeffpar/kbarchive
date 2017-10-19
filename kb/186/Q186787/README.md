@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186787: XADM: The Extension 'SMTP' Could Not Be Loaded"
-permalink: kb/186/Q186787/
+permalink: /kb/186/Q186787/
 ---
 
 ## Q186787: XADM: The Extension 'SMTP' Could Not Be Loaded

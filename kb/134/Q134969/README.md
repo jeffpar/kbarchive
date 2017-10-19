@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134969: Faxing from 16-bit Program Using Separate Memory Space Fails"
-permalink: kb/134/Q134969/
+permalink: /kb/134/Q134969/
 ---
 
 ## Q134969: Faxing from 16-bit Program Using Separate Memory Space Fails

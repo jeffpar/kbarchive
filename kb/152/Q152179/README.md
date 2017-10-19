@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152179: Explorapedia: Video Not Available, Cannot Find 'vids:iv32'"
-permalink: kb/152/Q152179/
+permalink: /kb/152/Q152179/
 ---
 
 ## Q152179: Explorapedia: Video Not Available, Cannot Find 'vids:iv32'

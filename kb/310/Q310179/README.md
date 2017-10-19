@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310179: INFO: How to File a Bug Report for Visual FoxPro"
-permalink: kb/310/Q310179/
+permalink: /kb/310/Q310179/
 ---
 
 ## Q310179: INFO: How to File a Bug Report for Visual FoxPro

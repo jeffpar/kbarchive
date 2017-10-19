@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228807: Dr Watson Error After Installing Application on Terminal Server"
-permalink: kb/228/Q228807/
+permalink: /kb/228/Q228807/
 ---
 
 ## Q228807: Dr Watson Error After Installing Application on Terminal Server

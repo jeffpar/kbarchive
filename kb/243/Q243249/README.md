@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243249: &quot;STOP 0x00000024&quot; Error Message Because of NTFS Timing Issue"
-permalink: kb/243/Q243249/
+permalink: /kb/243/Q243249/
 ---
 
 ## Q243249: &quot;STOP 0x00000024&quot; Error Message Because of NTFS Timing Issue

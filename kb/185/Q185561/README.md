@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185561: How to Enable Profile Quotas in Windows NT 4.0"
-permalink: kb/185/Q185561/
+permalink: /kb/185/Q185561/
 ---
 
 ## Q185561: How to Enable Profile Quotas in Windows NT 4.0

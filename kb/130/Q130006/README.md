@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130006: PRB: Creator Type Not TEXT with FCREATE If Extension Not .TXT"
-permalink: kb/130/Q130006/
+permalink: /kb/130/Q130006/
 ---
 
 ## Q130006: PRB: Creator Type Not TEXT with FCREATE If Extension Not .TXT

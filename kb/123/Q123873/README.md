@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123873: PRB: Lower Half of Menu Bar Covered by Client Area"
-permalink: kb/123/Q123873/
+permalink: /kb/123/Q123873/
 ---
 
 ## Q123873: PRB: Lower Half of Menu Bar Covered by Client Area

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266377: PRB: .Exe File Created in Visual FoxPro Doesn't Appear on Screen"
-permalink: kb/266/Q266377/
+permalink: /kb/266/Q266377/
 ---
 
 ## Q266377: PRB: .Exe File Created in Visual FoxPro Doesn't Appear on Screen

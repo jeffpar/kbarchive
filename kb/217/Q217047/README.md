@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217047: PRB: CD Key Invalid for Visual Basic 6.0 Deluxe Learning Edition"
-permalink: kb/217/Q217047/
+permalink: /kb/217/Q217047/
 ---
 
 ## Q217047: PRB: CD Key Invalid for Visual Basic 6.0 Deluxe Learning Edition

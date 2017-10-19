@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127061: FIX: Add File Dialog Forces Uppercase Filename"
-permalink: kb/127/Q127061/
+permalink: /kb/127/Q127061/
 ---
 
 ## Q127061: FIX: Add File Dialog Forces Uppercase Filename

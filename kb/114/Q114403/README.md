@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114403: MHS: First Contact Form for MHS Gateway"
-permalink: kb/114/Q114403/
+permalink: /kb/114/Q114403/
 ---
 
 ## Q114403: MHS: First Contact Form for MHS Gateway

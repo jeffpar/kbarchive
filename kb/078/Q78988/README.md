@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78988: Using a Sharp JX Printer with Windows 3.1"
-permalink: kb/078/Q78988/
+permalink: /kb/078/Q78988/
 ---
 
 ## Q78988: Using a Sharp JX Printer with Windows 3.1

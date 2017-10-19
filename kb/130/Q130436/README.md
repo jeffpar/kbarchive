@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130436: MHS: Blank Subject Line"
-permalink: kb/130/Q130436/
+permalink: /kb/130/Q130436/
 ---
 
 ## Q130436: MHS: Blank Subject Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125903: File Size Displayed Incorrectly After Copying to an NTFS Share"
-permalink: kb/125/Q125903/
+permalink: /kb/125/Q125903/
 ---
 
 ## Q125903: File Size Displayed Incorrectly After Copying to an NTFS Share

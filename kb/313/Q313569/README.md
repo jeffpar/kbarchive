@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313569: XADM: CDO Changed to Regenerate Public Free-and-Busy Message"
-permalink: kb/313/Q313569/
+permalink: /kb/313/Q313569/
 ---
 
 ## Q313569: XADM: CDO Changed to Regenerate Public Free-and-Busy Message

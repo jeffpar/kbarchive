@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297126: Runtime Error When Using Spelling Checker With MSN 6.1 (MSN Expl"
-permalink: kb/297/Q297126/
+permalink: /kb/297/Q297126/
 ---
 
 ## Q297126: Runtime Error When Using Spelling Checker With MSN 6.1 (MSN Expl

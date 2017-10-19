@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138558: PRB: INKEY() May Return Same ASCII Values for Different Keys"
-permalink: kb/138/Q138558/
+permalink: /kb/138/Q138558/
 ---
 
 ## Q138558: PRB: INKEY() May Return Same ASCII Values for Different Keys

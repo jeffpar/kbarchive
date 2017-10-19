@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194127: FIX: &quot;Syntax Error&quot; with SQL Literal String Over 16,379 Bytes"
-permalink: kb/194/Q194127/
+permalink: /kb/194/Q194127/
 ---
 
 ## Q194127: FIX: &quot;Syntax Error&quot; with SQL Literal String Over 16,379 Bytes

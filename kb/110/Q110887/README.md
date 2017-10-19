@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110887: Chip Challenge: Bear Trap Won't Release Paramecia in Level 49"
-permalink: kb/110/Q110887/
+permalink: /kb/110/Q110887/
 ---
 
 ## Q110887: Chip Challenge: Bear Trap Won't Release Paramecia in Level 49

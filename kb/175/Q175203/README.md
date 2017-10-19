@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175203: XWEB: Pine 3.96 Cannot Handle IMAP DRAFT Flag"
-permalink: kb/175/Q175203/
+permalink: /kb/175/Q175203/
 ---
 
 ## Q175203: XWEB: Pine 3.96 Cannot Handle IMAP DRAFT Flag

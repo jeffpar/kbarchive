@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186132: SMS: One Hour Delay for Mandatory Time w/Mandatory After Option"
-permalink: kb/186/Q186132/
+permalink: /kb/186/Q186132/
 ---
 
 ## Q186132: SMS: One Hour Delay for Mandatory Time w/Mandatory After Option

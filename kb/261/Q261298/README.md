@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261298: Access Violation in Remote Procedure Call Server Service (RPCSS)"
-permalink: kb/261/Q261298/
+permalink: /kb/261/Q261298/
 ---
 
 ## Q261298: Access Violation in Remote Procedure Call Server Service (RPCSS)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131878: Microsoft Exchange Client Keeps Unsent Mail in Outbox"
-permalink: kb/131/Q131878/
+permalink: /kb/131/Q131878/
 ---
 
 ## Q131878: Microsoft Exchange Client Keeps Unsent Mail in Outbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81745: MSD May Return Incorrect Values for Extended Partitions"
-permalink: kb/081/Q81745/
+permalink: /kb/081/Q81745/
 ---
 
 ## Q81745: MSD May Return Incorrect Values for Extended Partitions

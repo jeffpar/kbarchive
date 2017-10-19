@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170368: PRB: &quot;Invalid Cursor Position&quot; Using UserConnection to GetChunk"
-permalink: kb/170/Q170368/
+permalink: /kb/170/Q170368/
 ---
 
 ## Q170368: PRB: &quot;Invalid Cursor Position&quot; Using UserConnection to GetChunk

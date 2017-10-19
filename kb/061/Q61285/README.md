@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61285: Global Lock Count Changes in Windows 3.x"
-permalink: kb/061/Q61285/
+permalink: /kb/061/Q61285/
 ---
 
 ## Q61285: Global Lock Count Changes in Windows 3.x

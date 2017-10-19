@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73735: LDRIVE.SYS Incompatible with MS-DOS 5.0 or Later"
-permalink: kb/073/Q73735/
+permalink: /kb/073/Q73735/
 ---
 
 ## Q73735: LDRIVE.SYS Incompatible with MS-DOS 5.0 or Later

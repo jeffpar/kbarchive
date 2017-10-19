@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254422: MapPoint 2001: Zero Population Is Displayed for Certain Counties"
-permalink: kb/254/Q254422/
+permalink: /kb/254/Q254422/
 ---
 
 ## Q254422: MapPoint 2001: Zero Population Is Displayed for Certain Counties

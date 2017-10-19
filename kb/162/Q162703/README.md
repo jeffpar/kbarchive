@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162703: XCLN: OST Synch Problem After Org Forms Library Deleted"
-permalink: kb/162/Q162703/
+permalink: /kb/162/Q162703/
 ---
 
 ## Q162703: XCLN: OST Synch Problem After Org Forms Library Deleted

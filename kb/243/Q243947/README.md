@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243947: FTP Service Not Installed by Default in IIS 5.0"
-permalink: kb/243/Q243947/
+permalink: /kb/243/Q243947/
 ---
 
 ## Q243947: FTP Service Not Installed by Default in IIS 5.0

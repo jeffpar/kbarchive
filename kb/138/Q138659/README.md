@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138659: How to Pass an Array to a Form"
-permalink: kb/138/Q138659/
+permalink: /kb/138/Q138659/
 ---
 
 ## Q138659: How to Pass an Array to a Form

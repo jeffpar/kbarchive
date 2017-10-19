@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182821: XFOR: Internet Mail Service Not Trying Next Exchange Record"
-permalink: kb/182/Q182821/
+permalink: /kb/182/Q182821/
 ---
 
 ## Q182821: XFOR: Internet Mail Service Not Trying Next Exchange Record

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114980: FIX: Disabled DDX Radio Button Causes Infinite Loop"
-permalink: kb/114/Q114980/
+permalink: /kb/114/Q114980/
 ---
 
 ## Q114980: FIX: Disabled DDX Radio Button Causes Infinite Loop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119067: Booting MS-DOS with QEMM DOSDATA.SYS Starts Windows 95"
-permalink: kb/119/Q119067/
+permalink: /kb/119/Q119067/
 ---
 
 ## Q119067: Booting MS-DOS with QEMM DOSDATA.SYS Starts Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72796: Common Ways of Detecting a Virus in MS-DOS"
-permalink: kb/072/Q72796/
+permalink: /kb/072/Q72796/
 ---
 
 ## Q72796: Common Ways of Detecting a Virus in MS-DOS

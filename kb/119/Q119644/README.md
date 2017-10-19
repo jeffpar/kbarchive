@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119644: Copying Files from Windows NT Using NBF Can Be Very Slow"
-permalink: kb/119/Q119644/
+permalink: /kb/119/Q119644/
 ---
 
 ## Q119644: Copying Files from Windows NT Using NBF Can Be Very Slow

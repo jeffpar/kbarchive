@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154707: Error Running #COMMAND /C Capture.exe from Login Script"
-permalink: kb/154/Q154707/
+permalink: /kb/154/Q154707/
 ---
 
 ## Q154707: Error Running #COMMAND /C Capture.exe from Login Script

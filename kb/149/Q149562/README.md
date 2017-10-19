@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149562: STOP Msg: &quot;c000021a &quot;- Using Local Path for Mandatory Profile"
-permalink: kb/149/Q149562/
+permalink: /kb/149/Q149562/
 ---
 
 ## Q149562: STOP Msg: &quot;c000021a &quot;- Using Local Path for Mandatory Profile

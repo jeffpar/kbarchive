@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156409: Basic Authentication Prompt Before NT Challenge/Response"
-permalink: kb/156/Q156409/
+permalink: /kb/156/Q156409/
 ---
 
 ## Q156409: Basic Authentication Prompt Before NT Challenge/Response

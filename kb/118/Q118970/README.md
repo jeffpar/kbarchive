@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118970: SMTP: Error (9) Closing MS-DOS Socket for LAN Workplace"
-permalink: kb/118/Q118970/
+permalink: /kb/118/Q118970/
 ---
 
 ## Q118970: SMTP: Error (9) Closing MS-DOS Socket for LAN Workplace

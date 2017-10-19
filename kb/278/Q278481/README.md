@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278481: MSN Companion Troubleshooting Tool FIXIT"
-permalink: kb/278/Q278481/
+permalink: /kb/278/Q278481/
 ---
 
 ## Q278481: MSN Companion Troubleshooting Tool FIXIT

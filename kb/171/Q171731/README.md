@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171731: DOC: LoadResData Function Does Not Support All Formats"
-permalink: kb/171/Q171731/
+permalink: /kb/171/Q171731/
 ---
 
 ## Q171731: DOC: LoadResData Function Does Not Support All Formats

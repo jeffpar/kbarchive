@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169130: XFOR: MS Mail Migration Fails When User List File Is Specified"
-permalink: kb/169/Q169130/
+permalink: /kb/169/Q169130/
 ---
 
 ## Q169130: XFOR: MS Mail Migration Fails When User List File Is Specified

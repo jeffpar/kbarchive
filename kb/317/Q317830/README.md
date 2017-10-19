@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317830: FS2002: CH Products Controllers Do Not Work As Expected"
-permalink: kb/317/Q317830/
+permalink: /kb/317/Q317830/
 ---
 
 ## Q317830: FS2002: CH Products Controllers Do Not Work As Expected

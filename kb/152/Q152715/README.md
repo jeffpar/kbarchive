@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152715: RDO 1.0b Release Available"
-permalink: kb/152/Q152715/
+permalink: /kb/152/Q152715/
 ---
 
 ## Q152715: RDO 1.0b Release Available

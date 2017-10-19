@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315583: HOW TO: Change Web Site Permissions on an IIS Server"
-permalink: kb/315/Q315583/
+permalink: /kb/315/Q315583/
 ---
 
 ## Q315583: HOW TO: Change Web Site Permissions on an IIS Server

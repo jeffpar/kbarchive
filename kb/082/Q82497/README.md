@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82497: Epson Clone Printers Print Unreadable Characters"
-permalink: kb/082/Q82497/
+permalink: /kb/082/Q82497/
 ---
 
 ## Q82497: Epson Clone Printers Print Unreadable Characters

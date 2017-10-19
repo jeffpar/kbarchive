@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197471: WD97: Options That Are Unavailable in Print Preview"
-permalink: kb/197/Q197471/
+permalink: /kb/197/Q197471/
 ---
 
 ## Q197471: WD97: Options That Are Unavailable in Print Preview

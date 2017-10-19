@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149748: BUG: FOR3093 Error Incorrectly Generated Without /4Ys"
-permalink: kb/149/Q149748/
+permalink: /kb/149/Q149748/
 ---
 
 ## Q149748: BUG: FOR3093 Error Incorrectly Generated Without /4Ys

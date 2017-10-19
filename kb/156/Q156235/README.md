@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156235: BUG: MODIFY WINDOW SCREEN Does Not Reset BackColor Property"
-permalink: kb/156/Q156235/
+permalink: /kb/156/Q156235/
 ---
 
 ## Q156235: BUG: MODIFY WINDOW SCREEN Does Not Reset BackColor Property

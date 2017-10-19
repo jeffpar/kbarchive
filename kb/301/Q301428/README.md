@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301428: Troubleshooting Outlook Web Access from an IIS Perspective"
-permalink: kb/301/Q301428/
+permalink: /kb/301/Q301428/
 ---
 
 ## Q301428: Troubleshooting Outlook Web Access from an IIS Perspective

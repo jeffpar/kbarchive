@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169918: XCON:Event 2152 May Occur During MTA Startup"
-permalink: kb/169/Q169918/
+permalink: /kb/169/Q169918/
 ---
 
 ## Q169918: XCON:Event 2152 May Occur During MTA Startup

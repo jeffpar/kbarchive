@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174009: Mail Attachment Security Add-on Available"
-permalink: kb/174/Q174009/
+permalink: /kb/174/Q174009/
 ---
 
 ## Q174009: Mail Attachment Security Add-on Available

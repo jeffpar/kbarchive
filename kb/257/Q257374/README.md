@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257374: NetUserEnum() May Return Error 2140"
-permalink: kb/257/Q257374/
+permalink: /kb/257/Q257374/
 ---
 
 ## Q257374: NetUserEnum() May Return Error 2140

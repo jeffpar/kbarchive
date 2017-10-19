@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256571: WD97: Word Stops Responding During Spelling and Grammar Check"
-permalink: kb/256/Q256571/
+permalink: /kb/256/Q256571/
 ---
 
 ## Q256571: WD97: Word Stops Responding During Spelling and Grammar Check

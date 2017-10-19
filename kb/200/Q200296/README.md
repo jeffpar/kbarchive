@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200296: BUG: ComboBox Display Bleeds Through Pages in a PageFrame"
-permalink: kb/200/Q200296/
+permalink: /kb/200/Q200296/
 ---
 
 ## Q200296: BUG: ComboBox Display Bleeds Through Pages in a PageFrame

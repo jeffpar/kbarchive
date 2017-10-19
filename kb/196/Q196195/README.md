@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196195: PRB: VSSVer.scc Added to FrontPage Web"
-permalink: kb/196/Q196195/
+permalink: /kb/196/Q196195/
 ---
 
 ## Q196195: PRB: VSSVer.scc Added to FrontPage Web

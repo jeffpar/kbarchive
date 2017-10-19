@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189911: PRB: REDIMENSION an Array Passed by Reference in DLL Fails"
-permalink: kb/189/Q189911/
+permalink: /kb/189/Q189911/
 ---
 
 ## Q189911: PRB: REDIMENSION an Array Passed by Reference in DLL Fails

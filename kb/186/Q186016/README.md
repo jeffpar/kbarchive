@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186016: WD97: Spelling Checker Constantly Rechecks Words in All Caps"
-permalink: kb/186/Q186016/
+permalink: /kb/186/Q186016/
 ---
 
 ## Q186016: WD97: Spelling Checker Constantly Rechecks Words in All Caps

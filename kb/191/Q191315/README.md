@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191315: BUG: ON ERROR Does Not Trap &quot;Alias Not Found&quot; Error"
-permalink: kb/191/Q191315/
+permalink: /kb/191/Q191315/
 ---
 
 ## Q191315: BUG: ON ERROR Does Not Trap &quot;Alias Not Found&quot; Error

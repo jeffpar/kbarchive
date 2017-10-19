@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165244: NTbackup on Spanish NT 4.0 Will Not Use Command-line Switches"
-permalink: kb/165/Q165244/
+permalink: /kb/165/Q165244/
 ---
 
 ## Q165244: NTbackup on Spanish NT 4.0 Will Not Use Command-line Switches

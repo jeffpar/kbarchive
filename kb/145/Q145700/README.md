@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145700: HOWTO: How the Server Use Is Determined by OLE"
-permalink: kb/145/Q145700/
+permalink: /kb/145/Q145700/
 ---
 
 ## Q145700: HOWTO: How the Server Use Is Determined by OLE

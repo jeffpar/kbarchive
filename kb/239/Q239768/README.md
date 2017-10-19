@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239768: NBA/NFL 2000: Unable to Hear Sound in the Game"
-permalink: kb/239/Q239768/
+permalink: /kb/239/Q239768/
 ---
 
 ## Q239768: NBA/NFL 2000: Unable to Hear Sound in the Game

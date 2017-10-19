@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124320: BUG: No Error Message When Changing Qualifier on 2nd hstmt"
-permalink: kb/124/Q124320/
+permalink: /kb/124/Q124320/
 ---
 
 ## Q124320: BUG: No Error Message When Changing Qualifier on 2nd hstmt

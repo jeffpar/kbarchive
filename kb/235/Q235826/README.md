@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235826: SMS: Error Message 2703 Indicating That Valid MIFs Are Corrupted"
-permalink: kb/235/Q235826/
+permalink: /kb/235/Q235826/
 ---
 
 ## Q235826: SMS: Error Message 2703 Indicating That Valid MIFs Are Corrupted

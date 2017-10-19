@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219332: Memory Leak in RPC When Doing Repeated Binding Lookups"
-permalink: kb/219/Q219332/
+permalink: /kb/219/Q219332/
 ---
 
 ## Q219332: Memory Leak in RPC When Doing Repeated Binding Lookups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146850: XCLN: Message Body Scroll at End of Document"
-permalink: kb/146/Q146850/
+permalink: /kb/146/Q146850/
 ---
 
 ## Q146850: XCLN: Message Body Scroll at End of Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104634: INFO: fstream's File Pointers Are Not Independent"
-permalink: kb/104/Q104634/
+permalink: /kb/104/Q104634/
 ---
 
 ## Q104634: INFO: fstream's File Pointers Are Not Independent

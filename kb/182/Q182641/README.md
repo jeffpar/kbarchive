@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182641: 5250 App Doesn't Support Accelerator Keys from Sign-on Box"
-permalink: kb/182/Q182641/
+permalink: /kb/182/Q182641/
 ---
 
 ## Q182641: 5250 App Doesn't Support Accelerator Keys from Sign-on Box

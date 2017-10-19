@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82522: PageMaker 4.0 and General Protection Faults"
-permalink: kb/082/Q82522/
+permalink: /kb/082/Q82522/
 ---
 
 ## Q82522: PageMaker 4.0 and General Protection Faults

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139478: INFO: _heapwalk() Does Not Work On Win32s"
-permalink: kb/139/Q139478/
+permalink: /kb/139/Q139478/
 ---
 
 ## Q139478: INFO: _heapwalk() Does Not Work On Win32s

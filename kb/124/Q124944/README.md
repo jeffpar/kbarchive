@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124944: Sound Blaster Cards and Windows Driver Information"
-permalink: kb/124/Q124944/
+permalink: /kb/124/Q124944/
 ---
 
 ## Q124944: Sound Blaster Cards and Windows Driver Information

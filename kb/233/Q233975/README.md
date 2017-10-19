@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233975: Err Msg: The Requested Service Has Already Been Started"
-permalink: kb/233/Q233975/
+permalink: /kb/233/Q233975/
 ---
 
 ## Q233975: Err Msg: The Requested Service Has Already Been Started

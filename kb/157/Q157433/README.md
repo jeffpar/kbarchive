@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157433: INFO: STL Sample for the basic_string size and resize Functions"
-permalink: kb/157/Q157433/
+permalink: /kb/157/Q157433/
 ---
 
 ## Q157433: INFO: STL Sample for the basic_string size and resize Functions

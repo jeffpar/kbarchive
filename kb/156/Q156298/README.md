@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156298: FIX: Error on Disconnecting from ODBC Desktop Drivers"
-permalink: kb/156/Q156298/
+permalink: /kb/156/Q156298/
 ---
 
 ## Q156298: FIX: Error on Disconnecting from ODBC Desktop Drivers

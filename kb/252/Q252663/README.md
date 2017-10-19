@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252663: WritePrinter() API Call Does Not Work Printin to an LPR Printer"
-permalink: kb/252/Q252663/
+permalink: /kb/252/Q252663/
 ---
 
 ## Q252663: WritePrinter() API Call Does Not Work Printin to an LPR Printer

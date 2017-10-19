@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259760: Compression Is Not Enabled on POST Request"
-permalink: kb/259/Q259760/
+permalink: /kb/259/Q259760/
 ---
 
 ## Q259760: Compression Is Not Enabled on POST Request

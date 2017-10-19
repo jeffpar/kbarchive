@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151729: Single-Letter Domain Names Appear Twice in Browse List"
-permalink: kb/151/Q151729/
+permalink: /kb/151/Q151729/
 ---
 
 ## Q151729: Single-Letter Domain Names Appear Twice in Browse List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157816: SMS: Hardware Inventory Changes Lotus Organizer Sound Output"
-permalink: kb/157/Q157816/
+permalink: /kb/157/Q157816/
 ---
 
 ## Q157816: SMS: Hardware Inventory Changes Lotus Organizer Sound Output

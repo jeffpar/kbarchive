@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166736: WD97: User Name Dialog Box Appears When You Start Word"
-permalink: kb/166/Q166736/
+permalink: /kb/166/Q166736/
 ---
 
 ## Q166736: WD97: User Name Dialog Box Appears When You Start Word

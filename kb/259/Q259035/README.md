@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259035: PRB: GetChunk/AppendChunk Methods Are Not Clearly Explained"
-permalink: kb/259/Q259035/
+permalink: /kb/259/Q259035/
 ---
 
 ## Q259035: PRB: GetChunk/AppendChunk Methods Are Not Clearly Explained

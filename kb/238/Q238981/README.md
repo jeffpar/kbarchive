@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238981: HOWTO: Passing Optional Parameters When Calling a Function"
-permalink: kb/238/Q238981/
+permalink: /kb/238/Q238981/
 ---
 
 ## Q238981: HOWTO: Passing Optional Parameters When Calling a Function

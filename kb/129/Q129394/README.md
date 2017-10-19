@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129394: Configuring Password Requirements on RemoteBoot Workstations"
-permalink: kb/129/Q129394/
+permalink: /kb/129/Q129394/
 ---
 
 ## Q129394: Configuring Password Requirements on RemoteBoot Workstations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149559: FPNW LOGIN.EXE Doesn't Handle Password Expiration"
-permalink: kb/149/Q149559/
+permalink: /kb/149/Q149559/
 ---
 
 ## Q149559: FPNW LOGIN.EXE Doesn't Handle Password Expiration

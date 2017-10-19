@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285883: XADM: Error Message Occurs When You Install Exchange Server 5.5"
-permalink: kb/285/Q285883/
+permalink: /kb/285/Q285883/
 ---
 
 ## Q285883: XADM: Error Message Occurs When You Install Exchange Server 5.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98706: Login Scripts to Change a User to Home Directory"
-permalink: kb/098/Q98706/
+permalink: /kb/098/Q98706/
 ---
 
 ## Q98706: Login Scripts to Change a User to Home Directory

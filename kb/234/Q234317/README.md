@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234317: FIX: HTML Truncated with VS SP3 WebClass Run Time in VB IDE"
-permalink: kb/234/Q234317/
+permalink: /kb/234/Q234317/
 ---
 
 ## Q234317: FIX: HTML Truncated with VS SP3 WebClass Run Time in VB IDE

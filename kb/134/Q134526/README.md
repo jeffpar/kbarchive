@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134526: Compaq Deskpro Drive D Unavailable After Installing Windows 95"
-permalink: kb/134/Q134526/
+permalink: /kb/134/Q134526/
 ---
 
 ## Q134526: Compaq Deskpro Drive D Unavailable After Installing Windows 95

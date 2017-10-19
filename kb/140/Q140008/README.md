@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140008: Seed Routing Network Range Options Grayed Out with DEC FDDI"
-permalink: kb/140/Q140008/
+permalink: /kb/140/Q140008/
 ---
 
 ## Q140008: Seed Routing Network Range Options Grayed Out with DEC FDDI

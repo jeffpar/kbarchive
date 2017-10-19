@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301504: Printer Problems After You Apply SP6a"
-permalink: kb/301/Q301504/
+permalink: /kb/301/Q301504/
 ---
 
 ## Q301504: Printer Problems After You Apply SP6a

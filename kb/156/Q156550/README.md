@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156550: PRB: Data Type Mismatch Error with Combo Box or List Box"
-permalink: kb/156/Q156550/
+permalink: /kb/156/Q156550/
 ---
 
 ## Q156550: PRB: Data Type Mismatch Error with Combo Box or List Box

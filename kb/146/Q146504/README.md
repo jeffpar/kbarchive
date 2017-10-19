@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146504: XADM: Installing Exchange Server Allows Selection of Group"
-permalink: kb/146/Q146504/
+permalink: /kb/146/Q146504/
 ---
 
 ## Q146504: XADM: Installing Exchange Server Allows Selection of Group

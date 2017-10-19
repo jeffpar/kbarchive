@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154321: MSB Dinosaurs: Hangs at a Black Screen on Startup"
-permalink: kb/154/Q154321/
+permalink: /kb/154/Q154321/
 ---
 
 ## Q154321: MSB Dinosaurs: Hangs at a Black Screen on Startup

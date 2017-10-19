@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64661: Write Randomly Selects Keys or Windows Hangs on Sperry 286"
-permalink: kb/064/Q64661/
+permalink: /kb/064/Q64661/
 ---
 
 ## Q64661: Write Randomly Selects Keys or Windows Hangs on Sperry 286

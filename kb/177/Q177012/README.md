@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177012: WD97: Macro Does Not Insert AutoText Entries with Formatting"
-permalink: kb/177/Q177012/
+permalink: /kb/177/Q177012/
 ---
 
 ## Q177012: WD97: Macro Does Not Insert AutoText Entries with Formatting

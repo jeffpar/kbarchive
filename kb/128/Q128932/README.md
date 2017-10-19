@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128932: How Windows 95 Resolves Shortcut Links"
-permalink: kb/128/Q128932/
+permalink: /kb/128/Q128932/
 ---
 
 ## Q128932: How Windows 95 Resolves Shortcut Links

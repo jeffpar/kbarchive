@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135901: Windows 95 CD-ROM Extra.txt File"
-permalink: kb/135/Q135901/
+permalink: /kb/135/Q135901/
 ---
 
 ## Q135901: Windows 95 CD-ROM Extra.txt File

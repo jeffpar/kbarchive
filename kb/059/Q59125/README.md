@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59125: Mac GW: AppleLink Comm Will Not Start Up, Missing &quot;MS Mail GW&quot;"
-permalink: kb/059/Q59125/
+permalink: /kb/059/Q59125/
 ---
 
 ## Q59125: Mac GW: AppleLink Comm Will Not Start Up, Missing &quot;MS Mail GW&quot;

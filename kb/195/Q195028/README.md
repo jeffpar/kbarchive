@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195028: Mfccdc Demonstrates Viewport and Mapmode Use in MFC"
-permalink: kb/195/Q195028/
+permalink: /kb/195/Q195028/
 ---
 
 ## Q195028: Mfccdc Demonstrates Viewport and Mapmode Use in MFC

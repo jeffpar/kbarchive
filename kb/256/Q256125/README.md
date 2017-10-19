@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256125: SMS: No Status Message When Client Base Components Upgraded"
-permalink: kb/256/Q256125/
+permalink: /kb/256/Q256125/
 ---
 
 ## Q256125: SMS: No Status Message When Client Base Components Upgraded

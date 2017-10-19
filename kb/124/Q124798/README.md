@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124798: Ethernet_802.3 Does Not Work with ODI/NDIS Support Driver"
-permalink: kb/124/Q124798/
+permalink: /kb/124/Q124798/
 ---
 
 ## Q124798: Ethernet_802.3 Does Not Work with ODI/NDIS Support Driver

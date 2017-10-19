@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171887: LUA Stop Command Available When Connection Is Inactive"
-permalink: kb/171/Q171887/
+permalink: /kb/171/Q171887/
 ---
 
 ## Q171887: LUA Stop Command Available When Connection Is Inactive

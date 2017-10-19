@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151782: XFOR: Dirsync Modifies Causing Names to Disappear from Exchange"
-permalink: kb/151/Q151782/
+permalink: /kb/151/Q151782/
 ---
 
 ## Q151782: XFOR: Dirsync Modifies Causing Names to Disappear from Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136900: Manually Updating the Startup Disk After Installing MS Plus!"
-permalink: kb/136/Q136900/
+permalink: /kb/136/Q136900/
 ---
 
 ## Q136900: Manually Updating the Startup Disk After Installing MS Plus!

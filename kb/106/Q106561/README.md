@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106561: FIX: Debug: Single-Step Fails with Emulated Float Intructions"
-permalink: kb/106/Q106561/
+permalink: /kb/106/Q106561/
 ---
 
 ## Q106561: FIX: Debug: Single-Step Fails with Emulated Float Intructions

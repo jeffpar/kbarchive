@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186362: CC: A Bridge Too Far Err Msg: Cannot Locate a Necessary Folder"
-permalink: kb/186/Q186362/
+permalink: /kb/186/Q186362/
 ---
 
 ## Q186362: CC: A Bridge Too Far Err Msg: Cannot Locate a Necessary Folder

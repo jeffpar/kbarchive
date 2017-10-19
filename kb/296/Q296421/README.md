@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296421: Schedule+ 7.x Hangs at Start After Selecting Group Mode"
-permalink: kb/296/Q296421/
+permalink: /kb/296/Q296421/
 ---
 
 ## Q296421: Schedule+ 7.x Hangs at Start After Selecting Group Mode

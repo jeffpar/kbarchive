@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148321: Standard Edition Missing Help Entries for Win32SDK"
-permalink: kb/148/Q148321/
+permalink: /kb/148/Q148321/
 ---
 
 ## Q148321: Standard Edition Missing Help Entries for Win32SDK

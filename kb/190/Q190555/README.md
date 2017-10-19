@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190555: XFOR: Connector for cc:Mail Converts Messages Larger Than 20 KB"
-permalink: kb/190/Q190555/
+permalink: /kb/190/Q190555/
 ---
 
 ## Q190555: XFOR: Connector for cc:Mail Converts Messages Larger Than 20 KB

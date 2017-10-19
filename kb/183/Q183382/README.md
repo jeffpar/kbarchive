@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183382: RRAS Event ID: 20111 A Demand Dial Connection to the..."
-permalink: kb/183/Q183382/
+permalink: /kb/183/Q183382/
 ---
 
 ## Q183382: RRAS Event ID: 20111 A Demand Dial Connection to the...

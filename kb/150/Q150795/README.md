@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150795: SNA Server Exception 0xC0000194 (Possible Deadlock)"
-permalink: kb/150/Q150795/
+permalink: /kb/150/Q150795/
 ---
 
 ## Q150795: SNA Server Exception 0xC0000194 (Possible Deadlock)

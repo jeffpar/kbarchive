@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157979: NT/RDR: &quot;Access Denied&quot; with Windows NT 4.0 Ntbackup"
-permalink: kb/157/Q157979/
+permalink: /kb/157/Q157979/
 ---
 
 ## Q157979: NT/RDR: &quot;Access Denied&quot; with Windows NT 4.0 Ntbackup

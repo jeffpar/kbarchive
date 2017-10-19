@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117932: GRAMS: Image Filling Does Not Work Under Windows 95"
-permalink: kb/117/Q117932/
+permalink: /kb/117/Q117932/
 ---
 
 ## Q117932: GRAMS: Image Filling Does Not Work Under Windows 95

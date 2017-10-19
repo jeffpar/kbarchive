@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106660: RUN /N Not Working Correctly with MS-DOS Batch File"
-permalink: kb/106/Q106660/
+permalink: /kb/106/Q106660/
 ---
 
 ## Q106660: RUN /N Not Working Correctly with MS-DOS Batch File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241896: PRB: Threading Issues with Visual Basic 6.0 ActiveX Components"
-permalink: kb/241/Q241896/
+permalink: /kb/241/Q241896/
 ---
 
 ## Q241896: PRB: Threading Issues with Visual Basic 6.0 ActiveX Components

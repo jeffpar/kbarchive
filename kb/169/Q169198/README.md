@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169198: XADM: Tips for Managing Public Folders"
-permalink: kb/169/Q169198/
+permalink: /kb/169/Q169198/
 ---
 
 ## Q169198: XADM: Tips for Managing Public Folders

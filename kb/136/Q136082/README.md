@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136082: Artist: Centers of Borderless Balloon Text are White"
-permalink: kb/136/Q136082/
+permalink: /kb/136/Q136082/
 ---
 
 ## Q136082: Artist: Centers of Borderless Balloon Text are White

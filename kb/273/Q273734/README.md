@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273734: SMS: How to Set Up Unattended Installation Scripts"
-permalink: kb/273/Q273734/
+permalink: /kb/273/Q273734/
 ---
 
 ## Q273734: SMS: How to Set Up Unattended Installation Scripts

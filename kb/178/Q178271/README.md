@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178271: Problem Renaming Files on a UNIX-based DEC Pathworks Server"
-permalink: kb/178/Q178271/
+permalink: /kb/178/Q178271/
 ---
 
 ## Q178271: Problem Renaming Files on a UNIX-based DEC Pathworks Server

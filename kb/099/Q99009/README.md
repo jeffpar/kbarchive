@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99009: Use Asynchronous Negotiation Only with Toshiba 3401"
-permalink: kb/099/Q99009/
+permalink: /kb/099/Q99009/
 ---
 
 ## Q99009: Use Asynchronous Negotiation Only with Toshiba 3401

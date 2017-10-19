@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203254: XADM: Microsoft Exchange Server CD International Versions"
-permalink: kb/203/Q203254/
+permalink: /kb/203/Q203254/
 ---
 
 ## Q203254: XADM: Microsoft Exchange Server CD International Versions

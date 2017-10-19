@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197846: Printing Multiple Copies of the Same Job Via LPD Broken in SP4"
-permalink: kb/197/Q197846/
+permalink: /kb/197/Q197846/
 ---
 
 ## Q197846: Printing Multiple Copies of the Same Job Via LPD Broken in SP4

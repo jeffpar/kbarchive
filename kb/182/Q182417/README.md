@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182417: OS/400 Version 3 Release 7 Password Synchronization May Fail"
-permalink: kb/182/Q182417/
+permalink: /kb/182/Q182417/
 ---
 
 ## Q182417: OS/400 Version 3 Release 7 Password Synchronization May Fail

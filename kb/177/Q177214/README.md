@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177214: PRB: Setup Wizard Does Not Use Updated Run Time Files"
-permalink: kb/177/Q177214/
+permalink: /kb/177/Q177214/
 ---
 
 ## Q177214: PRB: Setup Wizard Does Not Use Updated Run Time Files

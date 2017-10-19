@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163932: WD97: Frequently Asked Questions About Word Macro Viruses"
-permalink: kb/163/Q163932/
+permalink: /kb/163/Q163932/
 ---
 
 ## Q163932: WD97: Frequently Asked Questions About Word Macro Viruses

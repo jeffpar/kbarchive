@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157159: STL Sample for map::insert, map::find, and map::end Functions"
-permalink: kb/157/Q157159/
+permalink: /kb/157/Q157159/
 ---
 
 ## Q157159: STL Sample for map::insert, map::find, and map::end Functions

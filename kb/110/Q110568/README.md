@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110568: Pentium-Based Machine Hangs with Communication Applications"
-permalink: kb/110/Q110568/
+permalink: /kb/110/Q110568/
 ---
 
 ## Q110568: Pentium-Based Machine Hangs with Communication Applications

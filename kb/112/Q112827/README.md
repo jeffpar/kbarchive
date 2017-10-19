@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112827: PPT: PowerPoint Viewer (16-Bit) Available from Online Services"
-permalink: kb/112/Q112827/
+permalink: /kb/112/Q112827/
 ---
 
 ## Q112827: PPT: PowerPoint Viewer (16-Bit) Available from Online Services

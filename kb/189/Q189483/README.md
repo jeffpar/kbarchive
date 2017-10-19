@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189483: BUG: Cannot Set RichTextBox Visible Property to False"
-permalink: kb/189/Q189483/
+permalink: /kb/189/Q189483/
 ---
 
 ## Q189483: BUG: Cannot Set RichTextBox Visible Property to False

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126580: SMS Windows 95 Client UNC Connections Not Dropped"
-permalink: kb/126/Q126580/
+permalink: /kb/126/Q126580/
 ---
 
 ## Q126580: SMS Windows 95 Client UNC Connections Not Dropped

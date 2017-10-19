@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230907: Encarta Research Organizer: Images in Project Are not Exported"
-permalink: kb/230/Q230907/
+permalink: /kb/230/Q230907/
 ---
 
 ## Q230907: Encarta Research Organizer: Images in Project Are not Exported

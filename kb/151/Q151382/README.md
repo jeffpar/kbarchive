@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151382: FIX: LoadBarState() Causes Assert In Bardock.cpp, Line 682"
-permalink: kb/151/Q151382/
+permalink: /kb/151/Q151382/
 ---
 
 ## Q151382: FIX: LoadBarState() Causes Assert In Bardock.cpp, Line 682

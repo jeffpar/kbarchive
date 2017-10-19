@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138261: Error Message: Video Not Available, Cannot Find Decompressor"
-permalink: kb/138/Q138261/
+permalink: /kb/138/Q138261/
 ---
 
 ## Q138261: Error Message: Video Not Available, Cannot Find Decompressor

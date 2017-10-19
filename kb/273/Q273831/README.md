@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273831: Midtown Madness: Minimum System Requirements"
-permalink: kb/273/Q273831/
+permalink: /kb/273/Q273831/
 ---
 
 ## Q273831: Midtown Madness: Minimum System Requirements

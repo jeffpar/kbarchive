@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241152: XADM: &quot;Unsecuring&quot; a Database for a Lab Environment"
-permalink: kb/241/Q241152/
+permalink: /kb/241/Q241152/
 ---
 
 ## Q241152: XADM: &quot;Unsecuring&quot; a Database for a Lab Environment

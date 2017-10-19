@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198060: Program Runs Slowly on Terminal Server"
-permalink: kb/198/Q198060/
+permalink: /kb/198/Q198060/
 ---
 
 ## Q198060: Program Runs Slowly on Terminal Server

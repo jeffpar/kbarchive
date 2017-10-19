@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155819: XADM: IMC Can't Decode Mail That Uses the EUC-KR Charset"
-permalink: kb/155/Q155819/
+permalink: /kb/155/Q155819/
 ---
 
 ## Q155819: XADM: IMC Can't Decode Mail That Uses the EUC-KR Charset

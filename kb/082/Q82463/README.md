@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82463: Citizen Narrow Carriage Printers Have 8&quot; Printable Region"
-permalink: kb/082/Q82463/
+permalink: /kb/082/Q82463/
 ---
 
 ## Q82463: Citizen Narrow Carriage Printers Have 8&quot; Printable Region

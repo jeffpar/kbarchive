@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173265: BUG: Internet Transfer Control (SP2) Username and Password Fails"
-permalink: kb/173/Q173265/
+permalink: /kb/173/Q173265/
 ---
 
 ## Q173265: BUG: Internet Transfer Control (SP2) Username and Password Fails

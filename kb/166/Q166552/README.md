@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166552: XADM: Starting the IMS Causes the Information Store to Stop"
-permalink: kb/166/Q166552/
+permalink: /kb/166/Q166552/
 ---
 
 ## Q166552: XADM: Starting the IMS Causes the Information Store to Stop

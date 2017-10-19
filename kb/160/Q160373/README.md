@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160373: Adaptec Aic78xx Does Not Issue Multiple Tagged Commands"
-permalink: kb/160/Q160373/
+permalink: /kb/160/Q160373/
 ---
 
 ## Q160373: Adaptec Aic78xx Does Not Issue Multiple Tagged Commands

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155199: WD97: How to Create Two-Page Numbering Schemes in One Document"
-permalink: kb/155/Q155199/
+permalink: /kb/155/Q155199/
 ---
 
 ## Q155199: WD97: How to Create Two-Page Numbering Schemes in One Document

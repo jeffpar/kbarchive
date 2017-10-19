@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266383: XCON: MTA 2026 and Internet Mail Service 3016 Error Messages"
-permalink: kb/266/Q266383/
+permalink: /kb/266/Q266383/
 ---
 
 ## Q266383: XCON: MTA 2026 and Internet Mail Service 3016 Error Messages

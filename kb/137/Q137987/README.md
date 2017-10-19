@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137987: NET VIEW May Cause Semaphore Time Out and Event ID 3210"
-permalink: kb/137/Q137987/
+permalink: /kb/137/Q137987/
 ---
 
 ## Q137987: NET VIEW May Cause Semaphore Time Out and Event ID 3210

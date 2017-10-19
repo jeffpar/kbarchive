@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277677: Resource Conflict May Occur on Computer with 4 GB of Memory"
-permalink: kb/277/Q277677/
+permalink: /kb/277/Q277677/
 ---
 
 ## Q277677: Resource Conflict May Occur on Computer with 4 GB of Memory

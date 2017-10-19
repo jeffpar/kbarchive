@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74985: Determining Load Size of Device Drivers or TSRs"
-permalink: kb/074/Q74985/
+permalink: /kb/074/Q74985/
 ---
 
 ## Q74985: Determining Load Size of Device Drivers or TSRs

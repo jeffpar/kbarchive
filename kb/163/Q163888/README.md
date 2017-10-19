@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163888: Installing Sound Blaster 16 Value Disables PS/2 Mouse"
-permalink: kb/163/Q163888/
+permalink: /kb/163/Q163888/
 ---
 
 ## Q163888: Installing Sound Blaster 16 Value Disables PS/2 Mouse

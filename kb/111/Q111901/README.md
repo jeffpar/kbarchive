@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111901: KB Help File on Current Windows 3.1 Printing Issues"
-permalink: kb/111/Q111901/
+permalink: /kb/111/Q111901/
 ---
 
 ## Q111901: KB Help File on Current Windows 3.1 Printing Issues

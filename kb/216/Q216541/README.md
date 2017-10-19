@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216541: XFOR: Modifying QROOT Parameter Requires UNC Path"
-permalink: kb/216/Q216541/
+permalink: /kb/216/Q216541/
 ---
 
 ## Q216541: XFOR: Modifying QROOT Parameter Requires UNC Path

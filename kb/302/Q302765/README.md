@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302765: Can't Add Second MSN Internet Access User in MSN Explorer 6.1 on"
-permalink: kb/302/Q302765/
+permalink: /kb/302/Q302765/
 ---
 
 ## Q302765: Can't Add Second MSN Internet Access User in MSN Explorer 6.1 on

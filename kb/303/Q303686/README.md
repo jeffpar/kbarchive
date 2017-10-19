@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303686: XADM: Information Store Stops Responding in STORE!HrDecodeRTF"
-permalink: kb/303/Q303686/
+permalink: /kb/303/Q303686/
 ---
 
 ## Q303686: XADM: Information Store Stops Responding in STORE!HrDecodeRTF

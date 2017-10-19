@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64123: PRB: Encountering an INT 01 with WDEB386"
-permalink: kb/064/Q64123/
+permalink: /kb/064/Q64123/
 ---
 
 ## Q64123: PRB: Encountering an INT 01 with WDEB386

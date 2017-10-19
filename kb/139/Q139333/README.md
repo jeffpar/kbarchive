@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139333: Creating Alternate Boot Selections on AXP Machines"
-permalink: kb/139/Q139333/
+permalink: /kb/139/Q139333/
 ---
 
 ## Q139333: Creating Alternate Boot Selections on AXP Machines

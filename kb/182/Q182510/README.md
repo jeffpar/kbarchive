@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182510: XADM: Error Message: Could Not Open Emsmdb32.dll During Upgrade"
-permalink: kb/182/Q182510/
+permalink: /kb/182/Q182510/
 ---
 
 ## Q182510: XADM: Error Message: Could Not Open Emsmdb32.dll During Upgrade

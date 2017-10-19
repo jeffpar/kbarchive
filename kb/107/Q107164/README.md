@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107164: PRB: .FLI and .FLC Files Don't Play"
-permalink: kb/107/Q107164/
+permalink: /kb/107/Q107164/
 ---
 
 ## Q107164: PRB: .FLI and .FLC Files Don't Play

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252715: Error 14064 Attempting to Change an Attribute Value Type"
-permalink: kb/252/Q252715/
+permalink: /kb/252/Q252715/
 ---
 
 ## Q252715: Error 14064 Attempting to Change an Attribute Value Type

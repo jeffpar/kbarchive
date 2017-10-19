@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198391: WD97: Some Words and Synonyms Missing After Installing SR-2"
-permalink: kb/198/Q198391/
+permalink: /kb/198/Q198391/
 ---
 
 ## Q198391: WD97: Some Words and Synonyms Missing After Installing SR-2

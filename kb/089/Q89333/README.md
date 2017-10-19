@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89333: Minimum System Requirements for Windows for Workgroups"
-permalink: kb/089/Q89333/
+permalink: /kb/089/Q89333/
 ---
 
 ## Q89333: Minimum System Requirements for Windows for Workgroups

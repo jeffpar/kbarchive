@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159424: WD97: FileCopy Statement Requires Destination File Name"
-permalink: kb/159/Q159424/
+permalink: /kb/159/Q159424/
 ---
 
 ## Q159424: WD97: FileCopy Statement Requires Destination File Name

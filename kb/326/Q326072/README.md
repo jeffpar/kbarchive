@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326072: SMS: First 2,000 Results Are Returned When You Search for Values"
-permalink: kb/326/Q326072/
+permalink: /kb/326/Q326072/
 ---
 
 ## Q326072: SMS: First 2,000 Results Are Returned When You Search for Values

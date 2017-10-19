@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184411: FP: Cannot Validate Form Field if Name Has Invalid Character"
-permalink: kb/184/Q184411/
+permalink: /kb/184/Q184411/
 ---
 
 ## Q184411: FP: Cannot Validate Form Field if Name Has Invalid Character

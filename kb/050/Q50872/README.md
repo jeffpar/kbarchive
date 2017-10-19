@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50872: System Date and Time Defaults Back to Normal Flight Time"
-permalink: kb/050/Q50872/
+permalink: /kb/050/Q50872/
 ---
 
 ## Q50872: System Date and Time Defaults Back to Normal Flight Time

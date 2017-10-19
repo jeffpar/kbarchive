@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156985: CG3: Error When Using Clip Gallery to Insert a Sound"
-permalink: kb/156/Q156985/
+permalink: /kb/156/Q156985/
 ---
 
 ## Q156985: CG3: Error When Using Clip Gallery to Insert a Sound

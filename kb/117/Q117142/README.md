@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117142: HOWTO: Print to a File from FoxPro (Printer Problems Test)"
-permalink: kb/117/Q117142/
+permalink: /kb/117/Q117142/
 ---
 
 ## Q117142: HOWTO: Print to a File from FoxPro (Printer Problems Test)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194508: Unable to Install Printer Drivers in Other Languages"
-permalink: kb/194/Q194508/
+permalink: /kb/194/Q194508/
 ---
 
 ## Q194508: Unable to Install Printer Drivers in Other Languages

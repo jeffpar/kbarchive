@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161361: How to Obtain Updated Printer Drivers for Windows NT"
-permalink: kb/161/Q161361/
+permalink: /kb/161/Q161361/
 ---
 
 ## Q161361: How to Obtain Updated Printer Drivers for Windows NT

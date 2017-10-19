@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202178: XFOR: Messages to cc:Mail Queued in Submit Directory"
-permalink: kb/202/Q202178/
+permalink: /kb/202/Q202178/
 ---
 
 ## Q202178: XFOR: Messages to cc:Mail Queued in Submit Directory

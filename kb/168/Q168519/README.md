@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168519: PRB: Search Using OpenFile API Instead of Dir/Dir&#36; Function"
-permalink: kb/168/Q168519/
+permalink: /kb/168/Q168519/
 ---
 
 ## Q168519: PRB: Search Using OpenFile API Instead of Dir/Dir&#36; Function

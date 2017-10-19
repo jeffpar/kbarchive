@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194931: Incorrect Number of Active Users Displayed in SNA Manager"
-permalink: kb/194/Q194931/
+permalink: /kb/194/Q194931/
 ---
 
 ## Q194931: Incorrect Number of Active Users Displayed in SNA Manager

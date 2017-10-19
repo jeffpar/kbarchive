@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318346: BUG: No Merge Warning After User Changes the Binding Information"
-permalink: kb/318/Q318346/
+permalink: /kb/318/Q318346/
 ---
 
 ## Q318346: BUG: No Merge Warning After User Changes the Binding Information

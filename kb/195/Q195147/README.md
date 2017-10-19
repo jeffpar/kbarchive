@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195147: XADM: MSW Allows Last Private Store Server to Move from Site"
-permalink: kb/195/Q195147/
+permalink: /kb/195/Q195147/
 ---
 
 ## Q195147: XADM: MSW Allows Last Private Store Server to Move from Site

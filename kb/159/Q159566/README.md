@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159566: XCON: MTA Error 209: Submitting Domain Is Inconsistent"
-permalink: kb/159/Q159566/
+permalink: /kb/159/Q159566/
 ---
 
 ## Q159566: XCON: MTA Error 209: Submitting Domain Is Inconsistent

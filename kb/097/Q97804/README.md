@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97804: Microsoft Windows &amp; MS-DOS 5 Err Msg: Incorrect DOS Version"
-permalink: kb/097/Q97804/
+permalink: /kb/097/Q97804/
 ---
 
 ## Q97804: Microsoft Windows &amp; MS-DOS 5 Err Msg: Incorrect DOS Version

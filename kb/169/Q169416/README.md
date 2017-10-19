@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169416: RIP Routes May Have a Different Metric Than Expected"
-permalink: kb/169/Q169416/
+permalink: /kb/169/Q169416/
 ---
 
 ## Q169416: RIP Routes May Have a Different Metric Than Expected

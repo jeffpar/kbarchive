@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168079: FIX: _com_ptr_t::operator=(const _variant_t&amp;) AddRefs Twice"
-permalink: kb/168/Q168079/
+permalink: /kb/168/Q168079/
 ---
 
 ## Q168079: FIX: _com_ptr_t::operator=(const _variant_t&amp;) AddRefs Twice

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250260: Windows 95 Clients Cannot Use Resources from Windows NT Server"
-permalink: kb/250/Q250260/
+permalink: /kb/250/Q250260/
 ---
 
 ## Q250260: Windows 95 Clients Cannot Use Resources from Windows NT Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172194: How to Determine If a Program Is 16-Bit or 32-Bit"
-permalink: kb/172/Q172194/
+permalink: /kb/172/Q172194/
 ---
 
 ## Q172194: How to Determine If a Program Is 16-Bit or 32-Bit

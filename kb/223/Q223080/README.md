@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223080: FIX: ADODC Errors When RecordSet Property is set to NULL"
-permalink: kb/223/Q223080/
+permalink: /kb/223/Q223080/
 ---
 
 ## Q223080: FIX: ADODC Errors When RecordSet Property is set to NULL

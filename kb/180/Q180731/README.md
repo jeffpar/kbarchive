@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180731: How to Print to an HP JetDirect Printer by Means of LPR"
-permalink: kb/180/Q180731/
+permalink: /kb/180/Q180731/
 ---
 
 ## Q180731: How to Print to an HP JetDirect Printer by Means of LPR

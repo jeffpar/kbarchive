@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252655: Computer Hangs When You Click Allegiance Zone or Free Zone Game"
-permalink: kb/252/Q252655/
+permalink: /kb/252/Q252655/
 ---
 
 ## Q252655: Computer Hangs When You Click Allegiance Zone or Free Zone Game

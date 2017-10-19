@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77823: FIX: L2049 Error From LINK 5.1x with /HIGH Option"
-permalink: kb/077/Q77823/
+permalink: /kb/077/Q77823/
 ---
 
 ## Q77823: FIX: L2049 Error From LINK 5.1x with /HIGH Option

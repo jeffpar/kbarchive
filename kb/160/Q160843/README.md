@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160843: Windows 95/98 Clients Cannot See Long Share Names"
-permalink: kb/160/Q160843/
+permalink: /kb/160/Q160843/
 ---
 
 ## Q160843: Windows 95/98 Clients Cannot See Long Share Names

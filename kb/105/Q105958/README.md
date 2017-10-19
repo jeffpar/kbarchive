@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105958: PC Ext: Display Command Does Not Work with External 3.2"
-permalink: kb/105/Q105958/
+permalink: /kb/105/Q105958/
 ---
 
 ## Q105958: PC Ext: Display Command Does Not Work with External 3.2

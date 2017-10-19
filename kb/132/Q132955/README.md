@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132955: PC WRmt: Changing a Remote User from Default to Custom Views"
-permalink: kb/132/Q132955/
+permalink: /kb/132/Q132955/
 ---
 
 ## Q132955: PC WRmt: Changing a Remote User from Default to Custom Views

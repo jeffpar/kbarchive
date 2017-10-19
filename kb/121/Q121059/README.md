@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121059: Command-Line Filenames Appear Limited to 127 Characters"
-permalink: kb/121/Q121059/
+permalink: /kb/121/Q121059/
 ---
 
 ## Q121059: Command-Line Filenames Appear Limited to 127 Characters

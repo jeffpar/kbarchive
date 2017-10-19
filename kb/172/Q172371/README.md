@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172371: SMS: Network Monitor Error: Internal Token Ring Error"
-permalink: kb/172/Q172371/
+permalink: /kb/172/Q172371/
 ---
 
 ## Q172371: SMS: Network Monitor Error: Internal Token Ring Error

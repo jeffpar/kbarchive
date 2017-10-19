@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172634: SNA Server Access Violation in Function Sapascp()"
-permalink: kb/172/Q172634/
+permalink: /kb/172/Q172634/
 ---
 
 ## Q172634: SNA Server Access Violation in Function Sapascp()

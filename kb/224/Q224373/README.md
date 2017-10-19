@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224373: Application Name Is Blank When Created in HTMLA"
-permalink: kb/224/Q224373/
+permalink: /kb/224/Q224373/
 ---
 
 ## Q224373: Application Name Is Blank When Created in HTMLA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256904: WD97: Day Name Is Incorrect in a Date and Time Field"
-permalink: kb/256/Q256904/
+permalink: /kb/256/Q256904/
 ---
 
 ## Q256904: WD97: Day Name Is Incorrect in a Date and Time Field

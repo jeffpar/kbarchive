@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97814: Interfaces Allowing Direct LAN Man Connection to HP"
-permalink: kb/097/Q97814/
+permalink: /kb/097/Q97814/
 ---
 
 ## Q97814: Interfaces Allowing Direct LAN Man Connection to HP

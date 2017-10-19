@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319765: Zoo Tycoon: How to Change to a 3D Mouse Cursor"
-permalink: kb/319/Q319765/
+permalink: /kb/319/Q319765/
 ---
 
 ## Q319765: Zoo Tycoon: How to Change to a 3D Mouse Cursor

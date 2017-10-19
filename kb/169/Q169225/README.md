@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169225: Slow Copying from WinNT to Win95 in Bus Mastering Mode"
-permalink: kb/169/Q169225/
+permalink: /kb/169/Q169225/
 ---
 
 ## Q169225: Slow Copying from WinNT to Win95 in Bus Mastering Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247729: XCLN: Error Message: The Command You Specified Could Not Be..."
-permalink: kb/247/Q247729/
+permalink: /kb/247/Q247729/
 ---
 
 ## Q247729: XCLN: Error Message: The Command You Specified Could Not Be...

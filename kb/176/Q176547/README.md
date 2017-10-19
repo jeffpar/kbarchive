@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176547: Vb5sp2ds.exe Contains Visual Basic SP2 Debugging Symbols"
-permalink: kb/176/Q176547/
+permalink: /kb/176/Q176547/
 ---
 
 ## Q176547: Vb5sp2ds.exe Contains Visual Basic SP2 Debugging Symbols

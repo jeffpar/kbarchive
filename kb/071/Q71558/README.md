@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71558: ECHO OFF Prevents ANSI Escape Sequences Using PROMPT"
-permalink: kb/071/Q71558/
+permalink: /kb/071/Q71558/
 ---
 
 ## Q71558: ECHO OFF Prevents ANSI Escape Sequences Using PROMPT

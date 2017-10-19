@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73415: Can't Backup/Restore from Peachtree Complete 3 with MS-DOS 5.0"
-permalink: kb/073/Q73415/
+permalink: /kb/073/Q73415/
 ---
 
 ## Q73415: Can't Backup/Restore from Peachtree Complete 3 with MS-DOS 5.0

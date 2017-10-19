@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154042: Intermediate File Error During Pipe Command"
-permalink: kb/154/Q154042/
+permalink: /kb/154/Q154042/
 ---
 
 ## Q154042: Intermediate File Error During Pipe Command

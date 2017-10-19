@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296880: XFOR: Messages Sent by Lotus Notes to Exchange Appear in Badmail"
-permalink: kb/296/Q296880/
+permalink: /kb/296/Q296880/
 ---
 
 ## Q296880: XFOR: Messages Sent by Lotus Notes to Exchange Appear in Badmail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134290: Cannot Forward Attachment from BBS by E-Mail"
-permalink: kb/134/Q134290/
+permalink: /kb/134/Q134290/
 ---
 
 ## Q134290: Cannot Forward Attachment from BBS by E-Mail

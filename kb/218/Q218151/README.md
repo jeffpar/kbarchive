@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218151: SBS: Network Installation Is Not Available for SBS 4.5 Server"
-permalink: kb/218/Q218151/
+permalink: /kb/218/Q218151/
 ---
 
 ## Q218151: SBS: Network Installation Is Not Available for SBS 4.5 Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152837: ControlService() Results in Services.exe Memory Leak"
-permalink: kb/152/Q152837/
+permalink: /kb/152/Q152837/
 ---
 
 ## Q152837: ControlService() Results in Services.exe Memory Leak

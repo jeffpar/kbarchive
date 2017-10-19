@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224132: Encarta Encyclopedia 99: Suite Menu Disabled on Home Screen"
-permalink: kb/224/Q224132/
+permalink: /kb/224/Q224132/
 ---
 
 ## Q224132: Encarta Encyclopedia 99: Suite Menu Disabled on Home Screen

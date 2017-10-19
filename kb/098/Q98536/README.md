@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98536: PC WSPlus: Network Connection Broken in Mail"
-permalink: kb/098/Q98536/
+permalink: /kb/098/Q98536/
 ---
 
 ## Q98536: PC WSPlus: Network Connection Broken in Mail

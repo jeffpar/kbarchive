@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235289: DNS Server Delegations Disappear on Secondary Name Servers"
-permalink: kb/235/Q235289/
+permalink: /kb/235/Q235289/
 ---
 
 ## Q235289: DNS Server Delegations Disappear on Secondary Name Servers

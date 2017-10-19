@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78904: Error Loading Publisher Documents Using File Association"
-permalink: kb/078/Q78904/
+permalink: /kb/078/Q78904/
 ---
 
 ## Q78904: Error Loading Publisher Documents Using File Association

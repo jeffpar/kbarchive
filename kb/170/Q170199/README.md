@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170199: HOWTO: STL Sample for slice::(length, start, stride) Functions"
-permalink: kb/170/Q170199/
+permalink: /kb/170/Q170199/
 ---
 
 ## Q170199: HOWTO: STL Sample for slice::(length, start, stride) Functions

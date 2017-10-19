@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184439: Clicking Web Link in Document Prompts You to Disconnect from MSN"
-permalink: kb/184/Q184439/
+permalink: /kb/184/Q184439/
 ---
 
 ## Q184439: Clicking Web Link in Document Prompts You to Disconnect from MSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138916: HOWTO: Backing Up Visual FoxPro Setup Disks"
-permalink: kb/138/Q138916/
+permalink: /kb/138/Q138916/
 ---
 
 ## Q138916: HOWTO: Backing Up Visual FoxPro Setup Disks

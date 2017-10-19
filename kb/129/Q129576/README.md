@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129576: Cannot Use Icon When Setting Up Share Package"
-permalink: kb/129/Q129576/
+permalink: /kb/129/Q129576/
 ---
 
 ## Q129576: Cannot Use Icon When Setting Up Share Package

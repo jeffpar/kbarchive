@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64685: Flight Simulator Does Not Have Serial Numbers"
-permalink: kb/064/Q64685/
+permalink: /kb/064/Q64685/
 ---
 
 ## Q64685: Flight Simulator Does Not Have Serial Numbers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127898: BUG: Err Msg: Control Caused Stack Fault in Module XBS200.DLL"
-permalink: kb/127/Q127898/
+permalink: /kb/127/Q127898/
 ---
 
 ## Q127898: BUG: Err Msg: Control Caused Stack Fault in Module XBS200.DLL

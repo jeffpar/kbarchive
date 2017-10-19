@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202036: XWEB: Macintosh Binary Attachments May Not Be Opened in OWA"
-permalink: kb/202/Q202036/
+permalink: /kb/202/Q202036/
 ---
 
 ## Q202036: XWEB: Macintosh Binary Attachments May Not Be Opened in OWA

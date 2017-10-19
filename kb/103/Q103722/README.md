@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103722: FIX: &#95;&#95;far Not Accepted in CodeView 4.0x Watch Window"
-permalink: kb/103/Q103722/
+permalink: /kb/103/Q103722/
 ---
 
 ## Q103722: FIX: &#95;&#95;far Not Accepted in CodeView 4.0x Watch Window

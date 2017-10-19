@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162301: FIX: @ SAY Causes Error After SET DEVICE to PRINTER Command"
-permalink: kb/162/Q162301/
+permalink: /kb/162/Q162301/
 ---
 
 ## Q162301: FIX: @ SAY Causes Error After SET DEVICE to PRINTER Command

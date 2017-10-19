@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184244: XADM: Inbound Intersite Replication Fails With No Errors Logged"
-permalink: kb/184/Q184244/
+permalink: /kb/184/Q184244/
 ---
 
 ## Q184244: XADM: Inbound Intersite Replication Fails With No Errors Logged

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119215: WSS Err Msg: WSETUP Caused a GP Fault in Module WSETUP.EXE..."
-permalink: kb/119/Q119215/
+permalink: /kb/119/Q119215/
 ---
 
 ## Q119215: WSS Err Msg: WSETUP Caused a GP Fault in Module WSETUP.EXE...

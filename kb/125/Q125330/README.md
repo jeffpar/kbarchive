@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125330: CONN: Messages Stop Moving Between AppleTalk and PC Mail"
-permalink: kb/125/Q125330/
+permalink: /kb/125/Q125330/
 ---
 
 ## Q125330: CONN: Messages Stop Moving Between AppleTalk and PC Mail

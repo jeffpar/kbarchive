@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254142: Sending a Large Escape Sequence Causes 100% CPU"
-permalink: kb/254/Q254142/
+permalink: /kb/254/Q254142/
 ---
 
 ## Q254142: Sending a Large Escape Sequence Causes 100% CPU

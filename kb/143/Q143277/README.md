@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143277: No Notification If Monthly Charge Exceeds Specified Amount"
-permalink: kb/143/Q143277/
+permalink: /kb/143/Q143277/
 ---
 
 ## Q143277: No Notification If Monthly Charge Exceeds Specified Amount

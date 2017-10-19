@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135884: HOWTO: How to Make the CMiniFrameWnd Window Paint Its Background"
-permalink: kb/135/Q135884/
+permalink: /kb/135/Q135884/
 ---
 
 ## Q135884: HOWTO: How to Make the CMiniFrameWnd Window Paint Its Background

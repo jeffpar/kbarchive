@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287634: EnhancedSecurityLevel of &quot;1&quot; Causes &quot;Stop 0x1E&quot; Error"
-permalink: kb/287/Q287634/
+permalink: /kb/287/Q287634/
 ---
 
 ## Q287634: EnhancedSecurityLevel of &quot;1&quot; Causes &quot;Stop 0x1E&quot; Error

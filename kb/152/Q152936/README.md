@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152936: XADM: Admin Doesn't Browse for Exchange Server Computers"
-permalink: kb/152/Q152936/
+permalink: /kb/152/Q152936/
 ---
 
 ## Q152936: XADM: Admin Doesn't Browse for Exchange Server Computers

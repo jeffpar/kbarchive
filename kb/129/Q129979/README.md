@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129979: How to Reinstall Win32s with Visual FoxPro"
-permalink: kb/129/Q129979/
+permalink: /kb/129/Q129979/
 ---
 
 ## Q129979: How to Reinstall Win32s with Visual FoxPro

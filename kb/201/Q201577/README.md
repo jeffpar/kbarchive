@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201577: BUG: TreeView Scroll Bar Does Not Disappear When Scroll = False"
-permalink: kb/201/Q201577/
+permalink: /kb/201/Q201577/
 ---
 
 ## Q201577: BUG: TreeView Scroll Bar Does Not Disappear When Scroll = False

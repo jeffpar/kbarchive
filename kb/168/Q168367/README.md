@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168367: XADM: Error Creating New Address"
-permalink: kb/168/Q168367/
+permalink: /kb/168/Q168367/
 ---
 
 ## Q168367: XADM: Error Creating New Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127082: PC Mac: Case Sensitivity on Some Networks, such as UNIX"
-permalink: kb/127/Q127082/
+permalink: /kb/127/Q127082/
 ---
 
 ## Q127082: PC Mac: Case Sensitivity on Some Networks, such as UNIX

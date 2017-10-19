@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101155: ERR: A20 Hardware Error with FoxBASE+/386"
-permalink: kb/101/Q101155/
+permalink: /kb/101/Q101155/
 ---
 
 ## Q101155: ERR: A20 Hardware Error with FoxBASE+/386

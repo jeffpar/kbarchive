@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214607: BUG: Cannot Add a Secured VBA Module to SourceSafe."
-permalink: kb/214/Q214607/
+permalink: /kb/214/Q214607/
 ---
 
 ## Q214607: BUG: Cannot Add a Secured VBA Module to SourceSafe.

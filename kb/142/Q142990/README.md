@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142990: Cannot Connect to MSN After Installing Canon BubbleJet"
-permalink: kb/142/Q142990/
+permalink: /kb/142/Q142990/
 ---
 
 ## Q142990: Cannot Connect to MSN After Installing Canon BubbleJet

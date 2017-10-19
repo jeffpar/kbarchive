@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137279: PRB: Program w/ @..SAY..GETs Exits If Press PAGE UP/PAGE DOWN"
-permalink: kb/137/Q137279/
+permalink: /kb/137/Q137279/
 ---
 
 ## Q137279: PRB: Program w/ @..SAY..GETs Exits If Press PAGE UP/PAGE DOWN

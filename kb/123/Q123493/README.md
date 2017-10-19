@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123493: OutputDebugString() Without &#92;n May GP Fault in MSVC.EXE"
-permalink: kb/123/Q123493/
+permalink: /kb/123/Q123493/
 ---
 
 ## Q123493: OutputDebugString() Without &#92;n May GP Fault in MSVC.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256326: Cluster Server Cannot Use Disk Beyond Device Number 25"
-permalink: kb/256/Q256326/
+permalink: /kb/256/Q256326/
 ---
 
 ## Q256326: Cluster Server Cannot Use Disk Beyond Device Number 25

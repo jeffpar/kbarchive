@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187840: WD97: WP 5.x Paragraph Number Cross-Reference Cannot Be Updated"
-permalink: kb/187/Q187840/
+permalink: /kb/187/Q187840/
 ---
 
 ## Q187840: WD97: WP 5.x Paragraph Number Cross-Reference Cannot Be Updated

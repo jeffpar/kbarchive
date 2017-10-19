@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174104: XCLN: Microsoft Outlook Not Available for the Alpha Platform"
-permalink: kb/174/Q174104/
+permalink: /kb/174/Q174104/
 ---
 
 ## Q174104: XCLN: Microsoft Outlook Not Available for the Alpha Platform

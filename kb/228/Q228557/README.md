@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228557: SFU: Services for UNIX - Readme File"
-permalink: kb/228/Q228557/
+permalink: /kb/228/Q228557/
 ---
 
 ## Q228557: SFU: Services for UNIX - Readme File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156431: XFOR: Error 71 When Using NT Server from MSDN Select CD"
-permalink: kb/156/Q156431/
+permalink: /kb/156/Q156431/
 ---
 
 ## Q156431: XFOR: Error 71 When Using NT Server from MSDN Select CD

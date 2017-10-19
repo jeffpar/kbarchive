@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170661: TN3270E Printer Can't Connect; LUSessionStateConfused"
-permalink: kb/170/Q170661/
+permalink: /kb/170/Q170661/
 ---
 
 ## Q170661: TN3270E Printer Can't Connect; LUSessionStateConfused

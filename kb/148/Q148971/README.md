@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148971: TR-attached IPX SNA Client Not Find Server Across FDDI Bridge"
-permalink: kb/148/Q148971/
+permalink: /kb/148/Q148971/
 ---
 
 ## Q148971: TR-attached IPX SNA Client Not Find Server Across FDDI Bridge

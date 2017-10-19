@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71613: Epson LQ Series Internal ANSI and Windows' ANSI Mismatch"
-permalink: kb/071/Q71613/
+permalink: /kb/071/Q71613/
 ---
 
 ## Q71613: Epson LQ Series Internal ANSI and Windows' ANSI Mismatch

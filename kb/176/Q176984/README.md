@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176984: XCLN: Send to Alias Name Cannot Be Resolved"
-permalink: kb/176/Q176984/
+permalink: /kb/176/Q176984/
 ---
 
 ## Q176984: XCLN: Send to Alias Name Cannot Be Resolved

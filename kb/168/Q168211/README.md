@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168211: XFOR: How To Modify CC:Mail Connector Polling Frequency"
-permalink: kb/168/Q168211/
+permalink: /kb/168/Q168211/
 ---
 
 ## Q168211: XFOR: How To Modify CC:Mail Connector Polling Frequency

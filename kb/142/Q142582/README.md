@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142582: 3D Movie Maker: Clicks During Melanie Talking Don't Invoke Act"
-permalink: kb/142/Q142582/
+permalink: /kb/142/Q142582/
 ---
 
 ## Q142582: 3D Movie Maker: Clicks During Melanie Talking Don't Invoke Act

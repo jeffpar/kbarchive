@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152203: SNA Server Access Violation (0xC0000005) in s1pupcds()"
-permalink: kb/152/Q152203/
+permalink: /kb/152/Q152203/
 ---
 
 ## Q152203: SNA Server Access Violation (0xC0000005) in s1pupcds()

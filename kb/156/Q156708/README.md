@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156708: XADM: Rule Forces CPU Usage Above 90%, Stops Message Delivery"
-permalink: kb/156/Q156708/
+permalink: /kb/156/Q156708/
 ---
 
 ## Q156708: XADM: Rule Forces CPU Usage Above 90%, Stops Message Delivery

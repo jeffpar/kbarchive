@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161492: INFO: LU Session Activation Using Dynamically Defined Dependent"
-permalink: kb/161/Q161492/
+permalink: /kb/161/Q161492/
 ---
 
 ## Q161492: INFO: LU Session Activation Using Dynamically Defined Dependent

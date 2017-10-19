@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268805: AoE II Expansion: Computer Hangs During Multiplayer Game"
-permalink: kb/268/Q268805/
+permalink: /kb/268/Q268805/
 ---
 
 ## Q268805: AoE II Expansion: Computer Hangs During Multiplayer Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141871: HOWTO: Add Tooltips to ActiveX Controls"
-permalink: kb/141/Q141871/
+permalink: /kb/141/Q141871/
 ---
 
 ## Q141871: HOWTO: Add Tooltips to ActiveX Controls

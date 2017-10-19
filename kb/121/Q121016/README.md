@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121016: FIX: Long Query Name in Browser Causes Application Error"
-permalink: kb/121/Q121016/
+permalink: /kb/121/Q121016/
 ---
 
 ## Q121016: FIX: Long Query Name in Browser Causes Application Error

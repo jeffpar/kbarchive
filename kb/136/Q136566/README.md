@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136566: How to Use the DECLARE-DLL Command to Call Win32 SDK Functions"
-permalink: kb/136/Q136566/
+permalink: /kb/136/Q136566/
 ---
 
 ## Q136566: How to Use the DECLARE-DLL Command to Call Win32 SDK Functions

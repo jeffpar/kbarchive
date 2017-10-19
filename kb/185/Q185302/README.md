@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185302: Cannot Copy Files from a CD-ROM Shared as a Mac Volume"
-permalink: kb/185/Q185302/
+permalink: /kb/185/Q185302/
 ---
 
 ## Q185302: Cannot Copy Files from a CD-ROM Shared as a Mac Volume

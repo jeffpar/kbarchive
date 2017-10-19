@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142269: Garbled Graphics Output on Shared PostScript Printer"
-permalink: kb/142/Q142269/
+permalink: /kb/142/Q142269/
 ---
 
 ## Q142269: Garbled Graphics Output on Shared PostScript Printer

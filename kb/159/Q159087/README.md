@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159087: SMS Does Not Identify Pentium Pro (P6) Processor Speeds"
-permalink: kb/159/Q159087/
+permalink: /kb/159/Q159087/
 ---
 
 ## Q159087: SMS Does Not Identify Pentium Pro (P6) Processor Speeds

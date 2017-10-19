@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90500: BUG: Makefile based on PWB Library Template Not Valid"
-permalink: kb/090/Q90500/
+permalink: /kb/090/Q90500/
 ---
 
 ## Q90500: BUG: Makefile based on PWB Library Template Not Valid

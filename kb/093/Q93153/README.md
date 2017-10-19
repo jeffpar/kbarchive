@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93153: SMARTDrive Can't Load with Syntax Errors or Incorrect Options"
-permalink: kb/093/Q93153/
+permalink: /kb/093/Q93153/
 ---
 
 ## Q93153: SMARTDrive Can't Load with Syntax Errors or Incorrect Options

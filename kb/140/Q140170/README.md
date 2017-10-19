@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140170: HOWTO: Read from the Windows Registry"
-permalink: kb/140/Q140170/
+permalink: /kb/140/Q140170/
 ---
 
 ## Q140170: HOWTO: Read from the Windows Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239919: Handle Leak in SnaBase When SNA API DLL Is Loaded/Unloaded"
-permalink: kb/239/Q239919/
+permalink: /kb/239/Q239919/
 ---
 
 ## Q239919: Handle Leak in SnaBase When SNA API DLL Is Loaded/Unloaded

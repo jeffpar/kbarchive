@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164910: SNAHOSTPROCESS Requires Restart With New Host Security Domain"
-permalink: kb/164/Q164910/
+permalink: /kb/164/Q164910/
 ---
 
 ## Q164910: SNAHOSTPROCESS Requires Restart With New Host Security Domain

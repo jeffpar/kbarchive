@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106412: MSAV: Disk Error Prevents Further Virus Checking"
-permalink: kb/106/Q106412/
+permalink: /kb/106/Q106412/
 ---
 
 ## Q106412: MSAV: Disk Error Prevents Further Virus Checking

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73753: DOCERR: Date Format in Listing File Incorrect in MASM 6.0 Manual"
-permalink: kb/073/Q73753/
+permalink: /kb/073/Q73753/
 ---
 
 ## Q73753: DOCERR: Date Format in Listing File Incorrect in MASM 6.0 Manual

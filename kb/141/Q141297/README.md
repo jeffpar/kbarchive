@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141297: Unable to Print after Installing French Service Pack 2"
-permalink: kb/141/Q141297/
+permalink: /kb/141/Q141297/
 ---
 
 ## Q141297: Unable to Print after Installing French Service Pack 2

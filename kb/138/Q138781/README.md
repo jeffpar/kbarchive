@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138781: How to Call a Windows Help Search Macro by Using Code"
-permalink: kb/138/Q138781/
+permalink: /kb/138/Q138781/
 ---
 
 ## Q138781: How to Call a Windows Help Search Macro by Using Code

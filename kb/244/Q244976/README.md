@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244976: XADM: Event ID 1197 and 1005 When Starting the Information Store"
-permalink: kb/244/Q244976/
+permalink: /kb/244/Q244976/
 ---
 
 ## Q244976: XADM: Event ID 1197 and 1005 When Starting the Information Store

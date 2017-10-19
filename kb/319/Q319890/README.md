@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319890: &quot;Path Not Found Error&quot; Err Msg Using CDONTS to Send Mail via ASP"
-permalink: kb/319/Q319890/
+permalink: /kb/319/Q319890/
 ---
 
 ## Q319890: &quot;Path Not Found Error&quot; Err Msg Using CDONTS to Send Mail via ASP

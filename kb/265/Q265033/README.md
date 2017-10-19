@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265033: FP: Macromedia Flash Movie Doesn't Work As Expected"
-permalink: kb/265/Q265033/
+permalink: /kb/265/Q265033/
 ---
 
 ## Q265033: FP: Macromedia Flash Movie Doesn't Work As Expected

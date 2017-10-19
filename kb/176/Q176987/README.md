@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176987: Remoteboot Client Records Incorrect Timestamp"
-permalink: kb/176/Q176987/
+permalink: /kb/176/Q176987/
 ---
 
 ## Q176987: Remoteboot Client Records Incorrect Timestamp

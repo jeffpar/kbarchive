@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261208: StarLancer: Explanation of Missions Described on the Product Box"
-permalink: kb/261/Q261208/
+permalink: /kb/261/Q261208/
 ---
 
 ## Q261208: StarLancer: Explanation of Missions Described on the Product Box

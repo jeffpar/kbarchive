@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180624: BUG: Invalid Page Fault Occurs with More than 34 DDE Channels"
-permalink: kb/180/Q180624/
+permalink: /kb/180/Q180624/
 ---
 
 ## Q180624: BUG: Invalid Page Fault Occurs with More than 34 DDE Channels

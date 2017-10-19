@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132922: INFO: Sharing SourceSafe Files"
-permalink: kb/132/Q132922/
+permalink: /kb/132/Q132922/
 ---
 
 ## Q132922: INFO: Sharing SourceSafe Files

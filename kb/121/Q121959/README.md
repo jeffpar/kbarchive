@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121959: ADT/ODE: ADT/ODE Application Setup Always Defaults to Drive C"
-permalink: kb/121/Q121959/
+permalink: /kb/121/Q121959/
 ---
 
 ## Q121959: ADT/ODE: ADT/ODE Application Setup Always Defaults to Drive C

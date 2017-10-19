@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243622: Asheron's Call: List of Chat Commands"
-permalink: kb/243/Q243622/
+permalink: /kb/243/Q243622/
 ---
 
 ## Q243622: Asheron's Call: List of Chat Commands

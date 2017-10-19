@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214476: PRB: TAB Behavior When Using MFC Subclassed Control on VB Form"
-permalink: kb/214/Q214476/
+permalink: /kb/214/Q214476/
 ---
 
 ## Q214476: PRB: TAB Behavior When Using MFC Subclassed Control on VB Form

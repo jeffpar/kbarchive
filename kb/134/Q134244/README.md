@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134244: FIX: Get Displays 0 When ENTER Key Used to Move to Next Get"
-permalink: kb/134/Q134244/
+permalink: /kb/134/Q134244/
 ---
 
 ## Q134244: FIX: Get Displays 0 When ENTER Key Used to Move to Next Get

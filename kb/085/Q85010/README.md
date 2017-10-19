@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85010: INFO: Multiple Document Interface Enhancements in Windows 3.1"
-permalink: kb/085/Q85010/
+permalink: /kb/085/Q85010/
 ---
 
 ## Q85010: INFO: Multiple Document Interface Enhancements in Windows 3.1

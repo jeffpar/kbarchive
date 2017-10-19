@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199352: Err Msg: At Least One Service or Driver Failed During System..."
-permalink: kb/199/Q199352/
+permalink: /kb/199/Q199352/
 ---
 
 ## Q199352: Err Msg: At Least One Service or Driver Failed During System...

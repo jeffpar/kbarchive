@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156057: PRB: EXE with Included CONFIG.FPW Does Not Allow -C Option"
-permalink: kb/156/Q156057/
+permalink: /kb/156/Q156057/
 ---
 
 ## Q156057: PRB: EXE with Included CONFIG.FPW Does Not Allow -C Option

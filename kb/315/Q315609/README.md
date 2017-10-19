@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315609: Train Simulator: Error Message: Failed to Load Car-Spawner"
-permalink: kb/315/Q315609/
+permalink: /kb/315/Q315609/
 ---
 
 ## Q315609: Train Simulator: Error Message: Failed to Load Car-Spawner

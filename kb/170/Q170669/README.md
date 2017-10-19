@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170669: Creating C:&#92;Program Folder Causes Add/Remove Program to Fail"
-permalink: kb/170/Q170669/
+permalink: /kb/170/Q170669/
 ---
 
 ## Q170669: Creating C:&#92;Program Folder Causes Add/Remove Program to Fail

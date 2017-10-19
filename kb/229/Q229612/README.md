@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229612: SAMPLE: Mfceqaado.exe Shows How to Use English Query w/MFC &amp; ADO"
-permalink: kb/229/Q229612/
+permalink: /kb/229/Q229612/
 ---
 
 ## Q229612: SAMPLE: Mfceqaado.exe Shows How to Use English Query w/MFC &amp; ADO

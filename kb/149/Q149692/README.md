@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149692: XCLN: Error Message When Clients Try To Connect Via Internet"
-permalink: kb/149/Q149692/
+permalink: /kb/149/Q149692/
 ---
 
 ## Q149692: XCLN: Error Message When Clients Try To Connect Via Internet

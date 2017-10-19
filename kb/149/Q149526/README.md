@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149526: &quot;Access Denied&quot; When Using DIR Command on a NetWare Server"
-permalink: kb/149/Q149526/
+permalink: /kb/149/Q149526/
 ---
 
 ## Q149526: &quot;Access Denied&quot; When Using DIR Command on a NetWare Server

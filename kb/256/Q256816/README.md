@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256816: MapPoint 2001: Error Message When You Click Shortcut in Pushpin"
-permalink: kb/256/Q256816/
+permalink: /kb/256/Q256816/
 ---
 
 ## Q256816: MapPoint 2001: Error Message When You Click Shortcut in Pushpin

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165160: WD97: Items Missing from Message Using &quot;Send To Mail Recipient&quot;"
-permalink: kb/165/Q165160/
+permalink: /kb/165/Q165160/
 ---
 
 ## Q165160: WD97: Items Missing from Message Using &quot;Send To Mail Recipient&quot;

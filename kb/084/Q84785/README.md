@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84785: IBM PS/2 Model 55SX Hangs at Start Up with Windows 3.1"
-permalink: kb/084/Q84785/
+permalink: /kb/084/Q84785/
 ---
 
 ## Q84785: IBM PS/2 Model 55SX Hangs at Start Up with Windows 3.1

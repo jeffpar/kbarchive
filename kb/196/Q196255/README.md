@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196255: XFOR: Cc:Mail Custom Recipients Missing (.) in X.400 Address"
-permalink: kb/196/Q196255/
+permalink: /kb/196/Q196255/
 ---
 
 ## Q196255: XFOR: Cc:Mail Custom Recipients Missing (.) in X.400 Address

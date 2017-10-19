@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253698: Support WebCast Available: Microsoft Age of Empires II"
-permalink: kb/253/Q253698/
+permalink: /kb/253/Q253698/
 ---
 
 ## Q253698: Support WebCast Available: Microsoft Age of Empires II

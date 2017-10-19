@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255794: International Calling Card Sequence Extended in DUN"
-permalink: kb/255/Q255794/
+permalink: /kb/255/Q255794/
 ---
 
 ## Q255794: International Calling Card Sequence Extended in DUN

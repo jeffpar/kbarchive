@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238313: PRB:Accessing the Internet Explorer Document Object Model w/ VB"
-permalink: kb/238/Q238313/
+permalink: /kb/238/Q238313/
 ---
 
 ## Q238313: PRB:Accessing the Internet Explorer Document Object Model w/ VB

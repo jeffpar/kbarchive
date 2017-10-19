@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80448: What Is a Clean Boot for Windows 3.0?"
-permalink: kb/080/Q80448/
+permalink: /kb/080/Q80448/
 ---
 
 ## Q80448: What Is a Clean Boot for Windows 3.0?

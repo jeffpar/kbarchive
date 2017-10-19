@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96280: Mac Wkst: FindMail Prevents Notification"
-permalink: kb/096/Q96280/
+permalink: /kb/096/Q96280/
 ---
 
 ## Q96280: Mac Wkst: FindMail Prevents Notification

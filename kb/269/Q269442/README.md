@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269442: XADM: Mailbox Manager Removes Future Appointment"
-permalink: kb/269/Q269442/
+permalink: /kb/269/Q269442/
 ---
 
 ## Q269442: XADM: Mailbox Manager Removes Future Appointment

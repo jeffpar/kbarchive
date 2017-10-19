@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184835: Explorer on Windows 95 DFS Client May Hang"
-permalink: kb/184/Q184835/
+permalink: /kb/184/Q184835/
 ---
 
 ## Q184835: Explorer on Windows 95 DFS Client May Hang

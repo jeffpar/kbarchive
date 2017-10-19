@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q24958: Hexadecimal Numbers Must Begin With a Digit Between 0 and 9"
-permalink: kb/024/Q24958/
+permalink: /kb/024/Q24958/
 ---
 
 ## Q24958: Hexadecimal Numbers Must Begin With a Digit Between 0 and 9

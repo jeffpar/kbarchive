@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98510: How to Exit Defrag Without Losing Data"
-permalink: kb/098/Q98510/
+permalink: /kb/098/Q98510/
 ---
 
 ## Q98510: How to Exit Defrag Without Losing Data

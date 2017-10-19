@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89086: Using the DNA Network with Windows"
-permalink: kb/089/Q89086/
+permalink: /kb/089/Q89086/
 ---
 
 ## Q89086: Using the DNA Network with Windows

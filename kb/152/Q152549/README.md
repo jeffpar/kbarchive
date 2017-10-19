@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152549: Mac Bookshelf '96 - '97: How to Determine Installed Version"
-permalink: kb/152/Q152549/
+permalink: /kb/152/Q152549/
 ---
 
 ## Q152549: Mac Bookshelf '96 - '97: How to Determine Installed Version

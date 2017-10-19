@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150191: DOC: DBGrid Does Not Support Display of Pictures"
-permalink: kb/150/Q150191/
+permalink: /kb/150/Q150191/
 ---
 
 ## Q150191: DOC: DBGrid Does Not Support Display of Pictures

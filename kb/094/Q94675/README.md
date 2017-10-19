@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94675: HPPCL5E: Horizontal and Vertical Lines Appear Through Image"
-permalink: kb/094/Q94675/
+permalink: /kb/094/Q94675/
 ---
 
 ## Q94675: HPPCL5E: Horizontal and Vertical Lines Appear Through Image

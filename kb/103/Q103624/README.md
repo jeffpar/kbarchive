@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103624: Err Msg: Winlogon.exe-Drive Not Ready"
-permalink: kb/103/Q103624/
+permalink: /kb/103/Q103624/
 ---
 
 ## Q103624: Err Msg: Winlogon.exe-Drive Not Ready

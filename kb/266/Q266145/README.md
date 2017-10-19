@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266145: XCLN: How to Enable Different Reply Addresses"
-permalink: kb/266/Q266145/
+permalink: /kb/266/Q266145/
 ---
 
 ## Q266145: XCLN: How to Enable Different Reply Addresses

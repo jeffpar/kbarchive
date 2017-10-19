@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248453: XADM: Administrator Program Is Not Updating DL Membership List"
-permalink: kb/248/Q248453/
+permalink: /kb/248/Q248453/
 ---
 
 ## Q248453: XADM: Administrator Program Is Not Updating DL Membership List

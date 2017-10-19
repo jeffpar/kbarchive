@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80765: Windows: No Specific Printer Driver for HP Rugged Writer"
-permalink: kb/080/Q80765/
+permalink: /kb/080/Q80765/
 ---
 
 ## Q80765: Windows: No Specific Printer Driver for HP Rugged Writer

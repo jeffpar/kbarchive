@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81547: DDEML CONVINFO Structure, wConvst Field Description"
-permalink: kb/081/Q81547/
+permalink: /kb/081/Q81547/
 ---
 
 ## Q81547: DDEML CONVINFO Structure, wConvst Field Description

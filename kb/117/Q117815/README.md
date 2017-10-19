@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117815: Mac Cinemania 94: Sounds Do Not Play with Insufficient Memory"
-permalink: kb/117/Q117815/
+permalink: /kb/117/Q117815/
 ---
 
 ## Q117815: Mac Cinemania 94: Sounds Do Not Play with Insufficient Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190046: INFO: VB6 Readme: Part 6 Wizard Issues"
-permalink: kb/190/Q190046/
+permalink: /kb/190/Q190046/
 ---
 
 ## Q190046: INFO: VB6 Readme: Part 6 Wizard Issues

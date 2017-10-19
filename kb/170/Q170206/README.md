@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170206: FP97: How to Use Client Pull in FrontPage Web Documents"
-permalink: kb/170/Q170206/
+permalink: /kb/170/Q170206/
 ---
 
 ## Q170206: FP97: How to Use Client Pull in FrontPage Web Documents

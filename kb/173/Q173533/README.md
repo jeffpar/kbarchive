@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173533: WinNT Radius Client Sends Incomplete Accounting Information"
-permalink: kb/173/Q173533/
+permalink: /kb/173/Q173533/
 ---
 
 ## Q173533: WinNT Radius Client Sends Incomplete Accounting Information

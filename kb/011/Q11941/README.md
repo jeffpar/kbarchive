@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11941: How to Get a Pointer to the Stack"
-permalink: kb/011/Q11941/
+permalink: /kb/011/Q11941/
 ---
 
 ## Q11941: How to Get a Pointer to the Stack

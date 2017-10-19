@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287761: DB2OLEDB Provider Does Not Always Determine Nullability of Data"
-permalink: kb/287/Q287761/
+permalink: /kb/287/Q287761/
 ---
 
 ## Q287761: DB2OLEDB Provider Does Not Always Determine Nullability of Data

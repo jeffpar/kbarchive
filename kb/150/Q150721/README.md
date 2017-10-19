@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150721: Bookshelf 96-97 Error when Opening Guide from Bookshelf Folder"
-permalink: kb/150/Q150721/
+permalink: /kb/150/Q150721/
 ---
 
 ## Q150721: Bookshelf 96-97 Error when Opening Guide from Bookshelf Folder

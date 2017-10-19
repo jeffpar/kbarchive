@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128244: INFO: SNA Server Load Balancing and Hot Backup"
-permalink: kb/128/Q128244/
+permalink: /kb/128/Q128244/
 ---
 
 ## Q128244: INFO: SNA Server Load Balancing and Hot Backup

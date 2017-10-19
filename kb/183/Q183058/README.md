@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183058: XFOR: Modifying the Display Name and Alias for cc:Mail Dirsync"
-permalink: kb/183/Q183058/
+permalink: /kb/183/Q183058/
 ---
 
 ## Q183058: XFOR: Modifying the Display Name and Alias for cc:Mail Dirsync

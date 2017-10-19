@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136481: INF: Running ODBC Applications as Windows NT Services"
-permalink: kb/136/Q136481/
+permalink: /kb/136/Q136481/
 ---
 
 ## Q136481: INF: Running ODBC Applications as Windows NT Services

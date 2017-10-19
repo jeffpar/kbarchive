@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271577: Fix: CManualAccessor Does Not Work With Schema Rowsets"
-permalink: kb/271/Q271577/
+permalink: /kb/271/Q271577/
 ---
 
 ## Q271577: Fix: CManualAccessor Does Not Work With Schema Rowsets

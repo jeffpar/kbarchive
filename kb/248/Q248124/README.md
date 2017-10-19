@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248124: XADM: Service Specific Error 4015 When Information Store Starts"
-permalink: kb/248/Q248124/
+permalink: /kb/248/Q248124/
 ---
 
 ## Q248124: XADM: Service Specific Error 4015 When Information Store Starts

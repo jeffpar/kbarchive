@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103109: Changes to Performance Monitor After Installing SQL Server"
-permalink: kb/103/Q103109/
+permalink: /kb/103/Q103109/
 ---
 
 ## Q103109: Changes to Performance Monitor After Installing SQL Server

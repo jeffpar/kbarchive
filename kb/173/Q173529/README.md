@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173529: Using Batch Files to Automate Networking Tasks"
-permalink: kb/173/Q173529/
+permalink: /kb/173/Q173529/
 ---
 
 ## Q173529: Using Batch Files to Automate Networking Tasks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165697: Event 3031 with Event Viewer and Remote Computers"
-permalink: kb/165/Q165697/
+permalink: /kb/165/Q165697/
 ---
 
 ## Q165697: Event 3031 with Event Viewer and Remote Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97958: PC WRmt: Installing Remote and LAN Drivers on One Computer"
-permalink: kb/097/Q97958/
+permalink: /kb/097/Q97958/
 ---
 
 ## Q97958: PC WRmt: Installing Remote and LAN Drivers on One Computer

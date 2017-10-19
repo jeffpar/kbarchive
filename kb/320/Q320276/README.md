@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320276: SMS: SMS_EXECUTIVE Service Crashes If You Use %n in Command Line"
-permalink: kb/320/Q320276/
+permalink: /kb/320/Q320276/
 ---
 
 ## Q320276: SMS: SMS_EXECUTIVE Service Crashes If You Use %n in Command Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112837: PRB: &quot;SQL Column '&lt;Memvar&gt;' Not Found&quot; and Empty RQBE Window"
-permalink: kb/112/Q112837/
+permalink: /kb/112/Q112837/
 ---
 
 ## Q112837: PRB: &quot;SQL Column '&lt;Memvar&gt;' Not Found&quot; and Empty RQBE Window

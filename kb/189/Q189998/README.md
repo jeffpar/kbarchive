@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189998: BUG: Data Environment: MSHFlexGrid Rebinding Data"
-permalink: kb/189/Q189998/
+permalink: /kb/189/Q189998/
 ---
 
 ## Q189998: BUG: Data Environment: MSHFlexGrid Rebinding Data

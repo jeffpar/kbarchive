@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196656: DOC: vbOLEDBProvider Value for DataSourceBehavior Doesn't Exist"
-permalink: kb/196/Q196656/
+permalink: /kb/196/Q196656/
 ---
 
 ## Q196656: DOC: vbOLEDBProvider Value for DataSourceBehavior Doesn't Exist

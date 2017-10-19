@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175253: XFOR: General Protection Fault in Module Ofwinfil.exe"
-permalink: kb/175/Q175253/
+permalink: /kb/175/Q175253/
 ---
 
 ## Q175253: XFOR: General Protection Fault in Module Ofwinfil.exe

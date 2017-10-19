@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117524: List of Major CD-ROM Drive Manufacturers (D-H)"
-permalink: kb/117/Q117524/
+permalink: /kb/117/Q117524/
 ---
 
 ## Q117524: List of Major CD-ROM Drive Manufacturers (D-H)

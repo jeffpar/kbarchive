@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273887: XADM: How to Display Deleted Items in an Exchange Server Folder"
-permalink: kb/273/Q273887/
+permalink: /kb/273/Q273887/
 ---
 
 ## Q273887: XADM: How to Display Deleted Items in an Exchange Server Folder

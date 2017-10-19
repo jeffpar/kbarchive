@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248303: Encarta Encyclopedia: Error Message When You Start Virtual Tour"
-permalink: kb/248/Q248303/
+permalink: /kb/248/Q248303/
 ---
 
 ## Q248303: Encarta Encyclopedia: Error Message When You Start Virtual Tour

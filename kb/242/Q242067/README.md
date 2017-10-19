@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242067: How To: Copy User Profiles from One Domain to Another."
-permalink: kb/242/Q242067/
+permalink: /kb/242/Q242067/
 ---
 
 ## Q242067: How To: Copy User Profiles from One Domain to Another.

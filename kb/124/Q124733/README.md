@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124733: Custom Forms Not Available for Selection in Epson LQ-850"
-permalink: kb/124/Q124733/
+permalink: /kb/124/Q124733/
 ---
 
 ## Q124733: Custom Forms Not Available for Selection in Epson LQ-850

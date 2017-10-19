@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256603: MapPoint: How to Dynamically Link SQL Data to a Map"
-permalink: kb/256/Q256603/
+permalink: /kb/256/Q256603/
 ---
 
 ## Q256603: MapPoint: How to Dynamically Link SQL Data to a Map

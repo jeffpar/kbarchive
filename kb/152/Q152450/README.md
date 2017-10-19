@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152450: Change Password Dialog Text Changed for NetWare"
-permalink: kb/152/Q152450/
+permalink: /kb/152/Q152450/
 ---
 
 ## Q152450: Change Password Dialog Text Changed for NetWare

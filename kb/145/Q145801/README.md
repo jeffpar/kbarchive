@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145801: Pregnancy and Child Care: Problems Connecting to WWW Sites"
-permalink: kb/145/Q145801/
+permalink: /kb/145/Q145801/
 ---
 
 ## Q145801: Pregnancy and Child Care: Problems Connecting to WWW Sites

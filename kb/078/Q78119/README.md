@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78119: PRB: Help Compiler Warning &quot;Using Old Key Phrase Table&quot; Cause"
-permalink: kb/078/Q78119/
+permalink: /kb/078/Q78119/
 ---
 
 ## Q78119: PRB: Help Compiler Warning &quot;Using Old Key Phrase Table&quot; Cause

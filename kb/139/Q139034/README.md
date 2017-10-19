@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139034: PC NTMMTA: DISPATCH.EXE Using Single Postoffice Instance"
-permalink: kb/139/Q139034/
+permalink: /kb/139/Q139034/
 ---
 
 ## Q139034: PC NTMMTA: DISPATCH.EXE Using Single Postoffice Instance

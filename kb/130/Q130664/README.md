@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130664: HOWTO: Use the Setup Wizard in Professional Visual FoxPro"
-permalink: kb/130/Q130664/
+permalink: /kb/130/Q130664/
 ---
 
 ## Q130664: HOWTO: Use the Setup Wizard in Professional Visual FoxPro

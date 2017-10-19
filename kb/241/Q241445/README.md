@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241445: Parameters after #EXEC Directive Are Limited to 260 Characters"
-permalink: kb/241/Q241445/
+permalink: /kb/241/Q241445/
 ---
 
 ## Q241445: Parameters after #EXEC Directive Are Limited to 260 Characters

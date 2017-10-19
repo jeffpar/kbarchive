@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148664: XCLN: Description of the Profile Descriptor File"
-permalink: kb/148/Q148664/
+permalink: /kb/148/Q148664/
 ---
 
 ## Q148664: XCLN: Description of the Profile Descriptor File

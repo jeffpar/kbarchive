@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197141: SMS: SMS Administrator and Quick Viewer Close Without Warning"
-permalink: kb/197/Q197141/
+permalink: /kb/197/Q197141/
 ---
 
 ## Q197141: SMS: SMS Administrator and Quick Viewer Close Without Warning

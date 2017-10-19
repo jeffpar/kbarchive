@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125455: Shadow Effect with SMS MachineIDs and NetWare 500/1000 Licenses"
-permalink: kb/125/Q125455/
+permalink: /kb/125/Q125455/
 ---
 
 ## Q125455: Shadow Effect with SMS MachineIDs and NetWare 500/1000 Licenses

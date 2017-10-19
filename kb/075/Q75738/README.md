@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75738: Dynaccel.exe Creates Accelerator Tables Dynamically"
-permalink: kb/075/Q75738/
+permalink: /kb/075/Q75738/
 ---
 
 ## Q75738: Dynaccel.exe Creates Accelerator Tables Dynamically

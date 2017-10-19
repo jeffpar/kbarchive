@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216336: BUG: ARM Compiler Generates Bad Code for Structure Assignment"
-permalink: kb/216/Q216336/
+permalink: /kb/216/Q216336/
 ---
 
 ## Q216336: BUG: ARM Compiler Generates Bad Code for Structure Assignment

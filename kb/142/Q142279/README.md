@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142279: Semi-Transparent Fills Are Black on Printout (Canon BJC-610)"
-permalink: kb/142/Q142279/
+permalink: /kb/142/Q142279/
 ---
 
 ## Q142279: Semi-Transparent Fills Are Black on Printout (Canon BJC-610)

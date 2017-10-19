@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153634: Too Many NAKs&quot; Error When Remote Controlling a NetWare Client"
-permalink: kb/153/Q153634/
+permalink: /kb/153/Q153634/
 ---
 
 ## Q153634: Too Many NAKs&quot; Error When Remote Controlling a NetWare Client

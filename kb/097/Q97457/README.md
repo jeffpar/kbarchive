@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97457: MS-DOS Err Msg: Setup Did Not Find Windows in the Path..."
-permalink: kb/097/Q97457/
+permalink: /kb/097/Q97457/
 ---
 
 ## Q97457: MS-DOS Err Msg: Setup Did Not Find Windows in the Path...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85529: Cannot Change Paper Sizes with Canon Bubble-Jet 10e"
-permalink: kb/085/Q85529/
+permalink: /kb/085/Q85529/
 ---
 
 ## Q85529: Cannot Change Paper Sizes with Canon Bubble-Jet 10e

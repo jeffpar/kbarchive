@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84882: Windows Err Msg: Cannot Find File -EMBEDDI.BMP"
-permalink: kb/084/Q84882/
+permalink: /kb/084/Q84882/
 ---
 
 ## Q84882: Windows Err Msg: Cannot Find File -EMBEDDI.BMP

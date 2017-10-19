@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155441: SNA Server Windows 95 Client Fails over 16-Bit Sockets"
-permalink: kb/155/Q155441/
+permalink: /kb/155/Q155441/
 ---
 
 ## Q155441: SNA Server Windows 95 Client Fails over 16-Bit Sockets

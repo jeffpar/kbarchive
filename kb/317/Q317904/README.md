@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317904: Money/ Street/ Works 2002: Err Msg: EULA Error"
-permalink: kb/317/Q317904/
+permalink: /kb/317/Q317904/
 ---
 
 ## Q317904: Money/ Street/ Works 2002: Err Msg: EULA Error

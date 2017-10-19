@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193861: XFOR: How to Dump the LDE Propagation Table Using SQL"
-permalink: kb/193/Q193861/
+permalink: /kb/193/Q193861/
 ---
 
 ## Q193861: XFOR: How to Dump the LDE Propagation Table Using SQL

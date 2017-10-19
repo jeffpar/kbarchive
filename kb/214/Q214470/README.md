@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214470: How to Move the Location of a Locally Cached Profile"
-permalink: kb/214/Q214470/
+permalink: /kb/214/Q214470/
 ---
 
 ## Q214470: How to Move the Location of a Locally Cached Profile

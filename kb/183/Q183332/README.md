@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183332: BUG: TreeView Expand Event Does Not Occur When Using ENTER Key"
-permalink: kb/183/Q183332/
+permalink: /kb/183/Q183332/
 ---
 
 ## Q183332: BUG: TreeView Expand Event Does Not Occur When Using ENTER Key

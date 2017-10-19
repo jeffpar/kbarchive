@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190196: FIX: Command Line Compile Fails with MFC ActiveX Control"
-permalink: kb/190/Q190196/
+permalink: /kb/190/Q190196/
 ---
 
 ## Q190196: FIX: Command Line Compile Fails with MFC ActiveX Control

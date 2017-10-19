@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184134: WD97: Can't Find Non-printing Character with Wildcard Search"
-permalink: kb/184/Q184134/
+permalink: /kb/184/Q184134/
 ---
 
 ## Q184134: WD97: Can't Find Non-printing Character with Wildcard Search

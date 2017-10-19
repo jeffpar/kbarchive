@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255121: &quot;A Fatal Exception...&quot; Error Message When You Undock Your Laptop"
-permalink: kb/255/Q255121/
+permalink: /kb/255/Q255121/
 ---
 
 ## Q255121: &quot;A Fatal Exception...&quot; Error Message When You Undock Your Laptop

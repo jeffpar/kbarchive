@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196587: BUG: Data View: New Oracle Views Incorrectly Named During Save"
-permalink: kb/196/Q196587/
+permalink: /kb/196/Q196587/
 ---
 
 ## Q196587: BUG: Data View: New Oracle Views Incorrectly Named During Save

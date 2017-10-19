@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173672: TCP/IP Training Kit Does Not Include CD-Key"
-permalink: kb/173/Q173672/
+permalink: /kb/173/Q173672/
 ---
 
 ## Q173672: TCP/IP Training Kit Does Not Include CD-Key

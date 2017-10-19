@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124837: Connecting to a Remote Network Monitor Agent Across a Router"
-permalink: kb/124/Q124837/
+permalink: /kb/124/Q124837/
 ---
 
 ## Q124837: Connecting to a Remote Network Monitor Agent Across a Router

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166824: XADM: Permissions Needed to Backup Exchange on Member Server"
-permalink: kb/166/Q166824/
+permalink: /kb/166/Q166824/
 ---
 
 ## Q166824: XADM: Permissions Needed to Backup Exchange on Member Server

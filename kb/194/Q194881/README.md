@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194881: WinNT Router May Drop IP Packets While Awaiting ARP Response"
-permalink: kb/194/Q194881/
+permalink: /kb/194/Q194881/
 ---
 
 ## Q194881: WinNT Router May Drop IP Packets While Awaiting ARP Response

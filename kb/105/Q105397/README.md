@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105397: Windows NT Advanced Server CD Setup Disk Contents (528)"
-permalink: kb/105/Q105397/
+permalink: /kb/105/Q105397/
 ---
 
 ## Q105397: Windows NT Advanced Server CD Setup Disk Contents (528)

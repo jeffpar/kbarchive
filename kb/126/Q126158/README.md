@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126158: SMS Administrator Err Msg: Socket () failed, 10047"
-permalink: kb/126/Q126158/
+permalink: /kb/126/Q126158/
 ---
 
 ## Q126158: SMS Administrator Err Msg: Socket () failed, 10047

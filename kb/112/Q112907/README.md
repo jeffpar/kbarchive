@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112907: PC WRmt: Operation When No Timer Available"
-permalink: kb/112/Q112907/
+permalink: /kb/112/Q112907/
 ---
 
 ## Q112907: PC WRmt: Operation When No Timer Available

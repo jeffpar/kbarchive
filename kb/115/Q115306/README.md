@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115306: HOWTO: How to Get the Current State of a Button in a CToolbar"
-permalink: kb/115/Q115306/
+permalink: /kb/115/Q115306/
 ---
 
 ## Q115306: HOWTO: How to Get the Current State of a Button in a CToolbar

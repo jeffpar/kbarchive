@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214869: SMS: Requirements for Integrating Novell Netware with SMS 2.0"
-permalink: kb/214/Q214869/
+permalink: /kb/214/Q214869/
 ---
 
 ## Q214869: SMS: Requirements for Integrating Novell Netware with SMS 2.0

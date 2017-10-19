@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196589: Extended Characters are Displayed Incorrectly in Convlog.exe"
-permalink: kb/196/Q196589/
+permalink: /kb/196/Q196589/
 ---
 
 ## Q196589: Extended Characters are Displayed Incorrectly in Convlog.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168826: PRB: Adding VB Custom Method Control Causes Fault in VFP5"
-permalink: kb/168/Q168826/
+permalink: /kb/168/Q168826/
 ---
 
 ## Q168826: PRB: Adding VB Custom Method Control Causes Fault in VFP5

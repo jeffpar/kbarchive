@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238038: Reference 2000: Error Message Contains Wrong System Requirements"
-permalink: kb/238/Q238038/
+permalink: /kb/238/Q238038/
 ---
 
 ## Q238038: Reference 2000: Error Message Contains Wrong System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186505: Terminal Server Client Taskbar Clock Not Enabled"
-permalink: kb/186/Q186505/
+permalink: /kb/186/Q186505/
 ---
 
 ## Q186505: Terminal Server Client Taskbar Clock Not Enabled

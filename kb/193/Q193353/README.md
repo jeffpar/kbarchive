@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193353: PRB: Policy to Not Display Last Username on RDP Client"
-permalink: kb/193/Q193353/
+permalink: /kb/193/Q193353/
 ---
 
 ## Q193353: PRB: Policy to Not Display Last Username on RDP Client

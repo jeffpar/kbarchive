@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113102: Bookshelf: Pronunciations Don't Work under Windows NT"
-permalink: kb/113/Q113102/
+permalink: /kb/113/Q113102/
 ---
 
 ## Q113102: Bookshelf: Pronunciations Don't Work under Windows NT

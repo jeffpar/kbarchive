@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71870: Task Swapper in MS-DOS Shell"
-permalink: kb/071/Q71870/
+permalink: /kb/071/Q71870/
 ---
 
 ## Q71870: Task Swapper in MS-DOS Shell

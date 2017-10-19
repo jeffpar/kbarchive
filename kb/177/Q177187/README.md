@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177187: BUG: Stored Procedures Cannot Process NULL Parameters from VB"
-permalink: kb/177/Q177187/
+permalink: /kb/177/Q177187/
 ---
 
 ## Q177187: BUG: Stored Procedures Cannot Process NULL Parameters from VB

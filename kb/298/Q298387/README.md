@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298387: Error Message: The Drivers Were Not Successfully Installed"
-permalink: kb/298/Q298387/
+permalink: /kb/298/Q298387/
 ---
 
 ## Q298387: Error Message: The Drivers Were Not Successfully Installed

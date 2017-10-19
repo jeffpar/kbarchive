@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170316: Client Receives Error When Resolving Fully Qualified Domain Name"
-permalink: kb/170/Q170316/
+permalink: /kb/170/Q170316/
 ---
 
 ## Q170316: Client Receives Error When Resolving Fully Qualified Domain Name

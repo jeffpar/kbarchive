@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99541: How to Export Memo Data to a Text File Without an XCMD"
-permalink: kb/099/Q99541/
+permalink: /kb/099/Q99541/
 ---
 
 ## Q99541: How to Export Memo Data to a Text File Without an XCMD

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183241: Host Account Cache Database Shows High CPU Utilization"
-permalink: kb/183/Q183241/
+permalink: /kb/183/Q183241/
 ---
 
 ## Q183241: Host Account Cache Database Shows High CPU Utilization

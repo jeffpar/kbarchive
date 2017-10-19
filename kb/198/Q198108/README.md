@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198108: XCLN: Microsoft Exchange and/or Outlook Client Hangs"
-permalink: kb/198/Q198108/
+permalink: /kb/198/Q198108/
 ---
 
 ## Q198108: XCLN: Microsoft Exchange and/or Outlook Client Hangs

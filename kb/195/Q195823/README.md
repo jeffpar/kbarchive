@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195823: SMS: Audit Stops If Certain Entries in Sms.ini Are Blank"
-permalink: kb/195/Q195823/
+permalink: /kb/195/Q195823/
 ---
 
 ## Q195823: SMS: Audit Stops If Certain Entries in Sms.ini Are Blank

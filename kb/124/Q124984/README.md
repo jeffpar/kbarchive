@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124984: Multimedia Titles Requiring 256 or More Colors"
-permalink: kb/124/Q124984/
+permalink: /kb/124/Q124984/
 ---
 
 ## Q124984: Multimedia Titles Requiring 256 or More Colors

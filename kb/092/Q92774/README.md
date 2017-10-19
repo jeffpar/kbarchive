@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92774: WFWG: SMARTDrive Command Line Cannot Contain Backslash"
-permalink: kb/092/Q92774/
+permalink: /kb/092/Q92774/
 ---
 
 ## Q92774: WFWG: SMARTDrive Command Line Cannot Contain Backslash

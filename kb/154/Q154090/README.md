@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154090: SCM.EXE Asserts Error When Many OLE Applications Installed"
-permalink: kb/154/Q154090/
+permalink: /kb/154/Q154090/
 ---
 
 ## Q154090: SCM.EXE Asserts Error When Many OLE Applications Installed

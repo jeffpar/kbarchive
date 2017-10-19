@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130335: ADT2: &quot;There Is No Object in This Control&quot; Error Message"
-permalink: kb/130/Q130335/
+permalink: /kb/130/Q130335/
 ---
 
 ## Q130335: ADT2: &quot;There Is No Object in This Control&quot; Error Message

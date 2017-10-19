@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86813: FIX: Macros w/ Different Case Can't Be Assigned to Each Other"
-permalink: kb/086/Q86813/
+permalink: /kb/086/Q86813/
 ---
 
 ## Q86813: FIX: Macros w/ Different Case Can't Be Assigned to Each Other

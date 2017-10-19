@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259299: 3270 LU/Pools Accumulate Using HIS 2000 with Active Directory"
-permalink: kb/259/Q259299/
+permalink: /kb/259/Q259299/
 ---
 
 ## Q259299: 3270 LU/Pools Accumulate Using HIS 2000 with Active Directory

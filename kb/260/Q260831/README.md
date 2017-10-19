@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260831: &quot;STOP 0x0000001E&quot; Caused by Pool Corruption"
-permalink: kb/260/Q260831/
+permalink: /kb/260/Q260831/
 ---
 
 ## Q260831: &quot;STOP 0x0000001E&quot; Caused by Pool Corruption

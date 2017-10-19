@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166618: XADM: Batch Export Crashes When Non Zero ulUSNBase is Specified"
-permalink: kb/166/Q166618/
+permalink: /kb/166/Q166618/
 ---
 
 ## Q166618: XADM: Batch Export Crashes When Non Zero ulUSNBase is Specified

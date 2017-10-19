@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139469: HOWTO: How to Use TrackPopupMenu() and Update UI Handlers"
-permalink: kb/139/Q139469/
+permalink: /kb/139/Q139469/
 ---
 
 ## Q139469: HOWTO: How to Use TrackPopupMenu() and Update UI Handlers

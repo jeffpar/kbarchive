@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73677: Allocation Limit on WINMEM32 Global32Alloc() Function"
-permalink: kb/073/Q73677/
+permalink: /kb/073/Q73677/
 ---
 
 ## Q73677: Allocation Limit on WINMEM32 Global32Alloc() Function

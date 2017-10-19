@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240315: Contents of the IIS Exception Monitor Readme File"
-permalink: kb/240/Q240315/
+permalink: /kb/240/Q240315/
 ---
 
 ## Q240315: Contents of the IIS Exception Monitor Readme File

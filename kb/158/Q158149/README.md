@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158149: MediaVision ThunderBoard Listed as Sound Blaster"
-permalink: kb/158/Q158149/
+permalink: /kb/158/Q158149/
 ---
 
 ## Q158149: MediaVision ThunderBoard Listed as Sound Blaster

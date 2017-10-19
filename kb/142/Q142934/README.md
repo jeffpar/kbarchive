@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142934: Problems Using Two Identical Modems in Windows 95"
-permalink: kb/142/Q142934/
+permalink: /kb/142/Q142934/
 ---
 
 ## Q142934: Problems Using Two Identical Modems in Windows 95

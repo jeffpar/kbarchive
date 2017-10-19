@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259089: Allegiance: Unable to Find a Private Allegiance Server LAN Game"
-permalink: kb/259/Q259089/
+permalink: /kb/259/Q259089/
 ---
 
 ## Q259089: Allegiance: Unable to Find a Private Allegiance Server LAN Game

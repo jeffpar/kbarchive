@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68171: Archive's Qicstream Tape Backup Hangs Windows"
-permalink: kb/068/Q68171/
+permalink: /kb/068/Q68171/
 ---
 
 ## Q68171: Archive's Qicstream Tape Backup Hangs Windows

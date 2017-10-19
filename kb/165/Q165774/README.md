@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165774: Windows NT Does Not Detect Serial IntelliPoint Mouse"
-permalink: kb/165/Q165774/
+permalink: /kb/165/Q165774/
 ---
 
 ## Q165774: Windows NT Does Not Detect Serial IntelliPoint Mouse

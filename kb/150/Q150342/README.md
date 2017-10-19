@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150342: Explorapedia Nature: Topics Listed By Scene"
-permalink: kb/150/Q150342/
+permalink: /kb/150/Q150342/
 ---
 
 ## Q150342: Explorapedia Nature: Topics Listed By Scene

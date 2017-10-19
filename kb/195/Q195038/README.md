@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195038: XFOR: Read Receipts Translated to Delivery Receipts"
-permalink: kb/195/Q195038/
+permalink: /kb/195/Q195038/
 ---
 
 ## Q195038: XFOR: Read Receipts Translated to Delivery Receipts

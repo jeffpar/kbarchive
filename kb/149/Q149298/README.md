@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149298: Not Reminded at Correct Time in Full Screen Command Prompt"
-permalink: kb/149/Q149298/
+permalink: /kb/149/Q149298/
 ---
 
 ## Q149298: Not Reminded at Correct Time in Full Screen Command Prompt

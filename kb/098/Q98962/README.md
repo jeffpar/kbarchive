@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98962: Mac LDF: Mail Tools Err Msg: File Unrecognizable"
-permalink: kb/098/Q98962/
+permalink: /kb/098/Q98962/
 ---
 
 ## Q98962: Mac LDF: Mail Tools Err Msg: File Unrecognizable

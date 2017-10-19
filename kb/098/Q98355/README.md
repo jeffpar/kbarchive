@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98355: How to Update a Master File from a Transaction File"
-permalink: kb/098/Q98355/
+permalink: /kb/098/Q98355/
 ---
 
 ## Q98355: How to Update a Master File from a Transaction File

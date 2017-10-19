@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263219: SMS: Unable to View Advertisements in SMS Administrator Console"
-permalink: kb/263/Q263219/
+permalink: /kb/263/Q263219/
 ---
 
 ## Q263219: SMS: Unable to View Advertisements in SMS Administrator Console

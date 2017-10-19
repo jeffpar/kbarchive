@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270851: XADM: How to Export the Outlook Web Access Server Name Field"
-permalink: kb/270/Q270851/
+permalink: /kb/270/Q270851/
 ---
 
 ## Q270851: XADM: How to Export the Outlook Web Access Server Name Field

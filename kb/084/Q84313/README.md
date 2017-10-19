@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84313: CorelDRAW! Versions 2.x Do Not Support TrueType"
-permalink: kb/084/Q84313/
+permalink: /kb/084/Q84313/
 ---
 
 ## Q84313: CorelDRAW! Versions 2.x Do Not Support TrueType

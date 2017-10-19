@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179129: STOP 0x0000000A or 0x00000019 Due to Modified Teardrop Attack"
-permalink: kb/179/Q179129/
+permalink: /kb/179/Q179129/
 ---
 
 ## Q179129: STOP 0x0000000A or 0x00000019 Due to Modified Teardrop Attack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219362: Using SNA Server Print Server and LPR Degrades Performance"
-permalink: kb/219/Q219362/
+permalink: /kb/219/Q219362/
 ---
 
 ## Q219362: Using SNA Server Print Server and LPR Degrades Performance

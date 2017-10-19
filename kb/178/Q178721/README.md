@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178721: Exchange Client Cannot Resolve Hidden Recipient"
-permalink: kb/178/Q178721/
+permalink: /kb/178/Q178721/
 ---
 
 ## Q178721: Exchange Client Cannot Resolve Hidden Recipient

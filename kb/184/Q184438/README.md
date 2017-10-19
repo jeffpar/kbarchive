@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184438: XADM: MSExchangeISPriv Event ID 2011 Causes Information Store To"
-permalink: kb/184/Q184438/
+permalink: /kb/184/Q184438/
 ---
 
 ## Q184438: XADM: MSExchangeISPriv Event ID 2011 Causes Information Store To

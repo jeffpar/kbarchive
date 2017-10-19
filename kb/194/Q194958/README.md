@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194958: XCLN: Unable to Open Macintosh PowerPoint 98 Attachments"
-permalink: kb/194/Q194958/
+permalink: /kb/194/Q194958/
 ---
 
 ## Q194958: XCLN: Unable to Open Macintosh PowerPoint 98 Attachments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143665: PPT7: Animation Player for ActiveX Available"
-permalink: kb/143/Q143665/
+permalink: /kb/143/Q143665/
 ---
 
 ## Q143665: PPT7: Animation Player for ActiveX Available

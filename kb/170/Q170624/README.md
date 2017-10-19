@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170624: FP97: Data Loss After Using &quot;View or Edit HTML&quot; Dialog Box"
-permalink: kb/170/Q170624/
+permalink: /kb/170/Q170624/
 ---
 
 ## Q170624: FP97: Data Loss After Using &quot;View or Edit HTML&quot; Dialog Box

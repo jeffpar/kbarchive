@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135698: Cannot Save Backup Set File After Backup Is Performed"
-permalink: kb/135/Q135698/
+permalink: /kb/135/Q135698/
 ---
 
 ## Q135698: Cannot Save Backup Set File After Backup Is Performed

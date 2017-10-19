@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129805: Artist: Pictures Print Black &amp; White, Not Grayscale or Color"
-permalink: kb/129/Q129805/
+permalink: /kb/129/Q129805/
 ---
 
 ## Q129805: Artist: Pictures Print Black &amp; White, Not Grayscale or Color

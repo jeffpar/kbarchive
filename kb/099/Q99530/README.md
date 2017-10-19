@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99530: RPL Workstation Login Problems with Login Scripts"
-permalink: kb/099/Q99530/
+permalink: /kb/099/Q99530/
 ---
 
 ## Q99530: RPL Workstation Login Problems with Login Scripts

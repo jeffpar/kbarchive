@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168753: XADM: Microsoft Exchange Roles, Rights, and Permissions"
-permalink: kb/168/Q168753/
+permalink: /kb/168/Q168753/
 ---
 
 ## Q168753: XADM: Microsoft Exchange Roles, Rights, and Permissions

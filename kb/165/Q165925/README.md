@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165925: WD97: &quot;Distance From Text&quot; Property Not Applied to Inside Border"
-permalink: kb/165/Q165925/
+permalink: /kb/165/Q165925/
 ---
 
 ## Q165925: WD97: &quot;Distance From Text&quot; Property Not Applied to Inside Border

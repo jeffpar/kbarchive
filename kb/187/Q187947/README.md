@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187947: 100 Percent CPU System Handle Problem"
-permalink: kb/187/Q187947/
+permalink: /kb/187/Q187947/
 ---
 
 ## Q187947: 100 Percent CPU System Handle Problem

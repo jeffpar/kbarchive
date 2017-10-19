@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68740: ASD: 747 Won't Move with Full Throttle"
-permalink: kb/068/Q68740/
+permalink: /kb/068/Q68740/
 ---
 
 ## Q68740: ASD: 747 Won't Move with Full Throttle

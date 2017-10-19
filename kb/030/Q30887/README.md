@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30887: Accessing MASM Structure Fields in a Multimodule Program"
-permalink: kb/030/Q30887/
+permalink: /kb/030/Q30887/
 ---
 
 ## Q30887: Accessing MASM Structure Fields in a Multimodule Program

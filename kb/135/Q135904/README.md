@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135904: PRB: Can't Define Text Object ControlSource Property in a Grid"
-permalink: kb/135/Q135904/
+permalink: /kb/135/Q135904/
 ---
 
 ## Q135904: PRB: Can't Define Text Object ControlSource Property in a Grid

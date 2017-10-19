@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201378: HOWTO: Remove a Virus From a File in Visual SourceSafe"
-permalink: kb/201/Q201378/
+permalink: /kb/201/Q201378/
 ---
 
 ## Q201378: HOWTO: Remove a Virus From a File in Visual SourceSafe

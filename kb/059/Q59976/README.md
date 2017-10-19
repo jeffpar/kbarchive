@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59976: Mac Hyp: Getting the Subject of a Message"
-permalink: kb/059/Q59976/
+permalink: /kb/059/Q59976/
 ---
 
 ## Q59976: Mac Hyp: Getting the Subject of a Message

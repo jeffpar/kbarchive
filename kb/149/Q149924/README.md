@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149924: TN3270 Session Fail w/Sense 2004 if TN3270E Server Stressed"
-permalink: kb/149/Q149924/
+permalink: /kb/149/Q149924/
 ---
 
 ## Q149924: TN3270 Session Fail w/Sense 2004 if TN3270E Server Stressed

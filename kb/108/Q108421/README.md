@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108421: WFWG 3.11 Err Msg: Error 1: An Internal Error Occurred"
-permalink: kb/108/Q108421/
+permalink: /kb/108/Q108421/
 ---
 
 ## Q108421: WFWG 3.11 Err Msg: Error 1: An Internal Error Occurred

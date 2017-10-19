@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162774: Policy Editor Crashes When Using Large Custom ADM Files"
-permalink: kb/162/Q162774/
+permalink: /kb/162/Q162774/
 ---
 
 ## Q162774: Policy Editor Crashes When Using Large Custom ADM Files

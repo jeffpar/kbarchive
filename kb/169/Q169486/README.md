@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169486: SnaBase and SNA Server Don't Accept New Client Connections"
-permalink: kb/169/Q169486/
+permalink: /kb/169/Q169486/
 ---
 
 ## Q169486: SnaBase and SNA Server Don't Accept New Client Connections

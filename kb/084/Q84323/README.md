@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84323: PRB: Unexpected &quot;This Program Requires Microsoft Windows&quot; Msg"
-permalink: kb/084/Q84323/
+permalink: /kb/084/Q84323/
 ---
 
 ## Q84323: PRB: Unexpected &quot;This Program Requires Microsoft Windows&quot; Msg

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168384: PRB: C2248: No Access for Friend Class in a Template Class"
-permalink: kb/168/Q168384/
+permalink: /kb/168/Q168384/
 ---
 
 ## Q168384: PRB: C2248: No Access for Friend Class in a Template Class

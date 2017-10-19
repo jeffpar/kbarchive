@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137476: NTVDM Error with Matrox Video Card"
-permalink: kb/137/Q137476/
+permalink: /kb/137/Q137476/
 ---
 
 ## Q137476: NTVDM Error with Matrox Video Card

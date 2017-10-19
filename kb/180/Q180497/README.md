@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180497: PRB: Formset with Modal Windows Containing OCX Hangs VFP"
-permalink: kb/180/Q180497/
+permalink: /kb/180/Q180497/
 ---
 
 ## Q180497: PRB: Formset with Modal Windows Containing OCX Hangs VFP

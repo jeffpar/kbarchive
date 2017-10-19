@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129136: XCLN: Pointer Doesn't Change When New Mail Is Received"
-permalink: kb/129/Q129136/
+permalink: /kb/129/Q129136/
 ---
 
 ## Q129136: XCLN: Pointer Doesn't Change When New Mail Is Received

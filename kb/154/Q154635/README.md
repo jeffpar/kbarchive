@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154635: FPNW Login.exe Does Not Set Machine Name Correctly"
-permalink: kb/154/Q154635/
+permalink: /kb/154/Q154635/
 ---
 
 ## Q154635: FPNW Login.exe Does Not Set Machine Name Correctly

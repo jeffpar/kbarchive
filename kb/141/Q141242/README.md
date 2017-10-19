@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141242: STOP Msg: 0x0000001E Testing New Fault Tolerance Boot Disk"
-permalink: kb/141/Q141242/
+permalink: /kb/141/Q141242/
 ---
 
 ## Q141242: STOP Msg: 0x0000001E Testing New Fault Tolerance Boot Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158559: How to Change Your Name in Microsoft Exchange Server"
-permalink: kb/158/Q158559/
+permalink: /kb/158/Q158559/
 ---
 
 ## Q158559: How to Change Your Name in Microsoft Exchange Server

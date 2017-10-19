@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134553: Windows 95 Hangs During First Reboot After Setup"
-permalink: kb/134/Q134553/
+permalink: /kb/134/Q134553/
 ---
 
 ## Q134553: Windows 95 Hangs During First Reboot After Setup

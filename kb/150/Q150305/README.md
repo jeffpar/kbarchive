@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150305: DEC FDDI Adapters Fail to Respond to Broadcasts"
-permalink: kb/150/Q150305/
+permalink: /kb/150/Q150305/
 ---
 
 ## Q150305: DEC FDDI Adapters Fail to Respond to Broadcasts

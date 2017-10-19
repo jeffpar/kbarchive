@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176799: INFO: Using DCOM Config (DCOMCNFG.EXE) on Windows NT"
-permalink: kb/176/Q176799/
+permalink: /kb/176/Q176799/
 ---
 
 ## Q176799: INFO: Using DCOM Config (DCOMCNFG.EXE) on Windows NT

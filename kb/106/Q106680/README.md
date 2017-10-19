@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106680: SFM: Macintosh Users Not Logged Off Despite Time Restrictions"
-permalink: kb/106/Q106680/
+permalink: /kb/106/Q106680/
 ---
 
 ## Q106680: SFM: Macintosh Users Not Logged Off Despite Time Restrictions

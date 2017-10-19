@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117863: Mac Encarta: Anatomy Images Cut Off on Right Side"
-permalink: kb/117/Q117863/
+permalink: /kb/117/Q117863/
 ---
 
 ## Q117863: Mac Encarta: Anatomy Images Cut Off on Right Side

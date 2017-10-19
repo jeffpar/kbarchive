@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164308: Windows NT 4.0 Clients May Refresh WINS Entries Frequently"
-permalink: kb/164/Q164308/
+permalink: /kb/164/Q164308/
 ---
 
 ## Q164308: Windows NT 4.0 Clients May Refresh WINS Entries Frequently

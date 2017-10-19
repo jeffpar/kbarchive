@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100772: PRB: Upper Left Corner of CodeView Screen Displays &quot;a&quot;"
-permalink: kb/100/Q100772/
+permalink: /kb/100/Q100772/
 ---
 
 ## Q100772: PRB: Upper Left Corner of CodeView Screen Displays &quot;a&quot;

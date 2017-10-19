@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176582: WD97: Recording AutoMark Index Causes Word to Stop Responding"
-permalink: kb/176/Q176582/
+permalink: /kb/176/Q176582/
 ---
 
 ## Q176582: WD97: Recording AutoMark Index Causes Word to Stop Responding

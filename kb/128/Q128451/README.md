@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128451: INVDOS: SMSSAFE.TMP is Deleted upon Creation"
-permalink: kb/128/Q128451/
+permalink: /kb/128/Q128451/
 ---
 
 ## Q128451: INVDOS: SMSSAFE.TMP is Deleted upon Creation

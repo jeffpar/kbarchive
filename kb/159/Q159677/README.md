@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q159677: Flight Simulator Err Msg: MMSystem263 [MCI] Device Not Connected"
-permalink: kb/159/Q159677/
+title: "Q159677: Flight Simulator Err Msg: MMSystem263 &#91;MCI&#93; Device Not Connected"
+permalink: /kb/159/Q159677/
 ---
 
-## Q159677: Flight Simulator Err Msg: MMSystem263 [MCI] Device Not Connected
+## Q159677: Flight Simulator Err Msg: MMSystem263 &#91;MCI&#93; Device Not Connected
 
 	Article: Q159677
 	Product(s): Microsoft Home Games

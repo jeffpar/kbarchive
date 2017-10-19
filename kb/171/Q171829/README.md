@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171829: FIX: GetChunk Freezes Unless Other Events Happening"
-permalink: kb/171/Q171829/
+permalink: /kb/171/Q171829/
 ---
 
 ## Q171829: FIX: GetChunk Freezes Unless Other Events Happening

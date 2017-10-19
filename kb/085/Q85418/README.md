@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85418: PACKING.LST: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85418/
+permalink: /kb/085/Q85418/
 ---
 
 ## Q85418: PACKING.LST: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2

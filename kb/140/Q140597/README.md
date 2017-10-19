@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140597: FIX: Fatal Error LNK1561: Entry Point Must Be Defined"
-permalink: kb/140/Q140597/
+permalink: /kb/140/Q140597/
 ---
 
 ## Q140597: FIX: Fatal Error LNK1561: Entry Point Must Be Defined

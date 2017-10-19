@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142254: Problems Installing Network Protocol That Uses TDI Interface"
-permalink: kb/142/Q142254/
+permalink: /kb/142/Q142254/
 ---
 
 ## Q142254: Problems Installing Network Protocol That Uses TDI Interface

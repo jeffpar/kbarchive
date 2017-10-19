@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162595: NTFS Causes Windows NT Server to Stop Responding"
-permalink: kb/162/Q162595/
+permalink: /kb/162/Q162595/
 ---
 
 ## Q162595: NTFS Causes Windows NT Server to Stop Responding

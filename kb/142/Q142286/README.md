@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142286: FIX: GETPEM Returns Cryptic Characters On Sub-Classed Object"
-permalink: kb/142/Q142286/
+permalink: /kb/142/Q142286/
 ---
 
 ## Q142286: FIX: GETPEM Returns Cryptic Characters On Sub-Classed Object

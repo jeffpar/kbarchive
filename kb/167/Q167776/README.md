@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167776: Certain Bitmap Fonts May Cause STOP 0x1E Message"
-permalink: kb/167/Q167776/
+permalink: /kb/167/Q167776/
 ---
 
 ## Q167776: Certain Bitmap Fonts May Cause STOP 0x1E Message

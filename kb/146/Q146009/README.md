@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146009: Backup Cannot Find Hklmback and Hkuback Files During Compare"
-permalink: kb/146/Q146009/
+permalink: /kb/146/Q146009/
 ---
 
 ## Q146009: Backup Cannot Find Hklmback and Hkuback Files During Compare

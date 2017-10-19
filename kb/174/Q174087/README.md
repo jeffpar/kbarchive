@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174087: HOWTO: Display Additional Buttons in Customize Toolbar Dialog"
-permalink: kb/174/Q174087/
+permalink: /kb/174/Q174087/
 ---
 
 ## Q174087: HOWTO: Display Additional Buttons in Customize Toolbar Dialog

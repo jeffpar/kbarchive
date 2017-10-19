@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191819: Still Prompted for Password After Login Script Provides One"
-permalink: kb/191/Q191819/
+permalink: /kb/191/Q191819/
 ---
 
 ## Q191819: Still Prompted for Password After Login Script Provides One

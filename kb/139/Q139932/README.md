@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139932: Server Service Does Not Register Properly with WINS"
-permalink: kb/139/Q139932/
+permalink: /kb/139/Q139932/
 ---
 
 ## Q139932: Server Service Does Not Register Properly with WINS

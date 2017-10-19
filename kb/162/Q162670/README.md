@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162670: XCLN: 16-Bit Exchange Client Memory Issue"
-permalink: kb/162/Q162670/
+permalink: /kb/162/Q162670/
 ---
 
 ## Q162670: XCLN: 16-Bit Exchange Client Memory Issue

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314973: &quot;Unable to Write File&quot; Err Msg After Adding Local APPC LU"
-permalink: kb/314/Q314973/
+permalink: /kb/314/Q314973/
 ---
 
 ## Q314973: &quot;Unable to Write File&quot; Err Msg After Adding Local APPC LU

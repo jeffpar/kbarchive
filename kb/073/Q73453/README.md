@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73453: WordPerfect 5.1 and EMM386.EXE Conflict"
-permalink: kb/073/Q73453/
+permalink: /kb/073/Q73453/
 ---
 
 ## Q73453: WordPerfect 5.1 and EMM386.EXE Conflict

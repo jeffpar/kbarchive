@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95821: CD Audio Err Msg: No CD-ROM Drive Is Detected..."
-permalink: kb/095/Q95821/
+permalink: /kb/095/Q95821/
 ---
 
 ## Q95821: CD Audio Err Msg: No CD-ROM Drive Is Detected...

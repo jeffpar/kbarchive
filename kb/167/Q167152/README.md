@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167152: SMS: &quot;Couldn't Create A New Package&quot; Error"
-permalink: kb/167/Q167152/
+permalink: /kb/167/Q167152/
 ---
 
 ## Q167152: SMS: &quot;Couldn't Create A New Package&quot; Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171386: Connectivity Delay with Multiple Redirectors Installed"
-permalink: kb/171/Q171386/
+permalink: /kb/171/Q171386/
 ---
 
 ## Q171386: Connectivity Delay with Multiple Redirectors Installed

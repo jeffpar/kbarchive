@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168062: WD97: Table Row Does Not Increase to Show All Vertical Text"
-permalink: kb/168/Q168062/
+permalink: /kb/168/Q168062/
 ---
 
 ## Q168062: WD97: Table Row Does Not Increase to Show All Vertical Text

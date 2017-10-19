@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157388: Soccer: Enhancing Performance"
-permalink: kb/157/Q157388/
+permalink: /kb/157/Q157388/
 ---
 
 ## Q157388: Soccer: Enhancing Performance

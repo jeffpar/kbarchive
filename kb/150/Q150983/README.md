@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150983: PPT7: Graph Patterns Not Printed in PowerPoint Presentation"
-permalink: kb/150/Q150983/
+permalink: /kb/150/Q150983/
 ---
 
 ## Q150983: PPT7: Graph Patterns Not Printed in PowerPoint Presentation

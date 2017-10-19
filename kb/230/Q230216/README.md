@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230216: Running Microsoft Office 2000 Small Business Comments and Correc"
-permalink: kb/230/Q230216/
+permalink: /kb/230/Q230216/
 ---
 
 ## Q230216: Running Microsoft Office 2000 Small Business Comments and Correc

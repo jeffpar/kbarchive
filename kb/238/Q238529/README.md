@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238529: Response Truncated for PUT Sent to Port Other Than 80 or 443"
-permalink: kb/238/Q238529/
+permalink: /kb/238/Q238529/
 ---
 
 ## Q238529: Response Truncated for PUT Sent to Port Other Than 80 or 443

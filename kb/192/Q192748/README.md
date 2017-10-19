@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192748: XADM: Admin Program Quits Unexpectedly When Creating Newsfeed"
-permalink: kb/192/Q192748/
+permalink: /kb/192/Q192748/
 ---
 
 ## Q192748: XADM: Admin Program Quits Unexpectedly When Creating Newsfeed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127987: VFW Err Msg: Unable to Load the Capture Driver"
-permalink: kb/127/Q127987/
+permalink: /kb/127/Q127987/
 ---
 
 ## Q127987: VFW Err Msg: Unable to Load the Capture Driver

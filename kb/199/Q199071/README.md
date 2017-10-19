@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199071: Recovering from Minor LSA Corruption"
-permalink: kb/199/Q199071/
+permalink: /kb/199/Q199071/
 ---
 
 ## Q199071: Recovering from Minor LSA Corruption

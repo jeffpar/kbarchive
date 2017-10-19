@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241849: INFO: More Information on MIDL2362 Warning"
-permalink: kb/241/Q241849/
+permalink: /kb/241/Q241849/
 ---
 
 ## Q241849: INFO: More Information on MIDL2362 Warning

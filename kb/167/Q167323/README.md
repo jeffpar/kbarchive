@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167323: BUG: Compiler Error C2955 Caused by Global STL Iterators"
-permalink: kb/167/Q167323/
+permalink: /kb/167/Q167323/
 ---
 
 ## Q167323: BUG: Compiler Error C2955 Caused by Global STL Iterators

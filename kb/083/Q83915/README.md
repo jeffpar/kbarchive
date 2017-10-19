@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83915: NoTitle.exe - Adding and Removing Caption of a Window"
-permalink: kb/083/Q83915/
+permalink: /kb/083/Q83915/
 ---
 
 ## Q83915: NoTitle.exe - Adding and Removing Caption of a Window

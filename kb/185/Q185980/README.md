@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185980: WD97: Selected Text Not Visible or Offset in Some Dialog Boxes"
-permalink: kb/185/Q185980/
+permalink: /kb/185/Q185980/
 ---
 
 ## Q185980: WD97: Selected Text Not Visible or Offset in Some Dialog Boxes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152308: Remote Control Causes GPF on Windows 3.11 Clients"
-permalink: kb/152/Q152308/
+permalink: /kb/152/Q152308/
 ---
 
 ## Q152308: Remote Control Causes GPF on Windows 3.11 Clients

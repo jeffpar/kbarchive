@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289574: XADM: Cannot Access Contents of a Public Folder"
-permalink: kb/289/Q289574/
+permalink: /kb/289/Q289574/
 ---
 
 ## Q289574: XADM: Cannot Access Contents of a Public Folder

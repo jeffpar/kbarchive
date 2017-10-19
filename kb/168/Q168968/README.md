@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168968: WD97: AutoCorrect Entry &quot;wern't&quot; Not Corrected"
-permalink: kb/168/Q168968/
+permalink: /kb/168/Q168968/
 ---
 
 ## Q168968: WD97: AutoCorrect Entry &quot;wern't&quot; Not Corrected

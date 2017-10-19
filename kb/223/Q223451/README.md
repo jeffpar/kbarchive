@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223451: Multimedia Err Msg: OLE Initialization Failed..."
-permalink: kb/223/Q223451/
+permalink: /kb/223/Q223451/
 ---
 
 ## Q223451: Multimedia Err Msg: OLE Initialization Failed...

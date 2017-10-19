@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165294: How Can I Change My Member Information?"
-permalink: kb/165/Q165294/
+permalink: /kb/165/Q165294/
 ---
 
 ## Q165294: How Can I Change My Member Information?

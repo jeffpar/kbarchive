@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48249: Mac Form: Shadowed Boxes Are Not Available for Custom Forms"
-permalink: kb/048/Q48249/
+permalink: /kb/048/Q48249/
 ---
 
 ## Q48249: Mac Form: Shadowed Boxes Are Not Available for Custom Forms

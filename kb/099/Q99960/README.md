@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99960: Fault Tolerance Allows FDISKPM to Delete Mirror Partition"
-permalink: kb/099/Q99960/
+permalink: /kb/099/Q99960/
 ---
 
 ## Q99960: Fault Tolerance Allows FDISKPM to Delete Mirror Partition

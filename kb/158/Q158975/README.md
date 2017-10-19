@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158975: Why Won't This Game Recognize My 3D Video Card?"
-permalink: kb/158/Q158975/
+permalink: /kb/158/Q158975/
 ---
 
 ## Q158975: Why Won't This Game Recognize My 3D Video Card?

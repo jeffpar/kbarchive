@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169459: XFOR: NNTP Users Cannot Use Exchange Server Newsgroups"
-permalink: kb/169/Q169459/
+permalink: /kb/169/Q169459/
 ---
 
 ## Q169459: XFOR: NNTP Users Cannot Use Exchange Server Newsgroups

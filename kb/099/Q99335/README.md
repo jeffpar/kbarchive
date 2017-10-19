@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99335: PRB: Error in the THSAMPLE Sample Application"
-permalink: kb/099/Q99335/
+permalink: /kb/099/Q99335/
 ---
 
 ## Q99335: PRB: Error in the THSAMPLE Sample Application

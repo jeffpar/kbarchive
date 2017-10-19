@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75602: Initializing an Array of Structures in C"
-permalink: kb/075/Q75602/
+permalink: /kb/075/Q75602/
 ---
 
 ## Q75602: Initializing an Array of Structures in C

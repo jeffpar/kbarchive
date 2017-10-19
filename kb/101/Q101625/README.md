@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101625: ORACLE.TXT for Visual Basic Version 3.0 Users"
-permalink: kb/101/Q101625/
+permalink: /kb/101/Q101625/
 ---
 
 ## Q101625: ORACLE.TXT for Visual Basic Version 3.0 Users

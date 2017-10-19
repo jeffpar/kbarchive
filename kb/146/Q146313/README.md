@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146313: Only Last Expired Reminder Is Received on Recurring Appts."
-permalink: kb/146/Q146313/
+permalink: /kb/146/Q146313/
 ---
 
 ## Q146313: Only Last Expired Reminder Is Received on Recurring Appts.

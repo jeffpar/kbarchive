@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82751: Maximum Number of TrueType Fonts Installed"
-permalink: kb/082/Q82751/
+permalink: /kb/082/Q82751/
 ---
 
 ## Q82751: Maximum Number of TrueType Fonts Installed

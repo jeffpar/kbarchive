@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162724: Golf 3.0: &quot;Illegal Player&quot; Listed as a Player Name"
-permalink: kb/162/Q162724/
+permalink: /kb/162/Q162724/
 ---
 
 ## Q162724: Golf 3.0: &quot;Illegal Player&quot; Listed as a Player Name

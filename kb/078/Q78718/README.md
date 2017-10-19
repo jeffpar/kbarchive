@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78718: Tempus Link Version 3.2 Required with EMM386 and MS-DOS 5.0"
-permalink: kb/078/Q78718/
+permalink: /kb/078/Q78718/
 ---
 
 ## Q78718: Tempus Link Version 3.2 Required with EMM386 and MS-DOS 5.0

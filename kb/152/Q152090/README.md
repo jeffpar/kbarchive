@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152090: Automap: Search Can't Find Specific Locations in Windows 95"
-permalink: kb/152/Q152090/
+permalink: /kb/152/Q152090/
 ---
 
 ## Q152090: Automap: Search Can't Find Specific Locations in Windows 95

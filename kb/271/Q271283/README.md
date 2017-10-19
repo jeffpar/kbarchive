@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271283: Install SNA Server or HIS 2000 on Windows Terminal Server"
-permalink: kb/271/Q271283/
+permalink: /kb/271/Q271283/
 ---
 
 ## Q271283: Install SNA Server or HIS 2000 on Windows Terminal Server

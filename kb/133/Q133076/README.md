@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133076: Duplicate Entries in Fax Cover Page List"
-permalink: kb/133/Q133076/
+permalink: /kb/133/Q133076/
 ---
 
 ## Q133076: Duplicate Entries in Fax Cover Page List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231859: Midtown Madness: Game Is Not Recognized on Zone.com"
-permalink: kb/231/Q231859/
+permalink: /kb/231/Q231859/
 ---
 
 ## Q231859: Midtown Madness: Game Is Not Recognized on Zone.com

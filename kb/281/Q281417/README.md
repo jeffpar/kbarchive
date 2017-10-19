@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281417: HOWTO:Log On to Terminal Server Session Programmatically from VB"
-permalink: kb/281/Q281417/
+permalink: /kb/281/Q281417/
 ---
 
 ## Q281417: HOWTO:Log On to Terminal Server Session Programmatically from VB

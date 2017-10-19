@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317948: IIS 5.1 Application Mappings OK Button Unavailable"
-permalink: kb/317/Q317948/
+permalink: /kb/317/Q317948/
 ---
 
 ## Q317948: IIS 5.1 Application Mappings OK Button Unavailable

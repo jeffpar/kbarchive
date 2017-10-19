@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192484: XFOR: Exchange DSS Gets Event ID 133, 143, 168 Errors in Dirsync"
-permalink: kb/192/Q192484/
+permalink: /kb/192/Q192484/
 ---
 
 ## Q192484: XFOR: Exchange DSS Gets Event ID 133, 143, 168 Errors in Dirsync

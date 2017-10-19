@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251059: HOWTO: Provide Your Own Window Class Name for an MFC Dialog Box"
-permalink: kb/251/Q251059/
+permalink: /kb/251/Q251059/
 ---
 
 ## Q251059: HOWTO: Provide Your Own Window Class Name for an MFC Dialog Box

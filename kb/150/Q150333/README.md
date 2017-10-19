@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150333: Will Not Print Projects Without Assigned Tasks"
-permalink: kb/150/Q150333/
+permalink: /kb/150/Q150333/
 ---
 
 ## Q150333: Will Not Print Projects Without Assigned Tasks

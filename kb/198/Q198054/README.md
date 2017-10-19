@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198054: WD97: Known Issues Using &quot;Windows 95 for Pen Computing&quot;"
-permalink: kb/198/Q198054/
+permalink: /kb/198/Q198054/
 ---
 
 ## Q198054: WD97: Known Issues Using &quot;Windows 95 for Pen Computing&quot;

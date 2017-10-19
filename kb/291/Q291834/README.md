@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291834: How To Troubleshoot MSN Connectivity After AOL Is Installed."
-permalink: kb/291/Q291834/
+permalink: /kb/291/Q291834/
 ---
 
 ## Q291834: How To Troubleshoot MSN Connectivity After AOL Is Installed.

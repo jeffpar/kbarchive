@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196171: XADM: Incorrect Attempt to Update KMS during 5.5 SP1 Update"
-permalink: kb/196/Q196171/
+permalink: /kb/196/Q196171/
 ---
 
 ## Q196171: XADM: Incorrect Attempt to Update KMS during 5.5 SP1 Update

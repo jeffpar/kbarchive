@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131964: XADM: How to Update a Client Install Share with SP4"
-permalink: kb/131/Q131964/
+permalink: /kb/131/Q131964/
 ---
 
 ## Q131964: XADM: How to Update a Client Install Share with SP4

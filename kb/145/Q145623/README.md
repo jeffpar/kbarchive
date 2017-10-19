@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145623: Access Violation in LSASS.EXE On Primary Domain Controller"
-permalink: kb/145/Q145623/
+permalink: /kb/145/Q145623/
 ---
 
 ## Q145623: Access Violation in LSASS.EXE On Primary Domain Controller

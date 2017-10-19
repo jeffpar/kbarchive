@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198608: How to Modify Host Code Page for Logical Not Character"
-permalink: kb/198/Q198608/
+permalink: /kb/198/Q198608/
 ---
 
 ## Q198608: How to Modify Host Code Page for Logical Not Character

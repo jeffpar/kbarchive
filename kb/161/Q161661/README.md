@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161661: PPT: Sample Code to Copy Slides to Another Presentation"
-permalink: kb/161/Q161661/
+permalink: /kb/161/Q161661/
 ---
 
 ## Q161661: PPT: Sample Code to Copy Slides to Another Presentation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271477: WD97: Changing Relative Position Causes Shape to Jump to Top"
-permalink: kb/271/Q271477/
+permalink: /kb/271/Q271477/
 ---
 
 ## Q271477: WD97: Changing Relative Position Causes Shape to Jump to Top

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49749: NetWkstaSetUid() Returns ERROR_INVALID_PARAMETER in Error"
-permalink: kb/049/Q49749/
+permalink: /kb/049/Q49749/
 ---
 
 ## Q49749: NetWkstaSetUid() Returns ERROR_INVALID_PARAMETER in Error

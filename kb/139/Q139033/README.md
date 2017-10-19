@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139033: PC NTMMTA: Err Msg: Error OS/2 Error Code 38"
-permalink: kb/139/Q139033/
+permalink: /kb/139/Q139033/
 ---
 
 ## Q139033: PC NTMMTA: Err Msg: Error OS/2 Error Code 38

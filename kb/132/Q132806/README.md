@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132806: Persistent Connections Not Preserved on Upgrade"
-permalink: kb/132/Q132806/
+permalink: /kb/132/Q132806/
 ---
 
 ## Q132806: Persistent Connections Not Preserved on Upgrade

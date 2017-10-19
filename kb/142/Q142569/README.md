@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142569: Mac Encarta Err Msg: Encarta Cannot Play the Animation"
-permalink: kb/142/Q142569/
+permalink: /kb/142/Q142569/
 ---
 
 ## Q142569: Mac Encarta Err Msg: Encarta Cannot Play the Animation

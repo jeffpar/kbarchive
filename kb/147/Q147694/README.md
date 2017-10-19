@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147694: Clients Not Obtaining DHCP Leases Across Some Proteon Routers"
-permalink: kb/147/Q147694/
+permalink: /kb/147/Q147694/
 ---
 
 ## Q147694: Clients Not Obtaining DHCP Leases Across Some Proteon Routers

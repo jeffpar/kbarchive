@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174244: FIX: RESTORE SCREEN Causes Memory Leak in Visual FoxPro 5.0"
-permalink: kb/174/Q174244/
+permalink: /kb/174/Q174244/
 ---
 
 ## Q174244: FIX: RESTORE SCREEN Causes Memory Leak in Visual FoxPro 5.0

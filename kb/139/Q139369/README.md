@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139369: PC MMTA: Err Msg: Failure to Initialize the Modem Session"
-permalink: kb/139/Q139369/
+permalink: /kb/139/Q139369/
 ---
 
 ## Q139369: PC MMTA: Err Msg: Failure to Initialize the Modem Session

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110258: Changing Dynamic Scenery Options Has No Effect"
-permalink: kb/110/Q110258/
+permalink: /kb/110/Q110258/
 ---
 
 ## Q110258: Changing Dynamic Scenery Options Has No Effect

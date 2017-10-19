@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298559: How to Load Balance Web Traffic Between Two IIS Servers"
-permalink: kb/298/Q298559/
+permalink: /kb/298/Q298559/
 ---
 
 ## Q298559: How to Load Balance Web Traffic Between Two IIS Servers

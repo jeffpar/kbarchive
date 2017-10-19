@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169639: XADM: Public Folder Hierarchy Comes From Pub.edb"
-permalink: kb/169/Q169639/
+permalink: /kb/169/Q169639/
 ---
 
 ## Q169639: XADM: Public Folder Hierarchy Comes From Pub.edb

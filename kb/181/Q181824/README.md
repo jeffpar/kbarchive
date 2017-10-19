@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181824: XADM: Exch DB Doesn't Detect Removed Page in B-tree Split Opera"
-permalink: kb/181/Q181824/
+permalink: /kb/181/Q181824/
 ---
 
 ## Q181824: XADM: Exch DB Doesn't Detect Removed Page in B-tree Split Opera

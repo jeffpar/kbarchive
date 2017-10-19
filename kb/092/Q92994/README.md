@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92994: Supported NICs and NDIS Drivers Included with WFWG"
-permalink: kb/092/Q92994/
+permalink: /kb/092/Q92994/
 ---
 
 ## Q92994: Supported NICs and NDIS Drivers Included with WFWG

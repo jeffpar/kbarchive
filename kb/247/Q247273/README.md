@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247273: BUG: IOleObjectImpl&lt;&gt;::DoVerb Does Not Process Positive Verbs"
-permalink: kb/247/Q247273/
+permalink: /kb/247/Q247273/
 ---
 
 ## Q247273: BUG: IOleObjectImpl&lt;&gt;::DoVerb Does Not Process Positive Verbs

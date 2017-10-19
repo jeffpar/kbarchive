@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168731: No RAS-Capable Devices to Add in Remote Access Setup"
-permalink: kb/168/Q168731/
+permalink: /kb/168/Q168731/
 ---
 
 ## Q168731: No RAS-Capable Devices to Add in Remote Access Setup

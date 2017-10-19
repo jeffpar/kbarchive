@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192715: XWEB: OWA Default Time Changes Composing New Appointment"
-permalink: kb/192/Q192715/
+permalink: /kb/192/Q192715/
 ---
 
 ## Q192715: XWEB: OWA Default Time Changes Composing New Appointment

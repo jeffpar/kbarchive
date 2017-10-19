@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232447: BUG: SetPrinter() with Level 5 Fails to Change Port"
-permalink: kb/232/Q232447/
+permalink: /kb/232/Q232447/
 ---
 
 ## Q232447: BUG: SetPrinter() with Level 5 Fails to Change Port

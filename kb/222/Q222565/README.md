@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222565: SNA Server Caches User in PV Signed-On List if Attach Fails"
-permalink: kb/222/Q222565/
+permalink: /kb/222/Q222565/
 ---
 
 ## Q222565: SNA Server Caches User in PV Signed-On List if Attach Fails

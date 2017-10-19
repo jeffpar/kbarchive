@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157221: STL Sample for the Predicate Version of lower_bound Function"
-permalink: kb/157/Q157221/
+permalink: /kb/157/Q157221/
 ---
 
 ## Q157221: STL Sample for the Predicate Version of lower_bound Function

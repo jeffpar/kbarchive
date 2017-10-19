@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153216: BUG: GetRowsEx() Incorrectly Handles Null Field Values"
-permalink: kb/153/Q153216/
+permalink: /kb/153/Q153216/
 ---
 
 ## Q153216: BUG: GetRowsEx() Incorrectly Handles Null Field Values

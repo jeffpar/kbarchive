@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69301: Windows Demonstration Won't Run Full-Featured Applications"
-permalink: kb/069/Q69301/
+permalink: /kb/069/Q69301/
 ---
 
 ## Q69301: Windows Demonstration Won't Run Full-Featured Applications

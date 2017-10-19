@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190023: How to Edit the Autoexec.bat File in Microsoft Windows 98"
-permalink: kb/190/Q190023/
+permalink: /kb/190/Q190023/
 ---
 
 ## Q190023: How to Edit the Autoexec.bat File in Microsoft Windows 98

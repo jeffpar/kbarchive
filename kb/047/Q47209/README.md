@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47209: New Features for Flight Simulator Version 4.00"
-permalink: kb/047/Q47209/
+permalink: /kb/047/Q47209/
 ---
 
 ## Q47209: New Features for Flight Simulator Version 4.00

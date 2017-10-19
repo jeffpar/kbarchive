@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150330: CD-ROM Extras DMF Diskettes Folder (Directory) Listing"
-permalink: kb/150/Q150330/
+permalink: /kb/150/Q150330/
 ---
 
 ## Q150330: CD-ROM Extras DMF Diskettes Folder (Directory) Listing

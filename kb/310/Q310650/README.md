@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310650: Known Issues w/ Visual Basic T-SQL Debugger and SQL Server 2000"
-permalink: kb/310/Q310650/
+permalink: /kb/310/Q310650/
 ---
 
 ## Q310650: Known Issues w/ Visual Basic T-SQL Debugger and SQL Server 2000

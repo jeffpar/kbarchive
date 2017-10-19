@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259457: Allegiance Error Message: Failed to Connect to the Lobby"
-permalink: kb/259/Q259457/
+permalink: /kb/259/Q259457/
 ---
 
 ## Q259457: Allegiance Error Message: Failed to Connect to the Lobby

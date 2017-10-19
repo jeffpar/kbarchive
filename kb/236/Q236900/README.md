@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236900: XFOR: Notes Connector Corrupts Information During Dirsync"
-permalink: kb/236/Q236900/
+permalink: /kb/236/Q236900/
 ---
 
 ## Q236900: XFOR: Notes Connector Corrupts Information During Dirsync

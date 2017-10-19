@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189313: SMSINST: Extract Option Truncates File Names After 19 Characters"
-permalink: kb/189/Q189313/
+permalink: /kb/189/Q189313/
 ---
 
 ## Q189313: SMSINST: Extract Option Truncates File Names After 19 Characters

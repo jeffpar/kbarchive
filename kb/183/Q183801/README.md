@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183801: XFOR: Internet Mail Service Can Only Send SMTP Type Mail"
-permalink: kb/183/Q183801/
+permalink: /kb/183/Q183801/
 ---
 
 ## Q183801: XFOR: Internet Mail Service Can Only Send SMTP Type Mail

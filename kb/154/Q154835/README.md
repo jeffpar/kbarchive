@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154835: BUG: &quot;Project History Options&quot; Won't Search for Labels in File"
-permalink: kb/154/Q154835/
+permalink: /kb/154/Q154835/
 ---
 
 ## Q154835: BUG: &quot;Project History Options&quot; Won't Search for Labels in File

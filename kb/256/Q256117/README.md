@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256117: ATLComp.exe: Add Many ATL Simple Objects from ATL Object Wizard"
-permalink: kb/256/Q256117/
+permalink: /kb/256/Q256117/
 ---
 
 ## Q256117: ATLComp.exe: Add Many ATL Simple Objects from ATL Object Wizard

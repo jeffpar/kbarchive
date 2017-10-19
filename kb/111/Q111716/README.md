@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111716: How to Obtain the WinWord Converter SDK (GC1039)"
-permalink: kb/111/Q111716/
+permalink: /kb/111/Q111716/
 ---
 
 ## Q111716: How to Obtain the WinWord Converter SDK (GC1039)

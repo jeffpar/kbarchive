@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214712: XWEB: MMP Files are Locked and Cannot be Deleted"
-permalink: kb/214/Q214712/
+permalink: /kb/214/Q214712/
 ---
 
 ## Q214712: XWEB: MMP Files are Locked and Cannot be Deleted

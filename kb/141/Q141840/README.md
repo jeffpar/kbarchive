@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141840: Ml3xec16.exe Causes GP Fault in Microsoft Exchange"
-permalink: kb/141/Q141840/
+permalink: /kb/141/Q141840/
 ---
 
 ## Q141840: Ml3xec16.exe Causes GP Fault in Microsoft Exchange

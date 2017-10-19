@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184354: BUG: Working Folder for Subproject Not Inherited from Parent"
-permalink: kb/184/Q184354/
+permalink: /kb/184/Q184354/
 ---
 
 ## Q184354: BUG: Working Folder for Subproject Not Inherited from Parent

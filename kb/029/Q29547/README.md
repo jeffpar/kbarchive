@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29547: DOCERR: Initiating DDE Conversation w/ Instance of Win Excel"
-permalink: kb/029/Q29547/
+permalink: /kb/029/Q29547/
 ---
 
 ## Q29547: DOCERR: Initiating DDE Conversation w/ Instance of Win Excel

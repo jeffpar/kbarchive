@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155373: Compaq Laptops Restart Instead of Powering Down"
-permalink: kb/155/Q155373/
+permalink: /kb/155/Q155373/
 ---
 
 ## Q155373: Compaq Laptops Restart Instead of Powering Down

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131479: Unable to Change Printer Settings From Windows Applications"
-permalink: kb/131/Q131479/
+permalink: /kb/131/Q131479/
 ---
 
 ## Q131479: Unable to Change Printer Settings From Windows Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143397: &quot;ERRORCODE: 15&quot; When Logging on to Banyan VINES Server"
-permalink: kb/143/Q143397/
+permalink: /kb/143/Q143397/
 ---
 
 ## Q143397: &quot;ERRORCODE: 15&quot; When Logging on to Banyan VINES Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243777: Nothing Happens When You Click Save in &quot;Save File As&quot; Box"
-permalink: kb/243/Q243777/
+permalink: /kb/243/Q243777/
 ---
 
 ## Q243777: Nothing Happens When You Click Save in &quot;Save File As&quot; Box

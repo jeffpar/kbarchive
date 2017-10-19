@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157712: XFOR: Lowercase Address Types in Dir-Sync with Exchange"
-permalink: kb/157/Q157712/
+permalink: /kb/157/Q157712/
 ---
 
 ## Q157712: XFOR: Lowercase Address Types in Dir-Sync with Exchange

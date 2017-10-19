@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119265: Artist: Distorted Output to Color StyleWriter"
-permalink: kb/119/Q119265/
+permalink: /kb/119/Q119265/
 ---
 
 ## Q119265: Artist: Distorted Output to Color StyleWriter

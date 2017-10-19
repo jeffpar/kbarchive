@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316352: HOW TO: Configure a Separator Page in Windows NT 4.0"
-permalink: kb/316/Q316352/
+permalink: /kb/316/Q316352/
 ---
 
 ## Q316352: HOW TO: Configure a Separator Page in Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129866: Use of Long Names"
-permalink: kb/129/Q129866/
+permalink: /kb/129/Q129866/
 ---
 
 ## Q129866: Use of Long Names

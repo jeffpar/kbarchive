@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127161: Unable to Connect to Apple Printer Shares"
-permalink: kb/127/Q127161/
+permalink: /kb/127/Q127161/
 ---
 
 ## Q127161: Unable to Connect to Apple Printer Shares

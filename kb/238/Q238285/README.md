@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238285: XFOR: GroupWise Migration Fails with Event ID 4012"
-permalink: kb/238/Q238285/
+permalink: /kb/238/Q238285/
 ---
 
 ## Q238285: XFOR: GroupWise Migration Fails with Event ID 4012

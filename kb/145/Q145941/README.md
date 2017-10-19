@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145941: Cannot Boot to MS-DOS On a Windows NT Mirrored FAT Partition"
-permalink: kb/145/Q145941/
+permalink: /kb/145/Q145941/
 ---
 
 ## Q145941: Cannot Boot to MS-DOS On a Windows NT Mirrored FAT Partition

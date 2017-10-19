@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318479: SMS: Err Msg: Cannot Start SMS_Key_Creation_Service, Error..."
-permalink: kb/318/Q318479/
+permalink: /kb/318/Q318479/
 ---
 
 ## Q318479: SMS: Err Msg: Cannot Start SMS_Key_Creation_Service, Error...

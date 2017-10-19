@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238941: Dcomcnfg Changes the &quot;Logon As&quot; Type on Service's Identity Tab"
-permalink: kb/238/Q238941/
+permalink: /kb/238/Q238941/
 ---
 
 ## Q238941: Dcomcnfg Changes the &quot;Logon As&quot; Type on Service's Identity Tab

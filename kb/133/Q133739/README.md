@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133739: PRB: Order of Read Level Clauses Different in Visual FoxPro"
-permalink: kb/133/Q133739/
+permalink: /kb/133/Q133739/
 ---
 
 ## Q133739: PRB: Order of Read Level Clauses Different in Visual FoxPro

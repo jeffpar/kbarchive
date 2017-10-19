@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97303: ToolBar.exe Demonstrates Creating a Toolbar"
-permalink: kb/097/Q97303/
+permalink: /kb/097/Q97303/
 ---
 
 ## Q97303: ToolBar.exe Demonstrates Creating a Toolbar

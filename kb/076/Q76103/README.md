@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76103: HOWTO: Guidelines for Allocating Instance (Per-Window) Data"
-permalink: kb/076/Q76103/
+permalink: /kb/076/Q76103/
 ---
 
 ## Q76103: HOWTO: Guidelines for Allocating Instance (Per-Window) Data

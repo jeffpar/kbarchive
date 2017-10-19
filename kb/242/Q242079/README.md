@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242079: Err Msg: Operation Could Not Be Completed. The RPC Server Is..."
-permalink: kb/242/Q242079/
+permalink: /kb/242/Q242079/
 ---
 
 ## Q242079: Err Msg: Operation Could Not Be Completed. The RPC Server Is...

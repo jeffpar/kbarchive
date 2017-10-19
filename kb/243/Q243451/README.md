@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243451: INFO: C++ Standard Noncompliance Issues with Visual C++ .Net"
-permalink: kb/243/Q243451/
+permalink: /kb/243/Q243451/
 ---
 
 ## Q243451: INFO: C++ Standard Noncompliance Issues with Visual C++ .Net

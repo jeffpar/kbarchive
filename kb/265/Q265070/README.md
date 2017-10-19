@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265070: XCLN: Error Message Occurs When You Reply to Or Forward E-mail"
-permalink: kb/265/Q265070/
+permalink: /kb/265/Q265070/
 ---
 
 ## Q265070: XCLN: Error Message Occurs When You Reply to Or Forward E-mail

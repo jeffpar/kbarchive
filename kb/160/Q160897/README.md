@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160897: NWRedir Reports Incorrect Free Space If Limited by Admin"
-permalink: kb/160/Q160897/
+permalink: /kb/160/Q160897/
 ---
 
 ## Q160897: NWRedir Reports Incorrect Free Space If Limited by Admin

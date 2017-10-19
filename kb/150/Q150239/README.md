@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150239: PRB: Option Button TabStop Property Is Set to True at Run-time"
-permalink: kb/150/Q150239/
+permalink: /kb/150/Q150239/
 ---
 
 ## Q150239: PRB: Option Button TabStop Property Is Set to True at Run-time

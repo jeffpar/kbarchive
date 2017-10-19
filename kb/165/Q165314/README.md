@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165314: Grace Logon Remaining Is Not Decremented When Logging to BDC"
-permalink: kb/165/Q165314/
+permalink: /kb/165/Q165314/
 ---
 
 ## Q165314: Grace Logon Remaining Is Not Decremented When Logging to BDC

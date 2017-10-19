@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119070: Using More Than Three Printer Ports with Novell 4.x &amp; Windows"
-permalink: kb/119/Q119070/
+permalink: /kb/119/Q119070/
 ---
 
 ## Q119070: Using More Than Three Printer Ports with Novell 4.x &amp; Windows

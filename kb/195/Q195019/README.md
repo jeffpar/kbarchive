@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195019: FIX: Checking Out a .frm File Without a .vbp File Causes GPF"
-permalink: kb/195/Q195019/
+permalink: /kb/195/Q195019/
 ---
 
 ## Q195019: FIX: Checking Out a .frm File Without a .vbp File Causes GPF

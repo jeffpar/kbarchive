@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147426: PRB: DoSuperclassPaint Calls WM_PRINT for Windows 95"
-permalink: kb/147/Q147426/
+permalink: /kb/147/Q147426/
 ---
 
 ## Q147426: PRB: DoSuperclassPaint Calls WM_PRINT for Windows 95

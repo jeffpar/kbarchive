@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90393: WD97: How to Use Nested IF Fields in a Mail Merge Document"
-permalink: kb/090/Q90393/
+permalink: /kb/090/Q90393/
 ---
 
 ## Q90393: WD97: How to Use Nested IF Fields in a Mail Merge Document

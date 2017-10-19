@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135558: PPT: Breaking Link to Embedded Object Converts Object to Picture"
-permalink: kb/135/Q135558/
+permalink: /kb/135/Q135558/
 ---
 
 ## Q135558: PPT: Breaking Link to Embedded Object Converts Object to Picture

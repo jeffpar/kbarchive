@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159111: Multiprocessor Computer Hangs Under Stress Using Halsp.dll"
-permalink: kb/159/Q159111/
+permalink: /kb/159/Q159111/
 ---
 
 ## Q159111: Multiprocessor Computer Hangs Under Stress Using Halsp.dll

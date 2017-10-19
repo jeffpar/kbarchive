@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165739: WD97: How Word Determines the Name of a Saved Version"
-permalink: kb/165/Q165739/
+permalink: /kb/165/Q165739/
 ---
 
 ## Q165739: WD97: How Word Determines the Name of a Saved Version

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181899: PRB: Multiple E-mail Attachments Cause Error with MSMAPI OCX"
-permalink: kb/181/Q181899/
+permalink: /kb/181/Q181899/
 ---
 
 ## Q181899: PRB: Multiple E-mail Attachments Cause Error with MSMAPI OCX

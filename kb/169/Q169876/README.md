@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169876: WD97: Width of Pasted Table Cell Changes to Width of Column One"
-permalink: kb/169/Q169876/
+permalink: /kb/169/Q169876/
 ---
 
 ## Q169876: WD97: Width of Pasted Table Cell Changes to Width of Column One

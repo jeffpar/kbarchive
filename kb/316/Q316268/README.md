@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316268: INFO: Product Key For Products from Subscriber Downloads Site"
-permalink: kb/316/Q316268/
+permalink: /kb/316/Q316268/
 ---
 
 ## Q316268: INFO: Product Key For Products from Subscriber Downloads Site

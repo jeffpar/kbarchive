@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214685: XFOR: CDONTS Not Thread-Safe, Crashes Under Stress"
-permalink: kb/214/Q214685/
+permalink: /kb/214/Q214685/
 ---
 
 ## Q214685: XFOR: CDONTS Not Thread-Safe, Crashes Under Stress

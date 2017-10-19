@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168559: ERR: Cannot Copy Ntdetect.com or Ntldr During WinNT Install"
-permalink: kb/168/Q168559/
+permalink: /kb/168/Q168559/
 ---
 
 ## Q168559: ERR: Cannot Copy Ntdetect.com or Ntldr During WinNT Install

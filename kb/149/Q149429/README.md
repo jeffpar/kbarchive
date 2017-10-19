@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149429: INFO: What Is an OCA file?"
-permalink: kb/149/Q149429/
+permalink: /kb/149/Q149429/
 ---
 
 ## Q149429: INFO: What Is an OCA file?

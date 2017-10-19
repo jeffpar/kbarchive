@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156979: Natural Keyboard Context Sensitive Key Not Working in Wordpad"
-permalink: kb/156/Q156979/
+permalink: /kb/156/Q156979/
 ---
 
 ## Q156979: Natural Keyboard Context Sensitive Key Not Working in Wordpad

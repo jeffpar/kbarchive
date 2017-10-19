@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167132: XADM: Access Violation in Store.exe After Upgrading to SP4"
-permalink: kb/167/Q167132/
+permalink: /kb/167/Q167132/
 ---
 
 ## Q167132: XADM: Access Violation in Store.exe After Upgrading to SP4

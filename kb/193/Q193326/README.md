@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193326: BUG: Data Form Wizard Through Application Wizard Omits ADO Refer"
-permalink: kb/193/Q193326/
+permalink: /kb/193/Q193326/
 ---
 
 ## Q193326: BUG: Data Form Wizard Through Application Wizard Omits ADO Refer

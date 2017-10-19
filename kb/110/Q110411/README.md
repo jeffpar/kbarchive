@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110411: BUG: &quot;Invalid Excel File Format&quot; with IMPORT Command"
-permalink: kb/110/Q110411/
+permalink: /kb/110/Q110411/
 ---
 
 ## Q110411: BUG: &quot;Invalid Excel File Format&quot; with IMPORT Command

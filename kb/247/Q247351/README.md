@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247351: User Variables Not Passed to Out-of-Process COM Objects"
-permalink: kb/247/Q247351/
+permalink: /kb/247/Q247351/
 ---
 
 ## Q247351: User Variables Not Passed to Out-of-Process COM Objects

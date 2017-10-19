@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222953: Problem When Uninstalling Service Pack 3 on Localized Windows NT"
-permalink: kb/222/Q222953/
+permalink: /kb/222/Q222953/
 ---
 
 ## Q222953: Problem When Uninstalling Service Pack 3 on Localized Windows NT

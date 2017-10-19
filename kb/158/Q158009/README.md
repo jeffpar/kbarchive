@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158009: WD97: Error Message: An Error Occurred While Importing This File"
-permalink: kb/158/Q158009/
+permalink: /kb/158/Q158009/
 ---
 
 ## Q158009: WD97: Error Message: An Error Occurred While Importing This File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119572: WFWG: Printer Alerts Not Received with WinPopUp"
-permalink: kb/119/Q119572/
+permalink: /kb/119/Q119572/
 ---
 
 ## Q119572: WFWG: Printer Alerts Not Received with WinPopUp

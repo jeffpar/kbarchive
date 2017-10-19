@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267238: XADM: Directory Service Does Not Start After Restore Operation"
-permalink: kb/267/Q267238/
+permalink: /kb/267/Q267238/
 ---
 
 ## Q267238: XADM: Directory Service Does Not Start After Restore Operation

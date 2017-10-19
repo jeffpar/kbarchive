@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149273: BUG: Form Key Events Fire Twice with Some Controls"
-permalink: kb/149/Q149273/
+permalink: /kb/149/Q149273/
 ---
 
 ## Q149273: BUG: Form Key Events Fire Twice with Some Controls

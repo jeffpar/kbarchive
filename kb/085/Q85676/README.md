@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85676: Windows Help and Help Compiler Capacity Limits"
-permalink: kb/085/Q85676/
+permalink: /kb/085/Q85676/
 ---
 
 ## Q85676: Windows Help and Help Compiler Capacity Limits

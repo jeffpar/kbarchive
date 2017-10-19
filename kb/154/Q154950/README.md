@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154950: SPX Header Not Available for a Terminate Packet"
-permalink: kb/154/Q154950/
+permalink: /kb/154/Q154950/
 ---
 
 ## Q154950: SPX Header Not Available for a Terminate Packet

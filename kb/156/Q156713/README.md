@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156713: XADM: KM Server Stops Intermittently on Alpha Servers"
-permalink: kb/156/Q156713/
+permalink: /kb/156/Q156713/
 ---
 
 ## Q156713: XADM: KM Server Stops Intermittently on Alpha Servers

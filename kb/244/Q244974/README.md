@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244974: List of Bugs Fixed in Windows NT 4.0 Service Pack 5 (Part 2)"
-permalink: kb/244/Q244974/
+permalink: /kb/244/Q244974/
 ---
 
 ## Q244974: List of Bugs Fixed in Windows NT 4.0 Service Pack 5 (Part 2)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201111: XFOR: Linkini.hlp Contains Information for Exchconn.ini file"
-permalink: kb/201/Q201111/
+permalink: /kb/201/Q201111/
 ---
 
 ## Q201111: XFOR: Linkini.hlp Contains Information for Exchconn.ini file

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140681: Incomplete SQL Server Upgrade Causes Problems Creating Jobs"
-permalink: kb/140/Q140681/
+permalink: /kb/140/Q140681/
 ---
 
 ## Q140681: Incomplete SQL Server Upgrade Causes Problems Creating Jobs

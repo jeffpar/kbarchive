@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77722: Vertisoft Double Disk Compatible with MS-DOS"
-permalink: kb/077/Q77722/
+permalink: /kb/077/Q77722/
 ---
 
 ## Q77722: Vertisoft Double Disk Compatible with MS-DOS

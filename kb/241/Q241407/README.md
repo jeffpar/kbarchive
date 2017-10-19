@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241407: Files on an FTP Server Can Be Improperly Accessed"
-permalink: kb/241/Q241407/
+permalink: /kb/241/Q241407/
 ---
 
 ## Q241407: Files on an FTP Server Can Be Improperly Accessed

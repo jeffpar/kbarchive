@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86358: NETWORKS.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade"
-permalink: kb/086/Q86358/
+permalink: /kb/086/Q86358/
 ---
 
 ## Q86358: NETWORKS.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120942: Command Line Does Not Update Print Manager"
-permalink: kb/120/Q120942/
+permalink: /kb/120/Q120942/
 ---
 
 ## Q120942: Command Line Does Not Update Print Manager

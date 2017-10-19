@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140189: PC Win: Err Msg: STOP: Some Names Could Not Be Matched..."
-permalink: kb/140/Q140189/
+permalink: /kb/140/Q140189/
 ---
 
 ## Q140189: PC Win: Err Msg: STOP: Some Names Could Not Be Matched...

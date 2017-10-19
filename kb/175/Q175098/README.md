@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175098: XADM: Unexpected Error Occurs During Upgrade or Installation"
-permalink: kb/175/Q175098/
+permalink: /kb/175/Q175098/
 ---
 
 ## Q175098: XADM: Unexpected Error Occurs During Upgrade or Installation

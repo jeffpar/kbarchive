@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186570: Terminal Server Setup"
-permalink: kb/186/Q186570/
+permalink: /kb/186/Q186570/
 ---
 
 ## Q186570: Terminal Server Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216976: How to Change the Drive Letter Used for ROOTDRIVE"
-permalink: kb/216/Q216976/
+permalink: /kb/216/Q216976/
 ---
 
 ## Q216976: How to Change the Drive Letter Used for ROOTDRIVE

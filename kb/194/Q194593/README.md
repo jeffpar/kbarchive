@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194593: Print Sessions May Fail to Start When Using Host Print Service"
-permalink: kb/194/Q194593/
+permalink: /kb/194/Q194593/
 ---
 
 ## Q194593: Print Sessions May Fail to Start When Using Host Print Service

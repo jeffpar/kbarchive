@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166589: XFOR: Microsoft Mail Connector Fails When Sending an Attachment"
-permalink: kb/166/Q166589/
+permalink: /kb/166/Q166589/
 ---
 
 ## Q166589: XFOR: Microsoft Mail Connector Fails When Sending an Attachment

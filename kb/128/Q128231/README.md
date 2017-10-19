@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128231: WIN 3.1x: VIDC Entries in SYSTEM.INI and Descriptions"
-permalink: kb/128/Q128231/
+permalink: /kb/128/Q128231/
 ---
 
 ## Q128231: WIN 3.1x: VIDC Entries in SYSTEM.INI and Descriptions

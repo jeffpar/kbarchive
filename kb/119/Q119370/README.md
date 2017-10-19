@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119370: Creating Customized Configuration Defaults for TCP/IP-32"
-permalink: kb/119/Q119370/
+permalink: /kb/119/Q119370/
 ---
 
 ## Q119370: Creating Customized Configuration Defaults for TCP/IP-32

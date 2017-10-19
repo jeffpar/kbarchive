@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189215: Running Windows 98: E-Book Setup Label Incorrect"
-permalink: kb/189/Q189215/
+permalink: /kb/189/Q189215/
 ---
 
 ## Q189215: Running Windows 98: E-Book Setup Label Incorrect

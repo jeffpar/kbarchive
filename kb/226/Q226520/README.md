@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226520: NTFS Formatted Removable Media Write Operations Extremely Slow"
-permalink: kb/226/Q226520/
+permalink: /kb/226/Q226520/
 ---
 
 ## Q226520: NTFS Formatted Removable Media Write Operations Extremely Slow

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154622: Bookshelf '95: Program Hangs Printing to Epson Stylus Color II"
-permalink: kb/154/Q154622/
+permalink: /kb/154/Q154622/
 ---
 
 ## Q154622: Bookshelf '95: Program Hangs Printing to Epson Stylus Color II

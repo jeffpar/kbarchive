@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194953: INFO: Facts About WinInet API Support on Windows CE OS"
-permalink: kb/194/Q194953/
+permalink: /kb/194/Q194953/
 ---
 
 ## Q194953: INFO: Facts About WinInet API Support on Windows CE OS

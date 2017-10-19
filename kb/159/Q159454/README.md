@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159454: How to Determine a Server Down (Sev A) Situation for IIS"
-permalink: kb/159/Q159454/
+permalink: /kb/159/Q159454/
 ---
 
 ## Q159454: How to Determine a Server Down (Sev A) Situation for IIS

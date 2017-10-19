@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307550: INFO: ActiveX Controls Supported by Visual FoxPro 7.0"
-permalink: kb/307/Q307550/
+permalink: /kb/307/Q307550/
 ---
 
 ## Q307550: INFO: ActiveX Controls Supported by Visual FoxPro 7.0

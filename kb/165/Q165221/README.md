@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165221: 3270 Applet Displays a Message if Preferred LU Not Available"
-permalink: kb/165/Q165221/
+permalink: /kb/165/Q165221/
 ---
 
 ## Q165221: 3270 Applet Displays a Message if Preferred LU Not Available

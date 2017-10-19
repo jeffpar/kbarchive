@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199133: Adding Application Mapping Returns File Path Error"
-permalink: kb/199/Q199133/
+permalink: /kb/199/Q199133/
 ---
 
 ## Q199133: Adding Application Mapping Returns File Path Error

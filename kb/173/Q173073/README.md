@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173073: SMS: Package Is Currently Being Installed in the Background"
-permalink: kb/173/Q173073/
+permalink: /kb/173/Q173073/
 ---
 
 ## Q173073: SMS: Package Is Currently Being Installed in the Background

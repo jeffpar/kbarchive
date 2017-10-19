@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257467: HOWTO: Remove FTM Code Added by ATL Object Wizard"
-permalink: kb/257/Q257467/
+permalink: /kb/257/Q257467/
 ---
 
 ## Q257467: HOWTO: Remove FTM Code Added by ATL Object Wizard

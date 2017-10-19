@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142156: PRB: Cannot See Objects on Back Tabs If Using VB SSTAB Control"
-permalink: kb/142/Q142156/
+permalink: /kb/142/Q142156/
 ---
 
 ## Q142156: PRB: Cannot See Objects on Back Tabs If Using VB SSTAB Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217017: INFO: Visual Basic 5.0 and 6.0 Compatibility Issues"
-permalink: kb/217/Q217017/
+permalink: /kb/217/Q217017/
 ---
 
 ## Q217017: INFO: Visual Basic 5.0 and 6.0 Compatibility Issues

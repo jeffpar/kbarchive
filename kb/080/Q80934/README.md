@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80934: Common Dialog Custom Control: FilterIndex Can Be Negative"
-permalink: kb/080/Q80934/
+permalink: /kb/080/Q80934/
 ---
 
 ## Q80934: Common Dialog Custom Control: FilterIndex Can Be Negative

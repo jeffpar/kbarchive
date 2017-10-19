@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91006: Packing List: Windows 3.1 SDK Part 5 (5.25-Inch Disks)"
-permalink: kb/091/Q91006/
+permalink: /kb/091/Q91006/
 ---
 
 ## Q91006: Packing List: Windows 3.1 SDK Part 5 (5.25-Inch Disks)

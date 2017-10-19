@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107807: How to Center a Screen in FoxBASE+/Mac"
-permalink: kb/107/Q107807/
+permalink: /kb/107/Q107807/
 ---
 
 ## Q107807: How to Center a Screen in FoxBASE+/Mac

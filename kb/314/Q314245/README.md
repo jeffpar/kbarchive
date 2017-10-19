@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314245: Flight Simulator 2002: Err Msg: Font &quot;Quartz&quot;(-22) Isn't Found"
-permalink: kb/314/Q314245/
+permalink: /kb/314/Q314245/
 ---
 
 ## Q314245: Flight Simulator 2002: Err Msg: Font &quot;Quartz&quot;(-22) Isn't Found

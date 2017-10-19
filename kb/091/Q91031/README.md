@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91031: WD97: NUMPAGES Field Does Not Work During Mail Merge"
-permalink: kb/091/Q91031/
+permalink: /kb/091/Q91031/
 ---
 
 ## Q91031: WD97: NUMPAGES Field Does Not Work During Mail Merge

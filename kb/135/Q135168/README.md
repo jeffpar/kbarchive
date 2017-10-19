@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135168: PCMCIA Disk Drive Not Available in Windows 95"
-permalink: kb/135/Q135168/
+permalink: /kb/135/Q135168/
 ---
 
 ## Q135168: PCMCIA Disk Drive Not Available in Windows 95

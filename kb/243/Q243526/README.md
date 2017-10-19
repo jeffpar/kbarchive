@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243526: DOC: Usage of BufferLength in SQLGetDiagRecW"
-permalink: kb/243/Q243526/
+permalink: /kb/243/Q243526/
 ---
 
 ## Q243526: DOC: Usage of BufferLength in SQLGetDiagRecW

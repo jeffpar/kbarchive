@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87033: SMTP: How to Backbone Over SMTP"
-permalink: kb/087/Q87033/
+permalink: /kb/087/Q87033/
 ---
 
 ## Q87033: SMTP: How to Backbone Over SMTP

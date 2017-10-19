@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151092: PRB: Mismatched Pushjmp/Popjmp Call Message from Modify Form"
-permalink: kb/151/Q151092/
+permalink: /kb/151/Q151092/
 ---
 
 ## Q151092: PRB: Mismatched Pushjmp/Popjmp Call Message from Modify Form

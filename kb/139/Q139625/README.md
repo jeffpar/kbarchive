@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139625: HOWTO: Use and Call the GetUserName API"
-permalink: kb/139/Q139625/
+permalink: /kb/139/Q139625/
 ---
 
 ## Q139625: HOWTO: Use and Call the GetUserName API

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159286: XCON: Messages Sent w/AppleSingle File Attachments Get Stuck"
-permalink: kb/159/Q159286/
+permalink: /kb/159/Q159286/
 ---
 
 ## Q159286: XCON: Messages Sent w/AppleSingle File Attachments Get Stuck

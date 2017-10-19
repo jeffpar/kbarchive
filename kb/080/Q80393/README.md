@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80393: How to Rebuild the Default Windows REG.DAT File"
-permalink: kb/080/Q80393/
+permalink: /kb/080/Q80393/
 ---
 
 ## Q80393: How to Rebuild the Default Windows REG.DAT File

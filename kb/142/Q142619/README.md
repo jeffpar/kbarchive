@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142619: Unattended Setup of Network Cards from Drvlib"
-permalink: kb/142/Q142619/
+permalink: /kb/142/Q142619/
 ---
 
 ## Q142619: Unattended Setup of Network Cards from Drvlib

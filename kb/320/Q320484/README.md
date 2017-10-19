@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320484: XCCC: &quot;HTTP 500.x&quot; Error Messages in Outlook Web Access 5.5"
-permalink: kb/320/Q320484/
+permalink: /kb/320/Q320484/
 ---
 
 ## Q320484: XCCC: &quot;HTTP 500.x&quot; Error Messages in Outlook Web Access 5.5

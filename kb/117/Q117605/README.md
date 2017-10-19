@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117605: Printer Names May Change When Administered Remotely"
-permalink: kb/117/Q117605/
+permalink: /kb/117/Q117605/
 ---
 
 ## Q117605: Printer Names May Change When Administered Remotely

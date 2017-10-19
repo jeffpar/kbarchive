@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180787: PRB: Explicitly Referring to Variables in a Module Causes Error"
-permalink: kb/180/Q180787/
+permalink: /kb/180/Q180787/
 ---
 
 ## Q180787: PRB: Explicitly Referring to Variables in a Module Causes Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102923: STB WIND/X Video Card Interferes with COM4 Serial Port"
-permalink: kb/102/Q102923/
+permalink: /kb/102/Q102923/
 ---
 
 ## Q102923: STB WIND/X Video Card Interferes with COM4 Serial Port

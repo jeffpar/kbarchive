@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196699: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder Before VFP6"
-permalink: kb/196/Q196699/
+permalink: /kb/196/Q196699/
 ---
 
 ## Q196699: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder Before VFP6

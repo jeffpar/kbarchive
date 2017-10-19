@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181154: DRW98: Microsoft Draw 98 Available for Download"
-permalink: kb/181/Q181154/
+permalink: /kb/181/Q181154/
 ---
 
 ## Q181154: DRW98: Microsoft Draw 98 Available for Download

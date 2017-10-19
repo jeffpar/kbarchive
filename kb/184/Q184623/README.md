@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184623: XFOR: Keeping Notes Users and Groups Out of Dirsync"
-permalink: kb/184/Q184623/
+permalink: /kb/184/Q184623/
 ---
 
 ## Q184623: XFOR: Keeping Notes Users and Groups Out of Dirsync

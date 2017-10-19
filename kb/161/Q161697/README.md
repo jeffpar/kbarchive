@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161697: SMS: Chat Window Shows &quot;Unknown&quot; for User"
-permalink: kb/161/Q161697/
+permalink: /kb/161/Q161697/
 ---
 
 ## Q161697: SMS: Chat Window Shows &quot;Unknown&quot; for User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150156: XCLN: Cannot Send from Word When Exchange Client not Running"
-permalink: kb/150/Q150156/
+permalink: /kb/150/Q150156/
 ---
 
 ## Q150156: XCLN: Cannot Send from Word When Exchange Client not Running

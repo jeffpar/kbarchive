@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247969: Windows 95 OSR2.x Support for External USB Hubs"
-permalink: kb/247/Q247969/
+permalink: /kb/247/Q247969/
 ---
 
 ## Q247969: Windows 95 OSR2.x Support for External USB Hubs

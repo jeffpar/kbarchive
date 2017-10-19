@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108732: X400: Address Syntax"
-permalink: kb/108/Q108732/
+permalink: /kb/108/Q108732/
 ---
 
 ## Q108732: X400: Address Syntax

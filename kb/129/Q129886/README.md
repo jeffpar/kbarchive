@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129886: HOWTO: Optimize OLE Calls in Visual Basic"
-permalink: kb/129/Q129886/
+permalink: /kb/129/Q129886/
 ---
 
 ## Q129886: HOWTO: Optimize OLE Calls in Visual Basic

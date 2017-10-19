@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170416: ZAK Users Cannot Shut Down the Workstation"
-permalink: kb/170/Q170416/
+permalink: /kb/170/Q170416/
 ---
 
 ## Q170416: ZAK Users Cannot Shut Down the Workstation

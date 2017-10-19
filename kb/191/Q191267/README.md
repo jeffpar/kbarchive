@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191267: XFOR: IMC Won't Identify Which Server Produced Postmaster NDR"
-permalink: kb/191/Q191267/
+permalink: /kb/191/Q191267/
 ---
 
 ## Q191267: XFOR: IMC Won't Identify Which Server Produced Postmaster NDR

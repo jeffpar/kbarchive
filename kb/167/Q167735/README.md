@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167735: FIX: Setting Printer to Item in the Printers Collection Fails"
-permalink: kb/167/Q167735/
+permalink: /kb/167/Q167735/
 ---
 
 ## Q167735: FIX: Setting Printer to Item in the Printers Collection Fails

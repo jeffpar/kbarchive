@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154708: XCLN: Inbox Rules Cannot be Modified on Macintosh Client"
-permalink: kb/154/Q154708/
+permalink: /kb/154/Q154708/
 ---
 
 ## Q154708: XCLN: Inbox Rules Cannot be Modified on Macintosh Client

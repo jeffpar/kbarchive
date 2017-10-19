@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177837: SMSINST: SMS Installer Ignores REG_NONE Key Changes"
-permalink: kb/177/Q177837/
+permalink: /kb/177/Q177837/
 ---
 
 ## Q177837: SMSINST: SMS Installer Ignores REG_NONE Key Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202000: SMS: Discovery and Inventory for NetWare Servers in SMS 2.0"
-permalink: kb/202/Q202000/
+permalink: /kb/202/Q202000/
 ---
 
 ## Q202000: SMS: Discovery and Inventory for NetWare Servers in SMS 2.0

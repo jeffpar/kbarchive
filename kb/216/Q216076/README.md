@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216076: XADM: Information Store Folders May Become Slow and Unresponsive"
-permalink: kb/216/Q216076/
+permalink: /kb/216/Q216076/
 ---
 
 ## Q216076: XADM: Information Store Folders May Become Slow and Unresponsive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119329: INFO: AppWizard and Precompiled Header Files"
-permalink: kb/119/Q119329/
+permalink: /kb/119/Q119329/
 ---
 
 ## Q119329: INFO: AppWizard and Precompiled Header Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95779: WFWG Err Msg: Cannot Install Protected Mode Mapping"
-permalink: kb/095/Q95779/
+permalink: /kb/095/Q95779/
 ---
 
 ## Q95779: WFWG Err Msg: Cannot Install Protected Mode Mapping

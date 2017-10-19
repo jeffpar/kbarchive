@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139316: PC Gen: Mail 3.5 Server Upgrade Kit includes WGPO Upgrade"
-permalink: kb/139/Q139316/
+permalink: /kb/139/Q139316/
 ---
 
 ## Q139316: PC Gen: Mail 3.5 Server Upgrade Kit includes WGPO Upgrade

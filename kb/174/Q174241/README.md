@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174241: MSN Setup Stops Responding While Downloading Components"
-permalink: kb/174/Q174241/
+permalink: /kb/174/Q174241/
 ---
 
 ## Q174241: MSN Setup Stops Responding While Downloading Components

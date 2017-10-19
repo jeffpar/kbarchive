@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136786: XCON: IMC Sends NDR and OOF Messages to Bulk Mailing Lists"
-permalink: kb/136/Q136786/
+permalink: /kb/136/Q136786/
 ---
 
 ## Q136786: XCON: IMC Sends NDR and OOF Messages to Bulk Mailing Lists

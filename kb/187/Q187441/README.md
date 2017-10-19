@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187441: Unable to Change Number of Colors"
-permalink: kb/187/Q187441/
+permalink: /kb/187/Q187441/
 ---
 
 ## Q187441: Unable to Change Number of Colors

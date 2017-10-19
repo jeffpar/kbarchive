@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297094: Command-Line Options Available to Install MMC versions 1.1a/1.2"
-permalink: kb/297/Q297094/
+permalink: /kb/297/Q297094/
 ---
 
 ## Q297094: Command-Line Options Available to Install MMC versions 1.1a/1.2

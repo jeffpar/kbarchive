@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253297: XADM: Discussion of Public Folders and Temporary Replicas"
-permalink: kb/253/Q253297/
+permalink: /kb/253/Q253297/
 ---
 
 ## Q253297: XADM: Discussion of Public Folders and Temporary Replicas

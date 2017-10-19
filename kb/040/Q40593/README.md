@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40593: INFO: Misspelling &quot;Default&quot; Gives No Error"
-permalink: kb/040/Q40593/
+permalink: /kb/040/Q40593/
 ---
 
 ## Q40593: INFO: Misspelling &quot;Default&quot; Gives No Error

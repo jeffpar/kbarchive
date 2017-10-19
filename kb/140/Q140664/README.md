@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140664: Macintosh Multimedia: Troubleshooting Sound Problems"
-permalink: kb/140/Q140664/
+permalink: /kb/140/Q140664/
 ---
 
 ## Q140664: Macintosh Multimedia: Troubleshooting Sound Problems

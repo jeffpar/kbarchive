@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253667: Err Msg: HTTP 401.2 - Unauthorized: Logon Failed Due to..."
-permalink: kb/253/Q253667/
+permalink: /kb/253/Q253667/
 ---
 
 ## Q253667: Err Msg: HTTP 401.2 - Unauthorized: Logon Failed Due to...

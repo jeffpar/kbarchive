@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158251: BUG: Incorrect Group Header Information in Report"
-permalink: kb/158/Q158251/
+permalink: /kb/158/Q158251/
 ---
 
 ## Q158251: BUG: Incorrect Group Header Information in Report

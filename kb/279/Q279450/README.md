@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279450: MSN Companion supported file formats"
-permalink: kb/279/Q279450/
+permalink: /kb/279/Q279450/
 ---
 
 ## Q279450: MSN Companion supported file formats

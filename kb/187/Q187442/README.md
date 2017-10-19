@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187442: Unable to Create a New Session"
-permalink: kb/187/Q187442/
+permalink: /kb/187/Q187442/
 ---
 
 ## Q187442: Unable to Create a New Session

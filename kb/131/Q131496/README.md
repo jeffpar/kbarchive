@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131496: DEC Etherworks Turbo /TP Not Detected During Setup"
-permalink: kb/131/Q131496/
+permalink: /kb/131/Q131496/
 ---
 
 ## Q131496: DEC Etherworks Turbo /TP Not Detected During Setup

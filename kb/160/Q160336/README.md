@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160336: Shortcut to Frame in a Show May Not Work Correctly"
-permalink: kb/160/Q160336/
+permalink: /kb/160/Q160336/
 ---
 
 ## Q160336: Shortcut to Frame in a Show May Not Work Correctly

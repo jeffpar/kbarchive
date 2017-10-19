@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133401: XFOR: Connector MTA Appears to Collect Mail It Shouldn't"
-permalink: kb/133/Q133401/
+permalink: /kb/133/Q133401/
 ---
 
 ## Q133401: XFOR: Connector MTA Appears to Collect Mail It Shouldn't

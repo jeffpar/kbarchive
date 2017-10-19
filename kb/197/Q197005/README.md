@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197005: Encarta 99 Standard Edition: Article Is Not Read Aloud"
-permalink: kb/197/Q197005/
+permalink: /kb/197/Q197005/
 ---
 
 ## Q197005: Encarta 99 Standard Edition: Article Is Not Read Aloud

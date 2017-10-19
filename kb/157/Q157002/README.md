@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157002: XCLN: Attachments Might be Lost When Moving from OST to Server"
-permalink: kb/157/Q157002/
+permalink: /kb/157/Q157002/
 ---
 
 ## Q157002: XCLN: Attachments Might be Lost When Moving from OST to Server

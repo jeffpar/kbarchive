@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255682: XFOR: Connector for Lotus Notes Does Not Support Encryption"
-permalink: kb/255/Q255682/
+permalink: /kb/255/Q255682/
 ---
 
 ## Q255682: XFOR: Connector for Lotus Notes Does Not Support Encryption

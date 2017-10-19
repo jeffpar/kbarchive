@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129016: How to Register Your Third-Party Wizards"
-permalink: kb/129/Q129016/
+permalink: /kb/129/Q129016/
 ---
 
 ## Q129016: How to Register Your Third-Party Wizards

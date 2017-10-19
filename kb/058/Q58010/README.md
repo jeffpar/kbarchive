@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58010: WDEB386 Debugger's Use of COM Port"
-permalink: kb/058/Q58010/
+permalink: /kb/058/Q58010/
 ---
 
 ## Q58010: WDEB386 Debugger's Use of COM Port

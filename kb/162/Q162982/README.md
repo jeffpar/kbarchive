@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162982: WD97: Appearance of Document Not Refreshed Saving as HTML"
-permalink: kb/162/Q162982/
+permalink: /kb/162/Q162982/
 ---
 
 ## Q162982: WD97: Appearance of Document Not Refreshed Saving as HTML

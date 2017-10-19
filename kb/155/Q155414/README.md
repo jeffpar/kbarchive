@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155414: XADM: Bulk Import/Export FAQ"
-permalink: kb/155/Q155414/
+permalink: /kb/155/Q155414/
 ---
 
 ## Q155414: XADM: Bulk Import/Export FAQ

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280494: Deadlock in Ps.exe"
-permalink: kb/280/Q280494/
+permalink: /kb/280/Q280494/
 ---
 
 ## Q280494: Deadlock in Ps.exe

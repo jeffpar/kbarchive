@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261033: MCM2: Missing Textures on Bike &amp; Rider Tab After You Exit Event"
-permalink: kb/261/Q261033/
+permalink: /kb/261/Q261033/
 ---
 
 ## Q261033: MCM2: Missing Textures on Bike &amp; Rider Tab After You Exit Event

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146362: Schedule+ Meeting Wizard and Time Zones"
-permalink: kb/146/Q146362/
+permalink: /kb/146/Q146362/
 ---
 
 ## Q146362: Schedule+ Meeting Wizard and Time Zones

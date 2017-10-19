@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234839: MOD2000: Admin Can't Check In File with VBA Source Code Control"
-permalink: kb/234/Q234839/
+permalink: /kb/234/Q234839/
 ---
 
 ## Q234839: MOD2000: Admin Can't Check In File with VBA Source Code Control

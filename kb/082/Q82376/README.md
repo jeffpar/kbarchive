@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82376: Some Pasted Objects May Print as Black Boxes"
-permalink: kb/082/Q82376/
+permalink: /kb/082/Q82376/
 ---
 
 ## Q82376: Some Pasted Objects May Print as Black Boxes

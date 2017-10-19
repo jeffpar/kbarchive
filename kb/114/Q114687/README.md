@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114687: Setting Number of Rings for RAS Server Auto-Answer in NT 3.5x"
-permalink: kb/114/Q114687/
+permalink: /kb/114/Q114687/
 ---
 
 ## Q114687: Setting Number of Rings for RAS Server Auto-Answer in NT 3.5x

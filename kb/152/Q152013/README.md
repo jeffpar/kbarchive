@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152013: Automating AFTP Commands Through a Script File"
-permalink: kb/152/Q152013/
+permalink: /kb/152/Q152013/
 ---
 
 ## Q152013: Automating AFTP Commands Through a Script File

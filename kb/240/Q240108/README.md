@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240108: Backup Host Security Cache Deleted on Exit"
-permalink: kb/240/Q240108/
+permalink: /kb/240/Q240108/
 ---
 
 ## Q240108: Backup Host Security Cache Deleted on Exit

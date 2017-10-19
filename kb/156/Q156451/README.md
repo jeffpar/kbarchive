@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156451: FIX: DDCONV Causes GP Fault During Database Conversion"
-permalink: kb/156/Q156451/
+permalink: /kb/156/Q156451/
 ---
 
 ## Q156451: FIX: DDCONV Causes GP Fault During Database Conversion

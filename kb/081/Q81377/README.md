@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81377: SMARTDrive /double_buffer Cannot Load into UMBs"
-permalink: kb/081/Q81377/
+permalink: /kb/081/Q81377/
 ---
 
 ## Q81377: SMARTDrive /double_buffer Cannot Load into UMBs

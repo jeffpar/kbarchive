@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163032: XCON: Description of Diagnostics Logging for MTA"
-permalink: kb/163/Q163032/
+permalink: /kb/163/Q163032/
 ---
 
 ## Q163032: XCON: Description of Diagnostics Logging for MTA

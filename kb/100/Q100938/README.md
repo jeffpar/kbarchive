@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100938: Using Microsoft Anti-Virus to Scan Multiple Floppy Disks"
-permalink: kb/100/Q100938/
+permalink: /kb/100/Q100938/
 ---
 
 ## Q100938: Using Microsoft Anti-Virus to Scan Multiple Floppy Disks

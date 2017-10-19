@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281718: SMS: The Accumulation of .ddr Files on Secondary Site Servers"
-permalink: kb/281/Q281718/
+permalink: /kb/281/Q281718/
 ---
 
 ## Q281718: SMS: The Accumulation of .ddr Files on Secondary Site Servers

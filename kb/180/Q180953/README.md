@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180953: &quot;Missing Component&quot; When Applying Service Pack"
-permalink: kb/180/Q180953/
+permalink: /kb/180/Q180953/
 ---
 
 ## Q180953: &quot;Missing Component&quot; When Applying Service Pack

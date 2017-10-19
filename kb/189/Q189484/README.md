@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189484: SAMPLE: SCRIPTEX.EXE Uses the ScriptControl with Visual Basic"
-permalink: kb/189/Q189484/
+permalink: /kb/189/Q189484/
 ---
 
 ## Q189484: SAMPLE: SCRIPTEX.EXE Uses the ScriptControl with Visual Basic

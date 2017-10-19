@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167255: WD97: HTML Tags Nested Incorrectly After Saving Word 97 File"
-permalink: kb/167/Q167255/
+permalink: /kb/167/Q167255/
 ---
 
 ## Q167255: WD97: HTML Tags Nested Incorrectly After Saving Word 97 File

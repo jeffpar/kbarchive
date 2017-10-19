@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150475: XCLN: Exchng32 Causes Invalid Page Fault on ThinkPads"
-permalink: kb/150/Q150475/
+permalink: /kb/150/Q150475/
 ---
 
 ## Q150475: XCLN: Exchng32 Causes Invalid Page Fault on ThinkPads

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185572: HOWTO: Get Dropped File Names Using OLE Drag and Drop"
-permalink: kb/185/Q185572/
+permalink: /kb/185/Q185572/
 ---
 
 ## Q185572: HOWTO: Get Dropped File Names Using OLE Drag and Drop

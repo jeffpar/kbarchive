@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96092: WFWG: Printing with Banyan VINES Connectivity"
-permalink: kb/096/Q96092/
+permalink: /kb/096/Q96092/
 ---
 
 ## Q96092: WFWG: Printing with Banyan VINES Connectivity

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143295: PRB: Incorrect Error Message with CursorSetProp()"
-permalink: kb/143/Q143295/
+permalink: /kb/143/Q143295/
 ---
 
 ## Q143295: PRB: Incorrect Error Message with CursorSetProp()

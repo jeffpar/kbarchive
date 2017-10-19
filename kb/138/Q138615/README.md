@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138615: PRB: Formset Forms Don't Switch If Chosen in Properties Window"
-permalink: kb/138/Q138615/
+permalink: /kb/138/Q138615/
 ---
 
 ## Q138615: PRB: Formset Forms Don't Switch If Chosen in Properties Window

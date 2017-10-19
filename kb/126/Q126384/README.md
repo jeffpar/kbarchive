@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126384: Err Msg: User configuration for parameter Serial1 must ..."
-permalink: kb/126/Q126384/
+permalink: /kb/126/Q126384/
 ---
 
 ## Q126384: Err Msg: User configuration for parameter Serial1 must ...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170574: MDG: One Mail Message Floods Windows Mail Client"
-permalink: kb/170/Q170574/
+permalink: /kb/170/Q170574/
 ---
 
 ## Q170574: MDG: One Mail Message Floods Windows Mail Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128640: Boca Vortek Drivers Cause &quot;Error in EXE File&quot; Error Message"
-permalink: kb/128/Q128640/
+permalink: /kb/128/Q128640/
 ---
 
 ## Q128640: Boca Vortek Drivers Cause &quot;Error in EXE File&quot; Error Message

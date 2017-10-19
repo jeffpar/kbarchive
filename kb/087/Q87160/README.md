@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87160: Mac Wkst Srv: Transfer Data Between Local Workstation &amp; Server"
-permalink: kb/087/Q87160/
+permalink: /kb/087/Q87160/
 ---
 
 ## Q87160: Mac Wkst Srv: Transfer Data Between Local Workstation &amp; Server

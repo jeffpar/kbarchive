@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81964: TSR Fails to Pop Up Under MS-DOS Versions 4.0 and Later"
-permalink: kb/081/Q81964/
+permalink: /kb/081/Q81964/
 ---
 
 ## Q81964: TSR Fails to Pop Up Under MS-DOS Versions 4.0 and Later

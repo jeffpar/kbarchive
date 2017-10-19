@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169519: XADM: Exchange 5.5 Remove All Option Removes Database Files"
-permalink: kb/169/Q169519/
+permalink: /kb/169/Q169519/
 ---
 
 ## Q169519: XADM: Exchange 5.5 Remove All Option Removes Database Files

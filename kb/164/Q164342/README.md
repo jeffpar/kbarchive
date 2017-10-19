@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164342: WD97: Picture Hyperlink Lost When Saved as HTML"
-permalink: kb/164/Q164342/
+permalink: /kb/164/Q164342/
 ---
 
 ## Q164342: WD97: Picture Hyperlink Lost When Saved as HTML

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255572: FIX: Private Data Session and Rich Text Control Cause Error"
-permalink: kb/255/Q255572/
+permalink: /kb/255/Q255572/
 ---
 
 ## Q255572: FIX: Private Data Session and Rich Text Control Cause Error

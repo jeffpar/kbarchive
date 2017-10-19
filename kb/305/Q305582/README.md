@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305582: Age of Empires II: Game Does Not Start as Expected"
-permalink: kb/305/Q305582/
+permalink: /kb/305/Q305582/
 ---
 
 ## Q305582: Age of Empires II: Game Does Not Start as Expected

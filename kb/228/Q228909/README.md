@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228909: FTP Virtual Directory Is Not Displayed in Directory Listing"
-permalink: kb/228/Q228909/
+permalink: /kb/228/Q228909/
 ---
 
 ## Q228909: FTP Virtual Directory Is Not Displayed in Directory Listing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162147: TN3270 Server Loses Client Session"
-permalink: kb/162/Q162147/
+permalink: /kb/162/Q162147/
 ---
 
 ## Q162147: TN3270 Server Loses Client Session

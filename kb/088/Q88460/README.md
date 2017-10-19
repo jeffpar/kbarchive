@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88460: Controlling Line Wrap in Terminal"
-permalink: kb/088/Q88460/
+permalink: /kb/088/Q88460/
 ---
 
 ## Q88460: Controlling Line Wrap in Terminal

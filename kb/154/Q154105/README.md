@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154105: PRB: C2664 Compiler Error in Afxtempl.h Using VC++ 4.2"
-permalink: kb/154/Q154105/
+permalink: /kb/154/Q154105/
 ---
 
 ## Q154105: PRB: C2664 Compiler Error in Afxtempl.h Using VC++ 4.2

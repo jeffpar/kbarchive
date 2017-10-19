@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148784: How to Use UDF() to Modify Default Scientific Notation Format"
-permalink: kb/148/Q148784/
+permalink: /kb/148/Q148784/
 ---
 
 ## Q148784: How to Use UDF() to Modify Default Scientific Notation Format

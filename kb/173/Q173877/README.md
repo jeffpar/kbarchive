@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173877: What Files Are Needed to Uninstall Windows NT Service Pack"
-permalink: kb/173/Q173877/
+permalink: /kb/173/Q173877/
 ---
 
 ## Q173877: What Files Are Needed to Uninstall Windows NT Service Pack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247514: XADM: Event ID 295 Message After You Install Spanish Templates"
-permalink: kb/247/Q247514/
+permalink: /kb/247/Q247514/
 ---
 
 ## Q247514: XADM: Event ID 295 Message After You Install Spanish Templates

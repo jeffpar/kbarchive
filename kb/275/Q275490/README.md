@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275490: Debugger Symbol Loading Facility Cannot Load SP6 Kernel Symbols"
-permalink: kb/275/Q275490/
+permalink: /kb/275/Q275490/
 ---
 
 ## Q275490: Debugger Symbol Loading Facility Cannot Load SP6 Kernel Symbols

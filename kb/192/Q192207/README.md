@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192207: BUG: Setting Visible Property Fails on Menu for ActiveX Control"
-permalink: kb/192/Q192207/
+permalink: /kb/192/Q192207/
 ---
 
 ## Q192207: BUG: Setting Visible Property Fails on Menu for ActiveX Control

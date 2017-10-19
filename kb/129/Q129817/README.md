@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129817: Creating Personal Distribution Lists in Microsoft Exchange"
-permalink: kb/129/Q129817/
+permalink: /kb/129/Q129817/
 ---
 
 ## Q129817: Creating Personal Distribution Lists in Microsoft Exchange

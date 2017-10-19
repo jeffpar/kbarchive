@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72013: Examining Contents of UMBs"
-permalink: kb/072/Q72013/
+permalink: /kb/072/Q72013/
 ---
 
 ## Q72013: Examining Contents of UMBs

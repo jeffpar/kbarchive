@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120227: Steps to Recover a Failed Mirrored System/Boot Partition"
-permalink: kb/120/Q120227/
+permalink: /kb/120/Q120227/
 ---
 
 ## Q120227: Steps to Recover a Failed Mirrored System/Boot Partition

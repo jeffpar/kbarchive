@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230714: Y2K: Internet Explorer and Windows NT 4.0 Compliance Issues"
-permalink: kb/230/Q230714/
+permalink: /kb/230/Q230714/
 ---
 
 ## Q230714: Y2K: Internet Explorer and Windows NT 4.0 Compliance Issues

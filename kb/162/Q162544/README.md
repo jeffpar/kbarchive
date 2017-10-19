@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162544: Troubleshooting Remote Function of Exchange and Schedule+"
-permalink: kb/162/Q162544/
+permalink: /kb/162/Q162544/
 ---
 
 ## Q162544: Troubleshooting Remote Function of Exchange and Schedule+

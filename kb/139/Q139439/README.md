@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139439: Bookshelf 95: Copy to Excel Command Does not Work"
-permalink: kb/139/Q139439/
+permalink: /kb/139/Q139439/
 ---
 
 ## Q139439: Bookshelf 95: Copy to Excel Command Does not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145937: FIX: DUMPBIN, LIB, and EDITBIN Fail on File Names with Spaces"
-permalink: kb/145/Q145937/
+permalink: /kb/145/Q145937/
 ---
 
 ## Q145937: FIX: DUMPBIN, LIB, and EDITBIN Fail on File Names with Spaces

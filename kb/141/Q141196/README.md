@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141196: Encarta 1995: Unable to Open Files from Media Gallery"
-permalink: kb/141/Q141196/
+permalink: /kb/141/Q141196/
 ---
 
 ## Q141196: Encarta 1995: Unable to Open Files from Media Gallery

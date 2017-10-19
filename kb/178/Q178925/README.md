@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178925: XADM: Monitoring the Progress of Directory Replication"
-permalink: kb/178/Q178925/
+permalink: /kb/178/Q178925/
 ---
 
 ## Q178925: XADM: Monitoring the Progress of Directory Replication

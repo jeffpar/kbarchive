@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111071: GP Fault in Module EQNEDIT.EXE on Object Insert"
-permalink: kb/111/Q111071/
+permalink: /kb/111/Q111071/
 ---
 
 ## Q111071: GP Fault in Module EQNEDIT.EXE on Object Insert

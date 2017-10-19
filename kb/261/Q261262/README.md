@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261262: WD97: Err Msg: Not Enough Memory or Disk Space"
-permalink: kb/261/Q261262/
+permalink: /kb/261/Q261262/
 ---
 
 ## Q261262: WD97: Err Msg: Not Enough Memory or Disk Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146212: Novell SEND Command Does Not Poll for Stored Messages"
-permalink: kb/146/Q146212/
+permalink: /kb/146/Q146212/
 ---
 
 ## Q146212: Novell SEND Command Does Not Poll for Stored Messages

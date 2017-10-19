@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173953: Frequently Asked Questions on the Internet Mail Address Book"
-permalink: kb/173/Q173953/
+permalink: /kb/173/Q173953/
 ---
 
 ## Q173953: Frequently Asked Questions on the Internet Mail Address Book

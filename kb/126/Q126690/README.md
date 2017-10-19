@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126690: INFO: Windows NT 4.0 Setup Troubleshooting Guide"
-permalink: kb/126/Q126690/
+permalink: /kb/126/Q126690/
 ---
 
 ## Q126690: INFO: Windows NT 4.0 Setup Troubleshooting Guide

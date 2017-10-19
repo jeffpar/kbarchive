@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198397: Dr. Watson Does Not Seem to Trap GP Faults"
-permalink: kb/198/Q198397/
+permalink: /kb/198/Q198397/
 ---
 
 ## Q198397: Dr. Watson Does Not Seem to Trap GP Faults

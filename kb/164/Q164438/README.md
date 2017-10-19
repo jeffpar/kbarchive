@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164438: FPNW Print Jobs Do Not Print or Errors Occur in FPNW Interface"
-permalink: kb/164/Q164438/
+permalink: /kb/164/Q164438/
 ---
 
 ## Q164438: FPNW Print Jobs Do Not Print or Errors Occur in FPNW Interface

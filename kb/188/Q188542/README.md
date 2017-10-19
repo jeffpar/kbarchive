@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188542: PRB: VB 4.0 16-Bit Add-Ins Fail After Installing VB 6.0"
-permalink: kb/188/Q188542/
+permalink: /kb/188/Q188542/
 ---
 
 ## Q188542: PRB: VB 4.0 16-Bit Add-Ins Fail After Installing VB 6.0

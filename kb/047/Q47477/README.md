@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47477: Mac Wkst: Using &quot;@&quot; to Search by Server Name in Address Window"
-permalink: kb/047/Q47477/
+permalink: /kb/047/Q47477/
 ---
 
 ## Q47477: Mac Wkst: Using &quot;@&quot; to Search by Server Name in Address Window

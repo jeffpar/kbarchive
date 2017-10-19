@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231885: Midtown Madness: Display Adapters Redetected When You Start Game"
-permalink: kb/231/Q231885/
+permalink: /kb/231/Q231885/
 ---
 
 ## Q231885: Midtown Madness: Display Adapters Redetected When You Start Game

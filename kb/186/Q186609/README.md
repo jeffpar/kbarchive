@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186609: Terminal Server's Application Security"
-permalink: kb/186/Q186609/
+permalink: /kb/186/Q186609/
 ---
 
 ## Q186609: Terminal Server's Application Security

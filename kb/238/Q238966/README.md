@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238966: Statically Configured WINS Client Refreshes with Secondary"
-permalink: kb/238/Q238966/
+permalink: /kb/238/Q238966/
 ---
 
 ## Q238966: Statically Configured WINS Client Refreshes with Secondary

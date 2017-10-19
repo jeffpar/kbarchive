@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146958: XCLN: &quot;Replace All&quot; Replaces Previous Instances of a Word"
-permalink: kb/146/Q146958/
+permalink: /kb/146/Q146958/
 ---
 
 ## Q146958: XCLN: &quot;Replace All&quot; Replaces Previous Instances of a Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85605: FAX: How to Troubleshoot the Gateway"
-permalink: kb/085/Q85605/
+permalink: /kb/085/Q85605/
 ---
 
 ## Q85605: FAX: How to Troubleshoot the Gateway

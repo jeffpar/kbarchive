@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156793: Windows Far East Localized Support of IME in a Command Prompt"
-permalink: kb/156/Q156793/
+permalink: /kb/156/Q156793/
 ---
 
 ## Q156793: Windows Far East Localized Support of IME in a Command Prompt

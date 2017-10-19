@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57706: LINK Uses Library Sequence to Resolve External References"
-permalink: kb/057/Q57706/
+permalink: /kb/057/Q57706/
 ---
 
 ## Q57706: LINK Uses Library Sequence to Resolve External References

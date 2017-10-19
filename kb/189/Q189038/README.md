@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189038: DHCP Server Cannot Be Accessed with Dhcpadmin.exe Tool"
-permalink: kb/189/Q189038/
+permalink: /kb/189/Q189038/
 ---
 
 ## Q189038: DHCP Server Cannot Be Accessed with Dhcpadmin.exe Tool

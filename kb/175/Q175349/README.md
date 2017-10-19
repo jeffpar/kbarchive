@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175349: Inside the Registry for Windows 95 Comments and Corrections"
-permalink: kb/175/Q175349/
+permalink: /kb/175/Q175349/
 ---
 
 ## Q175349: Inside the Registry for Windows 95 Comments and Corrections

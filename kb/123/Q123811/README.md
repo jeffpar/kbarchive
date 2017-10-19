@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123811: FIX: C2466: Using New to Allocate an Array of Size Zero"
-permalink: kb/123/Q123811/
+permalink: /kb/123/Q123811/
 ---
 
 ## Q123811: FIX: C2466: Using New to Allocate an Array of Size Zero

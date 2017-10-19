@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162626: RUI_READ Stops When Processing Buffers Larger Than 3 KB"
-permalink: kb/162/Q162626/
+permalink: /kb/162/Q162626/
 ---
 
 ## Q162626: RUI_READ Stops When Processing Buffers Larger Than 3 KB

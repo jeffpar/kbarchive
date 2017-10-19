@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90710: GP Fault in WINHELP.EXE After Starting Microsoft Mail"
-permalink: kb/090/Q90710/
+permalink: /kb/090/Q90710/
 ---
 
 ## Q90710: GP Fault in WINHELP.EXE After Starting Microsoft Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103698: File Manager Cannot Modify File/Directory Names Containing &quot;?&quot;"
-permalink: kb/103/Q103698/
+permalink: /kb/103/Q103698/
 ---
 
 ## Q103698: File Manager Cannot Modify File/Directory Names Containing &quot;?&quot;

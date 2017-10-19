@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246284: XADM: Set Alternate Delivery Location with Admin.exe"
-permalink: kb/246/Q246284/
+permalink: /kb/246/Q246284/
 ---
 
 ## Q246284: XADM: Set Alternate Delivery Location with Admin.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130408: How to Create a Wallpaper Effect in Visual FoxPro"
-permalink: kb/130/Q130408/
+permalink: /kb/130/Q130408/
 ---
 
 ## Q130408: How to Create a Wallpaper Effect in Visual FoxPro

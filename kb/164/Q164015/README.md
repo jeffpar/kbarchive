@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164015: Understanding TCP/IP Addressing and Subnetting Basics"
-permalink: kb/164/Q164015/
+permalink: /kb/164/Q164015/
 ---
 
 ## Q164015: Understanding TCP/IP Addressing and Subnetting Basics

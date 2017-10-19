@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74638: Using Keystrokes in MS-DOS 5.0 or Later Shell"
-permalink: kb/074/Q74638/
+permalink: /kb/074/Q74638/
 ---
 
 ## Q74638: Using Keystrokes in MS-DOS 5.0 or Later Shell

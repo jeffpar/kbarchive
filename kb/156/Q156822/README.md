@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156822: Tseng Labs ET4000-W32I Chipset Only Supports 65K Colors"
-permalink: kb/156/Q156822/
+permalink: /kb/156/Q156822/
 ---
 
 ## Q156822: Tseng Labs ET4000-W32I Chipset Only Supports 65K Colors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156346: INFO: STL Sample for the iter_swap Function"
-permalink: kb/156/Q156346/
+permalink: /kb/156/Q156346/
 ---
 
 ## Q156346: INFO: STL Sample for the iter_swap Function

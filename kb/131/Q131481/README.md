@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131481: Settings for HP LaserJet 4Si Not Maintained During Upgrade"
-permalink: kb/131/Q131481/
+permalink: /kb/131/Q131481/
 ---
 
 ## Q131481: Settings for HP LaserJet 4Si Not Maintained During Upgrade

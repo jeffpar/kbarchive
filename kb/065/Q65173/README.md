@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65173: Macro Recorder and Write Problem with TAB in Windows 3.0, 3.0a"
-permalink: kb/065/Q65173/
+permalink: /kb/065/Q65173/
 ---
 
 ## Q65173: Macro Recorder and Write Problem with TAB in Windows 3.0, 3.0a

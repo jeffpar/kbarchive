@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175915: Direct Cable Connection Cannot Connect to Windows 95 Computer"
-permalink: kb/175/Q175915/
+permalink: /kb/175/Q175915/
 ---
 
 ## Q175915: Direct Cable Connection Cannot Connect to Windows 95 Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132707: Customized Setting For Access Reverts Back to Original"
-permalink: kb/132/Q132707/
+permalink: /kb/132/Q132707/
 ---
 
 ## Q132707: Customized Setting For Access Reverts Back to Original

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218457: BUG: Custom Expression Builder Crashes Query and View Designers"
-permalink: kb/218/Q218457/
+permalink: /kb/218/Q218457/
 ---
 
 ## Q218457: BUG: Custom Expression Builder Crashes Query and View Designers

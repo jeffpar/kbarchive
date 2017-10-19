@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132116: FIX: CheckAutoCenter May Return TRUE with DS_ABSALIGN"
-permalink: kb/132/Q132116/
+permalink: /kb/132/Q132116/
 ---
 
 ## Q132116: FIX: CheckAutoCenter May Return TRUE with DS_ABSALIGN

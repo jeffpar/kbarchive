@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195741: XADM: Store Crash when IMAP Append Is Aborted on 100 MB Network"
-permalink: kb/195/Q195741/
+permalink: /kb/195/Q195741/
 ---
 
 ## Q195741: XADM: Store Crash when IMAP Append Is Aborted on 100 MB Network

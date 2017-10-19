@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q108835: PC Gen: PODIAG.INI Entries in [Server Folder Check]"
-permalink: kb/108/Q108835/
+title: "Q108835: PC Gen: PODIAG.INI Entries in &#91;Server Folder Check&#93;"
+permalink: /kb/108/Q108835/
 ---
 
-## Q108835: PC Gen: PODIAG.INI Entries in [Server Folder Check]
+## Q108835: PC Gen: PODIAG.INI Entries in &#91;Server Folder Check&#93;
 
 	Article: Q108835
 	Product(s): Microsoft Mail For PC Networks

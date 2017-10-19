@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230065: How to Use Virtual Directories for Newsgroups"
-permalink: kb/230/Q230065/
+permalink: /kb/230/Q230065/
 ---
 
 ## Q230065: How to Use Virtual Directories for Newsgroups

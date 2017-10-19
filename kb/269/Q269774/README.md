@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269774: SMS: Error Message &quot;Unexpected Error Creating the Unique ID File"
-permalink: kb/269/Q269774/
+permalink: /kb/269/Q269774/
 ---
 
 ## Q269774: SMS: Error Message &quot;Unexpected Error Creating the Unique ID File

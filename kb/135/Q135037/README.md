@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135037: How to Connect a LaserDisc Player Using MCI Driver"
-permalink: kb/135/Q135037/
+permalink: /kb/135/Q135037/
 ---
 
 ## Q135037: How to Connect a LaserDisc Player Using MCI Driver

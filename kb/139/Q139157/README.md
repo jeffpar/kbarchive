@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139157: HOWTO: Reducing RAM Memory to Test Visual FoxPro Applications"
-permalink: kb/139/Q139157/
+permalink: /kb/139/Q139157/
 ---
 
 ## Q139157: HOWTO: Reducing RAM Memory to Test Visual FoxPro Applications

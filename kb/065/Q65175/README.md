@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65175: Double Disk by Vertisoft Systems Needs Update to 2.14b"
-permalink: kb/065/Q65175/
+permalink: /kb/065/Q65175/
 ---
 
 ## Q65175: Double Disk by Vertisoft Systems Needs Update to 2.14b

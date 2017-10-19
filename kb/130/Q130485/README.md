@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130485: PRB: Unable to Save Project State Information"
-permalink: kb/130/Q130485/
+permalink: /kb/130/Q130485/
 ---
 
 ## Q130485: PRB: Unable to Save Project State Information

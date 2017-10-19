@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107654: Writer: Gray and Light Blue Text Don't Print on Epson"
-permalink: kb/107/Q107654/
+permalink: /kb/107/Q107654/
 ---
 
 ## Q107654: Writer: Gray and Light Blue Text Don't Print on Epson

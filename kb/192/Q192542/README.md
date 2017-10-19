@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192542: XFOR: Notes Connector Crashes Processing Voice Mail Attachment"
-permalink: kb/192/Q192542/
+permalink: /kb/192/Q192542/
 ---
 
 ## Q192542: XFOR: Notes Connector Crashes Processing Voice Mail Attachment

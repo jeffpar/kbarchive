@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175548: About MSN Displays Incorrect Version of Internet Explorer"
-permalink: kb/175/Q175548/
+permalink: /kb/175/Q175548/
 ---
 
 ## Q175548: About MSN Displays Incorrect Version of Internet Explorer

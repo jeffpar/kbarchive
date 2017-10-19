@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163547: WD97: How to Create Custom Toolbars and Toolbar Buttons"
-permalink: kb/163/Q163547/
+permalink: /kb/163/Q163547/
 ---
 
 ## Q163547: WD97: How to Create Custom Toolbars and Toolbar Buttons

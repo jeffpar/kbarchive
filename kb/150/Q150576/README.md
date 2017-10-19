@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150576: FIX: C2682 Using dynamic_cast to Cast to a Const Pointer Type"
-permalink: kb/150/Q150576/
+permalink: /kb/150/Q150576/
 ---
 
 ## Q150576: FIX: C2682 Using dynamic_cast to Cast to a Const Pointer Type

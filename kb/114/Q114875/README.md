@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114875: BUG: Bad Code for &#95;&#95;fastcall Function Calling an Intrinsic"
-permalink: kb/114/Q114875/
+permalink: /kb/114/Q114875/
 ---
 
 ## Q114875: BUG: Bad Code for &#95;&#95;fastcall Function Calling an Intrinsic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274616: CFS2: Some Buildings Are Displayed with a Lower Level of Detail"
-permalink: kb/274/Q274616/
+permalink: /kb/274/Q274616/
 ---
 
 ## Q274616: CFS2: Some Buildings Are Displayed with a Lower Level of Detail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150855: How to Set Up Server-Based User Profiles for Windows 95 Clients"
-permalink: kb/150/Q150855/
+permalink: /kb/150/Q150855/
 ---
 
 ## Q150855: How to Set Up Server-Based User Profiles for Windows 95 Clients

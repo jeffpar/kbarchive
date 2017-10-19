@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320949: PRB: 1394 Devices Stop Responding During Isochronous Transfers"
-permalink: kb/320/Q320949/
+permalink: /kb/320/Q320949/
 ---
 
 ## Q320949: PRB: 1394 Devices Stop Responding During Isochronous Transfers

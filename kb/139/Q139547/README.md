@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139547: How to Use the GetVolumeInformation API Call"
-permalink: kb/139/Q139547/
+permalink: /kb/139/Q139547/
 ---
 
 ## Q139547: How to Use the GetVolumeInformation API Call

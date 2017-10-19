@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187735: Delay in NetBIOS Connections from a Multihomed Computer"
-permalink: kb/187/Q187735/
+permalink: /kb/187/Q187735/
 ---
 
 ## Q187735: Delay in NetBIOS Connections from a Multihomed Computer

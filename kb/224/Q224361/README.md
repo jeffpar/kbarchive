@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224361: Cannot Install Reference Suite DVD on Windows 95-Based Computer"
-permalink: kb/224/Q224361/
+permalink: /kb/224/Q224361/
 ---
 
 ## Q224361: Cannot Install Reference Suite DVD on Windows 95-Based Computer

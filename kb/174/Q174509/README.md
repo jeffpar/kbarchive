@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174509: Stop 0x0000000A in Ndiswan.sys with Digiboard ISDN Board"
-permalink: kb/174/Q174509/
+permalink: /kb/174/Q174509/
 ---
 
 ## Q174509: Stop 0x0000000A in Ndiswan.sys with Digiboard ISDN Board

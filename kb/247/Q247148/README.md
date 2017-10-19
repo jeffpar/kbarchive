@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247148: XADM: Slow Response When Searching on Custom Attributes"
-permalink: kb/247/Q247148/
+permalink: /kb/247/Q247148/
 ---
 
 ## Q247148: XADM: Slow Response When Searching on Custom Attributes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121170: How to Access Environment Variables in an MS-DOS Batch File"
-permalink: kb/121/Q121170/
+permalink: /kb/121/Q121170/
 ---
 
 ## Q121170: How to Access Environment Variables in an MS-DOS Batch File

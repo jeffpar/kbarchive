@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240429: DirectX: Ports Required to Play on a Network"
-permalink: kb/240/Q240429/
+permalink: /kb/240/Q240429/
 ---
 
 ## Q240429: DirectX: Ports Required to Play on a Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190503: PRB: Multi-Disk Package Too Large for Targeted Disk Size"
-permalink: kb/190/Q190503/
+permalink: /kb/190/Q190503/
 ---
 
 ## Q190503: PRB: Multi-Disk Package Too Large for Targeted Disk Size

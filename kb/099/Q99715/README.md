@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99715: 3COM: Err Msg: Error 2 -- Cannot Verify Logon User/Admin ID..."
-permalink: kb/099/Q99715/
+permalink: /kb/099/Q99715/
 ---
 
 ## Q99715: 3COM: Err Msg: Error 2 -- Cannot Verify Logon User/Admin ID...

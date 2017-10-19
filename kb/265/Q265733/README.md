@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265733: XADM: How to Disable Public Folder Conflict Message Notification"
-permalink: kb/265/Q265733/
+permalink: /kb/265/Q265733/
 ---
 
 ## Q265733: XADM: How to Disable Public Folder Conflict Message Notification

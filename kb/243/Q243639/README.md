@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243639: Asheron's Call: Introductory Movies Are Not Played"
-permalink: kb/243/Q243639/
+permalink: /kb/243/Q243639/
 ---
 
 ## Q243639: Asheron's Call: Introductory Movies Are Not Played

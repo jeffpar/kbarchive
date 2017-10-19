@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311438: SNA Applications &quot;Hang&quot; with Event 556"
-permalink: kb/311/Q311438/
+permalink: /kb/311/Q311438/
 ---
 
 ## Q311438: SNA Applications &quot;Hang&quot; with Event 556

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264714: SMS: WIN9X Clients Fail to Run Advert. w/ Status Message 10003"
-permalink: kb/264/Q264714/
+permalink: /kb/264/Q264714/
 ---
 
 ## Q264714: SMS: WIN9X Clients Fail to Run Advert. w/ Status Message 10003

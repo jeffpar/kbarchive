@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146220: PRB: The ODBC Text File Driver Only Supports INSERT Statement"
-permalink: kb/146/Q146220/
+permalink: /kb/146/Q146220/
 ---
 
 ## Q146220: PRB: The ODBC Text File Driver Only Supports INSERT Statement

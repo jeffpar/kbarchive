@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103543: Multiple-Configuration Menu Statements in AUTOEXEC.BAT Fail"
-permalink: kb/103/Q103543/
+permalink: /kb/103/Q103543/
 ---
 
 ## Q103543: Multiple-Configuration Menu Statements in AUTOEXEC.BAT Fail

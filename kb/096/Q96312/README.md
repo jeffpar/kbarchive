@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96312: SAMPLE: Windows Application to Unload DLLs from Memory"
-permalink: kb/096/Q96312/
+permalink: /kb/096/Q96312/
 ---
 
 ## Q96312: SAMPLE: Windows Application to Unload DLLs from Memory

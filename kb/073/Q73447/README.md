@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73447: MS-DOS 4.0 Redirector Needed When Upgrading PCSA Networks"
-permalink: kb/073/Q73447/
+permalink: /kb/073/Q73447/
 ---
 
 ## Q73447: MS-DOS 4.0 Redirector Needed When Upgrading PCSA Networks

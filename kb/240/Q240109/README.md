@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240109: NBA Inside Drive 2000: Statistics Not Calculated Accurately"
-permalink: kb/240/Q240109/
+permalink: /kb/240/Q240109/
 ---
 
 ## Q240109: NBA Inside Drive 2000: Statistics Not Calculated Accurately

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149287: Upgrading Site Server Recreates Program Group"
-permalink: kb/149/Q149287/
+permalink: /kb/149/Q149287/
 ---
 
 ## Q149287: Upgrading Site Server Recreates Program Group

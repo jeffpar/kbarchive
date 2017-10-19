@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183232: Problems Using Multihoming in Windows 95"
-permalink: kb/183/Q183232/
+permalink: /kb/183/Q183232/
 ---
 
 ## Q183232: Problems Using Multihoming in Windows 95

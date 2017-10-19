@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139415: New TCP/IP ArpCacheLife Parameter in Windows NT"
-permalink: kb/139/Q139415/
+permalink: /kb/139/Q139415/
 ---
 
 ## Q139415: New TCP/IP ArpCacheLife Parameter in Windows NT

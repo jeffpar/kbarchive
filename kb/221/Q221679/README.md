@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221679: FIX: Servers Do Not Release if Init Returns .F."
-permalink: kb/221/Q221679/
+permalink: /kb/221/Q221679/
 ---
 
 ## Q221679: FIX: Servers Do Not Release if Init Returns .F.

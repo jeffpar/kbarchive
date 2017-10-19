@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323494: AV When You Type Mnemonic on Property Page with ActiveX Control"
-permalink: kb/323/Q323494/
+permalink: /kb/323/Q323494/
 ---
 
 ## Q323494: AV When You Type Mnemonic on Property Page with ActiveX Control

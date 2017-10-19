@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157211: SMS: INVWIN32 Does Not Always Detect Network Card(s)"
-permalink: kb/157/Q157211/
+permalink: /kb/157/Q157211/
 ---
 
 ## Q157211: SMS: INVWIN32 Does Not Always Detect Network Card(s)

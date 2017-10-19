@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104572: Using Microsoft Scenes Version 1.0 with Windows NT"
-permalink: kb/104/Q104572/
+permalink: /kb/104/Q104572/
 ---
 
 ## Q104572: Using Microsoft Scenes Version 1.0 with Windows NT

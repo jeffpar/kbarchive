@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162621: BUG: GetSetting Causes GP Fault in Vba2.dll"
-permalink: kb/162/Q162621/
+permalink: /kb/162/Q162621/
 ---
 
 ## Q162621: BUG: GetSetting Causes GP Fault in Vba2.dll

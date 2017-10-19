@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82665: Causes of System Integrity Errors in Windows 3.1"
-permalink: kb/082/Q82665/
+permalink: /kb/082/Q82665/
 ---
 
 ## Q82665: Causes of System Integrity Errors in Windows 3.1

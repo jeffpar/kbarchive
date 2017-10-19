@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132493: PRB: Memory Leaks with Desktop Database Drivers"
-permalink: kb/132/Q132493/
+permalink: /kb/132/Q132493/
 ---
 
 ## Q132493: PRB: Memory Leaks with Desktop Database Drivers

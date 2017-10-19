@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31365: Instrument Lights, Engines, and Gyroscopes in Reality Mode"
-permalink: kb/031/Q31365/
+permalink: /kb/031/Q31365/
 ---
 
 ## Q31365: Instrument Lights, Engines, and Gyroscopes in Reality Mode

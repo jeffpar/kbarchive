@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110138: Flight Simulator: Map View Is Black and White"
-permalink: kb/110/Q110138/
+permalink: /kb/110/Q110138/
 ---
 
 ## Q110138: Flight Simulator: Map View Is Black and White

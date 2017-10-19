@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141190: Disk Administrator Stops When Zip Drive is Present"
-permalink: kb/141/Q141190/
+permalink: /kb/141/Q141190/
 ---
 
 ## Q141190: Disk Administrator Stops When Zip Drive is Present

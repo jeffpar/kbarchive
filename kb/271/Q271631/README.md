@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271631: SMS: Clients Ignore Specified Polling Interval for Advertisement"
-permalink: kb/271/Q271631/
+permalink: /kb/271/Q271631/
 ---
 
 ## Q271631: SMS: Clients Ignore Specified Polling Interval for Advertisement

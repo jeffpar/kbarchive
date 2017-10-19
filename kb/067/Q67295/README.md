@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67295: Pasting Pictures into Windows Write"
-permalink: kb/067/Q67295/
+permalink: /kb/067/Q67295/
 ---
 
 ## Q67295: Pasting Pictures into Windows Write

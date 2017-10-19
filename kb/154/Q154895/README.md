@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154895: FIX: CInternet::File ReadString() Loses Data"
-permalink: kb/154/Q154895/
+permalink: /kb/154/Q154895/
 ---
 
 ## Q154895: FIX: CInternet::File ReadString() Loses Data

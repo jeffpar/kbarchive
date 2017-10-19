@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240045: INFO: Solve Microsoft Windows NT Setup Problems Like a Pro"
-permalink: kb/240/Q240045/
+permalink: /kb/240/Q240045/
 ---
 
 ## Q240045: INFO: Solve Microsoft Windows NT Setup Problems Like a Pro

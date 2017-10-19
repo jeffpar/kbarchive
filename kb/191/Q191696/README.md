@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191696: Upgrading Host Security Files May Cause Corrupted Database"
-permalink: kb/191/Q191696/
+permalink: /kb/191/Q191696/
 ---
 
 ## Q191696: Upgrading Host Security Files May Cause Corrupted Database

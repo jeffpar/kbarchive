@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186936: XWEB: URLs Do Not Activate In OWA Contact or Appointment"
-permalink: kb/186/Q186936/
+permalink: /kb/186/Q186936/
 ---
 
 ## Q186936: XWEB: URLs Do Not Activate In OWA Contact or Appointment

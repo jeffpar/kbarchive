@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84743: Adobe PostScript Language Levels and Font Types Explained"
-permalink: kb/084/Q84743/
+permalink: /kb/084/Q84743/
 ---
 
 ## Q84743: Adobe PostScript Language Levels and Font Types Explained

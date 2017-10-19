@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136598: PC Ext: Cannot Initiate Connection to External Asynchronous PO"
-permalink: kb/136/Q136598/
+permalink: /kb/136/Q136598/
 ---
 
 ## Q136598: PC Ext: Cannot Initiate Connection to External Asynchronous PO

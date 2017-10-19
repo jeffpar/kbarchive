@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139349: FIX: C2607 Error Passing Ref to Pointer w/ Templated Functions"
-permalink: kb/139/Q139349/
+permalink: /kb/139/Q139349/
 ---
 
 ## Q139349: FIX: C2607 Error Passing Ref to Pointer w/ Templated Functions

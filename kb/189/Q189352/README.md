@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189352: PRB: Assert When Creating MFC Windows in Printer Drivers"
-permalink: kb/189/Q189352/
+permalink: /kb/189/Q189352/
 ---
 
 ## Q189352: PRB: Assert When Creating MFC Windows in Printer Drivers

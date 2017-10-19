@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194685: X400: Foreign System Ends Connection before Message Is Sent"
-permalink: kb/194/Q194685/
+permalink: /kb/194/Q194685/
 ---
 
 ## Q194685: X400: Foreign System Ends Connection before Message Is Sent

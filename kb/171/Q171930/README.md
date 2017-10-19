@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171930: IIS Training: Kit Does Not Cover IIS 3.0 or 4.0"
-permalink: kb/171/Q171930/
+permalink: /kb/171/Q171930/
 ---
 
 ## Q171930: IIS Training: Kit Does Not Cover IIS 3.0 or 4.0

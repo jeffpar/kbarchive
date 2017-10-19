@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q82433: Meaning of the [compatibility] Section in SETUP.INF"
-permalink: kb/082/Q82433/
+title: "Q82433: Meaning of the &#91;compatibility&#93; Section in SETUP.INF"
+permalink: /kb/082/Q82433/
 ---
 
-## Q82433: Meaning of the [compatibility] Section in SETUP.INF
+## Q82433: Meaning of the &#91;compatibility&#93; Section in SETUP.INF
 
 	Article: Q82433
 	Product(s): Microsoft Windows 95.x Retail Product

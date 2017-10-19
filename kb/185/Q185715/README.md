@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185715: CPI-C Side Information Does Not Allow &quot;.&quot; (period) in TP Name"
-permalink: kb/185/Q185715/
+permalink: /kb/185/Q185715/
 ---
 
 ## Q185715: CPI-C Side Information Does Not Allow &quot;.&quot; (period) in TP Name

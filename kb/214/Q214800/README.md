@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214800: Visual InterDev 6 Enterprise Dev Workshop: MenuDemo Program Miss"
-permalink: kb/214/Q214800/
+permalink: /kb/214/Q214800/
 ---
 
 ## Q214800: Visual InterDev 6 Enterprise Dev Workshop: MenuDemo Program Miss

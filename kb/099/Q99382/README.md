@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99382: Using Access Pack with Unsupported Hardware"
-permalink: kb/099/Q99382/
+permalink: /kb/099/Q99382/
 ---
 
 ## Q99382: Using Access Pack with Unsupported Hardware

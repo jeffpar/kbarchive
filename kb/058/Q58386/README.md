@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58386: Okidata 292 Printer Unsupported"
-permalink: kb/058/Q58386/
+permalink: /kb/058/Q58386/
 ---
 
 ## Q58386: Okidata 292 Printer Unsupported

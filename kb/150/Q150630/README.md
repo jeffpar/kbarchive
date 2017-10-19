@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150630: Using the Seven Habits Wizard Generates Bad File Name Error"
-permalink: kb/150/Q150630/
+permalink: /kb/150/Q150630/
 ---
 
 ## Q150630: Using the Seven Habits Wizard Generates Bad File Name Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187777: FP: Illegal Comments Removed from HTML Markup Bot"
-permalink: kb/187/Q187777/
+permalink: /kb/187/Q187777/
 ---
 
 ## Q187777: FP: Illegal Comments Removed from HTML Markup Bot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91000: &quot;How To Use Help&quot; Command in WFWG Setup Does Not Work"
-permalink: kb/091/Q91000/
+permalink: /kb/091/Q91000/
 ---
 
 ## Q91000: &quot;How To Use Help&quot; Command in WFWG Setup Does Not Work

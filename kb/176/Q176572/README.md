@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176572: FIX: ODBC Date Filter Greater Than 12/31/1999 Return No Records"
-permalink: kb/176/Q176572/
+permalink: /kb/176/Q176572/
 ---
 
 ## Q176572: FIX: ODBC Date Filter Greater Than 12/31/1999 Return No Records

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154272: Non-System Disk or Disk Error on Remote Boot Client"
-permalink: kb/154/Q154272/
+permalink: /kb/154/Q154272/
 ---
 
 ## Q154272: Non-System Disk or Disk Error on Remote Boot Client

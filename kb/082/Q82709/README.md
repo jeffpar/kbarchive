@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82709: SMARTDRV Cache Status -- What Does the Buffering Value Mean?"
-permalink: kb/082/Q82709/
+permalink: /kb/082/Q82709/
 ---
 
 ## Q82709: SMARTDRV Cache Status -- What Does the Buffering Value Mean?

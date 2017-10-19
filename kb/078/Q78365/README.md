@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78365: Blank Screen Appears Without Error Message in Program Manager"
-permalink: kb/078/Q78365/
+permalink: /kb/078/Q78365/
 ---
 
 ## Q78365: Blank Screen Appears Without Error Message in Program Manager

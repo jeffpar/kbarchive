@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170412: WD97: Word Stops Responding in Preview Via Web Page Wizard"
-permalink: kb/170/Q170412/
+permalink: /kb/170/Q170412/
 ---
 
 ## Q170412: WD97: Word Stops Responding in Preview Via Web Page Wizard

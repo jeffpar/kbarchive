@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102646: REPLACE.EXE Checks and Copies Only 255 Files"
-permalink: kb/102/Q102646/
+permalink: /kb/102/Q102646/
 ---
 
 ## Q102646: REPLACE.EXE Checks and Copies Only 255 Files

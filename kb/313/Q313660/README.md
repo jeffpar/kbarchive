@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313660: SMS: DDM Assigns Clients Incorrectly in Multi-Tiered Hierarchy"
-permalink: kb/313/Q313660/
+permalink: /kb/313/Q313660/
 ---
 
 ## Q313660: SMS: DDM Assigns Clients Incorrectly in Multi-Tiered Hierarchy

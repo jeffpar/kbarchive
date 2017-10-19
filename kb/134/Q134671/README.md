@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q134671: PC Gen: 3.5 Mail for PC Networks Technical Reference Disk [3.5]"
-permalink: kb/134/Q134671/
+title: "Q134671: PC Gen: 3.5 Mail for PC Networks Technical Reference Disk &#91;3.5&#93;"
+permalink: /kb/134/Q134671/
 ---
 
-## Q134671: PC Gen: 3.5 Mail for PC Networks Technical Reference Disk [3.5]
+## Q134671: PC Gen: 3.5 Mail for PC Networks Technical Reference Disk &#91;3.5&#93;
 
 	Article: Q134671
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255247: Terminal Server Profile Path and Home Directory Missing"
-permalink: kb/255/Q255247/
+permalink: /kb/255/Q255247/
 ---
 
 ## Q255247: Terminal Server Profile Path and Home Directory Missing

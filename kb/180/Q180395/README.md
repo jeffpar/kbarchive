@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180395: HDR Unable to Create a PK Column on DB2 Subscription Table"
-permalink: kb/180/Q180395/
+permalink: /kb/180/Q180395/
 ---
 
 ## Q180395: HDR Unable to Create a PK Column on DB2 Subscription Table

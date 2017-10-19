@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177291: A Bridge Too Far: Pointing Device Does Not Respond Correctly"
-permalink: kb/177/Q177291/
+permalink: /kb/177/Q177291/
 ---
 
 ## Q177291: A Bridge Too Far: Pointing Device Does Not Respond Correctly

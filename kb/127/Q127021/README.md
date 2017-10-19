@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127021: SMARTDrive Version History"
-permalink: kb/127/Q127021/
+permalink: /kb/127/Q127021/
 ---
 
 ## Q127021: SMARTDrive Version History

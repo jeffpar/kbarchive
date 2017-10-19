@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316659: MSN Hotmail Top Issues and Support Information"
-permalink: kb/316/Q316659/
+permalink: /kb/316/Q316659/
 ---
 
 ## Q316659: MSN Hotmail Top Issues and Support Information

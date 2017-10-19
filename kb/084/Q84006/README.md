@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84006: Recording Requirements for Sound Recorder"
-permalink: kb/084/Q84006/
+permalink: /kb/084/Q84006/
 ---
 
 ## Q84006: Recording Requirements for Sound Recorder

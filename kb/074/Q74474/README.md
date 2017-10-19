@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74474: INFO: Killing the Parent of a Modal Dialog Box"
-permalink: kb/074/Q74474/
+permalink: /kb/074/Q74474/
 ---
 
 ## Q74474: INFO: Killing the Parent of a Modal Dialog Box

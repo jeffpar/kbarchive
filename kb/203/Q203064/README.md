@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203064: IIS: Notes on Server-Side Includes (SSI) Syntax"
-permalink: kb/203/Q203064/
+permalink: /kb/203/Q203064/
 ---
 
 ## Q203064: IIS: Notes on Server-Side Includes (SSI) Syntax

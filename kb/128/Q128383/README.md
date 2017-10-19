@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128383: ADT2: Updated ADT License Agreement Available"
-permalink: kb/128/Q128383/
+permalink: /kb/128/Q128383/
 ---
 
 ## Q128383: ADT2: Updated ADT License Agreement Available

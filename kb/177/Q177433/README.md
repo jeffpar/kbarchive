@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177433: PRB: Build on Win 95/98/Me Reports &quot;Error spawning empfile.exe&quot;"
-permalink: kb/177/Q177433/
+permalink: /kb/177/Q177433/
 ---
 
 ## Q177433: PRB: Build on Win 95/98/Me Reports &quot;Error spawning empfile.exe&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149152: BUG: !MS&#36;ATTRIBUTES in Interface Fails with Free-Form Source"
-permalink: kb/149/Q149152/
+permalink: /kb/149/Q149152/
 ---
 
 ## Q149152: BUG: !MS&#36;ATTRIBUTES in Interface Fails with Free-Form Source

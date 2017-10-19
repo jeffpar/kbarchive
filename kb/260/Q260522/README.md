@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260522: SMS: Cannot Target Software to Windows NT 4.0 SP6 x86 Computers"
-permalink: kb/260/Q260522/
+permalink: /kb/260/Q260522/
 ---
 
 ## Q260522: SMS: Cannot Target Software to Windows NT 4.0 SP6 x86 Computers

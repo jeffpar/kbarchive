@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80859: Wordstar Err Msg: Application Has Violated System Integrity"
-permalink: kb/080/Q80859/
+permalink: /kb/080/Q80859/
 ---
 
 ## Q80859: Wordstar Err Msg: Application Has Violated System Integrity

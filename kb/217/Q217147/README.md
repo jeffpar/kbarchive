@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217147: How to Restart Cluster Server After Clusdb Corruption"
-permalink: kb/217/Q217147/
+permalink: /kb/217/Q217147/
 ---
 
 ## Q217147: How to Restart Cluster Server After Clusdb Corruption

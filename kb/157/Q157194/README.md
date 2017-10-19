@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157194: PRB: TYPE Function Does Not Indicate Character(Binary)"
-permalink: kb/157/Q157194/
+permalink: /kb/157/Q157194/
 ---
 
 ## Q157194: PRB: TYPE Function Does Not Indicate Character(Binary)

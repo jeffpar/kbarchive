@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266419: How to Disable Network Browsing But Keep UNC Functionality"
-permalink: kb/266/Q266419/
+permalink: /kb/266/Q266419/
 ---
 
 ## Q266419: How to Disable Network Browsing But Keep UNC Functionality

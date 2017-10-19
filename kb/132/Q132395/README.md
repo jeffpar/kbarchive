@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132395: Wacom Pen Tablet Does Not Function in Windows 95"
-permalink: kb/132/Q132395/
+permalink: /kb/132/Q132395/
 ---
 
 ## Q132395: Wacom Pen Tablet Does Not Function in Windows 95

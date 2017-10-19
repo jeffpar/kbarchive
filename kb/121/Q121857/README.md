@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121857: MS-DOS Setup Displays Error: Setup Error Detected"
-permalink: kb/121/Q121857/
+permalink: /kb/121/Q121857/
 ---
 
 ## Q121857: MS-DOS Setup Displays Error: Setup Error Detected

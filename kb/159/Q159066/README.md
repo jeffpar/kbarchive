@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159066: A Client Crash May Prevent an NTFS Volume Dismount"
-permalink: kb/159/Q159066/
+permalink: /kb/159/Q159066/
 ---
 
 ## Q159066: A Client Crash May Prevent an NTFS Volume Dismount

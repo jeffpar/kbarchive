@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171005: SMS: Site Config Manager Service Locks Trusted Service Account"
-permalink: kb/171/Q171005/
+permalink: /kb/171/Q171005/
 ---
 
 ## Q171005: SMS: Site Config Manager Service Locks Trusted Service Account

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59571: Flight Simulator: Kraft High-Speed Joystick Adapter Card"
-permalink: kb/059/Q59571/
+permalink: /kb/059/Q59571/
 ---
 
 ## Q59571: Flight Simulator: Kraft High-Speed Joystick Adapter Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101655: Copying Directory with SFM Loses Icons for Some Files"
-permalink: kb/101/Q101655/
+permalink: /kb/101/Q101655/
 ---
 
 ## Q101655: Copying Directory with SFM Loses Icons for Some Files

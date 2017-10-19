@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125513: Cannot Log On to Domain Using Xircom Adapter in WFWG"
-permalink: kb/125/Q125513/
+permalink: /kb/125/Q125513/
 ---
 
 ## Q125513: Cannot Log On to Domain Using Xircom Adapter in WFWG

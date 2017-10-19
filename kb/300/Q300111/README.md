@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300111: Error Message: Unknown Partner Error at Passport Login Server"
-permalink: kb/300/Q300111/
+permalink: /kb/300/Q300111/
 ---
 
 ## Q300111: Error Message: Unknown Partner Error at Passport Login Server

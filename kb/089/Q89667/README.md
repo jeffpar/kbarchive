@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89667: Ringing the System Bell in FoxBASE and FoxBASE+"
-permalink: kb/089/Q89667/
+permalink: /kb/089/Q89667/
 ---
 
 ## Q89667: Ringing the System Bell in FoxBASE and FoxBASE+

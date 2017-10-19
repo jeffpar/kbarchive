@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233284: XADM: Event Service Causes Unwanted Public Folder Replication"
-permalink: kb/233/Q233284/
+permalink: /kb/233/Q233284/
 ---
 
 ## Q233284: XADM: Event Service Causes Unwanted Public Folder Replication

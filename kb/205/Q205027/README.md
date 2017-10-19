@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205027: Dead Gateway Detection with RRAS and Demand Dial Connections"
-permalink: kb/205/Q205027/
+permalink: /kb/205/Q205027/
 ---
 
 ## Q205027: Dead Gateway Detection with RRAS and Demand Dial Connections

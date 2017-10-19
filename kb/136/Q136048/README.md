@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136048: PC Gen: Running GIMPORT.EXE on Windows NT"
-permalink: kb/136/Q136048/
+permalink: /kb/136/Q136048/
 ---
 
 ## Q136048: PC Gen: Running GIMPORT.EXE on Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168371: HOWTO: IObjectSafety Marks ATL Controls Safe for Initializing"
-permalink: kb/168/Q168371/
+permalink: /kb/168/Q168371/
 ---
 
 ## Q168371: HOWTO: IObjectSafety Marks ATL Controls Safe for Initializing

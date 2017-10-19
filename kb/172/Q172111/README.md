@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172111: FIX: VB5 Focus Not Returned to MDI Form After a Dialog Is Shown"
-permalink: kb/172/Q172111/
+permalink: /kb/172/Q172111/
 ---
 
 ## Q172111: FIX: VB5 Focus Not Returned to MDI Form After a Dialog Is Shown

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195519: XADM: How to Recover When the Transaction Log Drive Fails"
-permalink: kb/195/Q195519/
+permalink: /kb/195/Q195519/
 ---
 
 ## Q195519: XADM: How to Recover When the Transaction Log Drive Fails

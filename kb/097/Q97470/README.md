@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97470: PC WRmt: No Migration for Messages from MS-DOS Remote"
-permalink: kb/097/Q97470/
+permalink: /kb/097/Q97470/
 ---
 
 ## Q97470: PC WRmt: No Migration for Messages from MS-DOS Remote

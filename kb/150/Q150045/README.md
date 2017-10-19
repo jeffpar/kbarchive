@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150045: Mac Encarta 96 Hangs or Quits When Choosing a Word Processor"
-permalink: kb/150/Q150045/
+permalink: /kb/150/Q150045/
 ---
 
 ## Q150045: Mac Encarta 96 Hangs or Quits When Choosing a Word Processor

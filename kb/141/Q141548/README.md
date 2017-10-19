@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141548: PRB: 16-Bit Visual Basic Requires 16-Bit SourceSafe"
-permalink: kb/141/Q141548/
+permalink: /kb/141/Q141548/
 ---
 
 ## Q141548: PRB: 16-Bit Visual Basic Requires 16-Bit SourceSafe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120822: Error Message: Bad or Missing Command Interpreter"
-permalink: kb/120/Q120822/
+permalink: /kb/120/Q120822/
 ---
 
 ## Q120822: Error Message: Bad or Missing Command Interpreter

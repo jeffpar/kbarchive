@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221628: FIX: Using Genhtml.prg in Distributed Application is Difficult"
-permalink: kb/221/Q221628/
+permalink: /kb/221/Q221628/
 ---
 
 ## Q221628: FIX: Using Genhtml.prg in Distributed Application is Difficult

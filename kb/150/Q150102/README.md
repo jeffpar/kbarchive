@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150102: HP Netserver Stop Err Msg: Stop 0x0000007F (00000008)"
-permalink: kb/150/Q150102/
+permalink: /kb/150/Q150102/
 ---
 
 ## Q150102: HP Netserver Stop Err Msg: Stop 0x0000007F (00000008)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146444: FIX: Working Directory Setting with Trailing Backslash Fails"
-permalink: kb/146/Q146444/
+permalink: /kb/146/Q146444/
 ---
 
 ## Q146444: FIX: Working Directory Setting with Trailing Backslash Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152390: Gardening: Back Button Does Not Return to Original Category"
-permalink: kb/152/Q152390/
+permalink: /kb/152/Q152390/
 ---
 
 ## Q152390: Gardening: Back Button Does Not Return to Original Category

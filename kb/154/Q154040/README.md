@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154040: How To Print Seven Habits Tools Information"
-permalink: kb/154/Q154040/
+permalink: /kb/154/Q154040/
 ---
 
 ## Q154040: How To Print Seven Habits Tools Information

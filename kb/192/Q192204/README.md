@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192204: XADM: Information Store Stops When Forwarding Internet Message"
-permalink: kb/192/Q192204/
+permalink: /kb/192/Q192204/
 ---
 
 ## Q192204: XADM: Information Store Stops When Forwarding Internet Message

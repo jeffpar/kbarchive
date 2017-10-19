@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75520: Changes to Code in QBasic Disappear After Pressing CTRL+BREAK"
-permalink: kb/075/Q75520/
+permalink: /kb/075/Q75520/
 ---
 
 ## Q75520: Changes to Code in QBasic Disappear After Pressing CTRL+BREAK

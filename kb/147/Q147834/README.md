@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147834: Macintosh Ancient Lands: Ancient Lands ReadMe Contents"
-permalink: kb/147/Q147834/
+permalink: /kb/147/Q147834/
 ---
 
 ## Q147834: Macintosh Ancient Lands: Ancient Lands ReadMe Contents

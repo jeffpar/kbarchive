@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139328: INF: No ODBC 32-bit Btrieve Driver Available from Microsoft"
-permalink: kb/139/Q139328/
+permalink: /kb/139/Q139328/
 ---
 
 ## Q139328: INF: No ODBC 32-bit Btrieve Driver Available from Microsoft

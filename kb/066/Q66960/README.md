@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66960: Solitaire Card Backs Display Animated Effects in Windows"
-permalink: kb/066/Q66960/
+permalink: /kb/066/Q66960/
 ---
 
 ## Q66960: Solitaire Card Backs Display Animated Effects in Windows

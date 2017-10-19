@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136020: INFO: Glyphs in Visual C++ with Source Code Control Enabled"
-permalink: kb/136/Q136020/
+permalink: /kb/136/Q136020/
 ---
 
 ## Q136020: INFO: Glyphs in Visual C++ with Source Code Control Enabled

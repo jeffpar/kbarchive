@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150664: Mastering Visual Basic: README.WRI Content"
-permalink: kb/150/Q150664/
+permalink: /kb/150/Q150664/
 ---
 
 ## Q150664: Mastering Visual Basic: README.WRI Content

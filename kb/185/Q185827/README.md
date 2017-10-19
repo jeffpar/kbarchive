@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185827: WD97: Error Message Received on Opening Works 4.x Files"
-permalink: kb/185/Q185827/
+permalink: /kb/185/Q185827/
 ---
 
 ## Q185827: WD97: Error Message Received on Opening Works 4.x Files

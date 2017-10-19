@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183771: INFO: Registry Entries Made by an ActiveX Component"
-permalink: kb/183/Q183771/
+permalink: /kb/183/Q183771/
 ---
 
 ## Q183771: INFO: Registry Entries Made by an ActiveX Component

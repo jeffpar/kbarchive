@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176648: XADM: Change in Delivery Restrictions Does Not Update"
-permalink: kb/176/Q176648/
+permalink: /kb/176/Q176648/
 ---
 
 ## Q176648: XADM: Change in Delivery Restrictions Does Not Update

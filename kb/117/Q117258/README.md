@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117258: SFM Converts Macintosh HFS Filenames to NTFS Unicode"
-permalink: kb/117/Q117258/
+permalink: /kb/117/Q117258/
 ---
 
 ## Q117258: SFM Converts Macintosh HFS Filenames to NTFS Unicode

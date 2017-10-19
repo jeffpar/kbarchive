@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194204: HOWTO: Extend the Web Publishing Wizard with Custom Layouts"
-permalink: kb/194/Q194204/
+permalink: /kb/194/Q194204/
 ---
 
 ## Q194204: HOWTO: Extend the Web Publishing Wizard with Custom Layouts

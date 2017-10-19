@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173451: XWEB: Err Msg: Failed to get Inbox, Using OWA"
-permalink: kb/173/Q173451/
+permalink: /kb/173/Q173451/
 ---
 
 ## Q173451: XWEB: Err Msg: Failed to get Inbox, Using OWA

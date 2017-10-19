@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256586: SMS: Backup May Delete Contents of Target Folder"
-permalink: kb/256/Q256586/
+permalink: /kb/256/Q256586/
 ---
 
 ## Q256586: SMS: Backup May Delete Contents of Target Folder

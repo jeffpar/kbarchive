@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142653: STOP Message Occurs Calling GetThreadContext/SetThreadContext"
-permalink: kb/142/Q142653/
+permalink: /kb/142/Q142653/
 ---
 
 ## Q142653: STOP Message Occurs Calling GetThreadContext/SetThreadContext

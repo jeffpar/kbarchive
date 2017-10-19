@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84207: Small Gaps Appear in Output When Printing to an Epson LQ-2250"
-permalink: kb/084/Q84207/
+permalink: /kb/084/Q84207/
 ---
 
 ## Q84207: Small Gaps Appear in Output When Printing to an Epson LQ-2250

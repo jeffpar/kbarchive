@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90070: Not All Playable File Types Have Help Pop-up Topics"
-permalink: kb/090/Q90070/
+permalink: /kb/090/Q90070/
 ---
 
 ## Q90070: Not All Playable File Types Have Help Pop-up Topics

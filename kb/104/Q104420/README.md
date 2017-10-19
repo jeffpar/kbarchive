@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104420: PC Forms: Data Segment Error When Routing File"
-permalink: kb/104/Q104420/
+permalink: /kb/104/Q104420/
 ---
 
 ## Q104420: PC Forms: Data Segment Error When Routing File

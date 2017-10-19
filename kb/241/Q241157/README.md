@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241157: XCON: Send and Receive Mail Through a Demand Dial Router"
-permalink: kb/241/Q241157/
+permalink: /kb/241/Q241157/
 ---
 
 ## Q241157: XCON: Send and Receive Mail Through a Demand Dial Router

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321245: 3270 Emulators and LUA Apps Hang When They Use Single Sign-On"
-permalink: kb/321/Q321245/
+permalink: /kb/321/Q321245/
 ---
 
 ## Q321245: 3270 Emulators and LUA Apps Hang When They Use Single Sign-On

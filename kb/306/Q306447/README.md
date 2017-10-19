@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306447: Sysprep.exe Generates Duplicate Computer Names"
-permalink: kb/306/Q306447/
+permalink: /kb/306/Q306447/
 ---
 
 ## Q306447: Sysprep.exe Generates Duplicate Computer Names

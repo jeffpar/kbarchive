@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180636: Can Still Move Up and Down If All LUs Selected for User"
-permalink: kb/180/Q180636/
+permalink: /kb/180/Q180636/
 ---
 
 ## Q180636: Can Still Move Up and Down If All LUs Selected for User

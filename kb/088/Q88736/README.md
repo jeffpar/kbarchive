@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88736: Software Labs Fonts May Cause Crosslinked Files"
-permalink: kb/088/Q88736/
+permalink: /kb/088/Q88736/
 ---
 
 ## Q88736: Software Labs Fonts May Cause Crosslinked Files

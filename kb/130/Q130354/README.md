@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130354: PRB: GRID.COLUMN() Gives &quot;Property COLUMN is not Found&quot; Error"
-permalink: kb/130/Q130354/
+permalink: /kb/130/Q130354/
 ---
 
 ## Q130354: PRB: GRID.COLUMN() Gives &quot;Property COLUMN is not Found&quot; Error

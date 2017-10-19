@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148600: Updated OS/2 Client DLL Files Not Included in Service Pack 1"
-permalink: kb/148/Q148600/
+permalink: /kb/148/Q148600/
 ---
 
 ## Q148600: Updated OS/2 Client DLL Files Not Included in Service Pack 1

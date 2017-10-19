@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286020: HOWTO: Automate Trip Routing in Microsoft MapPoint"
-permalink: kb/286/Q286020/
+permalink: /kb/286/Q286020/
 ---
 
 ## Q286020: HOWTO: Automate Trip Routing in Microsoft MapPoint

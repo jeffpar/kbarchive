@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150562: Bookshelf 96-97 Scales Incorrectly on PostScript Printer"
-permalink: kb/150/Q150562/
+permalink: /kb/150/Q150562/
 ---
 
 ## Q150562: Bookshelf 96-97 Scales Incorrectly on PostScript Printer

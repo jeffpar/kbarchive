@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133100: FIX: Timer is Visible on a Form After Using Graphics Methods"
-permalink: kb/133/Q133100/
+permalink: /kb/133/Q133100/
 ---
 
 ## Q133100: FIX: Timer is Visible on a Form After Using Graphics Methods

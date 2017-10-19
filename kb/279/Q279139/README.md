@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279139: FIX: COM Servers Fail With Heavy Load in MTS and Windows 2000"
-permalink: kb/279/Q279139/
+permalink: /kb/279/Q279139/
 ---
 
 ## Q279139: FIX: COM Servers Fail With Heavy Load in MTS and Windows 2000

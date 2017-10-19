@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68827: Updating Cached Private Profiles (.INI Files)"
-permalink: kb/068/Q68827/
+permalink: /kb/068/Q68827/
 ---
 
 ## Q68827: Updating Cached Private Profiles (.INI Files)

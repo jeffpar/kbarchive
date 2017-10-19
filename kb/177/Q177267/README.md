@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177267: FIX: Unattended Setup Disables EnableDHCPFlag on Second Adapter"
-permalink: kb/177/Q177267/
+permalink: /kb/177/Q177267/
 ---
 
 ## Q177267: FIX: Unattended Setup Disables EnableDHCPFlag on Second Adapter

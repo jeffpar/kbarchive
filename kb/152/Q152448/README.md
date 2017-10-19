@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152448: Mouse Cursor Freezes Intermittently in Windows NT"
-permalink: kb/152/Q152448/
+permalink: /kb/152/Q152448/
 ---
 
 ## Q152448: Mouse Cursor Freezes Intermittently in Windows NT

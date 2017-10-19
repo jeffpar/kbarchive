@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131371: Determining System Version from a Windows-Based Application"
-permalink: kb/131/Q131371/
+permalink: /kb/131/Q131371/
 ---
 
 ## Q131371: Determining System Version from a Windows-Based Application

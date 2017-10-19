@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243300: Err Msg: Remote Tools Security Rights to Run Remote Tools on..."
-permalink: kb/243/Q243300/
+permalink: /kb/243/Q243300/
 ---
 
 ## Q243300: Err Msg: Remote Tools Security Rights to Run Remote Tools on...

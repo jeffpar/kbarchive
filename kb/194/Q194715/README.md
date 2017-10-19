@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194715: Oracle Diagnostic Tool Missing After Installing Service Pack 4"
-permalink: kb/194/Q194715/
+permalink: /kb/194/Q194715/
 ---
 
 ## Q194715: Oracle Diagnostic Tool Missing After Installing Service Pack 4

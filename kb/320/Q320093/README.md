@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320093: Streets and Trips 2002: How to Import Pushpins from Version 2000"
-permalink: kb/320/Q320093/
+permalink: /kb/320/Q320093/
 ---
 
 ## Q320093: Streets and Trips 2002: How to Import Pushpins from Version 2000

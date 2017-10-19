@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244364: FS 2000 Err Msg: Invalid Page Fault in Module Joy.cpl"
-permalink: kb/244/Q244364/
+permalink: /kb/244/Q244364/
 ---
 
 ## Q244364: FS 2000 Err Msg: Invalid Page Fault in Module Joy.cpl

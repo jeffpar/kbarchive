@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163417: WD97: Command to Display the Properties Dialog Box"
-permalink: kb/163/Q163417/
+permalink: /kb/163/Q163417/
 ---
 
 ## Q163417: WD97: Command to Display the Properties Dialog Box

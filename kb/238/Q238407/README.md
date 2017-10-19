@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238407: WD97: Table Border Broken When Table Breaks Across Page"
-permalink: kb/238/Q238407/
+permalink: /kb/238/Q238407/
 ---
 
 ## Q238407: WD97: Table Border Broken When Table Breaks Across Page

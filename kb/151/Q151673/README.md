@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151673: FIX: Compiler Allocates Struct with Nested Struct Incorrectly"
-permalink: kb/151/Q151673/
+permalink: /kb/151/Q151673/
 ---
 
 ## Q151673: FIX: Compiler Allocates Struct with Nested Struct Incorrectly

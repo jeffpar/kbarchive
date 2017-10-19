@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110552: Recovering Folders from a Corrupted Microsoft Mail File"
-permalink: kb/110/Q110552/
+permalink: /kb/110/Q110552/
 ---
 
 ## Q110552: Recovering Folders from a Corrupted Microsoft Mail File

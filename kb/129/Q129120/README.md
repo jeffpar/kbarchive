@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129120: MAPI Unable to Run as a Windows NT Service"
-permalink: kb/129/Q129120/
+permalink: /kb/129/Q129120/
 ---
 
 ## Q129120: MAPI Unable to Run as a Windows NT Service

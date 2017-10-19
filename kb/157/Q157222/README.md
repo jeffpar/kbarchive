@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157222: STL Sample for the lower_bound Function"
-permalink: kb/157/Q157222/
+permalink: /kb/157/Q157222/
 ---
 
 ## Q157222: STL Sample for the lower_bound Function

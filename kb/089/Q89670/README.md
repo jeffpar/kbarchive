@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89670: Configuring FoxBASE+ Memory Use in CONFIG.FX"
-permalink: kb/089/Q89670/
+permalink: /kb/089/Q89670/
 ---
 
 ## Q89670: Configuring FoxBASE+ Memory Use in CONFIG.FX

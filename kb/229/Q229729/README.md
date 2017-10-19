@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229729: XWEB: Inetinfo.exe Stops Running During Anonymous MAPI Logon"
-permalink: kb/229/Q229729/
+permalink: /kb/229/Q229729/
 ---
 
 ## Q229729: XWEB: Inetinfo.exe Stops Running During Anonymous MAPI Logon

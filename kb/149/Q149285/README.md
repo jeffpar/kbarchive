@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149285: FIX: C1001 When Initialize Array of Type Class with #include"
-permalink: kb/149/Q149285/
+permalink: /kb/149/Q149285/
 ---
 
 ## Q149285: FIX: C1001 When Initialize Array of Type Class with #include

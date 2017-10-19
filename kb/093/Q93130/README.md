@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93130: Differentiating Between the Add-On Getting Started Manuals"
-permalink: kb/093/Q93130/
+permalink: /kb/093/Q93130/
 ---
 
 ## Q93130: Differentiating Between the Add-On Getting Started Manuals

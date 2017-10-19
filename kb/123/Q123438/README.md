@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123438: Cannot Launch FTP Batch File and Have Interactive Session"
-permalink: kb/123/Q123438/
+permalink: /kb/123/Q123438/
 ---
 
 ## Q123438: Cannot Launch FTP Batch File and Have Interactive Session

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142599: Cannot Establish Network Connection"
-permalink: kb/142/Q142599/
+permalink: /kb/142/Q142599/
 ---
 
 ## Q142599: Cannot Establish Network Connection

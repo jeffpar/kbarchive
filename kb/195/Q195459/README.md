@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195459: Tutor Err Msg: Insufficient Available Space to Install Program"
-permalink: kb/195/Q195459/
+permalink: /kb/195/Q195459/
 ---
 
 ## Q195459: Tutor Err Msg: Insufficient Available Space to Install Program

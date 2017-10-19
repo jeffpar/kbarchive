@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171893: NT Client Setup Fails to Properly Install SNANLS Support"
-permalink: kb/171/Q171893/
+permalink: /kb/171/Q171893/
 ---
 
 ## Q171893: NT Client Setup Fails to Properly Install SNANLS Support

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132617: Cannot Start Windows 95 After Installing Vidiola Premium Card"
-permalink: kb/132/Q132617/
+permalink: /kb/132/Q132617/
 ---
 
 ## Q132617: Cannot Start Windows 95 After Installing Vidiola Premium Card

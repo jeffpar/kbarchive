@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174932: STOP 0x0000000A with Halmps.dll When Restarting"
-permalink: kb/174/Q174932/
+permalink: /kb/174/Q174932/
 ---
 
 ## Q174932: STOP 0x0000000A with Halmps.dll When Restarting

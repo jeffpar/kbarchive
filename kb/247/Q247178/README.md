@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247178: Programs May Hang When Accessing Files from a File Server"
-permalink: kb/247/Q247178/
+permalink: /kb/247/Q247178/
 ---
 
 ## Q247178: Programs May Hang When Accessing Files from a File Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263089: WD97: &quot;This Is Not a Valid Filename&quot; Saving to Floppy Disk Drive"
-permalink: kb/263/Q263089/
+permalink: /kb/263/Q263089/
 ---
 
 ## Q263089: WD97: &quot;This Is Not a Valid Filename&quot; Saving to Floppy Disk Drive

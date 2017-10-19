@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183656: XCOPY Returns &quot;Invalid Parameter&quot; When Using Date Switch"
-permalink: kb/183/Q183656/
+permalink: /kb/183/Q183656/
 ---
 
 ## Q183656: XCOPY Returns &quot;Invalid Parameter&quot; When Using Date Switch

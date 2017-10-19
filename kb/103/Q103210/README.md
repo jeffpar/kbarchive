@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103210: Designing DLLs for Multiple Client Applications"
-permalink: kb/103/Q103210/
+permalink: /kb/103/Q103210/
 ---
 
 ## Q103210: Designing DLLs for Multiple Client Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163837: SNMP Query to Windows NT Returns Same Value for NTS and NTW"
-permalink: kb/163/Q163837/
+permalink: /kb/163/Q163837/
 ---
 
 ## Q163837: SNMP Query to Windows NT Returns Same Value for NTS and NTW

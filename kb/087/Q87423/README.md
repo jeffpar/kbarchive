@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87423: 360K Floppy Boot Disk for LAN Manager Basic Workstation"
-permalink: kb/087/Q87423/
+permalink: /kb/087/Q87423/
 ---
 
 ## Q87423: 360K Floppy Boot Disk for LAN Manager Basic Workstation

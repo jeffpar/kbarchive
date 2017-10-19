@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78410: System Hangs with dBase III 1.0 or III+ 1.0"
-permalink: kb/078/Q78410/
+permalink: /kb/078/Q78410/
 ---
 
 ## Q78410: System Hangs with dBase III 1.0 or III+ 1.0

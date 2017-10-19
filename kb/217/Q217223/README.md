@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217223: XCLN: BCC Recipients not Visible in Outlook 98"
-permalink: kb/217/Q217223/
+permalink: /kb/217/Q217223/
 ---
 
 ## Q217223: XCLN: BCC Recipients not Visible in Outlook 98

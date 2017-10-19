@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143225: FP: HTTP Code 501 Error Opening, Creating Web"
-permalink: kb/143/Q143225/
+permalink: /kb/143/Q143225/
 ---
 
 ## Q143225: FP: HTTP Code 501 Error Opening, Creating Web

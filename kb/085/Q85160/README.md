@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85160: Terminal's Originate Field May Hang Some Modems"
-permalink: kb/085/Q85160/
+permalink: /kb/085/Q85160/
 ---
 
 ## Q85160: Terminal's Originate Field May Hang Some Modems

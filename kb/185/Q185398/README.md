@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185398: WD97: How to Modify a Calculation Field to Appear Blank"
-permalink: kb/185/Q185398/
+permalink: /kb/185/Q185398/
 ---
 
 ## Q185398: WD97: How to Modify a Calculation Field to Appear Blank

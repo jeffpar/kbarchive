@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110666: Server Services Fail when Start Configuration Changed"
-permalink: kb/110/Q110666/
+permalink: /kb/110/Q110666/
 ---
 
 ## Q110666: Server Services Fail when Start Configuration Changed

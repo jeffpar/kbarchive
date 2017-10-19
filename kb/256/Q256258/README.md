@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256258: MapPoint 2001: Imported Records Do Not Appear on the Map"
-permalink: kb/256/Q256258/
+permalink: /kb/256/Q256258/
 ---
 
 ## Q256258: MapPoint 2001: Imported Records Do Not Appear on the Map

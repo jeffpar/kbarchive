@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162767: QMS Print System 1725 Always Defaults to Letter"
-permalink: kb/162/Q162767/
+permalink: /kb/162/Q162767/
 ---
 
 ## Q162767: QMS Print System 1725 Always Defaults to Letter

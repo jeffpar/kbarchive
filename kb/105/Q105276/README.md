@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105276: Differences Between LAN Manager and WFWG WinPopup"
-permalink: kb/105/Q105276/
+permalink: /kb/105/Q105276/
 ---
 
 ## Q105276: Differences Between LAN Manager and WFWG WinPopup

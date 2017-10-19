@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296686: IIS May Not Send an Entire Redirect Message Using an ISAPI Exten"
-permalink: kb/296/Q296686/
+permalink: /kb/296/Q296686/
 ---
 
 ## Q296686: IIS May Not Send an Entire Redirect Message Using an ISAPI Exten

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279527: MSN Companion setup dbconn2 err msg: &quot;...problem with the regist"
-permalink: kb/279/Q279527/
+permalink: /kb/279/Q279527/
 ---
 
 ## Q279527: MSN Companion setup dbconn2 err msg: &quot;...problem with the regist

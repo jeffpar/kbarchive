@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198058: WD97: Word Truncates Your User Information Mailing Address"
-permalink: kb/198/Q198058/
+permalink: /kb/198/Q198058/
 ---
 
 ## Q198058: WD97: Word Truncates Your User Information Mailing Address

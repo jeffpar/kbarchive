@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265427: Err Msg: Your Computer Is Not Properly Configured..."
-permalink: kb/265/Q265427/
+permalink: /kb/265/Q265427/
 ---
 
 ## Q265427: Err Msg: Your Computer Is Not Properly Configured...

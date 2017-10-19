@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137864: PC NTMMTA: Err Msg: A Failure Occurred Attempting to Read..."
-permalink: kb/137/Q137864/
+permalink: /kb/137/Q137864/
 ---
 
 ## Q137864: PC NTMMTA: Err Msg: A Failure Occurred Attempting to Read...

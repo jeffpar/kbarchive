@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86262: DOC: PENWIN.DLL Requires Windows 3.1"
-permalink: kb/086/Q86262/
+permalink: /kb/086/Q86262/
 ---
 
 ## Q86262: DOC: PENWIN.DLL Requires Windows 3.1

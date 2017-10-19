@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64507: FontWare Inserts Incorrect Canon Printer Driver Header Section"
-permalink: kb/064/Q64507/
+permalink: /kb/064/Q64507/
 ---
 
 ## Q64507: FontWare Inserts Incorrect Canon Printer Driver Header Section

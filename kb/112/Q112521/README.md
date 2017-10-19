@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112521: Changing CD on SFM Causes Mac Client Error"
-permalink: kb/112/Q112521/
+permalink: /kb/112/Q112521/
 ---
 
 ## Q112521: Changing CD on SFM Causes Mac Client Error

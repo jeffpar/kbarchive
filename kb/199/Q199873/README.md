@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199873: PRB: Can't Remove Controls from the Controls Toolbar in VC++"
-permalink: kb/199/Q199873/
+permalink: /kb/199/Q199873/
 ---
 
 ## Q199873: PRB: Can't Remove Controls from the Controls Toolbar in VC++

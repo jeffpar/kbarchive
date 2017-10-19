@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171812: FIX: Run-Time Error When DataObject Passed as Object"
-permalink: kb/171/Q171812/
+permalink: /kb/171/Q171812/
 ---
 
 ## Q171812: FIX: Run-Time Error When DataObject Passed as Object

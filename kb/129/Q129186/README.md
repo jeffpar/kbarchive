@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129186: PRB: Delta Labels Are Not Converted with DELTA_SS.EXE"
-permalink: kb/129/Q129186/
+permalink: /kb/129/Q129186/
 ---
 
 ## Q129186: PRB: Delta Labels Are Not Converted with DELTA_SS.EXE

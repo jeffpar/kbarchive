@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206134: Windows NT 4.0 Does Not Recognize Jaz Drive During Setup"
-permalink: kb/206/Q206134/
+permalink: /kb/206/Q206134/
 ---
 
 ## Q206134: Windows NT 4.0 Does Not Recognize Jaz Drive During Setup

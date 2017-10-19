@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130808: Help Building Fortran PowerStation 32 App that Targets Win32s"
-permalink: kb/130/Q130808/
+permalink: /kb/130/Q130808/
 ---
 
 ## Q130808: Help Building Fortran PowerStation 32 App that Targets Win32s

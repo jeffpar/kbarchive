@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260180: Access Violation in Inetinfo.exe"
-permalink: kb/260/Q260180/
+permalink: /kb/260/Q260180/
 ---
 
 ## Q260180: Access Violation in Inetinfo.exe

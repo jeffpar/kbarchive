@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q87274: Function of the [RenFiles] Section of SETUP.INF File"
-permalink: kb/087/Q87274/
+title: "Q87274: Function of the &#91;RenFiles&#93; Section of SETUP.INF File"
+permalink: /kb/087/Q87274/
 ---
 
-## Q87274: Function of the [RenFiles] Section of SETUP.INF File
+## Q87274: Function of the &#91;RenFiles&#93; Section of SETUP.INF File
 
 	Article: Q87274
 	Product(s): Microsoft Windows 95.x Retail Product

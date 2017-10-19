@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135086: SMS Service Manager Pause Button Has No Effect"
-permalink: kb/135/Q135086/
+permalink: /kb/135/Q135086/
 ---
 
 ## Q135086: SMS Service Manager Pause Button Has No Effect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130244: PRB: All New Field Values Set to .NULL. When You Modify Table"
-permalink: kb/130/Q130244/
+permalink: /kb/130/Q130244/
 ---
 
 ## Q130244: PRB: All New Field Values Set to .NULL. When You Modify Table

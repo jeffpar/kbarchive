@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179011: ODE: Running Microsoft ODE97 on a Computer with IE 4.0"
-permalink: kb/179/Q179011/
+permalink: /kb/179/Q179011/
 ---
 
 ## Q179011: ODE: Running Microsoft ODE97 on a Computer with IE 4.0

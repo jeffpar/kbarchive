@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154417: XCLN: EFD Form Project Appears Skewed When Loaded in VB"
-permalink: kb/154/Q154417/
+permalink: /kb/154/Q154417/
 ---
 
 ## Q154417: XCLN: EFD Form Project Appears Skewed When Loaded in VB

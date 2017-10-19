@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168205: INFO: Difference Between BeginTrans/CommitTrans and Optimistic B"
-permalink: kb/168/Q168205/
+permalink: /kb/168/Q168205/
 ---
 
 ## Q168205: INFO: Difference Between BeginTrans/CommitTrans and Optimistic B

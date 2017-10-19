@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249866: Description of #MH Entry in Windows NT Lmhosts File"
-permalink: kb/249/Q249866/
+permalink: /kb/249/Q249866/
 ---
 
 ## Q249866: Description of #MH Entry in Windows NT Lmhosts File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197491: XADM: Large NNTP Header Causes Store to Consume 100% of CPU Time"
-permalink: kb/197/Q197491/
+permalink: /kb/197/Q197491/
 ---
 
 ## Q197491: XADM: Large NNTP Header Causes Store to Consume 100% of CPU Time

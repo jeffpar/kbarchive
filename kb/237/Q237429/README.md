@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237429: PRB: Very Wide Editboxes Do Not Display Data"
-permalink: kb/237/Q237429/
+permalink: /kb/237/Q237429/
 ---
 
 ## Q237429: PRB: Very Wide Editboxes Do Not Display Data

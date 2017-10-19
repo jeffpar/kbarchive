@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98760: DoubleSpace Error: R6003 - Integer Divide by Zero"
-permalink: kb/098/Q98760/
+permalink: /kb/098/Q98760/
 ---
 
 ## Q98760: DoubleSpace Error: R6003 - Integer Divide by Zero

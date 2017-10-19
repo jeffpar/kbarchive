@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280058: List of Bugs Fixed in SNA Server 4.0 Service Pack 4"
-permalink: kb/280/Q280058/
+permalink: /kb/280/Q280058/
 ---
 
 ## Q280058: List of Bugs Fixed in SNA Server 4.0 Service Pack 4

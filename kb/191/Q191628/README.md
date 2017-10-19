@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191628: Urban Assault: Cannot Change Display Resolution in Game"
-permalink: kb/191/Q191628/
+permalink: /kb/191/Q191628/
 ---
 
 ## Q191628: Urban Assault: Cannot Change Display Resolution in Game

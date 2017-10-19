@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96058: How to Switch Between VGA and Monochrome Monitors in Windows"
-permalink: kb/096/Q96058/
+permalink: /kb/096/Q96058/
 ---
 
 ## Q96058: How to Switch Between VGA and Monochrome Monitors in Windows

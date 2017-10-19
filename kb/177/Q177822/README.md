@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177822: XCLN: Err Msg: General Protection Fault Running Forms Designer"
-permalink: kb/177/Q177822/
+permalink: /kb/177/Q177822/
 ---
 
 ## Q177822: XCLN: Err Msg: General Protection Fault Running Forms Designer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142235: Protected Share Can Be Accessed Without Cached Password"
-permalink: kb/142/Q142235/
+permalink: /kb/142/Q142235/
 ---
 
 ## Q142235: Protected Share Can Be Accessed Without Cached Password

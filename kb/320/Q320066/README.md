@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320066: SMS: A Large .tmp File Is Created When You Install a Client"
-permalink: kb/320/Q320066/
+permalink: /kb/320/Q320066/
 ---
 
 ## Q320066: SMS: A Large .tmp File Is Created When You Install a Client

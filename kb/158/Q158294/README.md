@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158294: Registry Editor Could Not Accomplish the Requested Operation"
-permalink: kb/158/Q158294/
+permalink: /kb/158/Q158294/
 ---
 
 ## Q158294: Registry Editor Could Not Accomplish the Requested Operation

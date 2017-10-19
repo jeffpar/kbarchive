@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94129: Adding a Second Disk to 3Server"
-permalink: kb/094/Q94129/
+permalink: /kb/094/Q94129/
 ---
 
 ## Q94129: Adding a Second Disk to 3Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103688: PRB: &quot;Cannot Write VER.DLL&quot; Installing FoxPro with Windows 3.0"
-permalink: kb/103/Q103688/
+permalink: /kb/103/Q103688/
 ---
 
 ## Q103688: PRB: &quot;Cannot Write VER.DLL&quot; Installing FoxPro with Windows 3.0

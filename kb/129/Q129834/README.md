@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129834: Garbled Screen After Installing Extras for Pan Chinese WinNT"
-permalink: kb/129/Q129834/
+permalink: /kb/129/Q129834/
 ---
 
 ## Q129834: Garbled Screen After Installing Extras for Pan Chinese WinNT

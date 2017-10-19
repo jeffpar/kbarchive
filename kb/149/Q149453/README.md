@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149453: Qualifier 11 Using DFT Link Service"
-permalink: kb/149/Q149453/
+permalink: /kb/149/Q149453/
 ---
 
 ## Q149453: Qualifier 11 Using DFT Link Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161778: TCP/IP Clients Can't Connect to SNA Server on Windows NT 4.0"
-permalink: kb/161/Q161778/
+permalink: /kb/161/Q161778/
 ---
 
 ## Q161778: TCP/IP Clients Can't Connect to SNA Server on Windows NT 4.0

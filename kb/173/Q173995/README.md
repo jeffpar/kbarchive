@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173995: SMS: How to Configure Multiple Shared Apps to Use a Single Share"
-permalink: kb/173/Q173995/
+permalink: /kb/173/Q173995/
 ---
 
 ## Q173995: SMS: How to Configure Multiple Shared Apps to Use a Single Share

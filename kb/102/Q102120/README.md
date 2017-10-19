@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102120: Mac Srv: Server-to-Server Messages"
-permalink: kb/102/Q102120/
+permalink: /kb/102/Q102120/
 ---
 
 ## Q102120: Mac Srv: Server-to-Server Messages

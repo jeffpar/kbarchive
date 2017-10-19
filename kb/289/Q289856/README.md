@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289856: User Name Mapping May Not Be Updated"
-permalink: kb/289/Q289856/
+permalink: /kb/289/Q289856/
 ---
 
 ## Q289856: User Name Mapping May Not Be Updated

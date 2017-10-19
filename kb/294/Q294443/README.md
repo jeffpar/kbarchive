@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294443: XCLN:  How to Add Exchange 5.0 Client as Default E-mail Program"
-permalink: kb/294/Q294443/
+permalink: /kb/294/Q294443/
 ---
 
 ## Q294443: XCLN:  How to Add Exchange 5.0 Client as Default E-mail Program

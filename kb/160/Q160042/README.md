@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160042: HOWTO: Retrieve Language and Code Page id Using VerQueryValue"
-permalink: kb/160/Q160042/
+permalink: /kb/160/Q160042/
 ---
 
 ## Q160042: HOWTO: Retrieve Language and Code Page id Using VerQueryValue

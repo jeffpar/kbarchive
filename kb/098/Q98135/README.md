@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98135: &quot;General Failure Error Reading Drive O:&quot; Error Message"
-permalink: kb/098/Q98135/
+permalink: /kb/098/Q98135/
 ---
 
 ## Q98135: &quot;General Failure Error Reading Drive O:&quot; Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129220: Taskbar Button Not Updated After Exiting Command Prompt"
-permalink: kb/129/Q129220/
+permalink: /kb/129/Q129220/
 ---
 
 ## Q129220: Taskbar Button Not Updated After Exiting Command Prompt

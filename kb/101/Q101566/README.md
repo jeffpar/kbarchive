@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101566: Unable to Access Corel LS2000 SCSI After Upgrading"
-permalink: kb/101/Q101566/
+permalink: /kb/101/Q101566/
 ---
 
 ## Q101566: Unable to Access Corel LS2000 SCSI After Upgrading

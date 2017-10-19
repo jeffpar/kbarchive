@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99080: Loading a Two-Player Chess Game"
-permalink: kb/099/Q99080/
+permalink: /kb/099/Q99080/
 ---
 
 ## Q99080: Loading a Two-Player Chess Game

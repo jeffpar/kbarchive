@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173502: Storage Durations For MSN Internet Access E-mail Messages"
-permalink: kb/173/Q173502/
+permalink: /kb/173/Q173502/
 ---
 
 ## Q173502: Storage Durations For MSN Internet Access E-mail Messages

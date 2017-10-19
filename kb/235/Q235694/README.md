@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235694: FIX: The MSMQ-MQSeries Bridge Overwrites ReplyToQMgr Extension"
-permalink: kb/235/Q235694/
+permalink: /kb/235/Q235694/
 ---
 
 ## Q235694: FIX: The MSMQ-MQSeries Bridge Overwrites ReplyToQMgr Extension

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71617: Taipei Is Unreadable in 1024 x 768 Resolution"
-permalink: kb/071/Q71617/
+permalink: /kb/071/Q71617/
 ---
 
 ## Q71617: Taipei Is Unreadable in 1024 x 768 Resolution

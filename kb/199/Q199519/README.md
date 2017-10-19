@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199519: PRB: Unresolved External on &#95;&#95;InitVTableRecords"
-permalink: kb/199/Q199519/
+permalink: /kb/199/Q199519/
 ---
 
 ## Q199519: PRB: Unresolved External on &#95;&#95;InitVTableRecords

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171340: Requirements for Using RAS to Connect to NetWare Connect"
-permalink: kb/171/Q171340/
+permalink: /kb/171/Q171340/
 ---
 
 ## Q171340: Requirements for Using RAS to Connect to NetWare Connect

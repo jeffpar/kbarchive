@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84819: GP Fault in Solitaire with SizeIt Application"
-permalink: kb/084/Q84819/
+permalink: /kb/084/Q84819/
 ---
 
 ## Q84819: GP Fault in Solitaire with SizeIt Application

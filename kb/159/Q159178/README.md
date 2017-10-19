@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159178: MSMail Windows Client Fails to Delete Files"
-permalink: kb/159/Q159178/
+permalink: /kb/159/Q159178/
 ---
 
 ## Q159178: MSMail Windows Client Fails to Delete Files

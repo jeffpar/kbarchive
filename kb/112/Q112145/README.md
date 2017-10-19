@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112145: Err Msg: Performance Monitor: Illegal to Append Data From..."
-permalink: kb/112/Q112145/
+permalink: /kb/112/Q112145/
 ---
 
 ## Q112145: Err Msg: Performance Monitor: Illegal to Append Data From...

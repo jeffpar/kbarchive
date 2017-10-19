@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155910: WD97: Table Column Selection May Show Incorrect With Merged Cell"
-permalink: kb/155/Q155910/
+permalink: /kb/155/Q155910/
 ---
 
 ## Q155910: WD97: Table Column Selection May Show Incorrect With Merged Cell

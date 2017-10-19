@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323149: Migrating to MSN Broadband using Macintosh OS 9.2 to OS X"
-permalink: kb/323/Q323149/
+permalink: /kb/323/Q323149/
 ---
 
 ## Q323149: Migrating to MSN Broadband using Macintosh OS 9.2 to OS X

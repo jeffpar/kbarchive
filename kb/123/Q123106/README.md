@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123106: SMS Inventory Disables Speaker on Client Computer"
-permalink: kb/123/Q123106/
+permalink: /kb/123/Q123106/
 ---
 
 ## Q123106: SMS Inventory Disables Speaker on Client Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141431: Bookshelf/Dictionary: Large Tables Are Printed Incorrectly"
-permalink: kb/141/Q141431/
+permalink: /kb/141/Q141431/
 ---
 
 ## Q141431: Bookshelf/Dictionary: Large Tables Are Printed Incorrectly

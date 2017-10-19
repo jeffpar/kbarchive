@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178917: XCLN: Cannot Access Outlook CD from DOS, Win 3.1x, WinNT 3.51"
-permalink: kb/178/Q178917/
+permalink: /kb/178/Q178917/
 ---
 
 ## Q178917: XCLN: Cannot Access Outlook CD from DOS, Win 3.1x, WinNT 3.51

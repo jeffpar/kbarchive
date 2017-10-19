@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111965: MS-DOS 6 Upgrade Setup /M Erroneously Updates SYSTEM.INI"
-permalink: kb/111/Q111965/
+permalink: /kb/111/Q111965/
 ---
 
 ## Q111965: MS-DOS 6 Upgrade Setup /M Erroneously Updates SYSTEM.INI

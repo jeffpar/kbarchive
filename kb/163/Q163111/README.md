@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163111: Remote Access Service (RAS) Error Code List"
-permalink: kb/163/Q163111/
+permalink: /kb/163/Q163111/
 ---
 
 ## Q163111: Remote Access Service (RAS) Error Code List

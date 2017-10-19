@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127945: Printers Supported by PSMON.DLL"
-permalink: kb/127/Q127945/
+permalink: /kb/127/Q127945/
 ---
 
 ## Q127945: Printers Supported by PSMON.DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161134: PPT: Sample Code to Control Word from a PowerPoint Macro"
-permalink: kb/161/Q161134/
+permalink: /kb/161/Q161134/
 ---
 
 ## Q161134: PPT: Sample Code to Control Word from a PowerPoint Macro

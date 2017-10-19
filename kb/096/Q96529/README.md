@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96529: PC WRmt: Help in Separate Files"
-permalink: kb/096/Q96529/
+permalink: /kb/096/Q96529/
 ---
 
 ## Q96529: PC WRmt: Help in Separate Files

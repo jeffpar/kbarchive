@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231422: Setting Administrative Privileges Using User Manager for Domains"
-permalink: kb/231/Q231422/
+permalink: /kb/231/Q231422/
 ---
 
 ## Q231422: Setting Administrative Privileges Using User Manager for Domains

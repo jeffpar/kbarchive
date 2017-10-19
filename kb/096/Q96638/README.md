@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q96638: PC MAPI: 3.0 MAPI Disks [3.5, 5.25]"
-permalink: kb/096/Q96638/
+title: "Q96638: PC MAPI: 3.0 MAPI Disks &#91;3.5, 5.25&#93;"
+permalink: /kb/096/Q96638/
 ---
 
-## Q96638: PC MAPI: 3.0 MAPI Disks [3.5, 5.25]
+## Q96638: PC MAPI: 3.0 MAPI Disks &#91;3.5, 5.25&#93;
 
 	Article: Q96638
 	Product(s): Microsoft Mail For PC Networks

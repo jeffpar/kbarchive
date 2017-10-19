@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76750: MS-DOS 5.0 on Zeos Computer with Mylex BIOS Earlier than 6.04"
-permalink: kb/076/Q76750/
+permalink: /kb/076/Q76750/
 ---
 
 ## Q76750: MS-DOS 5.0 on Zeos Computer with Mylex BIOS Earlier than 6.04

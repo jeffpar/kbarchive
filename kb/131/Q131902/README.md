@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131902: Printer Browse Thread May Cause Extensive Network Traffic"
-permalink: kb/131/Q131902/
+permalink: /kb/131/Q131902/
 ---
 
 ## Q131902: Printer Browse Thread May Cause Extensive Network Traffic

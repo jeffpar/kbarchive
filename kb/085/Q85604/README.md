@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85604: FAX: Program Name for the Fax Gateway"
-permalink: kb/085/Q85604/
+permalink: /kb/085/Q85604/
 ---
 
 ## Q85604: FAX: Program Name for the Fax Gateway

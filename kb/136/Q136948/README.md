@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136948: Benefits of Using Windows 95 Sound Card Drivers"
-permalink: kb/136/Q136948/
+permalink: /kb/136/Q136948/
 ---
 
 ## Q136948: Benefits of Using Windows 95 Sound Card Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150845: Windows NT 3.51 Setup on AST Manhattan w/Sanyo CD-ROM"
-permalink: kb/150/Q150845/
+permalink: /kb/150/Q150845/
 ---
 
 ## Q150845: Windows NT 3.51 Setup on AST Manhattan w/Sanyo CD-ROM

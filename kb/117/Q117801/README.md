@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117801: Mac Srv Wkst: Client and Server Must Both Be Same Language"
-permalink: kb/117/Q117801/
+permalink: /kb/117/Q117801/
 ---
 
 ## Q117801: Mac Srv Wkst: Client and Server Must Both Be Same Language

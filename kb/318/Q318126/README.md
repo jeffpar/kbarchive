@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318126: &quot;Installer&quot; Err Msg Installing Host Integration Server Client"
-permalink: kb/318/Q318126/
+permalink: /kb/318/Q318126/
 ---
 
 ## Q318126: &quot;Installer&quot; Err Msg Installing Host Integration Server Client

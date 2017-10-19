@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58452: Mac Hyp: Need ID Number to Access Message Fields Using GetField"
-permalink: kb/058/Q58452/
+permalink: /kb/058/Q58452/
 ---
 
 ## Q58452: Mac Hyp: Need ID Number to Access Message Fields Using GetField

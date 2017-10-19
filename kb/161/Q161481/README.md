@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161481: XADM: Purpose of Integrity Checker (Isinteg.exe) -PATCH Option"
-permalink: kb/161/Q161481/
+permalink: /kb/161/Q161481/
 ---
 
 ## Q161481: XADM: Purpose of Integrity Checker (Isinteg.exe) -PATCH Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290217: SQL Server 2000 Administrator's Companion Comments and Correctio"
-permalink: kb/290/Q290217/
+permalink: /kb/290/Q290217/
 ---
 
 ## Q290217: SQL Server 2000 Administrator's Companion Comments and Correctio

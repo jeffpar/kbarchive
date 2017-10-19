@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122465: Using the Microcom 14400 Deskporte ES Series with AWFAX"
-permalink: kb/122/Q122465/
+permalink: /kb/122/Q122465/
 ---
 
 ## Q122465: Using the Microcom 14400 Deskporte ES Series with AWFAX

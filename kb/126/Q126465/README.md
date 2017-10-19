@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126465: Macintosh Client Computers Cannot Print at 600 DPI"
-permalink: kb/126/Q126465/
+permalink: /kb/126/Q126465/
 ---
 
 ## Q126465: Macintosh Client Computers Cannot Print at 600 DPI

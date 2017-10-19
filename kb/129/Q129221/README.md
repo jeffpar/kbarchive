@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129221: XCLN: Can't Print by Dragging Message to Printer"
-permalink: kb/129/Q129221/
+permalink: /kb/129/Q129221/
 ---
 
 ## Q129221: XCLN: Can't Print by Dragging Message to Printer

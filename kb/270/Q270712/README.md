@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270712: XADM: Store.exe Process Stops Responding w/Large No. of Threads"
-permalink: kb/270/Q270712/
+permalink: /kb/270/Q270712/
 ---
 
 ## Q270712: XADM: Store.exe Process Stops Responding w/Large No. of Threads

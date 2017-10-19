@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183684: Directory Service Manager for NetWare (DSMN) - An Overview"
-permalink: kb/183/Q183684/
+permalink: /kb/183/Q183684/
 ---
 
 ## Q183684: Directory Service Manager for NetWare (DSMN) - An Overview

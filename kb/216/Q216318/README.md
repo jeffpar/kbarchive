@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216318: FIX: Slow Performance of Remote Views w/ SQL Server Text Fields"
-permalink: kb/216/Q216318/
+permalink: /kb/216/Q216318/
 ---
 
 ## Q216318: FIX: Slow Performance of Remote Views w/ SQL Server Text Fields

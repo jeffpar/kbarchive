@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183575: IDBSchemaRowset::GetSchemas Returns Inaccurate Information"
-permalink: kb/183/Q183575/
+permalink: /kb/183/Q183575/
 ---
 
 ## Q183575: IDBSchemaRowset::GetSchemas Returns Inaccurate Information

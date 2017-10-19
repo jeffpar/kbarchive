@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306308: XADM: IMS Doesn't Start When Limiting Logons to the IS"
-permalink: kb/306/Q306308/
+permalink: /kb/306/Q306308/
 ---
 
 ## Q306308: XADM: IMS Doesn't Start When Limiting Logons to the IS

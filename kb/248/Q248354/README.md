@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248354: Changing Password on Host Security Service Causes SSO to Fail"
-permalink: kb/248/Q248354/
+permalink: /kb/248/Q248354/
 ---
 
 ## Q248354: Changing Password on Host Security Service Causes SSO to Fail

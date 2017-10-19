@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48793: exec() and spawn() with P_OVERLAY Ignore Max Allocation"
-permalink: kb/048/Q48793/
+permalink: /kb/048/Q48793/
 ---
 
 ## Q48793: exec() and spawn() with P_OVERLAY Ignore Max Allocation

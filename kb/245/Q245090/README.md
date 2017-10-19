@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245090: Err Msg: The Procedure Entry Point Netuio_isdbcs Could Not..."
-permalink: kb/245/Q245090/
+permalink: /kb/245/Q245090/
 ---
 
 ## Q245090: Err Msg: The Procedure Entry Point Netuio_isdbcs Could Not...

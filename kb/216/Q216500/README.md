@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216500: Encarta 99: Blank Box Displayed When You Play A Video Clip"
-permalink: kb/216/Q216500/
+permalink: /kb/216/Q216500/
 ---
 
 ## Q216500: Encarta 99: Blank Box Displayed When You Play A Video Clip

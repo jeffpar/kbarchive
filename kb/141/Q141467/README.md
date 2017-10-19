@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141467: Macintosh RPC Client Fails Across AppleTalk Zone"
-permalink: kb/141/Q141467/
+permalink: /kb/141/Q141467/
 ---
 
 ## Q141467: Macintosh RPC Client Fails Across AppleTalk Zone

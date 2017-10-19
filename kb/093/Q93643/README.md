@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93643: Sound System: Proofreader and Lotus 1-2-3 Compatibility"
-permalink: kb/093/Q93643/
+permalink: /kb/093/Q93643/
 ---
 
 ## Q93643: Sound System: Proofreader and Lotus 1-2-3 Compatibility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326367: Request Unit Sizes Greater Than 16 KB Are Incorrectly Calculated"
-permalink: kb/326/Q326367/
+permalink: /kb/326/Q326367/
 ---
 
 ## Q326367: Request Unit Sizes Greater Than 16 KB Are Incorrectly Calculated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160610: READ_REGISTER_ULONG Doesn't Preserve ULONG Semantics on Alpha"
-permalink: kb/160/Q160610/
+permalink: /kb/160/Q160610/
 ---
 
 ## Q160610: READ_REGISTER_ULONG Doesn't Preserve ULONG Semantics on Alpha

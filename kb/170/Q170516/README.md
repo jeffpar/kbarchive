@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170516: Microsoft Exchange Client Unable to Print Message w/ Attachment"
-permalink: kb/170/Q170516/
+permalink: /kb/170/Q170516/
 ---
 
 ## Q170516: Microsoft Exchange Client Unable to Print Message w/ Attachment

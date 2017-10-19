@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138065: HOWTO: Enforce Initialization of a VB OLE Class Object"
-permalink: kb/138/Q138065/
+permalink: /kb/138/Q138065/
 ---
 
 ## Q138065: HOWTO: Enforce Initialization of a VB OLE Class Object

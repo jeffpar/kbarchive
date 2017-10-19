@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158724: HTTP 500 Server Error Unable to Perform a Security Operation"
-permalink: kb/158/Q158724/
+permalink: /kb/158/Q158724/
 ---
 
 ## Q158724: HTTP 500 Server Error Unable to Perform a Security Operation

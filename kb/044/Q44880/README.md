@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44880: Definition of Windows Temporary Files"
-permalink: kb/044/Q44880/
+permalink: /kb/044/Q44880/
 ---
 
 ## Q44880: Definition of Windows Temporary Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126591: PC Mac: Err Msg: Application Unknown Has Unexpectedly Quit"
-permalink: kb/126/Q126591/
+permalink: /kb/126/Q126591/
 ---
 
 ## Q126591: PC Mac: Err Msg: Application Unknown Has Unexpectedly Quit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182504: XADM: How to Activate Protocol Logging for POP3 and IMAP4"
-permalink: kb/182/Q182504/
+permalink: /kb/182/Q182504/
 ---
 
 ## Q182504: XADM: How to Activate Protocol Logging for POP3 and IMAP4

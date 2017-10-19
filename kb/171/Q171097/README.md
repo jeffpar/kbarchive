@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171097: WD97: Macro to Calculate Number of Months between Two Dates"
-permalink: kb/171/Q171097/
+permalink: /kb/171/Q171097/
 ---
 
 ## Q171097: WD97: Macro to Calculate Number of Months between Two Dates

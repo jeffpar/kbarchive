@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120749: Mitsumi CD-ROM Disrupts Video/Audio Playback"
-permalink: kb/120/Q120749/
+permalink: /kb/120/Q120749/
 ---
 
 ## Q120749: Mitsumi CD-ROM Disrupts Video/Audio Playback

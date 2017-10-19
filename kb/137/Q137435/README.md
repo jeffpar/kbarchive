@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137435: HOWTO: Drag and Drop from a Grid to a Text Box"
-permalink: kb/137/Q137435/
+permalink: /kb/137/Q137435/
 ---
 
 ## Q137435: HOWTO: Drag and Drop from a Grid to a Text Box

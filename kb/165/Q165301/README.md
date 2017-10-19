@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165301: WD97: Auto Numbering Changes by One After You Press ENTER"
-permalink: kb/165/Q165301/
+permalink: /kb/165/Q165301/
 ---
 
 ## Q165301: WD97: Auto Numbering Changes by One After You Press ENTER

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111651: BUG: GetGlyphOutline() with GGO_BITMAP Fails with Large Scale"
-permalink: kb/111/Q111651/
+permalink: /kb/111/Q111651/
 ---
 
 ## Q111651: BUG: GetGlyphOutline() with GGO_BITMAP Fails with Large Scale

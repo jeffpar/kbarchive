@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260894: Windows 2000 Driver Development Kit Comments and Corrections"
-permalink: kb/260/Q260894/
+permalink: /kb/260/Q260894/
 ---
 
 ## Q260894: Windows 2000 Driver Development Kit Comments and Corrections

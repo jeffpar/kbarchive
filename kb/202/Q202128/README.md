@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202128: FIX: ATL EXE Server on CComAutoThreadModule Hang on Registration"
-permalink: kb/202/Q202128/
+permalink: /kb/202/Q202128/
 ---
 
 ## Q202128: FIX: ATL EXE Server on CComAutoThreadModule Hang on Registration

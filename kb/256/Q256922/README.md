@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256922: SMS: Components Don't Function After Upgrading Win9x to Win2000"
-permalink: kb/256/Q256922/
+permalink: /kb/256/Q256922/
 ---
 
 ## Q256922: SMS: Components Don't Function After Upgrading Win9x to Win2000

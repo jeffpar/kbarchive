@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123472: HOWTO: Create a Unique SRCSAFE.INI File"
-permalink: kb/123/Q123472/
+permalink: /kb/123/Q123472/
 ---
 
 ## Q123472: HOWTO: Create a Unique SRCSAFE.INI File

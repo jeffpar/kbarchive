@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299276: &quot;Slave&quot; NIS Servers May Not Authenticate UNIX Users"
-permalink: kb/299/Q299276/
+permalink: /kb/299/Q299276/
 ---
 
 ## Q299276: &quot;Slave&quot; NIS Servers May Not Authenticate UNIX Users

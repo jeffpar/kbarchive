@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306747: ENC: How to Obtain Free Membership to Encarta Online Deluxe"
-permalink: kb/306/Q306747/
+permalink: /kb/306/Q306747/
 ---
 
 ## Q306747: ENC: How to Obtain Free Membership to Encarta Online Deluxe

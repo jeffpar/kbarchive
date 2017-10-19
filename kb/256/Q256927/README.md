@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256927: XCON: Event 1008 Occurs When Internet Mail Service Is Started"
-permalink: kb/256/Q256927/
+permalink: /kb/256/Q256927/
 ---
 
 ## Q256927: XCON: Event 1008 Occurs When Internet Mail Service Is Started

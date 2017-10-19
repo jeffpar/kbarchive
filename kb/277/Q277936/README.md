@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277936: Transferring Outlook Express Contact List or AOL Address Book to"
-permalink: kb/277/Q277936/
+permalink: /kb/277/Q277936/
 ---
 
 ## Q277936: Transferring Outlook Express Contact List or AOL Address Book to

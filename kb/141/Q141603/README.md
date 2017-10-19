@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141603: Windows 95 Non-DMF Floppy Disk Directory Listing (3 of3)"
-permalink: kb/141/Q141603/
+permalink: /kb/141/Q141603/
 ---
 
 ## Q141603: Windows 95 Non-DMF Floppy Disk Directory Listing (3 of3)

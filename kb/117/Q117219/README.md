@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117219: Using STRTRAN() to Add Carriage Returns to ASCII File"
-permalink: kb/117/Q117219/
+permalink: /kb/117/Q117219/
 ---
 
 ## Q117219: Using STRTRAN() to Add Carriage Returns to ASCII File

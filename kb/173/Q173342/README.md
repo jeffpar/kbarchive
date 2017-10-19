@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173342: How to Automatically Install TCP/IP in Windows 95"
-permalink: kb/173/Q173342/
+permalink: /kb/173/Q173342/
 ---
 
 ## Q173342: How to Automatically Install TCP/IP in Windows 95

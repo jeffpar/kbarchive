@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181799: RPC/TCP Connection Attempt Made Only to First Address"
-permalink: kb/181/Q181799/
+permalink: /kb/181/Q181799/
 ---
 
 ## Q181799: RPC/TCP Connection Attempt Made Only to First Address

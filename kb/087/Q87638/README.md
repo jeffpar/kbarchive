@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87638: PRB: C4512 &quot;Class&quot;: Assignment Operator Could Not Be Generated"
-permalink: kb/087/Q87638/
+permalink: /kb/087/Q87638/
 ---
 
 ## Q87638: PRB: C4512 &quot;Class&quot;: Assignment Operator Could Not Be Generated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135644: PRB: Deleted Project Files Are Not Converted with DELTA_SS.EXE"
-permalink: kb/135/Q135644/
+permalink: /kb/135/Q135644/
 ---
 
 ## Q135644: PRB: Deleted Project Files Are Not Converted with DELTA_SS.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95844: DOC: WINDOWPOS Structure Documented Incorrectly"
-permalink: kb/095/Q95844/
+permalink: /kb/095/Q95844/
 ---
 
 ## Q95844: DOC: WINDOWPOS Structure Documented Incorrectly

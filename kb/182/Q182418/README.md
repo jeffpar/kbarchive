@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182418: SMS: Site Config Manager Cannot Use a Preferred Drive Letter"
-permalink: kb/182/Q182418/
+permalink: /kb/182/Q182418/
 ---
 
 ## Q182418: SMS: Site Config Manager Cannot Use a Preferred Drive Letter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98313: Cannot Run Windows on Packard Bell Running MS-DOS 6 or Later"
-permalink: kb/098/Q98313/
+permalink: /kb/098/Q98313/
 ---
 
 ## Q98313: Cannot Run Windows on Packard Bell Running MS-DOS 6 or Later

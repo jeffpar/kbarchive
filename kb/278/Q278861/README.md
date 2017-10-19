@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278861: MSN Companion gets constant busy signal"
-permalink: kb/278/Q278861/
+permalink: /kb/278/Q278861/
 ---
 
 ## Q278861: MSN Companion gets constant busy signal

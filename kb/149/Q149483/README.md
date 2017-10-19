@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149483: Redirected TREE /F Command Does Not Work in Windows 95 GUI"
-permalink: kb/149/Q149483/
+permalink: /kb/149/Q149483/
 ---
 
 ## Q149483: Redirected TREE /F Command Does Not Work in Windows 95 GUI

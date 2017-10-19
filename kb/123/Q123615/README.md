@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123615: No Network Services with DEC EtherWorks Turbo III"
-permalink: kb/123/Q123615/
+permalink: /kb/123/Q123615/
 ---
 
 ## Q123615: No Network Services with DEC EtherWorks Turbo III

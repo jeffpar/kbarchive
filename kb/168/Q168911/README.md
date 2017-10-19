@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168911: WD97: Can't Use Customize Dialog Box to Remove Customize Menu"
-permalink: kb/168/Q168911/
+permalink: /kb/168/Q168911/
 ---
 
 ## Q168911: WD97: Can't Use Customize Dialog Box to Remove Customize Menu

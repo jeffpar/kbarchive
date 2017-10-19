@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164152: VC Hangs When Clicking Advanced Button on Source Control"
-permalink: kb/164/Q164152/
+permalink: /kb/164/Q164152/
 ---
 
 ## Q164152: VC Hangs When Clicking Advanced Button on Source Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143179: Internet Information Server FTP Server Service Fails to Start"
-permalink: kb/143/Q143179/
+permalink: /kb/143/Q143179/
 ---
 
 ## Q143179: Internet Information Server FTP Server Service Fails to Start

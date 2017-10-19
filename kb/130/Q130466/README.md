@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130466: PRB: Double-click in File Manager Starts Wrong FoxPro Version"
-permalink: kb/130/Q130466/
+permalink: /kb/130/Q130466/
 ---
 
 ## Q130466: PRB: Double-click in File Manager Starts Wrong FoxPro Version

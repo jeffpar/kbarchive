@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267745: BUG: Hierarchical Flexgrid Row or Cell Selection Fails"
-permalink: kb/267/Q267745/
+permalink: /kb/267/Q267745/
 ---
 
 ## Q267745: BUG: Hierarchical Flexgrid Row or Cell Selection Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160193: Encarta 97 Err Msg: Visual C++ Runtime Error"
-permalink: kb/160/Q160193/
+permalink: /kb/160/Q160193/
 ---
 
 ## Q160193: Encarta 97 Err Msg: Visual C++ Runtime Error

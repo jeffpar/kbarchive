@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244409: Access Account Security on Distribution Points May Be Incorrect"
-permalink: kb/244/Q244409/
+permalink: /kb/244/Q244409/
 ---
 
 ## Q244409: Access Account Security on Distribution Points May Be Incorrect

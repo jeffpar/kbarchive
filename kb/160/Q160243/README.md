@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160243: HOWTO: Create Log File for Distributed Setup"
-permalink: kb/160/Q160243/
+permalink: /kb/160/Q160243/
 ---
 
 ## Q160243: HOWTO: Create Log File for Distributed Setup

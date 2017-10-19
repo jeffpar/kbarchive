@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255170: SMS: Remote Reboot Fails on Windows 95 at High Resolutions"
-permalink: kb/255/Q255170/
+permalink: /kb/255/Q255170/
 ---
 
 ## Q255170: SMS: Remote Reboot Fails on Windows 95 at High Resolutions

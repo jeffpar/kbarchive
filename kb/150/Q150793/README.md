@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150793: XCLN: Cannot Change Subject Field of Posted Word Document"
-permalink: kb/150/Q150793/
+permalink: /kb/150/Q150793/
 ---
 
 ## Q150793: XCLN: Cannot Change Subject Field of Posted Word Document

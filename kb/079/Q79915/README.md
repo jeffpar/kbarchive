@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79915: TriPeaks Shows No Icon When Minimized"
-permalink: kb/079/Q79915/
+permalink: /kb/079/Q79915/
 ---
 
 ## Q79915: TriPeaks Shows No Icon When Minimized

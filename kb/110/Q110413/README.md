@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110413: Err Msg: No Airport Information Is Available for This..."
-permalink: kb/110/Q110413/
+permalink: /kb/110/Q110413/
 ---
 
 ## Q110413: Err Msg: No Airport Information Is Available for This...

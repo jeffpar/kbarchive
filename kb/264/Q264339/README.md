@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264339: XADM: Event ID 2037 Creating Mailbox After Applying Q254805 Fix"
-permalink: kb/264/Q264339/
+permalink: /kb/264/Q264339/
 ---
 
 ## Q264339: XADM: Event ID 2037 Creating Mailbox After Applying Q254805 Fix

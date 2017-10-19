@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224788: BUG: MFC Active Document Container Hangs When Invoking About Box"
-permalink: kb/224/Q224788/
+permalink: /kb/224/Q224788/
 ---
 
 ## Q224788: BUG: MFC Active Document Container Hangs When Invoking About Box

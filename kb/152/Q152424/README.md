@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152424: XFOR: Exchange Requestor Drops Users After Dirsync"
-permalink: kb/152/Q152424/
+permalink: /kb/152/Q152424/
 ---
 
 ## Q152424: XFOR: Exchange Requestor Drops Users After Dirsync

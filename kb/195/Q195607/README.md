@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195607: WD97: How to List All Built-in Styles Using Formatting Toolbar"
-permalink: kb/195/Q195607/
+permalink: /kb/195/Q195607/
 ---
 
 ## Q195607: WD97: How to List All Built-in Styles Using Formatting Toolbar

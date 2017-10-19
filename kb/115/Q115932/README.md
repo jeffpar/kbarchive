@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115932: Class 2.0 Modems Unsupported with At Work PC Fax"
-permalink: kb/115/Q115932/
+permalink: /kb/115/Q115932/
 ---
 
 ## Q115932: Class 2.0 Modems Unsupported with At Work PC Fax

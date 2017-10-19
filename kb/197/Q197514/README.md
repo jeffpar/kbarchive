@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197514: Msmtpsnp.dll File Is Missing from Windows NT 4.0 SP4 CD"
-permalink: kb/197/Q197514/
+permalink: /kb/197/Q197514/
 ---
 
 ## Q197514: Msmtpsnp.dll File Is Missing from Windows NT 4.0 SP4 CD

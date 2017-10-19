@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147819: Update Job Fails If Clients Logged On to Share"
-permalink: kb/147/Q147819/
+permalink: /kb/147/Q147819/
 ---
 
 ## Q147819: Update Job Fails If Clients Logged On to Share

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116345: Bookshelf: Redraw Problems When Scrolling with Virtual Desktop"
-permalink: kb/116/Q116345/
+permalink: /kb/116/Q116345/
 ---
 
 ## Q116345: Bookshelf: Redraw Problems When Scrolling with Virtual Desktop

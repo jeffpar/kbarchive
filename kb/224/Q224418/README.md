@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224418: Active Server Pages Appear Blank in the Web Browser"
-permalink: kb/224/Q224418/
+permalink: /kb/224/Q224418/
 ---
 
 ## Q224418: Active Server Pages Appear Blank in the Web Browser

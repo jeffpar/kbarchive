@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148333: How to Create a Multiple-Select Mover List Box Using Code"
-permalink: kb/148/Q148333/
+permalink: /kb/148/Q148333/
 ---
 
 ## Q148333: How to Create a Multiple-Select Mover List Box Using Code

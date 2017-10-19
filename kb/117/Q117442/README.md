@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117442: System Sounds Unavailable in Control Panel"
-permalink: kb/117/Q117442/
+permalink: /kb/117/Q117442/
 ---
 
 ## Q117442: System Sounds Unavailable in Control Panel

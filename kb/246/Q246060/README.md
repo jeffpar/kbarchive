@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246060: MapPoint: How to Create a Map Within an Office 2000 Program"
-permalink: kb/246/Q246060/
+permalink: /kb/246/Q246060/
 ---
 
 ## Q246060: MapPoint: How to Create a Map Within an Office 2000 Program

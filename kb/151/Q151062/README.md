@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151062: Upgrading Existing Operating Systems to Windows 95"
-permalink: kb/151/Q151062/
+permalink: /kb/151/Q151062/
 ---
 
 ## Q151062: Upgrading Existing Operating Systems to Windows 95

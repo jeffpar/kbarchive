@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216814: Err Msg: Printer Setting Could Not Be Saved..."
-permalink: kb/216/Q216814/
+permalink: /kb/216/Q216814/
 ---
 
 ## Q216814: Err Msg: Printer Setting Could Not Be Saved...

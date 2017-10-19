@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235984: XADM: Event ID 1025 During Information Store Storage Warning"
-permalink: kb/235/Q235984/
+permalink: /kb/235/Q235984/
 ---
 
 ## Q235984: XADM: Event ID 1025 During Information Store Storage Warning

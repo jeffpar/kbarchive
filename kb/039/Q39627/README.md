@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39627: MS-DOS: Batch File Labels Are Not Case Sensitive"
-permalink: kb/039/Q39627/
+permalink: /kb/039/Q39627/
 ---
 
 ## Q39627: MS-DOS: Batch File Labels Are Not Case Sensitive

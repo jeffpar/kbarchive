@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126576: SMS Does Not Use Local Thesaurus for Word for Windows 6.0"
-permalink: kb/126/Q126576/
+permalink: /kb/126/Q126576/
 ---
 
 ## Q126576: SMS Does Not Use Local Thesaurus for Word for Windows 6.0

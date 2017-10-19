@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240307: BUG: Unable to Change Preferred Help Collection on Windows 2000"
-permalink: kb/240/Q240307/
+permalink: /kb/240/Q240307/
 ---
 
 ## Q240307: BUG: Unable to Change Preferred Help Collection on Windows 2000

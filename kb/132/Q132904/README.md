@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132904: Windows NT Upgrade Err Msg: ... NtPathToDosPath reported..."
-permalink: kb/132/Q132904/
+permalink: /kb/132/Q132904/
 ---
 
 ## Q132904: Windows NT Upgrade Err Msg: ... NtPathToDosPath reported...

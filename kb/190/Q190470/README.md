@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190470: How to Properly Install Outlook 98 in an SBS Environment"
-permalink: kb/190/Q190470/
+permalink: /kb/190/Q190470/
 ---
 
 ## Q190470: How to Properly Install Outlook 98 in an SBS Environment

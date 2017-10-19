@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131504: PRB: Trouble Implementing Drill Down in Visual FoxPro Grid"
-permalink: kb/131/Q131504/
+permalink: /kb/131/Q131504/
 ---
 
 ## Q131504: PRB: Trouble Implementing Drill Down in Visual FoxPro Grid

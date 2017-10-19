@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155302: XCON: Event Error 3120: A Resource Limit has Been Reached"
-permalink: kb/155/Q155302/
+permalink: /kb/155/Q155302/
 ---
 
 ## Q155302: XCON: Event Error 3120: A Resource Limit has Been Reached

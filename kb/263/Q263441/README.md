@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263441: APM Control Panel Icons Not Removed if Terminal Services Enabled"
-permalink: kb/263/Q263441/
+permalink: /kb/263/Q263441/
 ---
 
 ## Q263441: APM Control Panel Icons Not Removed if Terminal Services Enabled

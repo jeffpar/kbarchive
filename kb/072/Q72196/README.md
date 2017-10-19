@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72196: Mouse Movement Is Erratic in Dosshell with Windows"
-permalink: kb/072/Q72196/
+permalink: /kb/072/Q72196/
 ---
 
 ## Q72196: Mouse Movement Is Erratic in Dosshell with Windows

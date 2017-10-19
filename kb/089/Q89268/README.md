@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89268: Using the BROWSE Command in FoxBASE+"
-permalink: kb/089/Q89268/
+permalink: /kb/089/Q89268/
 ---
 
 ## Q89268: Using the BROWSE Command in FoxBASE+

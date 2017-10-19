@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198746: SMS: Courier Sender Must Run Local to Site Server"
-permalink: kb/198/Q198746/
+permalink: /kb/198/Q198746/
 ---
 
 ## Q198746: SMS: Courier Sender Must Run Local to Site Server

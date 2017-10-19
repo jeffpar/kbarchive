@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164472: WD97: GC1282: Rich Text Format Addendum (Spec. for Word 97)"
-permalink: kb/164/Q164472/
+permalink: /kb/164/Q164472/
 ---
 
 ## Q164472: WD97: GC1282: Rich Text Format Addendum (Spec. for Word 97)

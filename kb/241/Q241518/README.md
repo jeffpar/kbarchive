@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241518: &quot;E_OUTOFMEMORY&quot; When Structured Storage Files Are Marshaled"
-permalink: kb/241/Q241518/
+permalink: /kb/241/Q241518/
 ---
 
 ## Q241518: &quot;E_OUTOFMEMORY&quot; When Structured Storage Files Are Marshaled

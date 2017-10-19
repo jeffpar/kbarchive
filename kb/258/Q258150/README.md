@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258150: FS2000: How to Adjust Trim Sensitivity and Effectiveness"
-permalink: kb/258/Q258150/
+permalink: /kb/258/Q258150/
 ---
 
 ## Q258150: FS2000: How to Adjust Trim Sensitivity and Effectiveness

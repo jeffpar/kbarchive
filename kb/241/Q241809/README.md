@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241809: XWEB: Installing OWA Only Using Unattended Setup"
-permalink: kb/241/Q241809/
+permalink: /kb/241/Q241809/
 ---
 
 ## Q241809: XWEB: Installing OWA Only Using Unattended Setup

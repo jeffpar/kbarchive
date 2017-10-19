@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183350: XCON: Inserted Bitmap Image Appears As Attached .Att File"
-permalink: kb/183/Q183350/
+permalink: /kb/183/Q183350/
 ---
 
 ## Q183350: XCON: Inserted Bitmap Image Appears As Attached .Att File

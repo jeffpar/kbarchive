@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174328: SMSINST: Repackage Does Not Capture REG_MULTI_SZ Changes"
-permalink: kb/174/Q174328/
+permalink: /kb/174/Q174328/
 ---
 
 ## Q174328: SMSINST: Repackage Does Not Capture REG_MULTI_SZ Changes

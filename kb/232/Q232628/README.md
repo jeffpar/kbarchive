@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232628: Err Msg: The Service Profile Is Damaged. Re-install the..."
-permalink: kb/232/Q232628/
+permalink: /kb/232/Q232628/
 ---
 
 ## Q232628: Err Msg: The Service Profile Is Damaged. Re-install the...

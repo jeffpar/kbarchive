@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85551: Machine Hangs; Repeat Rate too High in Windows 3.1, MS-DOS 5"
-permalink: kb/085/Q85551/
+permalink: /kb/085/Q85551/
 ---
 
 ## Q85551: Machine Hangs; Repeat Rate too High in Windows 3.1, MS-DOS 5

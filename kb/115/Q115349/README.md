@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115349: X400: SMTP Address Dropped from To and CC Lists"
-permalink: kb/115/Q115349/
+permalink: /kb/115/Q115349/
 ---
 
 ## Q115349: X400: SMTP Address Dropped from To and CC Lists

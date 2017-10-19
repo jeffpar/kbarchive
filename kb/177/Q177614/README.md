@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177614: What Is the Game Compatible Audio Device?"
-permalink: kb/177/Q177614/
+permalink: /kb/177/Q177614/
 ---
 
 ## Q177614: What Is the Game Compatible Audio Device?

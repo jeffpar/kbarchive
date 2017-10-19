@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154735: TrueType Fonts Printed to File as Text with HP 4 or 4M Driver"
-permalink: kb/154/Q154735/
+permalink: /kb/154/Q154735/
 ---
 
 ## Q154735: TrueType Fonts Printed to File as Text with HP 4 or 4M Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162106: Flight Simulator 6.0 Err Msg: Setup Cannot Copy Files"
-permalink: kb/162/Q162106/
+permalink: /kb/162/Q162106/
 ---
 
 ## Q162106: Flight Simulator 6.0 Err Msg: Setup Cannot Copy Files

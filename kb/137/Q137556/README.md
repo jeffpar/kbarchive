@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137556: HOWTO: Determine Font Size Setting"
-permalink: kb/137/Q137556/
+permalink: /kb/137/Q137556/
 ---
 
 ## Q137556: HOWTO: Determine Font Size Setting

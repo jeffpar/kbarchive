@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137994: Windows 95 Readme.txt File from Drivers&#92;Storage&#92;Iomega Folder"
-permalink: kb/137/Q137994/
+permalink: /kb/137/Q137994/
 ---
 
 ## Q137994: Windows 95 Readme.txt File from Drivers&#92;Storage&#92;Iomega Folder

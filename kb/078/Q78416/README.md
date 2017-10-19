@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78416: UNDELETE and Filename Containing a Dollar Sign (&#36;)"
-permalink: kb/078/Q78416/
+permalink: /kb/078/Q78416/
 ---
 
 ## Q78416: UNDELETE and Filename Containing a Dollar Sign (&#36;)

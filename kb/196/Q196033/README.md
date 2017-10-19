@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196033: XCLN: Cannot Delete Birthday and Anniversary in OWA"
-permalink: kb/196/Q196033/
+permalink: /kb/196/Q196033/
 ---
 
 ## Q196033: XCLN: Cannot Delete Birthday and Anniversary in OWA

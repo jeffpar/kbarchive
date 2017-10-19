@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184314: File Path Error During Setup of Certificate Server"
-permalink: kb/184/Q184314/
+permalink: /kb/184/Q184314/
 ---
 
 ## Q184314: File Path Error During Setup of Certificate Server

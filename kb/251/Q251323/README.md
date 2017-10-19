@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251323: XCLN: Rule to Forward E-mail Shows Wrong Sent Time for Recipient"
-permalink: kb/251/Q251323/
+permalink: /kb/251/Q251323/
 ---
 
 ## Q251323: XCLN: Rule to Forward E-mail Shows Wrong Sent Time for Recipient

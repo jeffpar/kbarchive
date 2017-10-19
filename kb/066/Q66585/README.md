@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66585: Flight Simulator: Support for MCGA"
-permalink: kb/066/Q66585/
+permalink: /kb/066/Q66585/
 ---
 
 ## Q66585: Flight Simulator: Support for MCGA

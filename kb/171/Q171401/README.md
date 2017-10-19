@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171401: Routing and Remote Access Event 1003"
-permalink: kb/171/Q171401/
+permalink: /kb/171/Q171401/
 ---
 
 ## Q171401: Routing and Remote Access Event 1003

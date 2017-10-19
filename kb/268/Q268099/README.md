@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268099: User &amp; User Group Ads Don't Work for Users w/ Certain DBCS UsrNm"
-permalink: kb/268/Q268099/
+permalink: /kb/268/Q268099/
 ---
 
 ## Q268099: User &amp; User Group Ads Don't Work for Users w/ Certain DBCS UsrNm

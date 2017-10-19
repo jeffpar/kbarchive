@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232167: How to Remove a Server Certificate from an IIS 5.0 Web Site"
-permalink: kb/232/Q232167/
+permalink: /kb/232/Q232167/
 ---
 
 ## Q232167: How to Remove a Server Certificate from an IIS 5.0 Web Site

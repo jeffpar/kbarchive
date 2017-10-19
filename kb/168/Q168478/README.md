@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168478: Unable to Create Profiles with Client Access for Windows 95/NT"
-permalink: kb/168/Q168478/
+permalink: /kb/168/Q168478/
 ---
 
 ## Q168478: Unable to Create Profiles with Client Access for Windows 95/NT

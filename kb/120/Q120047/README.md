@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120047: Access 2.0 Does Not Create ODBC Group or Icon Under Windows NT"
-permalink: kb/120/Q120047/
+permalink: /kb/120/Q120047/
 ---
 
 ## Q120047: Access 2.0 Does Not Create ODBC Group or Icon Under Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189370: PPT7: Files Installed by the PowerPoint 97 to 95 Translator"
-permalink: kb/189/Q189370/
+permalink: /kb/189/Q189370/
 ---
 
 ## Q189370: PPT7: Files Installed by the PowerPoint 97 to 95 Translator

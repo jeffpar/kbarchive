@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126007: Cannot Modify Workgroup Box in Network Utility"
-permalink: kb/126/Q126007/
+permalink: /kb/126/Q126007/
 ---
 
 ## Q126007: Cannot Modify Workgroup Box in Network Utility

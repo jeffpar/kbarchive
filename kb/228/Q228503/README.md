@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228503: Err 1215 When IMS Transaction Program Name is All Numeric Chars."
-permalink: kb/228/Q228503/
+permalink: /kb/228/Q228503/
 ---
 
 ## Q228503: Err 1215 When IMS Transaction Program Name is All Numeric Chars.

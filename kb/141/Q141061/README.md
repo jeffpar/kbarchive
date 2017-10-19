@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141061: PC MAPI: How to Determine if Simple MAPI Is Available"
-permalink: kb/141/Q141061/
+permalink: /kb/141/Q141061/
 ---
 
 ## Q141061: PC MAPI: How to Determine if Simple MAPI Is Available

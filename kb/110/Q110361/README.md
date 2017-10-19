@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110361: How to Find the Current Video Resolution"
-permalink: kb/110/Q110361/
+permalink: /kb/110/Q110361/
 ---
 
 ## Q110361: How to Find the Current Video Resolution

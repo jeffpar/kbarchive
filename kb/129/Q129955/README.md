@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129955: IRQ Conflicts with PCI Display Adapters"
-permalink: kb/129/Q129955/
+permalink: /kb/129/Q129955/
 ---
 
 ## Q129955: IRQ Conflicts with PCI Display Adapters

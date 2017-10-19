@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137793: Invdos.exe Doesn't Detect NEC 3x CD-ROM on MS-DOS Computer"
-permalink: kb/137/Q137793/
+permalink: /kb/137/Q137793/
 ---
 
 ## Q137793: Invdos.exe Doesn't Detect NEC 3x CD-ROM on MS-DOS Computer

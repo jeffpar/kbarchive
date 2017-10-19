@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246156: XCLN: Macintosh Client Cannot Start Inbox Assistant"
-permalink: kb/246/Q246156/
+permalink: /kb/246/Q246156/
 ---
 
 ## Q246156: XCLN: Macintosh Client Cannot Start Inbox Assistant

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218471: ISM/MMC Does Not Work Through a Firewall"
-permalink: kb/218/Q218471/
+permalink: /kb/218/Q218471/
 ---
 
 ## Q218471: ISM/MMC Does Not Work Through a Firewall

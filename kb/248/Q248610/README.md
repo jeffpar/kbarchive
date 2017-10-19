@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248610: Games Err Msg:&quot;A Required DirectX file was not found&quot;"
-permalink: kb/248/Q248610/
+permalink: /kb/248/Q248610/
 ---
 
 ## Q248610: Games Err Msg:&quot;A Required DirectX file was not found&quot;

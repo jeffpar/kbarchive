@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133446: PPT7: Features and Limitations of Presentation Conferencing"
-permalink: kb/133/Q133446/
+permalink: /kb/133/Q133446/
 ---
 
 ## Q133446: PPT7: Features and Limitations of Presentation Conferencing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165601: WD97: Macro Record Results In PlayBack Error Editing Objects"
-permalink: kb/165/Q165601/
+permalink: /kb/165/Q165601/
 ---
 
 ## Q165601: WD97: Macro Record Results In PlayBack Error Editing Objects

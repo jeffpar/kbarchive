@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132246: Troubleshooting Windows For Workgroups and DHCP"
-permalink: kb/132/Q132246/
+permalink: /kb/132/Q132246/
 ---
 
 ## Q132246: Troubleshooting Windows For Workgroups and DHCP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106156: Download Times for MS-DOS 6.2 Step-Up"
-permalink: kb/106/Q106156/
+permalink: /kb/106/Q106156/
 ---
 
 ## Q106156: Download Times for MS-DOS 6.2 Step-Up

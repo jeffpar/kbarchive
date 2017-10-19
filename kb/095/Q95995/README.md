@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95995: WFWG Err Msg with an ATI Mach 32: &#92;DEV&#92;MS2000&#36; Error..."
-permalink: kb/095/Q95995/
+permalink: /kb/095/Q95995/
 ---
 
 ## Q95995: WFWG Err Msg with an ATI Mach 32: &#92;DEV&#92;MS2000&#36; Error...

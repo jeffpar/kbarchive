@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117686: DOC: CDC::SelectObject, CDC::SelectStockObject Return"
-permalink: kb/117/Q117686/
+permalink: /kb/117/Q117686/
 ---
 
 ## Q117686: DOC: CDC::SelectObject, CDC::SelectStockObject Return

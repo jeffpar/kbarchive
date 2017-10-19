@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139167: System Agent Icon Does Not Appear on Taskbar"
-permalink: kb/139/Q139167/
+permalink: /kb/139/Q139167/
 ---
 
 ## Q139167: System Agent Icon Does Not Appear on Taskbar

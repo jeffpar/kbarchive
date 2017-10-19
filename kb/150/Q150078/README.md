@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150078: MIFWIN Does Not Open Form Specified"
-permalink: kb/150/Q150078/
+permalink: /kb/150/Q150078/
 ---
 
 ## Q150078: MIFWIN Does Not Open Form Specified

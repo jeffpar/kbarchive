@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156996: XFOR: Postoffice Lists Disappearing from GAL"
-permalink: kb/156/Q156996/
+permalink: /kb/156/Q156996/
 ---
 
 ## Q156996: XFOR: Postoffice Lists Disappearing from GAL

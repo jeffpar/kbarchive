@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160919: PRB: Cannot Call Suspend with the On Shutdown Command"
-permalink: kb/160/Q160919/
+permalink: /kb/160/Q160919/
 ---
 
 ## Q160919: PRB: Cannot Call Suspend with the On Shutdown Command

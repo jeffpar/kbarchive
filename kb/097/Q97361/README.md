@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97361: Adding 3D Controls Using CTL3D.DLL"
-permalink: kb/097/Q97361/
+permalink: /kb/097/Q97361/
 ---
 
 ## Q97361: Adding 3D Controls Using CTL3D.DLL

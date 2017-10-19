@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216587: BUG: Previewing Report Writer Causes Memory Leak"
-permalink: kb/216/Q216587/
+permalink: /kb/216/Q216587/
 ---
 
 ## Q216587: BUG: Previewing Report Writer Causes Memory Leak

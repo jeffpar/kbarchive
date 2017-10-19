@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127081: PC MAPI: General Information on MAPIVIM.DLL"
-permalink: kb/127/Q127081/
+permalink: /kb/127/Q127081/
 ---
 
 ## Q127081: PC MAPI: General Information on MAPIVIM.DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95159: TrueType Font Pack 2 - Font Assistant's Database"
-permalink: kb/095/Q95159/
+permalink: /kb/095/Q95159/
 ---
 
 ## Q95159: TrueType Font Pack 2 - Font Assistant's Database

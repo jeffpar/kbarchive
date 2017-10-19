@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94639: Troubleshooting MS Backup and MS Backup for Windows"
-permalink: kb/094/Q94639/
+permalink: /kb/094/Q94639/
 ---
 
 ## Q94639: Troubleshooting MS Backup and MS Backup for Windows

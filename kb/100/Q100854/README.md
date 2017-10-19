@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100854: MS-DOS Upgrade Setup Adds C:&#92;DOS to Each PATH Statement"
-permalink: kb/100/Q100854/
+permalink: /kb/100/Q100854/
 ---
 
 ## Q100854: MS-DOS Upgrade Setup Adds C:&#92;DOS to Each PATH Statement

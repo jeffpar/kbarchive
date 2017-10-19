@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320004: BUG: &quot;Fatal Error C1001&quot; Err Msg Compiling Code with While Loop"
-permalink: kb/320/Q320004/
+permalink: /kb/320/Q320004/
 ---
 
 ## Q320004: BUG: &quot;Fatal Error C1001&quot; Err Msg Compiling Code with While Loop

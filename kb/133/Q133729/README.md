@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133729: Using Microsoft Mouse 9.01 Mouse Manager in Windows 95"
-permalink: kb/133/Q133729/
+permalink: /kb/133/Q133729/
 ---
 
 ## Q133729: Using Microsoft Mouse 9.01 Mouse Manager in Windows 95

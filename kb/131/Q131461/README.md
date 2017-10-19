@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131461: Forcing Windows NT Clients to Use Non-Named Pipe LAN Transport"
-permalink: kb/131/Q131461/
+permalink: /kb/131/Q131461/
 ---
 
 ## Q131461: Forcing Windows NT Clients to Use Non-Named Pipe LAN Transport

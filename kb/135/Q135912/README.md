@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135912: PRB: Wrong Resources Loaded by Resource Editor or AppStudio"
-permalink: kb/135/Q135912/
+permalink: /kb/135/Q135912/
 ---
 
 ## Q135912: PRB: Wrong Resources Loaded by Resource Editor or AppStudio

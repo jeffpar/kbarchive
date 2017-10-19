@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134679: FIX: Loss of Decimal Digits with MFC Database Classes"
-permalink: kb/134/Q134679/
+permalink: /kb/134/Q134679/
 ---
 
 ## Q134679: FIX: Loss of Decimal Digits with MFC Database Classes

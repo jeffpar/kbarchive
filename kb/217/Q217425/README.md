@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217425: A Simple ASP Example Using Posting Acceptor"
-permalink: kb/217/Q217425/
+permalink: /kb/217/Q217425/
 ---
 
 ## Q217425: A Simple ASP Example Using Posting Acceptor

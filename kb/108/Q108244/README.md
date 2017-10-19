@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108244: Pacific Data PostScript Cartridge is Limited Under Windows NT"
-permalink: kb/108/Q108244/
+permalink: /kb/108/Q108244/
 ---
 
 ## Q108244: Pacific Data PostScript Cartridge is Limited Under Windows NT

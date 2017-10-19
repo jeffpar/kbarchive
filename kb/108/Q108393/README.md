@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108393: MAXMEM Option in Windows NT BOOT.INI File"
-permalink: kb/108/Q108393/
+permalink: /kb/108/Q108393/
 ---
 
 ## Q108393: MAXMEM Option in Windows NT BOOT.INI File

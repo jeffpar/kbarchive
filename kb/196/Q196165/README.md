@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196165: XADM: &quot;Unable to display folder...&quot; in Outlook 97 After MSW Runs"
-permalink: kb/196/Q196165/
+permalink: /kb/196/Q196165/
 ---
 
 ## Q196165: XADM: &quot;Unable to display folder...&quot; in Outlook 97 After MSW Runs

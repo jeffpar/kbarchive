@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107573: NetWare Directories in File Manager Look as If They Are Shared"
-permalink: kb/107/Q107573/
+permalink: /kb/107/Q107573/
 ---
 
 ## Q107573: NetWare Directories in File Manager Look as If They Are Shared

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74182: ANSI.SYS /L Switch Not Available in MS-DOS 5.0 or Later"
-permalink: kb/074/Q74182/
+permalink: /kb/074/Q74182/
 ---
 
 ## Q74182: ANSI.SYS /L Switch Not Available in MS-DOS 5.0 or Later

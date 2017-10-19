@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59384: BUG: NMAKE /D /C Switches Suppress Modification Date"
-permalink: kb/059/Q59384/
+permalink: /kb/059/Q59384/
 ---
 
 ## Q59384: BUG: NMAKE /D /C Switches Suppress Modification Date

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247279: XADM: How to Rebuild a Deleted Organizational Forms Library"
-permalink: kb/247/Q247279/
+permalink: /kb/247/Q247279/
 ---
 
 ## Q247279: XADM: How to Rebuild a Deleted Organizational Forms Library

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311380: Stop Error Message in ObpDereferenceSecurityDescriptor"
-permalink: kb/311/Q311380/
+permalink: /kb/311/Q311380/
 ---
 
 ## Q311380: Stop Error Message in ObpDereferenceSecurityDescriptor

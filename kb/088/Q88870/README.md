@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88870: PRB: /NOLOGO Option Does Not Work in PWB"
-permalink: kb/088/Q88870/
+permalink: /kb/088/Q88870/
 ---
 
 ## Q88870: PRB: /NOLOGO Option Does Not Work in PWB

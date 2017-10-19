@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178938: FS98/2000: Description of the Ambiguity Indicator"
-permalink: kb/178/Q178938/
+permalink: /kb/178/Q178938/
 ---
 
 ## Q178938: FS98/2000: Description of the Ambiguity Indicator

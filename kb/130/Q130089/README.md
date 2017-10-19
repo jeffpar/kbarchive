@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130089: FIX: Can't Select Beginning and End Pages in Print Dialog"
-permalink: kb/130/Q130089/
+permalink: /kb/130/Q130089/
 ---
 
 ## Q130089: FIX: Can't Select Beginning and End Pages in Print Dialog

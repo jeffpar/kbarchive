@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152754: FIX: Controls Change Tabs if Sheridan Tab Control is Resized"
-permalink: kb/152/Q152754/
+permalink: /kb/152/Q152754/
 ---
 
 ## Q152754: FIX: Controls Change Tabs if Sheridan Tab Control is Resized

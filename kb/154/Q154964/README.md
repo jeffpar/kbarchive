@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154964: Error Reading Directory with Gateway Services for NetWare"
-permalink: kb/154/Q154964/
+permalink: /kb/154/Q154964/
 ---
 
 ## Q154964: Error Reading Directory with Gateway Services for NetWare

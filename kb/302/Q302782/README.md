@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302782: Installing MSN Explorer On Windows 95 May Disable LAN Access, In"
-permalink: kb/302/Q302782/
+permalink: /kb/302/Q302782/
 ---
 
 ## Q302782: Installing MSN Explorer On Windows 95 May Disable LAN Access, In

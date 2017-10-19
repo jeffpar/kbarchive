@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173714: How to Prevent MSN from Dialing Automatically"
-permalink: kb/173/Q173714/
+permalink: /kb/173/Q173714/
 ---
 
 ## Q173714: How to Prevent MSN from Dialing Automatically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135108: PC NTMMTA: DocErr: Incorrect Version of Windows NT for Setup"
-permalink: kb/135/Q135108/
+permalink: /kb/135/Q135108/
 ---
 
 ## Q135108: PC NTMMTA: DocErr: Incorrect Version of Windows NT for Setup

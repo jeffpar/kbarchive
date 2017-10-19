@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242050: Su.exe Version 2.99 Generates LogonUser Error! Error Message"
-permalink: kb/242/Q242050/
+permalink: /kb/242/Q242050/
 ---
 
 ## Q242050: Su.exe Version 2.99 Generates LogonUser Error! Error Message

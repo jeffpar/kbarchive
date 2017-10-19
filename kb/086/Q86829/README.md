@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86829: Minimized Windows Applications Use Default Icon and Title"
-permalink: kb/086/Q86829/
+permalink: /kb/086/Q86829/
 ---
 
 ## Q86829: Minimized Windows Applications Use Default Icon and Title

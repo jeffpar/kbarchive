@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263609: BUG: Bad Code for Unsigned and Signed Comparisons with /Og"
-permalink: kb/263/Q263609/
+permalink: /kb/263/Q263609/
 ---
 
 ## Q263609: BUG: Bad Code for Unsigned and Signed Comparisons with /Og

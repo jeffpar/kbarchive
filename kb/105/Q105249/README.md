@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105249: Serial Printers May Print Garbage During Windows NT Startup"
-permalink: kb/105/Q105249/
+permalink: /kb/105/Q105249/
 ---
 
 ## Q105249: Serial Printers May Print Garbage During Windows NT Startup

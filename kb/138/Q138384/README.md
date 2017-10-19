@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138384: &quot;@&quot; Character in Computer Name Causes OLE Error Messages"
-permalink: kb/138/Q138384/
+permalink: /kb/138/Q138384/
 ---
 
 ## Q138384: &quot;@&quot; Character in Computer Name Causes OLE Error Messages

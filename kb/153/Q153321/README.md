@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153321: Network Monitor Err Msg: Parser DLL Is Not Valid Message"
-permalink: kb/153/Q153321/
+permalink: /kb/153/Q153321/
 ---
 
 ## Q153321: Network Monitor Err Msg: Parser DLL Is Not Valid Message

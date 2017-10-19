@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246895: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS When Applying Service Pack"
-permalink: kb/246/Q246895/
+permalink: /kb/246/Q246895/
 ---
 
 ## Q246895: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS When Applying Service Pack

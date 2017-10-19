@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185539: HOWTO: Create a Web Aware UserControl"
-permalink: kb/185/Q185539/
+permalink: /kb/185/Q185539/
 ---
 
 ## Q185539: HOWTO: Create a Web Aware UserControl

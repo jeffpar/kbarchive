@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173858: To Complete the Install You Need to Re-boot..."
-permalink: kb/173/Q173858/
+permalink: /kb/173/Q173858/
 ---
 
 ## Q173858: To Complete the Install You Need to Re-boot...

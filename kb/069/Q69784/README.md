@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69784: Flt Sim: Cannot Access SubLogic Scenery Disk from Drive B"
-permalink: kb/069/Q69784/
+permalink: /kb/069/Q69784/
 ---
 
 ## Q69784: Flt Sim: Cannot Access SubLogic Scenery Disk from Drive B

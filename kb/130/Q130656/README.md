@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130656: Buffering in the TASTRADE Sample Application"
-permalink: kb/130/Q130656/
+permalink: /kb/130/Q130656/
 ---
 
 ## Q130656: Buffering in the TASTRADE Sample Application

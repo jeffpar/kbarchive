@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166969: WD97: Invalid Page Fault in Word at Startup When Disk Space Low"
-permalink: kb/166/Q166969/
+permalink: /kb/166/Q166969/
 ---
 
 ## Q166969: WD97: Invalid Page Fault in Word at Startup When Disk Space Low

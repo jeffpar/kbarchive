@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228792: Stop 0x1e in NTFS After Changing Disk On Removable Drive"
-permalink: kb/228/Q228792/
+permalink: /kb/228/Q228792/
 ---
 
 ## Q228792: Stop 0x1e in NTFS After Changing Disk On Removable Drive

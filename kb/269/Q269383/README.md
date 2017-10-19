@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269383: PRB: System Registry ErrMsg When Displaying VB/VBA References"
-permalink: kb/269/Q269383/
+permalink: /kb/269/Q269383/
 ---
 
 ## Q269383: PRB: System Registry ErrMsg When Displaying VB/VBA References

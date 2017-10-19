@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184052: XFOR: Reply Address Wrong in cc:Mail ADE Relationship"
-permalink: kb/184/Q184052/
+permalink: /kb/184/Q184052/
 ---
 
 ## Q184052: XFOR: Reply Address Wrong in cc:Mail ADE Relationship

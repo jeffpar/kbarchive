@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238144: Client Installation Corrupts Path Statement in Autoexec.bat"
-permalink: kb/238/Q238144/
+permalink: /kb/238/Q238144/
 ---
 
 ## Q238144: Client Installation Corrupts Path Statement in Autoexec.bat

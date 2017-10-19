@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73679: Appropriate Uses of WINMEM32"
-permalink: kb/073/Q73679/
+permalink: /kb/073/Q73679/
 ---
 
 ## Q73679: Appropriate Uses of WINMEM32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136073: Logon Scripts for Multiple Clients"
-permalink: kb/136/Q136073/
+permalink: /kb/136/Q136073/
 ---
 
 ## Q136073: Logon Scripts for Multiple Clients

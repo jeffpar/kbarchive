@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71815: Setting PSCRIPT.DRV to Print to an EPS File Isn't Saved"
-permalink: kb/071/Q71815/
+permalink: /kb/071/Q71815/
 ---
 
 ## Q71815: Setting PSCRIPT.DRV to Print to an EPS File Isn't Saved

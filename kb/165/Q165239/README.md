@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165239: FIX: Removing Views from DBC in Project Causes Error"
-permalink: kb/165/Q165239/
+permalink: /kb/165/Q165239/
 ---
 
 ## Q165239: FIX: Removing Views from DBC in Project Causes Error

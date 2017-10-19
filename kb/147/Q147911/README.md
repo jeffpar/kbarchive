@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147911: Bluescreen When Building to Novell Server on MIPS Computer"
-permalink: kb/147/Q147911/
+permalink: /kb/147/Q147911/
 ---
 
 ## Q147911: Bluescreen When Building to Novell Server on MIPS Computer

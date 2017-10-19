@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156642: PRB: Upper Report Expression Causes String Too Long to Fit"
-permalink: kb/156/Q156642/
+permalink: /kb/156/Q156642/
 ---
 
 ## Q156642: PRB: Upper Report Expression Causes String Too Long to Fit

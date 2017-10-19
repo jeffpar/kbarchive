@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127852: Total Free Space Reported Incorrectly on Drives Larger Than 2 GB"
-permalink: kb/127/Q127852/
+permalink: /kb/127/Q127852/
 ---
 
 ## Q127852: Total Free Space Reported Incorrectly on Drives Larger Than 2 GB

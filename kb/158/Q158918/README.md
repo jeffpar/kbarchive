@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158918: WD97: How to Insert a Caption Next to an Equation or Object"
-permalink: kb/158/Q158918/
+permalink: /kb/158/Q158918/
 ---
 
 ## Q158918: WD97: How to Insert a Caption Next to an Equation or Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194507: Windows NT 4.0 Service Pack 4 Readme.txt File (40-bit)"
-permalink: kb/194/Q194507/
+permalink: /kb/194/Q194507/
 ---
 
 ## Q194507: Windows NT 4.0 Service Pack 4 Readme.txt File (40-bit)

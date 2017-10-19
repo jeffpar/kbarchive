@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90983: Real Mode Redir: No Support for LAN Manager Validated Logon"
-permalink: kb/090/Q90983/
+permalink: /kb/090/Q90983/
 ---
 
 ## Q90983: Real Mode Redir: No Support for LAN Manager Validated Logon

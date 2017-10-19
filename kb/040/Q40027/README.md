@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40027: INFO: #pragma pack() Affects Declarations, Not Definitions"
-permalink: kb/040/Q40027/
+permalink: /kb/040/Q40027/
 ---
 
 ## Q40027: INFO: #pragma pack() Affects Declarations, Not Definitions

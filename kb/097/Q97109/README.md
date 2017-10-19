@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97109: Defrag Sees Several Megabytes of Unmovable Blocks"
-permalink: kb/097/Q97109/
+permalink: /kb/097/Q97109/
 ---
 
 ## Q97109: Defrag Sees Several Megabytes of Unmovable Blocks

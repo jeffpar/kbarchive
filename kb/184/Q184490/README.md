@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q184490: Err Msg: Microsoft VBScript Runtime Error [Line: 29]..."
-permalink: kb/184/Q184490/
+title: "Q184490: Err Msg: Microsoft VBScript Runtime Error &#91;Line: 29&#93;..."
+permalink: /kb/184/Q184490/
 ---
 
-## Q184490: Err Msg: Microsoft VBScript Runtime Error [Line: 29]...
+## Q184490: Err Msg: Microsoft VBScript Runtime Error &#91;Line: 29&#93;...
 
 	Article: Q184490
 	Product(s): The Microsoft Network

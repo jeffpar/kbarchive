@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216249: DNS Client Does Not Try All Servers in the DNS Service List"
-permalink: kb/216/Q216249/
+permalink: /kb/216/Q216249/
 ---
 
 ## Q216249: DNS Client Does Not Try All Servers in the DNS Service List

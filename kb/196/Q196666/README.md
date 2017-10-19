@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196666: Users Can See Administrator Auto-Created Client Printers in Apps"
-permalink: kb/196/Q196666/
+permalink: /kb/196/Q196666/
 ---
 
 ## Q196666: Users Can See Administrator Auto-Created Client Printers in Apps

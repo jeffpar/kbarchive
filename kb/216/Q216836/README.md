@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216836: GP Fault When Creating or Manipulating Many Windows"
-permalink: kb/216/Q216836/
+permalink: /kb/216/Q216836/
 ---
 
 ## Q216836: GP Fault When Creating or Manipulating Many Windows

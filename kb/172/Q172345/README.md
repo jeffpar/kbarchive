@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172345: WD97: Inserted Word Document Object Loses Header/Footer"
-permalink: kb/172/Q172345/
+permalink: /kb/172/Q172345/
 ---
 
 ## Q172345: WD97: Inserted Word Document Object Loses Header/Footer

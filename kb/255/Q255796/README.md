@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255796: Updating a Management Agent's Templates from Its Working Folder"
-permalink: kb/255/Q255796/
+permalink: /kb/255/Q255796/
 ---
 
 ## Q255796: Updating a Management Agent's Templates from Its Working Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93076: PC Adm: Deleting Users Does Not Delete Users from Groups"
-permalink: kb/093/Q93076/
+permalink: /kb/093/Q93076/
 ---
 
 ## Q93076: PC Adm: Deleting Users Does Not Delete Users from Groups

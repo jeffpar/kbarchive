@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266627: Copying and Moving Files and Folders"
-permalink: kb/266/Q266627/
+permalink: /kb/266/Q266627/
 ---
 
 ## Q266627: Copying and Moving Files and Folders

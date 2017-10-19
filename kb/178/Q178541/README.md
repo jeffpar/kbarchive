@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178541: Age of Empires: Connection Type Dialog Box Is Empty"
-permalink: kb/178/Q178541/
+permalink: /kb/178/Q178541/
 ---
 
 ## Q178541: Age of Empires: Connection Type Dialog Box Is Empty

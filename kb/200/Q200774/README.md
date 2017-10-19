@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200774: XADM: Gear Icon Next to Mailboxes on a Distribution List"
-permalink: kb/200/Q200774/
+permalink: /kb/200/Q200774/
 ---
 
 ## Q200774: XADM: Gear Icon Next to Mailboxes on a Distribution List

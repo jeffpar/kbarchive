@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85048: FFAPI: How FFAPI is Used in the Other Gateways"
-permalink: kb/085/Q85048/
+permalink: /kb/085/Q85048/
 ---
 
 ## Q85048: FFAPI: How FFAPI is Used in the Other Gateways

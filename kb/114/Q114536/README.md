@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114536: PRB: C2129 Generated With Forward Reference Used in Prototype"
-permalink: kb/114/Q114536/
+permalink: /kb/114/Q114536/
 ---
 
 ## Q114536: PRB: C2129 Generated With Forward Reference Used in Prototype

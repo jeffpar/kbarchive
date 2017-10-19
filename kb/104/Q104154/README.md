@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104154: Stravinsky: Can't Run from Second Chained CD-ROM Drive"
-permalink: kb/104/Q104154/
+permalink: /kb/104/Q104154/
 ---
 
 ## Q104154: Stravinsky: Can't Run from Second Chained CD-ROM Drive

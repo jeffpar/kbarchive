@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168085: BUG: Single-Line Comments May Give &quot;Wrong Number of Parameters&quot;"
-permalink: kb/168/Q168085/
+permalink: /kb/168/Q168085/
 ---
 
 ## Q168085: BUG: Single-Line Comments May Give &quot;Wrong Number of Parameters&quot;

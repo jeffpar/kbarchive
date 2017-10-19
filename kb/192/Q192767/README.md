@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192767: FIX: HalfHeight Form Close Even when Closable Property is False"
-permalink: kb/192/Q192767/
+permalink: /kb/192/Q192767/
 ---
 
 ## Q192767: FIX: HalfHeight Form Close Even when Closable Property is False

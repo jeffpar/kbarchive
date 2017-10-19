@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257781: FIX: 0x800040154 Loading Multi-Threaded DLL Repetitively"
-permalink: kb/257/Q257781/
+permalink: /kb/257/Q257781/
 ---
 
 ## Q257781: FIX: 0x800040154 Loading Multi-Threaded DLL Repetitively

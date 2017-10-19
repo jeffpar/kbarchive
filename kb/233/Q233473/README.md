@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233473: Business Planner: Files Unexpectedly Appear on Your Desktop"
-permalink: kb/233/Q233473/
+permalink: /kb/233/Q233473/
 ---
 
 ## Q233473: Business Planner: Files Unexpectedly Appear on Your Desktop

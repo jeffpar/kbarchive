@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34197: FltSim: Erratic Mouse Behavior on IBM PS/2 Computer"
-permalink: kb/034/Q34197/
+permalink: /kb/034/Q34197/
 ---
 
 ## Q34197: FltSim: Erratic Mouse Behavior on IBM PS/2 Computer

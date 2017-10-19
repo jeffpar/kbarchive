@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157900: XCLN: Incorrect Characters Displayed in Profile for NT Client"
-permalink: kb/157/Q157900/
+permalink: /kb/157/Q157900/
 ---
 
 ## Q157900: XCLN: Incorrect Characters Displayed in Profile for NT Client

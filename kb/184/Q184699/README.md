@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184699: XADM: Store.exe Working Set Performance Counter Keeps Growing"
-permalink: kb/184/Q184699/
+permalink: /kb/184/Q184699/
 ---
 
 ## Q184699: XADM: Store.exe Working Set Performance Counter Keeps Growing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136835: PCMCIA Hard Disk Not Available After Windows 95 Starts"
-permalink: kb/136/Q136835/
+permalink: /kb/136/Q136835/
 ---
 
 ## Q136835: PCMCIA Hard Disk Not Available After Windows 95 Starts

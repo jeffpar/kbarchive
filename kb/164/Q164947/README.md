@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164947: FIX: Nested Macros Cause Errors C2065 and C2064"
-permalink: kb/164/Q164947/
+permalink: /kb/164/Q164947/
 ---
 
 ## Q164947: FIX: Nested Macros Cause Errors C2065 and C2064

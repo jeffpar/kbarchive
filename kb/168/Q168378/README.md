@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168378: BUG: Debug &quot;Additional Dlls&quot; Entry Shows on All Projects"
-permalink: kb/168/Q168378/
+permalink: /kb/168/Q168378/
 ---
 
 ## Q168378: BUG: Debug &quot;Additional Dlls&quot; Entry Shows on All Projects

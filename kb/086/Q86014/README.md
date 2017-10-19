@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86014: Wrong PostScript Printer Information in Printer Setup Dialog"
-permalink: kb/086/Q86014/
+permalink: /kb/086/Q86014/
 ---
 
 ## Q86014: Wrong PostScript Printer Information in Printer Setup Dialog

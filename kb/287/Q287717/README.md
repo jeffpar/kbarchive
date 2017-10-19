@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287717: SMS: Secondary Site Installation Stops Responding"
-permalink: kb/287/Q287717/
+permalink: /kb/287/Q287717/
 ---
 
 ## Q287717: SMS: Secondary Site Installation Stops Responding

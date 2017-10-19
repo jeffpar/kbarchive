@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195818: Windows NT 4.0 SP4 Breaks SNA Encrypted Client Connectivity"
-permalink: kb/195/Q195818/
+permalink: /kb/195/Q195818/
 ---
 
 ## Q195818: Windows NT 4.0 SP4 Breaks SNA Encrypted Client Connectivity

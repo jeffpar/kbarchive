@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82768: Using Windows 3.1 with Toshiba T2200SX and Trackball Mouse"
-permalink: kb/082/Q82768/
+permalink: /kb/082/Q82768/
 ---
 
 ## Q82768: Using Windows 3.1 with Toshiba T2200SX and Trackball Mouse

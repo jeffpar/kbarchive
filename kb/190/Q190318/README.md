@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190318: PRB: BINTOC() Fails with SET COLLATE TO &quot;GENERAL&quot;"
-permalink: kb/190/Q190318/
+permalink: /kb/190/Q190318/
 ---
 
 ## Q190318: PRB: BINTOC() Fails with SET COLLATE TO &quot;GENERAL&quot;

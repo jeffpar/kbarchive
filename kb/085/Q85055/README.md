@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85055: FFAPI: What to Watch for When Building an FFAPI File"
-permalink: kb/085/Q85055/
+permalink: /kb/085/Q85055/
 ---
 
 ## Q85055: FFAPI: What to Watch for When Building an FFAPI File

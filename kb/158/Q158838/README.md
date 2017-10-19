@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158838: HOWTO: Setup the FOXISAPI Sample on Windows NT 4.0"
-permalink: kb/158/Q158838/
+permalink: /kb/158/Q158838/
 ---
 
 ## Q158838: HOWTO: Setup the FOXISAPI Sample on Windows NT 4.0

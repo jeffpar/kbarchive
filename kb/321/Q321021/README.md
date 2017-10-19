@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321021: Unexpected Search Results Using Index Server with Local Web Site"
-permalink: kb/321/Q321021/
+permalink: /kb/321/Q321021/
 ---
 
 ## Q321021: Unexpected Search Results Using Index Server with Local Web Site

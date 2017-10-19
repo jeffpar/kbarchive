@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103623: Error Locating Server with Master UAS Data"
-permalink: kb/103/Q103623/
+permalink: /kb/103/Q103623/
 ---
 
 ## Q103623: Error Locating Server with Master UAS Data

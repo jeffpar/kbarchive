@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61572: PRB: SYS2070 Issued When Running PWB.EXE for the First Time"
-permalink: kb/061/Q61572/
+permalink: /kb/061/Q61572/
 ---
 
 ## Q61572: PRB: SYS2070 Issued When Running PWB.EXE for the First Time

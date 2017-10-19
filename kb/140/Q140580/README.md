@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140580: PRB: Invalid SORTWORK Setting Causes Error in Some Wizards"
-permalink: kb/140/Q140580/
+permalink: /kb/140/Q140580/
 ---
 
 ## Q140580: PRB: Invalid SORTWORK Setting Causes Error in Some Wizards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75355: Automatic Exit to Command Prompt After Running QBasic Program"
-permalink: kb/075/Q75355/
+permalink: /kb/075/Q75355/
 ---
 
 ## Q75355: Automatic Exit to Command Prompt After Running QBasic Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98745: How to Emulate a READ Inside Another READ"
-permalink: kb/098/Q98745/
+permalink: /kb/098/Q98745/
 ---
 
 ## Q98745: How to Emulate a READ Inside Another READ

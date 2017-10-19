@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102124: Mac Srv: Microsoft Mail Remote Resource Protocol Errors"
-permalink: kb/102/Q102124/
+permalink: /kb/102/Q102124/
 ---
 
 ## Q102124: Mac Srv: Microsoft Mail Remote Resource Protocol Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180435: PRB: ScrollBars Missing in Multiline TextBox"
-permalink: kb/180/Q180435/
+permalink: /kb/180/Q180435/
 ---
 
 ## Q180435: PRB: ScrollBars Missing in Multiline TextBox

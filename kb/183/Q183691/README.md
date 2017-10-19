@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183691: HOWTO: Access UserControl Properties From the Same Project"
-permalink: kb/183/Q183691/
+permalink: /kb/183/Q183691/
 ---
 
 ## Q183691: HOWTO: Access UserControl Properties From the Same Project

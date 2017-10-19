@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86081: PRB: DLL Function Returns Float or Double Value Incorrectly"
-permalink: kb/086/Q86081/
+permalink: /kb/086/Q86081/
 ---
 
 ## Q86081: PRB: DLL Function Returns Float or Double Value Incorrectly

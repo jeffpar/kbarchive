@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148266: Data Forms Designer Doesn't Recognize MS Access 7.0 Database"
-permalink: kb/148/Q148266/
+permalink: /kb/148/Q148266/
 ---
 
 ## Q148266: Data Forms Designer Doesn't Recognize MS Access 7.0 Database

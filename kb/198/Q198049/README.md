@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198049: WD97: Space Between Converted WordPerfect Back to Back Tables"
-permalink: kb/198/Q198049/
+permalink: /kb/198/Q198049/
 ---
 
 ## Q198049: WD97: Space Between Converted WordPerfect Back to Back Tables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95542: Duplicate FONT002.IN_ on 5.25-Inch Setup Disks for Font Pack 2"
-permalink: kb/095/Q95542/
+permalink: /kb/095/Q95542/
 ---
 
 ## Q95542: Duplicate FONT002.IN_ on 5.25-Inch Setup Disks for Font Pack 2

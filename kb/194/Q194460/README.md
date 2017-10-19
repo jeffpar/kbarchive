@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194460: XCLN: Security Settings in Outlook Clients"
-permalink: kb/194/Q194460/
+permalink: /kb/194/Q194460/
 ---
 
 ## Q194460: XCLN: Security Settings in Outlook Clients

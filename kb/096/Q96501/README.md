@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96501: PC Win: Incorrect Unread Message Count"
-permalink: kb/096/Q96501/
+permalink: /kb/096/Q96501/
 ---
 
 ## Q96501: PC Win: Incorrect Unread Message Count

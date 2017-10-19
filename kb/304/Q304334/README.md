@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304334: PRB: Users w/ Proper Permissions Cannot GET Files on FTP Server"
-permalink: kb/304/Q304334/
+permalink: /kb/304/Q304334/
 ---
 
 ## Q304334: PRB: Users w/ Proper Permissions Cannot GET Files on FTP Server

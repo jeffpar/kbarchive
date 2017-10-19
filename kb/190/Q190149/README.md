@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190149: PRB: Access Violation in GetAmbientDisplayName"
-permalink: kb/190/Q190149/
+permalink: /kb/190/Q190149/
 ---
 
 ## Q190149: PRB: Access Violation in GetAmbientDisplayName

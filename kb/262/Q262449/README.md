@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262449: Err Msg: Unable to Locate Windows NT Account Synchronization"
-permalink: kb/262/Q262449/
+permalink: /kb/262/Q262449/
 ---
 
 ## Q262449: Err Msg: Unable to Locate Windows NT Account Synchronization

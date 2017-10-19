@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247963: HOWTO: Activate the PsPC Keyboard from a VBCE/eVB Application"
-permalink: kb/247/Q247963/
+permalink: /kb/247/Q247963/
 ---
 
 ## Q247963: HOWTO: Activate the PsPC Keyboard from a VBCE/eVB Application

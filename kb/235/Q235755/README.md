@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235755: SMS: SNMP Agent May Leak Memory When Queried"
-permalink: kb/235/Q235755/
+permalink: /kb/235/Q235755/
 ---
 
 ## Q235755: SMS: SNMP Agent May Leak Memory When Queried

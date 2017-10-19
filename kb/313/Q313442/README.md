@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313442: Zoo Tycoon: How to Download and Install Update and Bonus Items"
-permalink: kb/313/Q313442/
+permalink: /kb/313/Q313442/
 ---
 
 ## Q313442: Zoo Tycoon: How to Download and Install Update and Bonus Items

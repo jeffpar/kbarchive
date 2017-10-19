@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242884: Age of Empires II: Frame Rate is Unexpectedly Slow"
-permalink: kb/242/Q242884/
+permalink: /kb/242/Q242884/
 ---
 
 ## Q242884: Age of Empires II: Frame Rate is Unexpectedly Slow

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191896: Printing to NT LPD Server from SUN OS 4.1.4 May Not Process C/R"
-permalink: kb/191/Q191896/
+permalink: /kb/191/Q191896/
 ---
 
 ## Q191896: Printing to NT LPD Server from SUN OS 4.1.4 May Not Process C/R

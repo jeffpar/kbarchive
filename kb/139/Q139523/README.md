@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139523: Sound Blaster Mode Not Detected on Media Vision PAS 16"
-permalink: kb/139/Q139523/
+permalink: /kb/139/Q139523/
 ---
 
 ## Q139523: Sound Blaster Mode Not Detected on Media Vision PAS 16

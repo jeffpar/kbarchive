@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242122: Corrupted WINS database causes service to stop responding."
-permalink: kb/242/Q242122/
+permalink: /kb/242/Q242122/
 ---
 
 ## Q242122: Corrupted WINS database causes service to stop responding.

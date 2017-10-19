@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175396: Windows Socket Connection from a Multiple-Homed Computer"
-permalink: kb/175/Q175396/
+permalink: /kb/175/Q175396/
 ---
 
 ## Q175396: Windows Socket Connection from a Multiple-Homed Computer

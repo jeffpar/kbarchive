@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195633: FIX: Save Dynamic View Causes Subscript Outside Defined Range"
-permalink: kb/195/Q195633/
+permalink: /kb/195/Q195633/
 ---
 
 ## Q195633: FIX: Save Dynamic View Causes Subscript Outside Defined Range

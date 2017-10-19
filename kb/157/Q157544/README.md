@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157544: WD97: Cannot Link More Than 32 Text Boxes"
-permalink: kb/157/Q157544/
+permalink: /kb/157/Q157544/
 ---
 
 ## Q157544: WD97: Cannot Link More Than 32 Text Boxes

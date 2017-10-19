@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168158: FIX: Can't Close Resultset if DBGrid Bound to RDC"
-permalink: kb/168/Q168158/
+permalink: /kb/168/Q168158/
 ---
 
 ## Q168158: FIX: Can't Close Resultset if DBGrid Bound to RDC

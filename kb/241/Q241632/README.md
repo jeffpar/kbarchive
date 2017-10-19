@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241632: XCON: Event ID 290 When Sending Mail to a Distribution List"
-permalink: kb/241/Q241632/
+permalink: /kb/241/Q241632/
 ---
 
 ## Q241632: XCON: Event ID 290 When Sending Mail to a Distribution List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138266: HOWTO: Implement Scaled Printing in an MFC/OLE Container"
-permalink: kb/138/Q138266/
+permalink: /kb/138/Q138266/
 ---
 
 ## Q138266: HOWTO: Implement Scaled Printing in an MFC/OLE Container

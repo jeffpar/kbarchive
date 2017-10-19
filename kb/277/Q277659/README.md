@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277659: CFS2: Configuration File Is Incorrectly Named in Readme.rtf File"
-permalink: kb/277/Q277659/
+permalink: /kb/277/Q277659/
 ---
 
 ## Q277659: CFS2: Configuration File Is Incorrectly Named in Readme.rtf File

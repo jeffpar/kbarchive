@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141999: HOWTO: Use DrawFrameControl API in Visual Basic"
-permalink: kb/141/Q141999/
+permalink: /kb/141/Q141999/
 ---
 
 ## Q141999: HOWTO: Use DrawFrameControl API in Visual Basic

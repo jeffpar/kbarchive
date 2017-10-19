@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154487: SYSDIFF /dump Err. Msg: The Data Is Invalid"
-permalink: kb/154/Q154487/
+permalink: /kb/154/Q154487/
 ---
 
 ## Q154487: SYSDIFF /dump Err. Msg: The Data Is Invalid

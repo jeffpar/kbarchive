@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235748: SMS: Options in &quot;Delete Files&quot; Script Item Function Improperly"
-permalink: kb/235/Q235748/
+permalink: /kb/235/Q235748/
 ---
 
 ## Q235748: SMS: Options in &quot;Delete Files&quot; Script Item Function Improperly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162742: BUG: Setup Fails When Directory Named is &gt;237 Characters"
-permalink: kb/162/Q162742/
+permalink: /kb/162/Q162742/
 ---
 
 ## Q162742: BUG: Setup Fails When Directory Named is &gt;237 Characters

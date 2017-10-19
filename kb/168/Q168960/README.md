@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168960: Err Msg: An Error Occurred Accessing the Security-Settings File"
-permalink: kb/168/Q168960/
+permalink: /kb/168/Q168960/
 ---
 
 ## Q168960: Err Msg: An Error Occurred Accessing the Security-Settings File

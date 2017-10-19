@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150718: Mac Bookshelf 96-97: Pronunciation Does Not Copy"
-permalink: kb/150/Q150718/
+permalink: /kb/150/Q150718/
 ---
 
 ## Q150718: Mac Bookshelf 96-97: Pronunciation Does Not Copy

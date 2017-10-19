@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155785: CG3: Colors Turn to Gray in Thumbnail Images"
-permalink: kb/155/Q155785/
+permalink: /kb/155/Q155785/
 ---
 
 ## Q155785: CG3: Colors Turn to Gray in Thumbnail Images

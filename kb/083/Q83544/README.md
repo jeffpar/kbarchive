@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83544: Unable to Set Up Printer in Control Panel"
-permalink: kb/083/Q83544/
+permalink: /kb/083/Q83544/
 ---
 
 ## Q83544: Unable to Set Up Printer in Control Panel

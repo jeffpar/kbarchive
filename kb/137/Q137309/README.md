@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137309: Stop Msg: 0x0000003F NO_MORE_SYSTEM_PTEs SNA &amp; TCP/IP Sockets"
-permalink: kb/137/Q137309/
+permalink: /kb/137/Q137309/
 ---
 
 ## Q137309: Stop Msg: 0x0000003F NO_MORE_SYSTEM_PTEs SNA &amp; TCP/IP Sockets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117811: No Option to Set ArpCacheLife in Windows NT 3.5"
-permalink: kb/117/Q117811/
+permalink: /kb/117/Q117811/
 ---
 
 ## Q117811: No Option to Set ArpCacheLife in Windows NT 3.5

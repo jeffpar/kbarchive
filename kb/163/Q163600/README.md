@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163600: WD97: Unable to Connect to Web with Browse Web Art Command"
-permalink: kb/163/Q163600/
+permalink: /kb/163/Q163600/
 ---
 
 ## Q163600: WD97: Unable to Connect to Web with Browse Web Art Command

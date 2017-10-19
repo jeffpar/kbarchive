@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142766: Updated Ifsmgr.vxd Allows Trailing Backslashes"
-permalink: kb/142/Q142766/
+permalink: /kb/142/Q142766/
 ---
 
 ## Q142766: Updated Ifsmgr.vxd Allows Trailing Backslashes

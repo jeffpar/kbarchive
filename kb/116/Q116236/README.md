@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116236: Baseball: Custom Modem Setting Disappears When Not Selected"
-permalink: kb/116/Q116236/
+permalink: /kb/116/Q116236/
 ---
 
 ## Q116236: Baseball: Custom Modem Setting Disappears When Not Selected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259436: Log Off all Terminal Server Session Users from a Command Prompt"
-permalink: kb/259/Q259436/
+permalink: /kb/259/Q259436/
 ---
 
 ## Q259436: Log Off all Terminal Server Session Users from a Command Prompt

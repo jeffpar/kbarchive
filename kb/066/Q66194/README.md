@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66194: Flight Simulator: Using Com Ports"
-permalink: kb/066/Q66194/
+permalink: /kb/066/Q66194/
 ---
 
 ## Q66194: Flight Simulator: Using Com Ports

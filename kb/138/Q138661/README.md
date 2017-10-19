@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138661: PRB: Aliased Field Not Saved in Query Designer"
-permalink: kb/138/Q138661/
+permalink: /kb/138/Q138661/
 ---
 
 ## Q138661: PRB: Aliased Field Not Saved in Query Designer

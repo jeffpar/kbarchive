@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84724: 32-Bit Disk Access and Microsolutions Compaticard"
-permalink: kb/084/Q84724/
+permalink: /kb/084/Q84724/
 ---
 
 ## Q84724: 32-Bit Disk Access and Microsolutions Compaticard

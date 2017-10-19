@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113190: Npclnt.exe WFW Named Pipe Client"
-permalink: kb/113/Q113190/
+permalink: /kb/113/Q113190/
 ---
 
 ## Q113190: Npclnt.exe WFW Named Pipe Client

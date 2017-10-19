@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188537: WD97: Styles Not in Alphabetical Order in Style List"
-permalink: kb/188/Q188537/
+permalink: /kb/188/Q188537/
 ---
 
 ## Q188537: WD97: Styles Not in Alphabetical Order in Style List

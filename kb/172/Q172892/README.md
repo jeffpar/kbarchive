@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172892: FIX: MSDEV Crashes If Same PDB Name Used for Compiler and Linker"
-permalink: kb/172/Q172892/
+permalink: /kb/172/Q172892/
 ---
 
 ## Q172892: FIX: MSDEV Crashes If Same PDB Name Used for Compiler and Linker

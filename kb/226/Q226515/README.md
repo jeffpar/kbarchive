@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226515: XADM: Size of Public Folders Cannot Be Limited"
-permalink: kb/226/Q226515/
+permalink: /kb/226/Q226515/
 ---
 
 ## Q226515: XADM: Size of Public Folders Cannot Be Limited

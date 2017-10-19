@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95331: Novell Connectivity Limited to One Network Adapter"
-permalink: kb/095/Q95331/
+permalink: /kb/095/Q95331/
 ---
 
 ## Q95331: Novell Connectivity Limited to One Network Adapter

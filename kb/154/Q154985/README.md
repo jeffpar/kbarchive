@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154985: DNS Registry Key Not Updated When Changing Zone Type"
-permalink: kb/154/Q154985/
+permalink: /kb/154/Q154985/
 ---
 
 ## Q154985: DNS Registry Key Not Updated When Changing Zone Type

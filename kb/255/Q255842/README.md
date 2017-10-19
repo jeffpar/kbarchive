@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255842: Status Manager Loses Status Messages During Shutdown"
-permalink: kb/255/Q255842/
+permalink: /kb/255/Q255842/
 ---
 
 ## Q255842: Status Manager Loses Status Messages During Shutdown

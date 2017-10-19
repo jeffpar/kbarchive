@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147135: CONN: Err Msg: The User Is Not the Network Manager"
-permalink: kb/147/Q147135/
+permalink: /kb/147/Q147135/
 ---
 
 ## Q147135: CONN: Err Msg: The User Is Not the Network Manager

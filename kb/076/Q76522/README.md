@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76522: PC Adm: How to Tell Who Owns a Group or Shared Folder"
-permalink: kb/076/Q76522/
+permalink: /kb/076/Q76522/
 ---
 
 ## Q76522: PC Adm: How to Tell Who Owns a Group or Shared Folder

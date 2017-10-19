@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199509: XFOR: NNTP Protocol Commands are Case Insensitive"
-permalink: kb/199/Q199509/
+permalink: /kb/199/Q199509/
 ---
 
 ## Q199509: XFOR: NNTP Protocol Commands are Case Insensitive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151758: BUG: Num Lock Indicator Light Doesn't Light up in VFP Mac"
-permalink: kb/151/Q151758/
+permalink: /kb/151/Q151758/
 ---
 
 ## Q151758: BUG: Num Lock Indicator Light Doesn't Light up in VFP Mac

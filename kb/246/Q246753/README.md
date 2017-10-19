@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246753: Configuring Peer Web Services May Conflict with Norton Utilities"
-permalink: kb/246/Q246753/
+permalink: /kb/246/Q246753/
 ---
 
 ## Q246753: Configuring Peer Web Services May Conflict with Norton Utilities

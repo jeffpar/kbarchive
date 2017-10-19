@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318907: MCSA/MCSE Self-Paced Training Kit: Managing a Microsoft Windows"
-permalink: kb/318/Q318907/
+permalink: /kb/318/Q318907/
 ---
 
 ## Q318907: MCSA/MCSE Self-Paced Training Kit: Managing a Microsoft Windows

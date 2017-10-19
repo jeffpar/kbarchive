@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79432: PIF Editor Help Screen for Each Option"
-permalink: kb/079/Q79432/
+permalink: /kb/079/Q79432/
 ---
 
 ## Q79432: PIF Editor Help Screen for Each Option

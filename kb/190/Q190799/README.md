@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190799: PRB: Potential Errors Passing CRT Objects Across DLL Boundaries"
-permalink: kb/190/Q190799/
+permalink: /kb/190/Q190799/
 ---
 
 ## Q190799: PRB: Potential Errors Passing CRT Objects Across DLL Boundaries

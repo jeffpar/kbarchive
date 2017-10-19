@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87932: DOCERR: ALIAS Directive Undocumented in MASM 6.0"
-permalink: kb/087/Q87932/
+permalink: /kb/087/Q87932/
 ---
 
 ## Q87932: DOCERR: ALIAS Directive Undocumented in MASM 6.0

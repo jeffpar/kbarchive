@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166260: PRB: No Workspace or Project Files Found in Selected SCC Project"
-permalink: kb/166/Q166260/
+permalink: /kb/166/Q166260/
 ---
 
 ## Q166260: PRB: No Workspace or Project Files Found in Selected SCC Project

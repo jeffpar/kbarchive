@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146473: XFOR: Attachment with Name of Charset = iso-2022-JP"
-permalink: kb/146/Q146473/
+permalink: /kb/146/Q146473/
 ---
 
 ## Q146473: XFOR: Attachment with Name of Charset = iso-2022-JP

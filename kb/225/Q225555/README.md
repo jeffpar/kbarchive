@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225555: User Manager &quot;Save Settings on Exit&quot; Not Working"
-permalink: kb/225/Q225555/
+permalink: /kb/225/Q225555/
 ---
 
 ## Q225555: User Manager &quot;Save Settings on Exit&quot; Not Working

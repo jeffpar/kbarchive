@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170289: DISPLAY or CNOS Calls Fail with UNEXPECTED_DOS_ERROR"
-permalink: kb/170/Q170289/
+permalink: /kb/170/Q170289/
 ---
 
 ## Q170289: DISPLAY or CNOS Calls Fail with UNEXPECTED_DOS_ERROR

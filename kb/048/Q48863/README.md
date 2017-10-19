@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48863: PRB: CodeView Search String Length Limited to 19-23 Characters"
-permalink: kb/048/Q48863/
+permalink: /kb/048/Q48863/
 ---
 
 ## Q48863: PRB: CodeView Search String Length Limited to 19-23 Characters

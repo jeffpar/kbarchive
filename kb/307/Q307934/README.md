@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307934: Locking Down WebDAV via ACL Still Allows PUT &amp; DELETE Requests"
-permalink: kb/307/Q307934/
+permalink: /kb/307/Q307934/
 ---
 
 ## Q307934: Locking Down WebDAV via ACL Still Allows PUT &amp; DELETE Requests

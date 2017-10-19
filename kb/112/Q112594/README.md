@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112594: Unable to Administer Domain when NetLogon Not Started"
-permalink: kb/112/Q112594/
+permalink: /kb/112/Q112594/
 ---
 
 ## Q112594: Unable to Administer Domain when NetLogon Not Started

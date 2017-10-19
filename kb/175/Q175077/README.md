@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175077: SMS: Audit Gets &quot;No Data Available&quot; Message After Full Inventory"
-permalink: kb/175/Q175077/
+permalink: /kb/175/Q175077/
 ---
 
 ## Q175077: SMS: Audit Gets &quot;No Data Available&quot; Message After Full Inventory

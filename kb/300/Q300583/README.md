@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300583: XADM: Merge Separate Exchange Servers into a Single Server"
-permalink: kb/300/Q300583/
+permalink: /kb/300/Q300583/
 ---
 
 ## Q300583: XADM: Merge Separate Exchange Servers into a Single Server

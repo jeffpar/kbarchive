@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179484: Cannot Update the List of MSN 2.5 Access Telephone Numbers"
-permalink: kb/179/Q179484/
+permalink: /kb/179/Q179484/
 ---
 
 ## Q179484: Cannot Update the List of MSN 2.5 Access Telephone Numbers

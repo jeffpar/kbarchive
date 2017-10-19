@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167632: MCA Network Adapter Fails After Applying Windows NT 4.0 SP2"
-permalink: kb/167/Q167632/
+permalink: /kb/167/Q167632/
 ---
 
 ## Q167632: MCA Network Adapter Fails After Applying Windows NT 4.0 SP2

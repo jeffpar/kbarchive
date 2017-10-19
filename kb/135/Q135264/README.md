@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135264: PPT7: Genigraphics Wizard Replaces Genigraphics Driver"
-permalink: kb/135/Q135264/
+permalink: /kb/135/Q135264/
 ---
 
 ## Q135264: PPT7: Genigraphics Wizard Replaces Genigraphics Driver

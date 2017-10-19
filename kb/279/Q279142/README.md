@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279142: FIX: BUILD EXE Command May Cause &quot;File Is Not Open&quot; Error"
-permalink: kb/279/Q279142/
+permalink: /kb/279/Q279142/
 ---
 
 ## Q279142: FIX: BUILD EXE Command May Cause &quot;File Is Not Open&quot; Error

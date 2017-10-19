@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146567: XFOR: Messages with Long Addresses Are Not Delivered"
-permalink: kb/146/Q146567/
+permalink: /kb/146/Q146567/
 ---
 
 ## Q146567: XFOR: Messages with Long Addresses Are Not Delivered

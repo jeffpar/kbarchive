@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147443: FP: Errors w/ Ismaps, Searches After Moving Content to Server"
-permalink: kb/147/Q147443/
+permalink: /kb/147/Q147443/
 ---
 
 ## Q147443: FP: Errors w/ Ismaps, Searches After Moving Content to Server

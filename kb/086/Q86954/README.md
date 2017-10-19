@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86954: 3COM: Floppy Disk Layouts for MS Mail Gateway to 3Com 3+Mail"
-permalink: kb/086/Q86954/
+permalink: /kb/086/Q86954/
 ---
 
 ## Q86954: 3COM: Floppy Disk Layouts for MS Mail Gateway to 3Com 3+Mail

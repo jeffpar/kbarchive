@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176193: XCON: Outbound Conversion of UTF Messages Causes Infinite Loop"
-permalink: kb/176/Q176193/
+permalink: /kb/176/Q176193/
 ---
 
 ## Q176193: XCON: Outbound Conversion of UTF Messages Causes Infinite Loop

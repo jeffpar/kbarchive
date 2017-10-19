@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216802: Internet Services Manager Fails to Show Installed Proxy Services"
-permalink: kb/216/Q216802/
+permalink: /kb/216/Q216802/
 ---
 
 ## Q216802: Internet Services Manager Fails to Show Installed Proxy Services

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154808: How to Create a Common Folder in Windows NT 4.0"
-permalink: kb/154/Q154808/
+permalink: /kb/154/Q154808/
 ---
 
 ## Q154808: How to Create a Common Folder in Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75358: Installing the PCLP Network with MS-DOS 5.0 and Later"
-permalink: kb/075/Q75358/
+permalink: /kb/075/Q75358/
 ---
 
 ## Q75358: Installing the PCLP Network with MS-DOS 5.0 and Later

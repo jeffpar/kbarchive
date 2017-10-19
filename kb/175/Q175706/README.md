@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175706: XADM: How Moving Mailboxes Affects Single Instance Storage"
-permalink: kb/175/Q175706/
+permalink: /kb/175/Q175706/
 ---
 
 ## Q175706: XADM: How Moving Mailboxes Affects Single Instance Storage

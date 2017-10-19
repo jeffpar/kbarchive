@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272166: SMS: Smsclreg.dll Generates Error When Running 20clicln.bat"
-permalink: kb/272/Q272166/
+permalink: /kb/272/Q272166/
 ---
 
 ## Q272166: SMS: Smsclreg.dll Generates Error When Running 20clicln.bat

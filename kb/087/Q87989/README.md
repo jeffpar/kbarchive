@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87989: CAPS LOCK Key Problem on Packard Bell Legend 416 SX / 720 SX"
-permalink: kb/087/Q87989/
+permalink: /kb/087/Q87989/
 ---
 
 ## Q87989: CAPS LOCK Key Problem on Packard Bell Legend 416 SX / 720 SX

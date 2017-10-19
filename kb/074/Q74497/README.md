@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74497: MEM May Report Extended Memory when None Exists"
-permalink: kb/074/Q74497/
+permalink: /kb/074/Q74497/
 ---
 
 ## Q74497: MEM May Report Extended Memory when None Exists

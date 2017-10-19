@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243671: How to Enable SNARAS Tracing on SNA Server 4.0"
-permalink: kb/243/Q243671/
+permalink: /kb/243/Q243671/
 ---
 
 ## Q243671: How to Enable SNARAS Tracing on SNA Server 4.0

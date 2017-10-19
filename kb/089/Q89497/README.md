@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89497: Modifying WIN.SRC to Customize Windows Network Setup"
-permalink: kb/089/Q89497/
+permalink: /kb/089/Q89497/
 ---
 
 ## Q89497: Modifying WIN.SRC to Customize Windows Network Setup

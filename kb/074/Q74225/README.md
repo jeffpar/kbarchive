@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74225: INFO: Size Limits for a Multiline Edit Control"
-permalink: kb/074/Q74225/
+permalink: /kb/074/Q74225/
 ---
 
 ## Q74225: INFO: Size Limits for a Multiline Edit Control

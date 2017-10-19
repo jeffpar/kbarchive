@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120013: Space Simulator Manual Installation Instructions"
-permalink: kb/120/Q120013/
+permalink: /kb/120/Q120013/
 ---
 
 ## Q120013: Space Simulator Manual Installation Instructions

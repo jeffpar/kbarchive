@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182703: ODBC Demo for AS/400 Fails with MS Query Version 8.0"
-permalink: kb/182/Q182703/
+permalink: /kb/182/Q182703/
 ---
 
 ## Q182703: ODBC Demo for AS/400 Fails with MS Query Version 8.0

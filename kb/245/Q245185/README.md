@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245185: Stop 0xA Error When Using pcANYWHERE 8.0 with Windows NT 4.0."
-permalink: kb/245/Q245185/
+permalink: /kb/245/Q245185/
 ---
 
 ## Q245185: Stop 0xA Error When Using pcANYWHERE 8.0 with Windows NT 4.0.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120757: WINS Manager: Config. and Replication Partners Menus Disabled"
-permalink: kb/120/Q120757/
+permalink: /kb/120/Q120757/
 ---
 
 ## Q120757: WINS Manager: Config. and Replication Partners Menus Disabled

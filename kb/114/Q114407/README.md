@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114407: SMTP: First Contact Form for SMTP Gateway"
-permalink: kb/114/Q114407/
+permalink: /kb/114/Q114407/
 ---
 
 ## Q114407: SMTP: First Contact Form for SMTP Gateway

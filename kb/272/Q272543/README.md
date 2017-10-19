@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272543: Network Segment Object in Performance Monitor Has Limitations"
-permalink: kb/272/Q272543/
+permalink: /kb/272/Q272543/
 ---
 
 ## Q272543: Network Segment Object in Performance Monitor Has Limitations

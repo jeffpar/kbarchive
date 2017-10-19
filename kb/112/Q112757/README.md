@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112757: FIX: Problems When Using an Oracle Data Source"
-permalink: kb/112/Q112757/
+permalink: /kb/112/Q112757/
 ---
 
 ## Q112757: FIX: Problems When Using an Oracle Data Source

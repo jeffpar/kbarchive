@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177466: SMS: NNP Stays on Windows 95 Taskbar After Login"
-permalink: kb/177/Q177466/
+permalink: /kb/177/Q177466/
 ---
 
 ## Q177466: SMS: NNP Stays on Windows 95 Taskbar After Login

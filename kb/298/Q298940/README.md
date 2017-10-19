@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298940: Err Msg: Won't Route Until the Admin Installs Handler"
-permalink: kb/298/Q298940/
+permalink: /kb/298/Q298940/
 ---
 
 ## Q298940: Err Msg: Won't Route Until the Admin Installs Handler

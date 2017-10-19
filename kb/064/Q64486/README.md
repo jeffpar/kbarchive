@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64486: IBM EE 1.2 Lan Server User ID Names Limited to 8 Char."
-permalink: kb/064/Q64486/
+permalink: /kb/064/Q64486/
 ---
 
 ## Q64486: IBM EE 1.2 Lan Server User ID Names Limited to 8 Char.

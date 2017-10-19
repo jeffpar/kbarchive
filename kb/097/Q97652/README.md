@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97652: MHS: How Priority Levels are Mapped to Microsoft Mail"
-permalink: kb/097/Q97652/
+permalink: /kb/097/Q97652/
 ---
 
 ## Q97652: MHS: How Priority Levels are Mapped to Microsoft Mail

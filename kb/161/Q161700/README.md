@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161700: WinAT Returns Error &quot;Filename ... Is Incorrect&quot;"
-permalink: kb/161/Q161700/
+permalink: /kb/161/Q161700/
 ---
 
 ## Q161700: WinAT Returns Error &quot;Filename ... Is Incorrect&quot;

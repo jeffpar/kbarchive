@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110923: Specifying Command-Line Parameters for NDIS 2 Drivers"
-permalink: kb/110/Q110923/
+permalink: /kb/110/Q110923/
 ---
 
 ## Q110923: Specifying Command-Line Parameters for NDIS 2 Drivers

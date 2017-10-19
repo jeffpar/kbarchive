@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212854: SMSINST: Overwritten Files Are Not Restored During Uninstall"
-permalink: kb/212/Q212854/
+permalink: /kb/212/Q212854/
 ---
 
 ## Q212854: SMSINST: Overwritten Files Are Not Restored During Uninstall

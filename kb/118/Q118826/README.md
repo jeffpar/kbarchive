@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118826: File Copy to Netware Server Fails in File Manager"
-permalink: kb/118/Q118826/
+permalink: /kb/118/Q118826/
 ---
 
 ## Q118826: File Copy to Netware Server Fails in File Manager

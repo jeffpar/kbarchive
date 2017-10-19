@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198393: XFOR: MS Mail Connector May Stop with Error 2380"
-permalink: kb/198/Q198393/
+permalink: /kb/198/Q198393/
 ---
 
 ## Q198393: XFOR: MS Mail Connector May Stop with Error 2380

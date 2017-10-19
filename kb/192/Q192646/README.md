@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192646: PRB: Move 0 Does Not Refresh TimeStamp and Identity Fields"
-permalink: kb/192/Q192646/
+permalink: /kb/192/Q192646/
 ---
 
 ## Q192646: PRB: Move 0 Does Not Refresh TimeStamp and Identity Fields

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81220: How to Use More than One Type of Font in Picture Box"
-permalink: kb/081/Q81220/
+permalink: /kb/081/Q81220/
 ---
 
 ## Q81220: How to Use More than One Type of Font in Picture Box

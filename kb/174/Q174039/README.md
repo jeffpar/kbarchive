@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174039: XCON: Read or Delivery Reports Show OU2 and OU3 Values"
-permalink: kb/174/Q174039/
+permalink: /kb/174/Q174039/
 ---
 
 ## Q174039: XCON: Read or Delivery Reports Show OU2 and OU3 Values

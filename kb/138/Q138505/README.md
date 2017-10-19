@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138505: HOWTO: Add Context-Sensitive Help Button to Win 95 Dialog Boxes"
-permalink: kb/138/Q138505/
+permalink: /kb/138/Q138505/
 ---
 
 ## Q138505: HOWTO: Add Context-Sensitive Help Button to Win 95 Dialog Boxes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184125: Setup Computer Wizard Does Not Set Up Printer for Client"
-permalink: kb/184/Q184125/
+permalink: /kb/184/Q184125/
 ---
 
 ## Q184125: Setup Computer Wizard Does Not Set Up Printer for Client

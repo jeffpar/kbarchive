@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261019: MCM2: Textures Become Distorted If You Receive a Reminder"
-permalink: kb/261/Q261019/
+permalink: /kb/261/Q261019/
 ---
 
 ## Q261019: MCM2: Textures Become Distorted If You Receive a Reminder

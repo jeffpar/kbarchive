@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104851: FlightSim: Stall Warning Sounds During Replay"
-permalink: kb/104/Q104851/
+permalink: /kb/104/Q104851/
 ---
 
 ## Q104851: FlightSim: Stall Warning Sounds During Replay

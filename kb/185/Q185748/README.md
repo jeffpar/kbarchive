@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185748: Zone: How to Change the Web Browser Used to Start the Zone"
-permalink: kb/185/Q185748/
+permalink: /kb/185/Q185748/
 ---
 
 ## Q185748: Zone: How to Change the Web Browser Used to Start the Zone

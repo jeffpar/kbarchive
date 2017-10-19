@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43868: Dip Switch Settings for Epson 286e"
-permalink: kb/043/Q43868/
+permalink: /kb/043/Q43868/
 ---
 
 ## Q43868: Dip Switch Settings for Epson 286e

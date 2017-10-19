@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251284: Cluster Server Cannot Start If the Quorum Disk Space Is Full"
-permalink: kb/251/Q251284/
+permalink: /kb/251/Q251284/
 ---
 
 ## Q251284: Cluster Server Cannot Start If the Quorum Disk Space Is Full

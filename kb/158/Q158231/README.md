@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158231: STL Sample for the binary_function Structure"
-permalink: kb/158/Q158231/
+permalink: /kb/158/Q158231/
 ---
 
 ## Q158231: STL Sample for the binary_function Structure

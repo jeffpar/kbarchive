@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271288: Domain Trusts May Not Work with Password Sync Service"
-permalink: kb/271/Q271288/
+permalink: /kb/271/Q271288/
 ---
 
 ## Q271288: Domain Trusts May Not Work with Password Sync Service

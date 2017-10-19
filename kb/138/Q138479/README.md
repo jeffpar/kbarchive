@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138479: INFO: Required Rights for SourceSafe Commands"
-permalink: kb/138/Q138479/
+permalink: /kb/138/Q138479/
 ---
 
 ## Q138479: INFO: Required Rights for SourceSafe Commands

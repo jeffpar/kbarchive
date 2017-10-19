@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221644: FIX: Can Drag Folder in Installed Controls in Component Gallery"
-permalink: kb/221/Q221644/
+permalink: /kb/221/Q221644/
 ---
 
 ## Q221644: FIX: Can Drag Folder in Installed Controls in Component Gallery

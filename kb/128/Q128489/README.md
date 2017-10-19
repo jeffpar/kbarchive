@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128489: Inter-Domain Trust Account Passwords"
-permalink: kb/128/Q128489/
+permalink: /kb/128/Q128489/
 ---
 
 ## Q128489: Inter-Domain Trust Account Passwords

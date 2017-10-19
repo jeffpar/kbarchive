@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274150: Web Page Does Not Display Data from Include File"
-permalink: kb/274/Q274150/
+permalink: /kb/274/Q274150/
 ---
 
 ## Q274150: Web Page Does Not Display Data from Include File

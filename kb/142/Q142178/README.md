@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142178: How to Use Maple.adm with System Policy Editor"
-permalink: kb/142/Q142178/
+permalink: /kb/142/Q142178/
 ---
 
 ## Q142178: How to Use Maple.adm with System Policy Editor

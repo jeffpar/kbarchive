@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148254: Art Gallery: Minimum System Requirements"
-permalink: kb/148/Q148254/
+permalink: /kb/148/Q148254/
 ---
 
 ## Q148254: Art Gallery: Minimum System Requirements

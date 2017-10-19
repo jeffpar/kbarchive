@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110817: Mac Srv: Server Detect Message Displays Asterisk for Zone Name"
-permalink: kb/110/Q110817/
+permalink: /kb/110/Q110817/
 ---
 
 ## Q110817: Mac Srv: Server Detect Message Displays Asterisk for Zone Name

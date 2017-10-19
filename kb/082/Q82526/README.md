@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82526: Auto &quot;Top Of Form&quot; Not Supported on Okidata Printers"
-permalink: kb/082/Q82526/
+permalink: /kb/082/Q82526/
 ---
 
 ## Q82526: Auto &quot;Top Of Form&quot; Not Supported on Okidata Printers

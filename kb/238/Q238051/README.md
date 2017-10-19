@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238051: Encarta 2000: Setup Quits When You Remove Previous Version"
-permalink: kb/238/Q238051/
+permalink: /kb/238/Q238051/
 ---
 
 ## Q238051: Encarta 2000: Setup Quits When You Remove Previous Version

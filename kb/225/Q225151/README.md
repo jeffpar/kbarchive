@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225151: PC Card Modem Does Not Use Assigned Interrupt"
-permalink: kb/225/Q225151/
+permalink: /kb/225/Q225151/
 ---
 
 ## Q225151: PC Card Modem Does Not Use Assigned Interrupt

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107125: Scenes 1.0: How to Retain Previous Wallpaper"
-permalink: kb/107/Q107125/
+permalink: /kb/107/Q107125/
 ---
 
 ## Q107125: Scenes 1.0: How to Retain Previous Wallpaper

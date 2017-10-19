@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248739: IIS Fails to Run on a Sysprep Cloned System"
-permalink: kb/248/Q248739/
+permalink: /kb/248/Q248739/
 ---
 
 ## Q248739: IIS Fails to Run on a Sysprep Cloned System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186620: Terminal Server Commands: AREVFIX"
-permalink: kb/186/Q186620/
+permalink: /kb/186/Q186620/
 ---
 
 ## Q186620: Terminal Server Commands: AREVFIX

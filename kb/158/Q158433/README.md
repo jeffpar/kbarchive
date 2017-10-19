@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158433: Re-creating Admin Shares Causes Exception Error"
-permalink: kb/158/Q158433/
+permalink: /kb/158/Q158433/
 ---
 
 ## Q158433: Re-creating Admin Shares Causes Exception Error

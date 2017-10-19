@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161373: Background Color Changes When Exiting MS-DOS Prompt"
-permalink: kb/161/Q161373/
+permalink: /kb/161/Q161373/
 ---
 
 ## Q161373: Background Color Changes When Exiting MS-DOS Prompt

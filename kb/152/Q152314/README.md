@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152314: Mac Bookshelf 96-97: About Box Shows Odd Hard Disk Space Info"
-permalink: kb/152/Q152314/
+permalink: /kb/152/Q152314/
 ---
 
 ## Q152314: Mac Bookshelf 96-97: About Box Shows Odd Hard Disk Space Info

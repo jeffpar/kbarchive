@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184819: Awkward COBOL Definition for Bounded Recordsets"
-permalink: kb/184/Q184819/
+permalink: /kb/184/Q184819/
 ---
 
 ## Q184819: Awkward COBOL Definition for Bounded Recordsets

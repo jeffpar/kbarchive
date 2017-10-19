@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127152: HOWTO: How to Make an Application Display Real Units of Measurem"
-permalink: kb/127/Q127152/
+permalink: /kb/127/Q127152/
 ---
 
 ## Q127152: HOWTO: How to Make an Application Display Real Units of Measurem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178775: Changing Default Setting For Published Free/Busy Information"
-permalink: kb/178/Q178775/
+permalink: /kb/178/Q178775/
 ---
 
 ## Q178775: Changing Default Setting For Published Free/Busy Information

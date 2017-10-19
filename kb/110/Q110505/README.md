@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110505: PRB: Setting First Pane of CStatusBar"
-permalink: kb/110/Q110505/
+permalink: /kb/110/Q110505/
 ---
 
 ## Q110505: PRB: Setting First Pane of CStatusBar

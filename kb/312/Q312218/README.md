@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312218: BUG: Deadlock in Multithreaded Process Using Declare Statements"
-permalink: kb/312/Q312218/
+permalink: /kb/312/Q312218/
 ---
 
 ## Q312218: BUG: Deadlock in Multithreaded Process Using Declare Statements

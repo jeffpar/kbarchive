@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185095: PPT: Embedding Fonts Not Supported in Macintosh PowerPoint"
-permalink: kb/185/Q185095/
+permalink: /kb/185/Q185095/
 ---
 
 ## Q185095: PPT: Embedding Fonts Not Supported in Macintosh PowerPoint

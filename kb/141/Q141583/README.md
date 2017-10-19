@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141583: CONN: Setup Error Indicates Duplicate Gateway"
-permalink: kb/141/Q141583/
+permalink: /kb/141/Q141583/
 ---
 
 ## Q141583: CONN: Setup Error Indicates Duplicate Gateway

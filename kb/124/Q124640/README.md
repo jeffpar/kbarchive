@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124640: Windows NT 3.5 Setup Err Msg: Setup has recognized the..."
-permalink: kb/124/Q124640/
+permalink: /kb/124/Q124640/
 ---
 
 ## Q124640: Windows NT 3.5 Setup Err Msg: Setup has recognized the...

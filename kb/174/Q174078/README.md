@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174078: XADM: Tracking Log Event Numbers for Exchange 4.0"
-permalink: kb/174/Q174078/
+permalink: /kb/174/Q174078/
 ---
 
 ## Q174078: XADM: Tracking Log Event Numbers for Exchange 4.0

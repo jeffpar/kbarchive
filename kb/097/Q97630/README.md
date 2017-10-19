@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97630: Using the Report Writer with ImageWriter or LaserWriter"
-permalink: kb/097/Q97630/
+permalink: /kb/097/Q97630/
 ---
 
 ## Q97630: Using the Report Writer with ImageWriter or LaserWriter

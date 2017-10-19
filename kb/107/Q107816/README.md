@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107816: WFWG 3.11 Setup Installs Older Logitech Mouse Driver"
-permalink: kb/107/Q107816/
+permalink: /kb/107/Q107816/
 ---
 
 ## Q107816: WFWG 3.11 Setup Installs Older Logitech Mouse Driver

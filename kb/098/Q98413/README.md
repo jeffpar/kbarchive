@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98413: Beethoven Err Msg: The Wrong Disc Is in the CD-ROM Drive..."
-permalink: kb/098/Q98413/
+permalink: /kb/098/Q98413/
 ---
 
 ## Q98413: Beethoven Err Msg: The Wrong Disc Is in the CD-ROM Drive...

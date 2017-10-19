@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100038: Mac DOS: Drivers Needed for MS-DOS Client for AppleTalk Mail"
-permalink: kb/100/Q100038/
+permalink: /kb/100/Q100038/
 ---
 
 ## Q100038: Mac DOS: Drivers Needed for MS-DOS Client for AppleTalk Mail

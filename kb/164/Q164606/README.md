@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164606: Deferred Reconnections to Password Shares May Not Work"
-permalink: kb/164/Q164606/
+permalink: /kb/164/Q164606/
 ---
 
 ## Q164606: Deferred Reconnections to Password Shares May Not Work

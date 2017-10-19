@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107569: Configuring for LU 6.2 Through a 3174 APPN Network Node"
-permalink: kb/107/Q107569/
+permalink: /kb/107/Q107569/
 ---
 
 ## Q107569: Configuring for LU 6.2 Through a 3174 APPN Network Node

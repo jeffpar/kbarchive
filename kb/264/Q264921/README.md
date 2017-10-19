@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264921: INFO: How IIS Authenticates Browser Clients"
-permalink: kb/264/Q264921/
+permalink: /kb/264/Q264921/
 ---
 
 ## Q264921: INFO: How IIS Authenticates Browser Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243386: IIS Metabase Encryption on the French Version of Windows 2000"
-permalink: kb/243/Q243386/
+permalink: /kb/243/Q243386/
 ---
 
 ## Q243386: IIS Metabase Encryption on the French Version of Windows 2000

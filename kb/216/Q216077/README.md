@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216077: WD97: Error Saving to NetWare Server After Upgrading to SR-2"
-permalink: kb/216/Q216077/
+permalink: /kb/216/Q216077/
 ---
 
 ## Q216077: WD97: Error Saving to NetWare Server After Upgrading to SR-2

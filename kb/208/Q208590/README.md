@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208590: BUG: CommandBar: &quot;Memory Could Not Be Read&quot; Error"
-permalink: kb/208/Q208590/
+permalink: /kb/208/Q208590/
 ---
 
 ## Q208590: BUG: CommandBar: &quot;Memory Could Not Be Read&quot; Error

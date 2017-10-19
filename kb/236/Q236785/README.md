@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236785: TN3270 Client Sessions Fail with sec_rc=0x00000320 (LUA_BRACKET)"
-permalink: kb/236/Q236785/
+permalink: /kb/236/Q236785/
 ---
 
 ## Q236785: TN3270 Client Sessions Fail with sec_rc=0x00000320 (LUA_BRACKET)

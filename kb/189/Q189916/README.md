@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189916: BUG: SET(&quot;DEBUGOUT&quot;) Returns Filename After SET DEBUGOUT TO"
-permalink: kb/189/Q189916/
+permalink: /kb/189/Q189916/
 ---
 
 ## Q189916: BUG: SET(&quot;DEBUGOUT&quot;) Returns Filename After SET DEBUGOUT TO

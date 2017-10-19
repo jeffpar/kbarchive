@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152262: Mismatched IPX/SPX Frame Types Prevent Connectivity"
-permalink: kb/152/Q152262/
+permalink: /kb/152/Q152262/
 ---
 
 ## Q152262: Mismatched IPX/SPX Frame Types Prevent Connectivity

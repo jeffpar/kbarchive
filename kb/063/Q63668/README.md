@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63668: Superbase 4 Version 1.2 or Later Required for Windows 3.0"
-permalink: kb/063/Q63668/
+permalink: /kb/063/Q63668/
 ---
 
 ## Q63668: Superbase 4 Version 1.2 or Later Required for Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151636: BUG: Insert Object of an Imager File Causes Error or Hangs Mac"
-permalink: kb/151/Q151636/
+permalink: /kb/151/Q151636/
 ---
 
 ## Q151636: BUG: Insert Object of an Imager File Causes Error or Hangs Mac

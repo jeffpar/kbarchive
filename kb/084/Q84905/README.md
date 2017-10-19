@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84905: Startup Directory Doesn't Work in Standard on Novell"
-permalink: kb/084/Q84905/
+permalink: /kb/084/Q84905/
 ---
 
 ## Q84905: Startup Directory Doesn't Work in Standard on Novell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179350: How to Optimize Performance in Combat Flight Simulator"
-permalink: kb/179/Q179350/
+permalink: /kb/179/Q179350/
 ---
 
 ## Q179350: How to Optimize Performance in Combat Flight Simulator

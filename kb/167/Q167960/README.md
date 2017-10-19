@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167960: BUG: ESC/ENTER Keys Do Not Work When Editing CTreeCtrl Labels"
-permalink: kb/167/Q167960/
+permalink: /kb/167/Q167960/
 ---
 
 ## Q167960: BUG: ESC/ENTER Keys Do Not Work When Editing CTreeCtrl Labels

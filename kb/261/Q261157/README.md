@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261157: Streets and Trips: Computer Hangs When You Start the Program"
-permalink: kb/261/Q261157/
+permalink: /kb/261/Q261157/
 ---
 
 ## Q261157: Streets and Trips: Computer Hangs When You Start the Program

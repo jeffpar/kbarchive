@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67496: Windows 3.0 SDL Disk Directories (3.5 Inch, 720K)"
-permalink: kb/067/Q67496/
+permalink: /kb/067/Q67496/
 ---
 
 ## Q67496: Windows 3.0 SDL Disk Directories (3.5 Inch, 720K)

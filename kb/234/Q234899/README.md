@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234899: XCLN: How to Manage Outlook 2000 with System Policies"
-permalink: kb/234/Q234899/
+permalink: /kb/234/Q234899/
 ---
 
 ## Q234899: XCLN: How to Manage Outlook 2000 with System Policies

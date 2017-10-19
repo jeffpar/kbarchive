@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135770: Empty History Record Appears when Viewing Client Package Group"
-permalink: kb/135/Q135770/
+permalink: /kb/135/Q135770/
 ---
 
 ## Q135770: Empty History Record Appears when Viewing Client Package Group

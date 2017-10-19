@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214584: Close Combat III: Game Does Not Start at High Resolutions"
-permalink: kb/214/Q214584/
+permalink: /kb/214/Q214584/
 ---
 
 ## Q214584: Close Combat III: Game Does Not Start at High Resolutions

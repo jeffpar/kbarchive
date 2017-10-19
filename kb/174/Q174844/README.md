@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174844: Spooler Service Causing Access Violation"
-permalink: kb/174/Q174844/
+permalink: /kb/174/Q174844/
 ---
 
 ## Q174844: Spooler Service Causing Access Violation

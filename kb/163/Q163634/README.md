@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163634: XCLN: Can't Synchronize Microsoft Schedule+ File if Offline"
-permalink: kb/163/Q163634/
+permalink: /kb/163/Q163634/
 ---
 
 ## Q163634: XCLN: Can't Synchronize Microsoft Schedule+ File if Offline

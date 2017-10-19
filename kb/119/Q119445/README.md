@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119445: Syntax for Addressing Faxes Using Microsoft At Work PC Fax"
-permalink: kb/119/Q119445/
+permalink: /kb/119/Q119445/
 ---
 
 ## Q119445: Syntax for Addressing Faxes Using Microsoft At Work PC Fax

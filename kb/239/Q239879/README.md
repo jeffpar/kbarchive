@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239879: CoCreateInstance Fails When Constructor String Is Blank"
-permalink: kb/239/Q239879/
+permalink: /kb/239/Q239879/
 ---
 
 ## Q239879: CoCreateInstance Fails When Constructor String Is Blank

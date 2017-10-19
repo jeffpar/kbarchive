@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124804: VOLINFO Utility from Novell Server Reports Incorrect Values"
-permalink: kb/124/Q124804/
+permalink: /kb/124/Q124804/
 ---
 
 ## Q124804: VOLINFO Utility from Novell Server Reports Incorrect Values

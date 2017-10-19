@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69785: Flight Simulator: Land Appears Blue at San Diego Airport"
-permalink: kb/069/Q69785/
+permalink: /kb/069/Q69785/
 ---
 
 ## Q69785: Flight Simulator: Land Appears Blue at San Diego Airport

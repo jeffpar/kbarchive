@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247852: SMS: SQL Monitor Service Does Not Create Notification Files"
-permalink: kb/247/Q247852/
+permalink: /kb/247/Q247852/
 ---
 
 ## Q247852: SMS: SQL Monitor Service Does Not Create Notification Files

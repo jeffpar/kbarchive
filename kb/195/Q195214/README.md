@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195214: XADM: 5.5 SP1 Update Fails on 2nd Cluster Node with French PDC"
-permalink: kb/195/Q195214/
+permalink: /kb/195/Q195214/
 ---
 
 ## Q195214: XADM: 5.5 SP1 Update Fails on 2nd Cluster Node with French PDC

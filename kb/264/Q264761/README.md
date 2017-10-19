@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264761: FP98: Server Error When You Create a Web"
-permalink: kb/264/Q264761/
+permalink: /kb/264/Q264761/
 ---
 
 ## Q264761: FP98: Server Error When You Create a Web

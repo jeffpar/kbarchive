@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185449: DLC 802.2 Connection Stays Pending After Remote System Restart"
-permalink: kb/185/Q185449/
+permalink: /kb/185/Q185449/
 ---
 
 ## Q185449: DLC 802.2 Connection Stays Pending After Remote System Restart

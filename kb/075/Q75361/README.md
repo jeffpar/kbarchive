@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75361: Using Search Master CD-ROM Software with MS DOS 5.0"
-permalink: kb/075/Q75361/
+permalink: /kb/075/Q75361/
 ---
 
 ## Q75361: Using Search Master CD-ROM Software with MS DOS 5.0

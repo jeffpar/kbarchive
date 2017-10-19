@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169533: WD97: Language Format Is Not Applied to All Parts of a Document"
-permalink: kb/169/Q169533/
+permalink: /kb/169/Q169533/
 ---
 
 ## Q169533: WD97: Language Format Is Not Applied to All Parts of a Document

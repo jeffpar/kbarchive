@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63772: Northgate 286 with AMI BIOS Requires HIMEM.SYS /M:8 Switch"
-permalink: kb/063/Q63772/
+permalink: /kb/063/Q63772/
 ---
 
 ## Q63772: Northgate 286 with AMI BIOS Requires HIMEM.SYS /M:8 Switch

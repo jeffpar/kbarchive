@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161186: FIX: MODIFY MEMO Command Ignores IN WINDOW Clause"
-permalink: kb/161/Q161186/
+permalink: /kb/161/Q161186/
 ---
 
 ## Q161186: FIX: MODIFY MEMO Command Ignores IN WINDOW Clause

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128609: Display Skewed at High Resolution on IBM 9515 Monitor"
-permalink: kb/128/Q128609/
+permalink: /kb/128/Q128609/
 ---
 
 ## Q128609: Display Skewed at High Resolution on IBM 9515 Monitor

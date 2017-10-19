@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158514: PPT7: Internet Explorer Prevents Association of .ppt, .pot Files"
-permalink: kb/158/Q158514/
+permalink: /kb/158/Q158514/
 ---
 
 ## Q158514: PPT7: Internet Explorer Prevents Association of .ppt, .pot Files

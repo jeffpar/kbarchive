@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157285: STL Sample for the Predicate Persion of upper_bound Function"
-permalink: kb/157/Q157285/
+permalink: /kb/157/Q157285/
 ---
 
 ## Q157285: STL Sample for the Predicate Persion of upper_bound Function

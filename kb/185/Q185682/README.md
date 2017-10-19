@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185682: Bugcheck When IPX Is Bound to Only Ndiswan Adapter"
-permalink: kb/185/Q185682/
+permalink: /kb/185/Q185682/
 ---
 
 ## Q185682: Bugcheck When IPX Is Bound to Only Ndiswan Adapter

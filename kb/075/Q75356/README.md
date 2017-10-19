@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75356: AT Gigafile Disk Driver Does Not Work with MS-DOS 5.0"
-permalink: kb/075/Q75356/
+permalink: /kb/075/Q75356/
 ---
 
 ## Q75356: AT Gigafile Disk Driver Does Not Work with MS-DOS 5.0

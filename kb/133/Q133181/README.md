@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133181: Drive A Not Available in File Manager on AST Ascentia 900N"
-permalink: kb/133/Q133181/
+permalink: /kb/133/Q133181/
 ---
 
 ## Q133181: Drive A Not Available in File Manager on AST Ascentia 900N

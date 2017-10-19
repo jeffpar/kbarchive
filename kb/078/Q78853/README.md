@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78853: PRB: Conditional Breakpoints Cannot Always Be Set"
-permalink: kb/078/Q78853/
+permalink: /kb/078/Q78853/
 ---
 
 ## Q78853: PRB: Conditional Breakpoints Cannot Always Be Set

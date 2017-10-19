@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93363: Usage Questions &amp; Answers for Windows 3.1"
-permalink: kb/093/Q93363/
+permalink: /kb/093/Q93363/
 ---
 
 ## Q93363: Usage Questions &amp; Answers for Windows 3.1

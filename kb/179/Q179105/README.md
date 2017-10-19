@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179105: WD97: Word Attachment Not Readable Upon Receipt Via E-Mail"
-permalink: kb/179/Q179105/
+permalink: /kb/179/Q179105/
 ---
 
 ## Q179105: WD97: Word Attachment Not Readable Upon Receipt Via E-Mail

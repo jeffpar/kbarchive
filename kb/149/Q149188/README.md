@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149188: XCLN: MSN Sign-on Dialog Appears Behind Address List"
-permalink: kb/149/Q149188/
+permalink: /kb/149/Q149188/
 ---
 
 ## Q149188: XCLN: MSN Sign-on Dialog Appears Behind Address List

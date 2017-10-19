@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123180: Large File Download Fails Over Eicon WAN Services"
-permalink: kb/123/Q123180/
+permalink: /kb/123/Q123180/
 ---
 
 ## Q123180: Large File Download Fails Over Eicon WAN Services

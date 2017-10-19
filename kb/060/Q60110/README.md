@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60110: Mac Form: Naming Fields in the Form Designer"
-permalink: kb/060/Q60110/
+permalink: /kb/060/Q60110/
 ---
 
 ## Q60110: Mac Form: Naming Fields in the Form Designer

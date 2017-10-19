@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167315: QRI Bit Not Set Correctly on Responses to RUI Apps"
-permalink: kb/167/Q167315/
+permalink: /kb/167/Q167315/
 ---
 
 ## Q167315: QRI Bit Not Set Correctly on Responses to RUI Apps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170905: WD97: Envelope Address Moves After Canceling Font Changes"
-permalink: kb/170/Q170905/
+permalink: /kb/170/Q170905/
 ---
 
 ## Q170905: WD97: Envelope Address Moves After Canceling Font Changes

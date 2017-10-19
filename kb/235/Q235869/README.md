@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235869: SMS: How to Use Cliutils.exe to Force Inventory to Occur"
-permalink: kb/235/Q235869/
+permalink: /kb/235/Q235869/
 ---
 
 ## Q235869: SMS: How to Use Cliutils.exe to Force Inventory to Occur

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107653: Writer: Some Borders Print Incorrectly"
-permalink: kb/107/Q107653/
+permalink: /kb/107/Q107653/
 ---
 
 ## Q107653: Writer: Some Borders Print Incorrectly

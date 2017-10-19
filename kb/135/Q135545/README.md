@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135545: Windows 95 DMF Floppy Disk Directory Listing (2 of 4)"
-permalink: kb/135/Q135545/
+permalink: /kb/135/Q135545/
 ---
 
 ## Q135545: Windows 95 DMF Floppy Disk Directory Listing (2 of 4)

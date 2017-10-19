@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149228: How to Disable Mouse Acceleration"
-permalink: kb/149/Q149228/
+permalink: /kb/149/Q149228/
 ---
 
 ## Q149228: How to Disable Mouse Acceleration

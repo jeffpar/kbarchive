@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35774: INFO: Differences Between PostAppMessage and PostMessage Funcs"
-permalink: kb/035/Q35774/
+permalink: /kb/035/Q35774/
 ---
 
 ## Q35774: INFO: Differences Between PostAppMessage and PostMessage Funcs

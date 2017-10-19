@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305041: FIX: Fatal Error When Closing Second Instance of Class Designer"
-permalink: kb/305/Q305041/
+permalink: /kb/305/Q305041/
 ---
 
 ## Q305041: FIX: Fatal Error When Closing Second Instance of Class Designer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213004: SMS: Windows Networking Logon Client Installation and Discovery"
-permalink: kb/213/Q213004/
+permalink: /kb/213/Q213004/
 ---
 
 ## Q213004: SMS: Windows Networking Logon Client Installation and Discovery

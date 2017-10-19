@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182840: Net Localgroup Access Violates"
-permalink: kb/182/Q182840/
+permalink: /kb/182/Q182840/
 ---
 
 ## Q182840: Net Localgroup Access Violates

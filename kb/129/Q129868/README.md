@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129868: How to Pass a UDT to an OLE Automation Server in VB 4.0"
-permalink: kb/129/Q129868/
+permalink: /kb/129/Q129868/
 ---
 
 ## Q129868: How to Pass a UDT to an OLE Automation Server in VB 4.0

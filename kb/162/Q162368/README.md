@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162368: PRB: Error Message &quot;&lt;library&gt;.vcx Is Not an Object File&quot;"
-permalink: kb/162/Q162368/
+permalink: /kb/162/Q162368/
 ---
 
 ## Q162368: PRB: Error Message &quot;&lt;library&gt;.vcx Is Not an Object File&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69581: Updating the Date and Time Stamps on Files"
-permalink: kb/069/Q69581/
+permalink: /kb/069/Q69581/
 ---
 
 ## Q69581: Updating the Date and Time Stamps on Files

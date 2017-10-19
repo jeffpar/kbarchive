@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266056: Error Message Appears Stating that Video Drivers Not Installed"
-permalink: kb/266/Q266056/
+permalink: /kb/266/Q266056/
 ---
 
 ## Q266056: Error Message Appears Stating that Video Drivers Not Installed

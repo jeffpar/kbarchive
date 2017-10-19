@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162723: Golf 3.0: Player Name and PID List &quot;Illegal Copy&quot;"
-permalink: kb/162/Q162723/
+permalink: /kb/162/Q162723/
 ---
 
 ## Q162723: Golf 3.0: Player Name and PID List &quot;Illegal Copy&quot;

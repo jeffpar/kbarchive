@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252386: SFU: Network Path Not Found When Trying to Mount Unix NFS Volume"
-permalink: kb/252/Q252386/
+permalink: /kb/252/Q252386/
 ---
 
 ## Q252386: SFU: Network Path Not Found When Trying to Mount Unix NFS Volume

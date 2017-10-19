@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108752: VSafe Message: You Must Load VSafe Before Starting Windows"
-permalink: kb/108/Q108752/
+permalink: /kb/108/Q108752/
 ---
 
 ## Q108752: VSafe Message: You Must Load VSafe Before Starting Windows

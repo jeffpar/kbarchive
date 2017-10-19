@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102834: Mac Wkst: Dial-In: Local User Disconnected"
-permalink: kb/102/Q102834/
+permalink: /kb/102/Q102834/
 ---
 
 ## Q102834: Mac Wkst: Dial-In: Local User Disconnected

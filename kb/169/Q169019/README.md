@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169019: XWEB: Dates Displayed in MM/DD/YY Instead of DD/MM/YY"
-permalink: kb/169/Q169019/
+permalink: /kb/169/Q169019/
 ---
 
 ## Q169019: XWEB: Dates Displayed in MM/DD/YY Instead of DD/MM/YY

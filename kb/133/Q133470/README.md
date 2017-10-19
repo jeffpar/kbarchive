@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133470: PRB: Cannot Modify Table Structure After Using SQL SELECT"
-permalink: kb/133/Q133470/
+permalink: /kb/133/Q133470/
 ---
 
 ## Q133470: PRB: Cannot Modify Table Structure After Using SQL SELECT

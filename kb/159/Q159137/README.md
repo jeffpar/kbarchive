@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159137: Moving Files Can Corrupt NTFS Partition"
-permalink: kb/159/Q159137/
+permalink: /kb/159/Q159137/
 ---
 
 ## Q159137: Moving Files Can Corrupt NTFS Partition

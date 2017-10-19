@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222026: MAPI_E_NOT_FOUND Error In Sample For Programming OutlooK"
-permalink: kb/222/Q222026/
+permalink: /kb/222/Q222026/
 ---
 
 ## Q222026: MAPI_E_NOT_FOUND Error In Sample For Programming OutlooK

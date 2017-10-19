@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167259: WD97: Error in Recorded Macro Using Previous/Next Row Commands"
-permalink: kb/167/Q167259/
+permalink: /kb/167/Q167259/
 ---
 
 ## Q167259: WD97: Error in Recorded Macro Using Previous/Next Row Commands

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108584: FIX: Handling of Invalid Values in Class Wizard for DDX/DDV"
-permalink: kb/108/Q108584/
+permalink: /kb/108/Q108584/
 ---
 
 ## Q108584: FIX: Handling of Invalid Values in Class Wizard for DDX/DDV

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115705: BUG: Function Style Conversion Incorrectly Generates Errors"
-permalink: kb/115/Q115705/
+permalink: /kb/115/Q115705/
 ---
 
 ## Q115705: BUG: Function Style Conversion Incorrectly Generates Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109583: PRB: SQL SELECT Causes ICE or &quot;Invalid Function Argument...&quot;"
-permalink: kb/109/Q109583/
+permalink: /kb/109/Q109583/
 ---
 
 ## Q109583: PRB: SQL SELECT Causes ICE or &quot;Invalid Function Argument...&quot;

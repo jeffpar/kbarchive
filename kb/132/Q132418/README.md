@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132418: Dogs: Documented Content Errors"
-permalink: kb/132/Q132418/
+permalink: /kb/132/Q132418/
 ---
 
 ## Q132418: Dogs: Documented Content Errors

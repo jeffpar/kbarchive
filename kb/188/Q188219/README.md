@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188219: Changes to ASP Files May Not Take Effect If Caching Is Disabled"
-permalink: kb/188/Q188219/
+permalink: /kb/188/Q188219/
 ---
 
 ## Q188219: Changes to ASP Files May Not Take Effect If Caching Is Disabled

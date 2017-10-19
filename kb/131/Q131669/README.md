@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131669: Error Message: Invalid Entry for DMAChannel in PROTOCOL.INI"
-permalink: kb/131/Q131669/
+permalink: /kb/131/Q131669/
 ---
 
 ## Q131669: Error Message: Invalid Entry for DMAChannel in PROTOCOL.INI

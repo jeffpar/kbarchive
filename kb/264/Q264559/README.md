@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264559: When You Try to Change Settings, Error Message Reports That the"
-permalink: kb/264/Q264559/
+permalink: /kb/264/Q264559/
 ---
 
 ## Q264559: When You Try to Change Settings, Error Message Reports That the

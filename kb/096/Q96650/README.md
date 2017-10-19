@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q96650: PC DB: 3.0b Server Disk 2 [3.5, 720K; 5.25, 1.2 MB]"
-permalink: kb/096/Q96650/
+title: "Q96650: PC DB: 3.0b Server Disk 2 &#91;3.5, 720K; 5.25, 1.2 MB&#93;"
+permalink: /kb/096/Q96650/
 ---
 
-## Q96650: PC DB: 3.0b Server Disk 2 [3.5, 720K; 5.25, 1.2 MB]
+## Q96650: PC DB: 3.0b Server Disk 2 &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
 	Article: Q96650
 	Product(s): Microsoft Mail For PC Networks

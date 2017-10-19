@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182440: XWEB: Korean - Unable to Render This View424Object Required"
-permalink: kb/182/Q182440/
+permalink: /kb/182/Q182440/
 ---
 
 ## Q182440: XWEB: Korean - Unable to Render This View424Object Required

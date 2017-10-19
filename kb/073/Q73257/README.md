@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73257: Manual Installation of Microsoft MS-DOS 5 Upgrade"
-permalink: kb/073/Q73257/
+permalink: /kb/073/Q73257/
 ---
 
 ## Q73257: Manual Installation of Microsoft MS-DOS 5 Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171181: Deadlock in TCP/IP on Multiprocessor Computers"
-permalink: kb/171/Q171181/
+permalink: /kb/171/Q171181/
 ---
 
 ## Q171181: Deadlock in TCP/IP on Multiprocessor Computers

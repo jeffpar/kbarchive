@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255740: &quot;Invalid Connector DN&quot; Error Message Trying to Run Exchange MA"
-permalink: kb/255/Q255740/
+permalink: /kb/255/Q255740/
 ---
 
 ## Q255740: &quot;Invalid Connector DN&quot; Error Message Trying to Run Exchange MA

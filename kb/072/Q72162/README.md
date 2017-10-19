@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72162: MS-DOS 5 README.TXT: Notes on Windows"
-permalink: kb/072/Q72162/
+permalink: /kb/072/Q72162/
 ---
 
 ## Q72162: MS-DOS 5 README.TXT: Notes on Windows

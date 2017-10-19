@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322603: HOW TO: Enable ASPX Compression in IIS"
-permalink: kb/322/Q322603/
+permalink: /kb/322/Q322603/
 ---
 
 ## Q322603: HOW TO: Enable ASPX Compression in IIS

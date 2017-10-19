@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169510: FP: How to Set Up a Multilingual Web in FrontPage"
-permalink: kb/169/Q169510/
+permalink: /kb/169/Q169510/
 ---
 
 ## Q169510: FP: How to Set Up a Multilingual Web in FrontPage

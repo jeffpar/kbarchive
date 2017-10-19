@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253442: XADM: Exchange 5.5 SP3 KMS on Windows 2000 Certificate Server"
-permalink: kb/253/Q253442/
+permalink: /kb/253/Q253442/
 ---
 
 ## Q253442: XADM: Exchange 5.5 SP3 KMS on Windows 2000 Certificate Server

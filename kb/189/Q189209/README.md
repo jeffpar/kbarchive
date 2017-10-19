@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189209: Off 97 Starts Here Setup Error With More Than 2 GB Free Space"
-permalink: kb/189/Q189209/
+permalink: /kb/189/Q189209/
 ---
 
 ## Q189209: Off 97 Starts Here Setup Error With More Than 2 GB Free Space

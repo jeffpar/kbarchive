@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86073: Reinstalling a Windows 3.0 Printer Driver in Windows 3.1"
-permalink: kb/086/Q86073/
+permalink: /kb/086/Q86073/
 ---
 
 ## Q86073: Reinstalling a Windows 3.0 Printer Driver in Windows 3.1

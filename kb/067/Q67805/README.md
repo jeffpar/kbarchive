@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67805: LAN Manager 2.0 Named Pipe Performance Information"
-permalink: kb/067/Q67805/
+permalink: /kb/067/Q67805/
 ---
 
 ## Q67805: LAN Manager 2.0 Named Pipe Performance Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119431: SHARE Internal Error: RSC: SFT Not Found in SFT List"
-permalink: kb/119/Q119431/
+permalink: /kb/119/Q119431/
 ---
 
 ## Q119431: SHARE Internal Error: RSC: SFT Not Found in SFT List

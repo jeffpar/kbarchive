@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169606: FP: Creating Links to Files Inside and Outside of a Web"
-permalink: kb/169/Q169606/
+permalink: /kb/169/Q169606/
 ---
 
 ## Q169606: FP: Creating Links to Files Inside and Outside of a Web

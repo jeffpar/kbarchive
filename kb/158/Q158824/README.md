@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158824: Using Quotation Marks with Set Path= Statement Fails"
-permalink: kb/158/Q158824/
+permalink: /kb/158/Q158824/
 ---
 
 ## Q158824: Using Quotation Marks with Set Path= Statement Fails

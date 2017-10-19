@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82760: Citizen Printers: Dark Printing with Color Option On"
-permalink: kb/082/Q82760/
+permalink: /kb/082/Q82760/
 ---
 
 ## Q82760: Citizen Printers: Dark Printing with Color Option On

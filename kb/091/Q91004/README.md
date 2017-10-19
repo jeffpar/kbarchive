@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91004: Cannot Install More than One Network Adapter of Same Type"
-permalink: kb/091/Q91004/
+permalink: /kb/091/Q91004/
 ---
 
 ## Q91004: Cannot Install More than One Network Adapter of Same Type

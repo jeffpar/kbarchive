@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138998: HOWTO: How to Use SQL Pass-Through to Send Results to a Table"
-permalink: kb/138/Q138998/
+permalink: /kb/138/Q138998/
 ---
 
 ## Q138998: HOWTO: How to Use SQL Pass-Through to Send Results to a Table

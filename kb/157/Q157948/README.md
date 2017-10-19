@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157948: XCLN: StuffIt Delux Files Received with Incorrect File"
-permalink: kb/157/Q157948/
+permalink: /kb/157/Q157948/
 ---
 
 ## Q157948: XCLN: StuffIt Delux Files Received with Incorrect File

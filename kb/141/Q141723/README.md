@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141723: FIX: Status Bar Message Does Not Refresh Properly"
-permalink: kb/141/Q141723/
+permalink: /kb/141/Q141723/
 ---
 
 ## Q141723: FIX: Status Bar Message Does Not Refresh Properly

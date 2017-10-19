@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116239: BUG: Function that Inherits Through Dominance Fails"
-permalink: kb/116/Q116239/
+permalink: /kb/116/Q116239/
 ---
 
 ## Q116239: BUG: Function that Inherits Through Dominance Fails

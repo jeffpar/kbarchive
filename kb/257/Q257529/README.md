@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257529: FIX: MonthView's Year is Changed When Setting DayofWeek Property"
-permalink: kb/257/Q257529/
+permalink: /kb/257/Q257529/
 ---
 
 ## Q257529: FIX: MonthView's Year is Changed When Setting DayofWeek Property

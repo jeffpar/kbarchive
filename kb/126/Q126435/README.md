@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126435: Automap Road Atlas: Road Symbols Print in Solid Black"
-permalink: kb/126/Q126435/
+permalink: /kb/126/Q126435/
 ---
 
 ## Q126435: Automap Road Atlas: Road Symbols Print in Solid Black

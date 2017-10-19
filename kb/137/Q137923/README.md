@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137923: Driver for Compaq NetFlex32 Integrated Ethernet Adapter"
-permalink: kb/137/Q137923/
+permalink: /kb/137/Q137923/
 ---
 
 ## Q137923: Driver for Compaq NetFlex32 Integrated Ethernet Adapter

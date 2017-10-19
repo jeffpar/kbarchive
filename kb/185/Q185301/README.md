@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185301: &quot;None of the Above&quot; Hardware Profile Resets Device Configuration"
-permalink: kb/185/Q185301/
+permalink: /kb/185/Q185301/
 ---
 
 ## Q185301: &quot;None of the Above&quot; Hardware Profile Resets Device Configuration

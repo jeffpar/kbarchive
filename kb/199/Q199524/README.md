@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199524: PRB: SS_BITMAP Not Supported for Macintosh Static Controls"
-permalink: kb/199/Q199524/
+permalink: /kb/199/Q199524/
 ---
 
 ## Q199524: PRB: SS_BITMAP Not Supported for Macintosh Static Controls

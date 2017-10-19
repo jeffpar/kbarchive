@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134668: PC NTMMTA: Monitor Option Can Be Called from a Command Line"
-permalink: kb/134/Q134668/
+permalink: /kb/134/Q134668/
 ---
 
 ## Q134668: PC NTMMTA: Monitor Option Can Be Called from a Command Line

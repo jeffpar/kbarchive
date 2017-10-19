@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44922: Adjusting the Alignment of PostScript Output"
-permalink: kb/044/Q44922/
+permalink: /kb/044/Q44922/
 ---
 
 ## Q44922: Adjusting the Alignment of PostScript Output

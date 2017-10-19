@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87157: Mac Wkst: Sending Mail Created During Offline Operation"
-permalink: kb/087/Q87157/
+permalink: /kb/087/Q87157/
 ---
 
 ## Q87157: Mac Wkst: Sending Mail Created During Offline Operation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142797: FIX: Allow Nulls on Field Change Results of SELECT-SQL"
-permalink: kb/142/Q142797/
+permalink: /kb/142/Q142797/
 ---
 
 ## Q142797: FIX: Allow Nulls on Field Change Results of SELECT-SQL

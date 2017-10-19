@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126302: PRB: Excluded Encrypted App in Project Makes New App Encrypted"
-permalink: kb/126/Q126302/
+permalink: /kb/126/Q126302/
 ---
 
 ## Q126302: PRB: Excluded Encrypted App in Project Makes New App Encrypted

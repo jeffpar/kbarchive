@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161936: XCON: Wrong Mapping of Msg Priority Between MSMAIL and Exchange"
-permalink: kb/161/Q161936/
+permalink: /kb/161/Q161936/
 ---
 
 ## Q161936: XCON: Wrong Mapping of Msg Priority Between MSMAIL and Exchange

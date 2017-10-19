@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273754: Distributing Software May Not Work w/10004 Under Admin Context"
-permalink: kb/273/Q273754/
+permalink: /kb/273/Q273754/
 ---
 
 ## Q273754: Distributing Software May Not Work w/10004 Under Admin Context

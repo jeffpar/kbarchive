@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139029: DOC: Stlguide.rtf Different from Vector.h Header File"
-permalink: kb/139/Q139029/
+permalink: /kb/139/Q139029/
 ---
 
 ## Q139029: DOC: Stlguide.rtf Different from Vector.h Header File

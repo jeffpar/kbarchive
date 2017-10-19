@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175785: Err Msg: There Was a Problem Logging onto Your Mail Server..."
-permalink: kb/175/Q175785/
+permalink: /kb/175/Q175785/
 ---
 
 ## Q175785: Err Msg: There Was a Problem Logging onto Your Mail Server...

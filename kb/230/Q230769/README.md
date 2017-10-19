@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230769: XADM: Information Store Stops During RTF or HTML Conversion"
-permalink: kb/230/Q230769/
+permalink: /kb/230/Q230769/
 ---
 
 ## Q230769: XADM: Information Store Stops During RTF or HTML Conversion

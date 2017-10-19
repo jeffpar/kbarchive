@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280835: MechWarrior 4: How to Disable the Y-Axis of Your Pointing Device"
-permalink: kb/280/Q280835/
+permalink: /kb/280/Q280835/
 ---
 
 ## Q280835: MechWarrior 4: How to Disable the Y-Axis of Your Pointing Device

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148904: NetWare Print Jobs Always Use Form Zero"
-permalink: kb/148/Q148904/
+permalink: /kb/148/Q148904/
 ---
 
 ## Q148904: NetWare Print Jobs Always Use Form Zero

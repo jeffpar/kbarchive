@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84957: Media Player Doesn't Return to First Track After Playing CD"
-permalink: kb/084/Q84957/
+permalink: /kb/084/Q84957/
 ---
 
 ## Q84957: Media Player Doesn't Return to First Track After Playing CD

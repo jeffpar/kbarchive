@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90201: Setup Fails to Upgrade Over Existing WFWG Installation"
-permalink: kb/090/Q90201/
+permalink: /kb/090/Q90201/
 ---
 
 ## Q90201: Setup Fails to Upgrade Over Existing WFWG Installation

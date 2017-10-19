@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95200: Re-creating the Postoffice Initialization Procedure"
-permalink: kb/095/Q95200/
+permalink: /kb/095/Q95200/
 ---
 
 ## Q95200: Re-creating the Postoffice Initialization Procedure

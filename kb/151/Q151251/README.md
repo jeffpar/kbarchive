@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151251: XCLN: Printing Blank Page with Exchange Client for Windows 3.x"
-permalink: kb/151/Q151251/
+permalink: /kb/151/Q151251/
 ---
 
 ## Q151251: XCLN: Printing Blank Page with Exchange Client for Windows 3.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99482: Use Status Requests to Identify Workstation Adapter"
-permalink: kb/099/Q99482/
+permalink: /kb/099/Q99482/
 ---
 
 ## Q99482: Use Status Requests to Identify Workstation Adapter

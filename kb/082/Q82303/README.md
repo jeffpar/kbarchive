@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82303: PC OS2: Loading Both OS/2 Clients Causes Trap 00D Error"
-permalink: kb/082/Q82303/
+permalink: /kb/082/Q82303/
 ---
 
 ## Q82303: PC OS2: Loading Both OS/2 Clients Causes Trap 00D Error

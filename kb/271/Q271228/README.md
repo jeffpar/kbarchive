@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271228: IIS 5.0: Can't Get Data from Access Database on Netware 5 Server"
-permalink: kb/271/Q271228/
+permalink: /kb/271/Q271228/
 ---
 
 ## Q271228: IIS 5.0: Can't Get Data from Access Database on Netware 5 Server

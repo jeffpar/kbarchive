@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130943: Cannot Connect to NCP Server Without SAP Advertising Enabled"
-permalink: kb/130/Q130943/
+permalink: /kb/130/Q130943/
 ---
 
 ## Q130943: Cannot Connect to NCP Server Without SAP Advertising Enabled

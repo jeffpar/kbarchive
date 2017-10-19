@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136950: Delay in Running Programs If CSNW Cannot Find Preferred Server"
-permalink: kb/136/Q136950/
+permalink: /kb/136/Q136950/
 ---
 
 ## Q136950: Delay in Running Programs If CSNW Cannot Find Preferred Server

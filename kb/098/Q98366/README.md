@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98366: Using Print Commands in FoxBASE+/Mac"
-permalink: kb/098/Q98366/
+permalink: /kb/098/Q98366/
 ---
 
 ## Q98366: Using Print Commands in FoxBASE+/Mac

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160567: SMS: Updating Package Contents Requires Job"
-permalink: kb/160/Q160567/
+permalink: /kb/160/Q160567/
 ---
 
 ## Q160567: SMS: Updating Package Contents Requires Job

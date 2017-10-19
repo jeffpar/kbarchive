@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224964: SP4 Server Hangs with St. Bernard OFM and McAfee NetShield"
-permalink: kb/224/Q224964/
+permalink: /kb/224/Q224964/
 ---
 
 ## Q224964: SP4 Server Hangs with St. Bernard OFM and McAfee NetShield

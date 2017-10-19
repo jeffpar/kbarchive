@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193219: Member Server Role Cannot Be Changed to Domain Controller"
-permalink: kb/193/Q193219/
+permalink: /kb/193/Q193219/
 ---
 
 ## Q193219: Member Server Role Cannot Be Changed to Domain Controller

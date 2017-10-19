@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159330: Map.exe Does Not Set Environment Variables Correctly"
-permalink: kb/159/Q159330/
+permalink: /kb/159/Q159330/
 ---
 
 ## Q159330: Map.exe Does Not Set Environment Variables Correctly

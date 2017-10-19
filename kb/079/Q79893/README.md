@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79893: How to Disable TurboCom Communications Drivers"
-permalink: kb/079/Q79893/
+permalink: /kb/079/Q79893/
 ---
 
 ## Q79893: How to Disable TurboCom Communications Drivers

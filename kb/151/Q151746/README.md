@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151746: BDC Promoted to PDC Lacks License Purchase History"
-permalink: kb/151/Q151746/
+permalink: /kb/151/Q151746/
 ---
 
 ## Q151746: BDC Promoted to PDC Lacks License Purchase History

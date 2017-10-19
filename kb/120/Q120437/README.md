@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120437: Corel Ventura C-Runtime Error under Windows NT"
-permalink: kb/120/Q120437/
+permalink: /kb/120/Q120437/
 ---
 
 ## Q120437: Corel Ventura C-Runtime Error under Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196086: PRB:ControlSource Variables not Visible until Text Box Selected"
-permalink: kb/196/Q196086/
+permalink: /kb/196/Q196086/
 ---
 
 ## Q196086: PRB:ControlSource Variables not Visible until Text Box Selected

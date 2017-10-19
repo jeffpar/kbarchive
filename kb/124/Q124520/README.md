@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124520: FILE: Increased File Libraries for Visual C++ 2.0-2.2 Available"
-permalink: kb/124/Q124520/
+permalink: /kb/124/Q124520/
 ---
 
 ## Q124520: FILE: Increased File Libraries for Visual C++ 2.0-2.2 Available

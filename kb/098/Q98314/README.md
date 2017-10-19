@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98314: PRB: #pragma pack Can Generate Compiler Warnings"
-permalink: kb/098/Q98314/
+permalink: /kb/098/Q98314/
 ---
 
 ## Q98314: PRB: #pragma pack Can Generate Compiler Warnings

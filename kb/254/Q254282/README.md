@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254282: XIMS: Memory Leak in MMC and ChatCommand Object of Chat Server"
-permalink: kb/254/Q254282/
+permalink: /kb/254/Q254282/
 ---
 
 ## Q254282: XIMS: Memory Leak in MMC and ChatCommand Object of Chat Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130910: TSRs Knows to Conflict with USERTSR(IPX)"
-permalink: kb/130/Q130910/
+permalink: /kb/130/Q130910/
 ---
 
 ## Q130910: TSRs Knows to Conflict with USERTSR(IPX)

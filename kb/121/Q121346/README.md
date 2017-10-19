@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121346: BUG: Spaces Preceding Header File Name Generate Build Errors"
-permalink: kb/121/Q121346/
+permalink: /kb/121/Q121346/
 ---
 
 ## Q121346: BUG: Spaces Preceding Header File Name Generate Build Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34985: PRB: A2102 Warnings Generated for Possible 80286 Problems"
-permalink: kb/034/Q34985/
+permalink: /kb/034/Q34985/
 ---
 
 ## Q34985: PRB: A2102 Warnings Generated for Possible 80286 Problems

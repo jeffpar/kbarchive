@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310787: Visual C++ Debugger Hangs on Windows 2000"
-permalink: kb/310/Q310787/
+permalink: /kb/310/Q310787/
 ---
 
 ## Q310787: Visual C++ Debugger Hangs on Windows 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139329: Windows NT LUA Application Hangs After 32767 SLI_SEND Commands"
-permalink: kb/139/Q139329/
+permalink: /kb/139/Q139329/
 ---
 
 ## Q139329: Windows NT LUA Application Hangs After 32767 SLI_SEND Commands

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274884: CFS2: Cannot Host a Multiplayer Game on Zone.com"
-permalink: kb/274/Q274884/
+permalink: /kb/274/Q274884/
 ---
 
 ## Q274884: CFS2: Cannot Host a Multiplayer Game on Zone.com

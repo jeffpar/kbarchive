@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130461: New Header Structure for Tables in Visual FoxPro"
-permalink: kb/130/Q130461/
+permalink: /kb/130/Q130461/
 ---
 
 ## Q130461: New Header Structure for Tables in Visual FoxPro

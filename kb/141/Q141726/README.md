@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141726: Streets 4.0: GP Fault or System Lock Up on Windows NT 3.51"
-permalink: kb/141/Q141726/
+permalink: /kb/141/Q141726/
 ---
 
 ## Q141726: Streets 4.0: GP Fault or System Lock Up on Windows NT 3.51

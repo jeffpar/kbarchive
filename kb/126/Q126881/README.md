@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126881: Baseball 1995: ASCII Format Statistics (BS95STRM.TXT)"
-permalink: kb/126/Q126881/
+permalink: /kb/126/Q126881/
 ---
 
 ## Q126881: Baseball 1995: ASCII Format Statistics (BS95STRM.TXT)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165249: OEM Third-Party Network Drivers Cannot be Updated"
-permalink: kb/165/Q165249/
+permalink: /kb/165/Q165249/
 ---
 
 ## Q165249: OEM Third-Party Network Drivers Cannot be Updated

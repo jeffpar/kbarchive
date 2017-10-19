@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302515: HOWTO: Find all Extended Rights for a Schema Class Object"
-permalink: kb/302/Q302515/
+permalink: /kb/302/Q302515/
 ---
 
 ## Q302515: HOWTO: Find all Extended Rights for a Schema Class Object

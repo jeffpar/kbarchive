@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72487: Error Messages Caused by DIRCMD"
-permalink: kb/072/Q72487/
+permalink: /kb/072/Q72487/
 ---
 
 ## Q72487: Error Messages Caused by DIRCMD

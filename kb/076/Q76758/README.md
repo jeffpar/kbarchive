@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76758: Free Disk Space Required for Windows Resource Kit"
-permalink: kb/076/Q76758/
+permalink: /kb/076/Q76758/
 ---
 
 ## Q76758: Free Disk Space Required for Windows Resource Kit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237998: PRB: CDialog Class Doesn't Get WM_MOUSEWHEEL on Windows 95"
-permalink: kb/237/Q237998/
+permalink: /kb/237/Q237998/
 ---
 
 ## Q237998: PRB: CDialog Class Doesn't Get WM_MOUSEWHEEL on Windows 95

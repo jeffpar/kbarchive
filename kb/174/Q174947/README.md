@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174947: Docking And Power-Management Problems With Universal Serial Bus"
-permalink: kb/174/Q174947/
+permalink: /kb/174/Q174947/
 ---
 
 ## Q174947: Docking And Power-Management Problems With Universal Serial Bus

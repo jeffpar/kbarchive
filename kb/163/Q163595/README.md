@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163595: SNMP Entry Point not Found"
-permalink: kb/163/Q163595/
+permalink: /kb/163/Q163595/
 ---
 
 ## Q163595: SNMP Entry Point not Found

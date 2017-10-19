@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142064: RPC Authentication Option Under Windows NT"
-permalink: kb/142/Q142064/
+permalink: /kb/142/Q142064/
 ---
 
 ## Q142064: RPC Authentication Option Under Windows NT

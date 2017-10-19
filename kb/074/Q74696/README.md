@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74696: Using Memory Below 1 Megabyte"
-permalink: kb/074/Q74696/
+permalink: /kb/074/Q74696/
 ---
 
 ## Q74696: Using Memory Below 1 Megabyte

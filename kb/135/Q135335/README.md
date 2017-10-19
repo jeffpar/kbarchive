@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135335: Streets 4.0: Road Names Do Not Appear on Map"
-permalink: kb/135/Q135335/
+permalink: /kb/135/Q135335/
 ---
 
 ## Q135335: Streets 4.0: Road Names Do Not Appear on Map

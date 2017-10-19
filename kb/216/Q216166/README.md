@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216166: How to Modify the Video Refresh Frequency in the Registry"
-permalink: kb/216/Q216166/
+permalink: /kb/216/Q216166/
 ---
 
 ## Q216166: How to Modify the Video Refresh Frequency in the Registry

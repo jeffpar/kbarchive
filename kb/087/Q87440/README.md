@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87440: Money Manager by Expert Software May Cause GP Faults"
-permalink: kb/087/Q87440/
+permalink: /kb/087/Q87440/
 ---
 
 ## Q87440: Money Manager by Expert Software May Cause GP Faults

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157560: STL Sample for the merge Function"
-permalink: kb/157/Q157560/
+permalink: /kb/157/Q157560/
 ---
 
 ## Q157560: STL Sample for the merge Function

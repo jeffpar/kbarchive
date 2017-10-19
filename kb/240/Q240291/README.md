@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240291: Zone Err Msg: Could Not Load the Plug-in..."
-permalink: kb/240/Q240291/
+permalink: /kb/240/Q240291/
 ---
 
 ## Q240291: Zone Err Msg: Could Not Load the Plug-in...

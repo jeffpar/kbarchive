@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183386: WD97: Shortcut Key Doesn't Bring Word to the Front with Focus"
-permalink: kb/183/Q183386/
+permalink: /kb/183/Q183386/
 ---
 
 ## Q183386: WD97: Shortcut Key Doesn't Bring Word to the Front with Focus

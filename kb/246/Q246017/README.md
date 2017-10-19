@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246017: SNA Print Session Remains Pending When Stopped and Restarted"
-permalink: kb/246/Q246017/
+permalink: /kb/246/Q246017/
 ---
 
 ## Q246017: SNA Print Session Remains Pending When Stopped and Restarted

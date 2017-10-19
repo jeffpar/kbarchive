@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156668: PRB: SET PATH TO Syntax for Folders with Spaces in Name"
-permalink: kb/156/Q156668/
+permalink: /kb/156/Q156668/
 ---
 
 ## Q156668: PRB: SET PATH TO Syntax for Folders with Spaces in Name

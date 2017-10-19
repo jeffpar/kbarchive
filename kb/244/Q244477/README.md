@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244477: How to Determine Max String Size  in COMTI at Runtime"
-permalink: kb/244/Q244477/
+permalink: /kb/244/Q244477/
 ---
 
 ## Q244477: How to Determine Max String Size  in COMTI at Runtime

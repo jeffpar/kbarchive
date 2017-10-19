@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168855: WD97: Criteria Used by AutoStyle to Assign Body Text Style"
-permalink: kb/168/Q168855/
+permalink: /kb/168/Q168855/
 ---
 
 ## Q168855: WD97: Criteria Used by AutoStyle to Assign Body Text Style

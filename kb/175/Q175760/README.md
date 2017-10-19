@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175760: INFO: Contents of Analyze Window Limited to ~30,000 Characters"
-permalink: kb/175/Q175760/
+permalink: /kb/175/Q175760/
 ---
 
 ## Q175760: INFO: Contents of Analyze Window Limited to ~30,000 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244994: Unattended Installation of Windows NT Does Not Autodetect 3C905."
-permalink: kb/244/Q244994/
+permalink: /kb/244/Q244994/
 ---
 
 ## Q244994: Unattended Installation of Windows NT Does Not Autodetect 3C905.

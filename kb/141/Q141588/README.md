@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141588: Services Not Closed Properly During Forced Shutdown"
-permalink: kb/141/Q141588/
+permalink: /kb/141/Q141588/
 ---
 
 ## Q141588: Services Not Closed Properly During Forced Shutdown

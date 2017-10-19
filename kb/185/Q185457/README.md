@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185457: XADM: Information Store Shuts Down; Database at Maximum Size"
-permalink: kb/185/Q185457/
+permalink: /kb/185/Q185457/
 ---
 
 ## Q185457: XADM: Information Store Shuts Down; Database at Maximum Size

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164330: WinNT Err: DHCP Specified Range Overlaps Or Already Exists"
-permalink: kb/164/Q164330/
+permalink: /kb/164/Q164330/
 ---
 
 ## Q164330: WinNT Err: DHCP Specified Range Overlaps Or Already Exists

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63773: Windows: Using SysEdit Without a Mouse"
-permalink: kb/063/Q63773/
+permalink: /kb/063/Q63773/
 ---
 
 ## Q63773: Windows: Using SysEdit Without a Mouse

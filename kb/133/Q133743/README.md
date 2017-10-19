@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133743: How to Display Disabled Items in a Combo or List Box"
-permalink: kb/133/Q133743/
+permalink: /kb/133/Q133743/
 ---
 
 ## Q133743: How to Display Disabled Items in a Combo or List Box

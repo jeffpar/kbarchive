@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172155: BUG: Decimal Values Missing from Internet Search Wizard Results"
-permalink: kb/172/Q172155/
+permalink: /kb/172/Q172155/
 ---
 
 ## Q172155: BUG: Decimal Values Missing from Internet Search Wizard Results

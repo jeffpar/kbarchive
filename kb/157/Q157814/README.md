@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157814: SMS: Remote Control Causes Windows Client to Restart"
-permalink: kb/157/Q157814/
+permalink: /kb/157/Q157814/
 ---
 
 ## Q157814: SMS: Remote Control Causes Windows Client to Restart

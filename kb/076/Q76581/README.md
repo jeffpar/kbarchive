@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76581: PRB: LoadLibrary() Returns Error 6"
-permalink: kb/076/Q76581/
+permalink: /kb/076/Q76581/
 ---
 
 ## Q76581: PRB: LoadLibrary() Returns Error 6

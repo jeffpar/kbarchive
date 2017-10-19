@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164554: SMS: Different Site/Domain Message Is Always in English"
-permalink: kb/164/Q164554/
+permalink: /kb/164/Q164554/
 ---
 
 ## Q164554: SMS: Different Site/Domain Message Is Always in English

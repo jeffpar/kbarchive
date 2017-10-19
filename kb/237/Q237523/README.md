@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237523: Bookshelf 99 Removed When Removing Encarta Reference Suite 2000"
-permalink: kb/237/Q237523/
+permalink: /kb/237/Q237523/
 ---
 
 ## Q237523: Bookshelf 99 Removed When Removing Encarta Reference Suite 2000

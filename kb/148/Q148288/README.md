@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148288: XADM: Microsoft Exchange TP4 Transport Stack"
-permalink: kb/148/Q148288/
+permalink: /kb/148/Q148288/
 ---
 
 ## Q148288: XADM: Microsoft Exchange TP4 Transport Stack

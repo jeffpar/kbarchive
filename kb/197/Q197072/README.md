@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197072: Encarta Virtual Globe 99: Minimum System Requirements"
-permalink: kb/197/Q197072/
+permalink: /kb/197/Q197072/
 ---
 
 ## Q197072: Encarta Virtual Globe 99: Minimum System Requirements

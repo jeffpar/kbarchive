@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214401: Speed of File Creation Slows Down Linearly with Number of Files"
-permalink: kb/214/Q214401/
+permalink: /kb/214/Q214401/
 ---
 
 ## Q214401: Speed of File Creation Slows Down Linearly with Number of Files

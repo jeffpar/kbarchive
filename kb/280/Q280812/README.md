@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280812: DOC: AppOopRecoverLimit Range Wrong in IISHelp"
-permalink: kb/280/Q280812/
+permalink: /kb/280/Q280812/
 ---
 
 ## Q280812: DOC: AppOopRecoverLimit Range Wrong in IISHelp

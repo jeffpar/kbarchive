@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183784: FP: How to Use Hidden Fields in a Form With FrontPage"
-permalink: kb/183/Q183784/
+permalink: /kb/183/Q183784/
 ---
 
 ## Q183784: FP: How to Use Hidden Fields in a Form With FrontPage

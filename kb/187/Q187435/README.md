@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187435: TSCfg Adds RDP Connection Even if Initialization Fails"
-permalink: kb/187/Q187435/
+permalink: /kb/187/Q187435/
 ---
 
 ## Q187435: TSCfg Adds RDP Connection Even if Initialization Fails

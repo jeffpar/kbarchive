@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154579: Slow TCP/IP Performance When Resuming Large Data Transfer"
-permalink: kb/154/Q154579/
+permalink: /kb/154/Q154579/
 ---
 
 ## Q154579: Slow TCP/IP Performance When Resuming Large Data Transfer

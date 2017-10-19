@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207655: XWEB: Setting Up Web Publishing and OWA Access Through a Proxy"
-permalink: kb/207/Q207655/
+permalink: /kb/207/Q207655/
 ---
 
 ## Q207655: XWEB: Setting Up Web Publishing and OWA Access Through a Proxy

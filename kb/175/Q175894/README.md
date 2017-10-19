@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175894: Video Adapter Drivers Included with DirectX 5 and DirectX 6"
-permalink: kb/175/Q175894/
+permalink: /kb/175/Q175894/
 ---
 
 ## Q175894: Video Adapter Drivers Included with DirectX 5 and DirectX 6

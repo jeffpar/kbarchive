@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167373: WD97: Hidden Text Is Ignored w/ Spelling and Grammar Checking"
-permalink: kb/167/Q167373/
+permalink: /kb/167/Q167373/
 ---
 
 ## Q167373: WD97: Hidden Text Is Ignored w/ Spelling and Grammar Checking

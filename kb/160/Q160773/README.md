@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160773: BUG: Derived Group Class Loses Custom Properties"
-permalink: kb/160/Q160773/
+permalink: /kb/160/Q160773/
 ---
 
 ## Q160773: BUG: Derived Group Class Loses Custom Properties

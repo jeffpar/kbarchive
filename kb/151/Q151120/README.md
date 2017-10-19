@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151120: NT: Only First User or Administrator Can Run Program"
-permalink: kb/151/Q151120/
+permalink: /kb/151/Q151120/
 ---
 
 ## Q151120: NT: Only First User or Administrator Can Run Program

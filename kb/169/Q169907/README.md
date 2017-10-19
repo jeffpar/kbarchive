@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169907: Error 127 Starting Dial Up Networking After Running Copyadmn.cm"
-permalink: kb/169/Q169907/
+permalink: /kb/169/Q169907/
 ---
 
 ## Q169907: Error 127 Starting Dial Up Networking After Running Copyadmn.cm

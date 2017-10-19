@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74576: Communication Between EMM386.EXE and Windows"
-permalink: kb/074/Q74576/
+permalink: /kb/074/Q74576/
 ---
 
 ## Q74576: Communication Between EMM386.EXE and Windows

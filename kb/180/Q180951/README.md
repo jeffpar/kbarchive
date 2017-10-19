@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180951: Pool Name Not Displayed in the 3270 LU &quot;Assigned To&quot; Field"
-permalink: kb/180/Q180951/
+permalink: /kb/180/Q180951/
 ---
 
 ## Q180951: Pool Name Not Displayed in the 3270 LU &quot;Assigned To&quot; Field

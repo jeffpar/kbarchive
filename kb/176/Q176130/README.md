@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176130: XCON: MTA Stops When You Select Items in MTA Queue"
-permalink: kb/176/Q176130/
+permalink: /kb/176/Q176130/
 ---
 
 ## Q176130: XCON: MTA Stops When You Select Items in MTA Queue

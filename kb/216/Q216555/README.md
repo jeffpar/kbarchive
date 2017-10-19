@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216555: How to Allow Web Access to Large User Groups"
-permalink: kb/216/Q216555/
+permalink: /kb/216/Q216555/
 ---
 
 ## Q216555: How to Allow Web Access to Large User Groups

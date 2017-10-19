@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183530: XCLN: How Exchange Macintosh Client Calls the Internet Browser"
-permalink: kb/183/Q183530/
+permalink: /kb/183/Q183530/
 ---
 
 ## Q183530: XCLN: How Exchange Macintosh Client Calls the Internet Browser

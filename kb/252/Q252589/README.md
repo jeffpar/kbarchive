@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252589: Dcomcnfg.exe Utility Improvements, Fixes, Registry Entries"
-permalink: kb/252/Q252589/
+permalink: /kb/252/Q252589/
 ---
 
 ## Q252589: Dcomcnfg.exe Utility Improvements, Fixes, Registry Entries

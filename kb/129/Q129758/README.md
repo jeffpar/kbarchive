@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129758: Road Atlas 3.x: Problems Printing with IBM Proprinters"
-permalink: kb/129/Q129758/
+permalink: /kb/129/Q129758/
 ---
 
 ## Q129758: Road Atlas 3.x: Problems Printing with IBM Proprinters

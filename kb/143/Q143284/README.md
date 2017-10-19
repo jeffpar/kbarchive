@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143284: PRB: Error Generated Through Interface Clears READ EVENTS"
-permalink: kb/143/Q143284/
+permalink: /kb/143/Q143284/
 ---
 
 ## Q143284: PRB: Error Generated Through Interface Clears READ EVENTS

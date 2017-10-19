@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300890: Windows May Not Show Files on Dfs Share With 2nd-Level Servers"
-permalink: kb/300/Q300890/
+permalink: /kb/300/Q300890/
 ---
 
 ## Q300890: Windows May Not Show Files on Dfs Share With 2nd-Level Servers

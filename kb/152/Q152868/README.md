@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152868: XADM: Max Logging for Replication Messages Causes Crash"
-permalink: kb/152/Q152868/
+permalink: /kb/152/Q152868/
 ---
 
 ## Q152868: XADM: Max Logging for Replication Messages Causes Crash

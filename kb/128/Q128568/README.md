@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128568: XADM : Managing Distribution Lists from Windows Clients"
-permalink: kb/128/Q128568/
+permalink: /kb/128/Q128568/
 ---
 
 ## Q128568: XADM : Managing Distribution Lists from Windows Clients

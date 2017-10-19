@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165785: SNA 3.0 Upgrade CD Does Not Prompt for License Information"
-permalink: kb/165/Q165785/
+permalink: /kb/165/Q165785/
 ---
 
 ## Q165785: SNA 3.0 Upgrade CD Does Not Prompt for License Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108082: Windows NT Cannot Regenerate Stripe Set with Parity"
-permalink: kb/108/Q108082/
+permalink: /kb/108/Q108082/
 ---
 
 ## Q108082: Windows NT Cannot Regenerate Stripe Set with Parity

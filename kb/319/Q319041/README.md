@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319041: FIX: Internal Consistency Error with View and GOTO Command"
-permalink: kb/319/Q319041/
+permalink: /kb/319/Q319041/
 ---
 
 ## Q319041: FIX: Internal Consistency Error with View and GOTO Command

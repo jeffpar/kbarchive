@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175682: PRB: VFP Crashes When Working With Top-Level &amp; Child Forms"
-permalink: kb/175/Q175682/
+permalink: /kb/175/Q175682/
 ---
 
 ## Q175682: PRB: VFP Crashes When Working With Top-Level &amp; Child Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311764: SMS: Problems with Offline Log Upload if Client Time Is Wrong"
-permalink: kb/311/Q311764/
+permalink: /kb/311/Q311764/
 ---
 
 ## Q311764: SMS: Problems with Offline Log Upload if Client Time Is Wrong

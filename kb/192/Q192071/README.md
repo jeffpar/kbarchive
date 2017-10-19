@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192071: PRB: OLE EXE Called By FoxISAPI On PWServer Leaves INI Files"
-permalink: kb/192/Q192071/
+permalink: /kb/192/Q192071/
 ---
 
 ## Q192071: PRB: OLE EXE Called By FoxISAPI On PWServer Leaves INI Files

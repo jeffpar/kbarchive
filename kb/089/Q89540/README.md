@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89540: PRB: 15-Sec Hang During Critical Error Handling on Pen System"
-permalink: kb/089/Q89540/
+permalink: /kb/089/Q89540/
 ---
 
 ## Q89540: PRB: 15-Sec Hang During Critical Error Handling on Pen System

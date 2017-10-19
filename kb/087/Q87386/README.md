@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87386: PC DB: Symptoms of a Missing CONTROL.GLB File"
-permalink: kb/087/Q87386/
+permalink: /kb/087/Q87386/
 ---
 
 ## Q87386: PC DB: Symptoms of a Missing CONTROL.GLB File

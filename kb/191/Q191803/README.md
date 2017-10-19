@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191803: PRB: Click Event for DBGrid Returns Previous Row Values"
-permalink: kb/191/Q191803/
+permalink: /kb/191/Q191803/
 ---
 
 ## Q191803: PRB: Click Event for DBGrid Returns Previous Row Values

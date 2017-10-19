@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168138: XFOR: IMC Setup for Non-MIME Inbound Japanese SMTP Mail"
-permalink: kb/168/Q168138/
+permalink: /kb/168/Q168138/
 ---
 
 ## Q168138: XFOR: IMC Setup for Non-MIME Inbound Japanese SMTP Mail

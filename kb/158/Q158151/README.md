@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158151: XFOR: ErrMsg: Event ID 1035 - Unable to Open or Read a Message"
-permalink: kb/158/Q158151/
+permalink: /kb/158/Q158151/
 ---
 
 ## Q158151: XFOR: ErrMsg: Event ID 1035 - Unable to Open or Read a Message

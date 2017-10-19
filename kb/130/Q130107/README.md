@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130107: MS WIN NT NETWORK RES GD: 2 Ed V2 Corrections and Comments"
-permalink: kb/130/Q130107/
+permalink: /kb/130/Q130107/
 ---
 
 ## Q130107: MS WIN NT NETWORK RES GD: 2 Ed V2 Corrections and Comments

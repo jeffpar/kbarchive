@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244675: HOWTO:Use Windows Scripting Host to Read, Write, Delete Registry"
-permalink: kb/244/Q244675/
+permalink: /kb/244/Q244675/
 ---
 
 ## Q244675: HOWTO:Use Windows Scripting Host to Read, Write, Delete Registry

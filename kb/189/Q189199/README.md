@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189199: Inside Distributed COM Comments and Corrections"
-permalink: kb/189/Q189199/
+permalink: /kb/189/Q189199/
 ---
 
 ## Q189199: Inside Distributed COM Comments and Corrections

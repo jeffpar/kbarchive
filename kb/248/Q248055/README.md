@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248055: BUG: Run-Time Error 713 Opening Data Report in Distributed App"
-permalink: kb/248/Q248055/
+permalink: /kb/248/Q248055/
 ---
 
 ## Q248055: BUG: Run-Time Error 713 Opening Data Report in Distributed App

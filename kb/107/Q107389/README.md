@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107389: Cannot Print Directly to Imagewriter Printer"
-permalink: kb/107/Q107389/
+permalink: /kb/107/Q107389/
 ---
 
 ## Q107389: Cannot Print Directly to Imagewriter Printer

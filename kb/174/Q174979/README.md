@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174979: Screen Saver Password Is Not Changed with Domain Password"
-permalink: kb/174/Q174979/
+permalink: /kb/174/Q174979/
 ---
 
 ## Q174979: Screen Saver Password Is Not Changed with Domain Password

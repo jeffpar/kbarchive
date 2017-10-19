@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214763: XFOR: OVVM Connector Sends Incorrect Loc. Info. in Meeting Req."
-permalink: kb/214/Q214763/
+permalink: /kb/214/Q214763/
 ---
 
 ## Q214763: XFOR: OVVM Connector Sends Incorrect Loc. Info. in Meeting Req.

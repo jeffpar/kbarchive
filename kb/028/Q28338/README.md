@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28338: INFO: Return Value from ChangeClipboardChain()"
-permalink: kb/028/Q28338/
+permalink: /kb/028/Q28338/
 ---
 
 ## Q28338: INFO: Return Value from ChangeClipboardChain()

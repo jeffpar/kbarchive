@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151071: FIX: Spawn Hangs When Inheriting Pipe Handle"
-permalink: kb/151/Q151071/
+permalink: /kb/151/Q151071/
 ---
 
 ## Q151071: FIX: Spawn Hangs When Inheriting Pipe Handle

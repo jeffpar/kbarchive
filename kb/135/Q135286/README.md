@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135286: BUG: Can't Use Keyboard to Change Vertical Size of Object"
-permalink: kb/135/Q135286/
+permalink: /kb/135/Q135286/
 ---
 
 ## Q135286: BUG: Can't Use Keyboard to Change Vertical Size of Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261286: SMS: &quot;Could Not Connect to Registry Key&quot; Message in SQL Monitor"
-permalink: kb/261/Q261286/
+permalink: /kb/261/Q261286/
 ---
 
 ## Q261286: SMS: &quot;Could Not Connect to Registry Key&quot; Message in SQL Monitor

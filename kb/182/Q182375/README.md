@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182375: API or Message Tracing May Cause SNA Server Process to Hang"
-permalink: kb/182/Q182375/
+permalink: /kb/182/Q182375/
 ---
 
 ## Q182375: API or Message Tracing May Cause SNA Server Process to Hang

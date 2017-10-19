@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77225: Zenith Z-180/Z-184 Loses Date/Time with MS-DOS Upgrade"
-permalink: kb/077/Q77225/
+permalink: /kb/077/Q77225/
 ---
 
 ## Q77225: Zenith Z-180/Z-184 Loses Date/Time with MS-DOS Upgrade

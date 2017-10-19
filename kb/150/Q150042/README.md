@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150042: Browser Client Sends Multiple Logon Requests"
-permalink: kb/150/Q150042/
+permalink: /kb/150/Q150042/
 ---
 
 ## Q150042: Browser Client Sends Multiple Logon Requests

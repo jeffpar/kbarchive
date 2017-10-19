@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164733: PPT7: Embedded Word Tables Show Unequal Borders"
-permalink: kb/164/Q164733/
+permalink: /kb/164/Q164733/
 ---
 
 ## Q164733: PPT7: Embedded Word Tables Show Unequal Borders

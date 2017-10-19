@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244599: Fixes Required in TCSEC C2 Security Evaluation Configuration"
-permalink: kb/244/Q244599/
+permalink: /kb/244/Q244599/
 ---
 
 ## Q244599: Fixes Required in TCSEC C2 Security Evaluation Configuration

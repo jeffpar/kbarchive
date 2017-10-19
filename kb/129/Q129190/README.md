@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129190: FIX: SourceSafe Command Line Fails to Create Output File"
-permalink: kb/129/Q129190/
+permalink: /kb/129/Q129190/
 ---
 
 ## Q129190: FIX: SourceSafe Command Line Fails to Create Output File

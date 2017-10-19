@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165882: WD97: Bottom Table Row Is Not Resized with Mouse"
-permalink: kb/165/Q165882/
+permalink: /kb/165/Q165882/
 ---
 
 ## Q165882: WD97: Bottom Table Row Is Not Resized with Mouse

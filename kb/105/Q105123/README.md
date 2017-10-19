@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105123: PPT: How to Modify Freeform Objects in PowerPoint"
-permalink: kb/105/Q105123/
+permalink: /kb/105/Q105123/
 ---
 
 ## Q105123: PPT: How to Modify Freeform Objects in PowerPoint

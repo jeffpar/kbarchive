@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156345: INFO: STL Sample for the for_each Function"
-permalink: kb/156/Q156345/
+permalink: /kb/156/Q156345/
 ---
 
 ## Q156345: INFO: STL Sample for the for_each Function

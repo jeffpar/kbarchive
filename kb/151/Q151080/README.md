@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151080: BUG: Printer Dialog Box Doesn't Show For Common Dialog Control"
-permalink: kb/151/Q151080/
+permalink: /kb/151/Q151080/
 ---
 
 ## Q151080: BUG: Printer Dialog Box Doesn't Show For Common Dialog Control

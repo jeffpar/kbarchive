@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98046: PC WFW: 3.0b Windows Client Disk 1 [5.25, 1.2 MB]"
-permalink: kb/098/Q98046/
+title: "Q98046: PC WFW: 3.0b Windows Client Disk 1 &#91;5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98046/
 ---
 
-## Q98046: PC WFW: 3.0b Windows Client Disk 1 [5.25, 1.2 MB]
+## Q98046: PC WFW: 3.0b Windows Client Disk 1 &#91;5.25, 1.2 MB&#93;
 
 	Article: Q98046
 	Product(s): Microsoft Mail For PC Networks

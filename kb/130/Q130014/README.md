@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130014: Unable To Connect SQL Server Using NWLink"
-permalink: kb/130/Q130014/
+permalink: /kb/130/Q130014/
 ---
 
 ## Q130014: Unable To Connect SQL Server Using NWLink

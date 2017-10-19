@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255968: Viaserver.exe Starts and Runs When Viacompact Is Running"
-permalink: kb/255/Q255968/
+permalink: /kb/255/Q255968/
 ---
 
 ## Q255968: Viaserver.exe Starts and Runs When Viacompact Is Running

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126560: Cannot Create NetBIOS Session Over TCP/IP"
-permalink: kb/126/Q126560/
+permalink: /kb/126/Q126560/
 ---
 
 ## Q126560: Cannot Create NetBIOS Session Over TCP/IP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168429: PRB: Component Download Fails for DCOM Projects"
-permalink: kb/168/Q168429/
+permalink: /kb/168/Q168429/
 ---
 
 ## Q168429: PRB: Component Download Fails for DCOM Projects

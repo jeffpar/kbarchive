@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150318: Bookshelf '96-'97: Maximizing Or Moving Window Causes Hang"
-permalink: kb/150/Q150318/
+permalink: /kb/150/Q150318/
 ---
 
 ## Q150318: Bookshelf '96-'97: Maximizing Or Moving Window Causes Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320636: XIMS: Transport part in the Internet headers may be absent when"
-permalink: kb/320/Q320636/
+permalink: /kb/320/Q320636/
 ---
 
 ## Q320636: XIMS: Transport part in the Internet headers may be absent when

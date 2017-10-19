@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175461: Camcorder Files Do Not Play Correctly"
-permalink: kb/175/Q175461/
+permalink: /kb/175/Q175461/
 ---
 
 ## Q175461: Camcorder Files Do Not Play Correctly

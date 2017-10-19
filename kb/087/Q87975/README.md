@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87975: DOC: EnumFontFamProc Documentation Incorrect"
-permalink: kb/087/Q87975/
+permalink: /kb/087/Q87975/
 ---
 
 ## Q87975: DOC: EnumFontFamProc Documentation Incorrect

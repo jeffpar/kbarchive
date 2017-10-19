@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221760: XCLN: Error Message Attempting to Sign or Encrypt an E-Mail Mess"
-permalink: kb/221/Q221760/
+permalink: /kb/221/Q221760/
 ---
 
 ## Q221760: XCLN: Error Message Attempting to Sign or Encrypt an E-Mail Mess

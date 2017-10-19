@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197135: WD97: Bottom of Header/Footer Text Is Truncated"
-permalink: kb/197/Q197135/
+permalink: /kb/197/Q197135/
 ---
 
 ## Q197135: WD97: Bottom of Header/Footer Text Is Truncated

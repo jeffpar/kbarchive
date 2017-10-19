@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142608: Windows for Workgroups Fails to Print to Apple IIG through NTS"
-permalink: kb/142/Q142608/
+permalink: /kb/142/Q142608/
 ---
 
 ## Q142608: Windows for Workgroups Fails to Print to Apple IIG through NTS

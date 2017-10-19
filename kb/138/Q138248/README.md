@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138248: Instsupp.bat File Does Not Install Restore.exe Properly"
-permalink: kb/138/Q138248/
+permalink: /kb/138/Q138248/
 ---
 
 ## Q138248: Instsupp.bat File Does Not Install Restore.exe Properly

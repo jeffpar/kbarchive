@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85338: FAX: Role of the Fax Gateway PC"
-permalink: kb/085/Q85338/
+permalink: /kb/085/Q85338/
 ---
 
 ## Q85338: FAX: Role of the Fax Gateway PC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172486: Bookshelf: &quot;Click Image...&quot; Text Is Copied or Printed with Image"
-permalink: kb/172/Q172486/
+permalink: /kb/172/Q172486/
 ---
 
 ## Q172486: Bookshelf: &quot;Click Image...&quot; Text Is Copied or Printed with Image

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89585: PC OS2: Running CONVERT.EXE Under OS/2 1.3"
-permalink: kb/089/Q89585/
+permalink: /kb/089/Q89585/
 ---
 
 ## Q89585: PC OS2: Running CONVERT.EXE Under OS/2 1.3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175745: Memory Leak When Using Win32 GetClipboardFormat API"
-permalink: kb/175/Q175745/
+permalink: /kb/175/Q175745/
 ---
 
 ## Q175745: Memory Leak When Using Win32 GetClipboardFormat API

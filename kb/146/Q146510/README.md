@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146510: XADM: General Descriptions of the OAB Files"
-permalink: kb/146/Q146510/
+permalink: /kb/146/Q146510/
 ---
 
 ## Q146510: XADM: General Descriptions of the OAB Files

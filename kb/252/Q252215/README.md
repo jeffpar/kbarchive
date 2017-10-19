@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252215: SMART Capability Available for Released Version of Windows 95"
-permalink: kb/252/Q252215/
+permalink: /kb/252/Q252215/
 ---
 
 ## Q252215: SMART Capability Available for Released Version of Windows 95

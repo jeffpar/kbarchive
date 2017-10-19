@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106425: DblSpace Msg: Cannot Install and New Drive Has No Free Space"
-permalink: kb/106/Q106425/
+permalink: /kb/106/Q106425/
 ---
 
 ## Q106425: DblSpace Msg: Cannot Install and New Drive Has No Free Space

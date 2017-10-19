@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163120: XCLN: Error Messsage: Could Not Schedule Fax for Transmission"
-permalink: kb/163/Q163120/
+permalink: /kb/163/Q163120/
 ---
 
 ## Q163120: XCLN: Error Messsage: Could Not Schedule Fax for Transmission

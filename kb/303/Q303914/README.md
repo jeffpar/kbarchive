@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303914: Err Msg: STOP: Cannot CreateNetLib..."
-permalink: kb/303/Q303914/
+permalink: /kb/303/Q303914/
 ---
 
 ## Q303914: Err Msg: STOP: Cannot CreateNetLib...

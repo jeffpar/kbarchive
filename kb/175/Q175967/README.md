@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175967: XADAM: Cannot Edit the PAB Migration Message in Exchange 5.0"
-permalink: kb/175/Q175967/
+permalink: /kb/175/Q175967/
 ---
 
 ## Q175967: XADAM: Cannot Edit the PAB Migration Message in Exchange 5.0

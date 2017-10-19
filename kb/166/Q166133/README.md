@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166133: BUG: Execute &lt;name&gt;.EXE Menu Item Does Not State Name of SP"
-permalink: kb/166/Q166133/
+permalink: /kb/166/Q166133/
 ---
 
 ## Q166133: BUG: Execute &lt;name&gt;.EXE Menu Item Does Not State Name of SP

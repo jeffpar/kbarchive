@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138449: Using and Troubleshooting the TCP/IP Scope ID"
-permalink: kb/138/Q138449/
+permalink: /kb/138/Q138449/
 ---
 
 ## Q138449: Using and Troubleshooting the TCP/IP Scope ID

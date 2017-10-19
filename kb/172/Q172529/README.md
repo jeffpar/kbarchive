@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172529: Printer access with Control Panel disabled by a Policy"
-permalink: kb/172/Q172529/
+permalink: /kb/172/Q172529/
 ---
 
 ## Q172529: Printer access with Control Panel disabled by a Policy

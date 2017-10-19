@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99103: FAST! Requires Version 5.0 for Use with MS-DOS 6.0"
-permalink: kb/099/Q99103/
+permalink: /kb/099/Q99103/
 ---
 
 ## Q99103: FAST! Requires Version 5.0 for Use with MS-DOS 6.0

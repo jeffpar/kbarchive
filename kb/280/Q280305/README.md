@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280305: MultiMedia: Troubleshooting IPF and Exception Errors (Part 1)"
-permalink: kb/280/Q280305/
+permalink: /kb/280/Q280305/
 ---
 
 ## Q280305: MultiMedia: Troubleshooting IPF and Exception Errors (Part 1)

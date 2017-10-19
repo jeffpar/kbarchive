@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130129: How to Open a Database or Table in Visual FoxPro"
-permalink: kb/130/Q130129/
+permalink: /kb/130/Q130129/
 ---
 
 ## Q130129: How to Open a Database or Table in Visual FoxPro

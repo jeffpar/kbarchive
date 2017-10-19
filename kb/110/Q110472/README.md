@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110472: INF: How to Differentiate Multiple SQLAllocEnv() Calls"
-permalink: kb/110/Q110472/
+permalink: /kb/110/Q110472/
 ---
 
 ## Q110472: INF: How to Differentiate Multiple SQLAllocEnv() Calls

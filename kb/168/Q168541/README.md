@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168541: SMS: PCM Should Close After Job Completes"
-permalink: kb/168/Q168541/
+permalink: /kb/168/Q168541/
 ---
 
 ## Q168541: SMS: PCM Should Close After Job Completes

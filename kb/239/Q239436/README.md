@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239436: PRB: LNK2001 on Template Member Functions"
-permalink: kb/239/Q239436/
+permalink: /kb/239/Q239436/
 ---
 
 ## Q239436: PRB: LNK2001 on Template Member Functions

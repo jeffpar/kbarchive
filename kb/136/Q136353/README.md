@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136353: Fury3: Flashing screen during AVI sequence with Boca SuperX"
-permalink: kb/136/Q136353/
+permalink: /kb/136/Q136353/
 ---
 
 ## Q136353: Fury3: Flashing screen during AVI sequence with Boca SuperX

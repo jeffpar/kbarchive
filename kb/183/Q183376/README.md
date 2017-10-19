@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183376: FP98 SBS: Pgs. 56-58: Shared Borders Directions Are Incorrect"
-permalink: kb/183/Q183376/
+permalink: /kb/183/Q183376/
 ---
 
 ## Q183376: FP98 SBS: Pgs. 56-58: Shared Borders Directions Are Incorrect

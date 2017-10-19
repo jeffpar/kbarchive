@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105308: Windows NT May Cause APC Smart UPS Battery to Discharge"
-permalink: kb/105/Q105308/
+permalink: /kb/105/Q105308/
 ---
 
 ## Q105308: Windows NT May Cause APC Smart UPS Battery to Discharge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154052: Explanation of X86 Boot Drive Limitations"
-permalink: kb/154/Q154052/
+permalink: /kb/154/Q154052/
 ---
 
 ## Q154052: Explanation of X86 Boot Drive Limitations

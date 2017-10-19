@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281619: HIS 2000 End-User Client Doesn't Delete All Files During Removal"
-permalink: kb/281/Q281619/
+permalink: /kb/281/Q281619/
 ---
 
 ## Q281619: HIS 2000 End-User Client Doesn't Delete All Files During Removal

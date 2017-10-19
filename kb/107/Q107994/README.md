@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107994: &quot;Not Enough Memory&quot; Error Occurs When Browsing"
-permalink: kb/107/Q107994/
+permalink: /kb/107/Q107994/
 ---
 
 ## Q107994: &quot;Not Enough Memory&quot; Error Occurs When Browsing

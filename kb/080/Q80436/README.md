@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80436: HP DeskJet, Print Manager, and Enhanced Error Detection"
-permalink: kb/080/Q80436/
+permalink: /kb/080/Q80436/
 ---
 
 ## Q80436: HP DeskJet, Print Manager, and Enhanced Error Detection

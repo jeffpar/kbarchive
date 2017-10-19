@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127073: Access 2.0 Err Msg with SMS: Can't Find Wizard, or There is..."
-permalink: kb/127/Q127073/
+permalink: /kb/127/Q127073/
 ---
 
 ## Q127073: Access 2.0 Err Msg with SMS: Can't Find Wizard, or There is...

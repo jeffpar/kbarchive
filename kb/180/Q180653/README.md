@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180653: Microsoft Fax Status Icon Displays Incorrect Number of Faxes"
-permalink: kb/180/Q180653/
+permalink: /kb/180/Q180653/
 ---
 
 ## Q180653: Microsoft Fax Status Icon Displays Incorrect Number of Faxes

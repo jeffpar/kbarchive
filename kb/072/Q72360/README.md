@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72360: &quot;Packed File Corrupt&quot; Error Message"
-permalink: kb/072/Q72360/
+permalink: /kb/072/Q72360/
 ---
 
 ## Q72360: &quot;Packed File Corrupt&quot; Error Message

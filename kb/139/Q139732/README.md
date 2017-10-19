@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139732: Cannot Join Domain Using Network Peripherals NP-EISA/S FDDI"
-permalink: kb/139/Q139732/
+permalink: /kb/139/Q139732/
 ---
 
 ## Q139732: Cannot Join Domain Using Network Peripherals NP-EISA/S FDDI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87525: HOW TO: Obtain a Copy of the VESA SVGA Standard"
-permalink: kb/087/Q87525/
+permalink: /kb/087/Q87525/
 ---
 
 ## Q87525: HOW TO: Obtain a Copy of the VESA SVGA Standard

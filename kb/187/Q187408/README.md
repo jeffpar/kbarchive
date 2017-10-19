@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187408: Shutdown of Terminal Server Takes Longer Than Windows NT 4.0"
-permalink: kb/187/Q187408/
+permalink: /kb/187/Q187408/
 ---
 
 ## Q187408: Shutdown of Terminal Server Takes Longer Than Windows NT 4.0

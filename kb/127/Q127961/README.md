@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127961: PC WRmt: Err Msg: Occurred Preventing Complete Installation..."
-permalink: kb/127/Q127961/
+permalink: /kb/127/Q127961/
 ---
 
 ## Q127961: PC WRmt: Err Msg: Occurred Preventing Complete Installation...

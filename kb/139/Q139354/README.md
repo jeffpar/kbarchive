@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139354: PC Win: Spelling Options Are Stored in the MMF"
-permalink: kb/139/Q139354/
+permalink: /kb/139/Q139354/
 ---
 
 ## Q139354: PC Win: Spelling Options Are Stored in the MMF

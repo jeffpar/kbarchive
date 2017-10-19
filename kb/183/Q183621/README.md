@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183621: HOWTO: Administer SQL Server Security via RDO and ADO"
-permalink: kb/183/Q183621/
+permalink: /kb/183/Q183621/
 ---
 
 ## Q183621: HOWTO: Administer SQL Server Security via RDO and ADO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125415: PROGRAMMING WINDOWS 3.1: 3rd Edition Corrections"
-permalink: kb/125/Q125415/
+permalink: /kb/125/Q125415/
 ---
 
 ## Q125415: PROGRAMMING WINDOWS 3.1: 3rd Edition Corrections

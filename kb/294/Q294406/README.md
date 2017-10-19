@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294406: XIMS: IMAP Cannot Open Appointment Items by Using SSL"
-permalink: kb/294/Q294406/
+permalink: /kb/294/Q294406/
 ---
 
 ## Q294406: XIMS: IMAP Cannot Open Appointment Items by Using SSL

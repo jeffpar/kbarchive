@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160232: FP97: Inserted TIFF Files Appear as Broken Images"
-permalink: kb/160/Q160232/
+permalink: /kb/160/Q160232/
 ---
 
 ## Q160232: FP97: Inserted TIFF Files Appear as Broken Images

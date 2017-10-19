@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130300: Distributed .ICO or File Needs Multiple Images"
-permalink: kb/130/Q130300/
+permalink: /kb/130/Q130300/
 ---
 
 ## Q130300: Distributed .ICO or File Needs Multiple Images

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155365: Cannot Uninstall Microsoft Internet Products in OSR2"
-permalink: kb/155/Q155365/
+permalink: /kb/155/Q155365/
 ---
 
 ## Q155365: Cannot Uninstall Microsoft Internet Products in OSR2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247912: PRB: Property Page of Data-Aware Controls Is Blank w/CRViewer"
-permalink: kb/247/Q247912/
+permalink: /kb/247/Q247912/
 ---
 
 ## Q247912: PRB: Property Page of Data-Aware Controls Is Blank w/CRViewer

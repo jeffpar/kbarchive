@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190263: PRB: Hyperlink Object Cannot NavigateTo Name With DBCS"
-permalink: kb/190/Q190263/
+permalink: /kb/190/Q190263/
 ---
 
 ## Q190263: PRB: Hyperlink Object Cannot NavigateTo Name With DBCS

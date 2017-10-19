@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258586: Baseball 2001: Cannot Install on Windows 2000-Based Computer"
-permalink: kb/258/Q258586/
+permalink: /kb/258/Q258586/
 ---
 
 ## Q258586: Baseball 2001: Cannot Install on Windows 2000-Based Computer

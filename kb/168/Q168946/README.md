@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168946: Puzzle Collection: Error Message Received When Hard Disk is Full"
-permalink: kb/168/Q168946/
+permalink: /kb/168/Q168946/
 ---
 
 ## Q168946: Puzzle Collection: Error Message Received When Hard Disk is Full

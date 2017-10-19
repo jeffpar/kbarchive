@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89016: Apple LaserWriter Requires ROM Revision 2.0 or Later"
-permalink: kb/089/Q89016/
+permalink: /kb/089/Q89016/
 ---
 
 ## Q89016: Apple LaserWriter Requires ROM Revision 2.0 or Later

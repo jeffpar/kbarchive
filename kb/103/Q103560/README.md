@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103560: DISKCOPY Err Msg: Invalid Drive Specification...Non-Removable"
-permalink: kb/103/Q103560/
+permalink: /kb/103/Q103560/
 ---
 
 ## Q103560: DISKCOPY Err Msg: Invalid Drive Specification...Non-Removable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74180: MS-DOS: Compaq Plasma Display Requires MONO.INI File"
-permalink: kb/074/Q74180/
+permalink: /kb/074/Q74180/
 ---
 
 ## Q74180: MS-DOS: Compaq Plasma Display Requires MONO.INI File

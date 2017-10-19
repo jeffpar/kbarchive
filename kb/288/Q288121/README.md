@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288121: BUG: Posting Acceptor Causes ASP Session to Be Lost"
-permalink: kb/288/Q288121/
+permalink: /kb/288/Q288121/
 ---
 
 ## Q288121: BUG: Posting Acceptor Causes ASP Session to Be Lost

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238080: PRB: ATL Consumer Receives DB_S_ERRORSOCCURRED on Move"
-permalink: kb/238/Q238080/
+permalink: /kb/238/Q238080/
 ---
 
 ## Q238080: PRB: ATL Consumer Receives DB_S_ERRORSOCCURRED on Move

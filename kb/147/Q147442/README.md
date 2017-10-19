@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147442: Hover! Does Not Run with Windows NT Version 3.5 or Win32s"
-permalink: kb/147/Q147442/
+permalink: /kb/147/Q147442/
 ---
 
 ## Q147442: Hover! Does Not Run with Windows NT Version 3.5 or Win32s

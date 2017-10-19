@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156934: INFO: Visual C++ 4.2b Patch"
-permalink: kb/156/Q156934/
+permalink: /kb/156/Q156934/
 ---
 
 ## Q156934: INFO: Visual C++ 4.2b Patch

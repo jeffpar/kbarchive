@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168711: How To Move a DHCP DB from WinNT 3.51 to new WinNT 4.0 Computer"
-permalink: kb/168/Q168711/
+permalink: /kb/168/Q168711/
 ---
 
 ## Q168711: How To Move a DHCP DB from WinNT 3.51 to new WinNT 4.0 Computer

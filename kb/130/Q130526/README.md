@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130526: How to Use the ON ERROR Command and the Error Event"
-permalink: kb/130/Q130526/
+permalink: /kb/130/Q130526/
 ---
 
 ## Q130526: How to Use the ON ERROR Command and the Error Event

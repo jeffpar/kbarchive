@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175794: SMSINST: ODBC Driver Path Is Incorrectly Set on Win95 Client"
-permalink: kb/175/Q175794/
+permalink: /kb/175/Q175794/
 ---
 
 ## Q175794: SMSINST: ODBC Driver Path Is Incorrectly Set on Win95 Client

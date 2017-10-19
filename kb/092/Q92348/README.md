@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92348: SET CONFIRM Setting in FoxBASE+"
-permalink: kb/092/Q92348/
+permalink: /kb/092/Q92348/
 ---
 
 ## Q92348: SET CONFIRM Setting in FoxBASE+

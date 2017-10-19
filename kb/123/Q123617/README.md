@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123617: Summary List: Visual C++ Version 2.0 Known Problems"
-permalink: kb/123/Q123617/
+permalink: /kb/123/Q123617/
 ---
 
 ## Q123617: Summary List: Visual C++ Version 2.0 Known Problems

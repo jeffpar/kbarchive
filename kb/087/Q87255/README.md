@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87255: Mac Wkst: Trouble Printing to HP LaserJet IIIsi"
-permalink: kb/087/Q87255/
+permalink: /kb/087/Q87255/
 ---
 
 ## Q87255: Mac Wkst: Trouble Printing to HP LaserJet IIIsi

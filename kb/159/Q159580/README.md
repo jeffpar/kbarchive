@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159580: WordPad Does Not Show Printer Fonts"
-permalink: kb/159/Q159580/
+permalink: /kb/159/Q159580/
 ---
 
 ## Q159580: WordPad Does Not Show Printer Fonts

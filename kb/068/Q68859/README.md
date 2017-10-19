@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68859: Cannot Copy PageMaker Line Art to Other Windows Applications"
-permalink: kb/068/Q68859/
+permalink: /kb/068/Q68859/
 ---
 
 ## Q68859: Cannot Copy PageMaker Line Art to Other Windows Applications

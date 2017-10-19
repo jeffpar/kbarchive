@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305999: MSN Broadband DSL: Lost DSL Connection During New User Setup"
-permalink: kb/305/Q305999/
+permalink: /kb/305/Q305999/
 ---
 
 ## Q305999: MSN Broadband DSL: Lost DSL Connection During New User Setup

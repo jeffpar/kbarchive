@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298648: CRTPKG Fails If Package Collection Includes Special Characters"
-permalink: kb/298/Q298648/
+permalink: /kb/298/Q298648/
 ---
 
 ## Q298648: CRTPKG Fails If Package Collection Includes Special Characters

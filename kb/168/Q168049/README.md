@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168049: HyperTerminal Files Cannot Be Opened If No Modem Is Installed"
-permalink: kb/168/Q168049/
+permalink: /kb/168/Q168049/
 ---
 
 ## Q168049: HyperTerminal Files Cannot Be Opened If No Modem Is Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120181: BUG: Incomplete APPEND GENERAL Command Doesn't Generate Error"
-permalink: kb/120/Q120181/
+permalink: /kb/120/Q120181/
 ---
 
 ## Q120181: BUG: Incomplete APPEND GENERAL Command Doesn't Generate Error

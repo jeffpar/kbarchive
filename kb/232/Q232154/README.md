@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232154: IIS: Export Private Key Opt Gray Exporting Server Certificate"
-permalink: kb/232/Q232154/
+permalink: /kb/232/Q232154/
 ---
 
 ## Q232154: IIS: Export Private Key Opt Gray Exporting Server Certificate

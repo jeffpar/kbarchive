@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230275: XFOR: How to Re-add Extensions to Exchange for OV/VM Connector"
-permalink: kb/230/Q230275/
+permalink: /kb/230/Q230275/
 ---
 
 ## Q230275: XFOR: How to Re-add Extensions to Exchange for OV/VM Connector

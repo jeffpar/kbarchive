@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135325: PPT7: Presentation Conference Troubleshooting Guide"
-permalink: kb/135/Q135325/
+permalink: /kb/135/Q135325/
 ---
 
 ## Q135325: PPT7: Presentation Conference Troubleshooting Guide

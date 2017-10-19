@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136741: Error Message: The Fax Server Could Not Be Removed"
-permalink: kb/136/Q136741/
+permalink: /kb/136/Q136741/
 ---
 
 ## Q136741: Error Message: The Fax Server Could Not Be Removed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106060: FIX: No &quot;Save Changes&quot; Prompt After Editing a String Table"
-permalink: kb/106/Q106060/
+permalink: /kb/106/Q106060/
 ---
 
 ## Q106060: FIX: No &quot;Save Changes&quot; Prompt After Editing a String Table

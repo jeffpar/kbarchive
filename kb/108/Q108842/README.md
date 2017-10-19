@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108842: PC MAPI: Using Simple MAPI on Windows NT and NTAS"
-permalink: kb/108/Q108842/
+permalink: /kb/108/Q108842/
 ---
 
 ## Q108842: PC MAPI: Using Simple MAPI on Windows NT and NTAS

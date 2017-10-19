@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140810: Job Status MIF with &#92;&quot; is Not Loaded in the Database"
-permalink: kb/140/Q140810/
+permalink: /kb/140/Q140810/
 ---
 
 ## Q140810: Job Status MIF with &#92;&quot; is Not Loaded in the Database

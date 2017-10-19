@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279447: How to change MSN Companion e-mail address or member ID"
-permalink: kb/279/Q279447/
+permalink: /kb/279/Q279447/
 ---
 
 ## Q279447: How to change MSN Companion e-mail address or member ID

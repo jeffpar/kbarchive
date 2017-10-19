@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135890: Windows 95 CD-ROM Printers.txt File"
-permalink: kb/135/Q135890/
+permalink: /kb/135/Q135890/
 ---
 
 ## Q135890: Windows 95 CD-ROM Printers.txt File

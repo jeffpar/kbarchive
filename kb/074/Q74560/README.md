@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74560: Charts and Graphs for Windows-Based Applications"
-permalink: kb/074/Q74560/
+permalink: /kb/074/Q74560/
 ---
 
 ## Q74560: Charts and Graphs for Windows-Based Applications

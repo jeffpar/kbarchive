@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243682: INFO: Synching Up a Web Project with Visual SourceSafe"
-permalink: kb/243/Q243682/
+permalink: /kb/243/Q243682/
 ---
 
 ## Q243682: INFO: Synching Up a Web Project with Visual SourceSafe

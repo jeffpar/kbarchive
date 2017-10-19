@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295811: XADM: Event 202 Appears on Computer Running Exchange Server 5.5"
-permalink: kb/295/Q295811/
+permalink: /kb/295/Q295811/
 ---
 
 ## Q295811: XADM: Event 202 Appears on Computer Running Exchange Server 5.5

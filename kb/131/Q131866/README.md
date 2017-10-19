@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131866: Mail Err Msg: There Was an Error Switching Between Private..."
-permalink: kb/131/Q131866/
+permalink: /kb/131/Q131866/
 ---
 
 ## Q131866: Mail Err Msg: There Was an Error Switching Between Private...

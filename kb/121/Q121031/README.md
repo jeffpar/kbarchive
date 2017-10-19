@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121031: Bookshelf 1994: Tables Do Not Print Properly"
-permalink: kb/121/Q121031/
+permalink: /kb/121/Q121031/
 ---
 
 ## Q121031: Bookshelf 1994: Tables Do Not Print Properly

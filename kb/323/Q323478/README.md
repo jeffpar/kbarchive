@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323478: PRB: You Cannot Debug Through a Terminal Server Session"
-permalink: kb/323/Q323478/
+permalink: /kb/323/Q323478/
 ---
 
 ## Q323478: PRB: You Cannot Debug Through a Terminal Server Session

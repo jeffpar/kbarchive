@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186538: PointCast Business Network: Error with Pcn32.exe"
-permalink: kb/186/Q186538/
+permalink: /kb/186/Q186538/
 ---
 
 ## Q186538: PointCast Business Network: Error with Pcn32.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143353: Old Shortcuts May Not Work with MSN 1.2"
-permalink: kb/143/Q143353/
+permalink: /kb/143/Q143353/
 ---
 
 ## Q143353: Old Shortcuts May Not Work with MSN 1.2

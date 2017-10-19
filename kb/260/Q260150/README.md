@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260150: BUG: Control Manager Allows You to Uninstall of ActiveX DLLs"
-permalink: kb/260/Q260150/
+permalink: /kb/260/Q260150/
 ---
 
 ## Q260150: BUG: Control Manager Allows You to Uninstall of ActiveX DLLs

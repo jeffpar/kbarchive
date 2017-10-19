@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198312: WD97: Can't Use Scroll Box to Get to Last Page of Document"
-permalink: kb/198/Q198312/
+permalink: /kb/198/Q198312/
 ---
 
 ## Q198312: WD97: Can't Use Scroll Box to Get to Last Page of Document

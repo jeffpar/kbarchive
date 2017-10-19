@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160566: SMS: PCM Command Line and &quot;Cannot Find File&quot; Error"
-permalink: kb/160/Q160566/
+permalink: /kb/160/Q160566/
 ---
 
 ## Q160566: SMS: PCM Command Line and &quot;Cannot Find File&quot; Error

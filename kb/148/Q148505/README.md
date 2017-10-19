@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148505: HOWTO: Force Files to Be Flushed to Disk"
-permalink: kb/148/Q148505/
+permalink: /kb/148/Q148505/
 ---
 
 ## Q148505: HOWTO: Force Files to Be Flushed to Disk

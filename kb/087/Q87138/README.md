@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87138: Core Technologies CNT-MCK Disk Controllers with Windows"
-permalink: kb/087/Q87138/
+permalink: /kb/087/Q87138/
 ---
 
 ## Q87138: Core Technologies CNT-MCK Disk Controllers with Windows

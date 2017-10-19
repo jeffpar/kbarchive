@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154119: Error Message: Bad or Missing Ktvga.fon"
-permalink: kb/154/Q154119/
+permalink: /kb/154/Q154119/
 ---
 
 ## Q154119: Error Message: Bad or Missing Ktvga.fon

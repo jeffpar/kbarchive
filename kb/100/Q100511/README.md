@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100511: PC DB: Assigning Owners to Files in NetWare 2.x and 3.x"
-permalink: kb/100/Q100511/
+permalink: /kb/100/Q100511/
 ---
 
 ## Q100511: PC DB: Assigning Owners to Files in NetWare 2.x and 3.x

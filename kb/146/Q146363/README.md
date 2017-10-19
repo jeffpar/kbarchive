@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146363: XCLN: Using Space Bar in Name Field on Contact Page"
-permalink: kb/146/Q146363/
+permalink: /kb/146/Q146363/
 ---
 
 ## Q146363: XCLN: Using Space Bar in Name Field on Contact Page

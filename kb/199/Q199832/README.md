@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199832: XFOR:GWISECAL Doesn't Report Initialization Event During Startup"
-permalink: kb/199/Q199832/
+permalink: /kb/199/Q199832/
 ---
 
 ## Q199832: XFOR:GWISECAL Doesn't Report Initialization Event During Startup

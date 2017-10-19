@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126241: Clients Cannot Run NetWare System Utilities Through GSNW"
-permalink: kb/126/Q126241/
+permalink: /kb/126/Q126241/
 ---
 
 ## Q126241: Clients Cannot Run NetWare System Utilities Through GSNW

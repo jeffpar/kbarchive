@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96595: EMM386.EXE EMS/XMS Memory Pool Sharing"
-permalink: kb/096/Q96595/
+permalink: /kb/096/Q96595/
 ---
 
 ## Q96595: EMM386.EXE EMS/XMS Memory Pool Sharing

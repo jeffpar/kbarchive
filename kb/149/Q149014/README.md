@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149014: Unable to Run NETADMIN.EXE or NWADMIN.EXE"
-permalink: kb/149/Q149014/
+permalink: /kb/149/Q149014/
 ---
 
 ## Q149014: Unable to Run NETADMIN.EXE or NWADMIN.EXE

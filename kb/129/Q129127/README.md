@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129127: File Transfers Using TCP/IP-32 Take a Long Time"
-permalink: kb/129/Q129127/
+permalink: /kb/129/Q129127/
 ---
 
 ## Q129127: File Transfers Using TCP/IP-32 Take a Long Time

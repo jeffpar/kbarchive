@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137896: Quick Windows Viewer is not in the printed index"
-permalink: kb/137/Q137896/
+permalink: /kb/137/Q137896/
 ---
 
 ## Q137896: Quick Windows Viewer is not in the printed index

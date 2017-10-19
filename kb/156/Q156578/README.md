@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156578: Cannot Cancel Print Job on Windows NT 3.51 Shared Printer"
-permalink: kb/156/Q156578/
+permalink: /kb/156/Q156578/
 ---
 
 ## Q156578: Cannot Cancel Print Job on Windows NT 3.51 Shared Printer

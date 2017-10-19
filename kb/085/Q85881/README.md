@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85881: PC Win: Sending Objects That Point to a Document"
-permalink: kb/085/Q85881/
+permalink: /kb/085/Q85881/
 ---
 
 ## Q85881: PC Win: Sending Objects That Point to a Document

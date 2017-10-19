@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118668: PPT7: Printing Slides or Notes Pages in Reverse Order"
-permalink: kb/118/Q118668/
+permalink: /kb/118/Q118668/
 ---
 
 ## Q118668: PPT7: Printing Slides or Notes Pages in Reverse Order

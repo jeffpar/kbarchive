@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215114: SMS: Clients of SMS 1.2 Site Are Orphaned After Upgrade to SMS 2"
-permalink: kb/215/Q215114/
+permalink: /kb/215/Q215114/
 ---
 
 ## Q215114: SMS: Clients of SMS 1.2 Site Are Orphaned After Upgrade to SMS 2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80381: Relative Addresses (Relocatables) and the Minus Operator"
-permalink: kb/080/Q80381/
+permalink: /kb/080/Q80381/
 ---
 
 ## Q80381: Relative Addresses (Relocatables) and the Minus Operator

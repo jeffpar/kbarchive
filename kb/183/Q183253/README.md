@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183253: Problems After Using Rdisk When Cloned w/System Preparation Tool"
-permalink: kb/183/Q183253/
+permalink: /kb/183/Q183253/
 ---
 
 ## Q183253: Problems After Using Rdisk When Cloned w/System Preparation Tool

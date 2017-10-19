@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271524: PRB: Oracle Synonyms Associated with Database Links Not Listed"
-permalink: kb/271/Q271524/
+permalink: /kb/271/Q271524/
 ---
 
 ## Q271524: PRB: Oracle Synonyms Associated with Database Links Not Listed

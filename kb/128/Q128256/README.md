@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128256: UT1x: Upsizing Tools Requires Local Installation of MS Access"
-permalink: kb/128/Q128256/
+permalink: /kb/128/Q128256/
 ---
 
 ## Q128256: UT1x: Upsizing Tools Requires Local Installation of MS Access

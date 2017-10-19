@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119411: PC DOS: SCRCOMP.EXE -P Option Not Work"
-permalink: kb/119/Q119411/
+permalink: /kb/119/Q119411/
 ---
 
 ## Q119411: PC DOS: SCRCOMP.EXE -P Option Not Work

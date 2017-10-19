@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193237: Quota Advisor Causes STOP 0x00000024"
-permalink: kb/193/Q193237/
+permalink: /kb/193/Q193237/
 ---
 
 ## Q193237: Quota Advisor Causes STOP 0x00000024

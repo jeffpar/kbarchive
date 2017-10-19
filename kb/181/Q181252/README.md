@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181252: WD97: How to Rotate a Clip Art Picture or Windows Metafile"
-permalink: kb/181/Q181252/
+permalink: /kb/181/Q181252/
 ---
 
 ## Q181252: WD97: How to Rotate a Clip Art Picture or Windows Metafile

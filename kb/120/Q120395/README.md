@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120395: PRB: Link or CVPack May Fail with PS 1.0a Objects"
-permalink: kb/120/Q120395/
+permalink: /kb/120/Q120395/
 ---
 
 ## Q120395: PRB: Link or CVPack May Fail with PS 1.0a Objects

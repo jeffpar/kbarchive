@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151212: Windows NT 3.5 Setup and the Pentium Pro Processor"
-permalink: kb/151/Q151212/
+permalink: /kb/151/Q151212/
 ---
 
 ## Q151212: Windows NT 3.5 Setup and the Pentium Pro Processor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195557: IntelliPoint: Tips.exe Causes Access Violation in Windows NT"
-permalink: kb/195/Q195557/
+permalink: /kb/195/Q195557/
 ---
 
 ## Q195557: IntelliPoint: Tips.exe Causes Access Violation in Windows NT

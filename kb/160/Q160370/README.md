@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160370: Stop Screen 0x00000050 Caused by Fs_rec.sys"
-permalink: kb/160/Q160370/
+permalink: /kb/160/Q160370/
 ---
 
 ## Q160370: Stop Screen 0x00000050 Caused by Fs_rec.sys

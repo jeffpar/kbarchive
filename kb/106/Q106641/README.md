@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106641: BUG: GPF on Expanding Adjustable Size Array After Execution"
-permalink: kb/106/Q106641/
+permalink: /kb/106/Q106641/
 ---
 
 ## Q106641: BUG: GPF on Expanding Adjustable Size Array After Execution

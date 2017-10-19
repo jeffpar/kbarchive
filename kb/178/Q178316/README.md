@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178316: SNA 4.0 Backup Server Logs Numerous 670 Events With 3.0 Primary"
-permalink: kb/178/Q178316/
+permalink: /kb/178/Q178316/
 ---
 
 ## Q178316: SNA 4.0 Backup Server Logs Numerous 670 Events With 3.0 Primary

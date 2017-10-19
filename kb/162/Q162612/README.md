@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162612: PPT: Sample VB Code that Inserts Title Slide and Title Text"
-permalink: kb/162/Q162612/
+permalink: /kb/162/Q162612/
 ---
 
 ## Q162612: PPT: Sample VB Code that Inserts Title Slide and Title Text

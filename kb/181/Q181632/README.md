@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181632: XCLN: Exchange Client for Macintosh Cannot Attach Macintosh Alia"
-permalink: kb/181/Q181632/
+permalink: /kb/181/Q181632/
 ---
 
 ## Q181632: XCLN: Exchange Client for Macintosh Cannot Attach Macintosh Alia

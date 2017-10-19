@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98430: Command Line Switches for Basic REDIR"
-permalink: kb/098/Q98430/
+permalink: /kb/098/Q98430/
 ---
 
 ## Q98430: Command Line Switches for Basic REDIR

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131460: PRB: Referential Intregrity Builder Leaves Code Behind"
-permalink: kb/131/Q131460/
+permalink: /kb/131/Q131460/
 ---
 
 ## Q131460: PRB: Referential Intregrity Builder Leaves Code Behind

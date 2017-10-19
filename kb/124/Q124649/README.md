@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124649: HOWTO: How to Print a Single Line Without Formfeed"
-permalink: kb/124/Q124649/
+permalink: /kb/124/Q124649/
 ---
 
 ## Q124649: HOWTO: How to Print a Single Line Without Formfeed

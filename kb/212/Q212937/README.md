@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212937: LAN Sender Continually Tries to Connect to Deleted Child Site"
-permalink: kb/212/Q212937/
+permalink: /kb/212/Q212937/
 ---
 
 ## Q212937: LAN Sender Continually Tries to Connect to Deleted Child Site

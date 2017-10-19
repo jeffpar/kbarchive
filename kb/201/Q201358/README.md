@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201358: XCLN: Cannot Generate/View Forms Created in Form Design Wizard"
-permalink: kb/201/Q201358/
+permalink: /kb/201/Q201358/
 ---
 
 ## Q201358: XCLN: Cannot Generate/View Forms Created in Form Design Wizard

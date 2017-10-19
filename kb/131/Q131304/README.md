@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131304: Intel EtherExpress PRO/100 Drivers for Windows NT 3.5"
-permalink: kb/131/Q131304/
+permalink: /kb/131/Q131304/
 ---
 
 ## Q131304: Intel EtherExpress PRO/100 Drivers for Windows NT 3.5

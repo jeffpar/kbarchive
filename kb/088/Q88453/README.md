@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88453: Right Column of Score Card Is Clipped on Diconix Printers"
-permalink: kb/088/Q88453/
+permalink: /kb/088/Q88453/
 ---
 
 ## Q88453: Right Column of Score Card Is Clipped on Diconix Printers

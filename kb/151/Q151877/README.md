@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151877: Windows NT Stops Responding with DPT PM2124 SCSI Adapter"
-permalink: kb/151/Q151877/
+permalink: /kb/151/Q151877/
 ---
 
 ## Q151877: Windows NT Stops Responding with DPT PM2124 SCSI Adapter

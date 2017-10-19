@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177085: FIX: Set Keyword with ParamArray Causes Type Mismatch Error"
-permalink: kb/177/Q177085/
+permalink: /kb/177/Q177085/
 ---
 
 ## Q177085: FIX: Set Keyword with ParamArray Causes Type Mismatch Error

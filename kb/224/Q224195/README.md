@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224195: XADM: Store Failure During the Processing of a Client Based Rule"
-permalink: kb/224/Q224195/
+permalink: /kb/224/Q224195/
 ---
 
 ## Q224195: XADM: Store Failure During the Processing of a Client Based Rule

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272352: SMS Service Packs Must Be Installed on Individual Workstations"
-permalink: kb/272/Q272352/
+permalink: /kb/272/Q272352/
 ---
 
 ## Q272352: SMS Service Packs Must Be Installed on Individual Workstations

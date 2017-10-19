@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58342: Windows 3.0 SYSTEM.INI [keyboard] Section"
-permalink: kb/058/Q58342/
+title: "Q58342: Windows 3.0 SYSTEM.INI &#91;keyboard&#93; Section"
+permalink: /kb/058/Q58342/
 ---
 
-## Q58342: Windows 3.0 SYSTEM.INI [keyboard] Section
+## Q58342: Windows 3.0 SYSTEM.INI &#91;keyboard&#93; Section
 
 	Article: Q58342
 	Product(s): Microsoft Windows 95.x Retail Product

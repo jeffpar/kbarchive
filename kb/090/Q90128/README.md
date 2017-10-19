@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90128: Leading Technology PC Partner Requires VGA (Version 3.0)"
-permalink: kb/090/Q90128/
+permalink: /kb/090/Q90128/
 ---
 
 ## Q90128: Leading Technology PC Partner Requires VGA (Version 3.0)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181254: INF: How to Use SQL_C_NUMERIC Data Type with Numeric Data"
-permalink: kb/181/Q181254/
+permalink: /kb/181/Q181254/
 ---
 
 ## Q181254: INF: How to Use SQL_C_NUMERIC Data Type with Numeric Data

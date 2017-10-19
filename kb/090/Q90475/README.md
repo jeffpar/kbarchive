@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90475: Using PING.EXE with Windows for Workgroups"
-permalink: kb/090/Q90475/
+permalink: /kb/090/Q90475/
 ---
 
 ## Q90475: Using PING.EXE with Windows for Workgroups

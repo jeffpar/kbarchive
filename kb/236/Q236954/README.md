@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236954: Error Message Repairing Windows NT After Installing Service Pack"
-permalink: kb/236/Q236954/
+permalink: /kb/236/Q236954/
 ---
 
 ## Q236954: Error Message Repairing Windows NT After Installing Service Pack

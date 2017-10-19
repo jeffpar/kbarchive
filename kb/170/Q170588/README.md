@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170588: Snacfg.exe /Addpartner Option Fails in SNA 3.0 SP1"
-permalink: kb/170/Q170588/
+permalink: /kb/170/Q170588/
 ---
 
 ## Q170588: Snacfg.exe /Addpartner Option Fails in SNA 3.0 SP1

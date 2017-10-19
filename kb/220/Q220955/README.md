@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220955: Using System Policies to Hide Specific Drive Letters"
-permalink: kb/220/Q220955/
+permalink: /kb/220/Q220955/
 ---
 
 ## Q220955: Using System Policies to Hide Specific Drive Letters

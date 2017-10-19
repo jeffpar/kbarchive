@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105932: FIX: String Concatenation May Cause Memory Errors"
-permalink: kb/105/Q105932/
+permalink: /kb/105/Q105932/
 ---
 
 ## Q105932: FIX: String Concatenation May Cause Memory Errors

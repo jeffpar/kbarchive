@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136866: Cannot Print Multiple Copies to Microsoft Fax"
-permalink: kb/136/Q136866/
+permalink: /kb/136/Q136866/
 ---
 
 ## Q136866: Cannot Print Multiple Copies to Microsoft Fax

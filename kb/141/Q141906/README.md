@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141906: Domain/Server Command Line Parameter Added to SNAADMIN"
-permalink: kb/141/Q141906/
+permalink: /kb/141/Q141906/
 ---
 
 ## Q141906: Domain/Server Command Line Parameter Added to SNAADMIN

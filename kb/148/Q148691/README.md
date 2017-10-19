@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148691: Error Using DIR Command With UNC Path in Windows NT 3.51 SP3"
-permalink: kb/148/Q148691/
+permalink: /kb/148/Q148691/
 ---
 
 ## Q148691: Error Using DIR Command With UNC Path in Windows NT 3.51 SP3

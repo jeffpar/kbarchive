@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186255: SMS: File Corruption During File Transfer from Help Desk"
-permalink: kb/186/Q186255/
+permalink: /kb/186/Q186255/
 ---
 
 ## Q186255: SMS: File Corruption During File Transfer from Help Desk

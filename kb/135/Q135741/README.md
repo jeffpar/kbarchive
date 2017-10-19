@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135741: What's New in PowerPoint for Windows 95: Slide Show"
-permalink: kb/135/Q135741/
+permalink: /kb/135/Q135741/
 ---
 
 ## Q135741: What's New in PowerPoint for Windows 95: Slide Show

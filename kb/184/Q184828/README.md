@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184828: XADM: Store Crash on Security Credentials Check"
-permalink: kb/184/Q184828/
+permalink: /kb/184/Q184828/
 ---
 
 ## Q184828: XADM: Store Crash on Security Credentials Check

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138952: FIX: Calling AMEMBERS() w/ Invalid Parameter Creates an Array"
-permalink: kb/138/Q138952/
+permalink: /kb/138/Q138952/
 ---
 
 ## Q138952: FIX: Calling AMEMBERS() w/ Invalid Parameter Creates an Array

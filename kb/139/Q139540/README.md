@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139540: Windows for Workgroups Error: SMB Error (17) Working..."
-permalink: kb/139/Q139540/
+permalink: /kb/139/Q139540/
 ---
 
 ## Q139540: Windows for Workgroups Error: SMB Error (17) Working...

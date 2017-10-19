@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156530: Setup Stops When Inspecting Computer Hardware Configuration"
-permalink: kb/156/Q156530/
+permalink: /kb/156/Q156530/
 ---
 
 ## Q156530: Setup Stops When Inspecting Computer Hardware Configuration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195808: XCLN: Unexpected Behavior Downloading GAL with Exchange Client"
-permalink: kb/195/Q195808/
+permalink: /kb/195/Q195808/
 ---
 
 ## Q195808: XCLN: Unexpected Behavior Downloading GAL with Exchange Client

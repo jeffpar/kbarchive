@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143400: PRB: Resetting Defaults May Fix Form Misbehavior in VFP"
-permalink: kb/143/Q143400/
+permalink: /kb/143/Q143400/
 ---
 
 ## Q143400: PRB: Resetting Defaults May Fix Form Misbehavior in VFP

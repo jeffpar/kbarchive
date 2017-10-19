@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82864: Poor Print Quality in MacInTax for Windows"
-permalink: kb/082/Q82864/
+permalink: /kb/082/Q82864/
 ---
 
 ## Q82864: Poor Print Quality in MacInTax for Windows

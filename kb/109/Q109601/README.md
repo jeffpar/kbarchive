@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109601: FoxPro for Macintosh Allows Trailing Spaces in Filenames"
-permalink: kb/109/Q109601/
+permalink: /kb/109/Q109601/
 ---
 
 ## Q109601: FoxPro for Macintosh Allows Trailing Spaces in Filenames

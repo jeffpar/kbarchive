@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263567: XCON: MTA Stops Responding and Cannot Be Stopped"
-permalink: kb/263/Q263567/
+permalink: /kb/263/Q263567/
 ---
 
 ## Q263567: XCON: MTA Stops Responding and Cannot Be Stopped

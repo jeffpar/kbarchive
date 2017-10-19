@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142661: Cacls.exe May Report Errors when Handling Extended Characters"
-permalink: kb/142/Q142661/
+permalink: /kb/142/Q142661/
 ---
 
 ## Q142661: Cacls.exe May Report Errors when Handling Extended Characters

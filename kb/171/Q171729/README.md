@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171729: HOWTO: Do Generic Callbacks Using a Helper DLL"
-permalink: kb/171/Q171729/
+permalink: /kb/171/Q171729/
 ---
 
 ## Q171729: HOWTO: Do Generic Callbacks Using a Helper DLL

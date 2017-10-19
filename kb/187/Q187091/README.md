@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187091: Cannot Close a Shadow Session"
-permalink: kb/187/Q187091/
+permalink: /kb/187/Q187091/
 ---
 
 ## Q187091: Cannot Close a Shadow Session

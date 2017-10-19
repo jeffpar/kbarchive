@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166963: Cannot Communicate with Computer Running NWLink IPX/SPX"
-permalink: kb/166/Q166963/
+permalink: /kb/166/Q166963/
 ---
 
 ## Q166963: Cannot Communicate with Computer Running NWLink IPX/SPX

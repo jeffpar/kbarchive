@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260141: PRB:OpenMsgStore and HrMailboxLogon Fail with Too Many Mailboxes"
-permalink: kb/260/Q260141/
+permalink: /kb/260/Q260141/
 ---
 
 ## Q260141: PRB:OpenMsgStore and HrMailboxLogon Fail with Too Many Mailboxes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140820: Wrong Info in &quot;Select Client/Server Protocols&quot; Dialog"
-permalink: kb/140/Q140820/
+permalink: /kb/140/Q140820/
 ---
 
 ## Q140820: Wrong Info in &quot;Select Client/Server Protocols&quot; Dialog

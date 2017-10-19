@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162947: XCLN: Exchange Client Using FTP TCP/IP on Token Ring Network"
-permalink: kb/162/Q162947/
+permalink: /kb/162/Q162947/
 ---
 
 ## Q162947: XCLN: Exchange Client Using FTP TCP/IP on Token Ring Network

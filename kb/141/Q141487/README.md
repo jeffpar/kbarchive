@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141487: HOWTO: How to Change the Text in the Tabs of a CPropertySheet"
-permalink: kb/141/Q141487/
+permalink: /kb/141/Q141487/
 ---
 
 ## Q141487: HOWTO: How to Change the Text in the Tabs of a CPropertySheet

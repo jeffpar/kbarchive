@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184718: XADM: Text Attachments Modified for Internet Mail"
-permalink: kb/184/Q184718/
+permalink: /kb/184/Q184718/
 ---
 
 ## Q184718: XADM: Text Attachments Modified for Internet Mail

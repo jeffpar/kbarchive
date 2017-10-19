@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150432: How an MFC Application Can Use the Visual FoxPro ODBC Driver"
-permalink: kb/150/Q150432/
+permalink: /kb/150/Q150432/
 ---
 
 ## Q150432: How an MFC Application Can Use the Visual FoxPro ODBC Driver

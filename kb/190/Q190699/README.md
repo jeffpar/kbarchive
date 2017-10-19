@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190699: XADM: Microsoft Exchange Key Management Server Event ID 5057"
-permalink: kb/190/Q190699/
+permalink: /kb/190/Q190699/
 ---
 
 ## Q190699: XADM: Microsoft Exchange Key Management Server Event ID 5057

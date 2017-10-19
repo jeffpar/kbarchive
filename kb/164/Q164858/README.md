@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164858: XCON: StarNine Mail Gateway May Rename Directory"
-permalink: kb/164/Q164858/
+permalink: /kb/164/Q164858/
 ---
 
 ## Q164858: XCON: StarNine Mail Gateway May Rename Directory

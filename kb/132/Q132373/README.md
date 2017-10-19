@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132373: Writer: Adjust Margins to Fix Truncated Borders"
-permalink: kb/132/Q132373/
+permalink: /kb/132/Q132373/
 ---
 
 ## Q132373: Writer: Adjust Margins to Fix Truncated Borders

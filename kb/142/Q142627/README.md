@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142627: Ntdetect.com Incorrectly Detects Some S3 Video Controllers"
-permalink: kb/142/Q142627/
+permalink: /kb/142/Q142627/
 ---
 
 ## Q142627: Ntdetect.com Incorrectly Detects Some S3 Video Controllers

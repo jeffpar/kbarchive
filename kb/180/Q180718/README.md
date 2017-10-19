@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180718: SFM: Disconnect Macintosh Clients before Dismounting Volume"
-permalink: kb/180/Q180718/
+permalink: /kb/180/Q180718/
 ---
 
 ## Q180718: SFM: Disconnect Macintosh Clients before Dismounting Volume

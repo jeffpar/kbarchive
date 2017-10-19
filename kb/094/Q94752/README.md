@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94752: Problems Running Windows 3.1 and Novell NetWare Lite 1.1"
-permalink: kb/094/Q94752/
+permalink: /kb/094/Q94752/
 ---
 
 ## Q94752: Problems Running Windows 3.1 and Novell NetWare Lite 1.1

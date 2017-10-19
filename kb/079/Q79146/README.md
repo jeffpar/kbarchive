@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79146: FIX: MASM 6.0 Generates L1103 for Nested Structures"
-permalink: kb/079/Q79146/
+permalink: /kb/079/Q79146/
 ---
 
 ## Q79146: FIX: MASM 6.0 Generates L1103 for Nested Structures

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187891: WD97: Spelling Checker Ignores Words in Uppercase Letters"
-permalink: kb/187/Q187891/
+permalink: /kb/187/Q187891/
 ---
 
 ## Q187891: WD97: Spelling Checker Ignores Words in Uppercase Letters

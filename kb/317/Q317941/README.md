@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317941: PRB: FrontPage Web Projects Are Only Partially Under Source Code"
-permalink: kb/317/Q317941/
+permalink: /kb/317/Q317941/
 ---
 
 ## Q317941: PRB: FrontPage Web Projects Are Only Partially Under Source Code

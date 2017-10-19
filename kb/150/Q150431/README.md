@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150431: PRB: Using Enhanced Metafiles in COleServerItem"
-permalink: kb/150/Q150431/
+permalink: /kb/150/Q150431/
 ---
 
 ## Q150431: PRB: Using Enhanced Metafiles in COleServerItem

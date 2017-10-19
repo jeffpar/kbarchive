@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168542: Postscript Preprocessor Fails to Find Any Embedded Fonts"
-permalink: kb/168/Q168542/
+permalink: /kb/168/Q168542/
 ---
 
 ## Q168542: Postscript Preprocessor Fails to Find Any Embedded Fonts

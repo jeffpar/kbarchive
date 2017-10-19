@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65891: Only One Instance of Macro Recorder Can Be Run at a Time"
-permalink: kb/065/Q65891/
+permalink: /kb/065/Q65891/
 ---
 
 ## Q65891: Only One Instance of Macro Recorder Can Be Run at a Time

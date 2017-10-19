@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199077: SMS: How to Set Thresholds in Healthmon"
-permalink: kb/199/Q199077/
+permalink: /kb/199/Q199077/
 ---
 
 ## Q199077: SMS: How to Set Thresholds in Healthmon

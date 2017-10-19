@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113071: PC Adm: Requestor Name of MSMAIL Appears Corrupt"
-permalink: kb/113/Q113071/
+permalink: /kb/113/Q113071/
 ---
 
 ## Q113071: PC Adm: Requestor Name of MSMAIL Appears Corrupt

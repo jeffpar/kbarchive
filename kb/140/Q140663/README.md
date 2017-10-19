@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140663: Cinemania 1996: Expressionism Music Clip Causes MMSYSTEM281"
-permalink: kb/140/Q140663/
+permalink: /kb/140/Q140663/
 ---
 
 ## Q140663: Cinemania 1996: Expressionism Music Clip Causes MMSYSTEM281

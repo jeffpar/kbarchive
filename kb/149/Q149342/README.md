@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149342: PRB: CListCtrl Inserting Items Slow If in Icon Modes"
-permalink: kb/149/Q149342/
+permalink: /kb/149/Q149342/
 ---
 
 ## Q149342: PRB: CListCtrl Inserting Items Slow If in Icon Modes

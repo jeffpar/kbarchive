@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180876: XFOR: Err Msg: Invalid Home Server Definition in User List File"
-permalink: kb/180/Q180876/
+permalink: /kb/180/Q180876/
 ---
 
 ## Q180876: XFOR: Err Msg: Invalid Home Server Definition in User List File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170883: HOWTO: Use NTSVC.OCX from Visual Basic"
-permalink: kb/170/Q170883/
+permalink: /kb/170/Q170883/
 ---
 
 ## Q170883: HOWTO: Use NTSVC.OCX from Visual Basic

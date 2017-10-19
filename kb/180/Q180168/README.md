@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180168: Novell Client 32 for Win95 Displays Duplicate Files on FPNW"
-permalink: kb/180/Q180168/
+permalink: /kb/180/Q180168/
 ---
 
 ## Q180168: Novell Client 32 for Win95 Displays Duplicate Files on FPNW

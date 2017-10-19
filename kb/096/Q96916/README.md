@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96916: PC WRmt: Problems Regaining Control with Some Screen Savers"
-permalink: kb/096/Q96916/
+permalink: /kb/096/Q96916/
 ---
 
 ## Q96916: PC WRmt: Problems Regaining Control with Some Screen Savers

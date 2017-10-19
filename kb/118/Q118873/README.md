@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118873: PRB: EndPage() Returns -1 When Banding"
-permalink: kb/118/Q118873/
+permalink: /kb/118/Q118873/
 ---
 
 ## Q118873: PRB: EndPage() Returns -1 When Banding

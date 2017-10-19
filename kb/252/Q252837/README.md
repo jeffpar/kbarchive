@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252837: Exception in DbgBreakPoint with TN5250 Service"
-permalink: kb/252/Q252837/
+permalink: /kb/252/Q252837/
 ---
 
 ## Q252837: Exception in DbgBreakPoint with TN5250 Service

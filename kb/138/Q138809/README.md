@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138809: PRB: Update Conflict w/Remote View When WhereType Set to Time"
-permalink: kb/138/Q138809/
+permalink: /kb/138/Q138809/
 ---
 
 ## Q138809: PRB: Update Conflict w/Remote View When WhereType Set to Time

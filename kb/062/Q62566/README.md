@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62566: MS-DOS FORMAT Program Writes Over ROM BIOS on 80486 PC"
-permalink: kb/062/Q62566/
+permalink: /kb/062/Q62566/
 ---
 
 ## Q62566: MS-DOS FORMAT Program Writes Over ROM BIOS on 80486 PC

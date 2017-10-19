@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78135: Becoming a Microsoft OEM for MS-DOS 5.0"
-permalink: kb/078/Q78135/
+permalink: /kb/078/Q78135/
 ---
 
 ## Q78135: Becoming a Microsoft OEM for MS-DOS 5.0

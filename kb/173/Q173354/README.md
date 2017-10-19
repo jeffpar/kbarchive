@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173354: XADM: Disk Space Required For Directory Upgrade From Exchange 4."
-permalink: kb/173/Q173354/
+permalink: /kb/173/Q173354/
 ---
 
 ## Q173354: XADM: Disk Space Required For Directory Upgrade From Exchange 4.

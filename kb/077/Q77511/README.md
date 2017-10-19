@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77511: Printing from Paintbrush with DeskJet 500 Scalable Font Driver"
-permalink: kb/077/Q77511/
+permalink: /kb/077/Q77511/
 ---
 
 ## Q77511: Printing from Paintbrush with DeskJet 500 Scalable Font Driver

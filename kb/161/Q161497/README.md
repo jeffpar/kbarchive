@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161497: FIX: SYS(2014) Function Returns Incorrect Path"
-permalink: kb/161/Q161497/
+permalink: /kb/161/Q161497/
 ---
 
 ## Q161497: FIX: SYS(2014) Function Returns Incorrect Path

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248019: HOWTO: Prevent Server Busy Dialog Box From Appearing"
-permalink: kb/248/Q248019/
+permalink: /kb/248/Q248019/
 ---
 
 ## Q248019: HOWTO: Prevent Server Busy Dialog Box From Appearing

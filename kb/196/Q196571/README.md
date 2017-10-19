@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196571: NVRunCmd Does Not Return More Than 32 KB of Data Per Command"
-permalink: kb/196/Q196571/
+permalink: /kb/196/Q196571/
 ---
 
 ## Q196571: NVRunCmd Does Not Return More Than 32 KB of Data Per Command

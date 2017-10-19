@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170525: WD97: How to Print Envelopes with HP Deskjet 500 from NT 4.0"
-permalink: kb/170/Q170525/
+permalink: /kb/170/Q170525/
 ---
 
 ## Q170525: WD97: How to Print Envelopes with HP Deskjet 500 from NT 4.0

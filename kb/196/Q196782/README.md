@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196782: BUG: WizardBar Can't Delete Functions That Return void"
-permalink: kb/196/Q196782/
+permalink: /kb/196/Q196782/
 ---
 
 ## Q196782: BUG: WizardBar Can't Delete Functions That Return void

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137890: HOWTO: Create a User-Defined Service"
-permalink: kb/137/Q137890/
+permalink: /kb/137/Q137890/
 ---
 
 ## Q137890: HOWTO: Create a User-Defined Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214430: Multihomed SNA NT Client Can't Find Local Server over IP"
-permalink: kb/214/Q214430/
+permalink: /kb/214/Q214430/
 ---
 
 ## Q214430: Multihomed SNA NT Client Can't Find Local Server over IP

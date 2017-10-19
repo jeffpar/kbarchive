@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114090: Can't Use Setup Disks with Dell DDA/DSA Controller"
-permalink: kb/114/Q114090/
+permalink: /kb/114/Q114090/
 ---
 
 ## Q114090: Can't Use Setup Disks with Dell DDA/DSA Controller

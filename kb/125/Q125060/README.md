@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125060: Using Novell's ODINSUP and VLM with Network Client 3.0"
-permalink: kb/125/Q125060/
+permalink: /kb/125/Q125060/
 ---
 
 ## Q125060: Using Novell's ODINSUP and VLM with Network Client 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160453: Enabling Power Management May Cause SNA Disconnects"
-permalink: kb/160/Q160453/
+permalink: /kb/160/Q160453/
 ---
 
 ## Q160453: Enabling Power Management May Cause SNA Disconnects

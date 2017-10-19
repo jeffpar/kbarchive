@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109700: CONN: MACGATE.EXE Does Not Accept -BR Command-Line Option"
-permalink: kb/109/Q109700/
+permalink: /kb/109/Q109700/
 ---
 
 ## Q109700: CONN: MACGATE.EXE Does Not Accept -BR Command-Line Option

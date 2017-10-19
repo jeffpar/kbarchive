@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172431: How to Re-create a Macintosh Volume"
-permalink: kb/172/Q172431/
+permalink: /kb/172/Q172431/
 ---
 
 ## Q172431: How to Re-create a Macintosh Volume

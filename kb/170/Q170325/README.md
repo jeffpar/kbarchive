@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170325: Cannot Update Existing Drivers in OSR2"
-permalink: kb/170/Q170325/
+permalink: /kb/170/Q170325/
 ---
 
 ## Q170325: Cannot Update Existing Drivers in OSR2

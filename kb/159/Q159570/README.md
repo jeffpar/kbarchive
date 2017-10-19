@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159570: INF: Access ODBC Driver Is Double-Byte Enabled"
-permalink: kb/159/Q159570/
+permalink: /kb/159/Q159570/
 ---
 
 ## Q159570: INF: Access ODBC Driver Is Double-Byte Enabled

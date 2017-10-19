@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139170: Event ID 5002 Appears Using Banyan Vines Client and IBMTOK"
-permalink: kb/139/Q139170/
+permalink: /kb/139/Q139170/
 ---
 
 ## Q139170: Event ID 5002 Appears Using Banyan Vines Client and IBMTOK

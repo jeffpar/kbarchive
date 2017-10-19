@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179220: XADM: Error Trying to Delete Mailbox from Mailbox Resources"
-permalink: kb/179/Q179220/
+permalink: /kb/179/Q179220/
 ---
 
 ## Q179220: XADM: Error Trying to Delete Mailbox from Mailbox Resources

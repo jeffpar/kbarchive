@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133143: PRB: VFP300.ESL Goes in System Directory, Not App's Directory"
-permalink: kb/133/Q133143/
+permalink: /kb/133/Q133143/
 ---
 
 ## Q133143: PRB: VFP300.ESL Goes in System Directory, Not App's Directory

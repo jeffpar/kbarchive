@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179810: Encarta 98 Standard Edition: Minimum System Requirements"
-permalink: kb/179/Q179810/
+permalink: /kb/179/Q179810/
 ---
 
 ## Q179810: Encarta 98 Standard Edition: Minimum System Requirements

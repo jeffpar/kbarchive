@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138310: Microsoft Plus! Drvspace.txt File Contents"
-permalink: kb/138/Q138310/
+permalink: /kb/138/Q138310/
 ---
 
 ## Q138310: Microsoft Plus! Drvspace.txt File Contents

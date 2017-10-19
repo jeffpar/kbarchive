@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165840: Using Stripe Set During Initialization May Result in Data Loss"
-permalink: kb/165/Q165840/
+permalink: /kb/165/Q165840/
 ---
 
 ## Q165840: Using Stripe Set During Initialization May Result in Data Loss

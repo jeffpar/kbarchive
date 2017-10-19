@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130713: How to Use Collection Array Property for Object Container"
-permalink: kb/130/Q130713/
+permalink: /kb/130/Q130713/
 ---
 
 ## Q130713: How to Use Collection Array Property for Object Container

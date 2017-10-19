@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251349: 3270 Applet Stops Responding at Blank Screen on Terminal Server"
-permalink: kb/251/Q251349/
+permalink: /kb/251/Q251349/
 ---
 
 ## Q251349: 3270 Applet Stops Responding at Blank Screen on Terminal Server

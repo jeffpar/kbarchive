@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262271: XADM: Admin.exe Access Violation Attempting to Duplicate User"
-permalink: kb/262/Q262271/
+permalink: /kb/262/Q262271/
 ---
 
 ## Q262271: XADM: Admin.exe Access Violation Attempting to Duplicate User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138573: Moving Large Number of Files With Wildcard (&#42;) File Names Fails"
-permalink: kb/138/Q138573/
+permalink: /kb/138/Q138573/
 ---
 
 ## Q138573: Moving Large Number of Files With Wildcard (&#42;) File Names Fails

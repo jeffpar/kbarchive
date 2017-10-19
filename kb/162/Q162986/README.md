@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162986: WD97: Background Sound Object Embedded in Document Header"
-permalink: kb/162/Q162986/
+permalink: /kb/162/Q162986/
 ---
 
 ## Q162986: WD97: Background Sound Object Embedded in Document Header

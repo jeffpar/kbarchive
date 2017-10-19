@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192303: HOWTO: Convert Decimal Integers to Hexadecimal Strings"
-permalink: kb/192/Q192303/
+permalink: /kb/192/Q192303/
 ---
 
 ## Q192303: HOWTO: Convert Decimal Integers to Hexadecimal Strings

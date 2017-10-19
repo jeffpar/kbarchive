@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170126: FIX: Using the SelPrint Method of the Rich Text Control"
-permalink: kb/170/Q170126/
+permalink: /kb/170/Q170126/
 ---
 
 ## Q170126: FIX: Using the SelPrint Method of the Rich Text Control

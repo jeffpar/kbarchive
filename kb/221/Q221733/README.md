@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221733: FIX: C0000005 Fatal Error With French Wizstyle Baseform Class"
-permalink: kb/221/Q221733/
+permalink: /kb/221/Q221733/
 ---
 
 ## Q221733: FIX: C0000005 Fatal Error With French Wizstyle Baseform Class

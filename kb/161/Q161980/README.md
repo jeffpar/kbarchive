@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161980: Windows NT 4.0 Workstation Starts Here: Contents of Readme.wri"
-permalink: kb/161/Q161980/
+permalink: /kb/161/Q161980/
 ---
 
 ## Q161980: Windows NT 4.0 Workstation Starts Here: Contents of Readme.wri

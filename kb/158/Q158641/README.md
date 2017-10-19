@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158641: WD97: Watermark Causes Uneven Spacing in Online Layout View"
-permalink: kb/158/Q158641/
+permalink: /kb/158/Q158641/
 ---
 
 ## Q158641: WD97: Watermark Causes Uneven Spacing in Online Layout View

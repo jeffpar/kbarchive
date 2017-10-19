@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203042: SMS: Non-Intel Processors Report Null Manufacturer Values"
-permalink: kb/203/Q203042/
+permalink: /kb/203/Q203042/
 ---
 
 ## Q203042: SMS: Non-Intel Processors Report Null Manufacturer Values

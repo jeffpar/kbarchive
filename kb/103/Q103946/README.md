@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103946: PC WRmt: Mail Remote MSRMTUI.DLL Version 3.2.0.4013 Update"
-permalink: kb/103/Q103946/
+permalink: /kb/103/Q103946/
 ---
 
 ## Q103946: PC WRmt: Mail Remote MSRMTUI.DLL Version 3.2.0.4013 Update

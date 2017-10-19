@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150223: BUG: Help Button on Toolbar Customize Dialog Box Does Nothing"
-permalink: kb/150/Q150223/
+permalink: /kb/150/Q150223/
 ---
 
 ## Q150223: BUG: Help Button on Toolbar Customize Dialog Box Does Nothing

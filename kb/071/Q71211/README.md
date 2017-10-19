@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71211: Windowed MS-DOS Apps Revert to Full Screen in Windows"
-permalink: kb/071/Q71211/
+permalink: /kb/071/Q71211/
 ---
 
 ## Q71211: Windowed MS-DOS Apps Revert to Full Screen in Windows

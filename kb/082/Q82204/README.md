@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82204: Windows Err Msg: Group File Error..."
-permalink: kb/082/Q82204/
+permalink: /kb/082/Q82204/
 ---
 
 ## Q82204: Windows Err Msg: Group File Error...

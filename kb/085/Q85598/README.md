@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85598: BUG: GetGlyphOutline() Returns Blank Bitmap"
-permalink: kb/085/Q85598/
+permalink: /kb/085/Q85598/
 ---
 
 ## Q85598: BUG: GetGlyphOutline() Returns Blank Bitmap

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163013: Error &quot;The Plug and Play Service Is Not Available&quot;"
-permalink: kb/163/Q163013/
+permalink: /kb/163/Q163013/
 ---
 
 ## Q163013: Error &quot;The Plug and Play Service Is Not Available&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141251: Mac Encarta 1995: Further Readings Do Not Copy or Print"
-permalink: kb/141/Q141251/
+permalink: /kb/141/Q141251/
 ---
 
 ## Q141251: Mac Encarta 1995: Further Readings Do Not Copy or Print

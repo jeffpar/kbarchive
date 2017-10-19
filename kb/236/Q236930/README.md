@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236930: Cannot Open Files if Restrictions in a Policy Are Used"
-permalink: kb/236/Q236930/
+permalink: /kb/236/Q236930/
 ---
 
 ## Q236930: Cannot Open Files if Restrictions in a Policy Are Used

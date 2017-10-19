@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155557: Errors When a FlowModel Object Is Linked"
-permalink: kb/155/Q155557/
+permalink: /kb/155/Q155557/
 ---
 
 ## Q155557: Errors When a FlowModel Object Is Linked

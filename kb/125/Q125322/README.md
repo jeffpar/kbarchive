@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125322: Slow Data Throughput Using CSNW or GSNW"
-permalink: kb/125/Q125322/
+permalink: /kb/125/Q125322/
 ---
 
 ## Q125322: Slow Data Throughput Using CSNW or GSNW

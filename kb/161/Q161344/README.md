@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161344: INFO: Visual Basic 4.0 and Visual Basic 5.0 Compatibility"
-permalink: kb/161/Q161344/
+permalink: /kb/161/Q161344/
 ---
 
 ## Q161344: INFO: Visual Basic 4.0 and Visual Basic 5.0 Compatibility

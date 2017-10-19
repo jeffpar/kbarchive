@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302692: Troubleshooting CSS Style Sheet Cobranding"
-permalink: kb/302/Q302692/
+permalink: /kb/302/Q302692/
 ---
 
 ## Q302692: Troubleshooting CSS Style Sheet Cobranding

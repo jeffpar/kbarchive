@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142214: FIX: RELEASE Releases All Local Variables with Identical Names"
-permalink: kb/142/Q142214/
+permalink: /kb/142/Q142214/
 ---
 
 ## Q142214: FIX: RELEASE Releases All Local Variables with Identical Names

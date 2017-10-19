@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59600: Mac GW: Allowing Multiple Users to Receive Gateway Mail"
-permalink: kb/059/Q59600/
+permalink: /kb/059/Q59600/
 ---
 
 ## Q59600: Mac GW: Allowing Multiple Users to Receive Gateway Mail

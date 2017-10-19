@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85278: Mystify Screen Saver Two Color Option May Use Random Colors"
-permalink: kb/085/Q85278/
+permalink: /kb/085/Q85278/
 ---
 
 ## Q85278: Mystify Screen Saver Two Color Option May Use Random Colors

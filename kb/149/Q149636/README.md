@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149636: XCLN: Public Folder Favorites do not Show Subfolders"
-permalink: kb/149/Q149636/
+permalink: /kb/149/Q149636/
 ---
 
 ## Q149636: XCLN: Public Folder Favorites do not Show Subfolders

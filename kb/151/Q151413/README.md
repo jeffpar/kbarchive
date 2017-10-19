@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151413: XCON: ContentReturn Requested by Default"
-permalink: kb/151/Q151413/
+permalink: /kb/151/Q151413/
 ---
 
 ## Q151413: XCON: ContentReturn Requested by Default

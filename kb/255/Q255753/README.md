@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255753: XFOR: How to Determine If SSL Works on the Internet Mail Service"
-permalink: kb/255/Q255753/
+permalink: /kb/255/Q255753/
 ---
 
 ## Q255753: XFOR: How to Determine If SSL Works on the Internet Mail Service

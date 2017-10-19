@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238071: Managing the Testing Process Comments and Corrections"
-permalink: kb/238/Q238071/
+permalink: /kb/238/Q238071/
 ---
 
 ## Q238071: Managing the Testing Process Comments and Corrections

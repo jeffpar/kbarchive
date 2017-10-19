@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183924: XADM: Slow Client Performance While Performing Store Operations"
-permalink: kb/183/Q183924/
+permalink: /kb/183/Q183924/
 ---
 
 ## Q183924: XADM: Slow Client Performance While Performing Store Operations

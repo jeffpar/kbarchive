@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76800: Description of a Multimedia PC"
-permalink: kb/076/Q76800/
+permalink: /kb/076/Q76800/
 ---
 
 ## Q76800: Description of a Multimedia PC

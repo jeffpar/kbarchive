@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238458: How to Remove the TimeServ Utility"
-permalink: kb/238/Q238458/
+permalink: /kb/238/Q238458/
 ---
 
 ## Q238458: How to Remove the TimeServ Utility

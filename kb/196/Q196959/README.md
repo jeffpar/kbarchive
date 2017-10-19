@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196959: PRB:'Unspecified Error' Err Using ADO Data Marshalling w/ DCOM"
-permalink: kb/196/Q196959/
+permalink: /kb/196/Q196959/
 ---
 
 ## Q196959: PRB:'Unspecified Error' Err Using ADO Data Marshalling w/ DCOM

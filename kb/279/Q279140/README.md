@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279140: FIX: ALINES() Leaks Memory Handle with Empty String"
-permalink: kb/279/Q279140/
+permalink: /kb/279/Q279140/
 ---
 
 ## Q279140: FIX: ALINES() Leaks Memory Handle with Empty String

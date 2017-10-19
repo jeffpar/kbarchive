@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263512: Pressing CTRL+ALT+DELETE During Shutdown Can Halt Shutdown"
-permalink: kb/263/Q263512/
+permalink: /kb/263/Q263512/
 ---
 
 ## Q263512: Pressing CTRL+ALT+DELETE During Shutdown Can Halt Shutdown

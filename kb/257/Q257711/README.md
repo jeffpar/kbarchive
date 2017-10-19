@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257711: FIX: VB6CHT PDWizard Package NeedS to Include .Reg File"
-permalink: kb/257/Q257711/
+permalink: /kb/257/Q257711/
 ---
 
 ## Q257711: FIX: VB6CHT PDWizard Package NeedS to Include .Reg File

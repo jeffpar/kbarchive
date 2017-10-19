@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205862: XFOR: Installing Address Generators for Notes, SNADS, OV/VM"
-permalink: kb/205/Q205862/
+permalink: /kb/205/Q205862/
 ---
 
 ## Q205862: XFOR: Installing Address Generators for Notes, SNADS, OV/VM

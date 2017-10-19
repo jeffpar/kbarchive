@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198641: SMS: Netware Redirector Causes Message During SMS 2.0 Setup"
-permalink: kb/198/Q198641/
+permalink: /kb/198/Q198641/
 ---
 
 ## Q198641: SMS: Netware Redirector Causes Message During SMS 2.0 Setup

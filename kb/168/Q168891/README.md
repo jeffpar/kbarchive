@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168891: Err Msg: Hotfix Internal Consistency Error: Invalid Tree Pointer"
-permalink: kb/168/Q168891/
+permalink: /kb/168/Q168891/
 ---
 
 ## Q168891: Err Msg: Hotfix Internal Consistency Error: Invalid Tree Pointer

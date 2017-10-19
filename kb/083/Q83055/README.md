@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83055: WININI.WRI from Windows 3.1"
-permalink: kb/083/Q83055/
+permalink: /kb/083/Q83055/
 ---
 
 ## Q83055: WININI.WRI from Windows 3.1

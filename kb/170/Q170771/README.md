@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170771: Cluster May Fail If IP Address Used from DHCP Server"
-permalink: kb/170/Q170771/
+permalink: /kb/170/Q170771/
 ---
 
 ## Q170771: Cluster May Fail If IP Address Used from DHCP Server

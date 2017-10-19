@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98232: Multimedia: GP Fault with Tseng ET4000 Video Drivers"
-permalink: kb/098/Q98232/
+permalink: /kb/098/Q98232/
 ---
 
 ## Q98232: Multimedia: GP Fault with Tseng ET4000 Video Drivers

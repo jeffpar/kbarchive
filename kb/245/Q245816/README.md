@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245816: SMS: Screen Saver Disabled After Applying the Hotfix for Q193269"
-permalink: kb/245/Q245816/
+permalink: /kb/245/Q245816/
 ---
 
 ## Q245816: SMS: Screen Saver Disabled After Applying the Hotfix for Q193269

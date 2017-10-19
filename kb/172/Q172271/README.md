@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172271: HOWTO: Change Case of a Control Name Within the Code Window"
-permalink: kb/172/Q172271/
+permalink: /kb/172/Q172271/
 ---
 
 ## Q172271: HOWTO: Change Case of a Control Name Within the Code Window

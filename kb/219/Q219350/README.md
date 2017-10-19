@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219350: Cannot Dual Boot After SP5 Is Installed on Alpha Computer"
-permalink: kb/219/Q219350/
+permalink: /kb/219/Q219350/
 ---
 
 ## Q219350: Cannot Dual Boot After SP5 Is Installed on Alpha Computer

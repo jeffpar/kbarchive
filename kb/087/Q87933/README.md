@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87933: Displaying .RLE Files as Wallpaper Under Windows"
-permalink: kb/087/Q87933/
+permalink: /kb/087/Q87933/
 ---
 
 ## Q87933: Displaying .RLE Files as Wallpaper Under Windows

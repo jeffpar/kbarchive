@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58650: Changing a Drive's Volume Label"
-permalink: kb/058/Q58650/
+permalink: /kb/058/Q58650/
 ---
 
 ## Q58650: Changing a Drive's Volume Label

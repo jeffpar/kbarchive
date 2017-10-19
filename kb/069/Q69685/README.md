@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69685: Program Manager Always Starts Minimized in Windows 3.0"
-permalink: kb/069/Q69685/
+permalink: /kb/069/Q69685/
 ---
 
 ## Q69685: Program Manager Always Starts Minimized in Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113229: Windows 3.1 Disk 4 Directory Listing (3.5 Inch 1.44 MB)"
-permalink: kb/113/Q113229/
+permalink: /kb/113/Q113229/
 ---
 
 ## Q113229: Windows 3.1 Disk 4 Directory Listing (3.5 Inch 1.44 MB)

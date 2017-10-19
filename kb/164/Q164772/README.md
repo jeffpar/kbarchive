@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164772: Host-Initiated Password Changes Are Not Sent to All Domains"
-permalink: kb/164/Q164772/
+permalink: /kb/164/Q164772/
 ---
 
 ## Q164772: Host-Initiated Password Changes Are Not Sent to All Domains

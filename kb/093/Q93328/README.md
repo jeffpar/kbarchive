@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93328: FoxPro Commands That Create Backup (.BAK &amp; .TBK) Files"
-permalink: kb/093/Q93328/
+permalink: /kb/093/Q93328/
 ---
 
 ## Q93328: FoxPro Commands That Create Backup (.BAK &amp; .TBK) Files

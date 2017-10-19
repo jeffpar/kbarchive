@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298340: MS01-044: Patch Available for WebDAV Denial of Service"
-permalink: kb/298/Q298340/
+permalink: /kb/298/Q298340/
 ---
 
 ## Q298340: MS01-044: Patch Available for WebDAV Denial of Service

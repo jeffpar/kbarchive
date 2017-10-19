@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119016: PC DirSync: IMPORT.EXE Command-Line Options Used and Ignored"
-permalink: kb/119/Q119016/
+permalink: /kb/119/Q119016/
 ---
 
 ## Q119016: PC DirSync: IMPORT.EXE Command-Line Options Used and Ignored

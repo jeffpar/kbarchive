@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314505: Games: Err Msg: &quot;WINERR_One or More Arguments Are Invalid...&quot;"
-permalink: kb/314/Q314505/
+permalink: /kb/314/Q314505/
 ---
 
 ## Q314505: Games: Err Msg: &quot;WINERR_One or More Arguments Are Invalid...&quot;

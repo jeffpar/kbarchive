@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117523: List of Major CD-ROM Manufacturers (A-C)"
-permalink: kb/117/Q117523/
+permalink: /kb/117/Q117523/
 ---
 
 ## Q117523: List of Major CD-ROM Manufacturers (A-C)

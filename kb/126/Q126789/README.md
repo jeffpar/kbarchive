@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126789: MHS: Err Msg: Outpost: General File I/O Error"
-permalink: kb/126/Q126789/
+permalink: /kb/126/Q126789/
 ---
 
 ## Q126789: MHS: Err Msg: Outpost: General File I/O Error

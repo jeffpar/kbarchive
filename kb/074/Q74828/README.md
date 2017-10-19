@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74828: MIRROR: Unrecognized DOS INT 25h/26h Handler"
-permalink: kb/074/Q74828/
+permalink: /kb/074/Q74828/
 ---
 
 ## Q74828: MIRROR: Unrecognized DOS INT 25h/26h Handler

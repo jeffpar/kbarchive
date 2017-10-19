@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215004: Hardware Inventory Fails When Windows Management Is Removed"
-permalink: kb/215/Q215004/
+permalink: /kb/215/Q215004/
 ---
 
 ## Q215004: Hardware Inventory Fails When Windows Management Is Removed

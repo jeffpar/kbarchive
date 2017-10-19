@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139143: INFO: Reference List of KB Articles about the Help Compiler"
-permalink: kb/139/Q139143/
+permalink: /kb/139/Q139143/
 ---
 
 ## Q139143: INFO: Reference List of KB Articles about the Help Compiler

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107255: Stacker Conversion Help: ...Type HELP DBLSPACE /CONVSTAC..."
-permalink: kb/107/Q107255/
+permalink: /kb/107/Q107255/
 ---
 
 ## Q107255: Stacker Conversion Help: ...Type HELP DBLSPACE /CONVSTAC...

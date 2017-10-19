@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159437: FP: Drop-Down Populated by IDC Query Shows Code Not Data"
-permalink: kb/159/Q159437/
+permalink: /kb/159/Q159437/
 ---
 
 ## Q159437: FP: Drop-Down Populated by IDC Query Shows Code Not Data

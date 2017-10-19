@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200065: XFOR: Replication Between French Exchange Server &amp; MacMail Fails"
-permalink: kb/200/Q200065/
+permalink: /kb/200/Q200065/
 ---
 
 ## Q200065: XFOR: Replication Between French Exchange Server &amp; MacMail Fails

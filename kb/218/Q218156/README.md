@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218156: My Personal Tutor Error Message: Corrupt Files Have Been Found"
-permalink: kb/218/Q218156/
+permalink: /kb/218/Q218156/
 ---
 
 ## Q218156: My Personal Tutor Error Message: Corrupt Files Have Been Found

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162933: ACC97: User Without Permissions Can Check Out an Object in VSS"
-permalink: kb/162/Q162933/
+permalink: /kb/162/Q162933/
 ---
 
 ## Q162933: ACC97: User Without Permissions Can Check Out an Object in VSS

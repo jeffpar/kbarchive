@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192445: Fatal Exception Errors in Wsipx.vxd"
-permalink: kb/192/Q192445/
+permalink: /kb/192/Q192445/
 ---
 
 ## Q192445: Fatal Exception Errors in Wsipx.vxd

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114865: BUG: HEADING Clause on the REPORT FORM Does Not Align Properly"
-permalink: kb/114/Q114865/
+permalink: /kb/114/Q114865/
 ---
 
 ## Q114865: BUG: HEADING Clause on the REPORT FORM Does Not Align Properly

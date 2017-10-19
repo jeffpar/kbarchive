@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83963: Windows 3.1: Insufficient Memory Error on a 2-MB Machine"
-permalink: kb/083/Q83963/
+permalink: /kb/083/Q83963/
 ---
 
 ## Q83963: Windows 3.1: Insufficient Memory Error on a 2-MB Machine

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178970: Availability of Windows 95 OEM Service Release 2.5"
-permalink: kb/178/Q178970/
+permalink: /kb/178/Q178970/
 ---
 
 ## Q178970: Availability of Windows 95 OEM Service Release 2.5

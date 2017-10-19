@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105109: PC Win: .MMF File Size Increases by Twice the Size of Message"
-permalink: kb/105/Q105109/
+permalink: /kb/105/Q105109/
 ---
 
 ## Q105109: PC Win: .MMF File Size Increases by Twice the Size of Message

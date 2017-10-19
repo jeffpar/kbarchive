@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247888: XADM: Error c1031b95 Configuring an ADC Connection Agreement"
-permalink: kb/247/Q247888/
+permalink: /kb/247/Q247888/
 ---
 
 ## Q247888: XADM: Error c1031b95 Configuring an ADC Connection Agreement

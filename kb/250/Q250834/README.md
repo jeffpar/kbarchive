@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250834: INFO: Create File List of Project at a Particular Time or Label"
-permalink: kb/250/Q250834/
+permalink: /kb/250/Q250834/
 ---
 
 ## Q250834: INFO: Create File List of Project at a Particular Time or Label

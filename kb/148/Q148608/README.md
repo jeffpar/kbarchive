@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148608: BUG: Derived-Type with Pointer Expands Incorrectly in Debugger"
-permalink: kb/148/Q148608/
+permalink: /kb/148/Q148608/
 ---
 
 ## Q148608: BUG: Derived-Type with Pointer Expands Incorrectly in Debugger

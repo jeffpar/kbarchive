@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282289: SMS: Error Message &quot;Cannot Create Account&quot;  During Site Install"
-permalink: kb/282/Q282289/
+permalink: /kb/282/Q282289/
 ---
 
 ## Q282289: SMS: Error Message &quot;Cannot Create Account&quot;  During Site Install

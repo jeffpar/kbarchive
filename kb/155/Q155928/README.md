@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155928: SELECT - SQL's NOFILTER Clause Forces Physical File"
-permalink: kb/155/Q155928/
+permalink: /kb/155/Q155928/
 ---
 
 ## Q155928: SELECT - SQL's NOFILTER Clause Forces Physical File

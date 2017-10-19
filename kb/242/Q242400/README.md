@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242400: SNA Server 4.0 Service Pack 3 Readme.txt File"
-permalink: kb/242/Q242400/
+permalink: /kb/242/Q242400/
 ---
 
 ## Q242400: SNA Server 4.0 Service Pack 3 Readme.txt File

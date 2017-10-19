@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194410: XWEB: No Response Buttons in Meeting Request in OWA"
-permalink: kb/194/Q194410/
+permalink: /kb/194/Q194410/
 ---
 
 ## Q194410: XWEB: No Response Buttons in Meeting Request in OWA

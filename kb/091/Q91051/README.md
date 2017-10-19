@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91051: WFWG Logo Screen Has An Unexpected Blue Cursor"
-permalink: kb/091/Q91051/
+permalink: /kb/091/Q91051/
 ---
 
 ## Q91051: WFWG Logo Screen Has An Unexpected Blue Cursor

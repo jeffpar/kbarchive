@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154174: Invalid ICMP Datagram Fragments Hang Windows NT, Windows 95"
-permalink: kb/154/Q154174/
+permalink: /kb/154/Q154174/
 ---
 
 ## Q154174: Invalid ICMP Datagram Fragments Hang Windows NT, Windows 95

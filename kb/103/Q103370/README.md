@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103370: Print Job Priority Incorrect in Advanced Server Concepts Guide"
-permalink: kb/103/Q103370/
+permalink: /kb/103/Q103370/
 ---
 
 ## Q103370: Print Job Priority Incorrect in Advanced Server Concepts Guide

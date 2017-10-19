@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115201: MS-DOS Help: Incomplete Information About ScanDisk /AUTOFIX"
-permalink: kb/115/Q115201/
+permalink: /kb/115/Q115201/
 ---
 
 ## Q115201: MS-DOS Help: Incomplete Information About ScanDisk /AUTOFIX

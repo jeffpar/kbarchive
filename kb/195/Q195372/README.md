@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195372: STOP 0x00000067 on System Reboot"
-permalink: kb/195/Q195372/
+permalink: /kb/195/Q195372/
 ---
 
 ## Q195372: STOP 0x00000067 on System Reboot

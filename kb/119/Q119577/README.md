@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119577: PPT: Hidden Slides at Beginning of Slide Show Aren't Hidden"
-permalink: kb/119/Q119577/
+permalink: /kb/119/Q119577/
 ---
 
 ## Q119577: PPT: Hidden Slides at Beginning of Slide Show Aren't Hidden

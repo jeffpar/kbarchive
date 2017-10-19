@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193659: SNA Server Access Violation in s1prfrcb()"
-permalink: kb/193/Q193659/
+permalink: /kb/193/Q193659/
 ---
 
 ## Q193659: SNA Server Access Violation in s1prfrcb()

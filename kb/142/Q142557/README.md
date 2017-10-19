@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142557: Internet Information Server Performance Logging to Disk vs. ODBC"
-permalink: kb/142/Q142557/
+permalink: /kb/142/Q142557/
 ---
 
 ## Q142557: Internet Information Server Performance Logging to Disk vs. ODBC

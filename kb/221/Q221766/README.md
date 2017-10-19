@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221766: Registry Permissions Not Inherited Properly"
-permalink: kb/221/Q221766/
+permalink: /kb/221/Q221766/
 ---
 
 ## Q221766: Registry Permissions Not Inherited Properly

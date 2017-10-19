@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236616: XCLN: The IExpress Deployment Kit ReadMe Text"
-permalink: kb/236/Q236616/
+permalink: /kb/236/Q236616/
 ---
 
 ## Q236616: XCLN: The IExpress Deployment Kit ReadMe Text

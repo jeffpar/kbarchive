@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62127: Mac Hyp: Retrieving Data from a MessageList"
-permalink: kb/062/Q62127/
+permalink: /kb/062/Q62127/
 ---
 
 ## Q62127: Mac Hyp: Retrieving Data from a MessageList

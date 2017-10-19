@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110739: How to Re-Create the Network Group and Its Program Icons"
-permalink: kb/110/Q110739/
+permalink: /kb/110/Q110739/
 ---
 
 ## Q110739: How to Re-Create the Network Group and Its Program Icons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178097: XADM: Delete Control Message Does Not Work in NNTP Protocol"
-permalink: kb/178/Q178097/
+permalink: /kb/178/Q178097/
 ---
 
 ## Q178097: XADM: Delete Control Message Does Not Work in NNTP Protocol

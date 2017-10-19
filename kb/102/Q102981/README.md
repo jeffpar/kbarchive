@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102981: REG: Workstation Service Entries"
-permalink: kb/102/Q102981/
+permalink: /kb/102/Q102981/
 ---
 
 ## Q102981: REG: Workstation Service Entries

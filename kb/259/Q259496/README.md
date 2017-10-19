@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259496: MS00-008: Incorrect Registry Setting May Allow Cryptography Key"
-permalink: kb/259/Q259496/
+permalink: /kb/259/Q259496/
 ---
 
 ## Q259496: MS00-008: Incorrect Registry Setting May Allow Cryptography Key

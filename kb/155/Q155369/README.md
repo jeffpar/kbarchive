@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155369: Error Formatting Seagate Drive Using Adaptec Controller"
-permalink: kb/155/Q155369/
+permalink: /kb/155/Q155369/
 ---
 
 ## Q155369: Error Formatting Seagate Drive Using Adaptec Controller

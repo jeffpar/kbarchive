@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86006: DOCERR: DdeUnaccessData Function Documented Incorrectly"
-permalink: kb/086/Q86006/
+permalink: /kb/086/Q86006/
 ---
 
 ## Q86006: DOCERR: DdeUnaccessData Function Documented Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185514: Age of Empires: List of Campaigns and Scenarios"
-permalink: kb/185/Q185514/
+permalink: /kb/185/Q185514/
 ---
 
 ## Q185514: Age of Empires: List of Campaigns and Scenarios

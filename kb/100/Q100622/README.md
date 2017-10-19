@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100622: Err Msg: Sector Size Too Large with Corel Drivers"
-permalink: kb/100/Q100622/
+permalink: /kb/100/Q100622/
 ---
 
 ## Q100622: Err Msg: Sector Size Too Large with Corel Drivers

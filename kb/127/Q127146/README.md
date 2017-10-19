@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127146: Baseball: Cannot Print or Copy Tables from Baseball 1995"
-permalink: kb/127/Q127146/
+permalink: /kb/127/Q127146/
 ---
 
 ## Q127146: Baseball: Cannot Print or Copy Tables from Baseball 1995

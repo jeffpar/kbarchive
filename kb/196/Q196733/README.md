@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196733: HOWTO: Printing to a AppleShare IP 6.0 Secure Print Queue Fails"
-permalink: kb/196/Q196733/
+permalink: /kb/196/Q196733/
 ---
 
 ## Q196733: HOWTO: Printing to a AppleShare IP 6.0 Secure Print Queue Fails

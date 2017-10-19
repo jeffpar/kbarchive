@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200786: Notification Tray Icon Component"
-permalink: kb/200/Q200786/
+permalink: /kb/200/Q200786/
 ---
 
 ## Q200786: Notification Tray Icon Component

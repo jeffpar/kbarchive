@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100741: MS-DOS Setup Err Msg: Setup Cannot Install MS-DOS 6..."
-permalink: kb/100/Q100741/
+permalink: /kb/100/Q100741/
 ---
 
 ## Q100741: MS-DOS Setup Err Msg: Setup Cannot Install MS-DOS 6...

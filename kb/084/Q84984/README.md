@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84984: DOC: List of Functions That Are Valid in Metafiles"
-permalink: kb/084/Q84984/
+permalink: /kb/084/Q84984/
 ---
 
 ## Q84984: DOC: List of Functions That Are Valid in Metafiles

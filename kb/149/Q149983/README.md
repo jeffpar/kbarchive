@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149983: Serial Mouse Not Installed; Err Msg: STOP 0x0000001E"
-permalink: kb/149/Q149983/
+permalink: /kb/149/Q149983/
 ---
 
 ## Q149983: Serial Mouse Not Installed; Err Msg: STOP 0x0000001E

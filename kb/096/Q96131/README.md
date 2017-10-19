@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96131: Print Conflicts Between Remote and Local MS-DOS-Based Apps"
-permalink: kb/096/Q96131/
+permalink: /kb/096/Q96131/
 ---
 
 ## Q96131: Print Conflicts Between Remote and Local MS-DOS-Based Apps

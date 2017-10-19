@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272756: INFO: Visual FoxPro Is Not Supported on Terminal Server 4.0"
-permalink: kb/272/Q272756/
+permalink: /kb/272/Q272756/
 ---
 
 ## Q272756: INFO: Visual FoxPro Is Not Supported on Terminal Server 4.0

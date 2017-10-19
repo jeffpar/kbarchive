@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169981: WD97: Addin Field Data Lost in Word 6.0/7.0 Conversion"
-permalink: kb/169/Q169981/
+permalink: /kb/169/Q169981/
 ---
 
 ## Q169981: WD97: Addin Field Data Lost in Word 6.0/7.0 Conversion

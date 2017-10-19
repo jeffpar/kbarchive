@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260324: How to Obtain a List of Workstations and the Last Logged On User"
-permalink: kb/260/Q260324/
+permalink: /kb/260/Q260324/
 ---
 
 ## Q260324: How to Obtain a List of Workstations and the Last Logged On User

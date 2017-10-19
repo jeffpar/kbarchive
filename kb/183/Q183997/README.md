@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183997: Outwars: Minimum System Requirements"
-permalink: kb/183/Q183997/
+permalink: /kb/183/Q183997/
 ---
 
 ## Q183997: Outwars: Minimum System Requirements

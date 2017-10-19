@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164837: XFOR: IMS Shows Multiple Logons to the Information Store"
-permalink: kb/164/Q164837/
+permalink: /kb/164/Q164837/
 ---
 
 ## Q164837: XFOR: IMS Shows Multiple Logons to the Information Store

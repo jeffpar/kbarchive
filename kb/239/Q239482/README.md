@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239482: ACC2000: Jet 4.0 Expression Can Execute Unsafe VBA Functions"
-permalink: kb/239/Q239482/
+permalink: /kb/239/Q239482/
 ---
 
 ## Q239482: ACC2000: Jet 4.0 Expression Can Execute Unsafe VBA Functions

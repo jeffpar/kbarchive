@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173642: SMSINST: Add Device To System.ini Command Causes GPF"
-permalink: kb/173/Q173642/
+permalink: /kb/173/Q173642/
 ---
 
 ## Q173642: SMSINST: Add Device To System.ini Command Causes GPF

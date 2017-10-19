@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131343: &quot;Invalid Page Fault&quot; Running Office 95 Help Wizard"
-permalink: kb/131/Q131343/
+permalink: /kb/131/Q131343/
 ---
 
 ## Q131343: &quot;Invalid Page Fault&quot; Running Office 95 Help Wizard

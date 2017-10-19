@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151835: Table of Contents for FoxPro Advisor Magazine for May 1996"
-permalink: kb/151/Q151835/
+permalink: /kb/151/Q151835/
 ---
 
 ## Q151835: Table of Contents for FoxPro Advisor Magazine for May 1996

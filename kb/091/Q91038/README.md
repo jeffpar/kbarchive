@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91038: PC WFW: Features of Extensions for Windows for Workgroups"
-permalink: kb/091/Q91038/
+permalink: /kb/091/Q91038/
 ---
 
 ## Q91038: PC WFW: Features of Extensions for Windows for Workgroups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166714: XCLN: Using AppleScript for Drag-and-Drop Support on Macintosh"
-permalink: kb/166/Q166714/
+permalink: /kb/166/Q166714/
 ---
 
 ## Q166714: XCLN: Using AppleScript for Drag-and-Drop Support on Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75006: Virtual Communications Driver Functional Structure"
-permalink: kb/075/Q75006/
+permalink: /kb/075/Q75006/
 ---
 
 ## Q75006: Virtual Communications Driver Functional Structure

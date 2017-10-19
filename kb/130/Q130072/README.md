@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130072: Net Watcher Shows Users Without Access Rights as Connected"
-permalink: kb/130/Q130072/
+permalink: /kb/130/Q130072/
 ---
 
 ## Q130072: Net Watcher Shows Users Without Access Rights as Connected

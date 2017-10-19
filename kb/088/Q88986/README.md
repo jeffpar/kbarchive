@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88986: INKEY(0) Function Determines Key CHR Value"
-permalink: kb/088/Q88986/
+permalink: /kb/088/Q88986/
 ---
 
 ## Q88986: INKEY(0) Function Determines Key CHR Value

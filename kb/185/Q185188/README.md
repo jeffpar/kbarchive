@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185188: PRB: Cannot Use Visual FoxPro Table in Word 97 Mail Merge"
-permalink: kb/185/Q185188/
+permalink: /kb/185/Q185188/
 ---
 
 ## Q185188: PRB: Cannot Use Visual FoxPro Table in Word 97 Mail Merge

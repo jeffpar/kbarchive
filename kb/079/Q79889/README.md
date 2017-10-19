@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79889: Using Stacker XT/8 Coprocessor and Windows 3.0"
-permalink: kb/079/Q79889/
+permalink: /kb/079/Q79889/
 ---
 
 ## Q79889: Using Stacker XT/8 Coprocessor and Windows 3.0

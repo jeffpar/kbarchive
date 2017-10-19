@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186548: Terminal Server Error Messages: 3900 to 7999"
-permalink: kb/186/Q186548/
+permalink: /kb/186/Q186548/
 ---
 
 ## Q186548: Terminal Server Error Messages: 3900 to 7999

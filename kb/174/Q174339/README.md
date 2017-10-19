@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174339: Error 404 When Accessing Intranet Using NetBIOS Server"
-permalink: kb/174/Q174339/
+permalink: /kb/174/Q174339/
 ---
 
 ## Q174339: Error 404 When Accessing Intranet Using NetBIOS Server

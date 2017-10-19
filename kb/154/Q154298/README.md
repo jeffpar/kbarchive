@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154298: XFOR: Mail Going to IMC or MSMail Stays in Outbox"
-permalink: kb/154/Q154298/
+permalink: /kb/154/Q154298/
 ---
 
 ## Q154298: XFOR: Mail Going to IMC or MSMail Stays in Outbox

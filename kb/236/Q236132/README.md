@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236132: SMS: Err Msg: Unexpected Login Failure NDS: Status 8890"
-permalink: kb/236/Q236132/
+permalink: /kb/236/Q236132/
 ---
 
 ## Q236132: SMS: Err Msg: Unexpected Login Failure NDS: Status 8890

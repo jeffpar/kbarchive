@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232600: XADM: Message Using Non-GAPI Code Page Is Not Converted Properly"
-permalink: kb/232/Q232600/
+permalink: /kb/232/Q232600/
 ---
 
 ## Q232600: XADM: Message Using Non-GAPI Code Page Is Not Converted Properly

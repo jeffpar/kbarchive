@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80679: Mac Wkst: Err Msg: Mail System Could Not Be Loaded"
-permalink: kb/080/Q80679/
+permalink: /kb/080/Q80679/
 ---
 
 ## Q80679: Mac Wkst: Err Msg: Mail System Could Not Be Loaded

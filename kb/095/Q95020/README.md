@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95020: INF: Setting Data Sources for SQL Server Driver on Novell NIK"
-permalink: kb/095/Q95020/
+permalink: /kb/095/Q95020/
 ---
 
 ## Q95020: INF: Setting Data Sources for SQL Server Driver on Novell NIK

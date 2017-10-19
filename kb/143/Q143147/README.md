@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143147: WD97: Word Does Not Receive Subsequent Updates from DDE Server"
-permalink: kb/143/Q143147/
+permalink: /kb/143/Q143147/
 ---
 
 ## Q143147: WD97: Word Does Not Receive Subsequent Updates from DDE Server

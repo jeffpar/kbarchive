@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221472: Unexpected Permissions After Moving Files w/ New ACL Editor"
-permalink: kb/221/Q221472/
+permalink: /kb/221/Q221472/
 ---
 
 ## Q221472: Unexpected Permissions After Moving Files w/ New ACL Editor

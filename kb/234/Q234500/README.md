@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234500: Microsoft Pocket Guide to MS Excel 2000 Comments and Corrections"
-permalink: kb/234/Q234500/
+permalink: /kb/234/Q234500/
 ---
 
 ## Q234500: Microsoft Pocket Guide to MS Excel 2000 Comments and Corrections

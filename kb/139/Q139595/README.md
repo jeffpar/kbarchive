@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139595: DDM x'2124' Error When Selecting ODBC Data Source"
-permalink: kb/139/Q139595/
+permalink: /kb/139/Q139595/
 ---
 
 ## Q139595: DDM x'2124' Error When Selecting ODBC Data Source

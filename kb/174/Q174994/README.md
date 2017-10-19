@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174994: WD97: Autoexec Macro Runs Twice When Reference Is Added"
-permalink: kb/174/Q174994/
+permalink: /kb/174/Q174994/
 ---
 
 ## Q174994: WD97: Autoexec Macro Runs Twice When Reference Is Added

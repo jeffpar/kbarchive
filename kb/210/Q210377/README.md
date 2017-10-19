@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210377: SMS: Network Discovery Not Reporting Domain Names of Computers"
-permalink: kb/210/Q210377/
+permalink: /kb/210/Q210377/
 ---
 
 ## Q210377: SMS: Network Discovery Not Reporting Domain Names of Computers

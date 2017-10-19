@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272937: SMS: Administrator Console Does Not Connect to Windows NT 4.0 Si"
-permalink: kb/272/Q272937/
+permalink: /kb/272/Q272937/
 ---
 
 ## Q272937: SMS: Administrator Console Does Not Connect to Windows NT 4.0 Si

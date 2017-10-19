@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95112: NIC at I/O Port of 0360h May Prevent Local Printing"
-permalink: kb/095/Q95112/
+permalink: /kb/095/Q95112/
 ---
 
 ## Q95112: NIC at I/O Port of 0360h May Prevent Local Printing

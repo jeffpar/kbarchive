@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148283: XADM: Custom Attribute Values Replicate, but Names Do Not"
-permalink: kb/148/Q148283/
+permalink: /kb/148/Q148283/
 ---
 
 ## Q148283: XADM: Custom Attribute Values Replicate, but Names Do Not

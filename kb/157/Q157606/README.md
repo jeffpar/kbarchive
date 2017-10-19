@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157606: Using NWCONV with Duplicate Group Names"
-permalink: kb/157/Q157606/
+permalink: /kb/157/Q157606/
 ---
 
 ## Q157606: Using NWCONV with Duplicate Group Names

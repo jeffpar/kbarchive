@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259148: Random &quot;Access Violation&quot; Error Messages in EnumProtocolsW()"
-permalink: kb/259/Q259148/
+permalink: /kb/259/Q259148/
 ---
 
 ## Q259148: Random &quot;Access Violation&quot; Error Messages in EnumProtocolsW()

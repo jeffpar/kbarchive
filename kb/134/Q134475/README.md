@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134475: PCI Device Status Shows Error Code 29"
-permalink: kb/134/Q134475/
+permalink: /kb/134/Q134475/
 ---
 
 ## Q134475: PCI Device Status Shows Error Code 29

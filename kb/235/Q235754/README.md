@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235754: Error Message Displays MMF Build Info: SMS 2.0 Beta (1239)"
-permalink: kb/235/Q235754/
+permalink: /kb/235/Q235754/
 ---
 
 ## Q235754: Error Message Displays MMF Build Info: SMS 2.0 Beta (1239)

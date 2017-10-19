@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131898: Fortran PowerStation Graphics Apps on Windows 95"
-permalink: kb/131/Q131898/
+permalink: /kb/131/Q131898/
 ---
 
 ## Q131898: Fortran PowerStation Graphics Apps on Windows 95

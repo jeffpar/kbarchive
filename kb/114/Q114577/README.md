@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114577: Watermark Software HP 1300T Removable Disk Stuck or Corrupted"
-permalink: kb/114/Q114577/
+permalink: /kb/114/Q114577/
 ---
 
 ## Q114577: Watermark Software HP 1300T Removable Disk Stuck or Corrupted

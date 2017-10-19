@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165820: Iomega Jaz Drive Not Recognized on Some Compaq Portables"
-permalink: kb/165/Q165820/
+permalink: /kb/165/Q165820/
 ---
 
 ## Q165820: Iomega Jaz Drive Not Recognized on Some Compaq Portables

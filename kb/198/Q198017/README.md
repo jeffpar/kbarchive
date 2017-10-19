@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198017: BUG: Unexpected Error Using ATL Interface Wizard to Add Methods"
-permalink: kb/198/Q198017/
+permalink: /kb/198/Q198017/
 ---
 
 ## Q198017: BUG: Unexpected Error Using ATL Interface Wizard to Add Methods

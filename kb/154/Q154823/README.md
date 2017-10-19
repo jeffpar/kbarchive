@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154823: HOWTO: Determine the Size of the Desktop Area"
-permalink: kb/154/Q154823/
+permalink: /kb/154/Q154823/
 ---
 
 ## Q154823: HOWTO: Determine the Size of the Desktop Area

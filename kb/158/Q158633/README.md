@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158633: XFOR: MTA Admin View of Queues Explained"
-permalink: kb/158/Q158633/
+permalink: /kb/158/Q158633/
 ---
 
 ## Q158633: XFOR: MTA Admin View of Queues Explained

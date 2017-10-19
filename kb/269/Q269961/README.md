@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269961: MSB Mars: Minimum System Requirements for Macintosh"
-permalink: kb/269/Q269961/
+permalink: /kb/269/Q269961/
 ---
 
 ## Q269961: MSB Mars: Minimum System Requirements for Macintosh

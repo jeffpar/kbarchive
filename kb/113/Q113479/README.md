@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113479: WFWG 3.11 Err Msg: Error 3: The Specified Path Was Not Found"
-permalink: kb/113/Q113479/
+permalink: /kb/113/Q113479/
 ---
 
 ## Q113479: WFWG 3.11 Err Msg: Error 3: The Specified Path Was Not Found

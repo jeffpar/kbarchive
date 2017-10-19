@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167167: INFO: Visual Basic 5.0 README.TXT File"
-permalink: kb/167/Q167167/
+permalink: /kb/167/Q167167/
 ---
 
 ## Q167167: INFO: Visual Basic 5.0 README.TXT File

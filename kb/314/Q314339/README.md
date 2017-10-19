@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314339: MS02-018: Patch for AV in URL Error Handling Vulnerability"
-permalink: kb/314/Q314339/
+permalink: /kb/314/Q314339/
 ---
 
 ## Q314339: MS02-018: Patch for AV in URL Error Handling Vulnerability

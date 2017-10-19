@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196647: PRB: SUBSTR(SYS(2015),3,10) as Alias Name Causes Syntax Error"
-permalink: kb/196/Q196647/
+permalink: /kb/196/Q196647/
 ---
 
 ## Q196647: PRB: SUBSTR(SYS(2015),3,10) as Alias Name Causes Syntax Error

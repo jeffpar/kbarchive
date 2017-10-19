@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293288: XFOR: Malformed SMTP Messages in the Internet Mail Service"
-permalink: kb/293/Q293288/
+permalink: /kb/293/Q293288/
 ---
 
 ## Q293288: XFOR: Malformed SMTP Messages in the Internet Mail Service

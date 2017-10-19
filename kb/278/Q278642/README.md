@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278642: CFS2: How to Import Missions from Combat Flight Simulator"
-permalink: kb/278/Q278642/
+permalink: /kb/278/Q278642/
 ---
 
 ## Q278642: CFS2: How to Import Missions from Combat Flight Simulator

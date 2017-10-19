@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133288: PRB: Codepage Does Not Show in Project Information Screen"
-permalink: kb/133/Q133288/
+permalink: /kb/133/Q133288/
 ---
 
 ## Q133288: PRB: Codepage Does Not Show in Project Information Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136765: How Memory &amp; Disk Space Are Used During an SQL SELECT Command"
-permalink: kb/136/Q136765/
+permalink: /kb/136/Q136765/
 ---
 
 ## Q136765: How Memory &amp; Disk Space Are Used During an SQL SELECT Command

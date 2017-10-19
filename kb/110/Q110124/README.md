@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110124: How to Use Alternate CONFIG.FPM Files with FoxPro for Mac"
-permalink: kb/110/Q110124/
+permalink: /kb/110/Q110124/
 ---
 
 ## Q110124: How to Use Alternate CONFIG.FPM Files with FoxPro for Mac

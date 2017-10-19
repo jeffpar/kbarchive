@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127134: Windows NT Setup: SCSI Boot Disk Size Limitations"
-permalink: kb/127/Q127134/
+permalink: /kb/127/Q127134/
 ---
 
 ## Q127134: Windows NT Setup: SCSI Boot Disk Size Limitations

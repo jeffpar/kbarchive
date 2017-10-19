@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188234: PRB: Cannot Move Windowless Controls on Form"
-permalink: kb/188/Q188234/
+permalink: /kb/188/Q188234/
 ---
 
 ## Q188234: PRB: Cannot Move Windowless Controls on Form

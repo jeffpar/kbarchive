@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166238: Problems Caused by Disabling Original Profile on Some Devices"
-permalink: kb/166/Q166238/
+permalink: /kb/166/Q166238/
 ---
 
 ## Q166238: Problems Caused by Disabling Original Profile on Some Devices

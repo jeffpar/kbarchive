@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87020: INFO: New C++ Type Conversions May Generate C2446 or C2664"
-permalink: kb/087/Q87020/
+permalink: /kb/087/Q87020/
 ---
 
 ## Q87020: INFO: New C++ Type Conversions May Generate C2446 or C2664

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118967: ATT: Removal of Gateway Fails to Update NETWORK.GLB"
-permalink: kb/118/Q118967/
+permalink: /kb/118/Q118967/
 ---
 
 ## Q118967: ATT: Removal of Gateway Fails to Update NETWORK.GLB

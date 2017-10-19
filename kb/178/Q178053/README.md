@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178053: XADM: Store Thread's Processor Use Peaks Indefinitely"
-permalink: kb/178/Q178053/
+permalink: /kb/178/Q178053/
 ---
 
 ## Q178053: XADM: Store Thread's Processor Use Peaks Indefinitely

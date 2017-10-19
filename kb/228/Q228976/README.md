@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228976: Midtown Madness: Stops Responding (Hangs) When You Start a Race"
-permalink: kb/228/Q228976/
+permalink: /kb/228/Q228976/
 ---
 
 ## Q228976: Midtown Madness: Stops Responding (Hangs) When You Start a Race

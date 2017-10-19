@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88428: Issues with Windows 3.0 and 8.0 Mouse Driver"
-permalink: kb/088/Q88428/
+permalink: /kb/088/Q88428/
 ---
 
 ## Q88428: Issues with Windows 3.0 and 8.0 Mouse Driver

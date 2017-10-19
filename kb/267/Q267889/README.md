@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267889: SMS: SMS_EXECUTIVE Service Not Installed During Setup"
-permalink: kb/267/Q267889/
+permalink: /kb/267/Q267889/
 ---
 
 ## Q267889: SMS: SMS_EXECUTIVE Service Not Installed During Setup

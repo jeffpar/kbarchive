@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65169: Windows Can't Use the PS/2 Port Mouse on Austin PC"
-permalink: kb/065/Q65169/
+permalink: /kb/065/Q65169/
 ---
 
 ## Q65169: Windows Can't Use the PS/2 Port Mouse on Austin PC

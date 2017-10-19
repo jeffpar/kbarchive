@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97396: SAMPLE: HierList.exe - Hierarchical List in Owner-Draw List Box"
-permalink: kb/097/Q97396/
+permalink: /kb/097/Q97396/
 ---
 
 ## Q97396: SAMPLE: HierList.exe - Hierarchical List in Owner-Draw List Box

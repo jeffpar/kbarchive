@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265137: XFOR: Cannot Install Connector MTA on MS Mail Connector"
-permalink: kb/265/Q265137/
+permalink: /kb/265/Q265137/
 ---
 
 ## Q265137: XFOR: Cannot Install Connector MTA on MS Mail Connector

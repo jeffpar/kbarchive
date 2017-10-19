@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119106: WFWG 3.11 Does Not Pass Requests to Novell DOSNP.EXE"
-permalink: kb/119/Q119106/
+permalink: /kb/119/Q119106/
 ---
 
 ## Q119106: WFWG 3.11 Does Not Pass Requests to Novell DOSNP.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191313: BUG: Word Doc in Component Gallery Gives Fatal Exception Err"
-permalink: kb/191/Q191313/
+permalink: /kb/191/Q191313/
 ---
 
 ## Q191313: BUG: Word Doc in Component Gallery Gives Fatal Exception Err

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196051: Excessive Network Retransmissions While Running CSNW"
-permalink: kb/196/Q196051/
+permalink: /kb/196/Q196051/
 ---
 
 ## Q196051: Excessive Network Retransmissions While Running CSNW

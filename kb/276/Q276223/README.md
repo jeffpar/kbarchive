@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276223: XCLN: Named Pipes in RPC Binding Order causes Open Resources"
-permalink: kb/276/Q276223/
+permalink: /kb/276/Q276223/
 ---
 
 ## Q276223: XCLN: Named Pipes in RPC Binding Order causes Open Resources

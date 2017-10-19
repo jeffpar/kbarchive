@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221656: FIX: Difficult to Add Records to Form in Application Wizard App"
-permalink: kb/221/Q221656/
+permalink: /kb/221/Q221656/
 ---
 
 ## Q221656: FIX: Difficult to Add Records to Form in Application Wizard App

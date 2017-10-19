@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166220: Print Session Font List Should Have Truetype and Printer Fonts"
-permalink: kb/166/Q166220/
+permalink: /kb/166/Q166220/
 ---
 
 ## Q166220: Print Session Font List Should Have Truetype and Printer Fonts

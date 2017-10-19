@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73736: Effects of FDISK on Boot Record, Root Directory, and FATs"
-permalink: kb/073/Q73736/
+permalink: /kb/073/Q73736/
 ---
 
 ## Q73736: Effects of FDISK on Boot Record, Root Directory, and FATs

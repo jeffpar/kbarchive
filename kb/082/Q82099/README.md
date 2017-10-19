@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82099: Apple LaserWriter Specifications"
-permalink: kb/082/Q82099/
+permalink: /kb/082/Q82099/
 ---
 
 ## Q82099: Apple LaserWriter Specifications

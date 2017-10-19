@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184417: MSN Icon Remains on Taskbar When You Quit MSN Program Viewer"
-permalink: kb/184/Q184417/
+permalink: /kb/184/Q184417/
 ---
 
 ## Q184417: MSN Icon Remains on Taskbar When You Quit MSN Program Viewer

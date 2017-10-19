@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260351: PRB:Final report shows approved even with one recipient rejected"
-permalink: kb/260/Q260351/
+permalink: /kb/260/Q260351/
 ---
 
 ## Q260351: PRB:Final report shows approved even with one recipient rejected

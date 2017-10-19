@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141642: Mac Dangerous Creatures: No Help Window Opens; Computer Beeps"
-permalink: kb/141/Q141642/
+permalink: /kb/141/Q141642/
 ---
 
 ## Q141642: Mac Dangerous Creatures: No Help Window Opens; Computer Beeps

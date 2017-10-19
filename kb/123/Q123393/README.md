@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123393: Type 1 Font (ZapfDingbats) Displays Different Font in Write"
-permalink: kb/123/Q123393/
+permalink: /kb/123/Q123393/
 ---
 
 ## Q123393: Type 1 Font (ZapfDingbats) Displays Different Font in Write

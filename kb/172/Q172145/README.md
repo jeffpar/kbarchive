@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172145: Windows NT 3.0 SP1 Client  Doesn't Correctly Install  NLS files"
-permalink: kb/172/Q172145/
+permalink: /kb/172/Q172145/
 ---
 
 ## Q172145: Windows NT 3.0 SP1 Client  Doesn't Correctly Install  NLS files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164676: Can't Browse Virtual Directories on NetWare Server"
-permalink: kb/164/Q164676/
+permalink: /kb/164/Q164676/
 ---
 
 ## Q164676: Can't Browse Virtual Directories on NetWare Server

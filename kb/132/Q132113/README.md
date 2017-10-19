@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132113: Cannot Use APM 1.1 on AST Ascentia 900N Computer"
-permalink: kb/132/Q132113/
+permalink: /kb/132/Q132113/
 ---
 
 ## Q132113: Cannot Use APM 1.1 on AST Ascentia 900N Computer

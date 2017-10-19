@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139543: Infrared Data Association Relnotes.doc File (Part 2 of 2)"
-permalink: kb/139/Q139543/
+permalink: /kb/139/Q139543/
 ---
 
 ## Q139543: Infrared Data Association Relnotes.doc File (Part 2 of 2)

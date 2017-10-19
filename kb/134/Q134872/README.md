@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134872: PPT7: Error While Saving in PowerPoint 4.0 Format"
-permalink: kb/134/Q134872/
+permalink: /kb/134/Q134872/
 ---
 
 ## Q134872: PPT7: Error While Saving in PowerPoint 4.0 Format

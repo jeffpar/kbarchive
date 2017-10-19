@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170040: Computer Associates InocuLAN May Cause Broadcast Storm"
-permalink: kb/170/Q170040/
+permalink: /kb/170/Q170040/
 ---
 
 ## Q170040: Computer Associates InocuLAN May Cause Broadcast Storm

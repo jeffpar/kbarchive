@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157156: STL Sample for the Predicate Versions of the heap Functions"
-permalink: kb/157/Q157156/
+permalink: /kb/157/Q157156/
 ---
 
 ## Q157156: STL Sample for the Predicate Versions of the heap Functions

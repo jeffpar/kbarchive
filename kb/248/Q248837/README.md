@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248837: FIX: AV in VBA6.DLL During Compilation When Using SP3 Version"
-permalink: kb/248/Q248837/
+permalink: /kb/248/Q248837/
 ---
 
 ## Q248837: FIX: AV in VBA6.DLL During Compilation When Using SP3 Version

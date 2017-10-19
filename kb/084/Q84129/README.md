@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84129: DbMenu.exe Demonstrates How to Add Menus to Dialog Box"
-permalink: kb/084/Q84129/
+permalink: /kb/084/Q84129/
 ---
 
 ## Q84129: DbMenu.exe Demonstrates How to Add Menus to Dialog Box

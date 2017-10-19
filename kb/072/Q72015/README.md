@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72015: Redirection of PRINT Does Not Redirect All Error Messages"
-permalink: kb/072/Q72015/
+permalink: /kb/072/Q72015/
 ---
 
 ## Q72015: Redirection of PRINT Does Not Redirect All Error Messages

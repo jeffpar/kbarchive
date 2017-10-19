@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167748: PRB: Variable Scope in for-statement Extends Beyond Loop"
-permalink: kb/167/Q167748/
+permalink: /kb/167/Q167748/
 ---
 
 ## Q167748: PRB: Variable Scope in for-statement Extends Beyond Loop

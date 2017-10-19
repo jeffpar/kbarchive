@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149055: PRB: Jet Doesn't Support QueryDefs on a Non-Attached ODBC Table"
-permalink: kb/149/Q149055/
+permalink: /kb/149/Q149055/
 ---
 
 ## Q149055: PRB: Jet Doesn't Support QueryDefs on a Non-Attached ODBC Table

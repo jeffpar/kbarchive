@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147894: BUG: Spy++ Causes Exception in Owner-Drawn Combo Box"
-permalink: kb/147/Q147894/
+permalink: /kb/147/Q147894/
 ---
 
 ## Q147894: BUG: Spy++ Causes Exception in Owner-Drawn Combo Box

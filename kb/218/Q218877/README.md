@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218877: Mfc40.dll Causes Programs to Display Wrong Date After 01/01/2000"
-permalink: kb/218/Q218877/
+permalink: /kb/218/Q218877/
 ---
 
 ## Q218877: Mfc40.dll Causes Programs to Display Wrong Date After 01/01/2000

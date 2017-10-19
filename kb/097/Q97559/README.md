@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97559: How Remote Access Service Processes Datagram Traffic"
-permalink: kb/097/Q97559/
+permalink: /kb/097/Q97559/
 ---
 
 ## Q97559: How Remote Access Service Processes Datagram Traffic

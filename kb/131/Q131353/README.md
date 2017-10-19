@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131353: Err Msg: Unable to Initialize Windows Sockets..."
-permalink: kb/131/Q131353/
+permalink: /kb/131/Q131353/
 ---
 
 ## Q131353: Err Msg: Unable to Initialize Windows Sockets...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185217: Desktop Icons Appear As the Default Windows Icon"
-permalink: kb/185/Q185217/
+permalink: /kb/185/Q185217/
 ---
 
 ## Q185217: Desktop Icons Appear As the Default Windows Icon

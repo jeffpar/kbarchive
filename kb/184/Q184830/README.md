@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184830: XADM: Error 3355443730 Starting Information Store After Restore"
-permalink: kb/184/Q184830/
+permalink: /kb/184/Q184830/
 ---
 
 ## Q184830: XADM: Error 3355443730 Starting Information Store After Restore

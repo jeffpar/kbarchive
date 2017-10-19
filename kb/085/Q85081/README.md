@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85081: QMS-PS 815 Requires Firmware Update to Print TrueType Fonts"
-permalink: kb/085/Q85081/
+permalink: /kb/085/Q85081/
 ---
 
 ## Q85081: QMS-PS 815 Requires Firmware Update to Print TrueType Fonts

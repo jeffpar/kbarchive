@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213009: Cannot Create Program for Existing Package Using Wizard"
-permalink: kb/213/Q213009/
+permalink: /kb/213/Q213009/
 ---
 
 ## Q213009: Cannot Create Program for Existing Package Using Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202183: The OID for memPercentCommittedBytesInUse Always Returns Zero"
-permalink: kb/202/Q202183/
+permalink: /kb/202/Q202183/
 ---
 
 ## Q202183: The OID for memPercentCommittedBytesInUse Always Returns Zero

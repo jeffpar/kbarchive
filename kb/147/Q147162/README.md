@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147162: SMS File AUDIT.RUL Updated"
-permalink: kb/147/Q147162/
+permalink: /kb/147/Q147162/
 ---
 
 ## Q147162: SMS File AUDIT.RUL Updated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128966: SNA Server X.25 PVC incoming calls."
-permalink: kb/128/Q128966/
+permalink: /kb/128/Q128966/
 ---
 
 ## Q128966: SNA Server X.25 PVC incoming calls.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178999: XADM: Online Backup Fails with -1811 Errors"
-permalink: kb/178/Q178999/
+permalink: /kb/178/Q178999/
 ---
 
 ## Q178999: XADM: Online Backup Fails with -1811 Errors

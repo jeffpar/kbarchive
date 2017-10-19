@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117852: Writer: List of Picture Window Graphics"
-permalink: kb/117/Q117852/
+permalink: /kb/117/Q117852/
 ---
 
 ## Q117852: Writer: List of Picture Window Graphics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178494: PRB: More Than Nine Functions in Left Join Causes Memory Error"
-permalink: kb/178/Q178494/
+permalink: /kb/178/Q178494/
 ---
 
 ## Q178494: PRB: More Than Nine Functions in Left Join Causes Memory Error

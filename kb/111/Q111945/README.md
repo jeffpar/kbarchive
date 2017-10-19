@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111945: X400: Err Msg: Incoming Invalid SPDU on Connection X:"
-permalink: kb/111/Q111945/
+permalink: /kb/111/Q111945/
 ---
 
 ## Q111945: X400: Err Msg: Incoming Invalid SPDU on Connection X:

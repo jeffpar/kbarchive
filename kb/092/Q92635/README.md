@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92635: Windows Temporary Files"
-permalink: kb/092/Q92635/
+permalink: /kb/092/Q92635/
 ---
 
 ## Q92635: Windows Temporary Files

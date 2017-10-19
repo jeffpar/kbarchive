@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146866: PRB: Type Indexes in .PDB Files Are Limited"
-permalink: kb/146/Q146866/
+permalink: /kb/146/Q146866/
 ---
 
 ## Q146866: PRB: Type Indexes in .PDB Files Are Limited

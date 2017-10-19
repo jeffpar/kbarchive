@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51281: Mac Wkst: Urgent &amp; Return Receipt Missing from Inquiry Message"
-permalink: kb/051/Q51281/
+permalink: /kb/051/Q51281/
 ---
 
 ## Q51281: Mac Wkst: Urgent &amp; Return Receipt Missing from Inquiry Message

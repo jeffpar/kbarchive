@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136803: XCLN: Alias PST Inbox Not Highlighted for Unread Messages"
-permalink: kb/136/Q136803/
+permalink: /kb/136/Q136803/
 ---
 
 ## Q136803: XCLN: Alias PST Inbox Not Highlighted for Unread Messages

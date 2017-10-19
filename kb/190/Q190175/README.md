@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190175: BUG: MTS is Unable to Delete VB6 Project Compatible Server"
-permalink: kb/190/Q190175/
+permalink: /kb/190/Q190175/
 ---
 
 ## Q190175: BUG: MTS is Unable to Delete VB6 Project Compatible Server

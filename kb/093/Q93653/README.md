@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93653: Novell's NETX Reports MS-DOS 6.x as MS-DOS 5.0"
-permalink: kb/093/Q93653/
+permalink: /kb/093/Q93653/
 ---
 
 ## Q93653: Novell's NETX Reports MS-DOS 6.x as MS-DOS 5.0

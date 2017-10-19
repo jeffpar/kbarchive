@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163532: PPT: For Each Loop Doesn't Find All Shapes on a Slide"
-permalink: kb/163/Q163532/
+permalink: /kb/163/Q163532/
 ---
 
 ## Q163532: PPT: For Each Loop Doesn't Find All Shapes on a Slide

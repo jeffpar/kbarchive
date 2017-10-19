@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318095: FP: Hyperlinks Updated Even Though You Choose Not to Update"
-permalink: kb/318/Q318095/
+permalink: /kb/318/Q318095/
 ---
 
 ## Q318095: FP: Hyperlinks Updated Even Though You Choose Not to Update

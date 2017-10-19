@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86273: Panasonic KX-P 1695 Missing Paper Size"
-permalink: kb/086/Q86273/
+permalink: /kb/086/Q86273/
 ---
 
 ## Q86273: Panasonic KX-P 1695 Missing Paper Size

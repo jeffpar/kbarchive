@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136050: PC Gen: Err Msg: Error Sorting Members of Group..."
-permalink: kb/136/Q136050/
+permalink: /kb/136/Q136050/
 ---
 
 ## Q136050: PC Gen: Err Msg: Error Sorting Members of Group...

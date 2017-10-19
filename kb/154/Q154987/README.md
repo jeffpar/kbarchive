@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154987: Cannot Use Reserved Names with SYSDIFF"
-permalink: kb/154/Q154987/
+permalink: /kb/154/Q154987/
 ---
 
 ## Q154987: Cannot Use Reserved Names with SYSDIFF

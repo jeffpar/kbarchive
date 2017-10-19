@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229091: SMS: Remote Administrator Gets &quot;Connection Failed&quot; Error"
-permalink: kb/229/Q229091/
+permalink: /kb/229/Q229091/
 ---
 
 ## Q229091: SMS: Remote Administrator Gets &quot;Connection Failed&quot; Error

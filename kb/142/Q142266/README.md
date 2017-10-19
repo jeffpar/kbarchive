@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142266: XCON: MS Mail SMTP Addresses Modified During Migration"
-permalink: kb/142/Q142266/
+permalink: /kb/142/Q142266/
 ---
 
 ## Q142266: XCON: MS Mail SMTP Addresses Modified During Migration

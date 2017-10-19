@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142685: WD97: ODMA Close Document Function Not Issued"
-permalink: kb/142/Q142685/
+permalink: /kb/142/Q142685/
 ---
 
 ## Q142685: WD97: ODMA Close Document Function Not Issued

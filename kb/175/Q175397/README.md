@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175397: Shared Folders Gateway Should Check If Path Uses Long Filenames"
-permalink: kb/175/Q175397/
+permalink: /kb/175/Q175397/
 ---
 
 ## Q175397: Shared Folders Gateway Should Check If Path Uses Long Filenames

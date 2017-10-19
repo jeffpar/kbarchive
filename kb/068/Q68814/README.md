@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68814: Procom Propak S185 and 185-15 Hard Disk Drive Problem"
-permalink: kb/068/Q68814/
+permalink: /kb/068/Q68814/
 ---
 
 ## Q68814: Procom Propak S185 and 185-15 Hard Disk Drive Problem

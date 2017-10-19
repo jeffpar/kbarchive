@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189714: Closing Lotus Notes Window Opens Desktop Context Menu"
-permalink: kb/189/Q189714/
+permalink: /kb/189/Q189714/
 ---
 
 ## Q189714: Closing Lotus Notes Window Opens Desktop Context Menu

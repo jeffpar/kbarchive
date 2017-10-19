@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192505: Microsoft Excel 97 Step by Step Comments and Corrections"
-permalink: kb/192/Q192505/
+permalink: /kb/192/Q192505/
 ---
 
 ## Q192505: Microsoft Excel 97 Step by Step Comments and Corrections

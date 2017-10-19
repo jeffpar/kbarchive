@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166571: Creating an SFM Volume on Large Partition Causes a Stop 0x24"
-permalink: kb/166/Q166571/
+permalink: /kb/166/Q166571/
 ---
 
 ## Q166571: Creating an SFM Volume on Large Partition Causes a Stop 0x24

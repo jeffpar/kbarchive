@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169043: Mastering Web Site Development: Large Notes Cause Notebook Hang"
-permalink: kb/169/Q169043/
+permalink: /kb/169/Q169043/
 ---
 
 ## Q169043: Mastering Web Site Development: Large Notes Cause Notebook Hang

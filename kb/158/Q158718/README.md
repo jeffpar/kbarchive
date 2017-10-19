@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158718: Generic Icon Displayed for New Host Drive"
-permalink: kb/158/Q158718/
+permalink: /kb/158/Q158718/
 ---
 
 ## Q158718: Generic Icon Displayed for New Host Drive

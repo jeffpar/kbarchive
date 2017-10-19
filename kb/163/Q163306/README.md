@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163306: WD97: Squares Not Symbols in Insert Symbol Dialog Box"
-permalink: kb/163/Q163306/
+permalink: /kb/163/Q163306/
 ---
 
 ## Q163306: WD97: Squares Not Symbols in Insert Symbol Dialog Box

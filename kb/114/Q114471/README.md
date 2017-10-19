@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114471: INFO: Drawing a Rubber Rectangle"
-permalink: kb/114/Q114471/
+permalink: /kb/114/Q114471/
 ---
 
 ## Q114471: INFO: Drawing a Rubber Rectangle

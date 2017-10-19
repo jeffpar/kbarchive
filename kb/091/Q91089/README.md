@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91089: Persistent Network Connections in WIN.INI Must Be Uppercase"
-permalink: kb/091/Q91089/
+permalink: /kb/091/Q91089/
 ---
 
 ## Q91089: Persistent Network Connections in WIN.INI Must Be Uppercase

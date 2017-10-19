@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164196: Kids Plus!: Desktop Icons do not Change with Different Users"
-permalink: kb/164/Q164196/
+permalink: /kb/164/Q164196/
 ---
 
 ## Q164196: Kids Plus!: Desktop Icons do not Change with Different Users

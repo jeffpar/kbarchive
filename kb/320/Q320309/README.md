@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320309: PRB: &quot;File or Project Not Found&quot; Err Msg When You Add User Right"
-permalink: kb/320/Q320309/
+permalink: /kb/320/Q320309/
 ---
 
 ## Q320309: PRB: &quot;File or Project Not Found&quot; Err Msg When You Add User Right

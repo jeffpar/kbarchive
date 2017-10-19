@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118888: PC Ext: First Contact Form for Microsoft Mail EXTERNAL.EXE"
-permalink: kb/118/Q118888/
+permalink: /kb/118/Q118888/
 ---
 
 ## Q118888: PC Ext: First Contact Form for Microsoft Mail EXTERNAL.EXE

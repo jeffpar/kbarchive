@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89850: PC Ext: Err Msg: Already Attached to Server"
-permalink: kb/089/Q89850/
+permalink: /kb/089/Q89850/
 ---
 
 ## Q89850: PC Ext: Err Msg: Already Attached to Server

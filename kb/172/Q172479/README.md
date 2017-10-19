@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172479: DMOD limited to 4 Non-RPC Callbacks for API Libraries"
-permalink: kb/172/Q172479/
+permalink: /kb/172/Q172479/
 ---
 
 ## Q172479: DMOD limited to 4 Non-RPC Callbacks for API Libraries

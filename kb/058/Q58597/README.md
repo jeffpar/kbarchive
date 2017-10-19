@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58597: Mac Hyp: DisplayAddressScreen for User to Add Recipients"
-permalink: kb/058/Q58597/
+permalink: /kb/058/Q58597/
 ---
 
 ## Q58597: Mac Hyp: DisplayAddressScreen for User to Add Recipients

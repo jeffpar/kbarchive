@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130958: BUG: Five Label Layouts Have Incorrect Format"
-permalink: kb/130/Q130958/
+permalink: /kb/130/Q130958/
 ---
 
 ## Q130958: BUG: Five Label Layouts Have Incorrect Format

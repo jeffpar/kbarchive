@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148975: Err Msg: &quot;STOP 0x00000079 MISMATCHED_HAL&quot; on IBM PC Server 320"
-permalink: kb/148/Q148975/
+permalink: /kb/148/Q148975/
 ---
 
 ## Q148975: Err Msg: &quot;STOP 0x00000079 MISMATCHED_HAL&quot; on IBM PC Server 320

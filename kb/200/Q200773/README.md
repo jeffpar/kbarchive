@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200773: SMS: No MIB File for SMS Event to Trap Translator"
-permalink: kb/200/Q200773/
+permalink: /kb/200/Q200773/
 ---
 
 ## Q200773: SMS: No MIB File for SMS Event to Trap Translator

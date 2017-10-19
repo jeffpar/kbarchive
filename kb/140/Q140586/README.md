@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140586: HOWTO: How to Add Buttons to a Modeless CPropertySheet"
-permalink: kb/140/Q140586/
+permalink: /kb/140/Q140586/
 ---
 
 ## Q140586: HOWTO: How to Add Buttons to a Modeless CPropertySheet

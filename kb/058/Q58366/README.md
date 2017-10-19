@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58366: Installing Windows 3.0 on a Network Server"
-permalink: kb/058/Q58366/
+permalink: /kb/058/Q58366/
 ---
 
 ## Q58366: Installing Windows 3.0 on a Network Server

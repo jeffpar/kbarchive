@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174303: BUG: ListBox Caption Changes When Copied as Control Array"
-permalink: kb/174/Q174303/
+permalink: /kb/174/Q174303/
 ---
 
 ## Q174303: BUG: ListBox Caption Changes When Copied as Control Array

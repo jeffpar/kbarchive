@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288202: &quot;SSCP Connection Already Open&quot; Error Starting 257th 3270 Session"
-permalink: kb/288/Q288202/
+permalink: /kb/288/Q288202/
 ---
 
 ## Q288202: &quot;SSCP Connection Already Open&quot; Error Starting 257th 3270 Session

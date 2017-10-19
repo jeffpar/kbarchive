@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179153: XADM: NDR Not Sent If Allow Rich Text Option Is Selected"
-permalink: kb/179/Q179153/
+permalink: /kb/179/Q179153/
 ---
 
 ## Q179153: XADM: NDR Not Sent If Allow Rich Text Option Is Selected

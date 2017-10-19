@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87787: Windows Err Msg: Cannot Start More Than One Copy of the..."
-permalink: kb/087/Q87787/
+permalink: /kb/087/Q87787/
 ---
 
 ## Q87787: Windows Err Msg: Cannot Start More Than One Copy of the...

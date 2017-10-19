@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133218: LAN WorkPlace Replaces Shell.dll File"
-permalink: kb/133/Q133218/
+permalink: /kb/133/Q133218/
 ---
 
 ## Q133218: LAN WorkPlace Replaces Shell.dll File

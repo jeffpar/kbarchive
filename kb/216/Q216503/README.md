@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216503: PRB: Problems Showing an ATL Dialog as Modeless in ATL .exe"
-permalink: kb/216/Q216503/
+permalink: /kb/216/Q216503/
 ---
 
 ## Q216503: PRB: Problems Showing an ATL Dialog as Modeless in ATL .exe

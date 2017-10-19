@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85951: BUG: &quot;Help on Topic Not Found&quot; for Win API with PWB 2.0"
-permalink: kb/085/Q85951/
+permalink: /kb/085/Q85951/
 ---
 
 ## Q85951: BUG: &quot;Help on Topic Not Found&quot; for Win API with PWB 2.0

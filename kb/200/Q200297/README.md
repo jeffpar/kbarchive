@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200297: XADM: Incorrect Product Name Listed with Non-Frames Browser"
-permalink: kb/200/Q200297/
+permalink: /kb/200/Q200297/
 ---
 
 ## Q200297: XADM: Incorrect Product Name Listed with Non-Frames Browser

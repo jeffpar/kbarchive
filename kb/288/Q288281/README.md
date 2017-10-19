@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288281: Changing The Name That Appears On E-mail And Instant Messages"
-permalink: kb/288/Q288281/
+permalink: /kb/288/Q288281/
 ---
 
 ## Q288281: Changing The Name That Appears On E-mail And Instant Messages

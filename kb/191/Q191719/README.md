@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191719: BUG: UpDown Control's BuddyProperty Returns Empty String in EXE"
-permalink: kb/191/Q191719/
+permalink: /kb/191/Q191719/
 ---
 
 ## Q191719: BUG: UpDown Control's BuddyProperty Returns Empty String in EXE

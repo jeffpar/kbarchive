@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189281: HOWTO: View Documents w/ FoxPro OLE Controls w/o MS Office"
-permalink: kb/189/Q189281/
+permalink: /kb/189/Q189281/
 ---
 
 ## Q189281: HOWTO: View Documents w/ FoxPro OLE Controls w/o MS Office

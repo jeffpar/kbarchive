@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82434: Windows Screen Savers Corrupted by Pull-Down Menus"
-permalink: kb/082/Q82434/
+permalink: /kb/082/Q82434/
 ---
 
 ## Q82434: Windows Screen Savers Corrupted by Pull-Down Menus

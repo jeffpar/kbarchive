@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152532: XCLN: Inserting a File into a Folder or Message"
-permalink: kb/152/Q152532/
+permalink: /kb/152/Q152532/
 ---
 
 ## Q152532: XCLN: Inserting a File into a Folder or Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295920: WD97: Word Prints More Copies than Value Displayed in Print Box"
-permalink: kb/295/Q295920/
+permalink: /kb/295/Q295920/
 ---
 
 ## Q295920: WD97: Word Prints More Copies than Value Displayed in Print Box

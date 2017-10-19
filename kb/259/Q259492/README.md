@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259492: HOWTO:Use DBPROP_SERVERDATAONINSERT to Retrieve Identity Value"
-permalink: kb/259/Q259492/
+permalink: /kb/259/Q259492/
 ---
 
 ## Q259492: HOWTO:Use DBPROP_SERVERDATAONINSERT to Retrieve Identity Value

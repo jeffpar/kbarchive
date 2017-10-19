@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126967: New TCP/IP Registry Parameter Ignores Push Bit on Receives"
-permalink: kb/126/Q126967/
+permalink: /kb/126/Q126967/
 ---
 
 ## Q126967: New TCP/IP Registry Parameter Ignores Push Bit on Receives

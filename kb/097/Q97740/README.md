@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97740: Applications That Don't Run on DoubleSpace-Compressed Drives"
-permalink: kb/097/Q97740/
+permalink: /kb/097/Q97740/
 ---
 
 ## Q97740: Applications That Don't Run on DoubleSpace-Compressed Drives

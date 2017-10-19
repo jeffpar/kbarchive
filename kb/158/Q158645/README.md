@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158645: SMS: Memory Reported Incorrectly When Using DOS4GW"
-permalink: kb/158/Q158645/
+permalink: /kb/158/Q158645/
 ---
 
 ## Q158645: SMS: Memory Reported Incorrectly When Using DOS4GW

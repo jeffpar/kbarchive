@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242583: Resrcmon Leaks Handles"
-permalink: kb/242/Q242583/
+permalink: /kb/242/Q242583/
 ---
 
 ## Q242583: Resrcmon Leaks Handles

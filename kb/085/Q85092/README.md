@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85092: Code Page Modifications Do Not Work in a Window"
-permalink: kb/085/Q85092/
+permalink: /kb/085/Q85092/
 ---
 
 ## Q85092: Code Page Modifications Do Not Work in a Window

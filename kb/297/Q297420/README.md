@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297420: Forgot Password Feature in MSN Explorer"
-permalink: kb/297/Q297420/
+permalink: /kb/297/Q297420/
 ---
 
 ## Q297420: Forgot Password Feature in MSN Explorer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150720: Macintosh Multimedia: Cannot Access Program Guide"
-permalink: kb/150/Q150720/
+permalink: /kb/150/Q150720/
 ---
 
 ## Q150720: Macintosh Multimedia: Cannot Access Program Guide

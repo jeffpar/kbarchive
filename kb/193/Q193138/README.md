@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193138: Windows NT 4.0 Does Not Support Unimodem V"
-permalink: kb/193/Q193138/
+permalink: /kb/193/Q193138/
 ---
 
 ## Q193138: Windows NT 4.0 Does Not Support Unimodem V

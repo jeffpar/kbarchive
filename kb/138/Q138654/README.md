@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138654: How to Add Items to a Combo Box with RowSourceType of Value"
-permalink: kb/138/Q138654/
+permalink: /kb/138/Q138654/
 ---
 
 ## Q138654: How to Add Items to a Combo Box with RowSourceType of Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140576: FIX: Backslash Alone in Menu Causes &quot;Illegal Operation&quot; Error"
-permalink: kb/140/Q140576/
+permalink: /kb/140/Q140576/
 ---
 
 ## Q140576: FIX: Backslash Alone in Menu Causes &quot;Illegal Operation&quot; Error

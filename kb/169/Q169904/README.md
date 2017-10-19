@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169904: Shared Folders Gateway May Cause Trap 0x1E in Ntoskrl.exe"
-permalink: kb/169/Q169904/
+permalink: /kb/169/Q169904/
 ---
 
 ## Q169904: Shared Folders Gateway May Cause Trap 0x1E in Ntoskrl.exe

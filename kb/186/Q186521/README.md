@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186521: Why Terminal Server Users Should Have New Home Directories"
-permalink: kb/186/Q186521/
+permalink: /kb/186/Q186521/
 ---
 
 ## Q186521: Why Terminal Server Users Should Have New Home Directories

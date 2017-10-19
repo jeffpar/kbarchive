@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140216: Encarta 96 Error Message: Call to Undefined Dynalink"
-permalink: kb/140/Q140216/
+permalink: /kb/140/Q140216/
 ---
 
 ## Q140216: Encarta 96 Error Message: Call to Undefined Dynalink

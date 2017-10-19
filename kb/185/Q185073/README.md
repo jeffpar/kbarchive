@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185073: CardBus Controller Displays Error Code 29 on IBM ThinkPad"
-permalink: kb/185/Q185073/
+permalink: /kb/185/Q185073/
 ---
 
 ## Q185073: CardBus Controller Displays Error Code 29 on IBM ThinkPad

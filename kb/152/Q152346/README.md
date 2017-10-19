@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152346: Some DEC TLZ06 4MM DAT Tape Drives Not Recognized by Windows NT"
-permalink: kb/152/Q152346/
+permalink: /kb/152/Q152346/
 ---
 
 ## Q152346: Some DEC TLZ06 4MM DAT Tape Drives Not Recognized by Windows NT

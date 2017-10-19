@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99326: Mouse Settings Are Lost When Quitting Windows"
-permalink: kb/099/Q99326/
+permalink: /kb/099/Q99326/
 ---
 
 ## Q99326: Mouse Settings Are Lost When Quitting Windows

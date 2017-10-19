@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69844: Difference Between load= and run= Statements in WIN.INI"
-permalink: kb/069/Q69844/
+permalink: /kb/069/Q69844/
 ---
 
 ## Q69844: Difference Between load= and run= Statements in WIN.INI

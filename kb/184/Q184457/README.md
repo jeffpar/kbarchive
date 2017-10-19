@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184457: XFOR: Cannot Reply to RTF Message Addressed to MS Mail Recipient"
-permalink: kb/184/Q184457/
+permalink: /kb/184/Q184457/
 ---
 
 ## Q184457: XFOR: Cannot Reply to RTF Message Addressed to MS Mail Recipient

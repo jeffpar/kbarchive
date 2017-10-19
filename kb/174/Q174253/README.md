@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174253: XFOR: MAC Binary Attachments not Migrated from GroupWise"
-permalink: kb/174/Q174253/
+permalink: /kb/174/Q174253/
 ---
 
 ## Q174253: XFOR: MAC Binary Attachments not Migrated from GroupWise

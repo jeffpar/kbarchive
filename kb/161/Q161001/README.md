@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161001: WD97: Document Macro Shortcut Key Assignments Won't Print"
-permalink: kb/161/Q161001/
+permalink: /kb/161/Q161001/
 ---
 
 ## Q161001: WD97: Document Macro Shortcut Key Assignments Won't Print

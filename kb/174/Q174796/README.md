@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174796: ZAK: Internet Explorer Launches Taskbar"
-permalink: kb/174/Q174796/
+permalink: /kb/174/Q174796/
 ---
 
 ## Q174796: ZAK: Internet Explorer Launches Taskbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84782: Norton Utilities Version 6.01 and Windows 3.1"
-permalink: kb/084/Q84782/
+permalink: /kb/084/Q84782/
 ---
 
 ## Q84782: Norton Utilities Version 6.01 and Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184971: Outwars: Music Starts and Stops or Music Volume Abruptly Changes"
-permalink: kb/184/Q184971/
+permalink: /kb/184/Q184971/
 ---
 
 ## Q184971: Outwars: Music Starts and Stops or Music Volume Abruptly Changes

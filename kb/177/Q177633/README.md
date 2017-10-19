@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177633: How to Connect to MSN from a Foreign Country"
-permalink: kb/177/Q177633/
+permalink: /kb/177/Q177633/
 ---
 
 ## Q177633: How to Connect to MSN from a Foreign Country

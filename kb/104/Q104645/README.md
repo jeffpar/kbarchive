@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104645: INFO: Passing a long from C to MASM by Value &amp; Returning a long"
-permalink: kb/104/Q104645/
+permalink: /kb/104/Q104645/
 ---
 
 ## Q104645: INFO: Passing a long from C to MASM by Value &amp; Returning a long

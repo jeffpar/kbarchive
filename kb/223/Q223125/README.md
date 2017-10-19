@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223125: FIX: &quot;Addins VB6.EXE - Application Error&quot; in Data Project"
-permalink: kb/223/Q223125/
+permalink: /kb/223/Q223125/
 ---
 
 ## Q223125: FIX: &quot;Addins VB6.EXE - Application Error&quot; in Data Project

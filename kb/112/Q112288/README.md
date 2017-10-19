@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112288: PC Win: Duplicate Menu Options"
-permalink: kb/112/Q112288/
+permalink: /kb/112/Q112288/
 ---
 
 ## Q112288: PC Win: Duplicate Menu Options

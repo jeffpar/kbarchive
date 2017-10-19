@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254189: Description of the Management Agent Working Folders"
-permalink: kb/254/Q254189/
+permalink: /kb/254/Q254189/
 ---
 
 ## Q254189: Description of the Management Agent Working Folders

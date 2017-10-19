@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153417: Location of Cookies File in Internet Explorer"
-permalink: kb/153/Q153417/
+permalink: /kb/153/Q153417/
 ---
 
 ## Q153417: Location of Cookies File in Internet Explorer

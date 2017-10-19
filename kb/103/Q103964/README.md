@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103964: PC DOS: Err Msg: Notice 91 Duplicate Folder Name"
-permalink: kb/103/Q103964/
+permalink: /kb/103/Q103964/
 ---
 
 ## Q103964: PC DOS: Err Msg: Notice 91 Duplicate Folder Name

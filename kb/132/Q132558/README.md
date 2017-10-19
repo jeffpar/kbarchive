@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132558: PC Win: GAL and External Address Lists Are Missing"
-permalink: kb/132/Q132558/
+permalink: /kb/132/Q132558/
 ---
 
 ## Q132558: PC Win: GAL and External Address Lists Are Missing

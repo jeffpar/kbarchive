@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184436: Removal of Connection Manager Is Not Confirmed"
-permalink: kb/184/Q184436/
+permalink: /kb/184/Q184436/
 ---
 
 ## Q184436: Removal of Connection Manager Is Not Confirmed

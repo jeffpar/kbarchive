@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164646: BUG: Windows 95 ODBC Driver Traps During ODBC Installation"
-permalink: kb/164/Q164646/
+permalink: /kb/164/Q164646/
 ---
 
 ## Q164646: BUG: Windows 95 ODBC Driver Traps During ODBC Installation

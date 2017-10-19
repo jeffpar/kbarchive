@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198475: XWEB: Time Out Error Attaching File in Outlook Web Access"
-permalink: kb/198/Q198475/
+permalink: /kb/198/Q198475/
 ---
 
 ## Q198475: XWEB: Time Out Error Attaching File in Outlook Web Access

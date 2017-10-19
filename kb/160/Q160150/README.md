@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160150: Error in RAS Admin: &quot;No Remote Access Servers Were Found...&quot;"
-permalink: kb/160/Q160150/
+permalink: /kb/160/Q160150/
 ---
 
 ## Q160150: Error in RAS Admin: &quot;No Remote Access Servers Were Found...&quot;

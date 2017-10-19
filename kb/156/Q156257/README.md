@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156257: FIX: SQL Server May Crash When sp_who2 Is Debugged"
-permalink: kb/156/Q156257/
+permalink: /kb/156/Q156257/
 ---
 
 ## Q156257: FIX: SQL Server May Crash When sp_who2 Is Debugged

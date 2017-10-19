@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140388: LPD L Command Is Not Passed with EnableBannerPages Disabled"
-permalink: kb/140/Q140388/
+permalink: /kb/140/Q140388/
 ---
 
 ## Q140388: LPD L Command Is Not Passed with EnableBannerPages Disabled

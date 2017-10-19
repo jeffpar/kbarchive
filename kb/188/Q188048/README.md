@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188048: SMS: Smsboot.exe Description and Syntax"
-permalink: kb/188/Q188048/
+permalink: /kb/188/Q188048/
 ---
 
 ## Q188048: SMS: Smsboot.exe Description and Syntax

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91192: HP IIIsi Printer Setup Creates GP Fault on 286 with Low Memory"
-permalink: kb/091/Q91192/
+permalink: /kb/091/Q91192/
 ---
 
 ## Q91192: HP IIIsi Printer Setup Creates GP Fault on 286 with Low Memory

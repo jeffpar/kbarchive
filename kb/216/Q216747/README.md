@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216747: FIX: Incorrect Code Generated With /Og and /G6"
-permalink: kb/216/Q216747/
+permalink: /kb/216/Q216747/
 ---
 
 ## Q216747: FIX: Incorrect Code Generated With /Og and /G6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263419: Software Inventory on Encrypted Vol Degrades Performance"
-permalink: kb/263/Q263419/
+permalink: /kb/263/Q263419/
 ---
 
 ## Q263419: Software Inventory on Encrypted Vol Degrades Performance

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140638: PRB: FLL Created Without LCK API Functions Is Invalid"
-permalink: kb/140/Q140638/
+permalink: /kb/140/Q140638/
 ---
 
 ## Q140638: PRB: FLL Created Without LCK API Functions Is Invalid

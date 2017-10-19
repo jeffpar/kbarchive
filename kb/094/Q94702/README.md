@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94702: Architecture of Windows Pen Drivers"
-permalink: kb/094/Q94702/
+permalink: /kb/094/Q94702/
 ---
 
 ## Q94702: Architecture of Windows Pen Drivers

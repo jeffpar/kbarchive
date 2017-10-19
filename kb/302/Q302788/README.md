@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302788: Setting MSN Explorer As Default E-mail Program May Cause Issues"
-permalink: kb/302/Q302788/
+permalink: /kb/302/Q302788/
 ---
 
 ## Q302788: Setting MSN Explorer As Default E-mail Program May Cause Issues

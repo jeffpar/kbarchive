@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148710: XCLN: Appears to Hang on Start w/ Profile Dialog Open"
-permalink: kb/148/Q148710/
+permalink: /kb/148/Q148710/
 ---
 
 ## Q148710: XCLN: Appears to Hang on Start w/ Profile Dialog Open

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251193: FS2000: How to Print a Navigation Log"
-permalink: kb/251/Q251193/
+permalink: /kb/251/Q251193/
 ---
 
 ## Q251193: FS2000: How to Print a Navigation Log

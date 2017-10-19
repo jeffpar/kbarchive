@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172292: F1 Key Does Not Open Help in SNA Manager"
-permalink: kb/172/Q172292/
+permalink: /kb/172/Q172292/
 ---
 
 ## Q172292: F1 Key Does Not Open Help in SNA Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134285: STOP Msg: 0x0000007B or &quot;0x4,0,0,0 Error&quot; during NT Setup"
-permalink: kb/134/Q134285/
+permalink: /kb/134/Q134285/
 ---
 
 ## Q134285: STOP Msg: 0x0000007B or &quot;0x4,0,0,0 Error&quot; during NT Setup

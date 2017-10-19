@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68741: ASD: 747 Checklist Doesn't Reset After Mode Reset"
-permalink: kb/068/Q68741/
+permalink: /kb/068/Q68741/
 ---
 
 ## Q68741: ASD: 747 Checklist Doesn't Reset After Mode Reset

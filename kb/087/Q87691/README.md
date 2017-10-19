@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87691: PRB: &quot;File in Use by Another&quot; Errors in Networked FoxPro"
-permalink: kb/087/Q87691/
+permalink: /kb/087/Q87691/
 ---
 
 ## Q87691: PRB: &quot;File in Use by Another&quot; Errors in Networked FoxPro

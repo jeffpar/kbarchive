@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60716: Reading Data from the Communications Port to a File"
-permalink: kb/060/Q60716/
+permalink: /kb/060/Q60716/
 ---
 
 ## Q60716: Reading Data from the Communications Port to a File

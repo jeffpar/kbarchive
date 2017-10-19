@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125859: SystemDrive Environment Variable Disappears"
-permalink: kb/125/Q125859/
+permalink: /kb/125/Q125859/
 ---
 
 ## Q125859: SystemDrive Environment Variable Disappears

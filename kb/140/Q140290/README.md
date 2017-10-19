@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140290: How to Add a Clock Display to a Form"
-permalink: kb/140/Q140290/
+permalink: /kb/140/Q140290/
 ---
 
 ## Q140290: How to Add a Clock Display to a Form

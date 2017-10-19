@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104201: PC Win: Err Msg: There Is Not Enough Disk Space Available..."
-permalink: kb/104/Q104201/
+permalink: /kb/104/Q104201/
 ---
 
 ## Q104201: PC Win: Err Msg: There Is Not Enough Disk Space Available...

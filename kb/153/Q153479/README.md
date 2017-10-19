@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153479: XADM: How to Include the Global Address List in the OAB"
-permalink: kb/153/Q153479/
+permalink: /kb/153/Q153479/
 ---
 
 ## Q153479: XADM: How to Include the Global Address List in the OAB

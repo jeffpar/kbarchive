@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146553: Other Systems Options Unavailable When Export"
-permalink: kb/146/Q146553/
+permalink: /kb/146/Q146553/
 ---
 
 ## Q146553: Other Systems Options Unavailable When Export

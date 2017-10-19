@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111743: PRINTERS.WRI from Windows for Workgroups 3.11 (Part 1)"
-permalink: kb/111/Q111743/
+permalink: /kb/111/Q111743/
 ---
 
 ## Q111743: PRINTERS.WRI from Windows for Workgroups 3.11 (Part 1)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253797: XCLN: Outlook 97, Outlook 98 May Allow Overlapping Appointments"
-permalink: kb/253/Q253797/
+permalink: /kb/253/Q253797/
 ---
 
 ## Q253797: XCLN: Outlook 97, Outlook 98 May Allow Overlapping Appointments

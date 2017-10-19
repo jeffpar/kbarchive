@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136790: Logitech Mouse Stops Working When Used with Modem on COM2"
-permalink: kb/136/Q136790/
+permalink: /kb/136/Q136790/
 ---
 
 ## Q136790: Logitech Mouse Stops Working When Used with Modem on COM2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89310: MS LAN Manager 2.1 Test Summary (HP Vectra 386/25N)"
-permalink: kb/089/Q89310/
+permalink: /kb/089/Q89310/
 ---
 
 ## Q89310: MS LAN Manager 2.1 Test Summary (HP Vectra 386/25N)

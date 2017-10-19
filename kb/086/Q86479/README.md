@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86479: INFO: Initializing in a Loop Within a Case Statement"
-permalink: kb/086/Q86479/
+permalink: /kb/086/Q86479/
 ---
 
 ## Q86479: INFO: Initializing in a Loop Within a Case Statement

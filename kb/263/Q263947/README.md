@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263947: XADM: Messages Stuck in Outbox with Antivirus API in Use"
-permalink: kb/263/Q263947/
+permalink: /kb/263/Q263947/
 ---
 
 ## Q263947: XADM: Messages Stuck in Outbox with Antivirus API in Use

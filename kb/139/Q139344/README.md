@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139344: Unable To Stop Resource Kit Remote Command Server Service"
-permalink: kb/139/Q139344/
+permalink: /kb/139/Q139344/
 ---
 
 ## Q139344: Unable To Stop Resource Kit Remote Command Server Service

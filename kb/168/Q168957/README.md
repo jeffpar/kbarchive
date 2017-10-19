@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168957: FIX: C1001, file 'msc1.cpp', line 1188, Caused by Name Hiding"
-permalink: kb/168/Q168957/
+permalink: /kb/168/Q168957/
 ---
 
 ## Q168957: FIX: C1001, file 'msc1.cpp', line 1188, Caused by Name Hiding

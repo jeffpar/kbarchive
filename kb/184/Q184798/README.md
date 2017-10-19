@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184798: SSL: Connections May Fail Using Online Requested Certificates"
-permalink: kb/184/Q184798/
+permalink: /kb/184/Q184798/
 ---
 
 ## Q184798: SSL: Connections May Fail Using Online Requested Certificates

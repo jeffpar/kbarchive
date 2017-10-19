@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115880: ADT2: ADT Application Setup Fails with Error -1809"
-permalink: kb/115/Q115880/
+permalink: /kb/115/Q115880/
 ---
 
 ## Q115880: ADT2: ADT Application Setup Fails with Error -1809

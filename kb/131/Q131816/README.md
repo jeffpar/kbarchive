@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131816: JULIA CHILD: README.WRI Contents (Part 1 of 2)"
-permalink: kb/131/Q131816/
+permalink: /kb/131/Q131816/
 ---
 
 ## Q131816: JULIA CHILD: README.WRI Contents (Part 1 of 2)

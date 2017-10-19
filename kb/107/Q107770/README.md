@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107770: PC Setup: Run OS/2 2.x NetWare Redirector in 3.11 Environment"
-permalink: kb/107/Q107770/
+permalink: /kb/107/Q107770/
 ---
 
 ## Q107770: PC Setup: Run OS/2 2.x NetWare Redirector in 3.11 Environment

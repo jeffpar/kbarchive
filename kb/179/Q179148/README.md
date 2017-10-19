@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179148: Settings May Not Be Applied with URL with Short Filename"
-permalink: kb/179/Q179148/
+permalink: /kb/179/Q179148/
 ---
 
 ## Q179148: Settings May Not Be Applied with URL with Short Filename

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163727: XADM: IMC Logs Event ID 1008"
-permalink: kb/163/Q163727/
+permalink: /kb/163/Q163727/
 ---
 
 ## Q163727: XADM: IMC Logs Event ID 1008

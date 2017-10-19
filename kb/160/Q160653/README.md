@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160653: NTFS Fails Assertion Under High Stress During Transfer"
-permalink: kb/160/Q160653/
+permalink: /kb/160/Q160653/
 ---
 
 ## Q160653: NTFS Fails Assertion Under High Stress During Transfer

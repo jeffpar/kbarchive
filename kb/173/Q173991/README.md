@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173991: BUG: Error Disassociating Resultset from rdoConnection"
-permalink: kb/173/Q173991/
+permalink: /kb/173/Q173991/
 ---
 
 ## Q173991: BUG: Error Disassociating Resultset from rdoConnection

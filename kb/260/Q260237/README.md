@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260237: Visual FoxPro 6.0 Sample: Using a PictureClip Control"
-permalink: kb/260/Q260237/
+permalink: /kb/260/Q260237/
 ---
 
 ## Q260237: Visual FoxPro 6.0 Sample: Using a PictureClip Control

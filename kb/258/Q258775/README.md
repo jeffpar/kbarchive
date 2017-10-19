@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258775: XADM: How to Create and Manage a Contacts Public Folder"
-permalink: kb/258/Q258775/
+permalink: /kb/258/Q258775/
 ---
 
 ## Q258775: XADM: How to Create and Manage a Contacts Public Folder

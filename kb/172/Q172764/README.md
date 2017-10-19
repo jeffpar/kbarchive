@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172764: WD97: Changes to List Number Styles May be Lost"
-permalink: kb/172/Q172764/
+permalink: /kb/172/Q172764/
 ---
 
 ## Q172764: WD97: Changes to List Number Styles May be Lost

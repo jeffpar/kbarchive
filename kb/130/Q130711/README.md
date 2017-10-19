@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130711: PRB: Microsoft Excel 5.0 Can't Open Visual FoxPro 3.0 Table"
-permalink: kb/130/Q130711/
+permalink: /kb/130/Q130711/
 ---
 
 ## Q130711: PRB: Microsoft Excel 5.0 Can't Open Visual FoxPro 3.0 Table

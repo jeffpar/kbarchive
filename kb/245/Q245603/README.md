@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245603: How to Create a Windows NT Printer Share"
-permalink: kb/245/Q245603/
+permalink: /kb/245/Q245603/
 ---
 
 ## Q245603: How to Create a Windows NT Printer Share

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184289: XCLN: Error Message when Opening PF Without Proper Permissions"
-permalink: kb/184/Q184289/
+permalink: /kb/184/Q184289/
 ---
 
 ## Q184289: XCLN: Error Message when Opening PF Without Proper Permissions

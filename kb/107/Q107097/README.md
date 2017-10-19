@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107097: 3COM: Removing the 3COM Gateway with INSTALL -r"
-permalink: kb/107/Q107097/
+permalink: /kb/107/Q107097/
 ---
 
 ## Q107097: 3COM: Removing the 3COM Gateway with INSTALL -r

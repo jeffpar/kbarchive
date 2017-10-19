@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110664: BUG: DDEML Fails to Free Item Name HSZ on a LATEACK"
-permalink: kb/110/Q110664/
+permalink: /kb/110/Q110664/
 ---
 
 ## Q110664: BUG: DDEML Fails to Free Item Name HSZ on a LATEACK

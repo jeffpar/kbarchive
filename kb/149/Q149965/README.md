@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149965: FIX: C2668 in Overloaded Function When enum Is Promoted to int"
-permalink: kb/149/Q149965/
+permalink: /kb/149/Q149965/
 ---
 
 ## Q149965: FIX: C2668 in Overloaded Function When enum Is Promoted to int

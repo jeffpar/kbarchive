@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170235: FP: End User Permissions Are Turned Off on Netscape Server"
-permalink: kb/170/Q170235/
+permalink: /kb/170/Q170235/
 ---
 
 ## Q170235: FP: End User Permissions Are Turned Off on Netscape Server

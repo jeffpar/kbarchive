@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130410: BUG: ALTER TABLE Command Changes Field Type to Picture"
-permalink: kb/130/Q130410/
+permalink: /kb/130/Q130410/
 ---
 
 ## Q130410: BUG: ALTER TABLE Command Changes Field Type to Picture

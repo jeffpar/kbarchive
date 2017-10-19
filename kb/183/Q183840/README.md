@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183840: Stop 0xC000021A When Starting Task Manager with CTRL+ALT+DEL"
-permalink: kb/183/Q183840/
+permalink: /kb/183/Q183840/
 ---
 
 ## Q183840: Stop 0xC000021A When Starting Task Manager with CTRL+ALT+DEL

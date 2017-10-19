@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237728: NFL Fever 2000: Cannot Follow Execution of the Flee Flicker Play"
-permalink: kb/237/Q237728/
+permalink: /kb/237/Q237728/
 ---
 
 ## Q237728: NFL Fever 2000: Cannot Follow Execution of the Flee Flicker Play

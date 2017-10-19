@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102590: Using ReplaceItem() Command in Program Manager DDE"
-permalink: kb/102/Q102590/
+permalink: /kb/102/Q102590/
 ---
 
 ## Q102590: Using ReplaceItem() Command in Program Manager DDE

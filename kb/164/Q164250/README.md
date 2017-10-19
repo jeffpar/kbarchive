@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164250: PRB: FoxPro and Mac Lock with ODBC"
-permalink: kb/164/Q164250/
+permalink: /kb/164/Q164250/
 ---
 
 ## Q164250: PRB: FoxPro and Mac Lock with ODBC

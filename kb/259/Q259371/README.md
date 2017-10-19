@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259371: BUG: ActiveX Controls Are Disabled"
-permalink: kb/259/Q259371/
+permalink: /kb/259/Q259371/
 ---
 
 ## Q259371: BUG: ActiveX Controls Are Disabled

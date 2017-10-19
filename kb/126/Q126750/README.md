@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126750: PC Ext: Running External on PC-NFS File Services"
-permalink: kb/126/Q126750/
+permalink: /kb/126/Q126750/
 ---
 
 ## Q126750: PC Ext: Running External on PC-NFS File Services

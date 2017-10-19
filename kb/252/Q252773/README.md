@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252773: XADM: Delete All Custom Forms Deletes Contact Distribution List"
-permalink: kb/252/Q252773/
+permalink: /kb/252/Q252773/
 ---
 
 ## Q252773: XADM: Delete All Custom Forms Deletes Contact Distribution List

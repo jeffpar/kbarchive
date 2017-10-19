@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238143: BUG: WTSQuerySessionInformation() Returns Invalid Client Address"
-permalink: kb/238/Q238143/
+permalink: /kb/238/Q238143/
 ---
 
 ## Q238143: BUG: WTSQuerySessionInformation() Returns Invalid Client Address

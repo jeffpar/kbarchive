@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82339: DEC Pathworks and Print Manager Net Error"
-permalink: kb/082/Q82339/
+permalink: /kb/082/Q82339/
 ---
 
 ## Q82339: DEC Pathworks and Print Manager Net Error

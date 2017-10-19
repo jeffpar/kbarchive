@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128483: BUG: Selected Background Color Not Always Saved"
-permalink: kb/128/Q128483/
+permalink: /kb/128/Q128483/
 ---
 
 ## Q128483: BUG: Selected Background Color Not Always Saved

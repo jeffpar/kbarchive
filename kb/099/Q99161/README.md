@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99161: HOWTO: Derive From Classes not Listed in ClassWizard"
-permalink: kb/099/Q99161/
+permalink: /kb/099/Q99161/
 ---
 
 ## Q99161: HOWTO: Derive From Classes not Listed in ClassWizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189380: FP: Text String With No Spaces Overwrites Right-aligned Image"
-permalink: kb/189/Q189380/
+permalink: /kb/189/Q189380/
 ---
 
 ## Q189380: FP: Text String With No Spaces Overwrites Right-aligned Image

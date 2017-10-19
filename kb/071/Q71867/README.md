@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71867: MS-DOS 5 Upgrade README.TXT: Setup Notes"
-permalink: kb/071/Q71867/
+permalink: /kb/071/Q71867/
 ---
 
 ## Q71867: MS-DOS 5 Upgrade README.TXT: Setup Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158195: Time Zone Editor Available on OEM Service Release 2 CD-ROM"
-permalink: kb/158/Q158195/
+permalink: /kb/158/Q158195/
 ---
 
 ## Q158195: Time Zone Editor Available on OEM Service Release 2 CD-ROM

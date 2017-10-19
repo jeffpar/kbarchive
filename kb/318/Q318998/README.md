@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318998: How To Empty The Cache In Internet Explorer 5.x"
-permalink: kb/318/Q318998/
+permalink: /kb/318/Q318998/
 ---
 
 ## Q318998: How To Empty The Cache In Internet Explorer 5.x

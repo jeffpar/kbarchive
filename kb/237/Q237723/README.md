@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237723: NFL Fever 2000: Poor Graphics Performance with ATI Rage IIc AGP"
-permalink: kb/237/Q237723/
+permalink: /kb/237/Q237723/
 ---
 
 ## Q237723: NFL Fever 2000: Poor Graphics Performance with ATI Rage IIc AGP

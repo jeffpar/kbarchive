@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155420: PRB: C2146, C2065, C2143 Instantiating Template Class Objects"
-permalink: kb/155/Q155420/
+permalink: /kb/155/Q155420/
 ---
 
 ## Q155420: PRB: C2146, C2065, C2143 Instantiating Template Class Objects

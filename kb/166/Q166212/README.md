@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166212: INFO: ProcessMessageFilter gets called only for messages posted"
-permalink: kb/166/Q166212/
+permalink: /kb/166/Q166212/
 ---
 
 ## Q166212: INFO: ProcessMessageFilter gets called only for messages posted

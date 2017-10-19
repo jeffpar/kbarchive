@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232177: Assigning an Existing Server Certificate to a Web Site"
-permalink: kb/232/Q232177/
+permalink: /kb/232/Q232177/
 ---
 
 ## Q232177: Assigning an Existing Server Certificate to a Web Site

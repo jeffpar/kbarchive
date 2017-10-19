@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255993: Allegiance: Game Hangs Before the Introductory Movie Is Played"
-permalink: kb/255/Q255993/
+permalink: /kb/255/Q255993/
 ---
 
 ## Q255993: Allegiance: Game Hangs Before the Introductory Movie Is Played

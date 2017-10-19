@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175436: DNS Stops Forwarding Queries After PPP Link Goes Down"
-permalink: kb/175/Q175436/
+permalink: /kb/175/Q175436/
 ---
 
 ## Q175436: DNS Stops Forwarding Queries After PPP Link Goes Down

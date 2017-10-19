@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136829: Grays Displayed with Blue Tint Using 1-MB #9 GXE Adapter"
-permalink: kb/136/Q136829/
+permalink: /kb/136/Q136829/
 ---
 
 ## Q136829: Grays Displayed with Blue Tint Using 1-MB #9 GXE Adapter

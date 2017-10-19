@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139362: INFO: Readme.wri: Section 5, New Features of Visual SourceSafe"
-permalink: kb/139/Q139362/
+permalink: /kb/139/Q139362/
 ---
 
 ## Q139362: INFO: Readme.wri: Section 5, New Features of Visual SourceSafe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124429: SMS Shared Version of Works 3.0 Displays OLE Error on Startup"
-permalink: kb/124/Q124429/
+permalink: /kb/124/Q124429/
 ---
 
 ## Q124429: SMS Shared Version of Works 3.0 Displays OLE Error on Startup

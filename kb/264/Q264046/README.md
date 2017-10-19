@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264046: WD97: Cannot Insert Special Character Using a Macro"
-permalink: kb/264/Q264046/
+permalink: /kb/264/Q264046/
 ---
 
 ## Q264046: WD97: Cannot Insert Special Character Using a Macro

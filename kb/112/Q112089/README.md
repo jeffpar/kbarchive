@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112089: Print Manager Does Not Allow the Movement of Documents"
-permalink: kb/112/Q112089/
+permalink: /kb/112/Q112089/
 ---
 
 ## Q112089: Print Manager Does Not Allow the Movement of Documents

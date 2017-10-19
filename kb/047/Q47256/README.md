@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47256: Using Dynamic Scenery in Flight Simulator 4.00"
-permalink: kb/047/Q47256/
+permalink: /kb/047/Q47256/
 ---
 
 ## Q47256: Using Dynamic Scenery in Flight Simulator 4.00

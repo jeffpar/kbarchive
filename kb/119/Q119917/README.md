@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119917: Location of DHCP Information on Local Clients"
-permalink: kb/119/Q119917/
+permalink: /kb/119/Q119917/
 ---
 
 ## Q119917: Location of DHCP Information on Local Clients

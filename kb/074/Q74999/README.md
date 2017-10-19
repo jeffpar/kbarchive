@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74999: BtnBar.exe Demonstrates a Button Bar"
-permalink: kb/074/Q74999/
+permalink: /kb/074/Q74999/
 ---
 
 ## Q74999: BtnBar.exe Demonstrates a Button Bar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167878: WD97: Progress Meter Remains Visible in Status Bar After Error"
-permalink: kb/167/Q167878/
+permalink: /kb/167/Q167878/
 ---
 
 ## Q167878: WD97: Progress Meter Remains Visible in Status Bar After Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177304: HOWTO: Programmatically Copy the Current Record to a New Record"
-permalink: kb/177/Q177304/
+permalink: /kb/177/Q177304/
 ---
 
 ## Q177304: HOWTO: Programmatically Copy the Current Record to a New Record

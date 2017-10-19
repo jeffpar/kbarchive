@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281313: Server for NFS Does Not Recognize Group Membership Changes"
-permalink: kb/281/Q281313/
+permalink: /kb/281/Q281313/
 ---
 
 ## Q281313: Server for NFS Does Not Recognize Group Membership Changes

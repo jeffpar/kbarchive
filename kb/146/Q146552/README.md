@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146552: XCLN: Revision Marks in Word Document are not Updated in PFs"
-permalink: kb/146/Q146552/
+permalink: /kb/146/Q146552/
 ---
 
 ## Q146552: XCLN: Revision Marks in Word Document are not Updated in PFs

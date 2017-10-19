@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225743: PRB: Current Table's Fields Are Not in Report Expression Builder"
-permalink: kb/225/Q225743/
+permalink: /kb/225/Q225743/
 ---
 
 ## Q225743: PRB: Current Table's Fields Are Not in Report Expression Builder

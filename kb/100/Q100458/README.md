@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100458: PC WRmt: MAPI Ignores Scheduled Connections"
-permalink: kb/100/Q100458/
+permalink: /kb/100/Q100458/
 ---
 
 ## Q100458: PC WRmt: MAPI Ignores Scheduled Connections

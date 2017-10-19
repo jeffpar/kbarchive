@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105266: SFM: Print Spooler Does Not Work in Embedded Print Jobs"
-permalink: kb/105/Q105266/
+permalink: /kb/105/Q105266/
 ---
 
 ## Q105266: SFM: Print Spooler Does Not Work in Embedded Print Jobs

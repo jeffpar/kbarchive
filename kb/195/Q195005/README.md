@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195005: WD97: Some Document Properties Populated Automatically"
-permalink: kb/195/Q195005/
+permalink: /kb/195/Q195005/
 ---
 
 ## Q195005: WD97: Some Document Properties Populated Automatically

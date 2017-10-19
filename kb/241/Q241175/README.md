@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241175: NBA 2000: Shadow of Basketball Does Not Appear Properly"
-permalink: kb/241/Q241175/
+permalink: /kb/241/Q241175/
 ---
 
 ## Q241175: NBA 2000: Shadow of Basketball Does Not Appear Properly

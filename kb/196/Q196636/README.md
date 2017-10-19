@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196636: XADM: RPC Server Unavailable Error During Setup On Cluster"
-permalink: kb/196/Q196636/
+permalink: /kb/196/Q196636/
 ---
 
 ## Q196636: XADM: RPC Server Unavailable Error During Setup On Cluster

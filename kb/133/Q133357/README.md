@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133357: Differences Between Temporary and Permanent Relationships"
-permalink: kb/133/Q133357/
+permalink: /kb/133/Q133357/
 ---
 
 ## Q133357: Differences Between Temporary and Permanent Relationships

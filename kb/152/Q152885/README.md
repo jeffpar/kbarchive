@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152885: XADM: Public Folder Empty After Copying From Favorites"
-permalink: kb/152/Q152885/
+permalink: /kb/152/Q152885/
 ---
 
 ## Q152885: XADM: Public Folder Empty After Copying From Favorites

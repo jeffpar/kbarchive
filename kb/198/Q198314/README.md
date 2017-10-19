@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198314: WD97: VBA Editor Takes Longer to Start Than Word Basic Editor"
-permalink: kb/198/Q198314/
+permalink: /kb/198/Q198314/
 ---
 
 ## Q198314: WD97: VBA Editor Takes Longer to Start Than Word Basic Editor

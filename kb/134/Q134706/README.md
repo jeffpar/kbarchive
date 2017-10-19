@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134706: Error Message: The Font File May Be Damaged"
-permalink: kb/134/Q134706/
+permalink: /kb/134/Q134706/
 ---
 
 ## Q134706: Error Message: The Font File May Be Damaged

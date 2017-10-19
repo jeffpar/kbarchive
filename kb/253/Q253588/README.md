@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253588: PRB: OLE Error with Empty or NULL ControlSource with DT Picker"
-permalink: kb/253/Q253588/
+permalink: /kb/253/Q253588/
 ---
 
 ## Q253588: PRB: OLE Error with Empty or NULL ControlSource with DT Picker

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120064: BUG: Error A2005 Generated Due to Conflict with Global Label"
-permalink: kb/120/Q120064/
+permalink: /kb/120/Q120064/
 ---
 
 ## Q120064: BUG: Error A2005 Generated Due to Conflict with Global Label

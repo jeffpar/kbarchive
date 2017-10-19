@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168113: Using Windows 95 PowerToys with Windows NT 4.0"
-permalink: kb/168/Q168113/
+permalink: /kb/168/Q168113/
 ---
 
 ## Q168113: Using Windows 95 PowerToys with Windows NT 4.0

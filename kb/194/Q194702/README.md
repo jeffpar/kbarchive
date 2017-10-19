@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194702: HOWTO: Locate Windows Special Folder Locations"
-permalink: kb/194/Q194702/
+permalink: /kb/194/Q194702/
 ---
 
 ## Q194702: HOWTO: Locate Windows Special Folder Locations

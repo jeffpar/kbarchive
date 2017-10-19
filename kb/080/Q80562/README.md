@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80562: MTTOOL Test Miscellaneous Information"
-permalink: kb/080/Q80562/
+permalink: /kb/080/Q80562/
 ---
 
 ## Q80562: MTTOOL Test Miscellaneous Information

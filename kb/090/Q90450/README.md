@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90450: Windows for Workgroups File Manager and Extended Characters"
-permalink: kb/090/Q90450/
+permalink: /kb/090/Q90450/
 ---
 
 ## Q90450: Windows for Workgroups File Manager and Extended Characters

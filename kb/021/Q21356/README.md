@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q21356: How to Refuel and Rearm in the World War I Ace Game"
-permalink: kb/021/Q21356/
+permalink: /kb/021/Q21356/
 ---
 
 ## Q21356: How to Refuel and Rearm in the World War I Ace Game

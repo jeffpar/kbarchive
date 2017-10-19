@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107117: 5250 Applet Status Line"
-permalink: kb/107/Q107117/
+permalink: /kb/107/Q107117/
 ---
 
 ## Q107117: 5250 Applet Status Line

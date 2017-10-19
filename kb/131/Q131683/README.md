@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131683: Help File Opens Very Slowly with Office 95 Applications"
-permalink: kb/131/Q131683/
+permalink: /kb/131/Q131683/
 ---
 
 ## Q131683: Help File Opens Very Slowly with Office 95 Applications

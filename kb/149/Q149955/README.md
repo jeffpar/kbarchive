@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149955: Random Users Do Not Appear in SYSCON Viewed w/ FPNW Server"
-permalink: kb/149/Q149955/
+permalink: /kb/149/Q149955/
 ---
 
 ## Q149955: Random Users Do Not Appear in SYSCON Viewed w/ FPNW Server

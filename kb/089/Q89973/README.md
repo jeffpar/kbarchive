@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89973: Net Watcher: Lines Appear in Share Name When Scrolled"
-permalink: kb/089/Q89973/
+permalink: /kb/089/Q89973/
 ---
 
 ## Q89973: Net Watcher: Lines Appear in Share Name When Scrolled

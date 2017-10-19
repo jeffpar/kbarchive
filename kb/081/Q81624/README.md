@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81624: Zenographics SuperPrint for Windows"
-permalink: kb/081/Q81624/
+permalink: /kb/081/Q81624/
 ---
 
 ## Q81624: Zenographics SuperPrint for Windows

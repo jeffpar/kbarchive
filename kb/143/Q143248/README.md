@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143248: FIX: Error: &quot;Variable 'TITLE' is not found&quot; as Start Tastrade"
-permalink: kb/143/Q143248/
+permalink: /kb/143/Q143248/
 ---
 
 ## Q143248: FIX: Error: &quot;Variable 'TITLE' is not found&quot; as Start Tastrade

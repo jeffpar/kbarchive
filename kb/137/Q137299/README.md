@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137299: System Font Size Mismatch in Windows 95 Remote Control"
-permalink: kb/137/Q137299/
+permalink: /kb/137/Q137299/
 ---
 
 ## Q137299: System Font Size Mismatch in Windows 95 Remote Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314047: MCSE Training Kit: Windows XP Professional Comments and Correcti"
-permalink: kb/314/Q314047/
+permalink: /kb/314/Q314047/
 ---
 
 ## Q314047: MCSE Training Kit: Windows XP Professional Comments and Correcti

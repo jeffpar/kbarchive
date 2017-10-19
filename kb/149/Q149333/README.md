@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149333: XADM: The Basics of Advanced Security"
-permalink: kb/149/Q149333/
+permalink: /kb/149/Q149333/
 ---
 
 ## Q149333: XADM: The Basics of Advanced Security

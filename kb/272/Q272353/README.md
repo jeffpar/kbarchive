@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272353: ELL: Sound Problems or Script Error Message When You Run Encarta"
-permalink: kb/272/Q272353/
+permalink: /kb/272/Q272353/
 ---
 
 ## Q272353: ELL: Sound Problems or Script Error Message When You Run Encarta

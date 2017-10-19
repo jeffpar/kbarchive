@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173655: Finnish SNA 3.0 NT Client Unable to Connect to SNA Server 2.11"
-permalink: kb/173/Q173655/
+permalink: /kb/173/Q173655/
 ---
 
 ## Q173655: Finnish SNA 3.0 NT Client Unable to Connect to SNA Server 2.11

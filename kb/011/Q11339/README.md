@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11339: PRB: 8087 mnemonics without Operators"
-permalink: kb/011/Q11339/
+permalink: /kb/011/Q11339/
 ---
 
 ## Q11339: PRB: 8087 mnemonics without Operators

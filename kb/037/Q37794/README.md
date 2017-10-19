@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37794: PRB: gcvt() Generates Exponential Notation for 0.0x"
-permalink: kb/037/Q37794/
+permalink: /kb/037/Q37794/
 ---
 
 ## Q37794: PRB: gcvt() Generates Exponential Notation for 0.0x

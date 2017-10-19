@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193813: Multiple NVRunCmd Commands May Cause Unpredictable Results"
-permalink: kb/193/Q193813/
+permalink: /kb/193/Q193813/
 ---
 
 ## Q193813: Multiple NVRunCmd Commands May Cause Unpredictable Results

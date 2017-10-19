@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156302: INFO: STL Sample for the find Function"
-permalink: kb/156/Q156302/
+permalink: /kb/156/Q156302/
 ---
 
 ## Q156302: INFO: STL Sample for the find Function

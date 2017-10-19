@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181798: XADM: Online Restore May Not Replay Log Files"
-permalink: kb/181/Q181798/
+permalink: /kb/181/Q181798/
 ---
 
 ## Q181798: XADM: Online Restore May Not Replay Log Files

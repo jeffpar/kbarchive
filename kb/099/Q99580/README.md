@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99580: PC Forms: Err Msg: File Not Found"
-permalink: kb/099/Q99580/
+permalink: /kb/099/Q99580/
 ---
 
 ## Q99580: PC Forms: Err Msg: File Not Found

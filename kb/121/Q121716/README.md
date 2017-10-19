@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121716: PC WRmt:  Duplicate Entries in the Personal Address Book"
-permalink: kb/121/Q121716/
+permalink: /kb/121/Q121716/
 ---
 
 ## Q121716: PC WRmt:  Duplicate Entries in the Personal Address Book

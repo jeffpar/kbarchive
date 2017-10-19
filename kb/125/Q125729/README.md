@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125729: PRB: Pre-Built STDREG.EXE Works Incorrectly"
-permalink: kb/125/Q125729/
+permalink: /kb/125/Q125729/
 ---
 
 ## Q125729: PRB: Pre-Built STDREG.EXE Works Incorrectly

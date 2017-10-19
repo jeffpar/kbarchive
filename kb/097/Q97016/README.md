@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97016: Windows Err Msg with MS-DOS 6: EMM386: Unable to Start"
-permalink: kb/097/Q97016/
+permalink: /kb/097/Q97016/
 ---
 
 ## Q97016: Windows Err Msg with MS-DOS 6: EMM386: Unable to Start

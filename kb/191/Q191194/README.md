@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191194: XCLN: Error Message: Can't Read Your Internet E-mail Profile"
-permalink: kb/191/Q191194/
+permalink: /kb/191/Q191194/
 ---
 
 ## Q191194: XCLN: Error Message: Can't Read Your Internet E-mail Profile

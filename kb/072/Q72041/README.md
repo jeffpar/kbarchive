@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72041: HOWTO: Using Device-Independent Bitmaps and Palettes"
-permalink: kb/072/Q72041/
+permalink: /kb/072/Q72041/
 ---
 
 ## Q72041: HOWTO: Using Device-Independent Bitmaps and Palettes

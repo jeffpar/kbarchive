@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62122: Mac Hyp: Logging In to a Microsoft Mail Account"
-permalink: kb/062/Q62122/
+permalink: /kb/062/Q62122/
 ---
 
 ## Q62122: Mac Hyp: Logging In to a Microsoft Mail Account

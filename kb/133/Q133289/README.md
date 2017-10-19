@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133289: Support for the Solution Provider CD-ROM"
-permalink: kb/133/Q133289/
+permalink: /kb/133/Q133289/
 ---
 
 ## Q133289: Support for the Solution Provider CD-ROM

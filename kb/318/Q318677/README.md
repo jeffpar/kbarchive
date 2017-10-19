@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318677: PRB: System Hangs When You Reach Maximum Child Windows in MDI"
-permalink: kb/318/Q318677/
+permalink: /kb/318/Q318677/
 ---
 
 ## Q318677: PRB: System Hangs When You Reach Maximum Child Windows in MDI

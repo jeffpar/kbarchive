@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134523: Talking Solitaire and Minesweeper Do Not Work in Windows 95"
-permalink: kb/134/Q134523/
+permalink: /kb/134/Q134523/
 ---
 
 ## Q134523: Talking Solitaire and Minesweeper Do Not Work in Windows 95

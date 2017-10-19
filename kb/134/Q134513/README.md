@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134513: ClarisWorks Setup Error Message: Cannot Find Win32s"
-permalink: kb/134/Q134513/
+permalink: /kb/134/Q134513/
 ---
 
 ## Q134513: ClarisWorks Setup Error Message: Cannot Find Win32s

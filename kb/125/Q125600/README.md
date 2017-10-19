@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125600: Dr. Watson Application Error After Converting FAT to NTFS"
-permalink: kb/125/Q125600/
+permalink: /kb/125/Q125600/
 ---
 
 ## Q125600: Dr. Watson Application Error After Converting FAT to NTFS

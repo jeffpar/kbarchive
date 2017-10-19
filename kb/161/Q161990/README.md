@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161990: How to Enable Strong Password Functionality in Windows NT"
-permalink: kb/161/Q161990/
+permalink: /kb/161/Q161990/
 ---
 
 ## Q161990: How to Enable Strong Password Functionality in Windows NT

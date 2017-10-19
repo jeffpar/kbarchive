@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90981: Exiting Wing Commander Hangs Computer"
-permalink: kb/090/Q90981/
+permalink: /kb/090/Q90981/
 ---
 
 ## Q90981: Exiting Wing Commander Hangs Computer

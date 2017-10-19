@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232067: Content Ratings in MMC Incorrectly Interprets Dates"
-permalink: kb/232/Q232067/
+permalink: /kb/232/Q232067/
 ---
 
 ## Q232067: Content Ratings in MMC Incorrectly Interprets Dates

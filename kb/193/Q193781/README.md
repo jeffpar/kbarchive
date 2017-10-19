@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193781: Cache Manager May Cause Data Corruption"
-permalink: kb/193/Q193781/
+permalink: /kb/193/Q193781/
 ---
 
 ## Q193781: Cache Manager May Cause Data Corruption

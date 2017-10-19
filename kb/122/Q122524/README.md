@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122524: Blue Cast Screen with Compaq QVision Video in DEC Alpha 2100"
-permalink: kb/122/Q122524/
+permalink: /kb/122/Q122524/
 ---
 
 ## Q122524: Blue Cast Screen with Compaq QVision Video in DEC Alpha 2100

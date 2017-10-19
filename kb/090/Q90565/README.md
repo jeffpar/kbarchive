@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90565: Changes Made by MS-DOS Setup to the SYSTEM.INI File"
-permalink: kb/090/Q90565/
+permalink: /kb/090/Q90565/
 ---
 
 ## Q90565: Changes Made by MS-DOS Setup to the SYSTEM.INI File

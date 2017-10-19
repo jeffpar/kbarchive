@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111418: Scenes 1.0: Error Messages During Setup"
-permalink: kb/111/Q111418/
+permalink: /kb/111/Q111418/
 ---
 
 ## Q111418: Scenes 1.0: Error Messages During Setup

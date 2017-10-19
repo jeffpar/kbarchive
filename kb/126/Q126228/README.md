@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126228: CONN: LGTWGET and LMACGET Version 3.4.6 Update"
-permalink: kb/126/Q126228/
+permalink: /kb/126/Q126228/
 ---
 
 ## Q126228: CONN: LGTWGET and LMACGET Version 3.4.6 Update

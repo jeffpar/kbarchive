@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245184: Cannot Run 16-Bit Programs on a Windows NT 4.0-Based Computer."
-permalink: kb/245/Q245184/
+permalink: /kb/245/Q245184/
 ---
 
 ## Q245184: Cannot Run 16-Bit Programs on a Windows NT 4.0-Based Computer.

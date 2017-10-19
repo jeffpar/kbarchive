@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196951: WD97: Using Headers and Footers with Master Documents"
-permalink: kb/196/Q196951/
+permalink: /kb/196/Q196951/
 ---
 
 ## Q196951: WD97: Using Headers and Footers with Master Documents

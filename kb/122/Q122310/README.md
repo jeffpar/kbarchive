@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122310: Server Viewer Unable to Open Queue on Same Server"
-permalink: kb/122/Q122310/
+permalink: /kb/122/Q122310/
 ---
 
 ## Q122310: Server Viewer Unable to Open Queue on Same Server

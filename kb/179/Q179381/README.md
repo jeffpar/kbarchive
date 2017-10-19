@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179381: PRB: Error Connecting to MS Query with UserConnection Designer"
-permalink: kb/179/Q179381/
+permalink: /kb/179/Q179381/
 ---
 
 ## Q179381: PRB: Error Connecting to MS Query with UserConnection Designer

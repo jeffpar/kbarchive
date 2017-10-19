@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252644: Printer Error Messages Incorrectly Redirected to Terminal Server"
-permalink: kb/252/Q252644/
+permalink: /kb/252/Q252644/
 ---
 
 ## Q252644: Printer Error Messages Incorrectly Redirected to Terminal Server

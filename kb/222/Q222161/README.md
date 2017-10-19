@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222161: Program File with Duplicate Name Prevents Service from Starting"
-permalink: kb/222/Q222161/
+permalink: /kb/222/Q222161/
 ---
 
 ## Q222161: Program File with Duplicate Name Prevents Service from Starting

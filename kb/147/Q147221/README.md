@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147221: Sockets Application Can Cause STOP 0x0000000A"
-permalink: kb/147/Q147221/
+permalink: /kb/147/Q147221/
 ---
 
 ## Q147221: Sockets Application Can Cause STOP 0x0000000A

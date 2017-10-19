@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201771: How To Set Up an FTP Site So That Users Log Onto Their Folders"
-permalink: kb/201/Q201771/
+permalink: /kb/201/Q201771/
 ---
 
 ## Q201771: How To Set Up an FTP Site So That Users Log Onto Their Folders

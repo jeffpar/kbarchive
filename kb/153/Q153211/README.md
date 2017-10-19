@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153211: Close Combat: Minimum System Requirements for Windows"
-permalink: kb/153/Q153211/
+permalink: /kb/153/Q153211/
 ---
 
 ## Q153211: Close Combat: Minimum System Requirements for Windows

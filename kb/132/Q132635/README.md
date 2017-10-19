@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132635: Cannot Open Documents with Spaces in Name by Double-Clicking"
-permalink: kb/132/Q132635/
+permalink: /kb/132/Q132635/
 ---
 
 ## Q132635: Cannot Open Documents with Spaces in Name by Double-Clicking

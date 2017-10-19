@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125708: Applications Using Common Dialogs Append Default Extension"
-permalink: kb/125/Q125708/
+permalink: /kb/125/Q125708/
 ---
 
 ## Q125708: Applications Using Common Dialogs Append Default Extension

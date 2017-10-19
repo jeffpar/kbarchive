@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121015: FIX: Incorrect Template Declaration Causes Compiler Hang"
-permalink: kb/121/Q121015/
+permalink: /kb/121/Q121015/
 ---
 
 ## Q121015: FIX: Incorrect Template Declaration Causes Compiler Hang

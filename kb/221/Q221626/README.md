@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221626: FIX: Debug/Fix in Form Shows Form Controls Toolbar in Debugger"
-permalink: kb/221/Q221626/
+permalink: /kb/221/Q221626/
 ---
 
 ## Q221626: FIX: Debug/Fix in Form Shows Form Controls Toolbar in Debugger

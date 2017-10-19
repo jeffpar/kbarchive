@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151168: FIX: Abstract Class Instantiated as a Temporary Object"
-permalink: kb/151/Q151168/
+permalink: /kb/151/Q151168/
 ---
 
 ## Q151168: FIX: Abstract Class Instantiated as a Temporary Object

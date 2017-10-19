@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95494: DoubleSpace Err Msg: 'Not Enough Conventional Memory...'"
-permalink: kb/095/Q95494/
+permalink: /kb/095/Q95494/
 ---
 
 ## Q95494: DoubleSpace Err Msg: 'Not Enough Conventional Memory...'

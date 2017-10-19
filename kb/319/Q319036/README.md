@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319036: How To Manage Identities In Microsoft Entourage"
-permalink: kb/319/Q319036/
+permalink: /kb/319/Q319036/
 ---
 
 ## Q319036: How To Manage Identities In Microsoft Entourage

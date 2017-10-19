@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125626: Err Msg: Application Database Cannot Server, Share or Dir..."
-permalink: kb/125/Q125626/
+permalink: /kb/125/Q125626/
 ---
 
 ## Q125626: Err Msg: Application Database Cannot Server, Share or Dir...

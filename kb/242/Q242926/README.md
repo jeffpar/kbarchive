@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242926: Duplicate Client Configuration Request Stream in Ccrretry.box"
-permalink: kb/242/Q242926/
+permalink: /kb/242/Q242926/
 ---
 
 ## Q242926: Duplicate Client Configuration Request Stream in Ccrretry.box

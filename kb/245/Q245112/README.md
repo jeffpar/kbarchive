@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245112: Windows NT Server with SofTrack Workstation Metering Hangs."
-permalink: kb/245/Q245112/
+permalink: /kb/245/Q245112/
 ---
 
 ## Q245112: Windows NT Server with SofTrack Workstation Metering Hangs.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76686: BUG: Protected-Mode GlobalCompact() Return Not Free Memory"
-permalink: kb/076/Q76686/
+permalink: /kb/076/Q76686/
 ---
 
 ## Q76686: BUG: Protected-Mode GlobalCompact() Return Not Free Memory

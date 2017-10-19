@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239429: How to Obtain 128-Bit Encryption for Windows NT Service Packs"
-permalink: kb/239/Q239429/
+permalink: /kb/239/Q239429/
 ---
 
 ## Q239429: How to Obtain 128-Bit Encryption for Windows NT Service Packs

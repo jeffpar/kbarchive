@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91023: Minidriver Dump() and BlockOut() Callbacks"
-permalink: kb/091/Q91023/
+permalink: /kb/091/Q91023/
 ---
 
 ## Q91023: Minidriver Dump() and BlockOut() Callbacks

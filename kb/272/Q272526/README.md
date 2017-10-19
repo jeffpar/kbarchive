@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272526: XCLN: Administration and Forms Tabs Missing from PST Properties"
-permalink: kb/272/Q272526/
+permalink: /kb/272/Q272526/
 ---
 
 ## Q272526: XCLN: Administration and Forms Tabs Missing from PST Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83812: Access to Printer Cartridge Selection Unavailable"
-permalink: kb/083/Q83812/
+permalink: /kb/083/Q83812/
 ---
 
 ## Q83812: Access to Printer Cartridge Selection Unavailable

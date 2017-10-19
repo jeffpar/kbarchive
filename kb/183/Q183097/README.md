@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183097: Event Log May Not Grow to Configured Size"
-permalink: kb/183/Q183097/
+permalink: /kb/183/Q183097/
 ---
 
 ## Q183097: Event Log May Not Grow to Configured Size

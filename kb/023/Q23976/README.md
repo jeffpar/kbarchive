@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q23976: Sending Output to a Printer"
-permalink: kb/023/Q23976/
+permalink: /kb/023/Q23976/
 ---
 
 ## Q23976: Sending Output to a Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164594: WinNT 4.0 Hangs on DEC AlphaServer 2000, 2100, and 2100A System"
-permalink: kb/164/Q164594/
+permalink: /kb/164/Q164594/
 ---
 
 ## Q164594: WinNT 4.0 Hangs on DEC AlphaServer 2000, 2100, and 2100A System

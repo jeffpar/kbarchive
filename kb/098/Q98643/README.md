@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98643: Paste Command Dimmed After Choosing Copy or Cut in Encarta"
-permalink: kb/098/Q98643/
+permalink: /kb/098/Q98643/
 ---
 
 ## Q98643: Paste Command Dimmed After Choosing Copy or Cut in Encarta

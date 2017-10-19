@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218922: Installing NTOP on Cluster Server with SP4 Causes Event IDs 1009"
-permalink: kb/218/Q218922/
+permalink: /kb/218/Q218922/
 ---
 
 ## Q218922: Installing NTOP on Cluster Server with SP4 Causes Event IDs 1009

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145616: HOWTO: How to Enable Edit Menu Commands for Edit Controls"
-permalink: kb/145/Q145616/
+permalink: /kb/145/Q145616/
 ---
 
 ## Q145616: HOWTO: How to Enable Edit Menu Commands for Edit Controls

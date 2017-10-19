@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243835: MS99-046: How to Prevent Predictable TCP/IP Initial Sequence Num"
-permalink: kb/243/Q243835/
+permalink: /kb/243/Q243835/
 ---
 
 ## Q243835: MS99-046: How to Prevent Predictable TCP/IP Initial Sequence Num

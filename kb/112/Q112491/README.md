@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112491: Multimedia: Secondary Window on Top When Schubert Is Restored"
-permalink: kb/112/Q112491/
+permalink: /kb/112/Q112491/
 ---
 
 ## Q112491: Multimedia: Secondary Window on Top When Schubert Is Restored

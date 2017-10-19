@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154831: Arcinst Not Available for PPC"
-permalink: kb/154/Q154831/
+permalink: /kb/154/Q154831/
 ---
 
 ## Q154831: Arcinst Not Available for PPC

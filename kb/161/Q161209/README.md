@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161209: PRB: Resizing OCX Does Not Resize Its Component Control(s)"
-permalink: kb/161/Q161209/
+permalink: /kb/161/Q161209/
 ---
 
 ## Q161209: PRB: Resizing OCX Does Not Resize Its Component Control(s)

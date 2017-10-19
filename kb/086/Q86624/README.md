@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86624: Windows: Playing Audio CDs on Earlier CD-ROM Drives"
-permalink: kb/086/Q86624/
+permalink: /kb/086/Q86624/
 ---
 
 ## Q86624: Windows: Playing Audio CDs on Earlier CD-ROM Drives

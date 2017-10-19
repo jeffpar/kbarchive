@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164225: Poor Data Transfer with CardBus Card in Docking Station"
-permalink: kb/164/Q164225/
+permalink: /kb/164/Q164225/
 ---
 
 ## Q164225: Poor Data Transfer with CardBus Card in Docking Station

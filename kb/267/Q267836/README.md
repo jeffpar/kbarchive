@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267836: HOWTO: Create a DCOM Client/Server with Events by Using VB"
-permalink: kb/267/Q267836/
+permalink: /kb/267/Q267836/
 ---
 
 ## Q267836: HOWTO: Create a DCOM Client/Server with Events by Using VB

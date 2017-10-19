@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197776: Pagefile Size Limited to 4,095 MB"
-permalink: kb/197/Q197776/
+permalink: /kb/197/Q197776/
 ---
 
 ## Q197776: Pagefile Size Limited to 4,095 MB

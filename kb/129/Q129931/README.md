@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129931: Using For Each to Loop Through Arrays Is Not Recommended"
-permalink: kb/129/Q129931/
+permalink: /kb/129/Q129931/
 ---
 
 ## Q129931: Using For Each to Loop Through Arrays Is Not Recommended

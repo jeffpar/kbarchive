@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201058: All Exchange Users Receive NDR When Sending to cc:Mail Users"
-permalink: kb/201/Q201058/
+permalink: /kb/201/Q201058/
 ---
 
 ## Q201058: All Exchange Users Receive NDR When Sending to cc:Mail Users

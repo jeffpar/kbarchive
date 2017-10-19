@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313413: How to Configure MSN News in Outlook Express"
-permalink: kb/313/Q313413/
+permalink: /kb/313/Q313413/
 ---
 
 ## Q313413: How to Configure MSN News in Outlook Express

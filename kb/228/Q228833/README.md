@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228833: Desktop Applications for Microsoft Visual Basic 6.0 Training Kit"
-permalink: kb/228/Q228833/
+permalink: /kb/228/Q228833/
 ---
 
 ## Q228833: Desktop Applications for Microsoft Visual Basic 6.0 Training Kit

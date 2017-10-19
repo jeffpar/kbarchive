@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240110: NBA Inside Drive 2000: Game Commentary Stops Unexpectedly"
-permalink: kb/240/Q240110/
+permalink: /kb/240/Q240110/
 ---
 
 ## Q240110: NBA Inside Drive 2000: Game Commentary Stops Unexpectedly

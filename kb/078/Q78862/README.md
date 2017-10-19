@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q78862: FIX: Incorrect Code Generated If Operand Is [eax][eax]"
-permalink: kb/078/Q78862/
+title: "Q78862: FIX: Incorrect Code Generated If Operand Is &#91;eax&#93;&#91;eax&#93;"
+permalink: /kb/078/Q78862/
 ---
 
-## Q78862: FIX: Incorrect Code Generated If Operand Is [eax][eax]
+## Q78862: FIX: Incorrect Code Generated If Operand Is &#91;eax&#93;&#91;eax&#93;
 
 	Article: Q78862
 	Product(s): Microsoft Macro Assembler

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255184: NT 4.0 Option Pack Installation Errors on MSCS Running MSDTC"
-permalink: kb/255/Q255184/
+permalink: /kb/255/Q255184/
 ---
 
 ## Q255184: NT 4.0 Option Pack Installation Errors on MSCS Running MSDTC

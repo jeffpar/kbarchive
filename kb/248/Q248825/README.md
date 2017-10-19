@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248825: XADM: Subject Field Is Not Displayed Correctly"
-permalink: kb/248/Q248825/
+permalink: /kb/248/Q248825/
 ---
 
 ## Q248825: XADM: Subject Field Is Not Displayed Correctly

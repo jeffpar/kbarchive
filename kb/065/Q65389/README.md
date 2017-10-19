@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65389: Mac Gty: Gateway Installer Hangs Macintosh Plus"
-permalink: kb/065/Q65389/
+permalink: /kb/065/Q65389/
 ---
 
 ## Q65389: Mac Gty: Gateway Installer Hangs Macintosh Plus

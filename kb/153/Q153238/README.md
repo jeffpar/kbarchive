@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153238: HOWTO: Use GetChunk and AppendChunk Methods of RDO/ADO Object"
-permalink: kb/153/Q153238/
+permalink: /kb/153/Q153238/
 ---
 
 ## Q153238: HOWTO: Use GetChunk and AppendChunk Methods of RDO/ADO Object

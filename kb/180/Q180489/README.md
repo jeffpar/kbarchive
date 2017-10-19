@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180489: APPC Partnership Changes May Cause SNA Manager to Disappear"
-permalink: kb/180/Q180489/
+permalink: /kb/180/Q180489/
 ---
 
 ## Q180489: APPC Partnership Changes May Cause SNA Manager to Disappear

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106167: Err Msg: Not Enough Server Storage is Available..."
-permalink: kb/106/Q106167/
+permalink: /kb/106/Q106167/
 ---
 
 ## Q106167: Err Msg: Not Enough Server Storage is Available...

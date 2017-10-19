@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104817: Print Jobs Stay in Queue After Printing"
-permalink: kb/104/Q104817/
+permalink: /kb/104/Q104817/
 ---
 
 ## Q104817: Print Jobs Stay in Queue After Printing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170428: IIS Components Have to be Removed from the IIS Setup Program"
-permalink: kb/170/Q170428/
+permalink: /kb/170/Q170428/
 ---
 
 ## Q170428: IIS Components Have to be Removed from the IIS Setup Program

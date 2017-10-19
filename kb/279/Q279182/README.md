@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279182: FIX: Replace Write Ignored When Make Writable Is Enabled"
-permalink: kb/279/Q279182/
+permalink: /kb/279/Q279182/
 ---
 
 ## Q279182: FIX: Replace Write Ignored When Make Writable Is Enabled

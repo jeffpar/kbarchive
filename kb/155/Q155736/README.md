@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155736: CD Player Seems to Hang with Multiple-CD Changer"
-permalink: kb/155/Q155736/
+permalink: /kb/155/Q155736/
 ---
 
 ## Q155736: CD Player Seems to Hang with Multiple-CD Changer

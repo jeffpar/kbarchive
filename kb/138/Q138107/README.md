@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138107: PRB: Standard Toolbar Visible in .Exe"
-permalink: kb/138/Q138107/
+permalink: /kb/138/Q138107/
 ---
 
 ## Q138107: PRB: Standard Toolbar Visible in .Exe

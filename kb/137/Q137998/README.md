@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137998: XFOR: Messages to Mac Users Not Processed in FIFO Order"
-permalink: kb/137/Q137998/
+permalink: /kb/137/Q137998/
 ---
 
 ## Q137998: XFOR: Messages to Mac Users Not Processed in FIFO Order

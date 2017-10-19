@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95102: MS-DOS: How to Combine All Logical Drives into One C Drive"
-permalink: kb/095/Q95102/
+permalink: /kb/095/Q95102/
 ---
 
 ## Q95102: MS-DOS: How to Combine All Logical Drives into One C Drive

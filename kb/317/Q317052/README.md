@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317052: HOW TO: Undo Changes Made by the IIS Lockdown Wizard"
-permalink: kb/317/Q317052/
+permalink: /kb/317/Q317052/
 ---
 
 ## Q317052: HOW TO: Undo Changes Made by the IIS Lockdown Wizard

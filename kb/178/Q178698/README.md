@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178698: XADM: Calendar Reminders Not Functioning After Move Mailbox"
-permalink: kb/178/Q178698/
+permalink: /kb/178/Q178698/
 ---
 
 ## Q178698: XADM: Calendar Reminders Not Functioning After Move Mailbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259022: XADM: Exchange Server Service Account Has Access to Any Mailbox"
-permalink: kb/259/Q259022/
+permalink: /kb/259/Q259022/
 ---
 
 ## Q259022: XADM: Exchange Server Service Account Has Access to Any Mailbox

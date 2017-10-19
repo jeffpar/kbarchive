@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164649: SNA Server Rejects Open (SSCP) for Pooled LU"
-permalink: kb/164/Q164649/
+permalink: /kb/164/Q164649/
 ---
 
 ## Q164649: SNA Server Rejects Open (SSCP) for Pooled LU

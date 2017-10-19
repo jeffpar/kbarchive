@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113156: MS-DOS 6.2 Step By Step p.xxi: Install Does Not Make Backup."
-permalink: kb/113/Q113156/
+permalink: /kb/113/Q113156/
 ---
 
 ## Q113156: MS-DOS 6.2 Step By Step p.xxi: Install Does Not Make Backup.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124182: Vacuum Tool Hangs Computer with Pro Audio Spectrum"
-permalink: kb/124/Q124182/
+permalink: /kb/124/Q124182/
 ---
 
 ## Q124182: Vacuum Tool Hangs Computer with Pro Audio Spectrum

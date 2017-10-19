@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69576: Testing for a Specific Error Level in Batch Files"
-permalink: kb/069/Q69576/
+permalink: /kb/069/Q69576/
 ---
 
 ## Q69576: Testing for a Specific Error Level in Batch Files

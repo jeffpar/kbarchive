@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200625: SMS: Licensed Software Listing Not Sorted by Header Buttons"
-permalink: kb/200/Q200625/
+permalink: /kb/200/Q200625/
 ---
 
 ## Q200625: SMS: Licensed Software Listing Not Sorted by Header Buttons

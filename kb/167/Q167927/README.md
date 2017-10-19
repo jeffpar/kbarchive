@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167927: PRB: Building ATL Service Project Does Not Register the Service"
-permalink: kb/167/Q167927/
+permalink: /kb/167/Q167927/
 ---
 
 ## Q167927: PRB: Building ATL Service Project Does Not Register the Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96534: PC WRmt: Password Problems and Switching Mail Drivers"
-permalink: kb/096/Q96534/
+permalink: /kb/096/Q96534/
 ---
 
 ## Q96534: PC WRmt: Password Problems and Switching Mail Drivers

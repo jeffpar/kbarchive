@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141120: BUG: FPNW &quot;error changing password&quot;"
-permalink: kb/141/Q141120/
+permalink: /kb/141/Q141120/
 ---
 
 ## Q141120: BUG: FPNW &quot;error changing password&quot;

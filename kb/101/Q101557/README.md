@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101557: MENUDEFAULT Timer Not Working in Submenus"
-permalink: kb/101/Q101557/
+permalink: /kb/101/Q101557/
 ---
 
 ## Q101557: MENUDEFAULT Timer Not Working in Submenus

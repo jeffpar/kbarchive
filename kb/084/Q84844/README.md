@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84844: PRB: Borland Turbo Debugger Cannot Load Windebug.dll"
-permalink: kb/084/Q84844/
+permalink: /kb/084/Q84844/
 ---
 
 ## Q84844: PRB: Borland Turbo Debugger Cannot Load Windebug.dll

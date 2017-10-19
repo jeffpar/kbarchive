@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151785: XCON: MTA Queue Blocked by NDR or Delivery Receipts"
-permalink: kb/151/Q151785/
+permalink: /kb/151/Q151785/
 ---
 
 ## Q151785: XCON: MTA Queue Blocked by NDR or Delivery Receipts

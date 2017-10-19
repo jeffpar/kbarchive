@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278245: 4-Part Linked Server Queries via DB2OLEDB May Cause Exception"
-permalink: kb/278/Q278245/
+permalink: /kb/278/Q278245/
 ---
 
 ## Q278245: 4-Part Linked Server Queries via DB2OLEDB May Cause Exception

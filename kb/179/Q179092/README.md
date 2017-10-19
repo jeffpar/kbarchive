@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179092: NWLNKIPX Sends Broadcast RIPX Packets Over the Network"
-permalink: kb/179/Q179092/
+permalink: /kb/179/Q179092/
 ---
 
 ## Q179092: NWLNKIPX Sends Broadcast RIPX Packets Over the Network

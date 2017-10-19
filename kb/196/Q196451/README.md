@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196451: Unicode Lithuanian S-caron and s-caron Print Incorrectly"
-permalink: kb/196/Q196451/
+permalink: /kb/196/Q196451/
 ---
 
 ## Q196451: Unicode Lithuanian S-caron and s-caron Print Incorrectly

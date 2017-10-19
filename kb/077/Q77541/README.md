@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77541: NETLOGON.PRO in LAN Manager 2.0 Doesn't Load in Control Panel"
-permalink: kb/077/Q77541/
+permalink: /kb/077/Q77541/
 ---
 
 ## Q77541: NETLOGON.PRO in LAN Manager 2.0 Doesn't Load in Control Panel

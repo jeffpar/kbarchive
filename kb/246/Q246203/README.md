@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246203: XWEB: Configuring OWA Outside the Default Web Site"
-permalink: kb/246/Q246203/
+permalink: /kb/246/Q246203/
 ---
 
 ## Q246203: XWEB: Configuring OWA Outside the Default Web Site

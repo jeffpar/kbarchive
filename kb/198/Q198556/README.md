@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198556: PRB: Converted Form Has Large Page Frame"
-permalink: kb/198/Q198556/
+permalink: /kb/198/Q198556/
 ---
 
 ## Q198556: PRB: Converted Form Has Large Page Frame

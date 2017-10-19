@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196503: WD97: Word Link to Microsoft Excel Shows Unexpected Information"
-permalink: kb/196/Q196503/
+permalink: /kb/196/Q196503/
 ---
 
 ## Q196503: WD97: Word Link to Microsoft Excel Shows Unexpected Information

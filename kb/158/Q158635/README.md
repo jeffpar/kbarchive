@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158635: Netware Enabled User Unable to Logon to FPNW Server"
-permalink: kb/158/Q158635/
+permalink: /kb/158/Q158635/
 ---
 
 ## Q158635: Netware Enabled User Unable to Logon to FPNW Server

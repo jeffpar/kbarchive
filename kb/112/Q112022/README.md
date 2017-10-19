@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112022: Mac Client Cannot Print After Service Pack 2 is Installed"
-permalink: kb/112/Q112022/
+permalink: /kb/112/Q112022/
 ---
 
 ## Q112022: Mac Client Cannot Print After Service Pack 2 is Installed

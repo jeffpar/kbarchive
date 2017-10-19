@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137296: Adding Additional Logical Print Server Ports for FPNW"
-permalink: kb/137/Q137296/
+permalink: /kb/137/Q137296/
 ---
 
 ## Q137296: Adding Additional Logical Print Server Ports for FPNW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81606: Disabling the Startup Group in Windows"
-permalink: kb/081/Q81606/
+permalink: /kb/081/Q81606/
 ---
 
 ## Q81606: Disabling the Startup Group in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88105: INFO: Explanation of Two-Phase Construction in MFC"
-permalink: kb/088/Q88105/
+permalink: /kb/088/Q88105/
 ---
 
 ## Q88105: INFO: Explanation of Two-Phase Construction in MFC

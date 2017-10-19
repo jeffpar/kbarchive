@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314532: XWEB: Troubleshooting Blank Message Bodies in Outlook Web Access"
-permalink: kb/314/Q314532/
+permalink: /kb/314/Q314532/
 ---
 
 ## Q314532: XWEB: Troubleshooting Blank Message Bodies in Outlook Web Access

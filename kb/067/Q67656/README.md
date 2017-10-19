@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67656: Zenith ZBF-3339-EK 16 MHz 386 Conflict w/ Server Services"
-permalink: kb/067/Q67656/
+permalink: /kb/067/Q67656/
 ---
 
 ## Q67656: Zenith ZBF-3339-EK 16 MHz 386 Conflict w/ Server Services

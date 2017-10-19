@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135517: How to Attach a Menu to a Form"
-permalink: kb/135/Q135517/
+permalink: /kb/135/Q135517/
 ---
 
 ## Q135517: How to Attach a Menu to a Form

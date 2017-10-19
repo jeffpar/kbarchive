@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127051: Troubleshooting Problems Using RAS_SENDER with Remote Control"
-permalink: kb/127/Q127051/
+permalink: /kb/127/Q127051/
 ---
 
 ## Q127051: Troubleshooting Problems Using RAS_SENDER with Remote Control

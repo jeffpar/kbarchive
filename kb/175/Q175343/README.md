@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175343: Age Of Empires: List of Enhancement (Cheat) Codes"
-permalink: kb/175/Q175343/
+permalink: /kb/175/Q175343/
 ---
 
 ## Q175343: Age Of Empires: List of Enhancement (Cheat) Codes

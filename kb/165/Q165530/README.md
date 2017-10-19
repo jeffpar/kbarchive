@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165530: WD97: ODMA TeamLinks: Cannot Open Reserved File"
-permalink: kb/165/Q165530/
+permalink: /kb/165/Q165530/
 ---
 
 ## Q165530: WD97: ODMA TeamLinks: Cannot Open Reserved File

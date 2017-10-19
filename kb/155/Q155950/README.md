@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155950: WD97: Document Map Width Not Retained"
-permalink: kb/155/Q155950/
+permalink: /kb/155/Q155950/
 ---
 
 ## Q155950: WD97: Document Map Width Not Retained

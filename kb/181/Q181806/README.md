@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181806: Services Configured with an Account and Password May Not Start"
-permalink: kb/181/Q181806/
+permalink: /kb/181/Q181806/
 ---
 
 ## Q181806: Services Configured with an Account and Password May Not Start

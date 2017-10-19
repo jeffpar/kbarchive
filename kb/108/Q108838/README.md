@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q108838: PC Gen: PODIAG.INI Entries in [Directory Synchronization]"
-permalink: kb/108/Q108838/
+title: "Q108838: PC Gen: PODIAG.INI Entries in &#91;Directory Synchronization&#93;"
+permalink: /kb/108/Q108838/
 ---
 
-## Q108838: PC Gen: PODIAG.INI Entries in [Directory Synchronization]
+## Q108838: PC Gen: PODIAG.INI Entries in &#91;Directory Synchronization&#93;
 
 	Article: Q108838
 	Product(s): Microsoft Mail For PC Networks

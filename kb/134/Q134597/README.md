@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134597: BREAK and VERIFY Commands Do Not Work in MS-DOS Window"
-permalink: kb/134/Q134597/
+permalink: /kb/134/Q134597/
 ---
 
 ## Q134597: BREAK and VERIFY Commands Do Not Work in MS-DOS Window

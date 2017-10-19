@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130486: PRB: LNK2001 on Pure Virtual Operator="
-permalink: kb/130/Q130486/
+permalink: /kb/130/Q130486/
 ---
 
 ## Q130486: PRB: LNK2001 on Pure Virtual Operator=

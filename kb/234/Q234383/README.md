@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234383: XCON: GroupWise Router Doesn't Stop w. Connectivity Controller"
-permalink: kb/234/Q234383/
+permalink: /kb/234/Q234383/
 ---
 
 ## Q234383: XCON: GroupWise Router Doesn't Stop w. Connectivity Controller

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141430: Bookshelf 1995: QuickShelf Toolbar Overlaps Office Toolbar"
-permalink: kb/141/Q141430/
+permalink: /kb/141/Q141430/
 ---
 
 ## Q141430: Bookshelf 1995: QuickShelf Toolbar Overlaps Office Toolbar

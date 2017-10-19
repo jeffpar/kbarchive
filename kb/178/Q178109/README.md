@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178109: Roving Profiles for Windows 95 Clients Stop Working"
-permalink: kb/178/Q178109/
+permalink: /kb/178/Q178109/
 ---
 
 ## Q178109: Roving Profiles for Windows 95 Clients Stop Working

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167736: MFC ISAPI Generates Access Violation in CHtmlStream.Detach"
-permalink: kb/167/Q167736/
+permalink: /kb/167/Q167736/
 ---
 
 ## Q167736: MFC ISAPI Generates Access Violation in CHtmlStream.Detach

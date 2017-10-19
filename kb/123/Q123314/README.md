@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123314: Frame Type Entries for NWLink Must Appear in Uppercase"
-permalink: kb/123/Q123314/
+permalink: /kb/123/Q123314/
 ---
 
 ## Q123314: Frame Type Entries for NWLink Must Appear in Uppercase

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126037: Problems with Pivot Functions on Radius Pivot Monitors"
-permalink: kb/126/Q126037/
+permalink: /kb/126/Q126037/
 ---
 
 ## Q126037: Problems with Pivot Functions on Radius Pivot Monitors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183239: Application Exception in Rasman.exe in Function SnaRasUnbind()"
-permalink: kb/183/Q183239/
+permalink: /kb/183/Q183239/
 ---
 
 ## Q183239: Application Exception in Rasman.exe in Function SnaRasUnbind()

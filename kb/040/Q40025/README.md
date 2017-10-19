@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40025: Problem Printing Multiple Cards on Tractor-Feed Cards"
-permalink: kb/040/Q40025/
+permalink: /kb/040/Q40025/
 ---
 
 ## Q40025: Problem Printing Multiple Cards on Tractor-Feed Cards

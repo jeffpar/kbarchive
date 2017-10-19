@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90320: How To: File Handles Open When WFWG Server Is Down"
-permalink: kb/090/Q90320/
+permalink: /kb/090/Q90320/
 ---
 
 ## Q90320: How To: File Handles Open When WFWG Server Is Down

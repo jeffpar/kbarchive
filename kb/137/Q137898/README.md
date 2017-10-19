@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137898: PRB: Visual Basic 4.0 Can't Interpret SCODE Parameter"
-permalink: kb/137/Q137898/
+permalink: /kb/137/Q137898/
 ---
 
 ## Q137898: PRB: Visual Basic 4.0 Can't Interpret SCODE Parameter

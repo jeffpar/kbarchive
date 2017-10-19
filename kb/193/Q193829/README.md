@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193829: SNAPMP Memory Leak After Host-Initiated Password Change"
-permalink: kb/193/Q193829/
+permalink: /kb/193/Q193829/
 ---
 
 ## Q193829: SNAPMP Memory Leak After Host-Initiated Password Change

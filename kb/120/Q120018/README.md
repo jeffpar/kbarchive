@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120018: Err Msg: Volume Corrupt when NTFS Volume Exceeds 1 Million"
-permalink: kb/120/Q120018/
+permalink: /kb/120/Q120018/
 ---
 
 ## Q120018: Err Msg: Volume Corrupt when NTFS Volume Exceeds 1 Million

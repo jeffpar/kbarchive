@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160041: HOWTO: Modify the Windows Default Cursor"
-permalink: kb/160/Q160041/
+permalink: /kb/160/Q160041/
 ---
 
 ## Q160041: HOWTO: Modify the Windows Default Cursor

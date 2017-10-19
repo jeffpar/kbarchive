@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134361: MSN Error Message: Unable to Set the Internet Phone Number..."
-permalink: kb/134/Q134361/
+permalink: /kb/134/Q134361/
 ---
 
 ## Q134361: MSN Error Message: Unable to Set the Internet Phone Number...

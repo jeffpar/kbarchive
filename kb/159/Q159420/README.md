@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159420: Mac Encarta 97: Trouble Downloading/Integrating Yearbook Update"
-permalink: kb/159/Q159420/
+permalink: /kb/159/Q159420/
 ---
 
 ## Q159420: Mac Encarta 97: Trouble Downloading/Integrating Yearbook Update

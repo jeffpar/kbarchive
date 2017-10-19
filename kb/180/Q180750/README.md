@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180750: PRB: ShowInTaskBar Forms Still Appear When Set to False"
-permalink: kb/180/Q180750/
+permalink: /kb/180/Q180750/
 ---
 
 ## Q180750: PRB: ShowInTaskBar Forms Still Appear When Set to False

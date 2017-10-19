@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59540: &quot;No Symbolic Information&quot; May Be Caused by Wrong Linker"
-permalink: kb/059/Q59540/
+permalink: /kb/059/Q59540/
 ---
 
 ## Q59540: &quot;No Symbolic Information&quot; May Be Caused by Wrong Linker

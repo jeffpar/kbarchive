@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87291: Windows Workstation Requires Version 4.1"
-permalink: kb/087/Q87291/
+permalink: /kb/087/Q87291/
 ---
 
 ## Q87291: Windows Workstation Requires Version 4.1

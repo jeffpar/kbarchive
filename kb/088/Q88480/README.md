@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88480: Some Video Seven Drivers Cause Display Problems"
-permalink: kb/088/Q88480/
+permalink: /kb/088/Q88480/
 ---
 
 ## Q88480: Some Video Seven Drivers Cause Display Problems

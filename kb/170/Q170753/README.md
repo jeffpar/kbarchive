@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170753: Window Focus Set to Invoke Wrong 16-bit Application Through DDE"
-permalink: kb/170/Q170753/
+permalink: /kb/170/Q170753/
 ---
 
 ## Q170753: Window Focus Set to Invoke Wrong 16-bit Application Through DDE

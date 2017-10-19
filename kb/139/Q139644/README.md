@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139644: XCLN: Err Msg: Items cannot be transferred or deleted..."
-permalink: kb/139/Q139644/
+permalink: /kb/139/Q139644/
 ---
 
 ## Q139644: XCLN: Err Msg: Items cannot be transferred or deleted...

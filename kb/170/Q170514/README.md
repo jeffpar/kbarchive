@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170514: FIX: Bad Codegen with /Og and FP Mult in Class with Virtual Dtor"
-permalink: kb/170/Q170514/
+permalink: /kb/170/Q170514/
 ---
 
 ## Q170514: FIX: Bad Codegen with /Og and FP Mult in Class with Virtual Dtor

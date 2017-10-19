@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193238: HOWTO: Run Automation Manager as a Windows NT Service"
-permalink: kb/193/Q193238/
+permalink: /kb/193/Q193238/
 ---
 
 ## Q193238: HOWTO: Run Automation Manager as a Windows NT Service

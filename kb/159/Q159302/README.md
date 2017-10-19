@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159302: XCLN: Exchange Server Push Notifications Generate ICMP Messages"
-permalink: kb/159/Q159302/
+permalink: /kb/159/Q159302/
 ---
 
 ## Q159302: XCLN: Exchange Server Push Notifications Generate ICMP Messages

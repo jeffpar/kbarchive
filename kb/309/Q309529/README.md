@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309529: The CASE_IGNORE_NAME Line Has No Effect"
-permalink: kb/309/Q309529/
+permalink: /kb/309/Q309529/
 ---
 
 ## Q309529: The CASE_IGNORE_NAME Line Has No Effect

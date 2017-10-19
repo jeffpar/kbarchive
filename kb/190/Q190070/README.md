@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190070: PRB: Old ACCESS/ASSIGN Refs Remain on Property Name Change"
-permalink: kb/190/Q190070/
+permalink: /kb/190/Q190070/
 ---
 
 ## Q190070: PRB: Old ACCESS/ASSIGN Refs Remain on Property Name Change

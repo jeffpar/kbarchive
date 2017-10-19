@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89330: Complete Text PW0563: Display Compatibility Testing"
-permalink: kb/089/Q89330/
+permalink: /kb/089/Q89330/
 ---
 
 ## Q89330: Complete Text PW0563: Display Compatibility Testing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304714: &quot;Client Could Not Establish a Connection to the Remote Computer&quot;"
-permalink: kb/304/Q304714/
+permalink: /kb/304/Q304714/
 ---
 
 ## Q304714: &quot;Client Could Not Establish a Connection to the Remote Computer&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128606: Network Connectivity Problems with NetFlex-L ENET/PCI NIC"
-permalink: kb/128/Q128606/
+permalink: /kb/128/Q128606/
 ---
 
 ## Q128606: Network Connectivity Problems with NetFlex-L ENET/PCI NIC

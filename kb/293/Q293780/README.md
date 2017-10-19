@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293780: Type-Ahead Disabled in Upgrading to SNA Server 4.0 SP3 or Later"
-permalink: kb/293/Q293780/
+permalink: /kb/293/Q293780/
 ---
 
 ## Q293780: Type-Ahead Disabled in Upgrading to SNA Server 4.0 SP3 or Later

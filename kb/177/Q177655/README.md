@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177655: Negative Values in Performance Monitor Data"
-permalink: kb/177/Q177655/
+permalink: /kb/177/Q177655/
 ---
 
 ## Q177655: Negative Values in Performance Monitor Data

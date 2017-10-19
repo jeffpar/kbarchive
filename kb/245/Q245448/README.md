@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245448: WNet Calls Require Fully Qualified User Name"
-permalink: kb/245/Q245448/
+permalink: /kb/245/Q245448/
 ---
 
 ## Q245448: WNet Calls Require Fully Qualified User Name

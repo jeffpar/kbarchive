@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259994: StarLancer: Description of Multiplayer Games"
-permalink: kb/259/Q259994/
+permalink: /kb/259/Q259994/
 ---
 
 ## Q259994: StarLancer: Description of Multiplayer Games

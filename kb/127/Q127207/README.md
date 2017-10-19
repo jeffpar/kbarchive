@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127207: Missing Objects and Counters in Performance Monitor"
-permalink: kb/127/Q127207/
+permalink: /kb/127/Q127207/
 ---
 
 ## Q127207: Missing Objects and Counters in Performance Monitor

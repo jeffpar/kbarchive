@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142838: PRB: DBList BoundText Property Ignored with Table Type"
-permalink: kb/142/Q142838/
+permalink: /kb/142/Q142838/
 ---
 
 ## Q142838: PRB: DBList BoundText Property Ignored with Table Type

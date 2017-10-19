@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310326: DOC: SourceSafe - Change Password Topic in Help is Incorrect"
-permalink: kb/310/Q310326/
+permalink: /kb/310/Q310326/
 ---
 
 ## Q310326: DOC: SourceSafe - Change Password Topic in Help is Incorrect

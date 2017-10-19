@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90389: NET STOP Command from MS-DOS Command Prompt Hangs WFWG"
-permalink: kb/090/Q90389/
+permalink: /kb/090/Q90389/
 ---
 
 ## Q90389: NET STOP Command from MS-DOS Command Prompt Hangs WFWG

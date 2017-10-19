@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132578: Incorrect Error When Attempting Remote Administration"
-permalink: kb/132/Q132578/
+permalink: /kb/132/Q132578/
 ---
 
 ## Q132578: Incorrect Error When Attempting Remote Administration

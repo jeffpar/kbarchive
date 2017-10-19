@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85540: Sending a Break Sequence in Terminal"
-permalink: kb/085/Q85540/
+permalink: /kb/085/Q85540/
 ---
 
 ## Q85540: Sending a Break Sequence in Terminal

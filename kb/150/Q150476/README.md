@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150476: MSB Ocean: Hangs at the Beach After Playing About 30 Times"
-permalink: kb/150/Q150476/
+permalink: /kb/150/Q150476/
 ---
 
 ## Q150476: MSB Ocean: Hangs at the Beach After Playing About 30 Times

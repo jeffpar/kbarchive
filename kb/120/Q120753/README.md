@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120753: WINS Manager Disappears or Closes Suddenly"
-permalink: kb/120/Q120753/
+permalink: /kb/120/Q120753/
 ---
 
 ## Q120753: WINS Manager Disappears or Closes Suddenly

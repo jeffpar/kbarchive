@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145905: XCLN: Newprof.exe Command-Line Options"
-permalink: kb/145/Q145905/
+permalink: /kb/145/Q145905/
 ---
 
 ## Q145905: XCLN: Newprof.exe Command-Line Options

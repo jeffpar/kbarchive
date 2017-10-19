@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111605: BUG: LoadResource() GP Faults When Passed an Invalid HRSRC"
-permalink: kb/111/Q111605/
+permalink: /kb/111/Q111605/
 ---
 
 ## Q111605: BUG: LoadResource() GP Faults When Passed an Invalid HRSRC

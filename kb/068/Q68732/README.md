@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68732: Emulation Modes for Radio Shack Tandy Printers"
-permalink: kb/068/Q68732/
+permalink: /kb/068/Q68732/
 ---
 
 ## Q68732: Emulation Modes for Radio Shack Tandy Printers

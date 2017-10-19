@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66989: KbHook.exe Demos Keyboard Hook Function Keyboard Filter"
-permalink: kb/066/Q66989/
+permalink: /kb/066/Q66989/
 ---
 
 ## Q66989: KbHook.exe Demos Keyboard Hook Function Keyboard Filter

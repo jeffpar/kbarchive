@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100815: FoxCentral Default Directory Doesn't Affect FoxBASE+'s"
-permalink: kb/100/Q100815/
+permalink: /kb/100/Q100815/
 ---
 
 ## Q100815: FoxCentral Default Directory Doesn't Affect FoxBASE+'s

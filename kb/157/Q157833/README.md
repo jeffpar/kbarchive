@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157833: WD97: &quot;PAGE &#92;#...&quot; Displays in ScreenTip for Comments"
-permalink: kb/157/Q157833/
+permalink: /kb/157/Q157833/
 ---
 
 ## Q157833: WD97: &quot;PAGE &#92;#...&quot; Displays in ScreenTip for Comments

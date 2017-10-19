@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132827: Windows 95 MS-DOS Editor CTRL+Q+Y Functionality Same as CTRL+Y"
-permalink: kb/132/Q132827/
+permalink: /kb/132/Q132827/
 ---
 
 ## Q132827: Windows 95 MS-DOS Editor CTRL+Q+Y Functionality Same as CTRL+Y

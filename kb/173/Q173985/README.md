@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173985: Flight Simulator 98: Minimum System Requirements"
-permalink: kb/173/Q173985/
+permalink: /kb/173/Q173985/
 ---
 
 ## Q173985: Flight Simulator 98: Minimum System Requirements

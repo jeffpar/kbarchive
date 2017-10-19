@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134204: PC Win: How to Export a Personal Address Book to a New MMF"
-permalink: kb/134/Q134204/
+permalink: /kb/134/Q134204/
 ---
 
 ## Q134204: PC Win: How to Export a Personal Address Book to a New MMF

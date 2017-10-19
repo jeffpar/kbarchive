@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59921: Mac Hyp: getUrgent Returns True if Sender Specified Urgent"
-permalink: kb/059/Q59921/
+permalink: /kb/059/Q59921/
 ---
 
 ## Q59921: Mac Hyp: getUrgent Returns True if Sender Specified Urgent

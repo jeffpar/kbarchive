@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35937: Equal-Sign Characters in Environment Variables"
-permalink: kb/035/Q35937/
+permalink: /kb/035/Q35937/
 ---
 
 ## Q35937: Equal-Sign Characters in Environment Variables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182377: XFOR: OnJoin and OnPart Messages Not Displayed with Chat Client"
-permalink: kb/182/Q182377/
+permalink: /kb/182/Q182377/
 ---
 
 ## Q182377: XFOR: OnJoin and OnPart Messages Not Displayed with Chat Client

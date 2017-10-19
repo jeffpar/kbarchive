@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93478: WFWG May Hang Loading in Enhanced Mode Without a Terminator"
-permalink: kb/093/Q93478/
+permalink: /kb/093/Q93478/
 ---
 
 ## Q93478: WFWG May Hang Loading in Enhanced Mode Without a Terminator

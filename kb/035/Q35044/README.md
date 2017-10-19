@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35044: Microsoft LINK Return Codes"
-permalink: kb/035/Q35044/
+permalink: /kb/035/Q35044/
 ---
 
 ## Q35044: Microsoft LINK Return Codes

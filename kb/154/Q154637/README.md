@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154637: Computer Hangs with Mitsumi CD-ROM Drive"
-permalink: kb/154/Q154637/
+permalink: /kb/154/Q154637/
 ---
 
 ## Q154637: Computer Hangs with Mitsumi CD-ROM Drive

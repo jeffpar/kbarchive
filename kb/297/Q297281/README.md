@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297281: XADM: Out of Office Message Is Not Sent"
-permalink: kb/297/Q297281/
+permalink: /kb/297/Q297281/
 ---
 
 ## Q297281: XADM: Out of Office Message Is Not Sent

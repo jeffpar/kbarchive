@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138212: Mastering VB Err Msg: Setup Not Completed Successfully"
-permalink: kb/138/Q138212/
+permalink: /kb/138/Q138212/
 ---
 
 ## Q138212: Mastering VB Err Msg: Setup Not Completed Successfully

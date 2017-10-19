@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68927: Effect of Spawning COMMAND.COM on the Environment"
-permalink: kb/068/Q68927/
+permalink: /kb/068/Q68927/
 ---
 
 ## Q68927: Effect of Spawning COMMAND.COM on the Environment

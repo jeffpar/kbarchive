@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188552: BUG: UserControl's ContainedControls Do Not Inherit ScaleMode"
-permalink: kb/188/Q188552/
+permalink: /kb/188/Q188552/
 ---
 
 ## Q188552: BUG: UserControl's ContainedControls Do Not Inherit ScaleMode

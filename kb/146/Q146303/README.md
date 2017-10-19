@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146303: How to Manipulate Unloaded Registry Hives Using RegFind"
-permalink: kb/146/Q146303/
+permalink: /kb/146/Q146303/
 ---
 
 ## Q146303: How to Manipulate Unloaded Registry Hives Using RegFind

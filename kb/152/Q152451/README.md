@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152451: Applications Run from the Schedule Service Fail to Print"
-permalink: kb/152/Q152451/
+permalink: /kb/152/Q152451/
 ---
 
 ## Q152451: Applications Run from the Schedule Service Fail to Print

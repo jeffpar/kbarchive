@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261184: SMS: Tlist Causes Backup to Hang"
-permalink: kb/261/Q261184/
+permalink: /kb/261/Q261184/
 ---
 
 ## Q261184: SMS: Tlist Causes Backup to Hang

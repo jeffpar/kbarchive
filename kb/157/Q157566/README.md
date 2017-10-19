@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157566: STL Sample for the Predicate Version of the includes Function"
-permalink: kb/157/Q157566/
+permalink: /kb/157/Q157566/
 ---
 
 ## Q157566: STL Sample for the Predicate Version of the includes Function

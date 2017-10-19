@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185435: How to Establish AFTP Connectivity to an AS/400 or Mainframe"
-permalink: kb/185/Q185435/
+permalink: /kb/185/Q185435/
 ---
 
 ## Q185435: How to Establish AFTP Connectivity to an AS/400 or Mainframe

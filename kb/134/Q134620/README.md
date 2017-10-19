@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134620: FIX: Error in Converter: Variable Gendircount Not Found"
-permalink: kb/134/Q134620/
+permalink: /kb/134/Q134620/
 ---
 
 ## Q134620: FIX: Error in Converter: Variable Gendircount Not Found

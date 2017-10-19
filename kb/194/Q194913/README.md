@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194913: BUG: VB/VBA Do Not Understand MIDL IUnknown&#42;&#42; Data Type"
-permalink: kb/194/Q194913/
+permalink: /kb/194/Q194913/
 ---
 
 ## Q194913: BUG: VB/VBA Do Not Understand MIDL IUnknown&#42;&#42; Data Type

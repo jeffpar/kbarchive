@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156285: Windows NT Setup Does Not Detect or Install Sound Cards"
-permalink: kb/156/Q156285/
+permalink: /kb/156/Q156285/
 ---
 
 ## Q156285: Windows NT Setup Does Not Detect or Install Sound Cards

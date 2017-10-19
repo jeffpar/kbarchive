@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190122: Err Msg: Please Insert the Disk Labeled: 'Generic FDC Driver...'"
-permalink: kb/190/Q190122/
+permalink: /kb/190/Q190122/
 ---
 
 ## Q190122: Err Msg: Please Insert the Disk Labeled: 'Generic FDC Driver...'

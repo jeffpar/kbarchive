@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131249: Cannot Post BBS Message with Copied Attachment"
-permalink: kb/131/Q131249/
+permalink: /kb/131/Q131249/
 ---
 
 ## Q131249: Cannot Post BBS Message with Copied Attachment

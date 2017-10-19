@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280532: SMS: Client Service Does Not Start on Windows 2000 Professional"
-permalink: kb/280/Q280532/
+permalink: /kb/280/Q280532/
 ---
 
 ## Q280532: SMS: Client Service Does Not Start on Windows 2000 Professional

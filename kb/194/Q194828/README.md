@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194828: Combat Flight Simulator: Cannot Open Dialog Boxes in Program"
-permalink: kb/194/Q194828/
+permalink: /kb/194/Q194828/
 ---
 
 ## Q194828: Combat Flight Simulator: Cannot Open Dialog Boxes in Program

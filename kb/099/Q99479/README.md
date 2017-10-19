@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99479: How to Modify MODEMS.INF for Non-Standard Modems"
-permalink: kb/099/Q99479/
+permalink: /kb/099/Q99479/
 ---
 
 ## Q99479: How to Modify MODEMS.INF for Non-Standard Modems

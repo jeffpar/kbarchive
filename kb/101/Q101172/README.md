@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101172: MemMaker May Hang with the Bus Logic SCSI Controller Driver"
-permalink: kb/101/Q101172/
+permalink: /kb/101/Q101172/
 ---
 
 ## Q101172: MemMaker May Hang with the Bus Logic SCSI Controller Driver

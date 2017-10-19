@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124743: Cannot Manually Define Baud Rate for COM Ports"
-permalink: kb/124/Q124743/
+permalink: /kb/124/Q124743/
 ---
 
 ## Q124743: Cannot Manually Define Baud Rate for COM Ports

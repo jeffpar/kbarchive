@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149592: PPT7: .pps Files Fail to Start in Slide Show"
-permalink: kb/149/Q149592/
+permalink: /kb/149/Q149592/
 ---
 
 ## Q149592: PPT7: .pps Files Fail to Start in Slide Show

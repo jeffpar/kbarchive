@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107101: X400: Err Msg: Mailbox Can Be Mapped Once in an Address"
-permalink: kb/107/Q107101/
+permalink: /kb/107/Q107101/
 ---
 
 ## Q107101: X400: Err Msg: Mailbox Can Be Mapped Once in an Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258622: Baseball 2001: Graphics Are Too Bright or Pale and Washed Out"
-permalink: kb/258/Q258622/
+permalink: /kb/258/Q258622/
 ---
 
 ## Q258622: Baseball 2001: Graphics Are Too Bright or Pale and Washed Out

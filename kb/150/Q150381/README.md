@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150381: Windows NT Internet Explorer 1.5 Overview and Release Notes"
-permalink: kb/150/Q150381/
+permalink: /kb/150/Q150381/
 ---
 
 ## Q150381: Windows NT Internet Explorer 1.5 Overview and Release Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116042: Compatibility Layer Doesn't Support Some Paradox 4.x Types"
-permalink: kb/116/Q116042/
+permalink: /kb/116/Q116042/
 ---
 
 ## Q116042: Compatibility Layer Doesn't Support Some Paradox 4.x Types

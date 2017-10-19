@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81524: Description of Files Included with Windows Version 3.0"
-permalink: kb/081/Q81524/
+permalink: /kb/081/Q81524/
 ---
 
 ## Q81524: Description of Files Included with Windows Version 3.0

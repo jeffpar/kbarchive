@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136946: FIX: No RightClick Event For ToolBars, Containers, or Controls"
-permalink: kb/136/Q136946/
+permalink: /kb/136/Q136946/
 ---
 
 ## Q136946: FIX: No RightClick Event For ToolBars, Containers, or Controls

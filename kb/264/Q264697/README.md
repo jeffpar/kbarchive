@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264697: SMSINST: Create Service Script Action Doesn't Grant Nec. Right"
-permalink: kb/264/Q264697/
+permalink: /kb/264/Q264697/
 ---
 
 ## Q264697: SMSINST: Create Service Script Action Doesn't Grant Nec. Right

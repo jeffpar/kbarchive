@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257658: BUG: BatchCollisionCount Incorrect After BatchUpdate to SQL 7.0"
-permalink: kb/257/Q257658/
+permalink: /kb/257/Q257658/
 ---
 
 ## Q257658: BUG: BatchCollisionCount Incorrect After BatchUpdate to SQL 7.0

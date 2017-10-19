@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171062: XCON: Exchange RAS Does Not Support Windows NT Multilink"
-permalink: kb/171/Q171062/
+permalink: /kb/171/Q171062/
 ---
 
 ## Q171062: XCON: Exchange RAS Does Not Support Windows NT Multilink

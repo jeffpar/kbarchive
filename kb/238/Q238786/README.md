@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238786: HOWTO: Perform Remote Debugging With VB DCOM Servers"
-permalink: kb/238/Q238786/
+permalink: /kb/238/Q238786/
 ---
 
 ## Q238786: HOWTO: Perform Remote Debugging With VB DCOM Servers

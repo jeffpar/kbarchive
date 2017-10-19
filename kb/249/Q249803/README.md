@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249803: BUG: Unicode Issue: Using MFC ODBC w/ the SQL Server ODBC Driver"
-permalink: kb/249/Q249803/
+permalink: /kb/249/Q249803/
 ---
 
 ## Q249803: BUG: Unicode Issue: Using MFC ODBC w/ the SQL Server ODBC Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122900: Can't Use Periods in DNS Host Names"
-permalink: kb/122/Q122900/
+permalink: /kb/122/Q122900/
 ---
 
 ## Q122900: Can't Use Periods in DNS Host Names

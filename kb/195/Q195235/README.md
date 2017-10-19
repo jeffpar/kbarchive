@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195235: BUG: Caret Disappears After Tabbing From a Windowless TextBox"
-permalink: kb/195/Q195235/
+permalink: /kb/195/Q195235/
 ---
 
 ## Q195235: BUG: Caret Disappears After Tabbing From a Windowless TextBox

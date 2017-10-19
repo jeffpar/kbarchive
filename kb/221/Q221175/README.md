@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221175: INFO: Visual SourceSafe 6 Installation Creates Registry Entries"
-permalink: kb/221/Q221175/
+permalink: /kb/221/Q221175/
 ---
 
 ## Q221175: INFO: Visual SourceSafe 6 Installation Creates Registry Entries

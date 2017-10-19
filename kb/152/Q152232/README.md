@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152232: Backup Database Option Grayed When Selecting Remote WINS Server"
-permalink: kb/152/Q152232/
+permalink: /kb/152/Q152232/
 ---
 
 ## Q152232: Backup Database Option Grayed When Selecting Remote WINS Server

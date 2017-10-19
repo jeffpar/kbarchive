@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89666: PRB: &quot;Too Many PICTURE Characters Specified&quot; Error Cause"
-permalink: kb/089/Q89666/
+permalink: /kb/089/Q89666/
 ---
 
 ## Q89666: PRB: &quot;Too Many PICTURE Characters Specified&quot; Error Cause

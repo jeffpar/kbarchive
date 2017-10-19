@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139784: RUI_READ Enhancement for Receiving Large RUs"
-permalink: kb/139/Q139784/
+permalink: /kb/139/Q139784/
 ---
 
 ## Q139784: RUI_READ Enhancement for Receiving Large RUs

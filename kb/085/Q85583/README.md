@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85583: No Typeover Feature with Write, Cardfile, Notepad, or Calendar"
-permalink: kb/085/Q85583/
+permalink: /kb/085/Q85583/
 ---
 
 ## Q85583: No Typeover Feature with Write, Cardfile, Notepad, or Calendar

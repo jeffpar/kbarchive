@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150866: XADM: Location of Microsoft Exchange Books OnLine"
-permalink: kb/150/Q150866/
+permalink: /kb/150/Q150866/
 ---
 
 ## Q150866: XADM: Location of Microsoft Exchange Books OnLine

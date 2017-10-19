@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186294: Schedule+ Week Numbering Incorrect in Monthly View"
-permalink: kb/186/Q186294/
+permalink: /kb/186/Q186294/
 ---
 
 ## Q186294: Schedule+ Week Numbering Incorrect in Monthly View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150295: Group Names and Using NET GROUP Utility"
-permalink: kb/150/Q150295/
+permalink: /kb/150/Q150295/
 ---
 
 ## Q150295: Group Names and Using NET GROUP Utility

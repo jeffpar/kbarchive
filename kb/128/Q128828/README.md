@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128828: PC Ext: DrivesDynamic Problems with Station Restrictions"
-permalink: kb/128/Q128828/
+permalink: /kb/128/Q128828/
 ---
 
 ## Q128828: PC Ext: DrivesDynamic Problems with Station Restrictions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116341: Characters Change When Pasted into 16-bit Applications"
-permalink: kb/116/Q116341/
+permalink: /kb/116/Q116341/
 ---
 
 ## Q116341: Characters Change When Pasted into 16-bit Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273825: SMS: Remote.exe Generates Access Violation When Selecting Help"
-permalink: kb/273/Q273825/
+permalink: /kb/273/Q273825/
 ---
 
 ## Q273825: SMS: Remote.exe Generates Access Violation When Selecting Help

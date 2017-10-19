@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217176: HOWTO: Display and Use the OLE Insert Object Dialog Box in VB"
-permalink: kb/217/Q217176/
+permalink: /kb/217/Q217176/
 ---
 
 ## Q217176: HOWTO: Display and Use the OLE Insert Object Dialog Box in VB

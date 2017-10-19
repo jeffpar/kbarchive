@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149467: Unable to Install New Software in Windows 95"
-permalink: kb/149/Q149467/
+permalink: /kb/149/Q149467/
 ---
 
 ## Q149467: Unable to Install New Software in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126713: Resetting Default Access Controls on Selected Registry Keys"
-permalink: kb/126/Q126713/
+permalink: /kb/126/Q126713/
 ---
 
 ## Q126713: Resetting Default Access Controls on Selected Registry Keys

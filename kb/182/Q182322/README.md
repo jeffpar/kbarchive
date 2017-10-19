@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182322: SNMP Appends Garbage to Data in Response to SNMP Get"
-permalink: kb/182/Q182322/
+permalink: /kb/182/Q182322/
 ---
 
 ## Q182322: SNMP Appends Garbage to Data in Response to SNMP Get

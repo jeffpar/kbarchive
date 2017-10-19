@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99098: Erratic Printing with HP IIIsi PostScript and LMSFM"
-permalink: kb/099/Q99098/
+permalink: /kb/099/Q99098/
 ---
 
 ## Q99098: Erratic Printing with HP IIIsi PostScript and LMSFM

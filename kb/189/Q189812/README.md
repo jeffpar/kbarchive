@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189812: BUG: Unloading a Modal Form's Parent Form Causes VB To Hang"
-permalink: kb/189/Q189812/
+permalink: /kb/189/Q189812/
 ---
 
 ## Q189812: BUG: Unloading a Modal Form's Parent Form Causes VB To Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247375: INETINFO.EXE Ends With MTS Event 4097 Using MS ODBC for DB2"
-permalink: kb/247/Q247375/
+permalink: /kb/247/Q247375/
 ---
 
 ## Q247375: INETINFO.EXE Ends With MTS Event 4097 Using MS ODBC for DB2

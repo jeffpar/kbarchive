@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121035: MAC Cinemania 1994: README Contents"
-permalink: kb/121/Q121035/
+permalink: /kb/121/Q121035/
 ---
 
 ## Q121035: MAC Cinemania 1994: README Contents

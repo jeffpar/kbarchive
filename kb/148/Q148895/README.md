@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148895: PRB: Cannot Access VFP Parameterized Views Remotely"
-permalink: kb/148/Q148895/
+permalink: /kb/148/Q148895/
 ---
 
 ## Q148895: PRB: Cannot Access VFP Parameterized Views Remotely

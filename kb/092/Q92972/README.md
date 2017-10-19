@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92972: Graphics Print Slowly to PostScript Printer on LPT Port"
-permalink: kb/092/Q92972/
+permalink: /kb/092/Q92972/
 ---
 
 ## Q92972: Graphics Print Slowly to PostScript Printer on LPT Port

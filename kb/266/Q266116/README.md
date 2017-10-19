@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266116: Web Database Development Step by Step Comments and Corrections"
-permalink: kb/266/Q266116/
+permalink: /kb/266/Q266116/
 ---
 
 ## Q266116: Web Database Development Step by Step Comments and Corrections

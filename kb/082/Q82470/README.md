@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82470: No System Event Sounds After Installing Sound Driver"
-permalink: kb/082/Q82470/
+permalink: /kb/082/Q82470/
 ---
 
 ## Q82470: No System Event Sounds After Installing Sound Driver

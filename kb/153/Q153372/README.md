@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153372: Using Numeric Keys with Numlock On in Chat"
-permalink: kb/153/Q153372/
+permalink: /kb/153/Q153372/
 ---
 
 ## Q153372: Using Numeric Keys with Numlock On in Chat

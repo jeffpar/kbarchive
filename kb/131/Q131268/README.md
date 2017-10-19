@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131268: Baseball 95: Season Schedule Does Not Print With HP560C Driver"
-permalink: kb/131/Q131268/
+permalink: /kb/131/Q131268/
 ---
 
 ## Q131268: Baseball 95: Season Schedule Does Not Print With HP560C Driver

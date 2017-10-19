@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268906: HOWTO: Filter in a JOIN Condition"
-permalink: kb/268/Q268906/
+permalink: /kb/268/Q268906/
 ---
 
 ## Q268906: HOWTO: Filter in a JOIN Condition

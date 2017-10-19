@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139673: SNA Manuals for SNA Version 2.11 Reference SNA 2.10"
-permalink: kb/139/Q139673/
+permalink: /kb/139/Q139673/
 ---
 
 ## Q139673: SNA Manuals for SNA Version 2.11 Reference SNA 2.10

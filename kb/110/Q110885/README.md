@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110885: System Requirements for Multimedia Golf 1.0"
-permalink: kb/110/Q110885/
+permalink: /kb/110/Q110885/
 ---
 
 ## Q110885: System Requirements for Multimedia Golf 1.0

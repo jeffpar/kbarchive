@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194698: FIX: ScaleMode of Foxels Interferes with ColumnWidths Property"
-permalink: kb/194/Q194698/
+permalink: /kb/194/Q194698/
 ---
 
 ## Q194698: FIX: ScaleMode of Foxels Interferes with ColumnWidths Property

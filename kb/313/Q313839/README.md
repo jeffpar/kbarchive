@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313839: SMS: Previously Applied &quot;Quick Fix Engineering&quot; (QFE) Fixes May"
-permalink: kb/313/Q313839/
+permalink: /kb/313/Q313839/
 ---
 
 ## Q313839: SMS: Previously Applied &quot;Quick Fix Engineering&quot; (QFE) Fixes May

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177369: WD97: Return Address Does Not Print or Show on Envelopes Tab"
-permalink: kb/177/Q177369/
+permalink: /kb/177/Q177369/
 ---
 
 ## Q177369: WD97: Return Address Does Not Print or Show on Envelopes Tab

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58781: BUG: LINK Does Not Pause When Command Line Specifies /PAUSE"
-permalink: kb/058/Q58781/
+permalink: /kb/058/Q58781/
 ---
 
 ## Q58781: BUG: LINK Does Not Pause When Command Line Specifies /PAUSE

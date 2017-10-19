@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240756: XCLN: Exmerge Loses Free/Busy Info for Existing Appointments"
-permalink: kb/240/Q240756/
+permalink: /kb/240/Q240756/
 ---
 
 ## Q240756: XCLN: Exmerge Loses Free/Busy Info for Existing Appointments

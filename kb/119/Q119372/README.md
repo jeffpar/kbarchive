@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119372: Setting the Name Resolution Search Order for TCP/IP-32"
-permalink: kb/119/Q119372/
+permalink: /kb/119/Q119372/
 ---
 
 ## Q119372: Setting the Name Resolution Search Order for TCP/IP-32

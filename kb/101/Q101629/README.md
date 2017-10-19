@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101629: Second Member of Mirror or Stripe Set Larger than First"
-permalink: kb/101/Q101629/
+permalink: /kb/101/Q101629/
 ---
 
 ## Q101629: Second Member of Mirror or Stripe Set Larger than First

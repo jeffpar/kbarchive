@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62151: Cessna Skylane RG II Performance Specifications"
-permalink: kb/062/Q62151/
+permalink: /kb/062/Q62151/
 ---
 
 ## Q62151: Cessna Skylane RG II Performance Specifications

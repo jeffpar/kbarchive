@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148882: PRB: Visual C++ 4.0 or 4.1 Setup Fails to Copy Shared DLLs"
-permalink: kb/148/Q148882/
+permalink: /kb/148/Q148882/
 ---
 
 ## Q148882: PRB: Visual C++ 4.0 or 4.1 Setup Fails to Copy Shared DLLs

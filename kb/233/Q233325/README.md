@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233325: XFOR: Migration from cc:Mail Stops because of Invalid Date"
-permalink: kb/233/Q233325/
+permalink: /kb/233/Q233325/
 ---
 
 ## Q233325: XFOR: Migration from cc:Mail Stops because of Invalid Date

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305164: SMS: Remote Control Clients May Not Be Contacted by the Console"
-permalink: kb/305/Q305164/
+permalink: /kb/305/Q305164/
 ---
 
 ## Q305164: SMS: Remote Control Clients May Not Be Contacted by the Console

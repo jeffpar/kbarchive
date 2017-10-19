@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143207: PRB: Common Problems When Using STL with STD Namespace"
-permalink: kb/143/Q143207/
+permalink: /kb/143/Q143207/
 ---
 
 ## Q143207: PRB: Common Problems When Using STL with STD Namespace

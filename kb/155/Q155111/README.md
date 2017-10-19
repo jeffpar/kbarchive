@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155111: TCP/IP: Advanced Options Allow &gt; 5 Additional IP Addresses"
-permalink: kb/155/Q155111/
+permalink: /kb/155/Q155111/
 ---
 
 ## Q155111: TCP/IP: Advanced Options Allow &gt; 5 Additional IP Addresses

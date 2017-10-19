@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q52158: Mac Wkst: Description of the &quot;Word-Mail #X&quot; File"
-permalink: kb/052/Q52158/
+permalink: /kb/052/Q52158/
 ---
 
 ## Q52158: Mac Wkst: Description of the &quot;Word-Mail #X&quot; File

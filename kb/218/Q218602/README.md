@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218602: Troubleshooting Objects in an ASP Page Using WSH"
-permalink: kb/218/Q218602/
+permalink: /kb/218/Q218602/
 ---
 
 ## Q218602: Troubleshooting Objects in an ASP Page Using WSH

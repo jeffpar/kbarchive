@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247484: SMS: Advertisement with Future Date May Run Immediately"
-permalink: kb/247/Q247484/
+permalink: /kb/247/Q247484/
 ---
 
 ## Q247484: SMS: Advertisement with Future Date May Run Immediately

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262622: Games: Blank Error Message When You Install the Game"
-permalink: kb/262/Q262622/
+permalink: /kb/262/Q262622/
 ---
 
 ## Q262622: Games: Blank Error Message When You Install the Game

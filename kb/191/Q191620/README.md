@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191620: Urban Assault: Minimum System Requirements"
-permalink: kb/191/Q191620/
+permalink: /kb/191/Q191620/
 ---
 
 ## Q191620: Urban Assault: Minimum System Requirements

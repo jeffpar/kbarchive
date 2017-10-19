@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137984: TCP Connection States and Netstat Output"
-permalink: kb/137/Q137984/
+permalink: /kb/137/Q137984/
 ---
 
 ## Q137984: TCP Connection States and Netstat Output

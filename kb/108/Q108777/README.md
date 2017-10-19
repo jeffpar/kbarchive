@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108777: READ.ME File from Canon BJC-600 Version 1.00 Printer Driver"
-permalink: kb/108/Q108777/
+permalink: /kb/108/Q108777/
 ---
 
 ## Q108777: READ.ME File from Canon BJC-600 Version 1.00 Printer Driver

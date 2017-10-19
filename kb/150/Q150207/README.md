@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150207: FIX: Error Message on Property Page of ImageList Reappears"
-permalink: kb/150/Q150207/
+permalink: /kb/150/Q150207/
 ---
 
 ## Q150207: FIX: Error Message on Property Page of ImageList Reappears

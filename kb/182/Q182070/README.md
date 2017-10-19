@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182070: HOWTO: Create a Resolution-Independent Form"
-permalink: kb/182/Q182070/
+permalink: /kb/182/Q182070/
 ---
 
 ## Q182070: HOWTO: Create a Resolution-Independent Form

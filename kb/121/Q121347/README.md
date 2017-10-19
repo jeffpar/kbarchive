@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121347: FIX: Unable to Set Breakpoint on Label in Constructor"
-permalink: kb/121/Q121347/
+permalink: /kb/121/Q121347/
 ---
 
 ## Q121347: FIX: Unable to Set Breakpoint on Label in Constructor

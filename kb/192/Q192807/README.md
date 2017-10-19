@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192807: SNABase Service Fails to Start on SNA Server"
-permalink: kb/192/Q192807/
+permalink: /kb/192/Q192807/
 ---
 
 ## Q192807: SNABase Service Fails to Start on SNA Server

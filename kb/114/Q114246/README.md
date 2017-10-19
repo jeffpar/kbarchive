@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114246: PC Adm: Effects of Changing Network or Postoffice Names"
-permalink: kb/114/Q114246/
+permalink: /kb/114/Q114246/
 ---
 
 ## Q114246: PC Adm: Effects of Changing Network or Postoffice Names

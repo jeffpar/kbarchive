@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150547: Clients Cannot Connect to Server with SysKonnect FDDI Adapter"
-permalink: kb/150/Q150547/
+permalink: /kb/150/Q150547/
 ---
 
 ## Q150547: Clients Cannot Connect to Server with SysKonnect FDDI Adapter

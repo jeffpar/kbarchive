@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148751: FIX: COleDateTimeSpan Returns Incorrect Value"
-permalink: kb/148/Q148751/
+permalink: /kb/148/Q148751/
 ---
 
 ## Q148751: FIX: COleDateTimeSpan Returns Incorrect Value

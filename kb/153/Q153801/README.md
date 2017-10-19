@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153801: BUG: C2352 Error for Reference to Nested Class Member"
-permalink: kb/153/Q153801/
+permalink: /kb/153/Q153801/
 ---
 
 ## Q153801: BUG: C2352 Error for Reference to Nested Class Member

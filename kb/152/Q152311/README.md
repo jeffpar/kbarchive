@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152311: INF: How to Get Text with Colored Background on HP Color Print"
-permalink: kb/152/Q152311/
+permalink: /kb/152/Q152311/
 ---
 
 ## Q152311: INF: How to Get Text with Colored Background on HP Color Print

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104375: PPT: Tab Limitation in Each Text Block"
-permalink: kb/104/Q104375/
+permalink: /kb/104/Q104375/
 ---
 
 ## Q104375: PPT: Tab Limitation in Each Text Block

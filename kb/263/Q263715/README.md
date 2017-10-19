@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263715: BUG: Incorrect Code with Unsigned Integer Operand &gt; 0x80000000"
-permalink: kb/263/Q263715/
+permalink: /kb/263/Q263715/
 ---
 
 ## Q263715: BUG: Incorrect Code with Unsigned Integer Operand &gt; 0x80000000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168076: WINS Fails to Converge"
-permalink: kb/168/Q168076/
+permalink: /kb/168/Q168076/
 ---
 
 ## Q168076: WINS Fails to Converge

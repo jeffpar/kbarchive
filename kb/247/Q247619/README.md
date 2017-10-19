@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247619: FS2000: Program Hangs with nVIDIA Riva TNT-Based Video Adapter"
-permalink: kb/247/Q247619/
+permalink: /kb/247/Q247619/
 ---
 
 ## Q247619: FS2000: Program Hangs with nVIDIA Riva TNT-Based Video Adapter

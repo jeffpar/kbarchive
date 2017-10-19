@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72258: Windows Resource Kit (WRK) Does Not Build Group or Icons"
-permalink: kb/072/Q72258/
+permalink: /kb/072/Q72258/
 ---
 
 ## Q72258: Windows Resource Kit (WRK) Does Not Build Group or Icons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271532: Encarta 2001: Minimum System Requirements"
-permalink: kb/271/Q271532/
+permalink: /kb/271/Q271532/
 ---
 
 ## Q271532: Encarta 2001: Minimum System Requirements

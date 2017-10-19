@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101044: Comprehensive List of WRK for Version 3.0 Doc Errors"
-permalink: kb/101/Q101044/
+permalink: /kb/101/Q101044/
 ---
 
 ## Q101044: Comprehensive List of WRK for Version 3.0 Doc Errors

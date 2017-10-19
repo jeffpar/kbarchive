@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217155: XADM: Missing MIME Boundary Causes Bad MIME Prolog"
-permalink: kb/217/Q217155/
+permalink: /kb/217/Q217155/
 ---
 
 ## Q217155: XADM: Missing MIME Boundary Causes Bad MIME Prolog

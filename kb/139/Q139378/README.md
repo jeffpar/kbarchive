@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139378: Debugging SNA Server Application Exceptions on WinNT 3.5 &amp; 3.51"
-permalink: kb/139/Q139378/
+permalink: /kb/139/Q139378/
 ---
 
 ## Q139378: Debugging SNA Server Application Exceptions on WinNT 3.5 &amp; 3.51

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111896: PC Win: FAX Viewer Prints to Wrong Port"
-permalink: kb/111/Q111896/
+permalink: /kb/111/Q111896/
 ---
 
 ## Q111896: PC Win: FAX Viewer Prints to Wrong Port

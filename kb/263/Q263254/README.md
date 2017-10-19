@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263254: BUG: GraphByRecord FFC Missing Class"
-permalink: kb/263/Q263254/
+permalink: /kb/263/Q263254/
 ---
 
 ## Q263254: BUG: GraphByRecord FFC Missing Class

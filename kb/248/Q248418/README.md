@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248418: FIX: Unable to Develop WebClass on Windows 2000"
-permalink: kb/248/Q248418/
+permalink: /kb/248/Q248418/
 ---
 
 ## Q248418: FIX: Unable to Develop WebClass on Windows 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112578: Creating a Setup Disk for the Updated WFW 3.11 TCP/IP Drivers"
-permalink: kb/112/Q112578/
+permalink: /kb/112/Q112578/
 ---
 
 ## Q112578: Creating a Setup Disk for the Updated WFW 3.11 TCP/IP Drivers

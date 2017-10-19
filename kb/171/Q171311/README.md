@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171311: INF: NT 4.0 documentation cited in NT 4.0 Resource Kits"
-permalink: kb/171/Q171311/
+permalink: /kb/171/Q171311/
 ---
 
 ## Q171311: INF: NT 4.0 documentation cited in NT 4.0 Resource Kits

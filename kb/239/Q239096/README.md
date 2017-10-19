@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239096: PRB: Problems with CoInitializeEx and CDO"
-permalink: kb/239/Q239096/
+permalink: /kb/239/Q239096/
 ---
 
 ## Q239096: PRB: Problems with CoInitializeEx and CDO

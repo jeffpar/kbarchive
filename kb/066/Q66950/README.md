@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66950: Playing a Metafile into Another Metafile in Windows"
-permalink: kb/066/Q66950/
+permalink: /kb/066/Q66950/
 ---
 
 ## Q66950: Playing a Metafile into Another Metafile in Windows

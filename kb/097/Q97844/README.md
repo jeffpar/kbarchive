@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97844: Framing Difference Prevents Comms from NetWare to ArcNet"
-permalink: kb/097/Q97844/
+permalink: /kb/097/Q97844/
 ---
 
 ## Q97844: Framing Difference Prevents Comms from NetWare to ArcNet

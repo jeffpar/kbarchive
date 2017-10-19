@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152482: FIX: Error: Undefined Symbol 'DOC' from Custom AppWizard"
-permalink: kb/152/Q152482/
+permalink: /kb/152/Q152482/
 ---
 
 ## Q152482: FIX: Error: Undefined Symbol 'DOC' from Custom AppWizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137788: Intel 8/16 Lan Adapter Displays Different Name For the Same Card"
-permalink: kb/137/Q137788/
+permalink: /kb/137/Q137788/
 ---
 
 ## Q137788: Intel 8/16 Lan Adapter Displays Different Name For the Same Card

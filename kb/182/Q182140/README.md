@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182140: DSPU and PU Passthrough Available in SNA Workstation Product"
-permalink: kb/182/Q182140/
+permalink: /kb/182/Q182140/
 ---
 
 ## Q182140: DSPU and PU Passthrough Available in SNA Workstation Product

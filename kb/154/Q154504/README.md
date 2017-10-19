@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154504: Windows Explorer Error with Long Path on Windows NT Server"
-permalink: kb/154/Q154504/
+permalink: /kb/154/Q154504/
 ---
 
 ## Q154504: Windows Explorer Error with Long Path on Windows NT Server

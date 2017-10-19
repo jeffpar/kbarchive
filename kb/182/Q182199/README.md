@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182199: XADM: How to Move Details Templates to Another Server"
-permalink: kb/182/Q182199/
+permalink: /kb/182/Q182199/
 ---
 
 ## Q182199: XADM: How to Move Details Templates to Another Server

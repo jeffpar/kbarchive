@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90553: Unreferenced Packaged Functions Included With /Zi and /CO"
-permalink: kb/090/Q90553/
+permalink: /kb/090/Q90553/
 ---
 
 ## Q90553: Unreferenced Packaged Functions Included With /Zi and /CO

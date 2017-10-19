@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187504: HTTP 1.1 Host Headers Are Not Supported When You Use SSL"
-permalink: kb/187/Q187504/
+permalink: /kb/187/Q187504/
 ---
 
 ## Q187504: HTTP 1.1 Host Headers Are Not Supported When You Use SSL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37233: INFO: Why System Include Files Prototype Functions as _cdecl"
-permalink: kb/037/Q37233/
+permalink: /kb/037/Q37233/
 ---
 
 ## Q37233: INFO: Why System Include Files Prototype Functions as _cdecl

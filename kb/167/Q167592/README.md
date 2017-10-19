@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167592: ACC97: SourceSafe Integration Tips"
-permalink: kb/167/Q167592/
+permalink: /kb/167/Q167592/
 ---
 
 ## Q167592: ACC97: SourceSafe Integration Tips

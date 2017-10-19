@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237263: Encarta 2000: Shortcut Menu Transparent When You Play Video Clip"
-permalink: kb/237/Q237263/
+permalink: /kb/237/Q237263/
 ---
 
 ## Q237263: Encarta 2000: Shortcut Menu Transparent When You Play Video Clip

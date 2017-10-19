@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74393: Future Domain Disk Maestro Version 6.0 with MS-DOS"
-permalink: kb/074/Q74393/
+permalink: /kb/074/Q74393/
 ---
 
 ## Q74393: Future Domain Disk Maestro Version 6.0 with MS-DOS

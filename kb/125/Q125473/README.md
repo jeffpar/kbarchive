@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125473: DOC: Pass Counts for Breakpoints Undocumented"
-permalink: kb/125/Q125473/
+permalink: /kb/125/Q125473/
 ---
 
 ## Q125473: DOC: Pass Counts for Breakpoints Undocumented

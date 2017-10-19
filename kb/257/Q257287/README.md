@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257287: PRB: RTF Control 6.0 Displays Word Tables Incorrectly"
-permalink: kb/257/Q257287/
+permalink: /kb/257/Q257287/
 ---
 
 ## Q257287: PRB: RTF Control 6.0 Displays Word Tables Incorrectly

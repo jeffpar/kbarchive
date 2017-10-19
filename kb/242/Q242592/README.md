@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242592: How to Configure Peer Networking In Windows NT 4.0"
-permalink: kb/242/Q242592/
+permalink: /kb/242/Q242592/
 ---
 
 ## Q242592: How to Configure Peer Networking In Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155735: OFF: Microsoft Office Shortcut Bar Ignores Startup Properties"
-permalink: kb/155/Q155735/
+permalink: /kb/155/Q155735/
 ---
 
 ## Q155735: OFF: Microsoft Office Shortcut Bar Ignores Startup Properties

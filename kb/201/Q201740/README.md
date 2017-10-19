@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201740: Cannot Create Object Error when Browsing ASP Pages"
-permalink: kb/201/Q201740/
+permalink: /kb/201/Q201740/
 ---
 
 ## Q201740: Cannot Create Object Error when Browsing ASP Pages

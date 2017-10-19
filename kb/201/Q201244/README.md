@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201244: XWEB: Browser Shuts Down Trying to Open a Link to a Deleted Item"
-permalink: kb/201/Q201244/
+permalink: /kb/201/Q201244/
 ---
 
 ## Q201244: XWEB: Browser Shuts Down Trying to Open a Link to a Deleted Item

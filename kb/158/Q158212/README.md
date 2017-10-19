@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158212: SNA Server Unable to Reconnect to Distributed Link Service"
-permalink: kb/158/Q158212/
+permalink: /kb/158/Q158212/
 ---
 
 ## Q158212: SNA Server Unable to Reconnect to Distributed Link Service

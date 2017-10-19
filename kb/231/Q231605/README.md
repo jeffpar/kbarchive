@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231605: Malformed Help File Causes Help Utility to Stop Responding"
-permalink: kb/231/Q231605/
+permalink: /kb/231/Q231605/
 ---
 
 ## Q231605: Malformed Help File Causes Help Utility to Stop Responding

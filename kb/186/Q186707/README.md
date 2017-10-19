@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186707: XWEB: Cannot Open a Contact or Calendar Public Folder in OWA"
-permalink: kb/186/Q186707/
+permalink: /kb/186/Q186707/
 ---
 
 ## Q186707: XWEB: Cannot Open a Contact or Calendar Public Folder in OWA

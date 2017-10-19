@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203024: SMS: Unable to Open a Collected File with Associated Program"
-permalink: kb/203/Q203024/
+permalink: /kb/203/Q203024/
 ---
 
 ## Q203024: SMS: Unable to Open a Collected File with Associated Program

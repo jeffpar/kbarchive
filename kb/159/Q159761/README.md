@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159761: MSB Human: Hangs Before Classroom or During Transition"
-permalink: kb/159/Q159761/
+permalink: /kb/159/Q159761/
 ---
 
 ## Q159761: MSB Human: Hangs Before Classroom or During Transition

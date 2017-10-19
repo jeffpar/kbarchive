@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143051: How to Install and Use CompuServe Mail with MS Exchange"
-permalink: kb/143/Q143051/
+permalink: /kb/143/Q143051/
 ---
 
 ## Q143051: How to Install and Use CompuServe Mail with MS Exchange

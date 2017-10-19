@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138970: Configuring the NVAlert and NVRunCmd Host Code Page"
-permalink: kb/138/Q138970/
+permalink: /kb/138/Q138970/
 ---
 
 ## Q138970: Configuring the NVAlert and NVRunCmd Host Code Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101483: Mac Srv Wkst: Encryption Schemes for Mail"
-permalink: kb/101/Q101483/
+permalink: /kb/101/Q101483/
 ---
 
 ## Q101483: Mac Srv Wkst: Encryption Schemes for Mail

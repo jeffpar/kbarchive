@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150349: FIX: Finish Button Fails Data Transfer from Page to Variables"
-permalink: kb/150/Q150349/
+permalink: /kb/150/Q150349/
 ---
 
 ## Q150349: FIX: Finish Button Fails Data Transfer from Page to Variables

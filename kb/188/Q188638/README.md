@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188638: XCLN: Equations in Msg. from cc:Mail PO Appear Wrong in Outlook"
-permalink: kb/188/Q188638/
+permalink: /kb/188/Q188638/
 ---
 
 ## Q188638: XCLN: Equations in Msg. from cc:Mail PO Appear Wrong in Outlook

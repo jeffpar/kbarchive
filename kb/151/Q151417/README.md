@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151417: XCON: Latin-1 X.400 Bodypart Encoding Causes NDR"
-permalink: kb/151/Q151417/
+permalink: /kb/151/Q151417/
 ---
 
 ## Q151417: XCON: Latin-1 X.400 Bodypart Encoding Causes NDR

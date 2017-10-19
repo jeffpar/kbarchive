@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123219: ARP command Does Not Work with RAS Installed"
-permalink: kb/123/Q123219/
+permalink: /kb/123/Q123219/
 ---
 
 ## Q123219: ARP command Does Not Work with RAS Installed

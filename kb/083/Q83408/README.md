@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83408: Windows 3.0a Printer Drivers: File Sizes &amp; Supported Printers"
-permalink: kb/083/Q83408/
+permalink: /kb/083/Q83408/
 ---
 
 ## Q83408: Windows 3.0a Printer Drivers: File Sizes &amp; Supported Printers

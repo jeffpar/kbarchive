@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141024: How to Start a Visual Basic Screen Saver Using SendMessage API"
-permalink: kb/141/Q141024/
+permalink: /kb/141/Q141024/
 ---
 
 ## Q141024: How to Start a Visual Basic Screen Saver Using SendMessage API

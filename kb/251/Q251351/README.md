@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251351: Cannot View Files Other Than Bitmaps in Microsoft Paint"
-permalink: kb/251/Q251351/
+permalink: /kb/251/Q251351/
 ---
 
 ## Q251351: Cannot View Files Other Than Bitmaps in Microsoft Paint

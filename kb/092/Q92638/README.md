@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92638: Windows Sound System Specifications"
-permalink: kb/092/Q92638/
+permalink: /kb/092/Q92638/
 ---
 
 ## Q92638: Windows Sound System Specifications

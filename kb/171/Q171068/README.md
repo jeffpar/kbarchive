@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171068: WD97: Word Uses 100 Percent of the CPU During Typing"
-permalink: kb/171/Q171068/
+permalink: /kb/171/Q171068/
 ---
 
 ## Q171068: WD97: Word Uses 100 Percent of the CPU During Typing

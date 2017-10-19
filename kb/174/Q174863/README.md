@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174863: DNS Name Queries Only Sent Through One Network Adapter"
-permalink: kb/174/Q174863/
+permalink: /kb/174/Q174863/
 ---
 
 ## Q174863: DNS Name Queries Only Sent Through One Network Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131438: Mac Encarta 95: Read Me Contents"
-permalink: kb/131/Q131438/
+permalink: /kb/131/Q131438/
 ---
 
 ## Q131438: Mac Encarta 95: Read Me Contents

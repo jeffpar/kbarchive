@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58182: Mac Wkst: Macintosh Beeps When Mail DA Is Chosen"
-permalink: kb/058/Q58182/
+permalink: /kb/058/Q58182/
 ---
 
 ## Q58182: Mac Wkst: Macintosh Beeps When Mail DA Is Chosen

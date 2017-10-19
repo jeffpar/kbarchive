@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141315: FIX: Changing Subclassed Form's Desktop Property Has No Effect"
-permalink: kb/141/Q141315/
+permalink: /kb/141/Q141315/
 ---
 
 ## Q141315: FIX: Changing Subclassed Form's Desktop Property Has No Effect

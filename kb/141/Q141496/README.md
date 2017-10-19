@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141496: DHCP Client Comment Disappears When Obtaining IP Address"
-permalink: kb/141/Q141496/
+permalink: /kb/141/Q141496/
 ---
 
 ## Q141496: DHCP Client Comment Disappears When Obtaining IP Address

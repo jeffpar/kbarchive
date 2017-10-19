@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216740: Search Drive Mappings Lost When Using NetWare Client"
-permalink: kb/216/Q216740/
+permalink: /kb/216/Q216740/
 ---
 
 ## Q216740: Search Drive Mappings Lost When Using NetWare Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181690: XCLN: Contact Fax Number May Fail with +1 Prefix"
-permalink: kb/181/Q181690/
+permalink: /kb/181/Q181690/
 ---
 
 ## Q181690: XCLN: Contact Fax Number May Fail with +1 Prefix

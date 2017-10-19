@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103515: PC Forms: Err Msg: The Document Name or Path Is Not Valid..."
-permalink: kb/103/Q103515/
+permalink: /kb/103/Q103515/
 ---
 
 ## Q103515: PC Forms: Err Msg: The Document Name or Path Is Not Valid...

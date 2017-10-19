@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198820: XIMS: Incorrectly Formatted Channel Names Will Not Be Transcribe"
-permalink: kb/198/Q198820/
+permalink: /kb/198/Q198820/
 ---
 
 ## Q198820: XIMS: Incorrectly Formatted Channel Names Will Not Be Transcribe

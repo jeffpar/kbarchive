@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140968: How to Search SNA Server Articles by KB Subcategories"
-permalink: kb/140/Q140968/
+permalink: /kb/140/Q140968/
 ---
 
 ## Q140968: How to Search SNA Server Articles by KB Subcategories

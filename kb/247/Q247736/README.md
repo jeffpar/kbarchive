@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247736: Fighter Ace II: Plane and Ground Textures Are Not Displayed"
-permalink: kb/247/Q247736/
+permalink: /kb/247/Q247736/
 ---
 
 ## Q247736: Fighter Ace II: Plane and Ground Textures Are Not Displayed

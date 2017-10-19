@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98217: NDIS Driver Problems with Thomas Conrad Ethernet Cards"
-permalink: kb/098/Q98217/
+permalink: /kb/098/Q98217/
 ---
 
 ## Q98217: NDIS Driver Problems with Thomas Conrad Ethernet Cards

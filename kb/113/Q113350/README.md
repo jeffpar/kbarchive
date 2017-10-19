@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113350: PowerChute Plus Broadcast Messages Can Cause Problems"
-permalink: kb/113/Q113350/
+permalink: /kb/113/Q113350/
 ---
 
 ## Q113350: PowerChute Plus Broadcast Messages Can Cause Problems

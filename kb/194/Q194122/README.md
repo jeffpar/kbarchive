@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194122: XADM: MSW: Public Folder Contents Not Available"
-permalink: kb/194/Q194122/
+permalink: /kb/194/Q194122/
 ---
 
 ## Q194122: XADM: MSW: Public Folder Contents Not Available

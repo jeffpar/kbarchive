@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84886: Unable to Print TrueType Fonts on Novell Network"
-permalink: kb/084/Q84886/
+permalink: /kb/084/Q84886/
 ---
 
 ## Q84886: Unable to Print TrueType Fonts on Novell Network

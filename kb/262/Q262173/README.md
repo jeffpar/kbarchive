@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262173: Memory Leak Occurs When MSWC.IISLog Is Repeatedly Instantiated"
-permalink: kb/262/Q262173/
+permalink: /kb/262/Q262173/
 ---
 
 ## Q262173: Memory Leak Occurs When MSWC.IISLog Is Repeatedly Instantiated

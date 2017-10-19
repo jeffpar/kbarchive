@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151427: Server Service May Fail After Installing Network Card"
-permalink: kb/151/Q151427/
+permalink: /kb/151/Q151427/
 ---
 
 ## Q151427: Server Service May Fail After Installing Network Card

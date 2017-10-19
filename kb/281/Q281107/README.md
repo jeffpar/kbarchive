@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281107: Travel-Mode Clients May Lose Inventory or Not Run Advertisements"
-permalink: kb/281/Q281107/
+permalink: /kb/281/Q281107/
 ---
 
 ## Q281107: Travel-Mode Clients May Lose Inventory or Not Run Advertisements

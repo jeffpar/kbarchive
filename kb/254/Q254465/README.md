@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254465: PRB: Top-Level Form w/Intellimouse Causes Page Fault in Explorer"
-permalink: kb/254/Q254465/
+permalink: /kb/254/Q254465/
 ---
 
 ## Q254465: PRB: Top-Level Form w/Intellimouse Causes Page Fault in Explorer

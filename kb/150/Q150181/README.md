@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150181: BUG: Spin Control Does Not Obey Move Method"
-permalink: kb/150/Q150181/
+permalink: /kb/150/Q150181/
 ---
 
 ## Q150181: BUG: Spin Control Does Not Obey Move Method

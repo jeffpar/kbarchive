@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221687: FIX:C0000005 Fatal Error with CLEAR DEBUGGER and SUSPEND"
-permalink: kb/221/Q221687/
+permalink: /kb/221/Q221687/
 ---
 
 ## Q221687: FIX:C0000005 Fatal Error with CLEAR DEBUGGER and SUSPEND

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154089: XCLN: Cannot Send Sealed Message when Offline"
-permalink: kb/154/Q154089/
+permalink: /kb/154/Q154089/
 ---
 
 ## Q154089: XCLN: Cannot Send Sealed Message when Offline

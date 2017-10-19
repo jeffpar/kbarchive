@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299444: Post-Windows NT 4.0 SP6a Security Rollup Package (SRP)"
-permalink: kb/299/Q299444/
+permalink: /kb/299/Q299444/
 ---
 
 ## Q299444: Post-Windows NT 4.0 SP6a Security Rollup Package (SRP)

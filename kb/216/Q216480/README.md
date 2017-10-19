@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216480: PRB: Error Setting Default Value of Optional Byte Arg to TRUE"
-permalink: kb/216/Q216480/
+permalink: /kb/216/Q216480/
 ---
 
 ## Q216480: PRB: Error Setting Default Value of Optional Byte Arg to TRUE

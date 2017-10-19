@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273736: XFOR: GroupWise Calendar Connector Event ID 5016"
-permalink: kb/273/Q273736/
+permalink: /kb/273/Q273736/
 ---
 
 ## Q273736: XFOR: GroupWise Calendar Connector Event ID 5016

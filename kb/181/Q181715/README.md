@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181715: PRB: RDO/Jet: Run-Time Error 40069; Client Cursor Error 11 or 12"
-permalink: kb/181/Q181715/
+permalink: /kb/181/Q181715/
 ---
 
 ## Q181715: PRB: RDO/Jet: Run-Time Error 40069; Client Cursor Error 11 or 12

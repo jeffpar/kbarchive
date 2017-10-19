@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195196: New MSMQ Registry Values with Windows NT 4.0 Service Pack 4"
-permalink: kb/195/Q195196/
+permalink: /kb/195/Q195196/
 ---
 
 ## Q195196: New MSMQ Registry Values with Windows NT 4.0 Service Pack 4

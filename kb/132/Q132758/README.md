@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132758: Netware Client Cannot Create A File"
-permalink: kb/132/Q132758/
+permalink: /kb/132/Q132758/
 ---
 
 ## Q132758: Netware Client Cannot Create A File

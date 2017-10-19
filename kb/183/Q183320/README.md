@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183320: XADM: Cannot View Internet Mail Service Properties"
-permalink: kb/183/Q183320/
+permalink: /kb/183/Q183320/
 ---
 
 ## Q183320: XADM: Cannot View Internet Mail Service Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77106: PC Adm: Connecting Two Postoffices by Using Null Modem"
-permalink: kb/077/Q77106/
+permalink: /kb/077/Q77106/
 ---
 
 ## Q77106: PC Adm: Connecting Two Postoffices by Using Null Modem

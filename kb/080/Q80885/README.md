@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80885: Groups Are Missing in Windows Upon Startup"
-permalink: kb/080/Q80885/
+permalink: /kb/080/Q80885/
 ---
 
 ## Q80885: Groups Are Missing in Windows Upon Startup

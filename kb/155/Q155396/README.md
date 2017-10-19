@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155396: FreeCell Help Opens Extra Windows"
-permalink: kb/155/Q155396/
+permalink: /kb/155/Q155396/
 ---
 
 ## Q155396: FreeCell Help Opens Extra Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133721: SNA Error 505: The Host Terminated the Connection Used..."
-permalink: kb/133/Q133721/
+permalink: /kb/133/Q133721/
 ---
 
 ## Q133721: SNA Error 505: The Host Terminated the Connection Used...

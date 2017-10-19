@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190088: BUG: Icon Resource May Not Appear as Expected"
-permalink: kb/190/Q190088/
+permalink: /kb/190/Q190088/
 ---
 
 ## Q190088: BUG: Icon Resource May Not Appear as Expected

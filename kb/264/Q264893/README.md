@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264893: Installer Overwrites Tmp File Using &quot;Insert Line into Text File&quot;"
-permalink: kb/264/Q264893/
+permalink: /kb/264/Q264893/
 ---
 
 ## Q264893: Installer Overwrites Tmp File Using &quot;Insert Line into Text File&quot;

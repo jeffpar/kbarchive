@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188674: XADM: Directory Service Restore to Cluster Fails with Event 1002"
-permalink: kb/188/Q188674/
+permalink: /kb/188/Q188674/
 ---
 
 ## Q188674: XADM: Directory Service Restore to Cluster Fails with Event 1002

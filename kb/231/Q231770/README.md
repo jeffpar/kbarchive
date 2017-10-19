@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231770: BUG: Windows CE Wizards Not Available After Install"
-permalink: kb/231/Q231770/
+permalink: /kb/231/Q231770/
 ---
 
 ## Q231770: BUG: Windows CE Wizards Not Available After Install

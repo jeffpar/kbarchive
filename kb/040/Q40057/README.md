@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40057: Identifying IBM PS/2 Displays by Model Number"
-permalink: kb/040/Q40057/
+permalink: /kb/040/Q40057/
 ---
 
 ## Q40057: Identifying IBM PS/2 Displays by Model Number

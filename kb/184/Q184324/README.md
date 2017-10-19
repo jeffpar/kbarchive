@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184324: XWEB: Customizing the Checkname Feature for Outlook Web Access"
-permalink: kb/184/Q184324/
+permalink: /kb/184/Q184324/
 ---
 
 ## Q184324: XWEB: Customizing the Checkname Feature for Outlook Web Access

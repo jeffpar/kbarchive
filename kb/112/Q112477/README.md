@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112477: _PDRIVER Incorrectly Documented in FoxPro 1.02"
-permalink: kb/112/Q112477/
+permalink: /kb/112/Q112477/
 ---
 
 ## Q112477: _PDRIVER Incorrectly Documented in FoxPro 1.02

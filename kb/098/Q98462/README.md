@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98462: Switch Codes for [TCPIP_XIF] Section of PROTOCOL.INI"
-permalink: kb/098/Q98462/
+title: "Q98462: Switch Codes for &#91;TCPIP_XIF&#93; Section of PROTOCOL.INI"
+permalink: /kb/098/Q98462/
 ---
 
-## Q98462: Switch Codes for [TCPIP_XIF] Section of PROTOCOL.INI
+## Q98462: Switch Codes for &#91;TCPIP_XIF&#93; Section of PROTOCOL.INI
 
 	Article: Q98462
 	Product(s): Microsoft LAN Manager

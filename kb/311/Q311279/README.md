@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311279: SMS: Wuser32.exe ErrMsg Shutting Down Windows XP SMS Client"
-permalink: kb/311/Q311279/
+permalink: /kb/311/Q311279/
 ---
 
 ## Q311279: SMS: Wuser32.exe ErrMsg Shutting Down Windows XP SMS Client

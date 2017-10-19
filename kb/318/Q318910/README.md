@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318910: XML Programming Core Reference Comments and Corrections"
-permalink: kb/318/Q318910/
+permalink: /kb/318/Q318910/
 ---
 
 ## Q318910: XML Programming Core Reference Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139108: FIX: Visual FoxPro Fails If Subclass Name Ends in a Number"
-permalink: kb/139/Q139108/
+permalink: /kb/139/Q139108/
 ---
 
 ## Q139108: FIX: Visual FoxPro Fails If Subclass Name Ends in a Number

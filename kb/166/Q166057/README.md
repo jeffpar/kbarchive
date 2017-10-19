@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166057: WV: &quot;What's This?&quot; Doesn't Present Word Viewer Help"
-permalink: kb/166/Q166057/
+permalink: /kb/166/Q166057/
 ---
 
 ## Q166057: WV: &quot;What's This?&quot; Doesn't Present Word Viewer Help

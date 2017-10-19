@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115359: X400: Precedence of the Parameters -U, -BD, -BT, - BR"
-permalink: kb/115/Q115359/
+permalink: /kb/115/Q115359/
 ---
 
 ## Q115359: X400: Precedence of the Parameters -U, -BD, -BT, - BR

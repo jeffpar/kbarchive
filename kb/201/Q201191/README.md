@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201191: PRB: Registering ATL Server Causes 0x80040154 Error"
-permalink: kb/201/Q201191/
+permalink: /kb/201/Q201191/
 ---
 
 ## Q201191: PRB: Registering ATL Server Causes 0x80040154 Error

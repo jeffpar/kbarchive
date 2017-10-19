@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151103: Cinemania 96: April Update Does Not Print Descriptions"
-permalink: kb/151/Q151103/
+permalink: /kb/151/Q151103/
 ---
 
 ## Q151103: Cinemania 96: April Update Does Not Print Descriptions

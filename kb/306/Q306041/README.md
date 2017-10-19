@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306041: Err Msg: 0x800CCC78 SMTP Rejected Sender (Outlook Express)"
-permalink: kb/306/Q306041/
+permalink: /kb/306/Q306041/
 ---
 
 ## Q306041: Err Msg: 0x800CCC78 SMTP Rejected Sender (Outlook Express)

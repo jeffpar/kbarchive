@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73444: Using DiskLock PC with MS-DOS 5.x or 6.x"
-permalink: kb/073/Q73444/
+permalink: /kb/073/Q73444/
 ---
 
 ## Q73444: Using DiskLock PC with MS-DOS 5.x or 6.x

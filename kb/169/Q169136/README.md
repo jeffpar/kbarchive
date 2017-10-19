@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169136: Multilink ISDN in WinNT 4.0 May Fail When Connect 2nd Channel"
-permalink: kb/169/Q169136/
+permalink: /kb/169/Q169136/
 ---
 
 ## Q169136: Multilink ISDN in WinNT 4.0 May Fail When Connect 2nd Channel

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78442: MS-DOS Shell Task Swapper and Framework III/Frameword IV"
-permalink: kb/078/Q78442/
+permalink: /kb/078/Q78442/
 ---
 
 ## Q78442: MS-DOS Shell Task Swapper and Framework III/Frameword IV

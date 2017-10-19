@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191394: SNA Server Access Violation in Function S1psineg"
-permalink: kb/191/Q191394/
+permalink: /kb/191/Q191394/
 ---
 
 ## Q191394: SNA Server Access Violation in Function S1psineg

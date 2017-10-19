@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180708: SLI_OPEN May Fail With LUA_STATE_CHECK/LUA_NO_SLI_SESSION"
-permalink: kb/180/Q180708/
+permalink: /kb/180/Q180708/
 ---
 
 ## Q180708: SLI_OPEN May Fail With LUA_STATE_CHECK/LUA_NO_SLI_SESSION

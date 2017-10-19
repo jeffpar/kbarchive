@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183333: HOWTO: Create a Dynamically Scrolling Graph"
-permalink: kb/183/Q183333/
+permalink: /kb/183/Q183333/
 ---
 
 ## Q183333: HOWTO: Create a Dynamically Scrolling Graph

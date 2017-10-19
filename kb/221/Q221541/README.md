@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221541: FIX: Failed to Mark Safe for Scripting Using Visual Basic PDW"
-permalink: kb/221/Q221541/
+permalink: /kb/221/Q221541/
 ---
 
 ## Q221541: FIX: Failed to Mark Safe for Scripting Using Visual Basic PDW

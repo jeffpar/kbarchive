@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137676: PC Ext: Inbox Header Displays Incorrect Date"
-permalink: kb/137/Q137676/
+permalink: /kb/137/Q137676/
 ---
 
 ## Q137676: PC Ext: Inbox Header Displays Incorrect Date

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92991: Gateway Communications Network Interface Cards with WFWG"
-permalink: kb/092/Q92991/
+permalink: /kb/092/Q92991/
 ---
 
 ## Q92991: Gateway Communications Network Interface Cards with WFWG

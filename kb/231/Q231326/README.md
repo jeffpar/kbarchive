@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231326: Err Msg: The Document Is in Use by Another Application"
-permalink: kb/231/Q231326/
+permalink: /kb/231/Q231326/
 ---
 
 ## Q231326: Err Msg: The Document Is in Use by Another Application

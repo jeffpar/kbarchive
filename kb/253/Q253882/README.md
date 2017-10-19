@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253882: HOWTO: Use a DataGrid ActiveX Control in Visual FoxPro"
-permalink: kb/253/Q253882/
+permalink: /kb/253/Q253882/
 ---
 
 ## Q253882: HOWTO: Use a DataGrid ActiveX Control in Visual FoxPro

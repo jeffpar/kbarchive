@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180709: Code in Main Thread Still Executes After Issuing CTRL+C Command"
-permalink: kb/180/Q180709/
+permalink: /kb/180/Q180709/
 ---
 
 ## Q180709: Code in Main Thread Still Executes After Issuing CTRL+C Command

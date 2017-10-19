@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196332: XADM: Edb.chk Does Not Move During Performance Optimization"
-permalink: kb/196/Q196332/
+permalink: /kb/196/Q196332/
 ---
 
 ## Q196332: XADM: Edb.chk Does Not Move During Performance Optimization

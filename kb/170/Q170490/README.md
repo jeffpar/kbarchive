@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170490: XCLN: AutoSignature Is Not Present When Message Is Composed"
-permalink: kb/170/Q170490/
+permalink: /kb/170/Q170490/
 ---
 
 ## Q170490: XCLN: AutoSignature Is Not Present When Message Is Composed

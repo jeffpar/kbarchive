@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123449: PPT: &quot;1 3/4.PPT. Sorry, the File Cannot Be Found&quot; Error"
-permalink: kb/123/Q123449/
+permalink: /kb/123/Q123449/
 ---
 
 ## Q123449: PPT: &quot;1 3/4.PPT. Sorry, the File Cannot Be Found&quot; Error

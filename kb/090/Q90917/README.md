@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90917: Unable to Switch to File Manager After Formatting Disk in Back"
-permalink: kb/090/Q90917/
+permalink: /kb/090/Q90917/
 ---
 
 ## Q90917: Unable to Switch to File Manager After Formatting Disk in Back

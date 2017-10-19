@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130694: NTFS Performance with Numerous Long Filenames"
-permalink: kb/130/Q130694/
+permalink: /kb/130/Q130694/
 ---
 
 ## Q130694: NTFS Performance with Numerous Long Filenames

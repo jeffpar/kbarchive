@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134761: Thomas Conrad Token Ring cards TC-4045 and TC 4145 Setup Problem"
-permalink: kb/134/Q134761/
+permalink: /kb/134/Q134761/
 ---
 
 ## Q134761: Thomas Conrad Token Ring cards TC-4045 and TC 4145 Setup Problem

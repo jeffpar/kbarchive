@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181433: XADM: Event ID 1092 Replication Error By The MSExchangeDS"
-permalink: kb/181/Q181433/
+permalink: /kb/181/Q181433/
 ---
 
 ## Q181433: XADM: Event ID 1092 Replication Error By The MSExchangeDS

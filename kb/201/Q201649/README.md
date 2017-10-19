@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201649: FAQ: Visual SourceSafe Integration with Visual Basic 6.0"
-permalink: kb/201/Q201649/
+permalink: /kb/201/Q201649/
 ---
 
 ## Q201649: FAQ: Visual SourceSafe Integration with Visual Basic 6.0

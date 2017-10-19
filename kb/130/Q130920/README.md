@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130920: Windows NT 3.5 Setup on Compaq LTE Elite Hangs"
-permalink: kb/130/Q130920/
+permalink: /kb/130/Q130920/
 ---
 
 ## Q130920: Windows NT 3.5 Setup on Compaq LTE Elite Hangs

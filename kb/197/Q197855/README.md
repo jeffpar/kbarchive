@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197855: WD97: Control Codes to Use with Find and Replace (Edit Menu)"
-permalink: kb/197/Q197855/
+permalink: /kb/197/Q197855/
 ---
 
 ## Q197855: WD97: Control Codes to Use with Find and Replace (Edit Menu)

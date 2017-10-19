@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156565: XCLN: Public Folders and Linked/Embedded Documents"
-permalink: kb/156/Q156565/
+permalink: /kb/156/Q156565/
 ---
 
 ## Q156565: XCLN: Public Folders and Linked/Embedded Documents

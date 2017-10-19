@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117179: Running WFWG TCP/IP (WFWTCP) with Workgroup Add-On for MS-DOS"
-permalink: kb/117/Q117179/
+permalink: /kb/117/Q117179/
 ---
 
 ## Q117179: Running WFWG TCP/IP (WFWTCP) with Workgroup Add-On for MS-DOS

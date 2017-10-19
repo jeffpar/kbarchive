@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90519: Word Hangs When Linking Bitmap from Different Display Type"
-permalink: kb/090/Q90519/
+permalink: /kb/090/Q90519/
 ---
 
 ## Q90519: Word Hangs When Linking Bitmap from Different Display Type

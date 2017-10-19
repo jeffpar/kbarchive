@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237737: WD97: Bullets Become Squares When Font Permanently Converted"
-permalink: kb/237/Q237737/
+permalink: /kb/237/Q237737/
 ---
 
 ## Q237737: WD97: Bullets Become Squares When Font Permanently Converted

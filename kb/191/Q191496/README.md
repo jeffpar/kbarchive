@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191496: BUG: VC5: Project Conversion from Version 4.x May Crash VS97"
-permalink: kb/191/Q191496/
+permalink: /kb/191/Q191496/
 ---
 
 ## Q191496: BUG: VC5: Project Conversion from Version 4.x May Crash VS97

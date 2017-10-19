@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230175: Oracle's Fail Safe Server Does Not Work When Adding a Database"
-permalink: kb/230/Q230175/
+permalink: /kb/230/Q230175/
 ---
 
 ## Q230175: Oracle's Fail Safe Server Does Not Work When Adding a Database

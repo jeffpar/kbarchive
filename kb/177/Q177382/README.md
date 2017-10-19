@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177382: FileSystemObject Object in ASP Does Not Handle DBCS"
-permalink: kb/177/Q177382/
+permalink: /kb/177/Q177382/
 ---
 
 ## Q177382: FileSystemObject Object in ASP Does Not Handle DBCS

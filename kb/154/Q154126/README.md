@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154126: PRB: Using Extension DLL, Database/OLE/Sockets in Regular DLL"
-permalink: kb/154/Q154126/
+permalink: /kb/154/Q154126/
 ---
 
 ## Q154126: PRB: Using Extension DLL, Database/OLE/Sockets in Regular DLL

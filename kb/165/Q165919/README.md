@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165919: HOWTO: Use the Windows 95/98/Me Copy and Recycle Functions in VB"
-permalink: kb/165/Q165919/
+permalink: /kb/165/Q165919/
 ---
 
 ## Q165919: HOWTO: Use the Windows 95/98/Me Copy and Recycle Functions in VB

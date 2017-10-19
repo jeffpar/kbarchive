@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152302: Files Saved to NetWare Server via GSNW Don't Retain Case"
-permalink: kb/152/Q152302/
+permalink: /kb/152/Q152302/
 ---
 
 ## Q152302: Files Saved to NetWare Server via GSNW Don't Retain Case

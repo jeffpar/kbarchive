@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84000: Obtaining a Virtual Device (VxD) ID Number"
-permalink: kb/084/Q84000/
+permalink: /kb/084/Q84000/
 ---
 
 ## Q84000: Obtaining a Virtual Device (VxD) ID Number

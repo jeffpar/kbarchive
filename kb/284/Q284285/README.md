@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284285: HOW TO: Use Wfetch.exe to Troubleshoot HTTP Connections"
-permalink: kb/284/Q284285/
+permalink: /kb/284/Q284285/
 ---
 
 ## Q284285: HOW TO: Use Wfetch.exe to Troubleshoot HTTP Connections

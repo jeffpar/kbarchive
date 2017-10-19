@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129472: Bookshelf 1995: Manual Installation Instructions"
-permalink: kb/129/Q129472/
+permalink: /kb/129/Q129472/
 ---
 
 ## Q129472: Bookshelf 1995: Manual Installation Instructions

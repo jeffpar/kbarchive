@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148746: FIX: Check Marks Work Only When Set in Top Level Menu Events"
-permalink: kb/148/Q148746/
+permalink: /kb/148/Q148746/
 ---
 
 ## Q148746: FIX: Check Marks Work Only When Set in Top Level Menu Events

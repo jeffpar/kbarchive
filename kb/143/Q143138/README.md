@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143138: Can No Longer Access the Registry with Null Sessions"
-permalink: kb/143/Q143138/
+permalink: /kb/143/Q143138/
 ---
 
 ## Q143138: Can No Longer Access the Registry with Null Sessions

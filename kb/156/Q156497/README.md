@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156497: Duplicate Print Output on PC-LAN Server from Windows 95 Client"
-permalink: kb/156/Q156497/
+permalink: /kb/156/Q156497/
 ---
 
 ## Q156497: Duplicate Print Output on PC-LAN Server from Windows 95 Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271542: XADM: Directory Service Does Not Start with Event ID 1171"
-permalink: kb/271/Q271542/
+permalink: /kb/271/Q271542/
 ---
 
 ## Q271542: XADM: Directory Service Does Not Start with Event ID 1171

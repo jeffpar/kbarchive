@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157299: WD97: Where to Find Word 6.x or 7.x Commands and Features"
-permalink: kb/157/Q157299/
+permalink: /kb/157/Q157299/
 ---
 
 ## Q157299: WD97: Where to Find Word 6.x or 7.x Commands and Features

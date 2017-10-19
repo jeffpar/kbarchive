@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155483: Music Central 96 Update Contents: August 96"
-permalink: kb/155/Q155483/
+permalink: /kb/155/Q155483/
 ---
 
 ## Q155483: Music Central 96 Update Contents: August 96

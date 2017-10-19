@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190539: HOWTO: Make Move or Resize Call Form's THIS_ACCESS Method"
-permalink: kb/190/Q190539/
+permalink: /kb/190/Q190539/
 ---
 
 ## Q190539: HOWTO: Make Move or Resize Call Form's THIS_ACCESS Method

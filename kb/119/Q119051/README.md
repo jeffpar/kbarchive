@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119051: FAX: Macintosh ASCII Attachments Fax Incorrectly"
-permalink: kb/119/Q119051/
+permalink: /kb/119/Q119051/
 ---
 
 ## Q119051: FAX: Macintosh ASCII Attachments Fax Incorrectly

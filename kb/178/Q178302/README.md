@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178302: XADM: Upgrade to Exchange 5.5 Fails If Virus Software Is Enabled"
-permalink: kb/178/Q178302/
+permalink: /kb/178/Q178302/
 ---
 
 ## Q178302: XADM: Upgrade to Exchange 5.5 Fails If Virus Software Is Enabled

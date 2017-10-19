@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90274: Managing Network Printers in Print Manager and Control Panel"
-permalink: kb/090/Q90274/
+permalink: /kb/090/Q90274/
 ---
 
 ## Q90274: Managing Network Printers in Print Manager and Control Panel

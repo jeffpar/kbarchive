@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83077: Troubleshooting an Unsuccessful Windows 3.1 Installation"
-permalink: kb/083/Q83077/
+permalink: /kb/083/Q83077/
 ---
 
 ## Q83077: Troubleshooting an Unsuccessful Windows 3.1 Installation

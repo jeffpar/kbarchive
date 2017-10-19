@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255879: XCLN: Appointments Created Using CDO Off by One Hour"
-permalink: kb/255/Q255879/
+permalink: /kb/255/Q255879/
 ---
 
 ## Q255879: XCLN: Appointments Created Using CDO Off by One Hour

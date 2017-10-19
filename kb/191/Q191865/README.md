@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191865: Loop in COMTI After CICS ABEND During Send Processing"
-permalink: kb/191/Q191865/
+permalink: /kb/191/Q191865/
 ---
 
 ## Q191865: Loop in COMTI After CICS ABEND During Send Processing

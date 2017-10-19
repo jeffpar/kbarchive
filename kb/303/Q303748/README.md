@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303748: PRB: Express Purchase hangs with &quot;Loading, please wait...&quot;"
-permalink: kb/303/Q303748/
+permalink: /kb/303/Q303748/
 ---
 
 ## Q303748: PRB: Express Purchase hangs with &quot;Loading, please wait...&quot;

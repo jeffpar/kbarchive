@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209381: Err Msg: OleMainThreadWndName:mtx.exe- Unable to locate DLL"
-permalink: kb/209/Q209381/
+permalink: /kb/209/Q209381/
 ---
 
 ## Q209381: Err Msg: OleMainThreadWndName:mtx.exe- Unable to locate DLL

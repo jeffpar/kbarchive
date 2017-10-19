@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248425: XADM: Service Pack Upgrade Is Unsuccessful with &quot;C1030B3A&quot; Error"
-permalink: kb/248/Q248425/
+permalink: /kb/248/Q248425/
 ---
 
 ## Q248425: XADM: Service Pack Upgrade Is Unsuccessful with &quot;C1030B3A&quot; Error

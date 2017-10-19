@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199288: H-Node Multihomed Host May Send Broadcasts Immediately"
-permalink: kb/199/Q199288/
+permalink: /kb/199/Q199288/
 ---
 
 ## Q199288: H-Node Multihomed Host May Send Broadcasts Immediately

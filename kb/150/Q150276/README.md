@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150276: ActiveX Developers Kit CD-ROM SP Hangs Windows NT"
-permalink: kb/150/Q150276/
+permalink: /kb/150/Q150276/
 ---
 
 ## Q150276: ActiveX Developers Kit CD-ROM SP Hangs Windows NT

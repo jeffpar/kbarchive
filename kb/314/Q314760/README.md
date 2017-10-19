@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314760: Microsoft Access 2002 Visual Basic for Applications Step by Step"
-permalink: kb/314/Q314760/
+permalink: /kb/314/Q314760/
 ---
 
 ## Q314760: Microsoft Access 2002 Visual Basic for Applications Step by Step

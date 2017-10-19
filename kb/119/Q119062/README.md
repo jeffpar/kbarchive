@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119062: PRB: File &quot;C:&#92;TEMP&#92;99999999.TMP&quot; Does Not Exist"
-permalink: kb/119/Q119062/
+permalink: /kb/119/Q119062/
 ---
 
 ## Q119062: PRB: File &quot;C:&#92;TEMP&#92;99999999.TMP&quot; Does Not Exist

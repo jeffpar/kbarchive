@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108648: Macintosh Locks Up When Changing Zones with SP2"
-permalink: kb/108/Q108648/
+permalink: /kb/108/Q108648/
 ---
 
 ## Q108648: Macintosh Locks Up When Changing Zones with SP2

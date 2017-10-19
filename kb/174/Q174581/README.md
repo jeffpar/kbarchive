@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174581: Double-Clicking MSPress Welcome Icon Returns Error Message"
-permalink: kb/174/Q174581/
+permalink: /kb/174/Q174581/
 ---
 
 ## Q174581: Double-Clicking MSPress Welcome Icon Returns Error Message

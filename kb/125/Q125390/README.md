@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125390: Telnet GP Faults when Accessing InterLock Server"
-permalink: kb/125/Q125390/
+permalink: /kb/125/Q125390/
 ---
 
 ## Q125390: Telnet GP Faults when Accessing InterLock Server

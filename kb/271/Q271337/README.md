@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271337: FS2000: View Through Windshield of Boeing 777-300 Is Black"
-permalink: kb/271/Q271337/
+permalink: /kb/271/Q271337/
 ---
 
 ## Q271337: FS2000: View Through Windshield of Boeing 777-300 Is Black

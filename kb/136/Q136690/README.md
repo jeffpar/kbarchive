@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136690: Firing Sequence of Visual FoxPro Events"
-permalink: kb/136/Q136690/
+permalink: /kb/136/Q136690/
 ---
 
 ## Q136690: Firing Sequence of Visual FoxPro Events

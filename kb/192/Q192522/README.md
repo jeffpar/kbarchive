@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192522: How to Make Client Local Drive Available to Terminal Server"
-permalink: kb/192/Q192522/
+permalink: /kb/192/Q192522/
 ---
 
 ## Q192522: How to Make Client Local Drive Available to Terminal Server

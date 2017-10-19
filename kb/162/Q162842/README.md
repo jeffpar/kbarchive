@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162842: DNS with &quot;WINS Reverse Lookup&quot; Fails with Multiple IP Addresses"
-permalink: kb/162/Q162842/
+permalink: /kb/162/Q162842/
 ---
 
 ## Q162842: DNS with &quot;WINS Reverse Lookup&quot; Fails with Multiple IP Addresses

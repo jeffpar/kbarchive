@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248056: XCON: Bad NDR w. No Intended Recipient Stops Connector for Notes"
-permalink: kb/248/Q248056/
+permalink: /kb/248/Q248056/
 ---
 
 ## Q248056: XCON: Bad NDR w. No Intended Recipient Stops Connector for Notes

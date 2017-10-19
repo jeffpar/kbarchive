@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167879: WD97: Can't Run OCX Control After Converting to Inline Object"
-permalink: kb/167/Q167879/
+permalink: /kb/167/Q167879/
 ---
 
 ## Q167879: WD97: Can't Run OCX Control After Converting to Inline Object

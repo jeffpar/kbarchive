@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250848: PRB: STL list::remove Doesn't Remove All Occurrences of Element"
-permalink: kb/250/Q250848/
+permalink: /kb/250/Q250848/
 ---
 
 ## Q250848: PRB: STL list::remove Doesn't Remove All Occurrences of Element

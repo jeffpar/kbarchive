@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132996: Games (R-Z) Requiring or Performing Better in MS-DOS Mode"
-permalink: kb/132/Q132996/
+permalink: /kb/132/Q132996/
 ---
 
 ## Q132996: Games (R-Z) Requiring or Performing Better in MS-DOS Mode

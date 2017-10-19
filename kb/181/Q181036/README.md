@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181036: INFO: Suitable Applications for Exchange Server Event Scripting"
-permalink: kb/181/Q181036/
+permalink: /kb/181/Q181036/
 ---
 
 ## Q181036: INFO: Suitable Applications for Exchange Server Event Scripting

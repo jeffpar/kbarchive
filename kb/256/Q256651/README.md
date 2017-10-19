@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256651: SMS: NDS Logon Server Mgr. Reports Error Removing Logon Scripts"
-permalink: kb/256/Q256651/
+permalink: /kb/256/Q256651/
 ---
 
 ## Q256651: SMS: NDS Logon Server Mgr. Reports Error Removing Logon Scripts

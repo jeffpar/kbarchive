@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299445: Core Profile Attributes Return Empty Values or Unexpected Result"
-permalink: kb/299/Q299445/
+permalink: /kb/299/Q299445/
 ---
 
 ## Q299445: Core Profile Attributes Return Empty Values or Unexpected Result

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85282: Application Dynamically Links to a DLL Using a Class"
-permalink: kb/085/Q85282/
+permalink: /kb/085/Q85282/
 ---
 
 ## Q85282: Application Dynamically Links to a DLL Using a Class

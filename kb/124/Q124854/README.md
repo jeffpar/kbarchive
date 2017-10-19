@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124854: XCOPY Results in Data Loss When Copying Extremely Large Files"
-permalink: kb/124/Q124854/
+permalink: /kb/124/Q124854/
 ---
 
 ## Q124854: XCOPY Results in Data Loss When Copying Extremely Large Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156184: SMS: &quot;Please Insert Diskette&quot; Message on Clients Running Win95"
-permalink: kb/156/Q156184/
+permalink: /kb/156/Q156184/
 ---
 
 ## Q156184: SMS: &quot;Please Insert Diskette&quot; Message on Clients Running Win95

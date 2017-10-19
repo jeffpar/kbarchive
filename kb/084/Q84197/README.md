@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84197: Windows 3.1 Setup Hangs: Cannot Run Standard Mode Because..."
-permalink: kb/084/Q84197/
+permalink: /kb/084/Q84197/
 ---
 
 ## Q84197: Windows 3.1 Setup Hangs: Cannot Run Standard Mode Because...

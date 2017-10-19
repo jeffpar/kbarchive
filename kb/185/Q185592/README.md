@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185592: XCON: Recipient Address Corrupted on Messages to EDK Gateway"
-permalink: kb/185/Q185592/
+permalink: /kb/185/Q185592/
 ---
 
 ## Q185592: XCON: Recipient Address Corrupted on Messages to EDK Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151792: XFOR: One-off Addressed Mail from ccMail User Not Tracked"
-permalink: kb/151/Q151792/
+permalink: /kb/151/Q151792/
 ---
 
 ## Q151792: XFOR: One-off Addressed Mail from ccMail User Not Tracked

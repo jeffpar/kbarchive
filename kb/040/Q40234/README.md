@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40234: INFO: EndPage(), NEXTBAND, and NEWFRAME Reset DC Attributes"
-permalink: kb/040/Q40234/
+permalink: /kb/040/Q40234/
 ---
 
 ## Q40234: INFO: EndPage(), NEXTBAND, and NEWFRAME Reset DC Attributes

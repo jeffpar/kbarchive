@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173586: How to Reset Your MSN Password"
-permalink: kb/173/Q173586/
+permalink: /kb/173/Q173586/
 ---
 
 ## Q173586: How to Reset Your MSN Password

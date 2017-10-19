@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169890: Enable PPTP Filtering Option No Longer Works"
-permalink: kb/169/Q169890/
+permalink: /kb/169/Q169890/
 ---
 
 ## Q169890: Enable PPTP Filtering Option No Longer Works

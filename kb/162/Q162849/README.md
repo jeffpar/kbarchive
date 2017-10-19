@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162849: KiXtart Script Error: Unknown Macro"
-permalink: kb/162/Q162849/
+permalink: /kb/162/Q162849/
 ---
 
 ## Q162849: KiXtart Script Error: Unknown Macro

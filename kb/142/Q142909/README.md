@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142909: Files Needed to Set Up Windows NT 3.5 and 3.51 RAS"
-permalink: kb/142/Q142909/
+permalink: /kb/142/Q142909/
 ---
 
 ## Q142909: Files Needed to Set Up Windows NT 3.5 and 3.51 RAS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235797: SMS: Client Logon Scripts Do Not Function over a RAS Link"
-permalink: kb/235/Q235797/
+permalink: /kb/235/Q235797/
 ---
 
 ## Q235797: SMS: Client Logon Scripts Do Not Function over a RAS Link

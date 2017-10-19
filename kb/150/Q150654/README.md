@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150654: MSB Ocean: Contents of the Readme File"
-permalink: kb/150/Q150654/
+permalink: /kb/150/Q150654/
 ---
 
 ## Q150654: MSB Ocean: Contents of the Readme File

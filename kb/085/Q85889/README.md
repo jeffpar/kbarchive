@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85889: PRB: &quot;Unrecognized Linker Switch /NOP&quot; Linking Setup Toolkit"
-permalink: kb/085/Q85889/
+permalink: /kb/085/Q85889/
 ---
 
 ## Q85889: PRB: &quot;Unrecognized Linker Switch /NOP&quot; Linking Setup Toolkit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154104: Restoring a Deleted Microsoft Exchange Information Service"
-permalink: kb/154/Q154104/
+permalink: /kb/154/Q154104/
 ---
 
 ## Q154104: Restoring a Deleted Microsoft Exchange Information Service

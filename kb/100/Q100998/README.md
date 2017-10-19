@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100998: BUG: ? Command with FONT Clause Prints Double Spaced"
-permalink: kb/100/Q100998/
+permalink: /kb/100/Q100998/
 ---
 
 ## Q100998: BUG: ? Command with FONT Clause Prints Double Spaced

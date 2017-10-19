@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214493: FIX: Project Differences Report for Identical Files"
-permalink: kb/214/Q214493/
+permalink: /kb/214/Q214493/
 ---
 
 ## Q214493: FIX: Project Differences Report for Identical Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96284: FoxUSER File Contents"
-permalink: kb/096/Q96284/
+permalink: /kb/096/Q96284/
 ---
 
 ## Q96284: FoxUSER File Contents

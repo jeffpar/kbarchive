@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152684: XCLN: Reinstalling Exchange Client Deletes Files"
-permalink: kb/152/Q152684/
+permalink: /kb/152/Q152684/
 ---
 
 ## Q152684: XCLN: Reinstalling Exchange Client Deletes Files

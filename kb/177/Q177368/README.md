@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177368: Bookshelf 96-97: Lookup Reference Does Not Function in Word 97"
-permalink: kb/177/Q177368/
+permalink: /kb/177/Q177368/
 ---
 
 ## Q177368: Bookshelf 96-97: Lookup Reference Does Not Function in Word 97

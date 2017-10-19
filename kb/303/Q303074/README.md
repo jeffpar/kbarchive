@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303074: Academic Learning Series Microsoft Windows 2000 Network Security"
-permalink: kb/303/Q303074/
+permalink: /kb/303/Q303074/
 ---
 
 ## Q303074: Academic Learning Series Microsoft Windows 2000 Network Security

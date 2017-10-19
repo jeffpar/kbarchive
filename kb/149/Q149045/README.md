@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149045: XCLN: RPC Files Installed w/ Windows 3.x &amp; MS-DOS Clients"
-permalink: kb/149/Q149045/
+permalink: /kb/149/Q149045/
 ---
 
 ## Q149045: XCLN: RPC Files Installed w/ Windows 3.x &amp; MS-DOS Clients

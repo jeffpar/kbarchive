@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183858: Ipconfig.exe Usage for MS-DOS 3.0 Network Client"
-permalink: kb/183/Q183858/
+permalink: /kb/183/Q183858/
 ---
 
 ## Q183858: Ipconfig.exe Usage for MS-DOS 3.0 Network Client

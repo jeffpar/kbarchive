@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82589: Becker Tools Running with MS-DOS 5.0 and Windows 3.1"
-permalink: kb/082/Q82589/
+permalink: /kb/082/Q82589/
 ---
 
 ## Q82589: Becker Tools Running with MS-DOS 5.0 and Windows 3.1

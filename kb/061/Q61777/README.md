@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61777: Why GlobalAlloc() Returns a Handle to a 0-Byte Segment"
-permalink: kb/061/Q61777/
+permalink: /kb/061/Q61777/
 ---
 
 ## Q61777: Why GlobalAlloc() Returns a Handle to a 0-Byte Segment

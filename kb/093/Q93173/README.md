@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93173: PC Win: Description of 3.0b Setup Process"
-permalink: kb/093/Q93173/
+permalink: /kb/093/Q93173/
 ---
 
 ## Q93173: PC Win: Description of 3.0b Setup Process

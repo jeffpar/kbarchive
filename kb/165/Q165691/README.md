@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165691: INFO: Visual C++ 5.0 Readme, Sample Program Issues"
-permalink: kb/165/Q165691/
+permalink: /kb/165/Q165691/
 ---
 
 ## Q165691: INFO: Visual C++ 5.0 Readme, Sample Program Issues

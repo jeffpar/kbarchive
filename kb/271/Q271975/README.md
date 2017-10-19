@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271975: XADM: Folders in English Instead of Brazilian or Portuguese"
-permalink: kb/271/Q271975/
+permalink: /kb/271/Q271975/
 ---
 
 ## Q271975: XADM: Folders in English Instead of Brazilian or Portuguese

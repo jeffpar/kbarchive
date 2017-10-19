@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136932: SMS Fails to Upgrade MS-DOS and Windows on NetWare Clients"
-permalink: kb/136/Q136932/
+permalink: /kb/136/Q136932/
 ---
 
 ## Q136932: SMS Fails to Upgrade MS-DOS and Windows on NetWare Clients

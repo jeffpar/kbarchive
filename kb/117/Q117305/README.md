@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117305: Err Msg: TCP Unloaded with Madge Smart Ringnode Driver"
-permalink: kb/117/Q117305/
+permalink: /kb/117/Q117305/
 ---
 
 ## Q117305: Err Msg: TCP Unloaded with Madge Smart Ringnode Driver

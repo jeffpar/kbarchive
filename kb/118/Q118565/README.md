@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118565: X400: Use BODYPART.CFG File for Body-Part Typing/Tagging"
-permalink: kb/118/Q118565/
+permalink: /kb/118/Q118565/
 ---
 
 ## Q118565: X400: Use BODYPART.CFG File for Body-Part Typing/Tagging

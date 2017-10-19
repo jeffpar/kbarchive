@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134798: Screen Saver Causes STOP 0XC000021A Under Windows NT"
-permalink: kb/134/Q134798/
+permalink: /kb/134/Q134798/
 ---
 
 ## Q134798: Screen Saver Causes STOP 0XC000021A Under Windows NT

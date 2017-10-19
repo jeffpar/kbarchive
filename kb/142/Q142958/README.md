@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142958: CTRL Key Combinations Not Working If Set to United Kingdom"
-permalink: kb/142/Q142958/
+permalink: /kb/142/Q142958/
 ---
 
 ## Q142958: CTRL Key Combinations Not Working If Set to United Kingdom

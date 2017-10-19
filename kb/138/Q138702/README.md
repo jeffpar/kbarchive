@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138702: STOP 0x7F when Running Network Monitor Agent"
-permalink: kb/138/Q138702/
+permalink: /kb/138/Q138702/
 ---
 
 ## Q138702: STOP 0x7F when Running Network Monitor Agent

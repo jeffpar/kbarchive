@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100819: NET.TXT: Updating LAN Manager 1.x Enhanced Networks"
-permalink: kb/100/Q100819/
+permalink: /kb/100/Q100819/
 ---
 
 ## Q100819: NET.TXT: Updating LAN Manager 1.x Enhanced Networks

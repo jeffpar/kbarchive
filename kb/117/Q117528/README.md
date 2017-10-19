@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117528: List of Major CD-ROM Drive Manufacturers (P)"
-permalink: kb/117/Q117528/
+permalink: /kb/117/Q117528/
 ---
 
 ## Q117528: List of Major CD-ROM Drive Manufacturers (P)

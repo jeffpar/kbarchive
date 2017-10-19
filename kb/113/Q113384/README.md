@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113384: Bookshelf: Highlights on Search Words in Article Disappear"
-permalink: kb/113/Q113384/
+permalink: /kb/113/Q113384/
 ---
 
 ## Q113384: Bookshelf: Highlights on Search Words in Article Disappear

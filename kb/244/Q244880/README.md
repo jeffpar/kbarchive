@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244880: Problems When You Play Flight Simulator 2000 on Windows NT 4.0"
-permalink: kb/244/Q244880/
+permalink: /kb/244/Q244880/
 ---
 
 ## Q244880: Problems When You Play Flight Simulator 2000 on Windows NT 4.0

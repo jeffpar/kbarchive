@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153818: Running SMSVIEW Removes Permissions On Existing SMS Views"
-permalink: kb/153/Q153818/
+permalink: /kb/153/Q153818/
 ---
 
 ## Q153818: Running SMSVIEW Removes Permissions On Existing SMS Views

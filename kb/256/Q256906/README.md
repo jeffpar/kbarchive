@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256906: SNA Server Fails Unexpectedly with Access Violation in S1PROLU6"
-permalink: kb/256/Q256906/
+permalink: /kb/256/Q256906/
 ---
 
 ## Q256906: SNA Server Fails Unexpectedly with Access Violation in S1PROLU6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186509: Terminal Server Commands: CPROFILE"
-permalink: kb/186/Q186509/
+permalink: /kb/186/Q186509/
 ---
 
 ## Q186509: Terminal Server Commands: CPROFILE

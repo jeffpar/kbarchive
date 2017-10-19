@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133715: FIX: Resource Editor Cannot Set LVS_OWNERDRAWFIXED Style"
-permalink: kb/133/Q133715/
+permalink: /kb/133/Q133715/
 ---
 
 ## Q133715: FIX: Resource Editor Cannot Set LVS_OWNERDRAWFIXED Style

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254509: IIS Support Resources for Resolving HTTP Error Messages"
-permalink: kb/254/Q254509/
+permalink: /kb/254/Q254509/
 ---
 
 ## Q254509: IIS Support Resources for Resolving HTTP Error Messages

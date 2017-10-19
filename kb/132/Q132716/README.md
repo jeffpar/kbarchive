@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132716: Dogs: Alt+Tab Key Combination Disabled in Canine Consultant"
-permalink: kb/132/Q132716/
+permalink: /kb/132/Q132716/
 ---
 
 ## Q132716: Dogs: Alt+Tab Key Combination Disabled in Canine Consultant

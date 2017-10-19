@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186754: XWEB: No Send Again Button on NDRs in OWA Client"
-permalink: kb/186/Q186754/
+permalink: /kb/186/Q186754/
 ---
 
 ## Q186754: XWEB: No Send Again Button on NDRs in OWA Client

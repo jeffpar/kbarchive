@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130667: PRB: F12 Causes Hard-Coded Breakpoint Exception When Debugging"
-permalink: kb/130/Q130667/
+permalink: /kb/130/Q130667/
 ---
 
 ## Q130667: PRB: F12 Causes Hard-Coded Breakpoint Exception When Debugging

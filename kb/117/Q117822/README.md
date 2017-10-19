@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117822: Cinemania: Special and Foreign Characters Change When Copied"
-permalink: kb/117/Q117822/
+permalink: /kb/117/Q117822/
 ---
 
 ## Q117822: Cinemania: Special and Foreign Characters Change When Copied

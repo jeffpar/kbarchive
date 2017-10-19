@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139422: FIX: Advanced Options for SDI Application in Appwizard"
-permalink: kb/139/Q139422/
+permalink: /kb/139/Q139422/
 ---
 
 ## Q139422: FIX: Advanced Options for SDI Application in Appwizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164350: NEC IDE CD-ROM Drive CDR-1400C Cannot Play Audio CDs"
-permalink: kb/164/Q164350/
+permalink: /kb/164/Q164350/
 ---
 
 ## Q164350: NEC IDE CD-ROM Drive CDR-1400C Cannot Play Audio CDs

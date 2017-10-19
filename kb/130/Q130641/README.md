@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130641: MS-DOS-Based Application Hangs on Beep Under Windows NT"
-permalink: kb/130/Q130641/
+permalink: /kb/130/Q130641/
 ---
 
 ## Q130641: MS-DOS-Based Application Hangs on Beep Under Windows NT

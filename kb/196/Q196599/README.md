@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196599: FIX: Visual SourceSafe Hangs With Recursive Get on &#36;/ With Label"
-permalink: kb/196/Q196599/
+permalink: /kb/196/Q196599/
 ---
 
 ## Q196599: FIX: Visual SourceSafe Hangs With Recursive Get on &#36;/ With Label

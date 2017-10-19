@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193612: Log Files Rolled Over According to GMT, Not Local Time Zone"
-permalink: kb/193/Q193612/
+permalink: /kb/193/Q193612/
 ---
 
 ## Q193612: Log Files Rolled Over According to GMT, Not Local Time Zone

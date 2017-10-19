@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306579: BUG: ODBC Application Terminates When CTRL+ALT+DEL Pressed"
-permalink: kb/306/Q306579/
+permalink: /kb/306/Q306579/
 ---
 
 ## Q306579: BUG: ODBC Application Terminates When CTRL+ALT+DEL Pressed

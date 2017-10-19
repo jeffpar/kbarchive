@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165302: WD97: Numbered Page Break Added When File Opened in 7.0"
-permalink: kb/165/Q165302/
+permalink: /kb/165/Q165302/
 ---
 
 ## Q165302: WD97: Numbered Page Break Added When File Opened in 7.0

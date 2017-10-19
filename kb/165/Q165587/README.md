@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165587: TrueType Not Printing on Remote Print Servers"
-permalink: kb/165/Q165587/
+permalink: /kb/165/Q165587/
 ---
 
 ## Q165587: TrueType Not Printing on Remote Print Servers

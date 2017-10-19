@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189119: UserEnv Returns Corrupted Profile for All Failures"
-permalink: kb/189/Q189119/
+permalink: /kb/189/Q189119/
 ---
 
 ## Q189119: UserEnv Returns Corrupted Profile for All Failures

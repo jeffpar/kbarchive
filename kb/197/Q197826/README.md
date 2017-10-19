@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197826: WD97: Underline Formatting Does Not Appear at End of Line"
-permalink: kb/197/Q197826/
+permalink: /kb/197/Q197826/
 ---
 
 ## Q197826: WD97: Underline Formatting Does Not Appear at End of Line

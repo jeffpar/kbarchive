@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291800: Fatal Exception Error when Attempting Multiplayer Connection"
-permalink: kb/291/Q291800/
+permalink: /kb/291/Q291800/
 ---
 
 ## Q291800: Fatal Exception Error when Attempting Multiplayer Connection

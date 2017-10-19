@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142611: WOW: GP Fault in Ddeml.dll Using Visual Basic Application"
-permalink: kb/142/Q142611/
+permalink: /kb/142/Q142611/
 ---
 
 ## Q142611: WOW: GP Fault in Ddeml.dll Using Visual Basic Application

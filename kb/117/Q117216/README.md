@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117216: File Search User-Defined Function (UDF) Example"
-permalink: kb/117/Q117216/
+permalink: /kb/117/Q117216/
 ---
 
 ## Q117216: File Search User-Defined Function (UDF) Example

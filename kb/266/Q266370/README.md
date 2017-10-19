@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266370: PRB: Controls Using FoxFont Unreadable on Arabic or Hebrew"
-permalink: kb/266/Q266370/
+permalink: /kb/266/Q266370/
 ---
 
 ## Q266370: PRB: Controls Using FoxFont Unreadable on Arabic or Hebrew

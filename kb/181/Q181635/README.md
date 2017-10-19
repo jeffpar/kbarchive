@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181635: XWEB: End Date of Appointment or Meeting Changes Incorrectly"
-permalink: kb/181/Q181635/
+permalink: /kb/181/Q181635/
 ---
 
 ## Q181635: XWEB: End Date of Appointment or Meeting Changes Incorrectly

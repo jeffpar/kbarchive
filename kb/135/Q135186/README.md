@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135186: Open Dialog Box Does Not Work After Using Long Filename"
-permalink: kb/135/Q135186/
+permalink: /kb/135/Q135186/
 ---
 
 ## Q135186: Open Dialog Box Does Not Work After Using Long Filename

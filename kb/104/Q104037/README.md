@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104037: Microsoft Backup Doesn't Write to Second Disk After Time-Out"
-permalink: kb/104/Q104037/
+permalink: /kb/104/Q104037/
 ---
 
 ## Q104037: Microsoft Backup Doesn't Write to Second Disk After Time-Out

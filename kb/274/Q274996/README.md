@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274996: Cannot Delete Exchsrvr Folder w. a &quot;SHARING VIOLATION&quot; Err Msg"
-permalink: kb/274/Q274996/
+permalink: /kb/274/Q274996/
 ---
 
 ## Q274996: Cannot Delete Exchsrvr Folder w. a &quot;SHARING VIOLATION&quot; Err Msg

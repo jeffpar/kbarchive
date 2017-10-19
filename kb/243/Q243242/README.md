@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243242: XADM: Mailbox Manager Application Error with Exclude Mailboxes"
-permalink: kb/243/Q243242/
+permalink: /kb/243/Q243242/
 ---
 
 ## Q243242: XADM: Mailbox Manager Application Error with Exclude Mailboxes

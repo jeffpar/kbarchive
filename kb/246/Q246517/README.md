@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246517: XADM: Unable to Resolve DL from the Global Address List"
-permalink: kb/246/Q246517/
+permalink: /kb/246/Q246517/
 ---
 
 ## Q246517: XADM: Unable to Resolve DL from the Global Address List

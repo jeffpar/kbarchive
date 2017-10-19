@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148623: BUG: Assumed-Size Array Allowed in Integer POINTER Statement"
-permalink: kb/148/Q148623/
+permalink: /kb/148/Q148623/
 ---
 
 ## Q148623: BUG: Assumed-Size Array Allowed in Integer POINTER Statement

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133701: Forward Slash May Be Ignored As A Path Delimiter In 3.51"
-permalink: kb/133/Q133701/
+permalink: /kb/133/Q133701/
 ---
 
 ## Q133701: Forward Slash May Be Ignored As A Path Delimiter In 3.51

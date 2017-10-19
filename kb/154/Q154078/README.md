@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154078: HOWTO: Send Raw Data to a Printer Using the Win32 API from VB"
-permalink: kb/154/Q154078/
+permalink: /kb/154/Q154078/
 ---
 
 ## Q154078: HOWTO: Send Raw Data to a Printer Using the Win32 API from VB

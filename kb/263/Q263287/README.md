@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263287: VFP6 Sample: Sets Print Options Without Printer Prompt Command"
-permalink: kb/263/Q263287/
+permalink: /kb/263/Q263287/
 ---
 
 ## Q263287: VFP6 Sample: Sets Print Options Without Printer Prompt Command

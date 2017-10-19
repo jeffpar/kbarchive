@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109878: FIX: Commas in NAMELIST Data Fields Cause F6511"
-permalink: kb/109/Q109878/
+permalink: /kb/109/Q109878/
 ---
 
 ## Q109878: FIX: Commas in NAMELIST Data Fields Cause F6511

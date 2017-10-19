@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156301: INFO: STL Sample for the partition Function"
-permalink: kb/156/Q156301/
+permalink: /kb/156/Q156301/
 ---
 
 ## Q156301: INFO: STL Sample for the partition Function

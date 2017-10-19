@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46524: PRB: File Handles Cannot Be Shared Between Programs or DLLs"
-permalink: kb/046/Q46524/
+permalink: /kb/046/Q46524/
 ---
 
 ## Q46524: PRB: File Handles Cannot Be Shared Between Programs or DLLs

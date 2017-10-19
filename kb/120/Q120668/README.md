@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120668: BUG: Trigraph Statements May Produce End-of-File Error"
-permalink: kb/120/Q120668/
+permalink: /kb/120/Q120668/
 ---
 
 ## Q120668: BUG: Trigraph Statements May Produce End-of-File Error

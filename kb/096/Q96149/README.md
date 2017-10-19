@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96149: Installing Wollongong Pathway Access on WfW"
-permalink: kb/096/Q96149/
+permalink: /kb/096/Q96149/
 ---
 
 ## Q96149: Installing Wollongong Pathway Access on WfW

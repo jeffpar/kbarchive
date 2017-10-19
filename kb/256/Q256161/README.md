@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256161: HOWTO: Get PCMCIA Socket Information"
-permalink: kb/256/Q256161/
+permalink: /kb/256/Q256161/
 ---
 
 ## Q256161: HOWTO: Get PCMCIA Socket Information

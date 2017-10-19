@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159296: XCON: MTA May Log Event ID 2187 for Specific DAT Files"
-permalink: kb/159/Q159296/
+permalink: /kb/159/Q159296/
 ---
 
 ## Q159296: XCON: MTA May Log Event ID 2187 for Specific DAT Files

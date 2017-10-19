@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158025: GEX Error Message: Cannot Find Dsound.dll"
-permalink: kb/158/Q158025/
+permalink: /kb/158/Q158025/
 ---
 
 ## Q158025: GEX Error Message: Cannot Find Dsound.dll

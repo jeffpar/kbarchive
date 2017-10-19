@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90227: Changes Lost or Cannot Save Changes"
-permalink: kb/090/Q90227/
+permalink: /kb/090/Q90227/
 ---
 
 ## Q90227: Changes Lost or Cannot Save Changes

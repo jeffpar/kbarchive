@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137107: Questions and Answers About Newsgroups on MSN"
-permalink: kb/137/Q137107/
+permalink: /kb/137/Q137107/
 ---
 
 ## Q137107: Questions and Answers About Newsgroups on MSN

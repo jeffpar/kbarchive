@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126749: Err Msg: System in Protected Mode. System Halted"
-permalink: kb/126/Q126749/
+permalink: /kb/126/Q126749/
 ---
 
 ## Q126749: Err Msg: System in Protected Mode. System Halted

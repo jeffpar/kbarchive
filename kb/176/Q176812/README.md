@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176812: XADM: 5.5 Exchange Admin Indicates Incorrect Build Number"
-permalink: kb/176/Q176812/
+permalink: /kb/176/Q176812/
 ---
 
 ## Q176812: XADM: 5.5 Exchange Admin Indicates Incorrect Build Number

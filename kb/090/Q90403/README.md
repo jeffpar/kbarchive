@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90403: PC Win: Send Mail Feature and Microsoft Word for Windows"
-permalink: kb/090/Q90403/
+permalink: /kb/090/Q90403/
 ---
 
 ## Q90403: PC Win: Send Mail Feature and Microsoft Word for Windows

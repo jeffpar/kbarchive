@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257989: HOWTO: Pin and Unpin Files in VSS from OLE Automation in VC++"
-permalink: kb/257/Q257989/
+permalink: /kb/257/Q257989/
 ---
 
 ## Q257989: HOWTO: Pin and Unpin Files in VSS from OLE Automation in VC++

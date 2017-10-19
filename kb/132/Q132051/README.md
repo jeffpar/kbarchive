@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132051: How the Color of Screen and GET Objects Is Converted"
-permalink: kb/132/Q132051/
+permalink: /kb/132/Q132051/
 ---
 
 ## Q132051: How the Color of Screen and GET Objects Is Converted

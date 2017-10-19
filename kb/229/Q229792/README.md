@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229792: INFO: Maximum Number of Array Elements in Visual Basic 6.0"
-permalink: kb/229/Q229792/
+permalink: /kb/229/Q229792/
 ---
 
 ## Q229792: INFO: Maximum Number of Array Elements in Visual Basic 6.0

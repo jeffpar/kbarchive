@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69895: PRB: Activating Full-Screen DOS App from Icon in Enhanced Mode"
-permalink: kb/069/Q69895/
+permalink: /kb/069/Q69895/
 ---
 
 ## Q69895: PRB: Activating Full-Screen DOS App from Icon in Enhanced Mode

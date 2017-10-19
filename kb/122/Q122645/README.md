@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122645: Copy Request on Clients Fail with GSNW in Windows NT Server"
-permalink: kb/122/Q122645/
+permalink: /kb/122/Q122645/
 ---
 
 ## Q122645: Copy Request on Clients Fail with GSNW in Windows NT Server

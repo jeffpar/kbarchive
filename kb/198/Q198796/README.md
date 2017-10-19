@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198796: IAS Cannot Authenticate to Windows NT Domain Using CHAP"
-permalink: kb/198/Q198796/
+permalink: /kb/198/Q198796/
 ---
 
 ## Q198796: IAS Cannot Authenticate to Windows NT Domain Using CHAP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271131: Use the DRDA_VB Sample for DB2OLEDB"
-permalink: kb/271/Q271131/
+permalink: /kb/271/Q271131/
 ---
 
 ## Q271131: Use the DRDA_VB Sample for DB2OLEDB

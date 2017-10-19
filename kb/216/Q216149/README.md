@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216149: How to Install ODBC or MDAC on Terminal Server"
-permalink: kb/216/Q216149/
+permalink: /kb/216/Q216149/
 ---
 
 ## Q216149: How to Install ODBC or MDAC on Terminal Server

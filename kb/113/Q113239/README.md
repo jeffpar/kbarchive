@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113239: X.25 Support with Windows for Workgroups 3.11 RAS"
-permalink: kb/113/Q113239/
+permalink: /kb/113/Q113239/
 ---
 
 ## Q113239: X.25 Support with Windows for Workgroups 3.11 RAS

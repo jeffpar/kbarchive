@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121947: How to Create a Modal Dialog from Within a USRDLL"
-permalink: kb/121/Q121947/
+permalink: /kb/121/Q121947/
 ---
 
 ## Q121947: How to Create a Modal Dialog from Within a USRDLL

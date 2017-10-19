@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90212: PROTOCOL.INI File Open Failure with Stacker"
-permalink: kb/090/Q90212/
+permalink: /kb/090/Q90212/
 ---
 
 ## Q90212: PROTOCOL.INI File Open Failure with Stacker

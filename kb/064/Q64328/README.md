@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64328: Owner-Draw: OdButton.exe - 3-D Push Button"
-permalink: kb/064/Q64328/
+permalink: /kb/064/Q64328/
 ---
 
 ## Q64328: Owner-Draw: OdButton.exe - 3-D Push Button

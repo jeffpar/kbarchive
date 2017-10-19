@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118321: PC DB: Gateway Addresses and Template Information"
-permalink: kb/118/Q118321/
+permalink: /kb/118/Q118321/
 ---
 
 ## Q118321: PC DB: Gateway Addresses and Template Information

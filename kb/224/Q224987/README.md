@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224987: XFOR: NDR on Message Sent from Eastern European Outlook"
-permalink: kb/224/Q224987/
+permalink: /kb/224/Q224987/
 ---
 
 ## Q224987: XFOR: NDR on Message Sent from Eastern European Outlook

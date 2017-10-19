@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201063: XADM: Advanced Security Only Available for Mailboxes in Exchange"
-permalink: kb/201/Q201063/
+permalink: /kb/201/Q201063/
 ---
 
 ## Q201063: XADM: Advanced Security Only Available for Mailboxes in Exchange

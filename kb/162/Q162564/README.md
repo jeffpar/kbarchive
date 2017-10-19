@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162564: XCLN: Cannot Change Time of Recurring Appointments"
-permalink: kb/162/Q162564/
+permalink: /kb/162/Q162564/
 ---
 
 ## Q162564: XCLN: Cannot Change Time of Recurring Appointments

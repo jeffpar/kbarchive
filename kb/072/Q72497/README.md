@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72497: BUG: FatalExit() Interacts Through Terminal Only"
-permalink: kb/072/Q72497/
+permalink: /kb/072/Q72497/
 ---
 
 ## Q72497: BUG: FatalExit() Interacts Through Terminal Only

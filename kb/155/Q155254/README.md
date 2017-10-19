@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155254: Creating a Unique Default Home Page in a Different Directory"
-permalink: kb/155/Q155254/
+permalink: /kb/155/Q155254/
 ---
 
 ## Q155254: Creating a Unique Default Home Page in a Different Directory

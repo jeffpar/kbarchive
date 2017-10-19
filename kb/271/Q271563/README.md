@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271563: Host Name Error in DNS Properties After Changing Computer Name"
-permalink: kb/271/Q271563/
+permalink: /kb/271/Q271563/
 ---
 
 ## Q271563: Host Name Error in DNS Properties After Changing Computer Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104731: SORT Adds Extra Character to Sorted Output"
-permalink: kb/104/Q104731/
+permalink: /kb/104/Q104731/
 ---
 
 ## Q104731: SORT Adds Extra Character to Sorted Output

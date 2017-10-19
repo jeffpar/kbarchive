@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200250: XFOR: Importing .sc2 File into Outlook After Migration"
-permalink: kb/200/Q200250/
+permalink: /kb/200/Q200250/
 ---
 
 ## Q200250: XFOR: Importing .sc2 File into Outlook After Migration

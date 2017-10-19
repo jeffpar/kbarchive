@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301056: HOW TO: Debug a Migration DLL During a Windows 2000 Upgrade"
-permalink: kb/301/Q301056/
+permalink: /kb/301/Q301056/
 ---
 
 ## Q301056: HOW TO: Debug a Migration DLL During a Windows 2000 Upgrade

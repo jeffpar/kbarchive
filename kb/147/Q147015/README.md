@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147015: Expndsym.cmd Does Not Work for Cross-Platform Debug"
-permalink: kb/147/Q147015/
+permalink: /kb/147/Q147015/
 ---
 
 ## Q147015: Expndsym.cmd Does Not Work for Cross-Platform Debug

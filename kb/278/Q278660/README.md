@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278660: SMS: SMSCliToknAcct May Be Locked Out"
-permalink: kb/278/Q278660/
+permalink: /kb/278/Q278660/
 ---
 
 ## Q278660: SMS: SMSCliToknAcct May Be Locked Out

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q108836: PC Gen: PODIAG.INI Entries in [Microsoft Mail PO Diagnostics]"
-permalink: kb/108/Q108836/
+title: "Q108836: PC Gen: PODIAG.INI Entries in &#91;Microsoft Mail PO Diagnostics&#93;"
+permalink: /kb/108/Q108836/
 ---
 
-## Q108836: PC Gen: PODIAG.INI Entries in [Microsoft Mail PO Diagnostics]
+## Q108836: PC Gen: PODIAG.INI Entries in &#91;Microsoft Mail PO Diagnostics&#93;
 
 	Article: Q108836
 	Product(s): Microsoft Mail For PC Networks

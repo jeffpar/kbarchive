@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173922: Err Msg: Authentication Failed While Connecting to the Mail..."
-permalink: kb/173/Q173922/
+permalink: /kb/173/Q173922/
 ---
 
 ## Q173922: Err Msg: Authentication Failed While Connecting to the Mail...

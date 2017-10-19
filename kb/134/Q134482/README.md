@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134482: After Running Setup Uninstall, Directories Not Deleted"
-permalink: kb/134/Q134482/
+permalink: /kb/134/Q134482/
 ---
 
 ## Q134482: After Running Setup Uninstall, Directories Not Deleted

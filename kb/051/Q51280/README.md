@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51280: Mac Form: Minimum System Requirement for Running Form Designer"
-permalink: kb/051/Q51280/
+permalink: /kb/051/Q51280/
 ---
 
 ## Q51280: Mac Form: Minimum System Requirement for Running Form Designer

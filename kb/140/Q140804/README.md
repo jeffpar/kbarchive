@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140804: Dataloader Fails to Log an Error when a Binary Dump Fails"
-permalink: kb/140/Q140804/
+permalink: /kb/140/Q140804/
 ---
 
 ## Q140804: Dataloader Fails to Log an Error when a Binary Dump Fails

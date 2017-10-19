@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112873: SNMPTRAP Quits When Sending Information"
-permalink: kb/112/Q112873/
+permalink: /kb/112/Q112873/
 ---
 
 ## Q112873: SNMPTRAP Quits When Sending Information

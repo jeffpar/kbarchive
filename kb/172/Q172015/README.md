@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172015: FS95: Color and Markings (Aircraft Texture) Missing on Aircraft"
-permalink: kb/172/Q172015/
+permalink: /kb/172/Q172015/
 ---
 
 ## Q172015: FS95: Color and Markings (Aircraft Texture) Missing on Aircraft

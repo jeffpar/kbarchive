@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108443: Writer/Artist 1: Document Prints Strangely"
-permalink: kb/108/Q108443/
+permalink: /kb/108/Q108443/
 ---
 
 ## Q108443: Writer/Artist 1: Document Prints Strangely

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135727: BUG: VCMAC: Remote Debugger Hangs at Breakpoint"
-permalink: kb/135/Q135727/
+permalink: /kb/135/Q135727/
 ---
 
 ## Q135727: BUG: VCMAC: Remote Debugger Hangs at Breakpoint

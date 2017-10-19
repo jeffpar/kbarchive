@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200848: Stop 0xC000021a on Windows NT Server 4.0 with Service Pack 4"
-permalink: kb/200/Q200848/
+permalink: /kb/200/Q200848/
 ---
 
 ## Q200848: Stop 0xC000021a on Windows NT Server 4.0 with Service Pack 4

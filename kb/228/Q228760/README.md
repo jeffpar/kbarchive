@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228760: How to Use a HOSTS File to Test a Site That Uses Host Headers"
-permalink: kb/228/Q228760/
+permalink: /kb/228/Q228760/
 ---
 
 ## Q228760: How to Use a HOSTS File to Test a Site That Uses Host Headers

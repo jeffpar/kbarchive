@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317542: BUG: Cannot Unbind a Deleted and Destroyed VSS Project"
-permalink: kb/317/Q317542/
+permalink: /kb/317/Q317542/
 ---
 
 ## Q317542: BUG: Cannot Unbind a Deleted and Destroyed VSS Project

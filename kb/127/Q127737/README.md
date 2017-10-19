@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127737: PC Win: Cannot Sort Shared Folders with the Windows Client"
-permalink: kb/127/Q127737/
+permalink: /kb/127/Q127737/
 ---
 
 ## Q127737: PC Win: Cannot Sort Shared Folders with the Windows Client

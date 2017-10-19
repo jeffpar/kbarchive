@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93583: Unable to Connect to a Server Using Thomas Conrad TC6242 Card"
-permalink: kb/093/Q93583/
+permalink: /kb/093/Q93583/
 ---
 
 ## Q93583: Unable to Connect to a Server Using Thomas Conrad TC6242 Card

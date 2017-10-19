@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155770: FP: Registration Form not Supported on IIS Web Server"
-permalink: kb/155/Q155770/
+permalink: /kb/155/Q155770/
 ---
 
 ## Q155770: FP: Registration Form not Supported on IIS Web Server

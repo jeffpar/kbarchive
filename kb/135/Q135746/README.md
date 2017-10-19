@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135746: Conference Slide Show Keystrokes Don't Affect Audience Screens"
-permalink: kb/135/Q135746/
+permalink: /kb/135/Q135746/
 ---
 
 ## Q135746: Conference Slide Show Keystrokes Don't Affect Audience Screens

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149864: XADM: Compression of Replication Traffic"
-permalink: kb/149/Q149864/
+permalink: /kb/149/Q149864/
 ---
 
 ## Q149864: XADM: Compression of Replication Traffic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84849: No TrueType Identifiers in Programs Created Before Windows 3.1"
-permalink: kb/084/Q84849/
+permalink: /kb/084/Q84849/
 ---
 
 ## Q84849: No TrueType Identifiers in Programs Created Before Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225087: Writing Custom ADM Files For System Policy Editor"
-permalink: kb/225/Q225087/
+permalink: /kb/225/Q225087/
 ---
 
 ## Q225087: Writing Custom ADM Files For System Policy Editor

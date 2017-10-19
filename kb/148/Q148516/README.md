@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148516: WINNTP.EXE Fails If Windows 95 Boot Sector Is Installed"
-permalink: kb/148/Q148516/
+permalink: /kb/148/Q148516/
 ---
 
 ## Q148516: WINNTP.EXE Fails If Windows 95 Boot Sector Is Installed

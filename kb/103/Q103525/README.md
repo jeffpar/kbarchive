@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103525: Interactive Boot with Different Startup Batch File (/K)"
-permalink: kb/103/Q103525/
+permalink: /kb/103/Q103525/
 ---
 
 ## Q103525: Interactive Boot with Different Startup Batch File (/K)

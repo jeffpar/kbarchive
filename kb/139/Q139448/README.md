@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139448: PRB: &quot;Video for Windows is Not Installed&quot; Error"
-permalink: kb/139/Q139448/
+permalink: /kb/139/Q139448/
 ---
 
 ## Q139448: PRB: &quot;Video for Windows is Not Installed&quot; Error

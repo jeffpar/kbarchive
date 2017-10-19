@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95959: Intersvr Resets Screen Mode"
-permalink: kb/095/Q95959/
+permalink: /kb/095/Q95959/
 ---
 
 ## Q95959: Intersvr Resets Screen Mode

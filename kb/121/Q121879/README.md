@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121879: ISDN Server Does Not Answer Incoming Calls"
-permalink: kb/121/Q121879/
+permalink: /kb/121/Q121879/
 ---
 
 ## Q121879: ISDN Server Does Not Answer Incoming Calls

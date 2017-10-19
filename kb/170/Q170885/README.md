@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170885: WD97: How to Install Additional Fonts from the ValuPack Folder"
-permalink: kb/170/Q170885/
+permalink: /kb/170/Q170885/
 ---
 
 ## Q170885: WD97: How to Install Additional Fonts from the ValuPack Folder

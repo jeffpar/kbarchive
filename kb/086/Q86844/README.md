@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86844: PC WSPlus: Calendar File Must Be Available for Reminders"
-permalink: kb/086/Q86844/
+permalink: /kb/086/Q86844/
 ---
 
 ## Q86844: PC WSPlus: Calendar File Must Be Available for Reminders

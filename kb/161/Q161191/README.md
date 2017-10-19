@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161191: TN3270 Client Cannot Get Past the USSTAB Screen Using ENTER"
-permalink: kb/161/Q161191/
+permalink: /kb/161/Q161191/
 ---
 
 ## Q161191: TN3270 Client Cannot Get Past the USSTAB Screen Using ENTER

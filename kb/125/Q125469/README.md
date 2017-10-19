@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125469: PRB: Run-time Subroutines Do Not Appear to Function"
-permalink: kb/125/Q125469/
+permalink: /kb/125/Q125469/
 ---
 
 ## Q125469: PRB: Run-time Subroutines Do Not Appear to Function

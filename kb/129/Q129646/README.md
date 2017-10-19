@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129646: FIX: Error Routine Not Called for USE Command"
-permalink: kb/129/Q129646/
+permalink: /kb/129/Q129646/
 ---
 
 ## Q129646: FIX: Error Routine Not Called for USE Command

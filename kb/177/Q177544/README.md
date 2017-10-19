@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177544: XFOR: Fixed Length File Sent from OV/VM Using SENDFILE Corrupted"
-permalink: kb/177/Q177544/
+permalink: /kb/177/Q177544/
 ---
 
 ## Q177544: XFOR: Fixed Length File Sent from OV/VM Using SENDFILE Corrupted

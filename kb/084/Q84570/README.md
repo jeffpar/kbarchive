@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84570: Where Windows 3.1 Looks for the MOUSE.INI File"
-permalink: kb/084/Q84570/
+permalink: /kb/084/Q84570/
 ---
 
 ## Q84570: Where Windows 3.1 Looks for the MOUSE.INI File

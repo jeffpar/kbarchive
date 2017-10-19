@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247224: STOP 0x0000000A in Ndis.sys When Using Services for Macintosh"
-permalink: kb/247/Q247224/
+permalink: /kb/247/Q247224/
 ---
 
 ## Q247224: STOP 0x0000000A in Ndis.sys When Using Services for Macintosh

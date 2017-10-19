@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177932: INFO: How to Disable LMHOSTS Lookup During an Unattended Install"
-permalink: kb/177/Q177932/
+permalink: /kb/177/Q177932/
 ---
 
 ## Q177932: INFO: How to Disable LMHOSTS Lookup During an Unattended Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220844: HOWTO: Insert a Bitmap Into RTF Document Using RichEdit Control"
-permalink: kb/220/Q220844/
+permalink: /kb/220/Q220844/
 ---
 
 ## Q220844: HOWTO: Insert a Bitmap Into RTF Document Using RichEdit Control

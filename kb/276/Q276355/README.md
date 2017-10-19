@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276355: Microsoft Exchange 2000 Server Administrator's Pocket Consultant"
-permalink: kb/276/Q276355/
+permalink: /kb/276/Q276355/
 ---
 
 ## Q276355: Microsoft Exchange 2000 Server Administrator's Pocket Consultant

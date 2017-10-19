@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127913: Artist: Saved Documents Are Black with ATI Mach 64"
-permalink: kb/127/Q127913/
+permalink: /kb/127/Q127913/
 ---
 
 ## Q127913: Artist: Saved Documents Are Black with ATI Mach 64

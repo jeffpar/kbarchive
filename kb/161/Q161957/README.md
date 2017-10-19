@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161957: WD97: Word Stops When You Resume Spelling Check (Error in Field)"
-permalink: kb/161/Q161957/
+permalink: /kb/161/Q161957/
 ---
 
 ## Q161957: WD97: Word Stops When You Resume Spelling Check (Error in Field)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138158: How to Attach Multiple Files to Microsoft Exchange Messages"
-permalink: kb/138/Q138158/
+permalink: /kb/138/Q138158/
 ---
 
 ## Q138158: How to Attach Multiple Files to Microsoft Exchange Messages

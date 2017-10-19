@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186343: XCLN: Location of Attachments Shifted When Message Forwarded"
-permalink: kb/186/Q186343/
+permalink: /kb/186/Q186343/
 ---
 
 ## Q186343: XCLN: Location of Attachments Shifted When Message Forwarded

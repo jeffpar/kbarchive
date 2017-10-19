@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q109444: CONN: Err Msg: Error [68] Network Name Already in Use: MACNET"
-permalink: kb/109/Q109444/
+title: "Q109444: CONN: Err Msg: Error &#91;68&#93; Network Name Already in Use: MACNET"
+permalink: /kb/109/Q109444/
 ---
 
-## Q109444: CONN: Err Msg: Error [68] Network Name Already in Use: MACNET
+## Q109444: CONN: Err Msg: Error &#91;68&#93; Network Name Already in Use: MACNET
 
 	Article: Q109444
 	Product(s): Microsoft Mail For PC Networks

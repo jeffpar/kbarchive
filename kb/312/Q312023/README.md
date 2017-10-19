@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312023: UuidCreateSequential() Is Not Exported in Rpcrt4.dll from SP6a"
-permalink: kb/312/Q312023/
+permalink: /kb/312/Q312023/
 ---
 
 ## Q312023: UuidCreateSequential() Is Not Exported in Rpcrt4.dll from SP6a

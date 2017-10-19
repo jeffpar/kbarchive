@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98975: PC Setup: Err Msg: Can't Find MSSFS.DLL"
-permalink: kb/098/Q98975/
+permalink: /kb/098/Q98975/
 ---
 
 ## Q98975: PC Setup: Err Msg: Can't Find MSSFS.DLL

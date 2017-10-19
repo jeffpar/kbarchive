@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213289: Err Msg: &quot;Directory File Needed for Initialization Could Not...&quot;"
-permalink: kb/213/Q213289/
+permalink: /kb/213/Q213289/
 ---
 
 ## Q213289: Err Msg: &quot;Directory File Needed for Initialization Could Not...&quot;

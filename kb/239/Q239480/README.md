@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239480: XADM: Mailbox Manager Reports Do Not Count Single Instancing"
-permalink: kb/239/Q239480/
+permalink: /kb/239/Q239480/
 ---
 
 ## Q239480: XADM: Mailbox Manager Reports Do Not Count Single Instancing

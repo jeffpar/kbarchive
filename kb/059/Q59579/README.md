@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59579: Cannot ALT+TAB Out of Non-Windows Application"
-permalink: kb/059/Q59579/
+permalink: /kb/059/Q59579/
 ---
 
 ## Q59579: Cannot ALT+TAB Out of Non-Windows Application

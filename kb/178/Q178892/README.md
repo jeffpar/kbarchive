@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178892: XADM: DMS-Latest Delivery Settings Not Effective"
-permalink: kb/178/Q178892/
+permalink: /kb/178/Q178892/
 ---
 
 ## Q178892: XADM: DMS-Latest Delivery Settings Not Effective

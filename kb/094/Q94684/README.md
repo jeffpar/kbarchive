@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94684: Swap File Settings Change when Changing 32-Bit Disk Access"
-permalink: kb/094/Q94684/
+permalink: /kb/094/Q94684/
 ---
 
 ## Q94684: Swap File Settings Change when Changing 32-Bit Disk Access

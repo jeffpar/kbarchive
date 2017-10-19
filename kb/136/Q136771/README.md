@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136771: How to Verify If a Table Is Free or Belongs to a Database"
-permalink: kb/136/Q136771/
+permalink: /kb/136/Q136771/
 ---
 
 ## Q136771: How to Verify If a Table Is Free or Belongs to a Database

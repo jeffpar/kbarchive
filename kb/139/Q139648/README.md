@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139648: PRB: OLE Drop Target Does Not Permit Drop"
-permalink: kb/139/Q139648/
+permalink: /kb/139/Q139648/
 ---
 
 ## Q139648: PRB: OLE Drop Target Does Not Permit Drop

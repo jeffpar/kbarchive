@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248191: SCSI Time-Out Error Messages with EMC Symmetrix Disk Arrays"
-permalink: kb/248/Q248191/
+permalink: /kb/248/Q248191/
 ---
 
 ## Q248191: SCSI Time-Out Error Messages with EMC Symmetrix Disk Arrays

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96959: MS-DOS 6 Upgrade Supplemental Disks NET.TXT File"
-permalink: kb/096/Q96959/
+permalink: /kb/096/Q96959/
 ---
 
 ## Q96959: MS-DOS 6 Upgrade Supplemental Disks NET.TXT File

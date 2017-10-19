@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117324: Dependencies May Not Be Updated as Expected"
-permalink: kb/117/Q117324/
+permalink: /kb/117/Q117324/
 ---
 
 ## Q117324: Dependencies May Not Be Updated as Expected

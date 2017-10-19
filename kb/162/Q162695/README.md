@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162695: SMSINST: &quot;Access Denied&quot; Message When Connecting to a Printer"
-permalink: kb/162/Q162695/
+permalink: /kb/162/Q162695/
 ---
 
 ## Q162695: SMSINST: &quot;Access Denied&quot; Message When Connecting to a Printer

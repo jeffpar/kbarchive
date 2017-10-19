@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190128: XCLN: Messages with Attachments Sent over IMS, Attachments Move"
-permalink: kb/190/Q190128/
+permalink: /kb/190/Q190128/
 ---
 
 ## Q190128: XCLN: Messages with Attachments Sent over IMS, Attachments Move

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215391: BUG: Testing to See if the Current Form is &quot;Me&quot; Returns False"
-permalink: kb/215/Q215391/
+permalink: /kb/215/Q215391/
 ---
 
 ## Q215391: BUG: Testing to See if the Current Form is &quot;Me&quot; Returns False

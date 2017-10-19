@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98626: SAMPLE: Annotating and Printing Text and Ink Together"
-permalink: kb/098/Q98626/
+permalink: /kb/098/Q98626/
 ---
 
 ## Q98626: SAMPLE: Annotating and Printing Text and Ink Together

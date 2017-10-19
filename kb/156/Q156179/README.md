@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156179: HOWTO: Use the BoundTo Property to Store Numeric Values"
-permalink: kb/156/Q156179/
+permalink: /kb/156/Q156179/
 ---
 
 ## Q156179: HOWTO: Use the BoundTo Property to Store Numeric Values

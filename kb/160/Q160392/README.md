@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160392: Systems with 4 GB or More of RAM Cannot Boot Windows NT 4.0"
-permalink: kb/160/Q160392/
+permalink: /kb/160/Q160392/
 ---
 
 ## Q160392: Systems with 4 GB or More of RAM Cannot Boot Windows NT 4.0

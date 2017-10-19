@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86495: Actix Graphics Engine Causes Erratic Logitech Mouse"
-permalink: kb/086/Q86495/
+permalink: /kb/086/Q86495/
 ---
 
 ## Q86495: Actix Graphics Engine Causes Erratic Logitech Mouse

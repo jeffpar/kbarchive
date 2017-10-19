@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96452: Mac Wkst: PowerBooks Will Not Sleep or Spin Down"
-permalink: kb/096/Q96452/
+permalink: /kb/096/Q96452/
 ---
 
 ## Q96452: Mac Wkst: PowerBooks Will Not Sleep or Spin Down

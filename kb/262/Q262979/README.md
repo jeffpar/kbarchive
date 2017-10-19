@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262979: Cannot Renew Verisign Certificates in IIS 5.0"
-permalink: kb/262/Q262979/
+permalink: /kb/262/Q262979/
 ---
 
 ## Q262979: Cannot Renew Verisign Certificates in IIS 5.0

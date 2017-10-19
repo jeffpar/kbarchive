@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237279: WD97: Word Stops When You Use ApplyListTemplate Method"
-permalink: kb/237/Q237279/
+permalink: /kb/237/Q237279/
 ---
 
 ## Q237279: WD97: Word Stops When You Use ApplyListTemplate Method

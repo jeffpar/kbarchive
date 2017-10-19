@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240322: Err Msg: Kallisti Caused an Invalid Page Fault in Kallisti.exe"
-permalink: kb/240/Q240322/
+permalink: /kb/240/Q240322/
 ---
 
 ## Q240322: Err Msg: Kallisti Caused an Invalid Page Fault in Kallisti.exe

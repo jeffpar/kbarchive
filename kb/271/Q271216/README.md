@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271216: Fix for E-mail Issues Between 128-Bit and 56-Bit Encryption"
-permalink: kb/271/Q271216/
+permalink: /kb/271/Q271216/
 ---
 
 ## Q271216: Fix for E-mail Issues Between 128-Bit and 56-Bit Encryption

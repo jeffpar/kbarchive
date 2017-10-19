@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69383: CorelDRAW! Font Selection in High Resolution with Windows 3.0"
-permalink: kb/069/Q69383/
+permalink: /kb/069/Q69383/
 ---
 
 ## Q69383: CorelDRAW! Font Selection in High Resolution with Windows 3.0

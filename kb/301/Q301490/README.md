@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301490: Dialing: Changing ISP"
-permalink: kb/301/Q301490/
+permalink: /kb/301/Q301490/
 ---
 
 ## Q301490: Dialing: Changing ISP

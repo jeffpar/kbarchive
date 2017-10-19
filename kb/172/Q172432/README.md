@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172432: ODE97: Setup Wizard Doesn't Include Intl ActiveX Dependency DLL"
-permalink: kb/172/Q172432/
+permalink: /kb/172/Q172432/
 ---
 
 ## Q172432: ODE97: Setup Wizard Doesn't Include Intl ActiveX Dependency DLL

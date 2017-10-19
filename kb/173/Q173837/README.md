@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173837: Building Applications With Outlook 97 Comments and Corrections"
-permalink: kb/173/Q173837/
+permalink: /kb/173/Q173837/
 ---
 
 ## Q173837: Building Applications With Outlook 97 Comments and Corrections

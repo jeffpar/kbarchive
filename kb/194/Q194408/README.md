@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194408: Virtual Globe 99: Place Name Is Difficult to Read on Printed Map"
-permalink: kb/194/Q194408/
+permalink: /kb/194/Q194408/
 ---
 
 ## Q194408: Virtual Globe 99: Place Name Is Difficult to Read on Printed Map

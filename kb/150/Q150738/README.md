@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150738: Windows NT Hangs When Logging on After Regional Settings Change"
-permalink: kb/150/Q150738/
+permalink: /kb/150/Q150738/
 ---
 
 ## Q150738: Windows NT Hangs When Logging on After Regional Settings Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140593: PRB: Error &quot;File Names.dat may be corrupt&quot; Appears"
-permalink: kb/140/Q140593/
+permalink: /kb/140/Q140593/
 ---
 
 ## Q140593: PRB: Error &quot;File Names.dat may be corrupt&quot; Appears

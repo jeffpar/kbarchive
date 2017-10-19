@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277760: Passport Express Purchase Implementation Guide Release Notes"
-permalink: kb/277/Q277760/
+permalink: /kb/277/Q277760/
 ---
 
 ## Q277760: Passport Express Purchase Implementation Guide Release Notes

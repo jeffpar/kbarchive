@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136746: FilterKeys Notification Message"
-permalink: kb/136/Q136746/
+permalink: /kb/136/Q136746/
 ---
 
 ## Q136746: FilterKeys Notification Message

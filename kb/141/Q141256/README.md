@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141256: Bookshelf 1995: Add/Remove Bookshelf Does Not Update Shortcut"
-permalink: kb/141/Q141256/
+permalink: /kb/141/Q141256/
 ---
 
 ## Q141256: Bookshelf 1995: Add/Remove Bookshelf Does Not Update Shortcut

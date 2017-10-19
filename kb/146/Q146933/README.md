@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146933: XADM: Organization Name Change Will Not be Displayed"
-permalink: kb/146/Q146933/
+permalink: /kb/146/Q146933/
 ---
 
 ## Q146933: XADM: Organization Name Change Will Not be Displayed

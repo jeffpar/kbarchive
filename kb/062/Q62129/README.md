@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62129: Mac Hyp: Returning Message Field Contents"
-permalink: kb/062/Q62129/
+permalink: /kb/062/Q62129/
 ---
 
 ## Q62129: Mac Hyp: Returning Message Field Contents

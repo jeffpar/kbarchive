@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249308: Inside ATL Comments and Corrections"
-permalink: kb/249/Q249308/
+permalink: /kb/249/Q249308/
 ---
 
 ## Q249308: Inside ATL Comments and Corrections

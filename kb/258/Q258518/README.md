@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258518: RPC Unavailable Error Appears When You Try to Access a Cluster S"
-permalink: kb/258/Q258518/
+permalink: /kb/258/Q258518/
 ---
 
 ## Q258518: RPC Unavailable Error Appears When You Try to Access a Cluster S

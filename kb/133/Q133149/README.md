@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133149: Cannot Use Manual Feed with Schedule Plus Junior / Pocket Forms"
-permalink: kb/133/Q133149/
+permalink: /kb/133/Q133149/
 ---
 
 ## Q133149: Cannot Use Manual Feed with Schedule Plus Junior / Pocket Forms

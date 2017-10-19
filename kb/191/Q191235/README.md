@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191235: HOWTO: Use the Shared Property Manager in MTS Through VB Code"
-permalink: kb/191/Q191235/
+permalink: /kb/191/Q191235/
 ---
 
 ## Q191235: HOWTO: Use the Shared Property Manager in MTS Through VB Code

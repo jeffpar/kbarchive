@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132929: PRB: &quot;DDE Connection Failed&quot; When Viewing a File"
-permalink: kb/132/Q132929/
+permalink: /kb/132/Q132929/
 ---
 
 ## Q132929: PRB: &quot;DDE Connection Failed&quot; When Viewing a File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69898: Overcoming &quot;C4071 No Function Prototype Given&quot; Warning"
-permalink: kb/069/Q69898/
+permalink: /kb/069/Q69898/
 ---
 
 ## Q69898: Overcoming &quot;C4071 No Function Prototype Given&quot; Warning

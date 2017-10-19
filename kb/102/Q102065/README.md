@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102065: NET3100 Actually Indicates Physical Network Problem"
-permalink: kb/102/Q102065/
+permalink: /kb/102/Q102065/
 ---
 
 ## Q102065: NET3100 Actually Indicates Physical Network Problem

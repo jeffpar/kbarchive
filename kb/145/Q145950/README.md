@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145950: Setting Up NT On ALR Evolution V ST(e) Causes STOP 0x00000078"
-permalink: kb/145/Q145950/
+permalink: /kb/145/Q145950/
 ---
 
 ## Q145950: Setting Up NT On ALR Evolution V ST(e) Causes STOP 0x00000078

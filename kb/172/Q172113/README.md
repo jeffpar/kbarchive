@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172113: Bookshelf Intro: Refresh Button Returns You to Opening Screen"
-permalink: kb/172/Q172113/
+permalink: /kb/172/Q172113/
 ---
 
 ## Q172113: Bookshelf Intro: Refresh Button Returns You to Opening Screen

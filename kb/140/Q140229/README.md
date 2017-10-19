@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140229: PRB: C2027 When Using MFC Templated Collection Classes"
-permalink: kb/140/Q140229/
+permalink: /kb/140/Q140229/
 ---
 
 ## Q140229: PRB: C2027 When Using MFC Templated Collection Classes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165485: XFOR: MS Mail Connector requires a PRMD field in Site Addressing"
-permalink: kb/165/Q165485/
+permalink: /kb/165/Q165485/
 ---
 
 ## Q165485: XFOR: MS Mail Connector requires a PRMD field in Site Addressing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191870: INF: Poor Response Time Returning Multiple Mainframe Records"
-permalink: kb/191/Q191870/
+permalink: /kb/191/Q191870/
 ---
 
 ## Q191870: INF: Poor Response Time Returning Multiple Mainframe Records

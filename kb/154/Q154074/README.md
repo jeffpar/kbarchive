@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154074: Unable to View Unshared Printer in Windows NT 4.0 Printer Folder"
-permalink: kb/154/Q154074/
+permalink: /kb/154/Q154074/
 ---
 
 ## Q154074: Unable to View Unshared Printer in Windows NT 4.0 Printer Folder

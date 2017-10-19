@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107818: MWAV Err Msg: MWAVABSI.DLL ERROR Subdirectory Tree Is Full"
-permalink: kb/107/Q107818/
+permalink: /kb/107/Q107818/
 ---
 
 ## Q107818: MWAV Err Msg: MWAVABSI.DLL ERROR Subdirectory Tree Is Full

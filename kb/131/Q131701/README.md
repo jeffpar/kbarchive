@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131701: Systems Management Server Inventory Reports Incorrect CPU Speed"
-permalink: kb/131/Q131701/
+permalink: /kb/131/Q131701/
 ---
 
 ## Q131701: Systems Management Server Inventory Reports Incorrect CPU Speed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65163: How to Remove Spaces from an MS-DOS Filename or Subdirectory"
-permalink: kb/065/Q65163/
+permalink: /kb/065/Q65163/
 ---
 
 ## Q65163: How to Remove Spaces from an MS-DOS Filename or Subdirectory

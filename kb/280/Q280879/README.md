@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280879: SNA DB2 Service Not Removed During Upgrade"
-permalink: kb/280/Q280879/
+permalink: /kb/280/Q280879/
 ---
 
 ## Q280879: SNA DB2 Service Not Removed During Upgrade

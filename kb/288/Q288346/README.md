@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288346: BUG: BeforeUpdate Event of the DataGrid Does Not Always Fire"
-permalink: kb/288/Q288346/
+permalink: /kb/288/Q288346/
 ---
 
 ## Q288346: BUG: BeforeUpdate Event of the DataGrid Does Not Always Fire

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156202: Problems Changing Mouse in Windows NT with IntelliPoint 2.0"
-permalink: kb/156/Q156202/
+permalink: /kb/156/Q156202/
 ---
 
 ## Q156202: Problems Changing Mouse in Windows NT with IntelliPoint 2.0

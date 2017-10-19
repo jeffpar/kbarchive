@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129550: Unable to Install SMS Client Software with VSAFE"
-permalink: kb/129/Q129550/
+permalink: /kb/129/Q129550/
 ---
 
 ## Q129550: Unable to Install SMS Client Software with VSAFE

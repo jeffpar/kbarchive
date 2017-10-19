@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176890: FS95/98/2000: How to Use the POV Hat and POV Keyboard Commands"
-permalink: kb/176/Q176890/
+permalink: /kb/176/Q176890/
 ---
 
 ## Q176890: FS95/98/2000: How to Use the POV Hat and POV Keyboard Commands

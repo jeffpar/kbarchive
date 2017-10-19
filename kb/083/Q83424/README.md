@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83424: SETUP.TXT Contains Smartdrive and Stacker Error"
-permalink: kb/083/Q83424/
+permalink: /kb/083/Q83424/
 ---
 
 ## Q83424: SETUP.TXT Contains Smartdrive and Stacker Error

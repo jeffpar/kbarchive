@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122542: BUG: Incorrect Code for Loop with Known Value"
-permalink: kb/122/Q122542/
+permalink: /kb/122/Q122542/
 ---
 
 ## Q122542: BUG: Incorrect Code for Loop with Known Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238959: SMS: Access Violation in Winmgmt.exe"
-permalink: kb/238/Q238959/
+permalink: /kb/238/Q238959/
 ---
 
 ## Q238959: SMS: Access Violation in Winmgmt.exe

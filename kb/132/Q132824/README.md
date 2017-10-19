@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132824: Windows 95 Hangs on Dell Omniplex 486/66 Computers"
-permalink: kb/132/Q132824/
+permalink: /kb/132/Q132824/
 ---
 
 ## Q132824: Windows 95 Hangs on Dell Omniplex 486/66 Computers

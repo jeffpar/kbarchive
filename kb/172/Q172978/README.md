@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172978: Err Msg: Iexplore Caused a Stack Fault in Module Kernel32.dll."
-permalink: kb/172/Q172978/
+permalink: /kb/172/Q172978/
 ---
 
 ## Q172978: Err Msg: Iexplore Caused a Stack Fault in Module Kernel32.dll.

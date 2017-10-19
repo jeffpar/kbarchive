@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135696: FAX: Configuring PureData SatisFAXtion Fax Modems"
-permalink: kb/135/Q135696/
+permalink: /kb/135/Q135696/
 ---
 
 ## Q135696: FAX: Configuring PureData SatisFAXtion Fax Modems

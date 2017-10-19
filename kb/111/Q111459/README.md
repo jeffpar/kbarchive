@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111459: CONFIG and AUTOEXEC on Compressed and Host Drive Do Not Match"
-permalink: kb/111/Q111459/
+permalink: /kb/111/Q111459/
 ---
 
 ## Q111459: CONFIG and AUTOEXEC on Compressed and Host Drive Do Not Match

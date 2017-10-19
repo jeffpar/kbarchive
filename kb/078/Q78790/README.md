@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78790: Changing Header and Footer Commands in Notepad"
-permalink: kb/078/Q78790/
+permalink: /kb/078/Q78790/
 ---
 
 ## Q78790: Changing Header and Footer Commands in Notepad

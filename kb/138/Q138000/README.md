@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138000: Error Connecting to an Attachmate Gateway with a Cisco Router"
-permalink: kb/138/Q138000/
+permalink: /kb/138/Q138000/
 ---
 
 ## Q138000: Error Connecting to an Attachmate Gateway with a Cisco Router

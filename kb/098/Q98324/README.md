@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98324: BUG: Excel GP Faults When Passing Intersection"
-permalink: kb/098/Q98324/
+permalink: /kb/098/Q98324/
 ---
 
 ## Q98324: BUG: Excel GP Faults When Passing Intersection

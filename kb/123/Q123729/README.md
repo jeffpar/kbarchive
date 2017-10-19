@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123729: Accessing Command Line Arguments"
-permalink: kb/123/Q123729/
+permalink: /kb/123/Q123729/
 ---
 
 ## Q123729: Accessing Command Line Arguments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78773: FIX: Right Mouse Button Causes Remote Control Menus"
-permalink: kb/078/Q78773/
+permalink: /kb/078/Q78773/
 ---
 
 ## Q78773: FIX: Right Mouse Button Causes Remote Control Menus

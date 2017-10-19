@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273034: Cannot Share Printer if Spooler Service Not Using System Account"
-permalink: kb/273/Q273034/
+permalink: /kb/273/Q273034/
 ---
 
 ## Q273034: Cannot Share Printer if Spooler Service Not Using System Account

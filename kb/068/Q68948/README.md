@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68948: PPT: Importing Word for Windows Document into PowerPoint"
-permalink: kb/068/Q68948/
+permalink: /kb/068/Q68948/
 ---
 
 ## Q68948: PPT: Importing Word for Windows Document into PowerPoint

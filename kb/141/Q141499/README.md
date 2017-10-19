@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141499: VWRPLC32 Replacing a View in a CMDIChildWnd Window"
-permalink: kb/141/Q141499/
+permalink: /kb/141/Q141499/
 ---
 
 ## Q141499: VWRPLC32 Replacing a View in a CMDIChildWnd Window

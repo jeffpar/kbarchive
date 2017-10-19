@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177375: XFOR: Exchange SP1 Embedded Messages Appear as Raw MIME"
-permalink: kb/177/Q177375/
+permalink: /kb/177/Q177375/
 ---
 
 ## Q177375: XFOR: Exchange SP1 Embedded Messages Appear as Raw MIME

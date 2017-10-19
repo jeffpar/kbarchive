@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64820: Quicken Shows Up as Quattro During Windows Setup"
-permalink: kb/064/Q64820/
+permalink: /kb/064/Q64820/
 ---
 
 ## Q64820: Quicken Shows Up as Quattro During Windows Setup

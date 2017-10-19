@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187562: HOWTO: Resize the Controls in SSTab When Form is Resized"
-permalink: kb/187/Q187562/
+permalink: /kb/187/Q187562/
 ---
 
 ## Q187562: HOWTO: Resize the Controls in SSTab When Form is Resized

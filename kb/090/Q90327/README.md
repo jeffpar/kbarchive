@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90327: Intel EtherExpress (EE) 16 32K Buffer"
-permalink: kb/090/Q90327/
+permalink: /kb/090/Q90327/
 ---
 
 ## Q90327: Intel EtherExpress (EE) 16 32K Buffer

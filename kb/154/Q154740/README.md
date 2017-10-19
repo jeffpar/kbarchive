@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154740: PRB: Error Occurs when Exiting FoxPro Modal Form"
-permalink: kb/154/Q154740/
+permalink: /kb/154/Q154740/
 ---
 
 ## Q154740: PRB: Error Occurs when Exiting FoxPro Modal Form

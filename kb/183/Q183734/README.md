@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183734: How to Create Custom Abstracts for HTML Documents"
-permalink: kb/183/Q183734/
+permalink: /kb/183/Q183734/
 ---
 
 ## Q183734: How to Create Custom Abstracts for HTML Documents

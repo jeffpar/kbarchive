@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128613: SMS: WUSER GP Faults with Compaq Qvision Adapter"
-permalink: kb/128/Q128613/
+permalink: /kb/128/Q128613/
 ---
 
 ## Q128613: SMS: WUSER GP Faults with Compaq Qvision Adapter

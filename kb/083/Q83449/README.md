@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83449: Windows 3.1 Serial Communications Q &amp; A Part 1"
-permalink: kb/083/Q83449/
+permalink: /kb/083/Q83449/
 ---
 
 ## Q83449: Windows 3.1 Serial Communications Q &amp; A Part 1

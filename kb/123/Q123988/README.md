@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123988: Cannot Clear the Screen in HyperTerminal"
-permalink: kb/123/Q123988/
+permalink: /kb/123/Q123988/
 ---
 
 ## Q123988: Cannot Clear the Screen in HyperTerminal

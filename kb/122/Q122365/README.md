@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122365: Installing a New Driver After Updating with a U.S. Service Pack"
-permalink: kb/122/Q122365/
+permalink: /kb/122/Q122365/
 ---
 
 ## Q122365: Installing a New Driver After Updating with a U.S. Service Pack

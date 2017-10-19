@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242031: Certificate Server Updated to Use non-Microsoft X.509 CAs"
-permalink: kb/242/Q242031/
+permalink: /kb/242/Q242031/
 ---
 
 ## Q242031: Certificate Server Updated to Use non-Microsoft X.509 CAs

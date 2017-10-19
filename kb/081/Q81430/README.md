@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81430: Windows: Deleting Printer Driver While Printing"
-permalink: kb/081/Q81430/
+permalink: /kb/081/Q81430/
 ---
 
 ## Q81430: Windows: Deleting Printer Driver While Printing

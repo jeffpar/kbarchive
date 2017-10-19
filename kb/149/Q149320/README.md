@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149320: BUG: First ListItem Truncated with ListView in Report View"
-permalink: kb/149/Q149320/
+permalink: /kb/149/Q149320/
 ---
 
 ## Q149320: BUG: First ListItem Truncated with ListView in Report View

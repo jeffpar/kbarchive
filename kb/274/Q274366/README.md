@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274366: MSN Explorer &quot;Organize Favorites&quot; Page Fails To Display"
-permalink: kb/274/Q274366/
+permalink: /kb/274/Q274366/
 ---
 
 ## Q274366: MSN Explorer &quot;Organize Favorites&quot; Page Fails To Display

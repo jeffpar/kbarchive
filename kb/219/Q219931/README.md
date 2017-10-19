@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219931: SMS: CCIM Fails to Make a Connection to APM"
-permalink: kb/219/Q219931/
+permalink: /kb/219/Q219931/
 ---
 
 ## Q219931: SMS: CCIM Fails to Make a Connection to APM

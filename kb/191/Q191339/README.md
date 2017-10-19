@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191339: SMSINST: Corel Perfect Office Generates Registry Key Error"
-permalink: kb/191/Q191339/
+permalink: /kb/191/Q191339/
 ---
 
 ## Q191339: SMSINST: Corel Perfect Office Generates Registry Key Error

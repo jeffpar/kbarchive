@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123791: SNA Server Remote Station Discovery Process"
-permalink: kb/123/Q123791/
+permalink: /kb/123/Q123791/
 ---
 
 ## Q123791: SNA Server Remote Station Discovery Process

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136831: Windows 95 May Not Detect ATI Graphics Pro Turbo PCI Mach64"
-permalink: kb/136/Q136831/
+permalink: /kb/136/Q136831/
 ---
 
 ## Q136831: Windows 95 May Not Detect ATI Graphics Pro Turbo PCI Mach64

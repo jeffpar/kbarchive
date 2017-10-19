@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132625: S3 Adapter Using High Color Resolution May Have Blue Tint"
-permalink: kb/132/Q132625/
+permalink: /kb/132/Q132625/
 ---
 
 ## Q132625: S3 Adapter Using High Color Resolution May Have Blue Tint

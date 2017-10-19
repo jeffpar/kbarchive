@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198009: PRB: Calling String Conversion Macros in Catch Block Causes AV"
-permalink: kb/198/Q198009/
+permalink: /kb/198/Q198009/
 ---
 
 ## Q198009: PRB: Calling String Conversion Macros in Catch Block Causes AV

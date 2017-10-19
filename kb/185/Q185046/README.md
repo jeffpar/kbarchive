@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185046: Golf 98/99: Setup Does Not Start When You Insert the Golf CD-ROM"
-permalink: kb/185/Q185046/
+permalink: /kb/185/Q185046/
 ---
 
 ## Q185046: Golf 98/99: Setup Does Not Start When You Insert the Golf CD-ROM

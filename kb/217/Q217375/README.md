@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217375: INFO: Windows CE Toolkit for Visual Basic 6.0 Release Notes"
-permalink: kb/217/Q217375/
+permalink: /kb/217/Q217375/
 ---
 
 ## Q217375: INFO: Windows CE Toolkit for Visual Basic 6.0 Release Notes

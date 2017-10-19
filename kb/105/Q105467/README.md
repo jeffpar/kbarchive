@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105467: Windows NT CD Contents &#92;I386 (528)"
-permalink: kb/105/Q105467/
+permalink: /kb/105/Q105467/
 ---
 
 ## Q105467: Windows NT CD Contents &#92;I386 (528)

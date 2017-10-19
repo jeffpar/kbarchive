@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127023: Raw SMB Requests Across Router Results in Session Termination"
-permalink: kb/127/Q127023/
+permalink: /kb/127/Q127023/
 ---
 
 ## Q127023: Raw SMB Requests Across Router Results in Session Termination

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195892: Client Logon Fails When Password Change Required in User Mngr"
-permalink: kb/195/Q195892/
+permalink: /kb/195/Q195892/
 ---
 
 ## Q195892: Client Logon Fails When Password Change Required in User Mngr

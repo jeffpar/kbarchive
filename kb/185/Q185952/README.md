@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185952: Information from BDC Sent to PDC, and Then Replicated to Domain"
-permalink: kb/185/Q185952/
+permalink: /kb/185/Q185952/
 ---
 
 ## Q185952: Information from BDC Sent to PDC, and Then Replicated to Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233458: MSBP: Back Button on Wizard Toolbar Does Not Function"
-permalink: kb/233/Q233458/
+permalink: /kb/233/Q233458/
 ---
 
 ## Q233458: MSBP: Back Button on Wizard Toolbar Does Not Function

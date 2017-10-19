@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198079: WD97: Edit/Replace Changes Formatting of Previous Table Cells"
-permalink: kb/198/Q198079/
+permalink: /kb/198/Q198079/
 ---
 
 ## Q198079: WD97: Edit/Replace Changes Formatting of Previous Table Cells

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184353: DHCP ALT+H Shortcut Key for HELP Is Not Available"
-permalink: kb/184/Q184353/
+permalink: /kb/184/Q184353/
 ---
 
 ## Q184353: DHCP ALT+H Shortcut Key for HELP Is Not Available

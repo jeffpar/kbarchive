@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248472: Training Instructions State That You Are Facing Enemy Planes"
-permalink: kb/248/Q248472/
+permalink: /kb/248/Q248472/
 ---
 
 ## Q248472: Training Instructions State That You Are Facing Enemy Planes

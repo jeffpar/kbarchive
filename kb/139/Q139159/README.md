@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139159: How to Use a Builder to Change a Text Box Name to a Field Name"
-permalink: kb/139/Q139159/
+permalink: /kb/139/Q139159/
 ---
 
 ## Q139159: How to Use a Builder to Change a Text Box Name to a Field Name

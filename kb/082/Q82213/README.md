@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82213: Media Vision Multimedia Drivers May Have Problems Installing"
-permalink: kb/082/Q82213/
+permalink: /kb/082/Q82213/
 ---
 
 ## Q82213: Media Vision Multimedia Drivers May Have Problems Installing

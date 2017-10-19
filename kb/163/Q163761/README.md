@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163761: ASP Page Not Update Even if File Included in it Has Been Changed"
-permalink: kb/163/Q163761/
+permalink: /kb/163/Q163761/
 ---
 
 ## Q163761: ASP Page Not Update Even if File Included in it Has Been Changed

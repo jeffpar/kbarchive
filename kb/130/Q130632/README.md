@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130632: How to Determine Current Licensing Mode (Per Seat or Per Server)"
-permalink: kb/130/Q130632/
+permalink: /kb/130/Q130632/
 ---
 
 ## Q130632: How to Determine Current Licensing Mode (Per Seat or Per Server)

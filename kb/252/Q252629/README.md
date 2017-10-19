@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252629: Allegiance: Unable to Hear the Turrets Firing"
-permalink: kb/252/Q252629/
+permalink: /kb/252/Q252629/
 ---
 
 ## Q252629: Allegiance: Unable to Hear the Turrets Firing

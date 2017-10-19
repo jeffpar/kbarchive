@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250059: FIX: Accessing Print Drivers When Issuing SYS(1037) Causes Error"
-permalink: kb/250/Q250059/
+permalink: /kb/250/Q250059/
 ---
 
 ## Q250059: FIX: Accessing Print Drivers When Issuing SYS(1037) Causes Error

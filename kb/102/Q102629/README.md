@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102629: TCP, IP, ICMP, UDP Counters with PERFMON.EXE"
-permalink: kb/102/Q102629/
+permalink: /kb/102/Q102629/
 ---
 
 ## Q102629: TCP, IP, ICMP, UDP Counters with PERFMON.EXE

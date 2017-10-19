@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153788: Can't Run Administrative Setup from Word, Bookshelf CD-ROM"
-permalink: kb/153/Q153788/
+permalink: /kb/153/Q153788/
 ---
 
 ## Q153788: Can't Run Administrative Setup from Word, Bookshelf CD-ROM

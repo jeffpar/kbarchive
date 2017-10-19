@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69575: COPY Concatenates Files Based on Command Syntax"
-permalink: kb/069/Q69575/
+permalink: /kb/069/Q69575/
 ---
 
 ## Q69575: COPY Concatenates Files Based on Command Syntax

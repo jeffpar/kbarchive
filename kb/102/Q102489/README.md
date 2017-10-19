@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102489: Mac Gty: How to Extract and Install Access Gateways"
-permalink: kb/102/Q102489/
+permalink: /kb/102/Q102489/
 ---
 
 ## Q102489: Mac Gty: How to Extract and Install Access Gateways

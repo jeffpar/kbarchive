@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71486: Structure of Interrupt Vector Table"
-permalink: kb/071/Q71486/
+permalink: /kb/071/Q71486/
 ---
 
 ## Q71486: Structure of Interrupt Vector Table

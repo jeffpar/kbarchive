@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233335: Page Contents Visible When Certain Characters are at End of URL"
-permalink: kb/233/Q233335/
+permalink: /kb/233/Q233335/
 ---
 
 ## Q233335: Page Contents Visible When Certain Characters are at End of URL

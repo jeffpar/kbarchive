@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247588: XADM: Err Mssg 0xc002054b: The Specified Domain Does Not Exist"
-permalink: kb/247/Q247588/
+permalink: /kb/247/Q247588/
 ---
 
 ## Q247588: XADM: Err Mssg 0xc002054b: The Specified Domain Does Not Exist

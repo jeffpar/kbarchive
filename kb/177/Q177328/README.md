@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177328: XFOR: MTA Terminates Unexpectedly with Event ID 2051 and 9405"
-permalink: kb/177/Q177328/
+permalink: /kb/177/Q177328/
 ---
 
 ## Q177328: XFOR: MTA Terminates Unexpectedly with Event ID 2051 and 9405

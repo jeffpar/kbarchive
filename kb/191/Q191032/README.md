@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191032: WD97: HTML Images Greater Than 6&quot; Are Scaled on Import"
-permalink: kb/191/Q191032/
+permalink: /kb/191/Q191032/
 ---
 
 ## Q191032: WD97: HTML Images Greater Than 6&quot; Are Scaled on Import

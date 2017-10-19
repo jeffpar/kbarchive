@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238469: Incorrect Server Name in the MMC after a Name Change"
-permalink: kb/238/Q238469/
+permalink: /kb/238/Q238469/
 ---
 
 ## Q238469: Incorrect Server Name in the MMC after a Name Change

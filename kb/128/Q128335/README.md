@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128335: IPX Subnet Clients Unable to Connect to Windows NT"
-permalink: kb/128/Q128335/
+permalink: /kb/128/Q128335/
 ---
 
 ## Q128335: IPX Subnet Clients Unable to Connect to Windows NT

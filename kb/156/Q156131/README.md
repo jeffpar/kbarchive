@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156131: Close Combat: Documentation Errors in Game Reference Manual"
-permalink: kb/156/Q156131/
+permalink: /kb/156/Q156131/
 ---
 
 ## Q156131: Close Combat: Documentation Errors in Game Reference Manual

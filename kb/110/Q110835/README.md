@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110835: Flight Simulator: Windows Don't Redraw When Sized or Moved"
-permalink: kb/110/Q110835/
+permalink: /kb/110/Q110835/
 ---
 
 ## Q110835: Flight Simulator: Windows Don't Redraw When Sized or Moved

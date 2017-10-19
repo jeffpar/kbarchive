@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162850: KiXtart Environment Variables Do Not Exist After Script Runs"
-permalink: kb/162/Q162850/
+permalink: /kb/162/Q162850/
 ---
 
 ## Q162850: KiXtart Environment Variables Do Not Exist After Script Runs

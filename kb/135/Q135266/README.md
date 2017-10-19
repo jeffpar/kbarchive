@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135266: PRB: Converting 2.x Screen Does Not Allow Adjustable Pageframe"
-permalink: kb/135/Q135266/
+permalink: /kb/135/Q135266/
 ---
 
 ## Q135266: PRB: Converting 2.x Screen Does Not Allow Adjustable Pageframe

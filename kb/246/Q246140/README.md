@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246140: FS2000: Game Intermittently Stops Responding"
-permalink: kb/246/Q246140/
+permalink: /kb/246/Q246140/
 ---
 
 ## Q246140: FS2000: Game Intermittently Stops Responding

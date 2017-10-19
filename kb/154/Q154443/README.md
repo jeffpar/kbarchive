@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154443: XFOR: Err Msg: Event Id 283, Changes Could not be Written"
-permalink: kb/154/Q154443/
+permalink: /kb/154/Q154443/
 ---
 
 ## Q154443: XFOR: Err Msg: Event Id 283, Changes Could not be Written

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219035: XADM: Backup Event 104 Text is Ambiguous or Incorrect"
-permalink: kb/219/Q219035/
+permalink: /kb/219/Q219035/
 ---
 
 ## Q219035: XADM: Backup Event 104 Text is Ambiguous or Incorrect

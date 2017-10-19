@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99357: Hardware Interrupt Priorities--Background and Usage"
-permalink: kb/099/Q99357/
+permalink: /kb/099/Q99357/
 ---
 
 ## Q99357: Hardware Interrupt Priorities--Background and Usage

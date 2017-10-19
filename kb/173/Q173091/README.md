@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173091: HOWTO: Programmatically Register and Unregister .OCX Files"
-permalink: kb/173/Q173091/
+permalink: /kb/173/Q173091/
 ---
 
 ## Q173091: HOWTO: Programmatically Register and Unregister .OCX Files

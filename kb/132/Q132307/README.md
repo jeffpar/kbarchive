@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132307: Logon Script Does Not Run When Computer Name Contains a Space"
-permalink: kb/132/Q132307/
+permalink: /kb/132/Q132307/
 ---
 
 ## Q132307: Logon Script Does Not Run When Computer Name Contains a Space

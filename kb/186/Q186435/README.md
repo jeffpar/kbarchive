@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186435: WD97: Formatting Lost, Symbols Appear When Opening Document"
-permalink: kb/186/Q186435/
+permalink: /kb/186/Q186435/
 ---
 
 ## Q186435: WD97: Formatting Lost, Symbols Appear When Opening Document

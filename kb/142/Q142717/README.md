@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142717: IExplorer 1.5 Fails Anonymous Log On to WinNT 3.51 FTP Server"
-permalink: kb/142/Q142717/
+permalink: /kb/142/Q142717/
 ---
 
 ## Q142717: IExplorer 1.5 Fails Anonymous Log On to WinNT 3.51 FTP Server

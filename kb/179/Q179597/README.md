@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179597: WD97: Laserjet III Ignores Allow A4 Paper Resizing Setting"
-permalink: kb/179/Q179597/
+permalink: /kb/179/Q179597/
 ---
 
 ## Q179597: WD97: Laserjet III Ignores Allow A4 Paper Resizing Setting

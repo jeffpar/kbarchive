@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193016: PRB: Error Compiling VB5 Project Using LPVOID in Type Library"
-permalink: kb/193/Q193016/
+permalink: /kb/193/Q193016/
 ---
 
 ## Q193016: PRB: Error Compiling VB5 Project Using LPVOID in Type Library

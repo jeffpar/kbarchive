@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69453: InBoard 386, Adaptec Controller and Expanded Memory"
-permalink: kb/069/Q69453/
+permalink: /kb/069/Q69453/
 ---
 
 ## Q69453: InBoard 386, Adaptec Controller and Expanded Memory

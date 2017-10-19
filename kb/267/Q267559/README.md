@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267559: GET on HTR File Causes &quot;Denial of Service&quot; or Directory Browsing"
-permalink: kb/267/Q267559/
+permalink: /kb/267/Q267559/
 ---
 
 ## Q267559: GET on HTR File Causes &quot;Denial of Service&quot; or Directory Browsing

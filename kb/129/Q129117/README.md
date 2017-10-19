@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129117: Unable to Print Landscape with PostScript After Installing SP2"
-permalink: kb/129/Q129117/
+permalink: /kb/129/Q129117/
 ---
 
 ## Q129117: Unable to Print Landscape with PostScript After Installing SP2

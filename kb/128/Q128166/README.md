@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128166: Services for Macintosh Not Available on Compaq Computers"
-permalink: kb/128/Q128166/
+permalink: /kb/128/Q128166/
 ---
 
 ## Q128166: Services for Macintosh Not Available on Compaq Computers

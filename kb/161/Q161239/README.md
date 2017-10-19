@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161239: Chips &amp; Technologies 65550 Refresh Rate Changes after Restart"
-permalink: kb/161/Q161239/
+permalink: /kb/161/Q161239/
 ---
 
 ## Q161239: Chips &amp; Technologies 65550 Refresh Rate Changes after Restart

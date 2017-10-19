@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156485: WD97: Form Field Command No Longer on the Insert Menu"
-permalink: kb/156/Q156485/
+permalink: /kb/156/Q156485/
 ---
 
 ## Q156485: WD97: Form Field Command No Longer on the Insert Menu

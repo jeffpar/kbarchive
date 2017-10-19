@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154475: Add Printer Wizard Printer Browse List Not in Alphabetical Order"
-permalink: kb/154/Q154475/
+permalink: /kb/154/Q154475/
 ---
 
 ## Q154475: Add Printer Wizard Printer Browse List Not in Alphabetical Order

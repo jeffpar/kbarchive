@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241112: ISAPI Filter Cannot be Removed Using HTMLA"
-permalink: kb/241/Q241112/
+permalink: /kb/241/Q241112/
 ---
 
 ## Q241112: ISAPI Filter Cannot be Removed Using HTMLA

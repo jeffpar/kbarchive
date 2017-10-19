@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83484: Windows 3.1 Upgrade: .OS2 Ports Do Not Become .DOS Ports"
-permalink: kb/083/Q83484/
+permalink: /kb/083/Q83484/
 ---
 
 ## Q83484: Windows 3.1 Upgrade: .OS2 Ports Do Not Become .DOS Ports

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87979: Third-Party Pen Hardware Vendor List"
-permalink: kb/087/Q87979/
+permalink: /kb/087/Q87979/
 ---
 
 ## Q87979: Third-Party Pen Hardware Vendor List

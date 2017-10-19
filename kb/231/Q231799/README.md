@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231799: XCON: MIME Messages Sent Using Outlook Express Receive an NDR"
-permalink: kb/231/Q231799/
+permalink: /kb/231/Q231799/
 ---
 
 ## Q231799: XCON: MIME Messages Sent Using Outlook Express Receive an NDR

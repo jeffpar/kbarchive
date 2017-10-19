@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151613: XCLN: Exchange Client on OS/2 Support Policy"
-permalink: kb/151/Q151613/
+permalink: /kb/151/Q151613/
 ---
 
 ## Q151613: XCLN: Exchange Client on OS/2 Support Policy

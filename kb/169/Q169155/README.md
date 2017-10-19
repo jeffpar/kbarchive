@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169155: FIX: SET ANSI ON Default Setting in VFPODBC Driver"
-permalink: kb/169/Q169155/
+permalink: /kb/169/Q169155/
 ---
 
 ## Q169155: FIX: SET ANSI ON Default Setting in VFPODBC Driver

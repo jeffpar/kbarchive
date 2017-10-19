@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159203: PRB: Unattended Install Prompts for New IP if Zero Is in Address"
-permalink: kb/159/Q159203/
+permalink: /kb/159/Q159203/
 ---
 
 ## Q159203: PRB: Unattended Install Prompts for New IP if Zero Is in Address

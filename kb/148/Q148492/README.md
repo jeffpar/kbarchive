@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148492: SCSI ID Configuration with Future Domain Controllers"
-permalink: kb/148/Q148492/
+permalink: /kb/148/Q148492/
 ---
 
 ## Q148492: SCSI ID Configuration with Future Domain Controllers

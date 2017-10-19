@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128357: PC DB: Err Msg: Not Find Mail System Data Files on Drive M:"
-permalink: kb/128/Q128357/
+permalink: /kb/128/Q128357/
 ---
 
 ## Q128357: PC DB: Err Msg: Not Find Mail System Data Files on Drive M:

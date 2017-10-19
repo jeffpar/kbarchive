@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222159: Symbolic Link Case Sensitivity Exploit Bypasses System Security"
-permalink: kb/222/Q222159/
+permalink: /kb/222/Q222159/
 ---
 
 ## Q222159: Symbolic Link Case Sensitivity Exploit Bypasses System Security

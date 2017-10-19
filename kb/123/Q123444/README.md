@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123444: UNC Connection Generates Error Message on Shutdown"
-permalink: kb/123/Q123444/
+permalink: /kb/123/Q123444/
 ---
 
 ## Q123444: UNC Connection Generates Error Message on Shutdown

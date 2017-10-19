@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198652: SMS: Administrator Console Fails to Load and Reports WBEM Error"
-permalink: kb/198/Q198652/
+permalink: /kb/198/Q198652/
 ---
 
 ## Q198652: SMS: Administrator Console Fails to Load and Reports WBEM Error

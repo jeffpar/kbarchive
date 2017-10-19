@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265261: HOWTO: Improve Speed of Word Automation"
-permalink: kb/265/Q265261/
+permalink: /kb/265/Q265261/
 ---
 
 ## Q265261: HOWTO: Improve Speed of Word Automation

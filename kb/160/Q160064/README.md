@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160064: HOWTO: Convert VBA to FoxPro for OLE Automation"
-permalink: kb/160/Q160064/
+permalink: /kb/160/Q160064/
 ---
 
 ## Q160064: HOWTO: Convert VBA to FoxPro for OLE Automation

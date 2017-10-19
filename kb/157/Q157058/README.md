@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157058: XADM: MTA Restart Fails and Logs Error 2051"
-permalink: kb/157/Q157058/
+permalink: /kb/157/Q157058/
 ---
 
 ## Q157058: XADM: MTA Restart Fails and Logs Error 2051

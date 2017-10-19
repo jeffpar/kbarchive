@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135692: &quot;List Name From&quot; List Box Shows Only 20 Trusted Domains"
-permalink: kb/135/Q135692/
+permalink: /kb/135/Q135692/
 ---
 
 ## Q135692: &quot;List Name From&quot; List Box Shows Only 20 Trusted Domains

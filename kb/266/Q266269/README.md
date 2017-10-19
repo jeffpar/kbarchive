@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266269: XFOR Error Message: Lsdxa.exe Has Generated Errors..."
-permalink: kb/266/Q266269/
+permalink: /kb/266/Q266269/
 ---
 
 ## Q266269: XFOR Error Message: Lsdxa.exe Has Generated Errors...

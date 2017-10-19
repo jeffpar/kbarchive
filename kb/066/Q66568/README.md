@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66568: ASD: Achieving Level Flight with the Boeing 747-400"
-permalink: kb/066/Q66568/
+permalink: /kb/066/Q66568/
 ---
 
 ## Q66568: ASD: Achieving Level Flight with the Boeing 747-400

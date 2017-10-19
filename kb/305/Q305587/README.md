@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305587: TrainSim/MotoMad: Computer Stops Responding When You Start Game"
-permalink: kb/305/Q305587/
+permalink: /kb/305/Q305587/
 ---
 
 ## Q305587: TrainSim/MotoMad: Computer Stops Responding When You Start Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128926: Remote Control Fails on Windows 95 with 32-bit IPX Stack"
-permalink: kb/128/Q128926/
+permalink: /kb/128/Q128926/
 ---
 
 ## Q128926: Remote Control Fails on Windows 95 with 32-bit IPX Stack

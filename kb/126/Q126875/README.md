@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126875: Creating Macintosh Disk Images from Microsoft Select"
-permalink: kb/126/Q126875/
+permalink: /kb/126/Q126875/
 ---
 
 ## Q126875: Creating Macintosh Disk Images from Microsoft Select

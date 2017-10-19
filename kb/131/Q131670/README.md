@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131670: PC Adm: Err Msg: ADMIN Is Already Running on this Post Office"
-permalink: kb/131/Q131670/
+permalink: /kb/131/Q131670/
 ---
 
 ## Q131670: PC Adm: Err Msg: ADMIN Is Already Running on this Post Office

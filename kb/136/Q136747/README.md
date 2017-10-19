@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136747: SU0014 Error When Detection Reaches 100 Percent Complete"
-permalink: kb/136/Q136747/
+permalink: /kb/136/Q136747/
 ---
 
 ## Q136747: SU0014 Error When Detection Reaches 100 Percent Complete

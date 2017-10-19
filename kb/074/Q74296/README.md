@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74296: EDLIN Saves a Backup File when editing; EDIT Does Not"
-permalink: kb/074/Q74296/
+permalink: /kb/074/Q74296/
 ---
 
 ## Q74296: EDLIN Saves a Backup File when editing; EDIT Does Not

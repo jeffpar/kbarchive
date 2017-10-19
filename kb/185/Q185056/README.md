@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185056: WD97: Incorrect Formula Results Using ABOVE, BELOW, LEFT, RIGHT"
-permalink: kb/185/Q185056/
+permalink: /kb/185/Q185056/
 ---
 
 ## Q185056: WD97: Incorrect Formula Results Using ABOVE, BELOW, LEFT, RIGHT

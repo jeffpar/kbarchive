@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130304: How to Create Stored Procedures in Visual FoxPro Programs"
-permalink: kb/130/Q130304/
+permalink: /kb/130/Q130304/
 ---
 
 ## Q130304: How to Create Stored Procedures in Visual FoxPro Programs

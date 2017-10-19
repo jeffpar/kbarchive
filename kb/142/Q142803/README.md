@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142803: Locking Error or Computer Hangs Accessing Network Database Files"
-permalink: kb/142/Q142803/
+permalink: /kb/142/Q142803/
 ---
 
 ## Q142803: Locking Error or Computer Hangs Accessing Network Database Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256824: MapPoint 2001: Driving Directions Are Not Printed Properly"
-permalink: kb/256/Q256824/
+permalink: /kb/256/Q256824/
 ---
 
 ## Q256824: MapPoint 2001: Driving Directions Are Not Printed Properly

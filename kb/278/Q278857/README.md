@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278857: Description of Updates to Internet Authentication Service"
-permalink: kb/278/Q278857/
+permalink: /kb/278/Q278857/
 ---
 
 ## Q278857: Description of Updates to Internet Authentication Service

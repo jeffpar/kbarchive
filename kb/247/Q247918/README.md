@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247918: Cannot Resolve NetBIOS Name of Remote Domain Controller"
-permalink: kb/247/Q247918/
+permalink: /kb/247/Q247918/
 ---
 
 ## Q247918: Cannot Resolve NetBIOS Name of Remote Domain Controller

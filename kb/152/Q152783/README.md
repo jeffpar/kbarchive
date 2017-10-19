@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152783: INFO: Sample Twinax Configuration for SNA Server"
-permalink: kb/152/Q152783/
+permalink: /kb/152/Q152783/
 ---
 
 ## Q152783: INFO: Sample Twinax Configuration for SNA Server

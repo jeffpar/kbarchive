@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76684: SAMPLE: Wsscanf.exe Replaces sscanf in Windows DLLs"
-permalink: kb/076/Q76684/
+permalink: /kb/076/Q76684/
 ---
 
 ## Q76684: SAMPLE: Wsscanf.exe Replaces sscanf in Windows DLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135518: HOWTO: Copy Files from Cabinets on DMF-Formatted Disks"
-permalink: kb/135/Q135518/
+permalink: /kb/135/Q135518/
 ---
 
 ## Q135518: HOWTO: Copy Files from Cabinets on DMF-Formatted Disks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129881: Baseball '95: Houston Astros Invalid Opposing Team Reference"
-permalink: kb/129/Q129881/
+permalink: /kb/129/Q129881/
 ---
 
 ## Q129881: Baseball '95: Houston Astros Invalid Opposing Team Reference

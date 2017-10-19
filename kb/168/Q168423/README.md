@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168423: WD97: Batch Conversion Macro Causes Error When You Convert File"
-permalink: kb/168/Q168423/
+permalink: /kb/168/Q168423/
 ---
 
 ## Q168423: WD97: Batch Conversion Macro Causes Error When You Convert File

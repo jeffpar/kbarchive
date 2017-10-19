@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153545: How to Pass Unsafe Characters in a URL"
-permalink: kb/153/Q153545/
+permalink: /kb/153/Q153545/
 ---
 
 ## Q153545: How to Pass Unsafe Characters in a URL

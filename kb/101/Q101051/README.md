@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101051: PRB: Bottom of Report Truncated in FoxBase+/Mac"
-permalink: kb/101/Q101051/
+permalink: /kb/101/Q101051/
 ---
 
 ## Q101051: PRB: Bottom of Report Truncated in FoxBase+/Mac

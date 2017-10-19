@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226915: SMS: Can't Increased Status File Heartbeat to More Than 5 Days"
-permalink: kb/226/Q226915/
+permalink: /kb/226/Q226915/
 ---
 
 ## Q226915: SMS: Can't Increased Status File Heartbeat to More Than 5 Days

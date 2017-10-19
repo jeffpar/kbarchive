@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258146: HOWTO: Pin/Unpin files in SourceSafe from OLE Automation in VB"
-permalink: kb/258/Q258146/
+permalink: /kb/258/Q258146/
 ---
 
 ## Q258146: HOWTO: Pin/Unpin files in SourceSafe from OLE Automation in VB

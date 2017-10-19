@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72910: Proteon Network Drivers Required for Windows 3.0"
-permalink: kb/072/Q72910/
+permalink: /kb/072/Q72910/
 ---
 
 ## Q72910: Proteon Network Drivers Required for Windows 3.0

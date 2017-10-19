@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189305: SMS: Packages Run at a Different Time Than Specified"
-permalink: kb/189/Q189305/
+permalink: /kb/189/Q189305/
 ---
 
 ## Q189305: SMS: Packages Run at a Different Time Than Specified

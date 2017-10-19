@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150825: REMOTE_USER Blank w/o BASIC Password Authentication"
-permalink: kb/150/Q150825/
+permalink: /kb/150/Q150825/
 ---
 
 ## Q150825: REMOTE_USER Blank w/o BASIC Password Authentication

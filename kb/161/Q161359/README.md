@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161359: PRB: Class Names in VFP 5.0 are Case Sensitive"
-permalink: kb/161/Q161359/
+permalink: /kb/161/Q161359/
 ---
 
 ## Q161359: PRB: Class Names in VFP 5.0 are Case Sensitive

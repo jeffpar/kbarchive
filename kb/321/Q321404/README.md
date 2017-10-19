@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321404: Dungeon Siege: Siege Editor Available for Downloading"
-permalink: kb/321/Q321404/
+permalink: /kb/321/Q321404/
 ---
 
 ## Q321404: Dungeon Siege: Siege Editor Available for Downloading

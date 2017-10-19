@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76776: README.TXT: Running Specific Non-Windows Applications"
-permalink: kb/076/Q76776/
+permalink: /kb/076/Q76776/
 ---
 
 ## Q76776: README.TXT: Running Specific Non-Windows Applications

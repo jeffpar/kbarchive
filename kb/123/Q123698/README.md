@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123698: WD97: Err Msg: &quot;Word Could Not Re-Establish a DDE Connection...&quot;"
-permalink: kb/123/Q123698/
+permalink: /kb/123/Q123698/
 ---
 
 ## Q123698: WD97: Err Msg: &quot;Word Could Not Re-Establish a DDE Connection...&quot;

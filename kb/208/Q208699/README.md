@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208699: BUG: Error &quot;&#36;(DllSelfRegisterEx) Could Not Be Registered&quot;"
-permalink: kb/208/Q208699/
+permalink: /kb/208/Q208699/
 ---
 
 ## Q208699: BUG: Error &quot;&#36;(DllSelfRegisterEx) Could Not Be Registered&quot;

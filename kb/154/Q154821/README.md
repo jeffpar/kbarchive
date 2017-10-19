@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154821: HOWTO: Get Extended File Time Information Using the Win32 API"
-permalink: kb/154/Q154821/
+permalink: /kb/154/Q154821/
 ---
 
 ## Q154821: HOWTO: Get Extended File Time Information Using the Win32 API

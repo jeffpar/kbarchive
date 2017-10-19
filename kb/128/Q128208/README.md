@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128208: HOWTO: Perform Transactions with the MFC Database Classes"
-permalink: kb/128/Q128208/
+permalink: /kb/128/Q128208/
 ---
 
 ## Q128208: HOWTO: Perform Transactions with the MFC Database Classes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103827: RAS and SFM Passwords Are Not Case Sensitive"
-permalink: kb/103/Q103827/
+permalink: /kb/103/Q103827/
 ---
 
 ## Q103827: RAS and SFM Passwords Are Not Case Sensitive

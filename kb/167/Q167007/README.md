@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167007: SMS: Distribution Status Failure with Machine Groups"
-permalink: kb/167/Q167007/
+permalink: /kb/167/Q167007/
 ---
 
 ## Q167007: SMS: Distribution Status Failure with Machine Groups

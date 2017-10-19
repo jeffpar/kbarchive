@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137989: Error Opening File on SMS Client During Inventory"
-permalink: kb/137/Q137989/
+permalink: /kb/137/Q137989/
 ---
 
 ## Q137989: Error Opening File on SMS Client During Inventory

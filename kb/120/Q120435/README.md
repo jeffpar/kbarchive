@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120435: Photoshop 2.5.1 &quot;Unable to Parse PostScript&quot; Opening an EPS"
-permalink: kb/120/Q120435/
+permalink: /kb/120/Q120435/
 ---
 
 ## Q120435: Photoshop 2.5.1 &quot;Unable to Parse PostScript&quot; Opening an EPS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239065: XADM: Error Message: LDAP Authentication Method Is Not Supported"
-permalink: kb/239/Q239065/
+permalink: /kb/239/Q239065/
 ---
 
 ## Q239065: XADM: Error Message: LDAP Authentication Method Is Not Supported

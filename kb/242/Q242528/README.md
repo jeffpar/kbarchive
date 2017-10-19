@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242528: Time-Out to Unreachable Computers Is Excessive"
-permalink: kb/242/Q242528/
+permalink: /kb/242/Q242528/
 ---
 
 ## Q242528: Time-Out to Unreachable Computers Is Excessive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127052: SMS Unique ID (SMSID) Allocation"
-permalink: kb/127/Q127052/
+permalink: /kb/127/Q127052/
 ---
 
 ## Q127052: SMS Unique ID (SMSID) Allocation

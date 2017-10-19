@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121796: PC WSPlus: Support for Timex Datalink and Schedule+ Interface"
-permalink: kb/121/Q121796/
+permalink: /kb/121/Q121796/
 ---
 
 ## Q121796: PC WSPlus: Support for Timex Datalink and Schedule+ Interface

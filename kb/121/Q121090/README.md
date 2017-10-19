@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121090: WIN /D:T Disables Printing and Communications in WFWG 3.11"
-permalink: kb/121/Q121090/
+permalink: /kb/121/Q121090/
 ---
 
 ## Q121090: WIN /D:T Disables Printing and Communications in WFWG 3.11

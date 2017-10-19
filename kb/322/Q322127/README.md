@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322127: Empty Base Class/Structure Assignment Operator May Corrupt Data"
-permalink: kb/322/Q322127/
+permalink: /kb/322/Q322127/
 ---
 
 ## Q322127: Empty Base Class/Structure Assignment Operator May Corrupt Data

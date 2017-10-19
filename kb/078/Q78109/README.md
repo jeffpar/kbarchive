@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78109: MS-DOS Setup with LOCKIT Utility, Version 1.5"
-permalink: kb/078/Q78109/
+permalink: /kb/078/Q78109/
 ---
 
 ## Q78109: MS-DOS Setup with LOCKIT Utility, Version 1.5

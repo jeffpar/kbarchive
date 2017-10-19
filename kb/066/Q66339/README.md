@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66339: MASM Build Switches for PWB 1.10"
-permalink: kb/066/Q66339/
+permalink: /kb/066/Q66339/
 ---
 
 ## Q66339: MASM Build Switches for PWB 1.10

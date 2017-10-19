@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243958: SMS: NetWare Client Performance Degrades After SMS Client Inst."
-permalink: kb/243/Q243958/
+permalink: /kb/243/Q243958/
 ---
 
 ## Q243958: SMS: NetWare Client Performance Degrades After SMS Client Inst.

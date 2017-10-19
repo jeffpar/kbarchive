@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77945: FIX: Alignment in Nested Structures Incorrect in MASM 6"
-permalink: kb/077/Q77945/
+permalink: /kb/077/Q77945/
 ---
 
 ## Q77945: FIX: Alignment in Nested Structures Incorrect in MASM 6

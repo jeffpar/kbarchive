@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137589: Cover Pages May Be Unavailable in Microsoft Fax"
-permalink: kb/137/Q137589/
+permalink: /kb/137/Q137589/
 ---
 
 ## Q137589: Cover Pages May Be Unavailable in Microsoft Fax

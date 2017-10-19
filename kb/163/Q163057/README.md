@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163057: WD97: Cannot Change Default Language for New Documents"
-permalink: kb/163/Q163057/
+permalink: /kb/163/Q163057/
 ---
 
 ## Q163057: WD97: Cannot Change Default Language for New Documents

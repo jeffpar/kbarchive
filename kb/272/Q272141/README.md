@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272141: XADM: CDO CopyTo Method May Cause a MAPI_E_NOT_FOUND Error"
-permalink: kb/272/Q272141/
+permalink: /kb/272/Q272141/
 ---
 
 ## Q272141: XADM: CDO CopyTo Method May Cause a MAPI_E_NOT_FOUND Error

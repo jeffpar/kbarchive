@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176513: Incorrect Daylight Savings Settings for Finnish Time Zone"
-permalink: kb/176/Q176513/
+permalink: /kb/176/Q176513/
 ---
 
 ## Q176513: Incorrect Daylight Savings Settings for Finnish Time Zone

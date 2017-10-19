@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243786: XADM: Directory Exception e0010006 with Parameters 4 and 1"
-permalink: kb/243/Q243786/
+permalink: /kb/243/Q243786/
 ---
 
 ## Q243786: XADM: Directory Exception e0010006 with Parameters 4 and 1

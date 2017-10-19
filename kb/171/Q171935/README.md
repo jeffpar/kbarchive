@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171935: TN3270 Server Incorrectly Truncates Last Character of SSCP Data"
-permalink: kb/171/Q171935/
+permalink: /kb/171/Q171935/
 ---
 
 ## Q171935: TN3270 Server Incorrectly Truncates Last Character of SSCP Data

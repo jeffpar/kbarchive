@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231258: SMS: Smsmon32.exe and Smswiz32.exe Hang Client Computers"
-permalink: kb/231/Q231258/
+permalink: /kb/231/Q231258/
 ---
 
 ## Q231258: SMS: Smsmon32.exe and Smswiz32.exe Hang Client Computers

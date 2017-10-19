@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258736: FIX: Multi-Threaded DLL Is Slow to Release Connection Under MTS"
-permalink: kb/258/Q258736/
+permalink: /kb/258/Q258736/
 ---
 
 ## Q258736: FIX: Multi-Threaded DLL Is Slow to Release Connection Under MTS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274864: Simulators: Host Is the Only Player in a Multiplayer Game"
-permalink: kb/274/Q274864/
+permalink: /kb/274/Q274864/
 ---
 
 ## Q274864: Simulators: Host Is the Only Player in a Multiplayer Game

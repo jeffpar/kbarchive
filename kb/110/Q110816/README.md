@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110816: Mac Wkst: Address Window Too Large for Color Classic"
-permalink: kb/110/Q110816/
+permalink: /kb/110/Q110816/
 ---
 
 ## Q110816: Mac Wkst: Address Window Too Large for Color Classic

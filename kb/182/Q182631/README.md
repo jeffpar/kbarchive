@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182631: INF: Using Alternate Code Page When Creating a Recording File"
-permalink: kb/182/Q182631/
+permalink: /kb/182/Q182631/
 ---
 
 ## Q182631: INF: Using Alternate Code Page When Creating a Recording File

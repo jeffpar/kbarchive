@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77708: No Draft Mode for Toshiba 24-Pin Printer in Windows 3.0"
-permalink: kb/077/Q77708/
+permalink: /kb/077/Q77708/
 ---
 
 ## Q77708: No Draft Mode for Toshiba 24-Pin Printer in Windows 3.0

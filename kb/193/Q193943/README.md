@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193943: HOWTO: Use GetDeviceCaps to Determine Margins on a Page"
-permalink: kb/193/Q193943/
+permalink: /kb/193/Q193943/
 ---
 
 ## Q193943: HOWTO: Use GetDeviceCaps to Determine Margins on a Page

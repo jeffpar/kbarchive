@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169493: Host Drive Shares Still Available After Host Drive Is Hidden"
-permalink: kb/169/Q169493/
+permalink: /kb/169/Q169493/
 ---
 
 ## Q169493: Host Drive Shares Still Available After Host Drive Is Hidden

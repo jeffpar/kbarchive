@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240652: Profile Quotas May Cause Terminal Server Session to Hang"
-permalink: kb/240/Q240652/
+permalink: /kb/240/Q240652/
 ---
 
 ## Q240652: Profile Quotas May Cause Terminal Server Session to Hang

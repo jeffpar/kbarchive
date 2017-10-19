@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169617: HOWTO: Sort Algorithms for Numeric Arrays"
-permalink: kb/169/Q169617/
+permalink: /kb/169/Q169617/
 ---
 
 ## Q169617: HOWTO: Sort Algorithms for Numeric Arrays

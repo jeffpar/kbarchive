@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215123: SMS: SMS_LOGON_SERVER_MANAGER Fails to Enumerate Shares"
-permalink: kb/215/Q215123/
+permalink: /kb/215/Q215123/
 ---
 
 ## Q215123: SMS: SMS_LOGON_SERVER_MANAGER Fails to Enumerate Shares

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156195: ADT2: Setup Wizard Fails to Create Disks Compressing Large File"
-permalink: kb/156/Q156195/
+permalink: /kb/156/Q156195/
 ---
 
 ## Q156195: ADT2: Setup Wizard Fails to Create Disks Compressing Large File

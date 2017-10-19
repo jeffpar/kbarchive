@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167280: XFOR: Err Msg: Cannot Open, HTTP/1.0 500 Server Error"
-permalink: kb/167/Q167280/
+permalink: /kb/167/Q167280/
 ---
 
 ## Q167280: XFOR: Err Msg: Cannot Open, HTTP/1.0 500 Server Error

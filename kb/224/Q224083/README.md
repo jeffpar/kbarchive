@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224083: Err Msg: Event ID 7022: The Messenger Service Hung on Starting"
-permalink: kb/224/Q224083/
+permalink: /kb/224/Q224083/
 ---
 
 ## Q224083: Err Msg: Event ID 7022: The Messenger Service Hung on Starting

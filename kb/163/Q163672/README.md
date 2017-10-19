@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163672: Windows NT 4.0 Setup Fails on ThinkPad 535"
-permalink: kb/163/Q163672/
+permalink: /kb/163/Q163672/
 ---
 
 ## Q163672: Windows NT 4.0 Setup Fails on ThinkPad 535

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232705: XADM: Error 87 Starting Information Store after Online Restore"
-permalink: kb/232/Q232705/
+permalink: /kb/232/Q232705/
 ---
 
 ## Q232705: XADM: Error 87 Starting Information Store after Online Restore

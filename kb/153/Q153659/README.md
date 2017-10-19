@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153659: SMS: Administrator UI GP Faults During Remote Control Session"
-permalink: kb/153/Q153659/
+permalink: /kb/153/Q153659/
 ---
 
 ## Q153659: SMS: Administrator UI GP Faults During Remote Control Session

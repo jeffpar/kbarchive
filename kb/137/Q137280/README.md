@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137280: Macintosh Encarta 1995: Image File Could Not Be Loaded"
-permalink: kb/137/Q137280/
+permalink: /kb/137/Q137280/
 ---
 
 ## Q137280: Macintosh Encarta 1995: Image File Could Not Be Loaded

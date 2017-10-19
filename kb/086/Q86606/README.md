@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86606: PC WSPlus: Projects Sorted Alphabetically Only"
-permalink: kb/086/Q86606/
+permalink: /kb/086/Q86606/
 ---
 
 ## Q86606: PC WSPlus: Projects Sorted Alphabetically Only

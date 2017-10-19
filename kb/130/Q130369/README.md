@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130369: Cannot See Highlight in Menus After Upgrade"
-permalink: kb/130/Q130369/
+permalink: /kb/130/Q130369/
 ---
 
 ## Q130369: Cannot See Highlight in Menus After Upgrade

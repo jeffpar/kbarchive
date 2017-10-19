@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94466: 3COM: Microsoft Mail Gateway to 3Com Shuts Down Randomly"
-permalink: kb/094/Q94466/
+permalink: /kb/094/Q94466/
 ---
 
 ## Q94466: 3COM: Microsoft Mail Gateway to 3Com Shuts Down Randomly

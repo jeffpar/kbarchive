@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244266: WD97: Word Template Hyperlink Opens Instead of New Document"
-permalink: kb/244/Q244266/
+permalink: /kb/244/Q244266/
 ---
 
 ## Q244266: WD97: Word Template Hyperlink Opens Instead of New Document

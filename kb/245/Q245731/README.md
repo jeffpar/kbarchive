@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245731: DirectX 7.0a: List of Files Displayed in DirectX Diagnostic Tool"
-permalink: kb/245/Q245731/
+permalink: /kb/245/Q245731/
 ---
 
 ## Q245731: DirectX 7.0a: List of Files Displayed in DirectX Diagnostic Tool

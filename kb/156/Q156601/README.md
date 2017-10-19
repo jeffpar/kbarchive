@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156601: Computer Pauses at Blue Startup Screen for 30 to 45 Seconds"
-permalink: kb/156/Q156601/
+permalink: /kb/156/Q156601/
 ---
 
 ## Q156601: Computer Pauses at Blue Startup Screen for 30 to 45 Seconds

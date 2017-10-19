@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112198: WinPopup Sends Multiple Messages to a Workgroup"
-permalink: kb/112/Q112198/
+permalink: /kb/112/Q112198/
 ---
 
 ## Q112198: WinPopup Sends Multiple Messages to a Workgroup

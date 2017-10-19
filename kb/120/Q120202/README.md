@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120202: MindMaze Err Msg: Cannot Access This File"
-permalink: kb/120/Q120202/
+permalink: /kb/120/Q120202/
 ---
 
 ## Q120202: MindMaze Err Msg: Cannot Access This File

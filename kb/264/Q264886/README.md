@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264886: WD97: &quot;A Program Is Trying to Access...&quot; Warning in DMM"
-permalink: kb/264/Q264886/
+permalink: /kb/264/Q264886/
 ---
 
 ## Q264886: WD97: &quot;A Program Is Trying to Access...&quot; Warning in DMM

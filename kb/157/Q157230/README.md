@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157230: DisKeeper 1.1 Causes Errors During Windows NT 4.0 Upgrade"
-permalink: kb/157/Q157230/
+permalink: /kb/157/Q157230/
 ---
 
 ## Q157230: DisKeeper 1.1 Causes Errors During Windows NT 4.0 Upgrade

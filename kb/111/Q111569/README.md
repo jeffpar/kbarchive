@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111569: Cannot See Writing with Pen Pointing Device and Super VGA"
-permalink: kb/111/Q111569/
+permalink: /kb/111/Q111569/
 ---
 
 ## Q111569: Cannot See Writing with Pen Pointing Device and Super VGA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82519: SuperPrint Under Excel Slows Landscape Printing"
-permalink: kb/082/Q82519/
+permalink: /kb/082/Q82519/
 ---
 
 ## Q82519: SuperPrint Under Excel Slows Landscape Printing

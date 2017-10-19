@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102831: Mac Srv: Update Gateway Connect Times Sends Outbound Message"
-permalink: kb/102/Q102831/
+permalink: /kb/102/Q102831/
 ---
 
 ## Q102831: Mac Srv: Update Gateway Connect Times Sends Outbound Message

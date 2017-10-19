@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111836: WD97: Printing Envelopes from Word on the HP DeskJet 500C"
-permalink: kb/111/Q111836/
+permalink: /kb/111/Q111836/
 ---
 
 ## Q111836: WD97: Printing Envelopes from Word on the HP DeskJet 500C

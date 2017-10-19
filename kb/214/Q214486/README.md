@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214486: INFO: How SourceSafe Uses the DATA Directory"
-permalink: kb/214/Q214486/
+permalink: /kb/214/Q214486/
 ---
 
 ## Q214486: INFO: How SourceSafe Uses the DATA Directory

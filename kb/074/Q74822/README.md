@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74822: Sperry AT Doesn't Format High-Density Disks"
-permalink: kb/074/Q74822/
+permalink: /kb/074/Q74822/
 ---
 
 ## Q74822: Sperry AT Doesn't Format High-Density Disks

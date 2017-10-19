@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155659: Monster Truck Madness: Optimizing Performance"
-permalink: kb/155/Q155659/
+permalink: /kb/155/Q155659/
 ---
 
 ## Q155659: Monster Truck Madness: Optimizing Performance

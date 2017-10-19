@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154013: Not Prompted Before MS Backup Overwrites Files"
-permalink: kb/154/Q154013/
+permalink: /kb/154/Q154013/
 ---
 
 ## Q154013: Not Prompted Before MS Backup Overwrites Files

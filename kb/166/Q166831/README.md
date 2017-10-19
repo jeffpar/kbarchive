@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166831: How to Query MS Access Database Located on NetWare Server"
-permalink: kb/166/Q166831/
+permalink: /kb/166/Q166831/
 ---
 
 ## Q166831: How to Query MS Access Database Located on NetWare Server

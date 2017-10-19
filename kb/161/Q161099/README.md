@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161099: Secured Web Pages Not Loaded with Netscape Navigator 1.x"
-permalink: kb/161/Q161099/
+permalink: /kb/161/Q161099/
 ---
 
 ## Q161099: Secured Web Pages Not Loaded with Netscape Navigator 1.x

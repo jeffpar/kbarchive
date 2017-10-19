@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197280: XADM: Changes to Domain Names Cause Large Incremental Downloads"
-permalink: kb/197/Q197280/
+permalink: /kb/197/Q197280/
 ---
 
 ## Q197280: XADM: Changes to Domain Names Cause Large Incremental Downloads

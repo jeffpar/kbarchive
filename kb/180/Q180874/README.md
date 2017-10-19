@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180874: Control Unit Image Number Should be a 1 Digit Field"
-permalink: kb/180/Q180874/
+permalink: /kb/180/Q180874/
 ---
 
 ## Q180874: Control Unit Image Number Should be a 1 Digit Field

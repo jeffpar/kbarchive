@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152081: Use of Raw Data Transfer Mode Influenced by Application"
-permalink: kb/152/Q152081/
+permalink: /kb/152/Q152081/
 ---
 
 ## Q152081: Use of Raw Data Transfer Mode Influenced by Application

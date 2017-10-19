@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181929: SMSINST: Repackage Does Not Use Variables in .ini File Edits"
-permalink: kb/181/Q181929/
+permalink: /kb/181/Q181929/
 ---
 
 ## Q181929: SMSINST: Repackage Does Not Use Variables in .ini File Edits

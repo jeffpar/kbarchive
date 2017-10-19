@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186592: Terminal Server Commands: QUERY"
-permalink: kb/186/Q186592/
+permalink: /kb/186/Q186592/
 ---
 
 ## Q186592: Terminal Server Commands: QUERY

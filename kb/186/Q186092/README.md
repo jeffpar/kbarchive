@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186092: Virtual Globe 98: Black Screen When You Start Program"
-permalink: kb/186/Q186092/
+permalink: /kb/186/Q186092/
 ---
 
 ## Q186092: Virtual Globe 98: Black Screen When You Start Program

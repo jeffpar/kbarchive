@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222906: XADM: Advanced Security Enrollment Welcome Message is Wrong"
-permalink: kb/222/Q222906/
+permalink: /kb/222/Q222906/
 ---
 
 ## Q222906: XADM: Advanced Security Enrollment Welcome Message is Wrong

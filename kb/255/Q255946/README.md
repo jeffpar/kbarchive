@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255946: Allegiance: Training Resets Game Controller to Default Settings"
-permalink: kb/255/Q255946/
+permalink: /kb/255/Q255946/
 ---
 
 ## Q255946: Allegiance: Training Resets Game Controller to Default Settings

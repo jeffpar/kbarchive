@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280447: BUG: Text from a Rich Edit Control Is Truncated During DDX"
-permalink: kb/280/Q280447/
+permalink: /kb/280/Q280447/
 ---
 
 ## Q280447: BUG: Text from a Rich Edit Control Is Truncated During DDX

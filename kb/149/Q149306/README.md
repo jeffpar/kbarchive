@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149306: Unable to Open Oemnadd3.inf During Update of Service Packs"
-permalink: kb/149/Q149306/
+permalink: /kb/149/Q149306/
 ---
 
 ## Q149306: Unable to Open Oemnadd3.inf During Update of Service Packs

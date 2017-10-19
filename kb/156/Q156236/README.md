@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156236: PRB: Paste Option Disabled when Clipboard Holds Excel Range"
-permalink: kb/156/Q156236/
+permalink: /kb/156/Q156236/
 ---
 
 ## Q156236: PRB: Paste Option Disabled when Clipboard Holds Excel Range

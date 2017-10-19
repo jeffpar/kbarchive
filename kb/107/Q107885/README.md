@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107885: RAS Can't Connect to Windows NT 3.1 RAS via AT&amp;T BNS 1000"
-permalink: kb/107/Q107885/
+permalink: /kb/107/Q107885/
 ---
 
 ## Q107885: RAS Can't Connect to Windows NT 3.1 RAS via AT&amp;T BNS 1000

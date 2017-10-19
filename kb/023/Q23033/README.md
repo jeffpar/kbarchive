@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q23033: HOWTO: Use NetBIOS Interrupts Under Windows"
-permalink: kb/023/Q23033/
+permalink: /kb/023/Q23033/
 ---
 
 ## Q23033: HOWTO: Use NetBIOS Interrupts Under Windows

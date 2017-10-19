@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185707: Allow Assignment of an LU to a User and Workstation"
-permalink: kb/185/Q185707/
+permalink: /kb/185/Q185707/
 ---
 
 ## Q185707: Allow Assignment of an LU to a User and Workstation

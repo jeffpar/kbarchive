@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254374: WD97: Lists Are Numbered Incorrectly in Catalog Mail Merge"
-permalink: kb/254/Q254374/
+permalink: /kb/254/Q254374/
 ---
 
 ## Q254374: WD97: Lists Are Numbered Incorrectly in Catalog Mail Merge

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192092: WD97: Graphics Imported from Mac Displayed as QuickTime Logo"
-permalink: kb/192/Q192092/
+permalink: /kb/192/Q192092/
 ---
 
 ## Q192092: WD97: Graphics Imported from Mac Displayed as QuickTime Logo

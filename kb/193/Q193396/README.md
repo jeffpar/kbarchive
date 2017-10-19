@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193396: Cannot Repartition Disk Space During Windows NT Setup"
-permalink: kb/193/Q193396/
+permalink: /kb/193/Q193396/
 ---
 
 ## Q193396: Cannot Repartition Disk Space During Windows NT Setup

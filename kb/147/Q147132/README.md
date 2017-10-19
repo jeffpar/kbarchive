@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147132: How to Prevent DoubleSpace or DriveSpace Drivers from Loading"
-permalink: kb/147/Q147132/
+permalink: /kb/147/Q147132/
 ---
 
 ## Q147132: How to Prevent DoubleSpace or DriveSpace Drivers from Loading

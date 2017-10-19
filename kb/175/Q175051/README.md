@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175051: Windows 95 Roaming Profiles Do Not Work"
-permalink: kb/175/Q175051/
+permalink: /kb/175/Q175051/
 ---
 
 ## Q175051: Windows 95 Roaming Profiles Do Not Work

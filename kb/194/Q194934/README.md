@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194934: Shared Folders Gateway Doesn't Support S/36 or AS/36"
-permalink: kb/194/Q194934/
+permalink: /kb/194/Q194934/
 ---
 
 ## Q194934: Shared Folders Gateway Doesn't Support S/36 or AS/36

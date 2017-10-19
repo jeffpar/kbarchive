@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192301: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Screen"
-permalink: kb/192/Q192301/
+permalink: /kb/192/Q192301/
 ---
 
 ## Q192301: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Screen

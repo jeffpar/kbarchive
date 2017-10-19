@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195624: Virtual Globe 99: Empty Dialog Box Appears When Starting Program"
-permalink: kb/195/Q195624/
+permalink: /kb/195/Q195624/
 ---
 
 ## Q195624: Virtual Globe 99: Empty Dialog Box Appears When Starting Program

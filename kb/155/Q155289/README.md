@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155289: XADM: SA Hangs if NetWare Client v3.5b is Installed"
-permalink: kb/155/Q155289/
+permalink: /kb/155/Q155289/
 ---
 
 ## Q155289: XADM: SA Hangs if NetWare Client v3.5b is Installed

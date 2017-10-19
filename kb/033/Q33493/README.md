@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33493: Ventura Publisher 1.1 Freezes Serial Mouse"
-permalink: kb/033/Q33493/
+permalink: /kb/033/Q33493/
 ---
 
 ## Q33493: Ventura Publisher 1.1 Freezes Serial Mouse

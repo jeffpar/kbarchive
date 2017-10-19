@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189834: INFO: Visual Studio 6.0 Does Not Install on Windows NT 3.51"
-permalink: kb/189/Q189834/
+permalink: /kb/189/Q189834/
 ---
 
 ## Q189834: INFO: Visual Studio 6.0 Does Not Install on Windows NT 3.51

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166826: Data Read from ROM PC Card Device May Be Damaged"
-permalink: kb/166/Q166826/
+permalink: /kb/166/Q166826/
 ---
 
 ## Q166826: Data Read from ROM PC Card Device May Be Damaged

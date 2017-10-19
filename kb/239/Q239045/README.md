@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239045: IIS: Receives a &quot;500 Server Error&quot; Accessing the Admin Web Site"
-permalink: kb/239/Q239045/
+permalink: /kb/239/Q239045/
 ---
 
 ## Q239045: IIS: Receives a &quot;500 Server Error&quot; Accessing the Admin Web Site

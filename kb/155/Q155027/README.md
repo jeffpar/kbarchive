@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155027: XCON: Cannot Start Microsoft Exchange MTA: Errors 1067 and 2140"
-permalink: kb/155/Q155027/
+permalink: /kb/155/Q155027/
 ---
 
 ## Q155027: XCON: Cannot Start Microsoft Exchange MTA: Errors 1067 and 2140

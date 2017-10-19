@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152666: XCON: Messages In RAS Connector Queue NDR when Modem is Busy"
-permalink: kb/152/Q152666/
+permalink: /kb/152/Q152666/
 ---
 
 ## Q152666: XCON: Messages In RAS Connector Queue NDR when Modem is Busy

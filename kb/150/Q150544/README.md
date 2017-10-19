@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150544: DHCP Manager Scope Properties"
-permalink: kb/150/Q150544/
+permalink: /kb/150/Q150544/
 ---
 
 ## Q150544: DHCP Manager Scope Properties

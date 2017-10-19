@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302562: Microsoft Natural USB Keyboard And The Compaq IA-1"
-permalink: kb/302/Q302562/
+permalink: /kb/302/Q302562/
 ---
 
 ## Q302562: Microsoft Natural USB Keyboard And The Compaq IA-1

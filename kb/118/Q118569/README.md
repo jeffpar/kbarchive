@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118569: Domain Guests Group Not Created On Upgrade"
-permalink: kb/118/Q118569/
+permalink: /kb/118/Q118569/
 ---
 
 ## Q118569: Domain Guests Group Not Created On Upgrade

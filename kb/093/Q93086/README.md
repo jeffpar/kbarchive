@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93086: Okidata OL830/PS Driver Doesn't Retain Values in Printer Setup"
-permalink: kb/093/Q93086/
+permalink: /kb/093/Q93086/
 ---
 
 ## Q93086: Okidata OL830/PS Driver Doesn't Retain Values in Printer Setup

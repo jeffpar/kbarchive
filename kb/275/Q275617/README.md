@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275617: SMS: Inbox Mgr Can't Remove Inboxlck.tok; Stops Software Distrib"
-permalink: kb/275/Q275617/
+permalink: /kb/275/Q275617/
 ---
 
 ## Q275617: SMS: Inbox Mgr Can't Remove Inboxlck.tok; Stops Software Distrib

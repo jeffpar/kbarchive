@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154415: Cannot Open Other's Calendar File with SP4 or Later"
-permalink: kb/154/Q154415/
+permalink: /kb/154/Q154415/
 ---
 
 ## Q154415: Cannot Open Other's Calendar File with SP4 or Later

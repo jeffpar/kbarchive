@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241428: HTTP Compression Does Not Compress Office Documents"
-permalink: kb/241/Q241428/
+permalink: /kb/241/Q241428/
 ---
 
 ## Q241428: HTTP Compression Does Not Compress Office Documents

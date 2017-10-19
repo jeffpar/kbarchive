@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268237: Excessive Thread Handle Leak Causes &quot;Stop 0x0000003b&quot; Error"
-permalink: kb/268/Q268237/
+permalink: /kb/268/Q268237/
 ---
 
 ## Q268237: Excessive Thread Handle Leak Causes &quot;Stop 0x0000003b&quot; Error

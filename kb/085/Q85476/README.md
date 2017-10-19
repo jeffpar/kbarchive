@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85476: LOAD=, RUN=, and StartUp Group Ignored in Windows"
-permalink: kb/085/Q85476/
+permalink: /kb/085/Q85476/
 ---
 
 ## Q85476: LOAD=, RUN=, and StartUp Group Ignored in Windows

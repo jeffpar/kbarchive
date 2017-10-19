@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117682: Returning a Float from Assembly to C"
-permalink: kb/117/Q117682/
+permalink: /kb/117/Q117682/
 ---
 
 ## Q117682: Returning a Float from Assembly to C

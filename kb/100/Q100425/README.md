@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100425: Recovering DBLSPACE.00n After CHKDSK /F"
-permalink: kb/100/Q100425/
+permalink: /kb/100/Q100425/
 ---
 
 ## Q100425: Recovering DBLSPACE.00n After CHKDSK /F

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156403: SMS: Invmac Doesn't Report Mac or IP Address with Open Transport"
-permalink: kb/156/Q156403/
+permalink: /kb/156/Q156403/
 ---
 
 ## Q156403: SMS: Invmac Doesn't Report Mac or IP Address with Open Transport

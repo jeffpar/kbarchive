@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153205: Limit to Site Does Not Work if You Distribute to a Site Group"
-permalink: kb/153/Q153205/
+permalink: /kb/153/Q153205/
 ---
 
 ## Q153205: Limit to Site Does Not Work if You Distribute to a Site Group

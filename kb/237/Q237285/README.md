@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237285: SAMPLE: Daoprop.exe Sets a Custom Property on an Access Database"
-permalink: kb/237/Q237285/
+permalink: /kb/237/Q237285/
 ---
 
 ## Q237285: SAMPLE: Daoprop.exe Sets a Custom Property on an Access Database

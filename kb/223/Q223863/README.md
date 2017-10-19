@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223863: Spooler Service May Leak Attempting to Close Print Processor"
-permalink: kb/223/Q223863/
+permalink: /kb/223/Q223863/
 ---
 
 ## Q223863: Spooler Service May Leak Attempting to Close Print Processor

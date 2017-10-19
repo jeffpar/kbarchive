@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138860: SNA Server Events 94 and 592 Fill Up Application Log"
-permalink: kb/138/Q138860/
+permalink: /kb/138/Q138860/
 ---
 
 ## Q138860: SNA Server Events 94 and 592 Fill Up Application Log

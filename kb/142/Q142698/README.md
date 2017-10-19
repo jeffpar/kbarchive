@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142698: Service Pack Overwrites Localized Version of Windows NT"
-permalink: kb/142/Q142698/
+permalink: /kb/142/Q142698/
 ---
 
 ## Q142698: Service Pack Overwrites Localized Version of Windows NT

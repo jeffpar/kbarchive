@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31906: Booting from Other DOS Partitions"
-permalink: kb/031/Q31906/
+permalink: /kb/031/Q31906/
 ---
 
 ## Q31906: Booting from Other DOS Partitions

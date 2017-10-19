@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97852: PC WRmt: Modifying Modem Scripts"
-permalink: kb/097/Q97852/
+permalink: /kb/097/Q97852/
 ---
 
 ## Q97852: PC WRmt: Modifying Modem Scripts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151720: Auditing Stand-Alone Servers in a Windows NT Domain"
-permalink: kb/151/Q151720/
+permalink: /kb/151/Q151720/
 ---
 
 ## Q151720: Auditing Stand-Alone Servers in a Windows NT Domain

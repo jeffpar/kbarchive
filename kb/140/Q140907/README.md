@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140907: Cannot Send E-mail to X.400 Addresses from MSN"
-permalink: kb/140/Q140907/
+permalink: /kb/140/Q140907/
 ---
 
 ## Q140907: Cannot Send E-mail to X.400 Addresses from MSN

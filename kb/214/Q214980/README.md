@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214980: SMS: Mouse Not Reported in Hardware Inventory on 16-Bit Clients"
-permalink: kb/214/Q214980/
+permalink: /kb/214/Q214980/
 ---
 
 ## Q214980: SMS: Mouse Not Reported in Hardware Inventory on 16-Bit Clients

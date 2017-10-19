@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145789: XCLN: Boldon James MAPI X.500 Address Book Client Service Crash"
-permalink: kb/145/Q145789/
+permalink: /kb/145/Q145789/
 ---
 
 ## Q145789: XCLN: Boldon James MAPI X.500 Address Book Client Service Crash

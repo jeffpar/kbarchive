@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105462: Windows NT Advanced Server CD Contents &#92;MIPS (511)"
-permalink: kb/105/Q105462/
+permalink: /kb/105/Q105462/
 ---
 
 ## Q105462: Windows NT Advanced Server CD Contents &#92;MIPS (511)

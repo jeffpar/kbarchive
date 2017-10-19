@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157069: &quot;Can't Access This Folder. Path Is Too Long&quot; Error"
-permalink: kb/157/Q157069/
+permalink: /kb/157/Q157069/
 ---
 
 ## Q157069: &quot;Can't Access This Folder. Path Is Too Long&quot; Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168338: WD97: Mouse Causes Equation Editor Toolbar to Disappear"
-permalink: kb/168/Q168338/
+permalink: /kb/168/Q168338/
 ---
 
 ## Q168338: WD97: Mouse Causes Equation Editor Toolbar to Disappear

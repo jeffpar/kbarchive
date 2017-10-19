@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154854: Trap 0xA in AtalkBPFreeBlock"
-permalink: kb/154/Q154854/
+permalink: /kb/154/Q154854/
 ---
 
 ## Q154854: Trap 0xA in AtalkBPFreeBlock

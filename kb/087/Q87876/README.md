@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87876: Err Msg: Insufficient Memory Error... w/Extra for Windows"
-permalink: kb/087/Q87876/
+permalink: /kb/087/Q87876/
 ---
 
 ## Q87876: Err Msg: Insufficient Memory Error... w/Extra for Windows

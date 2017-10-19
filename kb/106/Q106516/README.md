@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106516: Writer: Watch Cursor Appears Repeatedly When Typing"
-permalink: kb/106/Q106516/
+permalink: /kb/106/Q106516/
 ---
 
 ## Q106516: Writer: Watch Cursor Appears Repeatedly When Typing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101284: Lucid Lightning Disk-Caching Software and SMARTDrive 4.x"
-permalink: kb/101/Q101284/
+permalink: /kb/101/Q101284/
 ---
 
 ## Q101284: Lucid Lightning Disk-Caching Software and SMARTDrive 4.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185671: FIX: ClassWizard Uses DISPID_CAPTION as Custom Caption Property"
-permalink: kb/185/Q185671/
+permalink: /kb/185/Q185671/
 ---
 
 ## Q185671: FIX: ClassWizard Uses DISPID_CAPTION as Custom Caption Property

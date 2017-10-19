@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124020: Composers: Backdrop Bitmap Looks Ugly After Closing Dialog Box"
-permalink: kb/124/Q124020/
+permalink: /kb/124/Q124020/
 ---
 
 ## Q124020: Composers: Backdrop Bitmap Looks Ugly After Closing Dialog Box

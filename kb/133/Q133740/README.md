@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133740: Null Value (.NULL.) Is a Marker - Not a Data Type"
-permalink: kb/133/Q133740/
+permalink: /kb/133/Q133740/
 ---
 
 ## Q133740: Null Value (.NULL.) Is a Marker - Not a Data Type

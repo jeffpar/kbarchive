@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164474: 0E Exception in NWLINK Sending Message from Microsoft Exchange"
-permalink: kb/164/Q164474/
+permalink: /kb/164/Q164474/
 ---
 
 ## Q164474: 0E Exception in NWLINK Sending Message from Microsoft Exchange

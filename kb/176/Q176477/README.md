@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176477: XFOR: SMTP Message to More Than 100 Recipients Is Not Delivered"
-permalink: kb/176/Q176477/
+permalink: /kb/176/Q176477/
 ---
 
 ## Q176477: XFOR: SMTP Message to More Than 100 Recipients Is Not Delivered

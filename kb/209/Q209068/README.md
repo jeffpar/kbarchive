@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209068: BUG: VBCE: Type Mismatch Error Msg Using InputFields Method"
-permalink: kb/209/Q209068/
+permalink: /kb/209/Q209068/
 ---
 
 ## Q209068: BUG: VBCE: Type Mismatch Error Msg Using InputFields Method

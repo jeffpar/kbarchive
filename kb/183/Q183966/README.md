@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183966: SNA PrintServer Fails to Establish Session with Custom Object"
-permalink: kb/183/Q183966/
+permalink: /kb/183/Q183966/
 ---
 
 ## Q183966: SNA PrintServer Fails to Establish Session with Custom Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267913: Incorrect Last Modified Time for File Is Returned"
-permalink: kb/267/Q267913/
+permalink: /kb/267/Q267913/
 ---
 
 ## Q267913: Incorrect Last Modified Time for File Is Returned

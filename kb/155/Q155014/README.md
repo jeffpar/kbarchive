@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155014: Moving Sign In Screen During Sign In May Cause GP Fault"
-permalink: kb/155/Q155014/
+permalink: /kb/155/Q155014/
 ---
 
 ## Q155014: Moving Sign In Screen During Sign In May Cause GP Fault

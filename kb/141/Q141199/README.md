@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141199: FIX: Pop-Up Menu Items Disabled for an OLE Control"
-permalink: kb/141/Q141199/
+permalink: /kb/141/Q141199/
 ---
 
 ## Q141199: FIX: Pop-Up Menu Items Disabled for an OLE Control

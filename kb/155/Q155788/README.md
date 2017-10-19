@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155788: HOWTO: Optimize SQL Using the FORCE Clause and SYS(3054)"
-permalink: kb/155/Q155788/
+permalink: /kb/155/Q155788/
 ---
 
 ## Q155788: HOWTO: Optimize SQL Using the FORCE Clause and SYS(3054)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250413: XADM: Folder Replication Status Is Blank for Some Folders"
-permalink: kb/250/Q250413/
+permalink: /kb/250/Q250413/
 ---
 
 ## Q250413: XADM: Folder Replication Status Is Blank for Some Folders

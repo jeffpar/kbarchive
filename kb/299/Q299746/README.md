@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299746: PRB: F1 Help Does Not Work With Focus on OLEControls"
-permalink: kb/299/Q299746/
+permalink: /kb/299/Q299746/
 ---
 
 ## Q299746: PRB: F1 Help Does Not Work With Focus on OLEControls

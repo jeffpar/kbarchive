@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81198: SAMPLE: OLE Implementation Guides and Sample Code"
-permalink: kb/081/Q81198/
+permalink: /kb/081/Q81198/
 ---
 
 ## Q81198: SAMPLE: OLE Implementation Guides and Sample Code

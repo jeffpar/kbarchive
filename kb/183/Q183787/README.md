@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183787: SNA Windows NT Client Contains Corrupt Help File"
-permalink: kb/183/Q183787/
+permalink: /kb/183/Q183787/
 ---
 
 ## Q183787: SNA Windows NT Client Contains Corrupt Help File

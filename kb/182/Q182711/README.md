@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182711: IE 3.0x Fails to Start Batch File Served by IIS"
-permalink: kb/182/Q182711/
+permalink: /kb/182/Q182711/
 ---
 
 ## Q182711: IE 3.0x Fails to Start Batch File Served by IIS

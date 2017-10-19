@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103928: SFM: Confirm Volume Removal Dialog Box Requires a Mouse"
-permalink: kb/103/Q103928/
+permalink: /kb/103/Q103928/
 ---
 
 ## Q103928: SFM: Confirm Volume Removal Dialog Box Requires a Mouse

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74808: How Display Drivers Use Shadow RAM"
-permalink: kb/074/Q74808/
+permalink: /kb/074/Q74808/
 ---
 
 ## Q74808: How Display Drivers Use Shadow RAM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297322: FP: Error Message: Cannot Open Service.lck for Writing, Reading"
-permalink: kb/297/Q297322/
+permalink: /kb/297/Q297322/
 ---
 
 ## Q297322: FP: Error Message: Cannot Open Service.lck for Writing, Reading

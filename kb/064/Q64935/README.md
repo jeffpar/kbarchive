@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64935: Windows 3.0 Support of 16550 and 16550A UART"
-permalink: kb/064/Q64935/
+permalink: /kb/064/Q64935/
 ---
 
 ## Q64935: Windows 3.0 Support of 16550 and 16550A UART

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197667: Installing Windows NT on a Large IDE Hard Disk"
-permalink: kb/197/Q197667/
+permalink: /kb/197/Q197667/
 ---
 
 ## Q197667: Installing Windows NT on a Large IDE Hard Disk

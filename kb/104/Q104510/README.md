@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104510: Two NCBs per Session Based on Need Declining as Traffic Climbs"
-permalink: kb/104/Q104510/
+permalink: /kb/104/Q104510/
 ---
 
 ## Q104510: Two NCBs per Session Based on Need Declining as Traffic Climbs

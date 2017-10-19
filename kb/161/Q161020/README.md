@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161020: Implementing Windows 95 Updates"
-permalink: kb/161/Q161020/
+permalink: /kb/161/Q161020/
 ---
 
 ## Q161020: Implementing Windows 95 Updates

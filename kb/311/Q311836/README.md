@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311836: FIX: SQL Server Driver Fails to Connect over TCP/IP"
-permalink: kb/311/Q311836/
+permalink: /kb/311/Q311836/
 ---
 
 ## Q311836: FIX: SQL Server Driver Fails to Connect over TCP/IP

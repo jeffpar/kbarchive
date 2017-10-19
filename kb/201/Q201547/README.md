@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201547: XFOR: GW User Without First &amp; Last Name Not Synched to Exchange"
-permalink: kb/201/Q201547/
+permalink: /kb/201/Q201547/
 ---
 
 ## Q201547: XFOR: GW User Without First &amp; Last Name Not Synched to Exchange

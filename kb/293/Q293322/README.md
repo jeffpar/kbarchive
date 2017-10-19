@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293322: Directory Service Client Not Installed on Windows NT 4.0 SP6a"
-permalink: kb/293/Q293322/
+permalink: /kb/293/Q293322/
 ---
 
 ## Q293322: Directory Service Client Not Installed on Windows NT 4.0 SP6a

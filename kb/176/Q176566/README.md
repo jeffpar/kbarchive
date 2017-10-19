@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176566: XADM: Service Is Hung, Need to Set to Manual in Registry"
-permalink: kb/176/Q176566/
+permalink: /kb/176/Q176566/
 ---
 
 ## Q176566: XADM: Service Is Hung, Need to Set to Manual in Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303649: SMS: User and User Group Discovery Runs w/Site Component Manager"
-permalink: kb/303/Q303649/
+permalink: /kb/303/Q303649/
 ---
 
 ## Q303649: SMS: User and User Group Discovery Runs w/Site Component Manager

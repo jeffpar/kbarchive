@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140546: Invalid Password Using Internet Icon But Not Using MSN Icon"
-permalink: kb/140/Q140546/
+permalink: /kb/140/Q140546/
 ---
 
 ## Q140546: Invalid Password Using Internet Icon But Not Using MSN Icon

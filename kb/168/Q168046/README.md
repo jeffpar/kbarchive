@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q168046: HOWTO: STL Sample for [list::rbegin, rend, reverse, rev_iterator"
-permalink: kb/168/Q168046/
+title: "Q168046: HOWTO: STL Sample for &#91;list::rbegin, rend, reverse, rev_iterator"
+permalink: /kb/168/Q168046/
 ---
 
-## Q168046: HOWTO: STL Sample for [list::rbegin, rend, reverse, rev_iterator
+## Q168046: HOWTO: STL Sample for &#91;list::rbegin, rend, reverse, rev_iterator
 
 	Article: Q168046
 	Product(s): Microsoft C Compiler

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260828: SMS: Installations Using Automatic Logon Fail in SMS"
-permalink: kb/260/Q260828/
+permalink: /kb/260/Q260828/
 ---
 
 ## Q260828: SMS: Installations Using Automatic Logon Fail in SMS

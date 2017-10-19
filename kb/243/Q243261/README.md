@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243261: Terminal Server Hangs on Shutdown with GSNW or CSNW Installed"
-permalink: kb/243/Q243261/
+permalink: /kb/243/Q243261/
 ---
 
 ## Q243261: Terminal Server Hangs on Shutdown with GSNW or CSNW Installed

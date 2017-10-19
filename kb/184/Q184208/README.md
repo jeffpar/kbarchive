@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184208: SMS: RCHELP Service Not Removed If Video Acceleration Disabled"
-permalink: kb/184/Q184208/
+permalink: /kb/184/Q184208/
 ---
 
 ## Q184208: SMS: RCHELP Service Not Removed If Video Acceleration Disabled

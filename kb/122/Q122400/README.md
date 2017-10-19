@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122400: Using SMS to Share Document Files with PGC"
-permalink: kb/122/Q122400/
+permalink: /kb/122/Q122400/
 ---
 
 ## Q122400: Using SMS to Share Document Files with PGC

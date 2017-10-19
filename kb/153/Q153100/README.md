@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153100: Pager Notification Not Supported with Some Voice Modems"
-permalink: kb/153/Q153100/
+permalink: /kb/153/Q153100/
 ---
 
 ## Q153100: Pager Notification Not Supported with Some Voice Modems

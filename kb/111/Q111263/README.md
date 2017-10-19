@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111263: PRB: Causes of DX1020 or R6915 Unhandled Exception Error"
-permalink: kb/111/Q111263/
+permalink: /kb/111/Q111263/
 ---
 
 ## Q111263: PRB: Causes of DX1020 or R6915 Unhandled Exception Error

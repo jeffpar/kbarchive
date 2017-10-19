@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259445: Allegiance Err Msg: Your Connection to the Game Server Was Lost"
-permalink: kb/259/Q259445/
+permalink: /kb/259/Q259445/
 ---
 
 ## Q259445: Allegiance Err Msg: Your Connection to the Game Server Was Lost

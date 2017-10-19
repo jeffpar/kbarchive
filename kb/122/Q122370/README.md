@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122370: BUG: C2248 When Access Protected Nested Class in Derived Class"
-permalink: kb/122/Q122370/
+permalink: /kb/122/Q122370/
 ---
 
 ## Q122370: BUG: C2248 When Access Protected Nested Class in Derived Class

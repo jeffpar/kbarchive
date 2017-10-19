@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142911: Printing in Portrait and Landscape Results in Two-Page Output"
-permalink: kb/142/Q142911/
+permalink: /kb/142/Q142911/
 ---
 
 ## Q142911: Printing in Portrait and Landscape Results in Two-Page Output

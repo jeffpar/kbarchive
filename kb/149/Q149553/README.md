@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149553: Greeting and Disconnect Problems Using Microsoft Phone"
-permalink: kb/149/Q149553/
+permalink: /kb/149/Q149553/
 ---
 
 ## Q149553: Greeting and Disconnect Problems Using Microsoft Phone

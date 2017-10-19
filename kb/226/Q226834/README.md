@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226834: SMS: Cancel Button in Remote Restart Dialog Box Doesn't Work"
-permalink: kb/226/Q226834/
+permalink: /kb/226/Q226834/
 ---
 
 ## Q226834: SMS: Cancel Button in Remote Restart Dialog Box Doesn't Work

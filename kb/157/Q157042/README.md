@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157042: XFOR: Event ID 4018 if IMC Started Without Private IS"
-permalink: kb/157/Q157042/
+permalink: /kb/157/Q157042/
 ---
 
 ## Q157042: XFOR: Event ID 4018 if IMC Started Without Private IS

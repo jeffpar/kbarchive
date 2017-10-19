@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94554: HIMEM.SYS and EMM386.EXE Are Not Verbose by Default"
-permalink: kb/094/Q94554/
+permalink: /kb/094/Q94554/
 ---
 
 ## Q94554: HIMEM.SYS and EMM386.EXE Are Not Verbose by Default

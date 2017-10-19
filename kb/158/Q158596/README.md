@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158596: Mac Encarta 97: Readme.txt: Performance"
-permalink: kb/158/Q158596/
+permalink: /kb/158/Q158596/
 ---
 
 ## Q158596: Mac Encarta 97: Readme.txt: Performance

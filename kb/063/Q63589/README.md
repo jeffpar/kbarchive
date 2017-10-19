@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63589: Non-Windows Applications Difficult to Read on Monochrome VGA"
-permalink: kb/063/Q63589/
+permalink: /kb/063/Q63589/
 ---
 
 ## Q63589: Non-Windows Applications Difficult to Read on Monochrome VGA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181542: PRB: Error 13 Type Mismatch Error on DAO OpenRecordset Method"
-permalink: kb/181/Q181542/
+permalink: /kb/181/Q181542/
 ---
 
 ## Q181542: PRB: Error 13 Type Mismatch Error on DAO OpenRecordset Method

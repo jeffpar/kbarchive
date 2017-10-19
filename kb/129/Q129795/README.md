@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129795: PRB: Excel Doesn't Use Container's Name for Embedded Objects"
-permalink: kb/129/Q129795/
+permalink: /kb/129/Q129795/
 ---
 
 ## Q129795: PRB: Excel Doesn't Use Container's Name for Embedded Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190714: XADM: Distribution List Name Changes When Moved to PAB"
-permalink: kb/190/Q190714/
+permalink: /kb/190/Q190714/
 ---
 
 ## Q190714: XADM: Distribution List Name Changes When Moved to PAB

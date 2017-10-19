@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115473: File-Extension Differences Between dBASE and FoxPro"
-permalink: kb/115/Q115473/
+permalink: /kb/115/Q115473/
 ---
 
 ## Q115473: File-Extension Differences Between dBASE and FoxPro

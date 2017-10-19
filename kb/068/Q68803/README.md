@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68803: DCA IRMA Boards and E78PLUS Software with Windows 3.0"
-permalink: kb/068/Q68803/
+permalink: /kb/068/Q68803/
 ---
 
 ## Q68803: DCA IRMA Boards and E78PLUS Software with Windows 3.0

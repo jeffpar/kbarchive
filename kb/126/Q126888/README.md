@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126888: PC WSPlus: Err Msg: SCHDPLUS Caused a GPF in DEMILAYR.DLL"
-permalink: kb/126/Q126888/
+permalink: /kb/126/Q126888/
 ---
 
 ## Q126888: PC WSPlus: Err Msg: SCHDPLUS Caused a GPF in DEMILAYR.DLL

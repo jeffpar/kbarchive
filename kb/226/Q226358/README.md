@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226358: Using the AspEnableApplicationRestart Metabase"
-permalink: kb/226/Q226358/
+permalink: /kb/226/Q226358/
 ---
 
 ## Q226358: Using the AspEnableApplicationRestart Metabase

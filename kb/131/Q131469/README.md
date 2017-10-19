@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131469: Windows NT Err Msg The RPC Server is Unavailable"
-permalink: kb/131/Q131469/
+permalink: /kb/131/Q131469/
 ---
 
 ## Q131469: Windows NT Err Msg The RPC Server is Unavailable

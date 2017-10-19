@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165490: VB4 16-Bit OLE Clients Receive Error -2147319784"
-permalink: kb/165/Q165490/
+permalink: /kb/165/Q165490/
 ---
 
 ## Q165490: VB4 16-Bit OLE Clients Receive Error -2147319784

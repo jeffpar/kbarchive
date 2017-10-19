@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131472: Mac PC Mail Client Err Msg: &quot;Unable to send mail to...&quot;"
-permalink: kb/131/Q131472/
+permalink: /kb/131/Q131472/
 ---
 
 ## Q131472: Mac PC Mail Client Err Msg: &quot;Unable to send mail to...&quot;

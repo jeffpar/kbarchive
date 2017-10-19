@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128719: PRB: &quot;Table or Row Buffering Requires that SET ...&quot; Error"
-permalink: kb/128/Q128719/
+permalink: /kb/128/Q128719/
 ---
 
 ## Q128719: PRB: &quot;Table or Row Buffering Requires that SET ...&quot; Error

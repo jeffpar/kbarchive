@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98090: PC WFW: 3.0 Windows Client Disk 3 [5.25, 1.2 MB]"
-permalink: kb/098/Q98090/
+title: "Q98090: PC WFW: 3.0 Windows Client Disk 3 &#91;5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98090/
 ---
 
-## Q98090: PC WFW: 3.0 Windows Client Disk 3 [5.25, 1.2 MB]
+## Q98090: PC WFW: 3.0 Windows Client Disk 3 &#91;5.25, 1.2 MB&#93;
 
 	Article: Q98090
 	Product(s): Microsoft Mail For PC Networks

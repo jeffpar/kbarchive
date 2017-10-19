@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242367: XADM: Limitation Warning Message Has Wrong Words"
-permalink: kb/242/Q242367/
+permalink: /kb/242/Q242367/
 ---
 
 ## Q242367: XADM: Limitation Warning Message Has Wrong Words

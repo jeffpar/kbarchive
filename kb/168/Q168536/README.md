@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168536: XCON: Event ID: 246 An Internal MTA Error Has Occurred"
-permalink: kb/168/Q168536/
+permalink: /kb/168/Q168536/
 ---
 
 ## Q168536: XCON: Event ID: 246 An Internal MTA Error Has Occurred

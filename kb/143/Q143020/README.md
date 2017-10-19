@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143020: PPT7: White Shadows Overlay Text with HP LaserJet 4"
-permalink: kb/143/Q143020/
+permalink: /kb/143/Q143020/
 ---
 
 ## Q143020: PPT7: White Shadows Overlay Text with HP LaserJet 4

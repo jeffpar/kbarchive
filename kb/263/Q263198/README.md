@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263198: SMS: Err Msg: You Have Referenced the Variable DEST 9. This..."
-permalink: kb/263/Q263198/
+permalink: /kb/263/Q263198/
 ---
 
 ## Q263198: SMS: Err Msg: You Have Referenced the Variable DEST 9. This...

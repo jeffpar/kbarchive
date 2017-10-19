@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63776: Flt Simulator: Incorrect ILS Glideslope at San Francisco Intl"
-permalink: kb/063/Q63776/
+permalink: /kb/063/Q63776/
 ---
 
 ## Q63776: Flt Simulator: Incorrect ILS Glideslope at San Francisco Intl

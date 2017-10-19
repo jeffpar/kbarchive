@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156494: XADM: Restoring Lost Performance Counters for Exchange"
-permalink: kb/156/Q156494/
+permalink: /kb/156/Q156494/
 ---
 
 ## Q156494: XADM: Restoring Lost Performance Counters for Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308561: PerfMon Counters Not Available for OLE DB &amp; ODBC Providers"
-permalink: kb/308/Q308561/
+permalink: /kb/308/Q308561/
 ---
 
 ## Q308561: PerfMon Counters Not Available for OLE DB &amp; ODBC Providers

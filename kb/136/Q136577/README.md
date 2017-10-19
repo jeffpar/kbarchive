@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136577: Contents of Visual FoxPro Pro Edition CD-ROM Disc Part 2 of 2"
-permalink: kb/136/Q136577/
+permalink: /kb/136/Q136577/
 ---
 
 ## Q136577: Contents of Visual FoxPro Pro Edition CD-ROM Disc Part 2 of 2

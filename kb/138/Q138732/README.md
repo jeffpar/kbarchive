@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138732: Works 4.0 Setup Error: Your Setup Files May Be Damaged"
-permalink: kb/138/Q138732/
+permalink: /kb/138/Q138732/
 ---
 
 ## Q138732: Works 4.0 Setup Error: Your Setup Files May Be Damaged

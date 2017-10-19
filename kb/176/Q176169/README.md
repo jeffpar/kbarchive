@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176169: XADM: How to Install ILS on Exchange Server Computer"
-permalink: kb/176/Q176169/
+permalink: /kb/176/Q176169/
 ---
 
 ## Q176169: XADM: How to Install ILS on Exchange Server Computer

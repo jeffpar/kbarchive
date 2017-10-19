@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195701: SMS: No System BIOS Information Returned on IBM OS/2 Clients"
-permalink: kb/195/Q195701/
+permalink: /kb/195/Q195701/
 ---
 
 ## Q195701: SMS: No System BIOS Information Returned on IBM OS/2 Clients

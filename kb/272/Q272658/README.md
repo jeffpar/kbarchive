@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272658: MSN Companion Member Name and Password Confirmation"
-permalink: kb/272/Q272658/
+permalink: /kb/272/Q272658/
 ---
 
 ## Q272658: MSN Companion Member Name and Password Confirmation

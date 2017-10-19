@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138495: PRB: Compile Dialog Boxes Appear Inconsistent or Incomplete"
-permalink: kb/138/Q138495/
+permalink: /kb/138/Q138495/
 ---
 
 ## Q138495: PRB: Compile Dialog Boxes Appear Inconsistent or Incomplete

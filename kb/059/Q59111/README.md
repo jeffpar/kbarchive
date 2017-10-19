@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59111: Mac Form: Description of Custom Form Template"
-permalink: kb/059/Q59111/
+permalink: /kb/059/Q59111/
 ---
 
 ## Q59111: Mac Form: Description of Custom Form Template

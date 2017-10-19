@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99093: Some Options Not Fully Displayed in RQBE List Boxes"
-permalink: kb/099/Q99093/
+permalink: /kb/099/Q99093/
 ---
 
 ## Q99093: Some Options Not Fully Displayed in RQBE List Boxes

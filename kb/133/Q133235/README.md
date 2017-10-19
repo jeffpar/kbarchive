@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133235: Dogs: Text on Screen Is Not Printed"
-permalink: kb/133/Q133235/
+permalink: /kb/133/Q133235/
 ---
 
 ## Q133235: Dogs: Text on Screen Is Not Printed

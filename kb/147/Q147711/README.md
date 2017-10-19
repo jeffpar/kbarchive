@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147711: Scheduled RASDIAL Fails To Connect to Windows NT RAS Server"
-permalink: kb/147/Q147711/
+permalink: /kb/147/Q147711/
 ---
 
 ## Q147711: Scheduled RASDIAL Fails To Connect to Windows NT RAS Server

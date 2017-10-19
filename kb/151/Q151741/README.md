@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151741: Compressed Drives in Compatibility Mode After Compact Setup"
-permalink: kb/151/Q151741/
+permalink: /kb/151/Q151741/
 ---
 
 ## Q151741: Compressed Drives in Compatibility Mode After Compact Setup

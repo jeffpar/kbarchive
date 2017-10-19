@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197148: WD97: Word Ruler Supports Only Mouse Commands"
-permalink: kb/197/Q197148/
+permalink: /kb/197/Q197148/
 ---
 
 ## Q197148: WD97: Word Ruler Supports Only Mouse Commands

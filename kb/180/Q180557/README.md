@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180557: DHCP Clients Unable to Obtain IP Lease from DHCP Server"
-permalink: kb/180/Q180557/
+permalink: /kb/180/Q180557/
 ---
 
 ## Q180557: DHCP Clients Unable to Obtain IP Lease from DHCP Server

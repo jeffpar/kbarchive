@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108034: Installing a Banyan VINES Network with WFWG 3.11"
-permalink: kb/108/Q108034/
+permalink: /kb/108/Q108034/
 ---
 
 ## Q108034: Installing a Banyan VINES Network with WFWG 3.11

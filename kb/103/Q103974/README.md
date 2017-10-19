@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103974: Token Ring Error Msg: Bad FC/AR flags--Probable Causes"
-permalink: kb/103/Q103974/
+permalink: /kb/103/Q103974/
 ---
 
 ## Q103974: Token Ring Error Msg: Bad FC/AR flags--Probable Causes

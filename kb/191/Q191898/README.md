@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191898: BUG: Windowless TextBox Contents Highlighted After Drag &amp; Drop"
-permalink: kb/191/Q191898/
+permalink: /kb/191/Q191898/
 ---
 
 ## Q191898: BUG: Windowless TextBox Contents Highlighted After Drag &amp; Drop

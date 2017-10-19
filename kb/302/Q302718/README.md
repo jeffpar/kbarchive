@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302718: Migrating From MSN Explorer 6.1 To 6.0 And Then Installing 6.1 A"
-permalink: kb/302/Q302718/
+permalink: /kb/302/Q302718/
 ---
 
 ## Q302718: Migrating From MSN Explorer 6.1 To 6.0 And Then Installing 6.1 A

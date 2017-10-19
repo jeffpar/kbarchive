@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248831: BUG: Incorrect Symbols for Kerberos DLLs on Windows 2000"
-permalink: kb/248/Q248831/
+permalink: /kb/248/Q248831/
 ---
 
 ## Q248831: BUG: Incorrect Symbols for Kerberos DLLs on Windows 2000

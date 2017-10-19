@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245070: Primary Domain Controller Cannot Validate Account."
-permalink: kb/245/Q245070/
+permalink: /kb/245/Q245070/
 ---
 
 ## Q245070: Primary Domain Controller Cannot Validate Account.

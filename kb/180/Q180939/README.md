@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180939: Unable to Start Print Session After Changing Session Name"
-permalink: kb/180/Q180939/
+permalink: /kb/180/Q180939/
 ---
 
 ## Q180939: Unable to Start Print Session After Changing Session Name

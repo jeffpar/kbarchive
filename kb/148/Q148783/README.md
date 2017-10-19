@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148783: Poor Sound Quality with Future Domain 850-Series Controllers"
-permalink: kb/148/Q148783/
+permalink: /kb/148/Q148783/
 ---
 
 ## Q148783: Poor Sound Quality with Future Domain 850-Series Controllers

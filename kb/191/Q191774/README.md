@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191774: How to Obtain Dmacheck.exe for Windows NT"
-permalink: kb/191/Q191774/
+permalink: /kb/191/Q191774/
 ---
 
 ## Q191774: How to Obtain Dmacheck.exe for Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319755: XADM: Error c106fc0d When Upgrade to Exchange 5.5 Enterprise"
-permalink: kb/319/Q319755/
+permalink: /kb/319/Q319755/
 ---
 
 ## Q319755: XADM: Error c106fc0d When Upgrade to Exchange 5.5 Enterprise

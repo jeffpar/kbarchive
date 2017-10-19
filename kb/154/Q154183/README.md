@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154183: CreateFile API with Delete-on-Close Option May Fail"
-permalink: kb/154/Q154183/
+permalink: /kb/154/Q154183/
 ---
 
 ## Q154183: CreateFile API with Delete-on-Close Option May Fail

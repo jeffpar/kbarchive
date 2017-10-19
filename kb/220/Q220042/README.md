@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220042: XCLN: Message Incorrectly Marked as Replied To or Forwarded"
-permalink: kb/220/Q220042/
+permalink: /kb/220/Q220042/
 ---
 
 ## Q220042: XCLN: Message Incorrectly Marked as Replied To or Forwarded

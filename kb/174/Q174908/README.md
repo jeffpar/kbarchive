@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174908: ODE97: Removing MS Office Products May Unregister MS Graph"
-permalink: kb/174/Q174908/
+permalink: /kb/174/Q174908/
 ---
 
 ## Q174908: ODE97: Removing MS Office Products May Unregister MS Graph

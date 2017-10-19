@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65730: Film Recorder Support Under PowerPoint for Windows"
-permalink: kb/065/Q65730/
+permalink: /kb/065/Q65730/
 ---
 
 ## Q65730: Film Recorder Support Under PowerPoint for Windows

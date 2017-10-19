@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142194: FIX: Control Class in Control Not Shown in Control Array"
-permalink: kb/142/Q142194/
+permalink: /kb/142/Q142194/
 ---
 
 ## Q142194: FIX: Control Class in Control Not Shown in Control Array

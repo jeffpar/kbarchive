@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164592: Dynamically Defined Dependent LU Support for LUA LUs"
-permalink: kb/164/Q164592/
+permalink: /kb/164/Q164592/
 ---
 
 ## Q164592: Dynamically Defined Dependent LU Support for LUA LUs

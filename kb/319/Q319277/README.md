@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319277: FIX: IMPORT from Excel File causes Error"
-permalink: kb/319/Q319277/
+permalink: /kb/319/Q319277/
 ---
 
 ## Q319277: FIX: IMPORT from Excel File causes Error

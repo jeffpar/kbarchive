@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190949: SMS: PREINST /SYNCPARENT Leaves Blank Records in Machine Groups"
-permalink: kb/190/Q190949/
+permalink: /kb/190/Q190949/
 ---
 
 ## Q190949: SMS: PREINST /SYNCPARENT Leaves Blank Records in Machine Groups

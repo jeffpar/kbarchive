@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243701: XCON: Microsoft Mail Connector Interchange Events 2450 and 2380"
-permalink: kb/243/Q243701/
+permalink: /kb/243/Q243701/
 ---
 
 ## Q243701: XCON: Microsoft Mail Connector Interchange Events 2450 and 2380

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108428: Err Msg: An Error Occurred Accessing the Security Settings..."
-permalink: kb/108/Q108428/
+permalink: /kb/108/Q108428/
 ---
 
 ## Q108428: Err Msg: An Error Occurred Accessing the Security Settings...

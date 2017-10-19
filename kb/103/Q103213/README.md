@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103213: Printing in Visual Basic and C"
-permalink: kb/103/Q103213/
+permalink: /kb/103/Q103213/
 ---
 
 ## Q103213: Printing in Visual Basic and C

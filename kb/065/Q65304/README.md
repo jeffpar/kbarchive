@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65304: INFO: C2059, C2065, C2143 May Be Caused by Not Including Header"
-permalink: kb/065/Q65304/
+permalink: /kb/065/Q65304/
 ---
 
 ## Q65304: INFO: C2059, C2065, C2143 May Be Caused by Not Including Header

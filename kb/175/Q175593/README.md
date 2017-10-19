@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175593: Cannot Play in Zone.com Using MSN Program Viewer"
-permalink: kb/175/Q175593/
+permalink: /kb/175/Q175593/
 ---
 
 ## Q175593: Cannot Play in Zone.com Using MSN Program Viewer

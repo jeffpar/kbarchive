@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143250: Streets 4.0: How to Use the &quot;Go To Lat/Long Option&quot;"
-permalink: kb/143/Q143250/
+permalink: /kb/143/Q143250/
 ---
 
 ## Q143250: Streets 4.0: How to Use the &quot;Go To Lat/Long Option&quot;

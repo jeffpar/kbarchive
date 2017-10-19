@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175647: Event ID: 1011 Missing Library File Dfsinstr.dll"
-permalink: kb/175/Q175647/
+permalink: /kb/175/Q175647/
 ---
 
 ## Q175647: Event ID: 1011 Missing Library File Dfsinstr.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179753: HOWTO: Use the Microsoft RemoteData Control"
-permalink: kb/179/Q179753/
+permalink: /kb/179/Q179753/
 ---
 
 ## Q179753: HOWTO: Use the Microsoft RemoteData Control

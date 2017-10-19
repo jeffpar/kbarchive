@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120898: File Manager and Shell Report Total Size of CD-ROMs as 128 MB"
-permalink: kb/120/Q120898/
+permalink: /kb/120/Q120898/
 ---
 
 ## Q120898: File Manager and Shell Report Total Size of CD-ROMs as 128 MB

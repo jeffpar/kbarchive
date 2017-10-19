@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322633: Microsoft Excel 2000 Step by Step Courseware Expert Skills Stude"
-permalink: kb/322/Q322633/
+permalink: /kb/322/Q322633/
 ---
 
 ## Q322633: Microsoft Excel 2000 Step by Step Courseware Expert Skills Stude

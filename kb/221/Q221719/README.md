@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221719: FIX: Polish Collate Sequence Not Available in Options Data Tab"
-permalink: kb/221/Q221719/
+permalink: /kb/221/Q221719/
 ---
 
 ## Q221719: FIX: Polish Collate Sequence Not Available in Options Data Tab

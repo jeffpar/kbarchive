@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151387: WFWG 3.11 DHCP Client Does Not Release IP Address"
-permalink: kb/151/Q151387/
+permalink: /kb/151/Q151387/
 ---
 
 ## Q151387: WFWG 3.11 DHCP Client Does Not Release IP Address

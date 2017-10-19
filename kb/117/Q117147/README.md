@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117147: BUG: Break When Expression Has Changed Fails On Struct Members"
-permalink: kb/117/Q117147/
+permalink: /kb/117/Q117147/
 ---
 
 ## Q117147: BUG: Break When Expression Has Changed Fails On Struct Members

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96125: 3COM: Conversion to Mail 3.0 Windows Client Fails"
-permalink: kb/096/Q96125/
+permalink: /kb/096/Q96125/
 ---
 
 ## Q96125: 3COM: Conversion to Mail 3.0 Windows Client Fails

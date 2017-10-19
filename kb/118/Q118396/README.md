@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118396: PRB: putchar Fails in C Code Called from FORTRAN Application"
-permalink: kb/118/Q118396/
+permalink: /kb/118/Q118396/
 ---
 
 ## Q118396: PRB: putchar Fails in C Code Called from FORTRAN Application

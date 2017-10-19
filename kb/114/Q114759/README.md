@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114759: Dot Matrix Printer Controls Don't Function"
-permalink: kb/114/Q114759/
+permalink: /kb/114/Q114759/
 ---
 
 ## Q114759: Dot Matrix Printer Controls Don't Function

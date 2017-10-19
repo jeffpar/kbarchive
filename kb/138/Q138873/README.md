@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138873: BUG: Window Colors Cannot Be Customized from Developer Studio"
-permalink: kb/138/Q138873/
+permalink: /kb/138/Q138873/
 ---
 
 ## Q138873: BUG: Window Colors Cannot Be Customized from Developer Studio

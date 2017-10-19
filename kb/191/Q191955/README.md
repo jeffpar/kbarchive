@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191955: PRB: NOWAIT Breaks Filter Printing Report from Preview Window"
-permalink: kb/191/Q191955/
+permalink: /kb/191/Q191955/
 ---
 
 ## Q191955: PRB: NOWAIT Breaks Filter Printing Report from Preview Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99714: MHS: Connecting Microsoft Mail to cc:Mail"
-permalink: kb/099/Q99714/
+permalink: /kb/099/Q99714/
 ---
 
 ## Q99714: MHS: Connecting Microsoft Mail to cc:Mail

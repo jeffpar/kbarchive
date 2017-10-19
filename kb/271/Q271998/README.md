@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271998: DOM:Event 5718 on the BDC"
-permalink: kb/271/Q271998/
+permalink: /kb/271/Q271998/
 ---
 
 ## Q271998: DOM:Event 5718 on the BDC

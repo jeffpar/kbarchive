@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216422: Exchange Specific Policy Module for Certificate Server disables"
-permalink: kb/216/Q216422/
+permalink: /kb/216/Q216422/
 ---
 
 ## Q216422: Exchange Specific Policy Module for Certificate Server disables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197137: WD97: AutoFormat Does Not Replace Hyphens with En Dashes"
-permalink: kb/197/Q197137/
+permalink: /kb/197/Q197137/
 ---
 
 ## Q197137: WD97: AutoFormat Does Not Replace Hyphens with En Dashes

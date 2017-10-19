@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110469: Golf Won't Run After Running MS-DOS 6 MemMaker"
-permalink: kb/110/Q110469/
+permalink: /kb/110/Q110469/
 ---
 
 ## Q110469: Golf Won't Run After Running MS-DOS 6 MemMaker

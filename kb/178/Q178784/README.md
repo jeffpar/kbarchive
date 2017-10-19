@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178784: HOWTO: Use Automation to Open and Print a Word Document"
-permalink: kb/178/Q178784/
+permalink: /kb/178/Q178784/
 ---
 
 ## Q178784: HOWTO: Use Automation to Open and Print a Word Document

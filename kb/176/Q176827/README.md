@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176827: No Settings Command on Start Menu After Logging On to Windows"
-permalink: kb/176/Q176827/
+permalink: /kb/176/Q176827/
 ---
 
 ## Q176827: No Settings Command on Start Menu After Logging On to Windows

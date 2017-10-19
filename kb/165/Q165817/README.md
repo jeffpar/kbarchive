@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165817: XCLN: Unable to Open NetBEUI Connection with Shiva"
-permalink: kb/165/Q165817/
+permalink: /kb/165/Q165817/
 ---
 
 ## Q165817: XCLN: Unable to Open NetBEUI Connection with Shiva

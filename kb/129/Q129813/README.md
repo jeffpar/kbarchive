@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129813: How to Not Check Addresses in The Microsoft Network E-mail"
-permalink: kb/129/Q129813/
+permalink: /kb/129/Q129813/
 ---
 
 ## Q129813: How to Not Check Addresses in The Microsoft Network E-mail

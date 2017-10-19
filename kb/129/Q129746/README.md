@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129746: X.400 SMTP: Mixed Gateway Addresses on the To: Line"
-permalink: kb/129/Q129746/
+permalink: /kb/129/Q129746/
 ---
 
 ## Q129746: X.400 SMTP: Mixed Gateway Addresses on the To: Line

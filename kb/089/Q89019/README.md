@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89019: Princeton SR 12 Does Not Work Under Windows"
-permalink: kb/089/Q89019/
+permalink: /kb/089/Q89019/
 ---
 
 ## Q89019: Princeton SR 12 Does Not Work Under Windows

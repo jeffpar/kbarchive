@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155927: Err Msg: Registry Subkey Already Exists! Installation Failed"
-permalink: kb/155/Q155927/
+permalink: /kb/155/Q155927/
 ---
 
 ## Q155927: Err Msg: Registry Subkey Already Exists! Installation Failed

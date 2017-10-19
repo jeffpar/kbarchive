@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153101: EnumPrinters Fails When Enumerating Connected Printers"
-permalink: kb/153/Q153101/
+permalink: /kb/153/Q153101/
 ---
 
 ## Q153101: EnumPrinters Fails When Enumerating Connected Printers

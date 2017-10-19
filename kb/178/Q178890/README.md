@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178890: HOWTO: Use ON ERROR To Debug Applications"
-permalink: kb/178/Q178890/
+permalink: /kb/178/Q178890/
 ---
 
 ## Q178890: HOWTO: Use ON ERROR To Debug Applications

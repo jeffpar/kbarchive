@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90374: DBWIN Won't Work with Text on First Line of Mono Display"
-permalink: kb/090/Q90374/
+permalink: /kb/090/Q90374/
 ---
 
 ## Q90374: DBWIN Won't Work with Text on First Line of Mono Display

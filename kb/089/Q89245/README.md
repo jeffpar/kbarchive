@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89245: How to Verify Novell NetWare Shell"
-permalink: kb/089/Q89245/
+permalink: /kb/089/Q89245/
 ---
 
 ## Q89245: How to Verify Novell NetWare Shell

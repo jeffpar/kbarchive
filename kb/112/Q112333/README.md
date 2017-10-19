@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112333: FIX: CTRL+Z Is Not End-of-File Marker in PowerStation"
-permalink: kb/112/Q112333/
+permalink: /kb/112/Q112333/
 ---
 
 ## Q112333: FIX: CTRL+Z Is Not End-of-File Marker in PowerStation

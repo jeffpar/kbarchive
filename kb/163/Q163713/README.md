@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163713: XADM: Recovering a Single Mailbox from the Online Backup"
-permalink: kb/163/Q163713/
+permalink: /kb/163/Q163713/
 ---
 
 ## Q163713: XADM: Recovering a Single Mailbox from the Online Backup

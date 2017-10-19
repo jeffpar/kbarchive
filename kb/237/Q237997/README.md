@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237997: Midtown Madness: Cannot Start Game at Resolution Above 640 x 480"
-permalink: kb/237/Q237997/
+permalink: /kb/237/Q237997/
 ---
 
 ## Q237997: Midtown Madness: Cannot Start Game at Resolution Above 640 x 480

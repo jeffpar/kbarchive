@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131949: FLTSIM 5.1: Disk 1 (Setup) Contents (3.5 1.44 MB)"
-permalink: kb/131/Q131949/
+permalink: /kb/131/Q131949/
 ---
 
 ## Q131949: FLTSIM 5.1: Disk 1 (Setup) Contents (3.5 1.44 MB)

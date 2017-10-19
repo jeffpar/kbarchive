@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248690: PRB: OLE Automation: CheckOut Recursive Fails"
-permalink: kb/248/Q248690/
+permalink: /kb/248/Q248690/
 ---
 
 ## Q248690: PRB: OLE Automation: CheckOut Recursive Fails

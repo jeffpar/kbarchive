@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224525: PRB: SQL Server Upsizing Wizard Padding Char and VarChar Fields"
-permalink: kb/224/Q224525/
+permalink: /kb/224/Q224525/
 ---
 
 ## Q224525: PRB: SQL Server Upsizing Wizard Padding Char and VarChar Fields

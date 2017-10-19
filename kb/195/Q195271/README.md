@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195271: Dev Int'l Software: Unicode to ANSI Conversion May Fail"
-permalink: kb/195/Q195271/
+permalink: /kb/195/Q195271/
 ---
 
 ## Q195271: Dev Int'l Software: Unicode to ANSI Conversion May Fail

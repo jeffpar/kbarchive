@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114725: Incorrect Right Margin with COM10 Center-Fed Envelope"
-permalink: kb/114/Q114725/
+permalink: /kb/114/Q114725/
 ---
 
 ## Q114725: Incorrect Right Margin with COM10 Center-Fed Envelope

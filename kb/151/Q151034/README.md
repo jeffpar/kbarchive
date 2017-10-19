@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151034: PRB: MFC Control Panel Applet Shows ODBC Icon in Control Panel"
-permalink: kb/151/Q151034/
+permalink: /kb/151/Q151034/
 ---
 
 ## Q151034: PRB: MFC Control Panel Applet Shows ODBC Icon in Control Panel

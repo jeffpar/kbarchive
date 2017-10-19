@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195040: XFOR: Internet News Service Sends Long &quot;newnews&quot; Command"
-permalink: kb/195/Q195040/
+permalink: /kb/195/Q195040/
 ---
 
 ## Q195040: XFOR: Internet News Service Sends Long &quot;newnews&quot; Command

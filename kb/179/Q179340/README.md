@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179340: WD97: CC: Address Gone After Using Address Book in Letter Wizard"
-permalink: kb/179/Q179340/
+permalink: /kb/179/Q179340/
 ---
 
 ## Q179340: WD97: CC: Address Gone After Using Address Book in Letter Wizard

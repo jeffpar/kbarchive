@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58689: Link Method Causes Unexpected Increase in .EXE File Size"
-permalink: kb/058/Q58689/
+permalink: /kb/058/Q58689/
 ---
 
 ## Q58689: Link Method Causes Unexpected Increase in .EXE File Size

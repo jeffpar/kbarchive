@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281145: CSNW/GSNW Issues Repeated Name Queries to NetWare Servers"
-permalink: kb/281/Q281145/
+permalink: /kb/281/Q281145/
 ---
 
 ## Q281145: CSNW/GSNW Issues Repeated Name Queries to NetWare Servers

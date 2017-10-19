@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124173: ACLCONV Not Updating Permissions for Mapped Users and Groups"
-permalink: kb/124/Q124173/
+permalink: /kb/124/Q124173/
 ---
 
 ## Q124173: ACLCONV Not Updating Permissions for Mapped Users and Groups

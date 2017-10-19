@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240883: Shadow Folders Are Not Updated When You Use Mapped Drives"
-permalink: kb/240/Q240883/
+permalink: /kb/240/Q240883/
 ---
 
 ## Q240883: Shadow Folders Are Not Updated When You Use Mapped Drives

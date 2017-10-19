@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157561: STL Sample for the Predicate Version of the merge Function"
-permalink: kb/157/Q157561/
+permalink: /kb/157/Q157561/
 ---
 
 ## Q157561: STL Sample for the Predicate Version of the merge Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141901: Attachment Icon in MS Mail Missing with &quot;Send To&quot; Command"
-permalink: kb/141/Q141901/
+permalink: /kb/141/Q141901/
 ---
 
 ## Q141901: Attachment Icon in MS Mail Missing with &quot;Send To&quot; Command

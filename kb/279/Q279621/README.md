@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279621: MechWarrior 4 Err Msg: Nested Exception! Cause: EnterWindowMode"
-permalink: kb/279/Q279621/
+permalink: /kb/279/Q279621/
 ---
 
 ## Q279621: MechWarrior 4 Err Msg: Nested Exception! Cause: EnterWindowMode

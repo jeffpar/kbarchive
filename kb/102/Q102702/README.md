@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102702: Invalid VxD Dynamic Link Call to Device Number 000D"
-permalink: kb/102/Q102702/
+permalink: /kb/102/Q102702/
 ---
 
 ## Q102702: Invalid VxD Dynamic Link Call to Device Number 000D

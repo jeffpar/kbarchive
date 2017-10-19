@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172902: XWEB: Exchange Web Client Cannot Open Attached Mail Messages"
-permalink: kb/172/Q172902/
+permalink: /kb/172/Q172902/
 ---
 
 ## Q172902: XWEB: Exchange Web Client Cannot Open Attached Mail Messages

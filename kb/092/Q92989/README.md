@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92989: Persistent Connections May Not Work with Real Mode Redirector"
-permalink: kb/092/Q92989/
+permalink: /kb/092/Q92989/
 ---
 
 ## Q92989: Persistent Connections May Not Work with Real Mode Redirector

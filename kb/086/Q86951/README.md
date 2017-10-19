@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86951: 3COM: Errors During Installation"
-permalink: kb/086/Q86951/
+permalink: /kb/086/Q86951/
 ---
 
 ## Q86951: 3COM: Errors During Installation

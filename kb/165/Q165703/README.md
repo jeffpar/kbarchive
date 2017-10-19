@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165703: 16-bit RUI Calls Don't Complete Properly Using NT Thunking DLL"
-permalink: kb/165/Q165703/
+permalink: /kb/165/Q165703/
 ---
 
 ## Q165703: 16-bit RUI Calls Don't Complete Properly Using NT Thunking DLL

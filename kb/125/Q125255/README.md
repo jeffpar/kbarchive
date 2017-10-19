@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125255: PC Win: How Users Are Validated Against MMF Files"
-permalink: kb/125/Q125255/
+permalink: /kb/125/Q125255/
 ---
 
 ## Q125255: PC Win: How Users Are Validated Against MMF Files

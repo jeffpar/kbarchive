@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115165: PC Win: Attached Mac Filenames Convert to Windows Incorrectly"
-permalink: kb/115/Q115165/
+permalink: /kb/115/Q115165/
 ---
 
 ## Q115165: PC Win: Attached Mac Filenames Convert to Windows Incorrectly

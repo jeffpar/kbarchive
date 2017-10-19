@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80105: Using PowerLan with Windows 3.0"
-permalink: kb/080/Q80105/
+permalink: /kb/080/Q80105/
 ---
 
 ## Q80105: Using PowerLan with Windows 3.0

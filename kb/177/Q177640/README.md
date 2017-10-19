@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177640: 16 or More Link Services of Same Type Show Incorrect Name"
-permalink: kb/177/Q177640/
+permalink: /kb/177/Q177640/
 ---
 
 ## Q177640: 16 or More Link Services of Same Type Show Incorrect Name

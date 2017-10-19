@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181997: How SNA Server Operates w/ NetWare When Configured in NDS Mode"
-permalink: kb/181/Q181997/
+permalink: /kb/181/Q181997/
 ---
 
 ## Q181997: How SNA Server Operates w/ NetWare When Configured in NDS Mode

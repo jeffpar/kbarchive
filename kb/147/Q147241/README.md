@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147241: HP Design Jet 650C Prints Large HPGL/2 Files Slowly"
-permalink: kb/147/Q147241/
+permalink: /kb/147/Q147241/
 ---
 
 ## Q147241: HP Design Jet 650C Prints Large HPGL/2 Files Slowly

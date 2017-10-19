@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50130: PRB: Linker Error L2041: &quot;Stack Plus Data Exceeds 64K&quot;"
-permalink: kb/050/Q50130/
+permalink: /kb/050/Q50130/
 ---
 
 ## Q50130: PRB: Linker Error L2041: &quot;Stack Plus Data Exceeds 64K&quot;

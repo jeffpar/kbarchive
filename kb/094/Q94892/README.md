@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94892: FIX: GPF When Making .EXE File If Forms Saved as Binary"
-permalink: kb/094/Q94892/
+permalink: /kb/094/Q94892/
 ---
 
 ## Q94892: FIX: GPF When Making .EXE File If Forms Saved as Binary

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164456: XFOR: Migrated MS Mail Users May Not Receive Messages in Inbox"
-permalink: kb/164/Q164456/
+permalink: /kb/164/Q164456/
 ---
 
 ## Q164456: XFOR: Migrated MS Mail Users May Not Receive Messages in Inbox

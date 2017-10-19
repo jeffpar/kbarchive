@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194736: PC Adm: Admin Not Displaying X.400 Names Correctly in French"
-permalink: kb/194/Q194736/
+permalink: /kb/194/Q194736/
 ---
 
 ## Q194736: PC Adm: Admin Not Displaying X.400 Names Correctly in French

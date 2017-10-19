@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256827: MapPoint 2001: There Was a Problem Opening &lt;Filename&gt;"
-permalink: kb/256/Q256827/
+permalink: /kb/256/Q256827/
 ---
 
 ## Q256827: MapPoint 2001: There Was a Problem Opening &lt;Filename&gt;

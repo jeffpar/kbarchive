@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165797: SMS: Remote Control Disables Windows NT Screen Saver"
-permalink: kb/165/Q165797/
+permalink: /kb/165/Q165797/
 ---
 
 ## Q165797: SMS: Remote Control Disables Windows NT Screen Saver

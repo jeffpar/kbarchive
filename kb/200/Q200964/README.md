@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200964: SMS: Reasons Software Metering Server Fails to Install"
-permalink: kb/200/Q200964/
+permalink: /kb/200/Q200964/
 ---
 
 ## Q200964: SMS: Reasons Software Metering Server Fails to Install

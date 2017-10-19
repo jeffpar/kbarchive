@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121096: BUG: Wrong Menu with Maximized MDI Child and No Control Box"
-permalink: kb/121/Q121096/
+permalink: /kb/121/Q121096/
 ---
 
 ## Q121096: BUG: Wrong Menu with Maximized MDI Child and No Control Box

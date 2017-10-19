@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137007: Cannot Delete Default Folders in Microsoft Exchange"
-permalink: kb/137/Q137007/
+permalink: /kb/137/Q137007/
 ---
 
 ## Q137007: Cannot Delete Default Folders in Microsoft Exchange

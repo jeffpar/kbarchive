@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149606: Fatal Exception 0E in VNETBIOS Using NetWare Login Script"
-permalink: kb/149/Q149606/
+permalink: /kb/149/Q149606/
 ---
 
 ## Q149606: Fatal Exception 0E in VNETBIOS Using NetWare Login Script

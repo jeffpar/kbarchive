@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153070: Some IPC&#36; Connections Cannot Be Disconnected"
-permalink: kb/153/Q153070/
+permalink: /kb/153/Q153070/
 ---
 
 ## Q153070: Some IPC&#36; Connections Cannot Be Disconnected

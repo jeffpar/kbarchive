@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73190: FIX: MASM 6.0 ALIGN Directive Requires Patch to Work Correctly"
-permalink: kb/073/Q73190/
+permalink: /kb/073/Q73190/
 ---
 
 ## Q73190: FIX: MASM 6.0 ALIGN Directive Requires Patch to Work Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112883: CONN: MACGATE Needs Separate Mappings for DATA and EXE"
-permalink: kb/112/Q112883/
+permalink: /kb/112/Q112883/
 ---
 
 ## Q112883: CONN: MACGATE Needs Separate Mappings for DATA and EXE

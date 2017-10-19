@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86961: X400: Documentation Index for X.400 and X.25 Protocols"
-permalink: kb/086/Q86961/
+permalink: /kb/086/Q86961/
 ---
 
 ## Q86961: X400: Documentation Index for X.400 and X.25 Protocols

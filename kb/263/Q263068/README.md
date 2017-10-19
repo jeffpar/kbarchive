@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263068: XCLN: Reply to All to a Message Stays in Outbox Until NDR"
-permalink: kb/263/Q263068/
+permalink: /kb/263/Q263068/
 ---
 
 ## Q263068: XCLN: Reply to All to a Message Stays in Outbox Until NDR

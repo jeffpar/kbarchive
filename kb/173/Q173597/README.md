@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173597: XCLN: Migrating PAB Entries From Microsoft"
-permalink: kb/173/Q173597/
+permalink: /kb/173/Q173597/
 ---
 
 ## Q173597: XCLN: Migrating PAB Entries From Microsoft

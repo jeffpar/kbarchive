@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123463: BUG: MSODISUP.386 Giving Bad Value for Link Speed Causes Hang"
-permalink: kb/123/Q123463/
+permalink: /kb/123/Q123463/
 ---
 
 ## Q123463: BUG: MSODISUP.386 Giving Bad Value for Link Speed Causes Hang

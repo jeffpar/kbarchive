@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158613: STL Sample for the vector::(front, back) Functions"
-permalink: kb/158/Q158613/
+permalink: /kb/158/Q158613/
 ---
 
 ## Q158613: STL Sample for the vector::(front, back) Functions

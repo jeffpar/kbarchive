@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173220: WD97: How to Scroll Smoothly When Dragging Vertical Scroll Bar"
-permalink: kb/173/Q173220/
+permalink: /kb/173/Q173220/
 ---
 
 ## Q173220: WD97: How to Scroll Smoothly When Dragging Vertical Scroll Bar

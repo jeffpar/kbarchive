@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191362: FPNW Pass-Through Authentication from Trusted Domain May Fail"
-permalink: kb/191/Q191362/
+permalink: /kb/191/Q191362/
 ---
 
 ## Q191362: FPNW Pass-Through Authentication from Trusted Domain May Fail

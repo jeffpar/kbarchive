@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190002: CGI and Perl Applications Do Not Run in a New Console"
-permalink: kb/190/Q190002/
+permalink: /kb/190/Q190002/
 ---
 
 ## Q190002: CGI and Perl Applications Do Not Run in a New Console

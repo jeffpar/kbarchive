@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196048: WD97: Error Message in Place of BARCODE Field"
-permalink: kb/196/Q196048/
+permalink: /kb/196/Q196048/
 ---
 
 ## Q196048: WD97: Error Message in Place of BARCODE Field

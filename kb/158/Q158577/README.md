@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158577: STL Sample for the set::max_size Function"
-permalink: kb/158/Q158577/
+permalink: /kb/158/Q158577/
 ---
 
 ## Q158577: STL Sample for the set::max_size Function

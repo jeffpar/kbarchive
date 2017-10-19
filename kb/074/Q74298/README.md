@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74298: INFO: Calculating Text Extents of Bold and Italic Text"
-permalink: kb/074/Q74298/
+permalink: /kb/074/Q74298/
 ---
 
 ## Q74298: INFO: Calculating Text Extents of Bold and Italic Text

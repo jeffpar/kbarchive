@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133725: Missing Menu Commands in the Fonts Folder"
-permalink: kb/133/Q133725/
+permalink: /kb/133/Q133725/
 ---
 
 ## Q133725: Missing Menu Commands in the Fonts Folder

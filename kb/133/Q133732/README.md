@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133732: Missing TrueType Fonts in Fonts Folder or Programs"
-permalink: kb/133/Q133732/
+permalink: /kb/133/Q133732/
 ---
 
 ## Q133732: Missing TrueType Fonts in Fonts Folder or Programs

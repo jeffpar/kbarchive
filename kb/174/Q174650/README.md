@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174650: PRB: VBG Files Do Not Appear to Work with Visual SourceSafe"
-permalink: kb/174/Q174650/
+permalink: /kb/174/Q174650/
 ---
 
 ## Q174650: PRB: VBG Files Do Not Appear to Work with Visual SourceSafe

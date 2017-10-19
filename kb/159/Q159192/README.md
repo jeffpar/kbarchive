@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159192: XCON: MTA Shows High CPU Usage and Messages Not Delivered"
-permalink: kb/159/Q159192/
+permalink: /kb/159/Q159192/
 ---
 
 ## Q159192: XCON: MTA Shows High CPU Usage and Messages Not Delivered

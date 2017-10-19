@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165151: Help File Terminates Unexpectedly with Error"
-permalink: kb/165/Q165151/
+permalink: /kb/165/Q165151/
 ---
 
 ## Q165151: Help File Terminates Unexpectedly with Error

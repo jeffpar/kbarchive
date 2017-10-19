@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156504: PRB: Intellidrop from View into Designer Causes Requeries"
-permalink: kb/156/Q156504/
+permalink: /kb/156/Q156504/
 ---
 
 ## Q156504: PRB: Intellidrop from View into Designer Causes Requeries

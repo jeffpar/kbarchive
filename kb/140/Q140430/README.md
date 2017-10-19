@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140430: Problem with No Label Check Box When Formatting Floppy Disk"
-permalink: kb/140/Q140430/
+permalink: /kb/140/Q140430/
 ---
 
 ## Q140430: Problem with No Label Check Box When Formatting Floppy Disk

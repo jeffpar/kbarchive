@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142884: PRB: Error &quot;FOXUT16.DLL is the wrong version&quot; Running EXE"
-permalink: kb/142/Q142884/
+permalink: /kb/142/Q142884/
 ---
 
 ## Q142884: PRB: Error &quot;FOXUT16.DLL is the wrong version&quot; Running EXE

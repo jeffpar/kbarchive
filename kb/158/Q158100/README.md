@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158100: Windows NT 4.0 Support for Quantum Atlas SCSI Drives w/ Adaptec"
-permalink: kb/158/Q158100/
+permalink: /kb/158/Q158100/
 ---
 
 ## Q158100: Windows NT 4.0 Support for Quantum Atlas SCSI Drives w/ Adaptec

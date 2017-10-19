@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170336: Network Error (1222): Unable to Browse the Network"
-permalink: kb/170/Q170336/
+permalink: /kb/170/Q170336/
 ---
 
 ## Q170336: Network Error (1222): Unable to Browse the Network

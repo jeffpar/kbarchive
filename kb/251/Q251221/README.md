@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251221: How to Select Replication of Specific WINS Databases"
-permalink: kb/251/Q251221/
+permalink: /kb/251/Q251221/
 ---
 
 ## Q251221: How to Select Replication of Specific WINS Databases

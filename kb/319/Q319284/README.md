@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319284: Record Count Reset When END TRANSACTION Run Against Remote View"
-permalink: kb/319/Q319284/
+permalink: /kb/319/Q319284/
 ---
 
 ## Q319284: Record Count Reset When END TRANSACTION Run Against Remote View

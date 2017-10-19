@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156731: Windows NT Err. Msg: Stop 0x00000019 in NTFS"
-permalink: kb/156/Q156731/
+permalink: /kb/156/Q156731/
 ---
 
 ## Q156731: Windows NT Err. Msg: Stop 0x00000019 in NTFS

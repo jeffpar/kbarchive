@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86832: Orchid Video Driver May Cause Incorrect Output on HP LaserJet"
-permalink: kb/086/Q86832/
+permalink: /kb/086/Q86832/
 ---
 
 ## Q86832: Orchid Video Driver May Cause Incorrect Output on HP LaserJet

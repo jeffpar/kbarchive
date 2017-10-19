@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286765: INFO: Two-Phase Commit is Not Supported over TCP/IP for DB2OLEDB"
-permalink: kb/286/Q286765/
+permalink: /kb/286/Q286765/
 ---
 
 ## Q286765: INFO: Two-Phase Commit is Not Supported over TCP/IP for DB2OLEDB

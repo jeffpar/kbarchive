@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266089: PRB: MODIFY VIEW with Long IN Clause Causes VFP to Terminate"
-permalink: kb/266/Q266089/
+permalink: /kb/266/Q266089/
 ---
 
 ## Q266089: PRB: MODIFY VIEW with Long IN Clause Causes VFP to Terminate

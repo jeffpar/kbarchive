@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88309: Drag and Drop Support in Lotus 1-2-3 for Windows 1.0 and 1.1"
-permalink: kb/088/Q88309/
+permalink: /kb/088/Q88309/
 ---
 
 ## Q88309: Drag and Drop Support in Lotus 1-2-3 for Windows 1.0 and 1.1

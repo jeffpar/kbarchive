@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134608: Wrong Drive Icon and Format for Removable Drive"
-permalink: kb/134/Q134608/
+permalink: /kb/134/Q134608/
 ---
 
 ## Q134608: Wrong Drive Icon and Format for Removable Drive

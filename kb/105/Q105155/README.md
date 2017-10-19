@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105155: Explanation of Seed Router Roles in AppleTalk Internets"
-permalink: kb/105/Q105155/
+permalink: /kb/105/Q105155/
 ---
 
 ## Q105155: Explanation of Seed Router Roles in AppleTalk Internets

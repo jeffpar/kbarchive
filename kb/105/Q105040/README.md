@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105040: WFWG Err: ODINSUP Requires BUFFERED Switch in NET.CFG File"
-permalink: kb/105/Q105040/
+permalink: /kb/105/Q105040/
 ---
 
 ## Q105040: WFWG Err: ODINSUP Requires BUFFERED Switch in NET.CFG File

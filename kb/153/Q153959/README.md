@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153959: XCLN: Attendees Can't View Other Attendees of Meetings"
-permalink: kb/153/Q153959/
+permalink: /kb/153/Q153959/
 ---
 
 ## Q153959: XCLN: Attendees Can't View Other Attendees of Meetings

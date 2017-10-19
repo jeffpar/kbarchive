@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241892: XFOR: NDR with Error 501 Syntactically Invalid HELO Argument(s)"
-permalink: kb/241/Q241892/
+permalink: /kb/241/Q241892/
 ---
 
 ## Q241892: XFOR: NDR with Error 501 Syntactically Invalid HELO Argument(s)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158945: Display Changes to Low Resolution After Rebooting"
-permalink: kb/158/Q158945/
+permalink: /kb/158/Q158945/
 ---
 
 ## Q158945: Display Changes to Low Resolution After Rebooting

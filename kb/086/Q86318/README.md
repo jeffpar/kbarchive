@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86318: PC OS2: About Box Fields Are Incorrect Under PM"
-permalink: kb/086/Q86318/
+permalink: /kb/086/Q86318/
 ---
 
 ## Q86318: PC OS2: About Box Fields Are Incorrect Under PM

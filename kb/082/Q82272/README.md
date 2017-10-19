@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82272: FORMAT May Allow Access to Unformatted Drives"
-permalink: kb/082/Q82272/
+permalink: /kb/082/Q82272/
 ---
 
 ## Q82272: FORMAT May Allow Access to Unformatted Drives

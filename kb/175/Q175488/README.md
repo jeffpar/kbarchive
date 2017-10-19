@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175488: PRB: VB4 16-Bit Clients Cannot Early-Bind to VB5 .EXE Servers"
-permalink: kb/175/Q175488/
+permalink: /kb/175/Q175488/
 ---
 
 ## Q175488: PRB: VB4 16-Bit Clients Cannot Early-Bind to VB5 .EXE Servers

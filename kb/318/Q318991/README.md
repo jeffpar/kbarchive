@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318991: FIX: Memory Leak with Function in SELECT with ORDER BY"
-permalink: kb/318/Q318991/
+permalink: /kb/318/Q318991/
 ---
 
 ## Q318991: FIX: Memory Leak with Function in SELECT with ORDER BY

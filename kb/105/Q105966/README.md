@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105966: PC Adm: FIXFLD Utility Incorrectly Gives Syntax for DUMPFLD"
-permalink: kb/105/Q105966/
+permalink: /kb/105/Q105966/
 ---
 
 ## Q105966: PC Adm: FIXFLD Utility Incorrectly Gives Syntax for DUMPFLD

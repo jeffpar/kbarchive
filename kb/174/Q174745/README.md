@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174745: XWEB: Saved Appointments Do Not Show in Outlook Web Access"
-permalink: kb/174/Q174745/
+permalink: /kb/174/Q174745/
 ---
 
 ## Q174745: XWEB: Saved Appointments Do Not Show in Outlook Web Access

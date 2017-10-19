@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158262: SAMPLE: Custom AppWizard for the DAO SDK/dbDao Classes"
-permalink: kb/158/Q158262/
+permalink: /kb/158/Q158262/
 ---
 
 ## Q158262: SAMPLE: Custom AppWizard for the DAO SDK/dbDao Classes

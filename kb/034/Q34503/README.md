@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34503: DOCERR: PROC Directive Will Not Work with Structure Type"
-permalink: kb/034/Q34503/
+permalink: /kb/034/Q34503/
 ---
 
 ## Q34503: DOCERR: PROC Directive Will Not Work with Structure Type

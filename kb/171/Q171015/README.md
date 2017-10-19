@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171015: How to Install and Configure Windows NT 4.0 Dial-Up Networking"
-permalink: kb/171/Q171015/
+permalink: /kb/171/Q171015/
 ---
 
 ## Q171015: How to Install and Configure Windows NT 4.0 Dial-Up Networking

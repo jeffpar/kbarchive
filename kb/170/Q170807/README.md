@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170807: XCLN: Cannot Paste into Global Distribution List"
-permalink: kb/170/Q170807/
+permalink: /kb/170/Q170807/
 ---
 
 ## Q170807: XCLN: Cannot Paste into Global Distribution List

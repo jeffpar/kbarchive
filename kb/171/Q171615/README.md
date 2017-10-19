@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171615: 3270 Applet Extended Menu is Hidden when Auto-connect is Enabled"
-permalink: kb/171/Q171615/
+permalink: /kb/171/Q171615/
 ---
 
 ## Q171615: 3270 Applet Extended Menu is Hidden when Auto-connect is Enabled

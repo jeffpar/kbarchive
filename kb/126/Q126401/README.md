@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126401: Err Msg: &quot;Not Enough Server Storage is Available to Process...&quot;"
-permalink: kb/126/Q126401/
+permalink: /kb/126/Q126401/
 ---
 
 ## Q126401: Err Msg: &quot;Not Enough Server Storage is Available to Process...&quot;

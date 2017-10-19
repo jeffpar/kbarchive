@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314046: Microsoft FrontPage Version 2002 Step by Step Comments and Corre"
-permalink: kb/314/Q314046/
+permalink: /kb/314/Q314046/
 ---
 
 ## Q314046: Microsoft FrontPage Version 2002 Step by Step Comments and Corre

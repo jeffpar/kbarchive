@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63664: Color Support for NEC Pinwriter Printers in Windows 3.0"
-permalink: kb/063/Q63664/
+permalink: /kb/063/Q63664/
 ---
 
 ## Q63664: Color Support for NEC Pinwriter Printers in Windows 3.0

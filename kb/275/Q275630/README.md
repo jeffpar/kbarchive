@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275630: INSERTS from DTS to DB2 Through OLE DB Provider for DB2 May Fail"
-permalink: kb/275/Q275630/
+permalink: /kb/275/Q275630/
 ---
 
 ## Q275630: INSERTS from DTS to DB2 Through OLE DB Provider for DB2 May Fail

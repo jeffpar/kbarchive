@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178344: XADM: IS Uses 100% of CPU and Generates Access Violation"
-permalink: kb/178/Q178344/
+permalink: /kb/178/Q178344/
 ---
 
 ## Q178344: XADM: IS Uses 100% of CPU and Generates Access Violation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103124: Bookshelf 1993: Find Does Not Show Location of Keyword"
-permalink: kb/103/Q103124/
+permalink: /kb/103/Q103124/
 ---
 
 ## Q103124: Bookshelf 1993: Find Does Not Show Location of Keyword

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138314: Multimedia: General MIDI Troubleshooting for Windows 95/98"
-permalink: kb/138/Q138314/
+permalink: /kb/138/Q138314/
 ---
 
 ## Q138314: Multimedia: General MIDI Troubleshooting for Windows 95/98

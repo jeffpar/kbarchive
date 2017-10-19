@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263354: NT Logon Server Manager Error Message When Deinstalling Domain"
-permalink: kb/263/Q263354/
+permalink: /kb/263/Q263354/
 ---
 
 ## Q263354: NT Logon Server Manager Error Message When Deinstalling Domain

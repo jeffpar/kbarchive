@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146772: Converting from 1.0 CAL File to 7.0 .SCD File"
-permalink: kb/146/Q146772/
+permalink: /kb/146/Q146772/
 ---
 
 ## Q146772: Converting from 1.0 CAL File to 7.0 .SCD File

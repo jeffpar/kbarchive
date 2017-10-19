@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137027: BUG: ScrollBars Don't Display on DBList Control"
-permalink: kb/137/Q137027/
+permalink: /kb/137/Q137027/
 ---
 
 ## Q137027: BUG: ScrollBars Don't Display on DBList Control

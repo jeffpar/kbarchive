@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66665: ASD: Cannot View 3-D Window 2 in Boeing Field Mode"
-permalink: kb/066/Q66665/
+permalink: /kb/066/Q66665/
 ---
 
 ## Q66665: ASD: Cannot View 3-D Window 2 in Boeing Field Mode

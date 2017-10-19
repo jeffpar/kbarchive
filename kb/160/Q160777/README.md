@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160777: PRB: Displaying Bitmap Has Limitation in Browse Window"
-permalink: kb/160/Q160777/
+permalink: /kb/160/Q160777/
 ---
 
 ## Q160777: PRB: Displaying Bitmap Has Limitation in Browse Window

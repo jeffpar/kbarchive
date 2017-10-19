@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146332: Display Driver May Not Reset Refresh Rate During Setup"
-permalink: kb/146/Q146332/
+permalink: /kb/146/Q146332/
 ---
 
 ## Q146332: Display Driver May Not Reset Refresh Rate During Setup

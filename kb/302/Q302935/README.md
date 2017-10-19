@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302935: XADM: Truncated Text Returned If CDO Runs as a Service"
-permalink: kb/302/Q302935/
+permalink: /kb/302/Q302935/
 ---
 
 ## Q302935: XADM: Truncated Text Returned If CDO Runs as a Service

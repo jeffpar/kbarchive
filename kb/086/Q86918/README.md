@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86918: Nondedicated Novell Server Hangs After Printing"
-permalink: kb/086/Q86918/
+permalink: /kb/086/Q86918/
 ---
 
 ## Q86918: Nondedicated Novell Server Hangs After Printing

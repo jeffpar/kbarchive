@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234781: Universal Data Format File System Not Supported in Windows 95"
-permalink: kb/234/Q234781/
+permalink: /kb/234/Q234781/
 ---
 
 ## Q234781: Universal Data Format File System Not Supported in Windows 95

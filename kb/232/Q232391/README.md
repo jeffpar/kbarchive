@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232391: XADM: Duplicate Messages Received When Message Sent to Large DL"
-permalink: kb/232/Q232391/
+permalink: /kb/232/Q232391/
 ---
 
 ## Q232391: XADM: Duplicate Messages Received When Message Sent to Large DL

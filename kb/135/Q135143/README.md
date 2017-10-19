@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135143: Zenith ZDS 1762 Laptop Computer Hangs at Startup"
-permalink: kb/135/Q135143/
+permalink: /kb/135/Q135143/
 ---
 
 ## Q135143: Zenith ZDS 1762 Laptop Computer Hangs at Startup

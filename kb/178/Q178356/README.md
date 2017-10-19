@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178356: Mail Merge May Affect Existing Toolbars"
-permalink: kb/178/Q178356/
+permalink: /kb/178/Q178356/
 ---
 
 ## Q178356: Mail Merge May Affect Existing Toolbars

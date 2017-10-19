@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165657: RUI_BID Response Is Not Recognized by RUI Application"
-permalink: kb/165/Q165657/
+permalink: /kb/165/Q165657/
 ---
 
 ## Q165657: RUI_BID Response Is Not Recognized by RUI Application

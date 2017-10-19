@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261760: Site Status Inaccurately Reports 0 KB Free Disk Space on NDS"
-permalink: kb/261/Q261760/
+permalink: /kb/261/Q261760/
 ---
 
 ## Q261760: Site Status Inaccurately Reports 0 KB Free Disk Space on NDS

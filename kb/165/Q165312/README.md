@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165312: Unable To Connect to Internet Mail over RAS with WinNT 4.0"
-permalink: kb/165/Q165312/
+permalink: /kb/165/Q165312/
 ---
 
 ## Q165312: Unable To Connect to Internet Mail over RAS with WinNT 4.0

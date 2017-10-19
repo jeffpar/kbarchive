@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94815: MSD Err Msg: Error Writing Bad File Number"
-permalink: kb/094/Q94815/
+permalink: /kb/094/Q94815/
 ---
 
 ## Q94815: MSD Err Msg: Error Writing Bad File Number

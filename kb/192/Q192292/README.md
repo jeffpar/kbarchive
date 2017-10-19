@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192292: Unpredictable TCP Sequence Numbers in SP4"
-permalink: kb/192/Q192292/
+permalink: /kb/192/Q192292/
 ---
 
 ## Q192292: Unpredictable TCP Sequence Numbers in SP4

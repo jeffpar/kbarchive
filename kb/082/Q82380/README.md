@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82380: GP Fault Exiting HP NewWave 4.0"
-permalink: kb/082/Q82380/
+permalink: /kb/082/Q82380/
 ---
 
 ## Q82380: GP Fault Exiting HP NewWave 4.0

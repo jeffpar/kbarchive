@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140192: PC WSPlus: Meeting Requests Returned as Undeliverable"
-permalink: kb/140/Q140192/
+permalink: /kb/140/Q140192/
 ---
 
 ## Q140192: PC WSPlus: Meeting Requests Returned as Undeliverable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183065: XADM: Running Far East 4.0 Client and English Exchange Server"
-permalink: kb/183/Q183065/
+permalink: /kb/183/Q183065/
 ---
 
 ## Q183065: XADM: Running Far East 4.0 Client and English Exchange Server

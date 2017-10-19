@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69377: Entering Special Characters in MS-DOS Editor (5.0 &amp; Later)"
-permalink: kb/069/Q69377/
+permalink: /kb/069/Q69377/
 ---
 
 ## Q69377: Entering Special Characters in MS-DOS Editor (5.0 &amp; Later)

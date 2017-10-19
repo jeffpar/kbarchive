@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164463: XADM: User Names Missing from the Recipients Container"
-permalink: kb/164/Q164463/
+permalink: /kb/164/Q164463/
 ---
 
 ## Q164463: XADM: User Names Missing from the Recipients Container

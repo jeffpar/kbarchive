@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258233: PRB: Problem Reloading a UserControl File with an Add-In"
-permalink: kb/258/Q258233/
+permalink: /kb/258/Q258233/
 ---
 
 ## Q258233: PRB: Problem Reloading a UserControl File with an Add-In

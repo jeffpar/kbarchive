@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170419: Cannot Access Help on ZAK Appstation"
-permalink: kb/170/Q170419/
+permalink: /kb/170/Q170419/
 ---
 
 ## Q170419: Cannot Access Help on ZAK Appstation

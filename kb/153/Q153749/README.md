@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153749: No Single-Route Broadcast on Token Ring with Windows 95 TCP/IP"
-permalink: kb/153/Q153749/
+permalink: /kb/153/Q153749/
 ---
 
 ## Q153749: No Single-Route Broadcast on Token Ring with Windows 95 TCP/IP

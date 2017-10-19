@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169371: DNS Error Message: No More Endpoints"
-permalink: kb/169/Q169371/
+permalink: /kb/169/Q169371/
 ---
 
 ## Q169371: DNS Error Message: No More Endpoints

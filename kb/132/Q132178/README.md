@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132178: PRB: DO FORM Does Not Display a Form"
-permalink: kb/132/Q132178/
+permalink: /kb/132/Q132178/
 ---
 
 ## Q132178: PRB: DO FORM Does Not Display a Form

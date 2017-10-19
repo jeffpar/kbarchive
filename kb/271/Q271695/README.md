@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271695: PRB: Picture in MDI Form Does Not Display"
-permalink: kb/271/Q271695/
+permalink: /kb/271/Q271695/
 ---
 
 ## Q271695: PRB: Picture in MDI Form Does Not Display

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120187: PRB: Query to a Report Causes an Inaccurate Sum or Count"
-permalink: kb/120/Q120187/
+permalink: /kb/120/Q120187/
 ---
 
 ## Q120187: PRB: Query to a Report Causes an Inaccurate Sum or Count

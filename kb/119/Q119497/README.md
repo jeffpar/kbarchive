@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119497: Boot Partition Created During Setup Limited to 4 Gigabytes"
-permalink: kb/119/Q119497/
+permalink: /kb/119/Q119497/
 ---
 
 ## Q119497: Boot Partition Created During Setup Limited to 4 Gigabytes

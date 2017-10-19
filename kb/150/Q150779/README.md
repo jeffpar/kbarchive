@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150779: Arcade for Macintosh: Cannot Start Games, No Full-Screen Mode"
-permalink: kb/150/Q150779/
+permalink: /kb/150/Q150779/
 ---
 
 ## Q150779: Arcade for Macintosh: Cannot Start Games, No Full-Screen Mode

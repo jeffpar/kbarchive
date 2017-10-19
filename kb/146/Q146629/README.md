@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146629: Microsoft Exchange Internet Mail Lines End with &quot;=&quot;"
-permalink: kb/146/Q146629/
+permalink: /kb/146/Q146629/
 ---
 
 ## Q146629: Microsoft Exchange Internet Mail Lines End with &quot;=&quot;

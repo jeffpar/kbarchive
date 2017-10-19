@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240642: World Atlas: Quits Unexpectedly When Screen Resolution Changed"
-permalink: kb/240/Q240642/
+permalink: /kb/240/Q240642/
 ---
 
 ## Q240642: World Atlas: Quits Unexpectedly When Screen Resolution Changed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255779: Can View System Drive Even Though View Is Disabled by a Policy"
-permalink: kb/255/Q255779/
+permalink: /kb/255/Q255779/
 ---
 
 ## Q255779: Can View System Drive Even Though View Is Disabled by a Policy

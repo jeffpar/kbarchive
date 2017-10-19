@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251344: BUG: CComBSTR::LoadString May Give an Access Violation"
-permalink: kb/251/Q251344/
+permalink: /kb/251/Q251344/
 ---
 
 ## Q251344: BUG: CComBSTR::LoadString May Give an Access Violation

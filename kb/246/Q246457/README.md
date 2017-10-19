@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246457: PRB: Cannot find location of main media view file"
-permalink: kb/246/Q246457/
+permalink: /kb/246/Q246457/
 ---
 
 ## Q246457: PRB: Cannot find location of main media view file

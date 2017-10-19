@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96737: FTADMIN Incorrectly Shows Phantom Drives or Problems"
-permalink: kb/096/Q96737/
+permalink: /kb/096/Q96737/
 ---
 
 ## Q96737: FTADMIN Incorrectly Shows Phantom Drives or Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93091: Setup: Changes Made to the Initialization (&#42;.INI) Files"
-permalink: kb/093/Q93091/
+permalink: /kb/093/Q93091/
 ---
 
 ## Q93091: Setup: Changes Made to the Initialization (&#42;.INI) Files

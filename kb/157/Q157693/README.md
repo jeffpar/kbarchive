@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157693: XFOR: IMC Might Lose Messages if Code Pages are not Installed"
-permalink: kb/157/Q157693/
+permalink: /kb/157/Q157693/
 ---
 
 ## Q157693: XFOR: IMC Might Lose Messages if Code Pages are not Installed

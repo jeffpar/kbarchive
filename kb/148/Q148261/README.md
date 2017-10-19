@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148261: Printing From Macintosh Clients Causes Events 2011 and 2019"
-permalink: kb/148/Q148261/
+permalink: /kb/148/Q148261/
 ---
 
 ## Q148261: Printing From Macintosh Clients Causes Events 2011 and 2019

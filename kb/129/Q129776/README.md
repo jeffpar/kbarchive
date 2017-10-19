@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129776: How to Browse an IBM LAN Server Domain from Windows NT"
-permalink: kb/129/Q129776/
+permalink: /kb/129/Q129776/
 ---
 
 ## Q129776: How to Browse an IBM LAN Server Domain from Windows NT

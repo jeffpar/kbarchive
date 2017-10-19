@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258655: Baseball 2001: Matrox Millennium Doesn't Run in 3D Hardware Mode"
-permalink: kb/258/Q258655/
+permalink: /kb/258/Q258655/
 ---
 
 ## Q258655: Baseball 2001: Matrox Millennium Doesn't Run in 3D Hardware Mode

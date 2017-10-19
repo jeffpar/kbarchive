@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193582: PRB: Project Base Class Is Added to Visual SourceSafe"
-permalink: kb/193/Q193582/
+permalink: /kb/193/Q193582/
 ---
 
 ## Q193582: PRB: Project Base Class Is Added to Visual SourceSafe

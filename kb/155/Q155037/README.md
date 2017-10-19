@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155037: No Services Have Been Registered to Use Licensing"
-permalink: kb/155/Q155037/
+permalink: /kb/155/Q155037/
 ---
 
 ## Q155037: No Services Have Been Registered to Use Licensing

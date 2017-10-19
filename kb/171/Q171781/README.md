@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171781: DNS Server Fails to Start Due to Unavailable RPC Server Error"
-permalink: kb/171/Q171781/
+permalink: /kb/171/Q171781/
 ---
 
 ## Q171781: DNS Server Fails to Start Due to Unavailable RPC Server Error

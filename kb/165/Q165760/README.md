@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165760: XCLN: How to Set Up Exchange Client for SQL Mail"
-permalink: kb/165/Q165760/
+permalink: /kb/165/Q165760/
 ---
 
 ## Q165760: XCLN: How to Set Up Exchange Client for SQL Mail

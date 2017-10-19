@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69888: INFO: Fatal Exit Code 0x0506 Definition"
-permalink: kb/069/Q69888/
+permalink: /kb/069/Q69888/
 ---
 
 ## Q69888: INFO: Fatal Exit Code 0x0506 Definition

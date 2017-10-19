@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242033: Access Violation in Services.exe Using Samba 2.0.5"
-permalink: kb/242/Q242033/
+permalink: /kb/242/Q242033/
 ---
 
 ## Q242033: Access Violation in Services.exe Using Samba 2.0.5

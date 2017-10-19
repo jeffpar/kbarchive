@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172488: WD97: Unexpected Results When Clicking Between Text Form Fields"
-permalink: kb/172/Q172488/
+permalink: /kb/172/Q172488/
 ---
 
 ## Q172488: WD97: Unexpected Results When Clicking Between Text Form Fields

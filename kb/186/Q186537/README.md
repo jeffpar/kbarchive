@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186537: Terminal Server Commands: PERUSER"
-permalink: kb/186/Q186537/
+permalink: /kb/186/Q186537/
 ---
 
 ## Q186537: Terminal Server Commands: PERUSER

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95816: DBLSPACE.SYS /MOVE or DRVSPACE.SYS /MOVE in CONFIG.SYS Twice"
-permalink: kb/095/Q95816/
+permalink: /kb/095/Q95816/
 ---
 
 ## Q95816: DBLSPACE.SYS /MOVE or DRVSPACE.SYS /MOVE in CONFIG.SYS Twice

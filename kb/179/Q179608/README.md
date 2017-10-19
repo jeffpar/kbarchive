@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179608: XCLN: Exchange Client Message Body Appendage Not Visible"
-permalink: kb/179/Q179608/
+permalink: /kb/179/Q179608/
 ---
 
 ## Q179608: XCLN: Exchange Client Message Body Appendage Not Visible

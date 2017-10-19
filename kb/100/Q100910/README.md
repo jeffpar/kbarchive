@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100910: File Manager Modified When No Optional Utilities Installed"
-permalink: kb/100/Q100910/
+permalink: /kb/100/Q100910/
 ---
 
 ## Q100910: File Manager Modified When No Optional Utilities Installed

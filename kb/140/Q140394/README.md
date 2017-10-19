@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140394: Background Color of Excel 5.0 Changes Intermittently"
-permalink: kb/140/Q140394/
+permalink: /kb/140/Q140394/
 ---
 
 ## Q140394: Background Color of Excel 5.0 Changes Intermittently

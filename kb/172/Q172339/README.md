@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172339: PRB: Explaining &quot;Record is Deleted&quot; Error Accessing ODBC Table"
-permalink: kb/172/Q172339/
+permalink: /kb/172/Q172339/
 ---
 
 ## Q172339: PRB: Explaining &quot;Record is Deleted&quot; Error Accessing ODBC Table

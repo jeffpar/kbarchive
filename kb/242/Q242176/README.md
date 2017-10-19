@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242176: Err Msg: A Chain of Certs Didn't Chain as They Should in a..."
-permalink: kb/242/Q242176/
+permalink: /kb/242/Q242176/
 ---
 
 ## Q242176: Err Msg: A Chain of Certs Didn't Chain as They Should in a...

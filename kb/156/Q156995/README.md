@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156995: XCLN: PST File Cannot Be Accessed Running NetWare Client 32"
-permalink: kb/156/Q156995/
+permalink: /kb/156/Q156995/
 ---
 
 ## Q156995: XCLN: PST File Cannot Be Accessed Running NetWare Client 32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123739: Updated AMI BIOS Needed for Large IDE Drives and 64+ MB Memory"
-permalink: kb/123/Q123739/
+permalink: /kb/123/Q123739/
 ---
 
 ## Q123739: Updated AMI BIOS Needed for Large IDE Drives and 64+ MB Memory

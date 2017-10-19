@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150213: FIX: Incorrect Declaration for SelectObject API Function"
-permalink: kb/150/Q150213/
+permalink: /kb/150/Q150213/
 ---
 
 ## Q150213: FIX: Incorrect Declaration for SelectObject API Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264745: XCLN: Can't Permanently Delete Defer. Delivery Mails fr. Outbox"
-permalink: kb/264/Q264745/
+permalink: /kb/264/Q264745/
 ---
 
 ## Q264745: XCLN: Can't Permanently Delete Defer. Delivery Mails fr. Outbox

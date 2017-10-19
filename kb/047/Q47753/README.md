@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47753: List of Run-Time Error Numbers and Messages for QuickBasic"
-permalink: kb/047/Q47753/
+permalink: /kb/047/Q47753/
 ---
 
 ## Q47753: List of Run-Time Error Numbers and Messages for QuickBasic

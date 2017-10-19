@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166936: PRB: Letters A through J and M Invalid Object Variable Names"
-permalink: kb/166/Q166936/
+permalink: /kb/166/Q166936/
 ---
 
 ## Q166936: PRB: Letters A through J and M Invalid Object Variable Names

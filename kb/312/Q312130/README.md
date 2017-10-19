@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312130: Microsoft Windows XP Professional Administrator's Pocket Consult"
-permalink: kb/312/Q312130/
+permalink: /kb/312/Q312130/
 ---
 
 ## Q312130: Microsoft Windows XP Professional Administrator's Pocket Consult

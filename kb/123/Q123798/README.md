@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123798: ADT2: Setup Wizard OLE Default Dependent on MSARN200 Choice"
-permalink: kb/123/Q123798/
+permalink: /kb/123/Q123798/
 ---
 
 ## Q123798: ADT2: Setup Wizard OLE Default Dependent on MSARN200 Choice

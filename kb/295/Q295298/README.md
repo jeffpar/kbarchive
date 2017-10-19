@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295298: INFO: IIS 5: What Does Check on Pending Requests Do?"
-permalink: kb/295/Q295298/
+permalink: /kb/295/Q295298/
 ---
 
 ## Q295298: INFO: IIS 5: What Does Check on Pending Requests Do?

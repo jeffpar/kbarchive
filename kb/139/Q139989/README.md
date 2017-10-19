@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139989: MS Backup Status Bar Is Too Small to Display Errors Found"
-permalink: kb/139/Q139989/
+permalink: /kb/139/Q139989/
 ---
 
 ## Q139989: MS Backup Status Bar Is Too Small to Display Errors Found

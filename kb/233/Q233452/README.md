@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233452: Business Planner: Text in Article Title Overlaps Itself"
-permalink: kb/233/Q233452/
+permalink: /kb/233/Q233452/
 ---
 
 ## Q233452: Business Planner: Text in Article Title Overlaps Itself

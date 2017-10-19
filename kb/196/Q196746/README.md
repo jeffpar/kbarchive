@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196746: Dr. Watson Error Occurs Starting Virtual Globe 99"
-permalink: kb/196/Q196746/
+permalink: /kb/196/Q196746/
 ---
 
 ## Q196746: Dr. Watson Error Occurs Starting Virtual Globe 99

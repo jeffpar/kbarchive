@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81187: BUG: Gauge Custom Control: Valid NeedleWidth Range 1 to 32767"
-permalink: kb/081/Q81187/
+permalink: /kb/081/Q81187/
 ---
 
 ## Q81187: BUG: Gauge Custom Control: Valid NeedleWidth Range 1 to 32767

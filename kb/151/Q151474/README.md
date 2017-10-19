@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151474: Cannot Save Word 95 File on NetWare Server With OS/2 Name Space"
-permalink: kb/151/Q151474/
+permalink: /kb/151/Q151474/
 ---
 
 ## Q151474: Cannot Save Word 95 File on NetWare Server With OS/2 Name Space

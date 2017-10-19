@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120464: Scenes 2.0: SPACEBAR plus ENTER Causes GP Fault"
-permalink: kb/120/Q120464/
+permalink: /kb/120/Q120464/
 ---
 
 ## Q120464: Scenes 2.0: SPACEBAR plus ENTER Causes GP Fault

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184958: CART: Game Stops Responding When You Enter the Racing School"
-permalink: kb/184/Q184958/
+permalink: /kb/184/Q184958/
 ---
 
 ## Q184958: CART: Game Stops Responding When You Enter the Racing School

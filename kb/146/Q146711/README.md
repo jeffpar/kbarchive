@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146711: XCLN: E-Mail Addresses not Sorted in Address Book"
-permalink: kb/146/Q146711/
+permalink: /kb/146/Q146711/
 ---
 
 ## Q146711: XCLN: E-Mail Addresses not Sorted in Address Book

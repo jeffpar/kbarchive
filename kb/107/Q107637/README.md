@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107637: Problem Accessing SNA Server from Windows NT RAS Client"
-permalink: kb/107/Q107637/
+permalink: /kb/107/Q107637/
 ---
 
 ## Q107637: Problem Accessing SNA Server from Windows NT RAS Client

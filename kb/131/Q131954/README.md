@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131954: Wine Guide: Find Tool Only Matches First Word on Page"
-permalink: kb/131/Q131954/
+permalink: /kb/131/Q131954/
 ---
 
 ## Q131954: Wine Guide: Find Tool Only Matches First Word on Page

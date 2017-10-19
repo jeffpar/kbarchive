@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95893: Summary of CD-ROM Drives and Their Capabilities"
-permalink: kb/095/Q95893/
+permalink: /kb/095/Q95893/
 ---
 
 ## Q95893: Summary of CD-ROM Drives and Their Capabilities

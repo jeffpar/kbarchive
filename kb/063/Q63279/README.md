@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63279: Using the Clipper Program with Windows"
-permalink: kb/063/Q63279/
+permalink: /kb/063/Q63279/
 ---
 
 ## Q63279: Using the Clipper Program with Windows

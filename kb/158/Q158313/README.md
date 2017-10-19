@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158313: SMS: Configuration Command Line Ignores Specified Drive Letter"
-permalink: kb/158/Q158313/
+permalink: /kb/158/Q158313/
 ---
 
 ## Q158313: SMS: Configuration Command Line Ignores Specified Drive Letter

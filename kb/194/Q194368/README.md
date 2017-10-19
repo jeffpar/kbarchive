@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194368: FIX: Operators Do Not Recursively Call Object Default Properties"
-permalink: kb/194/Q194368/
+permalink: /kb/194/Q194368/
 ---
 
 ## Q194368: FIX: Operators Do Not Recursively Call Object Default Properties

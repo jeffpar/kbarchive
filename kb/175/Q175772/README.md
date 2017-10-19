@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175772: XCLN: Exchange Client Unable to Start After Uninstalling Outlook"
-permalink: kb/175/Q175772/
+permalink: /kb/175/Q175772/
 ---
 
 ## Q175772: XCLN: Exchange Client Unable to Start After Uninstalling Outlook

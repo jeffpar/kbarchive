@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156547: HOWTO: Manually Register a Custom OLE Server"
-permalink: kb/156/Q156547/
+permalink: /kb/156/Q156547/
 ---
 
 ## Q156547: HOWTO: Manually Register a Custom OLE Server

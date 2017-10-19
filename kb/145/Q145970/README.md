@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145970: XCLN: Search Items Don't Match Criteria"
-permalink: kb/145/Q145970/
+permalink: /kb/145/Q145970/
 ---
 
 ## Q145970: XCLN: Search Items Don't Match Criteria

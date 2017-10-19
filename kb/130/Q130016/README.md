@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130016: Removing Everyone On Root Dir. Leaves Limited Virtual Memory"
-permalink: kb/130/Q130016/
+permalink: /kb/130/Q130016/
 ---
 
 ## Q130016: Removing Everyone On Root Dir. Leaves Limited Virtual Memory

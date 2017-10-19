@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180437: BUG: Text Is Aligned Too Far Left and Up in TextBox"
-permalink: kb/180/Q180437/
+permalink: /kb/180/Q180437/
 ---
 
 ## Q180437: BUG: Text Is Aligned Too Far Left and Up in TextBox

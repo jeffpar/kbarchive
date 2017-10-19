@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187393: BUG: &quot;Error in Assignment&quot; Accessing BLOB Data in FoxPro DB"
-permalink: kb/187/Q187393/
+permalink: /kb/187/Q187393/
 ---
 
 ## Q187393: BUG: &quot;Error in Assignment&quot; Accessing BLOB Data in FoxPro DB

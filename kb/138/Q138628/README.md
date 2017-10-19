@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138628: UT1x: MS Access Upsizing Tools Fails with MS SQL Server 6.0"
-permalink: kb/138/Q138628/
+permalink: /kb/138/Q138628/
 ---
 
 ## Q138628: UT1x: MS Access Upsizing Tools Fails with MS SQL Server 6.0

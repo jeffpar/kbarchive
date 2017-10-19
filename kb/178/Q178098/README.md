@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178098: How to Troubleshoot DirectX Video Problems"
-permalink: kb/178/Q178098/
+permalink: /kb/178/Q178098/
 ---
 
 ## Q178098: How to Troubleshoot DirectX Video Problems

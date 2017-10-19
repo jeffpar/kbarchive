@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90284: Two-Password Shares and Password Caching"
-permalink: kb/090/Q90284/
+permalink: /kb/090/Q90284/
 ---
 
 ## Q90284: Two-Password Shares and Password Caching

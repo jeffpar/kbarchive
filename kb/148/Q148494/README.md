@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148494: Windows 95 Uses Pbrush.exe for Backward Compatibility"
-permalink: kb/148/Q148494/
+permalink: /kb/148/Q148494/
 ---
 
 ## Q148494: Windows 95 Uses Pbrush.exe for Backward Compatibility

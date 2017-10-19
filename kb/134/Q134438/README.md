@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134438: PRB: Initializing Spell Checker Error When Running Spellchk"
-permalink: kb/134/Q134438/
+permalink: /kb/134/Q134438/
 ---
 
 ## Q134438: PRB: Initializing Spell Checker Error When Running Spellchk

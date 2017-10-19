@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194909: LowercaseFiles Parameter Does Not Affect GET/MGET Commands"
-permalink: kb/194/Q194909/
+permalink: /kb/194/Q194909/
 ---
 
 ## Q194909: LowercaseFiles Parameter Does Not Affect GET/MGET Commands

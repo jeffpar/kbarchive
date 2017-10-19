@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175537: SAMPLE: LED.EXE: Light Emitting Diode Character Display Sample"
-permalink: kb/175/Q175537/
+permalink: /kb/175/Q175537/
 ---
 
 ## Q175537: SAMPLE: LED.EXE: Light Emitting Diode Character Display Sample

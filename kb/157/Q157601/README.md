@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157601: Golf: Game Play Recommendations"
-permalink: kb/157/Q157601/
+permalink: /kb/157/Q157601/
 ---
 
 ## Q157601: Golf: Game Play Recommendations

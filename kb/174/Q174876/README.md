@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174876: FIX: &quot;Invalid DOS Path&quot; to SSADMIN.INI on Unix"
-permalink: kb/174/Q174876/
+permalink: /kb/174/Q174876/
 ---
 
 ## Q174876: FIX: &quot;Invalid DOS Path&quot; to SSADMIN.INI on Unix

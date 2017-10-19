@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147594: Problems Running MS-DOS-Based Program from System Agent"
-permalink: kb/147/Q147594/
+permalink: /kb/147/Q147594/
 ---
 
 ## Q147594: Problems Running MS-DOS-Based Program from System Agent

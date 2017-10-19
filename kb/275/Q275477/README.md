@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275477: XADM: Determining Attachment Long File Names w. Outlook 2000"
-permalink: kb/275/Q275477/
+permalink: /kb/275/Q275477/
 ---
 
 ## Q275477: XADM: Determining Attachment Long File Names w. Outlook 2000

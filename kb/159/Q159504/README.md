@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159504: XCLN: Profgen.exe Fails to Replace MailBoxName"
-permalink: kb/159/Q159504/
+permalink: /kb/159/Q159504/
 ---
 
 ## Q159504: XCLN: Profgen.exe Fails to Replace MailBoxName

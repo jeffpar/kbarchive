@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299353: Passport Cookies Are Not Deleted When a User Signs Out"
-permalink: kb/299/Q299353/
+permalink: /kb/299/Q299353/
 ---
 
 ## Q299353: Passport Cookies Are Not Deleted When a User Signs Out

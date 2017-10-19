@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32069: INFO: No Error Message Text If .ERR Files Not in PATH"
-permalink: kb/032/Q32069/
+permalink: /kb/032/Q32069/
 ---
 
 ## Q32069: INFO: No Error Message Text If .ERR Files Not in PATH

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238556: HOWTO: Notify Team When Changing Projects Under VSS"
-permalink: kb/238/Q238556/
+permalink: /kb/238/Q238556/
 ---
 
 ## Q238556: HOWTO: Notify Team When Changing Projects Under VSS

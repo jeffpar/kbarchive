@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122415: Updated EMM386.EXE and MSD.EXE Available for MS-DOS 6.0, 6.2"
-permalink: kb/122/Q122415/
+permalink: /kb/122/Q122415/
 ---
 
 ## Q122415: Updated EMM386.EXE and MSD.EXE Available for MS-DOS 6.0, 6.2

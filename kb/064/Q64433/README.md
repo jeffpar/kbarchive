@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64433: Can't Resize a Window with a Macro in PWB"
-permalink: kb/064/Q64433/
+permalink: /kb/064/Q64433/
 ---
 
 ## Q64433: Can't Resize a Window with a Macro in PWB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156845: XCLN: Errors During Load when Compiling Form"
-permalink: kb/156/Q156845/
+permalink: /kb/156/Q156845/
 ---
 
 ## Q156845: XCLN: Errors During Load when Compiling Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255065: Printing with Zero Margins Overlaps First and Last Lines of Page"
-permalink: kb/255/Q255065/
+permalink: /kb/255/Q255065/
 ---
 
 ## Q255065: Printing with Zero Margins Overlaps First and Last Lines of Page

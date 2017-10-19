@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87829: Random GP Faults with Incorrect Programs= Entry in WIN.INI"
-permalink: kb/087/Q87829/
+permalink: /kb/087/Q87829/
 ---
 
 ## Q87829: Random GP Faults with Incorrect Programs= Entry in WIN.INI

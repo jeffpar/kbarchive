@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166003: How to Grant/Deny Access to a Group of Computers by Network ID"
-permalink: kb/166/Q166003/
+permalink: /kb/166/Q166003/
 ---
 
 ## Q166003: How to Grant/Deny Access to a Group of Computers by Network ID

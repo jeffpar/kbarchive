@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168645: Error: Please Insert the Compaq SSD into Drive &quot;CD-ROM&quot;"
-permalink: kb/168/Q168645/
+permalink: /kb/168/Q168645/
 ---
 
 ## Q168645: Error: Please Insert the Compaq SSD into Drive &quot;CD-ROM&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194601: WD97:Bottom Border Deleted in Converted WordPerfect 5.x Document"
-permalink: kb/194/Q194601/
+permalink: /kb/194/Q194601/
 ---
 
 ## Q194601: WD97:Bottom Border Deleted in Converted WordPerfect 5.x Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171498: FIX: Screen Turns Black When Compiling"
-permalink: kb/171/Q171498/
+permalink: /kb/171/Q171498/
 ---
 
 ## Q171498: FIX: Screen Turns Black When Compiling

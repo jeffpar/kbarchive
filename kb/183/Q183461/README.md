@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183461: Multimedia Properties Window Closes When You Click Devices Tab"
-permalink: kb/183/Q183461/
+permalink: /kb/183/Q183461/
 ---
 
 ## Q183461: Multimedia Properties Window Closes When You Click Devices Tab

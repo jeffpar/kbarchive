@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279449: MSN Companion Compaq IA-2 device has black screen"
-permalink: kb/279/Q279449/
+permalink: /kb/279/Q279449/
 ---
 
 ## Q279449: MSN Companion Compaq IA-2 device has black screen

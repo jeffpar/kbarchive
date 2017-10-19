@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82820: Monitor Ports PIF Option Explained"
-permalink: kb/082/Q82820/
+permalink: /kb/082/Q82820/
 ---
 
 ## Q82820: Monitor Ports PIF Option Explained

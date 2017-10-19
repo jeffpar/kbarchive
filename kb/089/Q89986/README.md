@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89986: Windows Sound System Supports Audio Written for Windows 3.1"
-permalink: kb/089/Q89986/
+permalink: /kb/089/Q89986/
 ---
 
 ## Q89986: Windows Sound System Supports Audio Written for Windows 3.1

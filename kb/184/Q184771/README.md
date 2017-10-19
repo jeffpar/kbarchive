@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184771: XADM: How to Configure Exchange Server on Banyan VINES Network"
-permalink: kb/184/Q184771/
+permalink: /kb/184/Q184771/
 ---
 
 ## Q184771: XADM: How to Configure Exchange Server on Banyan VINES Network

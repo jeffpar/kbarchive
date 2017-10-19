@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131991: HOWTO: Change the Mouse Pointer for a Window in MFC"
-permalink: kb/131/Q131991/
+permalink: /kb/131/Q131991/
 ---
 
 ## Q131991: HOWTO: Change the Mouse Pointer for a Window in MFC

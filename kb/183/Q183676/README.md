@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183676: Window Position of Windisk.exe Causes Access Violation"
-permalink: kb/183/Q183676/
+permalink: /kb/183/Q183676/
 ---
 
 ## Q183676: Window Position of Windisk.exe Causes Access Violation

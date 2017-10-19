@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151961: Err Msg: Errors Occurred During this Operation..."
-permalink: kb/151/Q151961/
+permalink: /kb/151/Q151961/
 ---
 
 ## Q151961: Err Msg: Errors Occurred During this Operation...

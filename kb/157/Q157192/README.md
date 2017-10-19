@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157192: DOCERR:SYS(1037) Function Displays Page Dialog Not Print Setup"
-permalink: kb/157/Q157192/
+permalink: /kb/157/Q157192/
 ---
 
 ## Q157192: DOCERR:SYS(1037) Function Displays Page Dialog Not Print Setup

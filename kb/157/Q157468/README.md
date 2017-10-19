@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157468: HOWTO: Use CompareMemo and Update Memo Fields"
-permalink: kb/157/Q157468/
+permalink: /kb/157/Q157468/
 ---
 
 ## Q157468: HOWTO: Use CompareMemo and Update Memo Fields

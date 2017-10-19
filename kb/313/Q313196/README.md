@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313196: PRB: SET DATE Resets SelStart Property in Text Boxes"
-permalink: kb/313/Q313196/
+permalink: /kb/313/Q313196/
 ---
 
 ## Q313196: PRB: SET DATE Resets SelStart Property in Text Boxes

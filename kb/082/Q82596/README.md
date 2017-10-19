@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82596: Stacker 1.0's SCHECK Is Not Compatible with SMARTDrive"
-permalink: kb/082/Q82596/
+permalink: /kb/082/Q82596/
 ---
 
 ## Q82596: Stacker 1.0's SCHECK Is Not Compatible with SMARTDrive

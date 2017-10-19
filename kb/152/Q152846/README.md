@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152846: Srv Event 2000 With Shared Removable Media"
-permalink: kb/152/Q152846/
+permalink: /kb/152/Q152846/
 ---
 
 ## Q152846: Srv Event 2000 With Shared Removable Media

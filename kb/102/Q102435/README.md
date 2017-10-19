@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102435: INFO: Reasons for &quot;Unauthorized Copy of Visual C++&quot; Message"
-permalink: kb/102/Q102435/
+permalink: /kb/102/Q102435/
 ---
 
 ## Q102435: INFO: Reasons for &quot;Unauthorized Copy of Visual C++&quot; Message

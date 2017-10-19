@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191566: PRB: Cannot Access Network Resource If Client Certificate Mapped"
-permalink: kb/191/Q191566/
+permalink: /kb/191/Q191566/
 ---
 
 ## Q191566: PRB: Cannot Access Network Resource If Client Certificate Mapped

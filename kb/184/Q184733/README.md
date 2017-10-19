@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184733: BUG: EXE File Not Created After Compiling"
-permalink: kb/184/Q184733/
+permalink: /kb/184/Q184733/
 ---
 
 ## Q184733: BUG: EXE File Not Created After Compiling

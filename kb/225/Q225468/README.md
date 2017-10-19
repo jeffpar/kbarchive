@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225468: Encarta: Animations or InterActivities Do Not Function Correctly"
-permalink: kb/225/Q225468/
+permalink: /kb/225/Q225468/
 ---
 
 ## Q225468: Encarta: Animations or InterActivities Do Not Function Correctly

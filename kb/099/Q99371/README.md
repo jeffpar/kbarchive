@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99371: Err Msg: The Name Already Exists on the Network"
-permalink: kb/099/Q99371/
+permalink: /kb/099/Q99371/
 ---
 
 ## Q99371: Err Msg: The Name Already Exists on the Network

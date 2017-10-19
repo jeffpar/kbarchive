@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105005: PRB: DDEInitiate() Gives Remote Data Not Accessible Dialog Box"
-permalink: kb/105/Q105005/
+permalink: /kb/105/Q105005/
 ---
 
 ## Q105005: PRB: DDEInitiate() Gives Remote Data Not Accessible Dialog Box

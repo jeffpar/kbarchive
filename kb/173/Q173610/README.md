@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173610: Fonts Appear Too Large in MSN Program Viewer"
-permalink: kb/173/Q173610/
+permalink: /kb/173/Q173610/
 ---
 
 ## Q173610: Fonts Appear Too Large in MSN Program Viewer

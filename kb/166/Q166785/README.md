@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166785: WD97: Cannot Undo Resizing of ActiveX Controls"
-permalink: kb/166/Q166785/
+permalink: /kb/166/Q166785/
 ---
 
 ## Q166785: WD97: Cannot Undo Resizing of ActiveX Controls

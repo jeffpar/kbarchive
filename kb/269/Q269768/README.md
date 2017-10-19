@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269768: SMS: Deleted PCM Client Instruction Files Can Be Viewed"
-permalink: kb/269/Q269768/
+permalink: /kb/269/Q269768/
 ---
 
 ## Q269768: SMS: Deleted PCM Client Instruction Files Can Be Viewed

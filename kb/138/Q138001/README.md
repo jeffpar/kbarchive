@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138001: AS/400 Shared Folders Users See Each Other's Folders"
-permalink: kb/138/Q138001/
+permalink: /kb/138/Q138001/
 ---
 
 ## Q138001: AS/400 Shared Folders Users See Each Other's Folders

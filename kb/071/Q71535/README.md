@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71535: MS-DOS: Uninstalling After Moving the OLD_DOS Directory"
-permalink: kb/071/Q71535/
+permalink: /kb/071/Q71535/
 ---
 
 ## Q71535: MS-DOS: Uninstalling After Moving the OLD_DOS Directory

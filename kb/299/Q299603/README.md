@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299603: PRB: &quot;Error reading file&quot; Err Msg on Windows 2000 Terminal Svcs"
-permalink: kb/299/Q299603/
+permalink: /kb/299/Q299603/
 ---
 
 ## Q299603: PRB: &quot;Error reading file&quot; Err Msg on Windows 2000 Terminal Svcs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165542: Service Pack 2 Uninstall Directory Gets Overwritten"
-permalink: kb/165/Q165542/
+permalink: /kb/165/Q165542/
 ---
 
 ## Q165542: Service Pack 2 Uninstall Directory Gets Overwritten

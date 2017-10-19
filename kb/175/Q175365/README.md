@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175365: Frequently Asked Questions About Internet E-mail Using MSN"
-permalink: kb/175/Q175365/
+permalink: /kb/175/Q175365/
 ---
 
 ## Q175365: Frequently Asked Questions About Internet E-mail Using MSN

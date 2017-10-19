@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193779: Cluster Server Drive Letters Do Not Update Using Disk Admin"
-permalink: kb/193/Q193779/
+permalink: /kb/193/Q193779/
 ---
 
 ## Q193779: Cluster Server Drive Letters Do Not Update Using Disk Admin

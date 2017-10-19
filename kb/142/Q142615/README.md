@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142615: Event Log Service Fails to Check Access to Security Log File"
-permalink: kb/142/Q142615/
+permalink: /kb/142/Q142615/
 ---
 
 ## Q142615: Event Log Service Fails to Check Access to Security Log File

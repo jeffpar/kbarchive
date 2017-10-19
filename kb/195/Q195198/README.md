@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195198: WD97: How to Create an F4/F7 Hanging Indent Paragraph"
-permalink: kb/195/Q195198/
+permalink: /kb/195/Q195198/
 ---
 
 ## Q195198: WD97: How to Create an F4/F7 Hanging Indent Paragraph

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177143: PRB: &quot;Error Writing to File&quot; Error Using a Table on a CD-ROM"
-permalink: kb/177/Q177143/
+permalink: /kb/177/Q177143/
 ---
 
 ## Q177143: PRB: &quot;Error Writing to File&quot; Error Using a Table on a CD-ROM

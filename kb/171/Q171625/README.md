@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171625: Command-line Installation of SNA Server 3.0  and 4.0 Link Servic"
-permalink: kb/171/Q171625/
+permalink: /kb/171/Q171625/
 ---
 
 ## Q171625: Command-line Installation of SNA Server 3.0  and 4.0 Link Servic

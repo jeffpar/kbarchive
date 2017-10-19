@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96562: Running Windows 3.1 with Advanced Power Management Systems"
-permalink: kb/096/Q96562/
+permalink: /kb/096/Q96562/
 ---
 
 ## Q96562: Running Windows 3.1 with Advanced Power Management Systems

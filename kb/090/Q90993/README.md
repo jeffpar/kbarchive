@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90993: Problems Caused by Setup Changing LASTDRIVE= Statement"
-permalink: kb/090/Q90993/
+permalink: /kb/090/Q90993/
 ---
 
 ## Q90993: Problems Caused by Setup Changing LASTDRIVE= Statement

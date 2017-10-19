@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194401: Checked Out Files Aren't Published to Server"
-permalink: kb/194/Q194401/
+permalink: /kb/194/Q194401/
 ---
 
 ## Q194401: Checked Out Files Aren't Published to Server

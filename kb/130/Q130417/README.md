@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130417: Using SMS Remote Control and RAS to Control a WFW Client"
-permalink: kb/130/Q130417/
+permalink: /kb/130/Q130417/
 ---
 
 ## Q130417: Using SMS Remote Control and RAS to Control a WFW Client

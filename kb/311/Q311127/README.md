@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311127: High CPU Utilization in LSASS on PDC Emulator"
-permalink: kb/311/Q311127/
+permalink: /kb/311/Q311127/
 ---
 
 ## Q311127: High CPU Utilization in LSASS on PDC Emulator

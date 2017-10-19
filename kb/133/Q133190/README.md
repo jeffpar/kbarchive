@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133190: Cannot Upgrade to MS Client for NetWare When Running User.com"
-permalink: kb/133/Q133190/
+permalink: /kb/133/Q133190/
 ---
 
 ## Q133190: Cannot Upgrade to MS Client for NetWare When Running User.com

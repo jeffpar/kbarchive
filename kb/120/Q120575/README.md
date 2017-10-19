@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120575: IBM Token Ring Adapter Problems with Base I/O Address"
-permalink: kb/120/Q120575/
+permalink: /kb/120/Q120575/
 ---
 
 ## Q120575: IBM Token Ring Adapter Problems with Base I/O Address

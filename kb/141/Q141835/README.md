@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141835: FIX: Visual FoxPro Doesn't Save File as Expected"
-permalink: kb/141/Q141835/
+permalink: /kb/141/Q141835/
 ---
 
 ## Q141835: FIX: Visual FoxPro Doesn't Save File as Expected

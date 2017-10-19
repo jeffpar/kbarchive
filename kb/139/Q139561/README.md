@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139561: Availability of MSDLC32 and Support Boundaries"
-permalink: kb/139/Q139561/
+permalink: /kb/139/Q139561/
 ---
 
 ## Q139561: Availability of MSDLC32 and Support Boundaries

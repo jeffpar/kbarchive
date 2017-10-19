@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194198: FIX: Setup Wizard Does Not Print All Reports"
-permalink: kb/194/Q194198/
+permalink: /kb/194/Q194198/
 ---
 
 ## Q194198: FIX: Setup Wizard Does Not Print All Reports

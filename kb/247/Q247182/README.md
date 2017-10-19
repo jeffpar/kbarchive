@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247182: XFOR: Exchange Notes Connector Dirsync Deletes Custom Recipients"
-permalink: kb/247/Q247182/
+permalink: /kb/247/Q247182/
 ---
 
 ## Q247182: XFOR: Exchange Notes Connector Dirsync Deletes Custom Recipients

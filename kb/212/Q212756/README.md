@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212756: PC DB: Non-Delivery Report &quot;Recipient's Inbox Does Not Exist or"
-permalink: kb/212/Q212756/
+permalink: /kb/212/Q212756/
 ---
 
 ## Q212756: PC DB: Non-Delivery Report &quot;Recipient's Inbox Does Not Exist or

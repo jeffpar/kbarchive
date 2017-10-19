@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166825: XADM: Containers Sorted by Directory Name in GAL"
-permalink: kb/166/Q166825/
+permalink: /kb/166/Q166825/
 ---
 
 ## Q166825: XADM: Containers Sorted by Directory Name in GAL

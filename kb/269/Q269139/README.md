@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269139: Windows 2000 TCP/IP Protocols and Services Technical Reference C"
-permalink: kb/269/Q269139/
+permalink: /kb/269/Q269139/
 ---
 
 ## Q269139: Windows 2000 TCP/IP Protocols and Services Technical Reference C

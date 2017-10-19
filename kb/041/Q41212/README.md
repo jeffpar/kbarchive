@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41212: INFO: Must Use Prototype Before Intrinsic or Function Pragmas"
-permalink: kb/041/Q41212/
+permalink: /kb/041/Q41212/
 ---
 
 ## Q41212: INFO: Must Use Prototype Before Intrinsic or Function Pragmas

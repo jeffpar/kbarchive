@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243597: User Account Data Not Updated on Remote Shutdown"
-permalink: kb/243/Q243597/
+permalink: /kb/243/Q243597/
 ---
 
 ## Q243597: User Account Data Not Updated on Remote Shutdown

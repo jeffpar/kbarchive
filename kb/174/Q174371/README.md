@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174371: Possible Database File Damage When Data Is Appended"
-permalink: kb/174/Q174371/
+permalink: /kb/174/Q174371/
 ---
 
 ## Q174371: Possible Database File Damage When Data Is Appended

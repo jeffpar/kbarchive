@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92436: SAMPLE: Demonstration of Using _fmalloc"
-permalink: kb/092/Q92436/
+permalink: /kb/092/Q92436/
 ---
 
 ## Q92436: SAMPLE: Demonstration of Using _fmalloc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190059: PRB: Certificate Server Fails to Start After Unattended Installa"
-permalink: kb/190/Q190059/
+permalink: /kb/190/Q190059/
 ---
 
 ## Q190059: PRB: Certificate Server Fails to Start After Unattended Installa

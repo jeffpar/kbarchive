@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130719: FIX: &quot;Unable to Create File Buffer&quot; 32-Bit ODBC Error"
-permalink: kb/130/Q130719/
+permalink: /kb/130/Q130719/
 ---
 
 ## Q130719: FIX: &quot;Unable to Create File Buffer&quot; 32-Bit ODBC Error

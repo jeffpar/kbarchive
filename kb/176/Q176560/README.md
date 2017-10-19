@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176560: How to Create an Inetnews.log File for Outlook Express"
-permalink: kb/176/Q176560/
+permalink: /kb/176/Q176560/
 ---
 
 ## Q176560: How to Create an Inetnews.log File for Outlook Express

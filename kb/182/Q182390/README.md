@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182390: Tips Listed in the Windows 95 Shell.inf File"
-permalink: kb/182/Q182390/
+permalink: /kb/182/Q182390/
 ---
 
 ## Q182390: Tips Listed in the Windows 95 Shell.inf File

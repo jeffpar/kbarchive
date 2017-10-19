@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85352: FAX: How to Configure the Fax Gateway"
-permalink: kb/085/Q85352/
+permalink: /kb/085/Q85352/
 ---
 
 ## Q85352: FAX: How to Configure the Fax Gateway

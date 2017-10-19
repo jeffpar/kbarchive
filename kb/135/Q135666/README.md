@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135666: FIX: Assertion Failure in CFieldExchange::GetColumnType()"
-permalink: kb/135/Q135666/
+permalink: /kb/135/Q135666/
 ---
 
 ## Q135666: FIX: Assertion Failure in CFieldExchange::GetColumnType()

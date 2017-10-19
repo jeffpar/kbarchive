@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130239: PRB: Changes to SQL Remote View Aren't Saved"
-permalink: kb/130/Q130239/
+permalink: /kb/130/Q130239/
 ---
 
 ## Q130239: PRB: Changes to SQL Remote View Aren't Saved

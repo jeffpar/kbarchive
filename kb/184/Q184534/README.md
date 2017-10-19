@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184534: XADM: MIME Type Extension Mapping Not Used for Attachments"
-permalink: kb/184/Q184534/
+permalink: /kb/184/Q184534/
 ---
 
 ## Q184534: XADM: MIME Type Extension Mapping Not Used for Attachments

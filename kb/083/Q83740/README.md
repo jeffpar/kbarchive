@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83740: Cannot Use Certain Shortcut Keys in Program Item Properties"
-permalink: kb/083/Q83740/
+permalink: /kb/083/Q83740/
 ---
 
 ## Q83740: Cannot Use Certain Shortcut Keys in Program Item Properties

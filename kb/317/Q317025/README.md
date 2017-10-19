@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317025: Cannot Connect to the Internet After Connecting to a VPN Server"
-permalink: kb/317/Q317025/
+permalink: /kb/317/Q317025/
 ---
 
 ## Q317025: Cannot Connect to the Internet After Connecting to a VPN Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274197: XADM: Error Message: System Cannot Find the File Specified"
-permalink: kb/274/Q274197/
+permalink: /kb/274/Q274197/
 ---
 
 ## Q274197: XADM: Error Message: System Cannot Find the File Specified

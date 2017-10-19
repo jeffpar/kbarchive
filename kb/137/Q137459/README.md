@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137459: Multimedia: Printer Error pr807, pr808, Etc."
-permalink: kb/137/Q137459/
+permalink: /kb/137/Q137459/
 ---
 
 ## Q137459: Multimedia: Printer Error pr807, pr808, Etc.

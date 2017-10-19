@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269219: TAMA Cannot Create Objects Directly Under Active Directory MA"
-permalink: kb/269/Q269219/
+permalink: /kb/269/Q269219/
 ---
 
 ## Q269219: TAMA Cannot Create Objects Directly Under Active Directory MA

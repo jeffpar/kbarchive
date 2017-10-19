@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159875: MSN 2.0 CD-ROM Displays Only a Readme.txt File"
-permalink: kb/159/Q159875/
+permalink: /kb/159/Q159875/
 ---
 
 ## Q159875: MSN 2.0 CD-ROM Displays Only a Readme.txt File

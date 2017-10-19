@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142880: NetBT Fails to Bind to a Large Number of IP Addresses"
-permalink: kb/142/Q142880/
+permalink: /kb/142/Q142880/
 ---
 
 ## Q142880: NetBT Fails to Bind to a Large Number of IP Addresses

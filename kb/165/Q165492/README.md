@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165492: HOWTO: Use ADO with a Visual Foxpro Database"
-permalink: kb/165/Q165492/
+permalink: /kb/165/Q165492/
 ---
 
 ## Q165492: HOWTO: Use ADO with a Visual Foxpro Database

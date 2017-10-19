@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152550: Mac Cinemania: How to Import ListMaker Files"
-permalink: kb/152/Q152550/
+permalink: /kb/152/Q152550/
 ---
 
 ## Q152550: Mac Cinemania: How to Import ListMaker Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262088: Description of the &quot;Show Desktop&quot; Feature in Windows"
-permalink: kb/262/Q262088/
+permalink: /kb/262/Q262088/
 ---
 
 ## Q262088: Description of the &quot;Show Desktop&quot; Feature in Windows

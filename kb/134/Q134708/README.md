@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134708: Missing Operating System After Setup Restarts Your Computer"
-permalink: kb/134/Q134708/
+permalink: /kb/134/Q134708/
 ---
 
 ## Q134708: Missing Operating System After Setup Restarts Your Computer

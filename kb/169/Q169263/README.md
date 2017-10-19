@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169263: Err Msg: HTTP 1.0 Server 500 Error: The Referenced Account Is..."
-permalink: kb/169/Q169263/
+permalink: /kb/169/Q169263/
 ---
 
 ## Q169263: Err Msg: HTTP 1.0 Server 500 Error: The Referenced Account Is...

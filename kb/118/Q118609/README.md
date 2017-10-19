@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118609: HOWTO: Create an .MDB File for Microsoft Access Databases"
-permalink: kb/118/Q118609/
+permalink: /kb/118/Q118609/
 ---
 
 ## Q118609: HOWTO: Create an .MDB File for Microsoft Access Databases

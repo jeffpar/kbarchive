@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164434: Sony Spressa SCSI CD-ROM Drive May Not Be Detected"
-permalink: kb/164/Q164434/
+permalink: /kb/164/Q164434/
 ---
 
 ## Q164434: Sony Spressa SCSI CD-ROM Drive May Not Be Detected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114335: Deleting Outdated Registry Trees for Fortran or Visual C++"
-permalink: kb/114/Q114335/
+permalink: /kb/114/Q114335/
 ---
 
 ## Q114335: Deleting Outdated Registry Trees for Fortran or Visual C++

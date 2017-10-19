@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152432: XFOR: Comments in SMTP Addresses Cause NDR when Replying"
-permalink: kb/152/Q152432/
+permalink: /kb/152/Q152432/
 ---
 
 ## Q152432: XFOR: Comments in SMTP Addresses Cause NDR when Replying

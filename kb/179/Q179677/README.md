@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179677: XFOR: Comma Precedes SMTP Sender's Display Name"
-permalink: kb/179/Q179677/
+permalink: /kb/179/Q179677/
 ---
 
 ## Q179677: XFOR: Comma Precedes SMTP Sender's Display Name

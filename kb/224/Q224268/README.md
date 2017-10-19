@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224268: Streets and Trips 2000 Err Msg: Unable to Calculate Route..."
-permalink: kb/224/Q224268/
+permalink: /kb/224/Q224268/
 ---
 
 ## Q224268: Streets and Trips 2000 Err Msg: Unable to Calculate Route...

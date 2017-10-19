@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113892: PRB: GetVersion Returns 3.10 from Windows for Workgroups 3.11"
-permalink: kb/113/Q113892/
+permalink: /kb/113/Q113892/
 ---
 
 ## Q113892: PRB: GetVersion Returns 3.10 from Windows for Workgroups 3.11

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149845: FP: How to Line Up Text and Objects Horizontally"
-permalink: kb/149/Q149845/
+permalink: /kb/149/Q149845/
 ---
 
 ## Q149845: FP: How to Line Up Text and Objects Horizontally

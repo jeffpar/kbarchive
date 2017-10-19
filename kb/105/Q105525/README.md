@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105525: FFAPI: Cannot Mail to Group Members on External Post Offices"
-permalink: kb/105/Q105525/
+permalink: /kb/105/Q105525/
 ---
 
 ## Q105525: FFAPI: Cannot Mail to Group Members on External Post Offices

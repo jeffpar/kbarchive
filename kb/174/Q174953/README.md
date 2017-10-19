@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174953: SMS: SMS 1.2 SP 3 Reduces Client/Server Network Traffic"
-permalink: kb/174/Q174953/
+permalink: /kb/174/Q174953/
 ---
 
 ## Q174953: SMS: SMS 1.2 SP 3 Reduces Client/Server Network Traffic

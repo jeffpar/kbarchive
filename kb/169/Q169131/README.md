@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169131: Print Setup Dialog Box May Take a Long Time to Display"
-permalink: kb/169/Q169131/
+permalink: /kb/169/Q169131/
 ---
 
 ## Q169131: Print Setup Dialog Box May Take a Long Time to Display

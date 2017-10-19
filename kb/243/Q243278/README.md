@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243278: WD97: How to Export a Table to Database/Spreadsheet Application"
-permalink: kb/243/Q243278/
+permalink: /kb/243/Q243278/
 ---
 
 ## Q243278: WD97: How to Export a Table to Database/Spreadsheet Application

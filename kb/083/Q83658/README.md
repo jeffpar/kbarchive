@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83658: INF: Version Information Resources in VxDs"
-permalink: kb/083/Q83658/
+permalink: /kb/083/Q83658/
 ---
 
 ## Q83658: INF: Version Information Resources in VxDs

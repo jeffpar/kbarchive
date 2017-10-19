@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152749: Complete Gardening: No Garden Bed Planner Available"
-permalink: kb/152/Q152749/
+permalink: /kb/152/Q152749/
 ---
 
 ## Q152749: Complete Gardening: No Garden Bed Planner Available

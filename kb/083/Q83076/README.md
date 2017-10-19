@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83076: PostScript WIN.INI Settings for Windows 3.1"
-permalink: kb/083/Q83076/
+permalink: /kb/083/Q83076/
 ---
 
 ## Q83076: PostScript WIN.INI Settings for Windows 3.1

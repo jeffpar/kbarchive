@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257404: DOS Command Line Is Missing the First Character"
-permalink: kb/257/Q257404/
+permalink: /kb/257/Q257404/
 ---
 
 ## Q257404: DOS Command Line Is Missing the First Character

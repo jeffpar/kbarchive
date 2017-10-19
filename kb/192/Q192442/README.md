@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192442: Err Msg: Cannot Establish Modem Connection"
-permalink: kb/192/Q192442/
+permalink: /kb/192/Q192442/
 ---
 
 ## Q192442: Err Msg: Cannot Establish Modem Connection

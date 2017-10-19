@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68986: Change-Line Support and XT-Class Computers"
-permalink: kb/068/Q68986/
+permalink: /kb/068/Q68986/
 ---
 
 ## Q68986: Change-Line Support and XT-Class Computers

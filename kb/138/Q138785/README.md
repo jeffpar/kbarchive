@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138785: DOC: CImageList::DeleteObject Generates a C2039 Error"
-permalink: kb/138/Q138785/
+permalink: /kb/138/Q138785/
 ---
 
 ## Q138785: DOC: CImageList::DeleteObject Generates a C2039 Error

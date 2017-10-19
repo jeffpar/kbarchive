@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123688: Turning a 16-bit Protected Segment into a 32-bit Segment"
-permalink: kb/123/Q123688/
+permalink: /kb/123/Q123688/
 ---
 
 ## Q123688: Turning a 16-bit Protected Segment into a 32-bit Segment

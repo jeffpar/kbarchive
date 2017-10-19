@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76950: BUG: PWB May Hang If &lt;ASSIGN&gt; Pseudofile Not Closed"
-permalink: kb/076/Q76950/
+permalink: /kb/076/Q76950/
 ---
 
 ## Q76950: BUG: PWB May Hang If &lt;ASSIGN&gt; Pseudofile Not Closed

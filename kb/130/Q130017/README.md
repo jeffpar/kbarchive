@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130017: How to Manage Migrated NetWare Users Accounts"
-permalink: kb/130/Q130017/
+permalink: /kb/130/Q130017/
 ---
 
 ## Q130017: How to Manage Migrated NetWare Users Accounts

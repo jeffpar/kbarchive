@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97930: Norton Antivirus Err Msg: Insufficient Memory to Scan File"
-permalink: kb/097/Q97930/
+permalink: /kb/097/Q97930/
 ---
 
 ## Q97930: Norton Antivirus Err Msg: Insufficient Memory to Scan File

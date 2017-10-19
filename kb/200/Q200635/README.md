@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200635: SMS: Windows NT Resource Kit Setup Hangs on SMS 2.0 Site Server"
-permalink: kb/200/Q200635/
+permalink: /kb/200/Q200635/
 ---
 
 ## Q200635: SMS: Windows NT Resource Kit Setup Hangs on SMS 2.0 Site Server

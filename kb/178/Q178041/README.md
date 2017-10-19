@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178041: XADM: Event ID 1171 Exception 0xe0010003"
-permalink: kb/178/Q178041/
+permalink: /kb/178/Q178041/
 ---
 
 ## Q178041: XADM: Event ID 1171 Exception 0xe0010003

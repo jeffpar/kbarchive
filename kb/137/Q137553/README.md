@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137553: IBM 4019 Defaults to Manual Paper Feed"
-permalink: kb/137/Q137553/
+permalink: /kb/137/Q137553/
 ---
 
 ## Q137553: IBM 4019 Defaults to Manual Paper Feed

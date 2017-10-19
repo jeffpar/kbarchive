@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171009: XCLN: How to Delete a Duplicate Custom Form"
-permalink: kb/171/Q171009/
+permalink: /kb/171/Q171009/
 ---
 
 ## Q171009: XCLN: How to Delete a Duplicate Custom Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178439: MS Windows NT Tech Support Training Comments and Corrections"
-permalink: kb/178/Q178439/
+permalink: /kb/178/Q178439/
 ---
 
 ## Q178439: MS Windows NT Tech Support Training Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104776: BUG: Endless Loop in Code Containing Graphics &amp; Compiled -Ox"
-permalink: kb/104/Q104776/
+permalink: /kb/104/Q104776/
 ---
 
 ## Q104776: BUG: Endless Loop in Code Containing Graphics &amp; Compiled -Ox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142267: SMS: Netspeed Returns False Speed Over Compression-Capable Link"
-permalink: kb/142/Q142267/
+permalink: /kb/142/Q142267/
 ---
 
 ## Q142267: SMS: Netspeed Returns False Speed Over Compression-Capable Link

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171064: FIX: C2512 Instantiating Template in Member Initializer"
-permalink: kb/171/Q171064/
+permalink: /kb/171/Q171064/
 ---
 
 ## Q171064: FIX: C2512 Instantiating Template in Member Initializer

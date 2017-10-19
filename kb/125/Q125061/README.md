@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125061: HP J2577A EISA LAN Adapter Does Not Install on HP NetServer LF"
-permalink: kb/125/Q125061/
+permalink: /kb/125/Q125061/
 ---
 
 ## Q125061: HP J2577A EISA LAN Adapter Does Not Install on HP NetServer LF

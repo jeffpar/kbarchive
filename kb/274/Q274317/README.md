@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274317: XADM: How to View Windows NT Accounts that Access Mailboxes"
-permalink: kb/274/Q274317/
+permalink: /kb/274/Q274317/
 ---
 
 ## Q274317: XADM: How to View Windows NT Accounts that Access Mailboxes

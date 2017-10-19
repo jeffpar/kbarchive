@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131011: SMS: Netspeed.com Internals"
-permalink: kb/131/Q131011/
+permalink: /kb/131/Q131011/
 ---
 
 ## Q131011: SMS: Netspeed.com Internals

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168948: Information About the Cluster Group"
-permalink: kb/168/Q168948/
+permalink: /kb/168/Q168948/
 ---
 
 ## Q168948: Information About the Cluster Group

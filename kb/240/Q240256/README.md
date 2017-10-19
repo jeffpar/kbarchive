@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240256: Understanding COM+ Comments and Corrections"
-permalink: kb/240/Q240256/
+permalink: /kb/240/Q240256/
 ---
 
 ## Q240256: Understanding COM+ Comments and Corrections

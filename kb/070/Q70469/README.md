@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70469: Incompatible Windows 3.0 ATI Video Drivers"
-permalink: kb/070/Q70469/
+permalink: /kb/070/Q70469/
 ---
 
 ## Q70469: Incompatible Windows 3.0 ATI Video Drivers

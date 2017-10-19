@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35881: Name Directive No Longer Supported"
-permalink: kb/035/Q35881/
+permalink: /kb/035/Q35881/
 ---
 
 ## Q35881: Name Directive No Longer Supported

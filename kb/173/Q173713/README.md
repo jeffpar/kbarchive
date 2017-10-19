@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173713: XFOR: CR Receives Rich Text Format Information Unexpectedly"
-permalink: kb/173/Q173713/
+permalink: /kb/173/Q173713/
 ---
 
 ## Q173713: XFOR: CR Receives Rich Text Format Information Unexpectedly

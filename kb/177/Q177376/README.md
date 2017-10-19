@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177376: Bookshelf 98: Unable to Cancel Installation"
-permalink: kb/177/Q177376/
+permalink: /kb/177/Q177376/
 ---
 
 ## Q177376: Bookshelf 98: Unable to Cancel Installation

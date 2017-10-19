@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216722: FIX: C2440 Using Function Pointer As Class Template Argument"
-permalink: kb/216/Q216722/
+permalink: /kb/216/Q216722/
 ---
 
 ## Q216722: FIX: C2440 Using Function Pointer As Class Template Argument

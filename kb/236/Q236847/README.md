@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236847: SNACFG Should Allow Configuration of Host Security Domains"
-permalink: kb/236/Q236847/
+permalink: /kb/236/Q236847/
 ---
 
 ## Q236847: SNACFG Should Allow Configuration of Host Security Domains

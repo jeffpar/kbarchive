@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183517: XCLN: Unable to Display Outlook Calendar After Move Mailbox"
-permalink: kb/183/Q183517/
+permalink: /kb/183/Q183517/
 ---
 
 ## Q183517: XCLN: Unable to Display Outlook Calendar After Move Mailbox

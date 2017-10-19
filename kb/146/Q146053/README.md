@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146053: Err Msg: WINS Encountered An Error While Processing..."
-permalink: kb/146/Q146053/
+permalink: /kb/146/Q146053/
 ---
 
 ## Q146053: Err Msg: WINS Encountered An Error While Processing...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81333: MousHook.exe Demonstrates Windows 3.1 WH_MOUSE Hook"
-permalink: kb/081/Q81333/
+permalink: /kb/081/Q81333/
 ---
 
 ## Q81333: MousHook.exe Demonstrates Windows 3.1 WH_MOUSE Hook

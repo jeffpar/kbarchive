@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77587: Scott 286 Model 2000-SC Must Disable ROM DOS"
-permalink: kb/077/Q77587/
+permalink: /kb/077/Q77587/
 ---
 
 ## Q77587: Scott 286 Model 2000-SC Must Disable ROM DOS

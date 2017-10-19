@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154719: XCON: MTA: Line Wrap When Using ISO 6937 Bodypart"
-permalink: kb/154/Q154719/
+permalink: /kb/154/Q154719/
 ---
 
 ## Q154719: XCON: MTA: Line Wrap When Using ISO 6937 Bodypart

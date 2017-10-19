@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76063: PC Win: User Deletion Problem in TO: Header Line"
-permalink: kb/076/Q76063/
+permalink: /kb/076/Q76063/
 ---
 
 ## Q76063: PC Win: User Deletion Problem in TO: Header Line

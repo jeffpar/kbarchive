@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152372: BUG: No Help with Class Info Dialog from ? Menu Pad"
-permalink: kb/152/Q152372/
+permalink: /kb/152/Q152372/
 ---
 
 ## Q152372: BUG: No Help with Class Info Dialog from ? Menu Pad

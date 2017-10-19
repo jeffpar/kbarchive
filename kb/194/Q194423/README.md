@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194423: XCLN: RPC Configuration Service Needed for Client to Connect"
-permalink: kb/194/Q194423/
+permalink: /kb/194/Q194423/
 ---
 
 ## Q194423: XCLN: RPC Configuration Service Needed for Client to Connect

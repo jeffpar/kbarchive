@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86972: X400: Typical Batch Files to Set Up and Start X.400 Gateway"
-permalink: kb/086/Q86972/
+permalink: /kb/086/Q86972/
 ---
 
 ## Q86972: X400: Typical Batch Files to Set Up and Start X.400 Gateway

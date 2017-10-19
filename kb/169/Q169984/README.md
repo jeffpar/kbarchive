@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169984: Windows 95 Ne2000.sys Driver Does Not Support LAA"
-permalink: kb/169/Q169984/
+permalink: /kb/169/Q169984/
 ---
 
 ## Q169984: Windows 95 Ne2000.sys Driver Does Not Support LAA

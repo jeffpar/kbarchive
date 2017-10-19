@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95665: How to Use the UPDATE Command"
-permalink: kb/095/Q95665/
+permalink: /kb/095/Q95665/
 ---
 
 ## Q95665: How to Use the UPDATE Command

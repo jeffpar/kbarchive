@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148804: Err Msg: An Exception 0E Has Occurred in Rpcss.exe..."
-permalink: kb/148/Q148804/
+permalink: /kb/148/Q148804/
 ---
 
 ## Q148804: Err Msg: An Exception 0E Has Occurred in Rpcss.exe...

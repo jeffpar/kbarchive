@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86088: PC WSPlus: Dynamic Connections Do Not Show Busy Times"
-permalink: kb/086/Q86088/
+permalink: /kb/086/Q86088/
 ---
 
 ## Q86088: PC WSPlus: Dynamic Connections Do Not Show Busy Times

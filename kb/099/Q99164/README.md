@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99164: Mac Srv: Serial Numbers in Retail and Upgrade Servers"
-permalink: kb/099/Q99164/
+permalink: /kb/099/Q99164/
 ---
 
 ## Q99164: Mac Srv: Serial Numbers in Retail and Upgrade Servers

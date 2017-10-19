@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202186: XCLN: Creating and Selecting a Custom View for a Public Folder"
-permalink: kb/202/Q202186/
+permalink: /kb/202/Q202186/
 ---
 
 ## Q202186: XCLN: Creating and Selecting a Custom View for a Public Folder

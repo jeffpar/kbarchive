@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89943: Windows Resource Kit (7/6/92) Disk Directory (5.25 Inch)"
-permalink: kb/089/Q89943/
+permalink: /kb/089/Q89943/
 ---
 
 ## Q89943: Windows Resource Kit (7/6/92) Disk Directory (5.25 Inch)

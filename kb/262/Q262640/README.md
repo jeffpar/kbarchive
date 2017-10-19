@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262640: Windows NT 4.0 Option Pack Does Not Install on Windows 2000"
-permalink: kb/262/Q262640/
+permalink: /kb/262/Q262640/
 ---
 
 ## Q262640: Windows NT 4.0 Option Pack Does Not Install on Windows 2000

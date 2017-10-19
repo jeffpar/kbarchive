@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162219: RasSetEntryProperties API Resets Selected Modem"
-permalink: kb/162/Q162219/
+permalink: /kb/162/Q162219/
 ---
 
 ## Q162219: RasSetEntryProperties API Resets Selected Modem

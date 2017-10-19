@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123995: Mitsumi Driver Does Not Support Sound Blaster 16 Multi-CD-ROM"
-permalink: kb/123/Q123995/
+permalink: /kb/123/Q123995/
 ---
 
 ## Q123995: Mitsumi Driver Does Not Support Sound Blaster 16 Multi-CD-ROM

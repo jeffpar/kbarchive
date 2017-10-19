@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281255: MechWarrior 4: Err: STOP: Invalid Allocation, 0 Bytes with..."
-permalink: kb/281/Q281255/
+permalink: /kb/281/Q281255/
 ---
 
 ## Q281255: MechWarrior 4: Err: STOP: Invalid Allocation, 0 Bytes with...

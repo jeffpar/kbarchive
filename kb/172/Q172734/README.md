@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172734: Static Mappings Have No NetBIOS Suffix in WINS Manager"
-permalink: kb/172/Q172734/
+permalink: /kb/172/Q172734/
 ---
 
 ## Q172734: Static Mappings Have No NetBIOS Suffix in WINS Manager

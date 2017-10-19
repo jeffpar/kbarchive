@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251225: BUG: Recordset EditMode Not Properly Set with DataCombo"
-permalink: kb/251/Q251225/
+permalink: /kb/251/Q251225/
 ---
 
 ## Q251225: BUG: Recordset EditMode Not Properly Set with DataCombo

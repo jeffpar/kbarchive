@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294939: &quot;No More Local Devices&quot; Error Message When You Advertise"
-permalink: kb/294/Q294939/
+permalink: /kb/294/Q294939/
 ---
 
 ## Q294939: &quot;No More Local Devices&quot; Error Message When You Advertise

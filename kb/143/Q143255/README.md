@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143255: HOWTO: Make a Resizable Dialog Bar"
-permalink: kb/143/Q143255/
+permalink: /kb/143/Q143255/
 ---
 
 ## Q143255: HOWTO: Make a Resizable Dialog Bar

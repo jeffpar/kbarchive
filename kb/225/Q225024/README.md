@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225024: PING -T Stops Timing Out After 50 Days"
-permalink: kb/225/Q225024/
+permalink: /kb/225/Q225024/
 ---
 
 ## Q225024: PING -T Stops Timing Out After 50 Days

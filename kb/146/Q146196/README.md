@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146196: MSB Human: Human Body for Macintosh ReadMe File"
-permalink: kb/146/Q146196/
+permalink: /kb/146/Q146196/
 ---
 
 ## Q146196: MSB Human: Human Body for Macintosh ReadMe File

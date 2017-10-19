@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172334: SNA 3.0 Windows 95 Client Floppy Installation Step Incorrect"
-permalink: kb/172/Q172334/
+permalink: /kb/172/Q172334/
 ---
 
 ## Q172334: SNA 3.0 Windows 95 Client Floppy Installation Step Incorrect

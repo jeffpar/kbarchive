@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75007: Installing MS-DOS 5.x or 6.x on Tandy 2500XL/1000TL3/1000TL"
-permalink: kb/075/Q75007/
+permalink: /kb/075/Q75007/
 ---
 
 ## Q75007: Installing MS-DOS 5.x or 6.x on Tandy 2500XL/1000TL3/1000TL

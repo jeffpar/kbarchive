@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245782: INFO: Find Information on the Office 97/2000 Application's Objec"
-permalink: kb/245/Q245782/
+permalink: /kb/245/Q245782/
 ---
 
 ## Q245782: INFO: Find Information on the Office 97/2000 Application's Objec

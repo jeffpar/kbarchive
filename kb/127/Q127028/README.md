@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127028: How to Bind Data Controls Across Multiple Forms in VB 4.0"
-permalink: kb/127/Q127028/
+permalink: /kb/127/Q127028/
 ---
 
 ## Q127028: How to Bind Data Controls Across Multiple Forms in VB 4.0

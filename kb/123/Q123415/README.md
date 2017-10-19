@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123415: Disk Space Value May Be Incorrect After Exiting INTERSVR"
-permalink: kb/123/Q123415/
+permalink: /kb/123/Q123415/
 ---
 
 ## Q123415: Disk Space Value May Be Incorrect After Exiting INTERSVR

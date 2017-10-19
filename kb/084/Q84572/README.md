@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84572: Red Vertical Lines Through Icons Caused by Sound Drivers"
-permalink: kb/084/Q84572/
+permalink: /kb/084/Q84572/
 ---
 
 ## Q84572: Red Vertical Lines Through Icons Caused by Sound Drivers

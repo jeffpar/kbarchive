@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163251: STOP 0xA Due to Buffer Overflow in Ndiswan.sys"
-permalink: kb/163/Q163251/
+permalink: /kb/163/Q163251/
 ---
 
 ## Q163251: STOP 0xA Due to Buffer Overflow in Ndiswan.sys

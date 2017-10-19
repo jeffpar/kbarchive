@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180542: Configuring NWLink Frame Type in Windows NT 4.0"
-permalink: kb/180/Q180542/
+permalink: /kb/180/Q180542/
 ---
 
 ## Q180542: Configuring NWLink Frame Type in Windows NT 4.0

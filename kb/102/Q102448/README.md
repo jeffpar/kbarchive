@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102448: PC Forms: Err: MAPI_FAILURE When Sending Message"
-permalink: kb/102/Q102448/
+permalink: /kb/102/Q102448/
 ---
 
 ## Q102448: PC Forms: Err: MAPI_FAILURE When Sending Message

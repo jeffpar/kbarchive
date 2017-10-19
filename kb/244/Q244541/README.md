@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244541: SMS: &quot;NO PERMISSIONS&quot; Security Entries Appear in Admin Console"
-permalink: kb/244/Q244541/
+permalink: /kb/244/Q244541/
 ---
 
 ## Q244541: SMS: &quot;NO PERMISSIONS&quot; Security Entries Appear in Admin Console

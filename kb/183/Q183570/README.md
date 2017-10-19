@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183570: AM/PM Handled Improperly Executing 'Find'"
-permalink: kb/183/Q183570/
+permalink: /kb/183/Q183570/
 ---
 
 ## Q183570: AM/PM Handled Improperly Executing 'Find'

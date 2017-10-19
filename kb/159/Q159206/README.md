@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159206: Reactivation of Paused Print Queues Deletes Print Jobs"
-permalink: kb/159/Q159206/
+permalink: /kb/159/Q159206/
 ---
 
 ## Q159206: Reactivation of Paused Print Queues Deletes Print Jobs

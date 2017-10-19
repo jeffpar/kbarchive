@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268446: XADM: Random Access Violation in Store.exe (JetMove)"
-permalink: kb/268/Q268446/
+permalink: /kb/268/Q268446/
 ---
 
 ## Q268446: XADM: Random Access Violation in Store.exe (JetMove)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146476: XCLN: Not Create a Rule w/ Reply Template If Signed &amp; Sealed"
-permalink: kb/146/Q146476/
+permalink: /kb/146/Q146476/
 ---
 
 ## Q146476: XCLN: Not Create a Rule w/ Reply Template If Signed &amp; Sealed

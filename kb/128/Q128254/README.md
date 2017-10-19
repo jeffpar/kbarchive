@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128254: Stop Msg: C0000218 &quot;Unknown Hard Error&quot; When Registry is Overrun"
-permalink: kb/128/Q128254/
+permalink: /kb/128/Q128254/
 ---
 
 ## Q128254: Stop Msg: C0000218 &quot;Unknown Hard Error&quot; When Registry is Overrun

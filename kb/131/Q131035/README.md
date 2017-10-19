@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131035: Updated Network Client Files Included with Windows NT 3.51"
-permalink: kb/131/Q131035/
+permalink: /kb/131/Q131035/
 ---
 
 ## Q131035: Updated Network Client Files Included with Windows NT 3.51

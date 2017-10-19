@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115403: Bookshelf: GPF If CD Is Removed While Bookshelf Is Starting"
-permalink: kb/115/Q115403/
+permalink: /kb/115/Q115403/
 ---
 
 ## Q115403: Bookshelf: GPF If CD Is Removed While Bookshelf Is Starting

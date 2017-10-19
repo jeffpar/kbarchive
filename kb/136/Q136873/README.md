@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136873: NET PASSWORD on Windows for Workgroups Causes Error 2453"
-permalink: kb/136/Q136873/
+permalink: /kb/136/Q136873/
 ---
 
 ## Q136873: NET PASSWORD on Windows for Workgroups Causes Error 2453

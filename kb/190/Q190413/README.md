@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190413: XADM: MAPI Notifications Appear to Be Dropped"
-permalink: kb/190/Q190413/
+permalink: /kb/190/Q190413/
 ---
 
 ## Q190413: XADM: MAPI Notifications Appear to Be Dropped

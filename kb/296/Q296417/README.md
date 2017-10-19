@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296417: Mapisp32.dll Invalid Page Fault Err Msg in Schedule+ Profile"
-permalink: kb/296/Q296417/
+permalink: /kb/296/Q296417/
 ---
 
 ## Q296417: Mapisp32.dll Invalid Page Fault Err Msg in Schedule+ Profile

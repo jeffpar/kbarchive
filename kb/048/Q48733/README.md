@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48733: Control Panel Missing with Faxit for Windows"
-permalink: kb/048/Q48733/
+permalink: /kb/048/Q48733/
 ---
 
 ## Q48733: Control Panel Missing with Faxit for Windows

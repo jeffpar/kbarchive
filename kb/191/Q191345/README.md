@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191345: SMS: Custom MIF Entry: Which Form Comes Up by Default"
-permalink: kb/191/Q191345/
+permalink: /kb/191/Q191345/
 ---
 
 ## Q191345: SMS: Custom MIF Entry: Which Form Comes Up by Default

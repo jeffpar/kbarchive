@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160816: FP: FrontPage Editor Adds Space to Empty Table Cell"
-permalink: kb/160/Q160816/
+permalink: /kb/160/Q160816/
 ---
 
 ## Q160816: FP: FrontPage Editor Adds Space to Empty Table Cell

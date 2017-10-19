@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175733: XADM: Key Normalization Problem Causes Stack Corruption"
-permalink: kb/175/Q175733/
+permalink: /kb/175/Q175733/
 ---
 
 ## Q175733: XADM: Key Normalization Problem Causes Stack Corruption

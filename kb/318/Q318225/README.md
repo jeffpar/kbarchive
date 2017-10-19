@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318225: IIS May Return HTTP Status 401 Every 30 Days When Using Kerberos"
-permalink: kb/318/Q318225/
+permalink: /kb/318/Q318225/
 ---
 
 ## Q318225: IIS May Return HTTP Status 401 Every 30 Days When Using Kerberos

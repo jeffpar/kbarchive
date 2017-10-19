@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137718: APPCTL /Delete Command Line Option Does Not Work"
-permalink: kb/137/Q137718/
+permalink: /kb/137/Q137718/
 ---
 
 ## Q137718: APPCTL /Delete Command Line Option Does Not Work

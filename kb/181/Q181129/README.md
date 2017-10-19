@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181129: Err Msg: The Host Pop3.email.msn.com Could Not Be Found..."
-permalink: kb/181/Q181129/
+permalink: /kb/181/Q181129/
 ---
 
 ## Q181129: Err Msg: The Host Pop3.email.msn.com Could Not Be Found...

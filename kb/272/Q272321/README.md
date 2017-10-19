@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272321: Windows 2000 Network Infrastructure Administration Training Kit"
-permalink: kb/272/Q272321/
+permalink: /kb/272/Q272321/
 ---
 
 ## Q272321: Windows 2000 Network Infrastructure Administration Training Kit

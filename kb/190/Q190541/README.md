@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190541: PRB: DATE() Returns a DateTime Type Value From OLE Server"
-permalink: kb/190/Q190541/
+permalink: /kb/190/Q190541/
 ---
 
 ## Q190541: PRB: DATE() Returns a DateTime Type Value From OLE Server

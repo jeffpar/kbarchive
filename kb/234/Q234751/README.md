@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234751: XWEB: Installing and Using OWA Language Packs"
-permalink: kb/234/Q234751/
+permalink: /kb/234/Q234751/
 ---
 
 ## Q234751: XWEB: Installing and Using OWA Language Packs

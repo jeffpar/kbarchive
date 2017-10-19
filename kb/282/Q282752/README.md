@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282752: DEACTIVATE_SESSION Verb May Cause Snaservr.exe Hang"
-permalink: kb/282/Q282752/
+permalink: /kb/282/Q282752/
 ---
 
 ## Q282752: DEACTIVATE_SESSION Verb May Cause Snaservr.exe Hang

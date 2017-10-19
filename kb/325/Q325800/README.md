@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325800: MCSE Readiness Review Exam 70-220 Designing Windows 2000 Network"
-permalink: kb/325/Q325800/
+permalink: /kb/325/Q325800/
 ---
 
 ## Q325800: MCSE Readiness Review Exam 70-220 Designing Windows 2000 Network

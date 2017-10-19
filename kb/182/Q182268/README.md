@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182268: SNA Server Event 60 Should Log Local APPC LU Name"
-permalink: kb/182/Q182268/
+permalink: /kb/182/Q182268/
 ---
 
 ## Q182268: SNA Server Event 60 Should Log Local APPC LU Name

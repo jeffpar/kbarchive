@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187834: HOWTO: Select and Unselect a Range of Cells in MSFlexGrid"
-permalink: kb/187/Q187834/
+permalink: /kb/187/Q187834/
 ---
 
 ## Q187834: HOWTO: Select and Unselect a Range of Cells in MSFlexGrid

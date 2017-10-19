@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82290: FIX: EXTRN ABS Doesn't Work As Software Interrupt Number"
-permalink: kb/082/Q82290/
+permalink: /kb/082/Q82290/
 ---
 
 ## Q82290: FIX: EXTRN ABS Doesn't Work As Software Interrupt Number

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85531: ANSI Characters from Recorder Will Not Display in Write"
-permalink: kb/085/Q85531/
+permalink: /kb/085/Q85531/
 ---
 
 ## Q85531: ANSI Characters from Recorder Will Not Display in Write

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130341: Twilight Zone Screen Saver Causes GP Fault"
-permalink: kb/130/Q130341/
+permalink: /kb/130/Q130341/
 ---
 
 ## Q130341: Twilight Zone Screen Saver Causes GP Fault

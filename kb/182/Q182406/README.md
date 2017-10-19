@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182406: XFOR: Mail Looping When First Host Cannot Be Reached"
-permalink: kb/182/Q182406/
+permalink: /kb/182/Q182406/
 ---
 
 ## Q182406: XFOR: Mail Looping When First Host Cannot Be Reached

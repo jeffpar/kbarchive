@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175766: FIX: WAIT WINDOW NOWAIT Problem with Top-Level Forms"
-permalink: kb/175/Q175766/
+permalink: /kb/175/Q175766/
 ---
 
 ## Q175766: FIX: WAIT WINDOW NOWAIT Problem with Top-Level Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171506: FIX: Drag/Drop of ListView Control Fails"
-permalink: kb/171/Q171506/
+permalink: /kb/171/Q171506/
 ---
 
 ## Q171506: FIX: Drag/Drop of ListView Control Fails

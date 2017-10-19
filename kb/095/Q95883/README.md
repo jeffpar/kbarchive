@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95883: DEC Network Interface Card Naming Conventions"
-permalink: kb/095/Q95883/
+permalink: /kb/095/Q95883/
 ---
 
 ## Q95883: DEC Network Interface Card Naming Conventions

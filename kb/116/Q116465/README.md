@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116465: BUG: /N1 Switch Does Not Function Properly in CodeView"
-permalink: kb/116/Q116465/
+permalink: /kb/116/Q116465/
 ---
 
 ## Q116465: BUG: /N1 Switch Does Not Function Properly in CodeView

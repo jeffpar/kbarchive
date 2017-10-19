@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301054: Internet Explorer Automatic Dialing May Not Work"
-permalink: kb/301/Q301054/
+permalink: /kb/301/Q301054/
 ---
 
 ## Q301054: Internet Explorer Automatic Dialing May Not Work

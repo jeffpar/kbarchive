@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240814: ALT+PAGE DOWN and ALT+PAGE UP Change Keyboard Locale"
-permalink: kb/240/Q240814/
+permalink: /kb/240/Q240814/
 ---
 
 ## Q240814: ALT+PAGE DOWN and ALT+PAGE UP Change Keyboard Locale

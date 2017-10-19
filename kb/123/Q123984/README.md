@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123984: DNS Lookup Does not Check List of Domain Suffixes"
-permalink: kb/123/Q123984/
+permalink: /kb/123/Q123984/
 ---
 
 ## Q123984: DNS Lookup Does not Check List of Domain Suffixes

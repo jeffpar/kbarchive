@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162468: Volume Creation Date Is Not Reported Correctly from WinNT Server"
-permalink: kb/162/Q162468/
+permalink: /kb/162/Q162468/
 ---
 
 ## Q162468: Volume Creation Date Is Not Reported Correctly from WinNT Server

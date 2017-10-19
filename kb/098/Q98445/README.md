@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98445: How to Create an Index on Part of a Character Field"
-permalink: kb/098/Q98445/
+permalink: /kb/098/Q98445/
 ---
 
 ## Q98445: How to Create an Index on Part of a Character Field

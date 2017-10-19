@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175444: MSN 2.5 OEM Release Uninstall.txt File Contents"
-permalink: kb/175/Q175444/
+permalink: /kb/175/Q175444/
 ---
 
 ## Q175444: MSN 2.5 OEM Release Uninstall.txt File Contents

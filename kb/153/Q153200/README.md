@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153200: How To Determine Whether a Number is Prime"
-permalink: kb/153/Q153200/
+permalink: /kb/153/Q153200/
 ---
 
 ## Q153200: How To Determine Whether a Number is Prime

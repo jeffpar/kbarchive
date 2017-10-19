@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140041: PATCH: Visual C++ 4.0 Crash Fixes"
-permalink: kb/140/Q140041/
+permalink: /kb/140/Q140041/
 ---
 
 ## Q140041: PATCH: Visual C++ 4.0 Crash Fixes

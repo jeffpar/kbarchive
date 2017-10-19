@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166308: XCON: Exchange MTA Logs NT Event ID 51"
-permalink: kb/166/Q166308/
+permalink: /kb/166/Q166308/
 ---
 
 ## Q166308: XCON: Exchange MTA Logs NT Event ID 51

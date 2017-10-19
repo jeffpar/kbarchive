@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q19972: INFO: Jumping into the Middle of a For Loop Is Not Recommended"
-permalink: kb/019/Q19972/
+permalink: /kb/019/Q19972/
 ---
 
 ## Q19972: INFO: Jumping into the Middle of a For Loop Is Not Recommended

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136538: MSB Human: Minimum System Requirements for Macintosh"
-permalink: kb/136/Q136538/
+permalink: /kb/136/Q136538/
 ---
 
 ## Q136538: MSB Human: Minimum System Requirements for Macintosh

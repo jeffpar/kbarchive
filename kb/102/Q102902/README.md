@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102902: How to Modify the NetBEUI Frame Source Routing Bit"
-permalink: kb/102/Q102902/
+permalink: /kb/102/Q102902/
 ---
 
 ## Q102902: How to Modify the NetBEUI Frame Source Routing Bit

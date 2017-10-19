@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158742: Cannot Open Halmps.dll"
-permalink: kb/158/Q158742/
+permalink: /kb/158/Q158742/
 ---
 
 ## Q158742: Cannot Open Halmps.dll

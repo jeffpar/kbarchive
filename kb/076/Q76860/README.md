@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76860: Removing Defined Application Shortcut Key Assignment from PIF"
-permalink: kb/076/Q76860/
+permalink: /kb/076/Q76860/
 ---
 
 ## Q76860: Removing Defined Application Shortcut Key Assignment from PIF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115166: PC Forms: Spell Checking Text in an E-Form"
-permalink: kb/115/Q115166/
+permalink: /kb/115/Q115166/
 ---
 
 ## Q115166: PC Forms: Spell Checking Text in an E-Form

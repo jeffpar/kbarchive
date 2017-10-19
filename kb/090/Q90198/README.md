@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90198: WFWG Setup Updates MSCDEX and adds LANMAN10.386 for CD-ROM"
-permalink: kb/090/Q90198/
+permalink: /kb/090/Q90198/
 ---
 
 ## Q90198: WFWG Setup Updates MSCDEX and adds LANMAN10.386 for CD-ROM

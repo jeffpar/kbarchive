@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196759: WD97: All Workstations Not Using Same Preferences/Options"
-permalink: kb/196/Q196759/
+permalink: /kb/196/Q196759/
 ---
 
 ## Q196759: WD97: All Workstations Not Using Same Preferences/Options

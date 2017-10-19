@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196402: XADM: Changes Made During Move Server Process are Not Saved"
-permalink: kb/196/Q196402/
+permalink: /kb/196/Q196402/
 ---
 
 ## Q196402: XADM: Changes Made During Move Server Process are Not Saved

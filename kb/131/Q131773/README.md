@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131773: INFO: Setting Compare to Time Increases Speed of GET Command"
-permalink: kb/131/Q131773/
+permalink: /kb/131/Q131773/
 ---
 
 ## Q131773: INFO: Setting Compare to Time Increases Speed of GET Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263605: HalAssignSlotResources() Call May Not Assign Resources"
-permalink: kb/263/Q263605/
+permalink: /kb/263/Q263605/
 ---
 
 ## Q263605: HalAssignSlotResources() Call May Not Assign Resources

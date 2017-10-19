@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136458: NetBIOS Datagrams Sent to Group Names Are Not Broadcast"
-permalink: kb/136/Q136458/
+permalink: /kb/136/Q136458/
 ---
 
 ## Q136458: NetBIOS Datagrams Sent to Group Names Are Not Broadcast

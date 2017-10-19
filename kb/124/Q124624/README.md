@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124624: Text Missing in Complete Baseball and Complete Basketball"
-permalink: kb/124/Q124624/
+permalink: /kb/124/Q124624/
 ---
 
 ## Q124624: Text Missing in Complete Baseball and Complete Basketball

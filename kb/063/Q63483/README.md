@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63483: Setup Does Not Install Dot-Matrix Font Sets in Windows 3.0"
-permalink: kb/063/Q63483/
+permalink: /kb/063/Q63483/
 ---
 
 ## Q63483: Setup Does Not Install Dot-Matrix Font Sets in Windows 3.0

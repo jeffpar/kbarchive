@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63038: DEC's PCSA Disk Server and Windows 3.0"
-permalink: kb/063/Q63038/
+permalink: /kb/063/Q63038/
 ---
 
 ## Q63038: DEC's PCSA Disk Server and Windows 3.0

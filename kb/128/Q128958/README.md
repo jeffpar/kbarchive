@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128958: Mac Wkst: Using Mail Notifier and Novell NetWare 4.1"
-permalink: kb/128/Q128958/
+permalink: /kb/128/Q128958/
 ---
 
 ## Q128958: Mac Wkst: Using Mail Notifier and Novell NetWare 4.1

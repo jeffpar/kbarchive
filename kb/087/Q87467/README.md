@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87467: PC DB: What the NETWORK.GLB File Is Used For"
-permalink: kb/087/Q87467/
+permalink: /kb/087/Q87467/
 ---
 
 ## Q87467: PC DB: What the NETWORK.GLB File Is Used For

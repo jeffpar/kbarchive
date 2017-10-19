@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248886: &quot;Fatal Exception 0E&quot; Error in IFSMGR When Starting Windows 95"
-permalink: kb/248/Q248886/
+permalink: /kb/248/Q248886/
 ---
 
 ## Q248886: &quot;Fatal Exception 0E&quot; Error in IFSMGR When Starting Windows 95

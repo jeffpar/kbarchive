@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235741: SMSINST: Installer App Calls CTL3DV2.DLL on NTW Unchecked"
-permalink: kb/235/Q235741/
+permalink: /kb/235/Q235741/
 ---
 
 ## Q235741: SMSINST: Installer App Calls CTL3DV2.DLL on NTW Unchecked

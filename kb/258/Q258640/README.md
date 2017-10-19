@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258640: Baseball 2001: Slow Frame Rate and Poor Graphics Performance Dur"
-permalink: kb/258/Q258640/
+permalink: /kb/258/Q258640/
 ---
 
 ## Q258640: Baseball 2001: Slow Frame Rate and Poor Graphics Performance Dur

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154648: FIX: Toolbars Broken in ENROLL Tutorial Samples"
-permalink: kb/154/Q154648/
+permalink: /kb/154/Q154648/
 ---
 
 ## Q154648: FIX: Toolbars Broken in ENROLL Tutorial Samples

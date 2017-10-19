@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166721: FIX: Compiler Error C2784 o"
-permalink: kb/166/Q166721/
+permalink: /kb/166/Q166721/
 ---
 
 ## Q166721: FIX: Compiler Error C2784 o

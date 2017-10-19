@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94131: MemMaker Values for Memory Change Don't Match"
-permalink: kb/094/Q94131/
+permalink: /kb/094/Q94131/
 ---
 
 ## Q94131: MemMaker Values for Memory Change Don't Match

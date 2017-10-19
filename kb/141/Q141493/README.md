@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141493: DOC: &quot;How to Use Debug Heap from C++&quot; Documented Incorrectly"
-permalink: kb/141/Q141493/
+permalink: /kb/141/Q141493/
 ---
 
 ## Q141493: DOC: &quot;How to Use Debug Heap from C++&quot; Documented Incorrectly

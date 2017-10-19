@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216216: DOC: DataGrid SizeMode Incorrectly Documented -dbgNumberOfColumn"
-permalink: kb/216/Q216216/
+permalink: /kb/216/Q216216/
 ---
 
 ## Q216216: DOC: DataGrid SizeMode Incorrectly Documented -dbgNumberOfColumn

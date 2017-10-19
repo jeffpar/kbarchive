@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155656: Monster Truck Madness: Some Trucks Crash More Often than Other"
-permalink: kb/155/Q155656/
+permalink: /kb/155/Q155656/
 ---
 
 ## Q155656: Monster Truck Madness: Some Trucks Crash More Often than Other

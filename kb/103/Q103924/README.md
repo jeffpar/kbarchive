@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103924: Word for Windows Print to File May Be Ignored by Windows NT"
-permalink: kb/103/Q103924/
+permalink: /kb/103/Q103924/
 ---
 
 ## Q103924: Word for Windows Print to File May Be Ignored by Windows NT

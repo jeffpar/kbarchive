@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297774: Windows 95 Dial-Up Networking 1.4 Upgrade Release Notes"
-permalink: kb/297/Q297774/
+permalink: /kb/297/Q297774/
 ---
 
 ## Q297774: Windows 95 Dial-Up Networking 1.4 Upgrade Release Notes

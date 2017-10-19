@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176988: Programs Folder Empty in Windows NT 4.0 with System Policies"
-permalink: kb/176/Q176988/
+permalink: /kb/176/Q176988/
 ---
 
 ## Q176988: Programs Folder Empty in Windows NT 4.0 with System Policies

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214656: Absolute Horizontal Move Command Handled Incorrectly if PDT Used"
-permalink: kb/214/Q214656/
+permalink: /kb/214/Q214656/
 ---
 
 ## Q214656: Absolute Horizontal Move Command Handled Incorrectly if PDT Used

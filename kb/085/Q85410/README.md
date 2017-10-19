@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85410: MS-DOS 5.0a Upgrade README.TXT: Memory Management"
-permalink: kb/085/Q85410/
+permalink: /kb/085/Q85410/
 ---
 
 ## Q85410: MS-DOS 5.0a Upgrade README.TXT: Memory Management

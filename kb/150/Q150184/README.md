@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150184: FIX: Unloading a Form After Assigning Text Property Causes GPF"
-permalink: kb/150/Q150184/
+permalink: /kb/150/Q150184/
 ---
 
 ## Q150184: FIX: Unloading a Form After Assigning Text Property Causes GPF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178732: WD97: &quot;Word Cannot Find or Run the Application&quot; with EZ-Photo"
-permalink: kb/178/Q178732/
+permalink: /kb/178/Q178732/
 ---
 
 ## Q178732: WD97: &quot;Word Cannot Find or Run the Application&quot; with EZ-Photo

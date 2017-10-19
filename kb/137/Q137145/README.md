@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137145: Help Buttons Disappear After Printing Network Services"
-permalink: kb/137/Q137145/
+permalink: /kb/137/Q137145/
 ---
 
 ## Q137145: Help Buttons Disappear After Printing Network Services

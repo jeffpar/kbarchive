@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146478: XCLN: Exchange Requires Client for Microsoft Networks"
-permalink: kb/146/Q146478/
+permalink: /kb/146/Q146478/
 ---
 
 ## Q146478: XCLN: Exchange Requires Client for Microsoft Networks

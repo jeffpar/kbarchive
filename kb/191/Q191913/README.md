@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191913: XCLN: Can't Send Internet/SMTP Mail with MS Mail Postoffice"
-permalink: kb/191/Q191913/
+permalink: /kb/191/Q191913/
 ---
 
 ## Q191913: XCLN: Can't Send Internet/SMTP Mail with MS Mail Postoffice

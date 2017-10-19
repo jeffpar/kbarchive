@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305359: Incorrect Content Length May Cause Web Services to Fail"
-permalink: kb/305/Q305359/
+permalink: /kb/305/Q305359/
 ---
 
 ## Q305359: Incorrect Content Length May Cause Web Services to Fail

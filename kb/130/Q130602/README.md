@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130602: FIX: Can't Enter Picture Property for List Box or Combo Box"
-permalink: kb/130/Q130602/
+permalink: /kb/130/Q130602/
 ---
 
 ## Q130602: FIX: Can't Enter Picture Property for List Box or Combo Box

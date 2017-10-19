@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168007: FIX: Remote Debugging Very Slow in Visual C++ Version 5.0"
-permalink: kb/168/Q168007/
+permalink: /kb/168/Q168007/
 ---
 
 ## Q168007: FIX: Remote Debugging Very Slow in Visual C++ Version 5.0

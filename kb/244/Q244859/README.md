@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244859: WD97: Nothing Happens When You Click Web Page Preview"
-permalink: kb/244/Q244859/
+permalink: /kb/244/Q244859/
 ---
 
 ## Q244859: WD97: Nothing Happens When You Click Web Page Preview

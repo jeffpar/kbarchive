@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135920: Canon BubbleJet Printers Unavailable for Macintosh Clients"
-permalink: kb/135/Q135920/
+permalink: /kb/135/Q135920/
 ---
 
 ## Q135920: Canon BubbleJet Printers Unavailable for Macintosh Clients

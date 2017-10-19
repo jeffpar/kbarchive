@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88464: Golf Mouse Cursor Not Turning into Hourglass under Windows 3.0"
-permalink: kb/088/Q88464/
+permalink: /kb/088/Q88464/
 ---
 
 ## Q88464: Golf Mouse Cursor Not Turning into Hourglass under Windows 3.0

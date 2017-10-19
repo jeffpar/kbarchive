@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166191: Protect It! Everything Restricted if You Use McAfee WebScan"
-permalink: kb/166/Q166191/
+permalink: /kb/166/Q166191/
 ---
 
 ## Q166191: Protect It! Everything Restricted if You Use McAfee WebScan

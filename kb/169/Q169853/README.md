@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169853: 0Ds Inserted When Transparency Is ASCII Is Selected"
-permalink: kb/169/Q169853/
+permalink: /kb/169/Q169853/
 ---
 
 ## Q169853: 0Ds Inserted When Transparency Is ASCII Is Selected

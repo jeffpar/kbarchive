@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279524: MSN Companion setup does not connect to toll-free number"
-permalink: kb/279/Q279524/
+permalink: /kb/279/Q279524/
 ---
 
 ## Q279524: MSN Companion setup does not connect to toll-free number

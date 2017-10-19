@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199003: PRB: Visual InterDev Permissions for Users Who Are Not Local Adm"
-permalink: kb/199/Q199003/
+permalink: /kb/199/Q199003/
 ---
 
 ## Q199003: PRB: Visual InterDev Permissions for Users Who Are Not Local Adm

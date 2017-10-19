@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254412: Err Msg: Msvcp60.dll File Is Linked to Missing Export Msvcrt.dll"
-permalink: kb/254/Q254412/
+permalink: /kb/254/Q254412/
 ---
 
 ## Q254412: Err Msg: Msvcp60.dll File Is Linked to Missing Export Msvcrt.dll

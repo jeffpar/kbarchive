@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136508: Filtered Events For Server Tools Event Viewer Not Saved"
-permalink: kb/136/Q136508/
+permalink: /kb/136/Q136508/
 ---
 
 ## Q136508: Filtered Events For Server Tools Event Viewer Not Saved

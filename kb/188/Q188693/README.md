@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188693: SNA Server Version 4.0 Service Pack 1 Updated Help File"
-permalink: kb/188/Q188693/
+permalink: /kb/188/Q188693/
 ---
 
 ## Q188693: SNA Server Version 4.0 Service Pack 1 Updated Help File

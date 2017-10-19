@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104248: HOW TO: Use #pragma init_seg to Control Static Construction"
-permalink: kb/104/Q104248/
+permalink: /kb/104/Q104248/
 ---
 
 ## Q104248: HOW TO: Use #pragma init_seg to Control Static Construction

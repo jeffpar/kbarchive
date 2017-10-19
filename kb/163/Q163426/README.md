@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163426: Kids Plus!: Play It! Does not Play on Mono Sound Cards"
-permalink: kb/163/Q163426/
+permalink: /kb/163/Q163426/
 ---
 
 ## Q163426: Kids Plus!: Play It! Does not Play on Mono Sound Cards

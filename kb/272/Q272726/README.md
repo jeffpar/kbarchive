@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272726: XADM: Administrators Can Browse User List of Untrusted Domains"
-permalink: kb/272/Q272726/
+permalink: /kb/272/Q272726/
 ---
 
 ## Q272726: XADM: Administrators Can Browse User List of Untrusted Domains

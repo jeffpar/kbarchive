@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78393: FIX: MASM 6.0 Always Uses EAX Register with BSWAP"
-permalink: kb/078/Q78393/
+permalink: /kb/078/Q78393/
 ---
 
 ## Q78393: FIX: MASM 6.0 Always Uses EAX Register with BSWAP

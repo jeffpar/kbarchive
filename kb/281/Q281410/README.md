@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281410: Combat Flight Simulator 2: Aircraft Appear Smaller"
-permalink: kb/281/Q281410/
+permalink: /kb/281/Q281410/
 ---
 
 ## Q281410: Combat Flight Simulator 2: Aircraft Appear Smaller

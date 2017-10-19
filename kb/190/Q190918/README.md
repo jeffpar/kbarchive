@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190918: XADM: Eseutil Fails with JetDuplicateKey Error"
-permalink: kb/190/Q190918/
+permalink: /kb/190/Q190918/
 ---
 
 ## Q190918: XADM: Eseutil Fails with JetDuplicateKey Error

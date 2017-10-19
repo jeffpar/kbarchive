@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197803: WD97: High Network Traffic When Using Large Tables (Novell)"
-permalink: kb/197/Q197803/
+permalink: /kb/197/Q197803/
 ---
 
 ## Q197803: WD97: High Network Traffic When Using Large Tables (Novell)

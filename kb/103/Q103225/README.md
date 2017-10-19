@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103225: SmallCap.exe - Process Nonclient Msgs w/Msg Blaster Ctrl"
-permalink: kb/103/Q103225/
+permalink: /kb/103/Q103225/
 ---
 
 ## Q103225: SmallCap.exe - Process Nonclient Msgs w/Msg Blaster Ctrl

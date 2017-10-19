@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250521: XADM: How to Prevent Sending SMTP Mail to a Specific Address"
-permalink: kb/250/Q250521/
+permalink: /kb/250/Q250521/
 ---
 
 ## Q250521: XADM: How to Prevent Sending SMTP Mail to a Specific Address

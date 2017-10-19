@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192583: XADM: IMS Incorrectly Archives Message If ResolveP2 Is On"
-permalink: kb/192/Q192583/
+permalink: /kb/192/Q192583/
 ---
 
 ## Q192583: XADM: IMS Incorrectly Archives Message If ResolveP2 Is On

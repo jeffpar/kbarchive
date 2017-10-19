@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180865: Print Server Adds Space After Form Feed"
-permalink: kb/180/Q180865/
+permalink: /kb/180/Q180865/
 ---
 
 ## Q180865: Print Server Adds Space After Form Feed

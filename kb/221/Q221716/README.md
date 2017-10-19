@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221716: FIX: Component Gallery Not Refreshing Dynamic Web View"
-permalink: kb/221/Q221716/
+permalink: /kb/221/Q221716/
 ---
 
 ## Q221716: FIX: Component Gallery Not Refreshing Dynamic Web View

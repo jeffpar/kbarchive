@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243421: TAPI 2.1 Is Not Installed on Backup Domain Controllers"
-permalink: kb/243/Q243421/
+permalink: /kb/243/Q243421/
 ---
 
 ## Q243421: TAPI 2.1 Is Not Installed on Backup Domain Controllers

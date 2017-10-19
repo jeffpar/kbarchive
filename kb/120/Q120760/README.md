@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120760: CA-ABSTRACT Outlines Don't Print to Remote Printers"
-permalink: kb/120/Q120760/
+permalink: /kb/120/Q120760/
 ---
 
 ## Q120760: CA-ABSTRACT Outlines Don't Print to Remote Printers

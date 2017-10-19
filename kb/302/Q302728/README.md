@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302728: &quot;View Message Source&quot; Has No Effect On Unprepared Message In MSN"
-permalink: kb/302/Q302728/
+permalink: /kb/302/Q302728/
 ---
 
 ## Q302728: &quot;View Message Source&quot; Has No Effect On Unprepared Message In MSN

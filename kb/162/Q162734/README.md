@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162734: OL97: Cannot Access Offline Folders When Working Offline"
-permalink: kb/162/Q162734/
+permalink: /kb/162/Q162734/
 ---
 
 ## Q162734: OL97: Cannot Access Offline Folders When Working Offline

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140642: Err Msg: Unexpected DOS Error 11 Using Server Tools"
-permalink: kb/140/Q140642/
+permalink: /kb/140/Q140642/
 ---
 
 ## Q140642: Err Msg: Unexpected DOS Error 11 Using Server Tools

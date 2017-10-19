@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155415: PCMCIA.SYS Fails to Load w/ Cirrus Logic CL-PD6730 Controller"
-permalink: kb/155/Q155415/
+permalink: /kb/155/Q155415/
 ---
 
 ## Q155415: PCMCIA.SYS Fails to Load w/ Cirrus Logic CL-PD6730 Controller

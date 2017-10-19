@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270834: ELL: Input Boxes Do Not Appear in Dictation Exercises"
-permalink: kb/270/Q270834/
+permalink: /kb/270/Q270834/
 ---
 
 ## Q270834: ELL: Input Boxes Do Not Appear in Dictation Exercises

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170146: HOWTO: Access ImageList from TreeView &amp; ListView Control"
-permalink: kb/170/Q170146/
+permalink: /kb/170/Q170146/
 ---
 
 ## Q170146: HOWTO: Access ImageList from TreeView &amp; ListView Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307481: Multiple Instances of CPI-C App. Fail on Terminal Services"
-permalink: kb/307/Q307481/
+permalink: /kb/307/Q307481/
 ---
 
 ## Q307481: Multiple Instances of CPI-C App. Fail on Terminal Services

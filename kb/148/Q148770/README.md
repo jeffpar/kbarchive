@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148770: PC DirSync: IMPORT -S Hangs Computer During Dir-Sync"
-permalink: kb/148/Q148770/
+permalink: /kb/148/Q148770/
 ---
 
 ## Q148770: PC DirSync: IMPORT -S Hangs Computer During Dir-Sync

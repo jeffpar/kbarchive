@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249828: Unable to Log on to Domain After Applying SP4 or Later"
-permalink: kb/249/Q249828/
+permalink: /kb/249/Q249828/
 ---
 
 ## Q249828: Unable to Log on to Domain After Applying SP4 or Later

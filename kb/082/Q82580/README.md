@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82580: Hollywood Version 1.0 Quits During Show Sample Template"
-permalink: kb/082/Q82580/
+permalink: /kb/082/Q82580/
 ---
 
 ## Q82580: Hollywood Version 1.0 Quits During Show Sample Template

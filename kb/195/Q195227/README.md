@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195227: SP4 Security Configuration Manager Available for Download"
-permalink: kb/195/Q195227/
+permalink: /kb/195/Q195227/
 ---
 
 ## Q195227: SP4 Security Configuration Manager Available for Download

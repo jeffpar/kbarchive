@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183754: DMM: Cannot Send to Mailing Service"
-permalink: kb/183/Q183754/
+permalink: /kb/183/Q183754/
 ---
 
 ## Q183754: DMM: Cannot Send to Mailing Service

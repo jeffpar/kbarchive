@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296091: PRB: MFC AppWizard Doesn't Show Oracle Synonyms w/MS ODBC Driver"
-permalink: kb/296/Q296091/
+permalink: /kb/296/Q296091/
 ---
 
 ## Q296091: PRB: MFC AppWizard Doesn't Show Oracle Synonyms w/MS ODBC Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130051: Use CHEV Command for Changing Mode of DOS/V"
-permalink: kb/130/Q130051/
+permalink: /kb/130/Q130051/
 ---
 
 ## Q130051: Use CHEV Command for Changing Mode of DOS/V

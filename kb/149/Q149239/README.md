@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149239: SNA Server Distributed Link Service Supports IP Address"
-permalink: kb/149/Q149239/
+permalink: /kb/149/Q149239/
 ---
 
 ## Q149239: SNA Server Distributed Link Service Supports IP Address

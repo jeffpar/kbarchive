@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231521: MapPoint 2000: Unexpected Data Is Exported to Excel"
-permalink: kb/231/Q231521/
+permalink: /kb/231/Q231521/
 ---
 
 ## Q231521: MapPoint 2000: Unexpected Data Is Exported to Excel

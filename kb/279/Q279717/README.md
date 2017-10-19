@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279717: Memory Leak in Db2serv.exe"
-permalink: kb/279/Q279717/
+permalink: /kb/279/Q279717/
 ---
 
 ## Q279717: Memory Leak in Db2serv.exe

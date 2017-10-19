@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77904: DOCERR: User Must Execute &quot;CMD&quot; in PAUSE Statement Under OS/2"
-permalink: kb/077/Q77904/
+permalink: /kb/077/Q77904/
 ---
 
 ## Q77904: DOCERR: User Must Execute &quot;CMD&quot; in PAUSE Statement Under OS/2

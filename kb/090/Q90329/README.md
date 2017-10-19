@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90329: Cannot Assign Local Drives to Network Drive in File Manager"
-permalink: kb/090/Q90329/
+permalink: /kb/090/Q90329/
 ---
 
 ## Q90329: Cannot Assign Local Drives to Network Drive in File Manager

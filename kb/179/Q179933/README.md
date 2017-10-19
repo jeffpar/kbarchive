@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179933: Bookshelf 95: How to Add Define to the Word 97 Shortcut Menu"
-permalink: kb/179/Q179933/
+permalink: /kb/179/Q179933/
 ---
 
 ## Q179933: Bookshelf 95: How to Add Define to the Word 97 Shortcut Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254428: MapPoint 2001: Draw Object Hides Existing Pushpins on the Map"
-permalink: kb/254/Q254428/
+permalink: /kb/254/Q254428/
 ---
 
 ## Q254428: MapPoint 2001: Draw Object Hides Existing Pushpins on the Map

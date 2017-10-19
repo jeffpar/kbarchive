@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163294: Exchange MTA Build Numbers"
-permalink: kb/163/Q163294/
+permalink: /kb/163/Q163294/
 ---
 
 ## Q163294: Exchange MTA Build Numbers

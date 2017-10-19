@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195660: WD97: How to Remove Footnote/Endnote Separators (Lines)"
-permalink: kb/195/Q195660/
+permalink: /kb/195/Q195660/
 ---
 
 ## Q195660: WD97: How to Remove Footnote/Endnote Separators (Lines)

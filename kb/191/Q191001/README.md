@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191001: BUG: PDW May Handle .REG Files Incorrectly"
-permalink: kb/191/Q191001/
+permalink: /kb/191/Q191001/
 ---
 
 ## Q191001: BUG: PDW May Handle .REG Files Incorrectly

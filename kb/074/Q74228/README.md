@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74228: Calendar Alarm Option Does Not Work in MS-DOS Apps"
-permalink: kb/074/Q74228/
+permalink: /kb/074/Q74228/
 ---
 
 ## Q74228: Calendar Alarm Option Does Not Work in MS-DOS Apps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93919: FILE: New SHED.EXE Preserves Hot Spot Information"
-permalink: kb/093/Q93919/
+permalink: /kb/093/Q93919/
 ---
 
 ## Q93919: FILE: New SHED.EXE Preserves Hot Spot Information

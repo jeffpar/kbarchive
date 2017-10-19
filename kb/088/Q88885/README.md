@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88885: INFO: Using the IIF Function in FoxBASE+ or FoxPro"
-permalink: kb/088/Q88885/
+permalink: /kb/088/Q88885/
 ---
 
 ## Q88885: INFO: Using the IIF Function in FoxBASE+ or FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148972: INFO: How SNA Server Determines Max BTU Over 802.2 DLC"
-permalink: kb/148/Q148972/
+permalink: /kb/148/Q148972/
 ---
 
 ## Q148972: INFO: How SNA Server Determines Max BTU Over 802.2 DLC

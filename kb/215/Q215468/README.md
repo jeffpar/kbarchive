@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215468: SMS: Systems Management Server 2.0 Release Notes"
-permalink: kb/215/Q215468/
+permalink: /kb/215/Q215468/
 ---
 
 ## Q215468: SMS: Systems Management Server 2.0 Release Notes

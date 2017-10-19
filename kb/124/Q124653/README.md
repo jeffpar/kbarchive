@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124653: Error Reading WINS Event Detail on a Computer Without WINS"
-permalink: kb/124/Q124653/
+permalink: /kb/124/Q124653/
 ---
 
 ## Q124653: Error Reading WINS Event Detail on a Computer Without WINS

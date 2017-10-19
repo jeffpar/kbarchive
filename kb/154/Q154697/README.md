@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154697: Some NE2000 Adapters on Windows 95 Cause Disk or Network Error"
-permalink: kb/154/Q154697/
+permalink: /kb/154/Q154697/
 ---
 
 ## Q154697: Some NE2000 Adapters on Windows 95 Cause Disk or Network Error

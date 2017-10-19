@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172226: SMS: Applying SMS 1.2 SP2 May Overwrite Some SQL Server Files"
-permalink: kb/172/Q172226/
+permalink: /kb/172/Q172226/
 ---
 
 ## Q172226: SMS: Applying SMS 1.2 SP2 May Overwrite Some SQL Server Files

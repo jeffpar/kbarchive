@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192774: Stop 0x0000000A in Tcpip.sys Processing an ICMP Packet"
-permalink: kb/192/Q192774/
+permalink: /kb/192/Q192774/
 ---
 
 ## Q192774: Stop 0x0000000A in Tcpip.sys Processing an ICMP Packet

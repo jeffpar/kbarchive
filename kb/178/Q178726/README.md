@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178726: PRB: Error Message &quot;User-defined Type Not Defined&quot;"
-permalink: kb/178/Q178726/
+permalink: /kb/178/Q178726/
 ---
 
 ## Q178726: PRB: Error Message &quot;User-defined Type Not Defined&quot;

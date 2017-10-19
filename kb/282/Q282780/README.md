@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282780: XCON:  MTA Database Format and Structure"
-permalink: kb/282/Q282780/
+permalink: /kb/282/Q282780/
 ---
 
 ## Q282780: XCON:  MTA Database Format and Structure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245164: Imaging Program May Not Load Some TIFF Files"
-permalink: kb/245/Q245164/
+permalink: /kb/245/Q245164/
 ---
 
 ## Q245164: Imaging Program May Not Load Some TIFF Files

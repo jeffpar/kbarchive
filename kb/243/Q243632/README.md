@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243632: XCON: Maximum X.400 Connectors on an Exchange Server Computer"
-permalink: kb/243/Q243632/
+permalink: /kb/243/Q243632/
 ---
 
 ## Q243632: XCON: Maximum X.400 Connectors on an Exchange Server Computer

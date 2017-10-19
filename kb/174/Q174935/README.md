@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174935: SMS: &quot;Error 5 Access Is Denied&quot; When Using Rservice.exe"
-permalink: kb/174/Q174935/
+permalink: /kb/174/Q174935/
 ---
 
 ## Q174935: SMS: &quot;Error 5 Access Is Denied&quot; When Using Rservice.exe

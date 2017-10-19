@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240259: Microsoft Computer Dictionary 4th Ed. Comments and Corrections"
-permalink: kb/240/Q240259/
+permalink: /kb/240/Q240259/
 ---
 
 ## Q240259: Microsoft Computer Dictionary 4th Ed. Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168655: List of Bugs Fixed in SNA Server 3.0 Service Pack 2"
-permalink: kb/168/Q168655/
+permalink: /kb/168/Q168655/
 ---
 
 ## Q168655: List of Bugs Fixed in SNA Server 3.0 Service Pack 2

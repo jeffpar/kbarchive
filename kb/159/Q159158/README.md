@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159158: Cannot Answer Incoming Call in Microsoft Phone"
-permalink: kb/159/Q159158/
+permalink: /kb/159/Q159158/
 ---
 
 ## Q159158: Cannot Answer Incoming Call in Microsoft Phone

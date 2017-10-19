@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138520: HOWTO: Use an Ampersand (&amp;) to Suppress Sign Extension"
-permalink: kb/138/Q138520/
+permalink: /kb/138/Q138520/
 ---
 
 ## Q138520: HOWTO: Use an Ampersand (&amp;) to Suppress Sign Extension

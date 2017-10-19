@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262097: XIMS: Internet Mail Service Extension Messg. Text Append/Prepend"
-permalink: kb/262/Q262097/
+permalink: /kb/262/Q262097/
 ---
 
 ## Q262097: XIMS: Internet Mail Service Extension Messg. Text Append/Prepend

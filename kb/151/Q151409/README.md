@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151409: RUI_BID Improperly Handles Lua_Peek_Data Causing Data Truncation"
-permalink: kb/151/Q151409/
+permalink: /kb/151/Q151409/
 ---
 
 ## Q151409: RUI_BID Improperly Handles Lua_Peek_Data Causing Data Truncation

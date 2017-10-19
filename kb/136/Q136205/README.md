@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136205: Results Vary for Reminders Set 2 Minutes or Less"
-permalink: kb/136/Q136205/
+permalink: /kb/136/Q136205/
 ---
 
 ## Q136205: Results Vary for Reminders Set 2 Minutes or Less

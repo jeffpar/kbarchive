@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248743: XFOR: How to Migrate Messages from GroupWise 5.x to Exchange"
-permalink: kb/248/Q248743/
+permalink: /kb/248/Q248743/
 ---
 
 ## Q248743: XFOR: How to Migrate Messages from GroupWise 5.x to Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104617: HOW TO: Pass a short from C to MASM by Value &amp; Returning short"
-permalink: kb/104/Q104617/
+permalink: /kb/104/Q104617/
 ---
 
 ## Q104617: HOW TO: Pass a short from C to MASM by Value &amp; Returning short

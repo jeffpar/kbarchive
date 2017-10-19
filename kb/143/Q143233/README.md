@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143233: XADM: Command-Line Parameters for Edbutil.exe"
-permalink: kb/143/Q143233/
+permalink: /kb/143/Q143233/
 ---
 
 ## Q143233: XADM: Command-Line Parameters for Edbutil.exe

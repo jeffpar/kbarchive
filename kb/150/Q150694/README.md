@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150694: Gardening/Do-It- Yourself: Can't Open Read Me from Help Menu"
-permalink: kb/150/Q150694/
+permalink: /kb/150/Q150694/
 ---
 
 ## Q150694: Gardening/Do-It- Yourself: Can't Open Read Me from Help Menu

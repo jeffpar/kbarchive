@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103386: Qemm 7.0 Causes SWITCHES Prompt to Appear During Startup"
-permalink: kb/103/Q103386/
+permalink: /kb/103/Q103386/
 ---
 
 ## Q103386: Qemm 7.0 Causes SWITCHES Prompt to Appear During Startup

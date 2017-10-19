@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83194: Windows 3.1 Setup Information"
-permalink: kb/083/Q83194/
+permalink: /kb/083/Q83194/
 ---
 
 ## Q83194: Windows 3.1 Setup Information

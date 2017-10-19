@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124897: FIX: Cursor Library Returns Duplicate Row in Asynchronous Mode"
-permalink: kb/124/Q124897/
+permalink: /kb/124/Q124897/
 ---
 
 ## Q124897: FIX: Cursor Library Returns Duplicate Row in Asynchronous Mode

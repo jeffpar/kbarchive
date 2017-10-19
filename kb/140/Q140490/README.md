@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140490: DOCERR: Help Lists Updatable Property for DBGETPROP in Error"
-permalink: kb/140/Q140490/
+permalink: /kb/140/Q140490/
 ---
 
 ## Q140490: DOCERR: Help Lists Updatable Property for DBGETPROP in Error

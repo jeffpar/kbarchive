@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145744: PRB: Client Installed from ReadOnly Server Won't Start"
-permalink: kb/145/Q145744/
+permalink: /kb/145/Q145744/
 ---
 
 ## Q145744: PRB: Client Installed from ReadOnly Server Won't Start

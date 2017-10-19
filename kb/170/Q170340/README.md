@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170340: FIX: Debugging ActiveX Server in IDE Causes Application Error"
-permalink: kb/170/Q170340/
+permalink: /kb/170/Q170340/
 ---
 
 ## Q170340: FIX: Debugging ActiveX Server in IDE Causes Application Error

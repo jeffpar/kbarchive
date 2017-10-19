@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198295: WD97: How to Read Postal Bar Codes"
-permalink: kb/198/Q198295/
+permalink: /kb/198/Q198295/
 ---
 
 ## Q198295: WD97: How to Read Postal Bar Codes

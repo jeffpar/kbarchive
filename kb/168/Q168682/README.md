@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168682: SMS: Usage of Sendcode.exe and Its Service Codes"
-permalink: kb/168/Q168682/
+permalink: /kb/168/Q168682/
 ---
 
 ## Q168682: SMS: Usage of Sendcode.exe and Its Service Codes

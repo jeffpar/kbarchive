@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69080: Simulating Drag-and-Drop Interface for Custom Control"
-permalink: kb/069/Q69080/
+permalink: /kb/069/Q69080/
 ---
 
 ## Q69080: Simulating Drag-and-Drop Interface for Custom Control

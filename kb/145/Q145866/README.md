@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145866: Scenes 1.0: Genigraphics Scanning Special Offer Expired"
-permalink: kb/145/Q145866/
+permalink: /kb/145/Q145866/
 ---
 
 ## Q145866: Scenes 1.0: Genigraphics Scanning Special Offer Expired

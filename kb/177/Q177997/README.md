@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177997: HOWTO: Set the FillColor in the MS Chart Control at Run-time"
-permalink: kb/177/Q177997/
+permalink: /kb/177/Q177997/
 ---
 
 ## Q177997: HOWTO: Set the FillColor in the MS Chart Control at Run-time

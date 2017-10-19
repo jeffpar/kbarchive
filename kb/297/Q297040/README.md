@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297040: Windows May Hang When Attempting to Establish a TCP Connection"
-permalink: kb/297/Q297040/
+permalink: /kb/297/Q297040/
 ---
 
 ## Q297040: Windows May Hang When Attempting to Establish a TCP Connection

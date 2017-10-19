@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291826: PRB: 16-Bit SNA Client Fails Under Windows Millennium Edition"
-permalink: kb/291/Q291826/
+permalink: /kb/291/Q291826/
 ---
 
 ## Q291826: PRB: 16-Bit SNA Client Fails Under Windows Millennium Edition

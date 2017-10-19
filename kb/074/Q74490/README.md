@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74490: PRB: Application Not Recognized as Compatible with Windows 3.x"
-permalink: kb/074/Q74490/
+permalink: /kb/074/Q74490/
 ---
 
 ## Q74490: PRB: Application Not Recognized as Compatible with Windows 3.x

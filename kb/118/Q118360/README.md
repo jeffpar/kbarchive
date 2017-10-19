@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118360: HP ColorSmart Not Directly Supported in Windows NT"
-permalink: kb/118/Q118360/
+permalink: /kb/118/Q118360/
 ---
 
 ## Q118360: HP ColorSmart Not Directly Supported in Windows NT

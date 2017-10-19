@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69540: JMP to a Far Address Lists Segment First in Listing File"
-permalink: kb/069/Q69540/
+permalink: /kb/069/Q69540/
 ---
 
 ## Q69540: JMP to a Far Address Lists Segment First in Listing File

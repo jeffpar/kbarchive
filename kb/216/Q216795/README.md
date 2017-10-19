@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216795: Semaphore Error After Disabling Write Behind Caching"
-permalink: kb/216/Q216795/
+permalink: /kb/216/Q216795/
 ---
 
 ## Q216795: Semaphore Error After Disabling Write Behind Caching

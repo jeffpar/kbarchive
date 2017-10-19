@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164235: WD97: Error - Cyclic References Of Projects Not Allowed"
-permalink: kb/164/Q164235/
+permalink: /kb/164/Q164235/
 ---
 
 ## Q164235: WD97: Error - Cyclic References Of Projects Not Allowed

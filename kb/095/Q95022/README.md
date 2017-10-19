@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95022: INF: ODBC Transaction Isolation Levels"
-permalink: kb/095/Q95022/
+permalink: /kb/095/Q95022/
 ---
 
 ## Q95022: INF: ODBC Transaction Isolation Levels

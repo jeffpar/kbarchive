@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250415: SMS: Remote Control May Not Work for Component Servers"
-permalink: kb/250/Q250415/
+permalink: /kb/250/Q250415/
 ---
 
 ## Q250415: SMS: Remote Control May Not Work for Component Servers

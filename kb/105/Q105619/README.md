@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105619: MS-DOS 6.2 Step-Up Directory Listing for 5.25-Inch 1.2 MB Set"
-permalink: kb/105/Q105619/
+permalink: /kb/105/Q105619/
 ---
 
 ## Q105619: MS-DOS 6.2 Step-Up Directory Listing for 5.25-Inch 1.2 MB Set

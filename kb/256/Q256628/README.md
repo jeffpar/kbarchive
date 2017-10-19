@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256628: How to Install Clustering on a SCSI IBM Server"
-permalink: kb/256/Q256628/
+permalink: /kb/256/Q256628/
 ---
 
 ## Q256628: How to Install Clustering on a SCSI IBM Server

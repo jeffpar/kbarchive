@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81297: Toshiba T3100/10 /20 BIOS Required to Work with Windows 3.0"
-permalink: kb/081/Q81297/
+permalink: /kb/081/Q81297/
 ---
 
 ## Q81297: Toshiba T3100/10 /20 BIOS Required to Work with Windows 3.0

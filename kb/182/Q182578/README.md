@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182578: MC_CONFIRMED Stops Following what_rcvd=AP_CONFIRM_DEALLOCATE"
-permalink: kb/182/Q182578/
+permalink: /kb/182/Q182578/
 ---
 
 ## Q182578: MC_CONFIRMED Stops Following what_rcvd=AP_CONFIRM_DEALLOCATE

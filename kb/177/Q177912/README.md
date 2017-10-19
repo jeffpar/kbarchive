@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177912: FIX: Access Violation When Calling COleVariant::Clear()"
-permalink: kb/177/Q177912/
+permalink: /kb/177/Q177912/
 ---
 
 ## Q177912: FIX: Access Violation When Calling COleVariant::Clear()

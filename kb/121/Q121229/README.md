@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121229: Norton Antivirus Causes Windows 95 to Hang on Exit"
-permalink: kb/121/Q121229/
+permalink: /kb/121/Q121229/
 ---
 
 ## Q121229: Norton Antivirus Causes Windows 95 to Hang on Exit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132763: DISPLAY Command in Login Script Displays Incorrect Characters"
-permalink: kb/132/Q132763/
+permalink: /kb/132/Q132763/
 ---
 
 ## Q132763: DISPLAY Command in Login Script Displays Incorrect Characters

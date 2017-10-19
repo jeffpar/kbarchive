@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131419: How to Gain Keyboard Access to Extended Characters"
-permalink: kb/131/Q131419/
+permalink: /kb/131/Q131419/
 ---
 
 ## Q131419: How to Gain Keyboard Access to Extended Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128358: PC DB: Err Msg: Program Is Incompatible with the Postoffice"
-permalink: kb/128/Q128358/
+permalink: /kb/128/Q128358/
 ---
 
 ## Q128358: PC DB: Err Msg: Program Is Incompatible with the Postoffice

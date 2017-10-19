@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173916: WD97: Inserting or Pasting over Selection Retains Hyperlink"
-permalink: kb/173/Q173916/
+permalink: /kb/173/Q173916/
 ---
 
 ## Q173916: WD97: Inserting or Pasting over Selection Retains Hyperlink

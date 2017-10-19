@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161797: BUG: Grid Builder Inserts Incorrect Column Headings in Grid"
-permalink: kb/161/Q161797/
+permalink: /kb/161/Q161797/
 ---
 
 ## Q161797: BUG: Grid Builder Inserts Incorrect Column Headings in Grid

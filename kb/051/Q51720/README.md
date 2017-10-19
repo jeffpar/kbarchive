@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51720: FltSim Hangs on CompuAdd 386/16 with Award BIOS 3.04"
-permalink: kb/051/Q51720/
+permalink: /kb/051/Q51720/
 ---
 
 ## Q51720: FltSim Hangs on CompuAdd 386/16 with Award BIOS 3.04

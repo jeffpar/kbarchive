@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200439: SMSINST: Install Status MIF Files Are Not Created on Windows 95"
-permalink: kb/200/Q200439/
+permalink: /kb/200/Q200439/
 ---
 
 ## Q200439: SMSINST: Install Status MIF Files Are Not Created on Windows 95

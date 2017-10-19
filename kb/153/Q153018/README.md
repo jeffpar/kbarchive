@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153018: BUG: CreateDynaset Holds Lock on Index if No Records Return"
-permalink: kb/153/Q153018/
+permalink: /kb/153/Q153018/
 ---
 
 ## Q153018: BUG: CreateDynaset Holds Lock on Index if No Records Return

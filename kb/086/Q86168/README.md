@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86168: Err Msg: Application Execution Error..No Association Exists"
-permalink: kb/086/Q86168/
+permalink: /kb/086/Q86168/
 ---
 
 ## Q86168: Err Msg: Application Execution Error..No Association Exists

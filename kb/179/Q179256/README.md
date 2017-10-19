@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179256: WD97: Word Mail Merge Hangs Using Access Parameter Query"
-permalink: kb/179/Q179256/
+permalink: /kb/179/Q179256/
 ---
 
 ## Q179256: WD97: Word Mail Merge Hangs Using Access Parameter Query

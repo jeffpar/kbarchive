@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297268: Data Fragmentation Occurs When You Restore Data to Clean Volume"
-permalink: kb/297/Q297268/
+permalink: /kb/297/Q297268/
 ---
 
 ## Q297268: Data Fragmentation Occurs When You Restore Data to Clean Volume

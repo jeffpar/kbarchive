@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302920: Maximum Mailbox Size Displayed Incorrectly For Free Accounts In"
-permalink: kb/302/Q302920/
+permalink: /kb/302/Q302920/
 ---
 
 ## Q302920: Maximum Mailbox Size Displayed Incorrectly For Free Accounts In

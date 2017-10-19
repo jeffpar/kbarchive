@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158865: WINS Fails to Start After Changing File Permissions"
-permalink: kb/158/Q158865/
+permalink: /kb/158/Q158865/
 ---
 
 ## Q158865: WINS Fails to Start After Changing File Permissions

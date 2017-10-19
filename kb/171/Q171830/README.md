@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171830: FIX: ActiveX Document Menu Changing Places"
-permalink: kb/171/Q171830/
+permalink: /kb/171/Q171830/
 ---
 
 ## Q171830: FIX: ActiveX Document Menu Changing Places

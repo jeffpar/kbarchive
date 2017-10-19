@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81891: PRB: /Fb May Cause A1006 in Low Memory Situations"
-permalink: kb/081/Q81891/
+permalink: /kb/081/Q81891/
 ---
 
 ## Q81891: PRB: /Fb May Cause A1006 in Low Memory Situations

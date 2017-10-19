@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111740: No Mouse Functionality in DoubleSpace Compress Screens"
-permalink: kb/111/Q111740/
+permalink: /kb/111/Q111740/
 ---
 
 ## Q111740: No Mouse Functionality in DoubleSpace Compress Screens

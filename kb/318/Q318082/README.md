@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318082: PRB: Prompt to Check Out Large XSD File When You View the XML"
-permalink: kb/318/Q318082/
+permalink: /kb/318/Q318082/
 ---
 
 ## Q318082: PRB: Prompt to Check Out Large XSD File When You View the XML

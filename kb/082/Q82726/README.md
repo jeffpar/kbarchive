@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82726: NUCONFIG.EXE Is Not Compatible with Windows 3.1"
-permalink: kb/082/Q82726/
+permalink: /kb/082/Q82726/
 ---
 
 ## Q82726: NUCONFIG.EXE Is Not Compatible with Windows 3.1

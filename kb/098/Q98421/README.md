@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98421: Renaming a Bid for a Boot Drive"
-permalink: kb/098/Q98421/
+permalink: /kb/098/Q98421/
 ---
 
 ## Q98421: Renaming a Bid for a Boot Drive

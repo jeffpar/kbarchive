@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172877: Shortcuts Missing from Start Menu After Windows Setup"
-permalink: kb/172/Q172877/
+permalink: /kb/172/Q172877/
 ---
 
 ## Q172877: Shortcuts Missing from Start Menu After Windows Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184902: XADM: Running Edbutil /d /r /ds"
-permalink: kb/184/Q184902/
+permalink: /kb/184/Q184902/
 ---
 
 ## Q184902: XADM: Running Edbutil /d /r /ds

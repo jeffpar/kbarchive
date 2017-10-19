@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192253: BUG: ImageList: Can't Insert Multiple Images from Root Directory"
-permalink: kb/192/Q192253/
+permalink: /kb/192/Q192253/
 ---
 
 ## Q192253: BUG: ImageList: Can't Insert Multiple Images from Root Directory

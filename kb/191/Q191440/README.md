@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191440: CG4: Animated GIFs Only Animate in Web Browsers"
-permalink: kb/191/Q191440/
+permalink: /kb/191/Q191440/
 ---
 
 ## Q191440: CG4: Animated GIFs Only Animate in Web Browsers

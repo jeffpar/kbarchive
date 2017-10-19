@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141336: XCLN: MAPI_BODY_CUSTOM Required for Attachments"
-permalink: kb/141/Q141336/
+permalink: /kb/141/Q141336/
 ---
 
 ## Q141336: XCLN: MAPI_BODY_CUSTOM Required for Attachments

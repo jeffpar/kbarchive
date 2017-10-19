@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59682: No Menu Item Highlights Visible"
-permalink: kb/059/Q59682/
+permalink: /kb/059/Q59682/
 ---
 
 ## Q59682: No Menu Item Highlights Visible

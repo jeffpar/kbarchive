@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65928: FIX: COMM.DRV Locks Up with Full Duplex Communications"
-permalink: kb/065/Q65928/
+permalink: /kb/065/Q65928/
 ---
 
 ## Q65928: FIX: COMM.DRV Locks Up with Full Duplex Communications

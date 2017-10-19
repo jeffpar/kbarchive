@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177103: FIX: ALT+Key Combination in Property Page Causes Stack Overflow"
-permalink: kb/177/Q177103/
+permalink: /kb/177/Q177103/
 ---
 
 ## Q177103: FIX: ALT+Key Combination in Property Page Causes Stack Overflow

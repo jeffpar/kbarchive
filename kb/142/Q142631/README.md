@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142631: Internet Information Server Directory Access Issue Resolved"
-permalink: kb/142/Q142631/
+permalink: /kb/142/Q142631/
 ---
 
 ## Q142631: Internet Information Server Directory Access Issue Resolved

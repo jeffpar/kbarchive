@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139713: 16-Bit Apps Using NetWare Sharing Flag May Fail Using CSNW"
-permalink: kb/139/Q139713/
+permalink: /kb/139/Q139713/
 ---
 
 ## Q139713: 16-Bit Apps Using NetWare Sharing Flag May Fail Using CSNW

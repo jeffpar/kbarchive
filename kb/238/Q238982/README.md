@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238982: XWEB: Prompt for Security Credentials Before Logon.asp Loads"
-permalink: kb/238/Q238982/
+permalink: /kb/238/Q238982/
 ---
 
 ## Q238982: XWEB: Prompt for Security Credentials Before Logon.asp Loads

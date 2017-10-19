@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137364: Removing Damaged Messages from MS Exchange Outbox"
-permalink: kb/137/Q137364/
+permalink: /kb/137/Q137364/
 ---
 
 ## Q137364: Removing Damaged Messages from MS Exchange Outbox

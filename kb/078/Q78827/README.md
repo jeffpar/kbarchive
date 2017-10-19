@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78827: PC Gen: Two Versions of Hayes 9600 V-Series Modem"
-permalink: kb/078/Q78827/
+permalink: /kb/078/Q78827/
 ---
 
 ## Q78827: PC Gen: Two Versions of Hayes 9600 V-Series Modem

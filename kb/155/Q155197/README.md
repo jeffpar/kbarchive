@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155197: HOWTO: Unattended Setup Parameters for Unattend.txt File"
-permalink: kb/155/Q155197/
+permalink: /kb/155/Q155197/
 ---
 
 ## Q155197: HOWTO: Unattended Setup Parameters for Unattend.txt File

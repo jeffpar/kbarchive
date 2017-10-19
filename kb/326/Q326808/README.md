@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326808: SNA Server Access Violation in Function s1prmsnd"
-permalink: kb/326/Q326808/
+permalink: /kb/326/Q326808/
 ---
 
 ## Q326808: SNA Server Access Violation in Function s1prmsnd

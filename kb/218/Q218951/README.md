@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218951: Motocross Madness: Game Quits Unexpectedly Playing Custom Course"
-permalink: kb/218/Q218951/
+permalink: /kb/218/Q218951/
 ---
 
 ## Q218951: Motocross Madness: Game Quits Unexpectedly Playing Custom Course

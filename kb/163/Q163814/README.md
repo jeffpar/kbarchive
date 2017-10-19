@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163814: Directory Replication Errors 3208 and 3216 on an NTFS Partition"
-permalink: kb/163/Q163814/
+permalink: /kb/163/Q163814/
 ---
 
 ## Q163814: Directory Replication Errors 3208 and 3216 on an NTFS Partition

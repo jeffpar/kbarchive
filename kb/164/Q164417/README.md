@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164417: Cannot Create MSN Address Book Entry"
-permalink: kb/164/Q164417/
+permalink: /kb/164/Q164417/
 ---
 
 ## Q164417: Cannot Create MSN Address Book Entry

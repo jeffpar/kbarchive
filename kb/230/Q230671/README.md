@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230671: PRB: AV When Saving Workspace with more than 4096 Source/Header"
-permalink: kb/230/Q230671/
+permalink: /kb/230/Q230671/
 ---
 
 ## Q230671: PRB: AV When Saving Workspace with more than 4096 Source/Header

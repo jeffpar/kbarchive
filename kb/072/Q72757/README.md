@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72757: SETVER.EXE Not Affected By Read-Only Bit"
-permalink: kb/072/Q72757/
+permalink: /kb/072/Q72757/
 ---
 
 ## Q72757: SETVER.EXE Not Affected By Read-Only Bit

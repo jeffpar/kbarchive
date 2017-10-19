@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154595: XADM: Directory Won't Start If System Date Later Than 2038"
-permalink: kb/154/Q154595/
+permalink: /kb/154/Q154595/
 ---
 
 ## Q154595: XADM: Directory Won't Start If System Date Later Than 2038

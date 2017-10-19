@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199898: SMS: Disk I/O Error  When Running Reports Using Crystal Info"
-permalink: kb/199/Q199898/
+permalink: /kb/199/Q199898/
 ---
 
 ## Q199898: SMS: Disk I/O Error  When Running Reports Using Crystal Info

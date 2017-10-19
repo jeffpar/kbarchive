@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151856: CMEMDC.EXE Memory Bitmap for Scrolling in CScrollV"
-permalink: kb/151/Q151856/
+permalink: /kb/151/Q151856/
 ---
 
 ## Q151856: CMEMDC.EXE Memory Bitmap for Scrolling in CScrollV

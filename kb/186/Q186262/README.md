@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186262: BUG: Name Conflict When Using Binary Compatibility"
-permalink: kb/186/Q186262/
+permalink: /kb/186/Q186262/
 ---
 
 ## Q186262: BUG: Name Conflict When Using Binary Compatibility

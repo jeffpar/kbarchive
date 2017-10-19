@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136447: Performance Problems in Windows NT 3.51 With Intergraph PC-NFS"
-permalink: kb/136/Q136447/
+permalink: /kb/136/Q136447/
 ---
 
 ## Q136447: Performance Problems in Windows NT 3.51 With Intergraph PC-NFS

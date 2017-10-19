@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157464: WD97: Where Settings Are Stored in the Registry"
-permalink: kb/157/Q157464/
+permalink: /kb/157/Q157464/
 ---
 
 ## Q157464: WD97: Where Settings Are Stored in the Registry

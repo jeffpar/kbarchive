@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131513: PC Gen: Basic Asynchronous Troubleshooting Procedures"
-permalink: kb/131/Q131513/
+permalink: /kb/131/Q131513/
 ---
 
 ## Q131513: PC Gen: Basic Asynchronous Troubleshooting Procedures

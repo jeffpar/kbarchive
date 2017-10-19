@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165218: PPT: Sample VB Code to Delete a Custom Slide Show"
-permalink: kb/165/Q165218/
+permalink: /kb/165/Q165218/
 ---
 
 ## Q165218: PPT: Sample VB Code to Delete a Custom Slide Show

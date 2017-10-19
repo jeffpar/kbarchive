@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180664: SNACFG Fails To Create Print Session When a PDT Is Specified"
-permalink: kb/180/Q180664/
+permalink: /kb/180/Q180664/
 ---
 
 ## Q180664: SNACFG Fails To Create Print Session When a PDT Is Specified

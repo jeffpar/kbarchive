@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156576: Windows NT 3.51 Service Pack Disables Dual Boot for 4.0"
-permalink: kb/156/Q156576/
+permalink: /kb/156/Q156576/
 ---
 
 ## Q156576: Windows NT 3.51 Service Pack Disables Dual Boot for 4.0

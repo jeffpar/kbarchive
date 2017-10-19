@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117396: Printing Options for Client Service for NetWare"
-permalink: kb/117/Q117396/
+permalink: /kb/117/Q117396/
 ---
 
 ## Q117396: Printing Options for Client Service for NetWare

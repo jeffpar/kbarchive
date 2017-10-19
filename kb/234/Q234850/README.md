@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234850: SMS: Packages Are Advertised to the Wrong Collections"
-permalink: kb/234/Q234850/
+permalink: /kb/234/Q234850/
 ---
 
 ## Q234850: SMS: Packages Are Advertised to the Wrong Collections

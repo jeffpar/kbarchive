@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166756: FIX: Error in Requery When Set Null Date Parameter to Not Null"
-permalink: kb/166/Q166756/
+permalink: /kb/166/Q166756/
 ---
 
 ## Q166756: FIX: Error in Requery When Set Null Date Parameter to Not Null

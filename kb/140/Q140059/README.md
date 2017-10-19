@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140059: Stop 0xA in Afd When Browsing IIS"
-permalink: kb/140/Q140059/
+permalink: /kb/140/Q140059/
 ---
 
 ## Q140059: Stop 0xA in Afd When Browsing IIS

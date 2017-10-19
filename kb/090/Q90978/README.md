@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90978: Setup and Control Panel: Different Recommended Swap File Size"
-permalink: kb/090/Q90978/
+permalink: /kb/090/Q90978/
 ---
 
 ## Q90978: Setup and Control Panel: Different Recommended Swap File Size

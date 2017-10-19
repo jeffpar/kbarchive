@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83378: IdleWild Screen Saver and the Always On Top Command"
-permalink: kb/083/Q83378/
+permalink: /kb/083/Q83378/
 ---
 
 ## Q83378: IdleWild Screen Saver and the Always On Top Command

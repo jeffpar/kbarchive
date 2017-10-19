@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186581: XCON: Event ID:152 When Msg. Filtered by Originator O/R Address"
-permalink: kb/186/Q186581/
+permalink: /kb/186/Q186581/
 ---
 
 ## Q186581: XCON: Event ID:152 When Msg. Filtered by Originator O/R Address

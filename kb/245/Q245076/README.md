@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245076: 'Access Denied' in Internet Service Manager Virtual Directory."
-permalink: kb/245/Q245076/
+permalink: /kb/245/Q245076/
 ---
 
 ## Q245076: 'Access Denied' in Internet Service Manager Virtual Directory.

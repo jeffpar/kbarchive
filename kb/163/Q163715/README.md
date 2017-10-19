@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163715: ODE97: ODE Help Workshop - Cancel and Close Buttons Fail"
-permalink: kb/163/Q163715/
+permalink: /kb/163/Q163715/
 ---
 
 ## Q163715: ODE97: ODE Help Workshop - Cancel and Close Buttons Fail

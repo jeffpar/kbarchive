@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199249: How to Configure SQL Server User Connections for SMS 2.0"
-permalink: kb/199/Q199249/
+permalink: /kb/199/Q199249/
 ---
 
 ## Q199249: How to Configure SQL Server User Connections for SMS 2.0

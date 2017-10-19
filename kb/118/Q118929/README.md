@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118929: PC Win: Change Password Is Case Sensitive"
-permalink: kb/118/Q118929/
+permalink: /kb/118/Q118929/
 ---
 
 ## Q118929: PC Win: Change Password Is Case Sensitive

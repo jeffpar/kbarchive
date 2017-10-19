@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130864: PRB: Form with One-to-Many View Does Not Update Parent Records"
-permalink: kb/130/Q130864/
+permalink: /kb/130/Q130864/
 ---
 
 ## Q130864: PRB: Form with One-to-Many View Does Not Update Parent Records

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196045: XCON: DRAS Connector Fails Connecting to Multiple Sites"
-permalink: kb/196/Q196045/
+permalink: /kb/196/Q196045/
 ---
 
 ## Q196045: XCON: DRAS Connector Fails Connecting to Multiple Sites

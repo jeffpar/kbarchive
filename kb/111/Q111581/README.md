@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111581: BUG: Pie() Vertex Not Drawn Completely with Wide Pen"
-permalink: kb/111/Q111581/
+permalink: /kb/111/Q111581/
 ---
 
 ## Q111581: BUG: Pie() Vertex Not Drawn Completely with Wide Pen

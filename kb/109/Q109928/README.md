@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109928: Printing from MS-DOS Applications to Local Printer"
-permalink: kb/109/Q109928/
+permalink: /kb/109/Q109928/
 ---
 
 ## Q109928: Printing from MS-DOS Applications to Local Printer

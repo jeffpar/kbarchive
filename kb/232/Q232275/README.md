@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232275: Multithreaded Write Routine May Corrupt Data on FAT Partition"
-permalink: kb/232/Q232275/
+permalink: /kb/232/Q232275/
 ---
 
 ## Q232275: Multithreaded Write Routine May Corrupt Data on FAT Partition

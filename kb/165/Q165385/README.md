@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165385: Single Signon for APPC Applications Using Privileged Proxy"
-permalink: kb/165/Q165385/
+permalink: /kb/165/Q165385/
 ---
 
 ## Q165385: Single Signon for APPC Applications Using Privileged Proxy

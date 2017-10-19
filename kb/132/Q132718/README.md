@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132718: SNA Server DISPLAY verb may return DISPLAY_INVALID_CONSTANT"
-permalink: kb/132/Q132718/
+permalink: /kb/132/Q132718/
 ---
 
 ## Q132718: SNA Server DISPLAY verb may return DISPLAY_INVALID_CONSTANT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67830: Using a Mach III Joystick with Flight Simulator"
-permalink: kb/067/Q67830/
+permalink: /kb/067/Q67830/
 ---
 
 ## Q67830: Using a Mach III Joystick with Flight Simulator

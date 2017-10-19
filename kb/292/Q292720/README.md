@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292720: Inside Windows NT Second Edition Comments and Corrections"
-permalink: kb/292/Q292720/
+permalink: /kb/292/Q292720/
 ---
 
 ## Q292720: Inside Windows NT Second Edition Comments and Corrections

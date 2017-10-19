@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84393: Error Messages When Installing Windows 3.1 on a Compudyne 286"
-permalink: kb/084/Q84393/
+permalink: /kb/084/Q84393/
 ---
 
 ## Q84393: Error Messages When Installing Windows 3.1 on a Compudyne 286

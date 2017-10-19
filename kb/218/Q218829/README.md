@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218829: FIX: CComEnumImpl&lt;&gt;::Skip() Doesn't Handle Overflow Correctly"
-permalink: kb/218/Q218829/
+permalink: /kb/218/Q218829/
 ---
 
 ## Q218829: FIX: CComEnumImpl&lt;&gt;::Skip() Doesn't Handle Overflow Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142065: Connecting Windows NT to Windows 95 with a Null-Modem Cable"
-permalink: kb/142/Q142065/
+permalink: /kb/142/Q142065/
 ---
 
 ## Q142065: Connecting Windows NT to Windows 95 with a Null-Modem Cable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115704: FIX: Loop Optimization Causes Infinite Do-While Loop"
-permalink: kb/115/Q115704/
+permalink: /kb/115/Q115704/
 ---
 
 ## Q115704: FIX: Loop Optimization Causes Infinite Do-While Loop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44712: Mac Wkst: Identifying Which Users Are Logged On Local Server"
-permalink: kb/044/Q44712/
+permalink: /kb/044/Q44712/
 ---
 
 ## Q44712: Mac Wkst: Identifying Which Users Are Logged On Local Server

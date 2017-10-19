@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129668: Logitech Mouse Support in Windows NT"
-permalink: kb/129/Q129668/
+permalink: /kb/129/Q129668/
 ---
 
 ## Q129668: Logitech Mouse Support in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125651: PRB: Update or Delete Record Gives Error: Query is too complex"
-permalink: kb/125/Q125651/
+permalink: /kb/125/Q125651/
 ---
 
 ## Q125651: PRB: Update or Delete Record Gives Error: Query is too complex

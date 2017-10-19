@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37624: INFO: Precedence Affects Grouping of Operands, Not Evaluation"
-permalink: kb/037/Q37624/
+permalink: /kb/037/Q37624/
 ---
 
 ## Q37624: INFO: Precedence Affects Grouping of Operands, Not Evaluation

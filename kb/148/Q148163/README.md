@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148163: INFO: SLI Interface Enhancement for Receiving Large Chains"
-permalink: kb/148/Q148163/
+permalink: /kb/148/Q148163/
 ---
 
 ## Q148163: INFO: SLI Interface Enhancement for Receiving Large Chains

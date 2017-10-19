@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161133: HOWTO: Block CTRL+ALT+DEL &amp; ALT+TAB in Windows 95 or Windows 98"
-permalink: kb/161/Q161133/
+permalink: /kb/161/Q161133/
 ---
 
 ## Q161133: HOWTO: Block CTRL+ALT+DEL &amp; ALT+TAB in Windows 95 or Windows 98

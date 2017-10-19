@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79844: Embedding the Assembly Date and Time in a MASM 6.0 Object"
-permalink: kb/079/Q79844/
+permalink: /kb/079/Q79844/
 ---
 
 ## Q79844: Embedding the Assembly Date and Time in a MASM 6.0 Object

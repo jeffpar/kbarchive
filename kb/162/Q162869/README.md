@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162869: Taskbar and Part of Display is Missing"
-permalink: kb/162/Q162869/
+permalink: /kb/162/Q162869/
 ---
 
 ## Q162869: Taskbar and Part of Display is Missing

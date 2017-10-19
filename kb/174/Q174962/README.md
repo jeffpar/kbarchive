@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174962: Multimedia: Uninstaller Error"
-permalink: kb/174/Q174962/
+permalink: /kb/174/Q174962/
 ---
 
 ## Q174962: Multimedia: Uninstaller Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150208: BUG: Form Height Not Displayed Correctly in Design View"
-permalink: kb/150/Q150208/
+permalink: /kb/150/Q150208/
 ---
 
 ## Q150208: BUG: Form Height Not Displayed Correctly in Design View

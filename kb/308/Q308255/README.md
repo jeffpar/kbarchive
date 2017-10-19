@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308255: HTTP 403.5 - Forbidden: SSL 128 Required Error Occurs"
-permalink: kb/308/Q308255/
+permalink: /kb/308/Q308255/
 ---
 
 ## Q308255: HTTP 403.5 - Forbidden: SSL 128 Required Error Occurs

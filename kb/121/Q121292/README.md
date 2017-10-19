@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121292: DoubleSpace Conversion Dialog Box Points to Non-Existent CVF"
-permalink: kb/121/Q121292/
+permalink: /kb/121/Q121292/
 ---
 
 ## Q121292: DoubleSpace Conversion Dialog Box Points to Non-Existent CVF

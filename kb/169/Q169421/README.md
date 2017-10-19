@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169421: Mastering: Setup: Oleaut32.dll Installs to a Random File Name"
-permalink: kb/169/Q169421/
+permalink: /kb/169/Q169421/
 ---
 
 ## Q169421: Mastering: Setup: Oleaut32.dll Installs to a Random File Name

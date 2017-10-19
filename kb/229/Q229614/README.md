@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229614: No Error Message Occurs If Dragging from Exchange Does Not Work"
-permalink: kb/229/Q229614/
+permalink: /kb/229/Q229614/
 ---
 
 ## Q229614: No Error Message Occurs If Dragging from Exchange Does Not Work

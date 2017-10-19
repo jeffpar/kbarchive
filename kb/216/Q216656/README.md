@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216656: INFO: &quot;No matching symbolic info&quot; for Comctl32.dll, Msidle.dll"
-permalink: kb/216/Q216656/
+permalink: /kb/216/Q216656/
 ---
 
 ## Q216656: INFO: &quot;No matching symbolic info&quot; for Comctl32.dll, Msidle.dll

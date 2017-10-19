@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79891: PrintRite Version 1.5 or Later Compatible with MS-DOS 5.0"
-permalink: kb/079/Q79891/
+permalink: /kb/079/Q79891/
 ---
 
 ## Q79891: PrintRite Version 1.5 or Later Compatible with MS-DOS 5.0

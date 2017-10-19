@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127009: How to Position the Insertion Point in a Field on a Form"
-permalink: kb/127/Q127009/
+permalink: /kb/127/Q127009/
 ---
 
 ## Q127009: How to Position the Insertion Point in a Field on a Form

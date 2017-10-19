@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170643: Maximizing Routing Performance with Netflex-3 Network Adapter"
-permalink: kb/170/Q170643/
+permalink: /kb/170/Q170643/
 ---
 
 ## Q170643: Maximizing Routing Performance with Netflex-3 Network Adapter

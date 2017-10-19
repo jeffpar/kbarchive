@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185377: Users Cannot Access FTP or Web Site"
-permalink: kb/185/Q185377/
+permalink: /kb/185/Q185377/
 ---
 
 ## Q185377: Users Cannot Access FTP or Web Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107726: SNA Server Event 553 Running Novell Requestor for Windows NT"
-permalink: kb/107/Q107726/
+permalink: /kb/107/Q107726/
 ---
 
 ## Q107726: SNA Server Event 553 Running Novell Requestor for Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147948: FIX: Errors Occur Using DAO CLongBinary Data from Database"
-permalink: kb/147/Q147948/
+permalink: /kb/147/Q147948/
 ---
 
 ## Q147948: FIX: Errors Occur Using DAO CLongBinary Data from Database

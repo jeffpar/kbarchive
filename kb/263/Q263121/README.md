@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263121: Internet Services Manager MMC Not Added to Windows Start Menu"
-permalink: kb/263/Q263121/
+permalink: /kb/263/Q263121/
 ---
 
 ## Q263121: Internet Services Manager MMC Not Added to Windows Start Menu

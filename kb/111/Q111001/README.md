@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111001: BUG: PEEKCHARQQ Incorrectly Returning .TRUE."
-permalink: kb/111/Q111001/
+permalink: /kb/111/Q111001/
 ---
 
 ## Q111001: BUG: PEEKCHARQQ Incorrectly Returning .TRUE.

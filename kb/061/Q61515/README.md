@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61515: Mac Hyp: &quot;Can't Understand msmail&quot; -- Statement Needs a Verb"
-permalink: kb/061/Q61515/
+permalink: /kb/061/Q61515/
 ---
 
 ## Q61515: Mac Hyp: &quot;Can't Understand msmail&quot; -- Statement Needs a Verb

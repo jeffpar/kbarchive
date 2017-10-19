@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311443: XADM: Using Findbin.exe to Find Viruses in the MTA"
-permalink: kb/311/Q311443/
+permalink: /kb/311/Q311443/
 ---
 
 ## Q311443: XADM: Using Findbin.exe to Find Viruses in the MTA

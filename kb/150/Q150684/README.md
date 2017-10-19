@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150684: FP: &quot;No Server on Port ...&quot; Error Opening, Creating Web Page"
-permalink: kb/150/Q150684/
+permalink: /kb/150/Q150684/
 ---
 
 ## Q150684: FP: &quot;No Server on Port ...&quot; Error Opening, Creating Web Page

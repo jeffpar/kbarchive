@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99166: 3Server/2.2 Startup Fails with &quot;Net 3054&quot; in STARTUP.LOG"
-permalink: kb/099/Q99166/
+permalink: /kb/099/Q99166/
 ---
 
 ## Q99166: 3Server/2.2 Startup Fails with &quot;Net 3054&quot; in STARTUP.LOG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149010: Pregnancy Err Msg: &quot;No Articles Were Found Containing...&quot;"
-permalink: kb/149/Q149010/
+permalink: /kb/149/Q149010/
 ---
 
 ## Q149010: Pregnancy Err Msg: &quot;No Articles Were Found Containing...&quot;

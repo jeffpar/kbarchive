@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219377: Problems Importing Security Certificates in E-Mail Program"
-permalink: kb/219/Q219377/
+permalink: /kb/219/Q219377/
 ---
 
 ## Q219377: Problems Importing Security Certificates in E-Mail Program

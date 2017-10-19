@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51350: Mac GW: Gateway Recipients Propagate Only to Access Servers"
-permalink: kb/051/Q51350/
+permalink: /kb/051/Q51350/
 ---
 
 ## Q51350: Mac GW: Gateway Recipients Propagate Only to Access Servers

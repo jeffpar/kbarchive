@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106616: No Sound During Fly-By in Multimedia Golf"
-permalink: kb/106/Q106616/
+permalink: /kb/106/Q106616/
 ---
 
 ## Q106616: No Sound During Fly-By in Multimedia Golf

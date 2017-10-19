@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300584: Deleting a cancelled user tile in MSN Explorer 6.0"
-permalink: kb/300/Q300584/
+permalink: /kb/300/Q300584/
 ---
 
 ## Q300584: Deleting a cancelled user tile in MSN Explorer 6.0

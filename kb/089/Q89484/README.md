@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89484: GP Fault in WFWG Mail May Suppress Password"
-permalink: kb/089/Q89484/
+permalink: /kb/089/Q89484/
 ---
 
 ## Q89484: GP Fault in WFWG Mail May Suppress Password

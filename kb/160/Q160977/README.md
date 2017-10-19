@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160977: WD97: IPF Error Message When You Edit LISTNUM Field in Table"
-permalink: kb/160/Q160977/
+permalink: /kb/160/Q160977/
 ---
 
 ## Q160977: WD97: IPF Error Message When You Edit LISTNUM Field in Table

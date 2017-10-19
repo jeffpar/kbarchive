@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176798: Bookshelf 98 ErrMsg: Ctl3d32.dll Is Not the Correct Version"
-permalink: kb/176/Q176798/
+permalink: /kb/176/Q176798/
 ---
 
 ## Q176798: Bookshelf 98 ErrMsg: Ctl3d32.dll Is Not the Correct Version

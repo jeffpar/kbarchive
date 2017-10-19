@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129645: PRB: GETDIR() Doesn't Behave as Expected Under System 7.5"
-permalink: kb/129/Q129645/
+permalink: /kb/129/Q129645/
 ---
 
 ## Q129645: PRB: GETDIR() Doesn't Behave as Expected Under System 7.5

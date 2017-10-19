@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189286: XADM: How to Delete a Server from a Site"
-permalink: kb/189/Q189286/
+permalink: /kb/189/Q189286/
 ---
 
 ## Q189286: XADM: How to Delete a Server from a Site

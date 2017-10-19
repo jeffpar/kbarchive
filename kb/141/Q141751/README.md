@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141751: Adding Control Bars to Dialog Boxes in MFC"
-permalink: kb/141/Q141751/
+permalink: /kb/141/Q141751/
 ---
 
 ## Q141751: Adding Control Bars to Dialog Boxes in MFC

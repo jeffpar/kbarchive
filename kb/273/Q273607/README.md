@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273607: Microsoft Exchange 2000 Server Administrator's Companion Comment"
-permalink: kb/273/Q273607/
+permalink: /kb/273/Q273607/
 ---
 
 ## Q273607: Microsoft Exchange 2000 Server Administrator's Companion Comment

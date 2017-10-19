@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172459: MSN Setup Continues to Detect McAfee VirusScan"
-permalink: kb/172/Q172459/
+permalink: /kb/172/Q172459/
 ---
 
 ## Q172459: MSN Setup Continues to Detect McAfee VirusScan

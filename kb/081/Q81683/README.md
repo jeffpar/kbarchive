@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81683: PC Guardian: Known Incompatibilities with Windows 3.1"
-permalink: kb/081/Q81683/
+permalink: /kb/081/Q81683/
 ---
 
 ## Q81683: PC Guardian: Known Incompatibilities with Windows 3.1

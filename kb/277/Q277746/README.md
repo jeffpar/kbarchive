@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277746: CFS2: Air-to-Ground Mission Category Is Not Available"
-permalink: kb/277/Q277746/
+permalink: /kb/277/Q277746/
 ---
 
 ## Q277746: CFS2: Air-to-Ground Mission Category Is Not Available

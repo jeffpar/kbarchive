@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76924: Running Borland Reflex Under Windows"
-permalink: kb/076/Q76924/
+permalink: /kb/076/Q76924/
 ---
 
 ## Q76924: Running Borland Reflex Under Windows

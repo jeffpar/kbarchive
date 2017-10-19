@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231536: MapPoint 2000: Unable to Save More than One Map to Floppy Disk"
-permalink: kb/231/Q231536/
+permalink: /kb/231/Q231536/
 ---
 
 ## Q231536: MapPoint 2000: Unable to Save More than One Map to Floppy Disk

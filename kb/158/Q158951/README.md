@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158951: Incorrect DAC Type May Be Reported in Display Properties"
-permalink: kb/158/Q158951/
+permalink: /kb/158/Q158951/
 ---
 
 ## Q158951: Incorrect DAC Type May Be Reported in Display Properties

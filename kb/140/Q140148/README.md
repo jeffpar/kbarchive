@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140148: Logon Name Removed After Running Audit Package"
-permalink: kb/140/Q140148/
+permalink: /kb/140/Q140148/
 ---
 
 ## Q140148: Logon Name Removed After Running Audit Package

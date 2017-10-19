@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123461: PRB: const char&#42; not same as const CPTR where #typedef char&#42; C"
-permalink: kb/123/Q123461/
+permalink: /kb/123/Q123461/
 ---
 
 ## Q123461: PRB: const char&#42; not same as const CPTR where #typedef char&#42; C

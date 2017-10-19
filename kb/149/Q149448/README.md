@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149448: Incorrect Node Address In IPX Header Causes Broadcast Storm"
-permalink: kb/149/Q149448/
+permalink: /kb/149/Q149448/
 ---
 
 ## Q149448: Incorrect Node Address In IPX Header Causes Broadcast Storm

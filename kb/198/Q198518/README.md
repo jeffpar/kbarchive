@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198518: RRAS Requires Non-Zero Internal Network Number for IPX"
-permalink: kb/198/Q198518/
+permalink: /kb/198/Q198518/
 ---
 
 ## Q198518: RRAS Requires Non-Zero Internal Network Number for IPX

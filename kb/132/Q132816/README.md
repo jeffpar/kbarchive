@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132816: Suspend Command Cannot Be Used on an SBS Computer"
-permalink: kb/132/Q132816/
+permalink: /kb/132/Q132816/
 ---
 
 ## Q132816: Suspend Command Cannot Be Used on an SBS Computer

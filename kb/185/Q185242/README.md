@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185242: PRB: Data Not Updated with ToolBar Navigation"
-permalink: kb/185/Q185242/
+permalink: /kb/185/Q185242/
 ---
 
 ## Q185242: PRB: Data Not Updated with ToolBar Navigation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214442: FIX: Incorrect Prototype in ClassWizard CRecordset::Move()"
-permalink: kb/214/Q214442/
+permalink: /kb/214/Q214442/
 ---
 
 ## Q214442: FIX: Incorrect Prototype in ClassWizard CRecordset::Move()

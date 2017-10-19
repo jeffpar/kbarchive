@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126651: NetBIOS Data Codes (Windows NT and RAS)"
-permalink: kb/126/Q126651/
+permalink: /kb/126/Q126651/
 ---
 
 ## Q126651: NetBIOS Data Codes (Windows NT and RAS)

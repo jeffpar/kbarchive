@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189540: PRB: Access Denied Error on WebClass Files"
-permalink: kb/189/Q189540/
+permalink: /kb/189/Q189540/
 ---
 
 ## Q189540: PRB: Access Denied Error on WebClass Files

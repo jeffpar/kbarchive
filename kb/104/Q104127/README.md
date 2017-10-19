@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104127: Mac Gty: Gateway Entry Behavior After Gateway Removal/Install"
-permalink: kb/104/Q104127/
+permalink: /kb/104/Q104127/
 ---
 
 ## Q104127: Mac Gty: Gateway Entry Behavior After Gateway Removal/Install

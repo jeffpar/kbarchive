@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141426: Dangerous Creatures: Sound Distortion When You Click Back"
-permalink: kb/141/Q141426/
+permalink: /kb/141/Q141426/
 ---
 
 ## Q141426: Dangerous Creatures: Sound Distortion When You Click Back

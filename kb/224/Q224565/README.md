@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224565: XADM: Addresses Are Displayed with a Double / Character in DDA"
-permalink: kb/224/Q224565/
+permalink: /kb/224/Q224565/
 ---
 
 ## Q224565: XADM: Addresses Are Displayed with a Double / Character in DDA

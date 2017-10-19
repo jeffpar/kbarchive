@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139735: NTBackup Stops Responding w/ STB PowerGraph 64V Video Adapter"
-permalink: kb/139/Q139735/
+permalink: /kb/139/Q139735/
 ---
 
 ## Q139735: NTBackup Stops Responding w/ STB PowerGraph 64V Video Adapter

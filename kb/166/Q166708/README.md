@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166708: &quot;Entry Point Not Found&quot; Error with CleanSweep 3.0 and Windows NT"
-permalink: kb/166/Q166708/
+permalink: /kb/166/Q166708/
 ---
 
 ## Q166708: &quot;Entry Point Not Found&quot; Error with CleanSweep 3.0 and Windows NT

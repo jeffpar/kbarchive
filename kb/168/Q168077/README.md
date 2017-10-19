@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168077: XFOR: Ccmail Connector Alias Name Rule Not Functioning Properly"
-permalink: kb/168/Q168077/
+permalink: /kb/168/Q168077/
 ---
 
 ## Q168077: XFOR: Ccmail Connector Alias Name Rule Not Functioning Properly

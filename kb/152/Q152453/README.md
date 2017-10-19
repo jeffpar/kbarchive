@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152453: Directhosting Affects Powerbuilder Query Performance"
-permalink: kb/152/Q152453/
+permalink: /kb/152/Q152453/
 ---
 
 ## Q152453: Directhosting Affects Powerbuilder Query Performance

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146774: XCLN: New Profile &amp; SCD File Resets Default Access Permission"
-permalink: kb/146/Q146774/
+permalink: /kb/146/Q146774/
 ---
 
 ## Q146774: XCLN: New Profile &amp; SCD File Resets Default Access Permission

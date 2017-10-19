@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238780: SMS: Best Practices for Applying Systems Management Server 2.0 S"
-permalink: kb/238/Q238780/
+permalink: /kb/238/Q238780/
 ---
 
 ## Q238780: SMS: Best Practices for Applying Systems Management Server 2.0 S

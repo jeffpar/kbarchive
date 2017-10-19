@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138961: BUG: Only One File Extension Honored in Parameter of GETFILE()"
-permalink: kb/138/Q138961/
+permalink: /kb/138/Q138961/
 ---
 
 ## Q138961: BUG: Only One File Extension Honored in Parameter of GETFILE()

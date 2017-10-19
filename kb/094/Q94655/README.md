@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94655: Using the HP 27247A Network Interface Card with WFWG"
-permalink: kb/094/Q94655/
+permalink: /kb/094/Q94655/
 ---
 
 ## Q94655: Using the HP 27247A Network Interface Card with WFWG

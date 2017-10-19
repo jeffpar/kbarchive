@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314565: Games: IPF or Err Msg When Agreement Appears"
-permalink: kb/314/Q314565/
+permalink: /kb/314/Q314565/
 ---
 
 ## Q314565: Games: IPF or Err Msg When Agreement Appears

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114124: PC MMTA: External Configured for CommType=X25Eicon May Hang"
-permalink: kb/114/Q114124/
+permalink: /kb/114/Q114124/
 ---
 
 ## Q114124: PC MMTA: External Configured for CommType=X25Eicon May Hang

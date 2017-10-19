@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105472: Windows NT Advanced Server CD Contents &#92;DRVLIB (528)"
-permalink: kb/105/Q105472/
+permalink: /kb/105/Q105472/
 ---
 
 ## Q105472: Windows NT Advanced Server CD Contents &#92;DRVLIB (528)

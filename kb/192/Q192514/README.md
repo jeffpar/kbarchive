@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192514: XFOR: DXA Appends 001 at End of Display Name in MS Mail GAL"
-permalink: kb/192/Q192514/
+permalink: /kb/192/Q192514/
 ---
 
 ## Q192514: XFOR: DXA Appends 001 at End of Display Name in MS Mail GAL

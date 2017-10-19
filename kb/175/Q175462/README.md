@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175462: Status Of Readings On Microsoft Windows And WOSA"
-permalink: kb/175/Q175462/
+permalink: /kb/175/Q175462/
 ---
 
 ## Q175462: Status Of Readings On Microsoft Windows And WOSA

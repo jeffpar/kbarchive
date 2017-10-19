@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179166: PRB: SqlBCPColumnFormat in VBSQL.OCX Fails"
-permalink: kb/179/Q179166/
+permalink: /kb/179/Q179166/
 ---
 
 ## Q179166: PRB: SqlBCPColumnFormat in VBSQL.OCX Fails

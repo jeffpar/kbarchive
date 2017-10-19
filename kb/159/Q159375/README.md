@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159375: CG3: Unable to Connect to Design Gallery Live Web Site"
-permalink: kb/159/Q159375/
+permalink: /kb/159/Q159375/
 ---
 
 ## Q159375: CG3: Unable to Connect to Design Gallery Live Web Site

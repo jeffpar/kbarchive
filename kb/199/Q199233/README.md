@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199233: How to Use DHTML with ASP and Long SQL Queries"
-permalink: kb/199/Q199233/
+permalink: /kb/199/Q199233/
 ---
 
 ## Q199233: How to Use DHTML with ASP and Long SQL Queries

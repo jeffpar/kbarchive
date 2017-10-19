@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140814: TN3270 Clients Cannot Connect with a Lower-Case LU Name"
-permalink: kb/140/Q140814/
+permalink: /kb/140/Q140814/
 ---
 
 ## Q140814: TN3270 Clients Cannot Connect with a Lower-Case LU Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79041: LANtastic and Zero-Length Files"
-permalink: kb/079/Q79041/
+permalink: /kb/079/Q79041/
 ---
 
 ## Q79041: LANtastic and Zero-Length Files

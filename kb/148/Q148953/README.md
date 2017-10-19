@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148953: IIS Fails to Connect to Sybase Server"
-permalink: kb/148/Q148953/
+permalink: /kb/148/Q148953/
 ---
 
 ## Q148953: IIS Fails to Connect to Sybase Server

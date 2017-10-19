@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138304: SNA Server Client for Windows 95 Is in the Latest Service Pack"
-permalink: kb/138/Q138304/
+permalink: /kb/138/Q138304/
 ---
 
 ## Q138304: SNA Server Client for Windows 95 Is in the Latest Service Pack

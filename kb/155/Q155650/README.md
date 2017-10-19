@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155650: Changing View to Another Truck After Race Ends Doesn't Work"
-permalink: kb/155/Q155650/
+permalink: /kb/155/Q155650/
 ---
 
 ## Q155650: Changing View to Another Truck After Race Ends Doesn't Work

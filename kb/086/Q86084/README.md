@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86084: PC WSPlus: Postoffices Missing in ADMINSCH"
-permalink: kb/086/Q86084/
+permalink: /kb/086/Q86084/
 ---
 
 ## Q86084: PC WSPlus: Postoffices Missing in ADMINSCH

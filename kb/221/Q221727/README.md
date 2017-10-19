@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221727: FIX: FOXUSER Restores Window to Incorrect MDI State"
-permalink: kb/221/Q221727/
+permalink: /kb/221/Q221727/
 ---
 
 ## Q221727: FIX: FOXUSER Restores Window to Incorrect MDI State

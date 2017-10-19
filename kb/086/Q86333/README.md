@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86333: Odvhlb.exe Demos Owner-Draw Variable-Height List Box"
-permalink: kb/086/Q86333/
+permalink: /kb/086/Q86333/
 ---
 
 ## Q86333: Odvhlb.exe Demos Owner-Draw Variable-Height List Box

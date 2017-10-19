@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107797: PC Gen: Disk Space Not Checked When Saving Attachments"
-permalink: kb/107/Q107797/
+permalink: /kb/107/Q107797/
 ---
 
 ## Q107797: PC Gen: Disk Space Not Checked When Saving Attachments

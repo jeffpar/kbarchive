@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154988: Troubleshooting Fast EtherLink and EtherLink III (R) Adapters"
-permalink: kb/154/Q154988/
+permalink: /kb/154/Q154988/
 ---
 
 ## Q154988: Troubleshooting Fast EtherLink and EtherLink III (R) Adapters

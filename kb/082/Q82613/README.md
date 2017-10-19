@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82613: Ventura Errors with Multiple Opens on a Network"
-permalink: kb/082/Q82613/
+permalink: /kb/082/Q82613/
 ---
 
 ## Q82613: Ventura Errors with Multiple Opens on a Network

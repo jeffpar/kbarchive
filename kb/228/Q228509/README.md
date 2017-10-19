@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228509: XCLN: Meeting Item Cannot Be Opened on Outlook 8.04 Client"
-permalink: kb/228/Q228509/
+permalink: /kb/228/Q228509/
 ---
 
 ## Q228509: XCLN: Meeting Item Cannot Be Opened on Outlook 8.04 Client

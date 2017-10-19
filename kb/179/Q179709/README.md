@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179709: WD97: Company Name Style Changes Using Letter Wizard"
-permalink: kb/179/Q179709/
+permalink: /kb/179/Q179709/
 ---
 
 ## Q179709: WD97: Company Name Style Changes Using Letter Wizard

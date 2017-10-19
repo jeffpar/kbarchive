@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324379: PRB: Error Message After You Select Backup Configuration Option"
-permalink: kb/324/Q324379/
+permalink: /kb/324/Q324379/
 ---
 
 ## Q324379: PRB: Error Message After You Select Backup Configuration Option

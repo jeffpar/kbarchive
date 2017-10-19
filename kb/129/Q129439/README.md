@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129439: PRB: Connection Designer Doesn't Have OK or Cancel Buttons"
-permalink: kb/129/Q129439/
+permalink: /kb/129/Q129439/
 ---
 
 ## Q129439: PRB: Connection Designer Doesn't Have OK or Cancel Buttons

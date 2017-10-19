@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72851: BUG: Arg+Linsert May Corrupt Lines Longer Than 128 Characters"
-permalink: kb/072/Q72851/
+permalink: /kb/072/Q72851/
 ---
 
 ## Q72851: BUG: Arg+Linsert May Corrupt Lines Longer Than 128 Characters

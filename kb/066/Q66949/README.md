@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66949: INFO: Windows Metafile Functions &amp; Aldus Placeable Metafiles"
-permalink: kb/066/Q66949/
+permalink: /kb/066/Q66949/
 ---
 
 ## Q66949: INFO: Windows Metafile Functions &amp; Aldus Placeable Metafiles

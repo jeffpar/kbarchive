@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299799: FIX: Using Class w/ Same Name as a Base Class Causes Error"
-permalink: kb/299/Q299799/
+permalink: /kb/299/Q299799/
 ---
 
 ## Q299799: FIX: Using Class w/ Same Name as a Base Class Causes Error

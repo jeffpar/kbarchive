@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73844: MS-DOS 5.0 or Later Ignores /X Parameter on BUFFERS= Line"
-permalink: kb/073/Q73844/
+permalink: /kb/073/Q73844/
 ---
 
 ## Q73844: MS-DOS 5.0 or Later Ignores /X Parameter on BUFFERS= Line

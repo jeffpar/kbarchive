@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26281: Redirection Disables REM in Batch Files"
-permalink: kb/026/Q26281/
+permalink: /kb/026/Q26281/
 ---
 
 ## Q26281: Redirection Disables REM in Batch Files

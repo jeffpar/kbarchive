@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169673: XADM: Remote Procedure Call Fails When Generating Offline AB"
-permalink: kb/169/Q169673/
+permalink: /kb/169/Q169673/
 ---
 
 ## Q169673: XADM: Remote Procedure Call Fails When Generating Offline AB

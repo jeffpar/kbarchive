@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140902: ICM Profile Settings for Supported Monitors"
-permalink: kb/140/Q140902/
+permalink: /kb/140/Q140902/
 ---
 
 ## Q140902: ICM Profile Settings for Supported Monitors

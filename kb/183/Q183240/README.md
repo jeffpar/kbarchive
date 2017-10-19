@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183240: Master and Backup Host Account Databases Not in Sync"
-permalink: kb/183/Q183240/
+permalink: /kb/183/Q183240/
 ---
 
 ## Q183240: Master and Backup Host Account Databases Not in Sync

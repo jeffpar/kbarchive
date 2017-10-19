@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146929: XCON: ORName Not Included in Reported IPMessageId"
-permalink: kb/146/Q146929/
+permalink: /kb/146/Q146929/
 ---
 
 ## Q146929: XCON: ORName Not Included in Reported IPMessageId

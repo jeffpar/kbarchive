@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74462: DTC Hard Disk Controllers with BIOS Located in UMA"
-permalink: kb/074/Q74462/
+permalink: /kb/074/Q74462/
 ---
 
 ## Q74462: DTC Hard Disk Controllers with BIOS Located in UMA

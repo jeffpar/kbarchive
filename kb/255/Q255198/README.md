@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255198: Cannot Change DCOM Call Timeouts in Windows NT 4.0"
-permalink: kb/255/Q255198/
+permalink: /kb/255/Q255198/
 ---
 
 ## Q255198: Cannot Change DCOM Call Timeouts in Windows NT 4.0

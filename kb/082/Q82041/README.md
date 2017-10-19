@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82041: Windows Err Msg: Unexpected DOS Error #11"
-permalink: kb/082/Q82041/
+permalink: /kb/082/Q82041/
 ---
 
 ## Q82041: Windows Err Msg: Unexpected DOS Error #11

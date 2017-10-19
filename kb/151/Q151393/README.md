@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151393: Maximum of Two DCA ISCA SDLC Adapters Allowed Per SNA Server"
-permalink: kb/151/Q151393/
+permalink: /kb/151/Q151393/
 ---
 
 ## Q151393: Maximum of Two DCA ISCA SDLC Adapters Allowed Per SNA Server

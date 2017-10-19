@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242467: FIX: Dividing 0 by 0 Returns Garbage Chars or Incorrect Number"
-permalink: kb/242/Q242467/
+permalink: /kb/242/Q242467/
 ---
 
 ## Q242467: FIX: Dividing 0 by 0 Returns Garbage Chars or Incorrect Number

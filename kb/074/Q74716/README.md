@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74716: Windows 3.0 File Manager Print Command Can Only Print Text"
-permalink: kb/074/Q74716/
+permalink: /kb/074/Q74716/
 ---
 
 ## Q74716: Windows 3.0 File Manager Print Command Can Only Print Text

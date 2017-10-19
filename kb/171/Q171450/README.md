@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171450: Possible RPC Errors on Cluster Startup"
-permalink: kb/171/Q171450/
+permalink: /kb/171/Q171450/
 ---
 
 ## Q171450: Possible RPC Errors on Cluster Startup

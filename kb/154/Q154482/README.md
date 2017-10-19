@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154482: FIX: Undocumented Functions in Type Safe Collection Classes"
-permalink: kb/154/Q154482/
+permalink: /kb/154/Q154482/
 ---
 
 ## Q154482: FIX: Undocumented Functions in Type Safe Collection Classes

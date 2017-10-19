@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109855: Flight Simulator For MS-DOS: Thrust Reversers Have No Effect"
-permalink: kb/109/Q109855/
+permalink: /kb/109/Q109855/
 ---
 
 ## Q109855: Flight Simulator For MS-DOS: Thrust Reversers Have No Effect

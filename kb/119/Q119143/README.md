@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119143: Err Msg: Insufficient Memory with SHARE.EXE"
-permalink: kb/119/Q119143/
+permalink: /kb/119/Q119143/
 ---
 
 ## Q119143: Err Msg: Insufficient Memory with SHARE.EXE

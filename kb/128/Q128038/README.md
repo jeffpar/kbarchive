@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128038: Using Novell's ODINSUP with Network Client 3.0 TCP/IP"
-permalink: kb/128/Q128038/
+permalink: /kb/128/Q128038/
 ---
 
 ## Q128038: Using Novell's ODINSUP with Network Client 3.0 TCP/IP

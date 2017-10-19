@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318974: How To Add A Web-based Hotmail E-mail Account To Microsoft Entou"
-permalink: kb/318/Q318974/
+permalink: /kb/318/Q318974/
 ---
 
 ## Q318974: How To Add A Web-based Hotmail E-mail Account To Microsoft Entou

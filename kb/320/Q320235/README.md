@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320235: SMS: Components Change to Install Pending After Service Restart"
-permalink: kb/320/Q320235/
+permalink: /kb/320/Q320235/
 ---
 
 ## Q320235: SMS: Components Change to Install Pending After Service Restart

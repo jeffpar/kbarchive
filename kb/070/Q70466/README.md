@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70466: Video Display Problem on Epson 386SX and 286 Laptops"
-permalink: kb/070/Q70466/
+permalink: /kb/070/Q70466/
 ---
 
 ## Q70466: Video Display Problem on Epson 386SX and 286 Laptops

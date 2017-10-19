@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216986: BUG: QueryInterface Returning E_NOINTERFACE"
-permalink: kb/216/Q216986/
+permalink: /kb/216/Q216986/
 ---
 
 ## Q216986: BUG: QueryInterface Returning E_NOINTERFACE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196334: How to Determine If a Hotfix Is Compatible w/ Terminal Server"
-permalink: kb/196/Q196334/
+permalink: /kb/196/Q196334/
 ---
 
 ## Q196334: How to Determine If a Hotfix Is Compatible w/ Terminal Server

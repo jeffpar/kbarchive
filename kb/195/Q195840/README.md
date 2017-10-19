@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195840: FIX: RowColChange Event of DataGrid Does Not Fire with ADODC"
-permalink: kb/195/Q195840/
+permalink: /kb/195/Q195840/
 ---
 
 ## Q195840: FIX: RowColChange Event of DataGrid Does Not Fire with ADODC

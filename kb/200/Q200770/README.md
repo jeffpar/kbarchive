@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200770: TCP/IP Connection Attempts Take Longer to Time Out"
-permalink: kb/200/Q200770/
+permalink: /kb/200/Q200770/
 ---
 
 ## Q200770: TCP/IP Connection Attempts Take Longer to Time Out

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187740: PRB: UserControl Resize Event Fails with MoveWindow API"
-permalink: kb/187/Q187740/
+permalink: /kb/187/Q187740/
 ---
 
 ## Q187740: PRB: UserControl Resize Event Fails with MoveWindow API

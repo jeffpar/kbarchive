@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168681: Cannot Drag and Drop Connection Between SNA Servers"
-permalink: kb/168/Q168681/
+permalink: /kb/168/Q168681/
 ---
 
 ## Q168681: Cannot Drag and Drop Connection Between SNA Servers

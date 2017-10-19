@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169937: WD97: Avoiding &quot;Save As&quot; Alert When Saving to Different Format"
-permalink: kb/169/Q169937/
+permalink: /kb/169/Q169937/
 ---
 
 ## Q169937: WD97: Avoiding &quot;Save As&quot; Alert When Saving to Different Format

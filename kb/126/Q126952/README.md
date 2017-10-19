@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126952: How to Scope a Variable to a Form"
-permalink: kb/126/Q126952/
+permalink: /kb/126/Q126952/
 ---
 
 ## Q126952: How to Scope a Variable to a Form

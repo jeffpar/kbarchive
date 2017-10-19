@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119578: PPT: Error 340 Printing CorelDRAW! 4.0 Objects to Genigraphics"
-permalink: kb/119/Q119578/
+permalink: /kb/119/Q119578/
 ---
 
 ## Q119578: PPT: Error 340 Printing CorelDRAW! 4.0 Objects to Genigraphics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249108: Registry Data Is Viewable By All Users During Rdisk Repair Updat"
-permalink: kb/249/Q249108/
+permalink: /kb/249/Q249108/
 ---
 
 ## Q249108: Registry Data Is Viewable By All Users During Rdisk Repair Updat

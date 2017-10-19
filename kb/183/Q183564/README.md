@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183564: Start Parameter of Find Method Produces Error Message"
-permalink: kb/183/Q183564/
+permalink: /kb/183/Q183564/
 ---
 
 ## Q183564: Start Parameter of Find Method Produces Error Message

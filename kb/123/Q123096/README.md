@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123096: Windows 95 Err Msg: Setup Error G1. Windows Setup Cannot..."
-permalink: kb/123/Q123096/
+permalink: /kb/123/Q123096/
 ---
 
 ## Q123096: Windows 95 Err Msg: Setup Error G1. Windows Setup Cannot...

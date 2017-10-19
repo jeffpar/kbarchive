@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121436: Doc Err: Entry for Port of LPD Service Not Available"
-permalink: kb/121/Q121436/
+permalink: /kb/121/Q121436/
 ---
 
 ## Q121436: Doc Err: Entry for Port of LPD Service Not Available

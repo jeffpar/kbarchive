@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315576: PRB: Err Msg Starting eVB Project: Object Library Not Registered"
-permalink: kb/315/Q315576/
+permalink: /kb/315/Q315576/
 ---
 
 ## Q315576: PRB: Err Msg Starting eVB Project: Object Library Not Registered

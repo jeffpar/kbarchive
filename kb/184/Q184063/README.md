@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184063: Available Bytes Counter Definition is Incorrect in Perfmon"
-permalink: kb/184/Q184063/
+permalink: /kb/184/Q184063/
 ---
 
 ## Q184063: Available Bytes Counter Definition is Incorrect in Perfmon

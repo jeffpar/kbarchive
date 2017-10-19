@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174134: SMS: Exception 0E May Be Caused Unloading Remote Control Agent"
-permalink: kb/174/Q174134/
+permalink: /kb/174/Q174134/
 ---
 
 ## Q174134: SMS: Exception 0E May Be Caused Unloading Remote Control Agent

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113698: PRB: Command Window Moves Behind Main FoxPro Window"
-permalink: kb/113/Q113698/
+permalink: /kb/113/Q113698/
 ---
 
 ## Q113698: PRB: Command Window Moves Behind Main FoxPro Window

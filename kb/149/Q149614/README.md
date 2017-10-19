@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149614: Replaceable Parameter Not Saved When Editing File Type"
-permalink: kb/149/Q149614/
+permalink: /kb/149/Q149614/
 ---
 
 ## Q149614: Replaceable Parameter Not Saved When Editing File Type

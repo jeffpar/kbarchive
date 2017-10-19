@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229760: Service Pack 5 Updates Scsiport.sys as Expected"
-permalink: kb/229/Q229760/
+permalink: /kb/229/Q229760/
 ---
 
 ## Q229760: Service Pack 5 Updates Scsiport.sys as Expected

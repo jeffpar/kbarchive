@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74516: Binding a TSR to a VxD"
-permalink: kb/074/Q74516/
+permalink: /kb/074/Q74516/
 ---
 
 ## Q74516: Binding a TSR to a VxD

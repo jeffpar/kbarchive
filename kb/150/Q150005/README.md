@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150005: Bookshelf 96-97: Summary of Word and Office Integration"
-permalink: kb/150/Q150005/
+permalink: /kb/150/Q150005/
 ---
 
 ## Q150005: Bookshelf 96-97: Summary of Word and Office Integration

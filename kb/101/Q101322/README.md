@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101322: Peer Web Services 3.0 Inbound HTTP Connections Limit"
-permalink: kb/101/Q101322/
+permalink: /kb/101/Q101322/
 ---
 
 ## Q101322: Peer Web Services 3.0 Inbound HTTP Connections Limit

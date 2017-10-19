@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256091: Age of Empires II: Certain Commands Are Missing"
-permalink: kb/256/Q256091/
+permalink: /kb/256/Q256091/
 ---
 
 ## Q256091: Age of Empires II: Certain Commands Are Missing

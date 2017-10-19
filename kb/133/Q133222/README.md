@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133222: Zypcom Z34-sx v.34 Modem Does Not Work as Class 1 Fax"
-permalink: kb/133/Q133222/
+permalink: /kb/133/Q133222/
 ---
 
 ## Q133222: Zypcom Z34-sx v.34 Modem Does Not Work as Class 1 Fax

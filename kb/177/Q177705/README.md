@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177705: SMS: List Of Supported Video Adapters for SP3's IDISNTKM"
-permalink: kb/177/Q177705/
+permalink: /kb/177/Q177705/
 ---
 
 ## Q177705: SMS: List Of Supported Video Adapters for SP3's IDISNTKM

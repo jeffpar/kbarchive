@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152686: XCLN: How Expired Encryption Key Pairs Work"
-permalink: kb/152/Q152686/
+permalink: /kb/152/Q152686/
 ---
 
 ## Q152686: XCLN: How Expired Encryption Key Pairs Work

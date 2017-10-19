@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123336: &quot;Messages Suppressed&quot; in SNA Server Level 2 Tracing."
-permalink: kb/123/Q123336/
+permalink: /kb/123/Q123336/
 ---
 
 ## Q123336: &quot;Messages Suppressed&quot; in SNA Server Level 2 Tracing.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221732: FIX: Multiple Opens of Memo File May Cause Corruption"
-permalink: kb/221/Q221732/
+permalink: /kb/221/Q221732/
 ---
 
 ## Q221732: FIX: Multiple Opens of Memo File May Cause Corruption

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164854: XADM: Cannot Remotely Administer IMC or MSMCON on WinNT 4.0"
-permalink: kb/164/Q164854/
+permalink: /kb/164/Q164854/
 ---
 
 ## Q164854: XADM: Cannot Remotely Administer IMC or MSMCON on WinNT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192004: PRB: No Immediate Window or Macro Run Dialog in Script Control"
-permalink: kb/192/Q192004/
+permalink: /kb/192/Q192004/
 ---
 
 ## Q192004: PRB: No Immediate Window or Macro Run Dialog in Script Control

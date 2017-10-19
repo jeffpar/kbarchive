@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83708: &quot;sLanguage=&lt;string&gt;&quot; Is Not Inserted into the WIN.INI File"
-permalink: kb/083/Q83708/
+permalink: /kb/083/Q83708/
 ---
 
 ## Q83708: &quot;sLanguage=&lt;string&gt;&quot; Is Not Inserted into the WIN.INI File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184466: How to Disconnect from The Microsoft Network"
-permalink: kb/184/Q184466/
+permalink: /kb/184/Q184466/
 ---
 
 ## Q184466: How to Disconnect from The Microsoft Network

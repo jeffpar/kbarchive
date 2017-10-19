@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157502: License Logging Service May Fail to Start"
-permalink: kb/157/Q157502/
+permalink: /kb/157/Q157502/
 ---
 
 ## Q157502: License Logging Service May Fail to Start

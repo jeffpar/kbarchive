@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150724: Configuration Settings for Visual FoxPro for Macintosh"
-permalink: kb/150/Q150724/
+permalink: /kb/150/Q150724/
 ---
 
 ## Q150724: Configuration Settings for Visual FoxPro for Macintosh

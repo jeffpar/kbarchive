@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160980: Event ID 23, Qualifier 11 While Using Andrew or IBM Twinax Link"
-permalink: kb/160/Q160980/
+permalink: /kb/160/Q160980/
 ---
 
 ## Q160980: Event ID 23, Qualifier 11 While Using Andrew or IBM Twinax Link

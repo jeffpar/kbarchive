@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193864: XFOR: Problems with FX!32 and Exchange's cc:Mail Connector"
-permalink: kb/193/Q193864/
+permalink: /kb/193/Q193864/
 ---
 
 ## Q193864: XFOR: Problems with FX!32 and Exchange's cc:Mail Connector

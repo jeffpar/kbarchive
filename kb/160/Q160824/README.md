@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160824: MSNDS Drops Connections to More Than Eight Servers"
-permalink: kb/160/Q160824/
+permalink: /kb/160/Q160824/
 ---
 
 ## Q160824: MSNDS Drops Connections to More Than Eight Servers

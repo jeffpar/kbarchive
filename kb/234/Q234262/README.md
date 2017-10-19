@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234262: SMS: Linking Query to a Collection Membership Rule May Not Work"
-permalink: kb/234/Q234262/
+permalink: /kb/234/Q234262/
 ---
 
 ## Q234262: SMS: Linking Query to a Collection Membership Rule May Not Work

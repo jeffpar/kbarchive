@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74684: UNIX Login Sign Disappears After Installing MS-DOS"
-permalink: kb/074/Q74684/
+permalink: /kb/074/Q74684/
 ---
 
 ## Q74684: UNIX Login Sign Disappears After Installing MS-DOS

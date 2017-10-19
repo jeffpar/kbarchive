@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q125511: PC Adm: Err Msg: Warning [154] Non-delivery Report..."
-permalink: kb/125/Q125511/
+title: "Q125511: PC Adm: Err Msg: Warning &#91;154&#93; Non-delivery Report..."
+permalink: /kb/125/Q125511/
 ---
 
-## Q125511: PC Adm: Err Msg: Warning [154] Non-delivery Report...
+## Q125511: PC Adm: Err Msg: Warning &#91;154&#93; Non-delivery Report...
 
 	Article: Q125511
 	Product(s): Microsoft Mail For PC Networks

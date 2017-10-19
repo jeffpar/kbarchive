@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129021: CINEMANIA: The Film Encyclopedia Not Included in Cinemania"
-permalink: kb/129/Q129021/
+permalink: /kb/129/Q129021/
 ---
 
 ## Q129021: CINEMANIA: The Film Encyclopedia Not Included in Cinemania

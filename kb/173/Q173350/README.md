@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173350: WD97: When and Why Link Fixing May Not Work"
-permalink: kb/173/Q173350/
+permalink: /kb/173/Q173350/
 ---
 
 ## Q173350: WD97: When and Why Link Fixing May Not Work

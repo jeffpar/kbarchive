@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132599: Shortcut to Network Drive Does Not Work"
-permalink: kb/132/Q132599/
+permalink: /kb/132/Q132599/
 ---
 
 ## Q132599: Shortcut to Network Drive Does Not Work

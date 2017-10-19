@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148262: Removing Windows NT 3.51 SP4 or SP5 May Cause Logon Failures"
-permalink: kb/148/Q148262/
+permalink: /kb/148/Q148262/
 ---
 
 ## Q148262: Removing Windows NT 3.51 SP4 or SP5 May Cause Logon Failures

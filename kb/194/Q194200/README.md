@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194200: Cannot Change WinNT Passwords from Exchange and Outlook Clients"
-permalink: kb/194/Q194200/
+permalink: /kb/194/Q194200/
 ---
 
 ## Q194200: Cannot Change WinNT Passwords from Exchange and Outlook Clients

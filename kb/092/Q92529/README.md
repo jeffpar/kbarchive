@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92529: INFO: Reasons for Failure of Bitmap Functions"
-permalink: kb/092/Q92529/
+permalink: /kb/092/Q92529/
 ---
 
 ## Q92529: INFO: Reasons for Failure of Bitmap Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140108: BUG: Opening an AVI file Fails When MCIWnd Is Subclassed"
-permalink: kb/140/Q140108/
+permalink: /kb/140/Q140108/
 ---
 
 ## Q140108: BUG: Opening an AVI file Fails When MCIWnd Is Subclassed

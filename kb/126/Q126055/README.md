@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126055: Frank Lloyd Wright Err Msg: Call to Undefined Dynalink"
-permalink: kb/126/Q126055/
+permalink: /kb/126/Q126055/
 ---
 
 ## Q126055: Frank Lloyd Wright Err Msg: Call to Undefined Dynalink

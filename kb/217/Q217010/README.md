@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217010: Terminal Server May Be Unable to Start 16-bit DCOM Server"
-permalink: kb/217/Q217010/
+permalink: /kb/217/Q217010/
 ---
 
 ## Q217010: Terminal Server May Be Unable to Start 16-bit DCOM Server

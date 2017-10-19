@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186320: INFO: Determining if a Web Project is Source Code Controlled"
-permalink: kb/186/Q186320/
+permalink: /kb/186/Q186320/
 ---
 
 ## Q186320: INFO: Determining if a Web Project is Source Code Controlled

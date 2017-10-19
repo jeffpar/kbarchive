@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234602: FIX: /Og Generates Bad Code for a Compare/Branch"
-permalink: kb/234/Q234602/
+permalink: /kb/234/Q234602/
 ---
 
 ## Q234602: FIX: /Og Generates Bad Code for a Compare/Branch

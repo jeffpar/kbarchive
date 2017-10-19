@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158553: Encarta 97: Chemical Formulas in Dictionary are Incorrect"
-permalink: kb/158/Q158553/
+permalink: /kb/158/Q158553/
 ---
 
 ## Q158553: Encarta 97: Chemical Formulas in Dictionary are Incorrect

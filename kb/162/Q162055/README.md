@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162055: Ipconfig and Winipcfg Display Only One Default Gateway Address"
-permalink: kb/162/Q162055/
+permalink: /kb/162/Q162055/
 ---
 
 ## Q162055: Ipconfig and Winipcfg Display Only One Default Gateway Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197781: CopyProxy Does Not Make a Copy for Dual Interfaces"
-permalink: kb/197/Q197781/
+permalink: /kb/197/Q197781/
 ---
 
 ## Q197781: CopyProxy Does Not Make a Copy for Dual Interfaces

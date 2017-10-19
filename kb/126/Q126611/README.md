@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126611: PC Adm: PROFS Templates Lost Using IMPORT -T"
-permalink: kb/126/Q126611/
+permalink: /kb/126/Q126611/
 ---
 
 ## Q126611: PC Adm: PROFS Templates Lost Using IMPORT -T

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99864: Buttons Seem Taller on 12-Inch Screen"
-permalink: kb/099/Q99864/
+permalink: /kb/099/Q99864/
 ---
 
 ## Q99864: Buttons Seem Taller on 12-Inch Screen

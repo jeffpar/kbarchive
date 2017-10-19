@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155293: PRB: Time Displayed in IDE Not the Same as System Time"
-permalink: kb/155/Q155293/
+permalink: /kb/155/Q155293/
 ---
 
 ## Q155293: PRB: Time Displayed in IDE Not the Same as System Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131877: How to Create Default PIF for MS-DOS-Based Programs"
-permalink: kb/131/Q131877/
+permalink: /kb/131/Q131877/
 ---
 
 ## Q131877: How to Create Default PIF for MS-DOS-Based Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185163: PRB: Operation Stopped: Data Has Changed"
-permalink: kb/185/Q185163/
+permalink: /kb/185/Q185163/
 ---
 
 ## Q185163: PRB: Operation Stopped: Data Has Changed

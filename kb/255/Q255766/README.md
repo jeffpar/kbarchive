@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255766: XADM: MSExchangeMTA Stops Unexpectedly with &quot;Access Violation&quot;"
-permalink: kb/255/Q255766/
+permalink: /kb/255/Q255766/
 ---
 
 ## Q255766: XADM: MSExchangeMTA Stops Unexpectedly with &quot;Access Violation&quot;

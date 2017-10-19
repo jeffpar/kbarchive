@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139051: HOWTO: Select Cells in Excel by Using OLE Automation"
-permalink: kb/139/Q139051/
+permalink: /kb/139/Q139051/
 ---
 
 ## Q139051: HOWTO: Select Cells in Excel by Using OLE Automation

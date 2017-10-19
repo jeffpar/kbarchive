@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183229: RAS Uses Fixed TCP/IP MTU Size"
-permalink: kb/183/Q183229/
+permalink: /kb/183/Q183229/
 ---
 
 ## Q183229: RAS Uses Fixed TCP/IP MTU Size

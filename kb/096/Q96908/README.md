@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96908: Network Installation of TrueType Font Pack 2"
-permalink: kb/096/Q96908/
+permalink: /kb/096/Q96908/
 ---
 
 ## Q96908: Network Installation of TrueType Font Pack 2

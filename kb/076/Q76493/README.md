@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76493: Creating a Nonscrollable Region in Windows Help 3.1"
-permalink: kb/076/Q76493/
+permalink: /kb/076/Q76493/
 ---
 
 ## Q76493: Creating a Nonscrollable Region in Windows Help 3.1

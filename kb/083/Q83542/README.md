@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83542: Mac Fax: Fax Gateway Versions"
-permalink: kb/083/Q83542/
+permalink: /kb/083/Q83542/
 ---
 
 ## Q83542: Mac Fax: Fax Gateway Versions

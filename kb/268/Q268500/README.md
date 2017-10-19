@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268500: Advertisement Rescheduling May Fail Due to Improper APM Code"
-permalink: kb/268/Q268500/
+permalink: /kb/268/Q268500/
 ---
 
 ## Q268500: Advertisement Rescheduling May Fail Due to Improper APM Code

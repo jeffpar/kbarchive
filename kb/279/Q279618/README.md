@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279618: XFOR:  How to Move Directory Replication to a Site Connector"
-permalink: kb/279/Q279618/
+permalink: /kb/279/Q279618/
 ---
 
 ## Q279618: XFOR:  How to Move Directory Replication to a Site Connector

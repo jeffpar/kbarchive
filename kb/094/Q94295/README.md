@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94295: PRB: &quot;!&quot; Modifier Fails in a Macro Substitution"
-permalink: kb/094/Q94295/
+permalink: /kb/094/Q94295/
 ---
 
 ## Q94295: PRB: &quot;!&quot; Modifier Fails in a Macro Substitution

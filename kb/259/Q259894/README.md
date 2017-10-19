@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259894: XCLN: Error Closing PowerPoint Presentation from Public Folder"
-permalink: kb/259/Q259894/
+permalink: /kb/259/Q259894/
 ---
 
 ## Q259894: XCLN: Error Closing PowerPoint Presentation from Public Folder

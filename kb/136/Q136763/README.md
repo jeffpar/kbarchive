@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136763: HOWTO: Play an AVI File w/ an API Call to 16-bit Mmsystem.dll"
-permalink: kb/136/Q136763/
+permalink: /kb/136/Q136763/
 ---
 
 ## Q136763: HOWTO: Play an AVI File w/ an API Call to 16-bit Mmsystem.dll

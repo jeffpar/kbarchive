@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250984: MSB Bugs: Error Message When You Click &quot;Run Demo&quot;"
-permalink: kb/250/Q250984/
+permalink: /kb/250/Q250984/
 ---
 
 ## Q250984: MSB Bugs: Error Message When You Click &quot;Run Demo&quot;

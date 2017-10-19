@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137601: PPT: Justify Text Command Unavailable in PowerPoint"
-permalink: kb/137/Q137601/
+permalink: /kb/137/Q137601/
 ---
 
 ## Q137601: PPT: Justify Text Command Unavailable in PowerPoint

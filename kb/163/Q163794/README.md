@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163794: HOWTO: Save and Restore Grid Column Order and Widths"
-permalink: kb/163/Q163794/
+permalink: /kb/163/Q163794/
 ---
 
 ## Q163794: HOWTO: Save and Restore Grid Column Order and Widths

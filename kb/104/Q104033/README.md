@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104033: Uncompressed Removable Media Disk Files Displayed w/Host Drive"
-permalink: kb/104/Q104033/
+permalink: /kb/104/Q104033/
 ---
 
 ## Q104033: Uncompressed Removable Media Disk Files Displayed w/Host Drive

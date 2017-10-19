@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260862: StarLancer: Hangs When You Click an Option on the Game Menu"
-permalink: kb/260/Q260862/
+permalink: /kb/260/Q260862/
 ---
 
 ## Q260862: StarLancer: Hangs When You Click an Option on the Game Menu

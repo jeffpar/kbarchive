@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220969: INFO: Description of Files in the DATA Directory"
-permalink: kb/220/Q220969/
+permalink: /kb/220/Q220969/
 ---
 
 ## Q220969: INFO: Description of Files in the DATA Directory

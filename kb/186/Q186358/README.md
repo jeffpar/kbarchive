@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186358: How to Enable TAPI 2.1 in Windows NT 4.0 with Service Pack 4"
-permalink: kb/186/Q186358/
+permalink: /kb/186/Q186358/
 ---
 
 ## Q186358: How to Enable TAPI 2.1 in Windows NT 4.0 with Service Pack 4

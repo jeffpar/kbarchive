@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168101: WD97: AutoComplete Suggests Incorrect Date"
-permalink: kb/168/Q168101/
+permalink: /kb/168/Q168101/
 ---
 
 ## Q168101: WD97: AutoComplete Suggests Incorrect Date

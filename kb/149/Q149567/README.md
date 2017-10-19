@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149567: How to Add Pinehurst Tips and Fly-Bys to Multimedia Golf 2.0"
-permalink: kb/149/Q149567/
+permalink: /kb/149/Q149567/
 ---
 
 ## Q149567: How to Add Pinehurst Tips and Fly-Bys to Multimedia Golf 2.0

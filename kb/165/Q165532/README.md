@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165532: WD97: How to Upgrade from Works to Word 97"
-permalink: kb/165/Q165532/
+permalink: /kb/165/Q165532/
 ---
 
 ## Q165532: WD97: How to Upgrade from Works to Word 97

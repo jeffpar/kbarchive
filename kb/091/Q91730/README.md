@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91730: PC Win: Custom Dictionary Not Loaded When It Should Be"
-permalink: kb/091/Q91730/
+permalink: /kb/091/Q91730/
 ---
 
 ## Q91730: PC Win: Custom Dictionary Not Loaded When It Should Be

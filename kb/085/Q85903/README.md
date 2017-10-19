@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85903: CodeView Err Msg: Attempted to Run Protected Mode..."
-permalink: kb/085/Q85903/
+permalink: /kb/085/Q85903/
 ---
 
 ## Q85903: CodeView Err Msg: Attempted to Run Protected Mode...

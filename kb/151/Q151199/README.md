@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151199: TN3270E Admin Shows LU Names Incorrectly in Edit Configuration"
-permalink: kb/151/Q151199/
+permalink: /kb/151/Q151199/
 ---
 
 ## Q151199: TN3270E Admin Shows LU Names Incorrectly in Edit Configuration

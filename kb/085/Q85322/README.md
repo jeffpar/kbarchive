@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85322: Genius 1000 Requires Updated ROM and G2BIOS.SYS 1.5 or Later"
-permalink: kb/085/Q85322/
+permalink: /kb/085/Q85322/
 ---
 
 ## Q85322: Genius 1000 Requires Updated ROM and G2BIOS.SYS 1.5 or Later

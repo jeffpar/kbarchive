@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103163: PC Win: Microsoft Word Send Option Sends Icon or Text"
-permalink: kb/103/Q103163/
+permalink: /kb/103/Q103163/
 ---
 
 ## Q103163: PC Win: Microsoft Word Send Option Sends Icon or Text

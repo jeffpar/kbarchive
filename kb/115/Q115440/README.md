@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115440: X400: Priority 1 Mail Returned in 24 Hours Instead of 36 Hours"
-permalink: kb/115/Q115440/
+permalink: /kb/115/Q115440/
 ---
 
 ## Q115440: X400: Priority 1 Mail Returned in 24 Hours Instead of 36 Hours

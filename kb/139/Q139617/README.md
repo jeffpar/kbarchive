@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139617: Windows 95 Disconnects Attempting to Connect to Windows NT RAS"
-permalink: kb/139/Q139617/
+permalink: /kb/139/Q139617/
 ---
 
 ## Q139617: Windows 95 Disconnects Attempting to Connect to Windows NT RAS

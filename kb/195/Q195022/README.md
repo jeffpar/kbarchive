@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195022: PRB: VB: &quot;File could not be mapped to the SourceSafe Project&quot;"
-permalink: kb/195/Q195022/
+permalink: /kb/195/Q195022/
 ---
 
 ## Q195022: PRB: VB: &quot;File could not be mapped to the SourceSafe Project&quot;

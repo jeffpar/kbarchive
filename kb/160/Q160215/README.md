@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160215: HOWTO: Obtain the Host IP Address Using Windows Sockets"
-permalink: kb/160/Q160215/
+permalink: /kb/160/Q160215/
 ---
 
 ## Q160215: HOWTO: Obtain the Host IP Address Using Windows Sockets

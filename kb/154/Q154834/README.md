@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154834: PRB: Checking Out Forms and MAK File Loses Changes in Memory"
-permalink: kb/154/Q154834/
+permalink: /kb/154/Q154834/
 ---
 
 ## Q154834: PRB: Checking Out Forms and MAK File Loses Changes in Memory

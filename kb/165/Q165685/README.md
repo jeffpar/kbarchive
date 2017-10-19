@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165685: INFO: Visual C++ 5.0 Readme, MFC and Other Libraries"
-permalink: kb/165/Q165685/
+permalink: /kb/165/Q165685/
 ---
 
 ## Q165685: INFO: Visual C++ 5.0 Readme, MFC and Other Libraries

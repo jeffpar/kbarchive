@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114735: Service Pack 2: COM2 Port Problem"
-permalink: kb/114/Q114735/
+permalink: /kb/114/Q114735/
 ---
 
 ## Q114735: Service Pack 2: COM2 Port Problem

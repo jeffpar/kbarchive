@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298935: SMS: Clients Remove Components and Clintx86.ofr Is Incomplete"
-permalink: kb/298/Q298935/
+permalink: /kb/298/Q298935/
 ---
 
 ## Q298935: SMS: Clients Remove Components and Clintx86.ofr Is Incomplete

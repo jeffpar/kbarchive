@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184058: Unable to Change Password Using IIS 4.0 Change Password Feature"
-permalink: kb/184/Q184058/
+permalink: /kb/184/Q184058/
 ---
 
 ## Q184058: Unable to Change Password Using IIS 4.0 Change Password Feature

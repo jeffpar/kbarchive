@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214791: Dr. Watson Log File May Not Contain Task List"
-permalink: kb/214/Q214791/
+permalink: /kb/214/Q214791/
 ---
 
 ## Q214791: Dr. Watson Log File May Not Contain Task List

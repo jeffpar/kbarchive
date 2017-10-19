@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321750: Dungeon Siege 1.0: &quot;Encountered Problem&quot; Err Loading Saved Game"
-permalink: kb/321/Q321750/
+permalink: /kb/321/Q321750/
 ---
 
 ## Q321750: Dungeon Siege 1.0: &quot;Encountered Problem&quot; Err Loading Saved Game

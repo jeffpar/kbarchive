@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167265: XADM: Missing File New Custom Recipient Option"
-permalink: kb/167/Q167265/
+permalink: /kb/167/Q167265/
 ---
 
 ## Q167265: XADM: Missing File New Custom Recipient Option

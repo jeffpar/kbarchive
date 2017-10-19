@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186303: NTbackup Reports Drive Verify as Informational or Error Message"
-permalink: kb/186/Q186303/
+permalink: /kb/186/Q186303/
 ---
 
 ## Q186303: NTbackup Reports Drive Verify as Informational or Error Message

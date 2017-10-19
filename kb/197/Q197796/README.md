@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197796: Informix IDS Does Not Start After Installing Service Pack 4"
-permalink: kb/197/Q197796/
+permalink: /kb/197/Q197796/
 ---
 
 ## Q197796: Informix IDS Does Not Start After Installing Service Pack 4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76182: Above DISC Compatibility with DOS=HIGH or HIMEM.SYS"
-permalink: kb/076/Q76182/
+permalink: /kb/076/Q76182/
 ---
 
 ## Q76182: Above DISC Compatibility with DOS=HIGH or HIMEM.SYS

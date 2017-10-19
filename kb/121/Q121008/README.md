@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121008: Microsoft Diagnostic Utility: Definition of SXMS"
-permalink: kb/121/Q121008/
+permalink: /kb/121/Q121008/
 ---
 
 ## Q121008: Microsoft Diagnostic Utility: Definition of SXMS

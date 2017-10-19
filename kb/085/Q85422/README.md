@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85422: PRINTERS.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85422/
+permalink: /kb/085/Q85422/
 ---
 
 ## Q85422: PRINTERS.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2

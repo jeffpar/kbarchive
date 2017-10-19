@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168293: Zip Cartridges Formatted in LBA Mode are Unreadable"
-permalink: kb/168/Q168293/
+permalink: /kb/168/Q168293/
 ---
 
 ## Q168293: Zip Cartridges Formatted in LBA Mode are Unreadable

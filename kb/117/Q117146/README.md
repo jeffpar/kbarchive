@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117146: BUG: Invalid &quot;Argument List Doesn't Match A Function&quot; Error"
-permalink: kb/117/Q117146/
+permalink: /kb/117/Q117146/
 ---
 
 ## Q117146: BUG: Invalid &quot;Argument List Doesn't Match A Function&quot; Error

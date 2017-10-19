@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82826: OLE and Networking Issues"
-permalink: kb/082/Q82826/
+permalink: /kb/082/Q82826/
 ---
 
 ## Q82826: OLE and Networking Issues

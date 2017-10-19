@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121532: NCB_CALL Using Group Names Fails on TCP/IP-32"
-permalink: kb/121/Q121532/
+permalink: /kb/121/Q121532/
 ---
 
 ## Q121532: NCB_CALL Using Group Names Fails on TCP/IP-32

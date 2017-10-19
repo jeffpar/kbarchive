@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115866: Err Msg After Installing MS-DOS: Your Computer Is Running..."
-permalink: kb/115/Q115866/
+permalink: /kb/115/Q115866/
 ---
 
 ## Q115866: Err Msg After Installing MS-DOS: Your Computer Is Running...

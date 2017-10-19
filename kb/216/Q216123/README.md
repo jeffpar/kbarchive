@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216123: Print Jobs May Not Finish Printing if Host Sends SHUTD"
-permalink: kb/216/Q216123/
+permalink: /kb/216/Q216123/
 ---
 
 ## Q216123: Print Jobs May Not Finish Printing if Host Sends SHUTD

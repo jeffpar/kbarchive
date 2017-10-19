@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149681: Cli_&#42;.exe (CLISETUP) Recreates an Empty MS Tree"
-permalink: kb/149/Q149681/
+permalink: /kb/149/Q149681/
 ---
 
 ## Q149681: Cli_&#42;.exe (CLISETUP) Recreates an Empty MS Tree

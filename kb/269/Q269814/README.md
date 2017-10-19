@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269814: Magic School Bus: How to Troubleshoot Video Display Issues"
-permalink: kb/269/Q269814/
+permalink: /kb/269/Q269814/
 ---
 
 ## Q269814: Magic School Bus: How to Troubleshoot Video Display Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149775: World Atlas: Program Hangs When You Click Statistic Button"
-permalink: kb/149/Q149775/
+permalink: /kb/149/Q149775/
 ---
 
 ## Q149775: World Atlas: Program Hangs When You Click Statistic Button

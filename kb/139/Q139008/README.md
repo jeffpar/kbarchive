@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139008: Problems Printing from Mastering Visual FoxPro"
-permalink: kb/139/Q139008/
+permalink: /kb/139/Q139008/
 ---
 
 ## Q139008: Problems Printing from Mastering Visual FoxPro

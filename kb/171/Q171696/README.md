@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171696: Ending DUN Connection Not the Same as Logging Off"
-permalink: kb/171/Q171696/
+permalink: /kb/171/Q171696/
 ---
 
 ## Q171696: Ending DUN Connection Not the Same as Logging Off

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74764: Cannot Run Windows Because of Video Device Conflict"
-permalink: kb/074/Q74764/
+permalink: /kb/074/Q74764/
 ---
 
 ## Q74764: Cannot Run Windows Because of Video Device Conflict

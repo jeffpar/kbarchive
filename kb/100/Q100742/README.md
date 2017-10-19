@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100742: Problems Running MSAV While MIDI File Is Playing"
-permalink: kb/100/Q100742/
+permalink: /kb/100/Q100742/
 ---
 
 ## Q100742: Problems Running MSAV While MIDI File Is Playing

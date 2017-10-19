@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100552: Total of Report Bands Cannot Exceed Page Length"
-permalink: kb/100/Q100552/
+permalink: /kb/100/Q100552/
 ---
 
 ## Q100552: Total of Report Bands Cannot Exceed Page Length

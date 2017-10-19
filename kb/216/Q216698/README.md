@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216698: Cannot Connect to Network Drive While Backing Up"
-permalink: kb/216/Q216698/
+permalink: /kb/216/Q216698/
 ---
 
 ## Q216698: Cannot Connect to Network Drive While Backing Up

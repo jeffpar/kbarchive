@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240301: HOWTO: Use the MSDN Library Successfully with Terminal Server"
-permalink: kb/240/Q240301/
+permalink: /kb/240/Q240301/
 ---
 
 ## Q240301: HOWTO: Use the MSDN Library Successfully with Terminal Server

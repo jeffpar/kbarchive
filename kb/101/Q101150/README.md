@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101150: Operating Characteristics and Restrictions of Named Pipes"
-permalink: kb/101/Q101150/
+permalink: /kb/101/Q101150/
 ---
 
 ## Q101150: Operating Characteristics and Restrictions of Named Pipes

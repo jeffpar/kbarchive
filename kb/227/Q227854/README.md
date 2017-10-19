@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227854: XCLN: Dr. Watson in Schedule+ While Opening Outlook Calendar"
-permalink: kb/227/Q227854/
+permalink: /kb/227/Q227854/
 ---
 
 ## Q227854: XCLN: Dr. Watson in Schedule+ While Opening Outlook Calendar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74496: MS-DOS Device Driver Names Cannot be Used as File Names"
-permalink: kb/074/Q74496/
+permalink: /kb/074/Q74496/
 ---
 
 ## Q74496: MS-DOS Device Driver Names Cannot be Used as File Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84481: SPY Utility Reports Application Name, Not Module Name"
-permalink: kb/084/Q84481/
+permalink: /kb/084/Q84481/
 ---
 
 ## Q84481: SPY Utility Reports Application Name, Not Module Name

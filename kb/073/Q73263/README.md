@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73263: Softlogic Disk Optimizer Requires Updated Version"
-permalink: kb/073/Q73263/
+permalink: /kb/073/Q73263/
 ---
 
 ## Q73263: Softlogic Disk Optimizer Requires Updated Version

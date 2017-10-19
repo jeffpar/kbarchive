@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159880: WD97: Invalid Page Fault Clicking Check Errors"
-permalink: kb/159/Q159880/
+permalink: /kb/159/Q159880/
 ---
 
 ## Q159880: WD97: Invalid Page Fault Clicking Check Errors

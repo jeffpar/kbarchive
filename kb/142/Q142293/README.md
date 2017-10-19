@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142293: Why Some Methods/Properties Do Not Appear in Object Browser"
-permalink: kb/142/Q142293/
+permalink: /kb/142/Q142293/
 ---
 
 ## Q142293: Why Some Methods/Properties Do Not Appear in Object Browser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183949: Bookshelf 98: Duplicate Image Is Pasted Instead of Article Text"
-permalink: kb/183/Q183949/
+permalink: /kb/183/Q183949/
 ---
 
 ## Q183949: Bookshelf 98: Duplicate Image Is Pasted Instead of Article Text

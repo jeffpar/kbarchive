@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132351: NE2000 Install Fails with Default Base I/O Address"
-permalink: kb/132/Q132351/
+permalink: /kb/132/Q132351/
 ---
 
 ## Q132351: NE2000 Install Fails with Default Base I/O Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311772: Encarta Online Deluxe: Description of Encarta Online Deluxe"
-permalink: kb/311/Q311772/
+permalink: /kb/311/Q311772/
 ---
 
 ## Q311772: Encarta Online Deluxe: Description of Encarta Online Deluxe

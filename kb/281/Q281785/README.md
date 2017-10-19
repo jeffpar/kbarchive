@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281785: Golf 2001: Game Hangs If You Decline EULA"
-permalink: kb/281/Q281785/
+permalink: /kb/281/Q281785/
 ---
 
 ## Q281785: Golf 2001: Game Hangs If You Decline EULA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201164: XADM:  Knowledge Consistency Checker Returns Events 2024, 1124"
-permalink: kb/201/Q201164/
+permalink: /kb/201/Q201164/
 ---
 
 ## Q201164: XADM:  Knowledge Consistency Checker Returns Events 2024, 1124

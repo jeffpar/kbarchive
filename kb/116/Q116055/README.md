@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116055: Baseball: Help Stays Open After Baseball Closes"
-permalink: kb/116/Q116055/
+permalink: /kb/116/Q116055/
 ---
 
 ## Q116055: Baseball: Help Stays Open After Baseball Closes

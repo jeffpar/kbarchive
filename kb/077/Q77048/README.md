@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77048: Windows 3.0a Printer Drivers"
-permalink: kb/077/Q77048/
+permalink: /kb/077/Q77048/
 ---
 
 ## Q77048: Windows 3.0a Printer Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74930: America Online AOL Command Hangs with MS-DOS 5 and later"
-permalink: kb/074/Q74930/
+permalink: /kb/074/Q74930/
 ---
 
 ## Q74930: America Online AOL Command Hangs with MS-DOS 5 and later

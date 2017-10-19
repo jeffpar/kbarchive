@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131962: XCON: X25CallFacilities and X25CallUserData in Registry"
-permalink: kb/131/Q131962/
+permalink: /kb/131/Q131962/
 ---
 
 ## Q131962: XCON: X25CallFacilities and X25CallUserData in Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295071: XFOR: How to Restore and Back Up Correlation Tables for SNADS"
-permalink: kb/295/Q295071/
+permalink: /kb/295/Q295071/
 ---
 
 ## Q295071: XFOR: How to Restore and Back Up Correlation Tables for SNADS

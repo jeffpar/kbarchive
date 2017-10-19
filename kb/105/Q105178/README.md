@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105178: PC Adm: Using Import to Modify Home Postoffice Name"
-permalink: kb/105/Q105178/
+permalink: /kb/105/Q105178/
 ---
 
 ## Q105178: PC Adm: Using Import to Modify Home Postoffice Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88359: Varityper VT-600P Missing Some Resident Fonts in Windows 3.1"
-permalink: kb/088/Q88359/
+permalink: /kb/088/Q88359/
 ---
 
 ## Q88359: Varityper VT-600P Missing Some Resident Fonts in Windows 3.1

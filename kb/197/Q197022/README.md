@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197022: WD97: Status Bar Lists Incorrect Line Number in Table"
-permalink: kb/197/Q197022/
+permalink: /kb/197/Q197022/
 ---
 
 ## Q197022: WD97: Status Bar Lists Incorrect Line Number in Table

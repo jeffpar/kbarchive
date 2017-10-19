@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243813: Problems Auditing Files with Bypass Traverse Checking Enabled"
-permalink: kb/243/Q243813/
+permalink: /kb/243/Q243813/
 ---
 
 ## Q243813: Problems Auditing Files with Bypass Traverse Checking Enabled

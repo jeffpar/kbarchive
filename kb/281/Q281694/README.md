@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281694: Installing and Configuring Eicon S-51 Adapter in Windows NT 4.0"
-permalink: kb/281/Q281694/
+permalink: /kb/281/Q281694/
 ---
 
 ## Q281694: Installing and Configuring Eicon S-51 Adapter in Windows NT 4.0

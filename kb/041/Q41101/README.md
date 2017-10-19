@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41101: CodeView and Video Pages"
-permalink: kb/041/Q41101/
+permalink: /kb/041/Q41101/
 ---
 
 ## Q41101: CodeView and Video Pages

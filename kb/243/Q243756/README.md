@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243756: HOWTO: Use Encrypting File System (EFS) with IIS"
-permalink: kb/243/Q243756/
+permalink: /kb/243/Q243756/
 ---
 
 ## Q243756: HOWTO: Use Encrypting File System (EFS) with IIS

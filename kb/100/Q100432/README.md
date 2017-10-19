@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100432: PRB: LABEL Command SAMPLE Clause Doesn't Work with Windows"
-permalink: kb/100/Q100432/
+permalink: /kb/100/Q100432/
 ---
 
 ## Q100432: PRB: LABEL Command SAMPLE Clause Doesn't Work with Windows

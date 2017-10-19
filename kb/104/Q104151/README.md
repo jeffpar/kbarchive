@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104151: Setup Doesn't Install Audio Drivers in NT"
-permalink: kb/104/Q104151/
+permalink: /kb/104/Q104151/
 ---
 
 ## Q104151: Setup Doesn't Install Audio Drivers in NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322051: Programs May Not Connect to Server with Mismatched Security DLLs"
-permalink: kb/322/Q322051/
+permalink: /kb/322/Q322051/
 ---
 
 ## Q322051: Programs May Not Connect to Server with Mismatched Security DLLs

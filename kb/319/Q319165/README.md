@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319165: Documentation Error in Host Integration Server 2000 SDK"
-permalink: kb/319/Q319165/
+permalink: /kb/319/Q319165/
 ---
 
 ## Q319165: Documentation Error in Host Integration Server 2000 SDK

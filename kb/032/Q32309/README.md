@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32309: Using _harderr to Capture Critical Error Interrupt 24h"
-permalink: kb/032/Q32309/
+permalink: /kb/032/Q32309/
 ---
 
 ## Q32309: Using _harderr to Capture Critical Error Interrupt 24h

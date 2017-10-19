@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q74046: Setver /? [Drive:Path] Refers to SETVER, Not Executable"
-permalink: kb/074/Q74046/
+title: "Q74046: Setver /? &#91;Drive:Path&#93; Refers to SETVER, Not Executable"
+permalink: /kb/074/Q74046/
 ---
 
-## Q74046: Setver /? [Drive:Path] Refers to SETVER, Not Executable
+## Q74046: Setver /? &#91;Drive:Path&#93; Refers to SETVER, Not Executable
 
 	Article: Q74046
 	Product(s): Microsoft Disk Operating System

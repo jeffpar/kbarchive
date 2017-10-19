@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191640: BUG: ActiveForm Property Returns Error When Not FormSet"
-permalink: kb/191/Q191640/
+permalink: /kb/191/Q191640/
 ---
 
 ## Q191640: BUG: ActiveForm Property Returns Error When Not FormSet

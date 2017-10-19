@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163268: PPT: Sample Code to Change the Zoom Percentage"
-permalink: kb/163/Q163268/
+permalink: /kb/163/Q163268/
 ---
 
 ## Q163268: PPT: Sample Code to Change the Zoom Percentage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112493: Multimedia: Pause Button Turns to Play Before Segment Ends"
-permalink: kb/112/Q112493/
+permalink: /kb/112/Q112493/
 ---
 
 ## Q112493: Multimedia: Pause Button Turns to Play Before Segment Ends

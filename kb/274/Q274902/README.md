@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274902: Combat Flight Simulator 2: Graphics Options Are Turned Off When"
-permalink: kb/274/Q274902/
+permalink: /kb/274/Q274902/
 ---
 
 ## Q274902: Combat Flight Simulator 2: Graphics Options Are Turned Off When

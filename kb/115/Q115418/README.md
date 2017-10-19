@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115418: INFO: Appending from a Delimited ASCII File Using Low-Level I/O"
-permalink: kb/115/Q115418/
+permalink: /kb/115/Q115418/
 ---
 
 ## Q115418: INFO: Appending from a Delimited ASCII File Using Low-Level I/O

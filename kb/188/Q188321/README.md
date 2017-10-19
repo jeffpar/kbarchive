@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188321: FindFirstChangeNotification May Not Notify All Processes"
-permalink: kb/188/Q188321/
+permalink: /kb/188/Q188321/
 ---
 
 ## Q188321: FindFirstChangeNotification May Not Notify All Processes

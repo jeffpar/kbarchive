@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238009: Loss of Connection with Node Persists Until Node Is Restarted"
-permalink: kb/238/Q238009/
+permalink: /kb/238/Q238009/
 ---
 
 ## Q238009: Loss of Connection with Node Persists Until Node Is Restarted

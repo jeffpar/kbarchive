@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86491: Rotated Clock with Multimedia Windows Alarm Clock"
-permalink: kb/086/Q86491/
+permalink: /kb/086/Q86491/
 ---
 
 ## Q86491: Rotated Clock with Multimedia Windows Alarm Clock

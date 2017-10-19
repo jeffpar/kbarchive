@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214572: How To Retrieve Link Information For SNA Server Programmatically"
-permalink: kb/214/Q214572/
+permalink: /kb/214/Q214572/
 ---
 
 ## Q214572: How To Retrieve Link Information For SNA Server Programmatically

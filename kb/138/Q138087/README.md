@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138087: No &quot;To&quot; Column in Sent Items Subfolder in Microsoft Exchange"
-permalink: kb/138/Q138087/
+permalink: /kb/138/Q138087/
 ---
 
 ## Q138087: No &quot;To&quot; Column in Sent Items Subfolder in Microsoft Exchange

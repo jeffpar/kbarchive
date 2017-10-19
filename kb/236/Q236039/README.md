@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236039: SMS: Client May Not Install On Finnish Windows NT Workstations"
-permalink: kb/236/Q236039/
+permalink: /kb/236/Q236039/
 ---
 
 ## Q236039: SMS: Client May Not Install On Finnish Windows NT Workstations

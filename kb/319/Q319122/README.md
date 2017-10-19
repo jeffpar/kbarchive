@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319122: Slow Network Performance, and Event ID 3013 Is Logged"
-permalink: kb/319/Q319122/
+permalink: /kb/319/Q319122/
 ---
 
 ## Q319122: Slow Network Performance, and Event ID 3013 Is Logged

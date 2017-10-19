@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273992: Index Server Does Not Filter Documents with Large Property Sets"
-permalink: kb/273/Q273992/
+permalink: /kb/273/Q273992/
 ---
 
 ## Q273992: Index Server Does Not Filter Documents with Large Property Sets

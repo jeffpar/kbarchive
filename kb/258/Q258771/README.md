@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258771: Cannot Connect to Virtual IP Address by UNC Without NetBIOS"
-permalink: kb/258/Q258771/
+permalink: /kb/258/Q258771/
 ---
 
 ## Q258771: Cannot Connect to Virtual IP Address by UNC Without NetBIOS

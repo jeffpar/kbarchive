@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71289: Two XGA Display Cards in one System"
-permalink: kb/071/Q71289/
+permalink: /kb/071/Q71289/
 ---
 
 ## Q71289: Two XGA Display Cards in one System

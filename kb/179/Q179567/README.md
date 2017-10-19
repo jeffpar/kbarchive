@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179567: ODE97: Setup Wizard Template Files Updater Available"
-permalink: kb/179/Q179567/
+permalink: /kb/179/Q179567/
 ---
 
 ## Q179567: ODE97: Setup Wizard Template Files Updater Available

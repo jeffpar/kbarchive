@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162961: ODE97: Run-Time Application Cannot Find System.mdw After Setup"
-permalink: kb/162/Q162961/
+permalink: /kb/162/Q162961/
 ---
 
 ## Q162961: ODE97: Run-Time Application Cannot Find System.mdw After Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312885: How to Obtain Help and Support for Xbox"
-permalink: kb/312/Q312885/
+permalink: /kb/312/Q312885/
 ---
 
 ## Q312885: How to Obtain Help and Support for Xbox

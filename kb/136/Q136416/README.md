@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136416: Windows Does Not Start Normally With Bootgui=1 in the Msdos.sys"
-permalink: kb/136/Q136416/
+permalink: /kb/136/Q136416/
 ---
 
 ## Q136416: Windows Does Not Start Normally With Bootgui=1 in the Msdos.sys

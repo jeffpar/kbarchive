@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222001: XCLN: No &quot;Open Recurring Item&quot; Prompt in Outlook Calendar"
-permalink: kb/222/Q222001/
+permalink: /kb/222/Q222001/
 ---
 
 ## Q222001: XCLN: No &quot;Open Recurring Item&quot; Prompt in Outlook Calendar

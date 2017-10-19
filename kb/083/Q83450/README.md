@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83450: Windows 3.1 Serial Communications Q &amp; A Part 2"
-permalink: kb/083/Q83450/
+permalink: /kb/083/Q83450/
 ---
 
 ## Q83450: Windows 3.1 Serial Communications Q &amp; A Part 2

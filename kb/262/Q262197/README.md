@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262197: Allegiance: Nothing Happens When Player Attempts Suicide"
-permalink: kb/262/Q262197/
+permalink: /kb/262/Q262197/
 ---
 
 ## Q262197: Allegiance: Nothing Happens When Player Attempts Suicide

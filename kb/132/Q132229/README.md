@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132229: Where to Set Environment Settings for Visual FoxPro"
-permalink: kb/132/Q132229/
+permalink: /kb/132/Q132229/
 ---
 
 ## Q132229: Where to Set Environment Settings for Visual FoxPro

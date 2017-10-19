@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132825: &quot;VMError - makepattern&quot; Error Printing to PostScript Printer"
-permalink: kb/132/Q132825/
+permalink: /kb/132/Q132825/
 ---
 
 ## Q132825: &quot;VMError - makepattern&quot; Error Printing to PostScript Printer

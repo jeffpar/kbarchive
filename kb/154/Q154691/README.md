@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154691: XCLN: How to Print the Schedule+ Contact List in Two Columns"
-permalink: kb/154/Q154691/
+permalink: /kb/154/Q154691/
 ---
 
 ## Q154691: XCLN: How to Print the Schedule+ Contact List in Two Columns

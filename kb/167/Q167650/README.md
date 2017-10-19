@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167650: FIX: Problems with ToolTips on Windows 95"
-permalink: kb/167/Q167650/
+permalink: /kb/167/Q167650/
 ---
 
 ## Q167650: FIX: Problems with ToolTips on Windows 95

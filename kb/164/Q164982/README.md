@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164982: Lack of Secondary Address May Cause DNS Service to Hang"
-permalink: kb/164/Q164982/
+permalink: /kb/164/Q164982/
 ---
 
 ## Q164982: Lack of Secondary Address May Cause DNS Service to Hang

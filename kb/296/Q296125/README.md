@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296125: Error Calling IsInherited Attribute of GetPropertyAttribObj"
-permalink: kb/296/Q296125/
+permalink: /kb/296/Q296125/
 ---
 
 ## Q296125: Error Calling IsInherited Attribute of GetPropertyAttribObj

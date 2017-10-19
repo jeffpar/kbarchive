@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153056: DOCFIX: Error in Code Sample for ColContaining Method"
-permalink: kb/153/Q153056/
+permalink: /kb/153/Q153056/
 ---
 
 ## Q153056: DOCFIX: Error in Code Sample for ColContaining Method

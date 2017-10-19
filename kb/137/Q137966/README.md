@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137966: Changing NetBIOS Name Resolution Order in Windows for Workgroups"
-permalink: kb/137/Q137966/
+permalink: /kb/137/Q137966/
 ---
 
 ## Q137966: Changing NetBIOS Name Resolution Order in Windows for Workgroups

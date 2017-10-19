@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62177: Paintbrush Does Not Save Cursor Position After Minimize"
-permalink: kb/062/Q62177/
+permalink: /kb/062/Q62177/
 ---
 
 ## Q62177: Paintbrush Does Not Save Cursor Position After Minimize

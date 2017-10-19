@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273722: BUG: GARBAGE: Product Token Test article for Windows NT"
-permalink: kb/273/Q273722/
+permalink: /kb/273/Q273722/
 ---
 
 ## Q273722: BUG: GARBAGE: Product Token Test article for Windows NT

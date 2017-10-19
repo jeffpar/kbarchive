@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150136: BUG: SPREAD() Intrinsic Function Application Error"
-permalink: kb/150/Q150136/
+permalink: /kb/150/Q150136/
 ---
 
 ## Q150136: BUG: SPREAD() Intrinsic Function Application Error

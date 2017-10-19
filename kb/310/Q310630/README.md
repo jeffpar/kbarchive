@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310630: MechWarrior 4 Black Knight: Known Video Issues"
-permalink: kb/310/Q310630/
+permalink: /kb/310/Q310630/
 ---
 
 ## Q310630: MechWarrior 4 Black Knight: Known Video Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229100: PRB: VFP ODBC Driver Cannot Be Used With ODBC Connection Pooling"
-permalink: kb/229/Q229100/
+permalink: /kb/229/Q229100/
 ---
 
 ## Q229100: PRB: VFP ODBC Driver Cannot Be Used With ODBC Connection Pooling

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69789: ASD: Turning Off Dynamic Scenery"
-permalink: kb/069/Q69789/
+permalink: /kb/069/Q69789/
 ---
 
 ## Q69789: ASD: Turning Off Dynamic Scenery

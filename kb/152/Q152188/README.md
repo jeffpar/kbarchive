@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152188: MSB Solar: Overview of Magic School Bus Explores Solar System"
-permalink: kb/152/Q152188/
+permalink: /kb/152/Q152188/
 ---
 
 ## Q152188: MSB Solar: Overview of Magic School Bus Explores Solar System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152881: XCLN: Cannot Send Encrypted Mail to DL with Hidden Recipients"
-permalink: kb/152/Q152881/
+permalink: /kb/152/Q152881/
 ---
 
 ## Q152881: XCLN: Cannot Send Encrypted Mail to DL with Hidden Recipients

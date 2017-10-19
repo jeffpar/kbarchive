@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199325: XCON: MTA Size Restrictions Affect Local Delivery"
-permalink: kb/199/Q199325/
+permalink: /kb/199/Q199325/
 ---
 
 ## Q199325: XCON: MTA Size Restrictions Affect Local Delivery

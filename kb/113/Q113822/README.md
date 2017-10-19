@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113822: WD97: How to Embed TrueType Fonts in a Document"
-permalink: kb/113/Q113822/
+permalink: /kb/113/Q113822/
 ---
 
 ## Q113822: WD97: How to Embed TrueType Fonts in a Document

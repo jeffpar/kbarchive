@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182416: SMS: SMS Version 1.2 SP3 GETDISK Reports Two Floppy Disk Drives"
-permalink: kb/182/Q182416/
+permalink: /kb/182/Q182416/
 ---
 
 ## Q182416: SMS: SMS Version 1.2 SP3 GETDISK Reports Two Floppy Disk Drives

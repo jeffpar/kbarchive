@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153003: How To Perform a Screen Capture Programmatically"
-permalink: kb/153/Q153003/
+permalink: /kb/153/Q153003/
 ---
 
 ## Q153003: How To Perform a Screen Capture Programmatically

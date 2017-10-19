@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243729: Preventing Print Spooler CR or LF to CR/LF Character Translation"
-permalink: kb/243/Q243729/
+permalink: /kb/243/Q243729/
 ---
 
 ## Q243729: Preventing Print Spooler CR or LF to CR/LF Character Translation

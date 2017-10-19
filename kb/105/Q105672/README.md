@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105672: Explanation of Numbers in Device Settings in MPLAYER.INI"
-permalink: kb/105/Q105672/
+permalink: /kb/105/Q105672/
 ---
 
 ## Q105672: Explanation of Numbers in Device Settings in MPLAYER.INI

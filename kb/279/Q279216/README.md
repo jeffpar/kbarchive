@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279216: XFOR:How Notes Calendar Messages Not Yet Accepted Are Migrated"
-permalink: kb/279/Q279216/
+permalink: /kb/279/Q279216/
 ---
 
 ## Q279216: XFOR:How Notes Calendar Messages Not Yet Accepted Are Migrated

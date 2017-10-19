@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248127: XCLN: Free and Busy Information Not Updated When Working Offline"
-permalink: kb/248/Q248127/
+permalink: /kb/248/Q248127/
 ---
 
 ## Q248127: XCLN: Free and Busy Information Not Updated When Working Offline

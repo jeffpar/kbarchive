@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146465: Err Msg: Setup Cannot Run In a 386 Enhanced Mode Windows..."
-permalink: kb/146/Q146465/
+permalink: /kb/146/Q146465/
 ---
 
 ## Q146465: Err Msg: Setup Cannot Run In a 386 Enhanced Mode Windows...

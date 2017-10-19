@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159856: WD97: Page Field in Header/Footer Causes Odd Behavior"
-permalink: kb/159/Q159856/
+permalink: /kb/159/Q159856/
 ---
 
 ## Q159856: WD97: Page Field in Header/Footer Causes Odd Behavior

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141735: Windows NT Setup Fails on an IBM ThinkPad 760C P120"
-permalink: kb/141/Q141735/
+permalink: /kb/141/Q141735/
 ---
 
 ## Q141735: Windows NT Setup Fails on an IBM ThinkPad 760C P120

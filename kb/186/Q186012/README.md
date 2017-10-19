@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186012: Creating Certificate Hierarchies"
-permalink: kb/186/Q186012/
+permalink: /kb/186/Q186012/
 ---
 
 ## Q186012: Creating Certificate Hierarchies

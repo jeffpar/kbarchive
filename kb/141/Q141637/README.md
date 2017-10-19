@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141637: PRB: Listbox Does Not Automatically Display Correct Row"
-permalink: kb/141/Q141637/
+permalink: /kb/141/Q141637/
 ---
 
 ## Q141637: PRB: Listbox Does Not Automatically Display Correct Row

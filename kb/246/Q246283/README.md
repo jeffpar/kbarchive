@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246283: XADM: Set Deleted Message Retention Time in Exchange 5.5"
-permalink: kb/246/Q246283/
+permalink: /kb/246/Q246283/
 ---
 
 ## Q246283: XADM: Set Deleted Message Retention Time in Exchange 5.5

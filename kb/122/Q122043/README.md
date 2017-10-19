@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122043: Err Msg: Access Denied Connecting to NetWare Resource"
-permalink: kb/122/Q122043/
+permalink: /kb/122/Q122043/
 ---
 
 ## Q122043: Err Msg: Access Denied Connecting to NetWare Resource

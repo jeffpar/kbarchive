@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219381: Name Resolution Using Lmhosts May Generate System Error 1214"
-permalink: kb/219/Q219381/
+permalink: /kb/219/Q219381/
 ---
 
 ## Q219381: Name Resolution Using Lmhosts May Generate System Error 1214

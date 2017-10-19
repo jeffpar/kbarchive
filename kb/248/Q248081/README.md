@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248081: XWEB: Suddenly and Permanently Unable to Reach Inbox Using OWA"
-permalink: kb/248/Q248081/
+permalink: /kb/248/Q248081/
 ---
 
 ## Q248081: XWEB: Suddenly and Permanently Unable to Reach Inbox Using OWA

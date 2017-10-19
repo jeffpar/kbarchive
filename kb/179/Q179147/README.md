@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179147: Access Denied Starting Program"
-permalink: kb/179/Q179147/
+permalink: /kb/179/Q179147/
 ---
 
 ## Q179147: Access Denied Starting Program

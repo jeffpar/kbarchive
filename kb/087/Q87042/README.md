@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87042: SMTP: SMTP Command-Line Parameters"
-permalink: kb/087/Q87042/
+permalink: /kb/087/Q87042/
 ---
 
 ## Q87042: SMTP: SMTP Command-Line Parameters

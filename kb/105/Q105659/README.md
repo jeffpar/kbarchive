@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105659: ADT: How to Direct DDE to a Specific Instance of a Server"
-permalink: kb/105/Q105659/
+permalink: /kb/105/Q105659/
 ---
 
 ## Q105659: ADT: How to Direct DDE to a Specific Instance of a Server

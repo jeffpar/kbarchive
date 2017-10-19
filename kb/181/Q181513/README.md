@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181513: XCON: MTA DRAS Connection Terminates With 1294 and 9316 Events"
-permalink: kb/181/Q181513/
+permalink: /kb/181/Q181513/
 ---
 
 ## Q181513: XCON: MTA DRAS Connection Terminates With 1294 and 9316 Events

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233549: Inaccurate Sample APPL Statement in Mainframe APPC/LU6.2 Wizard"
-permalink: kb/233/Q233549/
+permalink: /kb/233/Q233549/
 ---
 
 ## Q233549: Inaccurate Sample APPL Statement in Mainframe APPC/LU6.2 Wizard

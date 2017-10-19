@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135235: SNA Admin Error Message Changing Domains When Using TCP/IP"
-permalink: kb/135/Q135235/
+permalink: /kb/135/Q135235/
 ---
 
 ## Q135235: SNA Admin Error Message Changing Domains When Using TCP/IP

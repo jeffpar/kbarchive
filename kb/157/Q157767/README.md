@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157767: Vfpodbc5.exe Visual FoxPro ODBC Driver Version 5.0"
-permalink: kb/157/Q157767/
+permalink: /kb/157/Q157767/
 ---
 
 ## Q157767: Vfpodbc5.exe Visual FoxPro ODBC Driver Version 5.0

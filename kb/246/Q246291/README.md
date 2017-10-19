@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246291: Using APPC Session Viewer to Verify LU6.2 Configuration"
-permalink: kb/246/Q246291/
+permalink: /kb/246/Q246291/
 ---
 
 ## Q246291: Using APPC Session Viewer to Verify LU6.2 Configuration

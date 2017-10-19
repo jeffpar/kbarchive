@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185530: WD97: Unexpected Behavior Paste Linking Ami Pro Document Object"
-permalink: kb/185/Q185530/
+permalink: /kb/185/Q185530/
 ---
 
 ## Q185530: WD97: Unexpected Behavior Paste Linking Ami Pro Document Object

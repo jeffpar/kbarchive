@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168379: BUG: Debugger Does Not Step Over to &#95;&#95;finally Code Block"
-permalink: kb/168/Q168379/
+permalink: /kb/168/Q168379/
 ---
 
 ## Q168379: BUG: Debugger Does Not Step Over to &#95;&#95;finally Code Block

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279466: HOW TO: Request a Web Page Through a Telnet Client"
-permalink: kb/279/Q279466/
+permalink: /kb/279/Q279466/
 ---
 
 ## Q279466: HOW TO: Request a Web Page Through a Telnet Client

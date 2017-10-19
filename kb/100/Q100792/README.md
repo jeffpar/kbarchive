@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100792: WFWG: Schedule+ Prompts to Archive and Delete Old Appointments"
-permalink: kb/100/Q100792/
+permalink: /kb/100/Q100792/
 ---
 
 ## Q100792: WFWG: Schedule+ Prompts to Archive and Delete Old Appointments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190562: FIX: SelectedFore/BackColor Ignored in Top-Level Forms"
-permalink: kb/190/Q190562/
+permalink: /kb/190/Q190562/
 ---
 
 ## Q190562: FIX: SelectedFore/BackColor Ignored in Top-Level Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169138: Network Connections Are Deferred"
-permalink: kb/169/Q169138/
+permalink: /kb/169/Q169138/
 ---
 
 ## Q169138: Network Connections Are Deferred

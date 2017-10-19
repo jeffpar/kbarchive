@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146469: Printing Empty Schedule Pages Causes Separator Page to Print"
-permalink: kb/146/Q146469/
+permalink: /kb/146/Q146469/
 ---
 
 ## Q146469: Printing Empty Schedule Pages Causes Separator Page to Print

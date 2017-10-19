@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137182: PRB: List Box Shows .F. from an Empty Array"
-permalink: kb/137/Q137182/
+permalink: /kb/137/Q137182/
 ---
 
 ## Q137182: PRB: List Box Shows .F. from an Empty Array

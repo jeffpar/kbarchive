@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303735: Passport Manager Administration Utility"
-permalink: kb/303/Q303735/
+permalink: /kb/303/Q303735/
 ---
 
 ## Q303735: Passport Manager Administration Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114834: ADT: Description of the Visual Basic Compatibility Layer"
-permalink: kb/114/Q114834/
+permalink: /kb/114/Q114834/
 ---
 
 ## Q114834: ADT: Description of the Visual Basic Compatibility Layer

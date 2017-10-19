@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153983: Cannot Delete Directory from FPNW Server"
-permalink: kb/153/Q153983/
+permalink: /kb/153/Q153983/
 ---
 
 ## Q153983: Cannot Delete Directory from FPNW Server

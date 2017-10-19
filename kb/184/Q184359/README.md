@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184359: Outwars: Multiplayer Game Requires DirectPlay 5.0a or Later"
-permalink: kb/184/Q184359/
+permalink: /kb/184/Q184359/
 ---
 
 ## Q184359: Outwars: Multiplayer Game Requires DirectPlay 5.0a or Later

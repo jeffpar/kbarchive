@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161185: FIX: Report Calling Custom Method Returns Incorrect Info"
-permalink: kb/161/Q161185/
+permalink: /kb/161/Q161185/
 ---
 
 ## Q161185: FIX: Report Calling Custom Method Returns Incorrect Info

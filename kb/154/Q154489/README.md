@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154489: Inside OLE (2ed) VC++ 4.x Update Files"
-permalink: kb/154/Q154489/
+permalink: /kb/154/Q154489/
 ---
 
 ## Q154489: Inside OLE (2ed) VC++ 4.x Update Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132798: Font Assistant Does Not Show All Fonts on Computer"
-permalink: kb/132/Q132798/
+permalink: /kb/132/Q132798/
 ---
 
 ## Q132798: Font Assistant Does Not Show All Fonts on Computer

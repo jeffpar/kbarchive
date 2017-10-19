@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140958: XCON: MTA Mishandles Use of Default Dialogue-mode"
-permalink: kb/140/Q140958/
+permalink: /kb/140/Q140958/
 ---
 
 ## Q140958: XCON: MTA Mishandles Use of Default Dialogue-mode

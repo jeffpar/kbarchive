@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121441: Code Sample to Find Application Path Using File Extension"
-permalink: kb/121/Q121441/
+permalink: /kb/121/Q121441/
 ---
 
 ## Q121441: Code Sample to Find Application Path Using File Extension

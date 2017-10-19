@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234344: INFO: Template Cache Added in WebClasses for Visual Studio SP3"
-permalink: kb/234/Q234344/
+permalink: /kb/234/Q234344/
 ---
 
 ## Q234344: INFO: Template Cache Added in WebClasses for Visual Studio SP3

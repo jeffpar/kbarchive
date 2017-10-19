@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258572: Baseball 2001: How to Troubleshoot Game Controller Problems"
-permalink: kb/258/Q258572/
+permalink: /kb/258/Q258572/
 ---
 
 ## Q258572: Baseball 2001: How to Troubleshoot Game Controller Problems

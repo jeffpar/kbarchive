@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101055: How to Specify Screen Object Colors in FoxPro for Windows"
-permalink: kb/101/Q101055/
+permalink: /kb/101/Q101055/
 ---
 
 ## Q101055: How to Specify Screen Object Colors in FoxPro for Windows

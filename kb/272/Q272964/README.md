@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272964: SMS: Network Discovery Seems to Be Stuck or Looping"
-permalink: kb/272/Q272964/
+permalink: /kb/272/Q272964/
 ---
 
 ## Q272964: SMS: Network Discovery Seems to Be Stuck or Looping

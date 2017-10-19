@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85592: Windows Err Msg: Windows Directory Does Not Exist"
-permalink: kb/085/Q85592/
+permalink: /kb/085/Q85592/
 ---
 
 ## Q85592: Windows Err Msg: Windows Directory Does Not Exist

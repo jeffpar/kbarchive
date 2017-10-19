@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83547: Requesting OEM Disk When Changing System Settings"
-permalink: kb/083/Q83547/
+permalink: /kb/083/Q83547/
 ---
 
 ## Q83547: Requesting OEM Disk When Changing System Settings

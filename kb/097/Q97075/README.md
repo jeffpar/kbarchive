@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97075: PC WRmt: Cannot Switch Tasks While Mail Waits for Retry Count"
-permalink: kb/097/Q97075/
+permalink: /kb/097/Q97075/
 ---
 
 ## Q97075: PC WRmt: Cannot Switch Tasks While Mail Waits for Retry Count

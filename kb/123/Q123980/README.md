@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123980: PPP Message: RAS Has Connected Using an Earlier RAS Protocol"
-permalink: kb/123/Q123980/
+permalink: /kb/123/Q123980/
 ---
 
 ## Q123980: PPP Message: RAS Has Connected Using an Earlier RAS Protocol

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109230: How to Create a List or Popup of Available Volume Names"
-permalink: kb/109/Q109230/
+permalink: /kb/109/Q109230/
 ---
 
 ## Q109230: How to Create a List or Popup of Available Volume Names

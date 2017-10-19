@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171180: Non-Paged Pool Memory Leak in IRP Pool Tag"
-permalink: kb/171/Q171180/
+permalink: /kb/171/Q171180/
 ---
 
 ## Q171180: Non-Paged Pool Memory Leak in IRP Pool Tag

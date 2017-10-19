@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258565: Baseball 2001: How to Resume Playing After Game Stops Responding"
-permalink: kb/258/Q258565/
+permalink: /kb/258/Q258565/
 ---
 
 ## Q258565: Baseball 2001: How to Resume Playing After Game Stops Responding

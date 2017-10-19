@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176587: XWEB: Active Server Components Not Compatible with IIS 4.0"
-permalink: kb/176/Q176587/
+permalink: /kb/176/Q176587/
 ---
 
 ## Q176587: XWEB: Active Server Components Not Compatible with IIS 4.0

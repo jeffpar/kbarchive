@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188897: HOWTO: Setting the System Date and Time Programmatically"
-permalink: kb/188/Q188897/
+permalink: /kb/188/Q188897/
 ---
 
 ## Q188897: HOWTO: Setting the System Date and Time Programmatically

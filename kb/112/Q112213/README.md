@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112213: PC Win: Err Msg: Folder Conversion Utility Runs Only with..."
-permalink: kb/112/Q112213/
+permalink: /kb/112/Q112213/
 ---
 
 ## Q112213: PC Win: Err Msg: Folder Conversion Utility Runs Only with...

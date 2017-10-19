@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222905: HOWTO: Display a Context Menu for CTreeCtrl"
-permalink: kb/222/Q222905/
+permalink: /kb/222/Q222905/
 ---
 
 ## Q222905: HOWTO: Display a Context Menu for CTreeCtrl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117218: How to Return the Maximum Value in a Database Field"
-permalink: kb/117/Q117218/
+permalink: /kb/117/Q117218/
 ---
 
 ## Q117218: How to Return the Maximum Value in a Database Field

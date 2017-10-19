@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90210: Contents of CONNECT.DAT, &lt;USERNAME&gt;.PWL, and SHARES.PWL Files"
-permalink: kb/090/Q90210/
+permalink: /kb/090/Q90210/
 ---
 
 ## Q90210: Contents of CONNECT.DAT, &lt;USERNAME&gt;.PWL, and SHARES.PWL Files

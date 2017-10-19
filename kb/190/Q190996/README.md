@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190996: XADM: Operation Terminated With Error -1911 Using ESEUTIL /d"
-permalink: kb/190/Q190996/
+permalink: /kb/190/Q190996/
 ---
 
 ## Q190996: XADM: Operation Terminated With Error -1911 Using ESEUTIL /d

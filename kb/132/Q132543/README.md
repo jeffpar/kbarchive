@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132543: Dogs: Changes Made to Windows 95 Registry and .INI Files"
-permalink: kb/132/Q132543/
+permalink: /kb/132/Q132543/
 ---
 
 ## Q132543: Dogs: Changes Made to Windows 95 Registry and .INI Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245228: SMS: Liccli95.exe May Hang Windows 95/98 Clients"
-permalink: kb/245/Q245228/
+permalink: /kb/245/Q245228/
 ---
 
 ## Q245228: SMS: Liccli95.exe May Hang Windows 95/98 Clients

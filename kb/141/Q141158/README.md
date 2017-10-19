@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141158: Wrkgrp.ini File Not Implemented When Installing from Network"
-permalink: kb/141/Q141158/
+permalink: /kb/141/Q141158/
 ---
 
 ## Q141158: Wrkgrp.ini File Not Implemented When Installing from Network

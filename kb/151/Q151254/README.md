@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151254: Duplicate Printer Names on Macintosh Clients"
-permalink: kb/151/Q151254/
+permalink: /kb/151/Q151254/
 ---
 
 ## Q151254: Duplicate Printer Names on Macintosh Clients

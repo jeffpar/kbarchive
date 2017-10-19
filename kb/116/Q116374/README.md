@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116374: FIX: &gt;251 Character Lines in Workbench Cause Random Behavior"
-permalink: kb/116/Q116374/
+permalink: /kb/116/Q116374/
 ---
 
 ## Q116374: FIX: &gt;251 Character Lines in Workbench Cause Random Behavior

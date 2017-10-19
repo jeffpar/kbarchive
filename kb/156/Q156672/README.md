@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156672: PRB: &quot;Variable &lt;variable&gt; is not found&quot; Using #INCLUDE Files"
-permalink: kb/156/Q156672/
+permalink: /kb/156/Q156672/
 ---
 
 ## Q156672: PRB: &quot;Variable &lt;variable&gt; is not found&quot; Using #INCLUDE Files

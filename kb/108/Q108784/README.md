@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108784: Net Statistics Workstation Incorrectly Refers to Reqbuf"
-permalink: kb/108/Q108784/
+permalink: /kb/108/Q108784/
 ---
 
 ## Q108784: Net Statistics Workstation Incorrectly Refers to Reqbuf

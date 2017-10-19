@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95514: FIX: Focus Rectangle Remains When Grid Loses Focus"
-permalink: kb/095/Q95514/
+permalink: /kb/095/Q95514/
 ---
 
 ## Q95514: FIX: Focus Rectangle Remains When Grid Loses Focus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150121: PRB: MFC Loads Wrong Resource in Extension DLL"
-permalink: kb/150/Q150121/
+permalink: /kb/150/Q150121/
 ---
 
 ## Q150121: PRB: MFC Loads Wrong Resource in Extension DLL

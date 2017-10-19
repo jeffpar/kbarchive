@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99280: Comprehensive List of MS-DOS 6 Documentation Errors"
-permalink: kb/099/Q99280/
+permalink: /kb/099/Q99280/
 ---
 
 ## Q99280: Comprehensive List of MS-DOS 6 Documentation Errors

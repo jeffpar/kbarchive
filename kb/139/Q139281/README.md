@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139281: STOP Msg: 0x0000004E or 0x0000000A Under Heavy Computer Usage"
-permalink: kb/139/Q139281/
+permalink: /kb/139/Q139281/
 ---
 
 ## Q139281: STOP Msg: 0x0000004E or 0x0000000A Under Heavy Computer Usage

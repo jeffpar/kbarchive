@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150152: Printing from Mac to HP 3x with 52.2 HP Postscript Cartridge"
-permalink: kb/150/Q150152/
+permalink: /kb/150/Q150152/
 ---
 
 ## Q150152: Printing from Mac to HP 3x with 52.2 HP Postscript Cartridge

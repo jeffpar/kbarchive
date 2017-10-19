@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177576: Color Printing Problems with Windows NT 4.0"
-permalink: kb/177/Q177576/
+permalink: /kb/177/Q177576/
 ---
 
 ## Q177576: Color Printing Problems with Windows NT 4.0

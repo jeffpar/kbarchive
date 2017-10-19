@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267902: Applications Fail to Receive Data When Opening LUA LU"
-permalink: kb/267/Q267902/
+permalink: /kb/267/Q267902/
 ---
 
 ## Q267902: Applications Fail to Receive Data When Opening LUA LU

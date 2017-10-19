@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229789: Windows Terminal Server Always Contacts PDC"
-permalink: kb/229/Q229789/
+permalink: /kb/229/Q229789/
 ---
 
 ## Q229789: Windows Terminal Server Always Contacts PDC

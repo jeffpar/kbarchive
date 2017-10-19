@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174960: SMS: Rservice Does Not Pass Startup Parameters"
-permalink: kb/174/Q174960/
+permalink: /kb/174/Q174960/
 ---
 
 ## Q174960: SMS: Rservice Does Not Pass Startup Parameters

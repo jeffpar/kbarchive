@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180047: XCLN: Post Note Appears Instead of Compose Note"
-permalink: kb/180/Q180047/
+permalink: /kb/180/Q180047/
 ---
 
 ## Q180047: XCLN: Post Note Appears Instead of Compose Note

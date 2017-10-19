@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255073: XFOR: Event ID 174 from Directory Export Installing Connectors"
-permalink: kb/255/Q255073/
+permalink: /kb/255/Q255073/
 ---
 
 ## Q255073: XFOR: Event ID 174 from Directory Export Installing Connectors

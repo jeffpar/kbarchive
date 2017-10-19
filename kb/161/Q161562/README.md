@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161562: Setting Up Server-Side Includes with Different Extension"
-permalink: kb/161/Q161562/
+permalink: /kb/161/Q161562/
 ---
 
 ## Q161562: Setting Up Server-Side Includes with Different Extension

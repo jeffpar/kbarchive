@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110451: Dinosaurs: Selecting the Back Button Returns to Guided Tours"
-permalink: kb/110/Q110451/
+permalink: /kb/110/Q110451/
 ---
 
 ## Q110451: Dinosaurs: Selecting the Back Button Returns to Guided Tours

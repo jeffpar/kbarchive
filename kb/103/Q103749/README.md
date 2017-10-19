@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103749: WFWG File Manager GP Faults When You Use a Multi-Config Menu"
-permalink: kb/103/Q103749/
+permalink: /kb/103/Q103749/
 ---
 
 ## Q103749: WFWG File Manager GP Faults When You Use a Multi-Config Menu

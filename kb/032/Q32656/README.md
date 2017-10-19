@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q32656: ANSI Escape Sequence ESC[nD Not Moving Cursor to the Left"
-permalink: kb/032/Q32656/
+title: "Q32656: ANSI Escape Sequence ESC&#91;nD Not Moving Cursor to the Left"
+permalink: /kb/032/Q32656/
 ---
 
-## Q32656: ANSI Escape Sequence ESC[nD Not Moving Cursor to the Left
+## Q32656: ANSI Escape Sequence ESC&#91;nD Not Moving Cursor to the Left
 
 	Article: Q32656
 	Product(s): Microsoft Disk Operating System

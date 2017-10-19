@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189032: Floating Point Arguments Won't Pass Between NT RPC and IBM RPC"
-permalink: kb/189/Q189032/
+permalink: /kb/189/Q189032/
 ---
 
 ## Q189032: Floating Point Arguments Won't Pass Between NT RPC and IBM RPC

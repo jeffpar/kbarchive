@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156727: XCON: WAN Drive Functionality of PC Connector and ISDN Lines"
-permalink: kb/156/Q156727/
+permalink: /kb/156/Q156727/
 ---
 
 ## Q156727: XCON: WAN Drive Functionality of PC Connector and ISDN Lines

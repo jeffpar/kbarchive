@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216411: ERRMSG: A Required Privilege Is Not Held by the Client"
-permalink: kb/216/Q216411/
+permalink: /kb/216/Q216411/
 ---
 
 ## Q216411: ERRMSG: A Required Privilege Is Not Held by the Client

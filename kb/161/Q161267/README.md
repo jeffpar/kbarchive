@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161267: Kids Plus!: Screen Savers Settings Require System Agent"
-permalink: kb/161/Q161267/
+permalink: /kb/161/Q161267/
 ---
 
 ## Q161267: Kids Plus!: Screen Savers Settings Require System Agent

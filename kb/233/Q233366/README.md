@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233366: SNA Server 3.0 Service Pack 4 Readme.txt File"
-permalink: kb/233/Q233366/
+permalink: /kb/233/Q233366/
 ---
 
 ## Q233366: SNA Server 3.0 Service Pack 4 Readme.txt File

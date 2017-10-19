@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82307: Bad Font or Display with PC Tools Version 7.0 or 7.1"
-permalink: kb/082/Q82307/
+permalink: /kb/082/Q82307/
 ---
 
 ## Q82307: Bad Font or Display with PC Tools Version 7.0 or 7.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131368: HOWTO: Create MFC Applications that Do Not Have a Menu Bar"
-permalink: kb/131/Q131368/
+permalink: /kb/131/Q131368/
 ---
 
 ## Q131368: HOWTO: Create MFC Applications that Do Not Have a Menu Bar

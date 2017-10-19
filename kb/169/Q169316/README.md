@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169316: How to Install WAN Services for X.25 Exchange Installations"
-permalink: kb/169/Q169316/
+permalink: /kb/169/Q169316/
 ---
 
 ## Q169316: How to Install WAN Services for X.25 Exchange Installations

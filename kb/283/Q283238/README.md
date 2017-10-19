@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283238: XADM: Exchange Server 5.5 Post-SP4 Message Transfer Agent Fixes"
-permalink: kb/283/Q283238/
+permalink: /kb/283/Q283238/
 ---
 
 ## Q283238: XADM: Exchange Server 5.5 Post-SP4 Message Transfer Agent Fixes

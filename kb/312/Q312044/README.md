@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312044: Access Violation in Dns.exe Causes the DNS Service to Stop"
-permalink: kb/312/Q312044/
+permalink: /kb/312/Q312044/
 ---
 
 ## Q312044: Access Violation in Dns.exe Causes the DNS Service to Stop

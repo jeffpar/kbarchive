@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252648: XGEN: A Brief Introduction to ASN.1 and BER"
-permalink: kb/252/Q252648/
+permalink: /kb/252/Q252648/
 ---
 
 ## Q252648: XGEN: A Brief Introduction to ASN.1 and BER

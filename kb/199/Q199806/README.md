@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199806: IIS: Headers Containing White Spaces May Return a 404 Error"
-permalink: kb/199/Q199806/
+permalink: /kb/199/Q199806/
 ---
 
 ## Q199806: IIS: Headers Containing White Spaces May Return a 404 Error

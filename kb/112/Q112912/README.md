@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112912: PC Win: Duplicate Header of WELCOME.GLB Message"
-permalink: kb/112/Q112912/
+permalink: /kb/112/Q112912/
 ---
 
 ## Q112912: PC Win: Duplicate Header of WELCOME.GLB Message

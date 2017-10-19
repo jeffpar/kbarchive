@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161900: FIX: Clicking from ListBox on Form to Command Window Gives GPF"
-permalink: kb/161/Q161900/
+permalink: /kb/161/Q161900/
 ---
 
 ## Q161900: FIX: Clicking from ListBox on Form to Command Window Gives GPF

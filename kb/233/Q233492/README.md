@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233492: The Major Differences Between NFS Versions 2 and 3"
-permalink: kb/233/Q233492/
+permalink: /kb/233/Q233492/
 ---
 
 ## Q233492: The Major Differences Between NFS Versions 2 and 3

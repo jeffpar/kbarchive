@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129986: Error Using Microsoft Network Client SOCKETS.EXE"
-permalink: kb/129/Q129986/
+permalink: /kb/129/Q129986/
 ---
 
 ## Q129986: Error Using Microsoft Network Client SOCKETS.EXE

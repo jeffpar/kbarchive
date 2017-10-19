@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158809: XCLN: NDR When Sending or Posting to a Folder"
-permalink: kb/158/Q158809/
+permalink: /kb/158/Q158809/
 ---
 
 ## Q158809: XCLN: NDR When Sending or Posting to a Folder

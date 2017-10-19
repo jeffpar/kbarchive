@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82280: DOCERR: To Debug P-Code, TOOLS.INI Requires MODEL: Not MODEL="
-permalink: kb/082/Q82280/
+permalink: /kb/082/Q82280/
 ---
 
 ## Q82280: DOCERR: To Debug P-Code, TOOLS.INI Requires MODEL: Not MODEL=

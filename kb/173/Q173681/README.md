@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173681: XADM: Renaming the Inbox Produces Unexpected Results"
-permalink: kb/173/Q173681/
+permalink: /kb/173/Q173681/
 ---
 
 ## Q173681: XADM: Renaming the Inbox Produces Unexpected Results

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106489: No Keyboard Shortcuts in FoxPro for Win Screen Builder"
-permalink: kb/106/Q106489/
+permalink: /kb/106/Q106489/
 ---
 
 ## Q106489: No Keyboard Shortcuts in FoxPro for Win Screen Builder

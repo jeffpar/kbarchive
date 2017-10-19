@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97734: PC Win: Network Error Using Mail Conversion Program"
-permalink: kb/097/Q97734/
+permalink: /kb/097/Q97734/
 ---
 
 ## Q97734: PC Win: Network Error Using Mail Conversion Program

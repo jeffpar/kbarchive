@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85927: Top Margin is Too Tall on Epson LQ Printers"
-permalink: kb/085/Q85927/
+permalink: /kb/085/Q85927/
 ---
 
 ## Q85927: Top Margin is Too Tall on Epson LQ Printers

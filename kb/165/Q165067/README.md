@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165067: FIX: Memory Leak Using CLEAR ALL on Subclass with Array"
-permalink: kb/165/Q165067/
+permalink: /kb/165/Q165067/
 ---
 
 ## Q165067: FIX: Memory Leak Using CLEAR ALL on Subclass with Array

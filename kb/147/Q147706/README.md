@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147706: How to Disable LM Authentication on Windows NT"
-permalink: kb/147/Q147706/
+permalink: /kb/147/Q147706/
 ---
 
 ## Q147706: How to Disable LM Authentication on Windows NT

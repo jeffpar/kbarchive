@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139382: Cannot Install CorelDraw 3.0 Revision B with DriveSpace 3"
-permalink: kb/139/Q139382/
+permalink: /kb/139/Q139382/
 ---
 
 ## Q139382: Cannot Install CorelDraw 3.0 Revision B with DriveSpace 3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235878: OSPF Authentication by RRAS Server Does Not Work"
-permalink: kb/235/Q235878/
+permalink: /kb/235/Q235878/
 ---
 
 ## Q235878: OSPF Authentication by RRAS Server Does Not Work

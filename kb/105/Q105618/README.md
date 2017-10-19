@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105618: MS-DOS 6.2 Step-Up Directory Listing for 3.5-Inch 1.44 MB Disk"
-permalink: kb/105/Q105618/
+permalink: /kb/105/Q105618/
 ---
 
 ## Q105618: MS-DOS 6.2 Step-Up Directory Listing for 3.5-Inch 1.44 MB Disk

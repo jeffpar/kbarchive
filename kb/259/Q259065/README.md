@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259065: XFOR: Lotus Notes SMTP Users Receive .unk Files"
-permalink: kb/259/Q259065/
+permalink: /kb/259/Q259065/
 ---
 
 ## Q259065: XFOR: Lotus Notes SMTP Users Receive .unk Files

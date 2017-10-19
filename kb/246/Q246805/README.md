@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246805: Rasctrs.dll Error Message Appears with RAS on Windows NT 4.0 SP4"
-permalink: kb/246/Q246805/
+permalink: /kb/246/Q246805/
 ---
 
 ## Q246805: Rasctrs.dll Error Message Appears with RAS on Windows NT 4.0 SP4

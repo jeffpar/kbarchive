@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158200: STL Sample for the string::getline Function"
-permalink: kb/158/Q158200/
+permalink: /kb/158/Q158200/
 ---
 
 ## Q158200: STL Sample for the string::getline Function

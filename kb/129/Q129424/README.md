@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129424: PRB: Property Not Evaluated When Object Is Created"
-permalink: kb/129/Q129424/
+permalink: /kb/129/Q129424/
 ---
 
 ## Q129424: PRB: Property Not Evaluated When Object Is Created

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124916: Some Client Applications Fail When Writing to Windows NT"
-permalink: kb/124/Q124916/
+permalink: /kb/124/Q124916/
 ---
 
 ## Q124916: Some Client Applications Fail When Writing to Windows NT

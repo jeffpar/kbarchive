@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168044: FIX: ClassWizard May Fail to Derive a Class from CRecordset"
-permalink: kb/168/Q168044/
+permalink: /kb/168/Q168044/
 ---
 
 ## Q168044: FIX: ClassWizard May Fail to Derive a Class from CRecordset

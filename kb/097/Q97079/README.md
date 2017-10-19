@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97079: PC WRmt: Providing Access to Gateway User Address Lists"
-permalink: kb/097/Q97079/
+permalink: /kb/097/Q97079/
 ---
 
 ## Q97079: PC WRmt: Providing Access to Gateway User Address Lists

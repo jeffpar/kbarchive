@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149518: BUG: OK Button Callback Not Called in Video Poker Sample"
-permalink: kb/149/Q149518/
+permalink: /kb/149/Q149518/
 ---
 
 ## Q149518: BUG: OK Button Callback Not Called in Video Poker Sample

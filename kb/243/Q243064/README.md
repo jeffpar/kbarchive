@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243064: Age of Empires II: Duplicate Pages or Missing Pages in Manual"
-permalink: kb/243/Q243064/
+permalink: /kb/243/Q243064/
 ---
 
 ## Q243064: Age of Empires II: Duplicate Pages or Missing Pages in Manual

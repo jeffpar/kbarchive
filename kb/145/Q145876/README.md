@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145876: Setup Does Not Warning When Install Over Previous Installation"
-permalink: kb/145/Q145876/
+permalink: /kb/145/Q145876/
 ---
 
 ## Q145876: Setup Does Not Warning When Install Over Previous Installation

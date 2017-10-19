@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178489: PRB: Error 53 &quot;File Not Found&quot; When Calling a DLL Function"
-permalink: kb/178/Q178489/
+permalink: /kb/178/Q178489/
 ---
 
 ## Q178489: PRB: Error 53 &quot;File Not Found&quot; When Calling a DLL Function

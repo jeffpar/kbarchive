@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217925: Unable to Provide Installation Path for SNA Server"
-permalink: kb/217/Q217925/
+permalink: /kb/217/Q217925/
 ---
 
 ## Q217925: Unable to Provide Installation Path for SNA Server

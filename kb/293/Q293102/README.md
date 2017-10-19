@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293102: Office 2000 Small Business At A Glance Comments and Corrections"
-permalink: kb/293/Q293102/
+permalink: /kb/293/Q293102/
 ---
 
 ## Q293102: Office 2000 Small Business At A Glance Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79157: FIX: H2INC Doesn't Recognize /BATCH Command-Line Switch"
-permalink: kb/079/Q79157/
+permalink: /kb/079/Q79157/
 ---
 
 ## Q79157: FIX: H2INC Doesn't Recognize /BATCH Command-Line Switch

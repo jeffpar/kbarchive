@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142834: INFO: Limiting Number of Rows Returned in Resultset with RDO"
-permalink: kb/142/Q142834/
+permalink: /kb/142/Q142834/
 ---
 
 ## Q142834: INFO: Limiting Number of Rows Returned in Resultset with RDO

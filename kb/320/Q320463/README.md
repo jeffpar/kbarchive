@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320463: Games: &quot;Exception C0000006H&quot; Error Message When Installing Game"
-permalink: kb/320/Q320463/
+permalink: /kb/320/Q320463/
 ---
 
 ## Q320463: Games: &quot;Exception C0000006H&quot; Error Message When Installing Game

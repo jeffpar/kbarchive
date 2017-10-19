@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192593: XFOR: Attachment File Name in 8.3 Format in cc:Mail User Inbox"
-permalink: kb/192/Q192593/
+permalink: /kb/192/Q192593/
 ---
 
 ## Q192593: XFOR: Attachment File Name in 8.3 Format in cc:Mail User Inbox

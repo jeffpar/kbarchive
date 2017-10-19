@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255252: INFO: Accessing and Building Projects Over a Network Using VC++"
-permalink: kb/255/Q255252/
+permalink: /kb/255/Q255252/
 ---
 
 ## Q255252: INFO: Accessing and Building Projects Over a Network Using VC++

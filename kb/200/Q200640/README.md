@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200640: SMS: If the Temp.Tcf File Is Deleted, CCIM May Fail"
-permalink: kb/200/Q200640/
+permalink: /kb/200/Q200640/
 ---
 
 ## Q200640: SMS: If the Temp.Tcf File Is Deleted, CCIM May Fail

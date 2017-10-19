@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143023: PPT: Text in Microsoft Excel Table Shifted Up in Slide Printout"
-permalink: kb/143/Q143023/
+permalink: /kb/143/Q143023/
 ---
 
 ## Q143023: PPT: Text in Microsoft Excel Table Shifted Up in Slide Printout

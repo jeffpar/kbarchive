@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86967: X400: Setting Up a Redirector MTA"
-permalink: kb/086/Q86967/
+permalink: /kb/086/Q86967/
 ---
 
 ## Q86967: X400: Setting Up a Redirector MTA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124723: Ancient Lands/Dangerous Creatures: Minimal or No Sounds"
-permalink: kb/124/Q124723/
+permalink: /kb/124/Q124723/
 ---
 
 ## Q124723: Ancient Lands/Dangerous Creatures: Minimal or No Sounds

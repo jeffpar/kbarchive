@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134457: PPT7: Files Saved in Outline View Open in Slide View"
-permalink: kb/134/Q134457/
+permalink: /kb/134/Q134457/
 ---
 
 ## Q134457: PPT7: Files Saved in Outline View Open in Slide View

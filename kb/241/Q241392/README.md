@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241392: &quot;STOP 0x50&quot; Error Message in Mup.sys"
-permalink: kb/241/Q241392/
+permalink: /kb/241/Q241392/
 ---
 
 ## Q241392: &quot;STOP 0x50&quot; Error Message in Mup.sys

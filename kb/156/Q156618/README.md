@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156618: STL Sample for the count Function"
-permalink: kb/156/Q156618/
+permalink: /kb/156/Q156618/
 ---
 
 ## Q156618: STL Sample for the count Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141346: FIX: ClassWizard Misspells CPropertyPage in OnFinalRelease()"
-permalink: kb/141/Q141346/
+permalink: /kb/141/Q141346/
 ---
 
 ## Q141346: FIX: ClassWizard Misspells CPropertyPage in OnFinalRelease()

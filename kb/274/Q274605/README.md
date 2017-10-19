@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274605: CFS2: Computer Hangs When You Start Game or Mission Builder"
-permalink: kb/274/Q274605/
+permalink: /kb/274/Q274605/
 ---
 
 ## Q274605: CFS2: Computer Hangs When You Start Game or Mission Builder

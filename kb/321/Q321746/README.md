@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321746: Dungeon Siege: How to Create a Backup Copy of a Saved Game"
-permalink: kb/321/Q321746/
+permalink: /kb/321/Q321746/
 ---
 
 ## Q321746: Dungeon Siege: How to Create a Backup Copy of a Saved Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94586: EXE2BIN Error Messages"
-permalink: kb/094/Q94586/
+permalink: /kb/094/Q94586/
 ---
 
 ## Q94586: EXE2BIN Error Messages

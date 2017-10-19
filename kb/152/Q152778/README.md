@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152778: Example Shows How to Pass Objects to FLL"
-permalink: kb/152/Q152778/
+permalink: /kb/152/Q152778/
 ---
 
 ## Q152778: Example Shows How to Pass Objects to FLL

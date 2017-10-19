@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239703: ASP Template Cache Does Not Recognize Script Updates on Cluster"
-permalink: kb/239/Q239703/
+permalink: /kb/239/Q239703/
 ---
 
 ## Q239703: ASP Template Cache Does Not Recognize Script Updates on Cluster

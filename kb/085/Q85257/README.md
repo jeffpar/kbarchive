@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85257: Banyan Err Msg: This Application Has Violated System..."
-permalink: kb/085/Q85257/
+permalink: /kb/085/Q85257/
 ---
 
 ## Q85257: Banyan Err Msg: This Application Has Violated System...

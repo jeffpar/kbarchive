@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196047: WD97: SectionPages Field Loses Formatting"
-permalink: kb/196/Q196047/
+permalink: /kb/196/Q196047/
 ---
 
 ## Q196047: WD97: SectionPages Field Loses Formatting

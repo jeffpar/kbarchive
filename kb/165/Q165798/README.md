@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165798: Insert Range of LUs Does Not Work If LUs Are Selected in Manager"
-permalink: kb/165/Q165798/
+permalink: /kb/165/Q165798/
 ---
 
 ## Q165798: Insert Range of LUs Does Not Work If LUs Are Selected in Manager

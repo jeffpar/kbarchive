@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94555: MemMaker: Order of Entries in the CONFIG.SYS File"
-permalink: kb/094/Q94555/
+permalink: /kb/094/Q94555/
 ---
 
 ## Q94555: MemMaker: Order of Entries in the CONFIG.SYS File

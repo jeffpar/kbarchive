@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269864: Error 14105 Index Duplication Generated in the MA Logs"
-permalink: kb/269/Q269864/
+permalink: /kb/269/Q269864/
 ---
 
 ## Q269864: Error 14105 Index Duplication Generated in the MA Logs

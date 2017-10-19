@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134601: DEC 24x4x Chip Set on Network Adapter Not Detected Correctly"
-permalink: kb/134/Q134601/
+permalink: /kb/134/Q134601/
 ---
 
 ## Q134601: DEC 24x4x Chip Set on Network Adapter Not Detected Correctly

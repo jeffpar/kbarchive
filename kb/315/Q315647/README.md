@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315647: FIX: Dockable Windows May Cause VFP to Crash"
-permalink: kb/315/Q315647/
+permalink: /kb/315/Q315647/
 ---
 
 ## Q315647: FIX: Dockable Windows May Cause VFP to Crash

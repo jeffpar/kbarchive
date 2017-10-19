@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161155: FP97: How to Make a Web Page Display Data from a Database"
-permalink: kb/161/Q161155/
+permalink: /kb/161/Q161155/
 ---
 
 ## Q161155: FP97: How to Make a Web Page Display Data from a Database

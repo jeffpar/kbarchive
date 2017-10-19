@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247233: WD97: IPF When You Press ENTER in Table or Label Row"
-permalink: kb/247/Q247233/
+permalink: /kb/247/Q247233/
 ---
 
 ## Q247233: WD97: IPF When You Press ENTER in Table or Label Row

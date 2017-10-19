@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166165: XFOR: ISOCOR MTA May Drop Messages Sent from Exchange Server"
-permalink: kb/166/Q166165/
+permalink: /kb/166/Q166165/
 ---
 
 ## Q166165: XFOR: ISOCOR MTA May Drop Messages Sent from Exchange Server

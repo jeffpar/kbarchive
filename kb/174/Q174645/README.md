@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174645: SNA Manager Fails With Access Violation in MFC40!Ordinal1375"
-permalink: kb/174/Q174645/
+permalink: /kb/174/Q174645/
 ---
 
 ## Q174645: SNA Manager Fails With Access Violation in MFC40!Ordinal1375

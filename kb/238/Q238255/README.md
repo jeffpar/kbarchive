@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238255: HOWTO: Install VSS to a Novell NetWare Server"
-permalink: kb/238/Q238255/
+permalink: /kb/238/Q238255/
 ---
 
 ## Q238255: HOWTO: Install VSS to a Novell NetWare Server

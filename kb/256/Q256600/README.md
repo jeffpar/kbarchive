@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256600: FAQ: What to Test for in International and Localized Versions"
-permalink: kb/256/Q256600/
+permalink: /kb/256/Q256600/
 ---
 
 ## Q256600: FAQ: What to Test for in International and Localized Versions

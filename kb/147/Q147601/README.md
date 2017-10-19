@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147601: Problem Switching From Office 95 to 16-bit Application Window"
-permalink: kb/147/Q147601/
+permalink: /kb/147/Q147601/
 ---
 
 ## Q147601: Problem Switching From Office 95 to 16-bit Application Window

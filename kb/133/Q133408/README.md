@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133408: Upgrading Windows NT Resets Boot Menu Timer"
-permalink: kb/133/Q133408/
+permalink: /kb/133/Q133408/
 ---
 
 ## Q133408: Upgrading Windows NT Resets Boot Menu Timer

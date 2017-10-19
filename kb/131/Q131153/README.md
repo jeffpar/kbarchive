@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131153: Problems Retrieving Colors Using Video Capture Card"
-permalink: kb/131/Q131153/
+permalink: /kb/131/Q131153/
 ---
 
 ## Q131153: Problems Retrieving Colors Using Video Capture Card

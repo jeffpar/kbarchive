@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111652: BUG: Edit Controls and WS_CLIPCHILDREN Function Differently"
-permalink: kb/111/Q111652/
+permalink: /kb/111/Q111652/
 ---
 
 ## Q111652: BUG: Edit Controls and WS_CLIPCHILDREN Function Differently

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130210: Error Message Parameters Displayed with SYS(2018)"
-permalink: kb/130/Q130210/
+permalink: /kb/130/Q130210/
 ---
 
 ## Q130210: Error Message Parameters Displayed with SYS(2018)

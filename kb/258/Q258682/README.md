@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258682: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP2"
-permalink: kb/258/Q258682/
+permalink: /kb/258/Q258682/
 ---
 
 ## Q258682: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP2

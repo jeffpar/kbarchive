@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88386: Bookshelf 1992 Content and User Interface Enhancements"
-permalink: kb/088/Q88386/
+permalink: /kb/088/Q88386/
 ---
 
 ## Q88386: Bookshelf 1992 Content and User Interface Enhancements

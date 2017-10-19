@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137306: Fonts Incorrectly Displayed During Windows 95 Remote Control"
-permalink: kb/137/Q137306/
+permalink: /kb/137/Q137306/
 ---
 
 ## Q137306: Fonts Incorrectly Displayed During Windows 95 Remote Control

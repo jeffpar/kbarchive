@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176172: XADM: Public Folder Does Not Appear in Instances Tab"
-permalink: kb/176/Q176172/
+permalink: /kb/176/Q176172/
 ---
 
 ## Q176172: XADM: Public Folder Does Not Appear in Instances Tab

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180703: SLI_BID May Return LUA_CANCELLED/LUA_TERMINATED"
-permalink: kb/180/Q180703/
+permalink: /kb/180/Q180703/
 ---
 
 ## Q180703: SLI_BID May Return LUA_CANCELLED/LUA_TERMINATED

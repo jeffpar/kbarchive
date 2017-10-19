@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199643: XFOR: Tentative Schedule in Outlook Appears as Free in Notes"
-permalink: kb/199/Q199643/
+permalink: /kb/199/Q199643/
 ---
 
 ## Q199643: XFOR: Tentative Schedule in Outlook Appears as Free in Notes

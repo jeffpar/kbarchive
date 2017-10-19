@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50151: Mac Srv: Out-of-Memory Error When Loading Mail Server"
-permalink: kb/050/Q50151/
+permalink: /kb/050/Q50151/
 ---
 
 ## Q50151: Mac Srv: Out-of-Memory Error When Loading Mail Server

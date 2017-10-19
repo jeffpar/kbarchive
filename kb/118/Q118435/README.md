@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118435: INFO: Sharing Menus Between MDI Child Windows"
-permalink: kb/118/Q118435/
+permalink: /kb/118/Q118435/
 ---
 
 ## Q118435: INFO: Sharing Menus Between MDI Child Windows

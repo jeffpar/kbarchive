@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122145: Minimized Excel Workbooks Disappear When Resizing the Window"
-permalink: kb/122/Q122145/
+permalink: /kb/122/Q122145/
 ---
 
 ## Q122145: Minimized Excel Workbooks Disappear When Resizing the Window

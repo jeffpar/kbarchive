@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134222: No Warning Deleting .Exe or .Com Files from Recycle Bin"
-permalink: kb/134/Q134222/
+permalink: /kb/134/Q134222/
 ---
 
 ## Q134222: No Warning Deleting .Exe or .Com Files from Recycle Bin

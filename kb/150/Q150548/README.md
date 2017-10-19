@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150548: Complete Gardening Err Msg: Out of Memory"
-permalink: kb/150/Q150548/
+permalink: /kb/150/Q150548/
 ---
 
 ## Q150548: Complete Gardening Err Msg: Out of Memory

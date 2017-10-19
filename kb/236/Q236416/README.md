@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q236416: XADM: Event 114: Unable to Read Configuration File []"
-permalink: kb/236/Q236416/
+title: "Q236416: XADM: Event 114: Unable to Read Configuration File &#91;&#93;"
+permalink: /kb/236/Q236416/
 ---
 
-## Q236416: XADM: Event 114: Unable to Read Configuration File []
+## Q236416: XADM: Event 114: Unable to Read Configuration File &#91;&#93;
 
 	Article: Q236416
 	Product(s): Microsoft Exchange

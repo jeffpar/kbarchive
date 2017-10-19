@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133730: Network User Profiles Not Supported on Real-Mode Networks"
-permalink: kb/133/Q133730/
+permalink: /kb/133/Q133730/
 ---
 
 ## Q133730: Network User Profiles Not Supported on Real-Mode Networks

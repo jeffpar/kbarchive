@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314651: FIX: &quot;File Is Not Open&quot; Err Msg May Cause Infinite Loop"
-permalink: kb/314/Q314651/
+permalink: /kb/314/Q314651/
 ---
 
 ## Q314651: FIX: &quot;File Is Not Open&quot; Err Msg May Cause Infinite Loop

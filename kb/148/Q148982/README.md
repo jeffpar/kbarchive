@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148982: XCLN: Prints Multiple Copies of Messages Using Print Icon"
-permalink: kb/148/Q148982/
+permalink: /kb/148/Q148982/
 ---
 
 ## Q148982: XCLN: Prints Multiple Copies of Messages Using Print Icon

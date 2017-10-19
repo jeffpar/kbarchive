@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154702: Cannot Start Directory Service Manager for NetWare (DSMN)"
-permalink: kb/154/Q154702/
+permalink: /kb/154/Q154702/
 ---
 
 ## Q154702: Cannot Start Directory Service Manager for NetWare (DSMN)

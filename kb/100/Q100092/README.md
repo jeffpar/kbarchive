@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100092: MS-DOS 6 and 6.2 Boot-Sector Identification Tag Is &quot;MSDOS5.0&quot;"
-permalink: kb/100/Q100092/
+permalink: /kb/100/Q100092/
 ---
 
 ## Q100092: MS-DOS 6 and 6.2 Boot-Sector Identification Tag Is &quot;MSDOS5.0&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228772: Cannot Customize Microsoft Year 2000 Product Analyzer Database"
-permalink: kb/228/Q228772/
+permalink: /kb/228/Q228772/
 ---
 
 ## Q228772: Cannot Customize Microsoft Year 2000 Product Analyzer Database

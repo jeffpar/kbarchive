@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91044: PC WFW: Invalid Postoffice &amp; Network Names for Workgroups"
-permalink: kb/091/Q91044/
+permalink: /kb/091/Q91044/
 ---
 
 ## Q91044: PC WFW: Invalid Postoffice &amp; Network Names for Workgroups

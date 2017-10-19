@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239060: WD97: Problems Opening or Locating Files Using UNC Path"
-permalink: kb/239/Q239060/
+permalink: /kb/239/Q239060/
 ---
 
 ## Q239060: WD97: Problems Opening or Locating Files Using UNC Path

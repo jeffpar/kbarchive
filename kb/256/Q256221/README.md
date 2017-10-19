@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256221: XCON: Exchange Server 5.5 POP3 Clients Cannot Authenticate"
-permalink: kb/256/Q256221/
+permalink: /kb/256/Q256221/
 ---
 
 ## Q256221: XCON: Exchange Server 5.5 POP3 Clients Cannot Authenticate

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99155: Upper Memory Conflict Hangs LM During Protocol Loading"
-permalink: kb/099/Q99155/
+permalink: /kb/099/Q99155/
 ---
 
 ## Q99155: Upper Memory Conflict Hangs LM During Protocol Loading

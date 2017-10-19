@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245740: XIMS: Addresses Rerouted to IPv4 Literals Result in NDRs"
-permalink: kb/245/Q245740/
+permalink: /kb/245/Q245740/
 ---
 
 ## Q245740: XIMS: Addresses Rerouted to IPv4 Literals Result in NDRs

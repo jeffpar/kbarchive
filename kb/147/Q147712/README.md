@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147712: Application Exception When AppleTalk Clients Try Connecting"
-permalink: kb/147/Q147712/
+permalink: /kb/147/Q147712/
 ---
 
 ## Q147712: Application Exception When AppleTalk Clients Try Connecting

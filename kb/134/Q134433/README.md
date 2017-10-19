@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134433: List of Confirmed Bugs in Systems Management Server 1.0"
-permalink: kb/134/Q134433/
+permalink: /kb/134/Q134433/
 ---
 
 ## Q134433: List of Confirmed Bugs in Systems Management Server 1.0

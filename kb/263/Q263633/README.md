@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263633: BUG: Error C2946 on Explicit Instantiation of Imported Templates"
-permalink: kb/263/Q263633/
+permalink: /kb/263/Q263633/
 ---
 
 ## Q263633: BUG: Error C2946 on Explicit Instantiation of Imported Templates

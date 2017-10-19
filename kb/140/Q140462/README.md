@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140462: PC DirSync: LISTDS.EXE Does Not Reset REQCONF.GLB"
-permalink: kb/140/Q140462/
+permalink: /kb/140/Q140462/
 ---
 
 ## Q140462: PC DirSync: LISTDS.EXE Does Not Reset REQCONF.GLB

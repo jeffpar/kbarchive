@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170904: WD97: Inline Picture Inside Text Box Becomes Larger in Word 7.x"
-permalink: kb/170/Q170904/
+permalink: /kb/170/Q170904/
 ---
 
 ## Q170904: WD97: Inline Picture Inside Text Box Becomes Larger in Word 7.x

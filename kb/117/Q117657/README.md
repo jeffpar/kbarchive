@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117657: Windows 95 May Not Start After Setup to Clean Directory"
-permalink: kb/117/Q117657/
+permalink: /kb/117/Q117657/
 ---
 
 ## Q117657: Windows 95 May Not Start After Setup to Clean Directory

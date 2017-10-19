@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198480: XCLN: Message Displays Forwarded Icon but was not Forwarded"
-permalink: kb/198/Q198480/
+permalink: /kb/198/Q198480/
 ---
 
 ## Q198480: XCLN: Message Displays Forwarded Icon but was not Forwarded

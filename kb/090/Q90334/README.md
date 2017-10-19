@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90334: Using NET TIME Command to Set Workgroup Clocks"
-permalink: kb/090/Q90334/
+permalink: /kb/090/Q90334/
 ---
 
 ## Q90334: Using NET TIME Command to Set Workgroup Clocks

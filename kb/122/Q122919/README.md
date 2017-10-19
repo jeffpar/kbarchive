@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122919: Some Applications Unable to Print to or View Some Printers"
-permalink: kb/122/Q122919/
+permalink: /kb/122/Q122919/
 ---
 
 ## Q122919: Some Applications Unable to Print to or View Some Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134492: HyperTerminal Connect Option Does Not Connect You to Host"
-permalink: kb/134/Q134492/
+permalink: /kb/134/Q134492/
 ---
 
 ## Q134492: HyperTerminal Connect Option Does Not Connect You to Host

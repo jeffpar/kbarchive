@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124874: STOP Message 0x0A Running Performance Monitor on NEC 3360"
-permalink: kb/124/Q124874/
+permalink: /kb/124/Q124874/
 ---
 
 ## Q124874: STOP Message 0x0A Running Performance Monitor on NEC 3360

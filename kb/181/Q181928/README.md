@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181928: Using POLEDIT to Save Policy Files on NetWare Servers May Fail"
-permalink: kb/181/Q181928/
+permalink: /kb/181/Q181928/
 ---
 
 ## Q181928: Using POLEDIT to Save Policy Files on NetWare Servers May Fail

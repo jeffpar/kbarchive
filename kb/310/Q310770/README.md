@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310770: FP2002: JPEG Image Quality Degrades When Inserted into Web Page"
-permalink: kb/310/Q310770/
+permalink: /kb/310/Q310770/
 ---
 
 ## Q310770: FP2002: JPEG Image Quality Degrades When Inserted into Web Page

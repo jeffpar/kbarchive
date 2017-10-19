@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137385: WD97: Error Using Text Data Source with ODBC Driver"
-permalink: kb/137/Q137385/
+permalink: /kb/137/Q137385/
 ---
 
 ## Q137385: WD97: Error Using Text Data Source with ODBC Driver

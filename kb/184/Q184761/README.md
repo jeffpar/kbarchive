@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184761: HOWTO: Automate Internet Explorer 4 to Open a Specific Web Page"
-permalink: kb/184/Q184761/
+permalink: /kb/184/Q184761/
 ---
 
 ## Q184761: HOWTO: Automate Internet Explorer 4 to Open a Specific Web Page

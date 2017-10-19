@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157807: Enabling AutoDial with Internet Explorer in Windows NT 4.0"
-permalink: kb/157/Q157807/
+permalink: /kb/157/Q157807/
 ---
 
 ## Q157807: Enabling AutoDial with Internet Explorer in Windows NT 4.0

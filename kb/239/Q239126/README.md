@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239126: SMS: Output Corrupted When You Print IPF Files in Windows 95"
-permalink: kb/239/Q239126/
+permalink: /kb/239/Q239126/
 ---
 
 ## Q239126: SMS: Output Corrupted When You Print IPF Files in Windows 95

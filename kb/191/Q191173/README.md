@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191173: HOWTO: Display Web Content in the Component Gallery"
-permalink: kb/191/Q191173/
+permalink: /kb/191/Q191173/
 ---
 
 ## Q191173: HOWTO: Display Web Content in the Component Gallery

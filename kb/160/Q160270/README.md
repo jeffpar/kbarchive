@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160270: XGEN: BackOffice Resource Kit Part One"
-permalink: kb/160/Q160270/
+permalink: /kb/160/Q160270/
 ---
 
 ## Q160270: XGEN: BackOffice Resource Kit Part One

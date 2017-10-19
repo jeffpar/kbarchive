@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130159: INFO: When Visual FoxPro Uses 16-bit &amp; 32-bit ODBC Drivers"
-permalink: kb/130/Q130159/
+permalink: /kb/130/Q130159/
 ---
 
 ## Q130159: INFO: When Visual FoxPro Uses 16-bit &amp; 32-bit ODBC Drivers

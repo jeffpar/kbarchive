@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99381: Trace Access Pack for Windows 3.0 and 3.1"
-permalink: kb/099/Q99381/
+permalink: /kb/099/Q99381/
 ---
 
 ## Q99381: Trace Access Pack for Windows 3.0 and 3.1

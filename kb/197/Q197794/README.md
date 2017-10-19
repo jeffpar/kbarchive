@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197794: WD97: Existing Macros and AutoText Are Not Saved with New Form"
-permalink: kb/197/Q197794/
+permalink: /kb/197/Q197794/
 ---
 
 ## Q197794: WD97: Existing Macros and AutoText Are Not Saved with New Form

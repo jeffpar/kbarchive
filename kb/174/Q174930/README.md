@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174930: Stop 0x0000007f When Executing Tasks Through Remotely Possible"
-permalink: kb/174/Q174930/
+permalink: /kb/174/Q174930/
 ---
 
 ## Q174930: Stop 0x0000007f When Executing Tasks Through Remotely Possible

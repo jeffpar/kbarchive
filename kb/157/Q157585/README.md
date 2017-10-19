@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157585: Golf: System Requirements"
-permalink: kb/157/Q157585/
+permalink: /kb/157/Q157585/
 ---
 
 ## Q157585: Golf: System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297127: Users With Web-based E-mail Accounts Can Receive At Both @msn.co"
-permalink: kb/297/Q297127/
+permalink: /kb/297/Q297127/
 ---
 
 ## Q297127: Users With Web-based E-mail Accounts Can Receive At Both @msn.co

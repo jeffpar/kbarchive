@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223437: NWRDR Access Violates in Module Nwslib.dll"
-permalink: kb/223/Q223437/
+permalink: /kb/223/Q223437/
 ---
 
 ## Q223437: NWRDR Access Violates in Module Nwslib.dll

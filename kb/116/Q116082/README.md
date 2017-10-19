@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116082: SAMPLE: Using MCI Commands in Visual Basic"
-permalink: kb/116/Q116082/
+permalink: /kb/116/Q116082/
 ---
 
 ## Q116082: SAMPLE: Using MCI Commands in Visual Basic

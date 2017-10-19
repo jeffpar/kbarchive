@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122898: DEC Pathworks Problems with 3COM Network Adapters"
-permalink: kb/122/Q122898/
+permalink: /kb/122/Q122898/
 ---
 
 ## Q122898: DEC Pathworks Problems with 3COM Network Adapters

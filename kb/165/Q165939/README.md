@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165939: 3270 LUs May Now Be Assigned to TCP/IP Addresses"
-permalink: kb/165/Q165939/
+permalink: /kb/165/Q165939/
 ---
 
 ## Q165939: 3270 LUs May Now Be Assigned to TCP/IP Addresses

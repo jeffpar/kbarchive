@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227879: Formatting Using the Compaq Array Configuration Utility"
-permalink: kb/227/Q227879/
+permalink: /kb/227/Q227879/
 ---
 
 ## Q227879: Formatting Using the Compaq Array Configuration Utility

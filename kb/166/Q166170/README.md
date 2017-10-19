@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166170: Using Default Gateways with OSPF"
-permalink: kb/166/Q166170/
+permalink: /kb/166/Q166170/
 ---
 
 ## Q166170: Using Default Gateways with OSPF

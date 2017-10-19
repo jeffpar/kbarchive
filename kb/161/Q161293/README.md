@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161293: SMS: NET TIME May Cause the Login Script to Fail"
-permalink: kb/161/Q161293/
+permalink: /kb/161/Q161293/
 ---
 
 ## Q161293: SMS: NET TIME May Cause the Login Script to Fail

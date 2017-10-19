@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82315: Inconsistent Rotation Between Device and TrueType Fonts"
-permalink: kb/082/Q82315/
+permalink: /kb/082/Q82315/
 ---
 
 ## Q82315: Inconsistent Rotation Between Device and TrueType Fonts

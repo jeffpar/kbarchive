@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115348: X400: MTA Not Found Error Message"
-permalink: kb/115/Q115348/
+permalink: /kb/115/Q115348/
 ---
 
 ## Q115348: X400: MTA Not Found Error Message

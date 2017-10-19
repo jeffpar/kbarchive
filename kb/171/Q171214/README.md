@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171214: XFOR: NDR When Replying to a Lotus cc:Mail Reply Message"
-permalink: kb/171/Q171214/
+permalink: /kb/171/Q171214/
 ---
 
 ## Q171214: XFOR: NDR When Replying to a Lotus cc:Mail Reply Message

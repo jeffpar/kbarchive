@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126718: PC Ext: Using External with Novell and Windows NT Postoffices"
-permalink: kb/126/Q126718/
+permalink: /kb/126/Q126718/
 ---
 
 ## Q126718: PC Ext: Using External with Novell and Windows NT Postoffices

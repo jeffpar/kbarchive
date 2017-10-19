@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102630: LAN Manager Heuristics and Windows NT Registry Entries"
-permalink: kb/102/Q102630/
+permalink: /kb/102/Q102630/
 ---
 
 ## Q102630: LAN Manager Heuristics and Windows NT Registry Entries

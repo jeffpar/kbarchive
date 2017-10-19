@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250566: Unable to Connect to Internet When Connected to Network with RAS"
-permalink: kb/250/Q250566/
+permalink: /kb/250/Q250566/
 ---
 
 ## Q250566: Unable to Connect to Internet When Connected to Network with RAS

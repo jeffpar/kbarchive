@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260354: Streets and Trips 2001: Printed Maps Do Not Fill the Entire Page"
-permalink: kb/260/Q260354/
+permalink: /kb/260/Q260354/
 ---
 
 ## Q260354: Streets and Trips 2001: Printed Maps Do Not Fill the Entire Page

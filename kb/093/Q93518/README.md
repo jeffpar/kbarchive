@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93518: Mac Wkst: Workstation Conflict with GraceLan Software"
-permalink: kb/093/Q93518/
+permalink: /kb/093/Q93518/
 ---
 
 ## Q93518: Mac Wkst: Workstation Conflict with GraceLan Software

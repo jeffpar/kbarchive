@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171961: Mac Bookshelf 98: Unexpected Behavior Using Multiple Monitors"
-permalink: kb/171/Q171961/
+permalink: /kb/171/Q171961/
 ---
 
 ## Q171961: Mac Bookshelf 98: Unexpected Behavior Using Multiple Monitors

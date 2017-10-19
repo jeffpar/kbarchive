@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298000: XADM: Reports Don't Return Content, Have Content Type of MDBEF"
-permalink: kb/298/Q298000/
+permalink: /kb/298/Q298000/
 ---
 
 ## Q298000: XADM: Reports Don't Return Content, Have Content Type of MDBEF

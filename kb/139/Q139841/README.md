@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139841: SNMP Returns Corrupt MAC Address"
-permalink: kb/139/Q139841/
+permalink: /kb/139/Q139841/
 ---
 
 ## Q139841: SNMP Returns Corrupt MAC Address

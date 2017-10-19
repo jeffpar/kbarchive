@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150008: DOS Applications Receive Wrong Error Code in FPNW"
-permalink: kb/150/Q150008/
+permalink: /kb/150/Q150008/
 ---
 
 ## Q150008: DOS Applications Receive Wrong Error Code in FPNW

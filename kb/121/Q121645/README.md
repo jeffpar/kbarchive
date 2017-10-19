@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121645: STOP 0x0000001E in SRV.SYS"
-permalink: kb/121/Q121645/
+permalink: /kb/121/Q121645/
 ---
 
 ## Q121645: STOP 0x0000001E in SRV.SYS

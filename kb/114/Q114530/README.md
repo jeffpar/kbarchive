@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114530: BUG: DDESPY and Ctrl Key Cause GP Fault in Windows NT"
-permalink: kb/114/Q114530/
+permalink: /kb/114/Q114530/
 ---
 
 ## Q114530: BUG: DDESPY and Ctrl Key Cause GP Fault in Windows NT

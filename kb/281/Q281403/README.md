@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281403: CGI Can't Load DLL in Directory with Extended ASCII Characters"
-permalink: kb/281/Q281403/
+permalink: /kb/281/Q281403/
 ---
 
 ## Q281403: CGI Can't Load DLL in Directory with Extended ASCII Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87973: ADMIN.WRI from WinLogin 1.0 Part B"
-permalink: kb/087/Q87973/
+permalink: /kb/087/Q87973/
 ---
 
 ## Q87973: ADMIN.WRI from WinLogin 1.0 Part B

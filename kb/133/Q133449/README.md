@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133449: PRB: ESL File Not Automatically Included w/ Visual FoxPro EXE"
-permalink: kb/133/Q133449/
+permalink: /kb/133/Q133449/
 ---
 
 ## Q133449: PRB: ESL File Not Automatically Included w/ Visual FoxPro EXE

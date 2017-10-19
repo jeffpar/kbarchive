@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82354: On Target 1.0 Does Not Install on Windows System"
-permalink: kb/082/Q82354/
+permalink: /kb/082/Q82354/
 ---
 
 ## Q82354: On Target 1.0 Does Not Install on Windows System

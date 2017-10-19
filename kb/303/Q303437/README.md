@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303437: Security Update MS00-024 Breaks SHGetFolderPath in Shfolder.dll"
-permalink: kb/303/Q303437/
+permalink: /kb/303/Q303437/
 ---
 
 ## Q303437: Security Update MS00-024 Breaks SHGetFolderPath in Shfolder.dll

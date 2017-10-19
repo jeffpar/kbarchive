@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90168: Configuration Manager Allows Duplicate Filenames"
-permalink: kb/090/Q90168/
+permalink: /kb/090/Q90168/
 ---
 
 ## Q90168: Configuration Manager Allows Duplicate Filenames

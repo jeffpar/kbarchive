@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126752: DCs Fail to Synchronize or Validate Users Over NWLINK"
-permalink: kb/126/Q126752/
+permalink: /kb/126/Q126752/
 ---
 
 ## Q126752: DCs Fail to Synchronize or Validate Users Over NWLINK

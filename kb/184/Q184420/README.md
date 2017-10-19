@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184420: XADM: Error 2140 When Attempting To Start Key Management Server"
-permalink: kb/184/Q184420/
+permalink: /kb/184/Q184420/
 ---
 
 ## Q184420: XADM: Error 2140 When Attempting To Start Key Management Server

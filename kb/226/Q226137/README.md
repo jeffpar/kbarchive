@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226137: XADM: Push Notifications Generated &amp; Skipped/Second in PerfMon"
-permalink: kb/226/Q226137/
+permalink: /kb/226/Q226137/
 ---
 
 ## Q226137: XADM: Push Notifications Generated &amp; Skipped/Second in PerfMon

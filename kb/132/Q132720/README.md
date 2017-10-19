@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132720: SNA Server CPIC Allocate Error 20 (CM_PRODUCT_SPECIFIC_ERROR)"
-permalink: kb/132/Q132720/
+permalink: /kb/132/Q132720/
 ---
 
 ## Q132720: SNA Server CPIC Allocate Error 20 (CM_PRODUCT_SPECIFIC_ERROR)

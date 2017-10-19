@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301519: Customer receives e-mail at username@hotmail.msn.com but not at"
-permalink: kb/301/Q301519/
+permalink: /kb/301/Q301519/
 ---
 
 ## Q301519: Customer receives e-mail at username@hotmail.msn.com but not at

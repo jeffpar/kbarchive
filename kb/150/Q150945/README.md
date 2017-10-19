@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150945: BUG: Unable to Enter the CD KEY in the Setup Dialog Box"
-permalink: kb/150/Q150945/
+permalink: /kb/150/Q150945/
 ---
 
 ## Q150945: BUG: Unable to Enter the CD KEY in the Setup Dialog Box

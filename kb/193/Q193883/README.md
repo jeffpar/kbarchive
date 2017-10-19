@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193883: WD97: Cannot Replace Character Formatting With Nothing in SR-2"
-permalink: kb/193/Q193883/
+permalink: /kb/193/Q193883/
 ---
 
 ## Q193883: WD97: Cannot Replace Character Formatting With Nothing in SR-2

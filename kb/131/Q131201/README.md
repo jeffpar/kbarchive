@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131201: INFO: Print Setup Options Saved with the Report"
-permalink: kb/131/Q131201/
+permalink: /kb/131/Q131201/
 ---
 
 ## Q131201: INFO: Print Setup Options Saved with the Report

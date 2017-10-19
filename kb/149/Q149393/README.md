@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149393: CrashOnAuditFail Activates on Shutdown with ProcessTracking"
-permalink: kb/149/Q149393/
+permalink: /kb/149/Q149393/
 ---
 
 ## Q149393: CrashOnAuditFail Activates on Shutdown with ProcessTracking

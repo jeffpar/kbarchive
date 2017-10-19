@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q104687: PC Adm: IMPORT: Error [12] Displays Wrong Line Number"
-permalink: kb/104/Q104687/
+title: "Q104687: PC Adm: IMPORT: Error &#91;12&#93; Displays Wrong Line Number"
+permalink: /kb/104/Q104687/
 ---
 
-## Q104687: PC Adm: IMPORT: Error [12] Displays Wrong Line Number
+## Q104687: PC Adm: IMPORT: Error &#91;12&#93; Displays Wrong Line Number
 
 	Article: Q104687
 	Product(s): Microsoft Mail For PC Networks

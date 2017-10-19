@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285079: Default Country Set to United States Not Canada in Find Feature"
-permalink: kb/285/Q285079/
+permalink: /kb/285/Q285079/
 ---
 
 ## Q285079: Default Country Set to United States Not Canada in Find Feature

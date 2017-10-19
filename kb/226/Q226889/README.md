@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226889: SMS 2.0 Administrator's Guide Site System Roles Are Incorrect"
-permalink: kb/226/Q226889/
+permalink: /kb/226/Q226889/
 ---
 
 ## Q226889: SMS 2.0 Administrator's Guide Site System Roles Are Incorrect

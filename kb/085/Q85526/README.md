@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85526: Novell Workstation Hangs Due to Queued Messages"
-permalink: kb/085/Q85526/
+permalink: /kb/085/Q85526/
 ---
 
 ## Q85526: Novell Workstation Hangs Due to Queued Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105332: Print Monitor Cannot Handle More Than 255 Zones"
-permalink: kb/105/Q105332/
+permalink: /kb/105/Q105332/
 ---
 
 ## Q105332: Print Monitor Cannot Handle More Than 255 Zones

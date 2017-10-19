@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130227: Importing Scripts From More Than One Domain"
-permalink: kb/130/Q130227/
+permalink: /kb/130/Q130227/
 ---
 
 ## Q130227: Importing Scripts From More Than One Domain

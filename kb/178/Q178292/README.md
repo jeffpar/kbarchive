@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178292: Cannot Delete SNA Server Print Server"
-permalink: kb/178/Q178292/
+permalink: /kb/178/Q178292/
 ---
 
 ## Q178292: Cannot Delete SNA Server Print Server

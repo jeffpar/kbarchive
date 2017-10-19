@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166950: WD97: Can't Fax When Recipient Name Is Blank"
-permalink: kb/166/Q166950/
+permalink: /kb/166/Q166950/
 ---
 
 ## Q166950: WD97: Can't Fax When Recipient Name Is Blank

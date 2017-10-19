@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224388: SMS: Slownet Determines Network Speed at Logon"
-permalink: kb/224/Q224388/
+permalink: /kb/224/Q224388/
 ---
 
 ## Q224388: SMS: Slownet Determines Network Speed at Logon

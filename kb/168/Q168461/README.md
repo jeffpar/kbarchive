@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168461: Customizing Your Network Neighborhood Help Topic Does Not Exist"
-permalink: kb/168/Q168461/
+permalink: /kb/168/Q168461/
 ---
 
 ## Q168461: Customizing Your Network Neighborhood Help Topic Does Not Exist

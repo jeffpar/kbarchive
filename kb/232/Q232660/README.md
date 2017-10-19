@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232660: BUG: GDI Leak Printing Report w/ 256 Color BMP &amp; SET PALETTE OFF"
-permalink: kb/232/Q232660/
+permalink: /kb/232/Q232660/
 ---
 
 ## Q232660: BUG: GDI Leak Printing Report w/ 256 Color BMP &amp; SET PALETTE OFF

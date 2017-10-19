@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124154: Bad Logins From Workstation on Domain Not in Event Viewer"
-permalink: kb/124/Q124154/
+permalink: /kb/124/Q124154/
 ---
 
 ## Q124154: Bad Logins From Workstation on Domain Not in Event Viewer

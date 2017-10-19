@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83895: Files Left Open Using CALL Command on .EXE File"
-permalink: kb/083/Q83895/
+permalink: /kb/083/Q83895/
 ---
 
 ## Q83895: Files Left Open Using CALL Command on .EXE File

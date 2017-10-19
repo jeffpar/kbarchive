@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84047: Text of DEC Pathworks SETHOST.EXE Is Invisible"
-permalink: kb/084/Q84047/
+permalink: /kb/084/Q84047/
 ---
 
 ## Q84047: Text of DEC Pathworks SETHOST.EXE Is Invisible

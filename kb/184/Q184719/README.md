@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184719: XADM: Msg: The Description for Event ID Could Not Be Found"
-permalink: kb/184/Q184719/
+permalink: /kb/184/Q184719/
 ---
 
 ## Q184719: XADM: Msg: The Description for Event ID Could Not Be Found

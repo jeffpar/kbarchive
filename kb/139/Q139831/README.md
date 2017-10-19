@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139831: Oceans: Scenes Pictures Appear with Oceans Screensaver"
-permalink: kb/139/Q139831/
+permalink: /kb/139/Q139831/
 ---
 
 ## Q139831: Oceans: Scenes Pictures Appear with Oceans Screensaver

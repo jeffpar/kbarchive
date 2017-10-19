@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114667: PRB: &quot;Error Initializing OLE&quot; When Running GENGRAPH"
-permalink: kb/114/Q114667/
+permalink: /kb/114/Q114667/
 ---
 
 ## Q114667: PRB: &quot;Error Initializing OLE&quot; When Running GENGRAPH

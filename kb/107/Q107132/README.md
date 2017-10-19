@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107132: Windows for Workgroups 3.11 Retail Package Options"
-permalink: kb/107/Q107132/
+permalink: /kb/107/Q107132/
 ---
 
 ## Q107132: Windows for Workgroups 3.11 Retail Package Options

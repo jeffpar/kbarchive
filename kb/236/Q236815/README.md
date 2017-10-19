@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236815: INFO: Effects of Column and CurrentControl ControlSource Setting"
-permalink: kb/236/Q236815/
+permalink: /kb/236/Q236815/
 ---
 
 ## Q236815: INFO: Effects of Column and CurrentControl ControlSource Setting

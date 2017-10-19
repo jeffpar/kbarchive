@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166973: WD97: Example Macro to Select or Go to a Table Cell"
-permalink: kb/166/Q166973/
+permalink: /kb/166/Q166973/
 ---
 
 ## Q166973: WD97: Example Macro to Select or Go to a Table Cell

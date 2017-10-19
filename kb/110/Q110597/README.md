@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110597: Scenes 1.0: Does Not Restore MSSCENES.BMP as Wallpaper"
-permalink: kb/110/Q110597/
+permalink: /kb/110/Q110597/
 ---
 
 ## Q110597: Scenes 1.0: Does Not Restore MSSCENES.BMP as Wallpaper

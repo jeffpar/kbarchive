@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234314: BUG: &quot;This Stub Requires an Updated Version of &lt;Rpcndr.h&gt;&quot; Error"
-permalink: kb/234/Q234314/
+permalink: /kb/234/Q234314/
 ---
 
 ## Q234314: BUG: &quot;This Stub Requires an Updated Version of &lt;Rpcndr.h&gt;&quot; Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243298: FIX: Err Msg: C2668: InlineIsEqualGUID : Ambiguous Call..."
-permalink: kb/243/Q243298/
+permalink: /kb/243/Q243298/
 ---
 
 ## Q243298: FIX: Err Msg: C2668: InlineIsEqualGUID : Ambiguous Call...

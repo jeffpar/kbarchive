@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195451: MSN Error Message: Remote Server Disconnected"
-permalink: kb/195/Q195451/
+permalink: /kb/195/Q195451/
 ---
 
 ## Q195451: MSN Error Message: Remote Server Disconnected

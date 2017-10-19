@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165245: DDE Client Experiences Intermittent DDE Disconnects"
-permalink: kb/165/Q165245/
+permalink: /kb/165/Q165245/
 ---
 
 ## Q165245: DDE Client Experiences Intermittent DDE Disconnects

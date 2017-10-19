@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181400: WD97: VBA Routines to Determine If Line or Document Is Empty"
-permalink: kb/181/Q181400/
+permalink: /kb/181/Q181400/
 ---
 
 ## Q181400: WD97: VBA Routines to Determine If Line or Document Is Empty

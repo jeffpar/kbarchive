@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135763: Single-User Error Opening File in FileMaker Pro for Windows"
-permalink: kb/135/Q135763/
+permalink: /kb/135/Q135763/
 ---
 
 ## Q135763: Single-User Error Opening File in FileMaker Pro for Windows

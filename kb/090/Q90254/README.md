@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90254: NE2000 Clone Card Doesn't Work with Windows for Workgroups"
-permalink: kb/090/Q90254/
+permalink: /kb/090/Q90254/
 ---
 
 ## Q90254: NE2000 Clone Card Doesn't Work with Windows for Workgroups

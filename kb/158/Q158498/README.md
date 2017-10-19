@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158498: PPT7: Files Installed by Stand-Alone PowerPoint"
-permalink: kb/158/Q158498/
+permalink: /kb/158/Q158498/
 ---
 
 ## Q158498: PPT7: Files Installed by Stand-Alone PowerPoint

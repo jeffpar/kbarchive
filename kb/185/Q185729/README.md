@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185729: Computer Becomes Unresponsive During CGI Stress Test"
-permalink: kb/185/Q185729/
+permalink: /kb/185/Q185729/
 ---
 
 ## Q185729: Computer Becomes Unresponsive During CGI Stress Test

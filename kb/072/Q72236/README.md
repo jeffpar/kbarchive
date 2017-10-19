@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72236: Maximizing the Use of Available Memory in Windows"
-permalink: kb/072/Q72236/
+permalink: /kb/072/Q72236/
 ---
 
 ## Q72236: Maximizing the Use of Available Memory in Windows

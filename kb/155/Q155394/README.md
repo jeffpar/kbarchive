@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155394: PRB: Double Quotes in DIR Path in INI File Can Result in Crash"
-permalink: kb/155/Q155394/
+permalink: /kb/155/Q155394/
 ---
 
 ## Q155394: PRB: Double Quotes in DIR Path in INI File Can Result in Crash

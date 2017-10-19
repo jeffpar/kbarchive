@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185010: XADM: How to Rehome Public Folders"
-permalink: kb/185/Q185010/
+permalink: /kb/185/Q185010/
 ---
 
 ## Q185010: XADM: How to Rehome Public Folders

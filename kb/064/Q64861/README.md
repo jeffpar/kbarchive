@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64861: Using the QMS Jetscript with Windows 3.0"
-permalink: kb/064/Q64861/
+permalink: /kb/064/Q64861/
 ---
 
 ## Q64861: Using the QMS Jetscript with Windows 3.0

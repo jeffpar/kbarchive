@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107471: WFWG 3.11 Err Msg: Segment Load Failure"
-permalink: kb/107/Q107471/
+permalink: /kb/107/Q107471/
 ---
 
 ## Q107471: WFWG 3.11 Err Msg: Segment Load Failure

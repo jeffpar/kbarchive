@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165814: Stop: 0x0000001E When Opening My Computer"
-permalink: kb/165/Q165814/
+permalink: /kb/165/Q165814/
 ---
 
 ## Q165814: Stop: 0x0000001E When Opening My Computer

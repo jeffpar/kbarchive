@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154496: ODBC Error After Multiple Connections and Disconnections"
-permalink: kb/154/Q154496/
+permalink: /kb/154/Q154496/
 ---
 
 ## Q154496: ODBC Error After Multiple Connections and Disconnections

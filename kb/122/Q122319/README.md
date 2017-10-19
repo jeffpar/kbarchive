@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122319: NEC CDR-500 and CDR-600 May Require Firmware Upgrade"
-permalink: kb/122/Q122319/
+permalink: /kb/122/Q122319/
 ---
 
 ## Q122319: NEC CDR-500 and CDR-600 May Require Firmware Upgrade

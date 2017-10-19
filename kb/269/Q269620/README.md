@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269620: PRB: SP_SetAppRole in RDO Causes Error Message"
-permalink: kb/269/Q269620/
+permalink: /kb/269/Q269620/
 ---
 
 ## Q269620: PRB: SP_SetAppRole in RDO Causes Error Message

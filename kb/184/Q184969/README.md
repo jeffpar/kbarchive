@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184969: PRB: SET COMPATIBLE ON Causes Problems with Arrays"
-permalink: kb/184/Q184969/
+permalink: /kb/184/Q184969/
 ---
 
 ## Q184969: PRB: SET COMPATIBLE ON Causes Problems with Arrays

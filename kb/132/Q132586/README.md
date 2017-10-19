@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132586: APEX Audio Express PCMCIA Sound Card May Not Operate Correctly"
-permalink: kb/132/Q132586/
+permalink: /kb/132/Q132586/
 ---
 
 ## Q132586: APEX Audio Express PCMCIA Sound Card May Not Operate Correctly

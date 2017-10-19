@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176969: SMS: Audit Fails with &quot;Cannot read SMS.INI&quot; Error Message"
-permalink: kb/176/Q176969/
+permalink: /kb/176/Q176969/
 ---
 
 ## Q176969: SMS: Audit Fails with &quot;Cannot read SMS.INI&quot; Error Message

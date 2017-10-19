@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184746: XFOR: Attendees Missing from Migrated Groupwise Meeting"
-permalink: kb/184/Q184746/
+permalink: /kb/184/Q184746/
 ---
 
 ## Q184746: XFOR: Attendees Missing from Migrated Groupwise Meeting

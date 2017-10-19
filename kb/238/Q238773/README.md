@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238773: XCLN: How to Export GAL Entries to an Outlook Contacts Folder"
-permalink: kb/238/Q238773/
+permalink: /kb/238/Q238773/
 ---
 
 ## Q238773: XCLN: How to Export GAL Entries to an Outlook Contacts Folder

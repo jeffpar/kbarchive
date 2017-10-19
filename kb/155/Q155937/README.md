@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155937: FIX: SET COMPATIBLE ON Causes Problems with Crosstab Query"
-permalink: kb/155/Q155937/
+permalink: /kb/155/Q155937/
 ---
 
 ## Q155937: FIX: SET COMPATIBLE ON Causes Problems with Crosstab Query

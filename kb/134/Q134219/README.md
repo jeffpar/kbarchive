@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134219: Explorapedia: Wrong Version is Displayed on Product ID Screen"
-permalink: kb/134/Q134219/
+permalink: /kb/134/Q134219/
 ---
 
 ## Q134219: Explorapedia: Wrong Version is Displayed on Product ID Screen

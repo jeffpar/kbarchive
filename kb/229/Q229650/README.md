@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229650: STOP 0x0000001E in Win32k.sys When Running Findfast.exe"
-permalink: kb/229/Q229650/
+permalink: /kb/229/Q229650/
 ---
 
 ## Q229650: STOP 0x0000001E in Win32k.sys When Running Findfast.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146876: PRB: DAO Error 3028 When Creating a DAO Workspace"
-permalink: kb/146/Q146876/
+permalink: /kb/146/Q146876/
 ---
 
 ## Q146876: PRB: DAO Error 3028 When Creating a DAO Workspace

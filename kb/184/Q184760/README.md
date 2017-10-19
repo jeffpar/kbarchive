@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184760: Error: &quot;CreateIISPackage or DeleteIISPackage, 0x8008005&quot;"
-permalink: kb/184/Q184760/
+permalink: /kb/184/Q184760/
 ---
 
 ## Q184760: Error: &quot;CreateIISPackage or DeleteIISPackage, 0x8008005&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103962: PC Forms: Err Msg: The Type of Data Did Not Match..."
-permalink: kb/103/Q103962/
+permalink: /kb/103/Q103962/
 ---
 
 ## Q103962: PC Forms: Err Msg: The Type of Data Did Not Match...

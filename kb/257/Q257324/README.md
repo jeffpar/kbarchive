@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257324: MapPoint 2001: Leading Zeros Are Truncated When You Import Numer"
-permalink: kb/257/Q257324/
+permalink: /kb/257/Q257324/
 ---
 
 ## Q257324: MapPoint 2001: Leading Zeros Are Truncated When You Import Numer

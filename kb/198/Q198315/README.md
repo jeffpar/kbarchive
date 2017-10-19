@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198315: WD97: Word Assist Tips and Tips Back/Next Buttons Not Available"
-permalink: kb/198/Q198315/
+permalink: /kb/198/Q198315/
 ---
 
 ## Q198315: WD97: Word Assist Tips and Tips Back/Next Buttons Not Available

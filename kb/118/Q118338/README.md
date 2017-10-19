@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118338: BUG: Sample MTTEST.FOR Compile Errors"
-permalink: kb/118/Q118338/
+permalink: /kb/118/Q118338/
 ---
 
 ## Q118338: BUG: Sample MTTEST.FOR Compile Errors

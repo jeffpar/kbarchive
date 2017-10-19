@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195086: INFO: File REGMSVM.BAT is Missing in Visual Modeler 1.1 Release"
-permalink: kb/195/Q195086/
+permalink: /kb/195/Q195086/
 ---
 
 ## Q195086: INFO: File REGMSVM.BAT is Missing in Visual Modeler 1.1 Release

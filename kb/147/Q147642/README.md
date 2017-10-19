@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147642: NetWare Files Overwritten When Updating To Windows NT 3.51 SP4"
-permalink: kb/147/Q147642/
+permalink: /kb/147/Q147642/
 ---
 
 ## Q147642: NetWare Files Overwritten When Updating To Windows NT 3.51 SP4

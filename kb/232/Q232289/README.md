@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232289: XFOR: Exchange 5.5 SP2 Notes Connector Doesn't Support Notes R5"
-permalink: kb/232/Q232289/
+permalink: /kb/232/Q232289/
 ---
 
 ## Q232289: XFOR: Exchange 5.5 SP2 Notes Connector Doesn't Support Notes R5

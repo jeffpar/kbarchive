@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58412: Do Not Use the MS-DOS APPEND Utility in Windows"
-permalink: kb/058/Q58412/
+permalink: /kb/058/Q58412/
 ---
 
 ## Q58412: Do Not Use the MS-DOS APPEND Utility in Windows

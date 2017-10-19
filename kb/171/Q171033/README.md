@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171033: Remote Performance Monitor Changes Under Windows NT 4.0 SP3"
-permalink: kb/171/Q171033/
+permalink: /kb/171/Q171033/
 ---
 
 ## Q171033: Remote Performance Monitor Changes Under Windows NT 4.0 SP3

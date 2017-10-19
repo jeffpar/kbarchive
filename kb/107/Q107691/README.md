@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107691: Using DebugOutput to Debug a Windows-Based Application"
-permalink: kb/107/Q107691/
+permalink: /kb/107/Q107691/
 ---
 
 ## Q107691: Using DebugOutput to Debug a Windows-Based Application

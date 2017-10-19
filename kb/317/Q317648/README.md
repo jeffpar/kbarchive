@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317648: Train Simulator: Brake Key Commands Do Not Work"
-permalink: kb/317/Q317648/
+permalink: /kb/317/Q317648/
 ---
 
 ## Q317648: Train Simulator: Brake Key Commands Do Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256847: HOWTO: Use the WNetUseConnection API to Map a Drive in VB"
-permalink: kb/256/Q256847/
+permalink: /kb/256/Q256847/
 ---
 
 ## Q256847: HOWTO: Use the WNetUseConnection API to Map a Drive in VB

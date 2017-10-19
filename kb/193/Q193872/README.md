@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193872: BUG: VB6 Version of RDO Cannot Access Oracle Packages"
-permalink: kb/193/Q193872/
+permalink: /kb/193/Q193872/
 ---
 
 ## Q193872: BUG: VB6 Version of RDO Cannot Access Oracle Packages

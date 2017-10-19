@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158038: STL Sample for the stack::operation"
-permalink: kb/158/Q158038/
+permalink: /kb/158/Q158038/
 ---
 
 ## Q158038: STL Sample for the stack::operation

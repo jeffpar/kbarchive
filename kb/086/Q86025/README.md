@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86025: LaserJet II Does Not Print Large TrueType Fonts Correctly"
-permalink: kb/086/Q86025/
+permalink: /kb/086/Q86025/
 ---
 
 ## Q86025: LaserJet II Does Not Print Large TrueType Fonts Correctly

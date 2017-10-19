@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117669: Changing Video Drivers in 3.11--Repeated Prompts for Disk 1"
-permalink: kb/117/Q117669/
+permalink: /kb/117/Q117669/
 ---
 
 ## Q117669: Changing Video Drivers in 3.11--Repeated Prompts for Disk 1

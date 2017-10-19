@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62378: Mac Wkst: Messages Are Suddenly and Unexpectedly Sent"
-permalink: kb/062/Q62378/
+permalink: /kb/062/Q62378/
 ---
 
 ## Q62378: Mac Wkst: Messages Are Suddenly and Unexpectedly Sent

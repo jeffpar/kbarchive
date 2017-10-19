@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190817: HOWTO: Use CREATE FORM ... AS Class FROM Classlib Syntax"
-permalink: kb/190/Q190817/
+permalink: /kb/190/Q190817/
 ---
 
 ## Q190817: HOWTO: Use CREATE FORM ... AS Class FROM Classlib Syntax

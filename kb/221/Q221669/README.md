@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221669: FIX: Return of COM Server Objref Causes Server to Not Release"
-permalink: kb/221/Q221669/
+permalink: /kb/221/Q221669/
 ---
 
 ## Q221669: FIX: Return of COM Server Objref Causes Server to Not Release

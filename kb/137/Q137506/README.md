@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137506: Adding and Providing The FPNW Serial Number"
-permalink: kb/137/Q137506/
+permalink: /kb/137/Q137506/
 ---
 
 ## Q137506: Adding and Providing The FPNW Serial Number

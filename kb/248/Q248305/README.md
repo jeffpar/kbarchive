@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248305: XCLN: Japanese Characters Appear as Question Marks"
-permalink: kb/248/Q248305/
+permalink: /kb/248/Q248305/
 ---
 
 ## Q248305: XCLN: Japanese Characters Appear as Question Marks

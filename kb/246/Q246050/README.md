@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246050: MapPoint: How to Import Streets &amp; Trips 2000 Pushpins"
-permalink: kb/246/Q246050/
+permalink: /kb/246/Q246050/
 ---
 
 ## Q246050: MapPoint: How to Import Streets &amp; Trips 2000 Pushpins

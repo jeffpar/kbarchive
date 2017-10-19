@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104504: WFWG Asynchronous Close Leads to Freeze of OS/2 LAN Man Server"
-permalink: kb/104/Q104504/
+permalink: /kb/104/Q104504/
 ---
 
 ## Q104504: WFWG Asynchronous Close Leads to Freeze of OS/2 LAN Man Server

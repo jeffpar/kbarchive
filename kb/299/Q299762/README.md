@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299762: Train Simulator: Minimum System Requirements"
-permalink: kb/299/Q299762/
+permalink: /kb/299/Q299762/
 ---
 
 ## Q299762: Train Simulator: Minimum System Requirements

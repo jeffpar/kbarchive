@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244817: BUG: IOleControlSite::TransformCoords() Returns S_OK"
-permalink: kb/244/Q244817/
+permalink: /kb/244/Q244817/
 ---
 
 ## Q244817: BUG: IOleControlSite::TransformCoords() Returns S_OK

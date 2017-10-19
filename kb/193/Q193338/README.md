@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193338: PRB: Setting RightToLeft to True Returns Out Of Memory Error"
-permalink: kb/193/Q193338/
+permalink: /kb/193/Q193338/
 ---
 
 ## Q193338: PRB: Setting RightToLeft to True Returns Out Of Memory Error

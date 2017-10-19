@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270697: SMS: Windows NT Clients Are Continually Prompted to Restart"
-permalink: kb/270/Q270697/
+permalink: /kb/270/Q270697/
 ---
 
 ## Q270697: SMS: Windows NT Clients Are Continually Prompted to Restart

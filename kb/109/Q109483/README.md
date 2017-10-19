@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109483: Using AppleScript to Programmatically Convert PICT to BMP"
-permalink: kb/109/Q109483/
+permalink: /kb/109/Q109483/
 ---
 
 ## Q109483: Using AppleScript to Programmatically Convert PICT to BMP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98208: SMTP: When the SMTP Gateway Uses Quotation Marks"
-permalink: kb/098/Q98208/
+permalink: /kb/098/Q98208/
 ---
 
 ## Q98208: SMTP: When the SMTP Gateway Uses Quotation Marks

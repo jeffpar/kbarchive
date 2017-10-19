@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158800: PRB: Duplicate Entries While Browsing in Class Browser"
-permalink: kb/158/Q158800/
+permalink: /kb/158/Q158800/
 ---
 
 ## Q158800: PRB: Duplicate Entries While Browsing in Class Browser

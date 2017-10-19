@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150438: XFOR: MS Mail Template Information is not Migrated"
-permalink: kb/150/Q150438/
+permalink: /kb/150/Q150438/
 ---
 
 ## Q150438: XFOR: MS Mail Template Information is not Migrated

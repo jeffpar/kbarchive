@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139858: XADM: Installing Server Into Large Existing Site Is Slow"
-permalink: kb/139/Q139858/
+permalink: /kb/139/Q139858/
 ---
 
 ## Q139858: XADM: Installing Server Into Large Existing Site Is Slow

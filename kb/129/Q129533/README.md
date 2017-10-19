@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129533: HOWTO: Pass Data to Microsoft Graph Programatically"
-permalink: kb/129/Q129533/
+permalink: /kb/129/Q129533/
 ---
 
 ## Q129533: HOWTO: Pass Data to Microsoft Graph Programatically

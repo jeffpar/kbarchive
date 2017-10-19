@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151783: XCLN: Exchange Client Unable to Add Public Folder to PAB"
-permalink: kb/151/Q151783/
+permalink: /kb/151/Q151783/
 ---
 
 ## Q151783: XCLN: Exchange Client Unable to Add Public Folder to PAB

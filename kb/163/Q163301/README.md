@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163301: PPT: Sample VB Code to Check for Open Presentation"
-permalink: kb/163/Q163301/
+permalink: /kb/163/Q163301/
 ---
 
 ## Q163301: PPT: Sample VB Code to Check for Open Presentation

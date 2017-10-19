@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q96648: PC Win: 3.0 Mail Disks 1-4 [3.5, 5.25]"
-permalink: kb/096/Q96648/
+title: "Q96648: PC Win: 3.0 Mail Disks 1-4 &#91;3.5, 5.25&#93;"
+permalink: /kb/096/Q96648/
 ---
 
-## Q96648: PC Win: 3.0 Mail Disks 1-4 [3.5, 5.25]
+## Q96648: PC Win: 3.0 Mail Disks 1-4 &#91;3.5, 5.25&#93;
 
 	Article: Q96648
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97668: CONVERT.TXT: Microsoft MS-DOS 6 Stacker Conversion"
-permalink: kb/097/Q97668/
+permalink: /kb/097/Q97668/
 ---
 
 ## Q97668: CONVERT.TXT: Microsoft MS-DOS 6 Stacker Conversion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154995: Cannot Compress WinNT 4.0 Files from a WinNT 3.51 Client"
-permalink: kb/154/Q154995/
+permalink: /kb/154/Q154995/
 ---
 
 ## Q154995: Cannot Compress WinNT 4.0 Files from a WinNT 3.51 Client

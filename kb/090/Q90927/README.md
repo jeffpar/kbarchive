@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90927: WFWG Servers Cannot Act as a Gateway, Router, or Bridge"
-permalink: kb/090/Q90927/
+permalink: /kb/090/Q90927/
 ---
 
 ## Q90927: WFWG Servers Cannot Act as a Gateway, Router, or Bridge

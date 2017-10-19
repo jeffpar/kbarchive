@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110672: Flight Simulator: Diamond Viper SVGA Mode Requirements"
-permalink: kb/110/Q110672/
+permalink: /kb/110/Q110672/
 ---
 
 ## Q110672: Flight Simulator: Diamond Viper SVGA Mode Requirements

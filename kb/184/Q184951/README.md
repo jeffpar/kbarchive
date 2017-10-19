@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184951: XCLN: Multiple Lines for Installation Description Truncated"
-permalink: kb/184/Q184951/
+permalink: /kb/184/Q184951/
 ---
 
 ## Q184951: XCLN: Multiple Lines for Installation Description Truncated

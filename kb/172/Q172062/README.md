@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172062: SNADATABASE Shuts Down and Restarts During Startup"
-permalink: kb/172/Q172062/
+permalink: /kb/172/Q172062/
 ---
 
 ## Q172062: SNADATABASE Shuts Down and Restarts During Startup

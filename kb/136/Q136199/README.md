@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136199: NetWare Programs Fail to Run and Display Error Messages"
-permalink: kb/136/Q136199/
+permalink: /kb/136/Q136199/
 ---
 
 ## Q136199: NetWare Programs Fail to Run and Display Error Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96693: PC Win: Name Finder Doesn't Find Correct Names"
-permalink: kb/096/Q96693/
+permalink: /kb/096/Q96693/
 ---
 
 ## Q96693: PC Win: Name Finder Doesn't Find Correct Names

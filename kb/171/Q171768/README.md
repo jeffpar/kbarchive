@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171768: WinNT Err: Registry Structure Not Set Properly"
-permalink: kb/171/Q171768/
+permalink: /kb/171/Q171768/
 ---
 
 ## Q171768: WinNT Err: Registry Structure Not Set Properly

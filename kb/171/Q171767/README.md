@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171767: OS/2 Clients Do Not Receive Print Notification"
-permalink: kb/171/Q171767/
+permalink: /kb/171/Q171767/
 ---
 
 ## Q171767: OS/2 Clients Do Not Receive Print Notification

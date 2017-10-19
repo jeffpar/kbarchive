@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168004: FIX: &quot;Unable to initialize DAO/Jet db engine&quot; Error"
-permalink: kb/168/Q168004/
+permalink: /kb/168/Q168004/
 ---
 
 ## Q168004: FIX: &quot;Unable to initialize DAO/Jet db engine&quot; Error

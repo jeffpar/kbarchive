@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311766: HOW TO: Troubleshoot &quot;HTTP 500 - Internal Server Error&quot; Message"
-permalink: kb/311/Q311766/
+permalink: /kb/311/Q311766/
 ---
 
 ## Q311766: HOW TO: Troubleshoot &quot;HTTP 500 - Internal Server Error&quot; Message

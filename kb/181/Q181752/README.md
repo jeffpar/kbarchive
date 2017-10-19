@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181752: Unable to Save Contents of the Clipboard Using Clipboard Viewer"
-permalink: kb/181/Q181752/
+permalink: /kb/181/Q181752/
 ---
 
 ## Q181752: Unable to Save Contents of the Clipboard Using Clipboard Viewer

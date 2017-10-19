@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121017: FIX: Can't Create Directory &gt;1 Deep for Intermediate Files"
-permalink: kb/121/Q121017/
+permalink: /kb/121/Q121017/
 ---
 
 ## Q121017: FIX: Can't Create Directory &gt;1 Deep for Intermediate Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177679: Incorrect Size of Printed Documents Results from Unknown Font"
-permalink: kb/177/Q177679/
+permalink: /kb/177/Q177679/
 ---
 
 ## Q177679: Incorrect Size of Printed Documents Results from Unknown Font

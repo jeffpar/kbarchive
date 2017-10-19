@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168572: XADM: Can't Install Active Server Pages on Windows NT 3.51"
-permalink: kb/168/Q168572/
+permalink: /kb/168/Q168572/
 ---
 
 ## Q168572: XADM: Can't Install Active Server Pages on Windows NT 3.51

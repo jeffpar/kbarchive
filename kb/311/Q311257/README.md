@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311257: SMS: Resources Not Discovered if Anonymous Connections Off"
-permalink: kb/311/Q311257/
+permalink: /kb/311/Q311257/
 ---
 
 ## Q311257: SMS: Resources Not Discovered if Anonymous Connections Off

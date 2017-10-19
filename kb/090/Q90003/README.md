@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90003: Setup Defaults to Custom Installation with Low Disk Space"
-permalink: kb/090/Q90003/
+permalink: /kb/090/Q90003/
 ---
 
 ## Q90003: Setup Defaults to Custom Installation with Low Disk Space

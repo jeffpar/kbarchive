@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164211: FPNW Doesn't Convert the Long File Names Correctly"
-permalink: kb/164/Q164211/
+permalink: /kb/164/Q164211/
 ---
 
 ## Q164211: FPNW Doesn't Convert the Long File Names Correctly

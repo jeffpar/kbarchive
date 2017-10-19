@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286580: Slow Performance Transferring Data with SNA DB2OLEDB Driver"
-permalink: kb/286/Q286580/
+permalink: /kb/286/Q286580/
 ---
 
 ## Q286580: Slow Performance Transferring Data with SNA DB2OLEDB Driver

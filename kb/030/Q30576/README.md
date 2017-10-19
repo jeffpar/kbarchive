@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30576: Fix-Up Overflow Caused By Extrn Statements and .Fardata"
-permalink: kb/030/Q30576/
+permalink: /kb/030/Q30576/
 ---
 
 ## Q30576: Fix-Up Overflow Caused By Extrn Statements and .Fardata

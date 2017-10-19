@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78614: Houston Instruments Plotter Emulations"
-permalink: kb/078/Q78614/
+permalink: /kb/078/Q78614/
 ---
 
 ## Q78614: Houston Instruments Plotter Emulations

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246137: FS2000: &quot;System Error&quot; When You Attempt to Start the Program"
-permalink: kb/246/Q246137/
+permalink: /kb/246/Q246137/
 ---
 
 ## Q246137: FS2000: &quot;System Error&quot; When You Attempt to Start the Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174029: XCLN: Received Time Shows as None in Outlook Client"
-permalink: kb/174/Q174029/
+permalink: /kb/174/Q174029/
 ---
 
 ## Q174029: XCLN: Received Time Shows as None in Outlook Client

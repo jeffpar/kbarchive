@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78439: Fulbak Backup Utilities 2.0 or Later with MS-DOS 5.0"
-permalink: kb/078/Q78439/
+permalink: /kb/078/Q78439/
 ---
 
 ## Q78439: Fulbak Backup Utilities 2.0 or Later with MS-DOS 5.0

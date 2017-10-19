@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179058: XADM: Store on Alpha Fails When POP3 User Retrieves Attachment"
-permalink: kb/179/Q179058/
+permalink: /kb/179/Q179058/
 ---
 
 ## Q179058: XADM: Store on Alpha Fails When POP3 User Retrieves Attachment

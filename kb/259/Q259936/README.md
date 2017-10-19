@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259936: MMC Cannot Administer IIS 4.0 Through Terminal Server Client"
-permalink: kb/259/Q259936/
+permalink: /kb/259/Q259936/
 ---
 
 ## Q259936: MMC Cannot Administer IIS 4.0 Through Terminal Server Client

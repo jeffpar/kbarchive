@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326045: SMS: Distribution Mgr. Does Not Correctly Discover Package Size"
-permalink: kb/326/Q326045/
+permalink: /kb/326/Q326045/
 ---
 
 ## Q326045: SMS: Distribution Mgr. Does Not Correctly Discover Package Size

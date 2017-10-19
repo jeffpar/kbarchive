@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286339: BUG: &quot;Data Type Mismatch&quot; Error After PACK When Used with an IDX"
-permalink: kb/286/Q286339/
+permalink: /kb/286/Q286339/
 ---
 
 ## Q286339: BUG: &quot;Data Type Mismatch&quot; Error After PACK When Used with an IDX

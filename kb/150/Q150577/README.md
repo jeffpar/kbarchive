@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150577: ARP Request for Nonlocal Target Hosts on Same Physical Net"
-permalink: kb/150/Q150577/
+permalink: /kb/150/Q150577/
 ---
 
 ## Q150577: ARP Request for Nonlocal Target Hosts on Same Physical Net

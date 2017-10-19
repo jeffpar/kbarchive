@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183111: IFilter SDK Sample Doesn't Build Under Visual C 5 SP3"
-permalink: kb/183/Q183111/
+permalink: /kb/183/Q183111/
 ---
 
 ## Q183111: IFilter SDK Sample Doesn't Build Under Visual C 5 SP3

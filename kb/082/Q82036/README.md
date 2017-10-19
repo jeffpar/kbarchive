@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82036: Microtek True Laser MTP-306 Emulation"
-permalink: kb/082/Q82036/
+permalink: /kb/082/Q82036/
 ---
 
 ## Q82036: Microtek True Laser MTP-306 Emulation

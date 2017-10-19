@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69816: Flight Simulator: Brakes Stuck on with Joystick"
-permalink: kb/069/Q69816/
+permalink: /kb/069/Q69816/
 ---
 
 ## Q69816: Flight Simulator: Brakes Stuck on with Joystick

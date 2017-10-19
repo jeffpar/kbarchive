@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231439: XADM: Error 1276 Starting Information Store"
-permalink: kb/231/Q231439/
+permalink: /kb/231/Q231439/
 ---
 
 ## Q231439: XADM: Error 1276 Starting Information Store

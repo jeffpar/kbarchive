@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115437: FIX: Problems Using Parentheses to Denote Array Subscripts"
-permalink: kb/115/Q115437/
+permalink: /kb/115/Q115437/
 ---
 
 ## Q115437: FIX: Problems Using Parentheses to Denote Array Subscripts

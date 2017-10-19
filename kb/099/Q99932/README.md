@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99932: IP Fragment Reassembly Bug Identified and Corrected"
-permalink: kb/099/Q99932/
+permalink: /kb/099/Q99932/
 ---
 
 ## Q99932: IP Fragment Reassembly Bug Identified and Corrected

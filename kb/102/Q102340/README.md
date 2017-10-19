@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102340: Mac Bkup: Destination Volume Must Be Mounted"
-permalink: kb/102/Q102340/
+permalink: /kb/102/Q102340/
 ---
 
 ## Q102340: Mac Bkup: Destination Volume Must Be Mounted

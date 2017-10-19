@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229613: Dtcxatm.log File Grows Unexpectedly Large"
-permalink: kb/229/Q229613/
+permalink: /kb/229/Q229613/
 ---
 
 ## Q229613: Dtcxatm.log File Grows Unexpectedly Large

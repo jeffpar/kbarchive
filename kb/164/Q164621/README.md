@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164621: MSN Err Msg: Video Not Available VIDS:IV32 Decompressor"
-permalink: kb/164/Q164621/
+permalink: /kb/164/Q164621/
 ---
 
 ## Q164621: MSN Err Msg: Video Not Available VIDS:IV32 Decompressor

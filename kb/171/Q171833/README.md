@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171833: FIX: Statement Builder Crashes Referencing GlobalMultiUse Server"
-permalink: kb/171/Q171833/
+permalink: /kb/171/Q171833/
 ---
 
 ## Q171833: FIX: Statement Builder Crashes Referencing GlobalMultiUse Server

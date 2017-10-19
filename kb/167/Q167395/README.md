@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167395: RIP Routes May Expire Early When Running Windows NT 4.0 RIP"
-permalink: kb/167/Q167395/
+permalink: /kb/167/Q167395/
 ---
 
 ## Q167395: RIP Routes May Expire Early When Running Windows NT 4.0 RIP

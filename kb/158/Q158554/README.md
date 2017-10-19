@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158554: Music Central 97: Discography Screen is Missing Credits"
-permalink: kb/158/Q158554/
+permalink: /kb/158/Q158554/
 ---
 
 ## Q158554: Music Central 97: Discography Screen is Missing Credits

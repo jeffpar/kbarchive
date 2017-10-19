@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194552: Client SNA Manager Traps after Removing Host Account Manager"
-permalink: kb/194/Q194552/
+permalink: /kb/194/Q194552/
 ---
 
 ## Q194552: Client SNA Manager Traps after Removing Host Account Manager

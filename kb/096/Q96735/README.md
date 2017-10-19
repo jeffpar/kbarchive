@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96735: Hardware/Software Requirements for Fault Tolerance"
-permalink: kb/096/Q96735/
+permalink: /kb/096/Q96735/
 ---
 
 ## Q96735: Hardware/Software Requirements for Fault Tolerance

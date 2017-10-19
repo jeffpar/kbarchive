@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167008: SMS: Incorrect Workstation Attribute Set in the Setup Column"
-permalink: kb/167/Q167008/
+permalink: /kb/167/Q167008/
 ---
 
 ## Q167008: SMS: Incorrect Workstation Attribute Set in the Setup Column

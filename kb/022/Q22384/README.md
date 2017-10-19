@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22384: Windows Does Not Implement INT 15H to Handle Multitasking"
-permalink: kb/022/Q22384/
+permalink: /kb/022/Q22384/
 ---
 
 ## Q22384: Windows Does Not Implement INT 15H to Handle Multitasking

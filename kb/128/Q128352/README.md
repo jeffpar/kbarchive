@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128352: Print Job to LPR Printer Does Not Print"
-permalink: kb/128/Q128352/
+permalink: /kb/128/Q128352/
 ---
 
 ## Q128352: Print Job to LPR Printer Does Not Print

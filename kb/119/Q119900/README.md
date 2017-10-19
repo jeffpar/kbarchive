@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119900: INFO: Understanding the RETURN Command"
-permalink: kb/119/Q119900/
+permalink: /kb/119/Q119900/
 ---
 
 ## Q119900: INFO: Understanding the RETURN Command

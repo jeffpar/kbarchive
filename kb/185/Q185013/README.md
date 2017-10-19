@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185013: XADM: Using # and ^ Symbols in Display Names"
-permalink: kb/185/Q185013/
+permalink: /kb/185/Q185013/
 ---
 
 ## Q185013: XADM: Using # and ^ Symbols in Display Names

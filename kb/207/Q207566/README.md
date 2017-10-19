@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207566: SMS: Client Remote Installation Account Cannot Be Deleted"
-permalink: kb/207/Q207566/
+permalink: /kb/207/Q207566/
 ---
 
 ## Q207566: SMS: Client Remote Installation Account Cannot Be Deleted

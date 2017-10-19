@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30382: FIX: Command Line Option /Z Is Ignored after Processing"
-permalink: kb/030/Q30382/
+permalink: /kb/030/Q30382/
 ---
 
 ## Q30382: FIX: Command Line Option /Z Is Ignored after Processing

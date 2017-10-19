@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180113: Problems Printing to German FPNW from NetWare Clients"
-permalink: kb/180/Q180113/
+permalink: /kb/180/Q180113/
 ---
 
 ## Q180113: Problems Printing to German FPNW from NetWare Clients

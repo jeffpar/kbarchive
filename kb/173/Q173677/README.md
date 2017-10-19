@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173677: Audio Problems with Cirrus Logic PD6832 CardBus Controller"
-permalink: kb/173/Q173677/
+permalink: /kb/173/Q173677/
 ---
 
 ## Q173677: Audio Problems with Cirrus Logic PD6832 CardBus Controller

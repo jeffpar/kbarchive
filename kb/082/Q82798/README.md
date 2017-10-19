@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82798: TrueType and Graphics on HP LaserJet Printers"
-permalink: kb/082/Q82798/
+permalink: /kb/082/Q82798/
 ---
 
 ## Q82798: TrueType and Graphics on HP LaserJet Printers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101359: Disk Format Fails in Enhanced Mode with GSI Drive Controller"
-permalink: kb/101/Q101359/
+permalink: /kb/101/Q101359/
 ---
 
 ## Q101359: Disk Format Fails in Enhanced Mode with GSI Drive Controller

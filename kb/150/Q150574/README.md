@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150574: FIX:CScrollView::OnHScroll/OnVScroll Do Not Call OnChildNotify"
-permalink: kb/150/Q150574/
+permalink: /kb/150/Q150574/
 ---
 
 ## Q150574: FIX:CScrollView::OnHScroll/OnVScroll Do Not Call OnChildNotify

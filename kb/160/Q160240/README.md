@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160240: WD97: Office Assistant Balloon Has No Controls After Replace"
-permalink: kb/160/Q160240/
+permalink: /kb/160/Q160240/
 ---
 
 ## Q160240: WD97: Office Assistant Balloon Has No Controls After Replace

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164091: FTP Permissions for File GET and PUT"
-permalink: kb/164/Q164091/
+permalink: /kb/164/Q164091/
 ---
 
 ## Q164091: FTP Permissions for File GET and PUT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167404: PRB: Problems with ODBC Setup PPC Control Panel"
-permalink: kb/167/Q167404/
+permalink: /kb/167/Q167404/
 ---
 
 ## Q167404: PRB: Problems with ODBC Setup PPC Control Panel

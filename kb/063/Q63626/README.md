@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63626: Flight Simulator: Crash Setting Set to Off with Scenery Disks"
-permalink: kb/063/Q63626/
+permalink: /kb/063/Q63626/
 ---
 
 ## Q63626: Flight Simulator: Crash Setting Set to Off with Scenery Disks

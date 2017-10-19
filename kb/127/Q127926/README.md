@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127926: Updated Proteon P1392 Token Ring Adapter Available"
-permalink: kb/127/Q127926/
+permalink: /kb/127/Q127926/
 ---
 
 ## Q127926: Updated Proteon P1392 Token Ring Adapter Available

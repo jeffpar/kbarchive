@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142957: Starting Microsoft Backup Hangs Computer"
-permalink: kb/142/Q142957/
+permalink: /kb/142/Q142957/
 ---
 
 ## Q142957: Starting Microsoft Backup Hangs Computer

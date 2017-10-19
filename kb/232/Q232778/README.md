@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232778: FIX: MIDL Gives Warning MIDL2039 When Decimal Parameter Is Used"
-permalink: kb/232/Q232778/
+permalink: /kb/232/Q232778/
 ---
 
 ## Q232778: FIX: MIDL Gives Warning MIDL2039 When Decimal Parameter Is Used

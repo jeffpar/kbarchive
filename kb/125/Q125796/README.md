@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125796: PRB: GP Fault when Use CString Objects Inside TRACE&lt;x&gt; Macros"
-permalink: kb/125/Q125796/
+permalink: /kb/125/Q125796/
 ---
 
 ## Q125796: PRB: GP Fault when Use CString Objects Inside TRACE&lt;x&gt; Macros

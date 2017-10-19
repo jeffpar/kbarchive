@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154774: XCLN: Exchange Client Inbox Assistant Rules FAQ"
-permalink: kb/154/Q154774/
+permalink: /kb/154/Q154774/
 ---
 
 ## Q154774: XCLN: Exchange Client Inbox Assistant Rules FAQ

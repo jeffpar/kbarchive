@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290285: Windows ME At A Glance Comments and Corrections"
-permalink: kb/290/Q290285/
+permalink: /kb/290/Q290285/
 ---
 
 ## Q290285: Windows ME At A Glance Comments and Corrections

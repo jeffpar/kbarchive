@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150678: Complete Gardening: Saved Lists Sort by Botanical Names"
-permalink: kb/150/Q150678/
+permalink: /kb/150/Q150678/
 ---
 
 ## Q150678: Complete Gardening: Saved Lists Sort by Botanical Names

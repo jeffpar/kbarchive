@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260724: XADM: Calendar Public Folders Don't Publish Free/Busy Info"
-permalink: kb/260/Q260724/
+permalink: /kb/260/Q260724/
 ---
 
 ## Q260724: XADM: Calendar Public Folders Don't Publish Free/Busy Info

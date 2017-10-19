@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173453: XADM: Preview Beta Expires in 120 Days After Installation"
-permalink: kb/173/Q173453/
+permalink: /kb/173/Q173453/
 ---
 
 ## Q173453: XADM: Preview Beta Expires in 120 Days After Installation

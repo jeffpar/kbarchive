@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96509: Installing OS/2 on EISA Gateway 486 with Ultrastore 24F"
-permalink: kb/096/Q96509/
+permalink: /kb/096/Q96509/
 ---
 
 ## Q96509: Installing OS/2 on EISA Gateway 486 with Ultrastore 24F

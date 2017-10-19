@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134755: PC Gen: PABUTILS.TXT: Mail 3.5 Utilities Disk"
-permalink: kb/134/Q134755/
+permalink: /kb/134/Q134755/
 ---
 
 ## Q134755: PC Gen: PABUTILS.TXT: Mail 3.5 Utilities Disk

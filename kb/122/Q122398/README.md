@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122398: TCP/IP Internetworking Components Not Available"
-permalink: kb/122/Q122398/
+permalink: /kb/122/Q122398/
 ---
 
 ## Q122398: TCP/IP Internetworking Components Not Available

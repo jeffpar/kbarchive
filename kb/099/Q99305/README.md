@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99305: Mac Tool: Errors Saving Enclosures After Rebuild"
-permalink: kb/099/Q99305/
+permalink: /kb/099/Q99305/
 ---
 
 ## Q99305: Mac Tool: Errors Saving Enclosures After Rebuild

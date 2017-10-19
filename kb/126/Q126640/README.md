@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126640: Setting Up a Backup Domain Controller Stated Incorrectly"
-permalink: kb/126/Q126640/
+permalink: /kb/126/Q126640/
 ---
 
 ## Q126640: Setting Up a Backup Domain Controller Stated Incorrectly

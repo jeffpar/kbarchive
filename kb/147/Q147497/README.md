@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147497: Matrox Video Driver May Fail on Alpha-based Computers"
-permalink: kb/147/Q147497/
+permalink: /kb/147/Q147497/
 ---
 
 ## Q147497: Matrox Video Driver May Fail on Alpha-based Computers

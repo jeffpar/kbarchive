@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127180: XCOPY /? Shows Incorrect Date Format"
-permalink: kb/127/Q127180/
+permalink: /kb/127/Q127180/
 ---
 
 ## Q127180: XCOPY /? Shows Incorrect Date Format

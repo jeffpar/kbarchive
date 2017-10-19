@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103450: PC Win: Maximum Size of Inserted File is 32,655 Bytes"
-permalink: kb/103/Q103450/
+permalink: /kb/103/Q103450/
 ---
 
 ## Q103450: PC Win: Maximum Size of Inserted File is 32,655 Bytes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120513: PRB: Output Parameters Not Received From Stored Procedure"
-permalink: kb/120/Q120513/
+permalink: /kb/120/Q120513/
 ---
 
 ## Q120513: PRB: Output Parameters Not Received From Stored Procedure

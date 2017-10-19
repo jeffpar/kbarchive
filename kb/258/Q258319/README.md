@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258319: XADM: Uuencode Long DBCS Filename Attachment Causes Disk Full"
-permalink: kb/258/Q258319/
+permalink: /kb/258/Q258319/
 ---
 
 ## Q258319: XADM: Uuencode Long DBCS Filename Attachment Causes Disk Full

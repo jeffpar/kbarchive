@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172147: Add Printer Wizard Hangs When Searching for Remote Printers"
-permalink: kb/172/Q172147/
+permalink: /kb/172/Q172147/
 ---
 
 ## Q172147: Add Printer Wizard Hangs When Searching for Remote Printers

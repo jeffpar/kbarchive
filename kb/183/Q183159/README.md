@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183159: PBA: Incorrect Country/Region Names Listed in PBAdmin"
-permalink: kb/183/Q183159/
+permalink: /kb/183/Q183159/
 ---
 
 ## Q183159: PBA: Incorrect Country/Region Names Listed in PBAdmin

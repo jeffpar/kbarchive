@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251997: XCLN: Outlook Error Message: Word Is Unable to Open the Data Sou"
-permalink: kb/251/Q251997/
+permalink: /kb/251/Q251997/
 ---
 
 ## Q251997: XCLN: Outlook Error Message: Word Is Unable to Open the Data Sou

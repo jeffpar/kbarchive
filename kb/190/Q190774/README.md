@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190774: FIX: Keyboard Can Cause Component Gallery to Close"
-permalink: kb/190/Q190774/
+permalink: /kb/190/Q190774/
 ---
 
 ## Q190774: FIX: Keyboard Can Cause Component Gallery to Close

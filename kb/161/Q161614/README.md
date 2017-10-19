@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161614: WD97: Unexpected Results with Find Object w/o Forward Argument"
-permalink: kb/161/Q161614/
+permalink: /kb/161/Q161614/
 ---
 
 ## Q161614: WD97: Unexpected Results with Find Object w/o Forward Argument

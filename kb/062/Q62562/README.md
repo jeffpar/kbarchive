@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62562: DOS LAN Manager NetBIOS Sample Program"
-permalink: kb/062/Q62562/
+permalink: /kb/062/Q62562/
 ---
 
 ## Q62562: DOS LAN Manager NetBIOS Sample Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67758: PRB: MASM Err Msg: Unable to Open Input File: options.asm"
-permalink: kb/067/Q67758/
+permalink: /kb/067/Q67758/
 ---
 
 ## Q67758: PRB: MASM Err Msg: Unable to Open Input File: options.asm

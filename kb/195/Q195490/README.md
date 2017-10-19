@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195490: XADM: Deleted Items not Moved After a Move Mailbox"
-permalink: kb/195/Q195490/
+permalink: /kb/195/Q195490/
 ---
 
 ## Q195490: XADM: Deleted Items not Moved After a Move Mailbox

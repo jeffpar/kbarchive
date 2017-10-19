@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98937: Description of TriPeaks"
-permalink: kb/098/Q98937/
+permalink: /kb/098/Q98937/
 ---
 
 ## Q98937: Description of TriPeaks

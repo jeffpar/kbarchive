@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164512: Windows 95 Briefcase: No Drag-and-Drop on WinNT Compressed Dir"
-permalink: kb/164/Q164512/
+permalink: /kb/164/Q164512/
 ---
 
 ## Q164512: Windows 95 Briefcase: No Drag-and-Drop on WinNT Compressed Dir

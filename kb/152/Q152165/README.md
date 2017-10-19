@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152165: XCON: IMS Queues Back Up to Hosts with Multiple MX Records"
-permalink: kb/152/Q152165/
+permalink: /kb/152/Q152165/
 ---
 
 ## Q152165: XCON: IMS Queues Back Up to Hosts with Multiple MX Records

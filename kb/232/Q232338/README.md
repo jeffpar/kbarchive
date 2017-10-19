@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232338: User Prompted for Wrong Version of Windows NT CD"
-permalink: kb/232/Q232338/
+permalink: /kb/232/Q232338/
 ---
 
 ## Q232338: User Prompted for Wrong Version of Windows NT CD

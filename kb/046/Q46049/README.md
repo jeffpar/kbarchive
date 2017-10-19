@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46049: Paper Sizes and Names"
-permalink: kb/046/Q46049/
+permalink: /kb/046/Q46049/
 ---
 
 ## Q46049: Paper Sizes and Names

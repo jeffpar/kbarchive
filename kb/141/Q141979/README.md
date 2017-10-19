@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141979: Cannot Print to Legal Paper on HP LJ IIP/IIIP with PostScript"
-permalink: kb/141/Q141979/
+permalink: /kb/141/Q141979/
 ---
 
 ## Q141979: Cannot Print to Legal Paper on HP LJ IIP/IIIP with PostScript

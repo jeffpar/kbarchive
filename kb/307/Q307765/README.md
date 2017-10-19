@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307765: Troubleshooting 'RPC Server Too Busy to Complete Operation' Err."
-permalink: kb/307/Q307765/
+permalink: /kb/307/Q307765/
 ---
 
 ## Q307765: Troubleshooting 'RPC Server Too Busy to Complete Operation' Err.

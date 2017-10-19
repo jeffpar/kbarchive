@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137042: SMTP: How the Gateway Uses Memory"
-permalink: kb/137/Q137042/
+permalink: /kb/137/Q137042/
 ---
 
 ## Q137042: SMTP: How the Gateway Uses Memory

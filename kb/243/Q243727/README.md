@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243727: XCLN: DMS Clients Cannot Send Mail to Distribution Lists"
-permalink: kb/243/Q243727/
+permalink: /kb/243/Q243727/
 ---
 
 ## Q243727: XCLN: DMS Clients Cannot Send Mail to Distribution Lists

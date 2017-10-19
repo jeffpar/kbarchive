@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112268: PC Setup: Mail 3.0 Directory Entries in NetWare"
-permalink: kb/112/Q112268/
+permalink: /kb/112/Q112268/
 ---
 
 ## Q112268: PC Setup: Mail 3.0 Directory Entries in NetWare

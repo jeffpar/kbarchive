@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125610: Bookshelf: How to Change the Placement of QuickShelf"
-permalink: kb/125/Q125610/
+permalink: /kb/125/Q125610/
 ---
 
 ## Q125610: Bookshelf: How to Change the Placement of QuickShelf

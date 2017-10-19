@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272187: XADM: Error Message When Viewing the Organization Forms Library"
-permalink: kb/272/Q272187/
+permalink: /kb/272/Q272187/
 ---
 
 ## Q272187: XADM: Error Message When Viewing the Organization Forms Library

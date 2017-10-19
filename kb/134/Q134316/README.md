@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134316: List of Read-Only Properties at Design Time in Visual FoxPro"
-permalink: kb/134/Q134316/
+permalink: /kb/134/Q134316/
 ---
 
 ## Q134316: List of Read-Only Properties at Design Time in Visual FoxPro

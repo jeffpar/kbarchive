@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257982: 100 Percent CPU Use with Cluster Service"
-permalink: kb/257/Q257982/
+permalink: /kb/257/Q257982/
 ---
 
 ## Q257982: 100 Percent CPU Use with Cluster Service

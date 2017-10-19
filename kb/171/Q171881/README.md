@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171881: SMS: Remote Control French WinNT 4.0 SP3 Client Has Grey Viewer"
-permalink: kb/171/Q171881/
+permalink: /kb/171/Q171881/
 ---
 
 ## Q171881: SMS: Remote Control French WinNT 4.0 SP3 Client Has Grey Viewer

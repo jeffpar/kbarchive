@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139920: Multimedia: Error Message: Uninstaller Error"
-permalink: kb/139/Q139920/
+permalink: /kb/139/Q139920/
 ---
 
 ## Q139920: Multimedia: Error Message: Uninstaller Error

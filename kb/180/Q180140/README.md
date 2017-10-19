@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180140: SBS WinNT Workstation Client Has Server Service Error"
-permalink: kb/180/Q180140/
+permalink: /kb/180/Q180140/
 ---
 
 ## Q180140: SBS WinNT Workstation Client Has Server Service Error

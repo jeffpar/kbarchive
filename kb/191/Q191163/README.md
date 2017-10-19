@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191163: XFOR: Non-Delivery Report Returned When Message Includes Several"
-permalink: kb/191/Q191163/
+permalink: /kb/191/Q191163/
 ---
 
 ## Q191163: XFOR: Non-Delivery Report Returned When Message Includes Several

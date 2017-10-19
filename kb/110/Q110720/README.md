@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110720: Chess: Player Sides May Change After Restart"
-permalink: kb/110/Q110720/
+permalink: /kb/110/Q110720/
 ---
 
 ## Q110720: Chess: Player Sides May Change After Restart

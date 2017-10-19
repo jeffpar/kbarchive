@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106129: Err Msg Running MemMaker: EMM386 DMA Buffer Is Too Small..."
-permalink: kb/106/Q106129/
+permalink: /kb/106/Q106129/
 ---
 
 ## Q106129: Err Msg Running MemMaker: EMM386 DMA Buffer Is Too Small...

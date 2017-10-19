@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119269: Printing to AWFAX Printer Driver Does Not Send Fax"
-permalink: kb/119/Q119269/
+permalink: /kb/119/Q119269/
 ---
 
 ## Q119269: Printing to AWFAX Printer Driver Does Not Send Fax

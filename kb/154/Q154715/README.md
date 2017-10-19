@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154715: PC Win: Import, Export Folder Command Missing In  File Menu"
-permalink: kb/154/Q154715/
+permalink: /kb/154/Q154715/
 ---
 
 ## Q154715: PC Win: Import, Export Folder Command Missing In  File Menu

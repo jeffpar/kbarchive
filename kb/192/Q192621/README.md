@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192621: DOC: CUSTOMWZ Sample Is Actually Custom AppWizard Code"
-permalink: kb/192/Q192621/
+permalink: /kb/192/Q192621/
 ---
 
 ## Q192621: DOC: CUSTOMWZ Sample Is Actually Custom AppWizard Code

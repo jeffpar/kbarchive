@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63694: Moving Windows 3.0 to Another Location"
-permalink: kb/063/Q63694/
+permalink: /kb/063/Q63694/
 ---
 
 ## Q63694: Moving Windows 3.0 to Another Location

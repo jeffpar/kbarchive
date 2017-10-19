@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135107: E-mail Address Limited to 64 Characters"
-permalink: kb/135/Q135107/
+permalink: /kb/135/Q135107/
 ---
 
 ## Q135107: E-mail Address Limited to 64 Characters

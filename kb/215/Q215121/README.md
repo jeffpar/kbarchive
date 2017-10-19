@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215121: SMS: Japanese Novell NetWare/IntraNetWare 4.11 Changes the Time"
-permalink: kb/215/Q215121/
+permalink: /kb/215/Q215121/
 ---
 
 ## Q215121: SMS: Japanese Novell NetWare/IntraNetWare 4.11 Changes the Time

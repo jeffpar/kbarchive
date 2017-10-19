@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157843: WD97: Adding AutoText to the AutoText Menu"
-permalink: kb/157/Q157843/
+permalink: /kb/157/Q157843/
 ---
 
 ## Q157843: WD97: Adding AutoText to the AutoText Menu

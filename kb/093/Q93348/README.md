@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93348: INFO: Locking Error Messages in a Multiuser Environment"
-permalink: kb/093/Q93348/
+permalink: /kb/093/Q93348/
 ---
 
 ## Q93348: INFO: Locking Error Messages in a Multiuser Environment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182981: XADM: Performance Optimizer Settings for Small Business Server"
-permalink: kb/182/Q182981/
+permalink: /kb/182/Q182981/
 ---
 
 ## Q182981: XADM: Performance Optimizer Settings for Small Business Server

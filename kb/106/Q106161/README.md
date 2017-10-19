@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106161: How to Convert Screen Object Positions Between Platforms"
-permalink: kb/106/Q106161/
+permalink: /kb/106/Q106161/
 ---
 
 ## Q106161: How to Convert Screen Object Positions Between Platforms

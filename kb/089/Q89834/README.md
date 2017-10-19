@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89834: Artisoft LANtastic Network Card Support with WFWG"
-permalink: kb/089/Q89834/
+permalink: /kb/089/Q89834/
 ---
 
 ## Q89834: Artisoft LANtastic Network Card Support with WFWG

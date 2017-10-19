@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321625: HOWTO: Use Bandwidth and Process Throttling to Limit Resources"
-permalink: kb/321/Q321625/
+permalink: /kb/321/Q321625/
 ---
 
 ## Q321625: HOWTO: Use Bandwidth and Process Throttling to Limit Resources

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131992: HOWTO: How to Create a Property Sheet That Has Scrolling Tabs in"
-permalink: kb/131/Q131992/
+permalink: /kb/131/Q131992/
 ---
 
 ## Q131992: HOWTO: How to Create a Property Sheet That Has Scrolling Tabs in

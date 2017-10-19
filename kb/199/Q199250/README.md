@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199250: SMS: Version 1.2 to 2.0 Secondary Site Upgrade Options"
-permalink: kb/199/Q199250/
+permalink: /kb/199/Q199250/
 ---
 
 ## Q199250: SMS: Version 1.2 to 2.0 Secondary Site Upgrade Options

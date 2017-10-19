@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208820: Print Monitor Does Not Support Bidirectional Printing"
-permalink: kb/208/Q208820/
+permalink: /kb/208/Q208820/
 ---
 
 ## Q208820: Print Monitor Does Not Support Bidirectional Printing

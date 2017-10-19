@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133744: How to Re-dimension a Class Array Outside the Class Definition"
-permalink: kb/133/Q133744/
+permalink: /kb/133/Q133744/
 ---
 
 ## Q133744: How to Re-dimension a Class Array Outside the Class Definition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246359: Differences in Microsoft Visual C/C++ 5.0"
-permalink: kb/246/Q246359/
+permalink: /kb/246/Q246359/
 ---
 
 ## Q246359: Differences in Microsoft Visual C/C++ 5.0

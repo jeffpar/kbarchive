@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90750: Windows Err Msg: Cannot Find a Device File that May Be..."
-permalink: kb/090/Q90750/
+permalink: /kb/090/Q90750/
 ---
 
 ## Q90750: Windows Err Msg: Cannot Find a Device File that May Be...

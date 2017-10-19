@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129833: GSNW/CSNW Does Not Support Time Synchronization with NetWare"
-permalink: kb/129/Q129833/
+permalink: /kb/129/Q129833/
 ---
 
 ## Q129833: GSNW/CSNW Does Not Support Time Synchronization with NetWare

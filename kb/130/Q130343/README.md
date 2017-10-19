@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130343: Reserved Color Schemes in Visual FoxPro Now Include 15"
-permalink: kb/130/Q130343/
+permalink: /kb/130/Q130343/
 ---
 
 ## Q130343: Reserved Color Schemes in Visual FoxPro Now Include 15

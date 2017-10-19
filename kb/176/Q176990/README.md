@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176990: SMSINST: Installer Does Not Install Printers"
-permalink: kb/176/Q176990/
+permalink: /kb/176/Q176990/
 ---
 
 ## Q176990: SMSINST: Installer Does Not Install Printers

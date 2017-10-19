@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147321: Oceans: Minimum System Requirements"
-permalink: kb/147/Q147321/
+permalink: /kb/147/Q147321/
 ---
 
 ## Q147321: Oceans: Minimum System Requirements

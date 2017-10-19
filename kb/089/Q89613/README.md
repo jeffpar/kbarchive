@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89613: WRK TopDesk Err Msg: Cannot Access the File at This Time"
-permalink: kb/089/Q89613/
+permalink: /kb/089/Q89613/
 ---
 
 ## Q89613: WRK TopDesk Err Msg: Cannot Access the File at This Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125728: FIX: Problems Occur After Destroying Dockable CControlBar"
-permalink: kb/125/Q125728/
+permalink: /kb/125/Q125728/
 ---
 
 ## Q125728: FIX: Problems Occur After Destroying Dockable CControlBar

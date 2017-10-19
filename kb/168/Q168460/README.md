@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168460: SMS: &quot;SMSEXEC.EXE - Lost Delayed-Write Data&quot; Error"
-permalink: kb/168/Q168460/
+permalink: /kb/168/Q168460/
 ---
 
 ## Q168460: SMS: &quot;SMSEXEC.EXE - Lost Delayed-Write Data&quot; Error

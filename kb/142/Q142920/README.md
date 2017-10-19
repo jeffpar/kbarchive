@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142920: How to Create Unique Values on SQL Server 6.x"
-permalink: kb/142/Q142920/
+permalink: /kb/142/Q142920/
 ---
 
 ## Q142920: How to Create Unique Values on SQL Server 6.x

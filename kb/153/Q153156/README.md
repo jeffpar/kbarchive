@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153156: Sched.exe OLE Automation Adds Schedule+ Appointments"
-permalink: kb/153/Q153156/
+permalink: /kb/153/Q153156/
 ---
 
 ## Q153156: Sched.exe OLE Automation Adds Schedule+ Appointments

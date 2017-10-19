@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66926: INFO: Dialog Box Creation Fails If Text Starts w/ Character 255"
-permalink: kb/066/Q66926/
+permalink: /kb/066/Q66926/
 ---
 
 ## Q66926: INFO: Dialog Box Creation Fails If Text Starts w/ Character 255

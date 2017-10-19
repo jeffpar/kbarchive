@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62826: Zenith Computers and SWAPFILE.EXE with Windows 3.0"
-permalink: kb/062/Q62826/
+permalink: /kb/062/Q62826/
 ---
 
 ## Q62826: Zenith Computers and SWAPFILE.EXE with Windows 3.0

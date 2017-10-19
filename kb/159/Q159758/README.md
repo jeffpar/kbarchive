@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159758: WD97: Caption Text Shifted Right or Missing from Caption Box"
-permalink: kb/159/Q159758/
+permalink: /kb/159/Q159758/
 ---
 
 ## Q159758: WD97: Caption Text Shifted Right or Missing from Caption Box

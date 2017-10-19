@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124487: PC Adm: How to Strand Attachment if It's too Large for System"
-permalink: kb/124/Q124487/
+permalink: /kb/124/Q124487/
 ---
 
 ## Q124487: PC Adm: How to Strand Attachment if It's too Large for System

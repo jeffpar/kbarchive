@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76218: SWAPFILE.EXE May Not Recognize Logical Drives in Windows"
-permalink: kb/076/Q76218/
+permalink: /kb/076/Q76218/
 ---
 
 ## Q76218: SWAPFILE.EXE May Not Recognize Logical Drives in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157014: XFOR: IMC Deletes Mail in MTS-OUT if no Code Page on MIME Tab"
-permalink: kb/157/Q157014/
+permalink: /kb/157/Q157014/
 ---
 
 ## Q157014: XFOR: IMC Deletes Mail in MTS-OUT if no Code Page on MIME Tab

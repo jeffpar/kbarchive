@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176830: HOWTO: Create a Connection Programmatically"
-permalink: kb/176/Q176830/
+permalink: /kb/176/Q176830/
 ---
 
 ## Q176830: HOWTO: Create a Connection Programmatically

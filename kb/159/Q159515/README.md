@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159515: Encarta 97: Black screen or Flydown Menus Don't Drop"
-permalink: kb/159/Q159515/
+permalink: /kb/159/Q159515/
 ---
 
 ## Q159515: Encarta 97: Black screen or Flydown Menus Don't Drop

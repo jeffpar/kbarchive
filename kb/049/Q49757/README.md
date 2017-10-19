@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49757: PRB: Error U1082 When Command Line Too Long in Makefile"
-permalink: kb/049/Q49757/
+permalink: /kb/049/Q49757/
 ---
 
 ## Q49757: PRB: Error U1082 When Command Line Too Long in Makefile

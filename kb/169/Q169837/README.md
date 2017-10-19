@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169837: FP: Clicking Alignment Buttons on Format Toolbar Misaligns Cells"
-permalink: kb/169/Q169837/
+permalink: /kb/169/Q169837/
 ---
 
 ## Q169837: FP: Clicking Alignment Buttons on Format Toolbar Misaligns Cells

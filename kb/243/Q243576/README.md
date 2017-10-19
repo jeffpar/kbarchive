@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243576: Encarta Encyclopedia 99: No Audio Output When You Play Certain S"
-permalink: kb/243/Q243576/
+permalink: /kb/243/Q243576/
 ---
 
 ## Q243576: Encarta Encyclopedia 99: No Audio Output When You Play Certain S

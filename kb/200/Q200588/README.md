@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200588: XCON: Multiple X.400 Connectors Between Two Exchange Computers"
-permalink: kb/200/Q200588/
+permalink: /kb/200/Q200588/
 ---
 
 ## Q200588: XCON: Multiple X.400 Connectors Between Two Exchange Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99263: Installing Compaq 32-bit Fast SCSI-2 Drivers"
-permalink: kb/099/Q99263/
+permalink: /kb/099/Q99263/
 ---
 
 ## Q99263: Installing Compaq 32-bit Fast SCSI-2 Drivers

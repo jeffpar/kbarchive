@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86051: DOC: WM_HOOKRCRESULT Message Missing from Pen Documentation"
-permalink: kb/086/Q86051/
+permalink: /kb/086/Q86051/
 ---
 
 ## Q86051: DOC: WM_HOOKRCRESULT Message Missing from Pen Documentation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74907: North/East Boundaries and Center Location of Flight Sim World"
-permalink: kb/074/Q74907/
+permalink: /kb/074/Q74907/
 ---
 
 ## Q74907: North/East Boundaries and Center Location of Flight Sim World

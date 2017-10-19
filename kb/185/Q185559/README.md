@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185559: Negative Value in NtGdiFastPolyPolyline Causes Blue Screen"
-permalink: kb/185/Q185559/
+permalink: /kb/185/Q185559/
 ---
 
 ## Q185559: Negative Value in NtGdiFastPolyPolyline Causes Blue Screen

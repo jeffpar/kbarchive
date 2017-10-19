@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152963: XCLN: Autosignature Not Applied on MS Word Editor"
-permalink: kb/152/Q152963/
+permalink: /kb/152/Q152963/
 ---
 
 ## Q152963: XCLN: Autosignature Not Applied on MS Word Editor

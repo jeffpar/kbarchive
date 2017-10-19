@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192653: FIX: Eight or More ActiveX DLLs in Compiled Project Cause Error"
-permalink: kb/192/Q192653/
+permalink: /kb/192/Q192653/
 ---
 
 ## Q192653: FIX: Eight or More ActiveX DLLs in Compiled Project Cause Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147723: Flight Sim 5.x: Troubleshooting Vague Error Messages"
-permalink: kb/147/Q147723/
+permalink: /kb/147/Q147723/
 ---
 
 ## Q147723: Flight Sim 5.x: Troubleshooting Vague Error Messages

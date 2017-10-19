@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305710: Windows 95 Setup.txt File"
-permalink: kb/305/Q305710/
+permalink: /kb/305/Q305710/
 ---
 
 ## Q305710: Windows 95 Setup.txt File

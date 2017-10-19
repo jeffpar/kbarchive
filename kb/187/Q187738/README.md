@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187738: Upgrade to IIS 4.0 May Give Extra Virtual Directories"
-permalink: kb/187/Q187738/
+permalink: /kb/187/Q187738/
 ---
 
 ## Q187738: Upgrade to IIS 4.0 May Give Extra Virtual Directories

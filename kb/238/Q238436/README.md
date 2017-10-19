@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238436: PRB: MFC DAO Classes Error &quot;Syntax Error in From Clause&quot;"
-permalink: kb/238/Q238436/
+permalink: /kb/238/Q238436/
 ---
 
 ## Q238436: PRB: MFC DAO Classes Error &quot;Syntax Error in From Clause&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279395: Connectivity: MSN Companion repeatedly disconnects while in use"
-permalink: kb/279/Q279395/
+permalink: /kb/279/Q279395/
 ---
 
 ## Q279395: Connectivity: MSN Companion repeatedly disconnects while in use

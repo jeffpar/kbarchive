@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216120: HOWTO: Create and Install a One-Off Address Template"
-permalink: kb/216/Q216120/
+permalink: /kb/216/Q216120/
 ---
 
 ## Q216120: HOWTO: Create and Install a One-Off Address Template

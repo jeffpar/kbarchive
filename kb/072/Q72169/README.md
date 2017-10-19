@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72169: MS-DOS 5 README.TXT: Documentation Corrections and ..."
-permalink: kb/072/Q72169/
+permalink: /kb/072/Q72169/
 ---
 
 ## Q72169: MS-DOS 5 README.TXT: Documentation Corrections and ...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118686: Availability of Japanese Visual C++"
-permalink: kb/118/Q118686/
+permalink: /kb/118/Q118686/
 ---
 
 ## Q118686: Availability of Japanese Visual C++

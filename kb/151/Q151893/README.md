@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151893: DOC: CCriticalSection::Lock Doesn't Do a Timed Wait"
-permalink: kb/151/Q151893/
+permalink: /kb/151/Q151893/
 ---
 
 ## Q151893: DOC: CCriticalSection::Lock Doesn't Do a Timed Wait

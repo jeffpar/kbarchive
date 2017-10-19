@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165279: XCON: X.400 First Contact Form for X.400 Connector Problem"
-permalink: kb/165/Q165279/
+permalink: /kb/165/Q165279/
 ---
 
 ## Q165279: XCON: X.400 First Contact Form for X.400 Connector Problem

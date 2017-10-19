@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151923: Appointment Book Marks Accepted Even if Time is Changed"
-permalink: kb/151/Q151923/
+permalink: /kb/151/Q151923/
 ---
 
 ## Q151923: Appointment Book Marks Accepted Even if Time is Changed

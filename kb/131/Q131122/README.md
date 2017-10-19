@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131122: INFO: Report Writer Enhancements in Visual FoxPro"
-permalink: kb/131/Q131122/
+permalink: /kb/131/Q131122/
 ---
 
 ## Q131122: INFO: Report Writer Enhancements in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120698: Space Simulator: Description of Distance Measurement Methods"
-permalink: kb/120/Q120698/
+permalink: /kb/120/Q120698/
 ---
 
 ## Q120698: Space Simulator: Description of Distance Measurement Methods

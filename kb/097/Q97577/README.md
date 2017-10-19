@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97577: Your Computer Fails the Microsoft Backup Compatibility Test"
-permalink: kb/097/Q97577/
+permalink: /kb/097/Q97577/
 ---
 
 ## Q97577: Your Computer Fails the Microsoft Backup Compatibility Test

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71944: COMPAQ LTE 386/20 Reverse Video"
-permalink: kb/071/Q71944/
+permalink: /kb/071/Q71944/
 ---
 
 ## Q71944: COMPAQ LTE 386/20 Reverse Video

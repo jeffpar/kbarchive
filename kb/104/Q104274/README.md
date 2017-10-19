@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104274: PATCH: Fb386prt.exe FoxBASE+/386 Printing Patch File"
-permalink: kb/104/Q104274/
+permalink: /kb/104/Q104274/
 ---
 
 ## Q104274: PATCH: Fb386prt.exe FoxBASE+/386 Printing Patch File

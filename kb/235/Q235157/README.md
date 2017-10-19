@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235157: SMS: When New DP Added, Despooler Puts Package on Old &amp; New DP"
-permalink: kb/235/Q235157/
+permalink: /kb/235/Q235157/
 ---
 
 ## Q235157: SMS: When New DP Added, Despooler Puts Package on Old &amp; New DP

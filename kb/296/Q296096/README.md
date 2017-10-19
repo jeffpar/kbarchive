@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296096: Source Code for Global.asa Is Displayed in Browser"
-permalink: kb/296/Q296096/
+permalink: /kb/296/Q296096/
 ---
 
 ## Q296096: Source Code for Global.asa Is Displayed in Browser

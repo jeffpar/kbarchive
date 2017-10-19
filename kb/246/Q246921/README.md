@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246921: HTTP 204 Response Returns Message-Body to Client"
-permalink: kb/246/Q246921/
+permalink: /kb/246/Q246921/
 ---
 
 ## Q246921: HTTP 204 Response Returns Message-Body to Client

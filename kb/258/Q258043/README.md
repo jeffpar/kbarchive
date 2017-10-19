@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258043: PRB: WAV Sound Breaks As System Comes Out of Suspend Mode"
-permalink: kb/258/Q258043/
+permalink: /kb/258/Q258043/
 ---
 
 ## Q258043: PRB: WAV Sound Breaks As System Comes Out of Suspend Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140076: PC Gen: Err Msg: User &lt;Mailbox Name&gt; Not in the POL..."
-permalink: kb/140/Q140076/
+permalink: /kb/140/Q140076/
 ---
 
 ## Q140076: PC Gen: Err Msg: User &lt;Mailbox Name&gt; Not in the POL...

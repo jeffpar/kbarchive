@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113442: Obtain Lantastic 6.0 NETBEUI.EXE from Artisoft"
-permalink: kb/113/Q113442/
+permalink: /kb/113/Q113442/
 ---
 
 ## Q113442: Obtain Lantastic 6.0 NETBEUI.EXE from Artisoft

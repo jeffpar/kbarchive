@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262796: XADM: Unable to Log On When Running Replication Configurator"
-permalink: kb/262/Q262796/
+permalink: /kb/262/Q262796/
 ---
 
 ## Q262796: XADM: Unable to Log On When Running Replication Configurator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229502: ErrMsg: STOP 0xA in Ndiswan.sys w/RAS After Installing SP 4"
-permalink: kb/229/Q229502/
+permalink: /kb/229/Q229502/
 ---
 
 ## Q229502: ErrMsg: STOP 0xA in Ndiswan.sys w/RAS After Installing SP 4

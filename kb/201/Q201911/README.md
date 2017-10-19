@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201911: BUG: DCOMCNFG Writes Ports Named Value in Incorrect Format"
-permalink: kb/201/Q201911/
+permalink: /kb/201/Q201911/
 ---
 
 ## Q201911: BUG: DCOMCNFG Writes Ports Named Value in Incorrect Format

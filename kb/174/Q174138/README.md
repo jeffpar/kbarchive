@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174138: Frequently Asked Questions About Newsgroups on MSN"
-permalink: kb/174/Q174138/
+permalink: /kb/174/Q174138/
 ---
 
 ## Q174138: Frequently Asked Questions About Newsgroups on MSN

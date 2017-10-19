@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119147: Microsoft Systems Journal: September 1994"
-permalink: kb/119/Q119147/
+permalink: /kb/119/Q119147/
 ---
 
 ## Q119147: Microsoft Systems Journal: September 1994

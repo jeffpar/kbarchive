@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173234: Troubleshooting: End All Tasks"
-permalink: kb/173/Q173234/
+permalink: /kb/173/Q173234/
 ---
 
 ## Q173234: Troubleshooting: End All Tasks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188997: Microsoft NetBIOS Computer Naming Conventions"
-permalink: kb/188/Q188997/
+permalink: /kb/188/Q188997/
 ---
 
 ## Q188997: Microsoft NetBIOS Computer Naming Conventions

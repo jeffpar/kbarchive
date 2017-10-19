@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157989: FIX: Deleting Object in Watch Window Causes Application Error"
-permalink: kb/157/Q157989/
+permalink: /kb/157/Q157989/
 ---
 
 ## Q157989: FIX: Deleting Object in Watch Window Causes Application Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151977: FPNW Not Responding Correctly to Record Locking and Logging"
-permalink: kb/151/Q151977/
+permalink: /kb/151/Q151977/
 ---
 
 ## Q151977: FPNW Not Responding Correctly to Record Locking and Logging

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266050: XADM: Upgrading to Exchange Server 5.5 WP"
-permalink: kb/266/Q266050/
+permalink: /kb/266/Q266050/
 ---
 
 ## Q266050: XADM: Upgrading to Exchange Server 5.5 WP

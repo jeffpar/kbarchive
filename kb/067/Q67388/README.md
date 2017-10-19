@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67388: ASD: To Set a Timer, Altitude Alert Warning, or Pitot Heat"
-permalink: kb/067/Q67388/
+permalink: /kb/067/Q67388/
 ---
 
 ## Q67388: ASD: To Set a Timer, Altitude Alert Warning, or Pitot Heat

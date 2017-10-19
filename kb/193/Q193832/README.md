@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193832: Permissions Needed on SNA Server Services User Account"
-permalink: kb/193/Q193832/
+permalink: /kb/193/Q193832/
 ---
 
 ## Q193832: Permissions Needed on SNA Server Services User Account

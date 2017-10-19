@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210677: Reconnecting to Share Name with Spaces Does Not Work in SP3"
-permalink: kb/210/Q210677/
+permalink: /kb/210/Q210677/
 ---
 
 ## Q210677: Reconnecting to Share Name with Spaces Does Not Work in SP3

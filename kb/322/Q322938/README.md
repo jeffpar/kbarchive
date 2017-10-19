@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322938: PRB: Cannot Specify Country When You Create an SSL Certificate"
-permalink: kb/322/Q322938/
+permalink: /kb/322/Q322938/
 ---
 
 ## Q322938: PRB: Cannot Specify Country When You Create an SSL Certificate

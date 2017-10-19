@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112256: CONN: MACGATE Err Msg: Exiting...with Status 66"
-permalink: kb/112/Q112256/
+permalink: /kb/112/Q112256/
 ---
 
 ## Q112256: CONN: MACGATE Err Msg: Exiting...with Status 66

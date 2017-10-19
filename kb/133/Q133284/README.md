@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133284: Folders/Shortcuts Re-created When You Run Setup Again"
-permalink: kb/133/Q133284/
+permalink: /kb/133/Q133284/
 ---
 
 ## Q133284: Folders/Shortcuts Re-created When You Run Setup Again

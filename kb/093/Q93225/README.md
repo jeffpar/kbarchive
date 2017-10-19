@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93225: Windows Err Msg: The Directory Path for Shared Code Invalid"
-permalink: kb/093/Q93225/
+permalink: /kb/093/Q93225/
 ---
 
 ## Q93225: Windows Err Msg: The Directory Path for Shared Code Invalid

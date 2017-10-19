@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318163: SMS: Client Service Does Not Quit During Shutdown"
-permalink: kb/318/Q318163/
+permalink: /kb/318/Q318163/
 ---
 
 ## Q318163: SMS: Client Service Does Not Quit During Shutdown

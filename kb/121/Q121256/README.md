@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121256: PC MMTA: Err Msg: Drive Connection Failure. Unable..."
-permalink: kb/121/Q121256/
+permalink: /kb/121/Q121256/
 ---
 
 ## Q121256: PC MMTA: Err Msg: Drive Connection Failure. Unable...

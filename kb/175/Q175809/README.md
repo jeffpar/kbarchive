@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175809: How to Prevent the Password Prompt When Using Rsh.exe"
-permalink: kb/175/Q175809/
+permalink: /kb/175/Q175809/
 ---
 
 ## Q175809: How to Prevent the Password Prompt When Using Rsh.exe

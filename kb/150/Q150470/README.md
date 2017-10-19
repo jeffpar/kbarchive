@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150470: Mac Bookshelf 1996-97: Quickshelf Does not Look up Word"
-permalink: kb/150/Q150470/
+permalink: /kb/150/Q150470/
 ---
 
 ## Q150470: Mac Bookshelf 1996-97: Quickshelf Does not Look up Word

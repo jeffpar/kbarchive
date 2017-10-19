@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255036: Microsoft Support Policy on Hardware Not On Windows NT HCL"
-permalink: kb/255/Q255036/
+permalink: /kb/255/Q255036/
 ---
 
 ## Q255036: Microsoft Support Policy on Hardware Not On Windows NT HCL

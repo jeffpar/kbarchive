@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176809: XADM: EDBUTIL.EXE does not Return Non-zero Error Code"
-permalink: kb/176/Q176809/
+permalink: /kb/176/Q176809/
 ---
 
 ## Q176809: XADM: EDBUTIL.EXE does not Return Non-zero Error Code

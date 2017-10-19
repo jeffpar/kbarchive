@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133175: Troubleshooting DriveSpace in Windows 95"
-permalink: kb/133/Q133175/
+permalink: /kb/133/Q133175/
 ---
 
 ## Q133175: Troubleshooting DriveSpace in Windows 95

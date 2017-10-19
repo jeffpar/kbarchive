@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11246: INFO: Changing Window Colors with Control Panel"
-permalink: kb/011/Q11246/
+permalink: /kb/011/Q11246/
 ---
 
 ## Q11246: INFO: Changing Window Colors with Control Panel

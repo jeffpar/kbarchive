@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295703: Cannot View Tour After Installing MSN Explorer"
-permalink: kb/295/Q295703/
+permalink: /kb/295/Q295703/
 ---
 
 ## Q295703: Cannot View Tour After Installing MSN Explorer

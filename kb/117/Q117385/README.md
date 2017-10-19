@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117385: FIX: printf Does Not Recognize &quot;&#92;n&#92;r&quot; when Using Conversion"
-permalink: kb/117/Q117385/
+permalink: /kb/117/Q117385/
 ---
 
 ## Q117385: FIX: printf Does Not Recognize &quot;&#92;n&#92;r&quot; when Using Conversion

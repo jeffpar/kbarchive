@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243860: Flight Simulator 2000: Minimum System Requirements"
-permalink: kb/243/Q243860/
+permalink: /kb/243/Q243860/
 ---
 
 ## Q243860: Flight Simulator 2000: Minimum System Requirements

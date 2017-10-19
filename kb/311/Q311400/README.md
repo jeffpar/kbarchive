@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311400: SMS: Problem with the Keyboard in a Remote Control Session"
-permalink: kb/311/Q311400/
+permalink: /kb/311/Q311400/
 ---
 
 ## Q311400: SMS: Problem with the Keyboard in a Remote Control Session

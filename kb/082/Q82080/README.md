@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82080: MicroMASTER 486, SCSI Adapter: Problems with 386/Enhanced Mode"
-permalink: kb/082/Q82080/
+permalink: /kb/082/Q82080/
 ---
 
 ## Q82080: MicroMASTER 486, SCSI Adapter: Problems with 386/Enhanced Mode

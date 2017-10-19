@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259946: StarLancer: Textures in the Game Are Missing or Distorted"
-permalink: kb/259/Q259946/
+permalink: /kb/259/Q259946/
 ---
 
 ## Q259946: StarLancer: Textures in the Game Are Missing or Distorted

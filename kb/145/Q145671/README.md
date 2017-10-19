@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145671: How to Uninstall Microsoft Pregnancy and Child Care Program"
-permalink: kb/145/Q145671/
+permalink: /kb/145/Q145671/
 ---
 
 ## Q145671: How to Uninstall Microsoft Pregnancy and Child Care Program

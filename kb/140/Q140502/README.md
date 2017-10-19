@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140502: FIX: ClassView Cannot Find Function That Has Been Moved"
-permalink: kb/140/Q140502/
+permalink: /kb/140/Q140502/
 ---
 
 ## Q140502: FIX: ClassView Cannot Find Function That Has Been Moved

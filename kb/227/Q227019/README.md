@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227019: SMS: Heartbeat Discovery Causes Performance Degradation"
-permalink: kb/227/Q227019/
+permalink: /kb/227/Q227019/
 ---
 
 ## Q227019: SMS: Heartbeat Discovery Causes Performance Degradation

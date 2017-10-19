@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141519: Unattended and Computer Profile Setup Fails to Install OEM NIC"
-permalink: kb/141/Q141519/
+permalink: /kb/141/Q141519/
 ---
 
 ## Q141519: Unattended and Computer Profile Setup Fails to Install OEM NIC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216193: PC DirSync: WinNT Version of Import Cannot Add for Batch"
-permalink: kb/216/Q216193/
+permalink: /kb/216/Q216193/
 ---
 
 ## Q216193: PC DirSync: WinNT Version of Import Cannot Add for Batch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273797: XADM:  UDP Packets Are Sent Where Link Monitor Runs"
-permalink: kb/273/Q273797/
+permalink: /kb/273/Q273797/
 ---
 
 ## Q273797: XADM:  UDP Packets Are Sent Where Link Monitor Runs

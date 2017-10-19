@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170048: Err Msg: Cannot Open the File: Queryhits.idq"
-permalink: kb/170/Q170048/
+permalink: /kb/170/Q170048/
 ---
 
 ## Q170048: Err Msg: Cannot Open the File: Queryhits.idq

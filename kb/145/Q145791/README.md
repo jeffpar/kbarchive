@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145791: XCLN: No Read Receipt Indicator for Message Headers"
-permalink: kb/145/Q145791/
+permalink: /kb/145/Q145791/
 ---
 
 ## Q145791: XCLN: No Read Receipt Indicator for Message Headers

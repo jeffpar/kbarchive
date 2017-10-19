@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116376: Delrina WinFax Pro 3.0 for Networks and WFWG 3.11"
-permalink: kb/116/Q116376/
+permalink: /kb/116/Q116376/
 ---
 
 ## Q116376: Delrina WinFax Pro 3.0 for Networks and WFWG 3.11

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72198: MS-DOS 5 Contents (3.5-Inch Disk Set)"
-permalink: kb/072/Q72198/
+permalink: /kb/072/Q72198/
 ---
 
 ## Q72198: MS-DOS 5 Contents (3.5-Inch Disk Set)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157190: DOCERR: MousePointer Topic Missing Setting 99 (Custom)"
-permalink: kb/157/Q157190/
+permalink: /kb/157/Q157190/
 ---
 
 ## Q157190: DOCERR: MousePointer Topic Missing Setting 99 (Custom)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281833: Multimedia: Tool to Remove Shockwave Registry Keys"
-permalink: kb/281/Q281833/
+permalink: /kb/281/Q281833/
 ---
 
 ## Q281833: Multimedia: Tool to Remove Shockwave Registry Keys

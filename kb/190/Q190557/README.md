@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190557: XFOR: Attachments with &#36; in the File Name May Be Renamed"
-permalink: kb/190/Q190557/
+permalink: /kb/190/Q190557/
 ---
 
 ## Q190557: XFOR: Attachments with &#36; in the File Name May Be Renamed

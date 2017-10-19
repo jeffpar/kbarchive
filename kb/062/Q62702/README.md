@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62702: PWB 1.0 Does Not Return from DOS Shell If TMP Contains &quot;;&quot;"
-permalink: kb/062/Q62702/
+permalink: /kb/062/Q62702/
 ---
 
 ## Q62702: PWB 1.0 Does Not Return from DOS Shell If TMP Contains &quot;;&quot;

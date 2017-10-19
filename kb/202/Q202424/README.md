@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202424: XADM: Can't Modify 5.0 Server with Admin.exe After 5.5 Upgrade"
-permalink: kb/202/Q202424/
+permalink: /kb/202/Q202424/
 ---
 
 ## Q202424: XADM: Can't Modify 5.0 Server with Admin.exe After 5.5 Upgrade

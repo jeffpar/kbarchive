@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184695: Readme Notes for Certificate Server Update"
-permalink: kb/184/Q184695/
+permalink: /kb/184/Q184695/
 ---
 
 ## Q184695: Readme Notes for Certificate Server Update

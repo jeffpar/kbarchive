@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174102: XFOR: Messages Not Flowing from OV/VM to Exchange"
-permalink: kb/174/Q174102/
+permalink: /kb/174/Q174102/
 ---
 
 ## Q174102: XFOR: Messages Not Flowing from OV/VM to Exchange

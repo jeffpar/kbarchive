@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134375: Changing Password Clears the Remember My Password Check Box"
-permalink: kb/134/Q134375/
+permalink: /kb/134/Q134375/
 ---
 
 ## Q134375: Changing Password Clears the Remember My Password Check Box

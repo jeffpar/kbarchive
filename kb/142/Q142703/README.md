@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142703: Setting MS-DOS Client 3.0 to Automatically Log On to Domain"
-permalink: kb/142/Q142703/
+permalink: /kb/142/Q142703/
 ---
 
 ## Q142703: Setting MS-DOS Client 3.0 to Automatically Log On to Domain

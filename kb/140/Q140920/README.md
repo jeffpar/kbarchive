@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140920: SMS ErrMsg: Package Command Manager Is Unable to Install..."
-permalink: kb/140/Q140920/
+permalink: /kb/140/Q140920/
 ---
 
 ## Q140920: SMS ErrMsg: Package Command Manager Is Unable to Install...

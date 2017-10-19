@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172859: ODE97: &quot;You Don't Have a License&quot; Error Using ActiveX Control"
-permalink: kb/172/Q172859/
+permalink: /kb/172/Q172859/
 ---
 
 ## Q172859: ODE97: &quot;You Don't Have a License&quot; Error Using ActiveX Control

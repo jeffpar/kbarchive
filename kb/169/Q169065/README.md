@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169065: FIX: RichText Control Displays Line Draw Characters Incorrectly"
-permalink: kb/169/Q169065/
+permalink: /kb/169/Q169065/
 ---
 
 ## Q169065: FIX: RichText Control Displays Line Draw Characters Incorrectly

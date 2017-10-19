@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203230: FIX: GPF Using ATL Control Array and Accelerator Key"
-permalink: kb/203/Q203230/
+permalink: /kb/203/Q203230/
 ---
 
 ## Q203230: FIX: GPF Using ATL Control Array and Accelerator Key

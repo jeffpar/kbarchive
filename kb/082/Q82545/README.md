@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82545: Serial Device Stops Working After Installing New Serial Device"
-permalink: kb/082/Q82545/
+permalink: /kb/082/Q82545/
 ---
 
 ## Q82545: Serial Device Stops Working After Installing New Serial Device

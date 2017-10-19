@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122473: Complete Basketball '94-'95: Manual Installation Instructions"
-permalink: kb/122/Q122473/
+permalink: /kb/122/Q122473/
 ---
 
 ## Q122473: Complete Basketball '94-'95: Manual Installation Instructions

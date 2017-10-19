@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163396: PRB: Creating Regular Indexes Through VFP ODBC Driver"
-permalink: kb/163/Q163396/
+permalink: /kb/163/Q163396/
 ---
 
 ## Q163396: PRB: Creating Regular Indexes Through VFP ODBC Driver

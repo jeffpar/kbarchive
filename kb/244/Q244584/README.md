@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244584: HOWTO: Enumerate Cluster Resources by Resource Type in Visual C+"
-permalink: kb/244/Q244584/
+permalink: /kb/244/Q244584/
 ---
 
 ## Q244584: HOWTO: Enumerate Cluster Resources by Resource Type in Visual C+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112350: Pause Key Combination Doesn't Work in FoxPro for Mac"
-permalink: kb/112/Q112350/
+permalink: /kb/112/Q112350/
 ---
 
 ## Q112350: Pause Key Combination Doesn't Work in FoxPro for Mac

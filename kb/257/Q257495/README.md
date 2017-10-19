@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257495: FIX: ListView Executes ItemClick Twice with Label Set to Manual"
-permalink: kb/257/Q257495/
+permalink: /kb/257/Q257495/
 ---
 
 ## Q257495: FIX: ListView Executes ItemClick Twice with Label Set to Manual

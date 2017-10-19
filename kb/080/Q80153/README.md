@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80153: How to Change Windows System Font"
-permalink: kb/080/Q80153/
+permalink: /kb/080/Q80153/
 ---
 
 ## Q80153: How to Change Windows System Font

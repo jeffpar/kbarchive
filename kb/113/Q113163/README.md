@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113163: CPAV Reports COMMAND.COM Infected with Unknown Virus"
-permalink: kb/113/Q113163/
+permalink: /kb/113/Q113163/
 ---
 
 ## Q113163: CPAV Reports COMMAND.COM Infected with Unknown Virus

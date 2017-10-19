@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179309: XADM: LDAP Port for SSL Is Not Configurable In Exchange"
-permalink: kb/179/Q179309/
+permalink: /kb/179/Q179309/
 ---
 
 ## Q179309: XADM: LDAP Port for SSL Is Not Configurable In Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80048: Windows Monochrome Display Limits Paintbrush Printing"
-permalink: kb/080/Q80048/
+permalink: /kb/080/Q80048/
 ---
 
 ## Q80048: Windows Monochrome Display Limits Paintbrush Printing

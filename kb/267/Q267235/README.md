@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267235: FS2000: Flying Lessons Are Not Available on the Startup Screen"
-permalink: kb/267/Q267235/
+permalink: /kb/267/Q267235/
 ---
 
 ## Q267235: FS2000: Flying Lessons Are Not Available on the Startup Screen

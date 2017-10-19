@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99802: INFO: Enabling and Disabling Print Manager"
-permalink: kb/099/Q99802/
+permalink: /kb/099/Q99802/
 ---
 
 ## Q99802: INFO: Enabling and Disabling Print Manager

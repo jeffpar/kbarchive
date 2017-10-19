@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85107: Tektronix PostScript Printer Driver Does Not Support TrueType"
-permalink: kb/085/Q85107/
+permalink: /kb/085/Q85107/
 ---
 
 ## Q85107: Tektronix PostScript Printer Driver Does Not Support TrueType

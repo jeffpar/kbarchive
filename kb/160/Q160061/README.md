@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160061: PRB: Page Activate Event Does Not Set Focus to Different Page"
-permalink: kb/160/Q160061/
+permalink: /kb/160/Q160061/
 ---
 
 ## Q160061: PRB: Page Activate Event Does Not Set Focus to Different Page

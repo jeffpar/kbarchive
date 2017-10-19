@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154962: IIS FTP Server Does Not Use Continuation Character Correctly"
-permalink: kb/154/Q154962/
+permalink: /kb/154/Q154962/
 ---
 
 ## Q154962: IIS FTP Server Does Not Use Continuation Character Correctly

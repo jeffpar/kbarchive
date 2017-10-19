@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261954: XADM: Exmerge Archive Function Requests Too Much Disk Space"
-permalink: kb/261/Q261954/
+permalink: /kb/261/Q261954/
 ---
 
 ## Q261954: XADM: Exmerge Archive Function Requests Too Much Disk Space

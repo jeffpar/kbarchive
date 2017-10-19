@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250060: BUG: VC++ May Stop Responding When Importing a Type Library"
-permalink: kb/250/Q250060/
+permalink: /kb/250/Q250060/
 ---
 
 ## Q250060: BUG: VC++ May Stop Responding When Importing a Type Library

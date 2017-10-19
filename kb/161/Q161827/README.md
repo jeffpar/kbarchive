@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161827: PRB: &quot;Object Server Not Correctly Registered&quot; Error in VB4-32"
-permalink: kb/161/Q161827/
+permalink: /kb/161/Q161827/
 ---
 
 ## Q161827: PRB: &quot;Object Server Not Correctly Registered&quot; Error in VB4-32

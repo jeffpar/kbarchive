@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137747: Quick View Does Not Show Area Graph in Microsoft Excel"
-permalink: kb/137/Q137747/
+permalink: /kb/137/Q137747/
 ---
 
 ## Q137747: Quick View Does Not Show Area Graph in Microsoft Excel

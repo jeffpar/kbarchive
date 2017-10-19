@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151220: XCLN: Users with Delegates do not Appear in Meeting Requests"
-permalink: kb/151/Q151220/
+permalink: /kb/151/Q151220/
 ---
 
 ## Q151220: XCLN: Users with Delegates do not Appear in Meeting Requests

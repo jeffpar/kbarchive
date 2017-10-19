@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69390: Problems with Logitech Mouse Bundled with Windows 3.0"
-permalink: kb/069/Q69390/
+permalink: /kb/069/Q69390/
 ---
 
 ## Q69390: Problems with Logitech Mouse Bundled with Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147827: ErrMsg: ResKit - LMUICMNO.DLL Could Not Be Found"
-permalink: kb/147/Q147827/
+permalink: /kb/147/Q147827/
 ---
 
 ## Q147827: ErrMsg: ResKit - LMUICMNO.DLL Could Not Be Found

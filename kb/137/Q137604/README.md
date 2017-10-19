@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137604: How to Convert SQL Datetime Column to a Date in a Remote View"
-permalink: kb/137/Q137604/
+permalink: /kb/137/Q137604/
 ---
 
 ## Q137604: How to Convert SQL Datetime Column to a Date in a Remote View

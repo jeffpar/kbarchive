@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142172: HOWTO: Perform 3-D Line Drawing in Win32 with DrawEdge"
-permalink: kb/142/Q142172/
+permalink: /kb/142/Q142172/
 ---
 
 ## Q142172: HOWTO: Perform 3-D Line Drawing in Win32 with DrawEdge

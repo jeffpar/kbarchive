@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241672: File Transfers Between Computers Are Slower Than Expected"
-permalink: kb/241/Q241672/
+permalink: /kb/241/Q241672/
 ---
 
 ## Q241672: File Transfers Between Computers Are Slower Than Expected

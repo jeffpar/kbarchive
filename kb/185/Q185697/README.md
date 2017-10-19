@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185697: HOWTO: Use the AddObject Method of the Script Control"
-permalink: kb/185/Q185697/
+permalink: /kb/185/Q185697/
 ---
 
 ## Q185697: HOWTO: Use the AddObject Method of the Script Control

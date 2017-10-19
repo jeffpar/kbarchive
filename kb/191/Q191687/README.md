@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191687: XIMS: Outlook Express POP3, Error 0x800ccc0e, Socket Err 10061"
-permalink: kb/191/Q191687/
+permalink: /kb/191/Q191687/
 ---
 
 ## Q191687: XIMS: Outlook Express POP3, Error 0x800ccc0e, Socket Err 10061

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151696: Extending DHCP Start Address"
-permalink: kb/151/Q151696/
+permalink: /kb/151/Q151696/
 ---
 
 ## Q151696: Extending DHCP Start Address

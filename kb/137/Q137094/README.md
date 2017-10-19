@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137094: PRB: Early Binding Fails with Out-Of-Process OLE Servers"
-permalink: kb/137/Q137094/
+permalink: /kb/137/Q137094/
 ---
 
 ## Q137094: PRB: Early Binding Fails with Out-Of-Process OLE Servers

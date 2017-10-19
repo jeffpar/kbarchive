@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165982: Embedded Fonts Printed Only in RAW Mode"
-permalink: kb/165/Q165982/
+permalink: /kb/165/Q165982/
 ---
 
 ## Q165982: Embedded Fonts Printed Only in RAW Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156437: Cyrix 5x86 or 6x86 CPU Reported as 486"
-permalink: kb/156/Q156437/
+permalink: /kb/156/Q156437/
 ---
 
 ## Q156437: Cyrix 5x86 or 6x86 CPU Reported as 486

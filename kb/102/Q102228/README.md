@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102228: Hardware Troubleshooting: Cold Booting Versus Warm Booting"
-permalink: kb/102/Q102228/
+permalink: /kb/102/Q102228/
 ---
 
 ## Q102228: Hardware Troubleshooting: Cold Booting Versus Warm Booting

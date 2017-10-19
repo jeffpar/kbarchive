@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214640: XFOR: Internet Mail Service Access Violation with SSL"
-permalink: kb/214/Q214640/
+permalink: /kb/214/Q214640/
 ---
 
 ## Q214640: XFOR: Internet Mail Service Access Violation with SSL

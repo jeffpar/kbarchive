@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188404: HOWTO: Use API Calls to Detect Other Running Applications"
-permalink: kb/188/Q188404/
+permalink: /kb/188/Q188404/
 ---
 
 ## Q188404: HOWTO: Use API Calls to Detect Other Running Applications

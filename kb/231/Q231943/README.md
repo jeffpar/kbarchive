@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231943: INFO: Microsoft Data Access Components (MDAC) Release History"
-permalink: kb/231/Q231943/
+permalink: /kb/231/Q231943/
 ---
 
 ## Q231943: INFO: Microsoft Data Access Components (MDAC) Release History

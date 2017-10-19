@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285322: Pinball Arcade Hangs When You Attempt to Select a Pinball Table"
-permalink: kb/285/Q285322/
+permalink: /kb/285/Q285322/
 ---
 
 ## Q285322: Pinball Arcade Hangs When You Attempt to Select a Pinball Table

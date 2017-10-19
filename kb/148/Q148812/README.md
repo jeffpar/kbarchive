@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148812: HOWTO: Configure Visual SourceSafe Explorer to Use System Font"
-permalink: kb/148/Q148812/
+permalink: /kb/148/Q148812/
 ---
 
 ## Q148812: HOWTO: Configure Visual SourceSafe Explorer to Use System Font

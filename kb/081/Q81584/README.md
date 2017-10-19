@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81584: Novell Broadcast Message Locks Keyboard in DOS Virtual Machine"
-permalink: kb/081/Q81584/
+permalink: /kb/081/Q81584/
 ---
 
 ## Q81584: Novell Broadcast Message Locks Keyboard in DOS Virtual Machine

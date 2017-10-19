@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157994: XADM: Directory Store Stops While Calculating Hierarchy Table"
-permalink: kb/157/Q157994/
+permalink: /kb/157/Q157994/
 ---
 
 ## Q157994: XADM: Directory Store Stops While Calculating Hierarchy Table

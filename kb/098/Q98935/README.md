@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98935: Description of WordZap"
-permalink: kb/098/Q98935/
+permalink: /kb/098/Q98935/
 ---
 
 ## Q98935: Description of WordZap

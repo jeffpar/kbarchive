@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193603: Informational Events Logged by Windows NT Load Balancing Service"
-permalink: kb/193/Q193603/
+permalink: /kb/193/Q193603/
 ---
 
 ## Q193603: Informational Events Logged by Windows NT Load Balancing Service

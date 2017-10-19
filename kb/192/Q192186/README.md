@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192186: XADM: Troubleshooting Dr. Watson in Store.exe Because of IMC"
-permalink: kb/192/Q192186/
+permalink: /kb/192/Q192186/
 ---
 
 ## Q192186: XADM: Troubleshooting Dr. Watson in Store.exe Because of IMC

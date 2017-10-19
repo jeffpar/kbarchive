@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104517: PC MAPI: Err: Out of Memory Error with MAPIAddress() Function"
-permalink: kb/104/Q104517/
+permalink: /kb/104/Q104517/
 ---
 
 ## Q104517: PC MAPI: Err: Out of Memory Error with MAPIAddress() Function

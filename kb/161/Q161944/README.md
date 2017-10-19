@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161944: XCLN: Outlook Users Can't Access/Update Public Free/Busy Data"
-permalink: kb/161/Q161944/
+permalink: /kb/161/Q161944/
 ---
 
 ## Q161944: XCLN: Outlook Users Can't Access/Update Public Free/Busy Data

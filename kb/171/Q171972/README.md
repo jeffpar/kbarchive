@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171972: FIX: Cannot Disable UserControl on Modal Form"
-permalink: kb/171/Q171972/
+permalink: /kb/171/Q171972/
 ---
 
 ## Q171972: FIX: Cannot Disable UserControl on Modal Form

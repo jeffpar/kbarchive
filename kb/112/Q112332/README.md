@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112332: Viewing a Function's Return Value from IDE"
-permalink: kb/112/Q112332/
+permalink: /kb/112/Q112332/
 ---
 
 ## Q112332: Viewing a Function's Return Value from IDE

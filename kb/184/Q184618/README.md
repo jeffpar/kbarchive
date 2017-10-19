@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184618: Number 2 Automatically Appended to New Virtual Directory Name"
-permalink: kb/184/Q184618/
+permalink: /kb/184/Q184618/
 ---
 
 ## Q184618: Number 2 Automatically Appended to New Virtual Directory Name

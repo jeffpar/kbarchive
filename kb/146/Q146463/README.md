@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146463: XGEN: KMS Cannot Write Certificate Revocation List"
-permalink: kb/146/Q146463/
+permalink: /kb/146/Q146463/
 ---
 
 ## Q146463: XGEN: KMS Cannot Write Certificate Revocation List

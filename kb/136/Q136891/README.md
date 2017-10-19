@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136891: Accessibility Options Shortcuts Disabled by Default"
-permalink: kb/136/Q136891/
+permalink: /kb/136/Q136891/
 ---
 
 ## Q136891: Accessibility Options Shortcuts Disabled by Default

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255245: Unable to Remove or Change the DNS IP Address Assigned by RAS"
-permalink: kb/255/Q255245/
+permalink: /kb/255/Q255245/
 ---
 
 ## Q255245: Unable to Remove or Change the DNS IP Address Assigned by RAS

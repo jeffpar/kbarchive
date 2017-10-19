@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321139: INFO: List of Bugs Fixed in Visual SourceSafe 6.0 Service Pack 6"
-permalink: kb/321/Q321139/
+permalink: /kb/321/Q321139/
 ---
 
 ## Q321139: INFO: List of Bugs Fixed in Visual SourceSafe 6.0 Service Pack 6

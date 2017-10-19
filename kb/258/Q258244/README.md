@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258244: Allegiance: Quits Unexpectedly During Startup"
-permalink: kb/258/Q258244/
+permalink: /kb/258/Q258244/
 ---
 
 ## Q258244: Allegiance: Quits Unexpectedly During Startup

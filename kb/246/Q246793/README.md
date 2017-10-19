@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246793: System Preparation Tool Does Not Update the Computer Host Name"
-permalink: kb/246/Q246793/
+permalink: /kb/246/Q246793/
 ---
 
 ## Q246793: System Preparation Tool Does Not Update the Computer Host Name

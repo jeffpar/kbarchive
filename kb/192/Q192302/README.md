@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192302: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Table"
-permalink: kb/192/Q192302/
+permalink: /kb/192/Q192302/
 ---
 
 ## Q192302: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Table

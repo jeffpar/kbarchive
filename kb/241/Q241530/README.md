@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241530: HOWTO: Call an API That Uses Structures from eVB/VBCE6"
-permalink: kb/241/Q241530/
+permalink: /kb/241/Q241530/
 ---
 
 ## Q241530: HOWTO: Call an API That Uses Structures from eVB/VBCE6

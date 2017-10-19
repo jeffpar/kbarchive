@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148434: File and Print Services Service Not Started in File Manager"
-permalink: kb/148/Q148434/
+permalink: /kb/148/Q148434/
 ---
 
 ## Q148434: File and Print Services Service Not Started in File Manager

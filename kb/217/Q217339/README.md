@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217339: Certificate Server Fails to Start with Event ID 7000 or 7009"
-permalink: kb/217/Q217339/
+permalink: /kb/217/Q217339/
 ---
 
 ## Q217339: Certificate Server Fails to Start with Event ID 7000 or 7009

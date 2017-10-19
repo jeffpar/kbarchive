@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256053: XCLN: How to Create Rule to Change Task Color Based on Due Date"
-permalink: kb/256/Q256053/
+permalink: /kb/256/Q256053/
 ---
 
 ## Q256053: XCLN: How to Create Rule to Change Task Color Based on Due Date

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173994: GetTextExtentPoint32W May Fail with Unicode Characters &gt; 0x"
-permalink: kb/173/Q173994/
+permalink: /kb/173/Q173994/
 ---
 
 ## Q173994: GetTextExtentPoint32W May Fail with Unicode Characters &gt; 0x

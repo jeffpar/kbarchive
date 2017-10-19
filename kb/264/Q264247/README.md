@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264247: &quot;Stop 0x0a&quot; Error When Using the QLogic Fibre Channel Driver"
-permalink: kb/264/Q264247/
+permalink: /kb/264/Q264247/
 ---
 
 ## Q264247: &quot;Stop 0x0a&quot; Error When Using the QLogic Fibre Channel Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179564: SMS: Admin Lose Mouse/Keyboard Functionality of WinNT Clients"
-permalink: kb/179/Q179564/
+permalink: /kb/179/Q179564/
 ---
 
 ## Q179564: SMS: Admin Lose Mouse/Keyboard Functionality of WinNT Clients

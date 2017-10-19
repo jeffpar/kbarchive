@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155435: Space Character in Keystroke Font Printed Incorrectly"
-permalink: kb/155/Q155435/
+permalink: /kb/155/Q155435/
 ---
 
 ## Q155435: Space Character in Keystroke Font Printed Incorrectly

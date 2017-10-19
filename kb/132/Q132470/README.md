@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132470: STOP Msg: 0x0000000A or 0x0000001E When Using PING"
-permalink: kb/132/Q132470/
+permalink: /kb/132/Q132470/
 ---
 
 ## Q132470: STOP Msg: 0x0000000A or 0x0000001E When Using PING

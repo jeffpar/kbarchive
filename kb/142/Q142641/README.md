@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142641: Internet Server Unavailable Because of Malicious SYN Attacks"
-permalink: kb/142/Q142641/
+permalink: /kb/142/Q142641/
 ---
 
 ## Q142641: Internet Server Unavailable Because of Malicious SYN Attacks

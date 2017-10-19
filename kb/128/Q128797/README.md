@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128797: Unable to Transfer Files Across DEC 250 and DEC 500 Routers"
-permalink: kb/128/Q128797/
+permalink: /kb/128/Q128797/
 ---
 
 ## Q128797: Unable to Transfer Files Across DEC 250 and DEC 500 Routers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173962: Anonymous Acct. Not Created When Windows NT 4.0 &amp; IIS Are on BDC"
-permalink: kb/173/Q173962/
+permalink: /kb/173/Q173962/
 ---
 
 ## Q173962: Anonymous Acct. Not Created When Windows NT 4.0 &amp; IIS Are on BDC

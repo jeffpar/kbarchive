@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282276: SMS: Deleting Numerous Ads Causes Delay in Offer Mgr Processing"
-permalink: kb/282/Q282276/
+permalink: /kb/282/Q282276/
 ---
 
 ## Q282276: SMS: Deleting Numerous Ads Causes Delay in Offer Mgr Processing

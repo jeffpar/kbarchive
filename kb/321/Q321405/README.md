@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321405: Dungeon Siege: &quot;Encountered a Problem...Needs to Close&quot; Err Msg"
-permalink: kb/321/Q321405/
+permalink: /kb/321/Q321405/
 ---
 
 ## Q321405: Dungeon Siege: &quot;Encountered a Problem...Needs to Close&quot; Err Msg

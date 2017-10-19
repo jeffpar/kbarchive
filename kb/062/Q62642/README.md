@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62642: Write Cannot Use Cut, Copy Accelerator Keys"
-permalink: kb/062/Q62642/
+permalink: /kb/062/Q62642/
 ---
 
 ## Q62642: Write Cannot Use Cut, Copy Accelerator Keys

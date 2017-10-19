@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160534: XCON: Size Limits May Cause Message Looping"
-permalink: kb/160/Q160534/
+permalink: /kb/160/Q160534/
 ---
 
 ## Q160534: XCON: Size Limits May Cause Message Looping

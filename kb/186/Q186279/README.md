@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186279: Tutor Error Message: Invalid Page Fault in Module Kernel32.dll"
-permalink: kb/186/Q186279/
+permalink: /kb/186/Q186279/
 ---
 
 ## Q186279: Tutor Error Message: Invalid Page Fault in Module Kernel32.dll

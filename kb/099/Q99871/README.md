@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99871: NEW.H Does Not Contain new() that Takes a void&#42;"
-permalink: kb/099/Q99871/
+permalink: /kb/099/Q99871/
 ---
 
 ## Q99871: NEW.H Does Not Contain new() that Takes a void&#42;

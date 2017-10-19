@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102966: Registry Entries for Printing"
-permalink: kb/102/Q102966/
+permalink: /kb/102/Q102966/
 ---
 
 ## Q102966: Registry Entries for Printing

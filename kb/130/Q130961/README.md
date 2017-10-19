@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130961: TCP/IP Upgrade from Windows NT 3.1 Requires User Interaction"
-permalink: kb/130/Q130961/
+permalink: /kb/130/Q130961/
 ---
 
 ## Q130961: TCP/IP Upgrade from Windows NT 3.1 Requires User Interaction

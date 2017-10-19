@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93572: PC Win: Attachment Icon Redraws When Using BACKSPACE Key"
-permalink: kb/093/Q93572/
+permalink: /kb/093/Q93572/
 ---
 
 ## Q93572: PC Win: Attachment Icon Redraws When Using BACKSPACE Key

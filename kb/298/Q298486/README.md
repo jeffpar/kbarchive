@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298486: XCON: Exchange Notes Connector Service Stops w. Message Backlog"
-permalink: kb/298/Q298486/
+permalink: /kb/298/Q298486/
 ---
 
 ## Q298486: XCON: Exchange Notes Connector Service Stops w. Message Backlog

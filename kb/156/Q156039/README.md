@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156039: Deadly Tide: How to Run Program in Demonstration Mode"
-permalink: kb/156/Q156039/
+permalink: /kb/156/Q156039/
 ---
 
 ## Q156039: Deadly Tide: How to Run Program in Demonstration Mode

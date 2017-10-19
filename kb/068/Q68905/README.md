@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68905: Ventura Gold Doesn't Print Last Page on PostScript Printer"
-permalink: kb/068/Q68905/
+permalink: /kb/068/Q68905/
 ---
 
 ## Q68905: Ventura Gold Doesn't Print Last Page on PostScript Printer

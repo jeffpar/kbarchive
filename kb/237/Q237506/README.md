@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237506: Encarta 2000: Previous Version of Research Organizer Starts"
-permalink: kb/237/Q237506/
+permalink: /kb/237/Q237506/
 ---
 
 ## Q237506: Encarta 2000: Previous Version of Research Organizer Starts

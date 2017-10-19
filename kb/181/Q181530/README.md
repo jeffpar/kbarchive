@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181530: WD97: Sample Code to Scroll to Top or Bottom of Document Window"
-permalink: kb/181/Q181530/
+permalink: /kb/181/Q181530/
 ---
 
 ## Q181530: WD97: Sample Code to Scroll to Top or Bottom of Document Window

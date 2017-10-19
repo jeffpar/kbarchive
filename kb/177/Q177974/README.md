@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177974: Location of CedarBank Recording File Is Misleading"
-permalink: kb/177/Q177974/
+permalink: /kb/177/Q177974/
 ---
 
 ## Q177974: Location of CedarBank Recording File Is Misleading

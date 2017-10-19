@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98681: SAMPLE: VIEW Demonstrates Drawing Ink at a Slower Rate"
-permalink: kb/098/Q98681/
+permalink: /kb/098/Q98681/
 ---
 
 ## Q98681: SAMPLE: VIEW Demonstrates Drawing Ink at a Slower Rate

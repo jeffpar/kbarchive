@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177517: Removing Windows Multimedia Components Does Not Remove All Files"
-permalink: kb/177/Q177517/
+permalink: /kb/177/Q177517/
 ---
 
 ## Q177517: Removing Windows Multimedia Components Does Not Remove All Files

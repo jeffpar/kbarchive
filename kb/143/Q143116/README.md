@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143116: BUG: Calendar Control in Visual Basic Causes Application Error"
-permalink: kb/143/Q143116/
+permalink: /kb/143/Q143116/
 ---
 
 ## Q143116: BUG: Calendar Control in Visual Basic Causes Application Error

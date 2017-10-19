@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157275: Troubleshooting Dual-Channel ISDN Connection Problems"
-permalink: kb/157/Q157275/
+permalink: /kb/157/Q157275/
 ---
 
 ## Q157275: Troubleshooting Dual-Channel ISDN Connection Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301476: Broadband Advanced Setup"
-permalink: kb/301/Q301476/
+permalink: /kb/301/Q301476/
 ---
 
 ## Q301476: Broadband Advanced Setup

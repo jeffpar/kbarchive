@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151784: XADM: Err Msg: Originator Does Not Have Permission"
-permalink: kb/151/Q151784/
+permalink: /kb/151/Q151784/
 ---
 
 ## Q151784: XADM: Err Msg: Originator Does Not Have Permission

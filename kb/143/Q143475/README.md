@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143475: Windows NT System Key Permits Strong Encryption of the SAM"
-permalink: kb/143/Q143475/
+permalink: /kb/143/Q143475/
 ---
 
 ## Q143475: Windows NT System Key Permits Strong Encryption of the SAM

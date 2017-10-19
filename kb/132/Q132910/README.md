@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132910: FIX: Can't Move Focus from a Toolbar to an Object on a Form"
-permalink: kb/132/Q132910/
+permalink: /kb/132/Q132910/
 ---
 
 ## Q132910: FIX: Can't Move Focus from a Toolbar to an Object on a Form

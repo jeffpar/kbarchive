@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262508: BUG: Default Favorites &amp; Shortcuts in Link Folder Not Installed"
-permalink: kb/262/Q262508/
+permalink: /kb/262/Q262508/
 ---
 
 ## Q262508: BUG: Default Favorites &amp; Shortcuts in Link Folder Not Installed

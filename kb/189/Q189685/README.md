@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189685: Encarta Hangs When You Click a Menu Item on an Article Screen"
-permalink: kb/189/Q189685/
+permalink: /kb/189/Q189685/
 ---
 
 ## Q189685: Encarta Hangs When You Click a Menu Item on an Article Screen

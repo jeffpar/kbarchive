@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181848: XCON: MTA Stops Unexpectedly When Message Volume Is Very High"
-permalink: kb/181/Q181848/
+permalink: /kb/181/Q181848/
 ---
 
 ## Q181848: XCON: MTA Stops Unexpectedly When Message Volume Is Very High

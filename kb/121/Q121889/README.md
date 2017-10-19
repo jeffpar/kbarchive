@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121889: PRB: Error C2858: Command-line Options Inconsistent"
-permalink: kb/121/Q121889/
+permalink: /kb/121/Q121889/
 ---
 
 ## Q121889: PRB: Error C2858: Command-line Options Inconsistent

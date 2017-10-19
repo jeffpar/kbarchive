@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140846: PPT7: &quot;Could Not Find Pngsetup.ex_&quot; Using Pack And Go Wizard"
-permalink: kb/140/Q140846/
+permalink: /kb/140/Q140846/
 ---
 
 ## Q140846: PPT7: &quot;Could Not Find Pngsetup.ex_&quot; Using Pack And Go Wizard

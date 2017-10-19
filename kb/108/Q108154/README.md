@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108154: Problems Accessing B&amp;W NFS Mounted Drives in WFWG 3.11"
-permalink: kb/108/Q108154/
+permalink: /kb/108/Q108154/
 ---
 
 ## Q108154: Problems Accessing B&amp;W NFS Mounted Drives in WFWG 3.11

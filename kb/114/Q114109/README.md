@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114109: Mail Spell Checker Defaults to Windows NT Subdirectory"
-permalink: kb/114/Q114109/
+permalink: /kb/114/Q114109/
 ---
 
 ## Q114109: Mail Spell Checker Defaults to Windows NT Subdirectory

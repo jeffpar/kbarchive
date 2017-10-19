@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139902: Doc Err: Invalid IP Address in NETWORKS File"
-permalink: kb/139/Q139902/
+permalink: /kb/139/Q139902/
 ---
 
 ## Q139902: Doc Err: Invalid IP Address in NETWORKS File

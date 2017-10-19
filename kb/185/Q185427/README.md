@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185427: WD97: Top of Text Truncated with Contemporary Report Template"
-permalink: kb/185/Q185427/
+permalink: /kb/185/Q185427/
 ---
 
 ## Q185427: WD97: Top of Text Truncated with Contemporary Report Template

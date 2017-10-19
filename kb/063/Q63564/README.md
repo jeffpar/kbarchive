@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63564: Colorado Memory Systems and Windows 3.0"
-permalink: kb/063/Q63564/
+permalink: /kb/063/Q63564/
 ---
 
 ## Q63564: Colorado Memory Systems and Windows 3.0

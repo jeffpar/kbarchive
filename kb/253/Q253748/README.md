@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253748: BUG: WizardBar Cannot Go to Declaration of Void Functions"
-permalink: kb/253/Q253748/
+permalink: /kb/253/Q253748/
 ---
 
 ## Q253748: BUG: WizardBar Cannot Go to Declaration of Void Functions

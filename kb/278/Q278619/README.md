@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278619: Upgrading the MSN Companion"
-permalink: kb/278/Q278619/
+permalink: /kb/278/Q278619/
 ---
 
 ## Q278619: Upgrading the MSN Companion

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q85916: Using UNC Redirection in the WIN.INI [Ports] Section"
-permalink: kb/085/Q85916/
+title: "Q85916: Using UNC Redirection in the WIN.INI &#91;Ports&#93; Section"
+permalink: /kb/085/Q85916/
 ---
 
-## Q85916: Using UNC Redirection in the WIN.INI [Ports] Section
+## Q85916: Using UNC Redirection in the WIN.INI &#91;Ports&#93; Section
 
 	Article: Q85916
 	Product(s): Microsoft Windows 95.x Retail Product

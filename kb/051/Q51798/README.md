@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51798: &quot;File Not Found&quot; Error Returned Over Novell Network"
-permalink: kb/051/Q51798/
+permalink: /kb/051/Q51798/
 ---
 
 ## Q51798: &quot;File Not Found&quot; Error Returned Over Novell Network

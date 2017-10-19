@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142694: CPU Write-Back Cache Disabled on Certain Cyrix Processors"
-permalink: kb/142/Q142694/
+permalink: /kb/142/Q142694/
 ---
 
 ## Q142694: CPU Write-Back Cache Disabled on Certain Cyrix Processors

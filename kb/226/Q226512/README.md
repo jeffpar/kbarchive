@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226512: HOW TO: Reinstall IIS 4.0 Performance Monitor Counters"
-permalink: kb/226/Q226512/
+permalink: /kb/226/Q226512/
 ---
 
 ## Q226512: HOW TO: Reinstall IIS 4.0 Performance Monitor Counters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146137: Schedule+ ErrMsg: There Was a Problem Importing the File"
-permalink: kb/146/Q146137/
+permalink: /kb/146/Q146137/
 ---
 
 ## Q146137: Schedule+ ErrMsg: There Was a Problem Importing the File

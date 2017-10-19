@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98746: PRB: SET DEVICE TO PRINTER PROMPT Does Not Open Dialog Box"
-permalink: kb/098/Q98746/
+permalink: /kb/098/Q98746/
 ---
 
 ## Q98746: PRB: SET DEVICE TO PRINTER PROMPT Does Not Open Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265374: WD97: Post Service Release Fixes for Word 97"
-permalink: kb/265/Q265374/
+permalink: /kb/265/Q265374/
 ---
 
 ## Q265374: WD97: Post Service Release Fixes for Word 97

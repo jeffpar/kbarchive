@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163736: Access Violation in DNS Manager When Deleting Cached Domain"
-permalink: kb/163/Q163736/
+permalink: /kb/163/Q163736/
 ---
 
 ## Q163736: Access Violation in DNS Manager When Deleting Cached Domain

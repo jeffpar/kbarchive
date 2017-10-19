@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122789: FIX: Error C2579 When Using Function Templates"
-permalink: kb/122/Q122789/
+permalink: /kb/122/Q122789/
 ---
 
 ## Q122789: FIX: Error C2579 When Using Function Templates

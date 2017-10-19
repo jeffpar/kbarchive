@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199662: XADM: Service Pack Update Fails on Exchange Standard Edition"
-permalink: kb/199/Q199662/
+permalink: /kb/199/Q199662/
 ---
 
 ## Q199662: XADM: Service Pack Update Fails on Exchange Standard Edition

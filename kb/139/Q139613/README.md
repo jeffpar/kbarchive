@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139613: Error Accessing Performance Data of Remote Windows NT Server"
-permalink: kb/139/Q139613/
+permalink: /kb/139/Q139613/
 ---
 
 ## Q139613: Error Accessing Performance Data of Remote Windows NT Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97649: Level Passwords for Chip's Challenge (WEP)"
-permalink: kb/097/Q97649/
+permalink: /kb/097/Q97649/
 ---
 
 ## Q97649: Level Passwords for Chip's Challenge (WEP)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123298: RAS Errors 611 and 720 With PPP or SLIP"
-permalink: kb/123/Q123298/
+permalink: /kb/123/Q123298/
 ---
 
 ## Q123298: RAS Errors 611 and 720 With PPP or SLIP

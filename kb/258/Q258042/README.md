@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258042: PRB: Error Occurs When Binary Output Parameters Are Used"
-permalink: kb/258/Q258042/
+permalink: /kb/258/Q258042/
 ---
 
 ## Q258042: PRB: Error Occurs When Binary Output Parameters Are Used

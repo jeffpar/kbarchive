@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115295: Mac Gty: Third Party Gateway Systems for AppleTalk Mail"
-permalink: kb/115/Q115295/
+permalink: /kb/115/Q115295/
 ---
 
 ## Q115295: Mac Gty: Third Party Gateway Systems for AppleTalk Mail

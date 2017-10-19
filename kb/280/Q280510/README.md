@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280510: BUG: Control Properties Depersist Incorrectly When Host in ATL"
-permalink: kb/280/Q280510/
+permalink: /kb/280/Q280510/
 ---
 
 ## Q280510: BUG: Control Properties Depersist Incorrectly When Host in ATL

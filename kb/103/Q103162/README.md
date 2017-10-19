@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103162: Windows Sound System Does Not Update Lotus"
-permalink: kb/103/Q103162/
+permalink: /kb/103/Q103162/
 ---
 
 ## Q103162: Windows Sound System Does Not Update Lotus

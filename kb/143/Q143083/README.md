@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143083: FIX: C2664 When Array Is Passed as a Parameter to a Function"
-permalink: kb/143/Q143083/
+permalink: /kb/143/Q143083/
 ---
 
 ## Q143083: FIX: C2664 When Array Is Passed as a Parameter to a Function

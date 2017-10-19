@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162365: How to Delete Print Jobs That Will Not Print"
-permalink: kb/162/Q162365/
+permalink: /kb/162/Q162365/
 ---
 
 ## Q162365: How to Delete Print Jobs That Will Not Print

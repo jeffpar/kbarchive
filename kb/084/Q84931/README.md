@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84931: Use Extended Memory to Build Larger Windows Help Files"
-permalink: kb/084/Q84931/
+permalink: /kb/084/Q84931/
 ---
 
 ## Q84931: Use Extended Memory to Build Larger Windows Help Files

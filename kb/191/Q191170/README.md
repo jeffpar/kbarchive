@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191170: PRB: Too Many Memory Variables Error Creating Array"
-permalink: kb/191/Q191170/
+permalink: /kb/191/Q191170/
 ---
 
 ## Q191170: PRB: Too Many Memory Variables Error Creating Array

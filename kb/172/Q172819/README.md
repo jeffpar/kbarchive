@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172819: WD97: Main Document Not Connected to Data Source in Word 6.x/7.x"
-permalink: kb/172/Q172819/
+permalink: /kb/172/Q172819/
 ---
 
 ## Q172819: WD97: Main Document Not Connected to Data Source in Word 6.x/7.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167127: SMS: Client Program Group Is Not Created on Windows Clients"
-permalink: kb/167/Q167127/
+permalink: /kb/167/Q167127/
 ---
 
 ## Q167127: SMS: Client Program Group Is Not Created on Windows Clients

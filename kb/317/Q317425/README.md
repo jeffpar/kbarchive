@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317425: FIX: Exception Error With Two Successive INDEX ON Commands"
-permalink: kb/317/Q317425/
+permalink: /kb/317/Q317425/
 ---
 
 ## Q317425: FIX: Exception Error With Two Successive INDEX ON Commands

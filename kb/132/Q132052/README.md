@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132052: Purpose of FOXRSTRT.EXE &amp; How to Troubleshoot Problems"
-permalink: kb/132/Q132052/
+permalink: /kb/132/Q132052/
 ---
 
 ## Q132052: Purpose of FOXRSTRT.EXE &amp; How to Troubleshoot Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162683: BUG: BROWSE FORMAT May Cause Blank Browse Window"
-permalink: kb/162/Q162683/
+permalink: /kb/162/Q162683/
 ---
 
 ## Q162683: BUG: BROWSE FORMAT May Cause Blank Browse Window

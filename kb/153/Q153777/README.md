@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q153777: Close Combat Err Msg: [ufs]Reference Is Invalid"
-permalink: kb/153/Q153777/
+title: "Q153777: Close Combat Err Msg: &#91;ufs&#93;Reference Is Invalid"
+permalink: /kb/153/Q153777/
 ---
 
-## Q153777: Close Combat Err Msg: [ufs]Reference Is Invalid
+## Q153777: Close Combat Err Msg: &#91;ufs&#93;Reference Is Invalid
 
 	Article: Q153777
 	Product(s): Microsoft Home Games

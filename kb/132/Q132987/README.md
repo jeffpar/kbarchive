@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132987: Known Chat Session Issues on The Microsoft Network"
-permalink: kb/132/Q132987/
+permalink: /kb/132/Q132987/
 ---
 
 ## Q132987: Known Chat Session Issues on The Microsoft Network

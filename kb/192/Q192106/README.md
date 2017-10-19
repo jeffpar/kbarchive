@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192106: PRB: ActiveDoc Displays Incorrectly When Internet Explorer is Ma"
-permalink: kb/192/Q192106/
+permalink: /kb/192/Q192106/
 ---
 
 ## Q192106: PRB: ActiveDoc Displays Incorrectly When Internet Explorer is Ma

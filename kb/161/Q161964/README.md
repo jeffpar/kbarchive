@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161964: FP: Permissions Not Retained When Web Is Renamed"
-permalink: kb/161/Q161964/
+permalink: /kb/161/Q161964/
 ---
 
 ## Q161964: FP: Permissions Not Retained When Web Is Renamed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185419: MTM2: Adjusting Volume in Game Does Not Adjust Volume in Videos"
-permalink: kb/185/Q185419/
+permalink: /kb/185/Q185419/
 ---
 
 ## Q185419: MTM2: Adjusting Volume in Game Does Not Adjust Volume in Videos

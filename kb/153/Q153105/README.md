@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153105: New Policy Available to Hide View, Options Menu Item"
-permalink: kb/153/Q153105/
+permalink: /kb/153/Q153105/
 ---
 
 ## Q153105: New Policy Available to Hide View, Options Menu Item

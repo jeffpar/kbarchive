@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177885: XADM: ISINTEG -FIX With -PUB or -PRI No Longer Works in 5.5"
-permalink: kb/177/Q177885/
+permalink: /kb/177/Q177885/
 ---
 
 ## Q177885: XADM: ISINTEG -FIX With -PUB or -PRI No Longer Works in 5.5

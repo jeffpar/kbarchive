@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242034: Error When Printing to Lexmark Optra w/Far East Windows NT SP5"
-permalink: kb/242/Q242034/
+permalink: /kb/242/Q242034/
 ---
 
 ## Q242034: Error When Printing to Lexmark Optra w/Far East Windows NT SP5

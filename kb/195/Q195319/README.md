@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195319: Inherit User Config Option Does Not Work for Modem Callback"
-permalink: kb/195/Q195319/
+permalink: /kb/195/Q195319/
 ---
 
 ## Q195319: Inherit User Config Option Does Not Work for Modem Callback

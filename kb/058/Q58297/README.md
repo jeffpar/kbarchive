@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58297: Qmodem Reboots the Machine in Enhanced Mode"
-permalink: kb/058/Q58297/
+permalink: /kb/058/Q58297/
 ---
 
 ## Q58297: Qmodem Reboots the Machine in Enhanced Mode

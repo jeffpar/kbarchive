@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118562: SMTP: Cannot Export Address List Using ODI Drivers"
-permalink: kb/118/Q118562/
+permalink: /kb/118/Q118562/
 ---
 
 ## Q118562: SMTP: Cannot Export Address List Using ODI Drivers

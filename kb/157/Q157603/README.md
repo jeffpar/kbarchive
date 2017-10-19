@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157603: Golf: Video Troubleshooting"
-permalink: kb/157/Q157603/
+permalink: /kb/157/Q157603/
 ---
 
 ## Q157603: Golf: Video Troubleshooting

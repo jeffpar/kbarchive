@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130020: XCLN: Attachment Icon Not Updated After App Installed"
-permalink: kb/130/Q130020/
+permalink: /kb/130/Q130020/
 ---
 
 ## Q130020: XCLN: Attachment Icon Not Updated After App Installed

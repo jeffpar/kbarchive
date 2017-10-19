@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72852: DOCERR: Undocumented Error U1369: Invalid Format in PWBED.EXE"
-permalink: kb/072/Q72852/
+permalink: /kb/072/Q72852/
 ---
 
 ## Q72852: DOCERR: Undocumented Error U1369: Invalid Format in PWBED.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130134: 500 Nations: Seneca Town Copies to Clipboard as Huron Village"
-permalink: kb/130/Q130134/
+permalink: /kb/130/Q130134/
 ---
 
 ## Q130134: 500 Nations: Seneca Town Copies to Clipboard as Huron Village

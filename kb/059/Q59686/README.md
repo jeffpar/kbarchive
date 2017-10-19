@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59686: Windows: Mouse Not Working in Multiplan 3.0"
-permalink: kb/059/Q59686/
+permalink: /kb/059/Q59686/
 ---
 
 ## Q59686: Windows: Mouse Not Working in Multiplan 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127027: Windows NT Printing Err Msg: The Requested Resource Is In Use"
-permalink: kb/127/Q127027/
+permalink: /kb/127/Q127027/
 ---
 
 ## Q127027: Windows NT Printing Err Msg: The Requested Resource Is In Use

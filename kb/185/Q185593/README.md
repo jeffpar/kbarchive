@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185593: XFOR: Blank Firstname, Lastname Fields with cc:Mail Dirsync"
-permalink: kb/185/Q185593/
+permalink: /kb/185/Q185593/
 ---
 
 ## Q185593: XFOR: Blank Firstname, Lastname Fields with cc:Mail Dirsync

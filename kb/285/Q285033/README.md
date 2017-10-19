@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285033: CFS2: Enemy Aircraft Are Not Displayed on the Tactical Display"
-permalink: kb/285/Q285033/
+permalink: /kb/285/Q285033/
 ---
 
 ## Q285033: CFS2: Enemy Aircraft Are Not Displayed on the Tactical Display

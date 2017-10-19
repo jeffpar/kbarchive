@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180864: Print Sessions Stop with Host Print Service"
-permalink: kb/180/Q180864/
+permalink: /kb/180/Q180864/
 ---
 
 ## Q180864: Print Sessions Stop with Host Print Service

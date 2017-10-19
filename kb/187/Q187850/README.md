@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187850: XWEB: HTML Form Converter Cannot Show New PST and Folders"
-permalink: kb/187/Q187850/
+permalink: /kb/187/Q187850/
 ---
 
 ## Q187850: XWEB: HTML Form Converter Cannot Show New PST and Folders

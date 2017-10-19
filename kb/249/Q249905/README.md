@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249905: Cannot Access SQL Database from Cold Fusion Applications"
-permalink: kb/249/Q249905/
+permalink: /kb/249/Q249905/
 ---
 
 ## Q249905: Cannot Access SQL Database from Cold Fusion Applications

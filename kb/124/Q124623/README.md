@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124623: Audio Video Interleave .AVI File Playback Is Rolling or Jumpy"
-permalink: kb/124/Q124623/
+permalink: /kb/124/Q124623/
 ---
 
 ## Q124623: Audio Video Interleave .AVI File Playback Is Rolling or Jumpy

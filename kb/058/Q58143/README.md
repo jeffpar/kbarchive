@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58143: MS-DOS PRINT Command and Windows"
-permalink: kb/058/Q58143/
+permalink: /kb/058/Q58143/
 ---
 
 ## Q58143: MS-DOS PRINT Command and Windows

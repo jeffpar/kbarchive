@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28839: Case Sensitivity of Search Change... Command in Windows Write"
-permalink: kb/028/Q28839/
+permalink: /kb/028/Q28839/
 ---
 
 ## Q28839: Case Sensitivity of Search Change... Command in Windows Write

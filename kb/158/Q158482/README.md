@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158482: WD97: Envelopes Printed Upside Down on Hewlett-Packard 5si/5si"
-permalink: kb/158/Q158482/
+permalink: /kb/158/Q158482/
 ---
 
 ## Q158482: WD97: Envelopes Printed Upside Down on Hewlett-Packard 5si/5si

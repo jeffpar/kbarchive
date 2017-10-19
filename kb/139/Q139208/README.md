@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139208: Instability in RAS using TAPI X25 Ndiswan Driver"
-permalink: kb/139/Q139208/
+permalink: /kb/139/Q139208/
 ---
 
 ## Q139208: Instability in RAS using TAPI X25 Ndiswan Driver

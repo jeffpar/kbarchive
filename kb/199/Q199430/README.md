@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199430: XFOR: Err Msg: Initialization of the Dynamic Link Library"
-permalink: kb/199/Q199430/
+permalink: /kb/199/Q199430/
 ---
 
 ## Q199430: XFOR: Err Msg: Initialization of the Dynamic Link Library

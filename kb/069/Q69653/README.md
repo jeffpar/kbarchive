@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69653: IdleWild Does Not Blank the Screen"
-permalink: kb/069/Q69653/
+permalink: /kb/069/Q69653/
 ---
 
 ## Q69653: IdleWild Does Not Blank the Screen

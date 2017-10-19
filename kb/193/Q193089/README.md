@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193089: PRB: Unexpected Error Occurs in Code Generator or Linker"
-permalink: kb/193/Q193089/
+permalink: /kb/193/Q193089/
 ---
 
 ## Q193089: PRB: Unexpected Error Occurs in Code Generator or Linker

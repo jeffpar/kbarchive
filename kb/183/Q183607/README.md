@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183607: HOWTO: Configure DCOM for Visual Basic Using DCOMCNFG.EXE"
-permalink: kb/183/Q183607/
+permalink: /kb/183/Q183607/
 ---
 
 ## Q183607: HOWTO: Configure DCOM for Visual Basic Using DCOMCNFG.EXE

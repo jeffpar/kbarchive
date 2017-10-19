@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94336: How DoubleSpace Assigns the Host Drive Letter"
-permalink: kb/094/Q94336/
+permalink: /kb/094/Q94336/
 ---
 
 ## Q94336: How DoubleSpace Assigns the Host Drive Letter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96060: PC DirSync: Directory Synchronization (Dir-Sync)"
-permalink: kb/096/Q96060/
+permalink: /kb/096/Q96060/
 ---
 
 ## Q96060: PC DirSync: Directory Synchronization (Dir-Sync)

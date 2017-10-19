@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158022: RunOnce Registry Key Runs Program at Every Startup"
-permalink: kb/158/Q158022/
+permalink: /kb/158/Q158022/
 ---
 
 ## Q158022: RunOnce Registry Key Runs Program at Every Startup

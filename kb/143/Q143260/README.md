@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143260: Default System Security Policy"
-permalink: kb/143/Q143260/
+permalink: /kb/143/Q143260/
 ---
 
 ## Q143260: Default System Security Policy

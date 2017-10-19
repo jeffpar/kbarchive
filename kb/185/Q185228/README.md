@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185228: WD97: New Style or Changes Unavailable in Master or Subdocument"
-permalink: kb/185/Q185228/
+permalink: /kb/185/Q185228/
 ---
 
 ## Q185228: WD97: New Style or Changes Unavailable in Master or Subdocument

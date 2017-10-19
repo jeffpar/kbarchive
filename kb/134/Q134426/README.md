@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134426: File Attributes Removed Attempting to Delete Open File"
-permalink: kb/134/Q134426/
+permalink: /kb/134/Q134426/
 ---
 
 ## Q134426: File Attributes Removed Attempting to Delete Open File

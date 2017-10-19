@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242063: XADM: Recovery May Incorrectly Increment the Checkpoint File"
-permalink: kb/242/Q242063/
+permalink: /kb/242/Q242063/
 ---
 
 ## Q242063: XADM: Recovery May Incorrectly Increment the Checkpoint File

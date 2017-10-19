@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131190: No Notification of Replies to Bulletin Board Messages"
-permalink: kb/131/Q131190/
+permalink: /kb/131/Q131190/
 ---
 
 ## Q131190: No Notification of Replies to Bulletin Board Messages

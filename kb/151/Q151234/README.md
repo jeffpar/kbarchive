@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151234: Packets Misrouted on RAS Client w/Multiple Outbound Connection"
-permalink: kb/151/Q151234/
+permalink: /kb/151/Q151234/
 ---
 
 ## Q151234: Packets Misrouted on RAS Client w/Multiple Outbound Connection

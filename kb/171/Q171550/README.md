@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171550: FIX: Recompiling with SP2 Breaks Binary Compatibility"
-permalink: kb/171/Q171550/
+permalink: /kb/171/Q171550/
 ---
 
 ## Q171550: FIX: Recompiling with SP2 Breaks Binary Compatibility

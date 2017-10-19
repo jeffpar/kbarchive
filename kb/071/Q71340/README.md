@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71340: Mac Gty: Gateway Access Server Stops Working"
-permalink: kb/071/Q71340/
+permalink: /kb/071/Q71340/
 ---
 
 ## Q71340: Mac Gty: Gateway Access Server Stops Working

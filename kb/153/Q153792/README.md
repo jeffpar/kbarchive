@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153792: BUG: MESSAGEBOX() Function Displays Incorrect Icon"
-permalink: kb/153/Q153792/
+permalink: /kb/153/Q153792/
 ---
 
 ## Q153792: BUG: MESSAGEBOX() Function Displays Incorrect Icon

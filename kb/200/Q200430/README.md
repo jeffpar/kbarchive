@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200430: SMS: Explanations of Remote Control Screen Acceleration"
-permalink: kb/200/Q200430/
+permalink: /kb/200/Q200430/
 ---
 
 ## Q200430: SMS: Explanations of Remote Control Screen Acceleration

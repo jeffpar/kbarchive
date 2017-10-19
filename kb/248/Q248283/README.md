@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248283: SMS: Query for IP Address and Subnet Returns Unexpected Results"
-permalink: kb/248/Q248283/
+permalink: /kb/248/Q248283/
 ---
 
 ## Q248283: SMS: Query for IP Address and Subnet Returns Unexpected Results

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140926: L2GETNET Doesn't Report IP Address of German Windows 95 Client"
-permalink: kb/140/Q140926/
+permalink: /kb/140/Q140926/
 ---
 
 ## Q140926: L2GETNET Doesn't Report IP Address of German Windows 95 Client

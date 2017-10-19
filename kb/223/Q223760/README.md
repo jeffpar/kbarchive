@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223760: Zone Err Msg: Please Wait for Page to Download Completely..."
-permalink: kb/223/Q223760/
+permalink: /kb/223/Q223760/
 ---
 
 ## Q223760: Zone Err Msg: Please Wait for Page to Download Completely...

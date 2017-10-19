@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98850: Encarta 1993: Minimal Installation May Cause Sound Gaps"
-permalink: kb/098/Q98850/
+permalink: /kb/098/Q98850/
 ---
 
 ## Q98850: Encarta 1993: Minimal Installation May Cause Sound Gaps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143367: Writer: Incomplete Border Printout On Ink-Jet Printers"
-permalink: kb/143/Q143367/
+permalink: /kb/143/Q143367/
 ---
 
 ## Q143367: Writer: Incomplete Border Printout On Ink-Jet Printers

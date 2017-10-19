@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84466: Express Publisher Not Printing Graphics to EPS File"
-permalink: kb/084/Q84466/
+permalink: /kb/084/Q84466/
 ---
 
 ## Q84466: Express Publisher Not Printing Graphics to EPS File

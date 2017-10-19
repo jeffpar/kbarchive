@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189527: Unable to Create Folder on an NTFS Partition"
-permalink: kb/189/Q189527/
+permalink: /kb/189/Q189527/
 ---
 
 ## Q189527: Unable to Create Folder on an NTFS Partition

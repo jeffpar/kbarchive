@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299347: Microsoft Encyclopedia of Networking Comments and Corrections"
-permalink: kb/299/Q299347/
+permalink: /kb/299/Q299347/
 ---
 
 ## Q299347: Microsoft Encyclopedia of Networking Comments and Corrections

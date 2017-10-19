@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166516: XFOR: Message Body Missing or Truncated While Downloading Msg"
-permalink: kb/166/Q166516/
+permalink: /kb/166/Q166516/
 ---
 
 ## Q166516: XFOR: Message Body Missing or Truncated While Downloading Msg

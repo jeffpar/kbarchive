@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88504: Terminal Doesn't Use Highlight Colors"
-permalink: kb/088/Q88504/
+permalink: /kb/088/Q88504/
 ---
 
 ## Q88504: Terminal Doesn't Use Highlight Colors

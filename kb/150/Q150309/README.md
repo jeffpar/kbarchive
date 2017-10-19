@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150309: Bookshelf 96-97 Installed Before Word Will Not Integrate"
-permalink: kb/150/Q150309/
+permalink: /kb/150/Q150309/
 ---
 
 ## Q150309: Bookshelf 96-97 Installed Before Word Will Not Integrate

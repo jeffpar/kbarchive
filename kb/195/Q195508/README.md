@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195508: Devices Tool Hangs When Clicking HW Profile for I20 Bus Driver"
-permalink: kb/195/Q195508/
+permalink: /kb/195/Q195508/
 ---
 
 ## Q195508: Devices Tool Hangs When Clicking HW Profile for I20 Bus Driver

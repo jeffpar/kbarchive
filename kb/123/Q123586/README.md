@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123586: ADT2: Setup Wizard Cannot Create Compact and Repair Icons"
-permalink: kb/123/Q123586/
+permalink: /kb/123/Q123586/
 ---
 
 ## Q123586: ADT2: Setup Wizard Cannot Create Compact and Repair Icons

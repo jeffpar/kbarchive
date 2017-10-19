@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129750: Using the 3C501 Network Adapter with WFWG"
-permalink: kb/129/Q129750/
+permalink: /kb/129/Q129750/
 ---
 
 ## Q129750: Using the 3C501 Network Adapter with WFWG

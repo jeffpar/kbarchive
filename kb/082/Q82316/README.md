@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82316: Formbase 1.1 Loads Run-Time Windows"
-permalink: kb/082/Q82316/
+permalink: /kb/082/Q82316/
 ---
 
 ## Q82316: Formbase 1.1 Loads Run-Time Windows

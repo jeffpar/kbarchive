@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255126: PRB: ADSI Err '-2147016694(8007200a)' and '-2147023591(80070519)"
-permalink: kb/255/Q255126/
+permalink: /kb/255/Q255126/
 ---
 
 ## Q255126: PRB: ADSI Err '-2147016694(8007200a)' and '-2147023591(80070519)

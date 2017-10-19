@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158599: Mac Encarta 97: Readme.txt: Getting Connected"
-permalink: kb/158/Q158599/
+permalink: /kb/158/Q158599/
 ---
 
 ## Q158599: Mac Encarta 97: Readme.txt: Getting Connected

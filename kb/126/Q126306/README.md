@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126306: Laser Tools PrintCache (PCACHE.EXE) Hangs MSD"
-permalink: kb/126/Q126306/
+permalink: /kb/126/Q126306/
 ---
 
 ## Q126306: Laser Tools PrintCache (PCACHE.EXE) Hangs MSD

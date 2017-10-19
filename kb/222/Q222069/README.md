@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222069: IIS 4.0 Requires Username &amp; Password When Using Remote Computer"
-permalink: kb/222/Q222069/
+permalink: /kb/222/Q222069/
 ---
 
 ## Q222069: IIS 4.0 Requires Username &amp; Password When Using Remote Computer

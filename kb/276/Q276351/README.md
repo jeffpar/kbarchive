@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276351: Microsoft Casino: Cannot Disable Full Screen Mode"
-permalink: kb/276/Q276351/
+permalink: /kb/276/Q276351/
 ---
 
 ## Q276351: Microsoft Casino: Cannot Disable Full Screen Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225530: SMS: Resource Explorer Returns &quot;File Not Found&quot; Error"
-permalink: kb/225/Q225530/
+permalink: /kb/225/Q225530/
 ---
 
 ## Q225530: SMS: Resource Explorer Returns &quot;File Not Found&quot; Error

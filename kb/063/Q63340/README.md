@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63340: Mac Form: Using Same Graphic on Send and Read Screens"
-permalink: kb/063/Q63340/
+permalink: /kb/063/Q63340/
 ---
 
 ## Q63340: Mac Form: Using Same Graphic on Send and Read Screens

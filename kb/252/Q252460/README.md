@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252460: Access Denied Error when Installing SNA Server 4.0 SP3"
-permalink: kb/252/Q252460/
+permalink: /kb/252/Q252460/
 ---
 
 ## Q252460: Access Denied Error when Installing SNA Server 4.0 SP3

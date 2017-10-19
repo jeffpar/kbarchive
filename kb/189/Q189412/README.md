@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189412: ODE97: &quot;Always Overwrite&quot; Option Fails When MDB Is in WinPath"
-permalink: kb/189/Q189412/
+permalink: /kb/189/Q189412/
 ---
 
 ## Q189412: ODE97: &quot;Always Overwrite&quot; Option Fails When MDB Is in WinPath

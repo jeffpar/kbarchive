@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118585: Mixed TrueType Text and Graphics Print Incorrectly"
-permalink: kb/118/Q118585/
+permalink: /kb/118/Q118585/
 ---
 
 ## Q118585: Mixed TrueType Text and Graphics Print Incorrectly

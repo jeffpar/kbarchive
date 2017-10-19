@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180416: APPC or CPI-C TPs May Fail When Using Dependent LU 6.2 Sessions"
-permalink: kb/180/Q180416/
+permalink: /kb/180/Q180416/
 ---
 
 ## Q180416: APPC or CPI-C TPs May Fail When Using Dependent LU 6.2 Sessions

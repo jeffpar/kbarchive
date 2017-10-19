@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32856: Flight Simulator: Autopilot Doesn't Recognize VOR Lock"
-permalink: kb/032/Q32856/
+permalink: /kb/032/Q32856/
 ---
 
 ## Q32856: Flight Simulator: Autopilot Doesn't Recognize VOR Lock

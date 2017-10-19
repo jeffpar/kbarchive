@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266779: MCM/MCM2: How to Use a SideWinder Wheel in Motocross Madness"
-permalink: kb/266/Q266779/
+permalink: /kb/266/Q266779/
 ---
 
 ## Q266779: MCM/MCM2: How to Use a SideWinder Wheel in Motocross Madness

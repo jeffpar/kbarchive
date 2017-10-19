@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126117: Plug and Play BIOS Required for Hot/Warm Docking/Undocking"
-permalink: kb/126/Q126117/
+permalink: /kb/126/Q126117/
 ---
 
 ## Q126117: Plug and Play BIOS Required for Hot/Warm Docking/Undocking

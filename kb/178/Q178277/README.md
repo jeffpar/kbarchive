@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178277: Setting DNS Domain Suffix Search Order During Unattend Install"
-permalink: kb/178/Q178277/
+permalink: /kb/178/Q178277/
 ---
 
 ## Q178277: Setting DNS Domain Suffix Search Order During Unattend Install

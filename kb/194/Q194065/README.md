@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194065: How to Reset License Manager Throughout an Enterprise"
-permalink: kb/194/Q194065/
+permalink: /kb/194/Q194065/
 ---
 
 ## Q194065: How to Reset License Manager Throughout an Enterprise

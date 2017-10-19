@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119845: Changing the Working Directory in PowerPoint"
-permalink: kb/119/Q119845/
+permalink: /kb/119/Q119845/
 ---
 
 ## Q119845: Changing the Working Directory in PowerPoint

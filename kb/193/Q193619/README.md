@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193619: FIX: Get from Project History Does Not Display Get Dialog Box"
-permalink: kb/193/Q193619/
+permalink: /kb/193/Q193619/
 ---
 
 ## Q193619: FIX: Get from Project History Does Not Display Get Dialog Box

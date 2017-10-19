@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268657: XADM: Exchange Server 5.5 Post-SP3 MAPI Fixes Available"
-permalink: kb/268/Q268657/
+permalink: /kb/268/Q268657/
 ---
 
 ## Q268657: XADM: Exchange Server 5.5 Post-SP3 MAPI Fixes Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173890: XWEB: Appointment Cancellation Form Shows Attachment Icon"
-permalink: kb/173/Q173890/
+permalink: /kb/173/Q173890/
 ---
 
 ## Q173890: XWEB: Appointment Cancellation Form Shows Attachment Icon

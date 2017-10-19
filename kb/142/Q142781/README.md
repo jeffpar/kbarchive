@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142781: XCLN: Mailing to Recipients Hidden from the Address Book"
-permalink: kb/142/Q142781/
+permalink: /kb/142/Q142781/
 ---
 
 ## Q142781: XCLN: Mailing to Recipients Hidden from the Address Book

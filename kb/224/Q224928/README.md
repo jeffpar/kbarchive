@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224928: BUG: CFormView Loses the Control's Focus When Restored"
-permalink: kb/224/Q224928/
+permalink: /kb/224/Q224928/
 ---
 
 ## Q224928: BUG: CFormView Loses the Control's Focus When Restored

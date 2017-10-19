@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122383: Problems Running SMS w/Non-English Versions of Windows NT"
-permalink: kb/122/Q122383/
+permalink: /kb/122/Q122383/
 ---
 
 ## Q122383: Problems Running SMS w/Non-English Versions of Windows NT

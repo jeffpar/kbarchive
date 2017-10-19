@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319123: &quot;STOP 0x00000050&quot; Err Msg with Trend Micro Antivirus"
-permalink: kb/319/Q319123/
+permalink: /kb/319/Q319123/
 ---
 
 ## Q319123: &quot;STOP 0x00000050&quot; Err Msg with Trend Micro Antivirus

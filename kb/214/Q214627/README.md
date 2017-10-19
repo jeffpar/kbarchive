@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214627: Saving a Document May Fail Across a Share Point"
-permalink: kb/214/Q214627/
+permalink: /kb/214/Q214627/
 ---
 
 ## Q214627: Saving a Document May Fail Across a Share Point

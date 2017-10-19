@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97399: DdList.exe Implements Owner-Draw Combo Boxes"
-permalink: kb/097/Q97399/
+permalink: /kb/097/Q97399/
 ---
 
 ## Q97399: DdList.exe Implements Owner-Draw Combo Boxes

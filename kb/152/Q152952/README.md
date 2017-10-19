@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152952: XCON: No Read/Delivery Receipts Sending X.400 Messages"
-permalink: kb/152/Q152952/
+permalink: /kb/152/Q152952/
 ---
 
 ## Q152952: XCON: No Read/Delivery Receipts Sending X.400 Messages

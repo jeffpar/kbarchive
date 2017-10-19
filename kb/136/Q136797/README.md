@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136797: DOC: ERROR - Events List for List Box Incomplete"
-permalink: kb/136/Q136797/
+permalink: /kb/136/Q136797/
 ---
 
 ## Q136797: DOC: ERROR - Events List for List Box Incomplete

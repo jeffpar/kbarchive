@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198302: WD97: Cannot Change Case from Uppercase to Title Case"
-permalink: kb/198/Q198302/
+permalink: /kb/198/Q198302/
 ---
 
 ## Q198302: WD97: Cannot Change Case from Uppercase to Title Case

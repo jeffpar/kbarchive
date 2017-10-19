@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192446: Cannot Quit Syntplpr When You Install MSN on Laptop Computer"
-permalink: kb/192/Q192446/
+permalink: /kb/192/Q192446/
 ---
 
 ## Q192446: Cannot Quit Syntplpr When You Install MSN on Laptop Computer

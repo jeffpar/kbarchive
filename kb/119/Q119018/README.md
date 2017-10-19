@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119018: PC DirSync: Zero-Byte ADMIN.NME Halts REBUILD"
-permalink: kb/119/Q119018/
+permalink: /kb/119/Q119018/
 ---
 
 ## Q119018: PC DirSync: Zero-Byte ADMIN.NME Halts REBUILD

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186414: SMS: Distribution Jobs to Child Sites Do Not Complete"
-permalink: kb/186/Q186414/
+permalink: /kb/186/Q186414/
 ---
 
 ## Q186414: SMS: Distribution Jobs to Child Sites Do Not Complete

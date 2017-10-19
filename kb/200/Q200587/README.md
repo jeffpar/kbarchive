@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200587: XADM: Cannot Restrict Mailbox Administration by Server"
-permalink: kb/200/Q200587/
+permalink: /kb/200/Q200587/
 ---
 
 ## Q200587: XADM: Cannot Restrict Mailbox Administration by Server

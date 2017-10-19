@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148312: No RTM Data Generated If 3270 Session Uses Exception Response"
-permalink: kb/148/Q148312/
+permalink: /kb/148/Q148312/
 ---
 
 ## Q148312: No RTM Data Generated If 3270 Session Uses Exception Response

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135564: PRB: ACTIVATE WINDOW Command Not Working for Toolbars"
-permalink: kb/135/Q135564/
+permalink: /kb/135/Q135564/
 ---
 
 ## Q135564: PRB: ACTIVATE WINDOW Command Not Working for Toolbars

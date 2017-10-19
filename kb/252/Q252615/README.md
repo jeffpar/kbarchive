@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252615: OLE Examples for Taking Control of Excel from Visual FoxPro"
-permalink: kb/252/Q252615/
+permalink: /kb/252/Q252615/
 ---
 
 ## Q252615: OLE Examples for Taking Control of Excel from Visual FoxPro

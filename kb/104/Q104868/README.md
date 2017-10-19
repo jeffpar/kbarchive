@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104868: Backup Err Msg: Invalid Volume Information Block Detected"
-permalink: kb/104/Q104868/
+permalink: /kb/104/Q104868/
 ---
 
 ## Q104868: Backup Err Msg: Invalid Volume Information Block Detected

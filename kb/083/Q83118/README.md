@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83118: Printers Not Supporting TrueType in Windows 3.1"
-permalink: kb/083/Q83118/
+permalink: /kb/083/Q83118/
 ---
 
 ## Q83118: Printers Not Supporting TrueType in Windows 3.1

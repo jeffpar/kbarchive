@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85750: PPT: Inserting Sound Objects in Presentations"
-permalink: kb/085/Q85750/
+permalink: /kb/085/Q85750/
 ---
 
 ## Q85750: PPT: Inserting Sound Objects in Presentations

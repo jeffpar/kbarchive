@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189949: PRB: Run-Time Error After an ActiveX Server Crashes"
-permalink: kb/189/Q189949/
+permalink: /kb/189/Q189949/
 ---
 
 ## Q189949: PRB: Run-Time Error After an ActiveX Server Crashes

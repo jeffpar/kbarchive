@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226853: SMS: Program Assigned to Run at Next Logon Cannot Be Rescheduled"
-permalink: kb/226/Q226853/
+permalink: /kb/226/Q226853/
 ---
 
 ## Q226853: SMS: Program Assigned to Run at Next Logon Cannot Be Rescheduled

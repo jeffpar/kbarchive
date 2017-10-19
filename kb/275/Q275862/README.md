@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275862: HOWTO: Add Verbs for ATL ActiveX Controls Embedded Within Office"
-permalink: kb/275/Q275862/
+permalink: /kb/275/Q275862/
 ---
 
 ## Q275862: HOWTO: Add Verbs for ATL ActiveX Controls Embedded Within Office

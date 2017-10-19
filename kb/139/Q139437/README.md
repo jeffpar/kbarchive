@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139437: Windows 95 Emergency Recovery Utility"
-permalink: kb/139/Q139437/
+permalink: /kb/139/Q139437/
 ---
 
 ## Q139437: Windows 95 Emergency Recovery Utility

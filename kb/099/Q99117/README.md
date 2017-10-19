@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q99117: PC DirSync: Err Msg: Fatal [203] GAL Rebuild Problem"
-permalink: kb/099/Q99117/
+title: "Q99117: PC DirSync: Err Msg: Fatal &#91;203&#93; GAL Rebuild Problem"
+permalink: /kb/099/Q99117/
 ---
 
-## Q99117: PC DirSync: Err Msg: Fatal [203] GAL Rebuild Problem
+## Q99117: PC DirSync: Err Msg: Fatal &#91;203&#93; GAL Rebuild Problem
 
 	Article: Q99117
 	Product(s): Microsoft Mail For PC Networks

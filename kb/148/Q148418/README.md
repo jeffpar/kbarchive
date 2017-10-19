@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148418: XCLN: Line Underneath From: Header May Be Displayed"
-permalink: kb/148/Q148418/
+permalink: /kb/148/Q148418/
 ---
 
 ## Q148418: XCLN: Line Underneath From: Header May Be Displayed

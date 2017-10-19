@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89221: Minimized Clock Truncates Digits in Digital Mode"
-permalink: kb/089/Q89221/
+permalink: /kb/089/Q89221/
 ---
 
 ## Q89221: Minimized Clock Truncates Digits in Digital Mode

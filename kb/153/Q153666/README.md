@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153666: Updated TCP/IP Printing Components for Windows NT 3.51"
-permalink: kb/153/Q153666/
+permalink: /kb/153/Q153666/
 ---
 
 ## Q153666: Updated TCP/IP Printing Components for Windows NT 3.51

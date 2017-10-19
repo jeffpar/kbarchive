@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161768: SNALINK.EXE - Cancel Timeout in &#92;driver&#92;DLC"
-permalink: kb/161/Q161768/
+permalink: /kb/161/Q161768/
 ---
 
 ## Q161768: SNALINK.EXE - Cancel Timeout in &#92;driver&#92;DLC

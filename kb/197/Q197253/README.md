@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197253: LPD Job May Cause TCPSVCS to Hang"
-permalink: kb/197/Q197253/
+permalink: /kb/197/Q197253/
 ---
 
 ## Q197253: LPD Job May Cause TCPSVCS to Hang

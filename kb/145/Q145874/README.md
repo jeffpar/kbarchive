@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145874: XCLN: Schedule+ Free/Busy Connector Mailbox Is in Address Book"
-permalink: kb/145/Q145874/
+permalink: /kb/145/Q145874/
 ---
 
 ## Q145874: XCLN: Schedule+ Free/Busy Connector Mailbox Is in Address Book

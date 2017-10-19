@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201620: SMS: RC: Viewing of Cursor on Windows 98 With Multiple Monitors"
-permalink: kb/201/Q201620/
+permalink: /kb/201/Q201620/
 ---
 
 ## Q201620: SMS: RC: Viewing of Cursor on Windows 98 With Multiple Monitors

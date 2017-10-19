@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145714: How to Establish Two 802.2 Connections To AS/400"
-permalink: kb/145/Q145714/
+permalink: /kb/145/Q145714/
 ---
 
 ## Q145714: How to Establish Two 802.2 Connections To AS/400

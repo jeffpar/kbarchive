@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81498: DIBs and Their Uses"
-permalink: kb/081/Q81498/
+permalink: /kb/081/Q81498/
 ---
 
 ## Q81498: DIBs and Their Uses

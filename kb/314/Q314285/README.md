@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314285: Microsoft Visual Basic .NET Step by Step Comments and Correction"
-permalink: kb/314/Q314285/
+permalink: /kb/314/Q314285/
 ---
 
 ## Q314285: Microsoft Visual Basic .NET Step by Step Comments and Correction

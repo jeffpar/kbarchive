@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161872: FIX: ActiveX Control Fails to Fire Click Event"
-permalink: kb/161/Q161872/
+permalink: /kb/161/Q161872/
 ---
 
 ## Q161872: FIX: ActiveX Control Fails to Fire Click Event

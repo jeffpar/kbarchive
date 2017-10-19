@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123678: Changing Registry Does Not Prevent User from Changing Delay"
-permalink: kb/123/Q123678/
+permalink: /kb/123/Q123678/
 ---
 
 ## Q123678: Changing Registry Does Not Prevent User from Changing Delay

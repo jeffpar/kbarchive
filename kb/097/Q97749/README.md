@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97749: Adjusting PRINTSTA Parameters to Enhance Printer Speed"
-permalink: kb/097/Q97749/
+permalink: /kb/097/Q97749/
 ---
 
 ## Q97749: Adjusting PRINTSTA Parameters to Enhance Printer Speed

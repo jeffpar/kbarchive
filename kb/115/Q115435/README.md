@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115435: DriveSpace Help Refers to MS-DOS 6 Backup and &quot;User's Guide&quot;"
-permalink: kb/115/Q115435/
+permalink: /kb/115/Q115435/
 ---
 
 ## Q115435: DriveSpace Help Refers to MS-DOS 6 Backup and &quot;User's Guide&quot;

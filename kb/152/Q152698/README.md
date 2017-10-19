@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152698: Paul Bunyan: The Story of Paul Bunyan"
-permalink: kb/152/Q152698/
+permalink: /kb/152/Q152698/
 ---
 
 ## Q152698: Paul Bunyan: The Story of Paul Bunyan

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259881: XADM: EventID 2078 Occurs When Client Has Multiple Transport"
-permalink: kb/259/Q259881/
+permalink: /kb/259/Q259881/
 ---
 
 ## Q259881: XADM: EventID 2078 Occurs When Client Has Multiple Transport

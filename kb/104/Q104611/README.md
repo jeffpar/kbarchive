@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104611: Arcade: Description of Asteroids"
-permalink: kb/104/Q104611/
+permalink: /kb/104/Q104611/
 ---
 
 ## Q104611: Arcade: Description of Asteroids

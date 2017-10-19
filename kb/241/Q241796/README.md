@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241796: Local Groups and Microsoft Cluster Server"
-permalink: kb/241/Q241796/
+permalink: /kb/241/Q241796/
 ---
 
 ## Q241796: Local Groups and Microsoft Cluster Server

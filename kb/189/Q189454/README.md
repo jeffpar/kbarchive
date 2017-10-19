@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189454: MSN 2.52: Contents of the Uninstall.txt File"
-permalink: kb/189/Q189454/
+permalink: /kb/189/Q189454/
 ---
 
 ## Q189454: MSN 2.52: Contents of the Uninstall.txt File

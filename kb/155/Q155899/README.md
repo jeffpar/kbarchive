@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155899: WD97: Merged Document Based on Elegant Template Includes Header"
-permalink: kb/155/Q155899/
+permalink: /kb/155/Q155899/
 ---
 
 ## Q155899: WD97: Merged Document Based on Elegant Template Includes Header

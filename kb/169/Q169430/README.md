@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169430: Arcade: Updated Wavemix.ini File For Microsoft Arcade"
-permalink: kb/169/Q169430/
+permalink: /kb/169/Q169430/
 ---
 
 ## Q169430: Arcade: Updated Wavemix.ini File For Microsoft Arcade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156247: Hellbender: How to Play a One Player Network Game"
-permalink: kb/156/Q156247/
+permalink: /kb/156/Q156247/
 ---
 
 ## Q156247: Hellbender: How to Play a One Player Network Game

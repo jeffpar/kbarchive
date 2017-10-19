@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121883: Golf: Rotate View on Recorded Player May Cause Hang"
-permalink: kb/121/Q121883/
+permalink: /kb/121/Q121883/
 ---
 
 ## Q121883: Golf: Rotate View on Recorded Player May Cause Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244846: MAP Command in Nwscript.exe Does Not Work with Upper ASCII Codes"
-permalink: kb/244/Q244846/
+permalink: /kb/244/Q244846/
 ---
 
 ## Q244846: MAP Command in Nwscript.exe Does Not Work with Upper ASCII Codes

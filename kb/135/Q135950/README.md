@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135950: Not All MS Plus! Files Installed in Specified Custom Folder"
-permalink: kb/135/Q135950/
+permalink: /kb/135/Q135950/
 ---
 
 ## Q135950: Not All MS Plus! Files Installed in Specified Custom Folder

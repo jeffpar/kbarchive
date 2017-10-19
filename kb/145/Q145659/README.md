@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145659: Queries of Static WINS Entries Fail With NetBIOS Scopes"
-permalink: kb/145/Q145659/
+permalink: /kb/145/Q145659/
 ---
 
 ## Q145659: Queries of Static WINS Entries Fail With NetBIOS Scopes

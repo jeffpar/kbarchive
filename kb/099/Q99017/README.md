@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99017: Characters Do Not Wrap to Next Line in MS-DOS Editor or QBasic"
-permalink: kb/099/Q99017/
+permalink: /kb/099/Q99017/
 ---
 
 ## Q99017: Characters Do Not Wrap to Next Line in MS-DOS Editor or QBasic

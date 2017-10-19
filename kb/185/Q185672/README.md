@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185672: HOWTO: How to Initialize Child Controls in a Derived CDialogBar"
-permalink: kb/185/Q185672/
+permalink: /kb/185/Q185672/
 ---
 
 ## Q185672: HOWTO: How to Initialize Child Controls in a Derived CDialogBar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156513: INFO: Which Visual C++ Files to Add to Source-Code Control"
-permalink: kb/156/Q156513/
+permalink: /kb/156/Q156513/
 ---
 
 ## Q156513: INFO: Which Visual C++ Files to Add to Source-Code Control

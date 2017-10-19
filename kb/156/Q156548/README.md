@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156548: HOWTO: Use the Object Property to Reference Methods/Properties"
-permalink: kb/156/Q156548/
+permalink: /kb/156/Q156548/
 ---
 
 ## Q156548: HOWTO: Use the Object Property to Reference Methods/Properties

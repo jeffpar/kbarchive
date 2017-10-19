@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230337: MCSE Readiness Review - Exam 70-058: Networking Essentials Comme"
-permalink: kb/230/Q230337/
+permalink: /kb/230/Q230337/
 ---
 
 ## Q230337: MCSE Readiness Review - Exam 70-058: Networking Essentials Comme

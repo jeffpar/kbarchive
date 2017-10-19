@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161531: Wine Guide 2.0: Blank Box on Printout When Printing Contents"
-permalink: kb/161/Q161531/
+permalink: /kb/161/Q161531/
 ---
 
 ## Q161531: Wine Guide 2.0: Blank Box on Printout When Printing Contents

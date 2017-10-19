@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30412: FIX: Omitting Range Keyword After LABEL Directive Causes Error"
-permalink: kb/030/Q30412/
+permalink: /kb/030/Q30412/
 ---
 
 ## Q30412: FIX: Omitting Range Keyword After LABEL Directive Causes Error

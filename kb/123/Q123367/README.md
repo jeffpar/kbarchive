@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123367: WFWG 3.11 Hangs with the Intel EtherExpress Pro"
-permalink: kb/123/Q123367/
+permalink: /kb/123/Q123367/
 ---
 
 ## Q123367: WFWG 3.11 Hangs with the Intel EtherExpress Pro

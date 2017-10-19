@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110390: Automatically Starting SNA Server Through Control Panel"
-permalink: kb/110/Q110390/
+permalink: /kb/110/Q110390/
 ---
 
 ## Q110390: Automatically Starting SNA Server Through Control Panel

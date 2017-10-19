@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195405: FIX: Corrupt Record Added in Grid Using View with Default Value"
-permalink: kb/195/Q195405/
+permalink: /kb/195/Q195405/
 ---
 
 ## Q195405: FIX: Corrupt Record Added in Grid Using View with Default Value

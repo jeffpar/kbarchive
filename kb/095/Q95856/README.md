@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95856: Removing MS-DOS 6 Upgrade After Compressing a Drive"
-permalink: kb/095/Q95856/
+permalink: /kb/095/Q95856/
 ---
 
 ## Q95856: Removing MS-DOS 6 Upgrade After Compressing a Drive

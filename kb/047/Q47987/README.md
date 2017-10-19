@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47987: _bios_serialcom Sends and Receives Single Character Data"
-permalink: kb/047/Q47987/
+permalink: /kb/047/Q47987/
 ---
 
 ## Q47987: _bios_serialcom Sends and Receives Single Character Data

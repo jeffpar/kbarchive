@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140678: How Windows 95 Manages the Size of the Disk Cache"
-permalink: kb/140/Q140678/
+permalink: /kb/140/Q140678/
 ---
 
 ## Q140678: How Windows 95 Manages the Size of the Disk Cache

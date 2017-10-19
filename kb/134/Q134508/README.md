@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134508: External MIDI Devices Do Not Work with Sound Blaster Pro"
-permalink: kb/134/Q134508/
+permalink: /kb/134/Q134508/
 ---
 
 ## Q134508: External MIDI Devices Do Not Work with Sound Blaster Pro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146706: XCLN: Setup Doesn't Remove Icons in Non-Default Group"
-permalink: kb/146/Q146706/
+permalink: /kb/146/Q146706/
 ---
 
 ## Q146706: XCLN: Setup Doesn't Remove Icons in Non-Default Group

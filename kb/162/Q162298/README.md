@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162298: PRB: &quot;Multi Use&quot; Cannot be Selected Until .exe is Created"
-permalink: kb/162/Q162298/
+permalink: /kb/162/Q162298/
 ---
 
 ## Q162298: PRB: &quot;Multi Use&quot; Cannot be Selected Until .exe is Created

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72855: Automated Test Facilities and Microsoft Windows"
-permalink: kb/072/Q72855/
+permalink: /kb/072/Q72855/
 ---
 
 ## Q72855: Automated Test Facilities and Microsoft Windows

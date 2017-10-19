@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138254: Memory Leak in SQL Server 6.0 Affects SMS"
-permalink: kb/138/Q138254/
+permalink: /kb/138/Q138254/
 ---
 
 ## Q138254: Memory Leak in SQL Server 6.0 Affects SMS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175061: OS/2 Clients Hang Connecting to Windows 95 NWServer"
-permalink: kb/175/Q175061/
+permalink: /kb/175/Q175061/
 ---
 
 ## Q175061: OS/2 Clients Hang Connecting to Windows 95 NWServer

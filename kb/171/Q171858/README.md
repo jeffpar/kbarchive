@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171858: WD97: Receive &quot;The Specified Path Is Invalid&quot; Saving HTML File"
-permalink: kb/171/Q171858/
+permalink: /kb/171/Q171858/
 ---
 
 ## Q171858: WD97: Receive &quot;The Specified Path Is Invalid&quot; Saving HTML File

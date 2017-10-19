@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174883: DOC: ExitWindows Function Declaration Incorrect in API Viewer"
-permalink: kb/174/Q174883/
+permalink: /kb/174/Q174883/
 ---
 
 ## Q174883: DOC: ExitWindows Function Declaration Incorrect in API Viewer

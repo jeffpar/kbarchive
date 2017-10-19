@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179325: FS98: Computer Hangs When You Click Time &amp; Season"
-permalink: kb/179/Q179325/
+permalink: /kb/179/Q179325/
 ---
 
 ## Q179325: FS98: Computer Hangs When You Click Time &amp; Season

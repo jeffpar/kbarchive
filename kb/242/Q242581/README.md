@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242581: Y2K Analyzer Tool Does Not Recognize Schedule+ 7.0a"
-permalink: kb/242/Q242581/
+permalink: /kb/242/Q242581/
 ---
 
 ## Q242581: Y2K Analyzer Tool Does Not Recognize Schedule+ 7.0a

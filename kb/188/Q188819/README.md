@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188819: XFOR: OV/VM Connector Returns Different NDRs to PROFS Sender"
-permalink: kb/188/Q188819/
+permalink: /kb/188/Q188819/
 ---
 
 ## Q188819: XFOR: OV/VM Connector Returns Different NDRs to PROFS Sender

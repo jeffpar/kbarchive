@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123160: FIX: Conditional Breakpoint Doesn't Stop in Recursive Function"
-permalink: kb/123/Q123160/
+permalink: /kb/123/Q123160/
 ---
 
 ## Q123160: FIX: Conditional Breakpoint Doesn't Stop in Recursive Function

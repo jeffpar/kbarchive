@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122540: FIX: 'char &#42;' Passed to 'const char &#42; &amp;' Violates Type Safety"
-permalink: kb/122/Q122540/
+permalink: /kb/122/Q122540/
 ---
 
 ## Q122540: FIX: 'char &#42;' Passed to 'const char &#42; &amp;' Violates Type Safety

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257631: FIX: Event Monitoring Stops When Expression Service Is Started"
-permalink: kb/257/Q257631/
+permalink: /kb/257/Q257631/
 ---
 
 ## Q257631: FIX: Event Monitoring Stops When Expression Service Is Started

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175739: XCON: Failure Sending to Mailboxes in Nested Distribution Lists"
-permalink: kb/175/Q175739/
+permalink: /kb/175/Q175739/
 ---
 
 ## Q175739: XCON: Failure Sending to Mailboxes in Nested Distribution Lists

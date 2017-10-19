@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q86098: PC Win: MSMAIL.INI Entries in [MS Proofing Tools]"
-permalink: kb/086/Q86098/
+title: "Q86098: PC Win: MSMAIL.INI Entries in &#91;MS Proofing Tools&#93;"
+permalink: /kb/086/Q86098/
 ---
 
-## Q86098: PC Win: MSMAIL.INI Entries in [MS Proofing Tools]
+## Q86098: PC Win: MSMAIL.INI Entries in &#91;MS Proofing Tools&#93;
 
 	Article: Q86098
 	Product(s): Microsoft Mail For PC Networks

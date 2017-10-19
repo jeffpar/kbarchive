@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259910: How to Use Session Request Types to Control Access to TN3270"
-permalink: kb/259/Q259910/
+permalink: /kb/259/Q259910/
 ---
 
 ## Q259910: How to Use Session Request Types to Control Access to TN3270

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268791: SMS: How Status MIF Produced by ISMIF32.exe Is Processed in SMS"
-permalink: kb/268/Q268791/
+permalink: /kb/268/Q268791/
 ---
 
 ## Q268791: SMS: How Status MIF Produced by ISMIF32.exe Is Processed in SMS

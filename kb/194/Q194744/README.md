@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194744: Netscape Navigator Stops Responding Over SSL Connection"
-permalink: kb/194/Q194744/
+permalink: /kb/194/Q194744/
 ---
 
 ## Q194744: Netscape Navigator Stops Responding Over SSL Connection

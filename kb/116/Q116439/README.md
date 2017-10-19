@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116439: BUG: NMAKE Gives Incorrect Line Number for Include File Error"
-permalink: kb/116/Q116439/
+permalink: /kb/116/Q116439/
 ---
 
 ## Q116439: BUG: NMAKE Gives Incorrect Line Number for Include File Error

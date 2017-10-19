@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90354: Cinemania: Filters Display Four Stars Instead of Five"
-permalink: kb/090/Q90354/
+permalink: /kb/090/Q90354/
 ---
 
 ## Q90354: Cinemania: Filters Display Four Stars Instead of Five

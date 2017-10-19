@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150249: 3D Movie Maker: CD-ROM Drive Error Messages During Setup"
-permalink: kb/150/Q150249/
+permalink: /kb/150/Q150249/
 ---
 
 ## Q150249: 3D Movie Maker: CD-ROM Drive Error Messages During Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146371: XCLN: Expired Passwords, Windows 3.x Client, and ShivaRemote"
-permalink: kb/146/Q146371/
+permalink: /kb/146/Q146371/
 ---
 
 ## Q146371: XCLN: Expired Passwords, Windows 3.x Client, and ShivaRemote

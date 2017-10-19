@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142193: HOWTO: Use OLE Automation to Add Data to Excel Sheet"
-permalink: kb/142/Q142193/
+permalink: /kb/142/Q142193/
 ---
 
 ## Q142193: HOWTO: Use OLE Automation to Add Data to Excel Sheet

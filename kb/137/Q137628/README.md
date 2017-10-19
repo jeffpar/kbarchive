@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137628: PRB:Visual FoxPro App's .EXE Quits &amp; Returns to Command Window"
-permalink: kb/137/Q137628/
+permalink: /kb/137/Q137628/
 ---
 
 ## Q137628: PRB:Visual FoxPro App's .EXE Quits &amp; Returns to Command Window

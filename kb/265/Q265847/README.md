@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265847: Err Msg: The Page Cannot Be Displayed . . ."
-permalink: kb/265/Q265847/
+permalink: /kb/265/Q265847/
 ---
 
 ## Q265847: Err Msg: The Page Cannot Be Displayed . . .

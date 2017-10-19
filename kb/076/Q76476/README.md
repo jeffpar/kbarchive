@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76476: General Information Regarding Dynamic-Link Libraries"
-permalink: kb/076/Q76476/
+permalink: /kb/076/Q76476/
 ---
 
 ## Q76476: General Information Regarding Dynamic-Link Libraries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67012: Windows Err Msg: Warning! Overwriting an Old Copy..."
-permalink: kb/067/Q67012/
+permalink: /kb/067/Q67012/
 ---
 
 ## Q67012: Windows Err Msg: Warning! Overwriting an Old Copy...

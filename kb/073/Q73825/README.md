@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73825: Windows: MS-DOS-Based Applications Require Valid Video Grabber"
-permalink: kb/073/Q73825/
+permalink: /kb/073/Q73825/
 ---
 
 ## Q73825: Windows: MS-DOS-Based Applications Require Valid Video Grabber

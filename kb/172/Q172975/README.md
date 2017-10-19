@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172975: Cannot Disconnect Mapped Network Drives"
-permalink: kb/172/Q172975/
+permalink: /kb/172/Q172975/
 ---
 
 ## Q172975: Cannot Disconnect Mapped Network Drives

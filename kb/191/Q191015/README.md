@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191015: Dirsync Administrator Does Not Receive Dirsync Messages"
-permalink: kb/191/Q191015/
+permalink: /kb/191/Q191015/
 ---
 
 ## Q191015: Dirsync Administrator Does Not Receive Dirsync Messages

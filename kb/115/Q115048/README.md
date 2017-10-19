@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115048: PPT: Color of On-Screen Show Drawing Feature"
-permalink: kb/115/Q115048/
+permalink: /kb/115/Q115048/
 ---
 
 ## Q115048: PPT: Color of On-Screen Show Drawing Feature

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301484: Command Prompt Returns to Prompt Without Running App or CMD"
-permalink: kb/301/Q301484/
+permalink: /kb/301/Q301484/
 ---
 
 ## Q301484: Command Prompt Returns to Prompt Without Running App or CMD

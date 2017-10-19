@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196960: WD97: Cannot Confirm Conversion Method Opening Non-Word Document"
-permalink: kb/196/Q196960/
+permalink: /kb/196/Q196960/
 ---
 
 ## Q196960: WD97: Cannot Confirm Conversion Method Opening Non-Word Document

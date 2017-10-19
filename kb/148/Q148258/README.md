@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148258: Bookshelf 1993: Minimum System Requirements"
-permalink: kb/148/Q148258/
+permalink: /kb/148/Q148258/
 ---
 
 ## Q148258: Bookshelf 1993: Minimum System Requirements

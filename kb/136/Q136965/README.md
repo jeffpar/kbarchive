@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136965: SETUP.TXT Incorrectly States to Run UPDATE.EXE on Windows NT 3.5"
-permalink: kb/136/Q136965/
+permalink: /kb/136/Q136965/
 ---
 
 ## Q136965: SETUP.TXT Incorrectly States to Run UPDATE.EXE on Windows NT 3.5

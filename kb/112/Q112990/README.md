@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112990: Zoom F9624 Fax Modem Requires ROM Revision 1.15 or Later"
-permalink: kb/112/Q112990/
+permalink: /kb/112/Q112990/
 ---
 
 ## Q112990: Zoom F9624 Fax Modem Requires ROM Revision 1.15 or Later

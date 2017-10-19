@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148810: Scenes 2.0: No Orca or Green Sea Turtle Picture"
-permalink: kb/148/Q148810/
+permalink: /kb/148/Q148810/
 ---
 
 ## Q148810: Scenes 2.0: No Orca or Green Sea Turtle Picture

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130295: Problems Using Saved Colors with 256-Color Bitmap"
-permalink: kb/130/Q130295/
+permalink: /kb/130/Q130295/
 ---
 
 ## Q130295: Problems Using Saved Colors with 256-Color Bitmap

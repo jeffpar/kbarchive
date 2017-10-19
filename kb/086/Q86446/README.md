@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86446: Equivalent Values for Genigraphics Colors: RGB"
-permalink: kb/086/Q86446/
+permalink: /kb/086/Q86446/
 ---
 
 ## Q86446: Equivalent Values for Genigraphics Colors: RGB

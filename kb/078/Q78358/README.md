@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78358: Logon Scripts and Environment Space"
-permalink: kb/078/Q78358/
+permalink: /kb/078/Q78358/
 ---
 
 ## Q78358: Logon Scripts and Environment Space

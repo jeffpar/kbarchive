@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84170: Re-Creating the StartUp Group in Windows 3.1"
-permalink: kb/084/Q84170/
+permalink: /kb/084/Q84170/
 ---
 
 ## Q84170: Re-Creating the StartUp Group in Windows 3.1

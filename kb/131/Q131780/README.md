@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131780: Using the /E Option With CACLS.EXE"
-permalink: kb/131/Q131780/
+permalink: /kb/131/Q131780/
 ---
 
 ## Q131780: Using the /E Option With CACLS.EXE

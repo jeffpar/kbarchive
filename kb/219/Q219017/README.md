@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219017: Win95/98 Server Tools Do Not Show Complete Event ID Description"
-permalink: kb/219/Q219017/
+permalink: /kb/219/Q219017/
 ---
 
 ## Q219017: Win95/98 Server Tools Do Not Show Complete Event ID Description

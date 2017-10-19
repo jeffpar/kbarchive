@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110426: SMC 661-666 Floppy Controller, Errors Reading Disks"
-permalink: kb/110/Q110426/
+permalink: /kb/110/Q110426/
 ---
 
 ## Q110426: SMC 661-666 Floppy Controller, Errors Reading Disks

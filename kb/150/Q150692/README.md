@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150692: Mac Bookshelf 96-97: Text Pasted to Scrapbook Does Not Display"
-permalink: kb/150/Q150692/
+permalink: /kb/150/Q150692/
 ---
 
 ## Q150692: Mac Bookshelf 96-97: Text Pasted to Scrapbook Does Not Display

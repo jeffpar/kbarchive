@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247620: XCLN: Clients Cannot Download OAB After Exchange Server Upgrade"
-permalink: kb/247/Q247620/
+permalink: /kb/247/Q247620/
 ---
 
 ## Q247620: XCLN: Clients Cannot Download OAB After Exchange Server Upgrade

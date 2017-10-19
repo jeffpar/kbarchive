@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252459: Retrieve Properties of User Objects with ADSI and ADO"
-permalink: kb/252/Q252459/
+permalink: /kb/252/Q252459/
 ---
 
 ## Q252459: Retrieve Properties of User Objects with ADSI and ADO

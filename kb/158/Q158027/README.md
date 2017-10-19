@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158027: Contents of Hellbender Enhancement Codes"
-permalink: kb/158/Q158027/
+permalink: /kb/158/Q158027/
 ---
 
 ## Q158027: Contents of Hellbender Enhancement Codes

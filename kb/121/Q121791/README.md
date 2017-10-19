@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121791: Settings for 3C509 Not Detected Correctly"
-permalink: kb/121/Q121791/
+permalink: /kb/121/Q121791/
 ---
 
 ## Q121791: Settings for 3C509 Not Detected Correctly

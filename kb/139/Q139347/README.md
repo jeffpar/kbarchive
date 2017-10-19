@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139347: How to Delete a Control from a Column in a Grid"
-permalink: kb/139/Q139347/
+permalink: /kb/139/Q139347/
 ---
 
 ## Q139347: How to Delete a Control from a Column in a Grid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139672: FIX: Initialization Var Shadow_SetTime Set to Invalid Value"
-permalink: kb/139/Q139672/
+permalink: /kb/139/Q139672/
 ---
 
 ## Q139672: FIX: Initialization Var Shadow_SetTime Set to Invalid Value

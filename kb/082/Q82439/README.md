@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82439: Small TrueType Fonts"
-permalink: kb/082/Q82439/
+permalink: /kb/082/Q82439/
 ---
 
 ## Q82439: Small TrueType Fonts

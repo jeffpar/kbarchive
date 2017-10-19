@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321428: How to Change the Server Role with Host Integration Server 2000"
-permalink: kb/321/Q321428/
+permalink: /kb/321/Q321428/
 ---
 
 ## Q321428: How to Change the Server Role with Host Integration Server 2000

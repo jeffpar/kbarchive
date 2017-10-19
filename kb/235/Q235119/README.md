@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235119: PRB: No Version Info if COM DLL/EXE Built Under Windows Me/98/95"
-permalink: kb/235/Q235119/
+permalink: /kb/235/Q235119/
 ---
 
 ## Q235119: PRB: No Version Info if COM DLL/EXE Built Under Windows Me/98/95

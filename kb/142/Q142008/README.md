@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142008: FPNW Options Are Not Available Under User Manager"
-permalink: kb/142/Q142008/
+permalink: /kb/142/Q142008/
 ---
 
 ## Q142008: FPNW Options Are Not Available Under User Manager

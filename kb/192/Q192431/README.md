@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192431: No Prompt to Save File After Deleting Empty Table Cells"
-permalink: kb/192/Q192431/
+permalink: /kb/192/Q192431/
 ---
 
 ## Q192431: No Prompt to Save File After Deleting Empty Table Cells

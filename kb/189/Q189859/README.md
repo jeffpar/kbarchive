@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189859: WD97: Bullets, Numbers Lost After Saving As WordPerfect 5.x"
-permalink: kb/189/Q189859/
+permalink: /kb/189/Q189859/
 ---
 
 ## Q189859: WD97: Bullets, Numbers Lost After Saving As WordPerfect 5.x

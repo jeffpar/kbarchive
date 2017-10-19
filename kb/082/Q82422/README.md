@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82422: No Vector Fonts for HP DeskJet Plus at 300 Dpi"
-permalink: kb/082/Q82422/
+permalink: /kb/082/Q82422/
 ---
 
 ## Q82422: No Vector Fonts for HP DeskJet Plus at 300 Dpi

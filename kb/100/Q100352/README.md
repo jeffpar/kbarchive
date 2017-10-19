@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100352: SMTP: 550 Huh? Extended HELO (EHLO) Not Supported"
-permalink: kb/100/Q100352/
+permalink: /kb/100/Q100352/
 ---
 
 ## Q100352: SMTP: 550 Huh? Extended HELO (EHLO) Not Supported

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73728: Switches Available with the MS-DOS 5 Upgrade Setup Program"
-permalink: kb/073/Q73728/
+permalink: /kb/073/Q73728/
 ---
 
 ## Q73728: Switches Available with the MS-DOS 5 Upgrade Setup Program

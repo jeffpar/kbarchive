@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325103: FIX: COMTI Perfmon Counters Do Not Collect Data by Using MOM"
-permalink: kb/325/Q325103/
+permalink: /kb/325/Q325103/
 ---
 
 ## Q325103: FIX: COMTI Perfmon Counters Do Not Collect Data by Using MOM

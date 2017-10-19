@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133275: HOWTO: Print from a Class Other Than CView"
-permalink: kb/133/Q133275/
+permalink: /kb/133/Q133275/
 ---
 
 ## Q133275: HOWTO: Print from a Class Other Than CView

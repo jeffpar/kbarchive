@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158735: SMS: Remote Control Display Problems with Trident Video Card"
-permalink: kb/158/Q158735/
+permalink: /kb/158/Q158735/
 ---
 
 ## Q158735: SMS: Remote Control Display Problems with Trident Video Card

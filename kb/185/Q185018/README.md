@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185018: XADM: How To Export Public Folder Directory Data To A CSV File"
-permalink: kb/185/Q185018/
+permalink: /kb/185/Q185018/
 ---
 
 ## Q185018: XADM: How To Export Public Folder Directory Data To A CSV File

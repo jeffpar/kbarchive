@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158987: 32-bit NetWare Client for Windows NT Locks Services Database"
-permalink: kb/158/Q158987/
+permalink: /kb/158/Q158987/
 ---
 
 ## Q158987: 32-bit NetWare Client for Windows NT Locks Services Database

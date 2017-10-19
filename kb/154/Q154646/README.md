@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154646: Setup Stops with Blank Screen During Final Boot"
-permalink: kb/154/Q154646/
+permalink: /kb/154/Q154646/
 ---
 
 ## Q154646: Setup Stops with Blank Screen During Final Boot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236073: Files and Folders Reappear After Deletion with Roaming Profiles"
-permalink: kb/236/Q236073/
+permalink: /kb/236/Q236073/
 ---
 
 ## Q236073: Files and Folders Reappear After Deletion with Roaming Profiles

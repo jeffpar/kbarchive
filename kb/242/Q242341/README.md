@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242341: XWEB: Access Violation After Saving Changes to Appointment"
-permalink: kb/242/Q242341/
+permalink: /kb/242/Q242341/
 ---
 
 ## Q242341: XWEB: Access Violation After Saving Changes to Appointment

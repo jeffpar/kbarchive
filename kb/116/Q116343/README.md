@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116343: Limited AppleTalk Stack Included in Windows NT Workstation"
-permalink: kb/116/Q116343/
+permalink: /kb/116/Q116343/
 ---
 
 ## Q116343: Limited AppleTalk Stack Included in Windows NT Workstation

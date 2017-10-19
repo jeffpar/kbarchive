@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130319: PC DOS Win: Convert.exe Doesn't Work on Windows NT 3.5 Computers"
-permalink: kb/130/Q130319/
+permalink: /kb/130/Q130319/
 ---
 
 ## Q130319: PC DOS Win: Convert.exe Doesn't Work on Windows NT 3.5 Computers

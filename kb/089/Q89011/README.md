@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89011: PageMaker Err Msg: Waiting for the Spooler to..."
-permalink: kb/089/Q89011/
+permalink: /kb/089/Q89011/
 ---
 
 ## Q89011: PageMaker Err Msg: Waiting for the Spooler to...

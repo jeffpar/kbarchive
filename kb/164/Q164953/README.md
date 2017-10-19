@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164953: Visual C++ Alpha Edition 4.2B C2.EXE 10.20.7032"
-permalink: kb/164/Q164953/
+permalink: /kb/164/Q164953/
 ---
 
 ## Q164953: Visual C++ Alpha Edition 4.2B C2.EXE 10.20.7032

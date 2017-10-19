@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99562: INFO: Switching Views in a Single Document Interface Program"
-permalink: kb/099/Q99562/
+permalink: /kb/099/Q99562/
 ---
 
 ## Q99562: INFO: Switching Views in a Single Document Interface Program

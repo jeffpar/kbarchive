@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98407: How DoubleSpace Uses Sector Allocation"
-permalink: kb/098/Q98407/
+permalink: /kb/098/Q98407/
 ---
 
 ## Q98407: How DoubleSpace Uses Sector Allocation

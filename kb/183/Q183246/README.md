@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183246: INFO: Printing Features Not Available in VBCE"
-permalink: kb/183/Q183246/
+permalink: /kb/183/Q183246/
 ---
 
 ## Q183246: INFO: Printing Features Not Available in VBCE

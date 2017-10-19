@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177662: Roaming Profile Not Working When Using Services With Same Acct"
-permalink: kb/177/Q177662/
+permalink: /kb/177/Q177662/
 ---
 
 ## Q177662: Roaming Profile Not Working When Using Services With Same Acct

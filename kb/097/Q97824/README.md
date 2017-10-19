@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97824: Embedding Sound Files in Excel 3.x"
-permalink: kb/097/Q97824/
+permalink: /kb/097/Q97824/
 ---
 
 ## Q97824: Embedding Sound Files in Excel 3.x

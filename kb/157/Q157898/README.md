@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157898: INFO: Setup Wizard Allows Commas in Filenames in Setup.lst"
-permalink: kb/157/Q157898/
+permalink: /kb/157/Q157898/
 ---
 
 ## Q157898: INFO: Setup Wizard Allows Commas in Filenames in Setup.lst

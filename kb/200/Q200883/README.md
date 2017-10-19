@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200883: XWEB: Netscape OWA Client Displays Incorrect Language Text"
-permalink: kb/200/Q200883/
+permalink: /kb/200/Q200883/
 ---
 
 ## Q200883: XWEB: Netscape OWA Client Displays Incorrect Language Text

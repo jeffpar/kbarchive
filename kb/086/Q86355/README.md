@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86355: SETUP.TXT: Microsoft Windows &amp; MS-DOS 5 Upgrade"
-permalink: kb/086/Q86355/
+permalink: /kb/086/Q86355/
 ---
 
 ## Q86355: SETUP.TXT: Microsoft Windows &amp; MS-DOS 5 Upgrade

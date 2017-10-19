@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166432: Chinese Code Converter Saves Incorrect Code Page Format"
-permalink: kb/166/Q166432/
+permalink: /kb/166/Q166432/
 ---
 
 ## Q166432: Chinese Code Converter Saves Incorrect Code Page Format

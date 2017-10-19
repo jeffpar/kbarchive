@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115171: WD97: Merge Data Source Fails to Attach, Merge, or Allow Check"
-permalink: kb/115/Q115171/
+permalink: /kb/115/Q115171/
 ---
 
 ## Q115171: WD97: Merge Data Source Fails to Attach, Merge, or Allow Check

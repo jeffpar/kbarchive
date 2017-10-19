@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135105: MSN Err Msg: You Cannot Select Any Names Now..."
-permalink: kb/135/Q135105/
+permalink: /kb/135/Q135105/
 ---
 
 ## Q135105: MSN Err Msg: You Cannot Select Any Names Now...

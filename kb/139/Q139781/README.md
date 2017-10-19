@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139781: PRB: Converted Trans.scx 2.x Sample Must Be Modified to Work"
-permalink: kb/139/Q139781/
+permalink: /kb/139/Q139781/
 ---
 
 ## Q139781: PRB: Converted Trans.scx 2.x Sample Must Be Modified to Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198828: XFOR: Embedded OLE not Supported in cc:Mail Archive Importer"
-permalink: kb/198/Q198828/
+permalink: /kb/198/Q198828/
 ---
 
 ## Q198828: XFOR: Embedded OLE not Supported in cc:Mail Archive Importer

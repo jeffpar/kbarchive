@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224293: Cluster Admin Extension Can't Remotely Administer IIS in Cluster"
-permalink: kb/224/Q224293/
+permalink: /kb/224/Q224293/
 ---
 
 ## Q224293: Cluster Admin Extension Can't Remotely Administer IIS in Cluster

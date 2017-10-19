@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45235: Mac DOS: Notifier Alert Window and Graphics Applications"
-permalink: kb/045/Q45235/
+permalink: /kb/045/Q45235/
 ---
 
 ## Q45235: Mac DOS: Notifier Alert Window and Graphics Applications

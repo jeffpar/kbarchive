@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115179: Avoid Running Software Carousel Task Swapper and Setup/Defrag"
-permalink: kb/115/Q115179/
+permalink: /kb/115/Q115179/
 ---
 
 ## Q115179: Avoid Running Software Carousel Task Swapper and Setup/Defrag

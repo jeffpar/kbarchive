@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257318: SMS: Advertisement .ofr Files Are Not Deleted on Secondary Site"
-permalink: kb/257/Q257318/
+permalink: /kb/257/Q257318/
 ---
 
 ## Q257318: SMS: Advertisement .ofr Files Are Not Deleted on Secondary Site

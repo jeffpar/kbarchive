@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175238: Trip Planner 98: Program Hangs When Canceling Print Job"
-permalink: kb/175/Q175238/
+permalink: /kb/175/Q175238/
 ---
 
 ## Q175238: Trip Planner 98: Program Hangs When Canceling Print Job

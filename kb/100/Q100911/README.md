@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100911: MS-DOS Err Msg with DoubleSpace: Insufficient Disk Space"
-permalink: kb/100/Q100911/
+permalink: /kb/100/Q100911/
 ---
 
 ## Q100911: MS-DOS Err Msg with DoubleSpace: Insufficient Disk Space

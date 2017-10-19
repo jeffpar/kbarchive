@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68851: Creating Windows PCX Images From Harvard Graphics"
-permalink: kb/068/Q68851/
+permalink: /kb/068/Q68851/
 ---
 
 ## Q68851: Creating Windows PCX Images From Harvard Graphics

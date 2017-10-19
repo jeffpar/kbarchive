@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83560: Lotus 1-2-3 for Windows 1.0 Does Not Display TrueType Fonts"
-permalink: kb/083/Q83560/
+permalink: /kb/083/Q83560/
 ---
 
 ## Q83560: Lotus 1-2-3 for Windows 1.0 Does Not Display TrueType Fonts

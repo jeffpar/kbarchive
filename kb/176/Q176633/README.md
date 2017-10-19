@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176633: PRB: Axis Text on MSChart Control Appears Illegible"
-permalink: kb/176/Q176633/
+permalink: /kb/176/Q176633/
 ---
 
 ## Q176633: PRB: Axis Text on MSChart Control Appears Illegible

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210842: Err Msg: HTTP/1.1 New Application Failed"
-permalink: kb/210/Q210842/
+permalink: /kb/210/Q210842/
 ---
 
 ## Q210842: Err Msg: HTTP/1.1 New Application Failed

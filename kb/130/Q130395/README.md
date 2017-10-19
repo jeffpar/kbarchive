@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130395: Cannot Access Shared Fax with WFW 3.11 or Windows 95"
-permalink: kb/130/Q130395/
+permalink: /kb/130/Q130395/
 ---
 
 ## Q130395: Cannot Access Shared Fax with WFW 3.11 or Windows 95

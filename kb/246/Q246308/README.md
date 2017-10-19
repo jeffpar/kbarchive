@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246308: Win32 Back Ups on Interix"
-permalink: kb/246/Q246308/
+permalink: /kb/246/Q246308/
 ---
 
 ## Q246308: Win32 Back Ups on Interix

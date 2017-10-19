@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196952: WD97: Word Could Not Re-Establish DDE Connection to MS Excel"
-permalink: kb/196/Q196952/
+permalink: /kb/196/Q196952/
 ---
 
 ## Q196952: WD97: Word Could Not Re-Establish DDE Connection to MS Excel

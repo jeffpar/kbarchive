@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248781: XADM: Mailbox Manager Installation Err Msg: Insufficient Drive.."
-permalink: kb/248/Q248781/
+permalink: /kb/248/Q248781/
 ---
 
 ## Q248781: XADM: Mailbox Manager Installation Err Msg: Insufficient Drive..

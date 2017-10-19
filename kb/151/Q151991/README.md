@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151991: FPNW Writes Incorrect Last Modified Date on Files From OS/2"
-permalink: kb/151/Q151991/
+permalink: /kb/151/Q151991/
 ---
 
 ## Q151991: FPNW Writes Incorrect Last Modified Date on Files From OS/2

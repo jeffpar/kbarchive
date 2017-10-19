@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128356: PC Mac: Err Msg: Cannot Perform Any Logging to Designated..."
-permalink: kb/128/Q128356/
+permalink: /kb/128/Q128356/
 ---
 
 ## Q128356: PC Mac: Err Msg: Cannot Perform Any Logging to Designated...

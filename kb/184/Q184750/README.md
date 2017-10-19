@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184750: Err Msg: Unable to Load the Remote Access Library..."
-permalink: kb/184/Q184750/
+permalink: /kb/184/Q184750/
 ---
 
 ## Q184750: Err Msg: Unable to Load the Remote Access Library...

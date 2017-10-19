@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277749: HOWTO: Set a Pushpin in MapPoint 2001 Using Automation"
-permalink: kb/277/Q277749/
+permalink: /kb/277/Q277749/
 ---
 
 ## Q277749: HOWTO: Set a Pushpin in MapPoint 2001 Using Automation

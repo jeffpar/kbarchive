@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138092: PRB: &quot;Alias Not Found&quot; When Verifying an Expression"
-permalink: kb/138/Q138092/
+permalink: /kb/138/Q138092/
 ---
 
 ## Q138092: PRB: &quot;Alias Not Found&quot; When Verifying an Expression

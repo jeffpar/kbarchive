@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96130: How DBLSPACE.BIN Determines If It Should Stay in Memory"
-permalink: kb/096/Q96130/
+permalink: /kb/096/Q96130/
 ---
 
 ## Q96130: How DBLSPACE.BIN Determines If It Should Stay in Memory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244766: MS Access 2000/VBA Fundamentals Comments and Corrections"
-permalink: kb/244/Q244766/
+permalink: /kb/244/Q244766/
 ---
 
 ## Q244766: MS Access 2000/VBA Fundamentals Comments and Corrections

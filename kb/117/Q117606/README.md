@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117606: MS-DOS 6.2 Directory Listings for the 3.5-Inch 720K Disk Set"
-permalink: kb/117/Q117606/
+permalink: /kb/117/Q117606/
 ---
 
 ## Q117606: MS-DOS 6.2 Directory Listings for the 3.5-Inch 720K Disk Set

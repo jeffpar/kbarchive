@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76682: Properly Using Dynamic-Link Libraries"
-permalink: kb/076/Q76682/
+permalink: /kb/076/Q76682/
 ---
 
 ## Q76682: Properly Using Dynamic-Link Libraries

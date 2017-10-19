@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246398: Help Screens Do Not Display in Compass"
-permalink: kb/246/Q246398/
+permalink: /kb/246/Q246398/
 ---
 
 ## Q246398: Help Screens Do Not Display in Compass

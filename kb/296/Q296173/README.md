@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296173: HOWTO: Use ADOX to Create OLE Object Field in an Access Database"
-permalink: kb/296/Q296173/
+permalink: /kb/296/Q296173/
 ---
 
 ## Q296173: HOWTO: Use ADOX to Create OLE Object Field in an Access Database

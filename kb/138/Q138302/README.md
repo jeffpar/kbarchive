@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138302: Deinstall of SMS on Macintosh Client Does Not Remove SMS Dir."
-permalink: kb/138/Q138302/
+permalink: /kb/138/Q138302/
 ---
 
 ## Q138302: Deinstall of SMS on Macintosh Client Does Not Remove SMS Dir.

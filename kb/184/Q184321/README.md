@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184321: Can't Connect to SSL-Enabled Site and/or Server Stops Responding"
-permalink: kb/184/Q184321/
+permalink: /kb/184/Q184321/
 ---
 
 ## Q184321: Can't Connect to SSL-Enabled Site and/or Server Stops Responding

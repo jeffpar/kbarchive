@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187146: DCOM Clients Cannot Create Objects"
-permalink: kb/187/Q187146/
+permalink: /kb/187/Q187146/
 ---
 
 ## Q187146: DCOM Clients Cannot Create Objects

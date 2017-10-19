@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246991: Event 4097 Occurs When an Invalid Printer Type Is Entered in HPT"
-permalink: kb/246/Q246991/
+permalink: /kb/246/Q246991/
 ---
 
 ## Q246991: Event 4097 Occurs When an Invalid Printer Type Is Entered in HPT

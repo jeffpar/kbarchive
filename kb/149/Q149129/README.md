@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149129: PRB: LOCKING Replaced with SHARE= in OPEN Statement"
-permalink: kb/149/Q149129/
+permalink: /kb/149/Q149129/
 ---
 
 ## Q149129: PRB: LOCKING Replaced with SHARE= in OPEN Statement

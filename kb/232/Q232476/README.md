@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232476: Terminal Server Connections and Logon Limited by MaxWorkItems"
-permalink: kb/232/Q232476/
+permalink: /kb/232/Q232476/
 ---
 
 ## Q232476: Terminal Server Connections and Logon Limited by MaxWorkItems

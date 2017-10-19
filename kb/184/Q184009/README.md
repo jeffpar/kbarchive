@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184009: Error Message: Unable to Save to Registry. Error Code 1243516."
-permalink: kb/184/Q184009/
+permalink: /kb/184/Q184009/
 ---
 
 ## Q184009: Error Message: Unable to Save to Registry. Error Code 1243516.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259145: Allegiance: Ship Stops Responding to Keyboard Controls"
-permalink: kb/259/Q259145/
+permalink: /kb/259/Q259145/
 ---
 
 ## Q259145: Allegiance: Ship Stops Responding to Keyboard Controls

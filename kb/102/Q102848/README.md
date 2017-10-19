@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102848: SYS0234 Error &quot;MoreData is Available&quot; with NetUserEnum()"
-permalink: kb/102/Q102848/
+permalink: /kb/102/Q102848/
 ---
 
 ## Q102848: SYS0234 Error &quot;MoreData is Available&quot; with NetUserEnum()

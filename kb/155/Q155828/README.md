@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155828: XFOR: How the IMC Dial-Up Can Retrieve Mail from an ISP"
-permalink: kb/155/Q155828/
+permalink: /kb/155/Q155828/
 ---
 
 ## Q155828: XFOR: How the IMC Dial-Up Can Retrieve Mail from an ISP

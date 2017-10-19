@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283169: Crimson Skies Error Message: Unable to Initialize Video"
-permalink: kb/283/Q283169/
+permalink: /kb/283/Q283169/
 ---
 
 ## Q283169: Crimson Skies Error Message: Unable to Initialize Video

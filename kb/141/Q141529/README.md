@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141529: HOWTO: Adding or Removing Pages from a PageFrame"
-permalink: kb/141/Q141529/
+permalink: /kb/141/Q141529/
 ---
 
 ## Q141529: HOWTO: Adding or Removing Pages from a PageFrame

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140495: INF: No Further Development of 16-bit ODBC Components"
-permalink: kb/140/Q140495/
+permalink: /kb/140/Q140495/
 ---
 
 ## Q140495: INF: No Further Development of 16-bit ODBC Components

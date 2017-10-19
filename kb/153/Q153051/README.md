@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153051: Jetpack.exe May Complete and Not Compress DHCP or WINS Database"
-permalink: kb/153/Q153051/
+permalink: /kb/153/Q153051/
 ---
 
 ## Q153051: Jetpack.exe May Complete and Not Compress DHCP or WINS Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170061: XCLN: Readme.txt for Msoutl32.dll"
-permalink: kb/170/Q170061/
+permalink: /kb/170/Q170061/
 ---
 
 ## Q170061: XCLN: Readme.txt for Msoutl32.dll

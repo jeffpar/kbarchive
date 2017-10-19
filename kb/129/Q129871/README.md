@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129871: PRB: &quot;Object not a Collection&quot; Trying to Read Array Element"
-permalink: kb/129/Q129871/
+permalink: /kb/129/Q129871/
 ---
 
 ## Q129871: PRB: &quot;Object not a Collection&quot; Trying to Read Array Element

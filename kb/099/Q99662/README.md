@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99662: PC WSPlus: Access Privileges Are Unavailable When Offline"
-permalink: kb/099/Q99662/
+permalink: /kb/099/Q99662/
 ---
 
 ## Q99662: PC WSPlus: Access Privileges Are Unavailable When Offline

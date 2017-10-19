@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254435: EST2001: &quot;Error 1316&quot; Message When You Attempt to Reinstall"
-permalink: kb/254/Q254435/
+permalink: /kb/254/Q254435/
 ---
 
 ## Q254435: EST2001: &quot;Error 1316&quot; Message When You Attempt to Reinstall

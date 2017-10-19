@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194935: Printing from S/36 or AS/36 Fails when Using Host Print Server"
-permalink: kb/194/Q194935/
+permalink: /kb/194/Q194935/
 ---
 
 ## Q194935: Printing from S/36 or AS/36 Fails when Using Host Print Server

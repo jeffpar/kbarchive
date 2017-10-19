@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43369: PRB: RCPP.EXE Error: Compiler Limit: Macro Expansion Too Big"
-permalink: kb/043/Q43369/
+permalink: /kb/043/Q43369/
 ---
 
 ## Q43369: PRB: RCPP.EXE Error: Compiler Limit: Macro Expansion Too Big

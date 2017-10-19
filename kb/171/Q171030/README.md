@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171030: XCLN: Err Msg: Upload of Offline Changes Could Not Be Completed"
-permalink: kb/171/Q171030/
+permalink: /kb/171/Q171030/
 ---
 
 ## Q171030: XCLN: Err Msg: Upload of Offline Changes Could Not Be Completed

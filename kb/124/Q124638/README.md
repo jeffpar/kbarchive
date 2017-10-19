@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124638: Settings - How to Change Them"
-permalink: kb/124/Q124638/
+permalink: /kb/124/Q124638/
 ---
 
 ## Q124638: Settings - How to Change Them

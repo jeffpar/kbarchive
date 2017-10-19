@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244759: WD97: Microsoft Word 97 Equivalents to WordPerfect White Paper"
-permalink: kb/244/Q244759/
+permalink: /kb/244/Q244759/
 ---
 
 ## Q244759: WD97: Microsoft Word 97 Equivalents to WordPerfect White Paper

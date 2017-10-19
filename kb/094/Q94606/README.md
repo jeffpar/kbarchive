@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94606: HOWTO: Set the CAPS LOCK, SCROLL LOCK, and NUM LOCK States"
-permalink: kb/094/Q94606/
+permalink: /kb/094/Q94606/
 ---
 
 ## Q94606: HOWTO: Set the CAPS LOCK, SCROLL LOCK, and NUM LOCK States

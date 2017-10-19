@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240331: List of Bugs Fixed in Terminal Server Edition Service Pack 5"
-permalink: kb/240/Q240331/
+permalink: /kb/240/Q240331/
 ---
 
 ## Q240331: List of Bugs Fixed in Terminal Server Edition Service Pack 5

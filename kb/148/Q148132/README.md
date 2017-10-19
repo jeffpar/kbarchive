@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148132: Swapable Floppy/CD-ROM Components Support on NEC Versa 4050C"
-permalink: kb/148/Q148132/
+permalink: /kb/148/Q148132/
 ---
 
 ## Q148132: Swapable Floppy/CD-ROM Components Support on NEC Versa 4050C

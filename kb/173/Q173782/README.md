@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173782: PRB: MouseMove Events Fires on Disabled Control in VFP"
-permalink: kb/173/Q173782/
+permalink: /kb/173/Q173782/
 ---
 
 ## Q173782: PRB: MouseMove Events Fires on Disabled Control in VFP

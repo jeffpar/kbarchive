@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126661: PC MAPI: MAPILogon Does not Return an Error Code 1"
-permalink: kb/126/Q126661/
+permalink: /kb/126/Q126661/
 ---
 
 ## Q126661: PC MAPI: MAPILogon Does not Return an Error Code 1

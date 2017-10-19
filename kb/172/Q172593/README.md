@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172593: HOWTO: Populate DBGrid from Crosstab Parameter Query"
-permalink: kb/172/Q172593/
+permalink: /kb/172/Q172593/
 ---
 
 ## Q172593: HOWTO: Populate DBGrid from Crosstab Parameter Query

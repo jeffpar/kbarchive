@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121409: WGAO for MS-DOS 3COM EtherLink III Driver Shows Extra Setting"
-permalink: kb/121/Q121409/
+permalink: /kb/121/Q121409/
 ---
 
 ## Q121409: WGAO for MS-DOS 3COM EtherLink III Driver Shows Extra Setting

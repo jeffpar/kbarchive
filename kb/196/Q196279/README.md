@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196279: FIX: &quot;File or Project not Found&quot; Adding Files Via Integration"
-permalink: kb/196/Q196279/
+permalink: /kb/196/Q196279/
 ---
 
 ## Q196279: FIX: &quot;File or Project not Found&quot; Adding Files Via Integration

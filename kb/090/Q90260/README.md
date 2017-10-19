@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90260: Running NetBIOS over DECnet Protocol"
-permalink: kb/090/Q90260/
+permalink: /kb/090/Q90260/
 ---
 
 ## Q90260: Running NetBIOS over DECnet Protocol

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180417: XWEB: Error Msg: Sorry! The Microsoft Exchange Server Is Down"
-permalink: kb/180/Q180417/
+permalink: /kb/180/Q180417/
 ---
 
 ## Q180417: XWEB: Error Msg: Sorry! The Microsoft Exchange Server Is Down

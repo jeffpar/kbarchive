@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168057: WD97: Maximum Number of Printers Visible in Word"
-permalink: kb/168/Q168057/
+permalink: /kb/168/Q168057/
 ---
 
 ## Q168057: WD97: Maximum Number of Printers Visible in Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107165: Stretched or Shrunken Graphics in Viewer"
-permalink: kb/107/Q107165/
+permalink: /kb/107/Q107165/
 ---
 
 ## Q107165: Stretched or Shrunken Graphics in Viewer

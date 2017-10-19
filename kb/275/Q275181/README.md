@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275181: &quot;SNAOLE - FIELD CONFLICT. UNABLE TO CHANGE&quot; Opening SNA Manager"
-permalink: kb/275/Q275181/
+permalink: /kb/275/Q275181/
 ---
 
 ## Q275181: &quot;SNAOLE - FIELD CONFLICT. UNABLE TO CHANGE&quot; Opening SNA Manager

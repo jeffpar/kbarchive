@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272754: Encarta Language Learning: How to Troubleshoot Microphone Relate"
-permalink: kb/272/Q272754/
+permalink: /kb/272/Q272754/
 ---
 
 ## Q272754: Encarta Language Learning: How to Troubleshoot Microphone Relate

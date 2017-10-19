@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145794: XADM: 1993 Private Extension Support on Per-Message Envelope"
-permalink: kb/145/Q145794/
+permalink: /kb/145/Q145794/
 ---
 
 ## Q145794: XADM: 1993 Private Extension Support on Per-Message Envelope

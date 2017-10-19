@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192506: Windows 98 Starts Here Demo Does Not Load Correctly"
-permalink: kb/192/Q192506/
+permalink: /kb/192/Q192506/
 ---
 
 ## Q192506: Windows 98 Starts Here Demo Does Not Load Correctly

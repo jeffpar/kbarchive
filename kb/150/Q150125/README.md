@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150125: BUG: Write of Function Returning a Character String Fails"
-permalink: kb/150/Q150125/
+permalink: /kb/150/Q150125/
 ---
 
 ## Q150125: BUG: Write of Function Returning a Character String Fails

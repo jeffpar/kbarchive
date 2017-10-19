@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77205: SHIFT+UP/DOWN ARROW Combinations Don't Work on Toshiba 5100"
-permalink: kb/077/Q77205/
+permalink: /kb/077/Q77205/
 ---
 
 ## Q77205: SHIFT+UP/DOWN ARROW Combinations Don't Work on Toshiba 5100

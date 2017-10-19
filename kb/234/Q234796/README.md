@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234796: FP: How to Create a Link to a Worksheet in an Excel Workbook"
-permalink: kb/234/Q234796/
+permalink: /kb/234/Q234796/
 ---
 
 ## Q234796: FP: How to Create a Link to a Worksheet in an Excel Workbook

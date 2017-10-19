@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99515: FIX: F1001: typer.c, Line 911 From Concatenation in CALL"
-permalink: kb/099/Q99515/
+permalink: /kb/099/Q99515/
 ---
 
 ## Q99515: FIX: F1001: typer.c, Line 911 From Concatenation in CALL

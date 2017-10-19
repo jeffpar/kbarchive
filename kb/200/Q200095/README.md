@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200095: PRB: Problems with Help Compiler 3.5 and Certain RTF Formats"
-permalink: kb/200/Q200095/
+permalink: /kb/200/Q200095/
 ---
 
 ## Q200095: PRB: Problems with Help Compiler 3.5 and Certain RTF Formats

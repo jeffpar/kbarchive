@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262116: XCON: How Exchange Server 5.5 Routes Custom Recipient Messages I"
-permalink: kb/262/Q262116/
+permalink: /kb/262/Q262116/
 ---
 
 ## Q262116: XCON: How Exchange Server 5.5 Routes Custom Recipient Messages I

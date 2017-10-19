@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245460: 5250 Numeric Keypad ENTER Key Produces Space Character"
-permalink: kb/245/Q245460/
+permalink: /kb/245/Q245460/
 ---
 
 ## Q245460: 5250 Numeric Keypad ENTER Key Produces Space Character

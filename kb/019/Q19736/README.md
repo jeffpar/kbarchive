@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q19736: HOWTO: Split Scrolling Using Two Windows"
-permalink: kb/019/Q19736/
+permalink: /kb/019/Q19736/
 ---
 
 ## Q19736: HOWTO: Split Scrolling Using Two Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73400: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 11-20"
-permalink: kb/073/Q73400/
+permalink: /kb/073/Q73400/
 ---
 
 ## Q73400: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 11-20

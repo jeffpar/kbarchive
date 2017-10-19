@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137281: Encarta 1995: Mindmaze and Gallery Will Not Launch"
-permalink: kb/137/Q137281/
+permalink: /kb/137/Q137281/
 ---
 
 ## Q137281: Encarta 1995: Mindmaze and Gallery Will Not Launch

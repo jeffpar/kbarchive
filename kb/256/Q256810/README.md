@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256810: MapPoint 2001 Err Msg: Could Not Find the Microsoft MapPoint..."
-permalink: kb/256/Q256810/
+permalink: /kb/256/Q256810/
 ---
 
 ## Q256810: MapPoint 2001 Err Msg: Could Not Find the Microsoft MapPoint...

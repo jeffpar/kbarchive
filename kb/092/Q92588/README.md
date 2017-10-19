@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92588: WFWG: Password Caching and How It Affects LAN Manager Security"
-permalink: kb/092/Q92588/
+permalink: /kb/092/Q92588/
 ---
 
 ## Q92588: WFWG: Password Caching and How It Affects LAN Manager Security

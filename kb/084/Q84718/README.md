@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84718: Redirecting a TSR May Leave File Handle Open"
-permalink: kb/084/Q84718/
+permalink: /kb/084/Q84718/
 ---
 
 ## Q84718: Redirecting a TSR May Leave File Handle Open

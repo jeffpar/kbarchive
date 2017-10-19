@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114245: BUG: Can Not Do Literal Update of Memo Fields Beyond 255 Chars"
-permalink: kb/114/Q114245/
+permalink: /kb/114/Q114245/
 ---
 
 ## Q114245: BUG: Can Not Do Literal Update of Memo Fields Beyond 255 Chars

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141631: FIX: Mouse Clicks Continually Stack Up in the Event Queue"
-permalink: kb/141/Q141631/
+permalink: /kb/141/Q141631/
 ---
 
 ## Q141631: FIX: Mouse Clicks Continually Stack Up in the Event Queue

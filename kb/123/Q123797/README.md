@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123797: PPT: Cannot Change Shadow Color of Organization Chart Object"
-permalink: kb/123/Q123797/
+permalink: /kb/123/Q123797/
 ---
 
 ## Q123797: PPT: Cannot Change Shadow Color of Organization Chart Object

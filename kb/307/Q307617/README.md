@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307617: CurrentNonAnonymousUsers Counter Change from Zero to Negative"
-permalink: kb/307/Q307617/
+permalink: /kb/307/Q307617/
 ---
 
 ## Q307617: CurrentNonAnonymousUsers Counter Change from Zero to Negative

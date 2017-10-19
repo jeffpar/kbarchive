@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164257: Inactivity Timeout not Passed Through to TAPI Service Provider"
-permalink: kb/164/Q164257/
+permalink: /kb/164/Q164257/
 ---
 
 ## Q164257: Inactivity Timeout not Passed Through to TAPI Service Provider

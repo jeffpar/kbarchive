@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103547: Error Message Formatting Blank Disk: Drive Not Ready"
-permalink: kb/103/Q103547/
+permalink: /kb/103/Q103547/
 ---
 
 ## Q103547: Error Message Formatting Blank Disk: Drive Not Ready

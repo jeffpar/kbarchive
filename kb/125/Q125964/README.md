@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125964: Visual C++ Needs Updated Linker for Windows NT 3.5"
-permalink: kb/125/Q125964/
+permalink: /kb/125/Q125964/
 ---
 
 ## Q125964: Visual C++ Needs Updated Linker for Windows NT 3.5

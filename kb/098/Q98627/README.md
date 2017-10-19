@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98627: SAMPLE: Advanced ALC_ Sample and ShowKeyboard() Sample"
-permalink: kb/098/Q98627/
+permalink: /kb/098/Q98627/
 ---
 
 ## Q98627: SAMPLE: Advanced ALC_ Sample and ShowKeyboard() Sample

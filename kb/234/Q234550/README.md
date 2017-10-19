@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234550: Random Crashes on Alpha Proliant 42x0"
-permalink: kb/234/Q234550/
+permalink: /kb/234/Q234550/
 ---
 
 ## Q234550: Random Crashes on Alpha Proliant 42x0

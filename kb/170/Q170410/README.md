@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170410: WD97: ErrMsg Inserting If Then Else Field into Envelope"
-permalink: kb/170/Q170410/
+permalink: /kb/170/Q170410/
 ---
 
 ## Q170410: WD97: ErrMsg Inserting If Then Else Field into Envelope

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152938: XADM: Checking Knowledge Consistency Msg Freezes at 33 Percent"
-permalink: kb/152/Q152938/
+permalink: /kb/152/Q152938/
 ---
 
 ## Q152938: XADM: Checking Knowledge Consistency Msg Freezes at 33 Percent

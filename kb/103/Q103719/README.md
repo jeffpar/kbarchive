@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103719: INFO: Migrating Visual C++ for Windows to Windows NT"
-permalink: kb/103/Q103719/
+permalink: /kb/103/Q103719/
 ---
 
 ## Q103719: INFO: Migrating Visual C++ for Windows to Windows NT

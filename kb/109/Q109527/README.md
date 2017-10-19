@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109527: 32-Bit File Access ErrMsg: Exit Windows and Run the MS-DOS..."
-permalink: kb/109/Q109527/
+permalink: /kb/109/Q109527/
 ---
 
 ## Q109527: 32-Bit File Access ErrMsg: Exit Windows and Run the MS-DOS...

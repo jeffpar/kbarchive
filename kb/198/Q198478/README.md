@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198478: Infinite Loop When Connecting Through RPC to HP-UX 9.x"
-permalink: kb/198/Q198478/
+permalink: /kb/198/Q198478/
 ---
 
 ## Q198478: Infinite Loop When Connecting Through RPC to HP-UX 9.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161756: WD97: Comment Inserted at Unexpected Location"
-permalink: kb/161/Q161756/
+permalink: /kb/161/Q161756/
 ---
 
 ## Q161756: WD97: Comment Inserted at Unexpected Location

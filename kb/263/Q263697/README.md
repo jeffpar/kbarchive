@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263697: AoE II: How To Use the Map Editor to Place Natural Resources"
-permalink: kb/263/Q263697/
+permalink: /kb/263/Q263697/
 ---
 
 ## Q263697: AoE II: How To Use the Map Editor to Place Natural Resources

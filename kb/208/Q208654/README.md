@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208654: BUG: FontChanged Fires Twice When a Font Object Property Changed"
-permalink: kb/208/Q208654/
+permalink: /kb/208/Q208654/
 ---
 
 ## Q208654: BUG: FontChanged Fires Twice When a Font Object Property Changed

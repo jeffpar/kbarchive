@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301363: Registry Changes in Host Integration Server 2000 End User Client"
-permalink: kb/301/Q301363/
+permalink: /kb/301/Q301363/
 ---
 
 ## Q301363: Registry Changes in Host Integration Server 2000 End User Client

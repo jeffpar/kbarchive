@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318936: Event ID 3051 Is Caused by an Incorrect Netlogon Registry Key"
-permalink: kb/318/Q318936/
+permalink: /kb/318/Q318936/
 ---
 
 ## Q318936: Event ID 3051 Is Caused by an Incorrect Netlogon Registry Key

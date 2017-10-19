@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111572: Basic Redir Repeatedly Prompts for User Name &amp; Password"
-permalink: kb/111/Q111572/
+permalink: /kb/111/Q111572/
 ---
 
 ## Q111572: Basic Redir Repeatedly Prompts for User Name &amp; Password

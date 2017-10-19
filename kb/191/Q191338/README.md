@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191338: SMS: Job Cancellation Is Not Immediate"
-permalink: kb/191/Q191338/
+permalink: /kb/191/Q191338/
 ---
 
 ## Q191338: SMS: Job Cancellation Is Not Immediate

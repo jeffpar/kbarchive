@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136116: SMTP: XXENC User Unknown"
-permalink: kb/136/Q136116/
+permalink: /kb/136/Q136116/
 ---
 
 ## Q136116: SMTP: XXENC User Unknown

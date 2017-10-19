@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106469: WD97: Word Accesses Mail Merge Data File Frequently"
-permalink: kb/106/Q106469/
+permalink: /kb/106/Q106469/
 ---
 
 ## Q106469: WD97: Word Accesses Mail Merge Data File Frequently

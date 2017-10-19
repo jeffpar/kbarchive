@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244652: Updated Inoculan Driver Prevents Data Files from Being Deleted"
-permalink: kb/244/Q244652/
+permalink: /kb/244/Q244652/
 ---
 
 ## Q244652: Updated Inoculan Driver Prevents Data Files from Being Deleted

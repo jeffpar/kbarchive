@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149501: PRB: Child CPropertySheet Hangs If Focus Is Switched"
-permalink: kb/149/Q149501/
+permalink: /kb/149/Q149501/
 ---
 
 ## Q149501: PRB: Child CPropertySheet Hangs If Focus Is Switched

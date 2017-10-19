@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299615: BUG: KeyPress Event Behaves Differently in a Compiled Executable"
-permalink: kb/299/Q299615/
+permalink: /kb/299/Q299615/
 ---
 
 ## Q299615: BUG: KeyPress Event Behaves Differently in a Compiled Executable

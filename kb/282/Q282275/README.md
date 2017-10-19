@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282275: XCON: MTA Stops Unexpectedly in CheckRecipInfo()"
-permalink: kb/282/Q282275/
+permalink: /kb/282/Q282275/
 ---
 
 ## Q282275: XCON: MTA Stops Unexpectedly in CheckRecipInfo()

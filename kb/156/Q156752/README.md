@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156752: PRB: Graph Wizard Graph Appears in Black And White"
-permalink: kb/156/Q156752/
+permalink: /kb/156/Q156752/
 ---
 
 ## Q156752: PRB: Graph Wizard Graph Appears in Black And White

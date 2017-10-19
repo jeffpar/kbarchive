@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95679: Select All Menu Command Unavailable in a General Field"
-permalink: kb/095/Q95679/
+permalink: /kb/095/Q95679/
 ---
 
 ## Q95679: Select All Menu Command Unavailable in a General Field

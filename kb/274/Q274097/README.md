@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274097: Crimson Skies: Minimum System Requirements"
-permalink: kb/274/Q274097/
+permalink: /kb/274/Q274097/
 ---
 
 ## Q274097: Crimson Skies: Minimum System Requirements

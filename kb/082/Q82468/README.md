@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82468: Hewlett-Packard Mouse Problems on HP QS 16s"
-permalink: kb/082/Q82468/
+permalink: /kb/082/Q82468/
 ---
 
 ## Q82468: Hewlett-Packard Mouse Problems on HP QS 16s

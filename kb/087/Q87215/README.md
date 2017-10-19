@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87215: PROFS: Order for Starting Up the Two Sides of the Gateway"
-permalink: kb/087/Q87215/
+permalink: /kb/087/Q87215/
 ---
 
 ## Q87215: PROFS: Order for Starting Up the Two Sides of the Gateway

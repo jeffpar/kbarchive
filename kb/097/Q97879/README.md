@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97879: RAS and US Robotics HST"
-permalink: kb/097/Q97879/
+permalink: /kb/097/Q97879/
 ---
 
 ## Q97879: RAS and US Robotics HST

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117552: INFO: Use KBKeywords to Search for Languages Articles"
-permalink: kb/117/Q117552/
+permalink: /kb/117/Q117552/
 ---
 
 ## Q117552: INFO: Use KBKeywords to Search for Languages Articles

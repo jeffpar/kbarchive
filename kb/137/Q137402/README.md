@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137402: APM Features May Be Unavailable in Windows 95"
-permalink: kb/137/Q137402/
+permalink: /kb/137/Q137402/
 ---
 
 ## Q137402: APM Features May Be Unavailable in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99159: Description of Chess"
-permalink: kb/099/Q99159/
+permalink: /kb/099/Q99159/
 ---
 
 ## Q99159: Description of Chess

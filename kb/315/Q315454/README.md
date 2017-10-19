@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315454: FP: Error 0178: 80070005 When You Attempt to Connect to Database"
-permalink: kb/315/Q315454/
+permalink: /kb/315/Q315454/
 ---
 
 ## Q315454: FP: Error 0178: 80070005 When You Attempt to Connect to Database

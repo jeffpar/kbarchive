@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264812: Client Add Pack Does Not Recognize Small Business Server"
-permalink: kb/264/Q264812/
+permalink: /kb/264/Q264812/
 ---
 
 ## Q264812: Client Add Pack Does Not Recognize Small Business Server

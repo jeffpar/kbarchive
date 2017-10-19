@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163188: PPT: Sample VB Code to Create a Graph on a Slide"
-permalink: kb/163/Q163188/
+permalink: /kb/163/Q163188/
 ---
 
 ## Q163188: PPT: Sample VB Code to Create a Graph on a Slide

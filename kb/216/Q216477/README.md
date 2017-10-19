@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216477: Environment Path Too Long Causes Access Violation in Winlogon"
-permalink: kb/216/Q216477/
+permalink: /kb/216/Q216477/
 ---
 
 ## Q216477: Environment Path Too Long Causes Access Violation in Winlogon

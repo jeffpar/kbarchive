@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67430: Using Automatic Scenery Selection with SubLOGIC Scenery"
-permalink: kb/067/Q67430/
+permalink: /kb/067/Q67430/
 ---
 
 ## Q67430: Using Automatic Scenery Selection with SubLOGIC Scenery

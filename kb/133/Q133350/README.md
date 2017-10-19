@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133350: Cannot Map Drives to More Than Eight NetWare Servers"
-permalink: kb/133/Q133350/
+permalink: /kb/133/Q133350/
 ---
 
 ## Q133350: Cannot Map Drives to More Than Eight NetWare Servers

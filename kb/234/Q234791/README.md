@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234791: Using Index Server to Achieve Hit Highlighting in Site Server Se"
-permalink: kb/234/Q234791/
+permalink: /kb/234/Q234791/
 ---
 
 ## Q234791: Using Index Server to Achieve Hit Highlighting in Site Server Se

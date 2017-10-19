@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91115: Windows Drivers for HP LaserJet IV Printer"
-permalink: kb/091/Q91115/
+permalink: /kb/091/Q91115/
 ---
 
 ## Q91115: Windows Drivers for HP LaserJet IV Printer

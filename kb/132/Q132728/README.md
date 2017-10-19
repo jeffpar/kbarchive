@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132728: Resource Kit 3.5 Doc Err: NETBIOS.DLL Provides Network DDE"
-permalink: kb/132/Q132728/
+permalink: /kb/132/Q132728/
 ---
 
 ## Q132728: Resource Kit 3.5 Doc Err: NETBIOS.DLL Provides Network DDE

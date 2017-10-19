@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232637: WD97: Run-Time Error 1220 Running WordBasic.Shell Statement"
-permalink: kb/232/Q232637/
+permalink: /kb/232/Q232637/
 ---
 
 ## Q232637: WD97: Run-Time Error 1220 Running WordBasic.Shell Statement

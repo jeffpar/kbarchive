@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233459: MSBP: Wizard Interview Files Are Replaced Without Warning"
-permalink: kb/233/Q233459/
+permalink: /kb/233/Q233459/
 ---
 
 ## Q233459: MSBP: Wizard Interview Files Are Replaced Without Warning

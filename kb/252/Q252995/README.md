@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252995: Performance Recommendations for Microsoft Metadirectory Services"
-permalink: kb/252/Q252995/
+permalink: /kb/252/Q252995/
 ---
 
 ## Q252995: Performance Recommendations for Microsoft Metadirectory Services

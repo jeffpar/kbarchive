@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259751: XADM: How to Recover from a Full Transaction Log File Drive"
-permalink: kb/259/Q259751/
+permalink: /kb/259/Q259751/
 ---
 
 ## Q259751: XADM: How to Recover from a Full Transaction Log File Drive

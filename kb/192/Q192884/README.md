@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192884: INFO: SpeechKit by Chant Inc. Support Information"
-permalink: kb/192/Q192884/
+permalink: /kb/192/Q192884/
 ---
 
 ## Q192884: INFO: SpeechKit by Chant Inc. Support Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267955: WD97: Excel Worksheet Object Color Text Is Printed as Black"
-permalink: kb/267/Q267955/
+permalink: /kb/267/Q267955/
 ---
 
 ## Q267955: WD97: Excel Worksheet Object Color Text Is Printed as Black

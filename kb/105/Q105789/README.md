@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105789: Memory Conflict Occurs Immediately After Upgrading to 6.2"
-permalink: kb/105/Q105789/
+permalink: /kb/105/Q105789/
 ---
 
 ## Q105789: Memory Conflict Occurs Immediately After Upgrading to 6.2

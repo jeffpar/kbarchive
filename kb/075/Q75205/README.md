@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75205: PC DOS: Graphics Screen Corruption When Using Micro &amp; Monitor"
-permalink: kb/075/Q75205/
+permalink: /kb/075/Q75205/
 ---
 
 ## Q75205: PC DOS: Graphics Screen Corruption When Using Micro &amp; Monitor

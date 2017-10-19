@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184831: How to Disable the &quot;Logon Using Dial-Up Networking&quot; Option"
-permalink: kb/184/Q184831/
+permalink: /kb/184/Q184831/
 ---
 
 ## Q184831: How to Disable the &quot;Logon Using Dial-Up Networking&quot; Option

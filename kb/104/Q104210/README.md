@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104210: Encarta: Setup Hangs on NEC CD-ROM Drive"
-permalink: kb/104/Q104210/
+permalink: /kb/104/Q104210/
 ---
 
 ## Q104210: Encarta: Setup Hangs on NEC CD-ROM Drive

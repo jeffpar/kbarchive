@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58809: Flight Simulator 4.00 Hangs After Crashing into Ground"
-permalink: kb/058/Q58809/
+permalink: /kb/058/Q58809/
 ---
 
 ## Q58809: Flight Simulator 4.00 Hangs After Crashing into Ground

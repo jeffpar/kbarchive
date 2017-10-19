@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231230: SMS: Canned Queries Do Not Complete"
-permalink: kb/231/Q231230/
+permalink: /kb/231/Q231230/
 ---
 
 ## Q231230: SMS: Canned Queries Do Not Complete

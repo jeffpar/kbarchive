@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246863: The Assignments Are Not Mandatory Over Slow Links Option"
-permalink: kb/246/Q246863/
+permalink: /kb/246/Q246863/
 ---
 
 ## Q246863: The Assignments Are Not Mandatory Over Slow Links Option

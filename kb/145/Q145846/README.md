@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145846: FIX: SQLSetProp() Without Expression Does Not Restore Defaults"
-permalink: kb/145/Q145846/
+permalink: /kb/145/Q145846/
 ---
 
 ## Q145846: FIX: SQLSetProp() Without Expression Does Not Restore Defaults

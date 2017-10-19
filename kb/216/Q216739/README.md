@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216739: Windows 98 Requires Terminal Server Client Disk to Uninstall"
-permalink: kb/216/Q216739/
+permalink: /kb/216/Q216739/
 ---
 
 ## Q216739: Windows 98 Requires Terminal Server Client Disk to Uninstall

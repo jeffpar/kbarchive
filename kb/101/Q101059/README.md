@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101059: Current Directory Changes When Using the LABEL Command"
-permalink: kb/101/Q101059/
+permalink: /kb/101/Q101059/
 ---
 
 ## Q101059: Current Directory Changes When Using the LABEL Command

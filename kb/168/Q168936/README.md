@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168936: FIX: Virtual Base Class Destructor Called More than Once"
-permalink: kb/168/Q168936/
+permalink: /kb/168/Q168936/
 ---
 
 ## Q168936: FIX: Virtual Base Class Destructor Called More than Once

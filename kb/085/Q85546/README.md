@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85546: Linotronic Printer Drivers Not Available for Windows 3.1"
-permalink: kb/085/Q85546/
+permalink: /kb/085/Q85546/
 ---
 
 ## Q85546: Linotronic Printer Drivers Not Available for Windows 3.1

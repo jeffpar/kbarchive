@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297795: HOW TO: Enable Reverse DNS Lookup for IIS"
-permalink: kb/297/Q297795/
+permalink: /kb/297/Q297795/
 ---
 
 ## Q297795: HOW TO: Enable Reverse DNS Lookup for IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178977: WD97: Error Message in Print Preview with Excel DDE Data Source"
-permalink: kb/178/Q178977/
+permalink: /kb/178/Q178977/
 ---
 
 ## Q178977: WD97: Error Message in Print Preview with Excel DDE Data Source

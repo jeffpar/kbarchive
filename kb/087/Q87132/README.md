@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87132: Upgrading to LAN Manager 2.1 and/or MS OS/2 1.3"
-permalink: kb/087/Q87132/
+permalink: /kb/087/Q87132/
 ---
 
 ## Q87132: Upgrading to LAN Manager 2.1 and/or MS OS/2 1.3

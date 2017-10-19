@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108434: FIX: CSplitterWnd Class Does Not Handle All Focus Cases"
-permalink: kb/108/Q108434/
+permalink: /kb/108/Q108434/
 ---
 
 ## Q108434: FIX: CSplitterWnd Class Does Not Handle All Focus Cases

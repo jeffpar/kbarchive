@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138086: Windows NT 3.51: Reverse Name Resolution for WINS Clients"
-permalink: kb/138/Q138086/
+permalink: /kb/138/Q138086/
 ---
 
 ## Q138086: Windows NT 3.51: Reverse Name Resolution for WINS Clients

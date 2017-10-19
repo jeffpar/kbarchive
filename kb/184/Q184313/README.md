@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184313: Err Msg: Certificate Server Could Not Process Request &#42;"
-permalink: kb/184/Q184313/
+permalink: /kb/184/Q184313/
 ---
 
 ## Q184313: Err Msg: Certificate Server Could Not Process Request &#42;

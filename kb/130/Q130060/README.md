@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130060: Chinese Windows 3.1 DBCS Character Code Conversion Utilities"
-permalink: kb/130/Q130060/
+permalink: /kb/130/Q130060/
 ---
 
 ## Q130060: Chinese Windows 3.1 DBCS Character Code Conversion Utilities

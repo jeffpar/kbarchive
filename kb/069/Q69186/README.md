@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69186: WINSTART.BAT Won't Load Microsoft LAN Manager Driver"
-permalink: kb/069/Q69186/
+permalink: /kb/069/Q69186/
 ---
 
 ## Q69186: WINSTART.BAT Won't Load Microsoft LAN Manager Driver

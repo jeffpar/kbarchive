@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196504: WD97: Symbol in STYLEREF Field Appears as Opening Parenthesis"
-permalink: kb/196/Q196504/
+permalink: /kb/196/Q196504/
 ---
 
 ## Q196504: WD97: Symbol in STYLEREF Field Appears as Opening Parenthesis

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110213: HP 1200C PostScript Color Printer Prints Black-and-White"
-permalink: kb/110/Q110213/
+permalink: /kb/110/Q110213/
 ---
 
 ## Q110213: HP 1200C PostScript Color Printer Prints Black-and-White

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148605: BUG: Compiler Syntax Error If Edit Descriptors Contain Spaces"
-permalink: kb/148/Q148605/
+permalink: /kb/148/Q148605/
 ---
 
 ## Q148605: BUG: Compiler Syntax Error If Edit Descriptors Contain Spaces

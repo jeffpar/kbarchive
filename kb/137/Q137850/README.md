@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137850: Using IPX/SPX Support Driver with Microsoft Network Client 3.0"
-permalink: kb/137/Q137850/
+permalink: /kb/137/Q137850/
 ---
 
 ## Q137850: Using IPX/SPX Support Driver with Microsoft Network Client 3.0

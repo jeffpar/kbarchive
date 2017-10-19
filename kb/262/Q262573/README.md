@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262573: Japanese CICS File Transfer Fails with 3270 Applet"
-permalink: kb/262/Q262573/
+permalink: /kb/262/Q262573/
 ---
 
 ## Q262573: Japanese CICS File Transfer Fails with 3270 Applet

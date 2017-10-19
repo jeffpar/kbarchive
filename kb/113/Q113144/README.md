@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113144: PC WSPlus: Schedule+ Schdupd.exe Update Available"
-permalink: kb/113/Q113144/
+permalink: /kb/113/Q113144/
 ---
 
 ## Q113144: PC WSPlus: Schedule+ Schdupd.exe Update Available

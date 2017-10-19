@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127793: Windows Sound System 2.0 DEINSTAL.TXT Contents"
-permalink: kb/127/Q127793/
+permalink: /kb/127/Q127793/
 ---
 
 ## Q127793: Windows Sound System 2.0 DEINSTAL.TXT Contents

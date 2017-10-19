@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92660: Using Windows 3.1 with Quarterdeck QEMM386"
-permalink: kb/092/Q92660/
+permalink: /kb/092/Q92660/
 ---
 
 ## Q92660: Using Windows 3.1 with Quarterdeck QEMM386

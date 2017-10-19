@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118675: PC Ext: Large Mail Message Fails with Windows NT and MMTA"
-permalink: kb/118/Q118675/
+permalink: /kb/118/Q118675/
 ---
 
 ## Q118675: PC Ext: Large Mail Message Fails with Windows NT and MMTA

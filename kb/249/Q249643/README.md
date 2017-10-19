@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249643: AoE II: Disband and Wheel Commands Are Not Available"
-permalink: kb/249/Q249643/
+permalink: /kb/249/Q249643/
 ---
 
 ## Q249643: AoE II: Disband and Wheel Commands Are Not Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141758: HOWTO: How to Add Tooltips for Controls to an MFC Modal Dialog B"
-permalink: kb/141/Q141758/
+permalink: /kb/141/Q141758/
 ---
 
 ## Q141758: HOWTO: How to Add Tooltips for Controls to an MFC Modal Dialog B

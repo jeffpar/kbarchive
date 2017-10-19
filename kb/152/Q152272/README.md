@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152272: GetSecurityDescriptorGroup() Returns Incorrect Primary Group"
-permalink: kb/152/Q152272/
+permalink: /kb/152/Q152272/
 ---
 
 ## Q152272: GetSecurityDescriptorGroup() Returns Incorrect Primary Group

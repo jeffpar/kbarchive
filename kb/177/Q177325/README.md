@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177325: XFOR: LME-PROFS-MEXIN Returns Error Code 80070057 and Exits"
-permalink: kb/177/Q177325/
+permalink: /kb/177/Q177325/
 ---
 
 ## Q177325: XFOR: LME-PROFS-MEXIN Returns Error Code 80070057 and Exits

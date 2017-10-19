@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136935: Browser Service Causes Network Broadcast Storm After 1193 hrs"
-permalink: kb/136/Q136935/
+permalink: /kb/136/Q136935/
 ---
 
 ## Q136935: Browser Service Causes Network Broadcast Storm After 1193 hrs

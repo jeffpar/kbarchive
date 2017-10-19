@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182707: MMC Component Does Not Prompt for Restart After Installation"
-permalink: kb/182/Q182707/
+permalink: /kb/182/Q182707/
 ---
 
 ## Q182707: MMC Component Does Not Prompt for Restart After Installation

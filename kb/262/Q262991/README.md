@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262991: All 3270 Clients Stop Responding When Snaservr.exe Starts"
-permalink: kb/262/Q262991/
+permalink: /kb/262/Q262991/
 ---
 
 ## Q262991: All 3270 Clients Stop Responding When Snaservr.exe Starts

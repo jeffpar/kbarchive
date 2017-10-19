@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58336: Windows 3.0 WIN.INI [colors] Section"
-permalink: kb/058/Q58336/
+title: "Q58336: Windows 3.0 WIN.INI &#91;colors&#93; Section"
+permalink: /kb/058/Q58336/
 ---
 
-## Q58336: Windows 3.0 WIN.INI [colors] Section
+## Q58336: Windows 3.0 WIN.INI &#91;colors&#93; Section
 
 	Article: Q58336
 	Product(s): Microsoft Windows 95.x Retail Product

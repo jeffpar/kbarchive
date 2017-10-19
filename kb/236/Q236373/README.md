@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236373: How Maximum Password Age Is Implemented"
-permalink: kb/236/Q236373/
+permalink: /kb/236/Q236373/
 ---
 
 ## Q236373: How Maximum Password Age Is Implemented

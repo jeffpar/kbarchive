@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143109: BUG: Debugger Shows Incorrect &quot;this&quot; Pointer"
-permalink: kb/143/Q143109/
+permalink: /kb/143/Q143109/
 ---
 
 ## Q143109: BUG: Debugger Shows Incorrect &quot;this&quot; Pointer

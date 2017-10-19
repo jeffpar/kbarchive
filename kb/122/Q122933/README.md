@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122933: Event Viewer Messages for the Olicom Network Card"
-permalink: kb/122/Q122933/
+permalink: /kb/122/Q122933/
 ---
 
 ## Q122933: Event Viewer Messages for the Olicom Network Card

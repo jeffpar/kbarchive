@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176928: Bookshelf Err Msg: Could Not Open the File..."
-permalink: kb/176/Q176928/
+permalink: /kb/176/Q176928/
 ---
 
 ## Q176928: Bookshelf Err Msg: Could Not Open the File...

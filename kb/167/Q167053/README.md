@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167053: INFO: InstallSHIELD Not Supported by Microsoft Tech Support"
-permalink: kb/167/Q167053/
+permalink: /kb/167/Q167053/
 ---
 
 ## Q167053: INFO: InstallSHIELD Not Supported by Microsoft Tech Support

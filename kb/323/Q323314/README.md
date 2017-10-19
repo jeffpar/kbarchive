@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323314: HOW TO: Create an IIS Baseline by Using the Memory Object"
-permalink: kb/323/Q323314/
+permalink: /kb/323/Q323314/
 ---
 
 ## Q323314: HOW TO: Create an IIS Baseline by Using the Memory Object

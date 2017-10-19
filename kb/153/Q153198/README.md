@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153198: Encarta 96 ErrMsg: Setup Tried to Create an Invalid Path"
-permalink: kb/153/Q153198/
+permalink: /kb/153/Q153198/
 ---
 
 ## Q153198: Encarta 96 ErrMsg: Setup Tried to Create an Invalid Path

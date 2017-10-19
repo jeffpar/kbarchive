@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131988: MHS: Messages Appear Stuck in MHS Queue"
-permalink: kb/131/Q131988/
+permalink: /kb/131/Q131988/
 ---
 
 ## Q131988: MHS: Messages Appear Stuck in MHS Queue

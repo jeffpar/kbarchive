@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180394: Incomplete Destination Selection: Please Enter Table Name"
-permalink: kb/180/Q180394/
+permalink: /kb/180/Q180394/
 ---
 
 ## Q180394: Incomplete Destination Selection: Please Enter Table Name

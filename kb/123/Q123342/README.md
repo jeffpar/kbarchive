@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123342: PPT: 3-D Pie Chart Is Displayed and Printed with Poor Quality"
-permalink: kb/123/Q123342/
+permalink: /kb/123/Q123342/
 ---
 
 ## Q123342: PPT: 3-D Pie Chart Is Displayed and Printed with Poor Quality

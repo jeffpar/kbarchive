@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67590: VWFD.exe VxD Helps MS-DOS Application Query Screen State"
-permalink: kb/067/Q67590/
+permalink: /kb/067/Q67590/
 ---
 
 ## Q67590: VWFD.exe VxD Helps MS-DOS Application Query Screen State

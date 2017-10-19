@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131031: READ NOLOCK Behavior in Visual FoxPro"
-permalink: kb/131/Q131031/
+permalink: /kb/131/Q131031/
 ---
 
 ## Q131031: READ NOLOCK Behavior in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169895: Enabling 128-bit Encryption for Routing and Remote Access"
-permalink: kb/169/Q169895/
+permalink: /kb/169/Q169895/
 ---
 
 ## Q169895: Enabling 128-bit Encryption for Routing and Remote Access

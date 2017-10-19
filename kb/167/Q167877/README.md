@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167877: WD97: Voice Dictation System Appears to Run Slowly with Word"
-permalink: kb/167/Q167877/
+permalink: /kb/167/Q167877/
 ---
 
 ## Q167877: WD97: Voice Dictation System Appears to Run Slowly with Word

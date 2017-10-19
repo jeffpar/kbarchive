@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246504: XADM: Cannot Access Public Folder Properties, C1010AAE"
-permalink: kb/246/Q246504/
+permalink: /kb/246/Q246504/
 ---
 
 ## Q246504: XADM: Cannot Access Public Folder Properties, C1010AAE

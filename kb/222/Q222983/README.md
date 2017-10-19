@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222983: CFS: Unexpected Fuel Loss When Proceeding to Next Waypoint"
-permalink: kb/222/Q222983/
+permalink: /kb/222/Q222983/
 ---
 
 ## Q222983: CFS: Unexpected Fuel Loss When Proceeding to Next Waypoint

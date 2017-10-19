@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88547: Seeing White Spots with Tandy 4825SX and 4850EP"
-permalink: kb/088/Q88547/
+permalink: /kb/088/Q88547/
 ---
 
 ## Q88547: Seeing White Spots with Tandy 4825SX and 4850EP

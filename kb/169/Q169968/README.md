@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169968: WD97: How to Copy Custom Label Information to Another Computer"
-permalink: kb/169/Q169968/
+permalink: /kb/169/Q169968/
 ---
 
 ## Q169968: WD97: How to Copy Custom Label Information to Another Computer

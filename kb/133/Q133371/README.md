@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133371: Encarta: Title Bar Overlaps Windows 95/98-Style Title Bar"
-permalink: kb/133/Q133371/
+permalink: /kb/133/Q133371/
 ---
 
 ## Q133371: Encarta: Title Bar Overlaps Windows 95/98-Style Title Bar

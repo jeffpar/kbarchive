@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82772: Windows and WFWG 3.1x Setup Error Codes (000 through 100)"
-permalink: kb/082/Q82772/
+permalink: /kb/082/Q82772/
 ---
 
 ## Q82772: Windows and WFWG 3.1x Setup Error Codes (000 through 100)

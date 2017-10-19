@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259050: Unwanted Attribute Updates by Management Agent"
-permalink: kb/259/Q259050/
+permalink: /kb/259/Q259050/
 ---
 
 ## Q259050: Unwanted Attribute Updates by Management Agent

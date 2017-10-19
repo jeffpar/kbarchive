@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142610: Err Msg: OS Loader V3.51 TRAP 0000000E PAGE FAULT"
-permalink: kb/142/Q142610/
+permalink: /kb/142/Q142610/
 ---
 
 ## Q142610: Err Msg: OS Loader V3.51 TRAP 0000000E PAGE FAULT

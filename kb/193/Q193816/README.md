@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193816: SNA Server 4.0 Always Checks for Remote APPC LU Security"
-permalink: kb/193/Q193816/
+permalink: /kb/193/Q193816/
 ---
 
 ## Q193816: SNA Server 4.0 Always Checks for Remote APPC LU Security

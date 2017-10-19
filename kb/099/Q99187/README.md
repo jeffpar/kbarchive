@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99187: Winadmin Storage Limit on Home Directories"
-permalink: kb/099/Q99187/
+permalink: /kb/099/Q99187/
 ---
 
 ## Q99187: Winadmin Storage Limit on Home Directories

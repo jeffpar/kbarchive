@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273772: FIX: Memory Leak in Jet ODBC Driver with Numeric or Binary Data"
-permalink: kb/273/Q273772/
+permalink: /kb/273/Q273772/
 ---
 
 ## Q273772: FIX: Memory Leak in Jet ODBC Driver with Numeric or Binary Data

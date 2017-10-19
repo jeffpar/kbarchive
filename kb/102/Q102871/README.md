@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102871: Callback Functions in Multiple Instance Applications"
-permalink: kb/102/Q102871/
+permalink: /kb/102/Q102871/
 ---
 
 ## Q102871: Callback Functions in Multiple Instance Applications

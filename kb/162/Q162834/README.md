@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162834: RRAS Stops Routing After Encountering Zero Checksum"
-permalink: kb/162/Q162834/
+permalink: /kb/162/Q162834/
 ---
 
 ## Q162834: RRAS Stops Routing After Encountering Zero Checksum

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103792: PC Win: GP Fault Occurs When Copying or Pasting Text"
-permalink: kb/103/Q103792/
+permalink: /kb/103/Q103792/
 ---
 
 ## Q103792: PC Win: GP Fault Occurs When Copying or Pasting Text

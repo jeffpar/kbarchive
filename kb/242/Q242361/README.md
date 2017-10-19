@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242361: RPC &quot;Server is Unavailable&quot; Message When Audit Log is Full"
-permalink: kb/242/Q242361/
+permalink: /kb/242/Q242361/
 ---
 
 ## Q242361: RPC &quot;Server is Unavailable&quot; Message When Audit Log is Full

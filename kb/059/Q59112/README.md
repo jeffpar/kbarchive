@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59112: Mac Form: Form Designer Adds Scroll Bar to Rectangular Fields"
-permalink: kb/059/Q59112/
+permalink: /kb/059/Q59112/
 ---
 
 ## Q59112: Mac Form: Form Designer Adds Scroll Bar to Rectangular Fields

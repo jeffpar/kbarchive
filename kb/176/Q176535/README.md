@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176535: HOWTO: Save Attachments to File with MSMAPI.VBX or MSMAPI.OCX"
-permalink: kb/176/Q176535/
+permalink: /kb/176/Q176535/
 ---
 
 ## Q176535: HOWTO: Save Attachments to File with MSMAPI.VBX or MSMAPI.OCX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194558: Print Server Translates Characters Below 0x40 to Spaces (0x20)"
-permalink: kb/194/Q194558/
+permalink: /kb/194/Q194558/
 ---
 
 ## Q194558: Print Server Translates Characters Below 0x40 to Spaces (0x20)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160459: DNS Delegations May Fail"
-permalink: kb/160/Q160459/
+permalink: /kb/160/Q160459/
 ---
 
 ## Q160459: DNS Delegations May Fail

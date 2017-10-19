@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190203: RRAS STOP Msg: 0x0000000A After Applying Hotfix"
-permalink: kb/190/Q190203/
+permalink: /kb/190/Q190203/
 ---
 
 ## Q190203: RRAS STOP Msg: 0x0000000A After Applying Hotfix

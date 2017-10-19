@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135058: How to Draw Cubic Bezier Curves in Windows and Win32s"
-permalink: kb/135/Q135058/
+permalink: /kb/135/Q135058/
 ---
 
 ## Q135058: How to Draw Cubic Bezier Curves in Windows and Win32s

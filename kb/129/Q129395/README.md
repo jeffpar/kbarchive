@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129395: Troubleshooting FTP Error 425"
-permalink: kb/129/Q129395/
+permalink: /kb/129/Q129395/
 ---
 
 ## Q129395: Troubleshooting FTP Error 425

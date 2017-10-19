@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134327: Program Group Control Tasks During Startup"
-permalink: kb/134/Q134327/
+permalink: /kb/134/Q134327/
 ---
 
 ## Q134327: Program Group Control Tasks During Startup

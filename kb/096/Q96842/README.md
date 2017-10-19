@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96842: Mac Srv: Failure to Upgrade to Version 3.1a"
-permalink: kb/096/Q96842/
+permalink: /kb/096/Q96842/
 ---
 
 ## Q96842: Mac Srv: Failure to Upgrade to Version 3.1a

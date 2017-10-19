@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170944: WD97: Page Border Art Has a White Background"
-permalink: kb/170/Q170944/
+permalink: /kb/170/Q170944/
 ---
 
 ## Q170944: WD97: Page Border Art Has a White Background

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131199: STRAVINSKY: ^K Character Displayed in Corner of Screen"
-permalink: kb/131/Q131199/
+permalink: /kb/131/Q131199/
 ---
 
 ## Q131199: STRAVINSKY: ^K Character Displayed in Corner of Screen

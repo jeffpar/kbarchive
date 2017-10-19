@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308190: DOC: AspLCID and LogExtFileHost Info Not in IIS Documentation"
-permalink: kb/308/Q308190/
+permalink: /kb/308/Q308190/
 ---
 
 ## Q308190: DOC: AspLCID and LogExtFileHost Info Not in IIS Documentation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168127: &quot;Install New Modem&quot; and Modem List is Blank."
-permalink: kb/168/Q168127/
+permalink: /kb/168/Q168127/
 ---
 
 ## Q168127: &quot;Install New Modem&quot; and Modem List is Blank.

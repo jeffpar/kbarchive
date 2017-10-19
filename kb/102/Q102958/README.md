@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102958: PRB: Passing Modified Environments to Child Processes"
-permalink: kb/102/Q102958/
+permalink: /kb/102/Q102958/
 ---
 
 ## Q102958: PRB: Passing Modified Environments to Child Processes

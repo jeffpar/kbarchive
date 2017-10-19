@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261186: Computer Randomly Plays Classical Music"
-permalink: kb/261/Q261186/
+permalink: /kb/261/Q261186/
 ---
 
 ## Q261186: Computer Randomly Plays Classical Music

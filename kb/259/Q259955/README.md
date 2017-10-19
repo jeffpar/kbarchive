@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259955: StarLancer: Video Adapter Is Not Detected as Direct3D Compatible"
-permalink: kb/259/Q259955/
+permalink: /kb/259/Q259955/
 ---
 
 ## Q259955: StarLancer: Video Adapter Is Not Detected as Direct3D Compatible

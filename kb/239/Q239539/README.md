@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239539: Change the Certificate Validity Period From Default of One Year"
-permalink: kb/239/Q239539/
+permalink: /kb/239/Q239539/
 ---
 
 ## Q239539: Change the Certificate Validity Period From Default of One Year

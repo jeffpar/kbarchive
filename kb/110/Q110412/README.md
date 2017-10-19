@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110412: Screen Corruption in Crop Duster World Scenery"
-permalink: kb/110/Q110412/
+permalink: /kb/110/Q110412/
 ---
 
 ## Q110412: Screen Corruption in Crop Duster World Scenery

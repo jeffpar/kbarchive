@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150946: PRB: Setup Hangs While &quot;Updating System Files&quot;"
-permalink: kb/150/Q150946/
+permalink: /kb/150/Q150946/
 ---
 
 ## Q150946: PRB: Setup Hangs While &quot;Updating System Files&quot;

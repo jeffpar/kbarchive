@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186339: Adobe ATM 4.0 OpenType Fonts Not Showing up in Font Menu"
-permalink: kb/186/Q186339/
+permalink: /kb/186/Q186339/
 ---
 
 ## Q186339: Adobe ATM 4.0 OpenType Fonts Not Showing up in Font Menu

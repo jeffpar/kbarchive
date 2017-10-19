@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157094: WD97: Using StartConversionWizard to Convert Multiple Documents"
-permalink: kb/157/Q157094/
+permalink: /kb/157/Q157094/
 ---
 
 ## Q157094: WD97: Using StartConversionWizard to Convert Multiple Documents

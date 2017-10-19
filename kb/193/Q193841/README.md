@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193841: Adjusting PPTP KeepAlive Frequency"
-permalink: kb/193/Q193841/
+permalink: /kb/193/Q193841/
 ---
 
 ## Q193841: Adjusting PPTP KeepAlive Frequency

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127834: UNCONF: USR Courier HST Dual Standard Modem Disconnects"
-permalink: kb/127/Q127834/
+permalink: /kb/127/Q127834/
 ---
 
 ## Q127834: UNCONF: USR Courier HST Dual Standard Modem Disconnects

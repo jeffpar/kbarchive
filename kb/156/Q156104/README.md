@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156104: HOWTO: Hide Focus on an Active Page Tab in a Pageframe"
-permalink: kb/156/Q156104/
+permalink: /kb/156/Q156104/
 ---
 
 ## Q156104: HOWTO: Hide Focus on an Active Page Tab in a Pageframe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114362: Err Msg After Running BUSETUP.EXE: Wrong DBLSPACE.BIN Version"
-permalink: kb/114/Q114362/
+permalink: /kb/114/Q114362/
 ---
 
 ## Q114362: Err Msg After Running BUSETUP.EXE: Wrong DBLSPACE.BIN Version

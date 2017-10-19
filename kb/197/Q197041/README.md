@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197041: Encarta Encyclopedia 99: Video Clips Are Not Played Smoothly"
-permalink: kb/197/Q197041/
+permalink: /kb/197/Q197041/
 ---
 
 ## Q197041: Encarta Encyclopedia 99: Video Clips Are Not Played Smoothly

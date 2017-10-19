@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175402: XCLN: An Extension Failed To Initialize"
-permalink: kb/175/Q175402/
+permalink: /kb/175/Q175402/
 ---
 
 ## Q175402: XCLN: An Extension Failed To Initialize

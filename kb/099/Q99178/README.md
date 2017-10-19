@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99178: Bookshelf: Cannot Cancel Deletion of Bookmark"
-permalink: kb/099/Q99178/
+permalink: /kb/099/Q99178/
 ---
 
 ## Q99178: Bookshelf: Cannot Cancel Deletion of Bookmark

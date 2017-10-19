@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22523: Windows Does Not Support Real-Time Programming"
-permalink: kb/022/Q22523/
+permalink: /kb/022/Q22523/
 ---
 
 ## Q22523: Windows Does Not Support Real-Time Programming

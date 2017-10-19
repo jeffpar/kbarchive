@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244988: How to Completely Remove IIS4 and NTOP from a Server"
-permalink: kb/244/Q244988/
+permalink: /kb/244/Q244988/
 ---
 
 ## Q244988: How to Completely Remove IIS4 and NTOP from a Server

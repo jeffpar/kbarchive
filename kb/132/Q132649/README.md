@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132649: Compaq Contura Aero APM Does Not Shut Down During Inactivity"
-permalink: kb/132/Q132649/
+permalink: /kb/132/Q132649/
 ---
 
 ## Q132649: Compaq Contura Aero APM Does Not Shut Down During Inactivity

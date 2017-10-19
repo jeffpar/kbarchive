@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98743: ERR: &quot;Not a Database File&quot;; How to Modify Database Header"
-permalink: kb/098/Q98743/
+permalink: /kb/098/Q98743/
 ---
 
 ## Q98743: ERR: &quot;Not a Database File&quot;; How to Modify Database Header

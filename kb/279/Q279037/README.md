@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279037: MSN Companion Troubleshooting Tool MURMUR"
-permalink: kb/279/Q279037/
+permalink: /kb/279/Q279037/
 ---
 
 ## Q279037: MSN Companion Troubleshooting Tool MURMUR

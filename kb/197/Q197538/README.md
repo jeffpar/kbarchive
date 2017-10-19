@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197538: Full-screen DOS Window Is Split with Some Number 9 Video Cards"
-permalink: kb/197/Q197538/
+permalink: /kb/197/Q197538/
 ---
 
 ## Q197538: Full-screen DOS Window Is Split with Some Number 9 Video Cards

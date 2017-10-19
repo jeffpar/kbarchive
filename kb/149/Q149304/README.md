@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149304: TN3270: Admin Tool Causes Application Exception"
-permalink: kb/149/Q149304/
+permalink: /kb/149/Q149304/
 ---
 
 ## Q149304: TN3270: Admin Tool Causes Application Exception

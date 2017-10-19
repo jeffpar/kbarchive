@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303857: Flight Simulator: Can't Add Planes from Combat Flight Simulator"
-permalink: kb/303/Q303857/
+permalink: /kb/303/Q303857/
 ---
 
 ## Q303857: Flight Simulator: Can't Add Planes from Combat Flight Simulator

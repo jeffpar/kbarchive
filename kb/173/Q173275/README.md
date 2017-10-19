@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173275: WD97: EMF Graphic Missing When You Open Document"
-permalink: kb/173/Q173275/
+permalink: /kb/173/Q173275/
 ---
 
 ## Q173275: WD97: EMF Graphic Missing When You Open Document

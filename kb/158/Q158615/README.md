@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158615: INF: How to Use SQLInstallDriver API with a 32-Bit Installer"
-permalink: kb/158/Q158615/
+permalink: /kb/158/Q158615/
 ---
 
 ## Q158615: INF: How to Use SQLInstallDriver API with a 32-Bit Installer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35113: FIX: Nested Dups in Structure Cause Recursive Loop"
-permalink: kb/035/Q35113/
+permalink: /kb/035/Q35113/
 ---
 
 ## Q35113: FIX: Nested Dups in Structure Cause Recursive Loop

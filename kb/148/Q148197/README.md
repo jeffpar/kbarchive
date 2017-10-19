@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148197: XCLN: WinNT Client Can Leave 0 Byte File on W95 or W16 Share"
-permalink: kb/148/Q148197/
+permalink: /kb/148/Q148197/
 ---
 
 ## Q148197: XCLN: WinNT Client Can Leave 0 Byte File on W95 or W16 Share

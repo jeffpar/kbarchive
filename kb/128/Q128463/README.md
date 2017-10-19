@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128463: PROFS: Err Msg: PWABFRD XEDIT EPSSACSS LISTFILE Failed RC=88"
-permalink: kb/128/Q128463/
+permalink: /kb/128/Q128463/
 ---
 
 ## Q128463: PROFS: Err Msg: PWABFRD XEDIT EPSSACSS LISTFILE Failed RC=88

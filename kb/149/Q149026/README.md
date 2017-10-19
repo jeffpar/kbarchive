@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149026: Encarta 1996: Generic Icon Appears for CD-ROM Drive"
-permalink: kb/149/Q149026/
+permalink: /kb/149/Q149026/
 ---
 
 ## Q149026: Encarta 1996: Generic Icon Appears for CD-ROM Drive

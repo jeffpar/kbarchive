@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124016: Encarta: Hangs on MS Home Screen"
-permalink: kb/124/Q124016/
+permalink: /kb/124/Q124016/
 ---
 
 ## Q124016: Encarta: Hangs on MS Home Screen

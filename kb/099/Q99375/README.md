@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99375: How to Repair a Bad Sector in a Compressed Volume File (CVF)"
-permalink: kb/099/Q99375/
+permalink: /kb/099/Q99375/
 ---
 
 ## Q99375: How to Repair a Bad Sector in a Compressed Volume File (CVF)

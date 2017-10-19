@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177592: PRB: User Connection Object Connect Property Remains Populated"
-permalink: kb/177/Q177592/
+permalink: /kb/177/Q177592/
 ---
 
 ## Q177592: PRB: User Connection Object Connect Property Remains Populated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104284: Dinosaurs: Title Bar Does Not Redraw Correctly After Overlap"
-permalink: kb/104/Q104284/
+permalink: /kb/104/Q104284/
 ---
 
 ## Q104284: Dinosaurs: Title Bar Does Not Redraw Correctly After Overlap

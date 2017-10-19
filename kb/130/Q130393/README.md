@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130393: Writer/Artist: Colored Squares Appear Around Some Objects"
-permalink: kb/130/Q130393/
+permalink: /kb/130/Q130393/
 ---
 
 ## Q130393: Writer/Artist: Colored Squares Appear Around Some Objects

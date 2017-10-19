@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173993: Dialog Message Not Sent Correctly from 32-bit to 16-bit App"
-permalink: kb/173/Q173993/
+permalink: /kb/173/Q173993/
 ---
 
 ## Q173993: Dialog Message Not Sent Correctly from 32-bit to 16-bit App

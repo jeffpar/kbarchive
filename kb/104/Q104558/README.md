@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104558: Changing the Computer Name of a Windows NT Advanced Server"
-permalink: kb/104/Q104558/
+permalink: /kb/104/Q104558/
 ---
 
 ## Q104558: Changing the Computer Name of a Windows NT Advanced Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137797: PCM Cannot Connect to NetWare 3.12 Servers"
-permalink: kb/137/Q137797/
+permalink: /kb/137/Q137797/
 ---
 
 ## Q137797: PCM Cannot Connect to NetWare 3.12 Servers

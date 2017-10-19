@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106549: Compressed Audio Doesn't Play on Sound Blaster Card"
-permalink: kb/106/Q106549/
+permalink: /kb/106/Q106549/
 ---
 
 ## Q106549: Compressed Audio Doesn't Play on Sound Blaster Card

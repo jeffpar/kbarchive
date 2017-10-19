@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130011: DEC DE422 Network Adapter Not Listed"
-permalink: kb/130/Q130011/
+permalink: /kb/130/Q130011/
 ---
 
 ## Q130011: DEC DE422 Network Adapter Not Listed

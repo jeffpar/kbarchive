@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119736: How to Implement the BackColor Property in VBX Custom Control"
-permalink: kb/119/Q119736/
+permalink: /kb/119/Q119736/
 ---
 
 ## Q119736: How to Implement the BackColor Property in VBX Custom Control

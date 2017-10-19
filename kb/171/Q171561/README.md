@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171561: Inside COM: CD-ROM: Problems Compiling Tangram Source Code"
-permalink: kb/171/Q171561/
+permalink: /kb/171/Q171561/
 ---
 
 ## Q171561: Inside COM: CD-ROM: Problems Compiling Tangram Source Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195726: Virtual Globe 99: Current Speed Not Displayed in Virtual Flights"
-permalink: kb/195/Q195726/
+permalink: /kb/195/Q195726/
 ---
 
 ## Q195726: Virtual Globe 99: Current Speed Not Displayed in Virtual Flights

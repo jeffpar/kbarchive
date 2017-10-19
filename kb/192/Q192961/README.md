@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192961: PRB: SET DECIMAL Limited to Four Decimals in Currency Data"
-permalink: kb/192/Q192961/
+permalink: /kb/192/Q192961/
 ---
 
 ## Q192961: PRB: SET DECIMAL Limited to Four Decimals in Currency Data

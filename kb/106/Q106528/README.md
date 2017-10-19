@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106528: BUG: Error in WINTEE.PIF Causes &quot;Start-Up Directory Not Found&quot;"
-permalink: kb/106/Q106528/
+permalink: /kb/106/Q106528/
 ---
 
 ## Q106528: BUG: Error in WINTEE.PIF Causes &quot;Start-Up Directory Not Found&quot;

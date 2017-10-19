@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142873: STOP 0x0000000A Using Banyan Vines Driver VNS.SYS"
-permalink: kb/142/Q142873/
+permalink: /kb/142/Q142873/
 ---
 
 ## Q142873: STOP 0x0000000A Using Banyan Vines Driver VNS.SYS

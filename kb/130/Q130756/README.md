@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130756: PC Adm: Err Msg: Notice 28 Mailbox Recovered"
-permalink: kb/130/Q130756/
+permalink: /kb/130/Q130756/
 ---
 
 ## Q130756: PC Adm: Err Msg: Notice 28 Mailbox Recovered

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168402: WD97: Opening Version After Updating Linked Picture Hangs Word"
-permalink: kb/168/Q168402/
+permalink: /kb/168/Q168402/
 ---
 
 ## Q168402: WD97: Opening Version After Updating Linked Picture Hangs Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76765: README.TXT: Using Windows with Multimedia Extensions"
-permalink: kb/076/Q76765/
+permalink: /kb/076/Q76765/
 ---
 
 ## Q76765: README.TXT: Using Windows with Multimedia Extensions

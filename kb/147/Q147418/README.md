@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147418: MAC Asimov: Minimum System Requirements"
-permalink: kb/147/Q147418/
+permalink: /kb/147/Q147418/
 ---
 
 ## Q147418: MAC Asimov: Minimum System Requirements

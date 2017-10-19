@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197845: COMPAQ Server with System Disk on SMART-2 Array May Hang"
-permalink: kb/197/Q197845/
+permalink: /kb/197/Q197845/
 ---
 
 ## Q197845: COMPAQ Server with System Disk on SMART-2 Array May Hang

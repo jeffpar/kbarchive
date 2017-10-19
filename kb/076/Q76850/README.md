@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76850: README.TXT: Using HIMEM.SYS"
-permalink: kb/076/Q76850/
+permalink: /kb/076/Q76850/
 ---
 
 ## Q76850: README.TXT: Using HIMEM.SYS

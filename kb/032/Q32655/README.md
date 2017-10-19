@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q32655: DIR Does Not Work with ANSI Escape Sequence ESC[nh"
-permalink: kb/032/Q32655/
+title: "Q32655: DIR Does Not Work with ANSI Escape Sequence ESC&#91;nh"
+permalink: /kb/032/Q32655/
 ---
 
-## Q32655: DIR Does Not Work with ANSI Escape Sequence ESC[nh
+## Q32655: DIR Does Not Work with ANSI Escape Sequence ESC&#91;nh
 
 	Article: Q32655
 	Product(s): Microsoft Disk Operating System

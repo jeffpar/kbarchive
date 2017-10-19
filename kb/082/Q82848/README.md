@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82848: PCTools CPLauncher Has Repaint Problem with Control Menu"
-permalink: kb/082/Q82848/
+permalink: /kb/082/Q82848/
 ---
 
 ## Q82848: PCTools CPLauncher Has Repaint Problem with Control Menu

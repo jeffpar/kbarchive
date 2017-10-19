@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273917: Crimson Skies: Slow Performance When You Play Game for Long Time"
-permalink: kb/273/Q273917/
+permalink: /kb/273/Q273917/
 ---
 
 ## Q273917: Crimson Skies: Slow Performance When You Play Game for Long Time

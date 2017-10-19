@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243014: WD97: &quot;Unknown Switch Argument&quot; Opening Danish Word 2000 File"
-permalink: kb/243/Q243014/
+permalink: /kb/243/Q243014/
 ---
 
 ## Q243014: WD97: &quot;Unknown Switch Argument&quot; Opening Danish Word 2000 File

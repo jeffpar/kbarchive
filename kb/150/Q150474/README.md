@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150474: Accessing an Access Database Through GSNW May Hang Access"
-permalink: kb/150/Q150474/
+permalink: /kb/150/Q150474/
 ---
 
 ## Q150474: Accessing an Access Database Through GSNW May Hang Access

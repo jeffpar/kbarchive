@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149210: ACCESS FOR WINDOWS 95 STEP BY STEP Corrections and Comments"
-permalink: kb/149/Q149210/
+permalink: /kb/149/Q149210/
 ---
 
 ## Q149210: ACCESS FOR WINDOWS 95 STEP BY STEP Corrections and Comments

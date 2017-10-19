@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192922: MIFs Not Processed After Applying Hotfix for Q188880"
-permalink: kb/192/Q192922/
+permalink: /kb/192/Q192922/
 ---
 
 ## Q192922: MIFs Not Processed After Applying Hotfix for Q188880

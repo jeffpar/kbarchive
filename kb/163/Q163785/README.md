@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163785: FIX: &quot;Error Instantiating Application Object&quot; on Windows NT"
-permalink: kb/163/Q163785/
+permalink: /kb/163/Q163785/
 ---
 
 ## Q163785: FIX: &quot;Error Instantiating Application Object&quot; on Windows NT

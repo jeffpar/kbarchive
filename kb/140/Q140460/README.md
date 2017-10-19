@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140460: Dial-Up Networking Does Not Obtain an IP Address"
-permalink: kb/140/Q140460/
+permalink: /kb/140/Q140460/
 ---
 
 ## Q140460: Dial-Up Networking Does Not Obtain an IP Address

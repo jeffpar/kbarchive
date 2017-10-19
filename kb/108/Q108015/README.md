@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108015: MS-DOS 6.0 and 6.2 Setup Move EDIT.BAT to OLD_DOS.1"
-permalink: kb/108/Q108015/
+permalink: /kb/108/Q108015/
 ---
 
 ## Q108015: MS-DOS 6.0 and 6.2 Setup Move EDIT.BAT to OLD_DOS.1

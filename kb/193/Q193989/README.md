@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193989: Opening Subdomain in SNA Manager Fails on Every Other Attempt"
-permalink: kb/193/Q193989/
+permalink: /kb/193/Q193989/
 ---
 
 ## Q193989: Opening Subdomain in SNA Manager Fails on Every Other Attempt

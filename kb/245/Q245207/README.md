@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245207: Names and Descriptions of Windows NT Rights."
-permalink: kb/245/Q245207/
+permalink: /kb/245/Q245207/
 ---
 
 ## Q245207: Names and Descriptions of Windows NT Rights.

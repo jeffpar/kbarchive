@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224460: Err Msg: Error Connecting to &lt;Servername&gt; The RPC Service..."
-permalink: kb/224/Q224460/
+permalink: /kb/224/Q224460/
 ---
 
 ## Q224460: Err Msg: Error Connecting to &lt;Servername&gt; The RPC Service...

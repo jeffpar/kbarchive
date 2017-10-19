@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272236: Games: Video Problems with Intense3D Wildcat Video Adapter"
-permalink: kb/272/Q272236/
+permalink: /kb/272/Q272236/
 ---
 
 ## Q272236: Games: Video Problems with Intense3D Wildcat Video Adapter

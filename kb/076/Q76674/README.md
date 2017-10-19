@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76674: MS-DOS Shell Has Trouble Maintaining Dual File Lists"
-permalink: kb/076/Q76674/
+permalink: /kb/076/Q76674/
 ---
 
 ## Q76674: MS-DOS Shell Has Trouble Maintaining Dual File Lists

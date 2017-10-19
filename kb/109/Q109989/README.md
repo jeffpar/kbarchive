@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109989: PROFS: Location Field in Meeting Request Dropped"
-permalink: kb/109/Q109989/
+permalink: /kb/109/Q109989/
 ---
 
 ## Q109989: PROFS: Location Field in Meeting Request Dropped

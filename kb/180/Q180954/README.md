@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180954: Allocation of Print Server Threads May Cause Delays"
-permalink: kb/180/Q180954/
+permalink: /kb/180/Q180954/
 ---
 
 ## Q180954: Allocation of Print Server Threads May Cause Delays

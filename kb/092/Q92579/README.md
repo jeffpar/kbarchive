@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92579: WFWG: No Error Message If Save or Open Fails with ClipBook"
-permalink: kb/092/Q92579/
+permalink: /kb/092/Q92579/
 ---
 
 ## Q92579: WFWG: No Error Message If Save or Open Fails with ClipBook

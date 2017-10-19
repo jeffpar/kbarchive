@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263029: XCON: Internet Mail Service Setup Does Not Work on Windows 2000"
-permalink: kb/263/Q263029/
+permalink: /kb/263/Q263029/
 ---
 
 ## Q263029: XCON: Internet Mail Service Setup Does Not Work on Windows 2000

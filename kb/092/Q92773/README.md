@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92773: WFWG: Problems when Windows Express Version 3.0 Run as Shell"
-permalink: kb/092/Q92773/
+permalink: /kb/092/Q92773/
 ---
 
 ## Q92773: WFWG: Problems when Windows Express Version 3.0 Run as Shell

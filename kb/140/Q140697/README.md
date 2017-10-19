@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140697: INF: Win16 ODBC Applications in a Win32 Environment"
-permalink: kb/140/Q140697/
+permalink: /kb/140/Q140697/
 ---
 
 ## Q140697: INF: Win16 ODBC Applications in a Win32 Environment

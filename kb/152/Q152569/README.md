@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152569: SNMP Agent Does Not Respond After Suspend Power Is Invoked"
-permalink: kb/152/Q152569/
+permalink: /kb/152/Q152569/
 ---
 
 ## Q152569: SNMP Agent Does Not Respond After Suspend Power Is Invoked

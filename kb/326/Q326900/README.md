@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326900: FIX: Stop XID Exchange When It Does Not Complete"
-permalink: kb/326/Q326900/
+permalink: /kb/326/Q326900/
 ---
 
 ## Q326900: FIX: Stop XID Exchange When It Does Not Complete

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196895: XADM: Mailbox Receives Duplicate Messages after Server is Moved"
-permalink: kb/196/Q196895/
+permalink: /kb/196/Q196895/
 ---
 
 ## Q196895: XADM: Mailbox Receives Duplicate Messages after Server is Moved

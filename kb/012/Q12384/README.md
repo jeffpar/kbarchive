@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q12384: INFO: More Information About Atoms"
-permalink: kb/012/Q12384/
+permalink: /kb/012/Q12384/
 ---
 
 ## Q12384: INFO: More Information About Atoms

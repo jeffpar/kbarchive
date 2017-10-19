@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172013: W/out ODBC/DRDA Option, 32-Bit ODBC Administrator Is Deleted"
-permalink: kb/172/Q172013/
+permalink: /kb/172/Q172013/
 ---
 
 ## Q172013: W/out ODBC/DRDA Option, 32-Bit ODBC Administrator Is Deleted

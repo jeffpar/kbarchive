@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92993: WFWG Resource Kit Setup and Utilities 3.5-Inch Disk"
-permalink: kb/092/Q92993/
+permalink: /kb/092/Q92993/
 ---
 
 ## Q92993: WFWG Resource Kit Setup and Utilities 3.5-Inch Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160986: SMS: Dosetup.exe Fails with &quot;Runs with UNC Name&quot; Option Enabled"
-permalink: kb/160/Q160986/
+permalink: /kb/160/Q160986/
 ---
 
 ## Q160986: SMS: Dosetup.exe Fails with &quot;Runs with UNC Name&quot; Option Enabled

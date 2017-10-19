@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175424: Return of Arcade: Game Does Not Appear on Screen"
-permalink: kb/175/Q175424/
+permalink: /kb/175/Q175424/
 ---
 
 ## Q175424: Return of Arcade: Game Does Not Appear on Screen

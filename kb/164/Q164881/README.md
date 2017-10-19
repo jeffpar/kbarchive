@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164881: PERL 5 May Cause a Dr. Watson Access Violation in Inetinfo.exe"
-permalink: kb/164/Q164881/
+permalink: /kb/164/Q164881/
 ---
 
 ## Q164881: PERL 5 May Cause a Dr. Watson Access Violation in Inetinfo.exe

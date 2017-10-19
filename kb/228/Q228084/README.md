@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228084: Baseball 2000: How to Troubleshoot Graphics Issues"
-permalink: kb/228/Q228084/
+permalink: /kb/228/Q228084/
 ---
 
 ## Q228084: Baseball 2000: How to Troubleshoot Graphics Issues

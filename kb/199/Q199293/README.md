@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199293: PRB: Numeric Value Out of Range Error with MS Oracle ODBC Driver"
-permalink: kb/199/Q199293/
+permalink: /kb/199/Q199293/
 ---
 
 ## Q199293: PRB: Numeric Value Out of Range Error with MS Oracle ODBC Driver

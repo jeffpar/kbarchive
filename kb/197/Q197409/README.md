@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197409: Encarta: How to Recover Integrated Yearbook Update Files"
-permalink: kb/197/Q197409/
+permalink: /kb/197/Q197409/
 ---
 
 ## Q197409: Encarta: How to Recover Integrated Yearbook Update Files

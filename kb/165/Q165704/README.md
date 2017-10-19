@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165704: Snanmvt.exe Access Violation in SNADMOD!sbpibhrl"
-permalink: kb/165/Q165704/
+permalink: /kb/165/Q165704/
 ---
 
 ## Q165704: Snanmvt.exe Access Violation in SNADMOD!sbpibhrl

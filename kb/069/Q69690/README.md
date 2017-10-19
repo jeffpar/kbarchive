@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69690: Terminal Automatically Loads TERMINAL.TRM"
-permalink: kb/069/Q69690/
+permalink: /kb/069/Q69690/
 ---
 
 ## Q69690: Terminal Automatically Loads TERMINAL.TRM

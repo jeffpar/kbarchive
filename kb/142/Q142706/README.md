@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142706: Source Routing with NetBEUI Not Supported in FDDI Environment"
-permalink: kb/142/Q142706/
+permalink: /kb/142/Q142706/
 ---
 
 ## Q142706: Source Routing with NetBEUI Not Supported in FDDI Environment

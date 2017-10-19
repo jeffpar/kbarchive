@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232958: INFO: Cannot Restart CESH After the Connection Is Broken"
-permalink: kb/232/Q232958/
+permalink: /kb/232/Q232958/
 ---
 
 ## Q232958: INFO: Cannot Restart CESH After the Connection Is Broken

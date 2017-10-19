@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247923: SMS: Windows 95 Client Produces GPF When Remotely Administered"
-permalink: kb/247/Q247923/
+permalink: /kb/247/Q247923/
 ---
 
 ## Q247923: SMS: Windows 95 Client Produces GPF When Remotely Administered

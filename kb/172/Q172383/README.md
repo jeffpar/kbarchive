@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172383: WD97: Matching AddressLayout Fields to Outlook Contact Fields"
-permalink: kb/172/Q172383/
+permalink: /kb/172/Q172383/
 ---
 
 ## Q172383: WD97: Matching AddressLayout Fields to Outlook Contact Fields

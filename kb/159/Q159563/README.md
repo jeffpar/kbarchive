@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159563: XCLN: Citrix WinFrame FAQ"
-permalink: kb/159/Q159563/
+permalink: /kb/159/Q159563/
 ---
 
 ## Q159563: XCLN: Citrix WinFrame FAQ

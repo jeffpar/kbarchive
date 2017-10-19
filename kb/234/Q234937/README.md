@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234937: Worm.Explore.Zip Virus Alert"
-permalink: kb/234/Q234937/
+permalink: /kb/234/Q234937/
 ---
 
 ## Q234937: Worm.Explore.Zip Virus Alert

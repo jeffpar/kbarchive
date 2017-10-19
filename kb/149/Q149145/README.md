@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149145: BUG: F1001 Error in Write of Namelist in Internal Procedure"
-permalink: kb/149/Q149145/
+permalink: /kb/149/Q149145/
 ---
 
 ## Q149145: BUG: F1001 Error in Write of Namelist in Internal Procedure

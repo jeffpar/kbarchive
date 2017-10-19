@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119310: FAX: Cover Sheet Size Requirements in Inches"
-permalink: kb/119/Q119310/
+permalink: /kb/119/Q119310/
 ---
 
 ## Q119310: FAX: Cover Sheet Size Requirements in Inches

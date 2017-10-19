@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139719: &quot;Science&quot; and &quot;60's USA&quot; Screen Savers Require 256 Colors"
-permalink: kb/139/Q139719/
+permalink: /kb/139/Q139719/
 ---
 
 ## Q139719: &quot;Science&quot; and &quot;60's USA&quot; Screen Savers Require 256 Colors

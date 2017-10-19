@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149563: Fatal Exception 0E in Ios.vxd with SCSI Printer"
-permalink: kb/149/Q149563/
+permalink: /kb/149/Q149563/
 ---
 
 ## Q149563: Fatal Exception 0E in Ios.vxd with SCSI Printer

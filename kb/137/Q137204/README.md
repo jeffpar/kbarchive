@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137204: Attachments Sent to Schedule+ 1.0 User Cannot Be Saved"
-permalink: kb/137/Q137204/
+permalink: /kb/137/Q137204/
 ---
 
 ## Q137204: Attachments Sent to Schedule+ 1.0 User Cannot Be Saved

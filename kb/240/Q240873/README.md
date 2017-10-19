@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240873: XFOR: Notes Migration Source Extractor Fails To Migrate Mail"
-permalink: kb/240/Q240873/
+permalink: /kb/240/Q240873/
 ---
 
 ## Q240873: XFOR: Notes Migration Source Extractor Fails To Migrate Mail

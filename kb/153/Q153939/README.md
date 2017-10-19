@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153939: WFW TCPIP32b Client Does Not Hold Lease if DHCP Not Available"
-permalink: kb/153/Q153939/
+permalink: /kb/153/Q153939/
 ---
 
 ## Q153939: WFW TCPIP32b Client Does Not Hold Lease if DHCP Not Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176373: Fatal Exception After Hardcore Visual Basic 2nd Ed. Setup"
-permalink: kb/176/Q176373/
+permalink: /kb/176/Q176373/
 ---
 
 ## Q176373: Fatal Exception After Hardcore Visual Basic 2nd Ed. Setup

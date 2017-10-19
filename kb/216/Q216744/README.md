@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216744: SMS: APM Detects Non-Zero Exit Code as a Failed Advertisement"
-permalink: kb/216/Q216744/
+permalink: /kb/216/Q216744/
 ---
 
 ## Q216744: SMS: APM Detects Non-Zero Exit Code as a Failed Advertisement

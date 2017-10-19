@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104214: MS-DOS Keywords Cannot Be Used in Multi-Config Menus"
-permalink: kb/104/Q104214/
+permalink: /kb/104/Q104214/
 ---
 
 ## Q104214: MS-DOS Keywords Cannot Be Used in Multi-Config Menus

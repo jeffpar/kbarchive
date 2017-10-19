@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117240: Windows 3.11 Directory Listing for Disk 2 (5.25 Inch 1.2 MB)"
-permalink: kb/117/Q117240/
+permalink: /kb/117/Q117240/
 ---
 
 ## Q117240: Windows 3.11 Directory Listing for Disk 2 (5.25 Inch 1.2 MB)

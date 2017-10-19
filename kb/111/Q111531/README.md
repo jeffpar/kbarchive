@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111531: FORMAT /S and SYS Copy Invalid System File with 4DOS or NDOS"
-permalink: kb/111/Q111531/
+permalink: /kb/111/Q111531/
 ---
 
 ## Q111531: FORMAT /S and SYS Copy Invalid System File with 4DOS or NDOS

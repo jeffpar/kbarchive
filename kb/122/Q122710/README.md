@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122710: Display Drivers Included with Windows 95 and Supported Modes"
-permalink: kb/122/Q122710/
+permalink: /kb/122/Q122710/
 ---
 
 ## Q122710: Display Drivers Included with Windows 95 and Supported Modes

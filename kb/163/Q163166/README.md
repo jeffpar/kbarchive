@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163166: HOWTO: Fixing the &quot;500 Extended Server Error&quot; Problem on ISAPI"
-permalink: kb/163/Q163166/
+permalink: /kb/163/Q163166/
 ---
 
 ## Q163166: HOWTO: Fixing the &quot;500 Extended Server Error&quot; Problem on ISAPI

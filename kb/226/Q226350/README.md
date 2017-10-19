@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226350: XCLN: Can't Open Additional Mailboxes with Outlook DPA"
-permalink: kb/226/Q226350/
+permalink: /kb/226/Q226350/
 ---
 
 ## Q226350: XCLN: Can't Open Additional Mailboxes with Outlook DPA

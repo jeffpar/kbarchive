@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118361: Mac Bookshelf: Quickshelf Does Not Recognize Words in Works"
-permalink: kb/118/Q118361/
+permalink: /kb/118/Q118361/
 ---
 
 ## Q118361: Mac Bookshelf: Quickshelf Does Not Recognize Words in Works

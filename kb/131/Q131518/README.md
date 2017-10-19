@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131518: PC WSPlus: Can Not Print from Note Section of Archived Files"
-permalink: kb/131/Q131518/
+permalink: /kb/131/Q131518/
 ---
 
 ## Q131518: PC WSPlus: Can Not Print from Note Section of Archived Files

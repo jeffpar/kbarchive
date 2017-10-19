@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130741: Services for Macintosh and AppleTalk Do Not Detect 3COM 3C595"
-permalink: kb/130/Q130741/
+permalink: /kb/130/Q130741/
 ---
 
 ## Q130741: Services for Macintosh and AppleTalk Do Not Detect 3COM 3C595

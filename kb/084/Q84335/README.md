@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84335: Canon and DeskJet Printers Only Offer TrueType at 300 x 300"
-permalink: kb/084/Q84335/
+permalink: /kb/084/Q84335/
 ---
 
 ## Q84335: Canon and DeskJet Printers Only Offer TrueType at 300 x 300

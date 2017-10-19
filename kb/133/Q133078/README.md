@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133078: Known Issues Scrolling in Chat Sessions"
-permalink: kb/133/Q133078/
+permalink: /kb/133/Q133078/
 ---
 
 ## Q133078: Known Issues Scrolling in Chat Sessions

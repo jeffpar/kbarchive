@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93557: Controlling the Maximum Open Volumes for LMSFM"
-permalink: kb/093/Q93557/
+permalink: /kb/093/Q93557/
 ---
 
 ## Q93557: Controlling the Maximum Open Volumes for LMSFM

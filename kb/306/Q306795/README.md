@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306795: Services for UNIX Management Console May Hang"
-permalink: kb/306/Q306795/
+permalink: /kb/306/Q306795/
 ---
 
 ## Q306795: Services for UNIX Management Console May Hang

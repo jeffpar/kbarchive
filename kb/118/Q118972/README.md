@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118972: Parallel Port Printing Problems on IBM Thinkpad"
-permalink: kb/118/Q118972/
+permalink: /kb/118/Q118972/
 ---
 
 ## Q118972: Parallel Port Printing Problems on IBM Thinkpad

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172416: FTP Clients Cannot Rename Files on Remote FTP Virtual Directory"
-permalink: kb/172/Q172416/
+permalink: /kb/172/Q172416/
 ---
 
 ## Q172416: FTP Clients Cannot Rename Files on Remote FTP Virtual Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238552: How to Install Hotfixes and Check Versions of Installed Hotfixes"
-permalink: kb/238/Q238552/
+permalink: /kb/238/Q238552/
 ---
 
 ## Q238552: How to Install Hotfixes and Check Versions of Installed Hotfixes

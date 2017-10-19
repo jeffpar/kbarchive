@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106023: WFWG Setup Leaves Two Sets of Mail and Schedule+ Icons"
-permalink: kb/106/Q106023/
+permalink: /kb/106/Q106023/
 ---
 
 ## Q106023: WFWG Setup Leaves Two Sets of Mail and Schedule+ Icons

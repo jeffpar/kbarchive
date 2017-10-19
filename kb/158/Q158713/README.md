@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158713: Fatal Exception Error Using DHCP"
-permalink: kb/158/Q158713/
+permalink: /kb/158/Q158713/
 ---
 
 ## Q158713: Fatal Exception Error Using DHCP

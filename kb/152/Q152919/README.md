@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152919: XFOR: SMTP CRs Routed to Home Site Before Going Out IMC"
-permalink: kb/152/Q152919/
+permalink: /kb/152/Q152919/
 ---
 
 ## Q152919: XFOR: SMTP CRs Routed to Home Site Before Going Out IMC

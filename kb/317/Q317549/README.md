@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317549: How To Configure TCP/IP Settings In A Macintosh OS For A Remote"
-permalink: kb/317/Q317549/
+permalink: /kb/317/Q317549/
 ---
 
 ## Q317549: How To Configure TCP/IP Settings In A Macintosh OS For A Remote

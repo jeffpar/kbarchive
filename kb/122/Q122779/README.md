@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122779: CONN: GW Version 3.2.11 Update"
-permalink: kb/122/Q122779/
+permalink: /kb/122/Q122779/
 ---
 
 ## Q122779: CONN: GW Version 3.2.11 Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85423: README.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85423/
+permalink: /kb/085/Q85423/
 ---
 
 ## Q85423: README.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2

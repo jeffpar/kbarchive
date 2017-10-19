@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260373: FIX: The SSTab Events May Fire Despite Cancel = True"
-permalink: kb/260/Q260373/
+permalink: /kb/260/Q260373/
 ---
 
 ## Q260373: FIX: The SSTab Events May Fire Despite Cancel = True

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238642: XADM: Troubleshooting the InterOrg Replication Utility"
-permalink: kb/238/Q238642/
+permalink: /kb/238/Q238642/
 ---
 
 ## Q238642: XADM: Troubleshooting the InterOrg Replication Utility

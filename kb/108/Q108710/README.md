@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108710: PRB: Extra Repaint of VB CDK Graphical Custom Control"
-permalink: kb/108/Q108710/
+permalink: /kb/108/Q108710/
 ---
 
 ## Q108710: PRB: Extra Repaint of VB CDK Graphical Custom Control

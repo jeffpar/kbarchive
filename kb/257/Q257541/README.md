@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257541: HOWTO: Write to the NT Sys Log with the Windows Script Host"
-permalink: kb/257/Q257541/
+permalink: /kb/257/Q257541/
 ---
 
 ## Q257541: HOWTO: Write to the NT Sys Log with the Windows Script Host

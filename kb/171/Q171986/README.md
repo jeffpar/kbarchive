@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171986: MSN Mail Does Not Start Microsoft Outlook"
-permalink: kb/171/Q171986/
+permalink: /kb/171/Q171986/
 ---
 
 ## Q171986: MSN Mail Does Not Start Microsoft Outlook

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163314: Occasional Event 23 Outages With a Microgate SDLC Adapter"
-permalink: kb/163/Q163314/
+permalink: /kb/163/Q163314/
 ---
 
 ## Q163314: Occasional Event 23 Outages With a Microgate SDLC Adapter

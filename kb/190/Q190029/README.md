@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190029: INFO: Print Out File Properties Using the FileSystemObject"
-permalink: kb/190/Q190029/
+permalink: /kb/190/Q190029/
 ---
 
 ## Q190029: INFO: Print Out File Properties Using the FileSystemObject

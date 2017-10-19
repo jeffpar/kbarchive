@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164647: Server Displays Offline When Link Drops and Recovers"
-permalink: kb/164/Q164647/
+permalink: /kb/164/Q164647/
 ---
 
 ## Q164647: Server Displays Offline When Link Drops and Recovers

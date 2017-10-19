@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174152: XADM: Exchange Does not Support AUTH-LOGIN Authentication"
-permalink: kb/174/Q174152/
+permalink: /kb/174/Q174152/
 ---
 
 ## Q174152: XADM: Exchange Does not Support AUTH-LOGIN Authentication

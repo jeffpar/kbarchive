@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243613: Unable to access AOL with MSN"
-permalink: kb/243/Q243613/
+permalink: /kb/243/Q243613/
 ---
 
 ## Q243613: Unable to access AOL with MSN

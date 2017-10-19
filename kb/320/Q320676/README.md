@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320676: SMS: Description of the Job Priorities Used by SMS Components"
-permalink: kb/320/Q320676/
+permalink: /kb/320/Q320676/
 ---
 
 ## Q320676: SMS: Description of the Job Priorities Used by SMS Components

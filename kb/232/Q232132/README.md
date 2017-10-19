@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232132: MMC Does not Show Physical Directories under FTP Root"
-permalink: kb/232/Q232132/
+permalink: /kb/232/Q232132/
 ---
 
 ## Q232132: MMC Does not Show Physical Directories under FTP Root

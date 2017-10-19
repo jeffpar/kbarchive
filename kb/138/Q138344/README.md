@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138344: HOWTO: Set up a Shadow Dir in Visual SourceSafe Administrator"
-permalink: kb/138/Q138344/
+permalink: /kb/138/Q138344/
 ---
 
 ## Q138344: HOWTO: Set up a Shadow Dir in Visual SourceSafe Administrator

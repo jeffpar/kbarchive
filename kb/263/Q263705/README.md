@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263705: XADM: Time Settings Incorrect"
-permalink: kb/263/Q263705/
+permalink: /kb/263/Q263705/
 ---
 
 ## Q263705: XADM: Time Settings Incorrect

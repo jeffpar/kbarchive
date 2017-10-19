@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308175: DOC: Broken Links in ASP Help Files"
-permalink: kb/308/Q308175/
+permalink: /kb/308/Q308175/
 ---
 
 ## Q308175: DOC: Broken Links in ASP Help Files

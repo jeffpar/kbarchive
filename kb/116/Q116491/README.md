@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116491: PRB: ClassWizard Links Only Types with DDX Support"
-permalink: kb/116/Q116491/
+permalink: /kb/116/Q116491/
 ---
 
 ## Q116491: PRB: ClassWizard Links Only Types with DDX Support

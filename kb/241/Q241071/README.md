@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241071: How to Locate an Access Number for MSN"
-permalink: kb/241/Q241071/
+permalink: /kb/241/Q241071/
 ---
 
 ## Q241071: How to Locate an Access Number for MSN

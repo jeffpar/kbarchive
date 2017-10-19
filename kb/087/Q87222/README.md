@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87222: PROFS: DOS Errorlevel Messages"
-permalink: kb/087/Q87222/
+permalink: /kb/087/Q87222/
 ---
 
 ## Q87222: PROFS: DOS Errorlevel Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132044: INFO: Using _declspec(dllimport) &amp; _declspec(dllexport) in Code"
-permalink: kb/132/Q132044/
+permalink: /kb/132/Q132044/
 ---
 
 ## Q132044: INFO: Using _declspec(dllimport) &amp; _declspec(dllexport) in Code

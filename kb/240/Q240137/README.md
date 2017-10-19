@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240137: PRB: Invalid Return from SQL Server ODBC Driver ver. 3.70.0623"
-permalink: kb/240/Q240137/
+permalink: /kb/240/Q240137/
 ---
 
 ## Q240137: PRB: Invalid Return from SQL Server ODBC Driver ver. 3.70.0623

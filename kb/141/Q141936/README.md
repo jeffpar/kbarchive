@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141936: Writer: How to Import Text"
-permalink: kb/141/Q141936/
+permalink: /kb/141/Q141936/
 ---
 
 ## Q141936: Writer: How to Import Text

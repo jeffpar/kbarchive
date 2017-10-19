@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264195: Memory Problems with Certain Models of Dell Laptop Computers"
-permalink: kb/264/Q264195/
+permalink: /kb/264/Q264195/
 ---
 
 ## Q264195: Memory Problems with Certain Models of Dell Laptop Computers

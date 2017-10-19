@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274904: CFS2: Stops Responding or Quits Unexpectedly"
-permalink: kb/274/Q274904/
+permalink: /kb/274/Q274904/
 ---
 
 ## Q274904: CFS2: Stops Responding or Quits Unexpectedly

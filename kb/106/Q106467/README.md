@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106467: Macros and Switches Not Defined in Visual C++ 32-bit Edition"
-permalink: kb/106/Q106467/
+permalink: /kb/106/Q106467/
 ---
 
 ## Q106467: Macros and Switches Not Defined in Visual C++ 32-bit Edition

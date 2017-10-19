@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240344: SMS: Clients Do Not Report Advertisement Status"
-permalink: kb/240/Q240344/
+permalink: /kb/240/Q240344/
 ---
 
 ## Q240344: SMS: Clients Do Not Report Advertisement Status

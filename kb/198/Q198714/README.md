@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198714: SMS: Enabling Power Management May Cause Remote Control to Fail"
-permalink: kb/198/Q198714/
+permalink: /kb/198/Q198714/
 ---
 
 ## Q198714: SMS: Enabling Power Management May Cause Remote Control to Fail

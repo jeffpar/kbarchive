@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168781: XFOR: Sending to SMTP Gets Immediate NDR 550 Error Message"
-permalink: kb/168/Q168781/
+permalink: /kb/168/Q168781/
 ---
 
 ## Q168781: XFOR: Sending to SMTP Gets Immediate NDR 550 Error Message

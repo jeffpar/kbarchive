@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130866: INFO: Using a TimerProc Function in MFC Application"
-permalink: kb/130/Q130866/
+permalink: /kb/130/Q130866/
 ---
 
 ## Q130866: INFO: Using a TimerProc Function in MFC Application

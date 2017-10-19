@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200812: Chat MMC is Unable to Save View with Two or More Expanded Server"
-permalink: kb/200/Q200812/
+permalink: /kb/200/Q200812/
 ---
 
 ## Q200812: Chat MMC is Unable to Save View with Two or More Expanded Server

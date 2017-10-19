@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130613: Audio, MIDI, Capture Cards Requiring Windows 3.1 Drivers"
-permalink: kb/130/Q130613/
+permalink: /kb/130/Q130613/
 ---
 
 ## Q130613: Audio, MIDI, Capture Cards Requiring Windows 3.1 Drivers

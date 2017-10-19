@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99629: Values Returned by UDFs Cannot Be Centered in a Report"
-permalink: kb/099/Q99629/
+permalink: /kb/099/Q99629/
 ---
 
 ## Q99629: Values Returned by UDFs Cannot Be Centered in a Report

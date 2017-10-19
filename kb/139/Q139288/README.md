@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139288: How to Change the Default Port Speed on a RAS Server"
-permalink: kb/139/Q139288/
+permalink: /kb/139/Q139288/
 ---
 
 ## Q139288: How to Change the Default Port Speed on a RAS Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166567: XCON: How to Enable Lowest Cost Routes Only"
-permalink: kb/166/Q166567/
+permalink: /kb/166/Q166567/
 ---
 
 ## Q166567: XCON: How to Enable Lowest Cost Routes Only

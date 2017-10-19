@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260866: FS2000: Gauges Display Incorrect Data in Instant Replay Mode"
-permalink: kb/260/Q260866/
+permalink: /kb/260/Q260866/
 ---
 
 ## Q260866: FS2000: Gauges Display Incorrect Data in Instant Replay Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90197: WFWG Err Msg: Invalid or Missing COMMAND.COM"
-permalink: kb/090/Q90197/
+permalink: /kb/090/Q90197/
 ---
 
 ## Q90197: WFWG Err Msg: Invalid or Missing COMMAND.COM

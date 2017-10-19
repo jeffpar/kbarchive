@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244907: WD97: Vertical Alignment Causes Incorrect Text Wrapping"
-permalink: kb/244/Q244907/
+permalink: /kb/244/Q244907/
 ---
 
 ## Q244907: WD97: Vertical Alignment Causes Incorrect Text Wrapping

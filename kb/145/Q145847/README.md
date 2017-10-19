@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145847: Mac Encarta: Unpacking Error: Damaged Yearbook Builder File"
-permalink: kb/145/Q145847/
+permalink: /kb/145/Q145847/
 ---
 
 ## Q145847: Mac Encarta: Unpacking Error: Damaged Yearbook Builder File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92531: BUG: CreatePatternBrush() with Large Bitmap GP Fault"
-permalink: kb/092/Q92531/
+permalink: /kb/092/Q92531/
 ---
 
 ## Q92531: BUG: CreatePatternBrush() with Large Bitmap GP Fault

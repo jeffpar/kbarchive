@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242556: AoE II Err Msg: A Required .dll File, Dplayx.dll, Was Not Found"
-permalink: kb/242/Q242556/
+permalink: /kb/242/Q242556/
 ---
 
 ## Q242556: AoE II Err Msg: A Required .dll File, Dplayx.dll, Was Not Found

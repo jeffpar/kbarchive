@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121288: SETUP Truncates the 40th-46th Character in Company Name"
-permalink: kb/121/Q121288/
+permalink: /kb/121/Q121288/
 ---
 
 ## Q121288: SETUP Truncates the 40th-46th Character in Company Name

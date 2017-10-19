@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123855: PC MMTA: MMTA and Digiboard Configurations"
-permalink: kb/123/Q123855/
+permalink: /kb/123/Q123855/
 ---
 
 ## Q123855: PC MMTA: MMTA and Digiboard Configurations

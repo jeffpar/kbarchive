@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175934: Schedule+ Time Zone Transition Dates Incorrect"
-permalink: kb/175/Q175934/
+permalink: /kb/175/Q175934/
 ---
 
 ## Q175934: Schedule+ Time Zone Transition Dates Incorrect

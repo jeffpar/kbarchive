@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175980: BUG: Error Msg Applying Service Pack 3 in Unattended Mode"
-permalink: kb/175/Q175980/
+permalink: /kb/175/Q175980/
 ---
 
 ## Q175980: BUG: Error Msg Applying Service Pack 3 in Unattended Mode

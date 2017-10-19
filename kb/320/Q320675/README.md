@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320675: Event ID 3 Logged After You Restrict Access to LogFiles Folder"
-permalink: kb/320/Q320675/
+permalink: /kb/320/Q320675/
 ---
 
 ## Q320675: Event ID 3 Logged After You Restrict Access to LogFiles Folder

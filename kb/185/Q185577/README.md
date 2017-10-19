@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185577: XADM: Error 1120 and 5000 When Starting Information Store"
-permalink: kb/185/Q185577/
+permalink: /kb/185/Q185577/
 ---
 
 ## Q185577: XADM: Error 1120 and 5000 When Starting Information Store

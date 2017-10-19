@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169185: Monster Truck Madness Trial Version Is Available"
-permalink: kb/169/Q169185/
+permalink: /kb/169/Q169185/
 ---
 
 ## Q169185: Monster Truck Madness Trial Version Is Available

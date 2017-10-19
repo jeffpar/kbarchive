@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102067: SESSTIMEOUT Information"
-permalink: kb/102/Q102067/
+permalink: /kb/102/Q102067/
 ---
 
 ## Q102067: SESSTIMEOUT Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95939: PC Setup: Installing PC Mail 3.0 on a Novell 3.11 Server"
-permalink: kb/095/Q95939/
+permalink: /kb/095/Q95939/
 ---
 
 ## Q95939: PC Setup: Installing PC Mail 3.0 on a Novell 3.11 Server

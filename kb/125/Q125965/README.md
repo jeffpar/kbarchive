@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125965: MSVC++ 1.1 Err Msg Under Windows NT: All Pipe Instances Busy"
-permalink: kb/125/Q125965/
+permalink: /kb/125/Q125965/
 ---
 
 ## Q125965: MSVC++ 1.1 Err Msg Under Windows NT: All Pipe Instances Busy

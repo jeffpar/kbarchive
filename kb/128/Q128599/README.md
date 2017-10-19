@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128599: FIX: More Than 65536 Export Entries May Cause LNK2001 Errors"
-permalink: kb/128/Q128599/
+permalink: /kb/128/Q128599/
 ---
 
 ## Q128599: FIX: More Than 65536 Export Entries May Cause LNK2001 Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257710: FIX: PointSelected of MSChart May Return Wrong DataPoint Value"
-permalink: kb/257/Q257710/
+permalink: /kb/257/Q257710/
 ---
 
 ## Q257710: FIX: PointSelected of MSChart May Return Wrong DataPoint Value

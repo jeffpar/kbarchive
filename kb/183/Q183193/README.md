@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183193: Mac Encarta 98: Minimum System Requirements"
-permalink: kb/183/Q183193/
+permalink: /kb/183/Q183193/
 ---
 
 ## Q183193: Mac Encarta 98: Minimum System Requirements

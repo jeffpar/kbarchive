@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118771: Word for Windows in Office 4.2 May Not Display Correctly"
-permalink: kb/118/Q118771/
+permalink: /kb/118/Q118771/
 ---
 
 ## Q118771: Word for Windows in Office 4.2 May Not Display Correctly

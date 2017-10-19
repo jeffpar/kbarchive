@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244462: Err Msg: Cannot Start Verifying User Name and Password"
-permalink: kb/244/Q244462/
+permalink: /kb/244/Q244462/
 ---
 
 ## Q244462: Err Msg: Cannot Start Verifying User Name and Password

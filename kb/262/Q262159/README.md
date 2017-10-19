@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262159: Error Message When You Install Pocket Streets 2001"
-permalink: kb/262/Q262159/
+permalink: /kb/262/Q262159/
 ---
 
 ## Q262159: Error Message When You Install Pocket Streets 2001

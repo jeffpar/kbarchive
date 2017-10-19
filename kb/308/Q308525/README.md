@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308525: Links 2001: Err Msg: Exception Access Violation in LS Interface"
-permalink: kb/308/Q308525/
+permalink: /kb/308/Q308525/
 ---
 
 ## Q308525: Links 2001: Err Msg: Exception Access Violation in LS Interface

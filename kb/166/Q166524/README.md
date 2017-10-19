@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166524: XADM: Offline Defrag Fails with Error -1605"
-permalink: kb/166/Q166524/
+permalink: /kb/166/Q166524/
 ---
 
 ## Q166524: XADM: Offline Defrag Fails with Error -1605

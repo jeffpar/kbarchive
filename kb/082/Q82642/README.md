@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82642: Serial Communications Speeds in Windows 3.1"
-permalink: kb/082/Q82642/
+permalink: /kb/082/Q82642/
 ---
 
 ## Q82642: Serial Communications Speeds in Windows 3.1

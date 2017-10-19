@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143413: MSMAIL32 Error Occurs When Data is Cached Across Bad Link"
-permalink: kb/143/Q143413/
+permalink: /kb/143/Q143413/
 ---
 
 ## Q143413: MSMAIL32 Error Occurs When Data is Cached Across Bad Link

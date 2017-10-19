@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83078: ATM and PostScript Printers: Questions and Answers"
-permalink: kb/083/Q83078/
+permalink: /kb/083/Q83078/
 ---
 
 ## Q83078: ATM and PostScript Printers: Questions and Answers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104542: MemMaker Doesn't Load ATDOSHC2.SYS or ATDOSXL.SYS High"
-permalink: kb/104/Q104542/
+permalink: /kb/104/Q104542/
 ---
 
 ## Q104542: MemMaker Doesn't Load ATDOSHC2.SYS or ATDOSXL.SYS High

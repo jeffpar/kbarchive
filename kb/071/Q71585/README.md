@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71585: Disk Space Needed to Save UNFORMAT Information"
-permalink: kb/071/Q71585/
+permalink: /kb/071/Q71585/
 ---
 
 ## Q71585: Disk Space Needed to Save UNFORMAT Information

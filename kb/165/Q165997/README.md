@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165997: Unable to Execute Server-side Include (.stm) Files"
-permalink: kb/165/Q165997/
+permalink: /kb/165/Q165997/
 ---
 
 ## Q165997: Unable to Execute Server-side Include (.stm) Files

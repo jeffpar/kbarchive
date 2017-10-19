@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197808: Domain Trust Relationship Cannot be Created"
-permalink: kb/197/Q197808/
+permalink: /kb/197/Q197808/
 ---
 
 ## Q197808: Domain Trust Relationship Cannot be Created

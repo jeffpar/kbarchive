@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321141: HOW TO: Disable or Remove Unnecessary IIS Services"
-permalink: kb/321/Q321141/
+permalink: /kb/321/Q321141/
 ---
 
 ## Q321141: HOW TO: Disable or Remove Unnecessary IIS Services

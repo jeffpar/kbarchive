@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154793: Games: Invalid Page Fault Starting Game"
-permalink: kb/154/Q154793/
+permalink: /kb/154/Q154793/
 ---
 
 ## Q154793: Games: Invalid Page Fault Starting Game

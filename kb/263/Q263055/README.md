@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263055: XADM: Limitations to a Public Information Store Restored to a Se"
-permalink: kb/263/Q263055/
+permalink: /kb/263/Q263055/
 ---
 
 ## Q263055: XADM: Limitations to a Public Information Store Restored to a Se

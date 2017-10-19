@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275885: XADM: Backup Over Network Won't Work w. 15-Char. Computer Name"
-permalink: kb/275/Q275885/
+permalink: /kb/275/Q275885/
 ---
 
 ## Q275885: XADM: Backup Over Network Won't Work w. 15-Char. Computer Name

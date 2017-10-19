@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138229: How to Create a Personal Distribution List with Copy and Paste"
-permalink: kb/138/Q138229/
+permalink: /kb/138/Q138229/
 ---
 
 ## Q138229: How to Create a Personal Distribution List with Copy and Paste

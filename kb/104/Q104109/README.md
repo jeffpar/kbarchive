@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104109: PC Forms: Err: Login Failure When Opening from Browser"
-permalink: kb/104/Q104109/
+permalink: /kb/104/Q104109/
 ---
 
 ## Q104109: PC Forms: Err: Login Failure When Opening from Browser

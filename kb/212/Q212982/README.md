@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212982: SMS: Deleting an Object Does Not Delete Class Permissions"
-permalink: kb/212/Q212982/
+permalink: /kb/212/Q212982/
 ---
 
 ## Q212982: SMS: Deleting an Object Does Not Delete Class Permissions

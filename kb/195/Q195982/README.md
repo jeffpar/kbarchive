@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195982: HOWTO: Set the Connection Prompt Behavior of DataEnvironment"
-permalink: kb/195/Q195982/
+permalink: /kb/195/Q195982/
 ---
 
 ## Q195982: HOWTO: Set the Connection Prompt Behavior of DataEnvironment

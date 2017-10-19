@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75193: Possible CHKDSK Errors with Coherent Partition and MS-DOS"
-permalink: kb/075/Q75193/
+permalink: /kb/075/Q75193/
 ---
 
 ## Q75193: Possible CHKDSK Errors with Coherent Partition and MS-DOS

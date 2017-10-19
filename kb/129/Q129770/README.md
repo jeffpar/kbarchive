@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129770: FIX: CString::TrimLeft Fails in a UNICODE Application"
-permalink: kb/129/Q129770/
+permalink: /kb/129/Q129770/
 ---
 
 ## Q129770: FIX: CString::TrimLeft Fails in a UNICODE Application

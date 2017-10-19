@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136675: Changing Sound Blaster 16 HDMA Settings in Windows 95/98"
-permalink: kb/136/Q136675/
+permalink: /kb/136/Q136675/
 ---
 
 ## Q136675: Changing Sound Blaster 16 HDMA Settings in Windows 95/98

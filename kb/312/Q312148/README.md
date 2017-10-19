@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312148: POSIX Utilities Do Not Work If Source Path Folders Contain Space"
-permalink: kb/312/Q312148/
+permalink: /kb/312/Q312148/
 ---
 
 ## Q312148: POSIX Utilities Do Not Work If Source Path Folders Contain Space

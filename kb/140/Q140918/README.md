@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140918: SMS INVDOS Does Not Report IPX Address on IPX and TCP/IP Client"
-permalink: kb/140/Q140918/
+permalink: /kb/140/Q140918/
 ---
 
 ## Q140918: SMS INVDOS Does Not Report IPX Address on IPX and TCP/IP Client

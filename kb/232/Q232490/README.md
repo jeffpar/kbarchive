@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232490: Quick View Cannot Open File Names with Euro Currency Symbol"
-permalink: kb/232/Q232490/
+permalink: /kb/232/Q232490/
 ---
 
 ## Q232490: Quick View Cannot Open File Names with Euro Currency Symbol

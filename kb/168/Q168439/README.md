@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168439: PRB: _stat Function Fails for Names Ending with &quot;&#92;&quot;"
-permalink: kb/168/Q168439/
+permalink: /kb/168/Q168439/
 ---
 
 ## Q168439: PRB: _stat Function Fails for Names Ending with &quot;&#92;&quot;

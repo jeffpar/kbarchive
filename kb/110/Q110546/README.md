@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110546: Lear Instrument Panel Obscures Messages"
-permalink: kb/110/Q110546/
+permalink: /kb/110/Q110546/
 ---
 
 ## Q110546: Lear Instrument Panel Obscures Messages

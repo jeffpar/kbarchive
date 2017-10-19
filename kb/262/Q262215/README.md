@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262215: XCON: Simple Mail Transfer Protocol Messages Received with Empty"
-permalink: kb/262/Q262215/
+permalink: /kb/262/Q262215/
 ---
 
 ## Q262215: XCON: Simple Mail Transfer Protocol Messages Received with Empty

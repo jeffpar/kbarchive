@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216055: HOWTO: Pass an Array by Reference to LCK and Return Changes"
-permalink: kb/216/Q216055/
+permalink: /kb/216/Q216055/
 ---
 
 ## Q216055: HOWTO: Pass an Array by Reference to LCK and Return Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138072: INFO: Tips to Improve Performance While Using OLE Servers"
-permalink: kb/138/Q138072/
+permalink: /kb/138/Q138072/
 ---
 
 ## Q138072: INFO: Tips to Improve Performance While Using OLE Servers

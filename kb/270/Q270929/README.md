@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270929: Encarta Africana: Commands on Suite Menu Are Unavailable"
-permalink: kb/270/Q270929/
+permalink: /kb/270/Q270929/
 ---
 
 ## Q270929: Encarta Africana: Commands on Suite Menu Are Unavailable

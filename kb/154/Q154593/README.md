@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154593: SMS: Administrator Utility Does Not Print Attribute Titles"
-permalink: kb/154/Q154593/
+permalink: /kb/154/Q154593/
 ---
 
 ## Q154593: SMS: Administrator Utility Does Not Print Attribute Titles

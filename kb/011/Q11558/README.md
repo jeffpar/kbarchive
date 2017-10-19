@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11558: HOW TO: Convert a String to a Floating-Point Number"
-permalink: kb/011/Q11558/
+permalink: /kb/011/Q11558/
 ---
 
 ## Q11558: HOW TO: Convert a String to a Floating-Point Number

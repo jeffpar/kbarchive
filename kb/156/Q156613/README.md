@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156613: Writer 2: &quot;The Printer Could Not Be Found&quot; Error Message"
-permalink: kb/156/Q156613/
+permalink: /kb/156/Q156613/
 ---
 
 ## Q156613: Writer 2: &quot;The Printer Could Not Be Found&quot; Error Message

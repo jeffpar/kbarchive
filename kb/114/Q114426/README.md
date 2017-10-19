@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114426: Installing RAS for Workgroup Add-On for MS-DOS 3.11"
-permalink: kb/114/Q114426/
+permalink: /kb/114/Q114426/
 ---
 
 ## Q114426: Installing RAS for Workgroup Add-On for MS-DOS 3.11

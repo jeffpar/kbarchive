@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120546: Artist: Saved Documents Are Black"
-permalink: kb/120/Q120546/
+permalink: /kb/120/Q120546/
 ---
 
 ## Q120546: Artist: Saved Documents Are Black

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228453: NBTSTAT -RR Does Not Increment Version IDs on the WINS Server"
-permalink: kb/228/Q228453/
+permalink: /kb/228/Q228453/
 ---
 
 ## Q228453: NBTSTAT -RR Does Not Increment Version IDs on the WINS Server

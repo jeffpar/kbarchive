@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184816: Run-time Error '52' Trying to Open Component Library"
-permalink: kb/184/Q184816/
+permalink: /kb/184/Q184816/
 ---
 
 ## Q184816: Run-time Error '52' Trying to Open Component Library

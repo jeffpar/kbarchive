@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122177: Systems Management Server Event Log Codes 0 Through 99"
-permalink: kb/122/Q122177/
+permalink: /kb/122/Q122177/
 ---
 
 ## Q122177: Systems Management Server Event Log Codes 0 Through 99

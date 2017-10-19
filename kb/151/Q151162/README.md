@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151162: PRB: CToolBarCtrl Styles Fail with CToolBar"
-permalink: kb/151/Q151162/
+permalink: /kb/151/Q151162/
 ---
 
 ## Q151162: PRB: CToolBarCtrl Styles Fail with CToolBar

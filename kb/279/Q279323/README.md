@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279323: XFOR: How to Forward SMTP Mail to Multiple Hosts"
-permalink: kb/279/Q279323/
+permalink: /kb/279/Q279323/
 ---
 
 ## Q279323: XFOR: How to Forward SMTP Mail to Multiple Hosts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190315: PRB: Some CRT File Functions Adjust For Daylight Savings Time"
-permalink: kb/190/Q190315/
+permalink: /kb/190/Q190315/
 ---
 
 ## Q190315: PRB: Some CRT File Functions Adjust For Daylight Savings Time

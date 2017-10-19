@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147848: MSB Human: How to Run Macintosh Program without CD"
-permalink: kb/147/Q147848/
+permalink: /kb/147/Q147848/
 ---
 
 ## Q147848: MSB Human: How to Run Macintosh Program without CD

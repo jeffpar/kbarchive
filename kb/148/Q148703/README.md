@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148703: FIX: CWnd::SubclassDlgItem Returns FALSE for OLE Controls"
-permalink: kb/148/Q148703/
+permalink: /kb/148/Q148703/
 ---
 
 ## Q148703: FIX: CWnd::SubclassDlgItem Returns FALSE for OLE Controls

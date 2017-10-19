@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153635: CLI_DOS.EXE Err Msg: Unable to Rename UID File..."
-permalink: kb/153/Q153635/
+permalink: /kb/153/Q153635/
 ---
 
 ## Q153635: CLI_DOS.EXE Err Msg: Unable to Rename UID File...

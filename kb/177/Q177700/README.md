@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177700: MS Access 97/Visual Basic Step by Step Comments and Corrections"
-permalink: kb/177/Q177700/
+permalink: /kb/177/Q177700/
 ---
 
 ## Q177700: MS Access 97/Visual Basic Step by Step Comments and Corrections

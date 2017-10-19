@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156233: SMS: Windows NT Clients Stop Responding After Clicking Display"
-permalink: kb/156/Q156233/
+permalink: /kb/156/Q156233/
 ---
 
 ## Q156233: SMS: Windows NT Clients Stop Responding After Clicking Display

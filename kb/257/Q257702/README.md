@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257702: FIX: Form And Class Library Corrupted By Documenting Wizard"
-permalink: kb/257/Q257702/
+permalink: /kb/257/Q257702/
 ---
 
 ## Q257702: FIX: Form And Class Library Corrupted By Documenting Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80174: Cardfile Err Msg: No Modem Connected"
-permalink: kb/080/Q80174/
+permalink: /kb/080/Q80174/
 ---
 
 ## Q80174: Cardfile Err Msg: No Modem Connected

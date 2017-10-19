@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105257: Floppy Disk Drive Lights Flash Under MS-DOS 6.2"
-permalink: kb/105/Q105257/
+permalink: /kb/105/Q105257/
 ---
 
 ## Q105257: Floppy Disk Drive Lights Flash Under MS-DOS 6.2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187174: Messenger Messages Are Lost If Desktop at Screen Saver"
-permalink: kb/187/Q187174/
+permalink: /kb/187/Q187174/
 ---
 
 ## Q187174: Messenger Messages Are Lost If Desktop at Screen Saver

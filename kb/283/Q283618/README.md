@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283618: INFO: Security Considerations When Using Automatic User Login"
-permalink: kb/283/Q283618/
+permalink: /kb/283/Q283618/
 ---
 
 ## Q283618: INFO: Security Considerations When Using Automatic User Login

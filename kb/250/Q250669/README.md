@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250669: PRB: Wizard Causes &quot;Variable Not Found&quot;  When Adding Record"
-permalink: kb/250/Q250669/
+permalink: /kb/250/Q250669/
 ---
 
 ## Q250669: PRB: Wizard Causes &quot;Variable Not Found&quot;  When Adding Record

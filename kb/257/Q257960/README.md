@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257960: XCLN: Rules in Outlook Cannot Process Substrings in the Subject"
-permalink: kb/257/Q257960/
+permalink: /kb/257/Q257960/
 ---
 
 ## Q257960: XCLN: Rules in Outlook Cannot Process Substrings in the Subject

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88749: Details of Setup Toolkit Function GetCopyListCost()"
-permalink: kb/088/Q88749/
+permalink: /kb/088/Q88749/
 ---
 
 ## Q88749: Details of Setup Toolkit Function GetCopyListCost()

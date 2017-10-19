@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158388: Useful Resource Kit Utilities for Domain Administrators"
-permalink: kb/158/Q158388/
+permalink: /kb/158/Q158388/
 ---
 
 ## Q158388: Useful Resource Kit Utilities for Domain Administrators

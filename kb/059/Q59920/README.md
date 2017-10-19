@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59920: Mac Hyp: Getting a Message Reference"
-permalink: kb/059/Q59920/
+permalink: /kb/059/Q59920/
 ---
 
 ## Q59920: Mac Hyp: Getting a Message Reference

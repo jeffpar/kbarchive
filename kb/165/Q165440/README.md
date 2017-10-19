@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165440: Shared Folders Gateway Only Shows Root Directory"
-permalink: kb/165/Q165440/
+permalink: /kb/165/Q165440/
 ---
 
 ## Q165440: Shared Folders Gateway Only Shows Root Directory

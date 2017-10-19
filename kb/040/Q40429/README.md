@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40429: Using a Response File with Microsoft LINK"
-permalink: kb/040/Q40429/
+permalink: /kb/040/Q40429/
 ---
 
 ## Q40429: Using a Response File with Microsoft LINK

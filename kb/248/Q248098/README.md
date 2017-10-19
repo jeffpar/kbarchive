@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248098: PRB: ErrMsg: Method Call on MTS Object from VB App Fails"
-permalink: kb/248/Q248098/
+permalink: /kb/248/Q248098/
 ---
 
 ## Q248098: PRB: ErrMsg: Method Call on MTS Object from VB App Fails

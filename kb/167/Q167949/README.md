@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167949: FIX: OnWindowMessage Returns BOOL for HRESULT"
-permalink: kb/167/Q167949/
+permalink: /kb/167/Q167949/
 ---
 
 ## Q167949: FIX: OnWindowMessage Returns BOOL for HRESULT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179384: PRB: Installing Applications from an HPFS Formatted Drive"
-permalink: kb/179/Q179384/
+permalink: /kb/179/Q179384/
 ---
 
 ## Q179384: PRB: Installing Applications from an HPFS Formatted Drive

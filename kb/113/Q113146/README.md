@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113146: BUG: Some API's May Return SQL_ERROR: SQLSTATE S0001"
-permalink: kb/113/Q113146/
+permalink: /kb/113/Q113146/
 ---
 
 ## Q113146: BUG: Some API's May Return SQL_ERROR: SQLSTATE S0001

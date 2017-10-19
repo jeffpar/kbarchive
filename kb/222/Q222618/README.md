@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222618: Using ASP and User Names with Posting Acceptor"
-permalink: kb/222/Q222618/
+permalink: /kb/222/Q222618/
 ---
 
 ## Q222618: Using ASP and User Names with Posting Acceptor

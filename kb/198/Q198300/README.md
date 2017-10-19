@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198300: PRB: Invalid Use of NULL Assigning Text Fields Value"
-permalink: kb/198/Q198300/
+permalink: /kb/198/Q198300/
 ---
 
 ## Q198300: PRB: Invalid Use of NULL Assigning Text Fields Value

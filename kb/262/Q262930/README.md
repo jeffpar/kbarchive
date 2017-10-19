@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262930: Allegiance: Sounds Associated with Menus Are Played Repeatedly"
-permalink: kb/262/Q262930/
+permalink: /kb/262/Q262930/
 ---
 
 ## Q262930: Allegiance: Sounds Associated with Menus Are Played Repeatedly

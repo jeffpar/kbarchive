@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130822: Must Use Windows 95 Client for NetWare with DBCS-Named Server"
-permalink: kb/130/Q130822/
+permalink: /kb/130/Q130822/
 ---
 
 ## Q130822: Must Use Windows 95 Client for NetWare with DBCS-Named Server

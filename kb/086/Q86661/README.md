@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86661: Disabling System Sounds in Windows 3.1"
-permalink: kb/086/Q86661/
+permalink: /kb/086/Q86661/
 ---
 
 ## Q86661: Disabling System Sounds in Windows 3.1

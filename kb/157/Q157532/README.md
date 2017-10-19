@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157532: WD97: Invalid Procedure Name Error Creating a New Macro"
-permalink: kb/157/Q157532/
+permalink: /kb/157/Q157532/
 ---
 
 ## Q157532: WD97: Invalid Procedure Name Error Creating a New Macro

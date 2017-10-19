@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133410: The Breakpoint &quot;{,&lt;filename&gt;,} .&lt;line&gt;&quot; Cannot Be Set"
-permalink: kb/133/Q133410/
+permalink: /kb/133/Q133410/
 ---
 
 ## Q133410: The Breakpoint &quot;{,&lt;filename&gt;,} .&lt;line&gt;&quot; Cannot Be Set

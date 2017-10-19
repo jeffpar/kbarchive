@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182060: SMS: Rservice for Alpha Does Not Process All Computers in List"
-permalink: kb/182/Q182060/
+permalink: /kb/182/Q182060/
 ---
 
 ## Q182060: SMS: Rservice for Alpha Does Not Process All Computers in List

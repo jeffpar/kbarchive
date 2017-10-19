@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173423: DOC: IsFieldNull() Does Not Accept NULL"
-permalink: kb/173/Q173423/
+permalink: /kb/173/Q173423/
 ---
 
 ## Q173423: DOC: IsFieldNull() Does Not Accept NULL

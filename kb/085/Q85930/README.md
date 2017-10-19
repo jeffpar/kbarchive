@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85930: Windows 3.1: Logitech Mouse Directional Settings Not Saved"
-permalink: kb/085/Q85930/
+permalink: /kb/085/Q85930/
 ---
 
 ## Q85930: Windows 3.1: Logitech Mouse Directional Settings Not Saved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206800: SMS: How to Force Hardware and Software Inventory in SMS 2.0"
-permalink: kb/206/Q206800/
+permalink: /kb/206/Q206800/
 ---
 
 ## Q206800: SMS: How to Force Hardware and Software Inventory in SMS 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145992: PRB: Global MFC DAO Objects Cause Assertions"
-permalink: kb/145/Q145992/
+permalink: /kb/145/Q145992/
 ---
 
 ## Q145992: PRB: Global MFC DAO Objects Cause Assertions

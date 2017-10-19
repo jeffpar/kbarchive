@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105669: Scenes 1.0: Screen Saver Does Not Activate When Menu Is Active"
-permalink: kb/105/Q105669/
+permalink: /kb/105/Q105669/
 ---
 
 ## Q105669: Scenes 1.0: Screen Saver Does Not Activate When Menu Is Active

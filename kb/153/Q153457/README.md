@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153457: Host TPX Application Problem Leads to 3270 Emulator 2004 Error"
-permalink: kb/153/Q153457/
+permalink: /kb/153/Q153457/
 ---
 
 ## Q153457: Host TPX Application Problem Leads to 3270 Emulator 2004 Error

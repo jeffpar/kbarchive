@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278357: Adjusting the Sender's Retry Delay Can Cause Errors on Retry"
-permalink: kb/278/Q278357/
+permalink: /kb/278/Q278357/
 ---
 
 ## Q278357: Adjusting the Sender's Retry Delay Can Cause Errors on Retry

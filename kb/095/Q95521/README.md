@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95521: CONN: WA0728: Troubleshooting the Mail Connection Gateway"
-permalink: kb/095/Q95521/
+permalink: /kb/095/Q95521/
 ---
 
 ## Q95521: CONN: WA0728: Troubleshooting the Mail Connection Gateway

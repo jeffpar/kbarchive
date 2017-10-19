@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146841: XCLN: Extra Mail Traffic Generated"
-permalink: kb/146/Q146841/
+permalink: /kb/146/Q146841/
 ---
 
 ## Q146841: XCLN: Extra Mail Traffic Generated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77874: TOPS Network Versions 2.x Not Compatible with MS-DOS 5.0"
-permalink: kb/077/Q77874/
+permalink: /kb/077/Q77874/
 ---
 
 ## Q77874: TOPS Network Versions 2.x Not Compatible with MS-DOS 5.0

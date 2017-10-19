@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196586: FIX: HttpSendRequest Does Not Work Correctly on WinCE 2.0"
-permalink: kb/196/Q196586/
+permalink: /kb/196/Q196586/
 ---
 
 ## Q196586: FIX: HttpSendRequest Does Not Work Correctly on WinCE 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250914: BUG: Modify String During Concatenation Gives Unexpected Results"
-permalink: kb/250/Q250914/
+permalink: /kb/250/Q250914/
 ---
 
 ## Q250914: BUG: Modify String During Concatenation Gives Unexpected Results

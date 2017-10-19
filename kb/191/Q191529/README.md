@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191529: HOWTO: Use UPDATE SQL Command to Modify a Second Table"
-permalink: kb/191/Q191529/
+permalink: /kb/191/Q191529/
 ---
 
 ## Q191529: HOWTO: Use UPDATE SQL Command to Modify a Second Table

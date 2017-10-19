@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62125: Mac Hyp: Microsoft Mail and SuperCard"
-permalink: kb/062/Q62125/
+permalink: /kb/062/Q62125/
 ---
 
 ## Q62125: Mac Hyp: Microsoft Mail and SuperCard

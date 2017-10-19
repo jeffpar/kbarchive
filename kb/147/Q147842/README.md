@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147842: HOWTO: Detect a Mouse Click on Any Column of List View Control"
-permalink: kb/147/Q147842/
+permalink: /kb/147/Q147842/
 ---
 
 ## Q147842: HOWTO: Detect a Mouse Click on Any Column of List View Control

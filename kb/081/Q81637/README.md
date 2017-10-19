@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81637: CTRL+D EOF Character in PostScript Print Job May Cause Error"
-permalink: kb/081/Q81637/
+permalink: /kb/081/Q81637/
 ---
 
 ## Q81637: CTRL+D EOF Character in PostScript Print Job May Cause Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38291: INFO: Cannot Define Other Preprocessor Directives with #define"
-permalink: kb/038/Q38291/
+permalink: /kb/038/Q38291/
 ---
 
 ## Q38291: INFO: Cannot Define Other Preprocessor Directives with #define

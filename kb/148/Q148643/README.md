@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148643: PRB: Error: Too Many Files Open"
-permalink: kb/148/Q148643/
+permalink: /kb/148/Q148643/
 ---
 
 ## Q148643: PRB: Error: Too Many Files Open

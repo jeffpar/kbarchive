@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77609: Flight Simulator: Using the Keyboard and Joystick in Slew Mode"
-permalink: kb/077/Q77609/
+permalink: /kb/077/Q77609/
 ---
 
 ## Q77609: Flight Simulator: Using the Keyboard and Joystick in Slew Mode

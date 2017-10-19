@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178829: FS98/2000: How to Use VOR2 Guage in LearJet 45, Boeing 737-400"
-permalink: kb/178/Q178829/
+permalink: /kb/178/Q178829/
 ---
 
 ## Q178829: FS98/2000: How to Use VOR2 Guage in LearJet 45, Boeing 737-400

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92881: Installing WFWG over IBM Lan Server Causes Netbind Error"
-permalink: kb/092/Q92881/
+permalink: /kb/092/Q92881/
 ---
 
 ## Q92881: Installing WFWG over IBM Lan Server Causes Netbind Error

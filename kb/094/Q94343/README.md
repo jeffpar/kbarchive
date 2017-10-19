@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94343: Obtaining Number of Data Groups in .FRX Without Using UDF"
-permalink: kb/094/Q94343/
+permalink: /kb/094/Q94343/
 ---
 
 ## Q94343: Obtaining Number of Data Groups in .FRX Without Using UDF

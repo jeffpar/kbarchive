@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241041: Enabling NetBT to Open IP Ports Exclusively"
-permalink: kb/241/Q241041/
+permalink: /kb/241/Q241041/
 ---
 
 ## Q241041: Enabling NetBT to Open IP Ports Exclusively

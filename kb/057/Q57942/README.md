@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57942: PRB: UNKNOWN WARNING May Result from Corrupt Error Message File"
-permalink: kb/057/Q57942/
+permalink: /kb/057/Q57942/
 ---
 
 ## Q57942: PRB: UNKNOWN WARNING May Result from Corrupt Error Message File

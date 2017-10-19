@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233094: STOP 1E Error Message in Sfmsrv.sys"
-permalink: kb/233/Q233094/
+permalink: /kb/233/Q233094/
 ---
 
 ## Q233094: STOP 1E Error Message in Sfmsrv.sys

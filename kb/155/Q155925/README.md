@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155925: Non-SCSI Devices Added Using SCSI Adapters Tool"
-permalink: kb/155/Q155925/
+permalink: /kb/155/Q155925/
 ---
 
 ## Q155925: Non-SCSI Devices Added Using SCSI Adapters Tool

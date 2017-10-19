@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109239: PRB: FoxPro Does Not Respond to Apple Events During READ"
-permalink: kb/109/Q109239/
+permalink: /kb/109/Q109239/
 ---
 
 ## Q109239: PRB: FoxPro Does Not Respond to Apple Events During READ

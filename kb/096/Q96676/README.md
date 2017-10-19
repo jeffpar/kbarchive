@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96676: Font: Fonts Appear Similar in System 7 Font Sample Window"
-permalink: kb/096/Q96676/
+permalink: /kb/096/Q96676/
 ---
 
 ## Q96676: Font: Fonts Appear Similar in System 7 Font Sample Window

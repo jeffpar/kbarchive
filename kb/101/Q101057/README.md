@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101057: PRB: &quot;Variable Not Found&quot; or Public Variables Acting Private"
-permalink: kb/101/Q101057/
+permalink: /kb/101/Q101057/
 ---
 
 ## Q101057: PRB: &quot;Variable Not Found&quot; or Public Variables Acting Private

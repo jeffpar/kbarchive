@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145753: MS VISUAL FOXPRO 3 FOR WIN SBS Corrections and Comments"
-permalink: kb/145/Q145753/
+permalink: /kb/145/Q145753/
 ---
 
 ## Q145753: MS VISUAL FOXPRO 3 FOR WIN SBS Corrections and Comments

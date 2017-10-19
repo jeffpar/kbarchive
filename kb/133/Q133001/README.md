@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133001: PRB: SQL SELECT Statement UDF Executes Twice On First Record"
-permalink: kb/133/Q133001/
+permalink: /kb/133/Q133001/
 ---
 
 ## Q133001: PRB: SQL SELECT Statement UDF Executes Twice On First Record

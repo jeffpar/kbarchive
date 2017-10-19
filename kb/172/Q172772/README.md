@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172772: Err Msg: Msnviewr Caused a Stack Fault in Module Kernel32.dll"
-permalink: kb/172/Q172772/
+permalink: /kb/172/Q172772/
 ---
 
 ## Q172772: Err Msg: Msnviewr Caused a Stack Fault in Module Kernel32.dll

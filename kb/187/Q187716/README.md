@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187716: DOC: Incorrect API Text Viewer Declaration of GetVersionEx API"
-permalink: kb/187/Q187716/
+permalink: /kb/187/Q187716/
 ---
 
 ## Q187716: DOC: Incorrect API Text Viewer Declaration of GetVersionEx API

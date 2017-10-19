@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317980: FIX: Inserting Records with Buffering can Cause VFP to Hang"
-permalink: kb/317/Q317980/
+permalink: /kb/317/Q317980/
 ---
 
 ## Q317980: FIX: Inserting Records with Buffering can Cause VFP to Hang

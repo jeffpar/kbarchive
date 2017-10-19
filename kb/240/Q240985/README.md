@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240985: Pandora's Box: Graphics Not Displayed Properly with 3D Rage Pro"
-permalink: kb/240/Q240985/
+permalink: /kb/240/Q240985/
 ---
 
 ## Q240985: Pandora's Box: Graphics Not Displayed Properly with 3D Rage Pro

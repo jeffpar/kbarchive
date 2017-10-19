@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78705: PC Adm: Time Interval Based on One 24-Hour Day"
-permalink: kb/078/Q78705/
+permalink: /kb/078/Q78705/
 ---
 
 ## Q78705: PC Adm: Time Interval Based on One 24-Hour Day

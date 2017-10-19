@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161168: Encarta 97: Removing Program Without Losing Yearbook Updates"
-permalink: kb/161/Q161168/
+permalink: /kb/161/Q161168/
 ---
 
 ## Q161168: Encarta 97: Removing Program Without Losing Yearbook Updates

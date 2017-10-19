@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175213: DIAL.EXE: Dial Control Sample"
-permalink: kb/175/Q175213/
+permalink: /kb/175/Q175213/
 ---
 
 ## Q175213: DIAL.EXE: Dial Control Sample

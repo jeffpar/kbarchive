@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84133: Dlgs.exe Demos Undesirable Interactions Bet. Dialogs"
-permalink: kb/084/Q84133/
+permalink: /kb/084/Q84133/
 ---
 
 ## Q84133: Dlgs.exe Demos Undesirable Interactions Bet. Dialogs

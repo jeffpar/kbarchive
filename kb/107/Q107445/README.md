@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107445: X400: X400GATE.EXE Version 3.2.17 Update"
-permalink: kb/107/Q107445/
+permalink: /kb/107/Q107445/
 ---
 
 ## Q107445: X400: X400GATE.EXE Version 3.2.17 Update

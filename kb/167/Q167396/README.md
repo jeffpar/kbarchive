@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167396: Unable to Print Color on OKI OJ-300C Printer"
-permalink: kb/167/Q167396/
+permalink: /kb/167/Q167396/
 ---
 
 ## Q167396: Unable to Print Color on OKI OJ-300C Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176517: SMS: Troubleshooting Inventory MIF Backlog Problems"
-permalink: kb/176/Q176517/
+permalink: /kb/176/Q176517/
 ---
 
 ## Q176517: SMS: Troubleshooting Inventory MIF Backlog Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74679: Windows-Based 3270 Emulators"
-permalink: kb/074/Q74679/
+permalink: /kb/074/Q74679/
 ---
 
 ## Q74679: Windows-Based 3270 Emulators

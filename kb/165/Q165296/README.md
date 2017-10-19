@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165296: PRB: Hiding Standard Toolbar Moves Position of Command Window"
-permalink: kb/165/Q165296/
+permalink: /kb/165/Q165296/
 ---
 
 ## Q165296: PRB: Hiding Standard Toolbar Moves Position of Command Window

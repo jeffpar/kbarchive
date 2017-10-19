@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155778: WD97: Next Page Button Closes Header or Footer View"
-permalink: kb/155/Q155778/
+permalink: /kb/155/Q155778/
 ---
 
 ## Q155778: WD97: Next Page Button Closes Header or Footer View

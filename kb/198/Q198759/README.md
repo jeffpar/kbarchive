@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198759: XADM: Move Server Wizard: Exporting Custom Attributes and Values"
-permalink: kb/198/Q198759/
+permalink: /kb/198/Q198759/
 ---
 
 ## Q198759: XADM: Move Server Wizard: Exporting Custom Attributes and Values

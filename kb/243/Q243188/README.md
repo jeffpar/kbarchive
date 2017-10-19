@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243188: Unable to Browse RAS Clients from the Local Area Network"
-permalink: kb/243/Q243188/
+permalink: /kb/243/Q243188/
 ---
 
 ## Q243188: Unable to Browse RAS Clients from the Local Area Network

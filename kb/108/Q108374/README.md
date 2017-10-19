@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108374: SMTP: How to Find Available Memory"
-permalink: kb/108/Q108374/
+permalink: /kb/108/Q108374/
 ---
 
 ## Q108374: SMTP: How to Find Available Memory

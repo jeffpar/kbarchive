@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142960: FIX: CCheckListBox Fails with Style LBS_MULTICOLUMN"
-permalink: kb/142/Q142960/
+permalink: /kb/142/Q142960/
 ---
 
 ## Q142960: FIX: CCheckListBox Fails with Style LBS_MULTICOLUMN

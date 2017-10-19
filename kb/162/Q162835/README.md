@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162835: XADM: SMTP Address is Stripped from Auto-forwarded Message"
-permalink: kb/162/Q162835/
+permalink: /kb/162/Q162835/
 ---
 
 ## Q162835: XADM: SMTP Address is Stripped from Auto-forwarded Message

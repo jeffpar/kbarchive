@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193424: BUG: Excel 97 Menus Fail with In-Place Activation from MDI Child"
-permalink: kb/193/Q193424/
+permalink: /kb/193/Q193424/
 ---
 
 ## Q193424: BUG: Excel 97 Menus Fail with In-Place Activation from MDI Child

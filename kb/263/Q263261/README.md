@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263261: NFL Fever 2000: Erratic Behavior with SideWinder Game Pad Pro"
-permalink: kb/263/Q263261/
+permalink: /kb/263/Q263261/
 ---
 
 ## Q263261: NFL Fever 2000: Erratic Behavior with SideWinder Game Pad Pro

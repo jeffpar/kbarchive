@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153232: Driver for Use with Wangtek 5100 Tape Drive"
-permalink: kb/153/Q153232/
+permalink: /kb/153/Q153232/
 ---
 
 ## Q153232: Driver for Use with Wangtek 5100 Tape Drive

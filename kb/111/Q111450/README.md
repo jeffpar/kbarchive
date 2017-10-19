@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111450: Two Token Ring Adapters Forces Source Routing on Both Adapters"
-permalink: kb/111/Q111450/
+permalink: /kb/111/Q111450/
 ---
 
 ## Q111450: Two Token Ring Adapters Forces Source Routing on Both Adapters

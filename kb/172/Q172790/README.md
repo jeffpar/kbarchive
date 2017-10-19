@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172790: SMS: How to Enable Wuser32 User Mode Debug Logging"
-permalink: kb/172/Q172790/
+permalink: /kb/172/Q172790/
 ---
 
 ## Q172790: SMS: How to Enable Wuser32 User Mode Debug Logging

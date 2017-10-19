@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223440: Warning Message During Small Business Server Upgrade"
-permalink: kb/223/Q223440/
+permalink: /kb/223/Q223440/
 ---
 
 ## Q223440: Warning Message During Small Business Server Upgrade

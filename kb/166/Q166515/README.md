@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166515: XADM: Primary SMTP Proxy Not Used for E-mail Address"
-permalink: kb/166/Q166515/
+permalink: /kb/166/Q166515/
 ---
 
 ## Q166515: XADM: Primary SMTP Proxy Not Used for E-mail Address

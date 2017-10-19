@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128434: SMTP: Err Msg: Error SMTPGet 52 a File Open Error Has Occurred"
-permalink: kb/128/Q128434/
+permalink: /kb/128/Q128434/
 ---
 
 ## Q128434: SMTP: Err Msg: Error SMTPGet 52 a File Open Error Has Occurred

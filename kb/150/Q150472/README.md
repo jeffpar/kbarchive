@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150472: Downstream PU Fails to Reactivate After an Outage"
-permalink: kb/150/Q150472/
+permalink: /kb/150/Q150472/
 ---
 
 ## Q150472: Downstream PU Fails to Reactivate After an Outage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170998: Cannot Log in to Windows NT Domain Over Internet Connection"
-permalink: kb/170/Q170998/
+permalink: /kb/170/Q170998/
 ---
 
 ## Q170998: Cannot Log in to Windows NT Domain Over Internet Connection

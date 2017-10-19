@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152972: How to Pass Values from VFP Back to Calling AppleScript"
-permalink: kb/152/Q152972/
+permalink: /kb/152/Q152972/
 ---
 
 ## Q152972: How to Pass Values from VFP Back to Calling AppleScript

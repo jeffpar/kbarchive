@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188895: How to Turn Off IUSR_machinename Token Caching"
-permalink: kb/188/Q188895/
+permalink: /kb/188/Q188895/
 ---
 
 ## Q188895: How to Turn Off IUSR_machinename Token Caching

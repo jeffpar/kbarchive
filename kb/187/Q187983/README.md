@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187983: BUG: IDE Crash with Compiled GlobalMultiUse"
-permalink: kb/187/Q187983/
+permalink: /kb/187/Q187983/
 ---
 
 ## Q187983: BUG: IDE Crash with Compiled GlobalMultiUse

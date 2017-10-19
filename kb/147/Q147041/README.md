@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147041: PC Win: Sending to a Large Distribution List Fails"
-permalink: kb/147/Q147041/
+permalink: /kb/147/Q147041/
 ---
 
 ## Q147041: PC Win: Sending to a Large Distribution List Fails

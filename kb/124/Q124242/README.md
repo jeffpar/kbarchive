@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124242: Forced Disconnect for Macintosh Users Not Working"
-permalink: kb/124/Q124242/
+permalink: /kb/124/Q124242/
 ---
 
 ## Q124242: Forced Disconnect for Macintosh Users Not Working

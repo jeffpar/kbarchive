@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123391: PRB: Random Symbols on Dialog Box in Japanese Windows"
-permalink: kb/123/Q123391/
+permalink: /kb/123/Q123391/
 ---
 
 ## Q123391: PRB: Random Symbols on Dialog Box in Japanese Windows

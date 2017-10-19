@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270047: Streets/MapPoint: Blue Screen When You Start Program"
-permalink: kb/270/Q270047/
+permalink: /kb/270/Q270047/
 ---
 
 ## Q270047: Streets/MapPoint: Blue Screen When You Start Program

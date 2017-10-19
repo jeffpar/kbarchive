@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161219: Cinemania 97: Corrupted Fonts on IBM Thinkpad with Cyber9320"
-permalink: kb/161/Q161219/
+permalink: /kb/161/Q161219/
 ---
 
 ## Q161219: Cinemania 97: Corrupted Fonts on IBM Thinkpad with Cyber9320

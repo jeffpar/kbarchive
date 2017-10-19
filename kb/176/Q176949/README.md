@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176949: Microsoft Game Quits Unexpectedly with No Error Message"
-permalink: kb/176/Q176949/
+permalink: /kb/176/Q176949/
 ---
 
 ## Q176949: Microsoft Game Quits Unexpectedly with No Error Message

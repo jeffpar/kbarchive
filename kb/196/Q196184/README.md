@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196184: XADM: Regenerate Offline Address Books after the Move"
-permalink: kb/196/Q196184/
+permalink: /kb/196/Q196184/
 ---
 
 ## Q196184: XADM: Regenerate Offline Address Books after the Move

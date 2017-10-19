@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194117: XADM: Error: Move Server Wizard Requires Service Pack 1"
-permalink: kb/194/Q194117/
+permalink: /kb/194/Q194117/
 ---
 
 ## Q194117: XADM: Error: Move Server Wizard Requires Service Pack 1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97024: PC WRmt: Send All Messages Before Changing Drivers"
-permalink: kb/097/Q97024/
+permalink: /kb/097/Q97024/
 ---
 
 ## Q97024: PC WRmt: Send All Messages Before Changing Drivers

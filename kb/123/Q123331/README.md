@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123331: HOWTO: Compile Large Chinese or Korean Help Files"
-permalink: kb/123/Q123331/
+permalink: /kb/123/Q123331/
 ---
 
 ## Q123331: HOWTO: Compile Large Chinese or Korean Help Files

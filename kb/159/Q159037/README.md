@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159037: MSN Installation and Setup Questions &amp; Answers"
-permalink: kb/159/Q159037/
+permalink: /kb/159/Q159037/
 ---
 
 ## Q159037: MSN Installation and Setup Questions &amp; Answers

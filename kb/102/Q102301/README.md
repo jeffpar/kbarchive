@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102301: X400: Err: TMP Variable Not Set Gives WARNING 7 Error"
-permalink: kb/102/Q102301/
+permalink: /kb/102/Q102301/
 ---
 
 ## Q102301: X400: Err: TMP Variable Not Set Gives WARNING 7 Error

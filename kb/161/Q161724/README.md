@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161724: PPT7: Running PowerPoint Animations with Netscape Navigator 3.x"
-permalink: kb/161/Q161724/
+permalink: /kb/161/Q161724/
 ---
 
 ## Q161724: PPT7: Running PowerPoint Animations with Netscape Navigator 3.x

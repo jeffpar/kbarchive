@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200713: SMS: Smsiddup.exe Fails with Case-Sensitive SQL Server Code Page"
-permalink: kb/200/Q200713/
+permalink: /kb/200/Q200713/
 ---
 
 ## Q200713: SMS: Smsiddup.exe Fails with Case-Sensitive SQL Server Code Page

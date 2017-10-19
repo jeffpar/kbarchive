@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138912: Cannot Run Windows 95 Setup on Invisible Net Network"
-permalink: kb/138/Q138912/
+permalink: /kb/138/Q138912/
 ---
 
 ## Q138912: Cannot Run Windows 95 Setup on Invisible Net Network

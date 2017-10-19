@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123029: WFW 3.11 Clients Hang Accessing Windows NT Server"
-permalink: kb/123/Q123029/
+permalink: /kb/123/Q123029/
 ---
 
 ## Q123029: WFW 3.11 Clients Hang Accessing Windows NT Server

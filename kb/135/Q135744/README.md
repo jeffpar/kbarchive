@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135744: PPT7: Contents of PPReadme.txt File"
-permalink: kb/135/Q135744/
+permalink: /kb/135/Q135744/
 ---
 
 ## Q135744: PPT7: Contents of PPReadme.txt File

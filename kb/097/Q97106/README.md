@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97106: MS-DOS Upgrade Setup May Not Disable PC-KWIK Disk Cache"
-permalink: kb/097/Q97106/
+permalink: /kb/097/Q97106/
 ---
 
 ## Q97106: MS-DOS Upgrade Setup May Not Disable PC-KWIK Disk Cache

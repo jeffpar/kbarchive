@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195990: WD97: How to Change Table Width After Changing Margins"
-permalink: kb/195/Q195990/
+permalink: /kb/195/Q195990/
 ---
 
 ## Q195990: WD97: How to Change Table Width After Changing Margins

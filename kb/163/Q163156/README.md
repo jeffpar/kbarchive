@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163156: WD97: Gridlines Missing from Cells Pasted as Excel Object"
-permalink: kb/163/Q163156/
+permalink: /kb/163/Q163156/
 ---
 
 ## Q163156: WD97: Gridlines Missing from Cells Pasted as Excel Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85849: MicroSpeed FastTrap Mouse and Windows 3.1"
-permalink: kb/085/Q85849/
+permalink: /kb/085/Q85849/
 ---
 
 ## Q85849: MicroSpeed FastTrap Mouse and Windows 3.1

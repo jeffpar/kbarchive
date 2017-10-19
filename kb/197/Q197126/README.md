@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197126: BUG: IPF Referencing Default Property of Nonexistent Image Ctrl"
-permalink: kb/197/Q197126/
+permalink: /kb/197/Q197126/
 ---
 
 ## Q197126: BUG: IPF Referencing Default Property of Nonexistent Image Ctrl

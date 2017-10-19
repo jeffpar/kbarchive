@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184056: Font Substitution List Is Not Loaded from Vendor PPD File"
-permalink: kb/184/Q184056/
+permalink: /kb/184/Q184056/
 ---
 
 ## Q184056: Font Substitution List Is Not Loaded from Vendor PPD File

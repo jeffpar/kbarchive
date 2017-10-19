@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160932: XADM: Error 0002 The Exchange Directory Will Not Start"
-permalink: kb/160/Q160932/
+permalink: /kb/160/Q160932/
 ---
 
 ## Q160932: XADM: Error 0002 The Exchange Directory Will Not Start

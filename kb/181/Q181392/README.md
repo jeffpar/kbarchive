@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181392: PRB: Some Keywords Are Not Highlighted"
-permalink: kb/181/Q181392/
+permalink: /kb/181/Q181392/
 ---
 
 ## Q181392: PRB: Some Keywords Are Not Highlighted

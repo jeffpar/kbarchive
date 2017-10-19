@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149291: XCLN: No Button to Remove Members from PDL"
-permalink: kb/149/Q149291/
+permalink: /kb/149/Q149291/
 ---
 
 ## Q149291: XCLN: No Button to Remove Members from PDL

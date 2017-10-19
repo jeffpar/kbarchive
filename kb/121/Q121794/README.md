@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121794: Reinstalling MS-DOS 6.22 Step-Up with DriveSpace Installed"
-permalink: kb/121/Q121794/
+permalink: /kb/121/Q121794/
 ---
 
 ## Q121794: Reinstalling MS-DOS 6.22 Step-Up with DriveSpace Installed

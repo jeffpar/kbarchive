@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139191: Julia Child: Play Through Lesson Button Malfunctions"
-permalink: kb/139/Q139191/
+permalink: /kb/139/Q139191/
 ---
 
 ## Q139191: Julia Child: Play Through Lesson Button Malfunctions

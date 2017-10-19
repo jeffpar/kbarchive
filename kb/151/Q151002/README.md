@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151002: FIX: No Response to Natural Keyboard Right-Mouse Button"
-permalink: kb/151/Q151002/
+permalink: /kb/151/Q151002/
 ---
 
 ## Q151002: FIX: No Response to Natural Keyboard Right-Mouse Button

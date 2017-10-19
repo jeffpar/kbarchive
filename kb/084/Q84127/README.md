@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84127: DOCERR: &quot;SDK No Longer Provides C Run-time Libraries&quot; Note"
-permalink: kb/084/Q84127/
+permalink: /kb/084/Q84127/
 ---
 
 ## Q84127: DOCERR: &quot;SDK No Longer Provides C Run-time Libraries&quot; Note

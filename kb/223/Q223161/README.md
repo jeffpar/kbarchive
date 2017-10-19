@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223161: XADM: Information on ESE Zeroing"
-permalink: kb/223/Q223161/
+permalink: /kb/223/Q223161/
 ---
 
 ## Q223161: XADM: Information on ESE Zeroing

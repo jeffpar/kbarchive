@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291339: SMS: Administrator Console/Services Can't Connect to SQL Server"
-permalink: kb/291/Q291339/
+permalink: /kb/291/Q291339/
 ---
 
 ## Q291339: SMS: Administrator Console/Services Can't Connect to SQL Server

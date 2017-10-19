@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97837: Changes and Functions of SpaceMan with MS-DOS DoubleSpace"
-permalink: kb/097/Q97837/
+permalink: /kb/097/Q97837/
 ---
 
 ## Q97837: Changes and Functions of SpaceMan with MS-DOS DoubleSpace

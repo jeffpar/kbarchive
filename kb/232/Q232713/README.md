@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232713: XCON: Message Arrives with Blank To and From Fields"
-permalink: kb/232/Q232713/
+permalink: /kb/232/Q232713/
 ---
 
 ## Q232713: XCON: Message Arrives with Blank To and From Fields

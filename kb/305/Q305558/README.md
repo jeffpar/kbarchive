@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305558: PRB: PDW Raises Error 28 When You Click Finish"
-permalink: kb/305/Q305558/
+permalink: /kb/305/Q305558/
 ---
 
 ## Q305558: PRB: PDW Raises Error 28 When You Click Finish

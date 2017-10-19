@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172067: Duplicate HSD Causes Incorrect Error Using &quot;Insert&quot; Option"
-permalink: kb/172/Q172067/
+permalink: /kb/172/Q172067/
 ---
 
 ## Q172067: Duplicate HSD Causes Incorrect Error Using &quot;Insert&quot; Option

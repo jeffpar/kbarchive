@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79516: Imported Windows Group Files Retain Old Descriptions"
-permalink: kb/079/Q79516/
+permalink: /kb/079/Q79516/
 ---
 
 ## Q79516: Imported Windows Group Files Retain Old Descriptions

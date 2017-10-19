@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166502: Win95 Workgroup Name Overwrites Static Computername in WINS DB"
-permalink: kb/166/Q166502/
+permalink: /kb/166/Q166502/
 ---
 
 ## Q166502: Win95 Workgroup Name Overwrites Static Computername in WINS DB

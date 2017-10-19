@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125575: Access Denied Error When Changing Expired Domain Password"
-permalink: kb/125/Q125575/
+permalink: /kb/125/Q125575/
 ---
 
 ## Q125575: Access Denied Error When Changing Expired Domain Password

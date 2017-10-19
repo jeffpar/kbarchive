@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128518: PC WSPlus: Cannot Open Appointment Book with View Free/Busy"
-permalink: kb/128/Q128518/
+permalink: /kb/128/Q128518/
 ---
 
 ## Q128518: PC WSPlus: Cannot Open Appointment Book with View Free/Busy

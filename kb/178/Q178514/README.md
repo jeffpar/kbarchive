@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178514: &quot;No Line Formatting&quot; Option isn't Explained in SNA Server Help"
-permalink: kb/178/Q178514/
+permalink: /kb/178/Q178514/
 ---
 
 ## Q178514: &quot;No Line Formatting&quot; Option isn't Explained in SNA Server Help

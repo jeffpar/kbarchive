@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261018: MCM2: Sounds Are Played If You Turn Off Sound Effects in Game"
-permalink: kb/261/Q261018/
+permalink: /kb/261/Q261018/
 ---
 
 ## Q261018: MCM2: Sounds Are Played If You Turn Off Sound Effects in Game

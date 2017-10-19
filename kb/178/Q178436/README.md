@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178436: XFOR: Looping Messages over Internet Mail Service Site Connector"
-permalink: kb/178/Q178436/
+permalink: /kb/178/Q178436/
 ---
 
 ## Q178436: XFOR: Looping Messages over Internet Mail Service Site Connector

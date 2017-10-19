@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197513: Windows NT Memory Limitations"
-permalink: kb/197/Q197513/
+permalink: /kb/197/Q197513/
 ---
 
 ## Q197513: Windows NT Memory Limitations

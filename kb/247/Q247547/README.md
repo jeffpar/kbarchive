@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247547: Kixtart Drive Mappings Disappear on Windows 95/98 Clients"
-permalink: kb/247/Q247547/
+permalink: /kb/247/Q247547/
 ---
 
 ## Q247547: Kixtart Drive Mappings Disappear on Windows 95/98 Clients

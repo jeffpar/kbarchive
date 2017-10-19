@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132644: Error Printing from WordPerfect to PostScript Printer"
-permalink: kb/132/Q132644/
+permalink: /kb/132/Q132644/
 ---
 
 ## Q132644: Error Printing from WordPerfect to PostScript Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262781: MSN 5.1 download client sometimes freezes at the select payment"
-permalink: kb/262/Q262781/
+permalink: /kb/262/Q262781/
 ---
 
 ## Q262781: MSN 5.1 download client sometimes freezes at the select payment

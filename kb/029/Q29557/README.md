@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29557: printf() Default Floating-Point Precision Is 6 Decimals"
-permalink: kb/029/Q29557/
+permalink: /kb/029/Q29557/
 ---
 
 ## Q29557: printf() Default Floating-Point Precision Is 6 Decimals

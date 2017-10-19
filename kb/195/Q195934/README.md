@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195934: Incorrect Permissions Applied to Terminal Server Home Folders"
-permalink: kb/195/Q195934/
+permalink: /kb/195/Q195934/
 ---
 
 ## Q195934: Incorrect Permissions Applied to Terminal Server Home Folders

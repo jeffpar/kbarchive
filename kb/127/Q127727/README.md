@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127727: SMTP: Err Msg: The Following Recipients Could Not Be Reached"
-permalink: kb/127/Q127727/
+permalink: /kb/127/Q127727/
 ---
 
 ## Q127727: SMTP: Err Msg: The Following Recipients Could Not Be Reached

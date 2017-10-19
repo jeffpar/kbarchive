@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156810: INFO: STL Sample for Members of the numeric_limits Class"
-permalink: kb/156/Q156810/
+permalink: /kb/156/Q156810/
 ---
 
 ## Q156810: INFO: STL Sample for Members of the numeric_limits Class

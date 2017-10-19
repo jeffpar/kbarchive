@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152925: XADM: Schedule Requests not Updated in MS Mail Clients"
-permalink: kb/152/Q152925/
+permalink: /kb/152/Q152925/
 ---
 
 ## Q152925: XADM: Schedule Requests not Updated in MS Mail Clients

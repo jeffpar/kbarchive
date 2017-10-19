@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130396: PC NTMMTA: Err Msg: Unable to Find Specified Instance INI..."
-permalink: kb/130/Q130396/
+permalink: /kb/130/Q130396/
 ---
 
 ## Q130396: PC NTMMTA: Err Msg: Unable to Find Specified Instance INI...

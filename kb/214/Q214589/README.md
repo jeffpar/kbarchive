@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214589: Close Combat III: Difficulty Settings Slider Balances Forces"
-permalink: kb/214/Q214589/
+permalink: /kb/214/Q214589/
 ---
 
 ## Q214589: Close Combat III: Difficulty Settings Slider Balances Forces

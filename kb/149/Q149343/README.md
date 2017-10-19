@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149343: HOWTO: Implement Context-Sensitive Help for Dialog Controls"
-permalink: kb/149/Q149343/
+permalink: /kb/149/Q149343/
 ---
 
 ## Q149343: HOWTO: Implement Context-Sensitive Help for Dialog Controls

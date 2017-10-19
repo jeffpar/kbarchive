@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231875: PRB: C Datatype's Pseudo Null Not Inserted into SQL Database"
-permalink: kb/231/Q231875/
+permalink: /kb/231/Q231875/
 ---
 
 ## Q231875: PRB: C Datatype's Pseudo Null Not Inserted into SQL Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116405: STOP Message: 0xC000021A During Logon Because of Bad PATH"
-permalink: kb/116/Q116405/
+permalink: /kb/116/Q116405/
 ---
 
 ## Q116405: STOP Message: 0xC000021A During Logon Because of Bad PATH

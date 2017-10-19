@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146239: Microsoft Windows 95 Service Pack 1 Admin.doc File (2 of 3)"
-permalink: kb/146/Q146239/
+permalink: /kb/146/Q146239/
 ---
 
 ## Q146239: Microsoft Windows 95 Service Pack 1 Admin.doc File (2 of 3)

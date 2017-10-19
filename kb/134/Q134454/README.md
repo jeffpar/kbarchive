@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134454: No Pointer After Exiting MS-DOS Window Using 928 Movie Card"
-permalink: kb/134/Q134454/
+permalink: /kb/134/Q134454/
 ---
 
 ## Q134454: No Pointer After Exiting MS-DOS Window Using 928 Movie Card

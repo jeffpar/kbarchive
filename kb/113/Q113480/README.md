@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113480: WFWG AWFAX Err Msg: General Failure in EFAXPUMP"
-permalink: kb/113/Q113480/
+permalink: /kb/113/Q113480/
 ---
 
 ## Q113480: WFWG AWFAX Err Msg: General Failure in EFAXPUMP

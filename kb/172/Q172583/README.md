@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172583: WordArt Preview Is Blank After Installing Service Pack 5"
-permalink: kb/172/Q172583/
+permalink: /kb/172/Q172583/
 ---
 
 ## Q172583: WordArt Preview Is Blank After Installing Service Pack 5

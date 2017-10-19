@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96197: Cannot See Dell Partitions After Upgrading to MS-DOS"
-permalink: kb/096/Q96197/
+permalink: /kb/096/Q96197/
 ---
 
 ## Q96197: Cannot See Dell Partitions After Upgrading to MS-DOS

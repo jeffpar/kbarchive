@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q97895: PC WRmt: 3.2 Mail Remote for Windows Disk 2 [3.5] - U.S."
-permalink: kb/097/Q97895/
+title: "Q97895: PC WRmt: 3.2 Mail Remote for Windows Disk 2 &#91;3.5&#93; - U.S."
+permalink: /kb/097/Q97895/
 ---
 
-## Q97895: PC WRmt: 3.2 Mail Remote for Windows Disk 2 [3.5] - U.S.
+## Q97895: PC WRmt: 3.2 Mail Remote for Windows Disk 2 &#91;3.5&#93; - U.S.
 
 	Article: Q97895
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139076: BUG: Mpw2lib Fails on Long File Names"
-permalink: kb/139/Q139076/
+permalink: /kb/139/Q139076/
 ---
 
 ## Q139076: BUG: Mpw2lib Fails on Long File Names

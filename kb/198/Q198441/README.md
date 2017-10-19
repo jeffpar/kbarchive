@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198441: XCLN: How to determine the Organizer of Direct Booked Appt."
-permalink: kb/198/Q198441/
+permalink: /kb/198/Q198441/
 ---
 
 ## Q198441: XCLN: How to determine the Organizer of Direct Booked Appt.

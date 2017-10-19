@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99387: WFWG: Status Bar Option in Chat Shows Incorrect Shortcut Key"
-permalink: kb/099/Q99387/
+permalink: /kb/099/Q99387/
 ---
 
 ## Q99387: WFWG: Status Bar Option in Chat Shows Incorrect Shortcut Key

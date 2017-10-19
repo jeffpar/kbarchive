@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172237: Changing Link Service Properties Doesn't Update Com.cfg File"
-permalink: kb/172/Q172237/
+permalink: /kb/172/Q172237/
 ---
 
 ## Q172237: Changing Link Service Properties Doesn't Update Com.cfg File

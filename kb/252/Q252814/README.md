@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252814: XCLN: Posting to a PF Using Send As Doesn't Work as Expected"
-permalink: kb/252/Q252814/
+permalink: /kb/252/Q252814/
 ---
 
 ## Q252814: XCLN: Posting to a PF Using Send As Doesn't Work as Expected

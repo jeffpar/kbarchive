@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169691: XCON: MTA Slow to X.400 Links"
-permalink: kb/169/Q169691/
+permalink: /kb/169/Q169691/
 ---
 
 ## Q169691: XCON: MTA Slow to X.400 Links

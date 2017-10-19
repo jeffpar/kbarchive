@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74695: AdMenu.exe Adds Items to Sys Menus of All Applications"
-permalink: kb/074/Q74695/
+permalink: /kb/074/Q74695/
 ---
 
 ## Q74695: AdMenu.exe Adds Items to Sys Menus of All Applications

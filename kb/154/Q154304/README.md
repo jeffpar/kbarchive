@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154304: Writer: List of Files Installed and Modified, Version 1.1"
-permalink: kb/154/Q154304/
+permalink: /kb/154/Q154304/
 ---
 
 ## Q154304: Writer: List of Files Installed and Modified, Version 1.1

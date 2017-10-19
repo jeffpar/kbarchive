@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229878: SBS DHCP Server Shutdown After Upgrade to Full Windows NT"
-permalink: kb/229/Q229878/
+permalink: /kb/229/Q229878/
 ---
 
 ## Q229878: SBS DHCP Server Shutdown After Upgrade to Full Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137912: File Permissions on &#92;SYSTEM32 Affect All Subdirectories"
-permalink: kb/137/Q137912/
+permalink: /kb/137/Q137912/
 ---
 
 ## Q137912: File Permissions on &#92;SYSTEM32 Affect All Subdirectories

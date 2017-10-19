@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266712: SMS: Security Based on Global Groups Fails in Win 2000 Domains"
-permalink: kb/266/Q266712/
+permalink: /kb/266/Q266712/
 ---
 
 ## Q266712: SMS: Security Based on Global Groups Fails in Win 2000 Domains

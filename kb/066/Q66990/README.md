@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66990: DOC: BinInfo Structure for GETSETPAPERBINS Escape Incorrect"
-permalink: kb/066/Q66990/
+permalink: /kb/066/Q66990/
 ---
 
 ## Q66990: DOC: BinInfo Structure for GETSETPAPERBINS Escape Incorrect

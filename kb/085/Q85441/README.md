@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85441: Windows Setup Err Msg: Sector Not Found Reading Drive X"
-permalink: kb/085/Q85441/
+permalink: /kb/085/Q85441/
 ---
 
 ## Q85441: Windows Setup Err Msg: Sector Not Found Reading Drive X

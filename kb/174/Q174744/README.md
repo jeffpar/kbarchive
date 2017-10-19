@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174744: XADM: Counter Increases While Propagating Permissions"
-permalink: kb/174/Q174744/
+permalink: /kb/174/Q174744/
 ---
 
 ## Q174744: XADM: Counter Increases While Propagating Permissions

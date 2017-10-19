@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200001: HOWTO: Test and Debug a Windows 2000 Migration DLL"
-permalink: kb/200/Q200001/
+permalink: /kb/200/Q200001/
 ---
 
 ## Q200001: HOWTO: Test and Debug a Windows 2000 Migration DLL

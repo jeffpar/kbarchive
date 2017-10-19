@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85327: Paste Link Option Not Available When File to Link Is Not Saved"
-permalink: kb/085/Q85327/
+permalink: /kb/085/Q85327/
 ---
 
 ## Q85327: Paste Link Option Not Available When File to Link Is Not Saved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114476: PRB: &quot;Position Is off the Screen&quot; Error When Loading FoxPro"
-permalink: kb/114/Q114476/
+permalink: /kb/114/Q114476/
 ---
 
 ## Q114476: PRB: &quot;Position Is off the Screen&quot; Error When Loading FoxPro

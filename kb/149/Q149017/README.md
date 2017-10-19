@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149017: XCON: MTACheck Event IDs and Command Line Syntax"
-permalink: kb/149/Q149017/
+permalink: /kb/149/Q149017/
 ---
 
 ## Q149017: XCON: MTACheck Event IDs and Command Line Syntax

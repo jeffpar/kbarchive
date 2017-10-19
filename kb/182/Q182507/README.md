@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182507: XADM: How to Authenticate for LDAP Access"
-permalink: kb/182/Q182507/
+permalink: /kb/182/Q182507/
 ---
 
 ## Q182507: XADM: How to Authenticate for LDAP Access

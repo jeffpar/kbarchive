@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194648: High CPU Usage Using SNA Server Performance Monitor Counters"
-permalink: kb/194/Q194648/
+permalink: /kb/194/Q194648/
 ---
 
 ## Q194648: High CPU Usage Using SNA Server Performance Monitor Counters

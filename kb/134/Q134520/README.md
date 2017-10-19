@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134520: Phone Dialer Does Not Report a Busy Signal"
-permalink: kb/134/Q134520/
+permalink: /kb/134/Q134520/
 ---
 
 ## Q134520: Phone Dialer Does Not Report a Busy Signal

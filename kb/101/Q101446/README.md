@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101446: Mac Gty: MS Mail GW Does Not Reselect Server on Restart"
-permalink: kb/101/Q101446/
+permalink: /kb/101/Q101446/
 ---
 
 ## Q101446: Mac Gty: MS Mail GW Does Not Reselect Server on Restart

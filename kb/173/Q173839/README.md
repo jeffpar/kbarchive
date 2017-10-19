@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173839: Windows NT Training Kit Supplemental Files Will Not Install"
-permalink: kb/173/Q173839/
+permalink: /kb/173/Q173839/
 ---
 
 ## Q173839: Windows NT Training Kit Supplemental Files Will Not Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128794: File Manager Displays Maximum Disk Space of 1.99 GB"
-permalink: kb/128/Q128794/
+permalink: /kb/128/Q128794/
 ---
 
 ## Q128794: File Manager Displays Maximum Disk Space of 1.99 GB

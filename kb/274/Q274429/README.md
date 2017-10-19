@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274429: Microsoft Reader: How to Troubleshoot Display Issues"
-permalink: kb/274/Q274429/
+permalink: /kb/274/Q274429/
 ---
 
 ## Q274429: Microsoft Reader: How to Troubleshoot Display Issues

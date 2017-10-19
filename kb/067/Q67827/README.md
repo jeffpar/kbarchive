@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67827: Flight Simulator: Support for Kensington Trackball"
-permalink: kb/067/Q67827/
+permalink: /kb/067/Q67827/
 ---
 
 ## Q67827: Flight Simulator: Support for Kensington Trackball

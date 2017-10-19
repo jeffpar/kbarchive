@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161941: XADM: Corrupt Page Causes Edbutil to Receive an Access Violation"
-permalink: kb/161/Q161941/
+permalink: /kb/161/Q161941/
 ---
 
 ## Q161941: XADM: Corrupt Page Causes Edbutil to Receive an Access Violation

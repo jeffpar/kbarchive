@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47186: Mac Wkst: Cannot Change Default Settings in Address Window"
-permalink: kb/047/Q47186/
+permalink: /kb/047/Q47186/
 ---
 
 ## Q47186: Mac Wkst: Cannot Change Default Settings in Address Window

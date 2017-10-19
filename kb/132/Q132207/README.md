@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132207: PRB: MSINFO Not Installed on Windows NT or Windows 95"
-permalink: kb/132/Q132207/
+permalink: /kb/132/Q132207/
 ---
 
 ## Q132207: PRB: MSINFO Not Installed on Windows NT or Windows 95

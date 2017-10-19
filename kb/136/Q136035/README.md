@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136035: How to Reinitialize Registry Entries For Mail and Schedule+"
-permalink: kb/136/Q136035/
+permalink: /kb/136/Q136035/
 ---
 
 ## Q136035: How to Reinitialize Registry Entries For Mail and Schedule+

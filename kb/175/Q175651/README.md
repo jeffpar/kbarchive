@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175651: PRB: Unattended Setup Stops Asking for Network Confirmation"
-permalink: kb/175/Q175651/
+permalink: /kb/175/Q175651/
 ---
 
 ## Q175651: PRB: Unattended Setup Stops Asking for Network Confirmation

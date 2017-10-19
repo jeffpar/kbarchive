@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169903: SNA Server 3.0 Print Sessions Remain Pending on Windows NT"
-permalink: kb/169/Q169903/
+permalink: /kb/169/Q169903/
 ---
 
 ## Q169903: SNA Server 3.0 Print Sessions Remain Pending on Windows NT

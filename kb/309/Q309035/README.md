@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q309035: BETA-INFO: [SSAFE] - Saving Web Form Generates 3 Dialogs"
-permalink: kb/309/Q309035/
+title: "Q309035: BETA-INFO: &#91;SSAFE&#93; - Saving Web Form Generates 3 Dialogs"
+permalink: /kb/309/Q309035/
 ---
 
-## Q309035: BETA-INFO: [SSAFE] - Saving Web Form Generates 3 Dialogs
+## Q309035: BETA-INFO: &#91;SSAFE&#93; - Saving Web Form Generates 3 Dialogs
 
 	Article: Q309035
 	Product(s): Microsoft SourceSafe

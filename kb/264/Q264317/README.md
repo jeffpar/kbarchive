@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264317: XADM: Public Folders Are Re-Homed When You Restore Pub.edb File"
-permalink: kb/264/Q264317/
+permalink: /kb/264/Q264317/
 ---
 
 ## Q264317: XADM: Public Folders Are Re-Homed When You Restore Pub.edb File

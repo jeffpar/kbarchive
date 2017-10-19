@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126644: Troubleshooting SMS Workstation Package Installations"
-permalink: kb/126/Q126644/
+permalink: /kb/126/Q126644/
 ---
 
 ## Q126644: Troubleshooting SMS Workstation Package Installations

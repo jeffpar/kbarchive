@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71735: Aldus PageMaker version 4.0 Requires Path Statement"
-permalink: kb/071/Q71735/
+permalink: /kb/071/Q71735/
 ---
 
 ## Q71735: Aldus PageMaker version 4.0 Requires Path Statement

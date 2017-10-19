@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151767: BUG: 2.x @ SAY Report May Print Differently in Visual FoxPro"
-permalink: kb/151/Q151767/
+permalink: /kb/151/Q151767/
 ---
 
 ## Q151767: BUG: 2.x @ SAY Report May Print Differently in Visual FoxPro

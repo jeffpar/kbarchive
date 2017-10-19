@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195024: INFO: Visual SourceSafe Creates a VSSVer.scc File"
-permalink: kb/195/Q195024/
+permalink: /kb/195/Q195024/
 ---
 
 ## Q195024: INFO: Visual SourceSafe Creates a VSSVer.scc File

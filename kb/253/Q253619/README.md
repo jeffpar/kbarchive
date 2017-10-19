@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253619: XCON: MTA Logs Event 3150 Receiving Invalid Message"
-permalink: kb/253/Q253619/
+permalink: /kb/253/Q253619/
 ---
 
 ## Q253619: XCON: MTA Logs Event 3150 Receiving Invalid Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151880: Using Server-Based User Profiles w/ Citrix Winframe"
-permalink: kb/151/Q151880/
+permalink: /kb/151/Q151880/
 ---
 
 ## Q151880: Using Server-Based User Profiles w/ Citrix Winframe

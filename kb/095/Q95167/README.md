@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95167: XGraphic Windows Accelerator Doesn't Work with SUPERVGA.DRV"
-permalink: kb/095/Q95167/
+permalink: /kb/095/Q95167/
 ---
 
 ## Q95167: XGraphic Windows Accelerator Doesn't Work with SUPERVGA.DRV

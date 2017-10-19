@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153630: FP: FrontPage Client, Personal Web Server Run Only on i386"
-permalink: kb/153/Q153630/
+permalink: /kb/153/Q153630/
 ---
 
 ## Q153630: FP: FrontPage Client, Personal Web Server Run Only on i386

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186213: Outwars: List of Enhancement (Cheat) Codes"
-permalink: kb/186/Q186213/
+permalink: /kb/186/Q186213/
 ---
 
 ## Q186213: Outwars: List of Enhancement (Cheat) Codes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89892: Drag and Drop Fails While Playing/Recording in Quick Recorder"
-permalink: kb/089/Q89892/
+permalink: /kb/089/Q89892/
 ---
 
 ## Q89892: Drag and Drop Fails While Playing/Recording in Quick Recorder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160468: Writer 2: Graphics Print with Solid Black Box on Canon BJC"
-permalink: kb/160/Q160468/
+permalink: /kb/160/Q160468/
 ---
 
 ## Q160468: Writer 2: Graphics Print with Solid Black Box on Canon BJC

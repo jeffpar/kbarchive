@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q42075: INFO: Next scanf/fscanf Apparently Is Skipped During Run Time"
-permalink: kb/042/Q42075/
+permalink: /kb/042/Q42075/
 ---
 
 ## Q42075: INFO: Next scanf/fscanf Apparently Is Skipped During Run Time

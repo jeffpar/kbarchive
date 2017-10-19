@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200715: XFOR: How to Save Mapping Rules for LDE Using SQL"
-permalink: kb/200/Q200715/
+permalink: /kb/200/Q200715/
 ---
 
 ## Q200715: XFOR: How to Save Mapping Rules for LDE Using SQL

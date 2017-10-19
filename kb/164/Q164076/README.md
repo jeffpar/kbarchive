@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164076: List of Bugs Fixed in SNA Server 2.11 SP2"
-permalink: kb/164/Q164076/
+permalink: /kb/164/Q164076/
 ---
 
 ## Q164076: List of Bugs Fixed in SNA Server 2.11 SP2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105464: Windows NT CD Setup Disk Contents (528)"
-permalink: kb/105/Q105464/
+permalink: /kb/105/Q105464/
 ---
 
 ## Q105464: Windows NT CD Setup Disk Contents (528)

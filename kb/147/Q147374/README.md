@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147374: XADM: Registry Key Modifications Made During Setup"
-permalink: kb/147/Q147374/
+permalink: /kb/147/Q147374/
 ---
 
 ## Q147374: XADM: Registry Key Modifications Made During Setup

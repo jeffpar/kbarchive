@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77778: BTRIEVE Versions 5.1 and Later Compatible with MS-DOS 5.x/6.x"
-permalink: kb/077/Q77778/
+permalink: /kb/077/Q77778/
 ---
 
 ## Q77778: BTRIEVE Versions 5.1 and Later Compatible with MS-DOS 5.x/6.x

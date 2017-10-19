@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210366: SMS:Offline Client Shows Multiple Instances of Program Being Run"
-permalink: kb/210/Q210366/
+permalink: /kb/210/Q210366/
 ---
 
 ## Q210366: SMS:Offline Client Shows Multiple Instances of Program Being Run

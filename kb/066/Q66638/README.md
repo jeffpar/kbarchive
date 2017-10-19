@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66638: ASD: Coordinates for Microsoft Campus"
-permalink: kb/066/Q66638/
+permalink: /kb/066/Q66638/
 ---
 
 ## Q66638: ASD: Coordinates for Microsoft Campus

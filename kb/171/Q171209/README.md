@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171209: BUG: Pop-up Menus May Cause Application Error in IDE"
-permalink: kb/171/Q171209/
+permalink: /kb/171/Q171209/
 ---
 
 ## Q171209: BUG: Pop-up Menus May Cause Application Error in IDE

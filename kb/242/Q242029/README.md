@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242029: MS Exchange Server 5.5 Administrator's Companion Corrections"
-permalink: kb/242/Q242029/
+permalink: /kb/242/Q242029/
 ---
 
 ## Q242029: MS Exchange Server 5.5 Administrator's Companion Corrections

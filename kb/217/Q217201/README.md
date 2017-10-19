@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217201: FIX: CControlBar Crashes When TOOLTIPTEXT.lpszText Is ID for SR"
-permalink: kb/217/Q217201/
+permalink: /kb/217/Q217201/
 ---
 
 ## Q217201: FIX: CControlBar Crashes When TOOLTIPTEXT.lpszText Is ID for SR

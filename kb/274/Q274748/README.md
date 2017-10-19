@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274748: CFS2: Tarmac and Textures Are Not Displayed Correctly"
-permalink: kb/274/Q274748/
+permalink: /kb/274/Q274748/
 ---
 
 ## Q274748: CFS2: Tarmac and Textures Are Not Displayed Correctly

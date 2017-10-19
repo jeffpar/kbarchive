@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162370: Flight Simulator 95 Err Msg: Invalid Page Fault in Winsmsg.dll"
-permalink: kb/162/Q162370/
+permalink: /kb/162/Q162370/
 ---
 
 ## Q162370: Flight Simulator 95 Err Msg: Invalid Page Fault in Winsmsg.dll

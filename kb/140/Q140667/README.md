@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140667: Dinosaurs and MSB Ocean: Unable to Print to a Canon BJC-610"
-permalink: kb/140/Q140667/
+permalink: /kb/140/Q140667/
 ---
 
 ## Q140667: Dinosaurs and MSB Ocean: Unable to Print to a Canon BJC-610

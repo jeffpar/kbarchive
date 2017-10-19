@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171644: BUG: Reporting Progress Template Not On Practice Disk For PowerP"
-permalink: kb/171/Q171644/
+permalink: /kb/171/Q171644/
 ---
 
 ## Q171644: BUG: Reporting Progress Template Not On Practice Disk For PowerP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135261: PPT: Server Application Error Trying to Edit OrgChart Object"
-permalink: kb/135/Q135261/
+permalink: /kb/135/Q135261/
 ---
 
 ## Q135261: PPT: Server Application Error Trying to Edit OrgChart Object

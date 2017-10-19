@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112457: PC Win: Err Msg: A Disk Error Occurred While Performing..."
-permalink: kb/112/Q112457/
+permalink: /kb/112/Q112457/
 ---
 
 ## Q112457: PC Win: Err Msg: A Disk Error Occurred While Performing...

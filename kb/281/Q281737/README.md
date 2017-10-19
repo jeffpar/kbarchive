@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281737: Error Message When Opening Rascfg.dll During DUN Installation"
-permalink: kb/281/Q281737/
+permalink: /kb/281/Q281737/
 ---
 
 ## Q281737: Error Message When Opening Rascfg.dll During DUN Installation

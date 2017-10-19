@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169866: WD97: Explanation for Converting Redlining Incorrect in ORK"
-permalink: kb/169/Q169866/
+permalink: /kb/169/Q169866/
 ---
 
 ## Q169866: WD97: Explanation for Converting Redlining Incorrect in ORK

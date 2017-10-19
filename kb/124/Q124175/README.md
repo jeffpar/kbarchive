@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124175: Microsoft Network Client and LAN Manager 2.2c Comparison"
-permalink: kb/124/Q124175/
+permalink: /kb/124/Q124175/
 ---
 
 ## Q124175: Microsoft Network Client and LAN Manager 2.2c Comparison

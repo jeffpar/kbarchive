@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90328: Conventional Memory Change with WFWG and DYNAMIC=YES Setting"
-permalink: kb/090/Q90328/
+permalink: /kb/090/Q90328/
 ---
 
 ## Q90328: Conventional Memory Change with WFWG and DYNAMIC=YES Setting

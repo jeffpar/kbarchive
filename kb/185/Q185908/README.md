@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185908: SMS: How to Integrate Apple Macintosh Clients"
-permalink: kb/185/Q185908/
+permalink: /kb/185/Q185908/
 ---
 
 ## Q185908: SMS: How to Integrate Apple Macintosh Clients

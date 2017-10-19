@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315522: HOW TO: Extract the URLScan Tool and Lockdown Template Files"
-permalink: kb/315/Q315522/
+permalink: /kb/315/Q315522/
 ---
 
 ## Q315522: HOW TO: Extract the URLScan Tool and Lockdown Template Files

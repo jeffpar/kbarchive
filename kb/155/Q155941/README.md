@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155941: Phonebook Entry Is Not Updated After Changing Modem"
-permalink: kb/155/Q155941/
+permalink: /kb/155/Q155941/
 ---
 
 ## Q155941: Phonebook Entry Is Not Updated After Changing Modem

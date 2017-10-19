@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168496: Windows 95 RPC Does Not Retry Failed Named Pipe Connections"
-permalink: kb/168/Q168496/
+permalink: /kb/168/Q168496/
 ---
 
 ## Q168496: Windows 95 RPC Does Not Retry Failed Named Pipe Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155120: Error Message: Error Copying File"
-permalink: kb/155/Q155120/
+permalink: /kb/155/Q155120/
 ---
 
 ## Q155120: Error Message: Error Copying File

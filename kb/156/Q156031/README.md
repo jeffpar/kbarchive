@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156031: PRB: Ordinal Not Found When Starting VFP or Application"
-permalink: kb/156/Q156031/
+permalink: /kb/156/Q156031/
 ---
 
 ## Q156031: PRB: Ordinal Not Found When Starting VFP or Application

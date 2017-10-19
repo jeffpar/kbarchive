@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190999: BUG: Visual C++ Project Settings Saved Only on Normal Exit"
-permalink: kb/190/Q190999/
+permalink: /kb/190/Q190999/
 ---
 
 ## Q190999: BUG: Visual C++ Project Settings Saved Only on Normal Exit

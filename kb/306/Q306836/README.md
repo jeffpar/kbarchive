@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306836: FP: Obsolete FrontPage Versions"
-permalink: kb/306/Q306836/
+permalink: /kb/306/Q306836/
 ---
 
 ## Q306836: FP: Obsolete FrontPage Versions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148496: XCLN: Creating Shared Windows Roving Users"
-permalink: kb/148/Q148496/
+permalink: /kb/148/Q148496/
 ---
 
 ## Q148496: XCLN: Creating Shared Windows Roving Users

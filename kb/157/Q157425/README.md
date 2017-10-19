@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157425: BUG: Quick Report Mixes Detail and Header Bands"
-permalink: kb/157/Q157425/
+permalink: /kb/157/Q157425/
 ---
 
 ## Q157425: BUG: Quick Report Mixes Detail and Header Bands

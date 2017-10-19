@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190220: PRB: &quot;Invalid Property Value&quot; When You Query MDIChild Property"
-permalink: kb/190/Q190220/
+permalink: /kb/190/Q190220/
 ---
 
 ## Q190220: PRB: &quot;Invalid Property Value&quot; When You Query MDIChild Property

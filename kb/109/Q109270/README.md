@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109270: PRB: CK1024 Error May Be Caused by Modules in Library"
-permalink: kb/109/Q109270/
+permalink: /kb/109/Q109270/
 ---
 
 ## Q109270: PRB: CK1024 Error May Be Caused by Modules in Library

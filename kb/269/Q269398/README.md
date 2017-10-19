@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269398: Performance Monitor May Display Incorrect Data When Logging Data"
-permalink: kb/269/Q269398/
+permalink: /kb/269/Q269398/
 ---
 
 ## Q269398: Performance Monitor May Display Incorrect Data When Logging Data

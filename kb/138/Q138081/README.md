@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138081: HOWTO: Load an Executable File into the Visual C++ Debugger"
-permalink: kb/138/Q138081/
+permalink: /kb/138/Q138081/
 ---
 
 ## Q138081: HOWTO: Load an Executable File into the Visual C++ Debugger

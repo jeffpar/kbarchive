@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249273: XIMS: Users in Bcc Box Appear in ImCr EwLs Section of Archive"
-permalink: kb/249/Q249273/
+permalink: /kb/249/Q249273/
 ---
 
 ## Q249273: XIMS: Users in Bcc Box Appear in ImCr EwLs Section of Archive

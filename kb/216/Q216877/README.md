@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216877: CFS: Cannot Hear Radio Communications When You Fly a Mission"
-permalink: kb/216/Q216877/
+permalink: /kb/216/Q216877/
 ---
 
 ## Q216877: CFS: Cannot Hear Radio Communications When You Fly a Mission

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247099: Access Denied Connecting to FTP Directory Using &quot;Connect As&quot;"
-permalink: kb/247/Q247099/
+permalink: /kb/247/Q247099/
 ---
 
 ## Q247099: Access Denied Connecting to FTP Directory Using &quot;Connect As&quot;

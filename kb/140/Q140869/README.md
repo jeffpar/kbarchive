@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140869: WD97: Mouse Click Selects Multiple Cells in Embedded Spreadsheet"
-permalink: kb/140/Q140869/
+permalink: /kb/140/Q140869/
 ---
 
 ## Q140869: WD97: Mouse Click Selects Multiple Cells in Embedded Spreadsheet

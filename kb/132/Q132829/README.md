@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132829: Creative Labs Mixer Controls Not Working in Windows 95"
-permalink: kb/132/Q132829/
+permalink: /kb/132/Q132829/
 ---
 
 ## Q132829: Creative Labs Mixer Controls Not Working in Windows 95

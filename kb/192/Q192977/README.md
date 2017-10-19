@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192977: FIX: Table Allows Modification Although DBC is Opened NOUPDATE"
-permalink: kb/192/Q192977/
+permalink: /kb/192/Q192977/
 ---
 
 ## Q192977: FIX: Table Allows Modification Although DBC is Opened NOUPDATE

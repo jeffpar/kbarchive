@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253518: Time Stamp on Files on Windows NT 3.51 Server Is Changed"
-permalink: kb/253/Q253518/
+permalink: /kb/253/Q253518/
 ---
 
 ## Q253518: Time Stamp on Files on Windows NT 3.51 Server Is Changed

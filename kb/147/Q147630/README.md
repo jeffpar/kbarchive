@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147630: FIX: Remote Monitor Quits When TCP/IP Isn't Loaded"
-permalink: kb/147/Q147630/
+permalink: /kb/147/Q147630/
 ---
 
 ## Q147630: FIX: Remote Monitor Quits When TCP/IP Isn't Loaded

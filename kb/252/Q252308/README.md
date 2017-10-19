@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252308: FS2000: Tutorials 12 and 13 Are Missing from Available Flights"
-permalink: kb/252/Q252308/
+permalink: /kb/252/Q252308/
 ---
 
 ## Q252308: FS2000: Tutorials 12 and 13 Are Missing from Available Flights

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159001: Access Violation Importing Key/Certificate into Key Manager"
-permalink: kb/159/Q159001/
+permalink: /kb/159/Q159001/
 ---
 
 ## Q159001: Access Violation Importing Key/Certificate into Key Manager

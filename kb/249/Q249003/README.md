@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249003: DHCP Clients Receive Identical IP and Default Gateway Addresses"
-permalink: kb/249/Q249003/
+permalink: /kb/249/Q249003/
 ---
 
 ## Q249003: DHCP Clients Receive Identical IP and Default Gateway Addresses

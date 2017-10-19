@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181449: XADM: Error -1022 When Starting the Information Store"
-permalink: kb/181/Q181449/
+permalink: /kb/181/Q181449/
 ---
 
 ## Q181449: XADM: Error -1022 When Starting the Information Store

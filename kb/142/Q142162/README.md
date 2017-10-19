@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142162: Read-Only Directory Attributes on HP LM/X Computer"
-permalink: kb/142/Q142162/
+permalink: /kb/142/Q142162/
 ---
 
 ## Q142162: Read-Only Directory Attributes on HP LM/X Computer

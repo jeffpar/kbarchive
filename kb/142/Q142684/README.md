@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142684: NetworkAddress Parameter Not Supported for a Modem"
-permalink: kb/142/Q142684/
+permalink: /kb/142/Q142684/
 ---
 
 ## Q142684: NetworkAddress Parameter Not Supported for a Modem

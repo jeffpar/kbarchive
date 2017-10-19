@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192778: BUG: Package Call Fails if Parameters Are Not Present"
-permalink: kb/192/Q192778/
+permalink: /kb/192/Q192778/
 ---
 
 ## Q192778: BUG: Package Call Fails if Parameters Are Not Present

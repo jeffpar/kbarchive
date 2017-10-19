@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274249: WD97: Macros Enabled Using Access Database in Mail Merge File"
-permalink: kb/274/Q274249/
+permalink: /kb/274/Q274249/
 ---
 
 ## Q274249: WD97: Macros Enabled Using Access Database in Mail Merge File

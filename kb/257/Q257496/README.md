@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257496: FIX: Optimized Code Incorrectly Compares Floating Point Numbers"
-permalink: kb/257/Q257496/
+permalink: /kb/257/Q257496/
 ---
 
 ## Q257496: FIX: Optimized Code Incorrectly Compares Floating Point Numbers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133252: Windows NT 3.51 GSNW Help Reports The File Is Corrupted"
-permalink: kb/133/Q133252/
+permalink: /kb/133/Q133252/
 ---
 
 ## Q133252: Windows NT 3.51 GSNW Help Reports The File Is Corrupted

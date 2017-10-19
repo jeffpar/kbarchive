@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128648: How to Create a List Box That Lists Available Fonts"
-permalink: kb/128/Q128648/
+permalink: /kb/128/Q128648/
 ---
 
 ## Q128648: How to Create a List Box That Lists Available Fonts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244925: Csrss.exe Stops Responding with a Stop 0xc000021A Error Message"
-permalink: kb/244/Q244925/
+permalink: /kb/244/Q244925/
 ---
 
 ## Q244925: Csrss.exe Stops Responding with a Stop 0xc000021A Error Message

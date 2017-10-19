@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193825: NET TIME /Domain Will Not Sync Time w/ Domain Time Source Srv"
-permalink: kb/193/Q193825/
+permalink: /kb/193/Q193825/
 ---
 
 ## Q193825: NET TIME /Domain Will Not Sync Time w/ Domain Time Source Srv

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179416: No Shutdown Notification When Users Are Connected"
-permalink: kb/179/Q179416/
+permalink: /kb/179/Q179416/
 ---
 
 ## Q179416: No Shutdown Notification When Users Are Connected

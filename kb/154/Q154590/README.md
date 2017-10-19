@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154590: Print Option Unavailable in Tabworks"
-permalink: kb/154/Q154590/
+permalink: /kb/154/Q154590/
 ---
 
 ## Q154590: Print Option Unavailable in Tabworks

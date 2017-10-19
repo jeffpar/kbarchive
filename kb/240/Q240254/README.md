@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240254: Only Drive C Is Available When You Add Fonts"
-permalink: kb/240/Q240254/
+permalink: /kb/240/Q240254/
 ---
 
 ## Q240254: Only Drive C Is Available When You Add Fonts

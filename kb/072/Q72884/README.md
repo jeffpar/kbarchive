@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72884: Profiler Won't Profile DLLs That Are Freed, Then Reloaded"
-permalink: kb/072/Q72884/
+permalink: /kb/072/Q72884/
 ---
 
 ## Q72884: Profiler Won't Profile DLLs That Are Freed, Then Reloaded

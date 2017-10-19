@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142964: PPT7: How to Add the Valupack ClipArt from the Office 95 CD"
-permalink: kb/142/Q142964/
+permalink: /kb/142/Q142964/
 ---
 
 ## Q142964: PPT7: How to Add the Valupack ClipArt from the Office 95 CD

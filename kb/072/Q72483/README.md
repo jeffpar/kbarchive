@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72483: QuickHelp Categories Menu May Be Shorter with MASM 6.0"
-permalink: kb/072/Q72483/
+permalink: /kb/072/Q72483/
 ---
 
 ## Q72483: QuickHelp Categories Menu May Be Shorter with MASM 6.0

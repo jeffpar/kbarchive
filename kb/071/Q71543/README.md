@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71543: MS-DOS Err Msg: &quot;Bad Sectors Being Bypassed&quot; with UNFORMAT"
-permalink: kb/071/Q71543/
+permalink: /kb/071/Q71543/
 ---
 
 ## Q71543: MS-DOS Err Msg: &quot;Bad Sectors Being Bypassed&quot; with UNFORMAT

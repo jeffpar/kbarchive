@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259957: XCLN: Sample Outlook.prf File with Internet E-mail Service"
-permalink: kb/259/Q259957/
+permalink: /kb/259/Q259957/
 ---
 
 ## Q259957: XCLN: Sample Outlook.prf File with Internet E-mail Service

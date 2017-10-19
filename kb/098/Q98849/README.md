@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98849: Adjust Parameters to Connect to LAN Man Over Slow Link"
-permalink: kb/098/Q98849/
+permalink: /kb/098/Q98849/
 ---
 
 ## Q98849: Adjust Parameters to Connect to LAN Man Over Slow Link

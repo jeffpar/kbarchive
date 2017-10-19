@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141072: How To Size a Picture Box Dynamically to Fit an AVI Image"
-permalink: kb/141/Q141072/
+permalink: /kb/141/Q141072/
 ---
 
 ## Q141072: How To Size a Picture Box Dynamically to Fit an AVI Image

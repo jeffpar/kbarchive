@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301481: BUG: July 2001 MSDN Has Bad link to Visual FoxPro Samples"
-permalink: kb/301/Q301481/
+permalink: /kb/301/Q301481/
 ---
 
 ## Q301481: BUG: July 2001 MSDN Has Bad link to Visual FoxPro Samples

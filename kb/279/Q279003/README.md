@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279003: Understanding and Configuring the SNA Server/HIS 2000 Web Client"
-permalink: kb/279/Q279003/
+permalink: /kb/279/Q279003/
 ---
 
 ## Q279003: Understanding and Configuring the SNA Server/HIS 2000 Web Client

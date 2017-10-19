@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266204: Cannot Browse a Different Windows NT 4.0 Domain Across a Firewal"
-permalink: kb/266/Q266204/
+permalink: /kb/266/Q266204/
 ---
 
 ## Q266204: Cannot Browse a Different Windows NT 4.0 Domain Across a Firewal

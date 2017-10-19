@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115351: X400: CANCEL Does Not Save Remote MTA Screen Update Changes"
-permalink: kb/115/Q115351/
+permalink: /kb/115/Q115351/
 ---
 
 ## Q115351: X400: CANCEL Does Not Save Remote MTA Screen Update Changes

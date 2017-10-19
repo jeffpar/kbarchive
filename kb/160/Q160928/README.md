@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160928: Components Installed by The Microsoft Network version 2.0"
-permalink: kb/160/Q160928/
+permalink: /kb/160/Q160928/
 ---
 
 ## Q160928: Components Installed by The Microsoft Network version 2.0

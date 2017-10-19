@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186404: SMS: Rservice Fails to Enumerate Clients"
-permalink: kb/186/Q186404/
+permalink: /kb/186/Q186404/
 ---
 
 ## Q186404: SMS: Rservice Fails to Enumerate Clients

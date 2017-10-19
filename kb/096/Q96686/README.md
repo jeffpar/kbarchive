@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96686: 3Com 3Server &quot;NO OS/2&quot; Error Message"
-permalink: kb/096/Q96686/
+permalink: /kb/096/Q96686/
 ---
 
 ## Q96686: 3Com 3Server &quot;NO OS/2&quot; Error Message

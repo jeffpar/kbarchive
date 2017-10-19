@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301045: Problems When You Print Colored Text on a Black Background"
-permalink: kb/301/Q301045/
+permalink: /kb/301/Q301045/
 ---
 
 ## Q301045: Problems When You Print Colored Text on a Black Background

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173536: STOP Message 0x0000001E Appears with Seagate Backup Exec 6.0"
-permalink: kb/173/Q173536/
+permalink: /kb/173/Q173536/
 ---
 
 ## Q173536: STOP Message 0x0000001E Appears with Seagate Backup Exec 6.0

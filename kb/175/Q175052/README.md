@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175052: HOWTO: Send a Message in Visual FoxPro Using Active Messaging"
-permalink: kb/175/Q175052/
+permalink: /kb/175/Q175052/
 ---
 
 ## Q175052: HOWTO: Send a Message in Visual FoxPro Using Active Messaging

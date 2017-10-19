@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47260: Mac Wkst: Multiple File Enclosures Supported in Version 3.0"
-permalink: kb/047/Q47260/
+permalink: /kb/047/Q47260/
 ---
 
 ## Q47260: Mac Wkst: Multiple File Enclosures Supported in Version 3.0

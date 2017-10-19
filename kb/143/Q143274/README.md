@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143274: HOWTO: Retrieve Printer Name from Windows95/98/Me Registry in VB"
-permalink: kb/143/Q143274/
+permalink: /kb/143/Q143274/
 ---
 
 ## Q143274: HOWTO: Retrieve Printer Name from Windows95/98/Me Registry in VB

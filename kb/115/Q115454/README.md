@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115454: X400: No Indentations in Routing Table Written by Config"
-permalink: kb/115/Q115454/
+permalink: /kb/115/Q115454/
 ---
 
 ## Q115454: X400: No Indentations in Routing Table Written by Config

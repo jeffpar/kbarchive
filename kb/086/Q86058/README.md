@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86058: The Tektronix Colorquick Printer and Windows"
-permalink: kb/086/Q86058/
+permalink: /kb/086/Q86058/
 ---
 
 ## Q86058: The Tektronix Colorquick Printer and Windows

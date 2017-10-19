@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129494: PRB: GPF When MultiColumn &amp; LBS_OWNERDRAWVARIABLE in List Box"
-permalink: kb/129/Q129494/
+permalink: /kb/129/Q129494/
 ---
 
 ## Q129494: PRB: GPF When MultiColumn &amp; LBS_OWNERDRAWVARIABLE in List Box

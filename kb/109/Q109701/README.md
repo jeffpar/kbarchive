@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109701: CONN: MACGATE.EXE Supports -MD Command-Line Option"
-permalink: kb/109/Q109701/
+permalink: /kb/109/Q109701/
 ---
 
 ## Q109701: CONN: MACGATE.EXE Supports -MD Command-Line Option

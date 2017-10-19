@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146165: XFOR: No Error When IMC Starts and Configured for DNS"
-permalink: kb/146/Q146165/
+permalink: /kb/146/Q146165/
 ---
 
 ## Q146165: XFOR: No Error When IMC Starts and Configured for DNS

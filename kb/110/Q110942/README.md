@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110942: Hang on Reboot Autocheck of Stripe Set with Parity"
-permalink: kb/110/Q110942/
+permalink: /kb/110/Q110942/
 ---
 
 ## Q110942: Hang on Reboot Autocheck of Stripe Set with Parity

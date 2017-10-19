@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143235: XADM: Error Message: Error -550 Has Occurred"
-permalink: kb/143/Q143235/
+permalink: /kb/143/Q143235/
 ---
 
 ## Q143235: XADM: Error Message: Error -550 Has Occurred

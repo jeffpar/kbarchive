@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215803: SNA Server 4.0 Service Pack 2 Readme.txt File"
-permalink: kb/215/Q215803/
+permalink: /kb/215/Q215803/
 ---
 
 ## Q215803: SNA Server 4.0 Service Pack 2 Readme.txt File

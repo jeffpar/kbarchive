@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85430: DOC: Private Data Formats Freed by the Clipboard"
-permalink: kb/085/Q85430/
+permalink: /kb/085/Q85430/
 ---
 
 ## Q85430: DOC: Private Data Formats Freed by the Clipboard

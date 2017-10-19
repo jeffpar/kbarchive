@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98345: DoubleSpace and R6002 Run-Time Errors"
-permalink: kb/098/Q98345/
+permalink: /kb/098/Q98345/
 ---
 
 ## Q98345: DoubleSpace and R6002 Run-Time Errors

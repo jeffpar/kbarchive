@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132797: Minimize Button in MS PowerPoint Viewer Closes PowerPoint"
-permalink: kb/132/Q132797/
+permalink: /kb/132/Q132797/
 ---
 
 ## Q132797: Minimize Button in MS PowerPoint Viewer Closes PowerPoint

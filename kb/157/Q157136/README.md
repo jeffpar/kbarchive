@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157136: WD97: Clip Gallery Video Displays Control Bar, Becomes Static"
-permalink: kb/157/Q157136/
+permalink: /kb/157/Q157136/
 ---
 
 ## Q157136: WD97: Clip Gallery Video Displays Control Bar, Becomes Static

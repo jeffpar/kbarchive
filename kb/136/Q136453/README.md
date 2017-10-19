@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136453: Using MS Exchange Remotely in Windows 95 Questions and Answers"
-permalink: kb/136/Q136453/
+permalink: /kb/136/Q136453/
 ---
 
 ## Q136453: Using MS Exchange Remotely in Windows 95 Questions and Answers

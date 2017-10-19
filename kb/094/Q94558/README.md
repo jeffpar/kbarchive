@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94558: TOSHIBA.DRV Causes GP Fault"
-permalink: kb/094/Q94558/
+permalink: /kb/094/Q94558/
 ---
 
 ## Q94558: TOSHIBA.DRV Causes GP Fault

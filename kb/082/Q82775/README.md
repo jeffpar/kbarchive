@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82775: Uncompressed Files on Windows 3.1 disks"
-permalink: kb/082/Q82775/
+permalink: /kb/082/Q82775/
 ---
 
 ## Q82775: Uncompressed Files on Windows 3.1 disks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161939: XFOR: Outbound Messages Not Delivered by IMC Until Queue Refresh"
-permalink: kb/161/Q161939/
+permalink: /kb/161/Q161939/
 ---
 
 ## Q161939: XFOR: Outbound Messages Not Delivered by IMC Until Queue Refresh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181803: 5250 Demo Screens Scroll with No User Input"
-permalink: kb/181/Q181803/
+permalink: /kb/181/Q181803/
 ---
 
 ## Q181803: 5250 Demo Screens Scroll with No User Input

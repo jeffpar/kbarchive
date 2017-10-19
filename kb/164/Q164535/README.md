@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164535: Random Errors w/ IDC or ASP Queries to Access Database"
-permalink: kb/164/Q164535/
+permalink: /kb/164/Q164535/
 ---
 
 ## Q164535: Random Errors w/ IDC or ASP Queries to Access Database

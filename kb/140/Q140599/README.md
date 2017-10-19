@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140599: PRB: MFC DAO Functions Accepting COleVariant Strings May Fail"
-permalink: kb/140/Q140599/
+permalink: /kb/140/Q140599/
 ---
 
 ## Q140599: PRB: MFC DAO Functions Accepting COleVariant Strings May Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258742: Intermittent &quot;Access Denied&quot; Error Messages While Printing"
-permalink: kb/258/Q258742/
+permalink: /kb/258/Q258742/
 ---
 
 ## Q258742: Intermittent &quot;Access Denied&quot; Error Messages While Printing

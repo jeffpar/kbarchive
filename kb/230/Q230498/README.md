@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230498: XCON: Message Looping NDR for Newly Created SMTP CR"
-permalink: kb/230/Q230498/
+permalink: /kb/230/Q230498/
 ---
 
 ## Q230498: XCON: Message Looping NDR for Newly Created SMTP CR

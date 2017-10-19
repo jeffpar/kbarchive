@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130131: PRB: ON ERROR Not Called When Trigger Fails in Browse or Grid"
-permalink: kb/130/Q130131/
+permalink: /kb/130/Q130131/
 ---
 
 ## Q130131: PRB: ON ERROR Not Called When Trigger Fails in Browse or Grid

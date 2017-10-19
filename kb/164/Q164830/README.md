@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164830: WD97: Invalid Page Fault Clearing &quot;Float Over Text&quot; Check Box"
-permalink: kb/164/Q164830/
+permalink: /kb/164/Q164830/
 ---
 
 ## Q164830: WD97: Invalid Page Fault Clearing &quot;Float Over Text&quot; Check Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115438: X400: Delivery Fails when Message Has Too Many TO: Recipients"
-permalink: kb/115/Q115438/
+permalink: /kb/115/Q115438/
 ---
 
 ## Q115438: X400: Delivery Fails when Message Has Too Many TO: Recipients

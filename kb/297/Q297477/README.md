@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297477: HOW TO: Apply a Background Sound to a Web Page in FrontPage"
-permalink: kb/297/Q297477/
+permalink: /kb/297/Q297477/
 ---
 
 ## Q297477: HOW TO: Apply a Background Sound to a Web Page in FrontPage

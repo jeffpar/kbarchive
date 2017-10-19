@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146306: XADM: Exchange Server Backup &amp; Restore Procedures"
-permalink: kb/146/Q146306/
+permalink: /kb/146/Q146306/
 ---
 
 ## Q146306: XADM: Exchange Server Backup &amp; Restore Procedures

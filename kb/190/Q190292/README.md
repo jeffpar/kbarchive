@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190292: Encarta 98: How to Test 360-Degree Views Outside Encarta"
-permalink: kb/190/Q190292/
+permalink: /kb/190/Q190292/
 ---
 
 ## Q190292: Encarta 98: How to Test 360-Degree Views Outside Encarta

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112676: Troubleshooting Insufficient Memory Errors"
-permalink: kb/112/Q112676/
+permalink: /kb/112/Q112676/
 ---
 
 ## Q112676: Troubleshooting Insufficient Memory Errors

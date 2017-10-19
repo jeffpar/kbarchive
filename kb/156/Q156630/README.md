@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156630: PRB: Incremental Search with Grid Causes Screen Flicker"
-permalink: kb/156/Q156630/
+permalink: /kb/156/Q156630/
 ---
 
 ## Q156630: PRB: Incremental Search with Grid Causes Screen Flicker

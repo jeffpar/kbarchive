@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178481: WD97: Errors Accessing the Address Book Icon"
-permalink: kb/178/Q178481/
+permalink: /kb/178/Q178481/
 ---
 
 ## Q178481: WD97: Errors Accessing the Address Book Icon

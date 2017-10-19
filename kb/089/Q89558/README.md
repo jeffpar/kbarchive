@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q89558: WFWG and Novell: LASTDRIVE=Z Makes [ and ] Active Drives"
-permalink: kb/089/Q89558/
+title: "Q89558: WFWG and Novell: LASTDRIVE=Z Makes &#91; and &#93; Active Drives"
+permalink: /kb/089/Q89558/
 ---
 
-## Q89558: WFWG and Novell: LASTDRIVE=Z Makes [ and ] Active Drives
+## Q89558: WFWG and Novell: LASTDRIVE=Z Makes &#91; and &#93; Active Drives
 
 	Article: Q89558
 	Product(s): Microsoft Windows 3.x Retail Product

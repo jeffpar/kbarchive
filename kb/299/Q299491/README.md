@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299491: FIX: Program Stops With Outstanding Class Reference"
-permalink: kb/299/Q299491/
+permalink: /kb/299/Q299491/
 ---
 
 ## Q299491: FIX: Program Stops With Outstanding Class Reference

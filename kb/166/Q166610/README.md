@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166610: XFOR: Unable to Open Attachment from ccMail"
-permalink: kb/166/Q166610/
+permalink: /kb/166/Q166610/
 ---
 
 ## Q166610: XFOR: Unable to Open Attachment from ccMail

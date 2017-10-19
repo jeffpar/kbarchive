@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150569: Stardata TSR on Win3.x Client Causes SNABase Service to Loop"
-permalink: kb/150/Q150569/
+permalink: /kb/150/Q150569/
 ---
 
 ## Q150569: Stardata TSR on Win3.x Client Causes SNABase Service to Loop

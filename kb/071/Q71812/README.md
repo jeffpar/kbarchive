@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71812: UNFORMAT Does Not Work on Disk Manager Partition"
-permalink: kb/071/Q71812/
+permalink: /kb/071/Q71812/
 ---
 
 ## Q71812: UNFORMAT Does Not Work on Disk Manager Partition

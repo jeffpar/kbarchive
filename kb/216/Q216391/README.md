@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216391: BUG: VSS History Not Updated for Modified Word Documents"
-permalink: kb/216/Q216391/
+permalink: /kb/216/Q216391/
 ---
 
 ## Q216391: BUG: VSS History Not Updated for Modified Word Documents

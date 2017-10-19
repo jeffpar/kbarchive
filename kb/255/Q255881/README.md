@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255881: Allegiance: Game Hangs When You Attempt to Launch a Ship"
-permalink: kb/255/Q255881/
+permalink: /kb/255/Q255881/
 ---
 
 ## Q255881: Allegiance: Game Hangs When You Attempt to Launch a Ship

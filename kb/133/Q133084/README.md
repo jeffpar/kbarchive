@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133084: &quot;PowerPoint Is Not Responding...&quot; When Closing Windows 95"
-permalink: kb/133/Q133084/
+permalink: /kb/133/Q133084/
 ---
 
 ## Q133084: &quot;PowerPoint Is Not Responding...&quot; When Closing Windows 95

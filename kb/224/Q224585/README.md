@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224585: TCB Hash Function Modified to Improve Network Performance"
-permalink: kb/224/Q224585/
+permalink: /kb/224/Q224585/
 ---
 
 ## Q224585: TCB Hash Function Modified to Improve Network Performance

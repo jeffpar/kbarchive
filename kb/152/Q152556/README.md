@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152556: XADM: Export Custom Recipients Option Affects DirSync Objects"
-permalink: kb/152/Q152556/
+permalink: /kb/152/Q152556/
 ---
 
 ## Q152556: XADM: Export Custom Recipients Option Affects DirSync Objects

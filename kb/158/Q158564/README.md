@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158564: Err Msg: The Following Non-Microsoft Networking Component..."
-permalink: kb/158/Q158564/
+permalink: /kb/158/Q158564/
 ---
 
 ## Q158564: Err Msg: The Following Non-Microsoft Networking Component...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106309: Chat Application Prompts for Password Across Domains"
-permalink: kb/106/Q106309/
+permalink: /kb/106/Q106309/
 ---
 
 ## Q106309: Chat Application Prompts for Password Across Domains

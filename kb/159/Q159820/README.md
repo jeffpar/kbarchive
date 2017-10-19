@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159820: XGEN: How to Obtain Exchange Server 5.0 U.S. Service Pack 1"
-permalink: kb/159/Q159820/
+permalink: /kb/159/Q159820/
 ---
 
 ## Q159820: XGEN: How to Obtain Exchange Server 5.0 U.S. Service Pack 1

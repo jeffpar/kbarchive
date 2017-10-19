@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255671: Unlocking Workstation with Invalid Password Increments Twice"
-permalink: kb/255/Q255671/
+permalink: /kb/255/Q255671/
 ---
 
 ## Q255671: Unlocking Workstation with Invalid Password Increments Twice

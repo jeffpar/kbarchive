@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130963: Summary of Network Intermediate Systems"
-permalink: kb/130/Q130963/
+permalink: /kb/130/Q130963/
 ---
 
 ## Q130963: Summary of Network Intermediate Systems

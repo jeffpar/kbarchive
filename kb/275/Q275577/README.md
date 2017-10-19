@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275577: BUG: Parameter Placeholders with Visual FoxPro (VFP) ODBC Driver"
-permalink: kb/275/Q275577/
+permalink: /kb/275/Q275577/
 ---
 
 ## Q275577: BUG: Parameter Placeholders with Visual FoxPro (VFP) ODBC Driver

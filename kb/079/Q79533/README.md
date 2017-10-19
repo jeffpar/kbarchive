@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79533: Upgrading MS-DOS 5.0 Over Stacker with STACDOS5.BAT"
-permalink: kb/079/Q79533/
+permalink: /kb/079/Q79533/
 ---
 
 ## Q79533: Upgrading MS-DOS 5.0 Over Stacker with STACDOS5.BAT

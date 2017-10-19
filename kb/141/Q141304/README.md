@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141304: Oopintro.exe - Intro to Object Oriented Programming"
-permalink: kb/141/Q141304/
+permalink: /kb/141/Q141304/
 ---
 
 ## Q141304: Oopintro.exe - Intro to Object Oriented Programming

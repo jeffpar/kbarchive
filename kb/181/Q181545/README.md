@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181545: Error Message: An External Winnt Error Has Occurred"
-permalink: kb/181/Q181545/
+permalink: /kb/181/Q181545/
 ---
 
 ## Q181545: Error Message: An External Winnt Error Has Occurred

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132785: Cannot Start Windows 95 from NetWare Server with RPL"
-permalink: kb/132/Q132785/
+permalink: /kb/132/Q132785/
 ---
 
 ## Q132785: Cannot Start Windows 95 from NetWare Server with RPL

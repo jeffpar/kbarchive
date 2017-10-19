@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191013: XGEN: README.TXT: Microsoft Exchange 5.5 U.S. Service Pack 1"
-permalink: kb/191/Q191013/
+permalink: /kb/191/Q191013/
 ---
 
 ## Q191013: XGEN: README.TXT: Microsoft Exchange 5.5 U.S. Service Pack 1

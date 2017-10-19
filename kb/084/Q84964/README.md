@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84964: Bringing a Card to the Front in the Cardfile Program"
-permalink: kb/084/Q84964/
+permalink: /kb/084/Q84964/
 ---
 
 ## Q84964: Bringing a Card to the Front in the Cardfile Program

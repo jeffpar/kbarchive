@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189253: Readme Files For Sample Scripts Incorrect On 5.5 Compact Disc"
-permalink: kb/189/Q189253/
+permalink: /kb/189/Q189253/
 ---
 
 ## Q189253: Readme Files For Sample Scripts Incorrect On 5.5 Compact Disc

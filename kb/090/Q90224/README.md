@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90224: No Difference Between LAN Manager Domain and WFWG Workgroup"
-permalink: kb/090/Q90224/
+permalink: /kb/090/Q90224/
 ---
 
 ## Q90224: No Difference Between LAN Manager Domain and WFWG Workgroup

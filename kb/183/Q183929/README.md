@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183929: XCLN: Err Msg: Not a full Exchange system. Cannot continue..."
-permalink: kb/183/Q183929/
+permalink: /kb/183/Q183929/
 ---
 
 ## Q183929: XCLN: Err Msg: Not a full Exchange system. Cannot continue...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257359: World Atlas 2000: World Atlas Has Encountered an Unknown Error"
-permalink: kb/257/Q257359/
+permalink: /kb/257/Q257359/
 ---
 
 ## Q257359: World Atlas 2000: World Atlas Has Encountered an Unknown Error

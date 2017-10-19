@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140943: XFOR: Can't Open Attachments Sent From AppleTalk Mail"
-permalink: kb/140/Q140943/
+permalink: /kb/140/Q140943/
 ---
 
 ## Q140943: XFOR: Can't Open Attachments Sent From AppleTalk Mail

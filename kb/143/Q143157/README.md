@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143157: FTP Server Service Does Not Start"
-permalink: kb/143/Q143157/
+permalink: /kb/143/Q143157/
 ---
 
 ## Q143157: FTP Server Service Does Not Start

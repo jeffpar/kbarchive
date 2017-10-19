@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196704: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for IE4"
-permalink: kb/196/Q196704/
+permalink: /kb/196/Q196704/
 ---
 
 ## Q196704: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for IE4

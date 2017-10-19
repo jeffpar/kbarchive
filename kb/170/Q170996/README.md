@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170996: SNA Server Fails to Send Data to DSPU After an Outage"
-permalink: kb/170/Q170996/
+permalink: /kb/170/Q170996/
 ---
 
 ## Q170996: SNA Server Fails to Send Data to DSPU After an Outage

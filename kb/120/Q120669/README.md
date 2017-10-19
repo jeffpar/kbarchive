@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120669: /Gt Switch Has the Default Value /Gt5"
-permalink: kb/120/Q120669/
+permalink: /kb/120/Q120669/
 ---
 
 ## Q120669: /Gt Switch Has the Default Value /Gt5

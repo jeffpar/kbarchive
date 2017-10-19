@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103155: Adding Musical Disc and Track Titles to Music Box"
-permalink: kb/103/Q103155/
+permalink: /kb/103/Q103155/
 ---
 
 ## Q103155: Adding Musical Disc and Track Titles to Music Box

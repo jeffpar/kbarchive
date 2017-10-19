@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164932: WordPad Crashes with Wrong Version of MFC42U.DLL"
-permalink: kb/164/Q164932/
+permalink: /kb/164/Q164932/
 ---
 
 ## Q164932: WordPad Crashes with Wrong Version of MFC42U.DLL

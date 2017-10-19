@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280067: PRB: Very Large XML Documents from SQL Server 2000 May Be Slow"
-permalink: kb/280/Q280067/
+permalink: /kb/280/Q280067/
 ---
 
 ## Q280067: PRB: Very Large XML Documents from SQL Server 2000 May Be Slow

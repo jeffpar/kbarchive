@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235153: Software Metering Client Agent Is Unable to Activate Retry Mode"
-permalink: kb/235/Q235153/
+permalink: /kb/235/Q235153/
 ---
 
 ## Q235153: Software Metering Client Agent Is Unable to Activate Retry Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288903: 0203 Error Message When You Start the Windows Installer Service"
-permalink: kb/288/Q288903/
+permalink: /kb/288/Q288903/
 ---
 
 ## Q288903: 0203 Error Message When You Start the Windows Installer Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151620: Inventory Scan Intervals Off by One Day"
-permalink: kb/151/Q151620/
+permalink: /kb/151/Q151620/
 ---
 
 ## Q151620: Inventory Scan Intervals Off by One Day

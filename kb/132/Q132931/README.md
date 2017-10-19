@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132931: FIX: Drag/Drop Executes Create and Add with Insufficient Rights"
-permalink: kb/132/Q132931/
+permalink: /kb/132/Q132931/
 ---
 
 ## Q132931: FIX: Drag/Drop Executes Create and Add with Insufficient Rights

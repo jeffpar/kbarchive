@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161568: Desktop Themes from Resource Kit Produces Dr. Watson Error"
-permalink: kb/161/Q161568/
+permalink: /kb/161/Q161568/
 ---
 
 ## Q161568: Desktop Themes from Resource Kit Produces Dr. Watson Error

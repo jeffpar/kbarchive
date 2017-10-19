@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274685: MGS: New Saved Game Overwrites Existing Saved Game"
-permalink: kb/274/Q274685/
+permalink: /kb/274/Q274685/
 ---
 
 ## Q274685: MGS: New Saved Game Overwrites Existing Saved Game

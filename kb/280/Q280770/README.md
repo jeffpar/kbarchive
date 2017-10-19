@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280770: Information Store Fails After You Restore an Offline Backup"
-permalink: kb/280/Q280770/
+permalink: /kb/280/Q280770/
 ---
 
 ## Q280770: Information Store Fails After You Restore an Offline Backup

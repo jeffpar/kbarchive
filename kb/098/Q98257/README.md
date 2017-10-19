@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98257: PC WFW: 1.0a Microsoft Schedule+ Disk 2 [3.5, 720K]"
-permalink: kb/098/Q98257/
+title: "Q98257: PC WFW: 1.0a Microsoft Schedule+ Disk 2 &#91;3.5, 720K&#93;"
+permalink: /kb/098/Q98257/
 ---
 
-## Q98257: PC WFW: 1.0a Microsoft Schedule+ Disk 2 [3.5, 720K]
+## Q98257: PC WFW: 1.0a Microsoft Schedule+ Disk 2 &#91;3.5, 720K&#93;
 
 	Article: Q98257
 	Product(s): Microsoft Mail For PC Networks

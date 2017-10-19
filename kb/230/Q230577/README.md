@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230577: Error Message &quot;The Drive Is Not Ready for Use&quot; at Startup"
-permalink: kb/230/Q230577/
+permalink: /kb/230/Q230577/
 ---
 
 ## Q230577: Error Message &quot;The Drive Is Not Ready for Use&quot; at Startup

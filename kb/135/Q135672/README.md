@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135672: Why Coldconfirm Property Is Not Used in Frmaddremove Form"
-permalink: kb/135/Q135672/
+permalink: /kb/135/Q135672/
 ---
 
 ## Q135672: Why Coldconfirm Property Is Not Used in Frmaddremove Form

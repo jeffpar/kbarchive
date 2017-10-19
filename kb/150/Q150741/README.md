@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150741: XCLN: Invalid VxD Dynamic Link Call"
-permalink: kb/150/Q150741/
+permalink: /kb/150/Q150741/
 ---
 
 ## Q150741: XCLN: Invalid VxD Dynamic Link Call

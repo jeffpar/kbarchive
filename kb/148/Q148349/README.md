@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148349: Basketball 95-96: Minimum System Requirements"
-permalink: kb/148/Q148349/
+permalink: /kb/148/Q148349/
 ---
 
 ## Q148349: Basketball 95-96: Minimum System Requirements

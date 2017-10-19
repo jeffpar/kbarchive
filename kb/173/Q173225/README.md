@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173225: MSN Does Not Remove Dial-Up Networking Connections"
-permalink: kb/173/Q173225/
+permalink: /kb/173/Q173225/
 ---
 
 ## Q173225: MSN Does Not Remove Dial-Up Networking Connections

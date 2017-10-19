@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167028: XCLN: Err Msg: The Properties for This Item Are Not Available"
-permalink: kb/167/Q167028/
+permalink: /kb/167/Q167028/
 ---
 
 ## Q167028: XCLN: Err Msg: The Properties for This Item Are Not Available

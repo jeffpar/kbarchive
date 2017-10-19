@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174679: HOWTO: Retrieve Resultsets from Oracle Stored Procedures"
-permalink: kb/174/Q174679/
+permalink: /kb/174/Q174679/
 ---
 
 ## Q174679: HOWTO: Retrieve Resultsets from Oracle Stored Procedures

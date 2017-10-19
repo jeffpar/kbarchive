@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200067: Server-Side Session Variables Do Not Work in Internet Explorer"
-permalink: kb/200/Q200067/
+permalink: /kb/200/Q200067/
 ---
 
 ## Q200067: Server-Side Session Variables Do Not Work in Internet Explorer

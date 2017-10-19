@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134331: Incorrect DOS Version Error When Using MS-DOS 6.22 PDF"
-permalink: kb/134/Q134331/
+permalink: /kb/134/Q134331/
 ---
 
 ## Q134331: Incorrect DOS Version Error When Using MS-DOS 6.22 PDF

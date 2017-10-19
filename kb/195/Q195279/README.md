@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195279: Hitchhiker's Guide to VB &amp; SQL Server, 5th Ed. Corrections"
-permalink: kb/195/Q195279/
+permalink: /kb/195/Q195279/
 ---
 
 ## Q195279: Hitchhiker's Guide to VB &amp; SQL Server, 5th Ed. Corrections

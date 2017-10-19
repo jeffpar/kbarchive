@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86375: PC DB: Global Address List Definition and Details"
-permalink: kb/086/Q86375/
+permalink: /kb/086/Q86375/
 ---
 
 ## Q86375: PC DB: Global Address List Definition and Details

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196663: XCON: MTA Unable to Deliver NDR When Message Fails"
-permalink: kb/196/Q196663/
+permalink: /kb/196/Q196663/
 ---
 
 ## Q196663: XCON: MTA Unable to Deliver NDR When Message Fails

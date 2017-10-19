@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243353: Custom Certificate Mappings Are Not Recognized"
-permalink: kb/243/Q243353/
+permalink: /kb/243/Q243353/
 ---
 
 ## Q243353: Custom Certificate Mappings Are Not Recognized

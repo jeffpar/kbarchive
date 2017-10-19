@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119046: Mac Wkst: Err Msg: ...Mail Server Not Correct Version..."
-permalink: kb/119/Q119046/
+permalink: /kb/119/Q119046/
 ---
 
 ## Q119046: Mac Wkst: Err Msg: ...Mail Server Not Correct Version...

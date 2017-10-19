@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266334: Memory Leak in Os2srv.exe"
-permalink: kb/266/Q266334/
+permalink: /kb/266/Q266334/
 ---
 
 ## Q266334: Memory Leak in Os2srv.exe

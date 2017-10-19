@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130598: Cannot Create Folder or 8.3 Filename in All Upper Case"
-permalink: kb/130/Q130598/
+permalink: /kb/130/Q130598/
 ---
 
 ## Q130598: Cannot Create Folder or 8.3 Filename in All Upper Case

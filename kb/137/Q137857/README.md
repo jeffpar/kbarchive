@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137857: Errorlevel Paradigm Behaves Differently in Windows NT 3.51"
-permalink: kb/137/Q137857/
+permalink: /kb/137/Q137857/
 ---
 
 ## Q137857: Errorlevel Paradigm Behaves Differently in Windows NT 3.51

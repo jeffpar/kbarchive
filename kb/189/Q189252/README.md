@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189252: Close Combat 1.0: Contents of the Network.doc File"
-permalink: kb/189/Q189252/
+permalink: /kb/189/Q189252/
 ---
 
 ## Q189252: Close Combat 1.0: Contents of the Network.doc File

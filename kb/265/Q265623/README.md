@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265623: WD97: Embedded Document's Custom/Built-in Properties Lost"
-permalink: kb/265/Q265623/
+permalink: /kb/265/Q265623/
 ---
 
 ## Q265623: WD97: Embedded Document's Custom/Built-in Properties Lost

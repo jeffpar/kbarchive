@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157397: WD97: Can't Access Form Properties With Frame Control"
-permalink: kb/157/Q157397/
+permalink: /kb/157/Q157397/
 ---
 
 ## Q157397: WD97: Can't Access Form Properties With Frame Control

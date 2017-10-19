@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107054: CD Sampler: Err Msg: Unable to Find Movie Named..."
-permalink: kb/107/Q107054/
+permalink: /kb/107/Q107054/
 ---
 
 ## Q107054: CD Sampler: Err Msg: Unable to Find Movie Named...

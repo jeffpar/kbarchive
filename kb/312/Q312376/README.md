@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312376: HOW TO:Configure URLScan to Allow Requests with a Null Extension"
-permalink: kb/312/Q312376/
+permalink: /kb/312/Q312376/
 ---
 
 ## Q312376: HOW TO:Configure URLScan to Allow Requests with a Null Extension

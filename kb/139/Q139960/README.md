@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139960: Limiting LAN Traffic to One Network Adapter"
-permalink: kb/139/Q139960/
+permalink: /kb/139/Q139960/
 ---
 
 ## Q139960: Limiting LAN Traffic to One Network Adapter

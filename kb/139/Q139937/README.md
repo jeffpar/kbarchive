@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139937: Cannot Print More Than 99 Copies with HP LaserJet Series II"
-permalink: kb/139/Q139937/
+permalink: /kb/139/Q139937/
 ---
 
 ## Q139937: Cannot Print More Than 99 Copies with HP LaserJet Series II

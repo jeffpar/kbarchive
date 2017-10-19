@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151179: INFO: Configuring DNS on NT with CPS or During Unattended Setup"
-permalink: kb/151/Q151179/
+permalink: /kb/151/Q151179/
 ---
 
 ## Q151179: INFO: Configuring DNS on NT with CPS or During Unattended Setup

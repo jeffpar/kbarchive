@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112490: Schubert: Incorrect Fonts When Running Under Windows NT"
-permalink: kb/112/Q112490/
+permalink: /kb/112/Q112490/
 ---
 
 ## Q112490: Schubert: Incorrect Fonts When Running Under Windows NT

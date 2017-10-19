@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96126: SMTP: Error in Documentation for -BR Parameter"
-permalink: kb/096/Q96126/
+permalink: /kb/096/Q96126/
 ---
 
 ## Q96126: SMTP: Error in Documentation for -BR Parameter

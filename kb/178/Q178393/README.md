@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178393: SQL Server Hangs When Sending a Message Using SQLMail"
-permalink: kb/178/Q178393/
+permalink: /kb/178/Q178393/
 ---
 
 ## Q178393: SQL Server Hangs When Sending a Message Using SQLMail

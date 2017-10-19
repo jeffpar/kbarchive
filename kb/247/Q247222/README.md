@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247222: XADM: Cannot Create Newsfeed on Windows 2000 Server Computer"
-permalink: kb/247/Q247222/
+permalink: /kb/247/Q247222/
 ---
 
 ## Q247222: XADM: Cannot Create Newsfeed on Windows 2000 Server Computer

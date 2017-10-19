@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92393: Installing MS-DOS 6.x Upgrade with Dual-Boot Schemes"
-permalink: kb/092/Q92393/
+permalink: /kb/092/Q92393/
 ---
 
 ## Q92393: Installing MS-DOS 6.x Upgrade with Dual-Boot Schemes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124729: How to Program DMA Transfers in the Protected Mode Windows Env"
-permalink: kb/124/Q124729/
+permalink: /kb/124/Q124729/
 ---
 
 ## Q124729: How to Program DMA Transfers in the Protected Mode Windows Env

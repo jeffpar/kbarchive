@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154984: DNS Server May Not Recursively Resolve Some Names"
-permalink: kb/154/Q154984/
+permalink: /kb/154/Q154984/
 ---
 
 ## Q154984: DNS Server May Not Recursively Resolve Some Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321101: COMTI Does Not Support EZACICSE Security Exit as Supplied by IBM"
-permalink: kb/321/Q321101/
+permalink: /kb/321/Q321101/
 ---
 
 ## Q321101: COMTI Does Not Support EZACICSE Security Exit as Supplied by IBM

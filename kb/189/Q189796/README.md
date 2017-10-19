@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189796: Cinemania Online and Music Central Online Retiring After 1998"
-permalink: kb/189/Q189796/
+permalink: /kb/189/Q189796/
 ---
 
 ## Q189796: Cinemania Online and Music Central Online Retiring After 1998

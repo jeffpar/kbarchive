@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223065: FIX: Button Parameter of DataGrid MouseUp Event Always Equals 0"
-permalink: kb/223/Q223065/
+permalink: /kb/223/Q223065/
 ---
 
 ## Q223065: FIX: Button Parameter of DataGrid MouseUp Event Always Equals 0

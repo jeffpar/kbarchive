@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173783: WD97: Web Browser Cannot Open a Mailed or Routed HTML File"
-permalink: kb/173/Q173783/
+permalink: /kb/173/Q173783/
 ---
 
 ## Q173783: WD97: Web Browser Cannot Open a Mailed or Routed HTML File

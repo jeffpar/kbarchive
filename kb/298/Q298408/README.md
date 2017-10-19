@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298408: IIS Redirects When Folder Without Trailing Slash Is Requested"
-permalink: kb/298/Q298408/
+permalink: /kb/298/Q298408/
 ---
 
 ## Q298408: IIS Redirects When Folder Without Trailing Slash Is Requested

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125997: Err Msg Closing File on LM Server: Parameter is Incorrect"
-permalink: kb/125/Q125997/
+permalink: /kb/125/Q125997/
 ---
 
 ## Q125997: Err Msg Closing File on LM Server: Parameter is Incorrect

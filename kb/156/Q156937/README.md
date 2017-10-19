@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156937: PRB: Report Wizard Shows Surplus Data Sources for Query"
-permalink: kb/156/Q156937/
+permalink: /kb/156/Q156937/
 ---
 
 ## Q156937: PRB: Report Wizard Shows Surplus Data Sources for Query

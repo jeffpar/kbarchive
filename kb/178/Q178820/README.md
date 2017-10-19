@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178820: XADM: Collabra Migration Tool Does Not Handle OLE Embedded Docs"
-permalink: kb/178/Q178820/
+permalink: /kb/178/Q178820/
 ---
 
 ## Q178820: XADM: Collabra Migration Tool Does Not Handle OLE Embedded Docs

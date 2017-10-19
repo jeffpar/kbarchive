@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153628: PRB: Exclamation Mark in Folder Name Causes Genmenu Error"
-permalink: kb/153/Q153628/
+permalink: /kb/153/Q153628/
 ---
 
 ## Q153628: PRB: Exclamation Mark in Folder Name Causes Genmenu Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242582: Microsoft Excel 97/Visual Basic Step by Step Comments and Correc"
-permalink: kb/242/Q242582/
+permalink: /kb/242/Q242582/
 ---
 
 ## Q242582: Microsoft Excel 97/Visual Basic Step by Step Comments and Correc

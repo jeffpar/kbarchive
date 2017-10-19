@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245206: Cannot Delete a Partition from a Broken Mirror Set."
-permalink: kb/245/Q245206/
+permalink: /kb/245/Q245206/
 ---
 
 ## Q245206: Cannot Delete a Partition from a Broken Mirror Set.

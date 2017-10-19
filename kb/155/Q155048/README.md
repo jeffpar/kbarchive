@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155048: XCLN: Troubleshooting Startup of Windows Client Using TCP/IP"
-permalink: kb/155/Q155048/
+permalink: /kb/155/Q155048/
 ---
 
 ## Q155048: XCLN: Troubleshooting Startup of Windows Client Using TCP/IP

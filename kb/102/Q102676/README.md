@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102676: Documentation Lists CodeView Error Messages Alphabetically"
-permalink: kb/102/Q102676/
+permalink: /kb/102/Q102676/
 ---
 
 ## Q102676: Documentation Lists CodeView Error Messages Alphabetically

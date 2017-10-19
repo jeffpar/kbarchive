@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161192: Cannot Load Lucida Typewriter Font"
-permalink: kb/161/Q161192/
+permalink: /kb/161/Q161192/
 ---
 
 ## Q161192: Cannot Load Lucida Typewriter Font

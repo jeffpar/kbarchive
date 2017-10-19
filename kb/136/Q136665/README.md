@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136665: Err Msg Accessing Netware or Compatible Network: Network Request"
-permalink: kb/136/Q136665/
+permalink: /kb/136/Q136665/
 ---
 
 ## Q136665: Err Msg Accessing Netware or Compatible Network: Network Request

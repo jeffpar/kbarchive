@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216682: XADM: Perfwiz Doesn't Recognize Logical Partitions on Clustered"
-permalink: kb/216/Q216682/
+permalink: /kb/216/Q216682/
 ---
 
 ## Q216682: XADM: Perfwiz Doesn't Recognize Logical Partitions on Clustered

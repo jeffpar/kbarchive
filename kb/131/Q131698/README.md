@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131698: Systems Management Server Executive Service Hangs"
-permalink: kb/131/Q131698/
+permalink: /kb/131/Q131698/
 ---
 
 ## Q131698: Systems Management Server Executive Service Hangs

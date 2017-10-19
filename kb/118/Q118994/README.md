@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118994: FAX: ErrMsg: Cannot Find or Open M:&#92;FAX&#92;&#42;.ICX file"
-permalink: kb/118/Q118994/
+permalink: /kb/118/Q118994/
 ---
 
 ## Q118994: FAX: ErrMsg: Cannot Find or Open M:&#92;FAX&#92;&#42;.ICX file

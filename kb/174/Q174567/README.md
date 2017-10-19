@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174567: AGP Video Support for Windows NT 3.51 and 4.0"
-permalink: kb/174/Q174567/
+permalink: /kb/174/Q174567/
 ---
 
 ## Q174567: AGP Video Support for Windows NT 3.51 and 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280527: XADM: Event 1016 Not Logged When Accessing Other User's Mailbox"
-permalink: kb/280/Q280527/
+permalink: /kb/280/Q280527/
 ---
 
 ## Q280527: XADM: Event 1016 Not Logged When Accessing Other User's Mailbox

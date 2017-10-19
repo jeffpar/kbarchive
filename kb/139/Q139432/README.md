@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139432: OLE Update for Windows 95"
-permalink: kb/139/Q139432/
+permalink: /kb/139/Q139432/
 ---
 
 ## Q139432: OLE Update for Windows 95

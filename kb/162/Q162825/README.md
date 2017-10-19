@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162825: ACC97: Customizing Command Bar Does Not Prompt for Check-Out"
-permalink: kb/162/Q162825/
+permalink: /kb/162/Q162825/
 ---
 
 ## Q162825: ACC97: Customizing Command Bar Does Not Prompt for Check-Out

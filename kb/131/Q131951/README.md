@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131951: Flight Simulator 5.1: Disk 2 (Setup) Contents (3.5, 1.44 MB)"
-permalink: kb/131/Q131951/
+permalink: /kb/131/Q131951/
 ---
 
 ## Q131951: Flight Simulator 5.1: Disk 2 (Setup) Contents (3.5, 1.44 MB)

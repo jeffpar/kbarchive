@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222164: DSMN Fails to Synchronize Passwords When History Is Turned On"
-permalink: kb/222/Q222164/
+permalink: /kb/222/Q222164/
 ---
 
 ## Q222164: DSMN Fails to Synchronize Passwords When History Is Turned On

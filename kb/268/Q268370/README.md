@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268370: Windows NT Server &quot;0x00000023&quot; Error with Norton AntiVirus"
-permalink: kb/268/Q268370/
+permalink: /kb/268/Q268370/
 ---
 
 ## Q268370: Windows NT Server &quot;0x00000023&quot; Error with Norton AntiVirus

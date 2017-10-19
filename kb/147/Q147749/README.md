@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147749: BUG: Explicit-Shape Array Elements Not Displayed in Debugger"
-permalink: kb/147/Q147749/
+permalink: /kb/147/Q147749/
 ---
 
 ## Q147749: BUG: Explicit-Shape Array Elements Not Displayed in Debugger

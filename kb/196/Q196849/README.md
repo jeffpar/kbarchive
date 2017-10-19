@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196849: XFOR: Internet Mail Service Attachment Formatting Fails"
-permalink: kb/196/Q196849/
+permalink: /kb/196/Q196849/
 ---
 
 ## Q196849: XFOR: Internet Mail Service Attachment Formatting Fails

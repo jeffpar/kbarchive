@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59129: Mac AL: Creating an AppleLink Gateway-Access Server"
-permalink: kb/059/Q59129/
+permalink: /kb/059/Q59129/
 ---
 
 ## Q59129: Mac AL: Creating an AppleLink Gateway-Access Server

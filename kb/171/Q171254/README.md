@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171254: Information about Uninstalling TAPI 2.1 In Windows NT 4.0"
-permalink: kb/171/Q171254/
+permalink: /kb/171/Q171254/
 ---
 
 ## Q171254: Information about Uninstalling TAPI 2.1 In Windows NT 4.0

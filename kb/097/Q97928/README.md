@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97928: CONVERT.BAT and GETPATH.BAT File Contents"
-permalink: kb/097/Q97928/
+permalink: /kb/097/Q97928/
 ---
 
 ## Q97928: CONVERT.BAT and GETPATH.BAT File Contents

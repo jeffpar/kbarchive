@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128377: FoxPro Information Stored in the Registry or REG.DAT"
-permalink: kb/128/Q128377/
+permalink: /kb/128/Q128377/
 ---
 
 ## Q128377: FoxPro Information Stored in the Registry or REG.DAT

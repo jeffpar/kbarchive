@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163608: XADM: SQL MS Mail Messaging Breaks After Upgrading Windows NT"
-permalink: kb/163/Q163608/
+permalink: /kb/163/Q163608/
 ---
 
 ## Q163608: XADM: SQL MS Mail Messaging Breaks After Upgrading Windows NT

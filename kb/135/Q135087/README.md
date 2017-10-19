@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135087: Cannot Install Sender on BDC Unless It is a Site or Logon Server"
-permalink: kb/135/Q135087/
+permalink: /kb/135/Q135087/
 ---
 
 ## Q135087: Cannot Install Sender on BDC Unless It is a Site or Logon Server

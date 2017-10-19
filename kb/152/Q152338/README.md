@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152338: PCMMac Error -39 in File Cpackage.cpp"
-permalink: kb/152/Q152338/
+permalink: /kb/152/Q152338/
 ---
 
 ## Q152338: PCMMac Error -39 in File Cpackage.cpp

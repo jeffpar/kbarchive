@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158101: GEX: Cannot Run GEX on Windows NT 3.51"
-permalink: kb/158/Q158101/
+permalink: /kb/158/Q158101/
 ---
 
 ## Q158101: GEX: Cannot Run GEX on Windows NT 3.51

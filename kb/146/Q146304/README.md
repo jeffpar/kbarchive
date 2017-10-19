@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146304: XADM: Directory Import File Format"
-permalink: kb/146/Q146304/
+permalink: /kb/146/Q146304/
 ---
 
 ## Q146304: XADM: Directory Import File Format

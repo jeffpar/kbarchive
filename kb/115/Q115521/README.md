@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115521: FIX: Private Copy Constructor Called Without Proper Access"
-permalink: kb/115/Q115521/
+permalink: /kb/115/Q115521/
 ---
 
 ## Q115521: FIX: Private Copy Constructor Called Without Proper Access

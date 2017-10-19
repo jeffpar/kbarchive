@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64035: Updated IS/Pensmith Driver Available from Kurta for Windows"
-permalink: kb/064/Q64035/
+permalink: /kb/064/Q64035/
 ---
 
 ## Q64035: Updated IS/Pensmith Driver Available from Kurta for Windows

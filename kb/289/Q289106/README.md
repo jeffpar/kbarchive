@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289106: DirectX 8: Cannot Install on a Computer That Uses a Cyrix 686"
-permalink: kb/289/Q289106/
+permalink: /kb/289/Q289106/
 ---
 
 ## Q289106: DirectX 8: Cannot Install on a Computer That Uses a Cyrix 686

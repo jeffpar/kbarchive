@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131612: HyperTerminal Err Msg: The TAPI Configuration Has Changed..."
-permalink: kb/131/Q131612/
+permalink: /kb/131/Q131612/
 ---
 
 ## Q131612: HyperTerminal Err Msg: The TAPI Configuration Has Changed...

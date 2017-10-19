@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134961: Network Monitor Hangs Windows for Workgroups 3.11"
-permalink: kb/134/Q134961/
+permalink: /kb/134/Q134961/
 ---
 
 ## Q134961: Network Monitor Hangs Windows for Workgroups 3.11

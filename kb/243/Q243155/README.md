@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243155: XADM: Offline Address Book Download Does Not Work"
-permalink: kb/243/Q243155/
+permalink: /kb/243/Q243155/
 ---
 
 ## Q243155: XADM: Offline Address Book Download Does Not Work

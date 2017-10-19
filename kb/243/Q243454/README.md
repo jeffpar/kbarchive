@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243454: PRB: MFC ActiveX Control Subclassed ComboBox Problems with VB"
-permalink: kb/243/Q243454/
+permalink: /kb/243/Q243454/
 ---
 
 ## Q243454: PRB: MFC ActiveX Control Subclassed ComboBox Problems with VB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99108: Windows for Workgroups Mail Issues"
-permalink: kb/099/Q99108/
+permalink: /kb/099/Q99108/
 ---
 
 ## Q99108: Windows for Workgroups Mail Issues

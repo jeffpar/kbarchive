@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225048: INFO: Issues Migrating from DAO/Jet to ADO/Jet"
-permalink: kb/225/Q225048/
+permalink: /kb/225/Q225048/
 ---
 
 ## Q225048: INFO: Issues Migrating from DAO/Jet to ADO/Jet

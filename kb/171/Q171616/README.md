@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171616: Update.exe Should Support DBCS Characters"
-permalink: kb/171/Q171616/
+permalink: /kb/171/Q171616/
 ---
 
 ## Q171616: Update.exe Should Support DBCS Characters

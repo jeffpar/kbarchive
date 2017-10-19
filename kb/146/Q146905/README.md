@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146905: Remote Pipe DosWaitNmPipe to OS/2 Subsystem Gives Error 123"
-permalink: kb/146/Q146905/
+permalink: /kb/146/Q146905/
 ---
 
 ## Q146905: Remote Pipe DosWaitNmPipe to OS/2 Subsystem Gives Error 123

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235159: SMS: WBEM Is Not Installed on Windows NT 3.51 Workstation"
-permalink: kb/235/Q235159/
+permalink: /kb/235/Q235159/
 ---
 
 ## Q235159: SMS: WBEM Is Not Installed on Windows NT 3.51 Workstation

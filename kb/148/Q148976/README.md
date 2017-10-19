@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148976: Err Msg: STOP 0x0000000A - SPP.SYS"
-permalink: kb/148/Q148976/
+permalink: /kb/148/Q148976/
 ---
 
 ## Q148976: Err Msg: STOP 0x0000000A - SPP.SYS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151732: MSB Solar: How to Change the Installation Folder"
-permalink: kb/151/Q151732/
+permalink: /kb/151/Q151732/
 ---
 
 ## Q151732: MSB Solar: How to Change the Installation Folder

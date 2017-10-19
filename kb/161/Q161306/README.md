@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161306: INFO: App.LogEvent Only Logs in Compiled Applications"
-permalink: kb/161/Q161306/
+permalink: /kb/161/Q161306/
 ---
 
 ## Q161306: INFO: App.LogEvent Only Logs in Compiled Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245141: Error Initializing When Starting Access 97 Using Terminal Server"
-permalink: kb/245/Q245141/
+permalink: /kb/245/Q245141/
 ---
 
 ## Q245141: Error Initializing When Starting Access 97 Using Terminal Server

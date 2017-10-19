@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156171: DOCERR: Help Topic &quot;Switching Views&quot; Is Incorrect in VFP 3.0"
-permalink: kb/156/Q156171/
+permalink: /kb/156/Q156171/
 ---
 
 ## Q156171: DOCERR: Help Topic &quot;Switching Views&quot; Is Incorrect in VFP 3.0

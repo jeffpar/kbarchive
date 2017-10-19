@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159231: WD97: Command to Display Version Number of Word"
-permalink: kb/159/Q159231/
+permalink: /kb/159/Q159231/
 ---
 
 ## Q159231: WD97: Command to Display Version Number of Word

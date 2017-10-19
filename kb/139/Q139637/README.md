@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139637: FIX: Developer Studio Ignores /nologo Linker Setting"
-permalink: kb/139/Q139637/
+permalink: /kb/139/Q139637/
 ---
 
 ## Q139637: FIX: Developer Studio Ignores /nologo Linker Setting

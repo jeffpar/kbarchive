@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105175: PC Win: Err Msg: Mail Failed to Relocate Your Message File"
-permalink: kb/105/Q105175/
+permalink: /kb/105/Q105175/
 ---
 
 ## Q105175: PC Win: Err Msg: Mail Failed to Relocate Your Message File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238491: XCON: Exchange MTA MIMEInternet X.400 Enhanced Relay - MIXER"
-permalink: kb/238/Q238491/
+permalink: /kb/238/Q238491/
 ---
 
 ## Q238491: XCON: Exchange MTA MIMEInternet X.400 Enhanced Relay - MIXER

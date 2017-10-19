@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273627: Midtown Madness 2: Large Patches of the Road Are Missing"
-permalink: kb/273/Q273627/
+permalink: /kb/273/Q273627/
 ---
 
 ## Q273627: Midtown Madness 2: Large Patches of the Road Are Missing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246762: XCON: Error Starting the MTA After Upgrading to Exchange 5.5"
-permalink: kb/246/Q246762/
+permalink: /kb/246/Q246762/
 ---
 
 ## Q246762: XCON: Error Starting the MTA After Upgrading to Exchange 5.5

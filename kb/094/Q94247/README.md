@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94247: WSS Err Msg: Cannot Find the SNDSYS Driver"
-permalink: kb/094/Q94247/
+permalink: /kb/094/Q94247/
 ---
 
 ## Q94247: WSS Err Msg: Cannot Find the SNDSYS Driver

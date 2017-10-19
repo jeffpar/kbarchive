@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161988: WD97: Full Screen View Toolbar Is Hidden"
-permalink: kb/161/Q161988/
+permalink: /kb/161/Q161988/
 ---
 
 ## Q161988: WD97: Full Screen View Toolbar Is Hidden

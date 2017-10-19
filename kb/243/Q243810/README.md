@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243810: FIX: Incorrect Errors Occur w/ SELECT Queries Using Oracle 8.0.5"
-permalink: kb/243/Q243810/
+permalink: /kb/243/Q243810/
 ---
 
 ## Q243810: FIX: Incorrect Errors Occur w/ SELECT Queries Using Oracle 8.0.5

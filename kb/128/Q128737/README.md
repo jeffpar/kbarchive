@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128737: How to Declare Arrays on Forms Without Making Them Public"
-permalink: kb/128/Q128737/
+permalink: /kb/128/Q128737/
 ---
 
 ## Q128737: How to Declare Arrays on Forms Without Making Them Public

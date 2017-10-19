@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156208: STOP: 0x0000000A During Client Socket Disconnect"
-permalink: kb/156/Q156208/
+permalink: /kb/156/Q156208/
 ---
 
 ## Q156208: STOP: 0x0000000A During Client Socket Disconnect

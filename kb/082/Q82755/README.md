@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82755: Using Paintbrush's Fonts Tool with Windows 3.1"
-permalink: kb/082/Q82755/
+permalink: /kb/082/Q82755/
 ---
 
 ## Q82755: Using Paintbrush's Fonts Tool with Windows 3.1

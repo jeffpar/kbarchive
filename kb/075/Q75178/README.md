@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75178: FIX: ASSUME Using SEG on Communal Far Data Item"
-permalink: kb/075/Q75178/
+permalink: /kb/075/Q75178/
 ---
 
 ## Q75178: FIX: ASSUME Using SEG on Communal Far Data Item

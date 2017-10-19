@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222066: XADM: Event ID 11 Logged in the Application Log"
-permalink: kb/222/Q222066/
+permalink: /kb/222/Q222066/
 ---
 
 ## Q222066: XADM: Event ID 11 Logged in the Application Log

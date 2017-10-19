@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88259: PPT: Cannot Press TAB at Beginning of Paragraph"
-permalink: kb/088/Q88259/
+permalink: /kb/088/Q88259/
 ---
 
 ## Q88259: PPT: Cannot Press TAB at Beginning of Paragraph

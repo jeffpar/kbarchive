@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299984: Using ASP to Retrieve Authentication Information About Web Users"
-permalink: kb/299/Q299984/
+permalink: /kb/299/Q299984/
 ---
 
 ## Q299984: Using ASP to Retrieve Authentication Information About Web Users

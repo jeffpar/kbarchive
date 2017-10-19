@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301091: HOW TO: Import a Table into a Windows CE ADOCE Database by Using"
-permalink: kb/301/Q301091/
+permalink: /kb/301/Q301091/
 ---
 
 ## Q301091: HOW TO: Import a Table into a Windows CE ADOCE Database by Using

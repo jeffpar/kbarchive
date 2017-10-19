@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281446: FIX: Access Violation with std::map::erase or std::set::erase"
-permalink: kb/281/Q281446/
+permalink: /kb/281/Q281446/
 ---
 
 ## Q281446: FIX: Access Violation with std::map::erase or std::set::erase

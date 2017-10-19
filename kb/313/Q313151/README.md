@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313151: COMTI TCP/IP MS Link Fails If Less Data Is Returned Than Sent"
-permalink: kb/313/Q313151/
+permalink: /kb/313/Q313151/
 ---
 
 ## Q313151: COMTI TCP/IP MS Link Fails If Less Data Is Returned Than Sent

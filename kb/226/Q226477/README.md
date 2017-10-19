@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226477: LineGatherDigits May Cause Memory Leak in Tapisrv.exe"
-permalink: kb/226/Q226477/
+permalink: /kb/226/Q226477/
 ---
 
 ## Q226477: LineGatherDigits May Cause Memory Leak in Tapisrv.exe

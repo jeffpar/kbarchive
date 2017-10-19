@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186081: STOP 0x0000000A When Restoring Tape"
-permalink: kb/186/Q186081/
+permalink: /kb/186/Q186081/
 ---
 
 ## Q186081: STOP 0x0000000A When Restoring Tape

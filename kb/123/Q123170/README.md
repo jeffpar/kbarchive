@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123170: WINS Event Log IDs 4135 - 4144 (Warning Messages)"
-permalink: kb/123/Q123170/
+permalink: /kb/123/Q123170/
 ---
 
 ## Q123170: WINS Event Log IDs 4135 - 4144 (Warning Messages)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152688: HOWTO: Change the Name of a Microsoft Access Field w/MFC DAO"
-permalink: kb/152/Q152688/
+permalink: /kb/152/Q152688/
 ---
 
 ## Q152688: HOWTO: Change the Name of a Microsoft Access Field w/MFC DAO

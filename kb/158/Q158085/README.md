@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158085: STL Sample for the list::assign Functions"
-permalink: kb/158/Q158085/
+permalink: /kb/158/Q158085/
 ---
 
 ## Q158085: STL Sample for the list::assign Functions

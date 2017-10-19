@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181992: WD97: File Open Does Not Function When PC Docs Is Installed"
-permalink: kb/181/Q181992/
+permalink: /kb/181/Q181992/
 ---
 
 ## Q181992: WD97: File Open Does Not Function When PC Docs Is Installed

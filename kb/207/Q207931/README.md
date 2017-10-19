@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207931: HOWTO: Pass Arrays Between Visual Basic and C"
-permalink: kb/207/Q207931/
+permalink: /kb/207/Q207931/
 ---
 
 ## Q207931: HOWTO: Pass Arrays Between Visual Basic and C

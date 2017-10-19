@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141882: &quot;The Application Cannot Start&quot; When Trying to Start Chat"
-permalink: kb/141/Q141882/
+permalink: /kb/141/Q141882/
 ---
 
 ## Q141882: &quot;The Application Cannot Start&quot; When Trying to Start Chat

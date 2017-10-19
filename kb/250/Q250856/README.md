@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250856: MSB Bugs: Screen Turns Black When You Start Program"
-permalink: kb/250/Q250856/
+permalink: /kb/250/Q250856/
 ---
 
 ## Q250856: MSB Bugs: Screen Turns Black When You Start Program

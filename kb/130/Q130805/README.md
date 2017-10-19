@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130805: Drawing to a Memory Bitmap for Faster Performance"
-permalink: kb/130/Q130805/
+permalink: /kb/130/Q130805/
 ---
 
 ## Q130805: Drawing to a Memory Bitmap for Faster Performance

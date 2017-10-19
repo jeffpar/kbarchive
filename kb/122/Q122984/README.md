@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122984: Golf Err Msg: Could Not Find Directory"
-permalink: kb/122/Q122984/
+permalink: /kb/122/Q122984/
 ---
 
 ## Q122984: Golf Err Msg: Could Not Find Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176878: PRB: Replacing Names.dat File Changes Long File Names"
-permalink: kb/176/Q176878/
+permalink: /kb/176/Q176878/
 ---
 
 ## Q176878: PRB: Replacing Names.dat File Changes Long File Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176909: HOWTO: Move a VSS Database or Project to New Location"
-permalink: kb/176/Q176909/
+permalink: /kb/176/Q176909/
 ---
 
 ## Q176909: HOWTO: Move a VSS Database or Project to New Location

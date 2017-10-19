@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259055: MAPI Exchange Management Agent/Discovery Takes a Long Time"
-permalink: kb/259/Q259055/
+permalink: /kb/259/Q259055/
 ---
 
 ## Q259055: MAPI Exchange Management Agent/Discovery Takes a Long Time

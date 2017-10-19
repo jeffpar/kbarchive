@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194784: INFO: Controls Shipped in Visual Basic 6.0"
-permalink: kb/194/Q194784/
+permalink: /kb/194/Q194784/
 ---
 
 ## Q194784: INFO: Controls Shipped in Visual Basic 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136376: MEMORY.DMP File Not Created on Some NCR Computers"
-permalink: kb/136/Q136376/
+permalink: /kb/136/Q136376/
 ---
 
 ## Q136376: MEMORY.DMP File Not Created on Some NCR Computers

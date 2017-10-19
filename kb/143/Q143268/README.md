@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143268: 3D Movie Maker: Legal Issues of Making and Sharing Movies"
-permalink: kb/143/Q143268/
+permalink: /kb/143/Q143268/
 ---
 
 ## Q143268: 3D Movie Maker: Legal Issues of Making and Sharing Movies

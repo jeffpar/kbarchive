@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223389: FILE: Scriptng.EXE Has Files To Add Active Debugging"
-permalink: kb/223/Q223389/
+permalink: /kb/223/Q223389/
 ---
 
 ## Q223389: FILE: Scriptng.EXE Has Files To Add Active Debugging

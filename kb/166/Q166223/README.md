@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166223: SNA Server 3.0 Snabase Fails Unexpectedly with Access Violation"
-permalink: kb/166/Q166223/
+permalink: /kb/166/Q166223/
 ---
 
 ## Q166223: SNA Server 3.0 Snabase Fails Unexpectedly with Access Violation

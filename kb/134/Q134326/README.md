@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134326: Windows NT 3.5 Service Pack 2 Does Not Detect Windows NT Version"
-permalink: kb/134/Q134326/
+permalink: /kb/134/Q134326/
 ---
 
 ## Q134326: Windows NT 3.5 Service Pack 2 Does Not Detect Windows NT Version

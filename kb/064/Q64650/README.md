@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64650: Bitstream Screen Fonts and 8514/A with Windows 3.0"
-permalink: kb/064/Q64650/
+permalink: /kb/064/Q64650/
 ---
 
 ## Q64650: Bitstream Screen Fonts and 8514/A with Windows 3.0

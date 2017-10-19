@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86332: PRB: Bitmap Causes Windows Help Compiler Out-of-Memory Error"
-permalink: kb/086/Q86332/
+permalink: /kb/086/Q86332/
 ---
 
 ## Q86332: PRB: Bitmap Causes Windows Help Compiler Out-of-Memory Error

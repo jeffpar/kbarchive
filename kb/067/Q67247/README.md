@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67247: MuScroll.exe - Custom Control Code"
-permalink: kb/067/Q67247/
+permalink: /kb/067/Q67247/
 ---
 
 ## Q67247: MuScroll.exe - Custom Control Code

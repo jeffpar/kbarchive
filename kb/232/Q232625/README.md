@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232625: HOWTO: Use a String Resource in a DLL with a Specific Locale ID"
-permalink: kb/232/Q232625/
+permalink: /kb/232/Q232625/
 ---
 
 ## Q232625: HOWTO: Use a String Resource in a DLL with a Specific Locale ID

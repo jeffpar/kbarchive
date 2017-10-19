@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184082: How to Use the Assoc Command to Change File Associations"
-permalink: kb/184/Q184082/
+permalink: /kb/184/Q184082/
 ---
 
 ## Q184082: How to Use the Assoc Command to Change File Associations

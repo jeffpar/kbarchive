@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142903: Windows NT Ndis.sys and Netflx3.sys Performance Improvement"
-permalink: kb/142/Q142903/
+permalink: /kb/142/Q142903/
 ---
 
 ## Q142903: Windows NT Ndis.sys and Netflx3.sys Performance Improvement

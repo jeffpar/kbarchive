@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194712: X400: Cannot Start Gateway if PO Has Large Serial Number"
-permalink: kb/194/Q194712/
+permalink: /kb/194/Q194712/
 ---
 
 ## Q194712: X400: Cannot Start Gateway if PO Has Large Serial Number

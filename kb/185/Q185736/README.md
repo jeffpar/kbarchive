@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185736: Applications May Appear Hung or Unresponsive on Windows NT 4.0"
-permalink: kb/185/Q185736/
+permalink: /kb/185/Q185736/
 ---
 
 ## Q185736: Applications May Appear Hung or Unresponsive on Windows NT 4.0

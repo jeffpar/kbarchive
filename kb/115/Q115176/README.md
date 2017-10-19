@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115176: Incorrect Qemm READ.ME Reference to DBLSPACE.SYS"
-permalink: kb/115/Q115176/
+permalink: /kb/115/Q115176/
 ---
 
 ## Q115176: Incorrect Qemm READ.ME Reference to DBLSPACE.SYS

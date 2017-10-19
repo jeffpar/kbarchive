@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186096: XADM: Eseutil.exe Does Not Fix Records with Missing Long Values"
-permalink: kb/186/Q186096/
+permalink: /kb/186/Q186096/
 ---
 
 ## Q186096: XADM: Eseutil.exe Does Not Fix Records with Missing Long Values

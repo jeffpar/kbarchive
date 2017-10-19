@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172916: WD97: Nothing Happens When OCR Scanning from Word"
-permalink: kb/172/Q172916/
+permalink: /kb/172/Q172916/
 ---
 
 ## Q172916: WD97: Nothing Happens When OCR Scanning from Word

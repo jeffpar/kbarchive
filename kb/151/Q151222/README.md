@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151222: Stop A in FLNK.SYS While Copying From FPNW Server"
-permalink: kb/151/Q151222/
+permalink: /kb/151/Q151222/
 ---
 
 ## Q151222: Stop A in FLNK.SYS While Copying From FPNW Server

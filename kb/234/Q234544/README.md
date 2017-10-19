@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234544: Cluster Bottleneck Occurs When a Large Number of Disks Are Invol"
-permalink: kb/234/Q234544/
+permalink: /kb/234/Q234544/
 ---
 
 ## Q234544: Cluster Bottleneck Occurs When a Large Number of Disks Are Invol

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79747: Current License Agreement Policies for MS-DOS and Windows"
-permalink: kb/079/Q79747/
+permalink: /kb/079/Q79747/
 ---
 
 ## Q79747: Current License Agreement Policies for MS-DOS and Windows

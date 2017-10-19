@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167962: WD97: Drawing Object/AutoShape Fill Pattern Appears as Shading"
-permalink: kb/167/Q167962/
+permalink: /kb/167/Q167962/
 ---
 
 ## Q167962: WD97: Drawing Object/AutoShape Fill Pattern Appears as Shading

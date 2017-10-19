@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185315: WD97: How to Change an Existing Linked Excel Object"
-permalink: kb/185/Q185315/
+permalink: /kb/185/Q185315/
 ---
 
 ## Q185315: WD97: How to Change an Existing Linked Excel Object

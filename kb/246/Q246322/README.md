@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246322: System Administration of Backups, Tar, and Pax in Interix"
-permalink: kb/246/Q246322/
+permalink: /kb/246/Q246322/
 ---
 
 ## Q246322: System Administration of Backups, Tar, and Pax in Interix

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240350: HOWTO: Manually Uninstall the MSDN Library"
-permalink: kb/240/Q240350/
+permalink: /kb/240/Q240350/
 ---
 
 ## Q240350: HOWTO: Manually Uninstall the MSDN Library

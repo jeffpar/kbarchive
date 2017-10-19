@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140417: Controlling Common Program Groups Seen In User Profiles"
-permalink: kb/140/Q140417/
+permalink: /kb/140/Q140417/
 ---
 
 ## Q140417: Controlling Common Program Groups Seen In User Profiles

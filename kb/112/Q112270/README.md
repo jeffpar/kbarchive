@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112270: PC MAPI: Err Msg: Cannot Open Help File"
-permalink: kb/112/Q112270/
+permalink: /kb/112/Q112270/
 ---
 
 ## Q112270: PC MAPI: Err Msg: Cannot Open Help File

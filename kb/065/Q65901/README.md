@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65901: Cannot Delete Empty Subdirectory on Novell Server"
-permalink: kb/065/Q65901/
+permalink: /kb/065/Q65901/
 ---
 
 ## Q65901: Cannot Delete Empty Subdirectory on Novell Server

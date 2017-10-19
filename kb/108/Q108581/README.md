@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108581: Setting Up VI POSIX Editor for Windows NT 3.1"
-permalink: kb/108/Q108581/
+permalink: /kb/108/Q108581/
 ---
 
 ## Q108581: Setting Up VI POSIX Editor for Windows NT 3.1

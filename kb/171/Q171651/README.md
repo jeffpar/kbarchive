@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171651: Running a Batch or Command File from Windows NT Explorer Fails"
-permalink: kb/171/Q171651/
+permalink: /kb/171/Q171651/
 ---
 
 ## Q171651: Running a Batch or Command File from Windows NT Explorer Fails

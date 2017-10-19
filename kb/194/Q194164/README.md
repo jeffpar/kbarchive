@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194164: Configuring Outlook Express to Read Msnnews.msn.com Newsgroups"
-permalink: kb/194/Q194164/
+permalink: /kb/194/Q194164/
 ---
 
 ## Q194164: Configuring Outlook Express to Read Msnnews.msn.com Newsgroups

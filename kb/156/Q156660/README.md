@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156660: Cannot Install Windows NT 4.0 Competitive Upgrade"
-permalink: kb/156/Q156660/
+permalink: /kb/156/Q156660/
 ---
 
 ## Q156660: Cannot Install Windows NT 4.0 Competitive Upgrade

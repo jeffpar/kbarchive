@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q41159: INFO: rewind(stdin) Clears Keyboard Buffer"
-permalink: kb/041/Q41159/
+permalink: /kb/041/Q41159/
 ---
 
 ## Q41159: INFO: rewind(stdin) Clears Keyboard Buffer

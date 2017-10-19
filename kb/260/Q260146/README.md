@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260146: Video Adapter Is Not Detected on a Windows 2000-Based Computer"
-permalink: kb/260/Q260146/
+permalink: /kb/260/Q260146/
 ---
 
 ## Q260146: Video Adapter Is Not Detected on a Windows 2000-Based Computer

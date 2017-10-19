@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239917: Windows NT Server 4.0 Terminal Server Edition and DCOM"
-permalink: kb/239/Q239917/
+permalink: /kb/239/Q239917/
 ---
 
 ## Q239917: Windows NT Server 4.0 Terminal Server Edition and DCOM

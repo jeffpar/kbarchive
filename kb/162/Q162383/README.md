@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162383: Site Configuration Manager Stops When Enumerating User Groups"
-permalink: kb/162/Q162383/
+permalink: /kb/162/Q162383/
 ---
 
 ## Q162383: Site Configuration Manager Stops When Enumerating User Groups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158780: Unable to Print to Local Port from WordPerfect for DOS"
-permalink: kb/158/Q158780/
+permalink: /kb/158/Q158780/
 ---
 
 ## Q158780: Unable to Print to Local Port from WordPerfect for DOS

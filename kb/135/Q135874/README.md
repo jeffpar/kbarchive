@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135874: PRB: Exception Error When Using ODBC to SQL Server via TCP/IP"
-permalink: kb/135/Q135874/
+permalink: /kb/135/Q135874/
 ---
 
 ## Q135874: PRB: Exception Error When Using ODBC to SQL Server via TCP/IP

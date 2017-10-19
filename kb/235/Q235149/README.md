@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235149: Simple Command Fails in Available Program Manager (APM)"
-permalink: kb/235/Q235149/
+permalink: /kb/235/Q235149/
 ---
 
 ## Q235149: Simple Command Fails in Available Program Manager (APM)

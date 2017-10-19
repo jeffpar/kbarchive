@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274634: MSN Explorer Fails To Load With DBCS Character In Installation P"
-permalink: kb/274/Q274634/
+permalink: /kb/274/Q274634/
 ---
 
 ## Q274634: MSN Explorer Fails To Load With DBCS Character In Installation P

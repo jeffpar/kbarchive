@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165170: HOWTO: Determine the TCP/IP Address"
-permalink: kb/165/Q165170/
+permalink: /kb/165/Q165170/
 ---
 
 ## Q165170: HOWTO: Determine the TCP/IP Address

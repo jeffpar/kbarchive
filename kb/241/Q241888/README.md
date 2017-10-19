@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241888: Unable to Obtain DHCP Lease When Using a Cable Modem"
-permalink: kb/241/Q241888/
+permalink: /kb/241/Q241888/
 ---
 
 ## Q241888: Unable to Obtain DHCP Lease When Using a Cable Modem

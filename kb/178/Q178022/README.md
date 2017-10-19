@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178022: NetBIOS SEND WAIT Over TCP/IP Completes Without NetBIOS RECEIVE"
-permalink: kb/178/Q178022/
+permalink: /kb/178/Q178022/
 ---
 
 ## Q178022: NetBIOS SEND WAIT Over TCP/IP Completes Without NetBIOS RECEIVE

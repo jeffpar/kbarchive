@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117635: MS-DOS 6.2 Upgrade Directory Listings for 5.25-Inch 360K Set"
-permalink: kb/117/Q117635/
+permalink: /kb/117/Q117635/
 ---
 
 ## Q117635: MS-DOS 6.2 Upgrade Directory Listings for 5.25-Inch 360K Set

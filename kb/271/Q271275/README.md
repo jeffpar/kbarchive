@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271275: XADM: Event IDs 11506 or 11508 with error 0x2740 Are Logged"
-permalink: kb/271/Q271275/
+permalink: /kb/271/Q271275/
 ---
 
 ## Q271275: XADM: Event IDs 11506 or 11508 with error 0x2740 Are Logged

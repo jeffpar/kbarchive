@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323927: Dungeon Siege: How to Resurrect a Dead Character"
-permalink: kb/323/Q323927/
+permalink: /kb/323/Q323927/
 ---
 
 ## Q323927: Dungeon Siege: How to Resurrect a Dead Character

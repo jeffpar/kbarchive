@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148459: SKFENT.SYS Causes Stop 0xA"
-permalink: kb/148/Q148459/
+permalink: /kb/148/Q148459/
 ---
 
 ## Q148459: SKFENT.SYS Causes Stop 0xA

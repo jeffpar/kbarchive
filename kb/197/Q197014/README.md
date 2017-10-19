@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197014: WD97: Unable to Edit Earlier Versions of WordArt Objects"
-permalink: kb/197/Q197014/
+permalink: /kb/197/Q197014/
 ---
 
 ## Q197014: WD97: Unable to Edit Earlier Versions of WordArt Objects

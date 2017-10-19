@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180379: FP97: How to Insert a PowerPoint Presentation into a Web Page"
-permalink: kb/180/Q180379/
+permalink: /kb/180/Q180379/
 ---
 
 ## Q180379: FP97: How to Insert a PowerPoint Presentation into a Web Page

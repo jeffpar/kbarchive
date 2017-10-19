@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176217: PRB: Mastering VB 5.0 Err Msg: The Version of ActiveMovie..."
-permalink: kb/176/Q176217/
+permalink: /kb/176/Q176217/
 ---
 
 ## Q176217: PRB: Mastering VB 5.0 Err Msg: The Version of ActiveMovie...

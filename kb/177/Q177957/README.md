@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177957: XFOR: Messages with Non-ANSI Characters Arrive with Garbage"
-permalink: kb/177/Q177957/
+permalink: /kb/177/Q177957/
 ---
 
 ## Q177957: XFOR: Messages with Non-ANSI Characters Arrive with Garbage

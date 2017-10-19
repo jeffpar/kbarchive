@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139740: Slow Performance with Sierra Semiconductor Chip Set Modem"
-permalink: kb/139/Q139740/
+permalink: /kb/139/Q139740/
 ---
 
 ## Q139740: Slow Performance with Sierra Semiconductor Chip Set Modem

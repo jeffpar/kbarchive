@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178303: XADM: Chat 5.5 Err Msg: Unable To Start Microsoft Chat Service"
-permalink: kb/178/Q178303/
+permalink: /kb/178/Q178303/
 ---
 
 ## Q178303: XADM: Chat 5.5 Err Msg: Unable To Start Microsoft Chat Service

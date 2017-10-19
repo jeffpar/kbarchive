@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61925: The Effect of Replacement Parameters in PATH Statement"
-permalink: kb/061/Q61925/
+permalink: /kb/061/Q61925/
 ---
 
 ## Q61925: The Effect of Replacement Parameters in PATH Statement

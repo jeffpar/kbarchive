@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142715: Anonymous or Specific User Logon Returns HTTP/1.0 500 Error"
-permalink: kb/142/Q142715/
+permalink: /kb/142/Q142715/
 ---
 
 ## Q142715: Anonymous or Specific User Logon Returns HTTP/1.0 500 Error

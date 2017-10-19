@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192064: Using LMHOSTS to Locate Multiple Preferred Logon Servers"
-permalink: kb/192/Q192064/
+permalink: /kb/192/Q192064/
 ---
 
 ## Q192064: Using LMHOSTS to Locate Multiple Preferred Logon Servers

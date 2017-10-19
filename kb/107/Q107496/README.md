@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107496: FIX: Error C1001 Generated Due to Insufficient Disk Space"
-permalink: kb/107/Q107496/
+permalink: /kb/107/Q107496/
 ---
 
 ## Q107496: FIX: Error C1001 Generated Due to Insufficient Disk Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308168: DOC: IIS 5.1 Doc Incorrectly References HTTP Compression"
-permalink: kb/308/Q308168/
+permalink: /kb/308/Q308168/
 ---
 
 ## Q308168: DOC: IIS 5.1 Doc Incorrectly References HTTP Compression

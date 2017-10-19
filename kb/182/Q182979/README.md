@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182979: XADM: Function and Effects of the DS/IS Consistency Adjuster"
-permalink: kb/182/Q182979/
+permalink: /kb/182/Q182979/
 ---
 
 ## Q182979: XADM: Function and Effects of the DS/IS Consistency Adjuster

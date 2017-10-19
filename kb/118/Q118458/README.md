@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118458: PROFS: How to Configure Free/Busy Exchange on VMHOST"
-permalink: kb/118/Q118458/
+permalink: /kb/118/Q118458/
 ---
 
 ## Q118458: PROFS: How to Configure Free/Busy Exchange on VMHOST

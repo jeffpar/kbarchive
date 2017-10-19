@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80297: FASTOPEN Should Not Be Used with Speed Disk or Compress"
-permalink: kb/080/Q80297/
+permalink: /kb/080/Q80297/
 ---
 
 ## Q80297: FASTOPEN Should Not Be Used with Speed Disk or Compress

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125365: PC Win: Search All Folders Does Not Search Deleted Mail Folder"
-permalink: kb/125/Q125365/
+permalink: /kb/125/Q125365/
 ---
 
 ## Q125365: PC Win: Search All Folders Does Not Search Deleted Mail Folder

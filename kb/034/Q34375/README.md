@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34375: DOCERR: Documentation Error on the LGDT Instruction"
-permalink: kb/034/Q34375/
+permalink: /kb/034/Q34375/
 ---
 
 ## Q34375: DOCERR: Documentation Error on the LGDT Instruction

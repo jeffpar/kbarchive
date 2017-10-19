@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121274: Files Used for Remote Access Services (RAS)"
-permalink: kb/121/Q121274/
+permalink: /kb/121/Q121274/
 ---
 
 ## Q121274: Files Used for Remote Access Services (RAS)

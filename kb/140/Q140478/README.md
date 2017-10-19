@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140478: &quot;The Road Ahead&quot; Err Msg: Media Control Interface Error..."
-permalink: kb/140/Q140478/
+permalink: /kb/140/Q140478/
 ---
 
 ## Q140478: &quot;The Road Ahead&quot; Err Msg: Media Control Interface Error...

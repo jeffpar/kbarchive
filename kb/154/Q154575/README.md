@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154575: HOWTO: Extract Appointment Information from Schedule Plus"
-permalink: kb/154/Q154575/
+permalink: /kb/154/Q154575/
 ---
 
 ## Q154575: HOWTO: Extract Appointment Information from Schedule Plus

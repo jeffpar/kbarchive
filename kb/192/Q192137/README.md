@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192137: PRB: Failed Registration of VBCE Components, Error 0000007e"
-permalink: kb/192/Q192137/
+permalink: /kb/192/Q192137/
 ---
 
 ## Q192137: PRB: Failed Registration of VBCE Components, Error 0000007e

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129049: How to Perform 10-Digit Dialing in Windows 95 and Windows NT"
-permalink: kb/129/Q129049/
+permalink: /kb/129/Q129049/
 ---
 
 ## Q129049: How to Perform 10-Digit Dialing in Windows 95 and Windows NT

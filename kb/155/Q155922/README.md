@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155922: No Memory Load Index in Windows NT 4.0 Diagnostics Tool"
-permalink: kb/155/Q155922/
+permalink: /kb/155/Q155922/
 ---
 
 ## Q155922: No Memory Load Index in Windows NT 4.0 Diagnostics Tool

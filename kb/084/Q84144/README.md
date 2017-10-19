@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84144: CodeView 3.05 Won't Start with Windows 3.1"
-permalink: kb/084/Q84144/
+permalink: /kb/084/Q84144/
 ---
 
 ## Q84144: CodeView 3.05 Won't Start with Windows 3.1

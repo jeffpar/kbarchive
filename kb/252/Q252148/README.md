@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252148: How to Troubleshoot ETRN Using Telnet"
-permalink: kb/252/Q252148/
+permalink: /kb/252/Q252148/
 ---
 
 ## Q252148: How to Troubleshoot ETRN Using Telnet

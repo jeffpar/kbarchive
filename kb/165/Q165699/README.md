@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165699: SMS_WORKING_DIR Environment Variable Ignored on Win16 Clients"
-permalink: kb/165/Q165699/
+permalink: /kb/165/Q165699/
 ---
 
 ## Q165699: SMS_WORKING_DIR Environment Variable Ignored on Win16 Clients

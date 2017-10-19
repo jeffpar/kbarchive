@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190256: HOWTO: Show Table Borders for All Cells in DHTML Page Designer"
-permalink: kb/190/Q190256/
+permalink: /kb/190/Q190256/
 ---
 
 ## Q190256: HOWTO: Show Table Borders for All Cells in DHTML Page Designer

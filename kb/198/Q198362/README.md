@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198362: WD97: New Menu on Custom Toolbar Fails If Copied to Template"
-permalink: kb/198/Q198362/
+permalink: /kb/198/Q198362/
 ---
 
 ## Q198362: WD97: New Menu on Custom Toolbar Fails If Copied to Template

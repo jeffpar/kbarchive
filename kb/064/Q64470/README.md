@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64470: International Keyboard Layout Always Prompts for Disk"
-permalink: kb/064/Q64470/
+permalink: /kb/064/Q64470/
 ---
 
 ## Q64470: International Keyboard Layout Always Prompts for Disk

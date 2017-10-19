@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134906: Changing Domains in SNA Admin Gives Wrong Status Information"
-permalink: kb/134/Q134906/
+permalink: /kb/134/Q134906/
 ---
 
 ## Q134906: Changing Domains in SNA Admin Gives Wrong Status Information

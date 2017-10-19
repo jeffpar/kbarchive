@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272274: XADM: Information Store Stops Responding on PUSH_NOTIFY Function"
-permalink: kb/272/Q272274/
+permalink: /kb/272/Q272274/
 ---
 
 ## Q272274: XADM: Information Store Stops Responding on PUSH_NOTIFY Function

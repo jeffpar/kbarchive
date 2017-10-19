@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187082: BackOffice 4.0 Exchange Setup Fails"
-permalink: kb/187/Q187082/
+permalink: /kb/187/Q187082/
 ---
 
 ## Q187082: BackOffice 4.0 Exchange Setup Fails

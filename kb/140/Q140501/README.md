@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140501: No Sounds When Playing 3D Pinball"
-permalink: kb/140/Q140501/
+permalink: /kb/140/Q140501/
 ---
 
 ## Q140501: No Sounds When Playing 3D Pinball

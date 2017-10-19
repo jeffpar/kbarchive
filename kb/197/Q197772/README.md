@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197772: PRB: Error Renaming LFN After Creating at CMD Prompt or Notepad"
-permalink: kb/197/Q197772/
+permalink: /kb/197/Q197772/
 ---
 
 ## Q197772: PRB: Error Renaming LFN After Creating at CMD Prompt or Notepad

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234280: XCON: Increasing MTA Ability to Pass Mail over Slow Connections"
-permalink: kb/234/Q234280/
+permalink: /kb/234/Q234280/
 ---
 
 ## Q234280: XCON: Increasing MTA Ability to Pass Mail over Slow Connections

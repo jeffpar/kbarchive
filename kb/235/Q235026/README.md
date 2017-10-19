@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235026: Quick Course in Microsoft Access 2000 Comments and Corrections"
-permalink: kb/235/Q235026/
+permalink: /kb/235/Q235026/
 ---
 
 ## Q235026: Quick Course in Microsoft Access 2000 Comments and Corrections

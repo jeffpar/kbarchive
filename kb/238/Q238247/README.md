@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238247: SMS: Invdos.exe Does Not Compensate for Change of Month"
-permalink: kb/238/Q238247/
+permalink: /kb/238/Q238247/
 ---
 
 ## Q238247: SMS: Invdos.exe Does Not Compensate for Change of Month

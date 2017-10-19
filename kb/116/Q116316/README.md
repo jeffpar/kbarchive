@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116316: BUG: Conditional Breakpoint Doesn't Break on CodeView Restart"
-permalink: kb/116/Q116316/
+permalink: /kb/116/Q116316/
 ---
 
 ## Q116316: BUG: Conditional Breakpoint Doesn't Break on CodeView Restart

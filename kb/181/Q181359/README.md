@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181359: BUG: Pop-up Menu Click Event Does Not Execute in an MDI Program"
-permalink: kb/181/Q181359/
+permalink: /kb/181/Q181359/
 ---
 
 ## Q181359: BUG: Pop-up Menu Click Event Does Not Execute in an MDI Program

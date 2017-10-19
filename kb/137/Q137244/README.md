@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137244: No LANtastic Network Access After Using Network Troubleshooter"
-permalink: kb/137/Q137244/
+permalink: /kb/137/Q137244/
 ---
 
 ## Q137244: No LANtastic Network Access After Using Network Troubleshooter

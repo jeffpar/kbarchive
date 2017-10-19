@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177981: PCI Bridge or PCI Card in Device Manager"
-permalink: kb/177/Q177981/
+permalink: /kb/177/Q177981/
 ---
 
 ## Q177981: PCI Bridge or PCI Card in Device Manager

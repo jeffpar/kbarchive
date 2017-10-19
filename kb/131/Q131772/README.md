@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131772: INFO: Setting Compare to Checksum Speeds GET Command"
-permalink: kb/131/Q131772/
+permalink: /kb/131/Q131772/
 ---
 
 ## Q131772: INFO: Setting Compare to Checksum Speeds GET Command

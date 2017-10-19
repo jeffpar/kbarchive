@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65077: Using the Micro Display Systems Monitor with Windows"
-permalink: kb/065/Q65077/
+permalink: /kb/065/Q65077/
 ---
 
 ## Q65077: Using the Micro Display Systems Monitor with Windows

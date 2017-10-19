@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149109: FIX: Required File Missing ODBCCP32CP_ When Run Setup Wizard"
-permalink: kb/149/Q149109/
+permalink: /kb/149/Q149109/
 ---
 
 ## Q149109: FIX: Required File Missing ODBCCP32CP_ When Run Setup Wizard

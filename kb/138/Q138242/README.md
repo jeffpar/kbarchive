@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138242: SMS Hangs Choosing PCMMAC Menu Options Before Network Logon"
-permalink: kb/138/Q138242/
+permalink: /kb/138/Q138242/
 ---
 
 ## Q138242: SMS Hangs Choosing PCMMAC Menu Options Before Network Logon

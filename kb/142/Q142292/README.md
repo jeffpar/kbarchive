@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142292: INFO: VBA Versions in Different Microsoft Products"
-permalink: kb/142/Q142292/
+permalink: /kb/142/Q142292/
 ---
 
 ## Q142292: INFO: VBA Versions in Different Microsoft Products

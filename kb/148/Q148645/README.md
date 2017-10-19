@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148645: XADM: Err Msg: Operation Terminated with Error -1032"
-permalink: kb/148/Q148645/
+permalink: /kb/148/Q148645/
 ---
 
 ## Q148645: XADM: Err Msg: Operation Terminated with Error -1032

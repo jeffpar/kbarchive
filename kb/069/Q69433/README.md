@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69433: Piggyback Cards Disable Standard VGA on Paradise Professional"
-permalink: kb/069/Q69433/
+permalink: /kb/069/Q69433/
 ---
 
 ## Q69433: Piggyback Cards Disable Standard VGA on Paradise Professional

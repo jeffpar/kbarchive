@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163405: Writer 2: Shared Graphic Filters not Compatible with Paint"
-permalink: kb/163/Q163405/
+permalink: /kb/163/Q163405/
 ---
 
 ## Q163405: Writer 2: Shared Graphic Filters not Compatible with Paint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248367: SMSINST: Repackager Hangs When the Package Requires A Reboot"
-permalink: kb/248/Q248367/
+permalink: /kb/248/Q248367/
 ---
 
 ## Q248367: SMSINST: Repackager Hangs When the Package Requires A Reboot

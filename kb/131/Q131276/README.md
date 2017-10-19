@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131276: Cannot Make System Disk from File Manager"
-permalink: kb/131/Q131276/
+permalink: /kb/131/Q131276/
 ---
 
 ## Q131276: Cannot Make System Disk from File Manager

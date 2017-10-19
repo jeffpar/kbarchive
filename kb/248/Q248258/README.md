@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248258: Games: &lt;Program&gt; Caused an Invalid Page Fault in Module Unknown"
-permalink: kb/248/Q248258/
+permalink: /kb/248/Q248258/
 ---
 
 ## Q248258: Games: &lt;Program&gt; Caused an Invalid Page Fault in Module Unknown

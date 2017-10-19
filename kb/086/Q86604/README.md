@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86604: PC WSPlus: Err Msg: Could Not Open the File Named..."
-permalink: kb/086/Q86604/
+permalink: /kb/086/Q86604/
 ---
 
 ## Q86604: PC WSPlus: Err Msg: Could Not Open the File Named...

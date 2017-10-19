@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130700: PC Mac: Err Msg: The Preference File Could Not Be Found..."
-permalink: kb/130/Q130700/
+permalink: /kb/130/Q130700/
 ---
 
 ## Q130700: PC Mac: Err Msg: The Preference File Could Not Be Found...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126396: SNA Server 3270 LU is Available, But No Sign On Screen Appears"
-permalink: kb/126/Q126396/
+permalink: /kb/126/Q126396/
 ---
 
 ## Q126396: SNA Server 3270 LU is Available, But No Sign On Screen Appears

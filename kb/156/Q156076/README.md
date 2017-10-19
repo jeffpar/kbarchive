@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156076: BUG: WWWQuote Sample Generates Error Message"
-permalink: kb/156/Q156076/
+permalink: /kb/156/Q156076/
 ---
 
 ## Q156076: BUG: WWWQuote Sample Generates Error Message

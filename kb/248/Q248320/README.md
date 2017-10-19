@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248320: FS2000 Pro Err Msg: Fsedit Caused an Invalid Page Fault in..."
-permalink: kb/248/Q248320/
+permalink: /kb/248/Q248320/
 ---
 
 ## Q248320: FS2000 Pro Err Msg: Fsedit Caused an Invalid Page Fault in...

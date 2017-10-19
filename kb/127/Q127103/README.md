@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127103: Mac Clients Must Log On to Trusted Domains - No Pass-through"
-permalink: kb/127/Q127103/
+permalink: /kb/127/Q127103/
 ---
 
 ## Q127103: Mac Clients Must Log On to Trusted Domains - No Pass-through

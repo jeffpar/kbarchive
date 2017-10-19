@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320374: MS02-018: Patch Available for Cross-site Scripting Vulnerability"
-permalink: kb/320/Q320374/
+permalink: /kb/320/Q320374/
 ---
 
 ## Q320374: MS02-018: Patch Available for Cross-site Scripting Vulnerability

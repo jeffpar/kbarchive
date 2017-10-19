@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110609: How to Use STYLE Clause for @ ... GETs in FoxBASE+/Mac"
-permalink: kb/110/Q110609/
+permalink: /kb/110/Q110609/
 ---
 
 ## Q110609: How to Use STYLE Clause for @ ... GETs in FoxBASE+/Mac

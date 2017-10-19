@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186618: New System Policy Options in Terminal Server"
-permalink: kb/186/Q186618/
+permalink: /kb/186/Q186618/
 ---
 
 ## Q186618: New System Policy Options in Terminal Server

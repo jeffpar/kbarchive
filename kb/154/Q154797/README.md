@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154797: SP5 Adds Code Pages for Central European Language Support"
-permalink: kb/154/Q154797/
+permalink: /kb/154/Q154797/
 ---
 
 ## Q154797: SP5 Adds Code Pages for Central European Language Support

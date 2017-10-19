@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116170: FIX: C2099 Generated Initializing Struct with Macro"
-permalink: kb/116/Q116170/
+permalink: /kb/116/Q116170/
 ---
 
 ## Q116170: FIX: C2099 Generated Initializing Struct with Macro

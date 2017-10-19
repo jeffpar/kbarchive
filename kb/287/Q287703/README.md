@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287703: XFOR: Edb Log Files Grow When Calendar Connector Is Started"
-permalink: kb/287/Q287703/
+permalink: /kb/287/Q287703/
 ---
 
 ## Q287703: XFOR: Edb Log Files Grow When Calendar Connector Is Started

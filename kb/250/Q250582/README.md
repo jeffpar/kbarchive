@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250582: MSB Bugs: Program Runs Slowly on Macintosh Computer"
-permalink: kb/250/Q250582/
+permalink: /kb/250/Q250582/
 ---
 
 ## Q250582: MSB Bugs: Program Runs Slowly on Macintosh Computer

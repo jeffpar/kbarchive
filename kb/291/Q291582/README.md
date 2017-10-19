@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291582: Games Err Msg: Version Testing Date has Expired"
-permalink: kb/291/Q291582/
+permalink: /kb/291/Q291582/
 ---
 
 ## Q291582: Games Err Msg: Version Testing Date has Expired

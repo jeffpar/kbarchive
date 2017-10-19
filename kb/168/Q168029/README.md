@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168029: FIX: Global Optimizations (/Og) May Cause the Compiler to Hang"
-permalink: kb/168/Q168029/
+permalink: /kb/168/Q168029/
 ---
 
 ## Q168029: FIX: Global Optimizations (/Og) May Cause the Compiler to Hang

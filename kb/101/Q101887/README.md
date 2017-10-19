@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101887: Unable to Close MSD Button Option Using Keyboard"
-permalink: kb/101/Q101887/
+permalink: /kb/101/Q101887/
 ---
 
 ## Q101887: Unable to Close MSD Button Option Using Keyboard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83608: Go To Page Command May Not Work Correctly"
-permalink: kb/083/Q83608/
+permalink: /kb/083/Q83608/
 ---
 
 ## Q83608: Go To Page Command May Not Work Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96278: Mac Srv: CD-ROM Causes Server to Stop Operating"
-permalink: kb/096/Q96278/
+permalink: /kb/096/Q96278/
 ---
 
 ## Q96278: Mac Srv: CD-ROM Causes Server to Stop Operating

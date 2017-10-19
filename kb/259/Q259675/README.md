@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259675: XADM: Isinteg Utility Does Not Correct Mailbox Item Count"
-permalink: kb/259/Q259675/
+permalink: /kb/259/Q259675/
 ---
 
 ## Q259675: XADM: Isinteg Utility Does Not Correct Mailbox Item Count

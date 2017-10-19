@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138672: PRB: .Msk File Not Recognized in Windows 95"
-permalink: kb/138/Q138672/
+permalink: /kb/138/Q138672/
 ---
 
 ## Q138672: PRB: .Msk File Not Recognized in Windows 95

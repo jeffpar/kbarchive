@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132847: All Desktop Settings Not Restored After Full-System Backup"
-permalink: kb/132/Q132847/
+permalink: /kb/132/Q132847/
 ---
 
 ## Q132847: All Desktop Settings Not Restored After Full-System Backup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194434: HOWTO: Using the Setup Wizard in Visual FoxPro 6.0"
-permalink: kb/194/Q194434/
+permalink: /kb/194/Q194434/
 ---
 
 ## Q194434: HOWTO: Using the Setup Wizard in Visual FoxPro 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115281: Renaming Files Over Network Causes Out of Memory Error"
-permalink: kb/115/Q115281/
+permalink: /kb/115/Q115281/
 ---
 
 ## Q115281: Renaming Files Over Network Causes Out of Memory Error

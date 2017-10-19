@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135280: Backup Cannot Span Multiple Disks with Removable Disk Drive"
-permalink: kb/135/Q135280/
+permalink: /kb/135/Q135280/
 ---
 
 ## Q135280: Backup Cannot Span Multiple Disks with Removable Disk Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155296: Monster Truck Madness: How to Use Online Play"
-permalink: kb/155/Q155296/
+permalink: /kb/155/Q155296/
 ---
 
 ## Q155296: Monster Truck Madness: How to Use Online Play

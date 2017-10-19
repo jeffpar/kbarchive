@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156531: INFO: STL Sample for the remove Function"
-permalink: kb/156/Q156531/
+permalink: /kb/156/Q156531/
 ---
 
 ## Q156531: INFO: STL Sample for the remove Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101360: MS-DOS Err Msg: DoubleSpace Has Used All the Memory..."
-permalink: kb/101/Q101360/
+permalink: /kb/101/Q101360/
 ---
 
 ## Q101360: MS-DOS Err Msg: DoubleSpace Has Used All the Memory...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112804: TrueType Font Pack for Windows v1.0a (3.5-Inch 1.44 MB)"
-permalink: kb/112/Q112804/
+permalink: /kb/112/Q112804/
 ---
 
 ## Q112804: TrueType Font Pack for Windows v1.0a (3.5-Inch 1.44 MB)

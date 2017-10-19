@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185733: HOWTO: Limit a Window's Minimum and Maximum Size"
-permalink: kb/185/Q185733/
+permalink: /kb/185/Q185733/
 ---
 
 ## Q185733: HOWTO: Limit a Window's Minimum and Maximum Size

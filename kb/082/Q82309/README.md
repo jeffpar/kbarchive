@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82309: Rotated TrueType Fonts in Ami Pro Garble"
-permalink: kb/082/Q82309/
+permalink: /kb/082/Q82309/
 ---
 
 ## Q82309: Rotated TrueType Fonts in Ami Pro Garble

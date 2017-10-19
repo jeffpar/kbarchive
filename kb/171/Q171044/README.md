@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171044: WD97: How to Determine the Number of Days Between Two Dates"
-permalink: kb/171/Q171044/
+permalink: /kb/171/Q171044/
 ---
 
 ## Q171044: WD97: How to Determine the Number of Days Between Two Dates

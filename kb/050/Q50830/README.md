@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50830: Previous Net Connection Does Not Save Passwords"
-permalink: kb/050/Q50830/
+permalink: /kb/050/Q50830/
 ---
 
 ## Q50830: Previous Net Connection Does Not Save Passwords

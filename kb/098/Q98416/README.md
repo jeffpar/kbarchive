@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98416: DosOpen Thread Blocked Pending DosWaitNmPipe"
-permalink: kb/098/Q98416/
+permalink: /kb/098/Q98416/
 ---
 
 ## Q98416: DosOpen Thread Blocked Pending DosWaitNmPipe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172462: RPC Failure on Heavily Loaded Print Server"
-permalink: kb/172/Q172462/
+permalink: /kb/172/Q172462/
 ---
 
 ## Q172462: RPC Failure on Heavily Loaded Print Server

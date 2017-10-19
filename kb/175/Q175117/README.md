@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175117: XADM: Setup Fails When Joining a Site"
-permalink: kb/175/Q175117/
+permalink: /kb/175/Q175117/
 ---
 
 ## Q175117: XADM: Setup Fails When Joining a Site

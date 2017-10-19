@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121152: Incorrect Compression Message on DriveSpace Conversion Screen"
-permalink: kb/121/Q121152/
+permalink: /kb/121/Q121152/
 ---
 
 ## Q121152: Incorrect Compression Message on DriveSpace Conversion Screen

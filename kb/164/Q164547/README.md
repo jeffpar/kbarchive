@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164547: WD97: Fillin Field Prompts Twice"
-permalink: kb/164/Q164547/
+permalink: /kb/164/Q164547/
 ---
 
 ## Q164547: WD97: Fillin Field Prompts Twice

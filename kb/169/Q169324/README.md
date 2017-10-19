@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169324: XADM: Gets an Error On Webcon.uns during Setup"
-permalink: kb/169/Q169324/
+permalink: /kb/169/Q169324/
 ---
 
 ## Q169324: XADM: Gets an Error On Webcon.uns during Setup

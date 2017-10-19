@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143351: How to Check Network Connectivity Using Net Diagnostics"
-permalink: kb/143/Q143351/
+permalink: /kb/143/Q143351/
 ---
 
 ## Q143351: How to Check Network Connectivity Using Net Diagnostics

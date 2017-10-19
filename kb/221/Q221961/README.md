@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221961: Err Msg: Rundll32.dll Caused a General Protection Fault in..."
-permalink: kb/221/Q221961/
+permalink: /kb/221/Q221961/
 ---
 
 ## Q221961: Err Msg: Rundll32.dll Caused a General Protection Fault in...

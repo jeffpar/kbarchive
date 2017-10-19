@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171654: HOWTO: Attach a Console Window to Your Visual Basic Program"
-permalink: kb/171/Q171654/
+permalink: /kb/171/Q171654/
 ---
 
 ## Q171654: HOWTO: Attach a Console Window to Your Visual Basic Program

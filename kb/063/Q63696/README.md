@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63696: Hardware Options Offered When Installing Windows"
-permalink: kb/063/Q63696/
+permalink: /kb/063/Q63696/
 ---
 
 ## Q63696: Hardware Options Offered When Installing Windows

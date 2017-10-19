@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199922: SMS: Disabling Remote Control Security Munger on NT Clients"
-permalink: kb/199/Q199922/
+permalink: /kb/199/Q199922/
 ---
 
 ## Q199922: SMS: Disabling Remote Control Security Munger on NT Clients

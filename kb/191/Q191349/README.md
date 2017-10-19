@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191349: SMS: WinNT Servers Don't Display Resource Domain in Inventory"
-permalink: kb/191/Q191349/
+permalink: /kb/191/Q191349/
 ---
 
 ## Q191349: SMS: WinNT Servers Don't Display Resource Domain in Inventory

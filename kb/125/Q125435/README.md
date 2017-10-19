@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125435: PRB: Hidden MDI Child Window Causes Corrupted MDI Window Menu"
-permalink: kb/125/Q125435/
+permalink: /kb/125/Q125435/
 ---
 
 ## Q125435: PRB: Hidden MDI Child Window Causes Corrupted MDI Window Menu

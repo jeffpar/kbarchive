@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258841: KybdStck.exe Manipulates the Keyboard Layout Stack from VFP"
-permalink: kb/258/Q258841/
+permalink: /kb/258/Q258841/
 ---
 
 ## Q258841: KybdStck.exe Manipulates the Keyboard Layout Stack from VFP

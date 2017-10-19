@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271076: &quot;Stop 0x50&quot; in Cache Manager Under High Input/Output Stress"
-permalink: kb/271/Q271076/
+permalink: /kb/271/Q271076/
 ---
 
 ## Q271076: &quot;Stop 0x50&quot; in Cache Manager Under High Input/Output Stress

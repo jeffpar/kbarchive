@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187882: Memory Allocation Error During MS-DOS Share Access"
-permalink: kb/187/Q187882/
+permalink: /kb/187/Q187882/
 ---
 
 ## Q187882: Memory Allocation Error During MS-DOS Share Access

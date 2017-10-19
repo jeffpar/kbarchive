@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244774: HTTP Compression Deletes Contents of IIS Temporary Cache Files"
-permalink: kb/244/Q244774/
+permalink: /kb/244/Q244774/
 ---
 
 ## Q244774: HTTP Compression Deletes Contents of IIS Temporary Cache Files

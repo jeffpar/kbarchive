@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81605: Setting Up LANtastic 4.x with Windows 3.0"
-permalink: kb/081/Q81605/
+permalink: /kb/081/Q81605/
 ---
 
 ## Q81605: Setting Up LANtastic 4.x with Windows 3.0

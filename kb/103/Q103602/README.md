@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103602: PRB: Menu Popups Not Appearing in FoxPro for Windows"
-permalink: kb/103/Q103602/
+permalink: /kb/103/Q103602/
 ---
 
 ## Q103602: PRB: Menu Popups Not Appearing in FoxPro for Windows

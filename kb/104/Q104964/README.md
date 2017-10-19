@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104964: Games May Hang with Gravis UltraSound Sound Card"
-permalink: kb/104/Q104964/
+permalink: /kb/104/Q104964/
 ---
 
 ## Q104964: Games May Hang with Gravis UltraSound Sound Card

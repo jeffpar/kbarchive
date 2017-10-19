@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242474: Korean Year 2000 Update Does Not Contain English Strings"
-permalink: kb/242/Q242474/
+permalink: /kb/242/Q242474/
 ---
 
 ## Q242474: Korean Year 2000 Update Does Not Contain English Strings

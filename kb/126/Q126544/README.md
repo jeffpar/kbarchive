@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126544: NOINT Virus Causes Unusual Network Error Messages in WFWG"
-permalink: kb/126/Q126544/
+permalink: /kb/126/Q126544/
 ---
 
 ## Q126544: NOINT Virus Causes Unusual Network Error Messages in WFWG

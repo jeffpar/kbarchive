@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184225: XADM: Cannot Specify Destination Server Name"
-permalink: kb/184/Q184225/
+permalink: /kb/184/Q184225/
 ---
 
 ## Q184225: XADM: Cannot Specify Destination Server Name

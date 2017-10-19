@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275616: XCON: Messages Are Lost When Domain Controller Is Unavailable"
-permalink: kb/275/Q275616/
+permalink: /kb/275/Q275616/
 ---
 
 ## Q275616: XCON: Messages Are Lost When Domain Controller Is Unavailable

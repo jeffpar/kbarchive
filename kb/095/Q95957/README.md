@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95957: Qemm Err Msg: File Server Encountered a Critical..."
-permalink: kb/095/Q95957/
+permalink: /kb/095/Q95957/
 ---
 
 ## Q95957: Qemm Err Msg: File Server Encountered a Critical...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164861: XFOR: Cannot Configure French AT Server as Directory Requester"
-permalink: kb/164/Q164861/
+permalink: /kb/164/Q164861/
 ---
 
 ## Q164861: XFOR: Cannot Configure French AT Server as Directory Requester

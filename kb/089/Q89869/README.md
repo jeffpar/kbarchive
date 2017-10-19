@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89869: Sound Continues After Exiting Windows with Sound Blaster"
-permalink: kb/089/Q89869/
+permalink: /kb/089/Q89869/
 ---
 
 ## Q89869: Sound Continues After Exiting Windows with Sound Blaster

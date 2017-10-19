@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72044: Deleting Files with Stacker Installed"
-permalink: kb/072/Q72044/
+permalink: /kb/072/Q72044/
 ---
 
 ## Q72044: Deleting Files with Stacker Installed

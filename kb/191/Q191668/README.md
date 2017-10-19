@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191668: DOC: CE Debug Shell Tool Does Not Support Serial Interface"
-permalink: kb/191/Q191668/
+permalink: /kb/191/Q191668/
 ---
 
 ## Q191668: DOC: CE Debug Shell Tool Does Not Support Serial Interface

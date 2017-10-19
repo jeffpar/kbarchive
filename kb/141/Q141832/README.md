@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141832: How to Change the Boot Disk Order with Multiple SCSI Adapters"
-permalink: kb/141/Q141832/
+permalink: /kb/141/Q141832/
 ---
 
 ## Q141832: How to Change the Boot Disk Order with Multiple SCSI Adapters

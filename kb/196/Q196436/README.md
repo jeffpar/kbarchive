@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196436: WD97: &quot;Blue Background, White Text&quot; Option Makes Text Disappear"
-permalink: kb/196/Q196436/
+permalink: /kb/196/Q196436/
 ---
 
 ## Q196436: WD97: &quot;Blue Background, White Text&quot; Option Makes Text Disappear

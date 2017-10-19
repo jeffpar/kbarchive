@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203170: XADM: Controlling Public Folder Hierarchy Status Messages"
-permalink: kb/203/Q203170/
+permalink: /kb/203/Q203170/
 ---
 
 ## Q203170: XADM: Controlling Public Folder Hierarchy Status Messages

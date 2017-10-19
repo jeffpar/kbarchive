@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249780: XCLN: Outlook Security Features Installed with Office 2000 SR-1"
-permalink: kb/249/Q249780/
+permalink: /kb/249/Q249780/
 ---
 
 ## Q249780: XCLN: Outlook Security Features Installed with Office 2000 SR-1

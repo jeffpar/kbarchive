@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72173: Hyundai 386 with Toshiba 3.5-Inch Floppy Drives"
-permalink: kb/072/Q72173/
+permalink: /kb/072/Q72173/
 ---
 
 ## Q72173: Hyundai 386 with Toshiba 3.5-Inch Floppy Drives

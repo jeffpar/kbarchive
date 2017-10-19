@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95141: Dvorak Keyboard Layouts"
-permalink: kb/095/Q95141/
+permalink: /kb/095/Q95141/
 ---
 
 ## Q95141: Dvorak Keyboard Layouts

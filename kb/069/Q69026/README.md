@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69026: Operations on Hidden Files"
-permalink: kb/069/Q69026/
+permalink: /kb/069/Q69026/
 ---
 
 ## Q69026: Operations on Hidden Files

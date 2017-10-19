@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238052: Encarta 2000: Empty Window Opens When Starting Lesson Collection"
-permalink: kb/238/Q238052/
+permalink: /kb/238/Q238052/
 ---
 
 ## Q238052: Encarta 2000: Empty Window Opens When Starting Lesson Collection

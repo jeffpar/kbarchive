@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186368: FIX: GPF Issuing QUIT from a Form Run in the Form Designer"
-permalink: kb/186/Q186368/
+permalink: /kb/186/Q186368/
 ---
 
 ## Q186368: FIX: GPF Issuing QUIT from a Form Run in the Form Designer

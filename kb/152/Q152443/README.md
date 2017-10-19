@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152443: PKZIP Corrupts Files with Long File Names"
-permalink: kb/152/Q152443/
+permalink: /kb/152/Q152443/
 ---
 
 ## Q152443: PKZIP Corrupts Files with Long File Names

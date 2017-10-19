@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196611: Error Code 29 After Resuming from Suspend Mode"
-permalink: kb/196/Q196611/
+permalink: /kb/196/Q196611/
 ---
 
 ## Q196611: Error Code 29 After Resuming from Suspend Mode

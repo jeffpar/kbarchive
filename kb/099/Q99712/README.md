@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99712: Err Msg: Cannot Find UNIDRV.DLL When Printing to DeskJet 500C"
-permalink: kb/099/Q99712/
+permalink: /kb/099/Q99712/
 ---
 
 ## Q99712: Err Msg: Cannot Find UNIDRV.DLL When Printing to DeskJet 500C

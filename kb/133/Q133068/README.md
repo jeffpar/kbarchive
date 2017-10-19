@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133068: BUG: Deleting a Struct Typedef Causes C1059, C1063, or C1001"
-permalink: kb/133/Q133068/
+permalink: /kb/133/Q133068/
 ---
 
 ## Q133068: BUG: Deleting a Struct Typedef Causes C1059, C1063, or C1001

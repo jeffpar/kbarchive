@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99858: Font Changes When Changing Printer Driver in WordPerfect 5.2"
-permalink: kb/099/Q99858/
+permalink: /kb/099/Q99858/
 ---
 
 ## Q99858: Font Changes When Changing Printer Driver in WordPerfect 5.2

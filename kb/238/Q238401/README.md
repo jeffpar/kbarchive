@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238401: PRB: Unrecognized Database Format Error Upgrading to Access 2000"
-permalink: kb/238/Q238401/
+permalink: /kb/238/Q238401/
 ---
 
 ## Q238401: PRB: Unrecognized Database Format Error Upgrading to Access 2000

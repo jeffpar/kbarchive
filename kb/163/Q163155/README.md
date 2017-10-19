@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163155: WD97: No Shortcut Menu in Find and Replace Dialog Box"
-permalink: kb/163/Q163155/
+permalink: /kb/163/Q163155/
 ---
 
 ## Q163155: WD97: No Shortcut Menu in Find and Replace Dialog Box

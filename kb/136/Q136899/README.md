@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136899: DriveSpace Restartability in Windows 95 and MS Plus!"
-permalink: kb/136/Q136899/
+permalink: /kb/136/Q136899/
 ---
 
 ## Q136899: DriveSpace Restartability in Windows 95 and MS Plus!

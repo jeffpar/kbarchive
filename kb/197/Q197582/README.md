@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197582: FIX: FlexGrid SelChange Occurs for Every Selected Row or Column"
-permalink: kb/197/Q197582/
+permalink: /kb/197/Q197582/
 ---
 
 ## Q197582: FIX: FlexGrid SelChange Occurs for Every Selected Row or Column

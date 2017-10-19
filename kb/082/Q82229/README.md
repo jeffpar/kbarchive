@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82229: Windows Setup Updates &quot;DOS Prompt&quot; to &quot;MS-DOS Prompt&quot;"
-permalink: kb/082/Q82229/
+permalink: /kb/082/Q82229/
 ---
 
 ## Q82229: Windows Setup Updates &quot;DOS Prompt&quot; to &quot;MS-DOS Prompt&quot;

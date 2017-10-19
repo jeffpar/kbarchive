@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188692: How to Prevent Certain Folders from Uploading to Central Profile"
-permalink: kb/188/Q188692/
+permalink: /kb/188/Q188692/
 ---
 
 ## Q188692: How to Prevent Certain Folders from Uploading to Central Profile

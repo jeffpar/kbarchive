@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259599: SMS: Slow Response When You Link Collections"
-permalink: kb/259/Q259599/
+permalink: /kb/259/Q259599/
 ---
 
 ## Q259599: SMS: Slow Response When You Link Collections

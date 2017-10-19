@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129815: LSA Secret Limitation Increased to 4096 in WinNT 4.0 and Win2000"
-permalink: kb/129/Q129815/
+permalink: /kb/129/Q129815/
 ---
 
 ## Q129815: LSA Secret Limitation Increased to 4096 in WinNT 4.0 and Win2000

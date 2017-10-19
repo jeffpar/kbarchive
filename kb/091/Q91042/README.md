@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91042: PC WFW: Postoffice Administration Not Available from Windows"
-permalink: kb/091/Q91042/
+permalink: /kb/091/Q91042/
 ---
 
 ## Q91042: PC WFW: Postoffice Administration Not Available from Windows

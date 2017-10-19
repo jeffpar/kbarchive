@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98466: Bookshelf: WordBASIC Err=5: Illegal Function Call on Launch"
-permalink: kb/098/Q98466/
+permalink: /kb/098/Q98466/
 ---
 
 ## Q98466: Bookshelf: WordBASIC Err=5: Illegal Function Call on Launch

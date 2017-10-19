@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248627: Roaming Profiles May Not Be Deleted from Terminal Server"
-permalink: kb/248/Q248627/
+permalink: /kb/248/Q248627/
 ---
 
 ## Q248627: Roaming Profiles May Not Be Deleted from Terminal Server

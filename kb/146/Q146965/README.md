@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146965: GetAdmin Utility Grants Users Administrative Rights"
-permalink: kb/146/Q146965/
+permalink: /kb/146/Q146965/
 ---
 
 ## Q146965: GetAdmin Utility Grants Users Administrative Rights

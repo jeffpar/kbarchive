@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151000: FIX: Problems with the Task Bar in Windows 95"
-permalink: kb/151/Q151000/
+permalink: /kb/151/Q151000/
 ---
 
 ## Q151000: FIX: Problems with the Task Bar in Windows 95

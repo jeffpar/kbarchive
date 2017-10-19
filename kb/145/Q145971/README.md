@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145971: XCLN: Upgrading From SFS Mail to Exchange Causes E-Forms"
-permalink: kb/145/Q145971/
+permalink: /kb/145/Q145971/
 ---
 
 ## Q145971: XCLN: Upgrading From SFS Mail to Exchange Causes E-Forms

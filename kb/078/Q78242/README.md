@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78242: Help Does Not Support Side-by-Side Paragraphs"
-permalink: kb/078/Q78242/
+permalink: /kb/078/Q78242/
 ---
 
 ## Q78242: Help Does Not Support Side-by-Side Paragraphs

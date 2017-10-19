@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117602: Information About Setting Up WFWG 3.11 and Personal NetWare"
-permalink: kb/117/Q117602/
+permalink: /kb/117/Q117602/
 ---
 
 ## Q117602: Information About Setting Up WFWG 3.11 and Personal NetWare

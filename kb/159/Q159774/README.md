@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159774: DOCERR: Adding Visual C++ Projects to Source Control"
-permalink: kb/159/Q159774/
+permalink: /kb/159/Q159774/
 ---
 
 ## Q159774: DOCERR: Adding Visual C++ Projects to Source Control

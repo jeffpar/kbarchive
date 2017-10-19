@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135033: PC NTMMTA: Service Account Cannot Be a Group"
-permalink: kb/135/Q135033/
+permalink: /kb/135/Q135033/
 ---
 
 ## Q135033: PC NTMMTA: Service Account Cannot Be a Group

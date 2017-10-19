@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89897: How to Set Up Windows Sound System on a Network"
-permalink: kb/089/Q89897/
+permalink: /kb/089/Q89897/
 ---
 
 ## Q89897: How to Set Up Windows Sound System on a Network

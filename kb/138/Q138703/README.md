@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138703: STOP 0x0000005c on IBM PC Server 320"
-permalink: kb/138/Q138703/
+permalink: /kb/138/Q138703/
 ---
 
 ## Q138703: STOP 0x0000005c on IBM PC Server 320

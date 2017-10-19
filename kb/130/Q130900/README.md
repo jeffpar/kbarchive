@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130900: SMS Remote Control Fails on AST Manhattan Pentium"
-permalink: kb/130/Q130900/
+permalink: /kb/130/Q130900/
 ---
 
 ## Q130900: SMS Remote Control Fails on AST Manhattan Pentium

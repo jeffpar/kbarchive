@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152695: HOWTO: Catch and Decipher DAO SDK-Based Exceptions"
-permalink: kb/152/Q152695/
+permalink: /kb/152/Q152695/
 ---
 
 ## Q152695: HOWTO: Catch and Decipher DAO SDK-Based Exceptions

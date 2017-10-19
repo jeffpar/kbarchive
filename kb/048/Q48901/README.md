@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48901: Mac Wkst: Err Msg: &quot;Unknown Name&quot; or &quot;Incorrect Password&quot;"
-permalink: kb/048/Q48901/
+permalink: /kb/048/Q48901/
 ---
 
 ## Q48901: Mac Wkst: Err Msg: &quot;Unknown Name&quot; or &quot;Incorrect Password&quot;

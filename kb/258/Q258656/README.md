@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258656: Baseball 2001: Game Screen Is Distorted or Textures Disappear"
-permalink: kb/258/Q258656/
+permalink: /kb/258/Q258656/
 ---
 
 ## Q258656: Baseball 2001: Game Screen Is Distorted or Textures Disappear

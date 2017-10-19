@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242387: XFOR: Postmaster Addresses When Hosting Multiple Domains"
-permalink: kb/242/Q242387/
+permalink: /kb/242/Q242387/
 ---
 
 ## Q242387: XFOR: Postmaster Addresses When Hosting Multiple Domains

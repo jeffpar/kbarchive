@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127910: Windows NT version 3.5 Setup Requests Disk 4"
-permalink: kb/127/Q127910/
+permalink: /kb/127/Q127910/
 ---
 
 ## Q127910: Windows NT version 3.5 Setup Requests Disk 4

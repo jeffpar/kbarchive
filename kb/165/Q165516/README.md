@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165516: WD97: ArtWidth Sets Values in Points But Returns in Twips"
-permalink: kb/165/Q165516/
+permalink: /kb/165/Q165516/
 ---
 
 ## Q165516: WD97: ArtWidth Sets Values in Points But Returns in Twips

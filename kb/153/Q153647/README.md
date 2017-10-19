@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153647: SMS: Shared Applications Fail Using Specific Drive Letter"
-permalink: kb/153/Q153647/
+permalink: /kb/153/Q153647/
 ---
 
 ## Q153647: SMS: Shared Applications Fail Using Specific Drive Letter

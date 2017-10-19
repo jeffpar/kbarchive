@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300931: Files That You Can Safely Delete from the ImcData Folder"
-permalink: kb/300/Q300931/
+permalink: /kb/300/Q300931/
 ---
 
 ## Q300931: Files That You Can Safely Delete from the ImcData Folder

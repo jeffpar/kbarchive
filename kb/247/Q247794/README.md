@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247794: Deadlock Condition in License Manager Service"
-permalink: kb/247/Q247794/
+permalink: /kb/247/Q247794/
 ---
 
 ## Q247794: Deadlock Condition in License Manager Service

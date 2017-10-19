@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238887: XCLN: &quot;Invitations have not been sent for this meeting&quot; Message"
-permalink: kb/238/Q238887/
+permalink: /kb/238/Q238887/
 ---
 
 ## Q238887: XCLN: &quot;Invitations have not been sent for this meeting&quot; Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96552: What Defragmenter Does &amp; How It Works with 3rd-Party Utilities"
-permalink: kb/096/Q96552/
+permalink: /kb/096/Q96552/
 ---
 
 ## Q96552: What Defragmenter Does &amp; How It Works with 3rd-Party Utilities

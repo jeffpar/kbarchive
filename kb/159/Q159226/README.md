@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159226: WD:97 Ami Pro 3.x Style Sheets Open Blank in Word"
-permalink: kb/159/Q159226/
+permalink: /kb/159/Q159226/
 ---
 
 ## Q159226: WD:97 Ami Pro 3.x Style Sheets Open Blank in Word

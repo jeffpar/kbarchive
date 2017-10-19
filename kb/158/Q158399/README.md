@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158399: XFOR: The Maximum Time for Delivering the Message Expired"
-permalink: kb/158/Q158399/
+permalink: /kb/158/Q158399/
 ---
 
 ## Q158399: XFOR: The Maximum Time for Delivering the Message Expired

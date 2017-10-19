@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128799: Unable to Log On After Changing Keyboard Layout"
-permalink: kb/128/Q128799/
+permalink: /kb/128/Q128799/
 ---
 
 ## Q128799: Unable to Log On After Changing Keyboard Layout

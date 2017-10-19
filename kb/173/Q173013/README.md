@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173013: WD97: Symbol in Heading Removes Heading Numbering from TOC"
-permalink: kb/173/Q173013/
+permalink: /kb/173/Q173013/
 ---
 
 ## Q173013: WD97: Symbol in Heading Removes Heading Numbering from TOC

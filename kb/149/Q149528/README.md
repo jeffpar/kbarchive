@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149528: FTP Client Uses Only One IP Address on Multihomed Workstations"
-permalink: kb/149/Q149528/
+permalink: /kb/149/Q149528/
 ---
 
 ## Q149528: FTP Client Uses Only One IP Address on Multihomed Workstations

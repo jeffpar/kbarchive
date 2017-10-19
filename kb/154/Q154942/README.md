@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154942: IIS Virtual Root Cannot Be Browsed on a SAMBA or WIN95 Share"
-permalink: kb/154/Q154942/
+permalink: /kb/154/Q154942/
 ---
 
 ## Q154942: IIS Virtual Root Cannot Be Browsed on a SAMBA or WIN95 Share

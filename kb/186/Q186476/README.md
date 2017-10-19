@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186476: Changing Icon Names Changes the Name for All Users"
-permalink: kb/186/Q186476/
+permalink: /kb/186/Q186476/
 ---
 
 ## Q186476: Changing Icon Names Changes the Name for All Users

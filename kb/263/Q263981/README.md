@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263981: DOC: Wake Up Pattern OIDs Are Not Correctly Documented"
-permalink: kb/263/Q263981/
+permalink: /kb/263/Q263981/
 ---
 
 ## Q263981: DOC: Wake Up Pattern OIDs Are Not Correctly Documented

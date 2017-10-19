@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124872: Err Msg: Setup Requires a Local Hard Disk That is Visible"
-permalink: kb/124/Q124872/
+permalink: /kb/124/Q124872/
 ---
 
 ## Q124872: Err Msg: Setup Requires a Local Hard Disk That is Visible

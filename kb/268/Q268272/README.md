@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268272: CDO MAPI Session Logon Fails If No Thread Token"
-permalink: kb/268/Q268272/
+permalink: /kb/268/Q268272/
 ---
 
 ## Q268272: CDO MAPI Session Logon Fails If No Thread Token

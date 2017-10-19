@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153213: XCLN: Can't Change Windows NT 3.51 Password w/ AppleTalk"
-permalink: kb/153/Q153213/
+permalink: /kb/153/Q153213/
 ---
 
 ## Q153213: XCLN: Can't Change Windows NT 3.51 Password w/ AppleTalk

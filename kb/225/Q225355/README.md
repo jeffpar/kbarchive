@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225355: Err Msg: Unable to Find the Magic School Bus Animals Files..."
-permalink: kb/225/Q225355/
+permalink: /kb/225/Q225355/
 ---
 
 ## Q225355: Err Msg: Unable to Find the Magic School Bus Animals Files...

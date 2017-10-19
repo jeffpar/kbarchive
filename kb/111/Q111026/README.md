@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111026: Backup Creates Many REGXXXX Files, Can't Copy .EVT Files"
-permalink: kb/111/Q111026/
+permalink: /kb/111/Q111026/
 ---
 
 ## Q111026: Backup Creates Many REGXXXX Files, Can't Copy .EVT Files

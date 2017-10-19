@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112289: PC DOS: Notice 20 Error When Printing May Be Due to SHARE.EXE"
-permalink: kb/112/Q112289/
+permalink: /kb/112/Q112289/
 ---
 
 ## Q112289: PC DOS: Notice 20 Error When Printing May Be Due to SHARE.EXE

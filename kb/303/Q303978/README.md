@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303978: Error: Access Violation in Msppnexus.dll"
-permalink: kb/303/Q303978/
+permalink: /kb/303/Q303978/
 ---
 
 ## Q303978: Error: Access Violation in Msppnexus.dll

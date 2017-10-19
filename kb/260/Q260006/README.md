@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260006: StarLancer: Poor Video Performance or Game Quits Unexpectedly"
-permalink: kb/260/Q260006/
+permalink: /kb/260/Q260006/
 ---
 
 ## Q260006: StarLancer: Poor Video Performance or Game Quits Unexpectedly

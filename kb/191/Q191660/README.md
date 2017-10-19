@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191660: Err Msg: Could Not Find Any 3D Acceleration Hardware..."
-permalink: kb/191/Q191660/
+permalink: /kb/191/Q191660/
 ---
 
 ## Q191660: Err Msg: Could Not Find Any 3D Acceleration Hardware...

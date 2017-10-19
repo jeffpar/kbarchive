@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199131: HOWTO: Add a FoxPro Database to SQL Server as a Linked Server"
-permalink: kb/199/Q199131/
+permalink: /kb/199/Q199131/
 ---
 
 ## Q199131: HOWTO: Add a FoxPro Database to SQL Server as a Linked Server

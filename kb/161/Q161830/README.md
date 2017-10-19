@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161830: Message from Unix Using Smbclient w/ Long Username Crashes"
-permalink: kb/161/Q161830/
+permalink: /kb/161/Q161830/
 ---
 
 ## Q161830: Message from Unix Using Smbclient w/ Long Username Crashes

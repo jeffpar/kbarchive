@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130273: NetBT Domain 0x1C Name Fails to Add All #DOM IP Addresses"
-permalink: kb/130/Q130273/
+permalink: /kb/130/Q130273/
 ---
 
 ## Q130273: NetBT Domain 0x1C Name Fails to Add All #DOM IP Addresses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116559: PPT7: Can't Open PowerPoint 4.0 Presentation on Windows NT 3.51"
-permalink: kb/116/Q116559/
+permalink: /kb/116/Q116559/
 ---
 
 ## Q116559: PPT7: Can't Open PowerPoint 4.0 Presentation on Windows NT 3.51

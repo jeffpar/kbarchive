@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148693: IPX RAS Clients Unable To View or Access NetBIOS Resources"
-permalink: kb/148/Q148693/
+permalink: /kb/148/Q148693/
 ---
 
 ## Q148693: IPX RAS Clients Unable To View or Access NetBIOS Resources

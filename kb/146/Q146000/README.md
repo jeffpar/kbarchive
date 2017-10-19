@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146000: FIX: C1001 Including Header File in Template Class Definition"
-permalink: kb/146/Q146000/
+permalink: /kb/146/Q146000/
 ---
 
 ## Q146000: FIX: C1001 Including Header File in Template Class Definition

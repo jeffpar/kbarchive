@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72067: DOCERR: Docs for PWB Extension Functions Have Errors/Omissions"
-permalink: kb/072/Q72067/
+permalink: /kb/072/Q72067/
 ---
 
 ## Q72067: DOCERR: Docs for PWB Extension Functions Have Errors/Omissions

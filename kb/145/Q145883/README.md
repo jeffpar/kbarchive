@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145883: Debug Symbols and Expndsym.cmd on Far East NT Products"
-permalink: kb/145/Q145883/
+permalink: /kb/145/Q145883/
 ---
 
 ## Q145883: Debug Symbols and Expndsym.cmd on Far East NT Products

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229759: System Command Line Shows the Wrong Date"
-permalink: kb/229/Q229759/
+permalink: /kb/229/Q229759/
 ---
 
 ## Q229759: System Command Line Shows the Wrong Date

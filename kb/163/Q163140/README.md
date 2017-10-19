@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163140: XCLN: Schedule+ Calendar Not Synchronized If Not Logged Off"
-permalink: kb/163/Q163140/
+permalink: /kb/163/Q163140/
 ---
 
 ## Q163140: XCLN: Schedule+ Calendar Not Synchronized If Not Logged Off

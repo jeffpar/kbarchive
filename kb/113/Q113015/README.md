@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113015: PPT: Applying Template Does Not Affect Slide Setup"
-permalink: kb/113/Q113015/
+permalink: /kb/113/Q113015/
 ---
 
 ## Q113015: PPT: Applying Template Does Not Affect Slide Setup

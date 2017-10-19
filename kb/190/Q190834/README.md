@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190834: SCSI Adapter Is No Longer Visible from SCSI Adapters Utility"
-permalink: kb/190/Q190834/
+permalink: /kb/190/Q190834/
 ---
 
 ## Q190834: SCSI Adapter Is No Longer Visible from SCSI Adapters Utility

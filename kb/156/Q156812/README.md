@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156812: XCLN: Running Exchange MS-DOS Client in Monitor Mode"
-permalink: kb/156/Q156812/
+permalink: /kb/156/Q156812/
 ---
 
 ## Q156812: XCLN: Running Exchange MS-DOS Client in Monitor Mode

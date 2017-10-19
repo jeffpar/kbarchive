@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82477: TIGA Display Driver Doesn't Work on 286 Systems"
-permalink: kb/082/Q82477/
+permalink: /kb/082/Q82477/
 ---
 
 ## Q82477: TIGA Display Driver Doesn't Work on 286 Systems

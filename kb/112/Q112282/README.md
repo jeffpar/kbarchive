@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112282: PC WSPlus: Schedule+ Monthly View Space Not Fully Used"
-permalink: kb/112/Q112282/
+permalink: /kb/112/Q112282/
 ---
 
 ## Q112282: PC WSPlus: Schedule+ Monthly View Space Not Fully Used

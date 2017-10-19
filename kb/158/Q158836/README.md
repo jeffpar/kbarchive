@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158836: Compaq USB Camera May Not Work Properly on Other Computers"
-permalink: kb/158/Q158836/
+permalink: /kb/158/Q158836/
 ---
 
 ## Q158836: Compaq USB Camera May Not Work Properly on Other Computers

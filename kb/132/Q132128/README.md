@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132128: ADT2: Installing/Registering OLE Controls in Run-time App"
-permalink: kb/132/Q132128/
+permalink: /kb/132/Q132128/
 ---
 
 ## Q132128: ADT2: Installing/Registering OLE Controls in Run-time App

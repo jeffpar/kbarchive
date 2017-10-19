@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148207: PC Win: Err Msg: ...No Valid Message Recipients Supplied"
-permalink: kb/148/Q148207/
+permalink: /kb/148/Q148207/
 ---
 
 ## Q148207: PC Win: Err Msg: ...No Valid Message Recipients Supplied

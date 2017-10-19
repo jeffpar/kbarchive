@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171547: FIX: New DBGrid32.OCX Breaks VB4 Apps that Use VB4 Version"
-permalink: kb/171/Q171547/
+permalink: /kb/171/Q171547/
 ---
 
 ## Q171547: FIX: New DBGrid32.OCX Breaks VB4 Apps that Use VB4 Version

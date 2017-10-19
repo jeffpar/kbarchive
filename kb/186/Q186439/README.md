@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186439: Removing Server Service Results in Memory Leak"
-permalink: kb/186/Q186439/
+permalink: /kb/186/Q186439/
 ---
 
 ## Q186439: Removing Server Service Results in Memory Leak

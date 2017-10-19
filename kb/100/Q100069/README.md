@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100069: INFO: Outer Join with Three or More Data Tables"
-permalink: kb/100/Q100069/
+permalink: /kb/100/Q100069/
 ---
 
 ## Q100069: INFO: Outer Join with Three or More Data Tables

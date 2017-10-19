@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182059: Cache ISAPI Application Option Causes ASP to Return Error"
-permalink: kb/182/Q182059/
+permalink: /kb/182/Q182059/
 ---
 
 ## Q182059: Cache ISAPI Application Option Causes ASP to Return Error

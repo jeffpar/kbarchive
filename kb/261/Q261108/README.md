@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261108: HOWTO: Use ADO in VFP Interactively with the ADO Control"
-permalink: kb/261/Q261108/
+permalink: /kb/261/Q261108/
 ---
 
 ## Q261108: HOWTO: Use ADO in VFP Interactively with the ADO Control

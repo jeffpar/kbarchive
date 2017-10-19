@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135621: NetWare Transaction Tracking System (TTS) Not Detected"
-permalink: kb/135/Q135621/
+permalink: /kb/135/Q135621/
 ---
 
 ## Q135621: NetWare Transaction Tracking System (TTS) Not Detected

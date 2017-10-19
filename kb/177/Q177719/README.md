@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177719: How to Identify Winsock 2.0 Run-Time Components for Windows 95"
-permalink: kb/177/Q177719/
+permalink: /kb/177/Q177719/
 ---
 
 ## Q177719: How to Identify Winsock 2.0 Run-Time Components for Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155062: PPT7: Information About Compadre for PowerPoint 95"
-permalink: kb/155/Q155062/
+permalink: /kb/155/Q155062/
 ---
 
 ## Q155062: PPT7: Information About Compadre for PowerPoint 95

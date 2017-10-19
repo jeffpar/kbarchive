@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131265: Use Exclamation Mark (!) Notation for Precise Referencing"
-permalink: kb/131/Q131265/
+permalink: /kb/131/Q131265/
 ---
 
 ## Q131265: Use Exclamation Mark (!) Notation for Precise Referencing

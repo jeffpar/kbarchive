@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137456: Centimeter Measurements in WordPad Reported Incorrectly"
-permalink: kb/137/Q137456/
+permalink: /kb/137/Q137456/
 ---
 
 ## Q137456: Centimeter Measurements in WordPad Reported Incorrectly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168107: Windows NT Briefcase Appears and Acts Like a Normal Folder."
-permalink: kb/168/Q168107/
+permalink: /kb/168/Q168107/
 ---
 
 ## Q168107: Windows NT Briefcase Appears and Acts Like a Normal Folder.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154092: Err Msg: Explorer Caused an Invalid Page Fault in Kernel32.dll"
-permalink: kb/154/Q154092/
+permalink: /kb/154/Q154092/
 ---
 
 ## Q154092: Err Msg: Explorer Caused an Invalid Page Fault in Kernel32.dll

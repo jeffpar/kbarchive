@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188051: SMS: Delmif.exe Syntax, Description, and Usage"
-permalink: kb/188/Q188051/
+permalink: /kb/188/Q188051/
 ---
 
 ## Q188051: SMS: Delmif.exe Syntax, Description, and Usage

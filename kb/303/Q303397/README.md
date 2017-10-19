@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303397: Cannot View Subcollections on Child Sites"
-permalink: kb/303/Q303397/
+permalink: /kb/303/Q303397/
 ---
 
 ## Q303397: Cannot View Subcollections on Child Sites

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194631: WD97: How to Convert WordPerfect Supplemental Dictionaries"
-permalink: kb/194/Q194631/
+permalink: /kb/194/Q194631/
 ---
 
 ## Q194631: WD97: How to Convert WordPerfect Supplemental Dictionaries

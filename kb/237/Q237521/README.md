@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237521: EWED: Can't Start Reference Suite Program by Clicking Suite Link"
-permalink: kb/237/Q237521/
+permalink: /kb/237/Q237521/
 ---
 
 ## Q237521: EWED: Can't Start Reference Suite Program by Clicking Suite Link

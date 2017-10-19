@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177340: BUG: Using Selected Method in Init Event Does Not Work"
-permalink: kb/177/Q177340/
+permalink: /kb/177/Q177340/
 ---
 
 ## Q177340: BUG: Using Selected Method in Init Event Does Not Work

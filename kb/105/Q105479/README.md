@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105479: Windows NT Advanced Server 3.5 Inch Disk Contents (511)"
-permalink: kb/105/Q105479/
+permalink: /kb/105/Q105479/
 ---
 
 ## Q105479: Windows NT Advanced Server 3.5 Inch Disk Contents (511)

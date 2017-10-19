@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85390: Mouse Pointer Lost Switching from MS-DOS-Based Application"
-permalink: kb/085/Q85390/
+permalink: /kb/085/Q85390/
 ---
 
 ## Q85390: Mouse Pointer Lost Switching from MS-DOS-Based Application

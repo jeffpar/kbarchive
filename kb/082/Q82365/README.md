@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82365: Norton Desktop v1.0 Conflicts with SoundBlaster"
-permalink: kb/082/Q82365/
+permalink: /kb/082/Q82365/
 ---
 
 ## Q82365: Norton Desktop v1.0 Conflicts with SoundBlaster

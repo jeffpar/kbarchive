@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273828: Midtown Madness 2: Sounds in the Game Are Not Played"
-permalink: kb/273/Q273828/
+permalink: /kb/273/Q273828/
 ---
 
 ## Q273828: Midtown Madness 2: Sounds in the Game Are Not Played

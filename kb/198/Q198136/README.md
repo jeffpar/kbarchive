@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198136: Combat Flight Simulator: Uses More Hard Disk Space Than Expected"
-permalink: kb/198/Q198136/
+permalink: /kb/198/Q198136/
 ---
 
 ## Q198136: Combat Flight Simulator: Uses More Hard Disk Space Than Expected

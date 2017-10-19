@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116375: FAX: WIN.INI File Entries Added During Installation"
-permalink: kb/116/Q116375/
+permalink: /kb/116/Q116375/
 ---
 
 ## Q116375: FAX: WIN.INI File Entries Added During Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247109: XADM: Steps to Restore an Online Backup Using Current Log Files"
-permalink: kb/247/Q247109/
+permalink: /kb/247/Q247109/
 ---
 
 ## Q247109: XADM: Steps to Restore an Online Backup Using Current Log Files

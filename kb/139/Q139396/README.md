@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139396: Encarta 1995: Printout Missing Jump (Hot) Text"
-permalink: kb/139/Q139396/
+permalink: /kb/139/Q139396/
 ---
 
 ## Q139396: Encarta 1995: Printout Missing Jump (Hot) Text

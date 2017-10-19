@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307766: Active Server Pages&#92;Memory Allocated Performance Counter Unavail"
-permalink: kb/307/Q307766/
+permalink: /kb/307/Q307766/
 ---
 
 ## Q307766: Active Server Pages&#92;Memory Allocated Performance Counter Unavail

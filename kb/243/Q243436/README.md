@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243436: DHCP Audit Log Reports Wrong Address for BAD_ADDRESS Entry"
-permalink: kb/243/Q243436/
+permalink: /kb/243/Q243436/
 ---
 
 ## Q243436: DHCP Audit Log Reports Wrong Address for BAD_ADDRESS Entry

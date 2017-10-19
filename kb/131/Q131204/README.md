@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131204: PRB: Wrong Project Selection Causes LNK2001 on _WinMain@16"
-permalink: kb/131/Q131204/
+permalink: /kb/131/Q131204/
 ---
 
 ## Q131204: PRB: Wrong Project Selection Causes LNK2001 on _WinMain@16

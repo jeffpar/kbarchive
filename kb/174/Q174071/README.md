@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174071: WD97: Strange Behavior with Equation Toolbar in Arrange All Vie"
-permalink: kb/174/Q174071/
+permalink: /kb/174/Q174071/
 ---
 
 ## Q174071: WD97: Strange Behavior with Equation Toolbar in Arrange All Vie

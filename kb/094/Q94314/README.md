@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94314: 32-Bit Flat Memory Model MASM Code for Windows NT"
-permalink: kb/094/Q94314/
+permalink: /kb/094/Q94314/
 ---
 
 ## Q94314: 32-Bit Flat Memory Model MASM Code for Windows NT

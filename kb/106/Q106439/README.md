@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106439: Extended Characters May Be Displayed Incorrectly in WinPopup"
-permalink: kb/106/Q106439/
+permalink: /kb/106/Q106439/
 ---
 
 ## Q106439: Extended Characters May Be Displayed Incorrectly in WinPopup

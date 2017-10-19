@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186496: Securing a Common Folder"
-permalink: kb/186/Q186496/
+permalink: /kb/186/Q186496/
 ---
 
 ## Q186496: Securing a Common Folder

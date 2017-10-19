@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172088: FIX: SelText in Edit Box Limited to 255 Characters"
-permalink: kb/172/Q172088/
+permalink: /kb/172/Q172088/
 ---
 
 ## Q172088: FIX: SelText in Edit Box Limited to 255 Characters

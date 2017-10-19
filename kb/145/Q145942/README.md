@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145942: Two Scroll Bars Appear in Internet Service Manager"
-permalink: kb/145/Q145942/
+permalink: /kb/145/Q145942/
 ---
 
 ## Q145942: Two Scroll Bars Appear in Internet Service Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137308: SNA Server Windows 3.x APPC Display Call May Cause GP Fault"
-permalink: kb/137/Q137308/
+permalink: /kb/137/Q137308/
 ---
 
 ## Q137308: SNA Server Windows 3.x APPC Display Call May Cause GP Fault

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178934: XADM: Full Online Backup Fails with Event ID 15 with Error -1811"
-permalink: kb/178/Q178934/
+permalink: /kb/178/Q178934/
 ---
 
 ## Q178934: XADM: Full Online Backup Fails with Event ID 15 with Error -1811

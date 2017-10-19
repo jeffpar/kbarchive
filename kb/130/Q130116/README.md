@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130116: Event Log Write Problem Causes SERVICES.EXE Failure"
-permalink: kb/130/Q130116/
+permalink: /kb/130/Q130116/
 ---
 
 ## Q130116: Event Log Write Problem Causes SERVICES.EXE Failure

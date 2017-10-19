@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157402: HOWTO: Use Config.fpw Files with OLE Automation Servers"
-permalink: kb/157/Q157402/
+permalink: /kb/157/Q157402/
 ---
 
 ## Q157402: HOWTO: Use Config.fpw Files with OLE Automation Servers

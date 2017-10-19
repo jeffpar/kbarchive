@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140408: Access Denied Attempting to Rename File Across the Network"
-permalink: kb/140/Q140408/
+permalink: /kb/140/Q140408/
 ---
 
 ## Q140408: Access Denied Attempting to Rename File Across the Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187830: Performance Decrease Transmitting Data over the Network"
-permalink: kb/187/Q187830/
+permalink: /kb/187/Q187830/
 ---
 
 ## Q187830: Performance Decrease Transmitting Data over the Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162511: Calling CMSPTR over Thunking DLLs Causes Access Violation"
-permalink: kb/162/Q162511/
+permalink: /kb/162/Q162511/
 ---
 
 ## Q162511: Calling CMSPTR over Thunking DLLs Causes Access Violation

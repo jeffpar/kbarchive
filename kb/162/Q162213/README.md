@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162213: Cannot Print Only One Page to PostScript Printer from WordPad"
-permalink: kb/162/Q162213/
+permalink: /kb/162/Q162213/
 ---
 
 ## Q162213: Cannot Print Only One Page to PostScript Printer from WordPad

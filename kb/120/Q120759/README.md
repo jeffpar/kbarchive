@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120759: Cue Card/Wizard Dialog Problems After Publisher 2.0a Invoked"
-permalink: kb/120/Q120759/
+permalink: /kb/120/Q120759/
 ---
 
 ## Q120759: Cue Card/Wizard Dialog Problems After Publisher 2.0a Invoked

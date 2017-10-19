@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140258: Incomplete Server List in File Manager Connection Dialog Box"
-permalink: kb/140/Q140258/
+permalink: /kb/140/Q140258/
 ---
 
 ## Q140258: Incomplete Server List in File Manager Connection Dialog Box

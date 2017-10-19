@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113834: Err Msg on System Without Windows: Setup Has Not Found..."
-permalink: kb/113/Q113834/
+permalink: /kb/113/Q113834/
 ---
 
 ## Q113834: Err Msg on System Without Windows: Setup Has Not Found...

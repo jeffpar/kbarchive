@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61306: PRB: Browse Options Unavailable Under Strange Circumstances"
-permalink: kb/061/Q61306/
+permalink: /kb/061/Q61306/
 ---
 
 ## Q61306: PRB: Browse Options Unavailable Under Strange Circumstances

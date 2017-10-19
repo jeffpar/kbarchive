@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152994: ADT2: Err Msg: Unable to Create Item in Program Manager Group"
-permalink: kb/152/Q152994/
+permalink: /kb/152/Q152994/
 ---
 
 ## Q152994: ADT2: Err Msg: Unable to Create Item in Program Manager Group

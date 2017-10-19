@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77627: MS-DOS and DPT PM2001/95 SCSI Controller"
-permalink: kb/077/Q77627/
+permalink: /kb/077/Q77627/
 ---
 
 ## Q77627: MS-DOS and DPT PM2001/95 SCSI Controller

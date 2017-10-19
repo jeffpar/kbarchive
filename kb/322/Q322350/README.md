@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322350: HOW TO: Recycle IIS 5.0 with the IIS 5.0 Process Recycling Tool"
-permalink: kb/322/Q322350/
+permalink: /kb/322/Q322350/
 ---
 
 ## Q322350: HOW TO: Recycle IIS 5.0 with the IIS 5.0 Process Recycling Tool

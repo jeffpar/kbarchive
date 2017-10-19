@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182916: SNA Server Using Twinax to IBM System 36 Is Not Supported"
-permalink: kb/182/Q182916/
+permalink: /kb/182/Q182916/
 ---
 
 ## Q182916: SNA Server Using Twinax to IBM System 36 Is Not Supported

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47989: PRB: Resident Software May Cause &quot;Internal Debugger Error&quot;"
-permalink: kb/047/Q47989/
+permalink: /kb/047/Q47989/
 ---
 
 ## Q47989: PRB: Resident Software May Cause &quot;Internal Debugger Error&quot;

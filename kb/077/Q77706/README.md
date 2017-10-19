@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77706: Himem /M:12 on Vendex VTI with Award 3.03 BIOS"
-permalink: kb/077/Q77706/
+permalink: /kb/077/Q77706/
 ---
 
 ## Q77706: Himem /M:12 on Vendex VTI with Award 3.03 BIOS

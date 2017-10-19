@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174281: WinNT Computers with ZAK Tools Have a Blank Desktop"
-permalink: kb/174/Q174281/
+permalink: /kb/174/Q174281/
 ---
 
 ## Q174281: WinNT Computers with ZAK Tools Have a Blank Desktop

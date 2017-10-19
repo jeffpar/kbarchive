@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253753: Logon Attempt Does Not Work with New Windows NT Terminal Server"
-permalink: kb/253/Q253753/
+permalink: /kb/253/Q253753/
 ---
 
 ## Q253753: Logon Attempt Does Not Work with New Windows NT Terminal Server

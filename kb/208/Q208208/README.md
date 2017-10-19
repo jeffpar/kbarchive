@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208208: HOWTO: Add Records with Memo Data Using the VFP ODBC Driver"
-permalink: kb/208/Q208208/
+permalink: /kb/208/Q208208/
 ---
 
 ## Q208208: HOWTO: Add Records with Memo Data Using the VFP ODBC Driver

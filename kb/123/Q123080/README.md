@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123080: Cinemania 95: GP Fault with S3645K Video Driver"
-permalink: kb/123/Q123080/
+permalink: /kb/123/Q123080/
 ---
 
 ## Q123080: Cinemania 95: GP Fault with S3645K Video Driver

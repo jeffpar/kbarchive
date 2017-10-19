@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87182: PROFS: What to Do with Files in the ERR Directory"
-permalink: kb/087/Q87182/
+permalink: /kb/087/Q87182/
 ---
 
 ## Q87182: PROFS: What to Do with Files in the ERR Directory

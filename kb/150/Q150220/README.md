@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150220: FIX: Invalid Page Fault or GPF Results When Making an EXE File"
-permalink: kb/150/Q150220/
+permalink: /kb/150/Q150220/
 ---
 
 ## Q150220: FIX: Invalid Page Fault or GPF Results When Making an EXE File

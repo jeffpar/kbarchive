@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125216: Heavy I/O Operation Using Adaptec 1640 Causes STOP 0x0A"
-permalink: kb/125/Q125216/
+permalink: /kb/125/Q125216/
 ---
 
 ## Q125216: Heavy I/O Operation Using Adaptec 1640 Causes STOP 0x0A

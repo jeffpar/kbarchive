@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154647: Setup Halts with &quot;Windows Has Disabled Direct Disk Access&quot;"
-permalink: kb/154/Q154647/
+permalink: /kb/154/Q154647/
 ---
 
 ## Q154647: Setup Halts with &quot;Windows Has Disabled Direct Disk Access&quot;

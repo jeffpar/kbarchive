@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172592: HOWTO: Open a Visual FoxPro Table for Read/Write"
-permalink: kb/172/Q172592/
+permalink: /kb/172/Q172592/
 ---
 
 ## Q172592: HOWTO: Open a Visual FoxPro Table for Read/Write

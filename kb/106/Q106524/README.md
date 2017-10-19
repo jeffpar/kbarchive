@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106524: Invalid Named Pipe Message Causes SNABASE.EXE Exception"
-permalink: kb/106/Q106524/
+permalink: /kb/106/Q106524/
 ---
 
 ## Q106524: Invalid Named Pipe Message Causes SNABASE.EXE Exception

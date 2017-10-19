@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135136: Enabling APM Support After Windows 95 Setup"
-permalink: kb/135/Q135136/
+permalink: /kb/135/Q135136/
 ---
 
 ## Q135136: Enabling APM Support After Windows 95 Setup

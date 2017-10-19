@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68138: Calculations that Require Calculator to Be Reinitialized"
-permalink: kb/068/Q68138/
+permalink: /kb/068/Q68138/
 ---
 
 ## Q68138: Calculations that Require Calculator to Be Reinitialized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75601: BUG: Continuation Char with Initializing Structures"
-permalink: kb/075/Q75601/
+permalink: /kb/075/Q75601/
 ---
 
 ## Q75601: BUG: Continuation Char with Initializing Structures

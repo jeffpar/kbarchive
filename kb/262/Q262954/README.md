@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262954: HOWTO: Create a Resizeable Dialog Box with Scroll Bars"
-permalink: kb/262/Q262954/
+permalink: /kb/262/Q262954/
 ---
 
 ## Q262954: HOWTO: Create a Resizeable Dialog Box with Scroll Bars

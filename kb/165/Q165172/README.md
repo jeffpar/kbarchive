@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165172: Gphsamp.exe Shows Automation to DataSheet in MS Graph 8"
-permalink: kb/165/Q165172/
+permalink: /kb/165/Q165172/
 ---
 
 ## Q165172: Gphsamp.exe Shows Automation to DataSheet in MS Graph 8

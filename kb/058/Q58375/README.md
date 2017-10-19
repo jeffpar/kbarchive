@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58375: Erratic Output on IBM Proprinter X24 and XL24"
-permalink: kb/058/Q58375/
+permalink: /kb/058/Q58375/
 ---
 
 ## Q58375: Erratic Output on IBM Proprinter X24 and XL24

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158870: HOWTO: Display DBCS in a VB Application Running on Windows NT"
-permalink: kb/158/Q158870/
+permalink: /kb/158/Q158870/
 ---
 
 ## Q158870: HOWTO: Display DBCS in a VB Application Running on Windows NT

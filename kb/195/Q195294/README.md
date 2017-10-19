@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195294: PRB: Emulator Traps KeyDown Event for Arrow Keys"
-permalink: kb/195/Q195294/
+permalink: /kb/195/Q195294/
 ---
 
 ## Q195294: PRB: Emulator Traps KeyDown Event for Arrow Keys

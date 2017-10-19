@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190979: DOC: CodeLocation Property Incorrectly Shows Optional Argument"
-permalink: kb/190/Q190979/
+permalink: /kb/190/Q190979/
 ---
 
 ## Q190979: DOC: CodeLocation Property Incorrectly Shows Optional Argument

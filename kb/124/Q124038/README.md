@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124038: VIEWNAD Does Not Display Platform Type Correctly"
-permalink: kb/124/Q124038/
+permalink: /kb/124/Q124038/
 ---
 
 ## Q124038: VIEWNAD Does Not Display Platform Type Correctly

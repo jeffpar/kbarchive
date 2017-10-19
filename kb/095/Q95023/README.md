@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95023: INF: Error Handling in Visual Basic Data Access Layer"
-permalink: kb/095/Q95023/
+permalink: /kb/095/Q95023/
 ---
 
 ## Q95023: INF: Error Handling in Visual Basic Data Access Layer

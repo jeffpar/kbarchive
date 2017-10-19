@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155965: WD97: CTRL+Z UNDO Will Not Work In Form Control Tools"
-permalink: kb/155/Q155965/
+permalink: /kb/155/Q155965/
 ---
 
 ## Q155965: WD97: CTRL+Z UNDO Will Not Work In Form Control Tools

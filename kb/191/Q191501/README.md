@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191501: HOWTO: Detect If the Floppy Drive Is Ready on Windows NT"
-permalink: kb/191/Q191501/
+permalink: /kb/191/Q191501/
 ---
 
 ## Q191501: HOWTO: Detect If the Floppy Drive Is Ready on Windows NT

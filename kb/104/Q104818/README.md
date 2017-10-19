@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104818: PC Forms: Message Class Not Preserved When Forwarding"
-permalink: kb/104/Q104818/
+permalink: /kb/104/Q104818/
 ---
 
 ## Q104818: PC Forms: Message Class Not Preserved When Forwarding

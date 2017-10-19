@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112451: WD97: Gray Drawing Layer Lines Printed in Black on HP LaserJet"
-permalink: kb/112/Q112451/
+permalink: /kb/112/Q112451/
 ---
 
 ## Q112451: WD97: Gray Drawing Layer Lines Printed in Black on HP LaserJet

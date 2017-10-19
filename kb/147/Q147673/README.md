@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147673: HOWTO: Determine Selected Control from Array of Option Buttons"
-permalink: kb/147/Q147673/
+permalink: /kb/147/Q147673/
 ---
 
 ## Q147673: HOWTO: Determine Selected Control from Array of Option Buttons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278375: Fighter Ace II: Joystick Does Not Function Correctly"
-permalink: kb/278/Q278375/
+permalink: /kb/278/Q278375/
 ---
 
 ## Q278375: Fighter Ace II: Joystick Does Not Function Correctly

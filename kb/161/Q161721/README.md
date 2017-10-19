@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161721: Interphase EISA Adapter Doesn't Support EISA Bus Preemption"
-permalink: kb/161/Q161721/
+permalink: /kb/161/Q161721/
 ---
 
 ## Q161721: Interphase EISA Adapter Doesn't Support EISA Bus Preemption

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140575: PRB: Connectivity Error: Not a Recognized Built-in Function"
-permalink: kb/140/Q140575/
+permalink: /kb/140/Q140575/
 ---
 
 ## Q140575: PRB: Connectivity Error: Not a Recognized Built-in Function

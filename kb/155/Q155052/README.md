@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155052: IIS Server Handling of URLs Using &quot;&#92;&quot;, &quot;&lt;&quot;, and &quot;&gt;&quot;"
-permalink: kb/155/Q155052/
+permalink: /kb/155/Q155052/
 ---
 
 ## Q155052: IIS Server Handling of URLs Using &quot;&#92;&quot;, &quot;&lt;&quot;, and &quot;&gt;&quot;

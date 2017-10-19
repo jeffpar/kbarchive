@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272489: Plug-ins on MSN Companion"
-permalink: kb/272/Q272489/
+permalink: /kb/272/Q272489/
 ---
 
 ## Q272489: Plug-ins on MSN Companion

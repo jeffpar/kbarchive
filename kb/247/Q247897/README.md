@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247897: Mac Bookshelf Err Msg: The Finder Has Unexpectedly Quit..."
-permalink: kb/247/Q247897/
+permalink: /kb/247/Q247897/
 ---
 
 ## Q247897: Mac Bookshelf Err Msg: The Finder Has Unexpectedly Quit...

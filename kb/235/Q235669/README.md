@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235669: XADM: Exchange Server 5.5 Setup Fails on Windows 2000 Server"
-permalink: kb/235/Q235669/
+permalink: /kb/235/Q235669/
 ---
 
 ## Q235669: XADM: Exchange Server 5.5 Setup Fails on Windows 2000 Server

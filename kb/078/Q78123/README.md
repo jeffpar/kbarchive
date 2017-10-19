@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78123: HP PaintJet with MS-DOS GRAPHICS.COM and GRAPHICS.PRO"
-permalink: kb/078/Q78123/
+permalink: /kb/078/Q78123/
 ---
 
 ## Q78123: HP PaintJet with MS-DOS GRAPHICS.COM and GRAPHICS.PRO

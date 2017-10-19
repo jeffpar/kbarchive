@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218007: PRB: IDE May Skip Some TRACE Statements Sent in Quick Succession"
-permalink: kb/218/Q218007/
+permalink: /kb/218/Q218007/
 ---
 
 ## Q218007: PRB: IDE May Skip Some TRACE Statements Sent in Quick Succession

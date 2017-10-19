@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171790: Time Incorrect After Restarting Multiprocessor System"
-permalink: kb/171/Q171790/
+permalink: /kb/171/Q171790/
 ---
 
 ## Q171790: Time Incorrect After Restarting Multiprocessor System

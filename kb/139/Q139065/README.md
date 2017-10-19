@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139065: Services For Macintosh on Windows NT 3.51 Service Pack 2 Hangs"
-permalink: kb/139/Q139065/
+permalink: /kb/139/Q139065/
 ---
 
 ## Q139065: Services For Macintosh on Windows NT 3.51 Service Pack 2 Hangs

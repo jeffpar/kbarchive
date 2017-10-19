@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158516: Access Violation in RPCRT4.DLL When Pickling Buffered RPC Data"
-permalink: kb/158/Q158516/
+permalink: /kb/158/Q158516/
 ---
 
 ## Q158516: Access Violation in RPCRT4.DLL When Pickling Buffered RPC Data

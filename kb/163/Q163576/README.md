@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163576: XGEN: Changing the RPC Binding Order"
-permalink: kb/163/Q163576/
+permalink: /kb/163/Q163576/
 ---
 
 ## Q163576: XGEN: Changing the RPC Binding Order

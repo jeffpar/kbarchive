@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157985: INFO: Anyone Can Run SSARC.EXE if There Is No Admin Password"
-permalink: kb/157/Q157985/
+permalink: /kb/157/Q157985/
 ---
 
 ## Q157985: INFO: Anyone Can Run SSARC.EXE if There Is No Admin Password

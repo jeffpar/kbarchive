@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246592: SMS: Tracer Tool May Cause Watched Service to Hang"
-permalink: kb/246/Q246592/
+permalink: /kb/246/Q246592/
 ---
 
 ## Q246592: SMS: Tracer Tool May Cause Watched Service to Hang

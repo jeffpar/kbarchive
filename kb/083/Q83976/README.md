@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83976: Great Plains Accounting Software and Windows 3.1"
-permalink: kb/083/Q83976/
+permalink: /kb/083/Q83976/
 ---
 
 ## Q83976: Great Plains Accounting Software and Windows 3.1

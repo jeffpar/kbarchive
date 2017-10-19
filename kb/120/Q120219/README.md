@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120219: Gateway2000 w/ Mitsumi CD-ROM Hangs on Re-Boot During Install"
-permalink: kb/120/Q120219/
+permalink: /kb/120/Q120219/
 ---
 
 ## Q120219: Gateway2000 w/ Mitsumi CD-ROM Hangs on Re-Boot During Install

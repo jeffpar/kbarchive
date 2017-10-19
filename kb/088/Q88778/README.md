@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88778: SMTP: Software &amp; Hardware Required for Downstream Postoffice"
-permalink: kb/088/Q88778/
+permalink: /kb/088/Q88778/
 ---
 
 ## Q88778: SMTP: Software &amp; Hardware Required for Downstream Postoffice

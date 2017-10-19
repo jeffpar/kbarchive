@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146026: XCLN: Apply Button in Services Dialog Box Is Inactive"
-permalink: kb/146/Q146026/
+permalink: /kb/146/Q146026/
 ---
 
 ## Q146026: XCLN: Apply Button in Services Dialog Box Is Inactive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137602: PPT: Slides Not Centered When Printing from HP DeskJet Printer"
-permalink: kb/137/Q137602/
+permalink: /kb/137/Q137602/
 ---
 
 ## Q137602: PPT: Slides Not Centered When Printing from HP DeskJet Printer

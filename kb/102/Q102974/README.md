@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102974: TCP/IP Transport Entries, Part 2"
-permalink: kb/102/Q102974/
+permalink: /kb/102/Q102974/
 ---
 
 ## Q102974: TCP/IP Transport Entries, Part 2

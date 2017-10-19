@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117794: PRB: Compiler Errors when Implementing CObject-Derived Class"
-permalink: kb/117/Q117794/
+permalink: /kb/117/Q117794/
 ---
 
 ## Q117794: PRB: Compiler Errors when Implementing CObject-Derived Class

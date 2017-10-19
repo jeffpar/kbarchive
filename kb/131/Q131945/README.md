@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131945: FIX: OnFileNameOK Returns 0 if Valid or 1 if Not Valid"
-permalink: kb/131/Q131945/
+permalink: /kb/131/Q131945/
 ---
 
 ## Q131945: FIX: OnFileNameOK Returns 0 if Valid or 1 if Not Valid

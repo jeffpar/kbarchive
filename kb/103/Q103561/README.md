@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103561: Clean Start: DblSpace Maintenance Program Runs in Setup Mode"
-permalink: kb/103/Q103561/
+permalink: /kb/103/Q103561/
 ---
 
 ## Q103561: Clean Start: DblSpace Maintenance Program Runs in Setup Mode

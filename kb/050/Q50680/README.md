@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50680: Instruction: Incorrect Instruction in Taxiing Lesson"
-permalink: kb/050/Q50680/
+permalink: /kb/050/Q50680/
 ---
 
 ## Q50680: Instruction: Incorrect Instruction in Taxiing Lesson

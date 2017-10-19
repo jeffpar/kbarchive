@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245733: Encyclopedia 2000: Error Message When You Click Voice Control"
-permalink: kb/245/Q245733/
+permalink: /kb/245/Q245733/
 ---
 
 ## Q245733: Encyclopedia 2000: Error Message When You Click Voice Control

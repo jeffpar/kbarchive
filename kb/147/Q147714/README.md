@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147714: Windows Sockets 2 Service Provider Interface Limitations"
-permalink: kb/147/Q147714/
+permalink: /kb/147/Q147714/
 ---
 
 ## Q147714: Windows Sockets 2 Service Provider Interface Limitations

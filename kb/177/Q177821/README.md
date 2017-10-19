@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177821: XCON: Message Transfer Agent Stops Unexpectedly"
-permalink: kb/177/Q177821/
+permalink: /kb/177/Q177821/
 ---
 
 ## Q177821: XCON: Message Transfer Agent Stops Unexpectedly

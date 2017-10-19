@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121216: BUG: Vector Delete Calls Exported Destructor Only Once"
-permalink: kb/121/Q121216/
+permalink: /kb/121/Q121216/
 ---
 
 ## Q121216: BUG: Vector Delete Calls Exported Destructor Only Once

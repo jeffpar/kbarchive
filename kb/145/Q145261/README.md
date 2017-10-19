@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145261: WD97: Can't Print Multiple Copies from Word"
-permalink: kb/145/Q145261/
+permalink: /kb/145/Q145261/
 ---
 
 ## Q145261: WD97: Can't Print Multiple Copies from Word

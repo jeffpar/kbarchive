@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133179: BUG: Compiler Fails Syntax Check of Extra Comma in enum List"
-permalink: kb/133/Q133179/
+permalink: /kb/133/Q133179/
 ---
 
 ## Q133179: BUG: Compiler Fails Syntax Check of Extra Comma in enum List

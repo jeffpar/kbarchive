@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318109: PRB: Changes Not Saved When You Bind Solution to Another Project"
-permalink: kb/318/Q318109/
+permalink: /kb/318/Q318109/
 ---
 
 ## Q318109: PRB: Changes Not Saved When You Bind Solution to Another Project

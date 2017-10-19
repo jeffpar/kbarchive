@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262483: XADM: Error Message: The Ordinal 6883 Could Not Be Located..."
-permalink: kb/262/Q262483/
+permalink: /kb/262/Q262483/
 ---
 
 ## Q262483: XADM: Error Message: The Ordinal 6883 Could Not Be Located...

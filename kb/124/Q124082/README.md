@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124082: Remote Control Causes GP Fault on Windows 95 Client"
-permalink: kb/124/Q124082/
+permalink: /kb/124/Q124082/
 ---
 
 ## Q124082: Remote Control Causes GP Fault on Windows 95 Client

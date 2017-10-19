@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122986: Justified Words Printed with PostScript Driver Contain Spaces"
-permalink: kb/122/Q122986/
+permalink: /kb/122/Q122986/
 ---
 
 ## Q122986: Justified Words Printed with PostScript Driver Contain Spaces

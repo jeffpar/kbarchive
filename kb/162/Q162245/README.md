@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162245: FP: IDC Queries Fail When Run From IIS 2.0, MSPWS 1.0 Servers"
-permalink: kb/162/Q162245/
+permalink: /kb/162/Q162245/
 ---
 
 ## Q162245: FP: IDC Queries Fail When Run From IIS 2.0, MSPWS 1.0 Servers

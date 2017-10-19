@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111234: FIX: ISHFT and ISHL Always Assume 4-Byte Integers"
-permalink: kb/111/Q111234/
+permalink: /kb/111/Q111234/
 ---
 
 ## Q111234: FIX: ISHFT and ISHL Always Assume 4-Byte Integers

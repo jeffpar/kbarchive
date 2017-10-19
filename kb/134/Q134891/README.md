@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134891: BUG: DEFINE POPUP PROMPT Can Cause Visual FoxPro to Quit"
-permalink: kb/134/Q134891/
+permalink: /kb/134/Q134891/
 ---
 
 ## Q134891: BUG: DEFINE POPUP PROMPT Can Cause Visual FoxPro to Quit

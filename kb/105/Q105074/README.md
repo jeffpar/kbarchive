@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105074: MS-DOS 6.2 Partitioning Questions and Answers"
-permalink: kb/105/Q105074/
+permalink: /kb/105/Q105074/
 ---
 
 ## Q105074: MS-DOS 6.2 Partitioning Questions and Answers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198677: XFOR: Troubleshooting Common Exchange Notes Connector Problems"
-permalink: kb/198/Q198677/
+permalink: /kb/198/Q198677/
 ---
 
 ## Q198677: XFOR: Troubleshooting Common Exchange Notes Connector Problems

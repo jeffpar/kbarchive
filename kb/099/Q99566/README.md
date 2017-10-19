@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99566: Possible Causes for Net 3100 (Default) Errors"
-permalink: kb/099/Q99566/
+permalink: /kb/099/Q99566/
 ---
 
 ## Q99566: Possible Causes for Net 3100 (Default) Errors

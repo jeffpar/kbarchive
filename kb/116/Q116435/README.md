@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116435: PC DirSync: Null Dir-Sync Password Settings Accepted on Server"
-permalink: kb/116/Q116435/
+permalink: /kb/116/Q116435/
 ---
 
 ## Q116435: PC DirSync: Null Dir-Sync Password Settings Accepted on Server

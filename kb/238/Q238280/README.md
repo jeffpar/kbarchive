@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238280: XCLN: Out of Office Assistant is Missing from Tools Menu"
-permalink: kb/238/Q238280/
+permalink: /kb/238/Q238280/
 ---
 
 ## Q238280: XCLN: Out of Office Assistant is Missing from Tools Menu

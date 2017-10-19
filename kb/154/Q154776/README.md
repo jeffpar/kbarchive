@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154776: XCON: MTA Crashes in Otpmmain Due to Null Pointer"
-permalink: kb/154/Q154776/
+permalink: /kb/154/Q154776/
 ---
 
 ## Q154776: XCON: MTA Crashes in Otpmmain Due to Null Pointer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231756: The Convert.exe Tool Uses 512-Byte Clusters"
-permalink: kb/231/Q231756/
+permalink: /kb/231/Q231756/
 ---
 
 ## Q231756: The Convert.exe Tool Uses 512-Byte Clusters

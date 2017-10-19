@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130109: Restart Causes Windows 95 to Hang with Micron Motherboard"
-permalink: kb/130/Q130109/
+permalink: /kb/130/Q130109/
 ---
 
 ## Q130109: Restart Causes Windows 95 to Hang with Micron Motherboard

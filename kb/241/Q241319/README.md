@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241319: INDEX: Certain files not showing up in results"
-permalink: kb/241/Q241319/
+permalink: /kb/241/Q241319/
 ---
 
 ## Q241319: INDEX: Certain files not showing up in results

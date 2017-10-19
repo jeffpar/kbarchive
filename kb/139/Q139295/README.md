@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139295: FIX: Local File Is Not Saved with Save All"
-permalink: kb/139/Q139295/
+permalink: /kb/139/Q139295/
 ---
 
 ## Q139295: FIX: Local File Is Not Saved with Save All

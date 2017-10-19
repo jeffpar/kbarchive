@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272659: XFOR: Could Not Load Some Objects Using Application Connector"
-permalink: kb/272/Q272659/
+permalink: /kb/272/Q272659/
 ---
 
 ## Q272659: XFOR: Could Not Load Some Objects Using Application Connector

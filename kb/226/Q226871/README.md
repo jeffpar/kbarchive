@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226871: SMS: SWMServer Clock Displays Counter with a Negative Number"
-permalink: kb/226/Q226871/
+permalink: /kb/226/Q226871/
 ---
 
 ## Q226871: SMS: SWMServer Clock Displays Counter with a Negative Number

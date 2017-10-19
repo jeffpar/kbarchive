@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137725: Resource Kit Tools Included on the Windows 95 CD-ROM"
-permalink: kb/137/Q137725/
+permalink: /kb/137/Q137725/
 ---
 
 ## Q137725: Resource Kit Tools Included on the Windows 95 CD-ROM

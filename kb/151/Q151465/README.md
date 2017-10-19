@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151465: MSB Ocean: How to Determine Which Version You Have"
-permalink: kb/151/Q151465/
+permalink: /kb/151/Q151465/
 ---
 
 ## Q151465: MSB Ocean: How to Determine Which Version You Have

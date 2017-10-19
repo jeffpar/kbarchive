@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139515: Defrag Cluster Size Changes When 50 Percent Finished"
-permalink: kb/139/Q139515/
+permalink: /kb/139/Q139515/
 ---
 
 ## Q139515: Defrag Cluster Size Changes When 50 Percent Finished

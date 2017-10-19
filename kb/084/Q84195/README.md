@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84195: Hardware Options When Installing Windows 3.1"
-permalink: kb/084/Q84195/
+permalink: /kb/084/Q84195/
 ---
 
 ## Q84195: Hardware Options When Installing Windows 3.1

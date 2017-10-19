@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87856: WD97: Troubleshooting Damaged Documents in Word for Windows"
-permalink: kb/087/Q87856/
+permalink: /kb/087/Q87856/
 ---
 
 ## Q87856: WD97: Troubleshooting Damaged Documents in Word for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92829: DDEML Samples Using Microsoft Foundation Classes"
-permalink: kb/092/Q92829/
+permalink: /kb/092/Q92829/
 ---
 
 ## Q92829: DDEML Samples Using Microsoft Foundation Classes

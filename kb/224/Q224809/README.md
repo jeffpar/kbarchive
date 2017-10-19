@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224809: Streets and Trips 2000 Err Msg: Unable to Open Response File..."
-permalink: kb/224/Q224809/
+permalink: /kb/224/Q224809/
 ---
 
 ## Q224809: Streets and Trips 2000 Err Msg: Unable to Open Response File...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181654: FP: Hyperlink Font Color Settings not Visible in Browser"
-permalink: kb/181/Q181654/
+permalink: /kb/181/Q181654/
 ---
 
 ## Q181654: FP: Hyperlink Font Color Settings not Visible in Browser

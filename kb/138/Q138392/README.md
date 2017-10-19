@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138392: WordPad Print Preview Inaccurate Using Generic Text Printer"
-permalink: kb/138/Q138392/
+permalink: /kb/138/Q138392/
 ---
 
 ## Q138392: WordPad Print Preview Inaccurate Using Generic Text Printer

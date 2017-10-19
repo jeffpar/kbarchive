@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175578: XCON: Autoforwarded Messages Not Handled Correctly"
-permalink: kb/175/Q175578/
+permalink: /kb/175/Q175578/
 ---
 
 ## Q175578: XCON: Autoforwarded Messages Not Handled Correctly

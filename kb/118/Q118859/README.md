@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118859: MHS: Correct Addressing format to DaVinci Email via MHS"
-permalink: kb/118/Q118859/
+permalink: /kb/118/Q118859/
 ---
 
 ## Q118859: MHS: Correct Addressing format to DaVinci Email via MHS

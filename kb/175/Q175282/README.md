@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175282: FIX: Error Message Appears When Answer File Contains Blank Entri"
-permalink: kb/175/Q175282/
+permalink: /kb/175/Q175282/
 ---
 
 ## Q175282: FIX: Error Message Appears When Answer File Contains Blank Entri

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205530: How to Switch Among Running Programs"
-permalink: kb/205/Q205530/
+permalink: /kb/205/Q205530/
 ---
 
 ## Q205530: How to Switch Among Running Programs

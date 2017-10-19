@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62748: PPT: Copying Slides Between Presentations"
-permalink: kb/062/Q62748/
+permalink: /kb/062/Q62748/
 ---
 
 ## Q62748: PPT: Copying Slides Between Presentations

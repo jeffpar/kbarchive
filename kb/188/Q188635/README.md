@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188635: XADM: Changing the State of Circular Logging Fails on a Cluster"
-permalink: kb/188/Q188635/
+permalink: /kb/188/Q188635/
 ---
 
 ## Q188635: XADM: Changing the State of Circular Logging Fails on a Cluster

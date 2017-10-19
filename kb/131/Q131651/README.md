@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131651: MIDI-in Port Does Not Work on SB Pro Card with WSS 2.0 Drivers"
-permalink: kb/131/Q131651/
+permalink: /kb/131/Q131651/
 ---
 
 ## Q131651: MIDI-in Port Does Not Work on SB Pro Card with WSS 2.0 Drivers

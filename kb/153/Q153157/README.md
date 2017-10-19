@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153157: WNetGetUser Returns ERROR_NOT_CONNECTED"
-permalink: kb/153/Q153157/
+permalink: /kb/153/Q153157/
 ---
 
 ## Q153157: WNetGetUser Returns ERROR_NOT_CONNECTED

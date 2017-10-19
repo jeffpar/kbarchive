@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32882: DOCERR: Comment Strings Should Not Overlap onto the Next Line"
-permalink: kb/032/Q32882/
+permalink: /kb/032/Q32882/
 ---
 
 ## Q32882: DOCERR: Comment Strings Should Not Overlap onto the Next Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112737: NET START SERVER Err Msg: Cannot Share (Error 2119)"
-permalink: kb/112/Q112737/
+permalink: /kb/112/Q112737/
 ---
 
 ## Q112737: NET START SERVER Err Msg: Cannot Share (Error 2119)

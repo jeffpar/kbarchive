@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274403: XADM: Internet Mail Service Stops Processing Inbound Conversion"
-permalink: kb/274/Q274403/
+permalink: /kb/274/Q274403/
 ---
 
 ## Q274403: XADM: Internet Mail Service Stops Processing Inbound Conversion

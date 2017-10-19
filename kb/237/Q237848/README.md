@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237848: WD97: File Not Registered in ROT After Being Opened in ODMA"
-permalink: kb/237/Q237848/
+permalink: /kb/237/Q237848/
 ---
 
 ## Q237848: WD97: File Not Registered in ROT After Being Opened in ODMA

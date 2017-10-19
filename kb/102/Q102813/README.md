@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102813: Backup Err Msg: Incorrect DOS Version"
-permalink: kb/102/Q102813/
+permalink: /kb/102/Q102813/
 ---
 
 ## Q102813: Backup Err Msg: Incorrect DOS Version

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103788: INFO: Creating a Modeless Dialog Box with MFC Libraries"
-permalink: kb/103/Q103788/
+permalink: /kb/103/Q103788/
 ---
 
 ## Q103788: INFO: Creating a Modeless Dialog Box with MFC Libraries

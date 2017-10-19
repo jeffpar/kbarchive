@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134642: DOC: RowSourceType Property Incomplete in Language Ref"
-permalink: kb/134/Q134642/
+permalink: /kb/134/Q134642/
 ---
 
 ## Q134642: DOC: RowSourceType Property Incomplete in Language Ref

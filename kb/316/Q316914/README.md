@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316914: BUG: Menu Generated With SKIP FOR that Contains .F. Is Missing S"
-permalink: kb/316/Q316914/
+permalink: /kb/316/Q316914/
 ---
 
 ## Q316914: BUG: Menu Generated With SKIP FOR that Contains .F. Is Missing S

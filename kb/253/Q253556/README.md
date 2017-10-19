@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253556: FIX: Error Message: MQ_ERROR_OBJECT_SERVER_NOT_AVAILABLE"
-permalink: kb/253/Q253556/
+permalink: /kb/253/Q253556/
 ---
 
 ## Q253556: FIX: Error Message: MQ_ERROR_OBJECT_SERVER_NOT_AVAILABLE

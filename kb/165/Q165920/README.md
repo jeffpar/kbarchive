@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165920: PRB: Correct Usage of &quot;&amp;&quot; and &quot;AND&quot; in Visual Basic"
-permalink: kb/165/Q165920/
+permalink: /kb/165/Q165920/
 ---
 
 ## Q165920: PRB: Correct Usage of &quot;&amp;&quot; and &quot;AND&quot; in Visual Basic

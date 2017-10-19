@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172311: Mouse Problems After Switching to Left-Handed Mouse Setup"
-permalink: kb/172/Q172311/
+permalink: /kb/172/Q172311/
 ---
 
 ## Q172311: Mouse Problems After Switching to Left-Handed Mouse Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171814: FIX: System Menu Appears When MouseDown Event Invokes a Drag"
-permalink: kb/171/Q171814/
+permalink: /kb/171/Q171814/
 ---
 
 ## Q171814: FIX: System Menu Appears When MouseDown Event Invokes a Drag

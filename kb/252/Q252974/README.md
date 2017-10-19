@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252974: Error Message: System Process - Lost Delayed-Write Data"
-permalink: kb/252/Q252974/
+permalink: /kb/252/Q252974/
 ---
 
 ## Q252974: Error Message: System Process - Lost Delayed-Write Data

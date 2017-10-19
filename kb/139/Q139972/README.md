@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139972: FIX: File Open Common Dialog in Win95 Returns Invalid Filename"
-permalink: kb/139/Q139972/
+permalink: /kb/139/Q139972/
 ---
 
 ## Q139972: FIX: File Open Common Dialog in Win95 Returns Invalid Filename

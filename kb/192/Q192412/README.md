@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192412: Changing Service Account for HSI Service Loses Cryptographic Key"
-permalink: kb/192/Q192412/
+permalink: /kb/192/Q192412/
 ---
 
 ## Q192412: Changing Service Account for HSI Service Loses Cryptographic Key

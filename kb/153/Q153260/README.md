@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153260: Sender Disconnect Results in Sharing Violations"
-permalink: kb/153/Q153260/
+permalink: /kb/153/Q153260/
 ---
 
 ## Q153260: Sender Disconnect Results in Sharing Violations

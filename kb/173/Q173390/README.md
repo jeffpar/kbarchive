@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173390: DOC: Status Property of RdoResultset/RdoColumn is Read-Only"
-permalink: kb/173/Q173390/
+permalink: /kb/173/Q173390/
 ---
 
 ## Q173390: DOC: Status Property of RdoResultset/RdoColumn is Read-Only

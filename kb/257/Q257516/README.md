@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257516: FIX: Button Removed from Toolbar Cannot Be Added Back"
-permalink: kb/257/Q257516/
+permalink: /kb/257/Q257516/
 ---
 
 ## Q257516: FIX: Button Removed from Toolbar Cannot Be Added Back

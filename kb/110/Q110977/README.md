@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q110977: PROFS: 3.4 Distribution Manager Disk [3.5, 1.4 MB]"
-permalink: kb/110/Q110977/
+title: "Q110977: PROFS: 3.4 Distribution Manager Disk &#91;3.5, 1.4 MB&#93;"
+permalink: /kb/110/Q110977/
 ---
 
-## Q110977: PROFS: 3.4 Distribution Manager Disk [3.5, 1.4 MB]
+## Q110977: PROFS: 3.4 Distribution Manager Disk &#91;3.5, 1.4 MB&#93;
 
 	Article: Q110977
 	Product(s): Microsoft Mail For PC Networks

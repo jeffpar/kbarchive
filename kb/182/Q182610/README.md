@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182610: WD97: Err Msg: &quot;Runtime Error&quot; When Creating Form Letter"
-permalink: kb/182/Q182610/
+permalink: /kb/182/Q182610/
 ---
 
 ## Q182610: WD97: Err Msg: &quot;Runtime Error&quot; When Creating Form Letter

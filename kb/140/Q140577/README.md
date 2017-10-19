@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140577: PRB: Visual FoxPro Laptop Install Doesn't Provide Uninstall"
-permalink: kb/140/Q140577/
+permalink: /kb/140/Q140577/
 ---
 
 ## Q140577: PRB: Visual FoxPro Laptop Install Doesn't Provide Uninstall

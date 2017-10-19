@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148296: PPT7: Handout Page Numbers Always Start at One"
-permalink: kb/148/Q148296/
+permalink: /kb/148/Q148296/
 ---
 
 ## Q148296: PPT7: Handout Page Numbers Always Start at One

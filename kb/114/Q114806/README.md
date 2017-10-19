@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114806: How to Determine the Path to the Macintosh Desktop"
-permalink: kb/114/Q114806/
+permalink: /kb/114/Q114806/
 ---
 
 ## Q114806: How to Determine the Path to the Macintosh Desktop

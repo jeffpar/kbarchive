@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120768: Disks Created by MS-DOS 6.22 Upgrade and Step-Up Setup /F"
-permalink: kb/120/Q120768/
+permalink: /kb/120/Q120768/
 ---
 
 ## Q120768: Disks Created by MS-DOS 6.22 Upgrade and Step-Up Setup /F

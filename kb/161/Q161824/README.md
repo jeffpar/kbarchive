@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161824: WD97: Can't Make First Letter of Sentence a Capital Letter"
-permalink: kb/161/Q161824/
+permalink: /kb/161/Q161824/
 ---
 
 ## Q161824: WD97: Can't Make First Letter of Sentence a Capital Letter

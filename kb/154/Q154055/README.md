@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154055: World Atlas 96: One of the Files Needed to Run Is Not Usable"
-permalink: kb/154/Q154055/
+permalink: /kb/154/Q154055/
 ---
 
 ## Q154055: World Atlas 96: One of the Files Needed to Run Is Not Usable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134390: Windows NT Backup: Cannot Eject Write Protected Tape"
-permalink: kb/134/Q134390/
+permalink: /kb/134/Q134390/
 ---
 
 ## Q134390: Windows NT Backup: Cannot Eject Write Protected Tape

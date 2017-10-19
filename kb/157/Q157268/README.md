@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157268: Msbatch.inf Parameters: Install MS Exchange; Don't Run Wizard"
-permalink: kb/157/Q157268/
+permalink: /kb/157/Q157268/
 ---
 
 ## Q157268: Msbatch.inf Parameters: Install MS Exchange; Don't Run Wizard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67188: ASD: Mach Speed on 747 Panel"
-permalink: kb/067/Q67188/
+permalink: /kb/067/Q67188/
 ---
 
 ## Q67188: ASD: Mach Speed on 747 Panel

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270637: &quot;Stop 1E&quot; When Using the Japanese Version of IBM Netfinity"
-permalink: kb/270/Q270637/
+permalink: /kb/270/Q270637/
 ---
 
 ## Q270637: &quot;Stop 1E&quot; When Using the Japanese Version of IBM Netfinity

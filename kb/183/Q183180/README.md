@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183180: DHCP Client XIDs Differ in DISCOVER and REQUEST Packets"
-permalink: kb/183/Q183180/
+permalink: /kb/183/Q183180/
 ---
 
 ## Q183180: DHCP Client XIDs Differ in DISCOVER and REQUEST Packets

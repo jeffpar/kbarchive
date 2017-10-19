@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74625: MS-DOS Upgrade: Unable to Start Premier 200, 210"
-permalink: kb/074/Q74625/
+permalink: /kb/074/Q74625/
 ---
 
 ## Q74625: MS-DOS Upgrade: Unable to Start Premier 200, 210

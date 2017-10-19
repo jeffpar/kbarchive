@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148733: Qfecheck.hlp Not Found After Installing MS Exchange Update"
-permalink: kb/148/Q148733/
+permalink: /kb/148/Q148733/
 ---
 
 ## Q148733: Qfecheck.hlp Not Found After Installing MS Exchange Update

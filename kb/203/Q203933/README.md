@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203933: SMS: Installer Does Not Restart Automatically After Reboot"
-permalink: kb/203/Q203933/
+permalink: /kb/203/Q203933/
 ---
 
 ## Q203933: SMS: Installer Does Not Restart Automatically After Reboot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83521: Inconsistent File Manager Tiling Behavior"
-permalink: kb/083/Q83521/
+permalink: /kb/083/Q83521/
 ---
 
 ## Q83521: Inconsistent File Manager Tiling Behavior

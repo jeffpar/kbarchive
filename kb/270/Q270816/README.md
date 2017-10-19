@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270816: Encarta Language Learning French: Scoring Errors"
-permalink: kb/270/Q270816/
+permalink: /kb/270/Q270816/
 ---
 
 ## Q270816: Encarta Language Learning French: Scoring Errors

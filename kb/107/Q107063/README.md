@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107063: PC Win: Err Msg: An Error Occurred While Moving..."
-permalink: kb/107/Q107063/
+permalink: /kb/107/Q107063/
 ---
 
 ## Q107063: PC Win: Err Msg: An Error Occurred While Moving...

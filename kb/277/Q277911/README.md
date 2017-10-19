@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277911: XADM: Lost Mail During MoveUser Between Two 5.5 Servers"
-permalink: kb/277/Q277911/
+permalink: /kb/277/Q277911/
 ---
 
 ## Q277911: XADM: Lost Mail During MoveUser Between Two 5.5 Servers

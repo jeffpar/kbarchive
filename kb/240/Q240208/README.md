@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240208: XFOR: Applying Exchange Service Packs Does Not Update MSMC Files"
-permalink: kb/240/Q240208/
+permalink: /kb/240/Q240208/
 ---
 
 ## Q240208: XFOR: Applying Exchange Service Packs Does Not Update MSMC Files

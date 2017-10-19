@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149669: BUG: &quot;Required File Missing: MSJINT32.DL_&quot; Setup Wizard Error"
-permalink: kb/149/Q149669/
+permalink: /kb/149/Q149669/
 ---
 
 ## Q149669: BUG: &quot;Required File Missing: MSJINT32.DL_&quot; Setup Wizard Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160372: Intermittent File Corruption when Compiling on NTFS Partition"
-permalink: kb/160/Q160372/
+permalink: /kb/160/Q160372/
 ---
 
 ## Q160372: Intermittent File Corruption when Compiling on NTFS Partition

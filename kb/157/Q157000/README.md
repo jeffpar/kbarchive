@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157000: XFOR: Korean UUENCODED Attachments Corrupted"
-permalink: kb/157/Q157000/
+permalink: /kb/157/Q157000/
 ---
 
 ## Q157000: XFOR: Korean UUENCODED Attachments Corrupted

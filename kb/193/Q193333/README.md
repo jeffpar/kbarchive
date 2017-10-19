@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193333: NetMon Fails on Multiprocessor Windows NT Server Under Stress"
-permalink: kb/193/Q193333/
+permalink: /kb/193/Q193333/
 ---
 
 ## Q193333: NetMon Fails on Multiprocessor Windows NT Server Under Stress

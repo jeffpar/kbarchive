@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191881: PRB: DIRECTORY() Fails to See System or Hidden Folder"
-permalink: kb/191/Q191881/
+permalink: /kb/191/Q191881/
 ---
 
 ## Q191881: PRB: DIRECTORY() Fails to See System or Hidden Folder

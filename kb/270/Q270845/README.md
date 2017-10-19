@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270845: Microsoft Reader: How to Troubleshoot Installation Problems"
-permalink: kb/270/Q270845/
+permalink: /kb/270/Q270845/
 ---
 
 ## Q270845: Microsoft Reader: How to Troubleshoot Installation Problems

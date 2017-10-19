@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200027: HOWTO: Determine If IE Is Offline from an ActiveX Document"
-permalink: kb/200/Q200027/
+permalink: /kb/200/Q200027/
 ---
 
 ## Q200027: HOWTO: Determine If IE Is Offline from an ActiveX Document

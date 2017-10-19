@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163867: XCLN: Responses to Meeting Requests not Saved in Sent Items"
-permalink: kb/163/Q163867/
+permalink: /kb/163/Q163867/
 ---
 
 ## Q163867: XCLN: Responses to Meeting Requests not Saved in Sent Items

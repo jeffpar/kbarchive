@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303113: Asheron's Call: No Sound in Game, Sound in Windows Works"
-permalink: kb/303/Q303113/
+permalink: /kb/303/Q303113/
 ---
 
 ## Q303113: Asheron's Call: No Sound in Game, Sound in Windows Works

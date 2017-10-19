@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123818: Windows NT 3.5 Does Not Support TI MicroLaser Pro 600 Printer"
-permalink: kb/123/Q123818/
+permalink: /kb/123/Q123818/
 ---
 
 ## Q123818: Windows NT 3.5 Does Not Support TI MicroLaser Pro 600 Printer

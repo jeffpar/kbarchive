@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250507: XIMS: NDRs Generated with &lt;&gt; (Blank or Null) Reverse"
-permalink: kb/250/Q250507/
+permalink: /kb/250/Q250507/
 ---
 
 ## Q250507: XIMS: NDRs Generated with &lt;&gt; (Blank or Null) Reverse

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161422: FP: How to Change the Color of a Marquee"
-permalink: kb/161/Q161422/
+permalink: /kb/161/Q161422/
 ---
 
 ## Q161422: FP: How to Change the Color of a Marquee

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138116: NTBACKUP Cannot Catalog and Restore Compressed Data from Tape"
-permalink: kb/138/Q138116/
+permalink: /kb/138/Q138116/
 ---
 
 ## Q138116: NTBACKUP Cannot Catalog and Restore Compressed Data from Tape

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98562: Multimedia Err Msg: Unexpected Error [MCI602]."
-permalink: kb/098/Q98562/
+title: "Q98562: Multimedia Err Msg: Unexpected Error &#91;MCI602&#93;."
+permalink: /kb/098/Q98562/
 ---
 
-## Q98562: Multimedia Err Msg: Unexpected Error [MCI602].
+## Q98562: Multimedia Err Msg: Unexpected Error &#91;MCI602&#93;.
 
 	Article: Q98562
 	Product(s): Microsoft Home Multimedia Titles

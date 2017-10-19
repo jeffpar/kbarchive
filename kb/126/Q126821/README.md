@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126821: MSB Human: Hangs at Classroom or Driver's License"
-permalink: kb/126/Q126821/
+permalink: /kb/126/Q126821/
 ---
 
 ## Q126821: MSB Human: Hangs at Classroom or Driver's License

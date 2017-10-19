@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322316: XADM: Event ID 181 Recurs in the Application Event Log"
-permalink: kb/322/Q322316/
+permalink: /kb/322/Q322316/
 ---
 
 ## Q322316: XADM: Event ID 181 Recurs in the Application Event Log

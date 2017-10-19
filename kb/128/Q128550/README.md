@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128550: Memory Leak: MS-DOS-Based Apps Starting Non-MS-DOS-Based Apps"
-permalink: kb/128/Q128550/
+permalink: /kb/128/Q128550/
 ---
 
 ## Q128550: Memory Leak: MS-DOS-Based Apps Starting Non-MS-DOS-Based Apps

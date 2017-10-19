@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183546: BUG: Cedar Bank VBClientExplicitSecurity Compile Errors; Alpha"
-permalink: kb/183/Q183546/
+permalink: /kb/183/Q183546/
 ---
 
 ## Q183546: BUG: Cedar Bank VBClientExplicitSecurity Compile Errors; Alpha

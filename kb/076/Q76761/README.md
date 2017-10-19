@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76761: WUGNET.TXT: Putting Windows on a Network"
-permalink: kb/076/Q76761/
+permalink: /kb/076/Q76761/
 ---
 
 ## Q76761: WUGNET.TXT: Putting Windows on a Network

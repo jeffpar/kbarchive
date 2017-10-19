@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168718: XCLN: Win95 NW Clients Disconnected from Mail on Novell Server"
-permalink: kb/168/Q168718/
+permalink: /kb/168/Q168718/
 ---
 
 ## Q168718: XCLN: Win95 NW Clients Disconnected from Mail on Novell Server

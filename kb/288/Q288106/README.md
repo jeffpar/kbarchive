@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288106: HOWTO:Use UDL File for Hierarchical Commands in Data Environment"
-permalink: kb/288/Q288106/
+permalink: /kb/288/Q288106/
 ---
 
 ## Q288106: HOWTO:Use UDL File for Hierarchical Commands in Data Environment

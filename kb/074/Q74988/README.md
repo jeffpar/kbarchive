@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74988: Minimized Icons Revert to Program Manager Format in Windows"
-permalink: kb/074/Q74988/
+permalink: /kb/074/Q74988/
 ---
 
 ## Q74988: Minimized Icons Revert to Program Manager Format in Windows

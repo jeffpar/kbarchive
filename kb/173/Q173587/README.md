@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173587: How to Connect to the Internet Using MSN"
-permalink: kb/173/Q173587/
+permalink: /kb/173/Q173587/
 ---
 
 ## Q173587: How to Connect to the Internet Using MSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111336: BUG: R2_XORPEN Binary ROP Code Ignored for Wide Pens"
-permalink: kb/111/Q111336/
+permalink: /kb/111/Q111336/
 ---
 
 ## Q111336: BUG: R2_XORPEN Binary ROP Code Ignored for Wide Pens

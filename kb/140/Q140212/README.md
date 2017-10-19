@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140212: ADT95: Microsoft ADT Licensing Questions and Answers"
-permalink: kb/140/Q140212/
+permalink: /kb/140/Q140212/
 ---
 
 ## Q140212: ADT95: Microsoft ADT Licensing Questions and Answers

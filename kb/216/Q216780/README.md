@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216780: DLC Protocol Stops Transmitting Packets"
-permalink: kb/216/Q216780/
+permalink: /kb/216/Q216780/
 ---
 
 ## Q216780: DLC Protocol Stops Transmitting Packets

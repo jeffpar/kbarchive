@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254735: SMS: How to Clean Up Duplicate Computer IDs"
-permalink: kb/254/Q254735/
+permalink: /kb/254/Q254735/
 ---
 
 ## Q254735: SMS: How to Clean Up Duplicate Computer IDs

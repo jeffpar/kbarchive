@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113124: Encarta: GP Fault When Starting"
-permalink: kb/113/Q113124/
+permalink: /kb/113/Q113124/
 ---
 
 ## Q113124: Encarta: GP Fault When Starting

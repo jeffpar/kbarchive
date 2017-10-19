@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116419: FIX: Conditional Directives Ignored by Dependency Scanning"
-permalink: kb/116/Q116419/
+permalink: /kb/116/Q116419/
 ---
 
 ## Q116419: FIX: Conditional Directives Ignored by Dependency Scanning

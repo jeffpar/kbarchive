@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170969: WD97: Macro to Cascade Open Document Windows"
-permalink: kb/170/Q170969/
+permalink: /kb/170/Q170969/
 ---
 
 ## Q170969: WD97: Macro to Cascade Open Document Windows

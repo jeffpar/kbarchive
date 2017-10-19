@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157123: Communicating with SNA Hosts May Cause STOP 0x0A in DLC.SYS"
-permalink: kb/157/Q157123/
+permalink: /kb/157/Q157123/
 ---
 
 ## Q157123: Communicating with SNA Hosts May Cause STOP 0x0A in DLC.SYS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123376: PC DB: 2.1 Admin Address List Limited to 32,768 Addresses"
-permalink: kb/123/Q123376/
+permalink: /kb/123/Q123376/
 ---
 
 ## Q123376: PC DB: 2.1 Admin Address List Limited to 32,768 Addresses

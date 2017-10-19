@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96784: Ami Pro 3.0: Text Not Visible in Tables or Frames"
-permalink: kb/096/Q96784/
+permalink: /kb/096/Q96784/
 ---
 
 ## Q96784: Ami Pro 3.0: Text Not Visible in Tables or Frames

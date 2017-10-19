@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108920: Stopping System Error Messages From Appearing on Desktop"
-permalink: kb/108/Q108920/
+permalink: /kb/108/Q108920/
 ---
 
 ## Q108920: Stopping System Error Messages From Appearing on Desktop

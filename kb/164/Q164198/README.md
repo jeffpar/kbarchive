@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164198: Sound Recorder Saves Renamed File with Previous Name"
-permalink: kb/164/Q164198/
+permalink: /kb/164/Q164198/
 ---
 
 ## Q164198: Sound Recorder Saves Renamed File with Previous Name

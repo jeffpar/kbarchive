@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174880: XADM: EULA in Exchange Setup Shows English and French Text"
-permalink: kb/174/Q174880/
+permalink: /kb/174/Q174880/
 ---
 
 ## Q174880: XADM: EULA in Exchange Setup Shows English and French Text

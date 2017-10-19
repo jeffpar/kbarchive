@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263102: XCLN: Password Dialog Box for Domain Credentials Hangs"
-permalink: kb/263/Q263102/
+permalink: /kb/263/Q263102/
 ---
 
 ## Q263102: XCLN: Password Dialog Box for Domain Credentials Hangs

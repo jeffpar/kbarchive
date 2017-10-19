@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183812: Problems When a Connection over an ISDN Bridge Is Not Closed"
-permalink: kb/183/Q183812/
+permalink: /kb/183/Q183812/
 ---
 
 ## Q183812: Problems When a Connection over an ISDN Bridge Is Not Closed

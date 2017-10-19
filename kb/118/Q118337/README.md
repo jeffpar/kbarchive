@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118337: FIX: &quot;Integer divide by 0&quot; Error Handling"
-permalink: kb/118/Q118337/
+permalink: /kb/118/Q118337/
 ---
 
 ## Q118337: FIX: &quot;Integer divide by 0&quot; Error Handling

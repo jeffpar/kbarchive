@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314818: FIX: Error Assigning MSSOAP Connector.OutPutStream to Variable"
-permalink: kb/314/Q314818/
+permalink: /kb/314/Q314818/
 ---
 
 ## Q314818: FIX: Error Assigning MSSOAP Connector.OutPutStream to Variable

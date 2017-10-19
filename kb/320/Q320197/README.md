@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320197: Flight Simulator 2002: How to Provide Feedback About the Product"
-permalink: kb/320/Q320197/
+permalink: /kb/320/Q320197/
 ---
 
 ## Q320197: Flight Simulator 2002: How to Provide Feedback About the Product

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240368: Zone Err Msg: Are You Sure You Saw The Spade?"
-permalink: kb/240/Q240368/
+permalink: /kb/240/Q240368/
 ---
 
 ## Q240368: Zone Err Msg: Are You Sure You Saw The Spade?

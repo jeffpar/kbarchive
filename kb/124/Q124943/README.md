@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124943: Musical Instruments: Pictures Do Not Print in Color"
-permalink: kb/124/Q124943/
+permalink: /kb/124/Q124943/
 ---
 
 ## Q124943: Musical Instruments: Pictures Do Not Print in Color

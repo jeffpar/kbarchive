@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317603: Starting SNA Server Service May Cause Event 630 to Be Logged"
-permalink: kb/317/Q317603/
+permalink: /kb/317/Q317603/
 ---
 
 ## Q317603: Starting SNA Server Service May Cause Event 630 to Be Logged

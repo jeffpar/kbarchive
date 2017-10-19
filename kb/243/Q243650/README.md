@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243650: BUG: MSDN Library Favorites Are Lost"
-permalink: kb/243/Q243650/
+permalink: /kb/243/Q243650/
 ---
 
 ## Q243650: BUG: MSDN Library Favorites Are Lost

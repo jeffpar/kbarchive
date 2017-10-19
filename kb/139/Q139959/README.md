@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139959: BUG: Valid Event Runs Twice When SetFocus Issued in LostFocus"
-permalink: kb/139/Q139959/
+permalink: /kb/139/Q139959/
 ---
 
 ## Q139959: BUG: Valid Event Runs Twice When SetFocus Issued in LostFocus

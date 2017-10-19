@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179057: XFOR: Exchange-Notes Dirsync Fails with Truncated Person Doc"
-permalink: kb/179/Q179057/
+permalink: /kb/179/Q179057/
 ---
 
 ## Q179057: XFOR: Exchange-Notes Dirsync Fails with Truncated Person Doc

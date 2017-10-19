@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86605: PC WSPlus: Clicking Schedule+ Icon Gives Beep"
-permalink: kb/086/Q86605/
+permalink: /kb/086/Q86605/
 ---
 
 ## Q86605: PC WSPlus: Clicking Schedule+ Icon Gives Beep

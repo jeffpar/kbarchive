@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158942: Windows NT Hangs with BIOS Power Management Enabled"
-permalink: kb/158/Q158942/
+permalink: /kb/158/Q158942/
 ---
 
 ## Q158942: Windows NT Hangs with BIOS Power Management Enabled

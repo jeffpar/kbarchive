@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247782: XCON: Mail Slow Across Connectors, with Event IDs 3120 and 9316"
-permalink: kb/247/Q247782/
+permalink: /kb/247/Q247782/
 ---
 
 ## Q247782: XCON: Mail Slow Across Connectors, with Event IDs 3120 and 9316

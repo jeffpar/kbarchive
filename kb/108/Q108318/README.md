@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108318: AppleTalk Rights Inheritence in Subfolders"
-permalink: kb/108/Q108318/
+permalink: /kb/108/Q108318/
 ---
 
 ## Q108318: AppleTalk Rights Inheritence in Subfolders

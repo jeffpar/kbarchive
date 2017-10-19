@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121413: PRB: &quot;Printer Not Ready&quot; When Choosing Font from Object Menu"
-permalink: kb/121/Q121413/
+permalink: /kb/121/Q121413/
 ---
 
 ## Q121413: PRB: &quot;Printer Not Ready&quot; When Choosing Font from Object Menu

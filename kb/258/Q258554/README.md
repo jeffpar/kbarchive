@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258554: Baseball 2001: Setup Stops Responding"
-permalink: kb/258/Q258554/
+permalink: /kb/258/Q258554/
 ---
 
 ## Q258554: Baseball 2001: Setup Stops Responding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108805: Video for Windows 1.1 Utilities Disk Directory"
-permalink: kb/108/Q108805/
+permalink: /kb/108/Q108805/
 ---
 
 ## Q108805: Video for Windows 1.1 Utilities Disk Directory

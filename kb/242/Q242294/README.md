@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242294: Security Descriptor Allows Privilege Elevation on Remote PCs"
-permalink: kb/242/Q242294/
+permalink: /kb/242/Q242294/
 ---
 
 ## Q242294: Security Descriptor Allows Privilege Elevation on Remote PCs

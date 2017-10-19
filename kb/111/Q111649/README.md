@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111649: BUG: Left Part of Character Is Clipped with ExtTextOut/TextOut"
-permalink: kb/111/Q111649/
+permalink: /kb/111/Q111649/
 ---
 
 ## Q111649: BUG: Left Part of Character Is Clipped with ExtTextOut/TextOut

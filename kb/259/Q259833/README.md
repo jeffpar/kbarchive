@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259833: StarLancer: How to Install on a Microsoft Windows 2000-Based Com"
-permalink: kb/259/Q259833/
+permalink: /kb/259/Q259833/
 ---
 
 ## Q259833: StarLancer: How to Install on a Microsoft Windows 2000-Based Com

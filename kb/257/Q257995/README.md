@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257995: XCON: Dynamic RAS Connector Server Does Not Work with 9315, 9405"
-permalink: kb/257/Q257995/
+permalink: /kb/257/Q257995/
 ---
 
 ## Q257995: XCON: Dynamic RAS Connector Server Does Not Work with 9315, 9405

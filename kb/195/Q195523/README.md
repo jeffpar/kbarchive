@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195523: XFOR: Notes Shortname Field Might Not Be Synchronized"
-permalink: kb/195/Q195523/
+permalink: /kb/195/Q195523/
 ---
 
 ## Q195523: XFOR: Notes Shortname Field Might Not Be Synchronized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167093: Err Msg: The WINS Client TCP/IP Service Depends on the TCP/IP..."
-permalink: kb/167/Q167093/
+permalink: /kb/167/Q167093/
 ---
 
 ## Q167093: Err Msg: The WINS Client TCP/IP Service Depends on the TCP/IP...

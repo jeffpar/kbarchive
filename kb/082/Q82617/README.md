@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82617: Ventura Publisher Doesn't Install If SHARE Is Loaded"
-permalink: kb/082/Q82617/
+permalink: /kb/082/Q82617/
 ---
 
 ## Q82617: Ventura Publisher Doesn't Install If SHARE Is Loaded

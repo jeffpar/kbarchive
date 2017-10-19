@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83029: MS-DOS Video Modes Displayed in a Window"
-permalink: kb/083/Q83029/
+permalink: /kb/083/Q83029/
 ---
 
 ## Q83029: MS-DOS Video Modes Displayed in a Window

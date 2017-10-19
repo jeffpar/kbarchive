@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176427: Daorisc.exe Installs DAO for Alpha (RISC)"
-permalink: kb/176/Q176427/
+permalink: /kb/176/Q176427/
 ---
 
 ## Q176427: Daorisc.exe Installs DAO for Alpha (RISC)

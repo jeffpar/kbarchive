@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192659: XCLN: ODK Help Items Disabled Under Microsoft on the Web Menu"
-permalink: kb/192/Q192659/
+permalink: /kb/192/Q192659/
 ---
 
 ## Q192659: XCLN: ODK Help Items Disabled Under Microsoft on the Web Menu

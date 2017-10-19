@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155372: Analysis of Helpdesk Impacts During Windows NT 4.0 Deployment"
-permalink: kb/155/Q155372/
+permalink: /kb/155/Q155372/
 ---
 
 ## Q155372: Analysis of Helpdesk Impacts During Windows NT 4.0 Deployment

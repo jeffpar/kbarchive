@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83062: NETWORKS.WRI from Windows 3.1"
-permalink: kb/083/Q83062/
+permalink: /kb/083/Q83062/
 ---
 
 ## Q83062: NETWORKS.WRI from Windows 3.1

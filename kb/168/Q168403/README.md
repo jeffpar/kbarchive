@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168403: BUG: Setup Doesn't Ask to Register Environment Variables"
-permalink: kb/168/Q168403/
+permalink: /kb/168/Q168403/
 ---
 
 ## Q168403: BUG: Setup Doesn't Ask to Register Environment Variables

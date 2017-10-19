@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101553: BUG: Bad Result If Multiple Aggregate Functions in SQL Stmt"
-permalink: kb/101/Q101553/
+permalink: /kb/101/Q101553/
 ---
 
 ## Q101553: BUG: Bad Result If Multiple Aggregate Functions in SQL Stmt

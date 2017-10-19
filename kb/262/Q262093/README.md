@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262093: XCLN: Messages Forwarded from Inbox Do Not Appear in Sent Items"
-permalink: kb/262/Q262093/
+permalink: /kb/262/Q262093/
 ---
 
 ## Q262093: XCLN: Messages Forwarded from Inbox Do Not Appear in Sent Items

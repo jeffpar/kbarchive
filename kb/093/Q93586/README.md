@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93586: PRB: FoxBASE+/Mac Installation Causes &quot;Disk Full Error - 34&quot;"
-permalink: kb/093/Q93586/
+permalink: /kb/093/Q93586/
 ---
 
 ## Q93586: PRB: FoxBASE+/Mac Installation Causes &quot;Disk Full Error - 34&quot;

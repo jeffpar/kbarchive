@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191679: FIX: Wrong Line Number Information Debugging STL"
-permalink: kb/191/Q191679/
+permalink: /kb/191/Q191679/
 ---
 
 ## Q191679: FIX: Wrong Line Number Information Debugging STL

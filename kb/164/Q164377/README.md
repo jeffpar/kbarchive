@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164377: Cannot Connect to Remote Access Server with Dial-Up Networking"
-permalink: kb/164/Q164377/
+permalink: /kb/164/Q164377/
 ---
 
 ## Q164377: Cannot Connect to Remote Access Server with Dial-Up Networking

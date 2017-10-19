@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263173: XADM: Only 100 Accounts Extracted from Active Directory Domain"
-permalink: kb/263/Q263173/
+permalink: /kb/263/Q263173/
 ---
 
 ## Q263173: XADM: Only 100 Accounts Extracted from Active Directory Domain

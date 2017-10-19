@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154652: FIX: Timer Callbacks Not Called in MFC 4.2 Applications"
-permalink: kb/154/Q154652/
+permalink: /kb/154/Q154652/
 ---
 
 ## Q154652: FIX: Timer Callbacks Not Called in MFC 4.2 Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128430: Cannot Install TCP/IP After Installing SQL Server"
-permalink: kb/128/Q128430/
+permalink: /kb/128/Q128430/
 ---
 
 ## Q128430: Cannot Install TCP/IP After Installing SQL Server

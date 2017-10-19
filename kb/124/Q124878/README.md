@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124878: DOCERR: WNetGetCachedPassword Returns WN_CANCEL (error 12)"
-permalink: kb/124/Q124878/
+permalink: /kb/124/Q124878/
 ---
 
 ## Q124878: DOCERR: WNetGetCachedPassword Returns WN_CANCEL (error 12)

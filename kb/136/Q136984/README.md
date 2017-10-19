@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136984: Julia Child: Windows 95 Installation Instructions Not Included"
-permalink: kb/136/Q136984/
+permalink: /kb/136/Q136984/
 ---
 
 ## Q136984: Julia Child: Windows 95 Installation Instructions Not Included

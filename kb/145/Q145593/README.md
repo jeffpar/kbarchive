@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145593: Windows 95 and WFW Err Msg: No Domain Server Was Available..."
-permalink: kb/145/Q145593/
+permalink: /kb/145/Q145593/
 ---
 
 ## Q145593: Windows 95 and WFW Err Msg: No Domain Server Was Available...

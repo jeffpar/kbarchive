@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281281: PRB: FLUSH Command Slower on Windows 95 or Windows 98 Computers"
-permalink: kb/281/Q281281/
+permalink: /kb/281/Q281281/
 ---
 
 ## Q281281: PRB: FLUSH Command Slower on Windows 95 or Windows 98 Computers

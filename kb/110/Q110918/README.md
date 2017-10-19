@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110918: BUG: Graphical Help Redraws Multiple Times"
-permalink: kb/110/Q110918/
+permalink: /kb/110/Q110918/
 ---
 
 ## Q110918: BUG: Graphical Help Redraws Multiple Times

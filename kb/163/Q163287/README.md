@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163287: XCON: MTA Events 2200 and 2201"
-permalink: kb/163/Q163287/
+permalink: /kb/163/Q163287/
 ---
 
 ## Q163287: XCON: MTA Events 2200 and 2201

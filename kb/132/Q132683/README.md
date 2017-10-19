@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132683: PC WSPlus: Schdplus.exe Version 1.0.4003 Update"
-permalink: kb/132/Q132683/
+permalink: /kb/132/Q132683/
 ---
 
 ## Q132683: PC WSPlus: Schdplus.exe Version 1.0.4003 Update

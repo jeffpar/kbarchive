@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176295: Flight Simulator 98/2000: Basic Keyboard Controls"
-permalink: kb/176/Q176295/
+permalink: /kb/176/Q176295/
 ---
 
 ## Q176295: Flight Simulator 98/2000: Basic Keyboard Controls

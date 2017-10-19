@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137028: BUG: Activating and Closing OLE Object Causes GP Fault"
-permalink: kb/137/Q137028/
+permalink: /kb/137/Q137028/
 ---
 
 ## Q137028: BUG: Activating and Closing OLE Object Causes GP Fault

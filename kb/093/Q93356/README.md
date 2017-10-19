@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93356: Setup Questions &amp; Answers for Windows 3.1"
-permalink: kb/093/Q93356/
+permalink: /kb/093/Q93356/
 ---
 
 ## Q93356: Setup Questions &amp; Answers for Windows 3.1

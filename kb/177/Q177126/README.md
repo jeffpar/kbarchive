@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177126: INFO: How to Specify NetWare Parameters in an Unattended Setup"
-permalink: kb/177/Q177126/
+permalink: /kb/177/Q177126/
 ---
 
 ## Q177126: INFO: How to Specify NetWare Parameters in an Unattended Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198367: WD97: Text Box Position Not Retained When Copying and Pasting"
-permalink: kb/198/Q198367/
+permalink: /kb/198/Q198367/
 ---
 
 ## Q198367: WD97: Text Box Position Not Retained When Copying and Pasting

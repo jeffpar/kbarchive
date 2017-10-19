@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252878: XCLN: Schedule+ Err Mssg: The File Req32.cfg Could Not Be Opened"
-permalink: kb/252/Q252878/
+permalink: /kb/252/Q252878/
 ---
 
 ## Q252878: XCLN: Schedule+ Err Mssg: The File Req32.cfg Could Not Be Opened

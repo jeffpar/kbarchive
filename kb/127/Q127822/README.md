@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127822: EISA Configuration Utility for Compaq Prosignia"
-permalink: kb/127/Q127822/
+permalink: /kb/127/Q127822/
 ---
 
 ## Q127822: EISA Configuration Utility for Compaq Prosignia

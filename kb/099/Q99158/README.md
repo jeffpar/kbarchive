@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99158: Description of Maxwell's Maniac"
-permalink: kb/099/Q99158/
+permalink: /kb/099/Q99158/
 ---
 
 ## Q99158: Description of Maxwell's Maniac

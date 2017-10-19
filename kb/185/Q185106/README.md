@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185106: XFOR: LinkAge 3.2 Missing Domain Names In Exchange Notes DXA"
-permalink: kb/185/Q185106/
+permalink: /kb/185/Q185106/
 ---
 
 ## Q185106: XFOR: LinkAge 3.2 Missing Domain Names In Exchange Notes DXA

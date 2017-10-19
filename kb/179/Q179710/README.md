@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179710: WD97: Changes to Custom Template Do Not Show in Preview"
-permalink: kb/179/Q179710/
+permalink: /kb/179/Q179710/
 ---
 
 ## Q179710: WD97: Changes to Custom Template Do Not Show in Preview

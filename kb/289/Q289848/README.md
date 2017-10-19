@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289848: Profiles Are Not Saved To the Roaming Profile Location on NT 4.0"
-permalink: kb/289/Q289848/
+permalink: /kb/289/Q289848/
 ---
 
 ## Q289848: Profiles Are Not Saved To the Roaming Profile Location on NT 4.0

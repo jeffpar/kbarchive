@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118544: Dangerous Creatures: GP Fault When Running with Squeegee"
-permalink: kb/118/Q118544/
+permalink: /kb/118/Q118544/
 ---
 
 ## Q118544: Dangerous Creatures: GP Fault When Running with Squeegee

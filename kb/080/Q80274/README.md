@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80274: PC DOS: Using the Micro or Monitor TSRs on NetBIOS Networks"
-permalink: kb/080/Q80274/
+permalink: /kb/080/Q80274/
 ---
 
 ## Q80274: PC DOS: Using the Micro or Monitor TSRs on NetBIOS Networks

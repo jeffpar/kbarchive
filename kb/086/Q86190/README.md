@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86190: Norton Anti-Virus 2.0 Requires Updated Driver"
-permalink: kb/086/Q86190/
+permalink: /kb/086/Q86190/
 ---
 
 ## Q86190: Norton Anti-Virus 2.0 Requires Updated Driver

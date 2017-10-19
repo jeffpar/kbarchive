@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285023: XCON: Internet Mail Service Does Not Follow Time to Live for DNS"
-permalink: kb/285/Q285023/
+permalink: /kb/285/Q285023/
 ---
 
 ## Q285023: XCON: Internet Mail Service Does Not Follow Time to Live for DNS

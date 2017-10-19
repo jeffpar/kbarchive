@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316958: Flight Simulator 2002: Blank Screen Starting Flight Simulator"
-permalink: kb/316/Q316958/
+permalink: /kb/316/Q316958/
 ---
 
 ## Q316958: Flight Simulator 2002: Blank Screen Starting Flight Simulator

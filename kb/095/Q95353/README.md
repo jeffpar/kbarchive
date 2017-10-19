@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95353: No Sounds with PC-Speaker Driver"
-permalink: kb/095/Q95353/
+permalink: /kb/095/Q95353/
 ---
 
 ## Q95353: No Sounds with PC-Speaker Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158259: XGEN: How to Obtain Exchange Server 4.0 Service Pack 3"
-permalink: kb/158/Q158259/
+permalink: /kb/158/Q158259/
 ---
 
 ## Q158259: XGEN: How to Obtain Exchange Server 4.0 Service Pack 3

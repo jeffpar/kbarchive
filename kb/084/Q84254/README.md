@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84254: Order of Groups on the Program Manager's Window Menu"
-permalink: kb/084/Q84254/
+permalink: /kb/084/Q84254/
 ---
 
 ## Q84254: Order of Groups on the Program Manager's Window Menu

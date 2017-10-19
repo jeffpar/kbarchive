@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96758: Using MS-DOS 6 with DNA Lanmarc Network Software"
-permalink: kb/096/Q96758/
+permalink: /kb/096/Q96758/
 ---
 
 ## Q96758: Using MS-DOS 6 with DNA Lanmarc Network Software

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176043: HOWTO: Add or Subtract Time with a DateTime Data Type"
-permalink: kb/176/Q176043/
+permalink: /kb/176/Q176043/
 ---
 
 ## Q176043: HOWTO: Add or Subtract Time with a DateTime Data Type

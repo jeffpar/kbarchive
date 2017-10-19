@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94673: HPPCL5E: Line Art Halftone Processing Not Available at 600DPI"
-permalink: kb/094/Q94673/
+permalink: /kb/094/Q94673/
 ---
 
 ## Q94673: HPPCL5E: Line Art Halftone Processing Not Available at 600DPI

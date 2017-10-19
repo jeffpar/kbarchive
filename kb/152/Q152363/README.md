@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152363: BUG: Project Manager Context Menu Visible After Program Switch"
-permalink: kb/152/Q152363/
+permalink: /kb/152/Q152363/
 ---
 
 ## Q152363: BUG: Project Manager Context Menu Visible After Program Switch

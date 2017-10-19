@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104725: How to Configure ScanDisk to Monitor Read/Write/Seek Times"
-permalink: kb/104/Q104725/
+permalink: /kb/104/Q104725/
 ---
 
 ## Q104725: How to Configure ScanDisk to Monitor Read/Write/Seek Times

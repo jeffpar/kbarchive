@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71829: WD97: Using MergeRec to Number Mail Merge Records"
-permalink: kb/071/Q71829/
+permalink: /kb/071/Q71829/
 ---
 
 ## Q71829: WD97: Using MergeRec to Number Mail Merge Records

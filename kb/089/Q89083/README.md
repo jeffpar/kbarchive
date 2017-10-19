@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89083: Windows Err Msg: Failed to Carry Out Command"
-permalink: kb/089/Q89083/
+permalink: /kb/089/Q89083/
 ---
 
 ## Q89083: Windows Err Msg: Failed to Carry Out Command

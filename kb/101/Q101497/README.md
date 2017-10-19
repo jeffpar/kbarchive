@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101497: Cannot Access Pacific Rim External Drive in MS-DOS"
-permalink: kb/101/Q101497/
+permalink: /kb/101/Q101497/
 ---
 
 ## Q101497: Cannot Access Pacific Rim External Drive in MS-DOS

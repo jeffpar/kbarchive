@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101861: Hard Disk Errors 67 and 69"
-permalink: kb/101/Q101861/
+permalink: /kb/101/Q101861/
 ---
 
 ## Q101861: Hard Disk Errors 67 and 69

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89021: Memory Configurations Needed on HP LaserJets for Printing"
-permalink: kb/089/Q89021/
+permalink: /kb/089/Q89021/
 ---
 
 ## Q89021: Memory Configurations Needed on HP LaserJets for Printing

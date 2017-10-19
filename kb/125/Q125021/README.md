@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125021: AWFAX Using Sportster Modem Fails Group 3 Fax Connection"
-permalink: kb/125/Q125021/
+permalink: /kb/125/Q125021/
 ---
 
 ## Q125021: AWFAX Using Sportster Modem Fails Group 3 Fax Connection

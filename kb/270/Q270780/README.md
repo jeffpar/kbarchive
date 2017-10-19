@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270780: ELL: Virtual Challenge Stops Responding When You Press Reset"
-permalink: kb/270/Q270780/
+permalink: /kb/270/Q270780/
 ---
 
 ## Q270780: ELL: Virtual Challenge Stops Responding When You Press Reset

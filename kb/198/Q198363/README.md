@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198363: WD97: Deleted Text Not Displayed When Hidden Text Option Set"
-permalink: kb/198/Q198363/
+permalink: /kb/198/Q198363/
 ---
 
 ## Q198363: WD97: Deleted Text Not Displayed When Hidden Text Option Set

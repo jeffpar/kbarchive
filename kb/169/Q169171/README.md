@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169171: Long PATH Environment Variable Causes 16-bit Apps to Hang"
-permalink: kb/169/Q169171/
+permalink: /kb/169/Q169171/
 ---
 
 ## Q169171: Long PATH Environment Variable Causes 16-bit Apps to Hang

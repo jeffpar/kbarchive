@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173697: WD97: Word Stops Responding When You Mark Index Entries"
-permalink: kb/173/Q173697/
+permalink: /kb/173/Q173697/
 ---
 
 ## Q173697: WD97: Word Stops Responding When You Mark Index Entries

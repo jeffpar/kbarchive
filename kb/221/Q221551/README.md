@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221551: XFOR: Fixed Length RFT Attachments Incorrectly Changed by OVVM"
-permalink: kb/221/Q221551/
+permalink: /kb/221/Q221551/
 ---
 
 ## Q221551: XFOR: Fixed Length RFT Attachments Incorrectly Changed by OVVM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169082: FP: How to Fix Permissions on FrontPage Server Administrator"
-permalink: kb/169/Q169082/
+permalink: /kb/169/Q169082/
 ---
 
 ## Q169082: FP: How to Fix Permissions on FrontPage Server Administrator

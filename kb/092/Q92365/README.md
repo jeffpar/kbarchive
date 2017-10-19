@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92365: Using Harvard Graphics with Windows 3.0, 3.0a"
-permalink: kb/092/Q92365/
+permalink: /kb/092/Q92365/
 ---
 
 ## Q92365: Using Harvard Graphics with Windows 3.0, 3.0a

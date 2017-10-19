@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97578: DoubleSpace Does Not Mount Hardcard Drive Automatically"
-permalink: kb/097/Q97578/
+permalink: /kb/097/Q97578/
 ---
 
 ## Q97578: DoubleSpace Does Not Mount Hardcard Drive Automatically

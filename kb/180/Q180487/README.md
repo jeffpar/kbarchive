@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180487: DOC: For Each ... Next Statement Does Not Work for Collections"
-permalink: kb/180/Q180487/
+permalink: /kb/180/Q180487/
 ---
 
 ## Q180487: DOC: For Each ... Next Statement Does Not Work for Collections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169526: WordMail Errors After Remove All of Microsoft Project"
-permalink: kb/169/Q169526/
+permalink: /kb/169/Q169526/
 ---
 
 ## Q169526: WordMail Errors After Remove All of Microsoft Project

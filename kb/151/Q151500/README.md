@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151500: FIX: /Og Causes vfptr Initialization Problems"
-permalink: kb/151/Q151500/
+permalink: /kb/151/Q151500/
 ---
 
 ## Q151500: FIX: /Og Causes vfptr Initialization Problems

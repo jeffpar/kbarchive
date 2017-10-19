@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177647: Nonpaged Pool Size Incorrectly Displayed in Performance Monitor"
-permalink: kb/177/Q177647/
+permalink: /kb/177/Q177647/
 ---
 
 ## Q177647: Nonpaged Pool Size Incorrectly Displayed in Performance Monitor

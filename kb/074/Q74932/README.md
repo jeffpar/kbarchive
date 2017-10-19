@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74932: Second FCBS Parameter Not Used in MS-DOS 5.x and 6.x"
-permalink: kb/074/Q74932/
+permalink: /kb/074/Q74932/
 ---
 
 ## Q74932: Second FCBS Parameter Not Used in MS-DOS 5.x and 6.x

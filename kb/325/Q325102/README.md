@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325102: Train Simulator: Train Bell Produces No Sound"
-permalink: kb/325/Q325102/
+permalink: /kb/325/Q325102/
 ---
 
 ## Q325102: Train Simulator: Train Bell Produces No Sound

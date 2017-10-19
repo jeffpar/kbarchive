@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140051: Run Command On Workstation Job Doesn't Refresh...."
-permalink: kb/140/Q140051/
+permalink: /kb/140/Q140051/
 ---
 
 ## Q140051: Run Command On Workstation Job Doesn't Refresh....

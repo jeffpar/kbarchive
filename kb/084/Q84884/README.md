@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84884: PC Win: No Paperclip Icon on Message with OLE Object"
-permalink: kb/084/Q84884/
+permalink: /kb/084/Q84884/
 ---
 
 ## Q84884: PC Win: No Paperclip Icon on Message with OLE Object

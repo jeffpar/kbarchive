@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174532: 16-bit Application Cannot Select a Network Drive"
-permalink: kb/174/Q174532/
+permalink: /kb/174/Q174532/
 ---
 
 ## Q174532: 16-bit Application Cannot Select a Network Drive

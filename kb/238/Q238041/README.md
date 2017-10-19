@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238041: Reference Suite: Setup Hangs During CD-ROM Verification"
-permalink: kb/238/Q238041/
+permalink: /kb/238/Q238041/
 ---
 
 ## Q238041: Reference Suite: Setup Hangs During CD-ROM Verification

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103533: DoubleSpace Err Msg Mounting CVF: There Is a Disk Error on..."
-permalink: kb/103/Q103533/
+permalink: /kb/103/Q103533/
 ---
 
 ## Q103533: DoubleSpace Err Msg Mounting CVF: There Is a Disk Error on...

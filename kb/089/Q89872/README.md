@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89872: Control Panel Changes Have No Effect with Proof Reader, 1-2-3"
-permalink: kb/089/Q89872/
+permalink: /kb/089/Q89872/
 ---
 
 ## Q89872: Control Panel Changes Have No Effect with Proof Reader, 1-2-3

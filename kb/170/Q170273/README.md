@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170273: MSB Rainforest: Using the Toolbox to Replicate the Rainforest"
-permalink: kb/170/Q170273/
+permalink: /kb/170/Q170273/
 ---
 
 ## Q170273: MSB Rainforest: Using the Toolbox to Replicate the Rainforest

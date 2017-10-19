@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128910: WFW Does Not Prompt for a Domain Password"
-permalink: kb/128/Q128910/
+permalink: /kb/128/Q128910/
 ---
 
 ## Q128910: WFW Does Not Prompt for a Domain Password

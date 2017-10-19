@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96832: Setup Stops Before Completing Upgrade"
-permalink: kb/096/Q96832/
+permalink: /kb/096/Q96832/
 ---
 
 ## Q96832: Setup Stops Before Completing Upgrade

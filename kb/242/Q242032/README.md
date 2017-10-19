@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242032: Subordinate Certificates Appear Invalid with Certificate Server"
-permalink: kb/242/Q242032/
+permalink: /kb/242/Q242032/
 ---
 
 ## Q242032: Subordinate Certificates Appear Invalid with Certificate Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94143: HPPCL5E: Printer Fonts Are Displayed Twice in Font List"
-permalink: kb/094/Q94143/
+permalink: /kb/094/Q94143/
 ---
 
 ## Q94143: HPPCL5E: Printer Fonts Are Displayed Twice in Font List

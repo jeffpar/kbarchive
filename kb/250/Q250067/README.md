@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250067: WritePrivateProfileString() May Not Work"
-permalink: kb/250/Q250067/
+permalink: /kb/250/Q250067/
 ---
 
 ## Q250067: WritePrivateProfileString() May Not Work

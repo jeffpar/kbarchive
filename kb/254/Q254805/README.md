@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254805: XADM: Exchange Server 5.5 Post-SP3 Administrator Program Fixes"
-permalink: kb/254/Q254805/
+permalink: /kb/254/Q254805/
 ---
 
 ## Q254805: XADM: Exchange Server 5.5 Post-SP3 Administrator Program Fixes

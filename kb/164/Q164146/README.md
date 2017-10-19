@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164146: HTTP PerfMon Counters Not Available to Non-Admin Accounts"
-permalink: kb/164/Q164146/
+permalink: /kb/164/Q164146/
 ---
 
 ## Q164146: HTTP PerfMon Counters Not Available to Non-Admin Accounts

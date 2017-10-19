@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139366: 3D Movie Maker: Storing Recorded/Imported Sounds"
-permalink: kb/139/Q139366/
+permalink: /kb/139/Q139366/
 ---
 
 ## Q139366: 3D Movie Maker: Storing Recorded/Imported Sounds

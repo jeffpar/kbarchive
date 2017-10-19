@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166066: WV: RTF Link in Netscape Starts New Instance of Word Viewer"
-permalink: kb/166/Q166066/
+permalink: /kb/166/Q166066/
 ---
 
 ## Q166066: WV: RTF Link in Netscape Starts New Instance of Word Viewer

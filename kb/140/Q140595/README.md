@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140595: DOC: How to Display Tool Tips After Calling EnableToolTips"
-permalink: kb/140/Q140595/
+permalink: /kb/140/Q140595/
 ---
 
 ## Q140595: DOC: How to Display Tool Tips After Calling EnableToolTips

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199227: SMS: Functions of Migrat1x.exe?"
-permalink: kb/199/Q199227/
+permalink: /kb/199/Q199227/
 ---
 
 ## Q199227: SMS: Functions of Migrat1x.exe?

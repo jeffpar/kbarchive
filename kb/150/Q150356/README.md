@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150356: Error Trying to Upgrade Win95 to Windows NT via SMS"
-permalink: kb/150/Q150356/
+permalink: /kb/150/Q150356/
 ---
 
 ## Q150356: Error Trying to Upgrade Win95 to Windows NT via SMS

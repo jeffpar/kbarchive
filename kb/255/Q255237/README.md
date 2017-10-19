@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255237: Err Msg: DAPIWrite for Mailbox &lt;Location&gt; Failed with DAPI..."
-permalink: kb/255/Q255237/
+permalink: /kb/255/Q255237/
 ---
 
 ## Q255237: Err Msg: DAPIWrite for Mailbox &lt;Location&gt; Failed with DAPI...

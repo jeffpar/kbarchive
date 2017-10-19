@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158597: Mac Encarta 97: Readme.txt: Minimum System Requirements"
-permalink: kb/158/Q158597/
+permalink: /kb/158/Q158597/
 ---
 
 ## Q158597: Mac Encarta 97: Readme.txt: Minimum System Requirements

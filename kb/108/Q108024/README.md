@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108024: System Hangs When Booting with FSSYSTEM Disk"
-permalink: kb/108/Q108024/
+permalink: /kb/108/Q108024/
 ---
 
 ## Q108024: System Hangs When Booting with FSSYSTEM Disk

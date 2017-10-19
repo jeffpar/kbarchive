@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231223: SMS: Remote Tools Command Line Tool Fails with Valid IPX No."
-permalink: kb/231/Q231223/
+permalink: /kb/231/Q231223/
 ---
 
 ## Q231223: SMS: Remote Tools Command Line Tool Fails with Valid IPX No.

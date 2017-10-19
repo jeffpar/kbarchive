@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237531: Encarta 2000: Macromedia Shockwave Director Documentation Error"
-permalink: kb/237/Q237531/
+permalink: /kb/237/Q237531/
 ---
 
 ## Q237531: Encarta 2000: Macromedia Shockwave Director Documentation Error

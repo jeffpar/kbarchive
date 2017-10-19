@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304663: PRB: Office XP Developer Install from MSDN DVD Subscription Fail"
-permalink: kb/304/Q304663/
+permalink: /kb/304/Q304663/
 ---
 
 ## Q304663: PRB: Office XP Developer Install from MSDN DVD Subscription Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274540: Windows ME (Millennium Edition) Step by Step Comments and Correc"
-permalink: kb/274/Q274540/
+permalink: /kb/274/Q274540/
 ---
 
 ## Q274540: Windows ME (Millennium Edition) Step by Step Comments and Correc

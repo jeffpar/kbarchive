@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196510: Error Msg: Error Writing to LPT1: System Cannot Find the File"
-permalink: kb/196/Q196510/
+permalink: /kb/196/Q196510/
 ---
 
 ## Q196510: Error Msg: Error Writing to LPT1: System Cannot Find the File

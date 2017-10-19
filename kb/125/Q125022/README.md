@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125022: MS EXCEL 5 FOR WINDOWS STEP BY STEP: 3rd Edition Corrections"
-permalink: kb/125/Q125022/
+permalink: /kb/125/Q125022/
 ---
 
 ## Q125022: MS EXCEL 5 FOR WINDOWS STEP BY STEP: 3rd Edition Corrections

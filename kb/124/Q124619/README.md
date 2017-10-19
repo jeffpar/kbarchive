@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124619: Error Changing User Password Using Postoffice Manager"
-permalink: kb/124/Q124619/
+permalink: /kb/124/Q124619/
 ---
 
 ## Q124619: Error Changing User Password Using Postoffice Manager

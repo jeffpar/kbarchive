@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155390: PRB: Unable to Add Project Error in Visual Basic Integration"
-permalink: kb/155/Q155390/
+permalink: /kb/155/Q155390/
 ---
 
 ## Q155390: PRB: Unable to Add Project Error in Visual Basic Integration

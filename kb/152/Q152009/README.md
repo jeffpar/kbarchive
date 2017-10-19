@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152009: Handling LUA RUI_WRITE Completion Delays"
-permalink: kb/152/Q152009/
+permalink: /kb/152/Q152009/
 ---
 
 ## Q152009: Handling LUA RUI_WRITE Completion Delays

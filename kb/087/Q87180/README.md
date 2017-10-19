@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87180: PROFS: Errors on Gateway PC"
-permalink: kb/087/Q87180/
+permalink: /kb/087/Q87180/
 ---
 
 ## Q87180: PROFS: Errors on Gateway PC

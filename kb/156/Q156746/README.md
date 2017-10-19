@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156746: Print Jobs Are Deleted When Printer Is Resumed After Restart"
-permalink: kb/156/Q156746/
+permalink: /kb/156/Q156746/
 ---
 
 ## Q156746: Print Jobs Are Deleted When Printer Is Resumed After Restart

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185241: BUG: Cannot Navigate Columns If a Row in a Grid is Disabled"
-permalink: kb/185/Q185241/
+permalink: /kb/185/Q185241/
 ---
 
 ## Q185241: BUG: Cannot Navigate Columns If a Row in a Grid is Disabled

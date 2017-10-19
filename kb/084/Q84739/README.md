@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84739: Mac Fax: FaxINIT Versions"
-permalink: kb/084/Q84739/
+permalink: /kb/084/Q84739/
 ---
 
 ## Q84739: Mac Fax: FaxINIT Versions

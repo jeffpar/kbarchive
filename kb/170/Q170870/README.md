@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170870: Err Msg: Query Is Too Expensive"
-permalink: kb/170/Q170870/
+permalink: /kb/170/Q170870/
 ---
 
 ## Q170870: Err Msg: Query Is Too Expensive

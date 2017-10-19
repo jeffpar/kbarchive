@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98934: Description of Tic Tac Drop"
-permalink: kb/098/Q98934/
+permalink: /kb/098/Q98934/
 ---
 
 ## Q98934: Description of Tic Tac Drop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82382: InPort Mouse Not Functioning Correctly on IRQ2"
-permalink: kb/082/Q82382/
+permalink: /kb/082/Q82382/
 ---
 
 ## Q82382: InPort Mouse Not Functioning Correctly on IRQ2

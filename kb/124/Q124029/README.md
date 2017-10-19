@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124029: No Site-Based Mapping for Single-Domain-Multiple-Site Clients"
-permalink: kb/124/Q124029/
+permalink: /kb/124/Q124029/
 ---
 
 ## Q124029: No Site-Based Mapping for Single-Domain-Multiple-Site Clients

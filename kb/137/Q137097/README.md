@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137097: HOWTO: Implement a Real-Time Application Using OLE"
-permalink: kb/137/Q137097/
+permalink: /kb/137/Q137097/
 ---
 
 ## Q137097: HOWTO: Implement a Real-Time Application Using OLE

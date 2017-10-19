@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87470: Mac Srv: Version 3.0 Enhancements from Version 3.1 Servers"
-permalink: kb/087/Q87470/
+permalink: /kb/087/Q87470/
 ---
 
 ## Q87470: Mac Srv: Version 3.0 Enhancements from Version 3.1 Servers

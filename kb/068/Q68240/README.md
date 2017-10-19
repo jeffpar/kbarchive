@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68240: Renaissance RVGA 2 Video Card WIN30FIX Patch for Windows 3.0"
-permalink: kb/068/Q68240/
+permalink: /kb/068/Q68240/
 ---
 
 ## Q68240: Renaissance RVGA 2 Video Card WIN30FIX Patch for Windows 3.0

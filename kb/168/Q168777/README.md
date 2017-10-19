@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168777: PRB: MFC ActiveX Control in IE Doesn't Detect Keystrokes"
-permalink: kb/168/Q168777/
+permalink: /kb/168/Q168777/
 ---
 
 ## Q168777: PRB: MFC ActiveX Control in IE Doesn't Detect Keystrokes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153766: XCLN: Substitute IP Address for Server Name"
-permalink: kb/153/Q153766/
+permalink: /kb/153/Q153766/
 ---
 
 ## Q153766: XCLN: Substitute IP Address for Server Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62168: Mac Hyp: Replying to a Message"
-permalink: kb/062/Q62168/
+permalink: /kb/062/Q62168/
 ---
 
 ## Q62168: Mac Hyp: Replying to a Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108363: Changes Made by Video for Windows 1.1 Upgrade"
-permalink: kb/108/Q108363/
+permalink: /kb/108/Q108363/
 ---
 
 ## Q108363: Changes Made by Video for Windows 1.1 Upgrade

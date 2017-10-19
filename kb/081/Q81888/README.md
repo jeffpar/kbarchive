@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81888: FIX: MASM Incorrectly Allows Relative Values as Constant"
-permalink: kb/081/Q81888/
+permalink: /kb/081/Q81888/
 ---
 
 ## Q81888: FIX: MASM Incorrectly Allows Relative Values as Constant

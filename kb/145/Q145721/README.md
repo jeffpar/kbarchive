@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145721: FIX: Access Violation Error on 16 MB Windows NT System"
-permalink: kb/145/Q145721/
+permalink: /kb/145/Q145721/
 ---
 
 ## Q145721: FIX: Access Violation Error on 16 MB Windows NT System

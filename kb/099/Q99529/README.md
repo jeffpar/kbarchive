@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99529: NET USE Returns &quot;Error 53-The Network Path Is Not Found&quot;"
-permalink: kb/099/Q99529/
+permalink: /kb/099/Q99529/
 ---
 
 ## Q99529: NET USE Returns &quot;Error 53-The Network Path Is Not Found&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116043: Network Share Access Denied After Limit Met, Then a Disconnect"
-permalink: kb/116/Q116043/
+permalink: /kb/116/Q116043/
 ---
 
 ## Q116043: Network Share Access Denied After Limit Met, Then a Disconnect

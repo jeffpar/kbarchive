@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244418: Microsoft Windows NT Server Resource Kit Comments and Correction"
-permalink: kb/244/Q244418/
+permalink: /kb/244/Q244418/
 ---
 
 ## Q244418: Microsoft Windows NT Server Resource Kit Comments and Correction

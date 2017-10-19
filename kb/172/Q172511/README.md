@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172511: Stop 0x0000000A w/ Services for Macintosh &amp; McAfee Anti-Virus"
-permalink: kb/172/Q172511/
+permalink: /kb/172/Q172511/
 ---
 
 ## Q172511: Stop 0x0000000A w/ Services for Macintosh &amp; McAfee Anti-Virus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153017: BUG: Invalid Operation After Setting RDC Resultset = Nothing"
-permalink: kb/153/Q153017/
+permalink: /kb/153/Q153017/
 ---
 
 ## Q153017: BUG: Invalid Operation After Setting RDC Resultset = Nothing

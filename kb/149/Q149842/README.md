@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149842: NCP Clients Always Connect to FPNW Server on Startup"
-permalink: kb/149/Q149842/
+permalink: /kb/149/Q149842/
 ---
 
 ## Q149842: NCP Clients Always Connect to FPNW Server on Startup

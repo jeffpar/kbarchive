@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181745: LU # Heading in MMC Snap-in List View Is Incorrect"
-permalink: kb/181/Q181745/
+permalink: /kb/181/Q181745/
 ---
 
 ## Q181745: LU # Heading in MMC Snap-in List View Is Incorrect

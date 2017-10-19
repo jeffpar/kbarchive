@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145597: Print Preview of Access 2.0 Reports Do Not Appear Correctly"
-permalink: kb/145/Q145597/
+permalink: /kb/145/Q145597/
 ---
 
 ## Q145597: Print Preview of Access 2.0 Reports Do Not Appear Correctly

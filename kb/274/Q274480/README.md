@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274480: XADM: Duplicate Object Created When Replicating Objects from Exc"
-permalink: kb/274/Q274480/
+permalink: /kb/274/Q274480/
 ---
 
 ## Q274480: XADM: Duplicate Object Created When Replicating Objects from Exc

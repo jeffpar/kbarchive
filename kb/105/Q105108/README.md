@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105108: PC Win: Modifying the MSMAIL.INI File in Windows NT"
-permalink: kb/105/Q105108/
+permalink: /kb/105/Q105108/
 ---
 
 ## Q105108: PC Win: Modifying the MSMAIL.INI File in Windows NT

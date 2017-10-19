@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140585: PRB: Resizing CPropertySheet in OnInitDialog Does Not Work"
-permalink: kb/140/Q140585/
+permalink: /kb/140/Q140585/
 ---
 
 ## Q140585: PRB: Resizing CPropertySheet in OnInitDialog Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160582: Too Many Connected Users Err. Msg. When Use SSL and IE 3.0"
-permalink: kb/160/Q160582/
+permalink: /kb/160/Q160582/
 ---
 
 ## Q160582: Too Many Connected Users Err. Msg. When Use SSL and IE 3.0

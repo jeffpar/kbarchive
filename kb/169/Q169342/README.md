@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169342: SMS: Batch File Runs Twice with Remote Execute on Windows 95"
-permalink: kb/169/Q169342/
+permalink: /kb/169/Q169342/
 ---
 
 ## Q169342: SMS: Batch File Runs Twice with Remote Execute on Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126016: Multimedia: Wave Error Messages Under Windows NT 3.5"
-permalink: kb/126/Q126016/
+permalink: /kb/126/Q126016/
 ---
 
 ## Q126016: Multimedia: Wave Error Messages Under Windows NT 3.5

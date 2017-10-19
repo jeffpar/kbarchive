@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197472: WD97: Default Numbering in PAGE Field Doesn't Change Default"
-permalink: kb/197/Q197472/
+permalink: /kb/197/Q197472/
 ---
 
 ## Q197472: WD97: Default Numbering in PAGE Field Doesn't Change Default

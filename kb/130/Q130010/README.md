@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130010: File Manager: Windows NT Server Tools Security Menu Missing"
-permalink: kb/130/Q130010/
+permalink: /kb/130/Q130010/
 ---
 
 ## Q130010: File Manager: Windows NT Server Tools Security Menu Missing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197203: WD97: Can't Recover Password-Protected Document If Password Lost"
-permalink: kb/197/Q197203/
+permalink: /kb/197/Q197203/
 ---
 
 ## Q197203: WD97: Can't Recover Password-Protected Document If Password Lost

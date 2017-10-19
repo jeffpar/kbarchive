@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139495: 3D Movie Maker: How to Reset the Talent Book"
-permalink: kb/139/Q139495/
+permalink: /kb/139/Q139495/
 ---
 
 ## Q139495: 3D Movie Maker: How to Reset the Talent Book

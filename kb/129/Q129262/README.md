@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129262: Fax Transmissions Fail with DSI Scout Plus Fax/Modem"
-permalink: kb/129/Q129262/
+permalink: /kb/129/Q129262/
 ---
 
 ## Q129262: Fax Transmissions Fail with DSI Scout Plus Fax/Modem

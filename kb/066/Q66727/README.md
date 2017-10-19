@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66727: IBM Mouse Driver Version 1.0 Changes Windows Screen Color"
-permalink: kb/066/Q66727/
+permalink: /kb/066/Q66727/
 ---
 
 ## Q66727: IBM Mouse Driver Version 1.0 Changes Windows Screen Color

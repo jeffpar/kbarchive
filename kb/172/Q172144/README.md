@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172144: Allow Link Service to be Distributed Option for Polaris / ESCON"
-permalink: kb/172/Q172144/
+permalink: /kb/172/Q172144/
 ---
 
 ## Q172144: Allow Link Service to be Distributed Option for Polaris / ESCON

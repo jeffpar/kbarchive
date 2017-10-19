@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142392: FIX: Drag Icon Property Ignored on Outline Control OCX"
-permalink: kb/142/Q142392/
+permalink: /kb/142/Q142392/
 ---
 
 ## Q142392: FIX: Drag Icon Property Ignored on Outline Control OCX

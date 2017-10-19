@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184966: Golf 98/99: High-Resolution Golf Courses Require 16-bit Color"
-permalink: kb/184/Q184966/
+permalink: /kb/184/Q184966/
 ---
 
 ## Q184966: Golf 98/99: High-Resolution Golf Courses Require 16-bit Color

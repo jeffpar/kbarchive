@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117397: Incorrect File Size Displayed Using FTP Service"
-permalink: kb/117/Q117397/
+permalink: /kb/117/Q117397/
 ---
 
 ## Q117397: Incorrect File Size Displayed Using FTP Service

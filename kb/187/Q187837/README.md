@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187837: XWEB: Appointments Display As Busy or Tentative Only"
-permalink: kb/187/Q187837/
+permalink: /kb/187/Q187837/
 ---
 
 ## Q187837: XWEB: Appointments Display As Busy or Tentative Only

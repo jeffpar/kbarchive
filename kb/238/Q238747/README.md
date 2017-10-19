@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238747: Windows Load Balancing Service Does Not Work on Token Ring"
-permalink: kb/238/Q238747/
+permalink: /kb/238/Q238747/
 ---
 
 ## Q238747: Windows Load Balancing Service Does Not Work on Token Ring

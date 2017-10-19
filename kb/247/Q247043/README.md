@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247043: FS2000 Err Msg: Invalid Page Fault in Module Kernel32.dll"
-permalink: kb/247/Q247043/
+permalink: /kb/247/Q247043/
 ---
 
 ## Q247043: FS2000 Err Msg: Invalid Page Fault in Module Kernel32.dll

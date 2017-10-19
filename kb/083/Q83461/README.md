@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83461: INFO: Extended Characters Different Under Windows"
-permalink: kb/083/Q83461/
+permalink: /kb/083/Q83461/
 ---
 
 ## Q83461: INFO: Extended Characters Different Under Windows

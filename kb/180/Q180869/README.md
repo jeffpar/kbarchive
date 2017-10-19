@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180869: Unable to Start Print Sessions Until Print Service Restarted"
-permalink: kb/180/Q180869/
+permalink: /kb/180/Q180869/
 ---
 
 ## Q180869: Unable to Start Print Sessions Until Print Service Restarted

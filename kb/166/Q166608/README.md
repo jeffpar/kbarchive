@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166608: XADM: Store Access Violation with Error Code C0000005"
-permalink: kb/166/Q166608/
+permalink: /kb/166/Q166608/
 ---
 
 ## Q166608: XADM: Store Access Violation with Error Code C0000005

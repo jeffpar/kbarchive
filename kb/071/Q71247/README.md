@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71247: Semicolon, Equal Sign As Arguments in Batch File"
-permalink: kb/071/Q71247/
+permalink: /kb/071/Q71247/
 ---
 
 ## Q71247: Semicolon, Equal Sign As Arguments in Batch File

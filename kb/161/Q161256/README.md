@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161256: HOWTO: Customize Visual Basic Menus to Use Mnemonics"
-permalink: kb/161/Q161256/
+permalink: /kb/161/Q161256/
 ---
 
 ## Q161256: HOWTO: Customize Visual Basic Menus to Use Mnemonics

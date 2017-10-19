@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165810: WD97: ? E-mail Address Using Web Wizard Submit Button"
-permalink: kb/165/Q165810/
+permalink: /kb/165/Q165810/
 ---
 
 ## Q165810: WD97: ? E-mail Address Using Web Wizard Submit Button

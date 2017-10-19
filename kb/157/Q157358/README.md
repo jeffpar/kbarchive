@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157358: XCON: Per-Domain-Bilateral-Info and Third Party Systems"
-permalink: kb/157/Q157358/
+permalink: /kb/157/Q157358/
 ---
 
 ## Q157358: XCON: Per-Domain-Bilateral-Info and Third Party Systems

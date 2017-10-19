@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q87288: CONTROL.INI [MMCPL] Section Can Make Control Panel Disappear"
-permalink: kb/087/Q87288/
+title: "Q87288: CONTROL.INI &#91;MMCPL&#93; Section Can Make Control Panel Disappear"
+permalink: /kb/087/Q87288/
 ---
 
-## Q87288: CONTROL.INI [MMCPL] Section Can Make Control Panel Disappear
+## Q87288: CONTROL.INI &#91;MMCPL&#93; Section Can Make Control Panel Disappear
 
 	Article: Q87288
 	Product(s): Microsoft Windows 95.x Retail Product

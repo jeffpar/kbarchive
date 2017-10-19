@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202112: CHAT: Cannot Change Default Location for Channel Transcription"
-permalink: kb/202/Q202112/
+permalink: /kb/202/Q202112/
 ---
 
 ## Q202112: CHAT: Cannot Change Default Location for Channel Transcription

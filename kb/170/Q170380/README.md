@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170380: HOWTO: Display/Pass TimeStamp Value from/to SQL Server"
-permalink: kb/170/Q170380/
+permalink: /kb/170/Q170380/
 ---
 
 ## Q170380: HOWTO: Display/Pass TimeStamp Value from/to SQL Server

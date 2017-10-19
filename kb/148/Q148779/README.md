@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148779: Dropped Connections Using Boca Research FDV Modems"
-permalink: kb/148/Q148779/
+permalink: /kb/148/Q148779/
 ---
 
 ## Q148779: Dropped Connections Using Boca Research FDV Modems

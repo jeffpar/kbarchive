@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156358: How to Manually Add Support for a Second Processor"
-permalink: kb/156/Q156358/
+permalink: /kb/156/Q156358/
 ---
 
 ## Q156358: How to Manually Add Support for a Second Processor

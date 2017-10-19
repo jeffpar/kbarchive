@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155177: FIX: Sockets Application Hangs or Exhibits Poor Performance"
-permalink: kb/155/Q155177/
+permalink: /kb/155/Q155177/
 ---
 
 ## Q155177: FIX: Sockets Application Hangs or Exhibits Poor Performance

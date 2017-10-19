@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232225: Access Violation May Occur if Path Greater Than 517 Characters"
-permalink: kb/232/Q232225/
+permalink: /kb/232/Q232225/
 ---
 
 ## Q232225: Access Violation May Occur if Path Greater Than 517 Characters

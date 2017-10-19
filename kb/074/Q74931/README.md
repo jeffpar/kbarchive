@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74931: Cannot Do a Minimal Setup to Floppy Disks in MS-DOS 5.0"
-permalink: kb/074/Q74931/
+permalink: /kb/074/Q74931/
 ---
 
 ## Q74931: Cannot Do a Minimal Setup to Floppy Disks in MS-DOS 5.0

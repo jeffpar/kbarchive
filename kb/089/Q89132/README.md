@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89132: How to Run a Program from Within a QuickWin Program"
-permalink: kb/089/Q89132/
+permalink: /kb/089/Q89132/
 ---
 
 ## Q89132: How to Run a Program from Within a QuickWin Program

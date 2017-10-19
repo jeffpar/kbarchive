@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132695: PRB: Private Data Session Causes Blank Grid to Appear"
-permalink: kb/132/Q132695/
+permalink: /kb/132/Q132695/
 ---
 
 ## Q132695: PRB: Private Data Session Causes Blank Grid to Appear

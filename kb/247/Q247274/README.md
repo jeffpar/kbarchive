@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247274: XADM: How to Set Up a Private Information Store Only Server"
-permalink: kb/247/Q247274/
+permalink: /kb/247/Q247274/
 ---
 
 ## Q247274: XADM: How to Set Up a Private Information Store Only Server

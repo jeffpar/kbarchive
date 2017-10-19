@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158005: STL Sample for the Predicate of partial_sort_copy Function"
-permalink: kb/158/Q158005/
+permalink: /kb/158/Q158005/
 ---
 
 ## Q158005: STL Sample for the Predicate of partial_sort_copy Function

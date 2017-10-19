@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146869: ALT+F6 Key Combination Does Not Work in Windows 95"
-permalink: kb/146/Q146869/
+permalink: /kb/146/Q146869/
 ---
 
 ## Q146869: ALT+F6 Key Combination Does Not Work in Windows 95

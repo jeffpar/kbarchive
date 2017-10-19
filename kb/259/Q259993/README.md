@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259993: StarLancer: How to Skip Virtual Reality Transitions"
-permalink: kb/259/Q259993/
+permalink: /kb/259/Q259993/
 ---
 
 ## Q259993: StarLancer: How to Skip Virtual Reality Transitions

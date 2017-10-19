@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227034: SMS: Error Message When Advertised Program &#42;.pkg File Is Missing"
-permalink: kb/227/Q227034/
+permalink: /kb/227/Q227034/
 ---
 
 ## Q227034: SMS: Error Message When Advertised Program &#42;.pkg File Is Missing

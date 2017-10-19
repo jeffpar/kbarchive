@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302605: Flight Simulator 2000: IPF When You Load a Saved Flight"
-permalink: kb/302/Q302605/
+permalink: /kb/302/Q302605/
 ---
 
 ## Q302605: Flight Simulator 2000: IPF When You Load a Saved Flight

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174155: PRB: Format Function May Return Incorrect Values"
-permalink: kb/174/Q174155/
+permalink: /kb/174/Q174155/
 ---
 
 ## Q174155: PRB: Format Function May Return Incorrect Values

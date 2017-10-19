@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155779: WD97: Copies Not Reset to One After Selecting Different Printer"
-permalink: kb/155/Q155779/
+permalink: /kb/155/Q155779/
 ---
 
 ## Q155779: WD97: Copies Not Reset to One After Selecting Different Printer

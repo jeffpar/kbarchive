@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10856: HOWTO: Change the Name of a Second Instance of an Application"
-permalink: kb/010/Q10856/
+permalink: /kb/010/Q10856/
 ---
 
 ## Q10856: HOWTO: Change the Name of a Second Instance of an Application

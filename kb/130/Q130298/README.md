@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130298: INFO: Cursors and the Data Environment on Forms and Reports"
-permalink: kb/130/Q130298/
+permalink: /kb/130/Q130298/
 ---
 
 ## Q130298: INFO: Cursors and the Data Environment on Forms and Reports

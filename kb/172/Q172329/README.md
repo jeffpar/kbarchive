@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172329: PRB: Error 459 Trying to Use Alternate Object Interface"
-permalink: kb/172/Q172329/
+permalink: /kb/172/Q172329/
 ---
 
 ## Q172329: PRB: Error 459 Trying to Use Alternate Object Interface

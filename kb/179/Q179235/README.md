@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179235: DOC: SQL Debugging with VC++ 5.0 Requires a Non-System Account"
-permalink: kb/179/Q179235/
+permalink: /kb/179/Q179235/
 ---
 
 ## Q179235: DOC: SQL Debugging with VC++ 5.0 Requires a Non-System Account

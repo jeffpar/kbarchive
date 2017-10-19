@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174752: XCLN: Windows CE Inbox Client Requires Full Transfer of POP3 Msg"
-permalink: kb/174/Q174752/
+permalink: /kb/174/Q174752/
 ---
 
 ## Q174752: XCLN: Windows CE Inbox Client Requires Full Transfer of POP3 Msg

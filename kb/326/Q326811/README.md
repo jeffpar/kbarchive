@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326811: FIX: ODBC Driver for DB2 Maps DATE Fields to Text When You Link"
-permalink: kb/326/Q326811/
+permalink: /kb/326/Q326811/
 ---
 
 ## Q326811: FIX: ODBC Driver for DB2 Maps DATE Fields to Text When You Link

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108360: Stacker Conversion Error Msg When Path Is Longer Than 127"
-permalink: kb/108/Q108360/
+permalink: /kb/108/Q108360/
 ---
 
 ## Q108360: Stacker Conversion Error Msg When Path Is Longer Than 127

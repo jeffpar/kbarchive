@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288141: PRB: Access Driver Window Doesn't Appear for System or User DSN"
-permalink: kb/288/Q288141/
+permalink: /kb/288/Q288141/
 ---
 
 ## Q288141: PRB: Access Driver Window Doesn't Appear for System or User DSN

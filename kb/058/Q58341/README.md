@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58341: Windows 3.0 SYSTEM.INI [boot] Section"
-permalink: kb/058/Q58341/
+title: "Q58341: Windows 3.0 SYSTEM.INI &#91;boot&#93; Section"
+permalink: /kb/058/Q58341/
 ---
 
-## Q58341: Windows 3.0 SYSTEM.INI [boot] Section
+## Q58341: Windows 3.0 SYSTEM.INI &#91;boot&#93; Section
 
 	Article: Q58341
 	Product(s): Microsoft Windows 95.x Retail Product

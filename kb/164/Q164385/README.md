@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164385: BUG: Large Result Sets May Become Corrupted in VFP"
-permalink: kb/164/Q164385/
+permalink: /kb/164/Q164385/
 ---
 
 ## Q164385: BUG: Large Result Sets May Become Corrupted in VFP

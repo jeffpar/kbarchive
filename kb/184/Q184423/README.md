@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184423: IE4 SBS: www.highway99.com/zoo Site Not Found"
-permalink: kb/184/Q184423/
+permalink: /kb/184/Q184423/
 ---
 
 ## Q184423: IE4 SBS: www.highway99.com/zoo Site Not Found

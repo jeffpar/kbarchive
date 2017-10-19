@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299493: Passport Manager Object Misconfigured"
-permalink: kb/299/Q299493/
+permalink: /kb/299/Q299493/
 ---
 
 ## Q299493: Passport Manager Object Misconfigured

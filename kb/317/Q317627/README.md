@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317627: XWEB: Troubleshooting HTTP 401.x Errs in Outlook Web Access 5.5"
-permalink: kb/317/Q317627/
+permalink: /kb/317/Q317627/
 ---
 
 ## Q317627: XWEB: Troubleshooting HTTP 401.x Errs in Outlook Web Access 5.5

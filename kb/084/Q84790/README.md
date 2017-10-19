@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84790: Terminal's Kermit Does Not Support 7,n,1 Communication Setting"
-permalink: kb/084/Q84790/
+permalink: /kb/084/Q84790/
 ---
 
 ## Q84790: Terminal's Kermit Does Not Support 7,n,1 Communication Setting

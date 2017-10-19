@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165432: PRB: DBGrid Does Not Insert Record If Field Name Contains Dash"
-permalink: kb/165/Q165432/
+permalink: /kb/165/Q165432/
 ---
 
 ## Q165432: PRB: DBGrid Does Not Insert Record If Field Name Contains Dash

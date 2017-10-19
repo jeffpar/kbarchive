@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178973: WD97: Inserted Wave Sound Icon in Text Box Resized, Causes Error"
-permalink: kb/178/Q178973/
+permalink: /kb/178/Q178973/
 ---
 
 ## Q178973: WD97: Inserted Wave Sound Icon in Text Box Resized, Causes Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57836: Setting up OS/2 LAN Manager to Use Replicator Service"
-permalink: kb/057/Q57836/
+permalink: /kb/057/Q57836/
 ---
 
 ## Q57836: Setting up OS/2 LAN Manager to Use Replicator Service

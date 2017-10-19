@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182248: HOWTO: Use DCOM Config (DCOMCNFG.EXE) with Windows 95/98/Me"
-permalink: kb/182/Q182248/
+permalink: /kb/182/Q182248/
 ---
 
 ## Q182248: HOWTO: Use DCOM Config (DCOMCNFG.EXE) with Windows 95/98/Me

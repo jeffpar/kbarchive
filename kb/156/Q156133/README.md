@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156133: BUG: Execute SQL Toolbar Button Not Disabled with Focus Change"
-permalink: kb/156/Q156133/
+permalink: /kb/156/Q156133/
 ---
 
 ## Q156133: BUG: Execute SQL Toolbar Button Not Disabled with Focus Change

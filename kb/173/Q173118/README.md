@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173118: Incorrect Dialog Displayed When Password On Preferred Server"
-permalink: kb/173/Q173118/
+permalink: /kb/173/Q173118/
 ---
 
 ## Q173118: Incorrect Dialog Displayed When Password On Preferred Server

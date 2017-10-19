@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143155: No Audio with Crystal Audio or SoundBlaster AWE32"
-permalink: kb/143/Q143155/
+permalink: /kb/143/Q143155/
 ---
 
 ## Q143155: No Audio with Crystal Audio or SoundBlaster AWE32

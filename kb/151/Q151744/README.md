@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151744: Network Client 3.0 with IPX Needs Direct Hosting on Server"
-permalink: kb/151/Q151744/
+permalink: /kb/151/Q151744/
 ---
 
 ## Q151744: Network Client 3.0 with IPX Needs Direct Hosting on Server

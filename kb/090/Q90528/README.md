@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90528: WFWG May Not Remove All Existing Network Drivers"
-permalink: kb/090/Q90528/
+permalink: /kb/090/Q90528/
 ---
 
 ## Q90528: WFWG May Not Remove All Existing Network Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73744: Tandy DOS 5.0 Available from Radio Shack"
-permalink: kb/073/Q73744/
+permalink: /kb/073/Q73744/
 ---
 
 ## Q73744: Tandy DOS 5.0 Available from Radio Shack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87139: PAGING=OFF May Cause Error: &quot;Insufficient Memory to Run...&quot;"
-permalink: kb/087/Q87139/
+permalink: /kb/087/Q87139/
 ---
 
 ## Q87139: PAGING=OFF May Cause Error: &quot;Insufficient Memory to Run...&quot;

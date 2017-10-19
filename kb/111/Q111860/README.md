@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111860: Gen: Message Gets Carriage Return Entered After 78 Characters"
-permalink: kb/111/Q111860/
+permalink: /kb/111/Q111860/
 ---
 
 ## Q111860: Gen: Message Gets Carriage Return Entered After 78 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142051: Panasonic LF7304 Optical Juke Box Setup Failure"
-permalink: kb/142/Q142051/
+permalink: /kb/142/Q142051/
 ---
 
 ## Q142051: Panasonic LF7304 Optical Juke Box Setup Failure

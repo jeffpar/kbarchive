@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147929: XADM: Imcadmin.dll Should Not be Renamed or Deleted"
-permalink: kb/147/Q147929/
+permalink: /kb/147/Q147929/
 ---
 
 ## Q147929: XADM: Imcadmin.dll Should Not be Renamed or Deleted

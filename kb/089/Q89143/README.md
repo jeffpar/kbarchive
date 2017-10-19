@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89143: Minimum System Requirements for MASM 6.0"
-permalink: kb/089/Q89143/
+permalink: /kb/089/Q89143/
 ---
 
 ## Q89143: Minimum System Requirements for MASM 6.0

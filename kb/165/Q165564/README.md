@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165564: WD97: Bullets and Numbering Lose Formatting with Track Changes"
-permalink: kb/165/Q165564/
+permalink: /kb/165/Q165564/
 ---
 
 ## Q165564: WD97: Bullets and Numbering Lose Formatting with Track Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183531: XCLN: How to Update Exchange Forms Designer Forms"
-permalink: kb/183/Q183531/
+permalink: /kb/183/Q183531/
 ---
 
 ## Q183531: XCLN: How to Update Exchange Forms Designer Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231596: Midtown Madness: Game Controller Stops Functioning During Game"
-permalink: kb/231/Q231596/
+permalink: /kb/231/Q231596/
 ---
 
 ## Q231596: Midtown Madness: Game Controller Stops Functioning During Game

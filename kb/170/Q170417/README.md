@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170417: Closing ZAK Setup Window Causes Setup to Stop"
-permalink: kb/170/Q170417/
+permalink: /kb/170/Q170417/
 ---
 
 ## Q170417: Closing ZAK Setup Window Causes Setup to Stop

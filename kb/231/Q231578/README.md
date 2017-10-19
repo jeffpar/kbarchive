@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231578: FIX: Hosting a WebBrowser Control in an MFC Container ASSERTs"
-permalink: kb/231/Q231578/
+permalink: /kb/231/Q231578/
 ---
 
 ## Q231578: FIX: Hosting a WebBrowser Control in an MFC Container ASSERTs

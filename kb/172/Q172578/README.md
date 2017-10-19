@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172578: HOWTO: Change the SQL Password Using RDO"
-permalink: kb/172/Q172578/
+permalink: /kb/172/Q172578/
 ---
 
 ## Q172578: HOWTO: Change the SQL Password Using RDO

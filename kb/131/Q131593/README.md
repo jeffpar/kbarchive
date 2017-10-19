@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131593: Return to Encarta 1995 Button Attempts to Start Encarta 1994"
-permalink: kb/131/Q131593/
+permalink: /kb/131/Q131593/
 ---
 
 ## Q131593: Return to Encarta 1995 Button Attempts to Start Encarta 1994

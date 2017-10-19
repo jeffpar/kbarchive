@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201794: BUG: Allowing Port Range Selection for Default System Protocols"
-permalink: kb/201/Q201794/
+permalink: /kb/201/Q201794/
 ---
 
 ## Q201794: BUG: Allowing Port Range Selection for Default System Protocols

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q73743: Use of the [Savestate] Section of the DOSSHELL.INI File"
-permalink: kb/073/Q73743/
+title: "Q73743: Use of the &#91;Savestate&#93; Section of the DOSSHELL.INI File"
+permalink: /kb/073/Q73743/
 ---
 
-## Q73743: Use of the [Savestate] Section of the DOSSHELL.INI File
+## Q73743: Use of the &#91;Savestate&#93; Section of the DOSSHELL.INI File
 
 	Article: Q73743
 	Product(s): Microsoft Disk Operating System

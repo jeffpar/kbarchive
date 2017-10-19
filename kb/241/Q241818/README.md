@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241818: PRB: Calculated Field Contents Cannot be Modified by ADO"
-permalink: kb/241/Q241818/
+permalink: /kb/241/Q241818/
 ---
 
 ## Q241818: PRB: Calculated Field Contents Cannot be Modified by ADO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179860: APPC Session Viewer Incorrectly Reads Some Registry Entries"
-permalink: kb/179/Q179860/
+permalink: /kb/179/Q179860/
 ---
 
 ## Q179860: APPC Session Viewer Incorrectly Reads Some Registry Entries

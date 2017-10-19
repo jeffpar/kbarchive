@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189731: XFOR: When does the Message Get Archived?"
-permalink: kb/189/Q189731/
+permalink: /kb/189/Q189731/
 ---
 
 ## Q189731: XFOR: When does the Message Get Archived?

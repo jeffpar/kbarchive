@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248438: Fighter Ace II: Direct 3D and Glide Options Are Unavailable"
-permalink: kb/248/Q248438/
+permalink: /kb/248/Q248438/
 ---
 
 ## Q248438: Fighter Ace II: Direct 3D and Glide Options Are Unavailable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81528: FltSim: Phantom Building in Oakland Int'l Airport"
-permalink: kb/081/Q81528/
+permalink: /kb/081/Q81528/
 ---
 
 ## Q81528: FltSim: Phantom Building in Oakland Int'l Airport

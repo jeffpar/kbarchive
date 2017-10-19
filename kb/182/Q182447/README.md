@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182447: Encarta 98 Research Organizer: How to Determine Language Version"
-permalink: kb/182/Q182447/
+permalink: /kb/182/Q182447/
 ---
 
 ## Q182447: Encarta 98 Research Organizer: How to Determine Language Version

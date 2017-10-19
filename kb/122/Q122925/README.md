@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122925: Upgrading From Workstation to Server Limited to 10 Connections"
-permalink: kb/122/Q122925/
+permalink: /kb/122/Q122925/
 ---
 
 ## Q122925: Upgrading From Workstation to Server Limited to 10 Connections

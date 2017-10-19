@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135159: IBM PC Support/400 v2r3 Causes Windows 95 Not to Load"
-permalink: kb/135/Q135159/
+permalink: /kb/135/Q135159/
 ---
 
 ## Q135159: IBM PC Support/400 v2r3 Causes Windows 95 Not to Load

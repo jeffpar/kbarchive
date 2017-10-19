@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192725: XCLN: Forwarding Message, Scroll Bars Disappear on New Message"
-permalink: kb/192/Q192725/
+permalink: /kb/192/Q192725/
 ---
 
 ## Q192725: XCLN: Forwarding Message, Scroll Bars Disappear on New Message

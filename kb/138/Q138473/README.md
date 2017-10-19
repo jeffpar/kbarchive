@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138473: BUG: Code Window Closes Design Tools When Run from a Program"
-permalink: kb/138/Q138473/
+permalink: /kb/138/Q138473/
 ---
 
 ## Q138473: BUG: Code Window Closes Design Tools When Run from a Program

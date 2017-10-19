@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112230: FAX: Err Msg: App for Attached File Could Not Be Found"
-permalink: kb/112/Q112230/
+permalink: /kb/112/Q112230/
 ---
 
 ## Q112230: FAX: Err Msg: App for Attached File Could Not Be Found

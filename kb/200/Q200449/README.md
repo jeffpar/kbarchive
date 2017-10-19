@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200449: XFOR: LME: Error When Opening the SNA Base Parameters Key"
-permalink: kb/200/Q200449/
+permalink: /kb/200/Q200449/
 ---
 
 ## Q200449: XFOR: LME: Error When Opening the SNA Base Parameters Key

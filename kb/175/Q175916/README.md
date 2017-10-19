@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175916: Bookshelf 98: Integration Fails with Word 95"
-permalink: kb/175/Q175916/
+permalink: /kb/175/Q175916/
 ---
 
 ## Q175916: Bookshelf 98: Integration Fails with Word 95

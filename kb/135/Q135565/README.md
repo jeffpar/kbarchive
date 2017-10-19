@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135565: PRB: HIDE WINDOW ALL Command Affects User-Defined Toolbars"
-permalink: kb/135/Q135565/
+permalink: /kb/135/Q135565/
 ---
 
 ## Q135565: PRB: HIDE WINDOW ALL Command Affects User-Defined Toolbars

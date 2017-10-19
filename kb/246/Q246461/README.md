@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246461: How to Prevent Validation on a Backup Domain Controller"
-permalink: kb/246/Q246461/
+permalink: /kb/246/Q246461/
 ---
 
 ## Q246461: How to Prevent Validation on a Backup Domain Controller

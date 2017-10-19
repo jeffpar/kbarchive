@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130942: PRB: WSAStartup() May Return WSAVERNOTSUPPORTED on Second Call"
-permalink: kb/130/Q130942/
+permalink: /kb/130/Q130942/
 ---
 
 ## Q130942: PRB: WSAStartup() May Return WSAVERNOTSUPPORTED on Second Call

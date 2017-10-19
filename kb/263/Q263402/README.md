@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263402: SMS: Msiexec.exe Cannot Process an MSI File"
-permalink: kb/263/Q263402/
+permalink: /kb/263/Q263402/
 ---
 
 ## Q263402: SMS: Msiexec.exe Cannot Process an MSI File

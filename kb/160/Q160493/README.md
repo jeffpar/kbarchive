@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160493: Nwlnkrip Data Structures Corrupt when Using Demand Dial NIC"
-permalink: kb/160/Q160493/
+permalink: /kb/160/Q160493/
 ---
 
 ## Q160493: Nwlnkrip Data Structures Corrupt when Using Demand Dial NIC

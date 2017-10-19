@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89833: Zenith Znote Does Not Resume Net Operation When Paused"
-permalink: kb/089/Q89833/
+permalink: /kb/089/Q89833/
 ---
 
 ## Q89833: Zenith Znote Does Not Resume Net Operation When Paused

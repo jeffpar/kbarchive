@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264976: Client Computer Is Slow to Respond After Running Boot32wn.exe"
-permalink: kb/264/Q264976/
+permalink: /kb/264/Q264976/
 ---
 
 ## Q264976: Client Computer Is Slow to Respond After Running Boot32wn.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225192: Incorrect Registry Upgrading Shared Computer from SMS 1.2 to 2.0"
-permalink: kb/225/Q225192/
+permalink: /kb/225/Q225192/
 ---
 
 ## Q225192: Incorrect Registry Upgrading Shared Computer from SMS 1.2 to 2.0

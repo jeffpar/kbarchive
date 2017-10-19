@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141154: INFO: Using Single/Multiple Instances of an OLE Object in MFC"
-permalink: kb/141/Q141154/
+permalink: /kb/141/Q141154/
 ---
 
 ## Q141154: INFO: Using Single/Multiple Instances of an OLE Object in MFC

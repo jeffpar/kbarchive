@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303725: SMS: Logon Server Manager May Use Sender Credentials"
-permalink: kb/303/Q303725/
+permalink: /kb/303/Q303725/
 ---
 
 ## Q303725: SMS: Logon Server Manager May Use Sender Credentials

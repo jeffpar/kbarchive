@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149305: PCMCIA Network Cards May Fail to Start During NT Installation"
-permalink: kb/149/Q149305/
+permalink: /kb/149/Q149305/
 ---
 
 ## Q149305: PCMCIA Network Cards May Fail to Start During NT Installation

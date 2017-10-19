@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167363: HP Network Port Missing After Reinstalling DLC on SNA Server"
-permalink: kb/167/Q167363/
+permalink: /kb/167/Q167363/
 ---
 
 ## Q167363: HP Network Port Missing After Reinstalling DLC on SNA Server

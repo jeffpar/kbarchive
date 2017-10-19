@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106725: FIX: Alternate Return Compiled with /Ox Can GPF at Run Time"
-permalink: kb/106/Q106725/
+permalink: /kb/106/Q106725/
 ---
 
 ## Q106725: FIX: Alternate Return Compiled with /Ox Can GPF at Run Time

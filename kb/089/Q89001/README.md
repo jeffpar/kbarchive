@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89001: Blank Lines Not Printed on Labels in FoxBASE+"
-permalink: kb/089/Q89001/
+permalink: /kb/089/Q89001/
 ---
 
 ## Q89001: Blank Lines Not Printed on Labels in FoxBASE+

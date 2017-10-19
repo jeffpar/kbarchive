@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119575: TCP/IP-32 Winsock Stops FD_READ Notification"
-permalink: kb/119/Q119575/
+permalink: /kb/119/Q119575/
 ---
 
 ## Q119575: TCP/IP-32 Winsock Stops FD_READ Notification

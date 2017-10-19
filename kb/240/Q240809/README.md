@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240809: HOWTO: Prevent Switch To or Application Busy Message Using OLE"
-permalink: kb/240/Q240809/
+permalink: /kb/240/Q240809/
 ---
 
 ## Q240809: HOWTO: Prevent Switch To or Application Busy Message Using OLE

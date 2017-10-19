@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128890: How the Import Wizard Determines the Text File Type"
-permalink: kb/128/Q128890/
+permalink: /kb/128/Q128890/
 ---
 
 ## Q128890: How the Import Wizard Determines the Text File Type

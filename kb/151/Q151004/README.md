@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151004: FIX: &quot;PRG&quot; File Type Missing in FoxPro File Group"
-permalink: kb/151/Q151004/
+permalink: /kb/151/Q151004/
 ---
 
 ## Q151004: FIX: &quot;PRG&quot; File Type Missing in FoxPro File Group

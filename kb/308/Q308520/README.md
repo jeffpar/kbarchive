@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308520: Games: Computer Appears to Hang Running Setup"
-permalink: kb/308/Q308520/
+permalink: /kb/308/Q308520/
 ---
 
 ## Q308520: Games: Computer Appears to Hang Running Setup

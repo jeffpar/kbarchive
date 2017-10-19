@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157006: XCLN: Access Violation when Opening New Message"
-permalink: kb/157/Q157006/
+permalink: /kb/157/Q157006/
 ---
 
 ## Q157006: XCLN: Access Violation when Opening New Message

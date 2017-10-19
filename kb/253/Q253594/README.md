@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253594: MA Updates Not Written to the Transaction Stack"
-permalink: kb/253/Q253594/
+permalink: /kb/253/Q253594/
 ---
 
 ## Q253594: MA Updates Not Written to the Transaction Stack

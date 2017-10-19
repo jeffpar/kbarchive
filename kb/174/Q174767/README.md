@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174767: SMS: Program Group Control Does Not Warn User If Not Logged On"
-permalink: kb/174/Q174767/
+permalink: /kb/174/Q174767/
 ---
 
 ## Q174767: SMS: Program Group Control Does Not Warn User If Not Logged On

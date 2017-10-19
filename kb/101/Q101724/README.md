@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101724: Drive Mappings with NWShareHandles and RestoreDrives"
-permalink: kb/101/Q101724/
+permalink: /kb/101/Q101724/
 ---
 
 ## Q101724: Drive Mappings with NWShareHandles and RestoreDrives

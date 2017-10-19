@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133736: PPT7: Error Message: L.ppt - Sorry, the File Cannot Be Found"
-permalink: kb/133/Q133736/
+permalink: /kb/133/Q133736/
 ---
 
 ## Q133736: PPT7: Error Message: L.ppt - Sorry, the File Cannot Be Found

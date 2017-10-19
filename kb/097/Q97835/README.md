@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97835: COMMANDS.TXT: Supplemental Disk Commands (Part 2 of 2)"
-permalink: kb/097/Q97835/
+permalink: /kb/097/Q97835/
 ---
 
 ## Q97835: COMMANDS.TXT: Supplemental Disk Commands (Part 2 of 2)

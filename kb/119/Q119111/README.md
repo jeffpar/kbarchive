@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119111: PC DirSync: Dir-Sync Processes Launched at Wrong Time"
-permalink: kb/119/Q119111/
+permalink: /kb/119/Q119111/
 ---
 
 ## Q119111: PC DirSync: Dir-Sync Processes Launched at Wrong Time

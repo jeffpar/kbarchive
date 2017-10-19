@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124524: FIX: Using String Constant as Default Argument Doesn't Work"
-permalink: kb/124/Q124524/
+permalink: /kb/124/Q124524/
 ---
 
 ## Q124524: FIX: Using String Constant as Default Argument Doesn't Work

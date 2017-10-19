@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105809: WFWG Error Message: 3653: The Protocol Manager Could Not Be..."
-permalink: kb/105/Q105809/
+permalink: /kb/105/Q105809/
 ---
 
 ## Q105809: WFWG Error Message: 3653: The Protocol Manager Could Not Be...

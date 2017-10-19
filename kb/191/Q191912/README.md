@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191912: FIX: Constituent Control Validate Event Can Fail on UserControl"
-permalink: kb/191/Q191912/
+permalink: /kb/191/Q191912/
 ---
 
 ## Q191912: FIX: Constituent Control Validate Event Can Fail on UserControl

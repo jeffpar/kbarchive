@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148996: Attachmate Advanced Coax Adapter Fails w/Event 23 Qualifier 11"
-permalink: kb/148/Q148996/
+permalink: /kb/148/Q148996/
 ---
 
 ## Q148996: Attachmate Advanced Coax Adapter Fails w/Event 23 Qualifier 11

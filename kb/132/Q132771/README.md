@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132771: Lotus Programs Have Distorted Buttons on Title Bar"
-permalink: kb/132/Q132771/
+permalink: /kb/132/Q132771/
 ---
 
 ## Q132771: Lotus Programs Have Distorted Buttons on Title Bar

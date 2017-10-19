@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160496: INFO: Files Modified by VC42b Patch - Part 2 of 4"
-permalink: kb/160/Q160496/
+permalink: /kb/160/Q160496/
 ---
 
 ## Q160496: INFO: Files Modified by VC42b Patch - Part 2 of 4

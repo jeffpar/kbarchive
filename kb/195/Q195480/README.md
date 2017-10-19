@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195480: Close Combat Error Message: Inform DirectDraw That the Previous"
-permalink: kb/195/Q195480/
+permalink: /kb/195/Q195480/
 ---
 
 ## Q195480: Close Combat Error Message: Inform DirectDraw That the Previous

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112369: MEMMAKER /BATCH Adds Multiple NOMOVEXBDA Switches"
-permalink: kb/112/Q112369/
+permalink: /kb/112/Q112369/
 ---
 
 ## Q112369: MEMMAKER /BATCH Adds Multiple NOMOVEXBDA Switches

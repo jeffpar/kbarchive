@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122216: FIX: Errors When Spaces Used in Resource File Specification"
-permalink: kb/122/Q122216/
+permalink: /kb/122/Q122216/
 ---
 
 ## Q122216: FIX: Errors When Spaces Used in Resource File Specification

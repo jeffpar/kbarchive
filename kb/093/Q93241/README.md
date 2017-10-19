@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93241: PC Win: Word Wrap Does Not Work Correctly When Using Tabs"
-permalink: kb/093/Q93241/
+permalink: /kb/093/Q93241/
 ---
 
 ## Q93241: PC Win: Word Wrap Does Not Work Correctly When Using Tabs

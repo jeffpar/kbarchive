@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167697: FIX: ActiveX Control in IE Asserts in CTLINPLC.CPP, Line 328"
-permalink: kb/167/Q167697/
+permalink: /kb/167/Q167697/
 ---
 
 ## Q167697: FIX: ActiveX Control in IE Asserts in CTLINPLC.CPP, Line 328

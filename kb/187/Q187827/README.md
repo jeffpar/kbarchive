@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187827: SNA Print to File Results in File Size of Zero KB"
-permalink: kb/187/Q187827/
+permalink: /kb/187/Q187827/
 ---
 
 ## Q187827: SNA Print to File Results in File Size of Zero KB

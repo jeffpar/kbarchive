@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160740: STL Sample for the vector::(capacity size push_back) Functions"
-permalink: kb/160/Q160740/
+permalink: /kb/160/Q160740/
 ---
 
 ## Q160740: STL Sample for the vector::(capacity size push_back) Functions

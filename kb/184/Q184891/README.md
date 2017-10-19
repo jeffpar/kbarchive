@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184891: Server.HTMLEncode Garbles Extended Characters"
-permalink: kb/184/Q184891/
+permalink: /kb/184/Q184891/
 ---
 
 ## Q184891: Server.HTMLEncode Garbles Extended Characters

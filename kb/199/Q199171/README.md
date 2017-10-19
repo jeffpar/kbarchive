@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199171: XFOR: Notes Custom Recipients Not Synchronized w/out Domain Name"
-permalink: kb/199/Q199171/
+permalink: /kb/199/Q199171/
 ---
 
 ## Q199171: XFOR: Notes Custom Recipients Not Synchronized w/out Domain Name

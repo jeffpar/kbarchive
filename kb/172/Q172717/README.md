@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172717: Error Message: Error FFh Attaching to NetWare Server"
-permalink: kb/172/Q172717/
+permalink: /kb/172/Q172717/
 ---
 
 ## Q172717: Error Message: Error FFh Attaching to NetWare Server

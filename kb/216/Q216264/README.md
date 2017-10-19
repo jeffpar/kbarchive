@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216264: XADM: Non-Delivery Receipts Fail Due to Error 0xfffff9bf"
-permalink: kb/216/Q216264/
+permalink: /kb/216/Q216264/
 ---
 
 ## Q216264: XADM: Non-Delivery Receipts Fail Due to Error 0xfffff9bf

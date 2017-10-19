@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322136: Streets and Trips 2002:  &quot;Has Generated Error 1714&quot; Error Messag"
-permalink: kb/322/Q322136/
+permalink: /kb/322/Q322136/
 ---
 
 ## Q322136: Streets and Trips 2002:  &quot;Has Generated Error 1714&quot; Error Messag

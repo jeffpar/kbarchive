@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136631: PC WRmt: Using Remote Mail Client and WinRules Version 1.0"
-permalink: kb/136/Q136631/
+permalink: /kb/136/Q136631/
 ---
 
 ## Q136631: PC WRmt: Using Remote Mail Client and WinRules Version 1.0

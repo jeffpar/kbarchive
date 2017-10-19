@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132244: PRB: Visual Basic DisableAsync Fails w/ MASJT200.DLL"
-permalink: kb/132/Q132244/
+permalink: /kb/132/Q132244/
 ---
 
 ## Q132244: PRB: Visual Basic DisableAsync Fails w/ MASJT200.DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146037: XCLN: Off-line Address Book Not Display Other User Info."
-permalink: kb/146/Q146037/
+permalink: /kb/146/Q146037/
 ---
 
 ## Q146037: XCLN: Off-line Address Book Not Display Other User Info.

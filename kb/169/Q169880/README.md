@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169880: How to Use Group Policies with MSNDS in Windows 95"
-permalink: kb/169/Q169880/
+permalink: /kb/169/Q169880/
 ---
 
 ## Q169880: How to Use Group Policies with MSNDS in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268604: WEP2K: Card Collection Stops Responding During Game"
-permalink: kb/268/Q268604/
+permalink: /kb/268/Q268604/
 ---
 
 ## Q268604: WEP2K: Card Collection Stops Responding During Game

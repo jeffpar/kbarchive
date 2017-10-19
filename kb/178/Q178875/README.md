@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178875: ORALONG.EXE: Use RDO with Oracle LONG/LONG RAW Datatypes"
-permalink: kb/178/Q178875/
+permalink: /kb/178/Q178875/
 ---
 
 ## Q178875: ORALONG.EXE: Use RDO with Oracle LONG/LONG RAW Datatypes

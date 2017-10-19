@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149675: XFOR: Error Sending Mail from Exchange out an MHS Gateway"
-permalink: kb/149/Q149675/
+permalink: /kb/149/Q149675/
 ---
 
 ## Q149675: XFOR: Error Sending Mail from Exchange out an MHS Gateway

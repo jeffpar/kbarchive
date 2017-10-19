@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83373: Installation and Usage of MicroSpeed PC-Trackball for Windows"
-permalink: kb/083/Q83373/
+permalink: /kb/083/Q83373/
 ---
 
 ## Q83373: Installation and Usage of MicroSpeed PC-Trackball for Windows

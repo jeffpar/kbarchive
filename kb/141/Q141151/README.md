@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141151: Streets 4.0: Maps Show Corrupted Phone and Zip Codes"
-permalink: kb/141/Q141151/
+permalink: /kb/141/Q141151/
 ---
 
 ## Q141151: Streets 4.0: Maps Show Corrupted Phone and Zip Codes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171733: PRB: FlexGrid Control Doesn't Trap Arrow Keys"
-permalink: kb/171/Q171733/
+permalink: /kb/171/Q171733/
 ---
 
 ## Q171733: PRB: FlexGrid Control Doesn't Trap Arrow Keys

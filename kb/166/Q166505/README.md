@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166505: DOC: FindNextFile Returns 0 for Last File Found"
-permalink: kb/166/Q166505/
+permalink: /kb/166/Q166505/
 ---
 
 ## Q166505: DOC: FindNextFile Returns 0 for Last File Found

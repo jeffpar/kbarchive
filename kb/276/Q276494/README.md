@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276494: Using Python Scripts with IIS"
-permalink: kb/276/Q276494/
+permalink: /kb/276/Q276494/
 ---
 
 ## Q276494: Using Python Scripts with IIS

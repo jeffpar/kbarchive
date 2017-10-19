@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170540: XFOR: All Mailboxes Replicate After Running Migsmtp.exe"
-permalink: kb/170/Q170540/
+permalink: /kb/170/Q170540/
 ---
 
 ## Q170540: XFOR: All Mailboxes Replicate After Running Migsmtp.exe

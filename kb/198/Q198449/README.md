@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198449: Protocol Field Explanation from KERNROUT PRINT Output"
-permalink: kb/198/Q198449/
+permalink: /kb/198/Q198449/
 ---
 
 ## Q198449: Protocol Field Explanation from KERNROUT PRINT Output

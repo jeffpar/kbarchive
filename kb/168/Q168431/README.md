@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168431: FIX: Launching VB 5.0 ActiveX Documents from Internet Explorer"
-permalink: kb/168/Q168431/
+permalink: /kb/168/Q168431/
 ---
 
 ## Q168431: FIX: Launching VB 5.0 ActiveX Documents from Internet Explorer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125358: STOP Message Installing Windows NT on NEC Image Computer"
-permalink: kb/125/Q125358/
+permalink: /kb/125/Q125358/
 ---
 
 ## Q125358: STOP Message Installing Windows NT on NEC Image Computer

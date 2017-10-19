@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87353: Using Publisher's PowerPak with Windows 3.1"
-permalink: kb/087/Q87353/
+permalink: /kb/087/Q87353/
 ---
 
 ## Q87353: Using Publisher's PowerPak with Windows 3.1

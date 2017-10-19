@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151989: List of Documentation Errors in Pan Chinese WinNT Start Here"
-permalink: kb/151/Q151989/
+permalink: /kb/151/Q151989/
 ---
 
 ## Q151989: List of Documentation Errors in Pan Chinese WinNT Start Here

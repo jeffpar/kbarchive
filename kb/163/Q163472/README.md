@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163472: BUG: Path Greater than 95 Characters Causes VFP Mac to Hang"
-permalink: kb/163/Q163472/
+permalink: /kb/163/Q163472/
 ---
 
 ## Q163472: BUG: Path Greater than 95 Characters Causes VFP Mac to Hang

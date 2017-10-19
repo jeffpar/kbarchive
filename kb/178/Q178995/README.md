@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178995: FIX: Visual C++ Wizards Ignore &quot;Insert Spaces&quot; in Tabs Option"
-permalink: kb/178/Q178995/
+permalink: /kb/178/Q178995/
 ---
 
 ## Q178995: FIX: Visual C++ Wizards Ignore &quot;Insert Spaces&quot; in Tabs Option

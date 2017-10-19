@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135028: PC DirSync: CTRL+C Displayed But Ignored in IMPORT and REQMAIN"
-permalink: kb/135/Q135028/
+permalink: /kb/135/Q135028/
 ---
 
 ## Q135028: PC DirSync: CTRL+C Displayed But Ignored in IMPORT and REQMAIN

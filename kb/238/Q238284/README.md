@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238284: HOWTO: Display Err Msgs from Server When Using Remote Scripting"
-permalink: kb/238/Q238284/
+permalink: /kb/238/Q238284/
 ---
 
 ## Q238284: HOWTO: Display Err Msgs from Server When Using Remote Scripting

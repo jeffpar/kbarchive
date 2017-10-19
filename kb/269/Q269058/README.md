@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269058: Baseball 2001: Cannot Remove Custom Free Agents"
-permalink: kb/269/Q269058/
+permalink: /kb/269/Q269058/
 ---
 
 ## Q269058: Baseball 2001: Cannot Remove Custom Free Agents

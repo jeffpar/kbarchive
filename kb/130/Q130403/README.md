@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130403: Cannot Install Unlisted Driver During Setup"
-permalink: kb/130/Q130403/
+permalink: /kb/130/Q130403/
 ---
 
 ## Q130403: Cannot Install Unlisted Driver During Setup

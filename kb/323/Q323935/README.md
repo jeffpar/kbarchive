@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323935: Flight Simulator 2002: Black Border Surrounds Full-Screen Mode"
-permalink: kb/323/Q323935/
+permalink: /kb/323/Q323935/
 ---
 
 ## Q323935: Flight Simulator 2002: Black Border Surrounds Full-Screen Mode

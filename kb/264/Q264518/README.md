@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264518: Suggested File Name Is Truncated When Saving to Novell Server"
-permalink: kb/264/Q264518/
+permalink: /kb/264/Q264518/
 ---
 
 ## Q264518: Suggested File Name Is Truncated When Saving to Novell Server

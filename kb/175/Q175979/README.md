@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175979: PRB: All Parameters of Choose Function Are Evaluated"
-permalink: kb/175/Q175979/
+permalink: /kb/175/Q175979/
 ---
 
 ## Q175979: PRB: All Parameters of Choose Function Are Evaluated

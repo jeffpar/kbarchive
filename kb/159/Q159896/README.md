@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159896: WD97: How to Control the Tabbing Order in a Form"
-permalink: kb/159/Q159896/
+permalink: /kb/159/Q159896/
 ---
 
 ## Q159896: WD97: How to Control the Tabbing Order in a Form

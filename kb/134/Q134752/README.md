@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q134752: PC Gen: 3.5 Mail for PC Networks Resource Kit Disks [3.5]"
-permalink: kb/134/Q134752/
+title: "Q134752: PC Gen: 3.5 Mail for PC Networks Resource Kit Disks &#91;3.5&#93;"
+permalink: /kb/134/Q134752/
 ---
 
-## Q134752: PC Gen: 3.5 Mail for PC Networks Resource Kit Disks [3.5]
+## Q134752: PC Gen: 3.5 Mail for PC Networks Resource Kit Disks &#91;3.5&#93;
 
 	Article: Q134752
 	Product(s): Microsoft Mail For PC Networks

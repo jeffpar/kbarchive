@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107177: Flight Simulator: No Icon Available in Windows"
-permalink: kb/107/Q107177/
+permalink: /kb/107/Q107177/
 ---
 
 ## Q107177: Flight Simulator: No Icon Available in Windows

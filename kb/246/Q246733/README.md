@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246733: INFO: Windows CE Web Browsers"
-permalink: kb/246/Q246733/
+permalink: /kb/246/Q246733/
 ---
 
 ## Q246733: INFO: Windows CE Web Browsers

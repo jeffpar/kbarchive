@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323614: SMS: Increasing Zero-Byte Files in Replmgr.box&#92;Incoming Folder"
-permalink: kb/323/Q323614/
+permalink: /kb/323/Q323614/
 ---
 
 ## Q323614: SMS: Increasing Zero-Byte Files in Replmgr.box&#92;Incoming Folder

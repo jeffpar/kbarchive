@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185942: XADM: Cannot Run ISINTEG -PATCH on Cluster Server Computer"
-permalink: kb/185/Q185942/
+permalink: /kb/185/Q185942/
 ---
 
 ## Q185942: XADM: Cannot Run ISINTEG -PATCH on Cluster Server Computer

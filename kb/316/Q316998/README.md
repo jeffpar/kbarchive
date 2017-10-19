@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316998: PRB: FTP Banner Displayed on Command Line Cannot Be Removed"
-permalink: kb/316/Q316998/
+permalink: /kb/316/Q316998/
 ---
 
 ## Q316998: PRB: FTP Banner Displayed on Command Line Cannot Be Removed

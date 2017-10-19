@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192928: MCM: Motorcycle Does Not Move When You Attempt to Accelerate"
-permalink: kb/192/Q192928/
+permalink: /kb/192/Q192928/
 ---
 
 ## Q192928: MCM: Motorcycle Does Not Move When You Attempt to Accelerate

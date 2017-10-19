@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235154: SMS: 16-Bit Remote Control Components Remain After WIN Upgrade"
-permalink: kb/235/Q235154/
+permalink: /kb/235/Q235154/
 ---
 
 ## Q235154: SMS: 16-Bit Remote Control Components Remain After WIN Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189708: BUG: Calculator Gives Numeric Overflow on Some Calculation"
-permalink: kb/189/Q189708/
+permalink: /kb/189/Q189708/
 ---
 
 ## Q189708: BUG: Calculator Gives Numeric Overflow on Some Calculation

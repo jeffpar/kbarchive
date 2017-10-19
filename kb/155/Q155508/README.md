@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155508: Imagehlp.dll UnDecorateSymbolName Does Not Return Correct Name"
-permalink: kb/155/Q155508/
+permalink: /kb/155/Q155508/
 ---
 
 ## Q155508: Imagehlp.dll UnDecorateSymbolName Does Not Return Correct Name

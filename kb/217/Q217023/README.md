@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217023: Event ID 5701 Starting Netlogon on Domain Controller"
-permalink: kb/217/Q217023/
+permalink: /kb/217/Q217023/
 ---
 
 ## Q217023: Event ID 5701 Starting Netlogon on Domain Controller

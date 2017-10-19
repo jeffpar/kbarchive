@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230682: XFOR: Convert Processes MEXNTS and NTSMEX Don't Run"
-permalink: kb/230/Q230682/
+permalink: /kb/230/Q230682/
 ---
 
 ## Q230682: XFOR: Convert Processes MEXNTS and NTSMEX Don't Run

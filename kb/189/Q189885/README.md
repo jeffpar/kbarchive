@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189885: MSB Solar and Explorapedia: Program Does Not Start"
-permalink: kb/189/Q189885/
+permalink: /kb/189/Q189885/
 ---
 
 ## Q189885: MSB Solar and Explorapedia: Program Does Not Start

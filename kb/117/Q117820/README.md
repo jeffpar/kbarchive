@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117820: Mac Cinemania 94: Problems Pressing Keyboard Keys Repeatedly"
-permalink: kb/117/Q117820/
+permalink: /kb/117/Q117820/
 ---
 
 ## Q117820: Mac Cinemania 94: Problems Pressing Keyboard Keys Repeatedly

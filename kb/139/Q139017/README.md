@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139017: Cannot Monitor Recording with Compaq ESS ES688 Sound Chip"
-permalink: kb/139/Q139017/
+permalink: /kb/139/Q139017/
 ---
 
 ## Q139017: Cannot Monitor Recording with Compaq ESS ES688 Sound Chip

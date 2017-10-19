@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256156: PRB: Report Transported from DOS Causes Problems in Visual FoxPr"
-permalink: kb/256/Q256156/
+permalink: /kb/256/Q256156/
 ---
 
 ## Q256156: PRB: Report Transported from DOS Causes Problems in Visual FoxPr

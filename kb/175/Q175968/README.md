@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175968: XCLN: Windows 3.x Client Fails to Send to SMTP Address"
-permalink: kb/175/Q175968/
+permalink: /kb/175/Q175968/
 ---
 
 ## Q175968: XCLN: Windows 3.x Client Fails to Send to SMTP Address

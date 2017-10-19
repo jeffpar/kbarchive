@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208452: XCLN: How to Change Outlook Calendar/Task Date to 4-Digit Date"
-permalink: kb/208/Q208452/
+permalink: /kb/208/Q208452/
 ---
 
 ## Q208452: XCLN: How to Change Outlook Calendar/Task Date to 4-Digit Date

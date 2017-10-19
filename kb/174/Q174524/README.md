@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174524: HOWTO: Retrieve and Insert HTML Into Memo Field"
-permalink: kb/174/Q174524/
+permalink: /kb/174/Q174524/
 ---
 
 ## Q174524: HOWTO: Retrieve and Insert HTML Into Memo Field

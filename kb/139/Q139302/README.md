@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139302: Installing Novell GroupWise Overwrites Mapi.dll File"
-permalink: kb/139/Q139302/
+permalink: /kb/139/Q139302/
 ---
 
 ## Q139302: Installing Novell GroupWise Overwrites Mapi.dll File

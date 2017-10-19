@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q38936: DOCERR: [bx].month Example Incorrect in MASM Programmer's Guide"
-permalink: kb/038/Q38936/
+title: "Q38936: DOCERR: &#91;bx&#93;.month Example Incorrect in MASM Programmer's Guide"
+permalink: /kb/038/Q38936/
 ---
 
-## Q38936: DOCERR: [bx].month Example Incorrect in MASM Programmer's Guide
+## Q38936: DOCERR: &#91;bx&#93;.month Example Incorrect in MASM Programmer's Guide
 
 	Article: Q38936
 	Product(s): Microsoft Macro Assembler

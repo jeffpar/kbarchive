@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257849: HOWTO: Resize RichTextbox Control with Endless Bottom"
-permalink: kb/257/Q257849/
+permalink: /kb/257/Q257849/
 ---
 
 ## Q257849: HOWTO: Resize RichTextbox Control with Endless Bottom

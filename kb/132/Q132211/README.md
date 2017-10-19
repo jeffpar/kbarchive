@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132211: PC Win: GOODIES.DLL Fails Without a Tools Menu"
-permalink: kb/132/Q132211/
+permalink: /kb/132/Q132211/
 ---
 
 ## Q132211: PC Win: GOODIES.DLL Fails Without a Tools Menu

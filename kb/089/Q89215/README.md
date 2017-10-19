@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89215: INFO: Mapping Modes and Round-Off Errors"
-permalink: kb/089/Q89215/
+permalink: /kb/089/Q89215/
 ---
 
 ## Q89215: INFO: Mapping Modes and Round-Off Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137354: Using Enumerated Properties in an OLE Control"
-permalink: kb/137/Q137354/
+permalink: /kb/137/Q137354/
 ---
 
 ## Q137354: Using Enumerated Properties in an OLE Control

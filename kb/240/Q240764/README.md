@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240764: Office 2000 8 in 1, Step by Step Comments and Corrections"
-permalink: kb/240/Q240764/
+permalink: /kb/240/Q240764/
 ---
 
 ## Q240764: Office 2000 8 in 1, Step by Step Comments and Corrections

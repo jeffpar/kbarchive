@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154397: ADT/ODE: How to Modify RefreshTableLinks Module in Solutions.mdb"
-permalink: kb/154/Q154397/
+permalink: /kb/154/Q154397/
 ---
 
 ## Q154397: ADT/ODE: How to Modify RefreshTableLinks Module in Solutions.mdb

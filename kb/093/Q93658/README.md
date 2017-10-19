@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93658: WD97: How to Send Printer Escape Codes from a Word Document"
-permalink: kb/093/Q93658/
+permalink: /kb/093/Q93658/
 ---
 
 ## Q93658: WD97: How to Send Printer Escape Codes from a Word Document

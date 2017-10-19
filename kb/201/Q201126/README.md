@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201126: SMS: Troubleshooting Connectivity to the SMS Site Database"
-permalink: kb/201/Q201126/
+permalink: /kb/201/Q201126/
 ---
 
 ## Q201126: SMS: Troubleshooting Connectivity to the SMS Site Database

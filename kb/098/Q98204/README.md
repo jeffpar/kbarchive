@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98204: PC WFW: MAPI Tools Disk [5.25, 1.2 MB]"
-permalink: kb/098/Q98204/
+title: "Q98204: PC WFW: MAPI Tools Disk &#91;5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98204/
 ---
 
-## Q98204: PC WFW: MAPI Tools Disk [5.25, 1.2 MB]
+## Q98204: PC WFW: MAPI Tools Disk &#91;5.25, 1.2 MB&#93;
 
 	Article: Q98204
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102066: Using CHKSTOR for Disk Quota Reporting in LAN Manager"
-permalink: kb/102/Q102066/
+permalink: /kb/102/Q102066/
 ---
 
 ## Q102066: Using CHKSTOR for Disk Quota Reporting in LAN Manager

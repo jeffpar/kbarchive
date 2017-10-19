@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161070: Step by Step Roaming Profiles Configuration"
-permalink: kb/161/Q161070/
+permalink: /kb/161/Q161070/
 ---
 
 ## Q161070: Step by Step Roaming Profiles Configuration

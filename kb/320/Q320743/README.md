@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320743: SMS: Smsapm32 May Cause Programs to Run Unexpectedly or &quot;Spin&quot;"
-permalink: kb/320/Q320743/
+permalink: /kb/320/Q320743/
 ---
 
 ## Q320743: SMS: Smsapm32 May Cause Programs to Run Unexpectedly or &quot;Spin&quot;

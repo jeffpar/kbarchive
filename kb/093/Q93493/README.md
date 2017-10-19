@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93493: Mac Srv: Admin Functions w/ Mismatched Client/Server Versions"
-permalink: kb/093/Q93493/
+permalink: /kb/093/Q93493/
 ---
 
 ## Q93493: Mac Srv: Admin Functions w/ Mismatched Client/Server Versions

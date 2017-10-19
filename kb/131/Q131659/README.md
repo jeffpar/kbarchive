@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131659: RAS Err Msg Connecting a Remote Server Share: Access Denied"
-permalink: kb/131/Q131659/
+permalink: /kb/131/Q131659/
 ---
 
 ## Q131659: RAS Err Msg Connecting a Remote Server Share: Access Denied

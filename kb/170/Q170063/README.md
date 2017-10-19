@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170063: RASMAN Fails with 0xC0000005 - Access Violation"
-permalink: kb/170/Q170063/
+permalink: /kb/170/Q170063/
 ---
 
 ## Q170063: RASMAN Fails with 0xC0000005 - Access Violation

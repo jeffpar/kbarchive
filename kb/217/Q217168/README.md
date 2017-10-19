@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217168: FIX: Application Crashes When Run in Debugger"
-permalink: kb/217/Q217168/
+permalink: /kb/217/Q217168/
 ---
 
 ## Q217168: FIX: Application Crashes When Run in Debugger

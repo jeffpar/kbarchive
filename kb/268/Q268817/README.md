@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268817: Deadlock in Redirector Delays Opening a File on the Network"
-permalink: kb/268/Q268817/
+permalink: /kb/268/Q268817/
 ---
 
 ## Q268817: Deadlock in Redirector Delays Opening a File on the Network

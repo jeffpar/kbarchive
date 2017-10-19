@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193323: XCON: Eicon X.25 Limited to Control Block Value of 32"
-permalink: kb/193/Q193323/
+permalink: /kb/193/Q193323/
 ---
 
 ## Q193323: XCON: Eicon X.25 Limited to Control Block Value of 32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97422: Word for Windows Setup Err: Unable to Update WWORD20.INF"
-permalink: kb/097/Q97422/
+permalink: /kb/097/Q97422/
 ---
 
 ## Q97422: Word for Windows Setup Err: Unable to Update WWORD20.INF

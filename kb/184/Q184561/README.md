@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184561: Instrument Flight Techniques with Flight Sim 98 Corrections"
-permalink: kb/184/Q184561/
+permalink: /kb/184/Q184561/
 ---
 
 ## Q184561: Instrument Flight Techniques with Flight Sim 98 Corrections

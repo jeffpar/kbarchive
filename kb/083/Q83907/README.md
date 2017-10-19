@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83907: Error in NETWORKS.WRI Concerning Printing Across LANtastic"
-permalink: kb/083/Q83907/
+permalink: /kb/083/Q83907/
 ---
 
 ## Q83907: Error in NETWORKS.WRI Concerning Printing Across LANtastic

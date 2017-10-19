@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196662: Window Settings for Folders on the Desktop Are Not Retained"
-permalink: kb/196/Q196662/
+permalink: /kb/196/Q196662/
 ---
 
 ## Q196662: Window Settings for Folders on the Desktop Are Not Retained

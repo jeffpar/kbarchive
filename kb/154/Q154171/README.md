@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154171: BUG: Macintosh Help Key Does Not Invoke FoxPro Help"
-permalink: kb/154/Q154171/
+permalink: /kb/154/Q154171/
 ---
 
 ## Q154171: BUG: Macintosh Help Key Does Not Invoke FoxPro Help

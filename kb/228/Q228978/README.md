@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228978: MidMad: Game Unexpectedly Quits After You Start a Race"
-permalink: kb/228/Q228978/
+permalink: /kb/228/Q228978/
 ---
 
 ## Q228978: MidMad: Game Unexpectedly Quits After You Start a Race

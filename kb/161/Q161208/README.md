@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161208: HOWTO: Create a Default Property For a User Control"
-permalink: kb/161/Q161208/
+permalink: /kb/161/Q161208/
 ---
 
 ## Q161208: HOWTO: Create a Default Property For a User Control

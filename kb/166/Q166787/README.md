@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166787: WD97: ODMA File Open Not Supported in Mail Merge"
-permalink: kb/166/Q166787/
+permalink: /kb/166/Q166787/
 ---
 
 ## Q166787: WD97: ODMA File Open Not Supported in Mail Merge

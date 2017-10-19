@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158192: XCLN: Error When Opening File Posted to Public Folder"
-permalink: kb/158/Q158192/
+permalink: /kb/158/Q158192/
 ---
 
 ## Q158192: XCLN: Error When Opening File Posted to Public Folder

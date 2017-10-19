@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173557: XADM: No Messages Generated when 2 Clients Modify the Same Rule"
-permalink: kb/173/Q173557/
+permalink: /kb/173/Q173557/
 ---
 
 ## Q173557: XADM: No Messages Generated when 2 Clients Modify the Same Rule

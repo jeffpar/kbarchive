@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110662: BUG: SystemParametersInfo() Does Not Modify WIN.INI"
-permalink: kb/110/Q110662/
+permalink: /kb/110/Q110662/
 ---
 
 ## Q110662: BUG: SystemParametersInfo() Does Not Modify WIN.INI

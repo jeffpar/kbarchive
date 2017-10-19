@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130432: Daylight Saving Time Not Displayed Before April 6, 1987"
-permalink: kb/130/Q130432/
+permalink: /kb/130/Q130432/
 ---
 
 ## Q130432: Daylight Saving Time Not Displayed Before April 6, 1987

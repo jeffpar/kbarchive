@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153155: How To Use New Undocumented Foxtools Function JustCSName()"
-permalink: kb/153/Q153155/
+permalink: /kb/153/Q153155/
 ---
 
 ## Q153155: How To Use New Undocumented Foxtools Function JustCSName()

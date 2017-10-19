@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127158: Amount of Memory Detected by POST and NTDETECT.COM Differs"
-permalink: kb/127/Q127158/
+permalink: /kb/127/Q127158/
 ---
 
 ## Q127158: Amount of Memory Detected by POST and NTDETECT.COM Differs

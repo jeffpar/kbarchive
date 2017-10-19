@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89870: Proofing Sound Quality May Vary with Speed in Proof Reader"
-permalink: kb/089/Q89870/
+permalink: /kb/089/Q89870/
 ---
 
 ## Q89870: Proofing Sound Quality May Vary with Speed in Proof Reader

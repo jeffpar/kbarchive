@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85162: Forcing the Installation of Only MS-DOS 5 or Windows 3.1"
-permalink: kb/085/Q85162/
+permalink: /kb/085/Q85162/
 ---
 
 ## Q85162: Forcing the Installation of Only MS-DOS 5 or Windows 3.1

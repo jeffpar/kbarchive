@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156249: MSB Dinosaurs: Program May Not Start Without CD Audio Device"
-permalink: kb/156/Q156249/
+permalink: /kb/156/Q156249/
 ---
 
 ## Q156249: MSB Dinosaurs: Program May Not Start Without CD Audio Device

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68895: Adobe Type Manager 1.0 Does Not Print in Color"
-permalink: kb/068/Q68895/
+permalink: /kb/068/Q68895/
 ---
 
 ## Q68895: Adobe Type Manager 1.0 Does Not Print in Color

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151040: FP: Copy Web Command Replaces Files on Destination Web"
-permalink: kb/151/Q151040/
+permalink: /kb/151/Q151040/
 ---
 
 ## Q151040: FP: Copy Web Command Replaces Files on Destination Web

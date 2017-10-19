@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202108: SMS: Software Inventory Does Not Amass &amp; Display Full File Paths"
-permalink: kb/202/Q202108/
+permalink: /kb/202/Q202108/
 ---
 
 ## Q202108: SMS: Software Inventory Does Not Amass &amp; Display Full File Paths

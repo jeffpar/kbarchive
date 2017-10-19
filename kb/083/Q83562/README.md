@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83562: SMARTDrive Version 4.0 and Syquest Removable Drives"
-permalink: kb/083/Q83562/
+permalink: /kb/083/Q83562/
 ---
 
 ## Q83562: SMARTDrive Version 4.0 and Syquest Removable Drives

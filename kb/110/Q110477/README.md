@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110477: BUG: L1103 Error Caused by Incorrectly Nested Segments"
-permalink: kb/110/Q110477/
+permalink: /kb/110/Q110477/
 ---
 
 ## Q110477: BUG: L1103 Error Caused by Incorrectly Nested Segments

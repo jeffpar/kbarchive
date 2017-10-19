@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310709: Dns.exe Process Quits Because of an Access Violation"
-permalink: kb/310/Q310709/
+permalink: /kb/310/Q310709/
 ---
 
 ## Q310709: Dns.exe Process Quits Because of an Access Violation

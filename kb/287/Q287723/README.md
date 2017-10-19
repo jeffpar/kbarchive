@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287723: Games: Error:OE: 0028:C000EC99"
-permalink: kb/287/Q287723/
+permalink: /kb/287/Q287723/
 ---
 
 ## Q287723: Games: Error:OE: 0028:C000EC99

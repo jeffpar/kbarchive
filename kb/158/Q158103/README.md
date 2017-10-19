@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158103: GEX: Choppy Sound or Gameplay"
-permalink: kb/158/Q158103/
+permalink: /kb/158/Q158103/
 ---
 
 ## Q158103: GEX: Choppy Sound or Gameplay

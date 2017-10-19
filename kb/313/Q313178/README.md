@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313178: PRB: Error Establishing Socket with JDBC Driver"
-permalink: kb/313/Q313178/
+permalink: /kb/313/Q313178/
 ---
 
 ## Q313178: PRB: Error Establishing Socket with JDBC Driver

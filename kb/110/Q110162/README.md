@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110162: Windows for Workgroups 3.11 Disk 8 Contains Disk 1 Files"
-permalink: kb/110/Q110162/
+permalink: /kb/110/Q110162/
 ---
 
 ## Q110162: Windows for Workgroups 3.11 Disk 8 Contains Disk 1 Files

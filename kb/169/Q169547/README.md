@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169547: WD97: Some OLE Automation Commands Fail with Visual Fox Pro"
-permalink: kb/169/Q169547/
+permalink: /kb/169/Q169547/
 ---
 
 ## Q169547: WD97: Some OLE Automation Commands Fail with Visual Fox Pro

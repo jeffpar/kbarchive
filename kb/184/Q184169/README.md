@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184169: SMS: SMSEXEC Dr. Watson Error During Package Distribution"
-permalink: kb/184/Q184169/
+permalink: /kb/184/Q184169/
 ---
 
 ## Q184169: SMS: SMSEXEC Dr. Watson Error During Package Distribution

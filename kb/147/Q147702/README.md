@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147702: XADM: Permissions Required to Install Microsoft Exchange Server"
-permalink: kb/147/Q147702/
+permalink: /kb/147/Q147702/
 ---
 
 ## Q147702: XADM: Permissions Required to Install Microsoft Exchange Server

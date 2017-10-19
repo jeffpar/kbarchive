@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164503: WD97: How to Order the Resource and Developer's Kits"
-permalink: kb/164/Q164503/
+permalink: /kb/164/Q164503/
 ---
 
 ## Q164503: WD97: How to Order the Resource and Developer's Kits

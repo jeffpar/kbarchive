@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137759: List of Reference Words Used by AutoClipArt"
-permalink: kb/137/Q137759/
+permalink: /kb/137/Q137759/
 ---
 
 ## Q137759: List of Reference Words Used by AutoClipArt

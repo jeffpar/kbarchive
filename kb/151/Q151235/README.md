@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151235: FPNW Does Not Search Trusted Domains for Object Names"
-permalink: kb/151/Q151235/
+permalink: /kb/151/Q151235/
 ---
 
 ## Q151235: FPNW Does Not Search Trusted Domains for Object Names

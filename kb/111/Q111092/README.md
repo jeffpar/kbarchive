@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111092: BUG: DIMENSION Statement Out of Order Causes D2030 Error"
-permalink: kb/111/Q111092/
+permalink: /kb/111/Q111092/
 ---
 
 ## Q111092: BUG: DIMENSION Statement Out of Order Causes D2030 Error

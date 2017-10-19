@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193083: PRB: &quot;User-Defined Type Not Defined&quot; Error with Shdocvw.dll Enum"
-permalink: kb/193/Q193083/
+permalink: /kb/193/Q193083/
 ---
 
 ## Q193083: PRB: &quot;User-Defined Type Not Defined&quot; Error with Shdocvw.dll Enum

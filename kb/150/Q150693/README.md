@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150693: Fury Defaults to Keyboard as Primary Flight Control Option"
-permalink: kb/150/Q150693/
+permalink: /kb/150/Q150693/
 ---
 
 ## Q150693: Fury Defaults to Keyboard as Primary Flight Control Option

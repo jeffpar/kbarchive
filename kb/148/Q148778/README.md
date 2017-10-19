@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148778: Mastering VB ErrMsg: Insufficient Memory to Run"
-permalink: kb/148/Q148778/
+permalink: /kb/148/Q148778/
 ---
 
 ## Q148778: Mastering VB ErrMsg: Insufficient Memory to Run

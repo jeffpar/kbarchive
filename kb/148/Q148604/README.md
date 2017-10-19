@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148604: BUG: F1001 Error If Undeclared Namelist Variable in Subroutine"
-permalink: kb/148/Q148604/
+permalink: /kb/148/Q148604/
 ---
 
 ## Q148604: BUG: F1001 Error If Undeclared Namelist Variable in Subroutine

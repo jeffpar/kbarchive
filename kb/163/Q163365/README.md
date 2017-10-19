@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163365: WD97: Hang During Copy/Paste or Drag/Drop of Object After Undo"
-permalink: kb/163/Q163365/
+permalink: /kb/163/Q163365/
 ---
 
 ## Q163365: WD97: Hang During Copy/Paste or Drag/Drop of Object After Undo

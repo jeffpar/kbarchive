@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231726: HOWTO: Export a DataReport to an RTF file"
-permalink: kb/231/Q231726/
+permalink: /kb/231/Q231726/
 ---
 
 ## Q231726: HOWTO: Export a DataReport to an RTF file

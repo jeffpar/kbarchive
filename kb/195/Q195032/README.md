@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195032: PRB: Incorrect Function Signatures May Cause Problems in Release"
-permalink: kb/195/Q195032/
+permalink: /kb/195/Q195032/
 ---
 
 ## Q195032: PRB: Incorrect Function Signatures May Cause Problems in Release

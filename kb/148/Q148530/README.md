@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148530: Bookshelf 96-97: Changes to Internet Updates Not Saved"
-permalink: kb/148/Q148530/
+permalink: /kb/148/Q148530/
 ---
 
 ## Q148530: Bookshelf 96-97: Changes to Internet Updates Not Saved

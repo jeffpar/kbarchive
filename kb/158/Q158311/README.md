@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158311: SMS: Audit32 May Fail on Workstations Running Windows NT"
-permalink: kb/158/Q158311/
+permalink: /kb/158/Q158311/
 ---
 
 ## Q158311: SMS: Audit32 May Fail on Workstations Running Windows NT

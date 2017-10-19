@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320913: Problems Upgrading a User-Mode Print Driver in Windows NT 4.0"
-permalink: kb/320/Q320913/
+permalink: /kb/320/Q320913/
 ---
 
 ## Q320913: Problems Upgrading a User-Mode Print Driver in Windows NT 4.0

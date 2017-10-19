@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139463: PC Win: How to Customize Mail 3.x MailBeep under Windows 95"
-permalink: kb/139/Q139463/
+permalink: /kb/139/Q139463/
 ---
 
 ## Q139463: PC Win: How to Customize Mail 3.x MailBeep under Windows 95

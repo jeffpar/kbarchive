@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184832: Intermittent Name Conflicts with WINS Server"
-permalink: kb/184/Q184832/
+permalink: /kb/184/Q184832/
 ---
 
 ## Q184832: Intermittent Name Conflicts with WINS Server

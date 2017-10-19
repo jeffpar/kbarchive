@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74212: Search Algorithm of MS-DOS 5.0 EMM386.EXE"
-permalink: kb/074/Q74212/
+permalink: /kb/074/Q74212/
 ---
 
 ## Q74212: Search Algorithm of MS-DOS 5.0 EMM386.EXE

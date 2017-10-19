@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160605: WinNT Err: OS/2 !! SYS01475 After Restart"
-permalink: kb/160/Q160605/
+permalink: /kb/160/Q160605/
 ---
 
 ## Q160605: WinNT Err: OS/2 !! SYS01475 After Restart

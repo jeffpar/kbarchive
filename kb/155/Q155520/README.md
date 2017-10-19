@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155520: BUG: Can't Use 3-D GET Fields in Visual FoxPro for Macintosh"
-permalink: kb/155/Q155520/
+permalink: /kb/155/Q155520/
 ---
 
 ## Q155520: BUG: Can't Use 3-D GET Fields in Visual FoxPro for Macintosh

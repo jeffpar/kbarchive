@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305332: SMS: Permissions Assigned to Domain Local Groups Do Not Work"
-permalink: kb/305/Q305332/
+permalink: /kb/305/Q305332/
 ---
 
 ## Q305332: SMS: Permissions Assigned to Domain Local Groups Do Not Work

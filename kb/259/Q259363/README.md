@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259363: SideWinder: How to Minimize and Pause Games in Revenge of Arcade"
-permalink: kb/259/Q259363/
+permalink: /kb/259/Q259363/
 ---
 
 ## Q259363: SideWinder: How to Minimize and Pause Games in Revenge of Arcade

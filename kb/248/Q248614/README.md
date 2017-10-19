@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248614: Fighter Ace II: Display Is Distorted After an Explosion"
-permalink: kb/248/Q248614/
+permalink: /kb/248/Q248614/
 ---
 
 ## Q248614: Fighter Ace II: Display Is Distorted After an Explosion

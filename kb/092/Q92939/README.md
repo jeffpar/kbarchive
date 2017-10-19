@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92939: Halftone Frequency Problem in PostScript Driver 3.53"
-permalink: kb/092/Q92939/
+permalink: /kb/092/Q92939/
 ---
 
 ## Q92939: Halftone Frequency Problem in PostScript Driver 3.53

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201014: PRB: Blocking Occurs When You Call a VB ActiveX EXE from ASP"
-permalink: kb/201/Q201014/
+permalink: /kb/201/Q201014/
 ---
 
 ## Q201014: PRB: Blocking Occurs When You Call a VB ActiveX EXE from ASP

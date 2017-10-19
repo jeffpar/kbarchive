@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121542: How to Install NDIS 2 Network Card Drivers That Are Not Listed"
-permalink: kb/121/Q121542/
+permalink: /kb/121/Q121542/
 ---
 
 ## Q121542: How to Install NDIS 2 Network Card Drivers That Are Not Listed

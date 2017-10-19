@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246845: XADM: Event ID 202 Space Tree Issues in Exchange Server 5.5 SP3"
-permalink: kb/246/Q246845/
+permalink: /kb/246/Q246845/
 ---
 
 ## Q246845: XADM: Event ID 202 Space Tree Issues in Exchange Server 5.5 SP3

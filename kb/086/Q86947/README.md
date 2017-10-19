@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86947: 3COM: What Occurs in the Event of a Mail Failure"
-permalink: kb/086/Q86947/
+permalink: /kb/086/Q86947/
 ---
 
 ## Q86947: 3COM: What Occurs in the Event of a Mail Failure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188053: SMS: How to Use Writeqdf.exe from the BackOffice Resource Kit 1"
-permalink: kb/188/Q188053/
+permalink: /kb/188/Q188053/
 ---
 
 ## Q188053: SMS: How to Use Writeqdf.exe from the BackOffice Resource Kit 1

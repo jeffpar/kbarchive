@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119427: PC WRmt: Err Msg: MAILSPL Caused a GP-Fault in MSRMT.DLL"
-permalink: kb/119/Q119427/
+permalink: /kb/119/Q119427/
 ---
 
 ## Q119427: PC WRmt: Err Msg: MAILSPL Caused a GP-Fault in MSRMT.DLL

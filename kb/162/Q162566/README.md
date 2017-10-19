@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162566: FPNW Causes Incomplete Display When Executed from Windows 95"
-permalink: kb/162/Q162566/
+permalink: /kb/162/Q162566/
 ---
 
 ## Q162566: FPNW Causes Incomplete Display When Executed from Windows 95

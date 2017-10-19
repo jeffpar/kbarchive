@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90291: Using Graphics Within a Help File"
-permalink: kb/090/Q90291/
+permalink: /kb/090/Q90291/
 ---
 
 ## Q90291: Using Graphics Within a Help File

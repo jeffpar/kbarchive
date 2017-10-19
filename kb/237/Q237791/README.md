@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237791: Unable to View Some Network Shared Folders"
-permalink: kb/237/Q237791/
+permalink: /kb/237/Q237791/
 ---
 
 ## Q237791: Unable to View Some Network Shared Folders

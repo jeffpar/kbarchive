@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143371: MSB Solar: Blank Buttons on Windows 95 Taskbar After Exiting"
-permalink: kb/143/Q143371/
+permalink: /kb/143/Q143371/
 ---
 
 ## Q143371: MSB Solar: Blank Buttons on Windows 95 Taskbar After Exiting

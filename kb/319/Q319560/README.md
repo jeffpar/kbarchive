@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319560: Cannot Install IEAK User Rights Deployment Build with MSI 2.0"
-permalink: kb/319/Q319560/
+permalink: /kb/319/Q319560/
 ---
 
 ## Q319560: Cannot Install IEAK User Rights Deployment Build with MSI 2.0

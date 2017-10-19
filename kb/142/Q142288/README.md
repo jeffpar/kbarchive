@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142288: INFO: No System Subdirectory Created on Shared Windows"
-permalink: kb/142/Q142288/
+permalink: /kb/142/Q142288/
 ---
 
 ## Q142288: INFO: No System Subdirectory Created on Shared Windows

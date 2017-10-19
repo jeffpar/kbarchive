@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93018: LMLOGON=1 Is Not Recognized at the Command Line"
-permalink: kb/093/Q93018/
+permalink: /kb/093/Q93018/
 ---
 
 ## Q93018: LMLOGON=1 Is Not Recognized at the Command Line

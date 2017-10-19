@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72890: Uninstall Hangs at 7% Complete from &quot;Bloody&quot; Virus"
-permalink: kb/072/Q72890/
+permalink: /kb/072/Q72890/
 ---
 
 ## Q72890: Uninstall Hangs at 7% Complete from &quot;Bloody&quot; Virus

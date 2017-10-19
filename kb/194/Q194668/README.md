@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194668: PRB: NewObject() Requires Null or &quot;&quot; for 2nd &amp; 3rd Parameters"
-permalink: kb/194/Q194668/
+permalink: /kb/194/Q194668/
 ---
 
 ## Q194668: PRB: NewObject() Requires Null or &quot;&quot; for 2nd &amp; 3rd Parameters

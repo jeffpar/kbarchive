@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242519: Age of Empires II: Stops Responding When You Press ALT+ TAB"
-permalink: kb/242/Q242519/
+permalink: /kb/242/Q242519/
 ---
 
 ## Q242519: Age of Empires II: Stops Responding When You Press ALT+ TAB

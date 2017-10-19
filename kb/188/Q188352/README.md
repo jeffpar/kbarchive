@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188352: ASP Caching May Cause &quot;Server Too Busy&quot; Errors and Blank Pages"
-permalink: kb/188/Q188352/
+permalink: /kb/188/Q188352/
 ---
 
 ## Q188352: ASP Caching May Cause &quot;Server Too Busy&quot; Errors and Blank Pages

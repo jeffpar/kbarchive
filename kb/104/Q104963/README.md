@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104963: BUG: SelectClipRgn() Does Not Update Properly on Printer"
-permalink: kb/104/Q104963/
+permalink: /kb/104/Q104963/
 ---
 
 ## Q104963: BUG: SelectClipRgn() Does Not Update Properly on Printer

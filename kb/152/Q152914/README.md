@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152914: XCON: MTA Terminates Unexpectedly with Event ID 2050"
-permalink: kb/152/Q152914/
+permalink: /kb/152/Q152914/
 ---
 
 ## Q152914: XCON: MTA Terminates Unexpectedly with Event ID 2050

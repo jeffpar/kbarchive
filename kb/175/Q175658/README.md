@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175658: Gathering Information for Troubleshooting Performance Issues"
-permalink: kb/175/Q175658/
+permalink: /kb/175/Q175658/
 ---
 
 ## Q175658: Gathering Information for Troubleshooting Performance Issues

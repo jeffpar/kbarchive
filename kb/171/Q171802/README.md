@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171802: FIX: Problems Updating Using DBCombo When ListField = DataField"
-permalink: kb/171/Q171802/
+permalink: /kb/171/Q171802/
 ---
 
 ## Q171802: FIX: Problems Updating Using DBCombo When ListField = DataField

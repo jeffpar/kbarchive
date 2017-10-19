@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272622: PRB: Refresh Method of Intrinsic Data Control Shows ErrMsg 3343"
-permalink: kb/272/Q272622/
+permalink: /kb/272/Q272622/
 ---
 
 ## Q272622: PRB: Refresh Method of Intrinsic Data Control Shows ErrMsg 3343

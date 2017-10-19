@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89912: File Drag May Not Work with Quick Recorder"
-permalink: kb/089/Q89912/
+permalink: /kb/089/Q89912/
 ---
 
 ## Q89912: File Drag May Not Work with Quick Recorder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242096: Cannot run System Editor."
-permalink: kb/242/Q242096/
+permalink: /kb/242/Q242096/
 ---
 
 ## Q242096: Cannot run System Editor.

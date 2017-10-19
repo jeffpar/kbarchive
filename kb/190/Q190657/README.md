@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190657: XADM: Access Violation Processing URL Larger Than 1,732 Bytes"
-permalink: kb/190/Q190657/
+permalink: /kb/190/Q190657/
 ---
 
 ## Q190657: XADM: Access Violation Processing URL Larger Than 1,732 Bytes

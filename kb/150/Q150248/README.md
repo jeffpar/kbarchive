@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150248: MSB Earth: Minimum System Requirements for Windows"
-permalink: kb/150/Q150248/
+permalink: /kb/150/Q150248/
 ---
 
 ## Q150248: MSB Earth: Minimum System Requirements for Windows

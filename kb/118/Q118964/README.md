@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118964: PC WFW: Upgrade from WGPO to Microsoft Mail 3.2 PO Hangs"
-permalink: kb/118/Q118964/
+permalink: /kb/118/Q118964/
 ---
 
 ## Q118964: PC WFW: Upgrade from WGPO to Microsoft Mail 3.2 PO Hangs

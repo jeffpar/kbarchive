@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159882: Slow Shutdown When LM Announce Is Enabled"
-permalink: kb/159/Q159882/
+permalink: /kb/159/Q159882/
 ---
 
 ## Q159882: Slow Shutdown When LM Announce Is Enabled

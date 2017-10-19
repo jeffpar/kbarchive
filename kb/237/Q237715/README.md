@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237715: NFL Fever 2000: Stops Responding or Quits When You Start Program"
-permalink: kb/237/Q237715/
+permalink: /kb/237/Q237715/
 ---
 
 ## Q237715: NFL Fever 2000: Stops Responding or Quits When You Start Program

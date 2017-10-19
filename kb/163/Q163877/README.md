@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163877: Problems Copying Files To Novell NetWare 3.11"
-permalink: kb/163/Q163877/
+permalink: /kb/163/Q163877/
 ---
 
 ## Q163877: Problems Copying Files To Novell NetWare 3.11

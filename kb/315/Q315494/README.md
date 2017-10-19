@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315494: No NMVT for Printer DDDLUs After Connection Outage"
-permalink: kb/315/Q315494/
+permalink: /kb/315/Q315494/
 ---
 
 ## Q315494: No NMVT for Printer DDDLUs After Connection Outage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174430: Kids Plus!: Play It and Talk It Missing Required .DLLs"
-permalink: kb/174/Q174430/
+permalink: /kb/174/Q174430/
 ---
 
 ## Q174430: Kids Plus!: Play It and Talk It Missing Required .DLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142016: BUG: System Receives Permissions When No Permissions Specified"
-permalink: kb/142/Q142016/
+permalink: /kb/142/Q142016/
 ---
 
 ## Q142016: BUG: System Receives Permissions When No Permissions Specified

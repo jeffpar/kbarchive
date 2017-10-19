@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127010: PRB: Check Box Loses 3D Look at Higher Font Sizes"
-permalink: kb/127/Q127010/
+permalink: /kb/127/Q127010/
 ---
 
 ## Q127010: PRB: Check Box Loses 3D Look at Higher Font Sizes

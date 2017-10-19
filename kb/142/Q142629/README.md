@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142629: Time Zone Map Does Not Highlight Borders"
-permalink: kb/142/Q142629/
+permalink: /kb/142/Q142629/
 ---
 
 ## Q142629: Time Zone Map Does Not Highlight Borders

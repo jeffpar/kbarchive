@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161839: XFOR: IMC May Incorrectly Set Time Zone Information"
-permalink: kb/161/Q161839/
+permalink: /kb/161/Q161839/
 ---
 
 ## Q161839: XFOR: IMC May Incorrectly Set Time Zone Information

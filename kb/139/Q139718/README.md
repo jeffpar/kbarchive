@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139718: Resizing Causes Window Contents to Flicker"
-permalink: kb/139/Q139718/
+permalink: /kb/139/Q139718/
 ---
 
 ## Q139718: Resizing Causes Window Contents to Flicker

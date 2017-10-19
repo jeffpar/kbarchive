@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174058: Delayed Worker Threads Causes a STOP 7A"
-permalink: kb/174/Q174058/
+permalink: /kb/174/Q174058/
 ---
 
 ## Q174058: Delayed Worker Threads Causes a STOP 7A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121071: No Ports in Print Manager with Services for NetWare Installed"
-permalink: kb/121/Q121071/
+permalink: /kb/121/Q121071/
 ---
 
 ## Q121071: No Ports in Print Manager with Services for NetWare Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255650: Err Msg: HTTP 500.100 - Internal Server Error - ASP Error"
-permalink: kb/255/Q255650/
+permalink: /kb/255/Q255650/
 ---
 
 ## Q255650: Err Msg: HTTP 500.100 - Internal Server Error - ASP Error

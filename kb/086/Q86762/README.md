@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86762: HP IIIsi with Script Server Won't Print in PostScript Mode"
-permalink: kb/086/Q86762/
+permalink: /kb/086/Q86762/
 ---
 
 ## Q86762: HP IIIsi with Script Server Won't Print in PostScript Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89274: Running IBM PC LAN with Windows 3.0 and 3.1"
-permalink: kb/089/Q89274/
+permalink: /kb/089/Q89274/
 ---
 
 ## Q89274: Running IBM PC LAN with Windows 3.0 and 3.1

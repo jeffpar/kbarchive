@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181719: PRB: &quot;Cannot Access the ClassView Information File...&quot;"
-permalink: kb/181/Q181719/
+permalink: /kb/181/Q181719/
 ---
 
 ## Q181719: PRB: &quot;Cannot Access the ClassView Information File...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311271: Font Selection in a PDT"
-permalink: kb/311/Q311271/
+permalink: /kb/311/Q311271/
 ---
 
 ## Q311271: Font Selection in a PDT

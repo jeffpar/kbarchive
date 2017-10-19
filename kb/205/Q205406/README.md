@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205406: SMS: Client Access Point and Distribution Point Selection"
-permalink: kb/205/Q205406/
+permalink: /kb/205/Q205406/
 ---
 
 ## Q205406: SMS: Client Access Point and Distribution Point Selection

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q86097: PC Win: MSMAIL.INI Entries in [Mac File Types]"
-permalink: kb/086/Q86097/
+title: "Q86097: PC Win: MSMAIL.INI Entries in &#91;Mac File Types&#93;"
+permalink: /kb/086/Q86097/
 ---
 
-## Q86097: PC Win: MSMAIL.INI Entries in [Mac File Types]
+## Q86097: PC Win: MSMAIL.INI Entries in &#91;Mac File Types&#93;
 
 	Article: Q86097
 	Product(s): Microsoft Mail For PC Networks

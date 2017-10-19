@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174733: OPTi FireStar Chip Set Not Recognized by Windows 95"
-permalink: kb/174/Q174733/
+permalink: /kb/174/Q174733/
 ---
 
 ## Q174733: OPTi FireStar Chip Set Not Recognized by Windows 95

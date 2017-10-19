@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152023: Locating Resources to Study Automation"
-permalink: kb/152/Q152023/
+permalink: /kb/152/Q152023/
 ---
 
 ## Q152023: Locating Resources to Study Automation

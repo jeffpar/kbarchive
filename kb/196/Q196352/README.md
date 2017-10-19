@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196352: Inside the Win98 Registry: Chapter 4 Files Missing"
-permalink: kb/196/Q196352/
+permalink: /kb/196/Q196352/
 ---
 
 ## Q196352: Inside the Win98 Registry: Chapter 4 Files Missing

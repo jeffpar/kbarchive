@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168189: XADM: Unable to Extract Windows NT Account List"
-permalink: kb/168/Q168189/
+permalink: /kb/168/Q168189/
 ---
 
 ## Q168189: XADM: Unable to Extract Windows NT Account List

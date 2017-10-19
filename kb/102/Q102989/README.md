@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102989: Device Driver Entries, PART 2--Mouse/Keyboard Driver"
-permalink: kb/102/Q102989/
+permalink: /kb/102/Q102989/
 ---
 
 ## Q102989: Device Driver Entries, PART 2--Mouse/Keyboard Driver

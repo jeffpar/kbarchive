@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89169: Using Sun PC/NFS Network With Windows 3.0"
-permalink: kb/089/Q89169/
+permalink: /kb/089/Q89169/
 ---
 
 ## Q89169: Using Sun PC/NFS Network With Windows 3.0

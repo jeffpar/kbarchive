@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73452: HIMEM /int15:xxxx Switch Does Not Work with AutoCAD 10"
-permalink: kb/073/Q73452/
+permalink: /kb/073/Q73452/
 ---
 
 ## Q73452: HIMEM /int15:xxxx Switch Does Not Work with AutoCAD 10

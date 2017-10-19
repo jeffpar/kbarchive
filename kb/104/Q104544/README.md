@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104544: Cannot Uncompress Some Floppy Disks Without Removing Data"
-permalink: kb/104/Q104544/
+permalink: /kb/104/Q104544/
 ---
 
 ## Q104544: Cannot Uncompress Some Floppy Disks Without Removing Data

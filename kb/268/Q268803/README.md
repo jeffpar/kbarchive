@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268803: SMS: Problems Upgrading SMS 2.0 to SP2 with the Web Patch"
-permalink: kb/268/Q268803/
+permalink: /kb/268/Q268803/
 ---
 
 ## Q268803: SMS: Problems Upgrading SMS 2.0 to SP2 with the Web Patch

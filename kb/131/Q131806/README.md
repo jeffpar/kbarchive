@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131806: Windows 95/98/Me: How to Install or Change a Video Driver"
-permalink: kb/131/Q131806/
+permalink: /kb/131/Q131806/
 ---
 
 ## Q131806: Windows 95/98/Me: How to Install or Change a Video Driver

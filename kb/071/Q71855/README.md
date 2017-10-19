@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71855: Windows 3.0 Resource Kit Disk Directories (5.25 Inch)"
-permalink: kb/071/Q71855/
+permalink: /kb/071/Q71855/
 ---
 
 ## Q71855: Windows 3.0 Resource Kit Disk Directories (5.25 Inch)

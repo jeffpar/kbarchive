@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276243: Microsoft Classic Board Games: Minimum System Requirements"
-permalink: kb/276/Q276243/
+permalink: /kb/276/Q276243/
 ---
 
 ## Q276243: Microsoft Classic Board Games: Minimum System Requirements

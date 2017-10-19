@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153770: ADT/ODE: &quot;Setup Error 997&quot; Installing ADT or ODE Application"
-permalink: kb/153/Q153770/
+permalink: /kb/153/Q153770/
 ---
 
 ## Q153770: ADT/ODE: &quot;Setup Error 997&quot; Installing ADT or ODE Application

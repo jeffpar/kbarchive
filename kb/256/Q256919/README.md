@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256919: DLS Connection Fails with Event ID: 705"
-permalink: kb/256/Q256919/
+permalink: /kb/256/Q256919/
 ---
 
 ## Q256919: DLS Connection Fails with Event ID: 705

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271625: Printer Properties Not Correct Printing from Windows NT 4.0"
-permalink: kb/271/Q271625/
+permalink: /kb/271/Q271625/
 ---
 
 ## Q271625: Printer Properties Not Correct Printing from Windows NT 4.0

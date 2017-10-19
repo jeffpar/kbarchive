@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120747: Broderbund's &quot;Grandma and Me&quot; App Won't Install but Still Runs"
-permalink: kb/120/Q120747/
+permalink: /kb/120/Q120747/
 ---
 
 ## Q120747: Broderbund's &quot;Grandma and Me&quot; App Won't Install but Still Runs

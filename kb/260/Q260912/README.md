@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260912: XADM: Exchange Categorization Count Displays 4294967296"
-permalink: kb/260/Q260912/
+permalink: /kb/260/Q260912/
 ---
 
 ## Q260912: XADM: Exchange Categorization Count Displays 4294967296

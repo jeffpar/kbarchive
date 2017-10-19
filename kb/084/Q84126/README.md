@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84126: Build Numbers of Windows and Windows SDK Must Match"
-permalink: kb/084/Q84126/
+permalink: /kb/084/Q84126/
 ---
 
 ## Q84126: Build Numbers of Windows and Windows SDK Must Match

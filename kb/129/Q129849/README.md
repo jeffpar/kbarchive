@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129849: NET Commands Don't Have Hex 0D at the End of Lines"
-permalink: kb/129/Q129849/
+permalink: /kb/129/Q129849/
 ---
 
 ## Q129849: NET Commands Don't Have Hex 0D at the End of Lines

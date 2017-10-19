@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246489: Frequent Browser Elections with Windows 95-Based Clients"
-permalink: kb/246/Q246489/
+permalink: /kb/246/Q246489/
 ---
 
 ## Q246489: Frequent Browser Elections with Windows 95-Based Clients

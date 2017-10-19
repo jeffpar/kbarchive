@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61995: Updating the File System in MS-DOS Shell"
-permalink: kb/061/Q61995/
+permalink: /kb/061/Q61995/
 ---
 
 ## Q61995: Updating the File System in MS-DOS Shell

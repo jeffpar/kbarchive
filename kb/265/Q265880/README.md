@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265880: FIX: Error Message: Summary Band is Too Large to Fit on Page"
-permalink: kb/265/Q265880/
+permalink: /kb/265/Q265880/
 ---
 
 ## Q265880: FIX: Error Message: Summary Band is Too Large to Fit on Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190965: PRB: IntelliSense Limitations with #define Macros"
-permalink: kb/190/Q190965/
+permalink: /kb/190/Q190965/
 ---
 
 ## Q190965: PRB: IntelliSense Limitations with #define Macros

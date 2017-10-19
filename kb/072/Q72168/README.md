@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72168: MS-DOS 5 README.TXT: Making Your Network Compatible"
-permalink: kb/072/Q72168/
+permalink: /kb/072/Q72168/
 ---
 
 ## Q72168: MS-DOS 5 README.TXT: Making Your Network Compatible

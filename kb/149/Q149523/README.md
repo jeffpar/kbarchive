@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149523: Server Operators Cannot View Administrative Shares in NT"
-permalink: kb/149/Q149523/
+permalink: /kb/149/Q149523/
 ---
 
 ## Q149523: Server Operators Cannot View Administrative Shares in NT

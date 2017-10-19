@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191830: Memory Leak Due to Repeated Logon/Logoff May Corrupt Profiles"
-permalink: kb/191/Q191830/
+permalink: /kb/191/Q191830/
 ---
 
 ## Q191830: Memory Leak Due to Repeated Logon/Logoff May Corrupt Profiles

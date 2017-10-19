@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159163: XCLN: Exchange Client PST Limitations"
-permalink: kb/159/Q159163/
+permalink: /kb/159/Q159163/
 ---
 
 ## Q159163: XCLN: Exchange Client PST Limitations

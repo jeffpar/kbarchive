@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131827: PC NTMMTA: Err Msg: Drive Is Either Local, Used, or Greater..."
-permalink: kb/131/Q131827/
+permalink: /kb/131/Q131827/
 ---
 
 ## Q131827: PC NTMMTA: Err Msg: Drive Is Either Local, Used, or Greater...

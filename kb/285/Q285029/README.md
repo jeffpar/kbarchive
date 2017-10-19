@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285029: Midtown Madness 2: SideWinder Forces Unavailable"
-permalink: kb/285/Q285029/
+permalink: /kb/285/Q285029/
 ---
 
 ## Q285029: Midtown Madness 2: SideWinder Forces Unavailable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265882: SMS: CCM Does Not Append .ccr to Client Configuration Request"
-permalink: kb/265/Q265882/
+permalink: /kb/265/Q265882/
 ---
 
 ## Q265882: SMS: CCM Does Not Append .ccr to Client Configuration Request

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175906: Clearing the Documents Menu Clears Multiple MRU Lists"
-permalink: kb/175/Q175906/
+permalink: /kb/175/Q175906/
 ---
 
 ## Q175906: Clearing the Documents Menu Clears Multiple MRU Lists

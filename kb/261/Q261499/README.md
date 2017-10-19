@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261499: Midtown Madness: CD Music Is Not Played in the Game"
-permalink: kb/261/Q261499/
+permalink: /kb/261/Q261499/
 ---
 
 ## Q261499: Midtown Madness: CD Music Is Not Played in the Game

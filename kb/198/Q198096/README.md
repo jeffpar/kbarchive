@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198096: WD97: Grammatical Errors Not Found in Headers, Footers, Comments"
-permalink: kb/198/Q198096/
+permalink: /kb/198/Q198096/
 ---
 
 ## Q198096: WD97: Grammatical Errors Not Found in Headers, Footers, Comments

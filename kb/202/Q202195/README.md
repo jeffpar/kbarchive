@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202195: SNMP OID for Logical Disk instance Name Returns Wrong Value"
-permalink: kb/202/Q202195/
+permalink: /kb/202/Q202195/
 ---
 
 ## Q202195: SNMP OID for Logical Disk instance Name Returns Wrong Value

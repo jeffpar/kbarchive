@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302655: Weather On Start-Page Not Updating After Changing The Zip Code"
-permalink: kb/302/Q302655/
+permalink: /kb/302/Q302655/
 ---
 
 ## Q302655: Weather On Start-Page Not Updating After Changing The Zip Code

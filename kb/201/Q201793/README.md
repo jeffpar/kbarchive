@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201793: SMS: Version 2.0 Remote Control Command Line Options"
-permalink: kb/201/Q201793/
+permalink: /kb/201/Q201793/
 ---
 
 ## Q201793: SMS: Version 2.0 Remote Control Command Line Options

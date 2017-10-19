@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236312: HOWTO: Disable the Default Pop-up Menu for CHtmlView"
-permalink: kb/236/Q236312/
+permalink: /kb/236/Q236312/
 ---
 
 ## Q236312: HOWTO: Disable the Default Pop-up Menu for CHtmlView

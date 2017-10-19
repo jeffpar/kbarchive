@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170395: MTG: MTA Fails with Error Code 914:ce on NetWare 4.11"
-permalink: kb/170/Q170395/
+permalink: /kb/170/Q170395/
 ---
 
 ## Q170395: MTG: MTA Fails with Error Code 914:ce on NetWare 4.11

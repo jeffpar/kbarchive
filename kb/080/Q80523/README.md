@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80523: FltSim: Pause in Formation Flying Does Not Pause Chase Plane"
-permalink: kb/080/Q80523/
+permalink: /kb/080/Q80523/
 ---
 
 ## Q80523: FltSim: Pause in Formation Flying Does Not Pause Chase Plane

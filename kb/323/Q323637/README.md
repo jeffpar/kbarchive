@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323637: Connection Settings link on Spanish-U.S. MSN Explorer version si"
-permalink: kb/323/Q323637/
+permalink: /kb/323/Q323637/
 ---
 
 ## Q323637: Connection Settings link on Spanish-U.S. MSN Explorer version si

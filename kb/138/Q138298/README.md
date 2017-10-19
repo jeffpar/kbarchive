@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138298: INFO: Visual SourceSafe System Capacities and Specifications"
-permalink: kb/138/Q138298/
+permalink: /kb/138/Q138298/
 ---
 
 ## Q138298: INFO: Visual SourceSafe System Capacities and Specifications

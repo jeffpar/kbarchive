@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171621: Automatic Logon Fails using Client Access for Windows 95"
-permalink: kb/171/Q171621/
+permalink: /kb/171/Q171621/
 ---
 
 ## Q171621: Automatic Logon Fails using Client Access for Windows 95

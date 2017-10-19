@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230176: Error Message: Dr. Watson Exception (0x80000003)"
-permalink: kb/230/Q230176/
+permalink: /kb/230/Q230176/
 ---
 
 ## Q230176: Error Message: Dr. Watson Exception (0x80000003)

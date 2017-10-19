@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248726: XADM: Installing Exchange 5.5 on Windows 2000 Causes Error Msg."
-permalink: kb/248/Q248726/
+permalink: /kb/248/Q248726/
 ---
 
 ## Q248726: XADM: Installing Exchange 5.5 on Windows 2000 Causes Error Msg.

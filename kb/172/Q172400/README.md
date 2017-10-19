@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172400: PRB: Class Wizard Overridables Are Not Added to Converted Proj"
-permalink: kb/172/Q172400/
+permalink: /kb/172/Q172400/
 ---
 
 ## Q172400: PRB: Class Wizard Overridables Are Not Added to Converted Proj

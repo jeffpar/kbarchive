@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180501: How to Move the Start Button in Windows 95"
-permalink: kb/180/Q180501/
+permalink: /kb/180/Q180501/
 ---
 
 ## Q180501: How to Move the Start Button in Windows 95

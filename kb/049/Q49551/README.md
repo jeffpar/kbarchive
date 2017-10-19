@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49551: Multi-Player Information README.DOC Version 4.00"
-permalink: kb/049/Q49551/
+permalink: /kb/049/Q49551/
 ---
 
 ## Q49551: Multi-Player Information README.DOC Version 4.00

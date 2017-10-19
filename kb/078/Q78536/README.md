@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78536: Shadow RAM Technical Information"
-permalink: kb/078/Q78536/
+permalink: /kb/078/Q78536/
 ---
 
 ## Q78536: Shadow RAM Technical Information

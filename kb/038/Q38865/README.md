@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38865: Cannot Use /2 Switch for Dual-Monitor Debugging on PS/2"
-permalink: kb/038/Q38865/
+permalink: /kb/038/Q38865/
 ---
 
 ## Q38865: Cannot Use /2 Switch for Dual-Monitor Debugging on PS/2

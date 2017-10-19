@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142746: How to Set Up and Administer a Microsoft Mail Post Office"
-permalink: kb/142/Q142746/
+permalink: /kb/142/Q142746/
 ---
 
 ## Q142746: How to Set Up and Administer a Microsoft Mail Post Office

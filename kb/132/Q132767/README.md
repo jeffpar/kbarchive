@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132767: City Streets for Windows Cannot Paste Map into Paint"
-permalink: kb/132/Q132767/
+permalink: /kb/132/Q132767/
 ---
 
 ## Q132767: City Streets for Windows Cannot Paste Map into Paint

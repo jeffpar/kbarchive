@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293836: XADM: Information Store Performance Degradation"
-permalink: kb/293/Q293836/
+permalink: /kb/293/Q293836/
 ---
 
 ## Q293836: XADM: Information Store Performance Degradation

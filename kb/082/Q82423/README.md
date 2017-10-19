@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82423: Amortizer Plus GP Faults when Balancing"
-permalink: kb/082/Q82423/
+permalink: /kb/082/Q82423/
 ---
 
 ## Q82423: Amortizer Plus GP Faults when Balancing

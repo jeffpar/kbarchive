@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262492: STOP 0x0000000a or STOP 0x00000050 Error with HP Printer Drivers"
-permalink: kb/262/Q262492/
+permalink: /kb/262/Q262492/
 ---
 
 ## Q262492: STOP 0x0000000a or STOP 0x00000050 Error with HP Printer Drivers

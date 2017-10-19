@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157141: PPT7: Pack and Go Never Prompts to Insert Disk into Drive A:"
-permalink: kb/157/Q157141/
+permalink: /kb/157/Q157141/
 ---
 
 ## Q157141: PPT7: Pack and Go Never Prompts to Insert Disk into Drive A:

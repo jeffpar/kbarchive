@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111260: Flight Simulator 5.0: Error Creating Logbook"
-permalink: kb/111/Q111260/
+permalink: /kb/111/Q111260/
 ---
 
 ## Q111260: Flight Simulator 5.0: Error Creating Logbook

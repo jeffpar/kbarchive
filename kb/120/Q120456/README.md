@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120456: RAS Server Cannot See Client Connected through IPX PPP Only"
-permalink: kb/120/Q120456/
+permalink: /kb/120/Q120456/
 ---
 
 ## Q120456: RAS Server Cannot See Client Connected through IPX PPP Only

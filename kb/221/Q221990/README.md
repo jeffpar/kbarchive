@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221990: PRB: Can't Add Windows Common Controls or Common Dialog Control"
-permalink: kb/221/Q221990/
+permalink: /kb/221/Q221990/
 ---
 
 ## Q221990: PRB: Can't Add Windows Common Controls or Common Dialog Control

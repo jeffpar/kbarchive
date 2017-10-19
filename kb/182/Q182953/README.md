@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182953: XCON: MTA Fails to Convert Attachment and Stops Unexpectedly"
-permalink: kb/182/Q182953/
+permalink: /kb/182/Q182953/
 ---
 
 ## Q182953: XCON: MTA Fails to Convert Attachment and Stops Unexpectedly

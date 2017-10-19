@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195841: Event Viewer Error 9503: NWLinkIpx Illegal Parameters"
-permalink: kb/195/Q195841/
+permalink: /kb/195/Q195841/
 ---
 
 ## Q195841: Event Viewer Error 9503: NWLinkIpx Illegal Parameters

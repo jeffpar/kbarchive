@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188346: New Client Connectivity Detection in ServerSupportFunction()"
-permalink: kb/188/Q188346/
+permalink: /kb/188/Q188346/
 ---
 
 ## Q188346: New Client Connectivity Detection in ServerSupportFunction()

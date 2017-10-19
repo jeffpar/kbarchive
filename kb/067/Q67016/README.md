@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67016: Fontware Installation Kit Requires Different Character Set"
-permalink: kb/067/Q67016/
+permalink: /kb/067/Q67016/
 ---
 
 ## Q67016: Fontware Installation Kit Requires Different Character Set

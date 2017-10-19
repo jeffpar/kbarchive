@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145669: INFO: A Comparison of Visual C++ Products"
-permalink: kb/145/Q145669/
+permalink: /kb/145/Q145669/
 ---
 
 ## Q145669: INFO: A Comparison of Visual C++ Products

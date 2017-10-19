@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166867: WD97: &quot;Bookmark Not Defined!&quot; Error with Converted Hyperlink"
-permalink: kb/166/Q166867/
+permalink: /kb/166/Q166867/
 ---
 
 ## Q166867: WD97: &quot;Bookmark Not Defined!&quot; Error with Converted Hyperlink

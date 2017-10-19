@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168277: FIX: Access Violation Running Visual FoxPro on Windows NT 4.0"
-permalink: kb/168/Q168277/
+permalink: /kb/168/Q168277/
 ---
 
 ## Q168277: FIX: Access Violation Running Visual FoxPro on Windows NT 4.0

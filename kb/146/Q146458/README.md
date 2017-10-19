@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146458: XCLN: Cannot Drag Messages to a Window on Taskbar"
-permalink: kb/146/Q146458/
+permalink: /kb/146/Q146458/
 ---
 
 ## Q146458: XCLN: Cannot Drag Messages to a Window on Taskbar

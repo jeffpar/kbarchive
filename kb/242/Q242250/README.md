@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242250: XFOR: Exchange Connectors Require Separate Service Pack Install"
-permalink: kb/242/Q242250/
+permalink: /kb/242/Q242250/
 ---
 
 ## Q242250: XFOR: Exchange Connectors Require Separate Service Pack Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163508: STOP 0xA in Ntfs.sys During Reboot"
-permalink: kb/163/Q163508/
+permalink: /kb/163/Q163508/
 ---
 
 ## Q163508: STOP 0xA in Ntfs.sys During Reboot

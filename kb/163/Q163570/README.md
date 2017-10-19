@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163570: CMEPLN Does Not Always Return Fully Qualified LU Name"
-permalink: kb/163/Q163570/
+permalink: /kb/163/Q163570/
 ---
 
 ## Q163570: CMEPLN Does Not Always Return Fully Qualified LU Name

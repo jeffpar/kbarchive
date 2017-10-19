@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123803: FIX: Fatal Error C1001: Compiler File MSC1.CPP Line 1056"
-permalink: kb/123/Q123803/
+permalink: /kb/123/Q123803/
 ---
 
 ## Q123803: FIX: Fatal Error C1001: Compiler File MSC1.CPP Line 1056

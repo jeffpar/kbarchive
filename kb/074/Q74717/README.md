@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74717: Windows Err Msg: System Integrity Violation"
-permalink: kb/074/Q74717/
+permalink: /kb/074/Q74717/
 ---
 
 ## Q74717: Windows Err Msg: System Integrity Violation

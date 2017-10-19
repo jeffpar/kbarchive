@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130477: Changing the Number of Packages Read by Audit16"
-permalink: kb/130/Q130477/
+permalink: /kb/130/Q130477/
 ---
 
 ## Q130477: Changing the Number of Packages Read by Audit16

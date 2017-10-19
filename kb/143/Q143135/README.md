@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143135: PORTUAS Err Msg: Unexpected Return Code 5 From API NetGroupAdd"
-permalink: kb/143/Q143135/
+permalink: /kb/143/Q143135/
 ---
 
 ## Q143135: PORTUAS Err Msg: Unexpected Return Code 5 From API NetGroupAdd

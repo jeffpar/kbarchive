@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124343: MSDLC T1 Timer Does Not Back Off"
-permalink: kb/124/Q124343/
+permalink: /kb/124/Q124343/
 ---
 
 ## Q124343: MSDLC T1 Timer Does Not Back Off

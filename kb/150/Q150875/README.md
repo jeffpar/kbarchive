@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150875: No Internet Tab Available in Compose Note Properties"
-permalink: kb/150/Q150875/
+permalink: /kb/150/Q150875/
 ---
 
 ## Q150875: No Internet Tab Available in Compose Note Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141397: PRB: Insertion Point Left of Input Mask in Text Box on Page"
-permalink: kb/141/Q141397/
+permalink: /kb/141/Q141397/
 ---
 
 ## Q141397: PRB: Insertion Point Left of Input Mask in Text Box on Page

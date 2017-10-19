@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171888: Unreadable Error Messages When Deleting Host Security Domains"
-permalink: kb/171/Q171888/
+permalink: /kb/171/Q171888/
 ---
 
 ## Q171888: Unreadable Error Messages When Deleting Host Security Domains

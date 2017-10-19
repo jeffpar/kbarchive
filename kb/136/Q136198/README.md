@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136198: Problems Connecting NT to UNIX Based Portable NetWare Server"
-permalink: kb/136/Q136198/
+permalink: /kb/136/Q136198/
 ---
 
 ## Q136198: Problems Connecting NT to UNIX Based Portable NetWare Server

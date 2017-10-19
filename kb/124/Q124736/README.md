@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124736: Installing HP 4V/MV Driver May Disable HP Printing in NT 3.1"
-permalink: kb/124/Q124736/
+permalink: /kb/124/Q124736/
 ---
 
 ## Q124736: Installing HP 4V/MV Driver May Disable HP Printing in NT 3.1

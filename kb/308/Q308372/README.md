@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308372: INFO: Logon Failure to Passport Returns &quot;f= &quot;  Error on the Quer"
-permalink: kb/308/Q308372/
+permalink: /kb/308/Q308372/
 ---
 
 ## Q308372: INFO: Logon Failure to Passport Returns &quot;f= &quot;  Error on the Quer

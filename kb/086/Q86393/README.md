@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86393: PC OS2: Window Titles Incorrectly Map Extended Characters"
-permalink: kb/086/Q86393/
+permalink: /kb/086/Q86393/
 ---
 
 ## Q86393: PC OS2: Window Titles Incorrectly Map Extended Characters

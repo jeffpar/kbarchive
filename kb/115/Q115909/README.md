@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115909: PRB: File Open Dialog Doesn't Display Table Copied by Finder"
-permalink: kb/115/Q115909/
+permalink: /kb/115/Q115909/
 ---
 
 ## Q115909: PRB: File Open Dialog Doesn't Display Table Copied by Finder

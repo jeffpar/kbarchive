@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50694: INFO: Evaluation Order of Expression and Function Args Undefined"
-permalink: kb/050/Q50694/
+permalink: /kb/050/Q50694/
 ---
 
 ## Q50694: INFO: Evaluation Order of Expression and Function Args Undefined

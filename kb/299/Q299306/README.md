@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299306: Client Browser Returns to Site w/ f=6 Attached to Query String"
-permalink: kb/299/Q299306/
+permalink: /kb/299/Q299306/
 ---
 
 ## Q299306: Client Browser Returns to Site w/ f=6 Attached to Query String

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123763: Share Names Displayed as DELETED in GSNW"
-permalink: kb/123/Q123763/
+permalink: /kb/123/Q123763/
 ---
 
 ## Q123763: Share Names Displayed as DELETED in GSNW

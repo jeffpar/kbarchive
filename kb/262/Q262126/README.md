@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262126: XCON: Using Imccopy.exe for Internet Mail Service Message Format"
-permalink: kb/262/Q262126/
+permalink: /kb/262/Q262126/
 ---
 
 ## Q262126: XCON: Using Imccopy.exe for Internet Mail Service Message Format

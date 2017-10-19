@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171136: ODBC Error Accessing Certificate Server Admin Tools"
-permalink: kb/171/Q171136/
+permalink: /kb/171/Q171136/
 ---
 
 ## Q171136: ODBC Error Accessing Certificate Server Admin Tools

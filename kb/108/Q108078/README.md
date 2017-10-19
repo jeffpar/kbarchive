@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108078: Dr. Watson Removed in Windows for Workgroups 3.11 Setup"
-permalink: kb/108/Q108078/
+permalink: /kb/108/Q108078/
 ---
 
 ## Q108078: Dr. Watson Removed in Windows for Workgroups 3.11 Setup

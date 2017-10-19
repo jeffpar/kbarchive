@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212869: &quot;Check Disk Space&quot; Script Is Inaccurate with Component Lists"
-permalink: kb/212/Q212869/
+permalink: /kb/212/Q212869/
 ---
 
 ## Q212869: &quot;Check Disk Space&quot; Script Is Inaccurate with Component Lists

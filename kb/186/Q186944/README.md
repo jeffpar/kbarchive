@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186944: XWEB: Some Messages Sent From Contact List Are Undeliverable"
-permalink: kb/186/Q186944/
+permalink: /kb/186/Q186944/
 ---
 
 ## Q186944: XWEB: Some Messages Sent From Contact List Are Undeliverable

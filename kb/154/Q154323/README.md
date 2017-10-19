@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154323: Explorapedia Nature: Files Installed and Modified, version 1.2"
-permalink: kb/154/Q154323/
+permalink: /kb/154/Q154323/
 ---
 
 ## Q154323: Explorapedia Nature: Files Installed and Modified, version 1.2

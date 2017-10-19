@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185216: XGEN: Explanation of Common Network Mail Abuse Phrases"
-permalink: kb/185/Q185216/
+permalink: /kb/185/Q185216/
 ---
 
 ## Q185216: XGEN: Explanation of Common Network Mail Abuse Phrases

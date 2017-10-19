@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189807: SMS: Error Msg: Unable to Locate Dll NWPROVAU.DLL"
-permalink: kb/189/Q189807/
+permalink: /kb/189/Q189807/
 ---
 
 ## Q189807: SMS: Error Msg: Unable to Locate Dll NWPROVAU.DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306511: SMS: Advertisements Set for Next Logon Run Immediately"
-permalink: kb/306/Q306511/
+permalink: /kb/306/Q306511/
 ---
 
 ## Q306511: SMS: Advertisements Set for Next Logon Run Immediately

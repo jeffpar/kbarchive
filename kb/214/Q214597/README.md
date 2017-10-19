@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214597: Cannot Run Office in Maintenance Mode After Using Sysprep"
-permalink: kb/214/Q214597/
+permalink: /kb/214/Q214597/
 ---
 
 ## Q214597: Cannot Run Office in Maintenance Mode After Using Sysprep

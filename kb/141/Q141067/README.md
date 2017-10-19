@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141067: PC WSPlus: Description of Offline and Online Merging"
-permalink: kb/141/Q141067/
+permalink: /kb/141/Q141067/
 ---
 
 ## Q141067: PC WSPlus: Description of Offline and Online Merging

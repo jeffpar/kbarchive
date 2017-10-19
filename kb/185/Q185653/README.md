@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185653: FIX: MAPIMessage.Object in Watch Window Causes Program Error"
-permalink: kb/185/Q185653/
+permalink: /kb/185/Q185653/
 ---
 
 ## Q185653: FIX: MAPIMessage.Object in Watch Window Causes Program Error

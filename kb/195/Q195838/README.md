@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195838: PRB: Cut, Copy, and Paste Unavailable in Text Annotation Menu"
-permalink: kb/195/Q195838/
+permalink: /kb/195/Q195838/
 ---
 
 ## Q195838: PRB: Cut, Copy, and Paste Unavailable in Text Annotation Menu

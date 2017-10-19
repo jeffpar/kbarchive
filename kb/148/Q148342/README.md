@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148342: Baseball 1994: Minimum System Requirements"
-permalink: kb/148/Q148342/
+permalink: /kb/148/Q148342/
 ---
 
 ## Q148342: Baseball 1994: Minimum System Requirements

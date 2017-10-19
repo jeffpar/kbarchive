@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302413: SMS: No Users or Groups Listed in Administrator User Wizard"
-permalink: kb/302/Q302413/
+permalink: /kb/302/Q302413/
 ---
 
 ## Q302413: SMS: No Users or Groups Listed in Administrator User Wizard

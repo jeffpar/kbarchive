@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253151: SMS: Systems Management Server 2.0 Dependency Package Contents"
-permalink: kb/253/Q253151/
+permalink: /kb/253/Q253151/
 ---
 
 ## Q253151: SMS: Systems Management Server 2.0 Dependency Package Contents

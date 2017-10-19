@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110884: Arcade for Windows: Minimum System Requirements"
-permalink: kb/110/Q110884/
+permalink: /kb/110/Q110884/
 ---
 
 ## Q110884: Arcade for Windows: Minimum System Requirements

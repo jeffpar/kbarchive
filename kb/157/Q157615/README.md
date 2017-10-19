@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157615: WD97: Word Can't Open Data Source If String Is Too Long"
-permalink: kb/157/Q157615/
+permalink: /kb/157/Q157615/
 ---
 
 ## Q157615: WD97: Word Can't Open Data Source If String Is Too Long

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196331: XADM: X.500 Proxy Address Creation by Move Server Wizard"
-permalink: kb/196/Q196331/
+permalink: /kb/196/Q196331/
 ---
 
 ## Q196331: XADM: X.500 Proxy Address Creation by Move Server Wizard

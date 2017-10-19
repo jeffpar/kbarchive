@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207957: Broken Trust Between Domains Results in Unsuccessful Logon"
-permalink: kb/207/Q207957/
+permalink: /kb/207/Q207957/
 ---
 
 ## Q207957: Broken Trust Between Domains Results in Unsuccessful Logon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108152: 32-Bit File Access and Stacker 3.1 Utilities"
-permalink: kb/108/Q108152/
+permalink: /kb/108/Q108152/
 ---
 
 ## Q108152: 32-Bit File Access and Stacker 3.1 Utilities

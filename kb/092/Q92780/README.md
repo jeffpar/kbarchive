@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92780: WFWG Setup Modifies Wrong Lines in CONFIG.SYS File"
-permalink: kb/092/Q92780/
+permalink: /kb/092/Q92780/
 ---
 
 ## Q92780: WFWG Setup Modifies Wrong Lines in CONFIG.SYS File

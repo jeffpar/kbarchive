@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51870: Dual-Monitor Requires 8-Bit Data Paths for Both Monitors"
-permalink: kb/051/Q51870/
+permalink: /kb/051/Q51870/
 ---
 
 ## Q51870: Dual-Monitor Requires 8-Bit Data Paths for Both Monitors

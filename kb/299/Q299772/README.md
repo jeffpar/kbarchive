@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299772: Site-Wide Travel Mode Prevents Windows NT Remote Client Install"
-permalink: kb/299/Q299772/
+permalink: /kb/299/Q299772/
 ---
 
 ## Q299772: Site-Wide Travel Mode Prevents Windows NT Remote Client Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129239: SMTP: Err Msg: Warning SMTP Output Retry Count Exceeded..."
-permalink: kb/129/Q129239/
+permalink: /kb/129/Q129239/
 ---
 
 ## Q129239: SMTP: Err Msg: Warning SMTP Output Retry Count Exceeded...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180392: Uninstall Button Is Not Displayed On Windows NT 3.51"
-permalink: kb/180/Q180392/
+permalink: /kb/180/Q180392/
 ---
 
 ## Q180392: Uninstall Button Is Not Displayed On Windows NT 3.51

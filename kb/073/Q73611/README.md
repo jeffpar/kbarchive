@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73611: Everex, Priam Partitions, and MS-DOS 5.0"
-permalink: kb/073/Q73611/
+permalink: /kb/073/Q73611/
 ---
 
 ## Q73611: Everex, Priam Partitions, and MS-DOS 5.0

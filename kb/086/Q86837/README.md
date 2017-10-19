@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86837: POINTER.EXE 8.1 May Slow Windows Applications"
-permalink: kb/086/Q86837/
+permalink: /kb/086/Q86837/
 ---
 
 ## Q86837: POINTER.EXE 8.1 May Slow Windows Applications

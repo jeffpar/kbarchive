@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105795: BUG: Cannot Have a Pathname &gt; 29 Char for SYSTEM.MDA"
-permalink: kb/105/Q105795/
+permalink: /kb/105/Q105795/
 ---
 
 ## Q105795: BUG: Cannot Have a Pathname &gt; 29 Char for SYSTEM.MDA

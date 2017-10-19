@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292740: BackOffice Resource Kit, Second Edition Setup Does Not Recognize"
-permalink: kb/292/Q292740/
+permalink: /kb/292/Q292740/
 ---
 
 ## Q292740: BackOffice Resource Kit, Second Edition Setup Does Not Recognize

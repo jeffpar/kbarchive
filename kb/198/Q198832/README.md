@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198832: XFOR: Wrong Statement in Browse Log Error Message"
-permalink: kb/198/Q198832/
+permalink: /kb/198/Q198832/
 ---
 
 ## Q198832: XFOR: Wrong Statement in Browse Log Error Message

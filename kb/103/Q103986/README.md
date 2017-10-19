@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103986: PC Win: No Sound with View New Messages Notification"
-permalink: kb/103/Q103986/
+permalink: /kb/103/Q103986/
 ---
 
 ## Q103986: PC Win: No Sound with View New Messages Notification

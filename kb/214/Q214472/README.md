@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214472: How to Restrict IIS 4.0 Users and Groups in FrontPage98"
-permalink: kb/214/Q214472/
+permalink: /kb/214/Q214472/
 ---
 
 ## Q214472: How to Restrict IIS 4.0 Users and Groups in FrontPage98

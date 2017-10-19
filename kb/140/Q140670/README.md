@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140670: FIX: Using Run-Time Type Info May Cause Memory Leak Report"
-permalink: kb/140/Q140670/
+permalink: /kb/140/Q140670/
 ---
 
 ## Q140670: FIX: Using Run-Time Type Info May Cause Memory Leak Report

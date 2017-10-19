@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113716: Installing DeskJet Plus Printer Does Not Allow Font Cartridges"
-permalink: kb/113/Q113716/
+permalink: /kb/113/Q113716/
 ---
 
 ## Q113716: Installing DeskJet Plus Printer Does Not Allow Font Cartridges

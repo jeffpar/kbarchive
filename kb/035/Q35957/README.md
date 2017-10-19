@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35957: INFO: Active Application, Active Window, Input Focus Definition"
-permalink: kb/035/Q35957/
+permalink: /kb/035/Q35957/
 ---
 
 ## Q35957: INFO: Active Application, Active Window, Input Focus Definition

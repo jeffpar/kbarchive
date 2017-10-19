@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182123: FP: No Access to Form Properties by Right-Clicking Form Field"
-permalink: kb/182/Q182123/
+permalink: /kb/182/Q182123/
 ---
 
 ## Q182123: FP: No Access to Form Properties by Right-Clicking Form Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92870: WFWG: NETX.COM Err Msg: File Server Not Found"
-permalink: kb/092/Q92870/
+permalink: /kb/092/Q92870/
 ---
 
 ## Q92870: WFWG: NETX.COM Err Msg: File Server Not Found

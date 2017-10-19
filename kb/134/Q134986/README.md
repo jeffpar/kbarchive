@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134986: Error Message: Not Enough Memory to Run ScanDisk"
-permalink: kb/134/Q134986/
+permalink: /kb/134/Q134986/
 ---
 
 ## Q134986: Error Message: Not Enough Memory to Run ScanDisk

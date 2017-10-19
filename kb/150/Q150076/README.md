@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150076: BUG: C4003: Not Enough Parameters for SubclassWindow Macro"
-permalink: kb/150/Q150076/
+permalink: /kb/150/Q150076/
 ---
 
 ## Q150076: BUG: C4003: Not Enough Parameters for SubclassWindow Macro

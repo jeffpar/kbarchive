@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247797: Extra LBN_SELCHANGE Notification for Drop-Down List Boxes"
-permalink: kb/247/Q247797/
+permalink: /kb/247/Q247797/
 ---
 
 ## Q247797: Extra LBN_SELCHANGE Notification for Drop-Down List Boxes

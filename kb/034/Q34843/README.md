@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34843: INFO: The Four Classes of Device Banding"
-permalink: kb/034/Q34843/
+permalink: /kb/034/Q34843/
 ---
 
 ## Q34843: INFO: The Four Classes of Device Banding

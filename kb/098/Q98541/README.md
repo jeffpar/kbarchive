@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98541: Windows Err Msg: LPT2 Is Not Present... (Interlnk)"
-permalink: kb/098/Q98541/
+permalink: /kb/098/Q98541/
 ---
 
 ## Q98541: Windows Err Msg: LPT2 Is Not Present... (Interlnk)

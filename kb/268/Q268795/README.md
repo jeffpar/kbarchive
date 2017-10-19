@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268795: Lack of Proper SQL Indexes Causes Slow Software Inventorying"
-permalink: kb/268/Q268795/
+permalink: /kb/268/Q268795/
 ---
 
 ## Q268795: Lack of Proper SQL Indexes Causes Slow Software Inventorying

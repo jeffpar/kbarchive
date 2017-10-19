@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236615: HOWTO: Automate MapPoint 2000 from Visual Basic"
-permalink: kb/236/Q236615/
+permalink: /kb/236/Q236615/
 ---
 
 ## Q236615: HOWTO: Automate MapPoint 2000 from Visual Basic

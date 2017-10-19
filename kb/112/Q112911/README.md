@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112911: MHS: README.TXT: Gateway to MHS, Version 3.0"
-permalink: kb/112/Q112911/
+permalink: /kb/112/Q112911/
 ---
 
 ## Q112911: MHS: README.TXT: Gateway to MHS, Version 3.0

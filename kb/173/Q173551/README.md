@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173551: PPT7: &quot;Part of File is Missing&quot; Error Attempting to Open File"
-permalink: kb/173/Q173551/
+permalink: /kb/173/Q173551/
 ---
 
 ## Q173551: PPT7: &quot;Part of File is Missing&quot; Error Attempting to Open File

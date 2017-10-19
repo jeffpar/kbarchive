@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258839: Space at End of Batch File Name Causes Server to Hang"
-permalink: kb/258/Q258839/
+permalink: /kb/258/Q258839/
 ---
 
 ## Q258839: Space at End of Batch File Name Causes Server to Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83913: NEC Pinwriter P6 Printer Driver Increases Top Margin"
-permalink: kb/083/Q83913/
+permalink: /kb/083/Q83913/
 ---
 
 ## Q83913: NEC Pinwriter P6 Printer Driver Increases Top Margin

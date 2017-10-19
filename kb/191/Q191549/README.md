@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191549: MIME Parts and Message Source for a Digitally Signed Message"
-permalink: kb/191/Q191549/
+permalink: /kb/191/Q191549/
 ---
 
 ## Q191549: MIME Parts and Message Source for a Digitally Signed Message

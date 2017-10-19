@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245092: Add Printer Wizard Does Not Start When Generating Print Queue."
-permalink: kb/245/Q245092/
+permalink: /kb/245/Q245092/
 ---
 
 ## Q245092: Add Printer Wizard Does Not Start When Generating Print Queue.

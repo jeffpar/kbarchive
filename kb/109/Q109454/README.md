@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109454: Writer: Backgrounds Are Truncated on LaserWriter"
-permalink: kb/109/Q109454/
+permalink: /kb/109/Q109454/
 ---
 
 ## Q109454: Writer: Backgrounds Are Truncated on LaserWriter

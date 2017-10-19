@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118792: Help Button Covers Close Button on the Title Bar"
-permalink: kb/118/Q118792/
+permalink: /kb/118/Q118792/
 ---
 
 ## Q118792: Help Button Covers Close Button on the Title Bar

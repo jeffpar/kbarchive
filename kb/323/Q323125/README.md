@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323125: PRB: Visual FoxPro 7.0 Help Documentation Appears to Be Missing"
-permalink: kb/323/Q323125/
+permalink: /kb/323/Q323125/
 ---
 
 ## Q323125: PRB: Visual FoxPro 7.0 Help Documentation Appears to Be Missing

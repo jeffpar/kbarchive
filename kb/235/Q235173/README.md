@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235173: SMS: Unable to Specify Drive Where Logon Points Are Installed"
-permalink: kb/235/Q235173/
+permalink: /kb/235/Q235173/
 ---
 
 ## Q235173: SMS: Unable to Specify Drive Where Logon Points Are Installed

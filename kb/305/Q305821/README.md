@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305821: ENC2002: Minimum System Requirements for Encarta"
-permalink: kb/305/Q305821/
+permalink: /kb/305/Q305821/
 ---
 
 ## Q305821: ENC2002: Minimum System Requirements for Encarta

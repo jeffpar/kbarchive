@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140415: How to Remove Services and Device Drivers in Windows NT"
-permalink: kb/140/Q140415/
+permalink: /kb/140/Q140415/
 ---
 
 ## Q140415: How to Remove Services and Device Drivers in Windows NT

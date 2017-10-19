@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162804: STOP 0x00000079 After Applying Windows NT 4.0 Post-SP2 KRNL Fix"
-permalink: kb/162/Q162804/
+permalink: /kb/162/Q162804/
 ---
 
 ## Q162804: STOP 0x00000079 After Applying Windows NT 4.0 Post-SP2 KRNL Fix

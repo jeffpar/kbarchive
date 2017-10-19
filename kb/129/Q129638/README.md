@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129638: PRB: Visible Controls on MDIChild Report as Invisible"
-permalink: kb/129/Q129638/
+permalink: /kb/129/Q129638/
 ---
 
 ## Q129638: PRB: Visible Controls on MDIChild Report as Invisible

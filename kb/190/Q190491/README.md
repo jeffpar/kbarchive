@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190491: PRB: Access/Assign Not Called by DIMENSION, ADEL or AINS"
-permalink: kb/190/Q190491/
+permalink: /kb/190/Q190491/
 ---
 
 ## Q190491: PRB: Access/Assign Not Called by DIMENSION, ADEL or AINS

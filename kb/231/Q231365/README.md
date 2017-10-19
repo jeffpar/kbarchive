@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231365: Microsoft BackOffice 4.5 Resource Kit Setup.exe Fails With SP5"
-permalink: kb/231/Q231365/
+permalink: /kb/231/Q231365/
 ---
 
 ## Q231365: Microsoft BackOffice 4.5 Resource Kit Setup.exe Fails With SP5

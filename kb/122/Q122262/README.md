@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122262: BUG: LNK1200 Error Issued Because of Low Disk Space"
-permalink: kb/122/Q122262/
+permalink: /kb/122/Q122262/
 ---
 
 ## Q122262: BUG: LNK1200 Error Issued Because of Low Disk Space

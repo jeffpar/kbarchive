@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138839: PPT: Pictures Display as QuickTime Pict Placeholders"
-permalink: kb/138/Q138839/
+permalink: /kb/138/Q138839/
 ---
 
 ## Q138839: PPT: Pictures Display as QuickTime Pict Placeholders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234638: XADM: Server Location and Public Folder Access"
-permalink: kb/234/Q234638/
+permalink: /kb/234/Q234638/
 ---
 
 ## Q234638: XADM: Server Location and Public Folder Access

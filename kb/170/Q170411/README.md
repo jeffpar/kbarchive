@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170411: WD97: Excel Text Uses Wrong Font When Pasted into Word"
-permalink: kb/170/Q170411/
+permalink: /kb/170/Q170411/
 ---
 
 ## Q170411: WD97: Excel Text Uses Wrong Font When Pasted into Word

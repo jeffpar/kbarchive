@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151497: MSB Ocean: Minimum System Requirements for Macintosh"
-permalink: kb/151/Q151497/
+permalink: /kb/151/Q151497/
 ---
 
 ## Q151497: MSB Ocean: Minimum System Requirements for Macintosh

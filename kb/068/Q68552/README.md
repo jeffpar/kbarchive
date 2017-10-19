@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68552: PRB: Cannot Exit Windows with DLL-Instanced Windows Open"
-permalink: kb/068/Q68552/
+permalink: /kb/068/Q68552/
 ---
 
 ## Q68552: PRB: Cannot Exit Windows with DLL-Instanced Windows Open

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135764: User Manager Account Policy Help Returns Topic Not Found"
-permalink: kb/135/Q135764/
+permalink: /kb/135/Q135764/
 ---
 
 ## Q135764: User Manager Account Policy Help Returns Topic Not Found

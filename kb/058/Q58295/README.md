@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58295: Printing Is Slow with PaintJet Driver"
-permalink: kb/058/Q58295/
+permalink: /kb/058/Q58295/
 ---
 
 ## Q58295: Printing Is Slow with PaintJet Driver

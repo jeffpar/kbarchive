@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279411: Encarta 2001 Err Msg: Invalid Page Fault in Module Mfc42.dll"
-permalink: kb/279/Q279411/
+permalink: /kb/279/Q279411/
 ---
 
 ## Q279411: Encarta 2001 Err Msg: Invalid Page Fault in Module Mfc42.dll

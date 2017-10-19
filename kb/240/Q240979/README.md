@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240979: Unable to Create Folder on NTFS Partition"
-permalink: kb/240/Q240979/
+permalink: /kb/240/Q240979/
 ---
 
 ## Q240979: Unable to Create Folder on NTFS Partition

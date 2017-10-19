@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163343: ACC97: No SourceSafe Symbols in Large Icon View"
-permalink: kb/163/Q163343/
+permalink: /kb/163/Q163343/
 ---
 
 ## Q163343: ACC97: No SourceSafe Symbols in Large Icon View

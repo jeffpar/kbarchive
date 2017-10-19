@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222650: Incorrect Fax Printer Properties in Windows 95 or Windows 98"
-permalink: kb/222/Q222650/
+permalink: /kb/222/Q222650/
 ---
 
 ## Q222650: Incorrect Fax Printer Properties in Windows 95 or Windows 98

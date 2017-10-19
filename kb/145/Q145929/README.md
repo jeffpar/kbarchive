@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145929: PRB: Visual FoxPro Creates Public Variable for ControlSource"
-permalink: kb/145/Q145929/
+permalink: /kb/145/Q145929/
 ---
 
 ## Q145929: PRB: Visual FoxPro Creates Public Variable for ControlSource

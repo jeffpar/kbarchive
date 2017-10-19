@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178364: Macintosh Clients See Files on WinNT Server Constantly Moving"
-permalink: kb/178/Q178364/
+permalink: /kb/178/Q178364/
 ---
 
 ## Q178364: Macintosh Clients See Files on WinNT Server Constantly Moving

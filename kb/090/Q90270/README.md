@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90270: Does Windows for Workgroups Work with Novell TCP/IP?"
-permalink: kb/090/Q90270/
+permalink: /kb/090/Q90270/
 ---
 
 ## Q90270: Does Windows for Workgroups Work with Novell TCP/IP?

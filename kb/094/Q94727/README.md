@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94727: WinStar Graphics Card Incompatible with Windows VGA"
-permalink: kb/094/Q94727/
+permalink: /kb/094/Q94727/
 ---
 
 ## Q94727: WinStar Graphics Card Incompatible with Windows VGA

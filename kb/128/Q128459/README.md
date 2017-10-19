@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128459: Capture Does Not Work With HP 10/100 VG ISA NIC"
-permalink: kb/128/Q128459/
+permalink: /kb/128/Q128459/
 ---
 
 ## Q128459: Capture Does Not Work With HP 10/100 VG ISA NIC

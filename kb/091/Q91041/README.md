@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91041: PC WFW: Moving a Windows for Workgroups Postoffice"
-permalink: kb/091/Q91041/
+permalink: /kb/091/Q91041/
 ---
 
 ## Q91041: PC WFW: Moving a Windows for Workgroups Postoffice

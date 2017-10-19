@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296414: Err Msg: There Was a Problem Starting Microsoft Schedule Plus"
-permalink: kb/296/Q296414/
+permalink: /kb/296/Q296414/
 ---
 
 ## Q296414: Err Msg: There Was a Problem Starting Microsoft Schedule Plus

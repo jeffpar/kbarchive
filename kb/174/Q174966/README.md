@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174966: PRB: DDE With Word 97 Returns 'Ambiguous Name Detected: TmpDDE'"
-permalink: kb/174/Q174966/
+permalink: /kb/174/Q174966/
 ---
 
 ## Q174966: PRB: DDE With Word 97 Returns 'Ambiguous Name Detected: TmpDDE'

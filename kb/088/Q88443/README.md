@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88443: Using Terminal VT-100 Emulation in Windows"
-permalink: kb/088/Q88443/
+permalink: /kb/088/Q88443/
 ---
 
 ## Q88443: Using Terminal VT-100 Emulation in Windows

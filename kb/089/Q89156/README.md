@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89156: PRB: &quot;File Access Denied&quot; Error Message When Writing to File"
-permalink: kb/089/Q89156/
+permalink: /kb/089/Q89156/
 ---
 
 ## Q89156: PRB: &quot;File Access Denied&quot; Error Message When Writing to File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30601: Real-Number Data in IEEE Format"
-permalink: kb/030/Q30601/
+permalink: /kb/030/Q30601/
 ---
 
 ## Q30601: Real-Number Data in IEEE Format

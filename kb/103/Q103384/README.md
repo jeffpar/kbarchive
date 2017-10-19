@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103384: PC WRmt: Mail Remote for Windows Doesn't Accept Incoming Calls"
-permalink: kb/103/Q103384/
+permalink: /kb/103/Q103384/
 ---
 
 ## Q103384: PC WRmt: Mail Remote for Windows Doesn't Accept Incoming Calls

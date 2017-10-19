@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162437: WD97: File Saved in RTF Has Extra Language Property"
-permalink: kb/162/Q162437/
+permalink: /kb/162/Q162437/
 ---
 
 ## Q162437: WD97: File Saved in RTF Has Extra Language Property

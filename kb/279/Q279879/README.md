@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279879: Problems with Processing of Asynchronous CNOS and DISPLAY Verbs"
-permalink: kb/279/Q279879/
+permalink: /kb/279/Q279879/
 ---
 
 ## Q279879: Problems with Processing of Asynchronous CNOS and DISPLAY Verbs

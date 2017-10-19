@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174151: XADM: No Way to Split System Mail and User Mail Paths with Admin"
-permalink: kb/174/Q174151/
+permalink: /kb/174/Q174151/
 ---
 
 ## Q174151: XADM: No Way to Split System Mail and User Mail Paths with Admin

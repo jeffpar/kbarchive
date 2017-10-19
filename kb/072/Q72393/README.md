@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72393: Installing All of the Windows Resource Kit Utilities"
-permalink: kb/072/Q72393/
+permalink: /kb/072/Q72393/
 ---
 
 ## Q72393: Installing All of the Windows Resource Kit Utilities

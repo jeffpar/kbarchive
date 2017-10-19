@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101835: Mac Srv: New Server in Site Automatically Becomes Access"
-permalink: kb/101/Q101835/
+permalink: /kb/101/Q101835/
 ---
 
 ## Q101835: Mac Srv: New Server in Site Automatically Becomes Access

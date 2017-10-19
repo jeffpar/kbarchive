@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170851: How Windows NT/Challenge Response Authentication Works"
-permalink: kb/170/Q170851/
+permalink: /kb/170/Q170851/
 ---
 
 ## Q170851: How Windows NT/Challenge Response Authentication Works

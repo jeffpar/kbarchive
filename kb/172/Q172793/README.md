@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172793: Cannot Establish Initial Connection to MSN"
-permalink: kb/172/Q172793/
+permalink: /kb/172/Q172793/
 ---
 
 ## Q172793: Cannot Establish Initial Connection to MSN

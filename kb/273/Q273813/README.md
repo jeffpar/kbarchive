@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273813: FIX: &quot;Incorrect Syntax near the Keyword 'by'&quot; Error Message"
-permalink: kb/273/Q273813/
+permalink: /kb/273/Q273813/
 ---
 
 ## Q273813: FIX: &quot;Incorrect Syntax near the Keyword 'by'&quot; Error Message

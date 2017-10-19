@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140600: Optimizing Windows 95 for Flight Simulator 5.1"
-permalink: kb/140/Q140600/
+permalink: /kb/140/Q140600/
 ---
 
 ## Q140600: Optimizing Windows 95 for Flight Simulator 5.1

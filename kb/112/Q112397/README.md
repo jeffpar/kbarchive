@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112397: Windows NT Installation from MSDN CD-ROM"
-permalink: kb/112/Q112397/
+permalink: /kb/112/Q112397/
 ---
 
 ## Q112397: Windows NT Installation from MSDN CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179470: Unable to Access Shares on RAS Client from RAS Server"
-permalink: kb/179/Q179470/
+permalink: /kb/179/Q179470/
 ---
 
 ## Q179470: Unable to Access Shares on RAS Client from RAS Server

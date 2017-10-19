@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129390: Toshiba T3100 Screen Is Black After Video Resolution Change"
-permalink: kb/129/Q129390/
+permalink: /kb/129/Q129390/
 ---
 
 ## Q129390: Toshiba T3100 Screen Is Black After Video Resolution Change

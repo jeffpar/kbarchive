@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124745: MHS: Incoming Messages Lose 79th Character"
-permalink: kb/124/Q124745/
+permalink: /kb/124/Q124745/
 ---
 
 ## Q124745: MHS: Incoming Messages Lose 79th Character

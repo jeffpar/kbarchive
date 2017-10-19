@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167284: WD97: Problem Saving Normal.dot on Computer with Multiple Users"
-permalink: kb/167/Q167284/
+permalink: /kb/167/Q167284/
 ---
 
 ## Q167284: WD97: Problem Saving Normal.dot on Computer with Multiple Users

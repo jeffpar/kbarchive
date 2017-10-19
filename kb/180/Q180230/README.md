@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180230: Windows NT or Win95 Client Sponsor Connection Returns Err. Msg."
-permalink: kb/180/Q180230/
+permalink: /kb/180/Q180230/
 ---
 
 ## Q180230: Windows NT or Win95 Client Sponsor Connection Returns Err. Msg.

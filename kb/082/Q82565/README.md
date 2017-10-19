@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82565: Quicken Loses Focus on Start with SHELL=NDW"
-permalink: kb/082/Q82565/
+permalink: /kb/082/Q82565/
 ---
 
 ## Q82565: Quicken Loses Focus on Start with SHELL=NDW

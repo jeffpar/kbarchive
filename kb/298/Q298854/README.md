@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298854: Combat Flight Simulator 2: (French) Err Msg in Mission 8"
-permalink: kb/298/Q298854/
+permalink: /kb/298/Q298854/
 ---
 
 ## Q298854: Combat Flight Simulator 2: (French) Err Msg in Mission 8

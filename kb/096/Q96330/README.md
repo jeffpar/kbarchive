@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96330: MS-DOS 6.x Upgrade Does Not Update SHELL= in CONFIG.SYS"
-permalink: kb/096/Q96330/
+permalink: /kb/096/Q96330/
 ---
 
 ## Q96330: MS-DOS 6.x Upgrade Does Not Update SHELL= in CONFIG.SYS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240927: FIX: Cannot Read Source File Error Running PDW Distribution"
-permalink: kb/240/Q240927/
+permalink: /kb/240/Q240927/
 ---
 
 ## Q240927: FIX: Cannot Read Source File Error Running PDW Distribution

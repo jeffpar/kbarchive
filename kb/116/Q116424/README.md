@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116424: PPT: Adding the Present It Tool to Word"
-permalink: kb/116/Q116424/
+permalink: /kb/116/Q116424/
 ---
 
 ## Q116424: PPT: Adding the Present It Tool to Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112157: PC Setup: Err Msg: Network Name Entered Is a Reserved Name"
-permalink: kb/112/Q112157/
+permalink: /kb/112/Q112157/
 ---
 
 ## Q112157: PC Setup: Err Msg: Network Name Entered Is a Reserved Name

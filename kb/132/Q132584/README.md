@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132584: Detection Hangs with NE2000 While Running Lantastic Drivers"
-permalink: kb/132/Q132584/
+permalink: /kb/132/Q132584/
 ---
 
 ## Q132584: Detection Hangs with NE2000 While Running Lantastic Drivers

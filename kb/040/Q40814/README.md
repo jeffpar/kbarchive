@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40814: Mac Wkst: Changing &quot;Reply&quot; Default to &quot;Reply All&quot;"
-permalink: kb/040/Q40814/
+permalink: /kb/040/Q40814/
 ---
 
 ## Q40814: Mac Wkst: Changing &quot;Reply&quot; Default to &quot;Reply All&quot;

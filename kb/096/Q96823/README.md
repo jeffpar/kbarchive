@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96823: POWER Err Msg: Power Manager (POWER.EXE) Not Installed"
-permalink: kb/096/Q96823/
+permalink: /kb/096/Q96823/
 ---
 
 ## Q96823: POWER Err Msg: Power Manager (POWER.EXE) Not Installed

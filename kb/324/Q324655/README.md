@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324655: FP: Err Msg: Error 1904: Setup Cannot Register...Msador15.dll..."
-permalink: kb/324/Q324655/
+permalink: /kb/324/Q324655/
 ---
 
 ## Q324655: FP: Err Msg: Error 1904: Setup Cannot Register...Msador15.dll...

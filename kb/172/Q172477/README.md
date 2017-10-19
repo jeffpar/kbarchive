@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172477: DNS Manager Hangs While Displaying Zone Information"
-permalink: kb/172/Q172477/
+permalink: /kb/172/Q172477/
 ---
 
 ## Q172477: DNS Manager Hangs While Displaying Zone Information

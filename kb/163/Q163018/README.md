@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163018: Distributed Link Service Does Not Reactivate Dropped Connection"
-permalink: kb/163/Q163018/
+permalink: /kb/163/Q163018/
 ---
 
 ## Q163018: Distributed Link Service Does Not Reactivate Dropped Connection

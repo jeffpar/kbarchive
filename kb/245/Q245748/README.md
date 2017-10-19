@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245748: XADM: Low Resource Condition Causes Information Store to Stop"
-permalink: kb/245/Q245748/
+permalink: /kb/245/Q245748/
 ---
 
 ## Q245748: XADM: Low Resource Condition Causes Information Store to Stop

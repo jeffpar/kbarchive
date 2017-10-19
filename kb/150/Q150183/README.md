@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150183: FIX: Cannot Change Left and Top of Invisible Sheridan Control"
-permalink: kb/150/Q150183/
+permalink: /kb/150/Q150183/
 ---
 
 ## Q150183: FIX: Cannot Change Left and Top of Invisible Sheridan Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63906: MS-DOS 1.x-6.22 System File Naming Conventions"
-permalink: kb/063/Q63906/
+permalink: /kb/063/Q63906/
 ---
 
 ## Q63906: MS-DOS 1.x-6.22 System File Naming Conventions

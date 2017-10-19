@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170337: XADM: User Manager Can Cause File in Use Errors"
-permalink: kb/170/Q170337/
+permalink: /kb/170/Q170337/
 ---
 
 ## Q170337: XADM: User Manager Can Cause File in Use Errors

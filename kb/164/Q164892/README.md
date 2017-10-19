@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164892: SNA Manager Shows Incorrect Status For Resources In Subdomain"
-permalink: kb/164/Q164892/
+permalink: /kb/164/Q164892/
 ---
 
 ## Q164892: SNA Manager Shows Incorrect Status For Resources In Subdomain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133111: Systems Management Server Hierarchy Manager"
-permalink: kb/133/Q133111/
+permalink: /kb/133/Q133111/
 ---
 
 ## Q133111: Systems Management Server Hierarchy Manager

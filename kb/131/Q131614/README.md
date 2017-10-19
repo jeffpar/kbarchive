@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131614: Propagating MIF Entry Forms (XNF files) to SMS Clients"
-permalink: kb/131/Q131614/
+permalink: /kb/131/Q131614/
 ---
 
 ## Q131614: Propagating MIF Entry Forms (XNF files) to SMS Clients

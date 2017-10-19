@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240640: World Atlas: Cannot Paste Over Six Lines of Text in Pushpin Note"
-permalink: kb/240/Q240640/
+permalink: /kb/240/Q240640/
 ---
 
 ## Q240640: World Atlas: Cannot Paste Over Six Lines of Text in Pushpin Note

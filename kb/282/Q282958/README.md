@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282958: XADM: Information Store Stops Responding in store!EcCAIFromAI"
-permalink: kb/282/Q282958/
+permalink: /kb/282/Q282958/
 ---
 
 ## Q282958: XADM: Information Store Stops Responding in store!EcCAIFromAI

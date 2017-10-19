@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277767: XADM: User Without Proper Permissions Can Open Public Folders"
-permalink: kb/277/Q277767/
+permalink: /kb/277/Q277767/
 ---
 
 ## Q277767: XADM: User Without Proper Permissions Can Open Public Folders

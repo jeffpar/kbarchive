@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186873: Netbios Delays Sending/Receiving Packets When Session Is Lost"
-permalink: kb/186/Q186873/
+permalink: /kb/186/Q186873/
 ---
 
 ## Q186873: Netbios Delays Sending/Receiving Packets When Session Is Lost

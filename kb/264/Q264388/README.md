@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264388: Allegiance Error Message: Unable to Create a Game"
-permalink: kb/264/Q264388/
+permalink: /kb/264/Q264388/
 ---
 
 ## Q264388: Allegiance Error Message: Unable to Create a Game

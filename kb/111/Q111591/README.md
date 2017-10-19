@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111591: BUG: IsBadStringPtr() Reports Bad String as Valid"
-permalink: kb/111/Q111591/
+permalink: /kb/111/Q111591/
 ---
 
 ## Q111591: BUG: IsBadStringPtr() Reports Bad String as Valid

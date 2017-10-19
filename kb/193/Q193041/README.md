@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193041: XADM: Information Store's Directory Query Returns LDAP Error"
-permalink: kb/193/Q193041/
+permalink: /kb/193/Q193041/
 ---
 
 ## Q193041: XADM: Information Store's Directory Query Returns LDAP Error

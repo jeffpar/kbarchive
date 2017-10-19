@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167655: WD97: Frequently Asked Questions About the Grammar Checker"
-permalink: kb/167/Q167655/
+permalink: /kb/167/Q167655/
 ---
 
 ## Q167655: WD97: Frequently Asked Questions About the Grammar Checker

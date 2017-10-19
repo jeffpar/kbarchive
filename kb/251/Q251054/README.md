@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251054: XADM: High Dsmain.exe CPU Usage When Populating Address Book Vie"
-permalink: kb/251/Q251054/
+permalink: /kb/251/Q251054/
 ---
 
 ## Q251054: XADM: High Dsmain.exe CPU Usage When Populating Address Book Vie

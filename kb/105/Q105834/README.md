@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105834: BUG: FoxPro Does Not Import .DIF Format File"
-permalink: kb/105/Q105834/
+permalink: /kb/105/Q105834/
 ---
 
 ## Q105834: BUG: FoxPro Does Not Import .DIF Format File

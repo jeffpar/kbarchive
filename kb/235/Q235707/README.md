@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235707: Frequently Asked Questions (FAQ) About VBCE 6.0"
-permalink: kb/235/Q235707/
+permalink: /kb/235/Q235707/
 ---
 
 ## Q235707: Frequently Asked Questions (FAQ) About VBCE 6.0

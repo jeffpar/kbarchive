@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173279: XFOR: IMC Issues Incorrect Event ID"
-permalink: kb/173/Q173279/
+permalink: /kb/173/Q173279/
 ---
 
 ## Q173279: XFOR: IMC Issues Incorrect Event ID

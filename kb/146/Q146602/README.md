@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146602: MSB Ocean: Program Stops Responding with Ensoniq Soundscape"
-permalink: kb/146/Q146602/
+permalink: /kb/146/Q146602/
 ---
 
 ## Q146602: MSB Ocean: Program Stops Responding with Ensoniq Soundscape

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86167: Paintbrush Captures Always on Top Application in Image"
-permalink: kb/086/Q86167/
+permalink: /kb/086/Q86167/
 ---
 
 ## Q86167: Paintbrush Captures Always on Top Application in Image

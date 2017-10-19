@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197152: WD97: Picture Editor Items May Not Appear in Actual Document"
-permalink: kb/197/Q197152/
+permalink: /kb/197/Q197152/
 ---
 
 ## Q197152: WD97: Picture Editor Items May Not Appear in Actual Document

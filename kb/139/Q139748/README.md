@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139748: Cannot Reinstall Microsoft Plus!"
-permalink: kb/139/Q139748/
+permalink: /kb/139/Q139748/
 ---
 
 ## Q139748: Cannot Reinstall Microsoft Plus!

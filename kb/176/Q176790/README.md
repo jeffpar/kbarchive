@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176790: HOWTO: Use CoCreateGUID API to Generate a GUID with VB"
-permalink: kb/176/Q176790/
+permalink: /kb/176/Q176790/
 ---
 
 ## Q176790: HOWTO: Use CoCreateGUID API to Generate a GUID with VB

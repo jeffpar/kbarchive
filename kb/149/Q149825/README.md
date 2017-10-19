@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149825: Explorapedia Nature: Contents of Version 1.2 Readme.wri"
-permalink: kb/149/Q149825/
+permalink: /kb/149/Q149825/
 ---
 
 ## Q149825: Explorapedia Nature: Contents of Version 1.2 Readme.wri

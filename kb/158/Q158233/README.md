@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158233: STL Sample for Basic Math Functions"
-permalink: kb/158/Q158233/
+permalink: /kb/158/Q158233/
 ---
 
 ## Q158233: STL Sample for Basic Math Functions

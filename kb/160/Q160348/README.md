@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160348: Index Server Will Not Index for Adobe Acrobat (.PDF) Files"
-permalink: kb/160/Q160348/
+permalink: /kb/160/Q160348/
 ---
 
 ## Q160348: Index Server Will Not Index for Adobe Acrobat (.PDF) Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85426: SYSINI.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85426/
+permalink: /kb/085/Q85426/
 ---
 
 ## Q85426: SYSINI.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2

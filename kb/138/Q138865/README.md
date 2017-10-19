@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138865: PRB: Resource Editor Shows Top-Level Menu Items as PopUp Menus"
-permalink: kb/138/Q138865/
+permalink: /kb/138/Q138865/
 ---
 
 ## Q138865: PRB: Resource Editor Shows Top-Level Menu Items as PopUp Menus

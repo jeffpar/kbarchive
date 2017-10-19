@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114557: Executing Viewer Commands When MCI Finishes Playing"
-permalink: kb/114/Q114557/
+permalink: /kb/114/Q114557/
 ---
 
 ## Q114557: Executing Viewer Commands When MCI Finishes Playing

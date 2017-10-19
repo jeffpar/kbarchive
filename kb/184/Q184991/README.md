@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184991: XFOR: Embedded Message Title Line Truncated to 30 Chars"
-permalink: kb/184/Q184991/
+permalink: /kb/184/Q184991/
 ---
 
 ## Q184991: XFOR: Embedded Message Title Line Truncated to 30 Chars

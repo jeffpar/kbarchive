@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324396: PRB: SAK Server Managers Group Security Issue"
-permalink: kb/324/Q324396/
+permalink: /kb/324/Q324396/
 ---
 
 ## Q324396: PRB: SAK Server Managers Group Security Issue

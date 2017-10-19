@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200988: XCLN: Netscape No Longer Default Browser After Installing 98 ODK"
-permalink: kb/200/Q200988/
+permalink: /kb/200/Q200988/
 ---
 
 ## Q200988: XCLN: Netscape No Longer Default Browser After Installing 98 ODK

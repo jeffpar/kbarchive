@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271857: Golf 1999 Edition: Game Menus Are Not Visible on the Screen"
-permalink: kb/271/Q271857/
+permalink: /kb/271/Q271857/
 ---
 
 ## Q271857: Golf 1999 Edition: Game Menus Are Not Visible on the Screen

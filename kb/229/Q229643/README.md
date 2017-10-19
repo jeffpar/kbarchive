@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229643: XCON: 9156 Errors Occur After Applying Exchange 5.5 SP2"
-permalink: kb/229/Q229643/
+permalink: /kb/229/Q229643/
 ---
 
 ## Q229643: XCON: 9156 Errors Occur After Applying Exchange 5.5 SP2

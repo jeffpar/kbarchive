@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173322: How to Disable Autochk During a Windows NT Reboot"
-permalink: kb/173/Q173322/
+permalink: /kb/173/Q173322/
 ---
 
 ## Q173322: How to Disable Autochk During a Windows NT Reboot

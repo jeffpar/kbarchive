@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273639: HOW TO: Start IISAdmin and Dependent Services Under a Debugger"
-permalink: kb/273/Q273639/
+permalink: /kb/273/Q273639/
 ---
 
 ## Q273639: HOW TO: Start IISAdmin and Dependent Services Under a Debugger

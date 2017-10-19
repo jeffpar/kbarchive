@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80251: PC Gen: Contents of Modem Script File BUSY.MDM"
-permalink: kb/080/Q80251/
+permalink: /kb/080/Q80251/
 ---
 
 ## Q80251: PC Gen: Contents of Modem Script File BUSY.MDM

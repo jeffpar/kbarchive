@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274633: MSN Explorer Not Readable With ZoomText Screen Reader"
-permalink: kb/274/Q274633/
+permalink: /kb/274/Q274633/
 ---
 
 ## Q274633: MSN Explorer Not Readable With ZoomText Screen Reader

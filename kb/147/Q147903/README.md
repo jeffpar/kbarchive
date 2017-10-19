@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147903: WINS Database Entries That Begin with C-"
-permalink: kb/147/Q147903/
+permalink: /kb/147/Q147903/
 ---
 
 ## Q147903: WINS Database Entries That Begin with C-

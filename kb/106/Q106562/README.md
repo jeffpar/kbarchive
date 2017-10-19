@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106562: FIX: CTRL+C Is Not Trapped in GetCharQQ"
-permalink: kb/106/Q106562/
+permalink: /kb/106/Q106562/
 ---
 
 ## Q106562: FIX: CTRL+C Is Not Trapped in GetCharQQ

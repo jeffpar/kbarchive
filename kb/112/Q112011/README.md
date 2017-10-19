@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112011: FIX: Access Violation with Pass by Value and -Ox -G3"
-permalink: kb/112/Q112011/
+permalink: /kb/112/Q112011/
 ---
 
 ## Q112011: FIX: Access Violation with Pass by Value and -Ox -G3

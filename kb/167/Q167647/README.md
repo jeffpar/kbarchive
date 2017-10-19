@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167647: Cannot Log On After FilterKeys Option Enabled"
-permalink: kb/167/Q167647/
+permalink: /kb/167/Q167647/
 ---
 
 ## Q167647: Cannot Log On After FilterKeys Option Enabled

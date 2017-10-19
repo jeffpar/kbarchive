@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125272: Determining Whether NEC Monitors Are Energy Star Compliant"
-permalink: kb/125/Q125272/
+permalink: /kb/125/Q125272/
 ---
 
 ## Q125272: Determining Whether NEC Monitors Are Energy Star Compliant

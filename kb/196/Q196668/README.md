@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196668: WD97: Find/Replace Command Doesn't Ignore Deleted Text"
-permalink: kb/196/Q196668/
+permalink: /kb/196/Q196668/
 ---
 
 ## Q196668: WD97: Find/Replace Command Doesn't Ignore Deleted Text

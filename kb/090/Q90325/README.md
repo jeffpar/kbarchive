@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90325: Intel EtherExpress (EE) 16 Network Card Configuration"
-permalink: kb/090/Q90325/
+permalink: /kb/090/Q90325/
 ---
 
 ## Q90325: Intel EtherExpress (EE) 16 Network Card Configuration

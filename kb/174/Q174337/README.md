@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174337: How to Install an AppleTalk Printer in Windows NT 4.0"
-permalink: kb/174/Q174337/
+permalink: /kb/174/Q174337/
 ---
 
 ## Q174337: How to Install an AppleTalk Printer in Windows NT 4.0

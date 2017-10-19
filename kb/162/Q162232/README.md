@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162232: FP: Server Error: Visual SourceSafe Failure"
-permalink: kb/162/Q162232/
+permalink: /kb/162/Q162232/
 ---
 
 ## Q162232: FP: Server Error: Visual SourceSafe Failure

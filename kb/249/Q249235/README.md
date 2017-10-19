@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249235: DOC: AfxLoadLibrary() Documentation is not Clear on Usage"
-permalink: kb/249/Q249235/
+permalink: /kb/249/Q249235/
 ---
 
 ## Q249235: DOC: AfxLoadLibrary() Documentation is not Clear on Usage

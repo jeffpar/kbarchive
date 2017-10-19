@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153574: Corrupt Display When Remote Controlling NetWare 4.0 Client"
-permalink: kb/153/Q153574/
+permalink: /kb/153/Q153574/
 ---
 
 ## Q153574: Corrupt Display When Remote Controlling NetWare 4.0 Client

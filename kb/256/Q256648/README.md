@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256648: Asheron's Call: Game Appears Too Dark"
-permalink: kb/256/Q256648/
+permalink: /kb/256/Q256648/
 ---
 
 ## Q256648: Asheron's Call: Game Appears Too Dark

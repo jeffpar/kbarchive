@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73511: FIX: CodeView Cannot Display Data in a Huge Array Beyond 64k"
-permalink: kb/073/Q73511/
+permalink: /kb/073/Q73511/
 ---
 
 ## Q73511: FIX: CodeView Cannot Display Data in a Huge Array Beyond 64k

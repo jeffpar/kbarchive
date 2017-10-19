@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138437: PRB: File Does Not Appear to Be a Valid OLE Control"
-permalink: kb/138/Q138437/
+permalink: /kb/138/Q138437/
 ---
 
 ## Q138437: PRB: File Does Not Appear to Be a Valid OLE Control

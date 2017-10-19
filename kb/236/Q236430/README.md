@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236430: Asheron's Call: Network Ports Required to Play"
-permalink: kb/236/Q236430/
+permalink: /kb/236/Q236430/
 ---
 
 ## Q236430: Asheron's Call: Network Ports Required to Play

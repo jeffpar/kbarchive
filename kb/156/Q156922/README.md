@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156922: BUG: Disabled Pages in Container Class Appear Enabled"
-permalink: kb/156/Q156922/
+permalink: /kb/156/Q156922/
 ---
 
 ## Q156922: BUG: Disabled Pages in Container Class Appear Enabled

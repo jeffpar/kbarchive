@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235044: Quick Course in Microsoft PowerPoint 2000 Comments and Correctio"
-permalink: kb/235/Q235044/
+permalink: /kb/235/Q235044/
 ---
 
 ## Q235044: Quick Course in Microsoft PowerPoint 2000 Comments and Correctio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185448: Dbview Fails to Display SNA Server 4.0 Message Database"
-permalink: kb/185/Q185448/
+permalink: /kb/185/Q185448/
 ---
 
 ## Q185448: Dbview Fails to Display SNA Server 4.0 Message Database

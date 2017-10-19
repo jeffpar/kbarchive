@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163850: WD97 Tracked Changes Doesn't Find Revisions in Subdocument"
-permalink: kb/163/Q163850/
+permalink: /kb/163/Q163850/
 ---
 
 ## Q163850: WD97 Tracked Changes Doesn't Find Revisions in Subdocument

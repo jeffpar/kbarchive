@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199313: &quot;Access Is Denied&quot; in License Manager Server Browser"
-permalink: kb/199/Q199313/
+permalink: /kb/199/Q199313/
 ---
 
 ## Q199313: &quot;Access Is Denied&quot; in License Manager Server Browser

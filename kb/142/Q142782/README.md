@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142782: XADM: Error -509 Starting Directory, IS, or Dirsync Services"
-permalink: kb/142/Q142782/
+permalink: /kb/142/Q142782/
 ---
 
 ## Q142782: XADM: Error -509 Starting Directory, IS, or Dirsync Services

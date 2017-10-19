@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103474: Implementing Scheduled Backups with Windows NT Backup"
-permalink: kb/103/Q103474/
+permalink: /kb/103/Q103474/
 ---
 
 ## Q103474: Implementing Scheduled Backups with Windows NT Backup

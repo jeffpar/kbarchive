@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180727: Error Message: Property or Method Not Found"
-permalink: kb/180/Q180727/
+permalink: /kb/180/Q180727/
 ---
 
 ## Q180727: Error Message: Property or Method Not Found

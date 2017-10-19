@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264557: XFOR: Internet Mail Service Routes SMTP Mssgs for Other Domains"
-permalink: kb/264/Q264557/
+permalink: /kb/264/Q264557/
 ---
 
 ## Q264557: XFOR: Internet Mail Service Routes SMTP Mssgs for Other Domains

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128468: PROFS: Cannot Receive Attachments Not Sent As Documents"
-permalink: kb/128/Q128468/
+permalink: /kb/128/Q128468/
 ---
 
 ## Q128468: PROFS: Cannot Receive Attachments Not Sent As Documents

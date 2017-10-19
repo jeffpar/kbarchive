@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288239: How to Obtain the Latest Systems Management Server Service Pack"
-permalink: kb/288/Q288239/
+permalink: /kb/288/Q288239/
 ---
 
 ## Q288239: How to Obtain the Latest Systems Management Server Service Pack

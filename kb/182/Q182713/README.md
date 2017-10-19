@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182713: Multiple Entries in Zone File Cause Memory Leak in Dnsadmin.exe"
-permalink: kb/182/Q182713/
+permalink: /kb/182/Q182713/
 ---
 
 ## Q182713: Multiple Entries in Zone File Cause Memory Leak in Dnsadmin.exe

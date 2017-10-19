@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260168: SMS: Err Msg: Unable to Read Site Data from Caplist.ini File"
-permalink: kb/260/Q260168/
+permalink: /kb/260/Q260168/
 ---
 
 ## Q260168: SMS: Err Msg: Unable to Read Site Data from Caplist.ini File

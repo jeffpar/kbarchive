@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124867: Frank Lloyd Wright: Does Not Run on Windows NT"
-permalink: kb/124/Q124867/
+permalink: /kb/124/Q124867/
 ---
 
 ## Q124867: Frank Lloyd Wright: Does Not Run on Windows NT

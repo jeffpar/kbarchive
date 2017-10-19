@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296664: Microsoft Visual InterDev 6.0 Web Technologies Reference Comment"
-permalink: kb/296/Q296664/
+permalink: /kb/296/Q296664/
 ---
 
 ## Q296664: Microsoft Visual InterDev 6.0 Web Technologies Reference Comment

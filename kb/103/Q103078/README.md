@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103078: No Generic/Text Only Printer Driver with Windows NT"
-permalink: kb/103/Q103078/
+permalink: /kb/103/Q103078/
 ---
 
 ## Q103078: No Generic/Text Only Printer Driver with Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140261: XCLN: Err Msg: Your E-Mail Address Cannot Be Found"
-permalink: kb/140/Q140261/
+permalink: /kb/140/Q140261/
 ---
 
 ## Q140261: XCLN: Err Msg: Your E-Mail Address Cannot Be Found

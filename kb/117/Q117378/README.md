@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117378: INFO: Command IDs and In-Place Frame Window Toolbar"
-permalink: kb/117/Q117378/
+permalink: /kb/117/Q117378/
 ---
 
 ## Q117378: INFO: Command IDs and In-Place Frame Window Toolbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196162: XADM: Free/Busy Info Doesn't Work After Running Move Server"
-permalink: kb/196/Q196162/
+permalink: /kb/196/Q196162/
 ---
 
 ## Q196162: XADM: Free/Busy Info Doesn't Work After Running Move Server

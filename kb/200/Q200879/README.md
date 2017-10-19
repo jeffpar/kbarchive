@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200879: SMS: Resource Explorer Doesn't Show Readable  Inventory Values"
-permalink: kb/200/Q200879/
+permalink: /kb/200/Q200879/
 ---
 
 ## Q200879: SMS: Resource Explorer Doesn't Show Readable  Inventory Values

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142018: BUG: Shutdown.exe Disables Windows NT ScreenSaver"
-permalink: kb/142/Q142018/
+permalink: /kb/142/Q142018/
 ---
 
 ## Q142018: BUG: Shutdown.exe Disables Windows NT ScreenSaver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99636: PC Win: Running Windows Client on Windows for Workgroups"
-permalink: kb/099/Q99636/
+permalink: /kb/099/Q99636/
 ---
 
 ## Q99636: PC Win: Running Windows Client on Windows for Workgroups

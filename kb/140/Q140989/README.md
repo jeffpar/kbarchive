@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140989: PRB: DHCP Skips Addresses If Exclusion Range Included in Scope"
-permalink: kb/140/Q140989/
+permalink: /kb/140/Q140989/
 ---
 
 ## Q140989: PRB: DHCP Skips Addresses If Exclusion Range Included in Scope

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231362: SMS: Using SmsrunStartupDelay Causes Win 95/98 Clients to Hang"
-permalink: kb/231/Q231362/
+permalink: /kb/231/Q231362/
 ---
 
 ## Q231362: SMS: Using SmsrunStartupDelay Causes Win 95/98 Clients to Hang

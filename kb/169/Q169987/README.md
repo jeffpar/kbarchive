@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169987: Msgsrv32 Not Responding When Computer Hangs While Idle"
-permalink: kb/169/Q169987/
+permalink: /kb/169/Q169987/
 ---
 
 ## Q169987: Msgsrv32 Not Responding When Computer Hangs While Idle

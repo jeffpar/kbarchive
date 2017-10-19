@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300675: HOW TO: Create a Metabase Backup by Using IIS in Windows NT"
-permalink: kb/300/Q300675/
+permalink: /kb/300/Q300675/
 ---
 
 ## Q300675: HOW TO: Create a Metabase Backup by Using IIS in Windows NT

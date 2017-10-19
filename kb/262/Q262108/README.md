@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262108: Inside Server-Based Applications Comments and Corrections"
-permalink: kb/262/Q262108/
+permalink: /kb/262/Q262108/
 ---
 
 ## Q262108: Inside Server-Based Applications Comments and Corrections

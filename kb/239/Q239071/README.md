@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239071: XADM: Installing Exchange Server Mailbox Manager on a BDC"
-permalink: kb/239/Q239071/
+permalink: /kb/239/Q239071/
 ---
 
 ## Q239071: XADM: Installing Exchange Server Mailbox Manager on a BDC

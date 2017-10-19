@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158034: GEX: Troubleshooting Game Pad or Joystick Problems"
-permalink: kb/158/Q158034/
+permalink: /kb/158/Q158034/
 ---
 
 ## Q158034: GEX: Troubleshooting Game Pad or Joystick Problems

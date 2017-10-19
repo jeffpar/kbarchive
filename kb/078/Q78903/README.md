@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78903: Problems Attaching to Novell Print Server"
-permalink: kb/078/Q78903/
+permalink: /kb/078/Q78903/
 ---
 
 ## Q78903: Problems Attaching to Novell Print Server

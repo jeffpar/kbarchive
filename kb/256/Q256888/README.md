@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256888: Internet Information Service Returns Source of ASP File"
-permalink: kb/256/Q256888/
+permalink: /kb/256/Q256888/
 ---
 
 ## Q256888: Internet Information Service Returns Source of ASP File

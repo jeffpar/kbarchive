@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122850: PC Win: Err Msg: ...While Loading the Spelling Dictionary"
-permalink: kb/122/Q122850/
+permalink: /kb/122/Q122850/
 ---
 
 ## Q122850: PC Win: Err Msg: ...While Loading the Spelling Dictionary

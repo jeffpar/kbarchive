@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147315: FIX: Access Violation After Unloading Extension DLL"
-permalink: kb/147/Q147315/
+permalink: /kb/147/Q147315/
 ---
 
 ## Q147315: FIX: Access Violation After Unloading Extension DLL

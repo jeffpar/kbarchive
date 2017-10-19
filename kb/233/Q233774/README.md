@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233774: Access Violation Using Component Builder's Import COBOL Wizard"
-permalink: kb/233/Q233774/
+permalink: /kb/233/Q233774/
 ---
 
 ## Q233774: Access Violation Using Component Builder's Import COBOL Wizard

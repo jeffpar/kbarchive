@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181175: WD97: How to Insert a Slashed Zero (0 Overlaid with a /)"
-permalink: kb/181/Q181175/
+permalink: /kb/181/Q181175/
 ---
 
 ## Q181175: WD97: How to Insert a Slashed Zero (0 Overlaid with a /)

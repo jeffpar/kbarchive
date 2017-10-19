@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145687: DOC: CFileDialog Filter String Won't Work Under Windows 95"
-permalink: kb/145/Q145687/
+permalink: /kb/145/Q145687/
 ---
 
 ## Q145687: DOC: CFileDialog Filter String Won't Work Under Windows 95

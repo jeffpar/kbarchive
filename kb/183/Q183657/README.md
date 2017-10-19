@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183657: Unable to Insert OLE Objects into Application Documents"
-permalink: kb/183/Q183657/
+permalink: /kb/183/Q183657/
 ---
 
 ## Q183657: Unable to Insert OLE Objects into Application Documents

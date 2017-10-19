@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58258: Windows Err Msg: This is Not a Valid Help File"
-permalink: kb/058/Q58258/
+permalink: /kb/058/Q58258/
 ---
 
 ## Q58258: Windows Err Msg: This is Not a Valid Help File

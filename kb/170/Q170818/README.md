@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170818: El59x Driver Shows Only Inbound Traffic with Network Monitor"
-permalink: kb/170/Q170818/
+permalink: /kb/170/Q170818/
 ---
 
 ## Q170818: El59x Driver Shows Only Inbound Traffic with Network Monitor

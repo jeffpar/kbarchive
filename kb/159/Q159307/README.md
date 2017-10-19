@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159307: XCON: MTA Stopping with Event ID 2143: Unrecoverable Error"
-permalink: kb/159/Q159307/
+permalink: /kb/159/Q159307/
 ---
 
 ## Q159307: XCON: MTA Stopping with Event ID 2143: Unrecoverable Error

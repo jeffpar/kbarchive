@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78973: Using the DFI HS 3000 Plus Scanner in Enhanced Mode"
-permalink: kb/078/Q78973/
+permalink: /kb/078/Q78973/
 ---
 
 ## Q78973: Using the DFI HS 3000 Plus Scanner in Enhanced Mode

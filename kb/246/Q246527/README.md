@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246527: SMS: Systems Management Server 2.0 Service Pack 1 Client Hotfix"
-permalink: kb/246/Q246527/
+permalink: /kb/246/Q246527/
 ---
 
 ## Q246527: SMS: Systems Management Server 2.0 Service Pack 1 Client Hotfix

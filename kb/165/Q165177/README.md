@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165177: Cannot Remove Computers in Replication Dialog Screen"
-permalink: kb/165/Q165177/
+permalink: /kb/165/Q165177/
 ---
 
 ## Q165177: Cannot Remove Computers in Replication Dialog Screen

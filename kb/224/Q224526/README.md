@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224526: Windows NT 4.0 Supports Maximum of 7.8-GB System Partition"
-permalink: kb/224/Q224526/
+permalink: /kb/224/Q224526/
 ---
 
 ## Q224526: Windows NT 4.0 Supports Maximum of 7.8-GB System Partition

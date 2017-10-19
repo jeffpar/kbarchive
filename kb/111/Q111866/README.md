@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111866: BUG: Outline of a Pie() Slice May Not Be Completely Smooth"
-permalink: kb/111/Q111866/
+permalink: /kb/111/Q111866/
 ---
 
 ## Q111866: BUG: Outline of a Pie() Slice May Not Be Completely Smooth

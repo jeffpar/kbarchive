@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175510: SAMPLE: VB5DCOM.EXE: Using Callbacks and WithEvents with DCOM"
-permalink: kb/175/Q175510/
+permalink: /kb/175/Q175510/
 ---
 
 ## Q175510: SAMPLE: VB5DCOM.EXE: Using Callbacks and WithEvents with DCOM

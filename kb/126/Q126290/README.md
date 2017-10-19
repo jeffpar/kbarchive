@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126290: PC Win: Reply All Does Not Function Correctly w/ Routing Form"
-permalink: kb/126/Q126290/
+permalink: /kb/126/Q126290/
 ---
 
 ## Q126290: PC Win: Reply All Does Not Function Correctly w/ Routing Form

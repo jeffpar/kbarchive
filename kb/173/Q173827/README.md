@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173827: Project Step by Step 14Lesson.mpp and 15Lesson.mpp Will Not Open"
-permalink: kb/173/Q173827/
+permalink: /kb/173/Q173827/
 ---
 
 ## Q173827: Project Step by Step 14Lesson.mpp and 15Lesson.mpp Will Not Open

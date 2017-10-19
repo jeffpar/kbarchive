@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58268: Using ALT+TAB with Attachmate Extra! (Windows 3.0)"
-permalink: kb/058/Q58268/
+permalink: /kb/058/Q58268/
 ---
 
 ## Q58268: Using ALT+TAB with Attachmate Extra! (Windows 3.0)

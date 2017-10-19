@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173499: WD97: Picture Loses Picture Placeholder Text When Made Hyperlink"
-permalink: kb/173/Q173499/
+permalink: /kb/173/Q173499/
 ---
 
 ## Q173499: WD97: Picture Loses Picture Placeholder Text When Made Hyperlink

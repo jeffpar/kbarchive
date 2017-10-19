@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274614: CFS2: Invalid Page Fault or Fatal Exception in Terrain.dll"
-permalink: kb/274/Q274614/
+permalink: /kb/274/Q274614/
 ---
 
 ## Q274614: CFS2: Invalid Page Fault or Fatal Exception in Terrain.dll

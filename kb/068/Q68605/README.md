@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68605: Mac Wkst: Notifier Window Not Display with T/Maker's WriteNow"
-permalink: kb/068/Q68605/
+permalink: /kb/068/Q68605/
 ---
 
 ## Q68605: Mac Wkst: Notifier Window Not Display with T/Maker's WriteNow

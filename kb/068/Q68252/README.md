@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68252: ASD: Converting Latitude/Longitude to FS Coordinates"
-permalink: kb/068/Q68252/
+permalink: /kb/068/Q68252/
 ---
 
 ## Q68252: ASD: Converting Latitude/Longitude to FS Coordinates

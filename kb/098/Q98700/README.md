@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98700: Bit Manipulation in FoxPro for Data Encryption"
-permalink: kb/098/Q98700/
+permalink: /kb/098/Q98700/
 ---
 
 ## Q98700: Bit Manipulation in FoxPro for Data Encryption

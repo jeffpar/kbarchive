@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156546: &quot;Cannot Connect to Internet&quot; When Starting Microsoft Exchange"
-permalink: kb/156/Q156546/
+permalink: /kb/156/Q156546/
 ---
 
 ## Q156546: &quot;Cannot Connect to Internet&quot; When Starting Microsoft Exchange

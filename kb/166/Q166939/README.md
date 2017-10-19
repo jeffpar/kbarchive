@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166939: BUG: CRecordset::Update Fails After Upgrading"
-permalink: kb/166/Q166939/
+permalink: /kb/166/Q166939/
 ---
 
 ## Q166939: BUG: CRecordset::Update Fails After Upgrading

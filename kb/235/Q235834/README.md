@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235834: SMS: Read Instance on Collection Fails  Produce Collection List"
-permalink: kb/235/Q235834/
+permalink: /kb/235/Q235834/
 ---
 
 ## Q235834: SMS: Read Instance on Collection Fails  Produce Collection List

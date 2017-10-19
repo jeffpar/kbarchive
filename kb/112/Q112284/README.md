@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112284: PC Ext: External -SMono Monochrome Display Switch"
-permalink: kb/112/Q112284/
+permalink: /kb/112/Q112284/
 ---
 
 ## Q112284: PC Ext: External -SMono Monochrome Display Switch

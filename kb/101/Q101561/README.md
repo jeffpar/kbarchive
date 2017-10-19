@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101561: Defrag Err: Memory Test Failed at Segment &lt;Address&gt;"
-permalink: kb/101/Q101561/
+permalink: /kb/101/Q101561/
 ---
 
 ## Q101561: Defrag Err: Memory Test Failed at Segment &lt;Address&gt;

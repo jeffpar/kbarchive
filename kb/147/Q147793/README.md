@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147793: Specifying User Logon Servers"
-permalink: kb/147/Q147793/
+permalink: /kb/147/Q147793/
 ---
 
 ## Q147793: Specifying User Logon Servers

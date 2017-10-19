@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280300: BUG: WithEvents Causes Events Not to Fire from WebClass"
-permalink: kb/280/Q280300/
+permalink: /kb/280/Q280300/
 ---
 
 ## Q280300: BUG: WithEvents Causes Events Not to Fire from WebClass

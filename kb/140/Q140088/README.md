@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140088: FIX: Sample Application Dialog Box Is Disabled in InfoViewer"
-permalink: kb/140/Q140088/
+permalink: /kb/140/Q140088/
 ---
 
 ## Q140088: FIX: Sample Application Dialog Box Is Disabled in InfoViewer

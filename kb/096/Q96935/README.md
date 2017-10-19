@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96935: EMM386.EXE Dynamic Memory Allocation"
-permalink: kb/096/Q96935/
+permalink: /kb/096/Q96935/
 ---
 
 ## Q96935: EMM386.EXE Dynamic Memory Allocation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260017: E-Commerce Strategies Comments And Corrections"
-permalink: kb/260/Q260017/
+permalink: /kb/260/Q260017/
 ---
 
 ## Q260017: E-Commerce Strategies Comments And Corrections

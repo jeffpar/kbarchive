@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189849: Setting up Windows 98 Client on SBS May Result in GP Fault"
-permalink: kb/189/Q189849/
+permalink: /kb/189/Q189849/
 ---
 
 ## Q189849: Setting up Windows 98 Client on SBS May Result in GP Fault

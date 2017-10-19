@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214588: Cannot Play Close Combat III on Windows NT 4.0-Based Computer"
-permalink: kb/214/Q214588/
+permalink: /kb/214/Q214588/
 ---
 
 ## Q214588: Cannot Play Close Combat III on Windows NT 4.0-Based Computer

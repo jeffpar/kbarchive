@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81705: Reading List for Developers of Windows-Based Applications"
-permalink: kb/081/Q81705/
+permalink: /kb/081/Q81705/
 ---
 
 ## Q81705: Reading List for Developers of Windows-Based Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140652: HOWTO: Capture Input in a Combo Box"
-permalink: kb/140/Q140652/
+permalink: /kb/140/Q140652/
 ---
 
 ## Q140652: HOWTO: Capture Input in a Combo Box

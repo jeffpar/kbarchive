@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110278: WD97: WordPerfect Key Strokes Defined"
-permalink: kb/110/Q110278/
+permalink: /kb/110/Q110278/
 ---
 
 ## Q110278: WD97: WordPerfect Key Strokes Defined

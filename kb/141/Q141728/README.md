@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141728: World of Flight: How to Manually Install"
-permalink: kb/141/Q141728/
+permalink: /kb/141/Q141728/
 ---
 
 ## Q141728: World of Flight: How to Manually Install

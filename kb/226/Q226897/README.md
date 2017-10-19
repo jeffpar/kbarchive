@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226897: SMS: Duplicate COMM &amp; SPEC Caused by Failed Child Attachment"
-permalink: kb/226/Q226897/
+permalink: /kb/226/Q226897/
 ---
 
 ## Q226897: SMS: Duplicate COMM &amp; SPEC Caused by Failed Child Attachment

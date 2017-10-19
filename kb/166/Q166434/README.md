@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166434: Abnormal Size of Character Map Under Taiwan Locale."
-permalink: kb/166/Q166434/
+permalink: /kb/166/Q166434/
 ---
 
 ## Q166434: Abnormal Size of Character Map Under Taiwan Locale.

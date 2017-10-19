@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191105: BUG: RestoreToolbar Method May Not Restore Toolbar Correctly"
-permalink: kb/191/Q191105/
+permalink: /kb/191/Q191105/
 ---
 
 ## Q191105: BUG: RestoreToolbar Method May Not Restore Toolbar Correctly

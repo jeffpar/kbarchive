@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195511: FIX: Append Type SDF into Local View Does Not Update Base Table"
-permalink: kb/195/Q195511/
+permalink: /kb/195/Q195511/
 ---
 
 ## Q195511: FIX: Append Type SDF into Local View Does Not Update Base Table

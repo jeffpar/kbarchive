@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171624: Win16 SNA App May Hang Over SNA Win 3.x TCP/IP Sockets Interface"
-permalink: kb/171/Q171624/
+permalink: /kb/171/Q171624/
 ---
 
 ## Q171624: Win16 SNA App May Hang Over SNA Win 3.x TCP/IP Sockets Interface

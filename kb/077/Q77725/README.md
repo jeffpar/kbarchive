@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77725: Must Exit and Reenter Windows to Update Sound Driver"
-permalink: kb/077/Q77725/
+permalink: /kb/077/Q77725/
 ---
 
 ## Q77725: Must Exit and Reenter Windows to Update Sound Driver

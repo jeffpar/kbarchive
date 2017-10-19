@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101682: SMTP: Err Msg: ERROR: network_read: timed out"
-permalink: kb/101/Q101682/
+permalink: /kb/101/Q101682/
 ---
 
 ## Q101682: SMTP: Err Msg: ERROR: network_read: timed out

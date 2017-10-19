@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196462: How RDP Transmits Data in Both LAN and WAN Environments"
-permalink: kb/196/Q196462/
+permalink: /kb/196/Q196462/
 ---
 
 ## Q196462: How RDP Transmits Data in Both LAN and WAN Environments

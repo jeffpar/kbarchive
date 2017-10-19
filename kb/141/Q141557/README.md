@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141557: FIX: Cursor's ReadOnly Property Carried to Other Data Sessions"
-permalink: kb/141/Q141557/
+permalink: /kb/141/Q141557/
 ---
 
 ## Q141557: FIX: Cursor's ReadOnly Property Carried to Other Data Sessions

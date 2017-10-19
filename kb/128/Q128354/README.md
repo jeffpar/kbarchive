@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128354: Hang or &quot;Read Fault&quot; Accessing Bad Cluster on Compressed Drive"
-permalink: kb/128/Q128354/
+permalink: /kb/128/Q128354/
 ---
 
 ## Q128354: Hang or &quot;Read Fault&quot; Accessing Bad Cluster on Compressed Drive

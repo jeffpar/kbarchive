@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92843: How to Obtain Network Versions of Microsoft Bookshelf"
-permalink: kb/092/Q92843/
+permalink: /kb/092/Q92843/
 ---
 
 ## Q92843: How to Obtain Network Versions of Microsoft Bookshelf

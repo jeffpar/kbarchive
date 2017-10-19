@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195952: PRB: VID and VSS Out of Sync, Resulting in Possible Data Loss"
-permalink: kb/195/Q195952/
+permalink: /kb/195/Q195952/
 ---
 
 ## Q195952: PRB: VID and VSS Out of Sync, Resulting in Possible Data Loss

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81527: International Versions of Windows and Windows for Workgroups"
-permalink: kb/081/Q81527/
+permalink: /kb/081/Q81527/
 ---
 
 ## Q81527: International Versions of Windows and Windows for Workgroups

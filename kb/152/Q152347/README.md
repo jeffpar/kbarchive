@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152347: BUG: Hairline and Dotted Pen Lines Print as Single Point Width"
-permalink: kb/152/Q152347/
+permalink: /kb/152/Q152347/
 ---
 
 ## Q152347: BUG: Hairline and Dotted Pen Lines Print as Single Point Width

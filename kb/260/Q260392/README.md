@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260392: Resource Explorer Takes a Long Time to Display Large Text File"
-permalink: kb/260/Q260392/
+permalink: /kb/260/Q260392/
 ---
 
 ## Q260392: Resource Explorer Takes a Long Time to Display Large Text File

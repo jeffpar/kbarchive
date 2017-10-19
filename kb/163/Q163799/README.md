@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163799: PRB: Olegraph.scx Sample Fails if Graph 8 Is Installed"
-permalink: kb/163/Q163799/
+permalink: /kb/163/Q163799/
 ---
 
 ## Q163799: PRB: Olegraph.scx Sample Fails if Graph 8 Is Installed

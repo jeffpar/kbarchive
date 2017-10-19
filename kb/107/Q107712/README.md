@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107712: Files Needed to Manually Install MS-DOS 6.0/6.2 Utilities"
-permalink: kb/107/Q107712/
+permalink: /kb/107/Q107712/
 ---
 
 ## Q107712: Files Needed to Manually Install MS-DOS 6.0/6.2 Utilities

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134609: Machview Err Msgs: &quot;Couldn't View...&quot; and &quot;Couldn't Execute...&quot;"
-permalink: kb/134/Q134609/
+permalink: /kb/134/Q134609/
 ---
 
 ## Q134609: Machview Err Msgs: &quot;Couldn't View...&quot; and &quot;Couldn't Execute...&quot;

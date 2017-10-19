@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177737: Error Message: Bad IP Address /?."
-permalink: kb/177/Q177737/
+permalink: /kb/177/Q177737/
 ---
 
 ## Q177737: Error Message: Bad IP Address /?.

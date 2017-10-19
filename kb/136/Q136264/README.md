@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136264: PRB: &quot;Record Not Available&quot; When Opening a Table Shared"
-permalink: kb/136/Q136264/
+permalink: /kb/136/Q136264/
 ---
 
 ## Q136264: PRB: &quot;Record Not Available&quot; When Opening a Table Shared

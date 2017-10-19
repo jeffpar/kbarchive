@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178093: XADM: Attachments with Long Names Crash SNADS or PROFS Connector"
-permalink: kb/178/Q178093/
+permalink: /kb/178/Q178093/
 ---
 
 ## Q178093: XADM: Attachments with Long Names Crash SNADS or PROFS Connector

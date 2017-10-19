@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150354: Bookshelf '95 Does Not Start in Office 95 Trial Kit"
-permalink: kb/150/Q150354/
+permalink: /kb/150/Q150354/
 ---
 
 ## Q150354: Bookshelf '95 Does Not Start in Office 95 Trial Kit

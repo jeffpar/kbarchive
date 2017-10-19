@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305698: SMSINST: Install File Script Item May Cause Compile to Hang"
-permalink: kb/305/Q305698/
+permalink: /kb/305/Q305698/
 ---
 
 ## Q305698: SMSINST: Install File Script Item May Cause Compile to Hang

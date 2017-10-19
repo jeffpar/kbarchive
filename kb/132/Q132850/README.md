@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132850: SoundSentry Does Not Work for MS-DOS Graphics Programs"
-permalink: kb/132/Q132850/
+permalink: /kb/132/Q132850/
 ---
 
 ## Q132850: SoundSentry Does Not Work for MS-DOS Graphics Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120576: Logon and Connection Problems using 3Com Etherlink 16 Adapters"
-permalink: kb/120/Q120576/
+permalink: /kb/120/Q120576/
 ---
 
 ## Q120576: Logon and Connection Problems using 3Com Etherlink 16 Adapters

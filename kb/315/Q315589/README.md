@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315589: Games: Err Msg: Not a Valid Win32 Application"
-permalink: kb/315/Q315589/
+permalink: /kb/315/Q315589/
 ---
 
 ## Q315589: Games: Err Msg: Not a Valid Win32 Application

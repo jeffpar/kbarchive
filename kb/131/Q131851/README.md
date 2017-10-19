@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131851: PC Win: Err Msg: Some Information on the Screen Could Not..."
-permalink: kb/131/Q131851/
+permalink: /kb/131/Q131851/
 ---
 
 ## Q131851: PC Win: Err Msg: Some Information on the Screen Could Not...

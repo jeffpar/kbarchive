@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232392: Zone: High Latency in Game Lobbies or When Playing Games"
-permalink: kb/232/Q232392/
+permalink: /kb/232/Q232392/
 ---
 
 ## Q232392: Zone: High Latency in Game Lobbies or When Playing Games

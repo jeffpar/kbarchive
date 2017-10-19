@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152863: XFOR: IMC Generates Empty Body on S/MIME Messages"
-permalink: kb/152/Q152863/
+permalink: /kb/152/Q152863/
 ---
 
 ## Q152863: XFOR: IMC Generates Empty Body on S/MIME Messages

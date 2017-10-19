@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137111: Microsoft Backup Seems to Display Incorrect Information"
-permalink: kb/137/Q137111/
+permalink: /kb/137/Q137111/
 ---
 
 ## Q137111: Microsoft Backup Seems to Display Incorrect Information

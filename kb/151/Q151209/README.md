@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151209: Shared Application Icon Names Do Not Update on Clients"
-permalink: kb/151/Q151209/
+permalink: /kb/151/Q151209/
 ---
 
 ## Q151209: Shared Application Icon Names Do Not Update on Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134764: Windows for Workgroups DHCP TCP/IP-32 Client Fails to Start"
-permalink: kb/134/Q134764/
+permalink: /kb/134/Q134764/
 ---
 
 ## Q134764: Windows for Workgroups DHCP TCP/IP-32 Client Fails to Start

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150329: Personal Folders (.pst) File Not Automatically Reduced in Size"
-permalink: kb/150/Q150329/
+permalink: /kb/150/Q150329/
 ---
 
 ## Q150329: Personal Folders (.pst) File Not Automatically Reduced in Size

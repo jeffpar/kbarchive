@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139144: PRB: Can't Print a Plain, Unformatted Report to a File"
-permalink: kb/139/Q139144/
+permalink: /kb/139/Q139144/
 ---
 
 ## Q139144: PRB: Can't Print a Plain, Unformatted Report to a File

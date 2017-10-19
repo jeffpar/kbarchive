@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168523: FIX: Report Fails When Printing Under Windows NT 4.0"
-permalink: kb/168/Q168523/
+permalink: /kb/168/Q168523/
 ---
 
 ## Q168523: FIX: Report Fails When Printing Under Windows NT 4.0

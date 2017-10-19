@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94767: WFWG: Schedule+ May Not Print Entire Appointment Field"
-permalink: kb/094/Q94767/
+permalink: /kb/094/Q94767/
 ---
 
 ## Q94767: WFWG: Schedule+ May Not Print Entire Appointment Field

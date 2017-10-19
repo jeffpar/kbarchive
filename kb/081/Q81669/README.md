@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81669: Windows Err Msg: Corrupt Swap File Warning..."
-permalink: kb/081/Q81669/
+permalink: /kb/081/Q81669/
 ---
 
 ## Q81669: Windows Err Msg: Corrupt Swap File Warning...

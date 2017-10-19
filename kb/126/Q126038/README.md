@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126038: Some Trantor SCSI Devices Not Found by Hardware Detection"
-permalink: kb/126/Q126038/
+permalink: /kb/126/Q126038/
 ---
 
 ## Q126038: Some Trantor SCSI Devices Not Found by Hardware Detection

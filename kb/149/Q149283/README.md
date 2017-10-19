@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149283: INFO: Rollback.exe on Windows NT 4.0 CD Destroys Critical System"
-permalink: kb/149/Q149283/
+permalink: /kb/149/Q149283/
 ---
 
 ## Q149283: INFO: Rollback.exe on Windows NT 4.0 CD Destroys Critical System

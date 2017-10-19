@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150414: MSB Oceans and Earth: How to Remove Divers' Licenses"
-permalink: kb/150/Q150414/
+permalink: /kb/150/Q150414/
 ---
 
 ## Q150414: MSB Oceans and Earth: How to Remove Divers' Licenses

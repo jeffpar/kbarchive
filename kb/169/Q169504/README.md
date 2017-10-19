@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169504: TrueType Fonts Displayed Incorrectly"
-permalink: kb/169/Q169504/
+permalink: /kb/169/Q169504/
 ---
 
 ## Q169504: TrueType Fonts Displayed Incorrectly

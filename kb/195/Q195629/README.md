@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195629: FIX: Cannot Add Items to Catalogs Not in VFP 98 Directory"
-permalink: kb/195/Q195629/
+permalink: /kb/195/Q195629/
 ---
 
 ## Q195629: FIX: Cannot Add Items to Catalogs Not in VFP 98 Directory

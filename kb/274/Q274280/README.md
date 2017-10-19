@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274280: XADM: Messages with RTF Text Strings Not Delivered Correctly"
-permalink: kb/274/Q274280/
+permalink: /kb/274/Q274280/
 ---
 
 ## Q274280: XADM: Messages with RTF Text Strings Not Delivered Correctly

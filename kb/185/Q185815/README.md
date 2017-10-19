@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185815: WINS Event 4294: Client Does Not Have the Permissions..."
-permalink: kb/185/Q185815/
+permalink: /kb/185/Q185815/
 ---
 
 ## Q185815: WINS Event 4294: Client Does Not Have the Permissions...

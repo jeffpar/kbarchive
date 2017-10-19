@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148950: Changing the Windows NT Redirector Time-Out Value"
-permalink: kb/148/Q148950/
+permalink: /kb/148/Q148950/
 ---
 
 ## Q148950: Changing the Windows NT Redirector Time-Out Value

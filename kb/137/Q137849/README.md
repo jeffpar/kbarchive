@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137849: Event 4102 Error with WINS Server"
-permalink: kb/137/Q137849/
+permalink: /kb/137/Q137849/
 ---
 
 ## Q137849: Event 4102 Error with WINS Server

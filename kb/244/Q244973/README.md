@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244973: SNA Server Client Returns APPC Error 0001 0000015B"
-permalink: kb/244/Q244973/
+permalink: /kb/244/Q244973/
 ---
 
 ## Q244973: SNA Server Client Returns APPC Error 0001 0000015B

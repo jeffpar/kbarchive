@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89149: ErrMsg: Audio Failed: MIDI File Does Not Exist or Is Invalid"
-permalink: kb/089/Q89149/
+permalink: /kb/089/Q89149/
 ---
 
 ## Q89149: ErrMsg: Audio Failed: MIDI File Does Not Exist or Is Invalid

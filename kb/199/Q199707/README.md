@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199707: PRB: Some VB 5.0 Programs Do Not Run on Multiprocessor PCs"
-permalink: kb/199/Q199707/
+permalink: /kb/199/Q199707/
 ---
 
 ## Q199707: PRB: Some VB 5.0 Programs Do Not Run on Multiprocessor PCs

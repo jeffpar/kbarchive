@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104455: Dinosaurs: Index: Not Returned to Letter If Topic Not Selected"
-permalink: kb/104/Q104455/
+permalink: /kb/104/Q104455/
 ---
 
 ## Q104455: Dinosaurs: Index: Not Returned to Letter If Topic Not Selected

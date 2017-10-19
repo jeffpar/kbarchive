@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129730: Event Viewer Displays DHCP Events 1010, 1016, and 1014"
-permalink: kb/129/Q129730/
+permalink: /kb/129/Q129730/
 ---
 
 ## Q129730: Event Viewer Displays DHCP Events 1010, 1016, and 1014

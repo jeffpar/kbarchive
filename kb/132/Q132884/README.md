@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132884: Icons Are Not Displayed Correctly with Microsoft Plus!"
-permalink: kb/132/Q132884/
+permalink: /kb/132/Q132884/
 ---
 
 ## Q132884: Icons Are Not Displayed Correctly with Microsoft Plus!

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129149: Cannot Find SYSTEM.INI After Omar Sharif Bridge Installation"
-permalink: kb/129/Q129149/
+permalink: /kb/129/Q129149/
 ---
 
 ## Q129149: Cannot Find SYSTEM.INI After Omar Sharif Bridge Installation

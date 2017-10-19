@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164461: Service Pack Removal Restores Compressed Files"
-permalink: kb/164/Q164461/
+permalink: /kb/164/Q164461/
 ---
 
 ## Q164461: Service Pack Removal Restores Compressed Files

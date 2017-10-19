@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103545: Cannot Choose Create New for Removable Media"
-permalink: kb/103/Q103545/
+permalink: /kb/103/Q103545/
 ---
 
 ## Q103545: Cannot Choose Create New for Removable Media

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235779: SMS: SMSMAN Does Not Automatically Detect Server"
-permalink: kb/235/Q235779/
+permalink: /kb/235/Q235779/
 ---
 
 ## Q235779: SMS: SMSMAN Does Not Automatically Detect Server

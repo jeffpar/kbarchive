@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177867: XCON: NDR Not Received When Sending to Bad PAB Entry"
-permalink: kb/177/Q177867/
+permalink: /kb/177/Q177867/
 ---
 
 ## Q177867: XCON: NDR Not Received When Sending to Bad PAB Entry

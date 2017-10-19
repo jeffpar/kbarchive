@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264815: Visual InterDev 6.0 Enterprise Developer's Workshop Comments and"
-permalink: kb/264/Q264815/
+permalink: /kb/264/Q264815/
 ---
 
 ## Q264815: Visual InterDev 6.0 Enterprise Developer's Workshop Comments and

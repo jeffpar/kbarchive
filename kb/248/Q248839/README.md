@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248839: XCON: MTA Drops Message and Fails to Send NDR During Move User O"
-permalink: kb/248/Q248839/
+permalink: /kb/248/Q248839/
 ---
 
 ## Q248839: XCON: MTA Drops Message and Fails to Send NDR During Move User O

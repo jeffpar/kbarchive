@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219019: Offline Operation of Custom Shared Start Menu System Policy"
-permalink: kb/219/Q219019/
+permalink: /kb/219/Q219019/
 ---
 
 ## Q219019: Offline Operation of Custom Shared Start Menu System Policy

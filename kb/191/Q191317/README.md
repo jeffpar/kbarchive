@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191317: SMS: &quot;Not Mandatory Over Slow Link&quot; Check Box Has Been Removed"
-permalink: kb/191/Q191317/
+permalink: /kb/191/Q191317/
 ---
 
 ## Q191317: SMS: &quot;Not Mandatory Over Slow Link&quot; Check Box Has Been Removed

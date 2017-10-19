@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163071: SNA Server Access Violation May Occur If Link Fails to Start"
-permalink: kb/163/Q163071/
+permalink: /kb/163/Q163071/
 ---
 
 ## Q163071: SNA Server Access Violation May Occur If Link Fails to Start

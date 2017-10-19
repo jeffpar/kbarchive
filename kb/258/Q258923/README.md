@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258923: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS Error Appears Joining Site"
-permalink: kb/258/Q258923/
+permalink: /kb/258/Q258923/
 ---
 
 ## Q258923: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS Error Appears Joining Site

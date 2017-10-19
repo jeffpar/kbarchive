@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120448: PC Adm: Microsoft Mail MAILMGR.DLL Version 3.2.0.4074 Update"
-permalink: kb/120/Q120448/
+permalink: /kb/120/Q120448/
 ---
 
 ## Q120448: PC Adm: Microsoft Mail MAILMGR.DLL Version 3.2.0.4074 Update

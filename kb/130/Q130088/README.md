@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130088: Windows NT: Corrupt Files on Siemens PCE-5S (P90/100) Computers"
-permalink: kb/130/Q130088/
+permalink: /kb/130/Q130088/
 ---
 
 ## Q130088: Windows NT: Corrupt Files on Siemens PCE-5S (P90/100) Computers

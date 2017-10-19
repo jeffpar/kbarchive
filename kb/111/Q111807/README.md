@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111807: &quot;API Library Not Found&quot; w/ MS-DOS .PLB in FoxPro for Mac"
-permalink: kb/111/Q111807/
+permalink: /kb/111/Q111807/
 ---
 
 ## Q111807: &quot;API Library Not Found&quot; w/ MS-DOS .PLB in FoxPro for Mac

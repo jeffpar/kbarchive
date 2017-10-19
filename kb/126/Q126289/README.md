@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126289: PC Forms: Cannot Delete Attachment from Routing Form"
-permalink: kb/126/Q126289/
+permalink: /kb/126/Q126289/
 ---
 
 ## Q126289: PC Forms: Cannot Delete Attachment from Routing Form

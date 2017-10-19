@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134394: FIX: Unhandled Exception Win32S Error on Visual FoxPro Startup"
-permalink: kb/134/Q134394/
+permalink: /kb/134/Q134394/
 ---
 
 ## Q134394: FIX: Unhandled Exception Win32S Error on Visual FoxPro Startup

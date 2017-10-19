@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158873: How to Enable IDE DMA Bus-Mastering Using SP2 Atapi.sys"
-permalink: kb/158/Q158873/
+permalink: /kb/158/Q158873/
 ---
 
 ## Q158873: How to Enable IDE DMA Bus-Mastering Using SP2 Atapi.sys

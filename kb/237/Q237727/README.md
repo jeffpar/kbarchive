@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237727: NFL Fever 2000: Color of Taskbar Button Changes"
-permalink: kb/237/Q237727/
+permalink: /kb/237/Q237727/
 ---
 
 ## Q237727: NFL Fever 2000: Color of Taskbar Button Changes

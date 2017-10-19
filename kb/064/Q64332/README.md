@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64332: PostScript Driver 3.30 Doesn't Save Scaling Between Sessions"
-permalink: kb/064/Q64332/
+permalink: /kb/064/Q64332/
 ---
 
 ## Q64332: PostScript Driver 3.30 Doesn't Save Scaling Between Sessions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277537: Error Message When You Open a Notepad File on IBM AS400"
-permalink: kb/277/Q277537/
+permalink: /kb/277/Q277537/
 ---
 
 ## Q277537: Error Message When You Open a Notepad File on IBM AS400

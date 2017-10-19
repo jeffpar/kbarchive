@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167686: New DHCP Parameter for Switched Networks"
-permalink: kb/167/Q167686/
+permalink: /kb/167/Q167686/
 ---
 
 ## Q167686: New DHCP Parameter for Switched Networks

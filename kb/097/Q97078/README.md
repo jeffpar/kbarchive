@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97078: PC WRmt: New MMF Created in Apparently Incorrect Location"
-permalink: kb/097/Q97078/
+permalink: /kb/097/Q97078/
 ---
 
 ## Q97078: PC WRmt: New MMF Created in Apparently Incorrect Location

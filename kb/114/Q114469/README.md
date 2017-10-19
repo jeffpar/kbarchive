@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114469: Setup: TCP/IP Binding Defaults To All Installed NIC's"
-permalink: kb/114/Q114469/
+permalink: /kb/114/Q114469/
 ---
 
 ## Q114469: Setup: TCP/IP Binding Defaults To All Installed NIC's

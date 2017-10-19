@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78947: Flight Sim: Screen Flashes on Stormy ILS Approach to Oakland"
-permalink: kb/078/Q78947/
+permalink: /kb/078/Q78947/
 ---
 
 ## Q78947: Flight Sim: Screen Flashes on Stormy ILS Approach to Oakland

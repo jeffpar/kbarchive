@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174338: Dial-Up Connection Disconnects After Downloading Messages"
-permalink: kb/174/Q174338/
+permalink: /kb/174/Q174338/
 ---
 
 ## Q174338: Dial-Up Connection Disconnects After Downloading Messages

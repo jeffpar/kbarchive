@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72708: FIX: MASM 6.0 May Generate Incorrect Code for IMUL Instruction"
-permalink: kb/072/Q72708/
+permalink: /kb/072/Q72708/
 ---
 
 ## Q72708: FIX: MASM 6.0 May Generate Incorrect Code for IMUL Instruction

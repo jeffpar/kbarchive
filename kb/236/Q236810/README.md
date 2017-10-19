@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236810: FIX: Command Line GET Fails with &quot;Unable to finish writing&quot; Err"
-permalink: kb/236/Q236810/
+permalink: /kb/236/Q236810/
 ---
 
 ## Q236810: FIX: Command Line GET Fails with &quot;Unable to finish writing&quot; Err

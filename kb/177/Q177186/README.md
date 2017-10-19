@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177186: PRB: Error 40069 Update Resultset Returned from Stored Procedure"
-permalink: kb/177/Q177186/
+permalink: /kb/177/Q177186/
 ---
 
 ## Q177186: PRB: Error 40069 Update Resultset Returned from Stored Procedure

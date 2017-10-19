@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268842: AoE II: Game Hangs After You Disconnect from the Internet"
-permalink: kb/268/Q268842/
+permalink: /kb/268/Q268842/
 ---
 
 ## Q268842: AoE II: Game Hangs After You Disconnect from the Internet

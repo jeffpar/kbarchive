@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82163: Differences Between the Mini- and Full-OLE Servers"
-permalink: kb/082/Q82163/
+permalink: /kb/082/Q82163/
 ---
 
 ## Q82163: Differences Between the Mini- and Full-OLE Servers

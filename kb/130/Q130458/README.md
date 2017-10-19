@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130458: HOWTO: Highlight the Entire Row in Grid When User Clicks"
-permalink: kb/130/Q130458/
+permalink: /kb/130/Q130458/
 ---
 
 ## Q130458: HOWTO: Highlight the Entire Row in Grid When User Clicks

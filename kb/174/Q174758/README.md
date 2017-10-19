@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174758: XADM: Steps Performed During Knowledge Consistency Check"
-permalink: kb/174/Q174758/
+permalink: /kb/174/Q174758/
 ---
 
 ## Q174758: XADM: Steps Performed During Knowledge Consistency Check

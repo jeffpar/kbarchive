@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192673: Accessing Files on NTFS Partitions Created with Windows 2000"
-permalink: kb/192/Q192673/
+permalink: /kb/192/Q192673/
 ---
 
 ## Q192673: Accessing Files on NTFS Partitions Created with Windows 2000

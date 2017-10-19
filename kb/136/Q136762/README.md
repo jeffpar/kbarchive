@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136762: BETA: Windows NT Shell Technology Preview Beta Available"
-permalink: kb/136/Q136762/
+permalink: /kb/136/Q136762/
 ---
 
 ## Q136762: BETA: Windows NT Shell Technology Preview Beta Available

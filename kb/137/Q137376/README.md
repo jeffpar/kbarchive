@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137376: Hierarchy Manager Site Status Codes"
-permalink: kb/137/Q137376/
+permalink: /kb/137/Q137376/
 ---
 
 ## Q137376: Hierarchy Manager Site Status Codes

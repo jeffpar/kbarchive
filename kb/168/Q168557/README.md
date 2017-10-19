@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168557: XFOR: Recipient Name Not Recognized / Recipient Not Found"
-permalink: kb/168/Q168557/
+permalink: /kb/168/Q168557/
 ---
 
 ## Q168557: XFOR: Recipient Name Not Recognized / Recipient Not Found

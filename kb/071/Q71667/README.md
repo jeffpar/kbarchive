@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71667: SUBST, JOIN, and APPEND Commands with Windows"
-permalink: kb/071/Q71667/
+permalink: /kb/071/Q71667/
 ---
 
 ## Q71667: SUBST, JOIN, and APPEND Commands with Windows

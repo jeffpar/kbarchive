@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195534: HOWTO: Retrieve Table Index Information from SQL Server"
-permalink: kb/195/Q195534/
+permalink: /kb/195/Q195534/
 ---
 
 ## Q195534: HOWTO: Retrieve Table Index Information from SQL Server

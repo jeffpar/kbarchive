@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169663: XADM: User Manager for Domains Hangs During Shutdown of Server"
-permalink: kb/169/Q169663/
+permalink: /kb/169/Q169663/
 ---
 
 ## Q169663: XADM: User Manager for Domains Hangs During Shutdown of Server

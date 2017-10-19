@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319884: XWEB: &quot;Failed to Connect to Exchange Server&quot; Err Msg Using OWA"
-permalink: kb/319/Q319884/
+permalink: /kb/319/Q319884/
 ---
 
 ## Q319884: XWEB: &quot;Failed to Connect to Exchange Server&quot; Err Msg Using OWA

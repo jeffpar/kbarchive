@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158845: Extra Serial Port Displayed in Device Manager"
-permalink: kb/158/Q158845/
+permalink: /kb/158/Q158845/
 ---
 
 ## Q158845: Extra Serial Port Displayed in Device Manager

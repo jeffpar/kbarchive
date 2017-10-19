@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74527: HOWTO: Designing Applications for High Screen Resolutions"
-permalink: kb/074/Q74527/
+permalink: /kb/074/Q74527/
 ---
 
 ## Q74527: HOWTO: Designing Applications for High Screen Resolutions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155160: FIX: Debugger Sees Only One Variable of Two with Same Name"
-permalink: kb/155/Q155160/
+permalink: /kb/155/Q155160/
 ---
 
 ## Q155160: FIX: Debugger Sees Only One Variable of Two with Same Name

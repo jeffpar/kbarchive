@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49558: Err Msg: &quot;Cannot Find FSHELPER File&quot;"
-permalink: kb/049/Q49558/
+permalink: /kb/049/Q49558/
 ---
 
 ## Q49558: Err Msg: &quot;Cannot Find FSHELPER File&quot;

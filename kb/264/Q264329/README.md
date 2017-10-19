@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264329: XCON: MTA Stops Transferring Data After an X.25 Error"
-permalink: kb/264/Q264329/
+permalink: /kb/264/Q264329/
 ---
 
 ## Q264329: XCON: MTA Stops Transferring Data After an X.25 Error

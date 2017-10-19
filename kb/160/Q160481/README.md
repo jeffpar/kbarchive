@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160481: Encarta 97: Setup Status Never Reaches 100 Percent"
-permalink: kb/160/Q160481/
+permalink: /kb/160/Q160481/
 ---
 
 ## Q160481: Encarta 97: Setup Status Never Reaches 100 Percent

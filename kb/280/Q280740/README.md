@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280740: Issues Associated with the SNA Server/HIS 2000 Web Client"
-permalink: kb/280/Q280740/
+permalink: /kb/280/Q280740/
 ---
 
 ## Q280740: Issues Associated with the SNA Server/HIS 2000 Web Client

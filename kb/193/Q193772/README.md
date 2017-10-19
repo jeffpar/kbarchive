@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193772: HOWTO: Use the _ShellExecute Foundation Class"
-permalink: kb/193/Q193772/
+permalink: /kb/193/Q193772/
 ---
 
 ## Q193772: HOWTO: Use the _ShellExecute Foundation Class

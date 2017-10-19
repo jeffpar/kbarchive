@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155860: Wine Guide 2.0: Unable to Print or Copy Text"
-permalink: kb/155/Q155860/
+permalink: /kb/155/Q155860/
 ---
 
 ## Q155860: Wine Guide 2.0: Unable to Print or Copy Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151541: FP: How to Create an Alias for FrontPage Personal Web Server"
-permalink: kb/151/Q151541/
+permalink: /kb/151/Q151541/
 ---
 
 ## Q151541: FP: How to Create an Alias for FrontPage Personal Web Server

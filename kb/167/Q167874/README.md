@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167874: WD97: Page Borders May Be Displayed or Printed Incorrectly"
-permalink: kb/167/Q167874/
+permalink: /kb/167/Q167874/
 ---
 
 ## Q167874: WD97: Page Borders May Be Displayed or Printed Incorrectly

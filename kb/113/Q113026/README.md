@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113026: PPT: Text Format Lost When Promoting, Demoting Paragraph"
-permalink: kb/113/Q113026/
+permalink: /kb/113/Q113026/
 ---
 
 ## Q113026: PPT: Text Format Lost When Promoting, Demoting Paragraph

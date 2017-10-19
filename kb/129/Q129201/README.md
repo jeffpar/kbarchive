@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129201: PC MMTA: OS/2 Version 1.3 Installation Issues"
-permalink: kb/129/Q129201/
+permalink: /kb/129/Q129201/
 ---
 
 ## Q129201: PC MMTA: OS/2 Version 1.3 Installation Issues

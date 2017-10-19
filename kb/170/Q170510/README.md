@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170510: Double-Clicking the Mouse Button Acts as a Single Click"
-permalink: kb/170/Q170510/
+permalink: /kb/170/Q170510/
 ---
 
 ## Q170510: Double-Clicking the Mouse Button Acts as a Single Click

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81807: Windows: Cursor Is Lost in MS-DOS when in 43-Line Mode"
-permalink: kb/081/Q81807/
+permalink: /kb/081/Q81807/
 ---
 
 ## Q81807: Windows: Cursor Is Lost in MS-DOS when in 43-Line Mode

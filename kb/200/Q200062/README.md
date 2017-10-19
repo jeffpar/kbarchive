@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200062: XFOR: Hide Doesn't Remove User From MS Mail Global Address List"
-permalink: kb/200/Q200062/
+permalink: /kb/200/Q200062/
 ---
 
 ## Q200062: XFOR: Hide Doesn't Remove User From MS Mail Global Address List

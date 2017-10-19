@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35284: Order of Precedence in Locating Executable Files"
-permalink: kb/035/Q35284/
+permalink: /kb/035/Q35284/
 ---
 
 ## Q35284: Order of Precedence in Locating Executable Files

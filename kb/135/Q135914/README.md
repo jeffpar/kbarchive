@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135914: PRB: SHOW WINDOW ALL May Cause Empty Browse Window to Appear"
-permalink: kb/135/Q135914/
+permalink: /kb/135/Q135914/
 ---
 
 ## Q135914: PRB: SHOW WINDOW ALL May Cause Empty Browse Window to Appear

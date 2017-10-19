@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112612: Problems Sending Mail After Installing AWFAX"
-permalink: kb/112/Q112612/
+permalink: /kb/112/Q112612/
 ---
 
 ## Q112612: Problems Sending Mail After Installing AWFAX

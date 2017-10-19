@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225275: Err Msg: The Dynamic Link Library, Nwprovau.dll, Could Not Be..."
-permalink: kb/225/Q225275/
+permalink: /kb/225/Q225275/
 ---
 
 ## Q225275: Err Msg: The Dynamic Link Library, Nwprovau.dll, Could Not Be...

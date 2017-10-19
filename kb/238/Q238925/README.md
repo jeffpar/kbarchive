@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238925: Encarta 2000: How to Troubleshoot Sound and Video Driver Issues"
-permalink: kb/238/Q238925/
+permalink: /kb/238/Q238925/
 ---
 
 ## Q238925: Encarta 2000: How to Troubleshoot Sound and Video Driver Issues

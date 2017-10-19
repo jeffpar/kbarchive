@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75711: Windows Err Msg: Unable to Start Enhanced Mode... (Networks)"
-permalink: kb/075/Q75711/
+permalink: /kb/075/Q75711/
 ---
 
 ## Q75711: Windows Err Msg: Unable to Start Enhanced Mode... (Networks)

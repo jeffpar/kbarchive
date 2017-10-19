@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187200: Reduced RNS Order Heap Size Could Increase Scalability"
-permalink: kb/187/Q187200/
+permalink: /kb/187/Q187200/
 ---
 
 ## Q187200: Reduced RNS Order Heap Size Could Increase Scalability

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104053: Difference Between COPY TO ARRAY and SELECT INTO ARRAY"
-permalink: kb/104/Q104053/
+permalink: /kb/104/Q104053/
 ---
 
 ## Q104053: Difference Between COPY TO ARRAY and SELECT INTO ARRAY

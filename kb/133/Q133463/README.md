@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133463: Obtaining Localized Versions of Microsoft Multimedia Programs"
-permalink: kb/133/Q133463/
+permalink: /kb/133/Q133463/
 ---
 
 ## Q133463: Obtaining Localized Versions of Microsoft Multimedia Programs

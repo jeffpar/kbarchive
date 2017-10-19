@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269076: XADM: Information Store Access Violation on LAST, NEXT Command"
-permalink: kb/269/Q269076/
+permalink: /kb/269/Q269076/
 ---
 
 ## Q269076: XADM: Information Store Access Violation on LAST, NEXT Command

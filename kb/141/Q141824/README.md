@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141824: INFO: Common Remote OLE Automation Errors"
-permalink: kb/141/Q141824/
+permalink: /kb/141/Q141824/
 ---
 
 ## Q141824: INFO: Common Remote OLE Automation Errors

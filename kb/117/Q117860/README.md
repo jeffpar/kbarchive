@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117860: STOP Message May Appear When You Administer 3.5 Server"
-permalink: kb/117/Q117860/
+permalink: /kb/117/Q117860/
 ---
 
 ## Q117860: STOP Message May Appear When You Administer 3.5 Server

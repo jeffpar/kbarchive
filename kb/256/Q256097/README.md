@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256097: Clients Do Not Generate &quot;Failed to Start Program&quot; Error Message"
-permalink: kb/256/Q256097/
+permalink: /kb/256/Q256097/
 ---
 
 ## Q256097: Clients Do Not Generate &quot;Failed to Start Program&quot; Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309388: Single Sign-On Option Available with OLE DB Over TCP/IP"
-permalink: kb/309/Q309388/
+permalink: /kb/309/Q309388/
 ---
 
 ## Q309388: Single Sign-On Option Available with OLE DB Over TCP/IP

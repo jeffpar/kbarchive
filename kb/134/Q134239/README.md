@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134239: Leading Zero Not Shown While Changing Time"
-permalink: kb/134/Q134239/
+permalink: /kb/134/Q134239/
 ---
 
 ## Q134239: Leading Zero Not Shown While Changing Time

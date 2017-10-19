@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164049: XCON: MTA: Remote X.400 MTA Fails to Decode NDR from Exchange"
-permalink: kb/164/Q164049/
+permalink: /kb/164/Q164049/
 ---
 
 ## Q164049: XCON: MTA: Remote X.400 MTA Fails to Decode NDR from Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182960: XADM: Using EDBUTIL to Determine Which Logs Have Been Committed"
-permalink: kb/182/Q182960/
+permalink: /kb/182/Q182960/
 ---
 
 ## Q182960: XADM: Using EDBUTIL to Determine Which Logs Have Been Committed

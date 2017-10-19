@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230646: XFOR: Attachments Corrupted by Incorrect Mapping in Cmsxmap.tbl"
-permalink: kb/230/Q230646/
+permalink: /kb/230/Q230646/
 ---
 
 ## Q230646: XFOR: Attachments Corrupted by Incorrect Mapping in Cmsxmap.tbl

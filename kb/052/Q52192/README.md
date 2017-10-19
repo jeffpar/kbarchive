@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q52192: COPY Merges Files If Copied to Nonexistent Directory"
-permalink: kb/052/Q52192/
+permalink: /kb/052/Q52192/
 ---
 
 ## Q52192: COPY Merges Files If Copied to Nonexistent Directory

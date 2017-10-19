@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148969: INFO: Troubleshooting SNA Server Communication over an IP Router"
-permalink: kb/148/Q148969/
+permalink: /kb/148/Q148969/
 ---
 
 ## Q148969: INFO: Troubleshooting SNA Server Communication over an IP Router

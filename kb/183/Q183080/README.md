@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183080: HOWTO: Use ON_EVENT_RANGE Macro"
-permalink: kb/183/Q183080/
+permalink: /kb/183/Q183080/
 ---
 
 ## Q183080: HOWTO: Use ON_EVENT_RANGE Macro

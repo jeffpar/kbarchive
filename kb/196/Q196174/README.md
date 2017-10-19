@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196174: XADM: How Move Server Wizard Handles Duplicate E-Mail Addresses"
-permalink: kb/196/Q196174/
+permalink: /kb/196/Q196174/
 ---
 
 ## Q196174: XADM: How Move Server Wizard Handles Duplicate E-Mail Addresses

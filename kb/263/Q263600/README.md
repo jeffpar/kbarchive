@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263600: BUG: Nested Class Does Not See typedef in the Enclosing Class"
-permalink: kb/263/Q263600/
+permalink: /kb/263/Q263600/
 ---
 
 ## Q263600: BUG: Nested Class Does Not See typedef in the Enclosing Class

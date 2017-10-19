@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282184: XADM: Heuristic Changes in Address Book Views in Service Pack 4"
-permalink: kb/282/Q282184/
+permalink: /kb/282/Q282184/
 ---
 
 ## Q282184: XADM: Heuristic Changes in Address Book Views in Service Pack 4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147113: XADM: Spaces Not Allowed in Some X.400 Entry Fields"
-permalink: kb/147/Q147113/
+permalink: /kb/147/Q147113/
 ---
 
 ## Q147113: XADM: Spaces Not Allowed in Some X.400 Entry Fields

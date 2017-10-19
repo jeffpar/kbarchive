@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192206: FIX: Built .Exe Does Not Include .Dcx from Included .Dbc"
-permalink: kb/192/Q192206/
+permalink: /kb/192/Q192206/
 ---
 
 ## Q192206: FIX: Built .Exe Does Not Include .Dcx from Included .Dbc

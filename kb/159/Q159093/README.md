@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159093: Windows NT Muldiv() Function Returns Incorrect Value"
-permalink: kb/159/Q159093/
+permalink: /kb/159/Q159093/
 ---
 
 ## Q159093: Windows NT Muldiv() Function Returns Incorrect Value

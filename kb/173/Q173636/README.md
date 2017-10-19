@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173636: XWEB: Outlook Web Access Cannot Open Multiple Mailboxes"
-permalink: kb/173/Q173636/
+permalink: /kb/173/Q173636/
 ---
 
 ## Q173636: XWEB: Outlook Web Access Cannot Open Multiple Mailboxes

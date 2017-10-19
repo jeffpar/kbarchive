@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259249: SMS: DDM Merges DDRs from Shared Docking Station Environment"
-permalink: kb/259/Q259249/
+permalink: /kb/259/Q259249/
 ---
 
 ## Q259249: SMS: DDM Merges DDRs from Shared Docking Station Environment

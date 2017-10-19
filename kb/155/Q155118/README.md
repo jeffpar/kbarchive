@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155118: IDE Controller Marked as SCSI in Boot.ini File"
-permalink: kb/155/Q155118/
+permalink: /kb/155/Q155118/
 ---
 
 ## Q155118: IDE Controller Marked as SCSI in Boot.ini File

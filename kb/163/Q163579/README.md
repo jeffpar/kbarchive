@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163579: Server Properties Shows &quot;Active Users&quot; at License Limit"
-permalink: kb/163/Q163579/
+permalink: /kb/163/Q163579/
 ---
 
 ## Q163579: Server Properties Shows &quot;Active Users&quot; at License Limit

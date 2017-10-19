@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161139: PRB: Custom ActiveX Property Sheet Entries Are Not Saved"
-permalink: kb/161/Q161139/
+permalink: /kb/161/Q161139/
 ---
 
 ## Q161139: PRB: Custom ActiveX Property Sheet Entries Are Not Saved

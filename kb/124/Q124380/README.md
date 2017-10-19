@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124380: STB Video Drivers for Windows NT 3.5 and 3.51"
-permalink: kb/124/Q124380/
+permalink: /kb/124/Q124380/
 ---
 
 ## Q124380: STB Video Drivers for Windows NT 3.5 and 3.51

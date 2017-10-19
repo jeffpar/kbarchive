@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84875: Remote-Boot PROM Information"
-permalink: kb/084/Q84875/
+permalink: /kb/084/Q84875/
 ---
 
 ## Q84875: Remote-Boot PROM Information

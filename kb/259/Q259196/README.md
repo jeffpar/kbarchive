@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259196: XADM: Directory Replication Agent Option Values"
-permalink: kb/259/Q259196/
+permalink: /kb/259/Q259196/
 ---
 
 ## Q259196: XADM: Directory Replication Agent Option Values

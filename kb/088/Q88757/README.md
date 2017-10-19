@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88757: HP ProCollection Not Printing Helv/Times Roman 8pt Bold/Italic"
-permalink: kb/088/Q88757/
+permalink: /kb/088/Q88757/
 ---
 
 ## Q88757: HP ProCollection Not Printing Helv/Times Roman 8pt Bold/Italic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147724: HOWTO: Use TOP N Query from Microsoft Access 2.0 in VB"
-permalink: kb/147/Q147724/
+permalink: /kb/147/Q147724/
 ---
 
 ## Q147724: HOWTO: Use TOP N Query from Microsoft Access 2.0 in VB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158694: XFOR: Dir-Sync: Map Template Info Between MSMail &amp; Exchange"
-permalink: kb/158/Q158694/
+permalink: /kb/158/Q158694/
 ---
 
 ## Q158694: XFOR: Dir-Sync: Map Template Info Between MSMail &amp; Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130187: XCLN: Converting Recipient List to Personal Distribution List"
-permalink: kb/130/Q130187/
+permalink: /kb/130/Q130187/
 ---
 
 ## Q130187: XCLN: Converting Recipient List to Personal Distribution List

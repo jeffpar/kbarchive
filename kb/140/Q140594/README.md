@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140594: PRB: Local SSADMIN Writes to Local (Not Server) Srcsafe.ini"
-permalink: kb/140/Q140594/
+permalink: /kb/140/Q140594/
 ---
 
 ## Q140594: PRB: Local SSADMIN Writes to Local (Not Server) Srcsafe.ini

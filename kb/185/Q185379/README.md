@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185379: Browser Stops When .Exe File Attempts to Run Instead of Download"
-permalink: kb/185/Q185379/
+permalink: /kb/185/Q185379/
 ---
 
 ## Q185379: Browser Stops When .Exe File Attempts to Run Instead of Download

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134318: Oceans: Opthelp.txt Contents"
-permalink: kb/134/Q134318/
+permalink: /kb/134/Q134318/
 ---
 
 ## Q134318: Oceans: Opthelp.txt Contents

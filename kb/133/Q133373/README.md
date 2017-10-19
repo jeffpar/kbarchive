@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133373: Maximum Number of Undos Is More Than Specified"
-permalink: kb/133/Q133373/
+permalink: /kb/133/Q133373/
 ---
 
 ## Q133373: Maximum Number of Undos Is More Than Specified

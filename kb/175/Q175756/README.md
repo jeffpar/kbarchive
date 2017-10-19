@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175756: PRB: Setup Wizard Displays Message Box with '118' and OK Button"
-permalink: kb/175/Q175756/
+permalink: /kb/175/Q175756/
 ---
 
 ## Q175756: PRB: Setup Wizard Displays Message Box with '118' and OK Button

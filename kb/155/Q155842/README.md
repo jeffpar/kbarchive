@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155842: PPT7: How to Open a .ppz File in Microsoft PowerPoint"
-permalink: kb/155/Q155842/
+permalink: /kb/155/Q155842/
 ---
 
 ## Q155842: PPT7: How to Open a .ppz File in Microsoft PowerPoint

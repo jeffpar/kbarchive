@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131354: Cannot Connect to NWServer"
-permalink: kb/131/Q131354/
+permalink: /kb/131/Q131354/
 ---
 
 ## Q131354: Cannot Connect to NWServer

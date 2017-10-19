@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79285: FIX: MASM Generates a _TEXT Segment in Far Code Models"
-permalink: kb/079/Q79285/
+permalink: /kb/079/Q79285/
 ---
 
 ## Q79285: FIX: MASM Generates a _TEXT Segment in Far Code Models

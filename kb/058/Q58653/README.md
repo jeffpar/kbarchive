@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58653: CodeView Does Not Support Debugging Spawned Process"
-permalink: kb/058/Q58653/
+permalink: /kb/058/Q58653/
 ---
 
 ## Q58653: CodeView Does Not Support Debugging Spawned Process

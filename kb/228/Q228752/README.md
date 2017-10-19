@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228752: Service Could Not be Started Because It Is Not Correct"
-permalink: kb/228/Q228752/
+permalink: /kb/228/Q228752/
 ---
 
 ## Q228752: Service Could Not be Started Because It Is Not Correct

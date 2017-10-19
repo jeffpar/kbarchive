@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108778: HP LaserJet 4 Version 3.1.26 Features and Corrections"
-permalink: kb/108/Q108778/
+permalink: /kb/108/Q108778/
 ---
 
 ## Q108778: HP LaserJet 4 Version 3.1.26 Features and Corrections

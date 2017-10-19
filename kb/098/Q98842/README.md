@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98842: Resize Err Msg Occurs When Running DoubleSpace from Drive A"
-permalink: kb/098/Q98842/
+permalink: /kb/098/Q98842/
 ---
 
 ## Q98842: Resize Err Msg Occurs When Running DoubleSpace from Drive A

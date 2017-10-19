@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187970: XCON: Unicode Message with TNEF Causes Information Store to Stop"
-permalink: kb/187/Q187970/
+permalink: /kb/187/Q187970/
 ---
 
 ## Q187970: XCON: Unicode Message with TNEF Causes Information Store to Stop

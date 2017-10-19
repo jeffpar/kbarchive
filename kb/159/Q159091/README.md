@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159091: German Time Zone Results in Incorrect Log Times"
-permalink: kb/159/Q159091/
+permalink: /kb/159/Q159091/
 ---
 
 ## Q159091: German Time Zone Results in Incorrect Log Times

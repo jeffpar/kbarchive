@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96658: PROFS: VM Host Screen Keyboard Locks Up"
-permalink: kb/096/Q96658/
+permalink: /kb/096/Q96658/
 ---
 
 ## Q96658: PROFS: VM Host Screen Keyboard Locks Up

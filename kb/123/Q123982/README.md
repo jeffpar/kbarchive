@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123982: Access Violation in SFMPRINT.EXE with IBM or Lexmark Printer"
-permalink: kb/123/Q123982/
+permalink: /kb/123/Q123982/
 ---
 
 ## Q123982: Access Violation in SFMPRINT.EXE with IBM or Lexmark Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175310: XCLN: 16-bit Exchange Client Startup Problem"
-permalink: kb/175/Q175310/
+permalink: /kb/175/Q175310/
 ---
 
 ## Q175310: XCLN: 16-bit Exchange Client Startup Problem

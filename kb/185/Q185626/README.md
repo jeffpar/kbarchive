@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185626: BUG: PictureBox Cannot be Made Transparent Using SetWindowLong"
-permalink: kb/185/Q185626/
+permalink: /kb/185/Q185626/
 ---
 
 ## Q185626: BUG: PictureBox Cannot be Made Transparent Using SetWindowLong

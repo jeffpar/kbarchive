@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244204: BUG: ATL Events Don't Fire If Defined With Interface Alias"
-permalink: kb/244/Q244204/
+permalink: /kb/244/Q244204/
 ---
 
 ## Q244204: BUG: ATL Events Don't Fire If Defined With Interface Alias

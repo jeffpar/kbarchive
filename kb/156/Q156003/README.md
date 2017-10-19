@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156003: PPT: Error Trying to Install Internet Assistant for PowerPoint"
-permalink: kb/156/Q156003/
+permalink: /kb/156/Q156003/
 ---
 
 ## Q156003: PPT: Error Trying to Install Internet Assistant for PowerPoint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132848: Dec Venturis PCI or ISAPNP Adapter Problems in Windows 95"
-permalink: kb/132/Q132848/
+permalink: /kb/132/Q132848/
 ---
 
 ## Q132848: Dec Venturis PCI or ISAPNP Adapter Problems in Windows 95

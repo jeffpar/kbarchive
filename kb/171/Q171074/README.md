@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171074: XCLN: How to Create Hyperlinks Containing Spaces"
-permalink: kb/171/Q171074/
+permalink: /kb/171/Q171074/
 ---
 
 ## Q171074: XCLN: How to Create Hyperlinks Containing Spaces

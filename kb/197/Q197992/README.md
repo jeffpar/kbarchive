@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197992: How to Configure WLBS Using a Single Network Interface Card"
-permalink: kb/197/Q197992/
+permalink: /kb/197/Q197992/
 ---
 
 ## Q197992: How to Configure WLBS Using a Single Network Interface Card

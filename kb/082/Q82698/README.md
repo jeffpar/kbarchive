@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82698: Novell NetWare &amp; NETBIOS.EXE Should Not Run in a VM"
-permalink: kb/082/Q82698/
+permalink: /kb/082/Q82698/
 ---
 
 ## Q82698: Novell NetWare &amp; NETBIOS.EXE Should Not Run in a VM

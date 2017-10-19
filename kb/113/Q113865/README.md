@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113865: NET 0101 Error Installing Microsoft TCP/IP on WFWG 3.11"
-permalink: kb/113/Q113865/
+permalink: /kb/113/Q113865/
 ---
 
 ## Q113865: NET 0101 Error Installing Microsoft TCP/IP on WFWG 3.11

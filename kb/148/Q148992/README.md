@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148992: XADM: Cannot Perform Forklift Upgrade Using UPDATE.EXE"
-permalink: kb/148/Q148992/
+permalink: /kb/148/Q148992/
 ---
 
 ## Q148992: XADM: Cannot Perform Forklift Upgrade Using UPDATE.EXE

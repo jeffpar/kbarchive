@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228781: SMS:SmsrunStartupDelay Fails If Sms.ini Is Not in Root Directory"
-permalink: kb/228/Q228781/
+permalink: /kb/228/Q228781/
 ---
 
 ## Q228781: SMS:SmsrunStartupDelay Fails If Sms.ini Is Not in Root Directory

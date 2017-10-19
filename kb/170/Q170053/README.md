@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170053: Netscape Unable to Find a Plug-in for Application/octet-stream"
-permalink: kb/170/Q170053/
+permalink: /kb/170/Q170053/
 ---
 
 ## Q170053: Netscape Unable to Find a Plug-in for Application/octet-stream

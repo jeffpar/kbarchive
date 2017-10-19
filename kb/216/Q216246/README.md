@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216246: Secondary Time Zone Off by One Hour in Danish Schedule+ 7.5 Clie"
-permalink: kb/216/Q216246/
+permalink: /kb/216/Q216246/
 ---
 
 ## Q216246: Secondary Time Zone Off by One Hour in Danish Schedule+ 7.5 Clie

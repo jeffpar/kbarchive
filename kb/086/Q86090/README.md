@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86090: PC Win: OLE Object Redraws Slowly in Message"
-permalink: kb/086/Q86090/
+permalink: /kb/086/Q86090/
 ---
 
 ## Q86090: PC Win: OLE Object Redraws Slowly in Message

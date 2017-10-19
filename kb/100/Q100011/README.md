@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100011: Troubleshooting Windows for Workgroups Interoperability"
-permalink: kb/100/Q100011/
+permalink: /kb/100/Q100011/
 ---
 
 ## Q100011: Troubleshooting Windows for Workgroups Interoperability

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199472: SMS: How to Determine Logon Server Used During Network Logon"
-permalink: kb/199/Q199472/
+permalink: /kb/199/Q199472/
 ---
 
 ## Q199472: SMS: How to Determine Logon Server Used During Network Logon

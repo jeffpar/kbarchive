@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75169: Differences Between IBM PC-DOS 5.0 and MS-DOS 5 Upgrades"
-permalink: kb/075/Q75169/
+permalink: /kb/075/Q75169/
 ---
 
 ## Q75169: Differences Between IBM PC-DOS 5.0 and MS-DOS 5 Upgrades

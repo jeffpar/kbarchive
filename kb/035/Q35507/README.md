@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35507: Real-Number Encoding Needs Exact Number of Digits"
-permalink: kb/035/Q35507/
+permalink: /kb/035/Q35507/
 ---
 
 ## Q35507: Real-Number Encoding Needs Exact Number of Digits

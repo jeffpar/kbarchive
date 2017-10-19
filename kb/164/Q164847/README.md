@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164847: XCON: Win95 Client w/ Mail Service Won't Prompt for RAS Callback"
-permalink: kb/164/Q164847/
+permalink: /kb/164/Q164847/
 ---
 
 ## Q164847: XCON: Win95 Client w/ Mail Service Won't Prompt for RAS Callback

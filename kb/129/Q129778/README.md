@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129778: PC Mac: Err Msg: Invalid Password"
-permalink: kb/129/Q129778/
+permalink: /kb/129/Q129778/
 ---
 
 ## Q129778: PC Mac: Err Msg: Invalid Password

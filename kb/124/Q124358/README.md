@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124358: RAS Server Assigns Cached IP Addresses to RAS Clients"
-permalink: kb/124/Q124358/
+permalink: /kb/124/Q124358/
 ---
 
 ## Q124358: RAS Server Assigns Cached IP Addresses to RAS Clients

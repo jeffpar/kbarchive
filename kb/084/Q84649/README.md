@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84649: Characters in Menus and Dialog Boxes Corrupt or Truncated"
-permalink: kb/084/Q84649/
+permalink: /kb/084/Q84649/
 ---
 
 ## Q84649: Characters in Menus and Dialog Boxes Corrupt or Truncated

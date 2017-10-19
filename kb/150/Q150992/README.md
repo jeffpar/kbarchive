@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150992: Complete Gardening: White Space Added To Printout"
-permalink: kb/150/Q150992/
+permalink: /kb/150/Q150992/
 ---
 
 ## Q150992: Complete Gardening: White Space Added To Printout

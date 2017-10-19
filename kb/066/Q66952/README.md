@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66952: Using CVW on an IBM PS/2 or Other 8514/a System"
-permalink: kb/066/Q66952/
+permalink: /kb/066/Q66952/
 ---
 
 ## Q66952: Using CVW on an IBM PS/2 or Other 8514/a System

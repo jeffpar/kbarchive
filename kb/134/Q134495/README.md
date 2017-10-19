@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134495: Title Bar Appears at the Bottom of a Window"
-permalink: kb/134/Q134495/
+permalink: /kb/134/Q134495/
 ---
 
 ## Q134495: Title Bar Appears at the Bottom of a Window

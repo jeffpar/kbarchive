@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165738: XWEB: POP3 Clients Not Authenticated by Exchange Server"
-permalink: kb/165/Q165738/
+permalink: /kb/165/Q165738/
 ---
 
 ## Q165738: XWEB: POP3 Clients Not Authenticated by Exchange Server

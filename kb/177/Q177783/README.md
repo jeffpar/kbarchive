@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177783: XADM: Temp Files Remain After OAB Generation Fails"
-permalink: kb/177/Q177783/
+permalink: /kb/177/Q177783/
 ---
 
 ## Q177783: XADM: Temp Files Remain After OAB Generation Fails

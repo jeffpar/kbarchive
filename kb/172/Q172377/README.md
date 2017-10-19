@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172377: SNA Server Exception Error Stopping/Starting Manage Client"
-permalink: kb/172/Q172377/
+permalink: /kb/172/Q172377/
 ---
 
 ## Q172377: SNA Server Exception Error Stopping/Starting Manage Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243458: PRB: Err Msg: Fatal Error LNK1104 Cannot Open File &quot;Nafxcwd.lib&quot;"
-permalink: kb/243/Q243458/
+permalink: /kb/243/Q243458/
 ---
 
 ## Q243458: PRB: Err Msg: Fatal Error LNK1104 Cannot Open File &quot;Nafxcwd.lib&quot;

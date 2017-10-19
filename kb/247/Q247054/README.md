@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247054: How to Change the Blinking Rate of the Insertion Point"
-permalink: kb/247/Q247054/
+permalink: /kb/247/Q247054/
 ---
 
 ## Q247054: How to Change the Blinking Rate of the Insertion Point

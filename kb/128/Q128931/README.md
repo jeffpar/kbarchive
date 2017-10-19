@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128931: Enabling SCSI-Tagged Command Queuing for NCR PCI SCSI Controller"
-permalink: kb/128/Q128931/
+permalink: /kb/128/Q128931/
 ---
 
 ## Q128931: Enabling SCSI-Tagged Command Queuing for NCR PCI SCSI Controller

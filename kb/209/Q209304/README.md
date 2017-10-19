@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209304: Index Server Catalog Corruption"
-permalink: kb/209/Q209304/
+permalink: /kb/209/Q209304/
 ---
 
 ## Q209304: Index Server Catalog Corruption

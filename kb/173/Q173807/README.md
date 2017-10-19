@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173807: XADM: Opening Folders with Long Names Stops Netscape and Simeon"
-permalink: kb/173/Q173807/
+permalink: /kb/173/Q173807/
 ---
 
 ## Q173807: XADM: Opening Folders with Long Names Stops Netscape and Simeon

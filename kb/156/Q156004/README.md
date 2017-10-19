@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156004: WD97: Some Paragraph Border Styles Are Not Transparent"
-permalink: kb/156/Q156004/
+permalink: /kb/156/Q156004/
 ---
 
 ## Q156004: WD97: Some Paragraph Border Styles Are Not Transparent

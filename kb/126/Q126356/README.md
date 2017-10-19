@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126356: GSI IDE Controller Forces Real-Mode Drivers"
-permalink: kb/126/Q126356/
+permalink: /kb/126/Q126356/
 ---
 
 ## Q126356: GSI IDE Controller Forces Real-Mode Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134238: Disabled Devices Generate Code 10 Status"
-permalink: kb/134/Q134238/
+permalink: /kb/134/Q134238/
 ---
 
 ## Q134238: Disabled Devices Generate Code 10 Status

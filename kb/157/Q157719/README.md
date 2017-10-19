@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157719: INFO: VSS 5.0 Readme: Sec. 4 &amp; 5, VSS 4.0/VSS Home Page Users"
-permalink: kb/157/Q157719/
+permalink: /kb/157/Q157719/
 ---
 
 ## Q157719: INFO: VSS 5.0 Readme: Sec. 4 &amp; 5, VSS 4.0/VSS Home Page Users

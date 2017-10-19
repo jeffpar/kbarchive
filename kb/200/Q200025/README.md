@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200025: PRB: Erroneous Error When Repeatedly Opening Database"
-permalink: kb/200/Q200025/
+permalink: /kb/200/Q200025/
 ---
 
 ## Q200025: PRB: Erroneous Error When Repeatedly Opening Database

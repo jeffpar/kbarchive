@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301623: IIS5: BOM of UTF-8 Encoded Files Is Treated as Data"
-permalink: kb/301/Q301623/
+permalink: /kb/301/Q301623/
 ---
 
 ## Q301623: IIS5: BOM of UTF-8 Encoded Files Is Treated as Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195996: SNA Server Incorrectly Handles Cancelled Allocate Requests"
-permalink: kb/195/Q195996/
+permalink: /kb/195/Q195996/
 ---
 
 ## Q195996: SNA Server Incorrectly Handles Cancelled Allocate Requests

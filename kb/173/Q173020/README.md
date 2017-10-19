@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173020: MASTERING: .Frm Files Missing From Democode Folder"
-permalink: kb/173/Q173020/
+permalink: /kb/173/Q173020/
 ---
 
 ## Q173020: MASTERING: .Frm Files Missing From Democode Folder

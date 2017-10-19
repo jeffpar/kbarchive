@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236387: Unable to Start Windows Explorer After Applying Service Pack 5"
-permalink: kb/236/Q236387/
+permalink: /kb/236/Q236387/
 ---
 
 ## Q236387: Unable to Start Windows Explorer After Applying Service Pack 5

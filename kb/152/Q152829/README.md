@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152829: Custom Voice Command Applies to Wrong Program"
-permalink: kb/152/Q152829/
+permalink: /kb/152/Q152829/
 ---
 
 ## Q152829: Custom Voice Command Applies to Wrong Program

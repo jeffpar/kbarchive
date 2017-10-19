@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141944: Saving BBS Message as RTF File Creates Useless Icon"
-permalink: kb/141/Q141944/
+permalink: /kb/141/Q141944/
 ---
 
 ## Q141944: Saving BBS Message as RTF File Creates Useless Icon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118612: INFO: Schema Numbers Not Stored if Serialize() Called Directly"
-permalink: kb/118/Q118612/
+permalink: /kb/118/Q118612/
 ---
 
 ## Q118612: INFO: Schema Numbers Not Stored if Serialize() Called Directly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178918: XADM: Select CD-ROM Update Kit Is Missing Setup"
-permalink: kb/178/Q178918/
+permalink: /kb/178/Q178918/
 ---
 
 ## Q178918: XADM: Select CD-ROM Update Kit Is Missing Setup

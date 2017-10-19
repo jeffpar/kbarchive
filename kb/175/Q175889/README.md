@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175889: Err Msg: The Dial-Up Networking Connection Is Busy or Already..."
-permalink: kb/175/Q175889/
+permalink: /kb/175/Q175889/
 ---
 
 ## Q175889: Err Msg: The Dial-Up Networking Connection Is Busy or Already...

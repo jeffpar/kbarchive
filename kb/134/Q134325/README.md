@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134325: RPLCMD ENUM Utility Does Not Pause Between Screens of Data"
-permalink: kb/134/Q134325/
+permalink: /kb/134/Q134325/
 ---
 
 ## Q134325: RPLCMD ENUM Utility Does Not Pause Between Screens of Data

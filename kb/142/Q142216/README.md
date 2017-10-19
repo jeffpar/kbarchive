@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142216: HOWTO: Create ODBC Data Sources Using SqlConfigDataSource"
-permalink: kb/142/Q142216/
+permalink: /kb/142/Q142216/
 ---
 
 ## Q142216: HOWTO: Create ODBC Data Sources Using SqlConfigDataSource

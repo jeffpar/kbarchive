@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100775: INFO: Stack Checking for Windows NT-based Applications"
-permalink: kb/100/Q100775/
+permalink: /kb/100/Q100775/
 ---
 
 ## Q100775: INFO: Stack Checking for Windows NT-based Applications

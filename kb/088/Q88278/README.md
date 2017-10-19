@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88278: Creating Import Libraries with the &#95;&#95;export Modifier"
-permalink: kb/088/Q88278/
+permalink: /kb/088/Q88278/
 ---
 
 ## Q88278: Creating Import Libraries with the &#95;&#95;export Modifier

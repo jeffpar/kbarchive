@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151328: Changes and Corrections in Encarta Encyclopedia 1996a Update"
-permalink: kb/151/Q151328/
+permalink: /kb/151/Q151328/
 ---
 
 ## Q151328: Changes and Corrections in Encarta Encyclopedia 1996a Update

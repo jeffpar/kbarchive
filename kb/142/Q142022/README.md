@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142022: Logon Server Files Not Downloaded on OS/2 and LAN Server"
-permalink: kb/142/Q142022/
+permalink: /kb/142/Q142022/
 ---
 
 ## Q142022: Logon Server Files Not Downloaded on OS/2 and LAN Server

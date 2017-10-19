@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126145: MS EXCEL VB APPLIC SBS MAC ED: Corrections and Comments"
-permalink: kb/126/Q126145/
+permalink: /kb/126/Q126145/
 ---
 
 ## Q126145: MS EXCEL VB APPLIC SBS MAC ED: Corrections and Comments

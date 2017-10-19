@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129141: Available Diagnostics for Digiboard C/CON 16 While Operational"
-permalink: kb/129/Q129141/
+permalink: /kb/129/Q129141/
 ---
 
 ## Q129141: Available Diagnostics for Digiboard C/CON 16 While Operational

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77426: Setup /F on Machines Without a Formatted Hard Disk"
-permalink: kb/077/Q77426/
+permalink: /kb/077/Q77426/
 ---
 
 ## Q77426: Setup /F on Machines Without a Formatted Hard Disk

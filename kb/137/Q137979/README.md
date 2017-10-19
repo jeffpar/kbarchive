@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137979: Creating Windows 9x Home Directories on Windows NT Server"
-permalink: kb/137/Q137979/
+permalink: /kb/137/Q137979/
 ---
 
 ## Q137979: Creating Windows 9x Home Directories on Windows NT Server

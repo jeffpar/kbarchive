@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72849: FIX: L1126 Link Error May Be Caused By EXPORT in PROC Definition"
-permalink: kb/072/Q72849/
+permalink: /kb/072/Q72849/
 ---
 
 ## Q72849: FIX: L1126 Link Error May Be Caused By EXPORT in PROC Definition

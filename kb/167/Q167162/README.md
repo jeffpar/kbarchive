@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167162: Kids Plus: Custom Icons Appear in User Start Menu Profiles"
-permalink: kb/167/Q167162/
+permalink: /kb/167/Q167162/
 ---
 
 ## Q167162: Kids Plus: Custom Icons Appear in User Start Menu Profiles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89720: Delay when Displaying Command Prompt"
-permalink: kb/089/Q89720/
+permalink: /kb/089/Q89720/
 ---
 
 ## Q89720: Delay when Displaying Command Prompt

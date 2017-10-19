@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139700: X400: Abbreviations for Recommendation X.410"
-permalink: kb/139/Q139700/
+permalink: /kb/139/Q139700/
 ---
 
 ## Q139700: X400: Abbreviations for Recommendation X.410

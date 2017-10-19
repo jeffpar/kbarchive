@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182144: XFOR: IMC May Omit Text from Korean ISO-2022-KR Encoded Msgs."
-permalink: kb/182/Q182144/
+permalink: /kb/182/Q182144/
 ---
 
 ## Q182144: XFOR: IMC May Omit Text from Korean ISO-2022-KR Encoded Msgs.

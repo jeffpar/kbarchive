@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100357: SAMPLE: Xtenaccl.exe - Accelerators for File Manager Extensions"
-permalink: kb/100/Q100357/
+permalink: /kb/100/Q100357/
 ---
 
 ## Q100357: SAMPLE: Xtenaccl.exe - Accelerators for File Manager Extensions

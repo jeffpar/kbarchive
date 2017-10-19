@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132729: Windows 95 Does Not Prevent Choosing Unsupported Resolution"
-permalink: kb/132/Q132729/
+permalink: /kb/132/Q132729/
 ---
 
 ## Q132729: Windows 95 Does Not Prevent Choosing Unsupported Resolution

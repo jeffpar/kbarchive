@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192180: XADM: Selecting the View Only Admin Role for the Organization"
-permalink: kb/192/Q192180/
+permalink: /kb/192/Q192180/
 ---
 
 ## Q192180: XADM: Selecting the View Only Admin Role for the Organization

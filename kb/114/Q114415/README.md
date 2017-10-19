@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114415: Writer: Font Used on Product Box and in Dialog Boxes"
-permalink: kb/114/Q114415/
+permalink: /kb/114/Q114415/
 ---
 
 ## Q114415: Writer: Font Used on Product Box and in Dialog Boxes

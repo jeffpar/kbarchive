@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232653: SMSCliToknAcct&amp; Locked Out When Hardware Inventory Is Enabled"
-permalink: kb/232/Q232653/
+permalink: /kb/232/Q232653/
 ---
 
 ## Q232653: SMSCliToknAcct&amp; Locked Out When Hardware Inventory Is Enabled

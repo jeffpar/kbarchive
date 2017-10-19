@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156561: Error: Data Misalignment in MapiServ.exe"
-permalink: kb/156/Q156561/
+permalink: /kb/156/Q156561/
 ---
 
 ## Q156561: Error: Data Misalignment in MapiServ.exe

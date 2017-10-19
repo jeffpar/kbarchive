@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74890: Sharing Windows-Based Applications Across Networks"
-permalink: kb/074/Q74890/
+permalink: /kb/074/Q74890/
 ---
 
 ## Q74890: Sharing Windows-Based Applications Across Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179298: PRB: Null RuleExpression, RuleText, and Default View Properties"
-permalink: kb/179/Q179298/
+permalink: /kb/179/Q179298/
 ---
 
 ## Q179298: PRB: Null RuleExpression, RuleText, and Default View Properties

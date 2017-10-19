@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155963: WD97: Fax Wizard Sends Cover Sheets Before Form Letters"
-permalink: kb/155/Q155963/
+permalink: /kb/155/Q155963/
 ---
 
 ## Q155963: WD97: Fax Wizard Sends Cover Sheets Before Form Letters

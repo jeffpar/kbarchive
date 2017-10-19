@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190446: Restricting Access to TN3270 LUs"
-permalink: kb/190/Q190446/
+permalink: /kb/190/Q190446/
 ---
 
 ## Q190446: Restricting Access to TN3270 LUs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146398: XCLN: PAB with .MMF Extension Is Not Recognized"
-permalink: kb/146/Q146398/
+permalink: /kb/146/Q146398/
 ---
 
 ## Q146398: XCLN: PAB with .MMF Extension Is Not Recognized

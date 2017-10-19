@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65171: COMPAQ Keyboard Utilities May Disable Mouse in Windows 3.0"
-permalink: kb/065/Q65171/
+permalink: /kb/065/Q65171/
 ---
 
 ## Q65171: COMPAQ Keyboard Utilities May Disable Mouse in Windows 3.0

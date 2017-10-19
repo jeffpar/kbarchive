@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251441: XIMS: Internet Mail Service NDR Behavior Changes in 5.5 SP3"
-permalink: kb/251/Q251441/
+permalink: /kb/251/Q251441/
 ---
 
 ## Q251441: XIMS: Internet Mail Service NDR Behavior Changes in 5.5 SP3

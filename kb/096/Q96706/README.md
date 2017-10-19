@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96706: Mouse Doesn't Work with MS-DOS Shell"
-permalink: kb/096/Q96706/
+permalink: /kb/096/Q96706/
 ---
 
 ## Q96706: Mouse Doesn't Work with MS-DOS Shell

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306863: SnaBase Fails to Start Automatically on HIS 2000 Admin Client"
-permalink: kb/306/Q306863/
+permalink: /kb/306/Q306863/
 ---
 
 ## Q306863: SnaBase Fails to Start Automatically on HIS 2000 Admin Client

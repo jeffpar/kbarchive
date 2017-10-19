@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196311: XFOR: Chat Performance Monitor Counter Does Not Reset After Paus"
-permalink: kb/196/Q196311/
+permalink: /kb/196/Q196311/
 ---
 
 ## Q196311: XFOR: Chat Performance Monitor Counter Does Not Reset After Paus

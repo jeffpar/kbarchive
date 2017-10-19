@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179303: XADM: Reducing Event Service Firing Delays"
-permalink: kb/179/Q179303/
+permalink: /kb/179/Q179303/
 ---
 
 ## Q179303: XADM: Reducing Event Service Firing Delays

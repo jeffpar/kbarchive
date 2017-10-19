@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149097: BUG: Data Control Validate Event Not Fired on Unloading Form"
-permalink: kb/149/Q149097/
+permalink: /kb/149/Q149097/
 ---
 
 ## Q149097: BUG: Data Control Validate Event Not Fired on Unloading Form

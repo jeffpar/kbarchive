@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132646: Display Corrupted with Full-Screen MS-DOS Warm Undocking"
-permalink: kb/132/Q132646/
+permalink: /kb/132/Q132646/
 ---
 
 ## Q132646: Display Corrupted with Full-Screen MS-DOS Warm Undocking

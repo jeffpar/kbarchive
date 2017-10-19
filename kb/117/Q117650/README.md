@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117650: PC Win: MOVEUSER.EXE Causes Invalid MMF After Password Reset"
-permalink: kb/117/Q117650/
+permalink: /kb/117/Q117650/
 ---
 
 ## Q117650: PC Win: MOVEUSER.EXE Causes Invalid MMF After Password Reset

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q25334: Imported Files Do Not Justify or Autowrap"
-permalink: kb/025/Q25334/
+permalink: /kb/025/Q25334/
 ---
 
 ## Q25334: Imported Files Do Not Justify or Autowrap

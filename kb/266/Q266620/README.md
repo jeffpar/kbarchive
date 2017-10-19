@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266620: Age of Empires II: The Age of Kings: Minimum System Requirements"
-permalink: kb/266/Q266620/
+permalink: /kb/266/Q266620/
 ---
 
 ## Q266620: Age of Empires II: The Age of Kings: Minimum System Requirements

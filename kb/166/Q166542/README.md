@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166542: XADM: Database in Inconsistent State After Soft Recovery"
-permalink: kb/166/Q166542/
+permalink: /kb/166/Q166542/
 ---
 
 ## Q166542: XADM: Database in Inconsistent State After Soft Recovery

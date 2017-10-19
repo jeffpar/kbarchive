@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187800: NSLOOKUP Fails to Return DomainName Option for DHCP Client"
-permalink: kb/187/Q187800/
+permalink: /kb/187/Q187800/
 ---
 
 ## Q187800: NSLOOKUP Fails to Return DomainName Option for DHCP Client

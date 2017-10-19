@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116447: FIX: ostrstrea"
-permalink: kb/116/Q116447/
+permalink: /kb/116/Q116447/
 ---
 
 ## Q116447: FIX: ostrstrea

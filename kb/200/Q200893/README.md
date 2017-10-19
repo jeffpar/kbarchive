@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200893: HOWTO: Use LoadResource to Load Strings from a String Table"
-permalink: kb/200/Q200893/
+permalink: /kb/200/Q200893/
 ---
 
 ## Q200893: HOWTO: Use LoadResource to Load Strings from a String Table

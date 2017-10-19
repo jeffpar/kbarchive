@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238797: DNS Server Installation and Configuration Document Available"
-permalink: kb/238/Q238797/
+permalink: /kb/238/Q238797/
 ---
 
 ## Q238797: DNS Server Installation and Configuration Document Available

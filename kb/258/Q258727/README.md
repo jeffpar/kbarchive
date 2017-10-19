@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258727: Web Site Accepts Revoked Certificates"
-permalink: kb/258/Q258727/
+permalink: /kb/258/Q258727/
 ---
 
 ## Q258727: Web Site Accepts Revoked Certificates

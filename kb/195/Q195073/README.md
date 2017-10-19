@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195073: BUG: Error C2065: 'DDX_FieldDateTimeCtrl': Undeclared Identifier"
-permalink: kb/195/Q195073/
+permalink: /kb/195/Q195073/
 ---
 
 ## Q195073: BUG: Error C2065: 'DDX_FieldDateTimeCtrl': Undeclared Identifier

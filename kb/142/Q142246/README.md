@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142246: BUG: Sequential File I/O Does Not Handle Embedded Nulls"
-permalink: kb/142/Q142246/
+permalink: /kb/142/Q142246/
 ---
 
 ## Q142246: BUG: Sequential File I/O Does Not Handle Embedded Nulls

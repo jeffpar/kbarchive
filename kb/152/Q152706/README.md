@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152706: Paul Bunyan: Cannot Skip Through Checkers Instructions"
-permalink: kb/152/Q152706/
+permalink: /kb/152/Q152706/
 ---
 
 ## Q152706: Paul Bunyan: Cannot Skip Through Checkers Instructions

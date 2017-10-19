@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160040: Encarta 97: How To Download Yearbook Updates Using AOL"
-permalink: kb/160/Q160040/
+permalink: /kb/160/Q160040/
 ---
 
 ## Q160040: Encarta 97: How To Download Yearbook Updates Using AOL

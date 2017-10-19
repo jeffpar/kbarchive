@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250314: PRB: Visual Basic Snap-In Designer Run-Time Error 9554"
-permalink: kb/250/Q250314/
+permalink: /kb/250/Q250314/
 ---
 
 ## Q250314: PRB: Visual Basic Snap-In Designer Run-Time Error 9554

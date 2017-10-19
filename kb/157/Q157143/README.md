@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157143: Encarta 97 Err Msg: Insufficient Memory/Not Enough Free Memory"
-permalink: kb/157/Q157143/
+permalink: /kb/157/Q157143/
 ---
 
 ## Q157143: Encarta 97 Err Msg: Insufficient Memory/Not Enough Free Memory

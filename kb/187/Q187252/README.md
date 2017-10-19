@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187252: FrontPage Editor Removes Spaces From Tables"
-permalink: kb/187/Q187252/
+permalink: /kb/187/Q187252/
 ---
 
 ## Q187252: FrontPage Editor Removes Spaces From Tables

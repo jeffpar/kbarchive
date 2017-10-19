@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170358: PRB: Masked Edit May Not Show Empty When Bound Field is Null"
-permalink: kb/170/Q170358/
+permalink: /kb/170/Q170358/
 ---
 
 ## Q170358: PRB: Masked Edit May Not Show Empty When Bound Field is Null

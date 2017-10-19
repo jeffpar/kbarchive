@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196709: INFO: Files Installed Win 98&#92;SYSTEM Folder for DCOM98 Step 3"
-permalink: kb/196/Q196709/
+permalink: /kb/196/Q196709/
 ---
 
 ## Q196709: INFO: Files Installed Win 98&#92;SYSTEM Folder for DCOM98 Step 3

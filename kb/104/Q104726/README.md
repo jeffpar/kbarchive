@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104726: DoubleSpace Restarts Your Computer and Loops Endlessly"
-permalink: kb/104/Q104726/
+permalink: /kb/104/Q104726/
 ---
 
 ## Q104726: DoubleSpace Restarts Your Computer and Loops Endlessly

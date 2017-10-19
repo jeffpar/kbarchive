@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75226: Upgrading Toshiba T1000 Laptop to MS-DOS 5.0 and later"
-permalink: kb/075/Q75226/
+permalink: /kb/075/Q75226/
 ---
 
 ## Q75226: Upgrading Toshiba T1000 Laptop to MS-DOS 5.0 and later

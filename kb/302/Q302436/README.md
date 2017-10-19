@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302436: Japanese Version Of MSN Explorer Contains Unreadable Characters"
-permalink: kb/302/Q302436/
+permalink: /kb/302/Q302436/
 ---
 
 ## Q302436: Japanese Version Of MSN Explorer Contains Unreadable Characters

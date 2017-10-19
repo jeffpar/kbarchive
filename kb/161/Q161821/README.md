@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161821: PRB: Remote OLE Automation: Using Access Control Lists (ACL)"
-permalink: kb/161/Q161821/
+permalink: /kb/161/Q161821/
 ---
 
 ## Q161821: PRB: Remote OLE Automation: Using Access Control Lists (ACL)

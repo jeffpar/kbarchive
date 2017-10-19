@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126310: Error Attempting to Paste Into ClipBook Viewer"
-permalink: kb/126/Q126310/
+permalink: /kb/126/Q126310/
 ---
 
 ## Q126310: Error Attempting to Paste Into ClipBook Viewer

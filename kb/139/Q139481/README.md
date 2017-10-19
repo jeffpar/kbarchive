@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139481: ADT95: MS Access &amp; ADT Features Checklist Available"
-permalink: kb/139/Q139481/
+permalink: /kb/139/Q139481/
 ---
 
 ## Q139481: ADT95: MS Access &amp; ADT Features Checklist Available

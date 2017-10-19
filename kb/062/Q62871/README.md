@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62871: Insufficent Memory to Run Toolbook Application"
-permalink: kb/062/Q62871/
+permalink: /kb/062/Q62871/
 ---
 
 ## Q62871: Insufficent Memory to Run Toolbook Application

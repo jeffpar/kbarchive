@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168533: XFOR: Tabs Translated to Brackets"
-permalink: kb/168/Q168533/
+permalink: /kb/168/Q168533/
 ---
 
 ## Q168533: XFOR: Tabs Translated to Brackets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137382: Client RPC Call for Remote APPC LU List Causes SNABASE Error"
-permalink: kb/137/Q137382/
+permalink: /kb/137/Q137382/
 ---
 
 ## Q137382: Client RPC Call for Remote APPC LU List Causes SNABASE Error

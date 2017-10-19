@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188815: Notes Connector Error Msg: Unable to Find Path to Server"
-permalink: kb/188/Q188815/
+permalink: /kb/188/Q188815/
 ---
 
 ## Q188815: Notes Connector Error Msg: Unable to Find Path to Server

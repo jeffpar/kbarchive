@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284212: Games Err Msg: Stop: Failed - Create Sound Buffer"
-permalink: kb/284/Q284212/
+permalink: /kb/284/Q284212/
 ---
 
 ## Q284212: Games Err Msg: Stop: Failed - Create Sound Buffer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253291: XADM: Determining the Last User to Modify a Public Folder Item"
-permalink: kb/253/Q253291/
+permalink: /kb/253/Q253291/
 ---
 
 ## Q253291: XADM: Determining the Last User to Modify a Public Folder Item

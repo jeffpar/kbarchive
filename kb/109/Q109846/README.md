@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109846: ScanDisk Recommends Running DEFRAG on a Compressed Drive"
-permalink: kb/109/Q109846/
+permalink: /kb/109/Q109846/
 ---
 
 ## Q109846: ScanDisk Recommends Running DEFRAG on a Compressed Drive

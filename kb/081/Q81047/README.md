@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81047: INFO: Microsoft Drag-Drop Server Strategy"
-permalink: kb/081/Q81047/
+permalink: /kb/081/Q81047/
 ---
 
 ## Q81047: INFO: Microsoft Drag-Drop Server Strategy

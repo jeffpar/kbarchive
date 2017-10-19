@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124157: Cannot Build VC++ Projects (.PDB &amp; .PCH Files) on Netware Server"
-permalink: kb/124/Q124157/
+permalink: /kb/124/Q124157/
 ---
 
 ## Q124157: Cannot Build VC++ Projects (.PDB &amp; .PCH Files) on Netware Server

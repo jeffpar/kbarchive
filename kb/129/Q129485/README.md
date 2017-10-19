@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129485: Piping Text Files Using RSH Fails"
-permalink: kb/129/Q129485/
+permalink: /kb/129/Q129485/
 ---
 
 ## Q129485: Piping Text Files Using RSH Fails

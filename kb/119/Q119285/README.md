@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119285: APPICON.PCT Does Not Exist"
-permalink: kb/119/Q119285/
+permalink: /kb/119/Q119285/
 ---
 
 ## Q119285: APPICON.PCT Does Not Exist

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228991: How to Create and Install an SSL Certificate in IIS 4.0"
-permalink: kb/228/Q228991/
+permalink: /kb/228/Q228991/
 ---
 
 ## Q228991: How to Create and Install an SSL Certificate in IIS 4.0

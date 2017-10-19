@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105999: Err Msg: Nbf Could Not Find Adapter &#92;Device&#92;IbmTok01"
-permalink: kb/105/Q105999/
+permalink: /kb/105/Q105999/
 ---
 
 ## Q105999: Err Msg: Nbf Could Not Find Adapter &#92;Device&#92;IbmTok01

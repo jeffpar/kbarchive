@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118359: Mac Srv: Mail Data Files Can Increase in Size Quickly"
-permalink: kb/118/Q118359/
+permalink: /kb/118/Q118359/
 ---
 
 ## Q118359: Mac Srv: Mail Data Files Can Increase in Size Quickly

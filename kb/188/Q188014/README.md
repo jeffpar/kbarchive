@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188014: WD97: HTML File Opens into Online Layout View Not as HTML Tags"
-permalink: kb/188/Q188014/
+permalink: /kb/188/Q188014/
 ---
 
 ## Q188014: WD97: HTML File Opens into Online Layout View Not as HTML Tags

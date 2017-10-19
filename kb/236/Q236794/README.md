@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236794: &quot;STOP 0xA&quot; in Ntoskrnl.exe Caused by Race Condition in Tcpip.sys"
-permalink: kb/236/Q236794/
+permalink: /kb/236/Q236794/
 ---
 
 ## Q236794: &quot;STOP 0xA&quot; in Ntoskrnl.exe Caused by Race Condition in Tcpip.sys

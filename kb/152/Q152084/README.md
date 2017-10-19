@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152084: Insufficient Memory Error Using Internet Explorer 2.0"
-permalink: kb/152/Q152084/
+permalink: /kb/152/Q152084/
 ---
 
 ## Q152084: Insufficient Memory Error Using Internet Explorer 2.0

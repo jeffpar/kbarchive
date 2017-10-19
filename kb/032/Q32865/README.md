@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32865: Invalid Operation and Inexact Result in Control Word"
-permalink: kb/032/Q32865/
+permalink: /kb/032/Q32865/
 ---
 
 ## Q32865: Invalid Operation and Inexact Result in Control Word

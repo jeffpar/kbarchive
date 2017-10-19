@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195345: My Personal Tutor: No Sound After You Sign In"
-permalink: kb/195/Q195345/
+permalink: /kb/195/Q195345/
 ---
 
 ## Q195345: My Personal Tutor: No Sound After You Sign In

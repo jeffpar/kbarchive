@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104589: Centipede Gives General Protection Fault with Highest Speed"
-permalink: kb/104/Q104589/
+permalink: /kb/104/Q104589/
 ---
 
 ## Q104589: Centipede Gives General Protection Fault with Highest Speed

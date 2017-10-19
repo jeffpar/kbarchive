@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243887: XFOR: Application Converter for Notes Replaces App. Connector"
-permalink: kb/243/Q243887/
+permalink: /kb/243/Q243887/
 ---
 
 ## Q243887: XFOR: Application Converter for Notes Replaces App. Connector

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165676: WD97: Missing Menu Items When WordMail Document Opened in Word"
-permalink: kb/165/Q165676/
+permalink: /kb/165/Q165676/
 ---
 
 ## Q165676: WD97: Missing Menu Items When WordMail Document Opened in Word

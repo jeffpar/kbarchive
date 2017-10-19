@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151440: MSB Earth: How to Use the Rock Transformer"
-permalink: kb/151/Q151440/
+permalink: /kb/151/Q151440/
 ---
 
 ## Q151440: MSB Earth: How to Use the Rock Transformer

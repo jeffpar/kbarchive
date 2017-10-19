@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224597: XCON: SP2 of PROFS Connector Sets Sent Date to Jan 1, 1601"
-permalink: kb/224/Q224597/
+permalink: /kb/224/Q224597/
 ---
 
 ## Q224597: XCON: SP2 of PROFS Connector Sets Sent Date to Jan 1, 1601

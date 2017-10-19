@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316316: SMS: Distribution Manager Not Work and Error 998 During Compress"
-permalink: kb/316/Q316316/
+permalink: /kb/316/Q316316/
 ---
 
 ## Q316316: SMS: Distribution Manager Not Work and Error 998 During Compress

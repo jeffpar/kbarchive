@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91039: PC WFW: Network Name Doesn't Display After Upgrade"
-permalink: kb/091/Q91039/
+permalink: /kb/091/Q91039/
 ---
 
 ## Q91039: PC WFW: Network Name Doesn't Display After Upgrade

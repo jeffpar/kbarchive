@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171346: PRB: Filter String Exceeds the Maximum Length of 511"
-permalink: kb/171/Q171346/
+permalink: /kb/171/Q171346/
 ---
 
 ## Q171346: PRB: Filter String Exceeds the Maximum Length of 511

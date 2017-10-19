@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169703: XADM: Error Msg. When Accessing cc:Mail Connector Properties"
-permalink: kb/169/Q169703/
+permalink: /kb/169/Q169703/
 ---
 
 ## Q169703: XADM: Error Msg. When Accessing cc:Mail Connector Properties

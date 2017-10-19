@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185601: HOW TO: Recursively Search Directories by Using FileSystemObject"
-permalink: kb/185/Q185601/
+permalink: /kb/185/Q185601/
 ---
 
 ## Q185601: HOW TO: Recursively Search Directories by Using FileSystemObject

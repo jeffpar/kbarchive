@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116271: HOWTO: Using SET SKIP OF PAD with Custom Menu Pad"
-permalink: kb/116/Q116271/
+permalink: /kb/116/Q116271/
 ---
 
 ## Q116271: HOWTO: Using SET SKIP OF PAD with Custom Menu Pad

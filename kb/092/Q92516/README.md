@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92516: WFWG and Windows: System Hangs When Copying Files"
-permalink: kb/092/Q92516/
+permalink: /kb/092/Q92516/
 ---
 
 ## Q92516: WFWG and Windows: System Hangs When Copying Files

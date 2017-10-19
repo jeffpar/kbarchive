@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149513: BUG: An OPEN Status= Option Like String Converted to Uppercase"
-permalink: kb/149/Q149513/
+permalink: /kb/149/Q149513/
 ---
 
 ## Q149513: BUG: An OPEN Status= Option Like String Converted to Uppercase

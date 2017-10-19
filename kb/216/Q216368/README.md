@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216368: PRB: Access Violation During Application Setup When File in Use"
-permalink: kb/216/Q216368/
+permalink: /kb/216/Q216368/
 ---
 
 ## Q216368: PRB: Access Violation During Application Setup When File in Use

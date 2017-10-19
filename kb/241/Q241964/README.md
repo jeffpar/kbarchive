@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241964: HOWTO: Localize a Windows 2000 Migration DLL"
-permalink: kb/241/Q241964/
+permalink: /kb/241/Q241964/
 ---
 
 ## Q241964: HOWTO: Localize a Windows 2000 Migration DLL

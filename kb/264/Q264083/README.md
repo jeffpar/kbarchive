@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264083: Games: Sound or Video Is Distorted or Program Stops Responding"
-permalink: kb/264/Q264083/
+permalink: /kb/264/Q264083/
 ---
 
 ## Q264083: Games: Sound or Video Is Distorted or Program Stops Responding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149270: How Routers Handle IPX Type 20 NetBIOS Packets"
-permalink: kb/149/Q149270/
+permalink: /kb/149/Q149270/
 ---
 
 ## Q149270: How Routers Handle IPX Type 20 NetBIOS Packets

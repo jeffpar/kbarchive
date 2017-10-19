@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278464: XADM: Changing the Exchange Server Database Paths on a Cluster"
-permalink: kb/278/Q278464/
+permalink: /kb/278/Q278464/
 ---
 
 ## Q278464: XADM: Changing the Exchange Server Database Paths on a Cluster

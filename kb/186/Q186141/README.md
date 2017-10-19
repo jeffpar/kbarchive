@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186141: WD97: Bullets/Numbering Removed Opening WordPerfect 5.x Document"
-permalink: kb/186/Q186141/
+permalink: /kb/186/Q186141/
 ---
 
 ## Q186141: WD97: Bullets/Numbering Removed Opening WordPerfect 5.x Document

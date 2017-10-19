@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168585: Stop C000021A After Re-Applying Windows NT v4.0 SP1"
-permalink: kb/168/Q168585/
+permalink: /kb/168/Q168585/
 ---
 
 ## Q168585: Stop C000021A After Re-Applying Windows NT v4.0 SP1

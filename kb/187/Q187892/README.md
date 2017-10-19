@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187892: WD97: Macro to Determine If a File Exists on Disk"
-permalink: kb/187/Q187892/
+permalink: /kb/187/Q187892/
 ---
 
 ## Q187892: WD97: Macro to Determine If a File Exists on Disk

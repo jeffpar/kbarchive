@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184027: Multiple Default Documents Fail With 403 Access Forbidden"
-permalink: kb/184/Q184027/
+permalink: /kb/184/Q184027/
 ---
 
 ## Q184027: Multiple Default Documents Fail With 403 Access Forbidden

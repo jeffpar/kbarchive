@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242232: XFOR: Exchange Connector for Novell GroupWise Event 6067"
-permalink: kb/242/Q242232/
+permalink: /kb/242/Q242232/
 ---
 
 ## Q242232: XFOR: Exchange Connector for Novell GroupWise Event 6067

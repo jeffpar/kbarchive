@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243295: How to Print to Local Printer from a Terminal Server Client"
-permalink: kb/243/Q243295/
+permalink: /kb/243/Q243295/
 ---
 
 ## Q243295: How to Print to Local Printer from a Terminal Server Client

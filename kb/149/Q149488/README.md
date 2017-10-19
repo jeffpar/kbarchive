@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149488: FIX: Closing an MDI Form Results in a General Protection Fault"
-permalink: kb/149/Q149488/
+permalink: /kb/149/Q149488/
 ---
 
 ## Q149488: FIX: Closing an MDI Form Results in a General Protection Fault

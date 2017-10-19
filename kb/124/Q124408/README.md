@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124408: Using The Microsoft Network Explorer"
-permalink: kb/124/Q124408/
+permalink: /kb/124/Q124408/
 ---
 
 ## Q124408: Using The Microsoft Network Explorer

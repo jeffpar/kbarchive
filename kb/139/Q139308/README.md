@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139308: How to Simulate a Spinner Control for Character Values"
-permalink: kb/139/Q139308/
+permalink: /kb/139/Q139308/
 ---
 
 ## Q139308: How to Simulate a Spinner Control for Character Values

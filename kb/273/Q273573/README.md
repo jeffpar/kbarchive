@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273573: IISADMPWD Password Change Pages Fail to Change Passwords"
-permalink: kb/273/Q273573/
+permalink: /kb/273/Q273573/
 ---
 
 ## Q273573: IISADMPWD Password Change Pages Fail to Change Passwords

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64087: The EX-1000 Printer and DayBook"
-permalink: kb/064/Q64087/
+permalink: /kb/064/Q64087/
 ---
 
 ## Q64087: The EX-1000 Printer and DayBook

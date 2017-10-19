@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79245: DOSKEY Macros Must Be Executed from the Command Prompt"
-permalink: kb/079/Q79245/
+permalink: /kb/079/Q79245/
 ---
 
 ## Q79245: DOSKEY Macros Must Be Executed from the Command Prompt

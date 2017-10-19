@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96028: Using /S Switch with LOADHIGH"
-permalink: kb/096/Q96028/
+permalink: /kb/096/Q96028/
 ---
 
 ## Q96028: Using /S Switch with LOADHIGH

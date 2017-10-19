@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276354: Access Violation in the Metabase Causes Deadlock in WAM"
-permalink: kb/276/Q276354/
+permalink: /kb/276/Q276354/
 ---
 
 ## Q276354: Access Violation in the Metabase Causes Deadlock in WAM

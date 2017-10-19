@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272676: BUG: CComContainedObject::QueryInterface() Implementation Is Inc"
-permalink: kb/272/Q272676/
+permalink: /kb/272/Q272676/
 ---
 
 ## Q272676: BUG: CComContainedObject::QueryInterface() Implementation Is Inc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88204: PageMaker 4.0 Cannot Print Duplex on HP IID"
-permalink: kb/088/Q88204/
+permalink: /kb/088/Q88204/
 ---
 
 ## Q88204: PageMaker 4.0 Cannot Print Duplex on HP IID

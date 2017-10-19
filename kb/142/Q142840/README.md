@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142840: INFO: Visual Basic Requirements for Exported DLL Functions"
-permalink: kb/142/Q142840/
+permalink: /kb/142/Q142840/
 ---
 
 ## Q142840: INFO: Visual Basic Requirements for Exported DLL Functions

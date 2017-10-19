@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132737: Commonly Asked Windows 95 Questions and Answers"
-permalink: kb/132/Q132737/
+permalink: /kb/132/Q132737/
 ---
 
 ## Q132737: Commonly Asked Windows 95 Questions and Answers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75842: RCRESULT rectBoundInk Field Is in Client Coordinates"
-permalink: kb/075/Q75842/
+permalink: /kb/075/Q75842/
 ---
 
 ## Q75842: RCRESULT rectBoundInk Field Is in Client Coordinates

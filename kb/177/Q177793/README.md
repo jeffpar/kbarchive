@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177793: XADM: NDRs Discarded by Internet Mail Service"
-permalink: kb/177/Q177793/
+permalink: /kb/177/Q177793/
 ---
 
 ## Q177793: XADM: NDRs Discarded by Internet Mail Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236796: How to Suppress Restart after an Unattended NTOP Installation"
-permalink: kb/236/Q236796/
+permalink: /kb/236/Q236796/
 ---
 
 ## Q236796: How to Suppress Restart after an Unattended NTOP Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q25108: Using LIB to Combine Two Libraries"
-permalink: kb/025/Q25108/
+permalink: /kb/025/Q25108/
 ---
 
 ## Q25108: Using LIB to Combine Two Libraries

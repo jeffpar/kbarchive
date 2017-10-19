@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76413: Screen Repainting Problem with Microsoft Mouse Driver"
-permalink: kb/076/Q76413/
+permalink: /kb/076/Q76413/
 ---
 
 ## Q76413: Screen Repainting Problem with Microsoft Mouse Driver

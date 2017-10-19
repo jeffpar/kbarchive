@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288929: SAMPLE: FileDragTest.exe Drags and Drops File in and out of App."
-permalink: kb/288/Q288929/
+permalink: /kb/288/Q288929/
 ---
 
 ## Q288929: SAMPLE: FileDragTest.exe Drags and Drops File in and out of App.

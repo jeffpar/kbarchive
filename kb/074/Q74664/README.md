@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74664: FIX: MASM 5.1/5.1a Will Not Allow .STACK to Exceed 32K"
-permalink: kb/074/Q74664/
+permalink: /kb/074/Q74664/
 ---
 
 ## Q74664: FIX: MASM 5.1/5.1a Will Not Allow .STACK to Exceed 32K

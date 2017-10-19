@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155780: XADM: Mailbox Cleanup Agent Doesn't Exclude Mailboxes With Comma"
-permalink: kb/155/Q155780/
+permalink: /kb/155/Q155780/
 ---
 
 ## Q155780: XADM: Mailbox Cleanup Agent Doesn't Exclude Mailboxes With Comma

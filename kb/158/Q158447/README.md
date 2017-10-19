@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158447: How to Run a Program Only Once After Unattended Setup of WinNT"
-permalink: kb/158/Q158447/
+permalink: /kb/158/Q158447/
 ---
 
 ## Q158447: How to Run a Program Only Once After Unattended Setup of WinNT

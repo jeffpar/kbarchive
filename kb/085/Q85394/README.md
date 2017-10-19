@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85394: APPNOTES.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85394/
+permalink: /kb/085/Q85394/
 ---
 
 ## Q85394: APPNOTES.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2

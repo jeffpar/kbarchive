@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184167: SMS: Using the 'Group Not' Function in Queries"
-permalink: kb/184/Q184167/
+permalink: /kb/184/Q184167/
 ---
 
 ## Q184167: SMS: Using the 'Group Not' Function in Queries

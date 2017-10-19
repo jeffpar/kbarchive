@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191336: SMS: How to Create a Custom Remote Control Group in SMS"
-permalink: kb/191/Q191336/
+permalink: /kb/191/Q191336/
 ---
 
 ## Q191336: SMS: How to Create a Custom Remote Control Group in SMS

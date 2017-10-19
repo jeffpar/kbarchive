@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72775: Mac Wkst: Urgent Mail Is Not Delivered Faster"
-permalink: kb/072/Q72775/
+permalink: /kb/072/Q72775/
 ---
 
 ## Q72775: Mac Wkst: Urgent Mail Is Not Delivered Faster

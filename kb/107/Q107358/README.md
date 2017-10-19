@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107358: ICL ErgoPRO DXG/66 &quot;Non-Accessible Boot Device&quot;"
-permalink: kb/107/Q107358/
+permalink: /kb/107/Q107358/
 ---
 
 ## Q107358: ICL ErgoPRO DXG/66 &quot;Non-Accessible Boot Device&quot;

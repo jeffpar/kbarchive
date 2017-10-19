@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84748: PRB: LIB with /NOI Preserves Case for Object Module Names"
-permalink: kb/084/Q84748/
+permalink: /kb/084/Q84748/
 ---
 
 ## Q84748: PRB: LIB with /NOI Preserves Case for Object Module Names

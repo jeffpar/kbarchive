@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180023: WD97: Some Menu Commands Unavailable (Document Protection)"
-permalink: kb/180/Q180023/
+permalink: /kb/180/Q180023/
 ---
 
 ## Q180023: WD97: Some Menu Commands Unavailable (Document Protection)

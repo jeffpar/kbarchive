@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222970: List of Bugs Fixed in Terminal Server Edition"
-permalink: kb/222/Q222970/
+permalink: /kb/222/Q222970/
 ---
 
 ## Q222970: List of Bugs Fixed in Terminal Server Edition

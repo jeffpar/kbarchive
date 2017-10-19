@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85051: FFAPI: The Components of Gateway FFAPI"
-permalink: kb/085/Q85051/
+permalink: /kb/085/Q85051/
 ---
 
 ## Q85051: FFAPI: The Components of Gateway FFAPI

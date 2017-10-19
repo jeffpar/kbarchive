@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119930: Space: Situation Description Is Editable When Opening"
-permalink: kb/119/Q119930/
+permalink: /kb/119/Q119930/
 ---
 
 ## Q119930: Space: Situation Description Is Editable When Opening

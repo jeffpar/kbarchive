@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275631: XCON: MTA Does Not Send X.400 O/R Address Across X.400 Connector"
-permalink: kb/275/Q275631/
+permalink: /kb/275/Q275631/
 ---
 
 ## Q275631: XCON: MTA Does Not Send X.400 O/R Address Across X.400 Connector

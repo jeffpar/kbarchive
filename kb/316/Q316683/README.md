@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316683: Cache Expiration Does Not Free All Associated Memory"
-permalink: kb/316/Q316683/
+permalink: /kb/316/Q316683/
 ---
 
 ## Q316683: Cache Expiration Does Not Free All Associated Memory

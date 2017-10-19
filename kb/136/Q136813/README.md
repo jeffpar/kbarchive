@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136813: PPP.LOG File Not Created Or Has File Size of 0"
-permalink: kb/136/Q136813/
+permalink: /kb/136/Q136813/
 ---
 
 ## Q136813: PPP.LOG File Not Created Or Has File Size of 0

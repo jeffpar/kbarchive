@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130978: PC DirSync: IdleTime Will Not Work if External Is Idle Process"
-permalink: kb/130/Q130978/
+permalink: /kb/130/Q130978/
 ---
 
 ## Q130978: PC DirSync: IdleTime Will Not Work if External Is Idle Process

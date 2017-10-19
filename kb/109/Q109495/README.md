@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109495: Windows Err Msg:  Setup Error #3, Setup is unable to copy..."
-permalink: kb/109/Q109495/
+permalink: /kb/109/Q109495/
 ---
 
 ## Q109495: Windows Err Msg:  Setup Error #3, Setup is unable to copy...

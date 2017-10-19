@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148609: BUG: GO TO Statement Syntax Coloring Fails in Developer Studio"
-permalink: kb/148/Q148609/
+permalink: /kb/148/Q148609/
 ---
 
 ## Q148609: BUG: GO TO Statement Syntax Coloring Fails in Developer Studio

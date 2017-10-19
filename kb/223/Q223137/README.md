@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223137: IIS 4.0 Log Field May Contain Invalid Constant Time Field"
-permalink: kb/223/Q223137/
+permalink: /kb/223/Q223137/
 ---
 
 ## Q223137: IIS 4.0 Log Field May Contain Invalid Constant Time Field

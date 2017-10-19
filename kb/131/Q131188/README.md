@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131188: Sony IDE CD-ROM Drive and 32-Bit Disk Access"
-permalink: kb/131/Q131188/
+permalink: /kb/131/Q131188/
 ---
 
 ## Q131188: Sony IDE CD-ROM Drive and 32-Bit Disk Access

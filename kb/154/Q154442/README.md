@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154442: Application Handles Responses Received from DNS"
-permalink: kb/154/Q154442/
+permalink: /kb/154/Q154442/
 ---
 
 ## Q154442: Application Handles Responses Received from DNS

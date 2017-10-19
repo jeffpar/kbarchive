@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176124: WD97: Revision Bars Display and Print in Wrong Location"
-permalink: kb/176/Q176124/
+permalink: /kb/176/Q176124/
 ---
 
 ## Q176124: WD97: Revision Bars Display and Print in Wrong Location

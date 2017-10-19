@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322311: XADM: Users Cannot Move Messages with Attachments to Outlook"
-permalink: kb/322/Q322311/
+permalink: /kb/322/Q322311/
 ---
 
 ## Q322311: XADM: Users Cannot Move Messages with Attachments to Outlook

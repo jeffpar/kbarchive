@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142634: Multiple Processes Are Able to Open the Same Winsock Port"
-permalink: kb/142/Q142634/
+permalink: /kb/142/Q142634/
 ---
 
 ## Q142634: Multiple Processes Are Able to Open the Same Winsock Port

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153139: Removing Deleted or Renamed Servers from License Manager"
-permalink: kb/153/Q153139/
+permalink: /kb/153/Q153139/
 ---
 
 ## Q153139: Removing Deleted or Renamed Servers from License Manager

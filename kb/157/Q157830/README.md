@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157830: SMS: Remote Ctl. With FR Regional Setting 1.2 SP2 - Grey Viewer"
-permalink: kb/157/Q157830/
+permalink: /kb/157/Q157830/
 ---
 
 ## Q157830: SMS: Remote Ctl. With FR Regional Setting 1.2 SP2 - Grey Viewer

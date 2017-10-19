@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123874: PRB: Section Names Truncated to Eight Characters When Linked"
-permalink: kb/123/Q123874/
+permalink: /kb/123/Q123874/
 ---
 
 ## Q123874: PRB: Section Names Truncated to Eight Characters When Linked

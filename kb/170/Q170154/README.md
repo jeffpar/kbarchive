@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170154: INFO: VB 6.0 Readme Part 10: Extensibility Issues"
-permalink: kb/170/Q170154/
+permalink: /kb/170/Q170154/
 ---
 
 ## Q170154: INFO: VB 6.0 Readme Part 10: Extensibility Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128516: Okidata OL-410ex Printout Incorrect at 600 dpi"
-permalink: kb/128/Q128516/
+permalink: /kb/128/Q128516/
 ---
 
 ## Q128516: Okidata OL-410ex Printout Incorrect at 600 dpi

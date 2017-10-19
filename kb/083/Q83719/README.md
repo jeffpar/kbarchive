@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83719: No MS-DOS Prompt on Novell Network with Windows 3.1"
-permalink: kb/083/Q83719/
+permalink: /kb/083/Q83719/
 ---
 
 ## Q83719: No MS-DOS Prompt on Novell Network with Windows 3.1

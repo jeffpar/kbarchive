@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189212: NT Server Resource Kit: Performance Data Log (PerfLog) Status"
-permalink: kb/189/Q189212/
+permalink: /kb/189/Q189212/
 ---
 
 ## Q189212: NT Server Resource Kit: Performance Data Log (PerfLog) Status

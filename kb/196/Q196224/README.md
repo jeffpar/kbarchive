@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196224: SMS: STOP 1E Error When Using the &quot;Gold Key&quot; to Remote Control"
-permalink: kb/196/Q196224/
+permalink: /kb/196/Q196224/
 ---
 
 ## Q196224: SMS: STOP 1E Error When Using the &quot;Gold Key&quot; to Remote Control

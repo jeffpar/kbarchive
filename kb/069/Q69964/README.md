@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69964: Automating Network Setup Files via SETUP.INF"
-permalink: kb/069/Q69964/
+permalink: /kb/069/Q69964/
 ---
 
 ## Q69964: Automating Network Setup Files via SETUP.INF

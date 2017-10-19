@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241653: Auditing Changes in SCM Not Reflected in User Manager Policies"
-permalink: kb/241/Q241653/
+permalink: /kb/241/Q241653/
 ---
 
 ## Q241653: Auditing Changes in SCM Not Reflected in User Manager Policies

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146537: XADM: DSA Queues: Too Many Initial Synchronizes at Startup"
-permalink: kb/146/Q146537/
+permalink: /kb/146/Q146537/
 ---
 
 ## Q146537: XADM: DSA Queues: Too Many Initial Synchronizes at Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149964: FIX: C1001 on Large Basic Block with Optimizations Enabled"
-permalink: kb/149/Q149964/
+permalink: /kb/149/Q149964/
 ---
 
 ## Q149964: FIX: C1001 on Large Basic Block with Optimizations Enabled

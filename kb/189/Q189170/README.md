@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189170: HOWTO: Package HiWord/LoWord Values Into a Long Parameter"
-permalink: kb/189/Q189170/
+permalink: /kb/189/Q189170/
 ---
 
 ## Q189170: HOWTO: Package HiWord/LoWord Values Into a Long Parameter

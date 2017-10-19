@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113168: PC Win: Err Msg: The Partial Name Is Not Specific Enough..."
-permalink: kb/113/Q113168/
+permalink: /kb/113/Q113168/
 ---
 
 ## Q113168: PC Win: Err Msg: The Partial Name Is Not Specific Enough...

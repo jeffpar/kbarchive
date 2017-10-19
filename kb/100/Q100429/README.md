@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100429: How to Specify an External Editor for Text Files"
-permalink: kb/100/Q100429/
+permalink: /kb/100/Q100429/
 ---
 
 ## Q100429: How to Specify an External Editor for Text Files

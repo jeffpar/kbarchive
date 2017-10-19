@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171883: Runtime Error When Installing Microsoft Cluster Server"
-permalink: kb/171/Q171883/
+permalink: /kb/171/Q171883/
 ---
 
 ## Q171883: Runtime Error When Installing Microsoft Cluster Server

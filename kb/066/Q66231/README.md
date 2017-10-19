@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66231: How to Insert Spaces Before a Block of Text in PWB"
-permalink: kb/066/Q66231/
+permalink: /kb/066/Q66231/
 ---
 
 ## Q66231: How to Insert Spaces Before a Block of Text in PWB

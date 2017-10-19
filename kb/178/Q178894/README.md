@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178894: Cannot Print to HP LaserJet 6L Printer in Windows NT"
-permalink: kb/178/Q178894/
+permalink: /kb/178/Q178894/
 ---
 
 ## Q178894: Cannot Print to HP LaserJet 6L Printer in Windows NT

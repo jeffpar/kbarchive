@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176397: XFOR: Access Violation Migrating Messages from SFS Postoffice"
-permalink: kb/176/Q176397/
+permalink: /kb/176/Q176397/
 ---
 
 ## Q176397: XFOR: Access Violation Migrating Messages from SFS Postoffice

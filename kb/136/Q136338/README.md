@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136338: FIX: Windows 95 GDI Leak with Show Window Contents Setting"
-permalink: kb/136/Q136338/
+permalink: /kb/136/Q136338/
 ---
 
 ## Q136338: FIX: Windows 95 GDI Leak with Show Window Contents Setting

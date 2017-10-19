@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130506: HOWTO: Use AERROR() in Place of DBERROR() for ODBC Errors"
-permalink: kb/130/Q130506/
+permalink: /kb/130/Q130506/
 ---
 
 ## Q130506: HOWTO: Use AERROR() in Place of DBERROR() for ODBC Errors

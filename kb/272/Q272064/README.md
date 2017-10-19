@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272064: XCON: Dynamic RAS Connection Hangs Up Before Transferring Mail"
-permalink: kb/272/Q272064/
+permalink: /kb/272/Q272064/
 ---
 
 ## Q272064: XCON: Dynamic RAS Connection Hangs Up Before Transferring Mail

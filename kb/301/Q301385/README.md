@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301385: SMS: The Offermgr.log File Entry May Be  Misleading"
-permalink: kb/301/Q301385/
+permalink: /kb/301/Q301385/
 ---
 
 ## Q301385: SMS: The Offermgr.log File Entry May Be  Misleading

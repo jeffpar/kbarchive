@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192560: HOWTO: Add ATL Control Containment Support to Any Window"
-permalink: kb/192/Q192560/
+permalink: /kb/192/Q192560/
 ---
 
 ## Q192560: HOWTO: Add ATL Control Containment Support to Any Window

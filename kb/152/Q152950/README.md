@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152950: XCLN: Text Attachments Open in Word on Macintosh Client"
-permalink: kb/152/Q152950/
+permalink: /kb/152/Q152950/
 ---
 
 ## Q152950: XCLN: Text Attachments Open in Word on Macintosh Client

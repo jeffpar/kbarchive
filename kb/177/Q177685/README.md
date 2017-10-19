@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177685: HOWTO: Handle Missing DataPoints with MSChart"
-permalink: kb/177/Q177685/
+permalink: /kb/177/Q177685/
 ---
 
 ## Q177685: HOWTO: Handle Missing DataPoints with MSChart

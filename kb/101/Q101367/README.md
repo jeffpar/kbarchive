@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101367: PC WRmt: Err Msg: Mail Remote Driver Not Compatible..."
-permalink: kb/101/Q101367/
+permalink: /kb/101/Q101367/
 ---
 
 ## Q101367: PC WRmt: Err Msg: Mail Remote Driver Not Compatible...

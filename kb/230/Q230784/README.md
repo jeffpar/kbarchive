@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230784: NTVDM May Stop Responding After Quitting 16-Bit Programs"
-permalink: kb/230/Q230784/
+permalink: /kb/230/Q230784/
 ---
 
 ## Q230784: NTVDM May Stop Responding After Quitting 16-Bit Programs

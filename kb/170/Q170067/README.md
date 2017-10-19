@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170067: XADM: New IP Addresses Are Not Added in Order"
-permalink: kb/170/Q170067/
+permalink: /kb/170/Q170067/
 ---
 
 ## Q170067: XADM: New IP Addresses Are Not Added in Order

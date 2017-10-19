@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60338: PRB: Unable to Set CodeView Breakpoint on Desired Line"
-permalink: kb/060/Q60338/
+permalink: /kb/060/Q60338/
 ---
 
 ## Q60338: PRB: Unable to Set CodeView Breakpoint on Desired Line

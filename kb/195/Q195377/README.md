@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195377: FIX: LNK1104 When Linking VXD with /MAP"
-permalink: kb/195/Q195377/
+permalink: /kb/195/Q195377/
 ---
 
 ## Q195377: FIX: LNK1104 When Linking VXD with /MAP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72171: Workarounds for 128 Character PATH Limitation"
-permalink: kb/072/Q72171/
+permalink: /kb/072/Q72171/
 ---
 
 ## Q72171: Workarounds for 128 Character PATH Limitation

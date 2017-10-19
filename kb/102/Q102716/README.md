@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102716: User Authentication with Windows NT"
-permalink: kb/102/Q102716/
+permalink: /kb/102/Q102716/
 ---
 
 ## Q102716: User Authentication with Windows NT

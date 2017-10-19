@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37924: Mac DOS: Description of the TOPS FlashCard for the PC"
-permalink: kb/037/Q37924/
+permalink: /kb/037/Q37924/
 ---
 
 ## Q37924: Mac DOS: Description of the TOPS FlashCard for the PC

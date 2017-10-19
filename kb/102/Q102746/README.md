@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102746: X400: Retry Times on Failures to Connect to MTA"
-permalink: kb/102/Q102746/
+permalink: /kb/102/Q102746/
 ---
 
 ## Q102746: X400: Retry Times on Failures to Connect to MTA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45536: FIX: LINK 5.02 Should Not Be Used with ILINK 1.1"
-permalink: kb/045/Q45536/
+permalink: /kb/045/Q45536/
 ---
 
 ## Q45536: FIX: LINK 5.02 Should Not Be Used with ILINK 1.1

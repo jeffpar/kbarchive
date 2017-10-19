@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214539: PRB: Netscape Returns &quot;Data Missing&quot; After Resizing the Browser"
-permalink: kb/214/Q214539/
+permalink: /kb/214/Q214539/
 ---
 
 ## Q214539: PRB: Netscape Returns &quot;Data Missing&quot; After Resizing the Browser

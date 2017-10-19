@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183665: XADM: Unable to Delete Attachment From Message"
-permalink: kb/183/Q183665/
+permalink: /kb/183/Q183665/
 ---
 
 ## Q183665: XADM: Unable to Delete Attachment From Message

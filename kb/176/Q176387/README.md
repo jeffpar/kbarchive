@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176387: Err Msg: You Must Have Cinemania Installed on Your Machine..."
-permalink: kb/176/Q176387/
+permalink: /kb/176/Q176387/
 ---
 
 ## Q176387: Err Msg: You Must Have Cinemania Installed on Your Machine...

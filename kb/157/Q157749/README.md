@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157749: WD97: Format Callout Dimmed After Drawing Certain Callouts"
-permalink: kb/157/Q157749/
+permalink: /kb/157/Q157749/
 ---
 
 ## Q157749: WD97: Format Callout Dimmed After Drawing Certain Callouts

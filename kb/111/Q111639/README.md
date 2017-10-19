@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111639: Conner AT IDE Hard Drives and Disk Scan Software"
-permalink: kb/111/Q111639/
+permalink: /kb/111/Q111639/
 ---
 
 ## Q111639: Conner AT IDE Hard Drives and Disk Scan Software

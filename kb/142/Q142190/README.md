@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142190: How to Create Mover List Boxes in Visual FoxPro"
-permalink: kb/142/Q142190/
+permalink: /kb/142/Q142190/
 ---
 
 ## Q142190: How to Create Mover List Boxes in Visual FoxPro

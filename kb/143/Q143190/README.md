@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143190: Internet Service Manager Fails to Connect to IIS Over Internet"
-permalink: kb/143/Q143190/
+permalink: /kb/143/Q143190/
 ---
 
 ## Q143190: Internet Service Manager Fails to Connect to IIS Over Internet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259874: Error Message: The System Can Not Log You On (6A6)"
-permalink: kb/259/Q259874/
+permalink: /kb/259/Q259874/
 ---
 
 ## Q259874: Error Message: The System Can Not Log You On (6A6)

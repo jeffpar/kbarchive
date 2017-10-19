@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146257: XCLN: Screen Refresh Problems When Using the Color Dialog"
-permalink: kb/146/Q146257/
+permalink: /kb/146/Q146257/
 ---
 
 ## Q146257: XCLN: Screen Refresh Problems When Using the Color Dialog

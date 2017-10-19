@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148841: Encarta 1996: Update File Download Hangs or Crashes Encarta"
-permalink: kb/148/Q148841/
+permalink: /kb/148/Q148841/
 ---
 
 ## Q148841: Encarta 1996: Update File Download Hangs or Crashes Encarta

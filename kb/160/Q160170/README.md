@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160170: Display Problems Playing Video Clips in Windows"
-permalink: kb/160/Q160170/
+permalink: /kb/160/Q160170/
 ---
 
 ## Q160170: Display Problems Playing Video Clips in Windows

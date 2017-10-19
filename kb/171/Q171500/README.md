@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171500: FIX: ATL Controls Without IPropertyNotifySink Cause IPF in VB5"
-permalink: kb/171/Q171500/
+permalink: /kb/171/Q171500/
 ---
 
 ## Q171500: FIX: ATL Controls Without IPropertyNotifySink Cause IPF in VB5

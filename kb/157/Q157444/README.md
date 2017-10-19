@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157444: INFO: Troubleshooting LU6.2 Event 17 or Event 18 Sense Code = 08"
-permalink: kb/157/Q157444/
+permalink: /kb/157/Q157444/
 ---
 
 ## Q157444: INFO: Troubleshooting LU6.2 Event 17 or Event 18 Sense Code = 08

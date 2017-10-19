@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232242: SMS: Audit16 Stops Responding on Removable Media Drive"
-permalink: kb/232/Q232242/
+permalink: /kb/232/Q232242/
 ---
 
 ## Q232242: SMS: Audit16 Stops Responding on Removable Media Drive

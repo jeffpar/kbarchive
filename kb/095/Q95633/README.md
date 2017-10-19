@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95633: Automating RAMDrive Compression with DoubleSpace"
-permalink: kb/095/Q95633/
+permalink: /kb/095/Q95633/
 ---
 
 ## Q95633: Automating RAMDrive Compression with DoubleSpace

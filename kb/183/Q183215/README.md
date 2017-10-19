@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183215: WD97: Object Not a Collection Error in SynonymInfo.MeaningList"
-permalink: kb/183/Q183215/
+permalink: /kb/183/Q183215/
 ---
 
 ## Q183215: WD97: Object Not a Collection Error in SynonymInfo.MeaningList

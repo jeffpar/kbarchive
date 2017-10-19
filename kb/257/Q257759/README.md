@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257759: TN5250 Service Ends Unexpectedly When Client Disconnects"
-permalink: kb/257/Q257759/
+permalink: /kb/257/Q257759/
 ---
 
 ## Q257759: TN5250 Service Ends Unexpectedly When Client Disconnects

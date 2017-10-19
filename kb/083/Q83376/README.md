@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83376: SMARTDrive ElementSize Should Precede CacheSizes"
-permalink: kb/083/Q83376/
+permalink: /kb/083/Q83376/
 ---
 
 ## Q83376: SMARTDrive ElementSize Should Precede CacheSizes

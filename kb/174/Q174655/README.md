@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174655: PRB: File DSN and DSN-Less Connections May Fail w/Localized ODBC"
-permalink: kb/174/Q174655/
+permalink: /kb/174/Q174655/
 ---
 
 ## Q174655: PRB: File DSN and DSN-Less Connections May Fail w/Localized ODBC

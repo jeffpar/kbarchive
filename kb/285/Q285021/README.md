@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285021: XADM: Exchange Event Service Does Not Start with Error 2140"
-permalink: kb/285/Q285021/
+permalink: /kb/285/Q285021/
 ---
 
 ## Q285021: XADM: Exchange Event Service Does Not Start with Error 2140

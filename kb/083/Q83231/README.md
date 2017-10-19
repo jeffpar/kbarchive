@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83231: The 44 TrueType Fonts Offered in Windows 3.1 Font Pack 1"
-permalink: kb/083/Q83231/
+permalink: /kb/083/Q83231/
 ---
 
 ## Q83231: The 44 TrueType Fonts Offered in Windows 3.1 Font Pack 1

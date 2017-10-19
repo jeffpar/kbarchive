@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176141: Shortcut Retains Settings When Window Size Is Changed"
-permalink: kb/176/Q176141/
+permalink: /kb/176/Q176141/
 ---
 
 ## Q176141: Shortcut Retains Settings When Window Size Is Changed

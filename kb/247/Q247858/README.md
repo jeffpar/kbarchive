@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247858: CRC Error Message on FAT Media Causes Kernel Stack Overflow"
-permalink: kb/247/Q247858/
+permalink: /kb/247/Q247858/
 ---
 
 ## Q247858: CRC Error Message on FAT Media Causes Kernel Stack Overflow

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179197: XFOR: Notes Client Receives &quot;Error Loading Metafile&quot;"
-permalink: kb/179/Q179197/
+permalink: /kb/179/Q179197/
 ---
 
 ## Q179197: XFOR: Notes Client Receives &quot;Error Loading Metafile&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187620: Understanding Intranets Comments and Corrections"
-permalink: kb/187/Q187620/
+permalink: /kb/187/Q187620/
 ---
 
 ## Q187620: Understanding Intranets Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139532: Streets 4.0 and Windows NT 3.51: Names Disappear When Zooming"
-permalink: kb/139/Q139532/
+permalink: /kb/139/Q139532/
 ---
 
 ## Q139532: Streets 4.0 and Windows NT 3.51: Names Disappear When Zooming

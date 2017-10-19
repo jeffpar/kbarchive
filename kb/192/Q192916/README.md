@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192916: Outwars: Cannot Hear Sound in Game"
-permalink: kb/192/Q192916/
+permalink: /kb/192/Q192916/
 ---
 
 ## Q192916: Outwars: Cannot Hear Sound in Game

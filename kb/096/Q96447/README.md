@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96447: Manifest Shows EMS Memory with NOEMS Switch"
-permalink: kb/096/Q96447/
+permalink: /kb/096/Q96447/
 ---
 
 ## Q96447: Manifest Shows EMS Memory with NOEMS Switch

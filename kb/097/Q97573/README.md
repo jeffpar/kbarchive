@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97573: Using DoubleSpace with LANtastic"
-permalink: kb/097/Q97573/
+permalink: /kb/097/Q97573/
 ---
 
 ## Q97573: Using DoubleSpace with LANtastic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157198: WD97: Conversion Wizard Restarts After Clicking Close"
-permalink: kb/157/Q157198/
+permalink: /kb/157/Q157198/
 ---
 
 ## Q157198: WD97: Conversion Wizard Restarts After Clicking Close

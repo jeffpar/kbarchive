@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129603: Using Systems Management Server Remote Control over a RAS Server"
-permalink: kb/129/Q129603/
+permalink: /kb/129/Q129603/
 ---
 
 ## Q129603: Using Systems Management Server Remote Control over a RAS Server

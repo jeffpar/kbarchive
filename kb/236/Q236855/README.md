@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236855: Changes to the IWAM Account in IIS 5.0"
-permalink: kb/236/Q236855/
+permalink: /kb/236/Q236855/
 ---
 
 ## Q236855: Changes to the IWAM Account in IIS 5.0

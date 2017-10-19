@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125652: Incorrect NIC ID Attribute Info Adding NetWare Server to Site"
-permalink: kb/125/Q125652/
+permalink: /kb/125/Q125652/
 ---
 
 ## Q125652: Incorrect NIC ID Attribute Info Adding NetWare Server to Site

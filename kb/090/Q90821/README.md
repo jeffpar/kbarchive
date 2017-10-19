@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90821: Write: How to Enter a Soft Return"
-permalink: kb/090/Q90821/
+permalink: /kb/090/Q90821/
 ---
 
 ## Q90821: Write: How to Enter a Soft Return

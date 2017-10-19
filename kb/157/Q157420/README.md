@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157420: XFOR: Embedded Messages not Handled by MS Mail Connector"
-permalink: kb/157/Q157420/
+permalink: /kb/157/Q157420/
 ---
 
 ## Q157420: XFOR: Embedded Messages not Handled by MS Mail Connector

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87396: PC DB: Which Programs Access the GROUP.GLB File"
-permalink: kb/087/Q87396/
+permalink: /kb/087/Q87396/
 ---
 
 ## Q87396: PC DB: Which Programs Access the GROUP.GLB File

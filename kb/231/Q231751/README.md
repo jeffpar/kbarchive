@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231751: XADM:Can't Renew Signing Key After Applying SP2 for Exchange 5.5"
-permalink: kb/231/Q231751/
+permalink: /kb/231/Q231751/
 ---
 
 ## Q231751: XADM:Can't Renew Signing Key After Applying SP2 for Exchange 5.5

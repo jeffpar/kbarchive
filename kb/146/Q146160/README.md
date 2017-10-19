@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146160: Error Exporting Data When Dispdib.dll is Missing"
-permalink: kb/146/Q146160/
+permalink: /kb/146/Q146160/
 ---
 
 ## Q146160: Error Exporting Data When Dispdib.dll is Missing

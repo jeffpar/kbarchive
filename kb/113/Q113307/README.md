@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113307: Sound Board Manufacturers Phone List"
-permalink: kb/113/Q113307/
+permalink: /kb/113/Q113307/
 ---
 
 ## Q113307: Sound Board Manufacturers Phone List

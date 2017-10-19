@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135627: FIX: Logical Fields Unavailable in Step 4 of Query Wizard"
-permalink: kb/135/Q135627/
+permalink: /kb/135/Q135627/
 ---
 
 ## Q135627: FIX: Logical Fields Unavailable in Step 4 of Query Wizard

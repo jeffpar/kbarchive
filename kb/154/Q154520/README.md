@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154520: XADM: Making Custom Attributes Viewable to Clients"
-permalink: kb/154/Q154520/
+permalink: /kb/154/Q154520/
 ---
 
 ## Q154520: XADM: Making Custom Attributes Viewable to Clients

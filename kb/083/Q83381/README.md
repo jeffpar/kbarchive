@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83381: Windows Err Msg: Startup Application Error: Application Req..."
-permalink: kb/083/Q83381/
+permalink: /kb/083/Q83381/
 ---
 
 ## Q83381: Windows Err Msg: Startup Application Error: Application Req...

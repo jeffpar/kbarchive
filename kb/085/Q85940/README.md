@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85940: SYSADMIN.WRI Not Included with Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85940/
+permalink: /kb/085/Q85940/
 ---
 
 ## Q85940: SYSADMIN.WRI Not Included with Windows &amp; MS-DOS 5 for IBM PS/2

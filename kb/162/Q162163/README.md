@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162163: Error Message During Resume on IBM Aptiva Computer"
-permalink: kb/162/Q162163/
+permalink: /kb/162/Q162163/
 ---
 
 ## Q162163: Error Message During Resume on IBM Aptiva Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102665: PC Win: Err Msg: There Was an Unknown Disk Error"
-permalink: kb/102/Q102665/
+permalink: /kb/102/Q102665/
 ---
 
 ## Q102665: PC Win: Err Msg: There Was an Unknown Disk Error

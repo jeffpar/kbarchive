@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189395: Support for Canadian ACNOR Keyboard"
-permalink: kb/189/Q189395/
+permalink: /kb/189/Q189395/
 ---
 
 ## Q189395: Support for Canadian ACNOR Keyboard

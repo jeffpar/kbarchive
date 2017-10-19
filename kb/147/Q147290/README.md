@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147290: Changing Focus From Role Box Loses Newly Typed Data"
-permalink: kb/147/Q147290/
+permalink: /kb/147/Q147290/
 ---
 
 ## Q147290: Changing Focus From Role Box Loses Newly Typed Data

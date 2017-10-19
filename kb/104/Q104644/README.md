@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104644: INFO: Passing C Arrays to MASM by Reference"
-permalink: kb/104/Q104644/
+permalink: /kb/104/Q104644/
 ---
 
 ## Q104644: INFO: Passing C Arrays to MASM by Reference

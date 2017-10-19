@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185870: SQL Server Insert Error Regarding Column Name Mismatch"
-permalink: kb/185/Q185870/
+permalink: /kb/185/Q185870/
 ---
 
 ## Q185870: SQL Server Insert Error Regarding Column Name Mismatch

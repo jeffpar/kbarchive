@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139168: FoxPro Hangs Accessing Database on Macintosh Volume"
-permalink: kb/139/Q139168/
+permalink: /kb/139/Q139168/
 ---
 
 ## Q139168: FoxPro Hangs Accessing Database on Macintosh Volume

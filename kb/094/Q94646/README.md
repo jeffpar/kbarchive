@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94646: INFO: Using GetCharABCWidths() to Calculate Text Extents"
-permalink: kb/094/Q94646/
+permalink: /kb/094/Q94646/
 ---
 
 ## Q94646: INFO: Using GetCharABCWidths() to Calculate Text Extents

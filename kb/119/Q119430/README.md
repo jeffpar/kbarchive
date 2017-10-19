@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119430: Pentium with Intel Motherboard Hangs When Running MemMaker"
-permalink: kb/119/Q119430/
+permalink: /kb/119/Q119430/
 ---
 
 ## Q119430: Pentium with Intel Motherboard Hangs When Running MemMaker

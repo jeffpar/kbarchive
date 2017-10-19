@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218934: Multiple Bugs in Security Configuration Manager MMC Snap-In"
-permalink: kb/218/Q218934/
+permalink: /kb/218/Q218934/
 ---
 
 ## Q218934: Multiple Bugs in Security Configuration Manager MMC Snap-In

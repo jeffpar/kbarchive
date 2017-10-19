@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149400: Err Msg: The Topic Does Not Exist. Contact Your Application..."
-permalink: kb/149/Q149400/
+permalink: /kb/149/Q149400/
 ---
 
 ## Q149400: Err Msg: The Topic Does Not Exist. Contact Your Application...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107476: Video Seven VRAM II Video Adapter Hangs WFWG 3.11 Setup"
-permalink: kb/107/Q107476/
+permalink: /kb/107/Q107476/
 ---
 
 ## Q107476: Video Seven VRAM II Video Adapter Hangs WFWG 3.11 Setup

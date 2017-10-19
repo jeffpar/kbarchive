@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247448: XADM: Proxy Address Number Mismatch with Exchange 5.5 and ADC"
-permalink: kb/247/Q247448/
+permalink: /kb/247/Q247448/
 ---
 
 ## Q247448: XADM: Proxy Address Number Mismatch with Exchange 5.5 and ADC

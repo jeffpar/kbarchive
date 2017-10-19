@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99449: Err Msg: Error Reading Partition Table with Stacker Disk"
-permalink: kb/099/Q99449/
+permalink: /kb/099/Q99449/
 ---
 
 ## Q99449: Err Msg: Error Reading Partition Table with Stacker Disk

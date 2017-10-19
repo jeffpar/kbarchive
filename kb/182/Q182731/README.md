@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182731: Download File List for DirectX 5.0 (Dx5eng.exe)"
-permalink: kb/182/Q182731/
+permalink: /kb/182/Q182731/
 ---
 
 ## Q182731: Download File List for DirectX 5.0 (Dx5eng.exe)

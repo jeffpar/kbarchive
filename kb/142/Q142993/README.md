@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142993: Cannot Open Online Viewer Titles After Installing MSN 1.2"
-permalink: kb/142/Q142993/
+permalink: /kb/142/Q142993/
 ---
 
 ## Q142993: Cannot Open Online Viewer Titles After Installing MSN 1.2

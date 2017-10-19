@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267963: Ping Utility Takes a Long Time to Return Results with NetBIOS Na"
-permalink: kb/267/Q267963/
+permalink: /kb/267/Q267963/
 ---
 
 ## Q267963: Ping Utility Takes a Long Time to Return Results with NetBIOS Na

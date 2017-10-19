@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184190: XADM: System Instabilities After Restoring Information Store"
-permalink: kb/184/Q184190/
+permalink: /kb/184/Q184190/
 ---
 
 ## Q184190: XADM: System Instabilities After Restoring Information Store

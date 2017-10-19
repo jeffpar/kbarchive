@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258745: XIMS: Internet Mail Service Displays SMTP Banner Slowly"
-permalink: kb/258/Q258745/
+permalink: /kb/258/Q258745/
 ---
 
 ## Q258745: XIMS: Internet Mail Service Displays SMTP Banner Slowly

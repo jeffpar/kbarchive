@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182653: Component Builder Title Bar Shows MS-DOS Filename"
-permalink: kb/182/Q182653/
+permalink: /kb/182/Q182653/
 ---
 
 ## Q182653: Component Builder Title Bar Shows MS-DOS Filename

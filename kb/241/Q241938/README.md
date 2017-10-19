@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241938: XWEB: &quot;Delivery Restriction&quot; Ignored Forwarding/Replying in OWA"
-permalink: kb/241/Q241938/
+permalink: /kb/241/Q241938/
 ---
 
 ## Q241938: XWEB: &quot;Delivery Restriction&quot; Ignored Forwarding/Replying in OWA

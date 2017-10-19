@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186172: XCON: POP3 RETR and LIST Command Behavior Reversed"
-permalink: kb/186/Q186172/
+permalink: /kb/186/Q186172/
 ---
 
 ## Q186172: XCON: POP3 RETR and LIST Command Behavior Reversed

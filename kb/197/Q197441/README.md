@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197441: WD97: &quot;Find Whole Words Only&quot; and &quot;Match Case&quot; Are Unavailable"
-permalink: kb/197/Q197441/
+permalink: /kb/197/Q197441/
 ---
 
 ## Q197441: WD97: &quot;Find Whole Words Only&quot; and &quot;Match Case&quot; Are Unavailable

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q85944: SETUP.INF: Specifying Directory in [RenFiles],[DelFiles]"
-permalink: kb/085/Q85944/
+title: "Q85944: SETUP.INF: Specifying Directory in &#91;RenFiles&#93;,&#91;DelFiles&#93;"
+permalink: /kb/085/Q85944/
 ---
 
-## Q85944: SETUP.INF: Specifying Directory in [RenFiles],[DelFiles]
+## Q85944: SETUP.INF: Specifying Directory in &#91;RenFiles&#93;,&#91;DelFiles&#93;
 
 	Article: Q85944
 	Product(s): Microsoft Windows 95.x Retail Product

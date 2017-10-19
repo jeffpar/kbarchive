@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116161: Baseball: Last Line of Stat List Cut Off when Printed/Copied"
-permalink: kb/116/Q116161/
+permalink: /kb/116/Q116161/
 ---
 
 ## Q116161: Baseball: Last Line of Stat List Cut Off when Printed/Copied

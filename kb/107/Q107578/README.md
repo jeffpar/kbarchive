@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107578: MS-DOS Prompt Can Hang with Full Redirector and Novell Loaded"
-permalink: kb/107/Q107578/
+permalink: /kb/107/Q107578/
 ---
 
 ## Q107578: MS-DOS Prompt Can Hang with Full Redirector and Novell Loaded

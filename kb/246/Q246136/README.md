@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246136: XADM: How to Increase Number of Exchange Server Tracking Logs"
-permalink: kb/246/Q246136/
+permalink: /kb/246/Q246136/
 ---
 
 ## Q246136: XADM: How to Increase Number of Exchange Server Tracking Logs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169649: XWEB: Access Is Denied Using the Web Client"
-permalink: kb/169/Q169649/
+permalink: /kb/169/Q169649/
 ---
 
 ## Q169649: XWEB: Access Is Denied Using the Web Client

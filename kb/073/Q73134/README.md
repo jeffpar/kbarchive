@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73134: WRK Fish Screen Saver Requires Standard or Enhanced Mode"
-permalink: kb/073/Q73134/
+permalink: /kb/073/Q73134/
 ---
 
 ## Q73134: WRK Fish Screen Saver Requires Standard or Enhanced Mode

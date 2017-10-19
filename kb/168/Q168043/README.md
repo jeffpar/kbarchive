@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168043: FIX: Grid is Empty with Incorrect Column ControlSource"
-permalink: kb/168/Q168043/
+permalink: /kb/168/Q168043/
 ---
 
 ## Q168043: FIX: Grid is Empty with Incorrect Column ControlSource

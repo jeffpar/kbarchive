@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102085: Mac Wkst: Mailbox Displays Mail Messages in Unexpected Order"
-permalink: kb/102/Q102085/
+permalink: /kb/102/Q102085/
 ---
 
 ## Q102085: Mac Wkst: Mailbox Displays Mail Messages in Unexpected Order

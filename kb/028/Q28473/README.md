@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28473: Detailed Information on What APPEND Does"
-permalink: kb/028/Q28473/
+permalink: /kb/028/Q28473/
 ---
 
 ## Q28473: Detailed Information on What APPEND Does

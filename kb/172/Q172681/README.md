@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172681: Print Server Does Not End Job on &quot;Flush Print Buffer&quot;"
-permalink: kb/172/Q172681/
+permalink: /kb/172/Q172681/
 ---
 
 ## Q172681: Print Server Does Not End Job on &quot;Flush Print Buffer&quot;

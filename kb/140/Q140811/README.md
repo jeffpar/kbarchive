@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140811: User Interface Takes 1 Minute to Display Job Details"
-permalink: kb/140/Q140811/
+permalink: /kb/140/Q140811/
 ---
 
 ## Q140811: User Interface Takes 1 Minute to Display Job Details

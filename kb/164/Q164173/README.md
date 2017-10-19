@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164173: PRB: No Information Returned for SQLSTATE IM006 from Driver"
-permalink: kb/164/Q164173/
+permalink: /kb/164/Q164173/
 ---
 
 ## Q164173: PRB: No Information Returned for SQLSTATE IM006 from Driver

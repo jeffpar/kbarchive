@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164863: XFOR: Setting the MSMI to Send SNADS Address as Reply-To"
-permalink: kb/164/Q164863/
+permalink: /kb/164/Q164863/
 ---
 
 ## Q164863: XFOR: Setting the MSMI to Send SNADS Address as Reply-To

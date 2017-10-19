@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128898: Missing Network Software Components in Control Panel"
-permalink: kb/128/Q128898/
+permalink: /kb/128/Q128898/
 ---
 
 ## Q128898: Missing Network Software Components in Control Panel

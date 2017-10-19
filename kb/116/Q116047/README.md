@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116047: Baseball: Must Re-Enter Info if Registration Is Unsuccessful"
-permalink: kb/116/Q116047/
+permalink: /kb/116/Q116047/
 ---
 
 ## Q116047: Baseball: Must Re-Enter Info if Registration Is Unsuccessful

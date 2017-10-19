@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q115458: PROFS: 3.4 Host Access Disk 1 [3.5, 1.44 MB]"
-permalink: kb/115/Q115458/
+title: "Q115458: PROFS: 3.4 Host Access Disk 1 &#91;3.5, 1.44 MB&#93;"
+permalink: /kb/115/Q115458/
 ---
 
-## Q115458: PROFS: 3.4 Host Access Disk 1 [3.5, 1.44 MB]
+## Q115458: PROFS: 3.4 Host Access Disk 1 &#91;3.5, 1.44 MB&#93;
 
 	Article: Q115458
 	Product(s): Microsoft Mail For PC Networks

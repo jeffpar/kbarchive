@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192201: XCLN: Schedule + 1.0 Will Not Run After 12/31/2019"
-permalink: kb/192/Q192201/
+permalink: /kb/192/Q192201/
 ---
 
 ## Q192201: XCLN: Schedule + 1.0 Will Not Run After 12/31/2019

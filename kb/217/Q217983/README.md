@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217983: Web Administration Is Not Removed by BackOffice Setup Program"
-permalink: kb/217/Q217983/
+permalink: /kb/217/Q217983/
 ---
 
 ## Q217983: Web Administration Is Not Removed by BackOffice Setup Program

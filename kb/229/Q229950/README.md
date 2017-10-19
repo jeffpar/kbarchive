@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229950: SMS: Provider Deletes When Computer Name Starts w/Number"
-permalink: kb/229/Q229950/
+permalink: /kb/229/Q229950/
 ---
 
 ## Q229950: SMS: Provider Deletes When Computer Name Starts w/Number

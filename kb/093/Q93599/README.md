@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93599: Difference Between DBLSPACE /CHKDSK and CHKDSK"
-permalink: kb/093/Q93599/
+permalink: /kb/093/Q93599/
 ---
 
 ## Q93599: Difference Between DBLSPACE /CHKDSK and CHKDSK

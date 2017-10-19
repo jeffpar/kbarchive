@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174217: ODE97: Comcat.dll Can't Be Registered During Run-time Install"
-permalink: kb/174/Q174217/
+permalink: /kb/174/Q174217/
 ---
 
 ## Q174217: ODE97: Comcat.dll Can't Be Registered During Run-time Install

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129891: ScanDisk Refers to Volume Label as File"
-permalink: kb/129/Q129891/
+permalink: /kb/129/Q129891/
 ---
 
 ## Q129891: ScanDisk Refers to Volume Label as File

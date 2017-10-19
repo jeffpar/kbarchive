@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172167: ODE97: DOC: Code Example in NodeClick Event Help Topic Incorrect"
-permalink: kb/172/Q172167/
+permalink: /kb/172/Q172167/
 ---
 
 ## Q172167: ODE97: DOC: Code Example in NodeClick Event Help Topic Incorrect

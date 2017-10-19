@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311815: PRB: WSACleanUp()  AV If Host Name Longer Than 54 Characters"
-permalink: kb/311/Q311815/
+permalink: /kb/311/Q311815/
 ---
 
 ## Q311815: PRB: WSACleanUp()  AV If Host Name Longer Than 54 Characters

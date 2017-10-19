@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158644: SMS: Windows NT 4.0 Upgrade Job Repeats Continually"
-permalink: kb/158/Q158644/
+permalink: /kb/158/Q158644/
 ---
 
 ## Q158644: SMS: Windows NT 4.0 Upgrade Job Repeats Continually

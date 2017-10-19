@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140552: How to Optimize Windows NT to Run Over Slow WAN Links w/TCP/IP"
-permalink: kb/140/Q140552/
+permalink: /kb/140/Q140552/
 ---
 
 ## Q140552: How to Optimize Windows NT to Run Over Slow WAN Links w/TCP/IP

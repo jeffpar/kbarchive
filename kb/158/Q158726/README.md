@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158726: How to Query Custom Document Properties in Index Server"
-permalink: kb/158/Q158726/
+permalink: /kb/158/Q158726/
 ---
 
 ## Q158726: How to Query Custom Document Properties in Index Server

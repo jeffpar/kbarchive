@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266599: Encarta Researcher: Cannot Copy Text from the Web"
-permalink: kb/266/Q266599/
+permalink: /kb/266/Q266599/
 ---
 
 ## Q266599: Encarta Researcher: Cannot Copy Text from the Web

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245787: XFOR: SMTP Error Message: 550 Invalid Domain"
-permalink: kb/245/Q245787/
+permalink: /kb/245/Q245787/
 ---
 
 ## Q245787: XFOR: SMTP Error Message: 550 Invalid Domain

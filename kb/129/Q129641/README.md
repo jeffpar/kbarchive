@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129641: INFO: Alternative to SCATTER and GATHER in the New VFP Model"
-permalink: kb/129/Q129641/
+permalink: /kb/129/Q129641/
 ---
 
 ## Q129641: INFO: Alternative to SCATTER and GATHER in the New VFP Model

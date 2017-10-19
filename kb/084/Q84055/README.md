@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84055: PRB: GDI Functions Do Not Affect Printer Device Context"
-permalink: kb/084/Q84055/
+permalink: /kb/084/Q84055/
 ---
 
 ## Q84055: PRB: GDI Functions Do Not Affect Printer Device Context

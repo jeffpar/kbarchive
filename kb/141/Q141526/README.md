@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141526: Text1 Object in Grid Column by Default Gives You More Control"
-permalink: kb/141/Q141526/
+permalink: /kb/141/Q141526/
 ---
 
 ## Q141526: Text1 Object in Grid Column by Default Gives You More Control

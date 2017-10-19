@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257401: Flight Simulator: Invalid Page Fault in Module G2d.dll or G3d.dl"
-permalink: kb/257/Q257401/
+permalink: /kb/257/Q257401/
 ---
 
 ## Q257401: Flight Simulator: Invalid Page Fault in Module G2d.dll or G3d.dl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306569: Non-U.S. User Cannot Set Up An MSN Internet Access Account After"
-permalink: kb/306/Q306569/
+permalink: /kb/306/Q306569/
 ---
 
 ## Q306569: Non-U.S. User Cannot Set Up An MSN Internet Access Account After

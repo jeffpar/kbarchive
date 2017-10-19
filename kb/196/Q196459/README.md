@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196459: Terminal Server Upgrading IE 4.0 from Either IE 3.0 or IE 2.0"
-permalink: kb/196/Q196459/
+permalink: /kb/196/Q196459/
 ---
 
 ## Q196459: Terminal Server Upgrading IE 4.0 from Either IE 3.0 or IE 2.0

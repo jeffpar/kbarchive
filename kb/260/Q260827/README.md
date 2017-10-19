@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260827: Conflicting Credentials Exist for CCM When Site Server on PDC"
-permalink: kb/260/Q260827/
+permalink: /kb/260/Q260827/
 ---
 
 ## Q260827: Conflicting Credentials Exist for CCM When Site Server on PDC

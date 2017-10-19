@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173998: Middle East/Thai Windows NT May Print Incorrect Characters"
-permalink: kb/173/Q173998/
+permalink: /kb/173/Q173998/
 ---
 
 ## Q173998: Middle East/Thai Windows NT May Print Incorrect Characters

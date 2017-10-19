@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257202: SMS: SP2 Functional Change in Processing Logon Point Updates"
-permalink: kb/257/Q257202/
+permalink: /kb/257/Q257202/
 ---
 
 ## Q257202: SMS: SP2 Functional Change in Processing Logon Point Updates

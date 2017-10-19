@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99596: ERR: &quot;File Access Denied&quot; Error Message"
-permalink: kb/099/Q99596/
+permalink: /kb/099/Q99596/
 ---
 
 ## Q99596: ERR: &quot;File Access Denied&quot; Error Message

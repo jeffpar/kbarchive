@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201110: Page xxv: Microsoft Mail Not Found in Information Services"
-permalink: kb/201/Q201110/
+permalink: /kb/201/Q201110/
 ---
 
 ## Q201110: Page xxv: Microsoft Mail Not Found in Information Services

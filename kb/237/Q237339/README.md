@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237339: WD97: Automating Word Creates an Additional Document"
-permalink: kb/237/Q237339/
+permalink: /kb/237/Q237339/
 ---
 
 ## Q237339: WD97: Automating Word Creates an Additional Document

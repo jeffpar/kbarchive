@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202750: CART: Steering Wheel Pedals Do Not Function"
-permalink: kb/202/Q202750/
+permalink: /kb/202/Q202750/
 ---
 
 ## Q202750: CART: Steering Wheel Pedals Do Not Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246701: Configuring Index Server to Use the Neutral Word Breaker"
-permalink: kb/246/Q246701/
+permalink: /kb/246/Q246701/
 ---
 
 ## Q246701: Configuring Index Server to Use the Neutral Word Breaker

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57595: Amdek CD-ROM Drive and Windows 3.0"
-permalink: kb/057/Q57595/
+permalink: /kb/057/Q57595/
 ---
 
 ## Q57595: Amdek CD-ROM Drive and Windows 3.0

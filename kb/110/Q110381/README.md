@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110381: U.S. Service Pack 2 Requires at Least 25 MB Free Disk Space"
-permalink: kb/110/Q110381/
+permalink: /kb/110/Q110381/
 ---
 
 ## Q110381: U.S. Service Pack 2 Requires at Least 25 MB Free Disk Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140676: PRB: ClassWizard Uses WM_HELPINFO Instead of WM_HELP"
-permalink: kb/140/Q140676/
+permalink: /kb/140/Q140676/
 ---
 
 ## Q140676: PRB: ClassWizard Uses WM_HELPINFO Instead of WM_HELP

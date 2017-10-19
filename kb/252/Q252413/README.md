@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252413: BUG: WinCE CDialogBar Does Not Forward Child Control Messages"
-permalink: kb/252/Q252413/
+permalink: /kb/252/Q252413/
 ---
 
 ## Q252413: BUG: WinCE CDialogBar Does Not Forward Child Control Messages

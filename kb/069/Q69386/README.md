@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69386: Avoiding Split Print Jobs on Banyan Vines and Windows 3.0"
-permalink: kb/069/Q69386/
+permalink: /kb/069/Q69386/
 ---
 
 ## Q69386: Avoiding Split Print Jobs on Banyan Vines and Windows 3.0

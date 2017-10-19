@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94968: 3COM: Gateway Won't Run -- Validate GATEWAY.INI Entries"
-permalink: kb/094/Q94968/
+permalink: /kb/094/Q94968/
 ---
 
 ## Q94968: 3COM: Gateway Won't Run -- Validate GATEWAY.INI Entries

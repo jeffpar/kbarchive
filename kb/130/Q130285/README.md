@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130285: PC Adm: Resetting or Rebuilding Mailbags with MAILQ16.EXE"
-permalink: kb/130/Q130285/
+permalink: /kb/130/Q130285/
 ---
 
 ## Q130285: PC Adm: Resetting or Rebuilding Mailbags with MAILQ16.EXE

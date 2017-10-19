@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275134: XADM: Cannot Reply to Mail Sent From User That Changed Sites"
-permalink: kb/275/Q275134/
+permalink: /kb/275/Q275134/
 ---
 
 ## Q275134: XADM: Cannot Reply to Mail Sent From User That Changed Sites

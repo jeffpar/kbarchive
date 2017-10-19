@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107491: Encarta: Cannot Use WordPerfect or AmiPro as Word Processors"
-permalink: kb/107/Q107491/
+permalink: /kb/107/Q107491/
 ---
 
 ## Q107491: Encarta: Cannot Use WordPerfect or AmiPro as Word Processors

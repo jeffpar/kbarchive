@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184608: HOWTO: Programmatically Create a DSN for SQL Server with VB"
-permalink: kb/184/Q184608/
+permalink: /kb/184/Q184608/
 ---
 
 ## Q184608: HOWTO: Programmatically Create a DSN for SQL Server with VB

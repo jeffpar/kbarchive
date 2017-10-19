@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126123: MS WIN 32 PROG REF, Vol 2: Corrections and Comments"
-permalink: kb/126/Q126123/
+permalink: /kb/126/Q126123/
 ---
 
 ## Q126123: MS WIN 32 PROG REF, Vol 2: Corrections and Comments

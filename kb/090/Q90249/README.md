@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90249: Some Network DDE Connections Not Displayed in Net Watcher"
-permalink: kb/090/Q90249/
+permalink: /kb/090/Q90249/
 ---
 
 ## Q90249: Some Network DDE Connections Not Displayed in Net Watcher

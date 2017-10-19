@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198252: PRB: Installation Error with Setup Wizard in Visual Basic 5.0"
-permalink: kb/198/Q198252/
+permalink: /kb/198/Q198252/
 ---
 
 ## Q198252: PRB: Installation Error with Setup Wizard in Visual Basic 5.0

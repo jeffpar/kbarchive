@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256278: &quot;Setup Could Not Modify the Registry&quot; During Index Server Setup"
-permalink: kb/256/Q256278/
+permalink: /kb/256/Q256278/
 ---
 
 ## Q256278: &quot;Setup Could Not Modify the Registry&quot; During Index Server Setup

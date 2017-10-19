@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142617: Server Rejects TreeConnectAndX and DirectorySearch SMB"
-permalink: kb/142/Q142617/
+permalink: /kb/142/Q142617/
 ---
 
 ## Q142617: Server Rejects TreeConnectAndX and DirectorySearch SMB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93167: MS-DOS Shell Limited to 2000 Tokens"
-permalink: kb/093/Q93167/
+permalink: /kb/093/Q93167/
 ---
 
 ## Q93167: MS-DOS Shell Limited to 2000 Tokens

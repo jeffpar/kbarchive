@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199016: EVG99: Menu Bar Is Active When Program Is Running in Background"
-permalink: kb/199/Q199016/
+permalink: /kb/199/Q199016/
 ---
 
 ## Q199016: EVG99: Menu Bar Is Active When Program Is Running in Background

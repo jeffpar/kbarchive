@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113195: Adaptec 274x Series SCSI Adapters"
-permalink: kb/113/Q113195/
+permalink: /kb/113/Q113195/
 ---
 
 ## Q113195: Adaptec 274x Series SCSI Adapters

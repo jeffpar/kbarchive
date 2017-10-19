@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125311: Bookshelf Fails on Second Print Attempt Using HP 4/ML Printer"
-permalink: kb/125/Q125311/
+permalink: /kb/125/Q125311/
 ---
 
 ## Q125311: Bookshelf Fails on Second Print Attempt Using HP 4/ML Printer

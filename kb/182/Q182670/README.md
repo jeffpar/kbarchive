@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182670: System Default Locale is Changed When Administrator Logs On"
-permalink: kb/182/Q182670/
+permalink: /kb/182/Q182670/
 ---
 
 ## Q182670: System Default Locale is Changed When Administrator Logs On

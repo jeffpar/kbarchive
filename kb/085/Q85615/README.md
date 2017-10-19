@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85615: FAX: How Attachments Are Handled"
-permalink: kb/085/Q85615/
+permalink: /kb/085/Q85615/
 ---
 
 ## Q85615: FAX: How Attachments Are Handled

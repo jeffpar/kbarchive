@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164059: IIS Execution File Text Can Be Viewed in Client"
-permalink: kb/164/Q164059/
+permalink: /kb/164/Q164059/
 ---
 
 ## Q164059: IIS Execution File Text Can Be Viewed in Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96484: Certified Boot ROM List"
-permalink: kb/096/Q96484/
+permalink: /kb/096/Q96484/
 ---
 
 ## Q96484: Certified Boot ROM List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83787: Troubleshooting Duplicate COMx Ports on Multi-I/O Boards"
-permalink: kb/083/Q83787/
+permalink: /kb/083/Q83787/
 ---
 
 ## Q83787: Troubleshooting Duplicate COMx Ports on Multi-I/O Boards

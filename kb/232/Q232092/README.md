@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232092: BUG: In-Top-Level Form Appears to Hang"
-permalink: kb/232/Q232092/
+permalink: /kb/232/Q232092/
 ---
 
 ## Q232092: BUG: In-Top-Level Form Appears to Hang

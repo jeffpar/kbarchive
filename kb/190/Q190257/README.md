@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190257: PRB: Component Gallery ListView Column Widths are Not Saved"
-permalink: kb/190/Q190257/
+permalink: /kb/190/Q190257/
 ---
 
 ## Q190257: PRB: Component Gallery ListView Column Widths are Not Saved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137834: Streets 4.0: Detailed Map View Option Missing"
-permalink: kb/137/Q137834/
+permalink: /kb/137/Q137834/
 ---
 
 ## Q137834: Streets 4.0: Detailed Map View Option Missing

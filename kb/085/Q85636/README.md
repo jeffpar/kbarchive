@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85636: AMI BIOS POST Beep Codes"
-permalink: kb/085/Q85636/
+permalink: /kb/085/Q85636/
 ---
 
 ## Q85636: AMI BIOS POST Beep Codes

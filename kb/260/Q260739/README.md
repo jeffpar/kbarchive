@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260739: SerialKeys Advanced Usage and Troubleshooting"
-permalink: kb/260/Q260739/
+permalink: /kb/260/Q260739/
 ---
 
 ## Q260739: SerialKeys Advanced Usage and Troubleshooting

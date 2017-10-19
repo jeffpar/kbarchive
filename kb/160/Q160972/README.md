@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160972: Removing FPNW Does Not Remove The FPNW Icon in Control Panel"
-permalink: kb/160/Q160972/
+permalink: /kb/160/Q160972/
 ---
 
 ## Q160972: Removing FPNW Does Not Remove The FPNW Icon in Control Panel

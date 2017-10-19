@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106403: FIX: DUP Operator Must Be Preceded by White Space"
-permalink: kb/106/Q106403/
+permalink: /kb/106/Q106403/
 ---
 
 ## Q106403: FIX: DUP Operator Must Be Preceded by White Space

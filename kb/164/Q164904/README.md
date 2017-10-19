@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164904: Stop 0x0000000A in NETBT.SYS After Applying Service Pack 2"
-permalink: kb/164/Q164904/
+permalink: /kb/164/Q164904/
 ---
 
 ## Q164904: Stop 0x0000000A in NETBT.SYS After Applying Service Pack 2

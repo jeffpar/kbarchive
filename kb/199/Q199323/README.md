@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199323: How to Automate Specific Passwords for Existing or New Accounts"
-permalink: kb/199/Q199323/
+permalink: /kb/199/Q199323/
 ---
 
 ## Q199323: How to Automate Specific Passwords for Existing or New Accounts

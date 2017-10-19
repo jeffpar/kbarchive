@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99807: Shell DDE Using DDEML"
-permalink: kb/099/Q99807/
+permalink: /kb/099/Q99807/
 ---
 
 ## Q99807: Shell DDE Using DDEML

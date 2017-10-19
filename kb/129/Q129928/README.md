@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129928: PRB: 'For Each' with 'Delete' Doesn't Work for DAO Collections"
-permalink: kb/129/Q129928/
+permalink: /kb/129/Q129928/
 ---
 
 ## Q129928: PRB: 'For Each' with 'Delete' Doesn't Work for DAO Collections

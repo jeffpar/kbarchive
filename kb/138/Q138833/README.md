@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138833: SNA Admin Loads Faster with Improvements in SNACFG.DLL"
-permalink: kb/138/Q138833/
+permalink: /kb/138/Q138833/
 ---
 
 ## Q138833: SNA Admin Loads Faster with Improvements in SNACFG.DLL

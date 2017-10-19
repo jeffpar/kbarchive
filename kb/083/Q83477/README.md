@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83477: New Key Combinations for Edit Menu Commands in Windows 3.1"
-permalink: kb/083/Q83477/
+permalink: /kb/083/Q83477/
 ---
 
 ## Q83477: New Key Combinations for Edit Menu Commands in Windows 3.1

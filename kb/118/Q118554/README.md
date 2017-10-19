@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118554: PRB: &quot;SQL Column Not Found&quot; with Macro Substitution in SELECT"
-permalink: kb/118/Q118554/
+permalink: /kb/118/Q118554/
 ---
 
 ## Q118554: PRB: &quot;SQL Column Not Found&quot; with Macro Substitution in SELECT

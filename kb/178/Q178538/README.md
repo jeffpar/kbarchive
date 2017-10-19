@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178538: Configuring DRAS with Reserved IP Address for Private Networks"
-permalink: kb/178/Q178538/
+permalink: /kb/178/Q178538/
 ---
 
 ## Q178538: Configuring DRAS with Reserved IP Address for Private Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100026: 3COM: DocErr: 3ComGateDomain Incorrectly Listed as PO1:NET1"
-permalink: kb/100/Q100026/
+permalink: /kb/100/Q100026/
 ---
 
 ## Q100026: 3COM: DocErr: 3ComGateDomain Incorrectly Listed as PO1:NET1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89873: WSS Compatibility with Sound Boards and MS-DOS Applications"
-permalink: kb/089/Q89873/
+permalink: /kb/089/Q89873/
 ---
 
 ## Q89873: WSS Compatibility with Sound Boards and MS-DOS Applications

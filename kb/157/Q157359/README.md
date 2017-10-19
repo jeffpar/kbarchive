@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157359: FIX: Resize Event Automatically Called in SubClassed PageFrame"
-permalink: kb/157/Q157359/
+permalink: /kb/157/Q157359/
 ---
 
 ## Q157359: FIX: Resize Event Automatically Called in SubClassed PageFrame

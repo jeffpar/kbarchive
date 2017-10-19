@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241202: HOWTO: Make a Manufactured Hierarchical Recordset from Another"
-permalink: kb/241/Q241202/
+permalink: /kb/241/Q241202/
 ---
 
 ## Q241202: HOWTO: Make a Manufactured Hierarchical Recordset from Another

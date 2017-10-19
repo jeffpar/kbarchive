@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254808: IIS Sample ADSI Script to Create FTP Virtual Directories"
-permalink: kb/254/Q254808/
+permalink: /kb/254/Q254808/
 ---
 
 ## Q254808: IIS Sample ADSI Script to Create FTP Virtual Directories

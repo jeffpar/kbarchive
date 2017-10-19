@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102575: INFO: Obtaining Group/Item Info from ProgMan Using DDEML"
-permalink: kb/102/Q102575/
+permalink: /kb/102/Q102575/
 ---
 
 ## Q102575: INFO: Obtaining Group/Item Info from ProgMan Using DDEML

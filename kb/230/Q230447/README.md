@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230447: Zone: ZoneFriends Status Bar Displays a Status of &quot;Logging On..&quot;"
-permalink: kb/230/Q230447/
+permalink: /kb/230/Q230447/
 ---
 
 ## Q230447: Zone: ZoneFriends Status Bar Displays a Status of &quot;Logging On..&quot;

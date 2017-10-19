@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154492: FIX: List of Fixes in VC++ 4.2 to Bugs in VC++ 4.0/VC++ 4.1"
-permalink: kb/154/Q154492/
+permalink: /kb/154/Q154492/
 ---
 
 ## Q154492: FIX: List of Fixes in VC++ 4.2 to Bugs in VC++ 4.0/VC++ 4.1

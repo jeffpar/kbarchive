@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81651: Running Microsoft Chart 3.0 in Standard-Mode Windows"
-permalink: kb/081/Q81651/
+permalink: /kb/081/Q81651/
 ---
 
 ## Q81651: Running Microsoft Chart 3.0 in Standard-Mode Windows

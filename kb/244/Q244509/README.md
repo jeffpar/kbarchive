@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244509: Non-Paged Pool Memory Leak May Occur Reading Partition Table"
-permalink: kb/244/Q244509/
+permalink: /kb/244/Q244509/
 ---
 
 ## Q244509: Non-Paged Pool Memory Leak May Occur Reading Partition Table

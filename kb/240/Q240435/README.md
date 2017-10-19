@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240435: PATCH: WCELoad.exe Fixes ActiveX Hanging Problem on Palm-size PC"
-permalink: kb/240/Q240435/
+permalink: /kb/240/Q240435/
 ---
 
 ## Q240435: PATCH: WCELoad.exe Fixes ActiveX Hanging Problem on Palm-size PC

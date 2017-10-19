@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114996: NET.ACC Timestamp Not Accurate Indicator of PDC Backups"
-permalink: kb/114/Q114996/
+permalink: /kb/114/Q114996/
 ---
 
 ## Q114996: NET.ACC Timestamp Not Accurate Indicator of PDC Backups

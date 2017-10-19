@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185144: WD97: Multi-level Numbered List Converts Incorrectly"
-permalink: kb/185/Q185144/
+permalink: /kb/185/Q185144/
 ---
 
 ## Q185144: WD97: Multi-level Numbered List Converts Incorrectly

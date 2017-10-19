@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121521: Printing Locally from a Toshiba Laptop 3600 or 4600c"
-permalink: kb/121/Q121521/
+permalink: /kb/121/Q121521/
 ---
 
 ## Q121521: Printing Locally from a Toshiba Laptop 3600 or 4600c

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129790: Base Classes Available in Visual FoxPro"
-permalink: kb/129/Q129790/
+permalink: /kb/129/Q129790/
 ---
 
 ## Q129790: Base Classes Available in Visual FoxPro

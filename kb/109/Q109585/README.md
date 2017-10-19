@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109585: PC WRmt: ATTMAIL.DLL Version 3.2.0.4003 Update"
-permalink: kb/109/Q109585/
+permalink: /kb/109/Q109585/
 ---
 
 ## Q109585: PC WRmt: ATTMAIL.DLL Version 3.2.0.4003 Update

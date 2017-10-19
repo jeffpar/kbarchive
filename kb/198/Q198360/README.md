@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198360: WD97: Line Numbers Stop After Line 65534"
-permalink: kb/198/Q198360/
+permalink: /kb/198/Q198360/
 ---
 
 ## Q198360: WD97: Line Numbers Stop After Line 65534

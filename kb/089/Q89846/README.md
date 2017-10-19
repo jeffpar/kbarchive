@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89846: Dr. Watson and Windows 3.1"
-permalink: kb/089/Q89846/
+permalink: /kb/089/Q89846/
 ---
 
 ## Q89846: Dr. Watson and Windows 3.1

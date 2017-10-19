@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156469: World Atlas: How to Run/Install if AutoRun is Disabled"
-permalink: kb/156/Q156469/
+permalink: /kb/156/Q156469/
 ---
 
 ## Q156469: World Atlas: How to Run/Install if AutoRun is Disabled

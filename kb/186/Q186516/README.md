@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186516: Terminal Server Commands: FLATTEMP"
-permalink: kb/186/Q186516/
+permalink: /kb/186/Q186516/
 ---
 
 ## Q186516: Terminal Server Commands: FLATTEMP

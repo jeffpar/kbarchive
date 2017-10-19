@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148998: DOCERR: ListIndex (OutLine) Returns -1 If No Item Is Selected"
-permalink: kb/148/Q148998/
+permalink: /kb/148/Q148998/
 ---
 
 ## Q148998: DOCERR: ListIndex (OutLine) Returns -1 If No Item Is Selected

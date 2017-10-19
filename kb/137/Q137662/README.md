@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137662: UNCONF: Unable to Process Msjt2032.dll Running Setup Wizard"
-permalink: kb/137/Q137662/
+permalink: /kb/137/Q137662/
 ---
 
 ## Q137662: UNCONF: Unable to Process Msjt2032.dll Running Setup Wizard

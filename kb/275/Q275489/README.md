@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275489: SMS: SMS 2.0 SP2 Administrator Console Hangs on WIN 2K Server"
-permalink: kb/275/Q275489/
+permalink: /kb/275/Q275489/
 ---
 
 ## Q275489: SMS: SMS 2.0 SP2 Administrator Console Hangs on WIN 2K Server

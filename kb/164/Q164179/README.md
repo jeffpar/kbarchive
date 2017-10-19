@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164179: Writer: Black Splotches when Printing to Canon BJC 600/620"
-permalink: kb/164/Q164179/
+permalink: /kb/164/Q164179/
 ---
 
 ## Q164179: Writer: Black Splotches when Printing to Canon BJC 600/620

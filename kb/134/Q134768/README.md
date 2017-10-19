@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134768: Problems Using the XCOPY Command and Long Filenames"
-permalink: kb/134/Q134768/
+permalink: /kb/134/Q134768/
 ---
 
 ## Q134768: Problems Using the XCOPY Command and Long Filenames

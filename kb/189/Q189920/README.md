@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189920: PRB: Image Control Shows Only First Frame of Animated GIF"
-permalink: kb/189/Q189920/
+permalink: /kb/189/Q189920/
 ---
 
 ## Q189920: PRB: Image Control Shows Only First Frame of Animated GIF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208237: Troubleshooting Event ID 5711 Recorded on the PDC"
-permalink: kb/208/Q208237/
+permalink: /kb/208/Q208237/
 ---
 
 ## Q208237: Troubleshooting Event ID 5711 Recorded on the PDC

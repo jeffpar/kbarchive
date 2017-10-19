@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172704: WD97: Company Name Not Added to Header w/ Letter Wizard"
-permalink: kb/172/Q172704/
+permalink: /kb/172/Q172704/
 ---
 
 ## Q172704: WD97: Company Name Not Added to Header w/ Letter Wizard

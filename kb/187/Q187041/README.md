@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187041: Available Servers Box Disappears from Client GUI"
-permalink: kb/187/Q187041/
+permalink: /kb/187/Q187041/
 ---
 
 ## Q187041: Available Servers Box Disappears from Client GUI

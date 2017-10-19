@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62173: Mac Hyp: Tips for Using the msmail() Function"
-permalink: kb/062/Q62173/
+permalink: /kb/062/Q62173/
 ---
 
 ## Q62173: Mac Hyp: Tips for Using the msmail() Function

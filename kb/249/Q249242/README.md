@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249242: The Active Log Format Drop-Down List Box in ISM Is Empty"
-permalink: kb/249/Q249242/
+permalink: /kb/249/Q249242/
 ---
 
 ## Q249242: The Active Log Format Drop-Down List Box in ISM Is Empty

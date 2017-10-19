@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105068: Defrag May Not Be Able to Defragment a Drive 100%"
-permalink: kb/105/Q105068/
+permalink: /kb/105/Q105068/
 ---
 
 ## Q105068: Defrag May Not Be Able to Defragment a Drive 100%

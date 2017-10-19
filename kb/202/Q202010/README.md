@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202010: SMS: &quot;Out of Environment Space&quot; Error on Windows 95 Clients"
-permalink: kb/202/Q202010/
+permalink: /kb/202/Q202010/
 ---
 
 ## Q202010: SMS: &quot;Out of Environment Space&quot; Error on Windows 95 Clients

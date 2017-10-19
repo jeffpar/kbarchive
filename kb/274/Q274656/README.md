@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274656: CFS2 Error Message: Invalid Page Fault in Module Winhlp32.exe"
-permalink: kb/274/Q274656/
+permalink: /kb/274/Q274656/
 ---
 
 ## Q274656: CFS2 Error Message: Invalid Page Fault in Module Winhlp32.exe

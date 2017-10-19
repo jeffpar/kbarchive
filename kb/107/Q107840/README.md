@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107840: Upgrade over IBM LAN Server Leaves Drivers in Startup Files"
-permalink: kb/107/Q107840/
+permalink: /kb/107/Q107840/
 ---
 
 ## Q107840: Upgrade over IBM LAN Server Leaves Drivers in Startup Files

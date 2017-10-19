@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129474: Encarta 94: MindMaze Doesn't Work with 95 ENCARAPI.DLL"
-permalink: kb/129/Q129474/
+permalink: /kb/129/Q129474/
 ---
 
 ## Q129474: Encarta 94: MindMaze Doesn't Work with 95 ENCARAPI.DLL

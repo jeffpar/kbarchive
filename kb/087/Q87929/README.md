@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87929: PRB: CTRL+BREAK, CTRL+ALT+SYSRQ, CTRL+C Do Not Return Control"
-permalink: kb/087/Q87929/
+permalink: /kb/087/Q87929/
 ---
 
 ## Q87929: PRB: CTRL+BREAK, CTRL+ALT+SYSRQ, CTRL+C Do Not Return Control

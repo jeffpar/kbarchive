@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162234: FP97: ID, Class, Style Attributes Not Retained"
-permalink: kb/162/Q162234/
+permalink: /kb/162/Q162234/
 ---
 
 ## Q162234: FP97: ID, Class, Style Attributes Not Retained

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86800: PRB: UnrealizeObject() Causes Unexpected Palette Behavior"
-permalink: kb/086/Q86800/
+permalink: /kb/086/Q86800/
 ---
 
 ## Q86800: PRB: UnrealizeObject() Causes Unexpected Palette Behavior

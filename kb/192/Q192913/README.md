@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192913: PRB: EnableModeless Causes Events to Fire Late"
-permalink: kb/192/Q192913/
+permalink: /kb/192/Q192913/
 ---
 
 ## Q192913: PRB: EnableModeless Causes Events to Fire Late

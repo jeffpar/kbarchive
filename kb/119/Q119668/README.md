@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119668: PRB: Linker Produces 2-MB Executables Under Windows NT 3.5"
-permalink: kb/119/Q119668/
+permalink: /kb/119/Q119668/
 ---
 
 ## Q119668: PRB: Linker Produces 2-MB Executables Under Windows NT 3.5

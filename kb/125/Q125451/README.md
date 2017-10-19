@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125451: Paintbrush Appears Without a Drawing Area"
-permalink: kb/125/Q125451/
+permalink: /kb/125/Q125451/
 ---
 
 ## Q125451: Paintbrush Appears Without a Drawing Area

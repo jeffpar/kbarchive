@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169279: ACC97: Error in Documenter If Object Can't Be Checked Out"
-permalink: kb/169/Q169279/
+permalink: /kb/169/Q169279/
 ---
 
 ## Q169279: ACC97: Error in Documenter If Object Can't Be Checked Out

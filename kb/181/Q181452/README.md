@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181452: XADM: How to Make Exchange Extensions Available in User Manager"
-permalink: kb/181/Q181452/
+permalink: /kb/181/Q181452/
 ---
 
 ## Q181452: XADM: How to Make Exchange Extensions Available in User Manager

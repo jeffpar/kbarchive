@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142874: Services for Macintosh Reports Incorrect Free Volume Space"
-permalink: kb/142/Q142874/
+permalink: /kb/142/Q142874/
 ---
 
 ## Q142874: Services for Macintosh Reports Incorrect Free Volume Space

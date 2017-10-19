@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269762: MSB Mars: Minimum System Requirements for Windows"
-permalink: kb/269/Q269762/
+permalink: /kb/269/Q269762/
 ---
 
 ## Q269762: MSB Mars: Minimum System Requirements for Windows

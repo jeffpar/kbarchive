@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185646: BUG: UserConnection Designer and Parameterized Query in Access"
-permalink: kb/185/Q185646/
+permalink: /kb/185/Q185646/
 ---
 
 ## Q185646: BUG: UserConnection Designer and Parameterized Query in Access

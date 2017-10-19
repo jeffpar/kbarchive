@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267851: Automap Err Msg: Cannot Display End User License Agreement"
-permalink: kb/267/Q267851/
+permalink: /kb/267/Q267851/
 ---
 
 ## Q267851: Automap Err Msg: Cannot Display End User License Agreement

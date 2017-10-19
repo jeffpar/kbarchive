@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103716: INFO: Debug Session Still Active Even After Last &quot;}&quot; of Main"
-permalink: kb/103/Q103716/
+permalink: /kb/103/Q103716/
 ---
 
 ## Q103716: INFO: Debug Session Still Active Even After Last &quot;}&quot; of Main

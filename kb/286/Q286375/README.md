@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286375: XFOR: Slow Banner Response from Internet Mail Service with NDR"
-permalink: kb/286/Q286375/
+permalink: /kb/286/Q286375/
 ---
 
 ## Q286375: XFOR: Slow Banner Response from Internet Mail Service with NDR

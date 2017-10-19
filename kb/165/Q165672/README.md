@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165672: Batch File Containing UNC Connection Fails When Run from PIF"
-permalink: kb/165/Q165672/
+permalink: /kb/165/Q165672/
 ---
 
 ## Q165672: Batch File Containing UNC Connection Fails When Run from PIF

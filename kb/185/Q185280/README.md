@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185280: FIX: Printf Gives Unexpected Results for Doubles on WinCE"
-permalink: kb/185/Q185280/
+permalink: /kb/185/Q185280/
 ---
 
 ## Q185280: FIX: Printf Gives Unexpected Results for Doubles on WinCE

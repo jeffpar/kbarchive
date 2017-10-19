@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225206: XCON: Multiple Servers Can't Send to Another Server in Same Site"
-permalink: kb/225/Q225206/
+permalink: /kb/225/Q225206/
 ---
 
 ## Q225206: XCON: Multiple Servers Can't Send to Another Server in Same Site

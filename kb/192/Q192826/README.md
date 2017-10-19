@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192826: FIX: DeleteColumn Causes Invalid Page Fault Error in Grid"
-permalink: kb/192/Q192826/
+permalink: /kb/192/Q192826/
 ---
 
 ## Q192826: FIX: DeleteColumn Causes Invalid Page Fault Error in Grid

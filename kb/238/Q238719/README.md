@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238719: XIMS: MTA Queues Mail for &quot;Inbound Only&quot; Internet Mail Service"
-permalink: kb/238/Q238719/
+permalink: /kb/238/Q238719/
 ---
 
 ## Q238719: XIMS: MTA Queues Mail for &quot;Inbound Only&quot; Internet Mail Service

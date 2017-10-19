@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238430: XCON: Msg with 3+ Attachments Has Wrong Attachment Name"
-permalink: kb/238/Q238430/
+permalink: /kb/238/Q238430/
 ---
 
 ## Q238430: XCON: Msg with 3+ Attachments Has Wrong Attachment Name

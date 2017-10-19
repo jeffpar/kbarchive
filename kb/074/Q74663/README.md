@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74663: FIX: ALIGN Following DUP Operator or Structure May Fail"
-permalink: kb/074/Q74663/
+permalink: /kb/074/Q74663/
 ---
 
 ## Q74663: FIX: ALIGN Following DUP Operator or Structure May Fail

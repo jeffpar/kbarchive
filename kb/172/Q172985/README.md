@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172985: FIX: Out of Order Definitions in idl May Cause Compiler Errors"
-permalink: kb/172/Q172985/
+permalink: /kb/172/Q172985/
 ---
 
 ## Q172985: FIX: Out of Order Definitions in idl May Cause Compiler Errors

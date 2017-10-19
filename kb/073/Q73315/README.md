@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73315: Using Microsoft Mouse Menu Software with MS-DOS 4.x - 6.0"
-permalink: kb/073/Q73315/
+permalink: /kb/073/Q73315/
 ---
 
 ## Q73315: Using Microsoft Mouse Menu Software with MS-DOS 4.x - 6.0

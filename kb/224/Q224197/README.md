@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224197: Cliex32.dll Error 126 Error Message When You Run Smsman.exe"
-permalink: kb/224/Q224197/
+permalink: /kb/224/Q224197/
 ---
 
 ## Q224197: Cliex32.dll Error 126 Error Message When You Run Smsman.exe

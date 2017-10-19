@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198707: SMS: Dependency Walker for Win32 (Depends.exe)"
-permalink: kb/198/Q198707/
+permalink: /kb/198/Q198707/
 ---
 
 ## Q198707: SMS: Dependency Walker for Win32 (Depends.exe)

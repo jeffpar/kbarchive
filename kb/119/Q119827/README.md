@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119827: PC Win: Err Msg: Error Occurred While Loading the Spelling..."
-permalink: kb/119/Q119827/
+permalink: /kb/119/Q119827/
 ---
 
 ## Q119827: PC Win: Err Msg: Error Occurred While Loading the Spelling...

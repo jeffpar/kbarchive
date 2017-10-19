@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86872: Program Manager DDE Command AddItem Documentation"
-permalink: kb/086/Q86872/
+permalink: /kb/086/Q86872/
 ---
 
 ## Q86872: Program Manager DDE Command AddItem Documentation

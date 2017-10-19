@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191623: HOWTO: Distribute VFP COM Components used with MTS"
-permalink: kb/191/Q191623/
+permalink: /kb/191/Q191623/
 ---
 
 ## Q191623: HOWTO: Distribute VFP COM Components used with MTS

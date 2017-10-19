@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140223: PRB: Syntax Error When Convert 2.x Screen That Has a Spinner"
-permalink: kb/140/Q140223/
+permalink: /kb/140/Q140223/
 ---
 
 ## Q140223: PRB: Syntax Error When Convert 2.x Screen That Has a Spinner

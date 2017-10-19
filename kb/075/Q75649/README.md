@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75649: Sysgen Durapak and MS-DOS 5.0"
-permalink: kb/075/Q75649/
+permalink: /kb/075/Q75649/
 ---
 
 ## Q75649: Sysgen Durapak and MS-DOS 5.0

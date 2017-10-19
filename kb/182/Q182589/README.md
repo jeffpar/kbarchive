@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182589: Err Msg: RNAAPP Caused an Invalid Page Fault in Module &lt;Unknown&gt;"
-permalink: kb/182/Q182589/
+permalink: /kb/182/Q182589/
 ---
 
 ## Q182589: Err Msg: RNAAPP Caused an Invalid Page Fault in Module &lt;Unknown&gt;

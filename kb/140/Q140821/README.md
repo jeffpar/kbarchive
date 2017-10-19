@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140821: The CPIC Thunk DLL Does not Support XCECST()/CMECST() Calls"
-permalink: kb/140/Q140821/
+permalink: /kb/140/Q140821/
 ---
 
 ## Q140821: The CPIC Thunk DLL Does not Support XCECST()/CMECST() Calls

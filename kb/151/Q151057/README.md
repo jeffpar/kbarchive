@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151057: Cinemania 96 Update Contents: May 96"
-permalink: kb/151/Q151057/
+permalink: /kb/151/Q151057/
 ---
 
 ## Q151057: Cinemania 96 Update Contents: May 96

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121406: Err Msg: The Process Cannot Switch to the Startup Current..."
-permalink: kb/121/Q121406/
+permalink: /kb/121/Q121406/
 ---
 
 ## Q121406: Err Msg: The Process Cannot Switch to the Startup Current...

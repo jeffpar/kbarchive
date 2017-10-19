@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157533: PRB: PVCS to SourceSafe Conversion Fails"
-permalink: kb/157/Q157533/
+permalink: /kb/157/Q157533/
 ---
 
 ## Q157533: PRB: PVCS to SourceSafe Conversion Fails

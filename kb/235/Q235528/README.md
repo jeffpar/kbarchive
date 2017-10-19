@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235528: XADM: Mailbox Item and Size Counts Are Incorrect"
-permalink: kb/235/Q235528/
+permalink: /kb/235/Q235528/
 ---
 
 ## Q235528: XADM: Mailbox Item and Size Counts Are Incorrect

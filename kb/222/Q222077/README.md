@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222077: AV in RRAS When Windows Time Service Adjusts System Time"
-permalink: kb/222/Q222077/
+permalink: /kb/222/Q222077/
 ---
 
 ## Q222077: AV in RRAS When Windows Time Service Adjusts System Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162559: WD97: Error Message: &quot;...Password-Protected with an Encryption S"
-permalink: kb/162/Q162559/
+permalink: /kb/162/Q162559/
 ---
 
 ## Q162559: WD97: Error Message: &quot;...Password-Protected with an Encryption S

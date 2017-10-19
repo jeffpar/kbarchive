@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134603: Cannot Change I/O Value on EtherExpress 16 Network Adapter"
-permalink: kb/134/Q134603/
+permalink: /kb/134/Q134603/
 ---
 
 ## Q134603: Cannot Change I/O Value on EtherExpress 16 Network Adapter

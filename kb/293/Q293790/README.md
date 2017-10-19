@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293790: FIX: SQLDescribeParam Causes Syntax Error or Access Violation"
-permalink: kb/293/Q293790/
+permalink: /kb/293/Q293790/
 ---
 
 ## Q293790: FIX: SQLDescribeParam Causes Syntax Error or Access Violation

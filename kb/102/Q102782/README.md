@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102782: Troubleshooting RAS Problems and Using the DEVICE.LOG File"
-permalink: kb/102/Q102782/
+permalink: /kb/102/Q102782/
 ---
 
 ## Q102782: Troubleshooting RAS Problems and Using the DEVICE.LOG File

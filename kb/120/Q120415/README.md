@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120415: Net SatisFAXtion Version 2.5 and Windows for Workgroups 3.11"
-permalink: kb/120/Q120415/
+permalink: /kb/120/Q120415/
 ---
 
 ## Q120415: Net SatisFAXtion Version 2.5 and Windows for Workgroups 3.11

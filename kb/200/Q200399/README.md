@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200399: SMS: Upgrading to SMS 2.0 When Packages Rely on MSTEST Directory"
-permalink: kb/200/Q200399/
+permalink: /kb/200/Q200399/
 ---
 
 ## Q200399: SMS: Upgrading to SMS 2.0 When Packages Rely on MSTEST Directory

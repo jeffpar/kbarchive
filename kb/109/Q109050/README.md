@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109050: Err Msg: While Registering OLE Servers, Setup Had a Problem..."
-permalink: kb/109/Q109050/
+permalink: /kb/109/Q109050/
 ---
 
 ## Q109050: Err Msg: While Registering OLE Servers, Setup Had a Problem...

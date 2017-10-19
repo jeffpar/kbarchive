@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271519: ELL French &amp; Spanish: Minimum System Requirements"
-permalink: kb/271/Q271519/
+permalink: /kb/271/Q271519/
 ---
 
 ## Q271519: ELL French &amp; Spanish: Minimum System Requirements

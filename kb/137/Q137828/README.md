@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137828: Cannot Open Unassociated File with Office 95 Programs"
-permalink: kb/137/Q137828/
+permalink: /kb/137/Q137828/
 ---
 
 ## Q137828: Cannot Open Unassociated File with Office 95 Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258294: HOWTO: Offload XSL Transformations to Clients' Browsers"
-permalink: kb/258/Q258294/
+permalink: /kb/258/Q258294/
 ---
 
 ## Q258294: HOWTO: Offload XSL Transformations to Clients' Browsers

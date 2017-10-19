@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170724: WD97: Macro to Determine If Insertion Point Is in a Table"
-permalink: kb/170/Q170724/
+permalink: /kb/170/Q170724/
 ---
 
 ## Q170724: WD97: Macro to Determine If Insertion Point Is in a Table

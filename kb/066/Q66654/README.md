@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66654: INFO: Possible Causes for System Resource Reduction"
-permalink: kb/066/Q66654/
+permalink: /kb/066/Q66654/
 ---
 
 ## Q66654: INFO: Possible Causes for System Resource Reduction

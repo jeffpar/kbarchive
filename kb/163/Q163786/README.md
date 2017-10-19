@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163786: PRB: Setup Requires Long Filename Support"
-permalink: kb/163/Q163786/
+permalink: /kb/163/Q163786/
 ---
 
 ## Q163786: PRB: Setup Requires Long Filename Support

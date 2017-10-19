@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142446: PRB: Stacked Tabs Aren't Displayed Correctly After AddPage()"
-permalink: kb/142/Q142446/
+permalink: /kb/142/Q142446/
 ---
 
 ## Q142446: PRB: Stacked Tabs Aren't Displayed Correctly After AddPage()

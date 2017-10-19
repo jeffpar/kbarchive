@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84423: Windows 3.1 EMM386.EXE and Lotus 1-2-3 Version 3.1"
-permalink: kb/084/Q84423/
+permalink: /kb/084/Q84423/
 ---
 
 ## Q84423: Windows 3.1 EMM386.EXE and Lotus 1-2-3 Version 3.1

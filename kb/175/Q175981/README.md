@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175981: WinNT Err: Event ID 3206 Replicator Cannot Update Directory"
-permalink: kb/175/Q175981/
+permalink: /kb/175/Q175981/
 ---
 
 ## Q175981: WinNT Err: Event ID 3206 Replicator Cannot Update Directory

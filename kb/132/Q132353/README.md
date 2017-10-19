@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132353: DOCERR: AfterRowColChange Event Documented Incorrectly"
-permalink: kb/132/Q132353/
+permalink: /kb/132/Q132353/
 ---
 
 ## Q132353: DOCERR: AfterRowColChange Event Documented Incorrectly

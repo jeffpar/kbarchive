@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76772: README.TXT: Giving Maximum Priority to an Application"
-permalink: kb/076/Q76772/
+permalink: /kb/076/Q76772/
 ---
 
 ## Q76772: README.TXT: Giving Maximum Priority to an Application

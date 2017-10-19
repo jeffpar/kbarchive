@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146331: Import Reverts Moved Appointments Back to Original Time"
-permalink: kb/146/Q146331/
+permalink: /kb/146/Q146331/
 ---
 
 ## Q146331: Import Reverts Moved Appointments Back to Original Time

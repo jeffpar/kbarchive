@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154295: FIX: TDS Errors in a Multithreaded ODBC Application"
-permalink: kb/154/Q154295/
+permalink: /kb/154/Q154295/
 ---
 
 ## Q154295: FIX: TDS Errors in a Multithreaded ODBC Application

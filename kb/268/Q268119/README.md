@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268119: Windows 2000 Core Requirements Training Kit Comments and Correct"
-permalink: kb/268/Q268119/
+permalink: /kb/268/Q268119/
 ---
 
 ## Q268119: Windows 2000 Core Requirements Training Kit Comments and Correct

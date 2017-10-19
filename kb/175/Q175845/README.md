@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175845: XFOR: Attachment Icon Changes When Forwarding Msg to Notes"
-permalink: kb/175/Q175845/
+permalink: /kb/175/Q175845/
 ---
 
 ## Q175845: XFOR: Attachment Icon Changes When Forwarding Msg to Notes

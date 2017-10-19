@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149050: HOWTO: Change Add-In Manager Description for Add-Ins"
-permalink: kb/149/Q149050/
+permalink: /kb/149/Q149050/
 ---
 
 ## Q149050: HOWTO: Change Add-In Manager Description for Add-Ins

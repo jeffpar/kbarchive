@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125499: SWITCH.INF Is Overwritten When You Upgrade to Windows NT 3.5"
-permalink: kb/125/Q125499/
+permalink: /kb/125/Q125499/
 ---
 
 ## Q125499: SWITCH.INF Is Overwritten When You Upgrade to Windows NT 3.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189925: Golf 2.0: Update Available to Improve Swing Control"
-permalink: kb/189/Q189925/
+permalink: /kb/189/Q189925/
 ---
 
 ## Q189925: Golf 2.0: Update Available to Improve Swing Control

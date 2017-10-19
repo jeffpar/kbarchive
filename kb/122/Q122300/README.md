@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122300: FIX: C1001 Error for typedef Within the Class Declaration"
-permalink: kb/122/Q122300/
+permalink: /kb/122/Q122300/
 ---
 
 ## Q122300: FIX: C1001 Error for typedef Within the Class Declaration

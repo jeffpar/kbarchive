@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141752: Limiting 32-Bit MFC SDI/MDI Applications to a Single Instance"
-permalink: kb/141/Q141752/
+permalink: /kb/141/Q141752/
 ---
 
 ## Q141752: Limiting 32-Bit MFC SDI/MDI Applications to a Single Instance

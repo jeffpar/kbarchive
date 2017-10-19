@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146219: HOWTO: Register an ActiveX Control (.ocx) Manually"
-permalink: kb/146/Q146219/
+permalink: /kb/146/Q146219/
 ---
 
 ## Q146219: HOWTO: Register an ActiveX Control (.ocx) Manually

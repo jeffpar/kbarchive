@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250477: PRB: Terminate Events Fire in Reverse Order in VBCE/eVB"
-permalink: kb/250/Q250477/
+permalink: /kb/250/Q250477/
 ---
 
 ## Q250477: PRB: Terminate Events Fire in Reverse Order in VBCE/eVB

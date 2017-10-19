@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287923: MechWarrior 4 Error Message: Exception: Access Violation in MW4"
-permalink: kb/287/Q287923/
+permalink: /kb/287/Q287923/
 ---
 
 ## Q287923: MechWarrior 4 Error Message: Exception: Access Violation in MW4

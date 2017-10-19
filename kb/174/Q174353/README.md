@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174353: XCLN: Creating and Using an OST Between Two Computers"
-permalink: kb/174/Q174353/
+permalink: /kb/174/Q174353/
 ---
 
 ## Q174353: XCLN: Creating and Using an OST Between Two Computers

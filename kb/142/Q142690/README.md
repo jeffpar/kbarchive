@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142690: Windows NT Explorer Hangs With NEC CD-ROM"
-permalink: kb/142/Q142690/
+permalink: /kb/142/Q142690/
 ---
 
 ## Q142690: Windows NT Explorer Hangs With NEC CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158841: Cannot Choose Icons in Executable File"
-permalink: kb/158/Q158841/
+permalink: /kb/158/Q158841/
 ---
 
 ## Q158841: Cannot Choose Icons in Executable File

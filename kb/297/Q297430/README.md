@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297430: DellNet By MSN Customer Using Connection From Discontinued DellN"
-permalink: kb/297/Q297430/
+permalink: /kb/297/Q297430/
 ---
 
 ## Q297430: DellNet By MSN Customer Using Connection From Discontinued DellN

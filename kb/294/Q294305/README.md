@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294305: IIS Returns HTTP 403.13 Err Msg Although Certificate Not Revoked"
-permalink: kb/294/Q294305/
+permalink: /kb/294/Q294305/
 ---
 
 ## Q294305: IIS Returns HTTP 403.13 Err Msg Although Certificate Not Revoked

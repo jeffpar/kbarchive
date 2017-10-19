@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152960: XADM: Reassigning Site Roles after Removing the First Server"
-permalink: kb/152/Q152960/
+permalink: /kb/152/Q152960/
 ---
 
 ## Q152960: XADM: Reassigning Site Roles after Removing the First Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222871: Err Msg: &quot;Drive Is Not Ready for Use&quot; with Removable Media"
-permalink: kb/222/Q222871/
+permalink: /kb/222/Q222871/
 ---
 
 ## Q222871: Err Msg: &quot;Drive Is Not Ready for Use&quot; with Removable Media

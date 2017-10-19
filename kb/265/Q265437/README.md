@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265437: XADM: Exchange Server 5.5 Upgrade Stops with Event ID 282"
-permalink: kb/265/Q265437/
+permalink: /kb/265/Q265437/
 ---
 
 ## Q265437: XADM: Exchange Server 5.5 Upgrade Stops with Event ID 282

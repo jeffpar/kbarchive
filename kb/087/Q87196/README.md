@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87196: PROFS: Host Access Software Compatible with Gateway"
-permalink: kb/087/Q87196/
+permalink: /kb/087/Q87196/
 ---
 
 ## Q87196: PROFS: Host Access Software Compatible with Gateway

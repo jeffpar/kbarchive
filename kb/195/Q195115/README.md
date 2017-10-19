@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195115: WD97: Label Mail Merge Displays Extra Row of Labels"
-permalink: kb/195/Q195115/
+permalink: /kb/195/Q195115/
 ---
 
 ## Q195115: WD97: Label Mail Merge Displays Extra Row of Labels

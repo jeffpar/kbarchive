@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138942: HOWTO: Debug a Windows Shell Extension"
-permalink: kb/138/Q138942/
+permalink: /kb/138/Q138942/
 ---
 
 ## Q138942: HOWTO: Debug a Windows Shell Extension

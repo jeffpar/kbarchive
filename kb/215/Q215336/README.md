@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215336: PRB: Picture.Circle Works Wrong if Radius Large and Angle Small"
-permalink: kb/215/Q215336/
+permalink: /kb/215/Q215336/
 ---
 
 ## Q215336: PRB: Picture.Circle Works Wrong if Radius Large and Angle Small

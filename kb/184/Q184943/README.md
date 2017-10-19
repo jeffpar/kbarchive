@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184943: Monster Truck Madness 2: Screen Flashes Constantly"
-permalink: kb/184/Q184943/
+permalink: /kb/184/Q184943/
 ---
 
 ## Q184943: Monster Truck Madness 2: Screen Flashes Constantly

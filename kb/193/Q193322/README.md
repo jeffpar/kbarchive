@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193322: XCON: Route Selection Criteria"
-permalink: kb/193/Q193322/
+permalink: /kb/193/Q193322/
 ---
 
 ## Q193322: XCON: Route Selection Criteria

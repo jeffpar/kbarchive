@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191771: How to Alter a Program's Base Priority at a Command Prompt"
-permalink: kb/191/Q191771/
+permalink: /kb/191/Q191771/
 ---
 
 ## Q191771: How to Alter a Program's Base Priority at a Command Prompt

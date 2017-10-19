@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145952: Event ID 26 Appears If Large File Transfer Fails"
-permalink: kb/145/Q145952/
+permalink: /kb/145/Q145952/
 ---
 
 ## Q145952: Event ID 26 Appears If Large File Transfer Fails

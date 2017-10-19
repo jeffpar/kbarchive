@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240724: TPU: Err Msg: Summary View Creation Failed"
-permalink: kb/240/Q240724/
+permalink: /kb/240/Q240724/
 ---
 
 ## Q240724: TPU: Err Msg: Summary View Creation Failed

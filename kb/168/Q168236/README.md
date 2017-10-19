@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168236: WD97: Outlook Address Book Not Available in Mail Merge Helper"
-permalink: kb/168/Q168236/
+permalink: /kb/168/Q168236/
 ---
 
 ## Q168236: WD97: Outlook Address Book Not Available in Mail Merge Helper

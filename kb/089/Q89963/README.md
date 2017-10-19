@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89963: Sound Finder Converts All Files in Convert Dialog Box"
-permalink: kb/089/Q89963/
+permalink: /kb/089/Q89963/
 ---
 
 ## Q89963: Sound Finder Converts All Files in Convert Dialog Box

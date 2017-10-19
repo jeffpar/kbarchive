@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135927: MHS: Command Line Options"
-permalink: kb/135/Q135927/
+permalink: /kb/135/Q135927/
 ---
 
 ## Q135927: MHS: Command Line Options

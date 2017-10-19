@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85971: PC Win: Network Connections and Linked Objects"
-permalink: kb/085/Q85971/
+permalink: /kb/085/Q85971/
 ---
 
 ## Q85971: PC Win: Network Connections and Linked Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271356: Require Secure Channel Incorrectly Checked Changing Certificate"
-permalink: kb/271/Q271356/
+permalink: /kb/271/Q271356/
 ---
 
 ## Q271356: Require Secure Channel Incorrectly Checked Changing Certificate

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60028: PRB: rename() Function May Fail Unexpectedly"
-permalink: kb/060/Q60028/
+permalink: /kb/060/Q60028/
 ---
 
 ## Q60028: PRB: rename() Function May Fail Unexpectedly

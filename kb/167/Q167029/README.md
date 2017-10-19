@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167029: Resource and Master Domain DCs Do Not Load-Balance Validation"
-permalink: kb/167/Q167029/
+permalink: /kb/167/Q167029/
 ---
 
 ## Q167029: Resource and Master Domain DCs Do Not Load-Balance Validation

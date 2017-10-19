@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163048: Doc Err: Readme.txt on WinNT 4.0 CD Points to Invalid Entries"
-permalink: kb/163/Q163048/
+permalink: /kb/163/Q163048/
 ---
 
 ## Q163048: Doc Err: Readme.txt on WinNT 4.0 CD Points to Invalid Entries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213228: SMS: Cannot Delete Proddbrs.dll When Uninstalling Site"
-permalink: kb/213/Q213228/
+permalink: /kb/213/Q213228/
 ---
 
 ## Q213228: SMS: Cannot Delete Proddbrs.dll When Uninstalling Site

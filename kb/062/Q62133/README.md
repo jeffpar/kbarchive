@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62133: Mac Hyp: Getting the Message Name from the Message Type"
-permalink: kb/062/Q62133/
+permalink: /kb/062/Q62133/
 ---
 
 ## Q62133: Mac Hyp: Getting the Message Name from the Message Type

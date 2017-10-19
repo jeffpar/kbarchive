@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153230: ErrMsg: Complete Gardening Cannot Start Your Video Driver"
-permalink: kb/153/Q153230/
+permalink: /kb/153/Q153230/
 ---
 
 ## Q153230: ErrMsg: Complete Gardening Cannot Start Your Video Driver

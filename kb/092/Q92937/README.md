@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92937: PC Tools Drivers May Cause Windows to Stop Responding (Hang)"
-permalink: kb/092/Q92937/
+permalink: /kb/092/Q92937/
 ---
 
 ## Q92937: PC Tools Drivers May Cause Windows to Stop Responding (Hang)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69300: QEMM386: Exiting Windows 3.0 and Starting Word Reboots System"
-permalink: kb/069/Q69300/
+permalink: /kb/069/Q69300/
 ---
 
 ## Q69300: QEMM386: Exiting Windows 3.0 and Starting Word Reboots System

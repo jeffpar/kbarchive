@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297796: Setting Idle Times With MSN versions 5.3, 5.4, and MSN Explorer"
-permalink: kb/297/Q297796/
+permalink: /kb/297/Q297796/
 ---
 
 ## Q297796: Setting Idle Times With MSN versions 5.3, 5.4, and MSN Explorer

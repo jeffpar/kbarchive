@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171259: XFOR: How to Move the Microsoft Mail Connector Postoffice"
-permalink: kb/171/Q171259/
+permalink: /kb/171/Q171259/
 ---
 
 ## Q171259: XFOR: How to Move the Microsoft Mail Connector Postoffice

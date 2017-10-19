@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120204: Mozart: Manual Installation Instructions"
-permalink: kb/120/Q120204/
+permalink: /kb/120/Q120204/
 ---
 
 ## Q120204: Mozart: Manual Installation Instructions

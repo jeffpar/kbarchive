@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197215: WD97: Including Chapter Numbers in Header/Footer But Not in Text"
-permalink: kb/197/Q197215/
+permalink: /kb/197/Q197215/
 ---
 
 ## Q197215: WD97: Including Chapter Numbers in Header/Footer But Not in Text

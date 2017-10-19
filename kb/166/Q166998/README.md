@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166998: Services for Macintosh Modifies Header Information on Print Jobs"
-permalink: kb/166/Q166998/
+permalink: /kb/166/Q166998/
 ---
 
 ## Q166998: Services for Macintosh Modifies Header Information on Print Jobs

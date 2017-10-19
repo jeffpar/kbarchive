@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184469: Zone: Computer Hangs When You Enter a Game Room"
-permalink: kb/184/Q184469/
+permalink: /kb/184/Q184469/
 ---
 
 ## Q184469: Zone: Computer Hangs When You Enter a Game Room

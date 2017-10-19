@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161680: Kids Plus!: The Background Displays Different Color"
-permalink: kb/161/Q161680/
+permalink: /kb/161/Q161680/
 ---
 
 ## Q161680: Kids Plus!: The Background Displays Different Color

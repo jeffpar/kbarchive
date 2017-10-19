@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92465: APM.EXE Needed for APM With Twinhead 386SL Notebook"
-permalink: kb/092/Q92465/
+permalink: /kb/092/Q92465/
 ---
 
 ## Q92465: APM.EXE Needed for APM With Twinhead 386SL Notebook

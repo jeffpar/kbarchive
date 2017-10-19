@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121048: Determining the Version Number for HP DeskJet Drivers 4.x, 5.x"
-permalink: kb/121/Q121048/
+permalink: /kb/121/Q121048/
 ---
 
 ## Q121048: Determining the Version Number for HP DeskJet Drivers 4.x, 5.x

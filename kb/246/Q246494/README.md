@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246494: Browsing Fails on NT Network with WFW 3.11, Windows 95 Clients"
-permalink: kb/246/Q246494/
+permalink: /kb/246/Q246494/
 ---
 
 ## Q246494: Browsing Fails on NT Network with WFW 3.11, Windows 95 Clients

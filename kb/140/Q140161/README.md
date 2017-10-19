@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140161: Bookshelf: Cannot Print Multiple Pages"
-permalink: kb/140/Q140161/
+permalink: /kb/140/Q140161/
 ---
 
 ## Q140161: Bookshelf: Cannot Print Multiple Pages

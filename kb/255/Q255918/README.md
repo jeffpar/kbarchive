@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255918: Allegiance: Games List is Unavailable"
-permalink: kb/255/Q255918/
+permalink: /kb/255/Q255918/
 ---
 
 ## Q255918: Allegiance: Games List is Unavailable

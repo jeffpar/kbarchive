@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161187: FIX: Forms Collection Exposes Memo and General Windows"
-permalink: kb/161/Q161187/
+permalink: /kb/161/Q161187/
 ---
 
 ## Q161187: FIX: Forms Collection Exposes Memo and General Windows

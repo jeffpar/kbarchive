@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85165: Sound Blaster Err Msg: A Configuration or Hardware..."
-permalink: kb/085/Q85165/
+permalink: /kb/085/Q85165/
 ---
 
 ## Q85165: Sound Blaster Err Msg: A Configuration or Hardware...

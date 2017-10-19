@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196977: Virtual Globe 99: Menu Bar Items Are Truncated or Overlap"
-permalink: kb/196/Q196977/
+permalink: /kb/196/Q196977/
 ---
 
 ## Q196977: Virtual Globe 99: Menu Bar Items Are Truncated or Overlap

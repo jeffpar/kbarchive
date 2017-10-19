@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217160: XADM: Read Receipt Is Not Sent or To Line Is Blank"
-permalink: kb/217/Q217160/
+permalink: /kb/217/Q217160/
 ---
 
 ## Q217160: XADM: Read Receipt Is Not Sent or To Line Is Blank

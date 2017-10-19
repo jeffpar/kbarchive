@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84993: How to Enable the MIDI Sequencer Warning"
-permalink: kb/084/Q84993/
+permalink: /kb/084/Q84993/
 ---
 
 ## Q84993: How to Enable the MIDI Sequencer Warning

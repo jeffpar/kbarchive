@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147142: XCLN: AutoSignatures Not Applied to Out of Office Messages"
-permalink: kb/147/Q147142/
+permalink: /kb/147/Q147142/
 ---
 
 ## Q147142: XCLN: AutoSignatures Not Applied to Out of Office Messages

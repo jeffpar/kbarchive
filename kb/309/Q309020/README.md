@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309020: CONVERT Verb Fails With SV_G on HIS 2000 End-User Client"
-permalink: kb/309/Q309020/
+permalink: /kb/309/Q309020/
 ---
 
 ## Q309020: CONVERT Verb Fails With SV_G on HIS 2000 End-User Client

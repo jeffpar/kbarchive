@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129402: PRB: ERROR &quot;&lt;formname&gt; not an object&quot; When Accessing Form"
-permalink: kb/129/Q129402/
+permalink: /kb/129/Q129402/
 ---
 
 ## Q129402: PRB: ERROR &quot;&lt;formname&gt; not an object&quot; When Accessing Form

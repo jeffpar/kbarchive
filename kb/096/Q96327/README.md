@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96327: Disconnected Network Drive Becomes Floppy Disk Drive"
-permalink: kb/096/Q96327/
+permalink: /kb/096/Q96327/
 ---
 
 ## Q96327: Disconnected Network Drive Becomes Floppy Disk Drive

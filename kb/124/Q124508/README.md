@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124508: Explorapedia Nature 1.0: Contents of README.WRI"
-permalink: kb/124/Q124508/
+permalink: /kb/124/Q124508/
 ---
 
 ## Q124508: Explorapedia Nature 1.0: Contents of README.WRI

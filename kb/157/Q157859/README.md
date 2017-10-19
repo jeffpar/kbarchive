@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157859: WD97: Changes to Inline Pictures Are Not Saved"
-permalink: kb/157/Q157859/
+permalink: /kb/157/Q157859/
 ---
 
 ## Q157859: WD97: Changes to Inline Pictures Are Not Saved

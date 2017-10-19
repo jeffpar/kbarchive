@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164838: XCON: MTA Looping Between HP MTA and Exchange MTA"
-permalink: kb/164/Q164838/
+permalink: /kb/164/Q164838/
 ---
 
 ## Q164838: XCON: MTA Looping Between HP MTA and Exchange MTA

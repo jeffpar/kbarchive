@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153231: Packagelocations Table Not Updated"
-permalink: kb/153/Q153231/
+permalink: /kb/153/Q153231/
 ---
 
 ## Q153231: Packagelocations Table Not Updated

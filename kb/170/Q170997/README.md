@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170997: Availability of Windows NT 4.0 Server Tools for Windows 95"
-permalink: kb/170/Q170997/
+permalink: /kb/170/Q170997/
 ---
 
 ## Q170997: Availability of Windows NT 4.0 Server Tools for Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181650: Context_rundown Called in RPC Server When RPC Client Idles"
-permalink: kb/181/Q181650/
+permalink: /kb/181/Q181650/
 ---
 
 ## Q181650: Context_rundown Called in RPC Server When RPC Client Idles

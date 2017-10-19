@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175632: How to Send an E-mail Message to MSN Member Support"
-permalink: kb/175/Q175632/
+permalink: /kb/175/Q175632/
 ---
 
 ## Q175632: How to Send an E-mail Message to MSN Member Support

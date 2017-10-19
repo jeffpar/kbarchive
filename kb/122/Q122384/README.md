@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122384: Can't Pause Shared Printer Between Windows NT 3.1 and 3.5"
-permalink: kb/122/Q122384/
+permalink: /kb/122/Q122384/
 ---
 
 ## Q122384: Can't Pause Shared Printer Between Windows NT 3.1 and 3.5

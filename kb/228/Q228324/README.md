@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228324: SMS: Delete File(s) &quot;Remove Dir. Containing Files&quot; Option Fails"
-permalink: kb/228/Q228324/
+permalink: /kb/228/Q228324/
 ---
 
 ## Q228324: SMS: Delete File(s) &quot;Remove Dir. Containing Files&quot; Option Fails

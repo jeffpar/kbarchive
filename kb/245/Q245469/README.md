@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245469: Prevent DNS Server from Caching Records from Recursive Queries"
-permalink: kb/245/Q245469/
+permalink: /kb/245/Q245469/
 ---
 
 ## Q245469: Prevent DNS Server from Caching Records from Recursive Queries

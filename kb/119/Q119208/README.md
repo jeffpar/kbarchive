@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119208: AWFAX: CAS Modem Receives Fax with Jagged Print"
-permalink: kb/119/Q119208/
+permalink: /kb/119/Q119208/
 ---
 
 ## Q119208: AWFAX: CAS Modem Receives Fax with Jagged Print

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104917: PRB: Help Compiler Causes Fatal Exit or Other System Failure"
-permalink: kb/104/Q104917/
+permalink: /kb/104/Q104917/
 ---
 
 ## Q104917: PRB: Help Compiler Causes Fatal Exit or Other System Failure

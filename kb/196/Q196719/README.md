@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196719: WD97: Cannot Place Frame or Text Box in Exact Position"
-permalink: kb/196/Q196719/
+permalink: /kb/196/Q196719/
 ---
 
 ## Q196719: WD97: Cannot Place Frame or Text Box in Exact Position

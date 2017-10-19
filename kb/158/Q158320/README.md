@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158320: RSHSVC Included in WinNT 3.5x/4.0 ResKit Has Potential Leak"
-permalink: kb/158/Q158320/
+permalink: /kb/158/Q158320/
 ---
 
 ## Q158320: RSHSVC Included in WinNT 3.5x/4.0 ResKit Has Potential Leak

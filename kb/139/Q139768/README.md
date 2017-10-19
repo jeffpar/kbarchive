@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139768: BUG: ON ERROR Statement Not Executed in Browse of Table"
-permalink: kb/139/Q139768/
+permalink: /kb/139/Q139768/
 ---
 
 ## Q139768: BUG: ON ERROR Statement Not Executed in Browse of Table

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165087: &quot;Change&quot; Keystroke on Server Configuration Dialog Box Is Missing"
-permalink: kb/165/Q165087/
+permalink: /kb/165/Q165087/
 ---
 
 ## Q165087: &quot;Change&quot; Keystroke on Server Configuration Dialog Box Is Missing

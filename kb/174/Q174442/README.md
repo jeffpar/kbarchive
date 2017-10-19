@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174442: All Users Have the Same Screen Saver"
-permalink: kb/174/Q174442/
+permalink: /kb/174/Q174442/
 ---
 
 ## Q174442: All Users Have the Same Screen Saver

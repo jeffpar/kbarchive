@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192134: Err Msg: Error 621 or Error 623  When Connecting to MSN"
-permalink: kb/192/Q192134/
+permalink: /kb/192/Q192134/
 ---
 
 ## Q192134: Err Msg: Error 621 or Error 623  When Connecting to MSN

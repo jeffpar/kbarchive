@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135936: Not Enough Memory to Run MS Plus! Setup"
-permalink: kb/135/Q135936/
+permalink: /kb/135/Q135936/
 ---
 
 ## Q135936: Not Enough Memory to Run MS Plus! Setup

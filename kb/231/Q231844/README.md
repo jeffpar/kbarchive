@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231844: HOWTO: Detect If an Application Has Stopped Responding"
-permalink: kb/231/Q231844/
+permalink: /kb/231/Q231844/
 ---
 
 ## Q231844: HOWTO: Detect If an Application Has Stopped Responding

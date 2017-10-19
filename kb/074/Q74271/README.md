@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74271: Northgate OmniKey Dvorak Configuration is MS-DOS Compatible"
-permalink: kb/074/Q74271/
+permalink: /kb/074/Q74271/
 ---
 
 ## Q74271: Northgate OmniKey Dvorak Configuration is MS-DOS Compatible

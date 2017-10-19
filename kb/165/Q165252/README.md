@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165252: WD97: Setting Default Border Via Macro Not Reflected In Dialog"
-permalink: kb/165/Q165252/
+permalink: /kb/165/Q165252/
 ---
 
 ## Q165252: WD97: Setting Default Border Via Macro Not Reflected In Dialog

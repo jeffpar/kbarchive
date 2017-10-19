@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153908: FIX: 16-bit Driver Times Out on Async Calls to SQLTables"
-permalink: kb/153/Q153908/
+permalink: /kb/153/Q153908/
 ---
 
 ## Q153908: FIX: 16-bit Driver Times Out on Async Calls to SQLTables

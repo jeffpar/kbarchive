@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188012: WD97: Rows or Columns Missing from Pasted Microsoft Excel Sheet"
-permalink: kb/188/Q188012/
+permalink: /kb/188/Q188012/
 ---
 
 ## Q188012: WD97: Rows or Columns Missing from Pasted Microsoft Excel Sheet

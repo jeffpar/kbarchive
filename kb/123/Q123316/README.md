@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123316: Unable to Change the Default Print Tray"
-permalink: kb/123/Q123316/
+permalink: /kb/123/Q123316/
 ---
 
 ## Q123316: Unable to Change the Default Print Tray

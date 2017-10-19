@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240783: SMS Installer Does Not Repackage Large MULTI-SZ Registry Values"
-permalink: kb/240/Q240783/
+permalink: /kb/240/Q240783/
 ---
 
 ## Q240783: SMS Installer Does Not Repackage Large MULTI-SZ Registry Values

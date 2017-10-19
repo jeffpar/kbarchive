@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104454: Scenes 1.0: May Activate Incorrectly with Mouse QuickStart"
-permalink: kb/104/Q104454/
+permalink: /kb/104/Q104454/
 ---
 
 ## Q104454: Scenes 1.0: May Activate Incorrectly with Mouse QuickStart

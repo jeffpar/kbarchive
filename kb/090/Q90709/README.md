@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90709: Using WinLogin with 3Com 3+Share"
-permalink: kb/090/Q90709/
+permalink: /kb/090/Q90709/
 ---
 
 ## Q90709: Using WinLogin with 3Com 3+Share

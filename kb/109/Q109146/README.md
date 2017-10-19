@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109146: How to Use Outshow with FoxPro for Macintosh"
-permalink: kb/109/Q109146/
+permalink: /kb/109/Q109146/
 ---
 
 ## Q109146: How to Use Outshow with FoxPro for Macintosh

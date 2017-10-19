@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150754: Mastering Visual C++, Mastering Access: No CD Key"
-permalink: kb/150/Q150754/
+permalink: /kb/150/Q150754/
 ---
 
 ## Q150754: Mastering Visual C++, Mastering Access: No CD Key

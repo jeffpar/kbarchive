@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122174: Err Msg: MEFLIB.DLL Is Not a Valid NT Image File"
-permalink: kb/122/Q122174/
+permalink: /kb/122/Q122174/
 ---
 
 ## Q122174: Err Msg: MEFLIB.DLL Is Not a Valid NT Image File

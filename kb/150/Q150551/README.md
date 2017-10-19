@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150551: INFO: Duplicate Fields Naming Differs in Local and Remote View"
-permalink: kb/150/Q150551/
+permalink: /kb/150/Q150551/
 ---
 
 ## Q150551: INFO: Duplicate Fields Naming Differs in Local and Remote View

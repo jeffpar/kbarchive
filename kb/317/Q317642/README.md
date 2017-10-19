@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317642: FIX: APPC/CPI-C Applications May Not Switch to Active Connection"
-permalink: kb/317/Q317642/
+permalink: /kb/317/Q317642/
 ---
 
 ## Q317642: FIX: APPC/CPI-C Applications May Not Switch to Active Connection

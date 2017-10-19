@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158299: XCLN: How to Change the Font of Folder Contents"
-permalink: kb/158/Q158299/
+permalink: /kb/158/Q158299/
 ---
 
 ## Q158299: XCLN: How to Change the Font of Folder Contents

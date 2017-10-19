@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160458: How to Change the Mouse Driver in Windows NT 4.0"
-permalink: kb/160/Q160458/
+permalink: /kb/160/Q160458/
 ---
 
 ## Q160458: How to Change the Mouse Driver in Windows NT 4.0

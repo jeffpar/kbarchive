@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249341: HOWTO: Create Layered Window in Visual Basic"
-permalink: kb/249/Q249341/
+permalink: /kb/249/Q249341/
 ---
 
 ## Q249341: HOWTO: Create Layered Window in Visual Basic

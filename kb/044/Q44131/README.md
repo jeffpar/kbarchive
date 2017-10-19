@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44131: Specifying a Path in an NMAKE Inference Rule"
-permalink: kb/044/Q44131/
+permalink: /kb/044/Q44131/
 ---
 
 ## Q44131: Specifying a Path in an NMAKE Inference Rule

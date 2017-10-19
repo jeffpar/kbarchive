@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255284: SMS: PCM Incorrectly Runs Newly Available Expired Jobs"
-permalink: kb/255/Q255284/
+permalink: /kb/255/Q255284/
 ---
 
 ## Q255284: SMS: PCM Incorrectly Runs Newly Available Expired Jobs

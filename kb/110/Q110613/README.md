@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110613: PROFS: Err Msg: PWACSI Copy of PO USR Failed - Space"
-permalink: kb/110/Q110613/
+permalink: /kb/110/Q110613/
 ---
 
 ## Q110613: PROFS: Err Msg: PWACSI Copy of PO USR Failed - Space

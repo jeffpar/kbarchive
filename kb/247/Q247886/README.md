@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247886: Computer Stops Responding to Mouse or Keyboard Input"
-permalink: kb/247/Q247886/
+permalink: /kb/247/Q247886/
 ---
 
 ## Q247886: Computer Stops Responding to Mouse or Keyboard Input

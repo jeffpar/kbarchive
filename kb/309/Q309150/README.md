@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309150: PRB: SNA Server Sends Incorrect Format 3 XID Commands"
-permalink: kb/309/Q309150/
+permalink: /kb/309/Q309150/
 ---
 
 ## Q309150: PRB: SNA Server Sends Incorrect Format 3 XID Commands

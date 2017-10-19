@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120286: Scenes 2.0: Create a Collection Wizard Fails Under Windows NT"
-permalink: kb/120/Q120286/
+permalink: /kb/120/Q120286/
 ---
 
 ## Q120286: Scenes 2.0: Create a Collection Wizard Fails Under Windows NT

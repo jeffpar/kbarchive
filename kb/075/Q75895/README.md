@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75895: EMM386.EXE Exclude Ranges for IBM Token Ring Card"
-permalink: kb/075/Q75895/
+permalink: /kb/075/Q75895/
 ---
 
 ## Q75895: EMM386.EXE Exclude Ranges for IBM Token Ring Card

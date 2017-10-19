@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115621: Err Msg: 32-Bit File System Cannot Be Used When DoubleSpace..."
-permalink: kb/115/Q115621/
+permalink: /kb/115/Q115621/
 ---
 
 ## Q115621: Err Msg: 32-Bit File System Cannot Be Used When DoubleSpace...

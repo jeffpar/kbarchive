@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201812: SMS: NetWare Users Do Not Have Rights to the SMSLOGON Directory"
-permalink: kb/201/Q201812/
+permalink: /kb/201/Q201812/
 ---
 
 ## Q201812: SMS: NetWare Users Do Not Have Rights to the SMSLOGON Directory

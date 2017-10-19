@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199263: SMS: &quot;Remove software when it is no longer advertised&quot; Operation"
-permalink: kb/199/Q199263/
+permalink: /kb/199/Q199263/
 ---
 
 ## Q199263: SMS: &quot;Remove software when it is no longer advertised&quot; Operation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256315: XADM: Information Store Stops Writing to Message Tracking Log"
-permalink: kb/256/Q256315/
+permalink: /kb/256/Q256315/
 ---
 
 ## Q256315: XADM: Information Store Stops Writing to Message Tracking Log

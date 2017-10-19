@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130971: Settings Used in the APPS.INF File"
-permalink: kb/130/Q130971/
+permalink: /kb/130/Q130971/
 ---
 
 ## Q130971: Settings Used in the APPS.INF File

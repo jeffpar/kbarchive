@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78993: Slow Color Output with DeskJet 500C"
-permalink: kb/078/Q78993/
+permalink: /kb/078/Q78993/
 ---
 
 ## Q78993: Slow Color Output with DeskJet 500C

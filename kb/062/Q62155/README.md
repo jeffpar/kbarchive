@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62155: Flight Simulator 4.00: Delay When Moving Landing Gear"
-permalink: kb/062/Q62155/
+permalink: /kb/062/Q62155/
 ---
 
 ## Q62155: Flight Simulator 4.00: Delay When Moving Landing Gear

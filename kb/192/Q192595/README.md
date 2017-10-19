@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192595: XFOR: Incorrect Date on Message Sent Through cc:Mail Connector"
-permalink: kb/192/Q192595/
+permalink: /kb/192/Q192595/
 ---
 
 ## Q192595: XFOR: Incorrect Date on Message Sent Through cc:Mail Connector

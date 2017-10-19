@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180455: BUG: Error 451 &quot;Object not a collection&quot; When Using Left()"
-permalink: kb/180/Q180455/
+permalink: /kb/180/Q180455/
 ---
 
 ## Q180455: BUG: Error 451 &quot;Object not a collection&quot; When Using Left()

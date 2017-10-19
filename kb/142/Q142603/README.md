@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142603: STOP 0x0000000A - NTOSKRNL.EXE in Windows NT 3.51"
-permalink: kb/142/Q142603/
+permalink: /kb/142/Q142603/
 ---
 
 ## Q142603: STOP 0x0000000A - NTOSKRNL.EXE in Windows NT 3.51

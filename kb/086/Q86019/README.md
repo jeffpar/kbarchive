@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86019: PaintJet XL's Presentation Setting Works on Graphics"
-permalink: kb/086/Q86019/
+permalink: /kb/086/Q86019/
 ---
 
 ## Q86019: PaintJet XL's Presentation Setting Works on Graphics

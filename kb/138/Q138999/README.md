@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138999: How to Display Concatenated Fields in a Text Box"
-permalink: kb/138/Q138999/
+permalink: /kb/138/Q138999/
 ---
 
 ## Q138999: How to Display Concatenated Fields in a Text Box

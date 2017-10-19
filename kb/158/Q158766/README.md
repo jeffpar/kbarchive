@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158766: PRB: VALID Behavior on @..GET Different in Version 5.0"
-permalink: kb/158/Q158766/
+permalink: /kb/158/Q158766/
 ---
 
 ## Q158766: PRB: VALID Behavior on @..GET Different in Version 5.0

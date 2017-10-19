@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173446: How to Specify Site Certificate Providers to Use with MSN"
-permalink: kb/173/Q173446/
+permalink: /kb/173/Q173446/
 ---
 
 ## Q173446: How to Specify Site Certificate Providers to Use with MSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163773: Brief 3.0 in NTVDM Consumes 100% Processor"
-permalink: kb/163/Q163773/
+permalink: /kb/163/Q163773/
 ---
 
 ## Q163773: Brief 3.0 in NTVDM Consumes 100% Processor

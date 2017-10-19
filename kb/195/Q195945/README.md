@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195945: Traced version of the x.25 link service doesn't provide output"
-permalink: kb/195/Q195945/
+permalink: /kb/195/Q195945/
 ---
 
 ## Q195945: Traced version of the x.25 link service doesn't provide output

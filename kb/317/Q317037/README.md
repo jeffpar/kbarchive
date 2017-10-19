@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317037: &quot;Error 1703&quot; Err Msg When You Install Windows NT 4.0 Option Pack"
-permalink: kb/317/Q317037/
+permalink: /kb/317/Q317037/
 ---
 
 ## Q317037: &quot;Error 1703&quot; Err Msg When You Install Windows NT 4.0 Option Pack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86372: PC Mac: New Features in 3.0 Macintosh Client"
-permalink: kb/086/Q86372/
+permalink: /kb/086/Q86372/
 ---
 
 ## Q86372: PC Mac: New Features in 3.0 Macintosh Client

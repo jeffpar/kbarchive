@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153487: XFOR: Exchange Proxy Addresses Not Deleted on cc:Mail POs"
-permalink: kb/153/Q153487/
+permalink: /kb/153/Q153487/
 ---
 
 ## Q153487: XFOR: Exchange Proxy Addresses Not Deleted on cc:Mail POs

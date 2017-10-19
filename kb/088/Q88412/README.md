@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88412: Quadtel BIOS Versions to Use with Windows"
-permalink: kb/088/Q88412/
+permalink: /kb/088/Q88412/
 ---
 
 ## Q88412: Quadtel BIOS Versions to Use with Windows

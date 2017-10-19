@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158813: Cannot Connect to Personal Web Server from Remote System"
-permalink: kb/158/Q158813/
+permalink: /kb/158/Q158813/
 ---
 
 ## Q158813: Cannot Connect to Personal Web Server from Remote System

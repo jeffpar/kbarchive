@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131540: How to Set the Maximum Design Area for a Form"
-permalink: kb/131/Q131540/
+permalink: /kb/131/Q131540/
 ---
 
 ## Q131540: How to Set the Maximum Design Area for a Form

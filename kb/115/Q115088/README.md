@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115088: PRB: A _USRDLL with No CWinApp Object Fails to Load"
-permalink: kb/115/Q115088/
+permalink: /kb/115/Q115088/
 ---
 
 ## Q115088: PRB: A _USRDLL with No CWinApp Object Fails to Load

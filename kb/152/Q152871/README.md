@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152871: XADM: Restore Re-populates Deleted Folders"
-permalink: kb/152/Q152871/
+permalink: /kb/152/Q152871/
 ---
 
 ## Q152871: XADM: Restore Re-populates Deleted Folders

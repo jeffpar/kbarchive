@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158847: WD97: Run-Time Error '5841' If Style Doesn't Exist"
-permalink: kb/158/Q158847/
+permalink: /kb/158/Q158847/
 ---
 
 ## Q158847: WD97: Run-Time Error '5841' If Style Doesn't Exist

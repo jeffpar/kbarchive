@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153511: PRB: Shared Project, Branch Menu Option Is Not Available"
-permalink: kb/153/Q153511/
+permalink: /kb/153/Q153511/
 ---
 
 ## Q153511: PRB: Shared Project, Branch Menu Option Is Not Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198143: XFOR: Unique Alias Name Required for POP3/IMAP4 Client Logons"
-permalink: kb/198/Q198143/
+permalink: /kb/198/Q198143/
 ---
 
 ## Q198143: XFOR: Unique Alias Name Required for POP3/IMAP4 Client Logons

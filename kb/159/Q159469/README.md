@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159469: WD97: Run-Time Error Using VBA Macro to Resize Document Window"
-permalink: kb/159/Q159469/
+permalink: /kb/159/Q159469/
 ---
 
 ## Q159469: WD97: Run-Time Error Using VBA Macro to Resize Document Window

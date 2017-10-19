@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278320: XFOR: Dr Watson for Inbound Internet Message with Blank CHARSET"
-permalink: kb/278/Q278320/
+permalink: /kb/278/Q278320/
 ---
 
 ## Q278320: XFOR: Dr Watson for Inbound Internet Message with Blank CHARSET

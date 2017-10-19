@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132727: How to Use a UDF to Calculate Percentages in a Report"
-permalink: kb/132/Q132727/
+permalink: /kb/132/Q132727/
 ---
 
 ## Q132727: How to Use a UDF to Calculate Percentages in a Report

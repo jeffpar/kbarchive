@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236924: MCSE Readiness Review - Exam 70-068 Windows NT Server Enterprise"
-permalink: kb/236/Q236924/
+permalink: /kb/236/Q236924/
 ---
 
 ## Q236924: MCSE Readiness Review - Exam 70-068 Windows NT Server Enterprise

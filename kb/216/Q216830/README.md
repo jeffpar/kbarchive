@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216830: How to View the Contents of a Certificate"
-permalink: kb/216/Q216830/
+permalink: /kb/216/Q216830/
 ---
 
 ## Q216830: How to View the Contents of a Certificate

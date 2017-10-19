@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152893: XADM: IS Causes High CPU Use and Drop in PF Performance"
-permalink: kb/152/Q152893/
+permalink: /kb/152/Q152893/
 ---
 
 ## Q152893: XADM: IS Causes High CPU Use and Drop in PF Performance

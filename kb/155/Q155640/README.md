@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155640: Cannot Find NetWare Server Using Partial Matching"
-permalink: kb/155/Q155640/
+permalink: /kb/155/Q155640/
 ---
 
 ## Q155640: Cannot Find NetWare Server Using Partial Matching

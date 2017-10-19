@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296617: Error w/Password Change After Password Change Utility Installed"
-permalink: kb/296/Q296617/
+permalink: /kb/296/Q296617/
 ---
 
 ## Q296617: Error w/Password Change After Password Change Utility Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238487: XCON: Exchange Notes Connector May Stop Responding with Bad SMTP"
-permalink: kb/238/Q238487/
+permalink: /kb/238/Q238487/
 ---
 
 ## Q238487: XCON: Exchange Notes Connector May Stop Responding with Bad SMTP

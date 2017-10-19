@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196449: Error: SAS Window: Winlogon.exe When Logging In"
-permalink: kb/196/Q196449/
+permalink: /kb/196/Q196449/
 ---
 
 ## Q196449: Error: SAS Window: Winlogon.exe When Logging In

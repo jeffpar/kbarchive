@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96020: VidCap  Err Msg: Can't Open Wave Input File"
-permalink: kb/096/Q96020/
+permalink: /kb/096/Q96020/
 ---
 
 ## Q96020: VidCap  Err Msg: Can't Open Wave Input File

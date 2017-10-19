@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256290: NBA Drive 2000 Err Msg: Invalid Page Fault in Module Unknown"
-permalink: kb/256/Q256290/
+permalink: /kb/256/Q256290/
 ---
 
 ## Q256290: NBA Drive 2000 Err Msg: Invalid Page Fault in Module Unknown

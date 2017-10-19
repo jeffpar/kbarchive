@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120268: Diamond Video Card Settings"
-permalink: kb/120/Q120268/
+permalink: /kb/120/Q120268/
 ---
 
 ## Q120268: Diamond Video Card Settings

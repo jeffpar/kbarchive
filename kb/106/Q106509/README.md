@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106509: PC Adm: Err Msg: Notice 28 Error File Not Accessible"
-permalink: kb/106/Q106509/
+permalink: /kb/106/Q106509/
 ---
 
 ## Q106509: PC Adm: Err Msg: Notice 28 Error File Not Accessible

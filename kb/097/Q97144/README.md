@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97144: PC WRmt: Cannot Successfully Book Meeting in Schedule+"
-permalink: kb/097/Q97144/
+permalink: /kb/097/Q97144/
 ---
 
 ## Q97144: PC WRmt: Cannot Successfully Book Meeting in Schedule+

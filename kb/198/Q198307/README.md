@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198307: WD97: Text Box Background Is Opaque After Changing Wrap Style"
-permalink: kb/198/Q198307/
+permalink: /kb/198/Q198307/
 ---
 
 ## Q198307: WD97: Text Box Background Is Opaque After Changing Wrap Style

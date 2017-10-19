@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128327: How Windows 95 Manages Virtual Memory"
-permalink: kb/128/Q128327/
+permalink: /kb/128/Q128327/
 ---
 
 ## Q128327: How Windows 95 Manages Virtual Memory

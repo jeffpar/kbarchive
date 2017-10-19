@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197673: WD97: Wrong Description for AutoScroll"
-permalink: kb/197/Q197673/
+permalink: /kb/197/Q197673/
 ---
 
 ## Q197673: WD97: Wrong Description for AutoScroll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69249: Oak Technology Inc. Video BIOS Version 2.14 and Windows 3.0"
-permalink: kb/069/Q69249/
+permalink: /kb/069/Q69249/
 ---
 
 ## Q69249: Oak Technology Inc. Video BIOS Version 2.14 and Windows 3.0

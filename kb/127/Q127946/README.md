@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127946: SCOPY in Resource Kit 3.1 Changes Time and Date Stamp"
-permalink: kb/127/Q127946/
+permalink: /kb/127/Q127946/
 ---
 
 ## Q127946: SCOPY in Resource Kit 3.1 Changes Time and Date Stamp

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141153: PRB: Memory Not Freed to OS When Debugging on Windows NT 3.51"
-permalink: kb/141/Q141153/
+permalink: /kb/141/Q141153/
 ---
 
 ## Q141153: PRB: Memory Not Freed to OS When Debugging on Windows NT 3.51

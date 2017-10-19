@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96937: UNINSTALL and DELOLDOS Don't Remove Directories"
-permalink: kb/096/Q96937/
+permalink: /kb/096/Q96937/
 ---
 
 ## Q96937: UNINSTALL and DELOLDOS Don't Remove Directories

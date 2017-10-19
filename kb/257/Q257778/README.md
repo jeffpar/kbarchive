@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257778: BUG: Closing Two MDI Child Forms Rapidly Results in an IPF"
-permalink: kb/257/Q257778/
+permalink: /kb/257/Q257778/
 ---
 
 ## Q257778: BUG: Closing Two MDI Child Forms Rapidly Results in an IPF

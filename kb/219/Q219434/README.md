@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219434: TS Client Set to Automatically Log On Is Prompted for Password"
-permalink: kb/219/Q219434/
+permalink: /kb/219/Q219434/
 ---
 
 ## Q219434: TS Client Set to Automatically Log On Is Prompted for Password

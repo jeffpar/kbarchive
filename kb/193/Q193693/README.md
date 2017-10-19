@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193693: Queries Return Documents That No Longer Exist"
-permalink: kb/193/Q193693/
+permalink: /kb/193/Q193693/
 ---
 
 ## Q193693: Queries Return Documents That No Longer Exist

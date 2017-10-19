@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229867: Word 97: Security Breach with Word Temp Files, NTFS Permissions"
-permalink: kb/229/Q229867/
+permalink: /kb/229/Q229867/
 ---
 
 ## Q229867: Word 97: Security Breach with Word Temp Files, NTFS Permissions

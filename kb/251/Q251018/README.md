@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251018: XFOR: Configure Migration with cc:Mail 32-bit Executables"
-permalink: kb/251/Q251018/
+permalink: /kb/251/Q251018/
 ---
 
 ## Q251018: XFOR: Configure Migration with cc:Mail 32-bit Executables

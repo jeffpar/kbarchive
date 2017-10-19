@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123716: CACLS.EXE Err Msg: No More Internal IDs Available"
-permalink: kb/123/Q123716/
+permalink: /kb/123/Q123716/
 ---
 
 ## Q123716: CACLS.EXE Err Msg: No More Internal IDs Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83509: Installing Mouse Systems Driver for COM1 under Windows 3.1"
-permalink: kb/083/Q83509/
+permalink: /kb/083/Q83509/
 ---
 
 ## Q83509: Installing Mouse Systems Driver for COM1 under Windows 3.1

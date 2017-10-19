@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246198: Proxy Clients Time-Out Using RRAS Demand Dial"
-permalink: kb/246/Q246198/
+permalink: /kb/246/Q246198/
 ---
 
 ## Q246198: Proxy Clients Time-Out Using RRAS Demand Dial

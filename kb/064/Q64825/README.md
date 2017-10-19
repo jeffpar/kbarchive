@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64825: Windows 3.0 Support for the Tektronix Printers"
-permalink: kb/064/Q64825/
+permalink: /kb/064/Q64825/
 ---
 
 ## Q64825: Windows 3.0 Support for the Tektronix Printers

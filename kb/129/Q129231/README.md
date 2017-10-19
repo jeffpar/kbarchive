@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129231: Digiboard PC/Xem on AT&amp;T Globalyst 600 ISA Causes Errors"
-permalink: kb/129/Q129231/
+permalink: /kb/129/Q129231/
 ---
 
 ## Q129231: Digiboard PC/Xem on AT&amp;T Globalyst 600 ISA Causes Errors

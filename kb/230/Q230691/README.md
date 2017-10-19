@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230691: XADM: Space Tree Fragmentation Degrades Server Performance"
-permalink: kb/230/Q230691/
+permalink: /kb/230/Q230691/
 ---
 
 ## Q230691: XADM: Space Tree Fragmentation Degrades Server Performance

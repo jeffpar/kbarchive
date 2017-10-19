@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142318: HOWTO: Remove OLE Controls &amp; Gallery Components from a Project"
-permalink: kb/142/Q142318/
+permalink: /kb/142/Q142318/
 ---
 
 ## Q142318: HOWTO: Remove OLE Controls &amp; Gallery Components from a Project

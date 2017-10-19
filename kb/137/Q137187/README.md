@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137187: Bookshelf 95 for Windows 95: Contents of Readme.txt"
-permalink: kb/137/Q137187/
+permalink: /kb/137/Q137187/
 ---
 
 ## Q137187: Bookshelf 95 for Windows 95: Contents of Readme.txt

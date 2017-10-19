@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260215: XADM: Setup Fails on Windows 2000 Cluster"
-permalink: kb/260/Q260215/
+permalink: /kb/260/Q260215/
 ---
 
 ## Q260215: XADM: Setup Fails on Windows 2000 Cluster

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146883: ADT2: WX1200 OLE Controls Cause Error Without OLE 2.02 or Later"
-permalink: kb/146/Q146883/
+permalink: /kb/146/Q146883/
 ---
 
 ## Q146883: ADT2: WX1200 OLE Controls Cause Error Without OLE 2.02 or Later

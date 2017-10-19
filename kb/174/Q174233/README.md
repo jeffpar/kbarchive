@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174233: KeInitSystem Function Returns Uninitialized Stack on Alpha"
-permalink: kb/174/Q174233/
+permalink: /kb/174/Q174233/
 ---
 
 ## Q174233: KeInitSystem Function Returns Uninitialized Stack on Alpha

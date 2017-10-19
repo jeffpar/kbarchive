@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167258: PRB: Analyze Leaves Files with .old Extension in Database"
-permalink: kb/167/Q167258/
+permalink: /kb/167/Q167258/
 ---
 
 ## Q167258: PRB: Analyze Leaves Files with .old Extension in Database

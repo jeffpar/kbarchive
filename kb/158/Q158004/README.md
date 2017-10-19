@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158004: STL Sample for the random_shuffle Function"
-permalink: kb/158/Q158004/
+permalink: /kb/158/Q158004/
 ---
 
 ## Q158004: STL Sample for the random_shuffle Function

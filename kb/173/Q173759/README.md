@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173759: FAQ: How Do I Get Visual FoxPro 5.0a with 5.0a No VFP Problems"
-permalink: kb/173/Q173759/
+permalink: /kb/173/Q173759/
 ---
 
 ## Q173759: FAQ: How Do I Get Visual FoxPro 5.0a with 5.0a No VFP Problems

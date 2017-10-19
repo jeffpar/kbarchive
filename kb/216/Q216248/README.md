@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216248: PRB: IClientSecurity::CopyProxy() Leaks Memory"
-permalink: kb/216/Q216248/
+permalink: /kb/216/Q216248/
 ---
 
 ## Q216248: PRB: IClientSecurity::CopyProxy() Leaks Memory

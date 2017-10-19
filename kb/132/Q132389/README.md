@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132389: Multimedia: Demo Won't Continue When You Switch to New Program"
-permalink: kb/132/Q132389/
+permalink: /kb/132/Q132389/
 ---
 
 ## Q132389: Multimedia: Demo Won't Continue When You Switch to New Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234639: XFOR: Server Location and the Internet Mail Service"
-permalink: kb/234/Q234639/
+permalink: /kb/234/Q234639/
 ---
 
 ## Q234639: XFOR: Server Location and the Internet Mail Service

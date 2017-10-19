@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129696: Resource Kit Setup Fails with a Space in Directory Name or Path"
-permalink: kb/129/Q129696/
+permalink: /kb/129/Q129696/
 ---
 
 ## Q129696: Resource Kit Setup Fails with a Space in Directory Name or Path

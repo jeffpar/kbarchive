@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264729: WD97: Deleting Bulleted Text May Cause Hebrew Word 97 to Stop"
-permalink: kb/264/Q264729/
+permalink: /kb/264/Q264729/
 ---
 
 ## Q264729: WD97: Deleting Bulleted Text May Cause Hebrew Word 97 to Stop

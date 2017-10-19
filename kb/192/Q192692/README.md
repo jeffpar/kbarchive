@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192692: Rs2dbf.exe Converting ADO 2.x Recordset to VFP Cursor"
-permalink: kb/192/Q192692/
+permalink: /kb/192/Q192692/
 ---
 
 ## Q192692: Rs2dbf.exe Converting ADO 2.x Recordset to VFP Cursor

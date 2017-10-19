@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120821: VUDP.386 Not Copied During TCP/IP-32 Install"
-permalink: kb/120/Q120821/
+permalink: /kb/120/Q120821/
 ---
 
 ## Q120821: VUDP.386 Not Copied During TCP/IP-32 Install

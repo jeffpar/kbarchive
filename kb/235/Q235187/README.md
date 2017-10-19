@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235187: SMS: NDS CAP and SMSLOGON Points May Cause GPF"
-permalink: kb/235/Q235187/
+permalink: /kb/235/Q235187/
 ---
 
 ## Q235187: SMS: NDS CAP and SMSLOGON Points May Cause GPF

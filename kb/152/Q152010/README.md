@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152010: LUA RUI/SLI Calls May Return Immediately or with LUA_IN_PROGRESS"
-permalink: kb/152/Q152010/
+permalink: /kb/152/Q152010/
 ---
 
 ## Q152010: LUA RUI/SLI Calls May Return Immediately or with LUA_IN_PROGRESS

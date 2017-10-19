@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131748: Setup Hangs Accessing CD-ROM Drive with CD17F14A.SYS"
-permalink: kb/131/Q131748/
+permalink: /kb/131/Q131748/
 ---
 
 ## Q131748: Setup Hangs Accessing CD-ROM Drive with CD17F14A.SYS

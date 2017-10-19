@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78112: AMD Palasam Requires Version 1.2 of SP.EXE File"
-permalink: kb/078/Q78112/
+permalink: /kb/078/Q78112/
 ---
 
 ## Q78112: AMD Palasam Requires Version 1.2 of SP.EXE File

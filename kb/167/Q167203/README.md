@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167203: XADM: Directory Import Error - Event ID 286"
-permalink: kb/167/Q167203/
+permalink: /kb/167/Q167203/
 ---
 
 ## Q167203: XADM: Directory Import Error - Event ID 286

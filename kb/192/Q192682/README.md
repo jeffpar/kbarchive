@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192682: BUG: Dynamically-Added OCX Event Parameter Is Not Passed ByRef"
-permalink: kb/192/Q192682/
+permalink: /kb/192/Q192682/
 ---
 
 ## Q192682: BUG: Dynamically-Added OCX Event Parameter Is Not Passed ByRef

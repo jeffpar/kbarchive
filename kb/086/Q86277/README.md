@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86277: Testing the MIDI Mapper to Determine If It's Being Bypassed"
-permalink: kb/086/Q86277/
+permalink: /kb/086/Q86277/
 ---
 
 ## Q86277: Testing the MIDI Mapper to Determine If It's Being Bypassed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140824: RUI FI RH Bit Modified by SNA Server"
-permalink: kb/140/Q140824/
+permalink: /kb/140/Q140824/
 ---
 
 ## Q140824: RUI FI RH Bit Modified by SNA Server

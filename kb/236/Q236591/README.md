@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236591: SNA Server LU Allocation Favors Active Remote Connections"
-permalink: kb/236/Q236591/
+permalink: /kb/236/Q236591/
 ---
 
 ## Q236591: SNA Server LU Allocation Favors Active Remote Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142179: Troubleshooting .avi File Playback Problems in Windows 95"
-permalink: kb/142/Q142179/
+permalink: /kb/142/Q142179/
 ---
 
 ## Q142179: Troubleshooting .avi File Playback Problems in Windows 95

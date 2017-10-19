@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163031: PRB: Help of VFP ODBC Driver Unclear on INDEX ON Command"
-permalink: kb/163/Q163031/
+permalink: /kb/163/Q163031/
 ---
 
 ## Q163031: PRB: Help of VFP ODBC Driver Unclear on INDEX ON Command

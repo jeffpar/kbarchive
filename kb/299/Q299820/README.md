@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299820: HOWTO: Run a DBC Stored Proc with the VFP OLE DB Provider"
-permalink: kb/299/Q299820/
+permalink: /kb/299/Q299820/
 ---
 
 ## Q299820: HOWTO: Run a DBC Stored Proc with the VFP OLE DB Provider

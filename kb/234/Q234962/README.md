@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234962: XCON: Certain Builds of the MTA Do Not Generate 9301 Event ID"
-permalink: kb/234/Q234962/
+permalink: /kb/234/Q234962/
 ---
 
 ## Q234962: XCON: Certain Builds of the MTA Do Not Generate 9301 Event ID

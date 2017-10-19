@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249144: HOWTO: Identify the CE Device Connected to the Desktop Machine"
-permalink: kb/249/Q249144/
+permalink: /kb/249/Q249144/
 ---
 
 ## Q249144: HOWTO: Identify the CE Device Connected to the Desktop Machine

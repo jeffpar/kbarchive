@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191765: Winspool.drv and Kernel32.dll on Same Base Address in CHS SP3"
-permalink: kb/191/Q191765/
+permalink: /kb/191/Q191765/
 ---
 
 ## Q191765: Winspool.drv and Kernel32.dll on Same Base Address in CHS SP3

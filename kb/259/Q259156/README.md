@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259156: Allegiance: Program Stops Responding"
-permalink: kb/259/Q259156/
+permalink: /kb/259/Q259156/
 ---
 
 ## Q259156: Allegiance: Program Stops Responding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172518: Security Is Not Available for Host Security Commands in SNACFG"
-permalink: kb/172/Q172518/
+permalink: /kb/172/Q172518/
 ---
 
 ## Q172518: Security Is Not Available for Host Security Commands in SNACFG

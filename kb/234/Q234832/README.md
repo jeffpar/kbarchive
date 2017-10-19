@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234832: MOD2000: Inconsistent Menu Behavior Using Check Out from VBA"
-permalink: kb/234/Q234832/
+permalink: /kb/234/Q234832/
 ---
 
 ## Q234832: MOD2000: Inconsistent Menu Behavior Using Check Out from VBA

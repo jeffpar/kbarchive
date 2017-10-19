@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148764: SNA Server 2.11 Refresh Does Not Install From Floppy Disk"
-permalink: kb/148/Q148764/
+permalink: /kb/148/Q148764/
 ---
 
 ## Q148764: SNA Server 2.11 Refresh Does Not Install From Floppy Disk

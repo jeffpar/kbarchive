@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157818: Netflex-3: No Adapter Found When Installing SFM"
-permalink: kb/157/Q157818/
+permalink: /kb/157/Q157818/
 ---
 
 ## Q157818: Netflex-3: No Adapter Found When Installing SFM

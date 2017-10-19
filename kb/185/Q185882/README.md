@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185882: HOWTO: Use the HitTest Event and HitBehavior Property"
-permalink: kb/185/Q185882/
+permalink: /kb/185/Q185882/
 ---
 
 ## Q185882: HOWTO: Use the HitTest Event and HitBehavior Property

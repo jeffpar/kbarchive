@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90258: Upgrading from Workgroup Connections to WFWG with OEM Drivers"
-permalink: kb/090/Q90258/
+permalink: /kb/090/Q90258/
 ---
 
 ## Q90258: Upgrading from Workgroup Connections to WFWG with OEM Drivers

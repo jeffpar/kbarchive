@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255726: PRB: Error 429 Occurs When You Use the Package &amp; Deployment Wiz."
-permalink: kb/255/Q255726/
+permalink: /kb/255/Q255726/
 ---
 
 ## Q255726: PRB: Error 429 Occurs When You Use the Package &amp; Deployment Wiz.

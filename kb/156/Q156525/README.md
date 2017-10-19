@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156525: Sched+ User Gets NDR from Attendee not Listed in Appointment"
-permalink: kb/156/Q156525/
+permalink: /kb/156/Q156525/
 ---
 
 ## Q156525: Sched+ User Gets NDR from Attendee not Listed in Appointment

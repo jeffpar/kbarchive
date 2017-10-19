@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164702: WINDISK Stops Responding During Initialization"
-permalink: kb/164/Q164702/
+permalink: /kb/164/Q164702/
 ---
 
 ## Q164702: WINDISK Stops Responding During Initialization

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178620: XCLN: Client Profile Update Doesn't Update DNS FQDN"
-permalink: kb/178/Q178620/
+permalink: /kb/178/Q178620/
 ---
 
 ## Q178620: XCLN: Client Profile Update Doesn't Update DNS FQDN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129189: BUG: SourceSafe Suddenly Terminates After Running a Long Time"
-permalink: kb/129/Q129189/
+permalink: /kb/129/Q129189/
 ---
 
 ## Q129189: BUG: SourceSafe Suddenly Terminates After Running a Long Time

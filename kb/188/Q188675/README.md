@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188675: Schedule+ ErrMsg &quot;The meeting request is out of date&quot;"
-permalink: kb/188/Q188675/
+permalink: /kb/188/Q188675/
 ---
 
 ## Q188675: Schedule+ ErrMsg &quot;The meeting request is out of date&quot;

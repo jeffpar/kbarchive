@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121792: Stop 0x0000006b During Setup on NEC Image P60"
-permalink: kb/121/Q121792/
+permalink: /kb/121/Q121792/
 ---
 
 ## Q121792: Stop 0x0000006b During Setup on NEC Image P60

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193766: SMS: Despooler Reports Out of Disk Space in Event Log"
-permalink: kb/193/Q193766/
+permalink: /kb/193/Q193766/
 ---
 
 ## Q193766: SMS: Despooler Reports Out of Disk Space in Event Log

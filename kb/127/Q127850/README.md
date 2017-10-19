@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127850: Using the DPT SmartRAID SCSI Host on a AST Manhattan P5090"
-permalink: kb/127/Q127850/
+permalink: /kb/127/Q127850/
 ---
 
 ## Q127850: Using the DPT SmartRAID SCSI Host on a AST Manhattan P5090

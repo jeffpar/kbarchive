@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164831: WD97: Using CTRL+DELETE with Track Changes Deletes Two Words"
-permalink: kb/164/Q164831/
+permalink: /kb/164/Q164831/
 ---
 
 ## Q164831: WD97: Using CTRL+DELETE with Track Changes Deletes Two Words

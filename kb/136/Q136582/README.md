@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136582: Help Converting from FoxPro 2.x to Visual FoxPro 3.0"
-permalink: kb/136/Q136582/
+permalink: /kb/136/Q136582/
 ---
 
 ## Q136582: Help Converting from FoxPro 2.x to Visual FoxPro 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170913: WD97: GPF in Module Unidrv.dll Printing to Fax Drivers"
-permalink: kb/170/Q170913/
+permalink: /kb/170/Q170913/
 ---
 
 ## Q170913: WD97: GPF in Module Unidrv.dll Printing to Fax Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91679: Terminal: Sending Incoming Text Data to a Text File"
-permalink: kb/091/Q91679/
+permalink: /kb/091/Q91679/
 ---
 
 ## Q91679: Terminal: Sending Incoming Text Data to a Text File

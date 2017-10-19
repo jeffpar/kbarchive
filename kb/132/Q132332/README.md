@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132332: How to Back Up the Registry in Microsoft Windows 95"
-permalink: kb/132/Q132332/
+permalink: /kb/132/Q132332/
 ---
 
 ## Q132332: How to Back Up the Registry in Microsoft Windows 95

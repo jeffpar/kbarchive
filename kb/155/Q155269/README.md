@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155269: XADM: Microsoft Exchange Administrators' FAQ"
-permalink: kb/155/Q155269/
+permalink: /kb/155/Q155269/
 ---
 
 ## Q155269: XADM: Microsoft Exchange Administrators' FAQ

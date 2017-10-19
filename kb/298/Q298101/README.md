@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298101: World Atlas 2001: Internet Explorer Error When You Start Atlas"
-permalink: kb/298/Q298101/
+permalink: /kb/298/Q298101/
 ---
 
 ## Q298101: World Atlas 2001: Internet Explorer Error When You Start Atlas

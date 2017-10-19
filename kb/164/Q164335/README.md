@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164335: WD97: &quot;Change Text Direction&quot; Button Shows Incorrect Direction"
-permalink: kb/164/Q164335/
+permalink: /kb/164/Q164335/
 ---
 
 ## Q164335: WD97: &quot;Change Text Direction&quot; Button Shows Incorrect Direction

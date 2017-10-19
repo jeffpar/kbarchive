@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286816: CFS2: Toggle Padlock Mode Action Switches Gunsight Mode"
-permalink: kb/286/Q286816/
+permalink: /kb/286/Q286816/
 ---
 
 ## Q286816: CFS2: Toggle Padlock Mode Action Switches Gunsight Mode

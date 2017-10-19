@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274200: XADM: Duplicated Message Received with Store Post-SP3 Hotfix"
-permalink: kb/274/Q274200/
+permalink: /kb/274/Q274200/
 ---
 
 ## Q274200: XADM: Duplicated Message Received with Store Post-SP3 Hotfix

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30379: FIX: Structure References Using '.' Cause Confusion"
-permalink: kb/030/Q30379/
+permalink: /kb/030/Q30379/
 ---
 
 ## Q30379: FIX: Structure References Using '.' Cause Confusion

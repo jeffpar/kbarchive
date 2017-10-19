@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85261: CorelDRAW! Err Msg: Bad or Missing Font File(s)..."
-permalink: kb/085/Q85261/
+permalink: /kb/085/Q85261/
 ---
 
 ## Q85261: CorelDRAW! Err Msg: Bad or Missing Font File(s)...

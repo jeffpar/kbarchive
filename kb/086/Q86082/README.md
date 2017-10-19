@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86082: PC Win: Unexpected Exit Permanently Locks Shared Folder"
-permalink: kb/086/Q86082/
+permalink: /kb/086/Q86082/
 ---
 
 ## Q86082: PC Win: Unexpected Exit Permanently Locks Shared Folder

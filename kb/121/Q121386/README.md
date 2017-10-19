@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121386: Using Systems Management Server in a Split-Domain Model"
-permalink: kb/121/Q121386/
+permalink: /kb/121/Q121386/
 ---
 
 ## Q121386: Using Systems Management Server in a Split-Domain Model

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278611: PRB: Sheridan Command Button Click Event Raised in WhatsThisMode"
-permalink: kb/278/Q278611/
+permalink: /kb/278/Q278611/
 ---
 
 ## Q278611: PRB: Sheridan Command Button Click Event Raised in WhatsThisMode

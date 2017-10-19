@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169415: Routing and Remote Access Release Notes Readme.doc File"
-permalink: kb/169/Q169415/
+permalink: /kb/169/Q169415/
 ---
 
 ## Q169415: Routing and Remote Access Release Notes Readme.doc File

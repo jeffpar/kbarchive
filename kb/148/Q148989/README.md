@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148989: Internet Server Manager Fails to Start"
-permalink: kb/148/Q148989/
+permalink: /kb/148/Q148989/
 ---
 
 ## Q148989: Internet Server Manager Fails to Start

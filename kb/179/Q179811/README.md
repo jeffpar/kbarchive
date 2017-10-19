@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179811: Bookshelf 98: Minimum System Requirements"
-permalink: kb/179/Q179811/
+permalink: /kb/179/Q179811/
 ---
 
 ## Q179811: Bookshelf 98: Minimum System Requirements

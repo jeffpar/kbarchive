@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138794: Out of Memory Error Installing Windows NT 3.51 Service Pack 2"
-permalink: kb/138/Q138794/
+permalink: /kb/138/Q138794/
 ---
 
 ## Q138794: Out of Memory Error Installing Windows NT 3.51 Service Pack 2

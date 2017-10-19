@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259211: PRB: COMRETURNERROR() Only Works Properly if Error Has Occurred"
-permalink: kb/259/Q259211/
+permalink: /kb/259/Q259211/
 ---
 
 ## Q259211: PRB: COMRETURNERROR() Only Works Properly if Error Has Occurred

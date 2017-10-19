@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325765: &quot;String Data, Length Mismatch&quot; Err Msg w/ ODBC Driver for SQL"
-permalink: kb/325/Q325765/
+permalink: /kb/325/Q325765/
 ---
 
 ## Q325765: &quot;String Data, Length Mismatch&quot; Err Msg w/ ODBC Driver for SQL

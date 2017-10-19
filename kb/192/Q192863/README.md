@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192863: PRB: Data Entered in Text Box with Mask Differs from Exit Method"
-permalink: kb/192/Q192863/
+permalink: /kb/192/Q192863/
 ---
 
 ## Q192863: PRB: Data Entered in Text Box with Mask Differs from Exit Method

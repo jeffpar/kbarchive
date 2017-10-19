@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194489: WD97: Cannot Create Custom Text Border"
-permalink: kb/194/Q194489/
+permalink: /kb/194/Q194489/
 ---
 
 ## Q194489: WD97: Cannot Create Custom Text Border

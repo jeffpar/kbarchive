@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141020: How to Find Next Available Drive Letter (for Network Connect)"
-permalink: kb/141/Q141020/
+permalink: /kb/141/Q141020/
 ---
 
 ## Q141020: How to Find Next Available Drive Letter (for Network Connect)

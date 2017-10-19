@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164349: Mac Multimedia: Upgraded Processors Not Recognized"
-permalink: kb/164/Q164349/
+permalink: /kb/164/Q164349/
 ---
 
 ## Q164349: Mac Multimedia: Upgraded Processors Not Recognized

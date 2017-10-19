@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236302: Err Msg: STOP: 0xC0000143 After Uninstalling Procomm Plus 32"
-permalink: kb/236/Q236302/
+permalink: /kb/236/Q236302/
 ---
 
 ## Q236302: Err Msg: STOP: 0xC0000143 After Uninstalling Procomm Plus 32

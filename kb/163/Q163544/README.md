@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163544: XCLN: Mac Client Toggles Focus Between Inbox and Message Window"
-permalink: kb/163/Q163544/
+permalink: /kb/163/Q163544/
 ---
 
 ## Q163544: XCLN: Mac Client Toggles Focus Between Inbox and Message Window

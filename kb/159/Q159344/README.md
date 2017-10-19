@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159344: Fatal Exception in DLC Running Program from NetWare Server"
-permalink: kb/159/Q159344/
+permalink: /kb/159/Q159344/
 ---
 
 ## Q159344: Fatal Exception in DLC Running Program from NetWare Server

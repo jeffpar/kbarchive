@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123067: CDFS Does Not Support Lowercase Filenames"
-permalink: kb/123/Q123067/
+permalink: /kb/123/Q123067/
 ---
 
 ## Q123067: CDFS Does Not Support Lowercase Filenames

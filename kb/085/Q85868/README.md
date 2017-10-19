@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85868: Banyan Message Causes MS-DOS-Based Application to Minimize"
-permalink: kb/085/Q85868/
+permalink: /kb/085/Q85868/
 ---
 
 ## Q85868: Banyan Message Causes MS-DOS-Based Application to Minimize

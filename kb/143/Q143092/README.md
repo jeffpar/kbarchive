@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143092: FP: How to Create a Registration Web"
-permalink: kb/143/Q143092/
+permalink: /kb/143/Q143092/
 ---
 
 ## Q143092: FP: How to Create a Registration Web

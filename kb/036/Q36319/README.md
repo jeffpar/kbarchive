@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36319: INFO: Algorithm Creates Window Same Size As Full-Screen Window"
-permalink: kb/036/Q36319/
+permalink: /kb/036/Q36319/
 ---
 
 ## Q36319: INFO: Algorithm Creates Window Same Size As Full-Screen Window

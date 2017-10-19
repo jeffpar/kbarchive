@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294192: XCCC:  Assign 'Log On locally' Rights on Windows 2000 Domain"
-permalink: kb/294/Q294192/
+permalink: /kb/294/Q294192/
 ---
 
 ## Q294192: XCCC:  Assign 'Log On locally' Rights on Windows 2000 Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176407: Inside Dynamic HTML Comments and Corrections"
-permalink: kb/176/Q176407/
+permalink: /kb/176/Q176407/
 ---
 
 ## Q176407: Inside Dynamic HTML Comments and Corrections

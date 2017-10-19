@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99697: PC Forms: MS Mail Spooler (Auto) Is Visible"
-permalink: kb/099/Q99697/
+permalink: /kb/099/Q99697/
 ---
 
 ## Q99697: PC Forms: MS Mail Spooler (Auto) Is Visible

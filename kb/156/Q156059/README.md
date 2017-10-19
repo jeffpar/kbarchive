@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156059: PRB: Single Letter SCX Name Not Permitted in ON KEY LABEL"
-permalink: kb/156/Q156059/
+permalink: /kb/156/Q156059/
 ---
 
 ## Q156059: PRB: Single Letter SCX Name Not Permitted in ON KEY LABEL

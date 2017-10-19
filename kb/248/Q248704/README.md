@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248704: Open Database Connectivity Performance Slow When Tracing Enabled"
-permalink: kb/248/Q248704/
+permalink: /kb/248/Q248704/
 ---
 
 ## Q248704: Open Database Connectivity Performance Slow When Tracing Enabled

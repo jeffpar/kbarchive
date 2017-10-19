@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202303: SMS: Product Denials in Software Metering Fail to Create Report"
-permalink: kb/202/Q202303/
+permalink: /kb/202/Q202303/
 ---
 
 ## Q202303: SMS: Product Denials in Software Metering Fail to Create Report

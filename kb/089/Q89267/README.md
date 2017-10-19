@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89267: Using the APPEND Command in FoxBASE+"
-permalink: kb/089/Q89267/
+permalink: /kb/089/Q89267/
 ---
 
 ## Q89267: Using the APPEND Command in FoxBASE+

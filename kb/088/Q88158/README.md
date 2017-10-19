@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88158: Certus NoVi TSR Hangs in Windows 386 Enhanced Mode"
-permalink: kb/088/Q88158/
+permalink: /kb/088/Q88158/
 ---
 
 ## Q88158: Certus NoVi TSR Hangs in Windows 386 Enhanced Mode

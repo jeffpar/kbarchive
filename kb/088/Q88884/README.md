@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88884: Leaving Routine in ON ERROR in FoxBASE+ or FoxPro"
-permalink: kb/088/Q88884/
+permalink: /kb/088/Q88884/
 ---
 
 ## Q88884: Leaving Routine in ON ERROR in FoxBASE+ or FoxPro

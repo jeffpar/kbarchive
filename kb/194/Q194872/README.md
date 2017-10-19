@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194872: XGEN: How EBCDIC to ASCII Translation Takes Place"
-permalink: kb/194/Q194872/
+permalink: /kb/194/Q194872/
 ---
 
 ## Q194872: XGEN: How EBCDIC to ASCII Translation Takes Place

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179347: &quot;Fatal Exception 0E&quot; Error Message When You Start Windows 95"
-permalink: kb/179/Q179347/
+permalink: /kb/179/Q179347/
 ---
 
 ## Q179347: &quot;Fatal Exception 0E&quot; Error Message When You Start Windows 95

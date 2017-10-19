@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182656: New Security Feature in SNA 4.0 May Prevent Access to APPC LUs"
-permalink: kb/182/Q182656/
+permalink: /kb/182/Q182656/
 ---
 
 ## Q182656: New Security Feature in SNA 4.0 May Prevent Access to APPC LUs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125952: Security Menu in Windows (16-bit) File Manager Not Available"
-permalink: kb/125/Q125952/
+permalink: /kb/125/Q125952/
 ---
 
 ## Q125952: Security Menu in Windows (16-bit) File Manager Not Available

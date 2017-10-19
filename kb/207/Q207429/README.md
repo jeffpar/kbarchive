@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207429: SMS: Cannot Install SMS Client Software in Windows NT and 2000"
-permalink: kb/207/Q207429/
+permalink: /kb/207/Q207429/
 ---
 
 ## Q207429: SMS: Cannot Install SMS Client Software in Windows NT and 2000

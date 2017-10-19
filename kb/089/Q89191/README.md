@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89191: File Manager Displaying Garbled Information"
-permalink: kb/089/Q89191/
+permalink: /kb/089/Q89191/
 ---
 
 ## Q89191: File Manager Displaying Garbled Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66079: Windows Err Msg: Cannot Read From Device AUX..."
-permalink: kb/066/Q66079/
+permalink: /kb/066/Q66079/
 ---
 
 ## Q66079: Windows Err Msg: Cannot Read From Device AUX...

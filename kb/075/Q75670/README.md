@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75670: Err Msg: There Was an Error Writing to the File DOSSHELL.INI"
-permalink: kb/075/Q75670/
+permalink: /kb/075/Q75670/
 ---
 
 ## Q75670: Err Msg: There Was an Error Writing to the File DOSSHELL.INI

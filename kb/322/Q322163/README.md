@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322163: Dungeon Siege: You Cannot Move Items in Your Inventory"
-permalink: kb/322/Q322163/
+permalink: /kb/322/Q322163/
 ---
 
 ## Q322163: Dungeon Siege: You Cannot Move Items in Your Inventory

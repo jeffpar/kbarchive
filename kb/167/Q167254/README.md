@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167254: WD97: Invalid Page Fault Applying Font Animation to Footer Text"
-permalink: kb/167/Q167254/
+permalink: /kb/167/Q167254/
 ---
 
 ## Q167254: WD97: Invalid Page Fault Applying Font Animation to Footer Text

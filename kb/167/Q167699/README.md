@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167699: Underlining of Hyperlinks Unavailable in Windows Messaging"
-permalink: kb/167/Q167699/
+permalink: /kb/167/Q167699/
 ---
 
 ## Q167699: Underlining of Hyperlinks Unavailable in Windows Messaging

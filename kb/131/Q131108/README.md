@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131108: Kids: Err Msg: Invalid TrueType Font Detected"
-permalink: kb/131/Q131108/
+permalink: /kb/131/Q131108/
 ---
 
 ## Q131108: Kids: Err Msg: Invalid TrueType Font Detected

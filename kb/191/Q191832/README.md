@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191832: Access Violation in Hangul Version of Lotus Organizer 97"
-permalink: kb/191/Q191832/
+permalink: /kb/191/Q191832/
 ---
 
 ## Q191832: Access Violation in Hangul Version of Lotus Organizer 97

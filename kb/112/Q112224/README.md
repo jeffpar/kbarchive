@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112224: File Available that Lists Flight Simulator 5.0a Changes"
-permalink: kb/112/Q112224/
+permalink: /kb/112/Q112224/
 ---
 
 ## Q112224: File Available that Lists Flight Simulator 5.0a Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121289: PRB: Unreferenced Symbols Don't Appear in .BSC File"
-permalink: kb/121/Q121289/
+permalink: /kb/121/Q121289/
 ---
 
 ## Q121289: PRB: Unreferenced Symbols Don't Appear in .BSC File

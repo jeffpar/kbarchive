@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128695: Err Msg: Could Not Read the File C:&#92;TABWORKS&#92;DEFAULT.TWF"
-permalink: kb/128/Q128695/
+permalink: /kb/128/Q128695/
 ---
 
 ## Q128695: Err Msg: Could Not Read the File C:&#92;TABWORKS&#92;DEFAULT.TWF

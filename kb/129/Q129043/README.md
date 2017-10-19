@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129043: Repair Fails When Mirrored Drive is Two Gigabytes or Larger"
-permalink: kb/129/Q129043/
+permalink: /kb/129/Q129043/
 ---
 
 ## Q129043: Repair Fails When Mirrored Drive is Two Gigabytes or Larger

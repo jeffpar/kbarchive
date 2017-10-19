@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196006: Virtual Globe 99: How to Disable Sound in Virtual Flights"
-permalink: kb/196/Q196006/
+permalink: /kb/196/Q196006/
 ---
 
 ## Q196006: Virtual Globe 99: How to Disable Sound in Virtual Flights

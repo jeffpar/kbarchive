@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119392: &quot;None Available in This Situation&quot; Appears in List"
-permalink: kb/119/Q119392/
+permalink: /kb/119/Q119392/
 ---
 
 ## Q119392: &quot;None Available in This Situation&quot; Appears in List

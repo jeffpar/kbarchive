@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277792: Reader: &quot;Open With&quot; Dialog Box Appears When Opening eBook File"
-permalink: kb/277/Q277792/
+permalink: /kb/277/Q277792/
 ---
 
 ## Q277792: Reader: &quot;Open With&quot; Dialog Box Appears When Opening eBook File

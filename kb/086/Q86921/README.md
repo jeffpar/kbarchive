@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86921: Tap and Tap-and-Hold Pointer Events"
-permalink: kb/086/Q86921/
+permalink: /kb/086/Q86921/
 ---
 
 ## Q86921: Tap and Tap-and-Hold Pointer Events

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221703: FIX: Component Gallery Does Not Refresh After Changing Property"
-permalink: kb/221/Q221703/
+permalink: /kb/221/Q221703/
 ---
 
 ## Q221703: FIX: Component Gallery Does Not Refresh After Changing Property

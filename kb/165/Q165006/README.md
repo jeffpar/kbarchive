@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165006: DHCP Event 1020"
-permalink: kb/165/Q165006/
+permalink: /kb/165/Q165006/
 ---
 
 ## Q165006: DHCP Event 1020

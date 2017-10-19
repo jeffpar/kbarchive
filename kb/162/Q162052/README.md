@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162052: Resume May Cause Power Off When in Standby Mode"
-permalink: kb/162/Q162052/
+permalink: /kb/162/Q162052/
 ---
 
 ## Q162052: Resume May Cause Power Off When in Standby Mode

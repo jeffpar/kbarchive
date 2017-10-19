@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148707: PC DB: Troubleshooting Mail When Messages Are Not Moving"
-permalink: kb/148/Q148707/
+permalink: /kb/148/Q148707/
 ---
 
 ## Q148707: PC DB: Troubleshooting Mail When Messages Are Not Moving

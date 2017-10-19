@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191000: BUG: Unexpected Error Entering Break Mode in Shared Module"
-permalink: kb/191/Q191000/
+permalink: /kb/191/Q191000/
 ---
 
 ## Q191000: BUG: Unexpected Error Entering Break Mode in Shared Module

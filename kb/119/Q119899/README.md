@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119899: SET FILTER TO Does Not Move Record Pointer"
-permalink: kb/119/Q119899/
+permalink: /kb/119/Q119899/
 ---
 
 ## Q119899: SET FILTER TO Does Not Move Record Pointer

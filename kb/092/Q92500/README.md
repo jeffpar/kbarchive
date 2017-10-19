@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92500: PRB: exit() Function Does Not Clean Up Nonstatic Objects"
-permalink: kb/092/Q92500/
+permalink: /kb/092/Q92500/
 ---
 
 ## Q92500: PRB: exit() Function Does Not Clean Up Nonstatic Objects

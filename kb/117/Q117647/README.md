@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117647: PC Rmt: Mail to External Postoffice Group Members Disappears"
-permalink: kb/117/Q117647/
+permalink: /kb/117/Q117647/
 ---
 
 ## Q117647: PC Rmt: Mail to External Postoffice Group Members Disappears

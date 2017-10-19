@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194626: Shared Folders Unable to Copy Files With Compression Enabled"
-permalink: kb/194/Q194626/
+permalink: /kb/194/Q194626/
 ---
 
 ## Q194626: Shared Folders Unable to Copy Files With Compression Enabled

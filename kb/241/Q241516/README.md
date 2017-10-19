@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241516: XADM: Exchange Becomes Unresponsive Approximately Every 24 Days"
-permalink: kb/241/Q241516/
+permalink: /kb/241/Q241516/
 ---
 
 ## Q241516: XADM: Exchange Becomes Unresponsive Approximately Every 24 Days

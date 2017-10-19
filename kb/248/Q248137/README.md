@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248137: BUG: COleCurrency::operator/() Not Backward Compatible"
-permalink: kb/248/Q248137/
+permalink: /kb/248/Q248137/
 ---
 
 ## Q248137: BUG: COleCurrency::operator/() Not Backward Compatible

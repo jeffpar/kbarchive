@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77810: Doskey will not Execute Layered Macros Separated by a Command"
-permalink: kb/077/Q77810/
+permalink: /kb/077/Q77810/
 ---
 
 ## Q77810: Doskey will not Execute Layered Macros Separated by a Command

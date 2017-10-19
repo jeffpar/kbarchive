@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155059: PRB: Need Design-Time License for Microsoft ActiveX Controls"
-permalink: kb/155/Q155059/
+permalink: /kb/155/Q155059/
 ---
 
 ## Q155059: PRB: Need Design-Time License for Microsoft ActiveX Controls

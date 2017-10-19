@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190235: WD97:Run Time Error 4366 Using Application.Run Command"
-permalink: kb/190/Q190235/
+permalink: /kb/190/Q190235/
 ---
 
 ## Q190235: WD97:Run Time Error 4366 Using Application.Run Command

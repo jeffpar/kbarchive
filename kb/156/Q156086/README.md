@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156086: HOWTO: Replace a Text Field Value from a Shortcut Menu"
-permalink: kb/156/Q156086/
+permalink: /kb/156/Q156086/
 ---
 
 ## Q156086: HOWTO: Replace a Text Field Value from a Shortcut Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128495: System Hangs with Audio CD and NEC Intersect CDR-37 Drive"
-permalink: kb/128/Q128495/
+permalink: /kb/128/Q128495/
 ---
 
 ## Q128495: System Hangs with Audio CD and NEC Intersect CDR-37 Drive

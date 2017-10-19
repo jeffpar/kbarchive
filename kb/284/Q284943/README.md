@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284943: How to Create a Windows 95 Startup Disk in MS-DOS"
-permalink: kb/284/Q284943/
+permalink: /kb/284/Q284943/
 ---
 
 ## Q284943: How to Create a Windows 95 Startup Disk in MS-DOS

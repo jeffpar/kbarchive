@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165042: Regdel.exe Cannot Delete Values, Can Only Delete Keys"
-permalink: kb/165/Q165042/
+permalink: /kb/165/Q165042/
 ---
 
 ## Q165042: Regdel.exe Cannot Delete Values, Can Only Delete Keys

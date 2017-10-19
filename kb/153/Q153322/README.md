@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153322: Remote Control GPF Using Adobe ATM Fonts"
-permalink: kb/153/Q153322/
+permalink: /kb/153/Q153322/
 ---
 
 ## Q153322: Remote Control GPF Using Adobe ATM Fonts

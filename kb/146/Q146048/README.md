@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146048: XCLN: Changing Fonts for Richedit Field Doesn't Resize Field"
-permalink: kb/146/Q146048/
+permalink: /kb/146/Q146048/
 ---
 
 ## Q146048: XCLN: Changing Fonts for Richedit Field Doesn't Resize Field

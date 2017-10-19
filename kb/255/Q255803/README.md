@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255803: Naming Convention of Compressed Files Stored in the Temp Folder"
-permalink: kb/255/Q255803/
+permalink: /kb/255/Q255803/
 ---
 
 ## Q255803: Naming Convention of Compressed Files Stored in the Temp Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173638: BUG: &quot;What's This?&quot; Button Disappears from MDI Child Forms"
-permalink: kb/173/Q173638/
+permalink: /kb/173/Q173638/
 ---
 
 ## Q173638: BUG: &quot;What's This?&quot; Button Disappears from MDI Child Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238371: SMS: Network Discovery Causes GPF When Polling DHCP Servers"
-permalink: kb/238/Q238371/
+permalink: /kb/238/Q238371/
 ---
 
 ## Q238371: SMS: Network Discovery Causes GPF When Polling DHCP Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155725: Description Window in Devices Tool Is Too Small"
-permalink: kb/155/Q155725/
+permalink: /kb/155/Q155725/
 ---
 
 ## Q155725: Description Window in Devices Tool Is Too Small

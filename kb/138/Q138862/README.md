@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138862: SNA Server 3270 Emulator Session Drops With Event ID 21"
-permalink: kb/138/Q138862/
+permalink: /kb/138/Q138862/
 ---
 
 ## Q138862: SNA Server 3270 Emulator Session Drops With Event ID 21

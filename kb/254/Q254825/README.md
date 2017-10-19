@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254825: MSCS: Creating Multiple Virtual Servers with Same NetBIOS Name"
-permalink: kb/254/Q254825/
+permalink: /kb/254/Q254825/
 ---
 
 ## Q254825: MSCS: Creating Multiple Virtual Servers with Same NetBIOS Name

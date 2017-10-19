@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156585: Cannot Map Drive to SYS Volume in Login Script with MSNDS"
-permalink: kb/156/Q156585/
+permalink: /kb/156/Q156585/
 ---
 
 ## Q156585: Cannot Map Drive to SYS Volume in Login Script with MSNDS

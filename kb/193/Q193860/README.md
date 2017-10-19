@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193860: XFOR: How to Dump LDE Schedule Using SQL Server"
-permalink: kb/193/Q193860/
+permalink: /kb/193/Q193860/
 ---
 
 ## Q193860: XFOR: How to Dump LDE Schedule Using SQL Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190800: FIX: VC Debugger Fails for WINCE App if Total DLLs Exceed Four"
-permalink: kb/190/Q190800/
+permalink: /kb/190/Q190800/
 ---
 
 ## Q190800: FIX: VC Debugger Fails for WINCE App if Total DLLs Exceed Four

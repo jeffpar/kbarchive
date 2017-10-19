@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139121: Windows 95 Client Reboots Upon Starting"
-permalink: kb/139/Q139121/
+permalink: /kb/139/Q139121/
 ---
 
 ## Q139121: Windows 95 Client Reboots Upon Starting

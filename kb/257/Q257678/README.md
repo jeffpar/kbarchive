@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257678: XWEB: OWA Cannot Send to SMTP User By Using X.400 Address"
-permalink: kb/257/Q257678/
+permalink: /kb/257/Q257678/
 ---
 
 ## Q257678: XWEB: OWA Cannot Send to SMTP User By Using X.400 Address

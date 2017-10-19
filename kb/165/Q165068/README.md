@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165068: PRB: INDEX ON with Variable Length Tag May Behave Differently"
-permalink: kb/165/Q165068/
+permalink: /kb/165/Q165068/
 ---
 
 ## Q165068: PRB: INDEX ON with Variable Length Tag May Behave Differently

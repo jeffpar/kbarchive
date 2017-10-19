@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127929: Systems Management Server: Error 5016 When Running INVMac"
-permalink: kb/127/Q127929/
+permalink: /kb/127/Q127929/
 ---
 
 ## Q127929: Systems Management Server: Error 5016 When Running INVMac

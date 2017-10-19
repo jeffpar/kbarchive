@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215015: SMS: &quot;SMS Admins&quot; Group Needs Launch Permissions to WinMgmt"
-permalink: kb/215/Q215015/
+permalink: /kb/215/Q215015/
 ---
 
 ## Q215015: SMS: &quot;SMS Admins&quot; Group Needs Launch Permissions to WinMgmt

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91059: Network Dysfunctional After Removing Novell NetBIOS Support"
-permalink: kb/091/Q91059/
+permalink: /kb/091/Q91059/
 ---
 
 ## Q91059: Network Dysfunctional After Removing Novell NetBIOS Support

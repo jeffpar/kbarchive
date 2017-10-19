@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153094: Restoring Default Permissions to Windows NT System Files"
-permalink: kb/153/Q153094/
+permalink: /kb/153/Q153094/
 ---
 
 ## Q153094: Restoring Default Permissions to Windows NT System Files

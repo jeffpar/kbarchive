@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215465: Installing Service Packs from Terminal Server Client Sessions"
-permalink: kb/215/Q215465/
+permalink: /kb/215/Q215465/
 ---
 
 ## Q215465: Installing Service Packs from Terminal Server Client Sessions

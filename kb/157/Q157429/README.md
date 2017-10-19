@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157429: INFO: More About the Automation and Connection Managers"
-permalink: kb/157/Q157429/
+permalink: /kb/157/Q157429/
 ---
 
 ## Q157429: INFO: More About the Automation and Connection Managers

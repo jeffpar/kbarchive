@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279453: MSN Companion cannot browse to www.hotmail.com"
-permalink: kb/279/Q279453/
+permalink: /kb/279/Q279453/
 ---
 
 ## Q279453: MSN Companion cannot browse to www.hotmail.com

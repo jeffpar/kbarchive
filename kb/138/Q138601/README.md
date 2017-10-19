@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138601: How to Make a Form Disappear"
-permalink: kb/138/Q138601/
+permalink: /kb/138/Q138601/
 ---
 
 ## Q138601: How to Make a Form Disappear

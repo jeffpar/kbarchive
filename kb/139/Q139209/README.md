@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139209: System Agent Does Not Log Individual Drive Status"
-permalink: kb/139/Q139209/
+permalink: /kb/139/Q139209/
 ---
 
 ## Q139209: System Agent Does Not Log Individual Drive Status

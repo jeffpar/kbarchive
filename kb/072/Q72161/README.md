@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72161: MS-DOS 5 README.TXT: Notes on Memory Management"
-permalink: kb/072/Q72161/
+permalink: /kb/072/Q72161/
 ---
 
 ## Q72161: MS-DOS 5 README.TXT: Notes on Memory Management

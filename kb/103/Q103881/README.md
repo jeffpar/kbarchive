@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103881: The ISO Model: Theory and Function of Layered Design"
-permalink: kb/103/Q103881/
+permalink: /kb/103/Q103881/
 ---
 
 ## Q103881: The ISO Model: Theory and Function of Layered Design

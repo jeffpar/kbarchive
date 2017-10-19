@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173442: WD97: Imported WordPerfect Document Contains Gaps"
-permalink: kb/173/Q173442/
+permalink: /kb/173/Q173442/
 ---
 
 ## Q173442: WD97: Imported WordPerfect Document Contains Gaps

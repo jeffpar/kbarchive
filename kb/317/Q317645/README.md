@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317645: MTM2: Game Controller Not Detected with Game"
-permalink: kb/317/Q317645/
+permalink: /kb/317/Q317645/
 ---
 
 ## Q317645: MTM2: Game Controller Not Detected with Game

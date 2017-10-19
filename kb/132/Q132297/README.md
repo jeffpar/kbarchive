@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132297: Bookshelf 95: Problems Playing South African Anthem"
-permalink: kb/132/Q132297/
+permalink: /kb/132/Q132297/
 ---
 
 ## Q132297: Bookshelf 95: Problems Playing South African Anthem

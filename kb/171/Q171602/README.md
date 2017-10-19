@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171602: WD97: Cannot Insert Address from Schedule+ Address Book"
-permalink: kb/171/Q171602/
+permalink: /kb/171/Q171602/
 ---
 
 ## Q171602: WD97: Cannot Insert Address from Schedule+ Address Book

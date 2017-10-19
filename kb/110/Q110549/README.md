@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110549: Flight Simulator: Flashing Screen with Orchid Fahrenheit 1280"
-permalink: kb/110/Q110549/
+permalink: /kb/110/Q110549/
 ---
 
 ## Q110549: Flight Simulator: Flashing Screen with Orchid Fahrenheit 1280

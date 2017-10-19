@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233217: WD97: Error Saving Document with Subdocuments in Word 6.0/95"
-permalink: kb/233/Q233217/
+permalink: /kb/233/Q233217/
 ---
 
 ## Q233217: WD97: Error Saving Document with Subdocuments in Word 6.0/95

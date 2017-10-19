@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75085: Incorrect OEM DOS Causes MS-DOS Upgrade Setup Error"
-permalink: kb/075/Q75085/
+permalink: /kb/075/Q75085/
 ---
 
 ## Q75085: Incorrect OEM DOS Causes MS-DOS Upgrade Setup Error

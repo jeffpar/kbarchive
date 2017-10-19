@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138341: Dialing with &quot;W&quot; Calling Card Dialing Rules Hangs Modem"
-permalink: kb/138/Q138341/
+permalink: /kb/138/Q138341/
 ---
 
 ## Q138341: Dialing with &quot;W&quot; Calling Card Dialing Rules Hangs Modem

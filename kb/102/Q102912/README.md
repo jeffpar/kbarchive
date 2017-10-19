@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102912: Scenes 1.0: Removing Picture Set Does Not Remove from Disk"
-permalink: kb/102/Q102912/
+permalink: /kb/102/Q102912/
 ---
 
 ## Q102912: Scenes 1.0: Removing Picture Set Does Not Remove from Disk

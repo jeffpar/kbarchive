@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206596: WD97: Bulleted or Numbered Style Shows Additional Tab Stop"
-permalink: kb/206/Q206596/
+permalink: /kb/206/Q206596/
 ---
 
 ## Q206596: WD97: Bulleted or Numbered Style Shows Additional Tab Stop

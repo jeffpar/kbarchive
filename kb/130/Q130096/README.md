@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130096: PC Win: Err Msg: This Account Is Not a Valid User of this..."
-permalink: kb/130/Q130096/
+permalink: /kb/130/Q130096/
 ---
 
 ## Q130096: PC Win: Err Msg: This Account Is Not a Valid User of this...

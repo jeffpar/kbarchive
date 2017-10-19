@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82486: Picture Publisher Stack Fault Changing Scanner Option"
-permalink: kb/082/Q82486/
+permalink: /kb/082/Q82486/
 ---
 
 ## Q82486: Picture Publisher Stack Fault Changing Scanner Option

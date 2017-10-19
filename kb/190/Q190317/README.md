@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190317: INFO: Administrative Privileges Required for Visual C++"
-permalink: kb/190/Q190317/
+permalink: /kb/190/Q190317/
 ---
 
 ## Q190317: INFO: Administrative Privileges Required for Visual C++

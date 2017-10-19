@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316772: XADM: Cluster Registry Checkpoint Event ID 1024 Err Mssg Logged"
-permalink: kb/316/Q316772/
+permalink: /kb/316/Q316772/
 ---
 
 ## Q316772: XADM: Cluster Registry Checkpoint Event ID 1024 Err Mssg Logged

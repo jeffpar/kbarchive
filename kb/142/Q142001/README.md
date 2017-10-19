@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142001: FAQ: SQL Queries in Visual Basic"
-permalink: kb/142/Q142001/
+permalink: /kb/142/Q142001/
 ---
 
 ## Q142001: FAQ: SQL Queries in Visual Basic

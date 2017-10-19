@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59645: Empty Dialog Box on Novell in Windows 3.0"
-permalink: kb/059/Q59645/
+permalink: /kb/059/Q59645/
 ---
 
 ## Q59645: Empty Dialog Box on Novell in Windows 3.0

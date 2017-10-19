@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134581: Xtradrive 3.0 Requires SETVER Before LOADHIGH Will Work"
-permalink: kb/134/Q134581/
+permalink: /kb/134/Q134581/
 ---
 
 ## Q134581: Xtradrive 3.0 Requires SETVER Before LOADHIGH Will Work

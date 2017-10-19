@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322360: List of UNIX Platforms on Which Passport Is Supported"
-permalink: kb/322/Q322360/
+permalink: /kb/322/Q322360/
 ---
 
 ## Q322360: List of UNIX Platforms on Which Passport Is Supported

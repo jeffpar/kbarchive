@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279236: Windows 2000 Performance Tuning Technical Reference Comments and"
-permalink: kb/279/Q279236/
+permalink: /kb/279/Q279236/
 ---
 
 ## Q279236: Windows 2000 Performance Tuning Technical Reference Comments and

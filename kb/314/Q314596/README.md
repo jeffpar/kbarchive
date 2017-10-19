@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314596: S&amp;T 2002: Schools Are Not Displayed on Map"
-permalink: kb/314/Q314596/
+permalink: /kb/314/Q314596/
 ---
 
 ## Q314596: S&amp;T 2002: Schools Are Not Displayed on Map

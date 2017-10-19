@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123825: SMTP: Err Msg: Can Not Use Indirect Postoffice to Forward Mail"
-permalink: kb/123/Q123825/
+permalink: /kb/123/Q123825/
 ---
 
 ## Q123825: SMTP: Err Msg: Can Not Use Indirect Postoffice to Forward Mail

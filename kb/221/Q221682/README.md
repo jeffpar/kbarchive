@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221682: FIX: Expanding/Collapsing Big Array in Watch/Locals Windows Slow"
-permalink: kb/221/Q221682/
+permalink: /kb/221/Q221682/
 ---
 
 ## Q221682: FIX: Expanding/Collapsing Big Array in Watch/Locals Windows Slow

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258220: XFOR: Migration Wizard Does Not Support cc:Mail Database 7"
-permalink: kb/258/Q258220/
+permalink: /kb/258/Q258220/
 ---
 
 ## Q258220: XFOR: Migration Wizard Does Not Support cc:Mail Database 7

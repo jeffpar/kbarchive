@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104890: MS-DOS 6.2 Setup Install Second Microsoft Tools Group"
-permalink: kb/104/Q104890/
+permalink: /kb/104/Q104890/
 ---
 
 ## Q104890: MS-DOS 6.2 Setup Install Second Microsoft Tools Group

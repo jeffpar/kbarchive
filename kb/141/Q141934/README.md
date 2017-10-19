@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141934: PRB: Can't Set Picture Object Property from Add-In"
-permalink: kb/141/Q141934/
+permalink: /kb/141/Q141934/
 ---
 
 ## Q141934: PRB: Can't Set Picture Object Property from Add-In

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134549: Cannot Restart Computer with Modified File Open in AutoCadLT"
-permalink: kb/134/Q134549/
+permalink: /kb/134/Q134549/
 ---
 
 ## Q134549: Cannot Restart Computer with Modified File Open in AutoCadLT

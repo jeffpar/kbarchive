@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263372: SMS: Advertisements Can Run Multiple Times"
-permalink: kb/263/Q263372/
+permalink: /kb/263/Q263372/
 ---
 
 ## Q263372: SMS: Advertisements Can Run Multiple Times

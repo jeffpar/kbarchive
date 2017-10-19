@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201371: How to Reset License Information in License Manager"
-permalink: kb/201/Q201371/
+permalink: /kb/201/Q201371/
 ---
 
 ## Q201371: How to Reset License Information in License Manager

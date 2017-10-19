@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233468: Business Planner: Unable to Open Certain Help Topics"
-permalink: kb/233/Q233468/
+permalink: /kb/233/Q233468/
 ---
 
 ## Q233468: Business Planner: Unable to Open Certain Help Topics

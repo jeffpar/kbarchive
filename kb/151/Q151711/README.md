@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151711: Error Msg: &quot;Unable to change password&quot; 0xC00000E5"
-permalink: kb/151/Q151711/
+permalink: /kb/151/Q151711/
 ---
 
 ## Q151711: Error Msg: &quot;Unable to change password&quot; 0xC00000E5

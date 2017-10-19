@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143041: HOWTO: Call a Visual Basic 4.0 OLE Server from Excel 5.0"
-permalink: kb/143/Q143041/
+permalink: /kb/143/Q143041/
 ---
 
 ## Q143041: HOWTO: Call a Visual Basic 4.0 OLE Server from Excel 5.0

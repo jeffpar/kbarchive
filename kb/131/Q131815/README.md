@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131815: PRB: Assert Error in BARTOOL.CPP line 398"
-permalink: kb/131/Q131815/
+permalink: /kb/131/Q131815/
 ---
 
 ## Q131815: PRB: Assert Error in BARTOOL.CPP line 398

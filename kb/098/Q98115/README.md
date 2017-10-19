@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98115: Microsoft Backup Doesn't Work on Panasonic Notebook Computers"
-permalink: kb/098/Q98115/
+permalink: /kb/098/Q98115/
 ---
 
 ## Q98115: Microsoft Backup Doesn't Work on Panasonic Notebook Computers

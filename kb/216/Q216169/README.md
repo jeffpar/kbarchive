@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216169: How to Change the Default Event Viewer Log File Location"
-permalink: kb/216/Q216169/
+permalink: /kb/216/Q216169/
 ---
 
 ## Q216169: How to Change the Default Event Viewer Log File Location

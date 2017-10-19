@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165248: Description for Event ID 5111 is Incomplete"
-permalink: kb/165/Q165248/
+permalink: /kb/165/Q165248/
 ---
 
 ## Q165248: Description for Event ID 5111 is Incomplete

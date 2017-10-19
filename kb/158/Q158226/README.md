@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158226: Encarta 97: Personal Nutrition Interactivity Does Not Save"
-permalink: kb/158/Q158226/
+permalink: /kb/158/Q158226/
 ---
 
 ## Q158226: Encarta 97: Personal Nutrition Interactivity Does Not Save

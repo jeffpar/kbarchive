@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152530: XCLN: SMAPI/MAPIFindNext Can't Find IPC Messages"
-permalink: kb/152/Q152530/
+permalink: /kb/152/Q152530/
 ---
 
 ## Q152530: XCLN: SMAPI/MAPIFindNext Can't Find IPC Messages

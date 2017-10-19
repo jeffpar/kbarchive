@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103612: PRB: REPORT FORM &lt;Report&gt; TO &lt;File&gt; w/ IBM Laser Printer 4019"
-permalink: kb/103/Q103612/
+permalink: /kb/103/Q103612/
 ---
 
 ## Q103612: PRB: REPORT FORM &lt;Report&gt; TO &lt;File&gt; w/ IBM Laser Printer 4019

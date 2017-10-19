@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128061: INFO: Visual FoxPro Setup in Windows and Windows for Workgroups"
-permalink: kb/128/Q128061/
+permalink: /kb/128/Q128061/
 ---
 
 ## Q128061: INFO: Visual FoxPro Setup in Windows and Windows for Workgroups

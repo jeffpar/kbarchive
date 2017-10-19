@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201031: PRB: Changes to ASP Scripts Are Not Reflected on IIS 3.0 Server"
-permalink: kb/201/Q201031/
+permalink: /kb/201/Q201031/
 ---
 
 ## Q201031: PRB: Changes to ASP Scripts Are Not Reflected on IIS 3.0 Server

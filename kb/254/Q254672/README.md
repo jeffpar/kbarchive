@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254672: FS2000 Err Msg: Cache File Open Error"
-permalink: kb/254/Q254672/
+permalink: /kb/254/Q254672/
 ---
 
 ## Q254672: FS2000 Err Msg: Cache File Open Error

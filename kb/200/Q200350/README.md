@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200350: HPMON Generates Event ID 1012 When Using DLC Protocol"
-permalink: kb/200/Q200350/
+permalink: /kb/200/Q200350/
 ---
 
 ## Q200350: HPMON Generates Event ID 1012 When Using DLC Protocol

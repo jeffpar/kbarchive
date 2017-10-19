@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112430: PPT: Cannot Convert Linked PowerPoint Objects"
-permalink: kb/112/Q112430/
+permalink: /kb/112/Q112430/
 ---
 
 ## Q112430: PPT: Cannot Convert Linked PowerPoint Objects

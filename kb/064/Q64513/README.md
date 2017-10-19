@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64513: Unrecoverable Application Error Printing to HP Series II"
-permalink: kb/064/Q64513/
+permalink: /kb/064/Q64513/
 ---
 
 ## Q64513: Unrecoverable Application Error Printing to HP Series II

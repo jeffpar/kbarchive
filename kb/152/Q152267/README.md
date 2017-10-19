@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152267: XCLN: Exchange Client Fails After Removing Application"
-permalink: kb/152/Q152267/
+permalink: /kb/152/Q152267/
 ---
 
 ## Q152267: XCLN: Exchange Client Fails After Removing Application

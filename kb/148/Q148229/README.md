@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148229: How to Get the Full Path from a List Box"
-permalink: kb/148/Q148229/
+permalink: /kb/148/Q148229/
 ---
 
 ## Q148229: How to Get the Full Path from a List Box

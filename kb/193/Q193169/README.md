@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193169: Script Mappings Are Not Removed from the Registry"
-permalink: kb/193/Q193169/
+permalink: /kb/193/Q193169/
 ---
 
 ## Q193169: Script Mappings Are Not Removed from the Registry

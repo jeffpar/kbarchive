@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156429: Supported 16-bit Utilities and NetWare-Aware Applications"
-permalink: kb/156/Q156429/
+permalink: /kb/156/Q156429/
 ---
 
 ## Q156429: Supported 16-bit Utilities and NetWare-Aware Applications

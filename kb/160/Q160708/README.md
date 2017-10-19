@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160708: XCLN: Scanpst Reports Incorrect Values for Folders/Items in File"
-permalink: kb/160/Q160708/
+permalink: /kb/160/Q160708/
 ---
 
 ## Q160708: XCLN: Scanpst Reports Incorrect Values for Folders/Items in File

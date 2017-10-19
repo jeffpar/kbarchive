@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182064: APPC Program May Stop or Fail with SNA Server 4.0 on DEC Alpha"
-permalink: kb/182/Q182064/
+permalink: /kb/182/Q182064/
 ---
 
 ## Q182064: APPC Program May Stop or Fail with SNA Server 4.0 on DEC Alpha

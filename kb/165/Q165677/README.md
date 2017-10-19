@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165677: WD97: Outlook Item Pasted as Text into Word or WordMail"
-permalink: kb/165/Q165677/
+permalink: /kb/165/Q165677/
 ---
 
 ## Q165677: WD97: Outlook Item Pasted as Text into Word or WordMail

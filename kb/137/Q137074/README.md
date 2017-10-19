@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137074: SNA Server: Undocumented TPSTART Command Line Options"
-permalink: kb/137/Q137074/
+permalink: /kb/137/Q137074/
 ---
 
 ## Q137074: SNA Server: Undocumented TPSTART Command Line Options

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162729: 3COM 3c595 Adapter Resources Listed Twice"
-permalink: kb/162/Q162729/
+permalink: /kb/162/Q162729/
 ---
 
 ## Q162729: 3COM 3c595 Adapter Resources Listed Twice

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275529: Help Information for Printmig.exe Version 2.0"
-permalink: kb/275/Q275529/
+permalink: /kb/275/Q275529/
 ---
 
 ## Q275529: Help Information for Printmig.exe Version 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86924: DOCERR: HELPWININFO Data Structure Documented Incorrectly"
-permalink: kb/086/Q86924/
+permalink: /kb/086/Q86924/
 ---
 
 ## Q86924: DOCERR: HELPWININFO Data Structure Documented Incorrectly

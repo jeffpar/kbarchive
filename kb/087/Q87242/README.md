@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87242: Drive Mapped at MS-DOS Prompt Not Recognized in File Manager"
-permalink: kb/087/Q87242/
+permalink: /kb/087/Q87242/
 ---
 
 ## Q87242: Drive Mapped at MS-DOS Prompt Not Recognized in File Manager

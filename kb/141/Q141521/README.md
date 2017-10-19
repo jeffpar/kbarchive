@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141521: Encarta Encyclopedia Mindmaze: Sound On Versus Sound Off"
-permalink: kb/141/Q141521/
+permalink: /kb/141/Q141521/
 ---
 
 ## Q141521: Encarta Encyclopedia Mindmaze: Sound On Versus Sound Off

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104549: Cannot Restore Backup After Upgrading to U.S. Service Pack 2"
-permalink: kb/104/Q104549/
+permalink: /kb/104/Q104549/
 ---
 
 ## Q104549: Cannot Restore Backup After Upgrading to U.S. Service Pack 2

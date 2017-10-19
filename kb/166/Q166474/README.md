@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166474: INFO: VC_EXTRALEAN and WIN32_LEAN_AND_MEAN"
-permalink: kb/166/Q166474/
+permalink: /kb/166/Q166474/
 ---
 
 ## Q166474: INFO: VC_EXTRALEAN and WIN32_LEAN_AND_MEAN

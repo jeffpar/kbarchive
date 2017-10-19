@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152722: XCLN: ErrMsg: Need Additional Space to Complete This Operation"
-permalink: kb/152/Q152722/
+permalink: /kb/152/Q152722/
 ---
 
 ## Q152722: XCLN: ErrMsg: Need Additional Space to Complete This Operation

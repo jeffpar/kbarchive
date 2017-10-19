@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156760: STL Sample for deque::front and deque::back Functions"
-permalink: kb/156/Q156760/
+permalink: /kb/156/Q156760/
 ---
 
 ## Q156760: STL Sample for deque::front and deque::back Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85520: INFO: Archiving Several Objects That Point to a Third Object"
-permalink: kb/085/Q85520/
+permalink: /kb/085/Q85520/
 ---
 
 ## Q85520: INFO: Archiving Several Objects That Point to a Third Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158387: RAS Cannot Use DHCP to Assign Addresses w/ PPTP Filtering"
-permalink: kb/158/Q158387/
+permalink: /kb/158/Q158387/
 ---
 
 ## Q158387: RAS Cannot Use DHCP to Assign Addresses w/ PPTP Filtering

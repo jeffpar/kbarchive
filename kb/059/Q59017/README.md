@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59017: PRINT SCREEN Does Not Print More Than 25 Lines"
-permalink: kb/059/Q59017/
+permalink: /kb/059/Q59017/
 ---
 
 ## Q59017: PRINT SCREEN Does Not Print More Than 25 Lines

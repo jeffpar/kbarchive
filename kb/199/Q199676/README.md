@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199676: PC Adm: Invalid Characters in Mailbox Name for Microsoft Mail"
-permalink: kb/199/Q199676/
+permalink: /kb/199/Q199676/
 ---
 
 ## Q199676: PC Adm: Invalid Characters in Mailbox Name for Microsoft Mail

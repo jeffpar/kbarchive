@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168539: XFOR: How to Delete Exchange Dirsync Server"
-permalink: kb/168/Q168539/
+permalink: /kb/168/Q168539/
 ---
 
 ## Q168539: XFOR: How to Delete Exchange Dirsync Server

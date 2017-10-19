@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173514: Blank Gray Screen Appears When Starting MSN Program Viewer"
-permalink: kb/173/Q173514/
+permalink: /kb/173/Q173514/
 ---
 
 ## Q173514: Blank Gray Screen Appears When Starting MSN Program Viewer

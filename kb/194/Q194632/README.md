@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194632: WD97: Word Doesn't Convert Creative Writer and Fine Artist Files"
-permalink: kb/194/Q194632/
+permalink: /kb/194/Q194632/
 ---
 
 ## Q194632: WD97: Word Doesn't Convert Creative Writer and Fine Artist Files

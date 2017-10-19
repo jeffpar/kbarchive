@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187865: XFOR: Problems Running Multiple LinkAge Connectors"
-permalink: kb/187/Q187865/
+permalink: /kb/187/Q187865/
 ---
 
 ## Q187865: XFOR: Problems Running Multiple LinkAge Connectors

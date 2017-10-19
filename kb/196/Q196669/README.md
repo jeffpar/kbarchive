@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196669: XCON: MTA Queue Length Can Show More Messages than in Queue"
-permalink: kb/196/Q196669/
+permalink: /kb/196/Q196669/
 ---
 
 ## Q196669: XCON: MTA Queue Length Can Show More Messages than in Queue

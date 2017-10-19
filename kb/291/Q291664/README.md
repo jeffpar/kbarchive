@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291664: HOWTO: Detect Safe Mode Startup with Visual Basic"
-permalink: kb/291/Q291664/
+permalink: /kb/291/Q291664/
 ---
 
 ## Q291664: HOWTO: Detect Safe Mode Startup with Visual Basic

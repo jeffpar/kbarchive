@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199397: XFOR: POP3 Reply Address Contains Numerous Invalid Addresses"
-permalink: kb/199/Q199397/
+permalink: /kb/199/Q199397/
 ---
 
 ## Q199397: XFOR: POP3 Reply Address Contains Numerous Invalid Addresses

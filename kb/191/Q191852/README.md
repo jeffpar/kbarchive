@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191852: Bhnetb.dll Leaks Memory in Winlogon.exe Process with NetMon"
-permalink: kb/191/Q191852/
+permalink: /kb/191/Q191852/
 ---
 
 ## Q191852: Bhnetb.dll Leaks Memory in Winlogon.exe Process with NetMon

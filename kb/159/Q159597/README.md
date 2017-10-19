@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159597: Windows Messaging Setup Wizard Error: &quot;Path ... Is Not Valid&quot;"
-permalink: kb/159/Q159597/
+permalink: /kb/159/Q159597/
 ---
 
 ## Q159597: Windows Messaging Setup Wizard Error: &quot;Path ... Is Not Valid&quot;

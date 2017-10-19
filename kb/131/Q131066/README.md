@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131066: PRB: C2922 Error for Class Template Containing Friend Function"
-permalink: kb/131/Q131066/
+permalink: /kb/131/Q131066/
 ---
 
 ## Q131066: PRB: C2922 Error for Class Template Containing Friend Function

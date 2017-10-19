@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278304: CFS2: How to Troubleshoot Performance Issues"
-permalink: kb/278/Q278304/
+permalink: /kb/278/Q278304/
 ---
 
 ## Q278304: CFS2: How to Troubleshoot Performance Issues

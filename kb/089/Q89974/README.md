@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89974: Setup Detects Incorrect Space Available on WFWG Server"
-permalink: kb/089/Q89974/
+permalink: /kb/089/Q89974/
 ---
 
 ## Q89974: Setup Detects Incorrect Space Available on WFWG Server

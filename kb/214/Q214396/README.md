@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214396: MSocUdp.exe Implement UDP Using CAsyncSocket"
-permalink: kb/214/Q214396/
+permalink: /kb/214/Q214396/
 ---
 
 ## Q214396: MSocUdp.exe Implement UDP Using CAsyncSocket

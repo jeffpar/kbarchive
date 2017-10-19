@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141594: WinNT Err Msg: STOP 0x0000021a When You Log On To Domain"
-permalink: kb/141/Q141594/
+permalink: /kb/141/Q141594/
 ---
 
 ## Q141594: WinNT Err Msg: STOP 0x0000021a When You Log On To Domain

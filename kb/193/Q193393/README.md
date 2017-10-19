@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193393: Modem Sharing Stops Working on LANtastic 7.0 Network"
-permalink: kb/193/Q193393/
+permalink: /kb/193/Q193393/
 ---
 
 ## Q193393: Modem Sharing Stops Working on LANtastic 7.0 Network

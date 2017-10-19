@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234054: Errmsg: Setup Did Not Find Any Hard Disk Drives Installed"
-permalink: kb/234/Q234054/
+permalink: /kb/234/Q234054/
 ---
 
 ## Q234054: Errmsg: Setup Did Not Find Any Hard Disk Drives Installed

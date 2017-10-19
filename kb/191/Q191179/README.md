@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191179: WD97: Customizing and Sharing Toolbars in Microsoft Word"
-permalink: kb/191/Q191179/
+permalink: /kb/191/Q191179/
 ---
 
 ## Q191179: WD97: Customizing and Sharing Toolbars in Microsoft Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177668: Calibration Does Not Change When You Calibrate Foot Pedals"
-permalink: kb/177/Q177668/
+permalink: /kb/177/Q177668/
 ---
 
 ## Q177668: Calibration Does Not Change When You Calibrate Foot Pedals

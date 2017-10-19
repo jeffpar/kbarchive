@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163104: ODE97: Setup Wizard: Prompts Users to Change Version Number"
-permalink: kb/163/Q163104/
+permalink: /kb/163/Q163104/
 ---
 
 ## Q163104: ODE97: Setup Wizard: Prompts Users to Change Version Number

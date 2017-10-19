@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262807: How to Use the SNA Server Linkcfg.exe on Windows 2000"
-permalink: kb/262/Q262807/
+permalink: /kb/262/Q262807/
 ---
 
 ## Q262807: How to Use the SNA Server Linkcfg.exe on Windows 2000

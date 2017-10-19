@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147837: FIX: &quot;File not Found&quot; Error Message During Check In"
-permalink: kb/147/Q147837/
+permalink: /kb/147/Q147837/
 ---
 
 ## Q147837: FIX: &quot;File not Found&quot; Error Message During Check In

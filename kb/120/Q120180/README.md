@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120180: Undocumented SYS(2033) Returns Microsoft &amp; System Folders"
-permalink: kb/120/Q120180/
+permalink: /kb/120/Q120180/
 ---
 
 ## Q120180: Undocumented SYS(2033) Returns Microsoft &amp; System Folders

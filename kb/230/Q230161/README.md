@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230161: XCLN: Incorrect Holidays Listed in Microsoft Outlook Calendar"
-permalink: kb/230/Q230161/
+permalink: /kb/230/Q230161/
 ---
 
 ## Q230161: XCLN: Incorrect Holidays Listed in Microsoft Outlook Calendar

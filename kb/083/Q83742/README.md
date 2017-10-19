@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83742: Autocad with SMARTDrive 4.0 Requires NewDX Patch"
-permalink: kb/083/Q83742/
+permalink: /kb/083/Q83742/
 ---
 
 ## Q83742: Autocad with SMARTDrive 4.0 Requires NewDX Patch

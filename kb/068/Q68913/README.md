@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68913: ASD: Boeing 747-400 Not Visible in Multiplayer Mode"
-permalink: kb/068/Q68913/
+permalink: /kb/068/Q68913/
 ---
 
 ## Q68913: ASD: Boeing 747-400 Not Visible in Multiplayer Mode

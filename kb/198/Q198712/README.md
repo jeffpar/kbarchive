@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198712: PRB: CommonDialog Changes System Wide Printer Properties"
-permalink: kb/198/Q198712/
+permalink: /kb/198/Q198712/
 ---
 
 ## Q198712: PRB: CommonDialog Changes System Wide Printer Properties

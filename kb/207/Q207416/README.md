@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207416: SMS: Distribution Manager Does Not Process a New Package"
-permalink: kb/207/Q207416/
+permalink: /kb/207/Q207416/
 ---
 
 ## Q207416: SMS: Distribution Manager Does Not Process a New Package

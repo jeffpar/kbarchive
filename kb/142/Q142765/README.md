@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142765: Cdplayfx.exe - Form Shows How to Play Audio CDs"
-permalink: kb/142/Q142765/
+permalink: /kb/142/Q142765/
 ---
 
 ## Q142765: Cdplayfx.exe - Form Shows How to Play Audio CDs

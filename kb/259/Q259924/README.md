@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259924: INFO: COFF Type Debug Information No Longer Contains Line Number"
-permalink: kb/259/Q259924/
+permalink: /kb/259/Q259924/
 ---
 
 ## Q259924: INFO: COFF Type Debug Information No Longer Contains Line Number

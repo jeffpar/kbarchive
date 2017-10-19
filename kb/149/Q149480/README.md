@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149480: BUG: END DO Cannot Be on Separate Lines in Fixed-Form Source"
-permalink: kb/149/Q149480/
+permalink: /kb/149/Q149480/
 ---
 
 ## Q149480: BUG: END DO Cannot Be on Separate Lines in Fixed-Form Source

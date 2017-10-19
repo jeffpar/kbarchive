@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321589: Multiple Named Pipes May Become Slow"
-permalink: kb/321/Q321589/
+permalink: /kb/321/Q321589/
 ---
 
 ## Q321589: Multiple Named Pipes May Become Slow

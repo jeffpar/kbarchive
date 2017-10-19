@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103934: How to Add More Than Two IDE or ESDI Drives in Windows NT"
-permalink: kb/103/Q103934/
+permalink: /kb/103/Q103934/
 ---
 
 ## Q103934: How to Add More Than Two IDE or ESDI Drives in Windows NT

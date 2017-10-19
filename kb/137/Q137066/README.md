@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137066: Local Netware Connections may be Dropped"
-permalink: kb/137/Q137066/
+permalink: /kb/137/Q137066/
 ---
 
 ## Q137066: Local Netware Connections may be Dropped

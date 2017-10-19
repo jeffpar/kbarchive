@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86943: 3COM: Terms and Definitions of 3Com Networks"
-permalink: kb/086/Q86943/
+permalink: /kb/086/Q86943/
 ---
 
 ## Q86943: 3COM: Terms and Definitions of 3Com Networks

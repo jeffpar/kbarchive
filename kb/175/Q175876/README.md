@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175876: Protect It!: Some Restrictions Lost After Install of IE 4.0"
-permalink: kb/175/Q175876/
+permalink: /kb/175/Q175876/
 ---
 
 ## Q175876: Protect It!: Some Restrictions Lost After Install of IE 4.0

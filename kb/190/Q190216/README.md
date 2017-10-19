@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190216: BUG: Printer.DrawWidth Appears To Be Ignored with Windows 95/98"
-permalink: kb/190/Q190216/
+permalink: /kb/190/Q190216/
 ---
 
 ## Q190216: BUG: Printer.DrawWidth Appears To Be Ignored with Windows 95/98

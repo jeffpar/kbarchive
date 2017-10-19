@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129707: X400: No Outgoing X.400 Receipt Notifications"
-permalink: kb/129/Q129707/
+permalink: /kb/129/Q129707/
 ---
 
 ## Q129707: X400: No Outgoing X.400 Receipt Notifications

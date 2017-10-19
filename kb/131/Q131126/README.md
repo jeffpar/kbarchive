@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131126: Wine Guide: Cannot Print More Than 99 Copies of Wine Selector"
-permalink: kb/131/Q131126/
+permalink: /kb/131/Q131126/
 ---
 
 ## Q131126: Wine Guide: Cannot Print More Than 99 Copies of Wine Selector

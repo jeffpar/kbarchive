@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243326: SMS: Browsing for PDFs Requires Site Modify"
-permalink: kb/243/Q243326/
+permalink: /kb/243/Q243326/
 ---
 
 ## Q243326: SMS: Browsing for PDFs Requires Site Modify

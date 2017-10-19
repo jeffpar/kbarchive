@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q52179: Flight Simulator Coordinates for Fuel Bases in WWI Mode"
-permalink: kb/052/Q52179/
+permalink: /kb/052/Q52179/
 ---
 
 ## Q52179: Flight Simulator Coordinates for Fuel Bases in WWI Mode

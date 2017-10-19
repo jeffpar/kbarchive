@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301486: Setting Password Protection at Log In"
-permalink: kb/301/Q301486/
+permalink: /kb/301/Q301486/
 ---
 
 ## Q301486: Setting Password Protection at Log In

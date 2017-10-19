@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130930: Creating a Boot Floppy for a Multibus SCSI Adapter"
-permalink: kb/130/Q130930/
+permalink: /kb/130/Q130930/
 ---
 
 ## Q130930: Creating a Boot Floppy for a Multibus SCSI Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103636: BUG: EV_RLSDS Event Does Not Indicate Current RLSD State"
-permalink: kb/103/Q103636/
+permalink: /kb/103/Q103636/
 ---
 
 ## Q103636: BUG: EV_RLSDS Event Does Not Indicate Current RLSD State

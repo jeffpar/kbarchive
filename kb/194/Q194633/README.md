@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194633: How to Add Additional Host Security Domains"
-permalink: kb/194/Q194633/
+permalink: /kb/194/Q194633/
 ---
 
 ## Q194633: How to Add Additional Host Security Domains

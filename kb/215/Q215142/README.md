@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215142: SMS: Errors in Status Messages 615, 616, 617, 618, 619 and 620."
-permalink: kb/215/Q215142/
+permalink: /kb/215/Q215142/
 ---
 
 ## Q215142: SMS: Errors in Status Messages 615, 616, 617, 618, 619 and 620.

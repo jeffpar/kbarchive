@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123672: GP Fault in Peachtree Accounting for Windows 3.0"
-permalink: kb/123/Q123672/
+permalink: /kb/123/Q123672/
 ---
 
 ## Q123672: GP Fault in Peachtree Accounting for Windows 3.0

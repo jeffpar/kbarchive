@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164688: WD97: Background Image Reference Changed Saving As HTML"
-permalink: kb/164/Q164688/
+permalink: /kb/164/Q164688/
 ---
 
 ## Q164688: WD97: Background Image Reference Changed Saving As HTML

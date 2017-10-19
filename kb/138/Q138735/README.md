@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138735: FAQ: Visual C++ 4.0 Frequently Asked Questions"
-permalink: kb/138/Q138735/
+permalink: /kb/138/Q138735/
 ---
 
 ## Q138735: FAQ: Visual C++ 4.0 Frequently Asked Questions

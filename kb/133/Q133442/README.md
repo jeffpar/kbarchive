@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133442: Safe Mode Boot Does Not Process Machine Switch for Himem.sys"
-permalink: kb/133/Q133442/
+permalink: /kb/133/Q133442/
 ---
 
 ## Q133442: Safe Mode Boot Does Not Process Machine Switch for Himem.sys

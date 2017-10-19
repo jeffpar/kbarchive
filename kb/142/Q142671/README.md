@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142671: Backup Fails on Certain Directories Due to Lack of Permissions"
-permalink: kb/142/Q142671/
+permalink: /kb/142/Q142671/
 ---
 
 ## Q142671: Backup Fails on Certain Directories Due to Lack of Permissions

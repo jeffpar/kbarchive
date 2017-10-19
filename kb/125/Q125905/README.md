@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125905: DLL Errors When Running Windows 16-Bit Applications"
-permalink: kb/125/Q125905/
+permalink: /kb/125/Q125905/
 ---
 
 ## Q125905: DLL Errors When Running Windows 16-Bit Applications

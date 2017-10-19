@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281837: INFO: COM EXE Servers Run in SYSTEM Context When Called from IIS"
-permalink: kb/281/Q281837/
+permalink: /kb/281/Q281837/
 ---
 
 ## Q281837: INFO: COM EXE Servers Run in SYSTEM Context When Called from IIS

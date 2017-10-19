@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q108683: PROFS: 3.4 Gateway Disk 2 [3.5, 1.44 MB]"
-permalink: kb/108/Q108683/
+title: "Q108683: PROFS: 3.4 Gateway Disk 2 &#91;3.5, 1.44 MB&#93;"
+permalink: /kb/108/Q108683/
 ---
 
-## Q108683: PROFS: 3.4 Gateway Disk 2 [3.5, 1.44 MB]
+## Q108683: PROFS: 3.4 Gateway Disk 2 &#91;3.5, 1.44 MB&#93;
 
 	Article: Q108683
 	Product(s): Microsoft Mail For PC Networks

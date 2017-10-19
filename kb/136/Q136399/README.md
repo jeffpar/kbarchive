@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136399: INFO: Visual Basic and Source Code Control Glyphs"
-permalink: kb/136/Q136399/
+permalink: /kb/136/Q136399/
 ---
 
 ## Q136399: INFO: Visual Basic and Source Code Control Glyphs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178413: Windows NT System May Hang When Running a Filter Driver"
-permalink: kb/178/Q178413/
+permalink: /kb/178/Q178413/
 ---
 
 ## Q178413: Windows NT System May Hang When Running a Filter Driver

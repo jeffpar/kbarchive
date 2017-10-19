@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104995: Using SCSI Devices that Require Device Drivers"
-permalink: kb/104/Q104995/
+permalink: /kb/104/Q104995/
 ---
 
 ## Q104995: Using SCSI Devices that Require Device Drivers

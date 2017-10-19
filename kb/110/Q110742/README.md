@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110742: Faxes from Server Are Sent Before Faxes from Other Machines"
-permalink: kb/110/Q110742/
+permalink: /kb/110/Q110742/
 ---
 
 ## Q110742: Faxes from Server Are Sent Before Faxes from Other Machines

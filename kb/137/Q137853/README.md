@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137853: Guest Account Allows FTP Users Access Without Authentication"
-permalink: kb/137/Q137853/
+permalink: /kb/137/Q137853/
 ---
 
 ## Q137853: Guest Account Allows FTP Users Access Without Authentication

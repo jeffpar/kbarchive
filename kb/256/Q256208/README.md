@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256208: SMS: Query-Based Collection May Not Work Correctly on Child Site"
-permalink: kb/256/Q256208/
+permalink: /kb/256/Q256208/
 ---
 
 ## Q256208: SMS: Query-Based Collection May Not Work Correctly on Child Site

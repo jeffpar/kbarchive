@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71533: PC Tools 6.0 REBUILD.COM Incompatible with MS-DOS 5.0 and Later"
-permalink: kb/071/Q71533/
+permalink: /kb/071/Q71533/
 ---
 
 ## Q71533: PC Tools 6.0 REBUILD.COM Incompatible with MS-DOS 5.0 and Later

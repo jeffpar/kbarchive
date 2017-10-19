@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83301: Retrieving Application Exit Code in MS-DOS Window"
-permalink: kb/083/Q83301/
+permalink: /kb/083/Q83301/
 ---
 
 ## Q83301: Retrieving Application Exit Code in MS-DOS Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142077: Mac Cinemania: How To Choose Movie Reviewers"
-permalink: kb/142/Q142077/
+permalink: /kb/142/Q142077/
 ---
 
 ## Q142077: Mac Cinemania: How To Choose Movie Reviewers

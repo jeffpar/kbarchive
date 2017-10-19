@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255271: Drwtsn32.exe Creates Corrupted User Mode Crash Dump Files"
-permalink: kb/255/Q255271/
+permalink: /kb/255/Q255271/
 ---
 
 ## Q255271: Drwtsn32.exe Creates Corrupted User Mode Crash Dump Files

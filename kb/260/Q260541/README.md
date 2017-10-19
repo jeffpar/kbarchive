@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260541: Uninstalling Client by Removing Site Boundaries Leaves Files"
-permalink: kb/260/Q260541/
+permalink: /kb/260/Q260541/
 ---
 
 ## Q260541: Uninstalling Client by Removing Site Boundaries Leaves Files

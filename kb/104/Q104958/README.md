@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104958: BUG: Oracle Driver Errors on Delimited Column Names"
-permalink: kb/104/Q104958/
+permalink: /kb/104/Q104958/
 ---
 
 ## Q104958: BUG: Oracle Driver Errors on Delimited Column Names

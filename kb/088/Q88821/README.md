@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88821: Epson L-750 Does Not Handle US Fanfold Correctly"
-permalink: kb/088/Q88821/
+permalink: /kb/088/Q88821/
 ---
 
 ## Q88821: Epson L-750 Does Not Handle US Fanfold Correctly

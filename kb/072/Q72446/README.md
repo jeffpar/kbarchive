@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72446: Emerson 386 Cannot Run Enhanced Mode"
-permalink: kb/072/Q72446/
+permalink: /kb/072/Q72446/
 ---
 
 ## Q72446: Emerson 386 Cannot Run Enhanced Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120266: Flashing Screen with Orchid Fahrenheit 1280"
-permalink: kb/120/Q120266/
+permalink: /kb/120/Q120266/
 ---
 
 ## Q120266: Flashing Screen with Orchid Fahrenheit 1280

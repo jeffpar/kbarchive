@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143117: HOWTO: Determine if Windows 95/98/Me Taskbar Is Visible/Hidden"
-permalink: kb/143/Q143117/
+permalink: /kb/143/Q143117/
 ---
 
 ## Q143117: HOWTO: Determine if Windows 95/98/Me Taskbar Is Visible/Hidden

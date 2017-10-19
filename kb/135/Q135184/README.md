@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135184: ARCsolo Network Drive Listing Is Different in Windows 95"
-permalink: kb/135/Q135184/
+permalink: /kb/135/Q135184/
 ---
 
 ## Q135184: ARCsolo Network Drive Listing Is Different in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213410: SMS: Determining Version and Build Number"
-permalink: kb/213/Q213410/
+permalink: /kb/213/Q213410/
 ---
 
 ## Q213410: SMS: Determining Version and Build Number

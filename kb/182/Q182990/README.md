@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182990: XCON: MTA Stops Unexpectedly After Receiving RPC Information"
-permalink: kb/182/Q182990/
+permalink: /kb/182/Q182990/
 ---
 
 ## Q182990: XCON: MTA Stops Unexpectedly After Receiving RPC Information

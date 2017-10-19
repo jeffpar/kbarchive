@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142050: Using Multiple Internet Domain Names and Addresses Over RAS"
-permalink: kb/142/Q142050/
+permalink: /kb/142/Q142050/
 ---
 
 ## Q142050: Using Multiple Internet Domain Names and Addresses Over RAS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194333: Event ID 2510: Unable to Map Error Code 1909"
-permalink: kb/194/Q194333/
+permalink: /kb/194/Q194333/
 ---
 
 ## Q194333: Event ID 2510: Unable to Map Error Code 1909

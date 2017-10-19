@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174937: Compaq Insight Agent Causes Tape Drive to Stop Responding"
-permalink: kb/174/Q174937/
+permalink: /kb/174/Q174937/
 ---
 
 ## Q174937: Compaq Insight Agent Causes Tape Drive to Stop Responding

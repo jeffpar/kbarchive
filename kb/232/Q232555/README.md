@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232555: WD97: Hang or IPF While Scrolling Using HP DeskJet 820 Printer"
-permalink: kb/232/Q232555/
+permalink: /kb/232/Q232555/
 ---
 
 ## Q232555: WD97: Hang or IPF While Scrolling Using HP DeskJet 820 Printer

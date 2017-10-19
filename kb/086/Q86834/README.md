@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86834: DOC: TEXTMETRIC tmPitchAndFamily Member Incorrect"
-permalink: kb/086/Q86834/
+permalink: /kb/086/Q86834/
 ---
 
 ## Q86834: DOC: TEXTMETRIC tmPitchAndFamily Member Incorrect

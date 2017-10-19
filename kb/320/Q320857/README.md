@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320857: Printing E-mail In MSN Explorer"
-permalink: kb/320/Q320857/
+permalink: /kb/320/Q320857/
 ---
 
 ## Q320857: Printing E-mail In MSN Explorer

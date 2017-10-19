@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105092: No Default Printer Selection in Printer Pool"
-permalink: kb/105/Q105092/
+permalink: /kb/105/Q105092/
 ---
 
 ## Q105092: No Default Printer Selection in Printer Pool

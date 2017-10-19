@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137207: XCLN: No Gateway Headers with MS Mail Information Service"
-permalink: kb/137/Q137207/
+permalink: /kb/137/Q137207/
 ---
 
 ## Q137207: XCLN: No Gateway Headers with MS Mail Information Service

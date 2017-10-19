@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158991: US Robotics Edgeserver Does Not Support WfW 3.11 RAS Clients"
-permalink: kb/158/Q158991/
+permalink: /kb/158/Q158991/
 ---
 
 ## Q158991: US Robotics Edgeserver Does Not Support WfW 3.11 RAS Clients

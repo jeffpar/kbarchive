@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47345: Mac Form: HyperCard Needs 1000K RAM with Mail Form Designer"
-permalink: kb/047/Q47345/
+permalink: /kb/047/Q47345/
 ---
 
 ## Q47345: Mac Form: HyperCard Needs 1000K RAM with Mail Form Designer

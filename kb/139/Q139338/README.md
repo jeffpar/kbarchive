@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139338: WINS Counters Disappear from Performance Monitor"
-permalink: kb/139/Q139338/
+permalink: /kb/139/Q139338/
 ---
 
 ## Q139338: WINS Counters Disappear from Performance Monitor

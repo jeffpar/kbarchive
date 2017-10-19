@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155981: Time Updated for Daylight Savings More Than Once"
-permalink: kb/155/Q155981/
+permalink: /kb/155/Q155981/
 ---
 
 ## Q155981: Time Updated for Daylight Savings More Than Once

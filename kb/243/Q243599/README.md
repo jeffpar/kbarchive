@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243599: FIX: VC Debugger Fails on Some Long Names"
-permalink: kb/243/Q243599/
+permalink: /kb/243/Q243599/
 ---
 
 ## Q243599: FIX: VC Debugger Fails on Some Long Names

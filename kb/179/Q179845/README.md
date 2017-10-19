@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179845: PRB: 32-bit BASIC Does Not Convert UNICODE/ANSI in Binary Field"
-permalink: kb/179/Q179845/
+permalink: /kb/179/Q179845/
 ---
 
 ## Q179845: PRB: 32-bit BASIC Does Not Convert UNICODE/ANSI in Binary Field

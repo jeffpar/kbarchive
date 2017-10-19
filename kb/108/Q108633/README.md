@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108633: BUG: &quot;Invalid File Descriptor&quot; When Saving Read-Only Query"
-permalink: kb/108/Q108633/
+permalink: /kb/108/Q108633/
 ---
 
 ## Q108633: BUG: &quot;Invalid File Descriptor&quot; When Saving Read-Only Query

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134524: Newer Racal EtherBlaster Cards May Need OEM Ni6510.dos File"
-permalink: kb/134/Q134524/
+permalink: /kb/134/Q134524/
 ---
 
 ## Q134524: Newer Racal EtherBlaster Cards May Need OEM Ni6510.dos File

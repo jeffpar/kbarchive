@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243721: Asheron's Call: How to Obtain Assistance with the Game"
-permalink: kb/243/Q243721/
+permalink: /kb/243/Q243721/
 ---
 
 ## Q243721: Asheron's Call: How to Obtain Assistance with the Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157181: PC Win: Only Top 80% of Sender's Name Displayed in the Inbox"
-permalink: kb/157/Q157181/
+permalink: /kb/157/Q157181/
 ---
 
 ## Q157181: PC Win: Only Top 80% of Sender's Name Displayed in the Inbox

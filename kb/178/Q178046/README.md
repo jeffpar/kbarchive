@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178046: XADM: Err Msg: Background Thread FDsWaitTask Encountered..."
-permalink: kb/178/Q178046/
+permalink: /kb/178/Q178046/
 ---
 
 ## Q178046: XADM: Err Msg: Background Thread FDsWaitTask Encountered...

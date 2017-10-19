@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123372: PC Adm: Err Msg: Notice 19 Error Accessing Post Office..."
-permalink: kb/123/Q123372/
+permalink: /kb/123/Q123372/
 ---
 
 ## Q123372: PC Adm: Err Msg: Notice 19 Error Accessing Post Office...

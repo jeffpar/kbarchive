@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119500: FIX: Link /OUT Does Not Rename Target"
-permalink: kb/119/Q119500/
+permalink: /kb/119/Q119500/
 ---
 
 ## Q119500: FIX: Link /OUT Does Not Rename Target

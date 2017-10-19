@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156073: XCLN: File, Send Brings Up Window with Missing Options"
-permalink: kb/156/Q156073/
+permalink: /kb/156/Q156073/
 ---
 
 ## Q156073: XCLN: File, Send Brings Up Window with Missing Options

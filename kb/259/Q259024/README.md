@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259024: Allegiance: Quits Unexpectedly when Sound Acceleration Is On"
-permalink: kb/259/Q259024/
+permalink: /kb/259/Q259024/
 ---
 
 ## Q259024: Allegiance: Quits Unexpectedly when Sound Acceleration Is On

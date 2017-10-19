@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200292: FIX: Interfaces Not Released by _com_ptr_t::CreateInstance()"
-permalink: kb/200/Q200292/
+permalink: /kb/200/Q200292/
 ---
 
 ## Q200292: FIX: Interfaces Not Released by _com_ptr_t::CreateInstance()

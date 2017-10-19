@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165651: Some SNA Server Binaries Show Incorrect Version"
-permalink: kb/165/Q165651/
+permalink: /kb/165/Q165651/
 ---
 
 ## Q165651: Some SNA Server Binaries Show Incorrect Version

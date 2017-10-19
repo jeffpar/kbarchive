@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307317: System ACLs Cannot Be Read on Clients in an MSMQ MQIS Domain"
-permalink: kb/307/Q307317/
+permalink: /kb/307/Q307317/
 ---
 
 ## Q307317: System ACLs Cannot Be Read on Clients in an MSMQ MQIS Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145661: PRB: Specified CGI Application Misbehaved"
-permalink: kb/145/Q145661/
+permalink: /kb/145/Q145661/
 ---
 
 ## Q145661: PRB: Specified CGI Application Misbehaved

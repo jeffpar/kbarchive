@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157278: Msbatch.inf Parameters: Removing Standard Desktop Icons"
-permalink: kb/157/Q157278/
+permalink: /kb/157/Q157278/
 ---
 
 ## Q157278: Msbatch.inf Parameters: Removing Standard Desktop Icons

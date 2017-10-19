@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68743: ASD: Scenery Does Not Change Color at Night"
-permalink: kb/068/Q68743/
+permalink: /kb/068/Q68743/
 ---
 
 ## Q68743: ASD: Scenery Does Not Change Color at Night

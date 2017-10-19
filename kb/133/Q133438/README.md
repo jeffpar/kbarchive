@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133438: Print Job Not Printed When Printing to a NetWare Server"
-permalink: kb/133/Q133438/
+permalink: /kb/133/Q133438/
 ---
 
 ## Q133438: Print Job Not Printed When Printing to a NetWare Server

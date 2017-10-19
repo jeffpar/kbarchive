@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128415: NT to LAN Manager UAS Replication Problem after using PORTUAS"
-permalink: kb/128/Q128415/
+permalink: /kb/128/Q128415/
 ---
 
 ## Q128415: NT to LAN Manager UAS Replication Problem after using PORTUAS

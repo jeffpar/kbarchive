@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93568: PC Ext: Err Msg: Cannot Connect to Server"
-permalink: kb/093/Q93568/
+permalink: /kb/093/Q93568/
 ---
 
 ## Q93568: PC Ext: Err Msg: Cannot Connect to Server

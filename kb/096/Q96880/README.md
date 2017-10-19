@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96880: Damaged CVFs and Third-Party Repair Software"
-permalink: kb/096/Q96880/
+permalink: /kb/096/Q96880/
 ---
 
 ## Q96880: Damaged CVFs and Third-Party Repair Software

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229351: SP5 Includes an Updated Version of the Streaming SIMD Driver"
-permalink: kb/229/Q229351/
+permalink: /kb/229/Q229351/
 ---
 
 ## Q229351: SP5 Includes an Updated Version of the Streaming SIMD Driver

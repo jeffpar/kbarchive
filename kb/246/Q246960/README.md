@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246960: HOWTO: Force Graphics to Always Download to Client"
-permalink: kb/246/Q246960/
+permalink: /kb/246/Q246960/
 ---
 
 ## Q246960: HOWTO: Force Graphics to Always Download to Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73741: Task Swapper Problems on Tandy 1000 Computers"
-permalink: kb/073/Q73741/
+permalink: /kb/073/Q73741/
 ---
 
 ## Q73741: Task Swapper Problems on Tandy 1000 Computers

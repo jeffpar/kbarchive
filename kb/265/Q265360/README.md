@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265360: Using the Command Line to Edit Multiple Subdirectory Permissions"
-permalink: kb/265/Q265360/
+permalink: /kb/265/Q265360/
 ---
 
 ## Q265360: Using the Command Line to Edit Multiple Subdirectory Permissions

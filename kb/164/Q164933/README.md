@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164933: How to Allow Poolmon.exe to Run by Setting GlobalFlag Value"
-permalink: kb/164/Q164933/
+permalink: /kb/164/Q164933/
 ---
 
 ## Q164933: How to Allow Poolmon.exe to Run by Setting GlobalFlag Value

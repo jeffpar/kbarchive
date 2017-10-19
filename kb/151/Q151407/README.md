@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151407: PRB: DAO 3.0 Must Be Used in Primary Thread"
-permalink: kb/151/Q151407/
+permalink: /kb/151/Q151407/
 ---
 
 ## Q151407: PRB: DAO 3.0 Must Be Used in Primary Thread

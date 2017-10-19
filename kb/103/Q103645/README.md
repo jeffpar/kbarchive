@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103645: HOWTO: Change the Default Windows Printer from FoxPro"
-permalink: kb/103/Q103645/
+permalink: /kb/103/Q103645/
 ---
 
 ## Q103645: HOWTO: Change the Default Windows Printer from FoxPro

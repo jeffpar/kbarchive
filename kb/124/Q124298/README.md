@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124298: Changing the Drive Letter of the System or Boot Partition"
-permalink: kb/124/Q124298/
+permalink: /kb/124/Q124298/
 ---
 
 ## Q124298: Changing the Drive Letter of the System or Boot Partition

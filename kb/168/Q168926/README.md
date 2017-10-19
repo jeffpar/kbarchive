@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168926: BUG: &quot;Error copying sample files&quot; When Copying Samples to Drive"
-permalink: kb/168/Q168926/
+permalink: /kb/168/Q168926/
 ---
 
 ## Q168926: BUG: &quot;Error copying sample files&quot; When Copying Samples to Drive

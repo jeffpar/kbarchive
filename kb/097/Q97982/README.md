@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q97982: PC WFW: 3.0 Mail for Windows Disk 3 [5.25, 1.2 MB)"
-permalink: kb/097/Q97982/
+title: "Q97982: PC WFW: 3.0 Mail for Windows Disk 3 &#91;5.25, 1.2 MB)"
+permalink: /kb/097/Q97982/
 ---
 
-## Q97982: PC WFW: 3.0 Mail for Windows Disk 3 [5.25, 1.2 MB)
+## Q97982: PC WFW: 3.0 Mail for Windows Disk 3 &#91;5.25, 1.2 MB)
 
 	Article: Q97982
 	Product(s): Microsoft Mail For PC Networks

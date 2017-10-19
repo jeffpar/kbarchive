@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57641: Olivetti Keyboard Mouse Not Detected by Setup"
-permalink: kb/057/Q57641/
+permalink: /kb/057/Q57641/
 ---
 
 ## Q57641: Olivetti Keyboard Mouse Not Detected by Setup

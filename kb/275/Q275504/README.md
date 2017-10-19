@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275504: XCON: Extra Space Is Inserted in Long Subject Lines"
-permalink: kb/275/Q275504/
+permalink: /kb/275/Q275504/
 ---
 
 ## Q275504: XCON: Extra Space Is Inserted in Long Subject Lines

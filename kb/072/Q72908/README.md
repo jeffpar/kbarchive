@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72908: Unable to Insert Spaces on a Line in Write"
-permalink: kb/072/Q72908/
+permalink: /kb/072/Q72908/
 ---
 
 ## Q72908: Unable to Insert Spaces on a Line in Write

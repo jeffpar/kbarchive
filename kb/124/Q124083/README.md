@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124083: SMS: ViewNAD and the Network Applications Database (NAD)"
-permalink: kb/124/Q124083/
+permalink: /kb/124/Q124083/
 ---
 
 ## Q124083: SMS: ViewNAD and the Network Applications Database (NAD)

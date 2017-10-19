@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100794: MSBACKUP Fails on DEC or Dell with Logically Swapped Disks"
-permalink: kb/100/Q100794/
+permalink: /kb/100/Q100794/
 ---
 
 ## Q100794: MSBACKUP Fails on DEC or Dell with Logically Swapped Disks

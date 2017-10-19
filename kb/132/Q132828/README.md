@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132828: Selecting Empty CD-ROM Drive for Backup Causes Backup to Hang"
-permalink: kb/132/Q132828/
+permalink: /kb/132/Q132828/
 ---
 
 ## Q132828: Selecting Empty CD-ROM Drive for Backup Causes Backup to Hang

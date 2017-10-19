@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171489: FIX: Use of Implements and Public Constants Crashes Compiler"
-permalink: kb/171/Q171489/
+permalink: /kb/171/Q171489/
 ---
 
 ## Q171489: FIX: Use of Implements and Public Constants Crashes Compiler

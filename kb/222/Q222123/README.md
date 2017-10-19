@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222123: HOWTO: Debug OLE DB Providers That Are Called From SQL Server 7"
-permalink: kb/222/Q222123/
+permalink: /kb/222/Q222123/
 ---
 
 ## Q222123: HOWTO: Debug OLE DB Providers That Are Called From SQL Server 7

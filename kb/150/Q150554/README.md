@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150554: Error: Thomas Conrad TC4145 Adapter Not Functioning"
-permalink: kb/150/Q150554/
+permalink: /kb/150/Q150554/
 ---
 
 ## Q150554: Error: Thomas Conrad TC4145 Adapter Not Functioning

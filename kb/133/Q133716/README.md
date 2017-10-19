@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133716: HOWTO: How to Detect Mouse Clicks on Client Area of MDI Frame Wi"
-permalink: kb/133/Q133716/
+permalink: /kb/133/Q133716/
 ---
 
 ## Q133716: HOWTO: How to Detect Mouse Clicks on Client Area of MDI Frame Wi

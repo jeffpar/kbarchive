@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157723: HOWTO: Extend the Visual FoxPro Solutions Sample"
-permalink: kb/157/Q157723/
+permalink: /kb/157/Q157723/
 ---
 
 ## Q157723: HOWTO: Extend the Visual FoxPro Solutions Sample

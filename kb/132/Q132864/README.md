@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132864: FIX: SET CENTURY OFF Turns 02/29/2000 into Invalid Date"
-permalink: kb/132/Q132864/
+permalink: /kb/132/Q132864/
 ---
 
 ## Q132864: FIX: SET CENTURY OFF Turns 02/29/2000 into Invalid Date

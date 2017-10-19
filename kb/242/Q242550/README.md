@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242550: INFO: Required System Files for WebClasses (IIS Applications)"
-permalink: kb/242/Q242550/
+permalink: /kb/242/Q242550/
 ---
 
 ## Q242550: INFO: Required System Files for WebClasses (IIS Applications)

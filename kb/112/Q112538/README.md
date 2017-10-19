@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112538: Schubert: GPF or Insufficient Memory Error with Orchid Video"
-permalink: kb/112/Q112538/
+permalink: /kb/112/Q112538/
 ---
 
 ## Q112538: Schubert: GPF or Insufficient Memory Error with Orchid Video

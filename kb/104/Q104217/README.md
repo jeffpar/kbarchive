@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104217: Dinosaurs: Different Depictions May Look Slightly Different"
-permalink: kb/104/Q104217/
+permalink: /kb/104/Q104217/
 ---
 
 ## Q104217: Dinosaurs: Different Depictions May Look Slightly Different

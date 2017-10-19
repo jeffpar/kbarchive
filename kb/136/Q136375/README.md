@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136375: NTFS directory corruption with more than 100,000 files"
-permalink: kb/136/Q136375/
+permalink: /kb/136/Q136375/
 ---
 
 ## Q136375: NTFS directory corruption with more than 100,000 files

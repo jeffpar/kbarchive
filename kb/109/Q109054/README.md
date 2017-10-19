@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109054: Games Group Installed Even If Games Are Not Selected"
-permalink: kb/109/Q109054/
+permalink: /kb/109/Q109054/
 ---
 
 ## Q109054: Games Group Installed Even If Games Are Not Selected

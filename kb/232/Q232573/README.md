@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232573: SMS: Logon Discovery in Multiple-Site Environments"
-permalink: kb/232/Q232573/
+permalink: /kb/232/Q232573/
 ---
 
 ## Q232573: SMS: Logon Discovery in Multiple-Site Environments

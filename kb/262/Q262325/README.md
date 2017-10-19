@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262325: Motocross Madness 2: Distorted Textures on Motorcycle and Rider"
-permalink: kb/262/Q262325/
+permalink: /kb/262/Q262325/
 ---
 
 ## Q262325: Motocross Madness 2: Distorted Textures on Motorcycle and Rider

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74196: EDIT.COM Will Convert Eight Spaces to a Tab in Some Cases"
-permalink: kb/074/Q74196/
+permalink: /kb/074/Q74196/
 ---
 
 ## Q74196: EDIT.COM Will Convert Eight Spaces to a Tab in Some Cases

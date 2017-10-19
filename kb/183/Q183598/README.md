@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183598: XFOR: Multiple &quot;Text/Plain&quot; Body Parts Combined by Default"
-permalink: kb/183/Q183598/
+permalink: /kb/183/Q183598/
 ---
 
 ## Q183598: XFOR: Multiple &quot;Text/Plain&quot; Body Parts Combined by Default

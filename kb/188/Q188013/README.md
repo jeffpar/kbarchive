@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188013: XFOR: Application Error With Multipart/Alternative Message"
-permalink: kb/188/Q188013/
+permalink: /kb/188/Q188013/
 ---
 
 ## Q188013: XFOR: Application Error With Multipart/Alternative Message

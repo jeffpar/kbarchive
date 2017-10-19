@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302649: Account Master User Age Settings"
-permalink: kb/302/Q302649/
+permalink: /kb/302/Q302649/
 ---
 
 ## Q302649: Account Master User Age Settings

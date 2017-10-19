@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186046: Mylex Dac960nt.sys May Not Find SCSI CD Devices Set to ID 6"
-permalink: kb/186/Q186046/
+permalink: /kb/186/Q186046/
 ---
 
 ## Q186046: Mylex Dac960nt.sys May Not Find SCSI CD Devices Set to ID 6

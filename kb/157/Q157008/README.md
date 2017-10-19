@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157008: XCON: IMC Might Use the Wrong Code Page"
-permalink: kb/157/Q157008/
+permalink: /kb/157/Q157008/
 ---
 
 ## Q157008: XCON: IMC Might Use the Wrong Code Page

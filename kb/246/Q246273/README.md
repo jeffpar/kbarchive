@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246273: XCLN: Poor Performance Starting Outlook over PPTP Connection"
-permalink: kb/246/Q246273/
+permalink: /kb/246/Q246273/
 ---
 
 ## Q246273: XCLN: Poor Performance Starting Outlook over PPTP Connection

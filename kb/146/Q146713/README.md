@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146713: XCLN: Unable to Save Sealed/Signed Message with Attachment"
-permalink: kb/146/Q146713/
+permalink: /kb/146/Q146713/
 ---
 
 ## Q146713: XCLN: Unable to Save Sealed/Signed Message with Attachment

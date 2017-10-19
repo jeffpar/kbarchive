@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108844: PC DirSync: Err Msg: Error 133 Invalid Server Request"
-permalink: kb/108/Q108844/
+permalink: /kb/108/Q108844/
 ---
 
 ## Q108844: PC DirSync: Err Msg: Error 133 Invalid Server Request

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279526: FIX: SQL Server ODBC Driver Ignores Authentication Setting"
-permalink: kb/279/Q279526/
+permalink: /kb/279/Q279526/
 ---
 
 ## Q279526: FIX: SQL Server ODBC Driver Ignores Authentication Setting

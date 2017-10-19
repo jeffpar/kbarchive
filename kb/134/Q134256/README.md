@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134256: Creation Time for Files in Backup May Differ from Originals"
-permalink: kb/134/Q134256/
+permalink: /kb/134/Q134256/
 ---
 
 ## Q134256: Creation Time for Files in Backup May Differ from Originals

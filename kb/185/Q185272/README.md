@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185272: WD97: Office Assistant Disappears or Not Available"
-permalink: kb/185/Q185272/
+permalink: /kb/185/Q185272/
 ---
 
 ## Q185272: WD97: Office Assistant Disappears or Not Available

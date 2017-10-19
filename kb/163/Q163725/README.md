@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163725: NDIS Driver Fails To Check Functional Address"
-permalink: kb/163/Q163725/
+permalink: /kb/163/Q163725/
 ---
 
 ## Q163725: NDIS Driver Fails To Check Functional Address

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q221645: FIX:_SCREEN.Forms[ ] Collection Not Available at Design-Time"
-permalink: kb/221/Q221645/
+title: "Q221645: FIX:_SCREEN.Forms&#91; &#93; Collection Not Available at Design-Time"
+permalink: /kb/221/Q221645/
 ---
 
-## Q221645: FIX:_SCREEN.Forms[ ] Collection Not Available at Design-Time
+## Q221645: FIX:_SCREEN.Forms&#91; &#93; Collection Not Available at Design-Time
 
 	Article: Q221645
 	Product(s): Microsoft FoxPro

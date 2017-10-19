@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251184: XADM: Link Monitor Doesn't Work After Priv.edb Is Renamed"
-permalink: kb/251/Q251184/
+permalink: /kb/251/Q251184/
 ---
 
 ## Q251184: XADM: Link Monitor Doesn't Work After Priv.edb Is Renamed

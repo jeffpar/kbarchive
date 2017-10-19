@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166978: WD97: Subdocuments Lost When Master Document Saved in HTML"
-permalink: kb/166/Q166978/
+permalink: /kb/166/Q166978/
 ---
 
 ## Q166978: WD97: Subdocuments Lost When Master Document Saved in HTML

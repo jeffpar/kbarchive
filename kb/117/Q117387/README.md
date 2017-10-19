@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117387: PRB: CScrollView::FillOutsideRect() Fills Incorrectly"
-permalink: kb/117/Q117387/
+permalink: /kb/117/Q117387/
 ---
 
 ## Q117387: PRB: CScrollView::FillOutsideRect() Fills Incorrectly

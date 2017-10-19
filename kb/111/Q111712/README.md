@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111712: WFWG 3.11: 3C509 MLID May Cause Lost Connections and Hangs"
-permalink: kb/111/Q111712/
+permalink: /kb/111/Q111712/
 ---
 
 ## Q111712: WFWG 3.11: 3C509 MLID May Cause Lost Connections and Hangs

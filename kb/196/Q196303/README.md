@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196303: IIS Performance Is Slower on Multiprocessor Computers"
-permalink: kb/196/Q196303/
+permalink: /kb/196/Q196303/
 ---
 
 ## Q196303: IIS Performance Is Slower on Multiprocessor Computers

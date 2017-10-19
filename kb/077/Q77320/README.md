@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77320: Err Msg: SMARTDrive Reports Incompatible Partitions"
-permalink: kb/077/Q77320/
+permalink: /kb/077/Q77320/
 ---
 
 ## Q77320: Err Msg: SMARTDrive Reports Incompatible Partitions

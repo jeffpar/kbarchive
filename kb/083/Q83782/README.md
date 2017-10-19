@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83782: Older NWPOPUP Not Functioning Correctly in Windows"
-permalink: kb/083/Q83782/
+permalink: /kb/083/Q83782/
 ---
 
 ## Q83782: Older NWPOPUP Not Functioning Correctly in Windows

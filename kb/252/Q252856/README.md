@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252856: Inbox Manager Does Not Update the Permissions on CAP Folders"
-permalink: kb/252/Q252856/
+permalink: /kb/252/Q252856/
 ---
 
 ## Q252856: Inbox Manager Does Not Update the Permissions on CAP Folders

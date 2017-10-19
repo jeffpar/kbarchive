@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149193: Clicking the Stop Button in CD Player May Hang Computer"
-permalink: kb/149/Q149193/
+permalink: /kb/149/Q149193/
 ---
 
 ## Q149193: Clicking the Stop Button in CD Player May Hang Computer

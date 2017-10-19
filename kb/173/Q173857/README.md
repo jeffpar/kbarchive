@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173857: Using Microsoft Windows 95 Drivers for Point and Print on WinNT"
-permalink: kb/173/Q173857/
+permalink: /kb/173/Q173857/
 ---
 
 ## Q173857: Using Microsoft Windows 95 Drivers for Point and Print on WinNT

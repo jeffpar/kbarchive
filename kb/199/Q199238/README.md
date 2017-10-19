@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199238: SMS: Objects Converted During SMS 1.2 Upgrade to SMS 2.0"
-permalink: kb/199/Q199238/
+permalink: /kb/199/Q199238/
 ---
 
 ## Q199238: SMS: Objects Converted During SMS 1.2 Upgrade to SMS 2.0

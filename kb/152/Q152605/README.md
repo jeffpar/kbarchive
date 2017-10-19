@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152605: RAS Error 720 When Dialing Out"
-permalink: kb/152/Q152605/
+permalink: /kb/152/Q152605/
 ---
 
 ## Q152605: RAS Error 720 When Dialing Out

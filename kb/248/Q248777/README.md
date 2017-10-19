@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248777: Streets and Trips 2000: Error When Selecting a Different Printer"
-permalink: kb/248/Q248777/
+permalink: /kb/248/Q248777/
 ---
 
 ## Q248777: Streets and Trips 2000: Error When Selecting a Different Printer

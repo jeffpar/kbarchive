@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96301: Creating a Multiple-Page Input Screen Using FoxForm"
-permalink: kb/096/Q96301/
+permalink: /kb/096/Q96301/
 ---
 
 ## Q96301: Creating a Multiple-Page Input Screen Using FoxForm

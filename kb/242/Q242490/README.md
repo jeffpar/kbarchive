@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242490: DistMgr Package Removal Does Not Work If Package Share Not Empty"
-permalink: kb/242/Q242490/
+permalink: /kb/242/Q242490/
 ---
 
 ## Q242490: DistMgr Package Removal Does Not Work If Package Share Not Empty

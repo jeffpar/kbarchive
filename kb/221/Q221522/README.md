@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221522: XCLN: Adding Address from GAL to PAB in Outlook 97 May Not Work"
-permalink: kb/221/Q221522/
+permalink: /kb/221/Q221522/
 ---
 
 ## Q221522: XCLN: Adding Address from GAL to PAB in Outlook 97 May Not Work

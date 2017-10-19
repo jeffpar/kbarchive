@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107135: Using a RAM Drive to Enhance Performance of DISKCOPY"
-permalink: kb/107/Q107135/
+permalink: /kb/107/Q107135/
 ---
 
 ## Q107135: Using a RAM Drive to Enhance Performance of DISKCOPY

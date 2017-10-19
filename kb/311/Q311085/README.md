@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311085: SMS: The Distribution Point Wizard Does Not Delete a Package"
-permalink: kb/311/Q311085/
+permalink: /kb/311/Q311085/
 ---
 
 ## Q311085: SMS: The Distribution Point Wizard Does Not Delete a Package

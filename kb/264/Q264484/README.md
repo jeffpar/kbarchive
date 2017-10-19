@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264484: Word Tables Not Indexed Correctly When Adjacent Cells Have Digit"
-permalink: kb/264/Q264484/
+permalink: /kb/264/Q264484/
 ---
 
 ## Q264484: Word Tables Not Indexed Correctly When Adjacent Cells Have Digit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129172: Wine Guide 1.0: Problems Installing S3 Video Drivers"
-permalink: kb/129/Q129172/
+permalink: /kb/129/Q129172/
 ---
 
 ## Q129172: Wine Guide 1.0: Problems Installing S3 Video Drivers

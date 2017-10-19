@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39802: INFO: Limit of Logical Coordinate System in Windows"
-permalink: kb/039/Q39802/
+permalink: /kb/039/Q39802/
 ---
 
 ## Q39802: INFO: Limit of Logical Coordinate System in Windows

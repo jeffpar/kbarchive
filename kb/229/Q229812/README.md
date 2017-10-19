@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229812: XCLN: Can't Check Attendee Availability from Resource Calendar"
-permalink: kb/229/Q229812/
+permalink: /kb/229/Q229812/
 ---
 
 ## Q229812: XCLN: Can't Check Attendee Availability from Resource Calendar

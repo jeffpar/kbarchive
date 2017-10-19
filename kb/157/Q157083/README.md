@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157083: WD97: Graphics Filters Installed During Typical Setup"
-permalink: kb/157/Q157083/
+permalink: /kb/157/Q157083/
 ---
 
 ## Q157083: WD97: Graphics Filters Installed During Typical Setup

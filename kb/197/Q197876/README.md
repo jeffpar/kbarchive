@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197876: Poor Performance with Access MDB Stored on Windows NT Server"
-permalink: kb/197/Q197876/
+permalink: /kb/197/Q197876/
 ---
 
 ## Q197876: Poor Performance with Access MDB Stored on Windows NT Server

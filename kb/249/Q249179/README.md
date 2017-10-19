@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249179: SMS: Delays in Displaying Distribution Points in SMS 2.0 Site"
-permalink: kb/249/Q249179/
+permalink: /kb/249/Q249179/
 ---
 
 ## Q249179: SMS: Delays in Displaying Distribution Points in SMS 2.0 Site

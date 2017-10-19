@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119424: FAX: FAXLOGO3.PCX Opens in ZOOM IN Mode Within PaintBrush"
-permalink: kb/119/Q119424/
+permalink: /kb/119/Q119424/
 ---
 
 ## Q119424: FAX: FAXLOGO3.PCX Opens in ZOOM IN Mode Within PaintBrush

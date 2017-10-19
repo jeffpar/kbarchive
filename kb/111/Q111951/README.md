@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111951: PRB: System Errors When Using SET LIBRARY TO in FoxPro for Mac"
-permalink: kb/111/Q111951/
+permalink: /kb/111/Q111951/
 ---
 
 ## Q111951: PRB: System Errors When Using SET LIBRARY TO in FoxPro for Mac

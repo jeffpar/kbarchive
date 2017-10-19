@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171001: XCON: Connection Difficulties When RAS Session Is In Progress"
-permalink: kb/171/Q171001/
+permalink: /kb/171/Q171001/
 ---
 
 ## Q171001: XCON: Connection Difficulties When RAS Session Is In Progress

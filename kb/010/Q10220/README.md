@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10220: Locking Discardable Objects"
-permalink: kb/010/Q10220/
+permalink: /kb/010/Q10220/
 ---
 
 ## Q10220: Locking Discardable Objects

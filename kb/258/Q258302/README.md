@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258302: XADM: Troubleshooting Refer.mdb File Issues"
-permalink: kb/258/Q258302/
+permalink: /kb/258/Q258302/
 ---
 
 ## Q258302: XADM: Troubleshooting Refer.mdb File Issues

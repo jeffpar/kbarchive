@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156090: BUG: LOCATE NEXT n or LOCATE REST Fail If Started from BOF"
-permalink: kb/156/Q156090/
+permalink: /kb/156/Q156090/
 ---
 
 ## Q156090: BUG: LOCATE NEXT n or LOCATE REST Fail If Started from BOF

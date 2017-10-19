@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104152: Multimedia Err Msg: Out-of-Date PICCLIP.VBX"
-permalink: kb/104/Q104152/
+permalink: /kb/104/Q104152/
 ---
 
 ## Q104152: Multimedia Err Msg: Out-of-Date PICCLIP.VBX

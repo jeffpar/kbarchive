@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160930: Connecting to HP JetDirect Adapters with IPX in Windows NT"
-permalink: kb/160/Q160930/
+permalink: /kb/160/Q160930/
 ---
 
 ## Q160930: Connecting to HP JetDirect Adapters with IPX in Windows NT

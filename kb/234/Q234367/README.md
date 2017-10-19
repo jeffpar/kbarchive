@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234367: XADM: Cannot Perform LDAP Search on Windows NT 4.0 SP3"
-permalink: kb/234/Q234367/
+permalink: /kb/234/Q234367/
 ---
 
 ## Q234367: XADM: Cannot Perform LDAP Search on Windows NT 4.0 SP3

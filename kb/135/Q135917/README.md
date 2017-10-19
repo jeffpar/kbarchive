@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135917: Cannot Connect to Novell Drive - Account is Locked Out"
-permalink: kb/135/Q135917/
+permalink: /kb/135/Q135917/
 ---
 
 ## Q135917: Cannot Connect to Novell Drive - Account is Locked Out

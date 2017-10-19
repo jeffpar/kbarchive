@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74820: Sperry XT Will Not Start from Hard Drive or Floppy Disk"
-permalink: kb/074/Q74820/
+permalink: /kb/074/Q74820/
 ---
 
 ## Q74820: Sperry XT Will Not Start from Hard Drive or Floppy Disk

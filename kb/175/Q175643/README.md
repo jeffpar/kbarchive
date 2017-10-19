@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175643: CR Interpreted As CR/LF When Text Job Is Converted to PCL or PS"
-permalink: kb/175/Q175643/
+permalink: /kb/175/Q175643/
 ---
 
 ## Q175643: CR Interpreted As CR/LF When Text Job Is Converted to PCL or PS

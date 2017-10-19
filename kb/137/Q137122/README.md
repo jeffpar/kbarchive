@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137122: FIX: FOPEN() Does Not Search Path Specified by SET PATH"
-permalink: kb/137/Q137122/
+permalink: /kb/137/Q137122/
 ---
 
 ## Q137122: FIX: FOPEN() Does Not Search Path Specified by SET PATH

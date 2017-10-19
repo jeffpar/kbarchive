@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125428: Writer/Artist: How to Make Backup Disks"
-permalink: kb/125/Q125428/
+permalink: /kb/125/Q125428/
 ---
 
 ## Q125428: Writer/Artist: How to Make Backup Disks

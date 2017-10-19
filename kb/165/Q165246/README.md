@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165246: Print Server Does Not Support Greek Characters"
-permalink: kb/165/Q165246/
+permalink: /kb/165/Q165246/
 ---
 
 ## Q165246: Print Server Does Not Support Greek Characters

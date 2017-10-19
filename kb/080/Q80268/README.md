@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80268: PC Gen: Contents of Modem Script File USRHST.MDM"
-permalink: kb/080/Q80268/
+permalink: /kb/080/Q80268/
 ---
 
 ## Q80268: PC Gen: Contents of Modem Script File USRHST.MDM

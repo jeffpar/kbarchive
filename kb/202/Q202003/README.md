@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202003: SMS: Future Date Causes Access Violations in Services"
-permalink: kb/202/Q202003/
+permalink: /kb/202/Q202003/
 ---
 
 ## Q202003: SMS: Future Date Causes Access Violations in Services

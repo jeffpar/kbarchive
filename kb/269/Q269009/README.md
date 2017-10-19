@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269009: Red Stop Sign Appears in MMC on UNC-Mapped Content Directory"
-permalink: kb/269/Q269009/
+permalink: /kb/269/Q269009/
 ---
 
 ## Q269009: Red Stop Sign Appears in MMC on UNC-Mapped Content Directory

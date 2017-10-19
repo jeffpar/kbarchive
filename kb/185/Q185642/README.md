@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185642: WD97: Cannot Specify Password Using RecentFiles.Open Method"
-permalink: kb/185/Q185642/
+permalink: /kb/185/Q185642/
 ---
 
 ## Q185642: WD97: Cannot Specify Password Using RecentFiles.Open Method

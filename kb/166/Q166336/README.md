@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166336: FTP Users Able to List Files Without Correct NTFS Permissions"
-permalink: kb/166/Q166336/
+permalink: /kb/166/Q166336/
 ---
 
 ## Q166336: FTP Users Able to List Files Without Correct NTFS Permissions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235047: Quick Course in Microsoft FrontPage 2000 Comments and Correction"
-permalink: kb/235/Q235047/
+permalink: /kb/235/Q235047/
 ---
 
 ## Q235047: Quick Course in Microsoft FrontPage 2000 Comments and Correction

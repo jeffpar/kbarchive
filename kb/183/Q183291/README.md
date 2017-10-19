@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183291: XFOR: Exchange Client Receives Black and White Bitmap"
-permalink: kb/183/Q183291/
+permalink: /kb/183/Q183291/
 ---
 
 ## Q183291: XFOR: Exchange Client Receives Black and White Bitmap

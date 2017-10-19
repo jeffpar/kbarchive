@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141877: What Is Visual FoxPro 3.0a?"
-permalink: kb/141/Q141877/
+permalink: /kb/141/Q141877/
 ---
 
 ## Q141877: What Is Visual FoxPro 3.0a?

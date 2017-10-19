@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83302: HOWTO: Use the WM_GETDLGCODE Message"
-permalink: kb/083/Q83302/
+permalink: /kb/083/Q83302/
 ---
 
 ## Q83302: HOWTO: Use the WM_GETDLGCODE Message

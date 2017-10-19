@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234840: MOD2000: &quot;Get Object from SourceSafe&quot; Command Gets New Object"
-permalink: kb/234/Q234840/
+permalink: /kb/234/Q234840/
 ---
 
 ## Q234840: MOD2000: &quot;Get Object from SourceSafe&quot; Command Gets New Object

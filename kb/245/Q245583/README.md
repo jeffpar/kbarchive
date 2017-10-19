@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245583: General Protection Fault When Browsing for Device Drivers"
-permalink: kb/245/Q245583/
+permalink: /kb/245/Q245583/
 ---
 
 ## Q245583: General Protection Fault When Browsing for Device Drivers

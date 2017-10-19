@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156187: Cannot Locate Readme.doc on MSDN Compact Disc"
-permalink: kb/156/Q156187/
+permalink: /kb/156/Q156187/
 ---
 
 ## Q156187: Cannot Locate Readme.doc on MSDN Compact Disc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209483: WD97: Printing Slow When Printing Text Boxes Under Windows NT 4"
-permalink: kb/209/Q209483/
+permalink: /kb/209/Q209483/
 ---
 
 ## Q209483: WD97: Printing Slow When Printing Text Boxes Under Windows NT 4

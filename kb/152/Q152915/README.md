@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152915: XFOR: Messages Inbound from IMC Include Body as Attachment"
-permalink: kb/152/Q152915/
+permalink: /kb/152/Q152915/
 ---
 
 ## Q152915: XFOR: Messages Inbound from IMC Include Body as Attachment

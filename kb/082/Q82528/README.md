@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82528: Some Printers Don't Get Correct Resolution in Excel 4"
-permalink: kb/082/Q82528/
+permalink: /kb/082/Q82528/
 ---
 
 ## Q82528: Some Printers Don't Get Correct Resolution in Excel 4

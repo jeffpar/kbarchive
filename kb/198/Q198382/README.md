@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198382: WD97: Word Does Not &quot;Fast Save&quot; Document"
-permalink: kb/198/Q198382/
+permalink: /kb/198/Q198382/
 ---
 
 ## Q198382: WD97: Word Does Not &quot;Fast Save&quot; Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165463: WINS Admin Shows Huge Version ID for WINS Records"
-permalink: kb/165/Q165463/
+permalink: /kb/165/Q165463/
 ---
 
 ## Q165463: WINS Admin Shows Huge Version ID for WINS Records

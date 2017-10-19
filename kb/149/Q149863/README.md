@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149863: PRB: Long Filenames Lost when Project is Loaded by Association"
-permalink: kb/149/Q149863/
+permalink: /kb/149/Q149863/
 ---
 
 ## Q149863: PRB: Long Filenames Lost when Project is Loaded by Association

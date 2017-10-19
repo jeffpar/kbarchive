@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166089: Event ID 7020: Circular Dependency Afd Service Depends on..."
-permalink: kb/166/Q166089/
+permalink: /kb/166/Q166089/
 ---
 
 ## Q166089: Event ID 7020: Circular Dependency Afd Service Depends on...

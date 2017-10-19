@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141806: FIX: Errors Previewing Customer Listing Report in Tastraders"
-permalink: kb/141/Q141806/
+permalink: /kb/141/Q141806/
 ---
 
 ## Q141806: FIX: Errors Previewing Customer Listing Report in Tastraders

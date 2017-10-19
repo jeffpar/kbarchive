@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138227: Network Monitor Agent Does Not Deallocate Memory in Winlogon"
-permalink: kb/138/Q138227/
+permalink: /kb/138/Q138227/
 ---
 
 ## Q138227: Network Monitor Agent Does Not Deallocate Memory in Winlogon

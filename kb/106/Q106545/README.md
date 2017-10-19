@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106545: Windows NT Resource Kit Services for Macintosh Utilities"
-permalink: kb/106/Q106545/
+permalink: /kb/106/Q106545/
 ---
 
 ## Q106545: Windows NT Resource Kit Services for Macintosh Utilities

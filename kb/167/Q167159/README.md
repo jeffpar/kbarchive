@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167159: WD97: IPF Creating New Blank Web Page Template"
-permalink: kb/167/Q167159/
+permalink: /kb/167/Q167159/
 ---
 
 ## Q167159: WD97: IPF Creating New Blank Web Page Template

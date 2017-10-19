@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97815: Lexmark 4033 LAN Connection for Printers Needs IBM DLC"
-permalink: kb/097/Q97815/
+permalink: /kb/097/Q97815/
 ---
 
 ## Q97815: Lexmark 4033 LAN Connection for Printers Needs IBM DLC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173464: Expedia Trip Planner 98: Testing CD-ROM Drive for File Access"
-permalink: kb/173/Q173464/
+permalink: /kb/173/Q173464/
 ---
 
 ## Q173464: Expedia Trip Planner 98: Testing CD-ROM Drive for File Access

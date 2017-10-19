@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150848: Err Msg: &quot;There Are No Entries in the List&quot;"
-permalink: kb/150/Q150848/
+permalink: /kb/150/Q150848/
 ---
 
 ## Q150848: Err Msg: &quot;There Are No Entries in the List&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157032: Services for Macintosh May Cause STOP 0x0A During High Load"
-permalink: kb/157/Q157032/
+permalink: /kb/157/Q157032/
 ---
 
 ## Q157032: Services for Macintosh May Cause STOP 0x0A During High Load

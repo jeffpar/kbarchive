@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139618: Err Msg: &quot;Cannot Access Printer&quot; and &quot;Cannot Print&quot;"
-permalink: kb/139/Q139618/
+permalink: /kb/139/Q139618/
 ---
 
 ## Q139618: Err Msg: &quot;Cannot Access Printer&quot; and &quot;Cannot Print&quot;

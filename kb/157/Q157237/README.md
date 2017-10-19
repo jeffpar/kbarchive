@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157237: Changes to Message Format Not Reflected in Sent Fax"
-permalink: kb/157/Q157237/
+permalink: /kb/157/Q157237/
 ---
 
 ## Q157237: Changes to Message Format Not Reflected in Sent Fax

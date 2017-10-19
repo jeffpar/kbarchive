@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q83387: Windows 3.1 SYSTEM.INI [standard] Section"
-permalink: kb/083/Q83387/
+title: "Q83387: Windows 3.1 SYSTEM.INI &#91;standard&#93; Section"
+permalink: /kb/083/Q83387/
 ---
 
-## Q83387: Windows 3.1 SYSTEM.INI [standard] Section
+## Q83387: Windows 3.1 SYSTEM.INI &#91;standard&#93; Section
 
 	Article: Q83387
 	Product(s): Microsoft Windows 95.x Retail Product

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194031: XCON: MTA Queues Backup After MTA Logs 1133 State Check Warning"
-permalink: kb/194/Q194031/
+permalink: /kb/194/Q194031/
 ---
 
 ## Q194031: XCON: MTA Queues Backup After MTA Logs 1133 State Check Warning

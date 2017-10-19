@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117887: PRB: L1035 Linking MOVE Application Using a Fastcall Function"
-permalink: kb/117/Q117887/
+permalink: /kb/117/Q117887/
 ---
 
 ## Q117887: PRB: L1035 Linking MOVE Application Using a Fastcall Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163130: ODE97: Apply Button Dimmed When Converting Database to Design Ma"
-permalink: kb/163/Q163130/
+permalink: /kb/163/Q163130/
 ---
 
 ## Q163130: ODE97: Apply Button Dimmed When Converting Database to Design Ma

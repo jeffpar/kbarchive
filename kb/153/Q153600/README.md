@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153600: Missing Extended Memory After Restarting from MS-DOS Mode"
-permalink: kb/153/Q153600/
+permalink: /kb/153/Q153600/
 ---
 
 ## Q153600: Missing Extended Memory After Restarting from MS-DOS Mode

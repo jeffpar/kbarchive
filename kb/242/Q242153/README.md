@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242153: Canceling SP4 Uninstallation Leaves Terminal Server in Install M"
-permalink: kb/242/Q242153/
+permalink: /kb/242/Q242153/
 ---
 
 ## Q242153: Canceling SP4 Uninstallation Leaves Terminal Server in Install M

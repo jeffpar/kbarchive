@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190049: BUG: Compile Error When Using Document.Write in DHTML App"
-permalink: kb/190/Q190049/
+permalink: /kb/190/Q190049/
 ---
 
 ## Q190049: BUG: Compile Error When Using Document.Write in DHTML App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217180: HOWTO: Delete and Re-Register TypeLib GUID for ActiveX Control"
-permalink: kb/217/Q217180/
+permalink: /kb/217/Q217180/
 ---
 
 ## Q217180: HOWTO: Delete and Re-Register TypeLib GUID for ActiveX Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143061: Accessing Local MS Exchange Mail from a Remote Computer"
-permalink: kb/143/Q143061/
+permalink: /kb/143/Q143061/
 ---
 
 ## Q143061: Accessing Local MS Exchange Mail from a Remote Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179895: XWEB: Err Msg. &quot;Object Moved&quot; When Accessing Active Server"
-permalink: kb/179/Q179895/
+permalink: /kb/179/Q179895/
 ---
 
 ## Q179895: XWEB: Err Msg. &quot;Object Moved&quot; When Accessing Active Server

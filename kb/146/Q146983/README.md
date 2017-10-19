@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146983: XCLN: Apply/Cancel Options in Control Panel Mail and Fax"
-permalink: kb/146/Q146983/
+permalink: /kb/146/Q146983/
 ---
 
 ## Q146983: XCLN: Apply/Cancel Options in Control Panel Mail and Fax

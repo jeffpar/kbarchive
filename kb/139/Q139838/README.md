@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139838: STOP A in AFD.SYS When Polling Sockets"
-permalink: kb/139/Q139838/
+permalink: /kb/139/Q139838/
 ---
 
 ## Q139838: STOP A in AFD.SYS When Polling Sockets

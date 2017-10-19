@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198541: Using DHCPCMD to Modify a Reservation Converts It to a Lease"
-permalink: kb/198/Q198541/
+permalink: /kb/198/Q198541/
 ---
 
 ## Q198541: Using DHCPCMD to Modify a Reservation Converts It to a Lease

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128143: Bad .RAW File Hangs Inventory Processor"
-permalink: kb/128/Q128143/
+permalink: /kb/128/Q128143/
 ---
 
 ## Q128143: Bad .RAW File Hangs Inventory Processor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130127: How to Change the Background Color of a Tab"
-permalink: kb/130/Q130127/
+permalink: /kb/130/Q130127/
 ---
 
 ## Q130127: How to Change the Background Color of a Tab

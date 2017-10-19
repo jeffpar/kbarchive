@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152003: Server Stops Responding upon Startup"
-permalink: kb/152/Q152003/
+permalink: /kb/152/Q152003/
 ---
 
 ## Q152003: Server Stops Responding upon Startup

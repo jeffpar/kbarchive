@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158917: Err Msg: MAPI Spooler Has Shut Down Unexpectedly"
-permalink: kb/158/Q158917/
+permalink: /kb/158/Q158917/
 ---
 
 ## Q158917: Err Msg: MAPI Spooler Has Shut Down Unexpectedly

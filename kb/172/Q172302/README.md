@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172302: Domain Synchronization Fails With 5730 or 5731 and 5716"
-permalink: kb/172/Q172302/
+permalink: /kb/172/Q172302/
 ---
 
 ## Q172302: Domain Synchronization Fails With 5730 or 5731 and 5716

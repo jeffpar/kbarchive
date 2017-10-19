@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140578: FIX: Resizing Field in Grid Builder Causes Error"
-permalink: kb/140/Q140578/
+permalink: /kb/140/Q140578/
 ---
 
 ## Q140578: FIX: Resizing Field in Grid Builder Causes Error

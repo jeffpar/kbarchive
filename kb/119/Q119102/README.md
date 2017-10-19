@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119102: Dangerous Creatures: Manual Installation Instructions"
-permalink: kb/119/Q119102/
+permalink: /kb/119/Q119102/
 ---
 
 ## Q119102: Dangerous Creatures: Manual Installation Instructions

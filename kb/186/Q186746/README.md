@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186746: International Calling Codes Updated in Service Pack 4"
-permalink: kb/186/Q186746/
+permalink: /kb/186/Q186746/
 ---
 
 ## Q186746: International Calling Codes Updated in Service Pack 4

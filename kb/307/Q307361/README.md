@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307361: AS/400 Data Queues: ALLOCATE Verb Fails With AP_BAD_SECURITY"
-permalink: kb/307/Q307361/
+permalink: /kb/307/Q307361/
 ---
 
 ## Q307361: AS/400 Data Queues: ALLOCATE Verb Fails With AP_BAD_SECURITY

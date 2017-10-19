@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228943: FIX: Degree of Derived Table Err Using Table Name in Select List"
-permalink: kb/228/Q228943/
+permalink: /kb/228/Q228943/
 ---
 
 ## Q228943: FIX: Degree of Derived Table Err Using Table Name in Select List

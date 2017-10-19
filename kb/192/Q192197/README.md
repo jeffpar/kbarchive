@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192197: FIX: Beautify May Not Uppercase Extended ASCII Characters"
-permalink: kb/192/Q192197/
+permalink: /kb/192/Q192197/
 ---
 
 ## Q192197: FIX: Beautify May Not Uppercase Extended ASCII Characters

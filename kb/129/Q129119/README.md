@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129119: Unable to Set Typematic Rate on AT&amp;T Globalyst"
-permalink: kb/129/Q129119/
+permalink: /kb/129/Q129119/
 ---
 
 ## Q129119: Unable to Set Typematic Rate on AT&amp;T Globalyst

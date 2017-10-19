@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199497: XFOR: Microsoft Mail Connector Connecting to Untrusted Domain"
-permalink: kb/199/Q199497/
+permalink: /kb/199/Q199497/
 ---
 
 ## Q199497: XFOR: Microsoft Mail Connector Connecting to Untrusted Domain

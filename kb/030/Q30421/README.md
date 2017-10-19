@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30421: FIX: Extra Line-Feed Char Generated in Four-Digit Listing File"
-permalink: kb/030/Q30421/
+permalink: /kb/030/Q30421/
 ---
 
 ## Q30421: FIX: Extra Line-Feed Char Generated in Four-Digit Listing File

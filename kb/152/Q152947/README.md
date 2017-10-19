@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152947: XCON: Err Msg: Suspected Deadlock"
-permalink: kb/152/Q152947/
+permalink: /kb/152/Q152947/
 ---
 
 ## Q152947: XCON: Err Msg: Suspected Deadlock

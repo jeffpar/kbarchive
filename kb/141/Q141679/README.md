@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141679: Writer: Can't Copy Files From Library Wall to Portfolio Rack"
-permalink: kb/141/Q141679/
+permalink: /kb/141/Q141679/
 ---
 
 ## Q141679: Writer: Can't Copy Files From Library Wall to Portfolio Rack

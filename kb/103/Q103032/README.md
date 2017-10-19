@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103032: PRB: &quot;RUN/! Command Failed&quot; with Windows NT"
-permalink: kb/103/Q103032/
+permalink: /kb/103/Q103032/
 ---
 
 ## Q103032: PRB: &quot;RUN/! Command Failed&quot; with Windows NT

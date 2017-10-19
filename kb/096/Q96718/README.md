@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96718: PC Win: Description and Use of Inbox Shadowing"
-permalink: kb/096/Q96718/
+permalink: /kb/096/Q96718/
 ---
 
 ## Q96718: PC Win: Description and Use of Inbox Shadowing

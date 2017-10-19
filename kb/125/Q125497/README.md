@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125497: PRB: Win32s Version of MSVCRT20.DLL and the iostream Classes"
-permalink: kb/125/Q125497/
+permalink: /kb/125/Q125497/
 ---
 
 ## Q125497: PRB: Win32s Version of MSVCRT20.DLL and the iostream Classes

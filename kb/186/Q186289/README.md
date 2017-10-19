@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186289: XCON: Least-cost Routing Doesn't Consider Open-retry State"
-permalink: kb/186/Q186289/
+permalink: /kb/186/Q186289/
 ---
 
 ## Q186289: XCON: Least-cost Routing Doesn't Consider Open-retry State

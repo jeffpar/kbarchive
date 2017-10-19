@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151227: IBM CA/400 ODBC Driver Result in Communication Link Failure"
-permalink: kb/151/Q151227/
+permalink: /kb/151/Q151227/
 ---
 
 ## Q151227: IBM CA/400 ODBC Driver Result in Communication Link Failure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181215: Unable to Pass Query String Which Contains &quot;=&quot; to CGI Program"
-permalink: kb/181/Q181215/
+permalink: /kb/181/Q181215/
 ---
 
 ## Q181215: Unable to Pass Query String Which Contains &quot;=&quot; to CGI Program

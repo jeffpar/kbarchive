@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318985: FIX: Error With Left Parenthesis in CREATE SQL VIEW Command"
-permalink: kb/318/Q318985/
+permalink: /kb/318/Q318985/
 ---
 
 ## Q318985: FIX: Error With Left Parenthesis in CREATE SQL VIEW Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261273: Allegiance: Logitech Cyberman 2 Does Not Function Correctly"
-permalink: kb/261/Q261273/
+permalink: /kb/261/Q261273/
 ---
 
 ## Q261273: Allegiance: Logitech Cyberman 2 Does Not Function Correctly

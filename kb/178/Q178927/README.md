@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178927: XADM: How to Rehome Public Folders in Exchange"
-permalink: kb/178/Q178927/
+permalink: /kb/178/Q178927/
 ---
 
 ## Q178927: XADM: How to Rehome Public Folders in Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150540: FPNW on Domain Must be Installed on PDC"
-permalink: kb/150/Q150540/
+permalink: /kb/150/Q150540/
 ---
 
 ## Q150540: FPNW on Domain Must be Installed on PDC

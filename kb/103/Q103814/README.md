@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103814: PC Win: MAPIHELP=path Not Updated When Mail Is Installed"
-permalink: kb/103/Q103814/
+permalink: /kb/103/Q103814/
 ---
 
 ## Q103814: PC Win: MAPIHELP=path Not Updated When Mail Is Installed

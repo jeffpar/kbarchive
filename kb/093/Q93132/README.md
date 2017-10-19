@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93132: PC WSPlus: Err Msg: Can't Find SCHDMSG.DLL"
-permalink: kb/093/Q93132/
+permalink: /kb/093/Q93132/
 ---
 
 ## Q93132: PC WSPlus: Err Msg: Can't Find SCHDMSG.DLL

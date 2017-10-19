@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215126: SMS: &quot;Status Message Queries&quot; Displays Values Instead of Names"
-permalink: kb/215/Q215126/
+permalink: /kb/215/Q215126/
 ---
 
 ## Q215126: SMS: &quot;Status Message Queries&quot; Displays Values Instead of Names

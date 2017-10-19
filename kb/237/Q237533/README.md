@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237533: Reference Suite 2000 Err Msg: Insufficient Hard Disk Space"
-permalink: kb/237/Q237533/
+permalink: /kb/237/Q237533/
 ---
 
 ## Q237533: Reference Suite 2000 Err Msg: Insufficient Hard Disk Space

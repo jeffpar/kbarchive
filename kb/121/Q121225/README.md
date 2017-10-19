@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121225: Different Driver Names Reported with MEM/C and MEM/D"
-permalink: kb/121/Q121225/
+permalink: /kb/121/Q121225/
 ---
 
 ## Q121225: Different Driver Names Reported with MEM/C and MEM/D

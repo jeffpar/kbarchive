@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124747: SFM Err Msg: The Item...Is Missing and Was Probably Deleted..."
-permalink: kb/124/Q124747/
+permalink: /kb/124/Q124747/
 ---
 
 ## Q124747: SFM Err Msg: The Item...Is Missing and Was Probably Deleted...

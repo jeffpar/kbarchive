@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89783: Windows Err Msg: Insufficient File Handles..."
-permalink: kb/089/Q89783/
+permalink: /kb/089/Q89783/
 ---
 
 ## Q89783: Windows Err Msg: Insufficient File Handles...

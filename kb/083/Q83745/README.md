@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83745: WIN.COM Is Required to Upgrade Windows 3.0 to 3.1"
-permalink: kb/083/Q83745/
+permalink: /kb/083/Q83745/
 ---
 
 ## Q83745: WIN.COM Is Required to Upgrade Windows 3.0 to 3.1

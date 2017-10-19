@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96331: Stacker Err Msg: WARNING: Unrecognized Load High..."
-permalink: kb/096/Q96331/
+permalink: /kb/096/Q96331/
 ---
 
 ## Q96331: Stacker Err Msg: WARNING: Unrecognized Load High...

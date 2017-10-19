@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99535: Use Uppercase Field Data Type Entries for Windows"
-permalink: kb/099/Q99535/
+permalink: /kb/099/Q99535/
 ---
 
 ## Q99535: Use Uppercase Field Data Type Entries for Windows

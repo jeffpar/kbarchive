@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156006: FIX: Columns Properties Shows Numeric Codes Under &quot;Data Type&quot;"
-permalink: kb/156/Q156006/
+permalink: /kb/156/Q156006/
 ---
 
 ## Q156006: FIX: Columns Properties Shows Numeric Codes Under &quot;Data Type&quot;

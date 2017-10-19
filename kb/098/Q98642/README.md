@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98642: Multimedia Err Msg: The Specified Device Is Not Open ..."
-permalink: kb/098/Q98642/
+permalink: /kb/098/Q98642/
 ---
 
 ## Q98642: Multimedia Err Msg: The Specified Device Is Not Open ...

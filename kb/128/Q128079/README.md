@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128079: Updated Drivers for File and Printer Sharing Security"
-permalink: kb/128/Q128079/
+permalink: /kb/128/Q128079/
 ---
 
 ## Q128079: Updated Drivers for File and Printer Sharing Security

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184072: HasOverlappedIoCompleted, GetOverlappedResult Give Wrong Value"
-permalink: kb/184/Q184072/
+permalink: /kb/184/Q184072/
 ---
 
 ## Q184072: HasOverlappedIoCompleted, GetOverlappedResult Give Wrong Value

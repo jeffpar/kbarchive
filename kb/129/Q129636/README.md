@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129636: PRB: &quot;Ambiguous name detected&quot; Compile-Time Error in VB 4.0"
-permalink: kb/129/Q129636/
+permalink: /kb/129/Q129636/
 ---
 
 ## Q129636: PRB: &quot;Ambiguous name detected&quot; Compile-Time Error in VB 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177414: Using Incorrect DNS Forwarders Cause High Processor Usage"
-permalink: kb/177/Q177414/
+permalink: /kb/177/Q177414/
 ---
 
 ## Q177414: Using Incorrect DNS Forwarders Cause High Processor Usage

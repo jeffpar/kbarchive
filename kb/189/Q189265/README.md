@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189265: INFO: Microsoft Graph Constants"
-permalink: kb/189/Q189265/
+permalink: /kb/189/Q189265/
 ---
 
 ## Q189265: INFO: Microsoft Graph Constants

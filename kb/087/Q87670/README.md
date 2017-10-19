@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87670: FoxBASE+ Error Messages: I - M"
-permalink: kb/087/Q87670/
+permalink: /kb/087/Q87670/
 ---
 
 ## Q87670: FoxBASE+ Error Messages: I - M

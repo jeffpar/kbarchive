@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172428: SNA Server 3.0 Snadmod.dll Returns SEC_LOGON_FAILED_BADLY"
-permalink: kb/172/Q172428/
+permalink: /kb/172/Q172428/
 ---
 
 ## Q172428: SNA Server 3.0 Snadmod.dll Returns SEC_LOGON_FAILED_BADLY

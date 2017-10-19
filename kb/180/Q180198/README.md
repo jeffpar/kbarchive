@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180198: BUG: RDO Doesn't Work with Schema and Oracle Stored Procedures"
-permalink: kb/180/Q180198/
+permalink: /kb/180/Q180198/
 ---
 
 ## Q180198: BUG: RDO Doesn't Work with Schema and Oracle Stored Procedures

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164563: SMS: BIOS Manufacturer Field Is Limited to 25 Characters"
-permalink: kb/164/Q164563/
+permalink: /kb/164/Q164563/
 ---
 
 ## Q164563: SMS: BIOS Manufacturer Field Is Limited to 25 Characters

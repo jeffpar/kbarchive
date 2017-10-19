@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178550: IP Address Conflict with Address 0.0.0.0"
-permalink: kb/178/Q178550/
+permalink: /kb/178/Q178550/
 ---
 
 ## Q178550: IP Address Conflict with Address 0.0.0.0

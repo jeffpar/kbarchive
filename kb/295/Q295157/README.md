@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295157: Preinst.exe and Delgrp.exe Utilities May Return Errors on SQL 2K"
-permalink: kb/295/Q295157/
+permalink: /kb/295/Q295157/
 ---
 
 ## Q295157: Preinst.exe and Delgrp.exe Utilities May Return Errors on SQL 2K

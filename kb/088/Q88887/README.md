@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88887: Using the ON ESCAPE Command in FoxBASE+"
-permalink: kb/088/Q88887/
+permalink: /kb/088/Q88887/
 ---
 
 ## Q88887: Using the ON ESCAPE Command in FoxBASE+

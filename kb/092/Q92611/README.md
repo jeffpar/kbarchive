@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92611: PRB: MASM Generates Unexpected Prefix Bytes 66h, 67h"
-permalink: kb/092/Q92611/
+permalink: /kb/092/Q92611/
 ---
 
 ## Q92611: PRB: MASM Generates Unexpected Prefix Bytes 66h, 67h

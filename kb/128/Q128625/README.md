@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128625: Information About The Microsoft Network Icon"
-permalink: kb/128/Q128625/
+permalink: /kb/128/Q128625/
 ---
 
 ## Q128625: Information About The Microsoft Network Icon

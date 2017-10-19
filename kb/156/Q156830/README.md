@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156830: Soccer: The F.Y.R.O. Macedonia Flag Is Incorrect"
-permalink: kb/156/Q156830/
+permalink: /kb/156/Q156830/
 ---
 
 ## Q156830: Soccer: The F.Y.R.O. Macedonia Flag Is Incorrect

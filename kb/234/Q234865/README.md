@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234865: MOD2000: Setting Up VBE/VSS for Multiuser Development"
-permalink: kb/234/Q234865/
+permalink: /kb/234/Q234865/
 ---
 
 ## Q234865: MOD2000: Setting Up VBE/VSS for Multiuser Development

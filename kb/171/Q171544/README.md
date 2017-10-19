@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171544: FIX: Engine: Collection Object Doesn't Access Correctly by Name"
-permalink: kb/171/Q171544/
+permalink: /kb/171/Q171544/
 ---
 
 ## Q171544: FIX: Engine: Collection Object Doesn't Access Correctly by Name

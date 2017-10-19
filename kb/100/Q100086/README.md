@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100086: Using the LINK32 -LINK Command"
-permalink: kb/100/Q100086/
+permalink: /kb/100/Q100086/
 ---
 
 ## Q100086: Using the LINK32 -LINK Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97671: ECR Cannot Be Decreased Beyond a Certain Range"
-permalink: kb/097/Q97671/
+permalink: /kb/097/Q97671/
 ---
 
 ## Q97671: ECR Cannot Be Decreased Beyond a Certain Range

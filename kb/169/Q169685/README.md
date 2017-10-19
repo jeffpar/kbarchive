@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169685: XFOR: When Remote Clients Support MAPI, BP9 not Sent"
-permalink: kb/169/Q169685/
+permalink: /kb/169/Q169685/
 ---
 
 ## Q169685: XFOR: When Remote Clients Support MAPI, BP9 not Sent

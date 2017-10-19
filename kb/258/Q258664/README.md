@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258664: Baseball 2001: Tips for Improving Game Performance"
-permalink: kb/258/Q258664/
+permalink: /kb/258/Q258664/
 ---
 
 ## Q258664: Baseball 2001: Tips for Improving Game Performance

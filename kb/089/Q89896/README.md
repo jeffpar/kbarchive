@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89896: How to Add Vocabulary Items to ProofReader Dictionary"
-permalink: kb/089/Q89896/
+permalink: /kb/089/Q89896/
 ---
 
 ## Q89896: How to Add Vocabulary Items to ProofReader Dictionary

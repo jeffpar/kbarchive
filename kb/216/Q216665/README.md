@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216665: User Manager for Domains Loses Terminal Server Extension Informa"
-permalink: kb/216/Q216665/
+permalink: /kb/216/Q216665/
 ---
 
 ## Q216665: User Manager for Domains Loses Terminal Server Extension Informa

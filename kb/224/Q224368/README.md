@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224368: HTMLA Web Site Friendly Names Are Truncated"
-permalink: kb/224/Q224368/
+permalink: /kb/224/Q224368/
 ---
 
 ## Q224368: HTMLA Web Site Friendly Names Are Truncated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263160: Allegiance Err Msg: Error Occurred While Setting the LobbyServer"
-permalink: kb/263/Q263160/
+permalink: /kb/263/Q263160/
 ---
 
 ## Q263160: Allegiance Err Msg: Error Occurred While Setting the LobbyServer

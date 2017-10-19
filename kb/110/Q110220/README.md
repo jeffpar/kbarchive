@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110220: Cannot Add RAS Users When RASADMIN Fails with Large UAS"
-permalink: kb/110/Q110220/
+permalink: /kb/110/Q110220/
 ---
 
 ## Q110220: Cannot Add RAS Users When RASADMIN Fails with Large UAS

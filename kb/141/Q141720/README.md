@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141720: Information Regarding Anti-Virus Scanners for Windows 95"
-permalink: kb/141/Q141720/
+permalink: /kb/141/Q141720/
 ---
 
 ## Q141720: Information Regarding Anti-Virus Scanners for Windows 95

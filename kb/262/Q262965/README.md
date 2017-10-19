@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262965: How UNIX Permissions Are Approximated by Server for NFS"
-permalink: kb/262/Q262965/
+permalink: /kb/262/Q262965/
 ---
 
 ## Q262965: How UNIX Permissions Are Approximated by Server for NFS

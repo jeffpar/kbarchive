@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223443: Streets and Trips 2000: Testing CD-ROM Drive for File Access"
-permalink: kb/223/Q223443/
+permalink: /kb/223/Q223443/
 ---
 
 ## Q223443: Streets and Trips 2000: Testing CD-ROM Drive for File Access

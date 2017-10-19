@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137995: Windows 95 Refresh.txt File in Drivers&#92;Display&#92;Trident Folder"
-permalink: kb/137/Q137995/
+permalink: /kb/137/Q137995/
 ---
 
 ## Q137995: Windows 95 Refresh.txt File in Drivers&#92;Display&#92;Trident Folder

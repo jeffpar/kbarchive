@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150056: PRB: Version Conflict Adding Components or Reinstalling Windows"
-permalink: kb/150/Q150056/
+permalink: /kb/150/Q150056/
 ---
 
 ## Q150056: PRB: Version Conflict Adding Components or Reinstalling Windows

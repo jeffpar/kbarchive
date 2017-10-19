@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151492: Apple LaserWriter Pro 810 and TCP/IP Require Updated ROM"
-permalink: kb/151/Q151492/
+permalink: /kb/151/Q151492/
 ---
 
 ## Q151492: Apple LaserWriter Pro 810 and TCP/IP Require Updated ROM

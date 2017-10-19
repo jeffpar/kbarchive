@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121006: Limitations of DHCP Option Overlays"
-permalink: kb/121/Q121006/
+permalink: /kb/121/Q121006/
 ---
 
 ## Q121006: Limitations of DHCP Option Overlays

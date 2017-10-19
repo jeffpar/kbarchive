@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130893: &quot;Not Recognized&quot; Error Using PKZIP.EXE with Ampersand (&amp;) Switch"
-permalink: kb/130/Q130893/
+permalink: /kb/130/Q130893/
 ---
 
 ## Q130893: &quot;Not Recognized&quot; Error Using PKZIP.EXE with Ampersand (&amp;) Switch

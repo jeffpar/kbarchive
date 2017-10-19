@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262041: XADM: Data Missing from Database After an Online Restore"
-permalink: kb/262/Q262041/
+permalink: /kb/262/Q262041/
 ---
 
 ## Q262041: XADM: Data Missing from Database After an Online Restore

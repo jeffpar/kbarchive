@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90255: Control Panel: Network Does Not Check Hardware"
-permalink: kb/090/Q90255/
+permalink: /kb/090/Q90255/
 ---
 
 ## Q90255: Control Panel: Network Does Not Check Hardware

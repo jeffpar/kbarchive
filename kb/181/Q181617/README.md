@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181617: WD97: How to Create Multiple Tables of Contents in Same Document"
-permalink: kb/181/Q181617/
+permalink: /kb/181/Q181617/
 ---
 
 ## Q181617: WD97: How to Create Multiple Tables of Contents in Same Document

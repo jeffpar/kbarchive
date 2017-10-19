@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10641: Heap and Stack Usage Within Windows"
-permalink: kb/010/Q10641/
+permalink: /kb/010/Q10641/
 ---
 
 ## Q10641: Heap and Stack Usage Within Windows

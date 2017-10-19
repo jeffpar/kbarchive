@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66640: SAMPLE: Increasing the File Handle Limit with SetHandleCount"
-permalink: kb/066/Q66640/
+permalink: /kb/066/Q66640/
 ---
 
 ## Q66640: SAMPLE: Increasing the File Handle Limit with SetHandleCount

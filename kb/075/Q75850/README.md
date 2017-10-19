@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75850: Using SHIFT+PRINT SCREEN with Setup Video Problems"
-permalink: kb/075/Q75850/
+permalink: /kb/075/Q75850/
 ---
 
 ## Q75850: Using SHIFT+PRINT SCREEN with Setup Video Problems

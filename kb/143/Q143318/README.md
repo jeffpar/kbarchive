@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143318: Unconf: Haunted House and RAM Doubler Issues"
-permalink: kb/143/Q143318/
+permalink: /kb/143/Q143318/
 ---
 
 ## Q143318: Unconf: Haunted House and RAM Doubler Issues

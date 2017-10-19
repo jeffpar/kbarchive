@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91017: Problems Upgrading Drivers When Installing WFWG on LAN Manager"
-permalink: kb/091/Q91017/
+permalink: /kb/091/Q91017/
 ---
 
 ## Q91017: Problems Upgrading Drivers When Installing WFWG on LAN Manager

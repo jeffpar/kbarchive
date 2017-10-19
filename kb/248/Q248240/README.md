@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248240: BUG: Using SourceSafe in Multiple Time Zones"
-permalink: kb/248/Q248240/
+permalink: /kb/248/Q248240/
 ---
 
 ## Q248240: BUG: Using SourceSafe in Multiple Time Zones

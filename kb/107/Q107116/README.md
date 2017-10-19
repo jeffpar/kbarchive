@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107116: 5250 Applet Keyboard Functions"
-permalink: kb/107/Q107116/
+permalink: /kb/107/Q107116/
 ---
 
 ## Q107116: 5250 Applet Keyboard Functions

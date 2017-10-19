@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318326: INFO: Index Server: Docs That Are Supported by Office Filter"
-permalink: kb/318/Q318326/
+permalink: /kb/318/Q318326/
 ---
 
 ## Q318326: INFO: Index Server: Docs That Are Supported by Office Filter

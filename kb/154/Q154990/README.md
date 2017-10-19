@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154990: SETPASS May Change Password of Wrong User"
-permalink: kb/154/Q154990/
+permalink: /kb/154/Q154990/
 ---
 
 ## Q154990: SETPASS May Change Password of Wrong User

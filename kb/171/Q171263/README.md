@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171263: WD97: Using Html.dot as WordMail Template May Cause Problems"
-permalink: kb/171/Q171263/
+permalink: /kb/171/Q171263/
 ---
 
 ## Q171263: WD97: Using Html.dot as WordMail Template May Cause Problems

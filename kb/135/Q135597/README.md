@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135597: No Prompt to Restart When Adding SNMP Community Names"
-permalink: kb/135/Q135597/
+permalink: /kb/135/Q135597/
 ---
 
 ## Q135597: No Prompt to Restart When Adding SNMP Community Names

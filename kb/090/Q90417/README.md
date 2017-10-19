@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90417: PRB: Frequent System Errors in FoxBASE+/Mac"
-permalink: kb/090/Q90417/
+permalink: /kb/090/Q90417/
 ---
 
 ## Q90417: PRB: Frequent System Errors in FoxBASE+/Mac

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174643: SNA Server RUI Application Unable To Send NSPE +RSP"
-permalink: kb/174/Q174643/
+permalink: /kb/174/Q174643/
 ---
 
 ## Q174643: SNA Server RUI Application Unable To Send NSPE +RSP

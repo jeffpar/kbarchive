@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128432: MHS: Circular Routing Through the MHS Gateway"
-permalink: kb/128/Q128432/
+permalink: /kb/128/Q128432/
 ---
 
 ## Q128432: MHS: Circular Routing Through the MHS Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138778: PRB: Numeric Value Not Written to Table from Text Box"
-permalink: kb/138/Q138778/
+permalink: /kb/138/Q138778/
 ---
 
 ## Q138778: PRB: Numeric Value Not Written to Table from Text Box

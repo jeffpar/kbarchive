@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121430: Scenes 2.0: Transition Effects Occur Only on New Image"
-permalink: kb/121/Q121430/
+permalink: /kb/121/Q121430/
 ---
 
 ## Q121430: Scenes 2.0: Transition Effects Occur Only on New Image

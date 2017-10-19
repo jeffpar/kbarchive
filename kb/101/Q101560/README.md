@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101560: Odd MSAV Behavior when CHKLIST.MS Files Are Read-Only"
-permalink: kb/101/Q101560/
+permalink: /kb/101/Q101560/
 ---
 
 ## Q101560: Odd MSAV Behavior when CHKLIST.MS Files Are Read-Only

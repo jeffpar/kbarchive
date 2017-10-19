@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126871: DOC: MENU() &amp; PAD() Examples Cause Error Message"
-permalink: kb/126/Q126871/
+permalink: /kb/126/Q126871/
 ---
 
 ## Q126871: DOC: MENU() &amp; PAD() Examples Cause Error Message

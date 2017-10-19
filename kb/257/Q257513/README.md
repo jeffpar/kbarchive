@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257513: Combat FS: Rudder Control Does Not Function Properly"
-permalink: kb/257/Q257513/
+permalink: /kb/257/Q257513/
 ---
 
 ## Q257513: Combat FS: Rudder Control Does Not Function Properly

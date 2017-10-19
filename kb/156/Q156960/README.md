@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156960: SMS: Collected Files Do Not Show as a UNC in Administrator"
-permalink: kb/156/Q156960/
+permalink: /kb/156/Q156960/
 ---
 
 ## Q156960: SMS: Collected Files Do Not Show as a UNC in Administrator

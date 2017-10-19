@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167943: XCLN: Err Msg: The Item Could Not Be Printed"
-permalink: kb/167/Q167943/
+permalink: /kb/167/Q167943/
 ---
 
 ## Q167943: XCLN: Err Msg: The Item Could Not Be Printed

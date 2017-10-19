@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158188: HITCHHIKER'S GDE TO VB4 AND SQL SERVER Corrections and Comment"
-permalink: kb/158/Q158188/
+permalink: /kb/158/Q158188/
 ---
 
 ## Q158188: HITCHHIKER'S GDE TO VB4 AND SQL SERVER Corrections and Comment

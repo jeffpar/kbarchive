@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257879: Event ID 1073 Occurs When You Attempt to Move the Quorum Disk"
-permalink: kb/257/Q257879/
+permalink: /kb/257/Q257879/
 ---
 
 ## Q257879: Event ID 1073 Occurs When You Attempt to Move the Quorum Disk

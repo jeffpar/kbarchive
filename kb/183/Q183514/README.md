@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183514: XCLN: Profile Name Not Valid Starting Macintosh Exchange/Outlook"
-permalink: kb/183/Q183514/
+permalink: /kb/183/Q183514/
 ---
 
 ## Q183514: XCLN: Profile Name Not Valid Starting Macintosh Exchange/Outlook

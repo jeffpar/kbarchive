@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240089: RRAS Port Becomes Unavailable in Windows NT 4.0"
-permalink: kb/240/Q240089/
+permalink: /kb/240/Q240089/
 ---
 
 ## Q240089: RRAS Port Becomes Unavailable in Windows NT 4.0

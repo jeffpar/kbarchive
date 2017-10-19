@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251005: OLE Automation Number Conversion Changed in SP4"
-permalink: kb/251/Q251005/
+permalink: /kb/251/Q251005/
 ---
 
 ## Q251005: OLE Automation Number Conversion Changed in SP4

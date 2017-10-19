@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154473: XCLN: Distributing Third-Party OCXs &amp; VBXs with Eform .cfg File"
-permalink: kb/154/Q154473/
+permalink: /kb/154/Q154473/
 ---
 
 ## Q154473: XCLN: Distributing Third-Party OCXs &amp; VBXs with Eform .cfg File

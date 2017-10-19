@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186015: HOWTO: Pass Parameters to an ActiveDoc"
-permalink: kb/186/Q186015/
+permalink: /kb/186/Q186015/
 ---
 
 ## Q186015: HOWTO: Pass Parameters to an ActiveDoc

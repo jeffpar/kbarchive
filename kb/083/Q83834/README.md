@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83834: Bold Vector Font in Write Jumps Left"
-permalink: kb/083/Q83834/
+permalink: /kb/083/Q83834/
 ---
 
 ## Q83834: Bold Vector Font in Write Jumps Left

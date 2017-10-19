@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104042: PRB: Unable to Write to the Windows NT Registry"
-permalink: kb/104/Q104042/
+permalink: /kb/104/Q104042/
 ---
 
 ## Q104042: PRB: Unable to Write to the Windows NT Registry

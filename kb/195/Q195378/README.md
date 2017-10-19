@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195378: DOC: Release Notes Incorrectly State that IStorage Is Broken"
-permalink: kb/195/Q195378/
+permalink: /kb/195/Q195378/
 ---
 
 ## Q195378: DOC: Release Notes Incorrectly State that IStorage Is Broken

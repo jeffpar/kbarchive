@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93165: Intel EtherExpress Card Conflicts with Scanning Hardware"
-permalink: kb/093/Q93165/
+permalink: /kb/093/Q93165/
 ---
 
 ## Q93165: Intel EtherExpress Card Conflicts with Scanning Hardware

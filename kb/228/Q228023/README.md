@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228023: Connection Status Incorrect in Mixed SNA3 And SNA4 Domain"
-permalink: kb/228/Q228023/
+permalink: /kb/228/Q228023/
 ---
 
 ## Q228023: Connection Status Incorrect in Mixed SNA3 And SNA4 Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126773: Writer/Artist: Using Manual Feed on a Panasonic KX-P2123"
-permalink: kb/126/Q126773/
+permalink: /kb/126/Q126773/
 ---
 
 ## Q126773: Writer/Artist: Using Manual Feed on a Panasonic KX-P2123

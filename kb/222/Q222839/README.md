@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222839: XFOR: Migration Wizard Crashes While Importing Data from a GW PO"
-permalink: kb/222/Q222839/
+permalink: /kb/222/Q222839/
 ---
 
 ## Q222839: XFOR: Migration Wizard Crashes While Importing Data from a GW PO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127186: OLE is Very Slow: Word for Windows NT and Excel for Windows NT"
-permalink: kb/127/Q127186/
+permalink: /kb/127/Q127186/
 ---
 
 ## Q127186: OLE is Very Slow: Word for Windows NT and Excel for Windows NT

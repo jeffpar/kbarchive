@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97650: Installing TCP/IP Protocol for Remoteboot Workstations"
-permalink: kb/097/Q97650/
+permalink: /kb/097/Q97650/
 ---
 
 ## Q97650: Installing TCP/IP Protocol for Remoteboot Workstations

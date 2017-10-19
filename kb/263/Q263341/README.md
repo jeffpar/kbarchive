@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263341: SMS: Thread in SMS_EXECUTIVE Leaks Handles with NetWare 4.7"
-permalink: kb/263/Q263341/
+permalink: /kb/263/Q263341/
 ---
 
 ## Q263341: SMS: Thread in SMS_EXECUTIVE Leaks Handles with NetWare 4.7

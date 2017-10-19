@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318848: Flight Simulator 2002: How to Find the Handbooks"
-permalink: kb/318/Q318848/
+permalink: /kb/318/Q318848/
 ---
 
 ## Q318848: Flight Simulator 2002: How to Find the Handbooks

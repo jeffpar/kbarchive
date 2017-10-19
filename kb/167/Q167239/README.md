@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167239: PRB: Failing SQLExec() Breaks Connection with Oracle Server"
-permalink: kb/167/Q167239/
+permalink: /kb/167/Q167239/
 ---
 
 ## Q167239: PRB: Failing SQLExec() Breaks Connection with Oracle Server

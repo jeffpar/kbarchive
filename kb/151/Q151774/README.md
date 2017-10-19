@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151774: HOWTO: Call NetUserGetInfo from Visual Basic"
-permalink: kb/151/Q151774/
+permalink: /kb/151/Q151774/
 ---
 
 ## Q151774: HOWTO: Call NetUserGetInfo from Visual Basic

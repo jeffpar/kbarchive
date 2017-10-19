@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285221: PRB: &quot;There is Not Enough Memory&quot; with Menu in Defined Window"
-permalink: kb/285/Q285221/
+permalink: /kb/285/Q285221/
 ---
 
 ## Q285221: PRB: &quot;There is Not Enough Memory&quot; with Menu in Defined Window

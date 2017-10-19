@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123315: Using MS Loopback Adapter Driver for Network Problems"
-permalink: kb/123/Q123315/
+permalink: /kb/123/Q123315/
 ---
 
 ## Q123315: Using MS Loopback Adapter Driver for Network Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312853: FMH-5 Attach Message Routed to TP Even if Local LU Doesn't Match"
-permalink: kb/312/Q312853/
+permalink: /kb/312/Q312853/
 ---
 
 ## Q312853: FMH-5 Attach Message Routed to TP Even if Local LU Doesn't Match

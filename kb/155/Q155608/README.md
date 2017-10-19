@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155608: XCON: TWA Reference in RAS Connector Help Erroneous"
-permalink: kb/155/Q155608/
+permalink: /kb/155/Q155608/
 ---
 
 ## Q155608: XCON: TWA Reference in RAS Connector Help Erroneous

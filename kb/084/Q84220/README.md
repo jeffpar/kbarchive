@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84220: Windows 3.1 Setup May Not Detect Incompatible TSRs"
-permalink: kb/084/Q84220/
+permalink: /kb/084/Q84220/
 ---
 
 ## Q84220: Windows 3.1 Setup May Not Detect Incompatible TSRs

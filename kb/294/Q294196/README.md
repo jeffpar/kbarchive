@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294196: &quot;Stop 0x0000001E&quot; in Win32k.sys on Windows NT Terminal Server"
-permalink: kb/294/Q294196/
+permalink: /kb/294/Q294196/
 ---
 
 ## Q294196: &quot;Stop 0x0000001E&quot; in Win32k.sys on Windows NT Terminal Server

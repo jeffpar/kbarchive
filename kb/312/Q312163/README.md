@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312163: DBCS TrueType Characters Are Garbled"
-permalink: kb/312/Q312163/
+permalink: /kb/312/Q312163/
 ---
 
 ## Q312163: DBCS TrueType Characters Are Garbled

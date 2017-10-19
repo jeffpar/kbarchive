@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226538: TCP/IP Clients Lose Connections To Multihomed SNA Server"
-permalink: kb/226/Q226538/
+permalink: /kb/226/Q226538/
 ---
 
 ## Q226538: TCP/IP Clients Lose Connections To Multihomed SNA Server

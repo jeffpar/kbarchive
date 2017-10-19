@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177365: Vinca Drivers May Cause Stop 0x24"
-permalink: kb/177/Q177365/
+permalink: /kb/177/Q177365/
 ---
 
 ## Q177365: Vinca Drivers May Cause Stop 0x24

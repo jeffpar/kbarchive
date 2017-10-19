@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82525: UNIDRV.HLP Fails to Copy During Installation"
-permalink: kb/082/Q82525/
+permalink: /kb/082/Q82525/
 ---
 
 ## Q82525: UNIDRV.HLP Fails to Copy During Installation

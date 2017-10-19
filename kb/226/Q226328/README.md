@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226328: XWEB: OWA Crash in CDOHTML!CTableView::IsSameAs"
-permalink: kb/226/Q226328/
+permalink: /kb/226/Q226328/
 ---
 
 ## Q226328: XWEB: OWA Crash in CDOHTML!CTableView::IsSameAs

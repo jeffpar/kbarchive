@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191286: XFOR: Notes Connector Crashes When Importing Too-Long Field"
-permalink: kb/191/Q191286/
+permalink: /kb/191/Q191286/
 ---
 
 ## Q191286: XFOR: Notes Connector Crashes When Importing Too-Long Field

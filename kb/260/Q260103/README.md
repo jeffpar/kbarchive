@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260103: FIX: IDE Memory Leak on Form Run/Stop in Visual Basic 6"
-permalink: kb/260/Q260103/
+permalink: /kb/260/Q260103/
 ---
 
 ## Q260103: FIX: IDE Memory Leak on Form Run/Stop in Visual Basic 6

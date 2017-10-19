@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308923: Streets and Trips 2002: Windows Installer Error Message"
-permalink: kb/308/Q308923/
+permalink: /kb/308/Q308923/
 ---
 
 ## Q308923: Streets and Trips 2002: Windows Installer Error Message

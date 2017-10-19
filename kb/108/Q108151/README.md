@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108151: IBM ValuePoint with BIOS Date 4/29/93 Hangs at Logo Screen"
-permalink: kb/108/Q108151/
+permalink: /kb/108/Q108151/
 ---
 
 ## Q108151: IBM ValuePoint with BIOS Date 4/29/93 Hangs at Logo Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161204: PPT7: WLL's May Cause Write-Up to Fail"
-permalink: kb/161/Q161204/
+permalink: /kb/161/Q161204/
 ---
 
 ## Q161204: PPT7: WLL's May Cause Write-Up to Fail

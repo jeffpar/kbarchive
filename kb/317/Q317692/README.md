@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317692: Unable to Map Error Code 1240"
-permalink: kb/317/Q317692/
+permalink: /kb/317/Q317692/
 ---
 
 ## Q317692: Unable to Map Error Code 1240

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180223: HOWTO: Synchronizing Reads and Writes Between Two DAO Processes"
-permalink: kb/180/Q180223/
+permalink: /kb/180/Q180223/
 ---
 
 ## Q180223: HOWTO: Synchronizing Reads and Writes Between Two DAO Processes

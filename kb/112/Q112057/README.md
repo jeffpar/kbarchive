@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112057: FIX: F1001 in regasg.c with Adjustable Sized COMPLEX and /4Yb"
-permalink: kb/112/Q112057/
+permalink: /kb/112/Q112057/
 ---
 
 ## Q112057: FIX: F1001 in regasg.c with Adjustable Sized COMPLEX and /4Yb

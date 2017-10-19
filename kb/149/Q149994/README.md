@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149994: ATAPI Causes CRC Errors on Serial Board"
-permalink: kb/149/Q149994/
+permalink: /kb/149/Q149994/
 ---
 
 ## Q149994: ATAPI Causes CRC Errors on Serial Board

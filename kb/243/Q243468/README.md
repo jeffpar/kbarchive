@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243468: Default Gateway Changes Unexpectedly on Token Ring Network"
-permalink: kb/243/Q243468/
+permalink: /kb/243/Q243468/
 ---
 
 ## Q243468: Default Gateway Changes Unexpectedly on Token Ring Network

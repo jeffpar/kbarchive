@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264221: Year 2000 Product Analyzer Database Not Updated After March 2000"
-permalink: kb/264/Q264221/
+permalink: /kb/264/Q264221/
 ---
 
 ## Q264221: Year 2000 Product Analyzer Database Not Updated After March 2000

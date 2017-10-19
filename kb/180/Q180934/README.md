@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180934: Windows 3.X Client Environment Variable BackupRemote Is Invalid"
-permalink: kb/180/Q180934/
+permalink: /kb/180/Q180934/
 ---
 
 ## Q180934: Windows 3.X Client Environment Variable BackupRemote Is Invalid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83737: Wyse 386/SX 3016 Beeps Erratically in 386 Enhanced Mode"
-permalink: kb/083/Q83737/
+permalink: /kb/083/Q83737/
 ---
 
 ## Q83737: Wyse 386/SX 3016 Beeps Erratically in 386 Enhanced Mode

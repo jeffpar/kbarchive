@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250563: PRB: First Chance Exception Debugging in Windows System DLLs"
-permalink: kb/250/Q250563/
+permalink: /kb/250/Q250563/
 ---
 
 ## Q250563: PRB: First Chance Exception Debugging in Windows System DLLs

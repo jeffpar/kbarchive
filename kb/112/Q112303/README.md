@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112303: PC DirSync: Err Msg: Warning 128 Could Not Process Requestor"
-permalink: kb/112/Q112303/
+permalink: /kb/112/Q112303/
 ---
 
 ## Q112303: PC DirSync: Err Msg: Warning 128 Could Not Process Requestor

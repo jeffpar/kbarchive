@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158572: STL Sample set::(lower_, upper_)bound, equal_range Functions"
-permalink: kb/158/Q158572/
+permalink: /kb/158/Q158572/
 ---
 
 ## Q158572: STL Sample set::(lower_, upper_)bound, equal_range Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103280: Using an Emergency Repair Disk Created by Windows NT"
-permalink: kb/103/Q103280/
+permalink: /kb/103/Q103280/
 ---
 
 ## Q103280: Using an Emergency Repair Disk Created by Windows NT

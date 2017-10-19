@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239875: HOW TO: Use ASP to Force SSL for Specific Pages"
-permalink: kb/239/Q239875/
+permalink: /kb/239/Q239875/
 ---
 
 ## Q239875: HOW TO: Use ASP to Force SSL for Specific Pages

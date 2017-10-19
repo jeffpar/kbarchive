@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168041: PRB: Can't Export All Subprojects Into a Single Makefile"
-permalink: kb/168/Q168041/
+permalink: /kb/168/Q168041/
 ---
 
 ## Q168041: PRB: Can't Export All Subprojects Into a Single Makefile

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109482: How to Change the Creator and Type Set by FCREATE()"
-permalink: kb/109/Q109482/
+permalink: /kb/109/Q109482/
 ---
 
 ## Q109482: How to Change the Creator and Type Set by FCREATE()

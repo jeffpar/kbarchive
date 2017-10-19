@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188632: XFOR: Internet Mail Service Missing from Control Panel"
-permalink: kb/188/Q188632/
+permalink: /kb/188/Q188632/
 ---
 
 ## Q188632: XFOR: Internet Mail Service Missing from Control Panel

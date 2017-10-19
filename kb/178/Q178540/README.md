@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178540: XCON: Viewing Embedded Message Displays Compose Window"
-permalink: kb/178/Q178540/
+permalink: /kb/178/Q178540/
 ---
 
 ## Q178540: XCON: Viewing Embedded Message Displays Compose Window

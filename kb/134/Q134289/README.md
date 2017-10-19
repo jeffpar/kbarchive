@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134289: Shortcut to BBS Message Does Not Work When BBS Minimized"
-permalink: kb/134/Q134289/
+permalink: /kb/134/Q134289/
 ---
 
 ## Q134289: Shortcut to BBS Message Does Not Work When BBS Minimized

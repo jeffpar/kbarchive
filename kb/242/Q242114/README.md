@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242114: Custom Toolbar Settings Are Not Saved in File Manager"
-permalink: kb/242/Q242114/
+permalink: /kb/242/Q242114/
 ---
 
 ## Q242114: Custom Toolbar Settings Are Not Saved in File Manager

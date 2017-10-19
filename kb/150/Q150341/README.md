@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150341: Complete Gardening: Manual Installation Instructions"
-permalink: kb/150/Q150341/
+permalink: /kb/150/Q150341/
 ---
 
 ## Q150341: Complete Gardening: Manual Installation Instructions

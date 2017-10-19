@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122929: DEC Alpha STOP Message: System File S3 is Bad or Missing"
-permalink: kb/122/Q122929/
+permalink: /kb/122/Q122929/
 ---
 
 ## Q122929: DEC Alpha STOP Message: System File S3 is Bad or Missing

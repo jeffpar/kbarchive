@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263612: PRB: Unable to Add a Performance Counter on Windows 2000"
-permalink: kb/263/Q263612/
+permalink: /kb/263/Q263612/
 ---
 
 ## Q263612: PRB: Unable to Add a Performance Counter on Windows 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304497: BUG: _wsetlocale Is Not Threadsafe"
-permalink: kb/304/Q304497/
+permalink: /kb/304/Q304497/
 ---
 
 ## Q304497: BUG: _wsetlocale Is Not Threadsafe

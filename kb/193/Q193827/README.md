@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193827: FMH Bit Not Set in Query Reply with Function Management Header"
-permalink: kb/193/Q193827/
+permalink: /kb/193/Q193827/
 ---
 
 ## Q193827: FMH Bit Not Set in Query Reply with Function Management Header

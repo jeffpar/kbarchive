@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136807: XADM: MTA Error: Too Many ECBs Processed In One Thread"
-permalink: kb/136/Q136807/
+permalink: /kb/136/Q136807/
 ---
 
 ## Q136807: XADM: MTA Error: Too Many ECBs Processed In One Thread

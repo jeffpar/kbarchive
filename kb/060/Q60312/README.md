@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60312: Drawing 45-Degree Lines in Paintbrush"
-permalink: kb/060/Q60312/
+permalink: /kb/060/Q60312/
 ---
 
 ## Q60312: Drawing 45-Degree Lines in Paintbrush

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188312: Lexmark Optra E+ Unprintable Region Is Incorrect"
-permalink: kb/188/Q188312/
+permalink: /kb/188/Q188312/
 ---
 
 ## Q188312: Lexmark Optra E+ Unprintable Region Is Incorrect

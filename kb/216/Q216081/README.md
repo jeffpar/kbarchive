@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216081: Installing C2 Security Configuration Manager on Terminal Server"
-permalink: kb/216/Q216081/
+permalink: /kb/216/Q216081/
 ---
 
 ## Q216081: Installing C2 Security Configuration Manager on Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164951: INFO: Visual C++ RISC Edition Version Information"
-permalink: kb/164/Q164951/
+permalink: /kb/164/Q164951/
 ---
 
 ## Q164951: INFO: Visual C++ RISC Edition Version Information

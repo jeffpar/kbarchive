@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244145: READFILESCATTER Operation Not Supported by CDFS File System"
-permalink: kb/244/Q244145/
+permalink: /kb/244/Q244145/
 ---
 
 ## Q244145: READFILESCATTER Operation Not Supported by CDFS File System

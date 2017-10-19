@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272739: BUG: C2876 with using Declaration on Private Base Class Member"
-permalink: kb/272/Q272739/
+permalink: /kb/272/Q272739/
 ---
 
 ## Q272739: BUG: C2876 with using Declaration on Private Base Class Member

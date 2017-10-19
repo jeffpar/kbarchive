@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67711: Using Windows User, Kernel, and GDI Symbols in CodeView"
-permalink: kb/067/Q67711/
+permalink: /kb/067/Q67711/
 ---
 
 ## Q67711: Using Windows User, Kernel, and GDI Symbols in CodeView

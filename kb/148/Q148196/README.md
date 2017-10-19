@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148196: IBM LANStreamer PCI Token Ring Adapter Identified as Ethernet"
-permalink: kb/148/Q148196/
+permalink: /kb/148/Q148196/
 ---
 
 ## Q148196: IBM LANStreamer PCI Token Ring Adapter Identified as Ethernet

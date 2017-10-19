@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246712: PRB: Can't Reduce Time Interval for Timer Event in Exchange"
-permalink: kb/246/Q246712/
+permalink: /kb/246/Q246712/
 ---
 
 ## Q246712: PRB: Can't Reduce Time Interval for Timer Event in Exchange

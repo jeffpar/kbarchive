@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73600: Adaptec ACB-2372 Controller Board and Expanded Memory"
-permalink: kb/073/Q73600/
+permalink: /kb/073/Q73600/
 ---
 
 ## Q73600: Adaptec ACB-2372 Controller Board and Expanded Memory

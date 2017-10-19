@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242213: PRB: ScopeItem's ExpandOnReload Is Not Available at Design Time"
-permalink: kb/242/Q242213/
+permalink: /kb/242/Q242213/
 ---
 
 ## Q242213: PRB: ScopeItem's ExpandOnReload Is Not Available at Design Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185705: TCP/IP Address Changes to NetBIOS Name on Windows 95 SNA Client"
-permalink: kb/185/Q185705/
+permalink: /kb/185/Q185705/
 ---
 
 ## Q185705: TCP/IP Address Changes to NetBIOS Name on Windows 95 SNA Client

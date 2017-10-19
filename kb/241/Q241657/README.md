@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241657: Client's Valid &lt;x&gt;.&lt;x&gt;.&lt;x&gt;.0 Host Address Disallowed on Network"
-permalink: kb/241/Q241657/
+permalink: /kb/241/Q241657/
 ---
 
 ## Q241657: Client's Valid &lt;x&gt;.&lt;x&gt;.&lt;x&gt;.0 Host Address Disallowed on Network

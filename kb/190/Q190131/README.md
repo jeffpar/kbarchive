@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190131: PRB: Instantiating a Project-Compatible Server Causes Error 430"
-permalink: kb/190/Q190131/
+permalink: /kb/190/Q190131/
 ---
 
 ## Q190131: PRB: Instantiating a Project-Compatible Server Causes Error 430

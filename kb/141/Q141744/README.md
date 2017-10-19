@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141744: Mac Dangerous Creatures: Files Installed During Installation"
-permalink: kb/141/Q141744/
+permalink: /kb/141/Q141744/
 ---
 
 ## Q141744: Mac Dangerous Creatures: Files Installed During Installation

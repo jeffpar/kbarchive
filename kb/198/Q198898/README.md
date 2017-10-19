@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198898: XADM: Using Proxy Name Parameters with Unattended Setup"
-permalink: kb/198/Q198898/
+permalink: /kb/198/Q198898/
 ---
 
 ## Q198898: XADM: Using Proxy Name Parameters with Unattended Setup

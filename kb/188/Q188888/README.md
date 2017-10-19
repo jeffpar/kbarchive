@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188888: BUG: &quot;String is too long to fit&quot; Error Passing Variables to COM"
-permalink: kb/188/Q188888/
+permalink: /kb/188/Q188888/
 ---
 
 ## Q188888: BUG: &quot;String is too long to fit&quot; Error Passing Variables to COM

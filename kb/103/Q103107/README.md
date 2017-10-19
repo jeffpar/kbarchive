@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103107: Quark XPress for Windows Fails to Print"
-permalink: kb/103/Q103107/
+permalink: /kb/103/Q103107/
 ---
 
 ## Q103107: Quark XPress for Windows Fails to Print

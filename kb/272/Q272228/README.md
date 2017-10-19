@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272228: SSL Connections Delayed During Initial Connection to Web Server"
-permalink: kb/272/Q272228/
+permalink: /kb/272/Q272228/
 ---
 
 ## Q272228: SSL Connections Delayed During Initial Connection to Web Server

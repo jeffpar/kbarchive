@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243972: SDLC Connection with MicroGate MGT1 Adapter Remains Pending"
-permalink: kb/243/Q243972/
+permalink: /kb/243/Q243972/
 ---
 
 ## Q243972: SDLC Connection with MicroGate MGT1 Adapter Remains Pending

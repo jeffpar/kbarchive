@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111374: PC Win: Mail Fails on Wollongong TCP/IP and LAN Manager 2.2"
-permalink: kb/111/Q111374/
+permalink: /kb/111/Q111374/
 ---
 
 ## Q111374: PC Win: Mail Fails on Wollongong TCP/IP and LAN Manager 2.2

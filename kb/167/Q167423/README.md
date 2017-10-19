@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167423: FIX: CRecordset Members Not in &quot;Add Member Variable&quot; Dialog Box"
-permalink: kb/167/Q167423/
+permalink: /kb/167/Q167423/
 ---
 
 ## Q167423: FIX: CRecordset Members Not in &quot;Add Member Variable&quot; Dialog Box

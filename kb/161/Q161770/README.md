@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161770: Event 560 Leads to Inability to Restart SNA Server or SnaBase"
-permalink: kb/161/Q161770/
+permalink: /kb/161/Q161770/
 ---
 
 ## Q161770: Event 560 Leads to Inability to Restart SNA Server or SnaBase

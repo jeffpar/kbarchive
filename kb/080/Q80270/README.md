@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80270: PC Rmt: Err Msg: Directory Specified Not Remote..."
-permalink: kb/080/Q80270/
+permalink: /kb/080/Q80270/
 ---
 
 ## Q80270: PC Rmt: Err Msg: Directory Specified Not Remote...

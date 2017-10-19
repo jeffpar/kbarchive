@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183014: XCON: MTA Event 2050 with Badly Encoded X.400 Message"
-permalink: kb/183/Q183014/
+permalink: /kb/183/Q183014/
 ---
 
 ## Q183014: XCON: MTA Event 2050 with Badly Encoded X.400 Message

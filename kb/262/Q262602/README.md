@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262602: Third-Party Program Does Not Start with C0000138 Error Message"
-permalink: kb/262/Q262602/
+permalink: /kb/262/Q262602/
 ---
 
 ## Q262602: Third-Party Program Does Not Start with C0000138 Error Message

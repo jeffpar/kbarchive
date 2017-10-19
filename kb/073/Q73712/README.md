@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73712: Running Solomon III Accounting Software with MS-DOS 5.0"
-permalink: kb/073/Q73712/
+permalink: /kb/073/Q73712/
 ---
 
 ## Q73712: Running Solomon III Accounting Software with MS-DOS 5.0

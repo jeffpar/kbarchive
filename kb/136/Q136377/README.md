@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136377: Invalid RawWorkItems Calculated on Some MP Computers"
-permalink: kb/136/Q136377/
+permalink: /kb/136/Q136377/
 ---
 
 ## Q136377: Invalid RawWorkItems Calculated on Some MP Computers

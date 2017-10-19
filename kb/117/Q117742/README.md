@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117742: INFO: Limitations of WINOLDAP's Terminal Fonts"
-permalink: kb/117/Q117742/
+permalink: /kb/117/Q117742/
 ---
 
 ## Q117742: INFO: Limitations of WINOLDAP's Terminal Fonts

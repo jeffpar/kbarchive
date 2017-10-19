@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129898: PRB: Naming Conflicts Between Variables and Objects"
-permalink: kb/129/Q129898/
+permalink: /kb/129/Q129898/
 ---
 
 ## Q129898: PRB: Naming Conflicts Between Variables and Objects

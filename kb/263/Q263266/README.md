@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263266: Baseball 2000: Erratic Behavior with SideWinder Game Pad Pro"
-permalink: kb/263/Q263266/
+permalink: /kb/263/Q263266/
 ---
 
 ## Q263266: Baseball 2000: Erratic Behavior with SideWinder Game Pad Pro

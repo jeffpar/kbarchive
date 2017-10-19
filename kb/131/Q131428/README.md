@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131428: DHCPADMN Reports Error 14 After You Select Local Machine"
-permalink: kb/131/Q131428/
+permalink: /kb/131/Q131428/
 ---
 
 ## Q131428: DHCPADMN Reports Error 14 After You Select Local Machine

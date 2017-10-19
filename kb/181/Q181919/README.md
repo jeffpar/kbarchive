@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181919: XADM: Offline Address Book Not Updated After Changing Server"
-permalink: kb/181/Q181919/
+permalink: /kb/181/Q181919/
 ---
 
 ## Q181919: XADM: Offline Address Book Not Updated After Changing Server

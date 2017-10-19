@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190709: XFOR: Internet Mail Service Does Not Clean Up Temp Files"
-permalink: kb/190/Q190709/
+permalink: /kb/190/Q190709/
 ---
 
 ## Q190709: XFOR: Internet Mail Service Does Not Clean Up Temp Files

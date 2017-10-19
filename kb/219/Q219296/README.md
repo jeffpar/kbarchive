@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219296: Services for NetWare Cannot Use Alternate Namespace File Names"
-permalink: kb/219/Q219296/
+permalink: /kb/219/Q219296/
 ---
 
 ## Q219296: Services for NetWare Cannot Use Alternate Namespace File Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149147: BUG: Equivalence and Non-Common Block Variable Cause ASSERT"
-permalink: kb/149/Q149147/
+permalink: /kb/149/Q149147/
 ---
 
 ## Q149147: BUG: Equivalence and Non-Common Block Variable Cause ASSERT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153529: Underscore in Domain Name Causes Validation Errors"
-permalink: kb/153/Q153529/
+permalink: /kb/153/Q153529/
 ---
 
 ## Q153529: Underscore in Domain Name Causes Validation Errors

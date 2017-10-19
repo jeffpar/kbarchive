@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248371: Network Connection Is Not Closed When You Log Off"
-permalink: kb/248/Q248371/
+permalink: /kb/248/Q248371/
 ---
 
 ## Q248371: Network Connection Is Not Closed When You Log Off

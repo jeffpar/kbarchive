@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201250: BUG: Explorer May Incorrectly Display Auditing Settings"
-permalink: kb/201/Q201250/
+permalink: /kb/201/Q201250/
 ---
 
 ## Q201250: BUG: Explorer May Incorrectly Display Auditing Settings

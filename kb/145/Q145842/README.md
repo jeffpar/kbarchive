@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145842: Language Versions of MSN and Windows 95 Must Match"
-permalink: kb/145/Q145842/
+permalink: /kb/145/Q145842/
 ---
 
 ## Q145842: Language Versions of MSN and Windows 95 Must Match

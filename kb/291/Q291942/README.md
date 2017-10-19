@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291942: Simultaneous Queries with WMI SNA Provider May Cause &quot;Hang&quot;"
-permalink: kb/291/Q291942/
+permalink: /kb/291/Q291942/
 ---
 
 ## Q291942: Simultaneous Queries with WMI SNA Provider May Cause &quot;Hang&quot;

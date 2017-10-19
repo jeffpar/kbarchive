@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92876: NET.EXE Pop-up Interface Hard to Read on Monochrome Monitors"
-permalink: kb/092/Q92876/
+permalink: /kb/092/Q92876/
 ---
 
 ## Q92876: NET.EXE Pop-up Interface Hard to Read on Monochrome Monitors

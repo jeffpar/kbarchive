@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176350: HOWTO: Open Visual SourceSafe to a Specific Database"
-permalink: kb/176/Q176350/
+permalink: /kb/176/Q176350/
 ---
 
 ## Q176350: HOWTO: Open Visual SourceSafe to a Specific Database

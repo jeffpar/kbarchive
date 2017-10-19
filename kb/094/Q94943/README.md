@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94943: FIX: No Stack Frame From CMACROS.INC cProc FORCEFRAME"
-permalink: kb/094/Q94943/
+permalink: /kb/094/Q94943/
 ---
 
 ## Q94943: FIX: No Stack Frame From CMACROS.INC cProc FORCEFRAME

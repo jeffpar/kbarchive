@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245573: Display Verb Returns Unexpected Results with Channel Connections"
-permalink: kb/245/Q245573/
+permalink: /kb/245/Q245573/
 ---
 
 ## Q245573: Display Verb Returns Unexpected Results with Channel Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60748: With Invalid COMSPEC, Invoking MS-DOS Shell Hangs Machine"
-permalink: kb/060/Q60748/
+permalink: /kb/060/Q60748/
 ---
 
 ## Q60748: With Invalid COMSPEC, Invoking MS-DOS Shell Hangs Machine

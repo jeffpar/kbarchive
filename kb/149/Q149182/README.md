@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149182: DOCERR: NewIndex Property of Lists Doesn't Work as Documented"
-permalink: kb/149/Q149182/
+permalink: /kb/149/Q149182/
 ---
 
 ## Q149182: DOCERR: NewIndex Property of Lists Doesn't Work as Documented

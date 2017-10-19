@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136475: Err Msg: Explorer Caused a Divide Error in Module Shell32.dll"
-permalink: kb/136/Q136475/
+permalink: /kb/136/Q136475/
 ---
 
 ## Q136475: Err Msg: Explorer Caused a Divide Error in Module Shell32.dll

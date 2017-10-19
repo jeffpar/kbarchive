@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135521: PRB: Send Does Not Work Under Windows 95 or Windows NT"
-permalink: kb/135/Q135521/
+permalink: /kb/135/Q135521/
 ---
 
 ## Q135521: PRB: Send Does Not Work Under Windows 95 or Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113709: NTBACKUP Doesn't Create Set Description from Command Line"
-permalink: kb/113/Q113709/
+permalink: /kb/113/Q113709/
 ---
 
 ## Q113709: NTBACKUP Doesn't Create Set Description from Command Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115431: Turkish Characters in Directory Name Hangs Windows NT"
-permalink: kb/115/Q115431/
+permalink: /kb/115/Q115431/
 ---
 
 ## Q115431: Turkish Characters in Directory Name Hangs Windows NT

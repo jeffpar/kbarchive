@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136637: Default Printer Form Lost Connecting 3.51 Client to 3.5 Server"
-permalink: kb/136/Q136637/
+permalink: /kb/136/Q136637/
 ---
 
 ## Q136637: Default Printer Form Lost Connecting 3.51 Client to 3.5 Server

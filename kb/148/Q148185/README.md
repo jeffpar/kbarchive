@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148185: BUG: FOR3852 Syntax Error Caused by Semicolon in Source Line"
-permalink: kb/148/Q148185/
+permalink: /kb/148/Q148185/
 ---
 
 ## Q148185: BUG: FOR3852 Syntax Error Caused by Semicolon in Source Line

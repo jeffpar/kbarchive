@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149038: FIX: VB Registry Functions Are Limited with Nested Settings"
-permalink: kb/149/Q149038/
+permalink: /kb/149/Q149038/
 ---
 
 ## Q149038: FIX: VB Registry Functions Are Limited with Nested Settings

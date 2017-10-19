@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103828: RAS Password Authentication Failed"
-permalink: kb/103/Q103828/
+permalink: /kb/103/Q103828/
 ---
 
 ## Q103828: RAS Password Authentication Failed

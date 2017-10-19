@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180080: Automap: GPS Devices Are Not Detected on COM3 or COM4"
-permalink: kb/180/Q180080/
+permalink: /kb/180/Q180080/
 ---
 
 ## Q180080: Automap: GPS Devices Are Not Detected on COM3 or COM4

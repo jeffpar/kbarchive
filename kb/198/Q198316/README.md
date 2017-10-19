@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198316: WD97: Some Underlines Lost After Opening Word 6.0/95 or RTF File"
-permalink: kb/198/Q198316/
+permalink: /kb/198/Q198316/
 ---
 
 ## Q198316: WD97: Some Underlines Lost After Opening Word 6.0/95 or RTF File

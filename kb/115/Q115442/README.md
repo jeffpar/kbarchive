@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115442: X400: Use Editor to Search Config Utility's Customized Mapping"
-permalink: kb/115/Q115442/
+permalink: /kb/115/Q115442/
 ---
 
 ## Q115442: X400: Use Editor to Search Config Utility's Customized Mapping

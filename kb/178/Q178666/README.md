@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178666: BUG: Form Not Released When Focus on Grid and Modal Form Started"
-permalink: kb/178/Q178666/
+permalink: /kb/178/Q178666/
 ---
 
 ## Q178666: BUG: Form Not Released When Focus on Grid and Modal Form Started

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310317: SMS: Access Violation in the SMS_LICENSE_SERVER Service"
-permalink: kb/310/Q310317/
+permalink: /kb/310/Q310317/
 ---
 
 ## Q310317: SMS: Access Violation in the SMS_LICENSE_SERVER Service

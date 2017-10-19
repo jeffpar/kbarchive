@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99227: Windows Sound System 1.0a Disk Dir List (3.5 and 5.25 Inch)"
-permalink: kb/099/Q99227/
+permalink: /kb/099/Q99227/
 ---
 
 ## Q99227: Windows Sound System 1.0a Disk Dir List (3.5 and 5.25 Inch)

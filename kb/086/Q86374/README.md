@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86374: PC DOS Mac: Running 3.0 Clients Against Older Postoffices"
-permalink: kb/086/Q86374/
+permalink: /kb/086/Q86374/
 ---
 
 ## Q86374: PC DOS Mac: Running 3.0 Clients Against Older Postoffices

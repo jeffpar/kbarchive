@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141141: Visual FoxPro 3.0 Book List"
-permalink: kb/141/Q141141/
+permalink: /kb/141/Q141141/
 ---
 
 ## Q141141: Visual FoxPro 3.0 Book List

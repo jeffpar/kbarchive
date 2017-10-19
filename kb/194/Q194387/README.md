@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194387: FIX: Handle Leak in ODBC Driver/OLE DB Provider"
-permalink: kb/194/Q194387/
+permalink: /kb/194/Q194387/
 ---
 
 ## Q194387: FIX: Handle Leak in ODBC Driver/OLE DB Provider

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142306: Insufficient memory error executing System icon in Control Panel"
-permalink: kb/142/Q142306/
+permalink: /kb/142/Q142306/
 ---
 
 ## Q142306: Insufficient memory error executing System icon in Control Panel

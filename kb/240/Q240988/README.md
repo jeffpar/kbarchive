@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240988: Pandora's Box: Program Hangs When You Quit the Game"
-permalink: kb/240/Q240988/
+permalink: /kb/240/Q240988/
 ---
 
 ## Q240988: Pandora's Box: Program Hangs When You Quit the Game

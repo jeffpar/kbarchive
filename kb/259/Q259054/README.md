@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259054: Exchange MAs Add Mailboxes to Exchange During Attribute Flow"
-permalink: kb/259/Q259054/
+permalink: /kb/259/Q259054/
 ---
 
 ## Q259054: Exchange MAs Add Mailboxes to Exchange During Attribute Flow

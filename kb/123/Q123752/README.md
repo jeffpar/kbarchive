@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123752: Application Icon Does Not Minimize to the Taskbar"
-permalink: kb/123/Q123752/
+permalink: /kb/123/Q123752/
 ---
 
 ## Q123752: Application Icon Does Not Minimize to the Taskbar

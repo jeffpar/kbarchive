@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277729: SMS: Multiple Mmc.exe Tasks on a Windows 2000-Based SMS Site Ser"
-permalink: kb/277/Q277729/
+permalink: /kb/277/Q277729/
 ---
 
 ## Q277729: SMS: Multiple Mmc.exe Tasks on a Windows 2000-Based SMS Site Ser

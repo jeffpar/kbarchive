@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287751: SNA WMI Provider Doesn't Allow TN Workstation/TNIPID to Be Added"
-permalink: kb/287/Q287751/
+permalink: /kb/287/Q287751/
 ---
 
 ## Q287751: SNA WMI Provider Doesn't Allow TN Workstation/TNIPID to Be Added

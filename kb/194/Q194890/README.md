@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194890: BUG: Clearing ImageList From ToolBar Shrinks ToolBar Buttons"
-permalink: kb/194/Q194890/
+permalink: /kb/194/Q194890/
 ---
 
 ## Q194890: BUG: Clearing ImageList From ToolBar Shrinks ToolBar Buttons

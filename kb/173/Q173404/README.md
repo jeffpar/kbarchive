@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173404: WD97: General Information About Cross-reference Fields"
-permalink: kb/173/Q173404/
+permalink: /kb/173/Q173404/
 ---
 
 ## Q173404: WD97: General Information About Cross-reference Fields

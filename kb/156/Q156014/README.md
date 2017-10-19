@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156014: HOWTO: Set Up OLE Automation in Visual FoxPro"
-permalink: kb/156/Q156014/
+permalink: /kb/156/Q156014/
 ---
 
 ## Q156014: HOWTO: Set Up OLE Automation in Visual FoxPro

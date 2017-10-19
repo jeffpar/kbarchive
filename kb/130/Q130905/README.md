@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130905: Printing From Japanese Windows NT to a U.S. Windows NT Printer"
-permalink: kb/130/Q130905/
+permalink: /kb/130/Q130905/
 ---
 
 ## Q130905: Printing From Japanese Windows NT to a U.S. Windows NT Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176898: FTP &quot;Resume&quot; Functionality Not Supported"
-permalink: kb/176/Q176898/
+permalink: /kb/176/Q176898/
 ---
 
 ## Q176898: FTP &quot;Resume&quot; Functionality Not Supported

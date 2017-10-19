@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174456: LFN MS-DOS Shortcuts Do Not Run When 8.3 Names Are Disabled"
-permalink: kb/174/Q174456/
+permalink: /kb/174/Q174456/
 ---
 
 ## Q174456: LFN MS-DOS Shortcuts Do Not Run When 8.3 Names Are Disabled

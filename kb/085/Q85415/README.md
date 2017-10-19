@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85415: PPT: Graphic Formats Supported by PowerPoint"
-permalink: kb/085/Q85415/
+permalink: /kb/085/Q85415/
 ---
 
 ## Q85415: PPT: Graphic Formats Supported by PowerPoint

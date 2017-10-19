@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88116: Difference Between Bitmap and Picture When Using Paste Special"
-permalink: kb/088/Q88116/
+permalink: /kb/088/Q88116/
 ---
 
 ## Q88116: Difference Between Bitmap and Picture When Using Paste Special

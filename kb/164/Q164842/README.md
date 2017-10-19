@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164842: XCON: Enhanced Diagnostics in MTA"
-permalink: kb/164/Q164842/
+permalink: /kb/164/Q164842/
 ---
 
 ## Q164842: XCON: Enhanced Diagnostics in MTA

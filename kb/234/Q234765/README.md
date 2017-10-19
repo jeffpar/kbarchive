@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234765: STOP 0x0000000a or 0x0000004e Errors with Citrix Metaframe"
-permalink: kb/234/Q234765/
+permalink: /kb/234/Q234765/
 ---
 
 ## Q234765: STOP 0x0000000a or 0x0000004e Errors with Citrix Metaframe

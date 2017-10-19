@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218814: DNS Server Logs Event 7062: &quot;DNS Server Encountered a Packet...&quot;"
-permalink: kb/218/Q218814/
+permalink: /kb/218/Q218814/
 ---
 
 ## Q218814: DNS Server Logs Event 7062: &quot;DNS Server Encountered a Packet...&quot;

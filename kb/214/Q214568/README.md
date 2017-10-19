@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214568: Suppressing the &quot;Domain Controller Cannot Be Reached&quot; Message"
-permalink: kb/214/Q214568/
+permalink: /kb/214/Q214568/
 ---
 
 ## Q214568: Suppressing the &quot;Domain Controller Cannot Be Reached&quot; Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97687: Starting Word for Windows with Template Other Than Normal"
-permalink: kb/097/Q97687/
+permalink: /kb/097/Q97687/
 ---
 
 ## Q97687: Starting Word for Windows with Template Other Than Normal

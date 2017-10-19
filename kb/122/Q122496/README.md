@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122496: Head Coach Football Err Msg: SU Installed Properly...But..."
-permalink: kb/122/Q122496/
+permalink: /kb/122/Q122496/
 ---
 
 ## Q122496: Head Coach Football Err Msg: SU Installed Properly...But...

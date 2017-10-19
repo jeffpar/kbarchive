@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127807: &quot;Out of Memory&quot; Error After Updating MSAV Signature File"
-permalink: kb/127/Q127807/
+permalink: /kb/127/Q127807/
 ---
 
 ## Q127807: &quot;Out of Memory&quot; Error After Updating MSAV Signature File

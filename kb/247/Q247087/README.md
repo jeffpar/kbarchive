@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247087: XWEB: Error Message: Unable to Get Public Folder"
-permalink: kb/247/Q247087/
+permalink: /kb/247/Q247087/
 ---
 
 ## Q247087: XWEB: Error Message: Unable to Get Public Folder

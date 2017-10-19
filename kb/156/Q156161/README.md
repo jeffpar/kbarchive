@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156161: PPT7: How To Print Shadowed Text to PCL Printers"
-permalink: kb/156/Q156161/
+permalink: /kb/156/Q156161/
 ---
 
 ## Q156161: PPT7: How To Print Shadowed Text to PCL Printers

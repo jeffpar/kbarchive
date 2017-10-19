@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97937: Err Msg: &quot;Invalid Drive Specification&quot; with Novell Network"
-permalink: kb/097/Q97937/
+permalink: /kb/097/Q97937/
 ---
 
 ## Q97937: Err Msg: &quot;Invalid Drive Specification&quot; with Novell Network

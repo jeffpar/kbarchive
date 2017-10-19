@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241633: PRB: Windows 2000 Migration DLLs Time Out and Are Unloaded"
-permalink: kb/241/Q241633/
+permalink: /kb/241/Q241633/
 ---
 
 ## Q241633: PRB: Windows 2000 Migration DLLs Time Out and Are Unloaded

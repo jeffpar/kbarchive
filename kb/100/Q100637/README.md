@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100637: INFO: Specifying Icons for Console Applications in Windows NT"
-permalink: kb/100/Q100637/
+permalink: /kb/100/Q100637/
 ---
 
 ## Q100637: INFO: Specifying Icons for Console Applications in Windows NT

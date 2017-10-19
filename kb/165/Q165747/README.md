@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165747: SNA Win95/NT Client Using Named Pipes Will Not Have the Data"
-permalink: kb/165/Q165747/
+permalink: /kb/165/Q165747/
 ---
 
 ## Q165747: SNA Win95/NT Client Using Named Pipes Will Not Have the Data

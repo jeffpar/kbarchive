@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153389: Cinemania 96 Update Contents: June 96"
-permalink: kb/153/Q153389/
+permalink: /kb/153/Q153389/
 ---
 
 ## Q153389: Cinemania 96 Update Contents: June 96

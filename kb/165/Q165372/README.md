@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165372: XADM: Err Msg When Running Admin Program: OR Is Incomplete"
-permalink: kb/165/Q165372/
+permalink: /kb/165/Q165372/
 ---
 
 ## Q165372: XADM: Err Msg When Running Admin Program: OR Is Incomplete

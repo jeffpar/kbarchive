@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191147: How to Resolve Catalog Corruption"
-permalink: kb/191/Q191147/
+permalink: /kb/191/Q191147/
 ---
 
 ## Q191147: How to Resolve Catalog Corruption

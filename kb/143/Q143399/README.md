@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143399: PRB: AccessPC with Speed Copy Causes DBC and Project Problems"
-permalink: kb/143/Q143399/
+permalink: /kb/143/Q143399/
 ---
 
 ## Q143399: PRB: AccessPC with Speed Copy Causes DBC and Project Problems

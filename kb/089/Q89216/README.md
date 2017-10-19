@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89216: MicroRegister Can Cause Windows 3.1 to Stop"
-permalink: kb/089/Q89216/
+permalink: /kb/089/Q89216/
 ---
 
 ## Q89216: MicroRegister Can Cause Windows 3.1 to Stop

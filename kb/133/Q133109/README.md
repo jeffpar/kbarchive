@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133109: Workgroup Mail Stops Responding If Schedule Plus Runs Minimized"
-permalink: kb/133/Q133109/
+permalink: /kb/133/Q133109/
 ---
 
 ## Q133109: Workgroup Mail Stops Responding If Schedule Plus Runs Minimized

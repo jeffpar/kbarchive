@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239863: NFL Fever 2000: Cannot Select Resolution Higher Than 640 x 480"
-permalink: kb/239/Q239863/
+permalink: /kb/239/Q239863/
 ---
 
 ## Q239863: NFL Fever 2000: Cannot Select Resolution Higher Than 640 x 480

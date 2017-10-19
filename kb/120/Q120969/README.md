@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120969: Telnet Does Not Provide Character Mapping"
-permalink: kb/120/Q120969/
+permalink: /kb/120/Q120969/
 ---
 
 ## Q120969: Telnet Does Not Provide Character Mapping

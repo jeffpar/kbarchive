@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85404: MS-DOS 5.0a Upgrade PACKING.LST (3.5-Inch, 720K Disk Set)"
-permalink: kb/085/Q85404/
+permalink: /kb/085/Q85404/
 ---
 
 ## Q85404: MS-DOS 5.0a Upgrade PACKING.LST (3.5-Inch, 720K Disk Set)

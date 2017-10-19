@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151648: Future Date Causes Access Violations in SMS Services"
-permalink: kb/151/Q151648/
+permalink: /kb/151/Q151648/
 ---
 
 ## Q151648: Future Date Causes Access Violations in SMS Services

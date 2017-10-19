@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138395: PRB: Visual FoxPro Gives @...GET a Default Caption"
-permalink: kb/138/Q138395/
+permalink: /kb/138/Q138395/
 ---
 
 ## Q138395: PRB: Visual FoxPro Gives @...GET a Default Caption

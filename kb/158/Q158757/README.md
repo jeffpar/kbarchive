@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158757: FIX: TabPicture Property of SSTab Control Gives an OLE Error"
-permalink: kb/158/Q158757/
+permalink: /kb/158/Q158757/
 ---
 
 ## Q158757: FIX: TabPicture Property of SSTab Control Gives an OLE Error

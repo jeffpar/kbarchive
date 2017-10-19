@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146726: ErrMsg: File .IDC Could Not Be Found"
-permalink: kb/146/Q146726/
+permalink: /kb/146/Q146726/
 ---
 
 ## Q146726: ErrMsg: File .IDC Could Not Be Found

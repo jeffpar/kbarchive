@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261953: XWEB: How to Enable OWA on Two Independent Web Sites Under IIS"
-permalink: kb/261/Q261953/
+permalink: /kb/261/Q261953/
 ---
 
 ## Q261953: XWEB: How to Enable OWA on Two Independent Web Sites Under IIS

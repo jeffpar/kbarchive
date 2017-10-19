@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234843: RUI Application Receives Duplicate MSG10 Screen"
-permalink: kb/234/Q234843/
+permalink: /kb/234/Q234843/
 ---
 
 ## Q234843: RUI Application Receives Duplicate MSG10 Screen

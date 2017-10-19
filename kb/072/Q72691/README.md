@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72691: INFO: Banding, Printing, and the Number of Bands"
-permalink: kb/072/Q72691/
+permalink: /kb/072/Q72691/
 ---
 
 ## Q72691: INFO: Banding, Printing, and the Number of Bands

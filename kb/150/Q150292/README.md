@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150292: FIX: Access Violation When Copying Src File Between Projects"
-permalink: kb/150/Q150292/
+permalink: /kb/150/Q150292/
 ---
 
 ## Q150292: FIX: Access Violation When Copying Src File Between Projects

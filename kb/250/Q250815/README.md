@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250815: Word Not Listed as HTML Editor in Internet Explorer 5.0, 5.01"
-permalink: kb/250/Q250815/
+permalink: /kb/250/Q250815/
 ---
 
 ## Q250815: Word Not Listed as HTML Editor in Internet Explorer 5.0, 5.01

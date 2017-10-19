@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196398: XADM: Cannot Open Directory Object on Remote Server"
-permalink: kb/196/Q196398/
+permalink: /kb/196/Q196398/
 ---
 
 ## Q196398: XADM: Cannot Open Directory Object on Remote Server

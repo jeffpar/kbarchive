@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114721: PRB: Error Occurs When Starting a Wizard"
-permalink: kb/114/Q114721/
+permalink: /kb/114/Q114721/
 ---
 
 ## Q114721: PRB: Error Occurs When Starting a Wizard

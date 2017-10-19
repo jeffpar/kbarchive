@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142628: Stop 0x23 Errors in Fastfat.sys"
-permalink: kb/142/Q142628/
+permalink: /kb/142/Q142628/
 ---
 
 ## Q142628: Stop 0x23 Errors in Fastfat.sys

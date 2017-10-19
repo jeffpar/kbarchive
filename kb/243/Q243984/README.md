@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243984: FS: Rudder Pedals Do Not Work Correctly"
-permalink: kb/243/Q243984/
+permalink: /kb/243/Q243984/
 ---
 
 ## Q243984: FS: Rudder Pedals Do Not Work Correctly

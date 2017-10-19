@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140421: Doc Err: Mandatory Profiles Are Not Cached"
-permalink: kb/140/Q140421/
+permalink: /kb/140/Q140421/
 ---
 
 ## Q140421: Doc Err: Mandatory Profiles Are Not Cached

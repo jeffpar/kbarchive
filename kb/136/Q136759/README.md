@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136759: FIX: Application Error When Releasing Popup Menu"
-permalink: kb/136/Q136759/
+permalink: /kb/136/Q136759/
 ---
 
 ## Q136759: FIX: Application Error When Releasing Popup Menu

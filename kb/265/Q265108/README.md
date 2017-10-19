@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265108: XADM: Error Message: Could Not Complete the Operation"
-permalink: kb/265/Q265108/
+permalink: /kb/265/Q265108/
 ---
 
 ## Q265108: XADM: Error Message: Could Not Complete the Operation

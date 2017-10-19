@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172788: MSN Quick View Icon Does Not Appear on Taskbar"
-permalink: kb/172/Q172788/
+permalink: /kb/172/Q172788/
 ---
 
 ## Q172788: MSN Quick View Icon Does Not Appear on Taskbar

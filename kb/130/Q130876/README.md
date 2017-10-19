@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130876: Printing Through HPMON(DLC) May Cause Print Subsystem to Hang"
-permalink: kb/130/Q130876/
+permalink: /kb/130/Q130876/
 ---
 
 ## Q130876: Printing Through HPMON(DLC) May Cause Print Subsystem to Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250274: MS Cluster Server File Share Stops with Access Denied Error"
-permalink: kb/250/Q250274/
+permalink: /kb/250/Q250274/
 ---
 
 ## Q250274: MS Cluster Server File Share Stops with Access Denied Error

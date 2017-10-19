@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133055: Scenes 2.0: How to Uninstall Scenes"
-permalink: kb/133/Q133055/
+permalink: /kb/133/Q133055/
 ---
 
 ## Q133055: Scenes 2.0: How to Uninstall Scenes

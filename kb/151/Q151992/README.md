@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151992: XADM: Simultaneous Move User Operations Freeze"
-permalink: kb/151/Q151992/
+permalink: /kb/151/Q151992/
 ---
 
 ## Q151992: XADM: Simultaneous Move User Operations Freeze

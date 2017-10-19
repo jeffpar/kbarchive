@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170690: Wire Fault When Configuring Compaq NetFlex-3 NIC"
-permalink: kb/170/Q170690/
+permalink: /kb/170/Q170690/
 ---
 
 ## Q170690: Wire Fault When Configuring Compaq NetFlex-3 NIC

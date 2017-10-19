@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246692: XADM: Searching Contacts in Public Folders May Be Slow"
-permalink: kb/246/Q246692/
+permalink: /kb/246/Q246692/
 ---
 
 ## Q246692: XADM: Searching Contacts in Public Folders May Be Slow

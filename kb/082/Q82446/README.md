@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82446: SMARTDRV.EXE 4.0 Conflicts with PLUSDRV.SYS"
-permalink: kb/082/Q82446/
+permalink: /kb/082/Q82446/
 ---
 
 ## Q82446: SMARTDRV.EXE 4.0 Conflicts with PLUSDRV.SYS

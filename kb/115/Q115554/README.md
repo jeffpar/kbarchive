@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115554: PROFS: Function of VMGATE and the 3270 Emulation Software"
-permalink: kb/115/Q115554/
+permalink: /kb/115/Q115554/
 ---
 
 ## Q115554: PROFS: Function of VMGATE and the 3270 Emulation Software

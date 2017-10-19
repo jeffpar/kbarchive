@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50593: Using OS/2 LAN Manager Alerts"
-permalink: kb/050/Q50593/
+permalink: /kb/050/Q50593/
 ---
 
 ## Q50593: Using OS/2 LAN Manager Alerts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243392: WD97: Document Appears Inaccessible in Internet Explorer"
-permalink: kb/243/Q243392/
+permalink: /kb/243/Q243392/
 ---
 
 ## Q243392: WD97: Document Appears Inaccessible in Internet Explorer

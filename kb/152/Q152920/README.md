@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152920: XCLN: MAPIOle Attachments from OLEMsg have no Rendering Data"
-permalink: kb/152/Q152920/
+permalink: /kb/152/Q152920/
 ---
 
 ## Q152920: XCLN: MAPIOle Attachments from OLEMsg have no Rendering Data

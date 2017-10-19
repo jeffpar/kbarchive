@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87205: PROFS: Typical AUTOEXEC.BAT &amp; CONFIG.SYS Files for Gateway PC"
-permalink: kb/087/Q87205/
+permalink: /kb/087/Q87205/
 ---
 
 ## Q87205: PROFS: Typical AUTOEXEC.BAT &amp; CONFIG.SYS Files for Gateway PC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307580: Train Simulator: Err Msg: Failed to Load Activity Manager"
-permalink: kb/307/Q307580/
+permalink: /kb/307/Q307580/
 ---
 
 ## Q307580: Train Simulator: Err Msg: Failed to Load Activity Manager

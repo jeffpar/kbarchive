@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81640: 256-Color Bitmap in Paintbrush Causes Wallpaper Change"
-permalink: kb/081/Q81640/
+permalink: /kb/081/Q81640/
 ---
 
 ## Q81640: 256-Color Bitmap in Paintbrush Causes Wallpaper Change

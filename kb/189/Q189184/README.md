@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189184: XFOR: Outbound SMTP Msgs. Don't Flow w/ IMC/IMS Service Running"
-permalink: kb/189/Q189184/
+permalink: /kb/189/Q189184/
 ---
 
 ## Q189184: XFOR: Outbound SMTP Msgs. Don't Flow w/ IMC/IMS Service Running

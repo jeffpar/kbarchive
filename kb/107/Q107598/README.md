@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107598: WFWG Err Msg: Warning: A Serious Disk Error Has Occurred..."
-permalink: kb/107/Q107598/
+permalink: /kb/107/Q107598/
 ---
 
 ## Q107598: WFWG Err Msg: Warning: A Serious Disk Error Has Occurred...

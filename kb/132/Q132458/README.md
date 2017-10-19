@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132458: Custom Scaling Not Applied By TEXT Data Type with PostScript"
-permalink: kb/132/Q132458/
+permalink: /kb/132/Q132458/
 ---
 
 ## Q132458: Custom Scaling Not Applied By TEXT Data Type with PostScript

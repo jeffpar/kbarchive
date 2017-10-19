@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93274: Setup: Control Panel Drivers Supplied"
-permalink: kb/093/Q93274/
+permalink: /kb/093/Q93274/
 ---
 
 ## Q93274: Setup: Control Panel Drivers Supplied

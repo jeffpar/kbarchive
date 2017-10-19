@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254312: GPS Icon Drifts or Appears in Unexpected Locations"
-permalink: kb/254/Q254312/
+permalink: /kb/254/Q254312/
 ---
 
 ## Q254312: GPS Icon Drifts or Appears in Unexpected Locations

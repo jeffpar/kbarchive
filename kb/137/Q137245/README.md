@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137245: Cannot Open or Compose Message in Windows Messaging"
-permalink: kb/137/Q137245/
+permalink: /kb/137/Q137245/
 ---
 
 ## Q137245: Cannot Open or Compose Message in Windows Messaging

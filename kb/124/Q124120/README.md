@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124120: Event Log Service Fails to Start Due to Event Log Corruption"
-permalink: kb/124/Q124120/
+permalink: /kb/124/Q124120/
 ---
 
 ## Q124120: Event Log Service Fails to Start Due to Event Log Corruption

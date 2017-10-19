@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123164: Windows 95 Err Msg: The Above Model Is Not Supported By..."
-permalink: kb/123/Q123164/
+permalink: /kb/123/Q123164/
 ---
 
 ## Q123164: Windows 95 Err Msg: The Above Model Is Not Supported By...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173984: Flight Simulator 98: What's New"
-permalink: kb/173/Q173984/
+permalink: /kb/173/Q173984/
 ---
 
 ## Q173984: Flight Simulator 98: What's New

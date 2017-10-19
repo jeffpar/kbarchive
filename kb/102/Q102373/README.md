@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102373: Token Ring Bridge/Ring Numbering and Routing Avoids Looping"
-permalink: kb/102/Q102373/
+permalink: /kb/102/Q102373/
 ---
 
 ## Q102373: Token Ring Bridge/Ring Numbering and Routing Avoids Looping

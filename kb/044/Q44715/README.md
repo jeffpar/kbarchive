@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44715: Mac Srv: Server Not Visible in Chooser on a Macintosh Plus"
-permalink: kb/044/Q44715/
+permalink: /kb/044/Q44715/
 ---
 
 ## Q44715: Mac Srv: Server Not Visible in Chooser on a Macintosh Plus

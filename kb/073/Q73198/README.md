@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73198: Ontrack Disk Manager Support for MS-DOS Partitions"
-permalink: kb/073/Q73198/
+permalink: /kb/073/Q73198/
 ---
 
 ## Q73198: Ontrack Disk Manager Support for MS-DOS Partitions

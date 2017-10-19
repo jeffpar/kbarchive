@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88584: Blank Page Prints When Using Windows 3.1 PostScript Driver"
-permalink: kb/088/Q88584/
+permalink: /kb/088/Q88584/
 ---
 
 ## Q88584: Blank Page Prints When Using Windows 3.1 PostScript Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111988: UNCONF: &quot;Unimplemented Trap Error&quot; on Accelerated Macintoshes"
-permalink: kb/111/Q111988/
+permalink: /kb/111/Q111988/
 ---
 
 ## Q111988: UNCONF: &quot;Unimplemented Trap Error&quot; on Accelerated Macintoshes

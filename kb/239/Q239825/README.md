@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239825: INFO: Transfer Files Between Desktop and Windows CE Emulator"
-permalink: kb/239/Q239825/
+permalink: /kb/239/Q239825/
 ---
 
 ## Q239825: INFO: Transfer Files Between Desktop and Windows CE Emulator

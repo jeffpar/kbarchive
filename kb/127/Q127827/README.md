@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127827: Increasing DefaultTTL in Registry Has No Effect"
-permalink: kb/127/Q127827/
+permalink: /kb/127/Q127827/
 ---
 
 ## Q127827: Increasing DefaultTTL in Registry Has No Effect

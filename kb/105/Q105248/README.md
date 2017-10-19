@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105248: Swap File Error When Installing Lotus Improv 2.0"
-permalink: kb/105/Q105248/
+permalink: /kb/105/Q105248/
 ---
 
 ## Q105248: Swap File Error When Installing Lotus Improv 2.0

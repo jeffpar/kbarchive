@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187362: SMS: Database Maintenance Technical Paper Available"
-permalink: kb/187/Q187362/
+permalink: /kb/187/Q187362/
 ---
 
 ## Q187362: SMS: Database Maintenance Technical Paper Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202514: XFOR: Notes Application Connector Not Replicating Responses"
-permalink: kb/202/Q202514/
+permalink: /kb/202/Q202514/
 ---
 
 ## Q202514: XFOR: Notes Application Connector Not Replicating Responses

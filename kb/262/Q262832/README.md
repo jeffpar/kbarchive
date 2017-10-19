@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262832: Cluster Service Does Not Start with Event ID 7023"
-permalink: kb/262/Q262832/
+permalink: /kb/262/Q262832/
 ---
 
 ## Q262832: Cluster Service Does Not Start with Event ID 7023

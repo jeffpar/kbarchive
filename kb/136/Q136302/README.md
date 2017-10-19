@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136302: FIX: Drop-down Combobox Does Not Move with Property Sheet"
-permalink: kb/136/Q136302/
+permalink: /kb/136/Q136302/
 ---
 
 ## Q136302: FIX: Drop-down Combobox Does Not Move with Property Sheet

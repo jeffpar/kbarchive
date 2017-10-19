@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186409: SMS: Using Filters in Systems Management Server Administrator"
-permalink: kb/186/Q186409/
+permalink: /kb/186/Q186409/
 ---
 
 ## Q186409: SMS: Using Filters in Systems Management Server Administrator

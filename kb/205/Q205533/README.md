@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205533: XCON: Exchange Server MTA in Large Site May Run Out of ECBs"
-permalink: kb/205/Q205533/
+permalink: /kb/205/Q205533/
 ---
 
 ## Q205533: XCON: Exchange Server MTA in Large Site May Run Out of ECBs

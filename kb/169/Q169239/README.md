@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169239: PPT: Cannot Unpack Presentation on a Macintosh Computer"
-permalink: kb/169/Q169239/
+permalink: /kb/169/Q169239/
 ---
 
 ## Q169239: PPT: Cannot Unpack Presentation on a Macintosh Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246134: FS2000: &quot;General Protection Fault&quot; Err Msg or Wrong Screen Size"
-permalink: kb/246/Q246134/
+permalink: /kb/246/Q246134/
 ---
 
 ## Q246134: FS2000: &quot;General Protection Fault&quot; Err Msg or Wrong Screen Size

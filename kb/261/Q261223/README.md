@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261223: File Download Dialog Box Appears When You Browse an ASP File"
-permalink: kb/261/Q261223/
+permalink: /kb/261/Q261223/
 ---
 
 ## Q261223: File Download Dialog Box Appears When You Browse an ASP File

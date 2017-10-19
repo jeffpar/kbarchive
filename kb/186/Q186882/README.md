@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186882: FIX: Non-U.S. English DevStudio Typelibs Improperly Registered"
-permalink: kb/186/Q186882/
+permalink: /kb/186/Q186882/
 ---
 
 ## Q186882: FIX: Non-U.S. English DevStudio Typelibs Improperly Registered

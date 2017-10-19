@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q60392: FIX: [PWB] Tag Missing in PWB 1.0 Sample Init File, TOOLS.PRE"
-permalink: kb/060/Q60392/
+title: "Q60392: FIX: &#91;PWB&#93; Tag Missing in PWB 1.0 Sample Init File, TOOLS.PRE"
+permalink: /kb/060/Q60392/
 ---
 
-## Q60392: FIX: [PWB] Tag Missing in PWB 1.0 Sample Init File, TOOLS.PRE
+## Q60392: FIX: &#91;PWB&#93; Tag Missing in PWB 1.0 Sample Init File, TOOLS.PRE
 
 	Article: Q60392
 	Product(s): Microsoft Programming Utilities

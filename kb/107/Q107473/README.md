@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107473: WFWG 3.11 Err Msg: Access Denied"
-permalink: kb/107/Q107473/
+permalink: /kb/107/Q107473/
 ---
 
 ## Q107473: WFWG 3.11 Err Msg: Access Denied

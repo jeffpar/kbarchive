@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249151: SMS: Getsfwr.exe Does Not Report the File Date During Inventory"
-permalink: kb/249/Q249151/
+permalink: /kb/249/Q249151/
 ---
 
 ## Q249151: SMS: Getsfwr.exe Does Not Report the File Date During Inventory

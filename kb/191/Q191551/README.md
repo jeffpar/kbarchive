@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191551: BUG: CtlPlus Sample Fails to Load"
-permalink: kb/191/Q191551/
+permalink: /kb/191/Q191551/
 ---
 
 ## Q191551: BUG: CtlPlus Sample Fails to Load

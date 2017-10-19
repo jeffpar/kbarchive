@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106612: Flag Browser Fails to Display Flags in Bookshelf 1993"
-permalink: kb/106/Q106612/
+permalink: /kb/106/Q106612/
 ---
 
 ## Q106612: Flag Browser Fails to Display Flags in Bookshelf 1993

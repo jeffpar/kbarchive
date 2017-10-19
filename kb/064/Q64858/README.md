@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64858: Missing Printers on SETUP.INF on 3.5-Inch Disk in Windows 3.0"
-permalink: kb/064/Q64858/
+permalink: /kb/064/Q64858/
 ---
 
 ## Q64858: Missing Printers on SETUP.INF on 3.5-Inch Disk in Windows 3.0

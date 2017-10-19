@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74661: Running MS-DOS Setup From An External Floppy"
-permalink: kb/074/Q74661/
+permalink: /kb/074/Q74661/
 ---
 
 ## Q74661: Running MS-DOS Setup From An External Floppy

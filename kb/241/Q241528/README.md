@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241528: Terminal Server Client Hangs Up After Repeated Logon and Logoffs"
-permalink: kb/241/Q241528/
+permalink: /kb/241/Q241528/
 ---
 
 ## Q241528: Terminal Server Client Hangs Up After Repeated Logon and Logoffs

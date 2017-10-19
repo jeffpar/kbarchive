@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176806: XGEN: How to Order Exchange 4.0 and 5.0 Manuals"
-permalink: kb/176/Q176806/
+permalink: /kb/176/Q176806/
 ---
 
 ## Q176806: XGEN: How to Order Exchange 4.0 and 5.0 Manuals

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157456: WD97: Pleading Wizard Block Quotation Not Justified"
-permalink: kb/157/Q157456/
+permalink: /kb/157/Q157456/
 ---
 
 ## Q157456: WD97: Pleading Wizard Block Quotation Not Justified

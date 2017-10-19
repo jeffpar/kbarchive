@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275560: PRB: DLL Breakpoints Are Skipped or Disabled"
-permalink: kb/275/Q275560/
+permalink: /kb/275/Q275560/
 ---
 
 ## Q275560: PRB: DLL Breakpoints Are Skipped or Disabled

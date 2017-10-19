@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149142: Dummy.txt File Left After Removing Windows 95 Service Pack 1"
-permalink: kb/149/Q149142/
+permalink: /kb/149/Q149142/
 ---
 
 ## Q149142: Dummy.txt File Left After Removing Windows 95 Service Pack 1

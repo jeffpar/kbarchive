@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174879: FIX: Incorrect Syntax on Keywords May Delete Text"
-permalink: kb/174/Q174879/
+permalink: /kb/174/Q174879/
 ---
 
 ## Q174879: FIX: Incorrect Syntax on Keywords May Delete Text

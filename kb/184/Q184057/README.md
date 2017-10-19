@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184057: Printing Wide Carriage with Generic/Text Only Print Driver"
-permalink: kb/184/Q184057/
+permalink: /kb/184/Q184057/
 ---
 
 ## Q184057: Printing Wide Carriage with Generic/Text Only Print Driver

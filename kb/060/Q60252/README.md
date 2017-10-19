@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60252: INFO: Initializing Bitfields as Integers in C"
-permalink: kb/060/Q60252/
+permalink: /kb/060/Q60252/
 ---
 
 ## Q60252: INFO: Initializing Bitfields as Integers in C

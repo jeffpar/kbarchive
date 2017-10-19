@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154845: Bugcheck in Fastfat.sys"
-permalink: kb/154/Q154845/
+permalink: /kb/154/Q154845/
 ---
 
 ## Q154845: Bugcheck in Fastfat.sys

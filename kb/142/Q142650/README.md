@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142650: Netlogon Stops when Mailslot Message Is Larger than Specified"
-permalink: kb/142/Q142650/
+permalink: /kb/142/Q142650/
 ---
 
 ## Q142650: Netlogon Stops when Mailslot Message Is Larger than Specified

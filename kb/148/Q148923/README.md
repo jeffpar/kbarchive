@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148923: Problems Printing Envelopes with Panasonic KXP-4400 Printer"
-permalink: kb/148/Q148923/
+permalink: /kb/148/Q148923/
 ---
 
 ## Q148923: Problems Printing Envelopes with Panasonic KXP-4400 Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61181: Instruction: Uncoordinated Flight Aileron Error"
-permalink: kb/061/Q61181/
+permalink: /kb/061/Q61181/
 ---
 
 ## Q61181: Instruction: Uncoordinated Flight Aileron Error

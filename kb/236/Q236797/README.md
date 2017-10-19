@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236797: THREAD_BLOCKING Error After WinAPPCCleanup Issued"
-permalink: kb/236/Q236797/
+permalink: /kb/236/Q236797/
 ---
 
 ## Q236797: THREAD_BLOCKING Error After WinAPPCCleanup Issued

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153696: Partners Have Different Expiration Times for WINS Entries"
-permalink: kb/153/Q153696/
+permalink: /kb/153/Q153696/
 ---
 
 ## Q153696: Partners Have Different Expiration Times for WINS Entries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183533: XWEB: Error Message: Microsoft VBScript Runtime Error 800a03e3"
-permalink: kb/183/Q183533/
+permalink: /kb/183/Q183533/
 ---
 
 ## Q183533: XWEB: Error Message: Microsoft VBScript Runtime Error 800a03e3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182986: XCON: Use Expedited Data Option Relevant Only for TP4 Stacks"
-permalink: kb/182/Q182986/
+permalink: /kb/182/Q182986/
 ---
 
 ## Q182986: XCON: Use Expedited Data Option Relevant Only for TP4 Stacks

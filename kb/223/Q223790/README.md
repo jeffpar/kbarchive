@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223790: WD97: How to Minimize Metadata in Word Documents"
-permalink: kb/223/Q223790/
+permalink: /kb/223/Q223790/
 ---
 
 ## Q223790: WD97: How to Minimize Metadata in Word Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193990: Encarta 99: Black Lines Appear on the Screen During Transitions"
-permalink: kb/193/Q193990/
+permalink: /kb/193/Q193990/
 ---
 
 ## Q193990: Encarta 99: Black Lines Appear on the Screen During Transitions

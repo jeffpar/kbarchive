@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150188: FIX: Masked Edit Control Replaces Input if PromptChar Changed"
-permalink: kb/150/Q150188/
+permalink: /kb/150/Q150188/
 ---
 
 ## Q150188: FIX: Masked Edit Control Replaces Input if PromptChar Changed

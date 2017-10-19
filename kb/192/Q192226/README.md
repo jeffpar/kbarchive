@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192226: FIX: Edit/Clear From Menu Fails to Clear General Field in Editor"
-permalink: kb/192/Q192226/
+permalink: /kb/192/Q192226/
 ---
 
 ## Q192226: FIX: Edit/Clear From Menu Fails to Clear General Field in Editor

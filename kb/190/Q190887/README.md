@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190887: PRB: PDW Wizard Does Not Create HTM for All ActiveX DLL Projects"
-permalink: kb/190/Q190887/
+permalink: /kb/190/Q190887/
 ---
 
 ## Q190887: PRB: PDW Wizard Does Not Create HTM for All ActiveX DLL Projects

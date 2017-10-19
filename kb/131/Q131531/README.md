@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131531: Windows NT Hangs on HP Vectra VL3 5/75"
-permalink: kb/131/Q131531/
+permalink: /kb/131/Q131531/
 ---
 
 ## Q131531: Windows NT Hangs on HP Vectra VL3 5/75

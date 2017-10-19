@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148126: Files With Changed Permissions Not Incrementally Backed Up"
-permalink: kb/148/Q148126/
+permalink: /kb/148/Q148126/
 ---
 
 ## Q148126: Files With Changed Permissions Not Incrementally Backed Up

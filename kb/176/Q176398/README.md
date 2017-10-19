@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176398: XADM: User Count Shows 4294962176"
-permalink: kb/176/Q176398/
+permalink: /kb/176/Q176398/
 ---
 
 ## Q176398: XADM: User Count Shows 4294962176

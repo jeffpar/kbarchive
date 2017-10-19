@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67757: DOCERR: Conditional Jump Instruction Is Incorrectly Documented"
-permalink: kb/067/Q67757/
+permalink: /kb/067/Q67757/
 ---
 
 ## Q67757: DOCERR: Conditional Jump Instruction Is Incorrectly Documented

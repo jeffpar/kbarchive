@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121867: PC Setup: Incorrect Disk Space Requirement for 3.2 Update"
-permalink: kb/121/Q121867/
+permalink: /kb/121/Q121867/
 ---
 
 ## Q121867: PC Setup: Incorrect Disk Space Requirement for 3.2 Update

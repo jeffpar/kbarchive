@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294665: Unsolicited E-mail Reduction--Workaround Through Hotmail"
-permalink: kb/294/Q294665/
+permalink: /kb/294/Q294665/
 ---
 
 ## Q294665: Unsolicited E-mail Reduction--Workaround Through Hotmail

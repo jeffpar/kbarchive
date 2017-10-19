@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99240: Macintosh and Appletalk Stack Limits Imposed"
-permalink: kb/099/Q99240/
+permalink: /kb/099/Q99240/
 ---
 
 ## Q99240: Macintosh and Appletalk Stack Limits Imposed

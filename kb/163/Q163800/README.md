@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163800: INFO: Create an SQL Command with &gt; 255 Characters"
-permalink: kb/163/Q163800/
+permalink: /kb/163/Q163800/
 ---
 
 ## Q163800: INFO: Create an SQL Command with &gt; 255 Characters

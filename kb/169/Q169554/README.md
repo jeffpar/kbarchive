@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169554: Taskbar Auto Hide Option Behavior Varies"
-permalink: kb/169/Q169554/
+permalink: /kb/169/Q169554/
 ---
 
 ## Q169554: Taskbar Auto Hide Option Behavior Varies

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94595: Voice Pilot: Limit to Number of Words in Vocabulary Files"
-permalink: kb/094/Q94595/
+permalink: /kb/094/Q94595/
 ---
 
 ## Q94595: Voice Pilot: Limit to Number of Words in Vocabulary Files

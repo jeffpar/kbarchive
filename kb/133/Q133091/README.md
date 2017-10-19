@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133091: Mac Bookshelf 1995: Cannot Find Demo"
-permalink: kb/133/Q133091/
+permalink: /kb/133/Q133091/
 ---
 
 ## Q133091: Mac Bookshelf 1995: Cannot Find Demo

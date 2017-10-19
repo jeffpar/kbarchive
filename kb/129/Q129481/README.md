@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129481: Tab Not Saved in Windows NT Cardfile"
-permalink: kb/129/Q129481/
+permalink: /kb/129/Q129481/
 ---
 
 ## Q129481: Tab Not Saved in Windows NT Cardfile

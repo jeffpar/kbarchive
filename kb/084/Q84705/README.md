@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84705: Screen Corrupted - IBM PS/2 Model 90 and 95"
-permalink: kb/084/Q84705/
+permalink: /kb/084/Q84705/
 ---
 
 ## Q84705: Screen Corrupted - IBM PS/2 Model 90 and 95

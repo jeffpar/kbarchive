@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225056: SMS: PCMSVC32 Runs a Job After Expired Date"
-permalink: kb/225/Q225056/
+permalink: /kb/225/Q225056/
 ---
 
 ## Q225056: SMS: PCMSVC32 Runs a Job After Expired Date

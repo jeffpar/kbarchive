@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119253: ATT: ADPROC.EXE Allows AT&amp;Tand SMTP Gateways to Coexist"
-permalink: kb/119/Q119253/
+permalink: /kb/119/Q119253/
 ---
 
 ## Q119253: ATT: ADPROC.EXE Allows AT&amp;Tand SMTP Gateways to Coexist

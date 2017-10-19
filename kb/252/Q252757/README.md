@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252757: XCLN: Memory Leak in Loop Accessing CDO"
-permalink: kb/252/Q252757/
+permalink: /kb/252/Q252757/
 ---
 
 ## Q252757: XCLN: Memory Leak in Loop Accessing CDO

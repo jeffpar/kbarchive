@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173217: XCLN: Messages Remain in the Outbox After You Try to Send Them"
-permalink: kb/173/Q173217/
+permalink: /kb/173/Q173217/
 ---
 
 ## Q173217: XCLN: Messages Remain in the Outbox After You Try to Send Them

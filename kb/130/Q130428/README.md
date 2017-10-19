@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130428: Day Starts At and Day Ends At Settings Round Down"
-permalink: kb/130/Q130428/
+permalink: /kb/130/Q130428/
 ---
 
 ## Q130428: Day Starts At and Day Ends At Settings Round Down

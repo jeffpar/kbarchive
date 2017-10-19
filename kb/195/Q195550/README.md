@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195550: Problems Running My Personal Tutor Using Multiple Displays"
-permalink: kb/195/Q195550/
+permalink: /kb/195/Q195550/
 ---
 
 ## Q195550: Problems Running My Personal Tutor Using Multiple Displays

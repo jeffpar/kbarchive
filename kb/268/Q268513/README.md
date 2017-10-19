@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268513: Error Message Appears When Installing 3Com 3C575-TX CardBus NIC"
-permalink: kb/268/Q268513/
+permalink: /kb/268/Q268513/
 ---
 
 ## Q268513: Error Message Appears When Installing 3Com 3C575-TX CardBus NIC

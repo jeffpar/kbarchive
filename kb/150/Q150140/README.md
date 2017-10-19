@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150140: STOP Msg: 0xC000021a as Application Terminates"
-permalink: kb/150/Q150140/
+permalink: /kb/150/Q150140/
 ---
 
 ## Q150140: STOP Msg: 0xC000021a as Application Terminates

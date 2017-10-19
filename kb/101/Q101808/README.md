@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101808: PRB: Insufficient Memory or Not Enough Memory for Application"
-permalink: kb/101/Q101808/
+permalink: /kb/101/Q101808/
 ---
 
 ## Q101808: PRB: Insufficient Memory or Not Enough Memory for Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145903: XCLN: Buttons/Menus Unavailable When Opening New Mail"
-permalink: kb/145/Q145903/
+permalink: /kb/145/Q145903/
 ---
 
 ## Q145903: XCLN: Buttons/Menus Unavailable When Opening New Mail

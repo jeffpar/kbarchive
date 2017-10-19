@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142351: Visual FoxPro 3.0b General Information"
-permalink: kb/142/Q142351/
+permalink: /kb/142/Q142351/
 ---
 
 ## Q142351: Visual FoxPro 3.0b General Information

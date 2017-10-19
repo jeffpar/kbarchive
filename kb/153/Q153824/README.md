@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153824: CPS Winntp Ignores Defaults.inf During Profile"
-permalink: kb/153/Q153824/
+permalink: /kb/153/Q153824/
 ---
 
 ## Q153824: CPS Winntp Ignores Defaults.inf During Profile

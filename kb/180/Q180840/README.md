@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180840: FIX: Access Violation with SQLConfigDatasource &amp; Oracle Driver"
-permalink: kb/180/Q180840/
+permalink: /kb/180/Q180840/
 ---
 
 ## Q180840: FIX: Access Violation with SQLConfigDatasource &amp; Oracle Driver

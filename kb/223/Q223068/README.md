@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223068: FIX: RDO InfoMessage Event Behavior Different in VB6 and VB5"
-permalink: kb/223/Q223068/
+permalink: /kb/223/Q223068/
 ---
 
 ## Q223068: FIX: RDO InfoMessage Event Behavior Different in VB6 and VB5

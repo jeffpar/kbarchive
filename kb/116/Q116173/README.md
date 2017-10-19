@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116173: Installing the HP HP560C Printer Driver"
-permalink: kb/116/Q116173/
+permalink: /kb/116/Q116173/
 ---
 
 ## Q116173: Installing the HP HP560C Printer Driver

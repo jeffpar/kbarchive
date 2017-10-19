@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174765: How to Configure Microsoft DHCP Server for BOOTP Clients"
-permalink: kb/174/Q174765/
+permalink: /kb/174/Q174765/
 ---
 
 ## Q174765: How to Configure Microsoft DHCP Server for BOOTP Clients

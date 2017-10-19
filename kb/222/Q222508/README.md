@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222508: XFOR: IMS Sends MIME Plain Text as HTML &amp; Plain Text"
-permalink: kb/222/Q222508/
+permalink: /kb/222/Q222508/
 ---
 
 ## Q222508: XFOR: IMS Sends MIME Plain Text as HTML &amp; Plain Text

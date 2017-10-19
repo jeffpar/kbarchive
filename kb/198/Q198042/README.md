@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198042: WD97: Spelling and Grammar Checkers Do Not Flag Single Letters"
-permalink: kb/198/Q198042/
+permalink: /kb/198/Q198042/
 ---
 
 ## Q198042: WD97: Spelling and Grammar Checkers Do Not Flag Single Letters

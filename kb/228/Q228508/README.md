@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228508: Err Msg: Error 1907 User Account Set with Change Password"
-permalink: kb/228/Q228508/
+permalink: /kb/228/Q228508/
 ---
 
 ## Q228508: Err Msg: Error 1907 User Account Set with Change Password

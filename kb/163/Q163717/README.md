@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163717: ODE97: ODE Slider Control Is Not Displayed as Expected in Previe"
-permalink: kb/163/Q163717/
+permalink: /kb/163/Q163717/
 ---
 
 ## Q163717: ODE97: ODE Slider Control Is Not Displayed as Expected in Previe

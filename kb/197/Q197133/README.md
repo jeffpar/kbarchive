@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197133: WD97: Page Number Start At Limited to a Number Range"
-permalink: kb/197/Q197133/
+permalink: /kb/197/Q197133/
 ---
 
 ## Q197133: WD97: Page Number Start At Limited to a Number Range

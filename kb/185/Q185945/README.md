@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185945: AV in win32k!HMMarkObjectDestroy in Japanese and Korean WinNT"
-permalink: kb/185/Q185945/
+permalink: /kb/185/Q185945/
 ---
 
 ## Q185945: AV in win32k!HMMarkObjectDestroy in Japanese and Korean WinNT

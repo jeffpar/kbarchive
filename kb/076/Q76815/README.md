@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76815: No Multimedia Features in Real Mode with Multimedia Windows"
-permalink: kb/076/Q76815/
+permalink: /kb/076/Q76815/
 ---
 
 ## Q76815: No Multimedia Features in Real Mode with Multimedia Windows

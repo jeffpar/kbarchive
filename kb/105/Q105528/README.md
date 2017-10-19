@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105528: Mozart: Glossary Is on Top When Mozart Is Restored"
-permalink: kb/105/Q105528/
+permalink: /kb/105/Q105528/
 ---
 
 ## Q105528: Mozart: Glossary Is on Top When Mozart Is Restored

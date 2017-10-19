@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197158: FORTRAN Carriage Control or FORTRAN Control Code"
-permalink: kb/197/Q197158/
+permalink: /kb/197/Q197158/
 ---
 
 ## Q197158: FORTRAN Carriage Control or FORTRAN Control Code

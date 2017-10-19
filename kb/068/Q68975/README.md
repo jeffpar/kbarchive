@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68975: I/O Device Serialization and Virtualization"
-permalink: kb/068/Q68975/
+permalink: /kb/068/Q68975/
 ---
 
 ## Q68975: I/O Device Serialization and Virtualization

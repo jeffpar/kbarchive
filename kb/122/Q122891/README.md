@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122891: Nonexistent or Corrupted Values in WINMSD"
-permalink: kb/122/Q122891/
+permalink: /kb/122/Q122891/
 ---
 
 ## Q122891: Nonexistent or Corrupted Values in WINMSD

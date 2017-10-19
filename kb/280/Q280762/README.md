@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280762: INFO: Contents of the SNA Server 4.0 Service Pack 4 Readme.txt F"
-permalink: kb/280/Q280762/
+permalink: /kb/280/Q280762/
 ---
 
 ## Q280762: INFO: Contents of the SNA Server 4.0 Service Pack 4 Readme.txt F

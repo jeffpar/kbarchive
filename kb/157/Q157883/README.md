@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157883: How Can I Get VSS and Visual InterDev Integration Working?"
-permalink: kb/157/Q157883/
+permalink: /kb/157/Q157883/
 ---
 
 ## Q157883: How Can I Get VSS and Visual InterDev Integration Working?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68901: Windows Setup Adds &quot;?&quot; in WordPerfect's Calendar PIF File"
-permalink: kb/068/Q68901/
+permalink: /kb/068/Q68901/
 ---
 
 ## Q68901: Windows Setup Adds &quot;?&quot; in WordPerfect's Calendar PIF File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154564: Access Denied Using CHNGPASS When Logged On to FPNW"
-permalink: kb/154/Q154564/
+permalink: /kb/154/Q154564/
 ---
 
 ## Q154564: Access Denied Using CHNGPASS When Logged On to FPNW

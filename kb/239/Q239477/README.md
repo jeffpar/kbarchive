@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239477: XADM: Could Not Open the File Named Mbcleanm.dll"
-permalink: kb/239/Q239477/
+permalink: /kb/239/Q239477/
 ---
 
 ## Q239477: XADM: Could Not Open the File Named Mbcleanm.dll

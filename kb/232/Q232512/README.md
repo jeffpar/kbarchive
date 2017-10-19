@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232512: TCP/IP may Retransmit Packets Prematurely"
-permalink: kb/232/Q232512/
+permalink: /kb/232/Q232512/
 ---
 
 ## Q232512: TCP/IP may Retransmit Packets Prematurely

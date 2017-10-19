@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147013: Past Reminders for Reoccuring Tasks Show After Event"
-permalink: kb/147/Q147013/
+permalink: /kb/147/Q147013/
 ---
 
 ## Q147013: Past Reminders for Reoccuring Tasks Show After Event

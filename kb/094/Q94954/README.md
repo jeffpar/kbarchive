@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94954: PRB: DdeInitialize Fails in Implicitly-Loaded DLL's LibMain()"
-permalink: kb/094/Q94954/
+permalink: /kb/094/Q94954/
 ---
 
 ## Q94954: PRB: DdeInitialize Fails in Implicitly-Loaded DLL's LibMain()

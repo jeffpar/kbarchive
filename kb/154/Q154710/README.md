@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154710: Cannot View Long File Names on Network in 16-Bit Programs"
-permalink: kb/154/Q154710/
+permalink: /kb/154/Q154710/
 ---
 
 ## Q154710: Cannot View Long File Names on Network in 16-Bit Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168250: FIX: IIS Performance Degrades with a Bad Connection"
-permalink: kb/168/Q168250/
+permalink: /kb/168/Q168250/
 ---
 
 ## Q168250: FIX: IIS Performance Degrades with a Bad Connection

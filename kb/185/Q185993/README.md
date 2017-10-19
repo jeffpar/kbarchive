@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185993: BUG: Public Friend Properties Break Binary Compatibility"
-permalink: kb/185/Q185993/
+permalink: /kb/185/Q185993/
 ---
 
 ## Q185993: BUG: Public Friend Properties Break Binary Compatibility

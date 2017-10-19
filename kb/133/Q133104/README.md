@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133104: FORTRAN PowerStation 32 MIXLANG.TXT"
-permalink: kb/133/Q133104/
+permalink: /kb/133/Q133104/
 ---
 
 ## Q133104: FORTRAN PowerStation 32 MIXLANG.TXT

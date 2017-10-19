@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195868: Virtual Globe 99: Boxes Replace Letters in Some Find List Items"
-permalink: kb/195/Q195868/
+permalink: /kb/195/Q195868/
 ---
 
 ## Q195868: Virtual Globe 99: Boxes Replace Letters in Some Find List Items

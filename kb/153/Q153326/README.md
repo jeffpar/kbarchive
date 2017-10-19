@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153326: XADM: Information Store Returns Service Specific Error 4021"
-permalink: kb/153/Q153326/
+permalink: /kb/153/Q153326/
 ---
 
 ## Q153326: XADM: Information Store Returns Service Specific Error 4021

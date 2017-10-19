@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171528: FIX: Using &quot;Unload Me&quot; in a Listbox Causes Crash"
-permalink: kb/171/Q171528/
+permalink: /kb/171/Q171528/
 ---
 
 ## Q171528: FIX: Using &quot;Unload Me&quot; in a Listbox Causes Crash

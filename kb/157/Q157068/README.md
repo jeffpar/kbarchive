@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157068: XCON: MTA Server Work Queue Increases Perfmon Unrealistically"
-permalink: kb/157/Q157068/
+permalink: /kb/157/Q157068/
 ---
 
 ## Q157068: XCON: MTA Server Work Queue Increases Perfmon Unrealistically

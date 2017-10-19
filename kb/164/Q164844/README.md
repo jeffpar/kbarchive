@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164844: XCLN: Meeting Request Booked on Wrong Calendar If Auto-Forwarded"
-permalink: kb/164/Q164844/
+permalink: /kb/164/Q164844/
 ---
 
 ## Q164844: XCLN: Meeting Request Booked on Wrong Calendar If Auto-Forwarded

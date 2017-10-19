@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167215: WD97: StartConversionWizard Selects Wrong Files to Convert"
-permalink: kb/167/Q167215/
+permalink: /kb/167/Q167215/
 ---
 
 ## Q167215: WD97: StartConversionWizard Selects Wrong Files to Convert

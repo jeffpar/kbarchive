@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131616: Windows NT Backup Restore Err Msg : Unable to Create File Links"
-permalink: kb/131/Q131616/
+permalink: /kb/131/Q131616/
 ---
 
 ## Q131616: Windows NT Backup Restore Err Msg : Unable to Create File Links

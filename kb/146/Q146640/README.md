@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146640: FIX: Controls Saved as Class from PageFrame Becomes Invisible"
-permalink: kb/146/Q146640/
+permalink: /kb/146/Q146640/
 ---
 
 ## Q146640: FIX: Controls Saved as Class from PageFrame Becomes Invisible

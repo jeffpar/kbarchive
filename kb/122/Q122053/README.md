@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122053: System Hangs at Startup with Maxtor Mobile Max Hard Disk"
-permalink: kb/122/Q122053/
+permalink: /kb/122/Q122053/
 ---
 
 ## Q122053: System Hangs at Startup with Maxtor Mobile Max Hard Disk

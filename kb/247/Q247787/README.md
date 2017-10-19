@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247787: XFOR: SMTP Mail Staying in MTA Queue, with Events 9297 and 3161"
-permalink: kb/247/Q247787/
+permalink: /kb/247/Q247787/
 ---
 
 ## Q247787: XFOR: SMTP Mail Staying in MTA Queue, with Events 9297 and 3161

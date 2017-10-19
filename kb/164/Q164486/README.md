@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164486: Winlogon May Fail if the Third-Party Gina.dll File is Missing"
-permalink: kb/164/Q164486/
+permalink: /kb/164/Q164486/
 ---
 
 ## Q164486: Winlogon May Fail if the Third-Party Gina.dll File is Missing

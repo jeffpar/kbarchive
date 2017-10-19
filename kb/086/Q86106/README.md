@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86106: PROFS: Which Systems the Gateway Provides Connectivity To"
-permalink: kb/086/Q86106/
+permalink: /kb/086/Q86106/
 ---
 
 ## Q86106: PROFS: Which Systems the Gateway Provides Connectivity To

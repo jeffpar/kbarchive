@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58294: Windows Drops to MS-DOS When MSNet Server Disconnected"
-permalink: kb/058/Q58294/
+permalink: /kb/058/Q58294/
 ---
 
 ## Q58294: Windows Drops to MS-DOS When MSNet Server Disconnected

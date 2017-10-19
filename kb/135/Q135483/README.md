@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135483: Windows 95 CD-ROM Display.txt File"
-permalink: kb/135/Q135483/
+permalink: /kb/135/Q135483/
 ---
 
 ## Q135483: Windows 95 CD-ROM Display.txt File

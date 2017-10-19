@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74941: Determining Free Memory in Windows Enhanced Mode"
-permalink: kb/074/Q74941/
+permalink: /kb/074/Q74941/
 ---
 
 ## Q74941: Determining Free Memory in Windows Enhanced Mode

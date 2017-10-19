@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148194: Complete Gardening: Readme.wri Contents"
-permalink: kb/148/Q148194/
+permalink: /kb/148/Q148194/
 ---
 
 ## Q148194: Complete Gardening: Readme.wri Contents

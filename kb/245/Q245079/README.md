@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245079: Cannot Synchronize Time Across Time Zone on Windows 95"
-permalink: kb/245/Q245079/
+permalink: /kb/245/Q245079/
 ---
 
 ## Q245079: Cannot Synchronize Time Across Time Zone on Windows 95

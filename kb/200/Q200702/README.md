@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200702: SMS: RC Can Not Initiate Session After Virtual Memory Error"
-permalink: kb/200/Q200702/
+permalink: /kb/200/Q200702/
 ---
 
 ## Q200702: SMS: RC Can Not Initiate Session After Virtual Memory Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198688: XCON: General Data Gathering Procedures for MTA Troubleshooting"
-permalink: kb/198/Q198688/
+permalink: /kb/198/Q198688/
 ---
 
 ## Q198688: XCON: General Data Gathering Procedures for MTA Troubleshooting

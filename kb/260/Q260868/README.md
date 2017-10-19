@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260868: Small Business Solutions for Networking Comments and Corrections"
-permalink: kb/260/Q260868/
+permalink: /kb/260/Q260868/
 ---
 
 ## Q260868: Small Business Solutions for Networking Comments and Corrections

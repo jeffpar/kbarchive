@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95021: INFO: Connecting to Sybase SQL Server from ODBC Applications"
-permalink: kb/095/Q95021/
+permalink: /kb/095/Q95021/
 ---
 
 ## Q95021: INFO: Connecting to Sybase SQL Server from ODBC Applications

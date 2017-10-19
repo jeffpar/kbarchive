@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173643: XWEB: Outlook Web Access Displays Time in 24-Hour Format"
-permalink: kb/173/Q173643/
+permalink: /kb/173/Q173643/
 ---
 
 ## Q173643: XWEB: Outlook Web Access Displays Time in 24-Hour Format

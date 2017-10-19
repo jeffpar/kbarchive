@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172951: How to Recover from a Corrupted Quorum Log"
-permalink: kb/172/Q172951/
+permalink: /kb/172/Q172951/
 ---
 
 ## Q172951: How to Recover from a Corrupted Quorum Log

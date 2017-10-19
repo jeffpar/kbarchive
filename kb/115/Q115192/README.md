@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115192: ADT2: Error in Help Files for Custom Control Refresh Method"
-permalink: kb/115/Q115192/
+permalink: /kb/115/Q115192/
 ---
 
 ## Q115192: ADT2: Error in Help Files for Custom Control Refresh Method

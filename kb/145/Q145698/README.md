@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145698: PRB: Mnemonic Differences Between MFC 4.0 and Visual Basic 4.0"
-permalink: kb/145/Q145698/
+permalink: /kb/145/Q145698/
 ---
 
 ## Q145698: PRB: Mnemonic Differences Between MFC 4.0 and Visual Basic 4.0

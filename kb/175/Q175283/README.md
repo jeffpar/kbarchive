@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175283: XADM: How to Run PerfWiz in Silent Mode or Batch Mode"
-permalink: kb/175/Q175283/
+permalink: /kb/175/Q175283/
 ---
 
 ## Q175283: XADM: How to Run PerfWiz in Silent Mode or Batch Mode

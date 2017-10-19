@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114787: HOWTO: Execute a Stored Procedure on SQL Server"
-permalink: kb/114/Q114787/
+permalink: /kb/114/Q114787/
 ---
 
 ## Q114787: HOWTO: Execute a Stored Procedure on SQL Server

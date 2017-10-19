@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164589: IBM DFT Link Service Not Integrated In SNA Server Manager"
-permalink: kb/164/Q164589/
+permalink: /kb/164/Q164589/
 ---
 
 ## Q164589: IBM DFT Link Service Not Integrated In SNA Server Manager

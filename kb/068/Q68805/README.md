@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68805: How to Reboot Your Machine Within a MASM Application"
-permalink: kb/068/Q68805/
+permalink: /kb/068/Q68805/
 ---
 
 ## Q68805: How to Reboot Your Machine Within a MASM Application

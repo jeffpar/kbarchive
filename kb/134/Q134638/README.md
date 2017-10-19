@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134638: BUG: SHOW GET Does Not Refresh Number of Elements"
-permalink: kb/134/Q134638/
+permalink: /kb/134/Q134638/
 ---
 
 ## Q134638: BUG: SHOW GET Does Not Refresh Number of Elements

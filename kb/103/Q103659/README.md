@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103659: Setup Hangs While Inspecting Hardware; How to Use NTDETECT.COM"
-permalink: kb/103/Q103659/
+permalink: /kb/103/Q103659/
 ---
 
 ## Q103659: Setup Hangs While Inspecting Hardware; How to Use NTDETECT.COM

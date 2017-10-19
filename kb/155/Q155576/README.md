@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155576: WinCim 2.01 Sounds Do Not Play After Rebooting"
-permalink: kb/155/Q155576/
+permalink: /kb/155/Q155576/
 ---
 
 ## Q155576: WinCim 2.01 Sounds Do Not Play After Rebooting

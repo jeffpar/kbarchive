@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69064: BUG: Brown Screen Color May Change to Yellow After Running PWB"
-permalink: kb/069/Q69064/
+permalink: /kb/069/Q69064/
 ---
 
 ## Q69064: BUG: Brown Screen Color May Change to Yellow After Running PWB

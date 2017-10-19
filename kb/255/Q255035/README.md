@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255035: XADM: Recovering Hard Drive Space from Exchange Server Databases"
-permalink: kb/255/Q255035/
+permalink: /kb/255/Q255035/
 ---
 
 ## Q255035: XADM: Recovering Hard Drive Space from Exchange Server Databases

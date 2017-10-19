@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137048: Add/Remove Programs Tool Displays Incorrect Available Space"
-permalink: kb/137/Q137048/
+permalink: /kb/137/Q137048/
 ---
 
 ## Q137048: Add/Remove Programs Tool Displays Incorrect Available Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218054: Cannot Uninstall Site Server if Installed Using BackOffice Setup"
-permalink: kb/218/Q218054/
+permalink: /kb/218/Q218054/
 ---
 
 ## Q218054: Cannot Uninstall Site Server if Installed Using BackOffice Setup

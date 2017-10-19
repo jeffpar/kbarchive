@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175580: XADM: Internet Mail Service Does Not Handle Uudecode Correctly"
-permalink: kb/175/Q175580/
+permalink: /kb/175/Q175580/
 ---
 
 ## Q175580: XADM: Internet Mail Service Does Not Handle Uudecode Correctly

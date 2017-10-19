@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82652: Da Vinci eMAIL GPF in DSWIN.DLL"
-permalink: kb/082/Q82652/
+permalink: /kb/082/Q82652/
 ---
 
 ## Q82652: Da Vinci eMAIL GPF in DSWIN.DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130320: PC Win: MOVEUSER.EXE Fails if User's HEXID.CAL Is Missing"
-permalink: kb/130/Q130320/
+permalink: /kb/130/Q130320/
 ---
 
 ## Q130320: PC Win: MOVEUSER.EXE Fails if User's HEXID.CAL Is Missing

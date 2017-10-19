@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123469: PRB: How to Handle the &quot;invalid serial number&quot; Error"
-permalink: kb/123/Q123469/
+permalink: /kb/123/Q123469/
 ---
 
 ## Q123469: PRB: How to Handle the &quot;invalid serial number&quot; Error

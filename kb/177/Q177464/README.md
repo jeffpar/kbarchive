@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177464: XADM: Information Store Stops in EcCreateP1 When Starting MTA"
-permalink: kb/177/Q177464/
+permalink: /kb/177/Q177464/
 ---
 
 ## Q177464: XADM: Information Store Stops in EcCreateP1 When Starting MTA

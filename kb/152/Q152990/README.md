@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152990: 100-Megabit Ethernet May Hang or Exhibit Poor Performance"
-permalink: kb/152/Q152990/
+permalink: /kb/152/Q152990/
 ---
 
 ## Q152990: 100-Megabit Ethernet May Hang or Exhibit Poor Performance

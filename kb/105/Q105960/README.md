@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105960: PC DOS: Err Msg: Notice 64 Failure to Modify Folder Rights"
-permalink: kb/105/Q105960/
+permalink: /kb/105/Q105960/
 ---
 
 ## Q105960: PC DOS: Err Msg: Notice 64 Failure to Modify Folder Rights

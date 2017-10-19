@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101932: PC Win: Expansion of Groups, Revealing Group Members"
-permalink: kb/101/Q101932/
+permalink: /kb/101/Q101932/
 ---
 
 ## Q101932: PC Win: Expansion of Groups, Revealing Group Members

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176708: XCON: Memory Leak in Microsoft Exchange Message Transfer Agent"
-permalink: kb/176/Q176708/
+permalink: /kb/176/Q176708/
 ---
 
 ## Q176708: XCON: Memory Leak in Microsoft Exchange Message Transfer Agent

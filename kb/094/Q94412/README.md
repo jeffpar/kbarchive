@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94412: AUTOEXEC File Is Not Processed Running 3rd-Party Shell"
-permalink: kb/094/Q94412/
+permalink: /kb/094/Q94412/
 ---
 
 ## Q94412: AUTOEXEC File Is Not Processed Running 3rd-Party Shell

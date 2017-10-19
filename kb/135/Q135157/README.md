@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135157: Cannot Access COM Ports on NEC Image P90 Computer"
-permalink: kb/135/Q135157/
+permalink: /kb/135/Q135157/
 ---
 
 ## Q135157: Cannot Access COM Ports on NEC Image P90 Computer

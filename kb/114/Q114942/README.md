@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114942: PC Win: Err Msg: Undeliverable Mail"
-permalink: kb/114/Q114942/
+permalink: /kb/114/Q114942/
 ---
 
 ## Q114942: PC Win: Err Msg: Undeliverable Mail

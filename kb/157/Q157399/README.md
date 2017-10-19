@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157399: Inconsistent Descriptions When Using Event Viewer"
-permalink: kb/157/Q157399/
+permalink: /kb/157/Q157399/
 ---
 
 ## Q157399: Inconsistent Descriptions When Using Event Viewer

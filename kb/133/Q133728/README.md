@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133728: Cannot Access System Icons on Taskbar Without Pointing Device"
-permalink: kb/133/Q133728/
+permalink: /kb/133/Q133728/
 ---
 
 ## Q133728: Cannot Access System Icons on Taskbar Without Pointing Device

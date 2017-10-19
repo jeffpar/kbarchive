@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246934: BUG: istream::readsome Does Not Read Correctly on File Stream"
-permalink: kb/246/Q246934/
+permalink: /kb/246/Q246934/
 ---
 
 ## Q246934: BUG: istream::readsome Does Not Read Correctly on File Stream
